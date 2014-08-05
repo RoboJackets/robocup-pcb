@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="6.1">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.002" unitdist="inch" unit="inch" style="lines" multiple="5" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="yes"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="yes"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="yes"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="yes"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="yes"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="yes"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="yes"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="yes"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<packages>
+<package name="NTA4151P">
+<smd name="D" x="0" y="0" dx="0.508" dy="0.3556" layer="1" rot="R90"/>
+<smd name="G" x="-0.4953" y="-1.2954" dx="0.508" dy="0.3556" layer="1" rot="R90"/>
+<smd name="S" x="0.4953" y="-1.2954" dx="0.508" dy="0.3556" layer="1" rot="R90"/>
+<rectangle x1="-0.9652" y1="-1.0668" x2="0.9652" y2="-0.2032" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="NTA4151P">
+<wire x1="0.508" y1="3.048" x2="4.318" y2="3.048" width="0.254" layer="94"/>
+<wire x1="4.318" y1="3.048" x2="8.128" y2="3.048" width="0.254" layer="94"/>
+<wire x1="8.128" y1="3.048" x2="11.176" y2="3.048" width="0.254" layer="94"/>
+<wire x1="11.176" y1="3.048" x2="11.176" y2="7.112" width="0.254" layer="94"/>
+<wire x1="11.176" y1="7.112" x2="11.176" y2="9.906" width="0.254" layer="94"/>
+<wire x1="11.176" y1="9.906" x2="11.176" y2="13.208" width="0.254" layer="94"/>
+<wire x1="11.176" y1="13.208" x2="7.62" y2="13.208" width="0.254" layer="94"/>
+<wire x1="11.176" y1="9.906" x2="7.62" y2="9.906" width="0.254" layer="94"/>
+<wire x1="11.176" y1="7.112" x2="15.748" y2="7.112" width="0.254" layer="94"/>
+<wire x1="15.748" y1="7.112" x2="15.748" y2="12.192" width="0.254" layer="94"/>
+<wire x1="15.748" y1="12.192" x2="15.748" y2="18.796" width="0.254" layer="94"/>
+<wire x1="11.176" y1="16.51" x2="7.62" y2="16.51" width="0.254" layer="94"/>
+<wire x1="6.604" y1="16.51" x2="6.604" y2="9.398" width="0.254" layer="94"/>
+<wire x1="0.508" y1="9.398" x2="0.508" y2="3.048" width="0.254" layer="94"/>
+<wire x1="4.318" y1="3.048" x2="4.318" y2="4.572" width="0.254" layer="94"/>
+<wire x1="3.556" y1="5.334" x2="4.318" y2="4.572" width="0.254" layer="94"/>
+<wire x1="4.318" y1="3.048" x2="4.318" y2="1.778" width="0.254" layer="94"/>
+<wire x1="4.318" y1="1.778" x2="5.08" y2="1.016" width="0.254" layer="94"/>
+<polygon width="0.254" layer="94">
+<vertex x="5.842" y="3.81"/>
+<vertex x="4.318" y="3.048"/>
+<vertex x="5.842" y="2.286"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="6.604" y="3.81"/>
+<vertex x="8.128" y="3.048"/>
+<vertex x="6.604" y="2.286"/>
+</polygon>
+<circle x="0.508" y="3.048" radius="0.254" width="0.254" layer="94"/>
+<wire x1="8.128" y1="3.048" x2="8.128" y2="4.572" width="0.254" layer="94"/>
+<wire x1="8.128" y1="4.572" x2="7.366" y2="5.334" width="0.254" layer="94"/>
+<wire x1="8.128" y1="3.048" x2="8.128" y2="1.778" width="0.254" layer="94"/>
+<wire x1="8.128" y1="1.778" x2="8.89" y2="1.016" width="0.254" layer="94"/>
+<wire x1="0.508" y1="9.398" x2="2.286" y2="9.398" width="0.254" layer="94"/>
+<wire x1="2.286" y1="9.398" x2="2.54" y2="9.906" width="0.254" layer="94"/>
+<wire x1="2.54" y1="9.906" x2="3.048" y2="8.89" width="0.254" layer="94"/>
+<wire x1="3.048" y1="8.89" x2="3.556" y2="9.906" width="0.254" layer="94"/>
+<wire x1="3.556" y1="9.906" x2="4.064" y2="8.89" width="0.254" layer="94"/>
+<wire x1="4.064" y1="8.89" x2="4.572" y2="9.906" width="0.254" layer="94"/>
+<wire x1="4.572" y1="9.906" x2="5.08" y2="8.89" width="0.254" layer="94"/>
+<wire x1="5.08" y1="8.89" x2="5.334" y2="9.398" width="0.254" layer="94"/>
+<wire x1="5.334" y1="9.398" x2="6.604" y2="9.398" width="0.254" layer="94"/>
+<circle x="11.176" y="3.048" radius="0.254" width="0.254" layer="94"/>
+<circle x="11.176" y="3.048" radius="0.359209375" width="0.254" layer="94"/>
+<circle x="11.176" y="7.112" radius="0.359209375" width="0.254" layer="94"/>
+<circle x="11.176" y="16.51" radius="0.254" width="0.254" layer="94"/>
+<wire x1="7.62" y1="13.208" x2="7.62" y2="14.224" width="0.254" layer="94"/>
+<wire x1="7.62" y1="13.208" x2="7.62" y2="12.192" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.922" x2="7.62" y2="9.906" width="0.254" layer="94"/>
+<wire x1="7.62" y1="9.906" x2="7.62" y2="8.89" width="0.254" layer="94"/>
+<wire x1="7.62" y1="17.526" x2="7.62" y2="16.51" width="0.254" layer="94"/>
+<wire x1="7.62" y1="15.494" x2="7.62" y2="16.51" width="0.254" layer="94"/>
+<circle x="11.176" y="7.112" radius="0.254" width="0.254" layer="94"/>
+<circle x="11.176" y="9.906" radius="0.254" width="0.254" layer="94"/>
+<polygon width="0.254" layer="94">
+<vertex x="11.176" y="13.208"/>
+<vertex x="9.144" y="13.716"/>
+<vertex x="9.144" y="12.7"/>
+</polygon>
+<wire x1="15.748" y1="12.192" x2="14.224" y2="12.192" width="0.254" layer="94"/>
+<wire x1="15.748" y1="12.192" x2="17.272" y2="12.192" width="0.254" layer="94"/>
+<polygon width="0.254" layer="94">
+<vertex x="16.51" y="13.97"/>
+<vertex x="15.748" y="12.192"/>
+<vertex x="14.732" y="13.97"/>
+</polygon>
+<pin name="S" x="11.176" y="0.508" length="short" rot="R90"/>
+<pin name="G" x="-2.032" y="3.048" length="short"/>
+<circle x="0.508" y="3.048" radius="0.359209375" width="0.254" layer="94"/>
+<wire x1="15.748" y1="18.796" x2="11.176" y2="18.796" width="0.254" layer="94"/>
+<wire x1="11.176" y1="18.796" x2="11.176" y2="16.51" width="0.254" layer="94"/>
+<pin name="D" x="11.176" y="21.336" length="short" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="P-CHANNEL_MOSFET">
+<gates>
+<gate name="G$1" symbol="NTA4151P" x="-7.62" y="-10.16"/>
+</gates>
+<devices>
+<device name="" package="NTA4151P">
+<connects>
+<connect gate="G$1" pin="D" pad="D"/>
+<connect gate="G$1" pin="G" pad="G"/>
+<connect gate="G$1" pin="S" pad="S"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>
