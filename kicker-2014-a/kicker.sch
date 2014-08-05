@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -14070,17 +14070,17 @@ INTERNATIONAL RECTIFIER, irg4bc15ud-s.pdf</description>
 </symbol>
 <symbol name="DOCFIELD">
 <wire x1="0" y1="0" x2="71.12" y2="0" width="0.1016" layer="94"/>
-<wire x1="101.6" y1="15.24" x2="87.63" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="15.24" x2="72.39" y2="15.24" width="0.1016" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="5.08" width="0.1016" layer="94"/>
 <wire x1="0" y1="5.08" x2="71.12" y2="5.08" width="0.1016" layer="94"/>
 <wire x1="0" y1="5.08" x2="0" y2="15.24" width="0.1016" layer="94"/>
 <wire x1="101.6" y1="15.24" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
 <wire x1="71.12" y1="5.08" x2="71.12" y2="0" width="0.1016" layer="94"/>
-<wire x1="71.12" y1="5.08" x2="87.63" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="5.08" x2="72.39" y2="5.08" width="0.1016" layer="94"/>
 <wire x1="71.12" y1="0" x2="101.6" y2="0" width="0.1016" layer="94"/>
-<wire x1="87.63" y1="15.24" x2="87.63" y2="5.08" width="0.1016" layer="94"/>
-<wire x1="87.63" y1="15.24" x2="0" y2="15.24" width="0.1016" layer="94"/>
-<wire x1="87.63" y1="5.08" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="72.39" y1="15.24" x2="72.39" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="72.39" y1="15.24" x2="0" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="72.39" y1="5.08" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
 <wire x1="101.6" y1="5.08" x2="101.6" y2="0" width="0.1016" layer="94"/>
 <wire x1="0" y1="15.24" x2="0" y2="22.86" width="0.1016" layer="94"/>
 <wire x1="101.6" y1="35.56" x2="0" y2="35.56" width="0.1016" layer="94"/>
@@ -14088,14 +14088,18 @@ INTERNATIONAL RECTIFIER, irg4bc15ud-s.pdf</description>
 <wire x1="0" y1="22.86" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
 <wire x1="0" y1="22.86" x2="0" y2="35.56" width="0.1016" layer="94"/>
 <wire x1="101.6" y1="22.86" x2="101.6" y2="15.24" width="0.1016" layer="94"/>
-<text x="1.27" y="1.27" size="2.54" layer="94" font="vector">Date:</text>
+<text x="1.27" y="1.27" size="2.54" layer="94" font="vector" ratio="15">Date:</text>
 <text x="12.7" y="1.27" size="2.54" layer="94" font="vector">&gt;LAST_DATE_TIME</text>
-<text x="72.39" y="1.27" size="2.54" layer="94" font="vector">Sheet:</text>
+<text x="72.39" y="1.27" size="2.54" layer="94" font="vector" ratio="15">Sheet:</text>
 <text x="86.36" y="1.27" size="2.54" layer="94" font="vector">&gt;SHEET</text>
-<text x="88.9" y="11.43" size="2.54" layer="94" font="vector">REV:</text>
-<text x="1.27" y="19.05" size="2.54" layer="94" font="vector">TITLE:</text>
-<text x="1.27" y="11.43" size="2.54" layer="94" font="vector">Document Number:</text>
-<text x="17.78" y="19.05" size="2.54" layer="94" font="vector">&gt;DRAWING_NAME</text>
+<text x="73.66" y="11.43" size="2.54" layer="94" font="vector" ratio="15">REV:</text>
+<text x="1.27" y="19.05" size="2.54" layer="94" font="vector" ratio="15">TITLE:</text>
+<text x="1.27" y="11.43" size="2.54" layer="94" font="vector" ratio="15">Document Number:</text>
+<text x="17.78" y="19.05" size="2.54" layer="94" font="vector">&gt;TITLE</text>
+<text x="2.54" y="33.02" size="2.794" layer="94" ratio="15" align="top-left">GEORGIA TECH ROBOJACKETS</text>
+<text x="40.64" y="11.43" size="2.54" layer="94" font="vector">&gt;NUMBER</text>
+<text x="73.66" y="6.35" size="2.54" layer="94" font="vector">&gt;REV</text>
+<text x="2.54" y="24.13" size="2.54" layer="94" font="vector">&gt;TEAM</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -14108,7 +14112,12 @@ INTERNATIONAL RECTIFIER, irg4bc15ud-s.pdf</description>
 <devices>
 <device name="">
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="NUMBER" value="01" constant="no"/>
+<attribute name="REV" value="2014-a" constant="no"/>
+<attribute name="TEAM" value="team_name_here" constant="no"/>
+<attribute name="TITLE" value="insert_title_here" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -20906,7 +20915,10 @@ type 0309, grid 2.5 mm</description>
 <part name="D1" library="diode" deviceset="DIODE-" device="SMB" value="STTH3R06U"/>
 <part name="T1" library="coilcraft" deviceset="DA2034" device=""/>
 <part name="Q1" library="fairchild" deviceset="FQB34N20LTM" device="" value="STB40NF20"/>
-<part name="FRAME1" library="frames" deviceset="FRAME_B_L" device=""/>
+<part name="FRAME1" library="frames" deviceset="FRAME_B_L" device="">
+<attribute name="TEAM" value="RoboCup SSL"/>
+<attribute name="TITLE" value="Kicker"/>
+</part>
 <part name="U8" library="microchip" deviceset="TC4427" device=""/>
 <part name="D2" library="diode" deviceset="DIODE-" device="P6-15" value="6A6-T"/>
 <part name="D3" library="diode" deviceset="DIODE-" device="P6-15" value="6A6-T"/>
@@ -21056,8 +21068,6 @@ type 0309, grid 2.5 mm</description>
 <wire x1="335.28" y1="236.22" x2="335.28" y2="180.34" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="335.28" y1="180.34" x2="228.6" y2="180.34" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="228.6" y1="180.34" x2="228.6" y2="236.22" width="0.1524" layer="97" style="shortdash"/>
-<text x="327.66" y="25.4" size="2.54" layer="94" font="vector">Robocup SSL 2012 Kicker</text>
-<text x="327.66" y="30.48" size="2.54" layer="94" font="vector">Georgia Tech RoboJackets</text>
 <text x="170.18" y="93.98" size="1.778" layer="95">STTH3BCF060U</text>
 <text x="154.94" y="53.34" size="1.778" layer="95">STB40NF20</text>
 <text x="15.24" y="208.28" size="1.778" layer="97">Connectors</text>
@@ -21079,7 +21089,9 @@ type 0309, grid 2.5 mm</description>
 <attribute name="NAME" x="156.21" y="57.15" size="1.778" layer="94"/>
 </instance>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="FRAME1" gate="G$2" x="325.12" y="0"/>
+<instance part="FRAME1" gate="G$2" x="325.12" y="0">
+<attribute name="TEAM" x="325.12" y="0" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="U8" gate="G$1" x="279.4" y="125.73" smashed="yes">
 <attribute name="NAME" x="269.24" y="134.62" size="1.27" layer="94"/>
 </instance>
