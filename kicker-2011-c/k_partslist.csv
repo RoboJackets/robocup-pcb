@@ -1,0 +1,77 @@
+Partlist
+
+Exported from kicker.sch at 1/21/2014 7:00:42 PM
+
+EAGLE Version 6.1.0 Copyright (c) 1988-2012 CadSoft
+
+Assembly variant: 
+
+Part     Value                       Device            Package      Library     Sheet
+
+C1       UWT1E471MNL1GS              CPOL-USG          PANASONIC_G  rcl         1
+C2       4.7uF, 25v                  C-USC1206         C1206        rcl         1
+C3       100nF                       C-USC0603         C0603        rcl         1
+C4       2700uF 250V                 RC_CAP            T-UP3        panasonic   1
+C5       2700uF 250V                 RC_CAP            T-UP3        panasonic   1
+C6       4.7uF                       C-USC1206K        C1206K       rcl         1
+C7       47uF                        CPOL-USC/6032-28R C/6032-28R   rcl         1
+C8       100nF                       C-USC0603         C0603        rcl         1
+C9       22nF                        C-USC0603         C0603        rcl         1
+C10      220pF 100V                  C-USC0603         C0603        rcl         1
+C12      100pF                       C-USC0603         C0603        rcl         1
+C13      22nF                        C-USC0603         C0603        rcl         1
+D1       STTH3R06U                   DIODE-SMB         SMB          diode       1
+D2       6A6-T                       DIODE-P6-15       P6-15        diode       1
+D3       6A6-T                       DIODE-P6-15       P6-15        diode       1
+D4       BZV55-B18,115               ZENER-DIODESOD80C SOD80C       diode       1
+D5       BZV55-B18,115               ZENER-DIODESOD80C SOD80C       diode       1
+D6       BZV55-B18,115               ZENER-DIODESOD80C SOD80C       diode       1
+D7       BZV55-B18,115               ZENER-DIODESOD80C SOD80C       diode       1
+D8       BZV55-B18,115               ZENER-DIODESOD80C SOD80C       diode       1
+D9       BAS16H                      DIODE-SOD323-W    SOD323-W     diode       1
+D10      LTST-S270KRKT               LEDCHIPLED_0603   CHIPLED_0603 led         1
+F1       10A                         NANO2_157         NANO2_157    littlefuse  1
+J1       POWER                       JST_VH_2RA        JST_VH_2_RA  jst_vh      1
+J2       CHIP                        JST_VH_2RA        JST_VH_2_RA  jst_vh      1
+J3       KICK                        JST_VH_2RA        JST_VH_2_RA  jst_vh      1
+J4       0528520870                  0528520870        0528520870   con-robocup 1
+L1       HZ0603B102R-10              L-US0603          C0603        radio       1
+L2       HZ0603B102R-10              L-US0603          C0603        radio       1
+Q1       STB40NF20                   FQB34N20LTM       D2PACK       fairchild   1
+Q2       FGA180N33ATD-2              FGA180N33ATD-2    TOP3AH-2     fairchild   1
+Q3       FGA180N33ATD-2              FGA180N33ATD-2    TOP3AH-2     fairchild   1
+Q4       FDV303N                     NMOSSOT23         SOT-23       zetex       1
+Q5       FQT1N80                     NMOSSOT223        SOT223       zetex       1
+R1       10.0k                       R-US_R0603        R0603        rcl         1
+R2       10.0k                       R-US_R0603        R0603        rcl         1
+R3       10                          R-US_R0603        R0603        rcl         1
+R4       10                          R-US_R0603        R0603        rcl         1
+R5       10                          R-US_R0603        R0603        rcl         1
+R6       10                          R-US_R0603        R0603        rcl         1
+R7       NP                          R-US_R0603        R0603        rcl         1
+R8       1.00M                       R-US_R0603        R0603        rcl         1
+R9       10.0k                       R-US_R0603        R0603        rcl         1
+R10      6.8k                        R-US_R0603        R0603        rcl         1
+R11      16.20k, 1% (MCR03EZPFX1622) R-US_R0603        R0603        rcl         1
+R12      10.0k                       R-US_R0603        R0603        rcl         1
+R13      10.0k                       R-US_R0603        R0603        rcl         1
+R14      22                          R-US_R0603        R0603        rcl         1
+R15      680K                        R-US_R1206        R1206        rcl         1
+R16      680K                        R-US_R1206        R1206        rcl         1
+R17      0.015 (ERJ-6BWFR015V)       R-US_R0805        R0805        rcl         1
+R18      10.0k                       R-US_R0603        R0603        rcl         1
+R19      NP                          R-US_R0603        R0603        rcl         1
+R20      140k                        R-US_R0603        R0603        rcl         1
+R21      470k 1%                     R-US_R0603        R0603        rcl         1
+R22      1.00M, 1% (MCR03EZPFX1004)  R-US_R0603        R0603        rcl         1
+R23      1.00M, 1% (MCR03EZPFX1004)  R-US_R0603        R0603        rcl         1
+R24      22                          R-US_R0603        R0603        rcl         1
+R25      NP                          R-US_R0603        R0603        rcl         1
+R26      NP                          R-US_R0603        R0603        rcl         1
+R27      RHC2512FT33K0               R-US_R2512        R2512        rcl         1
+R28      10M                         R-US_R0603        R0603        rcl         1
+R29      220                         R-US_R0603        R0603        rcl         1
+T1       DA2034                      DA2034            DA2034       coilcraft   1
+U1       ADC081C027                  ADC081C027        SOT23-6      national    1
+U5       LT3757                      LT3757            MSOP-10-MSE  power       1
+U8       TC4427                      TC4427            SO08         microchip   1

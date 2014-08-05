@@ -1,0 +1,1531 @@
+Netlist
+
+Exported from mainpcb (3).brd at 1/20/2014 2:54:55 PM
+
+EAGLE Version 6.1.0 Copyright (c) 1988-2012 CadSoft
+
+Net      Part     Pad
+
++1.2V    C24      1
+         C50      1
+         C51      1
+         C71      1
+         J18      3
+         RT113    1
+         U1       115
+         U1       45
+         U1       80
+         U1       9
+
++1.8V    C79      1
+         J18      2
+         U7       12
+         U7       24
+         U7       54
+         U7       64
+         U7       8
+
++2.5V    C23      1
+         C49      1
+         C67      1
+         C68      1
+         J18      1
+         RT114    1
+         RT13     1
+         RT7      1
+         U1       102
+         U1       137
+         U1       30
+         U1       65
+
++3.3V    BZ1      2
+         C3       1
+         C46      1
+         C47      1
+         C48      1
+         C52      1
+         C53      1
+         C54      1
+         C60      1
+         C77      1
+         J10      1
+         J12      3
+         L2       1
+         L3       1
+         L5       1
+         Q33      2
+         RT102    1
+         RT105    2
+         RT11     2
+         RT112    2
+         RT115    2
+         RT116    2
+         RT15     2
+         RT198    2
+         RT2      2
+         RT78     1
+         RT8      2
+         RT80     2
+         RT9      1
+         RT96     2
+         RT97     2
+         S1       3
+         U1       100
+         U1       121
+         U1       13
+         U1       138
+         U1       143
+         U1       28
+         U1       42
+         U1       49
+         U1       62
+         U1       64
+         U1       67
+         U1       68
+         U1       70
+         U1       79
+         U19      8
+         U19      9
+         U2       3
+         U2       7
+         U2       8
+         U20      1
+         U7       1
+         U7       18
+         U7       45
+         U7       58
+         U7       59
+         U7       7
+         X1       1
+         X1       4
+
++5V      J12      2
+         J13      1
+         J14      1
+         J15      1
+         J16      1
+         J17      4
+         J4       11
+         J5       11
+         J6       11
+         J7       11
+         RT14     2
+
++12V     C10      1
+         C2       1
+         C21      1
+         C26      1
+         C28      1
+         C30      1
+         C33      1
+         C36      1
+         C38      1
+         C45      1
+         C5       1
+         C62      1
+         C64      1
+         C66      1
+         C70      1
+         D7       C
+         F2       1
+         F3       3
+         F3       4
+         J19      1
+         Q1       D1
+         Q10      D1
+         Q11      D1
+         Q12      D1
+         Q13      D1
+         Q14      D1
+         Q15      D1
+         Q2       D1
+         Q3       D1
+         Q4       D1
+         Q5       D1
+         Q6       D1
+         Q7       D1
+         Q8       D1
+         Q9       D1
+         RT124    3
+         RT124    5
+         RT124    7
+         RT30     3
+         RT30     5
+         RT30     7
+         RT45     3
+         RT45     5
+         RT45     7
+         RT60     3
+         RT60     5
+         RT60     7
+         RT75     3
+         RT75     5
+         RT75     7
+         RT81     2
+         U11      3
+         U12      3
+         U14      3
+         U15      3
+         U16      3
+         U17      3
+         U18      3
+         U21      3
+         U22      3
+         U23      3
+         U24      3
+         U25      3
+         U26      3
+         U6       3
+         U9       3
+
+/CONNECT Q33      3
+         U7       19
+
+12V_LOGIC C41      1
+         C42      +
+         D2       C
+         J12      1
+         RT5      2
+         U3       5
+
+ARM_TDI  U1       109
+         U7       33
+
+ARM_TDO  RT3      5
+         U7       49
+
+BALL_DET J9       2
+         RT78     2
+         U7       3
+
+BALL_LED J3       1
+         RT16     1
+         U7       44
+
+BATT_SENSE C25      1
+         RT81     1
+         RT82     2
+         U7       4
+
+BUZZ     BZ1      1
+         U7       32
+
+DDM      RT93     2
+         U7       56
+
+DDP      RT93     4
+         U7       57
+
+DISCHARGE S2       1
+         U1       107
+
+DONE     LED1     A
+         RT13     2
+         U1       72
+
+DP1      S1       8
+         U7       37
+
+DP2      S1       7
+         U7       38
+
+DP4      S1       5
+         U7       41
+
+FLASH_NCS RT112    1
+         U1       39
+         U2       1
+         U7       28
+
+FPGA_NCS RT115    1
+         U1       69
+         U7       30
+
+FPGA_SPARE_0 RT104    2
+         U1       20
+
+FPGA_SPARE_1 RT104    4
+         U1       21
+
+FPGA_SPARE_2 RT104    6
+         U1       22
+
+FPGA_SPARE_3 RT104    8
+         U1       23
+
+FPGA_TDI RT3      7
+         U1       144
+
+FS0      U1       52
+         U7       31
+
+FS1      U1       51
+         U7       29
+
+GND      C1       2
+         C10      2
+         C11      2
+         C12      2
+         C15      2
+         C16      2
+         C17      2
+         C19      2
+         C2       2
+         C20      2
+         C21      2
+         C23      2
+         C24      2
+         C25      2
+         C26      2
+         C28      2
+         C3       2
+         C30      2
+         C31      2
+         C33      2
+         C34      2
+         C36      2
+         C38      2
+         C40      2
+         C41      2
+         C42      -
+         C44      2
+         C45      2
+         C46      2
+         C47      2
+         C48      2
+         C49      2
+         C5       2
+         C50      2
+         C51      2
+         C52      2
+         C53      2
+         C54      2
+         C55      2
+         C56      2
+         C57      2
+         C58      2
+         C59      2
+         C6       2
+         C60      2
+         C62      2
+         C64      2
+         C66      2
+         C67      2
+         C68      2
+         C70      2
+         C71      2
+         C77      2
+         C79      2
+         C8       2
+         C9       2
+         D1       A
+         D7       A
+         J1       8
+         J10      6
+         J11      2
+         J12      4
+         J13      3
+         J14      3
+         J15      3
+         J16      3
+         J17      5
+         J18      4
+         J19      2
+         J2       5
+         J20      5
+         J4       7
+         J5       7
+         J6       7
+         J7       7
+         J8       P$2
+         J8       P$3
+         J8       P$4
+         J8       P$5
+         J9       1
+         J9       3
+         LED1     C
+         LED2     CATHODE
+         Q1       S2
+         Q10      S2
+         Q11      S2
+         Q12      S2
+         Q13      S2
+         Q14      S2
+         Q15      S2
+         Q2       S2
+         Q3       S2
+         Q4       S2
+         Q5       S2
+         Q6       S2
+         Q7       S2
+         Q8       S2
+         Q9       S2
+         RT106    1
+         RT108    1
+         RT109    1
+         RT111    1
+         RT117    1
+         RT12     1
+         RT120    1
+         RT121    1
+         RT16     2
+         RT18     1
+         RT19     1
+         RT22     1
+         RT23     1
+         RT26     1
+         RT27     1
+         RT33     1
+         RT34     1
+         RT37     1
+         RT38     1
+         RT41     1
+         RT42     1
+         RT48     1
+         RT49     1
+         RT52     1
+         RT53     1
+         RT56     1
+         RT57     1
+         RT63     1
+         RT64     1
+         RT67     1
+         RT68     1
+         RT71     1
+         RT72     1
+         RT79     1
+         RT82     1
+         RT84     1
+         RT95     1
+         RT99     1
+         S1       1
+         S1       2
+         S1       4
+         S2       2
+         S3       6
+         S4       1
+         S4       3
+         S5       C1
+         S5       C2
+         U1       11
+         U1       118
+         U1       127
+         U1       133
+         U1       19
+         U1       27
+         U1       37
+         U1       46
+         U1       55
+         U1       60
+         U1       61
+         U1       73
+         U1       90
+         U1       99
+         U10      16
+         U10      19
+         U10      DAP
+         U11      4
+         U12      4
+         U13      2
+         U13      5
+         U13      6
+         U14      4
+         U15      4
+         U16      4
+         U17      4
+         U18      4
+         U19      11
+         U19      18
+         U2       4
+         U20      4
+         U21      4
+         U22      4
+         U23      4
+         U24      4
+         U25      4
+         U26      4
+         U3       2
+         U4       2
+         U5       2
+         U6       4
+         U7       17
+         U7       2
+         U7       46
+         U7       60
+         U8       2
+         U8       4
+         U9       4
+         X1       2
+
+I2C_SCL  RT96     1
+         U19      23
+         U7       36
+
+I2C_SDA  RT97     1
+         U19      24
+         U7       43
+
+ID0      S5       1
+         U7       23
+
+ID1      S5       2
+         U7       25
+
+ID2      S5       4
+         U7       20
+
+ID3      S5       8
+         U7       26
+
+IMU_INT  U19      12
+         U7       34
+
+KCHARGE  RT4      2
+         U1       125
+
+KCHIP    RT103    3
+         U1       130
+
+KDONE    RT4      4
+         U1       124
+
+KKICK    RT103    1
+         U1       126
+
+KSCL     RT4      6
+         U1       123
+
+KSDA     RT4      8
+         U1       122
+
+LED_AE   RT199    7
+         U7       35
+
+LED_AN1  LED7     1
+         U7       9
+
+LED_AN2  LED7     2
+         U7       10
+
+LED_BF   RT199    5
+         U7       15
+
+LED_CG   RT199    3
+         U7       47
+
+LED_DDP  RT199    1
+         U7       48
+
+M1A      C4       2
+         J4       1
+         J4       2
+         Q1       D2
+         Q1       S1
+         U6       6
+
+M1A_H    RT29     5
+         U1       3
+
+M1A_L    RT29     7
+         U1       4
+
+M1B      C7       2
+         J4       3
+         J4       4
+         Q2       D2
+         Q2       S1
+         U9       6
+
+M1B_H    RT29     1
+         U1       5
+
+M1B_L    RT29     3
+         U1       7
+
+M1C      C14      2
+         J4       5
+         J4       6
+         Q3       D2
+         Q3       S1
+         U11      6
+
+M1C_H    RT28     3
+         U1       14
+
+M1C_L    RT28     1
+         U1       15
+
+M1ENC_A  RT89     1
+         U1       141
+
+M1ENC_B  RT89     3
+         U1       142
+
+M1HALL_A RT6      3
+         U1       10
+
+M1HALL_B RT6      1
+         U1       12
+
+M1HALL_C RT6      5
+         U1       8
+
+M2       RT11     1
+         RT12     2
+         U1       57
+
+M2A      C22      2
+         J5       1
+         J5       2
+         Q4       D2
+         Q4       S1
+         U12      6
+
+M2A_H    RT44     5
+         U1       103
+
+M2A_L    RT44     7
+         U1       104
+
+M2B      C27      2
+         J5       3
+         J5       4
+         Q5       D2
+         Q5       S1
+         U14      6
+
+M2B_H    RT44     1
+         U1       105
+
+M2B_L    RT44     3
+         U1       106
+
+M2C      C29      2
+         J5       5
+         J5       6
+         Q6       D2
+         Q6       S1
+         U15      6
+
+M2C_H    RT43     3
+         U1       112
+
+M2C_L    RT43     1
+         U1       113
+
+M2ENC_A  RT90     1
+         U1       119
+
+M2ENC_B  RT90     3
+         U1       120
+
+M2HALL_A RT85     5
+         U1       116
+
+M2HALL_B RT85     3
+         U1       114
+
+M2HALL_C RT85     7
+         U1       117
+
+M3A      C32      2
+         J6       1
+         J6       2
+         Q7       D2
+         Q7       S1
+         U16      6
+
+M3A_H    RT59     5
+         U1       81
+
+M3A_L    RT59     7
+         U1       82
+
+M3B      C35      2
+         J6       3
+         J6       4
+         Q8       D2
+         Q8       S1
+         U17      6
+
+M3B_H    RT59     1
+         U1       83
+
+M3B_L    RT59     3
+         U1       85
+
+M3C      C37      2
+         J6       5
+         J6       6
+         Q9       D2
+         Q9       S1
+         U18      6
+
+M3C_H    RT58     3
+         U1       86
+
+M3C_L    RT58     1
+         U1       87
+
+M3ENC_A  RT91     2
+         U1       77
+
+M3ENC_B  RT91     4
+         U1       78
+
+M3HALL_A RT86     3
+         U1       89
+
+M3HALL_B RT86     1
+         U1       95
+
+M3HALL_C RT86     5
+         U1       84
+
+M4A      C39      2
+         J7       1
+         J7       2
+         Q10      D2
+         Q10      S1
+         U21      6
+
+M4A_H    RT74     5
+         U1       25
+
+M4A_L    RT74     7
+         U1       26
+
+M4B      C61      2
+         J7       3
+         J7       4
+         Q11      D2
+         Q11      S1
+         U22      6
+
+M4B_H    RT74     1
+         U1       32
+
+M4B_L    RT74     3
+         U1       33
+
+M4C      C63      2
+         J7       5
+         J7       6
+         Q12      D2
+         Q12      S1
+         U23      6
+
+M4C_H    RT73     3
+         U1       34
+
+M4C_L    RT73     1
+         U1       35
+
+M4ENC_A  RT92     1
+         U1       43
+
+M4ENC_B  RT92     3
+         U1       47
+
+M4HALL_A RT87     3
+         U1       38
+
+M4HALL_B RT87     1
+         U1       36
+
+M4HALL_C RT87     5
+         U1       41
+
+M5A      C65      2
+         J17      1
+         Q13      D2
+         Q13      S1
+         U24      6
+
+M5A_H    RT123    5
+         U1       88
+
+M5A_L    RT123    7
+         U1       91
+
+M5B      C69      2
+         J17      2
+         Q14      D2
+         Q14      S1
+         U25      6
+
+M5B_H    RT123    1
+         U1       92
+
+M5B_L    RT123    3
+         U1       93
+
+M5C      C72      2
+         J17      3
+         Q15      D2
+         Q15      S1
+         U26      6
+
+M5C_H    RT122    3
+         U1       94
+
+M5C_L    RT122    1
+         U1       96
+
+M5HALL_A RT88     1
+         U1       97
+
+M5HALL_B RT88     3
+         U1       98
+
+M5HALL_C RT88     5
+         U1       101
+
+MCU_PROGB RT10     1
+         RT7      2
+         U7       11
+
+MISO     U1       63
+         U10      2
+         U2       2
+         U7       27
+
+MOSI     U1       44
+         U10      20
+         U2       5
+         U7       22
+
+N$1      J13      4
+         RT89     4
+
+N$2      J10      3
+         RT3      4
+
+N$3      RT19     2
+         RT29     6
+         U6       2
+
+N$4      J10      5
+         RT3      8
+
+N$5      RT1      1
+         U6       7
+
+N$6      Q1       G1
+         RT1      2
+
+N$7      RT17     1
+         U6       5
+
+N$8      LED7     6
+         RT199    2
+
+N$9      LED7     5
+         RT199    4
+
+N$10     LED7     4
+         RT199    6
+
+N$11     C44      1
+         C56      1
+         D3       A
+         L1       2
+         RT14     1
+         RT83     2
+         U8       1
+
+N$12     LED7     3
+         RT199    8
+
+N$13     LED2     ANODE
+         RT198    1
+
+N$14     Q1       G2
+         RT17     2
+
+N$15     RT18     2
+         RT29     8
+         U6       1
+
+N$16     RT23     2
+         RT29     2
+         U9       2
+
+N$17     RT20     1
+         U9       7
+
+N$18     Q2       G1
+         RT20     2
+
+N$19     RT21     1
+         U9       5
+
+N$20     RT30     6
+         U$24     A2
+
+N$21     Q2       G2
+         RT21     2
+
+N$22     RT22     2
+         RT29     4
+         U9       1
+
+N$23     RT27     2
+         RT28     4
+         U11      2
+
+N$24     RT24     1
+         U11      7
+
+N$25     Q3       G1
+         RT24     2
+
+N$26     RT25     1
+         U11      5
+
+N$27     Q3       G2
+         RT25     2
+
+N$28     RT26     2
+         RT28     2
+         U11      1
+
+N$29     C4       1
+         U$24     C1
+         U6       8
+
+N$30     C7       1
+         U$24     C2
+         U9       8
+
+N$31     C14      1
+         U$24     C3
+         U11      8
+
+N$32     RT30     8
+         U$24     A1
+
+N$33     RT30     4
+         U$24     A3
+
+N$34     RT34     2
+         RT44     6
+         U12      2
+
+N$35     RT31     1
+         U12      7
+
+N$36     RT45     6
+         U$25     A2
+
+N$37     Q4       G1
+         RT31     2
+
+N$38     RT32     1
+         U12      5
+
+N$39     Q4       G2
+         RT32     2
+
+N$40     RT33     2
+         RT44     8
+         U12      1
+
+N$41     RT38     2
+         RT44     2
+         U14      2
+
+N$42     RT35     1
+         U14      7
+
+N$43     Q5       G1
+         RT35     2
+
+N$44     RT36     1
+         U14      5
+
+N$45     Q5       G2
+         RT36     2
+
+N$46     RT37     2
+         RT44     4
+         U14      1
+
+N$47     RT42     2
+         RT43     4
+         U15      2
+
+N$48     RT39     1
+         U15      7
+
+N$49     Q6       G1
+         RT39     2
+
+N$50     RT40     1
+         U15      5
+
+N$51     Q6       G2
+         RT40     2
+
+N$52     RT41     2
+         RT43     2
+         U15      1
+
+N$53     C22      1
+         U$25     C1
+         U12      8
+
+N$54     C27      1
+         U$25     C2
+         U14      8
+
+N$55     C29      1
+         U$25     C3
+         U15      8
+
+N$56     RT45     8
+         U$25     A1
+
+N$57     RT45     4
+         U$25     A3
+
+N$58     RT49     2
+         RT59     6
+         U16      2
+
+N$59     RT46     1
+         U16      7
+
+N$60     RT60     6
+         U$26     A2
+
+N$61     C1       1
+         RT15     1
+         U4       1
+         U4       3
+         U5       1
+         U5       3
+         U8       3
+
+N$62     Q7       G1
+         RT46     2
+
+N$63     RT47     1
+         U16      5
+
+N$64     Q7       G2
+         RT47     2
+
+N$65     J3       2
+         RT9      2
+
+N$66     RT48     2
+         RT59     8
+         U16      1
+
+N$67     RT53     2
+         RT59     2
+         U17      2
+
+N$68     RT50     1
+         U17      7
+
+N$69     C43      2
+         D1       C
+         L1       1
+         U3       6
+
+N$70     J4       8
+         RT6      2
+
+N$71     Q8       G1
+         RT50     2
+
+N$72     J4       10
+         RT6      6
+
+N$73     RT51     1
+         U17      5
+
+N$74     Q8       G2
+         RT51     2
+
+N$75     J4       9
+         RT6      4
+
+N$76     J5       8
+         RT85     4
+
+N$77     J5       10
+         RT85     8
+
+N$78     J5       9
+         RT85     6
+
+N$79     J6       8
+         RT86     2
+
+N$80     J6       10
+         RT86     6
+
+N$81     J6       9
+         RT86     4
+
+N$82     J7       8
+         RT87     2
+
+N$83     J7       10
+         RT87     6
+
+N$84     C55      1
+         L3       2
+         U20      5
+
+N$85     J7       9
+         RT87     4
+
+N$86     J17      6
+         RT88     2
+
+N$87     J17      7
+         RT88     4
+
+N$88     J1       2
+         RT4      7
+
+N$89     C34      1
+         RT113    2
+         U4       5
+
+N$90     C31      1
+         RT114    2
+         U5       5
+
+N$91     RT80     1
+         U7       50
+
+N$92     C18      2
+         J2       2
+         RT108    2
+         RT93     1
+
+N$93     J17      8
+         RT88     6
+
+N$94     F3       1
+         F3       2
+         P1       5
+         P1       6
+         P1       7
+         P1       8
+
+N$95     RT52     2
+         RT59     4
+         U17      1
+
+N$96     RT57     2
+         RT58     4
+         U18      2
+
+N$97     J1       3
+         RT4      5
+
+N$98     J1       4
+         RT4      3
+
+N$99     RT5      1
+         U3       4
+
+N$100    RT54     1
+         U18      7
+
+N$101    U19      7
+         U20      9
+
+N$102    C43      1
+         D3       C
+         U3       1
+
+N$103    Q9       G1
+         RT54     2
+
+N$104    J1       5
+         RT4      1
+
+N$105    RT83     1
+         RT84     2
+         U3       3
+
+N$106    J10      4
+         RT3      6
+
+N$107    RT105    1
+         U7       55
+
+N$108    J10      2
+         RT3      2
+
+N$109    C18      1
+         J2       3
+         RT109    2
+         RT110    1
+         RT93     3
+
+N$110    Q33      1
+         RT110    2
+
+N$111    C19      1
+         RT94     1
+
+N$112    C20      1
+         RT94     2
+         U7       63
+
+N$113    RT55     1
+         U18      5
+
+N$114    D2       A
+         F2       2
+
+N$115    Q9       G2
+         RT55     2
+
+N$116    RT56     2
+         RT58     2
+         U18      1
+
+N$117    J13      2
+         RT89     2
+
+N$118    J16      4
+         RT92     4
+
+N$119    J16      2
+         RT92     2
+
+N$120    J15      4
+         RT91     3
+
+N$121    J15      2
+         RT91     1
+
+N$122    J14      4
+         RT90     4
+
+N$123    J14      2
+         RT90     2
+
+N$124    C32      1
+         U$26     C1
+         U16      8
+
+N$125    U19      6
+         U20      10
+
+N$126    C57      1
+         L2       2
+         U19      13
+
+N$127    C58      1
+         U19      10
+
+N$128    C59      1
+         U19      20
+
+N$129    J1       6
+         RT103    2
+
+N$130    J1       7
+         RT103    4
+
+N$131    J1       1
+         RT102    2
+
+N$132    C17      1
+         U10      5
+
+N$133    RT95     2
+         U10      17
+
+N$134    C16      1
+         U10      10
+         X2       1
+
+N$135    J20      3
+         RT104    5
+
+N$136    J20      2
+         RT104    3
+
+N$137    J20      1
+         RT104    1
+
+N$138    J20      4
+         RT104    7
+
+N$139    C15      1
+         U10      8
+         X2       3
+
+N$140    C35      1
+         U$26     C2
+         U17      8
+
+N$141    L4       1
+         U13      1
+
+N$142    C37      1
+         U$26     C3
+         U18      8
+
+N$143    C13      1
+         C40      1
+         L4       2
+
+N$144    J2       1
+         RT107    2
+
+N$145    U10      12
+         U13      4
+
+N$146    RT60     8
+         U$26     A1
+
+N$147    RT60     4
+         U$26     A3
+
+N$148    RT64     2
+         RT74     6
+         U21      2
+
+N$149    RT61     1
+         U21      7
+
+N$150    RT75     6
+         U$27     A2
+
+N$151    Q10      G1
+         RT61     2
+
+N$152    RT62     1
+         U21      5
+
+N$153    Q10      G2
+         RT62     2
+
+N$154    RT63     2
+         RT74     8
+         U21      1
+
+N$155    RT68     2
+         RT74     2
+         U22      2
+
+N$156    RT65     1
+         U22      7
+
+N$157    Q11      G1
+         RT65     2
+
+N$158    RT66     1
+         U22      5
+
+N$159    Q11      G2
+         RT66     2
+
+N$160    RT67     2
+         RT74     4
+         U22      1
+
+N$161    RT72     2
+         RT73     4
+         U23      2
+
+N$162    RT69     1
+         U23      7
+
+N$163    Q12      G1
+         RT69     2
+
+N$164    RT70     1
+         U23      5
+
+N$165    Q12      G2
+         RT70     2
+
+N$166    RT71     2
+         RT73     2
+         U23      1
+
+N$167    C39      1
+         U$27     C1
+         U21      8
+
+N$168    C61      1
+         U$27     C2
+         U22      8
+
+N$169    C63      1
+         U$27     C3
+         U23      8
+
+N$170    RT75     8
+         U$27     A1
+
+N$171    RT75     4
+         U$27     A3
+
+N$172    U10      13
+         U13      3
+
+N$173    C13      2
+         J8       P$1
+
+N$174    RT123    6
+         RT99     2
+         U24      2
+
+N$175    RT76     1
+         U24      7
+
+N$176    RT124    6
+         U$28     A2
+
+N$177    Q13      G1
+         RT76     2
+
+N$178    RT77     1
+         U24      5
+
+N$179    Q13      G2
+         RT77     2
+
+N$180    RT123    8
+         RT79     2
+         U24      1
+
+N$181    RT117    2
+         RT123    2
+         U25      2
+
+N$182    RT100    1
+         U25      7
+
+N$183    Q14      G1
+         RT100    2
+
+N$184    RT101    1
+         U25      5
+
+N$185    Q14      G2
+         RT101    2
+
+N$186    RT106    2
+         RT123    4
+         U25      1
+
+N$187    RT121    2
+         RT122    4
+         U26      2
+
+N$188    RT118    1
+         U26      7
+
+N$189    Q15      G1
+         RT118    2
+
+N$190    RT119    1
+         U26      5
+
+N$191    Q15      G2
+         RT119    2
+
+N$192    RT120    2
+         RT122    2
+         U26      1
+
+N$193    C65      1
+         U$28     C1
+         U24      8
+
+N$194    C69      1
+         U$28     C2
+         U25      8
+
+N$195    C72      1
+         U$28     C3
+         U26      8
+
+N$196    RT124    8
+         U$28     A1
+
+N$197    RT124    4
+         U$28     A3
+
+N$198    RT125    1
+         S3       5
+
+N$199    P1       4
+         RT125    2
+         RT98     1
+
+PROGB    RT10     2
+         U1       1
+
+RADIO_INT U10      3
+         U7       16
+
+RADIO_NCS RT116    1
+         U10      7
+         U7       14
+
+RADIO_VDD C11      1
+         C12      1
+         C6       1
+         C8       1
+         C9       1
+         L5       2
+         U10      11
+         U10      14
+         U10      15
+         U10      18
+         U10      4
+         U10      9
+
+SCK      RT2      1
+         U1       71
+         U10      1
+         U2       6
+         U7       21
+
+SRST     RT8      1
+         S4       2
+         S4       4
+         U7       39
+
+SYSCLK   U1       50
+         U7       62
+         X1       3
+
+TCK      RT3      3
+         U1       110
+         U7       53
+
+TMS      RT3      1
+         U1       108
+         U7       51
+
+TST      S1       6
+         U7       40
+
+VBATT    J11      1
+         P1       1
+         P1       2
+         P1       3
+         RT98     2
+         S3       4
+
+VBUS     RT107    1
+         RT111    2
+         U7       52
+

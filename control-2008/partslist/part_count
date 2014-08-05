@@ -1,0 +1,2 @@
+#!/bin/sh
+sqlite3 -csv parts.db "select value, device, package, count(0) from parts group by value, package;"

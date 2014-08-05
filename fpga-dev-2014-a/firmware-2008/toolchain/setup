@@ -1,0 +1,2 @@
+# Source this file to use the ARM toolchain: . ./setup
+export PATH=$PATH:$(dirname $(readlink -f $BASH_SOURCE))/install/bin
