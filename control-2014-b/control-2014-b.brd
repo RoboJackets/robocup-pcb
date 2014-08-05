@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -146,7 +146,7 @@
 <text x="-3.302" y="56.134" size="1.778" layer="21">KICKER</text>
 <text x="6.096" y="25.146" size="1.778" layer="21" rot="R90">ENC1</text>
 <text x="5.969" y="11.811" size="1.778" layer="21" rot="R90">M1</text>
-<text x="99.314" y="27.94" size="1.778" layer="21" font="vector">RESET</text>
+<text x="103.632" y="27.94" size="1.778" layer="21" font="vector" align="bottom-center">RESET</text>
 <text x="56.134" y="70.993" size="1.778" layer="51" font="vector">RoboJackets RoboCup SSL</text>
 <text x="56.134" y="68.326" size="1.778" layer="51" font="vector">Control 2014 Rev B</text>
 <rectangle x1="56.007" y1="60.198" x2="87.122" y2="67.437" layer="51"/>
@@ -2001,7 +2001,7 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules>
+<designrules name="default">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
