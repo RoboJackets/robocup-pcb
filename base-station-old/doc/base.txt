@@ -1,0 +1,10 @@
+digraph
+{
+    Init->RX
+    RX->RX [label="Received"]
+    RX->TX [label="USB Packet"]
+    RX->Calibrate [label="Timeout"]
+    Calibrate->RX [label="Done", color=blue, style=dashed]
+    TX->Calibrate [label="No Reverse"]
+    TX->RX [label="Reverse"]
+}
