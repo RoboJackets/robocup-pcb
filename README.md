@@ -25,12 +25,6 @@ git clone https://github.com/sparkfun/SparkFun-Eagle-Libraries
 git clone https://github.com/adafruit/Adafruit-Eagle-Library
 ```
 ###Importing libraries into EAGLE
-=======
-```
-git clone https://github.com/sparkfun/SparkFun-Eagle-Libraries
-git clone https://github.com/adafruit/Adafruit-Eagle-Library
-```
-####Importing the libraries into EAGLE
 
 
 ###Setting options in EAGLE
