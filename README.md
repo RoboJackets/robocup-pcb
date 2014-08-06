@@ -20,19 +20,11 @@ contain many useful components. Luckly, all of the files can be found on GitHub.
 ###Downloading the libraries
 Once your computer is setup with git, the following lines can be used on any operating system with a git terminal.
 
-<<<<<<< HEAD
 ```shell
 git clone https://github.com/sparkfun/SparkFun-Eagle-Libraries
 git clone https://github.com/adafruit/Adafruit-Eagle-Library
 ```
 ###Importing libraries into EAGLE
-=======
-```
-git clone https://github.com/sparkfun/SparkFun-Eagle-Libraries
-git clone https://github.com/adafruit/Adafruit-Eagle-Library
-```
-####Importing the libraries into EAGLE
->>>>>>> 21d9deddf8a010d1511e3deea3227f41274aa347
 
 
 ###Setting options in EAGLE
