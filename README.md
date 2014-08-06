@@ -1,15 +1,20 @@
 RoboCup PCB Repository
 ===========
-##Prerequisites
+Welcome to the Georgia Tech RoboJackets repository for management and storage of RoboCup's hardware files!
 
-##
-Welcome to the Georgia Tech RoboJackets repository for storing development PCB files. Most CAD files found here are [EAGLE](http://www.cadsoftusa.com/) files. Users will find the following items:
+If you are a new member to the RoboCup electrical team, we highly encourage you to follow the tutorial GETTING-STARTED.md before continuing.
+##Prerequisites
+- [Setting up git for the first time]()
+- [Installing EAGLE]()
+
+##Using this Repository
+Most CAD files found here are [EAGLE](http://www.cadsoftusa.com/) files. Users will find the following items:
 - Control, Kicker, Antenna, and Base Station files
 - RoboCup libraries
 - CAM Jobs (for exporting gerber files)
 - Gerber files for most PCB designs
 
-The current version of EAGLE CAD used by the team is *version 6.5.0*.
+The current version of EAGLE used by the team is *version 6.5.0*.
 
 ##Configuring EAGLE for the first time
 
@@ -26,9 +31,16 @@ git clone https://github.com/sparkfun/SparkFun-Eagle-Libraries
 git clone https://github.com/adafruit/Adafruit-Eagle-Library
 ```
 ###Importing libraries into EAGLE
+There are many ways one could let EAGLE know about additional library files for use.
 
 ###Setting options in EAGLE
 1. Set to always use vector fonts
+
+
+##Testing designs with DRC rules
+
+##Using the CAM jobs
+
 
 ##Firmware
 Firmware must be uploaded to the control board before use. The firmware is written in C and defines how the hardware must interact with the higher-level software. The *[RoboJackets Wiki](http://wiki.robojackets.org)* contains basic information about *[compiling the firmware](http://wiki.robojackets.org/w/RoboCup_Compile_HOWTO)*. Instructions for uploading the firmware to a control board can be found below.
