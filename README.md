@@ -6,8 +6,6 @@ If you are a new member to the RoboCup electrical team, we highly encourage you 
 [GETTING-STARTED.md](/GETTING-STARTED.md)
 before continuing - especially if you are new to *[git version control](http://git-scm.com/)*.
 
-[TOC]
-
 ##Prerequisites
 - [Setting up git for the first time]()
 - [Installing EAGLE]()
@@ -52,7 +50,7 @@ and
 	<table style='float: center; width: 330px'>
 <tr><td><img style='width: 330px' src="https://lh3.googleusercontent.com/juI56MGbxDzvtQTgJoA8Cpsms7rpks8xTY7rcJyzZJbuQ4M6OqYmB9h5dTvo9pm4Rz9qZZxIa-I=w1342-h557"/>
 </td></tr><tr><td>
-**Figure 1.** Always using vector fonts ensures the final design exports correctly.
+Figure 1. Always using vector fonts ensures the final design exports correctly.
 </td></tr>
 </table>
 
@@ -69,7 +67,6 @@ The current working set of firmware can be found in the *[robocup-software](http
 ###Uploading Firmware to a Control Board
 Uploading firmware to a control board is a 3-step process:
 1. Place the microcontroller in *samba mode*
-
 	1. Grab a control board and plug in a *charged battery*
     2. Place dip switch *#3* in the up position
     3. Power on the board with the main power switch
@@ -77,8 +74,7 @@ Uploading firmware to a control board is a 3-step process:
     5. Power **off** the board
     6. Wait 2 seconds
     7. Power **on** the board
-    8. The board is now in *samba mode*
-    
+    8. The board is now in *samba mode*    
 2. Upload firmware to the microcontroller's internal flash memory
 ```shell
 $ scons robot-prog-samba
