@@ -77,6 +77,7 @@ Uploading firmware to a control board is a 3-step process:
     6. Wait 2 seconds
     7. Power **on** the board
     8. The board is now in *samba mode*    
+    
 2. Upload firmware to the microcontroller's internal flash memory
 ```shell
 $ scons robot-prog-samba
