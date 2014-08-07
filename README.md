@@ -66,7 +66,9 @@ The current working set of firmware can be found in the *[robocup-software](http
 
 ###Uploading Firmware to a Control Board
 Uploading firmware to a control board is a 3-step process:
+
 1. Place the microcontroller in *samba mode*
+
 	1. Grab a control board and plug in a *charged battery*
     2. Place dip switch *#3* in the up position
     3. Power on the board with the main power switch
