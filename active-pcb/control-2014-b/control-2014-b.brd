@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1544,7 +1544,7 @@ shrink quad flat pack, square</description>
 <rectangle x1="-0.2375" y1="-1.5437" x2="0.2375" y2="-0.7124" layer="51"/>
 <rectangle x1="0.7125" y1="-1.5437" x2="1.1875" y2="-0.7124" layer="51"/>
 </package>
-<package name="SOT223">
+<package name="SOT-223-3">
 <description>&lt;b&gt;SMALL OUTLINE TRANSISTOR&lt;/b&gt;</description>
 <wire x1="3.277" y1="1.778" x2="3.277" y2="-1.778" width="0.2032" layer="21"/>
 <wire x1="3.277" y1="-1.778" x2="-3.277" y2="-1.778" width="0.2032" layer="21"/>
@@ -2001,7 +2001,7 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules>
+<designrules name="default">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -2496,7 +2496,7 @@ design rules under a new name.</description>
 <element name="U12" library="power" package="SOT23-5" value="MCP1824T-2502E/OT" x="10.541" y="64.135" smashed="yes" rot="R270">
 <attribute name="NAME" x="8.763" y="65.913" size="1.27" layer="25" ratio="10"/>
 </element>
-<element name="U10" library="power" package="SOT223" value="MCP1824ST-3302E/DB" x="11.684" y="51.308" smashed="yes" rot="R90">
+<element name="U10" library="power" package="SOT-223-3" value="MCP1824ST-3302E/DB" x="11.684" y="51.308" smashed="yes" rot="R90">
 <attribute name="NAME" x="9.779" y="56.2102" size="1.27" layer="25" rot="R180"/>
 </element>
 <element name="C22" library="rcl" package="C0805" value="10uF" x="17.272" y="52.451" smashed="yes" rot="R270">
