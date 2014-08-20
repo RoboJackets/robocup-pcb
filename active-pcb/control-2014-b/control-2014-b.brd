@@ -1495,81 +1495,6 @@ shrink quad flat pack, square</description>
 </library>
 <library name="power">
 <packages>
-<package name="SOT23-6L">
-<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
-<wire x1="1.422" y1="0.81" x2="1.422" y2="-0.81" width="0.1524" layer="21"/>
-<wire x1="1.422" y1="-0.81" x2="-1.422" y2="-0.81" width="0.1524" layer="51"/>
-<wire x1="-1.422" y1="-0.81" x2="-1.422" y2="0.81" width="0.1524" layer="21"/>
-<wire x1="-1.422" y1="0.81" x2="1.422" y2="0.81" width="0.1524" layer="51"/>
-<wire x1="-0.428" y1="-0.81" x2="-0.522" y2="-0.81" width="0.1524" layer="21"/>
-<wire x1="0.522" y1="-0.81" x2="0.428" y2="-0.81" width="0.1524" layer="21"/>
-<wire x1="-1.328" y1="-0.81" x2="-1.422" y2="-0.81" width="0.1524" layer="21"/>
-<wire x1="1.422" y1="-0.81" x2="1.328" y2="-0.81" width="0.1524" layer="21"/>
-<wire x1="1.328" y1="0.81" x2="1.422" y2="0.81" width="0.1524" layer="21"/>
-<wire x1="-1.422" y1="0.81" x2="-1.328" y2="0.81" width="0.1524" layer="21"/>
-<wire x1="0.428" y1="0.81" x2="0.522" y2="0.81" width="0.1524" layer="21"/>
-<wire x1="-0.522" y1="0.81" x2="-0.428" y2="0.81" width="0.1524" layer="21"/>
-<circle x="-1" y="-0.45" radius="0.1" width="0.1524" layer="21"/>
-<smd name="1" x="-0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
-<smd name="2" x="0" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
-<smd name="3" x="0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
-<smd name="4" x="0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
-<smd name="5" x="0" y="1.3" dx="0.55" dy="1.2" layer="1"/>
-<smd name="6" x="-0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
-<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.85" layer="51"/>
-<rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.85" layer="51"/>
-<rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
-<rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
-<rectangle x1="-0.25" y1="0.85" x2="0.25" y2="1.5" layer="51"/>
-<rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
-</package>
-<package name="SOT23-5">
-<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;, 5 lead</description>
-<wire x1="-1.544" y1="0.713" x2="1.544" y2="0.713" width="0.1524" layer="21"/>
-<wire x1="1.544" y1="0.713" x2="1.544" y2="-0.712" width="0.1524" layer="21"/>
-<wire x1="1.544" y1="-0.712" x2="-1.544" y2="-0.712" width="0.1524" layer="21"/>
-<wire x1="-1.544" y1="-0.712" x2="-1.544" y2="0.713" width="0.1524" layer="21"/>
-<smd name="5" x="-0.95" y="1.306" dx="0.6" dy="1.2" layer="1"/>
-<smd name="4" x="0.95" y="1.306" dx="0.6" dy="1.2" layer="1"/>
-<smd name="1" x="-0.95" y="-1.306" dx="0.6" dy="1.2" layer="1"/>
-<smd name="2" x="0" y="-1.306" dx="0.6" dy="1.2" layer="1"/>
-<smd name="3" x="0.95" y="-1.306" dx="0.6" dy="1.2" layer="1"/>
-<text x="-1.778" y="-1.778" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="3.048" y="-1.778" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-<rectangle x1="-1.1875" y1="0.7126" x2="-0.7125" y2="1.5439" layer="51"/>
-<rectangle x1="0.7125" y1="0.7126" x2="1.1875" y2="1.5439" layer="51"/>
-<rectangle x1="-1.1875" y1="-1.5437" x2="-0.7125" y2="-0.7124" layer="51"/>
-<rectangle x1="-0.2375" y1="-1.5437" x2="0.2375" y2="-0.7124" layer="51"/>
-<rectangle x1="0.7125" y1="-1.5437" x2="1.1875" y2="-0.7124" layer="51"/>
-</package>
-<package name="SOT-223-3">
-<description>&lt;b&gt;SMALL OUTLINE TRANSISTOR&lt;/b&gt;</description>
-<wire x1="3.277" y1="1.778" x2="3.277" y2="-1.778" width="0.2032" layer="21"/>
-<wire x1="3.277" y1="-1.778" x2="-3.277" y2="-1.778" width="0.2032" layer="21"/>
-<wire x1="-3.277" y1="-1.778" x2="-3.277" y2="1.778" width="0.2032" layer="21"/>
-<wire x1="-3.277" y1="1.778" x2="3.277" y2="1.778" width="0.2032" layer="21"/>
-<wire x1="-3.473" y1="4.483" x2="3.473" y2="4.483" width="0.0508" layer="39"/>
-<wire x1="3.473" y1="-4.483" x2="-3.473" y2="-4.483" width="0.0508" layer="39"/>
-<wire x1="-3.473" y1="-4.483" x2="-3.473" y2="4.483" width="0.0508" layer="39"/>
-<wire x1="3.473" y1="4.483" x2="3.473" y2="-4.483" width="0.0508" layer="39"/>
-<smd name="1" x="-2.311" y="-3.099" dx="1.219" dy="2.235" layer="1"/>
-<smd name="2" x="0" y="-3.099" dx="1.219" dy="2.235" layer="1"/>
-<smd name="3" x="2.311" y="-3.099" dx="1.219" dy="2.235" layer="1"/>
-<smd name="4" x="0" y="3.099" dx="3.6" dy="2.2" layer="1"/>
-<text x="-2.54" y="0.0508" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-1.3208" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
-<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
-<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
-<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
-<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
-<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
-<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
-<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
-<rectangle x1="-1" y1="-1" x2="1" y2="1" layer="35"/>
-</package>
 <package name="F1206">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
 <wire x1="0.9525" y1="-0.8128" x2="-0.9652" y2="-0.8128" width="0.1524" layer="51"/>
@@ -1585,16 +1510,6 @@ shrink quad flat pack, square</description>
 <rectangle x1="-1.6891" y1="-0.8763" x2="-0.9525" y2="0.8763" layer="51"/>
 <rectangle x1="0.9525" y1="-0.8763" x2="1.6891" y2="0.8763" layer="51"/>
 <rectangle x1="-0.3" y1="-0.7" x2="0.3" y2="0.7" layer="35"/>
-</package>
-<package name="SDR0403">
-<wire x1="-2.54" y1="2.794" x2="2.54" y2="2.794" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="2.794" x2="2.54" y2="-2.794" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="-2.794" x2="-2.54" y2="-2.794" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="-2.794" x2="-2.54" y2="2.794" width="0.1524" layer="21"/>
-<smd name="1" x="0" y="1.651" dx="4.4958" dy="1.8034" layer="1"/>
-<smd name="2" x="0" y="-1.651" dx="4.4958" dy="1.8034" layer="1"/>
-<text x="-2.54" y="5.08" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.54" y="3.81" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="FUSE_MINI_ATC">
 <wire x1="-7.62" y1="1.905" x2="7.62" y2="1.905" width="0.127" layer="21"/>
@@ -1992,6 +1907,95 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 </package>
 </packages>
 </library>
+<library name="RoboJackets-ICs">
+<packages>
+<package name="SOT-223-3">
+<description>&lt;b&gt;SMALL OUTLINE TRANSISTOR&lt;/b&gt;</description>
+<wire x1="3.277" y1="1.778" x2="3.277" y2="-1.778" width="0.2032" layer="21"/>
+<wire x1="3.277" y1="-1.778" x2="-3.277" y2="-1.778" width="0.2032" layer="21"/>
+<wire x1="-3.277" y1="-1.778" x2="-3.277" y2="1.778" width="0.2032" layer="21"/>
+<wire x1="-3.277" y1="1.778" x2="3.277" y2="1.778" width="0.2032" layer="21"/>
+<wire x1="-3.473" y1="4.483" x2="3.473" y2="4.483" width="0.0508" layer="39"/>
+<wire x1="3.473" y1="-4.483" x2="-3.473" y2="-4.483" width="0.0508" layer="39"/>
+<wire x1="-3.473" y1="-4.483" x2="-3.473" y2="4.483" width="0.0508" layer="39"/>
+<wire x1="3.473" y1="4.483" x2="3.473" y2="-4.483" width="0.0508" layer="39"/>
+<smd name="1" x="-2.311" y="-3.099" dx="1.219" dy="2.235" layer="1"/>
+<smd name="2" x="0" y="-3.099" dx="1.219" dy="2.235" layer="1"/>
+<smd name="3" x="2.311" y="-3.099" dx="1.219" dy="2.235" layer="1"/>
+<smd name="4" x="0" y="3.099" dx="3.6" dy="2.2" layer="1"/>
+<text x="-2.54" y="0.0508" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-1.3208" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
+<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
+<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
+<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
+<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
+<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
+<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
+<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
+<rectangle x1="-1" y1="-1" x2="1" y2="1" layer="35"/>
+</package>
+<package name="SOT-23-5">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;, 5 lead</description>
+<wire x1="-1.544" y1="0.713" x2="1.544" y2="0.713" width="0.1524" layer="21"/>
+<wire x1="1.544" y1="0.713" x2="1.544" y2="-0.712" width="0.1524" layer="21"/>
+<wire x1="1.544" y1="-0.712" x2="-1.544" y2="-0.712" width="0.1524" layer="21"/>
+<wire x1="-1.544" y1="-0.712" x2="-1.544" y2="0.713" width="0.1524" layer="21"/>
+<smd name="5" x="-0.95" y="1.306" dx="0.6" dy="1.2" layer="1"/>
+<smd name="4" x="0.95" y="1.306" dx="0.6" dy="1.2" layer="1"/>
+<smd name="1" x="-0.95" y="-1.306" dx="0.6" dy="1.2" layer="1"/>
+<smd name="2" x="0" y="-1.306" dx="0.6" dy="1.2" layer="1"/>
+<smd name="3" x="0.95" y="-1.306" dx="0.6" dy="1.2" layer="1"/>
+<text x="-1.778" y="-1.778" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="3.048" y="-1.778" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.1875" y1="0.7126" x2="-0.7125" y2="1.5439" layer="51"/>
+<rectangle x1="0.7125" y1="0.7126" x2="1.1875" y2="1.5439" layer="51"/>
+<rectangle x1="-1.1875" y1="-1.5437" x2="-0.7125" y2="-0.7124" layer="51"/>
+<rectangle x1="-0.2375" y1="-1.5437" x2="0.2375" y2="-0.7124" layer="51"/>
+<rectangle x1="0.7125" y1="-1.5437" x2="1.1875" y2="-0.7124" layer="51"/>
+</package>
+<package name="SOT-23-6">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
+<wire x1="1.422" y1="0.81" x2="1.422" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="1.422" y1="-0.81" x2="-1.422" y2="-0.81" width="0.1524" layer="51"/>
+<wire x1="-1.422" y1="-0.81" x2="-1.422" y2="0.81" width="0.1524" layer="21"/>
+<wire x1="-1.422" y1="0.81" x2="1.422" y2="0.81" width="0.1524" layer="51"/>
+<wire x1="-0.428" y1="-0.81" x2="-0.522" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="0.522" y1="-0.81" x2="0.428" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="-1.328" y1="-0.81" x2="-1.422" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="1.422" y1="-0.81" x2="1.328" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="1.328" y1="0.81" x2="1.422" y2="0.81" width="0.1524" layer="21"/>
+<wire x1="-1.422" y1="0.81" x2="-1.328" y2="0.81" width="0.1524" layer="21"/>
+<wire x1="0.428" y1="0.81" x2="0.522" y2="0.81" width="0.1524" layer="21"/>
+<wire x1="-0.522" y1="0.81" x2="-0.428" y2="0.81" width="0.1524" layer="21"/>
+<circle x="-1" y="-0.45" radius="0.1" width="0.1524" layer="21"/>
+<smd name="1" x="-0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="2" x="0" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="3" x="0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="4" x="0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="5" x="0" y="1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="6" x="-0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.85" layer="51"/>
+<rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.85" layer="51"/>
+<rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
+<rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
+<rectangle x1="-0.25" y1="0.85" x2="0.25" y2="1.5" layer="51"/>
+<rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
+</package>
+<package name="SDR0403">
+<wire x1="-2.54" y1="2.794" x2="2.54" y2="2.794" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="2.794" x2="2.54" y2="-2.794" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-2.794" x2="-2.54" y2="-2.794" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-2.794" x2="-2.54" y2="2.794" width="0.1524" layer="21"/>
+<smd name="1" x="0" y="1.651" dx="4.4958" dy="1.8034" layer="1"/>
+<smd name="2" x="0" y="-1.651" dx="4.4958" dy="1.8034" layer="1"/>
+<text x="-2.54" y="5.08" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="3.81" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2203,7 +2207,7 @@ design rules under a new name.</description>
 <element name="C65" library="rcl" package="C0603" value="100nF" x="67.2846" y="52.3494" smashed="yes" rot="MR270">
 <attribute name="NAME" x="67.9196" y="57.1754" size="1.27" layer="26" rot="MR270"/>
 </element>
-<element name="X1" library="oscillator" package="XTAL_LCC" value="18.432MHz" x="48.895" y="28.448" smashed="yes" rot="MR0">
+<element name="X1" library="oscillator" package="XTAL_LCC" value="18.432 MHz" x="48.895" y="28.448" smashed="yes" rot="MR0">
 <attribute name="NAME" x="44.91" y="26.932" size="1.27" layer="22" rot="MR0"/>
 </element>
 <element name="R31" library="rcl" package="R0603" value="220" x="34.29" y="29.718" smashed="yes">
@@ -2487,17 +2491,24 @@ design rules under a new name.</description>
 <element name="C34" library="rcl" package="C0603" value="100nF" x="41.8592" y="34.7218" smashed="yes" rot="MR180">
 <attribute name="NAME" x="40.8432" y="36.7538" size="1.27" layer="26" rot="MR180"/>
 </element>
-<element name="U9" library="power" package="SOT23-6L" value="LM2734" x="8.382" y="40.386" smashed="yes" rot="R180">
+<element name="U9" library="RoboJackets-ICs" package="SOT-23-6" value="LM2734XMKX/NOPB" x="8.382" y="40.386" smashed="yes" rot="R180">
 <attribute name="NAME" x="6.604" y="41.402" size="1.27" layer="25" rot="R180"/>
+<attribute name="VOLTAGE" value="5.0V" x="8.382" y="40.386" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="U11" library="power" package="SOT23-5" value="MCP1824T-1202E/OT" x="10.541" y="59.436" smashed="yes" rot="R270">
+<element name="U11" library="RoboJackets-ICs" package="SOT-23-5" value="MCP1824T-1202E/OT" x="10.541" y="59.436" smashed="yes" rot="R270">
 <attribute name="NAME" x="7.366" y="60.833" size="1.27" layer="25" ratio="10"/>
+<attribute name="CURRENT" value="0.3A" x="19.431" y="63.246" size="1.27" layer="21" rot="R270"/>
+<attribute name="VOLTAGE" value="1.2V" x="16.891" y="63.246" size="1.27" layer="21" rot="R270"/>
 </element>
-<element name="U12" library="power" package="SOT23-5" value="MCP1824T-2502E/OT" x="10.541" y="64.135" smashed="yes" rot="R270">
+<element name="U12" library="RoboJackets-ICs" package="SOT-23-5" value="MCP1824T-2502E/OT" x="10.541" y="64.135" smashed="yes" rot="R270">
 <attribute name="NAME" x="8.763" y="65.913" size="1.27" layer="25" ratio="10"/>
+<attribute name="CURRENT" value="0.3A" x="19.431" y="67.945" size="1.27" layer="21" rot="R270"/>
+<attribute name="VOLTAGE" value="2.5V" x="16.891" y="67.945" size="1.27" layer="21" rot="R270"/>
 </element>
-<element name="U10" library="power" package="SOT-223-3" value="MCP1824ST-3302E/DB" x="11.684" y="51.308" smashed="yes" rot="R90">
+<element name="U10" library="RoboJackets-ICs" package="SOT-223-3" value="MCP1824ST-3302E/DB" x="11.684" y="51.308" smashed="yes" rot="R90">
 <attribute name="NAME" x="9.779" y="56.2102" size="1.27" layer="25" rot="R180"/>
+<attribute name="CURRENT" value="0.3A" x="11.684" y="51.308" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VOLTAGE" value="3.3V" x="11.684" y="51.308" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C22" library="rcl" package="C0805" value="10uF" x="17.272" y="52.451" smashed="yes" rot="R270">
 <attribute name="NAME" x="18.415" y="54.356" size="1.27" layer="25" rot="R270"/>
@@ -2524,7 +2535,7 @@ design rules under a new name.</description>
 <element name="J19" library="jst_vh" package="JST_VH_2_RA" value="JST_VH_2" x="19.939" y="2.54" smashed="yes">
 <attribute name="NAME" x="18.669" y="-6.35" size="1.27" layer="25"/>
 </element>
-<element name="L1" library="power" package="SDR0403" value="SDR0403-270KL" x="15.748" y="41.148" smashed="yes" rot="R180">
+<element name="L1" library="RoboJackets-ICs" package="SDR0403" value="SDR0403-270KL" x="15.748" y="41.148" smashed="yes" rot="R180">
 <attribute name="NAME" x="20.447" y="43.18" size="1.27" layer="25" rot="R180"/>
 </element>
 <element name="J18" library="2mm" package="2MM-4-V" value="2MM-4V" x="23.876" y="26.416" smashed="yes" rot="R270">
@@ -5735,7 +5746,7 @@ design rules under a new name.</description>
 <wire x1="105.428" y1="27.089" x2="101.328" y2="27.089" width="0.254" layer="1"/>
 <wire x1="86.741" y1="30.988" x2="87.757" y2="32.004" width="0.254" layer="3"/>
 </signal>
-<signal name="+12V">
+<signal name="V+">
 <contactref element="R108" pad="2"/>
 <contactref element="J19" pad="1"/>
 <contactref element="F1" pad="4"/>
@@ -6344,7 +6355,7 @@ design rules under a new name.</description>
 <wire x1="102.362" y1="33.401" x2="101.3206" y2="34.4424" width="0.254" layer="1"/>
 <wire x1="100.584" y1="34.4424" x2="101.3206" y2="34.4424" width="0.254" layer="1"/>
 </signal>
-<signal name="/CONNECT">
+<signal name="!CONNECT">
 <contactref element="U7" pad="3"/>
 <contactref element="U2" pad="19"/>
 <wire x1="90.507" y1="50.431" x2="90.507" y2="51.772" width="0.254" layer="1"/>
