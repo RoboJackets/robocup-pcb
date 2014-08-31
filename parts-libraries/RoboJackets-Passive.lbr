@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -61,7 +61,7 @@
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -70,107 +70,50 @@
 </layers>
 <library>
 <packages>
-<package name="FH_11_HOR">
-<wire x1="-7.8" y1="6.8" x2="-7.8" y2="0" width="0.127" layer="21"/>
-<wire x1="-7.8" y1="6.8" x2="7.8" y2="6.8" width="0.127" layer="21"/>
-<wire x1="7.8" y1="6.8" x2="7.8" y2="0" width="0.127" layer="21"/>
-<wire x1="-7.8" y1="0" x2="7.8" y2="0" width="0.127" layer="21"/>
-<smd name="11" x="5" y="0.65" dx="0.6" dy="1.9" layer="1"/>
-<smd name="10" x="4" y="0.65" dx="0.6" dy="1.9" layer="1"/>
-<smd name="9" x="3" y="0.65" dx="0.6" dy="1.9" layer="1"/>
-<smd name="8" x="2" y="0.65" dx="0.6" dy="1.9" layer="1"/>
-<smd name="7" x="1" y="0.65" dx="0.6" dy="1.9" layer="1"/>
-<smd name="6" x="0" y="0.65" dx="0.6" dy="1.9" layer="1"/>
-<smd name="5" x="-1" y="0.65" dx="0.6" dy="1.9" layer="1"/>
-<smd name="4" x="-2" y="0.65" dx="0.6" dy="1.9" layer="1"/>
-<smd name="3" x="-3" y="0.65" dx="0.6" dy="1.9" layer="1"/>
-<smd name="2" x="-4" y="0.65" dx="0.6" dy="1.9" layer="1"/>
-<smd name="1" x="-5" y="0.65" dx="0.6" dy="1.9" layer="1"/>
-<smd name="12NC" x="8.2" y="3" dx="2.1" dy="2.8" layer="1"/>
-<smd name="13NC" x="-8.2" y="3" dx="2.1" dy="2.8" layer="1"/>
-<text x="-3" y="7" size="1.27" layer="25">&gt;NAME</text>
-<rectangle x1="-7.1" y1="1.6" x2="-5.3" y2="4.4" layer="41"/>
-<rectangle x1="5.3" y1="1.6" x2="7.1" y2="4.4" layer="41"/>
-</package>
-<package name="FH_11_PADONLY">
-<smd name="11" x="5" y="-0.62" dx="0.6" dy="1.9" layer="1"/>
-<smd name="10" x="4" y="-0.62" dx="0.6" dy="1.9" layer="1"/>
-<smd name="9" x="3" y="-0.62" dx="0.6" dy="1.9" layer="1"/>
-<smd name="8" x="2" y="-0.62" dx="0.6" dy="1.9" layer="1"/>
-<smd name="7" x="1" y="-0.62" dx="0.6" dy="1.9" layer="1"/>
-<smd name="6" x="0" y="-0.62" dx="0.6" dy="1.9" layer="1"/>
-<smd name="5" x="-1" y="-0.62" dx="0.6" dy="1.9" layer="1"/>
-<smd name="4" x="-2" y="-0.62" dx="0.6" dy="1.9" layer="1"/>
-<smd name="3" x="-3" y="-0.62" dx="0.6" dy="1.9" layer="1"/>
-<smd name="2" x="-4" y="-0.62" dx="0.6" dy="1.9" layer="1"/>
-<smd name="1" x="-5" y="-0.62" dx="0.6" dy="1.9" layer="1"/>
+<package name="MOUNTING_HOLE">
+<circle x="0" y="0" radius="3.175" width="0.254" layer="21"/>
+<polygon width="0.127" layer="51">
+<vertex x="-3.048" y="0"/>
+<vertex x="-1.27" y="0" curve="90"/>
+<vertex x="0" y="-1.27"/>
+<vertex x="0" y="-3.048" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="51">
+<vertex x="0" y="3.048"/>
+<vertex x="0" y="1.27" curve="-90"/>
+<vertex x="1.27" y="0"/>
+<vertex x="3.048" y="0" curve="90"/>
+</polygon>
+<circle x="0" y="0" radius="1.016" width="0.635" layer="51"/>
+<circle x="0" y="0" radius="3.556" width="0.508" layer="39"/>
+<circle x="0" y="0" radius="3.556" width="0.508" layer="41"/>
+<circle x="0" y="0" radius="3.556" width="0.508" layer="42"/>
+<circle x="0" y="0" radius="3.556" width="0.508" layer="43"/>
+<pad name="GND" x="0" y="0" drill="3.81" diameter="6.096"/>
 </package>
 </packages>
 <symbols>
-<symbol name="FH_11">
-<wire x1="-7.62" y1="12.7" x2="7.62" y2="12.7" width="0.254" layer="94"/>
-<wire x1="7.62" y1="12.7" x2="7.62" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-17.78" x2="-7.62" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-17.78" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
-<text x="-7.62" y="15.24" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="12.7" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-12.7" y="10.16" length="middle"/>
-<pin name="2" x="-12.7" y="7.62" length="middle"/>
-<pin name="3" x="-12.7" y="5.08" length="middle"/>
-<pin name="4" x="-12.7" y="2.54" length="middle"/>
-<pin name="5" x="-12.7" y="0" length="middle"/>
-<pin name="6" x="-12.7" y="-2.54" length="middle"/>
-<pin name="7" x="-12.7" y="-5.08" length="middle"/>
-<pin name="8" x="-12.7" y="-7.62" length="middle"/>
-<pin name="9" x="-12.7" y="-10.16" length="middle"/>
-<pin name="10" x="-12.7" y="-12.7" length="middle"/>
-<pin name="11" x="-12.7" y="-15.24" length="middle"/>
+<symbol name="MOUNTING_HOLE">
+<wire x1="0" y1="1.27" x2="1.27" y2="0" width="1.524" layer="94" curve="-90" cap="flat"/>
+<wire x1="-1.27" y1="0" x2="0" y2="-1.27" width="1.524" layer="94" curve="90" cap="flat"/>
+<wire x1="-0.508" y1="0" x2="0.508" y2="0" width="0.0508" layer="94"/>
+<wire x1="0" y1="0.508" x2="0" y2="-0.508" width="0.0508" layer="94"/>
+<circle x="0" y="0" radius="2.032" width="0.0508" layer="94"/>
+<circle x="0" y="0" radius="0.508" width="0.0508" layer="94"/>
+<text x="2.032" y="0.5842" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.032" y="-2.4638" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="0" visible="off" length="point"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="FH_11_H">
+<deviceset name="MOUNTING_HOLE">
 <gates>
-<gate name="G$1" symbol="FH_11" x="0" y="2.54"/>
+<gate name="G$1" symbol="MOUNTING_HOLE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="FH_11_HOR">
+<device name="" package="MOUNTING_HOLE">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="10" pad="10"/>
-<connect gate="G$1" pin="11" pad="11"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-<connect gate="G$1" pin="9" pad="9"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="FH_11_PAD" prefix="J">
-<gates>
-<gate name="G$1" symbol="FH_11" x="5.08" y="2.54"/>
-</gates>
-<devices>
-<device name="" package="FH_11_PADONLY">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="10" pad="10"/>
-<connect gate="G$1" pin="11" pad="11"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-<connect gate="G$1" pin="9" pad="9"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
 </connects>
 <technologies>
 <technology name=""/>

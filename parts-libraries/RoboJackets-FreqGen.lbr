@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -61,7 +61,7 @@
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -70,54 +70,88 @@
 </layers>
 <library>
 <packages>
-<package name="DUAL_DRIVER_FAN7380MXCT-ND">
-<wire x1="-1.925" y1="-2.565" x2="1.925" y2="-2.565" width="0.127" layer="21"/>
-<wire x1="1.925" y1="-2.565" x2="1.925" y2="2.565" width="0.127" layer="21"/>
-<wire x1="1.925" y1="2.565" x2="-1.925" y2="2.565" width="0.127" layer="21"/>
-<wire x1="-1.925" y1="2.565" x2="-1.925" y2="-2.565" width="0.127" layer="21"/>
-<smd name="LIN" x="-2.5" y="1.9" dx="0.6" dy="0.41" layer="1"/>
-<smd name="HIN" x="-2.5" y="0.63" dx="0.6" dy="0.41" layer="1"/>
-<smd name="VCC" x="-2.5" y="-0.63" dx="0.6" dy="0.41" layer="1"/>
-<smd name="COM" x="-2.5" y="-1.9" dx="0.6" dy="0.41" layer="1"/>
-<smd name="LO" x="2.5" y="-1.9" dx="0.6" dy="0.41" layer="1"/>
-<smd name="VS" x="2.5" y="-0.63" dx="0.6" dy="0.41" layer="1"/>
-<smd name="HO" x="2.5" y="0.63" dx="0.6" dy="0.41" layer="1"/>
-<smd name="VB" x="2.5" y="1.9" dx="0.6" dy="0.41" layer="1"/>
-<circle x="-1.45" y="2.05" radius="0.1581125" width="0.1" layer="20"/>
+<package name="XTAL-3.2X2.5">
+<wire x1="1.9" y1="-1.5" x2="-1.9" y2="-1.5" width="0.17" layer="21"/>
+<wire x1="-1.9" y1="-1.5" x2="-1.9" y2="1.5" width="0.17" layer="21"/>
+<smd name="4" x="-1.1" y="0.8" dx="1.4" dy="1.2" layer="1"/>
+<smd name="1" x="-1.1" y="-0.8" dx="1.4" dy="1.2" layer="1"/>
+<smd name="2" x="1.1" y="-0.8" dx="1.4" dy="1.2" layer="1"/>
+<smd name="3" x="1.1" y="0.8" dx="1.4" dy="1.2" layer="1"/>
+<text x="-2.6" y="1.7" size="1.27" layer="25">&gt;NAME</text>
+</package>
+<package name="XTAL_LCC">
+<wire x1="-3.5" y1="2.54" x2="3.5" y2="2.54" width="0.127" layer="21"/>
+<wire x1="3.5" y1="2.54" x2="3.5" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-2.54" x2="3.5" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-2.54" x2="-3.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-1" x2="-3.5" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-1" x2="-1.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1" x2="-1.5" y2="-2.5" width="0.127" layer="21"/>
+<smd name="3" x="3.5" y="2.54" dx="2.8" dy="2.2" layer="1"/>
+<smd name="2" x="3.5" y="-2.54" dx="2.8" dy="2.2" layer="1"/>
+<smd name="1" x="-3.5" y="-2.54" dx="2.8" dy="2.2" layer="1"/>
+<smd name="4" x="-3.5" y="2.54" dx="2.8" dy="2.2" layer="1"/>
+<text x="-3" y="-0.5" size="1.27" layer="21">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
-<symbol name="DUAL_DRIVER_FAN7380MXCT-ND">
-<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
-<pin name="HO" x="-2.54" y="12.7" length="middle" rot="R270"/>
-<pin name="VB" x="-7.62" y="12.7" length="middle" rot="R270"/>
-<pin name="VS" x="2.54" y="12.7" length="middle" rot="R270"/>
-<pin name="LO" x="7.62" y="12.7" length="middle" rot="R270"/>
-<pin name="COM" x="7.62" y="-12.7" length="middle" rot="R90"/>
-<pin name="VCC" x="2.54" y="-12.7" length="middle" rot="R90"/>
-<pin name="HIN" x="-2.54" y="-12.7" length="middle" rot="R90"/>
-<pin name="LIN" x="-7.62" y="-12.7" length="middle" rot="R90"/>
+<symbol name="XTAL">
+<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="1.778" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.159" y="-1.143" size="0.8636" layer="93">1</text>
+<text x="1.524" y="-1.143" size="0.8636" layer="93">2</text>
+<text x="-2.54" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
+</symbol>
+<symbol name="XTAL-1">
+<wire x1="-10.16" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
+<text x="-10.16" y="5.08" size="1.778" layer="95">&gt;VALUE</text>
+<text x="-10.16" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<pin name="1_EN" x="-15.24" y="2.54" length="middle"/>
+<pin name="2_GND" x="-15.24" y="-2.54" length="middle"/>
+<pin name="3_CLK" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="4_VCC" x="15.24" y="2.54" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="DUAL_DRIVER_FAN7380MXCT-ND">
+<deviceset name="XTAL" prefix="X">
 <gates>
-<gate name="G$1" symbol="DUAL_DRIVER_FAN7380MXCT-ND" x="10.16" y="7.62"/>
+<gate name="G$1" symbol="XTAL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DUAL_DRIVER_FAN7380MXCT-ND">
+<device name="-3.2X2.5" package="XTAL-3.2X2.5">
 <connects>
-<connect gate="G$1" pin="COM" pad="COM"/>
-<connect gate="G$1" pin="HIN" pad="HIN"/>
-<connect gate="G$1" pin="HO" pad="HO"/>
-<connect gate="G$1" pin="LIN" pad="LIN"/>
-<connect gate="G$1" pin="LO" pad="LO"/>
-<connect gate="G$1" pin="VB" pad="VB"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
-<connect gate="G$1" pin="VS" pad="VS"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OSC" prefix="X">
+<gates>
+<gate name="G$1" symbol="XTAL-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="XTAL_LCC">
+<connects>
+<connect gate="G$1" pin="1_EN" pad="1"/>
+<connect gate="G$1" pin="2_GND" pad="2"/>
+<connect gate="G$1" pin="3_CLK" pad="3"/>
+<connect gate="G$1" pin="4_VCC" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
