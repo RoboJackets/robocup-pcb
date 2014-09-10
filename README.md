@@ -2,16 +2,14 @@
 ===========
 Welcome to the Georgia Tech RoboJackets repository for management and storage of RoboCup's hardware files!
 
-If you are a new member to the RoboCup electrical team, we highly encourage you to follow the tutorial 
-[GETTING-STARTED.md](/GETTING-STARTED.md)
-before continuing - especially if you are new to *[git version control](http://git-scm.com/)*.
+If you are a new member to the RoboCup electrical team and have never used *[git version control](http://git-scm.com/)* before, we highly recommend that you familiarize yourself with it.
 
 ##Prerequisites
-- [Setting up git for the first time]()
-- [Installing EAGLE]()
+- A computer configured with git [[Windows](https://windows.github.com)] [[Mac](https://mac.github.com/)]
+- An installation of [EAGLE](http://www.cadsoftusa.com/)
 
 ##Using this Repository
-Most CAD files found here are [EAGLE](http://www.cadsoftusa.com/) files. Users will find the following items:
+Most CAD files found here are [EAGLE](http://www.cadsoftusa.com/) files. However, some older archived files were created using [PCB](http://pcb.geda-project.org) (a program that is part of the [gEDA project](http://www.geda-project.org)). Users will find the following items here:
 - Control, Kicker, Antenna, and Base Station files
 - Gerber files for most PCB designs
 - RoboCup libraries
@@ -30,7 +28,7 @@ and
 
 1. Download the additional libraries:
 
-	Once your computer is setup with git, the following lines can be used on any operating system within a *[terminal](http://en.wikipedia.org/wiki/Computer_terminal)* configured with git.
+	Once your computer is setup with git, the following lines can be used on any operating system within a *[terminal](http://en.wikipedia.org/wiki/Computer_terminal)* configured with git. Users who are using a GUI interface for git should simply add the respective repositories through the interface.
 	
 	```shell
 	git clone https://github.com/sparkfun/SparkFun-Eagle-Libraries
@@ -54,10 +52,6 @@ Figure 1. Always using vector fonts ensures the final design exports correctly.
 </td></tr>
 </table>
 
-##Testing designs with DRU rules
-
-##Using the CAM jobs
-
 ##Firmware
 Firmware must be uploaded to the control board before use. The firmware is written in C and defines how the hardware must interact with the higher-level software. The *[RoboJackets Wiki](http://wiki.robojackets.org)* contains basic information about *[compiling the firmware](http://wiki.robojackets.org/w/RoboCup_Compile_HOWTO)*. Instructions for uploading the firmware to a control board are below.
 
@@ -65,27 +59,7 @@ Firmware must be uploaded to the control board before use. The firmware is writt
 The current working set of firmware can be found in the *[robocup-software](https://github.com/RoboJackets/robocup-software)* repository within the *[firmware](https://github.com/RoboJackets/robocup-software/tree/master/firmware)* directory.
 
 ###Uploading Firmware to a Control Board
-Uploading firmware to a control board is a 3-step process:
-
-1. Place the microcontroller in *samba mode*
-
-	1. Grab a control board and plug in a *charged battery*
-    2. Place dip switch *#3* in the up position
-    3. Power on the board with the main power switch
-    4. Wait 10 seconds
-    5. Power **off** the board
-    6. Wait 2 seconds
-    7. Power **on** the board
-    8. The board is now in *samba mode*    
-    
-2. Upload firmware to the microcontroller's internal flash memory
-```shell
-$ scons robot-prog-samba
-```
-3. Upload firmware to the external memory chip
-```shell
-$ scons ~~robot-prog-fpga~~ **[UPDATE THIS]**
-```
+All methods for uploading the compiled set of firmware to a control board is outlined in the *[robot](https://github.com/RoboJackets/robocup-software/tree/master/firmware/robot#robot-firmware)* subdirectory of robocup-software
 
 
 
