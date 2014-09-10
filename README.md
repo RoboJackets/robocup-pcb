@@ -40,18 +40,6 @@ and
     
     Find the *Libraries* text box, and add the directory paths where the repositories were cloned from step 1. Don't forget to also include the path for the *[RoboJackets libraries](https://github.com/jjones646/robocup-pcb/tree/master/parts-libraries)*!
 
-###Setting the final options in EAGLE
-1. Always use vector fonts:
-
-	From the EAGLE control panel, go to *Options -> User Interface* and check the box labeled *'Always vector font'*. Figure 1 shows what the window should look like once completed.
-
-	<table style='float: center; width: 330px'>
-<tr><td><img style='width: 330px' src="https://lh3.googleusercontent.com/juI56MGbxDzvtQTgJoA8Cpsms7rpks8xTY7rcJyzZJbuQ4M6OqYmB9h5dTvo9pm4Rz9qZZxIa-I=w1342-h557"/>
-</td></tr><tr><td>
-Figure 1. Always using vector fonts ensures the final design exports correctly.
-</td></tr>
-</table>
-
 ##Firmware
 Firmware must be uploaded to the control board before use. The firmware is written in C and defines how the hardware must interact with the higher-level software. The *[RoboJackets Wiki](http://wiki.robojackets.org)* contains basic information about *[compiling the firmware](http://wiki.robojackets.org/w/RoboCup_Compile_HOWTO)*. Instructions for uploading the firmware to a control board are below.
 
