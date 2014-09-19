@@ -77,8 +77,8 @@
 <pad name="-" x="0" y="-11.2497" drill="2"/>
 <pad name="NC2" x="9.7434" y="5.6261" drill="2"/>
 <pad name="NC1" x="-9.7434" y="5.6261" drill="2"/>
-<text x="-3" y="2" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3" y="-4" size="1.27" layer="27">&gt;VALUE</text>
+<text x="0" y="2.54" size="1.778" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3.81" size="1.524" layer="27" ratio="15" align="bottom-center">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -95,8 +95,8 @@
 <wire x1="-0.635" y1="3.81" x2="-1.27" y2="3.81" width="0.254" layer="94"/>
 <wire x1="-1.27" y1="3.81" x2="-1.27" y2="4.445" width="0.254" layer="94"/>
 <wire x1="-1.27" y1="3.81" x2="-1.27" y2="3.175" width="0.254" layer="94"/>
-<text x="5.08" y="2.54" size="1.27" layer="95">&gt;NAME</text>
-<text x="5.08" y="0" size="1.27" layer="96">&gt;VALUE</text>
+<text x="3.556" y="2.54" size="1.27" layer="95">&gt;NAME</text>
+<text x="3.556" y="0" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="+" x="0" y="5.08" visible="off" length="short" rot="R270"/>
 <pin name="-" x="0" y="-2.54" visible="off" length="short" rot="R90"/>
 </symbol>
@@ -104,7 +104,7 @@
 <devicesets>
 <deviceset name="RC_CAP" prefix="C">
 <gates>
-<gate name="G$1" symbol="CAP_POL" x="0" y="0"/>
+<gate name="G$1" symbol="CAP_POL" x="0" y="0" addlevel="must"/>
 </gates>
 <devices>
 <device name="" package="T-UP3">
