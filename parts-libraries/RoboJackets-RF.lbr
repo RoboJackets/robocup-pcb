@@ -57,27 +57,42 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="100" name="Muster" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="101" name="Bemassung" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="102" name="Mittellin" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="Beschreib" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="BGA-Top" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="107" name="BD-Top" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="250" name="Descript" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="251" name="SMDround" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="254" name="OrgLBR" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
 <packages>
-<package name="QLP20">
-<wire x1="-2" y1="2" x2="-1.4" y2="2" width="0.17" layer="21"/>
-<wire x1="-1.4" y1="2" x2="2" y2="2" width="0.17" layer="21"/>
-<wire x1="2" y1="2" x2="2" y2="-2" width="0.17" layer="21"/>
-<wire x1="2" y1="-2" x2="-2" y2="-2" width="0.17" layer="21"/>
-<wire x1="-2" y1="-2" x2="-2" y2="1.4" width="0.17" layer="21"/>
-<wire x1="-2" y1="1.4" x2="-2" y2="2" width="0.17" layer="21"/>
-<wire x1="-2" y1="1.4" x2="-1.4" y2="2" width="0.17" layer="21"/>
+<package name="QLP20_RJ">
+<wire x1="-1.4" y1="2" x2="2" y2="2" width="0.1524" layer="21"/>
+<wire x1="2" y1="2" x2="2" y2="-2" width="0.1524" layer="21"/>
+<wire x1="2" y1="-2" x2="-2" y2="-2" width="0.1524" layer="21"/>
+<wire x1="-2" y1="-2" x2="-2" y2="1.4" width="0.1524" layer="21"/>
+<wire x1="-2" y1="1.4" x2="-1.4" y2="2" width="0.1524" layer="21"/>
 <smd name="DAP" x="0" y="0" dx="2.4" dy="2.4" layer="1"/>
 <smd name="1" x="-1.78" y="1" dx="0.76" dy="0.28" layer="1"/>
 <smd name="2" x="-1.78" y="0.5" dx="0.76" dy="0.28" layer="1"/>
@@ -99,8 +114,8 @@
 <smd name="18" x="0" y="1.78" dx="0.28" dy="0.76" layer="1"/>
 <smd name="19" x="-0.5" y="1.78" dx="0.28" dy="0.76" layer="1"/>
 <smd name="20" x="-1" y="1.78" dx="0.28" dy="0.76" layer="1"/>
-<text x="-2.8" y="2.4" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.2" y="4" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-1.905" y="1.905" size="1" layer="25" ratio="10" align="bottom-right">&gt;NAME</text>
+<text x="0" y="-2.54" size="1" layer="27" ratio="10" align="top-center">&gt;VALUE</text>
 </package>
 <package name="0896BM15A0001">
 <wire x1="1.016" y1="1.524" x2="-1.016" y2="1.524" width="0.127" layer="21"/>
@@ -137,9 +152,52 @@
 <smd name="7" x="3.81" y="-2.794" dx="0.508" dy="1.4224" layer="1"/>
 <circle x="-3.81" y="-1.27" radius="0.254" width="0.254" layer="25"/>
 </package>
+<package name="QLP20">
+<circle x="-1.5882625" y="1.5882625" radius="0.0424" width="0.127" layer="21"/>
+<wire x1="-1.85" y1="2" x2="1.85" y2="2" width="0.127" layer="21"/>
+<wire x1="1.85" y1="2" x2="2" y2="1.85" width="0.127" layer="21"/>
+<wire x1="2" y1="1.85" x2="2" y2="-1.85" width="0.127" layer="21"/>
+<wire x1="2" y1="-1.85" x2="1.85" y2="-2" width="0.127" layer="21"/>
+<wire x1="1.85" y1="-2" x2="-1.85" y2="-2" width="0.127" layer="21"/>
+<wire x1="-1.85" y1="-2" x2="-2" y2="-1.85" width="0.127" layer="21"/>
+<wire x1="-2" y1="-1.85" x2="-2" y2="1.85" width="0.127" layer="21"/>
+<wire x1="-2" y1="1.85" x2="-1.85" y2="2" width="0.127" layer="21"/>
+<rectangle x1="-0.325" y1="0.65" x2="0.325" y2="1.05" layer="31"/>
+<rectangle x1="-1.175" y1="-0.2" x2="-0.525" y2="0.2" layer="31" rot="R90"/>
+<rectangle x1="0.525" y1="-0.2" x2="1.175" y2="0.2" layer="31" rot="R90"/>
+<rectangle x1="-0.325" y1="-1.05" x2="0.325" y2="-0.65" layer="31"/>
+<smd name="1" x="-1.78" y="1" dx="0.76" dy="0.28" layer="1"/>
+<smd name="2" x="-1.78" y="0.5" dx="0.76" dy="0.28" layer="1"/>
+<smd name="3" x="-1.78" y="0" dx="0.76" dy="0.28" layer="1"/>
+<smd name="4" x="-1.78" y="-0.5" dx="0.76" dy="0.28" layer="1"/>
+<smd name="5" x="-1.78" y="-1" dx="0.76" dy="0.28" layer="1"/>
+<smd name="6" x="-1" y="-1.78" dx="0.76" dy="0.28" layer="1" rot="R90"/>
+<smd name="7" x="-0.5" y="-1.78" dx="0.76" dy="0.28" layer="1" rot="R90"/>
+<smd name="8" x="0" y="-1.78" dx="0.76" dy="0.28" layer="1" rot="R90"/>
+<smd name="9" x="0.5" y="-1.78" dx="0.76" dy="0.28" layer="1" rot="R90"/>
+<smd name="10" x="1" y="-1.78" dx="0.76" dy="0.28" layer="1" rot="R90"/>
+<smd name="11" x="1.78" y="-1" dx="0.76" dy="0.28" layer="1" rot="R180"/>
+<smd name="12" x="1.78" y="-0.5" dx="0.76" dy="0.28" layer="1" rot="R180"/>
+<smd name="13" x="1.78" y="0" dx="0.76" dy="0.28" layer="1" rot="R180"/>
+<smd name="14" x="1.78" y="0.5" dx="0.76" dy="0.28" layer="1" rot="R180"/>
+<smd name="15" x="1.78" y="1" dx="0.76" dy="0.28" layer="1" rot="R180"/>
+<smd name="16" x="1" y="1.78" dx="0.76" dy="0.28" layer="1" rot="R270"/>
+<smd name="17" x="0.5" y="1.78" dx="0.76" dy="0.28" layer="1" rot="R270"/>
+<smd name="18" x="0" y="1.78" dx="0.76" dy="0.28" layer="1" rot="R270"/>
+<smd name="19" x="-0.5" y="1.78" dx="0.76" dy="0.28" layer="1" rot="R270"/>
+<smd name="20" x="-1" y="1.78" dx="0.76" dy="0.28" layer="1" rot="R270"/>
+<smd name="GND" x="0" y="0" dx="2.4" dy="2.4" layer="1" cream="no"/>
+<pad name="GND1" x="0" y="0" drill="0.3" stop="no" thermals="no"/>
+<pad name="GND2" x="-0.635" y="0.635" drill="0.3" stop="no" thermals="no"/>
+<pad name="GND3" x="0.635" y="0.635" drill="0.3" stop="no" thermals="no"/>
+<pad name="GND4" x="-0.635" y="-0.635" drill="0.3" stop="no" thermals="no"/>
+<pad name="GND5" x="0.635" y="-0.635" drill="0.3" stop="no" thermals="no"/>
+<text x="-1.905" y="1.905" size="1" layer="25" ratio="10" align="bottom-right">&gt;NAME</text>
+<text x="0" y="-2.54" size="1" layer="27" ratio="10" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
-<symbol name="CC1101">
+<symbol name="CC1101_RJ">
 <wire x1="-20.32" y1="15.24" x2="22.86" y2="15.24" width="0.254" layer="94"/>
 <wire x1="22.86" y1="15.24" x2="22.86" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="22.86" y1="-15.24" x2="-20.32" y2="-15.24" width="0.254" layer="94"/>
@@ -201,14 +259,41 @@
 <pin name="TX2" x="0" y="13.97" length="middle" rot="R270"/>
 <pin name="RX" x="2.54" y="13.97" length="middle" rot="R270"/>
 </symbol>
+<symbol name="CC1101">
+<wire x1="-17.78" y1="-25.4" x2="-17.78" y2="25.4" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="25.4" x2="17.78" y2="25.4" width="0.254" layer="94"/>
+<wire x1="17.78" y1="25.4" x2="17.78" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-25.4" x2="-17.78" y2="-25.4" width="0.254" layer="94"/>
+<pin name="AVDD1" x="20.32" y="22.86" visible="pin" length="short" rot="R180"/>
+<pin name="AVDD2" x="20.32" y="17.78" visible="pin" length="short" rot="R180"/>
+<pin name="AVDD3" x="20.32" y="12.7" visible="pin" length="short" rot="R180"/>
+<pin name="AVDD4" x="20.32" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="CSN" x="-20.32" y="-7.62" visible="pin" length="short"/>
+<pin name="DCOUPL" x="-20.32" y="-2.54" visible="pin" length="short"/>
+<pin name="DGUARD" x="-20.32" y="-12.7" visible="pin" length="short"/>
+<pin name="DVDD" x="-20.32" y="2.54" visible="pin" length="short"/>
+<pin name="GND" x="20.32" y="-22.86" visible="pin" length="short" rot="R180"/>
+<pin name="GDO0(ATEST)" x="-20.32" y="-17.78" visible="pin" length="short"/>
+<pin name="GDO2" x="-20.32" y="12.7" visible="pin" length="short"/>
+<pin name="RBIAS" x="20.32" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="RF_N" x="20.32" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="RF_P" x="20.32" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="SCLK" x="-20.32" y="22.86" visible="pin" length="short"/>
+<pin name="SI" x="-20.32" y="7.62" visible="pin" length="short"/>
+<pin name="SO(GDO1)" x="-20.32" y="17.78" visible="pin" length="short"/>
+<pin name="XOSC_Q1" x="20.32" y="-17.78" visible="pin" length="short" rot="R180"/>
+<pin name="XOSC_Q2" x="20.32" y="-12.7" visible="pin" length="short" rot="R180"/>
+<text x="-19.05" y="26.67" size="2.54" layer="95" ratio="10" align="bottom-right">&gt;NAME</text>
+<text x="0" y="0" size="2.54" layer="96" ratio="10" align="center">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="CC1101" prefix="U">
+<deviceset name="CC1101_RJ" prefix="IC">
 <gates>
-<gate name="G$1" symbol="CC1101" x="0" y="0"/>
+<gate name="G$1" symbol="CC1101_RJ" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="QLP20">
+<device name="" package="QLP20_RJ">
 <connects>
 <connect gate="G$1" pin="AVDD1" pad="9"/>
 <connect gate="G$1" pin="AVDD2" pad="11"/>
@@ -258,7 +343,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="HTRC11001T">
+<deviceset name="HTRC11001T" prefix="IC">
 <gates>
 <gate name="G$1" symbol="HTRC11001T" x="0" y="0"/>
 </gates>
@@ -278,6 +363,39 @@
 <connect gate="G$1" pin="VSS" pad="1"/>
 <connect gate="G$1" pin="XTAL1" pad="6"/>
 <connect gate="G$1" pin="XTAL2" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CC1101" prefix="IC">
+<gates>
+<gate name="G$1" symbol="CC1101" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QLP20">
+<connects>
+<connect gate="G$1" pin="AVDD1" pad="9"/>
+<connect gate="G$1" pin="AVDD2" pad="11"/>
+<connect gate="G$1" pin="AVDD3" pad="14"/>
+<connect gate="G$1" pin="AVDD4" pad="15"/>
+<connect gate="G$1" pin="CSN" pad="7"/>
+<connect gate="G$1" pin="DCOUPL" pad="5"/>
+<connect gate="G$1" pin="DGUARD" pad="18"/>
+<connect gate="G$1" pin="DVDD" pad="4"/>
+<connect gate="G$1" pin="GDO0(ATEST)" pad="6"/>
+<connect gate="G$1" pin="GDO2" pad="3"/>
+<connect gate="G$1" pin="GND" pad="16 19 GND GND1 GND2 GND3 GND4 GND5"/>
+<connect gate="G$1" pin="RBIAS" pad="17"/>
+<connect gate="G$1" pin="RF_N" pad="13"/>
+<connect gate="G$1" pin="RF_P" pad="12"/>
+<connect gate="G$1" pin="SCLK" pad="1"/>
+<connect gate="G$1" pin="SI" pad="20"/>
+<connect gate="G$1" pin="SO(GDO1)" pad="2"/>
+<connect gate="G$1" pin="XOSC_Q1" pad="8"/>
+<connect gate="G$1" pin="XOSC_Q2" pad="10"/>
 </connects>
 <technologies>
 <technology name=""/>
