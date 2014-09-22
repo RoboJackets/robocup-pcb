@@ -2049,8 +2049,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <pad name="GND3" x="0.635" y="0.635" drill="0.3" stop="no" thermals="no"/>
 <pad name="GND4" x="-0.635" y="-0.635" drill="0.3" stop="no" thermals="no"/>
 <pad name="GND5" x="0.635" y="-0.635" drill="0.3" stop="no" thermals="no"/>
-<text x="-1.905" y="1.905" size="1" layer="25" ratio="10" align="bottom-right">&gt;NAME</text>
-<text x="0" y="-2.54" size="1" layer="27" ratio="10" align="top-center">&gt;VALUE</text>
+<text x="-2" y="2.5" size="1" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="0" y="-2.54" size="1" layer="27" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -2078,8 +2078,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <pin name="SO(GDO1)" x="-20.32" y="17.78" visible="pin" length="short"/>
 <pin name="XOSC_Q1" x="20.32" y="-17.78" visible="pin" length="short" rot="R180"/>
 <pin name="XOSC_Q2" x="20.32" y="-12.7" visible="pin" length="short" rot="R180"/>
-<text x="-19.05" y="26.67" size="2.54" layer="95" ratio="10" align="bottom-right">&gt;NAME</text>
-<text x="0" y="0" size="2.54" layer="96" ratio="10" align="center">&gt;VALUE</text>
+<text x="-17.78" y="26.67" size="2.54" layer="95" font="vector" ratio="10">&gt;NAME</text>
+<text x="0" y="0" size="2.54" layer="96" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>

@@ -384,8 +384,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pad name="GND3" x="0.635" y="0.635" drill="0.3" stop="no" thermals="no"/>
 <pad name="GND4" x="-0.635" y="-0.635" drill="0.3" stop="no" thermals="no"/>
 <pad name="GND5" x="0.635" y="-0.635" drill="0.3" stop="no" thermals="no"/>
-<text x="-1.905" y="1.905" size="1" layer="25" ratio="10" align="bottom-right">&gt;NAME</text>
-<text x="0" y="-2.54" size="1" layer="27" ratio="10" align="top-center">&gt;VALUE</text>
+<text x="-2" y="2.5" size="1" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="0" y="-2.54" size="1" layer="27" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
 </package>
 </packages>
 </library>
