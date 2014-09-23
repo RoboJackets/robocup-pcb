@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -57,61 +57,100 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
+<layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 </layers>
 <library>
+<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
+&lt;hr&gt;
+&lt;h1&gt;RoboJackets EAGLE Libraries - Inductors&lt;/h1&gt;&lt;/br&gt;
+&lt;p&gt;
+In this library you will find inductors. If you are looking for a common package, use the default &lt;b&gt;rcl &lt;/b&gt;library provided with EAGLE instead of looking here.
+&lt;/p&gt;</description>
 <packages>
 <package name="RL1014">
-<circle x="0" y="0" radius="4.35" width="0" layer="21"/>
-<pad name="P$1" x="2.5" y="0" drill="0.8"/>
-<pad name="P$2" x="-2.5" y="0" drill="0.8"/>
-<text x="5.08" y="2.54" size="1.27" layer="21">&gt;Name</text>
-<text x="5.08" y="0" size="1.27" layer="21">&gt;Value</text>
+<pad name="2" x="2.5" y="0" drill="0.8"/>
+<pad name="1" x="-2.5" y="0" drill="0.8"/>
+<text x="0" y="4.5" size="1" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<circle x="0" y="0" radius="4.35" width="0.127" layer="21"/>
 </package>
 <package name="2220_INDUCTOR">
-<smd name="P$1" x="3.15" y="0" dx="1.9" dy="6.35" layer="1"/>
-<smd name="P$2" x="-3.15" y="0" dx="1.9" dy="6.35" layer="1"/>
+<smd name="2" x="3.15" y="0" dx="1.9" dy="6.35" layer="1"/>
+<smd name="1" x="-3.15" y="0" dx="1.9" dy="6.35" layer="1"/>
 <wire x1="2.8" y1="3.175" x2="2.8" y2="-3.175" width="0.127" layer="21"/>
 <wire x1="2.8" y1="-3.175" x2="-2.8" y2="-3.175" width="0.127" layer="21"/>
 <wire x1="-2.8" y1="-3.175" x2="-2.8" y2="3.175" width="0.127" layer="21"/>
 <wire x1="-2.8" y1="3.175" x2="2.8" y2="3.175" width="0.127" layer="21"/>
+<text x="-3" y="3.5" size="1" layer="25" font="vector" ratio="10">&gt;NAME</text>
+</package>
+<package name="SRR1280">
+<smd name="P$1" x="4.85" y="0" dx="2.9" dy="5.4" layer="1"/>
+<smd name="P$2" x="-4.85" y="0" dx="2.9" dy="5.4" layer="1"/>
+<wire x1="-6.25" y1="-5.75" x2="-6.25" y2="5.75" width="0.127" layer="21"/>
+<wire x1="-5.75" y1="6.25" x2="5.75" y2="6.25" width="0.127" layer="21"/>
+<wire x1="6.25" y1="-5.75" x2="6.25" y2="5.75" width="0.127" layer="21"/>
+<text x="-6.25" y="6.785" size="1" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<wire x1="5.75" y1="-6.25" x2="-5.75" y2="-6.25" width="0.127" layer="21"/>
+<wire x1="-6.25" y1="5.75" x2="-5.75" y2="6.25" width="0.127" layer="21" curve="-90"/>
+<wire x1="6.25" y1="5.75" x2="5.75" y2="6.25" width="0.127" layer="21" curve="90"/>
+<wire x1="-6.25" y1="-5.75" x2="-5.75" y2="-6.25" width="0.127" layer="21" curve="90"/>
+<wire x1="5.75" y1="-6.25" x2="6.25" y2="-5.75" width="0.127" layer="21" curve="90"/>
+<rectangle x1="-6.25" y1="2.75" x2="6.25" y2="6.25" layer="39"/>
+<rectangle x1="-3.25" y1="-2.75" x2="3.25" y2="2.75" layer="39"/>
+<rectangle x1="-6.25" y1="-6.25" x2="6.25" y2="-2.75" layer="39"/>
+</package>
+<package name="SDR0403">
+<wire x1="-2.794" y1="-2.54" x2="-2.794" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-2.794" y1="2.54" x2="2.794" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="2.794" y1="2.54" x2="2.794" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="2.794" y1="-2.54" x2="-2.794" y2="-2.54" width="0.1524" layer="21"/>
+<smd name="1" x="-1.651" y="0" dx="4.4958" dy="1.8034" layer="1" rot="R90"/>
+<smd name="2" x="1.651" y="0" dx="4.4958" dy="1.8034" layer="1" rot="R90"/>
+<text x="-2.8" y="3" size="1" layer="25" font="vector" ratio="10">&gt;NAME</text>
+</package>
+<package name="SDR0302">
+<wire x1="-2.032" y1="-1.778" x2="-2.032" y2="1.778" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="1.778" x2="2.032" y2="1.778" width="0.1524" layer="21"/>
+<wire x1="2.032" y1="1.778" x2="2.032" y2="-1.778" width="0.1524" layer="21"/>
+<wire x1="2.032" y1="-1.778" x2="-2.032" y2="-1.778" width="0.1524" layer="21"/>
+<smd name="1" x="-1.0922" y="0" dx="2.9972" dy="1.397" layer="1" rot="R90"/>
+<smd name="2" x="1.0922" y="0" dx="2.9972" dy="1.397" layer="1" rot="R90"/>
+<text x="-2" y="2.3" size="1" layer="25" font="vector" ratio="10">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
-<symbol name="RL1014">
-<wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94" curve="-180"/>
-<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94" curve="-180"/>
-<wire x1="5.08" y1="0" x2="7.62" y2="0" width="0.254" layer="94" curve="-180"/>
-<pin name="A" x="-5.08" y="0" length="middle"/>
-<pin name="C" x="12.7" y="0" length="middle" rot="R180"/>
-</symbol>
-<symbol name="2220_INDUCTOR">
-<pin name="P$1" x="7.62" y="0" visible="off" length="short" rot="R180"/>
-<pin name="P$2" x="-5.08" y="0" visible="off" length="short"/>
+<symbol name="INDUCTOR_SINGLE">
+<pin name="P$1" x="7.62" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="P$2" x="-7.62" y="0" visible="off" length="short" direction="pas"/>
 <wire x1="-2.54" y1="0" x2="0" y2="0" width="0.254" layer="94" curve="-180"/>
 <wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94" curve="-180"/>
 <wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<text x="-5.08" y="2.54" size="2.54" layer="95" font="vector">&gt;NAME</text>
+<text x="0" y="-1.27" size="2.54" layer="96" font="vector" ratio="15" align="top-center">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="RL1014">
+<deviceset name="RL1014" prefix="L">
 <gates>
-<gate name="G$1" symbol="RL1014" x="0" y="0"/>
+<gate name="G$1" symbol="INDUCTOR_SINGLE" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="RL1014">
 <connects>
-<connect gate="G$1" pin="A" pad="P$1"/>
-<connect gate="G$1" pin="C" pad="P$2"/>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -119,18 +158,34 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="2220_INDUCTOR">
+<deviceset name="2220_INDUCTOR" prefix="L">
 <gates>
-<gate name="G$1" symbol="2220_INDUCTOR" x="0" y="0"/>
+<gate name="G$1" symbol="INDUCTOR_SINGLE" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="2220_INDUCTOR">
+<connects>
+<connect gate="G$1" pin="P$1" pad="2"/>
+<connect gate="G$1" pin="P$2" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SRR1280-*" prefix="L">
+<gates>
+<gate name="G$1" symbol="INDUCTOR_SINGLE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SRR1280">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="101M"/>
 </technologies>
 </device>
 </devices>

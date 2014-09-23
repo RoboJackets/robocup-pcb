@@ -41,7 +41,7 @@ and
     Find the *Libraries* text box, and add the directory paths where the repositories were cloned from step 1. Don't forget to also include the path for the *[RoboJackets libraries](https://github.com/jjones646/robocup-pcb/tree/master/parts-libraries)*!
 
 ##Firmware
-Firmware must be uploaded to the control board before use. The firmware is written in C and defines how the hardware must interact with the higher-level software. The *[RoboJackets Wiki](http://wiki.robojackets.org)* contains basic information about *[compiling the firmware](http://wiki.robojackets.org/w/RoboCup_Compile_HOWTO)*. Instructions for uploading the firmware to a control board are below.
+*[Firmware](http://en.wikipedia.org/wiki/Firmware)* must be uploaded to the control board before use. The firmware is written in C and defines how the hardware must interact with the higher-level software. The *[RoboJackets Wiki](http://wiki.robojackets.org)* contains basic information about *[compiling the firmware](http://wiki.robojackets.org/w/RoboCup_Compile_HOWTO)*. Instructions for uploading the firmware to a control board are below.
 
 ###Source Files
 The current working set of firmware can be found in the *[robocup-software](https://github.com/RoboJackets/robocup-software)* repository within the *[firmware](https://github.com/RoboJackets/robocup-software/tree/master/firmware)* directory.

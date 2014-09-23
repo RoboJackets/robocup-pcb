@@ -26387,8 +26387,7 @@ ground plane touches the screw holes and mounting holes!</text>
 <wire x1="12.7" y1="76.2" x2="12.7" y2="35.56" width="0.254" layer="97" style="shortdash"/>
 <wire x1="12.7" y1="208.28" x2="111.76" y2="208.28" width="0.254" layer="97" style="shortdash"/>
 <wire x1="111.76" y1="208.28" x2="111.76" y2="261.62" width="0.254" layer="97" style="shortdash"/>
-<wire x1="111.76" y1="261.62" x2="58.42" y2="261.62" width="0.254" layer="97" style="shortdash"/>
-<wire x1="58.42" y1="261.62" x2="12.7" y2="261.62" width="0.254" layer="97" style="shortdash"/>
+<wire x1="111.76" y1="261.62" x2="12.7" y2="261.62" width="0.254" layer="97" style="shortdash"/>
 <wire x1="12.7" y1="261.62" x2="12.7" y2="208.28" width="0.254" layer="97" style="shortdash"/>
 <wire x1="12.7" y1="81.28" x2="76.2" y2="81.28" width="0.254" layer="97" style="shortdash"/>
 <wire x1="76.2" y1="81.28" x2="76.2" y2="132.08" width="0.254" layer="97" style="shortdash"/>
@@ -26429,18 +26428,6 @@ ground plane touches the screw holes and mounting holes!</text>
 <text x="149.86" y="177.8" size="1.27" layer="97" align="top-left">Replace with smd tact switch
 and add button for both
 solenoids</text>
-<text x="60.96" y="284.48" size="1.27" layer="97">From Datasheet:
-As the Bus Master may enter a state where all
-inputs/outputs are in high impedance at 
-the same time (for example, when the Bus Master
-is reset), the clock line (C) must be 
-connected to an external pull-down resistor so
-that, when all inputs/outputs become high 
-impedance, the S line is pulled High while the
-C line is pulled Low (thus ensuring that S and 
-C do not become High at the same time, and so,
-that the t_SHCH requirement is met).</text>
-<wire x1="60.96" y1="284.48" x2="58.42" y2="261.62" width="0.1524" layer="97"/>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="304.8" y="162.56"/>
@@ -29141,12 +29128,6 @@ reflash Atmel bootloader</text>
 <wire x1="86.36" y1="106.68" x2="86.36" y2="78.74" width="0.254" layer="97" style="shortdash"/>
 <wire x1="86.36" y1="78.74" x2="15.24" y2="78.74" width="0.254" layer="97" style="shortdash"/>
 <wire x1="15.24" y1="78.74" x2="15.24" y2="106.68" width="0.254" layer="97" style="shortdash"/>
-<circle x="167.64" y="139.7" radius="2.54" width="0.1524" layer="97"/>
-<wire x1="167.64" y1="142.24" x2="162.56" y2="172.72" width="0.1524" layer="97"/>
-<text x="162.56" y="172.72" size="1.27" layer="97" font="vector" align="bottom-right">This enable pin
-could be used
-to better suit
-the power switch</text>
 <circle x="368.3" y="175.26" radius="2.54" width="0.1524" layer="97"/>
 <circle x="368.3" y="144.78" radius="2.54" width="0.1524" layer="97"/>
 <wire x1="368.3" y1="172.72" x2="373.38" y2="132.08" width="0.1524" layer="97"/>
@@ -29168,11 +29149,6 @@ power rails</text>
 <text x="101.6" y="195.58" size="1.778" layer="97" font="vector" ratio="10" align="top-left">*All power chips
 provide protection
 against overcurrent</text>
-<circle x="81.28" y="139.7" radius="5.6796125" width="0.1524" layer="97"/>
-<wire x1="78.74" y1="134.62" x2="60.96" y2="127" width="0.1524" layer="97"/>
-<text x="60.96" y="127" size="1.27" layer="97" align="top-right">Current minimum breakdown
-voltage is 17.1V. Would need
-new TVS diode with ~20V.</text>
 </plain>
 <instances>
 <instance part="C33" gate="G$1" x="274.32" y="86.36" smashed="yes">
