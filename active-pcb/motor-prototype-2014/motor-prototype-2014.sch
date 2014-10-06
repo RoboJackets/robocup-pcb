@@ -35527,7 +35527,7 @@ In this library you will find switches and other mechanical assisted circuit ele
 <part name="R.CL1" library="rcl" deviceset="R-US_" device="R2512" value="0.003, 3W"/>
 <part name="R.TRP1" library="rcl" deviceset="R-US_" device="R0603" value="24k"/>
 <part name="SUPPLY5" library="supply2" deviceset="VCC" device="" value="18.5V"/>
-<part name="C2" library="rcl" deviceset="C-US" device="C0603" value="1n"/>
+<part name="CR1" library="rcl" deviceset="C-US" device="C0603" value="1n"/>
 <part name="F1" library="RoboJackets-ICs" deviceset="FUSE" device=""/>
 <part name="SUPPLY6" library="supply2" deviceset="VCC" device="" value="18.5V"/>
 <part name="RC1" library="rcl" deviceset="R-US_" device="R0603" value="2.87M 1%"/>
@@ -35601,7 +35601,7 @@ In this library you will find switches and other mechanical assisted circuit ele
 <instance part="R.CL1" gate="G$1" x="40.64" y="20.32" rot="R90"/>
 <instance part="R.TRP1" gate="G$1" x="40.64" y="40.64" rot="R90"/>
 <instance part="SUPPLY5" gate="G$1" x="17.78" y="124.46"/>
-<instance part="C2" gate="G$1" x="30.48" y="50.8"/>
+<instance part="CR1" gate="G$1" x="30.48" y="50.8"/>
 <instance part="F1" gate="G$1" x="142.24" y="137.16" rot="R90"/>
 <instance part="RC1" gate="G$1" x="30.48" y="63.5" rot="R90"/>
 <instance part="SUPPLY7" gate="GND" x="30.48" y="40.64"/>
@@ -35823,7 +35823,7 @@ In this library you will find switches and other mechanical assisted circuit ele
 <wire x1="43.18" y1="55.88" x2="30.48" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="55.88" x2="30.48" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="RCIN"/>
-<pinref part="C2" gate="G$1" pin="1"/>
+<pinref part="CR1" gate="G$1" pin="1"/>
 <pinref part="RC1" gate="G$1" pin="1"/>
 <wire x1="30.48" y1="58.42" x2="30.48" y2="55.88" width="0.1524" layer="91"/>
 <junction x="30.48" y="55.88"/>
@@ -35858,7 +35858,7 @@ In this library you will find switches and other mechanical assisted circuit ele
 <junction x="40.64" y="12.7"/>
 </segment>
 <segment>
-<pinref part="C2" gate="G$1" pin="2"/>
+<pinref part="CR1" gate="G$1" pin="2"/>
 <pinref part="SUPPLY7" gate="GND" pin="GND"/>
 <wire x1="30.48" y1="45.72" x2="30.48" y2="43.18" width="0.1524" layer="91"/>
 </segment>
