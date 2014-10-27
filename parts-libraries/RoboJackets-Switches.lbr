@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -57,8 +57,13 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
@@ -67,6 +72,70 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="100" name="laser-cut" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="101" name="Patch_Top" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="tplace-old" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="109" name="ref-old" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="IDFDebug" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="201" name="201bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="202" name="202bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="203" name="203bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="204" name="204bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="205" name="205bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="207" name="207bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="208" name="208bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="209" name="209bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="210" name="210bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="211" name="211bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="212" name="212bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="213" name="213bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="214" name="214bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="215" name="215bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="216" name="216bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="217" name="217bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="218" name="218bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="219" name="219bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="220" name="220bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="221" name="221bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="222" name="222bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="223" name="223bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="224" name="224bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="250" name="Descript" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="251" name="SMDround" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
 <description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
@@ -110,6 +179,7 @@ distributor Buerklin, 17G482</description>
 <pad name="1" x="3.81" y="-2.54" drill="0.8128" shape="long"/>
 <pad name="C" x="3.81" y="0" drill="0.8128" shape="long"/>
 <text x="-3.08" y="4.461" size="1" layer="25" ratio="10">&gt;NAME</text>
+<rectangle x1="-3.302" y1="-3.81" x2="6.858" y2="3.81" layer="39"/>
 </package>
 <package name="M202X-30">
 <wire x1="6.477" y1="0" x2="6.477" y2="10.16" width="0.254" layer="21"/>
@@ -205,6 +275,7 @@ distributor Buerklin, 17G482</description>
 <pad name="C2" x="2.54" y="0" drill="0.8"/>
 <pad name="2" x="2.54" y="-2.54" drill="0.8"/>
 <text x="-3.81" y="5.715" size="1" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<rectangle x1="-3.81" y1="-5.588" x2="3.81" y2="5.588" layer="39"/>
 </package>
 <package name="KMR2">
 <wire x1="-2.3" y1="1.4" x2="2.3" y2="1.4" width="0.127" layer="21"/>
@@ -217,6 +288,7 @@ distributor Buerklin, 17G482</description>
 <smd name="1.2" x="2.05" y="0.8" dx="0.9" dy="1" layer="1"/>
 <text x="-2.54" y="1.905" size="1" layer="25" ratio="10">&gt;NAME</text>
 <text x="0" y="-1.905" size="1" layer="21" ratio="20" align="top-center">&gt;FUNCTION</text>
+<rectangle x1="-2.286" y1="-1.397" x2="2.286" y2="1.397" layer="39"/>
 </package>
 <package name="SOT23-6">
 <wire x1="-1.5" y1="1.5" x2="-1.5" y2="-0.5" width="0.127" layer="21"/>
@@ -265,6 +337,41 @@ distributor Buerklin, 17G482</description>
 <wire x1="2.473" y1="-0.983" x2="-2.473" y2="-0.983" width="0.127" layer="21"/>
 <wire x1="-2.473" y1="-0.983" x2="-2.473" y2="0.983" width="0.127" layer="21"/>
 <rectangle x1="-0.635" y1="-0.983" x2="0.635" y2="0.983" layer="21"/>
+</package>
+<package name="34EWMSP12M6RT">
+<smd name="1" x="-3.685" y="0" dx="3.81" dy="2.03" layer="1"/>
+<smd name="2" x="0" y="0" dx="1.02" dy="2.03" layer="1"/>
+<smd name="3" x="3.685" y="0" dx="3.81" dy="2.03" layer="1"/>
+<smd name="NC_1" x="-1.78" y="7.62" dx="1.02" dy="2.03" layer="1"/>
+<smd name="NC_2" x="1.78" y="7.62" dx="1.02" dy="2.03" layer="1"/>
+<wire x1="-2" y1="8.635" x2="2" y2="8.635" width="0.127" layer="21"/>
+<wire x1="-1.8" y1="12.745" x2="-1" y2="12.745" width="0.127" layer="21"/>
+<wire x1="-1" y1="12.745" x2="1" y2="12.745" width="0.127" layer="21"/>
+<wire x1="1" y1="12.745" x2="1.7" y2="12.745" width="0.127" layer="21"/>
+<wire x1="-2" y1="12.5" x2="-2" y2="8.635" width="0.127" layer="21"/>
+<wire x1="2" y1="12.5" x2="2" y2="8.635" width="0.127" layer="21"/>
+<wire x1="-4" y1="0" x2="4" y2="0" width="0.127" layer="21"/>
+<wire x1="-4" y1="7.62" x2="4" y2="7.62" width="0.127" layer="21"/>
+<wire x1="-4" y1="7.62" x2="-4" y2="0" width="0.127" layer="21"/>
+<wire x1="4" y1="7.62" x2="4" y2="0" width="0.127" layer="21"/>
+<wire x1="-4" y1="7.62" x2="-5" y2="7.62" width="0.127" layer="21"/>
+<wire x1="-5" y1="7.62" x2="-5" y2="8.635" width="0.127" layer="21"/>
+<wire x1="-5" y1="8.635" x2="-2" y2="8.635" width="0.127" layer="21"/>
+<wire x1="5" y1="7.62" x2="5" y2="8.635" width="0.127" layer="21"/>
+<wire x1="2" y1="8.635" x2="5" y2="8.635" width="0.127" layer="21"/>
+<wire x1="5" y1="7.62" x2="4" y2="7.62" width="0.127" layer="21"/>
+<wire x1="-2" y1="12.5" x2="-1.8" y2="12.745" width="0.127" layer="21" curve="-90"/>
+<wire x1="1.7" y1="12.745" x2="2" y2="12.5" width="0.127" layer="21" curve="-90"/>
+<wire x1="-2.3" y1="17.8" x2="-1" y2="12.745" width="0.1" layer="21" style="shortdash"/>
+<wire x1="2.3" y1="17.8" x2="1" y2="12.745" width="0.1" layer="21" style="shortdash"/>
+<wire x1="-1" y1="18.5" x2="1" y2="18.5" width="0.1" layer="21" style="shortdash"/>
+<wire x1="-2.3" y1="17.8" x2="-1.6" y2="18.5" width="0.1" layer="21" style="shortdash" curve="-90"/>
+<wire x1="-1.6" y1="18.5" x2="-1" y2="18.5" width="0.1" layer="21" style="shortdash"/>
+<wire x1="2.3" y1="17.8" x2="1.6" y2="18.5" width="0.1" layer="21" style="shortdash" curve="90"/>
+<wire x1="1.6" y1="18.5" x2="1" y2="18.5" width="0.1" layer="21" style="shortdash"/>
+<rectangle x1="-3.937" y1="0" x2="3.937" y2="7.62" layer="39"/>
+<rectangle x1="-4.953" y1="7.62" x2="4.953" y2="8.636" layer="39"/>
+<rectangle x1="-2.032" y1="8.636" x2="2.032" y2="12.7" layer="39"/>
 </package>
 </packages>
 <symbols>
@@ -670,6 +777,23 @@ http://www.digikey.com/product-detail/en/G3T12AP/360-1774-ND/1006855</descriptio
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="34EWMSP12MRT" prefix="S" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="SPDT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="34EWMSP12M6RT">
+<connects>
+<connect gate="G$1" pin="C" pad="2"/>
+<connect gate="G$1" pin="OFF" pad="1"/>
+<connect gate="G$1" pin="ON" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>

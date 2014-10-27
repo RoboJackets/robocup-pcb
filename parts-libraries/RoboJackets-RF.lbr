@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -106,6 +106,7 @@ In this library you will find circuit elements directly involved in controlling 
 <smd name="1" x="0.65" y="0.9" dx="0.35" dy="1" layer="1"/>
 <smd name="3" x="-0.65" y="0.9" dx="0.35" dy="1" layer="1"/>
 <text x="-0.635" y="1.905" size="1" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<rectangle x1="-1.016" y1="-1.524" x2="1.016" y2="1.524" layer="39"/>
 </package>
 <package name="HTRC11001T">
 <wire x1="-4.375" y1="2" x2="4.375" y2="2" width="0.127" layer="21"/>
@@ -127,6 +128,7 @@ In this library you will find circuit elements directly involved in controlling 
 <smd name="8" x="3.81" y="2.794" dx="0.508" dy="1.4224" layer="1"/>
 <smd name="7" x="3.81" y="-2.794" dx="0.508" dy="1.4224" layer="1"/>
 <circle x="-3.81" y="-1.27" radius="0.254" width="0.254" layer="25"/>
+<rectangle x1="-4.318" y1="-2.032" x2="4.318" y2="2.032" layer="39"/>
 </package>
 <package name="QLP20">
 <circle x="-1.5882625" y="1.5882625" radius="0.0424" width="0.127" layer="21"/>
@@ -170,6 +172,7 @@ In this library you will find circuit elements directly involved in controlling 
 <pad name="GND5" x="0.635" y="-0.635" drill="0.3" stop="no" thermals="no"/>
 <text x="-2" y="2.5" size="1" layer="25" font="vector" ratio="10">&gt;NAME</text>
 <text x="0" y="-2.54" size="1" layer="27" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
+<rectangle x1="-1.905" y1="-1.905" x2="1.905" y2="1.905" layer="39"/>
 </package>
 </packages>
 <symbols>

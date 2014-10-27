@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -84,6 +84,7 @@ In this library you will find inductors. If you are looking for a common package
 <pad name="1" x="-2.5" y="0" drill="0.8"/>
 <text x="0" y="4.5" size="1" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
 <circle x="0" y="0" radius="4.35" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="1.27" width="6.096" layer="39"/>
 </package>
 <package name="2220_INDUCTOR">
 <smd name="2" x="3.15" y="0" dx="1.9" dy="6.35" layer="1"/>
@@ -93,6 +94,7 @@ In this library you will find inductors. If you are looking for a common package
 <wire x1="-2.8" y1="-3.175" x2="-2.8" y2="3.175" width="0.127" layer="21"/>
 <wire x1="-2.8" y1="3.175" x2="2.8" y2="3.175" width="0.127" layer="21"/>
 <text x="-3" y="3.5" size="1" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<rectangle x1="-2.159" y1="-3.175" x2="2.159" y2="3.175" layer="39"/>
 </package>
 <package name="SRR1280">
 <smd name="P$1" x="4.85" y="0" dx="2.9" dy="5.4" layer="1"/>
@@ -118,6 +120,9 @@ In this library you will find inductors. If you are looking for a common package
 <smd name="1" x="-1.651" y="0" dx="4.4958" dy="1.8034" layer="1" rot="R90"/>
 <smd name="2" x="1.651" y="0" dx="4.4958" dy="1.8034" layer="1" rot="R90"/>
 <text x="-2.8" y="3" size="1" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<rectangle x1="-2.4892" y1="-2.4892" x2="2.4892" y2="-2.3114" layer="39"/>
+<rectangle x1="-2.4892" y1="2.3114" x2="2.4892" y2="2.4892" layer="39"/>
+<rectangle x1="-0.7112" y1="-2.3114" x2="0.7112" y2="2.3114" layer="39"/>
 </package>
 <package name="SDR0302">
 <wire x1="-2.032" y1="-1.778" x2="-2.032" y2="1.778" width="0.1524" layer="21"/>
@@ -127,6 +132,9 @@ In this library you will find inductors. If you are looking for a common package
 <smd name="1" x="-1.0922" y="0" dx="2.9972" dy="1.397" layer="1" rot="R90"/>
 <smd name="2" x="1.0922" y="0" dx="2.9972" dy="1.397" layer="1" rot="R90"/>
 <text x="-2" y="2.3" size="1" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<rectangle x1="-1.778" y1="1.524" x2="1.778" y2="1.778" layer="39"/>
+<rectangle x1="-1.778" y1="-1.778" x2="1.778" y2="-1.524" layer="39"/>
+<rectangle x1="-0.381" y1="-1.524" x2="0.381" y2="1.524" layer="39"/>
 </package>
 </packages>
 <symbols>
