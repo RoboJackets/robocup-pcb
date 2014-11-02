@@ -60,6 +60,9 @@
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -68,8 +71,27 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="100" name="Mechanical" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="101" name="Gehäuse" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="102" name="Mittellin" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="201" name="201bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="202" name="202bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="203" name="203bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="204" name="204bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="205" name="205bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="207" name="207bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="208" name="208bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="254" name="OrgLBR" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="255" name="255robobuzz" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
 <description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
@@ -145,6 +167,16 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <text x="-7.62" y="3.81" size="1.27" layer="25">&gt;NAME</text>
 <text x="-7.62" y="2.54" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="NANO2_157">
+<wire x1="-4.2" y1="2.4" x2="4.2" y2="2.4" width="0.127" layer="21"/>
+<wire x1="4.2" y1="2.4" x2="4.2" y2="-2.4" width="0.127" layer="21"/>
+<wire x1="4.2" y1="-2.4" x2="-4.2" y2="-2.4" width="0.127" layer="21"/>
+<wire x1="-4.2" y1="-2.4" x2="-4.2" y2="2.4" width="0.127" layer="21"/>
+<smd name="P$1" x="-2.43" y="0" dx="2.4" dy="3" layer="1"/>
+<smd name="P$2" x="2.43" y="0" dx="2.4" dy="3" layer="1"/>
+<text x="-3" y="3" size="1.27" layer="21">&gt;NAME</text>
+<text x="-3" y="-4.2" size="1.27" layer="21">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MOUNTING_HOLE">
@@ -210,6 +242,15 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1.1 1.2"/>
 <connect gate="G$1" pin="2" pad="2.1 2.2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="NANO2" package="NANO2_157">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>

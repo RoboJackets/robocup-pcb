@@ -74,6 +74,12 @@
 <wire x1="127" y1="0" x2="127" y2="74.93" width="0" layer="20"/>
 <wire x1="127" y1="74.93" x2="0" y2="74.93" width="0" layer="20"/>
 <wire x1="0" y1="74.93" x2="0" y2="0" width="0" layer="20"/>
+<dimension x1="0" y1="0" x2="0" y2="74.93" x3="-2.54" y3="37.465" textsize="1.778" layer="49" unit="inch" visible="yes"/>
+<dimension x1="0" y1="74.93" x2="127" y2="74.93" x3="63.5" y3="77.47" textsize="1.778" layer="49" unit="inch" visible="yes"/>
+<rectangle x1="0" y1="0" x2="1.27" y2="74.93" layer="39"/>
+<rectangle x1="1.27" y1="73.66" x2="125.73" y2="74.93" layer="39"/>
+<rectangle x1="125.73" y1="0" x2="127" y2="74.93" layer="39"/>
+<rectangle x1="1.27" y1="0" x2="125.73" y2="1.27" layer="39"/>
 </plain>
 <libraries>
 </libraries>

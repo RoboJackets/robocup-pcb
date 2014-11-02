@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -74,6 +74,12 @@
 <wire x1="100.33" y1="0" x2="100.33" y2="49.53" width="0" layer="20"/>
 <wire x1="100.33" y1="49.53" x2="0" y2="49.53" width="0" layer="20"/>
 <wire x1="0" y1="49.53" x2="0" y2="0" width="0" layer="20"/>
+<dimension x1="0" y1="0" x2="0" y2="49.53" x3="-2.54" y3="24.765" textsize="1.778" layer="49" unit="inch" visible="yes"/>
+<dimension x1="0" y1="49.53" x2="100.33" y2="49.53" x3="50.165" y3="52.07" textsize="1.778" layer="49" unit="inch" visible="yes"/>
+<rectangle x1="0" y1="0" x2="1.27" y2="49.53" layer="39"/>
+<rectangle x1="1.27" y1="48.26" x2="99.06" y2="49.53" layer="39"/>
+<rectangle x1="99.06" y1="0" x2="100.33" y2="49.53" layer="39"/>
+<rectangle x1="1.27" y1="0" x2="99.06" y2="1.27" layer="39"/>
 </plain>
 <libraries>
 </libraries>

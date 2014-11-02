@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -273,7 +273,7 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 </polygon>
 <rectangle x1="-3.048" y1="-2.54" x2="3.048" y2="2.54" layer="39"/>
 </package>
-<package name="NTA4151P">
+<package name="SOT-23-3">
 <smd name="D" x="0" y="0" dx="0.508" dy="0.3556" layer="1" rot="R90"/>
 <smd name="G" x="-0.4953" y="-1.2954" dx="0.508" dy="0.3556" layer="1" rot="R90"/>
 <smd name="S" x="0.4953" y="-1.2954" dx="0.508" dy="0.3556" layer="1" rot="R90"/>
@@ -680,6 +680,26 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 <vertex x="-0.79375" y="7.46125"/>
 </polygon>
 </symbol>
+<symbol name="NPN">
+<pin name="B" x="-5.08" y="0" visible="off" length="short"/>
+<pin name="E" x="2.54" y="-7.62" visible="off" length="short" rot="R90"/>
+<pin name="C" x="2.54" y="7.62" visible="off" length="short" rot="R270"/>
+<wire x1="-0.08" y1="2.54" x2="-0.08" y2="-2.54" width="0.5" layer="97"/>
+<wire x1="0" y1="-2" x2="2.5" y2="-3.5" width="0.254" layer="97"/>
+<wire x1="0" y1="2" x2="2.5" y2="3.5" width="0.254" layer="97"/>
+<wire x1="2.5" y1="-3.5" x2="2.5" y2="-4.9" width="0.254" layer="97"/>
+<wire x1="2.5" y1="3.5" x2="2.5" y2="4.9" width="0.254" layer="97"/>
+<wire x1="-3.5" y1="0" x2="0" y2="0" width="0.254" layer="97"/>
+<polygon width="0.254" layer="97">
+<vertex x="0.7" y="-3.4"/>
+<vertex x="1.6" y="-2"/>
+<vertex x="2.3" y="-3.4"/>
+</polygon>
+<circle x="1.5" y="0" radius="5" width="0.254" layer="97"/>
+<text x="-5.2" y="0.4" size="1.27" layer="97">B</text>
+<text x="3.2" y="5.5" size="1.27" layer="97">C</text>
+<text x="3.2" y="-6.7" size="1.27" layer="97">E</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="BSC072N03LD" prefix="Q">
@@ -725,12 +745,12 @@ http://www.vishay.com/docs/65596/si7141dp.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="P-CHANNEL_MOSFET">
+<deviceset name="P-CHANNEL_MOSFET" prefix="Q">
 <gates>
 <gate name="G$1" symbol="NTA4151P" x="-7.62" y="-10.16"/>
 </gates>
 <devices>
-<device name="" package="NTA4151P">
+<device name="" package="SOT-23-3">
 <connects>
 <connect gate="G$1" pin="D" pad="D"/>
 <connect gate="G$1" pin="G" pad="G"/>
@@ -784,7 +804,7 @@ Rdson=1.8mOhm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="FDMS3606" prefix="U" uservalue="yes">
+<deviceset name="FDMS3606" prefix="Q" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="DUAL_FETS" x="0" y="0"/>
 </gates>
@@ -800,6 +820,23 @@ Rdson=1.8mOhm</description>
 <technologies>
 <technology name=""/>
 <technology name="AS"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MMBT2222A-TP" prefix="Q">
+<gates>
+<gate name="G$1" symbol="NPN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-23-3">
+<connects>
+<connect gate="G$1" pin="B" pad="G"/>
+<connect gate="G$1" pin="C" pad="D"/>
+<connect gate="G$1" pin="E" pad="S"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
