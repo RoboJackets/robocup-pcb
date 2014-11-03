@@ -3954,6 +3954,26 @@ pull down resistors</text>
 <text x="3.2" y="5.5" size="1.27" layer="97">C</text>
 <text x="3.2" y="-6.7" size="1.27" layer="97">E</text>
 </symbol>
+<symbol name="PNP">
+<pin name="B" x="-5.08" y="0" visible="off" length="short"/>
+<pin name="C" x="2.54" y="-7.62" visible="off" length="short" rot="R90"/>
+<pin name="E" x="2.54" y="7.62" visible="off" length="short" rot="R270"/>
+<wire x1="-0.08" y1="2.54" x2="-0.08" y2="-2.54" width="0.5" layer="97"/>
+<wire x1="0" y1="-2" x2="2.5" y2="-3.5" width="0.254" layer="97"/>
+<wire x1="2.5" y1="-3.5" x2="2.5" y2="-4.9" width="0.254" layer="97"/>
+<wire x1="2.5" y1="3.5" x2="2.5" y2="4.9" width="0.254" layer="97"/>
+<wire x1="-3.5" y1="0" x2="0" y2="0" width="0.254" layer="97"/>
+<polygon width="0.254" layer="97">
+<vertex x="0.7" y="2.4"/>
+<vertex x="1.6" y="3.9"/>
+<vertex x="2.4" y="2.5"/>
+</polygon>
+<circle x="1.5" y="0" radius="5" width="0.254" layer="97"/>
+<text x="-5.2" y="0.4" size="1.27" layer="97">B</text>
+<text x="3.2" y="5.5" size="1.27" layer="97">E</text>
+<text x="3.2" y="-6.7" size="1.27" layer="97">C</text>
+<wire x1="0" y1="2" x2="2.5" y2="3.5" width="0.254" layer="97"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="FDMS3606" prefix="Q" uservalue="yes">
@@ -3989,6 +4009,24 @@ pull down resistors</text>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BJT-PNP_*" prefix="D">
+<gates>
+<gate name="G$1" symbol="PNP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-23-3">
+<connects>
+<connect gate="G$1" pin="B" pad="G"/>
+<connect gate="G$1" pin="C" pad="D"/>
+<connect gate="G$1" pin="E" pad="S"/>
+</connects>
+<technologies>
+<technology name=""/>
+<technology name="MMBT2907A"/>
 </technologies>
 </device>
 </devices>
@@ -14664,7 +14702,6 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <part name="VSS5" library="supply1" deviceset="VSS" device=""/>
 <part name="D3" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="RED"/>
 <part name="D4" library="RoboJackets-Diodes" deviceset="1N4148WX" device=""/>
-<part name="Q1" library="RoboJackets-Discrete" deviceset="MMBT2222A-TP" device=""/>
 <part name="R22" library="rcl" deviceset="R-US_" device="R0402" value="100 kΩ"/>
 <part name="R23" library="rcl" deviceset="R-US_" device="R0402" value="1 kΩ"/>
 <part name="GND15" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -14681,7 +14718,6 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <part name="D8" library="RoboJackets-Diodes" deviceset="1N4148WX" device=""/>
 <part name="R24" library="rcl" deviceset="R-US_" device="R0402" value="100 kΩ"/>
 <part name="R25" library="rcl" deviceset="R-US_" device="R0402" value="1 kΩ"/>
-<part name="Q3" library="RoboJackets-Discrete" deviceset="MMBT2222A-TP" device=""/>
 <part name="D9" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="RED"/>
 <part name="GND17" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="JP2" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
@@ -14696,6 +14732,9 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <part name="SJ5" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NC_BY_TRACE" device=""/>
 <part name="F3" library="RoboJackets-Passive" deviceset="FUSE" device="NANO2"/>
 <part name="J2" library="RoboJackets-Connectors" deviceset="B2P?-VH(LF)(SN)" device="S"/>
+<part name="D11" library="RoboJackets-Discrete" deviceset="BJT-PNP_*" device="" technology="MMBT2907A"/>
+<part name="D12" library="RoboJackets-Discrete" deviceset="BJT-PNP_*" device="" technology="MMBT2907A"/>
+<part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14878,7 +14917,6 @@ testing other circuits</text>
 </instance>
 <instance part="D3" gate="G$1" x="525.78" y="345.44"/>
 <instance part="D4" gate="G$1" x="500.38" y="342.9" rot="R270"/>
-<instance part="Q1" gate="G$1" x="523.24" y="330.2"/>
 <instance part="R22" gate="G$1" x="513.08" y="320.04"/>
 <instance part="R23" gate="G$1" x="525.78" y="312.42" rot="R90"/>
 <instance part="GND15" gate="1" x="525.78" y="302.26"/>
@@ -14887,7 +14925,9 @@ testing other circuits</text>
 </instance>
 <instance part="GND16" gate="1" x="264.16" y="281.94"/>
 <instance part="U$1" gate="G$1" x="297.18" y="327.66"/>
-<instance part="SJ1" gate="G$1" x="88.9" y="218.44" rot="MR0"/>
+<instance part="SJ1" gate="G$1" x="88.9" y="218.44" smashed="yes" rot="MR0">
+<attribute name="NAME" x="86.36" y="218.821" size="1.778" layer="95" rot="MR0"/>
+</instance>
 <instance part="+3V3" gate="G$1" x="88.9" y="228.6" smashed="yes">
 <attribute name="VALUE" x="91.44" y="228.6" size="1.778" layer="96"/>
 </instance>
@@ -14899,14 +14939,13 @@ testing other circuits</text>
 <instance part="D8" gate="G$1" x="426.72" y="327.66" rot="R270"/>
 <instance part="R24" gate="G$1" x="436.88" y="304.8"/>
 <instance part="R25" gate="G$1" x="452.12" y="297.18" rot="R90"/>
-<instance part="Q3" gate="G$1" x="449.58" y="314.96"/>
 <instance part="D9" gate="G$1" x="452.12" y="330.2"/>
 <instance part="GND17" gate="1" x="452.12" y="287.02"/>
 <instance part="JP2" gate="G$1" x="233.68" y="312.42" rot="R270"/>
 <instance part="JP3" gate="G$1" x="281.94" y="292.1" rot="R90"/>
 <instance part="GND18" gate="1" x="294.64" y="297.18"/>
-<instance part="D10" gate="G$1" x="403.86" y="335.28"/>
-<instance part="GND19" gate="1" x="403.86" y="327.66"/>
+<instance part="D10" gate="G$1" x="416.56" y="340.36" rot="MR0"/>
+<instance part="GND19" gate="1" x="416.56" y="332.74"/>
 <instance part="SJ2" gate="G$1" x="426.72" y="340.36" smashed="yes" rot="R90">
 <attribute name="NAME" x="424.18" y="337.82" size="1.778" layer="95" rot="R90"/>
 </instance>
@@ -14922,6 +14961,9 @@ testing other circuits</text>
 </instance>
 <instance part="F3" gate="G$1" x="439.42" y="360.68"/>
 <instance part="J2" gate="G$1" x="68.58" y="375.92"/>
+<instance part="D11" gate="G$1" x="523.24" y="330.2"/>
+<instance part="D12" gate="G$1" x="449.58" y="314.96"/>
+<instance part="+3V4" gate="G$1" x="360.68" y="274.32" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -15231,7 +15273,7 @@ testing other circuits</text>
 </segment>
 <segment>
 <pinref part="D10" gate="G$1" pin="A"/>
-<wire x1="403.86" y1="332.74" x2="403.86" y2="330.2" width="0.1524" layer="91"/>
+<wire x1="416.56" y1="337.82" x2="416.56" y2="335.28" width="0.1524" layer="91"/>
 <pinref part="GND19" gate="1" pin="GND"/>
 </segment>
 </net>
@@ -15274,6 +15316,11 @@ testing other circuits</text>
 <pinref part="SJ1" gate="G$1" pin="1"/>
 <pinref part="+3V3" gate="G$1" pin="+3V3"/>
 <wire x1="88.9" y1="223.52" x2="88.9" y2="226.06" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="9"/>
+<wire x1="373.38" y1="274.32" x2="363.22" y2="274.32" width="0.1524" layer="91"/>
+<pinref part="+3V4" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="INL_C" class="0">
@@ -15630,13 +15677,6 @@ testing other circuits</text>
 <label x="406.4" y="264.16" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="4.5-18V" class="0">
-<segment>
-<wire x1="472.44" y1="200.66" x2="467.36" y2="200.66" width="0.1524" layer="91"/>
-<label x="467.36" y="200.66" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="PL1" gate="-3" pin="S"/>
-</segment>
-</net>
 <net name="HALL-1.3" class="0">
 <segment>
 <wire x1="472.44" y1="185.42" x2="467.36" y2="185.42" width="0.1524" layer="91"/>
@@ -15772,6 +15812,11 @@ testing other circuits</text>
 <wire x1="236.22" y1="284.48" x2="238.76" y2="284.48" width="0.1524" layer="91"/>
 <label x="238.76" y="284.48" size="1.778" layer="95" xref="yes"/>
 </segment>
+<segment>
+<wire x1="472.44" y1="200.66" x2="467.36" y2="200.66" width="0.1524" layer="91"/>
+<label x="467.36" y="200.66" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="PL1" gate="-3" pin="S"/>
+</segment>
 </net>
 <net name="N$21" class="0">
 <segment>
@@ -15837,30 +15882,30 @@ testing other circuits</text>
 <segment>
 <pinref part="D4" gate="G$1" pin="C"/>
 <wire x1="500.38" y1="337.82" x2="500.38" y2="330.2" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="G$1" pin="B"/>
 <wire x1="518.16" y1="330.2" x2="500.38" y2="330.2" width="0.1524" layer="91"/>
 <wire x1="500.38" y1="330.2" x2="500.38" y2="320.04" width="0.1524" layer="91"/>
 <pinref part="R22" gate="G$1" pin="1"/>
 <wire x1="500.38" y1="320.04" x2="508" y2="320.04" width="0.1524" layer="91"/>
 <junction x="500.38" y="330.2"/>
+<pinref part="D11" gate="G$1" pin="B"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
 <pinref part="D3" gate="G$1" pin="C"/>
-<pinref part="Q1" gate="G$1" pin="C"/>
 <wire x1="525.78" y1="340.36" x2="525.78" y2="337.82" width="0.1524" layer="91"/>
+<pinref part="D11" gate="G$1" pin="E"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
-<pinref part="Q1" gate="G$1" pin="E"/>
 <pinref part="R23" gate="G$1" pin="2"/>
 <wire x1="525.78" y1="322.58" x2="525.78" y2="320.04" width="0.1524" layer="91"/>
 <pinref part="R22" gate="G$1" pin="2"/>
 <wire x1="525.78" y1="320.04" x2="525.78" y2="317.5" width="0.1524" layer="91"/>
 <wire x1="518.16" y1="320.04" x2="525.78" y2="320.04" width="0.1524" layer="91"/>
 <junction x="525.78" y="320.04"/>
+<pinref part="D11" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -15935,15 +15980,13 @@ testing other circuits</text>
 <net name="BATT_PROTECT_MOTOR" class="0">
 <segment>
 <pinref part="F2" gate="G$1" pin="1"/>
-<wire x1="406.4" y1="347.98" x2="414.02" y2="347.98" width="0.1524" layer="91"/>
-<label x="406.4" y="347.98" size="1.778" layer="95" rot="R180" xref="yes"/>
-<wire x1="414.02" y1="347.98" x2="426.72" y2="347.98" width="0.1524" layer="91"/>
+<wire x1="411.48" y1="347.98" x2="416.56" y2="347.98" width="0.1524" layer="91"/>
+<label x="411.48" y="347.98" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="416.56" y1="347.98" x2="426.72" y2="347.98" width="0.1524" layer="91"/>
 <pinref part="D10" gate="G$1" pin="C"/>
 <wire x1="426.72" y1="347.98" x2="429.26" y2="347.98" width="0.1524" layer="91"/>
-<wire x1="403.86" y1="337.82" x2="403.86" y2="342.9" width="0.1524" layer="91"/>
-<wire x1="403.86" y1="342.9" x2="414.02" y2="342.9" width="0.1524" layer="91"/>
-<wire x1="414.02" y1="342.9" x2="414.02" y2="347.98" width="0.1524" layer="91"/>
-<junction x="414.02" y="347.98"/>
+<wire x1="416.56" y1="342.9" x2="416.56" y2="347.98" width="0.1524" layer="91"/>
+<junction x="416.56" y="347.98"/>
 <pinref part="SJ2" gate="G$1" pin="2"/>
 <wire x1="426.72" y1="345.44" x2="426.72" y2="347.98" width="0.1524" layer="91"/>
 <junction x="426.72" y="347.98"/>
@@ -15958,15 +16001,6 @@ testing other circuits</text>
 </segment>
 </net>
 <net name="BATT_PROTECT_LOGIC" class="0">
-<segment>
-<pinref part="F1" gate="G$1" pin="1"/>
-<wire x1="502.92" y1="363.22" x2="500.38" y2="363.22" width="0.1524" layer="91"/>
-<pinref part="D7" gate="G$1" pin="A"/>
-<pinref part="SJ4" gate="G$1" pin="2"/>
-<wire x1="500.38" y1="363.22" x2="495.3" y2="363.22" width="0.1524" layer="91"/>
-<wire x1="500.38" y1="360.68" x2="500.38" y2="363.22" width="0.1524" layer="91"/>
-<junction x="500.38" y="363.22"/>
-</segment>
 <segment>
 <wire x1="490.22" y1="363.22" x2="472.44" y2="363.22" width="0.1524" layer="91"/>
 <label x="472.44" y="363.22" size="1.778" layer="95" font="vector" rot="R180" xref="yes"/>
@@ -15996,9 +16030,9 @@ testing other circuits</text>
 </net>
 <net name="N$20" class="0">
 <segment>
-<pinref part="Q3" gate="G$1" pin="C"/>
 <pinref part="D9" gate="G$1" pin="C"/>
 <wire x1="452.12" y1="322.58" x2="452.12" y2="325.12" width="0.1524" layer="91"/>
+<pinref part="D12" gate="G$1" pin="E"/>
 </segment>
 </net>
 <net name="N$27" class="0">
@@ -16008,20 +16042,20 @@ testing other circuits</text>
 <wire x1="426.72" y1="322.58" x2="426.72" y2="314.96" width="0.1524" layer="91"/>
 <wire x1="426.72" y1="314.96" x2="426.72" y2="304.8" width="0.1524" layer="91"/>
 <wire x1="426.72" y1="304.8" x2="431.8" y2="304.8" width="0.1524" layer="91"/>
-<pinref part="Q3" gate="G$1" pin="B"/>
 <wire x1="444.5" y1="314.96" x2="426.72" y2="314.96" width="0.1524" layer="91"/>
 <junction x="426.72" y="314.96"/>
+<pinref part="D12" gate="G$1" pin="B"/>
 </segment>
 </net>
 <net name="N$28" class="0">
 <segment>
 <pinref part="R25" gate="G$1" pin="2"/>
-<pinref part="Q3" gate="G$1" pin="E"/>
 <wire x1="452.12" y1="302.26" x2="452.12" y2="304.8" width="0.1524" layer="91"/>
 <pinref part="R24" gate="G$1" pin="2"/>
 <wire x1="452.12" y1="304.8" x2="452.12" y2="307.34" width="0.1524" layer="91"/>
 <wire x1="452.12" y1="304.8" x2="441.96" y2="304.8" width="0.1524" layer="91"/>
 <junction x="452.12" y="304.8"/>
+<pinref part="D12" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -16081,6 +16115,17 @@ testing other circuits</text>
 <pinref part="SJ5" gate="G$1" pin="1"/>
 <wire x1="525.78" y1="350.52" x2="525.78" y2="347.98" width="0.1524" layer="91"/>
 <pinref part="D3" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="BATT_PROTECT_LOGIC_PRE_DIODE" class="0">
+<segment>
+<pinref part="F1" gate="G$1" pin="1"/>
+<wire x1="502.92" y1="363.22" x2="500.38" y2="363.22" width="0.1524" layer="91"/>
+<pinref part="D7" gate="G$1" pin="A"/>
+<pinref part="SJ4" gate="G$1" pin="2"/>
+<wire x1="500.38" y1="363.22" x2="495.3" y2="363.22" width="0.1524" layer="91"/>
+<wire x1="500.38" y1="360.68" x2="500.38" y2="363.22" width="0.1524" layer="91"/>
+<junction x="500.38" y="363.22"/>
 </segment>
 </net>
 </nets>
