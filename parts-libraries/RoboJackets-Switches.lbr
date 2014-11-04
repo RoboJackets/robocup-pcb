@@ -416,6 +416,75 @@ distributor Buerklin, 17G482</description>
 <text x="8" y="4" size="1.27" layer="27" font="vector" align="center">&gt;VALUE</text>
 <rectangle x1="-2.35" y1="-2.52" x2="27.69" y2="10.02" layer="39"/>
 </package>
+<package name="HEX">
+<pad name="4" x="2.54" y="-2.54" drill="0.8" rot="R90"/>
+<pad name="2" x="2.54" y="5.08" drill="0.8" rot="R90"/>
+<pad name="C2" x="0" y="5.08" drill="0.8" rot="R90"/>
+<pad name="8" x="-2.54" y="5.08" drill="0.8" rot="R90"/>
+<pad name="1" x="-2.54" y="-2.54" drill="0.8" rot="R90"/>
+<pad name="C1" x="0" y="-2.54" drill="0.8" rot="R90"/>
+<wire x1="-4.318" y1="-3.556" x2="5.08" y2="-3.556" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="6.35" x2="5.08" y2="6.35" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-3.556" x2="5.08" y2="6.35" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-2.794" x2="-5.08" y2="6.35" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-2.794" x2="-4.318" y2="-3.556" width="0.127" layer="21"/>
+<text x="-2.54" y="1.27" size="0.762" layer="21" font="vector" ratio="15" rot="R90" align="bottom-center">0</text>
+<text x="2.54" y="1.27" size="0.762" layer="21" font="vector" ratio="15" rot="R270" align="bottom-center">8</text>
+<text x="0" y="3.81" size="0.762" layer="21" font="vector" ratio="15" align="bottom-center">4</text>
+<text x="0" y="-1.27" size="0.762" layer="21" font="vector" ratio="15" rot="SR180" align="bottom-center">C</text>
+<circle x="0" y="1.27" radius="2.00804375" width="0.0762" layer="21"/>
+<text x="-2.34670625" y="2.241803125" size="0.762" layer="21" font="vector" ratio="15" rot="R67.5" align="bottom-center">1</text>
+<text x="-1.796034375" y="3.066034375" size="0.762" layer="21" font="vector" ratio="15" rot="R45" align="bottom-center">2</text>
+<text x="-0.971803125" y="3.61670625" size="0.762" layer="21" font="vector" ratio="15" rot="R22.5" align="bottom-center">3</text>
+<text x="2.013965625" y="3.066034375" size="0.762" layer="21" font="vector" ratio="15" rot="R315" align="bottom-center">6</text>
+<text x="1.796034375" y="-0.526034375" size="0.762" layer="21" font="vector" ratio="15" rot="SR225" align="bottom-center">A</text>
+<text x="-1.796034375" y="-0.526034375" size="0.762" layer="21" font="vector" ratio="15" rot="SR135" align="bottom-center">E</text>
+<text x="0.971803125" y="3.61670625" size="0.762" layer="21" font="vector" ratio="15" rot="R337.5" align="bottom-center">5</text>
+<text x="0.971803125" y="-1.07670625" size="0.762" layer="21" font="vector" ratio="15" rot="SR202.5" align="bottom-center">B</text>
+<text x="-0.971803125" y="-1.07670625" size="0.762" layer="21" font="vector" ratio="15" rot="SR157.5" align="bottom-center">D</text>
+<text x="2.34670625" y="2.241803125" size="0.762" layer="21" font="vector" ratio="15" rot="R292.5" align="bottom-center">7</text>
+<text x="2.34670625" y="0.298196875" size="0.762" layer="21" font="vector" ratio="15" rot="SR247.5" align="bottom-center">9</text>
+<text x="-2.34670625" y="0.298196875" size="0.762" layer="21" font="vector" ratio="15" rot="SR112.5" align="bottom-center">F</text>
+<text x="-5.08" y="6.985" size="1.27" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="-5.08" y="-3.81" size="1.27" layer="27" font="vector" ratio="15" align="top-left">&gt;VALUE</text>
+</package>
+<package name="JS1300">
+<smd name="D" x="-4.9" y="1.1" dx="1" dy="1" layer="1"/>
+<smd name="A" x="-4.9" y="-1.1" dx="1" dy="1" layer="1"/>
+<smd name="H" x="-1.9" y="-4.9" dx="1" dy="1" layer="1"/>
+<smd name="J" x="0" y="-4.9" dx="1" dy="1" layer="1"/>
+<smd name="K" x="1.9" y="-4.9" dx="1" dy="1" layer="1"/>
+<smd name="C" x="4.9" y="1.1" dx="1" dy="1" layer="1"/>
+<smd name="B" x="4.9" y="-1.1" dx="1" dy="1" layer="1"/>
+<smd name="E" x="-1.9" y="4.9" dx="1" dy="1" layer="1"/>
+<smd name="F" x="0" y="4.9" dx="1" dy="1" layer="1"/>
+<smd name="G" x="1.9" y="4.9" dx="1" dy="1" layer="1"/>
+<smd name="NC2" x="4.14" y="4.14" dx="1" dy="1" layer="1" rot="R45" thermals="no"/>
+<smd name="NC1" x="-4.14" y="4.14" dx="1" dy="1" layer="1" rot="R45" thermals="no"/>
+<smd name="NC3" x="-4.14" y="-4.14" dx="1" dy="1" layer="1" rot="R45" thermals="no"/>
+<smd name="NC4" x="4.14" y="-4.14" dx="1" dy="1" layer="1" rot="R45" thermals="no"/>
+<wire x1="-4.9" y1="3.43" x2="-4.9" y2="-3.43" width="0.127" layer="21"/>
+<wire x1="-3.43" y1="4.9" x2="3.43" y2="4.9" width="0.127" layer="21"/>
+<wire x1="4.9" y1="3.43" x2="4.9" y2="-3.43" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="1" width="0.1" layer="21"/>
+<wire x1="3.43" y1="-4.9" x2="-3.43" y2="-4.9" width="0.127" layer="21"/>
+<wire x1="-3.43" y1="-4.9" x2="-4.9" y2="-3.43" width="0.127" layer="21"/>
+<wire x1="3.43" y1="-4.9" x2="4.9" y2="-3.43" width="0.127" layer="21"/>
+<wire x1="3.43" y1="4.9" x2="4.9" y2="3.43" width="0.127" layer="21"/>
+<wire x1="-4.9" y1="3.43" x2="-3.43" y2="4.9" width="0.127" layer="21"/>
+<circle x="-2.38" y="2.38" radius="1" width="0.1" layer="21"/>
+<circle x="2.38" y="2.38" radius="1" width="0.1" layer="21"/>
+<circle x="2.38" y="-2.38" radius="1" width="0.1" layer="21"/>
+<circle x="-2.38" y="-2.38" radius="1" width="0.1" layer="21"/>
+<wire x1="-2.2" y1="-1.4" x2="-1" y2="-0.2" width="0.05" layer="21"/>
+<wire x1="-1.4" y1="-2.2" x2="-0.2" y2="-1" width="0.05" layer="21"/>
+<wire x1="1.4" y1="-2.2" x2="0.2" y2="-1" width="0.05" layer="21"/>
+<wire x1="2.2" y1="-1.4" x2="1" y2="-0.2" width="0.05" layer="21"/>
+<wire x1="2.2" y1="1.4" x2="1" y2="0.2" width="0.05" layer="21"/>
+<wire x1="1.4" y1="2.2" x2="0.2" y2="1" width="0.05" layer="21"/>
+<wire x1="-1.4" y1="2.2" x2="-0.2" y2="1" width="0.05" layer="21"/>
+<wire x1="-2.2" y1="1.4" x2="-1" y2="0.2" width="0.05" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="DPST">
@@ -818,6 +887,13 @@ http://www.digikey.com/product-detail/en/G3T12AP/360-1774-ND/1006855</descriptio
 </gates>
 <devices>
 <device name="" package="HEX-RA-2C">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="C" pad="C1 C2"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -935,6 +1011,54 @@ http://www.digikey.com/product-detail/en/G3T12AP/360-1774-ND/1006855</descriptio
 <connect gate="G$1" pin="3" pad="14.1 14.2"/>
 <connect gate="G$1" pin="5" pad="11.1 11.2"/>
 <connect gate="G$1" pin="6" pad="A2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="94HCB16T" prefix="S">
+<gates>
+<gate name="G$1" symbol="HEX" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="HEX">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="C" pad="C1 C2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JS1300" prefix="S">
+<description>https://www.e-switch.com/system/asset/product_line/data_sheet/21/JS1300.pdf</description>
+<gates>
+<gate name=".3" symbol="TS2" x="0" y="0" addlevel="must"/>
+<gate name=".1" symbol="TS2" x="-20.32" y="15.24" addlevel="must"/>
+<gate name=".4" symbol="TS2" x="-20.32" y="-17.78" addlevel="must"/>
+<gate name=".5" symbol="TS2" x="25.4" y="-17.78" addlevel="must"/>
+<gate name=".2" symbol="TS2" x="25.4" y="12.7" addlevel="must"/>
+</gates>
+<devices>
+<device name="" package="JS1300">
+<connects>
+<connect gate=".1" pin="1" pad="D"/>
+<connect gate=".1" pin="2" pad="E"/>
+<connect gate=".2" pin="1" pad="C"/>
+<connect gate=".2" pin="2" pad="G"/>
+<connect gate=".3" pin="1" pad="F"/>
+<connect gate=".3" pin="2" pad="J"/>
+<connect gate=".4" pin="1" pad="A"/>
+<connect gate=".4" pin="2" pad="H"/>
+<connect gate=".5" pin="1" pad="B"/>
+<connect gate=".5" pin="2" pad="K"/>
 </connects>
 <technologies>
 <technology name=""/>
