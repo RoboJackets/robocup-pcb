@@ -14576,8 +14576,8 @@ suit driving LEDs</text>
 <instance part="S1" gate="G$1" x="35.56" y="187.96"/>
 <instance part="GND3" gate="1" x="48.26" y="139.7"/>
 <instance part="S2" gate="G$1" x="22.86" y="142.24"/>
-<instance part="JP1" gate="G$1" x="203.2" y="71.12"/>
-<instance part="GND4" gate="1" x="198.12" y="66.04"/>
+<instance part="JP1" gate="G$1" x="208.28" y="83.82" rot="MR180"/>
+<instance part="GND4" gate="1" x="200.66" y="83.82" rot="R270"/>
 <instance part="S3" gate=".3" x="218.44" y="132.08"/>
 <instance part="S3" gate=".1" x="198.12" y="147.32"/>
 <instance part="S3" gate=".4" x="198.12" y="114.3"/>
@@ -14612,8 +14612,8 @@ suit driving LEDs</text>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="GND"/>
-<wire x1="200.66" y1="71.12" x2="198.12" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="71.12" x2="198.12" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="83.82" x2="203.2" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="83.82" x2="203.2" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 </segment>
 </net>
@@ -14841,28 +14841,24 @@ suit driving LEDs</text>
 <net name="N$26" class="0">
 <segment>
 <pinref part="KIT1" gate="KIT" pin="D-"/>
-<wire x1="172.72" y1="78.74" x2="185.42" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="78.74" x2="187.96" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="D-"/>
-<wire x1="187.96" y1="76.2" x2="200.66" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="78.74" x2="205.74" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$27" class="0">
 <segment>
 <pinref part="KIT1" gate="KIT" pin="D+"/>
-<wire x1="172.72" y1="76.2" x2="185.42" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="76.2" x2="187.96" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="D+"/>
-<wire x1="187.96" y1="78.74" x2="200.66" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="76.2" x2="205.74" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$28" class="0">
 <segment>
 <pinref part="KIT1" gate="KIT" pin="VU"/>
 <wire x1="172.72" y1="96.52" x2="195.58" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="96.52" x2="195.58" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="96.52" x2="195.58" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="VBUS"/>
-<wire x1="200.66" y1="73.66" x2="195.58" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="81.28" x2="195.58" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
