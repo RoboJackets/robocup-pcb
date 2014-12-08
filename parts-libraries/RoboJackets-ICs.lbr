@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -2184,7 +2184,7 @@ http://www.digikey.com/product-detail/en/XC3S250E-4PQG208C/122-1483-ND/1091711</
 <text x="-6.1722" y="57.9882" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-4.699" y="-67.183" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
 </symbol>
-<symbol name="MCP23?17">
+<symbol name="MCP23S17">
 <wire x1="-17.78" y1="33.02" x2="-17.78" y2="-38.1" width="0.254" layer="94"/>
 <wire x1="-17.78" y1="-38.1" x2="17.78" y2="-38.1" width="0.254" layer="94"/>
 <wire x1="17.78" y1="-38.1" x2="17.78" y2="33.02" width="0.254" layer="94"/>
@@ -3099,9 +3099,9 @@ http://www.digikey.com/product-detail/en/XC3S250E-4PQG208C/122-1483-ND/1091711</
 </device>
 </devices>
 </deviceset>
-<deviceset name="MCP23*17" prefix="IC">
+<deviceset name="MCP23S17" prefix="IC">
 <gates>
-<gate name="G$1" symbol="MCP23?17" x="0" y="0"/>
+<gate name="G$1" symbol="MCP23S17" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="SSOP-28">
