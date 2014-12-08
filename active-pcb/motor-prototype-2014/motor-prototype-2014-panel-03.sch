@@ -11414,7 +11414,6 @@ LilyPad 1206- DIO-09912&lt;br&gt;
 <wire x1="-4.064" y1="0.2" x2="-3.864" y2="0" width="0.127" layer="21" curve="90"/>
 <text x="5" y="4.1545" size="1.2" layer="21" font="vector" ratio="15" rot="R90" align="top-center">BATT+</text>
 <text x="5" y="11.092" size="1.2" layer="21" font="vector" ratio="15" rot="R90" align="top-center">GND</text>
-<text x="-7" y="7.8675" size="1.5" layer="21" font="vector" ratio="18" rot="R90" align="bottom-center">21V to 18V</text>
 </package>
 <package name="B2P">
 <wire x1="6.85" y1="4.85" x2="-2.95" y2="4.85" width="0.127" layer="21"/>
@@ -14630,6 +14629,7 @@ In this library you will find uncommon capacitors. If you are looking for a comm
 <pad name="NEG" x="3.75" y="0" drill="0.8" thermals="no"/>
 <circle x="0" y="0" radius="9" width="0.127" layer="21"/>
 <circle x="0" y="0" radius="3.9878" width="10.16" layer="39"/>
+<text x="-2.54" y="10.16" size="1.27" layer="25">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -14778,7 +14778,7 @@ In this library you will find uncommon capacitors. If you are looking for a comm
 <part name="GND15" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="VDD7" library="supply1" deviceset="VDD" device=""/>
 <part name="GND16" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="U$1" library="RoboJackets-Switches" deviceset="1-1415899-3" device=""/>
+<part name="S3" library="RoboJackets-Switches" deviceset="1-1415899-3" device=""/>
 <part name="SJ1" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-2OF3_NC_BY_TRACE" device=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="D6" library="RoboJackets-Diodes" deviceset="1N4148WX" device=""/>
@@ -14996,7 +14996,7 @@ testing other circuits</text>
 <attribute name="VALUE" x="328.93" y="320.04" size="1.778" layer="96"/>
 </instance>
 <instance part="GND16" gate="1" x="264.16" y="281.94"/>
-<instance part="U$1" gate="G$1" x="297.18" y="327.66"/>
+<instance part="S3" gate="G$1" x="297.18" y="327.66"/>
 <instance part="SJ1" gate="G$1" x="88.9" y="218.44" rot="MR0"/>
 <instance part="+3V3" gate="G$1" x="88.9" y="228.6" smashed="yes">
 <attribute name="VALUE" x="91.44" y="228.6" size="1.778" layer="96"/>
@@ -15346,8 +15346,9 @@ testing other circuits</text>
 <pinref part="GND18" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="419.1" y1="276.86" x2="426.72" y2="276.86" width="0.1524" layer="91"/>
-<label x="426.72" y="276.86" size="1.778" layer="95" xref="yes"/>
+<wire x1="381" y1="269.24" x2="391.16" y2="269.24" width="0.1524" layer="91"/>
+<label x="391.16" y="269.24" size="1.778" layer="95" xref="yes"/>
+<pinref part="JP1" gate="A" pin="14"/>
 </segment>
 <segment>
 <pinref part="D10" gate="G$1" pin="A"/>
@@ -15589,7 +15590,7 @@ testing other circuits</text>
 <segment>
 <wire x1="327.66" y1="314.96" x2="327.66" y2="317.5" width="0.1524" layer="91"/>
 <pinref part="VDD7" gate="G$1" pin="VDD"/>
-<pinref part="U$1" gate="G$1" pin="5"/>
+<pinref part="S3" gate="G$1" pin="5"/>
 <wire x1="327.66" y1="314.96" x2="325.12" y2="314.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -15893,7 +15894,7 @@ testing other circuits</text>
 <wire x1="393.7" y1="411.48" x2="396.24" y2="411.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="2"/>
+<pinref part="S3" gate="G$1" pin="2"/>
 <wire x1="271.78" y1="340.36" x2="264.16" y2="340.36" width="0.1524" layer="91"/>
 <pinref part="D6" gate="G$1" pin="C"/>
 <wire x1="264.16" y1="340.36" x2="264.16" y2="332.74" width="0.1524" layer="91"/>
@@ -16046,7 +16047,7 @@ testing other circuits</text>
 <net name="N$23" class="0">
 <segment>
 <wire x1="271.78" y1="314.96" x2="264.16" y2="314.96" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="6"/>
+<pinref part="S3" gate="G$1" pin="6"/>
 <pinref part="Q2" gate="G$1" pin="C"/>
 <wire x1="264.16" y1="302.26" x2="264.16" y2="304.8" width="0.1524" layer="91"/>
 <pinref part="D6" gate="G$1" pin="A"/>
@@ -16086,7 +16087,7 @@ testing other circuits</text>
 <wire x1="426.72" y1="360.68" x2="426.72" y2="347.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="3"/>
+<pinref part="S3" gate="G$1" pin="3"/>
 <wire x1="327.66" y1="340.36" x2="325.12" y2="340.36" width="0.1524" layer="91"/>
 <label x="327.66" y="340.36" size="1.778" layer="95" xref="yes"/>
 </segment>

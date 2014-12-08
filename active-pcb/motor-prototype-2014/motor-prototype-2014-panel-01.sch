@@ -35715,6 +35715,11 @@ In this library you will find switches and other mechanical assisted circuit ele
 <part name="SB1" library="RoboJackets-Switches" deviceset="SOLDERBRIDGE" device="SB1206"/>
 <part name="J2" library="RoboJackets-Connectors" deviceset="MINIFITJR_HDR_2X2" device=""/>
 <part name="J3" library="RoboJackets-Connectors" deviceset="52852-08*" device="70"/>
+<part name="R1" library="rcl" deviceset="R-US_" device="R0201"/>
+<part name="R2" library="rcl" deviceset="R-US_" device="R0402"/>
+<part name="R3" library="rcl" deviceset="R-US_" device="R0603"/>
+<part name="R4" library="rcl" deviceset="R-US_" device="R0805"/>
+<part name="R5" library="rcl" deviceset="R-US_" device="R1206"/>
 </parts>
 <sheets>
 <sheet>
@@ -36232,6 +36237,22 @@ In this library you will find switches and other mechanical assisted circuit ele
 <wire x1="142.24" y1="127" x2="142.24" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
+</nets>
+</sheet>
+<sheet>
+<description>Fab Tests</description>
+<plain>
+</plain>
+<instances>
+<instance part="R1" gate="G$1" x="22.86" y="58.42"/>
+<instance part="R2" gate="G$1" x="22.86" y="50.8"/>
+<instance part="R3" gate="G$1" x="22.86" y="43.18"/>
+<instance part="R4" gate="G$1" x="22.86" y="35.56"/>
+<instance part="R5" gate="G$1" x="22.86" y="27.94"/>
+</instances>
+<busses>
+</busses>
+<nets>
 </nets>
 </sheet>
 </sheets>
