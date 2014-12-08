@@ -87,6 +87,13 @@ In this library you will find uncommon capacitors. If you are looking for a comm
 <text x="0" y="-3.81" size="1.524" layer="27" ratio="15" align="bottom-center">&gt;VALUE</text>
 <circle x="0" y="0" radius="5.08" width="27.686" layer="39"/>
 </package>
+<package name="HE_SERIES">
+<pad name="POS" x="-3.75" y="0" drill="0.8" thermals="no"/>
+<pad name="NEG" x="3.75" y="0" drill="0.8" thermals="no"/>
+<circle x="0" y="0" radius="9" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="3.9878" width="10.16" layer="39"/>
+<text x="-2.54" y="10.16" size="1.27" layer="25">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CAP_POL">
@@ -118,6 +125,15 @@ In this library you will find uncommon capacitors. If you are looking for a comm
 <connects>
 <connect gate="G$1" pin="+" pad="+"/>
 <connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="HE" package="HE_SERIES">
+<connects>
+<connect gate="G$1" pin="+" pad="POS"/>
+<connect gate="G$1" pin="-" pad="NEG"/>
 </connects>
 <technologies>
 <technology name=""/>

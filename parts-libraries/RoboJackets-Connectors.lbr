@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -257,9 +257,8 @@ In this library you will find all the connectors used on any of our boards.
 </package>
 <package name="MMCX_RA">
 <wire x1="-2.032" y1="2.032" x2="2.032" y2="2.032" width="0.127" layer="21"/>
-<wire x1="2.032" y1="2.032" x2="4.826" y2="2.032" width="0.127" layer="21"/>
-<wire x1="4.826" y1="2.032" x2="4.826" y2="-2.032" width="0.127" layer="21"/>
-<wire x1="4.826" y1="-2.032" x2="2.032" y2="-2.032" width="0.127" layer="21"/>
+<wire x1="2.032" y1="2.032" x2="4.064" y2="2.032" width="0.127" layer="21"/>
+<wire x1="4.064" y1="-2.032" x2="2.032" y2="-2.032" width="0.127" layer="21"/>
 <wire x1="2.032" y1="-2.032" x2="-2.032" y2="-2.032" width="0.127" layer="21"/>
 <wire x1="-2.032" y1="-2.032" x2="-2.032" y2="2.032" width="0.127" layer="21"/>
 <wire x1="2.032" y1="2.032" x2="2.032" y2="-2.032" width="0.127" layer="21"/>
@@ -269,6 +268,9 @@ In this library you will find all the connectors used on any of our boards.
 <pad name="SHELL_3" x="1.27" y="-1.27" drill="0.8"/>
 <pad name="SHELL_4" x="-1.27" y="-1.27" drill="0.8"/>
 <text x="-2.444" y="-0.032" size="1" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center">&gt;NAME</text>
+<wire x1="4.064" y1="2.032" x2="5.08" y2="1.016" width="0.127" layer="21" curve="-90"/>
+<wire x1="5.08" y1="1.016" x2="5.08" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-1.016" x2="4.064" y2="-2.032" width="0.127" layer="21" curve="-90"/>
 </package>
 <package name="52852-08">
 <wire x1="-5" y1="1.1" x2="6" y2="1.1" width="0.127" layer="21"/>
@@ -646,7 +648,6 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </package>
 <package name="B2PS">
 <wire x1="-2" y1="0" x2="-2" y2="-4" width="0.127" layer="21"/>
-<wire x1="-2" y1="-4" x2="6" y2="-4" width="0.127" layer="21"/>
 <wire x1="6" y1="-4" x2="6" y2="0" width="0.127" layer="21"/>
 <wire x1="-2" y1="-4" x2="-2" y2="-7.2" width="0.127" layer="21"/>
 <wire x1="-2" y1="-7.2" x2="6" y2="-7.2" width="0.127" layer="21"/>
@@ -726,11 +727,10 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <text x="-4.5" y="0" size="1" layer="25" font="vector" ratio="10" rot="R90">&gt;NAME</text>
 <pad name="BATT" x="0" y="4.1545" drill="4.7" thermals="no"/>
 <pad name="GND" x="0" y="11.092" drill="4.7" thermals="no"/>
-<dimension x1="-2.35" y1="4.1545" x2="2.35" y2="4.1545" x3="0" y3="-1.6" textsize="0.5" layer="49" dtype="diameter" width="0.01"/>
+<dimension x1="-2.35" y1="4.1545" x2="2.35" y2="4.1545" x3="0" y3="-1.6" textsize="0.5" layer="49" dtype="diameter" width="0.01" visible="yes"/>
 <wire x1="-4.064" y1="0.2" x2="-3.864" y2="0" width="0.127" layer="21" curve="90"/>
 <text x="5" y="4.1545" size="1.2" layer="21" font="vector" ratio="15" rot="R90" align="top-center">BATT+</text>
 <text x="5" y="11.092" size="1.2" layer="21" font="vector" ratio="15" rot="R90" align="top-center">GND</text>
-<text x="-7" y="7.8675" size="1.5" layer="21" font="vector" ratio="18" rot="R90" align="bottom-center">21V to 18V</text>
 </package>
 <package name="MINIFITJR_HDR_2X2_RA">
 <wire x1="-4.826" y1="6.35" x2="-3.81" y2="6.35" width="0.127" layer="21"/>
@@ -747,15 +747,20 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <wire x1="-3.81" y1="15.24" x2="3.81" y2="15.24" width="0.127" layer="21"/>
 <wire x1="3.81" y1="15.24" x2="3.81" y2="6.35" width="0.127" layer="21"/>
 <wire x1="-3.81" y1="15.24" x2="-3.81" y2="6.35" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-5.08" x2="2.54" y2="3.81" width="0.127" layer="21"/>
-<wire x1="2.54" y1="3.81" x2="1.27" y2="1.27" width="0.127" layer="21"/>
-<wire x1="1.27" y1="1.27" x2="3.81" y2="1.27" width="0.127" layer="21"/>
-<wire x1="3.81" y1="1.27" x2="2.54" y2="3.81" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="3.81" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="3.81" x2="-3.81" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="1.27" x2="-1.27" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="1.27" x2="-2.54" y2="3.81" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="3.302" width="0.508" layer="21"/>
+<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="3.302" width="0.508" layer="21"/>
 <text x="-5.08" y="-6.35" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<polygon width="0.127" layer="21">
+<vertex x="-3.81" y="1.27"/>
+<vertex x="-2.54" y="3.81"/>
+<vertex x="-1.27" y="1.27"/>
+</polygon>
+<polygon width="0.127" layer="21">
+<vertex x="1.27" y="1.27"/>
+<vertex x="2.54" y="3.81"/>
+<vertex x="3.81" y="1.27"/>
+</polygon>
+<rectangle x1="-4.826" y1="-6.35" x2="4.826" y2="6.35" layer="39"/>
 </package>
 </packages>
 <symbols>
