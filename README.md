@@ -1,6 +1,6 @@
 <img src="https://dl.dropboxusercontent.com/s/ao3pe3n8npuxrfo/robobuzz-header.svg" height="100px" width="100px" style="float:left"/>RoboCup PCB Repository
 ===========
-Welcome to the Georgia Tech RoboJackets repository for management and storage of RoboCup's hardware files!
+Welcome to the Georgia Tech RoboJackets repository for management and storage of RoboCup's hardware files! Additional information about the team and current projects can be found on the [RoboJackets Website](http://www.robojackets.org/teams/robocup/) and the [RoboJacket Wiki](http://wiki.robojackets.org/w/RoboCup).
 
 If you are a new member to the RoboCup electrical team and have never used *[git version control](http://git-scm.com/)* before, we highly recommend that you familiarize yourself with it.
 
