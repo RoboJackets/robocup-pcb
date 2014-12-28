@@ -1,0 +1,45 @@
+Partlist
+
+Exported from base-station-2008.brd at 12/27/2014 11:20:36 PM
+
+EAGLE Version 6.5.0 Copyright (c) 1988-2013 CadSoft
+
+Assembly variant: 
+
+Part     Value          Package     Library       Position (mil)        Orientation
+
+C1       47uF           PANASONIC_E rcl           (333.07087 1828.34646) R90
+C2                      C1206       rcl           (2596.45669 2066.14173) R90
+C3       .1uF           C0603       rcl           (1591.33858 1691.33858) R0
+C4       10uf           PANASONIC_B rcl           (771.25984 1774.80315) R90
+C5       10uf           C1206       rcl           (1611.02362 589.37008) R180
+C6       1uF            C0603       rcl           (322.04724 1487.79528) R270
+C7       1uF            C0603       rcl           (322.04724 1337.79528) R270
+C8       1uF            C0603       rcl           (319.68504 1181.88976) R90
+C9       1uF            C0603       rcl           (566.53543 1598.4252) R0
+C10      1uF            C0603       rcl           (822.04724 1487.79528) R270
+IC2      7805T          TO220H      linear        (985.03937 2141.33858) R270
+IC3      ATMEGA169-16A  TQFP64      avr           (1791.33858 1241.33858) R0
+JP1                     2X05        pinhead       (969.29134 743.70079) R90
+LED2                    LED5MM      led           (1241.33858 1754.33071) R0
+LED3                    LED5MM      led           (1970.86614 1947.24409) R90
+LED4                    LED5MM      led           (1972.44094 2230.70866) R90
+LED5                    LED5MM      led           (2261.41732 1947.24409) R90
+LED6                    LED5MM      led           (2262.99213 2230.70866) R90
+R1       4.7k           R0603       rcl           (1548.8189 801.9685)  R0
+R2       200            R0603       rcl           (979.52756 1754.33071) R180
+R3       10             R0603       rcl           (1960.82677 529.33071) R0
+R4       10             R0603       rcl           (2560.62992 1890.55118) R180
+R5       200            R0603       rcl           (2049.6063 1692.12598) R270
+R6       200            R0603       rcl           (2110.23622 1692.12598) R270
+R7       200            R0603       rcl           (2166.92913 1692.12598) R270
+R8       200            R0603       rcl           (2227.55906 1692.12598) R270
+U$1      JST_PA_2       JST_PA_2    jst_pa        (1346.06299 171.25984) R90
+U$2      JST_PA_2       JST_PA_2    jst_pa        (1625.59055 2612.20472) MR270
+U$3      OSCILLATOR     7X5MM       misc-personal (1830.70866 791.33858) R0
+U$4      HP3_RX_SIP     RX_DIP      linx          (1342.48031 385.44094) R0
+U$5      HP3_TX_SIP     TX_DIP      linx          (2842 1489)           R90
+U$6      RP_SMA_TH      RPSMA_TH    linx          (441.33858 749.2126)  R180
+U$7      RP_SMA_TH      RPSMA_TH    linx          (2520.07874 888.18898) R0
+U$8      JST_PA_4       JST_PA_4    jst_pa        (1104.33071 1320.07874) R270
+U$9      MAX232-SO16    SO16        max232        (572.04724 1337.79528) R270

@@ -1,0 +1,190 @@
+Netlist
+
+Exported from base-station-2008.brd at 12/27/2014 11:20:36 PM
+
+EAGLE Version 6.5.0 Copyright (c) 1988-2013 CadSoft
+
+Net      Part     Pad
+
+GND      C1       -
+         C10      2
+         C2       2
+         C3       2
+         C4       -
+         C5       2
+         C8       1
+         C9       2
+         IC2      2
+         IC3      22
+         IC3      53
+         IC3      63
+         JP1      10
+         JP1      4
+         JP1      6
+         JP1      8
+         LED2     K
+         LED3     K
+         LED4     K
+         LED5     K
+         LED6     K
+         U$1      2
+         U$3      2
+         U$4      2
+         U$4      3
+         U$4      4
+         U$4      5
+         U$4      6
+         U$4      7
+         U$4      8
+         U$5      1
+         U$6      2
+         U$6      3
+         U$6      4
+         U$6      5
+         U$7      2
+         U$7      3
+         U$7      4
+         U$7      5
+         U$8      4
+         U$9      15
+
+MISO     IC3      13
+         JP1      9
+
+MOSI     IC3      12
+         JP1      1
+
+N$1      LED2     A
+         R2       1
+
+N$2      C6       1
+         U$9      1
+
+N$3      C6       2
+         U$9      3
+
+N$4      C7       1
+         U$9      4
+
+N$5      C7       2
+         U$9      5
+
+N$6      C9       1
+         U$9      2
+
+N$7      C8       2
+         U$9      6
+
+N$8      LED3     A
+         R5       1
+
+N$9      C2       1
+         R4       1
+         U$5      8
+         U$5      9
+
+N$10     LED4     A
+         R6       1
+
+N$11     LED5     A
+         R7       1
+
+N$12     C5       1
+         R3       1
+         U$4      15
+         U$4      16
+
+N$13     LED6     A
+         R8       1
+
+N$14     IC3      47
+         R5       2
+
+N$15     IC3      46
+         R6       2
+
+N$16     IC3      45
+         R7       2
+
+N$17     IC3      44
+         R8       2
+
+N$18     IC3      24
+         U$3      3
+
+R-PDN    IC3      28
+         U$4      13
+
+R-SS-CLK IC3      25
+         U$4      11
+
+R-SS-DATA IC3      26
+         U$4      12
+
+RSSI     IC3      61
+         U$4      14
+
+RST      IC3      20
+         JP1      5
+         R1       1
+         U$1      1
+
+RX-ANT   U$4      1
+         U$6      1
+
+RXD      IC3      2
+         U$4      18
+         U$9      12
+
+SCK      IC3      11
+         JP1      7
+
+SRXD     U$8      1
+         U$9      13
+
+STXD     U$8      2
+         U$9      14
+
+T-CTS    IC3      37
+         U$5      6
+
+T-PDN    IC3      38
+         U$5      7
+
+T-SS-CLK IC3      35
+         U$5      4
+
+T-SS-DATA IC3      36
+         U$5      5
+
+TX-ANT   U$5      2
+         U$7      1
+
+TXD      IC3      3
+         U$5      10
+         U$9      11
+
+VCC      C10      1
+         C3       1
+         C4       +
+         IC2      3
+         IC3      21
+         IC3      52
+         IC3      62
+         IC3      64
+         JP1      2
+         R1       2
+         R2       2
+         R3       2
+         R4       2
+         U$3      1
+         U$3      4
+         U$9      16
+
+VI       C1       +
+         IC2      1
+         U$2      2
+
+VIN      U$2      1
+         U$8      3
+
