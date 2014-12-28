@@ -1,0 +1,905 @@
+Pinlist
+
+Exported from motor-prototype-2014-panel-01.brd at 12/27/2014 11:00:59 PM
+
+EAGLE Version 6.5.0 Copyright (c) 1988-2013 CadSoft
+
+Part     Pad      Net
+
+916MHZ   ANT      ANT_COPPER
+         NC                *** unconnected ***
+
+A6-SEL   1        N$84
+         2        A6
+         3        CARDDET
+
+C1       1        N$49
+         2        GND
+
+C2       1        N$47
+         2        GND
+
+C3       1        N$48
+         2        GND
+
+C4       1        CP1
+         2        CP2
+
+C5       1        VDD
+         2        GND
+
+C6       1        BST_A
+         2        PHASE-1.1
+
+C7       1        BST_B
+         2        PHASE-1.2
+
+C8       1        BST_C
+         2        PHASE-1.3
+
+C9       1        SL_A
+         2        GND
+
+C10      1        SL_B
+         2        GND
+
+C11      1        N$56
+         2        GND
+
+C12      +        VDD
+         -        GND
+
+C13      1        N$53
+         2        GND
+
+C14      1        N$57
+         2        N$58
+
+C15      1        N$52
+         2        GND
+
+C16      1        BATT_PROTECT_LOGIC
+         2        GND
+
+C17      1        BATT_PROTECT_LOGIC
+         2        GND
+
+C18      1        BATT_PROTECT_LOGIC
+         2        GND
+
+C19      NEG      GND
+         POS      VDD
+
+C20      1        VSS
+         2        GND
+
+C21      1        VDD
+         2        VSS
+
+CB1A     1        VB_1A
+         2        1A
+
+CB1B     1        VB_1B
+         2        1B
+
+CB1C     1        VB_1C
+         2        1C
+
+CF1      1        VCC
+         2        GND
+
+CPF1     +        VM1
+         -        GND
+
+CR1      1        N$22
+         2        GND
+
+D1       A        VDD
+         C        N$34
+
+D2       A        VDD
+         C        N$35
+
+D3       A        VDD
+         C        N$36
+
+D4       A        VDD
+         C        N$37
+
+D5       A        VDD
+         C        N$38
+
+D6       A        VDD
+         C        N$39
+
+D7       A        VDD
+         C        N$40
+
+D8       A        VDD
+         C        N$41
+
+D9       A        +3V3
+         C        N$45
+
+D10      A        +5V
+         C        N$59
+
+D11      A        N$75
+         C        N$61
+
+D12      A        N$74
+         C        N$60
+
+D13      A        N$65
+         C        +5V
+
+D14      A        N$63
+         C        N$58
+
+D15      A        N$72
+         C        N$68
+
+D16      A        N$73
+         C        N$67
+
+D17      A        GND
+         C        BATT_PROTECT_MOTOR
+
+D18      A        BOB
+         C        BATT_PROTECT_LOGIC
+
+F1       1.1      VM1
+         1.2      VM1
+         2.1      VCC
+         2.2      VCC
+
+F2       1        BOB
+         2        BATT+
+
+F3       1.1      BATT_PROTECT_MOTOR
+         1.2      BATT_PROTECT_MOTOR
+         2.1      BATT+
+         2.2      BATT+
+
+F4       P$1      BATT_PROTECT_MOTOR
+         P$2      BATT+
+
+H1       GND      GND
+
+IC1      1        GPB0
+         10       VSS
+         11                *** unconnected ***
+         12       SCL
+         13       SDA
+         14                *** unconnected ***
+         15       A0
+         16       A1
+         17       A2
+         18       RESET
+         19                *** unconnected ***
+         2        GPB1
+         20       INTA
+         21       GPA0
+         22       GPA1
+         23       GPA2
+         24       GPA3
+         25       GPA4
+         26       GPA5
+         27       GPA6
+         28       GPA7
+         3        GPB2
+         4        GPB3
+         5        GPB4
+         6        GPB5
+         7        GPB6
+         8        GPB7
+         9        VDD
+
+IC2      1                 *** unconnected ***
+         10       GND
+         11       N$46
+         12       DC_CAL
+         13       N$47
+         14       CP1
+         15       CP2
+         16       N$64
+         17       INH_A
+         18       INL_A
+         19       INH_B
+         2                 *** unconnected ***
+         20       INL_B
+         21       INH_C
+         22       INL_C
+         23       N$49
+         24       ADC_REF
+         25       SO1
+         26       SO2
+         27       N$48
+         28       GND
+         29       VDD
+         3                 *** unconnected ***
+         30       GND
+         31       SL_A
+         32       GND
+         33       SL_B
+         34       GND
+         35       N$51
+         36       PHASE-1.3
+         37       GH_C
+         38       BST_C
+         39       SL_B
+         4                 *** unconnected ***
+         40       GL_B
+         41       PHASE-1.2
+         42       GH_B
+         43       BST_B
+         44       SL_A
+         45       GL_A
+         46       PHASE-1.1
+         47       GH_A
+         48       BST_A
+         49       BIAS
+         5                 *** unconnected ***
+         50                *** unconnected ***
+         51                *** unconnected ***
+         52       BST_BK
+         53       VDD
+         54       VDD
+         55       N$50
+         56       GND
+         57       GND
+         58       GND
+         59       GND
+         6        !FAULT!
+         7        DTC
+         8        M_PWM
+         9        GND
+
+IC3      P1.1     N$58
+         P1.2     N$58
+         P10.1    BATT_PROTECT_LOGIC
+         P10.2    BATT_PROTECT_LOGIC
+         P2.1     N$57
+         P2.2     N$57
+         P3.1     N$63
+         P3.2     N$63
+         P4.1     GND
+         P4.2     GND
+         P5.1     GND
+         P5.2     GND
+         P6.1     N$54
+         P6.2     N$54
+         P7.1     N$52
+         P7.2     N$52
+         P8.1     N$55
+         P8.2     N$55
+         P9.1     N$53
+         P9.2     N$53
+         P_CENTER GND
+
+IC4      1        GND
+         2        GND
+         3        N$81
+         4        VSS
+         5        TSCK
+         6        TCS
+         7        DO
+         8                 *** unconnected ***
+
+IC5      1                 *** unconnected ***
+         10                *** unconnected ***
+         11                *** unconnected ***
+         12                *** unconnected ***
+         13                *** unconnected ***
+         14                *** unconnected ***
+         15                *** unconnected ***
+         16                *** unconnected ***
+         17                *** unconnected ***
+         18                *** unconnected ***
+         19                *** unconnected ***
+         2                 *** unconnected ***
+         20                *** unconnected ***
+         3                 *** unconnected ***
+         4                 *** unconnected ***
+         5                 *** unconnected ***
+         6                 *** unconnected ***
+         7                 *** unconnected ***
+         8                 *** unconnected ***
+         9                 *** unconnected ***
+         GND               *** unconnected ***
+         GND1              *** unconnected ***
+         GND2              *** unconnected ***
+         GND3              *** unconnected ***
+         GND4              *** unconnected ***
+         GND5              *** unconnected ***
+
+J1       1        V_IN
+         2        GND
+
+J2       P$1      1A
+         P$2      1B
+         P$3      1C
+         P$4               *** unconnected ***
+
+J3       1        1AH
+         2        1BH
+         3        1CH
+         4        1AL
+         5        1BL
+         6        1CL
+         7        /FAULT1
+         8        1EN
+         NC-1              *** unconnected ***
+         NC-2              *** unconnected ***
+
+J4       BATT     BATT+
+         GND      GND
+
+J5       1        VDD
+         2        GND
+
+JP1      1        INH_A
+         10       +3V3
+         11       INL_C
+         12                *** unconnected ***
+         13       ADC_REF
+         14       GND
+         15       DC_CAL
+         16                *** unconnected ***
+         17       SO1
+         18                *** unconnected ***
+         19       SO2
+         2        HALL-1.3
+         20       PWR_DIG
+         3        INL_A
+         4        HALL-1.2
+         5        INH_B
+         6        HALL-1.1
+         7        INL_B
+         8                 *** unconnected ***
+         9        INH_C
+
+JP2      1        N$71
+         2        N$70
+         3        PWR_DIG
+
+JP3      1        GND
+         2        N$65
+
+JP4      1        N$82
+         2        GND
+
+JP5      1        TRANSIN
+         2        GND
+
+JP6      1        GND
+         10       BACKLIGHT
+         11       Y+
+         12       X+
+         13       Y-
+         14       X-
+         15       15
+         16       16
+         17       SDCS
+         18       CARDDET
+         2        VCC
+         3        VSS
+         4        SCLK
+         5        MISO
+         6        MOSI
+         7        LCDCS
+         8        D/C
+         9        RESET
+
+L1       P$1      +5V
+         P$2      N$58
+
+LED      1        A7
+         2        N$84
+         3        N$83
+         4        A5
+
+PL1      1        HALL-1.1
+         2        HALL-1.2
+         3        4.5-18V
+         4        PHASE-1.3
+         5        HALL-1.3
+         6        GND
+         7        PHASE-1.1
+         8        PHASE-1.2
+
+Q1       1        1A
+         2        1A
+         3        1A
+         4        N$5
+         5        VM1
+
+Q2       1        PGND_1
+         2        PGND_1
+         3        PGND_1
+         4        N$6
+         5        1A
+
+Q3       1        1B
+         2        1B
+         3        1B
+         4        N$12
+         5        VM1
+
+Q4       1        PGND_1
+         2        PGND_1
+         3        PGND_1
+         4        N$15
+         5        1B
+
+Q5       1        1C
+         2        1C
+         3        1C
+         4        N$13
+         5        VM1
+
+Q6       1        PGND_1
+         2        PGND_1
+         3        PGND_1
+         4        N$14
+         5        1C
+
+Q7       D        N$62
+         G        N$60
+         S        N$61
+
+Q8       D        N$65
+         G        N$66
+         S        GND
+
+Q9       D        N$69
+         G        N$68
+         S        N$67
+
+R.CL1    1        GND
+         2        PGND_1
+
+R.TRP1   1        PGND_1
+         2        N$23
+
+R1       1                 *** unconnected ***
+         2                 *** unconnected ***
+
+R1AGH    1        N$4
+         2        N$5
+
+R1AGL    1        N$7
+         2        N$6
+
+R1BGH    1        N$8
+         2        N$12
+
+R1BGL    1        N$9
+         2        N$15
+
+R1CGH    1        N$11
+         2        N$13
+
+R1CGL    1        N$10
+         2        N$14
+
+R2       1                 *** unconnected ***
+         2                 *** unconnected ***
+
+R3       1                 *** unconnected ***
+         2                 *** unconnected ***
+
+R4       1                 *** unconnected ***
+         2                 *** unconnected ***
+
+R5       1                 *** unconnected ***
+         2                 *** unconnected ***
+
+R6       1        N$34
+         2        GPB0
+
+R7       1        N$35
+         2        GPB1
+
+R8       1        N$36
+         2        GPB2
+
+R9       1        N$37
+         2        GPB3
+
+R10      1        N$38
+         2        GPB4
+
+R11      1        N$39
+         2        GPB5
+
+R12      1        N$40
+         2        GPB6
+
+R13      1        N$41
+         2        GPB7
+
+R14      1        N$45
+         2        !FAULT!
+
+R15      1        GND
+         2        DTC
+
+R16      1        N$49
+         2        N$46
+
+R17      1        N$46
+         2        GND
+
+R18      1        +3V3
+         2        N$45
+
+R19      1        N$50
+         2        GND
+
+R20      1        BIAS
+         2        GND
+
+R21      1        N$51
+         2        GL_C
+
+R22      1        GH_C
+         2        GH_C_F
+
+R23      1        GH_B
+         2        GH_B_F
+
+R24      1        GL_B
+         2        GL_B_F
+
+R25      1        GL_A
+         2        GL_A_F
+
+R26      1        GH_A
+         2        GH_A_F
+
+R27      1        SL_A
+         2        GND
+
+R28      1        SL_B
+         2        GND
+
+R29      1        N$54
+         2        +5V
+
+R30      1        GND
+         2        N$54
+
+R31      1        N$56
+         2        +5V
+
+R32      1        N$55
+         2        BATT_PROTECT_LOGIC
+
+R33      1        GND
+         2        N$59
+
+R34      1        N$60
+         2        N$62
+
+R35      1        GND
+         2        N$62
+
+R36      1        N$70
+         2        N$66
+
+R37      1        N$68
+         2        N$69
+
+R38      1        GND
+         2        N$69
+
+R39      1        A0
+         2        N$82
+
+R40      1        GND
+         2        N$83
+
+RC1      1        N$22
+         2        VCC
+
+RST      1        GND
+         2        RST2
+
+S1       1        GND
+         2        N$64
+         3        N$49
+         4        N$46
+         5        +3V3
+         6        DTC
+
+S2       1        +5V
+         2        N$71
+         3        GND
+         NC_1              *** unconnected ***
+         NC_2              *** unconnected ***
+
+S3       11.1     VDD
+         11.2     VDD
+         12.1              *** unconnected ***
+         12.2              *** unconnected ***
+         14.1     BATT_PROTECT_MOTOR
+         14.2     BATT_PROTECT_MOTOR
+         A1       +5V
+         A2       N$65
+
+S4       1                 *** unconnected ***
+         2                 *** unconnected ***
+         4                 *** unconnected ***
+         8                 *** unconnected ***
+         C1                *** unconnected ***
+         C2                *** unconnected ***
+
+S5       A                 *** unconnected ***
+         B                 *** unconnected ***
+         C                 *** unconnected ***
+         D                 *** unconnected ***
+         E                 *** unconnected ***
+         F                 *** unconnected ***
+         G                 *** unconnected ***
+         H                 *** unconnected ***
+         J                 *** unconnected ***
+         K                 *** unconnected ***
+         NC1               *** unconnected ***
+         NC2               *** unconnected ***
+         NC3               *** unconnected ***
+         NC4               *** unconnected ***
+
+SB1      1        V_IN
+         2        VCC
+
+SERIAL   1        TX1
+         2        RX0
+
+SJ1      1        +3V3
+         2        M_PWM
+         3        GND
+
+SJ2      1        N$72
+         2        BATT_PROTECT_MOTOR
+
+SJ3      1        N$73
+         2        BATT+
+
+SJ4      1        N$74
+         2        BOB
+
+SJ5      1        N$75
+         2        BATT+
+
+SP1      P$1      SPK
+         P$2      VSS
+
+TCOUPLE  1        N$81
+         2        GND
+
+U$1     
+U$2      1        VSS
+         10       GPA2
+         11       GPA1
+         12       GPA0
+         13       INTA
+         14       INTB
+         15       RESET
+         16       A2
+         17       A1
+         18       A0
+         2        VDD
+         3        SDA
+         4        SCL
+         5        GPA7
+         6        GPA6
+         7        GPA5
+         8        GPA4
+         9        GPA3
+
+U$3     
+U$4      GND      VSS
+
+U$5     
+U$6     
+U$7      3V3      VSS
+         5V       VCC
+         A0       A0
+         A1       Y+
+         A2       X+
+         A3       Y-
+         A4       X-
+         A5       A5
+         A6       A6
+         A7       A7
+         D10      LCDCS
+         D11      MOSI
+         D12      MISO
+         D13      SCLK
+         D2       SDCS
+         D3       SPK
+         D4       DO
+         D5       TCS
+         D6       TSCK
+         D7       RESET
+         D8       D/C
+         D9       BACKLIGHT
+         GND      GND
+         GND2     GND
+         REF      REF
+         RST      RST
+         RST2     RST2
+         RX0      RX0
+         TX1      TX1
+         VIN      VIN
+
+U$8     
+U$9      0        VSS
+         1                 *** unconnected ***
+         10                *** unconnected ***
+         11       VDD_PA
+         12                *** unconnected ***
+         13                *** unconnected ***
+         14       VSS
+         15       VDD
+         16                *** unconnected ***
+         17       VSS
+         18       VDD
+         19       DVDD
+         2                 *** unconnected ***
+         20       VSS
+         3                 *** unconnected ***
+         4                 *** unconnected ***
+         5                 *** unconnected ***
+         6                 *** unconnected ***
+         7        VDD
+         8        VSS
+         9                 *** unconnected ***
+
+U$10     0        VSS
+         1                 *** unconnected ***
+         10                *** unconnected ***
+         11       VDD_PA
+         12                *** unconnected ***
+         13                *** unconnected ***
+         14       VSS
+         15       VDD
+         16                *** unconnected ***
+         17       VSS
+         18       VDD
+         19       DVDD
+         2                 *** unconnected ***
+         20       VSS
+         3                 *** unconnected ***
+         4                 *** unconnected ***
+         5                 *** unconnected ***
+         6                 *** unconnected ***
+         7        VDD
+         8        VSS
+         9                 *** unconnected ***
+
+U$11     0        VSS
+         1                 *** unconnected ***
+         10                *** unconnected ***
+         11       VDD_PA
+         12                *** unconnected ***
+         13                *** unconnected ***
+         14       VSS
+         15       VDD
+         16                *** unconnected ***
+         17       VSS
+         18       VDD
+         19       DVDD
+         2                 *** unconnected ***
+         20       VSS
+         3                 *** unconnected ***
+         4                 *** unconnected ***
+         5                 *** unconnected ***
+         6                 *** unconnected ***
+         7        VDD
+         8        VSS
+         9                 *** unconnected ***
+
+U$12     1                 *** unconnected ***
+         10                *** unconnected ***
+         11                *** unconnected ***
+         12                *** unconnected ***
+         13                *** unconnected ***
+         14                *** unconnected ***
+         15                *** unconnected ***
+         16                *** unconnected ***
+         17                *** unconnected ***
+         18                *** unconnected ***
+         19                *** unconnected ***
+         2                 *** unconnected ***
+         20                *** unconnected ***
+         21                *** unconnected ***
+         22                *** unconnected ***
+         23                *** unconnected ***
+         24                *** unconnected ***
+         3                 *** unconnected ***
+         4                 *** unconnected ***
+         5                 *** unconnected ***
+         6                 *** unconnected ***
+         7                 *** unconnected ***
+         8                 *** unconnected ***
+         9                 *** unconnected ***
+         P$1               *** unconnected ***
+
+U1       1        VCC
+         10       1EN
+         11       N$22
+         12       GND
+         13       PGND_1
+         14       N$10
+         15       N$9
+         16       N$7
+         17                *** unconnected ***
+         18       1C
+         19       N$11
+         2        1AH
+         20       VB_1C
+         21                *** unconnected ***
+         22       1B
+         23       N$8
+         24       VB_1B
+         25                *** unconnected ***
+         26       1A
+         27       N$4
+         28       VB_1A
+         3        1BH
+         4        1CH
+         5        1AL
+         6        1BL
+         7        1CL
+         8        /FAULT1
+         9        N$23
+
+U2       1        GH_A_F
+         2        VDD
+         3        VDD
+         4        VDD
+         5        SL_A
+         6        SL_A
+         7        SL_A
+         8        GL_A_F
+         CENTER   PHASE-1.1
+         LARGE_1  VDD
+         LARGE_2  VDD
+         LARGE_3  VDD
+
+U3       1        GH_B_F
+         2        VDD
+         3        VDD
+         4        VDD
+         5        SL_B
+         6        SL_B
+         7        SL_B
+         8        GL_B_F
+         CENTER   PHASE-1.2
+         LARGE_1  VDD
+         LARGE_2  VDD
+         LARGE_3  VDD
+
+U4       1        GH_C_F
+         2        VDD
+         3        VDD
+         4        VDD
+         5        GND
+         6        GND
+         7        GND
+         8        GL_C
+         CENTER   PHASE-1.3
+         LARGE_1  VDD
+         LARGE_2  VDD
+         LARGE_3  VDD
+
+VOLTREG  GND      GND
+         IN       TRANSIN
+         OUT      REGOUT
+
+VSSSEL   1        REGOUT
+         2        VCC
+         3        TRANSIN
+

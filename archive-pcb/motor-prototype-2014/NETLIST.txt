@@ -1,0 +1,785 @@
+Netlist
+
+Exported from motor-prototype-2014-panel-01.brd at 12/27/2014 11:01:00 PM
+
+EAGLE Version 6.5.0 Copyright (c) 1988-2013 CadSoft
+
+Net      Part     Pad
+
+!FAULT!  IC2      6
+         R14      2
+
++3V3     D9       A
+         JP1      10
+         R18      1
+         S1       5
+         SJ1      1
+
++5V      D10      A
+         D13      C
+         L1       P$1
+         R29      2
+         R31      2
+         S2       1
+         S3       A1
+
+/FAULT1  J3       7
+         U1       8
+
+1A       CB1A     2
+         J2       P$1
+         Q1       1
+         Q1       2
+         Q1       3
+         Q2       5
+         U1       26
+
+1AH      J3       1
+         U1       2
+
+1AL      J3       4
+         U1       5
+
+1B       CB1B     2
+         J2       P$2
+         Q3       1
+         Q3       2
+         Q3       3
+         Q4       5
+         U1       22
+
+1BH      J3       2
+         U1       3
+
+1BL      J3       5
+         U1       6
+
+1C       CB1C     2
+         J2       P$3
+         Q5       1
+         Q5       2
+         Q5       3
+         Q6       5
+         U1       18
+
+1CH      J3       3
+         U1       4
+
+1CL      J3       6
+         U1       7
+
+1EN      J3       8
+         U1       10
+
+4.5-18V  PL1      3
+
+15       JP6      15
+
+16       JP6      16
+
+A0       IC1      15
+         R39      1
+         U$2      18
+         U$7      A0
+
+A1       IC1      16
+         U$2      17
+
+A2       IC1      17
+         U$2      16
+
+A5       LED      4
+         U$7      A5
+
+A6       A6-SEL   2
+         U$7      A6
+
+A7       LED      1
+         U$7      A7
+
+ADC_REF  IC2      24
+         JP1      13
+
+ANT_COPPER 916MHZ   ANT
+
+BACKLIGHT JP6      10
+         U$7      D9
+
+BATT+    F2       2
+         F3       2.1
+         F3       2.2
+         F4       P$2
+         J4       BATT
+         SJ3      2
+         SJ5      2
+
+BATT_PROTECT_LOGIC C16      1
+         C17      1
+         C18      1
+         D18      C
+         IC3      P10.1
+         IC3      P10.2
+         R32      2
+
+BATT_PROTECT_MOTOR D17      C
+         F3       1.1
+         F3       1.2
+         F4       P$1
+         S3       14.1
+         S3       14.2
+         SJ2      2
+
+BIAS     IC2      49
+         R20      1
+
+BOB      D18      A
+         F2       1
+         SJ4      2
+
+BST_A    C6       1
+         IC2      48
+
+BST_B    C7       1
+         IC2      43
+
+BST_BK   IC2      52
+
+BST_C    C8       1
+         IC2      38
+
+CARDDET  A6-SEL   3
+         JP6      18
+
+CP1      C4       1
+         IC2      14
+
+CP2      C4       2
+         IC2      15
+
+D/C      JP6      8
+         U$7      D8
+
+DC_CAL   IC2      12
+         JP1      15
+
+DO       IC4      7
+         U$7      D4
+
+DTC      IC2      7
+         R15      2
+         S1       6
+
+DVDD     U$10     19
+         U$11     19
+         U$9      19
+
+GH_A     IC2      47
+         R26      1
+
+GH_A_F   R26      2
+         U2       1
+
+GH_B     IC2      42
+         R23      1
+
+GH_B_F   R23      2
+         U3       1
+
+GH_C     IC2      37
+         R22      1
+
+GH_C_F   R22      2
+         U4       1
+
+GL_A     IC2      45
+         R25      1
+
+GL_A_F   R25      2
+         U2       8
+
+GL_B     IC2      40
+         R24      1
+
+GL_B_F   R24      2
+         U3       8
+
+GL_C     R21      2
+         U4       8
+
+GND      C1       2
+         C10      2
+         C11      2
+         C12      -
+         C13      2
+         C15      2
+         C16      2
+         C17      2
+         C18      2
+         C19      NEG
+         C2       2
+         C20      2
+         C3       2
+         C5       2
+         C9       2
+         CF1      2
+         CPF1     -
+         CR1      2
+         D17      A
+         H1       GND
+         IC2      10
+         IC2      28
+         IC2      30
+         IC2      32
+         IC2      34
+         IC2      56
+         IC2      57
+         IC2      58
+         IC2      59
+         IC2      9
+         IC3      P4.1
+         IC3      P4.2
+         IC3      P5.1
+         IC3      P5.2
+         IC3      P_CENTER
+         IC4      1
+         IC4      2
+         J1       2
+         J4       GND
+         J5       2
+         JP1      14
+         JP3      1
+         JP4      2
+         JP5      2
+         JP6      1
+         PL1      6
+         Q8       S
+         R.CL1    1
+         R15      1
+         R17      2
+         R19      2
+         R20      2
+         R27      2
+         R28      2
+         R30      1
+         R33      1
+         R35      1
+         R38      1
+         R40      1
+         RST      1
+         S1       1
+         S2       3
+         SJ1      3
+         TCOUPLE  2
+         U$7      GND
+         U$7      GND2
+         U1       12
+         U4       5
+         U4       6
+         U4       7
+         VOLTREG  GND
+
+GPA0     IC1      21
+         U$2      12
+
+GPA1     IC1      22
+         U$2      11
+
+GPA2     IC1      23
+         U$2      10
+
+GPA3     IC1      24
+         U$2      9
+
+GPA4     IC1      25
+         U$2      8
+
+GPA5     IC1      26
+         U$2      7
+
+GPA6     IC1      27
+         U$2      6
+
+GPA7     IC1      28
+         U$2      5
+
+GPB0     IC1      1
+         R6       2
+
+GPB1     IC1      2
+         R7       2
+
+GPB2     IC1      3
+         R8       2
+
+GPB3     IC1      4
+         R9       2
+
+GPB4     IC1      5
+         R10      2
+
+GPB5     IC1      6
+         R11      2
+
+GPB6     IC1      7
+         R12      2
+
+GPB7     IC1      8
+         R13      2
+
+HALL-1.1 JP1      6
+         PL1      1
+
+HALL-1.2 JP1      4
+         PL1      2
+
+HALL-1.3 JP1      2
+         PL1      5
+
+INH_A    IC2      17
+         JP1      1
+
+INH_B    IC2      19
+         JP1      5
+
+INH_C    IC2      21
+         JP1      9
+
+INL_A    IC2      18
+         JP1      3
+
+INL_B    IC2      20
+         JP1      7
+
+INL_C    IC2      22
+         JP1      11
+
+INTA     IC1      20
+         U$2      13
+
+INTB     U$2      14
+
+LCDCS    JP6      7
+         U$7      D10
+
+MISO     JP6      5
+         U$7      D12
+
+MOSI     JP6      6
+         U$7      D11
+
+M_PWM    IC2      8
+         SJ1      2
+
+N$4      R1AGH    1
+         U1       27
+
+N$5      Q1       4
+         R1AGH    2
+
+N$6      Q2       4
+         R1AGL    2
+
+N$7      R1AGL    1
+         U1       16
+
+N$8      R1BGH    1
+         U1       23
+
+N$9      R1BGL    1
+         U1       15
+
+N$10     R1CGL    1
+         U1       14
+
+N$11     R1CGH    1
+         U1       19
+
+N$12     Q3       4
+         R1BGH    2
+
+N$13     Q5       4
+         R1CGH    2
+
+N$14     Q6       4
+         R1CGL    2
+
+N$15     Q4       4
+         R1BGL    2
+
+N$22     CR1      1
+         RC1      1
+         U1       11
+
+N$23     R.TRP1   2
+         U1       9
+
+N$34     D1       C
+         R6       1
+
+N$35     D2       C
+         R7       1
+
+N$36     D3       C
+         R8       1
+
+N$37     D4       C
+         R9       1
+
+N$38     D5       C
+         R10      1
+
+N$39     D6       C
+         R11      1
+
+N$40     D7       C
+         R12      1
+
+N$41     D8       C
+         R13      1
+
+N$45     D9       C
+         R14      1
+         R18      2
+
+N$46     IC2      11
+         R16      2
+         R17      1
+         S1       4
+
+N$47     C2       1
+         IC2      13
+
+N$48     C3       1
+         IC2      27
+
+N$49     C1       1
+         IC2      23
+         R16      1
+         S1       3
+
+N$50     IC2      55
+         R19      1
+
+N$51     IC2      35
+         R21      1
+
+N$52     C15      1
+         IC3      P7.1
+         IC3      P7.2
+
+N$53     C13      1
+         IC3      P9.1
+         IC3      P9.2
+
+N$54     IC3      P6.1
+         IC3      P6.2
+         R29      1
+         R30      2
+
+N$55     IC3      P8.1
+         IC3      P8.2
+         R32      1
+
+N$56     C11      1
+         R31      1
+
+N$57     C14      1
+         IC3      P2.1
+         IC3      P2.2
+
+N$58     C14      2
+         D14      C
+         IC3      P1.1
+         IC3      P1.2
+         L1       P$2
+
+N$59     D10      C
+         R33      2
+
+N$60     D12      C
+         Q7       G
+         R34      1
+
+N$61     D11      C
+         Q7       S
+
+N$62     Q7       D
+         R34      2
+         R35      2
+
+N$63     D14      A
+         IC3      P3.1
+         IC3      P3.2
+
+N$64     IC2      16
+         S1       2
+
+N$65     D13      A
+         JP3      2
+         Q8       D
+         S3       A2
+
+N$66     Q8       G
+         R36      2
+
+N$67     D16      C
+         Q9       S
+
+N$68     D15      C
+         Q9       G
+         R37      1
+
+N$69     Q9       D
+         R37      2
+         R38      2
+
+N$70     JP2      2
+         R36      1
+
+N$71     JP2      1
+         S2       2
+
+N$72     D15      A
+         SJ2      1
+
+N$73     D16      A
+         SJ3      1
+
+N$74     D12      A
+         SJ4      1
+
+N$75     D11      A
+         SJ5      1
+
+N$81     IC4      3
+         TCOUPLE  1
+
+N$82     JP4      1
+         R39      2
+
+N$83     LED      3
+         R40      2
+
+N$84     A6-SEL   1
+         LED      2
+
+PGND_1   Q2       1
+         Q2       2
+         Q2       3
+         Q4       1
+         Q4       2
+         Q4       3
+         Q6       1
+         Q6       2
+         Q6       3
+         R.CL1    2
+         R.TRP1   1
+         U1       13
+
+PHASE-1.1 C6       2
+         IC2      46
+         PL1      7
+         U2       CENTER
+
+PHASE-1.2 C7       2
+         IC2      41
+         PL1      8
+         U3       CENTER
+
+PHASE-1.3 C8       2
+         IC2      36
+         PL1      4
+         U4       CENTER
+
+PWR_DIG  JP1      20
+         JP2      3
+
+REF      U$7      REF
+
+REGOUT   VOLTREG  OUT
+         VSSSEL   1
+
+RESET    IC1      18
+         JP6      9
+         U$2      15
+         U$7      D7
+
+RST      U$7      RST
+
+RST2     RST      2
+         U$7      RST2
+
+RX0      SERIAL   2
+         U$7      RX0
+
+SCL      IC1      12
+         U$2      4
+
+SCLK     JP6      4
+         U$7      D13
+
+SDA      IC1      13
+         U$2      3
+
+SDCS     JP6      17
+         U$7      D2
+
+SL_A     C9       1
+         IC2      31
+         IC2      44
+         R27      1
+         U2       5
+         U2       6
+         U2       7
+
+SL_B     C10      1
+         IC2      33
+         IC2      39
+         R28      1
+         U3       5
+         U3       6
+         U3       7
+
+SO1      IC2      25
+         JP1      17
+
+SO2      IC2      26
+         JP1      19
+
+SPK      SP1      P$1
+         U$7      D3
+
+TCS      IC4      6
+         U$7      D5
+
+TRANSIN  JP5      1
+         VOLTREG  IN
+         VSSSEL   3
+
+TSCK     IC4      5
+         U$7      D6
+
+TX1      SERIAL   1
+         U$7      TX1
+
+VB_1A    CB1A     1
+         U1       28
+
+VB_1B    CB1B     1
+         U1       24
+
+VB_1C    CB1C     1
+         U1       20
+
+VCC      CF1      1
+         F1       2.1
+         F1       2.2
+         JP6      2
+         RC1      2
+         SB1      2
+         U$7      5V
+         U1       1
+         VSSSEL   2
+
+VDD      C12      +
+         C19      POS
+         C21      1
+         C5       1
+         D1       A
+         D2       A
+         D3       A
+         D4       A
+         D5       A
+         D6       A
+         D7       A
+         D8       A
+         IC1      9
+         IC1      9
+         IC2      29
+         IC2      53
+         IC2      54
+         J5       1
+         S3       11.1
+         S3       11.2
+         U$10     15
+         U$10     18
+         U$10     7
+         U$11     15
+         U$11     18
+         U$11     7
+         U$2      2
+         U$9      15
+         U$9      18
+         U$9      7
+         U2       2
+         U2       3
+         U2       4
+         U2       LARGE_1
+         U2       LARGE_2
+         U2       LARGE_3
+         U3       2
+         U3       3
+         U3       4
+         U3       LARGE_1
+         U3       LARGE_2
+         U3       LARGE_3
+         U4       2
+         U4       3
+         U4       4
+         U4       LARGE_1
+         U4       LARGE_2
+         U4       LARGE_3
+
+VDD_PA   U$10     11
+         U$11     11
+         U$9      11
+
+VIN      U$7      VIN
+
+VM1      CPF1     +
+         F1       1.1
+         F1       1.2
+         Q1       5
+         Q3       5
+         Q5       5
+
+VSS      C20      1
+         C21      2
+         IC1      10
+         IC4      4
+         JP6      3
+         SP1      P$2
+         U$10     0
+         U$10     14
+         U$10     17
+         U$10     20
+         U$10     8
+         U$11     0
+         U$11     14
+         U$11     17
+         U$11     20
+         U$11     8
+         U$2      1
+         U$4      GND
+         U$7      3V3
+         U$9      0
+         U$9      14
+         U$9      17
+         U$9      20
+         U$9      8
+
+V_IN     J1       1
+         SB1      1
+
+X+       JP6      12
+         U$7      A2
+
+X-       JP6      14
+         U$7      A4
+
+Y+       JP6      11
+         U$7      A1
+
+Y-       JP6      13
+         U$7      A3
+
