@@ -1,0 +1,98 @@
+Partlist
+
+Exported from kicker-2014-a.brd at 12/27/2014 11:43:03 PM
+
+EAGLE Version 6.5.0 Copyright (c) 1988-2013 CadSoft
+
+Assembly variant: 
+
+Part       Value                       Package      Library        Position (inch)       Orientation
+
+B                                      LED3MM       led            (0.825 3.3)           R270
+C1         UWT1E471MNL1GS              PANASONIC_G  rcl            (0.7 0.825)           R90
+C2         4.7uF, 25v                  C1206        rcl            (1.475 0.675)         MR270
+C3         100nF                       C0603        rcl            (1.425 1.225)         MR90
+C6         4.7uF                       C1206K       rcl            (2.45 0.425)          MR0
+C7         47uF                        C/6032-28R   rcl            (2.45 0.65)           MR180
+C8         100nF                       C0603        rcl            (0.625 0.8)           MR180
+C9         22nF                        C0603        rcl            (1.525 0.9)           MR90
+C10        220pF 100V                  C0603        rcl            (2.175 1.95)          MR180
+C12        100pF                       C0603        rcl            (1.125 1.125)         MR0
+C13        22nF                        C0603        rcl            (1.125 1.025)         MR0
+D1         STTH3R06U                   SMB          diode          (-0.05 2)             MR270
+D2         6A6-T                       P6-15        diode          (4.225 0.675)         R90
+D3         6A6-T                       P6-15        diode          (3.4 0.675)           R90
+D4         BZV55-B18,115               SOD80C       diode          (3.4 1.35)            MR180
+D5         BZV55-B18,115               SOD80C       diode          (4.225 1.35)          MR180
+D8         BZV55-B18,115               SOD80C       diode          (2.225 0.975)         MR0
+D9         BAS16H                      SOD323-W     diode          (1.525 0.4)           MR0
+D10        LTST-S270KRKT               CHIPLED_0603 led            (1.925 -0.025)        R270
+DET                                    LED3MM       led            (0.45 3.3)            R90
+EMT                                    LED3MM       led            (2.525 3.65)          R90
+F1         10A                         NANO2_157    littlefuse     (0.075 0.7)           R90
+G                                      LED3MM       led            (0.65 3.3)            R90
+IR_LED                                 LED3MM       led            (1.65 3.725)          R270
+J1         POWER                       JST_VH_2_RA  jst_vh         (0.65 0.425)          R0
+J2         KICK                        JST_VH_2_RA  jst_vh         (3.475 0.25)          R0
+J3         CHIP                        JST_VH_2_RA  jst_vh         (4.3 0.25)            R0
+J4         0528520870                  0528520870   con-robocup    (0.05 0.625)          MR90
+J5         2MM-3H                      2MM-3-H      2mm            (0.65 3.6)            R0
+J6         2MM-2H                      2MM-2-H      2mm            (3.05 3.6)            R0
+J7         2MM-4H                      2MM-4-H      2mm            (1.1 3.6)             R0
+J8         1.25MM-4H                   1.25MM-4-H   1.25mm         (2 3.75)              R0
+L1         HZ0603B102R-10              C0603        radio          (0.575 1)             MR270
+L2         HZ0603B102R-10              C0603        radio          (2.4 0.775)           MR0
+PHOTOTRANS TLLG4400                    LED3MM       led            (2.7 3.75)            R270
+POWER                                  LED3MM       led            (0.725 2.675)         R0
+Q1         STB40NF20                   D2PACK       fairchild      (1.725 1.725)         MR270
+Q4         FDV303N                     SOT-23       zetex          (1.95 0.375)          MR270
+Q5         FQT1N80                     SOT223       zetex          (1.925 0.625)         MR0
+Q6         IXGK400N30A3                TO264        IXYS           (3.4 1.35)            R0
+Q7         IXGK400N30A3                TO264        IXYS           (4.225 1.35)          R0
+R                                      LED3MM       led            (1.175 3.3)           R270
+R1         10.0k                       R0603        rcl            (2.45 0.1)            MR0
+R2         10.0k                       R0603        rcl            (2.45 0.025)          MR0
+R3                                     0204/5       resistor       (0.575 2.775)         R90
+R4         10                          R0603        rcl            (3.075 0.75)          R90
+R5                                     0204/5       resistor       (0.7 2.975)           R270
+R6         10                          R0603        rcl            (3.15 0.75)           R90
+R7         NP                          R0603        rcl            (0.2375 0.525)        MR270
+R8         1.00M                       R0603        rcl            (0.975 0.7)           MR90
+R9         10.0k                       R0603        rcl            (0.875 0.7)           MR270
+R10        6.8k                        R0603        rcl            (1.225 1.075)         MR270
+R11        16.20k, 1% (MCR03EZPFX1622) R0603        rcl            (1.325 1.225)         MR270
+R12        10.0k                       R0603        rcl            (0.45 1)              MR90
+R13        10.0k                       R0603        rcl            (0.325 1)             MR90
+R14        22                          R0603        rcl            (1.65 0.9)            MR90
+R15        680K                        R1206        rcl            (3.475 0.48)          MR0
+R16        680K                        R1206        rcl            (4.3 0.48)            MR0
+R17        0.015 (ERJ-6BWFR015V)       R0805        rcl            (2.1 1.45)            MR0
+R18        10.0k                       R0603        rcl            (1.275 0.475)         MR180
+R19        NP                          R0603        rcl            (1.325 0.675)         R270
+R20        140k                        R0603        rcl            (1.525 1.225)         MR90
+R21        470k 1%                     R0603        rcl            (2.225 1.35)          MR180
+R22        1.00M, 1% (MCR03EZPFX1004)  R0603        rcl            (2.075 1.35)          MR180
+R23        1.00M, 1% (MCR03EZPFX1004)  R0603        rcl            (1.925 1.35)          MR180
+R24        22                          R0603        rcl            (2 1.95)              MR0
+R25        NP                          R0603        rcl            (2.375 1.95)          MR180
+R26        NP                          R0603        rcl            (0.2 1)               MR90
+R27        RHC2512FT33K0               R2512        rcl            (1.925 0.975)         MR90
+R28        10M                         R0603        rcl            (2.425 0.975)         MR180
+R29        220                         R0603        rcl            (1.7 0.4)             MR180
+R30                                    0204/5       resistor       (0.875 2.975)         R270
+R31                                    0204/5       resistor       (1 2.975)             R270
+R32                                    0204/5       resistor       (1.125 2.975)         R270
+R33                                    0204/5       resistor       (1.4 3.775)           R180
+R35                                    0204/5       resistor       (2.2 3.6)             R180
+R36                                    0204/5       resistor       (0.45 2.975)          R270
+R37                                    0204/5       resistor       (2.2 3.7)             R180
+S1         KMR2                        KMR2         switch-robocup (1 2.65)              R180
+T1         DA2034                      DA2034       coilcraft      (0.6 1.55)            R0
+U$1        BATT-AAA-2                  BATT-AAA-2   battholders    (1.275 3.025)         R270
+U$3        EET-UQ2E821CA               22CAP        rc_caps        (2.55 2.2)            R180
+U$4        EET-UQ2E821CA               22CAP        rc_caps        (1.6 2.2)             R180
+U$5        EET-UQ2E821CA               22CAP        rc_caps        (0.65 2.2)            R180
+U1         ADC081C027                  SOT23-6      national       (0.425 0.7)           MR0
+U5         LT3757                      MSOP-10-MSE  power          (1.35 1.075)          MR180
+U8         TC4427                      SO08         microchip      (2.45 0.275)          MR90
+W                                      LED3MM       led            (1 3.3)               R90
