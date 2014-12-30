@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
 <eagle version="6.5.0">
 <drawing>
@@ -6,15 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="inch" altunit="inch"/>
-=======
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
->>>>>>> fcb196f2c95f4bcd88d0030f64fe39e9d054df7f
-=======
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
->>>>>>> parent of 4834759... temp stuff
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -13977,83 +13969,6 @@ In this library you will find switches and other mechanical assisted circuit ele
 <text x="-5.08" y="6.985" size="1.27" layer="25" font="vector" ratio="15">&gt;NAME</text>
 <text x="-5.08" y="-3.81" size="1.27" layer="27" font="vector" ratio="15" align="top-left">&gt;VALUE</text>
 </package>
-<<<<<<< HEAD
-<package name="JS1300">
-<smd name="D" x="-4.9" y="1.1" dx="1" dy="1" layer="1"/>
-<smd name="A" x="-4.9" y="-1.1" dx="1" dy="1" layer="1"/>
-<smd name="H" x="-1.9" y="-4.9" dx="1" dy="1" layer="1"/>
-<smd name="J" x="0" y="-4.9" dx="1" dy="1" layer="1"/>
-<smd name="K" x="1.9" y="-4.9" dx="1" dy="1" layer="1"/>
-<smd name="C" x="4.9" y="1.1" dx="1" dy="1" layer="1"/>
-<smd name="B" x="4.9" y="-1.1" dx="1" dy="1" layer="1"/>
-<smd name="E" x="-1.9" y="4.9" dx="1" dy="1" layer="1"/>
-<smd name="F" x="0" y="4.9" dx="1" dy="1" layer="1"/>
-<smd name="G" x="1.9" y="4.9" dx="1" dy="1" layer="1"/>
-<smd name="NC2" x="4.14" y="4.14" dx="1" dy="1" layer="1" rot="R45" thermals="no"/>
-<smd name="NC1" x="-4.14" y="4.14" dx="1" dy="1" layer="1" rot="R45" thermals="no"/>
-<smd name="NC3" x="-4.14" y="-4.14" dx="1" dy="1" layer="1" rot="R45" thermals="no"/>
-<smd name="NC4" x="4.14" y="-4.14" dx="1" dy="1" layer="1" rot="R45" thermals="no"/>
-<wire x1="-4.9" y1="3.43" x2="-4.9" y2="-3.43" width="0.127" layer="21"/>
-<wire x1="-3.43" y1="4.9" x2="3.43" y2="4.9" width="0.127" layer="21"/>
-<wire x1="4.9" y1="3.43" x2="4.9" y2="-3.43" width="0.127" layer="21"/>
-<circle x="0" y="0" radius="1" width="0.1" layer="21"/>
-<wire x1="3.43" y1="-4.9" x2="-3.43" y2="-4.9" width="0.127" layer="21"/>
-<wire x1="-3.43" y1="-4.9" x2="-4.9" y2="-3.43" width="0.127" layer="21"/>
-<wire x1="3.43" y1="-4.9" x2="4.9" y2="-3.43" width="0.127" layer="21"/>
-<wire x1="3.43" y1="4.9" x2="4.9" y2="3.43" width="0.127" layer="21"/>
-<wire x1="-4.9" y1="3.43" x2="-3.43" y2="4.9" width="0.127" layer="21"/>
-<circle x="-2.38" y="2.38" radius="1" width="0.1" layer="21"/>
-<circle x="2.38" y="2.38" radius="1" width="0.1" layer="21"/>
-<circle x="2.38" y="-2.38" radius="1" width="0.1" layer="21"/>
-<circle x="-2.38" y="-2.38" radius="1" width="0.1" layer="21"/>
-<wire x1="-2.2" y1="-1.4" x2="-1" y2="-0.2" width="0.05" layer="21"/>
-<wire x1="-1.4" y1="-2.2" x2="-0.2" y2="-1" width="0.05" layer="21"/>
-<wire x1="1.4" y1="-2.2" x2="0.2" y2="-1" width="0.05" layer="21"/>
-<wire x1="2.2" y1="-1.4" x2="1" y2="-0.2" width="0.05" layer="21"/>
-<wire x1="2.2" y1="1.4" x2="1" y2="0.2" width="0.05" layer="21"/>
-<wire x1="1.4" y1="2.2" x2="0.2" y2="1" width="0.05" layer="21"/>
-<wire x1="-1.4" y1="2.2" x2="-0.2" y2="1" width="0.05" layer="21"/>
-<wire x1="-2.2" y1="1.4" x2="-1" y2="0.2" width="0.05" layer="21"/>
-</package>
-<<<<<<< HEAD
-<package name="SB0603">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
-<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
-<smd name="1" x="-0.85" y="0" dx="1" dy="1.1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1" dy="1.1" layer="1"/>
-<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
-<wire x1="-1.473" y1="0.635" x2="1.473" y2="0.635" width="0.127" layer="21"/>
-<wire x1="1.473" y1="-0.635" x2="-1.473" y2="-0.635" width="0.127" layer="21"/>
-<rectangle x1="-0.635" y1="-0.635" x2="0.635" y2="0.635" layer="21"/>
-<wire x1="-1.473" y1="0.635" x2="-1.473" y2="-0.635" width="0.127" layer="21"/>
-<wire x1="1.473" y1="0.635" x2="1.473" y2="-0.635" width="0.127" layer="21"/>
-</package>
-<package name="SB1206">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
-<wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="0.983" x2="2.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="-0.983" x2="-2.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-2.473" y1="-0.983" x2="-2.473" y2="0.983" width="0.0508" layer="39"/>
-<smd name="2" x="1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
-<smd name="1" x="-1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
-<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.3" y1="-0.7" x2="0.3" y2="0.7" layer="35"/>
-<wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.127" layer="21"/>
-<wire x1="2.473" y1="0.983" x2="2.473" y2="-0.983" width="0.127" layer="21"/>
-<wire x1="2.473" y1="-0.983" x2="-2.473" y2="-0.983" width="0.127" layer="21"/>
-<wire x1="-2.473" y1="-0.983" x2="-2.473" y2="0.983" width="0.127" layer="21"/>
-<rectangle x1="-0.635" y1="-0.983" x2="0.635" y2="0.983" layer="21"/>
-</package>
-=======
->>>>>>> fcb196f2c95f4bcd88d0030f64fe39e9d054df7f
-=======
->>>>>>> parent of 4834759... temp stuff
 </packages>
 <symbols>
 <symbol name="HEX">
@@ -14209,32 +14124,6 @@ In this library you will find switches and other mechanical assisted circuit ele
 <pin name="1" x="7.62" y="2.54" visible="pad" length="short" direction="pas" rot="R180"/>
 <pin name="C" x="-7.62" y="0" visible="pad" length="short" direction="pas"/>
 </symbol>
-<<<<<<< HEAD
-<symbol name="TS2">
-<wire x1="1.905" y1="3.429" x2="1.905" y2="2.159" width="0.254" layer="94"/>
-<wire x1="-1.905" y1="3.429" x2="-1.905" y2="2.159" width="0.254" layer="94"/>
-<wire x1="1.905" y1="3.429" x2="-1.905" y2="3.429" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0" x2="1.905" y2="1.27" width="0.254" layer="94"/>
-<circle x="-2.54" y="0" radius="0.127" width="0.4064" layer="94"/>
-<circle x="2.54" y="0" radius="0.127" width="0.4064" layer="94"/>
-<text x="-5.08" y="3.81" size="2.54" layer="95" font="vector">&gt;NAME</text>
-<text x="0" y="-1.27" size="2.54" layer="96" font="vector" ratio="15" align="top-center">&gt;VALUE</text>
-<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
-<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-<wire x1="0" y1="0.762" x2="0" y2="3.302" width="0.254" layer="94" style="shortdash"/>
-<text x="0" y="-4.318" size="1.27" layer="97" ratio="10" align="top-center">&gt;FUNCTION</text>
-</symbol>
-<<<<<<< HEAD
-<symbol name="SOLDERBRIDGE">
-<pin name="1" x="-2.54" y="0" visible="off" length="point" rot="R180"/>
-<pin name="2" x="2.54" y="0" visible="off" length="point"/>
-<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
-<text x="-2.54" y="0" size="1.27" layer="95">&gt;NAME</text>
-</symbol>
-=======
->>>>>>> fcb196f2c95f4bcd88d0030f64fe39e9d054df7f
-=======
->>>>>>> parent of 4834759... temp stuff
 </symbols>
 <devicesets>
 <deviceset name="94HCB16T" prefix="S">
@@ -14256,66 +14145,6 @@ In this library you will find switches and other mechanical assisted circuit ele
 </device>
 </devices>
 </deviceset>
-<<<<<<< HEAD
-<deviceset name="JS1300" prefix="S">
-<description>https://www.e-switch.com/system/asset/product_line/data_sheet/21/JS1300.pdf</description>
-<gates>
-<gate name=".3" symbol="TS2" x="0" y="0" addlevel="must"/>
-<gate name=".1" symbol="TS2" x="-20.32" y="15.24" addlevel="must"/>
-<gate name=".4" symbol="TS2" x="-20.32" y="-17.78" addlevel="must"/>
-<gate name=".5" symbol="TS2" x="25.4" y="-17.78" addlevel="must"/>
-<gate name=".2" symbol="TS2" x="25.4" y="12.7" addlevel="must"/>
-</gates>
-<devices>
-<device name="" package="JS1300">
-<connects>
-<connect gate=".1" pin="1" pad="D"/>
-<connect gate=".1" pin="2" pad="E"/>
-<connect gate=".2" pin="1" pad="C"/>
-<connect gate=".2" pin="2" pad="G"/>
-<connect gate=".3" pin="1" pad="F"/>
-<connect gate=".3" pin="2" pad="J"/>
-<connect gate=".4" pin="1" pad="A"/>
-<connect gate=".4" pin="2" pad="H"/>
-<connect gate=".5" pin="1" pad="B"/>
-<connect gate=".5" pin="2" pad="K"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<<<<<<< HEAD
-<deviceset name="SOLDERBRIDGE" prefix="SB">
-<gates>
-<gate name="G$1" symbol="SOLDERBRIDGE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="SB0603" package="SB0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="SB1206" package="SB1206">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-=======
->>>>>>> fcb196f2c95f4bcd88d0030f64fe39e9d054df7f
-=======
->>>>>>> parent of 4834759... temp stuff
 </devicesets>
 </library>
 <library name="switch-dil">
@@ -18891,34 +18720,6 @@ In this library you will find circuit elements that are used for getting measure
 <part name="JP5" library="SparkFun-Connectors" deviceset="M05X2" device="SHD"/>
 <part name="X1" library="RoboJackets-FreqGen" deviceset="OSC" device=""/>
 <part name="L1" library="adafruit" deviceset="WS2812B" device=""/>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<part name="GND5" library="supply1" deviceset="GND" device=""/>
-<part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="GND8" library="supply1" deviceset="GND" device=""/>
-<part name="GND9" library="supply1" deviceset="GND" device=""/>
-<part name="GND10" library="supply1" deviceset="GND" device=""/>
-<part name="GND11" library="supply1" deviceset="GND" device=""/>
-<part name="GND12" library="supply1" deviceset="GND" device=""/>
-<part name="SUPPLY2" library="supply2" deviceset="+3.3V" device=""/>
-<part name="SUPPLY3" library="supply2" deviceset="+3.3V" device=""/>
-<part name="SUPPLY4" library="supply2" deviceset="+3.3V" device=""/>
-<part name="SUPPLY5" library="supply2" deviceset="+3.3V" device=""/>
-<part name="SUPPLY6" library="supply2" deviceset="+2.5V" device=""/>
-<part name="SUPPLY7" library="supply2" deviceset="+1.2V" device=""/>
-<part name="SUPPLY1" library="supply2" deviceset="+3.3V" device=""/>
-<part name="SUPPLY8" library="supply2" deviceset="+3.3V" device=""/>
-<part name="SUPPLY9" library="supply2" deviceset="+2.5V" device=""/>
-<part name="SUPPLY10" library="supply2" deviceset="+1.2V" device=""/>
-<part name="SUPPLY11" library="supply2" deviceset="+2.5V" device=""/>
-<part name="SUPPLY12" library="supply2" deviceset="+3.3V" device=""/>
-<part name="SUPPLY13" library="supply2" deviceset="+1.2V" device=""/>
-<part name="SUPPLY14" library="supply2" deviceset="+2.5V" device=""/>
-<part name="SUPPLY15" library="supply2" deviceset="+1.2V" device=""/>
-<part name="SUPPLY16" library="supply2" deviceset="+3.3V" device=""/>
-<part name="SB1" library="RoboJackets-Switches" deviceset="SOLDERBRIDGE" device="SB0603"/>
-=======
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="IC3" library="RoboJackets-Sensors" deviceset="MPU-9250" device=""/>
@@ -18939,9 +18740,6 @@ In this library you will find circuit elements that are used for getting measure
 <part name="FRAME5" library="RoboJackets-Frames" deviceset="FRAME_B_L" device="">
 <attribute name="SCH_DESC" value="Xilinx Spartan-3E FPGA"/>
 </part>
->>>>>>> fcb196f2c95f4bcd88d0030f64fe39e9d054df7f
-=======
->>>>>>> parent of 4834759... temp stuff
 </parts>
 <sheets>
 <sheet>
@@ -19338,77 +19136,8 @@ suit driving LEDs</text>
 <plain>
 </plain>
 <instances>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<instance part="U$2" gate="G$1" x="134.62" y="109.22"/>
-<instance part="JP2" gate="G$1" x="27.94" y="139.7"/>
-<instance part="JP3" gate="G$1" x="27.94" y="81.28"/>
-<instance part="JP4" gate="G$1" x="259.08" y="160.02"/>
-<instance part="JP5" gate="G$1" x="259.08" y="127"/>
-<instance part="X1" gate="G$1" x="25.4" y="45.72"/>
-<instance part="GND5" gate="1" x="40.64" y="50.8"/>
-<instance part="GND6" gate="1" x="238.76" y="50.8"/>
-<instance part="GND7" gate="1" x="116.84" y="38.1"/>
-<instance part="GND8" gate="1" x="137.16" y="38.1"/>
-<instance part="GND9" gate="1" x="157.48" y="38.1"/>
-<instance part="GND10" gate="1" x="114.3" y="180.34" rot="R180"/>
-<instance part="GND11" gate="1" x="137.16" y="180.34" rot="R180"/>
-<instance part="GND12" gate="1" x="180.34" y="180.34" rot="R180"/>
-<instance part="SUPPLY2" gate="G$1" x="60.96" y="81.28" smashed="yes" rot="R90">
-<attribute name="VALUE" x="57.785" y="81.915" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="SUPPLY3" gate="G$1" x="60.96" y="124.46" smashed="yes" rot="R90">
-<attribute name="VALUE" x="57.785" y="125.095" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="SUPPLY4" gate="G$1" x="111.76" y="185.42" smashed="yes">
-<attribute name="VALUE" x="112.395" y="188.595" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="SUPPLY5" gate="G$1" x="165.1" y="185.42" smashed="yes">
-<attribute name="VALUE" x="165.735" y="188.595" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="SUPPLY6" gate="G$1" x="106.68" y="185.42" smashed="yes">
-<attribute name="VALUE" x="107.315" y="188.595" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="SUPPLY7" gate="G$1" x="162.56" y="185.42" smashed="yes">
-<attribute name="VALUE" x="163.195" y="188.595" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="SUPPLY1" gate="G$1" x="121.92" y="30.48" smashed="yes" rot="R180">
-<attribute name="VALUE" x="121.285" y="27.305" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="SUPPLY8" gate="G$1" x="160.02" y="30.48" smashed="yes" rot="R180">
-<attribute name="VALUE" x="159.385" y="27.305" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="SUPPLY9" gate="G$1" x="165.1" y="30.48" smashed="yes" rot="R180">
-<attribute name="VALUE" x="164.465" y="27.305" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="SUPPLY10" gate="G$1" x="111.76" y="30.48" smashed="yes" rot="R180">
-<attribute name="VALUE" x="111.125" y="27.305" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="SUPPLY11" gate="G$1" x="60.96" y="83.82" smashed="yes" rot="R90">
-<attribute name="VALUE" x="57.785" y="84.455" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="SUPPLY12" gate="G$1" x="60.96" y="68.58" smashed="yes" rot="R90">
-<attribute name="VALUE" x="57.785" y="69.215" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="SUPPLY13" gate="G$1" x="60.96" y="139.7" smashed="yes" rot="R90">
-<attribute name="VALUE" x="57.785" y="140.335" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="SUPPLY14" gate="G$1" x="218.44" y="137.16" smashed="yes" rot="R270">
-<attribute name="VALUE" x="221.615" y="136.525" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY15" gate="G$1" x="218.44" y="86.36" smashed="yes" rot="R270">
-<attribute name="VALUE" x="221.615" y="85.725" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY16" gate="G$1" x="233.68" y="165.1" smashed="yes">
-<attribute name="VALUE" x="234.315" y="168.275" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="SB1" gate="G$1" x="226.06" y="147.32"/>
-=======
 <instance part="FRAME4" gate="G$1" x="0" y="0"/>
 <instance part="FRAME4" gate="G$2" x="325.12" y="0"/>
->>>>>>> fcb196f2c95f4bcd88d0030f64fe39e9d054df7f
-=======
->>>>>>> parent of 4834759... temp stuff
 </instances>
 <busses>
 </busses>
@@ -19420,9 +19149,6 @@ suit driving LEDs</text>
 <plain>
 </plain>
 <instances>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 <instance part="U$2" gate="G$1" x="231.14" y="147.32"/>
 <instance part="JP2" gate="G$1" x="116.84" y="167.64"/>
 <instance part="JP3" gate="G$1" x="116.84" y="116.84"/>
@@ -19431,14 +19157,6 @@ suit driving LEDs</text>
 <instance part="X1" gate="G$1" x="139.7" y="81.28"/>
 <instance part="FRAME5" gate="G$1" x="0" y="0"/>
 <instance part="FRAME5" gate="G$2" x="325.12" y="0"/>
-=======
-<instance part="U$2" gate="G$1" x="134.62" y="109.22"/>
-<instance part="JP2" gate="G$1" x="-10.16" y="139.7"/>
-<instance part="JP3" gate="G$1" x="-10.16" y="106.68"/>
-<instance part="JP4" gate="G$1" x="259.08" y="160.02"/>
-<instance part="JP5" gate="G$1" x="259.08" y="127"/>
-<instance part="X1" gate="G$1" x="25.4" y="45.72"/>
->>>>>>> parent of 4834759... temp stuff
 </instances>
 <busses>
 </busses>
@@ -19520,7 +19238,6 @@ suit driving LEDs</text>
 <instance part="GND7" gate="1" x="200.66" y="83.82"/>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
 <instance part="FRAME2" gate="G$2" x="172.72" y="0"/>
->>>>>>> fcb196f2c95f4bcd88d0030f64fe39e9d054df7f
 </instances>
 <busses>
 </busses>
