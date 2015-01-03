@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
 <eagle version="6.5.0">
 <drawing>
@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -13969,6 +13969,40 @@ In this library you will find switches and other mechanical assisted circuit ele
 <text x="-5.08" y="6.985" size="1.27" layer="25" font="vector" ratio="15">&gt;NAME</text>
 <text x="-5.08" y="-3.81" size="1.27" layer="27" font="vector" ratio="15" align="top-left">&gt;VALUE</text>
 </package>
+<package name="SB0603">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
+<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
+<smd name="1" x="-0.85" y="0" dx="1" dy="1.1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1" dy="1.1" layer="1"/>
+<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+<wire x1="-1.473" y1="0.635" x2="1.473" y2="0.635" width="0.127" layer="21"/>
+<wire x1="1.473" y1="-0.635" x2="-1.473" y2="-0.635" width="0.127" layer="21"/>
+<rectangle x1="-0.635" y1="-0.635" x2="0.635" y2="0.635" layer="21"/>
+<wire x1="-1.473" y1="0.635" x2="-1.473" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="1.473" y1="0.635" x2="1.473" y2="-0.635" width="0.127" layer="21"/>
+</package>
+<package name="SB1206">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
+<wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="2.473" y1="0.983" x2="2.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="2.473" y1="-0.983" x2="-2.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-2.473" y1="-0.983" x2="-2.473" y2="0.983" width="0.0508" layer="39"/>
+<smd name="2" x="1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
+<smd name="1" x="-1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
+<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.3" y1="-0.7" x2="0.3" y2="0.7" layer="35"/>
+<wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.127" layer="21"/>
+<wire x1="2.473" y1="0.983" x2="2.473" y2="-0.983" width="0.127" layer="21"/>
+<wire x1="2.473" y1="-0.983" x2="-2.473" y2="-0.983" width="0.127" layer="21"/>
+<wire x1="-2.473" y1="-0.983" x2="-2.473" y2="0.983" width="0.127" layer="21"/>
+<rectangle x1="-0.635" y1="-0.983" x2="0.635" y2="0.983" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="HEX">
@@ -14124,6 +14158,12 @@ In this library you will find switches and other mechanical assisted circuit ele
 <pin name="1" x="7.62" y="2.54" visible="pad" length="short" direction="pas" rot="R180"/>
 <pin name="C" x="-7.62" y="0" visible="pad" length="short" direction="pas"/>
 </symbol>
+<symbol name="SOLDERBRIDGE">
+<pin name="1" x="-2.54" y="0" visible="off" length="point" rot="R180"/>
+<pin name="2" x="2.54" y="0" visible="off" length="point"/>
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="0" size="1.27" layer="95">&gt;NAME</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="94HCB16T" prefix="S">
@@ -14138,6 +14178,31 @@ In this library you will find switches and other mechanical assisted circuit ele
 <connect gate="G$1" pin="4" pad="4"/>
 <connect gate="G$1" pin="8" pad="8"/>
 <connect gate="G$1" pin="C" pad="C1 C2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SOLDERBRIDGE" prefix="SB">
+<gates>
+<gate name="G$1" symbol="SOLDERBRIDGE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SB0603" package="SB0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SB1206" package="SB1206">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -18679,6 +18744,114 @@ In this library you will find circuit elements that are used for getting measure
 </deviceset>
 </devicesets>
 </library>
+<library name="supply2">
+<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
+GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+Please keep in mind, that these devices are necessary for the
+automatic wiring of the supply signals.&lt;p&gt;
+The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="+3.3V">
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="0.635" x2="0" y2="1.905" width="0.1524" layer="94"/>
+<circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
+<text x="-1.905" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="+3.3V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+2.5V">
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="0.635" x2="0" y2="1.905" width="0.1524" layer="94"/>
+<circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
+<text x="-1.905" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="+2.5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+1.2V">
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="0.635" x2="0" y2="1.905" width="0.1524" layer="94"/>
+<circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
+<text x="-1.905" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="+1.2V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="+3.3V" prefix="SUPPLY">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+3.3V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+2.5V" prefix="SUPPLY">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+2.5V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+1.2V" prefix="SUPPLY">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+1.2V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="supply1">
+<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
+ GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+ Please keep in mind, that these devices are necessary for the
+ automatic wiring of the supply signals.&lt;p&gt;
+ The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+ In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+ &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="GND">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GND" prefix="GND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -18740,6 +18913,47 @@ In this library you will find circuit elements that are used for getting measure
 <part name="FRAME5" library="RoboJackets-Frames" deviceset="FRAME_B_L" device="">
 <attribute name="SCH_DESC" value="Xilinx Spartan-3E FPGA"/>
 </part>
+<part name="SUPPLY1" library="supply2" deviceset="+3.3V" device=""/>
+<part name="SUPPLY3" library="supply2" deviceset="+3.3V" device=""/>
+<part name="SUPPLY9" library="supply2" deviceset="+2.5V" device=""/>
+<part name="SUPPLY14" library="supply2" deviceset="+1.2V" device=""/>
+<part name="GND8" library="supply1" deviceset="GND" device=""/>
+<part name="GND9" library="supply1" deviceset="GND" device=""/>
+<part name="GND10" library="supply1" deviceset="GND" device=""/>
+<part name="GND11" library="supply1" deviceset="GND" device=""/>
+<part name="GND12" library="supply1" deviceset="GND" device=""/>
+<part name="GND13" library="supply1" deviceset="GND" device=""/>
+<part name="GND14" library="supply1" deviceset="GND" device=""/>
+<part name="GND15" library="supply1" deviceset="GND" device=""/>
+<part name="GND16" library="supply1" deviceset="GND" device=""/>
+<part name="GND17" library="supply1" deviceset="GND" device=""/>
+<part name="GND18" library="supply1" deviceset="GND" device=""/>
+<part name="GND19" library="supply1" deviceset="GND" device=""/>
+<part name="GND20" library="supply1" deviceset="GND" device=""/>
+<part name="SUPPLY21" library="supply2" deviceset="+3.3V" device=""/>
+<part name="SUPPLY22" library="supply2" deviceset="+3.3V" device=""/>
+<part name="SUPPLY23" library="supply2" deviceset="+3.3V" device=""/>
+<part name="SUPPLY24" library="supply2" deviceset="+3.3V" device=""/>
+<part name="SUPPLY2" library="supply2" deviceset="+2.5V" device=""/>
+<part name="SUPPLY4" library="supply2" deviceset="+3.3V" device=""/>
+<part name="SUPPLY5" library="supply2" deviceset="+3.3V" device=""/>
+<part name="SUPPLY6" library="supply2" deviceset="+1.2V" device=""/>
+<part name="SUPPLY7" library="supply2" deviceset="+3.3V" device=""/>
+<part name="SUPPLY8" library="supply2" deviceset="+2.5V" device=""/>
+<part name="SUPPLY10" library="supply2" deviceset="+3.3V" device=""/>
+<part name="SUPPLY11" library="supply2" deviceset="+3.3V" device=""/>
+<part name="SUPPLY12" library="supply2" deviceset="+3.3V" device=""/>
+<part name="SUPPLY13" library="supply2" deviceset="+3.3V" device=""/>
+<part name="SUPPLY15" library="supply2" deviceset="+3.3V" device=""/>
+<part name="SUPPLY16" library="supply2" deviceset="+2.5V" device=""/>
+<part name="SUPPLY17" library="supply2" deviceset="+1.2V" device=""/>
+<part name="SUPPLY18" library="supply2" deviceset="+3.3V" device=""/>
+<part name="SUPPLY19" library="supply2" deviceset="+3.3V" device=""/>
+<part name="SB1" library="RoboJackets-Switches" deviceset="SOLDERBRIDGE" device="SB0603"/>
+<part name="SUPPLY20" library="supply2" deviceset="+3.3V" device=""/>
+<part name="SUPPLY25" library="supply2" deviceset="+3.3V" device=""/>
+<part name="SUPPLY26" library="supply2" deviceset="+3.3V" device=""/>
+<part name="SUPPLY27" library="supply2" deviceset="+1.2V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -18754,7 +18968,7 @@ suit driving LEDs</text>
 <instance part="KIT1" gate="KIT" x="124.46" y="76.2"/>
 <instance part="IC1" gate="G$1" x="93.98" y="160.02"/>
 <instance part="GND1" gate="1" x="50.8" y="93.98"/>
-<instance part="GND2" gate="1" x="124.46" y="124.46"/>
+<instance part="GND2" gate="1" x="132.08" y="124.46"/>
 <instance part="D1" gate="G$1" x="137.16" y="190.5" rot="R270"/>
 <instance part="D2" gate="G$1" x="165.1" y="185.42" rot="R270"/>
 <instance part="D3" gate="G$1" x="137.16" y="180.34" rot="R270"/>
@@ -18771,8 +18985,12 @@ suit driving LEDs</text>
 <instance part="S1" gate="G$1" x="35.56" y="187.96"/>
 <instance part="GND3" gate="1" x="38.1" y="139.7"/>
 <instance part="S2" gate="G$1" x="22.86" y="142.24"/>
-<instance part="L1" gate="G$1" x="22.86" y="53.34" rot="R180"/>
-<instance part="GND4" gate="1" x="10.16" y="40.64"/>
+<instance part="L1" gate="G$1" x="25.4" y="53.34" rot="MR0"/>
+<instance part="GND4" gate="1" x="25.4" y="40.64"/>
+<instance part="SUPPLY21" gate="G$1" x="177.8" y="101.6"/>
+<instance part="SUPPLY22" gate="G$1" x="25.4" y="63.5"/>
+<instance part="SUPPLY23" gate="G$1" x="121.92" y="124.46" rot="R270"/>
+<instance part="SUPPLY24" gate="G$1" x="66.04" y="149.86" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -18786,12 +19004,12 @@ suit driving LEDs</text>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="A1"/>
-<wire x1="116.84" y1="129.54" x2="124.46" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="129.54" x2="124.46" y2="127" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="129.54" x2="132.08" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="129.54" x2="132.08" y2="127" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="A2"/>
-<wire x1="116.84" y1="134.62" x2="124.46" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="134.62" x2="124.46" y2="129.54" width="0.1524" layer="91"/>
-<junction x="124.46" y="129.54"/>
+<wire x1="116.84" y1="134.62" x2="132.08" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="134.62" x2="132.08" y2="129.54" width="0.1524" layer="91"/>
+<junction x="132.08" y="129.54"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -18802,9 +19020,7 @@ suit driving LEDs</text>
 </segment>
 <segment>
 <pinref part="L1" gate="G$1" pin="GND"/>
-<wire x1="22.86" y1="58.42" x2="22.86" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="63.5" x2="10.16" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="63.5" x2="10.16" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="48.26" x2="25.4" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 </segment>
 </net>
@@ -18824,31 +19040,6 @@ suit driving LEDs</text>
 <pinref part="KIT1" gate="KIT" pin="P11"/>
 <wire x1="76.2" y1="73.66" x2="15.24" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="73.66" x2="15.24" y2="111.76" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="VCC" class="0">
-<segment>
-<pinref part="KIT1" gate="KIT" pin="VO"/>
-<wire x1="172.72" y1="99.06" x2="177.8" y2="99.06" width="0.1524" layer="91"/>
-<label x="177.8" y="99.06" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="G$1" pin="A0"/>
-<wire x1="116.84" y1="124.46" x2="119.38" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="124.46" x2="119.38" y2="119.38" width="0.1524" layer="91"/>
-<label x="121.92" y="119.38" size="1.27" layer="95" xref="yes"/>
-<wire x1="119.38" y1="119.38" x2="121.92" y2="119.38" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="G$1" pin="VDD"/>
-<wire x1="71.12" y1="149.86" x2="60.96" y2="149.86" width="0.1524" layer="91"/>
-<label x="60.96" y="149.86" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="L1" gate="G$1" pin="VDD"/>
-<wire x1="22.86" y1="48.26" x2="22.86" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="45.72" x2="25.4" y2="45.72" width="0.1524" layer="91"/>
-<label x="25.4" y="45.72" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -19068,7 +19259,7 @@ suit driving LEDs</text>
 <segment>
 <pinref part="KIT1" gate="KIT" pin="P19"/>
 <pinref part="L1" gate="G$1" pin="DIN"/>
-<wire x1="76.2" y1="53.34" x2="27.94" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="53.34" x2="30.48" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PRIMARY_RADIO_INT" class="0">
@@ -19129,6 +19320,28 @@ suit driving LEDs</text>
 <wire x1="63.5" y1="63.5" x2="76.2" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="+3.3V" class="0">
+<segment>
+<pinref part="KIT1" gate="KIT" pin="VO"/>
+<wire x1="172.72" y1="99.06" x2="177.8" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="SUPPLY21" gate="G$1" pin="+3.3V"/>
+</segment>
+<segment>
+<pinref part="L1" gate="G$1" pin="VDD"/>
+<wire x1="25.4" y1="58.42" x2="25.4" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="SUPPLY22" gate="G$1" pin="+3.3V"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="A0"/>
+<wire x1="116.84" y1="124.46" x2="119.38" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="SUPPLY23" gate="G$1" pin="+3.3V"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="VDD"/>
+<wire x1="71.12" y1="149.86" x2="68.58" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="SUPPLY24" gate="G$1" pin="+3.3V"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -19157,10 +19370,288 @@ suit driving LEDs</text>
 <instance part="X1" gate="G$1" x="139.7" y="81.28"/>
 <instance part="FRAME5" gate="G$1" x="0" y="0"/>
 <instance part="FRAME5" gate="G$2" x="325.12" y="0"/>
+<instance part="SUPPLY1" gate="G$1" x="208.28" y="218.44" smashed="yes">
+<attribute name="VALUE" x="208.915" y="221.615" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="SUPPLY3" gate="G$1" x="261.62" y="218.44" smashed="yes">
+<attribute name="VALUE" x="262.255" y="221.615" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="SUPPLY9" gate="G$1" x="203.2" y="218.44" smashed="yes">
+<attribute name="VALUE" x="203.835" y="221.615" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="SUPPLY14" gate="G$1" x="259.08" y="218.44" smashed="yes">
+<attribute name="VALUE" x="259.715" y="221.615" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND8" gate="1" x="210.82" y="215.9" rot="R180"/>
+<instance part="GND9" gate="1" x="233.68" y="215.9" rot="R180"/>
+<instance part="GND10" gate="1" x="276.86" y="215.9" rot="R180"/>
+<instance part="GND11" gate="1" x="162.56" y="170.18" rot="R270"/>
+<instance part="GND12" gate="1" x="162.56" y="147.32" rot="R270"/>
+<instance part="GND13" gate="1" x="162.56" y="132.08" rot="R270"/>
+<instance part="GND14" gate="1" x="213.36" y="78.74"/>
+<instance part="GND15" gate="1" x="233.68" y="78.74"/>
+<instance part="GND16" gate="1" x="254" y="78.74"/>
+<instance part="GND17" gate="1" x="302.26" y="104.14" rot="R90"/>
+<instance part="GND18" gate="1" x="302.26" y="127" rot="R90"/>
+<instance part="GND19" gate="1" x="302.26" y="149.86" rot="R90"/>
+<instance part="GND20" gate="1" x="302.26" y="165.1" rot="R90"/>
+<instance part="SUPPLY2" gate="G$1" x="261.62" y="76.2" smashed="yes" rot="R180">
+<attribute name="VALUE" x="260.985" y="73.025" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="SUPPLY4" gate="G$1" x="160.02" y="162.56" smashed="yes" rot="R90">
+<attribute name="VALUE" x="156.845" y="163.195" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="SUPPLY5" gate="G$1" x="160.02" y="119.38" smashed="yes" rot="R90">
+<attribute name="VALUE" x="156.845" y="120.015" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="SUPPLY6" gate="G$1" x="160.02" y="177.8" smashed="yes" rot="R90">
+<attribute name="VALUE" x="156.845" y="178.435" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="SUPPLY7" gate="G$1" x="160.02" y="106.68" smashed="yes" rot="R90">
+<attribute name="VALUE" x="156.845" y="107.315" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="SUPPLY8" gate="G$1" x="160.02" y="121.92" smashed="yes" rot="R90">
+<attribute name="VALUE" x="156.845" y="122.555" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="SUPPLY10" gate="G$1" x="309.88" y="116.84" smashed="yes" rot="R270">
+<attribute name="VALUE" x="313.055" y="116.205" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY11" gate="G$1" x="309.88" y="134.62" smashed="yes" rot="R270">
+<attribute name="VALUE" x="313.055" y="133.985" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY12" gate="G$1" x="309.88" y="172.72" smashed="yes" rot="R270">
+<attribute name="VALUE" x="313.055" y="172.085" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY13" gate="G$1" x="309.88" y="167.64" smashed="yes" rot="R270">
+<attribute name="VALUE" x="313.055" y="167.005" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY15" gate="G$1" x="309.88" y="187.96" smashed="yes" rot="R270">
+<attribute name="VALUE" x="313.055" y="187.325" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY16" gate="G$1" x="309.88" y="175.26" smashed="yes" rot="R270">
+<attribute name="VALUE" x="313.055" y="174.625" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY17" gate="G$1" x="309.88" y="124.46" smashed="yes" rot="R270">
+<attribute name="VALUE" x="313.055" y="123.825" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY18" gate="G$1" x="309.88" y="182.88" smashed="yes" rot="R270">
+<attribute name="VALUE" x="313.055" y="182.245" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY19" gate="G$1" x="309.88" y="180.34" smashed="yes" rot="R270">
+<attribute name="VALUE" x="313.055" y="179.705" size="1.778" layer="96"/>
+</instance>
+<instance part="SB1" gate="G$1" x="302.26" y="185.42"/>
+<instance part="SUPPLY20" gate="G$1" x="309.88" y="185.42" smashed="yes" rot="R270">
+<attribute name="VALUE" x="313.055" y="184.785" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY25" gate="G$1" x="256.54" y="76.2" smashed="yes" rot="R180">
+<attribute name="VALUE" x="255.905" y="73.025" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="SUPPLY26" gate="G$1" x="218.44" y="76.2" smashed="yes" rot="R180">
+<attribute name="VALUE" x="217.805" y="73.025" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="SUPPLY27" gate="G$1" x="208.28" y="76.2" smashed="yes" rot="R180">
+<attribute name="VALUE" x="207.645" y="73.025" size="1.778" layer="96" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
+<net name="GND" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="99_GND"/>
+<pinref part="GND8" gate="1" pin="GND"/>
+<wire x1="210.82" y1="213.36" x2="210.82" y2="210.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="90_GND"/>
+<pinref part="GND9" gate="1" pin="GND"/>
+<wire x1="233.68" y1="213.36" x2="233.68" y2="210.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="73_GND"/>
+<pinref part="GND10" gate="1" pin="GND"/>
+<wire x1="276.86" y1="213.36" x2="276.86" y2="210.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="118_GND"/>
+<pinref part="GND11" gate="1" pin="GND"/>
+<wire x1="165.1" y1="170.18" x2="167.64" y2="170.18" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="127_GND"/>
+<pinref part="GND12" gate="1" pin="GND"/>
+<wire x1="165.1" y1="147.32" x2="167.64" y2="147.32" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="133_GND"/>
+<pinref part="GND13" gate="1" pin="GND"/>
+<wire x1="165.1" y1="132.08" x2="167.64" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="11_GND"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+<wire x1="213.36" y1="81.28" x2="213.36" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="19_GND"/>
+<pinref part="GND15" gate="1" pin="GND"/>
+<wire x1="233.68" y1="81.28" x2="233.68" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="27_GND"/>
+<pinref part="GND16" gate="1" pin="GND"/>
+<wire x1="254" y1="81.28" x2="254" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="37_GND"/>
+<pinref part="GND17" gate="1" pin="GND"/>
+<wire x1="299.72" y1="104.14" x2="297.18" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="46_GND"/>
+<pinref part="GND18" gate="1" pin="GND"/>
+<wire x1="299.72" y1="127" x2="297.18" y2="127" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="55_GND"/>
+<pinref part="GND19" gate="1" pin="GND"/>
+<wire x1="299.72" y1="149.86" x2="297.18" y2="149.86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="61_GND"/>
+<pinref part="GND20" gate="1" pin="GND"/>
+<wire x1="299.72" y1="165.1" x2="297.18" y2="165.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+3.3V" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="100_VCCO_1"/>
+<pinref part="SUPPLY1" gate="G$1" pin="+3.3V"/>
+<wire x1="208.28" y1="215.9" x2="208.28" y2="210.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="79_VCCO_1"/>
+<pinref part="SUPPLY3" gate="G$1" pin="+3.3V"/>
+<wire x1="261.62" y1="215.9" x2="261.62" y2="210.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="121_VCCO_0"/>
+<pinref part="SUPPLY4" gate="G$1" pin="+3.3V"/>
+<wire x1="162.56" y1="162.56" x2="167.64" y2="162.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="138_VCCO_0"/>
+<pinref part="SUPPLY5" gate="G$1" pin="+3.3V"/>
+<wire x1="162.56" y1="119.38" x2="167.64" y2="119.38" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="143_IO_L10N_0/HSWAP"/>
+<pinref part="SUPPLY7" gate="G$1" pin="+3.3V"/>
+<wire x1="162.56" y1="106.68" x2="167.64" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="42_VCCO_2"/>
+<pinref part="SUPPLY10" gate="G$1" pin="+3.3V"/>
+<wire x1="307.34" y1="116.84" x2="297.18" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="49_VCCO_2"/>
+<pinref part="SUPPLY11" gate="G$1" pin="+3.3V"/>
+<wire x1="307.34" y1="134.62" x2="297.18" y2="134.62" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="64_VCCO_2"/>
+<pinref part="SUPPLY12" gate="G$1" pin="+3.3V"/>
+<wire x1="307.34" y1="172.72" x2="297.18" y2="172.72" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="62_IO_L08P_2/M0"/>
+<pinref part="SUPPLY13" gate="G$1" pin="+3.3V"/>
+<wire x1="307.34" y1="167.64" x2="297.18" y2="167.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="70_IO_L10P_2/VS0/A17"/>
+<pinref part="SUPPLY15" gate="G$1" pin="+3.3V"/>
+<wire x1="307.34" y1="187.96" x2="297.18" y2="187.96" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="68_IO_L09N_2/VS1/A18"/>
+<pinref part="SUPPLY18" gate="G$1" pin="+3.3V"/>
+<wire x1="297.18" y1="182.88" x2="307.34" y2="182.88" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="67_IO_L09P_2/VS2/A19"/>
+<pinref part="SUPPLY19" gate="G$1" pin="+3.3V"/>
+<wire x1="297.18" y1="180.34" x2="307.34" y2="180.34" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SB1" gate="G$1" pin="2"/>
+<pinref part="SUPPLY20" gate="G$1" pin="+3.3V"/>
+<wire x1="307.34" y1="185.42" x2="304.8" y2="185.42" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="28_VCCO_3"/>
+<pinref part="SUPPLY25" gate="G$1" pin="+3.3V"/>
+<wire x1="256.54" y1="78.74" x2="256.54" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="13_VCCO_3"/>
+<pinref part="SUPPLY26" gate="G$1" pin="+3.3V"/>
+<wire x1="218.44" y1="78.74" x2="218.44" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+2.5V" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="102_VCCAUX"/>
+<pinref part="SUPPLY9" gate="G$1" pin="+2.5V"/>
+<wire x1="203.2" y1="215.9" x2="203.2" y2="210.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="30_VCCAUX"/>
+<pinref part="SUPPLY2" gate="G$1" pin="+2.5V"/>
+<wire x1="261.62" y1="78.74" x2="261.62" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="137_VCCAUX"/>
+<pinref part="SUPPLY8" gate="G$1" pin="+2.5V"/>
+<wire x1="162.56" y1="121.92" x2="167.64" y2="121.92" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="65_VCCAUX"/>
+<pinref part="SUPPLY16" gate="G$1" pin="+2.5V"/>
+<wire x1="307.34" y1="175.26" x2="297.18" y2="175.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+1.2V" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="80_VCCINT"/>
+<pinref part="SUPPLY14" gate="G$1" pin="+1.2V"/>
+<wire x1="259.08" y1="215.9" x2="259.08" y2="210.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="115_VCCINT"/>
+<pinref part="SUPPLY6" gate="G$1" pin="+1.2V"/>
+<wire x1="162.56" y1="177.8" x2="167.64" y2="177.8" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="45_VCCINT"/>
+<pinref part="SUPPLY17" gate="G$1" pin="+1.2V"/>
+<wire x1="307.34" y1="124.46" x2="297.18" y2="124.46" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="9_VCCINT"/>
+<pinref part="SUPPLY27" gate="G$1" pin="+1.2V"/>
+<wire x1="208.28" y1="78.74" x2="208.28" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$27" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="69_IP"/>
+<pinref part="SB1" gate="G$1" pin="1"/>
+<wire x1="299.72" y1="185.42" x2="297.18" y2="185.42" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
