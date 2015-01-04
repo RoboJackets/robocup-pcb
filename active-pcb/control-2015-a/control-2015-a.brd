@@ -3685,6 +3685,12 @@ design rules under a new name.</description>
 <contactref element="U$3" pad="14"/>
 <contactref element="U$3" pad="17"/>
 <contactref element="U$3" pad="20"/>
+<contactref element="S2" pad="1"/>
+<contactref element="S2" pad="2"/>
+<contactref element="S2" pad="3"/>
+<contactref element="S2" pad="4"/>
+<contactref element="S1" pad="C1"/>
+<contactref element="S1" pad="C2"/>
 <wire x1="78.375" y1="112.39" x2="79.875" y2="112.39" width="0" layer="19" extent="1-1"/>
 <wire x1="79.375" y1="110.49" x2="79.875" y2="112.39" width="0" layer="19" extent="1-1"/>
 <wire x1="79.375" y1="108.59" x2="79.375" y2="110.49" width="0" layer="19" extent="1-1"/>
@@ -3702,6 +3708,8 @@ design rules under a new name.</description>
 <wire x1="55.135" y1="74.06" x2="52.8862" y2="100.9517" width="0" layer="19" extent="1-16"/>
 <wire x1="55.135" y1="73.41" x2="55.135" y2="74.06" width="0" layer="19" extent="16-16"/>
 <wire x1="47.735" y1="72.11" x2="55.135" y2="73.41" width="0" layer="19" extent="16-16"/>
+<wire x1="31.75" y1="77.47" x2="47.735" y2="72.11" width="0" layer="19" extent="16-16"/>
+<wire x1="24.13" y1="77.47" x2="31.75" y2="77.47" width="0" layer="19" extent="1-1"/>
 <wire x1="46.55" y1="55.05" x2="47.735" y2="72.11" width="0" layer="19" extent="1-16"/>
 <wire x1="51.05" y1="55.05" x2="46.55" y2="55.05" width="0" layer="19" extent="1-1"/>
 <wire x1="59.55" y1="55.05" x2="51.05" y2="55.05" width="0" layer="19" extent="1-1"/>
@@ -3715,7 +3723,11 @@ design rules under a new name.</description>
 <wire x1="40.2" y1="48.7" x2="46.55" y2="55.05" width="0" layer="19" extent="1-1"/>
 <wire x1="40.2" y1="44.2" x2="40.2" y2="48.7" width="0" layer="19" extent="1-1"/>
 <wire x1="40.2" y1="41.2" x2="40.2" y2="44.2" width="0" layer="19" extent="1-1"/>
-<wire x1="57.875" y1="8" x2="55.05" y2="33.85" width="0" layer="19" extent="1-1"/>
+<wire x1="55.245" y1="24.62" x2="55.05" y2="33.85" width="0" layer="19" extent="1-1"/>
+<wire x1="52.705" y1="24.62" x2="55.245" y2="24.62" width="0" layer="19" extent="1-1"/>
+<wire x1="50.165" y1="24.62" x2="52.705" y2="24.62" width="0" layer="19" extent="1-1"/>
+<wire x1="47.625" y1="24.62" x2="50.165" y2="24.62" width="0" layer="19" extent="1-1"/>
+<wire x1="57.875" y1="8" x2="55.245" y2="24.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+5V">
 <contactref element="KIT1" pad="VIN"/>
