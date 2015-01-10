@@ -3405,6 +3405,26 @@ In this library you will find circuit elements that are used for getting measure
 </package>
 </packages>
 </library>
+<library name="RoboJackets-Connectors">
+<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
+&lt;hr&gt;
+&lt;h1&gt;RoboJackets EAGLE Libraries - Connectors&lt;/h1&gt;&lt;/br&gt;
+&lt;p&gt;
+In this library you will find all the connectors used on any of our boards.
+&lt;/p&gt;</description>
+<packages>
+<package name="B2PS">
+<wire x1="-2" y1="0" x2="-2" y2="-4" width="0.127" layer="21"/>
+<wire x1="6" y1="-4" x2="6" y2="0" width="0.127" layer="21"/>
+<wire x1="-2" y1="-4" x2="-2" y2="-7.2" width="0.127" layer="21"/>
+<wire x1="-2" y1="-7.2" x2="6" y2="-7.2" width="0.127" layer="21"/>
+<wire x1="6" y1="-7.2" x2="6" y2="-4" width="0.127" layer="21"/>
+<pad name="2" x="3.98" y="0" drill="1.65" rot="R180"/>
+<pad name="1" x="0.02" y="0" drill="1.65" shape="square" rot="R180"/>
+<text x="1.92" y="1.85" size="1" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3643,6 +3663,10 @@ design rules under a new name.</description>
 <element name="IC4" library="RoboJackets-RF" package="QLP20" value="CC1101" x="22.225" y="110.49" rot="R180"/>
 <element name="U$3" library="RoboJackets-RF" package="QFN20" value="NRF24L01SMD" x="79.375" y="110.49"/>
 <element name="SB1" library="RoboJackets-Switches" package="SB0603" value="SOLDERBRIDGESB0603" x="65.405" y="51.435"/>
+<element name="J1" library="RoboJackets-Connectors" package="B2PS" value="B2PS-VH(LF)(SN)" x="-12.065" y="7.62">
+<attribute name="PINS" value="2" x="-12.065" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="PIN_PITCH" value="3.96 mm" x="-12.065" y="7.62" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="VB">
