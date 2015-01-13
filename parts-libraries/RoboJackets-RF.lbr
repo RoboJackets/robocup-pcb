@@ -258,7 +258,7 @@ In this library you will find circuit elements directly involved in controlling 
 <smd name="P$30" x="-2.5" y="-0.75" dx="0.8" dy="0.2846" layer="1"/>
 <smd name="P$31" x="-2.5" y="-1.25" dx="0.8" dy="0.2846" layer="1"/>
 <smd name="P$32" x="-2.5" y="-1.75" dx="0.8" dy="0.2846" layer="1"/>
-<smd name="P$33" x="0" y="0" dx="2.5" dy="2.5" layer="1"/>
+<smd name="P$33" x="0" y="0" dx="2.5" dy="2.5" layer="1" thermals="no"/>
 </package>
 <package name="QFN20_ALT1">
 <wire x1="-1.5" y1="2" x2="-2" y2="1.5" width="0.2032" layer="21"/>
@@ -3729,6 +3729,37 @@ In this library you will find circuit elements directly involved in controlling 
 <text x="-17.78" y="13.462" size="1.6764" layer="95">&gt;NAME</text>
 <text x="9.144" y="13.462" size="1.6764" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="CC1201">
+<wire x1="-30.48" y1="22.86" x2="-30.48" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="-30.48" y1="-25.4" x2="30.48" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="30.48" y1="-25.4" x2="30.48" y2="22.86" width="0.254" layer="94"/>
+<wire x1="30.48" y1="22.86" x2="-30.48" y2="22.86" width="0.254" layer="94"/>
+<pin name="!RESET!" x="-35.56" y="15.24" visible="pin" length="middle" direction="in"/>
+<pin name="GPIO3" x="-35.56" y="10.16" visible="pin" length="middle"/>
+<pin name="GPIO2" x="-35.56" y="7.62" visible="pin" length="middle"/>
+<pin name="VDD" x="-35.56" y="20.32" visible="pin" length="middle" direction="pwr"/>
+<pin name="SO(GPIO1)" x="-35.56" y="0" visible="pin" length="middle"/>
+<pin name="GPIO0" x="-35.56" y="5.08" visible="pin" length="middle"/>
+<pin name="!CS!" x="-35.56" y="-7.62" visible="pin" length="middle" direction="in"/>
+<pin name="RBIAS" x="35.56" y="-22.86" visible="pin" length="middle" direction="pas" rot="R180"/>
+<pin name="PA" x="35.56" y="-17.78" visible="pin" length="middle" rot="R180"/>
+<pin name="TRX_SW" x="35.56" y="-12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="LNA_P" x="33.02" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="LNA_N" x="33.02" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="DCPL_VCO" x="33.02" y="7.62" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="DCPL" x="33.02" y="10.16" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="SI" x="-35.56" y="-2.54" visible="pin" length="middle" direction="in"/>
+<pin name="SCK" x="-35.56" y="-5.08" visible="pin" length="middle" direction="in"/>
+<pin name="LPF0" x="33.02" y="15.24" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="LPF1" x="33.02" y="20.32" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="DCPL_PFD_CHP" x="33.02" y="2.54" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="DCPL_XOSC" x="33.02" y="5.08" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="XOSC_Q1" x="-33.02" y="-12.7" visible="pin" length="short"/>
+<pin name="XOSC_Q2" x="-33.02" y="-17.78" visible="pin" length="short"/>
+<text x="-30.48" y="23.495" size="2.54" layer="95" ratio="10">&gt;NAME</text>
+<text x="0" y="0" size="2.54" layer="96" ratio="10" align="center">&gt;VALUE</text>
+<pin name="GND_PAD" x="-35.56" y="-22.86" visible="pin" length="middle" direction="pwr"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="0896BM15A0001" prefix="U">
@@ -3957,6 +3988,44 @@ This is the very popular, low cost, very low power RF transceiver from Nordic Se
 <connect gate="G$1" pin="VSS@8" pad="8"/>
 <connect gate="G$1" pin="XC1" pad="10"/>
 <connect gate="G$1" pin="XC2" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CC1201">
+<description>http://www.ti.com/lit/ds/symlink/cc1201.pdf</description>
+<gates>
+<gate name="G$1" symbol="CC1201" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN-32">
+<connects>
+<connect gate="G$1" pin="!CS!" pad="P$11"/>
+<connect gate="G$1" pin="!RESET!" pad="P$2"/>
+<connect gate="G$1" pin="DCPL" pad="P$6"/>
+<connect gate="G$1" pin="DCPL_PFD_CHP" pad="P$26"/>
+<connect gate="G$1" pin="DCPL_VCO" pad="P$21"/>
+<connect gate="G$1" pin="DCPL_XOSC" pad="P$29"/>
+<connect gate="G$1" pin="GND_PAD" pad="P$33"/>
+<connect gate="G$1" pin="GPIO0" pad="P$10"/>
+<connect gate="G$1" pin="GPIO2" pad="P$4"/>
+<connect gate="G$1" pin="GPIO3" pad="P$3"/>
+<connect gate="G$1" pin="LNA_N" pad="P$20"/>
+<connect gate="G$1" pin="LNA_P" pad="P$19"/>
+<connect gate="G$1" pin="LPF0" pad="P$23"/>
+<connect gate="G$1" pin="LPF1" pad="P$24"/>
+<connect gate="G$1" pin="PA" pad="P$17"/>
+<connect gate="G$1" pin="RBIAS" pad="P$14"/>
+<connect gate="G$1" pin="SCK" pad="P$8"/>
+<connect gate="G$1" pin="SI" pad="P$7"/>
+<connect gate="G$1" pin="SO(GPIO1)" pad="P$9"/>
+<connect gate="G$1" pin="TRX_SW" pad="P$18"/>
+<connect gate="G$1" pin="VDD" pad="P$1 P$5 P$12 P$13 P$15 P$22 P$25 P$27 P$28"/>
+<connect gate="G$1" pin="XOSC_Q1" pad="P$30"/>
+<connect gate="G$1" pin="XOSC_Q2" pad="P$31"/>
 </connects>
 <technologies>
 <technology name=""/>
