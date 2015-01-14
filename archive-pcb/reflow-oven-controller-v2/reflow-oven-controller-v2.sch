@@ -6670,17 +6670,17 @@ In this library you will find the larger circuit elements that are used to contr
 <part name="SP1" library="adafruit" deviceset="SPEAKER" device="/PS12" value="Speaker"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="R1" library="resistor" deviceset="R-US_" device="M0805" value="60"/>
-<part name="VOLTREG" library="RoboJackets-ICs" deviceset="78M?S" device="XX"/>
+<part name="VREG" library="RoboJackets-ICs" deviceset="78M?S" device="XX"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="VSS3" library="supply1" deviceset="VSS" device=""/>
 <part name="LED" library="pinhead" deviceset="PINHD-1X4" device="" value="RGB Led Common Anode"/>
 <part name="R2" library="resistor" deviceset="R-US_" device="R0805"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="JP1" library="pinhead" deviceset="PINHD-1X2" device="/90" value="Relay Signal"/>
-<part name="JP2" library="pinhead" deviceset="PINHD-1X2" device="/90" value="5VIN"/>
+<part name="JP1" library="pinhead" deviceset="PINHD-1X2" device="/90" value="CTRL_OUT"/>
+<part name="JP2" library="pinhead" deviceset="PINHD-1X2" device="/90" value="VIN"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="JP4" library="adafruit" deviceset="PINHD-1X18" device=""/>
-<part name="VSSSEL" library="jumper" deviceset="SJ2W" device=""/>
+<part name="VSS_SEL" library="jumper" deviceset="SJ2W" device=""/>
 <part name="RST" library="con-molex" deviceset="22-23-2021" device=""/>
 <part name="SERIAL" library="con-molex" deviceset="22-23-2021" device="" value=""/>
 <part name="A6-SEL" library="jumper" deviceset="SJ2W" device=""/>
@@ -6704,7 +6704,7 @@ In this library you will find the larger circuit elements that are used to contr
 <instance part="SP1" gate="S1" x="88.9" y="58.42"/>
 <instance part="GND5" gate="1" x="236.22" y="60.96"/>
 <instance part="R1" gate="G$1" x="226.06" y="71.12"/>
-<instance part="VOLTREG" gate="A" x="129.54" y="137.16"/>
+<instance part="VREG" gate="A" x="129.54" y="137.16"/>
 <instance part="GND9" gate="1" x="134.62" y="124.46" rot="R90"/>
 <instance part="VSS3" gate="G$1" x="220.98" y="50.8" rot="R180"/>
 <instance part="LED" gate="A" x="241.3" y="142.24" rot="R90"/>
@@ -6714,7 +6714,7 @@ In this library you will find the larger circuit elements that are used to contr
 <instance part="JP2" gate="G$1" x="274.32" y="149.86"/>
 <instance part="GND10" gate="1" x="259.08" y="139.7"/>
 <instance part="JP4" gate="A" x="63.5" y="104.14" rot="R180"/>
-<instance part="VSSSEL" gate="G$1" x="162.56" y="137.16" rot="R90"/>
+<instance part="VSS_SEL" gate="G$1" x="162.56" y="137.16" rot="R90"/>
 <instance part="RST" gate="-1" x="276.86" y="101.6"/>
 <instance part="RST" gate="-2" x="276.86" y="99.06"/>
 <instance part="SERIAL" gate="-1" x="279.4" y="109.22"/>
@@ -6767,7 +6767,7 @@ In this library you will find the larger circuit elements that are used to contr
 <wire x1="236.22" y1="68.58" x2="246.38" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="VOLTREG" gate="A" pin="GND"/>
+<pinref part="VREG" gate="A" pin="GND"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 <wire x1="129.54" y1="129.54" x2="129.54" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="124.46" x2="132.08" y2="124.46" width="0.1524" layer="91"/>
@@ -7005,7 +7005,7 @@ In this library you will find the larger circuit elements that are used to contr
 <wire x1="218.44" y1="96.52" x2="218.44" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="VSSSEL" gate="G$1" pin="2"/>
+<pinref part="VSS_SEL" gate="G$1" pin="2"/>
 <wire x1="162.56" y1="132.08" x2="162.56" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="129.54" x2="170.18" y2="129.54" width="0.1524" layer="91"/>
 <label x="167.64" y="129.54" size="1.778" layer="95"/>
@@ -7139,9 +7139,9 @@ In this library you will find the larger circuit elements that are used to contr
 <wire x1="271.78" y1="152.4" x2="182.88" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="152.4" x2="114.3" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="152.4" x2="114.3" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="VOLTREG" gate="A" pin="IN"/>
+<pinref part="VREG" gate="A" pin="IN"/>
 <wire x1="114.3" y1="137.16" x2="121.92" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="VSSSEL" gate="G$1" pin="3"/>
+<pinref part="VSS_SEL" gate="G$1" pin="3"/>
 <wire x1="167.64" y1="137.16" x2="182.88" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="137.16" x2="182.88" y2="152.4" width="0.1524" layer="91"/>
 <junction x="182.88" y="152.4"/>
@@ -7223,9 +7223,9 @@ In this library you will find the larger circuit elements that are used to contr
 </net>
 <net name="REGOUT" class="0">
 <segment>
-<pinref part="VOLTREG" gate="A" pin="OUT"/>
+<pinref part="VREG" gate="A" pin="OUT"/>
 <label x="144.78" y="139.7" size="1.778" layer="95"/>
-<pinref part="VSSSEL" gate="G$1" pin="1"/>
+<pinref part="VSS_SEL" gate="G$1" pin="1"/>
 <wire x1="137.16" y1="137.16" x2="157.48" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
