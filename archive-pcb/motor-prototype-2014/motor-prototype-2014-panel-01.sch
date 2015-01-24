@@ -51575,50 +51575,6 @@ In this library you will find circuit elements directly involved in controlling 
 <wire x1="-7.366" y1="-1.778" x2="7.366" y2="-1.778" width="0.127" layer="21"/>
 <text x="0" y="2.54" size="1.27" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
 </package>
-<package name="QLP20">
-<circle x="-1.5882625" y="1.5882625" radius="0.0424" width="0.127" layer="21"/>
-<wire x1="-1.85" y1="2" x2="1.85" y2="2" width="0.127" layer="21"/>
-<wire x1="1.85" y1="2" x2="2" y2="1.85" width="0.127" layer="21"/>
-<wire x1="2" y1="1.85" x2="2" y2="-1.85" width="0.127" layer="21"/>
-<wire x1="2" y1="-1.85" x2="1.85" y2="-2" width="0.127" layer="21"/>
-<wire x1="1.85" y1="-2" x2="-1.85" y2="-2" width="0.127" layer="21"/>
-<wire x1="-1.85" y1="-2" x2="-2" y2="-1.85" width="0.127" layer="21"/>
-<wire x1="-2" y1="-1.85" x2="-2" y2="1.85" width="0.127" layer="21"/>
-<wire x1="-2" y1="1.85" x2="-1.85" y2="2" width="0.127" layer="21"/>
-<rectangle x1="-0.325" y1="0.65" x2="0.325" y2="1.05" layer="31"/>
-<rectangle x1="-1.175" y1="-0.2" x2="-0.525" y2="0.2" layer="31" rot="R90"/>
-<rectangle x1="0.525" y1="-0.2" x2="1.175" y2="0.2" layer="31" rot="R90"/>
-<rectangle x1="-0.325" y1="-1.05" x2="0.325" y2="-0.65" layer="31"/>
-<smd name="1" x="-1.78" y="1" dx="0.76" dy="0.28" layer="1"/>
-<smd name="2" x="-1.78" y="0.5" dx="0.76" dy="0.28" layer="1"/>
-<smd name="3" x="-1.78" y="0" dx="0.76" dy="0.28" layer="1"/>
-<smd name="4" x="-1.78" y="-0.5" dx="0.76" dy="0.28" layer="1"/>
-<smd name="5" x="-1.78" y="-1" dx="0.76" dy="0.28" layer="1"/>
-<smd name="6" x="-1" y="-1.78" dx="0.76" dy="0.28" layer="1" rot="R90"/>
-<smd name="7" x="-0.5" y="-1.78" dx="0.76" dy="0.28" layer="1" rot="R90"/>
-<smd name="8" x="0" y="-1.78" dx="0.76" dy="0.28" layer="1" rot="R90"/>
-<smd name="9" x="0.5" y="-1.78" dx="0.76" dy="0.28" layer="1" rot="R90"/>
-<smd name="10" x="1" y="-1.78" dx="0.76" dy="0.28" layer="1" rot="R90"/>
-<smd name="11" x="1.78" y="-1" dx="0.76" dy="0.28" layer="1" rot="R180"/>
-<smd name="12" x="1.78" y="-0.5" dx="0.76" dy="0.28" layer="1" rot="R180"/>
-<smd name="13" x="1.78" y="0" dx="0.76" dy="0.28" layer="1" rot="R180"/>
-<smd name="14" x="1.78" y="0.5" dx="0.76" dy="0.28" layer="1" rot="R180"/>
-<smd name="15" x="1.78" y="1" dx="0.76" dy="0.28" layer="1" rot="R180"/>
-<smd name="16" x="1" y="1.78" dx="0.76" dy="0.28" layer="1" rot="R270"/>
-<smd name="17" x="0.5" y="1.78" dx="0.76" dy="0.28" layer="1" rot="R270"/>
-<smd name="18" x="0" y="1.78" dx="0.76" dy="0.28" layer="1" rot="R270"/>
-<smd name="19" x="-0.5" y="1.78" dx="0.76" dy="0.28" layer="1" rot="R270"/>
-<smd name="20" x="-1" y="1.78" dx="0.76" dy="0.28" layer="1" rot="R270"/>
-<smd name="GND" x="0" y="0" dx="2.4" dy="2.4" layer="1" cream="no"/>
-<pad name="GND1" x="0" y="0" drill="0.3" stop="no" thermals="no"/>
-<pad name="GND2" x="-0.635" y="0.635" drill="0.3" stop="no" thermals="no"/>
-<pad name="GND3" x="0.635" y="0.635" drill="0.3" stop="no" thermals="no"/>
-<pad name="GND4" x="-0.635" y="-0.635" drill="0.3" stop="no" thermals="no"/>
-<pad name="GND5" x="0.635" y="-0.635" drill="0.3" stop="no" thermals="no"/>
-<text x="-2" y="2.5" size="1" layer="25" font="vector" ratio="10">&gt;NAME</text>
-<text x="0" y="-2.54" size="1" layer="27" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
-<rectangle x1="-1.905" y1="-1.905" x2="1.905" y2="1.905" layer="39"/>
-</package>
 <package name="QFN20_ALT1">
 <wire x1="-1.5" y1="2" x2="-2" y2="1.5" width="0.2032" layer="21"/>
 <wire x1="-0.7561" y1="2.0208" x2="-0.7561" y2="-1.967" width="0.0126" layer="49"/>
@@ -54961,33 +54917,6 @@ In this library you will find circuit elements directly involved in controlling 
 <pin name="ANT" x="-2.54" y="0" visible="pin" length="short" direction="pas"/>
 <wire x1="0" y1="7.62" x2="0" y2="0" width="0.254" layer="97"/>
 </symbol>
-<symbol name="CC1101">
-<wire x1="-17.78" y1="-25.4" x2="-17.78" y2="25.4" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="25.4" x2="17.78" y2="25.4" width="0.254" layer="94"/>
-<wire x1="17.78" y1="25.4" x2="17.78" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-25.4" x2="-17.78" y2="-25.4" width="0.254" layer="94"/>
-<pin name="AVDD1" x="20.32" y="22.86" visible="pin" length="short" rot="R180"/>
-<pin name="AVDD2" x="20.32" y="17.78" visible="pin" length="short" rot="R180"/>
-<pin name="AVDD3" x="20.32" y="12.7" visible="pin" length="short" rot="R180"/>
-<pin name="AVDD4" x="20.32" y="7.62" visible="pin" length="short" rot="R180"/>
-<pin name="CSN" x="-20.32" y="-7.62" visible="pin" length="short"/>
-<pin name="DCOUPL" x="-20.32" y="-2.54" visible="pin" length="short"/>
-<pin name="DGUARD" x="-20.32" y="-12.7" visible="pin" length="short"/>
-<pin name="DVDD" x="-20.32" y="2.54" visible="pin" length="short"/>
-<pin name="GND" x="20.32" y="-22.86" visible="pin" length="short" rot="R180"/>
-<pin name="GDO0(ATEST)" x="-20.32" y="-17.78" visible="pin" length="short"/>
-<pin name="GDO2" x="-20.32" y="12.7" visible="pin" length="short"/>
-<pin name="RBIAS" x="20.32" y="2.54" visible="pin" length="short" rot="R180"/>
-<pin name="RF_N" x="20.32" y="-2.54" visible="pin" length="short" rot="R180"/>
-<pin name="RF_P" x="20.32" y="-7.62" visible="pin" length="short" rot="R180"/>
-<pin name="SCLK" x="-20.32" y="22.86" visible="pin" length="short"/>
-<pin name="SI" x="-20.32" y="7.62" visible="pin" length="short"/>
-<pin name="SO(GDO1)" x="-20.32" y="17.78" visible="pin" length="short"/>
-<pin name="XOSC_Q1" x="20.32" y="-17.78" visible="pin" length="short" rot="R180"/>
-<pin name="XOSC_Q2" x="20.32" y="-12.7" visible="pin" length="short" rot="R180"/>
-<text x="-17.78" y="26.67" size="2.54" layer="95" font="vector" ratio="10">&gt;NAME</text>
-<text x="0" y="0" size="2.54" layer="96" font="vector" ratio="15" align="center">&gt;VALUE</text>
-</symbol>
 <symbol name="NRF24L01-1">
 <wire x1="-17.78" y1="12.7" x2="17.78" y2="12.7" width="0.254" layer="94"/>
 <wire x1="17.78" y1="12.7" x2="17.78" y2="-12.7" width="0.254" layer="94"/>
@@ -55028,39 +54957,6 @@ In this library you will find circuit elements directly involved in controlling 
 <device name="T" package="ANT-916-CHP">
 <connects>
 <connect gate="G$1" pin="ANT" pad="ANT"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="CC1101" prefix="IC">
-<gates>
-<gate name="G$1" symbol="CC1101" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="QLP20">
-<connects>
-<connect gate="G$1" pin="AVDD1" pad="9"/>
-<connect gate="G$1" pin="AVDD2" pad="11"/>
-<connect gate="G$1" pin="AVDD3" pad="14"/>
-<connect gate="G$1" pin="AVDD4" pad="15"/>
-<connect gate="G$1" pin="CSN" pad="7"/>
-<connect gate="G$1" pin="DCOUPL" pad="5"/>
-<connect gate="G$1" pin="DGUARD" pad="18"/>
-<connect gate="G$1" pin="DVDD" pad="4"/>
-<connect gate="G$1" pin="GDO0(ATEST)" pad="6"/>
-<connect gate="G$1" pin="GDO2" pad="3"/>
-<connect gate="G$1" pin="GND" pad="16 19 GND GND1 GND2 GND3 GND4 GND5"/>
-<connect gate="G$1" pin="RBIAS" pad="17"/>
-<connect gate="G$1" pin="RF_N" pad="13"/>
-<connect gate="G$1" pin="RF_P" pad="12"/>
-<connect gate="G$1" pin="SCLK" pad="1"/>
-<connect gate="G$1" pin="SI" pad="20"/>
-<connect gate="G$1" pin="SO(GDO1)" pad="2"/>
-<connect gate="G$1" pin="XOSC_Q1" pad="8"/>
-<connect gate="G$1" pin="XOSC_Q2" pad="10"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -56122,7 +56018,6 @@ In this library you will find circuit elements that are used for getting measure
 <part name="SERIAL" library="con-molex" deviceset="22-23-2021" device="" value=""/>
 <part name="A6-SEL" library="jumper" deviceset="SJ2W" device=""/>
 <part name="916MHZ" library="RoboJackets-RF" deviceset="ANT-916-CHP-?" device="T"/>
-<part name="IC5" library="RoboJackets-RF" deviceset="CC1101" device=""/>
 <part name="U$9" library="RoboJackets-RF" deviceset="NRF24L01" device="ALT1"/>
 <part name="U$10" library="RoboJackets-RF" deviceset="NRF24L01" device="ALT2"/>
 <part name="U$11" library="RoboJackets-RF" deviceset="NRF24L01" device="SMD"/>
@@ -59046,7 +58941,6 @@ testing other circuits</text>
 </plain>
 <instances>
 <instance part="916MHZ" gate="G$1" x="17.78" y="35.56"/>
-<instance part="IC5" gate="G$1" x="55.88" y="50.8"/>
 <instance part="U$9" gate="G$1" x="119.38" y="76.2"/>
 <instance part="U$10" gate="G$1" x="193.04" y="78.74"/>
 <instance part="U$11" gate="G$1" x="119.38" y="17.78"/>

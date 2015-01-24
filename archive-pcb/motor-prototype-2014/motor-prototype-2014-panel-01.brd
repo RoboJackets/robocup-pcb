@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="15" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="5" fill="10" visible="no" active="yes"/>
@@ -14278,50 +14278,6 @@ In this library you will find circuit elements directly involved in controlling 
 <wire x1="-7.366" y1="-1.778" x2="7.366" y2="-1.778" width="0.127" layer="21"/>
 <text x="0" y="2.54" size="1.27" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
 </package>
-<package name="QLP20">
-<circle x="-1.5882625" y="1.5882625" radius="0.0424" width="0.127" layer="21"/>
-<wire x1="-1.85" y1="2" x2="1.85" y2="2" width="0.127" layer="21"/>
-<wire x1="1.85" y1="2" x2="2" y2="1.85" width="0.127" layer="21"/>
-<wire x1="2" y1="1.85" x2="2" y2="-1.85" width="0.127" layer="21"/>
-<wire x1="2" y1="-1.85" x2="1.85" y2="-2" width="0.127" layer="21"/>
-<wire x1="1.85" y1="-2" x2="-1.85" y2="-2" width="0.127" layer="21"/>
-<wire x1="-1.85" y1="-2" x2="-2" y2="-1.85" width="0.127" layer="21"/>
-<wire x1="-2" y1="-1.85" x2="-2" y2="1.85" width="0.127" layer="21"/>
-<wire x1="-2" y1="1.85" x2="-1.85" y2="2" width="0.127" layer="21"/>
-<rectangle x1="-0.325" y1="0.65" x2="0.325" y2="1.05" layer="31"/>
-<rectangle x1="-1.175" y1="-0.2" x2="-0.525" y2="0.2" layer="31" rot="R90"/>
-<rectangle x1="0.525" y1="-0.2" x2="1.175" y2="0.2" layer="31" rot="R90"/>
-<rectangle x1="-0.325" y1="-1.05" x2="0.325" y2="-0.65" layer="31"/>
-<smd name="1" x="-1.78" y="1" dx="0.76" dy="0.28" layer="1"/>
-<smd name="2" x="-1.78" y="0.5" dx="0.76" dy="0.28" layer="1"/>
-<smd name="3" x="-1.78" y="0" dx="0.76" dy="0.28" layer="1"/>
-<smd name="4" x="-1.78" y="-0.5" dx="0.76" dy="0.28" layer="1"/>
-<smd name="5" x="-1.78" y="-1" dx="0.76" dy="0.28" layer="1"/>
-<smd name="6" x="-1" y="-1.78" dx="0.76" dy="0.28" layer="1" rot="R90"/>
-<smd name="7" x="-0.5" y="-1.78" dx="0.76" dy="0.28" layer="1" rot="R90"/>
-<smd name="8" x="0" y="-1.78" dx="0.76" dy="0.28" layer="1" rot="R90"/>
-<smd name="9" x="0.5" y="-1.78" dx="0.76" dy="0.28" layer="1" rot="R90"/>
-<smd name="10" x="1" y="-1.78" dx="0.76" dy="0.28" layer="1" rot="R90"/>
-<smd name="11" x="1.78" y="-1" dx="0.76" dy="0.28" layer="1" rot="R180"/>
-<smd name="12" x="1.78" y="-0.5" dx="0.76" dy="0.28" layer="1" rot="R180"/>
-<smd name="13" x="1.78" y="0" dx="0.76" dy="0.28" layer="1" rot="R180"/>
-<smd name="14" x="1.78" y="0.5" dx="0.76" dy="0.28" layer="1" rot="R180"/>
-<smd name="15" x="1.78" y="1" dx="0.76" dy="0.28" layer="1" rot="R180"/>
-<smd name="16" x="1" y="1.78" dx="0.76" dy="0.28" layer="1" rot="R270"/>
-<smd name="17" x="0.5" y="1.78" dx="0.76" dy="0.28" layer="1" rot="R270"/>
-<smd name="18" x="0" y="1.78" dx="0.76" dy="0.28" layer="1" rot="R270"/>
-<smd name="19" x="-0.5" y="1.78" dx="0.76" dy="0.28" layer="1" rot="R270"/>
-<smd name="20" x="-1" y="1.78" dx="0.76" dy="0.28" layer="1" rot="R270"/>
-<smd name="GND" x="0" y="0" dx="2.4" dy="2.4" layer="1" cream="no"/>
-<pad name="GND1" x="0" y="0" drill="0.3" stop="no" thermals="no"/>
-<pad name="GND2" x="-0.635" y="0.635" drill="0.3" stop="no" thermals="no"/>
-<pad name="GND3" x="0.635" y="0.635" drill="0.3" stop="no" thermals="no"/>
-<pad name="GND4" x="-0.635" y="-0.635" drill="0.3" stop="no" thermals="no"/>
-<pad name="GND5" x="0.635" y="-0.635" drill="0.3" stop="no" thermals="no"/>
-<text x="-2" y="2.5" size="1" layer="25" font="vector" ratio="10">&gt;NAME</text>
-<text x="0" y="-2.54" size="1" layer="27" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
-<rectangle x1="-1.905" y1="-1.905" x2="1.905" y2="1.905" layer="39"/>
-</package>
 <package name="QFN20_ALT1">
 <wire x1="-1.5" y1="2" x2="-2" y2="1.5" width="0.2032" layer="21"/>
 <wire x1="-0.7561" y1="2.0208" x2="-0.7561" y2="-1.967" width="0.0126" layer="49"/>
@@ -18975,7 +18931,6 @@ design rules under a new name.</description>
 <element name="U$8" library="RoboJackets-Aesthetics" package="ROBOBUZZ_0.8X" value="" x="52.832" y="22.479"/>
 <element name="A6-SEL" library="jumper" package="SJ_2" value="" x="31.0388" y="15.0114" rot="MR135"/>
 <element name="916MHZ" library="RoboJackets-RF" package="ANT-916-CHP" value="ANT-916-CHP-T" x="89.1" y="18.9" rot="R180"/>
-<element name="IC5" library="RoboJackets-RF" package="QLP20" value="CC1101" x="84.455" y="41.275"/>
 <element name="U$9" library="RoboJackets-RF" package="QFN20_ALT1" value="NRF24L01ALT1" x="95.885" y="41.91"/>
 <element name="U$10" library="RoboJackets-RF" package="QFN20_ALT2" value="NRF24L01ALT2" x="96.52" y="29.845"/>
 <element name="U$11" library="RoboJackets-RF" package="QFN20" value="NRF24L01SMD" x="95.885" y="52.07"/>
