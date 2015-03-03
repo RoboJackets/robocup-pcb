@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -61,7 +61,7 @@
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -124,6 +124,16 @@ In this library you will find resistors. If you are looking for a common package
 <wire x1="3.175" y1="-1.6" x2="3.175" y2="1.6" width="0.127" layer="21"/>
 <smd name="PIN1" x="-2.875" y="0" dx="0.6" dy="3.2" layer="1"/>
 <smd name="PIN2" x="2.875" y="0" dx="0.6" dy="3.2" layer="1"/>
+</package>
+<package name="GHOST_0.075">
+<wire x1="-0.635" y1="-0.3175" x2="-0.3175" y2="0.3175" width="0.1524" layer="21"/>
+<wire x1="-0.3175" y1="0.3175" x2="0" y2="-0.3175" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.3175" x2="0.3175" y2="0.3175" width="0.1524" layer="21"/>
+<wire x1="0.3175" y1="0.3175" x2="0.635" y2="-0.3175" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-0.3175" x2="-0.9525" y2="0" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-0.3175" x2="0.9525" y2="0" width="0.1524" layer="21"/>
+<smd name="P$1" x="-0.9525" y="0" dx="0" dy="0" layer="1"/>
+<smd name="P$2" x="0.9525" y="0" dx="0" dy="0" layer="1"/>
 </package>
 </packages>
 <symbols>
@@ -223,6 +233,18 @@ In this library you will find resistors. If you are looking for a common package
 <wire x1="5.715" y1="1.27" x2="6.985" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="6.985" y1="-1.27" x2="7.62" y2="0" width="0.254" layer="94"/>
 </symbol>
+<symbol name="STANDARD">
+<pin name="PIN1" x="-5.08" y="0" visible="off" length="short"/>
+<pin name="PIN2" x="2.54" y="0" visible="off" length="short" rot="R180"/>
+<wire x1="-2.54" y1="0" x2="-2.286" y2="0.508" width="0.254" layer="94"/>
+<wire x1="-2.286" y1="0.508" x2="-1.778" y2="-0.508" width="0.254" layer="94"/>
+<wire x1="-1.778" y1="-0.508" x2="-1.27" y2="0.508" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0.508" x2="-0.762" y2="-0.508" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-0.508" x2="-0.254" y2="0.508" width="0.254" layer="94"/>
+<wire x1="-0.254" y1="0.508" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="-5.08" y="1.524" size="1.27" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-2.54" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="RA-2" prefix="R">
@@ -290,6 +312,22 @@ In this library you will find resistors. If you are looking for a common package
 <connects>
 <connect gate="G$1" pin="PIN1" pad="PIN1"/>
 <connect gate="G$1" pin="PIN2" pad="PIN2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GHOST_RESISTOR" prefix="R" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="STANDARD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="GHOST_0.075">
+<connects>
+<connect gate="G$1" pin="PIN1" pad="P$1"/>
+<connect gate="G$1" pin="PIN2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
