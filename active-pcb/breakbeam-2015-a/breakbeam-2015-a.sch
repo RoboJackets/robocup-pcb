@@ -179,6 +179,16 @@ In this library you will find diodes and other circuit protection elements.
 <wire x1="5.08" y1="1.27" x2="7.62" y2="-1.27" width="0.127" layer="21"/>
 <circle x="6.35" y="0" radius="0.635" width="0.127" layer="21"/>
 </package>
+<package name="2LEAD_H_FACEDOWN_SHORT_MIN">
+<smd name="1" x="-0.635" y="1.905" dx="3.175" dy="0.635" layer="1" rot="R315"/>
+<smd name="2" x="-0.635" y="-1.905" dx="3.175" dy="0.635" layer="1" rot="R45"/>
+<text x="1.905" y="-2.2225" size="1.016" layer="21" rot="R90">&gt;NAME</text>
+<wire x1="2.8575" y1="2.8575" x2="-0.635" y2="2.8575" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="2.8575" x2="-0.635" y2="-2.8575" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="-2.8575" x2="2.8575" y2="-2.8575" width="0.127" layer="21"/>
+<circle x="0" y="1.27" radius="0.3175" width="0.127" layer="21"/>
+<rectangle x1="1.905" y1="-2.54" x2="3.175" y2="2.54" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LED">
@@ -221,6 +231,15 @@ In this library you will find diodes and other circuit protection elements.
 </technologies>
 </device>
 <device name="SHORT_LEAD" package="GENERIC_2LEAD_H_FACEDOWN_SHORT">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SHORT_LEAD_MINIMIZED" package="2LEAD_H_FACEDOWN_SHORT_MIN">
 <connects>
 <connect gate="G$1" pin="A" pad="2"/>
 <connect gate="G$1" pin="C" pad="1"/>
@@ -3860,7 +3879,7 @@ In this library you will find resistors. If you are looking for a common package
 </class>
 </classes>
 <parts>
-<part name="LD1" library="RoboJackets-Diodes" deviceset="LD_SIDELOOK_FACEDOWN" device="SHORT_LEAD"/>
+<part name="LD1/Q1" library="RoboJackets-Diodes" deviceset="LD_SIDELOOK_FACEDOWN" device="SHORT_LEAD_MINIMIZED"/>
 <part name="R1" library="rcl" deviceset="R-US_" device="R0603"/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 <part name="U1" library="RoboJackets-ICs" deviceset="DS2411" device=""/>
@@ -3875,11 +3894,11 @@ In this library you will find resistors. If you are looking for a common package
 <sheet>
 <plain>
 <text x="45.72" y="68.58" size="1.778" layer="97">Vf=2.2V max</text>
-<text x="15.24" y="96.52" size="1.778" layer="97">example: 
+<text x="17.78" y="96.52" size="1.778" layer="97">example: 
 &lt;arbitrary selection&gt;
 http://www.digikey.com/product-detail/en/1-1879336-6/A102263CT-ND/2728239
 332 ohm; $0.19 ea (1x)</text>
-<text x="12.7" y="129.54" size="1.778" layer="97">close fit 6-32 plated through-hole will be on the pcb</text>
+<text x="12.7" y="121.92" size="1.778" layer="97">close fit 6-32 plated through-hole will be on the pcb</text>
 <wire x1="10.16" y1="114.3" x2="139.7" y2="114.3" width="0.1524" layer="97"/>
 <wire x1="139.7" y1="114.3" x2="139.7" y2="55.88" width="0.1524" layer="97"/>
 <wire x1="139.7" y1="55.88" x2="10.16" y2="55.88" width="0.1524" layer="97"/>
@@ -3888,14 +3907,15 @@ http://www.digikey.com/product-detail/en/1-1879336-6/A102263CT-ND/2728239
 <wire x1="220.98" y1="114.3" x2="220.98" y2="55.88" width="0.1524" layer="97"/>
 <wire x1="220.98" y1="55.88" x2="149.86" y2="55.88" width="0.1524" layer="97"/>
 <wire x1="149.86" y1="55.88" x2="149.86" y2="114.3" width="0.1524" layer="97"/>
-<text x="15.24" y="109.22" size="1.778" layer="97">R1:270-470 for LD Driving</text>
+<text x="15.24" y="109.22" size="3.81" layer="97">R1:270-470 for LD Driving</text>
 <wire x1="10.16" y1="50.8" x2="139.7" y2="50.8" width="0.1524" layer="97"/>
 <wire x1="139.7" y1="50.8" x2="139.7" y2="2.54" width="0.1524" layer="97"/>
 <wire x1="139.7" y1="2.54" x2="10.16" y2="2.54" width="0.1524" layer="97"/>
 <wire x1="10.16" y1="2.54" x2="10.16" y2="50.8" width="0.1524" layer="97"/>
+<text x="15.24" y="88.9" size="3.81" layer="97">R1: ~1k for Phototransistor</text>
 </plain>
 <instances>
-<instance part="LD1" gate="G$1" x="40.64" y="68.58" rot="R270"/>
+<instance part="LD1/Q1" gate="G$1" x="40.64" y="68.58" rot="R270"/>
 <instance part="R1" gate="G$1" x="30.48" y="73.66"/>
 <instance part="SUPPLY1" gate="GND" x="40.64" y="60.96"/>
 <instance part="U1" gate="G$1" x="195.58" y="91.44"/>
@@ -3911,14 +3931,14 @@ http://www.digikey.com/product-detail/en/1-1879336-6/A102263CT-ND/2728239
 <nets>
 <net name="N$1" class="0">
 <segment>
-<pinref part="LD1" gate="G$1" pin="A"/>
+<pinref part="LD1/Q1" gate="G$1" pin="A"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="35.56" y1="73.66" x2="40.64" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="LD1" gate="G$1" pin="C"/>
+<pinref part="LD1/Q1" gate="G$1" pin="C"/>
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
 <wire x1="40.64" y1="66.04" x2="40.64" y2="63.5" width="0.1524" layer="91"/>
 </segment>
