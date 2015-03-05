@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.0125" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -1732,6 +1732,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <circle x="0" y="1.27" radius="0.3175" width="0.127" layer="21"/>
 <rectangle x1="1.905" y1="-2.54" x2="3.175" y2="2.54" layer="21"/>
 </package>
+<package name="TO-46_H_CONN">
+</package>
 </packages>
 <symbols>
 <symbol name="AN-AN">
@@ -2562,7 +2564,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <gate name="G$1" symbol="PHOTODIODE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO-46_H_A">
+<device name="DIRECT_SOLDER" package="TO-46_H_A">
 <connects>
 <connect gate="G$1" pin="A" pad="3"/>
 <connect gate="G$1" pin="C" pad="1"/>
