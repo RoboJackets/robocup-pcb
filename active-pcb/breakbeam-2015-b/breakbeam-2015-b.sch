@@ -8,34 +8,34 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,17 +53,17 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -186,8 +186,18 @@ In this library you will find diodes and other circuit protection elements.
 <wire x1="2.8575" y1="2.8575" x2="-0.635" y2="2.8575" width="0.127" layer="21"/>
 <wire x1="-0.635" y1="2.8575" x2="-0.635" y2="-2.8575" width="0.127" layer="21"/>
 <wire x1="-0.635" y1="-2.8575" x2="2.8575" y2="-2.8575" width="0.127" layer="21"/>
-<circle x="0" y="1.27" radius="0.3175" width="0.127" layer="21"/>
+<circle x="0.3175" y="2.2225" radius="0.3175" width="0.127" layer="21"/>
 <rectangle x1="1.905" y1="-2.54" x2="3.175" y2="2.54" layer="21"/>
+</package>
+<package name="2LEAD_H_FACEDOWN_XSHORT_MIN">
+<smd name="2" x="-0.3175" y="-1.5875" dx="1.905" dy="0.635" layer="1" rot="R45"/>
+<text x="1.905" y="-2.2225" size="1.016" layer="21" rot="R90">&gt;NAME</text>
+<wire x1="2.8575" y1="2.8575" x2="-0.635" y2="2.8575" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="2.8575" x2="-0.635" y2="-2.8575" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="-2.8575" x2="2.8575" y2="-2.8575" width="0.127" layer="21"/>
+<circle x="0.3175" y="2.2225" radius="0.3175" width="0.127" layer="21"/>
+<rectangle x1="1.905" y1="-2.54" x2="3.175" y2="2.54" layer="21"/>
+<smd name="1" x="-0.3175" y="1.5875" dx="1.905" dy="0.635" layer="1" rot="R315"/>
 </package>
 </packages>
 <symbols>
@@ -240,6 +250,15 @@ In this library you will find diodes and other circuit protection elements.
 </technologies>
 </device>
 <device name="SHORT_LEAD_MINIMIZED" package="2LEAD_H_FACEDOWN_SHORT_MIN">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="EXTRA_SHORT_LEAD_MINIMIZED" package="2LEAD_H_FACEDOWN_XSHORT_MIN">
 <connects>
 <connect gate="G$1" pin="A" pad="2"/>
 <connect gate="G$1" pin="C" pad="1"/>
@@ -3759,84 +3778,6 @@ In this library you will find the larger circuit elements that are used to contr
 </deviceset>
 </devicesets>
 </library>
-<library name="RoboJackets-Connectors">
-<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
-&lt;hr&gt;
-&lt;h1&gt;RoboJackets EAGLE Libraries - Connectors&lt;/h1&gt;&lt;/br&gt;
-&lt;p&gt;
-In this library you will find all the connectors used on any of our boards.
-&lt;/p&gt;</description>
-<packages>
-<package name="1814650">
-<smd name="SUPPORT1" x="-6.35" y="0" dx="5.6" dy="2.3" layer="1" rot="R90"/>
-<smd name="SUPPORT2" x="6.35" y="0" dx="5.6" dy="2.3" layer="1" rot="R90"/>
-<smd name="1" x="-3.81" y="6.6" dx="3.4" dy="1.4" layer="1" rot="R90"/>
-<smd name="2" x="-1.27" y="6.6" dx="3.4" dy="1.4" layer="1" rot="R90"/>
-<smd name="3" x="1.27" y="6.6" dx="3.4" dy="1.4" layer="1" rot="R90"/>
-<smd name="4" x="3.81" y="6.6" dx="3.4" dy="1.4" layer="1" rot="R90"/>
-<wire x1="-5.08" y1="6.35" x2="-6.35" y2="6.35" width="0.8128" layer="21"/>
-<wire x1="-6.35" y1="6.35" x2="-6.35" y2="3.81" width="0.8128" layer="21"/>
-<wire x1="5.08" y1="6.35" x2="6.35" y2="6.35" width="0.8128" layer="21"/>
-<wire x1="6.35" y1="6.35" x2="6.35" y2="3.81" width="0.8128" layer="21"/>
-<wire x1="-6.35" y1="-3.81" x2="6.35" y2="-3.81" width="0.8128" layer="21"/>
-<text x="-7.62" y="-2.54" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<circle x="-3.81" y="3.175" radius="0.898025" width="0.6096" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="4-PIN_CONN">
-<circle x="-0.762" y="7.62" radius="0.762" width="0.254" layer="94"/>
-<circle x="-0.762" y="2.54" radius="0.762" width="0.254" layer="94"/>
-<circle x="-0.762" y="-2.54" radius="0.762" width="0.254" layer="94"/>
-<circle x="-0.762" y="-7.62" radius="0.762" width="0.254" layer="94"/>
-<text x="-5.08" y="10.16" size="2.54" layer="95" font="vector">&gt;NAME</text>
-<text x="-1.27" y="-11.43" size="2.54" layer="96" font="vector" ratio="15" align="top-center">&gt;VALUE</text>
-<pin name="1" x="5.08" y="7.62" visible="pin" length="middle" direction="pas" rot="R180"/>
-<pin name="2" x="5.08" y="2.54" visible="pin" length="middle" direction="pas" rot="R180"/>
-<pin name="3" x="5.08" y="-2.54" visible="pin" length="middle" direction="pas" rot="R180"/>
-<pin name="4" x="5.08" y="-7.62" visible="pin" length="middle" direction="pas" rot="R180"/>
-<wire x1="-5.08" y1="10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-10.16" x2="2.54" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-10.16" x2="2.54" y2="10.16" width="0.254" layer="94"/>
-<wire x1="2.54" y1="10.16" x2="-5.08" y2="10.16" width="0.254" layer="94"/>
-</symbol>
-<symbol name="2-PIN_CONN">
-<circle x="-0.762" y="2.54" radius="0.762" width="0.254" layer="94"/>
-<circle x="-0.762" y="-2.54" radius="0.762" width="0.254" layer="94"/>
-<text x="-5.08" y="5.08" size="2.54" layer="95" font="vector">&gt;NAME</text>
-<text x="-1.27" y="-6.35" size="2.54" layer="96" font="vector" ratio="15" align="top-center">&gt;VALUE</text>
-<pin name="1" x="5.08" y="2.54" visible="pin" length="middle" direction="pas" rot="R180"/>
-<pin name="2" x="5.08" y="-2.54" visible="pin" length="middle" direction="pas" rot="R180"/>
-<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="1814650" prefix="J">
-<gates>
-<gate name="G$1" symbol="4-PIN_CONN" x="0" y="0"/>
-<gate name="SUPPORT" symbol="2-PIN_CONN" x="0" y="-25.4" addlevel="request"/>
-</gates>
-<devices>
-<device name="" package="1814650">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="SUPPORT" pin="1" pad="SUPPORT1"/>
-<connect gate="SUPPORT" pin="2" pad="SUPPORT2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="RoboJackets-Resistors">
 <description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
 &lt;hr&gt;
@@ -3899,7 +3840,7 @@ In this library you will find resistors. If you are looking for a common package
 </class>
 </classes>
 <parts>
-<part name="LD1/Q1" library="RoboJackets-Diodes" deviceset="LD_SIDELOOK_FACEDOWN" device="SHORT_LEAD_MINIMIZED"/>
+<part name="LD1/Q1" library="RoboJackets-Diodes" deviceset="LD_SIDELOOK_FACEDOWN" device="EXTRA_SHORT_LEAD_MINIMIZED"/>
 <part name="R1" library="rcl" deviceset="R-US_" device="R0603"/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 <part name="U1" library="RoboJackets-ICs" deviceset="DS2411" device=""/>
@@ -3908,7 +3849,6 @@ In this library you will find resistors. If you are looking for a common package
 <part name="SUPPLY4" library="supply2" deviceset="+5V" device=""/>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
 <part name="R3" library="RoboJackets-Resistors" deviceset="GHOST_RESISTOR" device="" value="0.3k-2.2k"/>
-<part name="J1" library="RoboJackets-Connectors" deviceset="1814650" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3944,8 +3884,6 @@ http://www.digikey.com/product-detail/en/1-1879336-6/A102263CT-ND/2728239
 <instance part="SUPPLY4" gate="+5V" x="50.8" y="33.02" rot="R270"/>
 <instance part="SUPPLY5" gate="GND" x="53.34" y="22.86" rot="R90"/>
 <instance part="R3" gate="G$1" x="175.26" y="99.06" rot="MR90"/>
-<instance part="J1" gate="G$1" x="38.1" y="25.4"/>
-<instance part="J1" gate="SUPPORT" x="106.68" y="20.32"/>
 </instances>
 <busses>
 </busses>
@@ -3972,7 +3910,6 @@ http://www.digikey.com/product-detail/en/1-1879336-6/A102263CT-ND/2728239
 <segment>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
 <wire x1="50.8" y1="22.86" x2="43.18" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -3988,7 +3925,6 @@ http://www.digikey.com/product-detail/en/1-1879336-6/A102263CT-ND/2728239
 <segment>
 <pinref part="SUPPLY4" gate="+5V" pin="+5V"/>
 <wire x1="43.18" y1="33.02" x2="48.26" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="SERIAL_ID" class="0">
@@ -4004,14 +3940,12 @@ http://www.digikey.com/product-detail/en/1-1879336-6/A102263CT-ND/2728239
 <segment>
 <wire x1="43.18" y1="27.94" x2="63.5" y2="27.94" width="0.1524" layer="91"/>
 <label x="50.8" y="27.94" size="1.778" layer="95"/>
-<pinref part="J1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="OPTICAL" class="0">
 <segment>
 <label x="50.8" y="17.78" size="1.778" layer="95"/>
 <wire x1="43.18" y1="17.78" x2="63.5" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="4"/>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>

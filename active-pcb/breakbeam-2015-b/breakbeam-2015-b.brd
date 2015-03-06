@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="0.0125" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -29,7 +29,7 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
@@ -139,20 +139,22 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="10.795" y2="0" width="0" layer="20"/>
-<wire x1="10.795" y1="0" x2="10.795" y2="16.51" width="0" layer="20"/>
-<wire x1="10.795" y1="16.51" x2="0" y2="16.51" width="0" layer="20"/>
-<wire x1="0" y1="16.51" x2="0" y2="0" width="0" layer="20"/>
-<hole x="7.62" y="3.175" drill="3.6576"/>
-<hole x="7.62" y="13.335" drill="3.6576"/>
-<text x="4.445" y="13.97" size="1.016" layer="22" rot="MR270">RoboJackets
-RoboCup
+<wire x1="0" y1="0" x2="11.43" y2="0" width="0" layer="20"/>
+<wire x1="11.43" y1="0" x2="11.43" y2="13.335" width="0" layer="20"/>
+<wire x1="11.43" y1="13.335" x2="0" y2="13.335" width="0" layer="20"/>
+<wire x1="0" y1="13.335" x2="0" y2="0" width="0" layer="20"/>
+<hole x="3.175" y="6.6675" drill="3.6576"/>
+<text x="7.9375" y="11.1125" size="1.016" layer="22" rot="MR270">RJRC-SSL
 Breakbeam/ID</text>
-<rectangle x1="4.445" y1="6.35" x2="8.255" y2="10.16" layer="22"/>
-<wire x1="0.3175" y1="16.1925" x2="10.4775" y2="16.1925" width="0.4064" layer="21"/>
-<wire x1="10.4775" y1="16.1925" x2="10.4775" y2="0.3175" width="0.4064" layer="21"/>
-<wire x1="10.4775" y1="0.3175" x2="0.3175" y2="0.3175" width="0.4064" layer="21"/>
-<wire x1="0.3175" y1="0.3175" x2="0.3175" y2="16.1925" width="0.4064" layer="21"/>
+<wire x1="0.3175" y1="13.0175" x2="8.89" y2="13.0175" width="0.4064" layer="21"/>
+<wire x1="8.89" y1="13.0175" x2="11.1125" y2="10.795" width="0.4064" layer="21"/>
+<wire x1="11.1125" y1="10.795" x2="11.1125" y2="2.54" width="0.4064" layer="21"/>
+<wire x1="11.1125" y1="2.54" x2="8.89" y2="0.3175" width="0.4064" layer="21"/>
+<wire x1="8.89" y1="0.3175" x2="0.3175" y2="0.3175" width="0.4064" layer="21"/>
+<wire x1="0.3175" y1="0.3175" x2="0.3175" y2="13.0175" width="0.4064" layer="21"/>
+<circle x="3.175" y="6.6675" radius="2.8702" width="0.4064" layer="21"/>
+<hole x="2.2225" y="1.905" drill="3.175"/>
+<hole x="2.2225" y="11.43" drill="3.175"/>
 </plain>
 <libraries>
 <library name="RoboJackets-Diodes">
@@ -163,15 +165,15 @@ Breakbeam/ID</text>
 In this library you will find diodes and other circuit protection elements.
 &lt;/p&gt;</description>
 <packages>
-<package name="2LEAD_H_FACEDOWN_SHORT_MIN">
-<smd name="1" x="-0.635" y="1.905" dx="3.175" dy="0.635" layer="1" rot="R315"/>
-<smd name="2" x="-0.635" y="-1.905" dx="3.175" dy="0.635" layer="1" rot="R45"/>
+<package name="2LEAD_H_FACEDOWN_XSHORT_MIN">
+<smd name="2" x="-0.3175" y="-1.5875" dx="1.905" dy="0.635" layer="1" rot="R45"/>
 <text x="1.905" y="-2.2225" size="1.016" layer="21" rot="R90">&gt;NAME</text>
 <wire x1="2.8575" y1="2.8575" x2="-0.635" y2="2.8575" width="0.127" layer="21"/>
 <wire x1="-0.635" y1="2.8575" x2="-0.635" y2="-2.8575" width="0.127" layer="21"/>
 <wire x1="-0.635" y1="-2.8575" x2="2.8575" y2="-2.8575" width="0.127" layer="21"/>
-<circle x="0" y="1.27" radius="0.3175" width="0.127" layer="21"/>
+<circle x="0.3175" y="2.2225" radius="0.3175" width="0.127" layer="21"/>
 <rectangle x1="1.905" y1="-2.54" x2="3.175" y2="2.54" layer="21"/>
+<smd name="1" x="-0.3175" y="1.5875" dx="1.905" dy="0.635" layer="1" rot="R315"/>
 </package>
 </packages>
 </library>
@@ -1266,31 +1268,6 @@ In this library you will find the larger circuit elements that are used to contr
 </package>
 </packages>
 </library>
-<library name="RoboJackets-Connectors">
-<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
-&lt;hr&gt;
-&lt;h1&gt;RoboJackets EAGLE Libraries - Connectors&lt;/h1&gt;&lt;/br&gt;
-&lt;p&gt;
-In this library you will find all the connectors used on any of our boards.
-&lt;/p&gt;</description>
-<packages>
-<package name="1814650">
-<smd name="SUPPORT1" x="-6.35" y="0" dx="5.6" dy="2.3" layer="1" rot="R90"/>
-<smd name="SUPPORT2" x="6.35" y="0" dx="5.6" dy="2.3" layer="1" rot="R90"/>
-<smd name="1" x="-3.81" y="6.6" dx="3.4" dy="1.4" layer="1" rot="R90"/>
-<smd name="2" x="-1.27" y="6.6" dx="3.4" dy="1.4" layer="1" rot="R90"/>
-<smd name="3" x="1.27" y="6.6" dx="3.4" dy="1.4" layer="1" rot="R90"/>
-<smd name="4" x="3.81" y="6.6" dx="3.4" dy="1.4" layer="1" rot="R90"/>
-<wire x1="-5.08" y1="6.35" x2="-6.35" y2="6.35" width="0.8128" layer="21"/>
-<wire x1="-6.35" y1="6.35" x2="-6.35" y2="3.81" width="0.8128" layer="21"/>
-<wire x1="5.08" y1="6.35" x2="6.35" y2="6.35" width="0.8128" layer="21"/>
-<wire x1="6.35" y1="6.35" x2="6.35" y2="3.81" width="0.8128" layer="21"/>
-<wire x1="-6.35" y1="-3.81" x2="6.35" y2="-3.81" width="0.8128" layer="21"/>
-<text x="-7.62" y="-2.54" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<circle x="-3.81" y="3.175" radius="0.898025" width="0.6096" layer="21"/>
-</package>
-</packages>
-</library>
 <library name="RoboJackets-Resistors">
 <description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
 &lt;hr&gt;
@@ -1491,62 +1468,48 @@ design rules under a new name.
 </pass>
 </autorouter>
 <elements>
-<element name="LD1/Q1" library="RoboJackets-Diodes" package="2LEAD_H_FACEDOWN_SHORT_MIN" value="" x="5.715" y="8.255" smashed="yes">
-<attribute name="NAME" x="7.3025" y="5.715" size="1.016" layer="21" rot="R90"/>
+<element name="LD1/Q1" library="RoboJackets-Diodes" package="2LEAD_H_FACEDOWN_XSHORT_MIN" value="" x="7.62" y="6.6675" smashed="yes">
+<attribute name="NAME" x="9.2075" y="4.1275" size="1.016" layer="21" rot="R90"/>
 </element>
-<element name="R1" library="rcl" package="R0603" value="" x="2.8575" y="4.1275" smashed="yes" rot="R45">
-<attribute name="NAME" x="3.06605" y="2.168025" size="0.8128" layer="25" rot="R45"/>
+<element name="R1" library="rcl" package="R0603" value="" x="7.3025" y="2.54" smashed="yes" rot="R180">
+<attribute name="NAME" x="7.90559375" y="1.850528125" size="0.8128" layer="25" rot="R180"/>
 </element>
-<element name="U1" library="RoboJackets-ICs" package="SOT-23-3" value="" x="3.81" y="12.7" smashed="yes" rot="R45">
-<attribute name="NAME" x="4.1275" y="14.896971875" size="0.8128" layer="25" ratio="10" rot="R315"/>
-<attribute name="VALUE" x="7.222496875" y="13.598025" size="1.27" layer="27" ratio="10" rot="R135"/>
+<element name="U1" library="RoboJackets-ICs" package="SOT-23-3" value="" x="7.3025" y="10.795" smashed="yes" rot="R90">
+<attribute name="NAME" x="9.583984375" y="10.287" size="0.8128" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="9.080503125" y="13.842996875" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="R3" library="RoboJackets-Resistors" package="GHOST_0.075" value="0.3k-2.2k" x="2.54" y="13.97" rot="R225"/>
-<element name="J1" library="RoboJackets-Connectors" package="1814650" value="1814650" x="-10.16" y="7.62" rot="R270"/>
+<element name="R3" library="RoboJackets-Resistors" package="GHOST_0.075" value="0.3k-2.2k" x="5.3975" y="10.795" rot="R270"/>
 </elements>
 <signals>
 <signal name="N$1">
 <contactref element="LD1/Q1" pad="2"/>
 <contactref element="R1" pad="2"/>
-<wire x1="5.715" y1="6.985" x2="5.08" y2="6.35" width="0.4064" layer="1"/>
-<wire x1="5.08" y1="6.35" x2="3.458540625" y2="4.728540625" width="0.4064" layer="1"/>
+<wire x1="6.4525" y1="2.54" x2="6.4525" y2="4.23" width="0.6096" layer="1"/>
+<wire x1="6.4525" y1="4.23" x2="7.3025" y2="5.08" width="0.6096" layer="1"/>
 </signal>
 <signal name="GND">
 <contactref element="LD1/Q1" pad="1"/>
 <contactref element="U1" pad="3"/>
-<wire x1="3.81" y1="7.62" x2="5.08" y2="8.89" width="0.6096" layer="1"/>
-<wire x1="5.08" y1="10.16" x2="5.08" y2="8.89" width="0.6096" layer="1"/>
-<wire x1="4.73348125" y1="11.776515625" x2="4.73348125" y2="10.50651875" width="0.6096" layer="1"/>
-<wire x1="4.73348125" y1="10.50651875" x2="5.08" y2="10.16" width="0.6096" layer="1"/>
-<contactref element="J1" pad="3"/>
-<wire x1="-3.56" y1="6.35" x2="3.81" y2="7.62" width="0" layer="19" extent="1-1"/>
+<polygon width="0.254" layer="1">
+<vertex x="9.525" y="10.4775"/>
+<vertex x="10.4775" y="10.4775"/>
+<vertex x="10.4775" y="9.525"/>
+<vertex x="9.525" y="9.525"/>
+</polygon>
+<wire x1="7.3025" y1="8.255" x2="8.6085" y2="10.795" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+5V">
 <contactref element="U1" pad="2"/>
 <contactref element="R3" pad="P$2"/>
-<wire x1="2.214765625" y1="12.951728125" x2="2.214765625" y2="10.787265625" width="0.6096" layer="1"/>
-<wire x1="1.866478125" y1="13.296478125" x2="1.870015625" y2="13.296478125" width="0.4064" layer="1"/>
-<wire x1="1.870015625" y1="13.296478125" x2="2.214765625" y2="12.951728125" width="0.4064" layer="1"/>
-<contactref element="J1" pad="1"/>
-<wire x1="-3.56" y1="11.43" x2="2.214765625" y2="10.787265625" width="0" layer="19" extent="1-1"/>
+<wire x1="5.3975" y1="9.8425" x2="5.9965" y2="9.845" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SERIAL_ID">
 <contactref element="U1" pad="1"/>
 <contactref element="R3" pad="P$1"/>
-<wire x1="2.54" y1="8.89" x2="3.175" y2="9.525" width="0.6096" layer="1"/>
-<wire x1="3.55826875" y1="14.29523125" x2="3.55826875" y2="12.44826875" width="0.6096" layer="1"/>
-<wire x1="3.55826875" y1="12.44826875" x2="3.175" y2="12.065" width="0.6096" layer="1"/>
-<wire x1="3.175" y1="12.065" x2="3.175" y2="9.525" width="0.6096" layer="1"/>
-<wire x1="3.21351875" y1="14.64351875" x2="3.21351875" y2="14.63998125" width="0.4064" layer="1"/>
-<wire x1="3.21351875" y1="14.63998125" x2="3.55826875" y2="14.29523125" width="0.4064" layer="1"/>
-<contactref element="J1" pad="2"/>
-<wire x1="-3.56" y1="8.89" x2="2.54" y2="8.89" width="0" layer="19" extent="1-1"/>
+<wire x1="5.3975" y1="11.7475" x2="5.9965" y2="11.745" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="OPTICAL">
 <contactref element="R1" pad="1"/>
-<wire x1="1.5875" y1="4.1954125" x2="2.25645625" y2="3.52645625" width="0.4064" layer="1"/>
-<contactref element="J1" pad="4"/>
-<wire x1="2.25645625" y1="3.52645625" x2="-3.56" y2="3.81" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
