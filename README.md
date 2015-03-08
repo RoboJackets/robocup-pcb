@@ -4,8 +4,6 @@ Welcome to the Georgia Tech RoboJackets repository for management and storage of
 
 If you are a new member to the RoboCup electrical team and have never used *[git version control](http://git-scm.com/)* before, we highly recommend that you familiarize yourself with it.
 
-Our designs are also hosted on [Upverter](http://upverter.com/), so be sure to check out the [team's page](https://upverter.com/RoboCup/) for viewing the designs in a web browser.
-
 ##Prerequisites
 - A computer configured with git [[Windows](https://windows.github.com)] [[Mac](https://mac.github.com/)]
 - An installation of [EAGLE](http://www.cadsoftusa.com/)
