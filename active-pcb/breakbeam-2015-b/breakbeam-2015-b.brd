@@ -141,6 +141,7 @@
 <plain>
 <wire x1="0" y1="0" x2="11.43" y2="0" width="0" layer="20"/>
 <wire x1="11.43" y1="0" x2="11.43" y2="13.335" width="0" layer="20"/>
+<wire x1="11.43" y1="13.335" x2="0" y2="13.335" width="0" layer="20"/>
 <wire x1="0" y1="13.335" x2="0" y2="0" width="0" layer="20"/>
 <hole x="3.175" y="6.6675" drill="3.6576"/>
 <text x="7.3025" y="9.8425" size="0.6096" layer="22" rot="MR270">RJRC-SSL
@@ -154,14 +155,8 @@ Breakbeam/ID</text>
 <circle x="3.175" y="6.6675" radius="2.8702" width="0.3048" layer="21"/>
 <hole x="2.2225" y="1.905" drill="3.175"/>
 <hole x="2.2225" y="11.43" drill="3.175"/>
-<dimension x1="0" y1="0" x2="11.43" y2="0" x3="5.715" y3="16.1925" textsize="0.6096" layer="20" width="0.0254" unit="inch" precision="4"/>
-<dimension x1="11.43" y1="0" x2="11.43" y2="13.335" x3="-5.08" y3="6.6675" textsize="0.6096" layer="20" width="0.0254" unit="inch" precision="4"/>
 <rectangle x1="4.445" y1="0.9525" x2="6.6675" y2="3.81" layer="29"/>
 <rectangle x1="4.7625" y1="1.27" x2="6.35" y2="2.2225" layer="31"/>
-<dimension x1="0" y1="13.335" x2="2.2225" y2="11.43" x3="-1.27" y3="12.3825" textsize="0.6096" layer="20" dtype="vertical" width="0.0254" unit="inch" precision="4"/>
-<dimension x1="0" y1="13.335" x2="3.175" y2="6.6675" x3="-2.8575" y3="10.00125" textsize="0.6096" layer="20" dtype="vertical" width="0.0254" unit="inch" precision="4"/>
-<dimension x1="0" y1="13.335" x2="3.175" y2="6.6675" x3="1.5875" y3="14.2875" textsize="0.6096" layer="20" dtype="horizontal" width="0.0254" unit="inch" precision="4"/>
-<dimension x1="3.81" y1="1.905" x2="0.635" y2="1.905" x3="2.2225" y3="-1.5875" textsize="0.6096" layer="20" dtype="diameter" width="0.0254" unit="inch" precision="4"/>
 <text x="4.445" y="10.4775" size="0.6096" layer="22" rot="MR180">+5V</text>
 <text x="7.9375" y="8.89" size="0.6096" layer="22" rot="MR90">GND</text>
 <text x="4.445" y="12.3825" size="0.6096" layer="22" rot="MR180">ID</text>
