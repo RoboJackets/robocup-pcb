@@ -39,3 +39,22 @@ Transcode?Report.txt
 
 #exclude datasheets
 datasheets/
+
+#exclude gerbers
+*.ger
+*.nc
+*.do
+*.GBL
+*.GBO
+*.GBP
+*.GBS
+*.GML
+*.GTL
+*.GTO
+*.GTP
+*.GTS
+
+#unsure about how this should be treated
+#ITEAD wants the NC Drill as a text file instead of something like .NC
+#including this in the ignore list renders any notes in text format to also be ignored
+*.TXT
