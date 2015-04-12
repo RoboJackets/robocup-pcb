@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -120,10 +120,10 @@ In this library you will find all the connectors used on any of our boards.
 </class>
 </classes>
 <parts>
-<part name="U$1" library="RoboJackets-Connectors" deviceset="VIA_TP" device="" value="I1+"/>
-<part name="U$2" library="RoboJackets-Connectors" deviceset="VIA_TP" device="" value="I1-"/>
-<part name="U$3" library="RoboJackets-Connectors" deviceset="VIA_TP" device="" value="V1+"/>
-<part name="U$4" library="RoboJackets-Connectors" deviceset="VIA_TP" device="" value="GND1"/>
+<part name="U$1" library="RoboJackets-Connectors" deviceset="VIA_TP" device="" value="I+"/>
+<part name="U$2" library="RoboJackets-Connectors" deviceset="VIA_TP" device="" value="I-"/>
+<part name="U$3" library="RoboJackets-Connectors" deviceset="VIA_TP" device="" value="V+"/>
+<part name="U$4" library="RoboJackets-Connectors" deviceset="VIA_TP" device="" value="GND"/>
 </parts>
 <sheets>
 <sheet>
@@ -145,10 +145,6 @@ In this library you will find all the connectors used on any of our boards.
 <wire x1="34.29" y1="43.18" x2="36.83" y2="41.91" width="0.1524" layer="97"/>
 <wire x1="36.83" y1="41.91" x2="35.56" y2="40.64" width="0.1524" layer="97"/>
 <wire x1="35.56" y1="40.64" x2="35.56" y2="38.1" width="0.1524" layer="97"/>
-<wire x1="12.7" y1="60.96" x2="53.34" y2="60.96" width="0.1524" layer="97"/>
-<wire x1="53.34" y1="60.96" x2="53.34" y2="25.4" width="0.1524" layer="97"/>
-<wire x1="53.34" y1="25.4" x2="12.7" y2="25.4" width="0.1524" layer="97"/>
-<wire x1="12.7" y1="25.4" x2="12.7" y2="60.96" width="0.1524" layer="97"/>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="17.78" y="53.34" rot="R270"/>
@@ -159,7 +155,7 @@ In this library you will find all the connectors used on any of our boards.
 <busses>
 </busses>
 <nets>
-<net name="RSHUNT_1" class="0">
+<net name="RSHUNT" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="P$1"/>
 <wire x1="20.32" y1="53.34" x2="35.56" y2="53.34" width="0.1524" layer="91"/>
@@ -172,7 +168,6 @@ In this library you will find all the connectors used on any of our boards.
 <wire x1="35.56" y1="53.34" x2="35.56" y2="38.1" width="0.1524" layer="91"/>
 <junction x="35.56" y="53.34"/>
 <junction x="35.56" y="38.1"/>
-<label x="27.94" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
