@@ -78,6 +78,28 @@
 <rectangle x1="11.43" y1="42.545" x2="16.51" y2="46.99" layer="21"/>
 <text x="8.255" y="43.815" size="1.778" layer="21">a=</text>
 <dimension x1="12.7" y1="40.64" x2="12.7" y2="33.02" x3="19.685" y3="36.83" textsize="1.27" layer="21" dtype="vertical" width="0.127" unit="inch" precision="4"/>
+<text x="3.81" y="26.035" size="1.778" layer="21">0.583mOhm</text>
+<dimension x1="27.94" y1="33.02" x2="38.1" y2="33.02" x3="33.02" y3="29.845" textsize="1.27" layer="21" width="0.127" unit="inch" precision="4"/>
+<text x="27.94" y="26.035" size="1.778" layer="21">0.364mOhm</text>
+<dimension x1="33.02" y1="40.64" x2="33.02" y2="33.02" x3="25.4" y3="36.83" textsize="1.27" layer="21" width="0.127" unit="inch" precision="4"/>
+<rectangle x1="30.48" y1="42.545" x2="35.56" y2="46.99" layer="21"/>
+<text x="27.305" y="43.815" size="1.778" layer="21">a=</text>
+<dimension x1="8.255" y1="10.16" x2="17.145" y2="10.16" x3="12.7" y3="6.985" textsize="1.27" layer="21" width="0.127" unit="inch" precision="4"/>
+<dimension x1="12.7" y1="17.78" x2="12.7" y2="10.16" x3="19.685" y3="13.97" textsize="1.27" layer="21" width="0.127" unit="inch" precision="4"/>
+<text x="3.81" y="3.175" size="1.778" layer="21">0.416mOhm</text>
+<rectangle x1="11.43" y1="20.32" x2="16.51" y2="24.765" layer="21"/>
+<rectangle x1="30.48" y1="20.32" x2="35.56" y2="24.765" layer="21"/>
+<text x="8.255" y="21.59" size="1.778" layer="21">a=</text>
+<text x="27.305" y="21.59" size="1.778" layer="21">a=</text>
+<dimension x1="33.02" y1="17.78" x2="33.02" y2="10.16" x3="25.4" y3="13.97" textsize="1.27" layer="21" width="0.127" unit="inch" precision="4"/>
+<dimension x1="26.67" y1="10.16" x2="39.37" y2="10.16" x3="33.02" y3="6.985" textsize="1.27" layer="21" width="0.127" unit="inch" precision="4"/>
+<text x="27.94" y="3.81" size="1.778" layer="21">0.291mOhm</text>
+<rectangle x1="8.89" y1="32.385" x2="16.51" y2="41.275" layer="22"/>
+<rectangle x1="29.21" y1="32.385" x2="36.83" y2="41.275" layer="22"/>
+<rectangle x1="29.21" y1="9.525" x2="36.83" y2="18.415" layer="22"/>
+<rectangle x1="8.89" y1="9.525" x2="16.51" y2="18.415" layer="22"/>
+<text x="24.13" y="1.905" size="1.778" layer="22" rot="MR90">RJRC</text>
+<text x="21.59" y="1.905" size="1.778" layer="22" rot="MR90">PCB Shunt Resistor Test rev-a</text>
 </plain>
 <libraries>
 <library name="RoboJackets-Connectors">
@@ -291,6 +313,54 @@ design rules under a new name.
 <attribute name="VALUE" x="5.08" y="34.29" size="1.27" layer="21"/>
 <attribute name="VALUE" x="5.08" y="35.56" size="1.27" layer="22" rot="MR180"/>
 </element>
+<element name="U$5" library="RoboJackets-Connectors" package="VIA_2MM" value="I2+" x="45.085" y="42.545" smashed="yes" rot="R90">
+<attribute name="VALUE" x="43.18" y="43.18" size="1.27" layer="21" rot="R180"/>
+<attribute name="VALUE" x="43.18" y="41.91" size="1.27" layer="22" rot="MR0"/>
+</element>
+<element name="U$6" library="RoboJackets-Connectors" package="VIA_2MM" value="I2-" x="45.085" y="31.115" smashed="yes" rot="R90">
+<attribute name="VALUE" x="43.18" y="31.75" size="1.27" layer="21" rot="R180"/>
+<attribute name="VALUE" x="43.18" y="30.48" size="1.27" layer="22" rot="MR0"/>
+</element>
+<element name="U$7" library="RoboJackets-Connectors" package="VIA_2MM" value="V2+" x="45.085" y="38.735" smashed="yes" rot="R90">
+<attribute name="VALUE" x="43.18" y="39.37" size="1.27" layer="21" rot="R180"/>
+<attribute name="VALUE" x="43.18" y="38.1" size="1.27" layer="22" rot="MR0"/>
+</element>
+<element name="U$8" library="RoboJackets-Connectors" package="VIA_2MM" value="GND2" x="45.085" y="34.925" smashed="yes" rot="R90">
+<attribute name="VALUE" x="43.18" y="35.56" size="1.27" layer="21" rot="R180"/>
+<attribute name="VALUE" x="43.18" y="34.29" size="1.27" layer="22" rot="MR0"/>
+</element>
+<element name="U$9" library="RoboJackets-Connectors" package="VIA_2MM" value="I3+" x="3.175" y="19.685" smashed="yes" rot="R270">
+<attribute name="VALUE" x="5.08" y="19.05" size="1.27" layer="21"/>
+<attribute name="VALUE" x="5.08" y="20.32" size="1.27" layer="22" rot="MR180"/>
+</element>
+<element name="U$10" library="RoboJackets-Connectors" package="VIA_2MM" value="I3-" x="3.175" y="8.255" smashed="yes" rot="R270">
+<attribute name="VALUE" x="5.08" y="7.62" size="1.27" layer="21"/>
+<attribute name="VALUE" x="5.08" y="8.89" size="1.27" layer="22" rot="MR180"/>
+</element>
+<element name="U$11" library="RoboJackets-Connectors" package="VIA_2MM" value="V3+" x="3.175" y="15.875" smashed="yes" rot="R270">
+<attribute name="VALUE" x="5.08" y="15.24" size="1.27" layer="21"/>
+<attribute name="VALUE" x="5.08" y="16.51" size="1.27" layer="22" rot="MR180"/>
+</element>
+<element name="U$12" library="RoboJackets-Connectors" package="VIA_2MM" value="GND3" x="3.175" y="12.065" smashed="yes" rot="R270">
+<attribute name="VALUE" x="5.08" y="11.43" size="1.27" layer="21"/>
+<attribute name="VALUE" x="5.08" y="12.7" size="1.27" layer="22" rot="MR180"/>
+</element>
+<element name="U$13" library="RoboJackets-Connectors" package="VIA_2MM" value="I4+" x="45.085" y="19.685" smashed="yes" rot="R90">
+<attribute name="VALUE" x="43.18" y="20.32" size="1.27" layer="21" rot="R180"/>
+<attribute name="VALUE" x="43.18" y="19.05" size="1.27" layer="22" rot="MR0"/>
+</element>
+<element name="U$14" library="RoboJackets-Connectors" package="VIA_2MM" value="I4-" x="45.085" y="8.255" smashed="yes" rot="R90">
+<attribute name="VALUE" x="43.18" y="8.89" size="1.27" layer="21" rot="R180"/>
+<attribute name="VALUE" x="43.18" y="7.62" size="1.27" layer="22" rot="MR0"/>
+</element>
+<element name="U$15" library="RoboJackets-Connectors" package="VIA_2MM" value="V4+" x="45.085" y="15.875" smashed="yes" rot="R90">
+<attribute name="VALUE" x="43.18" y="16.51" size="1.27" layer="21" rot="R180"/>
+<attribute name="VALUE" x="43.18" y="15.24" size="1.27" layer="22" rot="MR0"/>
+</element>
+<element name="U$16" library="RoboJackets-Connectors" package="VIA_2MM" value="GND4" x="45.085" y="12.065" smashed="yes" rot="R90">
+<attribute name="VALUE" x="43.18" y="12.7" size="1.27" layer="21" rot="R180"/>
+<attribute name="VALUE" x="43.18" y="11.43" size="1.27" layer="22" rot="MR0"/>
+</element>
 </elements>
 <signals>
 <signal name="RSHUNT_1">
@@ -318,6 +388,84 @@ design rules under a new name.
 <wire x1="6.985" y1="34.925" x2="8.89" y2="33.02" width="1.016" layer="1"/>
 <wire x1="8.89" y1="33.02" x2="12.7" y2="33.02" width="1.016" layer="1"/>
 <wire x1="3.175" y1="31.115" x2="12.7" y2="31.115" width="1.016" layer="16"/>
+</signal>
+<signal name="RSHUNT_2">
+<contactref element="U$5" pad="P$1"/>
+<contactref element="U$7" pad="P$1"/>
+<contactref element="U$6" pad="P$1"/>
+<contactref element="U$8" pad="P$1"/>
+<via x="33.02" y="40.64" extent="1-16" drill="0.381" shape="square"/>
+<via x="33.02" y="33.02" extent="1-16" drill="0.381"/>
+<wire x1="45.085" y1="42.545" x2="33.02" y2="42.545" width="1.016" layer="16"/>
+<wire x1="33.02" y1="42.545" x2="33.02" y2="40.64" width="1.016" layer="16"/>
+<wire x1="45.085" y1="31.115" x2="33.02" y2="31.115" width="1.016" layer="16"/>
+<wire x1="33.02" y1="31.115" x2="33.02" y2="33.02" width="1.016" layer="16"/>
+<wire x1="45.085" y1="38.735" x2="40.64" y2="38.735" width="1.016" layer="1"/>
+<wire x1="45.085" y1="34.925" x2="40.64" y2="34.925" width="1.016" layer="1"/>
+<wire x1="33.02" y1="33.02" x2="38.735" y2="33.02" width="1.016" layer="1"/>
+<wire x1="38.735" y1="33.02" x2="40.64" y2="34.925" width="1.016" layer="1"/>
+<wire x1="33.02" y1="40.64" x2="38.735" y2="40.64" width="1.016" layer="1"/>
+<wire x1="38.735" y1="40.64" x2="40.64" y2="38.735" width="1.016" layer="1"/>
+<polygon width="0.254" layer="16">
+<vertex x="27.94" y="40.64"/>
+<vertex x="27.94" y="33.02"/>
+<vertex x="33.02" y="32.385"/>
+<vertex x="38.1" y="33.02"/>
+<vertex x="38.1" y="40.64"/>
+<vertex x="33.02" y="41.275"/>
+</polygon>
+</signal>
+<signal name="RSHUNT_3">
+<contactref element="U$9" pad="P$1"/>
+<contactref element="U$11" pad="P$1"/>
+<contactref element="U$10" pad="P$1"/>
+<contactref element="U$12" pad="P$1"/>
+<wire x1="3.175" y1="19.685" x2="12.7" y2="19.685" width="1.016" layer="16"/>
+<wire x1="3.175" y1="8.255" x2="12.7" y2="8.255" width="1.016" layer="16"/>
+<polygon width="0.254" layer="16">
+<vertex x="12.7" y="18.415"/>
+<vertex x="17.145" y="17.78"/>
+<vertex x="17.145" y="10.16"/>
+<vertex x="12.7" y="9.525"/>
+<vertex x="8.255" y="10.16"/>
+<vertex x="8.255" y="17.78"/>
+</polygon>
+<wire x1="12.7" y1="19.685" x2="12.7" y2="17.78" width="1.016" layer="16"/>
+<wire x1="12.7" y1="8.255" x2="12.7" y2="10.16" width="1.016" layer="16"/>
+<wire x1="3.175" y1="12.065" x2="5.715" y2="12.065" width="1.016" layer="1"/>
+<wire x1="5.715" y1="12.065" x2="7.62" y2="10.16" width="1.016" layer="1"/>
+<wire x1="3.175" y1="15.875" x2="5.715" y2="15.875" width="1.016" layer="1"/>
+<wire x1="5.715" y1="15.875" x2="7.62" y2="17.78" width="1.016" layer="1"/>
+<wire x1="7.62" y1="17.78" x2="12.7" y2="17.78" width="1.016" layer="1"/>
+<wire x1="7.62" y1="10.16" x2="12.7" y2="10.16" width="1.016" layer="1"/>
+<via x="12.7" y="10.16" extent="1-16" drill="0.381"/>
+<via x="12.7" y="17.78" extent="1-16" drill="0.381" shape="square"/>
+</signal>
+<signal name="RSHUNT_4">
+<contactref element="U$13" pad="P$1"/>
+<contactref element="U$15" pad="P$1"/>
+<contactref element="U$14" pad="P$1"/>
+<contactref element="U$16" pad="P$1"/>
+<polygon width="0.254" layer="16">
+<vertex x="33.02" y="18.415"/>
+<vertex x="26.67" y="17.78"/>
+<vertex x="26.67" y="10.16"/>
+<vertex x="33.02" y="9.525"/>
+<vertex x="39.37" y="10.16"/>
+<vertex x="39.37" y="17.78"/>
+</polygon>
+<via x="33.02" y="17.78" extent="1-16" drill="0.381" shape="square"/>
+<via x="33.02" y="10.16" extent="1-16" drill="0.381"/>
+<wire x1="45.085" y1="12.065" x2="41.91" y2="12.065" width="1.016" layer="1"/>
+<wire x1="41.91" y1="12.065" x2="40.005" y2="10.16" width="1.016" layer="1"/>
+<wire x1="40.005" y1="10.16" x2="33.02" y2="10.16" width="1.016" layer="1"/>
+<wire x1="45.085" y1="15.875" x2="41.91" y2="15.875" width="1.016" layer="1"/>
+<wire x1="41.91" y1="15.875" x2="40.005" y2="17.78" width="1.016" layer="1"/>
+<wire x1="40.005" y1="17.78" x2="33.02" y2="17.78" width="1.016" layer="1"/>
+<wire x1="45.085" y1="19.685" x2="33.02" y2="19.685" width="1.016" layer="16"/>
+<wire x1="33.02" y1="19.685" x2="33.02" y2="17.78" width="1.016" layer="16"/>
+<wire x1="45.085" y1="8.255" x2="33.02" y2="8.255" width="1.016" layer="16"/>
+<wire x1="33.02" y1="8.255" x2="33.02" y2="10.16" width="1.016" layer="16"/>
 </signal>
 </signals>
 </board>
