@@ -792,6 +792,53 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <text x="-7.62" y="-2.54" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <circle x="-3.81" y="3.175" radius="0.898025" width="0.6096" layer="21"/>
 </package>
+<package name="DF22L-3-H">
+<pad name="2" x="0" y="0" drill="1.6"/>
+<pad name="3" x="-7.92" y="0" drill="1.6"/>
+<pad name="1" x="7.92" y="0" drill="1.6" shape="square"/>
+<wire x1="-13.86" y1="18.7" x2="13.86" y2="18.7" width="0.127" layer="21"/>
+<wire x1="13.86" y1="18.7" x2="13.86" y2="-5.3" width="0.127" layer="21"/>
+<wire x1="13.86" y1="-5.3" x2="12.36" y2="-5.3" width="0.127" layer="21"/>
+<wire x1="-12.36" y1="-5.3" x2="-13.86" y2="-5.3" width="0.127" layer="21"/>
+<wire x1="-13.86" y1="-5.3" x2="-13.86" y2="18.7" width="0.127" layer="21"/>
+<hole x="-11.46" y="15.2" drill="1.7"/>
+<hole x="11.46" y="15.2" drill="1.7"/>
+<wire x1="-12.36" y1="-5.3" x2="-12.36" y2="1.1" width="0.127" layer="21"/>
+<wire x1="-12.36" y1="1.1" x2="-8.925" y2="1.1" width="0.127" layer="21"/>
+<wire x1="-6.915" y1="1.1" x2="-1.005" y2="1.1" width="0.127" layer="21"/>
+<wire x1="1.005" y1="1.1" x2="6.915" y2="1.1" width="0.127" layer="21"/>
+<wire x1="8.925" y1="1.1" x2="12.36" y2="1.1" width="0.127" layer="21"/>
+<wire x1="12.36" y1="1.1" x2="12.36" y2="-5.3" width="0.127" layer="21"/>
+<wire x1="-12.36" y1="-5.3" x2="12.36" y2="-5.3" width="0.127" layer="21"/>
+<text x="-15.24" y="-5.08" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<wire x1="-8.925" y1="1.1" x2="-6.915" y2="1.1" width="0.127" layer="21"/>
+<wire x1="-1.005" y1="1.1" x2="1.005" y2="1.1" width="0.127" layer="21"/>
+<wire x1="6.915" y1="1.1" x2="8.925" y2="1.1" width="0.127" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="8.925" y="1.1"/>
+<vertex x="8.925" y="6.09"/>
+<vertex x="8.415" y="8"/>
+<vertex x="7.425" y="8"/>
+<vertex x="6.915" y="6.09"/>
+<vertex x="6.915" y="1.1"/>
+</polygon>
+<polygon width="0.127" layer="21">
+<vertex x="1.005" y="1.1"/>
+<vertex x="1.005" y="6.09"/>
+<vertex x="0.495" y="8"/>
+<vertex x="-0.495" y="8"/>
+<vertex x="-1.005" y="6.09"/>
+<vertex x="-1.005" y="1.1"/>
+</polygon>
+<polygon width="0.127" layer="21">
+<vertex x="-6.915" y="1.1"/>
+<vertex x="-6.915" y="6.09"/>
+<vertex x="-7.425" y="8"/>
+<vertex x="-8.415" y="8"/>
+<vertex x="-8.925" y="6.09"/>
+<vertex x="-8.925" y="1.1"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="2-PIN_CONN">
@@ -1795,6 +1842,23 @@ XT-60 Power Connector
 <connect gate="G$1" pin="4" pad="4"/>
 <connect gate="SUPPORT" pin="1" pad="SUPPORT1"/>
 <connect gate="SUPPORT" pin="2" pad="SUPPORT2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DF22L-3" prefix="J">
+<gates>
+<gate name="G$1" symbol="3-PIN_CONN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="RIGHT_ANGLE" package="DF22L-3-H">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
