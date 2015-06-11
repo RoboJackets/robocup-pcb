@@ -14286,12 +14286,10 @@ INTERNATIONAL RECTIFIER, irg4bc15ud-s.pdf</description>
 <text x="-2.54" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="+12V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
-<symbol name="+05V">
-<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="0" y1="0.635" x2="0" y2="1.905" width="0.1524" layer="94"/>
+<symbol name="VDD">
 <circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
 <text x="-1.905" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+<pin name="VDD" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -14321,10 +14319,10 @@ INTERNATIONAL RECTIFIER, irg4bc15ud-s.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="+5V" prefix="SUPPLY">
+<deviceset name="VDD" prefix="SUPPLY">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
-<gate name="+5V" symbol="+05V" x="0" y="0"/>
+<gate name="G$1" symbol="VDD" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -16303,11 +16301,10 @@ In this library you will find switches and other mechanical assisted circuit ele
 <text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
 <text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
-<wire x1="-1.473" y1="0.635" x2="1.473" y2="0.635" width="0.127" layer="21"/>
-<wire x1="1.473" y1="-0.635" x2="-1.473" y2="-0.635" width="0.127" layer="21"/>
-<rectangle x1="-0.635" y1="-0.635" x2="0.635" y2="0.635" layer="21"/>
-<wire x1="-1.473" y1="0.635" x2="-1.473" y2="-0.635" width="0.127" layer="21"/>
-<wire x1="1.473" y1="0.635" x2="1.473" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-1.473" y1="0.9525" x2="1.473" y2="0.9525" width="0.127" layer="21"/>
+<wire x1="1.473" y1="-0.9525" x2="-1.473" y2="-0.9525" width="0.127" layer="21"/>
+<wire x1="-1.473" y1="0.9525" x2="-1.473" y2="-0.9525" width="0.127" layer="21"/>
+<wire x1="1.473" y1="0.9525" x2="1.473" y2="-0.9525" width="0.127" layer="21"/>
 <rectangle x1="-1.27" y1="-0.635" x2="1.27" y2="0.635" layer="29"/>
 </package>
 <package name="SB1206">
@@ -16591,6 +16588,11 @@ In this library you will find all the connectors used on any of our boards.
 <vertex x="-8.925" y="1.1"/>
 </polygon>
 </package>
+<package name="VIA_2MM">
+<pad name="P$1" x="0" y="0" drill="2"/>
+<text x="-2.54" y="2.54" size="1.27" layer="21">&gt;VALUE</text>
+<text x="-2.54" y="-2.54" size="1.27" layer="22" rot="MR180">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="3-PIN_CONN">
@@ -16607,6 +16609,12 @@ In this library you will find all the connectors used on any of our boards.
 <wire x1="2.54" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
 </symbol>
+<symbol name="VIA_TP">
+<pin name="P$1" x="0" y="2.54" visible="off" length="short" direction="pwr" rot="R270"/>
+<circle x="0" y="-1.27" radius="1.27" width="0.254" layer="94"/>
+<circle x="0" y="-1.27" radius="1.905" width="0.254" layer="94"/>
+<text x="2.54" y="2.54" size="0.8128" layer="97" rot="R270">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="DF22L-3" prefix="J">
@@ -16619,6 +16627,21 @@ In this library you will find all the connectors used on any of our boards.
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VIA_TP" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="VIA_TP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="VIA_2MM">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -16644,14 +16667,14 @@ In this library you will find all the connectors used on any of our boards.
 <part name="FRAME1" library="frames" deviceset="FRAME_B_L" device=""/>
 <part name="R_KICK" library="rcl" deviceset="R-US_" device="R1206" value="NP"/>
 <part name="R_CHIP" library="rcl" deviceset="R-US_" device="R1206" value="NP"/>
-<part name="C6" library="rcl" deviceset="C-US" device="C1206K" value="4.7uF"/>
-<part name="C7" library="rcl" deviceset="CPOL-US" device="C/6032-28R" value="47uF"/>
+<part name="C4" library="rcl" deviceset="C-US" device="C1206K" value="4.7uF"/>
+<part name="C3" library="rcl" deviceset="CPOL-US" device="C/6032-28R" value="47uF"/>
 <part name="F1" library="littlefuse" deviceset="NANO2_157" device="" value="30A"/>
 <part name="J1" library="jst_vh" deviceset="JST_VH_2" device="RA" value="POWER"/>
-<part name="J2" library="jst_vh" deviceset="JST_VH_2" device="RA" value="KICK"/>
-<part name="J3" library="jst_vh" deviceset="JST_VH_2" device="RA" value="CHIP"/>
-<part name="R1" library="rcl" deviceset="R-US_" device="R0603" value="10.0k"/>
-<part name="R2" library="rcl" deviceset="R-US_" device="R0603" value="10.0k"/>
+<part name="J3" library="jst_vh" deviceset="JST_VH_2" device="RA" value="KICK"/>
+<part name="J2" library="jst_vh" deviceset="JST_VH_2" device="RA" value="CHIP"/>
+<part name="R8" library="rcl" deviceset="R-US_" device="R0603" value="10.0k"/>
+<part name="R9" library="rcl" deviceset="R-US_" device="R0603" value="10.0k"/>
 <part name="J4" library="con-robocup" deviceset="0528520870" device=""/>
 <part name="V3" library="supply2" deviceset="GND" device=""/>
 <part name="V4" library="supply2" deviceset="+12V" device=""/>
@@ -16662,66 +16685,68 @@ In this library you will find all the connectors used on any of our boards.
 <part name="V7" library="supply2" deviceset="GND" device=""/>
 <part name="V10" library="supply2" deviceset="GND" device=""/>
 <part name="V11" library="supply2" deviceset="GND" device=""/>
-<part name="R6" library="rcl" deviceset="R-US_" device="R0603" value="10"/>
-<part name="R4" library="rcl" deviceset="R-US_" device="R0603" value="10"/>
+<part name="R10" library="rcl" deviceset="R-US_" device="R0603" value="10"/>
+<part name="R11" library="rcl" deviceset="R-US_" device="R0603" value="10"/>
 <part name="V6" library="supply2" deviceset="+12V" device=""/>
-<part name="D4" library="diode" deviceset="ZENER-DIODE" device="SOD80C" value="BZV55-B18,115"/>
 <part name="D5" library="diode" deviceset="ZENER-DIODE" device="SOD80C" value="BZV55-B18,115"/>
+<part name="D3" library="diode" deviceset="ZENER-DIODE" device="SOD80C" value="BZV55-B18,115"/>
 <part name="V12" library="supply2" deviceset="GND" device=""/>
 <part name="V13" library="supply2" deviceset="GND" device=""/>
-<part name="R8" library="rcl" deviceset="R-US_" device="R0603" value="1.00M 1%"/>
-<part name="R9" library="rcl" deviceset="R-US_" device="R0603" value="10.0k 1%"/>
+<part name="R12" library="rcl" deviceset="R-US_" device="R0603" value="1.00M 1%"/>
+<part name="R13" library="rcl" deviceset="R-US_" device="R0603" value="10.0k 1%"/>
 <part name="V17" library="supply2" deviceset="GND" device=""/>
 <part name="RC" library="rcl" deviceset="R-US_" device="R0603" value="6.8k"/>
-<part name="U2" library="power" deviceset="LT3757" device=""/>
+<part name="U1" library="power" deviceset="LT3757" device=""/>
 <part name="RT" library="rcl" deviceset="R-US_" device="R0603" value="140k"/>
-<part name="R18" library="rcl" deviceset="R-US_" device="R0603" value="10.0k"/>
+<part name="R1" library="rcl" deviceset="R-US_" device="R0603" value="10.0k"/>
 <part name="C1" library="rcl" deviceset="CPOL-US" device="G" value="UWT1E471MNL1GS"/>
 <part name="CVCC" library="rcl" deviceset="C-US" device="C1206" value="4.7uF, 25v"/>
 <part name="CC2" library="rcl" deviceset="C-US" device="C0603" value="100pF"/>
 <part name="CC1" library="rcl" deviceset="C-US" device="C0603" value="22nF"/>
 <part name="RS" library="rcl" deviceset="R-US_" device="R0805" value="0.015 (ERJ-6BWFR015V)"/>
-<part name="R21" library="rcl" deviceset="R-US_" device="R0603" value="470k 1%"/>
-<part name="R22" library="rcl" deviceset="R-US_" device="R0603" value="1.00M, 1% (MCR03EZPFX1004)"/>
-<part name="R23" library="rcl" deviceset="R-US_" device="R0603" value="1.00M, 1% (MCR03EZPFX1004)"/>
-<part name="R11" library="rcl" deviceset="R-US_" device="R0603" value="16.20k, 1% (MCR03EZPFX1622)"/>
+<part name="R6" library="rcl" deviceset="R-US_" device="R0603" value="470k 1%"/>
+<part name="R4" library="rcl" deviceset="R-US_" device="R0603" value="1.00M, 1% (MCR03EZPFX1004)"/>
+<part name="R5" library="rcl" deviceset="R-US_" device="R0603" value="1.00M, 1% (MCR03EZPFX1004)"/>
+<part name="R7" library="rcl" deviceset="R-US_" device="R0603" value="16.20k, 1% (MCR03EZPFX1622)"/>
 <part name="V19" library="supply2" deviceset="GND" device=""/>
 <part name="V20" library="supply2" deviceset="GND" device=""/>
 <part name="CSS" library="rcl" deviceset="C-US" device="C0603" value="100nF"/>
-<part name="R14" library="rcl" deviceset="R-US_" device="R0603" value="22"/>
+<part name="R3" library="rcl" deviceset="R-US_" device="R0603" value="22"/>
 <part name="CS" library="rcl" deviceset="C-US" device="C0603" value="22nF"/>
-<part name="R24" library="rcl" deviceset="R-US_" device="R0603" value="22"/>
+<part name="R2" library="rcl" deviceset="R-US_" device="R0603" value="22"/>
 <part name="C2" library="rcl" deviceset="C-US" device="C0603" value="220pF 100V"/>
 <part name="V21" library="supply2" deviceset="GND" device=""/>
-<part name="Q5" library="zetex" deviceset="NMOSSOT223" device="" value="FQT1N80"/>
-<part name="Q4" library="zetex" deviceset="NMOSSOT23" device="" value="FDV303N"/>
-<part name="D8" library="diode" deviceset="ZENER-DIODE" device="SOD80C" value="BZV55-B18,115"/>
+<part name="Q4" library="zetex" deviceset="NMOSSOT223" device="" value="FQT1N80"/>
+<part name="Q3" library="zetex" deviceset="NMOSSOT23" device="" value="FDV303N"/>
+<part name="D7" library="diode" deviceset="ZENER-DIODE" device="SOD80C" value="BZV55-B18,115"/>
 <part name="V22" library="supply2" deviceset="GND" device=""/>
-<part name="R27" library="rcl" deviceset="R-US_" device="R2512" value="RHC2512FT33K0"/>
-<part name="R28" library="rcl" deviceset="R-US_" device="R0603" value="10M"/>
-<part name="D10" library="led" deviceset="LED" device="CHIPLED_0603" value="LTST-S270KRKT"/>
-<part name="R29" library="rcl" deviceset="R-US_" device="R0603" value="220"/>
-<part name="D9" library="diode" deviceset="DIODE-" device="SOD323-W" value="BAS16H"/>
-<part name="U3" library="RoboJackets-PowerICs" deviceset="IX4427" device="N"/>
-<part name="SUPPLY11" library="supply2" deviceset="+5V" device=""/>
-<part name="D2" library="RoboJackets-Diodes" deviceset="S10M" device=""/>
-<part name="D3" library="RoboJackets-Diodes" deviceset="S10M" device=""/>
-<part name="SB1" library="RoboJackets-Switches" deviceset="SOLDERBRIDGE" device="SB0603" value="NC"/>
-<part name="SB2" library="RoboJackets-Switches" deviceset="SOLDERBRIDGE" device="SB0603" value="NC"/>
+<part name="R15" library="rcl" deviceset="R-US_" device="R2512" value="RHC2512FT33K0"/>
+<part name="R14" library="rcl" deviceset="R-US_" device="R0603" value="10M"/>
+<part name="LED" library="led" deviceset="LED" device="CHIPLED_0603" value="LTST-S270KRKT"/>
+<part name="R16" library="rcl" deviceset="R-US_" device="R0603" value="220"/>
+<part name="D8" library="diode" deviceset="DIODE-" device="SOD323-W" value="BAS16H"/>
+<part name="U2" library="RoboJackets-PowerICs" deviceset="IX4427" device="N"/>
+<part name="D6" library="RoboJackets-Diodes" deviceset="S10M" device=""/>
+<part name="D4" library="RoboJackets-Diodes" deviceset="S10M" device=""/>
+<part name="SB1" library="RoboJackets-Switches" deviceset="SOLDERBRIDGE" device="SB0603" value="5V_SEL"/>
+<part name="SB3" library="RoboJackets-Switches" deviceset="SOLDERBRIDGE" device="SB0603" value="GND_NC"/>
 <part name="V5" library="supply2" deviceset="GND" device=""/>
-<part name="U1" library="RoboJackets-ICs" deviceset="ATTINY24A/44A/84A" device="PDIP/SOIC" value="ATtiny44A"/>
-<part name="SUPPLY1" library="supply2" deviceset="+5V" device=""/>
-<part name="C4" library="rcl" deviceset="C-US" device="C0603K" value="47u"/>
-<part name="C5" library="rcl" deviceset="C-US" device="C0603K" value="4.7u"/>
+<part name="U3" library="RoboJackets-ICs" deviceset="ATTINY24A/44A/84A" device="PDIP/SOIC" value="ATtiny44A"/>
+<part name="C5" library="rcl" deviceset="C-US" device="C0603K" value="47u"/>
+<part name="C6" library="rcl" deviceset="C-US" device="C0603K" value="4.7u"/>
 <part name="V14" library="supply2" deviceset="GND" device=""/>
 <part name="V15" library="supply2" deviceset="GND" device=""/>
-<part name="SB3" library="RoboJackets-Switches" deviceset="SOLDERBRIDGE" device="SB0603" value="NO"/>
+<part name="SB5" library="RoboJackets-Switches" deviceset="SOLDERBRIDGE" device="SB0603" value="NO"/>
 <part name="SB4" library="RoboJackets-Switches" deviceset="SOLDERBRIDGE" device="SB0603" value="NO"/>
 <part name="Q2" library="RoboJackets-Discrete" deviceset="IXGK400N30A3_2" device=""/>
 <part name="J5" library="RoboJackets-Connectors" deviceset="DF22L-3" device="RIGHT_ANGLE"/>
 <part name="J6" library="RoboJackets-Connectors" deviceset="DF22L-3" device="RIGHT_ANGLE"/>
-<part name="SUPPLY2" library="supply2" deviceset="+5V" device=""/>
 <part name="V16" library="supply2" deviceset="GND" device=""/>
+<part name="SB2" library="RoboJackets-Switches" deviceset="SOLDERBRIDGE" device="SB0603" value="3.3V_SEL"/>
+<part name="SUPPLY3" library="supply2" deviceset="VDD" device=""/>
+<part name="SUPPLY4" library="supply2" deviceset="VDD" device=""/>
+<part name="TP1" library="RoboJackets-Connectors" deviceset="VIA_TP" device="" value="GND"/>
+<part name="V18" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16742,10 +16767,10 @@ In this library you will find all the connectors used on any of our boards.
 <wire x1="358.14" y1="271.78" x2="358.14" y2="147.32" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="358.14" y1="147.32" x2="220.98" y2="147.32" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="220.98" y1="147.32" x2="220.98" y2="271.78" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="342.9" y1="101.6" x2="419.1" y2="101.6" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="419.1" y1="101.6" x2="419.1" y2="38.1" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="419.1" y1="38.1" x2="342.9" y2="38.1" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="342.9" y1="38.1" x2="342.9" y2="101.6" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="7.62" y1="81.28" x2="83.82" y2="81.28" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="83.82" y1="81.28" x2="83.82" y2="17.78" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="83.82" y1="17.78" x2="7.62" y2="17.78" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="7.62" y1="17.78" x2="7.62" y2="81.28" width="0.1524" layer="97" style="shortdash"/>
 <text x="327.66" y="25.4" size="2.54" layer="94" font="vector">RoboCup SSL 2015 Kicker</text>
 <text x="327.66" y="30.48" size="2.54" layer="94" font="vector">Georgia Tech RoboJackets</text>
 <text x="154.94" y="251.46" size="1.778" layer="95">STTH3BCF060U</text>
@@ -16754,19 +16779,19 @@ In this library you will find all the connectors used on any of our boards.
 <text x="401.32" y="269.24" size="1.778" layer="97">Voltage Monitor</text>
 <text x="10.16" y="269.24" size="1.778" layer="97">Charger</text>
 <text x="223.52" y="269.24" size="1.778" layer="97">Trigger</text>
-<text x="345.44" y="99.06" size="1.778" layer="97">Auto-discharge</text>
+<text x="10.16" y="78.74" size="1.778" layer="97">Auto-discharge</text>
 <text x="114.3" y="261.62" size="1.778" layer="91">http://www.coilcraft.com/ga3459.cfm</text>
 <text x="114.3" y="264.16" size="1.778" layer="91">Higher current rating; Set LT3757 to higher current mode?</text>
-<wire x1="210.82" y1="127" x2="45.72" y2="127" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="210.82" y1="53.34" x2="45.72" y2="53.34" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="210.82" y1="127" x2="210.82" y2="53.34" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="45.72" y1="127" x2="45.72" y2="53.34" width="0.1524" layer="97" style="shortdash"/>
-<text x="48.26" y="124.46" size="1.778" layer="97">MCU</text>
-<wire x1="243.84" y1="58.42" x2="243.84" y2="121.92" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="243.84" y1="121.92" x2="307.34" y2="121.92" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="307.34" y1="121.92" x2="307.34" y2="58.42" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="307.34" y1="58.42" x2="243.84" y2="58.42" width="0.1524" layer="97" style="shortdash"/>
-<text x="246.38" y="119.38" size="1.778" layer="97">Capacitor Connector</text>
+<wire x1="172.72" y1="157.48" x2="7.62" y2="157.48" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="172.72" y1="83.82" x2="7.62" y2="83.82" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="172.72" y1="157.48" x2="172.72" y2="83.82" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="7.62" y1="157.48" x2="7.62" y2="83.82" width="0.1524" layer="97" style="shortdash"/>
+<text x="10.16" y="154.94" size="1.778" layer="97">MCU</text>
+<wire x1="360.68" y1="119.38" x2="360.68" y2="182.88" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="360.68" y1="182.88" x2="424.18" y2="182.88" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="424.18" y1="182.88" x2="424.18" y2="119.38" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="424.18" y1="119.38" x2="360.68" y2="119.38" width="0.1524" layer="97" style="shortdash"/>
+<text x="363.22" y="180.34" size="1.778" layer="97">Capacitor Connector</text>
 </plain>
 <instances>
 <instance part="D1" gate="G$1" x="160.02" y="248.92" smashed="yes">
@@ -16788,8 +16813,8 @@ In this library you will find all the connectors used on any of our boards.
 <attribute name="NAME" x="328.93" y="236.4486" size="1.778" layer="95"/>
 <attribute name="VALUE" x="328.93" y="234.188" size="1.778" layer="96"/>
 </instance>
-<instance part="C6" gate="G$1" x="256.54" y="241.3"/>
-<instance part="C7" gate="G$1" x="246.38" y="241.3"/>
+<instance part="C4" gate="G$1" x="256.54" y="241.3"/>
+<instance part="C3" gate="G$1" x="246.38" y="241.3"/>
 <instance part="F1" gate="G$1" x="378.46" y="256.54" smashed="yes">
 <attribute name="NAME" x="374.65" y="260.35" size="1.778" layer="95"/>
 <attribute name="VALUE" x="374.65" y="257.81" size="1.778" layer="96"/>
@@ -16798,25 +16823,25 @@ In this library you will find all the connectors used on any of our boards.
 <attribute name="NAME" x="363.22" y="261.62" size="1.778" layer="95"/>
 <attribute name="VALUE" x="363.22" y="259.08" size="1.778" layer="96"/>
 </instance>
-<instance part="J2" gate="G$1" x="340.36" y="193.04" smashed="yes" rot="MR0">
+<instance part="J3" gate="G$1" x="340.36" y="193.04" smashed="yes" rot="MR0">
 <attribute name="NAME" x="347.98" y="193.04" size="1.778" layer="95"/>
 <attribute name="VALUE" x="347.98" y="190.5" size="1.778" layer="96"/>
 </instance>
-<instance part="J3" gate="G$1" x="340.36" y="241.3" smashed="yes" rot="MR0">
+<instance part="J2" gate="G$1" x="340.36" y="241.3" smashed="yes" rot="MR0">
 <attribute name="NAME" x="347.98" y="241.3" size="1.778" layer="95"/>
 <attribute name="VALUE" x="347.98" y="238.76" size="1.778" layer="96"/>
 </instance>
-<instance part="R1" gate="G$1" x="231.14" y="208.28" smashed="yes" rot="R90">
+<instance part="R8" gate="G$1" x="231.14" y="208.28" smashed="yes" rot="R90">
 <attribute name="NAME" x="233.68" y="208.5086" size="1.778" layer="95"/>
 <attribute name="VALUE" x="233.68" y="206.248" size="1.778" layer="96"/>
 </instance>
-<instance part="R2" gate="G$1" x="243.84" y="208.28" smashed="yes" rot="R90">
+<instance part="R9" gate="G$1" x="243.84" y="208.28" smashed="yes" rot="R90">
 <attribute name="NAME" x="246.38" y="208.5086" size="1.778" layer="95"/>
 <attribute name="VALUE" x="246.38" y="206.248" size="1.778" layer="96"/>
 </instance>
-<instance part="J4" gate="G$1" x="375.92" y="208.28" smashed="yes" rot="MR180">
-<attribute name="NAME" x="370.84" y="231.14" size="1.778" layer="95"/>
-<attribute name="VALUE" x="368.3" y="208.28" size="1.778" layer="96" rot="R90"/>
+<instance part="J4" gate="G$1" x="375.92" y="205.74" smashed="yes" rot="MR180">
+<attribute name="NAME" x="370.84" y="226.06" size="1.778" layer="95"/>
+<attribute name="VALUE" x="368.3" y="205.74" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="V3" gate="GND" x="386.08" y="248.92"/>
 <instance part="V4" gate="+12V" x="386.08" y="261.62"/>
@@ -16824,33 +16849,33 @@ In this library you will find all the connectors used on any of our boards.
 <instance part="V2" gate="GND" x="254" y="198.12"/>
 <instance part="V8" gate="+12V" x="246.38" y="254"/>
 <instance part="V9" gate="GND" x="160.02" y="233.68"/>
-<instance part="V7" gate="GND" x="386.08" y="195.58"/>
+<instance part="V7" gate="GND" x="386.08" y="193.04"/>
 <instance part="V10" gate="GND" x="325.12" y="162.56"/>
 <instance part="V11" gate="GND" x="325.12" y="208.28"/>
-<instance part="R6" gate="G$1" x="304.8" y="220.98" smashed="yes">
+<instance part="R10" gate="G$1" x="304.8" y="220.98" smashed="yes">
 <attribute name="NAME" x="300.99" y="225.0186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="300.99" y="222.758" size="1.778" layer="96"/>
 </instance>
-<instance part="R4" gate="G$1" x="304.8" y="175.26" smashed="yes">
+<instance part="R11" gate="G$1" x="304.8" y="175.26" smashed="yes">
 <attribute name="NAME" x="300.99" y="179.2986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="300.99" y="177.038" size="1.778" layer="96"/>
 </instance>
 <instance part="V6" gate="+12V" x="45.72" y="261.62"/>
-<instance part="D4" gate="G$1" x="312.42" y="170.18" smashed="yes" rot="R90">
+<instance part="D5" gate="G$1" x="312.42" y="170.18" smashed="yes" rot="R90">
 <attribute name="NAME" x="311.658" y="170.815" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="314.071" y="171.958" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="D5" gate="G$1" x="312.42" y="215.9" smashed="yes" rot="R90">
+<instance part="D3" gate="G$1" x="312.42" y="215.9" smashed="yes" rot="R90">
 <attribute name="NAME" x="311.658" y="216.535" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="314.071" y="217.678" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="V12" gate="GND" x="312.42" y="162.56"/>
 <instance part="V13" gate="GND" x="312.42" y="208.28"/>
-<instance part="R8" gate="G$1" x="403.86" y="251.46" smashed="yes" rot="R90">
+<instance part="R12" gate="G$1" x="403.86" y="251.46" smashed="yes" rot="R90">
 <attribute name="NAME" x="406.4" y="251.46" size="1.778" layer="95"/>
 <attribute name="VALUE" x="406.4" y="248.92" size="1.778" layer="96"/>
 </instance>
-<instance part="R9" gate="G$1" x="403.86" y="236.22" smashed="yes" rot="R90">
+<instance part="R13" gate="G$1" x="403.86" y="236.22" smashed="yes" rot="R90">
 <attribute name="NAME" x="406.4" y="236.22" size="1.778" layer="95"/>
 <attribute name="VALUE" x="406.4" y="233.68" size="1.778" layer="96"/>
 </instance>
@@ -16859,12 +16884,12 @@ In this library you will find all the connectors used on any of our boards.
 <attribute name="NAME" x="64.77" y="189.4586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="64.77" y="187.198" size="1.778" layer="96"/>
 </instance>
-<instance part="U2" gate="G$1" x="88.9" y="198.12"/>
+<instance part="U1" gate="G$1" x="88.9" y="198.12"/>
 <instance part="RT" gate="G$1" x="38.1" y="190.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="40.64" y="191.9986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="40.64" y="189.738" size="1.778" layer="96"/>
 </instance>
-<instance part="R18" gate="G$1" x="25.4" y="190.5" smashed="yes" rot="R90">
+<instance part="R1" gate="G$1" x="25.4" y="190.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="29.21" y="191.9986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="29.21" y="189.738" size="1.778" layer="96"/>
 </instance>
@@ -16888,19 +16913,19 @@ In this library you will find all the connectors used on any of our boards.
 <attribute name="NAME" x="142.24" y="178.0286" size="1.778" layer="95"/>
 <attribute name="VALUE" x="142.24" y="175.768" size="1.778" layer="96"/>
 </instance>
-<instance part="R21" gate="G$1" x="170.18" y="210.82" smashed="yes" rot="R90">
+<instance part="R6" gate="G$1" x="170.18" y="210.82" smashed="yes" rot="R90">
 <attribute name="NAME" x="173.99" y="209.7786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="173.99" y="207.518" size="1.778" layer="96"/>
 </instance>
-<instance part="R22" gate="G$1" x="170.18" y="231.14" smashed="yes" rot="R90">
+<instance part="R4" gate="G$1" x="170.18" y="231.14" smashed="yes" rot="R90">
 <attribute name="NAME" x="173.99" y="230.0986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="173.99" y="227.838" size="1.778" layer="96"/>
 </instance>
-<instance part="R23" gate="G$1" x="170.18" y="220.98" smashed="yes" rot="R90">
+<instance part="R5" gate="G$1" x="170.18" y="220.98" smashed="yes" rot="R90">
 <attribute name="NAME" x="173.99" y="219.9386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="173.99" y="217.678" size="1.778" layer="96"/>
 </instance>
-<instance part="R11" gate="G$1" x="170.18" y="185.42" smashed="yes" rot="R90">
+<instance part="R7" gate="G$1" x="170.18" y="185.42" smashed="yes" rot="R90">
 <attribute name="NAME" x="173.99" y="184.3786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="173.99" y="182.118" size="1.778" layer="96"/>
 </instance>
@@ -16912,7 +16937,7 @@ In this library you will find all the connectors used on any of our boards.
 <attribute name="NAME" x="51.816" y="186.055" size="1.778" layer="95"/>
 <attribute name="VALUE" x="51.816" y="183.769" size="1.778" layer="96"/>
 </instance>
-<instance part="R14" gate="G$1" x="132.08" y="198.12" smashed="yes">
+<instance part="R3" gate="G$1" x="132.08" y="198.12" smashed="yes">
 <attribute name="NAME" x="128.27" y="202.1586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="128.27" y="199.898" size="1.778" layer="96"/>
 </instance>
@@ -16920,7 +16945,7 @@ In this library you will find all the connectors used on any of our boards.
 <attribute name="NAME" x="131.826" y="189.865" size="1.778" layer="95"/>
 <attribute name="VALUE" x="131.826" y="187.579" size="1.778" layer="96"/>
 </instance>
-<instance part="R24" gate="G$1" x="111.76" y="231.14" smashed="yes">
+<instance part="R2" gate="G$1" x="111.76" y="231.14" smashed="yes">
 <attribute name="NAME" x="110.2614" y="232.41" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="112.522" y="232.41" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -16929,60 +16954,62 @@ In this library you will find all the connectors used on any of our boards.
 <attribute name="VALUE" x="105.791" y="234.696" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="V21" gate="GND" x="93.98" y="231.14" rot="R270"/>
-<instance part="Q5" gate="A" x="391.16" y="73.66" smashed="yes">
-<attribute name="NAME" x="393.7" y="76.2" size="1.778" layer="95"/>
-<attribute name="VALUE" x="393.7" y="73.66" size="1.778" layer="96"/>
+<instance part="Q4" gate="A" x="55.88" y="53.34" smashed="yes">
+<attribute name="NAME" x="58.42" y="55.88" size="1.778" layer="95"/>
+<attribute name="VALUE" x="58.42" y="53.34" size="1.778" layer="96"/>
 </instance>
-<instance part="Q4" gate="A" x="365.76" y="60.96" smashed="yes">
-<attribute name="NAME" x="368.3" y="63.5" size="1.778" layer="95"/>
-<attribute name="VALUE" x="368.3" y="60.96" size="1.778" layer="96"/>
+<instance part="Q3" gate="A" x="30.48" y="40.64" smashed="yes">
+<attribute name="NAME" x="33.02" y="43.18" size="1.778" layer="95"/>
+<attribute name="VALUE" x="33.02" y="40.64" size="1.778" layer="96"/>
 </instance>
-<instance part="D8" gate="G$1" x="383.54" y="60.96" smashed="yes" rot="MR90">
-<attribute name="NAME" x="384.302" y="66.675" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="380.111" y="54.102" size="1.778" layer="96" rot="MR90"/>
+<instance part="D7" gate="G$1" x="48.26" y="40.64" smashed="yes" rot="MR90">
+<attribute name="NAME" x="49.022" y="46.355" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="44.831" y="33.782" size="1.778" layer="96" rot="MR90"/>
 </instance>
-<instance part="V22" gate="GND" x="365.76" y="45.72"/>
-<instance part="R27" gate="G$1" x="391.16" y="86.36" smashed="yes" rot="R90">
-<attribute name="NAME" x="392.43" y="87.8586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="392.43" y="85.598" size="1.778" layer="96"/>
+<instance part="V22" gate="GND" x="30.48" y="25.4"/>
+<instance part="R15" gate="G$1" x="55.88" y="66.04" smashed="yes" rot="R90">
+<attribute name="NAME" x="57.15" y="67.5386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="57.15" y="65.278" size="1.778" layer="96"/>
 </instance>
-<instance part="R28" gate="G$1" x="365.76" y="81.28" smashed="yes" rot="R90">
-<attribute name="NAME" x="367.03" y="82.7786" size="1.778" layer="95"/>
-<attribute name="VALUE" x="367.03" y="80.518" size="1.778" layer="96"/>
+<instance part="R14" gate="G$1" x="30.48" y="60.96" smashed="yes" rot="R90">
+<attribute name="NAME" x="31.75" y="62.4586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="31.75" y="60.198" size="1.778" layer="96"/>
 </instance>
-<instance part="D10" gate="G$1" x="391.16" y="58.42" smashed="yes">
-<attribute name="NAME" x="394.208" y="57.404" size="1.778" layer="95"/>
-<attribute name="VALUE" x="394.208" y="55.245" size="1.778" layer="96"/>
+<instance part="LED" gate="G$1" x="55.88" y="38.1" smashed="yes">
+<attribute name="NAME" x="58.928" y="37.084" size="1.778" layer="95"/>
+<attribute name="VALUE" x="58.928" y="34.925" size="1.778" layer="96"/>
 </instance>
-<instance part="R29" gate="G$1" x="398.78" y="63.5" smashed="yes" rot="R180">
-<attribute name="NAME" x="397.51" y="67.5386" size="1.778" layer="95"/>
-<attribute name="VALUE" x="397.51" y="65.278" size="1.778" layer="96"/>
+<instance part="R16" gate="G$1" x="63.5" y="43.18" smashed="yes" rot="R180">
+<attribute name="NAME" x="62.23" y="47.2186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="62.23" y="44.958" size="1.778" layer="96"/>
 </instance>
-<instance part="D9" gate="G$1" x="408.94" y="63.5" smashed="yes" rot="R180">
-<attribute name="NAME" x="406.4" y="69.0626" size="1.778" layer="95"/>
-<attribute name="VALUE" x="406.4" y="66.2686" size="1.778" layer="96"/>
+<instance part="D8" gate="G$1" x="73.66" y="43.18" smashed="yes" rot="R180">
+<attribute name="NAME" x="71.12" y="48.7426" size="1.778" layer="95"/>
+<attribute name="VALUE" x="71.12" y="45.9486" size="1.778" layer="96"/>
 </instance>
-<instance part="U3" gate="G$1" x="274.32" y="220.98"/>
-<instance part="SUPPLY11" gate="+5V" x="386.08" y="238.76"/>
-<instance part="D2" gate="G$1" x="325.12" y="187.96" rot="R90"/>
-<instance part="D3" gate="G$1" x="325.12" y="236.22" rot="R90"/>
-<instance part="SB1" gate="G$1" x="386.08" y="231.14" rot="R90"/>
-<instance part="SB2" gate="G$1" x="386.08" y="203.2" rot="R90"/>
+<instance part="U2" gate="G$1" x="274.32" y="220.98"/>
+<instance part="D6" gate="G$1" x="325.12" y="187.96" rot="R90"/>
+<instance part="D4" gate="G$1" x="325.12" y="236.22" rot="R90"/>
+<instance part="SB1" gate="G$1" x="386.08" y="228.6" rot="R90"/>
+<instance part="SB3" gate="G$1" x="386.08" y="200.66" rot="R90"/>
 <instance part="V5" gate="GND" x="246.38" y="228.6"/>
-<instance part="U1" gate="G$1" x="139.7" y="93.98"/>
-<instance part="SUPPLY1" gate="+5V" x="53.34" y="114.3"/>
-<instance part="C4" gate="G$1" x="53.34" y="104.14"/>
-<instance part="C5" gate="G$1" x="60.96" y="104.14"/>
-<instance part="V14" gate="GND" x="195.58" y="109.22" rot="R90"/>
-<instance part="V15" gate="GND" x="53.34" y="91.44"/>
-<instance part="SB3" gate="G$1" x="101.6" y="223.52"/>
+<instance part="U3" gate="G$1" x="101.6" y="124.46"/>
+<instance part="C5" gate="G$1" x="15.24" y="134.62"/>
+<instance part="C6" gate="G$1" x="22.86" y="134.62"/>
+<instance part="V14" gate="GND" x="157.48" y="139.7" rot="R90"/>
+<instance part="V15" gate="GND" x="15.24" y="121.92"/>
+<instance part="SB5" gate="G$1" x="101.6" y="223.52"/>
 <instance part="SB4" gate="G$1" x="101.6" y="254" rot="R180"/>
 <instance part="Q2" gate="_BOT" x="320.04" y="175.26"/>
 <instance part="Q2" gate="_TOP" x="320.04" y="220.98"/>
-<instance part="J5" gate="G$1" x="284.48" y="106.68" rot="MR0"/>
-<instance part="J6" gate="G$1" x="284.48" y="81.28" rot="MR0"/>
-<instance part="SUPPLY2" gate="+5V" x="256.54" y="106.68" rot="R90"/>
-<instance part="V16" gate="GND" x="264.16" y="66.04"/>
+<instance part="J5" gate="G$1" x="401.32" y="167.64" rot="MR0"/>
+<instance part="J6" gate="G$1" x="401.32" y="142.24" rot="MR0"/>
+<instance part="V16" gate="GND" x="381" y="127"/>
+<instance part="SB2" gate="G$1" x="388.62" y="228.6" rot="R90"/>
+<instance part="SUPPLY3" gate="G$1" x="386.08" y="238.76"/>
+<instance part="SUPPLY4" gate="G$1" x="15.24" y="144.78"/>
+<instance part="TP1" gate="G$1" x="312.42" y="124.46" rot="R180"/>
+<instance part="V18" gate="GND" x="312.42" y="114.3"/>
 </instances>
 <busses>
 </busses>
@@ -16995,7 +17022,7 @@ In this library you will find all the connectors used on any of our boards.
 <junction x="139.7" y="198.12"/>
 <pinref part="Q1" gate="G$1" pin="3"/>
 <pinref part="RS" gate="G$1" pin="2"/>
-<pinref part="R14" gate="G$1" pin="2"/>
+<pinref part="R3" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -17003,7 +17030,7 @@ In this library you will find all the connectors used on any of our boards.
 <wire x1="106.68" y1="200.66" x2="127" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="127" y1="200.66" x2="127" y2="213.36" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="G$1" pin="1"/>
-<pinref part="U2" gate="G$1" pin="GATE"/>
+<pinref part="U1" gate="G$1" pin="GATE"/>
 </segment>
 </net>
 <net name="HV" class="0">
@@ -17011,7 +17038,7 @@ In this library you will find all the connectors used on any of our boards.
 <wire x1="162.56" y1="248.92" x2="170.18" y2="248.92" width="0.1524" layer="91"/>
 <label x="180.34" y="248.92" size="1.778" layer="95"/>
 <pinref part="D1" gate="G$1" pin="C"/>
-<pinref part="R22" gate="G$1" pin="2"/>
+<pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="170.18" y1="248.92" x2="185.42" y2="248.92" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="236.22" x2="170.18" y2="248.92" width="0.1524" layer="91"/>
 <junction x="170.18" y="248.92"/>
@@ -17019,34 +17046,34 @@ In this library you will find all the connectors used on any of our boards.
 <segment>
 <wire x1="403.86" y1="256.54" x2="403.86" y2="266.7" width="0.1524" layer="91"/>
 <label x="403.86" y="259.08" size="1.778" layer="95" rot="R90"/>
-<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="R12" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<wire x1="391.16" y1="93.98" x2="391.16" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="391.16" y1="91.44" x2="391.16" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="391.16" y1="93.98" x2="365.76" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="365.76" y1="93.98" x2="365.76" y2="86.36" width="0.1524" layer="91"/>
-<label x="391.16" y="96.52" size="1.778" layer="95" rot="R90"/>
-<pinref part="R27" gate="G$1" pin="2"/>
-<pinref part="R28" gate="G$1" pin="2"/>
-<junction x="391.16" y="93.98"/>
+<wire x1="55.88" y1="73.66" x2="55.88" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="71.12" x2="55.88" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="73.66" x2="30.48" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="73.66" x2="30.48" y2="66.04" width="0.1524" layer="91"/>
+<label x="55.88" y="76.2" size="1.778" layer="95" rot="R90"/>
+<pinref part="R15" gate="G$1" pin="2"/>
+<pinref part="R14" gate="G$1" pin="2"/>
+<junction x="55.88" y="73.66"/>
 </segment>
 <segment>
 <wire x1="325.12" y1="241.3" x2="317.5" y2="241.3" width="0.1524" layer="91"/>
 <label x="317.5" y="241.3" size="1.778" layer="95"/>
-<pinref part="J3" gate="G$1" pin="1"/>
+<pinref part="J2" gate="G$1" pin="1"/>
 <pinref part="R_CHIP" gate="G$1" pin="2"/>
 <wire x1="327.66" y1="241.3" x2="340.36" y2="241.3" width="0.1524" layer="91"/>
 <junction x="327.66" y="241.3"/>
 <wire x1="325.12" y1="241.3" x2="327.66" y2="241.3" width="0.1524" layer="91"/>
-<pinref part="D3" gate="G$1" pin="C"/>
+<pinref part="D4" gate="G$1" pin="C"/>
 <junction x="325.12" y="241.3"/>
 </segment>
 <segment>
 <pinref part="R_KICK" gate="G$1" pin="2"/>
-<pinref part="J2" gate="G$1" pin="1"/>
+<pinref part="J3" gate="G$1" pin="1"/>
 <wire x1="327.66" y1="193.04" x2="340.36" y2="193.04" width="0.1524" layer="91"/>
-<pinref part="D2" gate="G$1" pin="C"/>
+<pinref part="D6" gate="G$1" pin="C"/>
 <wire x1="325.12" y1="193.04" x2="327.66" y2="193.04" width="0.1524" layer="91"/>
 <junction x="327.66" y="193.04"/>
 <wire x1="325.12" y1="193.04" x2="317.5" y2="193.04" width="0.1524" layer="91"/>
@@ -17054,14 +17081,14 @@ In this library you will find all the connectors used on any of our boards.
 <label x="317.5" y="193.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="279.4" y1="111.76" x2="251.46" y2="111.76" width="0.1524" layer="91"/>
-<label x="246.38" y="111.76" size="1.778" layer="95"/>
+<wire x1="396.24" y1="172.72" x2="368.3" y2="172.72" width="0.1524" layer="91"/>
+<label x="363.22" y="172.72" size="1.778" layer="95"/>
 <pinref part="J5" gate="G$1" pin="1"/>
 <pinref part="J6" gate="G$1" pin="1"/>
-<wire x1="251.46" y1="111.76" x2="246.38" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="279.4" y1="86.36" x2="251.46" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="86.36" x2="251.46" y2="111.76" width="0.1524" layer="91"/>
-<junction x="251.46" y="111.76"/>
+<wire x1="368.3" y1="172.72" x2="363.22" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="396.24" y1="147.32" x2="368.3" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="368.3" y1="147.32" x2="368.3" y2="172.72" width="0.1524" layer="91"/>
+<junction x="368.3" y="172.72"/>
 </segment>
 </net>
 <net name="CHARGE" class="0">
@@ -17070,26 +17097,36 @@ In this library you will find all the connectors used on any of our boards.
 <wire x1="25.4" y1="195.58" x2="25.4" y2="208.28" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="208.28" x2="25.4" y2="208.28" width="0.1524" layer="91"/>
 <label x="10.16" y="208.28" size="1.778" layer="95"/>
-<pinref part="U2" gate="G$1" pin="/SHDN/UVLO"/>
-<pinref part="R18" gate="G$1" pin="2"/>
+<pinref part="U1" gate="G$1" pin="/SHDN/UVLO"/>
+<pinref part="R1" gate="G$1" pin="2"/>
 <junction x="25.4" y="208.28"/>
 </segment>
 <segment>
-<wire x1="360.68" y1="58.42" x2="358.14" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="358.14" y1="58.42" x2="345.44" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="411.48" y1="63.5" x2="416.56" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="416.56" y1="63.5" x2="416.56" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="416.56" y1="40.64" x2="358.14" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="358.14" y1="40.64" x2="358.14" y2="58.42" width="0.1524" layer="91"/>
-<junction x="358.14" y="58.42"/>
-<label x="345.44" y="58.42" size="1.778" layer="95"/>
-<pinref part="Q4" gate="A" pin="G"/>
-<pinref part="D9" gate="G$1" pin="A"/>
+<wire x1="25.4" y1="38.1" x2="22.86" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="38.1" x2="10.16" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="43.18" x2="81.28" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="43.18" x2="81.28" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="20.32" x2="22.86" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="20.32" x2="22.86" y2="38.1" width="0.1524" layer="91"/>
+<junction x="22.86" y="38.1"/>
+<label x="10.16" y="38.1" size="1.778" layer="95"/>
+<pinref part="Q3" gate="A" pin="G"/>
+<pinref part="D8" gate="G$1" pin="A"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="PB1(PCINT9/XTAL2)"/>
-<wire x1="187.96" y1="88.9" x2="208.28" y2="88.9" width="0.1524" layer="91"/>
-<label x="198.12" y="88.9" size="1.778" layer="95"/>
+<pinref part="U3" gate="G$1" pin="PB1(PCINT9/XTAL2)"/>
+<wire x1="149.86" y1="119.38" x2="170.18" y2="119.38" width="0.1524" layer="91"/>
+<label x="160.02" y="119.38" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J5" gate="G$1" pin="2"/>
+<wire x1="370.84" y1="167.64" x2="378.46" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="J6" gate="G$1" pin="2"/>
+<wire x1="378.46" y1="167.64" x2="396.24" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="396.24" y1="142.24" x2="378.46" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="378.46" y1="142.24" x2="378.46" y2="167.64" width="0.1524" layer="91"/>
+<junction x="378.46" y="167.64"/>
+<label x="370.84" y="167.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$25" class="0">
@@ -17112,12 +17149,12 @@ In this library you will find all the connectors used on any of our boards.
 <pinref part="V2" gate="GND" pin="GND"/>
 <wire x1="254" y1="203.2" x2="254" y2="200.66" width="0.1524" layer="91"/>
 <junction x="254" y="203.2"/>
-<pinref part="R2" gate="G$1" pin="1"/>
+<pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="243.84" y1="203.2" x2="231.14" y2="203.2" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="254" y1="203.2" x2="243.84" y2="203.2" width="0.1524" layer="91"/>
 <junction x="243.84" y="203.2"/>
-<pinref part="U3" gate="G$1" pin="3_GND"/>
+<pinref part="U2" gate="G$1" pin="3_GND"/>
 </segment>
 <segment>
 <pinref part="V9" gate="GND" pin="GND"/>
@@ -17126,17 +17163,17 @@ In this library you will find all the connectors used on any of our boards.
 <wire x1="160.02" y1="238.76" x2="160.02" y2="236.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="D4" gate="G$1" pin="A"/>
+<pinref part="D5" gate="G$1" pin="A"/>
 <pinref part="V12" gate="GND" pin="GND"/>
 <wire x1="312.42" y1="165.1" x2="312.42" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="D5" gate="G$1" pin="A"/>
+<pinref part="D3" gate="G$1" pin="A"/>
 <pinref part="V13" gate="GND" pin="GND"/>
 <wire x1="312.42" y1="210.82" x2="312.42" y2="213.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R9" gate="G$1" pin="1"/>
+<pinref part="R13" gate="G$1" pin="1"/>
 <pinref part="V17" gate="GND" pin="GND"/>
 </segment>
 <segment>
@@ -17172,22 +17209,22 @@ In this library you will find all the connectors used on any of our boards.
 <junction x="48.26" y="170.18"/>
 <junction x="38.1" y="170.18"/>
 <junction x="127" y="170.18"/>
-<pinref part="R11" gate="G$1" pin="1"/>
+<pinref part="R7" gate="G$1" pin="1"/>
 <pinref part="RS" gate="G$1" pin="1"/>
 <pinref part="CVCC" gate="G$1" pin="2"/>
-<pinref part="U2" gate="G$1" pin="GND"/>
+<pinref part="U1" gate="G$1" pin="GND"/>
 <pinref part="CC1" gate="G$1" pin="2"/>
 <pinref part="V1" gate="GND" pin="GND"/>
 <pinref part="CC2" gate="G$1" pin="2"/>
 <pinref part="RT" gate="G$1" pin="2"/>
-<pinref part="R18" gate="G$1" pin="1"/>
+<pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="CSS" gate="G$1" pin="2"/>
 <pinref part="CS" gate="G$1" pin="2"/>
 <junction x="139.7" y="170.18"/>
 </segment>
 <segment>
 <wire x1="67.31" y1="203.2" x2="68.58" y2="203.2" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="SYNC"/>
+<pinref part="U1" gate="G$1" pin="SYNC"/>
 <pinref part="V20" gate="GND" pin="GND"/>
 </segment>
 <segment>
@@ -17213,55 +17250,60 @@ In this library you will find all the connectors used on any of our boards.
 <wire x1="256.54" y1="233.68" x2="256.54" y2="236.22" width="0.1524" layer="91"/>
 <wire x1="246.38" y1="233.68" x2="256.54" y2="233.68" width="0.1524" layer="91"/>
 <wire x1="246.38" y1="236.22" x2="246.38" y2="233.68" width="0.1524" layer="91"/>
-<pinref part="C6" gate="G$1" pin="2"/>
-<pinref part="C7" gate="G$1" pin="-"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<pinref part="C3" gate="G$1" pin="-"/>
 <pinref part="V5" gate="GND" pin="GND"/>
 <wire x1="246.38" y1="231.14" x2="246.38" y2="233.68" width="0.1524" layer="91"/>
 <junction x="246.38" y="233.68"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="GND"/>
+<pinref part="U3" gate="G$1" pin="GND"/>
 <pinref part="V14" gate="GND" pin="GND"/>
-<wire x1="193.04" y1="109.22" x2="187.96" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="139.7" x2="149.86" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C4" gate="G$1" pin="2"/>
-<wire x1="53.34" y1="99.06" x2="53.34" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="96.52" x2="60.96" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="2"/>
-<wire x1="60.96" y1="96.52" x2="60.96" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="129.54" x2="15.24" y2="127" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="127" x2="22.86" y2="127" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="22.86" y1="127" x2="22.86" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="V15" gate="GND" pin="GND"/>
-<wire x1="53.34" y1="93.98" x2="53.34" y2="96.52" width="0.1524" layer="91"/>
-<junction x="53.34" y="96.52"/>
+<wire x1="15.24" y1="124.46" x2="15.24" y2="127" width="0.1524" layer="91"/>
+<junction x="15.24" y="127"/>
 </segment>
 <segment>
-<pinref part="SB2" gate="G$1" pin="1"/>
+<pinref part="SB3" gate="G$1" pin="1"/>
 <pinref part="V7" gate="GND" pin="GND"/>
-<wire x1="386.08" y1="200.66" x2="386.08" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="386.08" y1="198.12" x2="386.08" y2="195.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="365.76" y1="50.8" x2="365.76" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="Q4" gate="A" pin="S"/>
+<wire x1="30.48" y1="30.48" x2="30.48" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="Q3" gate="A" pin="S"/>
 <pinref part="V22" gate="GND" pin="GND"/>
-<wire x1="365.76" y1="50.8" x2="365.76" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="D8" gate="G$1" pin="A"/>
-<wire x1="383.54" y1="58.42" x2="383.54" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="383.54" y1="50.8" x2="365.76" y2="50.8" width="0.1524" layer="91"/>
-<junction x="365.76" y="50.8"/>
-<pinref part="D10" gate="G$1" pin="C"/>
-<wire x1="391.16" y1="53.34" x2="391.16" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="391.16" y1="50.8" x2="383.54" y2="50.8" width="0.1524" layer="91"/>
-<junction x="383.54" y="50.8"/>
+<wire x1="30.48" y1="30.48" x2="30.48" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="D7" gate="G$1" pin="A"/>
+<wire x1="48.26" y1="38.1" x2="48.26" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="30.48" x2="30.48" y2="30.48" width="0.1524" layer="91"/>
+<junction x="30.48" y="30.48"/>
+<pinref part="LED" gate="G$1" pin="C"/>
+<wire x1="55.88" y1="33.02" x2="55.88" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="30.48" x2="48.26" y2="30.48" width="0.1524" layer="91"/>
+<junction x="48.26" y="30.48"/>
 </segment>
 <segment>
 <pinref part="J5" gate="G$1" pin="3"/>
 <pinref part="V16" gate="GND" pin="GND"/>
-<wire x1="279.4" y1="101.6" x2="264.16" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="264.16" y1="101.6" x2="264.16" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="396.24" y1="162.56" x2="381" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="381" y1="162.56" x2="381" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="J6" gate="G$1" pin="3"/>
-<wire x1="264.16" y1="76.2" x2="264.16" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="279.4" y1="76.2" x2="264.16" y2="76.2" width="0.1524" layer="91"/>
-<junction x="264.16" y="76.2"/>
+<wire x1="381" y1="137.16" x2="381" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="396.24" y1="137.16" x2="381" y2="137.16" width="0.1524" layer="91"/>
+<junction x="381" y="137.16"/>
+</segment>
+<segment>
+<pinref part="V18" gate="GND" pin="GND"/>
+<pinref part="TP1" gate="G$1" pin="P$1"/>
+<wire x1="312.42" y1="121.92" x2="312.42" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -17275,15 +17317,15 @@ In this library you will find all the connectors used on any of our boards.
 <pinref part="V8" gate="+12V" pin="+12V"/>
 <wire x1="246.38" y1="251.46" x2="246.38" y2="246.38" width="0.1524" layer="91"/>
 <wire x1="294.64" y1="218.44" x2="292.1" y2="218.44" width="0.1524" layer="91"/>
-<pinref part="C6" gate="G$1" pin="1"/>
+<pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="256.54" y1="246.38" x2="256.54" y2="243.84" width="0.1524" layer="91"/>
-<pinref part="C7" gate="G$1" pin="+"/>
+<pinref part="C3" gate="G$1" pin="+"/>
 <wire x1="246.38" y1="243.84" x2="246.38" y2="246.38" width="0.1524" layer="91"/>
 <wire x1="246.38" y1="246.38" x2="256.54" y2="246.38" width="0.1524" layer="91"/>
 <wire x1="256.54" y1="246.38" x2="294.64" y2="246.38" width="0.1524" layer="91"/>
 <wire x1="294.64" y1="246.38" x2="294.64" y2="218.44" width="0.1524" layer="91"/>
 <junction x="256.54" y="246.38"/>
-<pinref part="U3" gate="G$1" pin="6_VDD"/>
+<pinref part="U2" gate="G$1" pin="6_VDD"/>
 <junction x="246.38" y="246.38"/>
 </segment>
 <segment>
@@ -17304,10 +17346,10 @@ In this library you will find all the connectors used on any of our boards.
 <pinref part="T1" gate="G$1" pin="3"/>
 <wire x1="124.46" y1="256.54" x2="124.46" y2="254" width="0.1524" layer="91"/>
 <junction x="124.46" y="256.54"/>
-<pinref part="SB3" gate="G$1" pin="1"/>
+<pinref part="SB5" gate="G$1" pin="1"/>
 <wire x1="99.06" y1="223.52" x2="88.9" y2="223.52" width="0.1524" layer="91"/>
 <junction x="88.9" y="223.52"/>
-<pinref part="U2" gate="G$1" pin="VIN"/>
+<pinref part="U1" gate="G$1" pin="VIN"/>
 <wire x1="88.9" y1="223.52" x2="76.2" y2="223.52" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="223.52" x2="76.2" y2="256.54" width="0.1524" layer="91"/>
 <junction x="76.2" y="256.54"/>
@@ -17317,16 +17359,16 @@ In this library you will find all the connectors used on any of our boards.
 <segment>
 <wire x1="256.54" y1="215.9" x2="243.84" y2="215.9" width="0.1524" layer="91"/>
 <label x="223.52" y="215.9" size="1.778" layer="95"/>
-<pinref part="U3" gate="G$1" pin="4_IN_B"/>
-<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="U2" gate="G$1" pin="4_IN_B"/>
+<pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="243.84" y1="215.9" x2="223.52" y2="215.9" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="213.36" x2="243.84" y2="215.9" width="0.1524" layer="91"/>
 <junction x="243.84" y="215.9"/>
 </segment>
 <segment>
-<label x="71.12" y="93.98" size="1.778" layer="95"/>
-<wire x1="91.44" y1="93.98" x2="71.12" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="PA2(ADC2/AIN1/PCINT2)"/>
+<label x="33.02" y="124.46" size="1.778" layer="95"/>
+<wire x1="53.34" y1="124.46" x2="33.02" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="PA2(ADC2/AIN1/PCINT2)"/>
 </segment>
 </net>
 <net name="CHIP" class="0">
@@ -17336,28 +17378,28 @@ In this library you will find all the connectors used on any of our boards.
 <wire x1="231.14" y1="213.36" x2="231.14" y2="220.98" width="0.1524" layer="91"/>
 <junction x="231.14" y="220.98"/>
 <label x="223.52" y="220.98" size="1.778" layer="95"/>
-<pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="U3" gate="G$1" pin="2_IN_A"/>
+<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="U2" gate="G$1" pin="2_IN_A"/>
 </segment>
 <segment>
-<label x="71.12" y="88.9" size="1.778" layer="95"/>
-<wire x1="91.44" y1="88.9" x2="71.12" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="PA3(ADC3/T0/PCINT3)"/>
+<label x="33.02" y="119.38" size="1.778" layer="95"/>
+<wire x1="53.34" y1="119.38" x2="33.02" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="PA3(ADC3/T0/PCINT3)"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
 <wire x1="292.1" y1="220.98" x2="299.72" y2="220.98" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="7_OUT_A"/>
-<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="U2" gate="G$1" pin="7_OUT_A"/>
+<pinref part="R10" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <wire x1="312.42" y1="172.72" x2="312.42" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="312.42" y1="175.26" x2="309.88" y2="175.26" width="0.1524" layer="91"/>
-<pinref part="D4" gate="G$1" pin="C"/>
-<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="D5" gate="G$1" pin="C"/>
+<pinref part="R11" gate="G$1" pin="2"/>
 <wire x1="314.96" y1="175.26" x2="312.42" y2="175.26" width="0.1524" layer="91"/>
 <junction x="312.42" y="175.26"/>
 <pinref part="Q2" gate="_BOT" pin="G"/>
@@ -17369,14 +17411,14 @@ In this library you will find all the connectors used on any of our boards.
 <wire x1="403.86" y1="243.84" x2="403.86" y2="246.38" width="0.1524" layer="91"/>
 <wire x1="421.64" y1="243.84" x2="403.86" y2="243.84" width="0.1524" layer="91"/>
 <junction x="403.86" y="243.84"/>
-<pinref part="R9" gate="G$1" pin="2"/>
-<pinref part="R8" gate="G$1" pin="1"/>
+<pinref part="R13" gate="G$1" pin="2"/>
+<pinref part="R12" gate="G$1" pin="1"/>
 <label x="406.4" y="243.84" size="1.778" layer="95"/>
 </segment>
 <segment>
-<label x="71.12" y="99.06" size="1.778" layer="95"/>
-<wire x1="91.44" y1="99.06" x2="71.12" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="PA1(ADC1/AIN0/PCINT1)"/>
+<label x="33.02" y="129.54" size="1.778" layer="95"/>
+<wire x1="53.34" y1="129.54" x2="33.02" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="PA1(ADC1/AIN0/PCINT1)"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -17388,16 +17430,16 @@ In this library you will find all the connectors used on any of our boards.
 <junction x="60.96" y="185.42"/>
 <pinref part="RC" gate="G$1" pin="1"/>
 <pinref part="CC2" gate="G$1" pin="1"/>
-<pinref part="U2" gate="G$1" pin="VC"/>
+<pinref part="U1" gate="G$1" pin="VC"/>
 </segment>
 </net>
 <net name="VFB" class="0">
 <segment>
 <wire x1="170.18" y1="195.58" x2="170.18" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="195.58" x2="170.18" y2="195.58" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="FBX"/>
-<pinref part="R11" gate="G$1" pin="2"/>
-<pinref part="R21" gate="G$1" pin="1"/>
+<pinref part="U1" gate="G$1" pin="FBX"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="170.18" y1="195.58" x2="170.18" y2="205.74" width="0.1524" layer="91"/>
 <junction x="170.18" y="195.58"/>
 </segment>
@@ -17406,7 +17448,7 @@ In this library you will find all the connectors used on any of our boards.
 <segment>
 <wire x1="68.58" y1="198.12" x2="48.26" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="198.12" x2="48.26" y2="187.96" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="SS"/>
+<pinref part="U1" gate="G$1" pin="SS"/>
 <pinref part="CSS" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -17414,7 +17456,7 @@ In this library you will find all the connectors used on any of our boards.
 <segment>
 <wire x1="68.58" y1="200.66" x2="38.1" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="200.66" x2="38.1" y2="195.58" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="RT"/>
+<pinref part="U1" gate="G$1" pin="RT"/>
 <pinref part="RT" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -17433,17 +17475,17 @@ In this library you will find all the connectors used on any of our boards.
 <wire x1="109.22" y1="223.52" x2="109.22" y2="208.28" width="0.1524" layer="91"/>
 <junction x="109.22" y="208.28"/>
 <pinref part="CVCC" gate="G$1" pin="1"/>
-<pinref part="U2" gate="G$1" pin="INTVCC"/>
-<pinref part="SB3" gate="G$1" pin="2"/>
+<pinref part="U1" gate="G$1" pin="INTVCC"/>
+<pinref part="SB5" gate="G$1" pin="2"/>
 <wire x1="104.14" y1="223.52" x2="109.22" y2="223.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<wire x1="375.92" y1="208.28" x2="386.08" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="375.92" y1="205.74" x2="386.08" y2="205.74" width="0.1524" layer="91"/>
 <pinref part="J4" gate="G$1" pin="1"/>
-<pinref part="SB2" gate="G$1" pin="2"/>
-<wire x1="386.08" y1="205.74" x2="386.08" y2="208.28" width="0.1524" layer="91"/>
+<pinref part="SB3" gate="G$1" pin="2"/>
+<wire x1="386.08" y1="203.2" x2="386.08" y2="205.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$31" class="0">
@@ -17451,8 +17493,8 @@ In this library you will find all the connectors used on any of our boards.
 <wire x1="127" y1="198.12" x2="106.68" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="127" y1="193.04" x2="127" y2="198.12" width="0.1524" layer="91"/>
 <junction x="127" y="198.12"/>
-<pinref part="R14" gate="G$1" pin="1"/>
-<pinref part="U2" gate="G$1" pin="SENSE"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="U1" gate="G$1" pin="SENSE"/>
 <pinref part="CS" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -17460,61 +17502,62 @@ In this library you will find all the connectors used on any of our boards.
 <segment>
 <wire x1="106.68" y1="254" x2="106.68" y2="231.14" width="0.1524" layer="91"/>
 <junction x="106.68" y="231.14"/>
-<pinref part="R24" gate="G$1" pin="1"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <pinref part="SB4" gate="G$1" pin="1"/>
 <wire x1="104.14" y1="254" x2="106.68" y2="254" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="5V" class="0">
 <segment>
-<wire x1="375.92" y1="226.06" x2="386.08" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="386.08" y1="226.06" x2="386.08" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="375.92" y1="223.52" x2="386.08" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="386.08" y1="223.52" x2="386.08" y2="226.06" width="0.1524" layer="91"/>
 <pinref part="J4" gate="G$1" pin="8"/>
 <pinref part="SB1" gate="G$1" pin="1"/>
+<label x="381" y="223.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
-<wire x1="386.08" y1="71.12" x2="383.54" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="365.76" y1="71.12" x2="365.76" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="365.76" y1="76.2" x2="365.76" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="365.76" y1="71.12" x2="383.54" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="383.54" y1="71.12" x2="383.54" y2="63.5" width="0.1524" layer="91"/>
-<junction x="365.76" y="71.12"/>
-<pinref part="Q5" gate="A" pin="G"/>
-<pinref part="Q4" gate="A" pin="D"/>
-<pinref part="D8" gate="G$1" pin="C"/>
-<pinref part="R28" gate="G$1" pin="1"/>
-<junction x="383.54" y="71.12"/>
+<wire x1="50.8" y1="50.8" x2="48.26" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="50.8" x2="30.48" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="55.88" x2="30.48" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="50.8" x2="48.26" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="50.8" x2="48.26" y2="43.18" width="0.1524" layer="91"/>
+<junction x="30.48" y="50.8"/>
+<pinref part="Q4" gate="A" pin="G"/>
+<pinref part="Q3" gate="A" pin="D"/>
+<pinref part="D7" gate="G$1" pin="C"/>
+<pinref part="R14" gate="G$1" pin="1"/>
+<junction x="48.26" y="50.8"/>
 </segment>
 </net>
 <net name="N$30" class="0">
 <segment>
-<wire x1="391.16" y1="63.5" x2="391.16" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="393.7" y1="63.5" x2="391.16" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="391.16" y1="63.5" x2="391.16" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="D10" gate="G$1" pin="A"/>
-<pinref part="Q5" gate="A" pin="S"/>
-<pinref part="R29" gate="G$1" pin="2"/>
-<junction x="391.16" y="63.5"/>
+<wire x1="55.88" y1="43.18" x2="55.88" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="43.18" x2="55.88" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="43.18" x2="55.88" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="LED" gate="G$1" pin="A"/>
+<pinref part="Q4" gate="A" pin="S"/>
+<pinref part="R16" gate="G$1" pin="2"/>
+<junction x="55.88" y="43.18"/>
 </segment>
 </net>
 <net name="N$33" class="0">
 <segment>
-<wire x1="406.4" y1="63.5" x2="403.86" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="D9" gate="G$1" pin="C"/>
-<pinref part="R29" gate="G$1" pin="1"/>
+<wire x1="71.12" y1="43.18" x2="68.58" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="D8" gate="G$1" pin="C"/>
+<pinref part="R16" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
-<wire x1="391.16" y1="78.74" x2="391.16" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="Q5" gate="A" pin="D"/>
-<pinref part="R27" gate="G$1" pin="1"/>
-<pinref part="Q5" gate="A" pin="D2"/>
-<wire x1="391.16" y1="76.2" x2="391.16" y2="78.74" width="0.1524" layer="91"/>
-<junction x="391.16" y="78.74"/>
+<wire x1="55.88" y1="58.42" x2="55.88" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="Q4" gate="A" pin="D"/>
+<pinref part="R15" gate="G$1" pin="1"/>
+<pinref part="Q4" gate="A" pin="D2"/>
+<wire x1="55.88" y1="55.88" x2="55.88" y2="58.42" width="0.1524" layer="91"/>
+<junction x="55.88" y="58.42"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -17522,8 +17565,8 @@ In this library you will find all the connectors used on any of our boards.
 <pinref part="R_CHIP" gate="G$1" pin="1"/>
 <wire x1="325.12" y1="223.52" x2="325.12" y2="231.14" width="0.1524" layer="91"/>
 <junction x="325.12" y="231.14"/>
-<pinref part="D3" gate="G$1" pin="A"/>
-<pinref part="J3" gate="G$1" pin="2"/>
+<pinref part="D4" gate="G$1" pin="A"/>
+<pinref part="J2" gate="G$1" pin="2"/>
 <wire x1="340.36" y1="238.76" x2="337.82" y2="238.76" width="0.1524" layer="91"/>
 <wire x1="337.82" y1="238.76" x2="337.82" y2="231.14" width="0.1524" layer="91"/>
 <wire x1="337.82" y1="231.14" x2="327.66" y2="231.14" width="0.1524" layer="91"/>
@@ -17536,9 +17579,9 @@ In this library you will find all the connectors used on any of our boards.
 <net name="N$1" class="0">
 <segment>
 <wire x1="314.96" y1="220.98" x2="312.42" y2="220.98" width="0.1524" layer="91"/>
-<pinref part="D5" gate="G$1" pin="C"/>
+<pinref part="D3" gate="G$1" pin="C"/>
 <wire x1="312.42" y1="220.98" x2="312.42" y2="218.44" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="R10" gate="G$1" pin="2"/>
 <wire x1="309.88" y1="220.98" x2="312.42" y2="220.98" width="0.1524" layer="91"/>
 <junction x="312.42" y="220.98"/>
 <pinref part="Q2" gate="_TOP" pin="G"/>
@@ -17546,7 +17589,7 @@ In this library you will find all the connectors used on any of our boards.
 </net>
 <net name="N$47" class="0">
 <segment>
-<pinref part="R24" gate="G$1" pin="2"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="116.84" y1="231.14" x2="124.46" y2="231.14" width="0.1524" layer="91"/>
 <pinref part="T1" gate="G$1" pin="10"/>
 <junction x="124.46" y="233.68"/>
@@ -17571,85 +17614,60 @@ In this library you will find all the connectors used on any of our boards.
 <wire x1="154.94" y1="248.92" x2="157.48" y2="248.92" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+5V" class="0">
-<segment>
-<wire x1="386.08" y1="236.22" x2="386.08" y2="233.68" width="0.1524" layer="91"/>
-<pinref part="SUPPLY11" gate="+5V" pin="+5V"/>
-<pinref part="SB1" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="SUPPLY1" gate="+5V" pin="+5V"/>
-<wire x1="53.34" y1="109.22" x2="53.34" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="109.22" x2="60.96" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="VCC"/>
-<pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="60.96" y1="109.22" x2="91.44" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="106.68" x2="53.34" y2="109.22" width="0.1524" layer="91"/>
-<junction x="53.34" y="109.22"/>
-<pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="60.96" y1="106.68" x2="60.96" y2="109.22" width="0.1524" layer="91"/>
-<junction x="60.96" y="109.22"/>
-</segment>
-<segment>
-<pinref part="SUPPLY2" gate="+5V" pin="+5V"/>
-<pinref part="J5" gate="G$1" pin="2"/>
-<wire x1="259.08" y1="106.68" x2="261.62" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="J6" gate="G$1" pin="2"/>
-<wire x1="261.62" y1="106.68" x2="279.4" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="279.4" y1="81.28" x2="261.62" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="261.62" y1="81.28" x2="261.62" y2="106.68" width="0.1524" layer="91"/>
-<junction x="261.62" y="106.68"/>
-</segment>
-</net>
 <net name="/KICK_CS" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="3"/>
-<wire x1="375.92" y1="213.36" x2="393.7" y2="213.36" width="0.1524" layer="91"/>
-<label x="381" y="213.36" size="1.778" layer="95"/>
+<wire x1="375.92" y1="210.82" x2="393.7" y2="210.82" width="0.1524" layer="91"/>
+<label x="381" y="210.82" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="PA7(PCINT7/ICP/OC0B/ADC7)"/>
+<wire x1="149.86" y1="129.54" x2="170.18" y2="129.54" width="0.1524" layer="91"/>
+<label x="157.48" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCK" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="4"/>
-<wire x1="375.92" y1="215.9" x2="393.7" y2="215.9" width="0.1524" layer="91"/>
-<label x="381" y="215.9" size="1.778" layer="95"/>
+<wire x1="375.92" y1="213.36" x2="393.7" y2="213.36" width="0.1524" layer="91"/>
+<label x="381" y="213.36" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="PA4(ADC4/USCK/SCL/T1/PCINT4)"/>
-<wire x1="91.44" y1="83.82" x2="71.12" y2="83.82" width="0.1524" layer="91"/>
-<label x="71.12" y="83.82" size="1.778" layer="95"/>
+<pinref part="U3" gate="G$1" pin="PA4(ADC4/USCK/SCL/T1/PCINT4)"/>
+<wire x1="53.34" y1="114.3" x2="33.02" y2="114.3" width="0.1524" layer="91"/>
+<label x="33.02" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="5"/>
-<wire x1="375.92" y1="218.44" x2="393.7" y2="218.44" width="0.1524" layer="91"/>
-<label x="381" y="218.44" size="1.778" layer="95"/>
+<wire x1="375.92" y1="215.9" x2="393.7" y2="215.9" width="0.1524" layer="91"/>
+<label x="381" y="215.9" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="PA6(PCINT6/OC1A/SDA/MOSI/DI/ADC6)"/>
-<wire x1="187.96" y1="104.14" x2="208.28" y2="104.14" width="0.1524" layer="91"/>
-<label x="200.66" y="104.14" size="1.778" layer="95"/>
+<pinref part="U3" gate="G$1" pin="PA6(PCINT6/OC1A/SDA/MOSI/DI/ADC6)"/>
+<wire x1="149.86" y1="134.62" x2="170.18" y2="134.62" width="0.1524" layer="91"/>
+<label x="162.56" y="134.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MISO" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="6"/>
-<wire x1="375.92" y1="220.98" x2="393.7" y2="220.98" width="0.1524" layer="91"/>
-<label x="381" y="220.98" size="1.778" layer="95"/>
+<wire x1="375.92" y1="218.44" x2="393.7" y2="218.44" width="0.1524" layer="91"/>
+<label x="381" y="218.44" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="PA5(ADC5/DO/MISO/OC1B/PCINT5)"/>
-<wire x1="91.44" y1="78.74" x2="71.12" y2="78.74" width="0.1524" layer="91"/>
-<label x="71.12" y="78.74" size="1.778" layer="95"/>
+<pinref part="U3" gate="G$1" pin="PA5(ADC5/DO/MISO/OC1B/PCINT5)"/>
+<wire x1="53.34" y1="109.22" x2="33.02" y2="109.22" width="0.1524" layer="91"/>
+<label x="33.02" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="5_OUT_B"/>
+<pinref part="U2" gate="G$1" pin="5_OUT_B"/>
 <wire x1="292.1" y1="215.9" x2="294.64" y2="215.9" width="0.1524" layer="91"/>
 <wire x1="294.64" y1="215.9" x2="294.64" y2="175.26" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="294.64" y1="175.26" x2="299.72" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -17658,9 +17676,9 @@ In this library you will find all the connectors used on any of our boards.
 <pinref part="R_KICK" gate="G$1" pin="1"/>
 <wire x1="327.66" y1="182.88" x2="337.82" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="337.82" y1="182.88" x2="337.82" y2="190.5" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="2"/>
+<pinref part="J3" gate="G$1" pin="2"/>
 <wire x1="337.82" y1="190.5" x2="340.36" y2="190.5" width="0.1524" layer="91"/>
-<pinref part="D2" gate="G$1" pin="A"/>
+<pinref part="D6" gate="G$1" pin="A"/>
 <wire x1="325.12" y1="182.88" x2="327.66" y2="182.88" width="0.1524" layer="91"/>
 <junction x="327.66" y="182.88"/>
 <wire x1="325.12" y1="177.8" x2="325.12" y2="182.88" width="0.1524" layer="91"/>
@@ -17670,14 +17688,48 @@ In this library you will find all the connectors used on any of our boards.
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="R22" gate="G$1" pin="1"/>
-<pinref part="R23" gate="G$1" pin="2"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="R5" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="R23" gate="G$1" pin="1"/>
-<pinref part="R21" gate="G$1" pin="2"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="3.3V" class="0">
+<segment>
+<pinref part="J4" gate="G$1" pin="7"/>
+<pinref part="SB2" gate="G$1" pin="1"/>
+<wire x1="375.92" y1="220.98" x2="388.62" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="388.62" y1="220.98" x2="388.62" y2="226.06" width="0.1524" layer="91"/>
+<label x="381" y="220.98" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="VDD" class="0">
+<segment>
+<pinref part="SB1" gate="G$1" pin="2"/>
+<pinref part="SUPPLY3" gate="G$1" pin="VDD"/>
+<wire x1="386.08" y1="231.14" x2="386.08" y2="233.68" width="0.1524" layer="91"/>
+<pinref part="SB2" gate="G$1" pin="2"/>
+<wire x1="386.08" y1="233.68" x2="386.08" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="388.62" y1="231.14" x2="388.62" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="388.62" y1="233.68" x2="386.08" y2="233.68" width="0.1524" layer="91"/>
+<junction x="386.08" y="233.68"/>
+</segment>
+<segment>
+<wire x1="15.24" y1="139.7" x2="15.24" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="139.7" x2="22.86" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="VCC"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="22.86" y1="139.7" x2="53.34" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="137.16" x2="15.24" y2="139.7" width="0.1524" layer="91"/>
+<junction x="15.24" y="139.7"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="22.86" y1="137.16" x2="22.86" y2="139.7" width="0.1524" layer="91"/>
+<junction x="22.86" y="139.7"/>
+<pinref part="SUPPLY4" gate="G$1" pin="VDD"/>
 </segment>
 </net>
 </nets>
