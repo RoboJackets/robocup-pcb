@@ -16308,6 +16308,7 @@ In this library you will find switches and other mechanical assisted circuit ele
 <rectangle x1="-0.635" y1="-0.635" x2="0.635" y2="0.635" layer="21"/>
 <wire x1="-1.473" y1="0.635" x2="-1.473" y2="-0.635" width="0.127" layer="21"/>
 <wire x1="1.473" y1="0.635" x2="1.473" y2="-0.635" width="0.127" layer="21"/>
+<rectangle x1="-1.27" y1="-0.635" x2="1.27" y2="0.635" layer="29"/>
 </package>
 <package name="SB1206">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
