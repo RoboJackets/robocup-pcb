@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -94,6 +94,11 @@ In this library you will find uncommon capacitors. If you are looking for a comm
 <circle x="0" y="0" radius="3.9878" width="10.16" layer="39"/>
 <text x="-2.54" y="10.16" size="1.27" layer="25">&gt;NAME</text>
 </package>
+<package name="25MM-DIA_HORIZ">
+<rectangle x1="1.27" y1="3.81" x2="11.43" y2="5.08" layer="22" rot="R180"/>
+<smd name="+" x="-6.35" y="0" dx="13.462" dy="5.08" layer="1"/>
+<smd name="-" x="6.35" y="0" dx="13.462" dy="5.08" layer="16" rot="R180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CAP_POL">
@@ -130,12 +135,12 @@ In this library you will find uncommon capacitors. If you are looking for a comm
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="RC_CAP" prefix="C">
+<deviceset name="RC_CAP" prefix="C" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="CAP_POL" x="0" y="0" addlevel="must"/>
 </gates>
 <devices>
-<device name="" package="T-UP3">
+<device name="4PIN" package="T-UP3">
 <connects>
 <connect gate="G$1" pin="+" pad="+"/>
 <connect gate="G$1" pin="-" pad="-"/>
@@ -148,6 +153,15 @@ In this library you will find uncommon capacitors. If you are looking for a comm
 <connects>
 <connect gate="G$1" pin="+" pad="POS"/>
 <connect gate="G$1" pin="-" pad="NEG"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="HORIZ" package="25MM-DIA_HORIZ">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
 <technology name=""/>
