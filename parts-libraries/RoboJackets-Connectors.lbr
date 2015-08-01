@@ -725,8 +725,8 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <wire x1="-0.8" y1="15.735" x2="0.8" y2="15.735" width="0.127" layer="21"/>
 <wire x1="-3.864" y1="0" x2="3.864" y2="0" width="0.127" layer="21"/>
 <text x="-4.5" y="0" size="1" layer="25" font="vector" ratio="10" rot="R90">&gt;NAME</text>
-<pad name="BATT" x="0" y="4.1545" drill="4.7" thermals="no"/>
-<pad name="GND" x="0" y="11.092" drill="4.7" thermals="no"/>
+<pad name="BATT" x="0" y="4.1545" drill="4.7"/>
+<pad name="GND" x="0" y="11.092" drill="4.7"/>
 <dimension x1="-2.35" y1="4.1545" x2="2.35" y2="4.1545" x3="0" y3="-1.6" textsize="0.5" layer="49" dtype="diameter" width="0.01" visible="yes"/>
 <wire x1="-4.064" y1="0.2" x2="-3.864" y2="0" width="0.127" layer="21" curve="90"/>
 <text x="5" y="4.1545" size="1.2" layer="21" font="vector" ratio="15" rot="R90" align="top-center">BATT+</text>
@@ -852,8 +852,8 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <wire x1="-0.8" y1="15.735" x2="0.8" y2="15.735" width="0.127" layer="21"/>
 <wire x1="-3.864" y1="0" x2="3.864" y2="0" width="0.127" layer="21"/>
 <text x="-4.5" y="0" size="1" layer="25" font="vector" ratio="10" rot="R90">&gt;NAME</text>
-<pad name="+" x="0" y="4.1545" drill="4.7" thermals="no"/>
-<pad name="-" x="0" y="11.092" drill="4.7" thermals="no"/>
+<pad name="+" x="0" y="4.1545" drill="4.7"/>
+<pad name="-" x="0" y="11.092" drill="4.7"/>
 <wire x1="-4.064" y1="0.2" x2="-3.864" y2="0" width="0.127" layer="21" curve="90"/>
 </package>
 </packages>
