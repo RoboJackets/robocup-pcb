@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -17188,9 +17188,7 @@ In this library you will find all the connectors used on any of our boards.
 </segment>
 <segment>
 <wire x1="170.18" y1="180.34" x2="170.18" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="170.18" x2="139.7" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="172.72" x2="139.7" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="170.18" x2="127" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="170.18" x2="127" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="127" y1="170.18" x2="109.22" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="175.26" x2="109.22" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="170.18" x2="88.9" y2="170.18" width="0.1524" layer="91"/>
@@ -17215,7 +17213,6 @@ In this library you will find all the connectors used on any of our boards.
 <junction x="38.1" y="170.18"/>
 <junction x="127" y="170.18"/>
 <pinref part="R7" gate="G$1" pin="1"/>
-<pinref part="RS" gate="G$1" pin="1"/>
 <pinref part="CVCC" gate="G$1" pin="2"/>
 <pinref part="U1" gate="G$1" pin="GND"/>
 <pinref part="CC1" gate="G$1" pin="2"/>
@@ -17225,7 +17222,6 @@ In this library you will find all the connectors used on any of our boards.
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="CSS" gate="G$1" pin="2"/>
 <pinref part="CS" gate="G$1" pin="2"/>
-<junction x="139.7" y="170.18"/>
 </segment>
 <segment>
 <wire x1="67.31" y1="203.2" x2="68.58" y2="203.2" width="0.1524" layer="91"/>
@@ -17735,6 +17731,18 @@ In this library you will find all the connectors used on any of our boards.
 <wire x1="22.86" y1="137.16" x2="22.86" y2="139.7" width="0.1524" layer="91"/>
 <junction x="22.86" y="139.7"/>
 <pinref part="SUPPLY4" gate="G$1" pin="VDD"/>
+</segment>
+</net>
+<net name="RS_IN" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="PA0(ADC0/AREF/PCINT0)"/>
+<wire x1="53.34" y1="134.62" x2="33.02" y2="134.62" width="0.1524" layer="91"/>
+<label x="33.02" y="134.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="RS" gate="G$1" pin="1"/>
+<wire x1="139.7" y1="172.72" x2="139.7" y2="165.1" width="0.1524" layer="91"/>
+<label x="142.24" y="165.1" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
