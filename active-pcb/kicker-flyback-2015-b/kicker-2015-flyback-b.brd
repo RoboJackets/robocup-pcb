@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -64,7 +64,7 @@
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
@@ -4226,6 +4226,9 @@ design rules under a new name.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -4392,7 +4395,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="41.91" y="78.74" size="1.27" layer="25" rot="R90"/>
 <attribute name="VALUE" x="39.37" y="77.47" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="R13" library="rcl" package="R0603" value="10.0k 1%" x="39.0525" y="76.835" smashed="yes" rot="R90">
+<element name="R13" library="rcl" package="R0603" value="16.2k 1%" x="39.0525" y="76.835" smashed="yes" rot="R90">
 <attribute name="NAME" x="39.6875" y="78.74" size="1.27" layer="25" rot="R90"/>
 <attribute name="VALUE" x="40.9575" y="76.2" size="1.27" layer="27" rot="R90"/>
 </element>

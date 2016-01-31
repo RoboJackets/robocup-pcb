@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -17214,7 +17214,7 @@ Standard 10-pin dual row 0.1" header. Commonly used with AVR-ISP. Use with Spark
 <part name="V12" library="supply2" deviceset="GND" device=""/>
 <part name="V13" library="supply2" deviceset="GND" device=""/>
 <part name="R12" library="rcl" deviceset="R-US_" device="R0603" value="1.00M 1%"/>
-<part name="R13" library="rcl" deviceset="R-US_" device="R0603" value="10.0k 1%"/>
+<part name="R13" library="rcl" deviceset="R-US_" device="R0603" value="16.2k 1%"/>
 <part name="V17" library="supply2" deviceset="GND" device=""/>
 <part name="RC" library="rcl" deviceset="R-US_" device="R0603" value="6.8k"/>
 <part name="U1" library="power" deviceset="LT3757" device=""/>
