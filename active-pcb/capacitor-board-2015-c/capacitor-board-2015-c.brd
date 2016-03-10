@@ -146,18 +146,28 @@
 <wire x1="16.256" y1="22.86" x2="16.256" y2="56.388" width="0" layer="20"/>
 <wire x1="16.256" y1="56.388" x2="0" y2="56.388" width="0" layer="20"/>
 <wire x1="0" y1="56.388" x2="0" y2="0" width="0" layer="20"/>
-<text x="9.144" y="41.656" size="1.27" layer="21" rot="SR90">HIGH VOLTAGE</text>
-<text x="9.144" y="13.716" size="1.27" layer="21" rot="SR270">HIGH VOLTAGE</text>
+<text x="9.652" y="27.432" size="1.27" layer="21" rot="SR90">HIGH VOLTAGE</text>
+<text x="9.144" y="13.716" size="1.27" layer="22" rot="SR270">HIGH VOLTAGE</text>
 <text x="9.144" y="54.864" size="1.27" layer="22" rot="SMR270">HIGH VOLTAGE</text>
 <text x="14.732" y="51.308" size="1.27" layer="21" rot="SR90">+HV</text>
 <text x="14.732" y="54.864" size="1.27" layer="22" rot="SMR270">+HV</text>
 <text x="14.732" y="46.482" size="1.27" layer="21" rot="SR90">GND</text>
-<text x="10.16" y="1.016" size="1.27" layer="21" rot="SR90">HIGH VOLTAGE</text>
+<text x="9.652" y="1.524" size="1.27" layer="21" rot="SR90">HIGH VOLTAGE</text>
 <text x="14.732" y="49.53" size="1.27" layer="22" rot="SMR270">GND</text>
 <text x="12.7" y="24.384" size="1.27" layer="21" rot="SR90">Capacitor Board</text>
 <text x="12.7" y="44.704" size="1.27" layer="22" rot="SMR270">Capacitor Board</text>
 <text x="14.732" y="24.384" size="1.27" layer="21" rot="SR90">2015 Rev C</text>
 <text x="14.732" y="44.704" size="1.27" layer="22" rot="SMR270">2015 Rev C</text>
+<dimension x1="0" y1="0" x2="11.176" y2="0" x3="5.588" y3="-6.096" layer="47" dtype="vertical"/>
+<dimension x1="11.176" y1="0" x2="11.176" y2="22.86" x3="22.352" y3="11.43" layer="47" dtype="vertical"/>
+<dimension x1="16.256" y1="22.86" x2="16.256" y2="56.388" x3="22.352" y3="39.624" layer="47" dtype="vertical"/>
+<dimension x1="16.256" y1="56.388" x2="0" y2="56.388" x3="8.128" y3="60.452" layer="47" dtype="vertical"/>
+<wire x1="0" y1="0" x2="11.176" y2="0" width="0.254" layer="47"/>
+<wire x1="11.176" y1="0" x2="11.176" y2="22.86" width="0.254" layer="47"/>
+<wire x1="11.176" y1="22.86" x2="16.256" y2="22.86" width="0.254" layer="47"/>
+<wire x1="16.256" y1="22.86" x2="16.256" y2="56.388" width="0.254" layer="47"/>
+<wire x1="16.256" y1="56.388" x2="0" y2="56.388" width="0.254" layer="47"/>
+<wire x1="0" y1="56.388" x2="0" y2="0" width="0.254" layer="47"/>
 </plain>
 <libraries>
 <library name="RoboJackets-Connectors">

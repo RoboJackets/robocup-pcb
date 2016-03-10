@@ -142,9 +142,9 @@
 <board>
 <plain>
 <wire x1="48.26" y1="0" x2="54.61" y2="6.35" width="0" layer="20"/>
-<wire x1="54.61" y1="6.35" x2="54.61" y2="57.531" width="0" layer="20"/>
-<wire x1="54.61" y1="57.531" x2="65.405" y2="57.531" width="0" layer="20"/>
-<wire x1="65.405" y1="57.531" x2="65.405" y2="110.49" width="0" layer="20"/>
+<wire x1="54.61" y1="6.35" x2="54.61" y2="57.8485" width="0" layer="20"/>
+<wire x1="54.61" y1="57.8485" x2="65.405" y2="57.8485" width="0" layer="20"/>
+<wire x1="65.405" y1="57.8485" x2="65.405" y2="110.49" width="0" layer="20"/>
 <wire x1="65.405" y1="110.49" x2="0" y2="110.49" width="0" layer="20"/>
 <wire x1="0" y1="110.49" x2="0" y2="21.59" width="0" layer="20"/>
 <wire x1="0" y1="21.59" x2="13.97" y2="21.59" width="0" layer="20"/>
@@ -170,7 +170,7 @@
 <rectangle x1="5.588" y1="98.425" x2="13.208" y2="106.045" layer="40" rot="R90"/>
 <rectangle x1="8.5725" y1="25.7175" x2="34.6075" y2="44.7675" layer="22" rot="R90"/>
 <text x="3.4925" y="70.485" size="1.778" layer="21" ratio="15" rot="SR270" align="top-center">DANGER - HIGH VOLTAGE</text>
-<text x="46.99" y="106.9975" size="1.6764" layer="22" ratio="15" rot="SMR180" align="top-center">DANGER - HIGH VOLTAGE</text>
+<text x="48.26" y="108.585" size="1.6764" layer="22" ratio="15" rot="SMR0" align="top-center">DANGER - HIGH VOLTAGE</text>
 <text x="3.4925" y="70.485" size="1.778" layer="22" ratio="15" rot="SMR90" align="top-center">DANGER - HIGH VOLTAGE</text>
 <text x="17.145" y="25.4" size="2.54" layer="21" rot="R90">#</text>
 <rectangle x1="13.0175" y1="26.9875" x2="18.7325" y2="34.6075" layer="21" rot="R90"/>
@@ -180,10 +180,10 @@
 <text x="56.515" y="101.9175" size="0.4064" layer="21">5V</text>
 <text x="55.88" y="94.9325" size="0.4064" layer="21">GND</text>
 <text x="54.2925" y="97.155" size="0.4064" layer="21">/KICK_CS</text>
-<rectangle x1="42.037" y1="8.255" x2="49.657" y2="15.875" layer="39" rot="R90"/>
+<rectangle x1="41.402" y1="8.255" x2="49.022" y2="15.875" layer="39" rot="R90"/>
 <rectangle x1="41.402" y1="8.255" x2="49.022" y2="15.875" layer="40" rot="R90"/>
 <text x="55.5625" y="96.2025" size="0.4064" layer="21">/RST</text>
-<text x="60.0075" y="40.005" size="1.27" layer="22" ratio="15" rot="SMR270" align="top-center">DANGER - HIGH VOLTAGE</text>
+<text x="48.5775" y="47.625" size="1.27" layer="22" ratio="15" rot="SMR270" align="top-center">DANGER - HIGH VOLTAGE</text>
 <text x="63.1825" y="63.5" size="1.27" layer="21" ratio="15" rot="SR90" align="top-center">+HV</text>
 <text x="53.34" y="40.005" size="1.778" layer="21" rot="R90">CAPACITORS</text>
 <text x="53.34" y="28.2575" size="1.778" layer="20" rot="R90">CHIP</text>
@@ -196,6 +196,28 @@
 <text x="21.59" y="2.54" size="1.778" layer="21" rot="R180">KICK</text>
 <text x="32.0675" y="2.54" size="1.778" layer="21" rot="R180">CHIP</text>
 <text x="42.545" y="2.54" size="1.778" layer="21" rot="R180">Charge</text>
+<text x="33.655" y="15.5575" size="1.778" layer="21" rot="R180">DEBUG</text>
+<wire x1="13.97" y1="0" x2="13.97" y2="21.59" width="0.254" layer="47"/>
+<wire x1="13.97" y1="21.59" x2="0" y2="21.59" width="0.254" layer="47"/>
+<wire x1="0" y1="21.59" x2="0" y2="110.49" width="0.254" layer="47"/>
+<wire x1="0" y1="110.49" x2="65.405" y2="110.49" width="0.254" layer="47"/>
+<wire x1="65.405" y1="110.49" x2="65.405" y2="57.785" width="0.254" layer="47"/>
+<wire x1="65.405" y1="57.785" x2="54.61" y2="57.785" width="0.254" layer="47"/>
+<wire x1="54.61" y1="57.785" x2="54.61" y2="6.35" width="0.254" layer="47"/>
+<wire x1="54.61" y1="6.35" x2="48.26" y2="0" width="0.254" layer="47"/>
+<wire x1="48.26" y1="0" x2="13.97" y2="0" width="0.254" layer="47"/>
+<dimension x1="54.61" y1="6.35" x2="48.26" y2="0" x3="62.5475" y3="-7.9375" layer="47"/>
+<dimension x1="54.61" y1="57.785" x2="54.61" y2="6.35" x3="62.23" y3="32.0675" layer="47"/>
+<dimension x1="48.26" y1="0" x2="13.97" y2="0" x3="31.115" y3="-10.16" layer="47"/>
+<dimension x1="13.97" y1="0" x2="13.97" y2="21.59" x3="-7.62" y3="10.795" layer="47"/>
+<dimension x1="13.97" y1="21.59" x2="0" y2="21.59" x3="6.985" y3="-18.415" layer="47" dtype="vertical"/>
+<dimension x1="65.405" y1="57.785" x2="54.61" y2="57.785" x3="60.0075" y3="49.53" layer="47" dtype="vertical"/>
+<dimension x1="65.405" y1="110.49" x2="65.405" y2="57.785" x3="73.025" y3="84.1375" layer="47" dtype="vertical"/>
+<dimension x1="0" y1="110.49" x2="65.405" y2="110.49" x3="32.7025" y3="116.84" layer="47" dtype="vertical"/>
+<dimension x1="0" y1="21.59" x2="0" y2="110.49" x3="-7.62" y3="66.04" layer="47" dtype="vertical"/>
+<dimension x1="48.26" y1="0" x2="41.07579375" y2="0" x3="53.34" y3="5.08" layer="47" dtype="angle"/>
+<dimension x1="54.61" y1="6.35" x2="49.670859375" y2="1.41085625" x3="54.61" y3="13.335" layer="47" dtype="angle"/>
+<text x="48.5775" y="47.625" size="1.27" layer="21" ratio="15" rot="SR90" align="top-center">DANGER - HIGH VOLTAGE</text>
 </plain>
 <libraries>
 <library name="diode">
@@ -4504,9 +4526,9 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="48.725" y="79.135" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="U2" library="RoboJackets-PowerICs" package="SOIC-8" value="IX4427N" x="16.51" y="67.31" rot="R90"/>
-<element name="D6" library="RoboJackets-Diodes" package="DO-214AB" value="" x="35.56" y="19.05" smashed="yes" rot="R270">
-<attribute name="NAME" x="34.925" y="14.605" size="1.016" layer="25" ratio="10" rot="R180"/>
-<attribute name="VALUE" x="31.115" y="22.86" size="1.016" layer="27" ratio="10" rot="R270"/>
+<element name="D6" library="RoboJackets-Diodes" package="DO-214AB" value="" x="34.925" y="20.955" smashed="yes" rot="R270">
+<attribute name="NAME" x="34.29" y="16.51" size="1.016" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="30.48" y="24.765" size="1.016" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="D4" library="RoboJackets-Diodes" package="DO-214AB" value="" x="35.56" y="34.29" smashed="yes" rot="R270">
 <attribute name="NAME" x="33.655" y="38.735" size="1.016" layer="25" ratio="10"/>
@@ -4619,8 +4641,6 @@ design rules under a new name.</description>
 <vertex x="43.18" y="59.055"/>
 <vertex x="39.37" y="63.5"/>
 </polygon>
-<wire x1="40.9575" y1="22.377" x2="36.474" y2="22.377" width="1.27" layer="1"/>
-<wire x1="36.474" y1="22.377" x2="35.56" y2="21.463" width="1.27" layer="1"/>
 <wire x1="45.797" y1="22.377" x2="40.9575" y2="22.377" width="1.27" layer="1"/>
 <contactref element="R18" pad="P$3"/>
 <contactref element="R19" pad="P$2"/>
@@ -4642,6 +4662,8 @@ design rules under a new name.</description>
 <wire x1="60.325" y1="59.055" x2="49.53" y2="59.055" width="1.27" layer="1"/>
 <wire x1="49.53" y1="59.055" x2="46.355" y2="54.61" width="1.27" layer="1"/>
 <wire x1="46.355" y1="33.095" x2="41.5155" y2="33.095" width="1.27" layer="1"/>
+<wire x1="40.9575" y1="22.377" x2="35.916" y2="22.377" width="1.27" layer="1"/>
+<wire x1="35.916" y1="22.377" x2="34.925" y2="23.368" width="1.27" layer="1"/>
 <wire x1="46.355" y1="54.685" x2="46.355" y2="54.61" width="0" layer="19" extent="1-1"/>
 <wire x1="45.797" y1="22.377" x2="46.355" y2="22.935" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -5229,11 +5251,6 @@ design rules under a new name.</description>
 <contactref element="R_KICK" pad="1"/>
 <contactref element="D6" pad="A"/>
 <contactref element="Q2" pad="C_BOT"/>
-<wire x1="35.56" y1="16.637" x2="38.862" y2="16.637" width="1.27" layer="1"/>
-<wire x1="38.862" y1="16.637" x2="40.9575" y2="18.7325" width="1.27" layer="1"/>
-<wire x1="40.9575" y1="19.533" x2="40.9575" y2="19.685" width="1.27" layer="1"/>
-<wire x1="40.9575" y1="19.533" x2="40.9575" y2="18.7325" width="1.27" layer="1"/>
-<wire x1="41.6675" y1="18.975" x2="40.9575" y2="19.685" width="1.27" layer="1"/>
 <polygon width="0.4064" layer="16" thermals="no">
 <vertex x="20.0025" y="53.975"/>
 <vertex x="23.1775" y="53.975"/>
@@ -5253,7 +5270,10 @@ design rules under a new name.</description>
 <vertex x="20.0025" y="48.895"/>
 </polygon>
 <contactref element="J3" pad="1"/>
-<wire x1="46.355" y1="18.975" x2="41.6675" y2="18.975" width="1.27" layer="1"/>
+<wire x1="34.925" y1="18.542" x2="39.9665" y2="18.542" width="1.27" layer="1"/>
+<wire x1="39.9665" y1="18.542" x2="40.9575" y2="19.533" width="1.27" layer="1"/>
+<wire x1="46.355" y1="18.975" x2="41.5155" y2="18.975" width="1.27" layer="1"/>
+<wire x1="41.5155" y1="18.975" x2="40.9575" y2="19.533" width="1.27" layer="1"/>
 </signal>
 <signal name="N$7">
 <contactref element="R4" pad="1"/>
