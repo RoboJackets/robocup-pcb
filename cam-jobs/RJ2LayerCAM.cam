@@ -1,5 +1,5 @@
 [CAM Processor Job]
-Description=""
+Description[en]=""
 Section=Sec_1
 Section=Sec_2
 Section=Sec_3
@@ -11,14 +11,15 @@ Section=Sec_8
 
 [Sec_1]
 Name[C]="top"
+Name[en]="top"
 Name[ja]="top"
-Prompt=""
+Prompt[en]=""
 Device="GERBER_RS274X"
 Wheel=""
 Rack=""
 Scale=1
 Output="%P/gerbers/top.ger"
-Flags="0 0 0 0 0 1 1"
+Flags="0 0 0 1 0 1 1"
 Emulate="0"
 Offset="0.0mil 0.0mil"
 Sheet=1
@@ -30,14 +31,15 @@ Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1
 
 [Sec_2]
 Name[C]="bottom"
+Name[en]="bottom"
 Name[ja]="bottom"
-Prompt=""
+Prompt[en]=""
 Device="GERBER_RS274X"
 Wheel=""
 Rack=""
 Scale=1
 Output="%P/gerbers/bottom.ger"
-Flags="0 0 0 0 0 1 1"
+Flags="0 0 0 1 0 1 1"
 Emulate="0"
 Offset="0.0mil 0.0mil"
 Sheet=1
@@ -49,14 +51,15 @@ Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1
 
 [Sec_3]
 Name[C]="top_silk"
+Name[en]="top_silk"
 Name[ja]="top_silk"
-Prompt=""
+Prompt[en]=""
 Device="GERBER_RS274X"
 Wheel=""
 Rack=""
 Scale=1
 Output="%P/gerbers/top_silk.ger"
-Flags="0 0 0 0 0 1 1"
+Flags="0 0 0 1 0 1 1"
 Emulate="0"
 Offset="0.0mil 0.0mil"
 Sheet=1
@@ -68,14 +71,15 @@ Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1
 
 [Sec_4]
 Name[C]="bottom_silk"
+Name[en]="bottom_silk"
 Name[ja]="bottom_silk"
-Prompt=""
+Prompt[en]=""
 Device="GERBER_RS274X"
 Wheel=""
 Rack=""
 Scale=1
 Output="%P/gerbers/bottom_silk.ger"
-Flags="0 0 0 0 0 1 1"
+Flags="0 0 0 1 0 1 1"
 Emulate="0"
 Offset="0.0mil 0.0mil"
 Sheet=1
@@ -87,14 +91,15 @@ Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1
 
 [Sec_5]
 Name[C]="top_mask"
+Name[en]="top_mask"
 Name[ja]="top_mask"
-Prompt=""
+Prompt[en]=""
 Device="GERBER_RS274X"
 Wheel=""
 Rack=""
 Scale=1
 Output="%P/gerbers/top_mask.ger"
-Flags="0 0 0 0 0 1 1"
+Flags="0 0 0 1 0 1 1"
 Emulate="0"
 Offset="0.0mil 0.0mil"
 Sheet=1
@@ -106,14 +111,15 @@ Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1
 
 [Sec_6]
 Name[C]="bottom_mask"
+Name[en]="bottom_mask"
 Name[ja]="bottom_mask"
-Prompt=""
+Prompt[en]=""
 Device="GERBER_RS274X"
 Wheel=""
 Rack=""
 Scale=1
 Output="%P/gerbers/bottom_mask.ger"
-Flags="0 0 0 0 0 1 1"
+Flags="0 0 0 1 0 1 1"
 Emulate="0"
 Offset="0.0mil 0.0mil"
 Sheet=1
@@ -125,14 +131,15 @@ Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1
 
 [Sec_7]
 Name[C]="drill"
+Name[en]="drill"
 Name[ja]="drill"
-Prompt=""
+Prompt[en]=""
 Device="EXCELLON"
 Wheel=""
 Rack=""
 Scale=1
 Output="%P/gerbers/drill.nc"
-Flags="0 0 0 0 0 1 1"
+Flags="0 0 0 1 0 1 1"
 Emulate="0"
 Offset="0.0mil 0.0mil"
 Sheet=1
@@ -144,14 +151,15 @@ Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1
 
 [Sec_8]
 Name[C]="outline"
+Name[en]="outline"
 Name[ja]="outline"
-Prompt=""
+Prompt[en]=""
 Device="GERBER_RS274X"
 Wheel=""
 Rack=""
 Scale=1
 Output="%P/gerbers/outline.ger"
-Flags="0 0 0 0 0 1 1"
+Flags="0 0 0 1 0 1 1"
 Emulate="0"
 Offset="0.0mil 0.0mil"
 Sheet=1
