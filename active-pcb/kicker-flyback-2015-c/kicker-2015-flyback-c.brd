@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
@@ -186,7 +186,7 @@
 <text x="48.5775" y="47.625" size="1.27" layer="22" ratio="15" rot="SMR270" align="top-center">DANGER - HIGH VOLTAGE</text>
 <text x="63.1825" y="63.5" size="1.27" layer="21" ratio="15" rot="SR90" align="top-center">+HV</text>
 <text x="53.34" y="40.005" size="1.778" layer="21" rot="R90">CAPACITORS</text>
-<text x="53.34" y="28.2575" size="1.778" layer="20" rot="R90">CHIP</text>
+<text x="53.34" y="28.2575" size="1.778" layer="21" rot="R90">CHIP</text>
 <text x="53.6575" y="18.0975" size="1.778" layer="21" rot="R90">KICK</text>
 <text x="49.53" y="53.975" size="1.778" layer="22" rot="MR0">+</text>
 <text x="49.53" y="44.45" size="1.778" layer="22" rot="MR0">+</text>
@@ -204,7 +204,6 @@
 <wire x1="65.405" y1="110.49" x2="65.405" y2="57.785" width="0.254" layer="47"/>
 <wire x1="65.405" y1="57.785" x2="54.61" y2="57.785" width="0.254" layer="47"/>
 <wire x1="54.61" y1="57.785" x2="54.61" y2="6.35" width="0.254" layer="47"/>
-<wire x1="54.61" y1="6.35" x2="48.26" y2="0" width="0.254" layer="47"/>
 <wire x1="48.26" y1="0" x2="13.97" y2="0" width="0.254" layer="47"/>
 <dimension x1="54.61" y1="6.35" x2="48.26" y2="0" x3="62.5475" y3="-7.9375" layer="47"/>
 <dimension x1="54.61" y1="57.785" x2="54.61" y2="6.35" x3="62.23" y3="32.0675" layer="47"/>
@@ -222,6 +221,10 @@
 <text x="27.94" y="62.865" size="1.016" layer="21">12V SB</text>
 <text x="49.2125" y="22.86" size="1.27" layer="21" ratio="15" rot="SR90" align="top-center">DANGER - HIGH VOLTAGE</text>
 <text x="49.2125" y="22.86" size="1.27" layer="22" ratio="15" rot="SMR270" align="top-center">DANGER - HIGH VOLTAGE</text>
+<dimension x1="45.212" y1="102.235" x2="9.398" y2="102.235" x3="27.305" y3="102.235" layer="47"/>
+<dimension x1="45.212" y1="102.235" x2="45.212" y2="12.065" x3="45.212" y3="57.15" layer="47" dtype="vertical"/>
+<dimension x1="44.577" y1="0" x2="45.212" y2="12.065" x3="35.306" y3="6.0325" layer="47" dtype="vertical"/>
+<dimension x1="0" y1="110.49" x2="9.398" y2="102.235" x3="4.699" y3="94.869" layer="47" dtype="horizontal"/>
 </plain>
 <libraries>
 <library name="diode">
@@ -4177,10 +4180,10 @@ In this library you will find resistors. If you are looking for a common package
 <smd name="P1" x="-0.975" y="-1.4" dx="0.4" dy="0.6" layer="1"/>
 <smd name="P4" x="0.975" y="-1.4" dx="0.4" dy="0.6" layer="1"/>
 <smd name="P5" x="0.975" y="1.4" dx="0.4" dy="0.6" layer="1"/>
-<wire x1="1.45" y1="1.15" x2="-1.45" y2="1.15" width="0.01" layer="20"/>
-<wire x1="-1.45" y1="1.15" x2="-1.45" y2="-1.15" width="0.01" layer="20"/>
-<wire x1="-1.45" y1="-1.15" x2="1.45" y2="-1.15" width="0.01" layer="20"/>
-<wire x1="1.45" y1="-1.15" x2="1.45" y2="1.15" width="0.01" layer="20"/>
+<wire x1="1.45" y1="1.15" x2="-1.45" y2="1.15" width="0.01" layer="21"/>
+<wire x1="-1.45" y1="1.15" x2="-1.45" y2="-1.15" width="0.01" layer="21"/>
+<wire x1="-1.45" y1="-1.15" x2="1.45" y2="-1.15" width="0.01" layer="21"/>
+<wire x1="1.45" y1="-1.15" x2="1.45" y2="1.15" width="0.01" layer="21"/>
 <circle x="-1.2065" y="-0.8255" radius="0.002540625" width="0.127" layer="21"/>
 </package>
 </packages>
