@@ -21,7 +21,7 @@ parser.add_argument("directory",
                     help="Directory containing eagle files")
 args = parser.parse_args()
 
-BASE_DIRECTORY = args.directory
+BASE_DIRECTORY = os.path.abspath(args.directory)
 LOGFILE = open('image-gen.log', 'w')
 
 def mkdir_p(dirname):
@@ -54,8 +54,10 @@ def enumerate_eagle_files(dirpath, exclude=[]):
 
 
 def process_file(infile, outdir='out'):
-    subpath = infile[3:]
-    # print('generating image for file: %s' % subpath)
+    # get filepath relative to @outdir
+    subpath = infile[len(BASE_DIRECTORY) + 1:]
+
+    print('generating image for file: %s' % subpath)
     success = False
     try:
         outfile = os.path.join('out', subpath) + '.png'
