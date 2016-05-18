@@ -42,20 +42,30 @@ def enumerate_eagle_files(dirpath, exclude=[]):
             if f.endswith('.sch') or f.endswith('.brd'):
                 yield root + '/' + f
 
-# print(list(enumerate_eagle_files('../active-pcb')))
 
-OUTPUT_MDFILE.write("# Images\n")
 
-for filepath in enumerate_eagle_files('../active-pcb'):
-    subpath = filepath[3:]
+def process_file(infile, outdir='out'):
+    subpath = infile[3:]
     print('generating image for file: %s' % subpath)
     try:
         outfile = os.path.join('out', subpath) + '.png'
         generate_image(os.path.join('../', subpath), outfile)
-        OUTPUT_MDFILE.write("# Render\n")
-        OUTPUT_MDFILE.write("![img](%s)\n" % outfile)
-        OUTPUT_MDFILE.write("\n")
+        return outfile
     except Exception as e:
         print('  failed: %s' % subpath)
         # print(e)
 
+
+
+from multiprocessing.pool import ThreadPool
+
+pool = ThreadPool()
+outfiles = pool.map(process_file, enumerate_eagle_files('../active-pcb'))
+
+print(outfile)
+
+
+OUTPUT_MDFILE.write("# Images\n")
+OUTPUT_MDFILE.write("# Render\n")
+OUTPUT_MDFILE.write("![img](%s)\n" % outfile)
+OUTPUT_MDFILE.write("\n")
