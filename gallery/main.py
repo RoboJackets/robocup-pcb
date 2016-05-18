@@ -86,7 +86,8 @@ OUTPUT_FILEPATH=os.path.join(args.output_dir, 'index.md')
 with open(OUTPUT_FILEPATH, 'w') as file:
     # jekyll "front matter"
     file.write("---\ntitle: RoboJackets PCB Gallery\n---\n")
-    file.write("# Images\n\n")
+    file.write("Table of Contents:\n")
+    file.write("\n* TOC\n{:toc}\n\n")
     for (outfile, success) in output_files:
         outfile_rel = outfile[len(args.output_dir) + 1:]
         title = os.path.splitext(os.path.basename(outfile))[0]
