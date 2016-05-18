@@ -1,15 +1,23 @@
 #!/usr/bin/env python3
 
+"""
+Generates images from eagle .sch and .brd files and creates a markdown file
+embedding the images.
+"""
+
 # install with
 #   pip2 install git+https://github.com/upverter/schematic-file-converter freetype-py
 import upconvert
+
 import subprocess as proc
 import os
 
 import os
 import errno
 
-# the actual code
+BASE_DIRECTORY="../active-pcb"
+LOGFILE=open('image-gen.log', 'w')
+
 def mkdir_p(dirname):
     try:
         os.makedirs(dirname)
@@ -19,11 +27,6 @@ def mkdir_p(dirname):
         else:
             raise
 
-
-LOGFILE=open('image-gen.log', 'w')
-
-
-OUTPUT_MDFILE=open('output.md', 'w')
 
 def generate_image(infile, outfile):
     # print('outfile: %s' % outfile)
@@ -46,22 +49,40 @@ def enumerate_eagle_files(dirpath, exclude=[]):
 
 def process_file(infile, outdir='out'):
     subpath = infile[3:]
-    print('generating image for file: %s' % subpath)
+    # print('generating image for file: %s' % subpath)
+    success = False
     try:
         outfile = os.path.join('out', subpath) + '.png'
         generate_image(os.path.join('../', subpath), outfile)
-        return outfile
+        print("=> %s" % outfile)
+        success = True
     except Exception as e:
         print('  failed: %s' % subpath)
         # print(e)
 
+    return (outfile, success)
 
 
+print("Generating images for eagle files in directory '%s' % BASE_DIRECTORY")
+print()
+
+input_files = list(enumerate_eagle_files(BASE_DIRECTORY))
+
+# Generate images for all files in parallel
 from multiprocessing.pool import ThreadPool
 pool = ThreadPool()
-output_files = pool.map(process_file, enumerate_eagle_files('../active-pcb'))
-for outfile in output_files:
-    OUTPUT_MDFILE.write("# Images\n")
-    OUTPUT_MDFILE.write("# Render\n")
-    OUTPUT_MDFILE.write("![img](%s)\n" % outfile)
-    OUTPUT_MDFILE.write("\n")
+output_files = pool.map(process_file, input_files)
+
+# write output.md with all image files embedded
+OUTPUT_FILEPATH='output.md'
+with open(OUTPUT_FILEPATH, 'w') as file:
+    file.write("# Images\n\n")
+    for (outfile, success) in output_files:
+        title = os.path.splitext(os.path.basename(outfile))[0]
+        file.write("## %s\n" % title)
+        file.write("![img](%s)\n" % outfile)
+        file.write("\n")
+
+# done!
+print()
+print("Wrote output file: %s" % OUTPUT_FILEPATH)
