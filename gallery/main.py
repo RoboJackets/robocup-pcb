@@ -1,13 +1,12 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 """
 Generates images from eagle .sch and .brd files and creates a markdown file
 embedding the images.
 """
 
-# install with
+# install Dependencies with
 #   pip2 install git+https://github.com/upverter/schematic-file-converter freetype-py
-import upconvert
 
 import subprocess as proc
 import os
@@ -35,10 +34,8 @@ def mkdir_p(dirname):
 
 
 def generate_image(infile, outfile):
-    # print('outfile: %s' % outfile)
     mkdir_p(os.path.dirname(outfile))
-    # print('dirname: %s' % os.path.dirname(outfile))
-    proc.check_call(['python2', '-m', 'upconvert.upconverter',
+    proc.check_call(['python2', '--unsupported', '-m', 'upconvert.upconverter',
     '-i', infile, '-t', 'image', '-o', outfile, '-f', 'eaglexml'], stdout=LOGFILE, stderr=LOGFILE)
 
 
@@ -56,23 +53,20 @@ def enumerate_eagle_files(dirpath, exclude=[]):
 def process_file(infile, outdir='out'):
     # get filepath relative to @outdir
     subpath = infile[len(BASE_DIRECTORY) + 1:]
-
-    print('generating image for file: %s' % subpath)
     success = False
     try:
         outfile = os.path.join('out', subpath) + '.png'
-        generate_image(os.path.join('../', subpath), outfile)
+        generate_image(infile, outfile)
         print("=> %s" % outfile)
         success = True
     except Exception as e:
         print('  failed: %s' % subpath)
-        # print(e)
+        print(e)
 
     return (outfile, success)
 
 
-print("Generating images for eagle files in directory '%s'" % BASE_DIRECTORY)
-print()
+print("Generating images for eagle files in directory '%s'\n" % BASE_DIRECTORY)
 
 input_files = list(enumerate_eagle_files(BASE_DIRECTORY))
 
@@ -92,5 +86,4 @@ with open(OUTPUT_FILEPATH, 'w') as file:
         file.write("\n")
 
 # done!
-print()
-print("Wrote output file: %s" % OUTPUT_FILEPATH)
+print("\nWrote output file: %s" % OUTPUT_FILEPATH)
