@@ -20,22 +20,34 @@ def mkdir_p(dirname):
             raise
 
 
+LOGFILE=open('image-gen.log', 'w')
+
 
 def generate_image(infile, outfile):
+    # print('outfile: %s' % outfile)
     mkdir_p(os.path.dirname(outfile))
+    # print('dirname: %s' % os.path.dirname(outfile))
     proc.check_call(['python2', '-m', 'upconvert.upconverter',
-    '-i', infile, '-t', 'image', '-o', outfile, '-f', 'eaglexml'])
+    '-i', infile, '-t', 'image', '-o', outfile, '-f', 'eaglexml'], stdout=LOGFILE, stderr=LOGFILE)
 
 
+def enumerate_eagle_files(dirpath, exclude=[]):
+    for root, dirs, files in os.walk(dirpath, topdown=True):
+        dirs[:] = [d
+                   for d in dirs
+                   if os.path.abspath(root + '/' + d) not in exclude]
+        for f in files:
+            if f.endswith('.sch') or f.endswith('.brd'):
+                yield root + '/' + f
 
-file_subpaths = [
-    'active-pcb/control-2015-a/control-2015-a.sch'
-]
+# print(list(enumerate_eagle_files('../active-pcb')))
 
 
-for subpath in file_subpaths:
+for filepath in enumerate_eagle_files('../active-pcb'):
+    subpath = filepath[3:]
+    print('generating image for file: %s' % subpath)
     try:
-        generate_image(os.path.join('../', subpath), os.path.join('out', subpath, '.png'))
+        generate_image(os.path.join('../', subpath), os.path.join('out', subpath) + '.png')
     except Exception as e:
-        print('failed: %s' % subpath)
-        print(e)
+        print('  failed: %s' % subpath)
+        # print(e)
