@@ -85,7 +85,7 @@ output_files = pool.map(process_file, input_files)
 OUTPUT_FILEPATH=os.path.join(args.output_dir, 'index.md')
 with open(OUTPUT_FILEPATH, 'w') as file:
     # jekyll "front matter"
-    file.write("---\ntitle: RoboJackets PCB Gallery\n---\n")
+    file.write("---\ntitle: RoboJackets PCB Gallery\nlayout: main\n---\n\n")
     file.write("Table of Contents:\n")
     file.write("\n* TOC\n{:toc}\n\n")
     for (outfile, success) in output_files:
@@ -94,7 +94,6 @@ with open(OUTPUT_FILEPATH, 'w') as file:
         file.write("## %s\n" % title)
         file.write("![img](%s)\n" % outfile_rel)
         file.write("\n")
-        print("OUTFILE REL: %s" % outfile_rel)
 
 # done!
 print("\nWrote output file: %s" % OUTPUT_FILEPATH)

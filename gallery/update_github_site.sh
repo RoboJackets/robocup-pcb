@@ -15,7 +15,7 @@ rm -r ./* || true
 popd
 
 # copy gallery static files
-cp $REPO_DIR/gallery/files/* $GALLERY_DIR
+cp -r $REPO_DIR/gallery/files/* $GALLERY_DIR
 
 # run gallery-generation python script and place output in tmp repo dir
 $REPO_DIR/gallery/main.py $REPO_DIR -o $GALLERY_DIR
