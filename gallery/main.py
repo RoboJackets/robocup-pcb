@@ -95,7 +95,6 @@ with open(OUTPUT_FILEPATH, 'w') as file:
         file.write("## %s\n" % title)
         file.write("![img](%s)\n" % outfile_rel)
         file.write("\n")
-        break
 
 # done!
 print("\nWrote output file: %s" % OUTPUT_FILEPATH)
