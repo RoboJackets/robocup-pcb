@@ -4,7 +4,6 @@ layout: layout
 
 <head>
     <link rel='stylesheet' type='text/css' href='/{{site.baseurl}}/styles.css' />
-    <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css' />
 </head>
 
 <body>
@@ -12,11 +11,13 @@ layout: layout
     {{ content }}
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox-plus-jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
 
     <script>
-    $('img').attr('data-lightbox', 'image-1').attr('data-title', 'image 1')
+    // $('img').colorbox({rel:'group1', href='active-pcb/pic.png'});
+    $('img').each(function() {
+        $(this).colorbox({href:this.src})
+    });
     </script>
 
 </body>
