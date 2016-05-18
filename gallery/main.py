@@ -89,11 +89,13 @@ with open(OUTPUT_FILEPATH, 'w') as file:
     file.write("Table of Contents:\n")
     file.write("\n* TOC\n{:toc}\n\n")
     for (outfile, success) in output_files:
+        if not success: continue
         outfile_rel = outfile[len(args.output_dir) + 1:]
         title = os.path.splitext(os.path.basename(outfile))[0]
         file.write("## %s\n" % title)
         file.write("![img](%s)\n" % outfile_rel)
         file.write("\n")
+        break
 
 # done!
 print("\nWrote output file: %s" % OUTPUT_FILEPATH)

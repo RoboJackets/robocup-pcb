@@ -2,6 +2,21 @@
 layout: layout
 ---
 
-<link rel='stylesheet' type='text/css' href='/{{site.baseurl}}/styles.css' />
+<head>
+    <link rel='stylesheet' type='text/css' href='/{{site.baseurl}}/styles.css' />
+    <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css' />
+</head>
 
-{{ content }}
+<body>
+
+    {{ content }}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox-plus-jquery.min.js"></script>
+
+    <script>
+    $('img').attr('data-lightbox', 'image-1').attr('data-title', 'image 1')
+    </script>
+
+</body>
