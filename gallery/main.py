@@ -23,6 +23,8 @@ def mkdir_p(dirname):
 LOGFILE=open('image-gen.log', 'w')
 
 
+OUTPUT_MDFILE=open('output.md', 'w')
+
 def generate_image(infile, outfile):
     # print('outfile: %s' % outfile)
     mkdir_p(os.path.dirname(outfile))
@@ -42,12 +44,18 @@ def enumerate_eagle_files(dirpath, exclude=[]):
 
 # print(list(enumerate_eagle_files('../active-pcb')))
 
+OUTPUT_MDFILE.write("# Images\n")
 
 for filepath in enumerate_eagle_files('../active-pcb'):
     subpath = filepath[3:]
     print('generating image for file: %s' % subpath)
     try:
-        generate_image(os.path.join('../', subpath), os.path.join('out', subpath) + '.png')
+        outfile = os.path.join('out', subpath) + '.png'
+        generate_image(os.path.join('../', subpath), outfile)
+        OUTPUT_MDFILE.write("# Render\n")
+        OUTPUT_MDFILE.write("![img](%s)\n" % outfile)
+        OUTPUT_MDFILE.write("\n")
     except Exception as e:
         print('  failed: %s' % subpath)
         # print(e)
+
