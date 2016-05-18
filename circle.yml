@@ -1,0 +1,13 @@
+machine:
+  timezone:
+    America/New_York
+
+dependencies:
+  pre:
+    - pip install git+https://github.com/upverter/schematic-file-converter freetype-py
+
+deployment:
+  production:
+    branch: justin/gallery # TODO: change to master
+    commands:
+      - gallery/update_github_site.sh
