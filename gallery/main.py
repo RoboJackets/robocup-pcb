@@ -18,7 +18,13 @@ parser = argparse.ArgumentParser(
 parser.add_argument("directory",
                     type=str,
                     help="Directory containing eagle files")
+parser.add_argument('-o',
+    '--output_dir',
+    type=str,
+    default='gallery_out',
+    help="The directory to place the output gallery in")
 args = parser.parse_args()
+args.output_dir = os.path.abspath(args.output_dir)
 
 BASE_DIRECTORY = os.path.abspath(args.directory)
 LOGFILE = open('image-gen.log', 'w')
@@ -35,7 +41,7 @@ def mkdir_p(dirname):
 
 def generate_image(infile, outfile):
     mkdir_p(os.path.dirname(outfile))
-    proc.check_call(['python2', '--unsupported', '-m', 'upconvert.upconverter',
+    proc.check_call(['python2', '-m', 'upconvert.upconverter', '--unsupported', 
     '-i', infile, '-t', 'image', '-o', outfile, '-f', 'eaglexml'], stdout=LOGFILE, stderr=LOGFILE)
 
 
@@ -50,12 +56,12 @@ def enumerate_eagle_files(dirpath, exclude=[]):
 
 
 
-def process_file(infile, outdir='out'):
+def process_file(infile):
     # get filepath relative to @outdir
     subpath = infile[len(BASE_DIRECTORY) + 1:]
     success = False
     try:
-        outfile = os.path.join('out', subpath) + '.png'
+        outfile = os.path.join(args.output_dir, subpath) + '.png'
         generate_image(infile, outfile)
         print("=> %s" % outfile)
         success = True
@@ -76,14 +82,18 @@ pool = ThreadPool()
 output_files = pool.map(process_file, input_files)
 
 # write output.md with all image files embedded
-OUTPUT_FILEPATH='output.md'
+OUTPUT_FILEPATH=os.path.join(args.output_dir, 'index.md')
 with open(OUTPUT_FILEPATH, 'w') as file:
+    # jekyll "front matter"
+    file.write("---\ntitle: RoboJackets PCB Gallery\n---\n")
     file.write("# Images\n\n")
     for (outfile, success) in output_files:
+        outfile_rel = outfile[len(args.output_dir) + 1:]
         title = os.path.splitext(os.path.basename(outfile))[0]
         file.write("## %s\n" % title)
-        file.write("![img](%s)\n" % outfile)
+        file.write("![img](%s)\n" % outfile_rel)
         file.write("\n")
+        print("OUTFILE REL: %s" % outfile_rel)
 
 # done!
 print("\nWrote output file: %s" % OUTPUT_FILEPATH)
