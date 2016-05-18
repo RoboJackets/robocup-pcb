@@ -58,14 +58,10 @@ def process_file(infile, outdir='out'):
 
 
 from multiprocessing.pool import ThreadPool
-
 pool = ThreadPool()
-outfiles = pool.map(process_file, enumerate_eagle_files('../active-pcb'))
-
-print(outfile)
-
-
-OUTPUT_MDFILE.write("# Images\n")
-OUTPUT_MDFILE.write("# Render\n")
-OUTPUT_MDFILE.write("![img](%s)\n" % outfile)
-OUTPUT_MDFILE.write("\n")
+output_files = pool.map(process_file, enumerate_eagle_files('../active-pcb'))
+for outfile in output_files:
+    OUTPUT_MDFILE.write("# Images\n")
+    OUTPUT_MDFILE.write("# Render\n")
+    OUTPUT_MDFILE.write("![img](%s)\n" % outfile)
+    OUTPUT_MDFILE.write("\n")
