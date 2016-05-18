@@ -11,12 +11,18 @@ import upconvert
 
 import subprocess as proc
 import os
-
-import os
 import errno
+import argparse
 
-BASE_DIRECTORY="../active-pcb"
-LOGFILE=open('image-gen.log', 'w')
+parser = argparse.ArgumentParser(
+    description="Generate a markdown file containing the renders of all eagle files in a directory")
+parser.add_argument("directory",
+                    type=str,
+                    help="Directory containing eagle files")
+args = parser.parse_args()
+
+BASE_DIRECTORY = args.directory
+LOGFILE = open('image-gen.log', 'w')
 
 def mkdir_p(dirname):
     try:
@@ -63,7 +69,7 @@ def process_file(infile, outdir='out'):
     return (outfile, success)
 
 
-print("Generating images for eagle files in directory '%s' % BASE_DIRECTORY")
+print("Generating images for eagle files in directory '%s'" % BASE_DIRECTORY)
 print()
 
 input_files = list(enumerate_eagle_files(BASE_DIRECTORY))
