@@ -1,3 +1,53 @@
-MENU 'Default Layers : Script DefaultLayers;'\
-     'Default Grid: Script DefaultGrid;'\
-     'Export to PNG: Run ExportToPNG all 1 16;';
+#Setup script used to enhance eagle for the RoboJackets' use.
+
+#Assign general ctrl+ commands
+ASSIGN C+M MOVE;
+ASSIGN C+Z UNDO;
+ASSIGN C+Y REDO;
+ASSIGN C+C COPY;
+ASSIGN C+V PASTE;
+ASSIGN C+X DELETE;
+ASSIGN C+A ADD;
+ASSIGN C+G GROUP;
+ASSIGN C+I INFO;
+ASSIGN C+T TEXT;
+ASSIGN C+N NAME;
+ASSIGN C+F 'RUN find.ulp';
+ASSIGN C+L LABEL;
+ASSIGN CS+L LINE;
+
+#Opens the Board file
+edit .brd
+
+GRID MM 0.5 ON;
+GRID ALT MM 0.25;
+ASSIGN C+W ROUTE;
+ASSIGN C+U RIPUP;
+ASSIGN C+D 'DRC;';
+ASSIGN CS+D DRC;
+ASSIGN CS+S SMASH;
+ASSIGN C+R RATSNEST;
+Change Drill 0.015in;
+Change Shape Round;
+
+Script BoardColors
+
+MENU 'Default Layers: Script BoardDefaultLayers;'\
+     'Default Grid: Script BoardDefaultGrid;'\
+     'Export to PNG: Run ExportToPNG all 1 16;'\
+     'Switch to Schematic: Script BoardSwitchToSchematic;';
+
+
+Script BoardSwitchToSchematic;
+
+Change XREF ON;
+Change SIZE 0.05;
+ASSIGN C+W NET;
+ASSIGN C+E ERC;
+
+Script SchematicColors
+
+MENU 'Default Layers : Script SchematicDefaultLayers;'\
+     'Default Grid: Script SchematicDefaultGrid;'\
+     'Export to PNG: Run ExportToPNG all 91 94 95 96 97;'\
+     'Switch to Board: Script SchematicSwitchToBoard;';

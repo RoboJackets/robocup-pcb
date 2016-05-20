@@ -59,13 +59,13 @@ void commandPrint(string name_suffix) {
 
 
 // main
-if (argv[1]) {
+if (argv[0]) {
     brd_suffix = "-" + argv[0];
 }
 
 int an = 0;
 do {
-  if (argv[2+an]) {
+  if (argv[1+an]) {
     exp_Layers += " " + argv[1+an];
     an++;
   }

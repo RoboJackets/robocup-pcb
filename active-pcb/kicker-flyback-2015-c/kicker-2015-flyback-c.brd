@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.25" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
@@ -186,7 +186,7 @@
 <text x="48.5775" y="47.625" size="1.27" layer="22" ratio="15" rot="SMR270" align="top-center">DANGER - HIGH VOLTAGE</text>
 <text x="63.1825" y="63.5" size="1.27" layer="21" ratio="15" rot="SR90" align="top-center">+HV</text>
 <text x="53.34" y="40.005" size="1.778" layer="21" rot="R90">CAPACITORS</text>
-<text x="53.34" y="28.2575" size="1.778" layer="20" rot="R90">CHIP</text>
+<text x="53.34" y="28.2575" size="1.778" layer="21" rot="R90">CHIP</text>
 <text x="53.6575" y="18.0975" size="1.778" layer="21" rot="R90">KICK</text>
 <text x="49.53" y="53.975" size="1.778" layer="22" rot="MR0">+</text>
 <text x="49.53" y="44.45" size="1.778" layer="22" rot="MR0">+</text>
@@ -206,17 +206,17 @@
 <wire x1="54.61" y1="57.785" x2="54.61" y2="6.35" width="0.254" layer="47"/>
 <wire x1="54.61" y1="6.35" x2="48.26" y2="0" width="0.254" layer="47"/>
 <wire x1="48.26" y1="0" x2="13.97" y2="0" width="0.254" layer="47"/>
-<dimension x1="54.61" y1="6.35" x2="48.26" y2="0" x3="62.5475" y3="-7.9375" layer="47"/>
-<dimension x1="54.61" y1="57.785" x2="54.61" y2="6.35" x3="62.23" y3="32.0675" layer="47"/>
-<dimension x1="48.26" y1="0" x2="13.97" y2="0" x3="31.115" y3="-10.16" layer="47"/>
-<dimension x1="13.97" y1="0" x2="13.97" y2="21.59" x3="-7.62" y3="10.795" layer="47"/>
-<dimension x1="13.97" y1="21.59" x2="0" y2="21.59" x3="6.985" y3="-18.415" layer="47" dtype="vertical"/>
-<dimension x1="65.405" y1="57.785" x2="54.61" y2="57.785" x3="60.0075" y3="49.53" layer="47" dtype="vertical"/>
-<dimension x1="65.405" y1="110.49" x2="65.405" y2="57.785" x3="73.025" y3="84.1375" layer="47" dtype="vertical"/>
-<dimension x1="0" y1="110.49" x2="65.405" y2="110.49" x3="32.7025" y3="116.84" layer="47" dtype="vertical"/>
-<dimension x1="0" y1="21.59" x2="0" y2="110.49" x3="-7.62" y3="66.04" layer="47" dtype="vertical"/>
-<dimension x1="48.26" y1="0" x2="41.07579375" y2="0" x3="53.34" y3="5.08" layer="47" dtype="angle"/>
-<dimension x1="54.61" y1="6.35" x2="49.670859375" y2="1.41085625" x3="54.61" y3="13.335" layer="47" dtype="angle"/>
+<dimension x1="54.61" y1="6.35" x2="48.26" y2="0" x3="62.5475" y3="-7.9375" textsize="3.5" layer="47"/>
+<dimension x1="54.61" y1="57.785" x2="54.61" y2="6.35" x3="62.23" y3="32.0675" textsize="3.5" layer="47"/>
+<dimension x1="48.26" y1="0" x2="13.97" y2="0" x3="31.115" y3="-10.16" textsize="3.5" layer="47"/>
+<dimension x1="13.97" y1="0" x2="13.97" y2="21.59" x3="-7.62" y3="10.795" textsize="3.5" layer="47"/>
+<dimension x1="13.97" y1="21.59" x2="0" y2="21.59" x3="6.985" y3="-18.415" textsize="3.5" layer="47" dtype="vertical"/>
+<dimension x1="65.405" y1="57.785" x2="54.61" y2="57.785" x3="60.0075" y3="49.53" textsize="3.5" layer="47" dtype="vertical"/>
+<dimension x1="65.405" y1="110.49" x2="65.405" y2="57.785" x3="73.025" y3="84.1375" textsize="3.5" layer="47" dtype="vertical"/>
+<dimension x1="0" y1="110.49" x2="65.405" y2="110.49" x3="32.7025" y3="116.84" textsize="3.5" layer="47" dtype="vertical"/>
+<dimension x1="0" y1="21.59" x2="0" y2="110.49" x3="-7.62" y3="66.04" textsize="3.5" layer="47" dtype="vertical"/>
+<dimension x1="48.26" y1="0" x2="41.07579375" y2="0" x3="53.34" y3="5.08" textsize="3.5" layer="47" dtype="angle"/>
+<dimension x1="54.61" y1="6.35" x2="49.670859375" y2="1.41085625" x3="54.61" y3="13.335" textsize="3.5" layer="47" dtype="angle"/>
 <text x="48.5775" y="47.625" size="1.27" layer="21" ratio="15" rot="SR90" align="top-center">DANGER - HIGH VOLTAGE</text>
 <text x="28.575" y="67.945" size="1.016" layer="21">5V SB</text>
 <text x="27.94" y="62.865" size="1.016" layer="21">12V SB</text>
@@ -4194,7 +4194,7 @@ In this library you will find resistors. If you are looking for a common package
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules>
+<designrules name="default">
 <description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 The default Design Rules have been set to cover
