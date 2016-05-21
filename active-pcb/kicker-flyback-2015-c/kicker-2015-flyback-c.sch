@@ -17205,10 +17205,10 @@ In this library you will find resistors. If you are looking for a common package
 <smd name="P1" x="-0.975" y="-1.4" dx="0.4" dy="0.6" layer="1"/>
 <smd name="P4" x="0.975" y="-1.4" dx="0.4" dy="0.6" layer="1"/>
 <smd name="P5" x="0.975" y="1.4" dx="0.4" dy="0.6" layer="1"/>
-<wire x1="1.45" y1="1.15" x2="-1.45" y2="1.15" width="0.01" layer="20"/>
-<wire x1="-1.45" y1="1.15" x2="-1.45" y2="-1.15" width="0.01" layer="20"/>
-<wire x1="-1.45" y1="-1.15" x2="1.45" y2="-1.15" width="0.01" layer="20"/>
-<wire x1="1.45" y1="-1.15" x2="1.45" y2="1.15" width="0.01" layer="20"/>
+<wire x1="1.45" y1="1.15" x2="-1.45" y2="1.15" width="0.01" layer="21"/>
+<wire x1="-1.45" y1="1.15" x2="-1.45" y2="-1.15" width="0.01" layer="21"/>
+<wire x1="-1.45" y1="-1.15" x2="1.45" y2="-1.15" width="0.01" layer="21"/>
+<wire x1="1.45" y1="-1.15" x2="1.45" y2="1.15" width="0.01" layer="21"/>
 <circle x="-1.2065" y="-0.8255" radius="0.002540625" width="0.127" layer="21"/>
 </package>
 </packages>
