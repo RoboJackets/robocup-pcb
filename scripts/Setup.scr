@@ -13,11 +13,10 @@ ASSIGN C+I INFO;
 ASSIGN C+T TEXT;
 ASSIGN C+N NAME;
 ASSIGN C+F 'RUN find.ulp';
-ASSIGN C+L LABEL;
-ASSIGN CS+L LINE;
+ASSIGN C+L LINE;
 
-#Opens the Board file
-edit .brd
+
+BRD:
 
 GRID MM 0.5 ON;
 GRID ALT MM 0.25;
@@ -32,16 +31,41 @@ Change Shape Round;
 
 Script BoardColors
 
-MENU 'Default Layers: Script BoardDefaultLayers;'\
-     'Default Grid: Script BoardDefaultGrid;'\
-     'Export to PNG: Run ExportToPNG all 1 16;'\
-     'Switch to Schematic: Script BoardSwitchToSchematic;';
+MENU 'Display {\
+				Default   : Script BoardDefaultLayers; |\
+                Top       : Script BoardTopLayers; |\
+                Bottom    : Script BoardBottomLayers; |\
+                Airwires  : DISPLAY NONE UNROUTED; |\ 
+                Unfill Poygons: ripup @; \
+              }'\
+     'Grid {\
+             Coarse  : Script BoardCoarseGrid; |\
+             Fine    : Script BoardFineGrid; |\
+             Off : Grid Off;\
+           }'\
+     'Export {\
+             Image {\
+             		 All 	: Script ExportAll;|\
+             		 Default: Script ExportDefault;|\
+		             Top 	: Script ExportTop;|\
+		             Bottom : Script ExportBottom; \
+		           } | \
+             Parts List : Export Partlist; |\
+             BOM        : edit .sch; run bom;\
+           }'\
+     'Switch to Schematic: Script BoardSwitchToSchematic;'\
+     '---'\
+     'Reset to Default :  Script BoardDefaults;'\
+     'Help {\
+             Eagle Help : Help;|\
+             About This Menu : Run About; \
+           }'
 
-
-Script BoardSwitchToSchematic;
+SCH:
 
 Change XREF ON;
 Change SIZE 0.05;
+ASSIGN C+L LABEL;
 ASSIGN C+W NET;
 ASSIGN C+E ERC;
 
@@ -51,3 +75,46 @@ MENU 'Default Layers : Script SchematicDefaultLayers;'\
      'Default Grid: Script SchematicDefaultGrid;'\
      'Export to PNG: Run ExportToPNG all 91 94 95 96 97;'\
      'Switch to Board: Script SchematicSwitchToBoard;';
+
+LBR:
+MENU '[designlink22.png] Search and order : Run designlink-order.ulp -general;'\
+     '[LTspice.png] LT Spice simulation {\
+                  Export: RUN ltspice.ulp /E; |\
+                  Import: RUN ltspice.ulp /I; \
+     }'\
+     '[pads-pcb.png] PADS package import : RUN import-pads-powerpcb-v5;' \
+;
+
+DEV:
+Grid Default;
+MENU '[designlink22.png] Search and order : Run designlink-order.ulp -general;' \
+     '[LTspice.png] LT Spice simulation {\
+                  Export: RUN ltspice.ulp /E; |\
+                  SpiceOrder : RUN spiceorder.ulp; |\
+                  SpiceModel: ATTRIBUTE SPICEMODEL |\
+                  Value2: ATTRIBUTE VALUE2 |\
+                  Import: RUN ltspice.ulp /I; \
+     }'\
+     '[pads-pcb.png] PADS package import : RUN import-pads-powerpcb-v5;'\
+;
+
+SYM:
+Grid Default On;
+Change Width 0.010;
+MENU '[LTspice.png] LT Spice simulation {\
+                  Export: RUN ltspice.ulp /E; |\
+                  SpiceOrder : RUN spiceorder.ulp; |\
+                  Import: RUN ltspice.ulp /I; \
+     }'\
+;
+
+PAC:
+Grid Default On;
+Change Width 0.005;
+Change Size 0.050;
+MENU '[LTspice.png] LT Spice simulation {\
+                  Import: RUN ltspice.ulp /I; \
+     }'\
+     '[pads-pcb.png] PADS package import : RUN import-pads-powerpcb-v5;' \
+     ;
+
