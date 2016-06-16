@@ -3797,10 +3797,10 @@ In this library you will find logos and images specific to RoboJackets. The part
 <smd name="SCLK" x="2.54" y="0" dx="1.27" dy="0.635" layer="1" rot="R90"/>
 <smd name="P$9" x="1.27" y="0" dx="1.27" dy="0.635" layer="1" rot="R90"/>
 <smd name="VDD" x="0" y="0" dx="1.27" dy="0.635" layer="1" rot="R90"/>
-<wire x1="-1.27" y1="1.27" x2="6.35" y2="1.27" width="0.127" layer="21"/>
-<wire x1="6.35" y1="1.27" x2="6.35" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="6.35" y1="-3.81" x2="-1.27" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-3.81" x2="-1.27" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-1.778" y1="1.27" x2="6.858" y2="1.27" width="0.127" layer="21"/>
+<wire x1="6.858" y1="1.27" x2="6.858" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="6.858" y1="-3.81" x2="-1.778" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="-1.778" y1="-3.81" x2="-1.778" y2="1.27" width="0.127" layer="21"/>
 <text x="-7.62" y="6.35" size="1.27" layer="21">Radio Board 2015 Connector</text>
 <wire x1="11.43" y1="5.08" x2="-6.35" y2="5.08" width="0.127" layer="21"/>
 <wire x1="-6.35" y1="5.08" x2="-6.35" y2="-29.21" width="0.127" layer="21"/>
@@ -3818,6 +3818,8 @@ In this library you will find logos and images specific to RoboJackets. The part
 <wire x1="0" y1="-10.16" x2="5.08" y2="-10.16" width="0.127" layer="21"/>
 <wire x1="5.08" y1="-10.16" x2="5.08" y2="-5.08" width="0.127" layer="21"/>
 <wire x1="5.08" y1="-5.08" x2="0" y2="-5.08" width="0.127" layer="21"/>
+<hole x="6.604" y="-1.27" drill="1.3208"/>
+<hole x="-1.524" y="-1.27" drill="1.3208"/>
 </package>
 </packages>
 </library>

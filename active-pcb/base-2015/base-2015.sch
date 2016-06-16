@@ -29404,6 +29404,13 @@ In this library you will find logos and images specific to RoboJackets. The part
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,91.44,40.64,MBED,GND,N$16,,,"/>
+<approved hash="104,1,91.44,38.1,MBED,VIN,N$5,,,"/>
+<approved hash="204,1,91.44,35.56,MBED,VB,,,,"/>
+<approved hash="204,1,187.96,38.1,MBED,VU,,,,"/>
+<approved hash="104,1,187.96,40.64,MBED,VO,N$8,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
