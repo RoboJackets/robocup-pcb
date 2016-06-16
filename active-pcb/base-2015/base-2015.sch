@@ -29198,10 +29198,9 @@ In this library you will find logos and images specific to RoboJackets. The part
 </classes>
 <parts>
 <part name="X1" library="con-cypressindustries" deviceset="MINI-USB-" device="32005-201"/>
-<part name="KIT1" library="MBED_v2.1" deviceset="MBED_NXP_LPC1768" device=""/>
+<part name="MBED" library="MBED_v2.1" deviceset="MBED_NXP_LPC1768" device=""/>
 <part name="U$1" library="radio-2015-connector" deviceset="RADIO201500CONNECTOR" device=""/>
 <part name="U$2" library="radio-2015-connector" deviceset="RADIO201500CONNECTOR" device=""/>
-<part name="U$3" library="RoboJackets-Aesthetics" deviceset="ROBOBUZZ" device="0.4X"/>
 </parts>
 <sheets>
 <sheet>
@@ -29209,7 +29208,7 @@ In this library you will find logos and images specific to RoboJackets. The part
 </plain>
 <instances>
 <instance part="X1" gate="G$1" x="200.66" y="60.96" rot="R90"/>
-<instance part="KIT1" gate="KIT" x="139.7" y="17.78"/>
+<instance part="MBED" gate="KIT" x="139.7" y="17.78"/>
 <instance part="U$1" gate="G$1" x="30.48" y="-7.62"/>
 <instance part="U$2" gate="G$1" x="30.48" y="38.1"/>
 </instances>
@@ -29218,7 +29217,7 @@ In this library you will find logos and images specific to RoboJackets. The part
 <nets>
 <net name="N$8" class="0">
 <segment>
-<pinref part="KIT1" gate="KIT" pin="VO"/>
+<pinref part="MBED" gate="KIT" pin="VO"/>
 <wire x1="187.96" y1="40.64" x2="190.5" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="40.64" x2="190.5" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="45.72" x2="73.66" y2="45.72" width="0.1524" layer="91"/>
@@ -29232,7 +29231,7 @@ In this library you will find logos and images specific to RoboJackets. The part
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="KIT1" gate="KIT" pin="P5"/>
+<pinref part="MBED" gate="KIT" pin="P5"/>
 <pinref part="U$2" gate="G$1" pin="MOSI"/>
 <wire x1="91.44" y1="30.48" x2="53.34" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="MOSI"/>
@@ -29247,7 +29246,7 @@ In this library you will find logos and images specific to RoboJackets. The part
 <pinref part="U$1" gate="G$1" pin="MISO"/>
 <wire x1="45.72" y1="-20.32" x2="55.88" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="-20.32" x2="55.88" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="KIT1" gate="KIT" pin="P6"/>
+<pinref part="MBED" gate="KIT" pin="P6"/>
 <wire x1="91.44" y1="27.94" x2="55.88" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="27.94" x2="48.26" y2="27.94" width="0.1524" layer="91"/>
 <junction x="55.88" y="27.94"/>
@@ -29263,7 +29262,7 @@ In this library you will find logos and images specific to RoboJackets. The part
 <wire x1="10.16" y1="-10.16" x2="10.16" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="-30.48" x2="83.82" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="-30.48" x2="83.82" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="KIT1" gate="KIT" pin="P15"/>
+<pinref part="MBED" gate="KIT" pin="P15"/>
 <wire x1="83.82" y1="5.08" x2="91.44" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -29272,7 +29271,7 @@ In this library you will find logos and images specific to RoboJackets. The part
 <pinref part="U$2" gate="G$1" pin="CSN"/>
 <wire x1="17.78" y1="35.56" x2="10.16" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="35.56" x2="10.16" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="KIT1" gate="KIT" pin="P11"/>
+<pinref part="MBED" gate="KIT" pin="P11"/>
 <wire x1="10.16" y1="15.24" x2="91.44" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -29281,14 +29280,14 @@ In this library you will find logos and images specific to RoboJackets. The part
 <pinref part="U$2" gate="G$1" pin="RESET"/>
 <wire x1="17.78" y1="30.48" x2="12.7" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="30.48" x2="12.7" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="KIT1" gate="KIT" pin="P10"/>
+<pinref part="MBED" gate="KIT" pin="P10"/>
 <wire x1="12.7" y1="17.78" x2="91.44" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
 <wire x1="81.28" y1="-27.94" x2="81.28" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="KIT1" gate="KIT" pin="P14"/>
+<pinref part="MBED" gate="KIT" pin="P14"/>
 <wire x1="81.28" y1="7.62" x2="91.44" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="-27.94" x2="12.7" y2="-27.94" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="RESET"/>
@@ -29302,7 +29301,7 @@ In this library you will find logos and images specific to RoboJackets. The part
 <wire x1="195.58" y1="55.88" x2="195.58" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="53.34" x2="86.36" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="53.34" x2="86.36" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="KIT1" gate="KIT" pin="VIN"/>
+<pinref part="MBED" gate="KIT" pin="VIN"/>
 <wire x1="86.36" y1="38.1" x2="91.44" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -29310,13 +29309,13 @@ In this library you will find logos and images specific to RoboJackets. The part
 <segment>
 <pinref part="X1" gate="G$1" pin="2"/>
 <wire x1="198.12" y1="55.88" x2="198.12" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="KIT1" gate="KIT" pin="D-"/>
+<pinref part="MBED" gate="KIT" pin="D-"/>
 <wire x1="198.12" y1="20.32" x2="187.96" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="KIT1" gate="KIT" pin="D+"/>
+<pinref part="MBED" gate="KIT" pin="D+"/>
 <wire x1="187.96" y1="17.78" x2="200.66" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="X1" gate="G$1" pin="3"/>
 <wire x1="200.66" y1="17.78" x2="200.66" y2="55.88" width="0.1524" layer="91"/>
@@ -29327,7 +29326,7 @@ In this library you will find logos and images specific to RoboJackets. The part
 <pinref part="U$2" gate="G$1" pin="INT"/>
 <wire x1="17.78" y1="40.64" x2="7.62" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="40.64" x2="7.62" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="KIT1" gate="KIT" pin="P12"/>
+<pinref part="MBED" gate="KIT" pin="P12"/>
 <wire x1="7.62" y1="12.7" x2="91.44" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -29338,7 +29337,7 @@ In this library you will find logos and images specific to RoboJackets. The part
 <wire x1="7.62" y1="-5.08" x2="7.62" y2="-33.02" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="-33.02" x2="86.36" y2="-33.02" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="-33.02" x2="86.36" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="KIT1" gate="KIT" pin="P16"/>
+<pinref part="MBED" gate="KIT" pin="P16"/>
 <wire x1="86.36" y1="2.54" x2="91.44" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -29348,7 +29347,7 @@ In this library you will find logos and images specific to RoboJackets. The part
 <wire x1="45.72" y1="-10.16" x2="50.8" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="SCLK"/>
 <wire x1="48.26" y1="35.56" x2="45.72" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="KIT1" gate="KIT" pin="P7"/>
+<pinref part="MBED" gate="KIT" pin="P7"/>
 <wire x1="91.44" y1="25.4" x2="88.9" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="25.4" x2="88.9" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="33.02" x2="50.8" y2="33.02" width="0.1524" layer="91"/>
@@ -29369,7 +29368,7 @@ In this library you will find logos and images specific to RoboJackets. The part
 <wire x1="88.9" y1="40.64" x2="88.9" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="48.26" x2="71.12" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="5.08" x2="71.12" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="KIT1" gate="KIT" pin="GND"/>
+<pinref part="MBED" gate="KIT" pin="GND"/>
 <wire x1="88.9" y1="40.64" x2="91.44" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="48.26" x2="88.9" y2="48.26" width="0.1524" layer="91"/>
 <junction x="88.9" y="48.26"/>
