@@ -29285,26 +29285,6 @@ In this library you will find logos and images specific to RoboJackets. The part
 <pinref part="U$1" gate="G$1" pin="CSN"/>
 </segment>
 </net>
-<net name="N$12" class="0">
-<segment>
-<wire x1="17.78" y1="30.48" x2="12.7" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="30.48" x2="12.7" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="MBED" gate="KIT" pin="P10"/>
-<wire x1="12.7" y1="17.78" x2="91.44" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="RESET"/>
-</segment>
-</net>
-<net name="N$14" class="0">
-<segment>
-<wire x1="81.28" y1="-27.94" x2="81.28" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="MBED" gate="KIT" pin="P14"/>
-<wire x1="81.28" y1="7.62" x2="91.44" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="-27.94" x2="12.7" y2="-27.94" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="-15.24" x2="12.7" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="-27.94" x2="12.7" y2="-15.24" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="RESET"/>
-</segment>
-</net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="X1" gate="G$1" pin="1"/>
