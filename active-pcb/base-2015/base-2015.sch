@@ -6492,78 +6492,6 @@ Source: www.cypressindustries.com</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="radio-2015-connector">
-<packages>
-<package name="CONNPACKAGE">
-<description>Amphenol FCI - SMD 10 pin connector</description>
-<smd name="GND" x="0" y="-2.54" dx="1.27" dy="0.635" layer="1" rot="R90"/>
-<smd name="INT" x="1.27" y="-2.54" dx="1.27" dy="0.635" layer="1" rot="R90"/>
-<smd name="CSN" x="2.54" y="-2.54" dx="1.27" dy="0.635" layer="1" rot="R90"/>
-<smd name="RESET" x="3.81" y="-2.54" dx="1.27" dy="0.635" layer="1" rot="R90"/>
-<smd name="VDD2" x="5.08" y="-2.54" dx="1.27" dy="0.635" layer="1" rot="R90"/>
-<smd name="MISO" x="5.08" y="0" dx="1.27" dy="0.635" layer="1" rot="R90"/>
-<smd name="MOSI" x="3.81" y="0" dx="1.27" dy="0.635" layer="1" rot="R90"/>
-<smd name="SCLK" x="2.54" y="0" dx="1.27" dy="0.635" layer="1" rot="R90"/>
-<smd name="P$9" x="1.27" y="0" dx="1.27" dy="0.635" layer="1" rot="R90"/>
-<smd name="VDD" x="0" y="0" dx="1.27" dy="0.635" layer="1" rot="R90"/>
-<wire x1="-1.27" y1="1.27" x2="6.35" y2="1.27" width="0.127" layer="21"/>
-<wire x1="6.35" y1="1.27" x2="6.35" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="6.35" y1="-3.81" x2="-1.27" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-3.81" x2="-1.27" y2="1.27" width="0.127" layer="21"/>
-<text x="-7.62" y="6.35" size="1.27" layer="21">Radio Board 2015 Connector</text>
-<wire x1="8.89" y1="5.08" x2="-3.81" y2="5.08" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="5.08" x2="-3.81" y2="-17.78" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="-17.78" x2="8.89" y2="-17.78" width="0.127" layer="21"/>
-<wire x1="8.89" y1="-17.78" x2="8.89" y2="5.08" width="0.127" layer="21"/>
-<wire x1="1.27" y1="-16.51" x2="3.81" y2="-16.51" width="0.127" layer="21"/>
-<wire x1="3.81" y1="-16.51" x2="3.81" y2="-8.89" width="0.127" layer="21"/>
-<wire x1="3.81" y1="-8.89" x2="1.27" y2="-8.89" width="0.127" layer="21"/>
-<wire x1="1.27" y1="-8.89" x2="1.27" y2="-16.51" width="0.127" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="RADIOBOARD2015CONNECTOR">
-<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-15.24" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-15.24" x2="10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
-<pin name="GND" x="-12.7" y="7.62" length="middle"/>
-<pin name="CSN" x="-12.7" y="-2.54" length="middle"/>
-<pin name="RESET" x="-12.7" y="-7.62" length="middle"/>
-<pin name="VDD" x="-12.7" y="-12.7" length="middle"/>
-<pin name="MISO" x="15.24" y="-12.7" length="middle" rot="R180"/>
-<pin name="MOSI" x="15.24" y="-7.62" length="middle" rot="R180"/>
-<pin name="SCLK" x="15.24" y="-2.54" length="middle" rot="R180"/>
-<pin name="VDD2" x="15.24" y="7.62" length="middle" rot="R180"/>
-<pin name="INT" x="-12.7" y="2.54" length="middle"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="RADIO201500CONNECTOR">
-<gates>
-<gate name="G$1" symbol="RADIOBOARD2015CONNECTOR" x="-15.24" y="10.16"/>
-</gates>
-<devices>
-<device name="" package="CONNPACKAGE">
-<connects>
-<connect gate="G$1" pin="CSN" pad="CSN"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="INT" pad="INT"/>
-<connect gate="G$1" pin="MISO" pad="MISO"/>
-<connect gate="G$1" pin="MOSI" pad="MOSI"/>
-<connect gate="G$1" pin="RESET" pad="RESET"/>
-<connect gate="G$1" pin="SCLK" pad="SCLK"/>
-<connect gate="G$1" pin="VDD" pad="VDD"/>
-<connect gate="G$1" pin="VDD2" pad="VDD2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="RoboJackets-Aesthetics">
 <description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
 &lt;hr&gt;
@@ -29187,6 +29115,88 @@ In this library you will find logos and images specific to RoboJackets. The part
 </deviceset>
 </devicesets>
 </library>
+<library name="radio-2015-connector">
+<packages>
+<package name="RADIOBOARD2015CONNECTOR">
+<description>Amphenol FCI - SMD 10 pin connector</description>
+<smd name="GND" x="0" y="-2.54" dx="1.27" dy="0.635" layer="1" rot="R90"/>
+<smd name="INT" x="1.27" y="-2.54" dx="1.27" dy="0.635" layer="1" rot="R90"/>
+<smd name="CSN" x="2.54" y="-2.54" dx="1.27" dy="0.635" layer="1" rot="R90"/>
+<smd name="RESET" x="3.81" y="-2.54" dx="1.27" dy="0.635" layer="1" rot="R90"/>
+<smd name="VDD2" x="5.08" y="-2.54" dx="1.27" dy="0.635" layer="1" rot="R90"/>
+<smd name="MISO" x="5.08" y="0" dx="1.27" dy="0.635" layer="1" rot="R90"/>
+<smd name="MOSI" x="3.81" y="0" dx="1.27" dy="0.635" layer="1" rot="R90"/>
+<smd name="SCLK" x="2.54" y="0" dx="1.27" dy="0.635" layer="1" rot="R90"/>
+<smd name="P$9" x="1.27" y="0" dx="1.27" dy="0.635" layer="1" rot="R90"/>
+<smd name="VDD" x="0" y="0" dx="1.27" dy="0.635" layer="1" rot="R90"/>
+<wire x1="-1.778" y1="1.27" x2="6.858" y2="1.27" width="0.127" layer="21"/>
+<wire x1="6.858" y1="1.27" x2="6.858" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="6.858" y1="-3.81" x2="-1.778" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="-1.778" y1="-3.81" x2="-1.778" y2="1.27" width="0.127" layer="21"/>
+<text x="-7.62" y="6.35" size="1.27" layer="21">Radio Board 2015 Connector</text>
+<wire x1="11.43" y1="5.08" x2="-6.35" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="5.08" x2="-6.35" y2="-29.21" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-41.91" x2="6.35" y2="-41.91" width="0.127" layer="21"/>
+<wire x1="11.43" y1="-29.21" x2="11.43" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-41.91" x2="-1.27" y2="-29.21" width="0.127" layer="21"/>
+<wire x1="6.35" y1="-29.21" x2="6.35" y2="-41.91" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-29.21" x2="-1.27" y2="-29.21" width="0.127" layer="21"/>
+<wire x1="6.35" y1="-29.21" x2="11.43" y2="-29.21" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-40.64" x2="1.27" y2="-25.4" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-25.4" x2="3.81" y2="-25.4" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-25.4" x2="3.81" y2="-40.64" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-40.64" x2="1.27" y2="-40.64" width="0.127" layer="21"/>
+<wire x1="0" y1="-5.08" x2="0" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="0" y1="-10.16" x2="5.08" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-10.16" x2="5.08" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-5.08" x2="0" y2="-5.08" width="0.127" layer="21"/>
+<hole x="6.604" y="-1.27" drill="1.3208"/>
+<hole x="-1.524" y="-1.27" drill="1.3208"/>
+</package>
+</packages>
+<symbols>
+<symbol name="RADIOBOARD2015CONNECTOR">
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-15.24" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-15.24" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<pin name="GND" x="-12.7" y="7.62" length="middle"/>
+<pin name="CSN" x="-12.7" y="-2.54" length="middle"/>
+<pin name="RESET" x="-12.7" y="-7.62" length="middle"/>
+<pin name="VDD" x="-12.7" y="-12.7" length="middle"/>
+<pin name="MISO" x="15.24" y="-12.7" length="middle" rot="R180"/>
+<pin name="MOSI" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="SCLK" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="VDD2" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="INT" x="-12.7" y="2.54" length="middle"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="RADIOBOARD2015CONNECTOR">
+<gates>
+<gate name="G$1" symbol="RADIOBOARD2015CONNECTOR" x="-15.24" y="10.16"/>
+</gates>
+<devices>
+<device name="" package="RADIOBOARD2015CONNECTOR">
+<connects>
+<connect gate="G$1" pin="CSN" pad="CSN"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="INT" pad="INT"/>
+<connect gate="G$1" pin="MISO" pad="MISO"/>
+<connect gate="G$1" pin="MOSI" pad="MOSI"/>
+<connect gate="G$1" pin="RESET" pad="RESET"/>
+<connect gate="G$1" pin="SCLK" pad="SCLK"/>
+<connect gate="G$1" pin="VDD" pad="VDD"/>
+<connect gate="G$1" pin="VDD2" pad="VDD2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -29199,8 +29209,8 @@ In this library you will find logos and images specific to RoboJackets. The part
 <parts>
 <part name="X1" library="con-cypressindustries" deviceset="MINI-USB-" device="32005-201"/>
 <part name="MBED" library="MBED_v2.1" deviceset="MBED_NXP_LPC1768" device=""/>
-<part name="U$1" library="radio-2015-connector" deviceset="RADIO201500CONNECTOR" device=""/>
-<part name="U$2" library="radio-2015-connector" deviceset="RADIO201500CONNECTOR" device=""/>
+<part name="U$1" library="radio-2015-connector" deviceset="RADIOBOARD2015CONNECTOR" device=""/>
+<part name="U$2" library="radio-2015-connector" deviceset="RADIOBOARD2015CONNECTOR" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -29209,8 +29219,8 @@ In this library you will find logos and images specific to RoboJackets. The part
 <instances>
 <instance part="X1" gate="G$1" x="200.66" y="60.96" rot="R90"/>
 <instance part="MBED" gate="KIT" x="139.7" y="17.78"/>
-<instance part="U$1" gate="G$1" x="30.48" y="-7.62"/>
-<instance part="U$2" gate="G$1" x="30.48" y="38.1"/>
+<instance part="U$1" gate="G$1" x="30.48" y="38.1"/>
+<instance part="U$2" gate="G$1" x="30.48" y="-7.62"/>
 </instances>
 <busses>
 </busses>
@@ -29221,29 +29231,28 @@ In this library you will find logos and images specific to RoboJackets. The part
 <wire x1="187.96" y1="40.64" x2="190.5" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="40.64" x2="190.5" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="45.72" x2="73.66" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="VDD2"/>
 <wire x1="45.72" y1="45.72" x2="73.66" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="45.72" x2="73.66" y2="0" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="VDD2"/>
 <wire x1="73.66" y1="0" x2="45.72" y2="0" width="0.1524" layer="91"/>
 <junction x="73.66" y="45.72"/>
+<pinref part="U$1" gate="G$1" pin="VDD2"/>
+<pinref part="U$2" gate="G$1" pin="VDD2"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="MBED" gate="KIT" pin="P5"/>
-<pinref part="U$2" gate="G$1" pin="MOSI"/>
 <wire x1="91.44" y1="30.48" x2="53.34" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="MOSI"/>
 <wire x1="53.34" y1="30.48" x2="45.72" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="-15.24" x2="53.34" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="-15.24" x2="53.34" y2="30.48" width="0.1524" layer="91"/>
 <junction x="53.34" y="30.48"/>
+<pinref part="U$1" gate="G$1" pin="MOSI"/>
+<pinref part="U$2" gate="G$1" pin="MOSI"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="MISO"/>
 <wire x1="45.72" y1="-20.32" x2="55.88" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="-20.32" x2="55.88" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="MBED" gate="KIT" pin="P6"/>
@@ -29251,37 +29260,38 @@ In this library you will find logos and images specific to RoboJackets. The part
 <wire x1="55.88" y1="27.94" x2="48.26" y2="27.94" width="0.1524" layer="91"/>
 <junction x="55.88" y="27.94"/>
 <wire x1="48.26" y1="27.94" x2="48.26" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="MISO"/>
 <wire x1="48.26" y1="25.4" x2="45.72" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="MISO"/>
+<pinref part="U$2" gate="G$1" pin="MISO"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="CSN"/>
 <wire x1="17.78" y1="-10.16" x2="10.16" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="-10.16" x2="10.16" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="-30.48" x2="83.82" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="-30.48" x2="83.82" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="MBED" gate="KIT" pin="P15"/>
 <wire x1="83.82" y1="5.08" x2="91.44" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="CSN"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="CSN"/>
 <wire x1="17.78" y1="35.56" x2="10.16" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="35.56" x2="10.16" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="MBED" gate="KIT" pin="P11"/>
 <wire x1="10.16" y1="15.24" x2="91.44" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="CSN"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="RESET"/>
 <wire x1="17.78" y1="30.48" x2="12.7" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="30.48" x2="12.7" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="MBED" gate="KIT" pin="P10"/>
 <wire x1="12.7" y1="17.78" x2="91.44" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="RESET"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -29290,9 +29300,9 @@ In this library you will find logos and images specific to RoboJackets. The part
 <pinref part="MBED" gate="KIT" pin="P14"/>
 <wire x1="81.28" y1="7.62" x2="91.44" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="-27.94" x2="12.7" y2="-27.94" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="RESET"/>
 <wire x1="17.78" y1="-15.24" x2="12.7" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="-27.94" x2="12.7" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="RESET"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -29323,29 +29333,27 @@ In this library you will find logos and images specific to RoboJackets. The part
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="INT"/>
 <wire x1="17.78" y1="40.64" x2="7.62" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="40.64" x2="7.62" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="MBED" gate="KIT" pin="P12"/>
 <wire x1="7.62" y1="12.7" x2="91.44" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="INT"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="INT"/>
 <wire x1="17.78" y1="-5.08" x2="7.62" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="-5.08" x2="7.62" y2="-33.02" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="-33.02" x2="86.36" y2="-33.02" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="-33.02" x2="86.36" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="MBED" gate="KIT" pin="P16"/>
 <wire x1="86.36" y1="2.54" x2="91.44" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="INT"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="SCLK"/>
 <wire x1="45.72" y1="-10.16" x2="50.8" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="SCLK"/>
 <wire x1="48.26" y1="35.56" x2="45.72" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="MBED" gate="KIT" pin="P7"/>
 <wire x1="91.44" y1="25.4" x2="88.9" y2="25.4" width="0.1524" layer="91"/>
@@ -29355,13 +29363,14 @@ In this library you will find logos and images specific to RoboJackets. The part
 <wire x1="48.26" y1="33.02" x2="48.26" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="-10.16" x2="50.8" y2="33.02" width="0.1524" layer="91"/>
 <junction x="50.8" y="33.02"/>
+<pinref part="U$1" gate="G$1" pin="SCLK"/>
+<pinref part="U$2" gate="G$1" pin="SCLK"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
 <pinref part="X1" gate="G$1" pin="5"/>
 <wire x1="205.74" y1="55.88" x2="205.74" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="GND"/>
 <wire x1="17.78" y1="0" x2="12.7" y2="0" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="0" x2="12.7" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="5.08" x2="71.12" y2="5.08" width="0.1524" layer="91"/>
@@ -29375,10 +29384,11 @@ In this library you will find logos and images specific to RoboJackets. The part
 <wire x1="71.12" y1="48.26" x2="50.8" y2="48.26" width="0.1524" layer="91"/>
 <junction x="71.12" y="48.26"/>
 <wire x1="50.8" y1="48.26" x2="50.8" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="GND"/>
 <wire x1="12.7" y1="50.8" x2="12.7" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="45.72" x2="17.78" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="50.8" x2="12.7" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="GND"/>
+<pinref part="U$2" gate="G$1" pin="GND"/>
 </segment>
 </net>
 </nets>
