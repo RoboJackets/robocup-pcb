@@ -18,21 +18,21 @@ Most CAD files found here are [EAGLE](http://www.cadsoftusa.com/) files. However
 
 **Note: The current version of EAGLE used by the team is *version 6.5.0*.**
 
-##Configuring EAGLE for the first time
-If this is your first time opening any of RoboJackets' EAGLE files, you will need to setup your computer to include the part's libraries. The RoboCup team finds that the
-*[Adafruit library](https://github.com/adafruit/Adafruit-Eagle-Library)* 
-and 
-*[Sparkfun libraries](https://github.com/sparkfun/SparkFun-Eagle-Libraries)* for EAGLE contain many useful components. Luckly, all of the files can be found on GitHub.
-
 ###Setup libraries in EAGLE
 
-1. Download the additional libraries:
+1. Downloading the libraries
 
 	Once your computer is setup with git, the following lines can be used on any operating system within a *[terminal](http://en.wikipedia.org/wiki/Computer_terminal)* configured with git. Users who are using a GUI interface for git should simply add the respective repositories through the interface.
 	
 	```shell
-	git clone https://github.com/sparkfun/SparkFun-Eagle-Libraries
-	git clone https://github.com/adafruit/Adafruit-Eagle-Library
+    # Download the initial files
+	$ git clone https://github.com/robojackets/robocup-pcb
+
+    # Go into our new directory
+    cd robocup-pcb
+
+    # Download additional 3rd party libraries
+    git submodules update --init
 	``` 
 2. Add the new directory locations to EAGLE:
 
