@@ -31,7 +31,7 @@ Most CAD files found here are [EAGLE](http://www.cadsoftusa.com/) files. However
     cd robocup-pcb
 
     # Download additional 3rd party libraries
-    git submodules update --init
+    git submodule update --init
 	``` 
 2. Add the new directory locations to EAGLE:
 
