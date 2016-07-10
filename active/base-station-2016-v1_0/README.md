@@ -8,3 +8,6 @@ The board also has a mini usb connector, which is used in normal operation.  The
 ## PCB
 
 * Radio board connector: [87409-105LF](https://octopart.com/search?q=87409-105LF)
+
+![Base Station Board](./rjrc-2016-base-station-v1_0.png)
+
