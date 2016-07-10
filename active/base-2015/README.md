@@ -7,5 +7,4 @@ The board also has a mini usb connector, which is used in normal operation.  The
 
 ## PCB
 
-* Radio board connector: "CONN HEADER 10POS .050 VERT SMD"
-  * http://www.digikey.com/product-search/en/connectors-interconnects/rectangular-board-to-board-connectors-headers-male-pins/1442672?k=609%203175%20nd
+* Radio board connector: [87409-105LF](https://octopart.com/search?q=87409-105LF)
