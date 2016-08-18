@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1789,6 +1789,16 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="-1.27" y1="1.27" x2="-1.27" y2="0" width="0.3048" layer="21"/>
 <wire x1="-1.27" y1="0" x2="-1.27" y2="-1.27" width="0.3048" layer="21"/>
 </package>
+<package name="D2114">
+<smd name="K" x="-3.325" y="0" dx="2" dy="3" layer="1"/>
+<smd name="A" x="3.325" y="0" dx="2" dy="3" layer="1"/>
+<text x="-4.5" y="2" size="1.778" layer="25">&gt;NAME</text>
+<wire x1="-1.5" y1="1.5" x2="-1.5" y2="0" width="0.4064" layer="21"/>
+<wire x1="-1.5" y1="0" x2="-1.5" y2="-1.5" width="0.4064" layer="21"/>
+<wire x1="-1.5" y1="0" x2="1.5" y2="1.5" width="0.4064" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.4064" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="-1.5" y2="0" width="0.4064" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="AN-AN">
@@ -2765,6 +2775,22 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ACGRBT30X-HF" prefix="D" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="D" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="D2114">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="K"/>
 </connects>
 <technologies>
 <technology name=""/>
