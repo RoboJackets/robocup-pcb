@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -66,7 +66,7 @@
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -274,27 +274,28 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 <rectangle x1="-3.048" y1="-2.54" x2="3.048" y2="2.54" layer="39"/>
 </package>
 <package name="SOT-23-3">
-<smd name="3" x="0" y="1.2" dx="1" dy="0.7" layer="1" rot="R90"/>
-<smd name="1" x="-0.95" y="-1.2" dx="1" dy="0.7" layer="1" rot="R90"/>
-<smd name="2" x="0.95" y="-1.2" dx="1" dy="0.7" layer="1" rot="R90"/>
-<wire x1="1.45" y1="0.8" x2="1.45" y2="-0.8" width="0.2" layer="21"/>
-<wire x1="-1.45" y1="-0.8" x2="-1.45" y2="0.8" width="0.2" layer="21"/>
-<wire x1="-1.45" y1="0.8" x2="-0.55" y2="0.8" width="0.2" layer="21"/>
-<wire x1="0.45" y1="-0.8" x2="-0.45" y2="-0.8" width="0.2" layer="21"/>
-<wire x1="0.55" y1="0.8" x2="1.45" y2="0.8" width="0.2" layer="21"/>
-<text x="-2" y="-1" size="1" layer="25" rot="R90">&gt;NAME</text>
+<smd name="D" x="0" y="0" dx="0.508" dy="0.3556" layer="1" rot="R90"/>
+<smd name="G" x="-0.4953" y="-1.2954" dx="0.508" dy="0.3556" layer="1" rot="R90"/>
+<smd name="S" x="0.4953" y="-1.2954" dx="0.508" dy="0.3556" layer="1" rot="R90"/>
+<rectangle x1="-0.9652" y1="-1.0668" x2="0.9652" y2="-0.2032" layer="21"/>
 </package>
 <package name="LFPAK">
+<wire x1="-2.5" y1="3.5" x2="2.5" y2="3.5" width="0.127" layer="21"/>
 <wire x1="2.5" y1="3.5" x2="2.5" y2="-3.5" width="0.127" layer="21"/>
 <wire x1="2.5" y1="-3.5" x2="-2.5" y2="-3.5" width="0.127" layer="21"/>
 <wire x1="-2.5" y1="-3.5" x2="-2.5" y2="3.5" width="0.127" layer="21"/>
-<smd name="1" x="-1.905" y="-2.725" dx="1.15" dy="0.7" layer="1" rot="R270"/>
-<smd name="2" x="-0.635" y="-2.725" dx="1.15" dy="0.7" layer="1" rot="R270"/>
-<smd name="3" x="0.635" y="-2.725" dx="1.15" dy="0.7" layer="1" rot="R270"/>
-<smd name="4" x="1.905" y="-2.725" dx="1.15" dy="0.7" layer="1" rot="R270"/>
-<circle x="-3" y="-3" radius="0.3" width="0.127" layer="21"/>
-<smd name="5678" x="0" y="1.2" dx="4.6" dy="4.7" layer="1" rot="R270"/>
-<text x="-2.5" y="4" size="0.8128" layer="25">&gt;NAME</text>
+<smd name="1" x="-1.905" y="-2.54" dx="1.4" dy="0.7" layer="1" rot="R270"/>
+<smd name="2" x="-0.635" y="-2.54" dx="1.4" dy="0.7" layer="1" rot="R270"/>
+<smd name="3" x="0.635" y="-2.54" dx="1.4" dy="0.7" layer="1" rot="R270"/>
+<smd name="4" x="1.905" y="-2.54" dx="1.4" dy="0.7" layer="1" rot="R270"/>
+<circle x="-1.905" y="0" radius="0.3175" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="3.5" x2="-2.5" y2="-3.5" width="0.127" layer="39"/>
+<wire x1="-2.5" y1="-3.5" x2="2.5" y2="-3.5" width="0.127" layer="39"/>
+<wire x1="2.5" y1="-3.5" x2="2.5" y2="3.5" width="0.127" layer="39"/>
+<wire x1="2.5" y1="3.5" x2="-2.5" y2="3.5" width="0.127" layer="39"/>
+<smd name="5678" x="0" y="1.27" dx="4.3" dy="4.41" layer="1" rot="R270"/>
+<text x="-2.54" y="3.81" size="0.8128" layer="25">&gt;NAME</text>
+<rectangle x1="-2.413" y1="-3.429" x2="2.413" y2="3.429" layer="39"/>
 </package>
 <package name="POWERPAK_SO8">
 <wire x1="3.1242" y1="2.6289" x2="3.1242" y2="-2.6289" width="0.127" layer="21"/>
@@ -558,32 +559,6 @@ grid 5.45 mm</description>
 <pad name="C_TOP" x="0" y="-13.97" drill="1.905"/>
 <pad name="E_TOP" x="5.461" y="-13.97" drill="1.905"/>
 <text x="2.54" y="24.13" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="SOT223">
-<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
-<wire x1="3.2766" y1="1.778" x2="3.2766" y2="-1.778" width="0.2032" layer="21"/>
-<wire x1="3.2766" y1="-1.778" x2="-3.2766" y2="-1.778" width="0.2032" layer="21"/>
-<wire x1="-3.2766" y1="-1.778" x2="-3.2766" y2="1.778" width="0.2032" layer="21"/>
-<wire x1="-3.2766" y1="1.778" x2="3.2766" y2="1.778" width="0.2032" layer="21"/>
-<smd name="1" x="-2.3114" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
-<smd name="2" x="0" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
-<smd name="3" x="2.3114" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
-<smd name="4" x="0" y="3.099" dx="3.6" dy="2.2" layer="1"/>
-<text x="-3.5508" y="-2.04" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
-<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
-<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
-<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
-<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
-<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
-<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
-<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
-</package>
-<package name="TO-268">
-<smd name="4" x="0" y="0" dx="16.6" dy="13.5" layer="1"/>
-<smd name="1" x="-5.46" y="-12.7" dx="3" dy="5" layer="1"/>
-<smd name="3" x="5.46" y="-12.7" dx="3" dy="5" layer="1"/>
-<text x="-9" y="-6.5" size="1.5" layer="25" rot="R90">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -971,38 +946,6 @@ grid 5.45 mm</description>
 <pin name="E" x="5.08" y="-2.54" visible="pad" length="point" rot="R180"/>
 <pin name="G" x="-5.08" y="0" visible="pad" length="point" rot="R180"/>
 </symbol>
-<symbol name="N_MOSFET">
-<wire x1="-0.508" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
-<wire x1="-1.524" y1="-2.159" x2="0" y2="-2.159" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-2.159" width="0.1524" layer="94"/>
-<wire x1="1.397" y1="-0.254" x2="1.397" y2="-3.048" width="0.1524" layer="94"/>
-<wire x1="1.397" y1="-3.048" x2="0" y2="-3.048" width="0.1524" layer="94"/>
-<wire x1="-1.524" y1="2.159" x2="0" y2="2.159" width="0.1524" layer="94"/>
-<wire x1="0" y1="2.159" x2="0" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="3.048" x2="1.397" y2="3.048" width="0.1524" layer="94"/>
-<wire x1="1.397" y1="3.048" x2="1.397" y2="0.762" width="0.1524" layer="94"/>
-<wire x1="0" y1="-2.159" x2="0" y2="-2.54" width="0.1524" layer="94"/>
-<text x="2.54" y="0" size="1.778" layer="96">&gt;VALUE</text>
-<text x="2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
-<rectangle x1="-2.032" y1="1.397" x2="-1.524" y2="2.921" layer="94"/>
-<rectangle x1="-2.032" y1="-0.762" x2="-1.524" y2="0.762" layer="94"/>
-<rectangle x1="-2.032" y1="-2.921" x2="-1.524" y2="-1.397" layer="94"/>
-<rectangle x1="0.762" y1="0.762" x2="2.032" y2="0.889" layer="94"/>
-<pin name="D" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
-<pin name="S" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="G" x="-5.08" y="-2.54" visible="off" length="short" direction="pas"/>
-<polygon width="0.1016" layer="94">
-<vertex x="-1.524" y="0"/>
-<vertex x="-0.508" y="0.635"/>
-<vertex x="-0.508" y="-0.635"/>
-</polygon>
-<polygon width="0.1016" layer="94">
-<vertex x="1.397" y="0.762"/>
-<vertex x="2.032" y="-0.254"/>
-<vertex x="0.762" y="-0.254"/>
-</polygon>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="BSC072N03LD" prefix="Q">
@@ -1055,9 +998,9 @@ http://www.vishay.com/docs/65596/si7141dp.pdf</description>
 <devices>
 <device name="" package="SOT-23-3">
 <connects>
-<connect gate="G$1" pin="D" pad="3"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="2"/>
+<connect gate="G$1" pin="D" pad="D"/>
+<connect gate="G$1" pin="G" pad="G"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1134,9 +1077,9 @@ Rdson=1.8mOhm</description>
 <devices>
 <device name="" package="SOT-23-3">
 <connects>
-<connect gate="G$1" pin="B" pad="1"/>
-<connect gate="G$1" pin="C" pad="3"/>
-<connect gate="G$1" pin="E" pad="2"/>
+<connect gate="G$1" pin="B" pad="G"/>
+<connect gate="G$1" pin="C" pad="D"/>
+<connect gate="G$1" pin="E" pad="S"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1152,9 +1095,9 @@ Rdson=1.8mOhm</description>
 <devices>
 <device name="" package="SOT-23-3">
 <connects>
-<connect gate="G$1" pin="B" pad="1"/>
-<connect gate="G$1" pin="C" pad="3"/>
-<connect gate="G$1" pin="E" pad="2"/>
+<connect gate="G$1" pin="B" pad="G"/>
+<connect gate="G$1" pin="C" pad="D"/>
+<connect gate="G$1" pin="E" pad="S"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1211,90 +1154,6 @@ Rdson=1.8mOhm</description>
 <connect gate="_TOP" pin="C" pad="C_TOP"/>
 <connect gate="_TOP" pin="E" pad="E_TOP"/>
 <connect gate="_TOP" pin="G" pad="G_TOP"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="BUK7Y38-100E" prefix="Q">
-<gates>
-<gate name="G$1" symbol="N_MOSFET" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="LFPAK">
-<connects>
-<connect gate="G$1" pin="D" pad="5678"/>
-<connect gate="G$1" pin="G" pad="4"/>
-<connect gate="G$1" pin="S" pad="1 2 3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="NMOSSOT223" prefix="Q" uservalue="yes">
-<description>&lt;b&gt;MOS FET&lt;/b&gt;</description>
-<gates>
-<gate name="A" symbol="N_MOSFET" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT223">
-<connects>
-<connect gate="A" pin="D" pad="2 4"/>
-<connect gate="A" pin="G" pad="1"/>
-<connect gate="A" pin="S" pad="3"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="IXF?94N30P3" prefix="Q">
-<gates>
-<gate name="G$1" symbol="N_MOSFET" x="0" y="0"/>
-</gates>
-<devices>
-<device name="IXFT" package="TO-268">
-<connects>
-<connect gate="G$1" pin="D" pad="4"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="NMOS" prefix="Q" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="N_MOSFET" x="0" y="0"/>
-</gates>
-<devices>
-<device name="SOT-23-3" package="SOT-23-3">
-<connects>
-<connect gate="G$1" pin="D" pad="3"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="SOT223" package="SOT223">
-<connects>
-<connect gate="G$1" pin="D" pad="2 4"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
