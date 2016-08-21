@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -503,9 +503,7 @@ body 3.9 mm/JEDEC MS-012AA</description>
 </package>
 <package name="DFN-6_4X5MM">
 <wire x1="-2.5" y1="2" x2="2.5" y2="2" width="0.4" layer="21"/>
-<wire x1="2.5" y1="2" x2="2.5" y2="-2" width="0.4" layer="21"/>
 <wire x1="2.5" y1="-2" x2="-2.5" y2="-2" width="0.4" layer="21"/>
-<wire x1="-2.5" y1="-2" x2="-2.5" y2="2" width="0.4" layer="21"/>
 <smd name="3" x="-2.5" y="-1" dx="1.6" dy="0.6" layer="1"/>
 <smd name="2" x="-2.5" y="0" dx="1.6" dy="0.6" layer="1"/>
 <smd name="1" x="-2.5" y="1" dx="1.6" dy="0.6" layer="1"/>
