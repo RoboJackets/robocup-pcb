@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -413,6 +413,10 @@ INTERNATIONAL RECTIFIER, irg4bc15ud-s.pdf</description>
 <rectangle x1="-0.7112" y1="-6.731" x2="0.7112" y2="-4.2418" layer="21"/>
 </package>
 <package name="DPAK">
+<smd name="FIN" x="0" y="0" dx="7" dy="7" layer="1"/>
+<smd name="1" x="-2.3" y="-6.25" dx="1.5" dy="2.5" layer="1"/>
+<smd name="3" x="2.3" y="-6.25" dx="1.5" dy="2.5" layer="1"/>
+<text x="-3.5" y="4" size="1" layer="25">&gt;NAME</text>
 </package>
 <package name="TO220">
 <description>&lt;b&gt;TO 220 horizontal&lt;/b&gt;</description>
@@ -1293,6 +1297,23 @@ Rdson=1.8mOhm</description>
 <device name="SOT223" package="SOT223">
 <connects>
 <connect gate="G$1" pin="D" pad="2 4"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AOD1N60" prefix="Q">
+<gates>
+<gate name="G$1" symbol="N_MOSFET" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DPAK">
+<connects>
+<connect gate="G$1" pin="D" pad="FIN"/>
 <connect gate="G$1" pin="G" pad="1"/>
 <connect gate="G$1" pin="S" pad="3"/>
 </connects>

@@ -1032,6 +1032,25 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <wire x1="-4.3" y1="2.75" x2="-4" y2="2.75" width="0.2" layer="21"/>
 <wire x1="4" y1="2.75" x2="4.3" y2="2.75" width="0.2" layer="21"/>
 </package>
+<package name="HFW8R-1ST">
+<wire x1="5.3" y1="2.75" x2="5.3" y2="-2.75" width="0.2" layer="21"/>
+<wire x1="5.3" y1="-2.75" x2="-5.3" y2="-2.75" width="0.2" layer="21"/>
+<wire x1="-5.3" y1="-2.75" x2="-5.3" y2="2.75" width="0.2" layer="21"/>
+<smd name="6" x="1.5" y="3.25" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="LEG1" x="-4.5" y="1.15" dx="4.2" dy="0.7" layer="1" rot="R90"/>
+<smd name="LEG2" x="4.5" y="1.15" dx="4.2" dy="0.7" layer="1" rot="R90"/>
+<smd name="5" x="0.5" y="3.25" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="4" x="-0.5" y="3.25" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="3" x="-1.5" y="3.25" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="2" x="-2.5" y="3.25" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="1" x="-3.5" y="3.25" dx="2" dy="0.6" layer="1" rot="R90"/>
+<text x="-5.5" y="-2.5" size="1.5" layer="25" rot="R90">&gt;NAME</text>
+<circle x="-4.25" y="3.75" radius="0.25" width="0" layer="25"/>
+<wire x1="-5.3" y1="2.75" x2="-5" y2="2.75" width="0.2" layer="21"/>
+<wire x1="5" y1="2.75" x2="5.3" y2="2.75" width="0.2" layer="21"/>
+<smd name="7" x="2.5" y="3.25" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="8" x="3.5" y="3.25" dx="2" dy="0.6" layer="1" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="2-PIN_CONN">
@@ -2189,6 +2208,31 @@ XT-60 Power Connector
 <connect gate="G$1" pin="4" pad="4"/>
 <connect gate="G$1" pin="5" pad="5"/>
 <connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$2" pin="LEG1" pad="LEG1"/>
+<connect gate="G$2" pin="LEG2" pad="LEG2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="HFW8" prefix="J">
+<gates>
+<gate name="G$1" symbol="8-PIN_CONN" x="0" y="0"/>
+<gate name="G$2" symbol="LEGS" x="-2.54" y="-20.32" addlevel="request"/>
+</gates>
+<devices>
+<device name="R-1ST" package="HFW8R-1ST">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
 <connect gate="G$2" pin="LEG1" pad="LEG1"/>
 <connect gate="G$2" pin="LEG2" pad="LEG2"/>
 </connects>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.25" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -176,6 +176,12 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <smd name="P$2" x="2.43" y="0" dx="2.4" dy="3" layer="1"/>
 <text x="-3" y="3" size="1.27" layer="21">&gt;NAME</text>
 <text x="-3" y="-4.2" size="1.27" layer="21">&gt;VALUE</text>
+</package>
+<package name="HV-D2PAK">
+<smd name="3" x="0" y="0" dx="7.87" dy="8.51" layer="1"/>
+<smd name="1" x="-2.54" y="-8.79" dx="1.65" dy="3.81" layer="1"/>
+<smd name="2" x="2.54" y="-8.79" dx="1.65" dy="3.81" layer="1"/>
+<text x="-4" y="4.5" size="1" layer="25">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
