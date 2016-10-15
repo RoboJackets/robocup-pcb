@@ -32,9 +32,9 @@ Change Shape Round;
 Script BoardColors
 
 MENU 'Display {\
-				Default   : Script BoardDefaultLayers; |\
-                Top       : Script BoardTopLayers; |\
-                Bottom    : Script BoardBottomLayers; |\
+				Default   : Script Board\BoardDefaultLayers; |\
+                Top       : Script Board\BoardTopLayers; |\
+                Bottom    : Script Board\BoardBottomLayers; |\
                 Airwires  : DISPLAY NONE UNROUTED; |\ 
                 Unfill Poygons: ripup @; \
               }'\
