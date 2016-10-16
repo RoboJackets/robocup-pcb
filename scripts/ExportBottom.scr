@@ -1,0 +1,5 @@
+SCRIPT BoardBottomLayers
+RATSNEST
+ripup @;
+Run ExportToPNG -Bottom
+DISPLAY Last 

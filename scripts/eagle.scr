@@ -1,0 +1,13 @@
+# Configuration Script
+#
+# This file can be used to configure the editor windows.
+#
+# Copy this file into your {Eagle director}/scr folder, replacing the eagle.scr file currently there.
+
+
+#This script calls the setup.scr script found in the github robocup-pcb repository or the electrical training repository.
+
+# Make sure you add the {repository}\scripts to your scripts directory from the main menu > Options > directories...
+
+
+Script setup.scr

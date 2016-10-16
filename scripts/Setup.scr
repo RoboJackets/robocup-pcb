@@ -29,12 +29,12 @@ ASSIGN C+R RATSNEST;
 Change Drill 0.015in;
 Change Shape Round;
 
-Script BoardColors
+Script BoardDefaultColors
 
 MENU 'Display {\
-				Default   : Script Board\BoardDefaultLayers; |\
-                Top       : Script Board\BoardTopLayers; |\
-                Bottom    : Script Board\BoardBottomLayers; |\
+                Default   : Script BoardDefaultLayers; |\
+                Top       : Script BoardTopLayers; |\
+                Bottom    : Script BoardBottomLayers; |\
                 Airwires  : DISPLAY NONE UNROUTED; |\ 
                 Unfill Poygons: ripup @; \
               }'\
@@ -45,11 +45,11 @@ MENU 'Display {\
            }'\
      'Export {\
              Image {\
-             		 All 	: Script ExportAll;|\
-             		 Default: Script ExportDefault;|\
-		             Top 	: Script ExportTop;|\
-		             Bottom : Script ExportBottom; \
-		           } | \
+                     All    : Script ExportAll;|\
+                     Default: Script ExportDefault;|\
+                     Top    : Script ExportTop;|\
+                     Bottom : Script ExportBottom; \
+                   } | \
              Parts List : Export Partlist; |\
              BOM        : edit .sch; run bom;\
            }'\
@@ -69,7 +69,7 @@ ASSIGN C+L LABEL;
 ASSIGN C+W NET;
 ASSIGN C+E ERC;
 
-Script SchematicColors
+Script SchematicDefaultColors
 
 MENU 'Default Layers : Script SchematicDefaultLayers;'\
      'Default Grid: Script SchematicDefaultGrid;'\
@@ -117,4 +117,3 @@ MENU '[LTspice.png] LT Spice simulation {\
      }'\
      '[pads-pcb.png] PADS package import : RUN import-pads-powerpcb-v5;' \
      ;
-
