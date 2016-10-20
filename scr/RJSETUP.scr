@@ -1,4 +1,16 @@
-#Setup script used to enhance eagle for the RoboJackets' use.
+# Configuration script used to enhance eagle for the RoboJackets' use.
+#
+# This file can be used to configure the editor windows.
+#
+#This script calls the a set of scripts found in the github robocup-pcb repository or the electrical training repository.
+#
+# Make sure you add the {repository}\scripts to your scripts directory from the main menu > Options > directories...
+#
+# Recommended use with the educational liscense of EAGLE 7.7
+# 
+
+
+
 
 #Assign general ctrl+ commands
 ASSIGN C+M MOVE;
@@ -20,12 +32,13 @@ BRD:
 
 GRID MM 0.5 ON;
 GRID ALT MM 0.25;
-ASSIGN C+W ROUTE;
-ASSIGN C+U RIPUP;
+ASSIGN C+R ROUTE;
+ASSIGN CS+R RIPUP;
 ASSIGN C+D 'DRC;';
 ASSIGN CS+D DRC;
 ASSIGN CS+S SMASH;
-ASSIGN C+R RATSNEST;
+ASSIGN CS+T RATSNEST;
+ASSIGN C+E Script ExportAll;
 Change Drill 0.015in;
 Change Shape Round;
 
@@ -44,8 +57,9 @@ MENU 'Display {\
              Off : Grid Off;\
            }'\
      'Export {\
+             All     : Script ExportAll;|\
              Image {\
-                     All    : Script ExportAll;|\
+                     All    : Script ExportImageAll;|\
                      Default: Script ExportDefault;|\
                      Top    : Script ExportTop;|\
                      Bottom : Script ExportBottom; \
@@ -53,7 +67,7 @@ MENU 'Display {\
              Parts List : Export Partlist; |\
              BOM        : edit .sch; run bom;\
            }'\
-     'Switch to Schematic: Script BoardSwitchToSchematic;'\
+     'Switch to Schematic: Script BoardToSchematic;'\
      '---'\
      'Reset to Default :  Script BoardDefaults;'\
      'Help {\
@@ -66,17 +80,23 @@ SCH:
 Change XREF ON;
 Change SIZE 0.05;
 ASSIGN C+L LABEL;
-ASSIGN C+W NET;
+ASSIGN A+N NET;
 ASSIGN C+E ERC;
+ASSIGN CS+I INVOKE;
+ASSIGN CS+V VALUE;
+ASSIGN CS+S SMASH;
 
 Script SchematicDefaultColors
 
 MENU 'Default Layers : Script SchematicDefaultLayers;'\
      'Default Grid: Script SchematicDefaultGrid;'\
      'Export to PNG: Run ExportToPNG all 91 94 95 96 97;'\
-     'Switch to Board: Script SchematicSwitchToBoard;';
+     'Switch to Board: Script SchematicToBoard;';
 
 LBR:
+
+ASSIGN C+E EDIT;
+
 MENU '[designlink22.png] Search and order : Run designlink-order.ulp -general;'\
      '[LTspice.png] LT Spice simulation {\
                   Export: RUN ltspice.ulp /E; |\
@@ -86,6 +106,10 @@ MENU '[designlink22.png] Search and order : Run designlink-order.ulp -general;'\
 ;
 
 DEV:
+
+ASSIGN A+C CONNECT;
+ASSIGN A+P PACKAGE;
+
 Grid Default;
 MENU '[designlink22.png] Search and order : Run designlink-order.ulp -general;' \
      '[LTspice.png] LT Spice simulation {\
@@ -99,6 +123,9 @@ MENU '[designlink22.png] Search and order : Run designlink-order.ulp -general;' 
 ;
 
 SYM:
+
+ASSIGN A+P PIN;
+
 Grid Default On;
 Change Width 0.010;
 MENU '[LTspice.png] LT Spice simulation {\
@@ -109,6 +136,11 @@ MENU '[LTspice.png] LT Spice simulation {\
 ;
 
 PAC:
+
+ASSIGN C+H HOLE;
+ASSIGN A+P PAD;
+ASSIGN A+S SMD;
+
 Grid Default On;
 Change Width 0.005;
 Change Size 0.050;
