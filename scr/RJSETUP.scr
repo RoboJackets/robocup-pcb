@@ -30,8 +30,6 @@ ASSIGN C+L LINE;
 
 BRD:
 
-GRID MM 0.5 ON;
-GRID ALT MM 0.25;
 ASSIGN C+R ROUTE;
 ASSIGN CS+R RIPUP;
 ASSIGN C+D 'DRC;';
@@ -42,7 +40,7 @@ ASSIGN C+E Script ExportAll;
 Change Drill 0.015in;
 Change Shape Round;
 
-Script BoardDefaultColors
+Script BoardDefaults
 
 MENU 'Display {\
                 Default   : Script BoardDefaultLayers; |\
@@ -52,8 +50,8 @@ MENU 'Display {\
                 Unfill Poygons: ripup @; \
               }'\
      'Grid {\
+             Default : Script BoardFineGrid; |\
              Coarse  : Script BoardCoarseGrid; |\
-             Fine    : Script BoardFineGrid; |\
              Off : Grid Off;\
            }'\
      'Export {\
