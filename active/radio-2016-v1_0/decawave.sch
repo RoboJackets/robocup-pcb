@@ -8699,13 +8699,6 @@ Source: AVX .. aphvc.pdf</description>
 <label x="81.28" y="58.42" size="1.4224" layer="95"/>
 </segment>
 </net>
-<net name="GPIO2" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="5"/>
-<wire x1="7.62" y1="88.9" x2="0" y2="88.9" width="0.1524" layer="91"/>
-<label x="0" y="88.9" size="1.4224" layer="95"/>
-</segment>
-</net>
 <net name="GPIO3" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="7"/>
@@ -8837,9 +8830,27 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="68.58" y1="76.2" x2="66.04" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="IRQ" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="5"/>
+<wire x1="7.62" y1="88.9" x2="0" y2="88.9" width="0.1524" layer="91"/>
+<label x="0" y="88.9" size="1.4224" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="IRQ/GPIO8"/>
+<wire x1="88.9" y1="66.04" x2="81.28" y2="66.04" width="0.1524" layer="91"/>
+<label x="81.28" y="66.04" size="1.4224" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="106,1,27.94,91.44,GPIO0,,,,,"/>
+<approved hash="106,1,7.62,86.36,GPIO3,,,,,"/>
+<approved hash="113,1,72.39,83.4983,LED1,,,,,"/>
+<approved hash="113,1,72.39,75.8783,LED2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
