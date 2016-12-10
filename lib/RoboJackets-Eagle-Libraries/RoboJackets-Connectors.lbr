@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -1071,6 +1071,28 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <wire x1="-4.725" y1="2.855" x2="4.725" y2="2.855" width="0.127" layer="39"/>
 <wire x1="4.725" y1="2.855" x2="4.725" y2="-2.855" width="0.127" layer="39"/>
 <wire x1="4.725" y1="-2.855" x2="-4.725" y2="-2.855" width="0.127" layer="39"/>
+<hole x="-4.13" y="0" drill="1.3208"/>
+<hole x="4.13" y="0" drill="1.3208"/>
+</package>
+<package name="5X2_MALE">
+<description>Amphenol FCI - SMD 10 pin connector</description>
+<smd name="1" x="-2.54" y="-1.27" dx="1.27" dy="0.635" layer="1" rot="R90"/>
+<smd name="3" x="-1.27" y="-1.27" dx="1.27" dy="0.635" layer="1" rot="R90"/>
+<smd name="5" x="0" y="-1.27" dx="1.27" dy="0.635" layer="1" rot="R90"/>
+<smd name="7" x="1.27" y="-1.27" dx="1.27" dy="0.635" layer="1" rot="R90"/>
+<smd name="9" x="2.54" y="-1.27" dx="1.27" dy="0.635" layer="1" rot="R90"/>
+<smd name="10" x="2.54" y="1.27" dx="1.27" dy="0.635" layer="1" rot="R90"/>
+<smd name="8" x="1.27" y="1.27" dx="1.27" dy="0.635" layer="1" rot="R90"/>
+<smd name="6" x="0" y="1.27" dx="1.27" dy="0.635" layer="1" rot="R90"/>
+<smd name="4" x="-1.27" y="1.27" dx="1.27" dy="0.635" layer="1" rot="R90"/>
+<smd name="2" x="-2.54" y="1.27" dx="1.27" dy="0.635" layer="1" rot="R90"/>
+<wire x1="-4.318" y1="2.54" x2="4.318" y2="2.54" width="0.127" layer="21"/>
+<wire x1="4.318" y1="2.54" x2="4.318" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="4.318" y1="-2.54" x2="-4.318" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-4.318" y1="-2.54" x2="-4.318" y2="2.54" width="0.127" layer="21"/>
+<hole x="4.064" y="0" drill="1.3208"/>
+<hole x="-4.064" y="0" drill="1.3208"/>
+<text x="-2.54" y="3.175" size="0.889" layer="21">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -2281,12 +2303,29 @@ XT-60 Power Connector
 </device>
 </devices>
 </deviceset>
-<deviceset name="609-3706-1-ND">
+<deviceset name="609-3706-1-ND-*">
 <gates>
 <gate name="G$1" symbol="10PIN_HEADER" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="5X2_FEMALE">
+<device name="FEMALE" package="5X2_FEMALE">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="MALE" package="5X2_MALE">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="10" pad="10"/>
