@@ -1094,6 +1094,32 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <hole x="-4.064" y="0" drill="1.3208"/>
 <text x="-2.54" y="3.175" size="0.889" layer="21">&gt;NAME</text>
 </package>
+<package name="SFH-2_RA_R">
+<smd name="LEG1" x="0.75" y="2.2" dx="0.8" dy="1.9" layer="1" rot="R90"/>
+<smd name="LEG2" x="0.75" y="-2.2" dx="0.8" dy="1.9" layer="1" rot="R90"/>
+<smd name="1" x="5.35" y="2.1" dx="1" dy="1.7" layer="1" rot="R90"/>
+<smd name="2" x="5.35" y="-2.1" dx="1" dy="1.7" layer="1" rot="R90"/>
+<wire x1="0" y1="1.5" x2="0" y2="-1.5" width="0.3" layer="21"/>
+<wire x1="2" y1="2.5" x2="4.25" y2="2.5" width="0.3" layer="21"/>
+<wire x1="2" y1="-2.5" x2="4.25" y2="-2.5" width="0.3" layer="21"/>
+<wire x1="6" y1="1.25" x2="6" y2="-1.25" width="0.3" layer="21"/>
+<text x="0" y="3" size="1.5" layer="25">&gt;NAME</text>
+<wire x1="6.5" y1="2.5" x2="6.5" y2="1.75" width="0.3" layer="21"/>
+<text x="3" y="0" size="1.5" layer="25" align="center">RED</text>
+</package>
+<package name="SFH-2_RA_L">
+<smd name="LEG1" x="0.75" y="2.2" dx="0.8" dy="1.9" layer="1" rot="R90"/>
+<smd name="LEG2" x="0.75" y="-2.2" dx="0.8" dy="1.9" layer="1" rot="R90"/>
+<smd name="1" x="5.35" y="2.1" dx="1" dy="1.7" layer="1" rot="R90"/>
+<smd name="2" x="5.35" y="-2.1" dx="1" dy="1.7" layer="1" rot="R90"/>
+<wire x1="0" y1="1.5" x2="0" y2="-1.5" width="0.3" layer="21"/>
+<wire x1="2" y1="2.5" x2="4.25" y2="2.5" width="0.3" layer="21"/>
+<wire x1="2" y1="-2.5" x2="4.25" y2="-2.5" width="0.3" layer="21"/>
+<wire x1="6" y1="1.25" x2="6" y2="-1.25" width="0.3" layer="21"/>
+<text x="0" y="3" size="1.5" layer="25">&gt;NAME</text>
+<wire x1="6.5" y1="2.5" x2="6.5" y2="1.75" width="0.3" layer="21"/>
+<text x="3" y="0" size="1.5" layer="25" align="center">YLW</text>
+</package>
 </packages>
 <symbols>
 <symbol name="2-PIN_CONN">
@@ -2337,6 +2363,36 @@ XT-60 Power Connector
 <connect gate="G$1" pin="7" pad="7"/>
 <connect gate="G$1" pin="8" pad="8"/>
 <connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SFH-2" prefix="J">
+<gates>
+<gate name="G$1" symbol="2-PIN_CONN" x="0" y="0"/>
+<gate name="G$2" symbol="LEGS" x="-12.7" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="_RA_L" package="SFH-2_RA_L">
+<connects>
+<connect gate="G$1" pin="+" pad="1"/>
+<connect gate="G$1" pin="-" pad="2"/>
+<connect gate="G$2" pin="LEG1" pad="LEG1"/>
+<connect gate="G$2" pin="LEG2" pad="LEG2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_RA_R" package="SFH-2_RA_R">
+<connects>
+<connect gate="G$1" pin="+" pad="1"/>
+<connect gate="G$1" pin="-" pad="2"/>
+<connect gate="G$2" pin="LEG1" pad="LEG1"/>
+<connect gate="G$2" pin="LEG2" pad="LEG2"/>
 </connects>
 <technologies>
 <technology name=""/>
