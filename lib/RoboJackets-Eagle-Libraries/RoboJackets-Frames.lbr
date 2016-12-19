@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3390,7 +3390,7 @@ LETTER landscape</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="FRAME_A_L" prefix="FRAME" uservalue="yes">
+<deviceset name="FRAME_A_L" prefix="FRAME">
 <description>&lt;b&gt;FRAME&lt;/b&gt; A Size , 8 1/2 x 11 INCH, Landscape&lt;p&gt;</description>
 <gates>
 <gate name="G$1" symbol="FRAME_A_L" x="0" y="0" addlevel="always"/>
@@ -3401,8 +3401,6 @@ LETTER landscape</description>
 <technologies>
 <technology name="">
 <attribute name="REVISION" value="" constant="no"/>
-<attribute name="SCH_DESC" value="insert_description_here" constant="no"/>
-<attribute name="TEAM" value="RoboCup SSL" constant="no"/>
 </technology>
 </technologies>
 </device>
