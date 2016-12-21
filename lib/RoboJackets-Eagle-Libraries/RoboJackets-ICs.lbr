@@ -2697,6 +2697,19 @@ http://www.digikey.com/product-detail/en/XC3S250E-4PQG208C/122-1483-ND/1091711</
 <pin name="GND" x="0" y="-15.24" length="middle" rot="R90"/>
 <pin name="VCC" x="0" y="15.24" length="middle" rot="R270"/>
 </symbol>
+<symbol name="VREG_5TERMINAL">
+<pin name="VIN" x="-12.7" y="5.08" length="middle"/>
+<pin name="GND" x="-12.7" y="0" length="middle"/>
+<pin name="EN" x="-12.7" y="-5.08" length="middle"/>
+<pin name="VOUT" x="12.7" y="5.08" length="middle" rot="R180"/>
+<pin name="BYP" x="12.7" y="-5.08" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="-7.62" y="10.16" size="1.778" layer="95" align="top-left">&gt;NAME</text>
+<text x="-7.62" y="-10.16" size="1.778" layer="95">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="LM2734" prefix="U">
@@ -3968,6 +3981,25 @@ http://www.digikey.com/product-detail/en/XC3S250E-4PQG208C/122-1483-ND/1091711</
 <connect gate="_B" pin="Q" pad="9"/>
 <connect gate="_POWER" pin="GND" pad="7"/>
 <connect gate="_POWER" pin="VCC" pad="14"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VREG_5TERMINAL" prefix="U" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="VREG_5TERMINAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOT-23-5" package="SOT-23-5">
+<connects>
+<connect gate="G$1" pin="BYP" pad="4"/>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
