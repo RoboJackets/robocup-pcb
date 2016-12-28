@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.25" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -158,7 +158,7 @@ In this library you will find all the connectors used on any of our boards.
 <smd name="3" x="-1.5" y="3.25" dx="2" dy="0.6" layer="1" rot="R90"/>
 <smd name="2" x="-2.5" y="3.25" dx="2" dy="0.6" layer="1" rot="R90"/>
 <smd name="1" x="-3.5" y="3.25" dx="2" dy="0.6" layer="1" rot="R90"/>
-<text x="-5.5" y="-2.5" size="1.5" layer="25" rot="R90">&gt;NAME</text>
+<text x="-5.5" y="-2.5" size="1" layer="25" rot="R90">&gt;NAME</text>
 <circle x="-4.25" y="3.75" radius="0.25" width="0" layer="25"/>
 <wire x1="-5.3" y1="2.75" x2="-5" y2="2.75" width="0.2" layer="21"/>
 <wire x1="5" y1="2.75" x2="5.3" y2="2.75" width="0.2" layer="21"/>
@@ -1046,7 +1046,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <smd name="3" x="-0.5" y="3.25" dx="2" dy="0.6" layer="1" rot="R90"/>
 <smd name="2" x="-1.5" y="3.25" dx="2" dy="0.6" layer="1" rot="R90"/>
 <smd name="1" x="-2.5" y="3.25" dx="2" dy="0.6" layer="1" rot="R90"/>
-<text x="-4.5" y="-2.5" size="1.5" layer="25" rot="R90">&gt;NAME</text>
+<text x="-4.5" y="-2.5" size="1" layer="25" rot="R90">&gt;NAME</text>
 <circle x="-3.25" y="3.75" radius="0.25" width="0" layer="25"/>
 <wire x1="-4.3" y1="2.75" x2="-4" y2="2.75" width="0.2" layer="21"/>
 <wire x1="4" y1="2.75" x2="4.3" y2="2.75" width="0.2" layer="21"/>
@@ -1104,7 +1104,6 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <wire x1="2" y1="-2.5" x2="4.25" y2="-2.5" width="0.3" layer="21"/>
 <wire x1="6" y1="1.25" x2="6" y2="-1.25" width="0.3" layer="21"/>
 <text x="0" y="3" size="1.5" layer="25">&gt;NAME</text>
-<wire x1="6.5" y1="2.5" x2="6.5" y2="1.75" width="0.3" layer="21"/>
 <text x="3" y="0" size="1.5" layer="25" align="center">RED</text>
 </package>
 <package name="SFH-2_RA_L">
@@ -1117,7 +1116,6 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <wire x1="2" y1="-2.5" x2="4.25" y2="-2.5" width="0.3" layer="21"/>
 <wire x1="6" y1="1.25" x2="6" y2="-1.25" width="0.3" layer="21"/>
 <text x="0" y="3" size="1.5" layer="25">&gt;NAME</text>
-<wire x1="6.5" y1="2.5" x2="6.5" y2="1.75" width="0.3" layer="21"/>
 <text x="3" y="0" size="1.5" layer="25" align="center">YLW</text>
 </package>
 <package name="1X3">
@@ -1201,10 +1199,10 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <symbol name="2-PIN_CONN">
 <circle x="-0.762" y="2.54" radius="0.762" width="0.254" layer="94"/>
 <circle x="-0.762" y="-2.54" radius="0.762" width="0.254" layer="94"/>
-<text x="-5.08" y="5.08" size="2.54" layer="95" font="vector">&gt;NAME</text>
-<text x="-1.27" y="-6.35" size="2.54" layer="96" font="vector" ratio="15" align="top-center">&gt;VALUE</text>
-<pin name="+" x="5.08" y="2.54" visible="pin" length="middle" direction="pas" rot="R180"/>
-<pin name="-" x="5.08" y="-2.54" visible="pin" length="middle" direction="pas" rot="R180"/>
+<text x="-5.08" y="7.62" size="1.778" layer="95" font="vector" align="top-left">&gt;NAME</text>
+<text x="-5.08" y="-7.62" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+<pin name="1" x="5.08" y="2.54" visible="pin" length="middle" direction="pas" rot="R180"/>
+<pin name="2" x="5.08" y="-2.54" visible="pin" length="middle" direction="pas" rot="R180"/>
 <wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
@@ -1624,8 +1622,8 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <devices>
 <device name="H" package="2MM-2-H">
 <connects>
-<connect gate="G$1" pin="+" pad="1"/>
-<connect gate="G$1" pin="-" pad="2"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
@@ -1636,8 +1634,8 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </device>
 <device name="V" package="2MM-2-V">
 <connects>
-<connect gate="G$1" pin="+" pad="1"/>
-<connect gate="G$1" pin="-" pad="2"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
@@ -2048,8 +2046,8 @@ Power Connector
 <devices>
 <device name="" package="B2P">
 <connects>
-<connect gate="G$1" pin="+" pad="1"/>
-<connect gate="G$1" pin="-" pad="2"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
@@ -2060,8 +2058,8 @@ Power Connector
 </device>
 <device name="S" package="B2PS">
 <connects>
-<connect gate="G$1" pin="+" pad="1"/>
-<connect gate="G$1" pin="-" pad="2"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
@@ -2072,8 +2070,8 @@ Power Connector
 </device>
 <device name="S-CENTERED" package="B2PS-CENTERED">
 <connects>
-<connect gate="G$1" pin="+" pad="1"/>
-<connect gate="G$1" pin="-" pad="2"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2244,8 +2242,8 @@ XT-60 Power Connector
 <devices>
 <device name="BATT_LABEL" package="XT-60">
 <connects>
-<connect gate="G$1" pin="+" pad="BATT"/>
-<connect gate="G$1" pin="-" pad="GND"/>
+<connect gate="G$1" pin="1" pad="BATT"/>
+<connect gate="G$1" pin="2" pad="GND"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2253,8 +2251,8 @@ XT-60 Power Connector
 </device>
 <device name="NO_LABEL" package="XT-60_BARE">
 <connects>
-<connect gate="G$1" pin="+" pad="+"/>
-<connect gate="G$1" pin="-" pad="-"/>
+<connect gate="G$1" pin="1" pad="+"/>
+<connect gate="G$1" pin="2" pad="-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2325,8 +2323,8 @@ XT-60 Power Connector
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
-<connect gate="SUPPORT" pin="+" pad="SUPPORT1"/>
-<connect gate="SUPPORT" pin="-" pad="SUPPORT2"/>
+<connect gate="SUPPORT" pin="1" pad="SUPPORT1"/>
+<connect gate="SUPPORT" pin="2" pad="SUPPORT2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2358,8 +2356,8 @@ XT-60 Power Connector
 <devices>
 <device name="" package="DF22L-2-H">
 <connects>
-<connect gate="G$1" pin="+" pad="1"/>
-<connect gate="G$1" pin="-" pad="2"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2475,8 +2473,8 @@ XT-60 Power Connector
 <devices>
 <device name="_RA_L" package="SFH-2_RA_L">
 <connects>
-<connect gate="G$1" pin="+" pad="1"/>
-<connect gate="G$1" pin="-" pad="2"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$2" pin="LEG1" pad="LEG1"/>
 <connect gate="G$2" pin="LEG2" pad="LEG2"/>
 </connects>
@@ -2486,8 +2484,8 @@ XT-60 Power Connector
 </device>
 <device name="_RA_R" package="SFH-2_RA_R">
 <connects>
-<connect gate="G$1" pin="+" pad="1"/>
-<connect gate="G$1" pin="-" pad="2"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$2" pin="LEG1" pad="LEG1"/>
 <connect gate="G$2" pin="LEG2" pad="LEG2"/>
 </connects>

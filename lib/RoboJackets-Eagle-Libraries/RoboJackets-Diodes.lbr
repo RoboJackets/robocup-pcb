@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.25" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -1812,6 +1812,24 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="0.55" y1="0.8" x2="1.45" y2="0.8" width="0.2" layer="21"/>
 <text x="-2" y="-1" size="1" layer="25" rot="R90">&gt;NAME</text>
 </package>
+<package name="CST2B">
+<smd name="A" x="0" y="0.425" dx="0.7" dy="0.25" layer="1"/>
+<smd name="K" x="0" y="-0.325" dx="0.7" dy="0.45" layer="1"/>
+<text x="-0.75" y="-0.75" size="1.5" layer="25" rot="R90">&gt;NAME</text>
+<wire x1="-0.5" y1="0.75" x2="0.5" y2="0.75" width="0.2" layer="25"/>
+<wire x1="0.5" y1="0.75" x2="0.5" y2="-0.75" width="0.2" layer="25"/>
+<wire x1="0.5" y1="-0.75" x2="-0.5" y2="-0.75" width="0.2" layer="25"/>
+<wire x1="-0.5" y1="-0.75" x2="-0.5" y2="0.75" width="0.2" layer="25"/>
+</package>
+<package name="MICROSMP">
+<smd name="K" x="-0.65" y="0" dx="2" dy="1.1" layer="1"/>
+<smd name="A" x="1.25" y="0" dx="0.8" dy="0.8" layer="1"/>
+<wire x1="-2" y1="0.75" x2="2" y2="0.75" width="0.2" layer="21"/>
+<wire x1="2" y1="0.75" x2="2" y2="-0.75" width="0.2" layer="21"/>
+<wire x1="2" y1="-0.75" x2="-2" y2="-0.75" width="0.2" layer="21"/>
+<wire x1="-2" y1="-0.75" x2="-2" y2="0.75" width="0.2" layer="21"/>
+<text x="-2" y="1" size="1" layer="25">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="AN-AN">
@@ -2844,6 +2862,38 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CBS10S30" prefix="D">
+<gates>
+<gate name="G$1" symbol="SCHOTTKY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CST2B">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="K"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MSS2P3" prefix="D">
+<gates>
+<gate name="G$1" symbol="SCHOTTKY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MICROSMP">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="K"/>
 </connects>
 <technologies>
 <technology name=""/>
