@@ -135,6 +135,7 @@ SYM:
 
 	Grid Default Off;
 	Change Width 0.010in;
+	Change Size 0.07;
 	MENU '[LTspice.png] LT Spice simulation {\
 					  Export: RUN ltspice.ulp /E; |\
 					  SpiceOrder : RUN spiceorder.ulp; |\
