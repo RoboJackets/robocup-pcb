@@ -253,7 +253,7 @@ In this library you will find inductors. If you are looking for a common package
 <smd name="12" x="13.46" y="7.5" dx="3.3" dy="1.27" layer="1"/>
 <text x="-10.5" y="10.5" size="1.27" layer="25">&gt;NAME</text>
 </package>
-<package name="NR60XX/NRS60XX">
+<package name="NR60XX_NRS60XX">
 <smd name="1" x="-2.35" y="0" dx="5.7" dy="1.6" layer="1" rot="R90"/>
 <smd name="2" x="2.35" y="0" dx="5.7" dy="1.6" layer="1" rot="R90"/>
 <wire x1="-3.5" y1="3" x2="3.5" y2="3" width="0.2" layer="21"/>
@@ -479,7 +479,7 @@ In this library you will find inductors. If you are looking for a common package
 <gate name="G$1" symbol="INDUCTOR_SINGLE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="NR60XX/NRS60XX">
+<device name="" package="NR60XX_NRS60XX">
 <connects>
 <connect gate="G$1" pin="P$1" pad="1"/>
 <connect gate="G$1" pin="P$2" pad="2"/>
