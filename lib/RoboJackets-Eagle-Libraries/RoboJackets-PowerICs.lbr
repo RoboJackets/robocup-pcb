@@ -602,6 +602,7 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <wire x1="5.08" y1="-4.925" x2="-5.08" y2="-4.925" width="0.2" layer="21"/>
 <wire x1="-5.08" y1="-4.925" x2="-5.08" y2="4.925" width="0.2" layer="21"/>
 <text x="-5.5" y="-5" size="1" layer="25" rot="R90">&gt;NAME</text>
+</package>
 <package name="POWERSO-16">
 <smd name="1" x="-2.8" y="-6" dx="2" dy="0.5" layer="1" rot="R90"/>
 <smd name="2" x="-2" y="-6" dx="2" dy="0.5" layer="1" rot="R90"/>
@@ -999,6 +1000,7 @@ pull down resistors</text>
 <wire x1="-12.7" y1="-12.7" x2="-12.7" y2="12.7" width="0.254" layer="94"/>
 <text x="-12.7" y="15.24" size="1.778" layer="95" align="top-left">&gt;NAME</text>
 <text x="5.08" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 <symbol name="VND5E006ASPTR-E">
 <pin name="IN1" x="-15.24" y="7.62" length="middle"/>
 <pin name="IN2" x="-15.24" y="5.08" length="middle"/>
@@ -1454,6 +1456,10 @@ Shoot-through protection</description>
 <connect gate="G$1" pin="SS" pad="5"/>
 <connect gate="G$1" pin="VIN" pad="1"/>
 <connect gate="G$1" pin="VOUT" pad="7"/>
+</connects>
+</device>
+</devices>
+</deviceset>
 <deviceset name="VND5E006ASPTR-E" prefix="U">
 <gates>
 <gate name="G$1" symbol="VND5E006ASPTR-E" x="0" y="0"/>
