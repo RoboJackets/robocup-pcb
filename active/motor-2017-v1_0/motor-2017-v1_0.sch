@@ -10196,6 +10196,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SUPPLY8" library="RoboJackets-Supplies" deviceset="+18.5V" device=""/>
 <part name="SUPPLY9" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="SUPPLY10" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
+<part name="SUPPLY11" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
+<part name="SUPPLY12" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10220,6 +10222,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="SUPPLY8" gate="G$1" x="177.8" y="106.68"/>
 <instance part="SUPPLY9" gate="P" x="73.66" y="162.56"/>
 <instance part="SUPPLY10" gate="P" x="73.66" y="106.68"/>
+<instance part="SUPPLY11" gate="P" x="167.64" y="162.56"/>
+<instance part="SUPPLY12" gate="P" x="167.64" y="106.68"/>
 </instances>
 <busses>
 </busses>
@@ -10268,6 +10272,14 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <portref moduleinst="WD2" port="+3.3V"/>
 <pinref part="SUPPLY10" gate="P" pin="+3.3V"/>
+</segment>
+<segment>
+<portref moduleinst="WD4" port="+3.3V"/>
+<pinref part="SUPPLY11" gate="P" pin="+3.3V"/>
+</segment>
+<segment>
+<portref moduleinst="WD3" port="+3.3V"/>
+<pinref part="SUPPLY12" gate="P" pin="+3.3V"/>
 </segment>
 </net>
 </nets>
