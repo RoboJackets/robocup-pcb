@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -930,36 +930,15 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <wire x1="-4.064" y1="0.2" x2="-3.864" y2="0" width="0.127" layer="21" curve="90"/>
 </package>
 <package name="DF22L-2-H">
-<pad name="2" x="-3.96" y="0" drill="1.6"/>
-<pad name="1" x="3.96" y="0" drill="1.6" shape="square"/>
-<wire x1="-9.9" y1="18.7" x2="9.9" y2="18.7" width="0.127" layer="21"/>
-<wire x1="9.9" y1="18.7" x2="9.9" y2="-5.3" width="0.127" layer="21"/>
-<wire x1="9.9" y1="-5.3" x2="8.4" y2="-5.3" width="0.127" layer="21"/>
-<wire x1="-8.4" y1="-5.3" x2="-9.9" y2="-5.3" width="0.127" layer="21"/>
-<wire x1="-9.9" y1="-5.3" x2="-9.9" y2="18.7" width="0.127" layer="21"/>
-<hole x="-7.5" y="15.2" drill="1.7"/>
-<hole x="7.5" y="15.2" drill="1.7"/>
-<wire x1="-8.4" y1="-5.3" x2="-8.4" y2="1.1" width="0.127" layer="21"/>
-<wire x1="-8.4" y1="1.1" x2="8.4" y2="1.1" width="0.127" layer="21"/>
-<wire x1="8.4" y1="1.1" x2="8.4" y2="-5.3" width="0.127" layer="21"/>
-<wire x1="-8.4" y1="-5.3" x2="8.4" y2="-5.3" width="0.127" layer="21"/>
-<text x="-11.28" y="-5.08" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<polygon width="0.127" layer="21">
-<vertex x="4.965" y="1.1"/>
-<vertex x="4.965" y="6.09"/>
-<vertex x="4.455" y="8"/>
-<vertex x="3.465" y="8"/>
-<vertex x="2.955" y="6.09"/>
-<vertex x="2.955" y="1.1"/>
-</polygon>
-<polygon width="0.127" layer="21">
-<vertex x="-2.955" y="1.1"/>
-<vertex x="-2.955" y="6.09"/>
-<vertex x="-3.465" y="8"/>
-<vertex x="-4.455" y="8"/>
-<vertex x="-4.965" y="6.09"/>
-<vertex x="-4.965" y="1.1"/>
-</polygon>
+<pad name="2" x="-3.96" y="0" drill="1.5" diameter="2.5"/>
+<pad name="1" x="3.96" y="0" drill="1.5" diameter="2.5" shape="square"/>
+<wire x1="-9.9" y1="18.7" x2="9.9" y2="18.7" width="0.2" layer="21"/>
+<wire x1="9.9" y1="18.7" x2="9.9" y2="-5.3" width="0.2" layer="21"/>
+<wire x1="-9.9" y1="-5.3" x2="-9.9" y2="18.7" width="0.2" layer="21"/>
+<hole x="-7.5" y="15.2" drill="1.6"/>
+<hole x="7.5" y="15.2" drill="1.6"/>
+<wire x1="-9.9" y1="-5.3" x2="9.9" y2="-5.3" width="0.2" layer="21"/>
+<text x="-10.5" y="-5" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 </package>
 <package name="MICRO_SD">
 </package>
@@ -1177,6 +1156,28 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <pad name="1" x="-1.27" y="0" drill="1.016" diameter="2" shape="octagon" rot="R90"/>
 <pad name="2" x="1.27" y="0" drill="1.016" diameter="2" shape="octagon" rot="R90"/>
 <text x="-2.5" y="1.5" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
+<package name="DF22-2-H">
+<pad name="2" x="-3.96" y="0" drill="1.5" diameter="2.5"/>
+<pad name="1" x="3.96" y="0" drill="1.5" diameter="2.5" shape="square"/>
+<wire x1="-9.9" y1="18.7" x2="9.9" y2="18.7" width="0.2" layer="21"/>
+<wire x1="9.9" y1="18.7" x2="9.9" y2="-5.3" width="0.2" layer="21"/>
+<wire x1="-9.9" y1="-5.3" x2="-9.9" y2="18.7" width="0.2" layer="21"/>
+<hole x="-7.5" y="15.2" drill="1.6"/>
+<hole x="7.5" y="15.2" drill="1.6"/>
+<wire x1="-9.9" y1="-5.3" x2="9.9" y2="-5.3" width="0.2" layer="21"/>
+<text x="-10.5" y="-5" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+</package>
+<package name="DF22R-2-H">
+<pad name="2" x="-3.96" y="0" drill="1.5" diameter="2.5"/>
+<pad name="1" x="3.96" y="0" drill="1.5" diameter="2.5" shape="square"/>
+<wire x1="-9.9" y1="18.7" x2="9.9" y2="18.7" width="0.127" layer="21"/>
+<wire x1="9.9" y1="18.7" x2="9.9" y2="-5.3" width="0.127" layer="21"/>
+<wire x1="-9.9" y1="-5.3" x2="-9.9" y2="18.7" width="0.127" layer="21"/>
+<hole x="-7.5" y="15.2" drill="1.6"/>
+<hole x="7.5" y="15.2" drill="1.6"/>
+<wire x1="-9.9" y1="-5.3" x2="9.9" y2="-5.3" width="0.127" layer="21"/>
+<text x="-10.5" y="-5" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -2326,7 +2327,7 @@ XT-60 Power Connector
 </device>
 </devices>
 </deviceset>
-<deviceset name="DF22L-2">
+<deviceset name="DF22L-2" prefix="J">
 <gates>
 <gate name="G$1" symbol="2-PIN_CONN" x="0" y="0"/>
 </gates>
@@ -2496,6 +2497,22 @@ XT-60 Power Connector
 </gates>
 <devices>
 <device name="VERT" package="1X2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DF22-2" prefix="J">
+<gates>
+<gate name="G$1" symbol="2-PIN_CONN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DF22-2-H">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
