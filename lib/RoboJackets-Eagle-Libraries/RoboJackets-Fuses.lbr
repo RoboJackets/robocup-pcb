@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -80,6 +80,30 @@
 <text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
 <text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="FUSEHOLDER_3549_X2">
+<description>2x Blade Fuse Clips
+For MINI Blade Fuses</description>
+<pad name="2" x="4.065" y="-5.08" drill="1.93" diameter="3" rot="R180"/>
+<pad name="LEG2" x="4.065" y="5.08" drill="1.17" diameter="2" rot="R180"/>
+<pad name="1" x="-4.065" y="-5.08" drill="1.93" diameter="3" rot="R180"/>
+<pad name="LEG1" x="-4.065" y="5.08" drill="1.17" diameter="2" rot="R180"/>
+<text x="6.5" y="-2.5" size="1" layer="25" rot="R270">&gt;NAME</text>
+<wire x1="6" y1="-7" x2="-6" y2="-7" width="0.2" layer="21"/>
+<wire x1="-6" y1="-7" x2="-6" y2="6.5" width="0.2" layer="21"/>
+<wire x1="-6" y1="6.5" x2="6" y2="6.5" width="0.2" layer="21"/>
+<wire x1="6" y1="6.5" x2="6" y2="-7" width="0.2" layer="21"/>
+<wire x1="0.5" y1="-6.5" x2="-0.5" y2="-6.5" width="0.2" layer="51"/>
+<wire x1="-0.5" y1="-6.5" x2="-0.5" y2="-5" width="0.2" layer="51"/>
+<wire x1="-0.5" y1="-5" x2="-1.5" y2="-5" width="0.2" layer="51"/>
+<wire x1="-1.5" y1="-5" x2="0" y2="-3.5" width="0.2" layer="51"/>
+<wire x1="0" y1="-3.5" x2="1.5" y2="-5" width="0.2" layer="51"/>
+<wire x1="1.5" y1="-5" x2="0.5" y2="-5" width="0.2" layer="51"/>
+<wire x1="0.5" y1="-5" x2="0.5" y2="-6.5" width="0.2" layer="51"/>
+<wire x1="-5.45" y1="-7.5" x2="5.45" y2="-7.5" width="0.2" layer="51"/>
+<wire x1="5.45" y1="-7.5" x2="5.45" y2="-15.8" width="0.2" layer="51"/>
+<wire x1="5.45" y1="-15.8" x2="-5.45" y2="-15.8" width="0.2" layer="51"/>
+<wire x1="-5.45" y1="-15.8" x2="-5.45" y2="-7.5" width="0.2" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="FUSE">
@@ -87,8 +111,8 @@
 <pin name="2" x="2.54" y="0" visible="off" length="point" rot="R180"/>
 <wire x1="2.54" y1="0" x2="0" y2="0" width="0.254" layer="94" curve="180"/>
 <wire x1="0" y1="0" x2="-2.54" y2="0" width="0.254" layer="94" curve="-180"/>
-<text x="-2.54" y="1.778" size="1.27" layer="97">&gt;NAME</text>
-<text x="-2.54" y="-3.048" size="1.27" layer="97">&gt;VALUE</text>
+<text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -101,6 +125,25 @@
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FUSEHOLDER_3549_X2" prefix="F" uservalue="yes">
+<description>Keystone Electronics
+Fuse Clip 30A 500V Circuit Blade PCB
+3549</description>
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FUSEHOLDER_3549_X2">
+<connects>
+<connect gate="G$1" pin="1" pad="1 LEG1" route="any"/>
+<connect gate="G$1" pin="2" pad="2 LEG2"/>
 </connects>
 <technologies>
 <technology name=""/>
