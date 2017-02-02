@@ -315,19 +315,19 @@ In this library you will find all the connectors used on any of our boards.
 <text x="0" y="3.5" size="1" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="2MM-8-H">
-<wire x1="-8.2" y1="2" x2="-8.2" y2="-8" width="0.127" layer="21"/>
-<wire x1="-8.2" y1="-8" x2="10.2" y2="-8" width="0.127" layer="21"/>
-<wire x1="10.2" y1="-8" x2="10.2" y2="2" width="0.127" layer="21"/>
-<wire x1="10.2" y1="2" x2="-8.2" y2="2" width="0.127" layer="21"/>
-<pad name="2" x="-4" y="0" drill="0.8" rot="R90"/>
-<pad name="1" x="-6" y="0" drill="0.8" shape="square" rot="R180"/>
-<pad name="3" x="-2" y="0" drill="0.8" rot="R90"/>
-<pad name="4" x="0" y="0" drill="0.8" rot="R90"/>
-<pad name="5" x="2" y="0" drill="0.8" rot="R90"/>
-<pad name="6" x="4" y="0" drill="0.8" rot="R90"/>
-<pad name="7" x="6" y="0" drill="0.8" rot="R90"/>
-<pad name="8" x="8" y="0" drill="0.8" rot="R90"/>
-<text x="1" y="2.5" size="1" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<wire x1="-9.2" y1="2" x2="-9.2" y2="-8" width="0.2" layer="21"/>
+<wire x1="-9.2" y1="-8" x2="9.2" y2="-8" width="0.2" layer="21"/>
+<wire x1="9.2" y1="-8" x2="9.2" y2="2" width="0.2" layer="21"/>
+<wire x1="9.2" y1="2" x2="-9.2" y2="2" width="0.2" layer="21"/>
+<pad name="2" x="-5" y="0" drill="0.8" rot="R90"/>
+<pad name="1" x="-7" y="0" drill="0.8" shape="square" rot="R180"/>
+<pad name="3" x="-3" y="0" drill="0.8" rot="R90"/>
+<pad name="4" x="-1" y="0" drill="0.8" rot="R90"/>
+<pad name="5" x="1" y="0" drill="0.8" rot="R90"/>
+<pad name="6" x="3" y="0" drill="0.8" rot="R90"/>
+<pad name="7" x="5" y="0" drill="0.8" rot="R90"/>
+<pad name="8" x="7" y="0" drill="0.8" rot="R90"/>
+<text x="9.5" y="2" size="1" layer="25" font="vector" rot="R270">&gt;NAME</text>
 </package>
 <package name="2MM-8-V">
 <wire x1="-9" y1="3" x2="-9" y2="-3" width="0.127" layer="21"/>
