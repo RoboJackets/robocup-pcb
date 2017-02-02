@@ -11303,34 +11303,34 @@ In this library you will find LEDs and other visual output devices.
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
 <instance part="FRAME2" gate="G$2" x="172.72" y="0"/>
-<instance part="J1" gate="G$1" x="43.18" y="177.8"/>
-<instance part="U1" gate="G$1" x="142.24" y="137.16"/>
+<instance part="J1" gate="G$1" x="30.48" y="177.8"/>
+<instance part="U1" gate="G$1" x="195.58" y="162.56"/>
 <instance part="SUPPLY13" gate="G$1" x="73.66" y="185.42"/>
-<instance part="GND8" gate="1" x="50.8" y="170.18"/>
+<instance part="GND8" gate="1" x="38.1" y="170.18"/>
 <instance part="F1" gate="G$1" x="68.58" y="180.34"/>
-<instance part="J2" gate="G$1" x="185.42" y="172.72"/>
-<instance part="R1" gate="G$1" x="109.22" y="121.92" rot="R90"/>
-<instance part="R2" gate="G$1" x="116.84" y="121.92" rot="R90"/>
-<instance part="R3" gate="G$1" x="124.46" y="121.92" rot="R90"/>
-<instance part="GND1" gate="1" x="109.22" y="111.76"/>
-<instance part="GND2" gate="1" x="116.84" y="111.76"/>
-<instance part="GND3" gate="1" x="124.46" y="111.76"/>
-<instance part="SUPPLY14" gate="G$1" x="167.64" y="144.78"/>
-<instance part="SUPPLY15" gate="G$1" x="160.02" y="149.86"/>
-<instance part="GND4" gate="1" x="160.02" y="124.46"/>
-<instance part="GND5" gate="1" x="193.04" y="162.56"/>
-<instance part="R4" gate="G$1" x="73.66" y="154.94" rot="R90"/>
-<instance part="R5" gate="G$1" x="73.66" y="139.7" rot="R90"/>
-<instance part="GND6" gate="1" x="73.66" y="129.54"/>
-<instance part="S1" gate="G$1" x="99.06" y="144.78" rot="MR0"/>
-<instance part="S1" gate="G$2" x="99.06" y="137.16"/>
-<instance part="GND7" gate="1" x="96.52" y="129.54"/>
-<instance part="GND9" gate="1" x="101.6" y="129.54"/>
-<instance part="GND10" gate="1" x="83.82" y="129.54"/>
-<instance part="R6" gate="G$1" x="167.64" y="127" rot="R90"/>
-<instance part="D1" gate="G$1" x="167.64" y="114.3"/>
-<instance part="GND11" gate="1" x="167.64" y="106.68"/>
-<instance part="SUPPLY16" gate="G$1" x="73.66" y="165.1"/>
+<instance part="J2" gate="G$1" x="71.12" y="160.02" rot="MR0"/>
+<instance part="R1" gate="G$1" x="162.56" y="147.32" rot="R90"/>
+<instance part="R2" gate="G$1" x="170.18" y="147.32" rot="R90"/>
+<instance part="R3" gate="G$1" x="177.8" y="147.32" rot="R90"/>
+<instance part="GND1" gate="1" x="162.56" y="137.16"/>
+<instance part="GND2" gate="1" x="170.18" y="137.16"/>
+<instance part="GND3" gate="1" x="177.8" y="137.16"/>
+<instance part="SUPPLY14" gate="G$1" x="220.98" y="170.18"/>
+<instance part="SUPPLY15" gate="G$1" x="213.36" y="175.26"/>
+<instance part="GND4" gate="1" x="213.36" y="149.86"/>
+<instance part="GND5" gate="1" x="63.5" y="149.86" rot="MR0"/>
+<instance part="R4" gate="G$1" x="127" y="180.34" rot="R90"/>
+<instance part="R5" gate="G$1" x="127" y="165.1" rot="R90"/>
+<instance part="GND6" gate="1" x="127" y="154.94"/>
+<instance part="S1" gate="G$1" x="152.4" y="170.18" rot="MR0"/>
+<instance part="S1" gate="G$2" x="152.4" y="162.56"/>
+<instance part="GND7" gate="1" x="149.86" y="154.94"/>
+<instance part="GND9" gate="1" x="154.94" y="154.94"/>
+<instance part="GND10" gate="1" x="137.16" y="154.94"/>
+<instance part="R6" gate="G$1" x="220.98" y="152.4" rot="R90"/>
+<instance part="D1" gate="G$1" x="220.98" y="139.7"/>
+<instance part="GND11" gate="1" x="220.98" y="132.08"/>
+<instance part="SUPPLY16" gate="G$1" x="127" y="190.5"/>
 </instances>
 <busses>
 </busses>
@@ -11339,61 +11339,61 @@ In this library you will find LEDs and other visual output devices.
 <segment>
 <pinref part="J1" gate="G$1" pin="2"/>
 <pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="48.26" y1="175.26" x2="50.8" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="175.26" x2="50.8" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="175.26" x2="38.1" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="175.26" x2="38.1" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="109.22" y1="116.84" x2="109.22" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="142.24" x2="162.56" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="116.84" y1="116.84" x2="116.84" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="142.24" x2="170.18" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="124.46" y1="116.84" x2="124.46" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="142.24" x2="177.8" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="GND"/>
 <pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="157.48" y1="129.54" x2="160.02" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="129.54" x2="160.02" y2="127" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="154.94" x2="213.36" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="154.94" x2="213.36" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="2"/>
 <pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="190.5" y1="170.18" x2="193.04" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="170.18" x2="193.04" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="157.48" x2="63.5" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="157.48" x2="63.5" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
 <pinref part="GND6" gate="1" pin="GND"/>
-<wire x1="73.66" y1="134.62" x2="73.66" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="127" y1="160.02" x2="127" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="S1" gate="G$2" pin="LEG1"/>
 <pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="96.52" y1="134.62" x2="96.52" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="160.02" x2="149.86" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="S1" gate="G$2" pin="LEG2"/>
 <pinref part="GND9" gate="1" pin="GND"/>
-<wire x1="101.6" y1="134.62" x2="101.6" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="160.02" x2="154.94" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="83.82" y1="144.78" x2="83.82" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="170.18" x2="137.16" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="S1" gate="G$1" pin="B"/>
-<wire x1="91.44" y1="144.78" x2="83.82" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="170.18" x2="137.16" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="D1" gate="G$1" pin="K"/>
 <pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="167.64" y1="111.76" x2="167.64" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="137.16" x2="220.98" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VBATT" class="0">
@@ -11406,20 +11406,20 @@ In this library you will find LEDs and other visual output devices.
 <segment>
 <pinref part="U1" gate="G$1" pin="VCC"/>
 <pinref part="SUPPLY15" gate="G$1" pin="VBATT"/>
-<wire x1="157.48" y1="144.78" x2="160.02" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="144.78" x2="160.02" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="170.18" x2="213.36" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="170.18" x2="213.36" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY16" gate="G$1" pin="VBATT"/>
 <pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="73.66" y1="162.56" x2="73.66" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="127" y1="187.96" x2="127" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VIN" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="1"/>
-<wire x1="48.26" y1="180.34" x2="50.8" y2="180.34" width="0.1524" layer="91"/>
-<label x="50.8" y="180.34" size="1.27" layer="95" xref="yes"/>
+<wire x1="35.56" y1="180.34" x2="38.1" y2="180.34" width="0.1524" layer="91"/>
+<label x="38.1" y="180.34" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="F1" gate="G$1" pin="1"/>
@@ -11428,57 +11428,57 @@ In this library you will find LEDs and other visual output devices.
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="1"/>
-<wire x1="190.5" y1="175.26" x2="193.04" y2="175.26" width="0.1524" layer="91"/>
-<label x="193.04" y="175.26" size="1.27" layer="95" xref="yes"/>
+<wire x1="66.04" y1="162.56" x2="63.5" y2="162.56" width="0.1524" layer="91"/>
+<label x="63.5" y="162.56" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="CS2"/>
 <pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="127" y1="129.54" x2="124.46" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="129.54" x2="124.46" y2="127" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="154.94" x2="177.8" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="154.94" x2="177.8" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="CS1"/>
 <pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="127" y1="132.08" x2="116.84" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="132.08" x2="116.84" y2="127" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="157.48" x2="170.18" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="157.48" x2="170.18" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="CS_DIS"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="127" y1="137.16" x2="109.22" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="137.16" x2="109.22" y2="127" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="162.56" x2="162.56" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="162.56" x2="162.56" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+18.5V" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="OUT1"/>
 <pinref part="SUPPLY14" gate="G$1" pin="+18.5V"/>
-<wire x1="157.48" y1="139.7" x2="167.64" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="139.7" x2="167.64" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="165.1" x2="220.98" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="165.1" x2="220.98" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="OUT2"/>
-<wire x1="157.48" y1="134.62" x2="167.64" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="134.62" x2="167.64" y2="139.7" width="0.1524" layer="91"/>
-<junction x="167.64" y="139.7"/>
+<wire x1="210.82" y1="160.02" x2="220.98" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="160.02" x2="220.98" y2="165.1" width="0.1524" layer="91"/>
+<junction x="220.98" y="165.1"/>
 <pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="167.64" y1="132.08" x2="167.64" y2="134.62" width="0.1524" layer="91"/>
-<junction x="167.64" y="134.62"/>
+<wire x1="220.98" y1="157.48" x2="220.98" y2="160.02" width="0.1524" layer="91"/>
+<junction x="220.98" y="160.02"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
 <pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="73.66" y1="149.86" x2="73.66" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="147.32" x2="73.66" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="147.32" x2="91.44" y2="147.32" width="0.1524" layer="91"/>
-<junction x="73.66" y="147.32"/>
+<wire x1="127" y1="175.26" x2="127" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="127" y1="172.72" x2="127" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="127" y1="172.72" x2="144.78" y2="172.72" width="0.1524" layer="91"/>
+<junction x="127" y="172.72"/>
 <pinref part="S1" gate="G$1" pin="A"/>
 </segment>
 </net>
@@ -11486,19 +11486,19 @@ In this library you will find LEDs and other visual output devices.
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
 <pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="167.64" y1="121.92" x2="167.64" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="147.32" x2="220.98" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="S1" gate="G$1" pin="COMMON"/>
 <pinref part="U1" gate="G$1" pin="IN1"/>
-<wire x1="106.68" y1="144.78" x2="124.46" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="170.18" x2="177.8" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="IN2"/>
-<wire x1="124.46" y1="144.78" x2="127" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="127" y1="142.24" x2="124.46" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="142.24" x2="124.46" y2="144.78" width="0.1524" layer="91"/>
-<junction x="124.46" y="144.78"/>
+<wire x1="177.8" y1="170.18" x2="180.34" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="167.64" x2="177.8" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="167.64" x2="177.8" y2="170.18" width="0.1524" layer="91"/>
+<junction x="177.8" y="170.18"/>
 </segment>
 </net>
 </nets>
