@@ -1,12 +1,12 @@
 Pinlist
 
-Exported from control-2011-a.brd at 10/16/2014 2:52:24 AM
+Exported from control-2011-b.brd at 10/16/2014 2:51:20 AM
 
 EAGLE Version 6.5.0 Copyright (c) 1988-2013 CadSoft
 
 Part     Pad      Net
 
-BZ1      1        N$45
+BZ1      1        BUZZ
          2        +3.3V
 
 C1       1        N$61
@@ -15,8 +15,8 @@ C1       1        N$61
 C2       1        M1_SUPPLY
          2        GND
 
-C3       +        M1_SUPPLY
-         -        GND
+C3       1        +3.3V
+         2        GND
 
 C4       +        M2_SUPPLY
          -        GND
@@ -24,40 +24,13 @@ C4       +        M2_SUPPLY
 C5       +        M3_SUPPLY
          -        GND
 
-C6       +        M4_SUPPLY
-         -        GND
-
 C7       +        M5_SUPPLY
-         -        GND
-
-C8       +        M5_SUPPLY
-         -        GND
-
-C9       +        M5_SUPPLY
          -        GND
 
 C10      +        M4_SUPPLY
          -        GND
 
-C11      +        M3_SUPPLY
-         -        GND
-
-C12      +        M2_SUPPLY
-         -        GND
-
-C13      +        M1_SUPPLY
-         -        GND
-
 C14      +        M1_SUPPLY
-         -        GND
-
-C15      +        M2_SUPPLY
-         -        GND
-
-C16      +        M3_SUPPLY
-         -        GND
-
-C17      +        M4_SUPPLY
          -        GND
 
 C18      1        N$109
@@ -81,7 +54,7 @@ C23      1        +2.5V
 C24      1        +1.2V
          2        GND
 
-C25      1        SRST
+C25      1        BATT_SENSE
          2        GND
 
 C26      1        M4_SUPPLY
@@ -162,7 +135,7 @@ C50      1        +1.2V
 C51      1        +1.2V
          2        GND
 
-C52      1        N$87
+C52      1        +3.3V
          2        GND
 
 C53      1        +3.3V
@@ -171,7 +144,10 @@ C53      1        +3.3V
 C54      1        +3.3V
          2        GND
 
-C55      1        +3.3V
+C55      1        N$84
+         2        GND
+
+C56      1        N$11
          2        GND
 
 C57      1        N$126
@@ -184,9 +160,6 @@ C59      1        N$128
          2        GND
 
 C60      1        +3.3V
-         2        GND
-
-C64      1        MCU_PROGB
          2        GND
 
 C65      1        N$139
@@ -222,22 +195,10 @@ C74      1        N$145
 C75      1        +5V
          2        GND
 
-C76      1        +3.3V
-         2        GND
-
 C77      1        +3.3V
          2        GND
 
-C78      1        +3.3V
-         2        GND
-
 C79      1        +1.8V
-         2        GND
-
-C80      1        +1.8V
-         2        GND
-
-C81      1        +1.8V
          2        GND
 
 D1       A        GND
@@ -263,6 +224,9 @@ D5       A1       +3.3V
          C2       N$116
          C3       GND
 
+D6       A        GND
+         C        +12V
+
 F1       1        N$103
          2        N$103
          3        +12V
@@ -286,7 +250,7 @@ J1       1        +3.3V
          NC1               *** unconnected ***
          NC2               *** unconnected ***
 
-J2       1        VBUS
+J2       1        N$144
          2        N$92
          3        N$109
          4                 *** unconnected ***
@@ -296,7 +260,7 @@ J2       1        VBUS
          M3                *** unconnected ***
          M4                *** unconnected ***
 
-J3       1        N$86
+J3       1        BALL_LED
          2        N$65
 
 J4       1        M1A
@@ -361,8 +325,9 @@ J8       P$1      ANT
          P$4      GND
          P$5      GND
 
-J9       1        BALL_DET
-         2        GND
+J9       1        GND
+         2        BALL_DET
+         3                 *** unconnected ***
 
 J10      1        +3.3V
          2        N$108
@@ -399,14 +364,14 @@ J16      1        +5V
          3        GND
          4        N$118
 
-J17      1        GND
-         2        M5A
-         3        M5B
-         4        M5C
-         5        N$82
-         6        N$84
-         7        N$83
-         8        +5V
+J17      1        M5A
+         2        M5B
+         3        M5C
+         4        +5V
+         5        GND
+         6        N$45
+         7        N$82
+         8        N$83
 
 J18      1        ANT
          2        GND
@@ -429,6 +394,12 @@ J20      1        N$137
 
 L1       1        N$69
          2        N$11
+
+L2       1        +3.3V
+         2        N$126
+
+L3       1        +3.3V
+         2        N$84
 
 LED1     A        DONE
          C        GND
@@ -703,14 +674,6 @@ Q30      1        GND
          7        M5C
          8        M5C
 
-Q31      1        N$45
-         2        GND
-         3        BUZZ
-
-Q32      1        N$86
-         2        GND
-         3        BALL_LED
-
 Q33      1        N$110
          2        +3.3V
          3        /CONNECT
@@ -784,8 +747,8 @@ R14      1        N$11
 R15      1        N$61
          2        +3.3V
 
-R16      1        +3.3V
-         2        N$45
+R16      1        BALL_LED
+         2        GND
 
 R17      1        N$124
          2        +12V
@@ -797,10 +760,10 @@ R19      1        N$5
          2        N$14
 
 R20      1        GND
-         2        M1B_H
+         2        N$142
 
 R21      1        GND
-         2        M1B_L
+         2        N$140
 
 R22      1        N$13
          2        N$6
@@ -809,10 +772,10 @@ R23      1        N$15
          2        N$8
 
 R24      1        GND
-         2        M1A_H
+         2        N$87
 
 R25      1        GND
-         2        M1A_L
+         2        N$86
 
 R26      1        N$20
          2        N$16
@@ -821,10 +784,10 @@ R27      1        N$21
          2        N$17
 
 R28      1        GND
-         2        M1C_H
+         2        N$147
 
 R29      1        GND
-         2        M1C_L
+         2        N$146
 
 R30      1        N$24
          2        N$22
@@ -833,10 +796,10 @@ R31      1        N$9
          2        N$23
 
 R32      1        GND
-         2        M2A_H
+         2        N$152
 
 R33      1        GND
-         2        M2A_L
+         2        N$153
 
 R34      1        N$28
          2        N$26
@@ -845,10 +808,10 @@ R35      1        N$25
          2        N$27
 
 R36      1        GND
-         2        M2B_H
+         2        N$150
 
 R37      1        GND
-         2        M2B_L
+         2        N$151
 
 R38      1        N$32
          2        N$30
@@ -857,10 +820,10 @@ R39      1        N$33
          2        N$31
 
 R40      1        GND
-         2        M2C_H
+         2        N$148
 
 R41      1        GND
-         2        M2C_L
+         2        N$149
 
 R42      1        N$36
          2        N$34
@@ -869,10 +832,10 @@ R43      1        N$10
          2        N$35
 
 R44      1        GND
-         2        M3A_H
+         2        N$154
 
 R45      1        GND
-         2        M3A_L
+         2        N$155
 
 R46      1        N$40
          2        N$38
@@ -881,10 +844,10 @@ R47      1        N$29
          2        N$39
 
 R48      1        GND
-         2        M3B_H
+         2        N$156
 
 R49      1        GND
-         2        M3B_L
+         2        N$157
 
 R50      1        N$44
          2        N$42
@@ -893,10 +856,10 @@ R51      1        N$49
          2        N$43
 
 R52      1        GND
-         2        M3C_H
+         2        N$158
 
 R53      1        GND
-         2        M3C_L
+         2        N$159
 
 R54      1        N$48
          2        N$46
@@ -905,10 +868,10 @@ R55      1        N$12
          2        N$47
 
 R56      1        GND
-         2        M4C_H
+         2        N$160
 
 R57      1        GND
-         2        M4C_L
+         2        N$161
 
 R58      1        N$52
          2        N$50
@@ -917,10 +880,10 @@ R59      1        N$37
          2        N$51
 
 R60      1        GND
-         2        M4B_H
+         2        N$162
 
 R61      1        GND
-         2        M4B_L
+         2        N$163
 
 R62      1        N$56
          2        N$54
@@ -929,10 +892,10 @@ R63      1        N$53
          2        N$55
 
 R64      1        GND
-         2        M4A_H
+         2        N$164
 
 R65      1        GND
-         2        M4A_L
+         2        N$165
 
 R66      1        N$60
          2        N$58
@@ -941,10 +904,10 @@ R67      1        N$19
          2        N$59
 
 R68      1        GND
-         2        M5A_H
+         2        N$170
 
 R69      1        GND
-         2        M5A_L
+         2        N$171
 
 R70      1        N$64
          2        N$62
@@ -953,10 +916,10 @@ R71      1        N$41
          2        N$63
 
 R72      1        GND
-         2        M5B_H
+         2        N$168
 
 R73      1        GND
-         2        M5B_L
+         2        N$169
 
 R74      1        N$68
          2        N$66
@@ -965,10 +928,10 @@ R75      1        N$57
          2        N$67
 
 R76      1        GND
-         2        M5C_H
+         2        N$166
 
 R77      1        GND
-         2        M5C_L
+         2        N$167
 
 R78      1        +3.3V
          2        BALL_DET
@@ -1018,10 +981,10 @@ R87      1        M4HALL_B
          7                 *** unconnected ***
          8                 *** unconnected ***
 
-R88      1        M5HALL_B
-         2        N$82
-         3        M5HALL_A
-         4        N$84
+R88      1        M5HALL_A
+         2        N$45
+         3        M5HALL_B
+         4        N$82
          5        M5HALL_C
          6        N$83
          7                 *** unconnected ***
@@ -1055,31 +1018,23 @@ R93      1        N$92
 R94      1        N$111
          2        N$112
 
-R95      1        N$87
-         2        +3.3V
+R95      1        M1DIV
+         2        GND
 
-R96      1        N$126
-         2        +3.3V
+R96      1        M1CUR
+         2        M1DIV
 
-R97      1        M2CUR
+R97      1        M2DIV
+         2        GND
+
+R98      1        M2CUR
          2        M2DIV
-         3        GND
-         4        M2DIV
 
-R98      1        M3CUR
-         2        M3DIV
-         3        GND
-         4        M3DIV
+R99      1        M3DIV
+         2        GND
 
-R99      1        GND
-         2        M4DIV
-         3        M4CUR
-         4        M4DIV
-
-R100     1        GND
-         2        M5DIV
-         3        M5CUR
-         4        M5DIV
+R100     1        M4DIV
+         2        GND
 
 R101     1        +3.3V
          2        I2C_SCL
@@ -1109,13 +1064,11 @@ R104     1        N$137
          7        N$138
          8        FPGA_SPARE_3
 
-R105     1        N$95
-         2        +3.3V
+R106     1        M5DIV
+         2        GND
 
-R106     1        M1CUR
-         2        M1DIV
-         3        GND
-         4        M1DIV
+R107     1        VBUS
+         2        N$144
 
 R108     1        GND
          2        N$92
@@ -1126,20 +1079,113 @@ R109     1        GND
 R110     1        N$109
          2        N$110
 
+R111     1        GND
+         2        VBUS
+
+R112     1        FLASH_NCS
+         2        +3.3V
+
 R113     1        +1.2V
          2        N$89
 
 R114     1        +2.5V
          2        N$90
 
-S1       1        DP0
-         2        DP1
-         3        DP2
-         4        DP3
-         5        +3.3V
+R115     1        FPGA_NCS
+         2        +3.3V
+
+R116     1        RADIO_NCS
+         2        +3.3V
+
+R117     1        M1B_L
+         2        N$140
+         3        M1B_H
+         4        N$142
+         5        M1A_L
+         6        N$86
+         7        M1A_H
+         8        N$87
+
+R118     1        M2B_L
+         2        N$151
+         3        M2B_H
+         4        N$150
+         5        M2A_L
+         6        N$153
+         7        M2A_H
+         8        N$152
+
+R119     1        M1C_L
+         2        N$146
+         3        M1C_H
+         4        N$147
+
+R120     1        M4B_L
+         2        N$163
+         3        M4B_H
+         4        N$162
+         5        M4A_L
+         6        N$165
+         7        M4A_H
+         8        N$164
+
+R122     1        M2C_H
+         2        N$148
+         3        M2C_L
+         4        N$149
+
+R123     1        M3A_H
+         2        N$154
+         3        M3A_L
+         4        N$155
+
+R124     1        M3B_H
+         2        N$156
+         3        M3B_L
+         4        N$157
+
+R125     1        M3C_H
+         2        N$158
+         3        M3C_L
+         4        N$159
+
+R128     1        M4C_H
+         2        N$160
+         3        M4C_L
+         4        N$161
+
+R129     1        M5A_H
+         2        N$170
+         3        M5A_L
+         4        N$171
+
+R130     1        M5B_H
+         2        N$168
+         3        M5B_L
+         4        N$169
+
+R131     1        M5C_H
+         2        N$166
+         3        M5C_L
+         4        N$167
+
+R132     1        M3CUR
+         2        M3DIV
+
+R133     1        M4CUR
+         2        M4DIV
+
+R134     1        M5CUR
+         2        M5DIV
+
+S1       1        DP1
+         2        DP2
+         3        DP3
+         4        DP4
+         5        GND
          6        GND
          7        GND
-         8        GND
+         8        +3.3V
 
 S2       1        DISCHARGE
          2        GND
@@ -1162,7 +1208,8 @@ S5       1        ID0
          2        ID1
          4        ID2
          8        ID3
-         C        GND
+         C1       GND
+         C2       GND
 
 U1       1        PROGB
          10       M1HALL_A
@@ -1209,13 +1256,13 @@ U1       1        PROGB
          137      +2.5V
          138      +3.3V
          139               *** unconnected ***
-         14       M1C_L
+         14       M1C_H
          140               *** unconnected ***
          141      M1ENC_A
          142      M1ENC_B
          143      +3.3V
          144      FPGA_TDI
-         15       M1C_H
+         15       M1C_L
          16                *** unconnected ***
          17                *** unconnected ***
          18                *** unconnected ***
@@ -1305,8 +1352,8 @@ U1       1        PROGB
          94       M5C_H
          95       M3HALL_B
          96       M5C_L
-         97       M5HALL_B
-         98       M5HALL_A
+         97       M5HALL_A
+         98       M5HALL_B
          99       GND
 
 U2       1        FLASH_NCS
@@ -1338,9 +1385,9 @@ U5       1        N$61
          5        N$90
 
 U6       1                 *** unconnected ***
-         2        M1B_H
+         2        N$142
          3        GND
-         4        M1B_L
+         4        N$140
          5        N$14
          6        M1_SUPPLY
          7        N$7
@@ -1352,22 +1399,22 @@ U7       1        +3.3V
          12       +1.8V
          13       M3DIV
          14       RADIO_NCS
-         15       BALL_LED
-         16       /CONNECT
+         15       LED_RY
+         16       RADIO_INT
          17       GND
          18       +3.3V
-         19       RADIO_INT
+         19       /CONNECT
          2        GND
          20       ID0
          21       SCK
          22       MOSI
-         23       ID1
+         23       ID3
          24       +1.8V
-         25       ID2
-         26       ID3
+         25       ID1
+         26       ID2
          27       MISO
-         28       FS1
-         29       FLASH_NCS
+         28       FLASH_NCS
+         29       FS1
          3        BALL_DET
          30       FPGA_NCS
          31       FS0
@@ -1376,15 +1423,15 @@ U7       1        +3.3V
          34       IMU_INT
          35       LED_LR
          36       I2C_SCL
-         37       DP0
-         38       DP1
+         37       DP4
+         38       DP3
          39       SRST
          4        BATT_SENSE
-         40       DP3
-         41       DP2
+         40       DP2
+         41       DP1
          42       LED_LY
          43       I2C_SDA
-         44       LED_RY
+         44       BALL_LED
          45       +3.3V
          46       GND
          47       LED_RR
@@ -1396,7 +1443,7 @@ U7       1        +3.3V
          52       VBUS
          53       TCK
          54       +1.8V
-         55       N$95
+         55                *** unconnected ***
          56       DDM
          57       DDP
          58       +3.3V
@@ -1417,9 +1464,9 @@ U8       1        N$11
          4        GND
 
 U9       1                 *** unconnected ***
-         2        M1A_H
+         2        N$87
          3        GND
-         4        M1A_L
+         4        N$86
          5        N$8
          6        M1_SUPPLY
          7        N$6
@@ -1444,9 +1491,9 @@ U11      1        +12V
          8        +5V
 
 U12      1                 *** unconnected ***
-         2        M1C_H
+         2        N$147
          3        GND
-         4        M1C_L
+         4        N$146
          5        N$17
          6        M1_SUPPLY
          7        N$16
@@ -1471,9 +1518,9 @@ U14      1        +12V
          8        +5V
 
 U15      1                 *** unconnected ***
-         2        M2A_H
+         2        N$152
          3        GND
-         4        M2A_L
+         4        N$153
          5        N$23
          6        M2_SUPPLY
          7        N$22
@@ -1488,25 +1535,10 @@ U16      1        +12V
          7        M5CUR
          8        +5V
 
-U17      1        +3.3V
-         10                *** unconnected ***
-         11                *** unconnected ***
-         12       GND
-         13       N$125
-         14       N$101
-         2        GND
-         3                 *** unconnected ***
-         4        GND
-         5        GND
-         6        N$87
-         7        +3.3V
-         8                 *** unconnected ***
-         9                 *** unconnected ***
-
 U18      1                 *** unconnected ***
-         2        M2B_H
+         2        N$150
          3        GND
-         4        M2B_L
+         4        N$151
          5        N$27
          6        M2_SUPPLY
          7        N$26
@@ -1537,91 +1569,102 @@ U19      1                 *** unconnected ***
          8        +3.3V
          9        +3.3V
 
+U20      1        +3.3V
+         10       N$125
+         2                 *** unconnected ***
+         3                 *** unconnected ***
+         4        GND
+         5        N$84
+         6                 *** unconnected ***
+         7                 *** unconnected ***
+         8                 *** unconnected ***
+         9        N$101
+
 U21      1                 *** unconnected ***
-         2        M2C_H
+         2        N$148
          3        GND
-         4        M2C_L
+         4        N$149
          5        N$31
          6        M2_SUPPLY
          7        N$30
          8                 *** unconnected ***
 
 U24      1                 *** unconnected ***
-         2        M3A_H
+         2        N$154
          3        GND
-         4        M3A_L
+         4        N$155
          5        N$35
          6        M3_SUPPLY
          7        N$34
          8                 *** unconnected ***
 
 U27      1                 *** unconnected ***
-         2        M3B_H
+         2        N$156
          3        GND
-         4        M3B_L
+         4        N$157
          5        N$39
          6        M3_SUPPLY
          7        N$38
          8                 *** unconnected ***
 
 U30      1                 *** unconnected ***
-         2        M3C_H
+         2        N$158
          3        GND
-         4        M3C_L
+         4        N$159
          5        N$43
          6        M3_SUPPLY
          7        N$42
          8                 *** unconnected ***
 
 U33      1                 *** unconnected ***
-         2        M4C_H
+         2        N$160
          3        GND
-         4        M4C_L
+         4        N$161
          5        N$47
          6        M4_SUPPLY
          7        N$46
          8                 *** unconnected ***
 
 U36      1                 *** unconnected ***
-         2        M4B_H
+         2        N$162
          3        GND
-         4        M4B_L
+         4        N$163
          5        N$51
          6        M4_SUPPLY
          7        N$50
          8                 *** unconnected ***
 
 U39      1                 *** unconnected ***
-         2        M4A_H
+         2        N$164
          3        GND
-         4        M4A_L
+         4        N$165
          5        N$55
          6        M4_SUPPLY
          7        N$54
          8                 *** unconnected ***
 
 U42      1                 *** unconnected ***
-         2        M5A_H
+         2        N$170
          3        GND
-         4        M5A_L
+         4        N$171
          5        N$59
          6        M5_SUPPLY
          7        N$58
          8                 *** unconnected ***
 
 U45      1                 *** unconnected ***
-         2        M5B_H
+         2        N$168
          3        GND
-         4        M5B_L
+         4        N$169
          5        N$63
          6        M5_SUPPLY
          7        N$62
          8                 *** unconnected ***
 
 U48      1                 *** unconnected ***
-         2        M5C_H
+         2        N$166
          3        GND
-         4        M5C_L
+         4        N$167
          5        N$67
          6        M5_SUPPLY
          7        N$66
