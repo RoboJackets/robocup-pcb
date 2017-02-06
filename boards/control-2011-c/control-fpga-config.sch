@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -69,8 +69,8 @@
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="98" name="Guide" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="101" name="Patch_Top" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
@@ -21517,6 +21517,18 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <text x="276.86" y="50.8" size="1.778" layer="95">UNUSED CONFIG</text>
 <text x="12.7" y="175.26" size="1.778" layer="91" rot="R90">SPARE FPGA I/O</text>
 <text x="5.08" y="22.86" size="1.778" layer="91">Cable: Parlex 100R08-51B</text>
+<text x="268.605" y="50.8" size="2.032" layer="97" font="vector" ratio="12" align="center-right">INIT_B</text>
+<text x="268.605" y="129.54" size="2.032" layer="97" font="vector" ratio="12" align="center-right">CCLK</text>
+<text x="268.605" y="106.68" size="2.032" layer="98" font="vector" ratio="12" align="center-right">M0</text>
+<text x="268.605" y="48.26" size="2.032" layer="97" font="vector" ratio="12" align="center-right">CSO_B</text>
+<text x="268.605" y="60.96" size="2.032" layer="97" font="vector" ratio="12" align="center-right">MOSI/CSI_B</text>
+<text x="268.605" y="58.42" size="2.032" layer="97" font="vector" ratio="12" align="center-right">DOUT/BUSY</text>
+<text x="268.605" y="109.22" size="2.032" layer="97" font="vector" ratio="12" align="center-right">DIN/D0</text>
+<text x="268.605" y="121.92" size="2.032" layer="97" font="vector" ratio="12" align="center-right">VS1/A18</text>
+<text x="268.605" y="119.38" size="2.032" layer="97" font="vector" ratio="12" align="center-right">VS2/A19</text>
+<text x="268.605" y="127" size="2.032" layer="97" font="vector" ratio="12" align="center-right">VS0/A17</text>
+<text x="268.605" y="93.98" size="2.032" layer="98" font="vector" ratio="12" align="center-right">M2</text>
+<text x="268.605" y="101.6" size="2.032" layer="98" font="vector" ratio="12" align="center-right">M1</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="208.28" y="86.36"/>
