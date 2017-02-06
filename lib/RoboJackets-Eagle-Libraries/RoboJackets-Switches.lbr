@@ -819,16 +819,6 @@ distributor Buerklin, 17G482</description>
 <pin name="1" x="-2.54" y="0" visible="off" length="point"/>
 <pin name="2" x="2.54" y="0" visible="off" length="point"/>
 </symbol>
-<symbol name="FUSE">
-<pin name="1" x="-5.08" y="0" visible="off" length="short"/>
-<pin name="2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
-<wire x1="-2.54" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94" curve="-90"/>
-<wire x1="2.54" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94" curve="-90"/>
-<wire x1="1.27" y1="-1.27" x2="0" y2="0" width="0.254" layer="94" curve="-90"/>
-<wire x1="0" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94" curve="90"/>
-<text x="-2.54" y="2.54" size="1.27" layer="94">&gt;NAME</text>
-<text x="-2.54" y="-3.81" size="1.27" layer="94">&gt;VALUE</text>
-</symbol>
 <symbol name="LEGS-2">
 <pin name="LEG1" x="-2.54" y="-2.54" visible="off" length="short" rot="R90"/>
 <pin name="LEG2" x="2.54" y="-2.54" visible="off" length="short" rot="R90"/>
@@ -1169,22 +1159,6 @@ http://www.digikey.com/product-detail/en/G3T12AP/360-1774-ND/1006855</descriptio
 <connect gate="G$1" pin="A" pad="3"/>
 <connect gate="G$1" pin="B" pad="1"/>
 <connect gate="G$1" pin="COMMON" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="FUSE" prefix="F" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="FUSE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="1206" package="1206">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
