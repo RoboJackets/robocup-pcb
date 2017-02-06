@@ -1,0 +1,26 @@
+Pinlist
+
+Exported from breakbeam-2015-a.brd at 3/7/2015 8:39:23 PM
+
+EAGLE Version 6.5.0 Copyright (c) 1988-2013 CadSoft
+
+Part     Pad      Net
+
+LD1/Q1   1        GND
+         2        N$1
+
+R1       1        OPTICAL
+         2        N$1
+
+R3       P$1      SERIAL_ID
+         P$2      +5V
+
+U$1      P$1      +5V
+         P$2      SERIAL_ID
+         P$3      GND
+         P$4      OPTICAL
+
+U1       1        SERIAL_ID
+         2        +5V
+         3        GND
+
