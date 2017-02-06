@@ -7034,6 +7034,7 @@ Source: www.kingbright.com</description>
 <part name="DEATHLIGHT" library="led" deviceset="LED" device="CHIPLED_0603" value="LTST-S270KRKT"/>
 <part name="R3" library="rcl" deviceset="R-US_" device="R0603" value="220"/>
 <part name="D2" library="diode" deviceset="DIODE-" device="SOD323-W" value="BAS16H"/>
+<part name="R4" library="rcl" deviceset="R-US_" device="R0603" value="1M"/>
 </parts>
 <sheets>
 <sheet>
@@ -7048,9 +7049,9 @@ Source: www.kingbright.com</description>
 <wire x1="63.5" y1="27.94" x2="63.5" y2="0" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="35.56" y1="27.94" x2="63.5" y2="27.94" width="0.1524" layer="97" style="shortdash"/>
 <text x="38.1" y="25.4" size="1.778" layer="97">Connectors</text>
-<wire x1="66.04" y1="63.5" x2="142.24" y2="63.5" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="142.24" y1="63.5" x2="142.24" y2="0" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="142.24" y1="0" x2="66.04" y2="0" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="66.04" y1="63.5" x2="157.48" y2="63.5" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="157.48" y1="63.5" x2="157.48" y2="0" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="157.48" y1="0" x2="66.04" y2="0" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="66.04" y1="0" x2="66.04" y2="63.5" width="0.1524" layer="97" style="shortdash"/>
 <text x="68.58" y="60.96" size="1.778" layer="97">Auto-discharge</text>
 </plain>
@@ -7096,6 +7097,10 @@ Source: www.kingbright.com</description>
 <attribute name="NAME" x="129.54" y="30.9626" size="1.778" layer="95"/>
 <attribute name="VALUE" x="129.54" y="28.1686" size="1.778" layer="96"/>
 </instance>
+<instance part="R4" gate="G$1" x="149.86" y="20.32" smashed="yes" rot="R90">
+<attribute name="NAME" x="151.13" y="21.8186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="151.13" y="19.558" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7130,6 +7135,10 @@ Source: www.kingbright.com</description>
 <wire x1="114.3" y1="15.24" x2="114.3" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="12.7" x2="106.68" y2="12.7" width="0.1524" layer="91"/>
 <junction x="106.68" y="12.7"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="114.3" y1="12.7" x2="149.86" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="12.7" x2="149.86" y2="15.24" width="0.1524" layer="91"/>
+<junction x="114.3" y="12.7"/>
 </segment>
 </net>
 <net name="HV" class="0">
@@ -7157,6 +7166,9 @@ Source: www.kingbright.com</description>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <junction x="114.3" y="55.88"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="114.3" y1="55.88" x2="149.86" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="55.88" x2="149.86" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CHARGE" class="0">
