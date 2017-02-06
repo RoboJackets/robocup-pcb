@@ -1,81 +1,70 @@
 Partlist
 
-Exported from kicker-2010-a.brd at 12/27/2014 11:11:33 PM
+Exported from kicker-2011-b.brd at 12/27/2014 11:11:04 PM
 
 EAGLE Version 6.5.0 Copyright (c) 1988-2013 CadSoft
 
 Assembly variant: 
 
-Part     Value          Package      Library        Position (inch)       Orientation
+Part     Value                       Package     Library        Position (inch)       Orientation
 
-C1       4.7uF          C1206K       rcl            (4.045 1.594)         R0
-C2       47uF           C/6032-28R   rcl            (4.047 1.714)         R180
-C3       470uF          PANASONIC_E  rcl            (4.033 1.956)         R180
-C4       0.1uF          C0603        rcl            (3.093 2.6445)        R180
-C5       0.1uF          C0603        rcl            (3.092 2.314)         R180
-C6       4.7uF          C1206K       rcl            (3.1105 1.695)        R0
-C7       47uF           C/6032-28R   rcl            (3.1675 1.8215)       R180
-C8       0.01u          C0603        rcl            (3.156 1.9675)        R180
-C9       4.7uF          C1206K       rcl            (3.156 2.0625)        R180
-C10      0.01u          C0603        rcl            (4.291 0.438)         R270
-C11      4.7uF          C1206K       rcl            (3.996 0.428)         R270
-C12      0.01uF         C0603        rcl            (3.086 0.239)         R180
-C13      0.01uF         C0603        rcl            (3.702 0.533)         R270
-C14      0.01uF         C0603        rcl            (3.3565 3.1445)       R270
-C15      RC_CAP         T-UP3        panasonic      (0.55590157 2.019)    R210
-C16      RC_CAP         T-UP3        panasonic      (5.64919685 2.038)    R150
-CRBG     33pF           C0603        rcl            (4.235 1.131)         R270
-D1       STTH3R06U      SMB          diode          (3.666 3.122)         R270
-D2       6A6-T          P6-15        diode          (1.161 0.782)         R180
-D3       6A6-T          P6-15        diode          (1.904 0.674)         R0
-F1       10A            NANO2_157    littlefuse     (4.453 0.672)         R180
-IC1      74AHC1G08DBV   SOT23-5      74xx-little-us (3.4535 1.5985)       R90
-IC2      74AHC1G08DBV   SOT23-5      74xx-little-us (3.456 1.771)         R90
-IC3      TC4427         SO08         microchip      (3.1725 1.496)        R90
-IC4      MCP6541        SOT23-5      microchip      (3.093 2.4155)        R90
-IC5      MCP6541        SOT23-5      microchip      (3.0915 2.759)        R90
-IC6      LP2985-50      SOT23-5      ti             (4.141 0.443)         R90
-IC7      LP2985-50      SOT23-5      ti             (3.125 2.1825)        R270
-IC8      CC3-XXXXSX-E   CC-E         tdk-lambda     (3.666 0.974)         R180
-IC9      SI8451         SO16         silabs         (3.443 0.357)         R0
-IC10     MCP3001        SO08         microchip      (3.212 3.147)         R180
-IC11     LT3750         MSOP10       linear         (4.436 1.178)         R0
-J1       JST_VH_2       JST_VH_2     jst_vh         (1.136 0.231)         R180
-J2       JST_VH_2       JST_VH_2     jst_vh         (1.638 0.231)         R180
-J3       JST_VH_2       JST_VH_2     jst_vh         (4.654 0.244)         R180
-J4       JST_PA_4       JST_PA_4     jst_pa         (2.109 0.181)         R0
-J5       JST_PA_6       JST_PA_6     jst_pa         (4.131 0.179)         R180
-LED2                    CHIPLED_0603 led            (5.529 0.456)         R180
-Q1       FQB34N20LTM    D2PACK       fairchild      (4.508 1.797)         R0
-Q2       FGA180N33ATD   TOP3AH       fairchild      (1.684 1.446)         R0
-Q3       FGA180N33ATD   TOP3AH       fairchild      (2.568 1.4595)        R0
-R1       1M             R0603        rcl            (1.642 1.002)         MR270
-R2       1M             R0603        rcl            (2.5705 1.005)        MR270
-R3       0              R0603        rcl            (1.751 0.9835)        MR0
-R4       0              R0603        rcl            (2.689 0.98)          MR0
-R5       220            R0603        rcl            (4.469 0.927)         R90
-R6       220            R0603        rcl            (4.558 0.927)         R90
-R7       0.01           FCSL90       ohmite         (1.831 2.7565)        MR270
-R8       0.01           FCSL90       ohmite         (2.684 2.7545)        MR270
-R9       2.4K           R0603        rcl            (3.0955 2.523)        R0
-R10      4.7K           R0603        rcl            (3.2305 2.518)        R90
-R11      75K            R0603        rcl            (3.2415 2.3955)       R90
-R12      2.4K           R0603        rcl            (3.089 2.863)         R0
-R13      4.7K           R0603        rcl            (3.228 2.823)         R90
-R14      75K            R0603        rcl            (3.228 2.7005)        R90
-R15      680K           R1206        rcl            (1.134 0.4925)        R0
-R16      680K           R1206        rcl            (2.3345 0.813)        R90
-R17      1.2M           R0603        rcl            (3.2365 3.376)        R90
-R18      22K            R0603        rcl            (3.0565 3.202)        R270
-R19      4.7K           R0603        rcl            (3.056 3.0285)        R270
-R20      DNP            R0603        rcl            (3.1 0.9775)          R90
-R21      4.7K           R0603        rcl            (3.368 1.45)          R90
-R22      4.7K           R0603        rcl            (3.287 1.666)         R180
-RBG      2.49K          R0603        rcl            (4.316 1.131)         R270
-RDCM     43K            R0603        rcl            (4.288 1.442)         R90
-RLED     2.2K           R0603        rcl            (5.529 0.619)         R90
-RPU      4.7K           R0603        rcl            (4.381 0.927)         R270
-RSOURCE  0.008          R1210        rcl            (4.608 1.176)         R270
-RVOUT    49.9K          R0603        rcl            (4.196 1.442)         R90
-SJ1                     SJ_2W        jumper         (3.776 0.283)         R270
-T1       DA2034         DA2034       coilcraft      (4.195 2.537)         R0
+C1       470uF 25v UWT1E471MNL1GS    PANASONIC_G rcl            (1.501 1.613)         MR270
+C2       4.7uF, 25v                  C0805       rcl            (1.202 1.569)         MR90
+C3       100nF                       C0603       rcl            (0.91 1.12)           MR270
+C4       2700uF 250V                 T-UP3       panasonic      (-0.22 1.93)          R225
+C5       2700uF 250V                 T-UP3       panasonic      (4.92 1.93)           R135
+C6       4.7uF                       C1206K      rcl            (2.5595 0.385)        MR0
+C7       47uF                        C/6032-28R  rcl            (2.5625 0.5115)       MR180
+C8       100nF                       C0603       rcl            (0.5 1.04)            MR180
+C9       100nF                       C0603       rcl            (5.44 0.53)           R270
+C12      100pF                       C0603       rcl            (1.087 1.264)         MR90
+C13      22nF                        C0603       rcl            (1.09 0.98)           MR270
+D1       STTH3R06U                   SMB         diode          (2.234 3.262)         MR270
+D2       6A6-T                       P6-15       diode          (3.271 0.518)         MR0
+D3       6A6-T                       P6-15       diode          (4.176 0.524)         MR0
+D4       BZV55-B18,115               SOD80C      diode          (3.82 0.65)           R180
+D5       BZV55-B18,115               SOD80C      diode          (4.24 0.94)           R90
+D6       BZV55-B18,115               SOD80C      diode          (2.91 0.65)           R180
+D7       BZV55-B18,115               SOD80C      diode          (3.34 0.94)           R90
+F1       10A                         NANO2_157   littlefuse     (1.298 0.457)         MR90
+J1       POWER                       JST_VH_2_RA jst_vh         (1.22 0.14)           MR0
+J2       CHIP                        JST_VH_2_RA jst_vh         (4.15 0.14)           MR0
+J3       KICK                        JST_VH_2_RA jst_vh         (3.48 0.14)           MR0
+J4       0528520870                  0528520870  con-robocup    (0.1 0.48)            MR90
+J5                                   MA08-1      con-lstb       (5.69 0.8)            R180
+J6       0528520870                  0528520870  con-robocup    (5.83 0.97)           R180
+J7                                   JP1         jumper         (5.12 0.8)            R270
+L1       HZ0603B102R-10              C0603       radio          (0.38 0.94)           MR90
+L2       HZ0603B102R-10              C0603       radio          (2.56 0.65)           MR0
+Q1       STB30NF20                   D2PACK      fairchild      (0.942 1.977)         MR0
+Q2       FGA180N33ATD-2              TOP3AH-2    fairchild      (3.81 1.18)           MR0
+Q3       FGA180N33ATD-2              TOP3AH-2    fairchild      (2.94 1.18)           MR0
+R1       10.0k                       R0603       rcl            (2.32 0.18)           MR270
+R2       10.0k                       R0603       rcl            (2.32 0.32)           MR90
+R3       10                          R0603       rcl            (4.21 0.88)           MR0
+R4       10                          R0603       rcl            (4.21 0.78)           MR0
+R5       10                          R0603       rcl            (3.3 0.88)            MR0
+R6       10                          R0603       rcl            (3.3 0.78)            MR0
+R7       0                           R0603       rcl            (0.25 0.78)           MR180
+R8       1.00M                       R0603       rcl            (0.29 1.31)           MR0
+R9       10.0k                       R0603       rcl            (0.49 1.2)            MR270
+R10      6.8k                        R0603       rcl            (1.088 1.118)         MR270
+R11      16.20k, 1% (MCR03EZPFX1622) R0603       rcl            (0.91 0.88)           MR90
+R15      680K                        R1206       rcl            (4.14 0.25)           MR180
+R16      680K                        R1206       rcl            (3.493 0.2445)        MR180
+R17      0.015 (WSL0603R0150FEA)     R0603       rcl            (0.81 1.51)           MR180
+R18      10.0k                       R0603       rcl            (0.796 0.561)         MR90
+R19      0                           R0603       rcl            (1.102 1.482)         MR90
+R20      140k                        R0603       rcl            (0.823 1.12)          MR270
+R21      1.30M, 1% (ERJ-3EKF1304V)   R0603       rcl            (0.51 1.47)           MR0
+R22      1.00M, 1% (MCR03EZPFX1004)  R0603       rcl            (0.69 1.36)           MR90
+R23      1.00M, 1% (MCR03EZPFX1004)  R0603       rcl            (0.69 1.22)           MR90
+S1                                   B3F-10XX    switch-omron   (5.5 0.17)            R270
+S2                                   B3F-10XX    switch-omron   (5.85 0.17)           R270
+S3                                   B3F-10XX    switch-omron   (5.15 0.17)           R270
+T1       DA2034                      DA2034      coilcraft      (1.475 2.877)         MR0
+U1       ADC081C027                  SOT23-6     national       (0.54 0.86)           MR180
+U2       MAX6817                     SOT23-6     switch-robocup (5.76 0.55)           R0
+U3       REG1117                     SOT223      burr-brown     (5.17 0.53)           R90
+U5       LT3757                      MSOP-10-MSE power          (0.99 1.24)           MR0
+U8       TC4427                      SO08        microchip      (2.5575 0.226)        MR90
