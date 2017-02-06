@@ -1,175 +1,243 @@
 Pinlist
 
-Exported from kicker-2008-a.brd at 10/16/2014 2:54:08 AM
+Exported from kicker-2008-c.brd at 12/27/2014 11:12:21 PM
 
 EAGLE Version 6.5.0 Copyright (c) 1988-2013 CadSoft
 
 Part     Pad      Net
 
-C1       1        VBAT
-         2        LGND
+C1       +        +12V
+         -        GND
 
-C2       1        VBAT
-         2        LGND
+C2       1        N$29
+         2        GND
 
-C3       +        VBAT
-         -        LGND
+C3       1        N$27
+         2        GND
 
-C4       1        N$8
-         2        N$15
+C6       1        N$19
+         2        GND
 
-C5       1        TRIG
-         2        HGND
+C7       +        N$19
+         -        GND
 
-CRBG     1        N$4
-         2        LGND
+C8       1        N$20
+         2        GND
 
-D1       A        N$1
+C9       1        N$31
+         2        GND
+
+C10      1        N$32
+         2        GND
+
+C12      1        N$4
+         2        GND
+
+C13      1        N$5
+         2        GND
+
+D1       A        N$37
          C        HV
 
-D2       A        LHOT
+D2       A        N$11
          C        HV
 
-LED2     A        N$12
-         C        DONE
+D3       A        N$17
+         C        HV
 
-LT3750   1        VBAT
-         10       N$4
-         2        DONE
-         3        CHARGE
-         4        VBAT
-         5        LGND
-         6        NAG
-         7        N$2
-         8        N$5
-         9        N$7
+D4       A        GND
+         C        N$8
 
-R1       1        TRIG
-         2        N$3
+D5       A        GND
+         C        N$1
 
-R2       1        TRIG
+D8       A        GND
+         C        N$21
+
+D9       A        CHARGE
+         C        N$33
+
+D10      A        N$30
+         C        GND
+
+F1       P$1      N$25
+         P$2      +12V
+
+J1       1        N$25
+         2        GND
+
+J2       1        HV
+         2        N$17
+
+J3       1        HV
          2        N$11
 
-R3       1        N$13
-         2        TRIG
+J4       1        N$3
+         2        CHIP
+         3        KICK
+         4        CHARGE
+         5                 *** unconnected ***
+         6        SCL
+         7        SDA
+         8        N$14
+         M1                *** unconnected ***
+         M2                *** unconnected ***
 
-R4       1        N$14
-         2        TRIG
+L1       1        +3V3
+         2        N$20
 
-R5       1        DNE
-         2        DONE
+L2       1        N$19
+         2        +12V
 
-R6       1        CHG
-         2        CHARGE
-
-R7       1        KICK
-         2        N$9
-
-R8       1        N$17
-         2        N$15
-
-R9       1        LGND
-         2        N$18
-
-R10      1        N$20
-         2        N$18
-
-R11      1        LGND
-         2        N$9
-
-RBG      1        N$4
-         2        LGND
-
-RDCM     1        N$5
-         2        N$6
-
-RLED     1        N$12
-         2        VBAT
-
-RPU      1        VBAT
-         2        DONE
-
-RSOURCE  1        NAG
-         2        LGND
-
-RVOUT    1        N$7
-         2        N$6
-
-U$1      1        HV
-         2        LHOT
-
-U$2      1        N$1
-         10       N$6
-         11                *** unconnected ***
-         12       HGND
-         2                 *** unconnected ***
-         3        VBAT
-         4        VBAT
-         5        VBAT
-         6        VBAT
-         7        N$6
-         8        N$6
-         9        N$6
-
-U$3      1        N$2
-         2        N$6
+Q1       1        N$2
+         2        N$26
          3        NAG
 
-U$4      1        HV
-         2        HGND
+Q4       1        N$21
+         2        GND
+         3        CHARGE
 
-U$5      1        VBAT
-         2        LGND
+Q5       1        N$21
+         2        N$22
+         3        N$30
+         4        N$22
 
-U$6      1        N$11
-         2        LHOT
-         3        HGND
+Q6       P$1      N$8
+         P$2      N$17
+         P$3      GND
 
-U$7      1        N$3
-         2        LHOT
-         3        HGND
+Q7       P$1      N$1
+         P$2      N$11
+         P$3      GND
 
-U$8      1        N$13
-         2        LHOT
-         3        HGND
+R1       1        GND
+         2        CHIP
 
-U$9      1        N$14
-         2        LHOT
-         3        HGND
-
-U$10     1        HV
-         2        HGND
-
-U$11     1        HV
-         2        HGND
-
-U$12     1        HV
-         2        HGND
-
-U$13     1                 *** unconnected ***
-         2        N$9
-         3        LGND
-         4        N$9
-         5        N$20
-         6        VBAT
-         7        N$17
-         8                 *** unconnected ***
-
-U$14     1        N$21
-         2        N$16
-         3        TRIG
-
-U$15     P$1      N$18
-         P$2      N$8
-         P$3      N$16
-         P$4      N$21
-
-U$16     1        TRIG
-         2        N$21
-         3        HGND
-
-U$17     1        CHG
+R2       1        GND
          2        KICK
-         3        DNE
-         4        LGND
+
+R4       1        N$15
+         2        N$8
+
+R6       1        N$16
+         2        N$1
+
+R7       1        N$3
+         2        GND
+
+R8       1        N$9
+         2        HV
+
+R9       1        GND
+         2        N$9
+
+R10      1        N$4
+         2        N$5
+
+R11      1        GND
+         2        N$24
+
+R12      1        SDA
+         2        +3V3
+
+R13      1        SCL
+         2        +3V3
+
+R14      1        N$31
+         2        NAG
+
+R15      1        N$17
+         2        HV
+
+R16      1        N$11
+         2        HV
+
+R17      1        GND
+         2        NAG
+
+R18      1        GND
+         2        CHARGE
+
+R19      1        +12V
+         2        N$29
+
+R20      1        N$28
+         2        GND
+
+R21      1        N$23
+         2        HV
+
+R22      1        N$7
+         2        N$23
+
+R23      1        N$24
+         2        N$7
+
+R24      1        N$32
+         2        N$26
+
+R25      1        GND
+         2        N$32
+
+R26      1        N$14
+         2        +3V3
+
+R27      1        N$22
+         2        HV
+
+R28      1        N$21
+         2        HV
+
+R29      1        N$33
+         2        N$30
+
+T1       1        GND
+         10       +12V
+         11                *** unconnected ***
+         12       N$37
+         2                 *** unconnected ***
+         3        N$26
+         4        N$26
+         5        N$26
+         6        N$26
+         7        +12V
+         8        +12V
+         9        +12V
+
+U$3      1        HV
+         2        GND
+
+U$4      1        HV
+         2        GND
+
+U$5      1        HV
+         2        GND
+
+U1       1        N$20
+         2        GND
+         3        N$9
+         4                 *** unconnected ***
+         5        SCL
+         6        SDA
+
+U5       1        N$4
+         10       +12V
+         11       GND
+         2        N$24
+         3        N$27
+         4        N$28
+         5        GND
+         6        N$31
+         7        N$2
+         8        N$29
+         9        CHARGE
+
+U8       1                 *** unconnected ***
+         2        CHIP
+         3        GND
+         4        KICK
+         5        N$15
+         6        N$19
+         7        N$16
+         8                 *** unconnected ***
 
