@@ -1,6 +1,6 @@
 Pinlist
 
-Exported from kicker-2011-b.brd at 12/27/2014 11:11:04 PM
+Exported from kicker-2011-c.brd at 12/27/2014 11:10:42 PM
 
 EAGLE Version 6.5.0 Copyright (c) 1988-2013 CadSoft
 
@@ -34,8 +34,11 @@ C7       +        N$18
 C8       1        N$20
          2        GND
 
-C9       1        TEST_VBATT
-         2        TEST_GND
+C9       1        N$31
+         2        GND
+
+C10      1        N$32
+         2        GND
 
 C12      1        N$4
          2        GND
@@ -64,6 +67,15 @@ D6       A        GND
 D7       A        GND
          C        N$19
 
+D8       A        GND
+         C        N$21
+
+D9       A        CHARGE
+         C        N$33
+
+D10      A        N$30
+         C        GND
+
 F1       P$1      N$25
          P$2      +12V
 
@@ -76,39 +88,16 @@ J2       1        HV
 J3       1        HV
          2        N$13
 
-J4       1        +3V3
+J4       1        N$3
          2        CHIP
          3        KICK
          4        CHARGE
          5                 *** unconnected ***
          6        SCL
          7        SDA
-         8        N$3
+         8        N$14
          M1                *** unconnected ***
          M2                *** unconnected ***
-
-J5       1        TEST_VCC
-         2        TEST_CHIP
-         3        TEST_KICK
-         4        TEST_CHARGE
-         5        TEST_DONE
-         6        TEST_SCL
-         7        TEST_SDA
-         8        TEST_GND
-
-J6       1        TEST_VCC
-         2        TEST_CHIP
-         3        TEST_KICK
-         4        TEST_CHARGE
-         5        TEST_DONE
-         6        TEST_SCL
-         7        TEST_SDA
-         8        TEST_GND
-         M1                *** unconnected ***
-         M2                *** unconnected ***
-
-J7       1        TEST_GND
-         2        TEST_VBATT
 
 L1       1        +3V3
          2        N$20
@@ -133,6 +122,15 @@ Q3       1A       N$19
          2B       N$13
          3A       GND
          3B       GND
+
+Q4       1        N$21
+         2        GND
+         3        CHARGE
+
+Q5       1        N$21
+         2        N$22
+         3        N$30
+         4        N$22
 
 R1       1        GND
          2        CHIP
@@ -167,6 +165,15 @@ R10      1        N$4
 R11      1        GND
          2        N$24
 
+R12      1        SDA
+         2        +3V3
+
+R13      1        SCL
+         2        +3V3
+
+R14      1        N$31
+         2        NAG
+
 R15      1        N$17
          2        HV
 
@@ -194,20 +201,23 @@ R22      1        N$7
 R23      1        N$24
          2        N$7
 
-S1       1        N$21
-         2        N$21
-         3        TEST_VCC
-         4        TEST_VCC
+R24      1        N$32
+         2        N$6
 
-S2       1        N$22
-         2        N$22
-         3        TEST_VCC
-         4        TEST_VCC
+R25      1        GND
+         2        N$32
 
-S3       1        TEST_CHARGE
-         2        TEST_CHARGE
-         3        TEST_VCC
-         4        TEST_VCC
+R26      1        N$14
+         2        +3V3
+
+R27      1        N$22
+         2        HV
+
+R28      1        N$21
+         2        HV
+
+R29      1        N$33
+         2        N$30
 
 T1       1        N$1
          10       N$6
@@ -229,18 +239,6 @@ U1       1        N$20
          5        SCL
          6        SDA
 
-U2       1        N$21
-         2        TEST_GND
-         3        N$22
-         4        TEST_CHIP
-         5        TEST_VCC
-         6        TEST_KICK
-
-U3       1        TEST_GND
-         2        TEST_VCC
-         3        TEST_VBATT
-         4                 *** unconnected ***
-
 U5       1        N$4
          10       +12V
          11       GND
@@ -248,7 +246,7 @@ U5       1        N$4
          3        N$27
          4        N$28
          5        GND
-         6        NAG
+         6        N$31
          7        N$2
          8        N$29
          9        CHARGE
