@@ -1,0 +1,158 @@
+Netlist
+
+Exported from kicker-2008-a.brd at 12/27/2014 11:12:56 PM
+
+EAGLE Version 6.5.0 Copyright (c) 1988-2013 CadSoft
+
+Net      Part     Pad
+
+CHARGE   LT3750   3
+         R6       2
+
+CHG      R6       1
+         U$17     1
+
+DNE      R5       1
+         U$17     3
+
+DONE     LED2     C
+         LT3750   2
+         R5       2
+         RPU      2
+
+HGND     C5       2
+         U$10     2
+         U$11     2
+         U$12     2
+         U$16     3
+         U$2      12
+         U$4      2
+         U$6      3
+         U$7      3
+         U$8      3
+         U$9      3
+
+HV       D1       C
+         D2       C
+         U$1      1
+         U$10     1
+         U$11     1
+         U$12     1
+         U$4      1
+
+KICK     R7       1
+         U$17     2
+
+LGND     C1       2
+         C2       2
+         C3       -
+         CRBG     2
+         LT3750   5
+         R11      1
+         R9       1
+         RBG      2
+         RSOURCE  2
+         U$13     3
+         U$17     4
+         U$5      2
+
+LHOT     D2       A
+         U$1      2
+         U$6      2
+         U$7      2
+         U$8      2
+         U$9      2
+
+N$1      D1       A
+         U$2      1
+
+N$2      LT3750   7
+         U$3      1
+
+N$3      R1       2
+         U$7      1
+
+N$4      CRBG     1
+         LT3750   10
+         RBG      1
+
+N$5      LT3750   8
+         RDCM     1
+
+N$6      RDCM     2
+         RVOUT    2
+         U$2      10
+         U$2      7
+         U$2      8
+         U$2      9
+         U$3      2
+
+N$7      LT3750   9
+         RVOUT    1
+
+N$8      C4       1
+         U$15     P$2
+
+N$9      R11      2
+         R7       2
+         U$13     2
+         U$13     4
+
+N$11     R2       2
+         U$6      1
+
+N$12     LED2     A
+         RLED     1
+
+N$13     R3       1
+         U$8      1
+
+N$14     R4       1
+         U$9      1
+
+N$15     C4       2
+         R8       2
+
+N$16     U$14     2
+         U$15     P$3
+
+N$17     R8       1
+         U$13     7
+
+N$18     R10      2
+         R9       2
+         U$15     P$1
+
+N$20     R10      1
+         U$13     5
+
+N$21     U$14     1
+         U$15     P$4
+         U$16     2
+
+NAG      LT3750   6
+         RSOURCE  1
+         U$3      3
+
+TRIG     C5       1
+         R1       1
+         R2       1
+         R3       2
+         R4       2
+         U$14     3
+         U$16     1
+
+VBAT     C1       1
+         C2       1
+         C3       +
+         LT3750   1
+         LT3750   4
+         RLED     2
+         RPU      1
+         U$13     6
+         U$2      3
+         U$2      4
+         U$2      5
+         U$2      6
+         U$5      1
+
