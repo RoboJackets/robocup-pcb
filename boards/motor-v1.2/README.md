@@ -1,0 +1,2 @@
+![Capacitor Board](./motor.png)
+
