@@ -1,6 +1,6 @@
 Netlist
 
-Exported from kicker-2011-c.brd at 12/27/2014 11:10:42 PM
+Exported from kicker-2013-a.brd at 10/21/2014 11:43:19 PM
 
 EAGLE Version 6.5.0 Copyright (c) 1988-2013 CadSoft
 
@@ -37,8 +37,6 @@ GND      C1       -
          C13      2
          C2       2
          C3       2
-         C4       -
-         C5       -
          C6       2
          C7       -
          C8       2
@@ -46,15 +44,11 @@ GND      C1       -
          D10      C
          D4       A
          D5       A
-         D6       A
-         D7       A
          D8       A
          J1       2
-         Q2       3A
-         Q2       3B
-         Q3       3A
-         Q3       3B
          Q4       2
+         Q6       E
+         Q7       E
          R1       1
          R11      1
          R17      1
@@ -65,14 +59,31 @@ GND      C1       -
          R7       2
          R9       1
          T1       12
+         U$3      2
+         U$4      2
+         U$5      2
          U1       2
          U5       11
          U5       5
          U8       3
 
-HV       C4       +
-         C5       +
-         D1       C
+GND1     S1       1
+         S1       3
+         U$1      GND
+
+GND2     IR_LED   K
+         J5       1
+         J6       1
+         J8       2
+         J8       4
+         PHOTOTRANS A
+         POWER    K
+         R30      2
+         R32      2
+         S1       2
+         S1       4
+
+HV       D1       C
          D2       C
          D3       C
          J2       1
@@ -83,13 +94,17 @@ HV       C4       +
          R27      2
          R28      2
          R8       2
+         U$3      1
+         U$4      1
+         U$5      1
 
 KICK     J4       3
          R2       2
          U8       4
 
-N$1      D1       A
-         T1       1
+N$1      D5       C
+         Q7       G
+         R6       2
 
 N$2      Q1       1
          U5       7
@@ -104,63 +119,52 @@ N$4      C12      1
 N$5      C13      1
          R10      2
 
-N$6      Q1       2
-         R24      2
-         T1       10
-         T1       7
-         T1       8
-         T1       9
+N$6      POWER    A
+         R3       1
 
 N$7      R22      1
          R23      2
 
 N$8      D4       C
-         Q2       1B
+         Q6       G
          R4       2
 
 N$9      R8       1
          R9       2
          U1       3
 
-N$11     D5       C
-         Q2       1A
-         R3       2
+N$10     DET      A
+         R36      1
 
-N$12     D6       C
-         Q3       1B
-         R6       2
-
-N$13     D2       A
+N$11     D2       A
          J3       2
-         Q3       2A
-         Q3       2B
+         Q7       C
          R16      1
+
+N$12     IR_LED   A
+         R33      1
 
 N$14     J4       8
          R26      1
 
-N$15     R3       1
-         R4       1
-         U8       7
-
-N$16     R5       1
-         R6       1
+N$15     R4       1
          U8       5
+
+N$16     R6       1
+         U8       7
 
 N$17     D3       A
          J2       2
-         Q2       2A
-         Q2       2B
+         Q6       C
          R15      1
 
-N$18     C6       1
+N$18     DET      K
+         J5       2
+
+N$19     C6       1
          C7       +
          L2       1
          U8       6
-
-N$19     D7       C
-         Q3       1A
-         R5       2
 
 N$20     C8       1
          L1       2
@@ -184,6 +188,9 @@ N$24     R11      2
 
 N$25     F1       P$1
          J1       1
+
+N$26     EMT      K
+         PHOTOTRANS K
 
 N$27     C3       1
          U5       3
@@ -210,6 +217,46 @@ N$32     C10      1
 N$33     D9       C
          R29      1
 
+N$34     G        A
+         R5       1
+
+N$35     B        K
+         R30      1
+
+N$36     R31      1
+         W        A
+
+N$38     R        K
+         R32      1
+
+N$39     EMT      A
+         R35      1
+
+N$42     J6       2
+         R37      1
+
+N$43     G        K
+         J7       4
+
+N$44     B        A
+         J7       3
+
+N$45     J7       2
+         W        K
+
+N$46     J7       1
+         R        A
+
+N$47     Q1       2
+         R24      2
+         T1       10
+         T1       7
+         T1       8
+         T1       9
+
+N$50     D1       A
+         T1       1
+
 NAG      Q1       3
          R14      2
          R17      2
@@ -221,4 +268,15 @@ SCL      J4       6
 SDA      J4       7
          R12      1
          U1       6
+
+V+       J8       1
+         J8       3
+         R3       2
+         R31      2
+         R33      2
+         R35      2
+         R36      2
+         R37      2
+         R5       2
+         U$1      V+
 
