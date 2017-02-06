@@ -1,0 +1,1426 @@
+Pinlist
+
+Exported from control-2008-a.brd at 12/27/2014 11:47:06 PM
+
+EAGLE Version 6.5.0 Copyright (c) 1988-2013 CadSoft
+
+Part     Pad      Net
+
+C1       1        N$45
+         2        GND
+
+C2       1        N$61
+         2        GND
+
+C3       +        VBAT
+         -        GND
+
+C4       +        VBAT
+         -        GND
+
+C5       +        VBAT
+         -        GND
+
+C6       +        VBAT
+         -        GND
+
+C7       +        VBAT
+         -        GND
+
+C8       +        VBAT
+         -        GND
+
+C9       +        VBAT
+         -        GND
+
+C10      +        VBAT
+         -        GND
+
+C11      +        VBAT
+         -        GND
+
+C12      +        VBAT
+         -        GND
+
+C13      +        VBAT
+         -        GND
+
+C14      +        VBAT
+         -        GND
+
+C15      +        VBAT
+         -        GND
+
+C16      +        VBAT
+         -        GND
+
+C17      +        VBAT
+         -        GND
+
+C18      1        VBAT
+         2        GND
+
+C19      1        VBAT
+         2        GND
+
+C20      1        VBAT
+         2        GND
+
+C21      1        VBAT
+         2        GND
+
+C22      1        VBAT
+         2        GND
+
+C23      1        2V5
+         2        GND
+
+C24      1        1V2
+         2        GND
+
+C25      1        SRST
+         2        GND
+
+C26      1        N$95
+         2        GND
+
+C27      1        N$94
+         2        GND
+
+C28      1        3V3
+         2        GND
+
+C29      1        3V3
+         2        GND
+
+C30      1        1V8
+         2        GND
+
+C31      1        2V5
+         2        GND
+
+C32      1        N$96
+         2        GND
+
+C33      1        3V3
+         2        GND
+
+C34      1        1V2
+         2        GND
+
+C35      1        N$11
+         2        TX_ANT
+
+C36      1        RX_ANT
+         2        N$65
+
+C37      1        N$85
+         2        ANT
+
+C38      1        SCLK
+         2        N$91
+
+C39      1        ANT_B
+         2        GND
+
+C40      1        ANT_A
+         2        GND
+
+C41      1        N$101
+         2        GND
+
+C42      +        N$101
+         -        GND
+
+C43      1        N$102
+         2        N$104
+
+C44      1        3V3
+         2        GND
+
+C45      1        1V8
+         2        GND
+
+C46      1        3V3
+         2        GND
+
+C47      1        3V3
+         2        GND
+
+C48      1        3V3
+         2        GND
+
+C49      1        2V5
+         2        GND
+
+C50      1        1V2
+         2        GND
+
+C51      1        1V2
+         2        GND
+
+C52      1        3V3
+         2        GND
+
+C53      1        3V3
+         2        GND
+
+C54      1        3V3
+         2        GND
+
+C55      1        3V3
+         2        GND
+
+C56      1        3V3
+         2        GND
+
+C57      1        3V3
+         2        GND
+
+C58      1        3V3
+         2        GND
+
+C59      1        3V3
+         2        GND
+
+C60      1        3V3
+         2        GND
+
+C61      1        3V3
+         2        GND
+
+C62      1        3V3
+         2        GND
+
+C63      1        3V3
+         2        GND
+
+C67      1        2V5
+         2        GND
+
+C68      1        2V5
+         2        GND
+
+C71      1        1V2
+         2        GND
+
+D1       A        GND
+         C        N$104
+
+DBST     A        N$101
+         C        N$102
+
+DIN      A        VBAT
+         C        N$101
+
+JP1      1        GND
+         2        N$86
+         3        3V3
+
+LED1     A        DONE
+         C        GND
+
+LED2     A        N$3
+         C        LED0
+
+LED3     A        N$69
+         C        LED1
+
+LED4     A        N$89
+         C        LED4
+
+LED5     A        N$90
+         C        LED3
+
+LED6     A        N$93
+         C        GND
+
+M_SEL    1        3V3
+         2        MODE2
+         3        GND
+
+R1       1        CSO
+         2        3V3
+
+R2       1        CCLK
+         2        3V3
+
+R3       1        N$1
+         2        TMS
+
+R4       1        N$2
+         2        TCK
+
+R5       1        N$99
+         2        N$101
+
+R6       1        N$4
+         2        TDI
+
+R7       1        2V5
+         2        PROGB
+
+R8       1        SRST
+         2        3V3
+
+R9       1        3V3
+         2        N$45
+
+R10      1        3V3
+         2        N$61
+
+R11      1        3V3
+         2        N$3
+
+R12      1        3V3
+         2        N$69
+
+R13      1        2V5
+         2        DONE
+
+R14      1        3V3
+         2        N$89
+
+R15      1        3V3
+         2        N$90
+
+R16      1        3V3
+         2        N$92
+
+R17      1        VBAT
+         2        N$93
+
+R18      1        N$18
+         2        N$7
+
+R19      1        N$5
+         2        N$14
+
+R20      1        GND
+         2        M1A_H
+
+R21      1        GND
+         2        M1A_L
+
+R22      1        N$13
+         2        N$6
+
+R23      1        N$15
+         2        N$8
+
+R24      1        GND
+         2        M1B_H
+
+R25      1        GND
+         2        M1B_L
+
+R26      1        N$20
+         2        N$16
+
+R27      1        N$21
+         2        N$17
+
+R28      1        GND
+         2        M1C_H
+
+R29      1        GND
+         2        M1C_L
+
+R30      1        N$24
+         2        N$22
+
+R31      1        N$9
+         2        N$23
+
+R32      1        GND
+         2        M2A_H
+
+R33      1        GND
+         2        M2A_L
+
+R34      1        N$28
+         2        N$26
+
+R35      1        N$25
+         2        N$27
+
+R36      1        GND
+         2        M2B_H
+
+R37      1        GND
+         2        M2B_L
+
+R38      1        N$32
+         2        N$30
+
+R39      1        N$33
+         2        N$31
+
+R40      1        GND
+         2        M2C_H
+
+R41      1        GND
+         2        M2C_L
+
+R42      1        N$36
+         2        N$34
+
+R43      1        N$10
+         2        N$35
+
+R44      1        GND
+         2        M3A_H
+
+R45      1        GND
+         2        M3A_L
+
+R46      1        N$40
+         2        N$38
+
+R47      1        N$29
+         2        N$39
+
+R48      1        GND
+         2        M3B_H
+
+R49      1        GND
+         2        M3B_L
+
+R50      1        N$44
+         2        N$42
+
+R51      1        N$49
+         2        N$43
+
+R52      1        GND
+         2        M3C_H
+
+R53      1        GND
+         2        M3C_L
+
+R54      1        N$48
+         2        N$46
+
+R55      1        N$12
+         2        N$47
+
+R56      1        GND
+         2        M4A_H
+
+R57      1        GND
+         2        M4A_L
+
+R58      1        N$52
+         2        N$50
+
+R59      1        N$37
+         2        N$51
+
+R60      1        GND
+         2        M4B_H
+
+R61      1        GND
+         2        M4B_L
+
+R62      1        N$56
+         2        N$54
+
+R63      1        N$53
+         2        N$55
+
+R64      1        GND
+         2        M4C_H
+
+R65      1        GND
+         2        M4C_L
+
+R66      1        N$60
+         2        N$58
+
+R67      1        N$19
+         2        N$59
+
+R68      1        GND
+         2        M5A_H
+
+R69      1        GND
+         2        M5A_L
+
+R70      1        N$64
+         2        N$62
+
+R71      1        N$41
+         2        N$63
+
+R72      1        GND
+         2        M5B_H
+
+R73      1        GND
+         2        M5B_L
+
+R74      1        N$68
+         2        N$66
+
+R75      1        N$57
+         2        N$67
+
+R76      1        GND
+         2        M5C_H
+
+R77      1        GND
+         2        M5C_L
+
+R78      1        N$86
+         2        N$87
+
+R79      1        3V3
+         2        BUZ
+
+R80      1        3V3
+         2        TRST
+
+R81      1        M_VBAT
+         2        VBAT
+
+R82      1        GND
+         2        M_VBAT
+
+R83      1        N$105
+         2        3V3
+
+R84      1        GND
+         2        N$105
+
+R85      1        N$109
+         2        BL3
+
+R86      1        N$110
+         2        BL2
+
+R87      1        N$111
+         2        BL1
+
+R88      1        N$112
+         2        BL0
+
+R89      1        N$88
+         2        CHG
+
+R90      1        N$98
+         2        DNE
+
+R91      1        N$106
+         2        CHIP
+
+R92      1        N$108
+         2        KICK
+
+R93      1        N$109
+         2        3V3
+
+R94      1        A_EXT0
+         2        N$114
+
+S1       1        GND
+         2        GND
+         3        GND
+         4        GND
+         5        DP0
+         6        DP1
+         7        DP2
+         8        DP3
+
+T1       1        BUZ
+         2        GND
+         3        N$92
+
+T2       1        N$113
+         2        GND
+         3        N$114
+
+U$1      1        PROGB
+         10       M1HALL_B
+         100      3V3
+         101               *** unconnected ***
+         102      2V5
+         103      M3B_L
+         104      M3B_H
+         105      M3C_L
+         106      M3C_H
+         107               *** unconnected ***
+         108      TMS
+         109      ATDI
+         11       GND
+         110      TCK
+         111      M3HALL_C
+         112      BL3
+         113      BL2
+         114      M3HALL_A
+         115      1V2
+         116      BL1
+         117      BL0
+         118      GND
+         119      DP2
+         12       M1HALL_A
+         120      DP3
+         121      3V3
+         122      DP1
+         123      DP0
+         124      LED0
+         125      LED1
+         126      M5HALL_A
+         127      GND
+         128      M5HALL_B
+         129      M5HALL_C
+         13       3V3
+         130      M5A_H
+         131      M5A_L
+         132      M5B_H
+         133      GND
+         134      M5B_L
+         135      M5C_H
+         136               *** unconnected ***
+         137      2V5
+         138      3V3
+         139      M5C_L
+         14       CHG
+         140      M2HALL_A
+         141      M2HALL_B
+         142      M2HALL_C
+         143      3V3
+         144      TDI
+         15       DNE
+         16       CHIP
+         17       KICK
+         18                *** unconnected ***
+         19       GND
+         2        M2A_H
+         20       M1B_H
+         21       M1B_L
+         22       M1A_H
+         23       M1A_L
+         24       N$107
+         25       M1C_H
+         26       M1C_L
+         27       GND
+         28       3V3
+         29                *** unconnected ***
+         3        M2A_L
+         30       2V5
+         31                *** unconnected ***
+         32       D6
+         33       D5
+         34       D4
+         35       D3
+         36                *** unconnected ***
+         37       GND
+         38                *** unconnected ***
+         39       CSO
+         4        M2B_H
+         40                *** unconnected ***
+         41                *** unconnected ***
+         42       3V3
+         43                *** unconnected ***
+         44       MOSI
+         45       1V2
+         46       GND
+         47                *** unconnected ***
+         48       ALE
+         49       3V3
+         5        M2B_L
+         50       D2
+         51       D1
+         52       D0
+         53       D7
+         54       A_RX1
+         55       GND
+         56       A_TX1
+         57       MODE2
+         58       SCLK
+         59       RD
+         6        M1HALL_C
+         60       GND
+         61       GND
+         62       3V3
+         63       DIN
+         64       3V3
+         65       2V5
+         66       WR
+         67       3V3
+         68       3V3
+         69       M4HALL_C
+         7        M2C_H
+         70       3V3
+         71       CCLK
+         72       DONE
+         73       GND
+         74       M4HALL_B
+         75       M4C_L
+         76       M4C_H
+         77       M4B_L
+         78       M4B_H
+         79       3V3
+         8        M2C_L
+         80       1V2
+         81       M4HALL_A
+         82       M4A_L
+         83       M4A_H
+         84       RX_DATA
+         85       RX_PDN
+         86       RX_CS2
+         87       RX_CS1
+         88       ANT_A
+         89       TX_CTS
+         9        1V2
+         90       GND
+         91       TX_DATA
+         92       TX_PDN
+         93       TX_CS2
+         94       TX_CS1
+         95       M3HALL_B
+         96       ANT_B
+         97       M3A_L
+         98       M3A_H
+         99       GND
+
+U$2      1        CSO
+         2        DIN
+         3        3V3
+         4        GND
+         5        MOSI
+         6        CCLK
+         7        3V3
+         8        3V3
+
+U$3      1        3V3
+         2        CSO
+         3        CCLK
+         4        DIN
+         5        MOSI
+         6        GND
+
+U$4      1        3V3
+         2        N$1
+         3        N$2
+         4        TDO
+         5        N$4
+         6        GND
+         7        TRST
+         8                 *** unconnected ***
+
+U$5      1        3V3
+         2        GND
+         3        3V3
+         4        N$96
+         5        1V2
+
+U$6      1                 *** unconnected ***
+         2        M1A_H
+         3        GND
+         4        M1A_L
+         5        N$14
+         6        VBAT
+         7        N$7
+         8                 *** unconnected ***
+
+U$7      1        VBAT
+         2        VBAT
+         3        VBAT
+         4        N$18
+         5        M1C
+         6        M1C
+         7        M1C
+         8        M1C
+
+U$8      1        GND
+         2        GND
+         3        GND
+         4        N$5
+         5        M1C
+         6        M1C
+         7        M1C
+         8        M1C
+
+U$9      1                 *** unconnected ***
+         2        M1B_H
+         3        GND
+         4        M1B_L
+         5        N$8
+         6        VBAT
+         7        N$6
+         8                 *** unconnected ***
+
+U$10     1        VBAT
+         2        VBAT
+         3        VBAT
+         4        N$13
+         5        M1B
+         6        M1B
+         7        M1B
+         8        M1B
+
+U$11     1        GND
+         2        GND
+         3        GND
+         4        N$15
+         5        M1B
+         6        M1B
+         7        M1B
+         8        M1B
+
+U$12     1                 *** unconnected ***
+         2        M1C_H
+         3        GND
+         4        M1C_L
+         5        N$17
+         6        VBAT
+         7        N$16
+         8                 *** unconnected ***
+
+U$13     1        VBAT
+         2        VBAT
+         3        VBAT
+         4        N$20
+         5        M1A
+         6        M1A
+         7        M1A
+         8        M1A
+
+U$14     1        GND
+         2        GND
+         3        GND
+         4        N$21
+         5        M1A
+         6        M1A
+         7        M1A
+         8        M1A
+
+U$15     1                 *** unconnected ***
+         2        M2A_H
+         3        GND
+         4        M2A_L
+         5        N$23
+         6        VBAT
+         7        N$22
+         8                 *** unconnected ***
+
+U$16     1        VBAT
+         2        VBAT
+         3        VBAT
+         4        N$24
+         5        M2C
+         6        M2C
+         7        M2C
+         8        M2C
+
+U$17     1        GND
+         2        GND
+         3        GND
+         4        N$9
+         5        M2C
+         6        M2C
+         7        M2C
+         8        M2C
+
+U$18     1                 *** unconnected ***
+         2        M2B_H
+         3        GND
+         4        M2B_L
+         5        N$27
+         6        VBAT
+         7        N$26
+         8                 *** unconnected ***
+
+U$19     1        VBAT
+         2        VBAT
+         3        VBAT
+         4        N$28
+         5        M2A
+         6        M2A
+         7        M2A
+         8        M2A
+
+U$20     1        GND
+         2        GND
+         3        GND
+         4        N$25
+         5        M2A
+         6        M2A
+         7        M2A
+         8        M2A
+
+U$21     1                 *** unconnected ***
+         2        M2C_H
+         3        GND
+         4        M2C_L
+         5        N$31
+         6        VBAT
+         7        N$30
+         8                 *** unconnected ***
+
+U$22     1        VBAT
+         2        VBAT
+         3        VBAT
+         4        N$32
+         5        M2B
+         6        M2B
+         7        M2B
+         8        M2B
+
+U$23     1        GND
+         2        GND
+         3        GND
+         4        N$33
+         5        M2B
+         6        M2B
+         7        M2B
+         8        M2B
+
+U$24     1                 *** unconnected ***
+         2        M3A_H
+         3        GND
+         4        M3A_L
+         5        N$35
+         6        VBAT
+         7        N$34
+         8                 *** unconnected ***
+
+U$25     1        VBAT
+         2        VBAT
+         3        VBAT
+         4        N$36
+         5        M3C
+         6        M3C
+         7        M3C
+         8        M3C
+
+U$26     1        GND
+         2        GND
+         3        GND
+         4        N$10
+         5        M3C
+         6        M3C
+         7        M3C
+         8        M3C
+
+U$27     1                 *** unconnected ***
+         2        M3B_H
+         3        GND
+         4        M3B_L
+         5        N$39
+         6        VBAT
+         7        N$38
+         8                 *** unconnected ***
+
+U$28     1        VBAT
+         2        VBAT
+         3        VBAT
+         4        N$40
+         5        M3A
+         6        M3A
+         7        M3A
+         8        M3A
+
+U$29     1        GND
+         2        GND
+         3        GND
+         4        N$29
+         5        M3A
+         6        M3A
+         7        M3A
+         8        M3A
+
+U$30     1                 *** unconnected ***
+         2        M3C_H
+         3        GND
+         4        M3C_L
+         5        N$43
+         6        VBAT
+         7        N$42
+         8                 *** unconnected ***
+
+U$31     1        VBAT
+         2        VBAT
+         3        VBAT
+         4        N$44
+         5        M3B
+         6        M3B
+         7        M3B
+         8        M3B
+
+U$32     1        GND
+         2        GND
+         3        GND
+         4        N$49
+         5        M3B
+         6        M3B
+         7        M3B
+         8        M3B
+
+U$33     1                 *** unconnected ***
+         2        M4A_H
+         3        GND
+         4        M4A_L
+         5        N$47
+         6        VBAT
+         7        N$46
+         8                 *** unconnected ***
+
+U$34     1        VBAT
+         2        VBAT
+         3        VBAT
+         4        N$48
+         5        M4A
+         6        M4A
+         7        M4A
+         8        M4A
+
+U$35     1        GND
+         2        GND
+         3        GND
+         4        N$12
+         5        M4A
+         6        M4A
+         7        M4A
+         8        M4A
+
+U$36     1                 *** unconnected ***
+         2        M4B_H
+         3        GND
+         4        M4B_L
+         5        N$51
+         6        VBAT
+         7        N$50
+         8                 *** unconnected ***
+
+U$37     1        VBAT
+         2        VBAT
+         3        VBAT
+         4        N$52
+         5        M4C
+         6        M4C
+         7        M4C
+         8        M4C
+
+U$38     1        GND
+         2        GND
+         3        GND
+         4        N$37
+         5        M4C
+         6        M4C
+         7        M4C
+         8        M4C
+
+U$39     1                 *** unconnected ***
+         2        M4C_H
+         3        GND
+         4        M4C_L
+         5        N$55
+         6        VBAT
+         7        N$54
+         8                 *** unconnected ***
+
+U$40     1        VBAT
+         2        VBAT
+         3        VBAT
+         4        N$56
+         5        M4B
+         6        M4B
+         7        M4B
+         8        M4B
+
+U$41     1        GND
+         2        GND
+         3        GND
+         4        N$53
+         5        M4B
+         6        M4B
+         7        M4B
+         8        M4B
+
+U$42     1                 *** unconnected ***
+         2        M5A_H
+         3        GND
+         4        M5A_L
+         5        N$59
+         6        VBAT
+         7        N$58
+         8                 *** unconnected ***
+
+U$43     1        VBAT
+         2        VBAT
+         3        VBAT
+         4        N$60
+         5        M5A
+         6        M5A
+         7        M5A
+         8        M5A
+
+U$44     1        GND
+         2        GND
+         3        GND
+         4        N$19
+         5        M5A
+         6        M5A
+         7        M5A
+         8        M5A
+
+U$45     1                 *** unconnected ***
+         2        M5B_H
+         3        GND
+         4        M5B_L
+         5        N$63
+         6        VBAT
+         7        N$62
+         8                 *** unconnected ***
+
+U$46     1        VBAT
+         2        VBAT
+         3        VBAT
+         4        N$64
+         5        M5B
+         6        M5B
+         7        M5B
+         8        M5B
+
+U$47     1        GND
+         2        GND
+         3        GND
+         4        N$41
+         5        M5B
+         6        M5B
+         7        M5B
+         8        M5B
+
+U$48     1                 *** unconnected ***
+         2        M5C_H
+         3        GND
+         4        M5C_L
+         5        N$67
+         6        VBAT
+         7        N$66
+         8                 *** unconnected ***
+
+U$49     1        VBAT
+         2        VBAT
+         3        VBAT
+         4        N$68
+         5        M5C
+         6        M5C
+         7        M5C
+         8        M5C
+
+U$50     1        GND
+         2        GND
+         3        GND
+         4        N$57
+         5        M5C
+         6        M5C
+         7        M5C
+         8        M5C
+
+U$51     1        M1A
+         10       N$72
+         11       VBAT
+         12NC              *** unconnected ***
+         13NC              *** unconnected ***
+         2        M1A
+         3        M1B
+         4        M1B
+         5        M1C
+         6        M1C
+         7        GND
+         8        N$70
+         9        N$71
+
+U$52     A        M1HALL_A
+         C        N$70
+
+U$53     A        M1HALL_B
+         C        N$71
+
+U$54     A        M1HALL_C
+         C        N$72
+
+U$55     1        M2A
+         10       N$75
+         11       VBAT
+         12NC              *** unconnected ***
+         13NC              *** unconnected ***
+         2        M2A
+         3        M2B
+         4        M2B
+         5        M2C
+         6        M2C
+         7        GND
+         8        N$73
+         9        N$74
+
+U$56     A        M2HALL_A
+         C        N$73
+
+U$57     A        M2HALL_B
+         C        N$74
+
+U$58     A        M2HALL_C
+         C        N$75
+
+U$59     1        M3A
+         10       N$78
+         11       VBAT
+         12NC              *** unconnected ***
+         13NC              *** unconnected ***
+         2        M3A
+         3        M3B
+         4        M3B
+         5        M3C
+         6        M3C
+         7        GND
+         8        N$76
+         9        N$77
+
+U$60     A        M3HALL_A
+         C        N$76
+
+U$61     A        M3HALL_B
+         C        N$77
+
+U$62     A        M3HALL_C
+         C        N$78
+
+U$63     1        M4A
+         10       N$81
+         11       VBAT
+         12NC              *** unconnected ***
+         13NC              *** unconnected ***
+         2        M4A
+         3        M4B
+         4        M4B
+         5        M4C
+         6        M4C
+         7        GND
+         8        N$79
+         9        N$80
+
+U$64     A        M4HALL_A
+         C        N$79
+
+U$65     A        M4HALL_B
+         C        N$80
+
+U$66     A        M4HALL_C
+         C        N$81
+
+U$67     1        RX_ANT
+         10                *** unconnected ***
+         11       RX_CS1
+         12       RX_CS2
+         13       RX_PDN
+         14       RX_RSSI
+         15       N$45
+         16       N$45
+         17                *** unconnected ***
+         18       RX_DATA
+         2        GND
+         3        GND
+         4        GND
+         5        GND
+         6        GND
+         7        GND
+         8        GND
+         9                 *** unconnected ***
+
+U$68     1        GND
+         10       TX_DATA
+         2        TX_ANT
+         3                 *** unconnected ***
+         4        TX_CS1
+         5        TX_CS2
+         6        TX_CTS
+         7        TX_PDN
+         8        N$61
+         9        N$61
+
+U$69     1        D4
+         10       TCK
+         11       N$91
+         12                *** unconnected ***
+         13       A_TX0
+         14       A_RX0
+         15       ATDI
+         16       TDO
+         17       3V3
+         18                *** unconnected ***
+         19       GND
+         2        D5
+         20                *** unconnected ***
+         21       BUZ
+         22       LED3
+         23       LED4
+         24       WR
+         25                *** unconnected ***
+         26                *** unconnected ***
+         27       3V3
+         28       RD
+         29       A_TX1
+         3        D6
+         30       A_RX1
+         31       GND
+         32       D7
+         33       RX_RSSI
+         34       A_EXT0
+         35       A_EXT1
+         36       A_EXT2
+         37       M_VBAT
+         38       A_EXT3
+         39                *** unconnected ***
+         4                 *** unconnected ***
+         40       3V3
+         41       ALE
+         42       3V3
+         43       GND
+         44       N$87
+         45       D0
+         46       D1
+         47       D2
+         48       D3
+         5        1V8
+         6        SRST
+         7        GND
+         8        TRST
+         9        TMS
+
+U$70     1        GND
+         2        M5A
+         3        M5B
+         4        M5C
+         5        N$82
+         6        N$83
+         7        N$84
+         8        VBAT
+
+U$71     A        M5HALL_A
+         C        N$82
+
+U$72     A        M5HALL_B
+         C        N$83
+
+U$73     A        M5HALL_C
+         C        N$84
+
+U$74     1        N$65
+         2        GND
+         3        N$11
+         4        ANT_B
+         5        N$85
+         6        ANT_A
+
+U$75     1        ANT
+         2        GND
+         3        GND
+         4        GND
+         5        GND
+
+U$76     1        3V3
+         2        GND
+         3        SCLK
+         4        3V3
+
+U$77     P$1      GND
+         P$2      SRST
+
+U$78     1        N$103
+         2        N$103
+         3        N$97
+         4        N$97
+
+U$79     1        GND
+         2        N$113
+         3        A_EXT1
+         4        A_EXT2
+         5        A_EXT3
+         6        3V3
+
+U$80     1        3V3
+         2        GND
+         3        3V3
+         4        N$95
+         5        1V8
+
+U$81     1        3V3
+         2        GND
+         3        3V3
+         4        N$94
+         5        2V5
+
+U$82     1        M1A
+         2        M1B
+         3        M1C
+         4        N$70
+         5        N$71
+         6        N$72
+
+U$83     1        N$102
+         2        GND
+         3        N$105
+         4        N$99
+         5        N$101
+         6        N$104
+
+U$84     P$1      N$104
+         P$2      3V3
+
+U$85     P$1      GND
+         P$2      N$107
+
+U$86     1        3V3
+         2        N$88
+         3        N$98
+         4        N$106
+         5        N$108
+         6        GND
+
+U$87     1        3V3
+         2        N$109
+         3        N$110
+         4        N$111
+         5        N$112
+         6        GND
+
+U$88     P$1      3V3
+         P$2      N$92
+
+U$89     1        M2A
+         2        M2B
+         3        M2C
+         4        N$73
+         5        N$74
+         6        N$75
+
+U$90     1        M3A
+         2        M3B
+         3        M3C
+         4        N$76
+         5        N$77
+         6        N$78
+
+U$91     1        VBAT
+         2        N$97
+         3                 *** unconnected ***
+         4                 *** unconnected ***
+         5        N$97
+         6        VBAT
+
+U$92     1        M4A
+         2        M4B
+         3        M4C
+         4        N$79
+         5        N$80
+         6        N$81
+
+U$93     1        N$103
+         2        GND
+
+U$94     1        VBAT
+         2        GND
+
