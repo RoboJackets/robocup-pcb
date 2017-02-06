@@ -1,0 +1,166 @@
+Partlist
+
+Exported from motor-prototype-2014-panel-01.brd at 1/23/2015 9:11:11 PM
+
+EAGLE Version 6.5.0 Copyright (c) 1988-2013 CadSoft
+
+Assembly variant: 
+
+Part     Value                         Package                                         Library                Position (mil)        Orientation
+
+916MHZ   ANT-916-CHP-T                 ANT-916-CHP                                     RoboJackets-RF         (3507.87402 744.09449) R180
+A6-SEL                                 SJ_2                                            jumper                 (1222 591)            MR135
+C1       1 µF                          C0603                                           rcl                    (4925.19685 3157.48031) R180
+C2       2.2 µF                        C0603                                           rcl                    (4700 3395)           MR270
+C3       1 µF                          C0603                                           rcl                    (4751.9685 3157.48031) R180
+C4       22 nF                         C1206                                           rcl                    (5269.96063 3077.24409) MR0
+C5       0.1 µf                        C0603                                           rcl                    (4700 3525)           MR270
+C6       0.1 µF                        C0402                                           rcl                    (5145.19685 3619.4685) R90
+C7       0.1 µF                        C0402                                           rcl                    (5062.99213 3511.81102) R180
+C8       0.1 µF                        C0402                                           rcl                    (4600.43307 3628.91732) R180
+C9       1 nF                          C0402                                           rcl                    (4883.36614 3470.3937) R0
+C10      1 nF                          C0402                                           rcl                    (4940.07874 3513.2874) R180
+C11      22 µF, 16V                    C0402                                           rcl                    (4550 2347.5)         R270
+C12      100uF                         PANASONIC_H13                                   SparkFun-Capacitors    (4379.50787 3291.85039) R90
+C13      0.47 µF, 16V                  C0402                                           rcl                    (4765 2557.5)         R90
+C14      0.022 µF, 16V                 C0402                                           rcl                    (4775 2207.5)         R90
+C15      0.022 µF, 16V                 C0402                                           rcl                    (4655 2557.5)         R90
+C16      0.1 µF, 50V                   C0603                                           rcl                    (4865 2560)           R90
+C17      2.2 µF, 50V                   C0603                                           rcl                    (4950 2560)           R90
+C18      2.2 µF, 50V                   C0603                                           rcl                    (4710 2725)           R90
+C19      RC_CAPHE                      HE_SERIES                                       RoboJackets-Capacitors (4452.26378 4585.1378) R90
+C20      0.1uF                         C0805K                                          adafruit               (920 1985)            R0
+C21      100 nF                        C0603                                           rcl                    (2775.59055 3153.54331) MR180
+CB1A     0.047u                        C1206                                           rcl                    (1525 3820)           R180
+CB1B     0.047u                        C1206                                           rcl                    (1325 3820)           R180
+CB1C     0.047u                        C1206                                           rcl                    (1125 3820)           R180
+CF1      1u                            C0603                                           rcl                    (1580 3440)           MR270
+CPF1     470u                          PANASONIC_G                                     rcl                    (580 3750)            R0
+CR1      1n                            C0603                                           rcl                    (980 3650)            R180
+D1       RED                           LED-0603                                        SparkFun-LED           (3169.48819 3740.15748) R180
+D2       RED                           LED-0603                                        SparkFun-LED           (3079.92126 3740.15748) R180
+D3       RED                           LED-0603                                        SparkFun-LED           (2990.35433 3740.15748) R180
+D4       RED                           LED-0603                                        SparkFun-LED           (2900.7874 3740.15748) R180
+D5       RED                           LED-0603                                        SparkFun-LED           (3169.48819 4303.14961) R180
+D6       RED                           LED-0603                                        SparkFun-LED           (3079.92126 4303.14961) R180
+D7       RED                           LED-0603                                        SparkFun-LED           (2990.35433 4303.14961) R180
+D8       RED                           LED-0603                                        SparkFun-LED           (2900.7874 4303.14961) R180
+D9       RED                           LED-0603                                        SparkFun-LED           (5415 3480)           R0
+D10      GRN                           LED-0603                                        SparkFun-LED           (4600 2595)           R0
+D11      RED                           LED-0603                                        SparkFun-LED           (4751.9685 685.03937) R0
+D12      1N4148WX                      SOD-323                                         RoboJackets-Diodes     (4126.5748 900)       R270
+D13      1N4148WX                      SOD-323                                         RoboJackets-Diodes     (5025 1525)           R270
+D14      DFLS160-7                     POWERDI-123                                     RoboJackets-Diodes     (4812.5 2212.5)       MR0
+D15      1N4148WX                      SOD-323                                         RoboJackets-Diodes     (5087.5 687.5)        R270
+D16      RED                           LED-0603                                        SparkFun-LED           (4877.95276 688.97638) R0
+D17      P6SMB22A                      SMBJ                                            RoboJackets-Diodes-bad (4975 525)            MR90
+D18      MBRX160-TP                    SOD123                                          RoboJackets-Diodes     (4925 2287.5)         R270
+F1       FUSE                          FUSE_MINI_ATC                                   RoboJackets-ICs        (440 4270)            R90
+F2       FUSE1206                      F1206                                           RoboJackets-ICs        (4551.85039 594.37008) R270
+F3       FUSE                          FUSE_MINI_ATC                                   RoboJackets-Passive    (4875 200)            R180
+F4       FUSENANO2                     NANO2_157                                       RoboJackets-Passive    (4875 400)            R180
+H1       MOUNTING_HOLE                 MOUNTING_HOLE                                   RoboJackets-Passive    (5810.43307 4809.84252) R180
+IC1      MCP23017                      SSOP-28                                         RoboJackets-ICs        (2913.58268 3151.5748) R0
+IC2      DRV8302                       TSSOP-56_3                                      RoboJackets-PowerICs   (5050 3482.5)         MR90
+IC3      LM25010                       10-WDFN                                         RoboJackets-PowerICs   (4712.5 2375)         R180
+IC4      MAX6675                       SO08                                            adafruit               (860 1735)            R180
+J1       JST_VH_2RA                    JST_VH_2_RA                                     RoboJackets-Connectors (300 3350)            R270
+J2       MINIFITJR_HDR_2X2             MINIFITJR_HDR_2X2_RA                            RoboJackets-Connectors (1660 4760)           R90
+J3       52852-0870                    52852-08                                        RoboJackets-Connectors (160 2980)            MR90
+J4       XT-60                         XT-60                                           RoboJackets-Connectors (4251.25984 105)      R0
+J5       B2PS-VH(LF)(SN)               B2PS                                            RoboJackets-Connectors (5625 1675)           R90
+JP1                                    2X10                                            SparkFun-Connectors    (5775 2500)           R270
+JP2                                    1X03                                            SparkFun-Connectors    (5050 1225)           R180
+JP3      M02PTH                        1X02                                            SparkFun-Connectors    (4762.5 1575)         R0
+JP4      Relay Signal                  1X02/90                                         pinhead                (20 655)              R90
+JP5      5VIN                          1X02/90                                         pinhead                (20 1655)             R90
+JP6                                    1X18                                            adafruit               (2860 1165)           R90
+L1       SRR1280-101M                  SRR1280                                         RoboJackets-Inductors  (5250 2350)           R90
+LED      RGB Led Common Anode          1X04                                            pinhead                (1470 315)            R180
+PL1                                    5566-8                                          con-molex-2            (5213.07087 4430)     MR180
+Q1       SIR438DP                      POWERPAK_SO8                                    RoboJackets-Discrete   (1530 4300)           MR0
+Q2       SIR438DP                      POWERPAK_SO8                                    RoboJackets-Discrete   (1530 4300)           R0
+Q3       SIR438DP                      POWERPAK_SO8                                    RoboJackets-Discrete   (1210 4300)           MR0
+Q4       SIR438DP                      POWERPAK_SO8                                    RoboJackets-Discrete   (1210 4300)           R0
+Q5       SIR438DP                      POWERPAK_SO8                                    RoboJackets-Discrete   (890 4300)            MR0
+Q6       SIR438DP                      POWERPAK_SO8                                    RoboJackets-Discrete   (890 4300)            R0
+Q7       BJT-PNP_                      SOT-23-3                                        RoboJackets-Discrete   (4325 1030.31496)     R270
+Q8       MMBT2222A-TP                  SOT-23-3                                        RoboJackets-Discrete   (4950 895.47244)      R180
+Q9       BJT-PNP_                      SOT-23-3                                        RoboJackets-Discrete   (4788.38583 918.40551) MR0
+R.CL1    0.003, 3W                     R2512                                           rcl                    (635 4145)            R90
+R.TRP1   24k                           R0603                                           rcl                    (1075 3430)           MR180
+R1                                     R0201                                           rcl                    (2700 2435)           R180
+R1AGH    100                           R0603                                           rcl                    (1645 4125)           MR90
+R1AGL    100                           R0603                                           rcl                    (1415 4125)           R90
+R1BGH    100                           R0603                                           rcl                    (1325 4125)           MR90
+R1BGL    100                           R0603                                           rcl                    (1095 4125)           R90
+R1CGH    100                           R0603                                           rcl                    (1005 4125)           MR90
+R1CGL    100                           R0603                                           rcl                    (775 4125)            R90
+R2                                     R0402                                           rcl                    (2700 2480)           R180
+R3                                     R0603                                           rcl                    (2700 2550)           R180
+R4                                     R0805                                           rcl                    (2700 2645)           R180
+R5                                     R1206                                           rcl                    (2700 2745)           R180
+R6       330                           0603-RES                                        SparkFun-Resistors     (3169.48819 3612.20472) R270
+R7       330                           0603-RES                                        SparkFun-Resistors     (3079.92126 3612.20472) R270
+R8       330                           0603-RES                                        SparkFun-Resistors     (2989.96063 3615.55118) R270
+R9       330                           0603-RES                                        SparkFun-Resistors     (2900.7874 3612.20472) R270
+R10      330                           0603-RES                                        SparkFun-Resistors     (3169.48819 4175.19685) R270
+R11      330                           0603-RES                                        SparkFun-Resistors     (3079.92126 4175.19685) R270
+R12      330                           0603-RES                                        SparkFun-Resistors     (2990.35433 4175.19685) R270
+R13      330                           0603-RES                                        SparkFun-Resistors     (2900.7874 4175.19685) R270
+R14      1 k?                          R0402                                           rcl                    (5357.5 3485)         R270
+R15      150 k?                        R0603                                           rcl                    (4950 2680)           R90
+R16      470 k?                        R0402                                           rcl                    (5077.5 3410.25591)   R0
+R17      6.8 k?                        R0402                                           rcl                    (5078.24803 3465.25591) R180
+R18      10 k?                         R0402                                           rcl                    (5520 3482.5)         R90
+R19      10 k?                         R0402                                           rcl                    (5200 3400)           R180
+R20      1 M?                          R0402                                           rcl                    (4788.2874 3402.65748) R0
+R21      100 ?                         R0402                                           rcl                    (4826.22047 3715)     MR0
+R22      100 ?                         R0402                                           rcl                    (4879.13386 3764.2126) MR0
+R23      100 ?                         R0402                                           rcl                    (5069.72441 3773.07087) MR90
+R24      100 ?                         R0402                                           rcl                    (4990 3774.05512)     MR0
+R25      100 ?                         R0402                                           rcl                    (5281.81102 3764.2126) MR180
+R26      100 ?                         R0402                                           rcl                    (5190.11811 3719.92126) MR180
+R27      0.002 ?                       R1206                                           rcl                    (5450 3870)           MR180
+R28      0.002 ?                       R1206                                           rcl                    (5050 3870)           MR180
+R29      1.0 k?                        R0402                                           rcl                    (4600 2467.5)         R90
+R30      1.0 k?                        R0402                                           rcl                    (4600 2347.5)         R90
+R31      1.5 ?                         R0402                                           rcl                    (4550 2467.5)         R90
+R32      200 k?                        R0402                                           rcl                    (4787.5 2500)         MR180
+R33      680 ?                         R0402                                           rcl                    (4600 2725)           R270
+R34      100 k?                        R0402                                           rcl                    (4160.62992 1010.62992) R270
+R35      1 k?                          R0402                                           rcl                    (4525 1070.47244)     R180
+R36      1 k?                          R0402                                           rcl                    (4950 1062.5)         R0
+R37      100 k?                        R0402                                           rcl                    (4812.5 1062.5)       R180
+R38      1 k?                          R0402                                           rcl                    (4675 1062.5)         R0
+R39      60                            M0805                                           resistor               (670 605)             R180
+R40                                    R0805                                           resistor               (1760 255)            MR0
+RC1      2.87M 1%                      R0603                                           rcl                    (1170 3650)           R0
+RST      22-23-2021                    22-23-2021                                      con-molex              (1920 385)            R180
+S1       SWS003                        SMS-003                                         smd-special            (4362.5 1975)         R270
+S2                                     34EWMSP12M6RT                                   RoboJackets-Switches   (4520 1400)           R90
+S3       1-1415899-3                   1-1415899-3                                     RoboJackets-Switches   (5400 1200)           R270
+S4       94HCB16T                      HEX                                             RoboJackets-Switches   (3600 325)            R90
+S5       JS1300                        JS1300                                          RoboJackets-Switches   (3375 1125)           R0
+SB1      SOLDERBRIDGESB1206            SB1206                                          RoboJackets-Switches   (220 4360)            R0
+SERIAL                                 22-23-2021                                      con-molex              (1490 1605)           R180
+SJ1      JUMPER-PAD-3-2OF3_NC_BY_TRACE PAD-JUMPER-3-2OF3_NC_BY_TRACE_YES_SILK_FULL_BOX SparkFun-Passives      (4900 1075)           MR180
+SJ2      JUMPER-PAD-2-NC_BY_TRACE      PAD-JUMPER-2-NC_BY_TRACE_YES_SILK               SparkFun-Passives      (5089.37008 550)      R270
+SJ3      JUMPER-PAD-2-NC_BY_TRACE      PAD-JUMPER-2-NC_BY_TRACE_YES_SILK               SparkFun-Passives      (4877.95276 570.86614) R270
+SJ4      JUMPER-PAD-2-NC_BY_TRACE      PAD-JUMPER-2-NC_BY_TRACE_YES_SILK               SparkFun-Passives      (4432.77559 751.5748) R270
+SJ5      JUMPER-PAD-2-NC_BY_TRACE      PAD-JUMPER-2-NC_BY_TRACE_YES_SILK               SparkFun-Passives      (4751.9685 570.86614) R270
+SP1      Speaker                       PS12                                            adafruit               (2130 1705)           R270
+TCOUPLE  1X2-3.5MM                     3.5MMTERM                                       adafruit               (170 1975)            R270
+U$2      M18_                          1X18                                            SparkFun-Connectors    (3822.04724 4687.00787) R270
+U$4      MOUNTING_HOLE                 MOUNTING_HOLE                                   RoboJackets-Passive    (2363.38583 4789.37008) R180
+U$7      ANANO3.3                      ANANO3.0                                        ArduinoNano            (1590 1455)           R270
+U$9      NRF24L01ALT1                  QFN20_ALT1                                      RoboJackets-RF         (3775 1650)           R0
+U$10     NRF24L01ALT2                  QFN20_ALT2                                      RoboJackets-RF         (3800 1175)           R0
+U$11     NRF24L01SMD                   QFN20                                           RoboJackets-RF         (3775 2050)           R0
+U$12     MPU-6050-1                    QFN-24-4MM2                                     RoboJackets-Sensors    (3325 2050)           R0
+U1       IRS2336DSOIC28W               SO-28W                                          RoboJackets-PowerICs   (1250 3740)           MR0
+U2       FDMS3606AS                    PQFN-(DUAL)                                     RoboJackets-Discrete   (5450 3850)           R90
+U3       FDMS3606AS                    PQFN-(DUAL)                                     RoboJackets-Discrete   (5050 3850)           R90
+U4       FDMS3606AS                    PQFN-(DUAL)                                     RoboJackets-Discrete   (4650 3850)           R90
+VOLTREG                                78SR                                            RoboJackets-ICs        (1300 1955)           R270
+VSSSEL                                 SJ_2                                            jumper                 (1140 1735)           R180
