@@ -1,2 +1,0 @@
-![Control Board](./control.png)
-

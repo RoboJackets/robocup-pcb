@@ -3701,7 +3701,8 @@ http://www.digikey.com/product-detail/en/XC3S250E-4PQG208C/122-1483-ND/1091711</
 </device>
 </devices>
 </deviceset>
-<deviceset name="XC3S_TQ144">
+<deviceset name="XC3S*-4TQG144C">
+<description>Spartan-3E 144pin</description>
 <gates>
 <gate name="G$1" symbol="XC3S_TQ144" x="0" y="0"/>
 </gates>
@@ -3854,7 +3855,12 @@ http://www.digikey.com/product-detail/en/XC3S250E-4PQG208C/122-1483-ND/1091711</
 <connect gate="G$1" pin="9_VCCINT" pad="9"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="100E">
+<attribute name="GATES" value="100k" constant="no"/>
+</technology>
+<technology name="250E">
+<attribute name="GATES" value="250k" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
