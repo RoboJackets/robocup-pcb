@@ -3508,6 +3508,21 @@ In this library you will find integrated circuits (ICs) that are directly involv
 <wire x1="3.75" y1="-4.2" x2="3.75" y2="-4.7" width="0.3" layer="21"/>
 <wire x1="3.75" y1="-4.2" x2="-3.75" y2="-4.2" width="0.3" layer="21"/>
 </package>
+<package name="TO-PMOD-7">
+<smd name="1" x="-3.81" y="-7.305" dx="3.06" dy="0.89" layer="1" rot="R90"/>
+<smd name="2" x="-2.54" y="-7.305" dx="3.06" dy="0.89" layer="1" rot="R90"/>
+<smd name="3" x="-1.27" y="-7.305" dx="3.06" dy="0.89" layer="1" rot="R90"/>
+<smd name="4" x="0" y="-7.305" dx="3.06" dy="0.89" layer="1" rot="R90"/>
+<smd name="5" x="1.27" y="-7.305" dx="3.06" dy="0.89" layer="1" rot="R90"/>
+<smd name="6" x="2.54" y="-7.305" dx="3.06" dy="0.89" layer="1" rot="R90"/>
+<smd name="7" x="3.81" y="-7.305" dx="3.06" dy="0.89" layer="1" rot="R90"/>
+<smd name="PAD" x="0" y="0" dx="8.54" dy="5.35" layer="1" rot="R90"/>
+<wire x1="-5.08" y1="4.925" x2="5.08" y2="4.925" width="0.2" layer="21"/>
+<wire x1="5.08" y1="4.925" x2="5.08" y2="-4.925" width="0.2" layer="21"/>
+<wire x1="5.08" y1="-4.925" x2="-5.08" y2="-4.925" width="0.2" layer="21"/>
+<wire x1="-5.08" y1="-4.925" x2="-5.08" y2="4.925" width="0.2" layer="21"/>
+<text x="-5.5" y="-5" size="1" layer="25" rot="R90">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="DRV8303">
@@ -3580,6 +3595,21 @@ In this library you will find integrated circuits (ICs) that are directly involv
 <text x="-10.16" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-10.16" y="12.7" size="1.778" layer="95" align="top-left">&gt;NAME</text>
 <pin name="GND" x="15.24" y="-7.62" length="middle" rot="R180"/>
+</symbol>
+<symbol name="LMZ14201">
+<pin name="VIN" x="-17.78" y="10.16" length="middle"/>
+<pin name="GND" x="-17.78" y="-10.16" length="middle"/>
+<pin name="VOUT" x="17.78" y="10.16" length="middle" rot="R180"/>
+<pin name="FB" x="17.78" y="-7.62" length="middle" rot="R180"/>
+<pin name="EN" x="-17.78" y="5.08" length="middle"/>
+<pin name="RON" x="2.54" y="-17.78" length="middle" rot="R90"/>
+<pin name="SS" x="-2.54" y="-17.78" length="middle" rot="R90"/>
+<wire x1="-12.7" y1="12.7" x2="12.7" y2="12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="12.7" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="12.7" width="0.254" layer="94"/>
+<text x="-12.7" y="15.24" size="1.778" layer="95" align="top-left">&gt;NAME</text>
+<text x="5.08" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3659,6 +3689,27 @@ In this library you will find integrated circuits (ICs) that are directly involv
 <connect gate="G$1" pin="OUT1" pad="5 6 7 8"/>
 <connect gate="G$1" pin="OUT2" pad="1 2 3 4"/>
 <connect gate="G$1" pin="VCC" pad="17"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LMZ14201" prefix="U">
+<gates>
+<gate name="G$1" symbol="LMZ14201" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO-PMOD-7">
+<connects>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="FB" pad="6"/>
+<connect gate="G$1" pin="GND" pad="4 PAD"/>
+<connect gate="G$1" pin="RON" pad="2"/>
+<connect gate="G$1" pin="SS" pad="5"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="7"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -10723,6 +10774,9 @@ In this library you will find LEDs and other visual output devices.
 <port name="+18.5V" side="top" coord="5.08" direction="io"/>
 <port name="!FAULT" side="right" coord="5.08" direction="io"/>
 <port name="!OCTW" side="right" coord="2.54" direction="io"/>
+<port name="HALL_A" side="right" coord="-2.54" direction="io"/>
+<port name="HALL_B" side="right" coord="-5.08" direction="io"/>
+<port name="HALL_C" side="right" coord="-7.62" direction="io"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -11295,6 +11349,8 @@ In this library you will find LEDs and other visual output devices.
 <part name="SUPPLY17" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY18" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="SUPPLY19" library="RoboJackets-Supplies" deviceset="+18.5V" device=""/>
+<part name="U2" library="RoboJackets-PowerICs" deviceset="LMZ14201" device=""/>
+<part name="GND12" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11331,6 +11387,8 @@ In this library you will find LEDs and other visual output devices.
 <instance part="D1" gate="G$1" x="220.98" y="139.7"/>
 <instance part="GND11" gate="1" x="220.98" y="132.08"/>
 <instance part="SUPPLY16" gate="G$1" x="127" y="190.5"/>
+<instance part="U2" gate="G$1" x="99.06" y="116.84"/>
+<instance part="GND12" gate="1" x="78.74" y="101.6" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -11394,6 +11452,12 @@ In this library you will find LEDs and other visual output devices.
 <pinref part="D1" gate="G$1" pin="K"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 <wire x1="220.98" y1="137.16" x2="220.98" y2="134.62" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="GND"/>
+<pinref part="GND12" gate="1" pin="GND"/>
+<wire x1="81.28" y1="106.68" x2="78.74" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="106.68" x2="78.74" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VBATT" class="0">
@@ -11509,25 +11573,25 @@ In this library you will find LEDs and other visual output devices.
 <moduleinsts>
 <moduleinst name="WD1" module="WHEEL_DRIVE" x="63.5" y="139.7"/>
 <moduleinst name="WD2" module="WHEEL_DRIVE" x="63.5" y="83.82"/>
-<moduleinst name="WD3" module="WHEEL_DRIVE" x="193.04" y="83.82"/>
-<moduleinst name="WD4" module="WHEEL_DRIVE" x="193.04" y="139.7"/>
+<moduleinst name="WD3" module="WHEEL_DRIVE" x="195.58" y="83.82"/>
+<moduleinst name="WD4" module="WHEEL_DRIVE" x="195.58" y="139.7"/>
 <moduleinst name="DD1" module="DRIBBLER_DRIVE" x="127" y="139.7"/>
 </moduleinsts>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="172.72" y="0"/>
 <instance part="SUPPLY1" gate="GND" x="63.5" y="116.84"/>
-<instance part="SUPPLY2" gate="GND" x="193.04" y="116.84"/>
-<instance part="SUPPLY3" gate="GND" x="193.04" y="60.96"/>
+<instance part="SUPPLY2" gate="GND" x="195.58" y="116.84"/>
+<instance part="SUPPLY3" gate="GND" x="195.58" y="60.96"/>
 <instance part="SUPPLY4" gate="GND" x="63.5" y="60.96"/>
 <instance part="SUPPLY5" gate="G$1" x="68.58" y="162.56"/>
-<instance part="SUPPLY6" gate="G$1" x="198.12" y="162.56"/>
+<instance part="SUPPLY6" gate="G$1" x="200.66" y="162.56"/>
 <instance part="SUPPLY7" gate="G$1" x="68.58" y="106.68"/>
-<instance part="SUPPLY8" gate="G$1" x="198.12" y="106.68"/>
+<instance part="SUPPLY8" gate="G$1" x="200.66" y="106.68"/>
 <instance part="SUPPLY9" gate="P" x="58.42" y="162.56"/>
 <instance part="SUPPLY10" gate="P" x="58.42" y="106.68"/>
-<instance part="SUPPLY11" gate="P" x="187.96" y="162.56"/>
-<instance part="SUPPLY12" gate="P" x="187.96" y="106.68"/>
+<instance part="SUPPLY11" gate="P" x="190.5" y="162.56"/>
+<instance part="SUPPLY12" gate="P" x="190.5" y="106.68"/>
 <instance part="SUPPLY17" gate="GND" x="127" y="116.84"/>
 <instance part="SUPPLY18" gate="P" x="121.92" y="162.56"/>
 <instance part="SUPPLY19" gate="G$1" x="132.08" y="162.56"/>
@@ -11599,6 +11663,199 @@ In this library you will find LEDs and other visual output devices.
 <segment>
 <portref moduleinst="DD1" port="+3.3V"/>
 <pinref part="SUPPLY18" gate="P" pin="+3.3V"/>
+</segment>
+</net>
+<net name="WD1SO1" class="0">
+<segment>
+<portref moduleinst="WD1" port="SO1"/>
+<wire x1="83.82" y1="137.16" x2="86.36" y2="137.16" width="0.1524" layer="91"/>
+<label x="86.36" y="137.16" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="WD1SO2" class="0">
+<segment>
+<portref moduleinst="WD1" port="SO2"/>
+<wire x1="83.82" y1="134.62" x2="86.36" y2="134.62" width="0.1524" layer="91"/>
+<label x="86.36" y="134.62" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="WD2SO1" class="0">
+<segment>
+<portref moduleinst="WD2" port="SO1"/>
+<wire x1="83.82" y1="81.28" x2="86.36" y2="81.28" width="0.1524" layer="91"/>
+<label x="86.36" y="81.28" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="WD2SO2" class="0">
+<segment>
+<portref moduleinst="WD2" port="SO2"/>
+<wire x1="83.82" y1="78.74" x2="86.36" y2="78.74" width="0.1524" layer="91"/>
+<label x="86.36" y="78.74" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="WD4SO1" class="0">
+<segment>
+<portref moduleinst="WD4" port="SO1"/>
+<wire x1="215.9" y1="137.16" x2="218.44" y2="137.16" width="0.1524" layer="91"/>
+<label x="218.44" y="137.16" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="WD4SO2" class="0">
+<segment>
+<portref moduleinst="WD4" port="SO2"/>
+<wire x1="215.9" y1="134.62" x2="218.44" y2="134.62" width="0.1524" layer="91"/>
+<label x="218.44" y="134.62" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="WD3SO1" class="0">
+<segment>
+<portref moduleinst="WD3" port="SO1"/>
+<wire x1="215.9" y1="81.28" x2="218.44" y2="81.28" width="0.1524" layer="91"/>
+<label x="218.44" y="81.28" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="WD3SO2" class="0">
+<segment>
+<portref moduleinst="WD3" port="SO2"/>
+<wire x1="215.9" y1="78.74" x2="218.44" y2="78.74" width="0.1524" layer="91"/>
+<label x="218.44" y="78.74" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="WD1!CS" class="0">
+<segment>
+<portref moduleinst="WD1" port="!CS"/>
+<wire x1="43.18" y1="134.62" x2="40.64" y2="134.62" width="0.1524" layer="91"/>
+<label x="40.64" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="WD2!CS" class="0">
+<segment>
+<portref moduleinst="WD2" port="!CS"/>
+<wire x1="43.18" y1="78.74" x2="40.64" y2="78.74" width="0.1524" layer="91"/>
+<label x="40.64" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="DD1!CS" class="0">
+<segment>
+<portref moduleinst="DD1" port="!CS"/>
+<wire x1="106.68" y1="134.62" x2="104.14" y2="134.62" width="0.1524" layer="91"/>
+<label x="104.14" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="WD4!CS" class="0">
+<segment>
+<portref moduleinst="WD4" port="!CS"/>
+<wire x1="175.26" y1="134.62" x2="172.72" y2="134.62" width="0.1524" layer="91"/>
+<label x="172.72" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="WD3!CS" class="0">
+<segment>
+<portref moduleinst="WD3" port="!CS"/>
+<wire x1="175.26" y1="78.74" x2="172.72" y2="78.74" width="0.1524" layer="91"/>
+<label x="172.72" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="MISO" class="0">
+<segment>
+<portref moduleinst="WD1" port="MISO"/>
+<wire x1="43.18" y1="132.08" x2="40.64" y2="132.08" width="0.1524" layer="91"/>
+<label x="40.64" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="43.18" y1="76.2" x2="40.64" y2="76.2" width="0.1524" layer="91"/>
+<label x="40.64" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
+<portref moduleinst="WD2" port="MISO"/>
+</segment>
+<segment>
+<wire x1="106.68" y1="132.08" x2="104.14" y2="132.08" width="0.1524" layer="91"/>
+<label x="104.14" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
+<portref moduleinst="DD1" port="MISO"/>
+</segment>
+<segment>
+<wire x1="175.26" y1="132.08" x2="172.72" y2="132.08" width="0.1524" layer="91"/>
+<label x="172.72" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
+<portref moduleinst="WD4" port="MISO"/>
+</segment>
+<segment>
+<wire x1="175.26" y1="76.2" x2="172.72" y2="76.2" width="0.1524" layer="91"/>
+<label x="172.72" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
+<portref moduleinst="WD3" port="MISO"/>
+</segment>
+</net>
+<net name="MOSI" class="0">
+<segment>
+<portref moduleinst="WD1" port="MOSI"/>
+<wire x1="43.18" y1="129.54" x2="40.64" y2="129.54" width="0.1524" layer="91"/>
+<label x="40.64" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="43.18" y1="73.66" x2="40.64" y2="73.66" width="0.1524" layer="91"/>
+<label x="40.64" y="73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
+<portref moduleinst="WD2" port="MOSI"/>
+</segment>
+<segment>
+<wire x1="106.68" y1="129.54" x2="104.14" y2="129.54" width="0.1524" layer="91"/>
+<label x="104.14" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
+<portref moduleinst="DD1" port="MOSI"/>
+</segment>
+<segment>
+<wire x1="175.26" y1="129.54" x2="172.72" y2="129.54" width="0.1524" layer="91"/>
+<label x="172.72" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
+<portref moduleinst="WD4" port="MOSI"/>
+</segment>
+<segment>
+<wire x1="175.26" y1="73.66" x2="172.72" y2="73.66" width="0.1524" layer="91"/>
+<label x="172.72" y="73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
+<portref moduleinst="WD3" port="MOSI"/>
+</segment>
+</net>
+<net name="SCK" class="0">
+<segment>
+<portref moduleinst="WD1" port="SCK"/>
+<wire x1="43.18" y1="127" x2="40.64" y2="127" width="0.1524" layer="91"/>
+<label x="40.64" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="43.18" y1="71.12" x2="40.64" y2="71.12" width="0.1524" layer="91"/>
+<label x="40.64" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
+<portref moduleinst="WD2" port="SCK"/>
+</segment>
+<segment>
+<wire x1="106.68" y1="127" x2="104.14" y2="127" width="0.1524" layer="91"/>
+<label x="104.14" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
+<portref moduleinst="DD1" port="SCK"/>
+</segment>
+<segment>
+<wire x1="175.26" y1="127" x2="172.72" y2="127" width="0.1524" layer="91"/>
+<label x="172.72" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
+<portref moduleinst="WD4" port="SCK"/>
+</segment>
+<segment>
+<wire x1="175.26" y1="71.12" x2="172.72" y2="71.12" width="0.1524" layer="91"/>
+<label x="172.72" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
+<portref moduleinst="WD3" port="SCK"/>
+</segment>
+</net>
+<net name="DD1_HALL_A" class="0">
+<segment>
+<portref moduleinst="DD1" port="HALL_A"/>
+<wire x1="147.32" y1="137.16" x2="149.86" y2="137.16" width="0.1524" layer="91"/>
+<label x="149.86" y="137.16" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="DD1_HALL_B" class="0">
+<segment>
+<portref moduleinst="DD1" port="HALL_B"/>
+<wire x1="147.32" y1="134.62" x2="149.86" y2="134.62" width="0.1524" layer="91"/>
+<label x="149.86" y="134.62" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="DD1_HALL_C" class="0">
+<segment>
+<portref moduleinst="DD1" port="HALL_C"/>
+<wire x1="147.32" y1="132.08" x2="149.86" y2="132.08" width="0.1524" layer="91"/>
+<label x="149.86" y="132.08" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
