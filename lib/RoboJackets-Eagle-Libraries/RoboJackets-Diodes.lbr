@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="8.0.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2837,7 +2837,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ACGRBT30X-HF" prefix="D">
+<deviceset name="ACGRBT30*-HF" prefix="D">
 <gates>
 <gate name="G$1" symbol="D" x="0" y="0"/>
 </gates>
@@ -2848,7 +2848,9 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="C" pad="K"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="3">
+<attribute name="VR-MAX" value="600V" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
