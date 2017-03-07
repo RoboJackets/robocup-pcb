@@ -3570,6 +3570,158 @@ http://www.digikey.com/product-detail/en/XC3S250E-4PQG208C/122-1483-ND/1091711</
 <wire x1="-10.16" y1="-17.78" x2="7.62" y2="-17.78" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="12.7" x2="7.62" y2="12.7" width="0.254" layer="94"/>
 </symbol>
+<symbol name="XC3S250_TQ144">
+<wire x1="-58.42" y1="-58.42" x2="60.96" y2="-58.42" width="0.254" layer="94"/>
+<wire x1="60.96" y1="-58.42" x2="60.96" y2="58.42" width="0.254" layer="94"/>
+<wire x1="60.96" y1="58.42" x2="-58.42" y2="58.42" width="0.254" layer="94"/>
+<wire x1="-58.42" y1="58.42" x2="-58.42" y2="-58.42" width="0.254" layer="94"/>
+<pin name="1_PROGB" x="-43.18" y="-63.5" length="middle" rot="R90"/>
+<pin name="2_IOL01P_3" x="-40.64" y="-63.5" length="middle" swaplevel="1" rot="R90"/>
+<pin name="3_IOL01N_3" x="-38.1" y="-63.5" length="middle" swaplevel="1" rot="R90"/>
+<pin name="4_IOL02P_3" x="-35.56" y="-63.5" length="middle" swaplevel="1" rot="R90"/>
+<pin name="5_IOL02N_3/VREF_3" x="-33.02" y="-63.5" length="middle" swaplevel="1" rot="R90"/>
+<pin name="6_IP" x="-30.48" y="-63.5" length="middle" swaplevel="1" rot="R90"/>
+<pin name="7_IOL03P_3" x="-27.94" y="-63.5" length="middle" swaplevel="1" rot="R90"/>
+<pin name="8_IOL03N_3" x="-25.4" y="-63.5" length="middle" swaplevel="1" rot="R90"/>
+<pin name="9_VCCINT" x="-22.86" y="-63.5" length="middle" rot="R90"/>
+<pin name="10_IP" x="-20.32" y="-63.5" length="middle" swaplevel="1" rot="R90"/>
+<pin name="11_GND" x="-17.78" y="-63.5" length="middle" rot="R90"/>
+<pin name="12_IP/VREF_3" x="-15.24" y="-63.5" length="middle" swaplevel="1" rot="R90"/>
+<pin name="13_VCCO_3" x="-12.7" y="-63.5" length="middle" rot="R90"/>
+<pin name="14_IO_L04P_3/LHCLK0" x="-10.16" y="-63.5" length="middle" swaplevel="1" rot="R90"/>
+<pin name="15_IO_L04N_3/LHCLK1" x="-7.62" y="-63.5" length="middle" swaplevel="1" rot="R90"/>
+<pin name="16_IO_L05P_3/LHCLK2" x="-5.08" y="-63.5" length="middle" swaplevel="1" rot="R90"/>
+<pin name="17_IO_L05N_3/LHCLK3" x="-2.54" y="-63.5" length="middle" swaplevel="1" rot="R90"/>
+<pin name="18_IP" x="0" y="-63.5" length="middle" swaplevel="1" rot="R90"/>
+<pin name="19_GND" x="2.54" y="-63.5" length="middle" rot="R90"/>
+<pin name="20_IO_L06P_3/LHCLK4" x="5.08" y="-63.5" length="middle" swaplevel="1" rot="R90"/>
+<pin name="21_IO_L06N_3/LHCLK5" x="7.62" y="-63.5" length="middle" swaplevel="1" rot="R90"/>
+<pin name="22_IO_L07P_3/LHCLK6" x="10.16" y="-63.5" length="middle" swaplevel="1" rot="R90"/>
+<pin name="23_IO_L07N_3/LHCLK7" x="12.7" y="-63.5" length="middle" swaplevel="1" rot="R90"/>
+<pin name="24_IP" x="15.24" y="-63.5" length="middle" swaplevel="1" rot="R90"/>
+<pin name="25_IO_L08P_3" x="17.78" y="-63.5" length="middle" swaplevel="1" rot="R90"/>
+<pin name="26_IO_L08N_3" x="20.32" y="-63.5" length="middle" swaplevel="1" rot="R90"/>
+<pin name="27_GND" x="22.86" y="-63.5" length="middle" rot="R90"/>
+<pin name="28_VCCO_3" x="25.4" y="-63.5" length="middle" rot="R90"/>
+<pin name="29_IP" x="27.94" y="-63.5" length="middle" swaplevel="1" rot="R90"/>
+<pin name="30_VCCAUX" x="30.48" y="-63.5" length="middle" rot="R90"/>
+<pin name="31_IO/VREF_3" x="33.02" y="-63.5" length="middle" swaplevel="1" rot="R90"/>
+<pin name="32_IO_L09P_3" x="35.56" y="-63.5" length="middle" swaplevel="1" rot="R90"/>
+<pin name="33_IO_L09N_3" x="38.1" y="-63.5" length="middle" swaplevel="1" rot="R90"/>
+<pin name="34_IO_L10P_3" x="40.64" y="-63.5" length="middle" swaplevel="1" rot="R90"/>
+<pin name="35_IO_L10N_3" x="43.18" y="-63.5" length="middle" swaplevel="1" rot="R90"/>
+<pin name="36_IP" x="45.72" y="-63.5" length="middle" swaplevel="1" rot="R90"/>
+<pin name="37_GND" x="66.04" y="-43.18" length="middle" rot="R180"/>
+<pin name="38_IP" x="66.04" y="-40.64" length="middle" swaplevel="1" rot="R180"/>
+<pin name="39_IO_L01P_2/CSO_B" x="66.04" y="-38.1" length="middle" swaplevel="1" rot="R180"/>
+<pin name="40_IO_L01N_2/INIT_B" x="66.04" y="-35.56" length="middle" swaplevel="1" rot="R180"/>
+<pin name="41_IP" x="66.04" y="-33.02" length="middle" swaplevel="1" rot="R180"/>
+<pin name="42_VCCO_2" x="66.04" y="-30.48" length="middle" rot="R180"/>
+<pin name="43_IO_L02P_2/DOUT/BUSY" x="66.04" y="-27.94" length="middle" swaplevel="1" rot="R180"/>
+<pin name="44_IO_L02N_2/MOSI/CSI_B" x="66.04" y="-25.4" length="middle" swaplevel="1" rot="R180"/>
+<pin name="45_VCCINT" x="66.04" y="-22.86" length="middle" rot="R180"/>
+<pin name="46_GND" x="66.04" y="-20.32" length="middle" rot="R180"/>
+<pin name="47_IP_L03P_2" x="66.04" y="-17.78" length="middle" swaplevel="1" rot="R180"/>
+<pin name="48_IP_L03N_2/VREF_2" x="66.04" y="-15.24" length="middle" swaplevel="1" rot="R180"/>
+<pin name="49_VCCO_2" x="66.04" y="-12.7" length="middle" rot="R180"/>
+<pin name="50_IO_L04P_2/D7/GCLK12" x="66.04" y="-10.16" length="middle" swaplevel="1" rot="R180"/>
+<pin name="51_IO_L04N_2/D6/GCLK13" x="66.04" y="-7.62" length="middle" swaplevel="1" rot="R180"/>
+<pin name="52_IO/D5" x="66.04" y="-5.08" length="middle" swaplevel="1" rot="R180"/>
+<pin name="53_IO_L05P_2/D4/GCLK14" x="66.04" y="-2.54" length="middle" swaplevel="1" rot="R180"/>
+<pin name="54_IO_L05N_2/D3/GCLK15" x="66.04" y="0" length="middle" swaplevel="1" rot="R180"/>
+<pin name="55_GND" x="66.04" y="2.54" length="middle" rot="R180"/>
+<pin name="56_IP_L06P_2/RDWR_B/GCLK0" x="66.04" y="5.08" length="middle" swaplevel="1" rot="R180"/>
+<pin name="57_IP_L06N_2/M2/GCLK1" x="66.04" y="7.62" length="middle" swaplevel="1" rot="R180"/>
+<pin name="58_IO_L07P_2/D2/GCLK2" x="66.04" y="10.16" length="middle" swaplevel="1" rot="R180"/>
+<pin name="59_IO_L07N_2/D1/GCLK3" x="66.04" y="12.7" length="middle" swaplevel="1" rot="R180"/>
+<pin name="60_IO/M1" x="66.04" y="15.24" length="middle" swaplevel="1" rot="R180"/>
+<pin name="61_GND" x="66.04" y="17.78" length="middle" rot="R180"/>
+<pin name="62_IO_L08P_2/M0" x="66.04" y="20.32" length="middle" swaplevel="1" rot="R180"/>
+<pin name="63_IO_L08N_2/DIN/D0" x="66.04" y="22.86" length="middle" swaplevel="1" rot="R180"/>
+<pin name="64_VCCO_2" x="66.04" y="25.4" length="middle" rot="R180"/>
+<pin name="65_VCCAUX" x="66.04" y="27.94" length="middle" rot="R180"/>
+<pin name="66_IO/VREF_2" x="66.04" y="30.48" length="middle" swaplevel="1" rot="R180"/>
+<pin name="67_IO_L09P_2/VS2/A19" x="66.04" y="33.02" length="middle" swaplevel="1" rot="R180"/>
+<pin name="68_IO_L09N_2/VS1/A18" x="66.04" y="35.56" length="middle" swaplevel="1" rot="R180"/>
+<pin name="69_IP" x="66.04" y="38.1" length="middle" swaplevel="1" rot="R180"/>
+<pin name="70_IO_L10P_2/VS0/A17" x="66.04" y="40.64" length="middle" swaplevel="1" rot="R180"/>
+<pin name="71_IO_L10N_2/CCLK" x="66.04" y="43.18" length="middle" rot="R180"/>
+<pin name="72_DONE" x="66.04" y="45.72" length="middle" rot="R180"/>
+<pin name="73_GND" x="45.72" y="63.5" length="middle" rot="R270"/>
+<pin name="74_IO_L01P_1/A16" x="43.18" y="63.5" length="middle" swaplevel="1" rot="R270"/>
+<pin name="75_IO_L01N_1/A15" x="40.64" y="63.5" length="middle" swaplevel="1" rot="R270"/>
+<pin name="76_IO_L02P_1/A14" x="38.1" y="63.5" length="middle" swaplevel="1" rot="R270"/>
+<pin name="77_IO_L02N_1/A13" x="35.56" y="63.5" length="middle" swaplevel="1" rot="R270"/>
+<pin name="78_IP" x="33.02" y="63.5" length="middle" swaplevel="1" rot="R270"/>
+<pin name="79_VCCO_1" x="30.48" y="63.5" length="middle" rot="R270"/>
+<pin name="80_VCCINT" x="27.94" y="63.5" length="middle" rot="R270"/>
+<pin name="81_IO_L03P_1/A12" x="25.4" y="63.5" length="middle" swaplevel="1" rot="R270"/>
+<pin name="82_IO_L03N_1/A11" x="22.86" y="63.5" length="middle" swaplevel="1" rot="R270"/>
+<pin name="83_IO/VREF_1" x="20.32" y="63.5" length="middle" rot="R270"/>
+<pin name="84_IP" x="17.78" y="63.5" length="middle" swaplevel="1" rot="R270"/>
+<pin name="85_IO_L04P_1/A10/RHCLK0" x="15.24" y="63.5" length="middle" swaplevel="1" rot="R270"/>
+<pin name="86_IO_L04N_1/A9/RHCLK1" x="12.7" y="63.5" length="middle" swaplevel="1" rot="R270"/>
+<pin name="87_IO_L05P_1/A8/RHCLK2" x="10.16" y="63.5" length="middle" swaplevel="1" rot="R270"/>
+<pin name="88_IO_L05N_1/A7/RHCLK3" x="7.62" y="63.5" length="middle" swaplevel="1" rot="R270"/>
+<pin name="89_IP" x="5.08" y="63.5" length="middle" swaplevel="1" rot="R270"/>
+<pin name="90_GND" x="2.54" y="63.5" length="middle" rot="R270"/>
+<pin name="91_IO_L06P_1/A6/RHCLK4" x="0" y="63.5" length="middle" swaplevel="1" rot="R270"/>
+<pin name="92_IO_L06N_1/A5/RHCLK5" x="-2.54" y="63.5" length="middle" swaplevel="1" rot="R270"/>
+<pin name="93_IO_L07P_1/A4/RHCLK6" x="-5.08" y="63.5" length="middle" swaplevel="1" rot="R270"/>
+<pin name="94_IO_L07N_1/A3/RHCLK7" x="-7.62" y="63.5" length="middle" swaplevel="1" rot="R270"/>
+<pin name="95_IP/VREF_1" x="-10.16" y="63.5" length="middle" swaplevel="1" rot="R270"/>
+<pin name="96_IO_L08P_1/A2" x="-12.7" y="63.5" length="middle" swaplevel="1" rot="R270"/>
+<pin name="97_IO_L08N_1/A1" x="-15.24" y="63.5" length="middle" swaplevel="1" rot="R270"/>
+<pin name="98_IO/A0" x="-17.78" y="63.5" length="middle" swaplevel="1" rot="R270"/>
+<pin name="99_GND" x="-20.32" y="63.5" length="middle" rot="R270"/>
+<pin name="100_VCCO_1" x="-22.86" y="63.5" length="middle" rot="R270"/>
+<pin name="101_IP" x="-25.4" y="63.5" length="middle" swaplevel="1" rot="R270"/>
+<pin name="102_VCCAUX" x="-27.94" y="63.5" length="middle" rot="R270"/>
+<pin name="103_IO_L09P_1/HDC" x="-30.48" y="63.5" length="middle" swaplevel="1" rot="R270"/>
+<pin name="104_IO_L09N_1/LDC0" x="-33.02" y="63.5" length="middle" swaplevel="1" rot="R270"/>
+<pin name="105_IO_L10P_1/LDC1" x="-35.56" y="63.5" length="middle" swaplevel="1" rot="R270"/>
+<pin name="106_IO_L10N_1/LDC2" x="-38.1" y="63.5" length="middle" swaplevel="1" rot="R270"/>
+<pin name="107_IP" x="-40.64" y="63.5" length="middle" swaplevel="1" rot="R270"/>
+<pin name="108_TMS" x="-43.18" y="63.5" length="middle" rot="R270"/>
+<pin name="109_TDO" x="-63.5" y="45.72" length="middle"/>
+<pin name="110_TCK" x="-63.5" y="43.18" length="middle"/>
+<pin name="111_IP" x="-63.5" y="40.64" length="middle" swaplevel="1"/>
+<pin name="112_IO_L01P_0" x="-63.5" y="38.1" length="middle" swaplevel="1"/>
+<pin name="113_IO_L01N_0" x="-63.5" y="35.56" length="middle" swaplevel="1"/>
+<pin name="114_IP" x="-63.5" y="33.02" length="middle" swaplevel="1"/>
+<pin name="115_VCCINT" x="-63.5" y="30.48" length="middle"/>
+<pin name="116_IO_L02P_0" x="-63.5" y="27.94" length="middle" swaplevel="1"/>
+<pin name="117_IO_L02N_0" x="-63.5" y="25.4" length="middle" swaplevel="1"/>
+<pin name="118_GND" x="-63.5" y="22.86" length="middle"/>
+<pin name="119_IP_L03P_0" x="-63.5" y="20.32" length="middle" swaplevel="1"/>
+<pin name="120_IP_L03N_0" x="-63.5" y="17.78" length="middle" swaplevel="1"/>
+<pin name="121_VCCO_0" x="-63.5" y="15.24" length="middle"/>
+<pin name="122_IO_L04P_0/GCLK4" x="-63.5" y="12.7" length="middle" swaplevel="1"/>
+<pin name="123_IO_L04N_0/GCLK5" x="-63.5" y="10.16" length="middle" swaplevel="1"/>
+<pin name="124_IO/VREF_0" x="-63.5" y="7.62" length="middle" swaplevel="1"/>
+<pin name="125_IO_L05P_0/GCLK6" x="-63.5" y="5.08" length="middle" swaplevel="1"/>
+<pin name="126_IO_L05N_0/GCLK7" x="-63.5" y="2.54" length="middle" swaplevel="1"/>
+<pin name="127_GND" x="-63.5" y="0" length="middle"/>
+<pin name="128_IP_L06P_0/GCLK8" x="-63.5" y="-2.54" length="middle" swaplevel="1"/>
+<pin name="129_IP_L06N_0/GCLK9" x="-63.5" y="-5.08" length="middle" swaplevel="1"/>
+<pin name="130_IO_L07P_0/GCLK10" x="-63.5" y="-7.62" length="middle" swaplevel="1"/>
+<pin name="131_IO_L07N_0/GCLK11" x="-63.5" y="-10.16" length="middle" swaplevel="1"/>
+<pin name="132_IO" x="-63.5" y="-12.7" length="middle" swaplevel="1"/>
+<pin name="133_GND" x="-63.5" y="-15.24" length="middle"/>
+<pin name="134_IO_L08P_0" x="-63.5" y="-17.78" length="middle" swaplevel="1"/>
+<pin name="135_IO_L08N_0/VREF_0" x="-63.5" y="-20.32" length="middle" swaplevel="1"/>
+<pin name="136_IP" x="-63.5" y="-22.86" length="middle" swaplevel="1"/>
+<pin name="137_VCCAUX" x="-63.5" y="-25.4" length="middle"/>
+<pin name="138_VCCO_0" x="-63.5" y="-27.94" length="middle"/>
+<pin name="139_IO_L09P_0" x="-63.5" y="-30.48" length="middle" swaplevel="1"/>
+<pin name="140_IO_L09N_0" x="-63.5" y="-33.02" length="middle" swaplevel="1"/>
+<pin name="141_IP" x="-63.5" y="-35.56" length="middle" swaplevel="1"/>
+<pin name="142_IO_L10P_0" x="-63.5" y="-38.1" length="middle" swaplevel="1"/>
+<pin name="143_IO_L10N_0/HSWAP" x="-63.5" y="-40.64" length="middle" swaplevel="1"/>
+<pin name="144_TDI" x="-63.5" y="-43.18" length="middle"/>
+<text x="0" y="2.54" size="1.778" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-5.08" size="1.778" layer="95" align="bottom-center">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="LM2734" prefix="U">
@@ -4060,7 +4212,7 @@ http://www.digikey.com/product-detail/en/XC3S250E-4PQG208C/122-1483-ND/1091711</
 </device>
 </devices>
 </deviceset>
-<deviceset name="XC3S*-4TQG144C">
+<deviceset name="XC3S100-*">
 <description>Spartan-3E 144pin</description>
 <gates>
 <gate name="G$1" symbol="XC3S_TQ144" x="0" y="0"/>
@@ -4214,11 +4366,8 @@ http://www.digikey.com/product-detail/en/XC3S250E-4PQG208C/122-1483-ND/1091711</
 <connect gate="G$1" pin="9_VCCINT" pad="9"/>
 </connects>
 <technologies>
-<technology name="100E">
-<attribute name="GATES" value="100k" constant="no"/>
-</technology>
-<technology name="250E">
-<attribute name="GATES" value="250k" constant="no"/>
+<technology name="">
+<attribute name="GATES" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -5389,6 +5538,167 @@ http://www.digikey.com/product-detail/en/XC3S250E-4PQG208C/122-1483-ND/1091711</
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="XC3S250E-4TQG144C">
+<description>Spartan-3E 144pin</description>
+<gates>
+<gate name="G$1" symbol="XC3S250_TQ144" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TQFP144">
+<connects>
+<connect gate="G$1" pin="100_VCCO_1" pad="100"/>
+<connect gate="G$1" pin="101_IP" pad="101"/>
+<connect gate="G$1" pin="102_VCCAUX" pad="102"/>
+<connect gate="G$1" pin="103_IO_L09P_1/HDC" pad="103"/>
+<connect gate="G$1" pin="104_IO_L09N_1/LDC0" pad="104"/>
+<connect gate="G$1" pin="105_IO_L10P_1/LDC1" pad="105"/>
+<connect gate="G$1" pin="106_IO_L10N_1/LDC2" pad="106"/>
+<connect gate="G$1" pin="107_IP" pad="107"/>
+<connect gate="G$1" pin="108_TMS" pad="108"/>
+<connect gate="G$1" pin="109_TDO" pad="109"/>
+<connect gate="G$1" pin="10_IP" pad="10"/>
+<connect gate="G$1" pin="110_TCK" pad="110"/>
+<connect gate="G$1" pin="111_IP" pad="111"/>
+<connect gate="G$1" pin="112_IO_L01P_0" pad="112"/>
+<connect gate="G$1" pin="113_IO_L01N_0" pad="113"/>
+<connect gate="G$1" pin="114_IP" pad="114"/>
+<connect gate="G$1" pin="115_VCCINT" pad="115"/>
+<connect gate="G$1" pin="116_IO_L02P_0" pad="116"/>
+<connect gate="G$1" pin="117_IO_L02N_0" pad="117"/>
+<connect gate="G$1" pin="118_GND" pad="118"/>
+<connect gate="G$1" pin="119_IP_L03P_0" pad="119"/>
+<connect gate="G$1" pin="11_GND" pad="11"/>
+<connect gate="G$1" pin="120_IP_L03N_0" pad="120"/>
+<connect gate="G$1" pin="121_VCCO_0" pad="121"/>
+<connect gate="G$1" pin="122_IO_L04P_0/GCLK4" pad="122"/>
+<connect gate="G$1" pin="123_IO_L04N_0/GCLK5" pad="123"/>
+<connect gate="G$1" pin="124_IO/VREF_0" pad="124"/>
+<connect gate="G$1" pin="125_IO_L05P_0/GCLK6" pad="125"/>
+<connect gate="G$1" pin="126_IO_L05N_0/GCLK7" pad="126"/>
+<connect gate="G$1" pin="127_GND" pad="127"/>
+<connect gate="G$1" pin="128_IP_L06P_0/GCLK8" pad="128"/>
+<connect gate="G$1" pin="129_IP_L06N_0/GCLK9" pad="129"/>
+<connect gate="G$1" pin="12_IP/VREF_3" pad="12"/>
+<connect gate="G$1" pin="130_IO_L07P_0/GCLK10" pad="130"/>
+<connect gate="G$1" pin="131_IO_L07N_0/GCLK11" pad="131"/>
+<connect gate="G$1" pin="132_IO" pad="132"/>
+<connect gate="G$1" pin="133_GND" pad="133"/>
+<connect gate="G$1" pin="134_IO_L08P_0" pad="134"/>
+<connect gate="G$1" pin="135_IO_L08N_0/VREF_0" pad="135"/>
+<connect gate="G$1" pin="136_IP" pad="136"/>
+<connect gate="G$1" pin="137_VCCAUX" pad="137"/>
+<connect gate="G$1" pin="138_VCCO_0" pad="138"/>
+<connect gate="G$1" pin="139_IO_L09P_0" pad="139"/>
+<connect gate="G$1" pin="13_VCCO_3" pad="13"/>
+<connect gate="G$1" pin="140_IO_L09N_0" pad="140"/>
+<connect gate="G$1" pin="141_IP" pad="141"/>
+<connect gate="G$1" pin="142_IO_L10P_0" pad="142"/>
+<connect gate="G$1" pin="143_IO_L10N_0/HSWAP" pad="143"/>
+<connect gate="G$1" pin="144_TDI" pad="144"/>
+<connect gate="G$1" pin="14_IO_L04P_3/LHCLK0" pad="14"/>
+<connect gate="G$1" pin="15_IO_L04N_3/LHCLK1" pad="15"/>
+<connect gate="G$1" pin="16_IO_L05P_3/LHCLK2" pad="16"/>
+<connect gate="G$1" pin="17_IO_L05N_3/LHCLK3" pad="17"/>
+<connect gate="G$1" pin="18_IP" pad="18"/>
+<connect gate="G$1" pin="19_GND" pad="19"/>
+<connect gate="G$1" pin="1_PROGB" pad="1"/>
+<connect gate="G$1" pin="20_IO_L06P_3/LHCLK4" pad="20"/>
+<connect gate="G$1" pin="21_IO_L06N_3/LHCLK5" pad="21"/>
+<connect gate="G$1" pin="22_IO_L07P_3/LHCLK6" pad="22"/>
+<connect gate="G$1" pin="23_IO_L07N_3/LHCLK7" pad="23"/>
+<connect gate="G$1" pin="24_IP" pad="24"/>
+<connect gate="G$1" pin="25_IO_L08P_3" pad="25"/>
+<connect gate="G$1" pin="26_IO_L08N_3" pad="26"/>
+<connect gate="G$1" pin="27_GND" pad="27"/>
+<connect gate="G$1" pin="28_VCCO_3" pad="28"/>
+<connect gate="G$1" pin="29_IP" pad="29"/>
+<connect gate="G$1" pin="2_IOL01P_3" pad="2"/>
+<connect gate="G$1" pin="30_VCCAUX" pad="30"/>
+<connect gate="G$1" pin="31_IO/VREF_3" pad="31"/>
+<connect gate="G$1" pin="32_IO_L09P_3" pad="32"/>
+<connect gate="G$1" pin="33_IO_L09N_3" pad="33"/>
+<connect gate="G$1" pin="34_IO_L10P_3" pad="34"/>
+<connect gate="G$1" pin="35_IO_L10N_3" pad="35"/>
+<connect gate="G$1" pin="36_IP" pad="36"/>
+<connect gate="G$1" pin="37_GND" pad="37"/>
+<connect gate="G$1" pin="38_IP" pad="38"/>
+<connect gate="G$1" pin="39_IO_L01P_2/CSO_B" pad="39"/>
+<connect gate="G$1" pin="3_IOL01N_3" pad="3"/>
+<connect gate="G$1" pin="40_IO_L01N_2/INIT_B" pad="40"/>
+<connect gate="G$1" pin="41_IP" pad="41"/>
+<connect gate="G$1" pin="42_VCCO_2" pad="42"/>
+<connect gate="G$1" pin="43_IO_L02P_2/DOUT/BUSY" pad="43"/>
+<connect gate="G$1" pin="44_IO_L02N_2/MOSI/CSI_B" pad="44"/>
+<connect gate="G$1" pin="45_VCCINT" pad="45"/>
+<connect gate="G$1" pin="46_GND" pad="46"/>
+<connect gate="G$1" pin="47_IP_L03P_2" pad="47"/>
+<connect gate="G$1" pin="48_IP_L03N_2/VREF_2" pad="48"/>
+<connect gate="G$1" pin="49_VCCO_2" pad="49"/>
+<connect gate="G$1" pin="4_IOL02P_3" pad="4"/>
+<connect gate="G$1" pin="50_IO_L04P_2/D7/GCLK12" pad="50"/>
+<connect gate="G$1" pin="51_IO_L04N_2/D6/GCLK13" pad="51"/>
+<connect gate="G$1" pin="52_IO/D5" pad="52"/>
+<connect gate="G$1" pin="53_IO_L05P_2/D4/GCLK14" pad="53"/>
+<connect gate="G$1" pin="54_IO_L05N_2/D3/GCLK15" pad="54"/>
+<connect gate="G$1" pin="55_GND" pad="55"/>
+<connect gate="G$1" pin="56_IP_L06P_2/RDWR_B/GCLK0" pad="56"/>
+<connect gate="G$1" pin="57_IP_L06N_2/M2/GCLK1" pad="57"/>
+<connect gate="G$1" pin="58_IO_L07P_2/D2/GCLK2" pad="58"/>
+<connect gate="G$1" pin="59_IO_L07N_2/D1/GCLK3" pad="59"/>
+<connect gate="G$1" pin="5_IOL02N_3/VREF_3" pad="5"/>
+<connect gate="G$1" pin="60_IO/M1" pad="60"/>
+<connect gate="G$1" pin="61_GND" pad="61"/>
+<connect gate="G$1" pin="62_IO_L08P_2/M0" pad="62"/>
+<connect gate="G$1" pin="63_IO_L08N_2/DIN/D0" pad="63"/>
+<connect gate="G$1" pin="64_VCCO_2" pad="64"/>
+<connect gate="G$1" pin="65_VCCAUX" pad="65"/>
+<connect gate="G$1" pin="66_IO/VREF_2" pad="66"/>
+<connect gate="G$1" pin="67_IO_L09P_2/VS2/A19" pad="67"/>
+<connect gate="G$1" pin="68_IO_L09N_2/VS1/A18" pad="68"/>
+<connect gate="G$1" pin="69_IP" pad="69"/>
+<connect gate="G$1" pin="6_IP" pad="6"/>
+<connect gate="G$1" pin="70_IO_L10P_2/VS0/A17" pad="70"/>
+<connect gate="G$1" pin="71_IO_L10N_2/CCLK" pad="71"/>
+<connect gate="G$1" pin="72_DONE" pad="72"/>
+<connect gate="G$1" pin="73_GND" pad="73"/>
+<connect gate="G$1" pin="74_IO_L01P_1/A16" pad="74"/>
+<connect gate="G$1" pin="75_IO_L01N_1/A15" pad="75"/>
+<connect gate="G$1" pin="76_IO_L02P_1/A14" pad="76"/>
+<connect gate="G$1" pin="77_IO_L02N_1/A13" pad="77"/>
+<connect gate="G$1" pin="78_IP" pad="78"/>
+<connect gate="G$1" pin="79_VCCO_1" pad="79"/>
+<connect gate="G$1" pin="7_IOL03P_3" pad="7"/>
+<connect gate="G$1" pin="80_VCCINT" pad="80"/>
+<connect gate="G$1" pin="81_IO_L03P_1/A12" pad="81"/>
+<connect gate="G$1" pin="82_IO_L03N_1/A11" pad="82"/>
+<connect gate="G$1" pin="83_IO/VREF_1" pad="83"/>
+<connect gate="G$1" pin="84_IP" pad="84"/>
+<connect gate="G$1" pin="85_IO_L04P_1/A10/RHCLK0" pad="85"/>
+<connect gate="G$1" pin="86_IO_L04N_1/A9/RHCLK1" pad="86"/>
+<connect gate="G$1" pin="87_IO_L05P_1/A8/RHCLK2" pad="87"/>
+<connect gate="G$1" pin="88_IO_L05N_1/A7/RHCLK3" pad="88"/>
+<connect gate="G$1" pin="89_IP" pad="89"/>
+<connect gate="G$1" pin="8_IOL03N_3" pad="8"/>
+<connect gate="G$1" pin="90_GND" pad="90"/>
+<connect gate="G$1" pin="91_IO_L06P_1/A6/RHCLK4" pad="91"/>
+<connect gate="G$1" pin="92_IO_L06N_1/A5/RHCLK5" pad="92"/>
+<connect gate="G$1" pin="93_IO_L07P_1/A4/RHCLK6" pad="93"/>
+<connect gate="G$1" pin="94_IO_L07N_1/A3/RHCLK7" pad="94"/>
+<connect gate="G$1" pin="95_IP/VREF_1" pad="95"/>
+<connect gate="G$1" pin="96_IO_L08P_1/A2" pad="96"/>
+<connect gate="G$1" pin="97_IO_L08N_1/A1" pad="97"/>
+<connect gate="G$1" pin="98_IO/A0" pad="98"/>
+<connect gate="G$1" pin="99_GND" pad="99"/>
+<connect gate="G$1" pin="9_VCCINT" pad="9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="GATES" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
