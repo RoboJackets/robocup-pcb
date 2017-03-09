@@ -28691,15 +28691,15 @@ connected like that?</text>
 </net>
 <net name="LED-RADIO" class="0">
 <segment>
-<wire x1="93.98" y1="160.02" x2="96.52" y2="157.48" width="0.1524" layer="91"/>
-<label x="96.52" y="157.48" size="1.27" layer="95" xref="yes"/>
-<pinref part="RN1" gate="G$1" pin="11"/>
-<wire x1="88.9" y1="160.02" x2="93.98" y2="160.02" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="D9" gate="G$1" pin="K"/>
 <wire x1="226.06" y1="172.72" x2="223.52" y2="172.72" width="0.1524" layer="91"/>
 <label x="223.52" y="172.72" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="93.98" y1="162.56" x2="96.52" y2="160.02" width="0.1524" layer="91"/>
+<label x="96.52" y="160.02" size="1.27" layer="95" xref="yes"/>
+<pinref part="RN1" gate="G$1" pin="10"/>
+<wire x1="88.9" y1="162.56" x2="93.98" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LED-DD" class="0">
@@ -28717,10 +28717,10 @@ connected like that?</text>
 <label x="40.64" y="114.3" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="93.98" y1="162.56" x2="96.52" y2="160.02" width="0.1524" layer="91"/>
-<label x="96.52" y="160.02" size="1.27" layer="95" xref="yes"/>
-<pinref part="RN1" gate="G$1" pin="10"/>
-<wire x1="88.9" y1="162.56" x2="93.98" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="160.02" x2="96.52" y2="157.48" width="0.1524" layer="91"/>
+<label x="96.52" y="157.48" size="1.27" layer="95" xref="yes"/>
+<pinref part="RN1" gate="G$1" pin="11"/>
+<wire x1="88.9" y1="160.02" x2="93.98" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="INT-MPU" class="0">
@@ -28931,14 +28931,6 @@ connected like that?</text>
 <label x="96.52" y="152.4" size="1.27" layer="95" xref="yes"/>
 <pinref part="RN1" gate="G$1" pin="13"/>
 <wire x1="88.9" y1="154.94" x2="93.98" y2="154.94" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="LED-SOMETHING" class="0">
-<segment>
-<wire x1="93.98" y1="165.1" x2="96.52" y2="162.56" width="0.1524" layer="91"/>
-<label x="96.52" y="162.56" size="1.27" layer="95" xref="yes"/>
-<pinref part="RN1" gate="G$1" pin="9"/>
-<wire x1="88.9" y1="165.1" x2="93.98" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LED-M3" class="0">
