@@ -3366,7 +3366,9 @@ LETTER portrait</description>
 <devices>
 <device name="">
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="SCH_DESC" value="insert_description" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -3382,9 +3384,7 @@ LETTER landscape</description>
 <device name="">
 <technologies>
 <technology name="">
-<attribute name="REVISION" value="" constant="no"/>
-<attribute name="SCH_DESC" value="insert_description_here" constant="no"/>
-<attribute name="TEAM" value="RoboCup SSL" constant="no"/>
+<attribute name="SCH_DESC" value="insert_description" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -3399,7 +3399,9 @@ LETTER landscape</description>
 <devices>
 <device name="">
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="SCH_DESC" value="insert_description" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -3414,9 +3416,7 @@ LETTER landscape</description>
 <device name="">
 <technologies>
 <technology name="">
-<attribute name="REVISION" value="" constant="no"/>
-<attribute name="SCH_DESC" value="insert_description_here" constant="no"/>
-<attribute name="TEAM" value="RoboCup SSL" constant="no"/>
+<attribute name="SCH_DESC" value="insert_description" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -3432,9 +3432,7 @@ LETTER landscape</description>
 <device name="">
 <technologies>
 <technology name="">
-<attribute name="REVISION" value="" constant="no"/>
-<attribute name="SCH_DESC" value="insert_description_here" constant="no"/>
-<attribute name="TEAM" value="RoboCup SSL" constant="no"/>
+<attribute name="SCH_DESC" value="insert_description" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -3450,9 +3448,7 @@ LETTER landscape</description>
 <device name="">
 <technologies>
 <technology name="">
-<attribute name="REVISION" value="" constant="no"/>
-<attribute name="SCH_DESC" value="insert_description_here" constant="no"/>
-<attribute name="TEAM" value="RoboCUp SSL" constant="no"/>
+<attribute name="SCH_DESC" value="insert_description" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -3468,9 +3464,7 @@ LETTER landscape</description>
 <device name="">
 <technologies>
 <technology name="">
-<attribute name="REVISION" value="" constant="no"/>
 <attribute name="SCH_DESC" value="insert_description_here" constant="no"/>
-<attribute name="TEAM" value="RoboCup SSL" constant="no"/>
 </technology>
 </technologies>
 </device>
