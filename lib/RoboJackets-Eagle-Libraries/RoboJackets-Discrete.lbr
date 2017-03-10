@@ -597,6 +597,21 @@ grid 5.45 mm</description>
 <smd name="5678" x="1.3225" y="0" dx="4.895" dy="4.41" layer="1"/>
 <text x="-3.5" y="2.5" size="1" layer="25">&gt;NAME</text>
 </package>
+<package name="MO-299A">
+<smd name="PAD" x="0" y="2.59" dx="10.2" dy="8.1" layer="1"/>
+<smd name="1" x="-4.2" y="-5.24" dx="2.8" dy="0.8" layer="1" rot="R90"/>
+<smd name="2" x="-3" y="-5.24" dx="2.8" dy="0.8" layer="1" rot="R90"/>
+<smd name="3" x="-1.8" y="-5.24" dx="2.8" dy="0.8" layer="1" rot="R90"/>
+<smd name="4" x="-0.6" y="-5.24" dx="2.8" dy="0.8" layer="1" rot="R90"/>
+<smd name="5" x="0.6" y="-5.24" dx="2.8" dy="0.8" layer="1" rot="R90"/>
+<smd name="6" x="1.8" y="-5.24" dx="2.8" dy="0.8" layer="1" rot="R90"/>
+<smd name="7" x="3" y="-5.24" dx="2.8" dy="0.8" layer="1" rot="R90"/>
+<smd name="8" x="4.2" y="-5.24" dx="2.8" dy="0.8" layer="1" rot="R90"/>
+<wire x1="5" y1="-2" x2="5" y2="-5.89" width="0.3" layer="21"/>
+<wire x1="-5" y1="-5.89" x2="-5" y2="-2" width="0.3" layer="21"/>
+<circle x="-4" y="-2.75" radius="0.5" width="0" layer="21"/>
+<text x="-5.5" y="-5.5" size="1" layer="25" rot="R90">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="BSC072N03LD">
@@ -1174,6 +1189,23 @@ Rdson=1.8mOhm</description>
 <connect gate="G$1" pin="D" pad="5678"/>
 <connect gate="G$1" pin="G" pad="4"/>
 <connect gate="G$1" pin="S" pad="1 2 3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FDBL86361_F085" prefix="Q">
+<gates>
+<gate name="G$1" symbol="N_MOSFET" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MO-299A">
+<connects>
+<connect gate="G$1" pin="D" pad="PAD"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2 3 4 5 6 7 8"/>
 </connects>
 <technologies>
 <technology name=""/>
