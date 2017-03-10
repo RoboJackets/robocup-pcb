@@ -1631,14 +1631,50 @@ Shoot-through protection</description>
 </deviceset>
 <deviceset name="DRV8704" prefix="U">
 <gates>
-<gate name="CONTROL" symbol="DRV8704_CONTROL" x="-25.4" y="2.54"/>
-<gate name="OUTPUT_A" symbol="DRV8704_OUTPUT_A" x="-5.08" y="-45.72"/>
-<gate name="OUTPUT_B" symbol="DRV8704_OUTPUT_B" x="-2.54" y="-99.06"/>
-<gate name="POWER" symbol="DRV8704_POWER" x="10.16" y="5.08"/>
-<gate name="SPI" symbol="DRV8704_SPI" x="-30.48" y="-30.48"/>
+<gate name="CONTROL" symbol="DRV8704_CONTROL" x="0" y="0"/>
+<gate name="OUTPUT_A" symbol="DRV8704_OUTPUT_A" x="68.58" y="0"/>
+<gate name="OUTPUT_B" symbol="DRV8704_OUTPUT_B" x="93.98" y="0"/>
+<gate name="POWER" symbol="DRV8704_POWER" x="43.18" y="0"/>
+<gate name="SPI" symbol="DRV8704_SPI" x="20.32" y="0"/>
 </gates>
 <devices>
-<device name="" package="TSSOP-48_PAD">
+<device name="" package="HTSSOP-38">
+<connects>
+<connect gate="CONTROL" pin="!FAULT" pad="18"/>
+<connect gate="CONTROL" pin="!SLEEP" pad="8"/>
+<connect gate="CONTROL" pin="AIN1" pad="10"/>
+<connect gate="CONTROL" pin="AIN2" pad="11"/>
+<connect gate="CONTROL" pin="BIN1" pad="12"/>
+<connect gate="CONTROL" pin="BIN2" pad="13"/>
+<connect gate="CONTROL" pin="RESET" pad="9"/>
+<connect gate="OUTPUT_A" pin="A1HS" pad="36"/>
+<connect gate="OUTPUT_A" pin="A1LS" pad="35"/>
+<connect gate="OUTPUT_A" pin="A2HS" pad="31"/>
+<connect gate="OUTPUT_A" pin="A2LS" pad="32"/>
+<connect gate="OUTPUT_A" pin="AISENN" pad="33"/>
+<connect gate="OUTPUT_A" pin="AISENP" pad="34"/>
+<connect gate="OUTPUT_A" pin="AOUT1" pad="37"/>
+<connect gate="OUTPUT_A" pin="AOUT2" pad="30"/>
+<connect gate="OUTPUT_B" pin="B1HS" pad="27"/>
+<connect gate="OUTPUT_B" pin="B1LS" pad="26"/>
+<connect gate="OUTPUT_B" pin="B2HS" pad="22"/>
+<connect gate="OUTPUT_B" pin="B2LS" pad="23"/>
+<connect gate="OUTPUT_B" pin="BISENN" pad="24"/>
+<connect gate="OUTPUT_B" pin="BISENP" pad="25"/>
+<connect gate="OUTPUT_B" pin="BOUT1" pad="28"/>
+<connect gate="OUTPUT_B" pin="BOUT2" pad="21"/>
+<connect gate="POWER" pin="CP1" pad="1"/>
+<connect gate="POWER" pin="CP2" pad="2"/>
+<connect gate="POWER" pin="GND" pad="5 19 29 38 PAD" route="any"/>
+<connect gate="POWER" pin="V5" pad="6"/>
+<connect gate="POWER" pin="VCP" pad="3"/>
+<connect gate="POWER" pin="VINT" pad="7"/>
+<connect gate="POWER" pin="VM" pad="4"/>
+<connect gate="SPI" pin="SCLK" pad="14"/>
+<connect gate="SPI" pin="SCS" pad="16"/>
+<connect gate="SPI" pin="SDATI" pad="15"/>
+<connect gate="SPI" pin="SDATO" pad="17"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
