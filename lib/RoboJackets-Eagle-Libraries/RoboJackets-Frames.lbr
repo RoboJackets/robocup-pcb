@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="8.0.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3404,7 +3404,7 @@ LETTER landscape</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="FRAME_B_L" prefix="FRAME" uservalue="yes">
+<deviceset name="FRAME_B_L" prefix="FRAME">
 <description>&lt;b&gt;FRAME&lt;/b&gt; B Size , 11 x 17 INCH, Landscape&lt;p&gt;</description>
 <gates>
 <gate name="G$1" symbol="FRAME_B_L" x="0" y="0" addlevel="always"/>
