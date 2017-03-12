@@ -16650,14 +16650,12 @@ In this library you will find frames that can be used to help organize a schemat
 <devices>
 <device name="">
 <technologies>
-<technology name="">
-<attribute name="SCH_DESC" value="insert_description" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="FRAME_B_L" prefix="FRAME" uservalue="yes">
+<deviceset name="FRAME_B_L" prefix="FRAME">
 <description>&lt;b&gt;FRAME&lt;/b&gt; B Size , 11 x 17 INCH, Landscape&lt;p&gt;</description>
 <gates>
 <gate name="G$1" symbol="FRAME_B_L" x="0" y="0" addlevel="always"/>
@@ -22507,24 +22505,16 @@ Source: http://www.ctscorp.com/components/Datasheets/CTSChipArrayDs.pdf</descrip
 <wire x1="-2.9" y1="-0.6" x2="-3.05" y2="-0.75" width="0.1016" layer="51"/>
 <wire x1="3.15" y1="-0.45" x2="-3.15" y2="-0.45" width="0.1016" layer="51"/>
 <wire x1="-3.15" y1="0.45" x2="3.15" y2="0.45" width="0.1016" layer="51"/>
-<smd name="1" x="-2.8" y="-0.8" dx="0.5" dy="0.9" layer="1" stop="no"/>
-<smd name="2" x="-2" y="-0.8" dx="0.5" dy="0.9" layer="1" stop="no"/>
-<smd name="7" x="2" y="-0.8" dx="0.5" dy="0.9" layer="1" stop="no"/>
-<smd name="8" x="2.8" y="-0.8" dx="0.5" dy="0.9" layer="1" stop="no"/>
-<smd name="9" x="2.8" y="0.8" dx="0.5" dy="0.9" layer="1" stop="no"/>
-<smd name="10" x="2" y="0.8" dx="0.5" dy="0.9" layer="1" stop="no"/>
-<smd name="15" x="-2" y="0.8" dx="0.5" dy="0.9" layer="1" stop="no"/>
-<smd name="16" x="-2.8" y="0.8" dx="0.5" dy="0.9" layer="1" stop="no"/>
+<smd name="1" x="-2.8" y="-0.8" dx="0.5" dy="0.9" layer="1"/>
+<smd name="2" x="-2" y="-0.8" dx="0.5" dy="0.9" layer="1"/>
+<smd name="7" x="2" y="-0.8" dx="0.5" dy="0.9" layer="1"/>
+<smd name="8" x="2.8" y="-0.8" dx="0.5" dy="0.9" layer="1"/>
+<smd name="9" x="2.8" y="0.8" dx="0.5" dy="0.9" layer="1"/>
+<smd name="10" x="2" y="0.8" dx="0.5" dy="0.9" layer="1"/>
+<smd name="15" x="-2" y="0.8" dx="0.5" dy="0.9" layer="1"/>
+<smd name="16" x="-2.8" y="0.8" dx="0.5" dy="0.9" layer="1"/>
 <text x="-3.378" y="1.524" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.378" y="-2.794" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.5" y1="-1.3" x2="-0.9" y2="-0.3" layer="29"/>
-<rectangle x1="-0.7" y1="-1.3" x2="-0.1" y2="-0.3" layer="29"/>
-<rectangle x1="0.1" y1="-1.3" x2="0.7" y2="-0.3" layer="29"/>
-<rectangle x1="0.9" y1="-1.3" x2="1.5" y2="-0.3" layer="29"/>
-<rectangle x1="0.9" y1="0.3" x2="1.5" y2="1.3" layer="29" rot="R180"/>
-<rectangle x1="0.1" y1="0.3" x2="0.7" y2="1.3" layer="29" rot="R180"/>
-<rectangle x1="-0.7" y1="0.3" x2="-0.1" y2="1.3" layer="29" rot="R180"/>
-<rectangle x1="-1.5" y1="0.3" x2="-0.9" y2="1.3" layer="29" rot="R180"/>
 <polygon width="0.1016" layer="51">
 <vertex x="-2.2" y="-0.675"/>
 <vertex x="-2.2" y="-0.45"/>
@@ -22597,8 +22587,8 @@ Source: http://www.ctscorp.com/components/Datasheets/CTSChipArrayDs.pdf</descrip
 <wire x1="-0.95" y1="-0.75" x2="-1.1" y2="-0.6" width="0.1016" layer="51"/>
 <wire x1="-1.1" y1="-0.6" x2="-1.3" y2="-0.6" width="0.1016" layer="51"/>
 <wire x1="-1.3" y1="-0.6" x2="-1.45" y2="-0.75" width="0.1016" layer="51"/>
-<smd name="3" x="-1.2" y="-0.8" dx="0.5" dy="0.9" layer="1" stop="no"/>
-<smd name="14" x="-1.2" y="0.8" dx="0.5" dy="0.9" layer="1" stop="no"/>
+<smd name="3" x="-1.2" y="-0.8" dx="0.5" dy="0.9" layer="1"/>
+<smd name="14" x="-1.2" y="0.8" dx="0.5" dy="0.9" layer="1"/>
 <polygon width="0.1016" layer="51">
 <vertex x="-1.4" y="-0.675"/>
 <vertex x="-1.4" y="-0.45"/>
@@ -22623,8 +22613,8 @@ Source: http://www.ctscorp.com/components/Datasheets/CTSChipArrayDs.pdf</descrip
 <wire x1="-0.15" y1="-0.75" x2="-0.3" y2="-0.6" width="0.1016" layer="51"/>
 <wire x1="-0.3" y1="-0.6" x2="-0.5" y2="-0.6" width="0.1016" layer="51"/>
 <wire x1="-0.5" y1="-0.6" x2="-0.65" y2="-0.75" width="0.1016" layer="51"/>
-<smd name="4" x="-0.4" y="-0.8" dx="0.5" dy="0.9" layer="1" stop="no"/>
-<smd name="13" x="-0.4" y="0.8" dx="0.5" dy="0.9" layer="1" stop="no"/>
+<smd name="4" x="-0.4" y="-0.8" dx="0.5" dy="0.9" layer="1"/>
+<smd name="13" x="-0.4" y="0.8" dx="0.5" dy="0.9" layer="1"/>
 <polygon width="0.1016" layer="51">
 <vertex x="-0.6" y="-0.675"/>
 <vertex x="-0.6" y="-0.45"/>
@@ -22649,8 +22639,8 @@ Source: http://www.ctscorp.com/components/Datasheets/CTSChipArrayDs.pdf</descrip
 <wire x1="0.65" y1="-0.75" x2="0.5" y2="-0.6" width="0.1016" layer="51"/>
 <wire x1="0.5" y1="-0.6" x2="0.3" y2="-0.6" width="0.1016" layer="51"/>
 <wire x1="0.3" y1="-0.6" x2="0.15" y2="-0.75" width="0.1016" layer="51"/>
-<smd name="5" x="0.4" y="-0.8" dx="0.5" dy="0.9" layer="1" stop="no"/>
-<smd name="12" x="0.4" y="0.8" dx="0.5" dy="0.9" layer="1" stop="no"/>
+<smd name="5" x="0.4" y="-0.8" dx="0.5" dy="0.9" layer="1"/>
+<smd name="12" x="0.4" y="0.8" dx="0.5" dy="0.9" layer="1"/>
 <polygon width="0.1016" layer="51">
 <vertex x="0.2" y="-0.675"/>
 <vertex x="0.2" y="-0.45"/>
@@ -22675,8 +22665,8 @@ Source: http://www.ctscorp.com/components/Datasheets/CTSChipArrayDs.pdf</descrip
 <wire x1="1.45" y1="-0.75" x2="1.3" y2="-0.6" width="0.1016" layer="51"/>
 <wire x1="1.3" y1="-0.6" x2="1.1" y2="-0.6" width="0.1016" layer="51"/>
 <wire x1="1.1" y1="-0.6" x2="0.95" y2="-0.75" width="0.1016" layer="51"/>
-<smd name="6" x="1.2" y="-0.8" dx="0.5" dy="0.9" layer="1" stop="no"/>
-<smd name="11" x="1.2" y="0.8" dx="0.5" dy="0.9" layer="1" stop="no"/>
+<smd name="6" x="1.2" y="-0.8" dx="0.5" dy="0.9" layer="1"/>
+<smd name="11" x="1.2" y="0.8" dx="0.5" dy="0.9" layer="1"/>
 <polygon width="0.1016" layer="51">
 <vertex x="1" y="-0.675"/>
 <vertex x="1" y="-0.45"/>
@@ -24730,9 +24720,7 @@ In this library you will find crystals and oscillators used for clocking signals
 <variantdefs>
 </variantdefs>
 <parts>
-<part name="FRAME1" library="RoboJackets-Frames" deviceset="FRAME_A_L" device="">
-<attribute name="SCH_DESC" value="Wheel Drive"/>
-</part>
+<part name="FRAME1" library="RoboJackets-Frames" deviceset="FRAME_A_L" device=""/>
 <part name="U1" library="RoboJackets-PowerICs" deviceset="DRV8303" device="DCA"/>
 <part name="SUPPLY4" library="RoboJackets-Supplies" deviceset="+18.5V" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
@@ -25330,9 +25318,7 @@ In this library you will find crystals and oscillators used for clocking signals
 <variantdefs>
 </variantdefs>
 <parts>
-<part name="FRAME1" library="RoboJackets-Frames" deviceset="FRAME_A_L" device="">
-<attribute name="SCH_DESC" value="Dribbler Drive"/>
-</part>
+<part name="FRAME1" library="RoboJackets-Frames" deviceset="FRAME_A_L" device=""/>
 <part name="U1" library="RoboJackets-PowerICs" deviceset="DRV8303" device="DCA"/>
 <part name="SUPPLY4" library="RoboJackets-Supplies" deviceset="+18.5V" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
@@ -25869,12 +25855,8 @@ In this library you will find crystals and oscillators used for clocking signals
 <part name="R1" library="resistor" deviceset="R-US_" device="R0603" value="330"/>
 <part name="R2" library="resistor" deviceset="R-US_" device="R0603" value="330"/>
 <part name="SUPPLY4" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
-<part name="FRAME1" library="RoboJackets-Frames" deviceset="FRAME_A_L" device="">
-<attribute name="SCH_DESC" value="MBED Microcontroller"/>
-</part>
-<part name="FRAME3" library="RoboJackets-Frames" deviceset="FRAME_A_L" device="">
-<attribute name="SCH_DESC" value="IO, MPU, Connectors, Buttons"/>
-</part>
+<part name="FRAME1" library="RoboJackets-Frames" deviceset="FRAME_A_L" device=""/>
+<part name="FRAME3" library="RoboJackets-Frames" deviceset="FRAME_A_L" device=""/>
 <part name="IC1" library="RoboJackets-ICs" deviceset="MCP23017" device="-E/SS"/>
 <part name="SUPPLY11" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
@@ -25902,9 +25884,7 @@ In this library you will find crystals and oscillators used for clocking signals
 <part name="RN8" library="RoboJackets-Resistors" deviceset="742C163331JP" device=""/>
 <part name="R5" library="resistor" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="SUPPLY19" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
-<part name="FRAME5" library="RoboJackets-Frames" deviceset="FRAME_A_L" device="">
-<attribute name="SCH_DESC" value="Power"/>
-</part>
+<part name="FRAME5" library="RoboJackets-Frames" deviceset="FRAME_A_L" device=""/>
 <part name="J9" library="RoboJackets-Connectors" deviceset="DF22-2" device=""/>
 <part name="U3" library="RoboJackets-PowerICs" deviceset="VND5E006ASPTR-E" device=""/>
 <part name="SUPPLY20" library="RoboJackets-Supplies" deviceset="VBATT" device=""/>
@@ -25960,9 +25940,7 @@ In this library you will find crystals and oscillators used for clocking signals
 <part name="D4" library="RoboJackets-LEDs" deviceset="LED_SMD" device="" value="GREEN"/>
 <part name="D5" library="RoboJackets-LEDs" deviceset="LED_SMD" device="" value="GREEN"/>
 <part name="SUPPLY33" library="RoboJackets-Supplies" deviceset="+2.5V" device=""/>
-<part name="FRAME2" library="RoboJackets-Frames" deviceset="FRAME_A_L" device="">
-<attribute name="SCH_DESC" value="Motor Drive"/>
-</part>
+<part name="FRAME2" library="RoboJackets-Frames" deviceset="FRAME_A_L" device=""/>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY7" library="supply2" deviceset="GND" device=""/>
@@ -26136,9 +26114,7 @@ connected like that?</text>
 <instance part="R1" gate="G$1" x="172.72" y="121.92" rot="R90"/>
 <instance part="R2" gate="G$1" x="180.34" y="121.92" rot="R90"/>
 <instance part="SUPPLY4" gate="P" x="177.8" y="134.62"/>
-<instance part="FRAME1" gate="G$1" x="0" y="0">
-<attribute name="SCH_DESC" x="0" y="0" size="1.27" layer="96" display="off"/>
-</instance>
+<instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="172.72" y="0"/>
 <instance part="D11" gate="G$1" x="231.14" y="93.98" rot="R270"/>
 <instance part="R24" gate="G$1" x="241.3" y="93.98"/>
@@ -30287,6 +30263,37 @@ to 5V and 3.3V?</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="102,4,218.44,124.46,V_OUT,+1.2V-PRE,,,,"/>
+<approved hash="102,4,218.44,73.66,V_OUT,+2.5V-PRE,,,,"/>
+<approved hash="201,4,218.44,73.66,V_OUT,+1.2V-PRE\, +2.5V-PRE,,,,"/>
+<approved hash="201,4,218.44,124.46,V_OUT,+1.2V-PRE\, +2.5V-PRE,,,,"/>
+<approved hash="104,1,48.26,142.24,KIT1,VIN,+5V,,,"/>
+<approved hash="204,1,48.26,139.7,KIT1,VB,,,,"/>
+<approved hash="104,1,144.78,142.24,KIT1,VU,+5V,,,"/>
+<approved hash="104,1,144.78,144.78,KIT1,VO,+3.3V,,,"/>
+<approved hash="104,3,48.26,187.96,IC1,VDD,+3.3V,,,"/>
+<approved hash="104,3,48.26,147.32,IC1,VSS,GND,,,"/>
+<approved hash="104,4,182.88,124.46,U5,V_IN,+3.3V,,,"/>
+<approved hash="104,4,182.88,73.66,U6,V_IN,+3.3V,,,"/>
+<approved hash="104,2,350.52,144.78,X1,VDD,+3.3V,,,"/>
+<approved hash="115,2,184.15,243.84,R-P17,,,,,"/>
+<approved hash="115,2,184.15,246.38,R-P18,,,,,"/>
+<approved hash="115,2,184.15,248.92,R-P19,,,,,"/>
+<approved hash="115,2,184.15,254,R-P21,,,,,"/>
+<approved hash="115,2,210.82,22.86,R-P54,,,,,"/>
+<approved hash="115,2,208.28,22.86,R-P55,,,,,"/>
+<approved hash="115,2,205.74,21.59,R-P56,,,,,"/>
+<approved hash="115,2,248.92,35.56,R-P62,,,,,"/>
+<approved hash="115,2,248.92,38.1,R-P63,,,,,"/>
+<approved hash="115,2,248.92,40.64,R-P64,,,,,"/>
+<approved hash="118,1@WHEEL_DRIVE,100.33,142.24,Net,+18.5V,,,,"/>
+<approved hash="118,1@WHEEL_DRIVE,33.02,153.67,Net,+3.3V,,,,"/>
+<approved hash="118,1@WHEEL_DRIVE,238.76,116.84,Net,+5V,,,,"/>
+<approved hash="118,1@DRIBBLER_DRIVE,62.23,68.58,Net,GND,,,,"/>
+<approved hash="118,1@DRIBBLER_DRIVE,33.02,153.67,Net,+3.3V,,,,"/>
+<approved hash="118,1@DRIBBLER_DRIVE,100.33,142.24,Net,+18.5V,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
