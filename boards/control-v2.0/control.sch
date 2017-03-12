@@ -22895,37 +22895,58 @@ In this library you will find all the connectors used on any of our boards.
 <smd name="8" x="3.5" y="3.25" dx="2" dy="0.6" layer="1" rot="R90"/>
 </package>
 <package name="MKS-1658">
-<pad name="4" x="0" y="0" drill="1"/>
-<pad name="5" x="2.5" y="0" drill="1"/>
-<pad name="6" x="5" y="0" drill="1"/>
-<pad name="3" x="-2.5" y="0" drill="1"/>
-<pad name="2" x="-5" y="0" drill="1"/>
-<pad name="1" x="-7.5" y="0" drill="1"/>
-<pad name="7" x="7.5" y="0" drill="1"/>
-<pad name="8" x="10" y="0" drill="1"/>
-<wire x1="13.75" y1="-2.95" x2="13.75" y2="2.95" width="0.127" layer="21"/>
-<wire x1="13.75" y1="2.95" x2="12.95" y2="3.75" width="0.127" layer="21" curve="90"/>
-<wire x1="12.95" y1="3.75" x2="-10.45" y2="3.75" width="0.127" layer="21"/>
-<wire x1="-10.45" y1="3.75" x2="-11.25" y2="2.95" width="0.127" layer="21" curve="90"/>
-<wire x1="-11.25" y1="2.95" x2="-11.25" y2="-2.95" width="0.127" layer="21"/>
-<wire x1="-11.25" y1="-2.95" x2="-10.45" y2="-3.75" width="0.127" layer="21" curve="90"/>
-<wire x1="-10.45" y1="-3.75" x2="-8.5" y2="-3.75" width="0.127" layer="21"/>
-<wire x1="-8.5" y1="-3.75" x2="-8.5" y2="-2" width="0.127" layer="21"/>
-<wire x1="-8.5" y1="-2" x2="11" y2="-2" width="0.127" layer="21"/>
-<wire x1="11" y1="-2" x2="11" y2="-3.75" width="0.127" layer="21"/>
-<wire x1="11" y1="-3.75" x2="12.95" y2="-3.75" width="0.127" layer="21"/>
-<wire x1="12.95" y1="-3.75" x2="13.75" y2="-2.95" width="0.127" layer="21" curve="90"/>
+<description>&lt;b&gt;Serie MKS 1850&lt;/b&gt; Lötstifte In-line, Raster 2.5 mm, Stiftwannen, stehend, mit Rastlasche&lt;p&gt;
+Source: http://www.stocko.de/de/index.php?seite=ka_rfk2_mks1850.html&amp;rubrik=Katalog+-+RFK+2&lt;br&gt;
+rfk_1850.pdf</description>
+<wire x1="-10.2283" y1="-3.6954" x2="-10.9912" y2="-3.6954" width="0.2032" layer="21"/>
+<wire x1="-10.9912" y1="-3.6954" x2="-12.231" y2="-2.4556" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-12.231" y1="-2.4556" x2="-12.231" y2="2.4558" width="0.2032" layer="21"/>
+<wire x1="-12.231" y1="2.4558" x2="-10.9912" y2="3.6956" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-10.9912" y1="3.6956" x2="10.9672" y2="3.6956" width="0.2032" layer="21"/>
+<wire x1="10.9672" y1="3.6956" x2="12.2547" y2="2.4081" width="0.2032" layer="21" curve="-90"/>
+<wire x1="12.2547" y1="2.4081" x2="12.2547" y2="-2.4079" width="0.2032" layer="21"/>
+<wire x1="12.2547" y1="-2.4079" x2="10.9672" y2="-3.6954" width="0.2032" layer="21" curve="-90"/>
+<wire x1="10.9672" y1="-3.6954" x2="10.2281" y2="-3.6954" width="0.2032" layer="21"/>
+<wire x1="10.2281" y1="-3.6954" x2="10.2281" y2="-2.1695" width="0.2032" layer="21"/>
+<wire x1="10.2281" y1="-2.1695" x2="9.7036" y2="-1.645" width="0.2032" layer="21" curve="90"/>
+<wire x1="9.7036" y1="-1.645" x2="-9.7038" y2="-1.645" width="0.2032" layer="21"/>
+<wire x1="-9.7038" y1="-1.645" x2="-10.2283" y2="-2.1695" width="0.2032" layer="21" curve="90"/>
+<wire x1="-10.2283" y1="-2.1695" x2="-10.2283" y2="-3.6954" width="0.2032" layer="21"/>
+<wire x1="-10.2521" y1="-2.6702" x2="-10.9674" y2="-2.6702" width="0.2032" layer="21"/>
+<wire x1="-10.9674" y1="-2.6702" x2="-11.325" y2="-2.3126" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-11.325" y1="-2.3126" x2="-11.325" y2="2.3605" width="0.2032" layer="21"/>
+<wire x1="-11.325" y1="2.3605" x2="-11.0151" y2="2.6704" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-11.0151" y1="2.6704" x2="10.9911" y2="2.6704" width="0.2032" layer="21"/>
+<wire x1="10.9911" y1="2.6704" x2="11.3249" y2="2.3366" width="0.2032" layer="21" curve="-90"/>
+<wire x1="11.3249" y1="2.3366" x2="11.3249" y2="-2.3364" width="0.2032" layer="21"/>
+<wire x1="11.3249" y1="-2.3364" x2="10.9911" y2="-2.6702" width="0.2032" layer="21" curve="-90"/>
+<wire x1="10.9911" y1="-2.6702" x2="10.3235" y2="-2.6702" width="0.2032" layer="21"/>
+<wire x1="-4.551" y1="3.6479" x2="-4.551" y2="2.7419" width="0.2032" layer="21"/>
+<wire x1="4.527" y1="3.6241" x2="4.527" y2="2.7419" width="0.2032" layer="21"/>
+<wire x1="-10.0853" y1="-1.7165" x2="-10.0853" y2="1.4544" width="0.2032" layer="21"/>
+<wire x1="-10.0853" y1="1.4544" x2="10.1089" y2="1.4544" width="0.2032" layer="21"/>
+<wire x1="10.1089" y1="1.4544" x2="10.1089" y2="-1.7404" width="0.2032" layer="21"/>
+<pad name="1" x="-8.75" y="0" drill="1" diameter="1.4224"/>
+<pad name="2" x="-6.25" y="0" drill="1" diameter="1.4224"/>
+<pad name="3" x="-3.75" y="0" drill="1" diameter="1.4224"/>
+<pad name="4" x="-1.25" y="0" drill="1" diameter="1.4224"/>
+<pad name="5" x="1.25" y="0" drill="1" diameter="1.4224"/>
+<pad name="6" x="3.75" y="0" drill="1" diameter="1.4224"/>
+<pad name="7" x="6.25" y="0" drill="1" diameter="1.4224"/>
+<pad name="8" x="8.75" y="0" drill="1" diameter="1.4224"/>
+<text x="-8.89" y="-3.81" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.81" y="4.445" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="2MM-4-H">
-<wire x1="-4.2" y1="2" x2="-4.2" y2="-8" width="0.127" layer="21"/>
-<wire x1="-4.2" y1="-8" x2="6.2" y2="-8" width="0.127" layer="21"/>
-<wire x1="6.2" y1="-8" x2="6.2" y2="2" width="0.127" layer="21"/>
-<wire x1="6.2" y1="2" x2="-4.2" y2="2" width="0.127" layer="21"/>
-<pad name="2" x="0" y="0" drill="0.8" rot="R180"/>
-<pad name="1" x="-2" y="0" drill="0.8" shape="square" rot="R180"/>
-<pad name="3" x="2" y="0" drill="0.8" rot="R180"/>
-<pad name="4" x="4" y="0" drill="0.8" rot="R180"/>
-<text x="1" y="2.5" size="1" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<wire x1="-5.2" y1="2" x2="-5.2" y2="-8" width="0.127" layer="21"/>
+<wire x1="-5.2" y1="-8" x2="5.2" y2="-8" width="0.127" layer="21"/>
+<wire x1="5.2" y1="-8" x2="5.2" y2="2" width="0.127" layer="21"/>
+<wire x1="5.2" y1="2" x2="-5.2" y2="2" width="0.127" layer="21"/>
+<pad name="2" x="-1" y="0" drill="0.8" rot="R180"/>
+<pad name="1" x="-3" y="0" drill="0.8" shape="square" rot="R180"/>
+<pad name="3" x="1" y="0" drill="0.8" rot="R180"/>
+<pad name="4" x="3" y="0" drill="0.8" rot="R180"/>
+<text x="0" y="2.5" size="1" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="2MM-4-V">
 <wire x1="-5" y1="3" x2="-5" y2="-3" width="0.127" layer="21"/>
@@ -23034,18 +23055,20 @@ In this library you will find all the connectors used on any of our boards.
 <pin name="LEG1" x="-2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
 </symbol>
 <symbol name="MKS-1658">
-<pin name="1" x="-10.16" y="10.16" length="middle"/>
-<pin name="2" x="-10.16" y="7.62" length="middle"/>
-<pin name="3" x="-10.16" y="5.08" length="middle"/>
-<pin name="4" x="-10.16" y="2.54" length="middle"/>
-<pin name="5" x="-10.16" y="0" length="middle"/>
-<pin name="6" x="-10.16" y="-2.54" length="middle"/>
-<pin name="7" x="-10.16" y="-5.08" length="middle"/>
-<pin name="8" x="-10.16" y="-7.62" length="middle"/>
-<wire x1="-5.08" y1="12.7" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-10.16" x2="0" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="0" y1="-10.16" x2="0" y2="12.7" width="0.254" layer="94"/>
-<wire x1="0" y1="12.7" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
+<pin name="1" x="-7.62" y="10.16" length="middle"/>
+<pin name="2" x="-7.62" y="7.62" length="middle"/>
+<pin name="3" x="-7.62" y="5.08" length="middle"/>
+<pin name="4" x="-7.62" y="2.54" length="middle"/>
+<pin name="5" x="-7.62" y="0" length="middle"/>
+<pin name="6" x="-7.62" y="-2.54" length="middle"/>
+<pin name="7" x="-7.62" y="-5.08" length="middle"/>
+<pin name="8" x="-7.62" y="-7.62" length="middle"/>
+<wire x1="-2.54" y1="12.7" x2="-2.54" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-10.16" x2="2.54" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-10.16" x2="2.54" y2="12.7" width="0.254" layer="94"/>
+<wire x1="2.54" y1="12.7" x2="-2.54" y2="12.7" width="0.254" layer="94"/>
+<text x="-2.54" y="15.24" size="1.27" layer="95" align="top-left">&gt;NAME</text>
+<text x="-2.54" y="-12.7" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="4-PIN_CONN">
 <circle x="-0.762" y="0" radius="0.762" width="0.254" layer="94"/>
@@ -23194,7 +23217,7 @@ Power Connector
 </device>
 </devices>
 </deviceset>
-<deviceset name="MKS-1658">
+<deviceset name="MKS-1658" prefix="J">
 <gates>
 <gate name="G$1" symbol="MKS-1658" x="2.54" y="-2.54"/>
 </gates>
@@ -24749,8 +24772,8 @@ In this library you will find crystals and oscillators used for clocking signals
 <part name="C11" library="RoboJackets-Capacitors" deviceset="PANASONIC_J16" device="" value="EEE-FK1H102AM"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="supply2" deviceset="+5V" device=""/>
-<part name="U$1" library="RoboJackets-Connectors" deviceset="MKS-1658" device=""/>
-<part name="J1" library="RoboJackets-Connectors" deviceset="4-PIN_2MM-*" device="H"/>
+<part name="J1" library="RoboJackets-Connectors" deviceset="MKS-1658" device=""/>
+<part name="J2" library="RoboJackets-Connectors" deviceset="4-PIN_2MM-*" device="H"/>
 </parts>
 <sheets>
 <sheet>
@@ -24809,8 +24832,8 @@ In this library you will find crystals and oscillators used for clocking signals
 <instance part="C11" gate="G$1" x="215.9" y="144.78"/>
 <instance part="GND12" gate="1" x="228.6" y="71.12"/>
 <instance part="SUPPLY1" gate="+5V" x="231.14" y="119.38"/>
-<instance part="U$1" gate="G$1" x="256.54" y="88.9" rot="MR180"/>
-<instance part="J1" gate="G$1" x="254" y="109.22" rot="R180"/>
+<instance part="J1" gate="G$1" x="254" y="88.9" rot="MR180"/>
+<instance part="J2" gate="G$1" x="254" y="109.22" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -24890,7 +24913,7 @@ In this library you will find crystals and oscillators used for clocking signals
 <segment>
 <wire x1="246.38" y1="93.98" x2="243.84" y2="93.98" width="0.1524" layer="91"/>
 <label x="243.84" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U$1" gate="G$1" pin="7"/>
+<pinref part="J1" gate="G$1" pin="7"/>
 </segment>
 <segment>
 <wire x1="99.06" y1="116.84" x2="111.76" y2="116.84" width="0.1524" layer="91"/>
@@ -24936,7 +24959,7 @@ In this library you will find crystals and oscillators used for clocking signals
 <segment>
 <wire x1="246.38" y1="96.52" x2="243.84" y2="96.52" width="0.1524" layer="91"/>
 <label x="243.84" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U$1" gate="G$1" pin="8"/>
+<pinref part="J1" gate="G$1" pin="8"/>
 </segment>
 <segment>
 <wire x1="99.06" y1="132.08" x2="111.76" y2="132.08" width="0.1524" layer="91"/>
@@ -24998,7 +25021,7 @@ In this library you will find crystals and oscillators used for clocking signals
 <segment>
 <wire x1="246.38" y1="91.44" x2="243.84" y2="91.44" width="0.1524" layer="91"/>
 <label x="243.84" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U$1" gate="G$1" pin="6"/>
+<pinref part="J1" gate="G$1" pin="6"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -25170,8 +25193,8 @@ In this library you will find crystals and oscillators used for clocking signals
 <pinref part="GND12" gate="1" pin="GND"/>
 <wire x1="228.6" y1="73.66" x2="228.6" y2="81.28" width="0.1524" layer="91"/>
 <junction x="228.6" y="81.28"/>
-<pinref part="U$1" gate="G$1" pin="2"/>
-<pinref part="J1" gate="G$1" pin="3"/>
+<pinref part="J1" gate="G$1" pin="2"/>
+<pinref part="J2" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="+18.5V" class="0">
@@ -25236,35 +25259,35 @@ In this library you will find crystals and oscillators used for clocking signals
 <segment>
 <wire x1="246.38" y1="78.74" x2="243.84" y2="78.74" width="0.1524" layer="91"/>
 <label x="243.84" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U$1" gate="G$1" pin="1"/>
+<pinref part="J1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="H2" class="0">
 <segment>
 <wire x1="246.38" y1="83.82" x2="243.84" y2="83.82" width="0.1524" layer="91"/>
 <label x="243.84" y="83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U$1" gate="G$1" pin="3"/>
+<pinref part="J1" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="H3" class="0">
 <segment>
 <wire x1="246.38" y1="88.9" x2="243.84" y2="88.9" width="0.1524" layer="91"/>
 <label x="243.84" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U$1" gate="G$1" pin="5"/>
+<pinref part="J1" gate="G$1" pin="5"/>
 </segment>
 </net>
 <net name="ENC-A" class="0">
 <segment>
 <wire x1="246.38" y1="111.76" x2="248.92" y2="111.76" width="0.1524" layer="91"/>
 <label x="246.38" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J1" gate="G$1" pin="2"/>
+<pinref part="J2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="ENC-B" class="0">
 <segment>
 <wire x1="246.38" y1="109.22" x2="248.92" y2="109.22" width="0.1524" layer="91"/>
 <label x="246.38" y="109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J1" gate="G$1" pin="1"/>
+<pinref part="J2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -25275,8 +25298,8 @@ In this library you will find crystals and oscillators used for clocking signals
 <wire x1="231.14" y1="86.36" x2="231.14" y2="116.84" width="0.1524" layer="91"/>
 <junction x="231.14" y="116.84"/>
 <wire x1="246.38" y1="116.84" x2="248.92" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="4"/>
 <pinref part="J1" gate="G$1" pin="4"/>
+<pinref part="J2" gate="G$1" pin="4"/>
 </segment>
 </net>
 </nets>
@@ -28593,15 +28616,15 @@ connected like that?</text>
 </net>
 <net name="HEX-0" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="GPA6"/>
-<wire x1="73.66" y1="172.72" x2="81.28" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="172.72" x2="83.82" y2="175.26" width="0.1524" layer="91"/>
-<label x="83.82" y="175.26" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="S2" gate="G$1" pin="1"/>
 <wire x1="170.18" y1="187.96" x2="172.72" y2="187.96" width="0.1524" layer="91"/>
 <label x="172.72" y="187.96" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="GPA7"/>
+<wire x1="73.66" y1="170.18" x2="81.28" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="170.18" x2="83.82" y2="172.72" width="0.1524" layer="91"/>
+<label x="83.82" y="172.72" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="IOA7" class="0">
@@ -28658,10 +28681,10 @@ connected like that?</text>
 <label x="172.72" y="180.34" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="GPA7"/>
-<wire x1="73.66" y1="170.18" x2="81.28" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="170.18" x2="83.82" y2="172.72" width="0.1524" layer="91"/>
-<label x="83.82" y="172.72" size="1.27" layer="95" xref="yes"/>
+<pinref part="IC1" gate="G$1" pin="GPA5"/>
+<wire x1="73.66" y1="175.26" x2="81.28" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="175.26" x2="83.82" y2="177.8" width="0.1524" layer="91"/>
+<label x="83.82" y="177.8" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="HEX-2" class="0">
@@ -28671,10 +28694,10 @@ connected like that?</text>
 <label x="172.72" y="182.88" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="GPA5"/>
-<wire x1="73.66" y1="175.26" x2="81.28" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="175.26" x2="83.82" y2="177.8" width="0.1524" layer="91"/>
-<label x="83.82" y="177.8" size="1.27" layer="95" xref="yes"/>
+<pinref part="IC1" gate="G$1" pin="GPA6"/>
+<wire x1="73.66" y1="172.72" x2="81.28" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="172.72" x2="83.82" y2="175.26" width="0.1524" layer="91"/>
+<label x="83.82" y="175.26" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="HEX-1" class="0">
