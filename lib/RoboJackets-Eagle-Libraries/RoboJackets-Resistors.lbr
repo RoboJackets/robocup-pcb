@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -218,7 +218,7 @@ In this library you will find resistors. If you are looking for a common package
 <wire x1="12.5" y1="-4.5" x2="15" y2="-4.5" width="0.5" layer="21"/>
 <text x="-15" y="6" size="1" layer="25">&gt;NAME</text>
 </package>
-<package name="742C163331JP">
+<package name="RA-8_2506">
 <description>&lt;b&gt;Chip Resistor Array&lt;/b&gt;&lt;p&gt;
 Source: http://www.ctscorp.com/components/Datasheets/CTSChipArrayDs.pdf</description>
 <wire x1="-3.15" y1="0.75" x2="-3.05" y2="0.75" width="0.1016" layer="51"/>
@@ -581,7 +581,7 @@ Source: http://www.ctscorp.com/components/Datasheets/CTSChipArrayDs.pdf</descrip
 <pin name="4" x="5.08" y="-2.54" visible="off" length="middle" rot="R180"/>
 <wire x1="0" y1="5.08" x2="0" y2="-2.54" width="0.254" layer="94"/>
 </symbol>
-<symbol name="RN8">
+<symbol name="RA-8">
 <wire x1="-3.81" y1="6.858" x2="1.27" y2="6.858" width="0.254" layer="94"/>
 <wire x1="1.27" y1="8.382" x2="-3.81" y2="8.382" width="0.254" layer="94"/>
 <wire x1="1.27" y1="6.858" x2="1.27" y2="7.62" width="0.254" layer="94"/>
@@ -845,13 +845,13 @@ Source: http://www.ctscorp.com/components/Datasheets/CTSChipArrayDs.pdf</descrip
 </device>
 </devices>
 </deviceset>
-<deviceset name="742C163331JP" prefix="RN">
+<deviceset name="RA-8" prefix="RN" uservalue="yes">
 <description>Resistor Array 8</description>
 <gates>
-<gate name="G$1" symbol="RN8" x="0" y="0" swaplevel="4"/>
+<gate name="G$1" symbol="RA-8" x="0" y="0" swaplevel="4"/>
 </gates>
 <devices>
-<device name="" package="742C163331JP">
+<device name="" package="RA-8_2506">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="10" pad="10"/>
@@ -872,10 +872,8 @@ Source: http://www.ctscorp.com/components/Datasheets/CTSChipArrayDs.pdf</descrip
 </connects>
 <technologies>
 <technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+<attribute name="DIGIKEY" value="742C163331JPCT-ND" constant="no"/>
+<attribute name="MPN" value="742C163331JP" constant="no"/>
 </technology>
 </technologies>
 </device>

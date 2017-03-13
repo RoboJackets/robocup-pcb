@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -639,7 +639,8 @@ In this library you will find LEDs and other visual output devices.
 <wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
-<text x="-7.62" y="6.35" size="1.016" layer="95">&gt;NAME</text>
+<text x="-7.62" y="7.62" size="1.778" layer="95" align="top-left">&gt;NAME</text>
+<text x="-7.62" y="-7.62" size="1.778" layer="95">&gt;VALUE</text>
 </symbol>
 <symbol name="LED">
 <wire x1="1.27" y1="2.54" x2="0" y2="0" width="0.254" layer="94"/>
@@ -815,12 +816,15 @@ http://www.adafruit.com/products/1655</description>
 <connect gate="G$1" pin="VSS" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="1528-1104-ND" constant="no"/>
+<attribute name="MPN" value="1655" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LED_SMD" prefix="D" uservalue="yes">
+<deviceset name="LED-SMD" prefix="D" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="LED" x="0" y="0"/>
 </gates>
@@ -831,7 +835,31 @@ http://www.adafruit.com/products/1655</description>
 <connect gate="G$1" pin="K" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="VALUE" value="" constant="no"/>
+</technology>
+<technology name="-BLUE">
+<attribute name="DIGIKEY" value="160-1647-1-ND" constant="no"/>
+<attribute name="MPN" value="LTST-C191TBKT" constant="no"/>
+<attribute name="VALUE" value="BLUE" constant="no"/>
+</technology>
+<technology name="-GREEN">
+<attribute name="DIGIKEY" value="160-1446-1-ND" constant="no"/>
+<attribute name="MPN" value="LTST-C191KGKT" constant="no"/>
+<attribute name="VALUE" value="GREEN" constant="no"/>
+</technology>
+<technology name="-RED">
+<attribute name="DIGIKEY" value="160-1447-1-ND" constant="no"/>
+<attribute name="MPN" value="LTST-C191KRKT" constant="no"/>
+<attribute name="VALUE" value="RED" constant="no"/>
+</technology>
+<technology name="-YELLOW">
+<attribute name="DIGIKEY" value="160-1448-1-ND" constant="no"/>
+<attribute name="MPN" value="LTST-C191KSKT" constant="no"/>
+<attribute name="VALUE" value="YELLOW" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>

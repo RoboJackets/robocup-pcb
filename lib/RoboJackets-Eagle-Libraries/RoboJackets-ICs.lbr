@@ -2301,18 +2301,18 @@ Source: 8x ADG1408_1409.pdf</description>
 <text x="0" y="3.81" size="1.778" layer="97" font="vector" ratio="20" align="bottom-center">&gt;VOLTAGE</text>
 </symbol>
 <symbol name="MCP1824T">
-<wire x1="-15.24" y1="7.62" x2="15.24" y2="7.62" width="0.254" layer="94"/>
-<wire x1="15.24" y1="7.62" x2="15.24" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-7.62" x2="-15.24" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="-7.62" x2="-15.24" y2="7.62" width="0.254" layer="94"/>
-<text x="-15.24" y="8.255" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="0" y="-3.175" size="1.27" layer="96" font="vector" ratio="15" align="bottom-center">&gt;VALUE</text>
-<pin name="V_IN" x="-17.78" y="5.08" visible="pin" length="short" direction="pwr"/>
-<pin name="GND" x="-17.78" y="-5.08" visible="pin" length="short" direction="oc"/>
-<pin name="!SHDN" x="-17.78" y="0" visible="pin" length="short" direction="in"/>
-<pin name="PWRGD" x="17.78" y="0" visible="pin" length="short" direction="out" rot="R180"/>
-<pin name="V_OUT" x="17.78" y="5.08" visible="pin" length="short" direction="sup" rot="R180"/>
-<text x="0" y="3.81" size="1.778" layer="97" font="vector" ratio="20" align="bottom-center">&gt;VOLTAGE</text>
+<wire x1="-12.7" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-7.62" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
+<text x="-12.7" y="10.16" size="1.778" layer="95" font="vector" align="top-left">&gt;NAME</text>
+<text x="-12.7" y="-10.16" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+<pin name="V_IN" x="-15.24" y="5.08" visible="pin" length="short" direction="pwr"/>
+<pin name="GND" x="-15.24" y="-5.08" visible="pin" length="short" direction="oc"/>
+<pin name="!SHDN" x="-15.24" y="0" visible="pin" length="short" direction="in"/>
+<pin name="PWRGD" x="12.7" y="0" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="V_OUT" x="12.7" y="5.08" visible="pin" length="short" direction="sup" rot="R180"/>
+<text x="3.048" y="-5.842" size="1.778" layer="97" font="vector" ratio="20" align="bottom-center">&gt;VOLTAGE</text>
 </symbol>
 <symbol name="MCP1824ST">
 <wire x1="-15.24" y1="7.62" x2="15.24" y2="7.62" width="0.254" layer="94"/>
@@ -3467,7 +3467,7 @@ http://www.digikey.com/product-detail/en/XC3S250E-4PQG208C/122-1483-ND/1091711</
 <wire x1="10.16" y1="22.86" x2="10.16" y2="-22.86" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-22.86" x2="-10.16" y2="-22.86" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-22.86" x2="-10.16" y2="22.86" width="0.254" layer="94"/>
-<text x="-10.16" y="24.13" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="25.4" size="1.778" layer="95" align="top-left">&gt;NAME</text>
 <text x="-10.16" y="-25.4" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="SCL" x="-12.7" y="-2.54" length="short" direction="in"/>
 <pin name="SDA" x="-12.7" y="-5.08" length="short"/>
@@ -3765,35 +3765,43 @@ http://www.digikey.com/product-detail/en/XC3S250E-4PQG208C/122-1483-ND/1091711</
 </connects>
 <technologies>
 <technology name="">
-<attribute name="CURRENT" value="0.3A"/>
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
 <attribute name="VOLTAGE" value="" constant="no"/>
 </technology>
 <technology name="-1202E/">
-<attribute name="CURRENT" value="0.3A"/>
+<attribute name="DIGIKEY" value="MCP1824T-1202E/OTCT-ND" constant="no"/>
+<attribute name="MPN" value="MCP1824T-1202E/OT" constant="no"/>
 <attribute name="VOLTAGE" value="1.2V"/>
 </technology>
 <technology name="-1802E/">
-<attribute name="CURRENT" value="0.3A"/>
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
 <attribute name="VOLTAGE" value="1.8V"/>
 </technology>
 <technology name="-2502E/">
-<attribute name="CURRENT" value="0.3A"/>
+<attribute name="DIGIKEY" value="MCP1824T-2502E/OTCT-ND" constant="no"/>
+<attribute name="MPN" value="MCP1824T-2502E/OT" constant="no"/>
 <attribute name="VOLTAGE" value="2.5V"/>
 </technology>
 <technology name="-3002E/">
-<attribute name="CURRENT" value="0.3A"/>
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
 <attribute name="VOLTAGE" value="3.0V"/>
 </technology>
 <technology name="-3302E/">
-<attribute name="CURRENT" value="0.3A"/>
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
 <attribute name="VOLTAGE" value="3.3V"/>
 </technology>
 <technology name="-5002E/">
-<attribute name="CURRENT" value="0.3A"/>
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
 <attribute name="VOLTAGE" value="5.0V"/>
 </technology>
 <technology name="-ADJE/">
-<attribute name="CURRENT" value="0.3A"/>
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
 <attribute name="VOLTAGE" value="0.8V~5.0V" constant="no"/>
 </technology>
 </technologies>
@@ -5393,10 +5401,8 @@ http://www.digikey.com/product-detail/en/XC3S250E-4PQG208C/122-1483-ND/1091711</
 </connects>
 <technologies>
 <technology name="">
-<attribute name="MF" value="MICROCHIP" constant="no"/>
-<attribute name="MPN" value="MCP23017-E/SP" constant="no"/>
-<attribute name="OC_FARNELL" value="1332088" constant="no"/>
-<attribute name="OC_NEWARK" value="31K2959" constant="no"/>
+<attribute name="DIGIKEY" value="MCP23017-E/SS-ND" constant="no"/>
+<attribute name="MPN" value="MCP23017-E/SS" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -5542,7 +5548,7 @@ http://www.digikey.com/product-detail/en/XC3S250E-4PQG208C/122-1483-ND/1091711</
 </device>
 </devices>
 </deviceset>
-<deviceset name="XC3S250E-4TQG144C">
+<deviceset name="XC3S250E-4TQG144C" prefix="U">
 <description>Spartan-3E 144pin</description>
 <gates>
 <gate name="G$1" symbol="XC3S250_TQ144" x="0" y="0"/>
@@ -5697,7 +5703,8 @@ http://www.digikey.com/product-detail/en/XC3S250E-4PQG208C/122-1483-ND/1091711</
 </connects>
 <technologies>
 <technology name="">
-<attribute name="GATES" value="" constant="no"/>
+<attribute name="DIGIKEY" value="122-1524-ND" constant="no"/>
+<attribute name="MPN" value="XC3S250E-4TQG144C" constant="no"/>
 </technology>
 </technologies>
 </device>

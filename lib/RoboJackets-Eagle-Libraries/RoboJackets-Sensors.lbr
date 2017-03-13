@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -325,7 +325,7 @@ In this library you will find circuit elements that are used for getting measure
 <pin name="SDA" x="17.78" y="0" length="middle" rot="R180"/>
 <pin name="VDD" x="-17.78" y="7.62" length="middle"/>
 <pin name="VLOGIC" x="17.78" y="-5.08" length="middle" rot="R180"/>
-<text x="-12.7" y="10.16" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="12.7" size="1.778" layer="95" align="top-left">&gt;NAME</text>
 <text x="-12.7" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="MPU-9250">
@@ -423,12 +423,12 @@ In this library you will find circuit elements that are used for getting measure
 </device>
 </devices>
 </deviceset>
-<deviceset name="MPU-6050">
+<deviceset name="MPU-6050" prefix="U">
 <gates>
 <gate name="G$1" symbol="MPU-6050" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-1" package="QFN-24-4MM2">
+<device name="" package="QFN-24-4MM2">
 <connects>
 <connect gate="G$1" pin="AD0" pad="9"/>
 <connect gate="G$1" pin="AUX_CL" pad="7"/>
@@ -445,7 +445,10 @@ In this library you will find circuit elements that are used for getting measure
 <connect gate="G$1" pin="VLOGIC" pad="8"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="1428-1007-1-ND" constant="no"/>
+<attribute name="MPN" value="MPU-6050" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>

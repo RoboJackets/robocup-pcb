@@ -1551,7 +1551,10 @@ Shoot-through protection</description>
 <connect gate="G$1" pin="VDD_SPI" pad="45"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="296-40070-1-ND" constant="no"/>
+<attribute name="MPN" value="DRV8303DCAR" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1580,7 +1583,10 @@ Shoot-through protection</description>
 <connect gate="G$1" pin="VOUT" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="296-32415-1-ND" constant="no"/>
+<attribute name="MPN" value="TLV70233DBVR" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1601,7 +1607,10 @@ Shoot-through protection</description>
 <connect gate="G$1" pin="VOUT" pad="7"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="LMZ14201HTZX/NOPBCT-ND" constant="no"/>
+<attribute name="MPN" value="LMZ14201HTZX/NOPB" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1624,7 +1633,10 @@ Shoot-through protection</description>
 <connect gate="G$1" pin="VCC" pad="17"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="497-11623-1-ND" constant="no"/>
+<attribute name="MPN" value="VND5E006ASPTR-E" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
