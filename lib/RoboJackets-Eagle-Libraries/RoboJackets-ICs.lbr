@@ -5400,10 +5400,7 @@ http://www.digikey.com/product-detail/en/XC3S250E-4PQG208C/122-1483-ND/1091711</
 <connect gate="G$1" pin="VSS" pad="10"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="DIGIKEY" value="MCP23017-E/SS-ND" constant="no"/>
-<attribute name="MPN" value="MCP23017-E/SS" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="-E/SO" package="SO28W">
@@ -5512,7 +5509,10 @@ http://www.digikey.com/product-detail/en/XC3S250E-4PQG208C/122-1483-ND/1091711</
 <connect gate="G$1" pin="VSS" pad="10"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="MCP23017-E/SS-ND" constant="no"/>
+<attribute name="MPN" value="MCP23017-E/SS" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
