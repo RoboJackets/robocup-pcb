@@ -160,13 +160,13 @@
 </layers>
 <board>
 <plain>
-<wire x1="29.5" y1="46.5" x2="56.25" y2="19.75" width="0" layer="20"/>
+<wire x1="29.25" y1="46.5" x2="56.25" y2="19.75" width="0" layer="20"/>
 <wire x1="56.25" y1="19.75" x2="123.75" y2="19.75" width="0" layer="20"/>
-<wire x1="29.5" y1="115.25" x2="29.5" y2="46.5" width="0" layer="20"/>
+<wire x1="29.25" y1="115.25" x2="29.25" y2="46.5" width="0" layer="20"/>
 <circle x="87.5" y="90" radius="88" width="0.4064" layer="51"/>
-<wire x1="29.5" y1="115.25" x2="150.5" y2="115.25" width="0" layer="20"/>
-<wire x1="150.5" y1="115.25" x2="150.5" y2="46.5" width="0" layer="20"/>
-<wire x1="150.5" y1="46.5" x2="123.75" y2="19.75" width="0" layer="20"/>
+<wire x1="29.25" y1="115.25" x2="150.75" y2="115.25" width="0" layer="20"/>
+<wire x1="150.75" y1="115.25" x2="150.75" y2="46.5" width="0" layer="20"/>
+<wire x1="150.75" y1="46.5" x2="123.75" y2="19.75" width="0" layer="20"/>
 <wire x1="80.25" y1="79.5" x2="81.25" y2="79.5" width="0.3" layer="51"/>
 <wire x1="80.25" y1="77" x2="81.25" y2="77" width="0.3" layer="51"/>
 <wire x1="80.25" y1="74" x2="81.25" y2="74" width="0.3" layer="51"/>
@@ -2584,6 +2584,10 @@ rfk_1850.pdf</description>
 <wire x1="0" y1="-7" x2="-1.5" y2="-7" width="0.127" layer="21"/>
 <wire x1="-1.5" y1="-7" x2="-1.5" y2="-12" width="0.127" layer="21"/>
 </package>
+<package name="STANDOFF-HOLE">
+<hole x="0" y="0" drill="3.9"/>
+<circle x="0" y="0" radius="3.6" width="0" layer="39"/>
+</package>
 </packages>
 </library>
 <library name="RoboJackets-Discrete">
@@ -3475,7 +3479,7 @@ shrink quad flat pack, square (smd-ipc)</description>
 In this library you will find resistors. If you are looking for a common package, use the default &lt;b&gt;rcl &lt;/b&gt;library provided with EAGLE instead of looking here.
 &lt;/p&gt;</description>
 <packages>
-<package name="742C163331JP">
+<package name="RA-8_2506">
 <description>&lt;b&gt;Chip Resistor Array&lt;/b&gt;&lt;p&gt;
 Source: http://www.ctscorp.com/components/Datasheets/CTSChipArrayDs.pdf</description>
 <wire x1="-3.15" y1="0.75" x2="-3.05" y2="0.75" width="0.1016" layer="51"/>
@@ -4180,9 +4184,21 @@ Your Eurocircuits Team
 <element name="C7" library="rcl" package="C0603" value="GRM188R6YA106MA73D" x="75" y="48.5" rot="R270"/>
 <element name="C8" library="rcl" package="C1210" value="LMK325ABJ107MM-P" x="77.25" y="37.75" rot="R270"/>
 <element name="C9" library="resistor" package="C0603" value="100nF" x="94.25" y="50.25" rot="MR180"/>
-<element name="D3" library="RoboJackets-LEDs" package="CHIP-LED0603" value="Green" x="72.75" y="21" rot="R270"/>
-<element name="D4" library="RoboJackets-LEDs" package="CHIP-LED0603" value="GREEN" x="72.75" y="32.5" rot="R270"/>
-<element name="D5" library="RoboJackets-LEDs" package="CHIP-LED0603" value="GREEN" x="72.75" y="36.5" rot="R270"/>
+<element name="D3" library="RoboJackets-LEDs" package="CHIP-LED0603" value="GREEN" x="72.75" y="21" rot="R270">
+<attribute name="DIGIKEY" value="160-1446-1-ND" x="72.75" y="21" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="LTST-C191KGKT" x="72.75" y="21" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" value="GREEN" x="72.75" y="21" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="D4" library="RoboJackets-LEDs" package="CHIP-LED0603" value="GREEN" x="72.75" y="32.5" rot="R270">
+<attribute name="DIGIKEY" value="160-1446-1-ND" x="72.75" y="32.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="LTST-C191KGKT" x="72.75" y="32.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" value="GREEN" x="72.75" y="32.5" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="D5" library="RoboJackets-LEDs" package="CHIP-LED0603" value="GREEN" x="72.75" y="36.5" rot="R270">
+<attribute name="DIGIKEY" value="160-1446-1-ND" x="72.75" y="36.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="LTST-C191KGKT" x="72.75" y="36.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" value="GREEN" x="72.75" y="36.5" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
 <element name="DD:C1" library="rcl" package="C0603" value="1uF" x="63.75" y="96"/>
 <element name="DD:C10" library="rcl" package="C0603" value="0.1uF 50V" x="52.75" y="84"/>
 <element name="DD:C2" library="rcl" package="C0603" value="1uF" x="63.75" y="98.25"/>
@@ -4191,21 +4207,43 @@ Your Eurocircuits Team
 <element name="DD:C7" library="rcl" package="C0603" value="0.1uF 50V" x="47.5" y="88.5" rot="R180"/>
 <element name="DD:C8" library="rcl" package="C0603" value="0.1uF 50V" x="47.5" y="95" rot="R180"/>
 <element name="DD:C9" library="rcl" package="C0603" value="2.2uF 50V" x="65.75" y="89.75"/>
-<element name="DD:Q1" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="43.75" y="85.25" rot="MR180"/>
-<element name="DD:Q2" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="43.75" y="85.25" rot="R180"/>
-<element name="DD:Q3" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="43.75" y="91.75" rot="MR180"/>
-<element name="DD:Q4" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="43.75" y="91.75" rot="R180"/>
-<element name="DD:Q5" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="43.75" y="98.25" rot="MR180"/>
-<element name="DD:Q6" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="43.75" y="98.25" rot="R180"/>
+<element name="DD:Q1" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="43.75" y="85.25" rot="MR180">
+<attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="43.75" y="85.25" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MPN" value="IRFH7545TRPBF" x="43.75" y="85.25" size="1.778" layer="28" rot="MR180" display="off"/>
+</element>
+<element name="DD:Q2" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="43.75" y="85.25" rot="R180">
+<attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="43.75" y="85.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="IRFH7545TRPBF" x="43.75" y="85.25" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="DD:Q3" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="43.75" y="91.75" rot="MR180">
+<attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="43.75" y="91.75" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MPN" value="IRFH7545TRPBF" x="43.75" y="91.75" size="1.778" layer="28" rot="MR180" display="off"/>
+</element>
+<element name="DD:Q4" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="43.75" y="91.75" rot="R180">
+<attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="43.75" y="91.75" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="IRFH7545TRPBF" x="43.75" y="91.75" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="DD:Q5" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="43.75" y="98.25" rot="MR180">
+<attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="43.75" y="98.25" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MPN" value="IRFH7545TRPBF" x="43.75" y="98.25" size="1.778" layer="28" rot="MR180" display="off"/>
+</element>
+<element name="DD:Q6" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="43.75" y="98.25" rot="R180">
+<attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="43.75" y="98.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="IRFH7545TRPBF" x="43.75" y="98.25" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
 <element name="DD:R1" library="rcl" package="R0603" value="10k" x="65.75" y="92" rot="R180"/>
-<element name="DD:U1" library="RoboJackets-PowerICs" package="TSSOP-48_PAD" value="DRV8303DCA" x="57" y="92" rot="R90"/>
+<element name="DD:U1" library="RoboJackets-PowerICs" package="TSSOP-48_PAD" value="DRV8303DCA" x="57" y="92" rot="R90">
+<attribute name="DIGIKEY" value="296-40070-1-ND" x="57" y="92" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="DRV8303DCAR" x="57" y="92" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
 <element name="F1" library="RoboJackets-Fuses" package="FUSEHOLDER_3549_X2" value="30A" x="101.75" y="28.75"/>
 <element name="F2" library="RoboJackets-Fuses" package="F0603" value="0603L075SLYR" x="82.25" y="44.5" rot="MR90"/>
 <element name="IC1" library="RoboJackets-ICs" package="SSOP-28" value="MCP23017-E/SS" x="51.75" y="109.5" rot="MR0"/>
-<element name="J9" library="RoboJackets-Connectors" package="DF22-2-H" value="DF22-2" x="85.25" y="36.75" rot="MR180"/>
-<element name="KIT1" library="RoboJackets-Boards" package="MBED-KIT" value="MBED_NXP_LPC1768" x="116.5" y="101.75" rot="R270">
-<attribute name="ARM" value="" x="116.5" y="101.75" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="J9" library="RoboJackets-Connectors" package="DF22-2-H" value="DF22-2" x="85.25" y="36.75" rot="MR180">
+<attribute name="DIGIKEY" value="H125155-ND" x="85.25" y="36.75" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MPN" value="DF22-2P-7.92DS(35)" x="85.25" y="36.75" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
+<element name="KIT1" library="RoboJackets-Boards" package="MBED-KIT" value="MBED_NXP_LPC1768" x="116.5" y="101.75" rot="R270"/>
 <element name="R1" library="resistor" package="R0603" value="330" x="107.75" y="94.25" rot="R90"/>
 <element name="R10" library="rcl" package="R0603" value="100k" x="100.75" y="42" rot="MR0"/>
 <element name="R11" library="rcl" package="R0603" value="1k" x="72.75" y="22.75"/>
@@ -4220,209 +4258,345 @@ Your Eurocircuits Team
 <element name="R7" library="rcl" package="R0603" value="1k" x="96.25" y="39" rot="R90"/>
 <element name="R8" library="rcl" package="R0603" value="1k" x="101.25" y="39" rot="R90"/>
 <element name="R9" library="rcl" package="R0603" value="270k" x="100.75" y="44.25" rot="MR180"/>
-<element name="RN1" library="RoboJackets-Resistors" package="742C163331JP" value="742C163331JP" x="58.25" y="111.5" rot="MR90">
-<attribute name="MF" value="" x="58.25" y="111.5" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="MPN" value="" x="58.25" y="111.5" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="58.25" y="111.5" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="58.25" y="111.5" size="1.778" layer="28" rot="MR90" display="off"/>
+<element name="RN1" library="RoboJackets-Resistors" package="RA-8_2506" value="" x="58.25" y="111.5" rot="MR90">
+<attribute name="DIGIKEY" value="742C163331JPCT-ND" x="58.25" y="111.5" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MPN" value="742C163331JP" x="58.25" y="111.5" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
-<element name="RN2" library="RoboJackets-Resistors" package="742C163331JP" value="742C163331JP" x="74.5" y="72.75" rot="R90">
-<attribute name="MF" value="" x="74.5" y="72.75" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="74.5" y="72.75" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="74.5" y="72.75" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="74.5" y="72.75" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="RN2" library="RoboJackets-Resistors" package="RA-8_2506" value="" x="74.5" y="72.75" rot="R90">
+<attribute name="DIGIKEY" value="742C163331JPCT-ND" x="74.5" y="72.75" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="742C163331JP" x="74.5" y="72.75" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="RN3" library="RoboJackets-Resistors" package="742C163331JP" value="742C163331JP" x="74.5" y="79.5" rot="R90">
-<attribute name="MF" value="" x="74.5" y="79.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="74.5" y="79.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="74.5" y="79.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="74.5" y="79.5" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="RN3" library="RoboJackets-Resistors" package="RA-8_2506" value="" x="74.5" y="79.5" rot="R90">
+<attribute name="DIGIKEY" value="742C163331JPCT-ND" x="74.5" y="79.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="742C163331JP" x="74.5" y="79.5" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="RN4" library="RoboJackets-Resistors" package="742C163331JP" value="742C163331JP" x="89.25" y="62.25" rot="R180">
-<attribute name="MF" value="" x="89.25" y="62.25" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="89.25" y="62.25" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="89.25" y="62.25" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="89.25" y="62.25" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="RN4" library="RoboJackets-Resistors" package="RA-8_2506" value="" x="89.25" y="62.25" rot="R180">
+<attribute name="DIGIKEY" value="742C163331JPCT-ND" x="89.25" y="62.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="742C163331JP" x="89.25" y="62.25" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="RN5" library="RoboJackets-Resistors" package="742C163331JP" value="742C163331JP" x="104.5" y="74.25" rot="R270">
-<attribute name="MF" value="" x="104.5" y="74.25" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="" x="104.5" y="74.25" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="104.5" y="74.25" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="104.5" y="74.25" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="RN5" library="RoboJackets-Resistors" package="RA-8_2506" value="" x="104.5" y="74.25" rot="R270">
+<attribute name="DIGIKEY" value="742C163331JPCT-ND" x="104.5" y="74.25" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="742C163331JP" x="104.5" y="74.25" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="RN6" library="RoboJackets-Resistors" package="742C163331JP" value="742C163331JP" x="74.5" y="86.5" rot="R90">
-<attribute name="MF" value="" x="74.5" y="86.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="74.5" y="86.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="74.5" y="86.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="74.5" y="86.5" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="RN6" library="RoboJackets-Resistors" package="RA-8_2506" value="" x="74.5" y="86.5" rot="R90">
+<attribute name="DIGIKEY" value="742C163331JPCT-ND" x="74.5" y="86.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="742C163331JP" x="74.5" y="86.5" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="RN7" library="RoboJackets-Resistors" package="742C163331JP" value="742C163331JP" x="104.5" y="81.25" rot="R270">
-<attribute name="MF" value="" x="104.5" y="81.25" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="" x="104.5" y="81.25" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="104.5" y="81.25" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="104.5" y="81.25" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="RN7" library="RoboJackets-Resistors" package="RA-8_2506" value="" x="104.5" y="81.25" rot="R270">
+<attribute name="DIGIKEY" value="742C163331JPCT-ND" x="104.5" y="81.25" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="742C163331JP" x="104.5" y="81.25" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="RN8" library="RoboJackets-Resistors" package="742C163331JP" value="742C163331JP" x="103.176775" y="63.073221875" rot="R225">
-<attribute name="MF" value="" x="103.176775" y="63.073221875" size="1.778" layer="27" rot="R225" display="off"/>
-<attribute name="MPN" value="" x="103.176775" y="63.073221875" size="1.778" layer="27" rot="R225" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="103.176775" y="63.073221875" size="1.778" layer="27" rot="R225" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="103.176775" y="63.073221875" size="1.778" layer="27" rot="R225" display="off"/>
+<element name="RN8" library="RoboJackets-Resistors" package="RA-8_2506" value="" x="103.176775" y="63.073221875" rot="R225">
+<attribute name="DIGIKEY" value="742C163331JPCT-ND" x="103.176775" y="63.073221875" size="1.778" layer="27" rot="R225" display="off"/>
+<attribute name="MPN" value="742C163331JP" x="103.176775" y="63.073221875" size="1.778" layer="27" rot="R225" display="off"/>
 </element>
-<element name="S1" library="RoboJackets-Switches" package="34EWMSP12M6RT" value="34EWMSP12MRT" x="85.25" y="31.75" rot="R180"/>
-<element name="U$1" library="RoboJackets-ICs" package="TQFP144" value="XC3S250E-4TQG144C" x="90" y="76.25" rot="R90">
-<attribute name="GATES" value="" x="90" y="76.25" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="S1" library="RoboJackets-Switches" package="34EWMSP12M6RT" value="34EWMSP12M6RT" x="85.25" y="31.75" rot="R180">
+<attribute name="DIGIKEY" value="GH7540CT-ND" x="85.25" y="31.75" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="34EWMSP12M6RT" x="85.25" y="31.75" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="U3" library="RoboJackets-PowerICs" package="POWERSO-16" value="VND5E006ASPTR-E" x="99.25" y="48.25" rot="R180"/>
-<element name="U4" library="RoboJackets-PowerICs" package="TO-PMOD-7" value="LMZ14201" x="87.25" y="45" rot="R270"/>
+<element name="U1" library="RoboJackets-ICs" package="TQFP144" value="XC3S250E-4TQG144C" x="90" y="76.25" rot="R90">
+<attribute name="DIGIKEY" value="122-1524-ND" x="90" y="76.25" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="XC3S250E-4TQG144C" x="90" y="76.25" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="U3" library="RoboJackets-PowerICs" package="POWERSO-16" value="VND5E006ASPTR-E" x="99.25" y="48.25" rot="R180">
+<attribute name="DIGIKEY" value="497-11623-1-ND" x="99.25" y="48.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="VND5E006ASPTR-E" x="99.25" y="48.25" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="U4" library="RoboJackets-PowerICs" package="TO-PMOD-7" value="LMZ14201" x="87.25" y="45" rot="R270">
+<attribute name="DIGIKEY" value="LMZ14201HTZX/NOPBCT-ND" x="87.25" y="45" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="LMZ14201HTZX/NOPB" x="87.25" y="45" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
 <element name="U5" library="RoboJackets-ICs" package="SOT-23-5" value="MCP1824T-1202E/OT" x="94.25" y="44.75" rot="MR0">
-<attribute name="CURRENT" value="0.3A" x="94.25" y="44.75" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="DIGIKEY" value="MCP1824T-1202E/OTCT-ND" x="94.25" y="44.75" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MPN" value="MCP1824T-1202E/OT" x="94.25" y="44.75" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VOLTAGE" value="1.2V" x="94.25" y="44.75" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="U6" library="RoboJackets-ICs" package="SOT-23-5" value="MCP1824T-2502E/OT" x="90.75" y="44.75" rot="MR0">
-<attribute name="CURRENT" value="0.3A" x="90.75" y="44.75" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="DIGIKEY" value="MCP1824T-2502E/OTCT-ND" x="90.75" y="44.75" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MPN" value="MCP1824T-2502E/OT" x="90.75" y="44.75" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VOLTAGE" value="2.5V" x="90.75" y="44.75" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="M1:C1" library="rcl" package="C0603" value="1uF" x="63.75" y="74.5"/>
 <element name="M1:C10" library="rcl" package="C0603" value="0.1uF 50V" x="53" y="62.5"/>
-<element name="M1:C11" library="RoboJackets-Capacitors" package="PANASONIC_J16" value="EEE-FK1H102AM" x="57" y="70" rot="MR0"/>
+<element name="M1:C11" library="RoboJackets-Capacitors" package="PANASONIC_J16" value="EEE-FK1H102AM" x="57" y="70" rot="MR0">
+<attribute name="DIGIKEY" value="PCE4848CT-ND" x="57" y="70" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MPN" value="EEE-FK1H102AM" x="57" y="70" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
 <element name="M1:C2" library="rcl" package="C0603" value="1uF" x="63.75" y="76.75"/>
 <element name="M1:C3" library="rcl" package="C0603" value="22000pF 50V" x="63" y="69.5" rot="R90"/>
 <element name="M1:C6" library="rcl" package="C0603" value="0.1uF 50V" x="47.5" y="60.5" rot="R180"/>
 <element name="M1:C7" library="rcl" package="C0603" value="0.1uF 50V" x="47.5" y="67" rot="R180"/>
 <element name="M1:C8" library="rcl" package="C0603" value="0.1uF 50V" x="47.5" y="73.5" rot="R180"/>
 <element name="M1:C9" library="rcl" package="C0603" value="2.2uF 50V" x="65.75" y="68.25"/>
-<element name="M1:Q1" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="43.75" y="63.75" rot="MR180"/>
-<element name="M1:Q2" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="43.75" y="63.75" rot="R180"/>
-<element name="M1:Q3" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="43.75" y="70.25" rot="MR180"/>
-<element name="M1:Q4" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="43.75" y="70.25" rot="R180"/>
-<element name="M1:Q5" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="43.75" y="76.75" rot="MR180"/>
-<element name="M1:Q6" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="43.75" y="76.75" rot="R180"/>
+<element name="M1:Q1" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="43.75" y="63.75" rot="MR180">
+<attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="43.75" y="63.75" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MPN" value="IRFH7545TRPBF" x="43.75" y="63.75" size="1.778" layer="28" rot="MR180" display="off"/>
+</element>
+<element name="M1:Q2" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="43.75" y="63.75" rot="R180">
+<attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="43.75" y="63.75" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="IRFH7545TRPBF" x="43.75" y="63.75" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="M1:Q3" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="43.75" y="70.25" rot="MR180">
+<attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="43.75" y="70.25" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MPN" value="IRFH7545TRPBF" x="43.75" y="70.25" size="1.778" layer="28" rot="MR180" display="off"/>
+</element>
+<element name="M1:Q4" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="43.75" y="70.25" rot="R180">
+<attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="43.75" y="70.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="IRFH7545TRPBF" x="43.75" y="70.25" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="M1:Q5" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="43.75" y="76.75" rot="MR180">
+<attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="43.75" y="76.75" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MPN" value="IRFH7545TRPBF" x="43.75" y="76.75" size="1.778" layer="28" rot="MR180" display="off"/>
+</element>
+<element name="M1:Q6" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="43.75" y="76.75" rot="R180">
+<attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="43.75" y="76.75" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="IRFH7545TRPBF" x="43.75" y="76.75" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
 <element name="M1:R1" library="rcl" package="R0603" value="10k" x="65.75" y="70.5" rot="R180"/>
-<element name="M1:U1" library="RoboJackets-PowerICs" package="TSSOP-48_PAD" value="DRV8303DCA" x="57" y="70.5" rot="R90"/>
+<element name="M1:U1" library="RoboJackets-PowerICs" package="TSSOP-48_PAD" value="DRV8303DCA" x="57" y="70.5" rot="R90">
+<attribute name="DIGIKEY" value="296-40070-1-ND" x="57" y="70.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="DRV8303DCAR" x="57" y="70.5" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
 <element name="M2:C1" library="rcl" package="C0603" value="1uF" x="67" y="58.5" rot="R45"/>
 <element name="M2:C10" library="rcl" package="C0603" value="0.1uF 50V" x="67" y="42.25" rot="R45"/>
-<element name="M2:C11" library="RoboJackets-Capacitors" package="PANASONIC_J16" value="EEE-FK1H102AM" x="117.5" y="54.5" rot="MR225"/>
+<element name="M2:C11" library="RoboJackets-Capacitors" package="PANASONIC_J16" value="EEE-FK1H102AM" x="117.5" y="54.5" rot="MR225">
+<attribute name="DIGIKEY" value="PCE4848CT-ND" x="117.5" y="54.5" size="1.778" layer="28" rot="MR225" display="off"/>
+<attribute name="MPN" value="EEE-FK1H102AM" x="117.5" y="54.5" size="1.778" layer="28" rot="MR225" display="off"/>
+</element>
 <element name="M2:C2" library="rcl" package="C0603" value="1uF" x="65.5" y="60" rot="R45"/>
 <element name="M2:C3" library="rcl" package="C0603" value="22000pF 50V" x="70" y="54.5" rot="R135"/>
 <element name="M2:C6" library="rcl" package="C0603" value="0.1uF 50V" x="64.75" y="36.25" rot="R225"/>
 <element name="M2:C7" library="rcl" package="C0603" value="0.1uF 50V" x="60" y="41" rot="R225"/>
 <element name="M2:C8" library="rcl" package="C0603" value="0.1uF 50V" x="55.25" y="45.75" rot="R225"/>
 <element name="M2:C9" library="rcl" package="C0603" value="2.2uF 50V" x="73" y="55.5" rot="R45"/>
-<element name="M2:Q1" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="59.75" y="36" rot="MR135"/>
-<element name="M2:Q2" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="59.75" y="36" rot="R225"/>
-<element name="M2:Q3" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="55" y="40.75" rot="MR135"/>
-<element name="M2:Q4" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="55" y="40.75" rot="R225"/>
-<element name="M2:Q5" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="50.25" y="45.5" rot="MR135"/>
-<element name="M2:Q6" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="50.25" y="45.5" rot="R225"/>
+<element name="M2:Q1" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="59.75" y="36" rot="MR135">
+<attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="59.75" y="36" size="1.778" layer="28" rot="MR135" display="off"/>
+<attribute name="MPN" value="IRFH7545TRPBF" x="59.75" y="36" size="1.778" layer="28" rot="MR135" display="off"/>
+</element>
+<element name="M2:Q2" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="59.75" y="36" rot="R225">
+<attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="59.75" y="36" size="1.778" layer="27" rot="R225" display="off"/>
+<attribute name="MPN" value="IRFH7545TRPBF" x="59.75" y="36" size="1.778" layer="27" rot="R225" display="off"/>
+</element>
+<element name="M2:Q3" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="55" y="40.75" rot="MR135">
+<attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="55" y="40.75" size="1.778" layer="28" rot="MR135" display="off"/>
+<attribute name="MPN" value="IRFH7545TRPBF" x="55" y="40.75" size="1.778" layer="28" rot="MR135" display="off"/>
+</element>
+<element name="M2:Q4" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="55" y="40.75" rot="R225">
+<attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="55" y="40.75" size="1.778" layer="27" rot="R225" display="off"/>
+<attribute name="MPN" value="IRFH7545TRPBF" x="55" y="40.75" size="1.778" layer="27" rot="R225" display="off"/>
+</element>
+<element name="M2:Q5" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="50.25" y="45.5" rot="MR135">
+<attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="50.25" y="45.5" size="1.778" layer="28" rot="MR135" display="off"/>
+<attribute name="MPN" value="IRFH7545TRPBF" x="50.25" y="45.5" size="1.778" layer="28" rot="MR135" display="off"/>
+</element>
+<element name="M2:Q6" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="50.25" y="45.5" rot="R225">
+<attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="50.25" y="45.5" size="1.778" layer="27" rot="R225" display="off"/>
+<attribute name="MPN" value="IRFH7545TRPBF" x="50.25" y="45.5" size="1.778" layer="27" rot="R225" display="off"/>
+</element>
 <element name="M2:R1" library="rcl" package="R0603" value="10k" x="71.5" y="57" rot="R225"/>
-<element name="M2:U1" library="RoboJackets-PowerICs" package="TSSOP-48_PAD" value="DRV8303DCA" x="65" y="51" rot="R135"/>
+<element name="M2:U1" library="RoboJackets-PowerICs" package="TSSOP-48_PAD" value="DRV8303DCA" x="65" y="51" rot="R135">
+<attribute name="DIGIKEY" value="296-40070-1-ND" x="65" y="51" size="1.778" layer="27" rot="R135" display="off"/>
+<attribute name="MPN" value="DRV8303DCAR" x="65" y="51" size="1.778" layer="27" rot="R135" display="off"/>
+</element>
 <element name="M3:C1" library="rcl" package="C0603" value="1uF" x="110.25" y="56.5" rot="R135"/>
 <element name="M3:C10" library="rcl" package="C0603" value="0.1uF 50V" x="126.25" y="56.75" rot="R135"/>
-<element name="M3:C11" library="RoboJackets-Capacitors" package="PANASONIC_J16" value="EEE-FK1H102AM" x="65.75" y="50.25" rot="MR135"/>
+<element name="M3:C11" library="RoboJackets-Capacitors" package="PANASONIC_J16" value="EEE-FK1H102AM" x="65.75" y="50.25" rot="MR135">
+<attribute name="DIGIKEY" value="PCE4848CT-ND" x="65.75" y="50.25" size="1.778" layer="28" rot="MR135" display="off"/>
+<attribute name="MPN" value="EEE-FK1H102AM" x="65.75" y="50.25" size="1.778" layer="28" rot="MR135" display="off"/>
+</element>
 <element name="M3:C2" library="rcl" package="C0603" value="1uF" x="108.75" y="55" rot="R135"/>
 <element name="M3:C3" library="rcl" package="C0603" value="22000pF 50V" x="114" y="59.5" rot="R225"/>
 <element name="M3:C6" library="rcl" package="C0603" value="0.1uF 50V" x="132.25" y="54.25" rot="R315"/>
 <element name="M3:C7" library="rcl" package="C0603" value="0.1uF 50V" x="127.5" y="49.5" rot="R315"/>
 <element name="M3:C8" library="rcl" package="C0603" value="0.1uF 50V" x="122.75" y="44.75" rot="R315"/>
 <element name="M3:C9" library="rcl" package="C0603" value="2.2uF 50V" x="113" y="62.5" rot="R135"/>
-<element name="M3:Q1" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="132.5" y="49.25" rot="MR45"/>
-<element name="M3:Q2" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="132.5" y="49.25" rot="R315"/>
-<element name="M3:Q3" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="127.75" y="44.5" rot="MR45"/>
-<element name="M3:Q4" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="127.75" y="44.5" rot="R315"/>
-<element name="M3:Q5" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="123" y="39.75" rot="MR45"/>
-<element name="M3:Q6" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="123" y="39.75" rot="R315"/>
+<element name="M3:Q1" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="132.5" y="49.25" rot="MR45">
+<attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="132.5" y="49.25" size="1.778" layer="28" rot="MR45" display="off"/>
+<attribute name="MPN" value="IRFH7545TRPBF" x="132.5" y="49.25" size="1.778" layer="28" rot="MR45" display="off"/>
+</element>
+<element name="M3:Q2" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="132.5" y="49.25" rot="R315">
+<attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="132.5" y="49.25" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MPN" value="IRFH7545TRPBF" x="132.5" y="49.25" size="1.778" layer="27" rot="R315" display="off"/>
+</element>
+<element name="M3:Q3" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="127.75" y="44.5" rot="MR45">
+<attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="127.75" y="44.5" size="1.778" layer="28" rot="MR45" display="off"/>
+<attribute name="MPN" value="IRFH7545TRPBF" x="127.75" y="44.5" size="1.778" layer="28" rot="MR45" display="off"/>
+</element>
+<element name="M3:Q4" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="127.75" y="44.5" rot="R315">
+<attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="127.75" y="44.5" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MPN" value="IRFH7545TRPBF" x="127.75" y="44.5" size="1.778" layer="27" rot="R315" display="off"/>
+</element>
+<element name="M3:Q5" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="123" y="39.75" rot="MR45">
+<attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="123" y="39.75" size="1.778" layer="28" rot="MR45" display="off"/>
+<attribute name="MPN" value="IRFH7545TRPBF" x="123" y="39.75" size="1.778" layer="28" rot="MR45" display="off"/>
+</element>
+<element name="M3:Q6" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="123" y="39.75" rot="R315">
+<attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="123" y="39.75" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MPN" value="IRFH7545TRPBF" x="123" y="39.75" size="1.778" layer="27" rot="R315" display="off"/>
+</element>
 <element name="M3:R1" library="rcl" package="R0603" value="10k" x="111.5" y="61" rot="R315"/>
-<element name="M3:U1" library="RoboJackets-PowerICs" package="TSSOP-48_PAD" value="DRV8303DCA" x="117.5" y="54.5" rot="R225"/>
+<element name="M3:U1" library="RoboJackets-PowerICs" package="TSSOP-48_PAD" value="DRV8303DCA" x="117.5" y="54.5" rot="R225">
+<attribute name="DIGIKEY" value="296-40070-1-ND" x="117.5" y="54.5" size="1.778" layer="27" rot="R225" display="off"/>
+<attribute name="MPN" value="DRV8303DCAR" x="117.5" y="54.5" size="1.778" layer="27" rot="R225" display="off"/>
+</element>
 <element name="M4:C1" library="rcl" package="C0603" value="1uF" x="116" y="71" rot="R180"/>
 <element name="M4:C10" library="rcl" package="C0603" value="0.1uF 50V" x="127.25" y="82.75" rot="R180"/>
-<element name="M4:C11" library="RoboJackets-Capacitors" package="PANASONIC_J16" value="EEE-FK1H102AM" x="123" y="75.5" rot="MR0"/>
+<element name="M4:C11" library="RoboJackets-Capacitors" package="PANASONIC_J16" value="EEE-FK1H102AM" x="123" y="75.5" rot="MR0">
+<attribute name="DIGIKEY" value="PCE4848CT-ND" x="123" y="75.5" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MPN" value="EEE-FK1H102AM" x="123" y="75.5" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
 <element name="M4:C2" library="rcl" package="C0603" value="1uF" x="116" y="68.75" rot="R180"/>
 <element name="M4:C3" library="rcl" package="C0603" value="22000pF 50V" x="117" y="76" rot="R270"/>
 <element name="M4:C6" library="rcl" package="C0603" value="0.1uF 50V" x="132.5" y="85.25"/>
 <element name="M4:C7" library="rcl" package="C0603" value="0.1uF 50V" x="132.5" y="78.75"/>
 <element name="M4:C8" library="rcl" package="C0603" value="0.1uF 50V" x="132.5" y="72.25"/>
 <element name="M4:C9" library="rcl" package="C0603" value="2.2uF 50V" x="114.25" y="77.25" rot="R180"/>
-<element name="M4:Q1" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="136.25" y="82" rot="MR0"/>
-<element name="M4:Q2" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="136.25" y="82"/>
-<element name="M4:Q3" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="136.25" y="75.5" rot="MR0"/>
-<element name="M4:Q4" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="136.25" y="75.5"/>
-<element name="M4:Q5" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="136.25" y="69" rot="MR0"/>
-<element name="M4:Q6" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="136.25" y="69"/>
+<element name="M4:Q1" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="136.25" y="82" rot="MR0">
+<attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="136.25" y="82" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MPN" value="IRFH7545TRPBF" x="136.25" y="82" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="M4:Q2" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="136.25" y="82">
+<attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="136.25" y="82" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="IRFH7545TRPBF" x="136.25" y="82" size="1.778" layer="27" display="off"/>
+</element>
+<element name="M4:Q3" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="136.25" y="75.5" rot="MR0">
+<attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="136.25" y="75.5" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MPN" value="IRFH7545TRPBF" x="136.25" y="75.5" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="M4:Q4" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="136.25" y="75.5">
+<attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="136.25" y="75.5" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="IRFH7545TRPBF" x="136.25" y="75.5" size="1.778" layer="27" display="off"/>
+</element>
+<element name="M4:Q5" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="136.25" y="69" rot="MR0">
+<attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="136.25" y="69" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MPN" value="IRFH7545TRPBF" x="136.25" y="69" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="M4:Q6" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="136.25" y="69">
+<attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="136.25" y="69" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="IRFH7545TRPBF" x="136.25" y="69" size="1.778" layer="27" display="off"/>
+</element>
 <element name="M4:R1" library="rcl" package="R0603" value="10k" x="114.25" y="75"/>
-<element name="M4:U1" library="RoboJackets-PowerICs" package="TSSOP-48_PAD" value="DRV8303DCA" x="123" y="75" rot="R270"/>
-<element name="RN9" library="RoboJackets-Resistors" package="742C163331JP" value="742C163331JP" x="76.926775" y="63.073221875" rot="R135">
-<attribute name="MF" value="" x="76.926775" y="63.073221875" size="1.778" layer="27" rot="R135" display="off"/>
-<attribute name="MPN" value="" x="76.926775" y="63.073221875" size="1.778" layer="27" rot="R135" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="76.926775" y="63.073221875" size="1.778" layer="27" rot="R135" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="76.926775" y="63.073221875" size="1.778" layer="27" rot="R135" display="off"/>
+<element name="M4:U1" library="RoboJackets-PowerICs" package="TSSOP-48_PAD" value="DRV8303DCA" x="123" y="75" rot="R270">
+<attribute name="DIGIKEY" value="296-40070-1-ND" x="123" y="75" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="DRV8303DCAR" x="123" y="75" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="RN11" library="RoboJackets-Resistors" package="742C163331JP" value="742C163331JP" x="105.25" y="75.5" rot="MR90">
-<attribute name="MF" value="" x="105.25" y="75.5" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="MPN" value="" x="105.25" y="75.5" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="105.25" y="75.5" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="105.25" y="75.5" size="1.778" layer="28" rot="MR90" display="off"/>
+<element name="RN9" library="RoboJackets-Resistors" package="RA-8_2506" value="" x="76.926775" y="63.073221875" rot="R135">
+<attribute name="DIGIKEY" value="742C163331JPCT-ND" x="76.926775" y="63.073221875" size="1.778" layer="27" rot="R135" display="off"/>
+<attribute name="MPN" value="742C163331JP" x="76.926775" y="63.073221875" size="1.778" layer="27" rot="R135" display="off"/>
 </element>
-<element name="RN14" library="RoboJackets-Resistors" package="742C163331JP" value="742C163331JP" x="74.5" y="72.75" rot="MR270">
-<attribute name="MF" value="" x="74.5" y="72.75" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MPN" value="" x="74.5" y="72.75" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="74.5" y="72.75" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="74.5" y="72.75" size="1.778" layer="28" rot="MR270" display="off"/>
+<element name="RN11" library="RoboJackets-Resistors" package="RA-8_2506" value="" x="105.25" y="75.5" rot="MR90">
+<attribute name="DIGIKEY" value="742C163331JPCT-ND" x="105.25" y="75.5" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MPN" value="742C163331JP" x="105.25" y="75.5" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
-<element name="U$2" library="RoboJackets-Sensors" package="QFN-24-4MM2" value="MPU-6050-1" x="79" y="92.25" rot="R90"/>
+<element name="RN14" library="RoboJackets-Resistors" package="RA-8_2506" value="" x="74.5" y="72.75" rot="MR270">
+<attribute name="DIGIKEY" value="742C163331JPCT-ND" x="74.5" y="72.75" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="MPN" value="742C163331JP" x="74.5" y="72.75" size="1.778" layer="28" rot="MR270" display="off"/>
+</element>
+<element name="U2" library="RoboJackets-Sensors" package="QFN-24-4MM2" value="MPU-6050" x="79" y="92.25" rot="R90">
+<attribute name="DIGIKEY" value="1428-1007-1-ND" x="79" y="92.25" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="MPU-6050" x="79" y="92.25" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
 <element name="C1" library="rcl" package="C0603" value="0.47uF" x="83.25" y="91" rot="R90"/>
 <element name="C2" library="rcl" package="C0603" value="10nF" x="85.5" y="91" rot="R90"/>
 <element name="C4" library="rcl" package="C0603" value="100nF" x="83.75" y="93.75"/>
 <element name="C5" library="rcl" package="C0603" value="2.2nF" x="74.75" y="94" rot="R90"/>
 <element name="C12" library="rcl" package="C0603" value="0.47uF" x="80.5" y="96.75" rot="R90"/>
 <element name="C13" library="rcl" package="C0603" value="0.47uF" x="78.25" y="96.75" rot="R90"/>
-<element name="J1" library="RoboJackets-Connectors" package="HFW8R-1ST" value="HFW8R-1ST" x="147.75" y="100.25" rot="R90"/>
-<element name="S2" library="RoboJackets-Switches" package="HEX" value="94HCB16T" x="41" y="109" rot="R270"/>
-<element name="M1:J1" library="RoboJackets-Connectors" package="MKS-1658" value="MKS-1658" x="33.5" y="73.25" rot="R270"/>
-<element name="M2:J1" library="RoboJackets-Connectors" package="MKS-1658" value="MKS-1658" x="43.75" y="38.5" rot="R315"/>
-<element name="M3:J1" library="RoboJackets-Connectors" package="MKS-1658" value="MKS-1658" x="136.25" y="38.5" rot="R45"/>
-<element name="M4:J1" library="RoboJackets-Connectors" package="MKS-1658" value="MKS-1658" x="146.5" y="73.25" rot="R90"/>
+<element name="J1" library="RoboJackets-Connectors" package="HFW8R-1ST" value="HFW8R-1ST" x="147.75" y="100.25" rot="R90">
+<attribute name="DIGIKEY" value="609-1788-1-ND" x="147.75" y="100.25" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="HFW8R-1STE1LF" x="147.75" y="100.25" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="S2" library="RoboJackets-Switches" package="HEX" value="94HCB16T" x="41" y="109" rot="R270">
+<attribute name="DIGIKEY" value="GH7372-ND" x="41" y="109" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="94HCB16T" x="41" y="109" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="M1:J1" library="RoboJackets-Connectors" package="MKS-1658" value="MKS-1658" x="33.5" y="73.25" rot="R270">
+<attribute name="MPN" value="MKS 1658-6-0-808" x="33.5" y="73.25" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="M2:J1" library="RoboJackets-Connectors" package="MKS-1658" value="MKS-1658" x="43.75" y="38.5" rot="R315">
+<attribute name="MPN" value="MKS 1658-6-0-808" x="43.75" y="38.5" size="1.778" layer="27" rot="R315" display="off"/>
+</element>
+<element name="M3:J1" library="RoboJackets-Connectors" package="MKS-1658" value="MKS-1658" x="136.25" y="38.5" rot="R45">
+<attribute name="MPN" value="MKS 1658-6-0-808" x="136.25" y="38.5" size="1.778" layer="27" rot="R45" display="off"/>
+</element>
+<element name="M4:J1" library="RoboJackets-Connectors" package="MKS-1658" value="MKS-1658" x="146.5" y="73.25" rot="R90">
+<attribute name="MPN" value="MKS 1658-6-0-808" x="146.5" y="73.25" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
 <element name="M1:J2" library="RoboJackets-Connectors" package="2MM-4-H" value="4-PIN_2MM-H" x="35.25" y="55" rot="R270">
-<attribute name="PINS" value="4" x="35.25" y="55" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="PIN_PITCH" value="2.0 mm" x="35.25" y="55" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DIGIKEY" value="WM18933-ND" x="35.25" y="55" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="0353630460" x="35.25" y="55" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="M2:J2" library="RoboJackets-Connectors" package="2MM-4-H" value="4-PIN_2MM-H" x="57.5" y="26.75" rot="R315">
-<attribute name="PINS" value="4" x="57.5" y="26.75" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="PIN_PITCH" value="2.0 mm" x="57.5" y="26.75" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="DIGIKEY" value="WM18933-ND" x="57.5" y="26.75" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MPN" value="0353630460" x="57.5" y="26.75" size="1.778" layer="27" rot="R315" display="off"/>
 </element>
 <element name="M3:J2" library="RoboJackets-Connectors" package="2MM-4-H" value="4-PIN_2MM-H" x="122.5" y="26.75" rot="R45">
-<attribute name="PINS" value="4" x="122.5" y="26.75" size="1.778" layer="27" rot="R45" display="off"/>
-<attribute name="PIN_PITCH" value="2.0 mm" x="122.5" y="26.75" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="DIGIKEY" value="WM18933-ND" x="122.5" y="26.75" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="MPN" value="0353630460" x="122.5" y="26.75" size="1.778" layer="27" rot="R45" display="off"/>
 </element>
 <element name="M4:J2" library="RoboJackets-Connectors" package="2MM-4-H" value="4-PIN_2MM-H" x="144.75" y="55" rot="R90">
-<attribute name="PINS" value="4" x="144.75" y="55" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PIN_PITCH" value="2.0 mm" x="144.75" y="55" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIGIKEY" value="WM18933-ND" x="144.75" y="55" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="0353630460" x="144.75" y="55" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="DD:J1" library="RoboJackets-Connectors" package="2MM-8-H" value="8-PIN_2MM-H" x="32.75" y="96" rot="R270">
-<attribute name="PINS" value="8" x="32.75" y="96" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="PIN_PITCH" value="2.0 mm" x="32.75" y="96" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DIGIKEY" value="WM18937-ND" x="32.75" y="96" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="0353630860" x="32.75" y="96" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="S3" library="switch-dil" package="CTS-219-03" value="219-03" x="52.75" y="108.5" rot="R180">
+<attribute name="DIGIKEY" value="CT2193MST-ND" x="52.75" y="108.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="52.75" y="108.5" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="52.75" y="108.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="219-3MST" x="52.75" y="108.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="52.75" y="108.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="52.75" y="108.5" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="J2" library="RoboJackets-Connectors" package="B2PS-CENTERED" value="B2PS-CENTERED-VH(LF)(SN)" x="145.75" y="90.25" rot="R90"/>
-<element name="U1" library="RoboJackets-PowerICs" package="SOT-23-5" value="TLV70233DBVR" x="87.25" y="44.75" rot="MR0"/>
+<element name="J2" library="RoboJackets-Connectors" package="B2PS-CENTERED" value="B2PS-VH(LF)(SN)" x="145.75" y="90.25" rot="R90">
+<attribute name="DIGIKEY" value="455-1648-ND" x="145.75" y="90.25" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="B2PS-VH(LF)(SN)" x="145.75" y="90.25" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="U7" library="RoboJackets-PowerICs" package="SOT-23-5" value="TLV70233DBVR" x="87.25" y="44.75" rot="MR0">
+<attribute name="DIGIKEY" value="296-32415-1-ND" x="87.25" y="44.75" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MPN" value="TLV70233DBVR" x="87.25" y="44.75" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
 <element name="R3" library="rcl" package="R0603" value="10k" x="84.5" y="44.5" rot="MR90"/>
-<element name="J3" library="RoboJackets-Connectors" package="SBH11-*-D05-RA" value="SBH11-PBPC-D05-RA" x="79.25" y="104" rot="R180"/>
+<element name="J3" library="RoboJackets-Connectors" package="SBH11-*-D05-RA" value="SBH11-PBPC-D05-RA" x="79.25" y="104" rot="R180">
+<attribute name="DIGIKEY" value="S9177-ND" x="79.25" y="104" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="SBH11-PBPC-D05-RA-BK" x="79.25" y="104" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
 <element name="R4" library="resistor" package="R0603" value="68k" x="105.75" y="107.5" rot="R90"/>
 <element name="R19" library="resistor" package="R0603" value="10k" x="103" y="109.25" rot="R180"/>
 <element name="R20" library="resistor" package="R0603" value="10k" x="96.75" y="107.5" rot="R90"/>
 <element name="R21" library="resistor" package="R0603" value="10k" x="99.5" y="107"/>
 <element name="C14" library="resistor" package="C0603" value="0.1uF" x="103" y="107" rot="R180"/>
 <element name="C15" library="resistor" package="C0603" value="0.1uF" x="99.5" y="109.25"/>
-<element name="D1" library="RoboJackets-LEDs" package="CHIP-LED0603" value="RED" x="38.5" y="59"/>
-<element name="D2" library="RoboJackets-LEDs" package="CHIP-LED0603" value="RED" x="35.75" y="103.75"/>
-<element name="D6" library="RoboJackets-LEDs" package="CHIP-LED0603" value="RED" x="140.5" y="61" rot="R180"/>
-<element name="D7" library="RoboJackets-LEDs" package="CHIP-LED0603" value="RED" x="118.5" y="29" rot="R135"/>
-<element name="D8" library="RoboJackets-LEDs" package="CHIP-LED0603" value="RED" x="62.75" y="26.25" rot="R45"/>
-<element name="LED1" library="RoboJackets-LEDs" package="5050" value="WS2812B" x="61" y="110.5" rot="R270"/>
+<element name="D1" library="RoboJackets-LEDs" package="CHIP-LED0603" value="RED" x="38.5" y="59">
+<attribute name="DIGIKEY" value="160-1447-1-ND" x="38.5" y="59" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="LTST-C191KRKT" x="38.5" y="59" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" value="RED" x="38.5" y="59" size="1.778" layer="27" display="off"/>
+</element>
+<element name="D2" library="RoboJackets-LEDs" package="CHIP-LED0603" value="RED" x="35.75" y="103.75">
+<attribute name="DIGIKEY" value="160-1447-1-ND" x="35.75" y="103.75" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="LTST-C191KRKT" x="35.75" y="103.75" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" value="RED" x="35.75" y="103.75" size="1.778" layer="27" display="off"/>
+</element>
+<element name="D6" library="RoboJackets-LEDs" package="CHIP-LED0603" value="RED" x="140.5" y="61" rot="R180">
+<attribute name="DIGIKEY" value="160-1447-1-ND" x="140.5" y="61" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="LTST-C191KRKT" x="140.5" y="61" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" value="RED" x="140.5" y="61" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="D7" library="RoboJackets-LEDs" package="CHIP-LED0603" value="RED" x="118.5" y="29" rot="R135">
+<attribute name="DIGIKEY" value="160-1447-1-ND" x="118.5" y="29" size="1.778" layer="27" rot="R135" display="off"/>
+<attribute name="MPN" value="LTST-C191KRKT" x="118.5" y="29" size="1.778" layer="27" rot="R135" display="off"/>
+<attribute name="VALUE" value="RED" x="118.5" y="29" size="1.778" layer="27" rot="R135" display="off"/>
+</element>
+<element name="D8" library="RoboJackets-LEDs" package="CHIP-LED0603" value="RED" x="62.75" y="26.25" rot="R45">
+<attribute name="DIGIKEY" value="160-1447-1-ND" x="62.75" y="26.25" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="MPN" value="LTST-C191KRKT" x="62.75" y="26.25" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="VALUE" value="RED" x="62.75" y="26.25" size="1.778" layer="27" rot="R45" display="off"/>
+</element>
+<element name="LED1" library="RoboJackets-LEDs" package="5050" value="WS2812B" x="61" y="110.5" rot="R270">
+<attribute name="DIGIKEY" value="1528-1104-ND" x="61" y="110.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="1655" x="61" y="110.5" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
 <element name="C16" library="resistor" package="C0603" value="0.1uF" x="96.75" y="72" rot="MR0"/>
 <element name="C17" library="resistor" package="C0603" value="0.1uF" x="94.25" y="83.25" rot="MR270"/>
 <element name="C18" library="resistor" package="C0603" value="0.1uF" x="83" y="80.5" rot="MR180"/>
@@ -4441,29 +4615,54 @@ Your Eurocircuits Team
 <element name="C31" library="resistor" package="C0603" value="0.1uF" x="87" y="69.25" rot="MR90"/>
 <element name="C32" library="resistor" package="C0603" value="0.1uF" x="96.25" y="69.25" rot="MR90"/>
 <element name="C33" library="resistor" package="C0603" value="0.1uF" x="98.5" y="69.25" rot="MR90"/>
-<element name="X1" library="RoboJackets-FreqGen" package="ASV" value="ASV-18.432MHZ-EJ-T" x="87.5" y="92" rot="MR180"/>
+<element name="X1" library="RoboJackets-FreqGen" package="ASV" value="ASV-18.432MHZ-EJ-T" x="87.5" y="92" rot="MR180">
+<attribute name="DIGIKEY" value="535-9314-1-ND" x="87.5" y="92" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MPN" value="ASV-18.432MHZ-EJ-T" x="87.5" y="92" size="1.778" layer="28" rot="MR180" display="off"/>
+</element>
 <element name="C34" library="resistor" package="C0603" value="0.1uF" x="89.25" y="96.25" rot="MR0"/>
 <element name="R22" library="resistor" package="R0603" value="10k" x="100.75" y="69.25" rot="MR90"/>
 <element name="R23" library="resistor" package="R0603" value="10k" x="79.25" y="85.75" rot="MR270"/>
-<element name="D9" library="RoboJackets-LEDs" package="CHIP-LED0603" value="RED" x="70.75" y="105.75" rot="R90"/>
-<element name="D10" library="RoboJackets-LEDs" package="CHIP-LED0603" value="RED" x="74.75" y="97" rot="R90"/>
-<element name="D11" library="RoboJackets-LEDs" package="CHIP-LED0603" value="BLUE" x="66.25" y="110.25"/>
+<element name="D9" library="RoboJackets-LEDs" package="CHIP-LED0603" value="RED" x="70.75" y="105.75" rot="R90">
+<attribute name="DIGIKEY" value="160-1447-1-ND" x="70.75" y="105.75" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="LTST-C191KRKT" x="70.75" y="105.75" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" value="RED" x="70.75" y="105.75" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="D10" library="RoboJackets-LEDs" package="CHIP-LED0603" value="RED" x="74.75" y="97" rot="R90">
+<attribute name="DIGIKEY" value="160-1447-1-ND" x="74.75" y="97" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="LTST-C191KRKT" x="74.75" y="97" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" value="RED" x="74.75" y="97" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="D11" library="RoboJackets-LEDs" package="CHIP-LED0603" value="BLUE" x="66.25" y="110.25">
+<attribute name="DIGIKEY" value="160-1647-1-ND" x="66.25" y="110.25" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="LTST-C191TBKT" x="66.25" y="110.25" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" value="BLUE" x="66.25" y="110.25" size="1.778" layer="27" display="off"/>
+</element>
 <element name="R24" library="resistor" package="R0603" value="330" x="66.25" y="107.25" rot="R270"/>
 <element name="R25" library="resistor" package="R0603" value="330" x="72.75" y="30.5"/>
-<element name="D12" library="RoboJackets-LEDs" package="CHIP-LED0603" value="GREEN" x="72.75" y="28.5" rot="R270"/>
+<element name="D12" library="RoboJackets-LEDs" package="CHIP-LED0603" value="GREEN" x="72.75" y="28.5" rot="R270">
+<attribute name="DIGIKEY" value="160-1446-1-ND" x="72.75" y="28.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="LTST-C191KGKT" x="72.75" y="28.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" value="GREEN" x="72.75" y="28.5" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
 <element name="SB1" library="RoboJackets-Switches" package="SB0603" value="SOLDERBRIDGESB0603" x="87.25" y="48" rot="MR0"/>
 <element name="SB2" library="RoboJackets-Switches" package="SB0603" value="SOLDERBRIDGESB0603" x="94.25" y="48" rot="MR0"/>
 <element name="SB3" library="RoboJackets-Switches" package="SB0603" value="SOLDERBRIDGESB0603" x="90.75" y="48" rot="MR0"/>
 <element name="SB4" library="RoboJackets-Switches" package="SB0603" value="SOLDERBRIDGESB0603" x="84" y="48" rot="MR180"/>
-<element name="D13" library="RoboJackets-LEDs" package="CHIP-LED0603" value="GREEN" x="72.75" y="24.5" rot="R270"/>
+<element name="D13" library="RoboJackets-LEDs" package="CHIP-LED0603" value="GREEN" x="72.75" y="24.5" rot="R270">
+<attribute name="DIGIKEY" value="160-1446-1-ND" x="72.75" y="24.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="LTST-C191KGKT" x="72.75" y="24.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" value="GREEN" x="72.75" y="24.5" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
 <element name="R13" library="resistor" package="R0603" value="1k" x="72.75" y="26.5" rot="R180"/>
 <element name="DD:C11" library="RoboJackets-Capacitors" package="PANASONIC_J16" value="EEE-FK1H102AM" x="57" y="91.5" rot="MR180"/>
-<element name="RN17" library="RoboJackets-Resistors" package="742C163331JP" value="742C163331JP" x="103.176775" y="63.073221875" rot="MR135">
-<attribute name="MF" value="" x="103.176775" y="63.073221875" size="1.778" layer="28" rot="MR135" display="off"/>
-<attribute name="MPN" value="" x="103.176775" y="63.073221875" size="1.778" layer="28" rot="MR135" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="103.176775" y="63.073221875" size="1.778" layer="28" rot="MR135" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="103.176775" y="63.073221875" size="1.778" layer="28" rot="MR135" display="off"/>
+<element name="RN17" library="RoboJackets-Resistors" package="RA-8_2506" value="" x="103.176775" y="63.073221875" rot="MR135">
+<attribute name="DIGIKEY" value="742C163331JPCT-ND" x="103.176775" y="63.073221875" size="1.778" layer="28" rot="MR135" display="off"/>
+<attribute name="MPN" value="742C163331JP" x="103.176775" y="63.073221875" size="1.778" layer="28" rot="MR135" display="off"/>
 </element>
+<element name="U$1" library="RoboJackets-Connectors" package="STANDOFF-HOLE" value="" x="33" y="110"/>
+<element name="U$2" library="RoboJackets-Connectors" package="STANDOFF-HOLE" value="" x="147" y="110"/>
+<element name="U$3" library="RoboJackets-Connectors" package="STANDOFF-HOLE" value="" x="138" y="54"/>
+<element name="U$4" library="RoboJackets-Connectors" package="STANDOFF-HOLE" value="" x="42" y="54" rot="R90"/>
 </elements>
 <signals>
 <signal name="VB">
@@ -4471,7 +4670,7 @@ Your Eurocircuits Team
 </signal>
 <signal name="MOSI">
 <contactref element="KIT1" pad="P$5"/>
-<contactref element="U$1" pad="44"/>
+<contactref element="U1" pad="44"/>
 <contactref element="J1" pad="7"/>
 <contactref element="J3" pad="2"/>
 <via x="88.5" y="102.5" extent="1-16" drill="0.35"/>
@@ -4505,7 +4704,7 @@ Your Eurocircuits Team
 </signal>
 <signal name="MISO">
 <contactref element="KIT1" pad="P$6"/>
-<contactref element="U$1" pad="63"/>
+<contactref element="U1" pad="63"/>
 <contactref element="J1" pad="8"/>
 <contactref element="J3" pad="8"/>
 <via x="87.25" y="100" extent="1-16" drill="0.35"/>
@@ -4540,7 +4739,7 @@ Your Eurocircuits Team
 </signal>
 <signal name="SCK">
 <contactref element="KIT1" pad="P$7"/>
-<contactref element="U$1" pad="71"/>
+<contactref element="U1" pad="71"/>
 <contactref element="J1" pad="6"/>
 <contactref element="J3" pad="1"/>
 <wire x1="81.75" y1="86.85" x2="81.75" y2="85.25" width="0.3" layer="1"/>
@@ -4618,7 +4817,7 @@ Your Eurocircuits Team
 </signal>
 <signal name="!CS!-FPGA">
 <contactref element="KIT1" pad="P$13"/>
-<contactref element="U$1" pad="69"/>
+<contactref element="U1" pad="69"/>
 <wire x1="82.75" y1="86.85" x2="82.75" y2="85.25" width="0.3" layer="1"/>
 <via x="82.75" y="85.25" extent="1-16" drill="0.35"/>
 <wire x1="94.75" y1="106.25" x2="94" y2="107" width="0.3" layer="16"/>
@@ -4650,19 +4849,19 @@ Your Eurocircuits Team
 </signal>
 <signal name="GND">
 <contactref element="KIT1" pad="GND"/>
-<contactref element="U$1" pad="11"/>
-<contactref element="U$1" pad="19"/>
-<contactref element="U$1" pad="27"/>
-<contactref element="U$1" pad="37"/>
-<contactref element="U$1" pad="46"/>
-<contactref element="U$1" pad="55"/>
-<contactref element="U$1" pad="61"/>
-<contactref element="U$1" pad="73"/>
-<contactref element="U$1" pad="90"/>
-<contactref element="U$1" pad="99"/>
-<contactref element="U$1" pad="118"/>
-<contactref element="U$1" pad="127"/>
-<contactref element="U$1" pad="133"/>
+<contactref element="U1" pad="11"/>
+<contactref element="U1" pad="19"/>
+<contactref element="U1" pad="27"/>
+<contactref element="U1" pad="37"/>
+<contactref element="U1" pad="46"/>
+<contactref element="U1" pad="55"/>
+<contactref element="U1" pad="61"/>
+<contactref element="U1" pad="73"/>
+<contactref element="U1" pad="90"/>
+<contactref element="U1" pad="99"/>
+<contactref element="U1" pad="118"/>
+<contactref element="U1" pad="127"/>
+<contactref element="U1" pad="133"/>
 <contactref element="C3" pad="2"/>
 <contactref element="IC1" pad="10"/>
 <contactref element="IC1" pad="17"/>
@@ -4978,15 +5177,15 @@ Your Eurocircuits Team
 <wire x1="73.7" y1="74.75" x2="73.7" y2="75.55" width="0.3" layer="16"/>
 <wire x1="73.7" y1="75.55" x2="73.75" y2="75.25" width="0.3" layer="16"/>
 <via x="73.75" y="69" extent="1-16" drill="0.35"/>
-<contactref element="U$2" pad="18"/>
-<contactref element="U$2" pad="1"/>
-<contactref element="U$2" pad="11"/>
+<contactref element="U2" pad="18"/>
+<contactref element="U2" pad="1"/>
+<contactref element="U2" pad="11"/>
 <contactref element="C4" pad="2"/>
 <contactref element="C5" pad="2"/>
 <contactref element="C13" pad="2"/>
 <contactref element="C12" pad="2"/>
 <contactref element="C1" pad="2"/>
-<contactref element="U$2" pad="9"/>
+<contactref element="U2" pad="9"/>
 <contactref element="C2" pad="2"/>
 <contactref element="J1" pad="3"/>
 <contactref element="S2" pad="C2"/>
@@ -5004,7 +5203,7 @@ Your Eurocircuits Team
 <contactref element="S3" pad="4"/>
 <contactref element="S3" pad="5"/>
 <contactref element="J2" pad="2"/>
-<contactref element="U1" pad="2"/>
+<contactref element="U7" pad="2"/>
 <contactref element="J3" pad="7"/>
 <contactref element="C14" pad="2"/>
 <contactref element="R19" pad="2"/>
@@ -5532,7 +5731,7 @@ Your Eurocircuits Team
 <signal name="+5V">
 <contactref element="KIT1" pad="VIN"/>
 <contactref element="KIT1" pad="VU"/>
-<contactref element="U1" pad="1"/>
+<contactref element="U7" pad="1"/>
 <contactref element="R3" pad="2"/>
 <contactref element="R20" pad="1"/>
 <contactref element="SB4" pad="2"/>
@@ -5648,10 +5847,10 @@ Your Eurocircuits Team
 <wire x1="65.353553125" y1="55.949746875" x2="65" y2="56.3033" width="0.3" layer="1"/>
 <wire x1="119.25" y1="71.75" x2="119.25" y2="71.25" width="0.3" layer="1"/>
 <contactref element="C12" pad="1"/>
-<contactref element="U$2" pad="13"/>
+<contactref element="U2" pad="13"/>
 <contactref element="C13" pad="1"/>
 <contactref element="C2" pad="1"/>
-<contactref element="U$2" pad="8"/>
+<contactref element="U2" pad="8"/>
 <contactref element="C1" pad="1"/>
 <contactref element="DD:J1" pad="2"/>
 <contactref element="J3" pad="6"/>
@@ -5662,27 +5861,27 @@ Your Eurocircuits Team
 <contactref element="D8" pad="A"/>
 <contactref element="LED1" pad="1"/>
 <contactref element="C24" pad="1"/>
-<contactref element="U$1" pad="13"/>
+<contactref element="U1" pad="13"/>
 <contactref element="C25" pad="1"/>
-<contactref element="U$1" pad="28"/>
+<contactref element="U1" pad="28"/>
 <contactref element="C26" pad="1"/>
-<contactref element="U$1" pad="42"/>
+<contactref element="U1" pad="42"/>
 <contactref element="C27" pad="1"/>
-<contactref element="U$1" pad="49"/>
-<contactref element="U$1" pad="64"/>
+<contactref element="U1" pad="49"/>
+<contactref element="U1" pad="64"/>
 <contactref element="C28" pad="1"/>
 <contactref element="C29" pad="1"/>
-<contactref element="U$1" pad="79"/>
+<contactref element="U1" pad="79"/>
 <contactref element="C30" pad="1"/>
-<contactref element="U$1" pad="100"/>
+<contactref element="U1" pad="100"/>
 <contactref element="C31" pad="1"/>
-<contactref element="U$1" pad="121"/>
-<contactref element="U$1" pad="138"/>
+<contactref element="U1" pad="121"/>
+<contactref element="U1" pad="138"/>
 <contactref element="C32" pad="1"/>
-<contactref element="U$1" pad="143"/>
+<contactref element="U1" pad="143"/>
 <contactref element="C33" pad="1"/>
-<contactref element="U$1" pad="62"/>
-<contactref element="U$1" pad="60"/>
+<contactref element="U1" pad="62"/>
+<contactref element="U1" pad="60"/>
 <contactref element="X1" pad="4"/>
 <contactref element="X1" pad="1"/>
 <contactref element="C34" pad="2"/>
@@ -5925,7 +6124,7 @@ Your Eurocircuits Team
 </signal>
 <signal name="FPGA-INIT">
 <contactref element="KIT1" pad="P$19"/>
-<contactref element="U$1" pad="40"/>
+<contactref element="U1" pad="40"/>
 <contactref element="R5" pad="2"/>
 <wire x1="94.91" y1="113.18" x2="94.91" y2="107.91" width="0.3" layer="1"/>
 <wire x1="94.25" y1="107.25" x2="94.91" y2="107.91" width="0.3" layer="1"/>
@@ -5978,7 +6177,7 @@ Your Eurocircuits Team
 <contactref element="KIT1" pad="P$28"/>
 <contactref element="R2" pad="1"/>
 <contactref element="IC1" pad="13"/>
-<contactref element="U$2" pad="24"/>
+<contactref element="U2" pad="24"/>
 <wire x1="110" y1="93.4" x2="110" y2="90.47" width="0.3" layer="1"/>
 <wire x1="110" y1="90.47" x2="110.15" y2="90.32" width="0.3" layer="1"/>
 <wire x1="76.9184" y1="90.9833" x2="73.7667" y2="90.9833" width="0.25" layer="1"/>
@@ -6013,7 +6212,7 @@ Your Eurocircuits Team
 <contactref element="KIT1" pad="P$27"/>
 <contactref element="R1" pad="1"/>
 <contactref element="IC1" pad="12"/>
-<contactref element="U$2" pad="23"/>
+<contactref element="U2" pad="23"/>
 <wire x1="107.75" y1="93.4" x2="107.75" y2="90.46" width="0.3" layer="1"/>
 <wire x1="107.75" y1="90.46" x2="107.61" y2="90.32" width="0.3" layer="1"/>
 <wire x1="76.9184" y1="91.4879" x2="74.0121" y2="91.4879" width="0.25" layer="1"/>
@@ -6051,14 +6250,14 @@ Your Eurocircuits Team
 </signal>
 <signal name="R-P9">
 <contactref element="RN3" pad="1"/>
-<contactref element="U$1" pad="91"/>
+<contactref element="U1" pad="91"/>
 <wire x1="75.3" y1="76.7" x2="76.3" y2="76.7" width="0.3" layer="1"/>
 <wire x1="76.3" y1="76.7" x2="77" y2="76" width="0.3" layer="1"/>
 <wire x1="77" y1="76" x2="79.4" y2="76" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P16">
 <contactref element="RN3" pad="8"/>
-<contactref element="U$1" pad="83"/>
+<contactref element="U1" pad="83"/>
 <wire x1="78.5" y1="80" x2="79.4" y2="80" width="0.3" layer="1"/>
 <wire x1="75.3" y1="82.3" x2="76.45" y2="82.3" width="0.3" layer="1"/>
 <wire x1="76.45" y1="82.3" x2="77" y2="81.75" width="0.3" layer="1"/>
@@ -6066,7 +6265,7 @@ Your Eurocircuits Team
 <wire x1="77" y1="81.5" x2="78.5" y2="80" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P43">
-<contactref element="U$1" pad="3"/>
+<contactref element="U1" pad="3"/>
 <contactref element="RN8" pad="3"/>
 <wire x1="102.5" y1="68" x2="102" y2="68.5" width="0.3" layer="1"/>
 <wire x1="102" y1="68.5" x2="100.6" y2="68.5" width="0.3" layer="1"/>
@@ -6074,7 +6273,7 @@ Your Eurocircuits Team
 <wire x1="102.5" y1="65.44705" x2="102.5" y2="68" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P44">
-<contactref element="U$1" pad="2"/>
+<contactref element="U1" pad="2"/>
 <contactref element="RN8" pad="4"/>
 <contactref element="RN17" pad="5"/>
 <wire x1="102.89393125" y1="63.92175" x2="102.292890625" y2="64.522790625" width="0.3" layer="1"/>
@@ -8484,7 +8683,7 @@ Your Eurocircuits Team
 <contactref element="DD:U1" pad="2"/>
 </signal>
 <signal name="FPGA-PROG">
-<contactref element="U$1" pad="1"/>
+<contactref element="U1" pad="1"/>
 <contactref element="KIT1" pad="P$11"/>
 <contactref element="R22" pad="1"/>
 <wire x1="100.6" y1="67.5" x2="100.6" y2="66.9" width="0.3" layer="1"/>
@@ -8509,7 +8708,7 @@ Your Eurocircuits Team
 <wire x1="94" y1="105.25" x2="94" y2="97.75" width="0.25" layer="1"/>
 </signal>
 <signal name="FPGA-CLK">
-<contactref element="U$1" pad="50"/>
+<contactref element="U1" pad="50"/>
 <contactref element="X1" pad="3"/>
 <wire x1="92.25" y1="86.85" x2="92.25" y2="88.25" width="0.3" layer="1"/>
 <via x="92.25" y="88.25" extent="1-16" drill="0.35"/>
@@ -8517,7 +8716,7 @@ Your Eurocircuits Team
 <wire x1="91.79" y1="88.25" x2="92.25" y2="88.25" width="0.3" layer="16"/>
 </signal>
 <signal name="FPGA-DONE">
-<contactref element="U$1" pad="72"/>
+<contactref element="U1" pad="72"/>
 <contactref element="KIT1" pad="P$30"/>
 <contactref element="R23" pad="1"/>
 <wire x1="81.25" y1="86.85" x2="80.6" y2="86.85" width="0.3" layer="1"/>
@@ -8549,7 +8748,7 @@ Your Eurocircuits Team
 <signal name="R-P15">
 <contactref element="RN3" pad="7"/>
 <via x="76.25" y="81.5" extent="1-16" drill="0.35"/>
-<contactref element="U$1" pad="84"/>
+<contactref element="U1" pad="84"/>
 <wire x1="79.4" y1="79.5" x2="78.25" y2="79.5" width="0.3" layer="1"/>
 <wire x1="76.25" y1="81.5" x2="75.3" y2="81.5" width="0.3" layer="1"/>
 <wire x1="76.25" y1="81.5" x2="76.25" y2="81" width="0.3" layer="16"/>
@@ -8565,7 +8764,7 @@ Your Eurocircuits Team
 <via x="76.25" y="77.5" extent="1-16" drill="0.35"/>
 <wire x1="76.25" y1="77.5" x2="76.5" y2="77.5" width="0.3" layer="1"/>
 <wire x1="77" y1="77" x2="76.5" y2="77.5" width="0.3" layer="1"/>
-<contactref element="U$1" pad="89"/>
+<contactref element="U1" pad="89"/>
 <wire x1="79.4" y1="77" x2="77" y2="77" width="0.3" layer="1"/>
 <wire x1="75.3" y1="77.5" x2="76.25" y2="77.5" width="0.3" layer="1"/>
 <wire x1="75.75" y1="77.5" x2="76.25" y2="77.5" width="0.3" layer="16"/>
@@ -8574,24 +8773,24 @@ Your Eurocircuits Team
 <wire x1="75.3" y1="77.05" x2="75.75" y2="77.5" width="0.3" layer="16"/>
 </signal>
 <signal name="TMS">
-<contactref element="U$1" pad="108"/>
+<contactref element="U1" pad="108"/>
 </signal>
 <signal name="TDO">
-<contactref element="U$1" pad="109"/>
+<contactref element="U1" pad="109"/>
 </signal>
 <signal name="TCK">
-<contactref element="U$1" pad="110"/>
+<contactref element="U1" pad="110"/>
 </signal>
 <signal name="R-P11">
 <contactref element="RN3" pad="3"/>
-<contactref element="U$1" pad="88"/>
+<contactref element="U1" pad="88"/>
 <wire x1="77.25" y1="77.5" x2="79.4" y2="77.5" width="0.3" layer="1"/>
 <wire x1="75.3" y1="78.3" x2="76.45" y2="78.3" width="0.3" layer="1"/>
 <wire x1="76.45" y1="78.3" x2="77.25" y2="77.5" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P12">
 <contactref element="RN3" pad="4"/>
-<contactref element="U$1" pad="87"/>
+<contactref element="U1" pad="87"/>
 <wire x1="77.5" y1="78" x2="79.4" y2="78" width="0.3" layer="1"/>
 <wire x1="75.3" y1="79.1" x2="76.4" y2="79.1" width="0.3" layer="1"/>
 <wire x1="76.4" y1="79.1" x2="77.5" y2="78" width="0.3" layer="1"/>
@@ -8599,7 +8798,7 @@ Your Eurocircuits Team
 <signal name="R-P13">
 <contactref element="RN3" pad="5"/>
 <via x="76.25" y="79.75" extent="1-16" drill="0.35"/>
-<contactref element="U$1" pad="86"/>
+<contactref element="U1" pad="86"/>
 <wire x1="79.4" y1="78.5" x2="77.75" y2="78.5" width="0.3" layer="1"/>
 <contactref element="RN14" pad="2"/>
 <wire x1="75.3" y1="74.75" x2="76.5" y2="74.75" width="0.3" layer="16"/>
@@ -8613,13 +8812,13 @@ Your Eurocircuits Team
 </signal>
 <signal name="R-P14">
 <contactref element="RN3" pad="6"/>
-<contactref element="U$1" pad="85"/>
+<contactref element="U1" pad="85"/>
 <wire x1="78" y1="79" x2="79.4" y2="79" width="0.3" layer="1"/>
 <wire x1="75.3" y1="80.7" x2="76.3" y2="80.7" width="0.3" layer="1"/>
 <wire x1="76.3" y1="80.7" x2="78" y2="79" width="0.3" layer="1"/>
 </signal>
 <signal name="INT-MPU">
-<contactref element="U$2" pad="12"/>
+<contactref element="U2" pad="12"/>
 <contactref element="KIT1" pad="P$8"/>
 <wire x1="85.5" y1="96.75" x2="86.25" y2="97.5" width="0.25" layer="1"/>
 <wire x1="86.25" y1="97.5" x2="86.25" y2="100.25" width="0.25" layer="1"/>
@@ -8642,7 +8841,7 @@ Your Eurocircuits Team
 </signal>
 <signal name="N$91">
 <contactref element="C4" pad="1"/>
-<contactref element="U$2" pad="10"/>
+<contactref element="U2" pad="10"/>
 <wire x1="81.1216" y1="92.5275" x2="81.5" y2="92.5275" width="0.25" layer="1"/>
 <wire x1="81.5" y1="92.5275" x2="81.6775" y2="92.5275" width="0.25" layer="1"/>
 <wire x1="81.5" y1="92.5275" x2="82.0275" y2="92.5275" width="0.25" layer="1"/>
@@ -8651,7 +8850,7 @@ Your Eurocircuits Team
 <wire x1="82.75" y1="93.6" x2="82.9" y2="93.75" width="0.25" layer="1"/>
 </signal>
 <signal name="N$92">
-<contactref element="U$2" pad="20"/>
+<contactref element="U2" pad="20"/>
 <contactref element="C5" pad="1"/>
 <wire x1="76.9184" y1="93.0296" x2="74.8704" y2="93.0296" width="0.25" layer="1"/>
 <wire x1="74.8704" y1="93.0296" x2="74.75" y2="93.15" width="0.25" layer="1"/>
@@ -8838,17 +9037,17 @@ Your Eurocircuits Team
 <wire x1="73.7" y1="71.55" x2="72.55" y2="71.55" width="0.3" layer="1"/>
 <wire x1="72.55" y1="71.55" x2="71" y2="70" width="0.3" layer="1"/>
 <wire x1="71" y1="67.25" x2="71" y2="70" width="0.3" layer="1"/>
-<wire x1="46.5" y1="47.75" x2="52.5" y2="53.75" width="0.3" layer="1"/>
+<wire x1="52.5" y1="53.75" x2="46.5" y2="47.75" width="0.3" layer="1"/>
 <wire x1="52.5" y1="53.75" x2="56.5" y2="53.75" width="0.3" layer="1"/>
 <wire x1="56.5" y1="53.75" x2="62" y2="59.25" width="0.3" layer="1"/>
 <wire x1="62" y1="59.25" x2="62" y2="60.75" width="0.3" layer="1"/>
 <wire x1="62" y1="60.75" x2="65" y2="63.75" width="0.3" layer="1"/>
 <wire x1="65" y1="63.75" x2="67.5" y2="63.75" width="0.3" layer="1"/>
 <wire x1="67.5" y1="63.75" x2="71" y2="67.25" width="0.3" layer="1"/>
-<wire x1="35.25" y1="56" x2="36.75" y2="54.5" width="0.3" layer="1"/>
-<wire x1="36.75" y1="54.5" x2="36.75" y2="53" width="0.3" layer="1"/>
-<wire x1="36.75" y1="53" x2="42" y2="47.75" width="0.3" layer="1"/>
-<wire x1="42" y1="47.75" x2="46.5" y2="47.75" width="0.3" layer="1"/>
+<wire x1="36.75" y1="54.5" x2="35.25" y2="56" width="0.3" layer="1"/>
+<wire x1="41.25" y1="47.75" x2="36.75" y2="52.25" width="0.3" layer="1"/>
+<wire x1="46.5" y1="47.75" x2="41.25" y2="47.75" width="0.3" layer="1"/>
+<wire x1="36.75" y1="52.25" x2="36.75" y2="54.5" width="0.3" layer="1"/>
 </signal>
 <signal name="M2-ENC-A">
 <contactref element="M2:J2" pad="2"/>
@@ -8911,10 +9110,10 @@ Your Eurocircuits Team
 <wire x1="61.5" y1="61" x2="64.75" y2="64.25" width="0.3" layer="1"/>
 <wire x1="64.75" y1="64.25" x2="67.25" y2="64.25" width="0.3" layer="1"/>
 <wire x1="67.25" y1="64.25" x2="70.5" y2="67.5" width="0.3" layer="1"/>
-<wire x1="42.25" y1="48.25" x2="37.25" y2="53.25" width="0.3" layer="1"/>
-<wire x1="37.25" y1="53.25" x2="37.25" y2="56" width="0.3" layer="1"/>
 <wire x1="37.25" y1="56" x2="35.25" y2="58" width="0.3" layer="1"/>
-<wire x1="46.25" y1="48.25" x2="42.25" y2="48.25" width="0.3" layer="1"/>
+<wire x1="41.5" y1="48.25" x2="37.25" y2="52.5" width="0.3" layer="1"/>
+<wire x1="46.25" y1="48.25" x2="41.5" y2="48.25" width="0.3" layer="1"/>
+<wire x1="37.25" y1="52.5" x2="37.25" y2="56" width="0.3" layer="1"/>
 </signal>
 <signal name="M3-ENC-B">
 <contactref element="M3:J2" pad="1"/>
@@ -8993,7 +9192,7 @@ Your Eurocircuits Team
 </signal>
 <signal name="N$93">
 <contactref element="R3" pad="1"/>
-<contactref element="U1" pad="3"/>
+<contactref element="U7" pad="3"/>
 <wire x1="86.3" y1="43.45" x2="85.2" y2="43.45" width="0.3" layer="16"/>
 <wire x1="85.2" y1="43.45" x2="84.5" y2="43.65" width="0.3" layer="16"/>
 </signal>
@@ -9045,12 +9244,12 @@ Your Eurocircuits Team
 </signal>
 <signal name="+1.2V">
 <contactref element="C16" pad="1"/>
-<contactref element="U$1" pad="9"/>
-<contactref element="U$1" pad="80"/>
+<contactref element="U1" pad="9"/>
+<contactref element="U1" pad="80"/>
 <contactref element="C18" pad="1"/>
-<contactref element="U$1" pad="45"/>
+<contactref element="U1" pad="45"/>
 <contactref element="C17" pad="1"/>
-<contactref element="U$1" pad="115"/>
+<contactref element="U1" pad="115"/>
 <contactref element="C19" pad="1"/>
 <contactref element="SB2" pad="2"/>
 <contactref element="C9" pad="1"/>
@@ -9105,13 +9304,13 @@ Your Eurocircuits Team
 <signal name="+2.5V">
 <contactref element="C11" pad="1"/>
 <contactref element="C20" pad="1"/>
-<contactref element="U$1" pad="30"/>
+<contactref element="U1" pad="30"/>
 <contactref element="C23" pad="1"/>
-<contactref element="U$1" pad="137"/>
+<contactref element="U1" pad="137"/>
 <contactref element="C21" pad="1"/>
-<contactref element="U$1" pad="65"/>
+<contactref element="U1" pad="65"/>
 <contactref element="C22" pad="1"/>
-<contactref element="U$1" pad="102"/>
+<contactref element="U1" pad="102"/>
 <contactref element="R22" pad="2"/>
 <contactref element="R23" pad="2"/>
 <contactref element="SB3" pad="2"/>
@@ -9177,7 +9376,7 @@ Your Eurocircuits Team
 <wire x1="81.5" y1="70.25" x2="83.5" y2="68.25" width="0.3" layer="3"/>
 </signal>
 <signal name="R-P1">
-<contactref element="U$1" pad="82"/>
+<contactref element="U1" pad="82"/>
 <contactref element="RN6" pad="1"/>
 <via x="81" y="80.5" extent="1-16" drill="0.35"/>
 <wire x1="80" y1="80.5" x2="79.75" y2="80.5" width="0.3" layer="16"/>
@@ -9192,7 +9391,7 @@ Your Eurocircuits Team
 <wire x1="76.175" y1="83.7" x2="76.25" y2="83.625" width="0.3" layer="16"/>
 </signal>
 <signal name="R-P2">
-<contactref element="U$1" pad="81"/>
+<contactref element="U1" pad="81"/>
 <contactref element="RN6" pad="2"/>
 <wire x1="79.4" y1="81" x2="78.5" y2="81" width="0.3" layer="1"/>
 <wire x1="76.875" y1="82.625" x2="78.5" y2="81" width="0.3" layer="1"/>
@@ -9201,7 +9400,7 @@ Your Eurocircuits Team
 <wire x1="76.375" y1="84.5" x2="75.3" y2="84.5" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P3">
-<contactref element="U$1" pad="77"/>
+<contactref element="U1" pad="77"/>
 <contactref element="RN6" pad="3"/>
 <wire x1="76.2" y1="85.3" x2="76.25" y2="85.25" width="0.3" layer="16"/>
 <via x="76.25" y="85.25" extent="1-16" drill="0.35"/>
@@ -9214,7 +9413,7 @@ Your Eurocircuits Team
 <wire x1="76.2" y1="85.3" x2="76.25" y2="85.25" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P4">
-<contactref element="U$1" pad="76"/>
+<contactref element="U1" pad="76"/>
 <contactref element="RN6" pad="4"/>
 <wire x1="79.4" y1="83.5" x2="78" y2="83.5" width="0.3" layer="1"/>
 <wire x1="77.25" y1="84.25" x2="78" y2="83.5" width="0.3" layer="1"/>
@@ -9223,7 +9422,7 @@ Your Eurocircuits Team
 <wire x1="77.25" y1="85.25" x2="77.25" y2="84.25" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P5">
-<contactref element="U$1" pad="75"/>
+<contactref element="U1" pad="75"/>
 <contactref element="RN6" pad="5"/>
 <wire x1="79.4" y1="84" x2="78.25" y2="84" width="0.3" layer="1"/>
 <wire x1="77.75" y1="84.5" x2="78.25" y2="84" width="0.3" layer="1"/>
@@ -9232,7 +9431,7 @@ Your Eurocircuits Team
 <wire x1="77.75" y1="85.5" x2="77.75" y2="84.5" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P6">
-<contactref element="U$1" pad="74"/>
+<contactref element="U1" pad="74"/>
 <contactref element="RN6" pad="6"/>
 <wire x1="78.25" y1="84.75" x2="78.5" y2="84.5" width="0.3" layer="1"/>
 <wire x1="79.4" y1="84.5" x2="78.5" y2="84.5" width="0.3" layer="1"/>
@@ -9241,7 +9440,7 @@ Your Eurocircuits Team
 <wire x1="78.25" y1="85.75" x2="78.25" y2="84.75" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P7">
-<contactref element="U$1" pad="70"/>
+<contactref element="U1" pad="70"/>
 <contactref element="RN6" pad="7"/>
 <wire x1="82" y1="88" x2="82.25" y2="87.75" width="0.3" layer="1"/>
 <wire x1="82.25" y1="86.85" x2="82.25" y2="87.75" width="0.3" layer="1"/>
@@ -9250,7 +9449,7 @@ Your Eurocircuits Team
 <wire x1="76.75" y1="88" x2="82" y2="88" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P8">
-<contactref element="U$1" pad="68"/>
+<contactref element="U1" pad="68"/>
 <contactref element="RN6" pad="8"/>
 <wire x1="83.25" y1="88" x2="82.75" y2="88.5" width="0.3" layer="1"/>
 <wire x1="80.5" y1="88.5" x2="82.75" y2="88.5" width="0.3" layer="1"/>
@@ -9261,7 +9460,7 @@ Your Eurocircuits Team
 <wire x1="77" y1="88.5" x2="80.5" y2="88.5" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P17">
-<contactref element="U$1" pad="101"/>
+<contactref element="U1" pad="101"/>
 <contactref element="RN2" pad="1"/>
 <contactref element="RN14" pad="8"/>
 <via x="76.25" y="70" extent="1-16" drill="0.35"/>
@@ -9274,7 +9473,7 @@ Your Eurocircuits Team
 <wire x1="76.2" y1="69.95" x2="76.25" y2="70" width="0.3" layer="16"/>
 </signal>
 <signal name="R-P18">
-<contactref element="U$1" pad="98"/>
+<contactref element="U1" pad="98"/>
 <contactref element="RN2" pad="2"/>
 <contactref element="RN14" pad="7"/>
 <via x="76.25" y="70.75" extent="1-16" drill="0.35"/>
@@ -9285,7 +9484,7 @@ Your Eurocircuits Team
 <wire x1="75.3" y1="70.75" x2="76.25" y2="70.75" width="0.3" layer="16"/>
 </signal>
 <signal name="R-P19">
-<contactref element="U$1" pad="97"/>
+<contactref element="U1" pad="97"/>
 <contactref element="RN2" pad="3"/>
 <contactref element="RN14" pad="6"/>
 <via x="76.25" y="71.5" extent="1-16" drill="0.35"/>
@@ -9298,14 +9497,14 @@ Your Eurocircuits Team
 <wire x1="76.2" y1="71.55" x2="76.25" y2="71.5" width="0.3" layer="16"/>
 </signal>
 <signal name="R-P20">
-<contactref element="U$1" pad="96"/>
+<contactref element="U1" pad="96"/>
 <contactref element="RN2" pad="4"/>
 <wire x1="76.6" y1="72.35" x2="77.75" y2="73.5" width="0.3" layer="1"/>
 <wire x1="77.75" y1="73.5" x2="79.4" y2="73.5" width="0.3" layer="1"/>
 <wire x1="75.3" y1="72.35" x2="76.6" y2="72.35" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P21">
-<contactref element="U$1" pad="95"/>
+<contactref element="U1" pad="95"/>
 <contactref element="RN2" pad="5"/>
 <contactref element="RN14" pad="4"/>
 <via x="76.25" y="73.25" extent="1-16" drill="0.35"/>
@@ -9318,28 +9517,28 @@ Your Eurocircuits Team
 <wire x1="76.15" y1="73.15" x2="76.25" y2="73.25" width="0.3" layer="16"/>
 </signal>
 <signal name="R-P22">
-<contactref element="U$1" pad="94"/>
+<contactref element="U1" pad="94"/>
 <contactref element="RN2" pad="6"/>
 <wire x1="75.3" y1="73.95" x2="76.7" y2="73.95" width="0.3" layer="1"/>
 <wire x1="76.7" y1="73.95" x2="77.25" y2="74.5" width="0.3" layer="1"/>
 <wire x1="77.25" y1="74.5" x2="79.4" y2="74.5" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P23">
-<contactref element="U$1" pad="93"/>
+<contactref element="U1" pad="93"/>
 <contactref element="RN2" pad="7"/>
 <wire x1="75.3" y1="74.75" x2="76.75" y2="74.75" width="0.3" layer="1"/>
 <wire x1="76.75" y1="74.75" x2="77" y2="75" width="0.3" layer="1"/>
 <wire x1="77" y1="75" x2="79.4" y2="75" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P24">
-<contactref element="U$1" pad="92"/>
+<contactref element="U1" pad="92"/>
 <contactref element="RN2" pad="8"/>
 <wire x1="75.3" y1="75.55" x2="76.95" y2="75.55" width="0.3" layer="1"/>
 <wire x1="76.95" y1="75.55" x2="77" y2="75.5" width="0.3" layer="1"/>
 <wire x1="77" y1="75.5" x2="79.4" y2="75.5" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P32">
-<contactref element="U$1" pad="103"/>
+<contactref element="U1" pad="103"/>
 <contactref element="RN9" pad="8"/>
 <contactref element="RN14" pad="5"/>
 <wire x1="76.4" y1="72.35" x2="75.3" y2="72.35" width="0.3" layer="16"/>
@@ -9353,7 +9552,7 @@ Your Eurocircuits Team
 <wire x1="76.5" y1="69" x2="77.5" y2="70" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P31">
-<contactref element="U$1" pad="104"/>
+<contactref element="U1" pad="104"/>
 <contactref element="RN9" pad="7"/>
 <wire x1="76.75" y1="65.724871875" x2="76.07824375" y2="65.05311875" width="0.3" layer="1"/>
 <wire x1="76.8383875" y1="65.813259375" x2="76.75" y2="65.724871875" width="0.3" layer="1"/>
@@ -9363,7 +9562,7 @@ Your Eurocircuits Team
 <wire x1="77" y1="68.5" x2="77" y2="65.974871875" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P30">
-<contactref element="U$1" pad="105"/>
+<contactref element="U1" pad="105"/>
 <contactref element="RN9" pad="6"/>
 <wire x1="79.4" y1="69" x2="78.25" y2="69" width="0.3" layer="1"/>
 <wire x1="77.5" y1="68.25" x2="78.25" y2="69" width="0.3" layer="1"/>
@@ -9371,7 +9570,7 @@ Your Eurocircuits Team
 <wire x1="77.5" y1="65.343503125" x2="77.5" y2="68.25" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P29">
-<contactref element="U$1" pad="106"/>
+<contactref element="U1" pad="106"/>
 <contactref element="RN9" pad="5"/>
 <wire x1="79.4" y1="68.5" x2="78.5" y2="68.5" width="0.3" layer="1"/>
 <wire x1="78" y1="68" x2="78.5" y2="68.5" width="0.3" layer="1"/>
@@ -9379,7 +9578,7 @@ Your Eurocircuits Team
 <wire x1="78" y1="64.712134375" x2="78" y2="68" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P28">
-<contactref element="U$1" pad="112"/>
+<contactref element="U1" pad="112"/>
 <contactref element="RN9" pad="4"/>
 <wire x1="82.75" y1="65.65" x2="82.75" y2="64.5" width="0.3" layer="1"/>
 <wire x1="82.5" y1="64.25" x2="82.75" y2="64.5" width="0.3" layer="1"/>
@@ -9387,7 +9586,7 @@ Your Eurocircuits Team
 <wire x1="78.669240625" y1="64.25" x2="82.5" y2="64.25" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P27">
-<contactref element="U$1" pad="113"/>
+<contactref element="U1" pad="113"/>
 <contactref element="RN9" pad="3"/>
 <wire x1="82.75" y1="63.75" x2="83.25" y2="64.25" width="0.3" layer="1"/>
 <wire x1="83.25" y1="64.25" x2="83.25" y2="65.65" width="0.3" layer="1"/>
@@ -9399,7 +9598,7 @@ Your Eurocircuits Team
 <wire x1="78.906671875" y1="62.224690625" x2="79.578425" y2="62.89644375" width="0.3" layer="1"/>
 <wire x1="79.578425" y1="62.89644375" x2="79.93198125" y2="63.25" width="0.3" layer="1"/>
 <wire x1="79.93198125" y1="63.25" x2="83.5" y2="63.25" width="0.3" layer="1"/>
-<contactref element="U$1" pad="116"/>
+<contactref element="U1" pad="116"/>
 <wire x1="84.75" y1="64.5" x2="84.75" y2="65.65" width="0.3" layer="1"/>
 <wire x1="83.5" y1="63.25" x2="84.75" y2="64.5" width="0.3" layer="1"/>
 </signal>
@@ -9410,7 +9609,7 @@ Your Eurocircuits Team
 <wire x1="86.5" y1="64.5" x2="86.25" y2="64.75" width="0.3" layer="1"/>
 <wire x1="86.45" y1="63.05" x2="86.45" y2="63.95" width="0.3" layer="1"/>
 <wire x1="86.45" y1="63.95" x2="86.5" y2="64" width="0.3" layer="1"/>
-<contactref element="U$1" pad="119"/>
+<contactref element="U1" pad="119"/>
 <wire x1="86.25" y1="64.75" x2="86.25" y2="65.65" width="0.3" layer="1"/>
 <contactref element="RN17" pad="7"/>
 <wire x1="104.02530625" y1="65.05311875" x2="103.078425" y2="66" width="0.3" layer="16"/>
@@ -9421,7 +9620,7 @@ Your Eurocircuits Team
 <wire x1="100.5" y1="64.75" x2="101.75" y2="66" width="0.3" layer="16"/>
 </signal>
 <signal name="R-P39">
-<contactref element="U$1" pad="122"/>
+<contactref element="U1" pad="122"/>
 <contactref element="RN4" pad="7"/>
 <via x="87.25" y="64" extent="1-16" drill="0.35"/>
 <wire x1="87.25" y1="63.05" x2="87.25" y2="64" width="0.3" layer="1"/>
@@ -9435,28 +9634,28 @@ Your Eurocircuits Team
 <wire x1="100.5" y1="64" x2="102" y2="65.5" width="0.3" layer="16"/>
 </signal>
 <signal name="R-P38">
-<contactref element="U$1" pad="123"/>
+<contactref element="U1" pad="123"/>
 <contactref element="RN4" pad="6"/>
 <wire x1="88.05" y1="64.05" x2="88.05" y2="63.05" width="0.3" layer="1"/>
 <wire x1="88.25" y1="64.25" x2="88.05" y2="64.05" width="0.3" layer="1"/>
 <wire x1="88.25" y1="65.65" x2="88.25" y2="64.25" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P37">
-<contactref element="U$1" pad="124"/>
+<contactref element="U1" pad="124"/>
 <contactref element="RN4" pad="5"/>
 <wire x1="88.85" y1="64.1" x2="88.85" y2="63.05" width="0.3" layer="1"/>
 <wire x1="88.75" y1="64.2" x2="88.85" y2="64.1" width="0.3" layer="1"/>
 <wire x1="88.75" y1="65.65" x2="88.75" y2="64.2" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P36">
-<contactref element="U$1" pad="125"/>
+<contactref element="U1" pad="125"/>
 <contactref element="RN4" pad="4"/>
 <wire x1="89.65" y1="64.15" x2="89.65" y2="63.05" width="0.3" layer="1"/>
 <wire x1="89.25" y1="64.55" x2="89.65" y2="64.15" width="0.3" layer="1"/>
 <wire x1="89.25" y1="65.65" x2="89.25" y2="64.55" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P48">
-<contactref element="U$1" pad="139"/>
+<contactref element="U1" pad="139"/>
 <contactref element="RN8" pad="8"/>
 <contactref element="RN17" pad="1"/>
 <wire x1="100.6311875" y1="61.65900625" x2="99.99479375" y2="62.295403125" width="0.3" layer="1"/>
@@ -9470,7 +9669,7 @@ Your Eurocircuits Team
 <wire x1="96.25" y1="63.75" x2="96.25" y2="65.65" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P47">
-<contactref element="U$1" pad="140"/>
+<contactref element="U1" pad="140"/>
 <contactref element="RN8" pad="7"/>
 <contactref element="RN17" pad="2"/>
 <wire x1="101.196878125" y1="62.224690625" x2="100.525125" y2="62.89644375" width="0.3" layer="16"/>
@@ -9482,7 +9681,7 @@ Your Eurocircuits Team
 <wire x1="100.17156875" y1="63.25" x2="97.5" y2="63.25" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P46">
-<contactref element="U$1" pad="141"/>
+<contactref element="U1" pad="141"/>
 <contactref element="RN8" pad="6"/>
 <contactref element="RN17" pad="3"/>
 <wire x1="101.126165625" y1="63.426775" x2="101.762559375" y2="62.790378125" width="0.3" layer="1"/>
@@ -9496,7 +9695,7 @@ Your Eurocircuits Team
 <wire x1="100.73223125" y1="63.75" x2="97.75" y2="63.75" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P45">
-<contactref element="U$1" pad="142"/>
+<contactref element="U1" pad="142"/>
 <contactref element="RN8" pad="5"/>
 <contactref element="RN17" pad="4"/>
 <wire x1="102.328246875" y1="63.3560625" x2="101.72720625" y2="63.95710625" width="0.3" layer="16"/>
@@ -9510,7 +9709,7 @@ Your Eurocircuits Team
 <wire x1="101.292890625" y1="64.25" x2="98" y2="64.25" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P49">
-<contactref element="U$1" pad="21"/>
+<contactref element="U1" pad="21"/>
 <contactref element="RN5" pad="1"/>
 <wire x1="102.25" y1="77.5" x2="100.6" y2="77.5" width="0.3" layer="1"/>
 <wire x1="103.7" y1="77.05" x2="102.7" y2="77.05" width="0.3" layer="1"/>
@@ -9519,7 +9718,7 @@ Your Eurocircuits Team
 <signal name="R-P50">
 <contactref element="RN5" pad="2"/>
 <wire x1="103.7" y1="76.25" x2="102.75" y2="76.25" width="0.3" layer="1"/>
-<contactref element="U$1" pad="20"/>
+<contactref element="U1" pad="20"/>
 <wire x1="102.75" y1="76.25" x2="102.5" y2="76.25" width="0.3" layer="1"/>
 <wire x1="102.5" y1="76.25" x2="101.75" y2="77" width="0.3" layer="1"/>
 <wire x1="101.75" y1="77" x2="100.6" y2="77" width="0.3" layer="1"/>
@@ -9527,7 +9726,7 @@ Your Eurocircuits Team
 <signal name="R-P51">
 <contactref element="RN5" pad="3"/>
 <via x="102.75" y="75.5" extent="1-16" drill="0.35"/>
-<contactref element="U$1" pad="17"/>
+<contactref element="U1" pad="17"/>
 <wire x1="102.75" y1="75.5" x2="100.6" y2="75.5" width="0.3" layer="1"/>
 <contactref element="RN11" pad="5"/>
 <wire x1="104.45" y1="75.9" x2="103.15" y2="75.9" width="0.3" layer="16"/>
@@ -9538,7 +9737,7 @@ Your Eurocircuits Team
 <signal name="R-P52">
 <contactref element="RN5" pad="4"/>
 <via x="102.75" y="74.75" extent="1-16" drill="0.35"/>
-<contactref element="U$1" pad="16"/>
+<contactref element="U1" pad="16"/>
 <wire x1="102.75" y1="74.75" x2="102.5" y2="74.75" width="0.3" layer="1"/>
 <wire x1="102.5" y1="74.75" x2="102.25" y2="75" width="0.3" layer="1"/>
 <wire x1="102.25" y1="75" x2="100.6" y2="75" width="0.3" layer="1"/>
@@ -9551,7 +9750,7 @@ Your Eurocircuits Team
 </signal>
 <signal name="R-P53">
 <contactref element="RN5" pad="5"/>
-<contactref element="U$1" pad="15"/>
+<contactref element="U1" pad="15"/>
 <wire x1="102" y1="74.5" x2="100.6" y2="74.5" width="0.3" layer="1"/>
 <wire x1="103.7" y1="73.85" x2="102.65" y2="73.85" width="0.3" layer="1"/>
 <wire x1="102.65" y1="73.85" x2="102" y2="74.5" width="0.3" layer="1"/>
@@ -9560,7 +9759,7 @@ Your Eurocircuits Team
 <contactref element="RN5" pad="6"/>
 <contactref element="RN11" pad="3"/>
 <via x="102.75" y="73" extent="1-16" drill="0.35"/>
-<contactref element="U$1" pad="14"/>
+<contactref element="U1" pad="14"/>
 <wire x1="102.75" y1="73" x2="102.5" y2="73" width="0.3" layer="1"/>
 <wire x1="102.5" y1="73" x2="101.5" y2="74" width="0.3" layer="1"/>
 <wire x1="101.5" y1="74" x2="100.6" y2="74" width="0.3" layer="1"/>
@@ -9571,7 +9770,7 @@ Your Eurocircuits Team
 <wire x1="102.8" y1="73.05" x2="102.75" y2="73" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P55">
-<contactref element="U$1" pad="8"/>
+<contactref element="U1" pad="8"/>
 <contactref element="RN5" pad="7"/>
 <contactref element="RN11" pad="2"/>
 <via x="102.75" y="72.25" extent="1-16" drill="0.35"/>
@@ -9588,7 +9787,7 @@ Your Eurocircuits Team
 <wire x1="103.7" y1="72.25" x2="102.75" y2="72.25" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P56">
-<contactref element="U$1" pad="7"/>
+<contactref element="U1" pad="7"/>
 <contactref element="RN5" pad="8"/>
 <contactref element="RN11" pad="1"/>
 <via x="102.75" y="71.5" extent="1-16" drill="0.35"/>
@@ -9603,7 +9802,7 @@ Your Eurocircuits Team
 <wire x1="102.8" y1="71.45" x2="102.75" y2="71.5" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P64">
-<contactref element="U$1" pad="23"/>
+<contactref element="U1" pad="23"/>
 <contactref element="RN7" pad="8"/>
 <via x="102.75" y="78.5" extent="1-16" drill="0.35"/>
 <wire x1="102.75" y1="78.5" x2="100.6" y2="78.5" width="0.3" layer="1"/>
@@ -9615,14 +9814,14 @@ Your Eurocircuits Team
 <wire x1="102.8" y1="78.45" x2="102.75" y2="78.5" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P57">
-<contactref element="U$1" pad="35"/>
+<contactref element="U1" pad="35"/>
 <contactref element="RN7" pad="1"/>
 <wire x1="102" y1="84.5" x2="100.6" y2="84.5" width="0.3" layer="1"/>
 <wire x1="103.7" y1="84.05" x2="102.45" y2="84.05" width="0.3" layer="1"/>
 <wire x1="102.45" y1="84.05" x2="102" y2="84.5" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P58">
-<contactref element="U$1" pad="34"/>
+<contactref element="U1" pad="34"/>
 <contactref element="RN7" pad="2"/>
 <wire x1="103.7" y1="83.25" x2="102.75" y2="83.25" width="0.3" layer="1"/>
 <wire x1="102.75" y1="83.25" x2="102.5" y2="83.25" width="0.3" layer="1"/>
@@ -9630,28 +9829,28 @@ Your Eurocircuits Team
 <wire x1="100.6" y1="84" x2="101.75" y2="84" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P59">
-<contactref element="U$1" pad="32"/>
+<contactref element="U1" pad="32"/>
 <contactref element="RN7" pad="3"/>
 <wire x1="102" y1="83" x2="100.6" y2="83" width="0.3" layer="1"/>
 <wire x1="103.7" y1="82.45" x2="102.55" y2="82.45" width="0.3" layer="1"/>
 <wire x1="102.55" y1="82.45" x2="102" y2="83" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P60">
-<contactref element="U$1" pad="31"/>
+<contactref element="U1" pad="31"/>
 <contactref element="RN7" pad="4"/>
 <wire x1="101.75" y1="82.5" x2="100.6" y2="82.5" width="0.3" layer="1"/>
 <wire x1="103.7" y1="81.65" x2="102.6" y2="81.65" width="0.3" layer="1"/>
 <wire x1="102.6" y1="81.65" x2="101.75" y2="82.5" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P61">
-<contactref element="U$1" pad="26"/>
+<contactref element="U1" pad="26"/>
 <contactref element="RN7" pad="5"/>
 <wire x1="101.75" y1="80" x2="100.6" y2="80" width="0.3" layer="1"/>
 <wire x1="103.7" y1="80.85" x2="102.6" y2="80.85" width="0.3" layer="1"/>
 <wire x1="102.6" y1="80.85" x2="101.75" y2="80" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P62">
-<contactref element="U$1" pad="25"/>
+<contactref element="U1" pad="25"/>
 <contactref element="RN7" pad="6"/>
 <via x="102.75" y="80" extent="1-16" drill="0.35"/>
 <wire x1="102.75" y1="80" x2="102.5" y2="80" width="0.3" layer="1"/>
@@ -9666,7 +9865,7 @@ Your Eurocircuits Team
 <wire x1="102.8" y1="80.05" x2="102.75" y2="80" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P63">
-<contactref element="U$1" pad="24"/>
+<contactref element="U1" pad="24"/>
 <contactref element="RN7" pad="7"/>
 <wire x1="103.7" y1="79.25" x2="102.75" y2="79.25" width="0.3" layer="1"/>
 <via x="102.75" y="79.25" extent="1-16" drill="0.35"/>
@@ -10070,7 +10269,7 @@ Your Eurocircuits Team
 </signal>
 <signal name="+3.3V-PRE">
 <contactref element="SB1" pad="1"/>
-<contactref element="U1" pad="5"/>
+<contactref element="U7" pad="5"/>
 <wire x1="88.2" y1="46.05" x2="88.25" y2="48" width="0.3" layer="16"/>
 <wire x1="88.25" y1="48" x2="88.1" y2="48" width="0.3" layer="16"/>
 </signal>
@@ -10171,7 +10370,7 @@ Your Eurocircuits Team
 <wire x1="56.55" y1="108.7" x2="56.075" y2="109.175" width="0.3" layer="16"/>
 </signal>
 <signal name="R-P41">
-<contactref element="U$1" pad="5"/>
+<contactref element="U1" pad="5"/>
 <contactref element="RN8" pad="1"/>
 <wire x1="103.5" y1="68.5" x2="102.5" y2="69.5" width="0.3" layer="1"/>
 <wire x1="102.5" y1="69.5" x2="100.6" y2="69.5" width="0.3" layer="1"/>
@@ -10179,7 +10378,7 @@ Your Eurocircuits Team
 <wire x1="103.5" y1="66.70979375" x2="103.5" y2="68.5" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P42">
-<contactref element="U$1" pad="4"/>
+<contactref element="U1" pad="4"/>
 <contactref element="RN8" pad="2"/>
 <wire x1="104.025303125" y1="65.05311875" x2="103.353553125" y2="65.724871875" width="0.3" layer="1"/>
 <wire x1="103.353553125" y1="65.724871875" x2="103" y2="66.078425" width="0.3" layer="1"/>
@@ -10190,7 +10389,7 @@ Your Eurocircuits Team
 <signal name="R-P25">
 <contactref element="RN9" pad="1"/>
 <wire x1="83.75" y1="62.75" x2="84.75" y2="63.75" width="0.3" layer="1"/>
-<contactref element="U$1" pad="117"/>
+<contactref element="U1" pad="117"/>
 <wire x1="84.75" y1="63.75" x2="85.25" y2="64.25" width="0.3" layer="1"/>
 <wire x1="84.75" y1="63.75" x2="85.25" y2="64.25" width="0.3" layer="1"/>
 <wire x1="85.25" y1="64.25" x2="85.25" y2="65.65" width="0.3" layer="1"/>
@@ -10212,18 +10411,6 @@ Your Eurocircuits Team
 </signal>
 <signal name="!RST!-RADIO">
 <contactref element="J3" pad="5"/>
-</signal>
-<signal name="BOLT1">
-<via x="33" y="110" extent="1-16" drill="3.9"/>
-</signal>
-<signal name="BOLT2">
-<via x="147" y="110" extent="1-16" drill="3.9"/>
-</signal>
-<signal name="BOLT3">
-<via x="138" y="54" extent="1-16" drill="3.9"/>
-</signal>
-<signal name="BOLT4">
-<via x="42" y="54" extent="1-16" drill="3.9"/>
 </signal>
 </signals>
 </board>

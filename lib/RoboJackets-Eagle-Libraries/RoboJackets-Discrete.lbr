@@ -1191,7 +1191,10 @@ Rdson=1.8mOhm</description>
 <connect gate="G$1" pin="S" pad="1 2 3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" constant="no"/>
+<attribute name="MPN" value="IRFH7545TRPBF" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
