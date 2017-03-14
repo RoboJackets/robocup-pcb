@@ -23744,30 +23744,6 @@ In this library you will find integrated circuits (ICs) that are directly involv
 </library>
 <library name="RoboJackets-Fuses">
 <packages>
-<package name="FUSEHOLDER_3549_X2">
-<description>2x Blade Fuse Clips
-For MINI Blade Fuses</description>
-<pad name="2" x="4.065" y="-5.08" drill="1.93" diameter="3" rot="R180"/>
-<pad name="LEG2" x="4.065" y="5.08" drill="1.17" diameter="2" rot="R180"/>
-<pad name="1" x="-4.065" y="-5.08" drill="1.93" diameter="3" rot="R180"/>
-<pad name="LEG1" x="-4.065" y="5.08" drill="1.17" diameter="2" rot="R180"/>
-<text x="6.5" y="-2.5" size="1" layer="25" rot="R270">&gt;NAME</text>
-<wire x1="6" y1="-7" x2="-6" y2="-7" width="0.2" layer="21"/>
-<wire x1="-6" y1="-7" x2="-6" y2="6.5" width="0.2" layer="21"/>
-<wire x1="-6" y1="6.5" x2="6" y2="6.5" width="0.2" layer="21"/>
-<wire x1="6" y1="6.5" x2="6" y2="-7" width="0.2" layer="21"/>
-<wire x1="0.5" y1="-6.5" x2="-0.5" y2="-6.5" width="0.2" layer="51"/>
-<wire x1="-0.5" y1="-6.5" x2="-0.5" y2="-5" width="0.2" layer="51"/>
-<wire x1="-0.5" y1="-5" x2="-1.5" y2="-5" width="0.2" layer="51"/>
-<wire x1="-1.5" y1="-5" x2="0" y2="-3.5" width="0.2" layer="51"/>
-<wire x1="0" y1="-3.5" x2="1.5" y2="-5" width="0.2" layer="51"/>
-<wire x1="1.5" y1="-5" x2="0.5" y2="-5" width="0.2" layer="51"/>
-<wire x1="0.5" y1="-5" x2="0.5" y2="-6.5" width="0.2" layer="51"/>
-<wire x1="-5.45" y1="-7.5" x2="5.45" y2="-7.5" width="0.2" layer="51"/>
-<wire x1="5.45" y1="-7.5" x2="5.45" y2="-15.8" width="0.2" layer="51"/>
-<wire x1="5.45" y1="-15.8" x2="-5.45" y2="-15.8" width="0.2" layer="51"/>
-<wire x1="-5.45" y1="-15.8" x2="-5.45" y2="-7.5" width="0.2" layer="51"/>
-</package>
 <package name="F1812">
 <wire x1="-1.4732" y1="1.6002" x2="1.4732" y2="1.6002" width="0.1016" layer="51"/>
 <wire x1="-1.4478" y1="-1.6002" x2="1.4732" y2="-1.6002" width="0.1016" layer="51"/>
@@ -23804,6 +23780,16 @@ For MINI Blade Fuses</description>
 <rectangle x1="0.4318" y1="-0.4318" x2="0.8382" y2="0.4318" layer="51"/>
 <rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="51"/>
 </package>
+<package name="3557-2">
+<pad name="1" x="-6.735" y="1.7" drill="1.6"/>
+<pad name="2" x="-6.735" y="-1.7" drill="1.6"/>
+<pad name="4" x="6.735" y="1.7" drill="1.6"/>
+<pad name="3" x="6.735" y="-1.7" drill="1.6"/>
+<wire x1="-9.905" y1="3.365" x2="9.905" y2="3.365" width="0.127" layer="21"/>
+<wire x1="9.905" y1="3.365" x2="9.905" y2="-3.365" width="0.127" layer="21"/>
+<wire x1="9.905" y1="-3.365" x2="-9.905" y2="-3.365" width="0.127" layer="21"/>
+<wire x1="-9.905" y1="-3.365" x2="-9.905" y2="3.365" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="FUSE">
@@ -23816,25 +23802,6 @@ For MINI Blade Fuses</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="FUSEHOLDER_3549_X2" prefix="F" uservalue="yes">
-<description>Keystone Electronics
-Fuse Clip 30A 500V Circuit Blade PCB
-3549</description>
-<gates>
-<gate name="G$1" symbol="FUSE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="FUSEHOLDER_3549_X2">
-<connects>
-<connect gate="G$1" pin="1" pad="1 LEG1" route="any"/>
-<connect gate="G$1" pin="2" pad="2 LEG2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="CHIP_FUSE" prefix="F" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="FUSE" x="0" y="0"/>
@@ -23862,6 +23829,22 @@ Fuse Clip 30A 500V Circuit Blade PCB
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3557-2" prefix="F" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="3557-2">
+<connects>
+<connect gate="G$1" pin="1" pad="1 2"/>
+<connect gate="G$1" pin="2" pad="3 4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -25959,7 +25942,6 @@ In this library you will find crystals and oscillators used for clocking signals
 <part name="U3" library="RoboJackets-PowerICs" deviceset="VND5E006ASPTR-E" device=""/>
 <part name="SUPPLY20" library="RoboJackets-Supplies" deviceset="VBATT" device=""/>
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
-<part name="F1" library="RoboJackets-Fuses" deviceset="FUSEHOLDER_3549_X2" device="" value="30A"/>
 <part name="R6" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="R7" library="rcl" deviceset="R-US_" device="R0603" value="1k"/>
 <part name="R8" library="rcl" deviceset="R-US_" device="R0603" value="1k"/>
@@ -26169,6 +26151,7 @@ In this library you will find crystals and oscillators used for clocking signals
 <part name="SUPPLY30" library="supply2" deviceset="+5V" device=""/>
 <part name="SUPPLY31" library="supply2" deviceset="+5V" device=""/>
 <part name="SUPPLY66" library="supply2" deviceset="+5V" device=""/>
+<part name="F1" library="RoboJackets-Fuses" deviceset="3557-2" device="" value="30A"/>
 </parts>
 <sheets>
 <sheet>
@@ -29074,7 +29057,6 @@ to 5V and 3.3V?</text>
 <instance part="U3" gate="G$1" x="121.92" y="154.94"/>
 <instance part="SUPPLY20" gate="G$1" x="35.56" y="139.7"/>
 <instance part="GND27" gate="1" x="33.02" y="160.02"/>
-<instance part="F1" gate="G$1" x="30.48" y="134.62"/>
 <instance part="R6" gate="G$1" x="88.9" y="139.7" rot="R90"/>
 <instance part="R7" gate="G$1" x="96.52" y="139.7" rot="R90"/>
 <instance part="R8" gate="G$1" x="104.14" y="139.7" rot="R90"/>
@@ -29146,6 +29128,7 @@ to 5V and 3.3V?</text>
 <instance part="R13" gate="G$1" x="147.32" y="73.66"/>
 <instance part="SUPPLY24" gate="G$1" x="22.86" y="81.28"/>
 <instance part="SUPPLY25" gate="G$1" x="81.28" y="27.94" rot="R180"/>
+<instance part="F1" gate="G$1" x="30.48" y="134.62"/>
 </instances>
 <busses>
 </busses>
@@ -29282,10 +29265,10 @@ to 5V and 3.3V?</text>
 </net>
 <net name="VBATT" class="0">
 <segment>
-<pinref part="F1" gate="G$1" pin="2"/>
 <pinref part="SUPPLY20" gate="G$1" pin="VBATT"/>
 <wire x1="33.02" y1="134.62" x2="35.56" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="134.62" x2="35.56" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="F1" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="VCC"/>
@@ -29320,9 +29303,9 @@ to 5V and 3.3V?</text>
 <label x="33.02" y="170.18" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="F1" gate="G$1" pin="1"/>
 <wire x1="27.94" y1="134.62" x2="25.4" y2="134.62" width="0.1524" layer="91"/>
 <label x="25.4" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="F1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="CS2" class="0">

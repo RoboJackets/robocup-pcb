@@ -2735,30 +2735,6 @@ In this library you will find integrated circuits (ICs) that are directly involv
 </library>
 <library name="RoboJackets-Fuses">
 <packages>
-<package name="FUSEHOLDER_3549_X2">
-<description>2x Blade Fuse Clips
-For MINI Blade Fuses</description>
-<pad name="2" x="4.065" y="-5.08" drill="1.93" diameter="3" rot="R180"/>
-<pad name="LEG2" x="4.065" y="5.08" drill="1.17" diameter="2" rot="R180"/>
-<pad name="1" x="-4.065" y="-5.08" drill="1.93" diameter="3" rot="R180"/>
-<pad name="LEG1" x="-4.065" y="5.08" drill="1.17" diameter="2" rot="R180"/>
-<text x="6.5" y="-2.5" size="1" layer="25" rot="R270">&gt;NAME</text>
-<wire x1="6" y1="-7" x2="-6" y2="-7" width="0.2" layer="21"/>
-<wire x1="-6" y1="-7" x2="-6" y2="6.5" width="0.2" layer="21"/>
-<wire x1="-6" y1="6.5" x2="6" y2="6.5" width="0.2" layer="21"/>
-<wire x1="6" y1="6.5" x2="6" y2="-7" width="0.2" layer="21"/>
-<wire x1="0.5" y1="-6.5" x2="-0.5" y2="-6.5" width="0.2" layer="51"/>
-<wire x1="-0.5" y1="-6.5" x2="-0.5" y2="-5" width="0.2" layer="51"/>
-<wire x1="-0.5" y1="-5" x2="-1.5" y2="-5" width="0.2" layer="51"/>
-<wire x1="-1.5" y1="-5" x2="0" y2="-3.5" width="0.2" layer="51"/>
-<wire x1="0" y1="-3.5" x2="1.5" y2="-5" width="0.2" layer="51"/>
-<wire x1="1.5" y1="-5" x2="0.5" y2="-5" width="0.2" layer="51"/>
-<wire x1="0.5" y1="-5" x2="0.5" y2="-6.5" width="0.2" layer="51"/>
-<wire x1="-5.45" y1="-7.5" x2="5.45" y2="-7.5" width="0.2" layer="51"/>
-<wire x1="5.45" y1="-7.5" x2="5.45" y2="-15.8" width="0.2" layer="51"/>
-<wire x1="5.45" y1="-15.8" x2="-5.45" y2="-15.8" width="0.2" layer="51"/>
-<wire x1="-5.45" y1="-15.8" x2="-5.45" y2="-7.5" width="0.2" layer="51"/>
-</package>
 <package name="F0603">
 <wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
 <wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="51"/>
@@ -2771,6 +2747,16 @@ For MINI Blade Fuses</description>
 <text x="-1.5" y="1" size="1" layer="25">&gt;NAME</text>
 <rectangle x1="0.4318" y1="-0.4318" x2="0.8382" y2="0.4318" layer="51"/>
 <rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="51"/>
+</package>
+<package name="3557-2">
+<pad name="1" x="-6.735" y="1.7" drill="1.6"/>
+<pad name="2" x="-6.735" y="-1.7" drill="1.6"/>
+<pad name="4" x="6.735" y="1.7" drill="1.6"/>
+<pad name="3" x="6.735" y="-1.7" drill="1.6"/>
+<wire x1="-9.905" y1="3.365" x2="9.905" y2="3.365" width="0.127" layer="21"/>
+<wire x1="9.905" y1="3.365" x2="9.905" y2="-3.365" width="0.127" layer="21"/>
+<wire x1="9.905" y1="-3.365" x2="-9.905" y2="-3.365" width="0.127" layer="21"/>
+<wire x1="-9.905" y1="-3.365" x2="-9.905" y2="3.365" width="0.127" layer="21"/>
 </package>
 </packages>
 </library>
@@ -4299,7 +4285,6 @@ Your Eurocircuits Team
 <attribute name="MPN" value="DRV8303DCAR" x="57" y="92" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="60.25" y="85.25" size="1" layer="25" rot="R180"/>
 </element>
-<element name="F1" library="RoboJackets-Fuses" package="FUSEHOLDER_3549_X2" value="30A" x="101.75" y="28.75"/>
 <element name="F2" library="RoboJackets-Fuses" package="F0603" value="0603L075SLYR" x="82.25" y="44.5" smashed="yes" rot="MR90">
 <attribute name="NAME" x="81.75" y="41" size="1" layer="26" rot="MR90"/>
 </element>
@@ -5091,6 +5076,7 @@ Your Eurocircuits Team
 <attribute name="NAME" x="103.1158" y="60.606984375" size="1" layer="26" rot="MR135"/>
 <attribute name="VALUE" x="98.8125125" y="62.66026875" size="1.27" layer="28" rot="MR135"/>
 </element>
+<element name="F1" library="RoboJackets-Fuses" package="3557-2" value="30A" x="107.25" y="33.5" rot="R90"/>
 </elements>
 <signals>
 <signal name="VB">
@@ -6899,13 +6885,11 @@ Your Eurocircuits Team
 <wire x1="143" y1="57.25" x2="141.25" y2="59" width="0.3" layer="16"/>
 </signal>
 <signal name="VBATT">
-<contactref element="F1" pad="2"/>
-<contactref element="F1" pad="LEG2"/>
 <contactref element="U3" pad="17"/>
 <contactref element="R9" pad="2"/>
 <polygon width="0.3" layer="1" orphans="yes" thermals="no">
-<vertex x="107.75" y="21.75"/>
-<vertex x="107.75" y="48.5"/>
+<vertex x="110.5" y="38.25"/>
+<vertex x="110.5" y="45.75"/>
 <vertex x="104.25" y="52"/>
 <vertex x="93.25" y="52"/>
 <vertex x="93.25" y="51"/>
@@ -6913,7 +6897,7 @@ Your Eurocircuits Team
 <vertex x="94" y="44.5"/>
 <vertex x="103" y="44.5"/>
 <vertex x="104" y="43.5"/>
-<vertex x="104" y="21.75"/>
+<vertex x="104" y="38.25"/>
 </polygon>
 <via x="101.5" y="45.5" extent="1-16" drill="0.35"/>
 <wire x1="101.6" y1="44.25" x2="101.5" y2="45.5" width="0.3" layer="16"/>
@@ -6931,22 +6915,23 @@ Your Eurocircuits Team
 <vertex x="76.25" y="52"/>
 <vertex x="74.75" y="50.5"/>
 </polygon>
+<contactref element="F1" pad="3"/>
+<contactref element="F1" pad="4"/>
 </signal>
 <signal name="VIN">
 <contactref element="J9" pad="1"/>
-<contactref element="F1" pad="1" route="any" routetag="G$1.1"/>
-<contactref element="F1" pad="LEG1" route="any" routetag="G$1.1"/>
 <polygon width="0.3" layer="1" thermals="no">
-<vertex x="99.75" y="21.75"/>
-<vertex x="99.75" y="35.25"/>
-<vertex x="96.25" y="35.25"/>
-<vertex x="93.25" y="38.25"/>
+<vertex x="110.5" y="24.75"/>
+<vertex x="110.5" y="28.75"/>
+<vertex x="102.25" y="28.75"/>
+<vertex x="92.75" y="38.25"/>
 <vertex x="87.75" y="38.25"/>
 <vertex x="87.75" y="35.25"/>
 <vertex x="90.75" y="35.25"/>
-<vertex x="95.75" y="30.25"/>
-<vertex x="95.75" y="21.75"/>
+<vertex x="101.25" y="24.75"/>
 </polygon>
+<contactref element="F1" pad="2"/>
+<contactref element="F1" pad="1"/>
 </signal>
 <signal name="CS2">
 <contactref element="U3" pad="15"/>
