@@ -1,2 +1,0 @@
-![Kicker Board](./kicker.png)
-
