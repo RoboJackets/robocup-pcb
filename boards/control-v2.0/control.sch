@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.2">
+<eagle version="8.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -23847,7 +23847,10 @@ In this library you will find integrated circuits (ICs) that are directly involv
 <connect gate="G$1" pin="2" pad="3 4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="36-3557-2-ND" constant="no"/>
+<attribute name="MPN" value="3557-2" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
