@@ -25931,13 +25931,13 @@ In this library you will find crystals and oscillators used for clocking signals
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
-<part name="RN2" library="RoboJackets-Resistors" deviceset="RA-8" device=""/>
-<part name="RN3" library="RoboJackets-Resistors" deviceset="RA-8" device=""/>
-<part name="RN4" library="RoboJackets-Resistors" deviceset="RA-8" device=""/>
-<part name="RN5" library="RoboJackets-Resistors" deviceset="RA-8" device=""/>
-<part name="RN6" library="RoboJackets-Resistors" deviceset="RA-8" device=""/>
-<part name="RN7" library="RoboJackets-Resistors" deviceset="RA-8" device=""/>
-<part name="RN8" library="RoboJackets-Resistors" deviceset="RA-8" device=""/>
+<part name="RN2" library="RoboJackets-Resistors" deviceset="RA-8" device="" value="330"/>
+<part name="RN3" library="RoboJackets-Resistors" deviceset="RA-8" device="" value="330"/>
+<part name="RN4" library="RoboJackets-Resistors" deviceset="RA-8" device="" value="330"/>
+<part name="RN5" library="RoboJackets-Resistors" deviceset="RA-8" device="" value="330"/>
+<part name="RN6" library="RoboJackets-Resistors" deviceset="RA-8" device="" value="330"/>
+<part name="RN7" library="RoboJackets-Resistors" deviceset="RA-8" device="" value="330"/>
+<part name="RN8" library="RoboJackets-Resistors" deviceset="RA-8" device="" value="330"/>
 <part name="R5" library="resistor" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="SUPPLY19" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="FRAME5" library="RoboJackets-Frames" deviceset="FRAME_A_L" device=""/>
@@ -26011,7 +26011,7 @@ In this library you will find crystals and oscillators used for clocking signals
 <part name="SUPPLY40" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY41" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="SUPPLY42" library="RoboJackets-Supplies" deviceset="+18.5V" device=""/>
-<part name="RN9" library="RoboJackets-Resistors" deviceset="RA-8" device=""/>
+<part name="RN9" library="RoboJackets-Resistors" deviceset="RA-8" device="" value="330"/>
 <part name="RN11" library="RoboJackets-Resistors" deviceset="RA-8" device=""/>
 <part name="RN14" library="RoboJackets-Resistors" deviceset="RA-8" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
@@ -26127,7 +26127,7 @@ In this library you will find crystals and oscillators used for clocking signals
 <part name="C34" library="resistor" deviceset="C-US" device="C0603" value="0.1uF"/>
 <part name="R22" library="resistor" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="SUPPLY63" library="RoboJackets-Supplies" deviceset="+2.5V" device=""/>
-<part name="R23" library="resistor" deviceset="R-US_" device="R0603" value="10k"/>
+<part name="R23" library="resistor" deviceset="R-US_" device="R0603" value="330"/>
 <part name="SUPPLY64" library="RoboJackets-Supplies" deviceset="+2.5V" device=""/>
 <part name="D9" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-RED" value="RED"/>
 <part name="D10" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-RED" value="RED"/>
@@ -26991,6 +26991,10 @@ connected like that?</text>
 <wire x1="271.78" y1="160.02" x2="281.94" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="281.94" y1="160.02" x2="281.94" y2="165.1" width="0.1524" layer="91"/>
 <junction x="281.94" y="165.1"/>
+<pinref part="U1" gate="G$1" pin="57_IP_L06N_2/M2/GCLK1"/>
+<wire x1="271.78" y1="152.4" x2="281.94" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="152.4" x2="281.94" y2="160.02" width="0.1524" layer="91"/>
+<junction x="281.94" y="160.02"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="79_VCCO_1"/>
@@ -27053,13 +27057,6 @@ connected like that?</text>
 </segment>
 </net>
 <net name="MOSI" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="44_IO_L02N_2/MOSI/CSI_B"/>
-<wire x1="271.78" y1="119.38" x2="274.32" y2="119.38" width="0.1524" layer="91"/>
-<label x="274.32" y="119.38" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="MISO" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="63_IO_L08N_2/DIN/D0"/>
 <wire x1="271.78" y1="167.64" x2="274.32" y2="167.64" width="0.1524" layer="91"/>
@@ -28304,6 +28301,13 @@ connected like that?</text>
 <pinref part="RN7" gate="G$1" pin="16"/>
 <wire x1="266.7" y1="22.86" x2="264.16" y2="22.86" width="0.1524" layer="91"/>
 <label x="266.7" y="22.86" size="1.27" layer="95" rot="MR180" xref="yes"/>
+</segment>
+</net>
+<net name="MISO" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="44_IO_L02N_2/MOSI/CSI_B"/>
+<wire x1="271.78" y1="119.38" x2="274.32" y2="119.38" width="0.1524" layer="91"/>
+<label x="274.32" y="119.38" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
