@@ -1,1 +1,5 @@
-![Radio Board](./radio-2016-v1_0.png)
+# Radio Board
+
+Board containing radio circuitry to communicate between robot(s) and base station
+
+![Radio Board](./radio.png)
