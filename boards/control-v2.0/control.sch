@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -26011,8 +26011,8 @@ In this library you will find crystals and oscillators used for clocking signals
 <part name="SUPPLY1" library="supply2" deviceset="+5V" device=""/>
 <part name="SUPPLY3" library="supply2" deviceset="+5V" device=""/>
 <part name="SUPPLY2" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
-<part name="R1" library="resistor" deviceset="R-US_" device="R0603" value="330"/>
-<part name="R2" library="resistor" deviceset="R-US_" device="R0603" value="330"/>
+<part name="R1" library="resistor" deviceset="R-US_" device="R0603" value="4.7k"/>
+<part name="R2" library="resistor" deviceset="R-US_" device="R0603" value="4.7k"/>
 <part name="SUPPLY4" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="FRAME1" library="RoboJackets-Frames" deviceset="FRAME_A_L" device="">
 <attribute name="SCH_DESC" value="Microcontroller"/>
@@ -26045,7 +26045,7 @@ In this library you will find crystals and oscillators used for clocking signals
 <part name="RN5" library="RoboJackets-Resistors" deviceset="RA-8" device="" value="330"/>
 <part name="RN10" library="RoboJackets-Resistors" deviceset="RA-8" device="" value="330"/>
 <part name="RN8" library="RoboJackets-Resistors" deviceset="RA-8" device="" value="330"/>
-<part name="R5" library="resistor" deviceset="R-US_" device="R0603" value="10k"/>
+<part name="R5" library="resistor" deviceset="R-US_" device="R0603" value="4.7k"/>
 <part name="SUPPLY21" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="FRAME4" library="RoboJackets-Frames" deviceset="FRAME_A_L" device=""/>
 <part name="J4" library="RoboJackets-Connectors" deviceset="DF22-2" device=""/>
@@ -26232,7 +26232,7 @@ In this library you will find crystals and oscillators used for clocking signals
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY15" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="C9" library="resistor" deviceset="C-US" device="C0603" value="0.1uF"/>
-<part name="R6" library="resistor" deviceset="R-US_" device="R0603" value="10k"/>
+<part name="R6" library="resistor" deviceset="R-US_" device="R0603" value="4.7k"/>
 <part name="SUPPLY22" library="RoboJackets-Supplies" deviceset="+2.5V" device=""/>
 <part name="R4" library="resistor" deviceset="R-US_" device="R0603" value="330"/>
 <part name="SUPPLY10" library="RoboJackets-Supplies" deviceset="+2.5V" device=""/>
