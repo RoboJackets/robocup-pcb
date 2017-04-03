@@ -3649,8 +3649,8 @@ In this library you will find circuit elements directly involved in controlling 
 <wire x1="6.5" y1="11.5" x2="6.5" y2="2" width="0.127" layer="21"/>
 <rectangle x1="-8" y1="2" x2="8" y2="12" layer="39"/>
 <rectangle x1="-8" y1="2" x2="8" y2="12" layer="39"/>
-<text x="8.255" y="-10.16" size="1.27" layer="25">&gt;NAME</text>
-<text x="8.255" y="-11.43" size="1.27" layer="27">&gt;VALUE</text>
+<text x="8.255" y="-10.16" size="1" layer="25">&gt;NAME</text>
+<text x="8.255" y="-11.43" size="1" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -3771,6 +3771,7 @@ In this library you will find all the connectors used on any of our boards.
 <wire x1="-1.385" y1="-3.75" x2="-1.385" y2="-3" width="0.127" layer="21"/>
 <wire x1="0" y1="-3.75" x2="1.385" y2="-3.75" width="0.127" layer="21"/>
 <wire x1="1.385" y1="-3.75" x2="1.385" y2="-3" width="0.127" layer="21"/>
+<text x="-8.75" y="3.5" size="1" layer="25">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
