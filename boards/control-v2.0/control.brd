@@ -37,7 +37,7 @@
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -4239,14 +4239,14 @@ Your Eurocircuits Team
 <element name="D6" library="RoboJackets-LEDs" package="CHIP-LED0603" value="GREEN" x="72.75" y="32.5" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="160-1446-1-ND" x="72.75" y="32.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="LTST-C191KGKT" x="72.75" y="32.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="75.115" y="31.885" size="1" layer="25"/>
+<attribute name="NAME" x="71.5" y="33" size="1" layer="25" rot="R180"/>
 <attribute name="VALUE" x="72.115" y="30.595" size="1.27" layer="27"/>
 <attribute name="VALUE" value="GREEN" x="72.75" y="32.5" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="D7" library="RoboJackets-LEDs" package="CHIP-LED0603" value="GREEN" x="72.75" y="36.5" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="160-1446-1-ND" x="72.75" y="36.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="LTST-C191KGKT" x="72.75" y="36.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="73.865" y="36.885" size="1" layer="25"/>
+<attribute name="NAME" x="71" y="36.5" size="1" layer="25" rot="R180"/>
 <attribute name="VALUE" x="72.115" y="34.595" size="1.27" layer="27"/>
 <attribute name="VALUE" value="GREEN" x="72.75" y="36.5" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
@@ -4357,7 +4357,7 @@ Your Eurocircuits Team
 <attribute name="VALUE" x="81.905" y="45.135" size="1.27" layer="28" rot="MR270"/>
 </element>
 <element name="R19" library="resistor" package="R0603" value="330" x="72.75" y="34.5" smashed="yes" rot="R180">
-<attribute name="NAME" x="75.115" y="33.885" size="1" layer="25"/>
+<attribute name="NAME" x="71" y="35.5" size="1" layer="25" rot="R180"/>
 <attribute name="VALUE" x="73.385" y="36.405" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="R21" library="resistor" package="R0603" value="330" x="72.75" y="38.5" smashed="yes" rot="R180">
@@ -4781,7 +4781,7 @@ Your Eurocircuits Team
 <attribute name="NAME" x="75.25" y="91.6425" size="1" layer="25" ratio="10" rot="R180" align="bottom-center"/>
 </element>
 <element name="C26" library="rcl" package="C0603" value="0.47uF" x="83.25" y="91" smashed="yes" rot="R90">
-<attribute name="NAME" x="82.635" y="89.865" size="1" layer="25" rot="R180"/>
+<attribute name="NAME" x="82.635" y="89.365" size="1" layer="25" rot="R180"/>
 <attribute name="VALUE" x="85.155" y="90.365" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="C25" library="rcl" package="C0603" value="10000pF" x="85.5" y="91" smashed="yes" rot="R90">
@@ -4921,14 +4921,14 @@ Your Eurocircuits Team
 <element name="D10" library="RoboJackets-LEDs" package="CHIP-LED0603" value="RED" x="35.75" y="103.75" smashed="yes">
 <attribute name="DIGIKEY" value="160-1447-1-ND" x="35.75" y="103.75" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="LTST-C191KRKT" x="35.75" y="103.75" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="35.385" y="106.885" size="1" layer="25" rot="SR270"/>
+<attribute name="NAME" x="36" y="107.5" size="1" layer="25" rot="SR270"/>
 <attribute name="VALUE" x="37.655" y="103.115" size="1.27" layer="27" rot="R90"/>
 <attribute name="VALUE" value="RED" x="35.75" y="103.75" size="1.778" layer="27" display="off"/>
 </element>
 <element name="D11" library="RoboJackets-LEDs" package="CHIP-LED0603" value="RED" x="140.5" y="61" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="160-1447-1-ND" x="140.5" y="61" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="LTST-C191KRKT" x="140.5" y="61" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="140.135" y="64.385" size="1" layer="25" rot="R270"/>
+<attribute name="NAME" x="141" y="63" size="1" layer="25" rot="R90"/>
 <attribute name="VALUE" x="138.595" y="61.635" size="1.27" layer="27" rot="R270"/>
 <attribute name="VALUE" value="RED" x="140.5" y="61" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
@@ -5067,7 +5067,7 @@ Your Eurocircuits Team
 <attribute name="VALUE" x="64.345" y="107.885" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R12" library="resistor" package="R0603" value="330" x="72.75" y="30.5" smashed="yes">
-<attribute name="NAME" x="75.115" y="29.885" size="1" layer="25"/>
+<attribute name="NAME" x="71" y="31.5" size="1" layer="25" rot="R180"/>
 <attribute name="VALUE" x="72.115" y="28.595" size="1.27" layer="27"/>
 </element>
 <element name="D4" library="RoboJackets-LEDs" package="CHIP-LED0603" value="GREEN" x="72.75" y="28.5" smashed="yes" rot="R270">
@@ -5097,7 +5097,7 @@ Your Eurocircuits Team
 <attribute name="VALUE" value="GREEN" x="72.75" y="24.5" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R20" library="resistor" package="R0603" value="1k" x="72.75" y="26.5" smashed="yes" rot="R180">
-<attribute name="NAME" x="75.115" y="25.885" size="1" layer="25"/>
+<attribute name="NAME" x="70.885" y="28.115" size="1" layer="25" rot="R180"/>
 <attribute name="VALUE" x="73.385" y="28.405" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="DD:C11" library="RoboJackets-Capacitors" package="PANASONIC_J16" value="EEE-FK1H102AM" x="57" y="91.5" rot="MR180">
@@ -7232,9 +7232,9 @@ Your Eurocircuits Team
 <vertex x="124.75" y="59.5"/>
 <vertex x="120.75" y="55.5"/>
 <vertex x="118.5" y="57.75"/>
-<vertex x="123" y="62.25"/>
-<vertex x="128.5" y="62"/>
-<vertex x="134.5" y="55.75"/>
+<vertex x="123.75" y="63"/>
+<vertex x="127" y="63"/>
+<vertex x="134.5" y="55.5"/>
 <vertex x="134.5" y="50.25"/>
 </polygon>
 <polygon width="0.3" layer="16" thermals="no">
@@ -7349,7 +7349,7 @@ Your Eurocircuits Team
 <vertex x="59.25" y="54.5"/>
 <vertex x="62.5" y="51.25"/>
 <vertex x="64.75" y="53.5"/>
-<vertex x="61" y="57.25"/>
+<vertex x="61" y="57"/>
 <vertex x="53" y="57"/>
 <vertex x="48" y="52"/>
 </polygon>
@@ -7366,10 +7366,10 @@ Your Eurocircuits Team
 </polygon>
 <polygon width="0.3" layer="16" thermals="no">
 <vertex x="58.5" y="55.5"/>
-<vertex x="61" y="57.25"/>
+<vertex x="60.75" y="57.5"/>
 <vertex x="58.25" y="60"/>
-<vertex x="55.5" y="59.25"/>
-<vertex x="55.5" y="55.5"/>
+<vertex x="53" y="60"/>
+<vertex x="53" y="55.5"/>
 </polygon>
 <wire x1="51.25" y1="99" x2="51.25" y2="99.75" width="0.3" layer="16"/>
 <wire x1="145.75" y1="88.27" x2="140.52" y2="88.27" width="1.5" layer="16"/>
@@ -11054,6 +11054,189 @@ Your Eurocircuits Team
 <wire x1="138.25" y1="104.25" x2="135.25" y2="107.25" width="0.3" layer="1"/>
 </signal>
 </signals>
+<errors>
+<approved hash="18,29,f8f195b64d10d620"/>
+<approved hash="18,29,d05ef8d853e2372c"/>
+<approved hash="18,29,52fe547c555626fd"/>
+<approved hash="18,29,14ffd1e71e7e931f"/>
+<approved hash="18,29,742724d451de77a2"/>
+<approved hash="18,29,742724d451de77a2"/>
+<approved hash="18,29,742724d451de77a2"/>
+<approved hash="18,29,d3d61252ecadef7b"/>
+<approved hash="18,29,b70cdf6f1f537730"/>
+<approved hash="18,29,523cf05f30449227"/>
+<approved hash="18,29,479e8fcb4bd77b6d"/>
+<approved hash="18,29,ff4809a1d805d603"/>
+<approved hash="18,29,758ad825183eb591"/>
+<approved hash="18,29,2141c3cc43c3a14e"/>
+<approved hash="18,29,ac7c48fac8f52c73"/>
+<approved hash="18,29,5740b5cf35c0d74f"/>
+<approved hash="18,29,4ecbae762e79cec4"/>
+<approved hash="18,29,e9db0b598b5669d4"/>
+<approved hash="18,29,14c9f074707b94c6"/>
+<approved hash="18,29,1418d6fe16f8d41e"/>
+<approved hash="18,29,9e3f5cd99cda5e3c"/>
+<approved hash="18,29,0a9dc37b0385ca63"/>
+<approved hash="18,29,e920acc66cc72921"/>
+<approved hash="18,29,17e6d7001702d7e4"/>
+<approved hash="18,29,9ca55e439e4c5caa"/>
+<approved hash="18,29,6060a5466540a066"/>
+<approved hash="18,29,ea472f61ef622a44"/>
+<approved hash="18,29,7ee5b0c3703dbe1b"/>
+<approved hash="18,29,9d58df7e1f7f5d59"/>
+<approved hash="18,29,639ea4b864baa39c"/>
+<approved hash="18,29,e8dd2dfbedf428d2"/>
+<approved hash="18,29,8d879e8c9e8c8d87"/>
+<approved hash="18,29,8816981f981f8816"/>
+<approved hash="18,29,83f49cfd9cfd83f4"/>
+<approved hash="18,29,86d291db91db86d2"/>
+<approved hash="18,29,8443944894488443"/>
+<approved hash="18,29,8165936a936a8165"/>
+<approved hash="18,29,60a073a973a960a0"/>
+<approved hash="18,29,6611762676266611"/>
+<approved hash="18,29,7189629e629e7189"/>
+<approved hash="18,29,7eab69b069b07eab"/>
+<approved hash="18,29,7c186c216c217c18"/>
+<approved hash="18,29,7706610f610f7706"/>
+<approved hash="18,29,63337d387d386333"/>
+<approved hash="18,29,7577677c677c7577"/>
+<approved hash="18,29,6dc27ecb7ecb6dc2"/>
+<approved hash="18,29,6ae465ed65ed6ae4"/>
+<approved hash="18,29,6855785a785a6855"/>
+<approved hash="18,29,793a6b436b43793a"/>
+<approved hash="18,29,7bcd54d254d27bcd"/>
+<approved hash="18,29,54b247bb47bb54b2"/>
+<approved hash="18,29,51d442dd42dd51d4"/>
+<approved hash="18,29,5745414a414a5745"/>
+<approved hash="18,29,4a235a285a284a23"/>
+<approved hash="18,29,465c56655665465c"/>
+<approved hash="18,29,4f90589958994f90"/>
+<approved hash="18,29,40ef53f453f440ef"/>
+<approved hash="18,29,4d015f165f164d01"/>
+<approved hash="18,29,437e5d875d87437e"/>
+<approved hash="18,29,8a9985ae85ae8a99"/>
+<approved hash="18,29,9cdd8fe28fe29cdd"/>
+<approved hash="18,29,9f6c897589759f6c"/>
+<approved hash="18,29,924a82538253924a"/>
+<approved hash="18,29,9528873187319528"/>
+<approved hash="18,29,9b8e749774979b8e"/>
+<approved hash="18,29,97bb80c080c097bb"/>
+<approved hash="18,29,99ff8b048b0499ff"/>
+<approved hash="18,29,d3b35aa0daa653b5"/>
+<approved hash="18,29,42b6d5a555a4c2b7"/>
+<approved hash="18,29,fda844bbc4b97daa"/>
+<approved hash="18,29,6cabf7b877bfecac"/>
+<approved hash="18,29,9fad66bee6bc1faf"/>
+<approved hash="18,29,0ea091b311b28ea1"/>
+<approved hash="18,29,b9a200b180b739a4"/>
+<approved hash="18,29,28a5b3b633b5a8a6"/>
+<approved hash="18,29,5ba722b4a28bdb98"/>
+<approved hash="18,29,ca995d8add884a9b"/>
+<approved hash="18,29,459ccc8f4c8ec59d"/>
+<approved hash="18,29,f49e7f8dff837490"/>
+<approved hash="18,29,6791ee826e81e792"/>
+<approved hash="18,29,9693198099861695"/>
+<approved hash="18,29,0196888508848197"/>
+<approved hash="18,29,b0883b9bbb99308a"/>
+<approved hash="18,29,238baa982a9fa38c"/>
+<approved hash="18,29,528d259ea59dd28e"/>
+<approved hash="18,29,cd8f549cd4924d81"/>
+<approved hash="18,29,7c82c7914790fc83"/>
+<approved hash="18,29,ef847697f6956f86"/>
+<approved hash="18,29,1e87e19461eb9ef8"/>
+<approved hash="18,29,89f910ea90e809fb"/>
+<approved hash="18,29,38fc83ef03eeb8fd"/>
+<approved hash="18,29,abfe32edb2e32bf0"/>
+<approved hash="18,29,daf1ade22de15af2"/>
+<approved hash="18,29,55f3dce05ce7d5f4"/>
+<approved hash="18,29,c4f54fe6cfe444f7"/>
+<approved hash="18,29,77e8fefb7efaf7e9"/>
+<approved hash="18,29,e6ea69f9e9ff66ec"/>
+<approved hash="18,29,11ed98fe18fd91ee"/>
+<approved hash="18,29,80ef0bfc8bf200e1"/>
+<approved hash="18,29,33e2baf13af0b3e3"/>
+<approved hash="18,29,a2e435f7b5f522e6"/>
+<approved hash="18,29,dde7a4f424cb5dd8"/>
+<approved hash="18,29,4cd9d7ca57c9ccda"/>
+<approved hash="18,29,b3fc3ad13ad7b3fa"/>
+<approved hash="18,29,22f9b5d4b5d522f8"/>
+<approved hash="18,29,9de724ca24c89de5"/>
+<approved hash="18,29,0ce497c997ce0ce3"/>
+<approved hash="18,29,ffe206cf06cdffe0"/>
+<approved hash="18,29,6eeff1c2f1c36eee"/>
+<approved hash="18,29,d9ed60c060c6d9eb"/>
+<approved hash="18,29,48ead3c7d3c448e9"/>
+<approved hash="18,29,3be842c542fa3bd7"/>
+<approved hash="18,29,aad63dfb3df9aad4"/>
+<approved hash="18,29,25d3acfeacff25d2"/>
+<approved hash="18,29,94d11ffc1ff294df"/>
+<approved hash="18,29,07de8ef38ef007dd"/>
+<approved hash="18,29,f6dc79f179f7f6da"/>
+<approved hash="18,29,61d9e8f4e8f561d8"/>
+<approved hash="18,29,d0c75bea5be8d0c5"/>
+<approved hash="18,29,43c4cae9caee43c3"/>
+<approved hash="18,29,32c245ef45ec32c1"/>
+<approved hash="18,29,adc034ed34e3adce"/>
+<approved hash="18,29,1ccda7e0a7e11ccc"/>
+<approved hash="18,29,8fcb16e616e48fc9"/>
+<approved hash="18,29,7ec881e5819a7eb7"/>
+<approved hash="18,29,e9b6709b7099e9b4"/>
+<approved hash="18,29,58b3e39ee39f58b2"/>
+<approved hash="18,29,cbb1529c5292cbbf"/>
+<approved hash="18,29,babecd93cd90babd"/>
+<approved hash="18,29,35bcbc91bc9635bb"/>
+<approved hash="18,29,a4ba2f972f95a4b8"/>
+<approved hash="18,29,17a79e8a9e8b17a6"/>
+<approved hash="18,29,86a50988098e86a3"/>
+<approved hash="18,29,71a2f88ff88c71a1"/>
+<approved hash="18,29,e0a06b8d6b83e0ae"/>
+<approved hash="18,29,53adda80da8153ac"/>
+<approved hash="18,29,c2ab55865584c2a9"/>
+<approved hash="18,29,bda8c485c4babd97"/>
+<approved hash="18,29,2c96b7bbb7b82c95"/>
+<approved hash="18,29,712793a513a5f127"/>
+<approved hash="18,29,8c356888e8880c35"/>
+<approved hash="18,29,b9bd5b30db3039bd"/>
+<approved hash="18,29,cfbc2d33ad334fbc"/>
+<approved hash="18,29,3480d0065006b480"/>
+<approved hash="18,29,d637368ab68a5637"/>
+<approved hash="18,29,b769a77ea77eb769"/>
+<approved hash="18,29,598c4c954c95598c"/>
+<approved hash="18,29,5f1f4ee44ee45f1f"/>
+<approved hash="18,29,ab22bb2bbb2bab22"/>
+<approved hash="18,29,5d6eb177b1775d6e"/>
+<approved hash="18,29,a0f1b3c6b3c6a0f1"/>
+<approved hash="18,29,4032543b543b4032"/>
+<approved hash="18,29,b1e6a4efa4efb1e6"/>
+<approved hash="18,29,a640b649b649a640"/>
+<approved hash="18,29,5a3d4a024a025a3d"/>
+<approved hash="18,29,42a351a851a842a3"/>
+<approved hash="18,29,4514591d591d4514"/>
+<approved hash="18,29,54aa47b347b354aa"/>
+<approved hash="18,29,4b675b6c5b6c4b67"/>
+<approved hash="18,29,4ef65dff5dff4ef6"/>
+<approved hash="18,29,515b45204520515b"/>
+<approved hash="18,29,4c79404e404e4c79"/>
+<approved hash="18,29,53c842d142d153c8"/>
+<approved hash="18,29,a5d3b8d8b8d8a5d3"/>
+<approved hash="18,29,8be19af69af68be1"/>
+<approved hash="18,29,80bc9385938580bc"/>
+<approved hash="18,29,aeb5bdbabdbaaeb5"/>
+<approved hash="18,29,860f96149614860f"/>
+<approved hash="18,29,bd2d91329132bd2d"/>
+<approved hash="18,29,bfdaaea3aea3bfda"/>
+<approved hash="18,29,4785568a568a4785"/>
+<approved hash="18,29,b84bac50ac50b84b"/>
+<approved hash="18,29,baf8a9c1a9c1baf8"/>
+<approved hash="18,29,859e98679867859e"/>
+<approved hash="18,29,ac04a00da00dac04"/>
+<approved hash="18,29,b397a29ca29cb397"/>
+<approved hash="18,29,89709d799d798970"/>
+<approved hash="18,29,9734873d873d9734"/>
+<approved hash="18,29,8cc39fc89fc88cc3"/>
+<approved hash="18,29,91a584aa84aa91a5"/>
+<approved hash="18,29,9252825b825b9252"/>
+</errors>
 </board>
 </drawing>
 <compatibility>
