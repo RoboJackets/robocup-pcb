@@ -1416,6 +1416,33 @@ rfk_1850.pdf</description>
 <hole x="0" y="0" drill="3.9"/>
 <circle x="0" y="0" radius="3.6" width="0" layer="39"/>
 </package>
+<package name="3-PIN-HEADER">
+<pad name="2" x="0" y="0" drill="1.02"/>
+<pad name="1" x="-2.54" y="0" drill="1.02"/>
+<pad name="3" x="2.54" y="0" drill="1.02"/>
+<wire x1="-4.06" y1="1.27" x2="4.06" y2="1.27" width="0.15" layer="21"/>
+<wire x1="4.06" y1="1.27" x2="4.06" y2="-1.27" width="0.15" layer="21"/>
+<wire x1="4.06" y1="-1.27" x2="-4.06" y2="-1.27" width="0.15" layer="21"/>
+<wire x1="-4.06" y1="-1.27" x2="-4.06" y2="1.27" width="0.15" layer="21"/>
+<text x="-4" y="1.5" size="1" layer="25">&gt;NAME</text>
+<text x="-4" y="-1.5" size="1" layer="27" align="top-left">&gt;VALUE</text>
+</package>
+<package name="147721-3">
+<smd name="2" x="-1.27" y="4.52" dx="2.29" dy="1.52" layer="1" rot="R90"/>
+<smd name="3" x="1.27" y="4.52" dx="2.29" dy="1.52" layer="1" rot="R90"/>
+<smd name="1" x="-3.81" y="4.52" dx="2.29" dy="1.52" layer="1" rot="R90"/>
+<smd name="4" x="3.81" y="4.52" dx="2.29" dy="1.52" layer="1" rot="R90"/>
+<smd name="7" x="-1.27" y="-4.52" dx="2.29" dy="1.52" layer="1" rot="R90"/>
+<smd name="6" x="1.27" y="-4.52" dx="2.29" dy="1.52" layer="1" rot="R90"/>
+<smd name="8" x="-3.81" y="-4.52" dx="2.29" dy="1.52" layer="1" rot="R90"/>
+<smd name="5" x="3.81" y="-4.52" dx="2.29" dy="1.52" layer="1" rot="R90"/>
+<wire x1="-6.35" y1="4.065" x2="-6.35" y2="-4.065" width="0.2" layer="21"/>
+<wire x1="-6.35" y1="-4.065" x2="6.35" y2="-4.065" width="0.2" layer="21"/>
+<wire x1="6.35" y1="-4.065" x2="6.35" y2="4.065" width="0.2" layer="21"/>
+<wire x1="6.35" y1="4.065" x2="-6.35" y2="4.065" width="0.2" layer="21"/>
+<text x="-6.5" y="6" size="1" layer="25">&gt;NAME</text>
+<text x="-6.5" y="-6" size="1" layer="27" align="top-left">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="2-PIN_CONN">
@@ -1832,6 +1859,30 @@ rfk_1850.pdf</description>
 <wire x1="5.08" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
 <text x="-5.08" y="10.16" size="1.778" layer="95" align="top-left">&gt;NAME</text>
 <text x="-5.08" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="3-PIN-HEADER">
+<pin name="2" x="-7.62" y="0" length="middle"/>
+<pin name="1" x="-7.62" y="5.08" length="middle"/>
+<pin name="3" x="-7.62" y="-5.08" length="middle"/>
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-7.62" x2="2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="7.62" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="7.62" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<text x="-2.54" y="10.16" size="1.778" layer="95" align="top-left">&gt;NAME</text>
+<text x="-2.54" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="147721-3">
+<pin name="1" x="-7.62" y="5.08" length="middle"/>
+<pin name="2" x="-7.62" y="2.54" length="middle"/>
+<pin name="3" x="-7.62" y="0" length="middle"/>
+<pin name="4" x="-7.62" y="-2.54" length="middle"/>
+<wire x1="-2.54" y1="7.62" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="7.62" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
+<text x="-2.54" y="10.16" size="1.778" layer="95" align="top-left">&gt;NAME</text>
+<text x="-2.54" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2946,6 +2997,47 @@ XT-60 Power Connector
 <device name="" package="STANDOFF-HOLE">
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3-PIN-HEADER" prefix="J">
+<gates>
+<gate name="G$1" symbol="3-PIN-HEADER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="3-PIN-HEADER">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="S7036-ND" constant="no"/>
+<attribute name="MPN" value="PPPC031LFBN-RC" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="147721-3" prefix="J">
+<gates>
+<gate name="G$1" symbol="147721-3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="147721-3">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="A108812TR-ND" constant="no"/>
+<attribute name="MPN" value="147721-3" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
