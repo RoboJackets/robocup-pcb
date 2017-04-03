@@ -24681,11 +24681,11 @@ Sourc: www.ctscorp.com</description>
 <smd name="5" x="0" y="4.3" dx="1.13" dy="2.44" layer="1" rot="R180"/>
 <smd name="6" x="-2.54" y="4.3" dx="1.13" dy="2.44" layer="1" rot="R180"/>
 <text x="-5.31" y="-2.5" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="-3.04" y="2.275" size="0.6096" layer="21">ON</text>
-<text x="-2.74" y="-2.85" size="0.6096" layer="21">1</text>
+<text x="-3.04" y="2.275" size="0.6096" layer="51">ON</text>
+<text x="-2.74" y="-2.85" size="0.6096" layer="51">1</text>
 <text x="6.31" y="-3" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<text x="-0.2" y="-2.85" size="0.6096" layer="21">2</text>
-<text x="2.34" y="-2.85" size="0.6096" layer="21">3</text>
+<text x="-0.2" y="-2.85" size="0.6096" layer="51">2</text>
+<text x="2.34" y="-2.85" size="0.6096" layer="51">3</text>
 <rectangle x1="-3.29" y1="-4" x2="-1.79" y2="-3.25" layer="51" rot="R180"/>
 <rectangle x1="-3.29" y1="-2" x2="-1.79" y2="-0.5" layer="21"/>
 <rectangle x1="1.79" y1="-4" x2="3.29" y2="-3.25" layer="51" rot="R180"/>
@@ -26145,8 +26145,8 @@ In this library you will find crystals and oscillators used for clocking signals
 <part name="SUPPLY51" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="SUPPLY52" library="RoboJackets-Supplies" deviceset="+18.5V" device=""/>
 <part name="RN1" library="RoboJackets-Resistors" deviceset="RA-8" device="" value="330"/>
-<part name="RN11" library="RoboJackets-Resistors" deviceset="RA-8" device=""/>
-<part name="RN2" library="RoboJackets-Resistors" deviceset="RA-8" device=""/>
+<part name="RN11" library="RoboJackets-Resistors" deviceset="RA-8" device="" value="330"/>
+<part name="RN2" library="RoboJackets-Resistors" deviceset="RA-8" device="" value="330"/>
 <part name="GND35" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="U2" library="RoboJackets-Sensors" deviceset="MPU-6050" device=""/>
@@ -26281,7 +26281,7 @@ In this library you will find crystals and oscillators used for clocking signals
 <part name="R20" library="resistor" deviceset="R-US_" device="R0603" value="1k"/>
 <part name="SUPPLY43" library="RoboJackets-Supplies" deviceset="VBATT" device=""/>
 <part name="SUPPLY47" library="RoboJackets-Supplies" deviceset="VBATT" device=""/>
-<part name="RN7" library="RoboJackets-Resistors" deviceset="RA-8" device=""/>
+<part name="RN7" library="RoboJackets-Resistors" deviceset="RA-8" device="" value="330"/>
 <part name="GND34" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY49" library="supply2" deviceset="+5V" device=""/>
 <part name="SUPPLY54" library="supply2" deviceset="+5V" device=""/>
