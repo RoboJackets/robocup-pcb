@@ -1345,6 +1345,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <wire x1="1.5" y1="-7" x2="1.5" y2="-12" width="0.127" layer="21"/>
 <wire x1="0" y1="-7" x2="-1.5" y2="-7" width="0.127" layer="21"/>
 <wire x1="-1.5" y1="-7" x2="-1.5" y2="-12" width="0.127" layer="21"/>
+<text x="-5.5" y="3" size="1" layer="21">&gt;NAME</text>
 </package>
 <package name="SFH11-*-D05-ST">
 <pad name="3" x="0" y="1.27" drill="1"/>
@@ -1593,8 +1594,8 @@ rfk_1850.pdf</description>
 <wire x1="3.81" y1="-6.35" x2="3.81" y2="6.35" width="0.254" layer="94"/>
 <wire x1="3.81" y1="6.35" x2="1.27" y2="6.35" width="0.254" layer="94"/>
 <wire x1="1.27" y1="6.35" x2="0" y2="5.08" width="0.254" layer="94"/>
-<text x="-2.54" y="8.89" size="2.54" layer="95" font="vector">&gt;NAME</text>
-<text x="2.54" y="-10.16" size="2.54" layer="96" font="vector" ratio="15" align="top-center">&gt;VALUE</text>
+<text x="-2.54" y="10.16" size="2.54" layer="95" font="vector">&gt;NAME</text>
+<text x="-2.54" y="-10.16" size="2.54" layer="96" font="vector" align="top-left">&gt;VALUE</text>
 <pin name="1" x="-5.08" y="5.08" visible="pin" direction="pas"/>
 <pin name="2" x="-5.08" y="2.54" visible="pin" direction="pas"/>
 <pin name="3" x="-5.08" y="0" visible="pin" direction="pas"/>
