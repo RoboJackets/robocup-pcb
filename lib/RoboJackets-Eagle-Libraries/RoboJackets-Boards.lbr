@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.2">
+<eagle version="8.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -235,46 +235,46 @@
 <circle x="-5.85" y="-17.15" radius="0.2499" width="0.254" layer="51"/>
 <circle x="-0.1" y="2.3" radius="2.1633" width="0.127" layer="51"/>
 <circle x="8.4" y="-3.6" radius="0.8485" width="0.127" layer="51"/>
-<pad name="GND" x="-11.43" y="24.13" drill="0.8"/>
-<pad name="VIN" x="-11.43" y="21.59" drill="0.8"/>
-<pad name="VB" x="-11.43" y="19.05" drill="0.8"/>
-<pad name="NR" x="-11.43" y="16.51" drill="0.8"/>
-<pad name="P$5" x="-11.43" y="13.97" drill="0.8"/>
-<pad name="P$6" x="-11.43" y="11.43" drill="0.8"/>
-<pad name="P$7" x="-11.43" y="8.89" drill="0.8"/>
-<pad name="P$8" x="-11.43" y="6.35" drill="0.8"/>
-<pad name="P$9" x="-11.43" y="3.81" drill="0.8"/>
-<pad name="P$10" x="-11.43" y="1.27" drill="0.8"/>
-<pad name="P$11" x="-11.43" y="-1.27" drill="0.8"/>
-<pad name="P$12" x="-11.43" y="-3.81" drill="0.8"/>
-<pad name="P$13" x="-11.43" y="-6.35" drill="0.8"/>
-<pad name="P$14" x="-11.43" y="-8.89" drill="0.8"/>
-<pad name="P$15" x="-11.43" y="-11.43" drill="0.8"/>
-<pad name="P$16" x="-11.43" y="-13.97" drill="0.8"/>
-<pad name="P$17" x="-11.43" y="-16.51" drill="0.8"/>
-<pad name="P$18" x="-11.43" y="-19.05" drill="0.8"/>
-<pad name="P$19" x="-11.43" y="-21.59" drill="0.8"/>
-<pad name="P$20" x="-11.43" y="-24.13" drill="0.8"/>
-<pad name="P$21" x="11.43" y="-24.13" drill="0.8" rot="R180"/>
-<pad name="P$22" x="11.43" y="-21.59" drill="0.8" rot="R180"/>
-<pad name="P$23" x="11.43" y="-19.05" drill="0.8" rot="R180"/>
-<pad name="P$24" x="11.43" y="-16.51" drill="0.8" rot="R180"/>
-<pad name="P$25" x="11.43" y="-13.97" drill="0.8" rot="R180"/>
-<pad name="P$26" x="11.43" y="-11.43" drill="0.8" rot="R180"/>
-<pad name="P$27" x="11.43" y="-8.89" drill="0.8" rot="R180"/>
-<pad name="P$28" x="11.43" y="-6.35" drill="0.8" rot="R180"/>
-<pad name="P$29" x="11.43" y="-3.81" drill="0.8" rot="R180"/>
-<pad name="P$30" x="11.43" y="-1.27" drill="0.8" rot="R180"/>
-<pad name="D+" x="11.43" y="1.27" drill="0.8" rot="R180"/>
-<pad name="D-" x="11.43" y="3.81" drill="0.8" rot="R180"/>
-<pad name="TD+" x="11.43" y="6.35" drill="0.8" rot="R180"/>
-<pad name="TD-" x="11.43" y="8.89" drill="0.8" rot="R180"/>
-<pad name="RD+" x="11.43" y="11.43" drill="0.8" rot="R180"/>
-<pad name="RD-" x="11.43" y="13.97" drill="0.8" rot="R180"/>
-<pad name="IF+" x="11.43" y="16.51" drill="0.8" rot="R180"/>
-<pad name="IF-" x="11.43" y="19.05" drill="0.8" rot="R180"/>
-<pad name="VU" x="11.43" y="21.59" drill="0.8" rot="R180"/>
-<pad name="VOUT" x="11.43" y="24.13" drill="0.8" rot="R180"/>
+<pad name="GND" x="-11.43" y="24.13" drill="1.02"/>
+<pad name="VIN" x="-11.43" y="21.59" drill="1.02"/>
+<pad name="VB" x="-11.43" y="19.05" drill="1.02"/>
+<pad name="NR" x="-11.43" y="16.51" drill="1.02"/>
+<pad name="P$5" x="-11.43" y="13.97" drill="1.02"/>
+<pad name="P$6" x="-11.43" y="11.43" drill="1.02"/>
+<pad name="P$7" x="-11.43" y="8.89" drill="1.02"/>
+<pad name="P$8" x="-11.43" y="6.35" drill="1.02"/>
+<pad name="P$9" x="-11.43" y="3.81" drill="1.02"/>
+<pad name="P$10" x="-11.43" y="1.27" drill="1.02"/>
+<pad name="P$11" x="-11.43" y="-1.27" drill="1.02"/>
+<pad name="P$12" x="-11.43" y="-3.81" drill="1.02"/>
+<pad name="P$13" x="-11.43" y="-6.35" drill="1.02"/>
+<pad name="P$14" x="-11.43" y="-8.89" drill="1.02"/>
+<pad name="P$15" x="-11.43" y="-11.43" drill="1.02"/>
+<pad name="P$16" x="-11.43" y="-13.97" drill="1.02"/>
+<pad name="P$17" x="-11.43" y="-16.51" drill="1.02"/>
+<pad name="P$18" x="-11.43" y="-19.05" drill="1.02"/>
+<pad name="P$19" x="-11.43" y="-21.59" drill="1.02"/>
+<pad name="P$20" x="-11.43" y="-24.13" drill="1.02"/>
+<pad name="P$21" x="11.43" y="-24.13" drill="1.02" rot="R180"/>
+<pad name="P$22" x="11.43" y="-21.59" drill="1.02" rot="R180"/>
+<pad name="P$23" x="11.43" y="-19.05" drill="1.02" rot="R180"/>
+<pad name="P$24" x="11.43" y="-16.51" drill="1.02" rot="R180"/>
+<pad name="P$25" x="11.43" y="-13.97" drill="1.02" rot="R180"/>
+<pad name="P$26" x="11.43" y="-11.43" drill="1.02" rot="R180"/>
+<pad name="P$27" x="11.43" y="-8.89" drill="1.02" rot="R180"/>
+<pad name="P$28" x="11.43" y="-6.35" drill="1.02" rot="R180"/>
+<pad name="P$29" x="11.43" y="-3.81" drill="1.02" rot="R180"/>
+<pad name="P$30" x="11.43" y="-1.27" drill="1.02" rot="R180"/>
+<pad name="D+" x="11.43" y="1.27" drill="1.02" rot="R180"/>
+<pad name="D-" x="11.43" y="3.81" drill="1.02" rot="R180"/>
+<pad name="TD+" x="11.43" y="6.35" drill="1.02" rot="R180"/>
+<pad name="TD-" x="11.43" y="8.89" drill="1.02" rot="R180"/>
+<pad name="RD+" x="11.43" y="11.43" drill="1.02" rot="R180"/>
+<pad name="RD-" x="11.43" y="13.97" drill="1.02" rot="R180"/>
+<pad name="IF+" x="11.43" y="16.51" drill="1.02" rot="R180"/>
+<pad name="IF-" x="11.43" y="19.05" drill="1.02" rot="R180"/>
+<pad name="VU" x="11.43" y="21.59" drill="1.02" rot="R180"/>
+<pad name="VOUT" x="11.43" y="24.13" drill="1.02" rot="R180"/>
 <text x="-9.4" y="-26.4" size="1.27" layer="51" font="vector">mbed NXP LPC1768</text>
 <text x="-12.7" y="27.94" size="1.27" layer="25">&gt;NAME</text>
 <rectangle x1="-9.4" y1="-24.8" x2="-5.2" y2="-23.1" layer="51"/>
