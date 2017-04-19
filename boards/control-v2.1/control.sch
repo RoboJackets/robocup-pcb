@@ -25021,28 +25021,28 @@ In this library you will find crystals and oscillators used for clocking signals
 <pinref part="U1" gate="G$1" pin="AVDD"/>
 </segment>
 </net>
-<net name="A-H" class="0">
+<net name="B-H" class="0">
 <segment>
 <wire x1="63.5" y1="109.22" x2="60.96" y2="109.22" width="0.1524" layer="91"/>
 <label x="60.96" y="109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U1" gate="G$1" pin="INH_A"/>
 </segment>
 </net>
-<net name="A-L" class="0">
+<net name="B-L" class="0">
 <segment>
 <wire x1="63.5" y1="106.68" x2="60.96" y2="106.68" width="0.1524" layer="91"/>
 <label x="60.96" y="106.68" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U1" gate="G$1" pin="INL_A"/>
 </segment>
 </net>
-<net name="B-H" class="0">
+<net name="A-H" class="0">
 <segment>
 <wire x1="63.5" y1="104.14" x2="60.96" y2="104.14" width="0.1524" layer="91"/>
 <label x="60.96" y="104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U1" gate="G$1" pin="INH_B"/>
 </segment>
 </net>
-<net name="B-L" class="0">
+<net name="A-L" class="0">
 <segment>
 <wire x1="63.5" y1="101.6" x2="60.96" y2="101.6" width="0.1524" layer="91"/>
 <label x="60.96" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -25595,8 +25595,8 @@ In this library you will find crystals and oscillators used for clocking signals
 <instance part="GND9" gate="1" x="53.34" y="73.66"/>
 <instance part="SUPPLY9" gate="P" x="33.02" y="160.02"/>
 <instance part="GND10" gate="1" x="60.96" y="88.9"/>
-<instance part="GND12" gate="1" x="228.6" y="71.12" rot="R270"/>
-<instance part="SUPPLY1" gate="P" x="228.6" y="76.2" rot="R90"/>
+<instance part="GND12" gate="1" x="228.6" y="86.36" rot="R270"/>
+<instance part="SUPPLY1" gate="P" x="228.6" y="91.44" rot="R90"/>
 <instance part="J1" gate="G$1" x="246.38" y="88.9" rot="R180"/>
 <instance part="SUPPLY10" gate="G$1" x="218.44" y="152.4"/>
 <instance part="GND11" gate="1" x="218.44" y="134.62"/>
@@ -25939,14 +25939,14 @@ In this library you will find crystals and oscillators used for clocking signals
 <junction x="53.34" y="81.28"/>
 </segment>
 <segment>
-<pinref part="GND12" gate="1" pin="GND"/>
-<wire x1="231.14" y1="71.12" x2="241.3" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="1"/>
-</segment>
-<segment>
 <wire x1="218.44" y1="139.7" x2="218.44" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 <pinref part="C11" gate="G$1" pin="-"/>
+</segment>
+<segment>
+<pinref part="GND12" gate="1" pin="GND"/>
+<pinref part="J1" gate="G$1" pin="4"/>
+<wire x1="231.14" y1="86.36" x2="241.3" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+18.5V" class="0">
@@ -26002,30 +26002,30 @@ In this library you will find crystals and oscillators used for clocking signals
 <pinref part="SUPPLY3" gate="P" pin="+3.3V"/>
 </segment>
 <segment>
+<pinref part="J1" gate="G$1" pin="5"/>
 <pinref part="SUPPLY1" gate="P" pin="+3.3V"/>
-<wire x1="231.14" y1="76.2" x2="241.3" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="241.3" y1="91.44" x2="231.14" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="H1" class="0">
 <segment>
-<wire x1="241.3" y1="91.44" x2="238.76" y2="91.44" width="0.1524" layer="91"/>
-<label x="238.76" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J1" gate="G$1" pin="5"/>
+<pinref part="J1" gate="G$1" pin="3"/>
+<wire x1="241.3" y1="81.28" x2="238.76" y2="81.28" width="0.1524" layer="91"/>
+<label x="238.76" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="H2" class="0">
 <segment>
-<wire x1="241.3" y1="86.36" x2="238.76" y2="86.36" width="0.1524" layer="91"/>
-<label x="238.76" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J1" gate="G$1" pin="4"/>
+<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="241.3" y1="76.2" x2="238.76" y2="76.2" width="0.1524" layer="91"/>
+<label x="238.76" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="H3" class="0">
 <segment>
-<wire x1="241.3" y1="81.28" x2="238.76" y2="81.28" width="0.1524" layer="91"/>
-<label x="238.76" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J1" gate="G$1" pin="3"/>
+<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="241.3" y1="71.12" x2="238.76" y2="71.12" width="0.1524" layer="91"/>
+<label x="238.76" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -28093,7 +28093,7 @@ connected like that?</text>
 <label x="266.7" y="261.62" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="M1-B-L" class="0">
+<net name="M1-A-L" class="0">
 <segment>
 <pinref part="RN3" gate="G$1" pin="16"/>
 <wire x1="241.3" y1="261.62" x2="243.84" y2="261.62" width="0.1524" layer="91"/>
@@ -28149,21 +28149,21 @@ connected like that?</text>
 <label x="243.84" y="243.84" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="M1-B-H" class="0">
+<net name="M1-A-H" class="0">
 <segment>
 <pinref part="RN4" gate="G$1" pin="9"/>
 <wire x1="165.1" y1="261.62" x2="162.56" y2="261.62" width="0.1524" layer="91"/>
 <label x="162.56" y="261.62" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="M1-A-L" class="0">
+<net name="M1-B-L" class="0">
 <segment>
 <pinref part="RN4" gate="G$1" pin="10"/>
 <wire x1="162.56" y1="259.08" x2="165.1" y2="259.08" width="0.1524" layer="91"/>
 <label x="162.56" y="259.08" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="M1-A-H" class="0">
+<net name="M1-B-H" class="0">
 <segment>
 <pinref part="RN4" gate="G$1" pin="11"/>
 <wire x1="162.56" y1="256.54" x2="165.1" y2="256.54" width="0.1524" layer="91"/>
@@ -28212,28 +28212,28 @@ connected like that?</text>
 <label x="139.7" y="261.62" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="M2-A-H" class="0">
+<net name="M2-B-H" class="0">
 <segment>
 <pinref part="RN1" gate="G$1" pin="15"/>
 <wire x1="137.16" y1="259.08" x2="139.7" y2="259.08" width="0.1524" layer="91"/>
 <label x="139.7" y="259.08" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="M2-A-L" class="0">
+<net name="M2-B-L" class="0">
 <segment>
 <pinref part="RN1" gate="G$1" pin="14"/>
 <wire x1="139.7" y1="256.54" x2="137.16" y2="256.54" width="0.1524" layer="91"/>
 <label x="139.7" y="256.54" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="M2-B-H" class="0">
+<net name="M2-A-H" class="0">
 <segment>
 <pinref part="RN1" gate="G$1" pin="13"/>
 <wire x1="139.7" y1="254" x2="137.16" y2="254" width="0.1524" layer="91"/>
 <label x="139.7" y="254" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="M2-B-L" class="0">
+<net name="M2-A-L" class="0">
 <segment>
 <pinref part="RN1" gate="G$1" pin="12"/>
 <wire x1="139.7" y1="251.46" x2="137.16" y2="251.46" width="0.1524" layer="91"/>
@@ -28324,21 +28324,21 @@ connected like that?</text>
 <label x="91.44" y="55.88" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="M3-B-L" class="0">
+<net name="M3-A-L" class="0">
 <segment>
 <pinref part="RN8" gate="G$1" pin="16"/>
 <wire x1="91.44" y1="53.34" x2="93.98" y2="53.34" width="0.1524" layer="91"/>
 <label x="91.44" y="53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="M4-A-H" class="0">
+<net name="M4-B-H" class="0">
 <segment>
 <pinref part="RN9" gate="G$1" pin="16"/>
 <wire x1="162.56" y1="40.64" x2="160.02" y2="40.64" width="0.1524" layer="91"/>
 <label x="160.02" y="40.64" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="M4-A-L" class="0">
+<net name="M4-B-L" class="0">
 <segment>
 <pinref part="RN9" gate="G$1" pin="15"/>
 <wire x1="160.02" y1="38.1" x2="162.56" y2="38.1" width="0.1524" layer="91"/>
@@ -28366,21 +28366,21 @@ connected like that?</text>
 <label x="160.02" y="30.48" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="M3-A-H" class="0">
+<net name="M3-B-H" class="0">
 <segment>
 <pinref part="RN9" gate="G$1" pin="11"/>
 <wire x1="160.02" y1="27.94" x2="162.56" y2="27.94" width="0.1524" layer="91"/>
 <label x="160.02" y="27.94" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="M3-A-L" class="0">
+<net name="M3-B-L" class="0">
 <segment>
 <pinref part="RN9" gate="G$1" pin="10"/>
 <wire x1="160.02" y1="25.4" x2="162.56" y2="25.4" width="0.1524" layer="91"/>
 <label x="160.02" y="25.4" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="M3-B-H" class="0">
+<net name="M3-A-H" class="0">
 <segment>
 <pinref part="RN9" gate="G$1" pin="9"/>
 <wire x1="160.02" y1="22.86" x2="162.56" y2="22.86" width="0.1524" layer="91"/>
@@ -28422,14 +28422,14 @@ connected like that?</text>
 <label x="266.7" y="30.48" size="1.27" layer="95" rot="MR180" xref="yes"/>
 </segment>
 </net>
-<net name="M4-B-L" class="0">
+<net name="M4-A-L" class="0">
 <segment>
 <pinref part="RN10" gate="G$1" pin="14"/>
 <wire x1="266.7" y1="27.94" x2="264.16" y2="27.94" width="0.1524" layer="91"/>
 <label x="266.7" y="27.94" size="1.27" layer="95" rot="MR180" xref="yes"/>
 </segment>
 </net>
-<net name="M4-B-H" class="0">
+<net name="M4-A-H" class="0">
 <segment>
 <pinref part="RN10" gate="G$1" pin="15"/>
 <wire x1="266.7" y1="25.4" x2="264.16" y2="25.4" width="0.1524" layer="91"/>
@@ -30226,34 +30226,6 @@ to 5V and 3.3V?</text>
 <label x="27.94" y="109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="M1-A-H" class="0">
-<segment>
-<portref moduleinst="M1" port="A-H"/>
-<wire x1="30.48" y1="177.8" x2="27.94" y2="177.8" width="0.1524" layer="91"/>
-<label x="27.94" y="177.8" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="M1-A-L" class="0">
-<segment>
-<portref moduleinst="M1" port="A-L"/>
-<wire x1="30.48" y1="175.26" x2="27.94" y2="175.26" width="0.1524" layer="91"/>
-<label x="27.94" y="175.26" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="M1-B-H" class="0">
-<segment>
-<portref moduleinst="M1" port="B-H"/>
-<wire x1="30.48" y1="172.72" x2="27.94" y2="172.72" width="0.1524" layer="91"/>
-<label x="27.94" y="172.72" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="M1-B-L" class="0">
-<segment>
-<portref moduleinst="M1" port="B-L"/>
-<wire x1="30.48" y1="170.18" x2="27.94" y2="170.18" width="0.1524" layer="91"/>
-<label x="27.94" y="170.18" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="M1-C-H" class="0">
 <segment>
 <portref moduleinst="M1" port="C-H"/>
@@ -30310,34 +30282,6 @@ to 5V and 3.3V?</text>
 <label x="121.92" y="165.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="M4-A-H" class="0">
-<segment>
-<portref moduleinst="M4" port="A-H"/>
-<wire x1="205.74" y1="177.8" x2="208.28" y2="177.8" width="0.1524" layer="91"/>
-<label x="205.74" y="177.8" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="M4-A-L" class="0">
-<segment>
-<portref moduleinst="M4" port="A-L"/>
-<wire x1="205.74" y1="175.26" x2="208.28" y2="175.26" width="0.1524" layer="91"/>
-<label x="205.74" y="175.26" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="M4-B-H" class="0">
-<segment>
-<portref moduleinst="M4" port="B-H"/>
-<wire x1="205.74" y1="172.72" x2="208.28" y2="172.72" width="0.1524" layer="91"/>
-<label x="205.74" y="172.72" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="M4-B-L" class="0">
-<segment>
-<portref moduleinst="M4" port="B-L"/>
-<wire x1="205.74" y1="170.18" x2="208.28" y2="170.18" width="0.1524" layer="91"/>
-<label x="205.74" y="170.18" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="M4-C-H" class="0">
 <segment>
 <portref moduleinst="M4" port="C-H"/>
@@ -30352,34 +30296,6 @@ to 5V and 3.3V?</text>
 <label x="205.74" y="165.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="M3-A-H" class="0">
-<segment>
-<portref moduleinst="M3" port="A-H"/>
-<wire x1="205.74" y1="99.06" x2="208.28" y2="99.06" width="0.1524" layer="91"/>
-<label x="205.74" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="M3-A-L" class="0">
-<segment>
-<portref moduleinst="M3" port="A-L"/>
-<wire x1="205.74" y1="96.52" x2="208.28" y2="96.52" width="0.1524" layer="91"/>
-<label x="205.74" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="M3-B-H" class="0">
-<segment>
-<portref moduleinst="M3" port="B-H"/>
-<wire x1="205.74" y1="93.98" x2="208.28" y2="93.98" width="0.1524" layer="91"/>
-<label x="205.74" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="M3-B-L" class="0">
-<segment>
-<portref moduleinst="M3" port="B-L"/>
-<wire x1="205.74" y1="91.44" x2="208.28" y2="91.44" width="0.1524" layer="91"/>
-<label x="205.74" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="M3-C-H" class="0">
 <segment>
 <portref moduleinst="M3" port="C-H"/>
@@ -30392,34 +30308,6 @@ to 5V and 3.3V?</text>
 <portref moduleinst="M3" port="C-L"/>
 <wire x1="205.74" y1="86.36" x2="208.28" y2="86.36" width="0.1524" layer="91"/>
 <label x="205.74" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="M2-A-H" class="0">
-<segment>
-<portref moduleinst="M2" port="A-H"/>
-<wire x1="27.94" y1="99.06" x2="30.48" y2="99.06" width="0.1524" layer="91"/>
-<label x="27.94" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="M2-A-L" class="0">
-<segment>
-<portref moduleinst="M2" port="A-L"/>
-<wire x1="27.94" y1="96.52" x2="30.48" y2="96.52" width="0.1524" layer="91"/>
-<label x="27.94" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="M2-B-H" class="0">
-<segment>
-<portref moduleinst="M2" port="B-H"/>
-<wire x1="27.94" y1="93.98" x2="30.48" y2="93.98" width="0.1524" layer="91"/>
-<label x="27.94" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="M2-B-L" class="0">
-<segment>
-<portref moduleinst="M2" port="B-L"/>
-<wire x1="27.94" y1="91.44" x2="30.48" y2="91.44" width="0.1524" layer="91"/>
-<label x="27.94" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="M2-C-H" class="0">
@@ -30463,6 +30351,118 @@ to 5V and 3.3V?</text>
 <pinref part="SUPPLY54" gate="+5V" pin="+5V"/>
 <portref moduleinst="M4" port="+5V"/>
 <wire x1="228.6" y1="185.42" x2="228.6" y2="187.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="M1-B-L" class="0">
+<segment>
+<portref moduleinst="M1" port="B-L"/>
+<wire x1="30.48" y1="170.18" x2="27.94" y2="170.18" width="0.1524" layer="91"/>
+<label x="27.94" y="170.18" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="M1-B-H" class="0">
+<segment>
+<portref moduleinst="M1" port="B-H"/>
+<wire x1="30.48" y1="172.72" x2="27.94" y2="172.72" width="0.1524" layer="91"/>
+<label x="27.94" y="172.72" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="M1-A-L" class="0">
+<segment>
+<portref moduleinst="M1" port="A-L"/>
+<wire x1="30.48" y1="175.26" x2="27.94" y2="175.26" width="0.1524" layer="91"/>
+<label x="27.94" y="175.26" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="M1-A-H" class="0">
+<segment>
+<portref moduleinst="M1" port="A-H"/>
+<wire x1="30.48" y1="177.8" x2="27.94" y2="177.8" width="0.1524" layer="91"/>
+<label x="27.94" y="177.8" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="M2-A-H" class="0">
+<segment>
+<portref moduleinst="M2" port="A-H"/>
+<wire x1="27.94" y1="99.06" x2="30.48" y2="99.06" width="0.1524" layer="91"/>
+<label x="27.94" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="M2-A-L" class="0">
+<segment>
+<portref moduleinst="M2" port="A-L"/>
+<wire x1="27.94" y1="96.52" x2="30.48" y2="96.52" width="0.1524" layer="91"/>
+<label x="27.94" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="M2-B-H" class="0">
+<segment>
+<portref moduleinst="M2" port="B-H"/>
+<wire x1="27.94" y1="93.98" x2="30.48" y2="93.98" width="0.1524" layer="91"/>
+<label x="27.94" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="M2-B-L" class="0">
+<segment>
+<portref moduleinst="M2" port="B-L"/>
+<wire x1="27.94" y1="91.44" x2="30.48" y2="91.44" width="0.1524" layer="91"/>
+<label x="27.94" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="M3-A-H" class="0">
+<segment>
+<portref moduleinst="M3" port="A-H"/>
+<wire x1="205.74" y1="99.06" x2="208.28" y2="99.06" width="0.1524" layer="91"/>
+<label x="205.74" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="M3-A-L" class="0">
+<segment>
+<portref moduleinst="M3" port="A-L"/>
+<wire x1="205.74" y1="96.52" x2="208.28" y2="96.52" width="0.1524" layer="91"/>
+<label x="205.74" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="M3-B-H" class="0">
+<segment>
+<portref moduleinst="M3" port="B-H"/>
+<wire x1="205.74" y1="93.98" x2="208.28" y2="93.98" width="0.1524" layer="91"/>
+<label x="205.74" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="M3-B-L" class="0">
+<segment>
+<portref moduleinst="M3" port="B-L"/>
+<wire x1="205.74" y1="91.44" x2="208.28" y2="91.44" width="0.1524" layer="91"/>
+<label x="205.74" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="M4-A-H" class="0">
+<segment>
+<portref moduleinst="M4" port="A-H"/>
+<wire x1="205.74" y1="177.8" x2="208.28" y2="177.8" width="0.1524" layer="91"/>
+<label x="205.74" y="177.8" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="M4-A-L" class="0">
+<segment>
+<portref moduleinst="M4" port="A-L"/>
+<wire x1="205.74" y1="175.26" x2="208.28" y2="175.26" width="0.1524" layer="91"/>
+<label x="205.74" y="175.26" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="M4-B-H" class="0">
+<segment>
+<portref moduleinst="M4" port="B-H"/>
+<wire x1="205.74" y1="172.72" x2="208.28" y2="172.72" width="0.1524" layer="91"/>
+<label x="205.74" y="172.72" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="M4-B-L" class="0">
+<segment>
+<portref moduleinst="M4" port="B-L"/>
+<wire x1="205.74" y1="170.18" x2="208.28" y2="170.18" width="0.1524" layer="91"/>
+<label x="205.74" y="170.18" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
