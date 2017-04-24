@@ -16775,7 +16775,7 @@ In this library you will find LEDs and other visual output devices.
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="LED-SMD" prefix="D" uservalue="yes">
+<deviceset name="LED-SMD" prefix="D">
 <gates>
 <gate name="G$1" symbol="LED" x="0" y="0"/>
 </gates>
@@ -23103,8 +23103,8 @@ rfk_1850.pdf</description>
 <circle x="-0.762" y="-2.54" radius="0.762" width="0.254" layer="94"/>
 <text x="-5.08" y="7.62" size="1.778" layer="95" font="vector" align="top-left">&gt;NAME</text>
 <text x="-5.08" y="-7.62" size="1.778" layer="96" font="vector">&gt;VALUE</text>
-<pin name="1" x="5.08" y="2.54" visible="pin" length="middle" direction="pas" rot="R180"/>
-<pin name="2" x="5.08" y="-2.54" visible="pin" length="middle" direction="pas" rot="R180"/>
+<pin name="1" x="5.08" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="2" x="5.08" y="-2.54" visible="pin" length="middle" rot="R180"/>
 <wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
@@ -24703,11 +24703,11 @@ Sourc: www.ctscorp.com</description>
 <smd name="5" x="0" y="4.3" dx="1.13" dy="2.44" layer="1" rot="R180"/>
 <smd name="6" x="-2.54" y="4.3" dx="1.13" dy="2.44" layer="1" rot="R180"/>
 <text x="-5.31" y="-2.5" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="-3.04" y="2.275" size="0.6096" layer="51">ON</text>
-<text x="-2.74" y="-2.85" size="0.6096" layer="51">1</text>
+<text x="-3.04" y="2.275" size="0.6096" layer="21">ON</text>
+<text x="-2.74" y="-2.85" size="0.6096" layer="21">1</text>
 <text x="6.31" y="-3" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<text x="-0.2" y="-2.85" size="0.6096" layer="51">2</text>
-<text x="2.34" y="-2.85" size="0.6096" layer="51">3</text>
+<text x="-0.2" y="-2.85" size="0.6096" layer="21">2</text>
+<text x="2.34" y="-2.85" size="0.6096" layer="21">3</text>
 <rectangle x1="-3.29" y1="-4" x2="-1.79" y2="-3.25" layer="51" rot="R180"/>
 <rectangle x1="-3.29" y1="-2" x2="-1.79" y2="-0.5" layer="21"/>
 <rectangle x1="1.79" y1="-4" x2="3.29" y2="-3.25" layer="51" rot="R180"/>
