@@ -28384,6 +28384,9 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="D7" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-GREEN" value="GREEN"/>
 <part name="GND60" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY72" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
+<part name="LED2" library="RoboJackets-LEDs" deviceset="WS2812B" device=""/>
+<part name="GND63" library="supply1" deviceset="GND" device=""/>
+<part name="SUPPLY73" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -30647,10 +30650,10 @@ connected like that?</text>
 <instance part="GND46" gate="1" x="76.2" y="20.32"/>
 <instance part="SUPPLY33" gate="G$1" x="33.02" y="48.26"/>
 <instance part="SUPPLY34" gate="+5V" x="76.2" y="48.26"/>
-<instance part="LED1" gate="G$1" x="231.14" y="147.32"/>
+<instance part="LED1" gate="G$1" x="241.3" y="147.32"/>
 <instance part="SUPPLY31" gate="G$1" x="198.12" y="106.68"/>
-<instance part="SUPPLY29" gate="P" x="215.9" y="152.4"/>
-<instance part="GND40" gate="1" x="246.38" y="139.7"/>
+<instance part="SUPPLY29" gate="P" x="228.6" y="152.4"/>
+<instance part="GND40" gate="1" x="254" y="139.7"/>
 <instance part="D2" gate="G$1" x="228.6" y="172.72" rot="R270"/>
 <instance part="D3" gate="G$1" x="35.56" y="114.3" rot="MR270"/>
 <instance part="J5" gate="G$1" x="248.92" y="104.14"/>
@@ -30662,6 +30665,9 @@ connected like that?</text>
 <instance part="SUPPLY68" gate="P" x="139.7" y="30.48" rot="R180"/>
 <instance part="D14" gate="G$1" x="180.34" y="111.76" rot="R270"/>
 <instance part="SUPPLY69" gate="P" x="187.96" y="116.84"/>
+<instance part="LED2" gate="G$1" x="210.82" y="147.32"/>
+<instance part="GND63" gate="1" x="223.52" y="139.7"/>
+<instance part="SUPPLY73" gate="P" x="198.12" y="152.4"/>
 </instances>
 <busses>
 </busses>
@@ -30736,7 +30742,7 @@ connected like that?</text>
 <segment>
 <pinref part="LED1" gate="G$1" pin="VDD"/>
 <pinref part="SUPPLY29" gate="P" pin="+3.3V"/>
-<wire x1="220.98" y1="149.86" x2="215.9" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="149.86" x2="228.6" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J5" gate="G$1" pin="2"/>
@@ -30755,6 +30761,11 @@ connected like that?</text>
 <pinref part="SUPPLY69" gate="P" pin="+3.3V"/>
 <wire x1="185.42" y1="111.76" x2="187.96" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="111.76" x2="187.96" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY73" gate="P" pin="+3.3V"/>
+<pinref part="LED2" gate="G$1" pin="VDD"/>
+<wire x1="198.12" y1="149.86" x2="200.66" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -30911,9 +30922,9 @@ connected like that?</text>
 </segment>
 <segment>
 <pinref part="GND40" gate="1" pin="GND"/>
-<wire x1="246.38" y1="142.24" x2="246.38" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="254" y1="142.24" x2="254" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="LED1" gate="G$1" pin="VSS"/>
-<wire x1="246.38" y1="144.78" x2="241.3" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="254" y1="144.78" x2="251.46" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J5" gate="G$1" pin="1"/>
@@ -30926,6 +30937,12 @@ connected like that?</text>
 <wire x1="142.24" y1="38.1" x2="132.08" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="38.1" x2="132.08" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="GND73" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND63" gate="1" pin="GND"/>
+<wire x1="223.52" y1="142.24" x2="223.52" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="LED2" gate="G$1" pin="VSS"/>
+<wire x1="223.52" y1="144.78" x2="220.98" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="HEX-0" class="0">
@@ -31204,8 +31221,8 @@ connected like that?</text>
 <net name="LED-NEO" class="0">
 <segment>
 <pinref part="LED1" gate="G$1" pin="DIN"/>
-<wire x1="241.3" y1="149.86" x2="246.38" y2="149.86" width="0.1524" layer="91"/>
-<label x="246.38" y="149.86" size="1.27" layer="95" xref="yes"/>
+<wire x1="251.46" y1="149.86" x2="254" y2="149.86" width="0.1524" layer="91"/>
+<label x="254" y="149.86" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GPB0" class="0">
@@ -31305,6 +31322,15 @@ connected like that?</text>
 <pinref part="D14" gate="G$1" pin="K"/>
 <wire x1="177.8" y1="111.76" x2="175.26" y2="111.76" width="0.1524" layer="91"/>
 <label x="175.26" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="LED1" gate="G$1" pin="DOUT"/>
+<wire x1="231.14" y1="144.78" x2="226.06" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="144.78" x2="226.06" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="LED2" gate="G$1" pin="DIN"/>
+<wire x1="226.06" y1="149.86" x2="220.98" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
