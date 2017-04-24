@@ -1163,10 +1163,10 @@ pull down resistors</text>
 <wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
-<pin name="VIN" x="-12.7" y="2.54" length="middle"/>
-<pin name="GND" x="0" y="-10.16" length="middle" rot="R90"/>
-<pin name="VOUT" x="12.7" y="2.54" length="middle" rot="R180"/>
-<text x="2.54" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="VIN" x="-12.7" y="2.54" visible="pin" length="middle"/>
+<pin name="GND" x="0" y="-10.16" visible="pin" length="middle" rot="R90"/>
+<pin name="VOUT" x="12.7" y="2.54" visible="pin" length="middle" rot="R180"/>
+<text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-7.62" y="7.62" size="1.778" layer="95" align="top-left">&gt;NAME</text>
 </symbol>
 </symbols>
