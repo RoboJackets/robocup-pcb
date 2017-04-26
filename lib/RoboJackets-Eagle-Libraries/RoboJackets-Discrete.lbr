@@ -1145,7 +1145,7 @@ Rdson=1.8mOhm</description>
 <gate name="G$1" symbol="N_MOSFET" x="0" y="0"/>
 </gates>
 <devices>
-<device name="IXFT" package="TO-268">
+<device name="T" package="TO-268">
 <connects>
 <connect gate="G$1" pin="D" pad="4"/>
 <connect gate="G$1" pin="G" pad="1"/>
