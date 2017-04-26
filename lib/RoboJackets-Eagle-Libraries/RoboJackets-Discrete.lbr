@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="8.1.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -64,6 +64,7 @@
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
@@ -612,6 +613,16 @@ grid 5.45 mm</description>
 <circle x="-4" y="-2.75" radius="0.5" width="0" layer="21"/>
 <text x="-5.5" y="-5.5" size="1" layer="25" rot="R90">&gt;NAME</text>
 </package>
+<package name="PT19-21C/L41/TR8">
+<smd name="P$1" x="-0.75" y="0" dx="0.8" dy="0.8" layer="1"/>
+<smd name="P$2" x="0.75" y="0" dx="0.8" dy="0.8" layer="1"/>
+<wire x1="-0.6" y1="0.4" x2="0.6" y2="0.4" width="0.05" layer="21"/>
+<wire x1="-0.6" y1="0.4" x2="-0.6" y2="-0.4" width="0.05" layer="21"/>
+<wire x1="-0.6" y1="-0.4" x2="0.6" y2="-0.4" width="0.05" layer="21"/>
+<wire x1="0.6" y1="-0.4" x2="0.6" y2="0.4" width="0.05" layer="21"/>
+<text x="-1.05" y="0.45" size="0.4" layer="25">&gt;NAME</text>
+<text x="-1" y="-0.9" size="0.4" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="BSC072N03LD">
@@ -884,6 +895,17 @@ grid 5.45 mm</description>
 <vertex x="0.762" y="-0.254"/>
 </polygon>
 <wire x1="-1.524" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="PHOTOTRANSISTOR">
+<description>Phototransistor</description>
+<text x="-5.08" y="3.048" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-4.826" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="-5.08" y1="2.54" x2="7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
+<pin name="E" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="C" x="-10.16" y="0" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1243,6 +1265,23 @@ Rdson=1.8mOhm</description>
 <connect gate="G$1" pin="D" pad="3"/>
 <connect gate="G$1" pin="G" pad="1"/>
 <connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PHOTOTRANSISTOR" prefix="Q">
+<description>Phototransistor</description>
+<gates>
+<gate name="G$1" symbol="PHOTOTRANSISTOR" x="38.1" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="PT19-21C/L41/TR8">
+<connects>
+<connect gate="G$1" pin="C" pad="P$1"/>
+<connect gate="G$1" pin="E" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
