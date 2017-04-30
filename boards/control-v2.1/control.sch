@@ -24445,19 +24445,18 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 In this library you will find uncommon capacitors. If you are looking for a common package, use the default &lt;b&gt;rcl &lt;/b&gt;library provided with EAGLE instead of looking here.
 &lt;/p&gt;</description>
 <packages>
-<package name="PANASONIC_J16">
-<smd name="+" x="0" y="-6.25" dx="6.5" dy="2.5" layer="1" rot="R90"/>
-<smd name="-" x="0" y="6.25" dx="6.5" dy="2.5" layer="1" rot="R90"/>
-<wire x1="8.5" y1="8.5" x2="8.5" y2="-5" width="0.3" layer="21"/>
-<wire x1="8.5" y1="-5" x2="5" y2="-8.5" width="0.3" layer="21"/>
-<wire x1="-5" y1="-8.5" x2="-8.5" y2="-5" width="0.3" layer="21"/>
-<wire x1="-8.5" y1="-5" x2="-8.5" y2="8.5" width="0.3" layer="21"/>
-<wire x1="5" y1="-8.5" x2="1.5" y2="-8.5" width="0.3" layer="21"/>
-<wire x1="-1.5" y1="-8.5" x2="-5" y2="-8.5" width="0.3" layer="21"/>
-<wire x1="1.5" y1="8.5" x2="8.5" y2="8.5" width="0.3" layer="21"/>
-<wire x1="-8.5" y1="8.5" x2="-1.5" y2="8.5" width="0.3" layer="21"/>
-<circle x="0" y="0" radius="8" width="0.3" layer="51"/>
-<text x="-8.5" y="9" size="1" layer="25">&gt;NAME</text>
+<package name="UWZ1H221MCL1GS">
+<smd name="1" x="0" y="4.05" dx="3.9" dy="1.5" layer="1" rot="R90"/>
+<smd name="2" x="0" y="-4.05" dx="3.9" dy="1.5" layer="1" rot="R90"/>
+<rectangle x1="-0.55" y1="2.25" x2="0.55" y2="5.65" layer="51"/>
+<rectangle x1="-0.55" y1="-5.65" x2="0.55" y2="-2.25" layer="51"/>
+<wire x1="5.25" y1="-5.25" x2="-5.25" y2="-5.25" width="0.2" layer="21"/>
+<wire x1="-5.25" y1="-5.25" x2="-5.25" y2="3.25" width="0.2" layer="21"/>
+<wire x1="-5.25" y1="3.25" x2="-3.25" y2="5.25" width="0.2" layer="21"/>
+<wire x1="-3.25" y1="5.25" x2="3.25" y2="5.25" width="0.2" layer="21"/>
+<wire x1="3.25" y1="5.25" x2="5.25" y2="3.25" width="0.2" layer="21"/>
+<wire x1="5.25" y1="3.25" x2="5.25" y2="-5.25" width="0.2" layer="21"/>
+<text x="-5" y="-6.75" size="1" layer="21" font="vector" ratio="15">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -24475,18 +24474,21 @@ In this library you will find uncommon capacitors. If you are looking for a comm
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PANASONIC_J16" prefix="C" uservalue="yes">
+<deviceset name="UWZ1H221MCL1GS" prefix="C">
 <gates>
 <gate name="G$1" symbol="C_POL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="PANASONIC_J16">
+<device name="" package="UWZ1H221MCL1GS">
 <connects>
-<connect gate="G$1" pin="+" pad="+"/>
-<connect gate="G$1" pin="-" pad="-"/>
+<connect gate="G$1" pin="+" pad="1"/>
+<connect gate="G$1" pin="-" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="493-9940-1-ND" constant="no"/>
+<attribute name="MPN" value="UWZ1H221MCL1GS" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -26351,8 +26353,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
 <wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
-<text x="2.54" y="0.4826" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="-2.3114" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
 <pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
 <pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
@@ -27015,14 +27017,12 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY10" library="RoboJackets-Supplies" deviceset="+18.5V" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
-<part name="C11" library="RoboJackets-Capacitors" deviceset="PANASONIC_J16" device="" value="EEE-FK1H102AM">
-<attribute name="DIGIKEY" value="PCE4848CT-ND"/>
-<attribute name="MPN" value="EEE-FK1H102AM"/>
-</part>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="supply2" deviceset="+5V" device=""/>
 <part name="J1" library="RoboJackets-Connectors" deviceset="MKS-1658" device=""/>
 <part name="J2" library="RoboJackets-Connectors" deviceset="4-PIN_2MM-*" device="H"/>
+<part name="U$1" library="RoboJackets-Capacitors" deviceset="UWZ1H221MCL1GS" device=""/>
+<part name="U$2" library="RoboJackets-Capacitors" deviceset="UWZ1H221MCL1GS" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -27078,14 +27078,12 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="GND10" gate="1" x="60.96" y="88.9"/>
 <instance part="SUPPLY10" gate="G$1" x="215.9" y="152.4"/>
 <instance part="GND11" gate="1" x="215.9" y="134.62"/>
-<instance part="C11" gate="G$1" x="215.9" y="144.78">
-<attribute name="DIGIKEY" x="215.9" y="144.78" size="1.27" layer="96" display="off"/>
-<attribute name="MPN" x="215.9" y="144.78" size="1.27" layer="96" display="off"/>
-</instance>
 <instance part="GND12" gate="1" x="228.6" y="71.12"/>
 <instance part="SUPPLY1" gate="+5V" x="231.14" y="119.38"/>
 <instance part="J1" gate="G$1" x="254" y="88.9" rot="MR180"/>
 <instance part="J2" gate="G$1" x="254" y="109.22" rot="R180"/>
+<instance part="U$1" gate="G$1" x="210.82" y="144.78" rot="MR0"/>
+<instance part="U$2" gate="G$1" x="220.98" y="144.78"/>
 </instances>
 <busses>
 </busses>
@@ -27386,7 +27384,11 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <segment>
 <wire x1="215.9" y1="139.7" x2="215.9" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="GND11" gate="1" pin="GND"/>
-<pinref part="C11" gate="G$1" pin="-"/>
+<pinref part="U$1" gate="G$1" pin="-"/>
+<wire x1="210.82" y1="139.7" x2="215.9" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="-"/>
+<wire x1="220.98" y1="139.7" x2="215.9" y2="139.7" width="0.1524" layer="91"/>
+<junction x="215.9" y="139.7"/>
 </segment>
 <segment>
 <wire x1="99.06" y1="96.52" x2="185.42" y2="96.52" width="0.1524" layer="91"/>
@@ -27451,8 +27453,12 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </segment>
 <segment>
 <wire x1="215.9" y1="149.86" x2="215.9" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="C11" gate="G$1" pin="+"/>
 <pinref part="SUPPLY10" gate="G$1" pin="+18.5V"/>
+<pinref part="U$1" gate="G$1" pin="+"/>
+<wire x1="215.9" y1="147.32" x2="210.82" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="+"/>
+<wire x1="215.9" y1="147.32" x2="220.98" y2="147.32" width="0.1524" layer="91"/>
+<junction x="215.9" y="147.32"/>
 </segment>
 <segment>
 <pinref part="Q1" gate="G$1" pin="D"/>
@@ -27615,11 +27621,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="J1" library="RoboJackets-Connectors" deviceset="8-PIN_2MM-*" device="H"/>
 <part name="SUPPLY10" library="RoboJackets-Supplies" deviceset="+18.5V" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
-<part name="C11" library="RoboJackets-Capacitors" deviceset="PANASONIC_J16" device="" value="EEE-FK1H102AM">
-<attribute name="DIGIKEY" value="PCE4848CT-ND"/>
-<attribute name="MPN" value="EEE-FK1H102AM"/>
-</part>
 <part name="SUPPLY1" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
+<part name="U$1" library="RoboJackets-Capacitors" deviceset="UWZ1H221MCL1GS" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -27676,11 +27679,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="J1" gate="G$1" x="246.38" y="88.9" rot="R180"/>
 <instance part="SUPPLY10" gate="G$1" x="218.44" y="152.4"/>
 <instance part="GND11" gate="1" x="218.44" y="134.62"/>
-<instance part="C11" gate="G$1" x="218.44" y="144.78">
-<attribute name="DIGIKEY" x="218.44" y="144.78" size="1.27" layer="96" display="off"/>
-<attribute name="MPN" x="218.44" y="144.78" size="1.27" layer="96" display="off"/>
-</instance>
 <instance part="SUPPLY1" gate="P" x="228.6" y="91.44" rot="R90"/>
+<instance part="U$1" gate="G$1" x="218.44" y="144.78"/>
 </instances>
 <busses>
 </busses>
@@ -28018,7 +28018,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <segment>
 <wire x1="218.44" y1="139.7" x2="218.44" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="GND11" gate="1" pin="GND"/>
-<pinref part="C11" gate="G$1" pin="-"/>
+<pinref part="U$1" gate="G$1" pin="-"/>
 </segment>
 <segment>
 <pinref part="GND12" gate="1" pin="GND"/>
@@ -28049,8 +28049,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </segment>
 <segment>
 <wire x1="218.44" y1="149.86" x2="218.44" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="C11" gate="G$1" pin="+"/>
 <pinref part="SUPPLY10" gate="G$1" pin="+18.5V"/>
+<pinref part="U$1" gate="G$1" pin="+"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -28382,6 +28382,11 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="LED2" library="RoboJackets-LEDs" deviceset="WS2812B" device=""/>
 <part name="GND63" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY73" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
+<part name="R21" library="resistor" deviceset="R-US_" device="R0603" value="68k"/>
+<part name="R25" library="resistor" deviceset="R-US_" device="R0603" value="10k"/>
+<part name="C36" library="resistor" deviceset="C-US" device="C0603" value="0.1uF"/>
+<part name="GND2" library="supply1" deviceset="GND" device=""/>
+<part name="SUPPLY74" library="RoboJackets-Supplies" deviceset="+18.5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -28782,6 +28787,11 @@ connected like that?</text>
 <instance part="SUPPLY22" gate="G$1" x="149.86" y="66.04" rot="R90"/>
 <instance part="R4" gate="G$1" x="281.94" y="195.58" rot="R90"/>
 <instance part="SUPPLY10" gate="G$1" x="281.94" y="203.2" rot="MR0"/>
+<instance part="R21" gate="G$1" x="81.28" y="139.7" rot="R270"/>
+<instance part="R25" gate="G$1" x="81.28" y="129.54" rot="R270"/>
+<instance part="C36" gate="G$1" x="91.44" y="129.54"/>
+<instance part="GND2" gate="1" x="81.28" y="119.38"/>
+<instance part="SUPPLY74" gate="G$1" x="81.28" y="147.32"/>
 </instances>
 <busses>
 <bus name="R-P[1..8]">
@@ -29009,6 +29019,14 @@ connected like that?</text>
 <pinref part="C9" gate="G$1" pin="2"/>
 <wire x1="332.74" y1="154.94" x2="320.04" y2="154.94" width="0.1524" layer="91"/>
 <junction x="320.04" y="154.94"/>
+</segment>
+<segment>
+<pinref part="R25" gate="G$1" pin="2"/>
+<pinref part="C36" gate="G$1" pin="2"/>
+<wire x1="81.28" y1="124.46" x2="91.44" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="81.28" y1="121.92" x2="81.28" y2="124.46" width="0.1524" layer="91"/>
+<junction x="81.28" y="124.46"/>
 </segment>
 </net>
 <net name="R-P9" class="0">
@@ -30362,6 +30380,27 @@ connected like that?</text>
 <pinref part="U1" gate="G$1" pin="44_IO_L02N_2/MOSI/CSI_B"/>
 <wire x1="271.78" y1="119.38" x2="274.32" y2="119.38" width="0.1524" layer="91"/>
 <label x="274.32" y="119.38" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="+18.5V" class="0">
+<segment>
+<pinref part="SUPPLY74" gate="G$1" pin="+18.5V"/>
+<pinref part="R21" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="BATT-FPGA" class="0">
+<segment>
+<pinref part="R21" gate="G$1" pin="2"/>
+<pinref part="R25" gate="G$1" pin="1"/>
+<pinref part="C36" gate="G$1" pin="1"/>
+<wire x1="81.28" y1="134.62" x2="91.44" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="134.62" x2="91.44" y2="132.08" width="0.1524" layer="91"/>
+<junction x="81.28" y="134.62"/>
+<junction x="91.44" y="134.62"/>
+<pinref part="U1" gate="G$1" pin="136_IP"/>
+<wire x1="142.24" y1="121.92" x2="129.54" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="121.92" x2="129.54" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="134.62" x2="91.44" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
