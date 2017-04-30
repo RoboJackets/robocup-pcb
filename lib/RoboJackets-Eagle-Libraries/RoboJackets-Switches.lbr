@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -528,6 +528,21 @@ distributor Buerklin, 17G482</description>
 <wire x1="-0.75" y1="0" x2="-0.75" y2="-0.5" width="0.2" layer="21"/>
 <wire x1="0.75" y1="0.5" x2="0.75" y2="0" width="0.2" layer="21"/>
 <wire x1="0.75" y1="0" x2="0.75" y2="-0.5" width="0.2" layer="21"/>
+</package>
+<package name="HDP001R">
+<smd name="C" x="-3.65" y="0" dx="1.7" dy="1.6" layer="1"/>
+<smd name="D" x="3.65" y="0" dx="1.7" dy="1.6" layer="1"/>
+<hole x="0" y="1.2" drill="1.1"/>
+<hole x="0" y="-1.2" drill="1.1"/>
+<smd name="A" x="-1.75" y="-3.85" dx="1.8" dy="1.5" layer="1"/>
+<smd name="B" x="1.75" y="-3.85" dx="1.8" dy="1.5" layer="1"/>
+<wire x1="-2.85" y1="2.25" x2="2.85" y2="2.25" width="0.5" layer="21"/>
+<wire x1="2.85" y1="-2.65" x2="-2.85" y2="-2.65" width="0.5" layer="21"/>
+<wire x1="-2.85" y1="-2.65" x2="-2.85" y2="-1.25" width="0.5" layer="21"/>
+<wire x1="2.85" y1="-1.25" x2="2.85" y2="-2.65" width="0.5" layer="21"/>
+<wire x1="2.85" y1="2.25" x2="2.85" y2="1.35" width="0.5" layer="21"/>
+<wire x1="-2.85" y1="1.35" x2="-2.85" y2="2.25" width="0.5" layer="21"/>
+<text x="3.5" y="-1.5" size="1" layer="25" rot="R270">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -1203,6 +1218,24 @@ http://www.digikey.com/product-detail/en/G3T12AP/360-1774-ND/1006855</descriptio
 <connect gate="G$1" pin="A2" pad="A2"/>
 <connect gate="G$1" pin="B1" pad="B1"/>
 <connect gate="G$1" pin="B2" pad="B2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="HDP001?" prefix="S">
+<gates>
+<gate name="G$1" symbol="SPST-4PIN-NO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="R" package="HDP001R">
+<connects>
+<connect gate="G$1" pin="A1" pad="A"/>
+<connect gate="G$1" pin="A2" pad="C"/>
+<connect gate="G$1" pin="B1" pad="B"/>
+<connect gate="G$1" pin="B2" pad="D"/>
 </connects>
 <technologies>
 <technology name=""/>
