@@ -1,5 +1,5 @@
 # Kicker Board
 
-Board containing circuitry to charge capacitors then discharge into solenoid(s).
+Charges a bank of capacitors to a high voltage and discharges into solenoid(s).
 
 ![Kicker Board](./kicker.png)
