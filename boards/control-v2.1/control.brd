@@ -23,20 +23,20 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="0" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="0" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -185,7 +185,6 @@ ERR</text>
 ERR</text>
 <text x="-21.25" y="-30.5" size="1" layer="21" font="vector" ratio="20" rot="SR0" align="bottom-center">+18V</text>
 <text x="-20.75" y="-28.25" size="1" layer="21" font="vector" ratio="20" rot="SR0" align="bottom-center">+5V</text>
-<text x="-21.5" y="-26" size="1" layer="21" font="vector" ratio="20" rot="SR0" align="bottom-center">+3.3V</text>
 <text x="-16.5" y="-18.25" size="1" layer="21" font="vector" ratio="20" rot="SR0" align="bottom-center">PWR
 ERR</text>
 <text x="16.75" y="29.75" size="1.8" layer="21" font="vector" ratio="17">Control</text>
@@ -195,7 +194,7 @@ ERR</text>
 ERR</text>
 <text x="0.25" y="-24" size="1" layer="21" font="vector" ratio="15">ID</text>
 <text x="-2.5" y="-32.5" size="1.8" layer="21" font="vector" ratio="22">OFF</text>
-<text x="-21.5" y="-23.75" size="1" layer="21" font="vector" ratio="20" rot="SR0" align="bottom-center">+3.3V</text>
+<text x="-21.5" y="-24.75" size="1" layer="21" font="vector" ratio="20" rot="SR0" align="bottom-center">+3.3V</text>
 <text x="-14.75" y="-21.5" size="1" layer="21" font="vector" ratio="20" rot="SR0" align="bottom-center">+1.2V</text>
 <text x="-22.75" y="-21.5" size="1" layer="21" font="vector" ratio="20" rot="SR0" align="bottom-center">+2.5V</text>
 <text x="-11.25" y="-32.5" size="1.8" layer="21" font="vector" ratio="22">ON</text>
@@ -209,7 +208,6 @@ ERR</text>
 <wire x1="-12.5" y1="-22" x2="-12.5" y2="-20" width="0.3" layer="21"/>
 <wire x1="-12.5" y1="-20" x2="-18.75" y2="-20" width="0.3" layer="21"/>
 <wire x1="-24" y1="-22" x2="-24" y2="-24.25" width="0.3" layer="21"/>
-<wire x1="-24" y1="-24.25" x2="-14.75" y2="-24.25" width="0.3" layer="21"/>
 <wire x1="-14.75" y1="-24.25" x2="-14.75" y2="-22" width="0.3" layer="21"/>
 <wire x1="-24" y1="-24.25" x2="-24" y2="-26.5" width="0.3" layer="21"/>
 <wire x1="-24" y1="-26.5" x2="-14.75" y2="-26.5" width="0.3" layer="21"/>
@@ -228,6 +226,8 @@ ERR</text>
 <text x="-52.75" y="48.75" size="1" layer="21" font="vector" ratio="20" rot="SR270" align="bottom-center">DRIB
 ERR</text>
 <text x="28.75" y="29.75" size="1.8" layer="21" font="vector" ratio="17">&gt;VERSION</text>
+<text x="-20.5" y="-23" size="0.7" layer="21" font="vector" ratio="20" rot="SR0" align="bottom-center">MBED</text>
+<text x="-20.5" y="-25.5" size="0.7" layer="21" font="vector" ratio="20" rot="R180" align="bottom-center">BATT</text>
 </plain>
 <libraries>
 <library name="rcl">
@@ -13460,7 +13460,6 @@ Your Eurocircuits Team
 <wire x1="-31.7175125" y1="-0.835784375" x2="-32.631728125" y2="-1.75" width="0.3" layer="1"/>
 <wire x1="-32.631728125" y1="-1.75" x2="-36" y2="-1.75" width="0.3" layer="1"/>
 <via x="-36" y="-1.75" extent="1-16" drill="0.35"/>
-<wire x1="-36" y1="-1.75" x2="-38.25" y2="-4" width="0.3" layer="16"/>
 <polygon width="0.41" layer="16" thermals="no">
 <vertex x="47.25" y="13.75"/>
 <vertex x="42.5" y="13.75"/>
