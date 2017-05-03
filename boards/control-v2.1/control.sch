@@ -27038,6 +27038,10 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <sheets>
 <sheet>
 <plain>
+<text x="147.32" y="167.64" size="1.778" layer="97">Bootstrapping from motor driver
+chip allows for two n-fets</text>
+<text x="205.74" y="162.56" size="1.778" layer="97">Large capacitors added to handle
+ripple current from motors</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -28143,7 +28147,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="SUPPLY29" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="GND38" library="supply1" deviceset="GND" device=""/>
 <part name="C21" library="rcl" deviceset="C-US" device="C0603" value="0.1uF"/>
-<part name="RN9" library="RoboJackets-Resistors" deviceset="RA-8" device=""/>
+<part name="RN9" library="RoboJackets-Resistors" deviceset="RA-8" device="" value="330"/>
 <part name="GND28" library="supply1" deviceset="GND" device=""/>
 <part name="GND29" library="supply1" deviceset="GND" device=""/>
 <part name="GND30" library="supply1" deviceset="GND" device=""/>
@@ -28407,7 +28411,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <plain>
 <text x="160.02" y="157.48" size="1.778" layer="97">Should VIN &amp; VU be
 connected like that?</text>
-<text x="231.14" y="109.22" size="1.27" layer="97">indicator higher resistance led</text>
 </plain>
 <instances>
 <instance part="KIT1" gate="KIT" x="96.52" y="121.92"/>
@@ -28712,6 +28715,17 @@ connected like that?</text>
 <sheet>
 <description>FPGA</description>
 <plain>
+<text x="50.8" y="208.28" size="1.778" layer="97">Resistor arrays used to limit
+input current to FPGA upper
+clamp diode to &lt;10mA so
+they are 5v tolerant</text>
+<text x="48.26" y="132.08" size="1.778" layer="97">Voltage divider on 18.5v
+for FPGA to check if 
+battery power</text>
+<text x="320.04" y="190.5" size="1.778" layer="97">MOSI must be on p63
+and MISO must be on
+p44 for initialization by
+serial from MBED</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="205.74" y="144.78"/>
@@ -30466,6 +30480,9 @@ connected like that?</text>
 <wire x1="266.7" y1="66.04" x2="266.7" y2="124.46" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="266.7" y1="66.04" x2="223.52" y2="66.04" width="0.1524" layer="97" style="shortdash"/>
 <text x="226.06" y="119.38" size="1.778" layer="97">Shell Detect Connectors</text>
+<text x="119.38" y="2.54" size="1.778" layer="97">Temporary breakbeam connector
+until one on kicker is confirmed
+to work</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0"/>
@@ -31242,8 +31259,16 @@ connected like that?</text>
 <wire x1="266.7" y1="203.2" x2="172.72" y2="203.2" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="172.72" y1="203.2" x2="172.72" y2="152.4" width="0.1524" layer="97" style="shortdash"/>
 <text x="175.26" y="198.12" size="1.778" layer="97">3.3V Reg</text>
-<text x="127" y="200.66" size="2.54" layer="97">Need to add zener diodes
-to 5V and 3.3V?</text>
+<text x="175.26" y="95.504" size="1.778" layer="97">PWRGD pulls line to GND when
+V_OUT not in tolerance</text>
+<text x="220.98" y="95.504" size="1.778" layer="97">When 1.2v or 2.5v or out of
+tolerance ERR LED turns on</text>
+<text x="175.26" y="156.464" size="1.778" layer="97">This 3.3v reg only used to
+power motor driver chips so
+no power when no battery</text>
+<text x="121.92" y="98.044" size="1.778" layer="97">Zener diode added on 5v so no
+back current from MBED when no
+battery power</text>
 </plain>
 <instances>
 <instance part="FRAME4" gate="G$1" x="0" y="0"/>
