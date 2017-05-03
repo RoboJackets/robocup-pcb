@@ -23,20 +23,20 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="0" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="0" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -10663,7 +10663,7 @@ Your Eurocircuits Team
 <attribute name="VALUE" x="20.905" y="40.365" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="R8" library="resistor" package="R0603" value="4.7k" x="7" y="33.75" smashed="yes" rot="MR180">
-<attribute name="NAME" x="8.615" y="34.365" size="1" layer="26" font="vector" ratio="15" rot="MR180"/>
+<attribute name="NAME" x="8.865" y="34.365" size="1" layer="26" font="vector" ratio="15" rot="MR180"/>
 <attribute name="VALUE" x="6.365" y="35.655" size="1.27" layer="28" rot="MR180"/>
 </element>
 <element name="R21" library="rcl" package="R0603" value="10k" x="8.75" y="-14.25" smashed="yes" rot="R90">
@@ -10682,7 +10682,7 @@ Your Eurocircuits Team
 <attribute name="NAME" x="12.5" y="-8.25" size="1" layer="26" font="vector" ratio="15" rot="MR180"/>
 <attribute name="VALUE" x="10.115" y="-7.095" size="1.27" layer="28" rot="MR180"/>
 </element>
-<element name="RN9" library="RoboJackets-Resistors" package="RA-8_2506" value="" x="-31.75" y="58.25" smashed="yes" rot="MR90">
+<element name="RN9" library="RoboJackets-Resistors" package="RA-8_2506" value="330" x="-31.75" y="58.25" smashed="yes" rot="MR90">
 <attribute name="DIGIKEY" value="742C163331JPCT-ND" x="-31.75" y="58.25" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="MPN" value="742C163331JP" x="-31.75" y="58.25" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="NAME" x="-29.976" y="56.622" size="1" layer="26" font="vector" ratio="15" rot="MR90"/>
@@ -11152,12 +11152,12 @@ Your Eurocircuits Team
 <element name="J3" library="RoboJackets-Connectors" package="B2PS-CENTERED" value="B2PS-VH(LF)(SN)" x="53.75" y="37" smashed="yes" rot="MR270">
 <attribute name="DIGIKEY" value="455-1648-ND" x="53.75" y="37" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="MPN" value="B2PS-VH(LF)(SN)" x="53.75" y="37" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="51.5" y="38.85" size="1" layer="26" font="vector" ratio="15" rot="MR0" align="bottom-center"/>
+<attribute name="NAME" x="51.5" y="39.1" size="1" layer="26" font="vector" ratio="15" rot="MR0" align="bottom-center"/>
 </element>
 <element name="U3" library="RoboJackets-PowerICs" package="SOT-23-5" value="TLV70233DBVR" x="-2.75" y="-8.5" smashed="yes" rot="MR0">
 <attribute name="DIGIKEY" value="296-32415-1-ND" x="-2.75" y="-8.5" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MPN" value="TLV70233DBVR" x="-2.75" y="-8.5" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="-2" y="-12" size="1" layer="26" font="vector" ratio="15" rot="MR0"/>
+<attribute name="NAME" x="-3.75" y="-10.75" size="1" layer="26" font="vector" ratio="15" rot="MR180"/>
 </element>
 <element name="R16" library="rcl" package="R0603" value="10k" x="-5.5" y="-8.75" smashed="yes" rot="MR90">
 <attribute name="NAME" x="-5.865" y="-12.885" size="1" layer="26" font="vector" ratio="15" rot="MR90"/>
@@ -11244,7 +11244,7 @@ Your Eurocircuits Team
 <attribute name="VALUE" x="-7.635" y="29.155" size="1.27" layer="28" rot="MR180"/>
 </element>
 <element name="C5" library="resistor" package="C0603" value="0.1uF" x="-5.25" y="16" smashed="yes" rot="MR90">
-<attribute name="NAME" x="-4.615" y="15.365" size="1" layer="26" font="vector" ratio="15" rot="MR90"/>
+<attribute name="NAME" x="-4.885" y="13.885" size="1" layer="26" font="vector" ratio="15" rot="MR270"/>
 <attribute name="VALUE" x="-7.155" y="15.365" size="1.27" layer="28" rot="MR90"/>
 </element>
 <element name="C20" library="resistor" package="C0603" value="0.1uF" x="7" y="28.25" smashed="yes" rot="MR0">
@@ -11256,7 +11256,7 @@ Your Eurocircuits Team
 <attribute name="VALUE" x="-3.345" y="30.635" size="1.27" layer="28" rot="MR270"/>
 </element>
 <element name="C1" library="resistor" package="C0603" value="0.1uF" x="-7.5" y="16" smashed="yes" rot="MR270">
-<attribute name="NAME" x="-8.135" y="16.635" size="1" layer="26" font="vector" ratio="15" rot="MR270"/>
+<attribute name="NAME" x="-7.135" y="13.885" size="1" layer="26" font="vector" ratio="15" rot="MR270"/>
 <attribute name="VALUE" x="-5.595" y="16.635" size="1.27" layer="28" rot="MR270"/>
 </element>
 <element name="C13" library="resistor" package="C0603" value="0.1uF" x="4" y="16" smashed="yes" rot="MR90">
@@ -11292,15 +11292,15 @@ Your Eurocircuits Team
 <attribute name="VALUE" x="-7.635" y="20.655" size="1.27" layer="28" rot="MR180"/>
 </element>
 <element name="C8" library="resistor" package="C0603" value="0.1uF" x="-3" y="16" smashed="yes" rot="MR90">
-<attribute name="NAME" x="-2.365" y="15.365" size="1" layer="26" font="vector" ratio="15" rot="MR90"/>
+<attribute name="NAME" x="-2.385" y="13.885" size="1" layer="26" font="vector" ratio="15" rot="MR270"/>
 <attribute name="VALUE" x="-4.905" y="15.365" size="1.27" layer="28" rot="MR90"/>
 </element>
 <element name="C15" library="resistor" package="C0603" value="0.1uF" x="6.25" y="16" smashed="yes" rot="MR90">
-<attribute name="NAME" x="6.865" y="14.135" size="1" layer="26" font="vector" ratio="15" rot="MR270"/>
+<attribute name="NAME" x="6.865" y="13.885" size="1" layer="26" font="vector" ratio="15" rot="MR270"/>
 <attribute name="VALUE" x="4.345" y="15.365" size="1.27" layer="28" rot="MR90"/>
 </element>
 <element name="C16" library="resistor" package="C0603" value="0.1uF" x="8.5" y="16" smashed="yes" rot="MR90">
-<attribute name="NAME" x="8.865" y="14.135" size="1" layer="26" font="vector" ratio="15" rot="MR270"/>
+<attribute name="NAME" x="9.115" y="13.885" size="1" layer="26" font="vector" ratio="15" rot="MR270"/>
 <attribute name="VALUE" x="6.595" y="15.365" size="1.27" layer="28" rot="MR90"/>
 </element>
 <element name="X1" library="RoboJackets-FreqGen" package="ASV" value="ASV-18.432MHZ-EJ-T" x="-3.75" y="38.75" smashed="yes" rot="MR180">
@@ -11314,11 +11314,11 @@ Your Eurocircuits Team
 <attribute name="VALUE" x="-2.385" y="44.905" size="1.27" layer="28" rot="MR180"/>
 </element>
 <element name="R9" library="resistor" package="R0603" value="4.7k" x="10.75" y="16" smashed="yes" rot="MR90">
-<attribute name="NAME" x="11.115" y="14.135" size="1" layer="26" font="vector" ratio="15" rot="MR270"/>
+<attribute name="NAME" x="11.115" y="13.885" size="1" layer="26" font="vector" ratio="15" rot="MR270"/>
 <attribute name="VALUE" x="8.845" y="15.365" size="1.27" layer="28" rot="MR90"/>
 </element>
 <element name="R5" library="resistor" package="R0603" value="330" x="-10.75" y="32.5" smashed="yes" rot="MR270">
-<attribute name="NAME" x="-11.635" y="33.635" size="1" layer="26" font="vector" ratio="15" rot="MR270"/>
+<attribute name="NAME" x="-11.885" y="33.635" size="1" layer="26" font="vector" ratio="15" rot="MR270"/>
 <attribute name="VALUE" x="-8.845" y="33.135" size="1.27" layer="28" rot="MR270"/>
 </element>
 <element name="D3" library="RoboJackets-LEDs" package="CHIP-LED0603" value="RED" x="-20.5" y="51.75" smashed="yes" rot="R90">
@@ -11476,7 +11476,7 @@ Your Eurocircuits Team
 <element name="DD:C11" library="RoboJackets-Capacitors" package="UWZ1H221MCL1GS" value="UWZ1H221MCL1GS" x="-32" y="42.5" smashed="yes" rot="MR270">
 <attribute name="DIGIKEY" value="493-9940-1-ND" x="-32" y="42.5" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="MPN" value="UWZ1H221MCL1GS" x="-32" y="42.5" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="-24.5" y="44.75" size="1" layer="22" font="vector" ratio="15" rot="MR270"/>
+<attribute name="NAME" x="-24.5" y="44.75" size="1" layer="26" font="vector" ratio="15" rot="MR270"/>
 </element>
 <element name="R6" library="resistor" package="R0603" value="68k" x="4" y="6.75" smashed="yes" rot="R90">
 <attribute name="NAME" x="4.365" y="8.615" size="1" layer="25" font="vector" ratio="15" rot="R90"/>
@@ -11499,8 +11499,14 @@ Your Eurocircuits Team
 <element name="U$8" library="RoboJackets-Aesthetics" package="BALL" value="" x="-22" y="59.81" rot="R180"/>
 <element name="U$9" library="RoboJackets-Aesthetics" package="KICKER" value="" x="59.75" y="37.06" rot="R90"/>
 <element name="U$10" library="RoboJackets-Aesthetics" package="ERR-IMU" value="" x="-18.5" y="44.56"/>
-<element name="R10" library="rcl" package="R0603" value="10k" x="32.25" y="48.25" rot="MR0"/>
-<element name="R15" library="rcl" package="R0603" value="330" x="32.25" y="43.75" rot="MR0"/>
+<element name="R10" library="rcl" package="R0603" value="10k" x="32.25" y="48.25" smashed="yes" rot="MR0">
+<attribute name="NAME" x="33.385" y="46.135" size="1" layer="26" font="vector" ratio="15" rot="MR0"/>
+<attribute name="VALUE" x="32.885" y="46.345" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="R15" library="rcl" package="R0603" value="330" x="32.25" y="43.75" smashed="yes" rot="MR0">
+<attribute name="NAME" x="33.385" y="41.635" size="1" layer="26" font="vector" ratio="15" rot="MR0"/>
+<attribute name="VALUE" x="32.885" y="41.845" size="1.27" layer="28" rot="MR0"/>
+</element>
 </elements>
 <signals>
 <signal name="VB">
