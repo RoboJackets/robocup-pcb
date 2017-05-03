@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.25" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -1181,12 +1181,24 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <pad name="2" x="-3.96" y="0" drill="1.5" diameter="2.5"/>
 <pad name="1" x="3.96" y="0" drill="1.5" diameter="2.5" shape="square"/>
 <wire x1="-9.9" y1="18.7" x2="9.9" y2="18.7" width="0.2" layer="21"/>
-<wire x1="9.9" y1="18.7" x2="9.9" y2="-5.3" width="0.2" layer="21"/>
-<wire x1="-9.9" y1="-5.3" x2="-9.9" y2="18.7" width="0.2" layer="21"/>
+<wire x1="9.9" y1="18.7" x2="9.9" y2="11.7" width="0.2" layer="21"/>
+<wire x1="9.9" y1="11.7" x2="8.4" y2="11.7" width="0.2" layer="21"/>
+<wire x1="8.4" y1="11.7" x2="8.4" y2="-5.3" width="0.2" layer="21"/>
+<wire x1="-8.4" y1="-5.3" x2="-8.4" y2="11.7" width="0.2" layer="21"/>
 <hole x="-7.5" y="15.2" drill="1.6"/>
 <hole x="7.5" y="15.2" drill="1.6"/>
-<wire x1="-9.9" y1="-5.3" x2="9.9" y2="-5.3" width="0.2" layer="21"/>
+<wire x1="-8.4" y1="11.7" x2="-9.9" y2="11.7" width="0.2" layer="21"/>
+<wire x1="-9.9" y1="11.7" x2="-9.9" y2="18.7" width="0.2" layer="21"/>
 <text x="-10.5" y="-5" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<wire x1="-8.4" y1="-5.3" x2="-6.7" y2="-5.3" width="0.2" layer="21"/>
+<wire x1="8.4" y1="-5.3" x2="6.7" y2="-5.3" width="0.2" layer="21"/>
+<wire x1="-6.7" y1="-5.3" x2="-6.7" y2="-1.1" width="0.2" layer="21"/>
+<wire x1="-6.7" y1="-1.1" x2="-0.65" y2="-1.1" width="0.2" layer="21"/>
+<wire x1="6.7" y1="-5.3" x2="6.7" y2="-1.1" width="0.2" layer="21"/>
+<wire x1="-0.65" y1="-1.1" x2="-0.65" y2="-3.6" width="0.2" layer="21"/>
+<wire x1="-0.65" y1="-3.6" x2="0.65" y2="-3.6" width="0.2" layer="21"/>
+<wire x1="0.65" y1="-3.6" x2="0.65" y2="-1.1" width="0.2" layer="21"/>
+<wire x1="6.7" y1="-1.1" x2="0.65" y2="-1.1" width="0.2" layer="21"/>
 </package>
 <package name="DF22R-2-H">
 <pad name="2" x="-3.96" y="0" drill="1.5" diameter="2.5"/>
