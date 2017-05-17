@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.25" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -231,7 +231,7 @@ In this library you will find uncommon capacitors. If you are looking for a comm
 <wire x1="-3.25" y1="5.25" x2="3.25" y2="5.25" width="0.2" layer="21"/>
 <wire x1="3.25" y1="5.25" x2="5.25" y2="3.25" width="0.2" layer="21"/>
 <wire x1="5.25" y1="3.25" x2="5.25" y2="-5.25" width="0.2" layer="21"/>
-<text x="-5" y="-6.75" size="1" layer="21" font="vector" ratio="15">&gt;NAME</text>
+<text x="-2.25" y="-7.25" size="1" layer="25" font="vector" ratio="15">&gt;NAME</text>
 </package>
 <package name="25MM-DIA_40MM-HGT_HORIZ">
 <rectangle x1="0.5" y1="3" x2="10.5" y2="4" layer="22"/>
