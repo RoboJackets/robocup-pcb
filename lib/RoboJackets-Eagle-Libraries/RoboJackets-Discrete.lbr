@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.1">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -780,41 +780,43 @@ grid 5.45 mm</description>
 <pin name="B" x="-5.08" y="0" visible="off" length="short"/>
 <pin name="E" x="2.54" y="-7.62" visible="off" length="short" rot="R90"/>
 <pin name="C" x="2.54" y="7.62" visible="off" length="short" rot="R270"/>
-<wire x1="-0.08" y1="2.54" x2="-0.08" y2="-2.54" width="0.5" layer="97"/>
-<wire x1="0" y1="-2" x2="2.5" y2="-3.5" width="0.254" layer="97"/>
-<wire x1="0" y1="2" x2="2.5" y2="3.5" width="0.254" layer="97"/>
-<wire x1="2.5" y1="-3.5" x2="2.5" y2="-4.9" width="0.254" layer="97"/>
-<wire x1="2.5" y1="3.5" x2="2.5" y2="4.9" width="0.254" layer="97"/>
-<wire x1="-3.5" y1="0" x2="0" y2="0" width="0.254" layer="97"/>
-<polygon width="0.254" layer="97">
-<vertex x="0.7" y="-3.4"/>
-<vertex x="1.6" y="-2"/>
-<vertex x="2.3" y="-3.4"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.508" layer="94"/>
+<wire x1="0" y1="1.27" x2="0" y2="0" width="0.508" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-1.27" width="0.508" layer="94"/>
+<wire x1="0" y1="-1.27" x2="0" y2="-2.54" width="0.508" layer="94"/>
+<wire x1="0" y1="-1.27" x2="2.54" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="2.54" y2="3.81" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-3.81" x2="2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="3.81" x2="2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<polygon width="0.254" layer="94">
+<vertex x="0.508" y="-3.048"/>
+<vertex x="1.778" y="-1.778"/>
+<vertex x="2.032" y="-3.302"/>
 </polygon>
-<circle x="1.5" y="0" radius="5" width="0.254" layer="97"/>
-<text x="-5.2" y="0.4" size="1.27" layer="97">B</text>
-<text x="3.2" y="5.5" size="1.27" layer="97">C</text>
-<text x="3.2" y="-6.7" size="1.27" layer="97">E</text>
+<text x="5.08" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="PNP">
 <pin name="B" x="-5.08" y="0" visible="off" length="short"/>
 <pin name="C" x="2.54" y="-7.62" visible="off" length="short" rot="R90"/>
 <pin name="E" x="2.54" y="7.62" visible="off" length="short" rot="R270"/>
-<wire x1="-0.08" y1="2.54" x2="-0.08" y2="-2.54" width="0.5" layer="97"/>
-<wire x1="0" y1="-2" x2="2.5" y2="-3.5" width="0.254" layer="97"/>
-<wire x1="2.5" y1="-3.5" x2="2.5" y2="-4.9" width="0.254" layer="97"/>
-<wire x1="2.5" y1="3.5" x2="2.5" y2="4.9" width="0.254" layer="97"/>
-<wire x1="-3.5" y1="0" x2="0" y2="0" width="0.254" layer="97"/>
-<polygon width="0.254" layer="97">
-<vertex x="0.7" y="2.4"/>
-<vertex x="1.6" y="3.9"/>
-<vertex x="2.4" y="2.5"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.508" layer="94"/>
+<wire x1="0" y1="1.27" x2="0" y2="0" width="0.508" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-1.27" width="0.508" layer="94"/>
+<wire x1="0" y1="-1.27" x2="0" y2="-2.54" width="0.508" layer="94"/>
+<wire x1="0" y1="-1.27" x2="2.54" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="2.54" y2="3.81" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-3.81" x2="2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="3.81" x2="2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<polygon width="0.254" layer="94">
+<vertex x="2.54" y="2.54"/>
+<vertex x="1.27" y="3.81"/>
+<vertex x="1.016" y="2.286"/>
 </polygon>
-<circle x="1.5" y="0" radius="5" width="0.254" layer="97"/>
-<text x="-5.2" y="0.4" size="1.27" layer="97">B</text>
-<text x="3.2" y="5.5" size="1.27" layer="97">E</text>
-<text x="3.2" y="-6.7" size="1.27" layer="97">C</text>
-<wire x1="0" y1="2" x2="2.5" y2="3.5" width="0.254" layer="97"/>
+<text x="5.08" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="IGBT_1">
 <wire x1="-5.08" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
