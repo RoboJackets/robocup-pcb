@@ -30427,7 +30427,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SUPPLY53" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY54" library="supply2" deviceset="+5V" device=""/>
 <part name="SUPPLY29" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
-<part name="SUPPLY26" library="RoboJackets-Supplies" deviceset="VBATT" device=""/>
 <part name="R20" library="rcl" deviceset="R-US_" device="R0603" value="1k"/>
 <part name="R23" library="rcl" deviceset="R-US_" device="R0603" value="162"/>
 <part name="D3" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-GREEN" value="GREEN"/>
@@ -30466,17 +30465,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="D9" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-RED" value="RED"/>
 <part name="D11" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-RED" value="RED"/>
 <part name="D8" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-YELLOW" value="YELLOW"/>
-<part name="Q3" library="RoboJackets-Discrete" deviceset="BSS127" device=""/>
-<part name="Q4" library="RoboJackets-Discrete" deviceset="BSS127" device=""/>
-<part name="Q6" library="RoboJackets-Discrete" deviceset="BSS127" device=""/>
-<part name="Q8" library="RoboJackets-Discrete" deviceset="BSS127" device=""/>
-<part name="Q10" library="RoboJackets-Discrete" deviceset="BSS127" device=""/>
-<part name="SUPPLY39" library="supply2" deviceset="GND" device=""/>
-<part name="R21" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
-<part name="R24" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
-<part name="R26" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
-<part name="R30" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
-<part name="R33" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="SUPPLY32" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="Q5" library="RoboJackets-Discrete" deviceset="BSS127" device=""/>
 <part name="Q1" library="RoboJackets-Discrete" deviceset="ATP302" device="ATPAK" package3d_urn="urn:adsk.eagle:package:4087657/1"/>
@@ -30507,7 +30495,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E10-25" package3d_urn="urn:adsk.eagle:package:23399/1" value="1000uF"/>
 <part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E10-25" package3d_urn="urn:adsk.eagle:package:23399/1" value="1000uF"/>
 <part name="R43" library="RoboJackets-Resistors" deviceset="PWR263S-35" device="TO-263AB" package3d_urn="urn:adsk.eagle:package:4103950/1" value="3.3k 35W"/>
-<part name="R44" library="RoboJackets-Resistors" deviceset="PWR263S-35" device="TO-263AB" package3d_urn="urn:adsk.eagle:package:4103950/1" value="3.3k 35W"/>
 <part name="J6" library="RoboJackets-Connectors" deviceset="3-PIN_2MM-*" device="H"/>
 <part name="J5" library="RoboJackets-Connectors" deviceset="2-PIN_2MM-*" device="H"/>
 <part name="SUPPLY41" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
@@ -30517,6 +30504,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="R15" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="18.2k 1%"/>
 <part name="R16" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="40.2k 1%"/>
 <part name="R14" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1.62k 1%"/>
+<part name="SUPPLY39" library="RoboJackets-Supplies" deviceset="+18.5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -31004,28 +30992,36 @@ current below the limit of the fuse. </text>
 </net>
 <net name="VBATT" class="0">
 <segment>
+<pinref part="R12" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="99.06" x2="68.58" y2="99.06" width="0.1524" layer="91"/>
+<junction x="68.58" y="99.06"/>
+<pinref part="SUPPLY15" gate="G$1" pin="VBATT"/>
+<wire x1="68.58" y1="76.2" x2="68.58" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="99.06" x2="68.58" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="104.14" x2="68.58" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="109.22" x2="68.58" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="114.3" x2="68.58" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="129.54" x2="68.58" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="160.02" x2="68.58" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="170.18" x2="68.58" y2="187.96" width="0.1524" layer="91"/>
+<pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="104.14" x2="68.58" y2="104.14" width="0.1524" layer="91"/>
 <junction x="68.58" y="104.14"/>
+<wire x1="68.58" y1="104.14" x2="68.58" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="R10" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="109.22" x2="68.58" y2="109.22" width="0.1524" layer="91"/>
 <junction x="68.58" y="109.22"/>
+<wire x1="68.58" y1="109.22" x2="68.58" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="114.3" x2="68.58" y2="114.3" width="0.1524" layer="91"/>
 <junction x="68.58" y="114.3"/>
+<wire x1="68.58" y1="114.3" x2="68.58" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="VCC"/>
 <wire x1="96.52" y1="129.54" x2="68.58" y2="129.54" width="0.1524" layer="91"/>
 <junction x="68.58" y="129.54"/>
+<wire x1="68.58" y1="129.54" x2="68.58" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="76.2" y1="154.94" x2="76.2" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="160.02" x2="68.58" y2="160.02" width="0.1524" layer="91"/>
+<junction x="68.58" y="160.02"/>
+<wire x1="68.58" y1="160.02" x2="68.58" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="SUPPLY14" gate="G$1" pin="VBATT"/>
-<pinref part="R9" gate="G$1" pin="1"/>
-<pinref part="R10" gate="G$1" pin="1"/>
-<pinref part="R12" gate="G$1" pin="1"/>
-<pinref part="R11" gate="G$1" pin="1"/>
+</segment>
+<segment>
 <pinref part="C16" gate="G$1" pin="2"/>
 <wire x1="157.48" y1="170.18" x2="157.48" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="C15" gate="G$1" pin="2"/>
@@ -31042,9 +31038,6 @@ current below the limit of the fuse. </text>
 <wire x1="83.82" y1="170.18" x2="83.82" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="170.18" x2="101.6" y2="172.72" width="0.1524" layer="91"/>
 <junction x="101.6" y="170.18"/>
-<wire x1="83.82" y1="170.18" x2="68.58" y2="170.18" width="0.1524" layer="91"/>
-<junction x="83.82" y="170.18"/>
-<junction x="68.58" y="170.18"/>
 <pinref part="SUPPLY20" gate="G$1" pin="VBATT"/>
 <wire x1="180.34" y1="187.96" x2="180.34" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="177.8" x2="180.34" y2="175.26" width="0.1524" layer="91"/>
@@ -31057,13 +31050,6 @@ current below the limit of the fuse. </text>
 <pinref part="U2" gate="G$1" pin="LVGATE"/>
 <wire x1="132.08" y1="124.46" x2="157.48" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="124.46" x2="157.48" y2="170.18" width="0.1524" layer="91"/>
-<junction x="68.58" y="99.06"/>
-<pinref part="SUPPLY15" gate="G$1" pin="VBATT"/>
-<wire x1="68.58" y1="76.2" x2="68.58" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="76.2" y1="154.94" x2="76.2" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="160.02" x2="68.58" y2="160.02" width="0.1524" layer="91"/>
-<junction x="68.58" y="160.02"/>
 <pinref part="C11" gate="G$1" pin="+"/>
 <pinref part="C13" gate="G$1" pin="+"/>
 <pinref part="L1" gate="GA3460" pin="3"/>
@@ -31172,7 +31158,7 @@ current below the limit of the fuse. </text>
 <pinref part="R14" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="!DONE!_LPF" class="0">
+<net name="!DONE_LPF" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="!DONE"/>
 <wire x1="96.52" y1="124.46" x2="25.4" y2="124.46" width="0.1524" layer="91"/>
@@ -31183,7 +31169,7 @@ current below the limit of the fuse. </text>
 <junction x="25.4" y="124.46"/>
 </segment>
 </net>
-<net name="!FAULT!_LPF" class="0">
+<net name="!FAULT_LPF" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="!FAULT"/>
 <wire x1="96.52" y1="119.38" x2="35.56" y2="119.38" width="0.1524" layer="91"/>
@@ -31268,7 +31254,6 @@ current below the limit of the fuse. </text>
 <instance part="FRAME3" gate="G$1" x="0" y="0"/>
 <instance part="FRAME3" gate="G$2" x="124.46" y="0"/>
 <instance part="SUPPLY29" gate="+5V" x="43.18" y="187.96"/>
-<instance part="SUPPLY26" gate="G$1" x="20.32" y="187.96"/>
 <instance part="R20" gate="G$1" x="20.32" y="175.26" rot="R90"/>
 <instance part="R23" gate="G$1" x="43.18" y="175.26" rot="R90"/>
 <instance part="D3" gate="G$1" x="20.32" y="162.56"/>
@@ -31309,22 +31294,12 @@ current below the limit of the fuse. </text>
 <instance part="D9" gate="G$1" x="129.54" y="83.82"/>
 <instance part="D11" gate="G$1" x="157.48" y="83.82"/>
 <instance part="D8" gate="G$1" x="101.6" y="83.82"/>
-<instance part="Q3" gate="G$1" x="40.64" y="73.66"/>
-<instance part="Q4" gate="G$1" x="71.12" y="73.66"/>
-<instance part="Q6" gate="G$1" x="101.6" y="73.66"/>
-<instance part="Q8" gate="G$1" x="129.54" y="73.66"/>
-<instance part="Q10" gate="G$1" x="157.48" y="73.66"/>
-<instance part="SUPPLY39" gate="GND" x="165.1" y="60.96"/>
-<instance part="R21" gate="G$1" x="30.48" y="96.52" rot="R90"/>
-<instance part="R24" gate="G$1" x="60.96" y="96.52" rot="R90"/>
-<instance part="R26" gate="G$1" x="91.44" y="96.52" rot="R90"/>
-<instance part="R30" gate="G$1" x="119.38" y="96.52" rot="R90"/>
-<instance part="R33" gate="G$1" x="147.32" y="96.52" rot="R90"/>
 <instance part="SUPPLY32" gate="+5V" x="93.98" y="193.04"/>
 <instance part="Q5" gate="G$1" x="93.98" y="147.32"/>
 <instance part="SUPPLY41" gate="+5V" x="195.58" y="104.14"/>
 <instance part="R36" gate="G$1" x="195.58" y="93.98" rot="R90"/>
 <instance part="D13" gate="G$1" x="195.58" y="76.2"/>
+<instance part="SUPPLY39" gate="G$1" x="20.32" y="187.96"/>
 </instances>
 <busses>
 </busses>
@@ -31356,29 +31331,6 @@ current below the limit of the fuse. </text>
 <wire x1="119.38" y1="142.24" x2="119.38" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="139.7" x2="134.62" y2="139.7" width="0.1524" layer="91"/>
 <junction x="134.62" y="139.7"/>
-</segment>
-<segment>
-<pinref part="Q3" gate="G$1" pin="S"/>
-<wire x1="40.64" y1="68.58" x2="40.64" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="66.04" x2="71.12" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="66.04" x2="101.6" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="66.04" x2="129.54" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="66.04" x2="157.48" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="66.04" x2="165.1" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="66.04" x2="165.1" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="Q4" gate="G$1" pin="S"/>
-<wire x1="71.12" y1="66.04" x2="71.12" y2="68.58" width="0.1524" layer="91"/>
-<junction x="71.12" y="66.04"/>
-<pinref part="Q6" gate="G$1" pin="S"/>
-<wire x1="101.6" y1="68.58" x2="101.6" y2="66.04" width="0.1524" layer="91"/>
-<junction x="101.6" y="66.04"/>
-<pinref part="Q8" gate="G$1" pin="S"/>
-<wire x1="129.54" y1="68.58" x2="129.54" y2="66.04" width="0.1524" layer="91"/>
-<junction x="129.54" y="66.04"/>
-<pinref part="Q10" gate="G$1" pin="S"/>
-<wire x1="157.48" y1="68.58" x2="157.48" y2="66.04" width="0.1524" layer="91"/>
-<junction x="157.48" y="66.04"/>
-<pinref part="SUPPLY39" gate="GND" pin="GND"/>
 </segment>
 <segment>
 <pinref part="SUPPLY33" gate="GND" pin="GND"/>
@@ -31422,52 +31374,27 @@ current below the limit of the fuse. </text>
 <segment>
 <pinref part="R22" gate="G$1" pin="2"/>
 <pinref part="SUPPLY28" gate="+5V" pin="+5V"/>
-<wire x1="40.64" y1="101.6" x2="40.64" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="R21" gate="G$1" pin="2"/>
-<wire x1="40.64" y1="104.14" x2="40.64" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="101.6" x2="30.48" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="104.14" x2="40.64" y2="104.14" width="0.1524" layer="91"/>
-<junction x="40.64" y="104.14"/>
+<wire x1="40.64" y1="101.6" x2="40.64" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R25" gate="G$1" pin="2"/>
 <pinref part="SUPPLY31" gate="+5V" pin="+5V"/>
-<wire x1="71.12" y1="101.6" x2="71.12" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="R24" gate="G$1" pin="2"/>
-<wire x1="71.12" y1="104.14" x2="71.12" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="101.6" x2="60.96" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="104.14" x2="71.12" y2="104.14" width="0.1524" layer="91"/>
-<junction x="71.12" y="104.14"/>
+<wire x1="71.12" y1="101.6" x2="71.12" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R28" gate="G$1" pin="2"/>
 <pinref part="SUPPLY34" gate="+5V" pin="+5V"/>
-<wire x1="101.6" y1="101.6" x2="101.6" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="R26" gate="G$1" pin="2"/>
-<wire x1="101.6" y1="104.14" x2="101.6" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="101.6" x2="91.44" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="104.14" x2="101.6" y2="104.14" width="0.1524" layer="91"/>
-<junction x="101.6" y="104.14"/>
+<wire x1="101.6" y1="101.6" x2="101.6" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R31" gate="G$1" pin="2"/>
 <pinref part="SUPPLY35" gate="+5V" pin="+5V"/>
-<wire x1="129.54" y1="101.6" x2="129.54" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="R30" gate="G$1" pin="2"/>
-<wire x1="129.54" y1="104.14" x2="129.54" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="101.6" x2="119.38" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="104.14" x2="129.54" y2="104.14" width="0.1524" layer="91"/>
-<junction x="129.54" y="104.14"/>
+<wire x1="129.54" y1="101.6" x2="129.54" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R34" gate="G$1" pin="2"/>
 <pinref part="SUPPLY38" gate="+5V" pin="+5V"/>
-<wire x1="157.48" y1="101.6" x2="157.48" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="R33" gate="G$1" pin="2"/>
-<wire x1="157.48" y1="104.14" x2="157.48" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="101.6" x2="147.32" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="104.14" x2="157.48" y2="104.14" width="0.1524" layer="91"/>
-<junction x="157.48" y="104.14"/>
+<wire x1="157.48" y1="101.6" x2="157.48" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R27" gate="G$1" pin="2"/>
@@ -31478,13 +31405,6 @@ current below the limit of the fuse. </text>
 <wire x1="195.58" y1="101.6" x2="195.58" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="SUPPLY41" gate="+5V" pin="+5V"/>
 <pinref part="R36" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="VBATT" class="0">
-<segment>
-<pinref part="R20" gate="G$1" pin="2"/>
-<pinref part="SUPPLY26" gate="G$1" pin="VBATT"/>
-<wire x1="20.32" y1="180.34" x2="20.32" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -31524,14 +31444,6 @@ current below the limit of the fuse. </text>
 <pinref part="R29" gate="G$1" pin="1"/>
 <wire x1="119.38" y1="175.26" x2="119.38" y2="154.94" width="0.1524" layer="91"/>
 <junction x="119.38" y="154.94"/>
-</segment>
-</net>
-<net name="!FAULT!" class="0">
-<segment>
-<pinref part="Q7" gate="G$1" pin="G"/>
-<wire x1="114.3" y1="144.78" x2="111.76" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="144.78" x2="111.76" y2="149.86" width="0.1524" layer="91"/>
-<label x="111.76" y="149.86" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="N$29" class="0">
@@ -31611,94 +31523,39 @@ current below the limit of the fuse. </text>
 <wire x1="157.48" y1="88.9" x2="157.48" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$31" class="0">
-<segment>
-<pinref part="Q3" gate="G$1" pin="D"/>
-<pinref part="D4" gate="G$1" pin="K"/>
-<wire x1="40.64" y1="78.74" x2="40.64" y2="81.28" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$33" class="0">
-<segment>
-<pinref part="Q4" gate="G$1" pin="D"/>
-<pinref part="D6" gate="G$1" pin="K"/>
-<wire x1="71.12" y1="78.74" x2="71.12" y2="81.28" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$34" class="0">
-<segment>
-<pinref part="Q6" gate="G$1" pin="D"/>
-<pinref part="D8" gate="G$1" pin="K"/>
-<wire x1="101.6" y1="78.74" x2="101.6" y2="81.28" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$35" class="0">
-<segment>
-<pinref part="Q8" gate="G$1" pin="D"/>
-<pinref part="D9" gate="G$1" pin="K"/>
-<wire x1="129.54" y1="78.74" x2="129.54" y2="81.28" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$36" class="0">
-<segment>
-<pinref part="Q10" gate="G$1" pin="D"/>
-<pinref part="D11" gate="G$1" pin="K"/>
-<wire x1="157.48" y1="78.74" x2="157.48" y2="81.28" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="HV_IND_MIN" class="0">
 <segment>
-<pinref part="Q3" gate="G$1" pin="G"/>
-<wire x1="35.56" y1="71.12" x2="30.48" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="71.12" x2="30.48" y2="63.5" width="0.1524" layer="91"/>
-<label x="30.48" y="63.5" size="1.27" layer="95" rot="R270" xref="yes"/>
-<pinref part="R21" gate="G$1" pin="1"/>
-<wire x1="30.48" y1="91.44" x2="30.48" y2="71.12" width="0.1524" layer="91"/>
-<junction x="30.48" y="71.12"/>
+<pinref part="D4" gate="G$1" pin="K"/>
+<wire x1="40.64" y1="78.74" x2="40.64" y2="81.28" width="0.1524" layer="91"/>
+<label x="40.64" y="78.74" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="HV_IND_LOW" class="0">
 <segment>
-<pinref part="Q4" gate="G$1" pin="G"/>
-<wire x1="66.04" y1="71.12" x2="60.96" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="71.12" x2="60.96" y2="63.5" width="0.1524" layer="91"/>
-<label x="60.96" y="63.5" size="1.27" layer="95" rot="R270" xref="yes"/>
-<pinref part="R24" gate="G$1" pin="1"/>
-<wire x1="60.96" y1="91.44" x2="60.96" y2="71.12" width="0.1524" layer="91"/>
-<junction x="60.96" y="71.12"/>
+<pinref part="D6" gate="G$1" pin="K"/>
+<wire x1="71.12" y1="78.74" x2="71.12" y2="81.28" width="0.1524" layer="91"/>
+<label x="71.12" y="78.74" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="HV_IND_MID" class="0">
 <segment>
-<pinref part="Q6" gate="G$1" pin="G"/>
-<wire x1="96.52" y1="71.12" x2="91.44" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="71.12" x2="91.44" y2="63.5" width="0.1524" layer="91"/>
-<label x="91.44" y="63.5" size="1.27" layer="95" rot="R270" xref="yes"/>
-<pinref part="R26" gate="G$1" pin="1"/>
-<wire x1="91.44" y1="91.44" x2="91.44" y2="71.12" width="0.1524" layer="91"/>
-<junction x="91.44" y="71.12"/>
+<pinref part="D8" gate="G$1" pin="K"/>
+<wire x1="101.6" y1="78.74" x2="101.6" y2="81.28" width="0.1524" layer="91"/>
+<label x="101.6" y="78.74" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="HV_IND_HIGH" class="0">
 <segment>
-<pinref part="Q8" gate="G$1" pin="G"/>
-<wire x1="124.46" y1="71.12" x2="119.38" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="71.12" x2="119.38" y2="63.5" width="0.1524" layer="91"/>
-<label x="119.38" y="63.5" size="1.27" layer="95" rot="R270" xref="yes"/>
-<pinref part="R30" gate="G$1" pin="1"/>
-<wire x1="119.38" y1="91.44" x2="119.38" y2="71.12" width="0.1524" layer="91"/>
-<junction x="119.38" y="71.12"/>
+<pinref part="D9" gate="G$1" pin="K"/>
+<wire x1="129.54" y1="78.74" x2="129.54" y2="81.28" width="0.1524" layer="91"/>
+<label x="129.54" y="78.74" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="HV_IND_MAX" class="0">
 <segment>
-<pinref part="Q10" gate="G$1" pin="G"/>
-<wire x1="152.4" y1="71.12" x2="147.32" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="71.12" x2="147.32" y2="63.5" width="0.1524" layer="91"/>
-<label x="147.32" y="63.5" size="1.27" layer="95" rot="R270" xref="yes"/>
-<pinref part="R33" gate="G$1" pin="1"/>
-<wire x1="147.32" y1="91.44" x2="147.32" y2="71.12" width="0.1524" layer="91"/>
-<junction x="147.32" y="71.12"/>
+<pinref part="D11" gate="G$1" pin="K"/>
+<wire x1="157.48" y1="78.74" x2="157.48" y2="81.28" width="0.1524" layer="91"/>
+<label x="157.48" y="78.74" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="N$37" class="0">
@@ -31706,14 +31563,6 @@ current below the limit of the fuse. </text>
 <pinref part="Q5" gate="G$1" pin="D"/>
 <pinref part="D7" gate="G$1" pin="K"/>
 <wire x1="93.98" y1="152.4" x2="93.98" y2="165.1" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="!DONE!" class="0">
-<segment>
-<pinref part="Q5" gate="G$1" pin="G"/>
-<wire x1="88.9" y1="144.78" x2="83.82" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="144.78" x2="83.82" y2="149.86" width="0.1524" layer="91"/>
-<label x="83.82" y="149.86" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="N$40" class="0">
@@ -31728,6 +31577,29 @@ current below the limit of the fuse. </text>
 <pinref part="D13" gate="G$1" pin="K"/>
 <wire x1="195.58" y1="73.66" x2="195.58" y2="66.04" width="0.1524" layer="91" style="longdash"/>
 <label x="195.58" y="66.04" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+</net>
+<net name="+18.5V" class="0">
+<segment>
+<pinref part="R20" gate="G$1" pin="2"/>
+<wire x1="20.32" y1="180.34" x2="20.32" y2="185.42" width="0.1524" layer="91"/>
+<pinref part="SUPPLY39" gate="G$1" pin="+18.5V"/>
+</segment>
+</net>
+<net name="!FAULT_LPF" class="0">
+<segment>
+<pinref part="Q7" gate="G$1" pin="G"/>
+<wire x1="114.3" y1="144.78" x2="111.76" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="144.78" x2="111.76" y2="149.86" width="0.1524" layer="91"/>
+<label x="111.76" y="149.86" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
+</net>
+<net name="!DONE_LPF" class="0">
+<segment>
+<pinref part="Q5" gate="G$1" pin="G"/>
+<wire x1="88.9" y1="144.78" x2="86.36" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="144.78" x2="86.36" y2="149.86" width="0.1524" layer="91"/>
+<label x="86.36" y="149.86" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -31767,8 +31639,7 @@ current below the limit of the fuse. </text>
 <attribute name="VALUE" x="49.53" y="149.098" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY44" gate="G$1" x="38.1" y="152.4"/>
-<instance part="R43" gate="PWR263S-35-3301J" x="104.14" y="172.72" rot="R90"/>
-<instance part="R44" gate="PWR263S-35-3301J" x="114.3" y="172.72" rot="R90"/>
+<instance part="R43" gate="PWR263S-35-3301J" x="109.22" y="172.72" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -31829,15 +31700,9 @@ current below the limit of the fuse. </text>
 <wire x1="48.26" y1="177.8" x2="48.26" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R43" gate="PWR263S-35-3301J" pin="PIN2"/>
-<wire x1="104.14" y1="177.8" x2="104.14" y2="182.88" width="0.1524" layer="91"/>
-<pinref part="R44" gate="PWR263S-35-3301J" pin="PIN2"/>
-<wire x1="104.14" y1="182.88" x2="109.22" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="182.88" x2="114.3" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="182.88" x2="114.3" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="182.88" x2="109.22" y2="185.42" width="0.1524" layer="91"/>
-<junction x="109.22" y="182.88"/>
 <pinref part="SUPPLY49" gate="1" pin="V+"/>
+<pinref part="R43" gate="PWR263S-35-3301J" pin="PIN1"/>
+<wire x1="109.22" y1="185.42" x2="109.22" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DISCHARGE_DRAIN" class="0">
@@ -31846,15 +31711,9 @@ current below the limit of the fuse. </text>
 <wire x1="109.22" y1="157.48" x2="109.22" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="157.48" x2="114.3" y2="157.48" width="0.1524" layer="91"/>
 <label x="114.3" y="157.48" size="1.27" layer="95" xref="yes"/>
-<wire x1="109.22" y1="157.48" x2="109.22" y2="162.56" width="0.1524" layer="91"/>
 <junction x="109.22" y="157.48"/>
-<wire x1="109.22" y1="162.56" x2="114.3" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="R44" gate="PWR263S-35-3301J" pin="PIN1"/>
-<wire x1="114.3" y1="162.56" x2="114.3" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="162.56" x2="104.14" y2="162.56" width="0.1524" layer="91"/>
-<junction x="109.22" y="162.56"/>
-<pinref part="R43" gate="PWR263S-35-3301J" pin="PIN1"/>
-<wire x1="104.14" y1="162.56" x2="104.14" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="R43" gate="PWR263S-35-3301J" pin="PIN2"/>
+<wire x1="109.22" y1="167.64" x2="109.22" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -32209,6 +32068,15 @@ current below the limit of the fuse. </text>
 <pinref part="J2" gate="G$1" pin="4"/>
 <wire x1="38.1" y1="175.26" x2="40.64" y2="175.26" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R45" gate="G$1" pin="1"/>
+<wire x1="50.8" y1="27.94" x2="58.42" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="U3" gate="AT32A" pin="!RESET!"/>
+<wire x1="58.42" y1="27.94" x2="58.42" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="27.94" x2="58.42" y2="25.4" width="0.1524" layer="91"/>
+<junction x="58.42" y="27.94"/>
+<label x="58.42" y="25.4" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
 </net>
 <net name="CHIP_GATE" class="0">
 <segment>
@@ -32306,6 +32174,11 @@ current below the limit of the fuse. </text>
 <pinref part="J2" gate="G$1" pin="5"/>
 <wire x1="38.1" y1="170.18" x2="40.64" y2="170.18" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U3" gate="AT32A" pin="PB4(!SS!)"/>
+<wire x1="35.56" y1="96.52" x2="33.02" y2="96.52" width="0.1524" layer="91"/>
+<label x="33.02" y="96.52" size="1.27" layer="95" rot="MR0" xref="yes"/>
+</segment>
 </net>
 <net name="BB_TX" class="0">
 <segment>
@@ -32357,24 +32230,6 @@ current below the limit of the fuse. </text>
 <pinref part="R52" gate="G$1" pin="1"/>
 <pinref part="R53" gate="G$1" pin="2"/>
 <wire x1="203.2" y1="60.96" x2="208.28" y2="60.96" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="!RESET!" class="0">
-<segment>
-<pinref part="R45" gate="G$1" pin="1"/>
-<wire x1="50.8" y1="27.94" x2="58.42" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="U3" gate="AT32A" pin="!RESET!"/>
-<wire x1="58.42" y1="27.94" x2="58.42" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="27.94" x2="58.42" y2="25.4" width="0.1524" layer="91"/>
-<junction x="58.42" y="27.94"/>
-<label x="58.42" y="25.4" size="1.27" layer="95" rot="R270" xref="yes"/>
-</segment>
-</net>
-<net name="!KICKER_SELECT!" class="0">
-<segment>
-<pinref part="U3" gate="AT32A" pin="PB4(!SS!)"/>
-<wire x1="35.56" y1="96.52" x2="33.02" y2="96.52" width="0.1524" layer="91"/>
-<label x="33.02" y="96.52" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="!BTN_CHG!" class="0">
