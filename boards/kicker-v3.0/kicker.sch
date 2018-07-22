@@ -8582,6 +8582,24 @@ INTERNATIONAL RECTIFIER, irg4bc15ud-s.pdf</description>
 <text x="0" y="4.0749" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-3.885" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
+<package name="SOT95P240X110-3" urn="urn:adsk.eagle:footprint:4254589/1">
+<description>3-SOT23, 0.95 mm pitch, 2.4 mm span, 2.9 X 1.3 X 1.1 mm body
+&lt;p&gt;3-pin SOT23 package with 0.95 mm pitch, 2.4 mm span with body size 2.9 X 1.3 X 1.1 mm&lt;/p&gt;</description>
+<circle x="-1.1573" y="1.7586" radius="0.25" width="0" layer="21"/>
+<wire x1="-0.7" y1="1.5686" x2="0.7" y2="1.5686" width="0.12" layer="21"/>
+<wire x1="0.7" y1="1.5686" x2="0.7" y2="0.5586" width="0.12" layer="21"/>
+<wire x1="-0.7" y1="-1.5686" x2="0.7" y2="-1.5686" width="0.12" layer="21"/>
+<wire x1="0.7" y1="-1.5686" x2="0.7" y2="-0.5586" width="0.12" layer="21"/>
+<wire x1="0.7" y1="-1.5" x2="-0.7" y2="-1.5" width="0.12" layer="51"/>
+<wire x1="-0.7" y1="-1.5" x2="-0.7" y2="1.5" width="0.12" layer="51"/>
+<wire x1="-0.7" y1="1.5" x2="0.7" y2="1.5" width="0.12" layer="51"/>
+<wire x1="0.7" y1="1.5" x2="0.7" y2="-1.5" width="0.12" layer="51"/>
+<smd name="1" x="-1.0245" y="0.95" dx="1.1801" dy="0.6092" layer="1"/>
+<smd name="2" x="-1.0245" y="-0.95" dx="1.1801" dy="0.6092" layer="1"/>
+<smd name="3" x="1.0245" y="0" dx="1.1801" dy="0.6092" layer="1"/>
+<text x="0" y="2.6436" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.2036" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="TO460P950X150-3" urn="urn:adsk.eagle:package:4087657/1" type="model">
@@ -8589,6 +8607,13 @@ INTERNATIONAL RECTIFIER, irg4bc15ud-s.pdf</description>
 &lt;p&gt;3-pin TO, DPAK package with 4.6 mm pitch, 9.5 mm span with body size 6.5 X 7.3 X 1.5 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="TO460P950X150-3"/>
+</packageinstances>
+</package3d>
+<package3d name="SOT95P240X110-3" urn="urn:adsk.eagle:package:4254587/1" type="model">
+<description>3-SOT23, 0.95 mm pitch, 2.4 mm span, 2.9 X 1.3 X 1.1 mm body
+&lt;p&gt;3-pin SOT23 package with 0.95 mm pitch, 2.4 mm span with body size 2.9 X 1.3 X 1.1 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SOT95P240X110-3"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -8740,6 +8765,36 @@ INTERNATIONAL RECTIFIER, irg4bc15ud-s.pdf</description>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:4087657/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BSS806N" prefix="Q">
+<gates>
+<gate name="G$1" symbol="N_MOSFET" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-23-3">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOT-23-3" package="SOT95P240X110-3">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:4254587/1"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -30458,7 +30513,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SUPPLY3" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="RoboJackets-Supplies" deviceset="+18.5V" device=""/>
 <part name="SUPPLY5" library="RoboJackets-Supplies" deviceset="VBATT" device=""/>
-<part name="Q10" library="RoboJackets-Discrete" deviceset="BSS127" device=""/>
 <part name="SUPPLY71" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY70" library="supply2" deviceset="+5V" device=""/>
 <part name="R7" library="rcl" deviceset="R-US_" device="R0603" value="160"/>
@@ -30566,6 +30620,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="R14" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1.62k 1%"/>
 <part name="SUPPLY26" library="RoboJackets-Supplies" deviceset="+18.5V" device=""/>
 <part name="U$6" library="RoboJackets-PowerICs" deviceset="MIC5235YM5" device="SOT-23-5" package3d_urn="urn:adsk.eagle:package:4254489/1"/>
+<part name="Q10" library="RoboJackets-Discrete" deviceset="BSS806N" device="SOT-23-3" package3d_urn="urn:adsk.eagle:package:4254587/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -32445,11 +32500,11 @@ current below the limit of the fuse. </text>
 <instance part="R50" gate="G$1" x="109.22" y="170.18" rot="R90"/>
 <instance part="SUPPLY72" gate="GND" x="104.14" y="132.08"/>
 <instance part="SUPPLY73" gate="+5V" x="109.22" y="180.34"/>
-<instance part="Q10" gate="G$1" x="55.88" y="144.78"/>
 <instance part="SUPPLY71" gate="GND" x="55.88" y="132.08"/>
 <instance part="SUPPLY70" gate="+5V" x="55.88" y="180.34"/>
 <instance part="J6" gate="G$1" x="96.52" y="154.94"/>
 <instance part="J5" gate="G$1" x="71.12" y="157.48" rot="R180"/>
+<instance part="Q10" gate="G$1" x="55.88" y="144.78"/>
 </instances>
 <busses>
 </busses>
@@ -32467,8 +32522,8 @@ current below the limit of the fuse. </text>
 </segment>
 <segment>
 <pinref part="SUPPLY71" gate="GND" pin="GND"/>
-<pinref part="Q10" gate="G$1" pin="S"/>
 <wire x1="55.88" y1="134.62" x2="55.88" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="Q10" gate="G$1" pin="S"/>
 </segment>
 </net>
 <net name="BB_RX" class="0">
@@ -32496,17 +32551,17 @@ current below the limit of the fuse. </text>
 </net>
 <net name="BB_TX" class="0">
 <segment>
-<pinref part="Q10" gate="G$1" pin="G"/>
 <wire x1="50.8" y1="142.24" x2="45.72" y2="142.24" width="0.1524" layer="91"/>
 <label x="45.72" y="142.24" size="1.778" layer="95" rot="MR0" xref="yes"/>
+<pinref part="Q10" gate="G$1" pin="G"/>
 </segment>
 </net>
 <net name="N$19" class="0">
 <segment>
 <wire x1="66.04" y1="154.94" x2="55.88" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="154.94" x2="55.88" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="Q10" gate="G$1" pin="D"/>
 <pinref part="J5" gate="G$1" pin="1"/>
+<pinref part="Q10" gate="G$1" pin="D"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -32768,8 +32823,8 @@ current below the limit of the fuse. </text>
 </sheet>
 </sheets>
 <errors>
-<approved hash="115,2,60.96,124.46,!DONE_LPF,,,,,"/>
 <approved hash="115,2,66.04,119.38,!FAULT_LPF,,,,,"/>
+<approved hash="115,2,60.96,124.46,!DONE_LPF,,,,,"/>
 </errors>
 </schematic>
 </drawing>
