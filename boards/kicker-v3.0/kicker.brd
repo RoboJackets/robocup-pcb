@@ -24,17 +24,17 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -48,9 +48,9 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
@@ -60,7 +60,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -223,7 +223,7 @@
 <wire x1="1.25" y1="77" x2="1.25" y2="73.25" width="0.2" layer="21"/>
 <wire x1="1.25" y1="73.25" x2="15" y2="73.25" width="0.2" layer="21"/>
 <wire x1="15" y1="73.25" x2="15" y2="77" width="0.2" layer="21"/>
-<text x="29.5" y="53.5" size="1.27" layer="21" font="vector" rot="SR180">AUTO DSCHG</text>
+<text x="29.5" y="53.5" size="1.27" layer="21" font="vector" ratio="15" rot="SR180">AUTO DSCHG</text>
 <wire x1="17" y1="48.5" x2="19" y2="48.5" width="0.2" layer="21"/>
 <wire x1="19" y1="48.5" x2="19" y2="51.75" width="0.2" layer="21"/>
 <wire x1="19" y1="51.75" x2="30.5" y2="51.75" width="0.2" layer="21"/>
@@ -288,15 +288,15 @@
 <wire x1="49" y1="55" x2="43.25" y2="49.25" width="0.2" layer="21"/>
 <wire x1="43.25" y1="49.25" x2="41.25" y2="51.25" width="0.2" layer="21"/>
 <wire x1="41.25" y1="51.25" x2="47" y2="57" width="0.2" layer="21"/>
-<text x="45.25" y="54.25" size="1.27" layer="21" font="vector" rot="SR225">BALL</text>
+<text x="45.25" y="54.25" size="1.27" layer="21" font="vector" ratio="15" rot="SR225">BALL</text>
 <text x="28" y="58" size="0.6096" layer="51">x</text>
 <text x="-69.5" y="23.5" size="3.81" layer="21" rot="SR270">Kicker v3.0</text>
 <text x="-61.5" y="-61" size="10" layer="21">-</text>
 <text x="57" y="-61" size="10" layer="21">-</text>
 <text x="54" y="47.5" size="0.6" layer="21" ratio="16" rot="SR180">MOSI</text>
 <text x="14.375" y="70.125" size="1.778" layer="21" font="vector">&gt;</text>
-<text x="-0.5" y="71.875" size="1.778" layer="21" font="vector" rot="R180">&gt;</text>
-<text x="50.5" y="18" size="1" layer="21" font="vector">PWR</text>
+<text x="-0.5" y="71.875" size="1.778" layer="22" font="vector" rot="R180">&gt;</text>
+<text x="50.5" y="18" size="1" layer="21" font="vector" ratio="15">PWR</text>
 <text x="70" y="45.5" size="1" layer="21" font="vector" rot="SR135">DBG</text>
 <text x="40.375" y="-30.25" size="1.778" layer="21" font="vector" rot="R90">RoboJackets 2018</text>
 </plain>
@@ -14670,7 +14670,7 @@ Your Eurocircuits Team
 <element name="J2" library="RoboJackets-Connectors" package="HFW8R-1ST" value="HFW8R-1ST" x="67" y="39" smashed="yes" rot="R90">
 <attribute name="DIGIKEY" value="609-1788-1-ND" x="67" y="39" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="HFW8R-1STE1LF" x="67" y="39" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="68.5" y="32.5" size="1" layer="25" ratio="15"/>
+<attribute name="NAME" x="68.5" y="32.5" size="1" layer="25" font="vector"/>
 </element>
 <element name="U1" library="RoboJackets-PowerICs" package="R-78E" value="R-78E5.0-0.5" x="41" y="18.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="46.5" y="12.5" size="1" layer="25" font="vector" rot="R270"/>
@@ -15998,6 +15998,12 @@ Your Eurocircuits Team
 <wire x1="67.5" y1="27.5" x2="67.5" y2="26" width="0.2" layer="1"/>
 <wire x1="67.5" y1="26" x2="68" y2="25.5" width="0.2" layer="1"/>
 <wire x1="68" y1="25.5" x2="68.6813" y2="25.5" width="0.2" layer="1"/>
+<via x="38.5" y="57" extent="1-16" drill="0.35"/>
+<via x="40" y="57" extent="1-16" drill="0.35"/>
+<via x="39.5" y="56" extent="1-16" drill="0.35"/>
+<via x="41" y="56" extent="1-16" drill="0.35"/>
+<via x="40.5" y="55" extent="1-16" drill="0.35"/>
+<via x="42" y="55" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="CHARGE">
 <contactref element="R7" pad="1"/>
@@ -17451,9 +17457,11 @@ Your Eurocircuits Team
 <vertex x="-46" y="52"/>
 <vertex x="-46" y="59"/>
 <vertex x="-35.5" y="69.5"/>
-<vertex x="-34" y="69.5"/>
-<vertex x="-34" y="76"/>
-<vertex x="-39.5" y="76"/>
+<vertex x="-35" y="69.5"/>
+<vertex x="-34" y="70.5"/>
+<vertex x="-34" y="75.5"/>
+<vertex x="-35" y="76.5"/>
+<vertex x="-39" y="76.5"/>
 <vertex x="-53" y="62.5"/>
 <vertex x="-53" y="55"/>
 <vertex x="-55" y="53"/>
