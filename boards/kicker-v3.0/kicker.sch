@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.1">
+<eagle version="9.1.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -30370,7 +30370,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SUPPLY19" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY11" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY18" library="supply2" deviceset="V+" device=""/>
-<part name="C20" library="rcl" deviceset="C-US" device="C0603" value="0.1uF 35V"/>
+<part name="C20" library="rcl" deviceset="C-US" device="C0603" value="0.1uF"/>
 <part name="R39" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="SUPPLY52" library="supply2" deviceset="+5V" device=""/>
 <part name="Q9" library="RoboJackets-Discrete" deviceset="IXF?94N30P3" device="T"/>
@@ -30560,7 +30560,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E10-25" package3d_urn="urn:adsk.eagle:package:23399/1" value="1000uF"/>
 <part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E10-25" package3d_urn="urn:adsk.eagle:package:23399/1" value="1000uF"/>
 <part name="C14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E10-25" package3d_urn="urn:adsk.eagle:package:23399/1" value="1000uF"/>
-<part name="R38" library="RoboJackets-Resistors" deviceset="PWR263S-35" device="TO-263AB" package3d_urn="urn:adsk.eagle:package:4103950/1" value="3.3k 35W"/>
+<part name="R38" library="RoboJackets-Resistors" deviceset="PWR263S-35" device="TO-263AB" package3d_urn="urn:adsk.eagle:package:4103950/1" value="1.5k 35W"/>
 <part name="J6" library="RoboJackets-Connectors" deviceset="3-PIN_2MM-*" device="H"/>
 <part name="J5" library="RoboJackets-Connectors" deviceset="2-PIN_2MM-*" device="H"/>
 <part name="SUPPLY42" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
@@ -30579,6 +30579,10 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SUPPLY59" library="RoboJackets-Supplies" deviceset="+15.0V" device=""/>
 <part name="SUPPLY4" library="RoboJackets-Supplies" deviceset="VBATT" device=""/>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY93" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
+<part name="R55" library="rcl" deviceset="R-US_" device="R0603" value="60"/>
+<part name="D20" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-YELLOW" value="YELLOW"/>
+<part name="C25" library="rcl" deviceset="C-US" device="C0603" value="0.1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -31362,7 +31366,12 @@ current below the limit of the fuse. </text>
 <wire x1="180.34" y1="43.18" x2="215.9" y2="43.18" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="215.9" y1="43.18" x2="215.9" y2="121.92" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="215.9" y1="121.92" x2="180.34" y2="121.92" width="0.1524" layer="97" style="shortdash"/>
-<text x="185.42" y="116.84" size="1.27" layer="97">HV Auto Discharge</text>
+<text x="185.42" y="116.84" size="1.27" layer="97">Ball Sense</text>
+<wire x1="220.98" y1="121.92" x2="220.98" y2="43.18" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="220.98" y1="43.18" x2="256.54" y2="43.18" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="256.54" y1="43.18" x2="256.54" y2="121.92" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="256.54" y1="121.92" x2="220.98" y2="121.92" width="0.1524" layer="97" style="shortdash"/>
+<text x="226.06" y="116.84" size="1.27" layer="97">Mode</text>
 </plain>
 <instances>
 <instance part="D6" gate="G$1" x="93.98" y="167.64"/>
@@ -31417,6 +31426,9 @@ current below the limit of the fuse. </text>
 <instance part="R31" gate="G$1" x="195.58" y="93.98" rot="R90"/>
 <instance part="D12" gate="G$1" x="195.58" y="76.2"/>
 <instance part="SUPPLY28" gate="G$1" x="20.32" y="187.96"/>
+<instance part="SUPPLY93" gate="+5V" x="236.22" y="104.14"/>
+<instance part="R55" gate="G$1" x="236.22" y="93.98" rot="R90"/>
+<instance part="D20" gate="G$1" x="236.22" y="76.2"/>
 </instances>
 <busses>
 </busses>
@@ -31522,6 +31534,11 @@ current below the limit of the fuse. </text>
 <wire x1="195.58" y1="101.6" x2="195.58" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="SUPPLY42" gate="+5V" pin="+5V"/>
 <pinref part="R31" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<wire x1="236.22" y1="101.6" x2="236.22" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="SUPPLY93" gate="+5V" pin="+5V"/>
+<pinref part="R55" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -31719,6 +31736,20 @@ current below the limit of the fuse. </text>
 <pinref part="SUPPLY28" gate="G$1" pin="+15.0V"/>
 </segment>
 </net>
+<net name="N$17" class="0">
+<segment>
+<wire x1="236.22" y1="88.9" x2="236.22" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="R55" gate="G$1" pin="1"/>
+<pinref part="D20" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="MCU_MODE" class="0">
+<segment>
+<wire x1="236.22" y1="73.66" x2="236.22" y2="66.04" width="0.1524" layer="91" style="longdash"/>
+<label x="236.22" y="66.04" size="1.27" layer="95" rot="R270" xref="yes"/>
+<pinref part="D20" gate="G$1" pin="K"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -31896,7 +31927,7 @@ current below the limit of the fuse. </text>
 </instance>
 <instance part="SUPPLY69" gate="1" x="231.14" y="162.56"/>
 <instance part="SUPPLY67" gate="1" x="218.44" y="193.04"/>
-<instance part="C20" gate="G$1" x="96.52" y="38.1"/>
+<instance part="C20" gate="G$1" x="83.82" y="22.86"/>
 <instance part="R39" gate="G$1" x="45.72" y="27.94" rot="R180"/>
 <instance part="SUPPLY52" gate="+5V" x="33.02" y="22.86" rot="R180"/>
 <instance part="Q9" gate="G$1" x="231.14" y="139.7"/>
@@ -31935,7 +31966,7 @@ current below the limit of the fuse. </text>
 </instance>
 <instance part="U4" gate="AT32A" x="63.5" y="73.66" rot="R180"/>
 <instance part="SUPPLY54" gate="GND" x="96.52" y="55.88" rot="R180"/>
-<instance part="SUPPLY55" gate="+5V" x="96.52" y="27.94" rot="R180"/>
+<instance part="SUPPLY55" gate="+5V" x="109.22" y="20.32"/>
 <instance part="D18" gate="VS-5EWH06FN-M3" x="218.44" y="182.88" smashed="yes" rot="R90">
 <attribute name="NAME" x="215.9" y="180.34" size="1.778" layer="95" rot="R90"/>
 </instance>
@@ -31957,6 +31988,7 @@ current below the limit of the fuse. </text>
 <instance part="SUPPLY65" gate="GND" x="198.12" y="149.86"/>
 <instance part="SUPPLY66" gate="GND" x="198.12" y="119.38"/>
 <instance part="SUPPLY59" gate="G$1" x="142.24" y="193.04"/>
+<instance part="C25" gate="G$1" x="96.52" y="22.86"/>
 </instances>
 <busses>
 </busses>
@@ -32063,12 +32095,17 @@ current below the limit of the fuse. </text>
 <wire x1="91.44" y1="45.72" x2="96.52" y2="45.72" width="0.1524" layer="91"/>
 <junction x="96.52" y="45.72"/>
 <pinref part="SUPPLY54" gate="GND" pin="GND"/>
-<wire x1="96.52" y1="43.18" x2="96.52" y2="40.64" width="0.1524" layer="91"/>
-<junction x="96.52" y="43.18"/>
-<pinref part="C20" gate="G$1" pin="1"/>
 <pinref part="U4" gate="AT32A" pin="GND4"/>
 <wire x1="91.44" y1="50.8" x2="96.52" y2="50.8" width="0.1524" layer="91"/>
 <junction x="96.52" y="50.8"/>
+<pinref part="C20" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="25.4" x2="83.82" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="27.94" x2="96.52" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="C25" gate="G$1" pin="1"/>
+<wire x1="96.52" y1="27.94" x2="96.52" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="27.94" x2="96.52" y2="43.18" width="0.1524" layer="91"/>
+<junction x="96.52" y="27.94"/>
+<junction x="96.52" y="43.18"/>
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="GND"/>
@@ -32140,8 +32177,14 @@ current below the limit of the fuse. </text>
 </segment>
 <segment>
 <pinref part="C20" gate="G$1" pin="2"/>
-<wire x1="96.52" y1="33.02" x2="96.52" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="17.78" x2="83.82" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="15.24" x2="96.52" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="SUPPLY55" gate="+5V" pin="+5V"/>
+<wire x1="96.52" y1="15.24" x2="109.22" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="15.24" x2="109.22" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="C25" gate="G$1" pin="2"/>
+<wire x1="96.52" y1="15.24" x2="96.52" y2="17.78" width="0.1524" layer="91"/>
+<junction x="96.52" y="15.24"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -32305,13 +32348,6 @@ current below the limit of the fuse. </text>
 <label x="93.98" y="96.52" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="BB_RX" class="0">
-<segment>
-<pinref part="U4" gate="AT32A" pin="PD3(INT1)"/>
-<wire x1="91.44" y1="93.98" x2="93.98" y2="93.98" width="0.1524" layer="91"/>
-<label x="93.98" y="93.98" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="MODE_SELECT" class="0">
 <segment>
 <pinref part="U4" gate="AT32A" pin="PC0(SCL)"/>
@@ -32338,9 +32374,9 @@ current below the limit of the fuse. </text>
 <wire x1="223.52" y1="50.8" x2="220.98" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U4" gate="AT32A" pin="PA0(ADC0)"/>
-<wire x1="35.56" y1="63.5" x2="33.02" y2="63.5" width="0.1524" layer="91"/>
-<label x="33.02" y="63.5" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<pinref part="U4" gate="AT32A" pin="PA6(ADC6)"/>
+<wire x1="35.56" y1="78.74" x2="33.02" y2="78.74" width="0.1524" layer="91"/>
+<label x="33.02" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -32383,13 +32419,6 @@ current below the limit of the fuse. </text>
 <pinref part="U4" gate="AT32A" pin="PD2(INT00"/>
 <wire x1="91.44" y1="91.44" x2="93.98" y2="91.44" width="0.1524" layer="91"/>
 <label x="93.98" y="91.44" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="MCU_INIT_OK" class="0">
-<segment>
-<pinref part="U4" gate="AT32A" pin="PD5(OC1A)"/>
-<wire x1="91.44" y1="99.06" x2="93.98" y2="99.06" width="0.1524" layer="91"/>
-<label x="93.98" y="99.06" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="MCU_ERR" class="0">
@@ -32455,6 +32484,27 @@ current below the limit of the fuse. </text>
 <wire x1="121.92" y1="185.42" x2="142.24" y2="185.42" width="0.1524" layer="91"/>
 <junction x="142.24" y="185.42"/>
 <pinref part="SUPPLY59" gate="G$1" pin="+15.0V"/>
+</segment>
+</net>
+<net name="MCU_MODE" class="0">
+<segment>
+<pinref part="U4" gate="AT32A" pin="PD5(OC1A)"/>
+<wire x1="91.44" y1="99.06" x2="93.98" y2="99.06" width="0.1524" layer="91"/>
+<label x="93.98" y="99.06" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="MCU_INIT_OK" class="0">
+<segment>
+<pinref part="U4" gate="AT32A" pin="PD3(INT1)"/>
+<wire x1="91.44" y1="93.98" x2="93.98" y2="93.98" width="0.1524" layer="91"/>
+<label x="93.98" y="93.98" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="BB_RX" class="0">
+<segment>
+<pinref part="U4" gate="AT32A" pin="PA0(ADC0)"/>
+<wire x1="35.56" y1="63.5" x2="33.02" y2="63.5" width="0.1524" layer="91"/>
+<label x="33.02" y="63.5" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -32794,6 +32844,16 @@ current below the limit of the fuse. </text>
 <label x="205.74" y="76.2" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
+</nets>
+</sheet>
+<sheet>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
 </nets>
 </sheet>
 </sheets>
