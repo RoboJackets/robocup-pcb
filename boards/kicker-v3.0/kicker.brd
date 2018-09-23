@@ -14367,13 +14367,14 @@ In this library you will find logos and images specific to RoboJackets. The part
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="eC_2Layer_PClass6_BaseCopperO35 *">
+<designrules name="eC_2Layer_PClass6_BaseCopperO18_eCDefault">
 <description language="de">
+
 
 &lt;p&gt;
 &lt;b&gt;Eurocircuits-EAGLE design rules&lt;/b&gt;&lt;br&gt;
 &lt;br&gt;
-Setup for &lt;b&gt;2-layer PatternClass6 BaseCopperO35&lt;/b&gt;
+Setup for &lt;b&gt;2-layer PatternClass6 BaseCopperO18 eCDefault&lt;/b&gt;
 &lt;p&gt;
  The option &lt;b&gt;Sizes-Minimum Drill&lt;/b&gt; is set to 0.35mm. This minimum drill endsize can be set lower if needed. Values below 0.25mm will result in a higher DrillClassification. For details see the Eurocircuits Classification overview.
 &lt;p&gt;
@@ -14393,10 +14394,11 @@ Your Eurocircuits Team
 </description>
 <description language="en">
 
+
 &lt;p&gt;
 &lt;b&gt;Eurocircuits-EAGLE design rules&lt;/b&gt;&lt;br&gt;
 &lt;br&gt;
-Setup for &lt;b&gt;2-layer PatternClass6 BaseCopperO35&lt;/b&gt;
+Setup for &lt;b&gt;2-layer PatternClass6 BaseCopperO18 eCDefault&lt;/b&gt;
 &lt;p&gt;
  The option &lt;b&gt;Sizes-Minimum Drill&lt;/b&gt; is set to 0.35mm. This minimum drill endsize can be set lower if needed. Values below 0.25mm will result in a higher DrillClassification. For details see the Eurocircuits Classification overview.
 &lt;p&gt;
@@ -14415,14 +14417,14 @@ If you need lower minimum values, please use a different Eurocircuits-EAGLE desi
 Your Eurocircuits Team
 </description>
 <param name="layerSetup" value="(1*16)"/>
-<param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
+<param name="mtCopper" value="0.018mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.018mm"/>
 <param name="mtIsolate" value="1.55mm 0.71mm 0.36mm 0.2mm 0.2mm 0.2mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
-<param name="mdWireWire" value="0.175mm"/>
-<param name="mdWirePad" value="0.175mm"/>
-<param name="mdWireVia" value="0.175mm"/>
-<param name="mdPadPad" value="0.175mm"/>
-<param name="mdPadVia" value="0.175mm"/>
-<param name="mdViaVia" value="0.175mm"/>
+<param name="mdWireWire" value="0.15mm"/>
+<param name="mdWirePad" value="0.15mm"/>
+<param name="mdWireVia" value="0.15mm"/>
+<param name="mdPadPad" value="0.15mm"/>
+<param name="mdPadVia" value="0.15mm"/>
+<param name="mdViaVia" value="0.15mm"/>
 <param name="mdSmdPad" value="0mil"/>
 <param name="mdSmdVia" value="0mil"/>
 <param name="mdSmdSmd" value="0mil"/>
@@ -14472,10 +14474,10 @@ Your Eurocircuits Team
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
 <param name="slThermalIsolate" value="0.2mm"/>
-<param name="slThermalsForVias" value="0"/>
+<param name="slThermalsForVias" value="1"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
-<param name="checkAngle" value="1"/>
+<param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
 <param name="checkStop" value="0"/>
