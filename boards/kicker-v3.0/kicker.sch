@@ -30619,6 +30619,13 @@ current below the limit of the fuse. </text>
 <wire x1="256.54" y1="200.66" x2="256.54" y2="129.54" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="256.54" y1="129.54" x2="134.62" y2="129.54" width="0.1524" layer="97" style="shortdash"/>
 <text x="137.16" y="195.58" size="1.778" layer="97">15V Regulator</text>
+<text x="83.82" y="162.56" size="1.778" layer="97">This PFET configuration is 
+typical of a reverse polarity 
+protection circuit. It isn't 
+broken. There are a few 
+blogs/videos on this just 
+search "PFET reverse 
+polarity protection".</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
