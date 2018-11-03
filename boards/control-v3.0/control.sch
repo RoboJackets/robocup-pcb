@@ -36992,7 +36992,7 @@ no power when no battery</text>
 <text x="121.92" y="98.044" size="1.778" layer="97">Zener diode added on 5v so no
 back current from MBED when no
 battery power</text>
-<text x="99.06" y="73.66" size="1.27" layer="97">Not connected on purpose</text>
+<text x="101.6" y="73.66" size="1.27" layer="97">Not connected on purpose</text>
 </plain>
 <instances>
 <instance part="FRAME4" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -37702,7 +37702,7 @@ battery power</text>
 <pinref part="R26" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="SW" class="0">
 <segment>
 <pinref part="U10" gate="G$1" pin="SW"/>
 <wire x1="96.52" y1="71.12" x2="99.06" y2="71.12" width="0.1524" layer="91"/>
