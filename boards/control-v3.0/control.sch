@@ -33811,7 +33811,7 @@ connected like that?</text>
 <wire x1="134.62" y1="55.88" x2="137.16" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="VDD-LED" class="0">
 <segment>
 <pinref part="R10" gate="G$1" pin="2"/>
 <wire x1="167.64" y1="144.78" x2="165.1" y2="144.78" width="0.1524" layer="91"/>
@@ -37685,14 +37685,14 @@ battery power</text>
 <pinref part="R27" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="EN" class="0">
 <segment>
 <pinref part="U10" gate="G$1" pin="EN"/>
 <wire x1="66.04" y1="68.58" x2="60.96" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="R28" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="FB" class="0">
 <segment>
 <pinref part="U10" gate="G$1" pin="FB"/>
 <pinref part="R25" gate="G$1" pin="1"/>
