@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -67,6 +67,8 @@
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -246,6 +248,19 @@ In this library you will find uncommon capacitors. If you are looking for a comm
 <smd name="-" x="-5.5" y="0" dx="13" dy="5" layer="16" rot="R180"/>
 <rectangle x1="-12.5" y1="-43" x2="12.5" y2="-3" layer="51" rot="R180"/>
 </package>
+<package name="CAP_PAN_10X12.5">
+<pad name="1" x="-5.0038" y="0" drill="0.9144" diameter="1.4224" shape="square"/>
+<pad name="2" x="0" y="0" drill="0.9144" diameter="1.4224" rot="R180"/>
+<wire x1="-9.271" y1="0" x2="-8.001" y2="0" width="0.1524" layer="21"/>
+<wire x1="-8.636" y1="0.635" x2="-8.636" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="2.8702" y1="0" x2="-7.874" y2="0" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-7.874" y1="0" x2="2.8702" y2="0" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-9.271" y1="0" x2="-8.001" y2="0" width="0.1524" layer="51"/>
+<wire x1="-8.636" y1="0.635" x2="-8.636" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="2.7432" y1="0" x2="-7.747" y2="0" width="0" layer="51" curve="-180"/>
+<wire x1="-7.747" y1="0" x2="2.7432" y2="0" width="0" layer="51" curve="-180"/>
+<text x="-5.7658" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CAP_POL">
@@ -291,6 +306,18 @@ In this library you will find uncommon capacitors. If you are looking for a comm
 <rectangle x1="-1.872" y1="0.287" x2="-1.745" y2="1.176" layer="94"/>
 <pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
+<symbol name="CAPH">
+<pin name="22" x="7.62" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="11" x="0" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<wire x1="3.4798" y1="-1.905" x2="3.4798" y2="0" width="0.2032" layer="94"/>
+<wire x1="3.4798" y1="0" x2="3.4798" y2="1.905" width="0.2032" layer="94"/>
+<wire x1="4.1148" y1="-1.905" x2="4.1148" y2="0" width="0.2032" layer="94"/>
+<wire x1="4.1148" y1="0" x2="4.1148" y2="1.905" width="0.2032" layer="94"/>
+<wire x1="4.1148" y1="0" x2="5.08" y2="0" width="0.2032" layer="94"/>
+<wire x1="2.54" y1="0" x2="3.4798" y2="0" width="0.2032" layer="94"/>
+<text x="-5.1562" y="-5.5372" size="3.4798" layer="96" ratio="10" rot="SR0">&gt;Value</text>
+<text x="-4.0894" y="2.0828" size="3.4798" layer="95" ratio="10" rot="SR0">&gt;Name</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -385,6 +412,25 @@ In this library you will find uncommon capacitors. If you are looking for a comm
 <technology name="">
 <attribute name="DIGIKEY" value="493-9940-1-ND" constant="no"/>
 <attribute name="MPN" value="UWZ1H221MCL1GS" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ECA-1HM221B" prefix="C">
+<gates>
+<gate name="A" symbol="CAPH" x="0" y="0" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="CAP_PAN_10X12.5">
+<connects>
+<connect gate="A" pin="11" pad="1"/>
+<connect gate="A" pin="22" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER_PART_NUMBER" value="ECA1HM221B" constant="no"/>
+<attribute name="VENDOR" value="Panasonic" constant="no"/>
 </technology>
 </technologies>
 </device>

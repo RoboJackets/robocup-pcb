@@ -21417,49 +21417,49 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 In this library you will find uncommon capacitors. If you are looking for a common package, use the default &lt;b&gt;rcl &lt;/b&gt;library provided with EAGLE instead of looking here.
 &lt;/p&gt;</description>
 <packages>
-<package name="UWZ1H221MCL1GS">
-<smd name="1" x="0" y="4.05" dx="3.81" dy="1.9304" layer="1" rot="R90"/>
-<smd name="2" x="0" y="-4.05" dx="3.81" dy="1.9304" layer="1" rot="R90"/>
-<rectangle x1="-0.55" y1="2.25" x2="0.55" y2="5.65" layer="51"/>
-<rectangle x1="-0.55" y1="-5.65" x2="0.55" y2="-2.25" layer="51"/>
-<wire x1="5.25" y1="-5.25" x2="-5.25" y2="-5.25" width="0.2" layer="21"/>
-<wire x1="-5.25" y1="-5.25" x2="-5.25" y2="3.25" width="0.2" layer="21"/>
-<wire x1="-5.25" y1="3.25" x2="-3.25" y2="5.25" width="0.2" layer="21"/>
-<wire x1="-3.25" y1="5.25" x2="3.25" y2="5.25" width="0.2" layer="21"/>
-<wire x1="3.25" y1="5.25" x2="5.25" y2="3.25" width="0.2" layer="21"/>
-<wire x1="5.25" y1="3.25" x2="5.25" y2="-5.25" width="0.2" layer="21"/>
-<text x="-2.25" y="-7.25" size="1" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<package name="CAP_PAN_10X12.5">
+<pad name="1" x="-5.0038" y="0" drill="0.9144" diameter="1.4224" shape="square"/>
+<pad name="2" x="0" y="0" drill="0.9144" diameter="1.4224" rot="R180"/>
+<wire x1="-9.271" y1="0" x2="-8.001" y2="0" width="0.1524" layer="21"/>
+<wire x1="-8.636" y1="0.635" x2="-8.636" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="2.8702" y1="0" x2="-7.874" y2="0" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-7.874" y1="0" x2="2.8702" y2="0" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-9.271" y1="0" x2="-8.001" y2="0" width="0.1524" layer="51"/>
+<wire x1="-8.636" y1="0.635" x2="-8.636" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="2.7432" y1="0" x2="-7.747" y2="0" width="0" layer="51" curve="-180"/>
+<wire x1="-7.747" y1="0" x2="2.7432" y2="0" width="0" layer="51" curve="-180"/>
+<text x="-5.7658" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 </package>
 </packages>
 <symbols>
-<symbol name="C_POL">
-<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.016" x2="0" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="-1" x2="2.4892" y2="-1.8542" width="0.254" layer="94" curve="-37.878202"/>
-<wire x1="-2.4669" y1="-1.8504" x2="0" y2="-1.0161" width="0.254" layer="94" curve="-37.376341"/>
-<text x="1.016" y="0.635" size="1.778" layer="95">&gt;NAME</text>
-<text x="1.016" y="-4.191" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="-2.253" y1="0.668" x2="-1.364" y2="0.795" layer="94"/>
-<rectangle x1="-1.872" y1="0.287" x2="-1.745" y2="1.176" layer="94"/>
-<pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
-<pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<symbol name="CAPH">
+<pin name="22" x="7.62" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="11" x="0" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<wire x1="3.4798" y1="-1.905" x2="3.4798" y2="0" width="0.2032" layer="94"/>
+<wire x1="3.4798" y1="0" x2="3.4798" y2="1.905" width="0.2032" layer="94"/>
+<wire x1="4.1148" y1="-1.905" x2="4.1148" y2="0" width="0.2032" layer="94"/>
+<wire x1="4.1148" y1="0" x2="4.1148" y2="1.905" width="0.2032" layer="94"/>
+<wire x1="4.1148" y1="0" x2="5.08" y2="0" width="0.2032" layer="94"/>
+<wire x1="2.54" y1="0" x2="3.4798" y2="0" width="0.2032" layer="94"/>
+<text x="-5.1562" y="-5.5372" size="3.4798" layer="96" ratio="10" rot="SR0">&gt;Value</text>
+<text x="-4.0894" y="2.0828" size="3.4798" layer="95" ratio="10" rot="SR0">&gt;Name</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="UWZ1H221MCL1GS" prefix="C">
+<deviceset name="ECA-1HM221B" prefix="C">
 <gates>
-<gate name="G$1" symbol="C_POL" x="0" y="0"/>
+<gate name="A" symbol="CAPH" x="0" y="0" swaplevel="1"/>
 </gates>
 <devices>
-<device name="" package="UWZ1H221MCL1GS">
+<device name="" package="CAP_PAN_10X12.5">
 <connects>
-<connect gate="G$1" pin="+" pad="1"/>
-<connect gate="G$1" pin="-" pad="2"/>
+<connect gate="A" pin="11" pad="1"/>
+<connect gate="A" pin="22" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DIGIKEY" value="493-9940-1-ND" constant="no"/>
-<attribute name="MPN" value="UWZ1H221MCL1GS" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="ECA1HM221B" constant="no"/>
+<attribute name="VENDOR" value="Panasonic" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -31709,23 +31709,50 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SUPPLY1" library="supply2" deviceset="+5V" device=""/>
 <part name="J1" library="RoboJackets-Connectors" deviceset="MKS-1658" device=""/>
 <part name="J2" library="RoboJackets-Connectors" deviceset="4-PIN_2MM-*" device="H"/>
-<part name="C11" library="RoboJackets-Capacitors" deviceset="UWZ1H221MCL1GS" device=""/>
-<part name="C12" library="RoboJackets-Capacitors" deviceset="UWZ1H221MCL1GS" device=""/>
 <part name="U2" library="RoboJackets-ICs" deviceset="INA240PWR" device=""/>
 <part name="U3" library="RoboJackets-ICs" deviceset="INA240PWR" device=""/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="ERJ-MFBAF10MX"/>
-<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="ERJ-MFBAF10MX"/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="1uF"/>
 <part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="1uF"/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="ERJ-MFBAF10MX"/>
 <part name="U4" library="RoboJackets-ICs" deviceset="INA240PWR" device=""/>
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="1uF"/>
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0.01">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="DIGIKEY" value="408-1544-1-ND"/>
+<attribute name="MPN" value="KRL1220E-M-R010-F-T5"/>
+</part>
+<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0.01">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="DIGIKEY" value="408-1544-1-ND"/>
+<attribute name="MPN" value="KRL1220E-M-R010-F-T5"/>
+</part>
+<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0.01">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="DIGIKEY" value="408-1544-1-ND"/>
+<attribute name="MPN" value="KRL1220E-M-R010-F-T5"/>
+</part>
+<part name="C14" library="RoboJackets-Capacitors" deviceset="ECA-1HM221B" device=""/>
+<part name="C15" library="RoboJackets-Capacitors" deviceset="ECA-1HM221B" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -31882,14 +31909,6 @@ ripple current from motors</text>
 <attribute name="NAME" x="45.72" y="40.64" size="1.778" layer="95" font="vector" rot="R180" align="top-left"/>
 <attribute name="VALUE" x="45.72" y="58.42" size="1.778" layer="96" font="vector" rot="R180"/>
 </instance>
-<instance part="C11" gate="G$1" x="114.3" y="22.86" smashed="yes" rot="MR0">
-<attribute name="NAME" x="113.284" y="23.495" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="113.284" y="18.669" size="1.778" layer="96" rot="MR0"/>
-</instance>
-<instance part="C12" gate="G$1" x="124.46" y="22.86" smashed="yes">
-<attribute name="NAME" x="125.476" y="23.495" size="1.778" layer="95"/>
-<attribute name="VALUE" x="125.476" y="18.669" size="1.778" layer="96"/>
-</instance>
 <instance part="U2" gate="A" x="160.02" y="81.28" smashed="yes">
 <attribute name="NAME" x="147.6756" y="95.4786" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 <attribute name="VALUE" x="147.0406" y="64.9986" size="2.0828" layer="96" ratio="6" rot="SR0"/>
@@ -31903,14 +31922,6 @@ ripple current from motors</text>
 </instance>
 <instance part="GND14" gate="1" x="180.34" y="66.04" smashed="yes">
 <attribute name="VALUE" x="177.8" y="63.5" size="1.778" layer="96"/>
-</instance>
-<instance part="R2" gate="G$1" x="152.4" y="177.8" smashed="yes">
-<attribute name="NAME" x="148.59" y="179.2986" size="1.778" layer="95"/>
-<attribute name="VALUE" x="148.59" y="174.498" size="1.778" layer="96"/>
-</instance>
-<instance part="R3" gate="G$1" x="200.66" y="162.56" smashed="yes">
-<attribute name="NAME" x="196.85" y="164.0586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="196.85" y="159.258" size="1.778" layer="96"/>
 </instance>
 <instance part="C4" gate="G$1" x="60.96" y="68.58" smashed="yes">
 <attribute name="NAME" x="61.976" y="69.215" size="1.778" layer="95"/>
@@ -31926,10 +31937,6 @@ ripple current from motors</text>
 <instance part="GND16" gate="1" x="134.62" y="58.42" smashed="yes">
 <attribute name="VALUE" x="132.08" y="55.88" size="1.778" layer="96"/>
 </instance>
-<instance part="R4" gate="G$1" x="251.46" y="147.32" smashed="yes">
-<attribute name="NAME" x="247.65" y="148.8186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="247.65" y="144.018" size="1.778" layer="96"/>
-</instance>
 <instance part="U4" gate="A" x="233.68" y="81.28" smashed="yes">
 <attribute name="NAME" x="221.3356" y="95.4786" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 <attribute name="VALUE" x="220.7006" y="64.9986" size="2.0828" layer="96" ratio="6" rot="SR0"/>
@@ -31943,6 +31950,32 @@ ripple current from motors</text>
 </instance>
 <instance part="GND18" gate="1" x="205.74" y="58.42" smashed="yes">
 <attribute name="VALUE" x="203.2" y="55.88" size="1.778" layer="96"/>
+</instance>
+<instance part="R2" gate="G$1" x="152.4" y="177.8" smashed="yes">
+<attribute name="NAME" x="148.59" y="179.2986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="148.59" y="174.498" size="1.778" layer="96"/>
+<attribute name="DIGIKEY" x="152.4" y="177.8" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="152.4" y="177.8" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R3" gate="G$1" x="200.66" y="162.56" smashed="yes">
+<attribute name="NAME" x="196.85" y="164.0586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="196.85" y="159.258" size="1.778" layer="96"/>
+<attribute name="DIGIKEY" x="200.66" y="162.56" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="200.66" y="162.56" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R4" gate="G$1" x="251.46" y="147.32" smashed="yes">
+<attribute name="NAME" x="247.65" y="148.8186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="247.65" y="144.018" size="1.778" layer="96"/>
+<attribute name="MPN" x="251.46" y="147.32" size="1.778" layer="96" display="off"/>
+<attribute name="DIGIKEY" x="251.46" y="147.32" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C14" gate="A" x="114.3" y="25.4" smashed="yes" rot="R270">
+<attribute name="VALUE" x="111.3028" y="20.3962" size="2.032" layer="96" ratio="10" rot="SR180"/>
+<attribute name="NAME" x="111.3028" y="26.9494" size="2.032" layer="95" ratio="10" rot="SR180"/>
+</instance>
+<instance part="C15" gate="A" x="124.46" y="25.4" smashed="yes" rot="R270">
+<attribute name="VALUE" x="144.3228" y="20.3962" size="2.032" layer="96" ratio="10" rot="SR180"/>
+<attribute name="NAME" x="126.5428" y="24.4094" size="2.032" layer="95" ratio="10" rot="SR0"/>
 </instance>
 </instances>
 <busses>
@@ -32026,9 +32059,9 @@ ripple current from motors</text>
 <pinref part="J1" gate="G$1" pin="7"/>
 </segment>
 <segment>
-<pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="205.74" y1="162.56" x2="210.82" y2="162.56" width="0.1524" layer="91"/>
 <label x="210.82" y="162.56" size="1.27" layer="95" xref="yes"/>
+<pinref part="R3" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="U3" gate="A" pin="IN-"/>
@@ -32066,9 +32099,9 @@ ripple current from motors</text>
 <pinref part="J1" gate="G$1" pin="8"/>
 </segment>
 <segment>
-<pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="157.48" y1="177.8" x2="162.56" y2="177.8" width="0.1524" layer="91"/>
 <label x="162.56" y="177.8" size="1.27" layer="95" xref="yes"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="U2" gate="A" pin="IN-"/>
@@ -32106,9 +32139,9 @@ ripple current from motors</text>
 <pinref part="J1" gate="G$1" pin="6"/>
 </segment>
 <segment>
-<pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="256.54" y1="147.32" x2="261.62" y2="147.32" width="0.1524" layer="91"/>
 <label x="261.62" y="147.32" size="1.27" layer="95" xref="yes"/>
+<pinref part="R4" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="U4" gate="A" pin="IN-"/>
@@ -32224,11 +32257,11 @@ ripple current from motors</text>
 <segment>
 <wire x1="119.38" y1="17.78" x2="119.38" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="GND11" gate="1" pin="GND"/>
-<pinref part="C11" gate="G$1" pin="-"/>
 <wire x1="114.3" y1="17.78" x2="119.38" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="C12" gate="G$1" pin="-"/>
 <wire x1="124.46" y1="17.78" x2="119.38" y2="17.78" width="0.1524" layer="91"/>
 <junction x="119.38" y="17.78"/>
+<pinref part="C15" gate="A" pin="22"/>
+<pinref part="C14" gate="A" pin="22"/>
 </segment>
 <segment>
 <wire x1="86.36" y1="137.16" x2="223.52" y2="137.16" width="0.1524" layer="91"/>
@@ -32326,11 +32359,11 @@ ripple current from motors</text>
 <segment>
 <wire x1="119.38" y1="27.94" x2="119.38" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="SUPPLY10" gate="G$1" pin="+18.5V"/>
-<pinref part="C11" gate="G$1" pin="+"/>
 <wire x1="119.38" y1="25.4" x2="114.3" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="C12" gate="G$1" pin="+"/>
 <wire x1="119.38" y1="25.4" x2="124.46" y2="25.4" width="0.1524" layer="91"/>
 <junction x="119.38" y="25.4"/>
+<pinref part="C15" gate="A" pin="11"/>
+<pinref part="C14" gate="A" pin="11"/>
 </segment>
 <segment>
 <pinref part="Q1" gate="G$1" pin="D"/>
@@ -32515,10 +32548,10 @@ ripple current from motors</text>
 <pinref part="U1" gate="G$1" pin="SH_A"/>
 <pinref part="C6" gate="G$1" pin="2"/>
 <wire x1="129.54" y1="177.8" x2="147.32" y2="177.8" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="147.32" y1="177.8" x2="147.32" y2="185.42" width="0.1524" layer="91"/>
-<junction x="147.32" y="177.8"/>
 <label x="147.32" y="185.42" size="1.27" layer="95" rot="R90" xref="yes"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<junction x="147.32" y="177.8"/>
 </segment>
 <segment>
 <pinref part="U2" gate="A" pin="IN+"/>
@@ -32541,10 +32574,10 @@ ripple current from motors</text>
 <junction x="175.26" y="162.56"/>
 <pinref part="U1" gate="G$1" pin="SH_B"/>
 <wire x1="175.26" y1="162.56" x2="195.58" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="195.58" y1="162.56" x2="195.58" y2="170.18" width="0.1524" layer="91"/>
-<junction x="195.58" y="162.56"/>
 <label x="195.58" y="170.18" size="1.27" layer="95" rot="R90" xref="yes"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<junction x="195.58" y="162.56"/>
 </segment>
 <segment>
 <pinref part="U3" gate="A" pin="IN+"/>
@@ -32566,11 +32599,11 @@ ripple current from motors</text>
 <junction x="223.52" y="147.32"/>
 <pinref part="C8" gate="G$1" pin="2"/>
 <pinref part="U1" gate="G$1" pin="SH_C"/>
-<pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="223.52" y1="147.32" x2="246.38" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="246.38" y1="147.32" x2="246.38" y2="154.94" width="0.1524" layer="91"/>
-<junction x="246.38" y="147.32"/>
 <label x="246.38" y="154.94" size="1.27" layer="95" rot="R90" xref="yes"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<junction x="246.38" y="147.32"/>
 </segment>
 <segment>
 <pinref part="U4" gate="A" pin="IN+"/>
@@ -32655,7 +32688,7 @@ ripple current from motors</text>
 <part name="SUPPLY10" library="RoboJackets-Supplies" deviceset="+18.5V" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
-<part name="C11" library="RoboJackets-Capacitors" deviceset="UWZ1H221MCL1GS" device=""/>
+<part name="C4" library="RoboJackets-Capacitors" deviceset="ECA-1HM221B" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -32801,9 +32834,9 @@ ripple current from motors</text>
 <instance part="SUPPLY1" gate="P" x="228.6" y="91.44" smashed="yes" rot="R90">
 <attribute name="VALUE" x="225.425" y="89.535" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C11" gate="G$1" x="218.44" y="144.78" smashed="yes">
-<attribute name="NAME" x="219.456" y="145.415" size="1.778" layer="95"/>
-<attribute name="VALUE" x="219.456" y="140.589" size="1.778" layer="96"/>
+<instance part="C4" gate="A" x="218.44" y="147.32" smashed="yes" rot="R270">
+<attribute name="VALUE" x="233.2228" y="142.3162" size="1.27" layer="96" ratio="10" rot="SR180"/>
+<attribute name="NAME" x="223.0628" y="146.3294" size="2.032" layer="95" ratio="10" rot="SR180"/>
 </instance>
 </instances>
 <busses>
@@ -33142,7 +33175,7 @@ ripple current from motors</text>
 <segment>
 <wire x1="218.44" y1="139.7" x2="218.44" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="GND11" gate="1" pin="GND"/>
-<pinref part="C11" gate="G$1" pin="-"/>
+<pinref part="C4" gate="A" pin="22"/>
 </segment>
 <segment>
 <pinref part="GND12" gate="1" pin="GND"/>
@@ -33174,7 +33207,7 @@ ripple current from motors</text>
 <segment>
 <wire x1="218.44" y1="149.86" x2="218.44" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="SUPPLY10" gate="G$1" pin="+18.5V"/>
-<pinref part="C11" gate="G$1" pin="+"/>
+<pinref part="C4" gate="A" pin="11"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -33448,9 +33481,6 @@ ripple current from motors</text>
 <part name="SUPPLY10" library="RoboJackets-Supplies" deviceset="+2.5V" device=""/>
 <part name="D3" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-RED" value="RED"/>
 <part name="D4" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-RED" value="RED"/>
-<part name="D2" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-BLUE" value="BLUE"/>
-<part name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="330"/>
-<part name="SUPPLY5" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="R17" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="330"/>
 <part name="D6" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-GREEN" value="GREEN"/>
 <part name="GND50" library="supply1" deviceset="GND" device=""/>
@@ -33541,17 +33571,6 @@ connected like that?</text>
 <attribute name="TEAM" x="173.99" y="34.29" size="3.048" layer="94" ratio="10" align="top-left"/>
 <attribute name="REVISION" x="245.11" y="6.35" size="2.54" layer="94"/>
 <attribute name="SCH_DESC" x="173.99" y="6.35" size="2.54" layer="94"/>
-</instance>
-<instance part="D2" gate="G$1" x="129.54" y="55.88" smashed="yes" rot="R270">
-<attribute name="NAME" x="132.08" y="53.34" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="129.54" y="53.34" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="R4" gate="G$1" x="142.24" y="55.88" smashed="yes">
-<attribute name="NAME" x="138.43" y="57.3786" size="1.778" layer="95"/>
-<attribute name="VALUE" x="138.43" y="52.578" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY5" gate="P" x="149.86" y="60.96" smashed="yes">
-<attribute name="VALUE" x="147.955" y="64.135" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY37" gate="+5V" x="198.12" y="137.16" smashed="yes">
 <attribute name="VALUE" x="196.215" y="140.335" size="1.778" layer="96"/>
@@ -33686,12 +33705,6 @@ connected like that?</text>
 </net>
 <net name="+3.3V" class="0">
 <segment>
-<pinref part="SUPPLY5" gate="P" pin="+3.3V"/>
-<wire x1="149.86" y1="58.42" x2="149.86" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="149.86" y1="55.88" x2="147.32" y2="55.88" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <wire x1="180.34" y1="134.62" x2="182.88" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="SUPPLY51" gate="P" pin="+3.3V"/>
 <wire x1="182.88" y1="134.62" x2="187.96" y2="134.62" width="0.1524" layer="91"/>
@@ -33785,32 +33798,6 @@ connected like that?</text>
 <label x="228.6" y="96.52" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="BALL-EMIT" class="0">
-<segment>
-<pinref part="MTRAIN" gate="G$1" pin="P9"/>
-<wire x1="83.82" y1="114.3" x2="78.74" y2="114.3" width="0.1524" layer="91"/>
-<label x="78.74" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="LED-BALL" class="0">
-<segment>
-<pinref part="D2" gate="G$1" pin="K"/>
-<wire x1="127" y1="55.88" x2="124.46" y2="55.88" width="0.1524" layer="91"/>
-<label x="124.46" y="55.88" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="MTRAIN" gate="G$1" pin="P10"/>
-<wire x1="83.82" y1="111.76" x2="78.74" y2="111.76" width="0.1524" layer="91"/>
-<label x="78.74" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="LED-BALL-PRE" class="0">
-<segment>
-<pinref part="D2" gate="G$1" pin="A"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="134.62" y1="55.88" x2="137.16" y2="55.88" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="VDD-LED" class="0">
 <segment>
 <pinref part="R10" gate="G$1" pin="2"/>
@@ -33828,16 +33815,16 @@ connected like that?</text>
 </net>
 <net name="ADC-IO" class="0">
 <segment>
-<pinref part="MTRAIN" gate="G$1" pin="P13"/>
-<wire x1="83.82" y1="104.14" x2="78.74" y2="104.14" width="0.1524" layer="91"/>
-<label x="78.74" y="104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="MTRAIN" gate="G$1" pin="P9"/>
+<wire x1="83.82" y1="114.3" x2="78.74" y2="114.3" width="0.1524" layer="91"/>
+<label x="78.74" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="!CS!-ADC" class="0">
 <segment>
-<pinref part="MTRAIN" gate="G$1" pin="P14"/>
-<wire x1="83.82" y1="101.6" x2="78.74" y2="101.6" width="0.1524" layer="91"/>
-<label x="78.74" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="MTRAIN" gate="G$1" pin="P10"/>
+<wire x1="83.82" y1="111.76" x2="78.74" y2="111.76" width="0.1524" layer="91"/>
+<label x="78.74" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
