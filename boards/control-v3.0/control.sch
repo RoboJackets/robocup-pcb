@@ -30941,8 +30941,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="8.255" y1="-27.94" x2="-8.255" y2="-27.94" width="0.254" layer="94"/>
 <wire x1="-8.255" y1="-27.94" x2="-45.72" y2="-27.94" width="0.254" layer="94"/>
 <wire x1="-45.72" y1="-27.94" x2="-45.72" y2="25.4" width="0.254" layer="94"/>
-<wire x1="35.56" y1="-10.922" x2="36.195" y2="-10.795" width="0.254" layer="94" curve="90"/>
-<wire x1="36.195" y1="-10.795" x2="36.195" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="35.56" y1="-10.922" x2="36.195" y2="-10.414" width="0.254" layer="94" curve="90"/>
+<wire x1="36.195" y1="-10.414" x2="36.195" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="36.195" y1="-10.16" x2="36.195" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="36.195" y1="-7.62" x2="36.195" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="36.195" y1="-5.08" x2="36.195" y2="-2.54" width="0.254" layer="94"/>
@@ -30954,8 +30954,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="23.495" y1="-2.54" x2="23.495" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="23.495" y1="-5.08" x2="23.495" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="23.495" y1="-7.62" x2="23.495" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="23.495" y1="-10.16" x2="23.495" y2="-10.795" width="0.254" layer="94"/>
-<wire x1="23.495" y1="-10.795" x2="24.13" y2="-10.922" width="0.254" layer="94" curve="90"/>
+<wire x1="23.495" y1="-10.16" x2="23.495" y2="-10.414" width="0.254" layer="94"/>
+<wire x1="23.495" y1="-10.414" x2="24.13" y2="-10.922" width="0.254" layer="94" curve="90"/>
 <wire x1="24.13" y1="-10.922" x2="35.56" y2="-10.922" width="0.254" layer="94"/>
 <wire x1="12.065" y1="5.715" x2="12.7" y2="6.35" width="0.254" layer="94" curve="-90"/>
 <wire x1="12.7" y1="6.35" x2="34.29" y2="6.35" width="0.254" layer="94"/>
@@ -31032,10 +31032,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="-8.255" y1="22.86" x2="-8.255" y2="20.32" width="0.254" layer="94"/>
 <wire x1="-8.255" y1="20.32" x2="-8.255" y2="17.78" width="0.254" layer="94"/>
 <wire x1="-8.255" y1="17.78" x2="-8.255" y2="15.24" width="0.254" layer="94"/>
-<wire x1="-8.255" y1="15.24" x2="-8.255" y2="12.7" width="0.254" layer="94"/>
-<wire x1="-8.255" y1="12.7" x2="-8.255" y2="10.16" width="0.254" layer="94"/>
-<wire x1="-8.255" y1="10.16" x2="-8.255" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-8.255" y1="7.62" x2="-8.255" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-8.255" y1="15.24" x2="-8.255" y2="5.08" width="0.254" layer="94"/>
 <wire x1="-8.255" y1="5.08" x2="-8.255" y2="2.54" width="0.254" layer="94"/>
 <wire x1="-8.255" y1="2.54" x2="-8.255" y2="0" width="0.254" layer="94"/>
 <wire x1="-8.255" y1="0" x2="-8.255" y2="-2.54" width="0.254" layer="94"/>
@@ -31482,8 +31479,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="37.592" y1="2.54" x2="34.925" y2="2.54" width="0.254" layer="94"/>
 <wire x1="12.065" y1="5.08" x2="8.255" y2="5.08" width="0.254" layer="94"/>
 <wire x1="12.065" y1="2.54" x2="8.255" y2="2.54" width="0.254" layer="94"/>
-<wire x1="8.255" y1="7.62" x2="37.465" y2="7.62" width="0.254" layer="94"/>
-<wire x1="8.255" y1="10.16" x2="37.465" y2="10.16" width="0.254" layer="94"/>
 <wire x1="35.56" y1="-11.43" x2="24.13" y2="-11.43" width="0.254" layer="94"/>
 <wire x1="24.13" y1="-16.51" x2="35.56" y2="-16.51" width="0.254" layer="94"/>
 <wire x1="23.495" y1="-15.875" x2="24.13" y2="-16.51" width="0.254" layer="94" curve="90"/>
@@ -31500,7 +31495,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <text x="24.765" y="-14.605" size="1.778" layer="95">I2C</text>
 <text x="30.48" y="-13.335" size="1.27" layer="95">SDA</text>
 <text x="30.48" y="-15.875" size="1.27" layer="95">SCL</text>
-<wire x1="8.255" y1="12.7" x2="37.465" y2="12.7" width="0.254" layer="94"/>
 <wire x1="36.195" y1="-12.7" x2="37.465" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="36.195" y1="-15.24" x2="37.465" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="23.495" y1="-12.7" x2="8.255" y2="-12.7" width="0.254" layer="94"/>
@@ -31546,35 +31540,53 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="-20.955" y1="-10.16" x2="-8.255" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-20.955" y1="-12.7" x2="-8.255" y2="-12.7" width="0.254" layer="94"/>
 <text x="-32.512" y="-5.08" size="2.032" layer="95">PwmOut</text>
-<wire x1="-21.59" y1="6.604" x2="-20.955" y2="6.985" width="0.254" layer="94" curve="90"/>
-<wire x1="-20.955" y1="6.985" x2="-20.955" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-20.955" y1="7.62" x2="-20.955" y2="10.16" width="0.254" layer="94"/>
-<wire x1="-20.955" y1="10.16" x2="-20.955" y2="12.7" width="0.254" layer="94"/>
-<wire x1="-20.955" y1="12.7" x2="-20.955" y2="15.24" width="0.254" layer="94"/>
+<wire x1="35.56" y1="6.858" x2="36.195" y2="7.366" width="0.254" layer="94" curve="90"/>
+<wire x1="36.195" y1="7.366" x2="36.195" y2="7.62" width="0.254" layer="94"/>
+<wire x1="36.195" y1="7.62" x2="36.195" y2="10.16" width="0.254" layer="94"/>
+<wire x1="36.195" y1="10.16" x2="36.195" y2="12.7" width="0.254" layer="94"/>
+<wire x1="36.195" y1="12.7" x2="36.195" y2="13.335" width="0.254" layer="94"/>
+<wire x1="36.195" y1="13.335" x2="35.56" y2="13.97" width="0.254" layer="94" curve="90"/>
+<wire x1="35.56" y1="13.97" x2="24.13" y2="13.97" width="0.254" layer="94"/>
+<wire x1="24.13" y1="13.97" x2="23.495" y2="13.335" width="0.254" layer="94" curve="90"/>
+<wire x1="23.495" y1="13.335" x2="23.495" y2="12.7" width="0.254" layer="94"/>
+<wire x1="23.495" y1="12.7" x2="23.495" y2="10.16" width="0.254" layer="94"/>
+<wire x1="23.495" y1="10.16" x2="23.495" y2="7.62" width="0.254" layer="94"/>
+<wire x1="23.495" y1="7.62" x2="23.495" y2="7.366" width="0.254" layer="94"/>
+<wire x1="23.495" y1="7.366" x2="24.13" y2="6.858" width="0.254" layer="94" curve="90"/>
+<wire x1="24.13" y1="6.858" x2="35.56" y2="6.858" width="0.254" layer="94"/>
+<text x="34.925" y="8.255" size="1.27" layer="95" rot="R180">SCK</text>
+<text x="34.925" y="10.795" size="1.27" layer="95" rot="R180">MISO</text>
+<text x="24.765" y="8.89" size="1.9304" layer="95">SPI</text>
+<text x="34.925" y="13.462" size="1.27" layer="95" rot="R180">MOSI</text>
+<wire x1="36.195" y1="7.62" x2="37.465" y2="7.62" width="0.254" layer="94"/>
+<wire x1="36.195" y1="10.16" x2="37.465" y2="10.16" width="0.254" layer="94"/>
+<wire x1="36.195" y1="12.7" x2="37.465" y2="12.7" width="0.254" layer="94"/>
+<wire x1="23.495" y1="7.62" x2="8.255" y2="7.62" width="0.254" layer="94"/>
+<wire x1="23.495" y1="10.16" x2="8.255" y2="10.16" width="0.254" layer="94"/>
+<wire x1="23.495" y1="12.7" x2="8.255" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-21.59" y1="6.858" x2="-20.955" y2="7.366" width="0.254" layer="94" curve="90"/>
+<wire x1="-20.955" y1="7.366" x2="-20.955" y2="15.24" width="0.254" layer="94"/>
 <wire x1="-20.955" y1="15.24" x2="-20.955" y2="15.875" width="0.254" layer="94"/>
 <wire x1="-20.955" y1="15.875" x2="-21.59" y2="16.51" width="0.254" layer="94" curve="90"/>
 <wire x1="-21.59" y1="16.51" x2="-33.02" y2="16.51" width="0.254" layer="94"/>
 <wire x1="-33.02" y1="16.51" x2="-33.655" y2="15.875" width="0.254" layer="94" curve="90"/>
-<wire x1="-33.655" y1="15.875" x2="-33.655" y2="15.24" width="0.254" layer="94"/>
-<wire x1="-33.655" y1="15.24" x2="-33.655" y2="12.7" width="0.254" layer="94"/>
-<wire x1="-33.655" y1="12.7" x2="-33.655" y2="10.16" width="0.254" layer="94"/>
-<wire x1="-33.655" y1="10.16" x2="-33.655" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-33.655" y1="7.62" x2="-33.655" y2="6.985" width="0.254" layer="94"/>
-<wire x1="-33.655" y1="6.985" x2="-33.02" y2="6.604" width="0.254" layer="94" curve="90"/>
-<wire x1="-33.02" y1="6.604" x2="-21.59" y2="6.604" width="0.254" layer="94"/>
+<wire x1="-33.655" y1="15.875" x2="-33.655" y2="7.366" width="0.254" layer="94"/>
+<wire x1="-33.655" y1="7.366" x2="-33.02" y2="6.858" width="0.254" layer="94" curve="90"/>
+<wire x1="-33.02" y1="6.858" x2="-21.59" y2="6.858" width="0.254" layer="94"/>
 <text x="-28.575" y="8.255" size="1.27" layer="95" rot="R180">!SS</text>
 <text x="-28.575" y="10.795" size="1.27" layer="95" rot="R180">SCK</text>
 <text x="-28.575" y="13.335" size="1.27" layer="95" rot="R180">MISO</text>
 <text x="-26.035" y="11.43" size="1.9304" layer="95">SPI</text>
 <text x="-28.575" y="16.002" size="1.27" layer="95" rot="R180">MOSI</text>
-<wire x1="-20.955" y1="15.24" x2="-8.255" y2="15.24" width="0.254" layer="94"/>
-<wire x1="-20.955" y1="12.7" x2="-8.255" y2="12.7" width="0.254" layer="94"/>
-<wire x1="-20.955" y1="10.16" x2="-8.255" y2="10.16" width="0.254" layer="94"/>
-<wire x1="-20.955" y1="7.62" x2="-8.255" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-33.655" y1="5.08" x2="-37.592" y2="5.08" width="0.254" layer="94"/>
 <wire x1="-33.655" y1="15.24" x2="-37.592" y2="15.24" width="0.254" layer="94"/>
 <wire x1="-33.655" y1="12.7" x2="-37.592" y2="12.7" width="0.254" layer="94"/>
 <wire x1="-33.655" y1="10.16" x2="-37.592" y2="10.16" width="0.254" layer="94"/>
 <wire x1="-33.655" y1="7.62" x2="-37.592" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-20.955" y1="15.24" x2="-8.255" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-20.955" y1="12.7" x2="-8.255" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-20.955" y1="10.16" x2="-8.255" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-20.955" y1="7.62" x2="-8.255" y2="7.62" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -33575,8 +33587,8 @@ ripple current from motors</text>
 <part name="LED1" library="RoboJackets-ICs" deviceset="APA102" device="5050"/>
 <part name="LED2" library="RoboJackets-ICs" deviceset="APA102" device="5050"/>
 <part name="J6" library="RoboJackets-Connectors" deviceset="4-PIN-HEADER" device=""/>
-<part name="KIT1" library="RoboJackets-Boards" deviceset="MTRAIN" device=""/>
 <part name="J1" library="RoboJackets-Connectors" deviceset="SBH11-*-D05-?" device="RA" technology="PBPC"/>
+<part name="KIT1" library="RoboJackets-Boards" deviceset="MTRAIN" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -33659,30 +33671,30 @@ connected like that?</text>
 </net>
 <net name="INT-MPU" class="0">
 <segment>
-<pinref part="KIT1" gate="G$1" pin="P13"/>
 <wire x1="83.82" y1="104.14" x2="78.74" y2="104.14" width="0.1524" layer="91"/>
 <label x="78.74" y="104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="KIT1" gate="G$1" pin="P13"/>
 </segment>
 </net>
 <net name="INT-IO" class="0">
 <segment>
-<wire x1="83.82" y1="124.46" x2="78.74" y2="124.46" width="0.1524" layer="91"/>
-<label x="78.74" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="KIT1" gate="G$1" pin="P5"/>
+<pinref part="KIT1" gate="G$1" pin="P11"/>
+<wire x1="83.82" y1="109.22" x2="78.74" y2="109.22" width="0.1524" layer="91"/>
+<label x="78.74" y="109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="INT-RADIO" class="0">
 <segment>
-<pinref part="KIT1" gate="G$1" pin="P12"/>
 <wire x1="83.82" y1="106.68" x2="78.74" y2="106.68" width="0.1524" layer="91"/>
 <label x="78.74" y="106.68" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="KIT1" gate="G$1" pin="P12"/>
 </segment>
 </net>
 <net name="FPGA-PROG" class="0">
 <segment>
-<wire x1="83.82" y1="119.38" x2="78.74" y2="119.38" width="0.1524" layer="91"/>
-<label x="78.74" y="119.38" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="KIT1" gate="G$1" pin="P7"/>
+<pinref part="KIT1" gate="G$1" pin="P10"/>
+<wire x1="83.82" y1="111.76" x2="78.74" y2="111.76" width="0.1524" layer="91"/>
+<label x="78.74" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="!RST!-KICK" class="0">
@@ -33773,16 +33785,16 @@ connected like that?</text>
 </net>
 <net name="FPGA-DONE" class="0">
 <segment>
-<pinref part="KIT1" gate="G$1" pin="P14"/>
 <wire x1="83.82" y1="101.6" x2="78.74" y2="101.6" width="0.1524" layer="91"/>
 <label x="78.74" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="KIT1" gate="G$1" pin="P14"/>
 </segment>
 </net>
 <net name="!CS!-RADIO" class="0">
 <segment>
-<pinref part="KIT1" gate="G$1" pin="P15"/>
 <wire x1="83.82" y1="99.06" x2="78.74" y2="99.06" width="0.1524" layer="91"/>
 <label x="78.74" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="KIT1" gate="G$1" pin="P15"/>
 </segment>
 </net>
 <net name="!RST!-RADIO" class="0">
@@ -33831,9 +33843,9 @@ connected like that?</text>
 </net>
 <net name="ADC-IO" class="0">
 <segment>
-<pinref part="KIT1" gate="G$1" pin="P8"/>
 <wire x1="83.82" y1="116.84" x2="78.74" y2="116.84" width="0.1524" layer="91"/>
 <label x="78.74" y="116.84" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="KIT1" gate="G$1" pin="P8"/>
 </segment>
 </net>
 <net name="!CS!-ADC" class="0">
@@ -33845,16 +33857,37 @@ connected like that?</text>
 </net>
 <net name="DOT-DATA" class="0">
 <segment>
-<pinref part="KIT1" gate="G$1" pin="P4"/>
 <wire x1="83.82" y1="127" x2="78.74" y2="127" width="0.1524" layer="91"/>
 <label x="78.74" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="KIT1" gate="G$1" pin="P4"/>
 </segment>
 </net>
 <net name="DOT-CLK" class="0">
 <segment>
-<pinref part="KIT1" gate="G$1" pin="P6"/>
 <wire x1="83.82" y1="121.92" x2="78.74" y2="121.92" width="0.1524" layer="91"/>
 <label x="78.74" y="121.92" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="KIT1" gate="G$1" pin="P6"/>
+</segment>
+</net>
+<net name="MOSI-ADC" class="0">
+<segment>
+<pinref part="KIT1" gate="G$1" pin="P36"/>
+<wire x1="180.34" y1="124.46" x2="185.42" y2="124.46" width="0.1524" layer="91"/>
+<label x="185.42" y="124.46" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="MISO-ADC" class="0">
+<segment>
+<pinref part="KIT1" gate="G$1" pin="P35"/>
+<wire x1="180.34" y1="121.92" x2="185.42" y2="121.92" width="0.1524" layer="91"/>
+<label x="185.42" y="121.92" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="SCK-ADC" class="0">
+<segment>
+<pinref part="KIT1" gate="G$1" pin="P34"/>
+<wire x1="180.34" y1="119.38" x2="185.42" y2="119.38" width="0.1524" layer="91"/>
+<label x="185.42" y="119.38" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -36887,27 +36920,6 @@ serial from MBED</text>
 <wire x1="27.94" y1="121.92" x2="27.94" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="SCK" class="0">
-<segment>
-<pinref part="U7" gate="A" pin="SCLK"/>
-<wire x1="58.42" y1="172.72" x2="55.88" y2="172.72" width="0.1524" layer="91"/>
-<label x="55.88" y="172.72" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="MOSI" class="0">
-<segment>
-<pinref part="U7" gate="A" pin="SDI"/>
-<wire x1="58.42" y1="170.18" x2="55.88" y2="170.18" width="0.1524" layer="91"/>
-<label x="55.88" y="170.18" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="MISO" class="0">
-<segment>
-<pinref part="U7" gate="A" pin="SDO"/>
-<wire x1="93.98" y1="180.34" x2="96.52" y2="180.34" width="0.1524" layer="91"/>
-<label x="96.52" y="180.34" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="!CS!-ADC" class="0">
 <segment>
 <pinref part="U7" gate="A" pin="!CS!"/>
@@ -36960,6 +36972,27 @@ serial from MBED</text>
 <pinref part="U7" gate="A" pin="MXO"/>
 <wire x1="93.98" y1="182.88" x2="96.52" y2="182.88" width="0.1524" layer="91"/>
 <label x="96.52" y="182.88" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="SCK-ADC" class="0">
+<segment>
+<pinref part="U7" gate="A" pin="SCLK"/>
+<wire x1="58.42" y1="172.72" x2="55.88" y2="172.72" width="0.1524" layer="91"/>
+<label x="55.88" y="172.72" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="MOSI-ADC" class="0">
+<segment>
+<pinref part="U7" gate="A" pin="SDI"/>
+<wire x1="58.42" y1="170.18" x2="55.88" y2="170.18" width="0.1524" layer="91"/>
+<label x="55.88" y="170.18" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="MISO-ADC" class="0">
+<segment>
+<pinref part="U7" gate="A" pin="SDO"/>
+<wire x1="93.98" y1="180.34" x2="96.52" y2="180.34" width="0.1524" layer="91"/>
+<label x="96.52" y="180.34" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
