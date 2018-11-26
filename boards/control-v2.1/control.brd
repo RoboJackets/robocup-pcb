@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.1">
+<eagle version="9.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.25" altunitdist="mm" altunit="mm"/>
@@ -10531,10 +10532,14 @@ Your Eurocircuits Team
 <param name="slThermalsForVias" value="1"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
-<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="1"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
+<param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -11618,15 +11623,15 @@ Your Eurocircuits Team
 <attribute name="NAME" x="8.865" y="8.615" size="1" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="VALUE" x="10.405" y="6.115" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="U$2" library="RoboJackets-Aesthetics" package="ROBOJACKETS" value="" x="12.5" y="31.96"/>
-<element name="U$3" library="RoboJackets-Aesthetics" package="MOTOR-1" value="" x="-52.75" y="25.81" rot="R270"/>
-<element name="U$4" library="RoboJackets-Aesthetics" package="DRIBBLER" value="" x="-55.25" y="47.06" rot="R270"/>
-<element name="U$5" library="RoboJackets-Aesthetics" package="MOTOR-2" value="" x="-48.25" y="-8.19" rot="R315"/>
-<element name="U$6" library="RoboJackets-Aesthetics" package="MOTOR-3" value="" x="39.25" y="-16.94" rot="R45"/>
-<element name="U$7" library="RoboJackets-Aesthetics" package="MOTOR-4" value="" x="52.75" y="14.06" rot="R90"/>
-<element name="U$8" library="RoboJackets-Aesthetics" package="BALL" value="" x="-22" y="59.81" rot="R180"/>
-<element name="U$9" library="RoboJackets-Aesthetics" package="KICKER" value="" x="59.75" y="37.06" rot="R90"/>
-<element name="U$10" library="RoboJackets-Aesthetics" package="ERR-IMU" value="" x="-18.5" y="44.56"/>
+<element name="U$2" library="RoboJackets-Aesthetics" package="ROBOJACKETS" value="" x="12.5" y="31.96" smashed="yes"/>
+<element name="U$3" library="RoboJackets-Aesthetics" package="MOTOR-1" value="" x="-52.75" y="25.81" smashed="yes" rot="R270"/>
+<element name="U$4" library="RoboJackets-Aesthetics" package="DRIBBLER" value="" x="-55.25" y="47.06" smashed="yes" rot="R270"/>
+<element name="U$5" library="RoboJackets-Aesthetics" package="MOTOR-2" value="" x="-48.25" y="-8.19" smashed="yes" rot="R315"/>
+<element name="U$6" library="RoboJackets-Aesthetics" package="MOTOR-3" value="" x="39.25" y="-16.94" smashed="yes" rot="R45"/>
+<element name="U$7" library="RoboJackets-Aesthetics" package="MOTOR-4" value="" x="52.75" y="14.06" smashed="yes" rot="R90"/>
+<element name="U$8" library="RoboJackets-Aesthetics" package="BALL" value="" x="-22" y="59.81" smashed="yes" rot="R180"/>
+<element name="U$9" library="RoboJackets-Aesthetics" package="KICKER" value="" x="59.75" y="37.06" smashed="yes" rot="R90"/>
+<element name="U$10" library="RoboJackets-Aesthetics" package="ERR-IMU" value="" x="-18.5" y="44.56" smashed="yes"/>
 <element name="R10" library="rcl" package="R0603" value="10k" x="32.25" y="48.25" smashed="yes" rot="MR0">
 <attribute name="NAME" x="33.385" y="46.135" size="1" layer="26" font="vector" ratio="15" rot="MR0"/>
 <attribute name="VALUE" x="32.885" y="46.345" size="1.27" layer="28" rot="MR0"/>
@@ -11635,7 +11640,7 @@ Your Eurocircuits Team
 <attribute name="NAME" x="33.385" y="41.635" size="1" layer="26" font="vector" ratio="15" rot="MR0"/>
 <attribute name="VALUE" x="32.885" y="41.845" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="U$11" library="RoboJackets-Aesthetics" package="ROBOBUZZ_1.0X2" value="" x="25.5" y="39.5"/>
+<element name="U$11" library="RoboJackets-Aesthetics" package="ROBOBUZZ_1.0X2" value="" x="25.5" y="39.5" smashed="yes"/>
 </elements>
 <signals>
 <signal name="VB">
@@ -17676,6 +17681,13 @@ Your Eurocircuits Team
 <wire x1="36.71" y1="43.75" x2="33.1" y2="43.75" width="0.3" layer="16"/>
 </signal>
 </signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
 <errors>
 <approved hash="18,29,d05ef8d853e2372c"/>
 <approved hash="18,29,52fe547c555626fd"/>
