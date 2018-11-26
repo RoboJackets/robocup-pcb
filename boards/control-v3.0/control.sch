@@ -37174,22 +37174,12 @@ serial from MBED</text>
 </net>
 <net name="DOT-DATA" class="0">
 <segment>
-<wire x1="236.22" y1="172.72" x2="238.76" y2="172.72" width="0.1524" layer="91"/>
-<pinref part="LED1" gate="G$1" pin="DO"/>
-<pinref part="LED2" gate="G$1" pin="DI"/>
-</segment>
-<segment>
 <pinref part="LED1" gate="G$1" pin="DI"/>
 <wire x1="213.36" y1="172.72" x2="210.82" y2="172.72" width="0.1524" layer="91"/>
 <label x="210.82" y="172.72" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="DOT-CLK" class="0">
-<segment>
-<wire x1="236.22" y1="167.64" x2="238.76" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="LED1" gate="G$1" pin="CO"/>
-<pinref part="LED2" gate="G$1" pin="CI"/>
-</segment>
 <segment>
 <pinref part="LED1" gate="G$1" pin="CI"/>
 <wire x1="213.36" y1="167.64" x2="210.82" y2="167.64" width="0.1524" layer="91"/>
@@ -37229,6 +37219,20 @@ serial from MBED</text>
 <wire x1="210.82" y1="73.66" x2="215.9" y2="73.66" width="0.1524" layer="91"/>
 <label x="215.9" y="73.66" size="1.27" layer="95" xref="yes"/>
 <pinref part="J4" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="DOT-DATA-INTER" class="0">
+<segment>
+<wire x1="236.22" y1="172.72" x2="238.76" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="LED1" gate="G$1" pin="DO"/>
+<pinref part="LED2" gate="G$1" pin="DI"/>
+</segment>
+</net>
+<net name="DOT-CLK-INTER" class="0">
+<segment>
+<wire x1="236.22" y1="167.64" x2="238.76" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="LED1" gate="G$1" pin="CO"/>
+<pinref part="LED2" gate="G$1" pin="CI"/>
 </segment>
 </net>
 </nets>
@@ -38391,7 +38395,7 @@ battery power</text>
 <pinref part="+3V31" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="AAM" class="0">
 <segment>
 <pinref part="U10" gate="G$1" pin="AAM"/>
 <wire x1="66.04" y1="63.5" x2="53.34" y2="63.5" width="0.1524" layer="91"/>
