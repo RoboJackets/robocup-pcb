@@ -34184,13 +34184,6 @@ connected like that?</text>
 <pinref part="KIT1" gate="G$1" pin="P29"/>
 </segment>
 </net>
-<net name="INT-MPU" class="0">
-<segment>
-<wire x1="83.82" y1="104.14" x2="78.74" y2="104.14" width="0.1524" layer="91"/>
-<label x="78.74" y="104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="KIT1" gate="G$1" pin="P13"/>
-</segment>
-</net>
 <net name="INT-IO" class="0">
 <segment>
 <pinref part="KIT1" gate="G$1" pin="P11"/>
@@ -34198,25 +34191,11 @@ connected like that?</text>
 <label x="78.74" y="109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="INT-RADIO" class="0">
-<segment>
-<wire x1="83.82" y1="106.68" x2="78.74" y2="106.68" width="0.1524" layer="91"/>
-<label x="78.74" y="106.68" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="KIT1" gate="G$1" pin="P12"/>
-</segment>
-</net>
 <net name="FPGA-PROG" class="0">
 <segment>
-<pinref part="KIT1" gate="G$1" pin="P10"/>
-<wire x1="83.82" y1="111.76" x2="78.74" y2="111.76" width="0.1524" layer="91"/>
-<label x="78.74" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="!RST!-KICK" class="0">
-<segment>
-<wire x1="83.82" y1="96.52" x2="78.74" y2="96.52" width="0.1524" layer="91"/>
-<label x="78.74" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="KIT1" gate="G$1" pin="P16"/>
+<wire x1="83.82" y1="99.06" x2="78.74" y2="99.06" width="0.1524" layer="91"/>
+<label x="78.74" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="KIT1" gate="G$1" pin="P15"/>
 </segment>
 </net>
 <net name="!CS!-FPGA" class="0">
@@ -34224,13 +34203,6 @@ connected like that?</text>
 <wire x1="83.82" y1="93.98" x2="78.74" y2="93.98" width="0.1524" layer="91"/>
 <label x="78.74" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="KIT1" gate="G$1" pin="P17"/>
-</segment>
-</net>
-<net name="!CS!-KICK" class="0">
-<segment>
-<wire x1="83.82" y1="91.44" x2="78.74" y2="91.44" width="0.1524" layer="91"/>
-<label x="78.74" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="KIT1" gate="G$1" pin="P18"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -34291,25 +34263,11 @@ connected like that?</text>
 <pinref part="KIT1" gate="G$1" pin="P32"/>
 </segment>
 </net>
-<net name="FPGA-INIT" class="0">
-<segment>
-<wire x1="83.82" y1="88.9" x2="78.74" y2="88.9" width="0.1524" layer="91"/>
-<label x="78.74" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="KIT1" gate="G$1" pin="P19"/>
-</segment>
-</net>
 <net name="FPGA-DONE" class="0">
 <segment>
-<wire x1="83.82" y1="101.6" x2="78.74" y2="101.6" width="0.1524" layer="91"/>
-<label x="78.74" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="KIT1" gate="G$1" pin="P14"/>
-</segment>
-</net>
-<net name="!CS!-RADIO" class="0">
-<segment>
-<wire x1="83.82" y1="99.06" x2="78.74" y2="99.06" width="0.1524" layer="91"/>
-<label x="78.74" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="KIT1" gate="G$1" pin="P15"/>
+<wire x1="83.82" y1="96.52" x2="78.74" y2="96.52" width="0.1524" layer="91"/>
+<label x="78.74" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="KIT1" gate="G$1" pin="P16"/>
 </segment>
 </net>
 <net name="!RST!-RADIO" class="0">
@@ -34403,6 +34361,48 @@ connected like that?</text>
 <pinref part="KIT1" gate="G$1" pin="P34"/>
 <wire x1="180.34" y1="119.38" x2="185.42" y2="119.38" width="0.1524" layer="91"/>
 <label x="185.42" y="119.38" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="!CS!-RADIO" class="0">
+<segment>
+<wire x1="83.82" y1="91.44" x2="78.74" y2="91.44" width="0.1524" layer="91"/>
+<label x="78.74" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="KIT1" gate="G$1" pin="P18"/>
+</segment>
+</net>
+<net name="INT-MPU" class="0">
+<segment>
+<pinref part="KIT1" gate="G$1" pin="P10"/>
+<wire x1="83.82" y1="111.76" x2="78.74" y2="111.76" width="0.1524" layer="91"/>
+<label x="78.74" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="FPGA-INIT" class="0">
+<segment>
+<wire x1="83.82" y1="101.6" x2="78.74" y2="101.6" width="0.1524" layer="91"/>
+<label x="78.74" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="KIT1" gate="G$1" pin="P14"/>
+</segment>
+</net>
+<net name="!CS!-KICK" class="0">
+<segment>
+<wire x1="83.82" y1="104.14" x2="78.74" y2="104.14" width="0.1524" layer="91"/>
+<label x="78.74" y="104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="KIT1" gate="G$1" pin="P13"/>
+</segment>
+</net>
+<net name="!RST!-KICK" class="0">
+<segment>
+<wire x1="83.82" y1="106.68" x2="78.74" y2="106.68" width="0.1524" layer="91"/>
+<label x="78.74" y="106.68" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="KIT1" gate="G$1" pin="P12"/>
+</segment>
+</net>
+<net name="INT-RADIO" class="0">
+<segment>
+<wire x1="83.82" y1="88.9" x2="78.74" y2="88.9" width="0.1524" layer="91"/>
+<label x="78.74" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="KIT1" gate="G$1" pin="P19"/>
 </segment>
 </net>
 </nets>
