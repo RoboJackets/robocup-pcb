@@ -10,8 +10,8 @@
 <grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.25" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="GND" color="13" fill="1" visible="no" active="yes"/>
-<layer number="3" name="Power" color="11" fill="1" visible="no" active="yes"/>
+<layer number="2" name="GND" color="13" fill="1" visible="yes" active="yes"/>
+<layer number="3" name="Power" color="11" fill="1" visible="yes" active="yes"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
 <layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
@@ -11936,65 +11936,65 @@ Your Eurocircuits Team
 <elements>
 <element name="C34" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF" x="1.5" y="-3.25" smashed="yes" rot="MR0">
 <attribute name="NAME" x="2.635" y="-2.115" size="1" layer="26" font="vector" ratio="15" rot="MR0"/>
-<attribute name="VALUE" x="2.135" y="-5.155" size="1.27" layer="28" rot="MR0"/>
+<attribute name="VALUE" x="2.135" y="-5.155" size="1" layer="28" rot="MR0"/>
 </element>
 <element name="C21" library="rcl" package="C0603" value="0.1uF" x="-42.25" y="54.5" smashed="yes" rot="MR270">
 <attribute name="NAME" x="-43.635" y="56.135" size="1" layer="26" font="vector" ratio="15" rot="MR270"/>
-<attribute name="VALUE" x="-40.345" y="55.135" size="1.27" layer="28" rot="MR270"/>
+<attribute name="VALUE" x="-40.345" y="55.135" size="1" layer="28" rot="MR270"/>
 </element>
 <element name="C35" library="rcl" package="C0603" value="GRM188R6YA106MA73D" x="13" y="-15.75" smashed="yes" rot="MR270">
 <attribute name="NAME" x="14.135" y="-17.135" size="1" layer="26" font="vector" ratio="15" rot="MR90"/>
-<attribute name="VALUE" x="14.905" y="-15.115" size="1.27" layer="28" rot="MR270"/>
+<attribute name="VALUE" x="14.905" y="-15.115" size="1" layer="28" rot="MR270"/>
 </element>
 <element name="C31" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF" x="5.25" y="-3.25" smashed="yes" rot="MR0">
 <attribute name="NAME" x="6.385" y="-2.115" size="1" layer="26" font="vector" ratio="15" rot="MR0"/>
-<attribute name="VALUE" x="5.885" y="-5.155" size="1.27" layer="28" rot="MR0"/>
+<attribute name="VALUE" x="5.885" y="-5.155" size="1" layer="28" rot="MR0"/>
 </element>
 <element name="D7" library="RoboJackets-LEDs" package="CHIP-LED0603" value="GREEN" x="-6" y="-37" smashed="yes" rot="R90">
 <attribute name="DIGIKEY" value="160-1446-1-ND" x="-6" y="-37" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="LTST-C191KGKT" x="-6" y="-37" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-2" y="-36.5" size="1" layer="25" font="vector" ratio="15" rot="R180"/>
-<attribute name="VALUE" x="-5.365" y="-35.095" size="1.27" layer="27" rot="R180"/>
+<attribute name="VALUE" x="-5.365" y="-35.095" size="1" layer="27" rot="R180"/>
 <attribute name="VALUE" value="GREEN" x="-6" y="-37" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="D8" library="RoboJackets-LEDs" package="CHIP-LED0603" value="RED" x="-6" y="-26.5" smashed="yes" rot="R90">
 <attribute name="DIGIKEY" value="160-1447-1-ND" x="-6" y="-26.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="LTST-C191KRKT" x="-6" y="-26.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-2.5" y="-26" size="1" layer="25" font="vector" ratio="15" rot="R180"/>
-<attribute name="VALUE" value="RED" x="-5.365" y="-24.595" size="1.27" layer="27" rot="R180"/>
+<attribute name="VALUE" value="RED" x="-5.365" y="-24.595" size="1" layer="27" rot="R180"/>
 <attribute name="VALUE" value="GREEN" x="-6" y="-26.5" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="DD:C1" library="rcl" package="C0603" value="1uF" x="-36.25" y="35.75" smashed="yes">
 <attribute name="NAME" x="-34.635" y="34.135" size="1" layer="25" font="vector" ratio="15"/>
-<attribute name="VALUE" x="-36.885" y="33.845" size="1.27" layer="27"/>
+<attribute name="VALUE" x="-36.885" y="33.845" size="1" layer="27"/>
 </element>
 <element name="DD:C10" library="rcl" package="C0603" value="0.1uF 50V" x="-24.75" y="47.25" smashed="yes">
 <attribute name="NAME" x="-22.885" y="47.4" size="1" layer="25" font="vector" ratio="15"/>
-<attribute name="VALUE" x="-25.385" y="45.345" size="1.27" layer="27"/>
+<attribute name="VALUE" x="-25.385" y="45.345" size="1" layer="27"/>
 </element>
 <element name="DD:C2" library="rcl" package="C0603" value="1uF" x="-24.75" y="49.5" smashed="yes">
 <attribute name="NAME" x="-23.135" y="49.385" size="1" layer="25" font="vector" ratio="15"/>
-<attribute name="VALUE" x="-25.385" y="47.595" size="1.27" layer="27"/>
+<attribute name="VALUE" x="-25.385" y="47.595" size="1" layer="27"/>
 </element>
 <element name="DD:C3" library="rcl" package="C0603" value="0.022uF 50V" x="-25.75" y="42" smashed="yes" rot="R90">
 <attribute name="NAME" x="-25.25" y="36.115" size="1" layer="25" font="vector" ratio="15" rot="R90"/>
-<attribute name="VALUE" x="-23.845" y="41.365" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="-23.845" y="41.365" size="1" layer="27" rot="R90"/>
 </element>
 <element name="DD:C6" library="rcl" package="C0603" value="0.1uF 50V" x="-45.5" y="32.75" smashed="yes" rot="R180">
 <attribute name="NAME" x="-47.115" y="30.615" size="1" layer="25" font="vector" ratio="15"/>
-<attribute name="VALUE" x="-44.865" y="34.655" size="1.27" layer="27" rot="R180"/>
+<attribute name="VALUE" x="-44.865" y="34.655" size="1" layer="27" rot="R180"/>
 </element>
 <element name="DD:C7" library="rcl" package="C0603" value="0.1uF 50V" x="-45.25" y="39.25" smashed="yes" rot="R180">
 <attribute name="NAME" x="-39.365" y="39.9" size="1" layer="25" font="vector" ratio="15" rot="R180"/>
-<attribute name="VALUE" x="-44.615" y="41.155" size="1.27" layer="27" rot="R180"/>
+<attribute name="VALUE" x="-44.615" y="41.155" size="1" layer="27" rot="R180"/>
 </element>
 <element name="DD:C8" library="rcl" package="C0603" value="0.1uF 50V" x="-45.5" y="45.75" smashed="yes" rot="R180">
 <attribute name="NAME" x="-47.115" y="43.8" size="1" layer="25" font="vector" ratio="15"/>
-<attribute name="VALUE" x="-44.865" y="47.655" size="1.27" layer="27" rot="R180"/>
+<attribute name="VALUE" x="-44.865" y="47.655" size="1" layer="27" rot="R180"/>
 </element>
 <element name="DD:C9" library="rcl" package="C0603" value="2.2uF 50V" x="-23" y="41" smashed="yes">
 <attribute name="NAME" x="-24.385" y="38.885" size="1" layer="25" font="vector" ratio="15"/>
-<attribute name="VALUE" x="-23.635" y="39.095" size="1.27" layer="27"/>
+<attribute name="VALUE" x="-23.635" y="39.095" size="1" layer="27"/>
 </element>
 <element name="DD:Q1" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="-47.75" y="36" smashed="yes" rot="MR180">
 <attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="-47.75" y="36" size="1.778" layer="28" rot="MR180" display="off"/>
@@ -12028,7 +12028,7 @@ Your Eurocircuits Team
 </element>
 <element name="DD:R1" library="rcl" package="R0603" value="10k" x="-23" y="43.25" smashed="yes" rot="R180">
 <attribute name="NAME" x="-21.115" y="45.365" size="1" layer="25" font="vector" ratio="15" rot="R180"/>
-<attribute name="VALUE" x="-22.365" y="45.155" size="1.27" layer="27" rot="R180"/>
+<attribute name="VALUE" x="-22.365" y="45.155" size="1" layer="27" rot="R180"/>
 </element>
 <element name="DD:U1" library="RoboJackets-PowerICs" package="TSSOP-48_PAD" value="DRV8303DCA" x="-32" y="43.25" smashed="yes" rot="R90">
 <attribute name="DIGIKEY" value="296-40070-1-ND" x="-32" y="43.25" size="1.778" layer="27" rot="R90" display="off"/>
@@ -12042,7 +12042,7 @@ Your Eurocircuits Team
 <attribute name="DIGIKEY" value="MCP23017-E/SS-ND" x="-36.25" y="57.25" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MPN" value="MCP23017-E/SS" x="-36.25" y="57.25" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="NAME" x="-33.6" y="50.885" size="1" layer="26" font="vector" ratio="15" rot="MR0"/>
-<attribute name="VALUE" x="-32.35" y="50.345" size="1.27" layer="28" rot="MR0"/>
+<attribute name="VALUE" x="-32.35" y="50.345" size="1" layer="28" rot="MR0"/>
 </element>
 <element name="J7" library="RoboJackets-Connectors" package="DF22-2-H" value="DF22-2" x="9.25" y="-20" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="H125155-ND" x="9.25" y="-20" size="1.778" layer="27" rot="R180" display="off"/>
@@ -12051,79 +12051,79 @@ Your Eurocircuits Team
 </element>
 <element name="R19" library="rcl" package="R0603" value="100k" x="7.75" y="-11.75" smashed="yes" rot="MR0">
 <attribute name="NAME" x="9.5" y="-11.25" size="1" layer="26" font="vector" ratio="15" rot="MR180"/>
-<attribute name="VALUE" x="8.385" y="-13.655" size="1.27" layer="28" rot="MR0"/>
+<attribute name="VALUE" x="8.385" y="-13.655" size="1" layer="28" rot="MR0"/>
 </element>
 <element name="R20" library="rcl" package="R0603" value="1k" x="-6" y="-37" smashed="yes" rot="MR0">
 <attribute name="NAME" x="-9" y="-37.5" size="1" layer="26" font="vector" ratio="15" rot="MR0"/>
-<attribute name="VALUE" x="-5.365" y="-38.905" size="1.27" layer="28" rot="MR0"/>
+<attribute name="VALUE" x="-5.365" y="-38.905" size="1" layer="28" rot="MR0"/>
 </element>
 <element name="R8" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="4.7k" x="7" y="33.75" smashed="yes" rot="MR180">
 <attribute name="NAME" x="8.865" y="34.365" size="1" layer="26" font="vector" ratio="15" rot="MR180"/>
-<attribute name="VALUE" x="6.365" y="35.655" size="1.27" layer="28" rot="MR180"/>
+<attribute name="VALUE" x="6.365" y="35.655" size="1" layer="28" rot="MR180"/>
 </element>
 <element name="R21" library="rcl" package="R0603" value="10k" x="-0.75" y="-15.25" smashed="yes" rot="R90">
 <attribute name="NAME" x="-2.115" y="-17.865" size="1" layer="25" font="vector" ratio="15"/>
-<attribute name="VALUE" x="1.155" y="-15.885" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="1.155" y="-15.885" size="1" layer="27" rot="R90"/>
 </element>
 <element name="R22" library="rcl" package="R0603" value="1k" x="-3.25" y="-15.25" smashed="yes" rot="R90">
 <attribute name="NAME" x="-5.365" y="-17.865" size="1" layer="25" font="vector" ratio="15"/>
-<attribute name="VALUE" x="-1.345" y="-15.885" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="-1.345" y="-15.885" size="1" layer="27" rot="R90"/>
 </element>
 <element name="R23" library="rcl" package="R0603" value="1k" x="4.75" y="-15" smashed="yes" rot="R90">
 <attribute name="NAME" x="3.385" y="-17.615" size="1" layer="25" font="vector" ratio="15"/>
-<attribute name="VALUE" x="6.655" y="-15.635" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="6.655" y="-15.635" size="1" layer="27" rot="R90"/>
 </element>
 <element name="R18" library="rcl" package="R0603" value="270k" x="14.25" y="-10.5" smashed="yes" rot="MR180">
 <attribute name="NAME" x="16" y="-9.75" size="1" layer="26" font="vector" ratio="15" rot="MR180"/>
-<attribute name="VALUE" x="13.615" y="-8.595" size="1.27" layer="28" rot="MR180"/>
+<attribute name="VALUE" x="13.615" y="-8.595" size="1" layer="28" rot="MR180"/>
 </element>
 <element name="RN9" library="RoboJackets-Resistors" package="RA-8_2506" value="330" x="-28.25" y="59.25" smashed="yes" rot="MR90">
 <attribute name="DIGIKEY" value="742C163331JPCT-ND" x="-28.25" y="59.25" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="MPN" value="742C163331JP" x="-28.25" y="59.25" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="NAME" x="-26.476" y="57.622" size="1" layer="26" font="vector" ratio="15" rot="MR90"/>
-<attribute name="VALUE" x="-31.044" y="55.872" size="1.27" layer="28" rot="MR90"/>
+<attribute name="VALUE" x="-31.044" y="55.872" size="1" layer="28" rot="MR90"/>
 </element>
 <element name="RN3" library="RoboJackets-Resistors" package="RA-8_2506" value="330" x="-15.5" y="19.5" smashed="yes" rot="R90">
 <attribute name="DIGIKEY" value="742C163331JPCT-ND" x="-15.5" y="19.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="742C163331JP" x="-15.5" y="19.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-17.274" y="18.622" size="1" layer="25" font="vector" ratio="15" rot="R90"/>
-<attribute name="VALUE" x="-12.706" y="16.122" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="-12.706" y="16.122" size="1" layer="27" rot="R90"/>
 </element>
 <element name="RN2" library="RoboJackets-Resistors" package="RA-8_2506" value="330" x="-15.5" y="26.25" smashed="yes" rot="R90">
 <attribute name="DIGIKEY" value="742C163331JPCT-ND" x="-15.5" y="26.25" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="742C163331JP" x="-15.5" y="26.25" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-17.274" y="24.622" size="1" layer="25" font="vector" ratio="15" rot="R90"/>
-<attribute name="VALUE" x="-12.706" y="22.872" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="-12.706" y="22.872" size="1" layer="27" rot="R90"/>
 </element>
 <element name="RN5" library="RoboJackets-Resistors" package="RA-8_2506" value="330" x="-0.75" y="9" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="742C163331JPCT-ND" x="-0.75" y="9" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="742C163331JP" x="-0.75" y="9" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="1.128" y="7.226" size="1" layer="25" font="vector" ratio="15" rot="R180"/>
-<attribute name="VALUE" x="2.628" y="11.794" size="1.27" layer="27" rot="R180"/>
+<attribute name="VALUE" x="2.628" y="11.794" size="1" layer="27" rot="R180"/>
 </element>
 <element name="RN7" library="RoboJackets-Resistors" package="RA-8_2506" value="330" x="14.5" y="21" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="742C163331JPCT-ND" x="14.5" y="21" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="742C163331JP" x="14.5" y="21" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="16.024" y="22.378" size="1" layer="25" font="vector" ratio="15" rot="R270"/>
-<attribute name="VALUE" x="11.706" y="24.378" size="1.27" layer="27" rot="R270"/>
+<attribute name="VALUE" x="11.706" y="24.378" size="1" layer="27" rot="R270"/>
 </element>
 <element name="RN4" library="RoboJackets-Resistors" package="RA-8_2506" value="330" x="-15.5" y="33.25" smashed="yes" rot="R90">
 <attribute name="DIGIKEY" value="742C163331JPCT-ND" x="-15.5" y="33.25" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="742C163331JP" x="-15.5" y="33.25" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-17.274" y="31.372" size="1" layer="25" font="vector" ratio="15" rot="R90"/>
-<attribute name="VALUE" x="-12.706" y="29.872" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="-12.706" y="29.872" size="1" layer="27" rot="R90"/>
 </element>
 <element name="RN8" library="RoboJackets-Resistors" package="RA-8_2506" value="330" x="14.5" y="28" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="742C163331JPCT-ND" x="14.5" y="28" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="742C163331JP" x="14.5" y="28" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="16.024" y="28.628" size="1" layer="25" font="vector" ratio="15" rot="R270"/>
-<attribute name="VALUE" x="11.706" y="31.378" size="1.27" layer="27" rot="R270"/>
+<attribute name="VALUE" x="11.706" y="31.378" size="1" layer="27" rot="R270"/>
 </element>
 <element name="RN6" library="RoboJackets-Resistors" package="RA-8_2506" value="330" x="13.176775" y="9.823221875" smashed="yes" rot="R225">
 <attribute name="DIGIKEY" value="742C163331JPCT-ND" x="13.176775" y="9.823221875" size="1.778" layer="27" rot="R225" display="off"/>
 <attribute name="MPN" value="742C163331JP" x="13.176775" y="9.823221875" size="1.778" layer="27" rot="R225" display="off"/>
 <attribute name="NAME" x="15.143009375" y="9.634196875" size="1" layer="25" font="vector" ratio="15" rot="R225"/>
-<attribute name="VALUE" x="13.589725" y="14.187484375" size="1.27" layer="27" rot="R225"/>
+<attribute name="VALUE" x="13.589725" y="14.187484375" size="1" layer="27" rot="R225"/>
 </element>
 <element name="S3" library="RoboJackets-Switches" package="34EWMSP12M6RT" value="34EWMSP12M6RT" x="55" y="35" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="GH7540CT-ND" x="55" y="35" size="1.778" layer="27" rot="R270" display="off"/>
@@ -12134,7 +12134,7 @@ Your Eurocircuits Team
 <attribute name="DIGIKEY" value="122-1524-ND" x="0" y="23" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="XC3S250E-4TQG144C" x="0" y="23" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-5.94" y="10.925" size="1" layer="25" font="vector" ratio="15" rot="R180"/>
-<attribute name="VALUE" x="-1.905" y="19.19" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="-1.905" y="19.19" size="1" layer="27" rot="R90"/>
 </element>
 <element name="U4" library="RoboJackets-PowerICs" package="POWERSO-16" value="VND5E006ASPTR-E" x="-0.25" y="-5.5" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="497-11623-1-ND" x="-0.25" y="-5.5" size="1.778" layer="27" rot="R180" display="off"/>
@@ -12145,47 +12145,47 @@ Your Eurocircuits Team
 <attribute name="DIGIKEY" value="MCP1824T-1202E/OTCT-ND" x="5.25" y="-9" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MPN" value="MCP1824T-1202E/OT" x="5.25" y="-9" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="NAME" x="8.222" y="-7.972" size="1" layer="26" font="vector" ratio="15" rot="MR270"/>
-<attribute name="VALUE" x="2.202" y="-10.778" size="1.27" layer="28" ratio="10" rot="MR90"/>
+<attribute name="VALUE" x="2.202" y="-10.778" size="1" layer="28" ratio="10" rot="MR90"/>
 <attribute name="VOLTAGE" value="1.2V" x="5.25" y="-9" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="U6" library="RoboJackets-PowerICs" package="SOT-23-5" value="MCP1824T-2502E/OT" x="1.5" y="-9" smashed="yes" rot="MR0">
 <attribute name="DIGIKEY" value="MCP1824T-2502E/OTCT-ND" x="1.5" y="-9" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MPN" value="MCP1824T-2502E/OT" x="1.5" y="-9" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="NAME" x="0.472" y="-11.278" size="1" layer="26" font="vector" ratio="15" rot="MR180"/>
-<attribute name="VALUE" x="-1.548" y="-10.778" size="1.27" layer="28" ratio="10" rot="MR90"/>
+<attribute name="VALUE" x="-1.548" y="-10.778" size="1" layer="28" ratio="10" rot="MR90"/>
 <attribute name="VOLTAGE" value="2.5V" x="1.5" y="-9" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="M1:C1" library="rcl" package="C0603" value="1uF" x="-19.75" y="25.75" smashed="yes" rot="MR180">
 <attribute name="NAME" x="-21.885" y="24.615" size="1" layer="26" font="vector" ratio="15" rot="MR180"/>
-<attribute name="VALUE" x="-20.385" y="27.655" size="1.27" layer="28" rot="MR180"/>
+<attribute name="VALUE" x="-20.385" y="27.655" size="1" layer="28" rot="MR180"/>
 </element>
 <element name="M1:C10" library="rcl" package="C0603" value="0.1uF 50V" x="-30.75" y="12" smashed="yes">
 <attribute name="NAME" x="-31.385" y="9.885" size="1" layer="25" font="vector" ratio="15"/>
-<attribute name="VALUE" x="-31.385" y="10.095" size="1.27" layer="27"/>
+<attribute name="VALUE" x="-31.385" y="10.095" size="1" layer="27"/>
 </element>
 <element name="M1:C2" library="rcl" package="C0603" value="1uF" x="-19.75" y="28" smashed="yes" rot="MR180">
 <attribute name="NAME" x="-21.885" y="30.365" size="1" layer="26" font="vector" ratio="15" rot="MR180"/>
-<attribute name="VALUE" x="-20.385" y="29.905" size="1.27" layer="28" rot="MR180"/>
+<attribute name="VALUE" x="-20.385" y="29.905" size="1" layer="28" rot="MR180"/>
 </element>
 <element name="M1:C3" library="rcl" package="C0603" value="0.022uF 50V" x="-20.5" y="17.25" smashed="yes" rot="MR90">
 <attribute name="NAME" x="-22.865" y="15.615" size="1" layer="26" font="vector" ratio="15" rot="MR90"/>
-<attribute name="VALUE" x="-22.405" y="16.615" size="1.27" layer="28" rot="MR90"/>
+<attribute name="VALUE" x="-22.405" y="16.615" size="1" layer="28" rot="MR90"/>
 </element>
 <element name="M1:C6" library="rcl" package="C0603" value="0.1uF 50V" x="-38" y="3" smashed="yes" rot="R180">
 <attribute name="NAME" x="-32.115" y="3.615" size="1" layer="25" font="vector" ratio="15" rot="R180"/>
-<attribute name="VALUE" x="-37.365" y="4.905" size="1.27" layer="27" rot="R180"/>
+<attribute name="VALUE" x="-37.365" y="4.905" size="1" layer="27" rot="R180"/>
 </element>
 <element name="M1:C7" library="rcl" package="C0603" value="0.1uF 50V" x="-38" y="9.5" smashed="yes" rot="R180">
-<attribute name="NAME" x="-32.35" y="9.865" size="0.9" layer="25" font="vector" ratio="15" rot="R180"/>
-<attribute name="VALUE" x="-37.365" y="11.405" size="1.27" layer="27" rot="R180"/>
+<attribute name="NAME" x="-32.35" y="9.865" size="1" layer="25" font="vector" ratio="15" rot="R180"/>
+<attribute name="VALUE" x="-37.365" y="11.405" size="1" layer="27" rot="R180"/>
 </element>
 <element name="M1:C8" library="rcl" package="C0603" value="0.1uF 50V" x="-38" y="16" smashed="yes" rot="R180">
-<attribute name="NAME" x="-32.3" y="16.615" size="0.9" layer="25" font="vector" ratio="15" rot="R180"/>
-<attribute name="VALUE" x="-37.365" y="17.905" size="1.27" layer="27" rot="R180"/>
+<attribute name="NAME" x="-32.3" y="16.615" size="1" layer="25" font="vector" ratio="15" rot="R180"/>
+<attribute name="VALUE" x="-37.365" y="17.905" size="1" layer="27" rot="R180"/>
 </element>
 <element name="M1:C9" library="rcl" package="C0603" value="2.2uF 50V" x="-17.75" y="16" smashed="yes" rot="MR180">
 <attribute name="NAME" x="-19.6" y="14.865" size="1" layer="26" font="vector" ratio="15" rot="MR180"/>
-<attribute name="VALUE" x="-18.385" y="17.905" size="1.27" layer="28" rot="MR180"/>
+<attribute name="VALUE" x="-18.385" y="17.905" size="1" layer="28" rot="MR180"/>
 </element>
 <element name="M1:Q1" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="-40.25" y="6.25" smashed="yes" rot="MR180">
 <attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="-40.25" y="6.25" size="1.778" layer="28" rot="MR180" display="off"/>
@@ -12219,7 +12219,7 @@ Your Eurocircuits Team
 </element>
 <element name="M1:R1" library="rcl" package="R0603" value="10k" x="-17.75" y="18.25" smashed="yes" rot="MR0">
 <attribute name="NAME" x="-19.635" y="20.3" size="1" layer="26" font="vector" ratio="15" rot="MR180"/>
-<attribute name="VALUE" x="-17.115" y="16.345" size="1.27" layer="28" rot="MR0"/>
+<attribute name="VALUE" x="-17.115" y="16.345" size="1" layer="28" rot="MR0"/>
 </element>
 <element name="M1:U1" library="RoboJackets-PowerICs" package="TSSOP-48_PAD" value="DRV8303DCA" x="-26" y="19.75" smashed="yes" rot="R90">
 <attribute name="DIGIKEY" value="296-40070-1-ND" x="-26" y="19.75" size="1.778" layer="27" rot="R90" display="off"/>
@@ -12228,35 +12228,35 @@ Your Eurocircuits Team
 </element>
 <element name="M2:C1" library="rcl" package="C0603" value="1uF" x="-18" y="-5.25" smashed="yes" rot="R45">
 <attribute name="NAME" x="-17.89803125" y="-8.000003125" size="1" layer="25" font="vector" ratio="15" rot="R45"/>
-<attribute name="VALUE" x="-17.101978125" y="-7.04605625" size="1.27" layer="27" rot="R45"/>
+<attribute name="VALUE" x="-17.101978125" y="-7.04605625" size="1" layer="27" rot="R45"/>
 </element>
 <element name="M2:C10" library="rcl" package="C0603" value="0.1uF 50V" x="-22.75" y="6" smashed="yes" rot="MR315">
 <attribute name="NAME" x="-19.75" y="5.898028125" size="1" layer="26" font="vector" ratio="15" rot="MR315"/>
-<attribute name="VALUE" x="-20.953946875" y="5.101975" size="1.27" layer="28" rot="MR315"/>
+<attribute name="VALUE" x="-20.953946875" y="5.101975" size="1" layer="28" rot="MR315"/>
 </element>
 <element name="M2:C2" library="rcl" package="C0603" value="1uF" x="-24.5" y="7.75" smashed="yes" rot="MR315">
 <attribute name="NAME" x="-24" y="9.898028125" size="1" layer="26" font="vector" ratio="15" rot="MR315"/>
-<attribute name="VALUE" x="-22.703946875" y="6.851975" size="1.27" layer="28" rot="MR315"/>
+<attribute name="VALUE" x="-22.703946875" y="6.851975" size="1" layer="28" rot="MR315"/>
 </element>
 <element name="M2:C3" library="rcl" package="C0603" value="0.022uF 50V" x="-13.5" y="5.75" smashed="yes" rot="R135">
 <attribute name="NAME" x="-9" y="2.101971875" size="1" layer="25" font="vector" ratio="15" rot="R135"/>
-<attribute name="VALUE" x="-11.70395" y="6.648025" size="1.27" layer="27" rot="R135"/>
+<attribute name="VALUE" x="-11.70395" y="6.648025" size="1" layer="27" rot="R135"/>
 </element>
 <element name="M2:C6" library="rcl" package="C0603" value="0.1uF 50V" x="-20.45" y="-13.1" smashed="yes" rot="R225">
 <attribute name="NAME" x="-18.051975" y="-12.35" size="1" layer="25" font="vector" ratio="15" rot="R225"/>
-<attribute name="VALUE" x="-21.348028125" y="-11.30395" size="1.27" layer="27" rot="R225"/>
+<attribute name="VALUE" x="-21.348028125" y="-11.30395" size="1" layer="27" rot="R225"/>
 </element>
 <element name="M2:C7" library="rcl" package="C0603" value="0.1uF 50V" x="-25" y="-8.5" smashed="yes" rot="R225">
 <attribute name="NAME" x="-26.351975" y="-9.75" size="1" layer="25" font="vector" ratio="15" rot="R225"/>
-<attribute name="VALUE" x="-25.898028125" y="-6.70395" size="1.27" layer="27" rot="R225"/>
+<attribute name="VALUE" x="-25.898028125" y="-6.70395" size="1" layer="27" rot="R225"/>
 </element>
 <element name="M2:C8" library="rcl" package="C0603" value="0.1uF 50V" x="-29.6" y="-3.9" smashed="yes" rot="R225">
 <attribute name="NAME" x="-30.701975" y="-4.9" size="1" layer="25" font="vector" ratio="15" rot="R225"/>
-<attribute name="VALUE" x="-30.498028125" y="-2.10395" size="1.27" layer="27" rot="R225"/>
+<attribute name="VALUE" x="-30.498028125" y="-2.10395" size="1" layer="27" rot="R225"/>
 </element>
 <element name="M2:C9" library="rcl" package="C0603" value="2.2uF 50V" x="-17" y="0.25" smashed="yes" rot="MR315">
 <attribute name="NAME" x="-18" y="-1.351971875" size="1" layer="26" font="vector" ratio="15" rot="MR315"/>
-<attribute name="VALUE" x="-15.203946875" y="-0.648025" size="1.27" layer="28" rot="MR315"/>
+<attribute name="VALUE" x="-15.203946875" y="-0.648025" size="1" layer="28" rot="MR315"/>
 </element>
 <element name="M2:Q1" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="-24.35" y="-12.4" smashed="yes" rot="MR135">
 <attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="-24.35" y="-12.4" size="1.778" layer="28" rot="MR135" display="off"/>
@@ -12290,7 +12290,7 @@ Your Eurocircuits Team
 </element>
 <element name="M2:R1" library="rcl" package="R0603" value="10k" x="-18.5" y="1.75" smashed="yes" rot="MR135">
 <attribute name="NAME" x="-23" y="-2.148025" size="1" layer="26" font="vector" ratio="15" rot="MR135"/>
-<attribute name="VALUE" x="-20.29605" y="2.648028125" size="1.27" layer="28" rot="MR135"/>
+<attribute name="VALUE" x="-20.29605" y="2.648028125" size="1" layer="28" rot="MR135"/>
 </element>
 <element name="M2:U1" library="RoboJackets-PowerICs" package="TSSOP-48_PAD" value="DRV8303DCA" x="-20.5" y="3.25" smashed="yes" rot="R135">
 <attribute name="DIGIKEY" value="296-40070-1-ND" x="-20.5" y="3.25" size="1.778" layer="27" rot="R135" display="off"/>
@@ -12299,35 +12299,35 @@ Your Eurocircuits Team
 </element>
 <element name="M3:C1" library="rcl" package="C0603" value="1uF" x="15.75" y="-0.75" smashed="yes" rot="R315">
 <attribute name="NAME" x="11.5" y="2.648028125" size="1" layer="25" font="vector" ratio="15" rot="R315"/>
-<attribute name="VALUE" x="13.95395" y="-1.648025" size="1.27" layer="27" rot="R315"/>
+<attribute name="VALUE" x="13.95395" y="-1.648025" size="1" layer="27" rot="R315"/>
 </element>
 <element name="M3:C10" library="rcl" package="C0603" value="0.1uF 50V" x="31.25" y="5.5" smashed="yes" rot="R135">
 <attribute name="NAME" x="36" y="3.851971875" size="1" layer="25" font="vector" ratio="15" rot="R135"/>
-<attribute name="VALUE" x="33.04605" y="6.398025" size="1.27" layer="27" rot="R135"/>
+<attribute name="VALUE" x="33.04605" y="6.398025" size="1" layer="27" rot="R135"/>
 </element>
 <element name="M3:C2" library="rcl" package="C0603" value="1uF" x="14.25" y="-2.25" smashed="yes" rot="R315">
 <attribute name="NAME" x="9.75" y="1.398028125" size="1" layer="25" font="vector" ratio="15" rot="R315"/>
-<attribute name="VALUE" x="12.45395" y="-3.148025" size="1.27" layer="27" rot="R315"/>
+<attribute name="VALUE" x="12.45395" y="-3.148025" size="1" layer="27" rot="R315"/>
 </element>
 <element name="M3:C3" library="rcl" package="C0603" value="0.022uF 50V" x="20" y="8.25" smashed="yes" rot="R225">
 <attribute name="NAME" x="19.898025" y="11" size="1" layer="25" font="vector" ratio="15" rot="R225"/>
-<attribute name="VALUE" x="19.101971875" y="10.04605" size="1.27" layer="27" rot="R225"/>
+<attribute name="VALUE" x="19.101971875" y="10.04605" size="1" layer="27" rot="R225"/>
 </element>
 <element name="M3:C6" library="rcl" package="C0603" value="0.1uF 50V" x="37.75" y="1.5" smashed="yes" rot="R315">
 <attribute name="NAME" x="38.75" y="-0.101975" size="1" layer="25" font="vector" ratio="15" rot="R315"/>
-<attribute name="VALUE" x="35.953946875" y="0.601971875" size="1.27" layer="27" rot="R315"/>
+<attribute name="VALUE" x="35.953946875" y="0.601971875" size="1" layer="27" rot="R315"/>
 </element>
 <element name="M3:C7" library="rcl" package="C0603" value="0.1uF 50V" x="33" y="-2.75" smashed="yes" rot="R315">
 <attribute name="NAME" x="34" y="-4.601975" size="1" layer="25" font="vector" ratio="15" rot="R315"/>
-<attribute name="VALUE" x="31.203946875" y="-3.648028125" size="1.27" layer="27" rot="R315"/>
+<attribute name="VALUE" x="31.203946875" y="-3.648028125" size="1" layer="27" rot="R315"/>
 </element>
 <element name="M3:C8" library="rcl" package="C0603" value="0.1uF 50V" x="28.75" y="-7.5" smashed="yes" rot="R315">
 <attribute name="NAME" x="29.75" y="-9.101975" size="1" layer="25" font="vector" ratio="15" rot="R315"/>
-<attribute name="VALUE" x="26.953946875" y="-8.398028125" size="1.27" layer="27" rot="R315"/>
+<attribute name="VALUE" x="26.953946875" y="-8.398028125" size="1" layer="27" rot="R315"/>
 </element>
 <element name="M3:C9" library="rcl" package="C0603" value="2.2uF 50V" x="27.5" y="6.25" smashed="yes" rot="MR225">
 <attribute name="NAME" x="31.398028125" y="1.75" size="1" layer="26" font="vector" ratio="15" rot="MR45"/>
-<attribute name="VALUE" x="28.398025" y="8.04605" size="1.27" layer="28" rot="MR225"/>
+<attribute name="VALUE" x="28.398025" y="8.04605" size="1" layer="28" rot="MR225"/>
 </element>
 <element name="M3:Q1" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="36.75" y="-2" smashed="yes" rot="MR45">
 <attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="36.75" y="-2" size="1.778" layer="28" rot="MR45" display="off"/>
@@ -12361,44 +12361,44 @@ Your Eurocircuits Team
 </element>
 <element name="M3:R1" library="rcl" package="R0603" value="10k" x="26" y="4.75" smashed="yes" rot="MR45">
 <attribute name="NAME" x="29.648025" y="0.75" size="1" layer="26" font="vector" ratio="15" rot="MR45"/>
-<attribute name="VALUE" x="25.101971875" y="2.953946875" size="1.27" layer="28" rot="MR45"/>
+<attribute name="VALUE" x="25.101971875" y="2.953946875" size="1" layer="28" rot="MR45"/>
 </element>
 <element name="M3:U1" library="RoboJackets-PowerICs" package="TSSOP-48_PAD" value="DRV8303DCA" x="23.5" y="2.25" smashed="yes" rot="R225">
 <attribute name="DIGIKEY" value="296-40070-1-ND" x="23.5" y="2.25" size="1.778" layer="27" rot="R225" display="off"/>
 <attribute name="MPN" value="DRV8303DCAR" x="23.5" y="2.25" size="1.778" layer="27" rot="R225" display="off"/>
-<attribute name="NAME" x="26.224875" y="8.9675125" size="1" layer="25" font="vector" ratio="15" rot="R315"/>
+<attribute name="NAME" x="17.224875" y="-2.5324875" size="1" layer="25" font="vector" ratio="15" rot="R315"/>
 </element>
 <element name="M4:C1" library="rcl" package="C0603" value="1uF" x="28.75" y="34.75" smashed="yes" rot="R180">
 <attribute name="NAME" x="30.385" y="37" size="1" layer="25" font="vector" ratio="15" rot="R180"/>
-<attribute name="VALUE" x="29.385" y="36.655" size="1.27" layer="27" rot="R180"/>
+<attribute name="VALUE" x="29.385" y="36.655" size="1" layer="27" rot="R180"/>
 </element>
 <element name="M4:C10" library="rcl" package="C0603" value="0.1uF 50V" x="24.25" y="19" smashed="yes">
 <attribute name="NAME" x="17.865" y="18.5" size="1" layer="25" font="vector" ratio="15"/>
-<attribute name="VALUE" x="23.615" y="17.095" size="1.27" layer="27"/>
+<attribute name="VALUE" x="23.615" y="17.095" size="1" layer="27"/>
 </element>
 <element name="M4:C2" library="rcl" package="C0603" value="1uF" x="24.25" y="16.75" smashed="yes">
 <attribute name="NAME" x="18.365" y="16.385" size="1" layer="25" font="vector" ratio="15"/>
-<attribute name="VALUE" x="23.615" y="14.845" size="1.27" layer="27"/>
+<attribute name="VALUE" x="23.615" y="14.845" size="1" layer="27"/>
 </element>
 <element name="M4:C3" library="rcl" package="C0603" value="0.022uF 50V" x="21.5" y="27.6" smashed="yes" rot="R270">
 <attribute name="NAME" x="19.135" y="29.235" size="1" layer="25" font="vector" ratio="15" rot="R270"/>
-<attribute name="VALUE" x="19.595" y="28.235" size="1.27" layer="27" rot="R270"/>
+<attribute name="VALUE" x="19.595" y="28.235" size="1" layer="27" rot="R270"/>
 </element>
 <element name="M4:C6" library="rcl" package="C0603" value="0.1uF 50V" x="40.5" y="33" smashed="yes">
 <attribute name="NAME" x="34.615" y="32.635" size="1" layer="25" font="vector" ratio="15"/>
-<attribute name="VALUE" x="39.865" y="31.095" size="1.27" layer="27"/>
+<attribute name="VALUE" x="39.865" y="31.095" size="1" layer="27"/>
 </element>
 <element name="M4:C7" library="rcl" package="C0603" value="0.1uF 50V" x="40.5" y="26.5" smashed="yes">
 <attribute name="NAME" x="35.115" y="26.135" size="1" layer="25" font="vector" ratio="15"/>
-<attribute name="VALUE" x="39.865" y="24.595" size="1.27" layer="27"/>
+<attribute name="VALUE" x="39.865" y="24.595" size="1" layer="27"/>
 </element>
 <element name="M4:C8" library="rcl" package="C0603" value="0.1uF 50V" x="40.5" y="20" smashed="yes">
 <attribute name="NAME" x="34.615" y="19.635" size="1" layer="25" font="vector" ratio="15"/>
-<attribute name="VALUE" x="39.865" y="18.095" size="1.27" layer="27"/>
+<attribute name="VALUE" x="39.865" y="18.095" size="1" layer="27"/>
 </element>
 <element name="M4:C9" library="rcl" package="C0603" value="2.2uF 50V" x="28.5" y="32" smashed="yes" rot="MR180">
 <attribute name="NAME" x="30.115" y="32.365" size="1" layer="26" font="vector" ratio="15" rot="MR180"/>
-<attribute name="VALUE" x="27.865" y="33.905" size="1.27" layer="28" rot="MR180"/>
+<attribute name="VALUE" x="27.865" y="33.905" size="1" layer="28" rot="MR180"/>
 </element>
 <element name="M4:Q1" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="42.75" y="29.75" smashed="yes" rot="MR0">
 <attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="42.75" y="29.75" size="1.778" layer="28" rot="MR0" display="off"/>
@@ -12432,7 +12432,7 @@ Your Eurocircuits Team
 </element>
 <element name="M4:R1" library="rcl" package="R0603" value="10k" x="28.5" y="29.75" smashed="yes" rot="MR0">
 <attribute name="NAME" x="29.865" y="30.115" size="1" layer="26" font="vector" ratio="15" rot="MR180"/>
-<attribute name="VALUE" x="29.135" y="27.845" size="1.27" layer="28" rot="MR0"/>
+<attribute name="VALUE" x="29.135" y="27.845" size="1" layer="28" rot="MR0"/>
 </element>
 <element name="M4:U1" library="RoboJackets-PowerICs" package="TSSOP-48_PAD" value="DRV8303DCA" x="28.5" y="26.75" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="296-40070-1-ND" x="28.5" y="26.75" size="1.778" layer="27" rot="R270" display="off"/>
@@ -12443,7 +12443,7 @@ Your Eurocircuits Team
 <attribute name="DIGIKEY" value="742C163331JPCT-ND" x="-13.073225" y="9.823221875" size="1.778" layer="27" rot="R135" display="off"/>
 <attribute name="MPN" value="742C163331JP" x="-13.073225" y="9.823221875" size="1.778" layer="27" rot="R135" display="off"/>
 <attribute name="NAME" x="-13.26225" y="7.606984375" size="1" layer="25" font="vector" ratio="15" rot="R135"/>
-<attribute name="VALUE" x="-8.7089625" y="9.41026875" size="1.27" layer="27" rot="R135"/>
+<attribute name="VALUE" x="-8.7089625" y="9.41026875" size="1" layer="27" rot="R135"/>
 </element>
 <element name="U2" library="RoboJackets-Sensors" package="QFN-24-4MM2" value="MPU-6050" x="-12" y="39" smashed="yes" rot="R90">
 <attribute name="DIGIKEY" value="1428-1007-1-ND" x="-12" y="39" size="1.778" layer="27" rot="R90" display="off"/>
@@ -12452,27 +12452,27 @@ Your Eurocircuits Team
 </element>
 <element name="C27" library="rcl" package="C0603" value="0.47uF" x="-7.75" y="37.75" smashed="yes" rot="R90">
 <attribute name="NAME" x="-8.365" y="36.115" size="1" layer="25" font="vector" ratio="15" rot="R180"/>
-<attribute name="VALUE" x="-5.845" y="37.115" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="-5.845" y="37.115" size="1" layer="27" rot="R90"/>
 </element>
 <element name="C26" library="rcl" package="C0603" value="10000pF" x="-5.5" y="37.75" smashed="yes" rot="R90">
 <attribute name="NAME" x="-4.385" y="35.635" size="1" layer="25" font="vector" ratio="15"/>
-<attribute name="VALUE" x="-3.595" y="37.115" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="-3.595" y="37.115" size="1" layer="27" rot="R90"/>
 </element>
 <element name="C25" library="rcl" package="C0603" value="0.1uF" x="-7.25" y="40.5" smashed="yes">
 <attribute name="NAME" x="-5.385" y="40.635" size="1" layer="25" font="vector" ratio="15"/>
-<attribute name="VALUE" x="-7.885" y="38.595" size="1.27" layer="27"/>
+<attribute name="VALUE" x="-7.885" y="38.595" size="1" layer="27"/>
 </element>
 <element name="C24" library="rcl" package="C0603" value="2200pF" x="-16" y="39.75" smashed="yes" rot="R90">
 <attribute name="NAME" x="-17.115" y="41.865" size="1" layer="25" font="vector" ratio="15" rot="R180"/>
-<attribute name="VALUE" x="-14.095" y="39.115" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="-14.095" y="39.115" size="1" layer="27" rot="R90"/>
 </element>
 <element name="C22" library="rcl" package="C0603" value="0.47uF" x="-10.5" y="43.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="-8.115" y="46.365" size="1" layer="25" font="vector" ratio="15" rot="R180"/>
-<attribute name="VALUE" x="-8.595" y="42.865" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="-8.595" y="42.865" size="1" layer="27" rot="R90"/>
 </element>
 <element name="C23" library="rcl" package="C0603" value="0.47uF" x="-12.75" y="43.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="-11.615" y="46.365" size="1" layer="25" font="vector" ratio="15" rot="R180"/>
-<attribute name="VALUE" x="-10.845" y="42.865" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="-10.845" y="42.865" size="1" layer="27" rot="R90"/>
 </element>
 <element name="J4" library="RoboJackets-Connectors" package="HFW8R-1ST" value="HFW8R-1ST" x="63.75" y="47.5" smashed="yes" rot="MR270">
 <attribute name="DIGIKEY" value="609-1788-1-ND" x="63.75" y="47.5" size="1.778" layer="28" rot="MR270" display="off"/>
@@ -12483,27 +12483,27 @@ Your Eurocircuits Team
 <attribute name="DIGIKEY" value="GH7372-ND" x="-34.5" y="68.75" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="94HCB16T" x="-34.5" y="68.75" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="-30.33" y="62.235" size="1" layer="25" font="vector" ratio="15"/>
-<attribute name="VALUE" x="-38.31" y="73.83" size="1.27" layer="27" rot="R270" align="top-left"/>
+<attribute name="VALUE" x="-38.31" y="73.83" size="1" layer="27" rot="R270" align="top-left"/>
 </element>
 <element name="M1:J1" library="RoboJackets-Connectors" package="MKS-1658" value="MKS-1658" x="-62.5" y="12.5" smashed="yes" rot="R270">
 <attribute name="MPN" value="MKS 1658-6-0-808" x="-62.5" y="12.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="-65.56" y="14.39" size="1" layer="25" font="vector" ratio="15" rot="SR270"/>
-<attribute name="VALUE" x="-58.055" y="16.31" size="1.27" layer="27" rot="R270"/>
+<attribute name="VALUE" x="-58.055" y="16.31" size="1" layer="27" rot="R270"/>
 </element>
 <element name="M2:J1" library="RoboJackets-Connectors" package="MKS-1658" value="MKS-1658" x="-43" y="-20.8" smashed="yes" rot="R315">
 <attribute name="MPN" value="MKS 1658-6-0-808" x="-43" y="-20.8" size="1.778" layer="27" rot="R315" display="off"/>
 <attribute name="NAME" x="-46.4800625" y="-21.707975" size="1" layer="25" font="vector" ratio="15" rot="R315"/>
-<attribute name="VALUE" x="-42.55085" y="-14.962953125" size="1.27" layer="27" rot="R315"/>
+<attribute name="VALUE" x="-42.55085" y="-14.962953125" size="1" layer="27" rot="R315"/>
 </element>
 <element name="M3:J1" library="RoboJackets-Connectors" package="MKS-1658" value="MKS-1658" x="40.5" y="-23.5" smashed="yes" rot="R45">
 <attribute name="MPN" value="MKS 1658-6-0-808" x="40.5" y="-23.5" size="1.778" layer="27" rot="R45" display="off"/>
 <attribute name="NAME" x="41.157878125" y="-26.980246875" size="1" layer="25" font="vector" ratio="15" rot="R45"/>
-<attribute name="VALUE" x="34.662809375" y="-23.050971875" size="1.27" layer="27" rot="R45"/>
+<attribute name="VALUE" x="34.662809375" y="-23.050971875" size="1" layer="27" rot="R45"/>
 </element>
 <element name="M4:J1" library="RoboJackets-Connectors" package="MKS-1658" value="MKS-1658" x="62.5" y="16" smashed="yes" rot="R90">
 <attribute name="MPN" value="MKS 1658-6-0-808" x="62.5" y="16" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="65.56" y="14.11" size="1" layer="25" font="vector" ratio="15" rot="R90"/>
-<attribute name="VALUE" x="58.055" y="12.19" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="58.055" y="12.19" size="1" layer="27" rot="R90"/>
 </element>
 <element name="M1:J2" library="RoboJackets-Connectors" package="2MM-4-H" value="4-PIN_2MM-H" x="-57.75" y="-5.65" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="WM18933-ND" x="-57.75" y="-5.65" size="1.778" layer="27" rot="R270" display="off"/>
@@ -12537,7 +12537,7 @@ Your Eurocircuits Team
 <attribute name="NAME" x="-30.75" y="52.56" size="1" layer="25" font="vector" ratio="15"/>
 <attribute name="OC_FARNELL" value="unknown" x="-34.25" y="57.25" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="-34.25" y="57.25" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="-40.56" y="60.25" size="1.27" layer="27" rot="R270"/>
+<attribute name="VALUE" x="-40.56" y="60.25" size="1" layer="27" rot="R270"/>
 </element>
 <element name="J3" library="RoboJackets-Connectors" package="B2PS-CENTERED" value="B2PS-VH(LF)(SN)" x="-60.5" y="29.5" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="455-1648-ND" x="-60.5" y="29.5" size="1.778" layer="27" rot="R270" display="off"/>
@@ -12551,138 +12551,138 @@ Your Eurocircuits Team
 </element>
 <element name="R16" library="rcl" package="R0603" value="10k" x="-5" y="-9.25" smashed="yes" rot="MR90">
 <attribute name="NAME" x="-3.865" y="-11.885" size="1" layer="26" font="vector" ratio="15" rot="MR0"/>
-<attribute name="VALUE" x="-6.905" y="-9.885" size="1.27" layer="28" rot="MR90"/>
+<attribute name="VALUE" x="-6.905" y="-9.885" size="1" layer="28" rot="MR90"/>
 </element>
 <element name="R11" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="68k" x="30.25" y="52.25" smashed="yes" rot="R90">
 <attribute name="NAME" x="31.365" y="52.635" size="1" layer="25" font="vector" ratio="15"/>
-<attribute name="VALUE" x="32.155" y="51.615" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="32.155" y="51.615" size="1" layer="27" rot="R90"/>
 </element>
 <element name="R13" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10k" x="27.5" y="54" smashed="yes" rot="R180">
 <attribute name="NAME" x="29.135" y="55.865" size="1" layer="25" font="vector" ratio="15" rot="R180"/>
-<attribute name="VALUE" x="28.135" y="55.905" size="1.27" layer="27" rot="R180"/>
+<attribute name="VALUE" x="28.135" y="55.905" size="1" layer="27" rot="R180"/>
 </element>
 <element name="R12" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10k" x="21.25" y="52.25" smashed="yes" rot="R90">
 <attribute name="NAME" x="20.135" y="53.615" size="1" layer="25" font="vector" ratio="15" rot="R180"/>
-<attribute name="VALUE" x="23.155" y="51.615" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="23.155" y="51.615" size="1" layer="27" rot="R90"/>
 </element>
 <element name="R14" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10k" x="24" y="51.75" smashed="yes">
 <attribute name="NAME" x="22.615" y="49.385" size="1" layer="25" font="vector" ratio="15"/>
-<attribute name="VALUE" x="23.365" y="49.845" size="1.27" layer="27"/>
+<attribute name="VALUE" x="23.365" y="49.845" size="1" layer="27"/>
 </element>
 <element name="C28" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="27.5" y="51.75" smashed="yes" rot="R180">
 <attribute name="NAME" x="28.885" y="50.365" size="1" layer="25" font="vector" ratio="15" rot="R180"/>
-<attribute name="VALUE" x="28.135" y="53.655" size="1.27" layer="27" rot="R180"/>
+<attribute name="VALUE" x="28.135" y="53.655" size="1" layer="27" rot="R180"/>
 </element>
 <element name="C29" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="24" y="54" smashed="yes">
 <attribute name="NAME" x="22.365" y="54.885" size="1" layer="25" font="vector" ratio="15"/>
-<attribute name="VALUE" x="23.365" y="52.095" size="1.27" layer="27"/>
+<attribute name="VALUE" x="23.365" y="52.095" size="1" layer="27"/>
 </element>
 <element name="D11" library="RoboJackets-LEDs" package="CHIP-LED0603" value="RED" x="-55" y="-1.75" smashed="yes">
 <attribute name="DIGIKEY" value="160-1447-1-ND" x="-55" y="-1.75" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="LTST-C191KRKT" x="-55" y="-1.75" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-53.115" y="0.75" size="1" layer="25" font="vector" ratio="15" rot="R180"/>
-<attribute name="VALUE" x="-53.095" y="-2.385" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="-53.095" y="-2.385" size="1" layer="27" rot="R90"/>
 <attribute name="VALUE" value="RED" x="-55" y="-1.75" size="1.778" layer="27" display="off"/>
 </element>
 <element name="D12" library="RoboJackets-LEDs" package="CHIP-LED0603" value="RED" x="-55.75" y="52" smashed="yes">
 <attribute name="DIGIKEY" value="160-1447-1-ND" x="-55.75" y="52" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="LTST-C191KRKT" x="-55.75" y="52" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-57.5" y="52.75" size="1" layer="25" font="vector" ratio="15" rot="SR270"/>
-<attribute name="VALUE" x="-53.845" y="51.365" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="-53.845" y="51.365" size="1" layer="27" rot="R90"/>
 <attribute name="VALUE" value="RED" x="-55.75" y="52" size="1.778" layer="27" display="off"/>
 </element>
 <element name="D13" library="RoboJackets-LEDs" package="CHIP-LED0603" value="RED" x="56.5" y="1.25" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="160-1447-1-ND" x="56.5" y="1.25" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="LTST-C191KRKT" x="56.5" y="1.25" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="57" y="-2.75" size="1" layer="25" font="vector" ratio="15" rot="R90"/>
-<attribute name="VALUE" x="54.595" y="1.885" size="1.27" layer="27" rot="R270"/>
+<attribute name="VALUE" x="54.595" y="1.885" size="1" layer="27" rot="R270"/>
 <attribute name="VALUE" value="RED" x="56.5" y="1.25" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="D15" library="RoboJackets-LEDs" package="CHIP-LED0603" value="RED" x="50.5" y="-3.75" smashed="yes" rot="R136">
 <attribute name="DIGIKEY" value="160-1447-1-ND" x="50.5" y="-3.75" size="1.778" layer="27" rot="R136" display="off"/>
 <attribute name="MPN" value="LTST-C191KRKT" x="50.5" y="-3.75" size="1.778" layer="27" rot="R136" display="off"/>
 <attribute name="NAME" x="52.083065625" y="-3.9117375" size="1" layer="25" font="vector" ratio="15" rot="R226"/>
-<attribute name="VALUE" x="49.5707625" y="-1.969896875" size="1.27" layer="27" rot="R226"/>
+<attribute name="VALUE" x="49.5707625" y="-1.969896875" size="1" layer="27" rot="R226"/>
 <attribute name="VALUE" value="RED" x="50.5" y="-3.75" size="1.778" layer="27" rot="R136" display="off"/>
 </element>
 <element name="D14" library="RoboJackets-LEDs" package="CHIP-LED0603" value="RED" x="-22.75" y="-28.5" smashed="yes" rot="R90">
 <attribute name="DIGIKEY" value="160-1447-1-ND" x="-22.75" y="-28.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="LTST-C191KRKT" x="-22.75" y="-28.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-24.004084375" y="-30.097225" size="1" layer="25" font="vector" ratio="15"/>
-<attribute name="VALUE" x="-22.115" y="-26.59499375" size="1.27" layer="27" rot="R180"/>
+<attribute name="VALUE" x="-22.115" y="-26.59499375" size="1" layer="27" rot="R180"/>
 <attribute name="VALUE" value="RED" x="-22.75" y="-28.5" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C17" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="6.75" y="18.75" smashed="yes" rot="MR0">
 <attribute name="NAME" x="8.615" y="19.365" size="1" layer="26" font="vector" ratio="15" rot="MR180"/>
-<attribute name="VALUE" x="7.385" y="16.845" size="1.27" layer="28" rot="MR0"/>
+<attribute name="VALUE" x="7.385" y="16.845" size="1" layer="28" rot="MR0"/>
 </element>
 <element name="C12" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="4.25" y="30" smashed="yes" rot="MR270">
 <attribute name="NAME" x="3.635" y="31.865" size="1" layer="26" font="vector" ratio="15" rot="MR90"/>
-<attribute name="VALUE" x="6.155" y="30.635" size="1.27" layer="28" rot="MR270"/>
+<attribute name="VALUE" x="6.155" y="30.635" size="1" layer="28" rot="MR270"/>
 </element>
 <element name="C3" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="-7" y="27.25" smashed="yes" rot="MR180">
 <attribute name="NAME" x="-8.135" y="26.365" size="1" layer="26" font="vector" ratio="15" rot="MR180"/>
-<attribute name="VALUE" x="-7.635" y="29.155" size="1.27" layer="28" rot="MR180"/>
+<attribute name="VALUE" x="-7.635" y="29.155" size="1" layer="28" rot="MR180"/>
 </element>
 <element name="C5" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="-5.25" y="16" smashed="yes" rot="MR90">
 <attribute name="NAME" x="-4.885" y="13.885" size="1" layer="26" font="vector" ratio="15" rot="MR270"/>
-<attribute name="VALUE" x="-7.155" y="15.365" size="1.27" layer="28" rot="MR90"/>
+<attribute name="VALUE" x="-7.155" y="15.365" size="1" layer="28" rot="MR90"/>
 </element>
 <element name="C20" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="7" y="28.25" smashed="yes" rot="MR0">
 <attribute name="NAME" x="8.865" y="28.865" size="1" layer="26" font="vector" ratio="15" rot="MR180"/>
-<attribute name="VALUE" x="7.635" y="26.345" size="1.27" layer="28" rot="MR0"/>
+<attribute name="VALUE" x="7.635" y="26.345" size="1" layer="28" rot="MR0"/>
 </element>
 <element name="C6" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="-5.25" y="30" smashed="yes" rot="MR270">
 <attribute name="NAME" x="-5.615" y="31.865" size="1" layer="26" font="vector" ratio="15" rot="MR90"/>
-<attribute name="VALUE" x="-3.345" y="30.635" size="1.27" layer="28" rot="MR270"/>
+<attribute name="VALUE" x="-3.345" y="30.635" size="1" layer="28" rot="MR270"/>
 </element>
 <element name="C1" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="-7.5" y="16" smashed="yes" rot="MR270">
 <attribute name="NAME" x="-7.135" y="13.885" size="1" layer="26" font="vector" ratio="15" rot="MR270"/>
-<attribute name="VALUE" x="-5.595" y="16.635" size="1.27" layer="28" rot="MR270"/>
+<attribute name="VALUE" x="-5.595" y="16.635" size="1" layer="28" rot="MR270"/>
 </element>
 <element name="C13" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="4" y="16" smashed="yes" rot="MR90">
 <attribute name="NAME" x="4.365" y="13.885" size="1" layer="26" font="vector" ratio="15" rot="MR270"/>
-<attribute name="VALUE" x="2.095" y="15.365" size="1.27" layer="28" rot="MR90"/>
+<attribute name="VALUE" x="2.095" y="15.365" size="1" layer="28" rot="MR90"/>
 </element>
 <element name="C18" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="6.75" y="21" smashed="yes" rot="MR0">
 <attribute name="NAME" x="8.615" y="21.615" size="1" layer="26" font="vector" ratio="15" rot="MR180"/>
-<attribute name="VALUE" x="7.385" y="19.095" size="1.27" layer="28" rot="MR0"/>
+<attribute name="VALUE" x="7.385" y="19.095" size="1" layer="28" rot="MR0"/>
 </element>
 <element name="C19" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="7" y="26" smashed="yes" rot="MR0">
 <attribute name="NAME" x="8.865" y="26.615" size="1" layer="26" font="vector" ratio="15" rot="MR180"/>
-<attribute name="VALUE" x="7.635" y="24.095" size="1.27" layer="28" rot="MR0"/>
+<attribute name="VALUE" x="7.635" y="24.095" size="1" layer="28" rot="MR0"/>
 </element>
 <element name="C10" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="2" y="30" smashed="yes" rot="MR270">
 <attribute name="NAME" x="1.385" y="31.865" size="1" layer="26" font="vector" ratio="15" rot="MR90"/>
-<attribute name="VALUE" x="3.905" y="30.635" size="1.27" layer="28" rot="MR270"/>
+<attribute name="VALUE" x="3.905" y="30.635" size="1" layer="28" rot="MR270"/>
 </element>
 <element name="C14" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="7" y="30.5" smashed="yes" rot="MR180">
 <attribute name="NAME" x="8.865" y="31.115" size="1" layer="26" font="vector" ratio="15" rot="MR180"/>
-<attribute name="VALUE" x="6.365" y="32.405" size="1.27" layer="28" rot="MR180"/>
+<attribute name="VALUE" x="6.365" y="32.405" size="1" layer="28" rot="MR180"/>
 </element>
 <element name="C7" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="-3" y="30" smashed="yes" rot="MR270">
 <attribute name="NAME" x="-3.365" y="31.865" size="1" layer="26" font="vector" ratio="15" rot="MR90"/>
-<attribute name="VALUE" x="-1.095" y="30.635" size="1.27" layer="28" rot="MR270"/>
+<attribute name="VALUE" x="-1.095" y="30.635" size="1" layer="28" rot="MR270"/>
 </element>
 <element name="C4" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="-7.5" y="30" smashed="yes" rot="MR90">
 <attribute name="NAME" x="-8.115" y="31.865" size="1" layer="26" font="vector" ratio="15" rot="MR90"/>
-<attribute name="VALUE" x="-9.405" y="29.365" size="1.27" layer="28" rot="MR90"/>
+<attribute name="VALUE" x="-9.405" y="29.365" size="1" layer="28" rot="MR90"/>
 </element>
 <element name="C2" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="-7" y="18.75" smashed="yes" rot="MR180">
 <attribute name="NAME" x="-7.635" y="18.115" size="1" layer="26" font="vector" ratio="15" rot="MR180"/>
-<attribute name="VALUE" x="-7.635" y="20.655" size="1.27" layer="28" rot="MR180"/>
+<attribute name="VALUE" x="-7.635" y="20.655" size="1" layer="28" rot="MR180"/>
 </element>
 <element name="C8" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="-3" y="16" smashed="yes" rot="MR90">
 <attribute name="NAME" x="-2.385" y="13.885" size="1" layer="26" font="vector" ratio="15" rot="MR270"/>
-<attribute name="VALUE" x="-4.905" y="15.365" size="1.27" layer="28" rot="MR90"/>
+<attribute name="VALUE" x="-4.905" y="15.365" size="1" layer="28" rot="MR90"/>
 </element>
 <element name="C15" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="6.25" y="16" smashed="yes" rot="MR90">
 <attribute name="NAME" x="6.865" y="13.885" size="1" layer="26" font="vector" ratio="15" rot="MR270"/>
-<attribute name="VALUE" x="4.345" y="15.365" size="1.27" layer="28" rot="MR90"/>
+<attribute name="VALUE" x="4.345" y="15.365" size="1" layer="28" rot="MR90"/>
 </element>
 <element name="C16" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="8.5" y="16" smashed="yes" rot="MR90">
 <attribute name="NAME" x="9.115" y="13.885" size="1" layer="26" font="vector" ratio="15" rot="MR270"/>
-<attribute name="VALUE" x="6.595" y="15.365" size="1.27" layer="28" rot="MR90"/>
+<attribute name="VALUE" x="6.595" y="15.365" size="1" layer="28" rot="MR90"/>
 </element>
 <element name="X1" library="RoboJackets-FreqGen" package="ASV" value="ASV-18.432MHZ-EJ-T" x="2.25" y="39.25" smashed="yes" rot="MR180">
 <attribute name="DIGIKEY" value="535-9314-1-ND" x="2.25" y="39.25" size="1.778" layer="28" rot="MR180" display="off"/>
@@ -12692,63 +12692,63 @@ Your Eurocircuits Team
 </element>
 <element name="C9" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="3.75" y="43.75" smashed="yes" rot="MR180">
 <attribute name="NAME" x="5.615" y="44.115" size="1" layer="26" font="vector" ratio="15" rot="MR180"/>
-<attribute name="VALUE" x="3.115" y="45.655" size="1.27" layer="28" rot="MR180"/>
+<attribute name="VALUE" x="3.115" y="45.655" size="1" layer="28" rot="MR180"/>
 </element>
 <element name="R9" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="4.7k" x="10.75" y="16" smashed="yes" rot="MR90">
 <attribute name="NAME" x="11.115" y="13.885" size="1" layer="26" font="vector" ratio="15" rot="MR270"/>
-<attribute name="VALUE" x="8.845" y="15.365" size="1.27" layer="28" rot="MR90"/>
+<attribute name="VALUE" x="8.845" y="15.365" size="1" layer="28" rot="MR90"/>
 </element>
 <element name="R5" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="330" x="-10.75" y="32.5" smashed="yes" rot="MR270">
 <attribute name="NAME" x="-11.885" y="33.635" size="1" layer="26" font="vector" ratio="15" rot="MR270"/>
-<attribute name="VALUE" x="-8.845" y="33.135" size="1.27" layer="28" rot="MR270"/>
+<attribute name="VALUE" x="-8.845" y="33.135" size="1" layer="28" rot="MR270"/>
 </element>
 <element name="D3" library="RoboJackets-LEDs" package="CHIP-LED0603" value="RED" x="-24.5" y="57.25" smashed="yes" rot="R90">
 <attribute name="DIGIKEY" value="160-1447-1-ND" x="-24.5" y="57.25" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="LTST-C191KRKT" x="-24.5" y="57.25" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-23.615" y="58.865" size="1" layer="25" font="vector" ratio="15" rot="R180"/>
-<attribute name="VALUE" x="-23.865" y="59.155" size="1.27" layer="27" rot="R180"/>
+<attribute name="VALUE" x="-23.865" y="59.155" size="1" layer="27" rot="R180"/>
 <attribute name="VALUE" value="RED" x="-24.5" y="57.25" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="D4" library="RoboJackets-LEDs" package="CHIP-LED0603" value="RED" x="-15.75" y="42.75" smashed="yes" rot="R90">
 <attribute name="DIGIKEY" value="160-1447-1-ND" x="-15.75" y="42.75" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="LTST-C191KRKT" x="-15.75" y="42.75" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-17.115" y="43.115" size="1" layer="25" font="vector" ratio="15" rot="R180"/>
-<attribute name="VALUE" x="-15.115" y="44.655" size="1.27" layer="27" rot="R180"/>
+<attribute name="VALUE" x="-15.115" y="44.655" size="1" layer="27" rot="R180"/>
 <attribute name="VALUE" value="RED" x="-15.75" y="42.75" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R17" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="330" x="-6" y="-32.6" smashed="yes" rot="MR0">
 <attribute name="NAME" x="-9" y="-33.1" size="1" layer="26" font="vector" ratio="15" rot="MR0"/>
-<attribute name="VALUE" x="-5.365" y="-34.505" size="1.27" layer="28" rot="MR0"/>
+<attribute name="VALUE" x="-5.365" y="-34.505" size="1" layer="28" rot="MR0"/>
 </element>
 <element name="D6" library="RoboJackets-LEDs" package="CHIP-LED0603" value="GREEN" x="-6" y="-32.5" smashed="yes" rot="R90">
 <attribute name="DIGIKEY" value="160-1446-1-ND" x="-6" y="-32.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="LTST-C191KGKT" x="-6" y="-32.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-2" y="-32" size="1" layer="25" font="vector" ratio="15" rot="R180"/>
-<attribute name="VALUE" x="-5.365" y="-30.595" size="1.27" layer="27" rot="R180"/>
+<attribute name="VALUE" x="-5.365" y="-30.595" size="1" layer="27" rot="R180"/>
 <attribute name="VALUE" value="GREEN" x="-6" y="-32.5" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="SB1" library="RoboJackets-Switches" package="SB0603" value="SOLDERBRIDGESB0603" x="-2.25" y="-5.75" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="-1.615" y="-7.655" size="1.27" layer="28" rot="MR0"/>
+<attribute name="VALUE" x="-1.615" y="-7.655" size="1" layer="28" rot="MR0"/>
 </element>
 <element name="SB2" library="RoboJackets-Switches" package="SB0603" value="SOLDERBRIDGESB0603" x="5.25" y="-5.75" smashed="yes" rot="MR180">
-<attribute name="VALUE" x="4.615" y="-3.845" size="1.27" layer="28" rot="MR180"/>
+<attribute name="VALUE" x="4.615" y="-3.845" size="1" layer="28" rot="MR180"/>
 </element>
 <element name="SB4" library="RoboJackets-Switches" package="SB0603" value="SOLDERBRIDGESB0603" x="1.5" y="-5.75" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="2.135" y="-7.655" size="1.27" layer="28" rot="MR0"/>
+<attribute name="VALUE" x="2.135" y="-7.655" size="1" layer="28" rot="MR0"/>
 </element>
 <element name="SB3" library="RoboJackets-Switches" package="SB0603" value="SOLDERBRIDGESB0603" x="-5.75" y="-5.75" smashed="yes" rot="MR180">
-<attribute name="VALUE" x="-6.385" y="-3.845" size="1.27" layer="28" rot="MR180"/>
+<attribute name="VALUE" x="-6.385" y="-3.845" size="1" layer="28" rot="MR180"/>
 </element>
 <element name="D10" library="RoboJackets-LEDs" package="CHIP-LED0603" value="GREEN" x="-6" y="-34.75" smashed="yes" rot="R90">
 <attribute name="DIGIKEY" value="160-1446-1-ND" x="-6" y="-34.75" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="LTST-C191KGKT" x="-6" y="-34.75" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-1" y="-34.25" size="1" layer="25" font="vector" ratio="15" rot="R180"/>
-<attribute name="VALUE" x="-5.365" y="-32.845" size="1.27" layer="27" rot="R180"/>
+<attribute name="VALUE" x="-5.365" y="-32.845" size="1" layer="27" rot="R180"/>
 <attribute name="VALUE" value="GREEN" x="-6" y="-34.75" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R24" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="1k" x="-6" y="-34.75" smashed="yes" rot="MR180">
 <attribute name="NAME" x="-9" y="-35.25" size="1" layer="26" font="vector" ratio="15" rot="MR0"/>
-<attribute name="VALUE" x="-6.635" y="-32.845" size="1.27" layer="28" rot="MR180"/>
+<attribute name="VALUE" x="-6.635" y="-32.845" size="1" layer="28" rot="MR180"/>
 </element>
 <element name="XF1" library="RoboJackets-Fuses" package="3557-2" value="30A" x="24" y="-28.5" smashed="yes" rot="R90">
 <attribute name="DIGIKEY" value="36-3557-2-ND" x="24" y="-28.5" size="1.778" layer="27" rot="R90" display="off"/>
@@ -12757,13 +12757,13 @@ Your Eurocircuits Team
 </element>
 <element name="C30" library="rcl" package="C0603" value="1uF" x="-2.25" y="-3.25" smashed="yes" rot="MR0">
 <attribute name="NAME" x="-0.115" y="-2.115" size="1" layer="26" font="vector" ratio="15" rot="MR0"/>
-<attribute name="VALUE" x="-1.615" y="-5.155" size="1.27" layer="28" rot="MR0"/>
+<attribute name="VALUE" x="-1.615" y="-5.155" size="1" layer="28" rot="MR0"/>
 </element>
 <element name="D5" library="RoboJackets-LEDs" package="CHIP-LED0603" value="RED" x="54.25" y="47.75" smashed="yes">
 <attribute name="DIGIKEY" value="160-1447-1-ND" x="54.25" y="47.75" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="LTST-C191KRKT" x="54.25" y="47.75" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="52.365" y="49.135" size="1" layer="25" font="vector" ratio="15"/>
-<attribute name="VALUE" x="56.155" y="47.115" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="56.155" y="47.115" size="1" layer="27" rot="R90"/>
 </element>
 <element name="D9" library="RoboJackets-Diodes" package="SOD123" value="" x="-7" y="-3.25" smashed="yes" rot="MR180">
 <attribute name="NAME" x="-8.35" y="-0.75" size="1" layer="26" font="vector" ratio="15" rot="MR180"/>
@@ -12771,15 +12771,15 @@ Your Eurocircuits Team
 </element>
 <element name="R6" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="68k" x="7.5" y="0.75" smashed="yes" rot="R90">
 <attribute name="NAME" x="7.865" y="2.615" size="1" layer="25" font="vector" ratio="15" rot="R90"/>
-<attribute name="VALUE" x="9.405" y="0.115" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="9.405" y="0.115" size="1" layer="27" rot="R90"/>
 </element>
 <element name="R7" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10k" x="9.75" y="4.75" smashed="yes" rot="R90">
 <attribute name="NAME" x="10.115" y="6.615" size="1" layer="25" font="vector" ratio="15" rot="R90"/>
-<attribute name="VALUE" x="11.655" y="4.115" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="11.655" y="4.115" size="1" layer="27" rot="R90"/>
 </element>
 <element name="C11" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="5" y="1.25" smashed="yes" rot="R90">
 <attribute name="NAME" x="5.365" y="3.115" size="1" layer="25" font="vector" ratio="15" rot="R90"/>
-<attribute name="VALUE" x="6.905" y="0.615" size="1.27" layer="27" rot="R90"/>
+<attribute name="VALUE" x="6.905" y="0.615" size="1" layer="27" rot="R90"/>
 </element>
 <element name="U$2" library="RoboJackets-Aesthetics" package="ROBOJACKETS" value="" x="0" y="40.96" smashed="yes"/>
 <element name="U$3" library="RoboJackets-Aesthetics" package="MOTOR-1" value="" x="-58.75" y="23.81" smashed="yes" rot="R270"/>
@@ -12791,147 +12791,147 @@ Your Eurocircuits Team
 <element name="U$10" library="RoboJackets-Aesthetics" package="ERR-IMU" value="" x="-18" y="43.56" smashed="yes"/>
 <element name="U$11" library="RoboJackets-Aesthetics" package="ROBOBUZZ_1.0X2" value="" x="14" y="48" smashed="yes"/>
 <element name="M1:U2" library="RoboJackets-ICs" package="PW0008A_N" value="INA240PWR" x="-53" y="7" smashed="yes" rot="MR180">
-<attribute name="NAME" x="-51.2766" y="9.095" size="1.27" layer="26" ratio="6" rot="SMR0"/>
+<attribute name="NAME" x="-51.2766" y="9.095" size="1" layer="26" ratio="6" rot="SMR0"/>
 </element>
 <element name="M2:U2" library="RoboJackets-ICs" package="PW0008A_N" value="INA240PWR" x="-30" y="-21" smashed="yes" rot="MR135">
-<attribute name="NAME" x="-25.969865625" y="-21.16394375" size="1.27" layer="26" ratio="6" rot="SMR315"/>
+<attribute name="NAME" x="-25.969865625" y="-21.16394375" size="1" layer="26" ratio="6" rot="SMR315"/>
 </element>
 <element name="M3:U2" library="RoboJackets-ICs" package="PW0008A_N" value="INA240PWR" x="43" y="-10" smashed="yes" rot="MR45">
-<attribute name="NAME" x="46.663946875" y="-10.969865625" size="1.27" layer="26" ratio="6" rot="SMR45"/>
+<attribute name="NAME" x="46.663946875" y="-10.969865625" size="1" layer="26" ratio="6" rot="SMR45"/>
 </element>
 <element name="M4:U2" library="RoboJackets-ICs" package="PW0008A_N" value="INA240PWR" x="54" y="26" smashed="yes" rot="MR0">
-<attribute name="NAME" x="56.7766" y="27.405" size="1.27" layer="26" ratio="6" rot="SMR0"/>
+<attribute name="NAME" x="56.7766" y="27.405" size="1" layer="26" ratio="6" rot="SMR0"/>
 </element>
 <element name="M1:U3" library="RoboJackets-ICs" package="PW0008A_N" value="INA240PWR" x="-52.5" y="12.75" smashed="yes" rot="MR180">
-<attribute name="NAME" x="-50.7766" y="14.845" size="1.27" layer="26" ratio="6" rot="SMR0"/>
+<attribute name="NAME" x="-50.7766" y="14.845" size="1" layer="26" ratio="6" rot="SMR0"/>
 </element>
 <element name="M2:U3" library="RoboJackets-ICs" package="PW0008A_N" value="INA240PWR" x="-34.5" y="-16.5" smashed="yes" rot="MR135">
-<attribute name="NAME" x="-30.469865625" y="-16.66394375" size="1.27" layer="26" ratio="6" rot="SMR315"/>
+<attribute name="NAME" x="-30.469865625" y="-16.66394375" size="1" layer="26" ratio="6" rot="SMR315"/>
 </element>
 <element name="M3:U3" library="RoboJackets-ICs" package="PW0008A_N" value="INA240PWR" x="38.5" y="-14.5" smashed="yes" rot="MR45">
-<attribute name="NAME" x="42.16394375" y="-15.469865625" size="1.27" layer="26" ratio="6" rot="SMR45"/>
+<attribute name="NAME" x="42.16394375" y="-15.469865625" size="1" layer="26" ratio="6" rot="SMR45"/>
 </element>
 <element name="M4:U3" library="RoboJackets-ICs" package="PW0008A_N" value="INA240PWR" x="54" y="20" smashed="yes" rot="MR0">
-<attribute name="NAME" x="56.7766" y="21.405" size="1.27" layer="26" ratio="6" rot="SMR0"/>
+<attribute name="NAME" x="56.7766" y="21.405" size="1" layer="26" ratio="6" rot="SMR0"/>
 </element>
 <element name="U10" library="RoboJackets-PowerICs" package="MPM3620GQV-P" value="MPM3620GQV-P" x="11.5" y="-7.5" smashed="yes" rot="MR0">
 <attribute name="NAME" x="13" y="-4.25" size="1" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="13" y="-10.25" size="1" layer="28" rot="MR0" align="top-left"/>
 </element>
 <element name="R27" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="43.2k" x="9.5" y="-15" smashed="yes" rot="MR0">
-<attribute name="NAME" x="10.135" y="-14.365" size="1.27" layer="26" rot="MR0"/>
+<attribute name="NAME" x="10.135" y="-14.365" size="1" layer="26" rot="MR0"/>
 <attribute name="SPICEPREFIX" value="R" x="9.5" y="-15" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="VALUE" x="10.135" y="-16.905" size="1.27" layer="28" rot="MR0"/>
+<attribute name="VALUE" x="10.135" y="-16.905" size="1" layer="28" rot="MR0"/>
 </element>
 <element name="R28" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="150k" x="7.5" y="-14" smashed="yes" rot="MR0">
-<attribute name="NAME" x="8.135" y="-13.365" size="1.27" layer="26" rot="MR0"/>
+<attribute name="NAME" x="8.135" y="-13.365" size="1" layer="26" rot="MR0"/>
 <attribute name="SPICEPREFIX" value="R" x="7.5" y="-14" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="VALUE" x="8.135" y="-15.905" size="1.27" layer="28" rot="MR0"/>
+<attribute name="VALUE" x="8.135" y="-15.905" size="1" layer="28" rot="MR0"/>
 </element>
 <element name="R25" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="160k 1%" x="12.5" y="-13" smashed="yes" rot="MR0">
-<attribute name="NAME" x="10.635" y="-13.365" size="1.27" layer="26" rot="MR0"/>
+<attribute name="NAME" x="10.635" y="-13.365" size="1" layer="26" rot="MR0"/>
 <attribute name="SPICEPREFIX" value="R" x="12.5" y="-13" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="VALUE" x="13.135" y="-14.905" size="1.27" layer="28" rot="MR0"/>
+<attribute name="VALUE" x="13.135" y="-14.905" size="1" layer="28" rot="MR0"/>
 </element>
 <element name="R26" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="30.1k 1%" x="14" y="-8.5" smashed="yes" rot="MR0">
-<attribute name="NAME" x="14.635" y="-7.865" size="1.27" layer="26" rot="MR0"/>
+<attribute name="NAME" x="14.635" y="-7.865" size="1" layer="26" rot="MR0"/>
 <attribute name="SPICEPREFIX" value="R" x="14" y="-8.5" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="VALUE" x="14.635" y="-10.405" size="1.27" layer="28" rot="MR0"/>
+<attribute name="VALUE" x="14.635" y="-10.405" size="1" layer="28" rot="MR0"/>
 </element>
 <element name="C32" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22uF 16V" x="-6.5" y="-13.5" smashed="yes" rot="MR0">
 <attribute name="NAME" x="-6.23" y="-15.73" size="1" layer="26" rot="MR0"/>
 <attribute name="SPICEPREFIX" value="C" x="-6.5" y="-13.5" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="VALUE" x="-5.23" y="-16.04" size="1.27" layer="28" rot="MR0"/>
+<attribute name="VALUE" x="-5.23" y="-16.04" size="1" layer="28" rot="MR0"/>
 </element>
 <element name="R10" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="330" x="-6" y="-30.5" smashed="yes" rot="MR180">
 <attribute name="NAME" x="-8.9" y="-31.25" size="1" layer="26" rot="MR0"/>
-<attribute name="VALUE" x="-6.635" y="-28.595" size="1.27" layer="28" rot="MR180"/>
+<attribute name="VALUE" x="-6.635" y="-28.595" size="1" layer="28" rot="MR180"/>
 </element>
 <element name="D16" library="RoboJackets-LEDs" package="CHIP-LED0603" value="GREEN" x="-6" y="-30.5" smashed="yes" rot="R90">
 <attribute name="DIGIKEY" value="160-1446-1-ND" x="-6" y="-30.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="LTST-C191KGKT" x="-6" y="-30.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-1.365" y="-30.135" size="1" layer="25" rot="R180"/>
-<attribute name="VALUE" x="-5.365" y="-28.595" size="1.27" layer="27" rot="R180"/>
+<attribute name="VALUE" x="-5.365" y="-28.595" size="1" layer="27" rot="R180"/>
 </element>
 <element name="R15" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="4.7k" x="10" y="50.5" smashed="yes" rot="R90">
-<attribute name="NAME" x="12.365" y="53.365" size="1.27" layer="25" rot="R180"/>
-<attribute name="VALUE" x="11.905" y="49.865" size="1.27" layer="27" rot="R90"/>
+<attribute name="NAME" x="12.365" y="53.365" size="1" layer="25" rot="R180"/>
+<attribute name="VALUE" x="11.905" y="49.865" size="1" layer="27" rot="R90"/>
 </element>
 <element name="R29" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="4.7k" x="7.5" y="50.5" smashed="yes" rot="R90">
-<attribute name="NAME" x="8.365" y="53.365" size="1.27" layer="25" rot="R180"/>
-<attribute name="VALUE" x="9.405" y="49.865" size="1.27" layer="27" rot="R90"/>
+<attribute name="NAME" x="8.365" y="53.365" size="1" layer="25" rot="R180"/>
+<attribute name="VALUE" x="9.405" y="49.865" size="1" layer="27" rot="R90"/>
 </element>
 <element name="M1:C4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="1uF" x="-47.5" y="20" smashed="yes" rot="MR90">
-<attribute name="NAME" x="-46.865" y="19.365" size="1.27" layer="26" rot="MR90"/>
+<attribute name="NAME" x="-46.865" y="19.365" size="1" layer="26" rot="MR90"/>
 <attribute name="SPICEPREFIX" value="C" x="-47.5" y="20" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="VALUE" x="-49.405" y="19.365" size="1.27" layer="28" rot="MR90"/>
+<attribute name="VALUE" x="-49.405" y="19.365" size="1" layer="28" rot="MR90"/>
 </element>
 <element name="M2:C4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="1uF" x="-40.5" y="-9" smashed="yes" rot="MR315">
-<attribute name="NAME" x="-39.5" y="-7.101975" size="1.27" layer="26" rot="MR315"/>
+<attribute name="NAME" x="-39.5" y="-7.101975" size="1" layer="26" rot="MR315"/>
 <attribute name="SPICEPREFIX" value="C" x="-40.5" y="-9" size="1.778" layer="28" rot="MR315" display="off"/>
-<attribute name="VALUE" x="-38.70395" y="-9.898028125" size="1.27" layer="28" rot="MR315"/>
+<attribute name="VALUE" x="-38.70395" y="-9.898028125" size="1" layer="28" rot="MR315"/>
 </element>
 <element name="M3:C4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="1uF" x="31" y="-20.5" smashed="yes" rot="MR225">
-<attribute name="NAME" x="32.601971875" y="-21" size="1.27" layer="26" rot="MR225"/>
+<attribute name="NAME" x="32.601971875" y="-21" size="1" layer="26" rot="MR225"/>
 <attribute name="SPICEPREFIX" value="C" x="31" y="-20.5" size="1.778" layer="28" rot="MR225" display="off"/>
-<attribute name="VALUE" x="31.898025" y="-18.703946875" size="1.27" layer="28" rot="MR225"/>
+<attribute name="VALUE" x="31.898025" y="-18.703946875" size="1" layer="28" rot="MR225"/>
 </element>
 <element name="M4:C4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="1uF" x="53" y="23.5" smashed="yes" rot="MR180">
-<attribute name="NAME" x="54.865" y="24.365" size="1.27" layer="26" rot="MR180"/>
+<attribute name="NAME" x="54.865" y="24.365" size="1" layer="26" rot="MR180"/>
 <attribute name="SPICEPREFIX" value="C" x="53" y="23.5" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="VALUE" x="52.365" y="25.405" size="1.27" layer="28" rot="MR180"/>
+<attribute name="VALUE" x="52.365" y="25.405" size="1" layer="28" rot="MR180"/>
 </element>
 <element name="M1:C5" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="1uF" x="-47.5" y="8.5" smashed="yes" rot="MR90">
-<attribute name="NAME" x="-46.865" y="6.365" size="1.27" layer="26" rot="MR90"/>
+<attribute name="NAME" x="-46.865" y="6.365" size="1" layer="26" rot="MR90"/>
 <attribute name="SPICEPREFIX" value="C" x="-47.5" y="8.5" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="VALUE" x="-49.405" y="7.865" size="1.27" layer="28" rot="MR90"/>
+<attribute name="VALUE" x="-49.405" y="7.865" size="1" layer="28" rot="MR90"/>
 </element>
 <element name="M2:C5" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="1uF" x="-35.5" y="-14" smashed="yes" rot="MR315">
-<attribute name="NAME" x="-36.5" y="-15.601975" size="1.27" layer="26" rot="MR315"/>
+<attribute name="NAME" x="-36.5" y="-15.601975" size="1" layer="26" rot="MR315"/>
 <attribute name="SPICEPREFIX" value="C" x="-35.5" y="-14" size="1.778" layer="28" rot="MR315" display="off"/>
-<attribute name="VALUE" x="-33.70395" y="-14.898028125" size="1.27" layer="28" rot="MR315"/>
+<attribute name="VALUE" x="-33.70395" y="-14.898028125" size="1" layer="28" rot="MR315"/>
 </element>
 <element name="M3:C5" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="1uF" x="40.5" y="-11" smashed="yes" rot="MR225">
-<attribute name="NAME" x="42.101971875" y="-11.5" size="1.27" layer="26" rot="MR225"/>
+<attribute name="NAME" x="42.101971875" y="-11.5" size="1" layer="26" rot="MR225"/>
 <attribute name="SPICEPREFIX" value="C" x="40.5" y="-11" size="1.778" layer="28" rot="MR225" display="off"/>
-<attribute name="VALUE" x="41.398025" y="-9.203953125" size="1.27" layer="28" rot="MR225"/>
+<attribute name="VALUE" x="41.398025" y="-9.203953125" size="1" layer="28" rot="MR225"/>
 </element>
 <element name="M4:C5" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="1uF" x="53" y="17.5" smashed="yes" rot="MR180">
-<attribute name="NAME" x="54.865" y="18.365" size="1.27" layer="26" rot="MR180"/>
+<attribute name="NAME" x="54.865" y="18.365" size="1" layer="26" rot="MR180"/>
 <attribute name="SPICEPREFIX" value="C" x="53" y="17.5" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="VALUE" x="52.365" y="19.405" size="1.27" layer="28" rot="MR180"/>
+<attribute name="VALUE" x="52.365" y="19.405" size="1" layer="28" rot="MR180"/>
 </element>
 <element name="M1:U4" library="RoboJackets-ICs" package="PW0008A_N" value="INA240PWR" x="-52.5" y="18.5" smashed="yes" rot="MR180">
-<attribute name="NAME" x="-50.2766" y="20.595" size="1.27" layer="26" ratio="6" rot="SMR0"/>
+<attribute name="NAME" x="-50.2766" y="20.595" size="1" layer="26" ratio="6" rot="SMR0"/>
 </element>
 <element name="M2:U4" library="RoboJackets-ICs" package="PW0008A_N" value="INA240PWR" x="-39.5" y="-11.5" smashed="yes" rot="MR135">
-<attribute name="NAME" x="-34.969865625" y="-11.163946875" size="1.27" layer="26" ratio="6" rot="SMR315"/>
+<attribute name="NAME" x="-34.969865625" y="-11.163946875" size="1" layer="26" ratio="6" rot="SMR315"/>
 </element>
 <element name="M3:U4" library="RoboJackets-ICs" package="PW0008A_N" value="INA240PWR" x="33.5" y="-19.5" smashed="yes" rot="MR45">
-<attribute name="NAME" x="37.16394375" y="-20.469865625" size="1.27" layer="26" ratio="6" rot="SMR45"/>
+<attribute name="NAME" x="37.16394375" y="-20.469865625" size="1" layer="26" ratio="6" rot="SMR45"/>
 </element>
 <element name="M4:U4" library="RoboJackets-ICs" package="PW0008A_N" value="INA240PWR" x="54" y="13.5" smashed="yes" rot="MR0">
-<attribute name="NAME" x="57.2766" y="15.405" size="1.27" layer="26" ratio="6" rot="SMR0"/>
+<attribute name="NAME" x="57.2766" y="15.405" size="1" layer="26" ratio="6" rot="SMR0"/>
 </element>
 <element name="M1:C13" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="1uF" x="-47.5" y="14" smashed="yes" rot="MR90">
-<attribute name="NAME" x="-46.865" y="12.365" size="1.27" layer="26" rot="MR90"/>
+<attribute name="NAME" x="-46.865" y="12.365" size="1" layer="26" rot="MR90"/>
 <attribute name="SPICEPREFIX" value="C" x="-47.5" y="14" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="VALUE" x="-49.405" y="13.365" size="1.27" layer="28" rot="MR90"/>
+<attribute name="VALUE" x="-49.405" y="13.365" size="1" layer="28" rot="MR90"/>
 </element>
 <element name="M2:C13" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="1uF" x="-31" y="-18.5" smashed="yes" rot="MR315">
-<attribute name="NAME" x="-32" y="-20.101975" size="1.27" layer="26" rot="MR315"/>
+<attribute name="NAME" x="-32" y="-20.101975" size="1" layer="26" rot="MR315"/>
 <attribute name="SPICEPREFIX" value="C" x="-31" y="-18.5" size="1.778" layer="28" rot="MR315" display="off"/>
-<attribute name="VALUE" x="-29.20395" y="-19.398028125" size="1.27" layer="28" rot="MR315"/>
+<attribute name="VALUE" x="-29.20395" y="-19.398028125" size="1" layer="28" rot="MR315"/>
 </element>
 <element name="M3:C13" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="1uF" x="36" y="-15.5" smashed="yes" rot="MR225">
-<attribute name="NAME" x="37.601971875" y="-16" size="1.27" layer="26" rot="MR225"/>
+<attribute name="NAME" x="37.601971875" y="-16" size="1" layer="26" rot="MR225"/>
 <attribute name="SPICEPREFIX" value="C" x="36" y="-15.5" size="1.778" layer="28" rot="MR225" display="off"/>
-<attribute name="VALUE" x="36.898025" y="-13.703946875" size="1.27" layer="28" rot="MR225"/>
+<attribute name="VALUE" x="36.898025" y="-13.703946875" size="1" layer="28" rot="MR225"/>
 </element>
 <element name="M4:C13" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="1uF" x="53" y="11" smashed="yes" rot="MR180">
-<attribute name="NAME" x="54.865" y="11.865" size="1.27" layer="26" rot="MR180"/>
+<attribute name="NAME" x="54.865" y="11.865" size="1" layer="26" rot="MR180"/>
 <attribute name="SPICEPREFIX" value="C" x="53" y="11" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="VALUE" x="52.365" y="12.905" size="1.27" layer="28" rot="MR180"/>
+<attribute name="VALUE" x="52.365" y="12.905" size="1" layer="28" rot="MR180"/>
 </element>
 <element name="U7" library="RoboJackets-ICs" package="QFN50P500X500X100-32N" value="ADS7952SBRHBR" x="0" y="22.5" smashed="yes" rot="MR0">
 <attribute name="MPN" value="ADS7952SBRHBR" x="0" y="22.5" size="1.778" layer="28" rot="MR0" display="off"/>
@@ -12940,114 +12940,114 @@ Your Eurocircuits Team
 <attribute name="OC_NEWARK" value="68R5246" x="0" y="22.5" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="PACKAGE" value="VQFN-32" x="0" y="22.5" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="SUPPLIER" value="Texas Instruments" x="0" y="22.5" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="VALUE" x="3.4544" y="15.515" size="2.0828" layer="28" ratio="10" rot="SMR0"/>
+<attribute name="VALUE" x="3.4544" y="15.515" size="1" layer="28" ratio="10" rot="SMR0"/>
 </element>
 <element name="C37" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="1uF" x="-2.5" y="27" smashed="yes" rot="MR0">
 <attribute name="NAME" x="0.635" y="27.635" size="1" layer="26" rot="MR0"/>
 <attribute name="SPICEPREFIX" value="C" x="-2.5" y="27" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="VALUE" x="-1.865" y="25.095" size="1.27" layer="28" rot="MR0"/>
+<attribute name="VALUE" x="-1.865" y="25.095" size="1" layer="28" rot="MR0"/>
 </element>
 <element name="C38" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="10uF" x="1.5" y="26.5" smashed="yes" rot="MR0">
 <attribute name="NAME" x="4.635" y="27.135" size="1" layer="26" rot="MR0"/>
 <attribute name="SPICEPREFIX" value="C" x="1.5" y="26.5" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="VALUE" x="2.135" y="24.595" size="1.27" layer="28" rot="MR0"/>
+<attribute name="VALUE" x="2.135" y="24.595" size="1" layer="28" rot="MR0"/>
 </element>
 <element name="C39" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="1uF" x="5" y="23.5" smashed="yes" rot="MR180">
 <attribute name="NAME" x="6.865" y="23.865" size="1" layer="26" rot="MR180"/>
 <attribute name="SPICEPREFIX" value="C" x="5" y="23.5" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="VALUE" x="4.365" y="25.405" size="1.27" layer="28" rot="MR180"/>
+<attribute name="VALUE" x="4.365" y="25.405" size="1" layer="28" rot="MR180"/>
 </element>
 <element name="LED1" library="RoboJackets-ICs" package="APA102_5050" value="APA1025050" x="-41.75" y="71.5" smashed="yes">
-<attribute name="NAME" x="-49.29" y="69.04" size="1.27" layer="25"/>
-<attribute name="VALUE" x="-44.29" y="67.69" size="1.27" layer="27"/>
+<attribute name="NAME" x="-49.29" y="69.04" size="1" layer="25"/>
+<attribute name="VALUE" x="-44.29" y="67.69" size="1" layer="27"/>
 </element>
 <element name="LED2" library="RoboJackets-ICs" package="APA102_5050" value="APA1025050" x="-41.75" y="65.5" smashed="yes">
-<attribute name="NAME" x="-49.29" y="66.54" size="1.27" layer="25"/>
-<attribute name="VALUE" x="-44.29" y="61.69" size="1.27" layer="27"/>
+<attribute name="NAME" x="-49.29" y="66.54" size="1" layer="25"/>
+<attribute name="VALUE" x="-44.29" y="61.69" size="1" layer="27"/>
 </element>
 <element name="M1:R2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0.01" x="-52.5" y="6.5" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="408-1544-1-ND" x="-52.5" y="6.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="KRL1220E-M-R010-F-T5" x="-52.5" y="6.5" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="-50.865" y="5.23" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="-50.865" y="5.23" size="1" layer="25" rot="R180"/>
 <attribute name="SPICEPREFIX" value="R" x="-52.5" y="6.5" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="-51.865" y="9.04" size="1.27" layer="27" rot="R180"/>
+<attribute name="VALUE" x="-51.865" y="9.04" size="1" layer="27" rot="R180"/>
 </element>
 <element name="M2:R2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0.01" x="-29.5" y="-21" smashed="yes" rot="R225">
 <attribute name="DIGIKEY" value="408-1544-1-ND" x="-29.5" y="-21" size="1.778" layer="27" rot="R225" display="off"/>
 <attribute name="MPN" value="KRL1220E-M-R010-F-T5" x="-29.5" y="-21" size="1.778" layer="27" rot="R225" display="off"/>
-<attribute name="NAME" x="-26.567175" y="-19.91348125" size="1.27" layer="25" rot="R225"/>
+<attribute name="NAME" x="-26.567175" y="-19.91348125" size="1" layer="25" rot="R225"/>
 <attribute name="SPICEPREFIX" value="R" x="-29.5" y="-21" size="1.778" layer="27" rot="R225" display="off"/>
-<attribute name="VALUE" x="-30.8470375" y="-18.7549375" size="1.27" layer="27" rot="R225"/>
+<attribute name="VALUE" x="-30.8470375" y="-18.7549375" size="1" layer="27" rot="R225"/>
 </element>
 <element name="M3:R2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0.01" x="44" y="-9" smashed="yes" rot="R315">
 <attribute name="DIGIKEY" value="408-1544-1-ND" x="44" y="-9" size="1.778" layer="27" rot="R315" display="off"/>
 <attribute name="MPN" value="KRL1220E-M-R010-F-T5" x="44" y="-9" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="NAME" x="42.9490125" y="-6.152959375" size="1.27" layer="25" rot="R315"/>
+<attribute name="NAME" x="42.9490125" y="-6.152959375" size="1" layer="25" rot="R315"/>
 <attribute name="SPICEPREFIX" value="R" x="44" y="-9" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="VALUE" x="41.754934375" y="-10.3470375" size="1.27" layer="27" rot="R315"/>
+<attribute name="VALUE" x="41.754934375" y="-10.3470375" size="1" layer="27" rot="R315"/>
 </element>
 <element name="M4:R2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0.01" x="54" y="26.5" smashed="yes">
 <attribute name="DIGIKEY" value="408-1544-1-ND" x="54" y="26.5" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="KRL1220E-M-R010-F-T5" x="54" y="26.5" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="51.865" y="27.77" size="1.27" layer="25"/>
+<attribute name="NAME" x="51.865" y="27.77" size="1" layer="25"/>
 <attribute name="SPICEPREFIX" value="R" x="54" y="26.5" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="53.365" y="23.96" size="1.27" layer="27"/>
+<attribute name="VALUE" x="53.365" y="23.96" size="1" layer="27"/>
 </element>
 <element name="M1:R3" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0.01" x="-52.5" y="11" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="408-1544-1-ND" x="-52.5" y="11" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="KRL1220E-M-R010-F-T5" x="-52.5" y="11" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="-50.865" y="9.73" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="-50.865" y="9.73" size="1" layer="25" rot="R180"/>
 <attribute name="SPICEPREFIX" value="R" x="-52.5" y="11" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="-51.865" y="13.54" size="1.27" layer="27" rot="R180"/>
+<attribute name="VALUE" x="-51.865" y="13.54" size="1" layer="27" rot="R180"/>
 </element>
 <element name="M2:R3" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0.01" x="-34" y="-16.5" smashed="yes" rot="R225">
 <attribute name="DIGIKEY" value="408-1544-1-ND" x="-34" y="-16.5" size="1.778" layer="27" rot="R225" display="off"/>
 <attribute name="MPN" value="KRL1220E-M-R010-F-T5" x="-34" y="-16.5" size="1.778" layer="27" rot="R225" display="off"/>
-<attribute name="NAME" x="-31.152959375" y="-15.4490125" size="1.27" layer="25" rot="R225"/>
+<attribute name="NAME" x="-31.152959375" y="-15.4490125" size="1" layer="25" rot="R225"/>
 <attribute name="SPICEPREFIX" value="R" x="-34" y="-16.5" size="1.778" layer="27" rot="R225" display="off"/>
-<attribute name="VALUE" x="-35.3470375" y="-14.254934375" size="1.27" layer="27" rot="R225"/>
+<attribute name="VALUE" x="-35.3470375" y="-14.254934375" size="1" layer="27" rot="R225"/>
 </element>
 <element name="M3:R3" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0.01" x="40" y="-13" smashed="yes" rot="R315">
 <attribute name="DIGIKEY" value="408-1544-1-ND" x="40" y="-13" size="1.778" layer="27" rot="R315" display="off"/>
 <attribute name="MPN" value="KRL1220E-M-R010-F-T5" x="40" y="-13" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="NAME" x="38.9490125" y="-10.152959375" size="1.27" layer="25" rot="R315"/>
+<attribute name="NAME" x="38.9490125" y="-10.152959375" size="1" layer="25" rot="R315"/>
 <attribute name="SPICEPREFIX" value="R" x="40" y="-13" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="VALUE" x="37.754934375" y="-14.3470375" size="1.27" layer="27" rot="R315"/>
+<attribute name="VALUE" x="37.754934375" y="-14.3470375" size="1" layer="27" rot="R315"/>
 </element>
 <element name="M4:R3" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0.01" x="54" y="21.5" smashed="yes">
 <attribute name="DIGIKEY" value="408-1544-1-ND" x="54" y="21.5" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="KRL1220E-M-R010-F-T5" x="54" y="21.5" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="51.865" y="22.77" size="1.27" layer="25"/>
+<attribute name="NAME" x="51.865" y="22.77" size="1" layer="25"/>
 <attribute name="SPICEPREFIX" value="R" x="54" y="21.5" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="53.365" y="18.96" size="1.27" layer="27"/>
+<attribute name="VALUE" x="53.365" y="18.96" size="1" layer="27"/>
 </element>
 <element name="M1:R4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0.01" x="-52.5" y="16.5" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="408-1544-1-ND" x="-52.5" y="16.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="KRL1220E-M-R010-F-T5" x="-52.5" y="16.5" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="-50.865" y="15.23" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="-50.865" y="15.23" size="1" layer="25" rot="R180"/>
 <attribute name="SPICEPREFIX" value="R" x="-52.5" y="16.5" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="-51.865" y="19.04" size="1.27" layer="27" rot="R180"/>
+<attribute name="VALUE" x="-51.865" y="19.04" size="1" layer="27" rot="R180"/>
 </element>
 <element name="M2:R4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0.01" x="-38.5" y="-12" smashed="yes" rot="R225">
 <attribute name="DIGIKEY" value="408-1544-1-ND" x="-38.5" y="-12" size="1.778" layer="27" rot="R225" display="off"/>
 <attribute name="MPN" value="KRL1220E-M-R010-F-T5" x="-38.5" y="-12" size="1.778" layer="27" rot="R225" display="off"/>
-<attribute name="NAME" x="-36.152959375" y="-10.9490125" size="1.27" layer="25" rot="R225"/>
+<attribute name="NAME" x="-36.152959375" y="-10.9490125" size="1" layer="25" rot="R225"/>
 <attribute name="SPICEPREFIX" value="R" x="-38.5" y="-12" size="1.778" layer="27" rot="R225" display="off"/>
-<attribute name="VALUE" x="-39.8470375" y="-9.754934375" size="1.27" layer="27" rot="R225"/>
+<attribute name="VALUE" x="-39.8470375" y="-9.754934375" size="1" layer="27" rot="R225"/>
 </element>
 <element name="M3:R4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0.01" x="34" y="-18" smashed="yes" rot="R315">
 <attribute name="DIGIKEY" value="408-1544-1-ND" x="34" y="-18" size="1.778" layer="27" rot="R315" display="off"/>
 <attribute name="MPN" value="KRL1220E-M-R010-F-T5" x="34" y="-18" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="NAME" x="32.9490125" y="-15.152959375" size="1.27" layer="25" rot="R315"/>
+<attribute name="NAME" x="32.9490125" y="-15.152959375" size="1" layer="25" rot="R315"/>
 <attribute name="SPICEPREFIX" value="R" x="34" y="-18" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="VALUE" x="31.754934375" y="-19.3470375" size="1.27" layer="27" rot="R315"/>
+<attribute name="VALUE" x="31.754934375" y="-19.3470375" size="1" layer="27" rot="R315"/>
 </element>
 <element name="M4:R4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0.01" x="54" y="14.5" smashed="yes">
 <attribute name="DIGIKEY" value="408-1544-1-ND" x="54" y="14.5" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="KRL1220E-M-R010-F-T5" x="54" y="14.5" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="51.865" y="15.77" size="1.27" layer="25"/>
+<attribute name="NAME" x="51.865" y="15.77" size="1" layer="25"/>
 <attribute name="SPICEPREFIX" value="R" x="54" y="14.5" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="53.365" y="11.96" size="1.27" layer="27"/>
+<attribute name="VALUE" x="53.365" y="11.96" size="1" layer="27"/>
 </element>
 <element name="DD:C4" library="RoboJackets-Capacitors" package="CAP_PAN_10X12.5" value="ECA-1HM221B" x="-43.5" y="57.5" smashed="yes">
 <attribute name="MANUFACTURER_PART_NUMBER" value="ECA1HM221B" x="-43.5" y="57.5" size="1.778" layer="27" display="off"/>
@@ -13104,20 +13104,20 @@ Your Eurocircuits Team
 <attribute name="NAME" x="-8.5" y="59" size="1" layer="21" rot="R180"/>
 </element>
 <element name="KIT1" library="RoboJackets-Boards" package="MTRAIN-KIT" value="MTRAIN" x="22.5" y="57.5" smashed="yes" rot="R270">
-<attribute name="NAME" x="50.44" y="67.7" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="50.44" y="67.7" size="1" layer="25" rot="R270"/>
 </element>
 <element name="U8" library="RoboJackets-ICs" package="RS_20" value="ADUM3151ARSZ" x="35.5" y="58.5" smashed="yes" rot="MR180">
-<attribute name="NAME" x="32.2234" y="59.135" size="1.27" layer="26" ratio="6" rot="SMR180"/>
+<attribute name="NAME" x="32.2234" y="59.135" size="1" layer="26" ratio="6" rot="SMR180"/>
 </element>
 <element name="C33" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="0.1uF" x="41.5" y="55" smashed="yes" rot="MR90">
-<attribute name="NAME" x="42.135" y="53.365" size="1.27" layer="26" rot="MR90"/>
+<attribute name="NAME" x="42.135" y="53.365" size="1" layer="26" rot="MR90"/>
 <attribute name="SPICEPREFIX" value="C" x="41.5" y="55" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="VALUE" x="39.595" y="54.365" size="1.27" layer="28" rot="MR90"/>
+<attribute name="VALUE" x="39.595" y="54.365" size="1" layer="28" rot="MR90"/>
 </element>
 <element name="C36" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="0.1uF" x="29.5" y="55" smashed="yes" rot="MR90">
-<attribute name="NAME" x="27.635" y="53.365" size="1.27" layer="26" rot="MR90"/>
+<attribute name="NAME" x="27.635" y="53.365" size="1" layer="26" rot="MR90"/>
 <attribute name="SPICEPREFIX" value="C" x="29.5" y="55" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="VALUE" x="27.595" y="54.365" size="1.27" layer="28" rot="MR90"/>
+<attribute name="VALUE" x="27.595" y="54.365" size="1" layer="28" rot="MR90"/>
 </element>
 </elements>
 <signals>
@@ -16606,14 +16606,12 @@ Your Eurocircuits Team
 <signal name="DD-!CS">
 <contactref element="DD:U1" pad="4"/>
 <contactref element="RN2" pad="11"/>
-<wire x1="-27.175" y1="35.175" x2="-27.175" y2="38.7742625" width="0.3" layer="1"/>
+<wire x1="-27.175" y1="36.175" x2="-27.175" y2="38.7742625" width="0.3" layer="1"/>
 <wire x1="-27.175" y1="38.7742625" x2="-27.4007375" y2="39" width="0.3" layer="1"/>
 <wire x1="-27.4007375" y1="39" x2="-28.25" y2="39" width="0.3" layer="1"/>
-<wire x1="-20" y1="28" x2="-27.175" y2="35.175" width="0.3" layer="1"/>
+<wire x1="-18.5" y1="27.5" x2="-27.175" y2="36.175" width="0.3" layer="1"/>
 <wire x1="-16.3" y1="27.45" x2="-16.35" y2="27.5" width="0.3" layer="1"/>
-<wire x1="-16.35" y1="27.5" x2="-17.5" y2="27.5" width="0.3" layer="1"/>
-<wire x1="-17.5" y1="27.5" x2="-18" y2="28" width="0.3" layer="1"/>
-<wire x1="-18" y1="28" x2="-20" y2="28" width="0.3" layer="1"/>
+<wire x1="-16.35" y1="27.5" x2="-18.5" y2="27.5" width="0.3" layer="1"/>
 </signal>
 <signal name="DD:!OCTW">
 <contactref element="DD:U1" pad="1"/>
