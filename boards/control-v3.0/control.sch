@@ -34357,13 +34357,6 @@ connected like that?</text>
 <pinref part="KIT1" gate="G$1" pin="P29"/>
 </segment>
 </net>
-<net name="INT-IO" class="0">
-<segment>
-<pinref part="KIT1" gate="G$1" pin="P17"/>
-<wire x1="83.82" y1="93.98" x2="78.74" y2="93.98" width="0.1524" layer="91"/>
-<label x="78.74" y="93.98" size="1.27" layer="95" rot="MR0" xref="yes"/>
-</segment>
-</net>
 <net name="FPGA-PROG" class="0">
 <segment>
 <pinref part="KIT1" gate="G$1" pin="P13"/>
@@ -34451,9 +34444,9 @@ connected like that?</text>
 </net>
 <net name="!RST!-RADIO" class="0">
 <segment>
-<wire x1="83.82" y1="86.36" x2="78.74" y2="86.36" width="0.1524" layer="91"/>
-<label x="78.74" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="KIT1" gate="G$1" pin="P20"/>
+<wire x1="83.82" y1="88.9" x2="78.74" y2="88.9" width="0.1524" layer="91"/>
+<label x="78.74" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="KIT1" gate="G$1" pin="P19"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -34522,9 +34515,9 @@ connected like that?</text>
 </net>
 <net name="!CS!-RADIO" class="0">
 <segment>
-<wire x1="83.82" y1="91.44" x2="78.74" y2="91.44" width="0.1524" layer="91"/>
-<label x="78.74" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="KIT1" gate="G$1" pin="P18"/>
+<pinref part="KIT1" gate="G$1" pin="P17"/>
+<wire x1="83.82" y1="93.98" x2="78.74" y2="93.98" width="0.1524" layer="91"/>
+<label x="78.74" y="93.98" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="INT-MPU" class="0">
@@ -34550,9 +34543,9 @@ connected like that?</text>
 </net>
 <net name="INT-RADIO" class="0">
 <segment>
-<wire x1="83.82" y1="88.9" x2="78.74" y2="88.9" width="0.1524" layer="91"/>
-<label x="78.74" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="KIT1" gate="G$1" pin="P19"/>
+<wire x1="83.82" y1="91.44" x2="78.74" y2="91.44" width="0.1524" layer="91"/>
+<label x="78.74" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="KIT1" gate="G$1" pin="P18"/>
 </segment>
 </net>
 <net name="FPGA-INIT" class="0">
@@ -34560,6 +34553,13 @@ connected like that?</text>
 <wire x1="83.82" y1="101.6" x2="78.74" y2="101.6" width="0.1524" layer="91"/>
 <label x="78.74" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="KIT1" gate="G$1" pin="P14"/>
+</segment>
+</net>
+<net name="INT-IO" class="0">
+<segment>
+<wire x1="83.82" y1="86.36" x2="78.74" y2="86.36" width="0.1524" layer="91"/>
+<label x="78.74" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="KIT1" gate="G$1" pin="P20"/>
 </segment>
 </net>
 </nets>
