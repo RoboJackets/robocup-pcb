@@ -3,14 +3,14 @@
 <eagle version="9.2.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.25" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="GND" color="13" fill="1" visible="no" active="yes"/>
+<layer number="2" name="GND" color="13" fill="1" visible="yes" active="yes"/>
 <layer number="3" name="Power" color="11" fill="1" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -37,7 +37,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -250,7 +250,7 @@ ERR</text>
 <circle x="61" y="-41" radius="12.5" width="0.1524" layer="51"/>
 <circle x="43" y="-59.5" radius="12.5" width="0.1524" layer="51"/>
 <wire x1="-37.5" y1="79.5" x2="37.5" y2="79.5" width="0.4064" layer="51"/>
-<rectangle x1="-19.5" y1="-38.5" x2="-17" y2="-35.5" layer="29"/>
+<rectangle x1="-19.25" y1="-38.5" x2="-17" y2="-35.5" layer="29"/>
 </plain>
 <libraries>
 <library name="rcl">
@@ -13229,7 +13229,7 @@ Your Eurocircuits Team
 </element>
 <element name="M3:C15" library="RoboJackets-Capacitors" package="CAP_PAN_10X12.5" value="ECA-1HM221B" x="28.5" y="13" smashed="yes" rot="R180">
 <attribute name="MANUFACTURER_PART_NUMBER" value="ECA1HM221B" x="28.5" y="13" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="20.7658" y="12.635" size="1" layer="25" ratio="6" rot="SR0"/>
+<attribute name="NAME" x="20.2658" y="12.635" size="1" layer="25" ratio="6" rot="SR0"/>
 <attribute name="VENDOR" value="Panasonic" x="28.5" y="13" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="M4:C15" library="RoboJackets-Capacitors" package="CAP_PAN_10X12.5" value="ECA-1HM221B" x="50" y="38" smashed="yes">
@@ -14392,7 +14392,6 @@ Your Eurocircuits Team
 <vertex x="-27.75" y="29.25"/>
 <vertex x="-27.75" y="31.75"/>
 </polygon>
-<wire x1="-28.499875" y1="31.500125" x2="-29" y2="31" width="0.25" layer="16"/>
 <wire x1="-29" y1="31" x2="-29" y2="30.5" width="0.25" layer="16"/>
 <contactref element="U9" pad="5"/>
 <contactref element="U9" pad="4"/>
