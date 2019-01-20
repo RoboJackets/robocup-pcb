@@ -32647,36 +32647,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="U4" library="RoboJackets-ICs" deviceset="INA240PWR" device=""/>
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0.01">
-<spice>
-<pinmapping spiceprefix="R">
-<pinmap gate="G$1" pin="1" pinorder="1"/>
-<pinmap gate="G$1" pin="2" pinorder="2"/>
-</pinmapping>
-</spice>
-<attribute name="DIGIKEY" value="408-1544-1-ND"/>
-<attribute name="MPN" value="KRL1220E-M-R010-F-T5"/>
-</part>
-<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0.01">
-<spice>
-<pinmapping spiceprefix="R">
-<pinmap gate="G$1" pin="1" pinorder="1"/>
-<pinmap gate="G$1" pin="2" pinorder="2"/>
-</pinmapping>
-</spice>
-<attribute name="DIGIKEY" value="408-1544-1-ND"/>
-<attribute name="MPN" value="KRL1220E-M-R010-F-T5"/>
-</part>
-<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0.01">
-<spice>
-<pinmapping spiceprefix="R">
-<pinmap gate="G$1" pin="1" pinorder="1"/>
-<pinmap gate="G$1" pin="2" pinorder="2"/>
-</pinmapping>
-</spice>
-<attribute name="DIGIKEY" value="408-1544-1-ND"/>
-<attribute name="MPN" value="KRL1220E-M-R010-F-T5"/>
-</part>
 <part name="C14" library="RoboJackets-Capacitors" deviceset="ECA-1HM221B" device=""/>
 <part name="C15" library="RoboJackets-Capacitors" deviceset="ECA-1HM221B" device=""/>
 <part name="SUPPLY11" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
@@ -32691,6 +32661,36 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="GND19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="0.001">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="DIGIKEY" value="A131744CT-ND"/>
+<attribute name="MPN" value="TLR2B10DR001FTDG"/>
+</part>
+<part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="0.001">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="DIGIKEY" value="A131744CT-ND"/>
+<attribute name="MPN" value="TLR2B10DR001FTDG"/>
+</part>
+<part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="0.001">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="DIGIKEY" value="A131744CT-ND"/>
+<attribute name="MPN" value="TLR2B10DR001FTDG"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -32877,24 +32877,6 @@ ripple current from motors</text>
 <instance part="GND18" gate="1" x="220.98" y="66.04" smashed="yes">
 <attribute name="VALUE" x="218.44" y="63.5" size="1.778" layer="96"/>
 </instance>
-<instance part="R2" gate="G$1" x="152.4" y="185.42" smashed="yes">
-<attribute name="NAME" x="148.59" y="186.9186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="148.59" y="182.118" size="1.778" layer="96"/>
-<attribute name="DIGIKEY" x="152.4" y="185.42" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="152.4" y="185.42" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="R3" gate="G$1" x="200.66" y="170.18" smashed="yes">
-<attribute name="NAME" x="196.85" y="171.6786" size="1.778" layer="95"/>
-<attribute name="VALUE" x="196.85" y="166.878" size="1.778" layer="96"/>
-<attribute name="DIGIKEY" x="200.66" y="170.18" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="200.66" y="170.18" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="R4" gate="G$1" x="251.46" y="154.94" smashed="yes">
-<attribute name="NAME" x="247.65" y="156.4386" size="1.778" layer="95"/>
-<attribute name="VALUE" x="247.65" y="151.638" size="1.778" layer="96"/>
-<attribute name="MPN" x="251.46" y="154.94" size="1.778" layer="96" display="off"/>
-<attribute name="DIGIKEY" x="251.46" y="154.94" size="1.778" layer="96" display="off"/>
-</instance>
 <instance part="C14" gate="A" x="96.52" y="35.56" smashed="yes" rot="R270">
 <attribute name="VALUE" x="93.5228" y="30.5562" size="2.032" layer="96" ratio="10" rot="SR180"/>
 <attribute name="NAME" x="93.5228" y="37.1094" size="2.032" layer="95" ratio="10" rot="SR180"/>
@@ -32941,6 +32923,24 @@ ripple current from motors</text>
 </instance>
 <instance part="GND21" gate="1" x="203.2" y="78.74" smashed="yes">
 <attribute name="VALUE" x="200.66" y="76.2" size="1.778" layer="96"/>
+</instance>
+<instance part="R5" gate="G$1" x="152.4" y="185.42" smashed="yes">
+<attribute name="NAME" x="148.59" y="186.9186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="148.59" y="182.118" size="1.778" layer="96"/>
+<attribute name="DIGIKEY" x="152.4" y="185.42" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="152.4" y="185.42" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R6" gate="G$1" x="200.66" y="170.18" smashed="yes">
+<attribute name="NAME" x="196.85" y="171.6786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="196.85" y="166.878" size="1.778" layer="96"/>
+<attribute name="DIGIKEY" x="200.66" y="170.18" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="200.66" y="170.18" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R7" gate="G$1" x="251.46" y="154.94" smashed="yes">
+<attribute name="NAME" x="247.65" y="156.4386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="247.65" y="151.638" size="1.778" layer="96"/>
+<attribute name="DIGIKEY" x="251.46" y="154.94" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="251.46" y="154.94" size="1.778" layer="96" display="off"/>
 </instance>
 </instances>
 <busses>
@@ -33026,7 +33026,7 @@ ripple current from motors</text>
 <segment>
 <wire x1="205.74" y1="170.18" x2="210.82" y2="170.18" width="0.1524" layer="91"/>
 <label x="210.82" y="170.18" size="1.27" layer="95" xref="yes"/>
-<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="R6" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="U3" gate="A" pin="IN-"/>
@@ -33066,7 +33066,7 @@ ripple current from motors</text>
 <segment>
 <wire x1="157.48" y1="185.42" x2="162.56" y2="185.42" width="0.1524" layer="91"/>
 <label x="162.56" y="185.42" size="1.27" layer="95" xref="yes"/>
-<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="R5" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="U2" gate="A" pin="IN-"/>
@@ -33106,7 +33106,7 @@ ripple current from motors</text>
 <segment>
 <wire x1="256.54" y1="154.94" x2="261.62" y2="154.94" width="0.1524" layer="91"/>
 <label x="261.62" y="154.94" size="1.27" layer="95" xref="yes"/>
-<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="R7" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="U4" gate="A" pin="IN-"/>
@@ -33509,7 +33509,7 @@ ripple current from motors</text>
 <wire x1="129.54" y1="185.42" x2="147.32" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="185.42" x2="147.32" y2="193.04" width="0.1524" layer="91"/>
 <label x="147.32" y="193.04" size="1.27" layer="95" rot="R90" xref="yes"/>
-<pinref part="R2" gate="G$1" pin="1"/>
+<pinref part="R5" gate="G$1" pin="1"/>
 <junction x="147.32" y="185.42"/>
 </segment>
 <segment>
@@ -33535,7 +33535,7 @@ ripple current from motors</text>
 <wire x1="175.26" y1="170.18" x2="195.58" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="170.18" x2="195.58" y2="177.8" width="0.1524" layer="91"/>
 <label x="195.58" y="177.8" size="1.27" layer="95" rot="R90" xref="yes"/>
-<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="R6" gate="G$1" pin="1"/>
 <junction x="195.58" y="170.18"/>
 </segment>
 <segment>
@@ -33561,7 +33561,7 @@ ripple current from motors</text>
 <wire x1="223.52" y1="154.94" x2="246.38" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="246.38" y1="154.94" x2="246.38" y2="162.56" width="0.1524" layer="91"/>
 <label x="246.38" y="162.56" size="1.27" layer="95" rot="R90" xref="yes"/>
-<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="R7" gate="G$1" pin="1"/>
 <junction x="246.38" y="154.94"/>
 </segment>
 <segment>
