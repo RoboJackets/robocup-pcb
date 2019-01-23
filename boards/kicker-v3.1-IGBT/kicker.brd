@@ -1612,6 +1612,20 @@ In this library you will find diodes and other circuit protection elements.
 <text x="0" y="2.095" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-2.095" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
+<package name="SOD123-W">
+<description>&lt;b&gt;PTVSxS1UR&lt;/b&gt;&lt;p&gt;
+Source: https://www.digikey.com/product-detail/en/nexperia-usa-inc/PTVS20VS1UR115/1727-5865-1-ND/2697361 .. SOD123W Voltage Suppressor 22.2V. Data Sheet</description>
+<wire x1="1.4" y1="0.95" x2="1.4" y2="-0.95" width="0.1016" layer="21"/>
+<wire x1="1.4" y1="-0.95" x2="-1.4" y2="-0.95" width="0.1016" layer="21"/>
+<wire x1="-1.4" y1="-0.95" x2="-1.4" y2="0.95" width="0.1016" layer="21"/>
+<wire x1="-1.4" y1="0.95" x2="1.4" y2="0.95" width="0.1016" layer="21"/>
+<smd name="C" x="-1.4" y="0" dx="1.05" dy="1.05" layer="1"/>
+<smd name="A" x="1.4" y="0" dx="1.05" dy="1.05" layer="1" rot="R180"/>
+<text x="-1.905" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-3.24" y1="-1.05" x2="-2.23" y2="1.05" layer="51"/>
+<rectangle x1="2.24" y1="-1.05" x2="3.24" y2="1.05" layer="51"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="TO460P990X239-3" urn="urn:adsk.eagle:package:4100272/1" type="model">
@@ -14388,28 +14402,6 @@ In this library you will find logos and images specific to RoboJackets. The part
 </package>
 </packages>
 </library>
-<library name="adafruit">
-<packages>
-<package name="SOD-123">
-<wire x1="-1" y1="0.7" x2="1" y2="0.7" width="0.1524" layer="51"/>
-<wire x1="1" y1="0.7" x2="1" y2="-0.7" width="0.1524" layer="51"/>
-<wire x1="1" y1="-0.7" x2="-1" y2="-0.7" width="0.1524" layer="51"/>
-<wire x1="-1" y1="-0.7" x2="-1" y2="0.7" width="0.1524" layer="51"/>
-<wire x1="-0.5" y1="0" x2="0.1" y2="0.4" width="0.1524" layer="51"/>
-<wire x1="0.1" y1="0.4" x2="0.1" y2="-0.4" width="0.1524" layer="51"/>
-<wire x1="0.1" y1="-0.4" x2="-0.5" y2="0" width="0.1524" layer="51"/>
-<wire x1="-1.778" y1="0.762" x2="1.778" y2="0.762" width="0.127" layer="21"/>
-<wire x1="1.778" y1="0.762" x2="1.778" y2="-0.762" width="0.127" layer="21"/>
-<wire x1="1.778" y1="-0.762" x2="-1.778" y2="-0.762" width="0.127" layer="21"/>
-<wire x1="-1.778" y1="-0.762" x2="-1.778" y2="0.762" width="0.127" layer="21"/>
-<smd name="C" x="-1.85" y="0" dx="1.2" dy="0.7" layer="1"/>
-<smd name="A" x="1.85" y="0" dx="1.2" dy="0.7" layer="1"/>
-<text x="-1.1" y="1" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.1" y="-1.284" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.7" y1="-0.7" x2="-0.5" y2="0.7" layer="51"/>
-</package>
-</packages>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -15169,13 +15161,13 @@ Your Eurocircuits Team
 <attribute name="NAME" x="15.59" y="57.89" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="11.78" y="57.89" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="D21" library="adafruit" package="SOD-123" value="SM6T22A-E3/52GICT-ND" x="-1.85" y="-108.2">
-<attribute name="NAME" x="-0.834" y="-107.184" size="0.4064" layer="25"/>
-<attribute name="VALUE" x="-0.834" y="-109.724" size="0.4064" layer="27"/>
-</element>
 <element name="R56" library="resistor" library_urn="urn:adsk.eagle:library:348" package="M0805" package3d_urn="urn:adsk.eagle:package:26079/1" value="750m 1%" x="-86.5" y="-95.5">
 <attribute name="NAME" x="-87.77" y="-94.23" size="1.27" layer="25"/>
 <attribute name="VALUE" x="-87.77" y="-98.04" size="1.27" layer="27"/>
+</element>
+<element name="D21" library="RoboJackets-Diodes" package="SOD123-W" value="1727-5865-1-ND" x="-94.5" y="-94">
+<attribute name="NAME" x="-96.405" y="-91.46" size="1.27" layer="25"/>
+<attribute name="VALUE" x="-96.405" y="-97.81" size="1.27" layer="27"/>
 </element>
 </elements>
 <signals>
@@ -17102,11 +17094,24 @@ Your Eurocircuits Team
 <contactref element="Q1" pad="2"/>
 <wire x1="-3.1798" y1="74.0012625" x2="-3.1798" y2="76" width="0.6096" layer="1"/>
 <wire x1="-3.1798" y1="76" x2="-6" y2="76" width="0.6096" layer="1"/>
-<contactref element="D21" pad="C"/>
 <wire x1="40.4" y1="65.25" x2="37.75" y2="65.25" width="0.1524" layer="16"/>
 <wire x1="32.5" y1="70.5" x2="26.5" y2="70.5" width="0.1524" layer="16"/>
 <wire x1="37.75" y1="65.25" x2="32.5" y2="70.5" width="0.1524" layer="16"/>
-<wire x1="-49.4" y1="-27.5" x2="-3.7" y2="-108.2" width="0" layer="19" extent="1-1"/>
+<contactref element="D21" pad="C"/>
+<wire x1="-49.4" y1="-27.5" x2="-95.9" y2="-94" width="0" layer="19" extent="1-1"/>
+<wire x1="-49.5" y1="-24.45" x2="-49.4" y2="-27.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-39.6" y1="-27.5" x2="-39.5" y2="-24.45" width="0" layer="19" extent="1-1"/>
+<wire x1="-43.5" y1="50.69" x2="-53.5" y2="51.5" width="0" layer="19" extent="16-16"/>
+<wire x1="-59.5" y1="39.475" x2="-68.5" y2="44.5" width="0" layer="19" extent="1-16"/>
+<wire x1="-55.5" y1="39.475" x2="-59.5" y2="39.475" width="0" layer="19" extent="1-1"/>
+<wire x1="-51.5" y1="39.475" x2="-55.5" y2="39.475" width="0" layer="19" extent="1-1"/>
+<wire x1="-47.5" y1="39.475" x2="-51.5" y2="39.475" width="0" layer="19" extent="1-1"/>
+<wire x1="-26" y1="56.19" x2="-37.489946875" y2="64.01005" width="0" layer="19" extent="1-1"/>
+<wire x1="-11.2" y1="66.6" x2="-26" y2="56.19" width="0" layer="19" extent="1-1"/>
+<wire x1="-10.5" y1="67" x2="-11.2" y2="66.6" width="0" layer="19" extent="1-1"/>
+<wire x1="-10.35" y1="65.5" x2="-11.2" y2="66.6" width="0" layer="19" extent="1-1"/>
+<wire x1="40.5" y1="28.6" x2="39" y2="23.04" width="0" layer="19" extent="1-16"/>
+<wire x1="44" y1="28.6" x2="40.5" y2="28.6" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$19">
 <contactref element="J5" pad="1"/>
@@ -17764,9 +17769,9 @@ Your Eurocircuits Team
 <wire x1="57.5" y1="33" x2="57.5" y2="33.75" width="0.2" layer="1"/>
 </signal>
 <signal name="N$23">
-<contactref element="D21" pad="A"/>
 <contactref element="R56" pad="2"/>
-<wire x1="0" y1="-108.2" x2="-85.55" y2="-95.5" width="0" layer="19" extent="1-1"/>
+<contactref element="D21" pad="A"/>
+<wire x1="-85.55" y1="-95.5" x2="-93.1" y2="-94" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
