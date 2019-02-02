@@ -16487,15 +16487,38 @@ as close proximity to C14 and C15 as possible.</text>
 <text x="264.16" y="177.8" size="2.54" layer="97">JTAG - Radio FW Updates</text>
 <wire x1="373.38" y1="137.16" x2="373.38" y2="182.88" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="312.42" y1="129.54" x2="312.42" y2="53.34" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="312.42" y1="129.54" x2="350.52" y2="129.54" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="350.52" y1="129.54" x2="350.52" y2="53.34" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="312.42" y1="53.34" x2="350.52" y2="53.34" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="312.42" y1="129.54" x2="373.38" y2="129.54" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="373.38" y1="129.54" x2="373.38" y2="53.34" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="312.42" y1="53.34" x2="373.38" y2="53.34" width="0.1524" layer="97" style="shortdash"/>
 <text x="314.96" y="124.46" size="2.54" layer="97">Boot Mode Jumpers</text>
 <wire x1="261.62" y1="129.54" x2="304.8" y2="129.54" width="0.1524" layer="97" style="shortdash"/>
 <text x="264.16" y="124.46" size="2.54" layer="97">FW Fallback Ports</text>
 <wire x1="261.62" y1="129.54" x2="261.62" y2="60.96" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="261.62" y1="60.96" x2="304.8" y2="60.96" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="304.8" y1="60.96" x2="304.8" y2="129.54" width="0.1524" layer="97" style="shortdash"/>
+<text x="106.68" y="73.66" size="1.27" layer="97">Dev board ref schematic 
+indicates IWIN LED 
+control is active push/pull 
+not OD.</text>
+<text x="228.6" y="73.66" size="1.27" layer="97">Dev board ref schematic 
+indicates IWIN LED 
+control is active push/pull 
+not OD.</text>
+<text x="73.66" y="160.02" size="1.27" layer="97">Not chaining JTAG. Docs 
+unclear as to when radios 
+are in a passthrough 
+enabled state.</text>
+<text x="195.58" y="160.02" size="1.27" layer="97">Not chaining JTAG. Docs 
+unclear as to when radios 
+are in a passthrough 
+enabled state.</text>
+<text x="106.68" y="121.92" size="1.27" layer="97" align="top-left">Debug default FW</text>
+<text x="228.6" y="121.92" size="1.27" layer="97" align="top-left">Debug default FW</text>
+<text x="350.52" y="96.52" size="1.27" layer="97" align="top-left">STM32F405 docs 
+describe this. 
+
+Default is low, 
+so bridge SB2 and SB4</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
