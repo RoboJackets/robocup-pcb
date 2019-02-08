@@ -20985,7 +20985,30 @@ In this library you will find integrated circuits (ICs) that are directly involv
 <wire x1="-9.905" y1="-3.365" x2="-9.905" y2="3.365" width="0.127" layer="21"/>
 <text x="-10" y="-4.75" size="1" layer="21">&gt;NAME</text>
 </package>
+<package name="FUSC2113X75" urn="urn:adsk.eagle:footprint:8760204/1" locally_modified="yes">
+<description>Chip, 2.10 X 1.35 X 0.75 mm body
+&lt;p&gt;Chip package with body size 2.10 X 1.35 X 0.75 mm&lt;/p&gt;</description>
+<wire x1="1.1" y1="1.0741" x2="-1.1" y2="1.0741" width="0.12" layer="21"/>
+<wire x1="1.1" y1="-1.0741" x2="-1.1" y2="-1.0741" width="0.12" layer="21"/>
+<wire x1="1.1" y1="-0.75" x2="-1.1" y2="-0.75" width="0.12" layer="51"/>
+<wire x1="-1.1" y1="-0.75" x2="-1.1" y2="0.75" width="0.12" layer="51"/>
+<wire x1="-1.1" y1="0.75" x2="1.1" y2="0.75" width="0.12" layer="51"/>
+<wire x1="1.1" y1="0.75" x2="1.1" y2="-0.75" width="0.12" layer="51"/>
+<smd name="1" x="-1.1" y="0" dx="1" dy="1.5202" layer="1"/>
+<smd name="2" x="1.1" y="0" dx="1" dy="1.5" layer="1"/>
+<text x="0" y="1.7091" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.7091" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
+<packages3d>
+<package3d name="FUSC2113X75" urn="urn:adsk.eagle:package:8760197/1" locally_modified="yes" type="model">
+<description>Chip, 2.10 X 1.35 X 0.75 mm body
+&lt;p&gt;Chip package with body size 2.10 X 1.35 X 0.75 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="FUSC2113X75"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
 <symbol name="FUSE">
 <pin name="1" x="-2.54" y="0" visible="off" length="point"/>
@@ -21025,6 +21048,18 @@ In this library you will find integrated circuits (ICs) that are directly involv
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0805" package="FUSC2113X75">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:8760197/1"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -34315,7 +34350,6 @@ has issues with ports</text>
 <part name="GND67" library="supply1" deviceset="GND" device=""/>
 <part name="GND71" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY48" library="supply2" deviceset="+5V" device=""/>
-<part name="F1" library="RoboJackets-Fuses" deviceset="CHIP_FUSE" device="0603" value="0603L075SLYR"/>
 <part name="U5" library="RoboJackets-PowerICs" deviceset="MCP1824T*?" device="OT" technology="-1202E/"/>
 <part name="U6" library="RoboJackets-PowerICs" deviceset="MCP1824T*?" device="OT" technology="-2502E/"/>
 <part name="GND62" library="supply1" deviceset="GND" device=""/>
@@ -34494,7 +34528,6 @@ has issues with ports</text>
 <part name="GND70" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SUPPLY30" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="SUPPLY31" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
-<part name="SUPPLY37" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="SUPPLY51" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="R10" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="330"/>
 <part name="D16" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-GREEN" value="GREEN"/>
@@ -34573,6 +34606,7 @@ has issues with ports</text>
 <part name="U13" library="RoboJackets-PowerICs" deviceset="LDK715M50R" device=""/>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="J1" library="RoboJackets-Connectors" deviceset="SBH11-*-D05-?" device=""/>
+<part name="F1" library="RoboJackets-Fuses" deviceset="CHIP_FUSE" device="0805" package3d_urn="urn:adsk.eagle:package:8760197/1" value="0805L200SLTHYR"/>
 </parts>
 <sheets>
 <sheet>
@@ -34580,7 +34614,6 @@ has issues with ports</text>
 <plain>
 <text x="104.14" y="147.32" size="1.778" layer="97">Should VIN &amp; VBUS be
 connected like that?</text>
-<text x="200.66" y="137.16" size="1.778" layer="97">Add Schottky diode from VBUS to 5V</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -34591,9 +34624,6 @@ connected like that?</text>
 <attribute name="TEAM" x="173.99" y="34.29" size="3.048" layer="94" ratio="10" align="top-left"/>
 <attribute name="REVISION" x="245.11" y="6.35" size="2.54" layer="94"/>
 <attribute name="SCH_DESC" x="173.99" y="6.35" size="2.54" layer="94"/>
-</instance>
-<instance part="SUPPLY37" gate="+5V" x="198.12" y="137.16" smashed="yes">
-<attribute name="VALUE" x="196.215" y="140.335" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY51" gate="P" x="187.96" y="139.7" smashed="yes">
 <attribute name="VALUE" x="186.055" y="142.875" size="1.778" layer="96"/>
@@ -34660,12 +34690,6 @@ connected like that?</text>
 </segment>
 </net>
 <net name="+5V" class="0">
-<segment>
-<wire x1="180.467" y1="132.08" x2="198.12" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="132.08" x2="198.12" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="SUPPLY37" gate="+5V" pin="+5V"/>
-<pinref part="KIT1" gate="G$1" pin="VBUS"/>
-</segment>
 <segment>
 <wire x1="83.82" y1="132.08" x2="78.74" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="132.08" x2="78.74" y2="137.16" width="0.1524" layer="91"/>
@@ -38709,10 +38733,6 @@ battery power</text>
 <instance part="SUPPLY48" gate="+5V" x="149.86" y="73.66" smashed="yes">
 <attribute name="VALUE" x="147.955" y="76.835" size="1.778" layer="96"/>
 </instance>
-<instance part="F1" gate="G$1" x="127" y="66.04" smashed="yes">
-<attribute name="NAME" x="124.46" y="68.58" size="1.778" layer="95"/>
-<attribute name="VALUE" x="124.46" y="63.5" size="1.778" layer="96" align="top-left"/>
-</instance>
 <instance part="U5" gate="G$1" x="205.74" y="119.38" smashed="yes">
 <attribute name="NAME" x="193.04" y="129.54" size="1.778" layer="95" font="vector" align="top-left"/>
 <attribute name="VALUE" x="193.04" y="109.22" size="1.778" layer="96" font="vector"/>
@@ -38857,6 +38877,10 @@ battery power</text>
 </instance>
 <instance part="SUPPLY34" gate="G$1" x="22.86" y="83.82" smashed="yes">
 <attribute name="VALUE" x="20.955" y="86.995" size="1.778" layer="96"/>
+</instance>
+<instance part="F1" gate="G$1" x="127" y="66.04" smashed="yes">
+<attribute name="NAME" x="124.46" y="68.58" size="1.778" layer="95"/>
+<attribute name="VALUE" x="124.46" y="63.5" size="1.778" layer="96" align="top-left"/>
 </instance>
 </instances>
 <busses>
@@ -39109,7 +39133,6 @@ battery power</text>
 </net>
 <net name="+5V-FUSE" class="0">
 <segment>
-<pinref part="F1" gate="G$1" pin="1"/>
 <pinref part="U10" gate="G$1" pin="OUT"/>
 <wire x1="96.52" y1="66.04" x2="104.14" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="66.04" x2="116.84" y2="66.04" width="0.1524" layer="91"/>
@@ -39119,6 +39142,7 @@ battery power</text>
 <pinref part="C32" gate="G$1" pin="1"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <junction x="104.14" y="66.04"/>
+<pinref part="F1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -39230,9 +39254,9 @@ battery power</text>
 </net>
 <net name="+5V-PRE2" class="0">
 <segment>
-<pinref part="F1" gate="G$1" pin="2"/>
 <wire x1="129.54" y1="66.04" x2="132.08" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="SB3" gate="G$1" pin="1"/>
+<pinref part="F1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="+1.2V-PRE" class="0">
