@@ -2886,19 +2886,6 @@ In this library you will find integrated circuits (ICs) that are directly involv
 </library>
 <library name="RoboJackets-Fuses">
 <packages>
-<package name="F0603">
-<wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
-<wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="51"/>
-<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
-<smd name="1" x="-0.85" y="0" dx="1" dy="1.1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1" dy="1.1" layer="1"/>
-<text x="-1.5" y="1" size="1" layer="25">&gt;NAME</text>
-<rectangle x1="0.4318" y1="-0.4318" x2="0.8382" y2="0.4318" layer="51"/>
-<rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="51"/>
-</package>
 <package name="3557-2">
 <pad name="1" x="-6.735" y="1.7" drill="1.75"/>
 <pad name="2" x="-6.735" y="-1.7" drill="1.75"/>
@@ -2910,7 +2897,30 @@ In this library you will find integrated circuits (ICs) that are directly involv
 <wire x1="-9.905" y1="-3.365" x2="-9.905" y2="3.365" width="0.127" layer="21"/>
 <text x="-10" y="-4.75" size="1" layer="21">&gt;NAME</text>
 </package>
+<package name="FUSC2113X75" urn="urn:adsk.eagle:footprint:8760204/1" locally_modified="yes">
+<description>Chip, 2.10 X 1.35 X 0.75 mm body
+&lt;p&gt;Chip package with body size 2.10 X 1.35 X 0.75 mm&lt;/p&gt;</description>
+<wire x1="1.1" y1="1.0741" x2="-1.1" y2="1.0741" width="0.12" layer="21"/>
+<wire x1="1.1" y1="-1.0741" x2="-1.1" y2="-1.0741" width="0.12" layer="21"/>
+<wire x1="1.1" y1="-0.75" x2="-1.1" y2="-0.75" width="0.12" layer="51"/>
+<wire x1="-1.1" y1="-0.75" x2="-1.1" y2="0.75" width="0.12" layer="51"/>
+<wire x1="-1.1" y1="0.75" x2="1.1" y2="0.75" width="0.12" layer="51"/>
+<wire x1="1.1" y1="0.75" x2="1.1" y2="-0.75" width="0.12" layer="51"/>
+<smd name="1" x="-1.1" y="0" dx="1" dy="1.5202" layer="1"/>
+<smd name="2" x="1.1" y="0" dx="1" dy="1.5" layer="1"/>
+<text x="0" y="1.7091" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.7091" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
+<packages3d>
+<package3d name="FUSC2113X75" urn="urn:adsk.eagle:package:8760197/1" locally_modified="yes" type="model">
+<description>Chip, 2.10 X 1.35 X 0.75 mm body
+&lt;p&gt;Chip package with body size 2.10 X 1.35 X 0.75 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="FUSC2113X75"/>
+</packageinstances>
+</package3d>
+</packages3d>
 </library>
 <library name="RoboJackets-ICs">
 <description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
@@ -13994,9 +14004,6 @@ Your Eurocircuits Team
 <attribute name="MPN" value="DRV8303DCAR" x="-32" y="43.25" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-29.75" y="51" size="1" layer="25" font="vector" ratio="15" rot="R180"/>
 </element>
-<element name="F1" library="RoboJackets-Fuses" package="F0603" value="0603L075SLYR" x="-7.25" y="-9.25" smashed="yes" rot="MR90">
-<attribute name="NAME" x="-8.75" y="-8.75" size="1" layer="26" font="vector" ratio="15" rot="MR0"/>
-</element>
 <element name="IC1" library="RoboJackets-ICs" package="SSOP-28" value="MCP23017-E/SS" x="-36.25" y="57.25" smashed="yes" rot="MR0">
 <attribute name="DIGIKEY" value="MCP23017-E/SS-ND" x="-36.25" y="57.25" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MPN" value="MCP23017-E/SS" x="-36.25" y="57.25" size="1.778" layer="28" rot="MR0" display="off"/>
@@ -15138,6 +15145,10 @@ Your Eurocircuits Team
 </element>
 <element name="J1" library="RoboJackets-Connectors" package="SBH11-*-D05-RA-VERT" value="SBH11--D05-" x="-16.5" y="58" smashed="yes" rot="R180">
 <attribute name="NAME" x="-7.19" y="52.46" size="1" layer="21" rot="R180"/>
+</element>
+<element name="F1" library="RoboJackets-Fuses" package="FUSC2113X75" package3d_urn="urn:adsk.eagle:package:8760197/1" value="0805L200SLTHYR" x="-7.5" y="-9.25" smashed="yes" rot="MR90">
+<attribute name="NAME" x="-9.7909" y="-9.25" size="1" layer="26" font="vector" ratio="15" rot="MR0" align="bottom-center"/>
+<attribute name="VALUE" x="-9.2091" y="-9.25" size="1.27" layer="28" rot="MR90" align="top-center"/>
 </element>
 </elements>
 <signals>
@@ -16465,7 +16476,6 @@ Your Eurocircuits Team
 <contactref element="D9" pad="C"/>
 <contactref element="LED1" pad="1"/>
 <contactref element="LED2" pad="1"/>
-<contactref element="KIT1" pad="VBUS"/>
 <wire x1="-6.85" y1="-34.75" x2="-7.1" y2="-34.5" width="0.3" layer="16"/>
 <wire x1="-7.1" y1="-34.5" x2="-8.5" y2="-34.5" width="0.3" layer="16"/>
 <wire x1="-39.75" y1="63.8" x2="-41.2" y2="63.8" width="0.3" layer="1"/>
@@ -16481,7 +16491,6 @@ Your Eurocircuits Team
 <wire x1="21.25" y1="51.4" x2="21.25" y2="50.75" width="0.3" layer="1"/>
 <via x="22" y="50" extent="1-16" drill="0.35"/>
 <contactref element="KIT1" pad="VIN"/>
-<wire x1="-19" y1="-29.5" x2="-20.5" y2="-31" width="0.7" layer="3"/>
 <wire x1="-20.5" y1="-31" x2="-29.5" y2="-31" width="0.7" layer="3"/>
 <wire x1="-20.5" y1="-31" x2="-22.3" y2="-32.8" width="0.7" layer="3"/>
 <wire x1="-22.3" y1="-32.8" x2="-22.3" y2="-33.45" width="0.7" layer="3"/>
@@ -16509,7 +16518,8 @@ Your Eurocircuits Team
 <wire x1="-62.25" y1="13.5" x2="-62.5" y2="13.75" width="0.7" layer="3"/>
 <wire x1="-42" y1="-18.5" x2="-42.467765625" y2="-18.5" width="0.7" layer="3"/>
 <wire x1="-42.467765625" y1="-18.5" x2="-43.88388125" y2="-19.916115625" width="0.7" layer="3"/>
-<wire x1="-20.5" y1="-31" x2="-15" y2="-31" width="0.7" layer="3"/>
+<wire x1="-20.5" y1="-31" x2="-19" y2="-31" width="0.7" layer="3"/>
+<wire x1="-19" y1="-31" x2="-15" y2="-31" width="0.7" layer="3"/>
 <wire x1="-15" y1="-31" x2="-11.5" y2="-34.5" width="0.7" layer="3"/>
 <wire x1="-0.5" y1="-38" x2="28.5" y2="-38" width="0.7" layer="3"/>
 <wire x1="54.37131875" y1="-7.128678125" x2="56.742640625" y2="-9.5" width="0.7" layer="3"/>
@@ -16520,9 +16530,6 @@ Your Eurocircuits Team
 <wire x1="-8" y1="-35" x2="-8.5" y2="-34.5" width="0.7" layer="3"/>
 <wire x1="-3.5" y1="-35" x2="-8" y2="-35" width="0.7" layer="3"/>
 <wire x1="44.09" y1="68.93" x2="44.09" y2="63" width="0.7" layer="3"/>
-<wire x1="44.09" y1="63" x2="44.09" y2="50" width="0.7" layer="3"/>
-<wire x1="44.09" y1="50" x2="44.09" y2="49.5" width="0.7" layer="3"/>
-<wire x1="51.5" y1="49.5" x2="44.09" y2="49.5" width="0.7" layer="3"/>
 <wire x1="64.5" y1="-3" x2="58" y2="-9.5" width="0.7" layer="3"/>
 <wire x1="64.5" y1="36.5" x2="51.5" y2="49.5" width="0.7" layer="3"/>
 <wire x1="28.5" y1="-38" x2="41" y2="-25.5" width="0.7" layer="3"/>
@@ -16535,10 +16542,10 @@ Your Eurocircuits Team
 <wire x1="64.5" y1="27.5" x2="64.5" y2="36.5" width="0.7" layer="3"/>
 <wire x1="64.5" y1="15" x2="64.25" y2="14.75" width="0.7" layer="3"/>
 <wire x1="64.25" y1="14.75" x2="62.5" y2="14.75" width="0.7" layer="3"/>
-<wire x1="22" y1="50" x2="44.09" y2="50" width="0.3" layer="3"/>
+<wire x1="44.09" y1="50" x2="22" y2="50" width="0.3" layer="3"/>
 <wire x1="-11.65" y1="-5" x2="-15.5" y2="-8.85" width="0.7" layer="1"/>
-<wire x1="-19" y1="-16" x2="-19" y2="-29.5" width="0.7" layer="1"/>
-<via x="-19" y="-29.5" extent="1-16" drill="0.35"/>
+<wire x1="-19" y1="-16" x2="-19" y2="-31" width="0.7" layer="1"/>
+<via x="-19" y="-31" extent="1-16" drill="0.35"/>
 <wire x1="-15.5" y1="-8.85" x2="-15.5" y2="-12.5" width="0.7" layer="1"/>
 <wire x1="-15.5" y1="-12.5" x2="-19" y2="-16" width="0.7" layer="1"/>
 <contactref element="M1:U4" pad="5"/>
@@ -16746,12 +16753,14 @@ Your Eurocircuits Team
 <wire x1="-48.5" y1="16.5" x2="-49" y2="16" width="0.3" layer="16"/>
 <wire x1="53.15" y1="10.5" x2="52.15" y2="11.5" width="0.3" layer="16"/>
 <wire x1="52.15" y1="11.5" x2="51.5" y2="11.5" width="0.3" layer="16"/>
-<wire x1="44.09" y1="46.07" x2="44.09" y2="49.5" width="0.7" layer="3"/>
 <contactref element="J1" pad="6"/>
 <wire x1="-36" y1="53" x2="-33.5" y2="55.5" width="0.7" layer="3"/>
 <wire x1="-33.5" y1="55.5" x2="-22.81" y2="55.5" width="0.7" layer="3"/>
 <wire x1="-45" y1="53" x2="-36" y2="53" width="0.7" layer="3"/>
 <wire x1="-22.81" y1="55.5" x2="-21.58" y2="56.73" width="0.7" layer="3"/>
+<wire x1="44.59" y1="49.5" x2="44.09" y2="50" width="0.7" layer="3"/>
+<wire x1="51.5" y1="49.5" x2="44.59" y2="49.5" width="0.7" layer="3"/>
+<wire x1="44.09" y1="50" x2="44.09" y2="63" width="0.7" layer="3"/>
 </signal>
 <signal name="+3.3V">
 <contactref element="R8" pad="1"/>
@@ -17457,8 +17466,8 @@ Your Eurocircuits Team
 <vertex x="4" y="-22"/>
 <vertex x="10.5" y="-22"/>
 <vertex x="11" y="-21.5"/>
-<vertex x="11" y="-19.5"/>
-<vertex x="15.5" y="-15"/>
+<vertex x="11" y="-20.5"/>
+<vertex x="15.5" y="-16"/>
 <vertex x="15.5" y="-9.5"/>
 <vertex x="8" y="-2"/>
 <vertex x="-5.5" y="-2"/>
@@ -17857,20 +17866,26 @@ Your Eurocircuits Team
 <wire x1="-6" y1="-17" x2="-1" y2="-22" width="0.3" layer="1"/>
 </signal>
 <signal name="+5V-FUSE">
-<contactref element="F1" pad="1"/>
 <contactref element="U10" pad="789"/>
 <contactref element="C32" pad="1"/>
 <contactref element="R2" pad="2"/>
 <polygon width="0.2" layer="16" thermals="no">
-<vertex x="-8.5" y="-17.5"/>
+<vertex x="-8.5" y="-17"/>
 <vertex x="-8.5" y="-19.25"/>
 <vertex x="-6.25" y="-19.25"/>
 <vertex x="-6.25" y="-17"/>
 <vertex x="-6.5" y="-16.5"/>
-<vertex x="-6.5" y="-9.5"/>
-<vertex x="-8" y="-9.5"/>
+<vertex x="-6.5" y="-12"/>
+<vertex x="-8" y="-12"/>
 <vertex x="-8" y="-16.5"/>
-<vertex x="-8.5" y="-17"/>
+</polygon>
+<contactref element="F1" pad="1"/>
+<polygon width="0.2" layer="16" thermals="no">
+<vertex x="-6.5" y="-12"/>
+<vertex x="-6.5" y="-14"/>
+<vertex x="-8.5" y="-14"/>
+<vertex x="-8.5" y="-9.5"/>
+<vertex x="-6.5" y="-9.5"/>
 </polygon>
 </signal>
 <signal name="M1:AVDD">
@@ -20747,10 +20762,10 @@ Your Eurocircuits Team
 <wire x1="2.35" y1="-7.594" x2="2.45" y2="-7.694" width="0.3" layer="16"/>
 </signal>
 <signal name="+5V-PRE2">
-<contactref element="F1" pad="2"/>
 <contactref element="SB3" pad="1"/>
-<wire x1="-6.6" y1="-5.75" x2="-7.25" y2="-6.4" width="0.3" layer="16"/>
-<wire x1="-7.25" y1="-6.4" x2="-7.25" y2="-8.4" width="0.3" layer="16"/>
+<contactref element="F1" pad="2"/>
+<wire x1="-7.5" y1="-6.65" x2="-7.5" y2="-8.15" width="0.3" layer="16"/>
+<wire x1="-6.6" y1="-5.75" x2="-7.5" y2="-6.65" width="0.3" layer="16"/>
 </signal>
 <signal name="+1.2V-PRE">
 <contactref element="U5" pad="5"/>
@@ -22200,8 +22215,7 @@ Your Eurocircuits Team
 <wire x1="-33" y1="3.5" x2="-36.5" y2="0" width="0.6" layer="3"/>
 <wire x1="-36.5" y1="0" x2="-40" y2="0" width="0.6" layer="3"/>
 <via x="-40" y="0" extent="1-16" drill="0.35"/>
-<wire x1="-40" y1="0" x2="-40.10104375" y2="-0.10104375" width="0.6" layer="16"/>
-<wire x1="-40.10104375" y1="-0.10104375" x2="-40.10104375" y2="-1.39895625" width="0.6" layer="16"/>
+<wire x1="-40" y1="0" x2="-40.75" y2="-0.75" width="0.6" layer="16"/>
 <wire x1="-40.10104375" y1="-1.39895625" x2="-40.75" y2="-0.75" width="0.6" layer="16"/>
 <wire x1="-40.75" y1="-0.75" x2="-41.398959375" y2="-0.101040625" width="0.6" layer="16"/>
 <wire x1="-40.75" y1="-0.75" x2="-40.750003125" y2="-0.75" width="0.6" layer="16"/>
@@ -22287,12 +22301,12 @@ Your Eurocircuits Team
 <contactref element="KIT1" pad="P$30"/>
 <wire x1="21.23" y1="46.07" x2="14.3" y2="53" width="0.3" layer="16"/>
 <wire x1="-7" y1="53" x2="-8" y2="54" width="0.3" layer="16"/>
-<wire x1="-10.5" y1="61" x2="-8" y2="58.5" width="0.3" layer="16"/>
-<wire x1="-12.75" y1="60.5" x2="-12.75" y2="58" width="0.3" layer="16"/>
+<wire x1="-11" y1="61" x2="-8" y2="58" width="0.3" layer="16"/>
+<wire x1="-12.75" y1="60" x2="-12.75" y2="58" width="0.3" layer="16"/>
 <wire x1="14.3" y1="53" x2="-7" y2="53" width="0.3" layer="16"/>
-<wire x1="-8" y1="54" x2="-8" y2="58.5" width="0.3" layer="16"/>
-<wire x1="-12.75" y1="60.5" x2="-12.25" y2="61" width="0.3" layer="16"/>
-<wire x1="-12.25" y1="61" x2="-10.5" y2="61" width="0.3" layer="16"/>
+<wire x1="-8" y1="54" x2="-8" y2="58" width="0.3" layer="16"/>
+<wire x1="-12.75" y1="60" x2="-11.75" y2="61" width="0.3" layer="16"/>
+<wire x1="-11.75" y1="61" x2="-11" y2="61" width="0.3" layer="16"/>
 <wire x1="-12.75" y1="58" x2="-13.96" y2="56.79" width="0.3" layer="16"/>
 <wire x1="-13.96" y1="56.79" x2="-13.96" y2="56.73" width="0.3" layer="16"/>
 </signal>
@@ -22302,6 +22316,9 @@ Your Eurocircuits Team
 <wire x1="3.45" y1="68.93" x2="-3.48" y2="62" width="0.3" layer="1"/>
 <wire x1="-13.77" y1="62" x2="-3.48" y2="62" width="0.3" layer="1"/>
 <wire x1="-16.5" y1="59.27" x2="-13.77" y2="62" width="0.3" layer="1"/>
+</signal>
+<signal name="VBUS">
+<contactref element="KIT1" pad="VBUS"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
