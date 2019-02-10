@@ -30663,17 +30663,32 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SUPPLY1" library="supply2" deviceset="+5V" device=""/>
 <part name="J1" library="RoboJackets-Connectors" deviceset="MKS-1658" device=""/>
 <part name="J2" library="RoboJackets-Connectors" deviceset="4-PIN_2MM-*" device="H"/>
-<part name="U2" library="RoboJackets-ICs" deviceset="INA240PWR" device=""/>
-<part name="U3" library="RoboJackets-ICs" deviceset="INA240PWR" device=""/>
+<part name="U2" library="RoboJackets-ICs" deviceset="INA240PWR" device="">
+<attribute name="DIGIKEY" value="296-45090-1-ND"/>
+<attribute name="MPN" value="INA240A3PWR"/>
+</part>
+<part name="U3" library="RoboJackets-ICs" deviceset="INA240PWR" device="">
+<attribute name="DIGIKEY" value="296-45090-1-ND"/>
+<attribute name="MPN" value="INA240A3PWR"/>
+</part>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="U4" library="RoboJackets-ICs" deviceset="INA240PWR" device=""/>
+<part name="U4" library="RoboJackets-ICs" deviceset="INA240PWR" device="">
+<attribute name="DIGIKEY" value="296-45090-1-ND"/>
+<attribute name="MPN" value="INA240A3PWR"/>
+</part>
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C14" library="RoboJackets-Capacitors" deviceset="ECA-1HM221B" device=""/>
-<part name="C15" library="RoboJackets-Capacitors" deviceset="ECA-1HM221B" device=""/>
+<part name="C14" library="RoboJackets-Capacitors" deviceset="ECA-1HM221B" device="">
+<attribute name="DIGIKEY" value="P10398TB-ND"/>
+<attribute name="MPN" value="ECA-1HM221B"/>
+</part>
+<part name="C15" library="RoboJackets-Capacitors" deviceset="ECA-1HM221B" device="">
+<attribute name="DIGIKEY" value="P10398TB-ND"/>
+<attribute name="MPN" value="ECA-1HM221B"/>
+</part>
 <part name="SUPPLY11" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="SUPPLY12" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="SUPPLY13" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
@@ -30851,10 +30866,14 @@ has issues with ports</text>
 <instance part="U2" gate="A" x="154.94" y="81.28" smashed="yes">
 <attribute name="NAME" x="142.5956" y="95.4786" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 <attribute name="VALUE" x="141.9606" y="64.9986" size="2.0828" layer="96" ratio="6" rot="SR0"/>
+<attribute name="MPN" x="154.94" y="81.28" size="1.778" layer="96" display="off"/>
+<attribute name="DIGIKEY" x="154.94" y="81.28" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="U3" gate="A" x="66.04" y="83.82" smashed="yes">
 <attribute name="NAME" x="53.6956" y="98.0186" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 <attribute name="VALUE" x="53.0606" y="67.5386" size="2.0828" layer="96" ratio="6" rot="SR0"/>
+<attribute name="MPN" x="66.04" y="83.82" size="1.778" layer="96" display="off"/>
+<attribute name="DIGIKEY" x="66.04" y="83.82" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND13" gate="1" x="86.36" y="68.58" smashed="yes">
 <attribute name="VALUE" x="83.82" y="66.04" size="1.778" layer="96"/>
@@ -30871,6 +30890,8 @@ has issues with ports</text>
 <instance part="U4" gate="A" x="241.3" y="81.28" smashed="yes">
 <attribute name="NAME" x="228.9556" y="95.4786" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 <attribute name="VALUE" x="228.3206" y="64.9986" size="2.0828" layer="96" ratio="6" rot="SR0"/>
+<attribute name="MPN" x="241.3" y="81.28" size="1.778" layer="96" display="off"/>
+<attribute name="DIGIKEY" x="241.3" y="81.28" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND17" gate="1" x="261.62" y="66.04" smashed="yes">
 <attribute name="VALUE" x="259.08" y="63.5" size="1.778" layer="96"/>
@@ -30881,10 +30902,14 @@ has issues with ports</text>
 <instance part="C14" gate="A" x="96.52" y="33.02" smashed="yes" rot="R270">
 <attribute name="VALUE" x="93.5228" y="28.0162" size="2.032" layer="96" ratio="10" rot="SR180"/>
 <attribute name="NAME" x="93.5228" y="34.5694" size="2.032" layer="95" ratio="10" rot="SR180"/>
+<attribute name="MPN" x="96.52" y="33.02" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="DIGIKEY" x="96.52" y="33.02" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="C15" gate="A" x="106.68" y="33.02" smashed="yes" rot="R270">
 <attribute name="VALUE" x="126.5428" y="28.0162" size="2.032" layer="96" ratio="10" rot="SR180"/>
 <attribute name="NAME" x="108.7628" y="32.0294" size="2.032" layer="95" ratio="10" rot="SR0"/>
+<attribute name="DIGIKEY" x="106.68" y="33.02" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="106.68" y="33.02" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="SUPPLY11" gate="+5V" x="198.12" y="88.9" smashed="yes" rot="R90">
 <attribute name="VALUE" x="194.945" y="86.995" size="1.778" layer="96" rot="R90"/>
@@ -32355,7 +32380,7 @@ has issues with ports</text>
 <part name="R13" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10k"/>
 <part name="R12" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10k"/>
 <part name="R14" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10k"/>
-<part name="C28" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
+<part name="C28" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 50V"/>
 <part name="C29" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="GND47" library="supply1" deviceset="GND" device=""/>
 <part name="GND48" library="supply1" deviceset="GND" device=""/>
@@ -32459,7 +32484,10 @@ has issues with ports</text>
 <part name="C11" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY16" library="RoboJackets-Supplies" deviceset="+18.5V" device=""/>
-<part name="U10" library="RoboJackets-PowerICs" deviceset="MPM3620GQV-P" device=""/>
+<part name="U10" library="RoboJackets-PowerICs" deviceset="MPM3620GQV-P" device="">
+<attribute name="DIGIKEY" value="1589-1252-1-ND"/>
+<attribute name="MPN" value="MPM3620GQV-P"/>
+</part>
 <part name="GND39" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND40" library="supply1" deviceset="GND" device=""/>
 <part name="C32" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22uF 16V"/>
@@ -32477,10 +32505,19 @@ has issues with ports</text>
 <part name="R29" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="4.7k"/>
 <part name="SUPPLY72" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="FRAME6" library="RoboJackets-Frames" deviceset="FRAME_A_L" device=""/>
-<part name="LED1" library="RoboJackets-ICs" deviceset="APA102" device="5050"/>
-<part name="LED2" library="RoboJackets-ICs" deviceset="APA102" device="5050"/>
+<part name="LED1" library="RoboJackets-ICs" deviceset="APA102" device="5050" value="APA102C-5050">
+<attribute name="DIGIKEY" value="1568-1902-ND"/>
+<attribute name="MPN" value="APA1025050"/>
+</part>
+<part name="LED2" library="RoboJackets-ICs" deviceset="APA102" device="5050" value="APA102C-5050">
+<attribute name="DIGIKEY" value="1568-1902-ND"/>
+<attribute name="MPN" value="APA1025050"/>
+</part>
 <part name="KIT1" library="RoboJackets-Boards" deviceset="MTRAIN" device=""/>
-<part name="U8" library="RoboJackets-ICs" deviceset="ADUM3151ARSZ" device=""/>
+<part name="U8" library="RoboJackets-ICs" deviceset="ADUM3151ARSZ" device="">
+<attribute name="DIGIKEY" value="ADUM3151ARSZ-RL7CT-ND"/>
+<attribute name="MPN" value="ADUM3151ARSZ"/>
+</part>
 <part name="GND46" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND72" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
@@ -32492,8 +32529,12 @@ has issues with ports</text>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="160k 1%"/>
 <part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="43.2k"/>
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="150k"/>
-<part name="U9" library="RoboJackets-ICs" deviceset="ADS8028IRTJT" device="" package3d_urn="urn:adsk.eagle:package:7475668/1"/>
-<part name="U11" library="RoboJackets-ICs" deviceset="ADS8028IRTJT" device="" package3d_urn="urn:adsk.eagle:package:7475668/1"/>
+<part name="U9" library="RoboJackets-ICs" deviceset="ADS8028IRTJT" device="" package3d_urn="urn:adsk.eagle:package:7475668/1">
+<attribute name="DIGIKEY" value="296-30382-2-ND"/>
+</part>
+<part name="U11" library="RoboJackets-ICs" deviceset="ADS8028IRTJT" device="" package3d_urn="urn:adsk.eagle:package:7475668/1">
+<attribute name="DIGIKEY" value="296-30382-2-ND"/>
+</part>
 <part name="GND81" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND83" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -32508,7 +32549,10 @@ has issues with ports</text>
 <part name="SUPPLY74" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="GND79" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SUPPLY75" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
-<part name="U7" library="RoboJackets-ICs" deviceset="DRV8837X" device=""/>
+<part name="U7" library="RoboJackets-ICs" deviceset="DRV8837X" device="">
+<attribute name="DIGIKEY" value="296-34806-1-ND"/>
+<attribute name="MPN" value="DRV8837DSGR"/>
+</part>
 <part name="SUPPLY76" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="GND80" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND82" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -32534,17 +32578,26 @@ has issues with ports</text>
 <part name="GND87" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND88" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C46" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10uF"/>
-<part name="C47" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
+<part name="C47" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 50V"/>
 <part name="C48" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10uF"/>
-<part name="C49" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
+<part name="C49" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 50V"/>
 <part name="GND89" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND90" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SUPPLY41" library="RoboJackets-Supplies" deviceset="+18.5V" device=""/>
 <part name="SUPPLY43" library="RoboJackets-Supplies" deviceset="+18.5V" device=""/>
-<part name="U12" library="RoboJackets-PowerICs" deviceset="LDK715M50R" device=""/>
-<part name="U13" library="RoboJackets-PowerICs" deviceset="LDK715M50R" device=""/>
+<part name="U12" library="RoboJackets-PowerICs" deviceset="LDK715M50R" device="">
+<attribute name="DIGIKEY" value="497-15217-1-ND"/>
+<attribute name="MPN" value="LDK715M50R"/>
+</part>
+<part name="U13" library="RoboJackets-PowerICs" deviceset="LDK715M50R" device="">
+<attribute name="DIGIKEY" value="497-15217-1-ND"/>
+<attribute name="MPN" value="LDK715M50R"/>
+</part>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
-<part name="J1" library="RoboJackets-Connectors" deviceset="SBH11-*-D05-?" device=""/>
+<part name="J1" library="RoboJackets-Connectors" deviceset="SBH11-*-D05-?" device="" value="SBH11-PBPC-D05-ST-BK">
+<attribute name="DIGIKEY" value="S9169-ND"/>
+<attribute name="MPN" value="SBH11-PBPC-D05-ST-BK"/>
+</part>
 <part name="F1" library="RoboJackets-Fuses" deviceset="CHIP_FUSE" device="0805" package3d_urn="urn:adsk.eagle:package:8760197/1" value="0805L200SLTHYR"/>
 <part name="SUPPLY3" library="supply2" deviceset="+5V" device=""/>
 </parts>
@@ -32552,8 +32605,6 @@ has issues with ports</text>
 <sheet>
 <description>Microcontroller</description>
 <plain>
-<text x="104.14" y="147.32" size="1.778" layer="97">Should VIN &amp; VBUS be
-connected like that?</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -33455,8 +33506,7 @@ serial from MTrain</text>
 <net name="R-P43" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="3_IOL01N_3"/>
-<wire x1="167.64" y1="81.28" x2="167.64" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="76.2" x2="167.64" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="76.2" x2="167.64" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="RN6" gate="G$1" pin="3"/>
@@ -33466,8 +33516,7 @@ serial from MTrain</text>
 <net name="R-P44" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="2_IOL01P_3"/>
-<wire x1="165.1" y1="81.28" x2="165.1" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="76.2" x2="165.1" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="76.2" x2="165.1" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="RN6" gate="G$1" pin="4"/>
@@ -33502,8 +33551,7 @@ serial from MTrain</text>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="28_VCCO_3"/>
-<wire x1="231.14" y1="81.28" x2="231.14" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="68.58" x2="231.14" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="81.28" x2="231.14" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="66.04" x2="228.6" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="228.6" y1="66.04" x2="228.6" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="228.6" y1="63.5" x2="228.6" y2="58.42" width="0.1524" layer="91"/>
@@ -33566,8 +33614,7 @@ serial from MTrain</text>
 </segment>
 <segment>
 <pinref part="SUPPLY7" gate="P" pin="+3.3V"/>
-<wire x1="193.04" y1="228.6" x2="193.04" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="226.06" x2="193.04" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="228.6" x2="193.04" y2="223.52" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="100_VCCO_1"/>
 <wire x1="182.88" y1="208.28" x2="182.88" y2="223.52" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="223.52" x2="187.96" y2="223.52" width="0.1524" layer="91"/>
@@ -33722,8 +33769,7 @@ serial from MTrain</text>
 <net name="R-P2" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="81_IO_L03P_1/A12"/>
-<wire x1="231.14" y1="208.28" x2="231.14" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="213.36" x2="231.14" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="213.36" x2="231.14" y2="208.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="RN4" gate="G$1" pin="2"/>
@@ -33733,8 +33779,7 @@ serial from MTrain</text>
 <net name="R-P3" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="77_IO_L02N_1/A13"/>
-<wire x1="241.3" y1="208.28" x2="241.3" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="213.36" x2="241.3" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="213.36" x2="241.3" y2="208.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="RN4" gate="G$1" pin="3"/>
@@ -33744,8 +33789,7 @@ serial from MTrain</text>
 <net name="R-P4" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="76_IO_L02P_1/A14"/>
-<wire x1="243.84" y1="208.28" x2="243.84" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="243.84" y1="213.36" x2="243.84" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="213.36" x2="243.84" y2="208.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="RN4" gate="G$1" pin="4"/>
@@ -33755,8 +33799,7 @@ serial from MTrain</text>
 <net name="R-P5" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="75_IO_L01N_1/A15"/>
-<wire x1="246.38" y1="208.28" x2="246.38" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="246.38" y1="213.36" x2="246.38" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="213.36" x2="246.38" y2="208.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="RN4" gate="G$1" pin="5"/>
@@ -33766,8 +33809,7 @@ serial from MTrain</text>
 <net name="R-P6" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="74_IO_L01P_1/A16"/>
-<wire x1="248.92" y1="208.28" x2="248.92" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="213.36" x2="248.92" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="213.36" x2="248.92" y2="208.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="RN4" gate="G$1" pin="6"/>
@@ -33799,8 +33841,7 @@ serial from MTrain</text>
 <net name="R-P17" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="101_IP"/>
-<wire x1="180.34" y1="208.28" x2="180.34" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="213.36" x2="180.34" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="213.36" x2="180.34" y2="208.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="RN3" gate="G$1" pin="1"/>
@@ -33890,8 +33931,7 @@ serial from MTrain</text>
 <net name="R-P31" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="104_IO_L09N_1/LDC0"/>
-<wire x1="172.72" y1="208.28" x2="172.72" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="213.36" x2="172.72" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="213.36" x2="172.72" y2="208.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="RN1" gate="G$1" pin="7"/>
@@ -33901,8 +33941,7 @@ serial from MTrain</text>
 <net name="R-P30" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="105_IO_L10P_1/LDC1"/>
-<wire x1="170.18" y1="210.82" x2="170.18" y2="208.28" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="213.36" x2="170.18" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="213.36" x2="170.18" y2="208.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="RN1" gate="G$1" pin="6"/>
@@ -33912,8 +33951,7 @@ serial from MTrain</text>
 <net name="R-P29" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="106_IO_L10N_1/LDC2"/>
-<wire x1="167.64" y1="208.28" x2="167.64" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="213.36" x2="167.64" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="213.36" x2="167.64" y2="208.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="RN1" gate="G$1" pin="5"/>
@@ -33923,8 +33961,7 @@ serial from MTrain</text>
 <net name="R-P28" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="112_IO_L01P_0"/>
-<wire x1="139.7" y1="182.88" x2="142.24" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="182.88" x2="139.7" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="182.88" x2="142.24" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="RN1" gate="G$1" pin="4"/>
@@ -33933,9 +33970,8 @@ serial from MTrain</text>
 </net>
 <net name="R-P27" class="0">
 <segment>
-<wire x1="142.24" y1="180.34" x2="139.7" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="113_IO_L01N_0"/>
-<wire x1="137.16" y1="180.34" x2="139.7" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="180.34" x2="142.24" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="RN1" gate="G$1" pin="3"/>
@@ -33965,8 +34001,7 @@ serial from MTrain</text>
 <net name="R-P39" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="122_IO_L04P_0/GCLK4"/>
-<wire x1="142.24" y1="157.48" x2="139.7" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="157.48" x2="139.7" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="157.48" x2="142.24" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="RN5" gate="G$1" pin="7"/>
@@ -33976,8 +34011,7 @@ serial from MTrain</text>
 <net name="R-P38" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="123_IO_L04N_0/GCLK5"/>
-<wire x1="142.24" y1="154.94" x2="139.7" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="154.94" x2="139.7" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="154.94" x2="142.24" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="RN5" gate="G$1" pin="6"/>
@@ -33987,8 +34021,7 @@ serial from MTrain</text>
 <net name="R-P37" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="124_IO/VREF_0"/>
-<wire x1="142.24" y1="152.4" x2="139.7" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="152.4" x2="139.7" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="152.4" x2="142.24" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="RN5" gate="G$1" pin="5"/>
@@ -33998,8 +34031,7 @@ serial from MTrain</text>
 <net name="R-P36" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="125_IO_L05P_0/GCLK6"/>
-<wire x1="142.24" y1="149.86" x2="139.7" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="149.86" x2="139.7" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="149.86" x2="142.24" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="RN5" gate="G$1" pin="4"/>
@@ -34019,8 +34051,7 @@ serial from MTrain</text>
 <net name="R-P47" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="140_IO_L09N_0"/>
-<wire x1="142.24" y1="111.76" x2="139.7" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="111.76" x2="139.7" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="111.76" x2="142.24" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="RN6" gate="G$1" pin="7"/>
@@ -34030,8 +34061,7 @@ serial from MTrain</text>
 <net name="R-P46" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="141_IP"/>
-<wire x1="142.24" y1="109.22" x2="139.7" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="109.22" x2="139.7" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="109.22" x2="142.24" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="RN6" gate="G$1" pin="6"/>
@@ -34041,8 +34071,7 @@ serial from MTrain</text>
 <net name="R-P45" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="142_IO_L10P_0"/>
-<wire x1="142.24" y1="106.68" x2="139.7" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="106.68" x2="139.7" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="106.68" x2="142.24" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="RN6" gate="G$1" pin="5"/>
@@ -34112,8 +34141,7 @@ serial from MTrain</text>
 <net name="R-P55" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="8_IOL03N_3"/>
-<wire x1="180.34" y1="78.74" x2="180.34" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="76.2" x2="180.34" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="76.2" x2="180.34" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="RN7" gate="G$1" pin="7"/>
@@ -34123,8 +34151,7 @@ serial from MTrain</text>
 <net name="R-P56" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="7_IOL03P_3"/>
-<wire x1="177.8" y1="81.28" x2="177.8" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="76.2" x2="177.8" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="76.2" x2="177.8" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="RN7" gate="G$1" pin="8"/>
@@ -34144,8 +34171,7 @@ serial from MTrain</text>
 <net name="R-P57" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="35_IO_L10N_3"/>
-<wire x1="248.92" y1="78.74" x2="248.92" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="76.2" x2="248.92" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="76.2" x2="248.92" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="RN8" gate="G$1" pin="1"/>
@@ -34155,8 +34181,7 @@ serial from MTrain</text>
 <net name="R-P58" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="34_IO_L10P_3"/>
-<wire x1="246.38" y1="78.74" x2="246.38" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="246.38" y1="76.2" x2="246.38" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="76.2" x2="246.38" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="RN8" gate="G$1" pin="2"/>
@@ -34166,8 +34191,7 @@ serial from MTrain</text>
 <net name="R-P59" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="32_IO_L09P_3"/>
-<wire x1="241.3" y1="78.74" x2="241.3" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="76.2" x2="241.3" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="76.2" x2="241.3" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="RN8" gate="G$1" pin="3"/>
@@ -34177,8 +34201,7 @@ serial from MTrain</text>
 <net name="R-P60" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="31_IO/VREF_3"/>
-<wire x1="238.76" y1="81.28" x2="238.76" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="238.76" y1="76.2" x2="238.76" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="76.2" x2="238.76" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="RN8" gate="G$1" pin="4"/>
@@ -34188,8 +34211,7 @@ serial from MTrain</text>
 <net name="R-P61" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="26_IO_L08N_3"/>
-<wire x1="226.06" y1="81.28" x2="226.06" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="76.2" x2="226.06" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="76.2" x2="226.06" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="RN8" gate="G$1" pin="5"/>
@@ -34199,8 +34221,7 @@ serial from MTrain</text>
 <net name="R-P62" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="25_IO_L08P_3"/>
-<wire x1="223.52" y1="78.74" x2="223.52" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="76.2" x2="223.52" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="76.2" x2="223.52" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="RN8" gate="G$1" pin="6"/>
@@ -34210,8 +34231,7 @@ serial from MTrain</text>
 <net name="R-P63" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="24_IP"/>
-<wire x1="220.98" y1="81.28" x2="220.98" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="76.2" x2="220.98" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="76.2" x2="220.98" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="RN8" gate="G$1" pin="7"/>
@@ -34287,8 +34307,7 @@ serial from MTrain</text>
 </segment>
 <segment>
 <pinref part="SUPPLY6" gate="G$1" pin="+2.5V"/>
-<wire x1="167.64" y1="228.6" x2="167.64" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="226.06" x2="167.64" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="228.6" x2="167.64" y2="223.52" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="172.72" y1="226.06" x2="172.72" y2="223.52" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="102_VCCAUX"/>
@@ -34319,8 +34338,7 @@ serial from MTrain</text>
 <net name="R-P42" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="4_IOL02P_3"/>
-<wire x1="170.18" y1="81.28" x2="170.18" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="76.2" x2="170.18" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="76.2" x2="170.18" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="RN6" gate="G$1" pin="2"/>
@@ -34851,10 +34869,10 @@ serial from MTrain</text>
 <wire x1="96.52" y1="58.42" x2="96.52" y2="5.08" width="0.1524" layer="97" style="shortdash"/>
 <text x="99.06" y="53.34" size="1.778" layer="97">Radio Connector</text>
 <wire x1="96.52" y1="5.08" x2="167.64" y2="5.08" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="269.24" y1="134.62" x2="269.24" y2="208.28" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="269.24" y1="208.28" x2="193.04" y2="208.28" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="271.78" y1="134.62" x2="271.78" y2="208.28" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="271.78" y1="208.28" x2="193.04" y2="208.28" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="193.04" y1="208.28" x2="193.04" y2="134.62" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="193.04" y1="134.62" x2="269.24" y2="134.62" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="193.04" y1="134.62" x2="271.78" y2="134.62" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="134.62" y1="134.62" x2="134.62" y2="208.28" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="190.5" y1="208.28" x2="134.62" y2="208.28" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="190.5" y1="134.62" x2="190.5" y2="208.28" width="0.1524" layer="97" style="shortdash"/>
@@ -34963,8 +34981,8 @@ serial from MTrain</text>
 <instance part="GND43" gate="1" x="248.92" y="73.66" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="251.46" y="71.12" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="GND36" gate="1" x="157.48" y="30.48" smashed="yes">
-<attribute name="VALUE" x="154.94" y="27.94" size="1.778" layer="96"/>
+<instance part="GND36" gate="1" x="162.56" y="30.48" smashed="yes">
+<attribute name="VALUE" x="160.02" y="27.94" size="1.778" layer="96"/>
 </instance>
 <instance part="R11" gate="G$1" x="20.32" y="35.56" smashed="yes" rot="R270">
 <attribute name="NAME" x="21.8186" y="39.37" size="1.778" layer="95" rot="R270"/>
@@ -35028,10 +35046,14 @@ serial from MTrain</text>
 <instance part="LED1" gate="G$1" x="226.06" y="167.64" smashed="yes">
 <attribute name="NAME" x="215.9" y="175.26" size="1.778" layer="95"/>
 <attribute name="VALUE" x="226.06" y="162.56" size="1.778" layer="96"/>
+<attribute name="MPN" x="226.06" y="167.64" size="1.778" layer="96" display="off"/>
+<attribute name="DIGIKEY" x="226.06" y="167.64" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="LED2" gate="G$1" x="251.46" y="167.64" smashed="yes">
 <attribute name="NAME" x="241.3" y="175.26" size="1.778" layer="95"/>
 <attribute name="VALUE" x="251.46" y="162.56" size="1.778" layer="96"/>
+<attribute name="MPN" x="251.46" y="167.64" size="1.778" layer="96" display="off"/>
+<attribute name="DIGIKEY" x="251.46" y="167.64" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="J2" gate="G$1" x="167.64" y="175.26" smashed="yes">
 <attribute name="NAME" x="165.1" y="185.42" size="1.778" layer="95" align="top-left"/>
@@ -35049,6 +35071,8 @@ serial from MTrain</text>
 <instance part="J1" gate="G$1" x="129.54" y="38.1" smashed="yes">
 <attribute name="NAME" x="124.46" y="48.26" size="1.778" layer="95" align="top-left"/>
 <attribute name="VALUE" x="124.46" y="27.94" size="1.778" layer="96"/>
+<attribute name="DIGIKEY" x="129.54" y="38.1" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="129.54" y="38.1" size="1.778" layer="96" display="off"/>
 </instance>
 </instances>
 <busses>
@@ -35276,10 +35300,10 @@ serial from MTrain</text>
 <pinref part="GND41" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="139.7" y1="35.56" x2="157.48" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="GND36" gate="1" pin="GND"/>
-<wire x1="157.48" y1="35.56" x2="157.48" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="35.56" x2="162.56" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="7"/>
+<pinref part="GND36" gate="1" pin="GND"/>
+<wire x1="162.56" y1="35.56" x2="162.56" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="HEX-0" class="0">
@@ -35718,9 +35742,6 @@ the motor and power supply</text>
 <wire x1="269.24" y1="45.72" x2="269.24" y2="106.68" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="269.24" y1="106.68" x2="147.32" y2="106.68" width="0.1524" layer="97" style="shortdash"/>
 <text x="152.4" y="101.6" size="3.048" layer="97">LDOs for ADCs</text>
-<text x="243.84" y="99.06" size="1.27" layer="97">Should I use
-10uF (large stability
-region)?</text>
 <wire x1="139.7" y1="88.9" x2="139.7" y2="5.08" width="0.1524" layer="97" style="shortdash"/>
 </plain>
 <instances>
@@ -35735,6 +35756,8 @@ region)?</text>
 <instance part="U8" gate="A" x="215.9" y="165.1" smashed="yes">
 <attribute name="NAME" x="203.5556" y="184.3786" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 <attribute name="VALUE" x="202.9206" y="141.1986" size="2.0828" layer="96" ratio="6" rot="SR0"/>
+<attribute name="DIGIKEY" x="215.9" y="165.1" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="215.9" y="165.1" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND46" gate="1" x="241.3" y="149.86" smashed="yes" rot="R90">
 <attribute name="VALUE" x="243.84" y="147.32" size="1.778" layer="96" rot="R90"/>
@@ -35762,10 +35785,12 @@ region)?</text>
 <instance part="U9" gate="A" x="91.44" y="170.18" smashed="yes">
 <attribute name="NAME" x="76.5556" y="186.9186" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 <attribute name="VALUE" x="75.9206" y="151.3586" size="2.0828" layer="96" ratio="6" rot="SR0"/>
+<attribute name="DIGIKEY" x="91.44" y="170.18" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="U11" gate="A" x="91.44" y="119.38" smashed="yes">
 <attribute name="NAME" x="76.5556" y="136.1186" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 <attribute name="VALUE" x="75.9206" y="100.5586" size="2.0828" layer="96" ratio="6" rot="SR0"/>
+<attribute name="DIGIKEY" x="91.44" y="119.38" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND81" gate="1" x="134.62" y="182.88" smashed="yes" rot="R90">
 <attribute name="VALUE" x="137.16" y="180.34" size="1.778" layer="96" rot="R90"/>
@@ -35806,6 +35831,8 @@ region)?</text>
 <instance part="U7" gate="A" x="53.34" y="63.5" smashed="yes">
 <attribute name="NAME" x="40.9956" y="75.1586" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 <attribute name="VALUE" x="42.9006" y="49.7586" size="2.0828" layer="96" ratio="6" rot="SR0"/>
+<attribute name="DIGIKEY" x="53.34" y="63.5" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="53.34" y="63.5" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="SUPPLY76" gate="P" x="96.52" y="66.04" smashed="yes" rot="R270">
 <attribute name="VALUE" x="99.695" y="68.58" size="1.778" layer="96" rot="R270"/>
@@ -35911,10 +35938,14 @@ region)?</text>
 <instance part="U12" gate="A" x="203.2" y="86.36" smashed="yes">
 <attribute name="NAME" x="195.58" y="93.98" size="1.778" layer="95"/>
 <attribute name="VALUE" x="195.58" y="78.74" size="1.778" layer="96"/>
+<attribute name="DIGIKEY" x="203.2" y="86.36" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="203.2" y="86.36" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="U13" gate="A" x="203.2" y="60.96" smashed="yes">
 <attribute name="NAME" x="195.58" y="68.58" size="1.778" layer="95"/>
 <attribute name="VALUE" x="195.58" y="53.34" size="1.778" layer="96"/>
+<attribute name="DIGIKEY" x="203.2" y="60.96" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="203.2" y="60.96" size="1.778" layer="96" display="off"/>
 </instance>
 </instances>
 <busses>
@@ -36784,6 +36815,8 @@ battery power</text>
 <instance part="U10" gate="G$1" x="81.28" y="66.04" smashed="yes">
 <attribute name="NAME" x="71.12" y="81.28" size="1.778" layer="95" align="top-left"/>
 <attribute name="VALUE" x="71.12" y="50.8" size="1.778" layer="96"/>
+<attribute name="DIGIKEY" x="81.28" y="66.04" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="81.28" y="66.04" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND39" gate="1" x="53.34" y="40.64" smashed="yes">
 <attribute name="VALUE" x="50.8" y="38.1" size="1.778" layer="96"/>
