@@ -9,7 +9,7 @@
 </settings>
 <grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.25" altunitdist="mm" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="GND" color="13" fill="1" visible="no" active="yes"/>
 <layer number="3" name="Power" color="11" fill="1" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -14506,7 +14506,7 @@ Your Eurocircuits Team
 <attribute name="NAME" x="22.615" y="49.385" size="1" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="23.365" y="49.845" size="1" layer="27" font="vector" ratio="15"/>
 </element>
-<element name="C28" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="27.5" y="51.75" smashed="yes" rot="R180">
+<element name="C28" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 50V" x="27.5" y="51.75" smashed="yes" rot="R180">
 <attribute name="NAME" x="28.885" y="50.365" size="1" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="28.135" y="53.655" size="1" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
@@ -14717,30 +14717,48 @@ Your Eurocircuits Team
 <element name="U$10" library="RoboJackets-Aesthetics" package="ERR-IMU" value="" x="-18" y="43.56" smashed="yes"/>
 <element name="U$11" library="RoboJackets-Aesthetics" package="ROBOBUZZ_1.0X2" value="" x="35" y="48.5" smashed="yes"/>
 <element name="M1:U2" library="RoboJackets-ICs" package="PW0008A_N" value="INA240PWR" x="-53" y="6.5" smashed="yes" rot="MR180">
+<attribute name="DIGIKEY" value="296-45090-1-ND" x="-53" y="6.5" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MPN" value="INA240A3PWR" x="-53" y="6.5" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="NAME" x="-48.7766" y="5.095" size="1" layer="26" font="vector" ratio="15" rot="SMR90"/>
 </element>
 <element name="M2:U2" library="RoboJackets-ICs" package="PW0008A_N" value="INA240PWR" x="-30" y="-21" smashed="yes" rot="MR135">
+<attribute name="DIGIKEY" value="296-45090-1-ND" x="-30" y="-21" size="1.778" layer="28" rot="MR135" display="off"/>
+<attribute name="MPN" value="INA240A3PWR" x="-30" y="-21" size="1.778" layer="28" rot="MR135" display="off"/>
 <attribute name="NAME" x="-25.469865625" y="-19.66394375" size="1" layer="26" font="vector" ratio="15" rot="SMR45"/>
 </element>
 <element name="M3:U2" library="RoboJackets-ICs" package="PW0008A_N" value="INA240PWR" x="43" y="-10" smashed="yes" rot="MR45">
+<attribute name="DIGIKEY" value="296-45090-1-ND" x="43" y="-10" size="1.778" layer="28" rot="MR45" display="off"/>
+<attribute name="MPN" value="INA240A3PWR" x="43" y="-10" size="1.778" layer="28" rot="MR45" display="off"/>
 <attribute name="NAME" x="41.163946875" y="-5.969865625" size="1" layer="26" font="vector" ratio="15" rot="SMR315"/>
 </element>
 <element name="M4:U2" library="RoboJackets-ICs" package="PW0008A_N" value="INA240PWR" x="54" y="26" smashed="yes" rot="MR0">
+<attribute name="DIGIKEY" value="296-45090-1-ND" x="54" y="26" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MPN" value="INA240A3PWR" x="54" y="26" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="NAME" x="49.7766" y="27.905" size="1" layer="26" font="vector" ratio="15" rot="SMR270"/>
 </element>
 <element name="M1:U3" library="RoboJackets-ICs" package="PW0008A_N" value="INA240PWR" x="-52.5" y="12.5" smashed="yes" rot="MR180">
+<attribute name="DIGIKEY" value="296-45090-1-ND" x="-52.5" y="12.5" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MPN" value="INA240A3PWR" x="-52.5" y="12.5" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="NAME" x="-48.2766" y="10.595" size="1" layer="26" font="vector" ratio="15" rot="SMR90"/>
 </element>
 <element name="M2:U3" library="RoboJackets-ICs" package="PW0008A_N" value="INA240PWR" x="-35" y="-16" smashed="yes" rot="MR135">
+<attribute name="DIGIKEY" value="296-45090-1-ND" x="-35" y="-16" size="1.778" layer="28" rot="MR135" display="off"/>
+<attribute name="MPN" value="INA240A3PWR" x="-35" y="-16" size="1.778" layer="28" rot="MR135" display="off"/>
 <attribute name="NAME" x="-30.469865625" y="-14.66394375" size="1" layer="26" font="vector" ratio="15" rot="SMR45"/>
 </element>
 <element name="M3:U3" library="RoboJackets-ICs" package="PW0008A_N" value="INA240PWR" x="38.5" y="-14.5" smashed="yes" rot="MR45">
+<attribute name="DIGIKEY" value="296-45090-1-ND" x="38.5" y="-14.5" size="1.778" layer="28" rot="MR45" display="off"/>
+<attribute name="MPN" value="INA240A3PWR" x="38.5" y="-14.5" size="1.778" layer="28" rot="MR45" display="off"/>
 <attribute name="NAME" x="36.66394375" y="-10.469865625" size="1" layer="26" font="vector" ratio="15" rot="SMR315"/>
 </element>
 <element name="M4:U3" library="RoboJackets-ICs" package="PW0008A_N" value="INA240PWR" x="54" y="20" smashed="yes" rot="MR0">
+<attribute name="DIGIKEY" value="296-45090-1-ND" x="54" y="20" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MPN" value="INA240A3PWR" x="54" y="20" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="NAME" x="49.7766" y="21.905" size="1" layer="26" font="vector" ratio="15" rot="SMR270"/>
 </element>
 <element name="U10" library="RoboJackets-PowerICs" package="MPM3620GQV-P" value="MPM3620GQV-P" x="-6" y="-19.5" smashed="yes" rot="MR90">
+<attribute name="DIGIKEY" value="1589-1252-1-ND" x="-6" y="-19.5" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MPN" value="MPM3620GQV-P" x="-6" y="-19.5" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="NAME" x="-9.75" y="-21" size="1" layer="26" font="vector" ratio="15" rot="MR90"/>
 <attribute name="VALUE" x="-8.75" y="-21" size="1" layer="28" font="vector" ratio="15" rot="MR90" align="top-left"/>
 </element>
@@ -14768,22 +14786,34 @@ Your Eurocircuits Team
 <attribute name="VALUE" x="9.405" y="49.865" size="1" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="M1:U4" library="RoboJackets-ICs" package="PW0008A_N" value="INA240PWR" x="-52.5" y="18.5" smashed="yes" rot="MR180">
+<attribute name="DIGIKEY" value="296-45090-1-ND" x="-52.5" y="18.5" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MPN" value="INA240A3PWR" x="-52.5" y="18.5" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="NAME" x="-48.2766" y="16.595" size="1" layer="26" font="vector" ratio="15" rot="SMR90"/>
 </element>
 <element name="M2:U4" library="RoboJackets-ICs" package="PW0008A_N" value="INA240PWR" x="-39.5" y="-11.5" smashed="yes" rot="MR135">
+<attribute name="DIGIKEY" value="296-45090-1-ND" x="-39.5" y="-11.5" size="1.778" layer="28" rot="MR135" display="off"/>
+<attribute name="MPN" value="INA240A3PWR" x="-39.5" y="-11.5" size="1.778" layer="28" rot="MR135" display="off"/>
 <attribute name="NAME" x="-34.969865625" y="-10.163946875" size="1" layer="26" font="vector" ratio="15" rot="SMR45"/>
 </element>
 <element name="M3:U4" library="RoboJackets-ICs" package="PW0008A_N" value="INA240PWR" x="33.5" y="-19.5" smashed="yes" rot="MR45">
+<attribute name="DIGIKEY" value="296-45090-1-ND" x="33.5" y="-19.5" size="1.778" layer="28" rot="MR45" display="off"/>
+<attribute name="MPN" value="INA240A3PWR" x="33.5" y="-19.5" size="1.778" layer="28" rot="MR45" display="off"/>
 <attribute name="NAME" x="31.66394375" y="-15.469865625" size="1" layer="26" font="vector" ratio="15" rot="SMR315"/>
 </element>
 <element name="M4:U4" library="RoboJackets-ICs" package="PW0008A_N" value="INA240PWR" x="54" y="13.5" smashed="yes" rot="MR0">
+<attribute name="DIGIKEY" value="296-45090-1-ND" x="54" y="13.5" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MPN" value="INA240A3PWR" x="54" y="13.5" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="NAME" x="49.7766" y="15.405" size="1" layer="26" font="vector" ratio="15" rot="SMR270"/>
 </element>
-<element name="LED1" library="RoboJackets-ICs" package="APA102_5050" value="APA1025050" x="-41.75" y="71.5" smashed="yes">
+<element name="LED1" library="RoboJackets-ICs" package="APA102_5050" value="APA102C-5050" x="-41.75" y="71.5" smashed="yes">
+<attribute name="DIGIKEY" value="1568-1902-ND" x="-41.75" y="71.5" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="APA1025050" x="-41.75" y="71.5" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-48.79" y="69.04" size="1" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="-44.29" y="67.69" size="1" layer="27" font="vector" ratio="15"/>
 </element>
-<element name="LED2" library="RoboJackets-ICs" package="APA102_5050" value="APA1025050" x="-41.75" y="65.5" smashed="yes">
+<element name="LED2" library="RoboJackets-ICs" package="APA102_5050" value="APA102C-5050" x="-41.75" y="65.5" smashed="yes">
+<attribute name="DIGIKEY" value="1568-1902-ND" x="-41.75" y="65.5" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="APA1025050" x="-41.75" y="65.5" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-48.79" y="66.54" size="1" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="-44.29" y="61.69" size="1" layer="27" font="vector" ratio="15"/>
 </element>
@@ -14793,42 +14823,58 @@ Your Eurocircuits Team
 <attribute name="VENDOR" value="Panasonic" x="-43.5" y="57.5" size="1.778" layer="27" display="off"/>
 </element>
 <element name="M1:C14" library="RoboJackets-Capacitors" package="CAP_PAN_10X12.5" value="ECA-1HM221B" x="-35.5" y="27.5" smashed="yes">
+<attribute name="DIGIKEY" value="P10398TB-ND" x="-35.5" y="27.5" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="ECA1HM221B" x="-35.5" y="27.5" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="ECA-1HM221B" x="-35.5" y="27.5" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-32.7658" y="30.365" size="1" layer="25" font="vector" ratio="15" rot="SR0"/>
 <attribute name="VENDOR" value="Panasonic" x="-35.5" y="27.5" size="1.778" layer="27" display="off"/>
 </element>
 <element name="M2:C14" library="RoboJackets-Capacitors" package="CAP_PAN_10X12.5" value="ECA-1HM221B" x="-12" y="-7.5" smashed="yes" rot="R90">
+<attribute name="DIGIKEY" value="P10398TB-ND" x="-12" y="-7.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="ECA1HM221B" x="-12" y="-7.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="ECA-1HM221B" x="-12" y="-7.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-13" y="-4.5" size="1" layer="25" font="vector" ratio="15" rot="SR0"/>
 <attribute name="VENDOR" value="Panasonic" x="-12" y="-7.5" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="M3:C14" library="RoboJackets-Capacitors" package="CAP_PAN_10X12.5" value="ECA-1HM221B" x="45.5" y="8.5" smashed="yes">
+<attribute name="DIGIKEY" value="P10398TB-ND" x="45.5" y="8.5" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="ECA1HM221B" x="45.5" y="8.5" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="ECA-1HM221B" x="45.5" y="8.5" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="48.7342" y="6.865" size="1" layer="25" font="vector" ratio="15" rot="SR0"/>
 <attribute name="VENDOR" value="Panasonic" x="45.5" y="8.5" size="1.778" layer="27" display="off"/>
 </element>
 <element name="M4:C14" library="RoboJackets-Capacitors" package="CAP_PAN_10X12.5" value="ECA-1HM221B" x="33" y="38.75" smashed="yes" rot="R180">
+<attribute name="DIGIKEY" value="P10398TB-ND" x="33" y="38.75" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="ECA1HM221B" x="33" y="38.75" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="ECA-1HM221B" x="33" y="38.75" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="39.2658" y="42.885" size="1" layer="25" font="vector" ratio="15" rot="SR0"/>
 <attribute name="VENDOR" value="Panasonic" x="33" y="38.75" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="M1:C15" library="RoboJackets-Capacitors" package="CAP_PAN_10X12.5" value="ECA-1HM221B" x="-53" y="26" smashed="yes" rot="R180">
+<attribute name="DIGIKEY" value="P10398TB-ND" x="-53" y="26" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="ECA1HM221B" x="-53" y="26" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="ECA-1HM221B" x="-53" y="26" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="-57.2342" y="31.135" size="1" layer="25" font="vector" ratio="15" rot="SR0"/>
 <attribute name="VENDOR" value="Panasonic" x="-53" y="26" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="M2:C15" library="RoboJackets-Capacitors" package="CAP_PAN_10X12.5" value="ECA-1HM221B" x="-14.5" y="-24" smashed="yes" rot="R270">
+<attribute name="DIGIKEY" value="P10398TB-ND" x="-14.5" y="-24" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="ECA1HM221B" x="-14.5" y="-24" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="ECA-1HM221B" x="-14.5" y="-24" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="-25.135" y="-23.2342" size="1" layer="25" font="vector" ratio="15" rot="SR0"/>
 <attribute name="VENDOR" value="Panasonic" x="-14.5" y="-24" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="M3:C15" library="RoboJackets-Capacitors" package="CAP_PAN_10X12.5" value="ECA-1HM221B" x="28.5" y="13" smashed="yes" rot="R180">
+<attribute name="DIGIKEY" value="P10398TB-ND" x="28.5" y="13" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="ECA1HM221B" x="28.5" y="13" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="ECA-1HM221B" x="28.5" y="13" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="20.2658" y="12.635" size="1" layer="25" font="vector" ratio="15" rot="SR0"/>
 <attribute name="VENDOR" value="Panasonic" x="28.5" y="13" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="M4:C15" library="RoboJackets-Capacitors" package="CAP_PAN_10X12.5" value="ECA-1HM221B" x="50" y="38" smashed="yes">
+<attribute name="DIGIKEY" value="P10398TB-ND" x="50" y="38" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="ECA1HM221B" x="50" y="38" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="ECA-1HM221B" x="50" y="38" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="51.2342" y="42.365" size="1" layer="25" font="vector" ratio="15" rot="SR0"/>
 <attribute name="VENDOR" value="Panasonic" x="50" y="38" size="1.778" layer="27" display="off"/>
 </element>
@@ -14836,7 +14882,8 @@ Your Eurocircuits Team
 <attribute name="NAME" x="50.44" y="67.7" size="1" layer="25" font="vector" ratio="15" rot="R270"/>
 </element>
 <element name="U8" library="RoboJackets-ICs" package="RS_20" value="ADUM3151ARSZ" x="35.5" y="58.5" smashed="yes" rot="MR180">
-<attribute name="MPN" value="ADuM3151" x="35.5" y="58.5" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="DIGIKEY" value="ADUM3151ARSZ-RL7CT-ND" x="35.5" y="58.5" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MPN" value="ADUM3151ARSZ" x="35.5" y="58.5" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="NAME" x="36.2234" y="62.635" size="1" layer="26" font="vector" ratio="15" rot="SMR0"/>
 </element>
 <element name="C40" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="42.5" y="55" smashed="yes" rot="MR90">
@@ -14870,11 +14917,13 @@ Your Eurocircuits Team
 <attribute name="VALUE" x="-0.115" y="-23.155" size="1" layer="28" font="vector" ratio="15" rot="MR0"/>
 </element>
 <element name="U9" library="RoboJackets-ICs" package="RTJ20_2P7X2P7" package3d_urn="urn:adsk.eagle:package:7475668/1" value="ADS8028IRTJT" x="-47" y="-7.5" smashed="yes" rot="MR180">
+<attribute name="DIGIKEY" value="296-30382-2-ND" x="-47" y="-7.5" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="ADS8028IRTJT" x="-47" y="-7.5" size="1" layer="28" rot="MR180" display="off"/>
 <attribute name="NAME" x="-41.7766" y="-8.365" size="1" layer="26" font="vector" ratio="15" rot="SMR0"/>
 <attribute name="VENDOR" value="Texas Instruments" x="-47" y="-7.5" size="1" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="U11" library="RoboJackets-ICs" package="RTJ20_2P7X2P7" package3d_urn="urn:adsk.eagle:package:7475668/1" value="ADS8028IRTJT" x="56" y="3.5" smashed="yes" rot="MR180">
+<attribute name="DIGIKEY" value="296-30382-2-ND" x="56" y="3.5" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="ADS8028IRTJT" x="56" y="3.5" size="1" layer="28" rot="MR180" display="off"/>
 <attribute name="NAME" x="54.7234" y="0.635" size="1" layer="26" font="vector" ratio="15" rot="SMR180"/>
 <attribute name="VENDOR" value="Texas Instruments" x="56" y="3.5" size="1" layer="28" rot="MR180" display="off"/>
@@ -14958,7 +15007,9 @@ Your Eurocircuits Team
 <attribute name="VALUE" x="53.365" y="24.905" size="1" layer="28" font="vector" ratio="15" rot="MR180"/>
 </element>
 <element name="U7" library="RoboJackets-ICs" package="DSG_8" value="DRV8837X" x="20.75" y="60.5" smashed="yes">
+<attribute name="DIGIKEY" value="296-34806-1-ND" x="20.75" y="60.5" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="DRV8837DSGR" x="20.75" y="60.5" size="1" layer="27" display="off"/>
+<attribute name="MPN" value="DRV8837DSGR" x="20.75" y="60.5" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="19.4734" y="57.905" size="1" layer="25" font="vector" ratio="15" rot="SR0"/>
 <attribute name="VALUE" x="16.94" y="57.96" size="1" layer="27" font="vector" ratio="15"/>
 <attribute name="VENDOR" value="Texas Instruments" x="20.75" y="60.5" size="1" layer="27" display="off"/>
@@ -15089,7 +15140,7 @@ Your Eurocircuits Team
 <attribute name="SPICEPREFIX" value="C" x="-31.5" y="10" size="1.778" layer="28" rot="MR135" display="off"/>
 <attribute name="VALUE" x="-33.296053125" y="10.898028125" size="1.27" layer="28" rot="MR135"/>
 </element>
-<element name="C47" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="-31.5" y="4.5" smashed="yes" rot="MR45">
+<element name="C47" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 50V" x="-31.5" y="4.5" smashed="yes" rot="MR45">
 <attribute name="NAME" x="-29.89486875" y="4.5" size="1" layer="26" font="vector" ratio="15" rot="MR45"/>
 <attribute name="SPICEPREFIX" value="C" x="-31.5" y="4.5" size="1.778" layer="28" rot="MR45" display="off"/>
 <attribute name="VALUE" x="-32.398028125" y="2.703946875" size="1.27" layer="28" rot="MR45"/>
@@ -15099,18 +15150,24 @@ Your Eurocircuits Team
 <attribute name="SPICEPREFIX" value="C" x="32" y="6" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="32.635" y="4.095" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="C49" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="35" y="9.5" smashed="yes" rot="MR270">
+<element name="C49" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 50V" x="35" y="9.5" smashed="yes" rot="MR270">
 <attribute name="NAME" x="35.365" y="12.135" size="1" layer="26" font="vector" ratio="15" rot="MR180"/>
 <attribute name="SPICEPREFIX" value="C" x="35" y="9.5" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="VALUE" x="36.905" y="10.135" size="1.27" layer="28" rot="MR270"/>
 </element>
 <element name="U12" library="RoboJackets-PowerICs" package="SOT-23-5" value="LDK715M50R" x="-28.5" y="7.5" smashed="yes" rot="MR225">
+<attribute name="DIGIKEY" value="497-15217-1-ND" x="-28.5" y="7.5" size="1.778" layer="28" rot="MR225" display="off"/>
+<attribute name="MPN" value="LDK715M50R" x="-28.5" y="7.5" size="1.778" layer="28" rot="MR225" display="off"/>
 <attribute name="NAME" x="-31.328425" y="8.20710625" size="1" layer="26" font="vector" ratio="15" rot="MR135"/>
 </element>
 <element name="U13" library="RoboJackets-PowerICs" package="SOT-23-5" value="LDK715M50R" x="31.5" y="9" smashed="yes" rot="MR90">
+<attribute name="DIGIKEY" value="497-15217-1-ND" x="31.5" y="9" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MPN" value="LDK715M50R" x="31.5" y="9" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="NAME" x="28" y="8" size="1" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="J1" library="RoboJackets-Connectors" package="SBH11-*-D05-RA-VERT" value="SBH11--D05-" x="-16.5" y="58" smashed="yes" rot="R180">
+<element name="J1" library="RoboJackets-Connectors" package="SBH11-*-D05-RA-VERT" value="SBH11-PBPC-D05-ST-BK" x="-16.5" y="58" smashed="yes" rot="R180">
+<attribute name="DIGIKEY" value="S9169-ND" x="-16.5" y="58" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="SBH11-PBPC-D05-ST-BK" x="-16.5" y="58" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="-7.19" y="52.46" size="1" layer="21" rot="R180"/>
 </element>
 <element name="F1" library="RoboJackets-Fuses" package="FUSC2113X75" package3d_urn="urn:adsk.eagle:package:8760197/1" value="0805L200SLTHYR" x="-7.5" y="-9.25" smashed="yes" rot="MR90">
@@ -16404,7 +16461,6 @@ Your Eurocircuits Team
 <wire x1="-38.898959375" y1="-2.601040625" x2="-38.898959375" y2="-4.101040625" width="0.3" layer="16"/>
 <wire x1="-38.898959375" y1="-4.101040625" x2="-38" y2="-5" width="0.3" layer="16"/>
 <via x="-38" y="-5" extent="1-16" drill="0.35"/>
-<contactref element="J1" pad="7"/>
 <wire x1="-8.9757375" y1="31" x2="-9.7257375" y2="31.75" width="0.3" layer="1"/>
 <wire x1="-10.6" y1="31.75" x2="-9.7257375" y2="31.75" width="0.3" layer="1"/>
 <wire x1="-8.9757375" y1="31" x2="-7.5" y2="31" width="0.3" layer="1"/>
@@ -16425,6 +16481,7 @@ Your Eurocircuits Team
 <wire x1="-3" y1="-16.1" x2="-2.9" y2="-16" width="0.3" layer="1"/>
 <wire x1="-2.9" y1="-16" x2="-1.75" y2="-16" width="0.3" layer="1"/>
 <via x="57" y="3.5" extent="1-16" drill="0.35"/>
+<contactref element="J1" pad="7"/>
 </signal>
 <signal name="+5V">
 <contactref element="R12" pad="1"/>
