@@ -21919,10 +21919,8 @@ Your Eurocircuits Team
 <signal name="BOLT4">
 <via x="-48.5" y="0.94" extent="1-16" drill="3.8" diameter="7.2"/>
 </signal>
-<signal name="BOLT5">
+<signal name="BOLT3">
 <via x="48.5" y="0.94" extent="1-16" drill="3.8" diameter="7.2"/>
-<via x="16.5" y="35.94" extent="1-16" drill="3.8" diameter="7.2"/>
-<wire x1="48.5" y1="0.94" x2="16.5" y2="35.94" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BOLT2">
 <via x="57" y="56.94" extent="1-16" drill="3.8" diameter="7.2"/>
@@ -22321,6 +22319,9 @@ Your Eurocircuits Team
 </signal>
 <signal name="VBUS">
 <contactref element="KIT1" pad="VBUS"/>
+</signal>
+<signal name="BOLT5">
+<via x="16" y="36" extent="1-16" drill="3.8" diameter="7.2"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
