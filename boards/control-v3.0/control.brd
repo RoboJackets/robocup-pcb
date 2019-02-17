@@ -18272,7 +18272,6 @@ Your Eurocircuits Team
 <via x="-53" y="7.75" extent="1-16" drill="0.35"/>
 <contactref element="M1:R2" pad="2"/>
 <wire x1="-53" y1="7.75" x2="-54.59853125" y2="7.75" width="0.3" layer="1"/>
-<wire x1="-54.59853125" y1="7.75" x2="-54.824265625" y2="7.975734375" width="0.3" layer="1"/>
 <polygon width="0.6" layer="1" thermals="no">
 <vertex x="-54" y="9.5"/>
 <vertex x="-54" y="7"/>
@@ -21206,24 +21205,24 @@ Your Eurocircuits Team
 <signal name="M4-SENSE-A">
 <contactref element="U11" pad="2"/>
 <contactref element="M4:U3" pad="8"/>
-<wire x1="50.3386" y1="20.975" x2="49.5" y2="20.1364" width="0.3" layer="16"/>
 <wire x1="49.5" y1="14.2728" x2="47.5" y2="12.2728" width="0.3" layer="16"/>
-<wire x1="49.5" y1="20.1364" x2="49.5" y2="14.2728" width="0.3" layer="16"/>
+<wire x1="49.5" y1="14.2728" x2="49.5" y2="20.1364" width="0.3" layer="16"/>
 <wire x1="47.5" y1="12.2728" x2="47.5" y2="8.8993375" width="0.3" layer="16"/>
 <wire x1="53.3993375" y1="3" x2="54.025" y2="3" width="0.3" layer="16"/>
 <wire x1="53.3993375" y1="3" x2="47.5" y2="8.8993375" width="0.3" layer="16"/>
-<wire x1="50.3386" y1="20.975" x2="51.05" y2="20.975" width="0" layer="19" extent="16-16"/>
+<wire x1="49.5" y1="20.1364" x2="50.3386" y2="20.975" width="0.3" layer="16"/>
+<wire x1="50.3386" y1="20.975" x2="51.05" y2="20.975" width="0.3" layer="16"/>
 </signal>
 <signal name="M4-SENSE-B">
 <contactref element="U11" pad="1"/>
 <contactref element="M4:U2" pad="8"/>
-<wire x1="50.3386" y1="26.975" x2="49" y2="25.6364" width="0.3" layer="16"/>
 <wire x1="49" y1="14.4092" x2="47.05" y2="12.4592" width="0.3" layer="16"/>
-<wire x1="49" y1="25.6364" x2="49" y2="14.4092" width="0.3" layer="16"/>
+<wire x1="49" y1="14.4092" x2="49" y2="25.6364" width="0.3" layer="16"/>
 <wire x1="53.2629375" y1="2.5" x2="54.025" y2="2.5" width="0.3" layer="16"/>
 <wire x1="53.2629375" y1="2.5" x2="47.05" y2="8.7129375" width="0.3" layer="16"/>
 <wire x1="47.05" y1="12.4592" x2="47.05" y2="8.7129375" width="0.3" layer="16"/>
-<wire x1="50.3386" y1="26.975" x2="51.05" y2="26.975" width="0" layer="19" extent="16-16"/>
+<wire x1="49" y1="25.6364" x2="50.3386" y2="26.975" width="0.3" layer="16"/>
+<wire x1="50.3386" y1="26.975" x2="51.05" y2="26.975" width="0.3" layer="16"/>
 </signal>
 <signal name="M3-SENSE-A">
 <contactref element="U11" pad="19"/>
@@ -21514,7 +21513,6 @@ Your Eurocircuits Team
 <vertex x="-47.5" y="15"/>
 </polygon>
 <wire x1="-51.5" y1="12.75" x2="-49.25" y2="12.75" width="0.3" layer="1"/>
-<wire x1="-49.25" y1="12.75" x2="-49" y2="13" width="0.3" layer="1"/>
 </signal>
 <signal name="M2:AIN+">
 <contactref element="M2:C7" pad="2"/>
@@ -21715,7 +21713,8 @@ Your Eurocircuits Team
 <vertex x="-47.5" y="17"/>
 <vertex x="-42.5" y="17"/>
 </polygon>
-<wire x1="-52" y1="18.5" x2="-49.5" y2="18.5" width="0.3" layer="1"/>
+<wire x1="-52" y1="18.5" x2="-51.5" y2="19" width="0.3" layer="1"/>
+<wire x1="-51.5" y1="19" x2="-49.2" y2="19" width="0.3" layer="1"/>
 </signal>
 <signal name="M2:CIN+">
 <contactref element="M2:U1" pad="32"/>
@@ -21815,9 +21814,6 @@ Your Eurocircuits Team
 <wire x1="34.5" y1="-19" x2="34.6701" y2="-18.8299" width="0.3" layer="1"/>
 <wire x1="34.6701" y1="-18.8299" x2="34.6701" y2="-14.51863125" width="0.3" layer="1"/>
 <wire x1="34.6701" y1="-14.51863125" x2="34.4" y2="-14.24853125" width="0.3" layer="1"/>
-<wire x1="34.4" y1="-14.24853125" x2="34.4" y2="-13.8701" width="0.3" layer="1"/>
-<wire x1="34.4" y1="-14.24853125" x2="34.4" y2="-14.4" width="0.3" layer="1"/>
-<wire x1="34.4" y1="-14.4" x2="34.5" y2="-14.5" width="0.3" layer="1"/>
 </signal>
 <signal name="M4:CIN+">
 <contactref element="M4:U1" pad="32"/>
