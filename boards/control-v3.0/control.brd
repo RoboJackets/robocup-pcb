@@ -9,7 +9,7 @@
 </settings>
 <grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.25" altunitdist="mm" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="GND" color="13" fill="1" visible="no" active="yes"/>
 <layer number="3" name="Power" color="11" fill="1" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -29,16 +29,16 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="0" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -47,9 +47,9 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -3560,245 +3560,6 @@ shrink quad flat pack, square (smd-ipc)</description>
 <vertex x="-1.190753125" y="2.908"/>
 <vertex x="-0.809753125" y="2.908"/>
 <vertex x="-0.809753125" y="2.654"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-2.375" y="1.115"/>
-<vertex x="-2.375" y="0.885"/>
-<vertex x="-1.575" y="0.885"/>
-<vertex x="-1.575" y="1.115"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-2.375" y="0.615"/>
-<vertex x="-2.375" y="0.385"/>
-<vertex x="-1.575" y="0.385"/>
-<vertex x="-1.575" y="0.615"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-2.375" y="0.115"/>
-<vertex x="-2.375" y="-0.115"/>
-<vertex x="-1.575" y="-0.115"/>
-<vertex x="-1.575" y="0.115"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-2.375" y="-0.385"/>
-<vertex x="-2.375" y="-0.615"/>
-<vertex x="-1.575" y="-0.615"/>
-<vertex x="-1.575" y="-0.385"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-2.375" y="-0.885"/>
-<vertex x="-2.375" y="-1.115"/>
-<vertex x="-1.575" y="-1.115"/>
-<vertex x="-1.575" y="-0.885"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-1.115253125" y="-1.575"/>
-<vertex x="-1.115253125" y="-2.375"/>
-<vertex x="-0.88525" y="-2.375"/>
-<vertex x="-0.88525" y="-1.575"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-0.615128125" y="-1.575"/>
-<vertex x="-0.615128125" y="-2.375"/>
-<vertex x="-0.385125" y="-2.375"/>
-<vertex x="-0.385125" y="-1.575"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-0.115" y="-1.575"/>
-<vertex x="-0.115" y="-2.375"/>
-<vertex x="0.115" y="-2.375"/>
-<vertex x="0.115" y="-1.575"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="0.385125" y="-1.575"/>
-<vertex x="0.385125" y="-2.375"/>
-<vertex x="0.615128125" y="-2.375"/>
-<vertex x="0.615128125" y="-1.575"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="0.88525" y="-1.575"/>
-<vertex x="0.88525" y="-2.375"/>
-<vertex x="1.115253125" y="-2.375"/>
-<vertex x="1.115253125" y="-1.575"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="1.575" y="-0.885"/>
-<vertex x="1.575" y="-1.115"/>
-<vertex x="2.375" y="-1.115"/>
-<vertex x="2.375" y="-0.885"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="1.575" y="-0.385"/>
-<vertex x="1.575" y="-0.615"/>
-<vertex x="2.375" y="-0.615"/>
-<vertex x="2.375" y="-0.385"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="1.575" y="0.115"/>
-<vertex x="1.575" y="-0.115"/>
-<vertex x="2.375" y="-0.115"/>
-<vertex x="2.375" y="0.115"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="1.575" y="0.615"/>
-<vertex x="1.575" y="0.385"/>
-<vertex x="2.375" y="0.385"/>
-<vertex x="2.375" y="0.615"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="1.575" y="1.115"/>
-<vertex x="1.575" y="0.885"/>
-<vertex x="2.375" y="0.885"/>
-<vertex x="2.375" y="1.115"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="0.88525" y="2.375"/>
-<vertex x="0.88525" y="1.575"/>
-<vertex x="1.115253125" y="1.575"/>
-<vertex x="1.115253125" y="2.375"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="0.385125" y="2.375"/>
-<vertex x="0.385125" y="1.575"/>
-<vertex x="0.615128125" y="1.575"/>
-<vertex x="0.615128125" y="2.375"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-0.115" y="2.375"/>
-<vertex x="-0.115" y="1.575"/>
-<vertex x="0.115" y="1.575"/>
-<vertex x="0.115" y="2.375"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-0.615128125" y="2.375"/>
-<vertex x="-0.615128125" y="1.575"/>
-<vertex x="-0.385125" y="1.575"/>
-<vertex x="-0.385125" y="2.375"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-1.115253125" y="2.375"/>
-<vertex x="-1.115253125" y="1.575"/>
-<vertex x="-0.88525" y="1.575"/>
-<vertex x="-0.88525" y="2.375"/>
-</polygon>
-<polygon width="0.0254" layer="29">
-<vertex x="-2.45" y="1.19"/>
-<vertex x="-2.45" y="0.81"/>
-<vertex x="-1.5" y="0.81"/>
-<vertex x="-1.5" y="1.19"/>
-</polygon>
-<polygon width="0.0254" layer="29">
-<vertex x="-2.45" y="0.69"/>
-<vertex x="-2.45" y="0.31"/>
-<vertex x="-1.5" y="0.31"/>
-<vertex x="-1.5" y="0.69"/>
-</polygon>
-<polygon width="0.0254" layer="29">
-<vertex x="-2.45" y="0.19"/>
-<vertex x="-2.45" y="-0.19"/>
-<vertex x="-1.5" y="-0.19"/>
-<vertex x="-1.5" y="0.19"/>
-</polygon>
-<polygon width="0.0254" layer="29">
-<vertex x="-2.45" y="-0.31"/>
-<vertex x="-2.45" y="-0.69"/>
-<vertex x="-1.5" y="-0.69"/>
-<vertex x="-1.5" y="-0.31"/>
-</polygon>
-<polygon width="0.0254" layer="29">
-<vertex x="-2.45" y="-0.81"/>
-<vertex x="-2.45" y="-1.19"/>
-<vertex x="-1.5" y="-1.19"/>
-<vertex x="-1.5" y="-0.81"/>
-</polygon>
-<polygon width="0.0254" layer="29">
-<vertex x="-1.190253125" y="-1.5"/>
-<vertex x="-1.190253125" y="-2.45"/>
-<vertex x="-0.810253125" y="-2.45"/>
-<vertex x="-0.810253125" y="-1.5"/>
-</polygon>
-<polygon width="0.0254" layer="29">
-<vertex x="-0.690125" y="-1.5"/>
-<vertex x="-0.690125" y="-2.45"/>
-<vertex x="-0.310125" y="-2.45"/>
-<vertex x="-0.310125" y="-1.5"/>
-</polygon>
-<polygon width="0.0254" layer="29">
-<vertex x="-0.19" y="-1.5"/>
-<vertex x="-0.19" y="-2.45"/>
-<vertex x="0.19" y="-2.45"/>
-<vertex x="0.19" y="-1.5"/>
-</polygon>
-<polygon width="0.0254" layer="29">
-<vertex x="0.310125" y="-1.5"/>
-<vertex x="0.310125" y="-2.45"/>
-<vertex x="0.690125" y="-2.45"/>
-<vertex x="0.690125" y="-1.5"/>
-</polygon>
-<polygon width="0.0254" layer="29">
-<vertex x="0.810253125" y="-1.5"/>
-<vertex x="0.810253125" y="-2.45"/>
-<vertex x="1.190253125" y="-2.45"/>
-<vertex x="1.190253125" y="-1.5"/>
-</polygon>
-<polygon width="0.0254" layer="29">
-<vertex x="1.5" y="-0.81"/>
-<vertex x="1.5" y="-1.19"/>
-<vertex x="2.45" y="-1.19"/>
-<vertex x="2.45" y="-0.81"/>
-</polygon>
-<polygon width="0.0254" layer="29">
-<vertex x="1.5" y="-0.31"/>
-<vertex x="1.5" y="-0.69"/>
-<vertex x="2.45" y="-0.69"/>
-<vertex x="2.45" y="-0.31"/>
-</polygon>
-<polygon width="0.0254" layer="29">
-<vertex x="1.5" y="0.19"/>
-<vertex x="1.5" y="-0.19"/>
-<vertex x="2.45" y="-0.19"/>
-<vertex x="2.45" y="0.19"/>
-</polygon>
-<polygon width="0.0254" layer="29">
-<vertex x="1.5" y="0.69"/>
-<vertex x="1.5" y="0.31"/>
-<vertex x="2.45" y="0.31"/>
-<vertex x="2.45" y="0.69"/>
-</polygon>
-<polygon width="0.0254" layer="29">
-<vertex x="1.5" y="1.19"/>
-<vertex x="1.5" y="0.81"/>
-<vertex x="2.45" y="0.81"/>
-<vertex x="2.45" y="1.19"/>
-</polygon>
-<polygon width="0.0254" layer="29">
-<vertex x="0.810253125" y="2.45"/>
-<vertex x="0.810253125" y="1.5"/>
-<vertex x="1.190253125" y="2.45"/>
-</polygon>
-<polygon width="0.0254" layer="29">
-<vertex x="0.310125" y="2.45"/>
-<vertex x="0.310125" y="1.5"/>
-<vertex x="0.690125" y="1.5"/>
-<vertex x="0.690125" y="2.45"/>
-</polygon>
-<polygon width="0.0254" layer="29">
-<vertex x="-0.19" y="2.45"/>
-<vertex x="-0.19" y="1.5"/>
-<vertex x="0.19" y="1.5"/>
-<vertex x="0.19" y="2.45"/>
-</polygon>
-<polygon width="0.0254" layer="29">
-<vertex x="-0.690125" y="2.45"/>
-<vertex x="-0.690125" y="1.5"/>
-<vertex x="-0.310125" y="1.5"/>
-<vertex x="-0.310125" y="2.45"/>
-</polygon>
-<polygon width="0.0254" layer="29">
-<vertex x="-1.190253125" y="2.45"/>
-<vertex x="-1.190253125" y="1.5"/>
-<vertex x="-0.810253125" y="1.5"/>
-<vertex x="-0.810253125" y="2.45"/>
 </polygon>
 <text x="-3.6068" y="0.9906" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
 <text x="-1.8796" y="0.6096" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
@@ -14195,7 +13956,7 @@ Your Eurocircuits Team
 <element name="M2:Q1" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="-24.35" y="-12.4" smashed="yes" rot="MR135">
 <attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="-24.35" y="-12.4" size="1.778" layer="28" rot="MR135" display="off"/>
 <attribute name="MPN" value="IRFH7545TRPBF" x="-24.35" y="-12.4" size="1.778" layer="28" rot="MR135" display="off"/>
-<attribute name="NAME" x="-25.05710625" y="-16.642640625" size="1" layer="26" font="vector" ratio="15" rot="MR135"/>
+<attribute name="NAME" x="-23.05710625" y="-14.642640625" size="1" layer="26" font="vector" ratio="15" rot="MR135"/>
 </element>
 <element name="M2:Q2" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="-24.35" y="-12.4" smashed="yes" rot="R225">
 <attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="-24.35" y="-12.4" size="1.778" layer="27" rot="R225" display="off"/>
@@ -14205,7 +13966,7 @@ Your Eurocircuits Team
 <element name="M2:Q3" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="-28.9" y="-7.8" smashed="yes" rot="MR135">
 <attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="-28.9" y="-7.8" size="1.778" layer="28" rot="MR135" display="off"/>
 <attribute name="MPN" value="IRFH7545TRPBF" x="-28.9" y="-7.8" size="1.778" layer="28" rot="MR135" display="off"/>
-<attribute name="NAME" x="-29.607109375" y="-12.042646875" size="1" layer="26" font="vector" ratio="15" rot="MR135"/>
+<attribute name="NAME" x="-27.607109375" y="-10.042646875" size="1" layer="26" font="vector" ratio="15" rot="MR135"/>
 </element>
 <element name="M2:Q4" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="-28.9" y="-7.8" smashed="yes" rot="R225">
 <attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="-28.9" y="-7.8" size="1.778" layer="27" rot="R225" display="off"/>
@@ -14215,7 +13976,7 @@ Your Eurocircuits Team
 <element name="M2:Q5" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="-33.5" y="-3.25" smashed="yes" rot="MR135">
 <attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="-33.5" y="-3.25" size="1.778" layer="28" rot="MR135" display="off"/>
 <attribute name="MPN" value="IRFH7545TRPBF" x="-33.5" y="-3.25" size="1.778" layer="28" rot="MR135" display="off"/>
-<attribute name="NAME" x="-34.20710625" y="-7.492646875" size="1" layer="26" font="vector" ratio="15" rot="MR135"/>
+<attribute name="NAME" x="-32.20710625" y="-5.492646875" size="1" layer="26" font="vector" ratio="15" rot="MR135"/>
 </element>
 <element name="M2:Q6" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="-33.5" y="-3.25" smashed="yes" rot="R225">
 <attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="-33.5" y="-3.25" size="1.778" layer="27" rot="R225" display="off"/>
@@ -14266,7 +14027,7 @@ Your Eurocircuits Team
 <element name="M3:Q1" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="36.85" y="-1.9" smashed="yes" rot="MR45">
 <attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="36.85" y="-1.9" size="1.778" layer="28" rot="MR45" display="off"/>
 <attribute name="MPN" value="IRFH7545TRPBF" x="36.85" y="-1.9" size="1.778" layer="28" rot="MR45" display="off"/>
-<attribute name="NAME" x="41.09264375" y="-2.60710625" size="1" layer="26" font="vector" ratio="15" rot="MR45"/>
+<attribute name="NAME" x="39.09264375" y="-0.60710625" size="1" layer="26" font="vector" ratio="15" rot="MR45"/>
 </element>
 <element name="M3:Q2" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="36.85" y="-1.9" smashed="yes" rot="R315">
 <attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="36.85" y="-1.9" size="1.778" layer="27" rot="R315" display="off"/>
@@ -14276,7 +14037,7 @@ Your Eurocircuits Team
 <element name="M3:Q3" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="32.25" y="-6.5" smashed="yes" rot="MR45">
 <attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="32.25" y="-6.5" size="1.778" layer="28" rot="MR45" display="off"/>
 <attribute name="MPN" value="IRFH7545TRPBF" x="32.25" y="-6.5" size="1.778" layer="28" rot="MR45" display="off"/>
-<attribute name="NAME" x="36.492646875" y="-7.207103125" size="1" layer="26" font="vector" ratio="15" rot="MR45"/>
+<attribute name="NAME" x="34.492646875" y="-5.207103125" size="1" layer="26" font="vector" ratio="15" rot="MR45"/>
 </element>
 <element name="M3:Q4" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="32.25" y="-6.5" smashed="yes" rot="R315">
 <attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="32.25" y="-6.5" size="1.778" layer="27" rot="R315" display="off"/>
@@ -14286,7 +14047,7 @@ Your Eurocircuits Team
 <element name="M3:Q5" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="27.65" y="-11.1" smashed="yes" rot="MR45">
 <attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="27.65" y="-11.1" size="1.778" layer="28" rot="MR45" display="off"/>
 <attribute name="MPN" value="IRFH7545TRPBF" x="27.65" y="-11.1" size="1.778" layer="28" rot="MR45" display="off"/>
-<attribute name="NAME" x="31.89264375" y="-11.80710625" size="1" layer="26" font="vector" ratio="15" rot="MR45"/>
+<attribute name="NAME" x="29.89264375" y="-9.80710625" size="1" layer="26" font="vector" ratio="15" rot="MR45"/>
 </element>
 <element name="M3:Q6" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="27.65" y="-11.1" smashed="yes" rot="R315">
 <attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="27.65" y="-11.1" size="1.778" layer="27" rot="R315" display="off"/>
@@ -14337,7 +14098,7 @@ Your Eurocircuits Team
 <element name="M4:Q1" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="42.75" y="29.75" smashed="yes" rot="MR0">
 <attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="42.75" y="29.75" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MPN" value="IRFH7545TRPBF" x="42.75" y="29.75" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="43.75" y="32.25" size="1" layer="26" font="vector" ratio="15" rot="MR0"/>
+<attribute name="NAME" x="43.25" y="32.25" size="1" layer="26" font="vector" ratio="15" rot="MR0"/>
 </element>
 <element name="M4:Q2" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="42.75" y="29.75" smashed="yes">
 <attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="42.75" y="29.75" size="1.778" layer="27" display="off"/>
@@ -14347,7 +14108,7 @@ Your Eurocircuits Team
 <element name="M4:Q3" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="42.75" y="23.25" smashed="yes" rot="MR0">
 <attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="42.75" y="23.25" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MPN" value="IRFH7545TRPBF" x="42.75" y="23.25" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="46.25" y="25.75" size="1" layer="26" font="vector" ratio="15" rot="MR0"/>
+<attribute name="NAME" x="43.25" y="25.75" size="1" layer="26" font="vector" ratio="15" rot="MR0"/>
 </element>
 <element name="M4:Q4" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="42.75" y="23.25" smashed="yes">
 <attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="42.75" y="23.25" size="1.778" layer="27" display="off"/>
@@ -14357,7 +14118,7 @@ Your Eurocircuits Team
 <element name="M4:Q5" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="42.75" y="16.75" smashed="yes" rot="MR0">
 <attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="42.75" y="16.75" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MPN" value="IRFH7545TRPBF" x="42.75" y="16.75" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="46.25" y="19.25" size="1" layer="26" font="vector" ratio="15" rot="MR0"/>
+<attribute name="NAME" x="43.25" y="19.25" size="1" layer="26" font="vector" ratio="15" rot="MR0"/>
 </element>
 <element name="M4:Q6" library="RoboJackets-Discrete" package="PQFN_5X6_E" value="IRFH7545" x="42.75" y="16.75" smashed="yes">
 <attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" x="42.75" y="16.75" size="1.778" layer="27" display="off"/>
@@ -16144,11 +15905,9 @@ Your Eurocircuits Team
 <polygon width="0.2" layer="16" thermals="no">
 <vertex x="54.75" y="4.75"/>
 <vertex x="54.75" y="2.25"/>
-<vertex x="57.25" y="2.25"/>
 <vertex x="57.25" y="4.75"/>
 </polygon>
 <via x="-48" y="-6.5" extent="1-16" drill="0.35"/>
-<via x="-47" y="-6.5" extent="1-16" drill="0.35"/>
 <via x="-46" y="-6.5" extent="1-16" drill="0.35"/>
 <via x="-48" y="-7.5" extent="1-16" drill="0.35"/>
 <via x="-46" y="-7.5" extent="1-16" drill="0.35"/>
@@ -16321,7 +16080,6 @@ Your Eurocircuits Team
 <wire x1="-29.75" y1="18" x2="-27.5" y2="18" width="0.3" layer="1"/>
 <wire x1="-27.5" y1="18" x2="-27" y2="18.5" width="0.3" layer="1"/>
 <wire x1="-29.75" y1="20.5" x2="-27" y2="20.5" width="0.3" layer="1"/>
-<wire x1="-47" y1="-6.47890625" x2="-47" y2="-6.5" width="0.25" layer="16"/>
 <contactref element="J2" pad="1"/>
 <contactref element="M1:C4" pad="2"/>
 <contactref element="M2:C4" pad="2"/>
@@ -16478,6 +16236,7 @@ Your Eurocircuits Team
 <wire x1="-2.9" y1="-16" x2="-1.75" y2="-16" width="0.3" layer="1"/>
 <via x="57" y="3.5" extent="1-16" drill="0.35"/>
 <contactref element="J1" pad="7"/>
+<via x="-47" y="-6.5" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="+5V">
 <contactref element="R12" pad="1"/>
@@ -22313,11 +22072,11 @@ Your Eurocircuits Team
 <wire x1="-14.27" y1="70.5" x2="-16.5" y2="68.27" width="0.3" layer="1"/>
 <wire x1="1.88" y1="70.5" x2="-14.27" y2="70.5" width="0.3" layer="1"/>
 </signal>
-<signal name="VBUS">
-<contactref element="KIT1" pad="VBUS"/>
-</signal>
 <signal name="BOLT5">
 <via x="16" y="36" extent="1-16" drill="3.8" diameter="7.2"/>
+</signal>
+<signal name="N$1">
+<contactref element="KIT1" pad="VBUS"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
