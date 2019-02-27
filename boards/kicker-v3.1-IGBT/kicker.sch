@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.3.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -36852,7 +36852,7 @@ PESD5V0C1USFYL </text>
 <label x="195.58" y="66.04" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
-<net name="!FAULT_LPF" class="0">
+<net name="!FAULT!_RAW" class="0">
 <segment>
 <pinref part="Q4" gate="G$1" pin="G"/>
 <wire x1="114.3" y1="144.78" x2="111.76" y2="144.78" width="0.1524" layer="91"/>
@@ -36860,7 +36860,7 @@ PESD5V0C1USFYL </text>
 <label x="111.76" y="149.86" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
-<net name="!DONE_LPF" class="0">
+<net name="!DONE!_RAW" class="0">
 <segment>
 <pinref part="Q3" gate="G$1" pin="G"/>
 <wire x1="88.9" y1="144.78" x2="86.36" y2="144.78" width="0.1524" layer="91"/>
