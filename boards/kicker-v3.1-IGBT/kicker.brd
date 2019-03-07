@@ -15392,15 +15392,15 @@ Your Eurocircuits Team
 <attribute name="NAME" x="55.615" y="11.865" size="1" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="60.905" y="11.865" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="D27" library="RoboJackets-Diodes" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="" x="54" y="6.5" smashed="yes">
+<element name="D27" library="RoboJackets-Diodes" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="PESD5V0C1USFYL" x="54" y="6.5" smashed="yes">
 <attribute name="NAME" x="52.49" y="-0.865" size="1" layer="25" font="vector"/>
 <attribute name="VALUE" x="53.365" y="4.595" size="1.27" layer="27"/>
 </element>
-<element name="D28" library="RoboJackets-Diodes" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="" x="54" y="1.5" smashed="yes">
+<element name="D28" library="RoboJackets-Diodes" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="PESD5V0C1USFYL" x="54" y="1.5" smashed="yes">
 <attribute name="NAME" x="52.49" y="-3.365" size="1" layer="25" font="vector"/>
 <attribute name="VALUE" x="53.365" y="-0.405" size="1.27" layer="27"/>
 </element>
-<element name="D29" library="RoboJackets-Diodes" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="" x="54" y="4" smashed="yes">
+<element name="D29" library="RoboJackets-Diodes" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="PESD5V0C1USFYL" x="54" y="4" smashed="yes">
 <attribute name="NAME" x="52.49" y="-2.115" size="1" layer="25" font="vector"/>
 <attribute name="VALUE" x="53.365" y="2.095" size="1.27" layer="27"/>
 </element>
@@ -17192,7 +17192,7 @@ Your Eurocircuits Team
 <wire x1="67.5" y1="18.5" x2="65.4" y2="18.5" width="0.2" layer="1"/>
 <contactref element="U4" pad="31"/>
 </signal>
-<signal name="N$15">
+<signal name="HV_SENSE_DIV_BR">
 <contactref element="R46" pad="1"/>
 <contactref element="R47" pad="2"/>
 <wire x1="59.05" y1="-26" x2="56.45" y2="-26" width="0.2" layer="1"/>
@@ -17360,7 +17360,7 @@ Your Eurocircuits Team
 <wire x1="34.585784375" y1="66.9142125" x2="34.585784375" y2="63.110284375" width="0.2" layer="1"/>
 <wire x1="34.585784375" y1="63.110284375" x2="34" y2="62.5245" width="0.2" layer="1"/>
 </signal>
-<signal name="N$6">
+<signal name="BB_TX_CL">
 <contactref element="R49" pad="2"/>
 <contactref element="J5" pad="1"/>
 <wire x1="36" y1="65.5" x2="36" y2="67.1020875" width="0.2" layer="1"/>
@@ -17501,7 +17501,7 @@ Your Eurocircuits Team
 <contactref element="D4" pad="A"/>
 <wire x1="49" y1="13.85" x2="49" y2="15.75" width="0.2" layer="1"/>
 </signal>
-<signal name="N$22">
+<signal name="15V_PWR_BR">
 <contactref element="R20" pad="1"/>
 <contactref element="D2" pad="A"/>
 <wire x1="49" y1="21.25" x2="49" y2="23.15" width="0.2" layer="1"/>
@@ -17522,7 +17522,7 @@ Your Eurocircuits Team
 <wire x1="17.225215625" y1="75.855546875" x2="16.355" y2="74.98533125" width="0.2" layer="1"/>
 <wire x1="15.5813375" y1="74.2" x2="11.45" y2="74.2" width="0.2" layer="1"/>
 </signal>
-<signal name="N$26">
+<signal name="FAULT_INV_BR">
 <contactref element="Q5" pad="1"/>
 <contactref element="Q4" pad="3"/>
 <contactref element="R26" pad="1"/>
