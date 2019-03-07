@@ -33728,13 +33728,13 @@ In this library the device names are the same as the pin names of the symbols, t
 </libraries>
 <attributes>
 <attribute name="DCHECKED" value=""/>
-<attribute name="DDRAWN" value="08/12/18"/>
+<attribute name="DDRAWN" value="03/07/19"/>
 <attribute name="DWG_NO" value=""/>
 <attribute name="FINISH" value="HASL"/>
 <attribute name="MATERIAL" value="FR-4"/>
-<attribute name="NCHECKED" value=""/>
-<attribute name="NDRAWN" value="WS"/>
-<attribute name="REV" value="3.0"/>
+<attribute name="NCHECKED" value="Daniel Yang"/>
+<attribute name="NDRAWN" value="Will Stuckey"/>
+<attribute name="REV" value="3.1-IGBT"/>
 <attribute name="SCALE" value="1:1"/>
 <attribute name="TITLE" value="SSL Kicker"/>
 </attributes>
@@ -33998,10 +33998,10 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="C4" library="rcl" deviceset="C-US" device="C0603" value="1uF"/>
 <part name="R3" library="rcl" deviceset="R-US_" device="R0603" value="160"/>
 <part name="C9" library="rcl" deviceset="C-US" device="C0603" value="1uF"/>
-<part name="D27" library="RoboJackets-Diodes" deviceset="TVS" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3"/>
+<part name="D27" library="RoboJackets-Diodes" deviceset="TVS" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="PESD5V0C1USFYL"/>
 <part name="SUPPLY12" library="supply2" deviceset="GND" device=""/>
-<part name="D28" library="RoboJackets-Diodes" deviceset="TVS" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3"/>
-<part name="D29" library="RoboJackets-Diodes" deviceset="TVS" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3"/>
+<part name="D28" library="RoboJackets-Diodes" deviceset="TVS" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="PESD5V0C1USFYL"/>
+<part name="D29" library="RoboJackets-Diodes" deviceset="TVS" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="PESD5V0C1USFYL"/>
 <part name="R4" library="rcl" deviceset="R-US_" device="R0603" value="100k"/>
 <part name="SUPPLY13" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY100" library="supply2" deviceset="GND" device=""/>
@@ -34069,7 +34069,7 @@ current below the limit of the fuse. </text>
 <wire x1="266.7" y1="200.66" x2="266.7" y2="129.54" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="266.7" y1="129.54" x2="160.02" y2="129.54" width="0.1524" layer="97" style="shortdash"/>
 <text x="162.56" y="195.58" size="1.778" layer="97">15V Regulator</text>
-<text x="101.6" y="162.56" size="1.778" layer="97">This PFET configuration is 
+<text x="101.6" y="170.18" size="1.27" layer="97">This PFET configuration is 
 typical of a reverse polarity 
 protection circuit. It isn't 
 broken. There are a few 
@@ -34079,6 +34079,15 @@ polarity protection".</text>
 <text x="91.44" y="91.44" size="1.778" layer="97">DNC</text>
 <text x="91.44" y="93.98" size="1.778" layer="97">DNC</text>
 <text x="91.44" y="96.52" size="1.778" layer="97">DNC</text>
+<text x="101.6" y="147.32" size="1.778" layer="97">Clamp VBatt @ 22.2V</text>
+<text x="251.46" y="187.96" size="1.778" layer="97">&lt;50mA</text>
+<text x="137.16" y="78.74" size="1.778" layer="97">Clamp 5V @ 5.5V</text>
+<text x="17.78" y="53.34" size="1.778" layer="97">AAM R60 and Voltage Divider selected from datasheet</text>
+<text x="40.64" y="167.64" size="1.27" layer="97">Everything but the fuse holder
+50A rated. Change this and adjust
+the current limiter calibration shunts
+on Sheet 2 if you want to increase
+this.</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -34437,6 +34446,10 @@ LT LO decoupling
 near this resistor bank</text>
 <text x="87.376" y="175.768" size="1.27" layer="97">DNP: sufficient overhead 
 on the IRFS4227</text>
+<text x="20.32" y="167.64" size="1.778" layer="97">Too many notes to put in the
+schematic... see the accompanying
+design doc for the spec on this
+subsystem.</text>
 </plain>
 <instances>
 <instance part="SUPPLY23" gate="GND" x="121.92" y="78.74" smashed="yes">
@@ -35091,14 +35104,22 @@ on the IRFS4227</text>
 <wire x1="208.28" y1="129.54" x2="111.76" y2="129.54" width="0.1524" layer="97" style="shortdash"/>
 <text x="114.3" y="195.58" size="1.778" layer="97">Charge Line - Pull, Filter, ESD Prot</text>
 <wire x1="111.76" y1="119.38" x2="190.5" y2="119.38" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="190.5" y1="119.38" x2="190.5" y2="55.88" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="190.5" y1="55.88" x2="111.76" y2="55.88" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="111.76" y1="55.88" x2="111.76" y2="119.38" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="190.5" y1="119.38" x2="190.5" y2="53.34" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="190.5" y1="53.34" x2="111.76" y2="53.34" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="111.76" y1="53.34" x2="111.76" y2="119.38" width="0.1524" layer="97" style="shortdash"/>
 <text x="116.84" y="114.3" size="1.778" layer="97">Battery/Charge-Cycle Decoupling</text>
-<text x="213.36" y="106.68" size="1.778" layer="97">D27,D28,D29 PN:</text>
-<text x="218.44" y="99.06" size="1.778" layer="97">PESD5V0C1USFYL 
-PESD5V0C1USFYL 
-PESD5V0C1USFYL </text>
+<text x="215.9" y="185.42" size="1.778" layer="97">Clamp all LT control lines @ 5.5V.
+
+Snub Ringing on the long control traces:
+F_cutoff = 1 / (2 * pi * R * C)
+F_cutoff = 1 / (2 * pi * 160 * 0.0000001)
+F_cutoff = 9947.18 = ~10kHz</text>
+<text x="152.4" y="55.88" size="1.778" layer="97">Primary VBatt Decoupling:
+1120uF Electrolytic
+20uF Fast Response Ceramic
+
+All components are still locally
+decoupled</text>
 </plain>
 <instances>
 <instance part="FRAME8" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -35144,18 +35165,18 @@ PESD5V0C1USFYL </text>
 </instance>
 <instance part="D27" gate="G$1" x="144.78" y="172.72" smashed="yes">
 <attribute name="NAME" x="147.32" y="172.72" size="1.778" layer="95"/>
-<attribute name="VALUE" x="147.32" y="170.18" size="1.778" layer="96"/>
+<attribute name="VALUE" x="139.7" y="175.26" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="SUPPLY12" gate="GND" x="175.26" y="157.48" smashed="yes">
 <attribute name="VALUE" x="173.355" y="154.305" size="1.778" layer="96"/>
 </instance>
 <instance part="D28" gate="G$1" x="53.34" y="71.12" smashed="yes">
 <attribute name="NAME" x="55.88" y="71.12" size="1.778" layer="95"/>
-<attribute name="VALUE" x="55.88" y="68.58" size="1.778" layer="96"/>
+<attribute name="VALUE" x="48.26" y="76.2" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="D29" gate="G$1" x="53.34" y="154.94" smashed="yes">
 <attribute name="NAME" x="55.88" y="154.94" size="1.778" layer="95"/>
-<attribute name="VALUE" x="55.88" y="152.4" size="1.778" layer="96"/>
+<attribute name="VALUE" x="48.26" y="160.02" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="R4" gate="G$1" x="154.94" y="170.18" smashed="yes" rot="R90">
 <attribute name="NAME" x="153.4414" y="166.37" size="1.778" layer="95" rot="R90"/>
@@ -35374,19 +35395,18 @@ PESD5V0C1USFYL </text>
 <sheet>
 <description>HV - Kick Discharge</description>
 <plain>
-<wire x1="12.7" y1="203.2" x2="12.7" y2="137.16" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="12.7" y1="137.16" x2="71.12" y2="137.16" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="71.12" y1="137.16" x2="71.12" y2="106.68" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="71.12" y1="106.68" x2="205.74" y2="106.68" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="12.7" y1="203.2" x2="12.7" y2="106.68" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="12.7" y1="106.68" x2="205.74" y2="106.68" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="205.74" y1="106.68" x2="205.74" y2="203.2" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="205.74" y1="203.2" x2="12.7" y2="203.2" width="0.1524" layer="97" style="shortdash"/>
 <text x="17.78" y="198.12" size="1.27" layer="97">Discharge Action</text>
-<text x="91.44" y="190.5" size="1.778" layer="97">D18,D19 PN:</text>
-<text x="91.44" y="180.34" size="1.778" layer="97">D16,D17 PN:</text>
-<text x="93.98" y="187.96" size="1.778" layer="97">VS-5EWH06FN-M3D-PAK_TO252AA</text>
-<text x="93.98" y="185.42" size="1.778" layer="97">VS-5EWH06FN-M3D-PAK_TO252AA</text>
-<text x="93.98" y="177.8" size="1.778" layer="97">SMAJ20ADO-214AC</text>
-<text x="93.98" y="175.26" size="1.778" layer="97">SMAJ20ADO-214AC</text>
+<text x="17.78" y="111.76" size="1.778" layer="97">Clamp the IGBT gates @ 20V with
+V_br_min of 22.2V. The IGBT V_ge_max 
+is 20V, with a transient rating of 30V.
+
+Snub ringing &gt;10kHz, this should only
+affect switch time by 10s of uS and no
+PWM is applied.</text>
 </plain>
 <instances>
 <instance part="FRAME9" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -35488,12 +35508,12 @@ PESD5V0C1USFYL </text>
 <attribute name="VALUE" x="71.755" y="193.675" size="1.778" layer="96"/>
 </instance>
 <instance part="U$6" gate="G$1" x="157.48" y="134.62" smashed="yes">
-<attribute name="NAME" x="153.67" y="142.24" size="1.778" layer="95"/>
-<attribute name="VALUE" x="153.67" y="139.7" size="1.778" layer="96"/>
+<attribute name="NAME" x="153.67" y="139.7" size="1.778" layer="95"/>
+<attribute name="VALUE" x="163.83" y="134.62" size="1.778" layer="96"/>
 </instance>
 <instance part="U$7" gate="G$1" x="144.78" y="165.1" smashed="yes">
-<attribute name="NAME" x="140.97" y="172.72" size="1.778" layer="95"/>
-<attribute name="VALUE" x="140.97" y="170.18" size="1.778" layer="96"/>
+<attribute name="NAME" x="140.97" y="170.18" size="1.778" layer="95"/>
+<attribute name="VALUE" x="151.13" y="165.1" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -35881,6 +35901,9 @@ PESD5V0C1USFYL </text>
 <wire x1="205.74" y1="134.62" x2="205.74" y2="205.74" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="205.74" y1="205.74" x2="162.56" y2="205.74" width="0.1524" layer="97" style="shortdash"/>
 <text x="167.64" y="200.66" size="1.27" layer="97">High Voltage Sense Divider</text>
+<text x="53.34" y="60.96" size="1.778" layer="97">Current limit the SPI lines so the 
+5V rail can't be powered through 
+the clamping diodes on the MCU</text>
 </plain>
 <instances>
 <instance part="C20" gate="G$1" x="83.82" y="106.68" smashed="yes">
@@ -36192,7 +36215,7 @@ PESD5V0C1USFYL </text>
 <label x="33.02" y="162.56" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="HV_SENSE_DIV_BR" class="0">
 <segment>
 <pinref part="R46" gate="G$1" pin="1"/>
 <pinref part="R47" gate="G$1" pin="2"/>
@@ -36704,7 +36727,7 @@ PESD5V0C1USFYL </text>
 <wire x1="43.18" y1="170.18" x2="43.18" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$22" class="0">
+<net name="15V_PWR_BR" class="0">
 <segment>
 <pinref part="R20" gate="G$1" pin="1"/>
 <pinref part="D2" gate="G$1" pin="A"/>
@@ -36725,7 +36748,7 @@ PESD5V0C1USFYL </text>
 <pinref part="Q5" gate="G$1" pin="D"/>
 </segment>
 </net>
-<net name="N$26" class="0">
+<net name="FAULT_INV_BR" class="0">
 <segment>
 <pinref part="Q4" gate="G$1" pin="D"/>
 <pinref part="Q5" gate="G$1" pin="G"/>
@@ -36916,6 +36939,7 @@ PESD5V0C1USFYL </text>
 <wire x1="142.24" y1="114.3" x2="142.24" y2="198.12" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="142.24" y1="198.12" x2="17.78" y2="198.12" width="0.1524" layer="97" style="shortdash"/>
 <text x="22.86" y="190.5" size="1.778" layer="97">Breakbeam</text>
+<text x="20.32" y="116.84" size="1.778" layer="97">IR LED pulls ~100mA</text>
 </plain>
 <instances>
 <instance part="FRAME6" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -37023,12 +37047,13 @@ PESD5V0C1USFYL </text>
 <wire x1="50.8" y1="154.94" x2="55.88" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="BB_TX_CL" class="0">
 <segment>
 <pinref part="R49" gate="G$1" pin="2"/>
 <wire x1="55.88" y1="160.02" x2="55.88" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="J5" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="160.02" x2="55.88" y2="160.02" width="0.1524" layer="91"/>
+<label x="55.88" y="160.02" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
