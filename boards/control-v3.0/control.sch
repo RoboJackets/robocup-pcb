@@ -32361,6 +32361,7 @@ has issues with ports</text>
 <sheet>
 <description>Microcontroller</description>
 <plain>
+<text x="27.94" y="111.76" size="1.27" layer="97">Change MK-IN2 and MK-IN1 pins</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
