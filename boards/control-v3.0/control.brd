@@ -24,17 +24,17 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="0" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="0" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -48,9 +48,9 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
@@ -60,7 +60,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -13195,7 +13195,7 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <packageinstance name="C0603"/>
 </packageinstances>
 </package3d>
-<package3d name="R0603" urn="urn:adsk.eagle:package:23555/2" type="model" library_version="5">
+<package3d name="R0603" urn="urn:adsk.eagle:package:23555/3" type="model" library_version="10">
 <description>RESISTOR</description>
 <packageinstances>
 <packageinstance name="R0603"/>
@@ -13930,7 +13930,7 @@ Your Eurocircuits Team
 <attribute name="VALUE" x="-20.953946875" y="5.101975" size="1" layer="28" font="vector" ratio="15" rot="MR315"/>
 </element>
 <element name="M2:C2" library="rcl" package="C0603" value="1uF" x="-24.5" y="7.75" smashed="yes" rot="MR315">
-<attribute name="NAME" x="-25.5" y="6.398028125" size="1" layer="26" font="vector" ratio="15" rot="MR315"/>
+<attribute name="NAME" x="-24" y="10.398028125" size="1" layer="26" font="vector" ratio="15" rot="MR315"/>
 <attribute name="VALUE" x="-22.703946875" y="6.851975" size="1" layer="28" font="vector" ratio="15" rot="MR315"/>
 </element>
 <element name="M2:C3" library="rcl" package="C0603" value="0.022uF 50V" x="-13.5" y="5.75" smashed="yes" rot="R135">
@@ -14575,67 +14575,6 @@ Your Eurocircuits Team
 <attribute name="NAME" x="-48.79" y="66.54" size="1" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="-44.29" y="61.69" size="1" layer="27" font="vector" ratio="15"/>
 </element>
-<element name="DD:C4" library="RoboJackets-Capacitors" package="CAP_PAN_10X12.5" value="ECA-1HM221B" x="-43.5" y="57.5" smashed="yes">
-<attribute name="MANUFACTURER_PART_NUMBER" value="ECA1HM221B" x="-43.5" y="57.5" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-51.7658" y="62.865" size="1" layer="25" font="vector" ratio="15" rot="SR0"/>
-<attribute name="VENDOR" value="Panasonic" x="-43.5" y="57.5" size="1.778" layer="27" display="off"/>
-</element>
-<element name="M1:C14" library="RoboJackets-Capacitors" package="CAP_PAN_10X12.5" value="ECA-1HM221B" x="-35.5" y="27.5" smashed="yes">
-<attribute name="DIGIKEY" value="P10398TB-ND" x="-35.5" y="27.5" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="ECA1HM221B" x="-35.5" y="27.5" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="ECA-1HM221B" x="-35.5" y="27.5" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-32.7658" y="30.365" size="1" layer="25" font="vector" ratio="15" rot="SR0"/>
-<attribute name="VENDOR" value="Panasonic" x="-35.5" y="27.5" size="1.778" layer="27" display="off"/>
-</element>
-<element name="M2:C14" library="RoboJackets-Capacitors" package="CAP_PAN_10X12.5" value="ECA-1HM221B" x="-12" y="-7.5" smashed="yes" rot="R90">
-<attribute name="DIGIKEY" value="P10398TB-ND" x="-12" y="-7.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="ECA1HM221B" x="-12" y="-7.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="ECA-1HM221B" x="-12" y="-7.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="-13" y="-4.5" size="1" layer="25" font="vector" ratio="15" rot="SR0"/>
-<attribute name="VENDOR" value="Panasonic" x="-12" y="-7.5" size="1.778" layer="27" rot="R90" display="off"/>
-</element>
-<element name="M3:C14" library="RoboJackets-Capacitors" package="CAP_PAN_10X12.5" value="ECA-1HM221B" x="45.5" y="8.5" smashed="yes">
-<attribute name="DIGIKEY" value="P10398TB-ND" x="45.5" y="8.5" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="ECA1HM221B" x="45.5" y="8.5" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="ECA-1HM221B" x="45.5" y="8.5" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="48.7342" y="6.865" size="1" layer="25" font="vector" ratio="15" rot="SR0"/>
-<attribute name="VENDOR" value="Panasonic" x="45.5" y="8.5" size="1.778" layer="27" display="off"/>
-</element>
-<element name="M4:C14" library="RoboJackets-Capacitors" package="CAP_PAN_10X12.5" value="ECA-1HM221B" x="33" y="38.75" smashed="yes" rot="R180">
-<attribute name="DIGIKEY" value="P10398TB-ND" x="33" y="38.75" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="ECA1HM221B" x="33" y="38.75" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="ECA-1HM221B" x="33" y="38.75" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="39.2658" y="42.885" size="1" layer="25" font="vector" ratio="15" rot="SR0"/>
-<attribute name="VENDOR" value="Panasonic" x="33" y="38.75" size="1.778" layer="27" rot="R180" display="off"/>
-</element>
-<element name="M1:C15" library="RoboJackets-Capacitors" package="CAP_PAN_10X12.5" value="ECA-1HM221B" x="-53" y="26.5" smashed="yes" rot="R180">
-<attribute name="DIGIKEY" value="P10398TB-ND" x="-53" y="26.5" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="ECA1HM221B" x="-53" y="26.5" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="ECA-1HM221B" x="-53" y="26.5" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="-57.2342" y="31.635" size="1" layer="25" font="vector" ratio="15" rot="SR0"/>
-<attribute name="VENDOR" value="Panasonic" x="-53" y="26.5" size="1.778" layer="27" rot="R180" display="off"/>
-</element>
-<element name="M2:C15" library="RoboJackets-Capacitors" package="CAP_PAN_10X12.5" value="ECA-1HM221B" x="-14.5" y="-24" smashed="yes" rot="R270">
-<attribute name="DIGIKEY" value="P10398TB-ND" x="-14.5" y="-24" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="ECA1HM221B" x="-14.5" y="-24" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="ECA-1HM221B" x="-14.5" y="-24" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="-25.135" y="-23.2342" size="1" layer="25" font="vector" ratio="15" rot="SR0"/>
-<attribute name="VENDOR" value="Panasonic" x="-14.5" y="-24" size="1.778" layer="27" rot="R270" display="off"/>
-</element>
-<element name="M3:C15" library="RoboJackets-Capacitors" package="CAP_PAN_10X12.5" value="ECA-1HM221B" x="28.5" y="13" smashed="yes" rot="R180">
-<attribute name="DIGIKEY" value="P10398TB-ND" x="28.5" y="13" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="ECA1HM221B" x="28.5" y="13" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="ECA-1HM221B" x="28.5" y="13" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="20.2658" y="12.635" size="1" layer="25" font="vector" ratio="15" rot="SR0"/>
-<attribute name="VENDOR" value="Panasonic" x="28.5" y="13" size="1.778" layer="27" rot="R180" display="off"/>
-</element>
-<element name="M4:C15" library="RoboJackets-Capacitors" package="CAP_PAN_10X12.5" value="ECA-1HM221B" x="50" y="38" smashed="yes">
-<attribute name="DIGIKEY" value="P10398TB-ND" x="50" y="38" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="ECA1HM221B" x="50" y="38" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="ECA-1HM221B" x="50" y="38" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="51.2342" y="42.365" size="1" layer="25" font="vector" ratio="15" rot="SR0"/>
-<attribute name="VENDOR" value="Panasonic" x="50" y="38" size="1.778" layer="27" display="off"/>
-</element>
 <element name="KIT1" library="RoboJackets-Boards" package="MTRAIN-KIT" value="MTRAIN" x="22.5" y="57.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="50.44" y="67.7" size="1" layer="25" font="vector" ratio="15" rot="R270"/>
 </element>
@@ -14654,22 +14593,22 @@ Your Eurocircuits Team
 <attribute name="SPICEPREFIX" value="C" x="28.5" y="55" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="VALUE" x="26.595" y="54.365" size="1" layer="28" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="R21" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="30.1k 1%" x="-7" y="-23.5" smashed="yes" rot="MR180">
+<element name="R21" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="30.1k 1%" x="-7" y="-23.5" smashed="yes" rot="MR180">
 <attribute name="NAME" x="-10.635" y="-23.135" size="1" layer="26" font="vector" ratio="15" rot="MR180"/>
 <attribute name="SPICEPREFIX" value="R" x="-7" y="-23.5" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="VALUE" x="-7.635" y="-21.595" size="1" layer="28" font="vector" ratio="15" rot="MR180"/>
 </element>
-<element name="R20" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="160k 1%" x="-8.25" y="-15.5" smashed="yes" rot="MR180">
+<element name="R20" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="160k 1%" x="-8.25" y="-15.5" smashed="yes" rot="MR180">
 <attribute name="NAME" x="-12.5" y="-16.135" size="1" layer="26" font="vector" ratio="15" rot="MR180"/>
 <attribute name="SPICEPREFIX" value="R" x="-8.25" y="-15.5" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="VALUE" x="-8.885" y="-13.595" size="1" layer="28" font="vector" ratio="15" rot="MR180"/>
 </element>
-<element name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="43.2k" x="-0.75" y="-23.5" smashed="yes" rot="MR0">
+<element name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="43.2k" x="-0.75" y="-23.5" smashed="yes" rot="MR0">
 <attribute name="NAME" x="3.885" y="-23.865" size="1" layer="26" font="vector" ratio="15" rot="MR0"/>
 <attribute name="SPICEPREFIX" value="R" x="-0.75" y="-23.5" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="-0.115" y="-25.405" size="1" layer="28" font="vector" ratio="15" rot="MR0"/>
 </element>
-<element name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="150k" x="-0.75" y="-21.25" smashed="yes" rot="MR0">
+<element name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="150k" x="-0.75" y="-21.25" smashed="yes" rot="MR0">
 <attribute name="NAME" x="3.6" y="-21.615" size="1" layer="26" font="vector" ratio="15" rot="MR0"/>
 <attribute name="SPICEPREFIX" value="R" x="-0.75" y="-21.25" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="-0.115" y="-23.155" size="1" layer="28" font="vector" ratio="15" rot="MR0"/>
@@ -14893,7 +14832,7 @@ Your Eurocircuits Team
 <attribute name="SPICEPREFIX" value="C" x="56.75" y="8.35" size="1" layer="28" font="vector" ratio="15" rot="MR270" display="off"/>
 <attribute name="VALUE" x="58.655" y="8.985" size="1.27" layer="28" rot="MR270"/>
 </element>
-<element name="C45" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10uF" x="-31.5" y="10" smashed="yes" rot="MR135">
+<element name="C45" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF" x="-31.5" y="10" smashed="yes" rot="MR135">
 <attribute name="NAME" x="-30.5" y="11.39486875" size="1" layer="26" font="vector" ratio="15" rot="MR135"/>
 <attribute name="SPICEPREFIX" value="C" x="-31.5" y="10" size="1.778" layer="28" rot="MR135" display="off"/>
 <attribute name="VALUE" x="-33.296053125" y="10.898028125" size="1.27" layer="28" rot="MR135"/>
@@ -14903,25 +14842,15 @@ Your Eurocircuits Team
 <attribute name="SPICEPREFIX" value="C" x="-31.5" y="4.5" size="1.778" layer="28" rot="MR45" display="off"/>
 <attribute name="VALUE" x="-32.398028125" y="2.703946875" size="1.27" layer="28" rot="MR45"/>
 </element>
-<element name="C46" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10uF" x="32" y="6" smashed="yes" rot="MR0">
-<attribute name="NAME" x="36.135" y="5.635" size="1" layer="26" font="vector" ratio="15" rot="MR0"/>
-<attribute name="SPICEPREFIX" value="C" x="32" y="6" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="VALUE" x="32.635" y="4.095" size="1.27" layer="28" rot="MR0"/>
+<element name="C46" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF" x="32.5" y="5.5" smashed="yes" rot="MR0">
+<attribute name="NAME" x="36.635" y="5.135" size="1" layer="26" font="vector" ratio="15" rot="MR0"/>
+<attribute name="SPICEPREFIX" value="C" x="32.5" y="5.5" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="VALUE" x="33.135" y="3.595" size="1.27" layer="28" rot="MR0"/>
 </element>
 <element name="C43" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 50V" x="35" y="9.5" smashed="yes" rot="MR270">
 <attribute name="NAME" x="35.365" y="12.135" size="1" layer="26" font="vector" ratio="15" rot="MR180"/>
 <attribute name="SPICEPREFIX" value="C" x="35" y="9.5" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="VALUE" x="36.905" y="10.135" size="1.27" layer="28" rot="MR270"/>
-</element>
-<element name="U9" library="RoboJackets-PowerICs" package="SOT-23-5" value="LDK715M50R" x="-28.5" y="7.5" smashed="yes" rot="MR225">
-<attribute name="DIGIKEY" value="497-15217-1-ND" x="-28.5" y="7.5" size="1.778" layer="28" rot="MR225" display="off"/>
-<attribute name="MPN" value="LDK715M50R" x="-28.5" y="7.5" size="1.778" layer="28" rot="MR225" display="off"/>
-<attribute name="NAME" x="-31.4" y="8.4" size="1" layer="26" font="vector" ratio="15" rot="MR135"/>
-</element>
-<element name="U10" library="RoboJackets-PowerICs" package="SOT-23-5" value="LDK715M50R" x="31.5" y="9" smashed="yes" rot="MR90">
-<attribute name="DIGIKEY" value="497-15217-1-ND" x="31.5" y="9" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="MPN" value="LDK715M50R" x="31.5" y="9" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="NAME" x="29" y="8.5" size="1" layer="26" font="vector" ratio="15" rot="MR0"/>
 </element>
 <element name="J1" library="RoboJackets-Connectors" package="SBH11-*-D05-RA-VERT" value="SBH11-PBPC-D05-ST-BK" x="-16.5" y="67" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="S9169-ND" x="-16.5" y="67" size="1.778" layer="27" rot="R180" display="off"/>
@@ -14931,6 +14860,61 @@ Your Eurocircuits Team
 <element name="F1" library="RoboJackets-Fuses" package="FUSC2113X75" package3d_urn="urn:adsk.eagle:package:8760197/1" value="0805L200SLTHYR" x="-7.5" y="-9.25" smashed="yes" rot="MR90">
 <attribute name="NAME" x="-9.7909" y="-9.25" size="1" layer="26" font="vector" ratio="15" rot="MR0" align="bottom-center"/>
 <attribute name="VALUE" x="-9.2091" y="-9.25" size="1.27" layer="28" rot="MR90" align="top-center"/>
+</element>
+<element name="U9" library="RoboJackets-PowerICs" package="SOT-23-5" value="TLV70450" x="-28.5" y="6.5" smashed="yes" rot="MR135">
+<attribute name="DIGIKEY" value="296-39287-1-ND" x="-28.5" y="6.5" size="1.778" layer="28" rot="MR135" display="off"/>
+<attribute name="MPN" value="TLV70450DBVR" x="-28.5" y="6.5" size="1.778" layer="28" rot="MR135" display="off"/>
+<attribute name="NAME" x="-27.75" y="4.1" size="1" layer="26" font="vector" ratio="15" rot="MR135"/>
+</element>
+<element name="U10" library="RoboJackets-PowerICs" package="SOT-23-5" value="TLV70450" x="31.5" y="9.5" smashed="yes" rot="MR0">
+<attribute name="DIGIKEY" value="296-39287-1-ND" x="31.5" y="9.5" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MPN" value="TLV70450DBVR" x="31.5" y="9.5" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="30" y="11" size="1" layer="26" font="vector" ratio="15" rot="MR270"/>
+</element>
+<element name="M1:C12" library="RoboJackets-Capacitors" package="CAP_PAN_10X12.5" value="ECA-1HHG221" x="-53" y="26.5" smashed="yes" rot="R180">
+<attribute name="DIGIKEY" value="P5572-ND" x="-53" y="26.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="ECA-1HHG221" x="-53" y="26.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="-58.2342" y="31.135" size="1" layer="25" font="vector" ratio="15" rot="SR0"/>
+</element>
+<element name="M2:C12" library="RoboJackets-Capacitors" package="CAP_PAN_10X12.5" value="ECA-1HHG221" x="-35.5" y="27.5" smashed="yes">
+<attribute name="DIGIKEY" value="P5572-ND" x="-35.5" y="27.5" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="ECA-1HHG221" x="-35.5" y="27.5" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-33.7658" y="30.865" size="1" layer="25" font="vector" ratio="15" rot="SR0"/>
+</element>
+<element name="M3:C12" library="RoboJackets-Capacitors" package="CAP_PAN_10X12.5" value="ECA-1HHG221" x="-14.5" y="-23" smashed="yes" rot="R270">
+<attribute name="DIGIKEY" value="P5572-ND" x="-14.5" y="-23" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="ECA-1HHG221" x="-14.5" y="-23" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="-24.635" y="-22.7342" size="1" layer="25" font="vector" ratio="15" rot="SR0"/>
+</element>
+<element name="M4:C12" library="RoboJackets-Capacitors" package="CAP_PAN_10X12.5" value="ECA-1HHG221" x="28.5" y="13" smashed="yes" rot="R180">
+<attribute name="DIGIKEY" value="P5572-ND" x="28.5" y="13" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="ECA-1HHG221" x="28.5" y="13" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="20.7658" y="13.135" size="1" layer="25" font="vector" ratio="15" rot="SR0"/>
+</element>
+<element name="M1:C13" library="RoboJackets-Capacitors" package="CAP_PAN_10X12.5" value="ECA-1HHG221" x="45.5" y="8.5" smashed="yes">
+<attribute name="DIGIKEY" value="P5572-ND" x="45.5" y="8.5" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="ECA-1HHG221" x="45.5" y="8.5" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="48.7342" y="6.865" size="1" layer="25" font="vector" ratio="15" rot="SR0"/>
+</element>
+<element name="M2:C13" library="RoboJackets-Capacitors" package="CAP_PAN_10X12.5" value="ECA-1HHG221" x="50" y="38" smashed="yes">
+<attribute name="DIGIKEY" value="P5572-ND" x="50" y="38" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="ECA-1HHG221" x="50" y="38" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="51.7342" y="41.865" size="1" layer="25" font="vector" ratio="15" rot="SR0"/>
+</element>
+<element name="M3:C13" library="RoboJackets-Capacitors" package="CAP_PAN_10X12.5" value="ECA-1HHG221" x="33" y="38.5" smashed="yes" rot="R180">
+<attribute name="DIGIKEY" value="P5572-ND" x="33" y="38.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="ECA-1HHG221" x="33" y="38.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="39.2658" y="42.635" size="1" layer="25" font="vector" ratio="15" rot="SR0"/>
+</element>
+<element name="M4:C13" library="RoboJackets-Capacitors" package="CAP_PAN_10X12.5" value="ECA-1HHG221" x="-12" y="-7.5" smashed="yes" rot="R90">
+<attribute name="DIGIKEY" value="P5572-ND" x="-12" y="-7.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="ECA-1HHG221" x="-12" y="-7.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="-12.365" y="-4.2658" size="1" layer="25" font="vector" ratio="15" rot="SR0"/>
+</element>
+<element name="DD:C4" library="RoboJackets-Capacitors" package="CAP_PAN_10X12.5" value="ECA-1HHG221" x="-43.5" y="57.5" smashed="yes">
+<attribute name="DIGIKEY" value="P5572-ND" x="-43.5" y="57.5" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="ECA-1HHG221" x="-43.5" y="57.5" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-53.7658" y="61.365" size="1" layer="25" font="vector" ratio="15" rot="SR0"/>
 </element>
 </elements>
 <signals>
@@ -15274,15 +15258,6 @@ Your Eurocircuits Team
 <contactref element="M4:U4" pad="4"/>
 <contactref element="LED1" pad="6"/>
 <contactref element="LED2" pad="6"/>
-<contactref element="DD:C4" pad="2"/>
-<contactref element="M1:C15" pad="2"/>
-<contactref element="M2:C15" pad="2"/>
-<contactref element="M3:C15" pad="2"/>
-<contactref element="M4:C15" pad="2"/>
-<contactref element="M1:C14" pad="2"/>
-<contactref element="M2:C14" pad="2"/>
-<contactref element="M3:C14" pad="2"/>
-<contactref element="M4:C14" pad="2"/>
 <contactref element="KIT1" pad="GND"/>
 <contactref element="U4" pad="19"/>
 <contactref element="U4" pad="11"/>
@@ -15895,25 +15870,6 @@ Your Eurocircuits Team
 <wire x1="9.25" y1="19.25" x2="9" y2="19.5" width="0.3" layer="1"/>
 <via x="9" y="19.5" extent="1-16" drill="0.35"/>
 <via x="56" y="3.5" extent="1-16" drill="0.35"/>
-<via x="55" y="4.5" extent="1-16" drill="0.35"/>
-<via x="56" y="4.5" extent="1-16" drill="0.35"/>
-<via x="57" y="4.5" extent="1-16" drill="0.35"/>
-<via x="55" y="3.5" extent="1-16" drill="0.35"/>
-<via x="57" y="2.5" extent="1-16" drill="0.35"/>
-<via x="56" y="2.5" extent="1-16" drill="0.35"/>
-<via x="55" y="2.5" extent="1-16" drill="0.35"/>
-<polygon width="0.2" layer="16" thermals="no">
-<vertex x="54.75" y="4.75"/>
-<vertex x="54.75" y="2.25"/>
-<vertex x="57.25" y="4.75"/>
-</polygon>
-<via x="-48" y="-6.5" extent="1-16" drill="0.35"/>
-<via x="-46" y="-6.5" extent="1-16" drill="0.35"/>
-<via x="-48" y="-7.5" extent="1-16" drill="0.35"/>
-<via x="-46" y="-7.5" extent="1-16" drill="0.35"/>
-<via x="-48" y="-8.5" extent="1-16" drill="0.35"/>
-<via x="-47" y="-8.5" extent="1-16" drill="0.35"/>
-<via x="-46" y="-8.5" extent="1-16" drill="0.35"/>
 <contactref element="U2" pad="5"/>
 <contactref element="U2" pad="4"/>
 <contactref element="U3" pad="4"/>
@@ -16157,16 +16113,8 @@ Your Eurocircuits Team
 <contactref element="C45" pad="2"/>
 <contactref element="C43" pad="2"/>
 <contactref element="C42" pad="2"/>
-<contactref element="U9" pad="2"/>
-<contactref element="U10" pad="2"/>
 <wire x1="56" y1="10.932609375" x2="55.567390625" y2="10.5" width="0.3" layer="16"/>
 <wire x1="55.567390625" y1="10.5" x2="54.85" y2="10.5" width="0.3" layer="16"/>
-<wire x1="30.194" y1="9" x2="31.5" y2="9" width="0.6" layer="16"/>
-<via x="31.5" y="9" extent="1-16" drill="0.35"/>
-<wire x1="35" y1="8.65" x2="34.65" y2="9" width="0.6" layer="16"/>
-<wire x1="34.65" y1="9" x2="31.5" y2="9" width="0.6" layer="16"/>
-<wire x1="31.15" y1="6" x2="31.5" y2="6.35" width="0.6" layer="16"/>
-<wire x1="31.5" y1="6.35" x2="31.5" y2="9" width="0.6" layer="16"/>
 <wire x1="56.75" y1="7.5" x2="58" y2="7.5" width="0.3" layer="16"/>
 <via x="58" y="7.5" extent="1-16" drill="0.35"/>
 <wire x1="51" y1="8.65" x2="51" y2="8.5" width="0.3" layer="16"/>
@@ -16174,38 +16122,14 @@ Your Eurocircuits Team
 <via x="52" y="7.5" extent="1-16" drill="0.35"/>
 <wire x1="53.5" y1="7" x2="53" y2="7.5" width="0.3" layer="16"/>
 <wire x1="53" y1="7.5" x2="52" y2="7.5" width="0.3" layer="16"/>
-<wire x1="-27.57651875" y1="8.42348125" x2="-28.5" y2="7.5" width="0.6" layer="16"/>
-<wire x1="-32.10104375" y1="5.101040625" x2="-30.898959375" y2="5.101040625" width="0.6" layer="16"/>
-<wire x1="-30.898959375" y1="5.101040625" x2="-28.5" y2="7.5" width="0.6" layer="16"/>
-<wire x1="-30.898959375" y1="10.601040625" x2="-30.898959375" y2="9.898959375" width="0.6" layer="16"/>
-<wire x1="-30.898959375" y1="9.898959375" x2="-30" y2="9" width="0.6" layer="16"/>
-<via x="-47" y="-7.5" extent="1-16" drill="0.35"/>
+<via x="-46.5" y="-7.5" extent="1-16" drill="0.35"/>
 <polygon width="0.3" layer="16" thermals="no">
 <vertex x="-48.2" y="-6.3"/>
 <vertex x="-48.2" y="-8.7"/>
 <vertex x="-45.8" y="-8.7"/>
 <vertex x="-45.8" y="-6.3"/>
 </polygon>
-<wire x1="-30" y1="9" x2="-28.5" y2="7.5" width="0.6" layer="16"/>
-<wire x1="-48.975" y1="-6.5" x2="-48" y2="-6.5" width="0.3" layer="16"/>
-<wire x1="-48.25" y1="-7.2357375" x2="-48.25" y2="-7.25" width="0.3" layer="16"/>
-<wire x1="-48.25" y1="-7.25" x2="-48" y2="-7.5" width="0.3" layer="16"/>
-<wire x1="-48.975" y1="-7" x2="-48.4857375" y2="-7" width="0.3" layer="16"/>
-<wire x1="-48.4857375" y1="-7" x2="-48.25" y2="-7.2357375" width="0.3" layer="16"/>
-<wire x1="-46.26400625" y1="-6.25" x2="-46.25" y2="-6.25" width="0.3" layer="16"/>
-<wire x1="-46.25" y1="-6.25" x2="-46" y2="-6.5" width="0.3" layer="16"/>
-<wire x1="-46.499875" y1="-5.525" x2="-46.499875" y2="-6.01413125" width="0.3" layer="16"/>
-<wire x1="-46.499875" y1="-6.01413125" x2="-46.26400625" y2="-6.25" width="0.3" layer="16"/>
-<wire x1="54.75" y1="3.7642625" x2="54.75" y2="3.75" width="0.3" layer="16"/>
-<wire x1="54.75" y1="3.75" x2="55" y2="3.5" width="0.3" layer="16"/>
-<wire x1="54.025" y1="4" x2="54.5142625" y2="4" width="0.3" layer="16"/>
-<wire x1="54.5142625" y1="4" x2="54.75" y2="3.7642625" width="0.3" layer="16"/>
-<wire x1="54.025" y1="4.5" x2="55" y2="4.5" width="0.3" layer="16"/>
-<wire x1="54.999746875" y1="5.475" x2="55" y2="5.474746875" width="0.3" layer="16"/>
-<wire x1="55" y1="5.474746875" x2="55" y2="4.5" width="0.3" layer="16"/>
-<wire x1="-48.000253125" y1="-5.525" x2="-48" y2="-5.525253125" width="0.3" layer="16"/>
-<wire x1="-48" y1="-5.525253125" x2="-48" y2="-6.5" width="0.3" layer="16"/>
-<via x="-30" y="9" extent="1-16" drill="0.35"/>
+<via x="-29" y="10" extent="1-16" drill="0.35"/>
 <wire x1="-44.10104375" y1="-4.101040625" x2="-42.398959375" y2="-4.101040625" width="0.3" layer="16"/>
 <wire x1="-42.398959375" y1="-4.101040625" x2="-42" y2="-4.5" width="0.3" layer="16"/>
 <via x="-42" y="-4.5" extent="1-16" drill="0.35"/>
@@ -16225,18 +16149,63 @@ Your Eurocircuits Team
 <wire x1="-4.25" y1="17.25" x2="-3" y2="18.5" width="0.3" layer="16"/>
 <wire x1="-2" y1="16.85" x2="-3" y2="17.85" width="0.3" layer="16"/>
 <wire x1="-3" y1="17.85" x2="-3" y2="18.5" width="0.3" layer="16"/>
-<wire x1="56.73599375" y1="4.75" x2="56.75" y2="4.75" width="0.3" layer="16"/>
-<wire x1="56.75" y1="4.75" x2="57" y2="4.5" width="0.3" layer="16"/>
-<wire x1="56.500125" y1="5.475" x2="56.500125" y2="4.98586875" width="0.3" layer="16"/>
-<wire x1="56.500125" y1="4.98586875" x2="56.73599375" y2="4.75" width="0.3" layer="16"/>
 <wire x1="-0.5" y1="-16.1" x2="-0.6" y2="-16" width="0.3" layer="1"/>
 <wire x1="-0.6" y1="-16" x2="-1.75" y2="-16" width="0.3" layer="1"/>
 <via x="-1.75" y="-16" extent="1-16" drill="0.35"/>
 <wire x1="-3" y1="-16.1" x2="-2.9" y2="-16" width="0.3" layer="1"/>
 <wire x1="-2.9" y1="-16" x2="-1.75" y2="-16" width="0.3" layer="1"/>
-<via x="57" y="3.5" extent="1-16" drill="0.35"/>
 <contactref element="J1" pad="7"/>
-<via x="-47" y="-6.5" extent="1-16" drill="0.35"/>
+<wire x1="-46.499875" y1="-7.499875" x2="-46.5" y2="-7.5" width="0.3" layer="16"/>
+<via x="-47.5" y="-7.5" extent="1-16" drill="0.35"/>
+<wire x1="-48.975" y1="-7" x2="-48" y2="-7" width="0.3" layer="16"/>
+<wire x1="-48.975" y1="-6.5" x2="-48" y2="-6.5" width="0.3" layer="16"/>
+<wire x1="-48" y1="-6.5" x2="-48" y2="-7" width="0.3" layer="16"/>
+<wire x1="-48" y1="-7" x2="-47.5" y2="-7.5" width="0.3" layer="16"/>
+<wire x1="-48.000253125" y1="-5.525" x2="-48" y2="-5.525253125" width="0.3" layer="16"/>
+<wire x1="-48" y1="-5.525253125" x2="-48" y2="-6.5" width="0.3" layer="16"/>
+<wire x1="-47" y1="-7.5" x2="-48" y2="-6.5" width="0.3" layer="16"/>
+<wire x1="-46.499875" y1="-5.525" x2="-46.499875" y2="-7.499875" width="0.3" layer="16"/>
+<wire x1="54.025" y1="4" x2="54.025" y2="4.5" width="0.3" layer="16"/>
+<wire x1="54.025" y1="4.5" x2="54" y2="4.525" width="0.3" layer="16"/>
+<wire x1="54" y1="4.525" x2="54" y2="5.5" width="0.3" layer="16"/>
+<via x="54" y="5.5" extent="1-16" drill="0.35"/>
+<wire x1="54.999746875" y1="5.475" x2="54.025" y2="5.475" width="0.3" layer="16"/>
+<wire x1="54.025" y1="5.475" x2="54" y2="5.5" width="0.3" layer="16"/>
+<wire x1="56.500125" y1="5.475" x2="56.500125" y2="4.000125" width="0.3" layer="16"/>
+<wire x1="56.500125" y1="4.000125" x2="56" y2="3.5" width="0.3" layer="16"/>
+<polygon width="0.25" layer="16">
+<vertex x="54.775" y="4.725"/>
+<vertex x="57.225" y="4.725"/>
+<vertex x="57.225" y="2.275"/>
+<vertex x="54.775" y="2.275"/>
+</polygon>
+<contactref element="U9" pad="1"/>
+<contactref element="U10" pad="1"/>
+<wire x1="-30.898959375" y1="10.601040625" x2="-30.79791875" y2="10.5" width="0.6" layer="16"/>
+<wire x1="-30.79791875" y1="10.5" x2="-29.5" y2="10.5" width="0.6" layer="16"/>
+<wire x1="-29.5" y1="10.5" x2="-29" y2="10" width="0.6" layer="16"/>
+<wire x1="-32.10104375" y1="5.101040625" x2="-32.10104375" y2="6.39895625" width="0.6" layer="16"/>
+<wire x1="-32.10104375" y1="6.39895625" x2="-31.5" y2="7" width="0.6" layer="16"/>
+<via x="-31.5" y="7" extent="1-16" drill="0.35"/>
+<wire x1="-30.095234375" y1="6.751728125" x2="-30.34350625" y2="7" width="0.6" layer="16"/>
+<wire x1="-30.34350625" y1="7" x2="-31.5" y2="7" width="0.6" layer="16"/>
+<wire x1="32.45" y1="8.194" x2="34.544" y2="8.194" width="0.6" layer="16"/>
+<wire x1="34.544" y1="8.194" x2="35" y2="8.65" width="0.6" layer="16"/>
+<wire x1="35" y1="8.65" x2="36.15" y2="8.65" width="0.6" layer="16"/>
+<wire x1="36.15" y1="8.65" x2="36.5" y2="9" width="0.6" layer="16"/>
+<via x="36.5" y="9" extent="1-16" drill="0.35"/>
+<wire x1="31.65" y1="5.5" x2="30.5" y2="5.5" width="0.6" layer="16"/>
+<wire x1="30.5" y1="5.5" x2="29.5" y2="6.5" width="0.6" layer="16"/>
+<via x="29.5" y="6.5" extent="1-16" drill="0.35"/>
+<contactref element="M1:C12" pad="2"/>
+<contactref element="M2:C12" pad="2"/>
+<contactref element="M3:C12" pad="2"/>
+<contactref element="M4:C12" pad="2"/>
+<contactref element="M1:C13" pad="2"/>
+<contactref element="M2:C13" pad="2"/>
+<contactref element="M3:C13" pad="2"/>
+<contactref element="M4:C13" pad="2"/>
+<contactref element="DD:C4" pad="2"/>
 </signal>
 <signal name="+5V">
 <contactref element="R3" pad="1"/>
@@ -17308,15 +17277,6 @@ Your Eurocircuits Team
 <contactref element="DD:Q5" pad="5678"/>
 <contactref element="R1" pad="1"/>
 <contactref element="R8" pad="1"/>
-<contactref element="DD:C4" pad="1"/>
-<contactref element="M1:C15" pad="1"/>
-<contactref element="M2:C15" pad="1"/>
-<contactref element="M3:C15" pad="1"/>
-<contactref element="M4:C15" pad="1"/>
-<contactref element="M1:C14" pad="1"/>
-<contactref element="M2:C14" pad="1"/>
-<contactref element="M3:C14" pad="1"/>
-<contactref element="M4:C14" pad="1"/>
 <wire x1="-35.75" y1="49" x2="-37.5" y2="49" width="0.3" layer="1"/>
 <wire x1="-40.155" y1="51.655" x2="-44.5" y2="51.655" width="0.3" layer="1"/>
 <via x="-44.5" y="51.655" extent="1-16" drill="0.35"/>
@@ -17456,7 +17416,6 @@ Your Eurocircuits Team
 <vertex x="22" y="-17"/>
 </polygon>
 <wire x1="-29.75" y1="25.5" x2="-38.5038" y2="25.5" width="0.3" layer="1"/>
-<wire x1="-38.5038" y1="25.5" x2="-40.5038" y2="27.5" width="0.3" layer="1"/>
 <via x="42" y="39.5" extent="1-16" drill="0.35"/>
 <wire x1="34.5" y1="16.5" x2="37.5" y2="13.5" width="0.3" layer="1"/>
 <via x="37.5" y="13.5" extent="1-16" drill="0.35"/>
@@ -17467,9 +17426,8 @@ Your Eurocircuits Team
 <wire x1="21.5" y1="-9.5" x2="23" y2="-11" width="0.3" layer="1"/>
 <wire x1="22.085784375" y1="-4.4675125" x2="21.5" y2="-5.053296875" width="0.3" layer="1"/>
 <wire x1="21.5" y1="-5.053296875" x2="21.5" y2="-9.5" width="0.3" layer="1"/>
-<wire x1="-17.5" y1="-30" x2="-17.5" y2="-19.5" width="0.25" layer="16"/>
+<wire x1="-17.5" y1="-30" x2="-17.5" y2="-19.5" width="0.3" layer="16"/>
 <wire x1="-17.5" y1="-19.5" x2="-16.9962" y2="-18.9962" width="0.25" layer="16"/>
-<wire x1="-16.9962" y1="-18.9962" x2="-14.5" y2="-18.9962" width="0.25" layer="16"/>
 <contactref element="XF1" pad="3"/>
 <contactref element="XF1" pad="4"/>
 <contactref element="U7" pad="16"/>
@@ -17547,18 +17505,8 @@ Your Eurocircuits Team
 <wire x1="42" y1="40" x2="42" y2="39.5" width="0.3" layer="3"/>
 <contactref element="C42" pad="1"/>
 <contactref element="C43" pad="1"/>
-<contactref element="U10" pad="4"/>
-<contactref element="U9" pad="4"/>
-<wire x1="33.5038" y1="13" x2="32.806" y2="12.3022" width="0.6" layer="16"/>
-<wire x1="32.806" y1="12.3022" x2="32.806" y2="10.5" width="0.6" layer="16"/>
-<wire x1="32.806" y1="10.5" x2="32.806" y2="9.95" width="0.6" layer="16"/>
-<wire x1="35" y1="10.35" x2="34.85" y2="10.5" width="0.6" layer="16"/>
-<wire x1="34.85" y1="10.5" x2="32.806" y2="10.5" width="0.6" layer="16"/>
 <wire x1="-33" y1="-0.5" x2="-33" y2="1.797915625" width="0.6" layer="16"/>
 <wire x1="-33" y1="1.797915625" x2="-30.898959375" y2="3.89895625" width="0.6" layer="16"/>
-<wire x1="-30.898959375" y1="3.89895625" x2="-30.89315" y2="3.904765625" width="0.6" layer="16"/>
-<wire x1="-30.75173125" y1="3.904765625" x2="-28.75173125" y2="5.904765625" width="0.6" layer="16"/>
-<wire x1="-30.75173125" y1="3.904765625" x2="-30.89315" y2="3.904765625" width="0.6" layer="16"/>
 <polygon width="0.3" layer="16" thermals="no">
 <vertex x="27" y="-34"/>
 <vertex x="27" y="-37"/>
@@ -17573,6 +17521,29 @@ Your Eurocircuits Team
 <vertex x="20" y="-24"/>
 <vertex x="20" y="-27"/>
 </polygon>
+<contactref element="U9" pad="2"/>
+<contactref element="U10" pad="2"/>
+<wire x1="-29.423484375" y1="7.42348125" x2="-29.00884375" y2="7.008840625" width="0.6" layer="16"/>
+<wire x1="-29.00884375" y1="7.008840625" x2="-29.00884375" y2="5.789071875" width="0.6" layer="16"/>
+<wire x1="35" y1="10.35" x2="34.15" y2="9.5" width="0.6" layer="16"/>
+<wire x1="34.15" y1="9.5" x2="32" y2="9.5" width="0.6" layer="16"/>
+<wire x1="32" y1="9.5" x2="31.5" y2="9" width="0.6" layer="16"/>
+<wire x1="31.5" y1="9" x2="31.5" y2="8.194" width="0.6" layer="16"/>
+<contactref element="M1:C12" pad="1"/>
+<contactref element="M2:C12" pad="1"/>
+<contactref element="M3:C12" pad="1"/>
+<contactref element="M4:C12" pad="1"/>
+<contactref element="M1:C13" pad="1"/>
+<contactref element="M2:C13" pad="1"/>
+<contactref element="M3:C13" pad="1"/>
+<contactref element="M4:C13" pad="1"/>
+<contactref element="DD:C4" pad="1"/>
+<wire x1="-38.5038" y1="25.5" x2="-40.5038" y2="27.5" width="0.3" layer="1"/>
+<wire x1="-16.9962" y1="-18.9962" x2="-15.9962" y2="-17.9962" width="0.3" layer="16"/>
+<wire x1="-15.9962" y1="-17.9962" x2="-14.5" y2="-17.9962" width="0.3" layer="16"/>
+<wire x1="33.5038" y1="11.8462" x2="33.5038" y2="13" width="0.6" layer="16"/>
+<wire x1="-29.00884375" y1="5.789071875" x2="-30.898959375" y2="3.89895625" width="0.6" layer="16"/>
+<wire x1="35" y1="10.35" x2="33.5038" y2="11.8462" width="0.6" layer="16"/>
 </signal>
 <signal name="EN-PWR-PRE">
 <contactref element="R13" pad="1"/>
@@ -21957,18 +21928,12 @@ Your Eurocircuits Team
 </signal>
 <signal name="ADC1-5V">
 <contactref element="C45" pad="1"/>
-<contactref element="U9" pad="5"/>
 <contactref element="U2" pad="17"/>
 <contactref element="U2" pad="16"/>
 <contactref element="U2" pad="10"/>
 <contactref element="C27" pad="1"/>
 <contactref element="C25" pad="1"/>
 <contactref element="C29" pad="1"/>
-<wire x1="-30.095234375" y1="7.24826875" x2="-30.923484375" y2="8.07651875" width="0.6" layer="16"/>
-<wire x1="-30.923484375" y1="8.07651875" x2="-32.10104375" y2="9.254078125" width="0.6" layer="16"/>
-<wire x1="-32.10104375" y1="9.254078125" x2="-32.10104375" y2="9.39895625" width="0.6" layer="16"/>
-<wire x1="-30.923484375" y1="8.07651875" x2="-32.000003125" y2="7" width="0.6" layer="16"/>
-<wire x1="-32.000003125" y1="7" x2="-33" y2="7" width="0.6" layer="16"/>
 <via x="-33" y="7" extent="1-16" drill="0.35"/>
 <wire x1="-33" y1="7" x2="-33" y2="3.5" width="0.6" layer="3"/>
 <wire x1="-33" y1="3.5" x2="-36.5" y2="0" width="0.6" layer="3"/>
@@ -21983,7 +21948,7 @@ Your Eurocircuits Team
 <wire x1="-45.999746875" y1="-5.525" x2="-45.999746875" y2="-5.000253125" width="0.3" layer="16"/>
 <wire x1="-45.999746875" y1="-5.000253125" x2="-46.5" y2="-4.5" width="0.3" layer="16"/>
 <wire x1="-46.5" y1="-4.5" x2="-47" y2="-4.5" width="0.3" layer="16"/>
-<wire x1="-47" y1="-4.5" x2="-47.500125" y2="-5.000125" width="0.3" layer="16"/>
+<wire x1="-47.500125" y1="-5.000125" x2="-47" y2="-4.5" width="0.3" layer="16"/>
 <wire x1="-47" y1="-4.5" x2="-47" y2="-4" width="0.3" layer="16"/>
 <wire x1="-43.000003125" y1="-3" x2="-42.898959375" y2="-2.89895625" width="0.3" layer="16"/>
 <wire x1="-47" y1="-4" x2="-46" y2="-3" width="0.3" layer="16"/>
@@ -21994,16 +21959,16 @@ Your Eurocircuits Team
 <wire x1="-40.5" y1="-3.499996875" x2="-42" y2="-1.999996875" width="0.3" layer="16"/>
 <wire x1="-40.5" y1="-5.5" x2="-40.5" y2="-3.499996875" width="0.3" layer="16"/>
 <contactref element="U2" pad="7"/>
-<wire x1="-47.500125" y1="-5.000125" x2="-47.500125" y2="-5.525" width="0" layer="19" extent="16-16"/>
+<wire x1="-47.500125" y1="-5.525" x2="-47.500125" y2="-5.000125" width="0.3" layer="16"/>
+<contactref element="U9" pad="3"/>
+<wire x1="-33" y1="8.5" x2="-33" y2="7" width="0.6" layer="16"/>
+<wire x1="-32.10104375" y1="9.39895625" x2="-33" y2="8.5" width="0.6" layer="16"/>
+<wire x1="-28.75173125" y1="8.09523125" x2="-29.666375" y2="9.009875" width="0.6" layer="16"/>
+<wire x1="-29.666375" y1="9.009875" x2="-31.7119625" y2="9.009875" width="0.6" layer="16"/>
+<wire x1="-31.7119625" y1="9.009875" x2="-32.10104375" y2="9.39895625" width="0.6" layer="16"/>
 </signal>
 <signal name="ADC2-5V">
 <contactref element="C46" pad="1"/>
-<contactref element="U10" pad="5"/>
-<wire x1="32.806" y1="8.05" x2="32.85" y2="8.006" width="0.6" layer="16"/>
-<wire x1="32.85" y1="8.006" x2="32.85" y2="7" width="0.6" layer="16"/>
-<wire x1="32.85" y1="7" x2="32.85" y2="6" width="0.6" layer="16"/>
-<wire x1="32.85" y1="7" x2="37" y2="7" width="0.6" layer="16"/>
-<wire x1="37" y1="7" x2="38" y2="8" width="0.6" layer="16"/>
 <via x="38" y="8" extent="1-16" drill="0.35"/>
 <wire x1="38" y1="8" x2="38" y2="7" width="0.6" layer="3"/>
 <wire x1="38" y1="7" x2="38.5" y2="6.5" width="0.6" layer="3"/>
@@ -22037,9 +22002,18 @@ Your Eurocircuits Team
 <wire x1="53.5" y1="8.7" x2="55.5" y2="8.7" width="0.6" layer="16"/>
 <wire x1="55.5" y1="8.7" x2="56.25" y2="8.7" width="0.6" layer="16"/>
 <wire x1="56.25" y1="8.7" x2="56.75" y2="9.2" width="0.6" layer="16"/>
-<wire x1="55.5" y1="5.475125" x2="55.5" y2="8.7" width="0.3" layer="16"/>
 <contactref element="U3" pad="7"/>
-<wire x1="55.5" y1="5.475125" x2="55.499875" y2="5.475" width="0" layer="19" extent="16-16"/>
+<contactref element="U10" pad="3"/>
+<wire x1="30.55" y1="8.194" x2="30.55" y2="6.95" width="0.6" layer="16"/>
+<wire x1="30.55" y1="6.95" x2="31" y2="6.5" width="0.6" layer="16"/>
+<wire x1="31" y1="6.5" x2="32.5" y2="6.5" width="0.6" layer="16"/>
+<wire x1="32.5" y1="6.5" x2="33.35" y2="5.65" width="0.6" layer="16"/>
+<wire x1="33.35" y1="5.65" x2="33.35" y2="5.5" width="0.6" layer="16"/>
+<wire x1="33.35" y1="5.5" x2="35" y2="5.5" width="0.6" layer="16"/>
+<wire x1="35" y1="5.5" x2="37.5" y2="8" width="0.6" layer="16"/>
+<wire x1="37.5" y1="8" x2="38" y2="8" width="0.6" layer="16"/>
+<wire x1="55.499875" y1="5.475" x2="55.499875" y2="8.699875" width="0.3" layer="16"/>
+<wire x1="55.499875" y1="8.699875" x2="55.5" y2="8.7" width="0.3" layer="16"/>
 </signal>
 <signal name="!CS!-RAD1">
 <contactref element="J1" pad="4"/>
