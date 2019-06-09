@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.2">
+<eagle version="9.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -21346,26 +21346,25 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <packageinstance name="R01005"/>
 </packageinstances>
 </package3d>
-<package3d name="CAPC1005X60" urn="urn:adsk.eagle:package:23626/2" type="model" library_version="10">
-<description>Chip, 1.00 X 0.50 X 0.60 mm body
-&lt;p&gt;Chip package with body size 1.00 X 0.50 X 0.60 mm&lt;/p&gt;</description>
+<package3d name="C0402" urn="urn:adsk.eagle:package:23626/1" type="box" library_version="3">
+<description>CAPACITOR</description>
 <packageinstances>
 <packageinstance name="C0402"/>
 </packageinstances>
 </package3d>
-<package3d name="C0504" urn="urn:adsk.eagle:package:23624/2" type="model" library_version="10">
+<package3d name="C0504" urn="urn:adsk.eagle:package:23624/1" type="box" library_version="3">
 <description>CAPACITOR</description>
 <packageinstances>
 <packageinstance name="C0504"/>
 </packageinstances>
 </package3d>
-<package3d name="C1310" urn="urn:adsk.eagle:package:23620/2" type="model" library_version="10">
+<package3d name="C1310" urn="urn:adsk.eagle:package:23620/1" type="box" library_version="3">
 <description>CAPACITOR</description>
 <packageinstances>
 <packageinstance name="C1310"/>
 </packageinstances>
 </package3d>
-<package3d name="C1825K" urn="urn:adsk.eagle:package:23684/2" type="model" library_version="10">
+<package3d name="C1825K" urn="urn:adsk.eagle:package:23684/1" type="box" library_version="3">
 <description>Ceramic Chip Capacitor KEMET 1825 reflow solder
 Metric Code Size 4564</description>
 <packageinstances>
@@ -21413,7 +21412,7 @@ Metric Code Size 4564</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="C-US" urn="urn:adsk.eagle:component:23794/43" prefix="C" uservalue="yes" library_version="10">
+<deviceset name="C-US" urn="urn:adsk.eagle:component:23794/42" prefix="C" uservalue="yes" library_version="3">
 <description>&lt;B&gt;CAPACITOR&lt;/B&gt;, American symbol</description>
 <gates>
 <gate name="G$1" symbol="C-US" x="0" y="0"/>
@@ -21425,7 +21424,7 @@ Metric Code Size 4564</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23626/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23626/1"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -21439,7 +21438,7 @@ Metric Code Size 4564</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23624/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23624/1"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -21509,7 +21508,7 @@ Metric Code Size 4564</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23620/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23620/1"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -22419,7 +22418,7 @@ Metric Code Size 4564</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23684/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23684/1"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -34028,16 +34027,16 @@ In this library you will find inductors. If you are looking for a common package
 <part name="SUPPLY112" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY113" library="supply2" deviceset="GND" device=""/>
 <part name="R12" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R2512" package3d_urn="urn:adsk.eagle:package:23545/2" value="47"/>
-<part name="C36" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="4.7uF 50V"/>
 <part name="D25" library="RoboJackets-Diodes" deviceset="DIODE-" device="DO214AA" value="3SMBJ5929B-TP"/>
 <part name="SUPPLY114" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY115" library="supply2" deviceset="GND" device=""/>
 <part name="T1" library="RoboJackets-Inductors" library_urn="urn:adsk.eagle:library:4251432" deviceset="DA203X-AL" device="DA2034" package3d_urn="urn:adsk.eagle:package:4251446/1"/>
 <part name="SUPPLY109" library="supply2" deviceset="GND" device=""/>
-<part name="R13" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="RC0603FR-071ML"/>
-<part name="R14" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="RC0603FR-071ML"/>
-<part name="R15" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="RC0603FR-07470KL"/>
-<part name="R16" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="RC063FR-716K2L"/>
+<part name="R13" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="RT0603BRD071ML (1M)"/>
+<part name="R14" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="RT0603BRD071ML (1M)"/>
+<part name="R15" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="RT0603BRD07470KL (470k)"/>
+<part name="R16" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="RT0603BRD0716KL (16.2k)"/>
+<part name="C13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="4.7uF 50V"/>
 </parts>
 <sheets>
 <sheet>
@@ -34444,7 +34443,7 @@ this.</text>
 <wire x1="134.62" y1="157.48" x2="134.62" y2="190.5" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="134.62" y1="190.5" x2="91.44" y2="190.5" width="0.1524" layer="97" style="shortdash"/>
 <text x="93.218" y="186.69" size="1.778" layer="97">TVS-RCD Snubber</text>
-<text x="193.04" y="93.98" size="2.54" layer="97">LT3751 Decoupling</text>
+<text x="198.12" y="93.98" size="2.54" layer="97">LT3751 Decoupling</text>
 <text x="17.78" y="68.58" size="1.778" layer="97">Place and route 
 LT LO decoupling 
 near this resistor bank</text>
@@ -34505,9 +34504,9 @@ on the IRFS4227</text>
 <attribute name="NAME" x="138.2014" y="123.19" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="143.002" y="123.19" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C18" gate="G$1" x="208.28" y="86.36" smashed="yes">
-<attribute name="NAME" x="209.296" y="86.995" size="1.778" layer="95"/>
-<attribute name="VALUE" x="209.296" y="82.169" size="1.778" layer="96"/>
+<instance part="C18" gate="G$1" x="213.36" y="86.36" smashed="yes">
+<attribute name="NAME" x="214.376" y="86.995" size="1.778" layer="95"/>
+<attribute name="VALUE" x="214.376" y="82.169" size="1.778" layer="96"/>
 </instance>
 <instance part="D1" gate="VS-5EWH06FN-M3" x="190.5" y="175.26" smashed="yes">
 <attribute name="NAME" x="187.96" y="177.8" size="1.778" layer="95"/>
@@ -34540,30 +34539,30 @@ on the IRFS4227</text>
 <attribute name="NAME" x="119.126" y="163.068" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="116.84" y="175.26" size="1.778" layer="96" rot="R180" align="top-left" display="off"/>
 </instance>
-<instance part="C19" gate="G$1" x="190.5" y="86.36" smashed="yes">
-<attribute name="NAME" x="191.516" y="86.995" size="1.778" layer="95"/>
-<attribute name="VALUE" x="191.516" y="82.169" size="1.778" layer="96"/>
+<instance part="C19" gate="G$1" x="195.58" y="86.36" smashed="yes">
+<attribute name="NAME" x="196.596" y="86.995" size="1.778" layer="95"/>
+<attribute name="VALUE" x="196.596" y="82.169" size="1.778" layer="96"/>
 </instance>
-<instance part="C27" gate="G$1" x="226.06" y="86.36" smashed="yes">
-<attribute name="NAME" x="227.076" y="86.995" size="1.778" layer="95"/>
-<attribute name="VALUE" x="227.076" y="82.169" size="1.778" layer="96"/>
+<instance part="C27" gate="G$1" x="231.14" y="86.36" smashed="yes">
+<attribute name="NAME" x="232.156" y="86.995" size="1.778" layer="95"/>
+<attribute name="VALUE" x="232.156" y="82.169" size="1.778" layer="96"/>
 </instance>
-<instance part="C28" gate="G$1" x="241.3" y="86.36" smashed="yes">
-<attribute name="NAME" x="242.316" y="86.995" size="1.778" layer="95"/>
-<attribute name="VALUE" x="242.316" y="82.169" size="1.778" layer="96"/>
+<instance part="C28" gate="G$1" x="246.38" y="86.36" smashed="yes">
+<attribute name="NAME" x="247.396" y="86.995" size="1.778" layer="95"/>
+<attribute name="VALUE" x="247.396" y="82.169" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY97" gate="1" x="160.02" y="147.32" smashed="yes">
 <attribute name="VALUE" x="158.75" y="148.59" size="1.778" layer="96"/>
 </instance>
-<instance part="C29" gate="G$1" x="256.54" y="86.36" smashed="yes">
-<attribute name="NAME" x="257.556" y="86.995" size="1.778" layer="95"/>
-<attribute name="VALUE" x="257.556" y="82.169" size="1.778" layer="96"/>
+<instance part="C29" gate="G$1" x="261.62" y="86.36" smashed="yes">
+<attribute name="NAME" x="262.636" y="86.995" size="1.778" layer="95"/>
+<attribute name="VALUE" x="262.636" y="82.169" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY14" gate="G$1" x="190.5" y="96.52" smashed="yes">
-<attribute name="VALUE" x="188.595" y="99.695" size="1.778" layer="96"/>
+<instance part="SUPPLY14" gate="G$1" x="195.58" y="96.52" smashed="yes">
+<attribute name="VALUE" x="193.675" y="99.695" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY17" gate="GND" x="190.5" y="73.66" smashed="yes">
-<attribute name="VALUE" x="188.595" y="70.485" size="1.778" layer="96"/>
+<instance part="SUPPLY17" gate="GND" x="195.58" y="73.66" smashed="yes">
+<attribute name="VALUE" x="193.675" y="70.485" size="1.778" layer="96"/>
 </instance>
 <instance part="C26" gate="G$1" x="101.6" y="172.72" smashed="yes" rot="R270">
 <attribute name="NAME" x="102.616" y="170.307" size="1.778" layer="95"/>
@@ -34626,10 +34625,6 @@ on the IRFS4227</text>
 <attribute name="NAME" x="59.69" y="153.8986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="59.69" y="149.098" size="1.778" layer="96"/>
 </instance>
-<instance part="C36" gate="G$1" x="99.06" y="116.84" smashed="yes">
-<attribute name="NAME" x="100.076" y="117.475" size="1.778" layer="95"/>
-<attribute name="VALUE" x="100.076" y="112.649" size="1.778" layer="96"/>
-</instance>
 <instance part="D25" gate="G$1" x="91.44" y="116.84" smashed="yes" rot="R90">
 <attribute name="NAME" x="88.9" y="114.3" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="93.98" y="114.3" size="1.778" layer="96" rot="R270" align="top-left"/>
@@ -34661,6 +34656,10 @@ on the IRFS4227</text>
 <instance part="R16" gate="G$1" x="160.02" y="96.52" smashed="yes" rot="R90">
 <attribute name="NAME" x="158.5214" y="92.71" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="163.322" y="92.71" size="1.778" layer="96"/>
+</instance>
+<instance part="C13" gate="G$1" x="99.06" y="116.84" smashed="yes">
+<attribute name="NAME" x="100.076" y="117.475" size="1.778" layer="95"/>
+<attribute name="VALUE" x="100.076" y="112.649" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -34699,25 +34698,25 @@ on the IRFS4227</text>
 </segment>
 <segment>
 <pinref part="C29" gate="G$1" pin="2"/>
-<wire x1="256.54" y1="81.28" x2="256.54" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="256.54" y1="78.74" x2="241.3" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="81.28" x2="261.62" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="78.74" x2="246.38" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="C19" gate="G$1" pin="2"/>
-<wire x1="241.3" y1="78.74" x2="226.06" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="78.74" x2="208.28" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="78.74" x2="190.5" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="78.74" x2="190.5" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="78.74" x2="231.14" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="78.74" x2="213.36" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="78.74" x2="195.58" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="78.74" x2="195.58" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="C18" gate="G$1" pin="2"/>
-<wire x1="208.28" y1="81.28" x2="208.28" y2="78.74" width="0.1524" layer="91"/>
-<junction x="208.28" y="78.74"/>
+<wire x1="213.36" y1="81.28" x2="213.36" y2="78.74" width="0.1524" layer="91"/>
+<junction x="213.36" y="78.74"/>
 <pinref part="C27" gate="G$1" pin="2"/>
-<wire x1="226.06" y1="81.28" x2="226.06" y2="78.74" width="0.1524" layer="91"/>
-<junction x="226.06" y="78.74"/>
+<wire x1="231.14" y1="81.28" x2="231.14" y2="78.74" width="0.1524" layer="91"/>
+<junction x="231.14" y="78.74"/>
 <pinref part="C28" gate="G$1" pin="2"/>
-<wire x1="241.3" y1="81.28" x2="241.3" y2="78.74" width="0.1524" layer="91"/>
-<junction x="241.3" y="78.74"/>
+<wire x1="246.38" y1="81.28" x2="246.38" y2="78.74" width="0.1524" layer="91"/>
+<junction x="246.38" y="78.74"/>
 <pinref part="SUPPLY17" gate="GND" pin="GND"/>
-<wire x1="190.5" y1="76.2" x2="190.5" y2="78.74" width="0.1524" layer="91"/>
-<junction x="190.5" y="78.74"/>
+<wire x1="195.58" y1="76.2" x2="195.58" y2="78.74" width="0.1524" layer="91"/>
+<junction x="195.58" y="78.74"/>
 </segment>
 <segment>
 <pinref part="SUPPLY27" gate="GND" pin="GND"/>
@@ -34767,9 +34766,9 @@ on the IRFS4227</text>
 <pinref part="SUPPLY114" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C36" gate="G$1" pin="2"/>
 <wire x1="99.06" y1="111.76" x2="99.06" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="SUPPLY115" gate="GND" pin="GND"/>
+<pinref part="C13" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="160.02" y1="91.44" x2="160.02" y2="88.9" width="0.1524" layer="91"/>
@@ -34867,25 +34866,25 @@ on the IRFS4227</text>
 </segment>
 <segment>
 <pinref part="C19" gate="G$1" pin="1"/>
-<wire x1="190.5" y1="88.9" x2="190.5" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="91.44" x2="208.28" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="88.9" x2="195.58" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="91.44" x2="213.36" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="C29" gate="G$1" pin="1"/>
-<wire x1="208.28" y1="91.44" x2="226.06" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="91.44" x2="241.3" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="91.44" x2="256.54" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="256.54" y1="91.44" x2="256.54" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="91.44" x2="231.14" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="91.44" x2="246.38" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="91.44" x2="261.62" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="91.44" x2="261.62" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="C18" gate="G$1" pin="1"/>
-<wire x1="208.28" y1="88.9" x2="208.28" y2="91.44" width="0.1524" layer="91"/>
-<junction x="208.28" y="91.44"/>
+<wire x1="213.36" y1="88.9" x2="213.36" y2="91.44" width="0.1524" layer="91"/>
+<junction x="213.36" y="91.44"/>
 <pinref part="C27" gate="G$1" pin="1"/>
-<wire x1="226.06" y1="88.9" x2="226.06" y2="91.44" width="0.1524" layer="91"/>
-<junction x="226.06" y="91.44"/>
+<wire x1="231.14" y1="88.9" x2="231.14" y2="91.44" width="0.1524" layer="91"/>
+<junction x="231.14" y="91.44"/>
 <pinref part="C28" gate="G$1" pin="1"/>
-<wire x1="241.3" y1="88.9" x2="241.3" y2="91.44" width="0.1524" layer="91"/>
-<junction x="241.3" y="91.44"/>
+<wire x1="246.38" y1="88.9" x2="246.38" y2="91.44" width="0.1524" layer="91"/>
+<junction x="246.38" y="91.44"/>
 <pinref part="SUPPLY14" gate="G$1" pin="VBATT"/>
-<wire x1="190.5" y1="91.44" x2="190.5" y2="93.98" width="0.1524" layer="91"/>
-<junction x="190.5" y="91.44"/>
+<wire x1="195.58" y1="91.44" x2="195.58" y2="93.98" width="0.1524" layer="91"/>
+<junction x="195.58" y="91.44"/>
 </segment>
 </net>
 <net name="HVGATE" class="0">
@@ -35018,10 +35017,10 @@ on the IRFS4227</text>
 <wire x1="91.44" y1="124.46" x2="81.28" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="119.38" x2="91.44" y2="124.46" width="0.1524" layer="91"/>
 <junction x="91.44" y="124.46"/>
-<pinref part="C36" gate="G$1" pin="1"/>
 <wire x1="99.06" y1="119.38" x2="99.06" y2="124.46" width="0.1524" layer="91"/>
 <junction x="99.06" y="124.46"/>
-<label x="88.9" y="124.46" size="1.27" layer="95"/>
+<label x="86.36" y="124.46" size="1.27" layer="95"/>
+<pinref part="C13" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$2" class="0">
