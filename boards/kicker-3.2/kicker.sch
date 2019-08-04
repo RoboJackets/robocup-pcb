@@ -33958,10 +33958,8 @@ In this library you will find inductors. If you are looking for a common package
 <part name="SUPPLY97" library="supply2" deviceset="V+" device=""/>
 <part name="R63" library="rcl" deviceset="R-US_" device="R1206" value="187k"/>
 <part name="R64" library="rcl" deviceset="R-US_" device="R0805" value="931"/>
-<part name="D23" library="RoboJackets-Diodes" deviceset="TVS" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="PESD5V0C1USFYL"/>
 <part name="D5" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-YELLOW" value="YELLOW"/>
 <part name="D3" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-BLUE" value="BLUE"/>
-<part name="SUPPLY98" library="supply2" deviceset="GND" device=""/>
 <part name="FRAME8" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_A_L" device=""/>
 <part name="R19" library="rcl" deviceset="R-US_" device="R0603" value="100k"/>
 <part name="R57" library="rcl" deviceset="R-US_" device="R0603" value="100k"/>
@@ -33972,18 +33970,12 @@ In this library you will find inductors. If you are looking for a common package
 <part name="C4" library="rcl" deviceset="C-US" device="C0603" value="1uF"/>
 <part name="R3" library="rcl" deviceset="R-US_" device="R0603" value="160"/>
 <part name="C9" library="rcl" deviceset="C-US" device="C0603" value="1uF"/>
-<part name="D27" library="RoboJackets-Diodes" deviceset="TVS" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="PESD5V0C1USFYL"/>
 <part name="SUPPLY12" library="supply2" deviceset="GND" device=""/>
-<part name="D28" library="RoboJackets-Diodes" deviceset="TVS" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="PESD5V0C1USFYL"/>
-<part name="D29" library="RoboJackets-Diodes" deviceset="TVS" device="0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="PESD5V0C1USFYL"/>
 <part name="R4" library="rcl" deviceset="R-US_" device="R0603" value="100k"/>
 <part name="SUPPLY13" library="supply2" deviceset="GND" device=""/>
-<part name="SUPPLY100" library="supply2" deviceset="GND" device=""/>
-<part name="SUPPLY101" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY102" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY103" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="SUPPLY104" library="supply2" deviceset="GND" device=""/>
-<part name="SUPPLY105" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY106" library="supply2" deviceset="GND" device=""/>
 <part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E7.5-18" package3d_urn="urn:adsk.eagle:package:23379/1" value="560uF"/>
 <part name="SUPPLY107" library="RoboJackets-Supplies" deviceset="VBATT" device=""/>
@@ -34058,7 +34050,6 @@ polarity protection".</text>
 <text x="91.44" y="96.52" size="1.778" layer="97">DNC</text>
 <text x="101.6" y="147.32" size="1.778" layer="97">Clamp VBatt @ 22.2V</text>
 <text x="251.46" y="187.96" size="1.778" layer="97">&lt;50mA</text>
-<text x="137.16" y="78.74" size="1.778" layer="97">Clamp 5V @ 5.5V</text>
 <text x="17.78" y="53.34" size="1.778" layer="97">AAM R60 and Voltage Divider selected from datasheet</text>
 <text x="40.64" y="167.64" size="1.27" layer="97">Everything but the fuse holder
 50A rated. Change this and adjust
@@ -34177,13 +34168,6 @@ this.</text>
 <instance part="SUPPLY96" gate="GND" x="116.84" y="73.66" smashed="yes">
 <attribute name="VALUE" x="114.935" y="70.485" size="1.778" layer="96"/>
 </instance>
-<instance part="D23" gate="G$1" x="132.08" y="86.36" smashed="yes">
-<attribute name="NAME" x="134.62" y="86.36" size="1.778" layer="95"/>
-<attribute name="VALUE" x="134.62" y="83.82" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY98" gate="GND" x="132.08" y="73.66" smashed="yes">
-<attribute name="VALUE" x="130.175" y="70.485" size="1.778" layer="96"/>
-</instance>
 <instance part="D24" gate="G$1" x="96.52" y="154.94" smashed="yes">
 <attribute name="NAME" x="99.06" y="154.94" size="1.778" layer="95"/>
 <attribute name="VALUE" x="99.06" y="152.4" size="1.778" layer="96"/>
@@ -34256,11 +34240,6 @@ this.</text>
 <pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="SUPPLY96" gate="GND" pin="GND"/>
 <wire x1="116.84" y1="81.28" x2="116.84" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="D23" gate="G$1" pin="A"/>
-<wire x1="132.08" y1="81.28" x2="132.08" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="SUPPLY98" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="VBATT" class="0">
@@ -34367,11 +34346,6 @@ this.</text>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="116.84" y1="91.44" x2="116.84" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="SUPPLY3" gate="+5V" pin="+5V"/>
-<junction x="116.84" y="91.44"/>
-<pinref part="D23" gate="G$1" pin="C"/>
-<wire x1="116.84" y1="91.44" x2="132.08" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="91.44" x2="132.08" y2="88.9" width="0.1524" layer="91"/>
-<junction x="116.84" y="91.44"/>
 <pinref part="U1" gate="G$1" pin="OUT"/>
 <wire x1="88.9" y1="86.36" x2="99.06" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="86.36" x2="99.06" y2="91.44" width="0.1524" layer="91"/>
@@ -34380,7 +34354,6 @@ this.</text>
 <wire x1="104.14" y1="91.44" x2="104.14" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="91.44" x2="116.84" y2="91.44" width="0.1524" layer="91"/>
 <junction x="104.14" y="91.44"/>
-<junction x="116.84" y="91.44"/>
 <wire x1="104.14" y1="101.6" x2="104.14" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -35098,20 +35071,8 @@ of the transformer.</text>
 <attribute name="NAME" x="176.276" y="173.355" size="1.778" layer="95"/>
 <attribute name="VALUE" x="176.276" y="168.529" size="1.778" layer="96"/>
 </instance>
-<instance part="D27" gate="G$1" x="144.78" y="172.72" smashed="yes">
-<attribute name="NAME" x="147.32" y="172.72" size="1.778" layer="95"/>
-<attribute name="VALUE" x="139.7" y="175.26" size="1.778" layer="96" rot="R270"/>
-</instance>
 <instance part="SUPPLY12" gate="GND" x="175.26" y="157.48" smashed="yes">
 <attribute name="VALUE" x="173.355" y="154.305" size="1.778" layer="96"/>
-</instance>
-<instance part="D28" gate="G$1" x="53.34" y="71.12" smashed="yes">
-<attribute name="NAME" x="55.88" y="71.12" size="1.778" layer="95"/>
-<attribute name="VALUE" x="48.26" y="76.2" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="D29" gate="G$1" x="53.34" y="154.94" smashed="yes">
-<attribute name="NAME" x="55.88" y="154.94" size="1.778" layer="95"/>
-<attribute name="VALUE" x="48.26" y="160.02" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="R4" gate="G$1" x="154.94" y="170.18" smashed="yes" rot="R90">
 <attribute name="NAME" x="153.4414" y="166.37" size="1.778" layer="95" rot="R90"/>
@@ -35119,12 +35080,6 @@ of the transformer.</text>
 </instance>
 <instance part="SUPPLY13" gate="GND" x="154.94" y="157.48" smashed="yes">
 <attribute name="VALUE" x="153.035" y="154.305" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY100" gate="GND" x="144.78" y="157.48" smashed="yes">
-<attribute name="VALUE" x="142.875" y="154.305" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY101" gate="GND" x="53.34" y="58.42" smashed="yes">
-<attribute name="VALUE" x="51.435" y="55.245" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY102" gate="GND" x="73.66" y="58.42" smashed="yes">
 <attribute name="VALUE" x="71.755" y="55.245" size="1.778" layer="96"/>
@@ -35134,9 +35089,6 @@ of the transformer.</text>
 </instance>
 <instance part="SUPPLY104" gate="GND" x="73.66" y="142.24" smashed="yes">
 <attribute name="VALUE" x="71.755" y="139.065" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY105" gate="GND" x="53.34" y="142.24" smashed="yes">
-<attribute name="VALUE" x="51.435" y="139.065" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY106" gate="GND" x="124.46" y="68.58" smashed="yes">
 <attribute name="VALUE" x="122.555" y="65.405" size="1.778" layer="96"/>
@@ -35178,13 +35130,9 @@ of the transformer.</text>
 <wire x1="160.02" y1="180.34" x2="154.94" y2="180.34" width="0.1524" layer="91"/>
 <label x="139.7" y="180.34" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="154.94" y1="180.34" x2="144.78" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="180.34" x2="139.7" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="180.34" x2="139.7" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="175.26" x2="154.94" y2="180.34" width="0.1524" layer="91"/>
 <junction x="154.94" y="180.34"/>
-<pinref part="D27" gate="G$1" pin="C"/>
-<wire x1="144.78" y1="175.26" x2="144.78" y2="180.34" width="0.1524" layer="91"/>
-<junction x="144.78" y="180.34"/>
 </segment>
 </net>
 <net name="CHARGE" class="0">
@@ -35210,16 +35158,6 @@ of the transformer.</text>
 <pinref part="SUPPLY13" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="D27" gate="G$1" pin="A"/>
-<wire x1="144.78" y1="167.64" x2="144.78" y2="160.02" width="0.1524" layer="91"/>
-<pinref part="SUPPLY100" gate="GND" pin="GND"/>
-</segment>
-<segment>
-<pinref part="D28" gate="G$1" pin="A"/>
-<wire x1="53.34" y1="66.04" x2="53.34" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="SUPPLY101" gate="GND" pin="GND"/>
-</segment>
-<segment>
 <pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="73.66" y1="66.04" x2="73.66" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="SUPPLY102" gate="GND" pin="GND"/>
@@ -35228,11 +35166,6 @@ of the transformer.</text>
 <pinref part="C4" gate="G$1" pin="2"/>
 <wire x1="73.66" y1="149.86" x2="73.66" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="SUPPLY104" gate="GND" pin="GND"/>
-</segment>
-<segment>
-<pinref part="D29" gate="G$1" pin="A"/>
-<wire x1="53.34" y1="149.86" x2="53.34" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="SUPPLY105" gate="GND" pin="GND"/>
 </segment>
 <segment>
 <wire x1="139.7" y1="81.28" x2="139.7" y2="76.2" width="0.1524" layer="91"/>
@@ -35266,9 +35199,7 @@ of the transformer.</text>
 <wire x1="40.64" y1="78.74" x2="53.34" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="R65" gate="G$1" pin="2"/>
 <label x="40.64" y="78.74" size="1.27" layer="97" rot="R180" xref="yes"/>
-<pinref part="D28" gate="G$1" pin="C"/>
 <wire x1="53.34" y1="78.74" x2="58.42" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="73.66" x2="53.34" y2="78.74" width="0.1524" layer="91"/>
 <junction x="53.34" y="78.74"/>
 <pinref part="R57" gate="G$1" pin="1"/>
 <wire x1="53.34" y1="78.74" x2="53.34" y2="83.82" width="0.1524" layer="91"/>
@@ -35314,8 +35245,6 @@ of the transformer.</text>
 <wire x1="53.34" y1="167.64" x2="53.34" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="R58" gate="G$1" pin="2"/>
 <wire x1="53.34" y1="162.56" x2="58.42" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="D29" gate="G$1" pin="C"/>
-<wire x1="53.34" y1="157.48" x2="53.34" y2="162.56" width="0.1524" layer="91"/>
 <junction x="53.34" y="162.56"/>
 <wire x1="53.34" y1="162.56" x2="40.64" y2="162.56" width="0.1524" layer="91"/>
 <label x="40.64" y="162.56" size="1.27" layer="95" rot="R180" xref="yes"/>
