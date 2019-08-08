@@ -31438,11 +31438,11 @@ has issues with ports</text>
 <attribute name="REVISION" value="v3.0"/>
 <attribute name="SCH_DESC" value="Misc ICs"/>
 </part>
-<part name="1" library="RoboJackets-ICs" deviceset="APA102" device="5050" value="APA102C-5050">
+<part name="LED1" library="RoboJackets-ICs" deviceset="APA102" device="5050" value="APA102C-5050">
 <attribute name="DIGIKEY" value="1568-1902-ND"/>
 <attribute name="MPN" value="APA1025050"/>
 </part>
-<part name="2" library="RoboJackets-ICs" deviceset="APA102" device="5050" value="APA102C-5050">
+<part name="LED2" library="RoboJackets-ICs" deviceset="APA102" device="5050" value="APA102C-5050">
 <attribute name="DIGIKEY" value="1568-1902-ND"/>
 <attribute name="MPN" value="APA1025050"/>
 </part>
@@ -31495,7 +31495,7 @@ has issues with ports</text>
 <part name="SUPPLY30" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="GND44" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SUPPLY32" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
-<part name="3" library="RoboJackets-ICs" deviceset="APA102" device="5050" value="APA102C-5050">
+<part name="LED3" library="RoboJackets-ICs" deviceset="APA102" device="5050" value="APA102C-5050">
 <attribute name="DIGIKEY" value="1568-1902-ND"/>
 <attribute name="MPN" value="APA1025050"/>
 </part>
@@ -33829,13 +33829,6 @@ serial from MTrain</text>
 <wire x1="271.78" y1="177.8" x2="276.86" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="SCK" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="71_IO_L10N_2/CCLK"/>
-<wire x1="271.78" y1="187.96" x2="289.56" y2="187.96" width="0.1524" layer="91"/>
-<label x="289.56" y="187.96" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="MOSI-FPGA" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="63_IO_L08N_2/DIN/D0"/>
@@ -33848,6 +33841,13 @@ serial from MTrain</text>
 <pinref part="U1" gate="G$1" pin="44_IO_L02N_2/MOSI/CSI_B"/>
 <wire x1="271.78" y1="119.38" x2="274.32" y2="119.38" width="0.1524" layer="91"/>
 <label x="274.32" y="119.38" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="SCK-FPGA" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="71_IO_L10N_2/CCLK"/>
+<wire x1="271.78" y1="187.96" x2="289.56" y2="187.96" width="0.1524" layer="91"/>
+<label x="289.56" y="187.96" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -34680,13 +34680,13 @@ serial from MTrain</text>
 <instance part="SUPPLY40" gate="+5V" x="220.98" y="175.26" smashed="yes">
 <attribute name="VALUE" x="219.075" y="178.435" size="1.778" layer="96"/>
 </instance>
-<instance part="1" gate="G$1" x="195.58" y="162.56" smashed="yes">
+<instance part="LED1" gate="G$1" x="195.58" y="162.56" smashed="yes">
 <attribute name="NAME" x="185.42" y="172.72" size="1.778" layer="95"/>
 <attribute name="VALUE" x="195.58" y="157.48" size="1.778" layer="96"/>
 <attribute name="MPN" x="195.58" y="162.56" size="1.778" layer="96" display="off"/>
 <attribute name="DIGIKEY" x="195.58" y="162.56" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="2" gate="G$1" x="220.98" y="162.56" smashed="yes">
+<instance part="LED2" gate="G$1" x="220.98" y="162.56" smashed="yes">
 <attribute name="NAME" x="213.36" y="172.72" size="1.778" layer="95"/>
 <attribute name="VALUE" x="220.98" y="157.48" size="1.778" layer="96"/>
 <attribute name="MPN" x="220.98" y="162.56" size="1.778" layer="96" display="off"/>
@@ -34711,7 +34711,7 @@ serial from MTrain</text>
 <instance part="SUPPLY32" gate="+5V" x="246.38" y="175.26" smashed="yes">
 <attribute name="VALUE" x="244.475" y="178.435" size="1.778" layer="96"/>
 </instance>
-<instance part="3" gate="G$1" x="246.38" y="162.56" smashed="yes">
+<instance part="LED3" gate="G$1" x="246.38" y="162.56" smashed="yes">
 <attribute name="NAME" x="238.76" y="172.72" size="1.778" layer="95"/>
 <attribute name="VALUE" x="246.38" y="157.48" size="1.778" layer="96"/>
 <attribute name="MPN" x="246.38" y="162.56" size="1.778" layer="96" display="off"/>
@@ -34823,11 +34823,11 @@ serial from MTrain</text>
 </segment>
 <segment>
 <pinref part="GND62" gate="1" pin="GND"/>
-<pinref part="1" gate="G$1" pin="GND"/>
+<pinref part="LED1" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND63" gate="1" pin="GND"/>
-<pinref part="2" gate="G$1" pin="GND"/>
+<pinref part="LED2" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="J4" gate="G$1" pin="1"/>
@@ -34836,7 +34836,7 @@ serial from MTrain</text>
 </segment>
 <segment>
 <pinref part="GND44" gate="1" pin="GND"/>
-<pinref part="3" gate="G$1" pin="GND"/>
+<pinref part="LED3" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND45" gate="1" pin="GND"/>
@@ -34905,15 +34905,15 @@ serial from MTrain</text>
 <net name="+5V" class="0">
 <segment>
 <pinref part="SUPPLY39" gate="+5V" pin="+5V"/>
-<pinref part="1" gate="G$1" pin="VCC"/>
+<pinref part="LED1" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
 <pinref part="SUPPLY40" gate="+5V" pin="+5V"/>
-<pinref part="2" gate="G$1" pin="VCC"/>
+<pinref part="LED2" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
 <pinref part="SUPPLY32" gate="+5V" pin="+5V"/>
-<pinref part="3" gate="G$1" pin="VCC"/>
+<pinref part="LED3" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
 <pinref part="SUPPLY34" gate="+5V" pin="+5V"/>
@@ -34955,15 +34955,15 @@ serial from MTrain</text>
 <net name="DOT-MOSI-1-2" class="0">
 <segment>
 <wire x1="205.74" y1="167.64" x2="208.28" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="1" gate="G$1" pin="DO"/>
-<pinref part="2" gate="G$1" pin="DI"/>
+<pinref part="LED1" gate="G$1" pin="DO"/>
+<pinref part="LED2" gate="G$1" pin="DI"/>
 </segment>
 </net>
 <net name="DOT-CLK-1-2" class="0">
 <segment>
 <wire x1="205.74" y1="162.56" x2="208.28" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="1" gate="G$1" pin="CO"/>
-<pinref part="2" gate="G$1" pin="CI"/>
+<pinref part="LED1" gate="G$1" pin="CO"/>
+<pinref part="LED2" gate="G$1" pin="CI"/>
 </segment>
 </net>
 <net name="VBATT" class="0">
@@ -35023,7 +35023,7 @@ serial from MTrain</text>
 <pinref part="J3" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="1" gate="G$1" pin="DI"/>
+<pinref part="LED1" gate="G$1" pin="DI"/>
 <wire x1="182.88" y1="167.64" x2="180.34" y2="167.64" width="0.1524" layer="91"/>
 <label x="180.34" y="167.64" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -35054,15 +35054,15 @@ serial from MTrain</text>
 </net>
 <net name="DOT-MOSI-2-3" class="0">
 <segment>
-<pinref part="2" gate="G$1" pin="DO"/>
-<pinref part="3" gate="G$1" pin="DI"/>
+<pinref part="LED2" gate="G$1" pin="DO"/>
+<pinref part="LED3" gate="G$1" pin="DI"/>
 <wire x1="231.14" y1="167.64" x2="233.68" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DOT-CLK-2-3" class="0">
 <segment>
-<pinref part="2" gate="G$1" pin="CO"/>
-<pinref part="3" gate="G$1" pin="CI"/>
+<pinref part="LED2" gate="G$1" pin="CO"/>
+<pinref part="LED3" gate="G$1" pin="CI"/>
 <wire x1="231.14" y1="162.56" x2="233.68" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -35082,7 +35082,7 @@ serial from MTrain</text>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="1" gate="G$1" pin="CI"/>
+<pinref part="LED1" gate="G$1" pin="CI"/>
 <wire x1="157.48" y1="162.56" x2="182.88" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="R30" gate="G$1" pin="2"/>
 <wire x1="157.48" y1="162.56" x2="157.48" y2="157.48" width="0.1524" layer="91"/>
