@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4357,6 +4357,8 @@ http://www.digikey.com/product-detail/en/XC3S250E-4PQG208C/122-1483-ND/1091711</
 <wire x1="2.54" y1="5.08" x2="1.27" y2="3.81" width="0.254" layer="105"/>
 <wire x1="-1.27" y1="3.81" x2="-2.54" y2="2.54" width="0.254" layer="105"/>
 <wire x1="-2.54" y1="2.54" x2="-1.27" y2="1.27" width="0.254" layer="105"/>
+<text x="-11.43" y="19.05" size="2.54" layer="95">&gt;NAME</text>
+<text x="-11.43" y="-13.97" size="2.54" layer="96" align="top-left">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
