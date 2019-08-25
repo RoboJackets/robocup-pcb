@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.3">
+<eagle version="9.4.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -33452,14 +33452,14 @@ serial from MTrain</text>
 <label x="180.34" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="RESV3" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="RESV3(GND)"/>
 <pinref part="C31" gate="G$1" pin="1"/>
 <wire x1="236.22" y1="96.52" x2="241.3" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="VDDIO" class="0">
 <segment>
 <pinref part="R32" gate="G$1" pin="2"/>
 <pinref part="U4" gate="G$1" pin="VDDIO"/>
@@ -33999,7 +33999,7 @@ serial from MTrain</text>
 <label x="43.18" y="30.48" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="DOT-CLK-1" class="0">
 <segment>
 <pinref part="LED1" gate="G$1" pin="CI"/>
 <wire x1="157.48" y1="162.56" x2="182.88" y2="162.56" width="0.1524" layer="91"/>
@@ -34763,20 +34763,25 @@ battery power</text>
 <moduleinst name="M1" module="WHEEL_DRIVE" x="50.8" y="165.1">
 <attribute name="NAME" x="50.8" y="165.1" size="2.032" layer="95" align="bottom-center"/>
 <attribute name="NAME" x="50.8" y="165.1" size="2.032" layer="95" align="bottom-center"/>
+<attribute name="NAME" x="50.8" y="165.1" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 <moduleinst name="M2" module="WHEEL_DRIVE" x="50.8" y="86.36">
+<attribute name="NAME" x="50.8" y="86.36" size="2.032" layer="95" align="bottom-center"/>
 <attribute name="NAME" x="50.8" y="86.36" size="2.032" layer="95" align="bottom-center"/>
 <attribute name="NAME" x="50.8" y="86.36" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 <moduleinst name="M3" module="WHEEL_DRIVE" x="228.6" y="86.36">
 <attribute name="NAME" x="228.6" y="86.36" size="2.032" layer="95" align="bottom-center"/>
 <attribute name="NAME" x="228.6" y="86.36" size="2.032" layer="95" align="bottom-center"/>
+<attribute name="NAME" x="228.6" y="86.36" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 <moduleinst name="M4" module="WHEEL_DRIVE" x="228.6" y="165.1">
 <attribute name="NAME" x="228.6" y="165.1" size="2.032" layer="95" align="bottom-center"/>
 <attribute name="NAME" x="228.6" y="165.1" size="2.032" layer="95" align="bottom-center"/>
+<attribute name="NAME" x="228.6" y="165.1" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 <moduleinst name="DD" module="DRIBBLER_DRIVE" x="144.78" y="165.1">
+<attribute name="NAME" x="144.78" y="165.1" size="2.032" layer="95" align="bottom-center"/>
 <attribute name="NAME" x="144.78" y="165.1" size="2.032" layer="95" align="bottom-center"/>
 <attribute name="NAME" x="144.78" y="165.1" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
