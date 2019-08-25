@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.1.3">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -29142,7 +29142,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY53" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="SUPPLY2" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="SUPPLY3" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
-<part name="SUPPLY8" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="SUPPLY9" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 </parts>
 <sheets>
@@ -29304,9 +29303,6 @@ ripple current from motors</text>
 </instance>
 <instance part="SUPPLY3" gate="P" x="33.02" y="167.64" smashed="yes">
 <attribute name="VALUE" x="31.115" y="170.815" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY8" gate="P" x="35.56" y="203.2" smashed="yes">
-<attribute name="VALUE" x="33.655" y="206.375" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY9" gate="P" x="33.02" y="134.62" smashed="yes">
 <attribute name="VALUE" x="31.115" y="137.795" size="1.778" layer="96"/>
@@ -35665,8 +35661,6 @@ battery power</text>
 <approved hash="104,2,350.52,144.78,X1,VDD,+3.3V,,,"/>
 <approved hash="206,5,218.44,119.38,PWR-ERR,,,,,"/>
 <approved hash="206,5,218.44,68.58,PWR-ERR,,,,,"/>
-<approved hash="213,6,50.8,185.42,+5V,io,,,,"/>
-<approved hash="213,6,50.8,144.78,GND,io,,,,"/>
 <approved hash="118,1@DRIBBLER_DRIVE,62.23,68.58,Net,GND,,,,"/>
 <approved hash="118,1@DRIBBLER_DRIVE,100.33,142.24,Net,+18.5V,,,,"/>
 </errors>
