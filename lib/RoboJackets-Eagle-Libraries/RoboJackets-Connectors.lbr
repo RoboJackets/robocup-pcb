@@ -1524,34 +1524,6 @@ rfk_1850.pdf</description>
 </package>
 </packages>
 <packages3d>
-<package3d name="JST-XH-06-PACKAGE-LONG-PAD" urn="urn:adsk.eagle:package:7477935/1" type="box">
-<description>&lt;b&gt;JST XH Connector Long Pads (Package)&lt;/b&gt;&lt;p&gt;
-
-Wire to board connector.
-
-Pitch: 2,54 mm, (0.100")&lt;p&gt;
-Number of pins: &lt;b&gt;6&lt;/b&gt;&lt;b&gt;&lt;P&gt;
-
-&lt;b&gt;Created by Rembrandt Electronics&lt;/b&gt;&lt;p&gt;
-&lt;b&gt;www.rembrandtelectronics.com&lt;/b&gt;&lt;p&gt;</description>
-<packageinstances>
-<packageinstance name="JST-XH-06-PACKAGE-LONG-PAD"/>
-</packageinstances>
-</package3d>
-<package3d name="JST-XH-06-PACKAGE-ROUND-PAD" urn="urn:adsk.eagle:package:7477934/1" type="box">
-<description>&lt;b&gt;JST XH Connector Round Pads (Package)&lt;/b&gt;&lt;p&gt;
-
-Wire to board connector.
-
-Pitch: 2,54 mm, (0.100")&lt;p&gt;
-Number of pins: &lt;b&gt;6&lt;/b&gt;&lt;b&gt;&lt;P&gt;
-
-&lt;b&gt;Created by Rembrandt Electronics&lt;/b&gt;&lt;p&gt;
-&lt;b&gt;www.rembrandtelectronics.com&lt;/b&gt;&lt;p&gt;</description>
-<packageinstances>
-<packageinstance name="JST-XH-06-PACKAGE-ROUND-PAD"/>
-</packageinstances>
-</package3d>
 </packages3d>
 <symbols>
 <symbol name="2-PIN_CONN">
@@ -3196,26 +3168,6 @@ XT-60 Power Connector
 </technology>
 </technologies>
 </device>
-<device name="" package="SBH11-*-D05-RA-VERT">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="10" pad="10"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-<connect gate="G$1" pin="9" pad="9"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DIGIKEY" value="S9169-ND" constant="no"/>
-<attribute name="MPN" value="SBH11-PBPC-D05-ST-BK" constant="no"/>
-</technology>
-</technologies>
-</device>
 </devices>
 </deviceset>
 <deviceset name="STANDOFF-HOLE">
@@ -3294,11 +3246,6 @@ XT-60 Power Connector
 </device>
 </devices>
 </deviceset>
-<deviceset name="TC2030-MCP">
-<gates>
-</gates>
-<devices>
-<device name="">
 <deviceset name="TC2050-IDC-NL" prefix="J">
 <gates>
 <gate name="G$1" symbol="10PIN_HEADER" x="0" y="0"/>
