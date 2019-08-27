@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.1.3">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -18312,6 +18312,26 @@ In this library you will find all the connectors used on any of our boards.
 <wire x1="0.65" y1="-3.6" x2="0.65" y2="-1.1" width="0.2" layer="21"/>
 <wire x1="6.7" y1="-1.1" x2="0.65" y2="-1.1" width="0.2" layer="21"/>
 </package>
+<package name="B2P">
+<wire x1="6.9" y1="4.85" x2="-2.9" y2="4.85" width="0.127" layer="21"/>
+<wire x1="-2.9" y1="4.85" x2="-2.9" y2="-4.85" width="0.127" layer="21"/>
+<wire x1="-2.9" y1="-4.85" x2="6.9" y2="-4.85" width="0.127" layer="21"/>
+<wire x1="6.9" y1="-4.85" x2="6.9" y2="4.85" width="0.127" layer="21"/>
+<pad name="2" x="3.98" y="0" drill="1.65" rot="R180"/>
+<pad name="1" x="0.02" y="0" drill="1.65" shape="square" rot="R180"/>
+<text x="2" y="5.35" size="1" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="B2PS-CENTERED">
+<wire x1="-4" y1="0" x2="-4" y2="-4" width="0.2" layer="21"/>
+<wire x1="4" y1="-4" x2="4" y2="0" width="0.2" layer="21"/>
+<wire x1="-4" y1="-4" x2="-4" y2="-7.2" width="0.2" layer="21"/>
+<pad name="2" x="1.98" y="0" drill="1.65" rot="R180"/>
+<pad name="1" x="-1.98" y="0" drill="1.65" shape="square" rot="R180"/>
+<text x="0" y="1.85" size="1" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<wire x1="4" y1="-7.2" x2="4" y2="-4" width="0.2" layer="21"/>
+<wire x1="-4" y1="-4" x2="4" y2="-4" width="0.2" layer="21"/>
+<wire x1="-4" y1="-7.2" x2="4" y2="-7.2" width="0.2" layer="21"/>
+</package>
 <package name="HFW8R-1ST">
 <wire x1="5.3" y1="2.75" x2="5.3" y2="-2.75" width="0.2" layer="21"/>
 <wire x1="5.3" y1="-2.75" x2="-5.3" y2="-2.75" width="0.2" layer="21"/>
@@ -18438,15 +18458,6 @@ rfk_1850.pdf</description>
 <text x="-4" y="-1.5" size="1" layer="27" align="top-left">&gt;VALUE</text>
 <pad name="4" x="5.08" y="0" drill="1.02"/>
 </package>
-<package name="B2P_SMALL">
-<wire x1="6.9" y1="2.31" x2="-2.9" y2="2.31" width="0.127" layer="21"/>
-<wire x1="-2.9" y1="2.31" x2="-2.9" y2="-2.31" width="0.127" layer="21"/>
-<wire x1="-2.9" y1="-2.31" x2="6.9" y2="-2.31" width="0.127" layer="21"/>
-<wire x1="6.9" y1="-2.31" x2="6.9" y2="2.31" width="0.127" layer="21"/>
-<pad name="2" x="3.98" y="0" drill="1.65" rot="R180"/>
-<pad name="1" x="0.02" y="0" drill="1.65" shape="square" rot="R180"/>
-<text x="2" y="2.81" size="1" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
-</package>
 </packages>
 <symbols>
 <symbol name="2-PIN_CONN">
@@ -18549,6 +18560,68 @@ rfk_1850.pdf</description>
 <technology name="">
 <attribute name="DIGIKEY" value="H125155-ND" constant="no"/>
 <attribute name="MPN" value="DF22-2P-7.92DS(35)" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="B2P?-VH(LF)(SN)" prefix="J">
+<description>&lt;h1&gt;
+Power Connector
+&lt;/h1&gt;&lt;br/&gt;
+
+&lt;img src="http://media.digikey.com/photos/JST%20Photos/B2PS-VH_sml.jpg" width="130"&gt;
+
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;b&gt;Brand: &lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;
+&lt;a href="https://www.jst.com/"&gt;JST Sales America Inc.&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+&lt;td&gt;
+&lt;b&gt;Series:&lt;/b&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="http://www.digikey.com/product-search/en?FV=fff40016,fff802f3,ffec0e9d"&gt;VH&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;b&gt;Distributor:&lt;/b&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="http://www.digikey.com/product-detail/en/B2PS-VH%28LF%29%28SN%29/455-1648-ND/926555"&gt;Digi-Key&lt;/a&gt;
+&lt;/td&gt;
+
+&lt;/tr&gt;
+&lt;/table&gt;&lt;br/&gt;</description>
+<gates>
+<gate name="G$1" symbol="2-PIN_CONN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="B2P">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PINS" value="2"/>
+<attribute name="PIN_PITCH" value="3.96 mm"/>
+</technology>
+</technologies>
+</device>
+<device name="S" package="B2PS-CENTERED">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="455-1648-ND" constant="no"/>
+<attribute name="MPN" value="B2PS-VH(LF)(SN)" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -18699,56 +18772,6 @@ rfk_1850.pdf</description>
 </connects>
 <technologies>
 <technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="2-PIN-KICKER" prefix="J">
-<description>&lt;h1&gt;
-Power Connector
-&lt;/h1&gt;&lt;br/&gt;
-
-&lt;img src="http://media.digikey.com/photos/JST%20Photos/B2PS-VH_sml.jpg" width="130"&gt;
-
-&lt;table&gt;
-&lt;tr&gt;
-&lt;td&gt;
-&lt;b&gt;Brand: &lt;/b&gt;
-&lt;/td&gt;&lt;td&gt;
-&lt;a href="https://www.jst.com/"&gt;JST Sales America Inc.&lt;/a&gt;
-&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-&lt;td&gt;
-&lt;b&gt;Series:&lt;/b&gt;
-&lt;/td&gt;
-&lt;td&gt;
-&lt;a href="http://www.digikey.com/product-search/en?FV=fff40016,fff802f3,ffec0e9d"&gt;VH&lt;/a&gt;
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;
-&lt;b&gt;Distributor:&lt;/b&gt;
-&lt;/td&gt;
-&lt;td&gt;
-&lt;a href="http://www.digikey.com/product-detail/en/B2PS-VH%28LF%29%28SN%29/455-1648-ND/926555"&gt;Digi-Key&lt;/a&gt;
-&lt;/td&gt;
-
-&lt;/tr&gt;
-&lt;/table&gt;&lt;br/&gt;</description>
-<gates>
-<gate name="G$1" symbol="2-PIN_CONN" x="0" y="0"/>
-</gates>
-<devices>
-<device name="S" package="B2P_SMALL">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DIGIKEY" value="455-1648-ND" constant="no"/>
-<attribute name="MPN" value="B2PS-VH(LF)(SN)" constant="no"/>
-</technology>
 </technologies>
 </device>
 </devices>
@@ -29054,6 +29077,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <port name="!FAULT" side="right" coord="-2.54" direction="io"/>
 <port name="!OCTW" side="right" coord="-5.08" direction="io"/>
 <port name="+18.5V" side="top" coord="7.62" direction="io"/>
+<port name="+3V3" side="top" coord="-7.62" direction="io"/>
 <port name="GND" side="bottom" coord="0" direction="io"/>
 <port name="MISO" side="left" coord="-7.62" direction="io"/>
 <port name="MOSI" side="left" coord="-10.16" direction="io"/>
@@ -29066,6 +29090,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <port name="ENC-A" side="right" coord="5.08" direction="io"/>
 <port name="ENC-B" side="right" coord="2.54" direction="io"/>
 <port name="+5V" side="top" coord="0" direction="io"/>
+<port name="SENSEA" side="bottom" coord="-5.08" direction="io"/>
+<port name="SENSEB" side="bottom" coord="5.08" direction="io"/>
+<port name="SENSEC" side="right" coord="0" direction="io"/>
+<port name="+2.5V" side="right" coord="-7.62" direction="io"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -29778,6 +29806,7 @@ ripple current from motors</text>
 <port name="H1" side="right" coord="12.7" direction="io"/>
 <port name="H2" side="right" coord="10.16" direction="io"/>
 <port name="H3" side="right" coord="7.62" direction="io"/>
+<port name="+3V3" side="top" coord="7.62" direction="io"/>
 <port name="+5V" side="right" coord="2.54" direction="io"/>
 </ports>
 <variantdefs>
@@ -30513,6 +30542,7 @@ ripple current from motors</text>
 <attribute name="MPN" value="219-3MST"/>
 </part>
 <part name="GND58" library="supply1" deviceset="GND" device=""/>
+<part name="J5" library="RoboJackets-Connectors" deviceset="B2P?-VH(LF)(SN)" device="S"/>
 <part name="GND61" library="supply1" deviceset="GND" device=""/>
 <part name="FRAME2" library="RoboJackets-Frames" deviceset="FRAME_B_L" device="">
 <attribute name="REVISION" value="v3.0"/>
@@ -30699,8 +30729,12 @@ ripple current from motors</text>
 <part name="U5" library="SparkFun-IC-Logic" library_urn="urn:adsk.eagle:library:523" deviceset="74*1G125" device="D" package3d_urn="urn:adsk.eagle:package:38806/1" technology="AHC" value="SN74AHC1G125"/>
 <part name="GND51" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SUPPLY36" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
+<part name="SUPPLY72" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
+<part name="SUPPLY73" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
+<part name="SUPPLY74" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
+<part name="SUPPLY75" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
+<part name="SUPPLY76" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="SUPPLY77" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
-<part name="J1" library="RoboJackets-Connectors" deviceset="2-PIN-KICKER" device="S"/>
 </parts>
 <sheets>
 <sheet>
@@ -32994,6 +33028,20 @@ serial from MTrain</text>
 <wire x1="129.54" y1="134.62" x2="91.44" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="!CS!-ADC2" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="39_IO_L01P_2/CSO_B"/>
+<wire x1="271.78" y1="106.68" x2="276.86" y2="106.68" width="0.1524" layer="91"/>
+<label x="276.86" y="106.68" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="!CS!-ADC1" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="67_IO_L09P_2/VS2/A19"/>
+<label x="276.86" y="177.8" size="1.27" layer="95" xref="yes"/>
+<wire x1="271.78" y1="177.8" x2="276.86" y2="177.8" width="0.1524" layer="91"/>
+</segment>
+</net>
 <net name="MOSI-FPGA" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="63_IO_L08N_2/DIN/D0"/>
@@ -33500,6 +33548,10 @@ serial from MTrain</text>
 <instance part="GND58" gate="1" x="91.44" y="71.12" smashed="yes">
 <attribute name="VALUE" x="88.9" y="68.58" size="1.778" layer="96"/>
 </instance>
+<instance part="J5" gate="G$1" x="203.2" y="78.74" smashed="yes" rot="MR0">
+<attribute name="NAME" x="208.28" y="86.36" size="1.778" layer="95" font="vector" rot="MR0" align="top-left"/>
+<attribute name="VALUE" x="208.28" y="71.12" size="1.778" layer="96" font="vector" rot="MR0"/>
+</instance>
 <instance part="GND61" gate="1" x="195.58" y="68.58" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="198.12" y="66.04" size="1.778" layer="96" rot="MR0"/>
 </instance>
@@ -33600,10 +33652,6 @@ serial from MTrain</text>
 <instance part="SUPPLY36" gate="P" x="172.72" y="200.66" smashed="yes">
 <attribute name="VALUE" x="170.815" y="203.835" size="1.778" layer="96"/>
 </instance>
-<instance part="J1" gate="G$1" x="203.2" y="78.74" smashed="yes" rot="R180">
-<attribute name="NAME" x="208.28" y="71.12" size="1.778" layer="95" font="vector" rot="R180" align="top-left"/>
-<attribute name="VALUE" x="220.98" y="86.36" size="1.778" layer="96" font="vector" rot="R180"/>
-</instance>
 </instances>
 <busses>
 </busses>
@@ -33677,10 +33725,10 @@ serial from MTrain</text>
 <pinref part="GND58" gate="1" pin="GND"/>
 </segment>
 <segment>
+<pinref part="J5" gate="G$1" pin="2"/>
 <pinref part="GND61" gate="1" pin="GND"/>
 <wire x1="198.12" y1="76.2" x2="195.58" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="76.2" x2="195.58" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="GND62" gate="1" pin="GND"/>
@@ -33835,10 +33883,10 @@ serial from MTrain</text>
 </net>
 <net name="VBATT" class="0">
 <segment>
+<pinref part="J5" gate="G$1" pin="1"/>
 <wire x1="198.12" y1="81.28" x2="195.58" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="81.28" x2="195.58" y2="83.82" width="0.1524" layer="91"/>
 <label x="195.58" y="83.82" size="1.27" layer="95" font="vector" rot="R90" xref="yes"/>
-<pinref part="J1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="SCK-RADIO" class="0">
@@ -34712,10 +34760,8 @@ battery power</text>
 <attribute name="NAME" x="50.8" y="165.1" size="2.032" layer="95" align="bottom-center"/>
 <attribute name="NAME" x="50.8" y="165.1" size="2.032" layer="95" align="bottom-center"/>
 <attribute name="NAME" x="50.8" y="165.1" size="2.032" layer="95" align="bottom-center"/>
-<attribute name="NAME" x="50.8" y="165.1" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 <moduleinst name="M2" module="WHEEL_DRIVE" x="50.8" y="86.36">
-<attribute name="NAME" x="50.8" y="86.36" size="2.032" layer="95" align="bottom-center"/>
 <attribute name="NAME" x="50.8" y="86.36" size="2.032" layer="95" align="bottom-center"/>
 <attribute name="NAME" x="50.8" y="86.36" size="2.032" layer="95" align="bottom-center"/>
 <attribute name="NAME" x="50.8" y="86.36" size="2.032" layer="95" align="bottom-center"/>
@@ -34724,16 +34770,13 @@ battery power</text>
 <attribute name="NAME" x="228.6" y="86.36" size="2.032" layer="95" align="bottom-center"/>
 <attribute name="NAME" x="228.6" y="86.36" size="2.032" layer="95" align="bottom-center"/>
 <attribute name="NAME" x="228.6" y="86.36" size="2.032" layer="95" align="bottom-center"/>
-<attribute name="NAME" x="228.6" y="86.36" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 <moduleinst name="M4" module="WHEEL_DRIVE" x="228.6" y="165.1">
 <attribute name="NAME" x="228.6" y="165.1" size="2.032" layer="95" align="bottom-center"/>
 <attribute name="NAME" x="228.6" y="165.1" size="2.032" layer="95" align="bottom-center"/>
 <attribute name="NAME" x="228.6" y="165.1" size="2.032" layer="95" align="bottom-center"/>
-<attribute name="NAME" x="228.6" y="165.1" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 <moduleinst name="DD" module="DRIBBLER_DRIVE" x="144.78" y="165.1">
-<attribute name="NAME" x="144.78" y="165.1" size="2.032" layer="95" align="bottom-center"/>
 <attribute name="NAME" x="144.78" y="165.1" size="2.032" layer="95" align="bottom-center"/>
 <attribute name="NAME" x="144.78" y="165.1" size="2.032" layer="95" align="bottom-center"/>
 <attribute name="NAME" x="144.78" y="165.1" size="2.032" layer="95" align="bottom-center"/>
@@ -34828,6 +34871,21 @@ battery power</text>
 <instance part="SUPPLY63" gate="+5V" x="170.18" y="167.64" smashed="yes" rot="R270">
 <attribute name="VALUE" x="173.355" y="169.545" size="1.778" layer="96" rot="R270"/>
 </instance>
+<instance part="SUPPLY72" gate="P" x="43.18" y="111.76" smashed="yes">
+<attribute name="VALUE" x="41.275" y="114.935" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY73" gate="P" x="43.18" y="190.5" smashed="yes">
+<attribute name="VALUE" x="41.275" y="193.675" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY74" gate="P" x="157.48" y="190.5" smashed="yes">
+<attribute name="VALUE" x="155.575" y="193.675" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY75" gate="P" x="220.98" y="190.5" smashed="yes">
+<attribute name="VALUE" x="219.075" y="193.675" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY76" gate="P" x="220.98" y="111.76" smashed="yes">
+<attribute name="VALUE" x="219.075" y="114.935" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -34909,6 +34967,32 @@ battery power</text>
 <pinref part="D9" gate="G$1" pin="A"/>
 <pinref part="SUPPLY52" gate="P" pin="+3.3V"/>
 <wire x1="33.02" y1="187.96" x2="35.56" y2="187.96" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="M2" port="+3V3"/>
+<wire x1="43.18" y1="109.22" x2="43.18" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="SUPPLY72" gate="P" pin="+3.3V"/>
+</segment>
+<segment>
+<portref moduleinst="M1" port="+3V3"/>
+<wire x1="43.18" y1="187.96" x2="43.18" y2="185.42" width="0.1524" layer="91"/>
+<pinref part="SUPPLY73" gate="P" pin="+3.3V"/>
+</segment>
+<segment>
+<portref moduleinst="DD" port="+3V3"/>
+<wire x1="157.48" y1="187.96" x2="152.4" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="187.96" x2="152.4" y2="185.42" width="0.1524" layer="91"/>
+<pinref part="SUPPLY74" gate="P" pin="+3.3V"/>
+</segment>
+<segment>
+<portref moduleinst="M4" port="+3V3"/>
+<wire x1="220.98" y1="187.96" x2="220.98" y2="185.42" width="0.1524" layer="91"/>
+<pinref part="SUPPLY75" gate="P" pin="+3.3V"/>
+</segment>
+<segment>
+<portref moduleinst="M3" port="+3V3"/>
+<wire x1="220.98" y1="109.22" x2="220.98" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="SUPPLY76" gate="P" pin="+3.3V"/>
 </segment>
 </net>
 <net name="M1-!CS" class="0">
@@ -35458,6 +35542,112 @@ battery power</text>
 <portref moduleinst="M4" port="B-L"/>
 <wire x1="205.74" y1="170.18" x2="208.28" y2="170.18" width="0.1524" layer="91"/>
 <label x="205.74" y="170.18" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="M1-SENSE-A" class="0">
+<segment>
+<portref moduleinst="M1" port="SENSEA"/>
+<wire x1="45.72" y1="144.78" x2="45.72" y2="142.24" width="0.1524" layer="91"/>
+<label x="45.72" y="142.24" size="1.27" layer="95" rot="MR270" xref="yes"/>
+</segment>
+</net>
+<net name="M1-SENSE-B" class="0">
+<segment>
+<portref moduleinst="M1" port="SENSEB"/>
+<wire x1="55.88" y1="144.78" x2="55.88" y2="142.24" width="0.1524" layer="91"/>
+<label x="55.88" y="142.24" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+</net>
+<net name="M4-SENSE-A" class="0">
+<segment>
+<portref moduleinst="M4" port="SENSEA"/>
+<wire x1="223.52" y1="144.78" x2="223.52" y2="142.24" width="0.1524" layer="91"/>
+<label x="223.52" y="142.24" size="1.27" layer="95" rot="MR270" xref="yes"/>
+</segment>
+</net>
+<net name="M4-SENSE-B" class="0">
+<segment>
+<portref moduleinst="M4" port="SENSEB"/>
+<wire x1="233.68" y1="144.78" x2="233.68" y2="142.24" width="0.1524" layer="91"/>
+<label x="233.68" y="142.24" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+</net>
+<net name="M3-SENSE-A" class="0">
+<segment>
+<portref moduleinst="M3" port="SENSEA"/>
+<wire x1="223.52" y1="66.04" x2="223.52" y2="63.5" width="0.1524" layer="91"/>
+<label x="223.52" y="63.5" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+</net>
+<net name="M3-SENSE-B" class="0">
+<segment>
+<portref moduleinst="M3" port="SENSEB"/>
+<wire x1="233.68" y1="66.04" x2="233.68" y2="63.5" width="0.1524" layer="91"/>
+<label x="233.68" y="63.5" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+</net>
+<net name="M2-SENSE-A" class="0">
+<segment>
+<portref moduleinst="M2" port="SENSEA"/>
+<wire x1="45.72" y1="66.04" x2="45.72" y2="63.5" width="0.1524" layer="91"/>
+<label x="45.72" y="63.5" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+</net>
+<net name="M2-SENSE-B" class="0">
+<segment>
+<portref moduleinst="M2" port="SENSEB"/>
+<wire x1="55.88" y1="66.04" x2="55.88" y2="63.5" width="0.1524" layer="91"/>
+<label x="55.88" y="63.5" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+</net>
+<net name="M1-SENSE-C" class="0">
+<segment>
+<portref moduleinst="M1" port="SENSEC"/>
+<wire x1="71.12" y1="165.1" x2="73.66" y2="165.1" width="0.1524" layer="91"/>
+<label x="73.66" y="165.1" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="M2-SENSE-C" class="0">
+<segment>
+<portref moduleinst="M2" port="SENSEC"/>
+<wire x1="71.12" y1="86.36" x2="73.66" y2="86.36" width="0.1524" layer="91"/>
+<label x="73.66" y="86.36" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="M3-SENSE-C" class="0">
+<segment>
+<portref moduleinst="M3" port="SENSEC"/>
+<wire x1="248.92" y1="86.36" x2="251.46" y2="86.36" width="0.1524" layer="91"/>
+<label x="251.46" y="86.36" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="M4-SENSE-C" class="0">
+<segment>
+<portref moduleinst="M4" port="SENSEC"/>
+<wire x1="248.92" y1="165.1" x2="251.46" y2="165.1" width="0.1524" layer="91"/>
+<label x="251.46" y="165.1" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="+2.5V" class="0">
+<segment>
+<portref moduleinst="M1" port="+2.5V"/>
+<wire x1="71.12" y1="157.48" x2="73.66" y2="157.48" width="0.1524" layer="91"/>
+<label x="73.66" y="157.48" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<portref moduleinst="M4" port="+2.5V"/>
+<wire x1="248.92" y1="157.48" x2="251.46" y2="157.48" width="0.1524" layer="91"/>
+<label x="251.46" y="157.48" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<portref moduleinst="M3" port="+2.5V"/>
+<wire x1="248.92" y1="78.74" x2="251.46" y2="78.74" width="0.1524" layer="91"/>
+<label x="251.46" y="78.74" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<portref moduleinst="M2" port="+2.5V"/>
+<wire x1="71.12" y1="78.74" x2="73.66" y2="78.74" width="0.1524" layer="91"/>
+<label x="73.66" y="78.74" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
