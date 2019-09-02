@@ -33980,61 +33980,6 @@ In this library the device names are the same as the pin names of the symbols, t
 </deviceset>
 </devicesets>
 </library>
-<library name="frames" urn="urn:adsk.eagle:library:229">
-<description>&lt;b&gt;Frames for Sheet and Layout&lt;/b&gt;</description>
-<packages>
-</packages>
-<symbols>
-<symbol name="FRAME_A_L" urn="urn:adsk.eagle:symbol:13882/1" library_version="1">
-<frame x1="0" y1="0" x2="279.4" y2="215.9" columns="6" rows="5" layer="94" border-bottom="no"/>
-</symbol>
-<symbol name="DOCFIELD" urn="urn:adsk.eagle:symbol:13864/1" library_version="1">
-<wire x1="0" y1="0" x2="71.12" y2="0" width="0.1016" layer="94"/>
-<wire x1="101.6" y1="15.24" x2="87.63" y2="15.24" width="0.1016" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="5.08" width="0.1016" layer="94"/>
-<wire x1="0" y1="5.08" x2="71.12" y2="5.08" width="0.1016" layer="94"/>
-<wire x1="0" y1="5.08" x2="0" y2="15.24" width="0.1016" layer="94"/>
-<wire x1="101.6" y1="15.24" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
-<wire x1="71.12" y1="5.08" x2="71.12" y2="0" width="0.1016" layer="94"/>
-<wire x1="71.12" y1="5.08" x2="87.63" y2="5.08" width="0.1016" layer="94"/>
-<wire x1="71.12" y1="0" x2="101.6" y2="0" width="0.1016" layer="94"/>
-<wire x1="87.63" y1="15.24" x2="87.63" y2="5.08" width="0.1016" layer="94"/>
-<wire x1="87.63" y1="15.24" x2="0" y2="15.24" width="0.1016" layer="94"/>
-<wire x1="87.63" y1="5.08" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
-<wire x1="101.6" y1="5.08" x2="101.6" y2="0" width="0.1016" layer="94"/>
-<wire x1="0" y1="15.24" x2="0" y2="22.86" width="0.1016" layer="94"/>
-<wire x1="101.6" y1="35.56" x2="0" y2="35.56" width="0.1016" layer="94"/>
-<wire x1="101.6" y1="35.56" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
-<wire x1="0" y1="22.86" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
-<wire x1="0" y1="22.86" x2="0" y2="35.56" width="0.1016" layer="94"/>
-<wire x1="101.6" y1="22.86" x2="101.6" y2="15.24" width="0.1016" layer="94"/>
-<text x="1.27" y="1.27" size="2.54" layer="94">Date:</text>
-<text x="12.7" y="1.27" size="2.54" layer="94">&gt;LAST_DATE_TIME</text>
-<text x="72.39" y="1.27" size="2.54" layer="94">Sheet:</text>
-<text x="86.36" y="1.27" size="2.54" layer="94">&gt;SHEET</text>
-<text x="88.9" y="11.43" size="2.54" layer="94">REV:</text>
-<text x="1.27" y="19.05" size="2.54" layer="94">TITLE:</text>
-<text x="1.27" y="11.43" size="2.54" layer="94">Document Number:</text>
-<text x="17.78" y="19.05" size="2.54" layer="94">&gt;DRAWING_NAME</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="FRAME_A_L" urn="urn:adsk.eagle:component:13939/1" prefix="FRAME" uservalue="yes" library_version="1">
-<description>&lt;b&gt;FRAME&lt;/b&gt; A Size , 8 1/2 x 11 INCH, Landscape&lt;p&gt;</description>
-<gates>
-<gate name="G$1" symbol="FRAME_A_L" x="0" y="0" addlevel="always"/>
-<gate name="G$2" symbol="DOCFIELD" x="172.72" y="0" addlevel="always"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="RoboJackets-Inductors">
 <description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
 &lt;hr&gt;
@@ -34405,7 +34350,6 @@ In this library you will find inductors. If you are looking for a common package
 <part name="R18" library="rcl" deviceset="R-US_" device="R0805" value="931"/>
 <part name="D13" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-YELLOW" value="YELLOW"/>
 <part name="D14" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-BLUE" value="BLUE"/>
-<part name="FRAME3" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_A_L" device=""/>
 <part name="R19" library="rcl" deviceset="R-US_" device="R0603" value="100k"/>
 <part name="R20" library="rcl" deviceset="R-US_" device="R0603" value="100k"/>
 <part name="R21" library="rcl" deviceset="R-US_" device="R0603" value="160"/>
@@ -34434,7 +34378,6 @@ In this library you will find inductors. If you are looking for a common package
 <part name="SUPPLY29" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY23" library="RoboJackets-Supplies" deviceset="VBATT" device=""/>
 <part name="C24" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R)"/>
-<part name="FRAME4" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_A_L" device=""/>
 <part name="D1" library="RoboJackets-Diodes" deviceset="TVS" device="SOD123W" value="PTVS20VS1UR"/>
 <part name="T1" library="RoboJackets-Inductors" deviceset="DA203X-AL" device="DA2034"/>
 <part name="C22" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R)"/>
@@ -34466,6 +34409,8 @@ In this library you will find inductors. If you are looking for a common package
 <part name="C32" library="rcl" deviceset="C-US" device="C0603" value="0.1uF"/>
 <part name="SUPPLY66" library="supply2" deviceset="GND" device=""/>
 <part name="RV1" library="RoboJackets-Resistors" deviceset="PVG3*" device="" value="500"/>
+<part name="FRAME3" library="ro-frames" deviceset="RO_FRAME_A_L_20161226" device=""/>
+<part name="FRAME4" library="ro-frames" deviceset="RO_FRAME_A_L_20161226" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -35515,12 +35460,6 @@ between the ceramics and primary
 of the transformer.</text>
 </plain>
 <instances>
-<instance part="FRAME3" gate="G$1" x="0" y="0" smashed="yes"/>
-<instance part="FRAME3" gate="G$2" x="172.72" y="0" smashed="yes">
-<attribute name="LAST_DATE_TIME" x="185.42" y="1.27" size="2.54" layer="94"/>
-<attribute name="SHEET" x="259.08" y="1.27" size="2.54" layer="94"/>
-<attribute name="DRAWING_NAME" x="190.5" y="19.05" size="2.54" layer="94"/>
-</instance>
 <instance part="R19" gate="G$1" x="53.34" y="172.72" smashed="yes" rot="R90">
 <attribute name="NAME" x="51.8414" y="168.91" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="56.642" y="168.91" size="1.778" layer="96" rot="R90"/>
@@ -35604,6 +35543,20 @@ of the transformer.</text>
 <instance part="C27" gate="G$1" x="200.66" y="86.36" smashed="yes">
 <attribute name="NAME" x="201.676" y="86.995" size="1.778" layer="95"/>
 <attribute name="VALUE" x="201.676" y="82.169" size="1.778" layer="96"/>
+</instance>
+<instance part="FRAME3" gate="G$1" x="0" y="0" smashed="yes"/>
+<instance part="FRAME3" gate="G$2" x="124.46" y="0" smashed="yes">
+<attribute name="SHEET" x="266.7" y="2.54" size="1.778" layer="94" align="center-left"/>
+<attribute name="DWG_NO" x="236.22" y="8.636" size="3.302" layer="94" ratio="15"/>
+<attribute name="REV" x="271.78" y="7.62" size="3.302" layer="94" align="bottom-center"/>
+<attribute name="SCALE" x="233.68" y="2.54" size="1.778" layer="94" align="center-left"/>
+<attribute name="TITLE" x="228.6" y="20.32" size="3.302" layer="94" align="center-left"/>
+<attribute name="MATERIAL" x="149.86" y="15.24" size="1.778" layer="94" align="bottom-center"/>
+<attribute name="FINISH" x="149.86" y="7.62" size="1.778" layer="94" align="bottom-center"/>
+<attribute name="NDRAWN" x="198.12" y="27.94" size="1.27" layer="94" align="center"/>
+<attribute name="NCHECKED" x="198.12" y="22.86" size="1.27" layer="94" align="center"/>
+<attribute name="DCHECKED" x="213.36" y="22.86" size="1.27" layer="94" align="center"/>
+<attribute name="DDRAWN" x="213.36" y="27.94" size="1.27" layer="94" align="center"/>
 </instance>
 </instances>
 <busses>
@@ -35782,12 +35735,6 @@ affect switch time by 10s of uS and no
 PWM is applied.</text>
 </plain>
 <instances>
-<instance part="FRAME4" gate="G$1" x="0" y="0" smashed="yes"/>
-<instance part="FRAME4" gate="G$2" x="172.72" y="0" smashed="yes">
-<attribute name="LAST_DATE_TIME" x="185.42" y="1.27" size="2.54" layer="94"/>
-<attribute name="SHEET" x="259.08" y="1.27" size="2.54" layer="94"/>
-<attribute name="DRAWING_NAME" x="190.5" y="19.05" size="2.54" layer="94"/>
-</instance>
 <instance part="J3" gate="G$1" x="182.88" y="147.32" smashed="yes" rot="R180">
 <attribute name="NAME" x="187.96" y="153.162" size="1.778" layer="95" font="vector" rot="R180" align="top-left"/>
 <attribute name="VALUE" x="193.04" y="141.224" size="1.778" layer="96" font="vector" rot="R90"/>
@@ -35891,6 +35838,20 @@ PWM is applied.</text>
 <instance part="Q3" gate="G$1" x="144.78" y="165.1" smashed="yes">
 <attribute name="NAME" x="140.97" y="170.18" size="1.778" layer="95"/>
 <attribute name="VALUE" x="151.13" y="165.1" size="1.778" layer="96"/>
+</instance>
+<instance part="FRAME4" gate="G$1" x="0" y="0" smashed="yes"/>
+<instance part="FRAME4" gate="G$2" x="124.46" y="0" smashed="yes">
+<attribute name="SHEET" x="266.7" y="2.54" size="1.778" layer="94" align="center-left"/>
+<attribute name="DWG_NO" x="236.22" y="8.636" size="3.302" layer="94" ratio="15"/>
+<attribute name="REV" x="271.78" y="7.62" size="3.302" layer="94" align="bottom-center"/>
+<attribute name="SCALE" x="233.68" y="2.54" size="1.778" layer="94" align="center-left"/>
+<attribute name="TITLE" x="228.6" y="20.32" size="3.302" layer="94" align="center-left"/>
+<attribute name="MATERIAL" x="149.86" y="15.24" size="1.778" layer="94" align="bottom-center"/>
+<attribute name="FINISH" x="149.86" y="7.62" size="1.778" layer="94" align="bottom-center"/>
+<attribute name="NDRAWN" x="198.12" y="27.94" size="1.27" layer="94" align="center"/>
+<attribute name="NCHECKED" x="198.12" y="22.86" size="1.27" layer="94" align="center"/>
+<attribute name="DCHECKED" x="213.36" y="22.86" size="1.27" layer="94" align="center"/>
+<attribute name="DDRAWN" x="213.36" y="27.94" size="1.27" layer="94" align="center"/>
 </instance>
 </instances>
 <busses>
