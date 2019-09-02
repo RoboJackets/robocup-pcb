@@ -34118,12 +34118,12 @@ In this library you will find inductors. If you are looking for a common package
 </library>
 </libraries>
 <attributes>
-<attribute name="DCHECKED" value=""/>
+<attribute name="DCHECKED" value="08/28/19"/>
 <attribute name="DDRAWN" value="08/04/19"/>
-<attribute name="DWG_NO" value=""/>
+<attribute name="DWG_NO" value="1"/>
 <attribute name="FINISH" value="HASL"/>
 <attribute name="MATERIAL" value="FR-4"/>
-<attribute name="NCHECKED" value="Daniel Yang"/>
+<attribute name="NCHECKED" value="Ryo Osawa"/>
 <attribute name="NDRAWN" value="Will Stuckey"/>
 <attribute name="REV" value="3.2"/>
 <attribute name="SCALE" value="1:1"/>
@@ -34146,33 +34146,33 @@ In this library you will find inductors. If you are looking for a common package
 <part name="SUPPLY50" library="supply2" deviceset="V+" device=""/>
 <part name="SUPPLY48" library="supply2" deviceset="V+" device=""/>
 <part name="D15" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-GREEN" value="GREEN"/>
-<part name="R42" library="rcl" deviceset="R-US_" device="R0603" value="330"/>
+<part name="R43" library="rcl" deviceset="R-US_" device="R0603" value="330"/>
 <part name="SUPPLY86" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY14" library="supply2" deviceset="V+" device=""/>
 <part name="SUPPLY19" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY15" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY18" library="supply2" deviceset="V+" device=""/>
-<part name="C34" library="rcl" deviceset="C-US" device="C0603" value="0.1uF"/>
-<part name="R34" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
+<part name="C32" library="rcl" deviceset="C-US" device="C0603" value="0.1uF"/>
+<part name="R35" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="SUPPLY59" library="supply2" deviceset="+5V" device=""/>
 <part name="SUPPLY51" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY49" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY40" library="supply2" deviceset="GND" device=""/>
-<part name="R25" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="R26" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
+<part name="R27" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="SUPPLY42" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY43" library="supply2" deviceset="GND" device=""/>
-<part name="C28" library="rcl" deviceset="C-US" device="C0603" value="0.1uF 35V"/>
-<part name="C29" library="rcl" deviceset="C-US" device="C0805" value="22uF 35V"/>
-<part name="R38" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
+<part name="C26" library="rcl" deviceset="C-US" device="C0603" value="0.1uF 35V"/>
+<part name="C27" library="rcl" deviceset="C-US" device="C0805" value="22uF 35V"/>
 <part name="R39" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
+<part name="R40" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="SUPPLY63" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY64" library="supply2" deviceset="GND" device=""/>
-<part name="R31" library="rcl" deviceset="R-US_" device="R0805" value="ERJ-6GEYJ515V"/>
+<part name="R32" library="rcl" deviceset="R-US_" device="R0805" value="ERJ-6GEYJ515V"/>
 <part name="SUPPLY54" library="supply2" deviceset="V+" device=""/>
 <part name="SUPPLY55" library="supply2" deviceset="GND" device=""/>
-<part name="R29" library="rcl" deviceset="R-US_" device="R0603" value="270k"/>
-<part name="R30" library="rcl" deviceset="R-US_" device="R0603" value="100k"/>
+<part name="R30" library="rcl" deviceset="R-US_" device="R0603" value="270k"/>
+<part name="R31" library="rcl" deviceset="R-US_" device="R0603" value="100k"/>
 <part name="SUPPLY56" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY53" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY58" library="supply2" deviceset="GND" device=""/>
@@ -34182,57 +34182,57 @@ In this library you will find inductors. If you are looking for a common package
 <part name="U4" library="RoboJackets-PowerICs" deviceset="IX4427" device="N"/>
 <part name="J4" library="RoboJackets-Connectors" deviceset="HFW8" device="R-1ST"/>
 <part name="FRAME2" library="ro-frames" deviceset="RO_FRAME_A_L_20161226" device="">
-<attribute name="REV" value="3.1"/>
+<attribute name="REV" value="3.2"/>
 </part>
 <part name="FRAME7" library="ro-frames" deviceset="RO_FRAME_A_L_20161226" device="">
-<attribute name="REV" value="3.1"/>
+<attribute name="REV" value="3.2"/>
 </part>
 <part name="FRAME6" library="ro-frames" deviceset="RO_FRAME_A_L_20161226" device="">
-<attribute name="REV" value="3.1"/>
+<attribute name="REV" value="3.2"/>
 </part>
 <part name="FRAME5" library="ro-frames" deviceset="RO_FRAME_A_L_20161226" device="">
-<attribute name="REV" value="3.1"/>
+<attribute name="REV" value="3.2"/>
 </part>
 <part name="FRAME1" library="ro-frames" deviceset="RO_FRAME_A_L_20161226" device="">
-<attribute name="REV" value="3.1"/>
+<attribute name="REV" value="3.2"/>
 </part>
 <part name="SUPPLY7" library="supply2" deviceset="+5V" device=""/>
 <part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
 <part name="D7" library="RoboJackets-Diodes" deviceset="DIODE-" device="DO214AA" value="3SMBJ5929B-TP"/>
 <part name="Q5" library="RoboJackets-Discrete" deviceset="BSS127" device=""/>
 <part name="FRAME8" library="ro-frames" deviceset="RO_FRAME_A_L_20161226" device="">
-<attribute name="REV" value="3.1"/>
+<attribute name="REV" value="3.2"/>
 </part>
-<part name="R47" library="rcl" deviceset="R-US_" device="R0603" value="51"/>
-<part name="R48" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
+<part name="R48" library="rcl" deviceset="R-US_" device="R0603" value="51"/>
+<part name="R49" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="SUPPLY95" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY96" library="supply2" deviceset="+5V" device=""/>
 <part name="FRAME9" library="ro-frames" deviceset="RO_FRAME_A_L_20161226" device=""/>
-<part name="R50" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="R51" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
+<part name="R52" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="Q2" library="RoboJackets-Discrete" deviceset="IRFS4227" device=""/>
 <part name="S1" library="RoboJackets-Switches" deviceset="CSS-121XB" device=""/>
 <part name="SUPPLY100" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY101" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY103" library="supply2" deviceset="GND" device=""/>
-<part name="R49" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
+<part name="R50" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="SUPPLY102" library="supply2" deviceset="+5V" device=""/>
 <part name="SUPPLY104" library="supply2" deviceset="+5V" device=""/>
 <part name="SUPPLY106" library="supply2" deviceset="+5V" device=""/>
-<part name="R52" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
+<part name="R53" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="SUPPLY108" library="supply2" deviceset="+5V" device=""/>
-<part name="R32" library="rcl" deviceset="R-US_" device="R0805" value="ERJ-6GEYJ515V"/>
+<part name="R33" library="rcl" deviceset="R-US_" device="R0805" value="ERJ-6GEYJ515V"/>
 <part name="S2" library="RoboJackets-Switches" deviceset="HDP001?" device="R"/>
 <part name="S3" library="RoboJackets-Switches" deviceset="HDP001?" device="R"/>
 <part name="S4" library="RoboJackets-Switches" deviceset="HDP001?" device="R"/>
 <part name="SUPPLY107" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY105" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY109" library="supply2" deviceset="GND" device=""/>
-<part name="R37" library="rcl" deviceset="R-US_" device="R0603" value="RC0603FR-07205KL"/>
+<part name="R38" library="rcl" deviceset="R-US_" device="R0603" value="RC0603FR-07205KL"/>
 <part name="SUPPLY61" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY60" library="supply2" deviceset="V+" device=""/>
-<part name="R35" library="rcl" deviceset="R-US_" device="R0805" value="ERJ-6GEYJ515V"/>
 <part name="R36" library="rcl" deviceset="R-US_" device="R0805" value="ERJ-6GEYJ515V"/>
+<part name="R37" library="rcl" deviceset="R-US_" device="R0805" value="ERJ-6GEYJ515V"/>
 <part name="J7" library="RoboJackets-Connectors" deviceset="CONN-2" device="VERT" value="!BTN_KCK_PRE_EXT"/>
 <part name="J8" library="RoboJackets-Connectors" deviceset="CONN-2" device="VERT" value="!BTN_CHP_PRE_EXT"/>
 <part name="J9" library="RoboJackets-Connectors" deviceset="CONN-2" device="VERT" value="!BTN_CHG_PRE_EXT"/>
@@ -34265,8 +34265,8 @@ In this library you will find inductors. If you are looking for a common package
 <part name="SUPPLY62" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY65" library="supply2" deviceset="+5V" device=""/>
 <part name="SUPPLY79" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
-<part name="R40" library="rcl" deviceset="R-US_" device="R0603" value="1k"/>
-<part name="R41" library="rcl" deviceset="R-US_" device="R0603" value="330"/>
+<part name="R41" library="rcl" deviceset="R-US_" device="R0603" value="1k"/>
+<part name="R42" library="rcl" deviceset="R-US_" device="R0603" value="330"/>
 <part name="D8" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-GREEN" value="GREEN"/>
 <part name="D10" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-GREEN" value="GREEN"/>
 <part name="SUPPLY76" library="supply2" deviceset="GND" device=""/>
@@ -34274,13 +34274,13 @@ In this library you will find inductors. If you are looking for a common package
 <part name="SUPPLY90" library="supply2" deviceset="GND" device=""/>
 <part name="D19" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-RED" value="RED"/>
 <part name="Q9" library="RoboJackets-Discrete" deviceset="BSS127" device=""/>
-<part name="R44" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="330"/>
+<part name="R45" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="330"/>
 <part name="SUPPLY89" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="Q8" library="RoboJackets-Discrete" deviceset="BSS127" device=""/>
-<part name="R43" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k"/>
+<part name="R44" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k"/>
 <part name="D20" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-YELLOW" value="YELLOW"/>
 <part name="SUPPLY91" library="supply2" deviceset="V+" device=""/>
-<part name="R45" library="rcl" deviceset="R-US_" device="R0805" value="ERJ-P06J274V"/>
+<part name="R46" library="rcl" deviceset="R-US_" device="R0805" value="ERJ-P06J274V"/>
 <part name="D16" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-GREEN" value="GREEN"/>
 <part name="D18" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-RED" value="RED"/>
 <part name="SUPPLY88" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
@@ -34293,10 +34293,10 @@ In this library you will find inductors. If you are looking for a common package
 <part name="D2" library="RoboJackets-Diodes" deviceset="VS-5EWH06FN-M3" device="D-PAK_TO252AA" package3d_urn="urn:adsk.eagle:package:4100272/1" value="VS-5EWH06FN-M3"/>
 <part name="D5" library="RoboJackets-Diodes" deviceset="VS-5EWH06FN-M3" device="D-PAK_TO252AA" package3d_urn="urn:adsk.eagle:package:4100272/1" value="VS-5EWH06FN-M3"/>
 <part name="D6" library="RoboJackets-Diodes" deviceset="VS-5EWH06FN-M3" device="D-PAK_TO252AA" package3d_urn="urn:adsk.eagle:package:4100272/1" value="VS-5EWH06FN-M3"/>
-<part name="R27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="160"/>
 <part name="R28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="160"/>
-<part name="C30" library="rcl" deviceset="C-US" device="C0603" value="0.1uF 50V"/>
-<part name="C31" library="rcl" deviceset="C-US" device="C0603" value="0.1uF 50V"/>
+<part name="R29" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="160"/>
+<part name="C28" library="rcl" deviceset="C-US" device="C0603" value="0.1uF 50V"/>
+<part name="C29" library="rcl" deviceset="C-US" device="C0603" value="0.1uF 50V"/>
 <part name="SUPPLY44" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY45" library="supply2" deviceset="GND" device=""/>
 <part name="D4" library="RoboJackets-Diodes" deviceset="SMAJ20A" device="DO-214AC" package3d_urn="urn:adsk.eagle:package:4103916/1" value="SMAJ20A"/>
@@ -34307,11 +34307,11 @@ In this library you will find inductors. If you are looking for a common package
 <part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E10-25" package3d_urn="urn:adsk.eagle:package:23399/1" value="1000uF"/>
 <part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E10-25" package3d_urn="urn:adsk.eagle:package:23399/1" value="1000uF"/>
 <part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E10-25" package3d_urn="urn:adsk.eagle:package:23399/1" value="1000uF"/>
-<part name="R33" library="RoboJackets-Resistors" deviceset="PWR263S-35" device="TO-263AB" package3d_urn="urn:adsk.eagle:package:4103950/1" value="1.5k 35W"/>
+<part name="R34" library="RoboJackets-Resistors" deviceset="PWR263S-35" device="TO-263AB" package3d_urn="urn:adsk.eagle:package:4103950/1" value="1.5k 35W"/>
 <part name="J6" library="RoboJackets-Connectors" deviceset="3-PIN_2MM-*" device="H"/>
 <part name="J5" library="RoboJackets-Connectors" deviceset="2-PIN_2MM-*" device="H"/>
 <part name="SUPPLY92" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
-<part name="R46" library="rcl" deviceset="R-US_" device="R0603" value="60"/>
+<part name="R47" library="rcl" deviceset="R-US_" device="R0603" value="60"/>
 <part name="D21" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-BLUE" value="BLUE"/>
 <part name="R11" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="25.5k 1%"/>
 <part name="R13" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="11.5k 1%"/>
@@ -34327,7 +34327,7 @@ In this library you will find inductors. If you are looking for a common package
 <part name="SUPPLY5" library="RoboJackets-Supplies" deviceset="VBATT" device=""/>
 <part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
 <part name="D17" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-YELLOW" value="YELLOW"/>
-<part name="C35" library="rcl" deviceset="C-US" device="C0603" value="0.1uF"/>
+<part name="C33" library="rcl" deviceset="C-US" device="C0603" value="0.1uF"/>
 <part name="Q4" library="RoboJackets-Discrete" deviceset="IXGK400N30A3" device=""/>
 <part name="Q3" library="RoboJackets-Discrete" deviceset="IXGK400N30A3" device=""/>
 <part name="R15" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="22"/>
@@ -34346,47 +34346,47 @@ In this library you will find inductors. If you are looking for a common package
 <part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY28" library="supply2" deviceset="V+" device=""/>
-<part name="R17" library="rcl" deviceset="R-US_" device="R1206" value="187k"/>
-<part name="R18" library="rcl" deviceset="R-US_" device="R0805" value="931"/>
+<part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="113k 0.1%"/>
+<part name="R19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="3.0k 0.1%"/>
 <part name="D13" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-YELLOW" value="YELLOW"/>
 <part name="D14" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-BLUE" value="BLUE"/>
-<part name="R19" library="rcl" deviceset="R-US_" device="R0603" value="100k"/>
 <part name="R20" library="rcl" deviceset="R-US_" device="R0603" value="100k"/>
-<part name="R21" library="rcl" deviceset="R-US_" device="R0603" value="160"/>
+<part name="R21" library="rcl" deviceset="R-US_" device="R0603" value="100k"/>
 <part name="R22" library="rcl" deviceset="R-US_" device="R0603" value="160"/>
+<part name="R23" library="rcl" deviceset="R-US_" device="R0603" value="160"/>
 <part name="SUPPLY33" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
-<part name="C20" library="rcl" deviceset="C-US" device="C0603" value="1uF"/>
-<part name="C19" library="rcl" deviceset="C-US" device="C0603" value="1uF"/>
-<part name="R24" library="rcl" deviceset="R-US_" device="R0603" value="160"/>
-<part name="C25" library="rcl" deviceset="C-US" device="C0603" value="1uF"/>
+<part name="C18" library="rcl" deviceset="C-US" device="C0603" value="1uF"/>
+<part name="C17" library="rcl" deviceset="C-US" device="C0603" value="1uF"/>
+<part name="R25" library="rcl" deviceset="R-US_" device="R0603" value="160"/>
+<part name="C22" library="rcl" deviceset="C-US" device="C0603" value="1uF"/>
 <part name="SUPPLY39" library="supply2" deviceset="GND" device=""/>
-<part name="R23" library="rcl" deviceset="R-US_" device="R0603" value="100k"/>
+<part name="R24" library="rcl" deviceset="R-US_" device="R0603" value="100k"/>
 <part name="SUPPLY38" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY35" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY32" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="SUPPLY34" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY37" library="supply2" deviceset="GND" device=""/>
-<part name="C21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E7.5-18" package3d_urn="urn:adsk.eagle:package:23379/1" value="560uF"/>
+<part name="C19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E7.5-18" package3d_urn="urn:adsk.eagle:package:23379/1" value="560uF"/>
 <part name="SUPPLY36" library="RoboJackets-Supplies" deviceset="VBATT" device=""/>
 <part name="SUPPLY26" library="RoboJackets-Supplies" deviceset="VBATT" device=""/>
 <part name="SUPPLY27" library="supply2" deviceset="GND" device=""/>
-<part name="C23" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R)"/>
+<part name="C21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R)"/>
 <part name="C15" library="rcl" deviceset="C-US" device="C0603" value="0.1uF 35V"/>
 <part name="SUPPLY30" library="RoboJackets-Supplies" deviceset="VBATT" device=""/>
 <part name="SUPPLY31" library="supply2" deviceset="GND" device=""/>
 <part name="C9" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="220pF 100V"/>
 <part name="SUPPLY29" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY23" library="RoboJackets-Supplies" deviceset="VBATT" device=""/>
-<part name="C24" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R)"/>
+<part name="C23" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R)"/>
 <part name="D1" library="RoboJackets-Diodes" deviceset="TVS" device="SOD123W" value="PTVS20VS1UR"/>
 <part name="T1" library="RoboJackets-Inductors" deviceset="DA203X-AL" device="DA2034"/>
-<part name="C22" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R)"/>
-<part name="C26" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R)"/>
-<part name="C27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R)"/>
+<part name="C20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R)"/>
+<part name="C24" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R)"/>
+<part name="C25" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R)"/>
+<part name="C35" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
+<part name="C34" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="C37" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="C36" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
-<part name="C39" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
-<part name="C38" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="SUPPLY69" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY70" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY73" library="supply2" deviceset="+5V" device=""/>
@@ -34405,12 +34405,13 @@ In this library you will find inductors. If you are looking for a common package
 <part name="SUPPLY81" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="SUPPLY78" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="SUPPLY77" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
-<part name="C33" library="rcl" deviceset="C-US" device="C0603" value="0.1uF"/>
-<part name="C32" library="rcl" deviceset="C-US" device="C0603" value="0.1uF"/>
+<part name="C31" library="rcl" deviceset="C-US" device="C0603" value="0.1uF"/>
+<part name="C30" library="rcl" deviceset="C-US" device="C0603" value="0.1uF"/>
 <part name="SUPPLY66" library="supply2" deviceset="GND" device=""/>
 <part name="RV1" library="RoboJackets-Resistors" deviceset="PVG3*" device="" value="500"/>
 <part name="FRAME3" library="ro-frames" deviceset="RO_FRAME_A_L_20161226" device=""/>
 <part name="FRAME4" library="ro-frames" deviceset="RO_FRAME_A_L_20161226" device=""/>
+<part name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="505k 0.1%"/>
 </parts>
 <sheets>
 <sheet>
@@ -34465,6 +34466,7 @@ polarity protection".</text>
 the current limiter calibration shunts
 on Sheet 2 if you want to increase
 this.</text>
+<text x="101.6" y="165.1" size="1.27" layer="97">Double Zener/TVS protection internal to ATP302</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -34803,10 +34805,10 @@ this.</text>
 <text x="17.78" y="93.98" size="1.778" layer="97">Place and route 
 LT LO decoupling 
 near this resistor bank</text>
-<text x="208.28" y="157.48" size="1.778" layer="97">Desolder R17 and jump R18 to enter
+<text x="218.44" y="139.7" size="1.778" layer="97">Desolder FBH and jump FBL-&gt;GND to enter
 capacitor charging mode. This is
 recommended. </text>
-<text x="195.58" y="157.48" size="1.778" layer="97" rot="R90">(opt) 0ohm</text>
+<text x="195.58" y="144.78" size="1.778" layer="97" rot="R90">(opt) 0ohm</text>
 <text x="139.7" y="93.98" size="1.778" layer="97">Current Limit:
 I = 106mV / Rshunt
 
@@ -34851,10 +34853,17 @@ Fsw = 1 / (Ipk*Lpri*((1/Vtrans)+(N/Vout)))
 Fsw = 1 / (10*0.000010*((1/15.5)+(10/250)))
 Fsw = 1 / (10*0.000010*((1/21.5)+(10/250)))
 Fsw = 95.9kHz:115kHz</text>
+<text x="218.44" y="149.86" size="1.778" layer="97">FBH=((Vout-1.22)^2)/(Pd)
+FBH=((250-1.22)^2)/0.1)
+FBH=618.9kOhm
+
+FBL=(1.22/(Vout-1.22))*FBH
+FBL=(1.22/(250-1.22))*618900
+FBL=3.0kOhm</text>
 </plain>
 <instances>
-<instance part="SUPPLY25" gate="GND" x="187.96" y="149.86" smashed="yes">
-<attribute name="VALUE" x="186.055" y="146.685" size="1.778" layer="96"/>
+<instance part="SUPPLY25" gate="GND" x="187.96" y="137.16" smashed="yes">
+<attribute name="VALUE" x="186.055" y="133.985" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY24" gate="1" x="187.96" y="190.5" smashed="yes">
 <attribute name="VALUE" x="186.69" y="191.77" size="1.778" layer="96"/>
@@ -34942,7 +34951,7 @@ Fsw = 95.9kHz:115kHz</text>
 </instance>
 <instance part="D2" gate="VS-5EWH06FN-M3" x="180.34" y="175.26" smashed="yes">
 <attribute name="NAME" x="177.8" y="177.8" size="1.778" layer="95"/>
-<attribute name="VALUE" x="177.8" y="172.72" size="1.778" layer="96" align="top-left"/>
+<attribute name="VALUE" x="170.18" y="172.72" size="1.778" layer="96" align="top-left"/>
 </instance>
 <instance part="C5" gate="G$1" x="20.32" y="27.94" smashed="yes">
 <attribute name="NAME" x="21.336" y="28.575" size="1.778" layer="95"/>
@@ -34995,13 +35004,13 @@ Fsw = 95.9kHz:115kHz</text>
 <instance part="SUPPLY28" gate="1" x="200.66" y="190.5" smashed="yes">
 <attribute name="VALUE" x="199.39" y="191.77" size="1.778" layer="96"/>
 </instance>
-<instance part="R17" gate="G$1" x="200.66" y="177.8" smashed="yes" rot="R270">
-<attribute name="NAME" x="202.1586" y="181.61" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="197.358" y="181.61" size="1.778" layer="96" rot="R270"/>
+<instance part="R18" gate="G$1" x="200.66" y="165.1" smashed="yes" rot="R270">
+<attribute name="NAME" x="202.1586" y="168.91" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="197.358" y="168.91" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="R18" gate="G$1" x="200.66" y="162.56" smashed="yes" rot="R270">
-<attribute name="NAME" x="202.1586" y="166.37" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="197.358" y="166.37" size="1.778" layer="96" rot="R270"/>
+<instance part="R19" gate="G$1" x="200.66" y="149.86" smashed="yes" rot="R270">
+<attribute name="NAME" x="202.1586" y="153.67" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="197.358" y="153.67" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="SUPPLY26" gate="G$1" x="190.5" y="96.52" smashed="yes">
 <attribute name="VALUE" x="188.595" y="99.695" size="1.778" layer="96"/>
@@ -35023,14 +35032,18 @@ Fsw = 95.9kHz:115kHz</text>
 <attribute name="NAME" x="97.536" y="162.687" size="1.778" layer="95"/>
 <attribute name="VALUE" x="97.536" y="165.989" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY29" gate="GND" x="200.66" y="149.86" smashed="yes">
-<attribute name="VALUE" x="198.755" y="146.685" size="1.778" layer="96"/>
+<instance part="SUPPLY29" gate="GND" x="200.66" y="137.16" smashed="yes">
+<attribute name="VALUE" x="198.755" y="133.985" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY23" gate="G$1" x="149.86" y="137.16" smashed="yes">
 <attribute name="VALUE" x="147.955" y="140.335" size="1.778" layer="96"/>
 </instance>
 <instance part="T1" gate="A" x="157.48" y="170.18" smashed="yes" rot="MR180">
 <attribute name="NAME" x="160.02" y="160.02" size="1.778" layer="95" rot="MR180"/>
+</instance>
+<instance part="R17" gate="G$1" x="200.66" y="177.8" smashed="yes" rot="R270">
+<attribute name="NAME" x="202.1586" y="181.61" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="197.358" y="181.61" size="1.778" layer="96" rot="R270"/>
 </instance>
 </instances>
 <busses>
@@ -35117,17 +35130,17 @@ Fsw = 95.9kHz:115kHz</text>
 <junction x="208.28" y="111.76"/>
 </segment>
 <segment>
-<pinref part="R18" gate="G$1" pin="2"/>
-<wire x1="200.66" y1="157.48" x2="200.66" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="R19" gate="G$1" pin="2"/>
+<wire x1="200.66" y1="144.78" x2="200.66" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="SUPPLY29" gate="GND" pin="GND"/>
-<wire x1="200.66" y1="154.94" x2="200.66" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="154.94" x2="187.96" y2="154.94" width="0.1524" layer="91"/>
-<junction x="200.66" y="154.94"/>
+<wire x1="200.66" y1="142.24" x2="200.66" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="142.24" x2="187.96" y2="142.24" width="0.1524" layer="91"/>
+<junction x="200.66" y="142.24"/>
 <pinref part="SUPPLY25" gate="GND" pin="GND"/>
-<wire x1="187.96" y1="165.1" x2="187.96" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="154.94" x2="187.96" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="165.1" x2="187.96" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="142.24" x2="187.96" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="165.1" x2="187.96" y2="165.1" width="0.1524" layer="91"/>
-<junction x="187.96" y="154.94"/>
+<junction x="187.96" y="142.24"/>
 <pinref part="T1" gate="A" pin="12"/>
 </segment>
 </net>
@@ -35153,18 +35166,18 @@ Fsw = 95.9kHz:115kHz</text>
 <pinref part="C8" gate="G$1" pin="+"/>
 </segment>
 <segment>
-<pinref part="R17" gate="G$1" pin="1"/>
 <pinref part="SUPPLY28" gate="1" pin="V+"/>
 <wire x1="200.66" y1="187.96" x2="200.66" y2="185.42" width="0.1524" layer="91"/>
 <pinref part="SUPPLY24" gate="1" pin="V+"/>
-<wire x1="200.66" y1="185.42" x2="200.66" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="175.26" x2="187.96" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="185.42" x2="187.96" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="175.26" x2="187.96" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="D2" gate="VS-5EWH06FN-M3" pin="C"/>
 <wire x1="200.66" y1="185.42" x2="187.96" y2="185.42" width="0.1524" layer="91"/>
-<junction x="200.66" y="185.42"/>
 <junction x="187.96" y="185.42"/>
+<pinref part="R17" gate="G$1" pin="1"/>
+<wire x1="200.66" y1="182.88" x2="200.66" y2="185.42" width="0.1524" layer="91"/>
+<junction x="200.66" y="185.42"/>
 </segment>
 </net>
 <net name="CSP" class="0">
@@ -35408,13 +35421,20 @@ Fsw = 95.9kHz:115kHz</text>
 <label x="104.14" y="104.14" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="R17" gate="G$1" pin="2"/>
+<pinref part="R18" gate="G$1" pin="2"/>
+<pinref part="R19" gate="G$1" pin="1"/>
+<wire x1="200.66" y1="160.02" x2="200.66" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="157.48" x2="200.66" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="157.48" x2="203.2" y2="157.48" width="0.1524" layer="91"/>
+<junction x="200.66" y="157.48"/>
+<label x="203.2" y="157.48" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
 <pinref part="R18" gate="G$1" pin="1"/>
-<wire x1="200.66" y1="172.72" x2="200.66" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="170.18" x2="200.66" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="170.18" x2="203.2" y2="170.18" width="0.1524" layer="91"/>
-<junction x="200.66" y="170.18"/>
-<label x="203.2" y="170.18" size="1.27" layer="95" xref="yes"/>
+<pinref part="R17" gate="G$1" pin="2"/>
+<wire x1="200.66" y1="170.18" x2="200.66" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -35460,45 +35480,45 @@ between the ceramics and primary
 of the transformer.</text>
 </plain>
 <instances>
-<instance part="R19" gate="G$1" x="53.34" y="172.72" smashed="yes" rot="R90">
+<instance part="R20" gate="G$1" x="53.34" y="172.72" smashed="yes" rot="R90">
 <attribute name="NAME" x="51.8414" y="168.91" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="56.642" y="168.91" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R20" gate="G$1" x="53.34" y="88.9" smashed="yes" rot="R90">
+<instance part="R21" gate="G$1" x="53.34" y="88.9" smashed="yes" rot="R90">
 <attribute name="NAME" x="51.8414" y="85.09" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="56.642" y="85.09" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R21" gate="G$1" x="63.5" y="162.56" smashed="yes" rot="R180">
+<instance part="R22" gate="G$1" x="63.5" y="162.56" smashed="yes" rot="R180">
 <attribute name="NAME" x="67.31" y="161.0614" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="67.31" y="165.862" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R22" gate="G$1" x="63.5" y="78.74" smashed="yes" rot="R180">
+<instance part="R23" gate="G$1" x="63.5" y="78.74" smashed="yes" rot="R180">
 <attribute name="NAME" x="67.31" y="77.2414" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="67.31" y="82.042" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="SUPPLY33" gate="+5V" x="53.34" y="101.6" smashed="yes">
 <attribute name="VALUE" x="51.435" y="104.775" size="1.778" layer="96"/>
 </instance>
-<instance part="C20" gate="G$1" x="73.66" y="71.12" smashed="yes">
+<instance part="C18" gate="G$1" x="73.66" y="71.12" smashed="yes">
 <attribute name="NAME" x="74.676" y="71.755" size="1.778" layer="95"/>
 <attribute name="VALUE" x="74.676" y="66.929" size="1.778" layer="96"/>
 </instance>
-<instance part="C19" gate="G$1" x="73.66" y="154.94" smashed="yes">
+<instance part="C17" gate="G$1" x="73.66" y="154.94" smashed="yes">
 <attribute name="NAME" x="74.676" y="155.575" size="1.778" layer="95"/>
 <attribute name="VALUE" x="74.676" y="150.749" size="1.778" layer="96"/>
 </instance>
-<instance part="R24" gate="G$1" x="177.8" y="180.34" smashed="yes" rot="R180">
+<instance part="R25" gate="G$1" x="177.8" y="180.34" smashed="yes" rot="R180">
 <attribute name="NAME" x="181.61" y="178.8414" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="181.61" y="183.642" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C25" gate="G$1" x="167.64" y="172.72" smashed="yes">
+<instance part="C22" gate="G$1" x="167.64" y="172.72" smashed="yes">
 <attribute name="NAME" x="168.656" y="173.355" size="1.778" layer="95"/>
 <attribute name="VALUE" x="168.656" y="168.529" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY39" gate="GND" x="167.64" y="157.48" smashed="yes">
 <attribute name="VALUE" x="165.735" y="154.305" size="1.778" layer="96"/>
 </instance>
-<instance part="R23" gate="G$1" x="154.94" y="170.18" smashed="yes" rot="R90">
+<instance part="R24" gate="G$1" x="154.94" y="170.18" smashed="yes" rot="R90">
 <attribute name="NAME" x="153.4414" y="166.37" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="158.242" y="166.37" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -35517,30 +35537,30 @@ of the transformer.</text>
 <instance part="SUPPLY37" gate="GND" x="124.46" y="68.58" smashed="yes">
 <attribute name="VALUE" x="122.555" y="65.405" size="1.778" layer="96"/>
 </instance>
-<instance part="C21" gate="G$1" x="124.46" y="86.36" smashed="yes">
+<instance part="C19" gate="G$1" x="124.46" y="86.36" smashed="yes">
 <attribute name="NAME" x="125.476" y="86.995" size="1.778" layer="95"/>
 <attribute name="VALUE" x="125.476" y="82.169" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY36" gate="G$1" x="124.46" y="101.6" smashed="yes">
 <attribute name="VALUE" x="122.555" y="104.775" size="1.778" layer="96"/>
 </instance>
-<instance part="C23" gate="G$1" x="154.94" y="86.36" smashed="yes">
+<instance part="C21" gate="G$1" x="154.94" y="86.36" smashed="yes">
 <attribute name="NAME" x="155.956" y="86.995" size="1.778" layer="95"/>
 <attribute name="VALUE" x="155.956" y="82.169" size="1.778" layer="96"/>
 </instance>
-<instance part="C24" gate="G$1" x="170.18" y="86.36" smashed="yes">
+<instance part="C23" gate="G$1" x="170.18" y="86.36" smashed="yes">
 <attribute name="NAME" x="171.196" y="86.995" size="1.778" layer="95"/>
 <attribute name="VALUE" x="171.196" y="82.169" size="1.778" layer="96"/>
 </instance>
-<instance part="C22" gate="G$1" x="139.7" y="86.36" smashed="yes">
+<instance part="C20" gate="G$1" x="139.7" y="86.36" smashed="yes">
 <attribute name="NAME" x="140.716" y="86.995" size="1.778" layer="95"/>
 <attribute name="VALUE" x="140.716" y="82.169" size="1.778" layer="96"/>
 </instance>
-<instance part="C26" gate="G$1" x="185.42" y="86.36" smashed="yes">
+<instance part="C24" gate="G$1" x="185.42" y="86.36" smashed="yes">
 <attribute name="NAME" x="186.436" y="86.995" size="1.778" layer="95"/>
 <attribute name="VALUE" x="186.436" y="82.169" size="1.778" layer="96"/>
 </instance>
-<instance part="C27" gate="G$1" x="200.66" y="86.36" smashed="yes">
+<instance part="C25" gate="G$1" x="200.66" y="86.36" smashed="yes">
 <attribute name="NAME" x="201.676" y="86.995" size="1.778" layer="95"/>
 <attribute name="VALUE" x="201.676" y="82.169" size="1.778" layer="96"/>
 </instance>
@@ -35564,44 +35584,44 @@ of the transformer.</text>
 <nets>
 <net name="CHARGE_RAW" class="0">
 <segment>
-<pinref part="R24" gate="G$1" pin="2"/>
+<pinref part="R25" gate="G$1" pin="2"/>
 <wire x1="172.72" y1="180.34" x2="167.64" y2="180.34" width="0.1524" layer="91"/>
 <label x="139.7" y="180.34" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="R23" gate="G$1" pin="2"/>
+<pinref part="R24" gate="G$1" pin="2"/>
 <wire x1="167.64" y1="180.34" x2="154.94" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="180.34" x2="139.7" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="175.26" x2="154.94" y2="180.34" width="0.1524" layer="91"/>
 <junction x="154.94" y="180.34"/>
-<pinref part="C25" gate="G$1" pin="1"/>
+<pinref part="C22" gate="G$1" pin="1"/>
 <wire x1="167.64" y1="175.26" x2="167.64" y2="180.34" width="0.1524" layer="91"/>
 <junction x="167.64" y="180.34"/>
 </segment>
 </net>
 <net name="CHARGE" class="0">
 <segment>
-<pinref part="R24" gate="G$1" pin="1"/>
+<pinref part="R25" gate="G$1" pin="1"/>
 <label x="185.42" y="180.34" size="1.27" layer="95" rot="MR180" xref="yes"/>
 <wire x1="182.88" y1="180.34" x2="185.42" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="C25" gate="G$1" pin="2"/>
+<pinref part="C22" gate="G$1" pin="2"/>
 <wire x1="167.64" y1="167.64" x2="167.64" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="SUPPLY39" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R23" gate="G$1" pin="1"/>
+<pinref part="R24" gate="G$1" pin="1"/>
 <wire x1="154.94" y1="165.1" x2="154.94" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="SUPPLY38" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C20" gate="G$1" pin="2"/>
+<pinref part="C18" gate="G$1" pin="2"/>
 <wire x1="73.66" y1="66.04" x2="73.66" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="SUPPLY35" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C19" gate="G$1" pin="2"/>
+<pinref part="C17" gate="G$1" pin="2"/>
 <wire x1="73.66" y1="149.86" x2="73.66" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="SUPPLY34" gate="GND" pin="GND"/>
 </segment>
@@ -35610,24 +35630,24 @@ of the transformer.</text>
 <wire x1="139.7" y1="76.2" x2="124.46" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="SUPPLY37" gate="GND" pin="GND"/>
 <wire x1="124.46" y1="76.2" x2="124.46" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="C21" gate="G$1" pin="-"/>
+<pinref part="C19" gate="G$1" pin="-"/>
 <wire x1="124.46" y1="76.2" x2="124.46" y2="81.28" width="0.1524" layer="91"/>
 <junction x="124.46" y="76.2"/>
-<pinref part="C24" gate="G$1" pin="2"/>
+<pinref part="C23" gate="G$1" pin="2"/>
 <wire x1="170.18" y1="81.28" x2="170.18" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="76.2" x2="154.94" y2="76.2" width="0.1524" layer="91"/>
 <junction x="139.7" y="76.2"/>
-<pinref part="C23" gate="G$1" pin="2"/>
+<pinref part="C21" gate="G$1" pin="2"/>
 <wire x1="154.94" y1="76.2" x2="139.7" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="81.28" x2="154.94" y2="76.2" width="0.1524" layer="91"/>
 <junction x="154.94" y="76.2"/>
-<pinref part="C22" gate="G$1" pin="2"/>
-<pinref part="C27" gate="G$1" pin="2"/>
+<pinref part="C20" gate="G$1" pin="2"/>
+<pinref part="C25" gate="G$1" pin="2"/>
 <wire x1="170.18" y1="76.2" x2="185.42" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="76.2" x2="200.66" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="76.2" x2="200.66" y2="81.28" width="0.1524" layer="91"/>
 <junction x="170.18" y="76.2"/>
-<pinref part="C26" gate="G$1" pin="2"/>
+<pinref part="C24" gate="G$1" pin="2"/>
 <wire x1="185.42" y1="76.2" x2="185.42" y2="81.28" width="0.1524" layer="91"/>
 <junction x="185.42" y="76.2"/>
 </segment>
@@ -35635,19 +35655,19 @@ of the transformer.</text>
 <net name="!FAULT!_RAW" class="0">
 <segment>
 <wire x1="40.64" y1="78.74" x2="53.34" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="R22" gate="G$1" pin="2"/>
+<pinref part="R23" gate="G$1" pin="2"/>
 <label x="40.64" y="78.74" size="1.27" layer="97" rot="R180" xref="yes"/>
 <wire x1="53.34" y1="78.74" x2="58.42" y2="78.74" width="0.1524" layer="91"/>
 <junction x="53.34" y="78.74"/>
-<pinref part="R20" gate="G$1" pin="1"/>
+<pinref part="R21" gate="G$1" pin="1"/>
 <wire x1="53.34" y1="78.74" x2="53.34" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="!FAULT!" class="0">
 <segment>
-<pinref part="R22" gate="G$1" pin="1"/>
+<pinref part="R23" gate="G$1" pin="1"/>
 <wire x1="68.58" y1="78.74" x2="73.66" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="C20" gate="G$1" pin="1"/>
+<pinref part="C18" gate="G$1" pin="1"/>
 <wire x1="73.66" y1="78.74" x2="73.66" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="78.74" x2="78.74" y2="78.74" width="0.1524" layer="91"/>
 <junction x="73.66" y="78.74"/>
@@ -35656,21 +35676,21 @@ of the transformer.</text>
 </net>
 <net name="+5V" class="0">
 <segment>
-<pinref part="R20" gate="G$1" pin="2"/>
+<pinref part="R21" gate="G$1" pin="2"/>
 <pinref part="SUPPLY33" gate="+5V" pin="+5V"/>
 <wire x1="53.34" y1="93.98" x2="53.34" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R19" gate="G$1" pin="2"/>
+<pinref part="R20" gate="G$1" pin="2"/>
 <wire x1="53.34" y1="177.8" x2="53.34" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="SUPPLY32" gate="+5V" pin="+5V"/>
 </segment>
 </net>
 <net name="!DONE!" class="0">
 <segment>
-<pinref part="R21" gate="G$1" pin="1"/>
+<pinref part="R22" gate="G$1" pin="1"/>
 <wire x1="68.58" y1="162.56" x2="73.66" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="C19" gate="G$1" pin="1"/>
+<pinref part="C17" gate="G$1" pin="1"/>
 <wire x1="73.66" y1="162.56" x2="73.66" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="162.56" x2="78.74" y2="162.56" width="0.1524" layer="91"/>
 <junction x="73.66" y="162.56"/>
@@ -35679,9 +35699,9 @@ of the transformer.</text>
 </net>
 <net name="!DONE!_RAW" class="0">
 <segment>
-<pinref part="R19" gate="G$1" pin="1"/>
+<pinref part="R20" gate="G$1" pin="1"/>
 <wire x1="53.34" y1="167.64" x2="53.34" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="R21" gate="G$1" pin="2"/>
+<pinref part="R22" gate="G$1" pin="2"/>
 <wire x1="53.34" y1="162.56" x2="58.42" y2="162.56" width="0.1524" layer="91"/>
 <junction x="53.34" y="162.56"/>
 <wire x1="53.34" y1="162.56" x2="40.64" y2="162.56" width="0.1524" layer="91"/>
@@ -35691,7 +35711,7 @@ of the transformer.</text>
 <net name="VBATT" class="0">
 <segment>
 <pinref part="SUPPLY36" gate="G$1" pin="VBATT"/>
-<pinref part="C21" gate="G$1" pin="+"/>
+<pinref part="C19" gate="G$1" pin="+"/>
 <wire x1="124.46" y1="99.06" x2="124.46" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="93.98" x2="124.46" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="93.98" x2="139.7" y2="93.98" width="0.1524" layer="91"/>
@@ -35699,19 +35719,19 @@ of the transformer.</text>
 <wire x1="139.7" y1="93.98" x2="139.7" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="93.98" x2="154.94" y2="93.98" width="0.1524" layer="91"/>
 <junction x="139.7" y="93.98"/>
-<pinref part="C24" gate="G$1" pin="1"/>
+<pinref part="C23" gate="G$1" pin="1"/>
 <wire x1="154.94" y1="93.98" x2="170.18" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="93.98" x2="170.18" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="C23" gate="G$1" pin="1"/>
+<pinref part="C21" gate="G$1" pin="1"/>
 <wire x1="154.94" y1="88.9" x2="154.94" y2="93.98" width="0.1524" layer="91"/>
 <junction x="154.94" y="93.98"/>
-<pinref part="C22" gate="G$1" pin="1"/>
-<pinref part="C27" gate="G$1" pin="1"/>
+<pinref part="C20" gate="G$1" pin="1"/>
+<pinref part="C25" gate="G$1" pin="1"/>
 <wire x1="170.18" y1="93.98" x2="185.42" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="93.98" x2="200.66" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="93.98" x2="200.66" y2="88.9" width="0.1524" layer="91"/>
 <junction x="170.18" y="93.98"/>
-<pinref part="C26" gate="G$1" pin="1"/>
+<pinref part="C24" gate="G$1" pin="1"/>
 <wire x1="185.42" y1="88.9" x2="185.42" y2="93.98" width="0.1524" layer="91"/>
 <junction x="185.42" y="93.98"/>
 </segment>
@@ -35721,9 +35741,9 @@ of the transformer.</text>
 <sheet>
 <description>HV - Kick Discharge</description>
 <plain>
-<wire x1="12.7" y1="203.2" x2="12.7" y2="106.68" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="12.7" y1="106.68" x2="205.74" y2="106.68" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="205.74" y1="106.68" x2="205.74" y2="203.2" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="12.7" y1="203.2" x2="12.7" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="12.7" y1="45.72" x2="205.74" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="205.74" y1="45.72" x2="205.74" y2="203.2" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="205.74" y1="203.2" x2="12.7" y2="203.2" width="0.1524" layer="97" style="shortdash"/>
 <text x="17.78" y="198.12" size="1.27" layer="97">Discharge Action</text>
 <text x="17.78" y="111.76" size="1.778" layer="97">Clamp the IGBT gates @ 20V with
@@ -35733,6 +35753,27 @@ is 20V, with a transient rating of 30V.
 Snub ringing &gt;10kHz, this should only
 affect switch time by 10s of uS and no
 PWM is applied.</text>
+<text x="17.78" y="50.8" size="1.778" layer="97">This is a fairly dense bit, so an explanation is here. 
+
+The IZ4427N is a FET gate drive. It turns a weakly driven lower voltage from the MCU
+into a strong high voltage signal that can quickly open a FET or IGBT. Next in line is a
+pull-down that prevents the gate from floating if the IC is powering up of the input
+is floating. The small valued resistor and following capacitor act as a snubber, preventing
+high-frequency ringing on the gate. The FET/IGBT gate has Vgs rating of 20V, so with a
+15V source we're already close. Next, the ultra-fast response TVS diode ensures &gt;20V
+transience can't damage the FET gate. Note that it's extremely important to have a 
+gate drive voltage sufficiently lower than Vgs that the diode protects against and to have
+it sufficiently high to open the FET quickly (this is for performance and power dissipation
+reasons). Failure to have a sufficient gap mean the driving line can pick up EMI from the
+solenoid sufficient to reverse bias the TVS, which will close the gate. The EMI will stop,
+the driver will open the FET again and the cycle will repeat. This will produce extremely
+high power EMI at a high frequency which is directly or remotely destrictive to nearby ICs
+and digital signals. Lastly, a fast response and fast reverse recovery diode is in the role
+of a flywheel diode. This allows energy built up in the solenoid to be dissipated as heat
+though the resistive solenoid itself, rather than be reflected back into the HV line when
+the discharge FET/IGBT is closed.
+
+This structure is repeated twice. Once for kicking and once for chipping.</text>
 </plain>
 <instances>
 <instance part="J3" gate="G$1" x="182.88" y="147.32" smashed="yes" rot="R180">
@@ -35758,11 +35799,11 @@ PWM is applied.</text>
 <instance part="SUPPLY40" gate="GND" x="38.1" y="190.5" smashed="yes" rot="R180">
 <attribute name="VALUE" x="40.005" y="193.675" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R25" gate="G$1" x="96.52" y="157.48" smashed="yes" rot="R90">
+<instance part="R26" gate="G$1" x="96.52" y="157.48" smashed="yes" rot="R90">
 <attribute name="NAME" x="95.0214" y="153.67" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="99.822" y="153.67" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R26" gate="G$1" x="96.52" y="127" smashed="yes" rot="R90">
+<instance part="R27" gate="G$1" x="96.52" y="127" smashed="yes" rot="R90">
 <attribute name="NAME" x="95.0214" y="123.19" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="99.822" y="123.19" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -35772,11 +35813,11 @@ PWM is applied.</text>
 <instance part="SUPPLY43" gate="GND" x="96.52" y="116.84" smashed="yes">
 <attribute name="VALUE" x="94.615" y="113.665" size="1.778" layer="96"/>
 </instance>
-<instance part="C28" gate="G$1" x="48.26" y="182.88" smashed="yes" rot="R90">
+<instance part="C26" gate="G$1" x="48.26" y="182.88" smashed="yes" rot="R90">
 <attribute name="NAME" x="47.625" y="183.896" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="52.451" y="183.896" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C29" gate="G$1" x="60.96" y="167.64" smashed="yes" rot="R90">
+<instance part="C27" gate="G$1" x="60.96" y="167.64" smashed="yes" rot="R90">
 <attribute name="NAME" x="60.325" y="168.656" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="65.151" y="168.656" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -35792,19 +35833,19 @@ PWM is applied.</text>
 <attribute name="NAME" x="160.02" y="147.32" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="139.7" y="147.32" size="1.778" layer="96" align="top-left"/>
 </instance>
-<instance part="R27" gate="G$1" x="104.14" y="165.1" smashed="yes">
+<instance part="R28" gate="G$1" x="104.14" y="165.1" smashed="yes">
 <attribute name="NAME" x="100.33" y="166.5986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="100.33" y="161.798" size="1.778" layer="96"/>
 </instance>
-<instance part="R28" gate="G$1" x="104.14" y="134.62" smashed="yes">
+<instance part="R29" gate="G$1" x="104.14" y="134.62" smashed="yes">
 <attribute name="NAME" x="100.33" y="136.1186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="100.33" y="131.318" size="1.778" layer="96"/>
 </instance>
-<instance part="C30" gate="G$1" x="111.76" y="157.48" smashed="yes">
+<instance part="C28" gate="G$1" x="111.76" y="157.48" smashed="yes">
 <attribute name="NAME" x="112.776" y="158.115" size="1.778" layer="95"/>
 <attribute name="VALUE" x="112.776" y="153.289" size="1.778" layer="96"/>
 </instance>
-<instance part="C31" gate="G$1" x="111.76" y="127" smashed="yes">
+<instance part="C29" gate="G$1" x="111.76" y="127" smashed="yes">
 <attribute name="NAME" x="112.776" y="127.635" size="1.778" layer="95"/>
 <attribute name="VALUE" x="112.776" y="122.809" size="1.778" layer="96"/>
 </instance>
@@ -35905,12 +35946,12 @@ PWM is applied.</text>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="R25" gate="G$1" pin="1"/>
+<pinref part="R26" gate="G$1" pin="1"/>
 <pinref part="SUPPLY42" gate="GND" pin="GND"/>
 <wire x1="96.52" y1="152.4" x2="96.52" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R26" gate="G$1" pin="1"/>
+<pinref part="R27" gate="G$1" pin="1"/>
 <pinref part="SUPPLY43" gate="GND" pin="GND"/>
 <wire x1="96.52" y1="121.92" x2="96.52" y2="119.38" width="0.1524" layer="91"/>
 </segment>
@@ -35918,23 +35959,23 @@ PWM is applied.</text>
 <pinref part="U4" gate="G$1" pin="GND"/>
 <wire x1="40.64" y1="154.94" x2="38.1" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="154.94" x2="38.1" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="C28" gate="G$1" pin="1"/>
+<pinref part="C26" gate="G$1" pin="1"/>
 <wire x1="38.1" y1="167.64" x2="38.1" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="182.88" x2="38.1" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="182.88" x2="45.72" y2="182.88" width="0.1524" layer="91"/>
 <junction x="38.1" y="182.88"/>
-<pinref part="C29" gate="G$1" pin="1"/>
+<pinref part="C27" gate="G$1" pin="1"/>
 <wire x1="58.42" y1="167.64" x2="38.1" y2="167.64" width="0.1524" layer="91"/>
 <junction x="38.1" y="167.64"/>
 <pinref part="SUPPLY40" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C30" gate="G$1" pin="2"/>
+<pinref part="C28" gate="G$1" pin="2"/>
 <wire x1="111.76" y1="152.4" x2="111.76" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="SUPPLY44" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C31" gate="G$1" pin="2"/>
+<pinref part="C29" gate="G$1" pin="2"/>
 <wire x1="111.76" y1="121.92" x2="111.76" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="SUPPLY45" gate="GND" pin="GND"/>
 </segment>
@@ -35962,7 +36003,7 @@ PWM is applied.</text>
 <net name="CHIP_GATE" class="0">
 <segment>
 <label x="86.36" y="165.1" size="1.27" layer="95"/>
-<pinref part="R25" gate="G$1" pin="2"/>
+<pinref part="R26" gate="G$1" pin="2"/>
 <wire x1="96.52" y1="162.56" x2="96.52" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="165.1" x2="99.06" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="OUT_A"/>
@@ -35970,7 +36011,7 @@ PWM is applied.</text>
 <wire x1="83.82" y1="157.48" x2="83.82" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="165.1" x2="96.52" y2="165.1" width="0.1524" layer="91"/>
 <junction x="96.52" y="165.1"/>
-<pinref part="R27" gate="G$1" pin="1"/>
+<pinref part="R28" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="KICK_GATE" class="0">
@@ -35979,12 +36020,12 @@ PWM is applied.</text>
 <wire x1="83.82" y1="152.4" x2="83.82" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="134.62" x2="96.52" y2="134.62" width="0.1524" layer="91"/>
 <label x="86.36" y="134.62" size="1.27" layer="95"/>
-<pinref part="R26" gate="G$1" pin="2"/>
+<pinref part="R27" gate="G$1" pin="2"/>
 <wire x1="96.52" y1="132.08" x2="96.52" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="134.62" x2="99.06" y2="134.62" width="0.1524" layer="91"/>
 <junction x="96.52" y="134.62"/>
 <pinref part="U4" gate="G$1" pin="OUT_B"/>
-<pinref part="R28" gate="G$1" pin="1"/>
+<pinref part="R29" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="CHIP" class="0">
@@ -36004,8 +36045,8 @@ PWM is applied.</text>
 <net name="CHIP_GATE_S" class="0">
 <segment>
 <wire x1="109.22" y1="165.1" x2="111.76" y2="165.1" width="0.1524" layer="91"/>
-<pinref part="R27" gate="G$1" pin="2"/>
-<pinref part="C30" gate="G$1" pin="1"/>
+<pinref part="R28" gate="G$1" pin="2"/>
+<pinref part="C28" gate="G$1" pin="1"/>
 <wire x1="111.76" y1="165.1" x2="129.54" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="160.02" x2="111.76" y2="165.1" width="0.1524" layer="91"/>
 <junction x="111.76" y="165.1"/>
@@ -36020,8 +36061,8 @@ PWM is applied.</text>
 <net name="KICK_GATE_S" class="0">
 <segment>
 <wire x1="109.22" y1="134.62" x2="111.76" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="R28" gate="G$1" pin="2"/>
-<pinref part="C31" gate="G$1" pin="1"/>
+<pinref part="R29" gate="G$1" pin="2"/>
+<pinref part="C29" gate="G$1" pin="1"/>
 <wire x1="111.76" y1="134.62" x2="129.54" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="129.54" x2="111.76" y2="134.62" width="0.1524" layer="91"/>
 <junction x="111.76" y="134.62"/>
@@ -36038,12 +36079,12 @@ PWM is applied.</text>
 <pinref part="U4" gate="G$1" pin="VDD"/>
 <wire x1="73.66" y1="154.94" x2="71.12" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="154.94" x2="73.66" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="C29" gate="G$1" pin="2"/>
+<pinref part="C27" gate="G$1" pin="2"/>
 <wire x1="73.66" y1="167.64" x2="73.66" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="182.88" x2="73.66" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="167.64" x2="73.66" y2="167.64" width="0.1524" layer="91"/>
 <junction x="73.66" y="167.64"/>
-<pinref part="C28" gate="G$1" pin="2"/>
+<pinref part="C26" gate="G$1" pin="2"/>
 <wire x1="53.34" y1="182.88" x2="73.66" y2="182.88" width="0.1524" layer="91"/>
 <junction x="73.66" y="182.88"/>
 <pinref part="SUPPLY41" gate="G$1" pin="+15.0V"/>
@@ -36061,7 +36102,7 @@ PWM is applied.</text>
 <text x="22.86" y="193.04" size="1.27" layer="97">Auto Discharge</text>
 </plain>
 <instances>
-<instance part="R31" gate="G$1" x="63.5" y="165.1" smashed="yes" rot="R90">
+<instance part="R32" gate="G$1" x="63.5" y="165.1" smashed="yes" rot="R90">
 <attribute name="NAME" x="62.0014" y="161.29" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="64.77" y="161.798" size="1.778" layer="96"/>
 </instance>
@@ -36071,11 +36112,11 @@ PWM is applied.</text>
 <instance part="SUPPLY55" gate="GND" x="63.5" y="114.3" smashed="yes">
 <attribute name="VALUE" x="61.595" y="111.125" size="1.778" layer="96"/>
 </instance>
-<instance part="R29" gate="G$1" x="38.1" y="142.24" smashed="yes" rot="R90">
+<instance part="R30" gate="G$1" x="38.1" y="142.24" smashed="yes" rot="R90">
 <attribute name="NAME" x="36.6014" y="138.43" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="41.402" y="138.43" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R30" gate="G$1" x="38.1" y="127" smashed="yes" rot="R90">
+<instance part="R31" gate="G$1" x="38.1" y="127" smashed="yes" rot="R90">
 <attribute name="NAME" x="36.6014" y="123.19" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="41.402" y="123.19" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -36117,14 +36158,14 @@ PWM is applied.</text>
 <attribute name="VALUE" x="66.04" y="137.16" size="1.778" layer="96"/>
 <attribute name="NAME" x="66.04" y="139.7" size="1.778" layer="95"/>
 </instance>
-<instance part="R32" gate="G$1" x="63.5" y="152.4" smashed="yes" rot="R90">
+<instance part="R33" gate="G$1" x="63.5" y="152.4" smashed="yes" rot="R90">
 <attribute name="NAME" x="62.0014" y="148.59" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="64.77" y="149.098" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY52" gate="G$1" x="38.1" y="152.4" smashed="yes">
 <attribute name="VALUE" x="36.195" y="155.575" size="1.778" layer="96"/>
 </instance>
-<instance part="R33" gate="PWR263S-35-3301J" x="109.22" y="172.72" smashed="yes" rot="R270">
+<instance part="R34" gate="PWR263S-35-3301J" x="109.22" y="172.72" smashed="yes" rot="R270">
 <attribute name="NAME" x="110.7186" y="176.53" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="105.918" y="176.53" size="1.778" layer="96" rot="R270"/>
 </instance>
@@ -36144,7 +36185,7 @@ PWM is applied.</text>
 <pinref part="Q5" gate="G$1" pin="S"/>
 </segment>
 <segment>
-<pinref part="R30" gate="G$1" pin="1"/>
+<pinref part="R31" gate="G$1" pin="1"/>
 <pinref part="SUPPLY53" gate="GND" pin="GND"/>
 <wire x1="38.1" y1="121.92" x2="38.1" y2="116.84" width="0.1524" layer="91"/>
 </segment>
@@ -36162,7 +36203,7 @@ PWM is applied.</text>
 <junction x="83.82" y="144.78"/>
 <pinref part="D7" gate="G$1" pin="C"/>
 <pinref part="Q5" gate="G$1" pin="D"/>
-<pinref part="R32" gate="G$1" pin="1"/>
+<pinref part="R33" gate="G$1" pin="1"/>
 <wire x1="63.5" y1="147.32" x2="63.5" y2="144.78" width="0.1524" layer="91"/>
 <junction x="63.5" y="144.78"/>
 <pinref part="Q6" gate="G$1" pin="G"/>
@@ -36172,8 +36213,8 @@ PWM is applied.</text>
 </net>
 <net name="QD_GATE_CTRL" class="0">
 <segment>
-<pinref part="R29" gate="G$1" pin="1"/>
-<pinref part="R30" gate="G$1" pin="2"/>
+<pinref part="R30" gate="G$1" pin="1"/>
+<pinref part="R31" gate="G$1" pin="2"/>
 <wire x1="38.1" y1="137.16" x2="38.1" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="134.62" x2="38.1" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="134.62" x2="38.1" y2="134.62" width="0.1524" layer="91"/>
@@ -36185,12 +36226,12 @@ PWM is applied.</text>
 <net name="V+" class="0">
 <segment>
 <pinref part="SUPPLY54" gate="1" pin="V+"/>
-<pinref part="R31" gate="G$1" pin="2"/>
+<pinref part="R32" gate="G$1" pin="2"/>
 <wire x1="63.5" y1="177.8" x2="63.5" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY57" gate="1" pin="V+"/>
-<pinref part="R33" gate="PWR263S-35-3301J" pin="PIN1"/>
+<pinref part="R34" gate="PWR263S-35-3301J" pin="PIN1"/>
 <wire x1="109.22" y1="185.42" x2="109.22" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -36201,20 +36242,20 @@ PWM is applied.</text>
 <wire x1="109.22" y1="157.48" x2="114.3" y2="157.48" width="0.1524" layer="91"/>
 <label x="114.3" y="157.48" size="1.27" layer="95" xref="yes"/>
 <junction x="109.22" y="157.48"/>
-<pinref part="R33" gate="PWR263S-35-3301J" pin="PIN2"/>
+<pinref part="R34" gate="PWR263S-35-3301J" pin="PIN2"/>
 <wire x1="109.22" y1="167.64" x2="109.22" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="QD_PU_BR" class="0">
 <segment>
-<pinref part="R31" gate="G$1" pin="1"/>
-<pinref part="R32" gate="G$1" pin="2"/>
+<pinref part="R32" gate="G$1" pin="1"/>
+<pinref part="R33" gate="G$1" pin="2"/>
 <wire x1="63.5" y1="160.02" x2="63.5" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VBATT" class="0">
 <segment>
-<pinref part="R29" gate="G$1" pin="2"/>
+<pinref part="R30" gate="G$1" pin="2"/>
 <wire x1="38.1" y1="149.86" x2="38.1" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="SUPPLY52" gate="G$1" pin="VBATT"/>
 </segment>
@@ -36249,22 +36290,22 @@ PWM is applied.</text>
 <text x="92.71" y="159.258" size="1.778" layer="97">Avoid JTAG pins</text>
 </plain>
 <instances>
-<instance part="C34" gate="G$1" x="132.08" y="109.22" smashed="yes" rot="R180">
+<instance part="C32" gate="G$1" x="132.08" y="109.22" smashed="yes" rot="R180">
 <attribute name="NAME" x="131.064" y="108.585" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="131.064" y="113.411" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R34" gate="G$1" x="45.72" y="111.76" smashed="yes" rot="R180">
+<instance part="R35" gate="G$1" x="45.72" y="111.76" smashed="yes" rot="R180">
 <attribute name="NAME" x="49.53" y="110.2614" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="49.53" y="115.062" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="SUPPLY59" gate="+5V" x="33.02" y="106.68" smashed="yes" rot="R180">
 <attribute name="VALUE" x="34.925" y="103.505" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R38" gate="G$1" x="127" y="190.5" smashed="yes" rot="R90">
+<instance part="R39" gate="G$1" x="127" y="190.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="125.5014" y="186.69" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="130.302" y="186.69" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R39" gate="G$1" x="134.62" y="190.5" smashed="yes" rot="R90">
+<instance part="R40" gate="G$1" x="134.62" y="190.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="133.1214" y="186.69" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="137.922" y="186.69" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -36292,7 +36333,7 @@ PWM is applied.</text>
 <attribute name="DCHECKED" x="213.36" y="22.86" size="1.27" layer="94" align="center"/>
 <attribute name="DDRAWN" x="213.36" y="27.94" size="1.27" layer="94" align="center"/>
 </instance>
-<instance part="R37" gate="G$1" x="76.2" y="30.48" smashed="yes" rot="R90">
+<instance part="R38" gate="G$1" x="76.2" y="30.48" smashed="yes" rot="R90">
 <attribute name="NAME" x="74.7014" y="26.67" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="77.47" y="27.178" size="1.778" layer="96"/>
 </instance>
@@ -36302,11 +36343,11 @@ PWM is applied.</text>
 <instance part="SUPPLY60" gate="1" x="76.2" y="68.58" smashed="yes">
 <attribute name="VALUE" x="74.93" y="69.85" size="1.778" layer="96"/>
 </instance>
-<instance part="R35" gate="G$1" x="76.2" y="58.42" smashed="yes" rot="R90">
+<instance part="R36" gate="G$1" x="76.2" y="58.42" smashed="yes" rot="R90">
 <attribute name="NAME" x="74.7014" y="54.61" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="77.47" y="55.118" size="1.778" layer="96"/>
 </instance>
-<instance part="R36" gate="G$1" x="76.2" y="45.72" smashed="yes" rot="R90">
+<instance part="R37" gate="G$1" x="76.2" y="45.72" smashed="yes" rot="R90">
 <attribute name="NAME" x="74.7014" y="41.91" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="77.47" y="42.418" size="1.778" layer="96"/>
 </instance>
@@ -36317,23 +36358,23 @@ PWM is applied.</text>
 <instance part="SUPPLY65" gate="+5V" x="144.78" y="121.92" smashed="yes">
 <attribute name="VALUE" x="142.875" y="125.095" size="1.778" layer="96"/>
 </instance>
-<instance part="C35" gate="G$1" x="144.78" y="109.22" smashed="yes" rot="R180">
+<instance part="C33" gate="G$1" x="144.78" y="109.22" smashed="yes" rot="R180">
 <attribute name="NAME" x="143.764" y="108.585" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="143.764" y="113.411" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C37" gate="G$1" x="208.28" y="93.98" smashed="yes" rot="R180">
+<instance part="C35" gate="G$1" x="208.28" y="93.98" smashed="yes" rot="R180">
 <attribute name="NAME" x="207.264" y="93.345" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="207.264" y="98.171" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C36" gate="G$1" x="193.04" y="93.98" smashed="yes" rot="R180">
+<instance part="C34" gate="G$1" x="193.04" y="93.98" smashed="yes" rot="R180">
 <attribute name="NAME" x="192.024" y="93.345" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="192.024" y="98.171" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C39" gate="G$1" x="248.92" y="93.98" smashed="yes" rot="R180">
+<instance part="C37" gate="G$1" x="248.92" y="93.98" smashed="yes" rot="R180">
 <attribute name="NAME" x="247.904" y="93.345" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="247.904" y="98.171" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C38" gate="G$1" x="233.68" y="93.98" smashed="yes" rot="R180">
+<instance part="C36" gate="G$1" x="233.68" y="93.98" smashed="yes" rot="R180">
 <attribute name="NAME" x="232.664" y="93.345" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="232.664" y="98.171" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -36369,11 +36410,11 @@ PWM is applied.</text>
 <instance part="SUPPLY71" gate="+5V" x="259.08" y="106.68" smashed="yes">
 <attribute name="VALUE" x="257.175" y="109.855" size="1.778" layer="96"/>
 </instance>
-<instance part="C33" gate="G$1" x="119.38" y="109.22" smashed="yes" rot="R180">
+<instance part="C31" gate="G$1" x="119.38" y="109.22" smashed="yes" rot="R180">
 <attribute name="NAME" x="118.364" y="108.585" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="118.364" y="113.411" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C32" gate="G$1" x="106.68" y="109.22" smashed="yes" rot="R180">
+<instance part="C30" gate="G$1" x="106.68" y="109.22" smashed="yes" rot="R180">
 <attribute name="NAME" x="105.664" y="108.585" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="105.664" y="113.411" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -36386,17 +36427,17 @@ PWM is applied.</text>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="R38" gate="G$1" pin="1"/>
+<pinref part="R39" gate="G$1" pin="1"/>
 <pinref part="SUPPLY63" gate="GND" pin="GND"/>
 <wire x1="127" y1="182.88" x2="127" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R39" gate="G$1" pin="1"/>
+<pinref part="R40" gate="G$1" pin="1"/>
 <pinref part="SUPPLY64" gate="GND" pin="GND"/>
 <wire x1="134.62" y1="185.42" x2="134.62" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R37" gate="G$1" pin="1"/>
+<pinref part="R38" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="25.4" x2="76.2" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="SUPPLY61" gate="GND" pin="GND"/>
 </segment>
@@ -36423,10 +36464,10 @@ PWM is applied.</text>
 <pinref part="U6" gate="G$1" pin="V_IA"/>
 </segment>
 <segment>
-<pinref part="C38" gate="G$1" pin="1"/>
+<pinref part="C36" gate="G$1" pin="1"/>
 <wire x1="233.68" y1="91.44" x2="233.68" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="88.9" x2="248.92" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="C39" gate="G$1" pin="1"/>
+<pinref part="C37" gate="G$1" pin="1"/>
 <wire x1="248.92" y1="88.9" x2="259.08" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="91.44" x2="248.92" y2="88.9" width="0.1524" layer="91"/>
 <junction x="248.92" y="88.9"/>
@@ -36452,17 +36493,17 @@ PWM is applied.</text>
 <junction x="96.52" y="127"/>
 </segment>
 <segment>
-<pinref part="C32" gate="G$1" pin="1"/>
+<pinref part="C30" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="106.68" x2="106.68" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="104.14" x2="119.38" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="C35" gate="G$1" pin="1"/>
+<pinref part="C33" gate="G$1" pin="1"/>
 <wire x1="119.38" y1="104.14" x2="132.08" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="104.14" x2="144.78" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="106.68" x2="144.78" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="C34" gate="G$1" pin="1"/>
+<pinref part="C32" gate="G$1" pin="1"/>
 <wire x1="132.08" y1="106.68" x2="132.08" y2="104.14" width="0.1524" layer="91"/>
 <junction x="132.08" y="104.14"/>
-<pinref part="C33" gate="G$1" pin="1"/>
+<pinref part="C31" gate="G$1" pin="1"/>
 <wire x1="119.38" y1="106.68" x2="119.38" y2="104.14" width="0.1524" layer="91"/>
 <junction x="119.38" y="104.14"/>
 <wire x1="144.78" y1="104.14" x2="144.78" y2="101.6" width="0.1524" layer="91"/>
@@ -36499,7 +36540,7 @@ PWM is applied.</text>
 <wire x1="35.56" y1="127" x2="33.02" y2="127" width="0.1524" layer="91"/>
 <junction x="33.02" y="127"/>
 <pinref part="SUPPLY59" gate="+5V" pin="+5V"/>
-<pinref part="R34" gate="G$1" pin="2"/>
+<pinref part="R35" gate="G$1" pin="2"/>
 <wire x1="40.64" y1="111.76" x2="33.02" y2="111.76" width="0.1524" layer="91"/>
 <junction x="33.02" y="111.76"/>
 </segment>
@@ -36526,10 +36567,10 @@ PWM is applied.</text>
 <pinref part="U7" gate="G$1" pin="VDD2B"/>
 </segment>
 <segment>
-<pinref part="C38" gate="G$1" pin="2"/>
+<pinref part="C36" gate="G$1" pin="2"/>
 <wire x1="233.68" y1="99.06" x2="233.68" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="101.6" x2="248.92" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="C39" gate="G$1" pin="2"/>
+<pinref part="C37" gate="G$1" pin="2"/>
 <wire x1="248.92" y1="101.6" x2="259.08" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="99.06" x2="248.92" y2="101.6" width="0.1524" layer="91"/>
 <junction x="248.92" y="101.6"/>
@@ -36537,20 +36578,20 @@ PWM is applied.</text>
 <wire x1="259.08" y1="101.6" x2="259.08" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C32" gate="G$1" pin="2"/>
+<pinref part="C30" gate="G$1" pin="2"/>
 <wire x1="106.68" y1="114.3" x2="106.68" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="116.84" x2="119.38" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="SUPPLY65" gate="+5V" pin="+5V"/>
 <wire x1="119.38" y1="116.84" x2="132.08" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="116.84" x2="144.78" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="116.84" x2="144.78" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="C35" gate="G$1" pin="2"/>
+<pinref part="C33" gate="G$1" pin="2"/>
 <wire x1="144.78" y1="116.84" x2="144.78" y2="114.3" width="0.1524" layer="91"/>
 <junction x="144.78" y="116.84"/>
-<pinref part="C34" gate="G$1" pin="2"/>
+<pinref part="C32" gate="G$1" pin="2"/>
 <wire x1="132.08" y1="114.3" x2="132.08" y2="116.84" width="0.1524" layer="91"/>
 <junction x="132.08" y="116.84"/>
-<pinref part="C33" gate="G$1" pin="2"/>
+<pinref part="C31" gate="G$1" pin="2"/>
 <wire x1="119.38" y1="114.3" x2="119.38" y2="116.84" width="0.1524" layer="91"/>
 <junction x="119.38" y="116.84"/>
 </segment>
@@ -36593,7 +36634,7 @@ PWM is applied.</text>
 </net>
 <net name="!RESET" class="0">
 <segment>
-<pinref part="R34" gate="G$1" pin="1"/>
+<pinref part="R35" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="111.76" x2="58.42" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="U5" gate="AT32A" pin="!RESET!"/>
 <wire x1="58.42" y1="111.76" x2="58.42" y2="114.3" width="0.1524" layer="91"/>
@@ -36610,7 +36651,7 @@ PWM is applied.</text>
 <net name="CHIP" class="0">
 <segment>
 <label x="139.7" y="200.66" size="1.27" layer="95" xref="yes"/>
-<pinref part="R39" gate="G$1" pin="2"/>
+<pinref part="R40" gate="G$1" pin="2"/>
 <wire x1="134.62" y1="200.66" x2="139.7" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="195.58" x2="134.62" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="200.66" x2="121.92" y2="200.66" width="0.1524" layer="91"/>
@@ -36626,7 +36667,7 @@ PWM is applied.</text>
 <net name="KICK" class="0">
 <segment>
 <label x="139.7" y="198.12" size="1.27" layer="95" xref="yes"/>
-<pinref part="R38" gate="G$1" pin="2"/>
+<pinref part="R39" gate="G$1" pin="2"/>
 <wire x1="127" y1="198.12" x2="139.7" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="127" y1="195.58" x2="127" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="127" y1="198.12" x2="121.92" y2="198.12" width="0.1524" layer="91"/>
@@ -36674,10 +36715,10 @@ PWM is applied.</text>
 </net>
 <net name="VMON" class="0">
 <segment>
-<pinref part="R37" gate="G$1" pin="2"/>
+<pinref part="R38" gate="G$1" pin="2"/>
 <wire x1="76.2" y1="40.64" x2="76.2" y2="38.1" width="0.1524" layer="91"/>
 <label x="81.28" y="38.1" size="1.27" layer="95" xref="yes"/>
-<pinref part="R36" gate="G$1" pin="1"/>
+<pinref part="R37" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="38.1" x2="76.2" y2="35.56" width="0.1524" layer="91"/>
 <junction x="76.2" y="38.1"/>
 <wire x1="76.2" y1="38.1" x2="81.28" y2="38.1" width="0.1524" layer="91"/>
@@ -36690,8 +36731,8 @@ PWM is applied.</text>
 </net>
 <net name="HV_SENSE_DIV_BR" class="0">
 <segment>
-<pinref part="R35" gate="G$1" pin="1"/>
-<pinref part="R36" gate="G$1" pin="2"/>
+<pinref part="R36" gate="G$1" pin="1"/>
+<pinref part="R37" gate="G$1" pin="2"/>
 <wire x1="76.2" y1="53.34" x2="76.2" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -36753,7 +36794,7 @@ PWM is applied.</text>
 </net>
 <net name="V+" class="0">
 <segment>
-<pinref part="R35" gate="G$1" pin="2"/>
+<pinref part="R36" gate="G$1" pin="2"/>
 <pinref part="SUPPLY60" gate="1" pin="V+"/>
 <wire x1="76.2" y1="63.5" x2="76.2" y2="66.04" width="0.1524" layer="91"/>
 </segment>
@@ -36785,10 +36826,10 @@ PWM is applied.</text>
 <pinref part="U7" gate="G$1" pin="VDD1B"/>
 </segment>
 <segment>
-<pinref part="C37" gate="G$1" pin="2"/>
+<pinref part="C35" gate="G$1" pin="2"/>
 <wire x1="208.28" y1="99.06" x2="208.28" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="101.6" x2="193.04" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="C36" gate="G$1" pin="2"/>
+<pinref part="C34" gate="G$1" pin="2"/>
 <wire x1="193.04" y1="101.6" x2="185.42" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="99.06" x2="193.04" y2="101.6" width="0.1524" layer="91"/>
 <junction x="193.04" y="101.6"/>
@@ -36812,10 +36853,10 @@ PWM is applied.</text>
 <pinref part="U7" gate="G$1" pin="GND1"/>
 </segment>
 <segment>
-<pinref part="C37" gate="G$1" pin="1"/>
+<pinref part="C35" gate="G$1" pin="1"/>
 <wire x1="208.28" y1="91.44" x2="208.28" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="88.9" x2="193.04" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="C36" gate="G$1" pin="1"/>
+<pinref part="C34" gate="G$1" pin="1"/>
 <wire x1="193.04" y1="88.9" x2="185.42" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="91.44" x2="193.04" y2="88.9" width="0.1524" layer="91"/>
 <junction x="193.04" y="88.9"/>
@@ -36968,7 +37009,7 @@ PWM is applied.</text>
 <attribute name="NAME" x="96.52" y="170.18" size="1.778" layer="95"/>
 <attribute name="VALUE" x="96.52" y="167.64" size="1.778" layer="96"/>
 </instance>
-<instance part="R42" gate="G$1" x="93.98" y="180.34" smashed="yes" rot="R90">
+<instance part="R43" gate="G$1" x="93.98" y="180.34" smashed="yes" rot="R90">
 <attribute name="NAME" x="92.4814" y="176.53" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="97.282" y="176.53" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -36992,11 +37033,11 @@ PWM is applied.</text>
 <instance part="SUPPLY79" gate="+5V" x="43.18" y="187.96" smashed="yes">
 <attribute name="VALUE" x="41.275" y="191.135" size="1.778" layer="96"/>
 </instance>
-<instance part="R40" gate="G$1" x="20.32" y="175.26" smashed="yes" rot="R90">
+<instance part="R41" gate="G$1" x="20.32" y="175.26" smashed="yes" rot="R90">
 <attribute name="NAME" x="18.8214" y="171.45" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="23.622" y="171.45" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R41" gate="G$1" x="43.18" y="175.26" smashed="yes" rot="R90">
+<instance part="R42" gate="G$1" x="43.18" y="175.26" smashed="yes" rot="R90">
 <attribute name="NAME" x="41.6814" y="171.45" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="46.482" y="171.45" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -37025,7 +37066,7 @@ PWM is applied.</text>
 <attribute name="VALUE" x="137.16" y="157.48" size="1.778" layer="96"/>
 <attribute name="NAME" x="137.16" y="160.02" size="1.778" layer="95"/>
 </instance>
-<instance part="R44" gate="G$1" x="134.62" y="180.34" smashed="yes" rot="R90">
+<instance part="R45" gate="G$1" x="134.62" y="180.34" smashed="yes" rot="R90">
 <attribute name="NAME" x="133.1214" y="176.53" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="137.922" y="176.53" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -37036,7 +37077,7 @@ PWM is applied.</text>
 <attribute name="VALUE" x="121.92" y="147.32" size="1.778" layer="96"/>
 <attribute name="NAME" x="121.92" y="149.86" size="1.778" layer="95"/>
 </instance>
-<instance part="R43" gate="G$1" x="119.38" y="180.34" smashed="yes" rot="R90">
+<instance part="R44" gate="G$1" x="119.38" y="180.34" smashed="yes" rot="R90">
 <attribute name="NAME" x="117.8814" y="176.53" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="122.682" y="176.53" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -37047,7 +37088,7 @@ PWM is applied.</text>
 <instance part="SUPPLY91" gate="1" x="177.8" y="193.04" smashed="yes">
 <attribute name="VALUE" x="176.53" y="194.31" size="1.778" layer="96"/>
 </instance>
-<instance part="R45" gate="G$1" x="177.8" y="182.88" smashed="yes" rot="R90">
+<instance part="R46" gate="G$1" x="177.8" y="182.88" smashed="yes" rot="R90">
 <attribute name="NAME" x="176.3014" y="179.07" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="179.07" y="179.578" size="1.778" layer="96"/>
 </instance>
@@ -37084,7 +37125,7 @@ PWM is applied.</text>
 <instance part="SUPPLY92" gate="+5V" x="195.58" y="104.14" smashed="yes">
 <attribute name="VALUE" x="193.675" y="107.315" size="1.778" layer="96"/>
 </instance>
-<instance part="R46" gate="G$1" x="195.58" y="78.74" smashed="yes" rot="R270">
+<instance part="R47" gate="G$1" x="195.58" y="78.74" smashed="yes" rot="R270">
 <attribute name="NAME" x="197.0786" y="82.55" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="192.278" y="82.55" size="1.778" layer="96" rot="R270"/>
 </instance>
@@ -37140,7 +37181,7 @@ PWM is applied.</text>
 <segment>
 <pinref part="SUPPLY91" gate="1" pin="V+"/>
 <wire x1="177.8" y1="190.5" x2="177.8" y2="187.96" width="0.1524" layer="91"/>
-<pinref part="R45" gate="G$1" pin="2"/>
+<pinref part="R46" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -37172,29 +37213,29 @@ PWM is applied.</text>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="R42" gate="G$1" pin="1"/>
+<pinref part="R43" gate="G$1" pin="1"/>
 <pinref part="D15" gate="G$1" pin="A"/>
 <wire x1="93.98" y1="175.26" x2="93.98" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
 <segment>
-<pinref part="R41" gate="G$1" pin="2"/>
+<pinref part="R42" gate="G$1" pin="2"/>
 <pinref part="SUPPLY79" gate="+5V" pin="+5V"/>
 <wire x1="43.18" y1="180.34" x2="43.18" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY89" gate="+5V" pin="+5V"/>
-<pinref part="R44" gate="G$1" pin="2"/>
+<pinref part="R45" gate="G$1" pin="2"/>
 <wire x1="134.62" y1="185.42" x2="134.62" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="187.96" x2="134.62" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="187.96" x2="134.62" y2="187.96" width="0.1524" layer="91"/>
 <junction x="134.62" y="187.96"/>
-<pinref part="R43" gate="G$1" pin="2"/>
+<pinref part="R44" gate="G$1" pin="2"/>
 <wire x1="119.38" y1="187.96" x2="119.38" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R42" gate="G$1" pin="2"/>
+<pinref part="R43" gate="G$1" pin="2"/>
 <wire x1="93.98" y1="185.42" x2="93.98" y2="190.5" width="0.1524" layer="91"/>
 <pinref part="SUPPLY85" gate="+5V" pin="+5V"/>
 </segment>
@@ -37254,14 +37295,14 @@ PWM is applied.</text>
 </net>
 <net name="N$20" class="0">
 <segment>
-<pinref part="R41" gate="G$1" pin="1"/>
+<pinref part="R42" gate="G$1" pin="1"/>
 <pinref part="D10" gate="G$1" pin="A"/>
 <wire x1="43.18" y1="170.18" x2="43.18" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="15V_PWR_BR" class="0">
 <segment>
-<pinref part="R40" gate="G$1" pin="1"/>
+<pinref part="R41" gate="G$1" pin="1"/>
 <pinref part="D8" gate="G$1" pin="A"/>
 <wire x1="20.32" y1="170.18" x2="20.32" y2="167.64" width="0.1524" layer="91"/>
 </segment>
@@ -37270,7 +37311,7 @@ PWM is applied.</text>
 <segment>
 <wire x1="134.62" y1="172.72" x2="134.62" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="D19" gate="G$1" pin="A"/>
-<pinref part="R44" gate="G$1" pin="1"/>
+<pinref part="R45" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$28" class="0">
@@ -37286,7 +37327,7 @@ PWM is applied.</text>
 <pinref part="Q9" gate="G$1" pin="G"/>
 <wire x1="129.54" y1="154.94" x2="119.38" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="154.94" x2="119.38" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="R43" gate="G$1" pin="1"/>
+<pinref part="R44" gate="G$1" pin="1"/>
 <wire x1="119.38" y1="175.26" x2="119.38" y2="154.94" width="0.1524" layer="91"/>
 <junction x="119.38" y="154.94"/>
 </segment>
@@ -37295,7 +37336,7 @@ PWM is applied.</text>
 <segment>
 <pinref part="D20" gate="G$1" pin="A"/>
 <wire x1="177.8" y1="177.8" x2="177.8" y2="170.18" width="0.1524" layer="91"/>
-<pinref part="R45" gate="G$1" pin="1"/>
+<pinref part="R46" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="DISCHARGE_DRAIN" class="0">
@@ -37329,7 +37370,7 @@ PWM is applied.</text>
 <net name="BALL_SENSE" class="0">
 <segment>
 <label x="195.58" y="66.04" size="1.27" layer="95" rot="R270" xref="yes"/>
-<pinref part="R46" gate="G$1" pin="2"/>
+<pinref part="R47" gate="G$1" pin="2"/>
 <wire x1="195.58" y1="73.66" x2="195.58" y2="66.04" width="0.1524" layer="91" style="longdash"/>
 </segment>
 </net>
@@ -37351,7 +37392,7 @@ PWM is applied.</text>
 </net>
 <net name="+15.0V" class="0">
 <segment>
-<pinref part="R40" gate="G$1" pin="2"/>
+<pinref part="R41" gate="G$1" pin="2"/>
 <wire x1="20.32" y1="180.34" x2="20.32" y2="185.42" width="0.1524" layer="91"/>
 <pinref part="SUPPLY75" gate="G$1" pin="+15.0V"/>
 </segment>
@@ -37456,7 +37497,7 @@ PWM is applied.</text>
 </net>
 <net name="BALL_SENSE_CL" class="0">
 <segment>
-<pinref part="R46" gate="G$1" pin="1"/>
+<pinref part="R47" gate="G$1" pin="1"/>
 <pinref part="D21" gate="G$1" pin="K"/>
 <wire x1="195.58" y1="83.82" x2="195.58" y2="88.9" width="0.1524" layer="91"/>
 </segment>
@@ -37488,11 +37529,11 @@ PWM is applied.</text>
 <attribute name="DCHECKED" x="213.36" y="22.86" size="1.27" layer="94" align="center"/>
 <attribute name="DDRAWN" x="213.36" y="27.94" size="1.27" layer="94" align="center"/>
 </instance>
-<instance part="R47" gate="G$1" x="58.42" y="165.1" smashed="yes" rot="R270">
+<instance part="R48" gate="G$1" x="58.42" y="165.1" smashed="yes" rot="R270">
 <attribute name="NAME" x="59.9186" y="168.91" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="55.118" y="168.91" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="R48" gate="G$1" x="109.22" y="170.18" smashed="yes" rot="R90">
+<instance part="R49" gate="G$1" x="109.22" y="170.18" smashed="yes" rot="R90">
 <attribute name="NAME" x="107.7214" y="166.37" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="112.522" y="166.37" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -37547,7 +37588,7 @@ PWM is applied.</text>
 </net>
 <net name="BB_RX" class="0">
 <segment>
-<pinref part="R48" gate="G$1" pin="1"/>
+<pinref part="R49" gate="G$1" pin="1"/>
 <wire x1="101.6" y1="154.94" x2="109.22" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="154.94" x2="109.22" y2="165.1" width="0.1524" layer="91"/>
 <junction x="109.22" y="154.94"/>
@@ -37559,7 +37600,7 @@ PWM is applied.</text>
 <net name="+5V" class="0">
 <segment>
 <pinref part="SUPPLY96" gate="+5V" pin="+5V"/>
-<pinref part="R48" gate="G$1" pin="2"/>
+<pinref part="R49" gate="G$1" pin="2"/>
 <wire x1="109.22" y1="182.88" x2="109.22" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -37585,7 +37626,7 @@ PWM is applied.</text>
 </net>
 <net name="BB_TX_CL" class="0">
 <segment>
-<pinref part="R47" gate="G$1" pin="2"/>
+<pinref part="R48" gate="G$1" pin="2"/>
 <wire x1="58.42" y1="154.94" x2="58.42" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="J5" gate="G$1" pin="1"/>
 <wire x1="53.34" y1="154.94" x2="58.42" y2="154.94" width="0.1524" layer="91"/>
@@ -37595,7 +37636,7 @@ PWM is applied.</text>
 <net name="N$3" class="0">
 <segment>
 <pinref part="RV1" gate="G$1" pin="PIN3"/>
-<pinref part="R47" gate="G$1" pin="1"/>
+<pinref part="R48" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="175.26" x2="58.42" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="175.26" x2="58.42" y2="170.18" width="0.1524" layer="91"/>
 </segment>
@@ -37636,11 +37677,11 @@ PWM is applied.</text>
 <attribute name="DCHECKED" x="213.36" y="22.86" size="1.27" layer="94" align="center"/>
 <attribute name="DDRAWN" x="213.36" y="27.94" size="1.27" layer="94" align="center"/>
 </instance>
-<instance part="R50" gate="G$1" x="134.62" y="172.72" smashed="yes" rot="R90">
+<instance part="R51" gate="G$1" x="134.62" y="172.72" smashed="yes" rot="R90">
 <attribute name="NAME" x="133.1214" y="168.91" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="137.922" y="168.91" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R51" gate="G$1" x="167.64" y="172.72" smashed="yes" rot="R90">
+<instance part="R52" gate="G$1" x="167.64" y="172.72" smashed="yes" rot="R90">
 <attribute name="NAME" x="166.1414" y="168.91" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="170.942" y="168.91" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -37658,7 +37699,7 @@ PWM is applied.</text>
 <instance part="SUPPLY103" gate="GND" x="81.28" y="175.26" smashed="yes">
 <attribute name="VALUE" x="79.375" y="172.085" size="1.778" layer="96"/>
 </instance>
-<instance part="R49" gate="G$1" x="53.34" y="180.34" smashed="yes" rot="R180">
+<instance part="R50" gate="G$1" x="53.34" y="180.34" smashed="yes" rot="R180">
 <attribute name="NAME" x="57.15" y="178.8414" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="57.15" y="183.642" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -37671,7 +37712,7 @@ PWM is applied.</text>
 <instance part="SUPPLY106" gate="+5V" x="167.64" y="182.88" smashed="yes">
 <attribute name="VALUE" x="165.735" y="186.055" size="1.778" layer="96"/>
 </instance>
-<instance part="R52" gate="G$1" x="203.2" y="172.72" smashed="yes" rot="R90">
+<instance part="R53" gate="G$1" x="203.2" y="172.72" smashed="yes" rot="R90">
 <attribute name="NAME" x="201.7014" y="168.91" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="206.502" y="168.91" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -37784,37 +37825,37 @@ PWM is applied.</text>
 </segment>
 <segment>
 <pinref part="SUPPLY104" gate="+5V" pin="+5V"/>
-<pinref part="R50" gate="G$1" pin="2"/>
+<pinref part="R51" gate="G$1" pin="2"/>
 <wire x1="134.62" y1="180.34" x2="134.62" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY106" gate="+5V" pin="+5V"/>
-<pinref part="R51" gate="G$1" pin="2"/>
+<pinref part="R52" gate="G$1" pin="2"/>
 <wire x1="167.64" y1="180.34" x2="167.64" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY108" gate="+5V" pin="+5V"/>
-<pinref part="R52" gate="G$1" pin="2"/>
+<pinref part="R53" gate="G$1" pin="2"/>
 <wire x1="203.2" y1="180.34" x2="203.2" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="R49" gate="G$1" pin="1"/>
+<pinref part="R50" gate="G$1" pin="1"/>
 <pinref part="S1" gate="G$1" pin="COMMON"/>
 <wire x1="58.42" y1="180.34" x2="60.96" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MODE_SELECT" class="0">
 <segment>
-<pinref part="R49" gate="G$1" pin="2"/>
+<pinref part="R50" gate="G$1" pin="2"/>
 <wire x1="48.26" y1="180.34" x2="45.72" y2="180.34" width="0.1524" layer="91"/>
 <label x="45.72" y="180.34" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="!BTN_KCK" class="0">
 <segment>
-<pinref part="R51" gate="G$1" pin="1"/>
+<pinref part="R52" gate="G$1" pin="1"/>
 <wire x1="167.64" y1="160.02" x2="167.64" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="160.02" x2="162.56" y2="160.02" width="0.1524" layer="91"/>
 <junction x="167.64" y="160.02"/>
@@ -37830,7 +37871,7 @@ PWM is applied.</text>
 </net>
 <net name="!BTN_CHP" class="0">
 <segment>
-<pinref part="R50" gate="G$1" pin="1"/>
+<pinref part="R51" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="160.02" x2="134.62" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="160.02" x2="129.54" y2="160.02" width="0.1524" layer="91"/>
 <junction x="134.62" y="160.02"/>
@@ -37846,7 +37887,7 @@ PWM is applied.</text>
 </net>
 <net name="!BTN_CHG" class="0">
 <segment>
-<pinref part="R52" gate="G$1" pin="1"/>
+<pinref part="R53" gate="G$1" pin="1"/>
 <wire x1="203.2" y1="160.02" x2="203.2" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="160.02" x2="198.12" y2="160.02" width="0.1524" layer="91"/>
 <junction x="203.2" y="160.02"/>

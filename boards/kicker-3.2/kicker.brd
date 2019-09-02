@@ -1540,22 +1540,6 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
 </package>
-<package name="R1206">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
-<wire x1="0.9525" y1="-0.8128" x2="-0.9652" y2="-0.8128" width="0.1524" layer="51"/>
-<wire x1="0.9525" y1="0.8128" x2="-0.9652" y2="0.8128" width="0.1524" layer="51"/>
-<wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="0.983" x2="2.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="-0.983" x2="-2.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-2.473" y1="-0.983" x2="-2.473" y2="0.983" width="0.0508" layer="39"/>
-<smd name="2" x="1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
-<smd name="1" x="-1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
-<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.6891" y1="-0.8763" x2="-0.9525" y2="0.8763" layer="51"/>
-<rectangle x1="0.9525" y1="-0.8763" x2="1.6891" y2="0.8763" layer="51"/>
-<rectangle x1="-0.3" y1="-0.7" x2="0.3" y2="0.7" layer="35"/>
-</package>
 <package name="R0603">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
 <wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
@@ -15033,48 +15017,48 @@ Your Eurocircuits Team
 <attribute name="NAME" x="9.8" y="69.45" size="1" layer="25" font="vector" rot="SR180" align="top-right"/>
 <attribute name="VALUE" x="11.335" y="77.555" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R42" library="rcl" package="R0603" value="330" x="14.7" y="75.65" smashed="yes">
+<element name="R43" library="rcl" package="R0603" value="330" x="14.7" y="75.65" smashed="yes">
 <attribute name="NAME" x="15.875" y="71.35" size="1" layer="25" font="vector" rot="SR180"/>
 <attribute name="VALUE" x="14.065" y="73.745" size="1.27" layer="27"/>
 </element>
-<element name="C34" library="rcl" package="C0603" value="0.1uF" x="43" y="15.7" smashed="yes">
+<element name="C32" library="rcl" package="C0603" value="0.1uF" x="43" y="15.7" smashed="yes">
 <attribute name="NAME" x="41.75" y="13.45" size="1" layer="25" font="vector"/>
 <attribute name="VALUE" x="42.365" y="13.795" size="1.27" layer="27"/>
 </element>
-<element name="R34" library="rcl" package="R0603" value="10k" x="61.65" y="23.4" smashed="yes">
+<element name="R35" library="rcl" package="R0603" value="10k" x="61.65" y="23.4" smashed="yes">
 <attribute name="NAME" x="60.3" y="21.15" size="1" layer="25" font="vector"/>
 <attribute name="VALUE" x="63.015" y="23.495" size="1.27" layer="27"/>
 </element>
-<element name="R25" library="rcl" package="R0603" value="10k" x="19.4" y="60" smashed="yes" rot="R90">
+<element name="R26" library="rcl" package="R0603" value="10k" x="19.4" y="60" smashed="yes" rot="R90">
 <attribute name="NAME" x="18.25" y="60.75" size="1" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="21.305" y="59.365" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R26" library="rcl" package="R0603" value="10k" x="23.3" y="69.4" smashed="yes" rot="R180">
+<element name="R27" library="rcl" package="R0603" value="10k" x="23.3" y="69.4" smashed="yes" rot="R180">
 <attribute name="NAME" x="24.535" y="71.465" size="1" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="23.935" y="71.305" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="C28" library="rcl" package="C0603" value="0.1uF 35V" x="26" y="66.25" smashed="yes" rot="R270">
+<element name="C26" library="rcl" package="C0603" value="0.1uF 35V" x="26" y="66.25" smashed="yes" rot="R270">
 <attribute name="NAME" x="27.75" y="65" size="1" layer="25" font="vector" rot="R90"/>
 </element>
-<element name="C29" library="rcl" package="C0805" value="22uF 35V" x="23.25" y="66.25" smashed="yes" rot="R270">
+<element name="C27" library="rcl" package="C0805" value="22uF 35V" x="23.25" y="66.25" smashed="yes" rot="R270">
 <attribute name="NAME" x="22" y="64.5" size="1" layer="25" font="vector" rot="R90"/>
 </element>
-<element name="R38" library="rcl" package="R0603" value="10k" x="66.8" y="13" smashed="yes" rot="R90">
+<element name="R39" library="rcl" package="R0603" value="10k" x="66.8" y="13" smashed="yes" rot="R90">
 <attribute name="NAME" x="68.925" y="11.5" size="1" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="68.705" y="12.365" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R39" library="rcl" package="R0603" value="10k" x="64.95" y="25.3" smashed="yes">
+<element name="R40" library="rcl" package="R0603" value="10k" x="64.95" y="25.3" smashed="yes">
 <attribute name="NAME" x="67.65" y="26.825" size="1" layer="25" font="vector" rot="R270"/>
 <attribute name="VALUE" x="64.315" y="23.395" size="1.27" layer="27"/>
 </element>
-<element name="R31" library="rcl" package="R0805" value="ERJ-6GEYJ515V" x="-4.75" y="54.25" smashed="yes" rot="MR270">
+<element name="R32" library="rcl" package="R0805" value="ERJ-6GEYJ515V" x="-4.75" y="54.25" smashed="yes" rot="MR270">
 <attribute name="NAME" x="-7" y="52.5" size="1" layer="26" font="vector" rot="MR90"/>
 <attribute name="VALUE" x="-2.21" y="54.885" size="1.27" layer="28" rot="MR270"/>
 </element>
-<element name="R29" library="rcl" package="R0603" value="270k" x="-8.1" y="62.5" smashed="yes" rot="MR270">
+<element name="R30" library="rcl" package="R0603" value="270k" x="-8.1" y="62.5" smashed="yes" rot="MR270">
 <attribute name="NAME" x="-6.85" y="61.25" size="1" layer="26" font="vector" rot="MR90"/>
 </element>
-<element name="R30" library="rcl" package="R0603" value="100k" x="-8.1" y="65.8" smashed="yes" rot="MR270">
+<element name="R31" library="rcl" package="R0603" value="100k" x="-8.1" y="65.8" smashed="yes" rot="MR270">
 <attribute name="NAME" x="-6.85" y="64.55" size="1" layer="26" font="vector" rot="MR90"/>
 </element>
 <element name="Q6" library="RoboJackets-Discrete" package="DPAK" value="AOD1N60" x="1.5" y="55.5" smashed="yes" rot="MR180">
@@ -15094,19 +15078,19 @@ Your Eurocircuits Team
 <element name="Q5" library="RoboJackets-Discrete" package="SOT-23-3" value="BSS127" x="-5" y="65" smashed="yes" rot="MR90">
 <attribute name="NAME" x="-2" y="63.25" size="1" layer="26" font="vector" rot="MR0"/>
 </element>
-<element name="R47" library="rcl" package="R0603" value="51" x="36" y="58.9" smashed="yes" rot="R45">
+<element name="R48" library="rcl" package="R0603" value="51" x="36" y="58.9" smashed="yes" rot="R45">
 <attribute name="NAME" x="33.394453125" y="57.6034625" size="1" layer="25" font="vector" rot="R315"/>
 <attribute name="VALUE" x="36.898025" y="57.103946875" size="1.27" layer="27" rot="R45"/>
 </element>
-<element name="R48" library="rcl" package="R0603" value="10k" x="40.35" y="53.8" smashed="yes" rot="R225">
+<element name="R49" library="rcl" package="R0603" value="10k" x="40.35" y="53.8" smashed="yes" rot="R225">
 <attribute name="NAME" x="37.509009375" y="50.373221875" size="1" layer="25" font="vector" rot="R45"/>
 <attribute name="VALUE" x="39.451975" y="55.596053125" size="1.27" layer="27" rot="R225"/>
 </element>
-<element name="R50" library="rcl" package="R0603" value="10k" x="57.2" y="5.1" smashed="yes" rot="R180">
+<element name="R51" library="rcl" package="R0603" value="10k" x="57.2" y="5.1" smashed="yes" rot="R180">
 <attribute name="NAME" x="51.7" y="4.6" size="1" layer="25" font="vector"/>
 <attribute name="VALUE" x="57.835" y="7.005" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R51" library="rcl" package="R0603" value="10k" x="57.2" y="-5.4" smashed="yes" rot="R180">
+<element name="R52" library="rcl" package="R0603" value="10k" x="57.2" y="-5.4" smashed="yes" rot="R180">
 <attribute name="NAME" x="51.7" y="-5.9" size="1" layer="25" font="vector"/>
 <attribute name="VALUE" x="57.835" y="-3.495" size="1.27" layer="27" rot="R180"/>
 </element>
@@ -15116,15 +15100,15 @@ Your Eurocircuits Team
 <element name="S1" library="RoboJackets-Switches" package="CSS-121XB" value="CSS-121XB" x="65" y="51" smashed="yes" rot="R135">
 <attribute name="NAME" x="61" y="50" size="1" layer="25" font="vector" rot="R135"/>
 </element>
-<element name="R49" library="rcl" package="R0603" value="10k" x="59.35" y="45.85" smashed="yes" rot="R225">
+<element name="R50" library="rcl" package="R0603" value="10k" x="59.35" y="45.85" smashed="yes" rot="R225">
 <attribute name="NAME" x="60.057109375" y="43.375128125" size="1" layer="25" font="vector" rot="R45"/>
 <attribute name="VALUE" x="58.451975" y="47.646053125" size="1.27" layer="27" rot="R225"/>
 </element>
-<element name="R52" library="rcl" package="R0603" value="10k" x="57.2" y="-15.95" smashed="yes" rot="R180">
+<element name="R53" library="rcl" package="R0603" value="10k" x="57.2" y="-15.95" smashed="yes" rot="R180">
 <attribute name="NAME" x="51.7" y="-16.45" size="1" layer="25" font="vector"/>
 <attribute name="VALUE" x="57.835" y="-14.045" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R32" library="rcl" package="R0805" value="ERJ-6GEYJ515V" x="-4.75" y="59" smashed="yes" rot="MR270">
+<element name="R33" library="rcl" package="R0805" value="ERJ-6GEYJ515V" x="-4.75" y="59" smashed="yes" rot="MR270">
 <attribute name="NAME" x="-7" y="58" size="1" layer="26" font="vector" rot="MR90"/>
 <attribute name="VALUE" x="-2.21" y="59.635" size="1.27" layer="28" rot="MR270"/>
 </element>
@@ -15137,15 +15121,15 @@ Your Eurocircuits Team
 <element name="S4" library="RoboJackets-Switches" package="HDP001R" value="HDP001R" x="67.5" y="-19.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="66" y="-23" size="1" layer="25" font="vector" rot="R180"/>
 </element>
-<element name="R37" library="rcl" package="R0603" value="RC0603FR-07205KL" x="51.5" y="-26" smashed="yes">
+<element name="R38" library="rcl" package="R0603" value="RC0603FR-07205KL" x="51.5" y="-26" smashed="yes">
 <attribute name="NAME" x="53.25" y="-24.5" size="1" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="50.865" y="-27.905" size="1.27" layer="27"/>
 </element>
-<element name="R35" library="rcl" package="R0805" value="ERJ-6GEYJ515V" x="60" y="-26" smashed="yes">
+<element name="R36" library="rcl" package="R0805" value="ERJ-6GEYJ515V" x="60" y="-26" smashed="yes">
 <attribute name="NAME" x="55.75" y="-24.5" size="1" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="59.365" y="-28.54" size="1.27" layer="27"/>
 </element>
-<element name="R36" library="rcl" package="R0805" value="ERJ-6GEYJ515V" x="55.5" y="-26" smashed="yes">
+<element name="R37" library="rcl" package="R0805" value="ERJ-6GEYJ515V" x="55.5" y="-26" smashed="yes">
 <attribute name="NAME" x="54.5" y="-24.5" size="1" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="54.865" y="-28.54" size="1.27" layer="27"/>
 </element>
@@ -15203,11 +15187,11 @@ Your Eurocircuits Team
 <attribute name="NAME" x="57.6088" y="20.75" size="1" layer="25" font="vector" rot="R90" align="top-left"/>
 <attribute name="VALUE" x="44.9838" y="16" size="1.27" layer="27" rot="R270" align="top-center"/>
 </element>
-<element name="R40" library="rcl" package="R0603" value="1k" x="44.3" y="46.1" smashed="yes" rot="MR0">
+<element name="R41" library="rcl" package="R0603" value="1k" x="44.3" y="46.1" smashed="yes" rot="MR0">
 <attribute name="NAME" x="50.26" y="44.74" size="1" layer="26" font="vector" rot="MR90"/>
 <attribute name="VALUE" x="44.935" y="44.195" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="R41" library="rcl" package="R0603" value="330" x="46.6" y="46.1" smashed="yes">
+<element name="R42" library="rcl" package="R0603" value="330" x="46.6" y="46.1" smashed="yes">
 <attribute name="NAME" x="50.74" y="44.69" size="1" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="45.965" y="44.195" size="1.27" layer="27"/>
 </element>
@@ -15232,7 +15216,7 @@ Your Eurocircuits Team
 <element name="Q9" library="RoboJackets-Discrete" package="SOT-23-3" value="BSS127" x="18.4" y="74.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="17.85" y="71.55" size="1" layer="25" font="vector"/>
 </element>
-<element name="R44" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="330" x="14.7" y="72.7" smashed="yes">
+<element name="R45" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="330" x="14.7" y="72.7" smashed="yes">
 <attribute name="NAME" x="13.135" y="69.015" size="1" layer="25" font="vector" rot="SR180" align="top-right"/>
 <attribute name="SPICEPREFIX" value="R" x="4.2" y="78.7" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="14.065" y="70.795" size="1.27" layer="27"/>
@@ -15240,7 +15224,7 @@ Your Eurocircuits Team
 <element name="Q8" library="RoboJackets-Discrete" package="SOT-23-3" value="BSS127" x="24.4" y="74.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="26.7" y="72.5" size="1" layer="25" font="vector" rot="R180"/>
 </element>
-<element name="R43" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k" x="21.4" y="73.7" smashed="yes" rot="R270">
+<element name="R44" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k" x="21.4" y="73.7" smashed="yes" rot="R270">
 <attribute name="NAME" x="20.415" y="75.96" size="1" layer="25" font="vector"/>
 <attribute name="SPICEPREFIX" value="R" x="21.4" y="73.7" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="19.495" y="74.335" size="1.27" layer="27" rot="R270"/>
@@ -15251,7 +15235,7 @@ Your Eurocircuits Team
 <attribute name="NAME" x="3.44" y="66.285" size="1" layer="25" font="vector"/>
 <attribute name="VALUE" x="2.895" y="63.535" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="R45" library="rcl" package="R0805" value="ERJ-P06J274V" x="7.9" y="61.8" smashed="yes" rot="R270">
+<element name="R46" library="rcl" package="R0805" value="ERJ-P06J274V" x="7.9" y="61.8" smashed="yes" rot="R270">
 <attribute name="NAME" x="10.13" y="60.04" size="1" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="5.36" y="62.435" size="1.27" layer="27" rot="R270"/>
 </element>
@@ -15297,21 +15281,21 @@ Your Eurocircuits Team
 <element name="D6" library="RoboJackets-Diodes" package="TO460P990X239-3" package3d_urn="urn:adsk.eagle:package:4100272/1" value="VS-5EWH06FN-M3" x="32.75" y="41.75" smashed="yes" rot="R270">
 <attribute name="NAME" x="37.4259" y="41.7" size="1" layer="25" font="vector" rot="R270" align="top-left"/>
 </element>
-<element name="R27" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="160" x="16.4" y="66.1" smashed="yes" rot="R90">
+<element name="R28" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="160" x="16.4" y="66.1" smashed="yes" rot="R90">
 <attribute name="NAME" x="13.93" y="64.73" size="1" layer="25" font="vector" rot="R90"/>
 <attribute name="SPICEPREFIX" value="R" x="16.4" y="66.1" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="18.94" y="64.83" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R28" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="160" x="19.6" y="66.1" smashed="yes" rot="R90">
+<element name="R29" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="160" x="19.6" y="66.1" smashed="yes" rot="R90">
 <attribute name="NAME" x="14.195" y="67.47" size="1" layer="25" font="vector" rot="R270"/>
 <attribute name="SPICEPREFIX" value="R" x="19.6" y="66.1" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="22.14" y="64.83" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C30" library="rcl" package="C0603" value="0.1uF 50V" x="12.1" y="67.4" smashed="yes" rot="MR0">
+<element name="C28" library="rcl" package="C0603" value="0.1uF 50V" x="12.1" y="67.4" smashed="yes" rot="MR0">
 <attribute name="NAME" x="10.715" y="66.14" size="1" layer="26" font="vector" rot="MR180"/>
 <attribute name="VALUE" x="12.735" y="65.495" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="C31" library="rcl" package="C0603" value="0.1uF 50V" x="23.9" y="67.4" smashed="yes" rot="MR180">
+<element name="C29" library="rcl" package="C0603" value="0.1uF 50V" x="23.9" y="67.4" smashed="yes" rot="MR180">
 <attribute name="NAME" x="25.765" y="68.265" size="1" layer="26" font="vector" rot="MR180"/>
 <attribute name="VALUE" x="23.265" y="69.305" size="1.27" layer="28" rot="MR180"/>
 </element>
@@ -15341,7 +15325,7 @@ Your Eurocircuits Team
 <attribute name="SPICEPREFIX" value="C" x="-61" y="-41" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="-66.715" y="-35.9454" size="1.778" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="R33" library="RoboJackets-Resistors" package="TO508P1539X450-3" package3d_urn="urn:adsk.eagle:package:4103950/1" value="1.5k 35W" x="9" y="46" smashed="yes" rot="MR180">
+<element name="R34" library="RoboJackets-Resistors" package="TO508P1539X450-3" package3d_urn="urn:adsk.eagle:package:4103950/1" value="1.5k 35W" x="9" y="46" smashed="yes" rot="MR180">
 <attribute name="NAME" x="6.5" y="39.4751" size="1" layer="26" font="vector" rot="MR180" align="top-left"/>
 <attribute name="VALUE" x="9" y="52.0249" size="1.27" layer="28" rot="MR180" align="top-center"/>
 </element>
@@ -15355,7 +15339,7 @@ Your Eurocircuits Team
 <attribute name="PINS" value="2" x="36" y="65.5" size="1.778" layer="27" rot="R135" display="off"/>
 <attribute name="PIN_PITCH" value="2.0 mm" x="36" y="65.5" size="1.778" layer="27" rot="R135" display="off"/>
 </element>
-<element name="R46" library="rcl" package="R0603" value="60" x="60.8" y="19.2" smashed="yes" rot="R180">
+<element name="R47" library="rcl" package="R0603" value="60" x="60.8" y="19.2" smashed="yes" rot="R180">
 <attribute name="NAME" x="62.411778125" y="18.134671875" size="1" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="61.435" y="21.105003125" size="1.27" layer="27" rot="R180"/>
 </element>
@@ -15404,7 +15388,7 @@ Your Eurocircuits Team
 <attribute name="NAME" x="66.565" y="20.465" size="1" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="64.195" y="19.235" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C35" library="rcl" package="C0603" value="0.1uF" x="51.8" y="7.7" smashed="yes">
+<element name="C33" library="rcl" package="C0603" value="0.1uF" x="51.8" y="7.7" smashed="yes">
 <attribute name="NAME" x="53.06" y="9.94" size="1" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="51.165" y="5.795" size="1.27" layer="27"/>
 </element>
@@ -15466,12 +15450,14 @@ Your Eurocircuits Team
 <attribute name="SPICEPREFIX" value="C" x="46" y="39.4" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="47.905" y="38.765" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R17" library="rcl" package="R1206" value="187k" x="-40.6" y="-18" smashed="yes" rot="R180">
-<attribute name="NAME" x="-40.965" y="-19.135" size="1" layer="25" font="vector" rot="R180"/>
-<attribute name="VALUE" x="-39.965" y="-16.095" size="1.27" layer="27" rot="R180"/>
+<element name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="113k 0.1%" x="-43" y="-18" smashed="yes" rot="R180">
+<attribute name="NAME" x="-43.365" y="-19.135" size="1" layer="25" font="vector" rot="R180"/>
+<attribute name="SPICEPREFIX" value="R" x="-43" y="-18" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="-42.365" y="-16.095" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R18" library="rcl" package="R0805" value="931" x="-52.1" y="-18.2" smashed="yes" rot="R180">
+<element name="R19" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="3.0k 0.1%" x="-52.1" y="-18.2" smashed="yes" rot="R180">
 <attribute name="NAME" x="-50.76" y="-19.385" size="1" layer="25" font="vector" rot="R180"/>
+<attribute name="SPICEPREFIX" value="R" x="-52.1" y="-18.2" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="-51.465" y="-16.295" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="D13" library="RoboJackets-LEDs" package="CHIP-LED0603" value="YELLOW" x="32.5" y="74.5" smashed="yes" rot="R180">
@@ -15486,48 +15472,48 @@ Your Eurocircuits Team
 <attribute name="NAME" x="32.26" y="72.885" size="1" layer="25" rot="R270"/>
 <attribute name="VALUE" x="37.095" y="69.135" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="R19" library="rcl" package="R0603" value="100k" x="55.7" y="49.2" smashed="yes" rot="R270">
+<element name="R20" library="rcl" package="R0603" value="100k" x="55.7" y="49.2" smashed="yes" rot="R270">
 <attribute name="NAME" x="54.76" y="47.135" size="1" layer="25" font="vector" rot="R270"/>
 <attribute name="VALUE" x="53.795" y="49.835" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="R20" library="rcl" package="R0603" value="100k" x="58" y="49.2" smashed="yes" rot="R270">
+<element name="R21" library="rcl" package="R0603" value="100k" x="58" y="49.2" smashed="yes" rot="R270">
 <attribute name="NAME" x="56.06" y="47.085" size="1" layer="25" font="vector" rot="R270"/>
 <attribute name="VALUE" x="56.095" y="49.835" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="R21" library="rcl" package="R0603" value="160" x="42.5" y="26.3" smashed="yes" rot="R90">
+<element name="R22" library="rcl" package="R0603" value="160" x="42.5" y="26.3" smashed="yes" rot="R90">
 <attribute name="NAME" x="43.14" y="30.24" size="1" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="44.405" y="25.665" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R22" library="rcl" package="R0603" value="160" x="39.9" y="26.3" smashed="yes" rot="R90">
+<element name="R23" library="rcl" package="R0603" value="160" x="39.9" y="26.3" smashed="yes" rot="R90">
 <attribute name="NAME" x="41.815" y="30.24" size="1" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="41.805" y="25.665" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C20" library="rcl" package="C0603" value="1uF" x="39.9" y="22.7" smashed="yes" rot="R270">
+<element name="C18" library="rcl" package="C0603" value="1uF" x="39.9" y="22.7" smashed="yes" rot="R270">
 <attribute name="NAME" x="39.435" y="20.135" size="1" layer="25" font="vector" rot="R270"/>
 <attribute name="VALUE" x="37.995" y="23.335" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C19" library="rcl" package="C0603" value="1uF" x="42.5" y="22.7" smashed="yes" rot="R270">
+<element name="C17" library="rcl" package="C0603" value="1uF" x="42.5" y="22.7" smashed="yes" rot="R270">
 <attribute name="NAME" x="42.06" y="20.135" size="1" layer="25" font="vector" rot="R270"/>
 <attribute name="VALUE" x="40.595" y="23.335" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="R24" library="rcl" package="R0603" value="160" x="45.1" y="23.3" smashed="yes" rot="R90">
+<element name="R25" library="rcl" package="R0603" value="160" x="45.1" y="23.3" smashed="yes" rot="R90">
 <attribute name="NAME" x="47.365" y="21.84" size="1" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="47.005" y="22.665" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C25" library="rcl" package="C0603" value="1uF" x="45.6" y="26.2" smashed="yes">
+<element name="C22" library="rcl" package="C0603" value="1uF" x="45.6" y="26.2" smashed="yes">
 <attribute name="NAME" x="45.915" y="27.465" size="1" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="44.965" y="24.295" size="1.27" layer="27"/>
 </element>
-<element name="R23" library="rcl" package="R0603" value="100k" x="53.4" y="49.2" smashed="yes" rot="R90">
+<element name="R24" library="rcl" package="R0603" value="100k" x="53.4" y="49.2" smashed="yes" rot="R90">
 <attribute name="NAME" x="54.465" y="44.365" size="1" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="55.305" y="48.565" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C21" library="rcl" library_urn="urn:adsk.eagle:library:334" package="E7,5-18" package3d_urn="urn:adsk.eagle:package:23379/1" value="560uF" x="-43.6" y="55.2" smashed="yes" rot="R45">
+<element name="C19" library="rcl" library_urn="urn:adsk.eagle:library:334" package="E7,5-18" package3d_urn="urn:adsk.eagle:package:23379/1" value="560uF" x="-43.6" y="55.2" smashed="yes" rot="R45">
 <attribute name="NAME" x="-49.101996875" y="47.57809375" size="1" layer="25" font="vector" rot="R135"/>
 <attribute name="SPICEPREFIX" value="C" x="-43.6" y="55.2" size="1.778" layer="27" rot="R45" display="off"/>
 <attribute name="VALUE" x="-44.156775" y="48.57256875" size="1.778" layer="27" ratio="10" rot="R45"/>
 </element>
-<element name="C23" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R)" x="-18.5" y="55.1" smashed="yes" rot="R135">
+<element name="C21" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R)" x="-18.5" y="55.1" smashed="yes" rot="R135">
 <attribute name="NAME" x="-18.100003125" y="52.305928125" size="1" layer="25" font="vector" rot="R135"/>
 <attribute name="SPICEPREFIX" value="C" x="-18.5" y="55.1" size="1.778" layer="27" rot="R135" display="off"/>
 <attribute name="VALUE" x="-14.90789375" y="55.9980375" size="1.27" layer="27" rot="R135"/>
@@ -15540,7 +15526,7 @@ Your Eurocircuits Team
 <attribute name="NAME" x="-69.33" y="20.37" size="1" layer="25" font="vector" rot="R270"/>
 <attribute name="VALUE" x="-64.56" y="18.33" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C24" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R)" x="-55.4" y="47.4" smashed="yes" rot="R90">
+<element name="C23" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R)" x="-55.4" y="47.4" smashed="yes" rot="R90">
 <attribute name="NAME" x="-53.9" y="50.1" size="1" layer="25" font="vector" rot="R90"/>
 <attribute name="SPICEPREFIX" value="C" x="-55.4" y="47.4" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="-52.224996875" y="45.49500625" size="1.27" layer="27" rot="R90"/>
@@ -15552,37 +15538,37 @@ Your Eurocircuits Team
 <element name="T1" library="RoboJackets-Inductors" package="DA2034" value="DA203X-ALDA2034" x="-54.9" y="29.4" smashed="yes" rot="R270">
 <attribute name="NAME" x="-44.4" y="39.9" size="1.27" layer="25" rot="R270"/>
 </element>
-<element name="C22" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R)" x="-65" y="47.4" smashed="yes" rot="R90">
+<element name="C20" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R)" x="-65" y="47.4" smashed="yes" rot="R90">
 <attribute name="NAME" x="-63.5" y="50.1" size="1" layer="25" font="vector" rot="R90"/>
 <attribute name="SPICEPREFIX" value="C" x="-65" y="47.4" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="-61.825" y="45.495" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C26" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R)" x="-61.8" y="47.4" smashed="yes" rot="R90">
+<element name="C24" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R)" x="-61.8" y="47.4" smashed="yes" rot="R90">
 <attribute name="NAME" x="-60.3" y="50.1" size="1" layer="25" font="vector" rot="R90"/>
 <attribute name="SPICEPREFIX" value="C" x="-61.8" y="47.4" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="-58.625" y="45.495" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C27" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R)" x="-58.6" y="47.4" smashed="yes" rot="R90">
+<element name="C25" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R)" x="-58.6" y="47.4" smashed="yes" rot="R90">
 <attribute name="NAME" x="-57.1" y="50.1" size="1" layer="25" font="vector" rot="R90"/>
 <attribute name="SPICEPREFIX" value="C" x="-58.6" y="47.4" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="-55.425" y="45.495" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C37" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="49.7" y="31.4" smashed="yes" rot="R270">
+<element name="C35" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="49.7" y="31.4" smashed="yes" rot="R270">
 <attribute name="NAME" x="47.435" y="33.035" size="1" layer="25" font="vector" rot="R270"/>
 <attribute name="SPICEPREFIX" value="C" x="49.7" y="31.4" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="47.795" y="32.035" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C36" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="64.4" y="31.4" smashed="yes" rot="R270">
+<element name="C34" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="64.4" y="31.4" smashed="yes" rot="R270">
 <attribute name="NAME" x="65.635" y="32.835" size="1" layer="25" font="vector" rot="R270"/>
 <attribute name="SPICEPREFIX" value="C" x="64.4" y="31.4" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="62.495" y="32.035" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C39" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="49.7" y="28" smashed="yes" rot="R90">
+<element name="C37" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="49.7" y="28" smashed="yes" rot="R90">
 <attribute name="NAME" x="48.365" y="26.665" size="1" layer="25" font="vector" rot="R90"/>
 <attribute name="SPICEPREFIX" value="C" x="49.7" y="28" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="51.605" y="27.365" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C38" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="64.4" y="28" smashed="yes" rot="R90">
+<element name="C36" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="64.4" y="28" smashed="yes" rot="R90">
 <attribute name="NAME" x="66.965" y="26.665" size="1" layer="25" font="vector" rot="R90"/>
 <attribute name="SPICEPREFIX" value="C" x="64.4" y="28" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="66.305" y="27.365" size="1.27" layer="27" rot="R90"/>
@@ -15607,11 +15593,11 @@ Your Eurocircuits Team
 <attribute name="NAME" x="63.478" y="7.276" size="1" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="64.894" y="7.422" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C33" library="rcl" package="C0603" value="0.1uF" x="51.6" y="24.1" smashed="yes">
+<element name="C31" library="rcl" package="C0603" value="0.1uF" x="51.6" y="24.1" smashed="yes">
 <attribute name="NAME" x="53.365" y="23.735" size="1" layer="25" font="vector"/>
 <attribute name="VALUE" x="50.965" y="22.195" size="1.27" layer="27"/>
 </element>
-<element name="C32" library="rcl" package="C0603" value="0.1uF" x="60.8" y="15.6" smashed="yes" rot="R180">
+<element name="C30" library="rcl" package="C0603" value="0.1uF" x="60.8" y="15.6" smashed="yes" rot="R180">
 <attribute name="NAME" x="63.265" y="14.635" size="1" layer="25" font="vector"/>
 <attribute name="VALUE" x="61.435" y="17.505" size="1.27" layer="27" rot="R180"/>
 </element>
@@ -15622,14 +15608,19 @@ Your Eurocircuits Team
 <attribute name="MPN" value="PVG3" x="33.8" y="61.5" size="1.778" layer="27" rot="R45" display="off"/>
 <attribute name="NAME" x="33.835353125" y="58.56550625" size="1" layer="21" font="vector" rot="R135"/>
 </element>
+<element name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="505k 0.1%" x="-39.7" y="-18" smashed="yes" rot="R180">
+<attribute name="NAME" x="-39.065" y="-18.635" size="1.27" layer="25" rot="R180"/>
+<attribute name="SPICEPREFIX" value="R" x="-39.7" y="-18" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="-39.065" y="-16.095" size="1.27" layer="27" rot="R180"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
-<contactref element="R25" pad="1"/>
 <contactref element="R26" pad="1"/>
-<contactref element="R38" pad="1"/>
+<contactref element="R27" pad="1"/>
 <contactref element="R39" pad="1"/>
-<contactref element="R30" pad="1"/>
+<contactref element="R40" pad="1"/>
+<contactref element="R31" pad="1"/>
 <contactref element="Q6" pad="3"/>
 <contactref element="D7" pad="A"/>
 <contactref element="Q5" pad="2"/>
@@ -15644,16 +15635,16 @@ Your Eurocircuits Team
 <contactref element="J9" pad="2"/>
 <contactref element="R16" pad="1"/>
 <contactref element="U4" pad="3"/>
-<contactref element="C28" pad="1"/>
-<contactref element="C29" pad="1"/>
-<contactref element="R37" pad="1"/>
+<contactref element="C26" pad="1"/>
+<contactref element="C27" pad="1"/>
+<contactref element="R38" pad="1"/>
 <contactref element="D8" pad="C"/>
 <contactref element="D10" pad="C"/>
 <contactref element="Q9" pad="2"/>
 <contactref element="Q8" pad="2"/>
 <contactref element="Q7" pad="2"/>
-<contactref element="C30" pad="2"/>
-<contactref element="C31" pad="2"/>
+<contactref element="C28" pad="2"/>
+<contactref element="C29" pad="2"/>
 <contactref element="D3" pad="1"/>
 <contactref element="D4" pad="1"/>
 <contactref element="C5" pad="-"/>
@@ -16079,11 +16070,11 @@ Your Eurocircuits Team
 <wire x1="40.1" y1="36.9" x2="39.8" y2="37.2" width="0.4064" layer="1"/>
 <wire x1="39.8" y1="37.95" x2="39.8" y2="37.2" width="0.4064" layer="1"/>
 <via x="40.1" y="36.9" extent="1-16" drill="0.35"/>
-<contactref element="C25" pad="2"/>
-<contactref element="R23" pad="1"/>
-<contactref element="C20" pad="2"/>
-<contactref element="C19" pad="2"/>
-<contactref element="C21" pad="-"/>
+<contactref element="C22" pad="2"/>
+<contactref element="R24" pad="1"/>
+<contactref element="C18" pad="2"/>
+<contactref element="C17" pad="2"/>
+<contactref element="C19" pad="-"/>
 <contactref element="C10" pad="2"/>
 <contactref element="C12" pad="2"/>
 <contactref element="C14" pad="2"/>
@@ -16091,9 +16082,9 @@ Your Eurocircuits Team
 <contactref element="C11" pad="2"/>
 <contactref element="C15" pad="2"/>
 <contactref element="C13" pad="2"/>
-<contactref element="R18" pad="2"/>
-<contactref element="C24" pad="2"/>
+<contactref element="R19" pad="2"/>
 <contactref element="C23" pad="2"/>
+<contactref element="C21" pad="2"/>
 <polygon width="0.1524" layer="1" thermals="no">
 <vertex x="-64.6" y="-22"/>
 <vertex x="-58.6" y="-22"/>
@@ -16241,11 +16232,11 @@ Your Eurocircuits Team
 <vertex x="-64.1" y="-10.8"/>
 <vertex x="-64.1" y="5.1"/>
 </polygon>
-<wire x1="-53.05" y1="-18.2" x2="-54.6" y2="-18.2" width="0.2" layer="1"/>
+<wire x1="-52.95" y1="-18.2" x2="-54.6" y2="-18.2" width="0.2" layer="1"/>
 <via x="-54.6" y="-18.2" extent="1-16" drill="0.35"/>
-<contactref element="C22" pad="2"/>
-<contactref element="C27" pad="2"/>
-<contactref element="C26" pad="2"/>
+<contactref element="C20" pad="2"/>
+<contactref element="C25" pad="2"/>
+<contactref element="C24" pad="2"/>
 <polygon width="0.2" layer="1" thermals="no">
 <vertex x="-48.3" y="56.1"/>
 <vertex x="-31.9" y="56.1"/>
@@ -16289,8 +16280,8 @@ Your Eurocircuits Team
 <contactref element="U6" pad="15"/>
 <contactref element="U6" pad="9"/>
 <contactref element="U6" pad="3"/>
-<contactref element="C38" pad="1"/>
-<contactref element="C39" pad="1"/>
+<contactref element="C36" pad="1"/>
+<contactref element="C37" pad="1"/>
 <via x="-63.5" y="50.5" extent="1-16" drill="0.35"/>
 <via x="-60.3" y="50.5" extent="1-16" drill="0.35"/>
 <via x="-57.1" y="50.5" extent="1-16" drill="0.35"/>
@@ -16326,10 +16317,10 @@ Your Eurocircuits Team
 <via x="47.8" y="15.2" extent="1-16" drill="0.35"/>
 <wire x1="52.1" y1="10.3187" x2="52.1" y2="11.7" width="0.4064" layer="1"/>
 <via x="52.1" y="11.7" extent="1-16" drill="0.35"/>
-<contactref element="C32" pad="1"/>
-<contactref element="C35" pad="1"/>
-<contactref element="C34" pad="1"/>
+<contactref element="C30" pad="1"/>
 <contactref element="C33" pad="1"/>
+<contactref element="C32" pad="1"/>
+<contactref element="C31" pad="1"/>
 <wire x1="64.1" y1="25.3" x2="63.1307" y2="25.3" width="0.2" layer="1"/>
 <via x="63.1307" y="25.3" extent="1-16" drill="0.35"/>
 <wire x1="64.4" y1="27.15" x2="64.45" y2="27.1" width="0.2" layer="1"/>
@@ -16419,7 +16410,7 @@ Your Eurocircuits Team
 <via x="55.5278" y="34.5722" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="CHARGE">
-<contactref element="R24" pad="1"/>
+<contactref element="R25" pad="1"/>
 <contactref element="U5" pad="14"/>
 <wire x1="46.4187" y1="18.4" x2="44.3" y2="18.4" width="0.2" layer="1"/>
 <wire x1="44.3" y1="18.4" x2="43.5" y2="19.2" width="0.2" layer="1"/>
@@ -16428,10 +16419,10 @@ Your Eurocircuits Team
 <wire x1="44" y1="22.45" x2="45.1" y2="22.45" width="0.2" layer="1"/>
 </signal>
 <signal name="V+">
-<contactref element="R31" pad="2"/>
+<contactref element="R32" pad="2"/>
 <contactref element="J2" pad="1"/>
 <contactref element="J3" pad="2"/>
-<contactref element="R45" pad="2"/>
+<contactref element="R46" pad="2"/>
 <contactref element="D2" pad="3"/>
 <contactref element="D5" pad="3"/>
 <contactref element="D6" pad="3"/>
@@ -16498,7 +16489,7 @@ Your Eurocircuits Team
 <vertex x="-62" y="-39"/>
 <vertex x="-63.5" y="-37.5"/>
 </polygon>
-<contactref element="R33" pad="1"/>
+<contactref element="R34" pad="1"/>
 <polygon width="0.1524" layer="16" thermals="no">
 <vertex x="0" y="44"/>
 <vertex x="0.5" y="44.5"/>
@@ -16518,12 +16509,12 @@ Your Eurocircuits Team
 <via x="4.5" y="42" extent="1-16" drill="0.35"/>
 <wire x1="2.855" y1="43.46" x2="-4.75" y2="51.065" width="0.2" layer="16"/>
 <wire x1="-4.75" y1="51.065" x2="-4.75" y2="53.3" width="0.2" layer="16"/>
-<contactref element="R17" pad="1"/>
-<contactref element="R35" pad="2"/>
+<contactref element="R36" pad="2"/>
 <wire x1="61" y1="-26.05" x2="60.95" y2="-26" width="0.2" layer="1"/>
 <wire x1="61" y1="-26.05" x2="61" y2="-35.92" width="0.2" layer="1"/>
 <wire x1="7.9" y1="60.85" x2="7.9" y2="39.8" width="0.2" layer="1"/>
-<wire x1="-39.178" y1="-18" x2="-36" y2="-18" width="0.2" layer="1"/>
+<contactref element="R17" pad="1"/>
+<wire x1="-38.85" y1="-18" x2="-35.8" y2="-18" width="0.2" layer="1"/>
 </signal>
 <signal name="VSN">
 <contactref element="Q2" pad="2"/>
@@ -16609,21 +16600,21 @@ Your Eurocircuits Team
 </polygon>
 </signal>
 <signal name="N$5">
-<contactref element="R42" pad="1"/>
+<contactref element="R43" pad="1"/>
 <contactref element="D15" pad="A"/>
 <wire x1="13.85" y1="75.65" x2="11.45" y2="75.65" width="0.2" layer="1"/>
 </signal>
 <signal name="+5V">
-<contactref element="R48" pad="2"/>
+<contactref element="R49" pad="2"/>
 <contactref element="S1" pad="1"/>
-<contactref element="R50" pad="2"/>
 <contactref element="R51" pad="2"/>
 <contactref element="R52" pad="2"/>
-<contactref element="R34" pad="2"/>
-<contactref element="R41" pad="2"/>
+<contactref element="R53" pad="2"/>
+<contactref element="R35" pad="2"/>
+<contactref element="R42" pad="2"/>
+<contactref element="R45" pad="2"/>
 <contactref element="R44" pad="2"/>
 <contactref element="R43" pad="2"/>
-<contactref element="R42" pad="2"/>
 <contactref element="C2" pad="1"/>
 <contactref element="U5" pad="5"/>
 <contactref element="U5" pad="17"/>
@@ -16632,14 +16623,14 @@ Your Eurocircuits Team
 <contactref element="U5" pad="38"/>
 <contactref element="U1" pad="789"/>
 <contactref element="R3" pad="2"/>
+<contactref element="R21" pad="2"/>
 <contactref element="R20" pad="2"/>
-<contactref element="R19" pad="2"/>
 <contactref element="U7" pad="16"/>
 <contactref element="U7" pad="10"/>
 <contactref element="U6" pad="16"/>
 <contactref element="U6" pad="10"/>
-<contactref element="C38" pad="2"/>
-<contactref element="C39" pad="2"/>
+<contactref element="C36" pad="2"/>
+<contactref element="C37" pad="2"/>
 <polygon width="0.2" layer="1" thermals="no">
 <vertex x="43.6" y="39.2"/>
 <vertex x="46.6" y="39.2"/>
@@ -16680,10 +16671,10 @@ Your Eurocircuits Team
 <wire x1="18.6" y1="72.6" x2="21.15" y2="72.6" width="0.2" layer="1"/>
 <wire x1="21.15" y1="72.6" x2="21.4" y2="72.85" width="0.2" layer="1"/>
 <wire x1="17.45" y1="75.65" x2="18.6" y2="74.5" width="0.2" layer="1"/>
-<contactref element="C32" pad="2"/>
-<contactref element="C35" pad="2"/>
-<contactref element="C34" pad="2"/>
+<contactref element="C30" pad="2"/>
 <contactref element="C33" pad="2"/>
+<contactref element="C32" pad="2"/>
+<contactref element="C31" pad="2"/>
 <wire x1="57.7813" y1="15.2" x2="59.1" y2="15.2" width="0.4064" layer="1"/>
 <wire x1="59.5" y1="15.6" x2="59.95" y2="15.6" width="0.4064" layer="1"/>
 <wire x1="59.1" y1="15.2" x2="59.5" y2="15.6" width="0.4064" layer="1"/>
@@ -16789,7 +16780,7 @@ Your Eurocircuits Team
 <wire x1="39.8" y1="42.9" x2="38.6" y2="42.9" width="0.2" layer="1"/>
 </signal>
 <signal name="!RESET">
-<contactref element="R34" pad="1"/>
+<contactref element="R35" pad="1"/>
 <contactref element="U5" pad="4"/>
 <contactref element="U6" pad="13"/>
 <wire x1="53.7" y1="21.6813" x2="53.7" y2="20.7" width="0.2" layer="1"/>
@@ -16806,18 +16797,18 @@ Your Eurocircuits Team
 <wire x1="60.8" y1="24.6" x2="60.5" y2="24.9" width="0.2" layer="1"/>
 </signal>
 <signal name="CHIP_GATE">
-<contactref element="R25" pad="2"/>
+<contactref element="R26" pad="2"/>
 <contactref element="U4" pad="7"/>
-<contactref element="R27" pad="1"/>
+<contactref element="R28" pad="1"/>
 <wire x1="23.15" y1="60.365" x2="19.885" y2="60.365" width="0.6096" layer="1"/>
 <wire x1="19.885" y1="60.365" x2="19.4" y2="60.85" width="0.6096" layer="1"/>
 <wire x1="19.4" y1="60.85" x2="16.4" y2="63.85" width="0.6096" layer="1"/>
 <wire x1="16.4" y1="63.85" x2="16.4" y2="64.678" width="0.6096" layer="1"/>
 </signal>
 <signal name="KICK_GATE">
-<contactref element="R26" pad="2"/>
+<contactref element="R27" pad="2"/>
 <contactref element="U4" pad="5"/>
-<contactref element="R28" pad="1"/>
+<contactref element="R29" pad="1"/>
 <wire x1="23.15" y1="62.905" x2="21.4" y2="64.655" width="0.6096" layer="1"/>
 <wire x1="21.4" y1="68.35" x2="22.45" y2="69.4" width="0.6096" layer="1"/>
 <wire x1="21.4" y1="64.655" x2="21.4" y2="68.35" width="0.6096" layer="1"/>
@@ -16825,7 +16816,7 @@ Your Eurocircuits Team
 <wire x1="21.377" y1="64.678" x2="21.4" y2="64.655" width="0.6096" layer="1"/>
 </signal>
 <signal name="CHIP">
-<contactref element="R39" pad="2"/>
+<contactref element="R40" pad="2"/>
 <contactref element="U4" pad="2"/>
 <wire x1="48.6377375" y1="52.4872625" x2="48.6377375" y2="61.3622625" width="0.2" layer="16"/>
 <contactref element="U5" pad="41"/>
@@ -16855,7 +16846,7 @@ Your Eurocircuits Team
 <wire x1="48.6377375" y1="61.3622625" x2="40.1" y2="69.9" width="0.2" layer="16"/>
 </signal>
 <signal name="KICK">
-<contactref element="R38" pad="2"/>
+<contactref element="R39" pad="2"/>
 <contactref element="U4" pad="4"/>
 <wire x1="49.13774375" y1="52.56225625" x2="49.13774375" y2="61.46225625" width="0.2" layer="16"/>
 <contactref element="U5" pad="40"/>
@@ -16883,8 +16874,8 @@ Your Eurocircuits Team
 <wire x1="28.355" y1="62.9" x2="28.35" y2="62.905" width="0.2" layer="1"/>
 </signal>
 <signal name="CHIP_GATE_S">
-<contactref element="R27" pad="2"/>
-<contactref element="C30" pad="1"/>
+<contactref element="R28" pad="2"/>
+<contactref element="C28" pad="1"/>
 <contactref element="D3" pad="2"/>
 <contactref element="Q3" pad="G_BOT"/>
 <wire x1="-11.9" y1="66.6" x2="-11.9" y2="54.511" width="0.4064" layer="16"/>
@@ -16903,8 +16894,8 @@ Your Eurocircuits Team
 <wire x1="17.9032" y1="70.1114" x2="-8.3886" y2="70.1114" width="0.4064" layer="16"/>
 </signal>
 <signal name="KICK_GATE_S">
-<contactref element="R28" pad="2"/>
-<contactref element="C31" pad="1"/>
+<contactref element="R29" pad="2"/>
+<contactref element="C29" pad="1"/>
 <contactref element="D4" pad="2"/>
 <contactref element="Q4" pad="G_BOT"/>
 <wire x1="0.5" y1="69" x2="1" y2="69.5" width="0.4064" layer="16"/>
@@ -16932,7 +16923,7 @@ Your Eurocircuits Team
 <signal name="QUICK_DISCHARGE">
 <contactref element="D7" pad="C"/>
 <contactref element="Q5" pad="3"/>
-<contactref element="R32" pad="1"/>
+<contactref element="R33" pad="1"/>
 <contactref element="Q6" pad="1"/>
 <wire x1="-4.75" y1="59.95" x2="-2.95" y2="61.75" width="0.2" layer="16"/>
 <wire x1="-2.95" y1="61.75" x2="-0.8" y2="61.75" width="0.2" layer="16"/>
@@ -16949,8 +16940,8 @@ Your Eurocircuits Team
 <wire x1="-3.8" y1="65" x2="-2" y2="65" width="0.2" layer="16"/>
 </signal>
 <signal name="QD_GATE_CTRL">
-<contactref element="R29" pad="1"/>
-<contactref element="R30" pad="2"/>
+<contactref element="R30" pad="1"/>
+<contactref element="R31" pad="2"/>
 <contactref element="Q5" pad="1"/>
 <wire x1="-6.2" y1="64.05" x2="-6.25" y2="64" width="0.2" layer="16"/>
 <wire x1="-8.1" y1="63.35" x2="-8.1" y2="64" width="0.2" layer="16"/>
@@ -16961,7 +16952,7 @@ Your Eurocircuits Team
 <signal name="DISCHARGE_DRAIN">
 <contactref element="Q6" pad="FIN"/>
 <contactref element="D20" pad="C"/>
-<contactref element="R33" pad="2"/>
+<contactref element="R34" pad="2"/>
 <polygon width="0.2" layer="16" thermals="no">
 <vertex x="-2.5" y="59"/>
 <vertex x="-2" y="59.5"/>
@@ -17035,7 +17026,7 @@ Your Eurocircuits Team
 <wire x1="35.127796875" y1="54.2713" x2="36.803815625" y2="55.94731875" width="0.2" layer="1"/>
 </signal>
 <signal name="BB_RX">
-<contactref element="R48" pad="1"/>
+<contactref element="R49" pad="1"/>
 <contactref element="J6" pad="2"/>
 <contactref element="U5" pad="37"/>
 <wire x1="67.29" y1="42.9006625" x2="67.29" y2="26.4" width="0.2" layer="16"/>
@@ -17064,14 +17055,14 @@ Your Eurocircuits Team
 <wire x1="42" y1="55.45" x2="42" y2="59.5" width="0.2" layer="1"/>
 </signal>
 <signal name="N$14">
-<contactref element="R49" pad="1"/>
+<contactref element="R50" pad="1"/>
 <contactref element="S1" pad="3"/>
 <wire x1="61.641240625" y1="49.05545625" x2="60.5" y2="47.914215625" width="0.2" layer="1"/>
 <wire x1="60.5" y1="47" x2="59.951040625" y2="46.451040625" width="0.2" layer="1"/>
 <wire x1="60.5" y1="47.914215625" x2="60.5" y2="47" width="0.2" layer="1"/>
 </signal>
 <signal name="MODE_SELECT">
-<contactref element="R49" pad="2"/>
+<contactref element="R50" pad="2"/>
 <contactref element="U5" pad="19"/>
 <wire x1="46.4187" y1="14.4" x2="40.5" y2="14.4" width="0.2" layer="1"/>
 <wire x1="38.7" y1="16.2" x2="38.7" y2="20" width="0.2" layer="1"/>
@@ -17096,12 +17087,12 @@ Your Eurocircuits Team
 <wire x1="57.6" y1="43.254475" x2="57.6" y2="44.1" width="0.2" layer="1"/>
 </signal>
 <signal name="QD_PU_BR">
-<contactref element="R31" pad="1"/>
-<contactref element="R32" pad="2"/>
+<contactref element="R32" pad="1"/>
+<contactref element="R33" pad="2"/>
 <wire x1="-4.75" y1="55.2" x2="-4.75" y2="58.05" width="0.2" layer="16"/>
 </signal>
 <signal name="!BTN_KCK">
-<contactref element="R51" pad="1"/>
+<contactref element="R52" pad="1"/>
 <contactref element="S3" pad="C"/>
 <contactref element="J7" pad="1"/>
 <wire x1="67.5" y1="-5.35" x2="58.1" y2="-5.35" width="0.2" layer="1"/>
@@ -17126,7 +17117,7 @@ Your Eurocircuits Team
 <wire x1="47.2" y1="9.2" x2="53.895" y2="2.505" width="0.2" layer="1"/>
 </signal>
 <signal name="!BTN_CHP">
-<contactref element="R50" pad="1"/>
+<contactref element="R51" pad="1"/>
 <contactref element="S2" pad="C"/>
 <contactref element="J8" pad="1"/>
 <wire x1="67.5" y1="5.15" x2="67.45" y2="5.1" width="0.2" layer="1"/>
@@ -17149,7 +17140,7 @@ Your Eurocircuits Team
 <wire x1="57.7813" y1="18.4" x2="58.985825" y2="18.4" width="0.2" layer="1"/>
 </signal>
 <signal name="!BTN_CHG">
-<contactref element="R52" pad="1"/>
+<contactref element="R53" pad="1"/>
 <contactref element="S4" pad="C"/>
 <contactref element="J9" pad="1"/>
 <wire x1="67.5" y1="-15.85" x2="67.4" y2="-15.95" width="0.2" layer="1"/>
@@ -17173,8 +17164,8 @@ Your Eurocircuits Team
 <wire x1="53.3" y1="-18.5" x2="53.5" y2="-18.7" width="0.2" layer="1"/>
 </signal>
 <signal name="VMON">
-<contactref element="R37" pad="2"/>
-<contactref element="R36" pad="1"/>
+<contactref element="R38" pad="2"/>
+<contactref element="R37" pad="1"/>
 <wire x1="54.55" y1="-26" x2="52.35" y2="-26" width="0.2" layer="1"/>
 <via x="54.5" y="-28" extent="1-16" drill="0.35"/>
 <wire x1="54.55" y1="-26" x2="54.5" y2="-26.05" width="0.2" layer="1"/>
@@ -17184,8 +17175,8 @@ Your Eurocircuits Team
 <wire x1="54.5" y1="10.3187" x2="54.5" y2="-26.05" width="0.2" layer="1"/>
 </signal>
 <signal name="HV_SENSE_DIV_BR">
-<contactref element="R35" pad="1"/>
-<contactref element="R36" pad="2"/>
+<contactref element="R36" pad="1"/>
+<contactref element="R37" pad="2"/>
 <wire x1="59.05" y1="-26" x2="56.45" y2="-26" width="0.2" layer="1"/>
 </signal>
 <signal name="HOLE1">
@@ -17201,7 +17192,7 @@ Your Eurocircuits Team
 <via x="57" y="56.94" extent="1-16" drill="3.8" diameter="7.2"/>
 </signal>
 <signal name="VBATT">
-<contactref element="R29" pad="2"/>
+<contactref element="R30" pad="2"/>
 <contactref element="U3" pad="13"/>
 <contactref element="R7" pad="1"/>
 <contactref element="R8" pad="1"/>
@@ -17225,7 +17216,7 @@ Your Eurocircuits Team
 <contactref element="U1" pad="16"/>
 <contactref element="C1" pad="1"/>
 <contactref element="R2" pad="1"/>
-<contactref element="C21" pad="+"/>
+<contactref element="C19" pad="+"/>
 <contactref element="C10" pad="1"/>
 <contactref element="C12" pad="1"/>
 <contactref element="C14" pad="1"/>
@@ -17236,8 +17227,8 @@ Your Eurocircuits Team
 <contactref element="R11" pad="2"/>
 <contactref element="C9" pad="2"/>
 <contactref element="U3" pad="14"/>
-<contactref element="C24" pad="1"/>
 <contactref element="C23" pad="1"/>
+<contactref element="C21" pad="1"/>
 <wire x1="-56.6" y1="-20.45" x2="-59.1" y2="-20.45" width="0.2" layer="1"/>
 <contactref element="D1" pad="C"/>
 <wire x1="29.1902" y1="58.96456875" x2="29.1902" y2="60.7" width="0.6096" layer="16"/>
@@ -17289,9 +17280,9 @@ Your Eurocircuits Team
 <wire x1="-48.2" y1="-19.7" x2="-44.8" y2="-16.3" width="0.6096" layer="1"/>
 <wire x1="-55.62903125" y1="-19.7" x2="-48.2" y2="-19.7" width="0.6096" layer="1"/>
 <wire x1="-44.8" y1="-16.3" x2="-44.8" y2="-13" width="0.6096" layer="1"/>
-<contactref element="C22" pad="1"/>
-<contactref element="C27" pad="1"/>
-<contactref element="C26" pad="1"/>
+<contactref element="C20" pad="1"/>
+<contactref element="C25" pad="1"/>
+<contactref element="C24" pad="1"/>
 <polygon width="0.2" layer="1" thermals="no">
 <vertex x="-66.4" y="46.8"/>
 <vertex x="-52.7" y="46.8"/>
@@ -17352,7 +17343,7 @@ Your Eurocircuits Team
 <wire x1="38.7" y1="64.7" x2="36.4857875" y2="66.9142125" width="0.2" layer="1"/>
 </signal>
 <signal name="BB_TX_CL">
-<contactref element="R47" pad="2"/>
+<contactref element="R48" pad="2"/>
 <contactref element="J5" pad="1"/>
 <wire x1="36.601040625" y1="59.501040625" x2="37.3" y2="60.2" width="0.2" layer="1"/>
 <wire x1="37.3" y1="64.2" x2="36" y2="65.5" width="0.2" layer="1"/>
@@ -17393,8 +17384,8 @@ Your Eurocircuits Team
 <wire x1="-55.925" y1="-17.825" x2="-56.6" y2="-18.5" width="0.1524" layer="1"/>
 </signal>
 <signal name="!DONE!">
-<contactref element="R21" pad="1"/>
-<contactref element="C19" pad="1"/>
+<contactref element="R22" pad="1"/>
+<contactref element="C17" pad="1"/>
 <contactref element="U5" pad="15"/>
 <wire x1="46.4187" y1="17.6" x2="44.2" y2="17.6" width="0.2" layer="1"/>
 <wire x1="44.2" y1="17.6" x2="41.3" y2="20.5" width="0.2" layer="1"/>
@@ -17404,8 +17395,8 @@ Your Eurocircuits Team
 <wire x1="42.5" y1="23.55" x2="42.5" y2="25.45" width="0.2" layer="1"/>
 </signal>
 <signal name="!FAULT!">
-<contactref element="R22" pad="1"/>
-<contactref element="C20" pad="1"/>
+<contactref element="R23" pad="1"/>
+<contactref element="C18" pad="1"/>
 <contactref element="U5" pad="16"/>
 <wire x1="46.4187" y1="16.8" x2="42.9" y2="16.8" width="0.2" layer="1"/>
 <wire x1="42.9" y1="16.8" x2="38.7" y2="21" width="0.2" layer="1"/>
@@ -17485,14 +17476,14 @@ Your Eurocircuits Team
 <wire x1="57.5" y1="7.1" x2="58.4" y2="8" width="0.2" layer="1"/>
 </signal>
 <signal name="N$20">
-<contactref element="R41" pad="1"/>
+<contactref element="R42" pad="1"/>
 <contactref element="D10" pad="A"/>
 <wire x1="45.75" y1="46.1" x2="45.75" y2="46.95" width="0.2" layer="1"/>
 <wire x1="45.75" y1="46.95" x2="45.4" y2="47.3" width="0.2" layer="1"/>
 <wire x1="45.4" y1="47.3" x2="45.4" y2="48.75" width="0.2" layer="1"/>
 </signal>
 <signal name="15V_PWR_BR">
-<contactref element="R40" pad="1"/>
+<contactref element="R41" pad="1"/>
 <contactref element="D8" pad="A"/>
 <wire x1="45.15" y1="47.545" x2="44.495" y2="48.2" width="0.2" layer="16"/>
 <via x="44.495" y="48.2" extent="1-16" drill="0.35"/>
@@ -17502,7 +17493,7 @@ Your Eurocircuits Team
 </signal>
 <signal name="N$27">
 <contactref element="D19" pad="A"/>
-<contactref element="R44" pad="1"/>
+<contactref element="R45" pad="1"/>
 <wire x1="13.85" y1="72.7" x2="11.45" y2="72.7" width="0.2" layer="1"/>
 </signal>
 <signal name="N$28">
@@ -17516,7 +17507,7 @@ Your Eurocircuits Team
 <signal name="FAULT_INV_BR">
 <contactref element="Q9" pad="1"/>
 <contactref element="Q8" pad="3"/>
-<contactref element="R43" pad="1"/>
+<contactref element="R44" pad="1"/>
 <wire x1="23.2" y1="74.5" x2="21.45" y2="74.5" width="0.2" layer="1"/>
 <wire x1="21.45" y1="74.5" x2="21.4" y2="74.55" width="0.2" layer="1"/>
 <wire x1="21.4" y1="74.55" x2="20.4" y2="73.55" width="0.2" layer="1"/>
@@ -17524,7 +17515,7 @@ Your Eurocircuits Team
 </signal>
 <signal name="N$29">
 <contactref element="D20" pad="A"/>
-<contactref element="R45" pad="1"/>
+<contactref element="R46" pad="1"/>
 <wire x1="7.9" y1="62.75" x2="5.7" y2="62.75" width="0.2" layer="1"/>
 <wire x1="5.7" y1="62.75" x2="4.8" y2="63.65" width="0.2" layer="1"/>
 </signal>
@@ -17581,7 +17572,7 @@ Your Eurocircuits Team
 </signal>
 <signal name="BALL_SENSE">
 <contactref element="U5" pad="43"/>
-<contactref element="R46" pad="2"/>
+<contactref element="R47" pad="2"/>
 <wire x1="57.7813" y1="19.2" x2="59.95" y2="19.2" width="0.2" layer="1"/>
 </signal>
 <signal name="HV_AC">
@@ -17623,10 +17614,10 @@ Your Eurocircuits Team
 <wire x1="21.3" y1="58.95" x2="21.2" y2="59.05" width="0.6096" layer="16"/>
 </signal>
 <signal name="+15.0V">
-<contactref element="R40" pad="2"/>
+<contactref element="R41" pad="2"/>
 <contactref element="U4" pad="6"/>
-<contactref element="C29" pad="2"/>
-<contactref element="C28" pad="2"/>
+<contactref element="C27" pad="2"/>
+<contactref element="C26" pad="2"/>
 <wire x1="23.25" y1="65.3" x2="25.3" y2="65.3" width="0.6096" layer="1"/>
 <wire x1="25.3" y1="65.3" x2="25.9" y2="65.3" width="0.6096" layer="1"/>
 <wire x1="25.9" y1="65.3" x2="26" y2="65.4" width="0.6096" layer="1"/>
@@ -17701,8 +17692,8 @@ Your Eurocircuits Team
 </signal>
 <signal name="CHARGE_RAW">
 <contactref element="U3" pad="8"/>
+<contactref element="R25" pad="2"/>
 <contactref element="R24" pad="2"/>
-<contactref element="R23" pad="2"/>
 <wire x1="-69.1" y1="46.3" x2="-69.1" y2="-11.55" width="0.2" layer="16"/>
 <wire x1="-69.1" y1="46.3" x2="-63.475" y2="51.925" width="0.2" layer="16"/>
 <wire x1="-63.475" y1="51.925" x2="-54.975" y2="51.925" width="0.2" layer="16"/>
@@ -17737,7 +17728,7 @@ Your Eurocircuits Team
 <wire x1="47.8627625" y1="34.09" x2="51.41" y2="37.6372375" width="0.2" layer="1"/>
 <wire x1="51.41" y1="37.6372375" x2="51.41" y2="50.11" width="0.2" layer="1"/>
 <wire x1="53.4" y1="50.05" x2="53.4" y2="52.1" width="0.2" layer="1"/>
-<contactref element="C25" pad="1"/>
+<contactref element="C22" pad="1"/>
 <wire x1="45.1" y1="24.15" x2="44.75" y2="24.5" width="0.2" layer="1"/>
 <wire x1="44.75" y1="24.5" x2="44.75" y2="26.2" width="0.2" layer="1"/>
 <wire x1="43.95" y1="28.3" x2="44.75" y2="27.5" width="0.2" layer="1"/>
@@ -17745,8 +17736,8 @@ Your Eurocircuits Team
 </signal>
 <signal name="!DONE!_RAW">
 <contactref element="U3" pad="7"/>
-<contactref element="R19" pad="1"/>
-<contactref element="R21" pad="2"/>
+<contactref element="R20" pad="1"/>
+<contactref element="R22" pad="2"/>
 <wire x1="-69.6" y1="46.4" x2="-69.6" y2="-11.75" width="0.2" layer="16"/>
 <wire x1="-69.6" y1="46.4" x2="-63.6" y2="52.4" width="0.2" layer="16"/>
 <wire x1="-63.6" y1="52.4" x2="-55.1" y2="52.4" width="0.2" layer="16"/>
@@ -17790,8 +17781,8 @@ Your Eurocircuits Team
 </signal>
 <signal name="!FAULT!_RAW">
 <contactref element="U3" pad="6"/>
-<contactref element="R22" pad="2"/>
-<contactref element="R20" pad="1"/>
+<contactref element="R23" pad="2"/>
+<contactref element="R21" pad="1"/>
 <contactref element="Q8" pad="1"/>
 <wire x1="-70.008040625" y1="46.578278125" x2="-70.008040625" y2="-11.991959375" width="0.2" layer="16"/>
 <wire x1="-63.73511875" y1="52.8512" x2="-70.008040625" y2="46.578278125" width="0.2" layer="16"/>
@@ -17832,17 +17823,18 @@ Your Eurocircuits Team
 </signal>
 <signal name="HV_FB">
 <contactref element="U3" pad="10"/>
-<contactref element="R17" pad="2"/>
-<contactref element="R18" pad="1"/>
-<wire x1="-51.15" y1="-18.2" x2="-51.15" y2="-17.05" width="0.2" layer="1"/>
+<contactref element="R18" pad="2"/>
+<contactref element="R19" pad="1"/>
 <wire x1="-52.675" y1="-15.525" x2="-52.675" y2="-15.375" width="0.2" layer="1"/>
-<wire x1="-51.15" y1="-17.05" x2="-52.675" y2="-15.525" width="0.2" layer="1"/>
-<wire x1="-51.15" y1="-18.2" x2="-48.2" y2="-18.2" width="0.2" layer="1"/>
+<wire x1="-51.25" y1="-18.2" x2="-48.2" y2="-18.2" width="0.2" layer="1"/>
 <via x="-48.2" y="-18.2" extent="1-16" drill="0.35"/>
 <wire x1="-48.2" y1="-18.2" x2="-45.3" y2="-18.2" width="0.2" layer="16"/>
 <via x="-45.3" y="-18.2" extent="1-16" drill="0.35"/>
-<wire x1="-45.3" y1="-18.2" x2="-42.222" y2="-18.2" width="0.2" layer="1"/>
-<wire x1="-42.222" y1="-18.2" x2="-42.022" y2="-18" width="0.2" layer="1"/>
+<wire x1="-45.3" y1="-18.2" x2="-45.1" y2="-18" width="0.2" layer="1"/>
+<wire x1="-43.85" y1="-18" x2="-45.1" y2="-18" width="0.2" layer="1"/>
+<wire x1="-52.675" y1="-15.375" x2="-52.675" y2="-16.225" width="0.2" layer="1"/>
+<wire x1="-51.25" y1="-17.65" x2="-51.25" y2="-18.2" width="0.2" layer="1"/>
+<wire x1="-52.675" y1="-16.225" x2="-51.25" y2="-17.65" width="0.2" layer="1"/>
 </signal>
 <signal name="VCC_LGC_EXT">
 <contactref element="J4" pad="2"/>
@@ -17850,8 +17842,8 @@ Your Eurocircuits Team
 <contactref element="U6" pad="7"/>
 <contactref element="U7" pad="1"/>
 <contactref element="U7" pad="7"/>
-<contactref element="C37" pad="2"/>
-<contactref element="C36" pad="2"/>
+<contactref element="C35" pad="2"/>
+<contactref element="C34" pad="2"/>
 <wire x1="49.7" y1="30.55" x2="52.3" y2="30.55" width="0.4064" layer="1"/>
 <wire x1="52.3" y1="30.55" x2="56.1" y2="30.55" width="0.4064" layer="1"/>
 <wire x1="56.1" y1="30.55" x2="58.6" y2="30.55" width="0.4064" layer="1"/>
@@ -17877,8 +17869,8 @@ Your Eurocircuits Team
 <contactref element="U6" pad="8"/>
 <contactref element="U7" pad="2"/>
 <contactref element="U7" pad="8"/>
-<contactref element="C37" pad="1"/>
-<contactref element="C36" pad="1"/>
+<contactref element="C35" pad="1"/>
+<contactref element="C34" pad="1"/>
 <wire x1="49.7" y1="32.25" x2="49.7" y2="33.2" width="0.4064" layer="1"/>
 <wire x1="49.7" y1="33.2" x2="50" y2="33.5" width="0.4064" layer="1"/>
 <via x="51.7" y="33.5" extent="1-16" drill="0.35"/>
@@ -18062,7 +18054,7 @@ Your Eurocircuits Team
 <wire x1="68.53" y1="13.92105" x2="68.20895" y2="13.6" width="0.2" layer="16"/>
 </signal>
 <signal name="BALL_SENSE_CL">
-<contactref element="R46" pad="1"/>
+<contactref element="R47" pad="1"/>
 <contactref element="D21" pad="C"/>
 <wire x1="61.65" y1="19.2" x2="62.8" y2="19.2" width="0.2" layer="1"/>
 <via x="62.8" y="19.2" extent="1-16" drill="0.35"/>
@@ -18084,9 +18076,14 @@ Your Eurocircuits Team
 </signal>
 <signal name="N$3">
 <contactref element="RV1" pad="P$3"/>
-<contactref element="R47" pad="1"/>
+<contactref element="R48" pad="1"/>
 <wire x1="34.2242625" y1="59.4493875" x2="34.248525" y2="59.4493875" width="0.2" layer="1"/>
 <wire x1="34.248525" y1="59.4493875" x2="35.39895625" y2="58.29895625" width="0.2" layer="1"/>
+</signal>
+<signal name="N$2">
+<contactref element="R18" pad="1"/>
+<contactref element="R17" pad="2"/>
+<wire x1="-40.55" y1="-18" x2="-42.15" y2="-18" width="0.2" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
@@ -18099,7 +18096,6 @@ Your Eurocircuits Team
 <errors>
 <approved hash="23,1,aa4b89b78a97a96b"/>
 <approved hash="23,16,b1bfbfbe835801df"/>
-<approved hash="23,1,ab4b76b77996a46a"/>
 <approved hash="5,1,a7391e9b110bcf45"/>
 <approved hash="5,1,74a4ca1b180bc158"/>
 <approved hash="5,1,4027e79b010bc15b"/>
@@ -18125,6 +18121,8 @@ Your Eurocircuits Team
 <approved hash="23,16,3b8e454e87b806f2"/>
 <approved hash="23,1,776987491a811bd4"/>
 <approved hash="23,16,5192aa6eaa0e51f2"/>
+<approved hash="23,1,fd1da961a8e0fc9c"/>
+<approved hash="23,1,7f4b82b78d957069"/>
 </errors>
 </board>
 </drawing>
