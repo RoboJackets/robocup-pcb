@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.3">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2624,6 +2624,17 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 <smd name="5678" x="1.3225" y="0" dx="4.895" dy="4.41" layer="1"/>
 <text x="-3.5" y="2.5" size="1" layer="25">&gt;NAME</text>
 </package>
+<package name="SOT-23-3">
+<smd name="3" x="0" y="1.2" dx="1" dy="0.7" layer="1" rot="R90"/>
+<smd name="1" x="-0.95" y="-1.2" dx="1" dy="0.7" layer="1" rot="R90"/>
+<smd name="2" x="0.95" y="-1.2" dx="1" dy="0.7" layer="1" rot="R90"/>
+<wire x1="1.45" y1="0.8" x2="1.45" y2="-0.8" width="0.2" layer="21"/>
+<wire x1="-1.45" y1="-0.8" x2="-1.45" y2="0.8" width="0.2" layer="21"/>
+<wire x1="-1.45" y1="0.8" x2="-0.55" y2="0.8" width="0.2" layer="21"/>
+<wire x1="0.45" y1="-0.8" x2="-0.45" y2="-0.8" width="0.2" layer="21"/>
+<wire x1="0.55" y1="0.8" x2="1.45" y2="0.8" width="0.2" layer="21"/>
+<text x="-2" y="-1" size="1" layer="25" rot="R90">&gt;NAME</text>
+</package>
 </packages>
 </library>
 <library name="RoboJackets-PowerICs">
@@ -2842,26 +2853,6 @@ In this library you will find integrated circuits (ICs) that are directly involv
 <vertex x="1.3" y="-0.525"/>
 <vertex x="1.8" y="-0.525"/>
 </polygon>
-</package>
-<package name="SOT223">
-<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
-<wire x1="3.2766" y1="1.778" x2="3.2766" y2="-1.778" width="0.2032" layer="21"/>
-<wire x1="3.2766" y1="-1.778" x2="-3.2766" y2="-1.778" width="0.2032" layer="21"/>
-<wire x1="-3.2766" y1="-1.778" x2="-3.2766" y2="1.778" width="0.2032" layer="21"/>
-<wire x1="-3.2766" y1="1.778" x2="3.2766" y2="1.778" width="0.2032" layer="21"/>
-<smd name="1" x="-2.3114" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
-<smd name="2" x="0" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
-<smd name="3" x="2.3114" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
-<smd name="4" x="0" y="3.099" dx="3.6" dy="2.2" layer="1"/>
-<text x="-3.5508" y="-2.04" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
-<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
-<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
-<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
-<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
-<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
-<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
-<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
 </package>
 </packages>
 </library>
@@ -14302,11 +14293,24 @@ Your Eurocircuits Team
 <attribute name="MPN" value="B2PS-VH(LF)(SN)" x="-50.5" y="58.5" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="NAME" x="-50.69" y="65.5" size="1" layer="26" font="vector" ratio="10" rot="MR0" align="bottom-center"/>
 </element>
-<element name="R33" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10k" x="43.5" y="54.75" rot="R270"/>
-<element name="R34" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="100k" x="41.25" y="54.75" rot="R90"/>
-<element name="R35" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="100k" x="45.75" y="54.75" rot="R270"/>
-<element name="U$16" library="RoboJackets-PowerICs" package="SOT223" value="AP2114H-3.3TRG1" x="47.125" y="62.125" rot="R270"/>
-<element name="U$17" library="RoboJackets-PowerICs" package="SOT223" value="AP2114H-3.3TRG1" x="35.5" y="56.5"/>
+<element name="R33" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10k" x="43.5" y="54.75" smashed="yes" rot="R270">
+<attribute name="NAME" x="44.135" y="55.385" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="41.595" y="55.385" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="R34" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="100k" x="41.25" y="54.75" smashed="yes" rot="R90">
+<attribute name="NAME" x="40.615" y="54.115" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="43.155" y="54.115" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="R35" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="100k" x="45.75" y="54.75" smashed="yes" rot="R270">
+<attribute name="NAME" x="46.385" y="55.385" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="43.845" y="55.385" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="Q1" library="RoboJackets-Discrete" package="SOT-23-3" value="BSS806NH6327XTSA1" x="37" y="55" smashed="yes" rot="R270">
+<attribute name="NAME" x="36" y="57" size="1" layer="25"/>
+</element>
+<element name="Q2" library="RoboJackets-Discrete" package="SOT-23-3" value="BSS806NH6327XTSA1" x="39" y="51" smashed="yes" rot="R180">
+<attribute name="NAME" x="41" y="52" size="1" layer="25" rot="R270"/>
+</element>
 </elements>
 <signals>
 <signal name="MOSI">
@@ -15382,14 +15386,14 @@ Your Eurocircuits Team
 <contactref element="R34" pad="1"/>
 <via x="41.25" y="53.125" extent="1-16" drill="0.35"/>
 <wire x1="41.25" y1="53.9" x2="41.25" y2="53.125" width="0.3" layer="1"/>
-<contactref element="U$16" pad="1"/>
-<contactref element="U$17" pad="1"/>
-<wire x1="44.0262" y1="64.4364" x2="44.0262" y2="65.4738" width="0.3" layer="1"/>
-<wire x1="44.0262" y1="65.4738" x2="44" y2="65.5" width="0.3" layer="1"/>
-<via x="44" y="65.5" extent="1-16" drill="0.35"/>
-<wire x1="33.1886" y1="53.4012" x2="33.1886" y2="52.3136" width="0.3" layer="1"/>
-<wire x1="33.1886" y1="52.3136" x2="32.125" y2="51.25" width="0.3" layer="1"/>
-<via x="32.125" y="51.25" extent="1-16" drill="0.35"/>
+<contactref element="Q2" pad="2"/>
+<contactref element="Q1" pad="2"/>
+<wire x1="38.05" y1="52.2" x2="36.2" y2="52.2" width="0.3" layer="1"/>
+<wire x1="36.2" y1="52.2" x2="36" y2="52" width="0.3" layer="1"/>
+<via x="36" y="52" extent="1-16" drill="0.35"/>
+<wire x1="35.8" y1="54.05" x2="34.55" y2="54.05" width="0.3" layer="1"/>
+<wire x1="34.55" y1="54.05" x2="34.5" y2="54" width="0.3" layer="1"/>
+<via x="34.5" y="54" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="+5V">
 <contactref element="R3" pad="1"/>
@@ -20076,32 +20080,32 @@ Your Eurocircuits Team
 <contactref element="R34" pad="2"/>
 <contactref element="R33" pad="1"/>
 <wire x1="43.5" y1="55.6" x2="41.25" y2="55.6" width="0.3" layer="1"/>
-<contactref element="U$16" pad="3"/>
-<wire x1="44.0262" y1="59.8136" x2="44.0262" y2="56.1262" width="0.3" layer="1"/>
-<wire x1="44.0262" y1="56.1262" x2="43.5" y2="55.6" width="0.3" layer="1"/>
+<contactref element="Q1" pad="1"/>
+<wire x1="39.55" y1="55.95" x2="35.8" y2="55.95" width="0.3" layer="1"/>
+<wire x1="41.25" y1="55.6" x2="39.9" y2="55.6" width="0.3" layer="1"/>
+<wire x1="39.9" y1="55.6" x2="39.55" y2="55.95" width="0.3" layer="1"/>
 </signal>
 <signal name="RST-NETWORK">
 <contactref element="KIT1" pad="!RST"/>
-<contactref element="U$17" pad="4"/>
-<contactref element="U$17" pad="2"/>
-<wire x1="35.5" y1="59.599" x2="35.5" y2="53.4012" width="0.3" layer="1"/>
-<wire x1="35.5" y1="53.4012" x2="39.01" y2="49.8912" width="0.3" layer="1"/>
 <wire x1="39.01" y1="49.8912" x2="39.01" y2="46.07" width="0.3" layer="1"/>
+<contactref element="Q2" pad="3"/>
+<wire x1="39" y1="49.8" x2="39" y2="49.8812" width="0.3" layer="1"/>
+<wire x1="39" y1="49.8812" x2="39.01" y2="49.8912" width="0.3" layer="1"/>
 </signal>
 <signal name="N$3">
 <contactref element="R35" pad="1"/>
-<contactref element="U$16" pad="4"/>
-<contactref element="U$16" pad="2"/>
-<contactref element="U$17" pad="3"/>
-<wire x1="50.224" y1="62.125" x2="47.0495" y2="58.9505" width="0.3" layer="1"/>
 <wire x1="47.0495" y1="58.9505" x2="45.75" y2="57.651" width="0.3" layer="1"/>
 <wire x1="45.75" y1="57.651" x2="45.75" y2="55.6" width="0.3" layer="1"/>
-<wire x1="44.0262" y1="62.125" x2="47.0495" y2="59.1017" width="0.3" layer="1"/>
 <wire x1="47.0495" y1="59.1017" x2="47.0495" y2="58.9505" width="0.3" layer="1"/>
-<wire x1="37.8114" y1="53.4012" x2="38.4012" y2="53.4012" width="0.3" layer="1"/>
-<wire x1="44.9" y1="54.75" x2="45.75" y2="55.6" width="0.3" layer="1"/>
-<wire x1="38.4012" y1="53.4012" x2="39.75" y2="54.75" width="0.3" layer="1"/>
-<wire x1="39.75" y1="54.75" x2="44.9" y2="54.75" width="0.3" layer="1"/>
+<wire x1="45.75" y1="55.6" x2="44.9" y2="54.75" width="0.3" layer="1"/>
+<contactref element="Q1" pad="3"/>
+<contactref element="Q2" pad="1"/>
+<wire x1="39.25" y1="54.75" x2="39" y2="55" width="0.3" layer="1"/>
+<wire x1="39" y1="55" x2="38.2" y2="55" width="0.3" layer="1"/>
+<wire x1="44.9" y1="54.75" x2="40" y2="54.75" width="0.3" layer="1"/>
+<wire x1="40" y1="54.75" x2="39.25" y2="54.75" width="0.3" layer="1"/>
+<wire x1="39.95" y1="52.2" x2="39.95" y2="54.7" width="0.3" layer="1"/>
+<wire x1="39.95" y1="54.7" x2="40" y2="54.75" width="0.3" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
