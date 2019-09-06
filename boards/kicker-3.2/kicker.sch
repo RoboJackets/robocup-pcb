@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -34412,6 +34412,8 @@ In this library you will find inductors. If you are looking for a common package
 <part name="FRAME3" library="ro-frames" deviceset="RO_FRAME_A_L_20161226" device=""/>
 <part name="FRAME4" library="ro-frames" deviceset="RO_FRAME_A_L_20161226" device=""/>
 <part name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="505k 0.1%"/>
+<part name="C38" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 50V"/>
+<part name="SUPPLY110" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -36120,8 +36122,8 @@ This structure is repeated twice. Once for kicking and once for chipping.</text>
 <attribute name="NAME" x="36.6014" y="123.19" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="41.402" y="123.19" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SUPPLY56" gate="GND" x="83.82" y="114.3" smashed="yes">
-<attribute name="VALUE" x="81.915" y="111.125" size="1.778" layer="96"/>
+<instance part="SUPPLY56" gate="GND" x="93.98" y="114.3" smashed="yes">
+<attribute name="VALUE" x="92.075" y="111.125" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY53" gate="GND" x="38.1" y="114.3" smashed="yes">
 <attribute name="VALUE" x="36.195" y="111.125" size="1.778" layer="96"/>
@@ -36150,9 +36152,9 @@ This structure is repeated twice. Once for kicking and once for chipping.</text>
 <attribute name="DCHECKED" x="213.36" y="22.86" size="1.27" layer="94" align="center"/>
 <attribute name="DDRAWN" x="213.36" y="27.94" size="1.27" layer="94" align="center"/>
 </instance>
-<instance part="D7" gate="G$1" x="83.82" y="134.62" smashed="yes" rot="MR90">
-<attribute name="NAME" x="84.582" y="132.715" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="81.28" y="137.16" size="1.778" layer="96" rot="MR270"/>
+<instance part="D7" gate="G$1" x="93.98" y="134.62" smashed="yes" rot="MR90">
+<attribute name="NAME" x="94.742" y="132.715" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="91.44" y="137.16" size="1.778" layer="96" rot="MR270"/>
 </instance>
 <instance part="Q5" gate="G$1" x="63.5" y="137.16" smashed="yes">
 <attribute name="VALUE" x="66.04" y="137.16" size="1.778" layer="96"/>
@@ -36169,13 +36171,20 @@ This structure is repeated twice. Once for kicking and once for chipping.</text>
 <attribute name="NAME" x="110.7186" y="176.53" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="105.918" y="176.53" size="1.778" layer="96" rot="R270"/>
 </instance>
+<instance part="C38" gate="G$1" x="81.28" y="129.54" smashed="yes" rot="R180">
+<attribute name="NAME" x="80.264" y="128.905" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="80.264" y="133.731" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="SUPPLY110" gate="GND" x="81.28" y="114.3" smashed="yes">
+<attribute name="VALUE" x="79.375" y="111.125" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<wire x1="83.82" y1="132.08" x2="83.82" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="132.08" x2="93.98" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="SUPPLY56" gate="GND" pin="GND"/>
 <pinref part="D7" gate="G$1" pin="A"/>
 </segment>
@@ -36194,21 +36203,30 @@ This structure is repeated twice. Once for kicking and once for chipping.</text>
 <wire x1="109.22" y1="142.24" x2="109.22" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="Q6" gate="G$1" pin="S"/>
 </segment>
+<segment>
+<pinref part="C38" gate="G$1" pin="1"/>
+<wire x1="81.28" y1="127" x2="81.28" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="SUPPLY110" gate="GND" pin="GND"/>
+</segment>
 </net>
 <net name="QUICK_DISCHARGE" class="0">
 <segment>
 <wire x1="63.5" y1="144.78" x2="63.5" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="144.78" x2="83.82" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="137.16" x2="83.82" y2="144.78" width="0.1524" layer="91"/>
-<junction x="83.82" y="144.78"/>
+<wire x1="63.5" y1="144.78" x2="81.28" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="144.78" x2="93.98" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="137.16" x2="93.98" y2="144.78" width="0.1524" layer="91"/>
+<junction x="93.98" y="144.78"/>
 <pinref part="D7" gate="G$1" pin="C"/>
 <pinref part="Q5" gate="G$1" pin="D"/>
 <pinref part="R33" gate="G$1" pin="1"/>
 <wire x1="63.5" y1="147.32" x2="63.5" y2="144.78" width="0.1524" layer="91"/>
 <junction x="63.5" y="144.78"/>
 <pinref part="Q6" gate="G$1" pin="G"/>
-<wire x1="104.14" y1="144.78" x2="83.82" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="144.78" x2="93.98" y2="144.78" width="0.1524" layer="91"/>
 <label x="78.74" y="144.78" size="1.27" layer="95"/>
+<pinref part="C38" gate="G$1" pin="2"/>
+<wire x1="81.28" y1="134.62" x2="81.28" y2="144.78" width="0.1524" layer="91"/>
+<junction x="81.28" y="144.78"/>
 </segment>
 </net>
 <net name="QD_GATE_CTRL" class="0">
