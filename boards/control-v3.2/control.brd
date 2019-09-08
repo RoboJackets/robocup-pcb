@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.2">
+<eagle version="9.4.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -14095,7 +14095,7 @@ Your Eurocircuits Team
 <element name="U$6" library="RoboJackets-Aesthetics" package="MOTOR-3" value="" x="33.75" y="-24.94" smashed="yes" rot="R45"/>
 <element name="U$7" library="RoboJackets-Aesthetics" package="MOTOR-4" value="" x="58.75" y="10.06" smashed="yes" rot="R90"/>
 <element name="U$9" library="RoboJackets-Aesthetics" package="KICKER" value="" x="66.25" y="42.56" smashed="yes" rot="R90"/>
-<element name="U$10" library="RoboJackets-Aesthetics" package="ERR-IMU" value="" x="-18" y="43.06" smashed="yes"/>
+<element name="U$10" library="RoboJackets-Aesthetics" package="ERR-IMU" value="" x="-14.5" y="47.06" smashed="yes"/>
 <element name="U$11" library="RoboJackets-Aesthetics" package="ROBOBUZZ_1.0X2" value="" x="1.5" y="48.5" smashed="yes"/>
 <element name="U7" library="RoboJackets-PowerICs" package="MPM3620GQV-P" value="MPM3620GQV-P" x="-6" y="-19.5" smashed="yes" rot="MR90">
 <attribute name="DIGIKEY" value="1589-1252-1-ND" x="-6" y="-19.5" size="1.778" layer="28" rot="MR90" display="off"/>
@@ -14260,7 +14260,7 @@ Your Eurocircuits Team
 <attribute name="VALUE" x="-8.635" y="40.095" size="1.27" layer="27"/>
 </element>
 <element name="C32" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10nF" x="-8" y="44.5" smashed="yes">
-<attribute name="NAME" x="-9.635" y="42.135" size="1" layer="25" font="vector" ratio="15"/>
+<attribute name="NAME" x="-9.135" y="45.635" size="1" layer="25" font="vector" ratio="15"/>
 <attribute name="SPICEPREFIX" value="C" x="-8" y="44.5" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-8.635" y="42.595" size="1.27" layer="27"/>
 </element>
@@ -14299,7 +14299,7 @@ Your Eurocircuits Team
 <attribute name="NAME" x="41" y="52" size="1" layer="25" ratio="15" rot="R270"/>
 </element>
 <element name="C24" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="2.2uF" x="-13.5" y="44.5" smashed="yes">
-<attribute name="NAME" x="-14.135" y="45.135" size="1.27" layer="25"/>
+<attribute name="NAME" x="-17.635" y="44.135" size="1" layer="25" ratio="15"/>
 <attribute name="SPICEPREFIX" value="C" x="-13.5" y="44.5" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-14.135" y="42.595" size="1.27" layer="27"/>
 </element>
@@ -15381,9 +15381,9 @@ Your Eurocircuits Team
 <wire x1="-12.65" y1="44.5" x2="-11.5" y2="44.5" width="0.3" layer="1"/>
 <wire x1="-11.5" y1="44.5" x2="-11.5" y2="44.4" width="0.3" layer="1"/>
 <via x="-11.5" y="44.4" extent="1-16" drill="0.35"/>
-<wire x1="-11.65" y1="43.5" x2="-11" y2="43.5" width="0.3" layer="1"/>
-<via x="-11" y="43.5" extent="1-16" drill="0.35"/>
-<wire x1="-12.5" y1="42.65" x2="-11.65" y2="43.5" width="0.3" layer="1"/>
+<wire x1="-12.15" y1="43" x2="-12" y2="43" width="0.3" layer="1"/>
+<via x="-12" y="43" extent="1-16" drill="0.35"/>
+<wire x1="-12.5" y1="42.65" x2="-12.15" y2="43" width="0.3" layer="1"/>
 <wire x1="-7.15" y1="44.5" x2="-7.15" y2="44.35" width="0.3" layer="1"/>
 <wire x1="-7.15" y1="44.35" x2="-8" y2="43.5" width="0.3" layer="1"/>
 <via x="-8" y="43.5" extent="1-16" drill="0.35"/>
@@ -15699,11 +15699,9 @@ Your Eurocircuits Team
 <contactref element="U4" pad="P$5"/>
 <wire x1="-15.375" y1="44.5" x2="-15.375" y2="47.25" width="0.3" layer="1"/>
 <wire x1="-14.35" y1="44.5" x2="-15.375" y2="44.5" width="0.3" layer="1"/>
-<wire x1="-12" y1="41.9125" x2="-11.0125" y2="42.9" width="0.3" layer="1"/>
-<wire x1="-11.0125" y1="42.9" x2="-10.75146875" y2="42.9" width="0.3" layer="1"/>
-<wire x1="-10.75146875" y1="42.9" x2="-10.15146875" y2="43.5" width="0.3" layer="1"/>
+<wire x1="-12" y1="41.9125" x2="-10.4125" y2="43.5" width="0.3" layer="1"/>
+<wire x1="-10.4125" y1="43.5" x2="-9.85" y2="43.5" width="0.3" layer="1"/>
 <wire x1="-9.85" y1="43.5" x2="-8.85" y2="44.5" width="0.3" layer="1"/>
-<wire x1="-10.15146875" y1="43.5" x2="-9.85" y2="43.5" width="0.3" layer="1"/>
 <wire x1="-16" y1="40.85" x2="-15" y2="41.85" width="0.3" layer="1"/>
 <wire x1="-15" y1="41.85" x2="-15" y2="42" width="0.3" layer="1"/>
 <wire x1="-8.85" y1="44.5" x2="-8.85" y2="46.35" width="0.3" layer="1"/>
