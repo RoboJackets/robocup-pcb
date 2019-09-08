@@ -3,7 +3,7 @@
 <eagle version="9.4.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -31144,13 +31144,12 @@ ripple current from motors</text>
 </net>
 <net name="V_MTRAIN" class="0">
 <segment>
-<wire x1="187.96" y1="170.18" x2="190.5" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="170.18" x2="205.74" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="170.18" x2="193.04" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="KIT1" gate="G$1" pin="VDD"/>
-<label x="193.04" y="170.18" size="1.778" layer="95"/>
+<label x="193.04" y="170.18" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="RST-NETWORK" class="0">
+<net name="!RST!-NETWORK" class="0">
 <segment>
 <pinref part="KIT1" gate="G$1" pin="!RST"/>
 <wire x1="187.96" y1="162.56" x2="193.04" y2="162.56" width="0.1524" layer="91"/>
@@ -33536,7 +33535,7 @@ serial from MTrain</text>
 <label x="165.1" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="BATT_PWR_AVAIL" class="0">
 <segment>
 <pinref part="R34" gate="G$1" pin="2"/>
 <pinref part="R33" gate="G$1" pin="1"/>
@@ -33549,7 +33548,7 @@ serial from MTrain</text>
 <wire x1="40.64" y1="149.86" x2="53.34" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="RST-NETWORK" class="0">
+<net name="!RST!-NETWORK" class="0">
 <segment>
 <wire x1="93.98" y1="185.42" x2="96.52" y2="185.42" width="0.1524" layer="91"/>
 <label x="96.52" y="185.42" size="1.27" layer="95" xref="yes"/>
@@ -33564,7 +33563,7 @@ serial from MTrain</text>
 <label x="58.42" y="185.42" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="!RST!_CTRL" class="0">
 <segment>
 <pinref part="R35" gate="G$1" pin="1"/>
 <wire x1="58.42" y1="165.1" x2="58.42" y2="160.02" width="0.1524" layer="91"/>
