@@ -30753,11 +30753,9 @@ ripple current from motors</text>
 <part name="SUPPLY29" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="C30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="GND46" library="supply1" deviceset="GND" device=""/>
-<part name="C31" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="GND47" library="supply1" deviceset="GND" device=""/>
 <part name="R31" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10k"/>
-<part name="R32" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="0"/>
-<part name="C32" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
+<part name="C32" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10nF"/>
 <part name="GND52" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY31" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="SUPPLY35" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
@@ -30776,6 +30774,7 @@ ripple current from motors</text>
 <part name="GND40" library="supply1" deviceset="GND" device=""/>
 <part name="Q1" library="RoboJackets-Discrete" deviceset="NMOS" device="SOT-23-3" value="BSS806NH6327XTSA1"/>
 <part name="Q2" library="RoboJackets-Discrete" deviceset="NMOS" device="SOT-23-3" value="BSS806NH6327XTSA1"/>
+<part name="C24" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="2.2uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -33070,7 +33069,7 @@ serial from MTrain</text>
 <wire x1="271.78" y1="114.3" x2="271.78" y2="48.26" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="271.78" y1="48.26" x2="147.32" y2="48.26" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="147.32" y1="48.26" x2="147.32" y2="114.3" width="0.1524" layer="97" style="shortdash"/>
-<text x="149.86" y="109.22" size="1.778" layer="97">ICM</text>
+<text x="149.86" y="109.22" size="1.778" layer="97">IMU</text>
 <wire x1="7.62" y1="88.9" x2="139.7" y2="88.9" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="139.7" y1="88.9" x2="139.7" y2="5.08" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="139.7" y1="5.08" x2="7.62" y2="5.08" width="0.1524" layer="97" style="shortdash"/>
@@ -33119,18 +33118,14 @@ serial from MTrain</text>
 <attribute name="VALUE" x="241.3" y="73.66" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY29" gate="P" x="160.02" y="83.82" smashed="yes">
-<attribute name="VALUE" x="153.035" y="81.915" size="1.778" layer="96"/>
+<attribute name="VALUE" x="150.495" y="81.915" size="1.778" layer="96"/>
 </instance>
-<instance part="C30" gate="G$1" x="160.02" y="73.66" smashed="yes">
-<attribute name="NAME" x="161.036" y="74.295" size="1.778" layer="95"/>
-<attribute name="VALUE" x="161.036" y="69.469" size="1.778" layer="96"/>
+<instance part="C30" gate="G$1" x="165.1" y="73.66" smashed="yes">
+<attribute name="NAME" x="166.116" y="74.295" size="1.778" layer="95"/>
+<attribute name="VALUE" x="166.116" y="69.469" size="1.778" layer="96"/>
 </instance>
-<instance part="GND46" gate="1" x="172.72" y="66.04" smashed="yes">
-<attribute name="VALUE" x="170.18" y="63.5" size="1.778" layer="96"/>
-</instance>
-<instance part="C31" gate="G$1" x="243.84" y="96.52" smashed="yes" rot="R90">
-<attribute name="NAME" x="243.205" y="97.536" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="248.031" y="97.536" size="1.778" layer="96" rot="R90"/>
+<instance part="GND46" gate="1" x="172.72" y="63.5" smashed="yes">
+<attribute name="VALUE" x="170.18" y="60.96" size="1.778" layer="96"/>
 </instance>
 <instance part="GND47" gate="1" x="256.54" y="93.98" smashed="yes">
 <attribute name="VALUE" x="254" y="91.44" size="1.778" layer="96"/>
@@ -33138,10 +33133,6 @@ serial from MTrain</text>
 <instance part="R31" gate="G$1" x="167.64" y="96.52" smashed="yes" rot="R90">
 <attribute name="NAME" x="166.1414" y="92.71" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="170.942" y="92.71" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="R32" gate="G$1" x="190.5" y="68.58" smashed="yes" rot="R180">
-<attribute name="NAME" x="194.31" y="67.0814" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="194.31" y="71.882" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="C32" gate="G$1" x="200.66" y="63.5" smashed="yes">
 <attribute name="NAME" x="201.676" y="64.135" size="1.778" layer="95"/>
@@ -33192,6 +33183,10 @@ serial from MTrain</text>
 <attribute name="VALUE" x="96.52" y="162.56" size="1.778" layer="96"/>
 <attribute name="NAME" x="96.52" y="165.1" size="1.778" layer="95"/>
 </instance>
+<instance part="C24" gate="G$1" x="154.94" y="73.66" smashed="yes">
+<attribute name="NAME" x="155.956" y="74.295" size="1.778" layer="95"/>
+<attribute name="VALUE" x="155.956" y="69.469" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -33220,14 +33215,9 @@ serial from MTrain</text>
 <pinref part="GND50" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="GND46" gate="1" pin="GND"/>
-<pinref part="C30" gate="G$1" pin="2"/>
-<wire x1="172.72" y1="68.58" x2="160.02" y2="68.58" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C31" gate="G$1" pin="2"/>
 <pinref part="GND47" gate="1" pin="GND"/>
-<wire x1="248.92" y1="96.52" x2="256.54" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="U4" gate="G$1" pin="RESV3(GND)"/>
+<wire x1="236.22" y1="96.52" x2="256.54" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND52" gate="1" pin="GND"/>
@@ -33248,6 +33238,16 @@ serial from MTrain</text>
 <pinref part="GND40" gate="1" pin="GND"/>
 <wire x1="93.98" y1="157.48" x2="93.98" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="Q2" gate="G$1" pin="S"/>
+</segment>
+<segment>
+<pinref part="GND46" gate="1" pin="GND"/>
+<pinref part="C24" gate="G$1" pin="2"/>
+<wire x1="154.94" y1="68.58" x2="154.94" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="66.04" x2="165.1" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="C30" gate="G$1" pin="2"/>
+<wire x1="165.1" y1="66.04" x2="172.72" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="68.58" x2="165.1" y2="66.04" width="0.1524" layer="91"/>
+<junction x="165.1" y="66.04"/>
 </segment>
 </net>
 <net name="+3.3V" class="0">
@@ -33270,17 +33270,22 @@ serial from MTrain</text>
 </segment>
 <segment>
 <pinref part="SUPPLY29" gate="P" pin="+3.3V"/>
-<wire x1="160.02" y1="81.28" x2="160.02" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="76.2" x2="160.02" y2="81.28" width="0.1524" layer="91"/>
-<junction x="160.02" y="81.28"/>
 <pinref part="U4" gate="G$1" pin="VDD"/>
 <wire x1="185.42" y1="81.28" x2="177.8" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="C30" gate="G$1" pin="1"/>
-<junction x="160.02" y="76.2"/>
 <pinref part="D2" gate="G$1" pin="A"/>
 <wire x1="177.8" y1="81.28" x2="160.02" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="76.2" x2="177.8" y2="81.28" width="0.1524" layer="91"/>
 <junction x="177.8" y="81.28"/>
+<pinref part="C24" gate="G$1" pin="1"/>
+<pinref part="C30" gate="G$1" pin="1"/>
+<junction x="165.1" y="76.2"/>
+<wire x1="165.1" y1="76.2" x2="165.1" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="78.74" x2="160.02" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="78.74" x2="154.94" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="78.74" x2="154.94" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="81.28" x2="160.02" y2="78.74" width="0.1524" layer="91"/>
+<junction x="160.02" y="81.28"/>
+<junction x="160.02" y="78.74"/>
 </segment>
 <segment>
 <pinref part="SUPPLY35" gate="P" pin="+3.3V"/>
@@ -33290,11 +33295,12 @@ serial from MTrain</text>
 <segment>
 <pinref part="C32" gate="G$1" pin="1"/>
 <wire x1="200.66" y1="66.04" x2="200.66" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="R32" gate="G$1" pin="1"/>
-<wire x1="200.66" y1="68.58" x2="195.58" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="SUPPLY31" gate="P" pin="+3.3V"/>
 <wire x1="200.66" y1="68.58" x2="210.82" y2="68.58" width="0.1524" layer="91"/>
 <junction x="200.66" y="68.58"/>
+<pinref part="U4" gate="G$1" pin="VDDIO"/>
+<wire x1="185.42" y1="68.58" x2="185.42" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="68.58" x2="200.66" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R33" gate="G$1" pin="2"/>
@@ -33501,20 +33507,6 @@ serial from MTrain</text>
 <pinref part="U4" gate="G$1" pin="SCK(SCL/SCLK)"/>
 <wire x1="185.42" y1="96.52" x2="180.34" y2="96.52" width="0.1524" layer="91"/>
 <label x="180.34" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="RESV3" class="0">
-<segment>
-<pinref part="U4" gate="G$1" pin="RESV3(GND)"/>
-<pinref part="C31" gate="G$1" pin="1"/>
-<wire x1="236.22" y1="96.52" x2="241.3" y2="96.52" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="VDDIO" class="0">
-<segment>
-<pinref part="R32" gate="G$1" pin="2"/>
-<pinref part="U4" gate="G$1" pin="VDDIO"/>
-<wire x1="185.42" y1="68.58" x2="185.42" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="!CS!-ICM" class="0">
