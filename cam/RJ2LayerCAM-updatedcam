@@ -6,7 +6,7 @@
     "description": {
         "EN": "CAM job description goes here."
     },
-    "output_type": "directory",
+    "output_type": "zip",
     "outputs": [
         {
             "filename_prefix": "CAMOutputs/DrillFiles",
@@ -219,7 +219,7 @@
                         46
                     ],
                     "milling": false,
-                    "name": "milling",
+                    "name": "kicker-v3_2",
                     "polarity": "positive",
                     "type": "gerber_layer"
                 }
