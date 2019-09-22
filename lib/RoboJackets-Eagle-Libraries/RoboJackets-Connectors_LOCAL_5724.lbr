@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1522,16 +1522,9 @@ rfk_1850.pdf</description>
 <text x="0" y="1.5" size="0.254" layer="51" font="vector" align="center">ALL COMPONENT KO</text>
 <text x="0" y="3" size="0.254" layer="51" font="vector" align="center">TALL COMPONENT KO</text>
 </package>
-<package name="B2P_SMALL">
-<wire x1="6.9" y1="2.31" x2="-2.9" y2="2.31" width="0.127" layer="21"/>
-<wire x1="-2.9" y1="2.31" x2="-2.9" y2="-2.31" width="0.127" layer="21"/>
-<wire x1="-2.9" y1="-2.31" x2="6.9" y2="-2.31" width="0.127" layer="21"/>
-<wire x1="6.9" y1="-2.31" x2="6.9" y2="2.31" width="0.127" layer="21"/>
-<pad name="2" x="3.98" y="0" drill="1.65" rot="R180"/>
-<pad name="1" x="0.02" y="0" drill="1.65" shape="square" rot="R180"/>
-<text x="2" y="2.81" size="1" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
-</package>
 </packages>
+<packages3d>
+</packages3d>
 <symbols>
 <symbol name="2-PIN_CONN">
 <circle x="-0.762" y="2.54" radius="0.762" width="0.254" layer="94"/>
@@ -3277,57 +3270,19 @@ XT-60 Power Connector
 </device>
 </devices>
 </deviceset>
-<deviceset name="2-PIN-KICKER" prefix="J">
-<description>&lt;h1&gt;
-Power Connector
-&lt;/h1&gt;&lt;br/&gt;
-
-&lt;img src="http://media.digikey.com/photos/JST%20Photos/B2PS-VH_sml.jpg" width="130"&gt;
-
-&lt;table&gt;
-&lt;tr&gt;
-&lt;td&gt;
-&lt;b&gt;Brand: &lt;/b&gt;
-&lt;/td&gt;&lt;td&gt;
-&lt;a href="https://www.jst.com/"&gt;JST Sales America Inc.&lt;/a&gt;
-&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-&lt;td&gt;
-&lt;b&gt;Series:&lt;/b&gt;
-&lt;/td&gt;
-&lt;td&gt;
-&lt;a href="http://www.digikey.com/product-search/en?FV=fff40016,fff802f3,ffec0e9d"&gt;VH&lt;/a&gt;
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;
-&lt;b&gt;Distributor:&lt;/b&gt;
-&lt;/td&gt;
-&lt;td&gt;
-&lt;a href="http://www.digikey.com/product-detail/en/B2PS-VH%28LF%29%28SN%29/455-1648-ND/926555"&gt;Digi-Key&lt;/a&gt;
-&lt;/td&gt;
-
-&lt;/tr&gt;
-&lt;/table&gt;&lt;br/&gt;</description>
-<gates>
-<gate name="G$1" symbol="2-PIN_CONN" x="0" y="0"/>
-</gates>
-<devices>
-<device name="S" package="B2P_SMALL">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DIGIKEY" value="455-1648-ND" constant="no"/>
-<attribute name="MPN" value="B2PS-VH(LF)(SN)" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 </drawing>
+<compatibility>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
+</note>
+</compatibility>
 </eagle>
