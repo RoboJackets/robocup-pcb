@@ -3,7 +3,7 @@
 <eagle version="9.4.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -16195,14 +16195,14 @@ In this library you will find frames that can be used to help organize a schemat
 <part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
-<part name="D3" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-GREEN" value="GREEN"/>
-<part name="D4" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-RED" value="RED"/>
+<part name="D4" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-GREEN" value="GREEN"/>
+<part name="D3" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-RED" value="RED"/>
 <part name="SUPPLY25" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="J2" library="RoboJackets-Connectors" deviceset="TC2050-IDC-NL" device=""/>
 <part name="SUPPLY19" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="SUPPLY20" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="R7" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="1k"/>
 <part name="R8" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="1k"/>
+<part name="R7" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="1k"/>
 <part name="R9" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="1k"/>
 <part name="R10" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="1k"/>
 <part name="D5" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-GREEN" value="GREEN"/>
@@ -16398,13 +16398,13 @@ internally connected to low.</text>
 <instance part="SUPPLY3" gate="P" x="35.56" y="43.18" smashed="yes">
 <attribute name="VALUE" x="33.655" y="46.355" size="1.778" layer="96"/>
 </instance>
-<instance part="D3" gate="G$1" x="233.68" y="254" smashed="yes" rot="R90">
-<attribute name="NAME" x="231.14" y="256.54" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="233.68" y="256.54" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="D4" gate="G$1" x="233.68" y="241.3" smashed="yes" rot="R90">
 <attribute name="NAME" x="231.14" y="243.84" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="233.68" y="243.84" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="D3" gate="G$1" x="233.68" y="256.54" smashed="yes" rot="R90">
+<attribute name="NAME" x="231.14" y="259.08" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="233.68" y="259.08" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="SUPPLY25" gate="GND" x="238.76" y="200.66" smashed="yes">
 <attribute name="VALUE" x="236.855" y="197.485" size="1.778" layer="96"/>
@@ -16419,13 +16419,13 @@ internally connected to low.</text>
 <instance part="SUPPLY20" gate="GND" x="144.78" y="15.24" smashed="yes">
 <attribute name="VALUE" x="142.875" y="12.065" size="1.778" layer="96"/>
 </instance>
-<instance part="R7" gate="G$1" x="220.98" y="254" smashed="yes">
-<attribute name="NAME" x="217.17" y="255.4986" size="1.778" layer="95"/>
-<attribute name="VALUE" x="217.17" y="250.698" size="1.778" layer="96"/>
-</instance>
 <instance part="R8" gate="G$1" x="220.98" y="241.3" smashed="yes">
 <attribute name="NAME" x="217.17" y="242.7986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="217.17" y="237.998" size="1.778" layer="96"/>
+</instance>
+<instance part="R7" gate="G$1" x="220.98" y="256.54" smashed="yes">
+<attribute name="NAME" x="217.17" y="258.0386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="217.17" y="253.238" size="1.778" layer="96"/>
 </instance>
 <instance part="R9" gate="G$1" x="220.98" y="223.52" smashed="yes">
 <attribute name="NAME" x="217.17" y="225.0186" size="1.778" layer="95"/>
@@ -16688,19 +16688,19 @@ internally connected to low.</text>
 <pinref part="SUPPLY4" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="D3" gate="G$1" pin="K"/>
-<wire x1="236.22" y1="254" x2="238.76" y2="254" width="0.1524" layer="91"/>
-<wire x1="238.76" y1="254" x2="238.76" y2="241.3" width="0.1524" layer="91"/>
-<wire x1="238.76" y1="241.3" x2="238.76" y2="223.52" width="0.1524" layer="91"/>
+<pinref part="D4" gate="G$1" pin="K"/>
+<wire x1="236.22" y1="241.3" x2="238.76" y2="241.3" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="241.3" x2="238.76" y2="256.54" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="256.54" x2="238.76" y2="223.52" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="223.52" x2="238.76" y2="205.74" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="205.74" x2="238.76" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="205.74" x2="238.76" y2="205.74" width="0.1524" layer="91"/>
 <junction x="238.76" y="205.74"/>
 <wire x1="236.22" y1="223.52" x2="238.76" y2="223.52" width="0.1524" layer="91"/>
 <junction x="238.76" y="223.52"/>
-<pinref part="D4" gate="G$1" pin="K"/>
-<wire x1="236.22" y1="241.3" x2="238.76" y2="241.3" width="0.1524" layer="91"/>
-<junction x="238.76" y="241.3"/>
+<pinref part="D3" gate="G$1" pin="K"/>
+<wire x1="236.22" y1="256.54" x2="238.76" y2="256.54" width="0.1524" layer="91"/>
+<junction x="238.76" y="256.54"/>
 <pinref part="SUPPLY25" gate="GND" pin="GND"/>
 <pinref part="D5" gate="G$1" pin="K"/>
 <pinref part="D6" gate="G$1" pin="K"/>
@@ -17004,9 +17004,9 @@ internally connected to low.</text>
 <pinref part="U1" gate="G$1" pin="P23-GPIO_0"/>
 </segment>
 <segment>
-<pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="215.9" y1="241.3" x2="213.36" y2="241.3" width="0.1524" layer="91"/>
-<label x="213.36" y="241.3" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="215.9" y1="256.54" x2="213.36" y2="256.54" width="0.1524" layer="91"/>
+<label x="213.36" y="256.54" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="DBG_TLK_RAD" class="0">
@@ -17016,23 +17016,23 @@ internally connected to low.</text>
 <pinref part="U1" gate="G$1" pin="P24-GPIO_1"/>
 </segment>
 <segment>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="215.9" y1="254" x2="213.36" y2="254" width="0.1524" layer="91"/>
-<label x="213.36" y="254" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="215.9" y1="241.3" x2="213.36" y2="241.3" width="0.1524" layer="91"/>
+<label x="213.36" y="241.3" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="TLK" class="0">
 <segment>
-<pinref part="D3" gate="G$1" pin="A"/>
-<wire x1="228.6" y1="254" x2="226.06" y2="254" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="D4" gate="G$1" pin="A"/>
+<wire x1="228.6" y1="241.3" x2="226.06" y2="241.3" width="0.1524" layer="91"/>
+<pinref part="R8" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="DBG_ERR" class="0">
 <segment>
-<pinref part="D4" gate="G$1" pin="A"/>
-<wire x1="228.6" y1="241.3" x2="226.06" y2="241.3" width="0.1524" layer="91"/>
-<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="D3" gate="G$1" pin="A"/>
+<wire x1="228.6" y1="256.54" x2="226.06" y2="256.54" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="DGB_LNK" class="0">
