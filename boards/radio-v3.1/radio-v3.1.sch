@@ -3,7 +3,7 @@
 <eagle version="9.4.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -16180,7 +16180,7 @@ In this library you will find frames that can be used to help organize a schemat
 <part name="D1" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-GREEN" value="GREEN"/>
 <part name="D2" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-GREEN" value="GREEN"/>
 <part name="R5" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="1k"/>
-<part name="R6" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="1k"/>
+<part name="R6" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="665"/>
 <part name="SUPPLY16" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY18" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="SUPPLY17" library="RoboJackets-Supplies" deviceset="+5.0V" device=""/>
@@ -16188,8 +16188,6 @@ In this library you will find frames that can be used to help organize a schemat
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="U1" library="RoboJackets-RF" deviceset="ISM43340" device=""/>
 <part name="C1" library="RoboJackets-Capacitors" deviceset="ECA-0JM221" device="" value="220uF"/>
-<part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF"/>
-<part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF"/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF"/>
 <part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
@@ -16219,12 +16217,13 @@ In this library you will find frames that can be used to help organize a schemat
 <part name="U6" library="radio_in_progress" deviceset="TPD2E2U06DRLR" device=""/>
 <part name="U7" library="radio_in_progress" deviceset="TPD2E2U06DRLR" device=""/>
 <part name="U8" library="radio_in_progress" deviceset="TPD2E2U06DRLR" device=""/>
+<part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF"/>
+<part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF"/>
 </parts>
 <sheets>
 <sheet>
 <description>Radios &amp; Radio Power</description>
 <plain>
-<text x="83.82" y="243.84" size="1.778" layer="97">DNC</text>
 <text x="83.82" y="246.38" size="1.778" layer="97">DNC</text>
 <text x="83.82" y="248.92" size="1.778" layer="97">DNC</text>
 <wire x1="195.58" y1="185.42" x2="195.58" y2="116.84" width="0.1524" layer="97" style="shortdash"/>
@@ -16243,8 +16242,8 @@ In this library you will find frames that can be used to help organize a schemat
 <wire x1="180.34" y1="269.24" x2="134.62" y2="269.24" width="0.1524" layer="97" style="shortdash"/>
 <text x="137.16" y="264.16" size="2.54" layer="97">Power Status</text>
 <text x="31.75" y="250.19" size="1.4224" layer="97">Note: 1.2A Supply</text>
-<text x="92.456" y="237.744" size="1.4224" layer="97">(ISM43340 doc pg. 13) 
-Note: 1.12A
+<text x="77.216" y="230.124" size="1.4224" layer="97">(ISM43340 doc pg. 
+13) Note: 1.12A
 </text>
 <text x="48.26" y="200.66" size="1.4224" layer="97">R1: STD PU
 R2: AAM (Fig 10, pg. 18)
@@ -16256,7 +16255,7 @@ C1, C2: Recommended App (pg. 1) </text>
 <wire x1="7.62" y1="7.62" x2="127" y2="7.62" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="127" y1="7.62" x2="127" y2="185.42" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="127" y1="185.42" x2="7.62" y2="185.42" width="0.1524" layer="97" style="shortdash"/>
-<text x="10.16" y="180.34" size="2.54" layer="97">Radios</text>
+<text x="10.16" y="180.34" size="2.54" layer="97">Radio</text>
 <wire x1="187.96" y1="269.24" x2="187.96" y2="193.04" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="187.96" y1="193.04" x2="248.92" y2="193.04" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="187.96" y1="269.24" x2="248.92" y2="269.24" width="0.1524" layer="97" style="shortdash"/>
@@ -16282,9 +16281,14 @@ enabled state.</text>
 <wire x1="190.5" y1="185.42" x2="190.5" y2="63.5" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="190.5" y1="185.42" x2="134.62" y2="185.42" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="190.5" y1="63.5" x2="134.62" y2="63.5" width="0.1524" layer="97" style="shortdash"/>
-<text x="142.24" y="175.26" size="2.54" layer="97" font="vector">ESD Protection Chips</text>
+<text x="142.24" y="175.26" size="2.54" layer="97">ESD Protection Chips</text>
 <text x="96.52" y="152.4" size="1.27" layer="97">Pin left floating on purpose, 
-internally connected to low.</text>
+internally connected to GND.</text>
+<text x="68.58" y="256.54" size="1.778" layer="97">Routing comment: Feedback pin(FB)
+should not have vias, under 4,5,6 a 
+copper plane should be made to 
+improve the regulator's performance</text>
+<text x="193.04" y="195.58" size="1.778" layer="97">Connected to radio pins for debugging purposes</text>
 </plain>
 <instances>
 <instance part="U2" gate="G$1" x="66.04" y="238.76" smashed="yes">
@@ -16371,14 +16375,6 @@ internally connected to low.</text>
 <instance part="C1" gate="G$1" x="40.64" y="33.02" smashed="yes">
 <attribute name="NAME" x="41.656" y="33.655" size="1.778" layer="95"/>
 <attribute name="VALUE" x="41.656" y="28.829" size="1.778" layer="96"/>
-</instance>
-<instance part="C2" gate="G$1" x="50.8" y="33.02" smashed="yes">
-<attribute name="NAME" x="51.816" y="33.655" size="1.778" layer="95"/>
-<attribute name="VALUE" x="51.816" y="28.829" size="1.778" layer="96"/>
-</instance>
-<instance part="C3" gate="G$1" x="60.96" y="33.02" smashed="yes">
-<attribute name="NAME" x="61.976" y="33.655" size="1.778" layer="95"/>
-<attribute name="VALUE" x="61.976" y="28.829" size="1.778" layer="96"/>
 </instance>
 <instance part="C4" gate="G$1" x="71.12" y="33.02" smashed="yes">
 <attribute name="NAME" x="72.136" y="33.655" size="1.778" layer="95"/>
@@ -16481,6 +16477,14 @@ internally connected to low.</text>
 <attribute name="NAME" x="160.02" y="102.616" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="160.02" y="83.82" size="1.778" layer="96" font="vector"/>
 </instance>
+<instance part="C2" gate="G$1" x="50.8" y="33.02" smashed="yes">
+<attribute name="NAME" x="51.816" y="33.655" size="1.778" layer="95"/>
+<attribute name="VALUE" x="51.816" y="28.829" size="1.778" layer="96"/>
+</instance>
+<instance part="C3" gate="G$1" x="60.96" y="33.02" smashed="yes">
+<attribute name="NAME" x="61.976" y="33.655" size="1.778" layer="95"/>
+<attribute name="VALUE" x="61.976" y="28.829" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -16535,10 +16539,8 @@ internally connected to low.</text>
 <pinref part="C1" gate="G$1" pin="+"/>
 <wire x1="40.64" y1="35.56" x2="40.64" y2="38.1" width="0.1524" layer="91"/>
 <junction x="40.64" y="38.1"/>
-<pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="35.56" x2="50.8" y2="38.1" width="0.1524" layer="91"/>
 <junction x="50.8" y="38.1"/>
-<pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="60.96" y1="35.56" x2="60.96" y2="38.1" width="0.1524" layer="91"/>
 <junction x="60.96" y="38.1"/>
 <pinref part="C4" gate="G$1" pin="1"/>
@@ -16549,6 +16551,8 @@ internally connected to low.</text>
 <junction x="81.28" y="38.1"/>
 <wire x1="35.56" y1="38.1" x2="35.56" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="SUPPLY3" gate="P" pin="+3.3V"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<pinref part="C3" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="147.32" y1="33.02" x2="144.78" y2="33.02" width="0.1524" layer="91"/>
@@ -16675,10 +16679,8 @@ internally connected to low.</text>
 <pinref part="C4" gate="G$1" pin="2"/>
 <wire x1="71.12" y1="27.94" x2="71.12" y2="25.4" width="0.1524" layer="91"/>
 <junction x="71.12" y="25.4"/>
-<pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="60.96" y1="27.94" x2="60.96" y2="25.4" width="0.1524" layer="91"/>
 <junction x="60.96" y="25.4"/>
-<pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="50.8" y1="27.94" x2="50.8" y2="25.4" width="0.1524" layer="91"/>
 <junction x="50.8" y="25.4"/>
 <pinref part="C1" gate="G$1" pin="-"/>
@@ -16686,24 +16688,26 @@ internally connected to low.</text>
 <junction x="40.64" y="25.4"/>
 <wire x1="35.56" y1="25.4" x2="35.56" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="SUPPLY4" gate="GND" pin="GND"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<pinref part="C3" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="D4" gate="G$1" pin="K"/>
-<wire x1="236.22" y1="241.3" x2="238.76" y2="241.3" width="0.1524" layer="91"/>
-<wire x1="238.76" y1="241.3" x2="238.76" y2="256.54" width="0.1524" layer="91"/>
-<wire x1="238.76" y1="256.54" x2="238.76" y2="223.52" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="223.52" x2="238.76" y2="205.74" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="205.74" x2="238.76" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="205.74" x2="238.76" y2="205.74" width="0.1524" layer="91"/>
 <junction x="238.76" y="205.74"/>
 <wire x1="236.22" y1="223.52" x2="238.76" y2="223.52" width="0.1524" layer="91"/>
-<junction x="238.76" y="223.52"/>
-<pinref part="D3" gate="G$1" pin="K"/>
-<wire x1="236.22" y1="256.54" x2="238.76" y2="256.54" width="0.1524" layer="91"/>
-<junction x="238.76" y="256.54"/>
 <pinref part="SUPPLY25" gate="GND" pin="GND"/>
 <pinref part="D5" gate="G$1" pin="K"/>
 <pinref part="D6" gate="G$1" pin="K"/>
+<pinref part="D3" gate="G$1" pin="K"/>
+<wire x1="236.22" y1="256.54" x2="238.76" y2="256.54" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="223.52" x2="238.76" y2="241.3" width="0.1524" layer="91"/>
+<junction x="238.76" y="223.52"/>
+<pinref part="D4" gate="G$1" pin="K"/>
+<wire x1="238.76" y1="241.3" x2="238.76" y2="256.54" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="241.3" x2="238.76" y2="241.3" width="0.1524" layer="91"/>
+<junction x="238.76" y="241.3"/>
 </segment>
 <segment>
 <wire x1="147.32" y1="30.48" x2="144.78" y2="30.48" width="0.1524" layer="91"/>
@@ -17047,6 +17051,13 @@ internally connected to low.</text>
 <wire x1="228.6" y1="205.74" x2="226.06" y2="205.74" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="2"/>
 <pinref part="D6" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="THERMAL_DNC" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="SW"/>
+<wire x1="81.28" y1="243.84" x2="83.82" y2="243.84" width="0.1524" layer="91"/>
+<label x="83.82" y="243.84" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
