@@ -16289,6 +16289,9 @@ should not have vias, under 4,5,6 a
 copper plane should be made to 
 improve the regulator's performance</text>
 <text x="193.04" y="195.58" size="1.778" layer="97">Connected to radio pins for debugging purposes</text>
+<text x="137.16" y="198.12" size="1.778" layer="97">Different resistance values for same
+brightness, to standardized on 
+every board.</text>
 </plain>
 <instances>
 <instance part="U2" gate="G$1" x="66.04" y="238.76" smashed="yes">
