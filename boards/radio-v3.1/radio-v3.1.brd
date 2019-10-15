@@ -3,7 +3,7 @@
 <eagle version="9.4.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="mm" altunit="mm"/>
@@ -6395,7 +6395,7 @@ Your Eurocircuits Team
 <contactref element="C4" pad="1"/>
 <contactref element="C5" pad="1"/>
 <contactref element="J2" pad="P$1"/>
-<via x="30.9" y="16.6" extent="1-16" drill="0.35"/>
+<via x="28.9" y="16.7" extent="1-16" drill="0.35"/>
 <via x="23.4" y="16.6" extent="1-16" drill="0.35"/>
 <via x="23.5" y="34.9" extent="1-16" drill="0.35"/>
 <via x="20.9" y="34.9" extent="1-16" drill="0.35"/>
@@ -6433,9 +6433,9 @@ Your Eurocircuits Team
 <vertex x="44.7" y="25"/>
 <vertex x="40.9" y="21.2"/>
 </polygon>
-<wire x1="30.835" y1="4.06" x2="33.6" y2="6.825" width="0.45" layer="1"/>
+<wire x1="30.835" y1="4.06" x2="33.3" y2="6.525" width="0.45" layer="1"/>
 <wire x1="23.41505" y1="16.61505" x2="23.4" y2="16.6" width="0.3" layer="1"/>
-<via x="31.1" y="29.5" extent="1-16" drill="0.35"/>
+<via x="26.3" y="30.7" extent="1-16" drill="0.35"/>
 <wire x1="20.9" y1="34.9" x2="20.83" y2="34.83" width="0.3" layer="16"/>
 <wire x1="20.83" y1="34.83" x2="20.83" y2="32.24" width="0.3" layer="16"/>
 <wire x1="23.5" y1="34.9" x2="22.9" y2="34.3" width="0.3" layer="16"/>
@@ -6449,11 +6449,9 @@ Your Eurocircuits Team
 <wire x1="23.5" y1="34.95" x2="23.5" y2="34.9" width="0.3" layer="16"/>
 <wire x1="22.2" y1="36.25" x2="22.2" y2="36.2" width="0.3" layer="16"/>
 <wire x1="22.2" y1="36.2" x2="20.9" y2="34.9" width="0.3" layer="16"/>
-<wire x1="23.58" y1="32.22" x2="24.28" y2="32.22" width="0.3" layer="16"/>
-<wire x1="25" y1="31.5" x2="25" y2="29.9" width="0.3" layer="16"/>
-<wire x1="30.7" y1="29.9" x2="31.1" y2="29.5" width="0.3" layer="16"/>
-<wire x1="30.7" y1="29.9" x2="25" y2="29.9" width="0.3" layer="16"/>
-<wire x1="24.28" y1="32.22" x2="25" y2="31.5" width="0.3" layer="16"/>
+<wire x1="26.3" y1="30.7" x2="24.7" y2="30.7" width="0.3" layer="16"/>
+<wire x1="24.7" y1="30.7" x2="23.58" y2="31.82" width="0.3" layer="16"/>
+<wire x1="23.58" y1="32.22" x2="23.58" y2="31.82" width="0.3" layer="16"/>
 <polygon width="0.3" layer="1" thermals="no">
 <vertex x="25" y="17.3"/>
 <vertex x="24" y="17.3"/>
@@ -6464,19 +6462,23 @@ Your Eurocircuits Team
 <vertex x="25" y="16.4"/>
 </polygon>
 <via x="23.4" y="17.4" extent="1-16" drill="0.35"/>
-<wire x1="30.9" y1="16.6" x2="26.85" y2="16.6" width="0.45" layer="16"/>
-<wire x1="26.85" y1="16.6" x2="26.6" y2="16.85" width="0.3" layer="16"/>
+<wire x1="28.9" y1="16.7" x2="26.75" y2="16.7" width="0.45" layer="16"/>
+<wire x1="26.75" y1="16.7" x2="26.6" y2="16.85" width="0.3" layer="16"/>
 <wire x1="26.6" y1="16.85" x2="26.35" y2="16.6" width="0.3" layer="16"/>
 <wire x1="26.35" y1="16.6" x2="23.4" y2="16.6" width="0.45" layer="16"/>
 <wire x1="23.4" y1="17.4" x2="23.34" y2="17.34" width="0.3" layer="16"/>
 <wire x1="23.34" y1="17.34" x2="22.07" y2="17.34" width="0.45" layer="16"/>
-<wire x1="33.6" y1="6.825" x2="33.6" y2="14" width="0.45" layer="1"/>
+<wire x1="33.3" y1="6.525" x2="33.3" y2="14.3" width="0.45" layer="1"/>
 <via x="43.4" y="27.6" extent="1-16" drill="0.45" diameter="0.85"/>
 <wire x1="43.4" y1="27.6" x2="43.4" y2="22.4" width="0.35" layer="1"/>
 <wire x1="43.4" y1="22.4" x2="48.875" y2="22.4" width="0.35" layer="1"/>
 <wire x1="48.875" y1="22.4" x2="50" y2="23.525" width="0.35" layer="1"/>
-<wire x1="33.6" y1="14" x2="33.5" y2="14" width="0.35" layer="1"/>
-<wire x1="33.5" y1="14" x2="30.9" y2="16.6" width="0.35" layer="1"/>
+<wire x1="33.3" y1="14.3" x2="30.9" y2="16.7" width="0.45" layer="1"/>
+<wire x1="30.9" y1="16.7" x2="28.9" y2="16.7" width="0.45" layer="1"/>
+<wire x1="26.3" y1="30.7" x2="27.6" y2="29.4" width="0.45" layer="1"/>
+<wire x1="27.6" y1="29.4" x2="30.8" y2="29.4" width="0.45" layer="1"/>
+<wire x1="30.8" y1="29.4" x2="30.84" y2="29.4" width="0.35" layer="1"/>
+<wire x1="30.84" y1="29.4" x2="32.63" y2="31.19" width="0.35" layer="1"/>
 </signal>
 <signal name="GND">
 <contactref element="U2" pad="14"/>
@@ -6994,13 +6996,13 @@ Your Eurocircuits Team
 <wire x1="4.4" y1="43.9" x2="4.4" y2="41.45" width="0.2" layer="1"/>
 </signal>
 <signal name="BOLT3">
-<via x="5" y="5" extent="1-16" drill="3.8" diameter="7.2"/>
+<via x="5" y="5" extent="1-16" drill="2.85" diameter="6.4"/>
 </signal>
 <signal name="BOLT1">
-<via x="47.5" y="35.5" extent="1-16" drill="3.8" diameter="7.2"/>
+<via x="47.5" y="35.5" extent="1-16" drill="2.85" diameter="6.4"/>
 </signal>
 <signal name="BOLT2">
-<via x="47.5" y="5" extent="1-16" drill="3.8" diameter="7.2"/>
+<via x="47.5" y="5" extent="1-16" drill="2.85" diameter="6.4"/>
 </signal>
 <signal name="THERMAL_DNC">
 <contactref element="U2" pad="456"/>
