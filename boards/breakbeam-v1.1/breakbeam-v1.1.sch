@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5356,7 +5356,7 @@ Source: http://www.molex.com/product/micro/87438.html</description>
 </classes>
 <parts>
 <part name="FRAME1" library="RoboJackets-Frames" deviceset="FRAME_B_L" device=""/>
-<part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1"/>
+<part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1" value="PT204-6B/ IR204"/>
 <part name="X1" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="87438-02" device=""/>
 <part name="X2" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="87438-02" device=""/>
 </parts>
@@ -5394,7 +5394,7 @@ Source: http://www.molex.com/product/micro/87438.html</description>
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
+<net name="ANODE" class="0">
 <segment>
 <pinref part="X1" gate="-1" pin="S"/>
 <wire x1="198.12" y1="198.12" x2="198.12" y2="205.74" width="0.1524" layer="91"/>
@@ -5407,7 +5407,7 @@ Source: http://www.molex.com/product/micro/87438.html</description>
 <junction x="213.36" y="205.74"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="CATHODE" class="0">
 <segment>
 <pinref part="X2" gate="-2" pin="S"/>
 <pinref part="LED1" gate="G$1" pin="C"/>
