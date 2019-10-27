@@ -171,9 +171,9 @@ In this library you will find all the connectors used on any of our boards.
 &lt;/p&gt;</description>
 <packages>
 <package name="TC2050-IDC-NL">
-<hole x="-3.81" y="0" drill="0.787"/>
-<hole x="3.81" y="1.015" drill="0.787"/>
-<hole x="3.81" y="-1.015" drill="0.787"/>
+<hole x="-3.81" y="0" drill="0.991"/>
+<hole x="3.81" y="1.015" drill="0.991"/>
+<hole x="3.81" y="-1.015" drill="0.991"/>
 <smd name="P$1" x="-2.54" y="-0.635" dx="0.787" dy="0.787" layer="1" roundness="100" thermals="no"/>
 <smd name="P$2" x="-1.27" y="-0.635" dx="0.787" dy="0.787" layer="1" roundness="100" thermals="no"/>
 <smd name="P$3" x="0" y="-0.635" dx="0.787" dy="0.787" layer="1" roundness="100" thermals="no"/>
