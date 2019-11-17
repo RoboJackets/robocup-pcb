@@ -27952,6 +27952,21 @@ In this library the device names are the same as the pin names of the symbols, t
 <pad name="VDD" x="11.43" y="24.13" drill="1.02" rot="R180"/>
 <text x="-12.7" y="27.94" size="1.27" layer="25">&gt;NAME</text>
 </package>
+<package name="IMU-KIT">
+<wire x1="-12.7" y1="7.62" x2="2.54" y2="7.62" width="0.127" layer="21"/>
+<wire x1="2.54" y1="7.62" x2="2.54" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-5.08" x2="-12.7" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-12.7" y1="-5.08" x2="-12.7" y2="7.62" width="0.127" layer="21"/>
+<pad name="MOSI" x="-11.43" y="5.08" drill="1.02"/>
+<pad name="MISO" x="-11.43" y="2.54" drill="1.02"/>
+<pad name="SCK" x="-11.43" y="0" drill="1.02"/>
+<pad name="!CS!" x="-11.43" y="-2.54" drill="1.02"/>
+<pad name="GND" x="1.27" y="-2.54" drill="1.02" rot="R180"/>
+<pad name="INT" x="1.27" y="0" drill="1.02" rot="R180"/>
+<pad name="EN" x="1.27" y="2.54" drill="1.02" rot="R180"/>
+<pad name="+3.3V" x="1.27" y="5.08" drill="1.02" rot="R180"/>
+<text x="-12.7" y="8.89" size="1.27" layer="25">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MTRAIN">
@@ -28610,6 +28625,21 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="-20.955" y1="10.16" x2="-8.255" y2="10.16" width="0.254" layer="94"/>
 <wire x1="-20.955" y1="7.62" x2="-8.255" y2="7.62" width="0.254" layer="94"/>
 </symbol>
+<symbol name="IMU">
+<description>IMU</description>
+<pin name="GND" x="0" y="5.08" length="middle" rot="R180"/>
+<pin name="INT" x="0" y="0" length="middle" rot="R180"/>
+<pin name="EN" x="0" y="-5.08" length="middle" rot="R180"/>
+<pin name="+3.3V" x="0" y="-10.16" length="middle" rot="R180"/>
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-12.7" x2="-22.86" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="-12.7" x2="-22.86" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<pin name="MOSI" x="-27.94" y="5.08" length="middle"/>
+<pin name="MISO" x="-27.94" y="0" length="middle"/>
+<pin name="SCK" x="-27.94" y="-5.08" length="middle"/>
+<pin name="!CS!" x="-27.94" y="-10.16" length="middle"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MTRAIN" prefix="KIT">
@@ -28660,6 +28690,29 @@ In this library the device names are the same as the pin names of the symbols, t
 <connect gate="G$1" pin="VBUS" pad="VBUS"/>
 <connect gate="G$1" pin="VDD" pad="VDD"/>
 <connect gate="G$1" pin="VIN" pad="VIN"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="IMU" prefix="KIT">
+<description>IMU breakout board</description>
+<gates>
+<gate name="G$1" symbol="IMU" x="15.24" y="2.54"/>
+</gates>
+<devices>
+<device name="IMU-KIT" package="IMU-KIT">
+<connects>
+<connect gate="G$1" pin="!CS!" pad="!CS!"/>
+<connect gate="G$1" pin="+3.3V" pad="+3.3V"/>
+<connect gate="G$1" pin="EN" pad="EN"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="INT" pad="INT"/>
+<connect gate="G$1" pin="MISO" pad="MISO"/>
+<connect gate="G$1" pin="MOSI" pad="MOSI"/>
+<connect gate="G$1" pin="SCK" pad="SCK"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -30587,6 +30640,7 @@ ripple current from motors</text>
 <part name="SUPPLY42" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="SV1" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA04-1" device="" package3d_urn="urn:adsk.eagle:package:8337/1"/>
 <part name="SV2" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA04-1" device="" package3d_urn="urn:adsk.eagle:package:8337/1"/>
+<part name="KIT2" library="RoboJackets-Boards" deviceset="IMU" device="IMU-KIT"/>
 </parts>
 <sheets>
 <sheet>
@@ -32887,15 +32941,22 @@ serial from MTrain</text>
 <wire x1="7.62" y1="5.08" x2="7.62" y2="88.9" width="0.1524" layer="97" style="shortdash"/>
 <text x="10.16" y="83.82" size="1.778" layer="97">IO Expander</text>
 <wire x1="12.7" y1="198.12" x2="127" y2="198.12" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="127" y1="198.12" x2="127" y2="129.54" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="127" y1="129.54" x2="12.7" y2="129.54" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="12.7" y1="129.54" x2="12.7" y2="198.12" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="127" y1="198.12" x2="127" y2="114.3" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="127" y1="114.3" x2="12.7" y2="114.3" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="12.7" y1="114.3" x2="12.7" y2="198.12" width="0.1524" layer="97" style="shortdash"/>
 <text x="15.24" y="193.04" size="1.778" layer="97">Reset Network</text>
 <wire x1="144.78" y1="198.12" x2="203.2" y2="198.12" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="203.2" y1="198.12" x2="203.2" y2="167.64" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="203.2" y1="167.64" x2="144.78" y2="167.64" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="144.78" y1="167.64" x2="144.78" y2="198.12" width="0.1524" layer="97" style="shortdash"/>
 <text x="147.32" y="193.04" size="1.778" layer="97">IMU Connector</text>
+<text x="66.04" y="116.84" size="1.778" layer="91">|  3.3V  |  V_MTRAIN  ||  !RST!  |
+-----------------------------------------------
+|  LOW  |      LOW      ||     X     |
+|  LOW  |      HIGH      ||  LOW   |
+|  HIGH  |      LOW      ||     X     |
+|  HIGH  |      HIGH      ||  HIGH   |
+-----------------------------------------------</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0" smashed="yes">
@@ -32967,6 +33028,7 @@ serial from MTrain</text>
 <attribute name="VALUE" x="173.99" y="190.5" size="1.778" layer="96" rot="R180"/>
 <attribute name="NAME" x="173.99" y="174.498" size="1.778" layer="95" rot="R180"/>
 </instance>
+<instance part="KIT2" gate="G$1" x="190.5" y="157.48" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -33422,11 +33484,11 @@ serial from MTrain</text>
 <instance part="SUPPLY34" gate="+5V" x="45.72" y="68.58" smashed="yes" rot="R270">
 <attribute name="VALUE" x="48.895" y="65.405" size="1.778" layer="96"/>
 </instance>
-<instance part="GND48" gate="1" x="45.72" y="35.56" smashed="yes" rot="R90">
-<attribute name="VALUE" x="48.26" y="33.02" size="1.778" layer="96" rot="R90"/>
+<instance part="GND48" gate="1" x="45.72" y="40.64" smashed="yes" rot="R90">
+<attribute name="VALUE" x="48.26" y="38.1" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SUPPLY33" gate="P" x="45.72" y="40.64" smashed="yes" rot="R270">
-<attribute name="VALUE" x="43.815" y="42.545" size="1.778" layer="96"/>
+<instance part="SUPPLY33" gate="P" x="48.26" y="35.56" smashed="yes" rot="R270">
+<attribute name="VALUE" x="51.435" y="34.925" size="1.778" layer="96"/>
 </instance>
 <instance part="R30" gate="G$1" x="157.48" y="154.94" smashed="yes" rot="R90">
 <attribute name="NAME" x="155.9814" y="151.13" size="1.778" layer="95" rot="R90"/>
@@ -33476,8 +33538,8 @@ serial from MTrain</text>
 </segment>
 <segment>
 <pinref part="SUPPLY33" gate="P" pin="+3.3V"/>
-<wire x1="43.18" y1="40.64" x2="35.56" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="IR" gate="G$1" pin="7"/>
+<pinref part="IR" gate="G$1" pin="6"/>
+<wire x1="35.56" y1="35.56" x2="45.72" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U5" gate="G2" pin="P$V+"/>
@@ -33554,9 +33616,9 @@ serial from MTrain</text>
 <wire x1="43.18" y1="73.66" x2="38.1" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="35.56" y1="35.56" x2="43.18" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="GND48" gate="1" pin="GND"/>
-<pinref part="IR" gate="G$1" pin="6"/>
+<pinref part="IR" gate="G$1" pin="7"/>
+<wire x1="35.56" y1="40.64" x2="43.18" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND49" gate="1" pin="GND"/>
@@ -33838,16 +33900,18 @@ serial from MTrain</text>
 <wire x1="167.64" y1="127" x2="15.24" y2="127" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="15.24" y1="127" x2="15.24" y2="203.2" width="0.1524" layer="97" style="shortdash"/>
 <text x="17.78" y="198.12" size="1.778" layer="97">Input &amp; Switch</text>
-<text x="17.78" y="116.84" size="1.778" layer="97">5V regulator</text>
+<text x="17.78" y="116.84" size="1.778" layer="97">Regulators</text>
 <text x="175.26" y="95.504" size="1.778" layer="97">PWRGD pulls line to GND when
 V_OUT not in tolerance</text>
 <text x="220.98" y="95.504" size="1.778" layer="97">When 1.2v or 2.5v or out of
 tolerance ERR LED turns on</text>
-<text x="119.38" y="110.744" size="1.778" layer="97">Zener diode added on 5v so no
-back current from MBED when no
+<text x="119.38" y="110.744" size="1.778" layer="97">Zener diode added on 5v and 3.3v so no
+back current from MTrain when no
 battery power</text>
 <text x="101.6" y="101.6" size="1.27" layer="97">Not connected on purpose</text>
 <text x="101.6" y="48.26" size="1.27" layer="97">Not connected on purpose</text>
+<text x="38.1" y="109.22" size="1.778" layer="97">5V Regulator</text>
+<text x="38.1" y="55.88" size="1.778" layer="97">3.3V Regulator</text>
 </plain>
 <instances>
 <instance part="FRAME5" gate="G$1" x="0" y="0" smashed="yes">
@@ -34572,7 +34636,7 @@ battery power</text>
 <wire x1="233.68" y1="73.66" x2="233.68" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+5V-FUSE1" class="0">
+<net name="+3.3V-FUSE" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="OUT"/>
 <wire x1="96.52" y1="40.64" x2="104.14" y2="40.64" width="0.1524" layer="91"/>
