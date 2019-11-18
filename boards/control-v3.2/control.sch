@@ -28836,112 +28836,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
-<library name="con-lstb" urn="urn:adsk.eagle:library:162">
-<description>&lt;b&gt;Pin Headers&lt;/b&gt;&lt;p&gt;
-Naming:&lt;p&gt;
-MA = male&lt;p&gt;
-# contacts - # rows&lt;p&gt;
-W = angled&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="MA04-1" urn="urn:adsk.eagle:footprint:8285/1" library_version="1">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<wire x1="-4.445" y1="1.27" x2="-3.175" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-3.175" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="-0.635" x2="-3.175" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="0.635" x2="-1.905" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="-1.27" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="0.635" x2="-5.08" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-4.445" y1="1.27" x2="-5.08" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-0.635" x2="-4.445" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-3.175" y1="-1.27" x2="-4.445" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="3.175" y1="1.27" x2="4.445" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="4.445" y1="1.27" x2="5.08" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="0.635" x2="5.08" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="-0.635" x2="4.445" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="3.175" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="-0.635" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="4.445" y1="-1.27" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
-<pad name="1" x="-3.81" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="2" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="3" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="4" x="3.81" y="0" drill="1.016" shape="long" rot="R90"/>
-<text x="-5.08" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-6.223" y="-0.635" size="1.27" layer="21" ratio="10">1</text>
-<text x="0.635" y="1.651" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="5.334" y="-0.635" size="1.27" layer="21" ratio="10">4</text>
-<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
-<rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
-<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
-<rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="MA04-1" urn="urn:adsk.eagle:package:8337/1" type="box" library_version="1">
-<description>PIN HEADER</description>
-<packageinstances>
-<packageinstance name="MA04-1"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="MA04-1" urn="urn:adsk.eagle:symbol:8284/1" library_version="1">
-<wire x1="3.81" y1="-7.62" x2="-1.27" y2="-7.62" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.6096" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="2.54" y2="-2.54" width="0.6096" layer="94"/>
-<wire x1="1.27" y1="-5.08" x2="2.54" y2="-5.08" width="0.6096" layer="94"/>
-<wire x1="-1.27" y1="5.08" x2="-1.27" y2="-7.62" width="0.4064" layer="94"/>
-<wire x1="3.81" y1="-7.62" x2="3.81" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="-1.27" y1="5.08" x2="3.81" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.6096" layer="94"/>
-<text x="-1.27" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-1.27" y="5.842" size="1.778" layer="95">&gt;NAME</text>
-<pin name="1" x="7.62" y="-5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="2" x="7.62" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="3" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="4" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="MA04-1" urn="urn:adsk.eagle:component:8375/1" prefix="SV" uservalue="yes" library_version="1">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="MA04-1" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="MA04-1">
-<connects>
-<connect gate="1" pin="1" pad="1"/>
-<connect gate="1" pin="2" pad="2"/>
-<connect gate="1" pin="3" pad="3"/>
-<connect gate="1" pin="4" pad="4"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:8337/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 <attribute name="REVISION" value="v3.0"/>
@@ -30638,9 +30532,7 @@ ripple current from motors</text>
 <part name="F2" library="RoboJackets-Fuses" deviceset="CHIP_FUSE" device="0805" package3d_urn="urn:adsk.eagle:package:8760197/1" value="0805L200SLTHYR"/>
 <part name="R39" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="0"/>
 <part name="SUPPLY42" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
-<part name="SV1" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA04-1" device="" package3d_urn="urn:adsk.eagle:package:8337/1"/>
-<part name="SV2" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA04-1" device="" package3d_urn="urn:adsk.eagle:package:8337/1"/>
-<part name="KIT2" library="RoboJackets-Boards" deviceset="IMU" device="IMU-KIT"/>
+<part name="IMU" library="RoboJackets-Boards" deviceset="IMU" device="IMU-KIT"/>
 </parts>
 <sheets>
 <sheet>
@@ -32945,9 +32837,9 @@ serial from MTrain</text>
 <wire x1="127" y1="114.3" x2="12.7" y2="114.3" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="12.7" y1="114.3" x2="12.7" y2="198.12" width="0.1524" layer="97" style="shortdash"/>
 <text x="15.24" y="193.04" size="1.778" layer="97">Reset Network</text>
-<wire x1="144.78" y1="198.12" x2="203.2" y2="198.12" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="203.2" y1="198.12" x2="203.2" y2="167.64" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="203.2" y1="167.64" x2="144.78" y2="167.64" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="144.78" y1="198.12" x2="254" y2="198.12" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="254" y1="198.12" x2="254" y2="167.64" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="254" y1="167.64" x2="144.78" y2="167.64" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="144.78" y1="167.64" x2="144.78" y2="198.12" width="0.1524" layer="97" style="shortdash"/>
 <text x="147.32" y="193.04" size="1.778" layer="97">IMU Connector</text>
 <text x="66.04" y="116.84" size="1.778" layer="91">|  3.3V  |  V_MTRAIN  ||  !RST!  |
@@ -32957,6 +32849,8 @@ serial from MTrain</text>
 |  HIGH  |      LOW      ||     X     |
 |  HIGH  |      HIGH      ||  HIGH   |
 -----------------------------------------------</text>
+<text x="215.9" y="190.5" size="1.778" layer="91">Pay attention to put the IMU board
+in the right pins while connecting</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0" smashed="yes">
@@ -33020,15 +32914,7 @@ serial from MTrain</text>
 <attribute name="VALUE" x="96.52" y="162.56" size="1.778" layer="96"/>
 <attribute name="NAME" x="96.52" y="165.1" size="1.778" layer="95"/>
 </instance>
-<instance part="SV1" gate="1" x="177.8" y="182.88" smashed="yes">
-<attribute name="VALUE" x="176.53" y="172.72" size="1.778" layer="96"/>
-<attribute name="NAME" x="176.53" y="188.722" size="1.778" layer="95"/>
-</instance>
-<instance part="SV2" gate="1" x="172.72" y="180.34" smashed="yes" rot="R180">
-<attribute name="VALUE" x="173.99" y="190.5" size="1.778" layer="96" rot="R180"/>
-<attribute name="NAME" x="173.99" y="174.498" size="1.778" layer="95" rot="R180"/>
-</instance>
-<instance part="KIT2" gate="G$1" x="190.5" y="157.48" smashed="yes"/>
+<instance part="IMU" gate="G$1" x="195.58" y="182.88" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -33067,9 +32953,9 @@ serial from MTrain</text>
 <pinref part="Q2" gate="G$1" pin="S"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="1" pin="4"/>
-<wire x1="185.42" y1="185.42" x2="187.96" y2="185.42" width="0.1524" layer="91"/>
-<label x="187.96" y="185.42" size="1.27" layer="95" xref="yes"/>
+<label x="203.2" y="187.96" size="1.27" layer="95" xref="yes"/>
+<pinref part="IMU" gate="G$1" pin="GND"/>
+<wire x1="203.2" y1="187.96" x2="195.58" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3.3V" class="0">
@@ -33096,9 +32982,9 @@ serial from MTrain</text>
 <wire x1="25.4" y1="175.26" x2="25.4" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="1" pin="1"/>
-<wire x1="185.42" y1="177.8" x2="187.96" y2="177.8" width="0.1524" layer="91"/>
-<label x="187.96" y="177.8" size="1.27" layer="95" xref="yes"/>
+<label x="203.2" y="172.72" size="1.27" layer="95" xref="yes"/>
+<pinref part="IMU" gate="G$1" pin="+3.3V"/>
+<wire x1="203.2" y1="172.72" x2="195.58" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -33310,37 +33196,37 @@ serial from MTrain</text>
 </net>
 <net name="MOSI" class="0">
 <segment>
-<pinref part="SV2" gate="1" pin="1"/>
-<wire x1="165.1" y1="185.42" x2="162.56" y2="185.42" width="0.1524" layer="91"/>
-<label x="162.56" y="185.42" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="160.02" y="187.96" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="IMU" gate="G$1" pin="MOSI"/>
+<wire x1="167.64" y1="187.96" x2="160.02" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MISO" class="0">
 <segment>
-<pinref part="SV2" gate="1" pin="2"/>
-<wire x1="165.1" y1="182.88" x2="162.56" y2="182.88" width="0.1524" layer="91"/>
-<label x="162.56" y="182.88" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="160.02" y="182.88" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="IMU" gate="G$1" pin="MISO"/>
+<wire x1="167.64" y1="182.88" x2="160.02" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCK" class="0">
 <segment>
-<pinref part="SV2" gate="1" pin="3"/>
-<wire x1="165.1" y1="180.34" x2="162.56" y2="180.34" width="0.1524" layer="91"/>
-<label x="162.56" y="180.34" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="160.02" y="177.8" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="IMU" gate="G$1" pin="SCK"/>
+<wire x1="167.64" y1="177.8" x2="160.02" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="!CS!-ICM" class="0">
 <segment>
-<pinref part="SV2" gate="1" pin="4"/>
-<wire x1="165.1" y1="177.8" x2="162.56" y2="177.8" width="0.1524" layer="91"/>
-<label x="162.56" y="177.8" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="160.02" y="172.72" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="IMU" gate="G$1" pin="!CS!"/>
+<wire x1="160.02" y1="172.72" x2="167.64" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="INT-ICM" class="0">
 <segment>
-<pinref part="SV1" gate="1" pin="3"/>
-<wire x1="185.42" y1="182.88" x2="187.96" y2="182.88" width="0.1524" layer="91"/>
-<label x="187.96" y="182.88" size="1.27" layer="95" xref="yes"/>
+<label x="203.2" y="182.88" size="1.27" layer="95" xref="yes"/>
+<pinref part="IMU" gate="G$1" pin="INT"/>
+<wire x1="203.2" y1="182.88" x2="195.58" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
