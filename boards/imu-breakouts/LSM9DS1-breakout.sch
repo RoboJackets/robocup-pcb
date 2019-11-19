@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.2.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -3531,11 +3531,11 @@ In this library you will find the larger circuit elements that are used to contr
 <pin name="VDD_IO" x="-5.08" y="20.32" length="middle" rot="R270"/>
 <pin name="CAP" x="22.86" y="10.16" length="middle" rot="R180"/>
 <pin name="C1" x="22.86" y="5.08" length="middle" rot="R180"/>
-<pin name="CS" x="-22.86" y="10.16" length="middle"/>
+<pin name="!CS!" x="-22.86" y="10.16" length="middle"/>
 <pin name="MOSI" x="-22.86" y="5.08" length="middle"/>
 <pin name="MISO" x="-22.86" y="0" length="middle"/>
 <pin name="INT" x="22.86" y="-5.08" length="middle" rot="R180"/>
-<pin name="DATA_EN" x="22.86" y="0" length="middle" rot="R180"/>
+<pin name="DEN_A/G" x="22.86" y="0" length="middle" rot="R180"/>
 <pin name="CLK" x="-22.86" y="-5.08" length="middle"/>
 <text x="-20.32" y="17.78" size="1.778" layer="95">&gt;NAME</text>
 <text x="-20.32" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
@@ -3549,11 +3549,11 @@ In this library you will find the larger circuit elements that are used to contr
 <devices>
 <device name="" package="LGA-24L">
 <connects>
+<connect gate="G$1" pin="!CS!" pad="7"/>
 <connect gate="G$1" pin="C1" pad="24"/>
 <connect gate="G$1" pin="CAP" pad="21"/>
 <connect gate="G$1" pin="CLK" pad="2"/>
-<connect gate="G$1" pin="CS" pad="7"/>
-<connect gate="G$1" pin="DATA_EN" pad="13"/>
+<connect gate="G$1" pin="DEN_A/G" pad="13"/>
 <connect gate="G$1" pin="GND" pad="19 20"/>
 <connect gate="G$1" pin="INT" pad="11"/>
 <connect gate="G$1" pin="MISO" pad="5"/>
@@ -7895,6 +7895,68 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="RoboJackets-Boards">
+<description>RoboJackets EAGLE Libraries - Boards</description>
+<packages>
+<package name="IMU-KIT">
+<wire x1="-12.7" y1="7.62" x2="2.54" y2="7.62" width="0.127" layer="21"/>
+<wire x1="2.54" y1="7.62" x2="2.54" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-5.08" x2="-12.7" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-12.7" y1="-5.08" x2="-12.7" y2="7.62" width="0.127" layer="21"/>
+<pad name="MOSI" x="-11.43" y="5.08" drill="1.02"/>
+<pad name="MISO" x="-11.43" y="2.54" drill="1.02"/>
+<pad name="SCK" x="-11.43" y="0" drill="1.02"/>
+<pad name="!CS!" x="-11.43" y="-2.54" drill="1.02"/>
+<pad name="GND" x="1.27" y="-2.54" drill="1.02" rot="R180"/>
+<pad name="INT" x="1.27" y="0" drill="1.02" rot="R180"/>
+<pad name="EN" x="1.27" y="2.54" drill="1.02" rot="R180"/>
+<pad name="+3.3V" x="1.27" y="5.08" drill="1.02" rot="R180"/>
+<text x="-12.7" y="8.89" size="1.27" layer="25">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="IMU">
+<description>IMU</description>
+<pin name="GND" x="0" y="5.08" length="middle" rot="R180"/>
+<pin name="INT" x="0" y="0" length="middle" rot="R180"/>
+<pin name="EN" x="0" y="-5.08" length="middle" rot="R180"/>
+<pin name="+3.3V" x="0" y="-10.16" length="middle" rot="R180"/>
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-12.7" x2="-22.86" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="-12.7" x2="-22.86" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<pin name="MOSI" x="-27.94" y="5.08" length="middle"/>
+<pin name="MISO" x="-27.94" y="0" length="middle"/>
+<pin name="SCK" x="-27.94" y="-5.08" length="middle"/>
+<pin name="!CS!" x="-27.94" y="-10.16" length="middle"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="IMU" prefix="KIT">
+<description>IMU breakout board</description>
+<gates>
+<gate name="G$1" symbol="IMU" x="15.24" y="2.54"/>
+</gates>
+<devices>
+<device name="IMU-KIT" package="IMU-KIT">
+<connects>
+<connect gate="G$1" pin="!CS!" pad="!CS!"/>
+<connect gate="G$1" pin="+3.3V" pad="+3.3V"/>
+<connect gate="G$1" pin="EN" pad="EN"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="INT" pad="INT"/>
+<connect gate="G$1" pin="MISO" pad="MISO"/>
+<connect gate="G$1" pin="MOSI" pad="MOSI"/>
+<connect gate="G$1" pin="SCK" pad="SCK"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 <attribute name="REVISION" value="1.0"/>
@@ -7924,6 +7986,9 @@ Source: AVX .. aphvc.pdf</description>
 <part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10nF 16V"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="KIT1" library="RoboJackets-Boards" deviceset="IMU" device="IMU-KIT"/>
+<part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="SUPPLY2" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7978,6 +8043,13 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="GND4" gate="1" x="198.12" y="119.38" smashed="yes">
 <attribute name="VALUE" x="195.58" y="116.84" size="1.778" layer="96"/>
 </instance>
+<instance part="KIT1" gate="G$1" x="55.88" y="129.54" smashed="yes"/>
+<instance part="GND5" gate="1" x="63.5" y="134.62" smashed="yes" rot="R90">
+<attribute name="VALUE" x="66.04" y="132.08" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="SUPPLY2" gate="P" x="63.5" y="119.38" smashed="yes" rot="R270">
+<attribute name="VALUE" x="66.675" y="121.285" size="1.778" layer="96" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -8016,6 +8088,11 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="198.12" y1="124.46" x2="198.12" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="KIT1" gate="G$1" pin="GND"/>
+<wire x1="55.88" y1="134.62" x2="60.96" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="+3.3V" class="0">
 <segment>
@@ -8040,12 +8117,10 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="C3" gate="G$1" pin="1"/>
 <junction x="177.8" y="160.02"/>
 </segment>
-</net>
-<net name="CS" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="CS"/>
-<wire x1="111.76" y1="137.16" x2="106.68" y2="137.16" width="0.1524" layer="91"/>
-<label x="106.68" y="137.16" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="KIT1" gate="G$1" pin="+3.3V"/>
+<wire x1="55.88" y1="119.38" x2="60.96" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="SUPPLY2" gate="P" pin="+3.3V"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -8054,6 +8129,11 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="111.76" y1="132.08" x2="106.68" y2="132.08" width="0.1524" layer="91"/>
 <label x="106.68" y="132.08" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="KIT1" gate="G$1" pin="MOSI"/>
+<wire x1="27.94" y1="134.62" x2="22.86" y2="134.62" width="0.1524" layer="91"/>
+<label x="22.86" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="MISO" class="0">
 <segment>
@@ -8061,12 +8141,22 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="111.76" y1="127" x2="106.68" y2="127" width="0.1524" layer="91"/>
 <label x="106.68" y="127" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="KIT1" gate="G$1" pin="MISO"/>
+<wire x1="27.94" y1="129.54" x2="22.86" y2="129.54" width="0.1524" layer="91"/>
+<label x="22.86" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="CLK" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="CLK"/>
 <wire x1="111.76" y1="121.92" x2="106.68" y2="121.92" width="0.1524" layer="91"/>
 <label x="106.68" y="121.92" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="KIT1" gate="G$1" pin="SCK"/>
+<wire x1="27.94" y1="124.46" x2="22.86" y2="124.46" width="0.1524" layer="91"/>
+<label x="22.86" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="CAP" class="0">
@@ -8085,18 +8175,28 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="C4" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="DATA_EN" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="DATA_EN"/>
-<wire x1="157.48" y1="127" x2="162.56" y2="127" width="0.1524" layer="91"/>
-<label x="162.56" y="127" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="INT" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="INT"/>
 <wire x1="157.48" y1="121.92" x2="162.56" y2="121.92" width="0.1524" layer="91"/>
 <label x="162.56" y="121.92" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="KIT1" gate="G$1" pin="INT"/>
+<wire x1="55.88" y1="129.54" x2="60.96" y2="129.54" width="0.1524" layer="91"/>
+<label x="60.96" y="129.54" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="!CS!" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="!CS!"/>
+<wire x1="111.76" y1="137.16" x2="106.68" y2="137.16" width="0.1524" layer="91"/>
+<label x="106.68" y="137.16" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="KIT1" gate="G$1" pin="!CS!"/>
+<wire x1="27.94" y1="119.38" x2="22.86" y2="119.38" width="0.1524" layer="91"/>
+<label x="22.86" y="119.38" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
