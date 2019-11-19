@@ -239,6 +239,7 @@ FRONT</text>
 <text x="-20.25" y="-18.25" size="1.016" layer="26" font="vector" ratio="9" rot="MR135">0Ω</text>
 <text x="-0.125" y="-6.625" size="1.016" layer="26" font="vector" ratio="9" rot="MR0">0Ω</text>
 <text x="5" y="-6.625" size="1.016" layer="26" font="vector" ratio="9" rot="MR0">0Ω</text>
+<text x="-2.5" y="60.5" size="1.27" layer="21" font="vector" ratio="17">IMU Board</text>
 </plain>
 <libraries>
 <library name="rcl">
@@ -12563,14 +12564,14 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <wire x1="7.62" y1="6.35" x2="7.62" y2="-6.35" width="0.127" layer="21"/>
 <wire x1="7.62" y1="-6.35" x2="-7.62" y2="-6.35" width="0.127" layer="21"/>
 <wire x1="-7.62" y1="-6.35" x2="-7.62" y2="6.35" width="0.127" layer="21"/>
-<pad name="MOSI" x="-6.35" y="3.81" drill="1.02"/>
-<pad name="MISO" x="-6.35" y="1.27" drill="1.02"/>
-<pad name="SCK" x="-6.35" y="-1.27" drill="1.02"/>
-<pad name="!CS!" x="-6.35" y="-3.81" drill="1.02"/>
-<pad name="GND" x="6.35" y="-3.81" drill="1.02" rot="R180"/>
-<pad name="INT" x="6.35" y="-1.27" drill="1.02" rot="R180"/>
-<pad name="NC" x="6.35" y="1.27" drill="1.02" rot="R180"/>
-<pad name="+3.3V" x="6.35" y="3.81" drill="1.02" rot="R180"/>
+<pad name="1" x="-6.35" y="3.81" drill="1.02"/>
+<pad name="2" x="-6.35" y="1.27" drill="1.02"/>
+<pad name="3" x="-6.35" y="-1.27" drill="1.02"/>
+<pad name="4" x="-6.35" y="-3.81" drill="1.02"/>
+<pad name="5" x="6.35" y="-3.81" drill="1.02" rot="R180"/>
+<pad name="6" x="6.35" y="-1.27" drill="1.02" rot="R180"/>
+<pad name="7" x="6.35" y="1.27" drill="1.02" rot="R180"/>
+<pad name="8" x="6.35" y="3.81" drill="1.02" rot="R180"/>
 <text x="-7.62" y="7.62" size="1.27" layer="25">&gt;NAME</text>
 <circle x="-6.731" y="5.588" radius="0.283978125" width="0.127" layer="21"/>
 </package>
@@ -13842,9 +13843,7 @@ Your Eurocircuits Team
 <attribute name="NAME" x="-17" y="-20.398028125" size="1" layer="26" font="vector" ratio="15" rot="MR135"/>
 <attribute name="VALUE" x="-19.29605" y="-17.601975" size="1.27" layer="28" rot="MR135"/>
 </element>
-<element name="IMU" library="RoboJackets-Boards" package="IMU-KIT" value="IMUIMU-KIT" x="2.375" y="57.75" smashed="yes" rot="R90">
-<attribute name="NAME" x="-1.05" y="57.485" size="1.27" layer="25" rot="R180"/>
-</element>
+<element name="KIT2" library="RoboJackets-Boards" package="IMU-KIT" value="IMUIMU-KIT" x="2.375" y="57.75" smashed="yes" rot="R90"/>
 </elements>
 <signals>
 <signal name="MOSI">
@@ -13887,7 +13886,7 @@ Your Eurocircuits Team
 <via x="-13.5" y="58.5" extent="1-16" drill="0.35"/>
 <wire x1="-13.5" y1="58.5" x2="-13.5" y2="65" width="0.2" layer="1"/>
 <wire x1="-13.5" y1="65" x2="-14.5" y2="66" width="0.2" layer="1"/>
-<contactref element="IMU" pad="MOSI"/>
+<contactref element="KIT2" pad="1"/>
 <wire x1="-1.435" y1="51.985" x2="-1.435" y2="51.4" width="0.2" layer="16"/>
 <wire x1="-2.5" y1="53.05" x2="-1.435" y2="51.985" width="0.2" layer="16"/>
 </signal>
@@ -13910,7 +13909,7 @@ Your Eurocircuits Team
 <wire x1="13.75" y1="49.25" x2="0" y2="49.25" width="0.2" layer="16"/>
 <wire x1="0" y1="49.25" x2="-8.75" y2="49.25" width="0.2" layer="16"/>
 <wire x1="0" y1="49.25" x2="0" y2="49.985" width="0.2" layer="16"/>
-<contactref element="IMU" pad="MISO"/>
+<contactref element="KIT2" pad="2"/>
 <wire x1="0" y1="49.985" x2="1.105" y2="51.09" width="0.2" layer="16"/>
 <wire x1="1.105" y1="51.09" x2="1.105" y2="51.4" width="0.2" layer="16"/>
 </signal>
@@ -13950,7 +13949,7 @@ Your Eurocircuits Team
 <wire x1="-18.6507375" y1="58.7242625" x2="-16.375" y2="61" width="0.2" layer="16"/>
 <wire x1="2.625" y1="53.6" x2="2.6" y2="53.6" width="0.2" layer="16"/>
 <wire x1="2.6" y1="53.6" x2="2.5" y2="53.5" width="0.2" layer="16"/>
-<contactref element="IMU" pad="SCK"/>
+<contactref element="KIT2" pad="3"/>
 <wire x1="2.625" y1="53.6" x2="3.6125" y2="52.6125" width="0.2" layer="1"/>
 <wire x1="3.6125" y1="52.6125" x2="3.625" y2="52.6" width="0.2" layer="1"/>
 <wire x1="3.6125" y1="52.6125" x2="3.6125" y2="51.4325" width="0.2" layer="1"/>
@@ -14928,7 +14927,7 @@ Your Eurocircuits Team
 <wire x1="-8" y1="56.25" x2="-8" y2="58" width="0.4" layer="1"/>
 <via x="-8" y="58" extent="1-16" drill="0.35"/>
 <wire x1="-8" y1="58" x2="-8" y2="56.25" width="0.4" layer="16"/>
-<contactref element="IMU" pad="GND"/>
+<contactref element="KIT2" pad="5"/>
 </signal>
 <signal name="+5V">
 <contactref element="R3" pad="1"/>
@@ -15214,7 +15213,7 @@ Your Eurocircuits Team
 <contactref element="IR" pad="6"/>
 <wire x1="-9" y1="56.25" x2="-9" y2="54.8" width="0.4" layer="16"/>
 <via x="-9" y="54.8" extent="1-16" drill="0.35"/>
-<contactref element="IMU" pad="+3.3V"/>
+<contactref element="KIT2" pad="8"/>
 </signal>
 <signal name="FPGA-INIT">
 <contactref element="U1" pad="40"/>
@@ -19468,7 +19467,7 @@ Your Eurocircuits Team
 <contactref element="KIT1" pad="P$16"/>
 <wire x1="8.53" y1="68.93" x2="8.575" y2="68.885" width="0.3" layer="1"/>
 <wire x1="8.575" y1="68.885" x2="8.575" y2="67.4386" width="0.3" layer="1"/>
-<contactref element="IMU" pad="INT"/>
+<contactref element="KIT2" pad="6"/>
 <wire x1="6.6364" y1="65.5" x2="5" y2="65.5" width="0.3" layer="1"/>
 <wire x1="5" y1="65.5" x2="3.645" y2="64.145" width="0.3" layer="1"/>
 <wire x1="3.645" y1="64.145" x2="3.645" y2="64.1" width="0.3" layer="1"/>
@@ -19478,7 +19477,7 @@ Your Eurocircuits Team
 <contactref element="KIT1" pad="P$18"/>
 <via x="3.875" y="56" extent="1-16" drill="0.35"/>
 <wire x1="3.875" y1="56" x2="4.9375" y2="54.9375" width="0.3" layer="1"/>
-<contactref element="IMU" pad="!CS!"/>
+<contactref element="KIT2" pad="4"/>
 <wire x1="4.9375" y1="54.9375" x2="4.9375" y2="52.5" width="0.3" layer="1"/>
 <wire x1="3.45" y1="68.93" x2="2.51" y2="67.99" width="0.3" layer="16"/>
 <wire x1="2.51" y1="67.99" x2="2.51" y2="60.51" width="0.3" layer="16"/>
