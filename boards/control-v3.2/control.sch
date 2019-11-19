@@ -27957,14 +27957,14 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="7.62" y1="6.35" x2="7.62" y2="-6.35" width="0.127" layer="21"/>
 <wire x1="7.62" y1="-6.35" x2="-7.62" y2="-6.35" width="0.127" layer="21"/>
 <wire x1="-7.62" y1="-6.35" x2="-7.62" y2="6.35" width="0.127" layer="21"/>
-<pad name="MOSI" x="-6.35" y="3.81" drill="1.02"/>
-<pad name="MISO" x="-6.35" y="1.27" drill="1.02"/>
-<pad name="SCK" x="-6.35" y="-1.27" drill="1.02"/>
-<pad name="!CS!" x="-6.35" y="-3.81" drill="1.02"/>
-<pad name="GND" x="6.35" y="-3.81" drill="1.02" rot="R180"/>
-<pad name="INT" x="6.35" y="-1.27" drill="1.02" rot="R180"/>
-<pad name="NC" x="6.35" y="1.27" drill="1.02" rot="R180"/>
-<pad name="+3.3V" x="6.35" y="3.81" drill="1.02" rot="R180"/>
+<pad name="1" x="-6.35" y="3.81" drill="1.02"/>
+<pad name="2" x="-6.35" y="1.27" drill="1.02"/>
+<pad name="3" x="-6.35" y="-1.27" drill="1.02"/>
+<pad name="4" x="-6.35" y="-3.81" drill="1.02"/>
+<pad name="5" x="6.35" y="-3.81" drill="1.02" rot="R180"/>
+<pad name="6" x="6.35" y="-1.27" drill="1.02" rot="R180"/>
+<pad name="7" x="6.35" y="1.27" drill="1.02" rot="R180"/>
+<pad name="8" x="6.35" y="3.81" drill="1.02" rot="R180"/>
 <text x="-7.62" y="7.62" size="1.27" layer="25">&gt;NAME</text>
 <circle x="-6.731" y="5.588" radius="0.283978125" width="0.127" layer="21"/>
 </package>
@@ -28628,18 +28628,18 @@ In this library the device names are the same as the pin names of the symbols, t
 </symbol>
 <symbol name="IMU">
 <description>IMU</description>
-<pin name="GND" x="0" y="5.08" length="middle" rot="R180"/>
-<pin name="INT" x="0" y="0" length="middle" rot="R180"/>
-<pin name="EN" x="0" y="-5.08" length="middle" rot="R180"/>
-<pin name="+3.3V" x="0" y="-10.16" length="middle" rot="R180"/>
-<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-12.7" x2="-22.86" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-22.86" y1="-12.7" x2="-22.86" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-22.86" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
-<pin name="MOSI" x="-27.94" y="5.08" length="middle"/>
-<pin name="MISO" x="-27.94" y="0" length="middle"/>
-<pin name="SCK" x="-27.94" y="-5.08" length="middle"/>
-<pin name="!CS!" x="-27.94" y="-10.16" length="middle"/>
+<pin name="GND" x="12.7" y="-7.62" length="middle" rot="R180"/>
+<pin name="INT" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<pin name="NC" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="+3.3V" x="12.7" y="7.62" length="middle" rot="R180"/>
+<wire x1="7.62" y1="10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<pin name="MOSI" x="-15.24" y="7.62" length="middle"/>
+<pin name="MISO" x="-15.24" y="2.54" length="middle"/>
+<pin name="SCK" x="-15.24" y="-2.54" length="middle"/>
+<pin name="!CS!" x="-15.24" y="-7.62" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -28706,14 +28706,14 @@ In this library the device names are the same as the pin names of the symbols, t
 <devices>
 <device name="IMU-KIT" package="IMU-KIT">
 <connects>
-<connect gate="G$1" pin="!CS!" pad="!CS!"/>
-<connect gate="G$1" pin="+3.3V" pad="+3.3V"/>
-<connect gate="G$1" pin="EN" pad="NC"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="INT" pad="INT"/>
-<connect gate="G$1" pin="MISO" pad="MISO"/>
-<connect gate="G$1" pin="MOSI" pad="MOSI"/>
-<connect gate="G$1" pin="SCK" pad="SCK"/>
+<connect gate="G$1" pin="!CS!" pad="4"/>
+<connect gate="G$1" pin="+3.3V" pad="8"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="INT" pad="6"/>
+<connect gate="G$1" pin="MISO" pad="2"/>
+<connect gate="G$1" pin="MOSI" pad="1"/>
+<connect gate="G$1" pin="NC" pad="7"/>
+<connect gate="G$1" pin="SCK" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -30533,7 +30533,7 @@ ripple current from motors</text>
 <part name="F2" library="RoboJackets-Fuses" deviceset="CHIP_FUSE" device="0805" package3d_urn="urn:adsk.eagle:package:8760197/1" value="0805L200SLTHYR"/>
 <part name="R39" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="0"/>
 <part name="SUPPLY42" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
-<part name="IMU" library="RoboJackets-Boards" deviceset="IMU" device="IMU-KIT"/>
+<part name="KIT2" library="RoboJackets-Boards" deviceset="IMU" device="IMU-KIT"/>
 </parts>
 <sheets>
 <sheet>
@@ -32915,7 +32915,7 @@ in the right pins while connecting</text>
 <attribute name="VALUE" x="96.52" y="162.56" size="1.778" layer="96"/>
 <attribute name="NAME" x="96.52" y="165.1" size="1.778" layer="95"/>
 </instance>
-<instance part="IMU" gate="G$1" x="195.58" y="182.88" smashed="yes"/>
+<instance part="KIT2" gate="G$1" x="180.34" y="180.34" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -32954,9 +32954,9 @@ in the right pins while connecting</text>
 <pinref part="Q2" gate="G$1" pin="S"/>
 </segment>
 <segment>
-<label x="203.2" y="187.96" size="1.27" layer="95" xref="yes"/>
-<pinref part="IMU" gate="G$1" pin="GND"/>
-<wire x1="203.2" y1="187.96" x2="195.58" y2="187.96" width="0.1524" layer="91"/>
+<label x="198.12" y="172.72" size="1.27" layer="95" xref="yes"/>
+<pinref part="KIT2" gate="G$1" pin="GND"/>
+<wire x1="198.12" y1="172.72" x2="193.04" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3.3V" class="0">
@@ -32983,9 +32983,9 @@ in the right pins while connecting</text>
 <wire x1="25.4" y1="175.26" x2="25.4" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<label x="203.2" y="172.72" size="1.27" layer="95" xref="yes"/>
-<pinref part="IMU" gate="G$1" pin="+3.3V"/>
-<wire x1="203.2" y1="172.72" x2="195.58" y2="172.72" width="0.1524" layer="91"/>
+<label x="198.12" y="187.96" size="1.27" layer="95" xref="yes"/>
+<pinref part="KIT2" gate="G$1" pin="+3.3V"/>
+<wire x1="198.12" y1="187.96" x2="193.04" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -33198,36 +33198,36 @@ in the right pins while connecting</text>
 <net name="MOSI" class="0">
 <segment>
 <label x="160.02" y="187.96" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="IMU" gate="G$1" pin="MOSI"/>
-<wire x1="167.64" y1="187.96" x2="160.02" y2="187.96" width="0.1524" layer="91"/>
+<pinref part="KIT2" gate="G$1" pin="MOSI"/>
+<wire x1="165.1" y1="187.96" x2="160.02" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MISO" class="0">
 <segment>
 <label x="160.02" y="182.88" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="IMU" gate="G$1" pin="MISO"/>
-<wire x1="167.64" y1="182.88" x2="160.02" y2="182.88" width="0.1524" layer="91"/>
+<pinref part="KIT2" gate="G$1" pin="MISO"/>
+<wire x1="165.1" y1="182.88" x2="160.02" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCK" class="0">
 <segment>
 <label x="160.02" y="177.8" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="IMU" gate="G$1" pin="SCK"/>
-<wire x1="167.64" y1="177.8" x2="160.02" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="KIT2" gate="G$1" pin="SCK"/>
+<wire x1="165.1" y1="177.8" x2="160.02" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="!CS!-ICM" class="0">
 <segment>
 <label x="160.02" y="172.72" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="IMU" gate="G$1" pin="!CS!"/>
-<wire x1="160.02" y1="172.72" x2="167.64" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="KIT2" gate="G$1" pin="!CS!"/>
+<wire x1="160.02" y1="172.72" x2="165.1" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="INT-ICM" class="0">
 <segment>
-<label x="203.2" y="182.88" size="1.27" layer="95" xref="yes"/>
-<pinref part="IMU" gate="G$1" pin="INT"/>
-<wire x1="203.2" y1="182.88" x2="195.58" y2="182.88" width="0.1524" layer="91"/>
+<label x="198.12" y="177.8" size="1.27" layer="95" xref="yes"/>
+<pinref part="KIT2" gate="G$1" pin="INT"/>
+<wire x1="198.12" y1="177.8" x2="193.04" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
