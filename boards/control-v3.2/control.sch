@@ -27953,19 +27953,20 @@ In this library the device names are the same as the pin names of the symbols, t
 <text x="-12.7" y="27.94" size="1.27" layer="25">&gt;NAME</text>
 </package>
 <package name="IMU-KIT">
-<wire x1="-12.7" y1="7.62" x2="2.54" y2="7.62" width="0.127" layer="21"/>
-<wire x1="2.54" y1="7.62" x2="2.54" y2="-5.08" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-5.08" x2="-12.7" y2="-5.08" width="0.127" layer="21"/>
-<wire x1="-12.7" y1="-5.08" x2="-12.7" y2="7.62" width="0.127" layer="21"/>
-<pad name="MOSI" x="-11.43" y="5.08" drill="1.02"/>
-<pad name="MISO" x="-11.43" y="2.54" drill="1.02"/>
-<pad name="SCK" x="-11.43" y="0" drill="1.02"/>
-<pad name="!CS!" x="-11.43" y="-2.54" drill="1.02"/>
-<pad name="GND" x="1.27" y="-2.54" drill="1.02" rot="R180"/>
-<pad name="INT" x="1.27" y="0" drill="1.02" rot="R180"/>
-<pad name="EN" x="1.27" y="2.54" drill="1.02" rot="R180"/>
-<pad name="+3.3V" x="1.27" y="5.08" drill="1.02" rot="R180"/>
-<text x="-12.7" y="8.89" size="1.27" layer="25">&gt;NAME</text>
+<wire x1="-7.62" y1="6.35" x2="7.62" y2="6.35" width="0.127" layer="21"/>
+<wire x1="7.62" y1="6.35" x2="7.62" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-6.35" x2="-7.62" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-6.35" x2="-7.62" y2="6.35" width="0.127" layer="21"/>
+<pad name="MOSI" x="-6.35" y="3.81" drill="1.02"/>
+<pad name="MISO" x="-6.35" y="1.27" drill="1.02"/>
+<pad name="SCK" x="-6.35" y="-1.27" drill="1.02"/>
+<pad name="!CS!" x="-6.35" y="-3.81" drill="1.02"/>
+<pad name="GND" x="6.35" y="-3.81" drill="1.02" rot="R180"/>
+<pad name="INT" x="6.35" y="-1.27" drill="1.02" rot="R180"/>
+<pad name="NC" x="6.35" y="1.27" drill="1.02" rot="R180"/>
+<pad name="+3.3V" x="6.35" y="3.81" drill="1.02" rot="R180"/>
+<text x="-7.62" y="7.62" size="1.27" layer="25">&gt;NAME</text>
+<circle x="-6.731" y="5.588" radius="0.283978125" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -28707,7 +28708,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <connects>
 <connect gate="G$1" pin="!CS!" pad="!CS!"/>
 <connect gate="G$1" pin="+3.3V" pad="+3.3V"/>
-<connect gate="G$1" pin="EN" pad="EN"/>
+<connect gate="G$1" pin="EN" pad="NC"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="INT" pad="INT"/>
 <connect gate="G$1" pin="MISO" pad="MISO"/>
