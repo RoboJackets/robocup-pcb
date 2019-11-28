@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.5.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -7983,9 +7983,9 @@ In this library you will find circuit elements that are used for getting measure
 </classes>
 <parts>
 <part name="FRAME1" library="RoboJackets-Frames" deviceset="FRAME_A_L" device="">
-<attribute name="REVISION" value=""/>
-<attribute name="SCH_DESC" value=""/>
-<attribute name="TEAM" value=""/>
+<attribute name="REVISION" value="1.0"/>
+<attribute name="SCH_DESC" value="Breakout for MPU 9250 IMU"/>
+<attribute name="TEAM" value="RoboCup SSL"/>
 </part>
 <part name="KIT1" library="RoboJackets-Boards" deviceset="IMU" device="IMU-KIT"/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -8010,7 +8010,7 @@ In this library you will find circuit elements that are used for getting measure
 <wire x1="218.44" y1="88.9" x2="218.44" y2="175.26" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="218.44" y1="175.26" x2="91.44" y2="175.26" width="0.1524" layer="97" style="shortdash"/>
 <text x="93.98" y="170.18" size="2.1844" layer="97">IMU</text>
-<text x="20.32" y="170.18" size="2.1844" layer="97">Board header pins</text>
+<text x="20.32" y="170.18" size="2.1844" layer="97">Board Header Pins</text>
 <wire x1="91.44" y1="175.26" x2="91.44" y2="88.9" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="91.44" y1="88.9" x2="218.44" y2="88.9" width="0.1524" layer="97" style="shortdash"/>
 </plain>
@@ -8032,7 +8032,6 @@ In this library you will find circuit elements that are used for getting measure
 <attribute name="VALUE" x="71.755" y="164.465" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="IC1" gate="G$1" x="172.72" y="132.08" smashed="yes">
-<attribute name="NAME" x="172.72" y="148.59" size="2.54" layer="95" align="bottom-center"/>
 <attribute name="VALUE" x="172.72" y="113.03" size="2.54" layer="96" align="top-center"/>
 </instance>
 <instance part="SUPPLY4" gate="P" x="144.78" y="149.86" smashed="yes">
@@ -8052,12 +8051,12 @@ In this library you will find circuit elements that are used for getting measure
 <attribute name="NAME" x="110.236" y="147.955" size="1.778" layer="95"/>
 <attribute name="VALUE" x="110.236" y="143.129" size="1.778" layer="96"/>
 </instance>
-<instance part="GND7" gate="1" x="203.2" y="132.08" smashed="yes">
-<attribute name="VALUE" x="200.66" y="129.54" size="1.778" layer="96"/>
+<instance part="GND7" gate="1" x="203.2" y="134.62" smashed="yes" rot="R90">
+<attribute name="VALUE" x="205.74" y="132.08" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C3" gate="G$1" x="203.2" y="121.92" smashed="yes">
-<attribute name="NAME" x="204.216" y="122.555" size="1.778" layer="95"/>
-<attribute name="VALUE" x="204.216" y="117.729" size="1.778" layer="96"/>
+<instance part="C3" gate="G$1" x="203.2" y="124.46" smashed="yes">
+<attribute name="NAME" x="204.216" y="125.095" size="1.778" layer="95"/>
+<attribute name="VALUE" x="204.216" y="120.269" size="1.778" layer="96"/>
 </instance>
 <instance part="GND8" gate="1" x="203.2" y="109.22" smashed="yes">
 <attribute name="VALUE" x="200.66" y="106.68" size="1.778" layer="96"/>
@@ -8075,15 +8074,16 @@ In this library you will find circuit elements that are used for getting measure
 <segment>
 <pinref part="IC1" gate="G$1" pin="FSYNC"/>
 <pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="193.04" y1="134.62" x2="203.2" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="134.62" x2="200.66" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
 <pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="203.2" y1="116.84" x2="203.2" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="119.38" x2="203.2" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="GND"/>
-<wire x1="193.04" y1="116.84" x2="203.2" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="116.84" x2="203.2" y2="111.76" width="0.1524" layer="91"/>
 <junction x="203.2" y="116.84"/>
+<wire x1="203.2" y1="116.84" x2="193.04" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
@@ -8191,7 +8191,7 @@ In this library you will find circuit elements that are used for getting measure
 <pinref part="IC1" gate="G$1" pin="REGOUT"/>
 <wire x1="193.04" y1="129.54" x2="203.2" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="203.2" y1="129.54" x2="203.2" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="129.54" x2="203.2" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
