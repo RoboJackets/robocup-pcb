@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.5.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -8037,9 +8037,9 @@ In this library you will find circuit elements that are used for getting measure
 </classes>
 <parts>
 <part name="FRAME1" library="RoboJackets-Frames" deviceset="FRAME_A_L" device="">
-<attribute name="REVISION" value=""/>
-<attribute name="SCH_DESC" value=""/>
-<attribute name="TEAM" value=""/>
+<attribute name="REVISION" value="1.0"/>
+<attribute name="SCH_DESC" value="Breakout for ICM 42605 IMU"/>
+<attribute name="TEAM" value="RoboCup SSL"/>
 </part>
 <part name="KIT1" library="RoboJackets-Boards" deviceset="IMU" device="IMU-KIT"/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -8052,6 +8052,7 @@ In this library you will find circuit elements that are used for getting measure
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2"/>
+<part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8065,7 +8066,7 @@ In this library you will find circuit elements that are used for getting measure
 <wire x1="218.44" y1="88.9" x2="218.44" y2="175.26" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="218.44" y1="175.26" x2="91.44" y2="175.26" width="0.1524" layer="97" style="shortdash"/>
 <text x="93.98" y="170.18" size="2.1844" layer="97">IMU</text>
-<text x="20.32" y="170.18" size="2.1844" layer="97">Board header pins</text>
+<text x="20.32" y="170.18" size="2.1844" layer="97">Board Header Pins</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -8101,15 +8102,18 @@ In this library you will find circuit elements that are used for getting measure
 <attribute name="NAME" x="125.476" y="109.855" size="1.778" layer="95"/>
 <attribute name="VALUE" x="125.476" y="105.029" size="1.778" layer="96"/>
 </instance>
-<instance part="GND6" gate="1" x="116.84" y="93.98" smashed="yes">
-<attribute name="VALUE" x="114.3" y="91.44" size="1.778" layer="96"/>
+<instance part="GND6" gate="1" x="116.84" y="96.52" smashed="yes">
+<attribute name="VALUE" x="114.3" y="93.98" size="1.778" layer="96"/>
 </instance>
-<instance part="GND8" gate="1" x="195.58" y="119.38" smashed="yes">
-<attribute name="VALUE" x="193.04" y="116.84" size="1.778" layer="96"/>
+<instance part="GND8" gate="1" x="193.04" y="119.38" smashed="yes">
+<attribute name="VALUE" x="190.5" y="116.84" size="1.778" layer="96"/>
 </instance>
 <instance part="C1" gate="G$1" x="116.84" y="109.22" smashed="yes">
 <attribute name="NAME" x="117.856" y="109.855" size="1.778" layer="95"/>
 <attribute name="VALUE" x="117.856" y="105.029" size="1.778" layer="96"/>
+</instance>
+<instance part="GND1" gate="1" x="127" y="129.54" smashed="yes" rot="R270">
+<attribute name="VALUE" x="124.46" y="132.08" size="1.778" layer="96" rot="R270"/>
 </instance>
 </instances>
 <busses>
@@ -8123,26 +8127,33 @@ In this library you will find circuit elements that are used for getting measure
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="124.46" y1="104.14" x2="124.46" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="99.06" x2="116.84" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="104.14" x2="124.46" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="101.6" x2="116.84" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="116.84" y1="99.06" x2="109.22" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="99.06" x2="109.22" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="99.06" x2="116.84" y2="96.52" width="0.1524" layer="91"/>
-<junction x="116.84" y="99.06"/>
+<wire x1="116.84" y1="101.6" x2="109.22" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="101.6" x2="109.22" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="101.6" x2="116.84" y2="99.06" width="0.1524" layer="91"/>
+<junction x="116.84" y="101.6"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="116.84" y1="104.14" x2="116.84" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="104.14" x2="116.84" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="RESV3(GND)"/>
-<wire x1="185.42" y1="142.24" x2="195.58" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="142.24" x2="193.04" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="GND"/>
-<wire x1="185.42" y1="124.46" x2="195.58" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="124.46" x2="195.58" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="124.46" x2="195.58" y2="121.92" width="0.1524" layer="91"/>
-<junction x="195.58" y="124.46"/>
+<wire x1="185.42" y1="124.46" x2="193.04" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="124.46" x2="193.04" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="124.46" x2="193.04" y2="121.92" width="0.1524" layer="91"/>
+<junction x="193.04" y="124.46"/>
 <pinref part="GND8" gate="1" pin="GND"/>
+</segment>
+<segment>
+<wire x1="134.62" y1="132.08" x2="132.08" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="132.08" x2="132.08" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="129.54" x2="129.54" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+<pinref part="U3" gate="G$1" pin="INT2(FSYNC)"/>
 </segment>
 </net>
 <net name="+3.3V" class="0">
@@ -8181,10 +8192,11 @@ In this library you will find circuit elements that are used for getting measure
 <label x="27.94" y="162.56" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<label x="124.46" y="152.4" size="1.778" layer="95" rot="R180" xref="yes"/>
-<wire x1="124.46" y1="152.4" x2="134.62" y2="152.4" width="0.1524" layer="91"/>
+<label x="124.46" y="149.86" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="124.46" y1="149.86" x2="127" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="127" y1="149.86" x2="127" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="MOSI(SDI/SDIO/SDA)"/>
-<wire x1="134.62" y1="152.4" x2="134.62" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="127" y1="147.32" x2="134.62" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MISO" class="0">
@@ -8195,10 +8207,8 @@ In this library you will find circuit elements that are used for getting measure
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="MISO(SDO/AD0)"/>
-<wire x1="134.62" y1="144.78" x2="132.08" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="144.78" x2="132.08" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="147.32" x2="124.46" y2="147.32" width="0.1524" layer="91"/>
-<label x="124.46" y="147.32" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="134.62" y1="144.78" x2="124.46" y2="144.78" width="0.1524" layer="91"/>
+<label x="124.46" y="144.78" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="CLK" class="0">
@@ -8209,8 +8219,10 @@ In this library you will find circuit elements that are used for getting measure
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="SCK(SCL/SCLK)"/>
-<wire x1="134.62" y1="142.24" x2="124.46" y2="142.24" width="0.1524" layer="91"/>
-<label x="124.46" y="142.24" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="134.62" y1="142.24" x2="127" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="127" y1="142.24" x2="127" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="127" y1="139.7" x2="124.46" y2="139.7" width="0.1524" layer="91"/>
+<label x="124.46" y="139.7" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="INT" class="0">
@@ -8221,13 +8233,8 @@ In this library you will find circuit elements that are used for getting measure
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="INT1(INT)"/>
-<wire x1="134.62" y1="134.62" x2="127" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="127" y1="134.62" x2="127" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="INT2(FSYNC)"/>
-<wire x1="127" y1="132.08" x2="134.62" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="127" y1="134.62" x2="121.92" y2="134.62" width="0.1524" layer="91"/>
-<junction x="127" y="134.62"/>
-<label x="121.92" y="134.62" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="134.62" y1="134.62" x2="124.46" y2="134.62" width="0.1524" layer="91"/>
+<label x="124.46" y="134.62" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="!CS!" class="0">
@@ -8235,6 +8242,13 @@ In this library you will find circuit elements that are used for getting measure
 <pinref part="KIT1" gate="G$1" pin="!CS!"/>
 <wire x1="33.02" y1="147.32" x2="27.94" y2="147.32" width="0.1524" layer="91"/>
 <label x="27.94" y="147.32" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="CSN"/>
+<wire x1="134.62" y1="139.7" x2="132.08" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="139.7" x2="132.08" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="137.16" x2="129.54" y2="137.16" width="0.1524" layer="91"/>
+<label x="129.54" y="137.16" size="1.778" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>

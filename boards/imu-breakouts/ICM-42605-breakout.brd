@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.5.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -1605,6 +1605,11 @@ Your Eurocircuits Team
 <wire x1="4.66" y1="3.644" x2="3.81" y2="2.794" width="0.1524" layer="1"/>
 <via x="3.81" y="2.794" extent="1-16" drill="0.35"/>
 <wire x1="2.1825" y1="-0.77" x2="2.1825" y2="-1.27" width="0.1524" layer="1"/>
+<contactref element="U3" pad="P$9"/>
+<wire x1="1.778" y1="4.318" x2="3.81" y2="2.794" width="0" layer="19" extent="1-1"/>
+<wire x1="-2.96" y1="4.318" x2="0.596" y2="4.318" width="0" layer="19" extent="1-1"/>
+<wire x1="1.52" y1="-0.1075" x2="3.81" y2="2.794" width="0" layer="19" extent="1-1"/>
+<wire x1="2.1825" y1="-0.77" x2="1.52" y2="-0.1075" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+3.3V">
 <contactref element="KIT1" pad="8"/>
@@ -1667,12 +1672,10 @@ Your Eurocircuits Team
 <signal name="INT">
 <contactref element="KIT1" pad="6"/>
 <contactref element="U3" pad="P$4"/>
-<contactref element="U3" pad="P$9"/>
 <wire x1="6.35" y1="-1.27" x2="5.08" y2="-2.54" width="0.1524" layer="1"/>
 <wire x1="2.1275" y1="-2.54" x2="2.02" y2="-2.4325" width="0.1524" layer="1"/>
 <wire x1="5.08" y1="-2.54" x2="4.064" y2="-2.54" width="0.1524" layer="1"/>
 <wire x1="4.064" y1="-2.54" x2="2.1275" y2="-2.54" width="0.1524" layer="1"/>
-<wire x1="1.52" y1="-0.1075" x2="1.52" y2="0.504" width="0.1524" layer="1"/>
 <wire x1="1.52" y1="0.504" x2="1.778" y2="0.762" width="0.1524" layer="1"/>
 <wire x1="1.778" y1="0.762" x2="2.54" y2="0.762" width="0.1524" layer="1"/>
 <via x="2.54" y="0.762" extent="1-16" drill="0.35"/>
@@ -1684,6 +1687,8 @@ Your Eurocircuits Team
 </signal>
 <signal name="!CS!">
 <contactref element="KIT1" pad="4"/>
+<contactref element="U3" pad="P$12"/>
+<wire x1="0.3575" y1="-0.77" x2="-6.35" y2="-3.81" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
