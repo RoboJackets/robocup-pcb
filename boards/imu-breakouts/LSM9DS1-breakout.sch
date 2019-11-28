@@ -8018,8 +8018,7 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="TEAM" x="173.99" y="34.29" size="3.048" layer="94" ratio="10" align="top-left"/>
 </instance>
 <instance part="U1" gate="G$1" x="134.62" y="127" smashed="yes">
-<attribute name="NAME" x="114.3" y="144.78" size="1.778" layer="95"/>
-<attribute name="VALUE" x="116.84" y="114.3" size="1.778" layer="96"/>
+<attribute name="VALUE" x="119.38" y="114.3" size="2.54" layer="96" align="top-center"/>
 </instance>
 <instance part="GND1" gate="1" x="132.08" y="96.52" smashed="yes">
 <attribute name="VALUE" x="129.54" y="93.98" size="1.778" layer="96"/>
