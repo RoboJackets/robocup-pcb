@@ -7961,7 +7961,25 @@ In this library you will find circuit elements that are used for getting measure
 <wire x1="1.7" y1="-1.4" x2="1.7" y2="1.4" width="0.127" layer="21"/>
 <wire x1="1.7" y1="1.4" x2="-1.7" y2="1.4" width="0.127" layer="21"/>
 <wire x1="-1.7" y1="1.4" x2="-1.7" y2="-1.4" width="0.127" layer="21"/>
-<circle x="-2.3" y="2" radius="0.2" width="1" layer="21"/>
+<circle x="-1.9892" y="1.6892" radius="0.0632" width="0.25" layer="21"/>
+<circle x="2.492" y="0" radius="0.2" width="0.1" layer="51"/>
+<wire x1="2.492" y1="0.197459375" x2="2.492" y2="1.397459375" width="0.1" layer="51"/>
+<wire x1="2.2892" y1="1.197459375" x2="2.492" y2="1.397459375" width="0.1" layer="51"/>
+<wire x1="2.492" y1="1.397459375" x2="2.6892" y2="1.197459375" width="0.1" layer="51"/>
+<wire x1="2.1892" y1="0.697459375" x2="2.7892" y2="0.697459375" width="0.1" layer="51" curve="-161.075356"/>
+<wire x1="2.8892" y1="0.797459375" x2="2.7892" y2="0.697459375" width="0.1" layer="51"/>
+<wire x1="2.7892" y1="0.697459375" x2="2.6892" y2="0.697459375" width="0.1" layer="51"/>
+<wire x1="2.6892" y1="0" x2="3.8892" y2="0" width="0.1" layer="51"/>
+<wire x1="3.6892" y1="0.197459375" x2="3.8892" y2="0" width="0.1" layer="51"/>
+<wire x1="3.8892" y1="0" x2="3.6892" y2="-0.202540625" width="0.1" layer="51"/>
+<wire x1="3.1892" y1="0.3" x2="3.1892" y2="-0.3" width="0.1" layer="51" curve="-161.075356"/>
+<wire x1="3.2892" y1="-0.402540625" x2="3.1892" y2="-0.3" width="0.1" layer="51"/>
+<wire x1="3.1892" y1="-0.3" x2="3.1892" y2="-0.202540625" width="0.1" layer="51"/>
+<text x="2.492" y="1.5" size="0.254" layer="51" font="vector" ratio="12" align="bottom-center">Y</text>
+<text x="3.992" y="0" size="0.254" layer="51" font="vector" ratio="12" align="center-left">X</text>
+<text x="2.492" y="-0.3" size="0.254" layer="51" font="vector" ratio="12" align="top-center">Z</text>
+<text x="-2" y="2" size="1" layer="25">&gt;NAME</text>
+<text x="-2" y="-2" size="1" layer="27" align="top-left">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
