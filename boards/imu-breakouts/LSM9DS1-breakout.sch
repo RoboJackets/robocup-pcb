@@ -3468,108 +3468,6 @@ In this library you will find frames that can be used to help organize a schemat
 </deviceset>
 </devicesets>
 </library>
-<library name="RoboJackets-ICs">
-<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
-&lt;hr&gt;
-&lt;h1&gt;RoboJackets EAGLE Libraries - Integrated Circuits (ICs)&lt;/h1&gt;&lt;/br&gt;
-&lt;p&gt;
-In this library you will find the larger circuit elements that are used to control many areas of a system. This usually includes microcontrollers, but ICs usually cover a wide range of chips.
-&lt;/p&gt;</description>
-<packages>
-<package name="LGA-24L">
-<wire x1="-1.83" y1="-1.58" x2="-1.83" y2="1.58" width="0.127" layer="51"/>
-<wire x1="-1.83" y1="1.58" x2="1.83" y2="1.58" width="0.127" layer="51"/>
-<wire x1="1.83" y1="1.58" x2="1.83" y2="-1.58" width="0.127" layer="51"/>
-<wire x1="1.83" y1="-1.58" x2="-1.83" y2="-1.58" width="0.127" layer="51"/>
-<wire x1="-1.99" y1="-1.74" x2="-1.99" y2="1.74" width="0.05" layer="39"/>
-<wire x1="-1.99" y1="1.74" x2="1.99" y2="1.74" width="0.05" layer="39"/>
-<wire x1="1.99" y1="1.74" x2="1.99" y2="-1.74" width="0.05" layer="39"/>
-<wire x1="1.99" y1="-1.74" x2="-1.99" y2="-1.74" width="0.05" layer="39"/>
-<circle x="-2.4" y="1.2" radius="0.1" width="0.2" layer="21"/>
-<circle x="-2.4" y="1.2" radius="0.1" width="0.2" layer="51"/>
-<text x="-2.00321875" y="1.903059375" size="0.40705625" layer="25">&gt;NAME</text>
-<text x="-2.0016" y="-2.201759375" size="0.406725" layer="27">&gt;VALUE</text>
-<wire x1="-1.86" y1="1.58" x2="-1.86" y2="0.94" width="0.127" layer="21"/>
-<wire x1="1.86" y1="1.58" x2="1.86" y2="0.94" width="0.127" layer="21"/>
-<wire x1="-1.86" y1="-1.58" x2="-1.86" y2="-0.94" width="0.127" layer="21"/>
-<wire x1="1.86" y1="-1.58" x2="1.86" y2="-0.94" width="0.127" layer="21"/>
-<smd name="1" x="-1.505" y="1.22" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R90"/>
-<smd name="2" x="-1.47" y="0.645" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R180"/>
-<smd name="3" x="-1.47" y="0.215" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R180"/>
-<smd name="4" x="-1.47" y="-0.215" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R180"/>
-<smd name="5" x="-1.47" y="-0.645" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R180"/>
-<smd name="6" x="-1.505" y="-1.22" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R270"/>
-<smd name="7" x="-1.075" y="-1.22" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R270"/>
-<smd name="8" x="-0.645" y="-1.22" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R270"/>
-<smd name="9" x="-0.215" y="-1.22" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R270"/>
-<smd name="10" x="0.215" y="-1.22" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R270"/>
-<smd name="11" x="0.645" y="-1.22" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R270"/>
-<smd name="12" x="1.075" y="-1.22" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R270"/>
-<smd name="13" x="1.505" y="-1.22" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R270"/>
-<smd name="14" x="1.47" y="-0.645" dx="0.53" dy="0.28" layer="1" roundness="7"/>
-<smd name="15" x="1.47" y="-0.215" dx="0.53" dy="0.28" layer="1" roundness="7"/>
-<smd name="16" x="1.47" y="0.215" dx="0.53" dy="0.28" layer="1" roundness="7"/>
-<smd name="17" x="1.47" y="0.645" dx="0.53" dy="0.28" layer="1" roundness="7"/>
-<smd name="18" x="1.505" y="1.22" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R90"/>
-<smd name="19" x="1.075" y="1.22" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R90"/>
-<smd name="20" x="0.645" y="1.22" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R90"/>
-<smd name="21" x="0.215" y="1.22" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R90"/>
-<smd name="22" x="-0.215" y="1.22" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R90"/>
-<smd name="23" x="-0.645" y="1.22" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R90"/>
-<smd name="24" x="-1.075" y="1.22" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R90"/>
-</package>
-</packages>
-<symbols>
-<symbol name="LSM9DS1">
-<wire x1="-17.78" y1="15.24" x2="-17.78" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="-10.16" x2="17.78" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-10.16" x2="17.78" y2="15.24" width="0.254" layer="94"/>
-<wire x1="17.78" y1="15.24" x2="-17.78" y2="15.24" width="0.254" layer="94"/>
-<pin name="RES" x="2.54" y="-15.24" length="middle" rot="R90"/>
-<pin name="GND" x="-5.08" y="-15.24" length="middle" rot="R90"/>
-<pin name="VDD" x="2.54" y="20.32" length="middle" rot="R270"/>
-<pin name="VDD_IO" x="-5.08" y="20.32" length="middle" rot="R270"/>
-<pin name="CAP" x="22.86" y="10.16" length="middle" rot="R180"/>
-<pin name="C1" x="22.86" y="5.08" length="middle" rot="R180"/>
-<pin name="!CS!" x="-22.86" y="10.16" length="middle"/>
-<pin name="MOSI" x="-22.86" y="5.08" length="middle"/>
-<pin name="MISO" x="-22.86" y="0" length="middle"/>
-<pin name="INT" x="22.86" y="-5.08" length="middle" rot="R180"/>
-<pin name="DEN_A/G" x="22.86" y="0" length="middle" rot="R180"/>
-<pin name="CLK" x="-22.86" y="-5.08" length="middle"/>
-<text x="-20.32" y="17.78" size="1.778" layer="95">&gt;NAME</text>
-<text x="-20.32" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="LSM9DS1" prefix="U">
-<gates>
-<gate name="G$1" symbol="LSM9DS1" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="LGA-24L">
-<connects>
-<connect gate="G$1" pin="!CS!" pad="7"/>
-<connect gate="G$1" pin="C1" pad="24"/>
-<connect gate="G$1" pin="CAP" pad="21"/>
-<connect gate="G$1" pin="CLK" pad="2"/>
-<connect gate="G$1" pin="DEN_A/G" pad="13"/>
-<connect gate="G$1" pin="GND" pad="19 20"/>
-<connect gate="G$1" pin="INT" pad="11"/>
-<connect gate="G$1" pin="MISO" pad="5"/>
-<connect gate="G$1" pin="MOSI" pad="4"/>
-<connect gate="G$1" pin="RES" pad="14 15 16 17 18"/>
-<connect gate="G$1" pin="VDD" pad="22 23"/>
-<connect gate="G$1" pin="VDD_IO" pad="1 3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="supply1" urn="urn:adsk.eagle:library:371">
 <description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
  GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
@@ -7958,6 +7856,123 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="RoboJackets-Sensors">
+<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
+&lt;hr&gt;
+&lt;h1&gt;RoboJackets EAGLE Libraries - Sensors&lt;/h1&gt;&lt;/br&gt;
+&lt;p&gt;
+In this library you will find circuit elements that are used for getting measurements as sensory input.
+&lt;/p&gt;</description>
+<packages>
+<package name="LGA-24L">
+<wire x1="-1.83" y1="-1.58" x2="-1.83" y2="1.58" width="0.127" layer="51"/>
+<wire x1="-1.83" y1="1.58" x2="1.83" y2="1.58" width="0.127" layer="51"/>
+<wire x1="1.83" y1="1.58" x2="1.83" y2="-1.58" width="0.127" layer="51"/>
+<wire x1="1.83" y1="-1.58" x2="-1.83" y2="-1.58" width="0.127" layer="51"/>
+<wire x1="-1.99" y1="-1.74" x2="-1.99" y2="1.74" width="0.05" layer="39"/>
+<wire x1="-1.99" y1="1.74" x2="1.99" y2="1.74" width="0.05" layer="39"/>
+<wire x1="1.99" y1="1.74" x2="1.99" y2="-1.74" width="0.05" layer="39"/>
+<wire x1="1.99" y1="-1.74" x2="-1.99" y2="-1.74" width="0.05" layer="39"/>
+<text x="-2" y="2" size="1" layer="25">&gt;NAME</text>
+<text x="-2" y="-2" size="1" layer="27" align="top-left">&gt;VALUE</text>
+<wire x1="-1.86" y1="1.58" x2="-1.86" y2="0.94" width="0.127" layer="21"/>
+<wire x1="1.86" y1="1.58" x2="1.86" y2="0.94" width="0.127" layer="21"/>
+<wire x1="-1.86" y1="-1.58" x2="-1.86" y2="-0.94" width="0.127" layer="21"/>
+<wire x1="1.86" y1="-1.58" x2="1.86" y2="-0.94" width="0.127" layer="21"/>
+<smd name="1" x="-1.505" y="1.22" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R90"/>
+<smd name="2" x="-1.47" y="0.645" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R180"/>
+<smd name="3" x="-1.47" y="0.215" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R180"/>
+<smd name="4" x="-1.47" y="-0.215" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R180"/>
+<smd name="5" x="-1.47" y="-0.645" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R180"/>
+<smd name="6" x="-1.505" y="-1.22" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R270"/>
+<smd name="7" x="-1.075" y="-1.22" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R270"/>
+<smd name="8" x="-0.645" y="-1.22" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R270"/>
+<smd name="9" x="-0.215" y="-1.22" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R270"/>
+<smd name="10" x="0.215" y="-1.22" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R270"/>
+<smd name="11" x="0.645" y="-1.22" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R270"/>
+<smd name="12" x="1.075" y="-1.22" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R270"/>
+<smd name="13" x="1.505" y="-1.22" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R270"/>
+<smd name="14" x="1.47" y="-0.645" dx="0.53" dy="0.28" layer="1" roundness="7"/>
+<smd name="15" x="1.47" y="-0.215" dx="0.53" dy="0.28" layer="1" roundness="7"/>
+<smd name="16" x="1.47" y="0.215" dx="0.53" dy="0.28" layer="1" roundness="7"/>
+<smd name="17" x="1.47" y="0.645" dx="0.53" dy="0.28" layer="1" roundness="7"/>
+<smd name="18" x="1.505" y="1.22" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R90"/>
+<smd name="19" x="1.075" y="1.22" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R90"/>
+<smd name="20" x="0.645" y="1.22" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R90"/>
+<smd name="21" x="0.215" y="1.22" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R90"/>
+<smd name="22" x="-0.215" y="1.22" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R90"/>
+<smd name="23" x="-0.645" y="1.22" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R90"/>
+<smd name="24" x="-1.075" y="1.22" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R90"/>
+<circle x="-2.1022" y="1.8482" radius="0.0632" width="0.25" layer="21"/>
+<circle x="2.619" y="-0.03" radius="0.2" width="0.1" layer="51"/>
+<wire x1="2.619" y1="-0.227459375" x2="2.619" y2="-1.427459375" width="0.1" layer="51"/>
+<wire x1="2.4162" y1="-1.227459375" x2="2.619" y2="-1.427459375" width="0.1" layer="51"/>
+<wire x1="2.619" y1="-1.427459375" x2="2.8162" y2="-1.227459375" width="0.1" layer="51"/>
+<wire x1="2.8908" y1="-0.473459375" x2="2.2908" y2="-0.473459375" width="0.1" layer="51" curve="-161.075356"/>
+<wire x1="2.1908" y1="-0.573459375" x2="2.2908" y2="-0.473459375" width="0.1" layer="51"/>
+<wire x1="2.2908" y1="-0.473459375" x2="2.3908" y2="-0.473459375" width="0.1" layer="51"/>
+<wire x1="2.8162" y1="-0.03" x2="4.0162" y2="-0.03" width="0.1" layer="51"/>
+<wire x1="3.8162" y1="-0.227459375" x2="4.0162" y2="-0.03" width="0.1" layer="51"/>
+<wire x1="4.0162" y1="-0.03" x2="3.8162" y2="0.172540625" width="0.1" layer="51"/>
+<wire x1="3.5418" y1="-0.33" x2="3.5418" y2="0.27" width="0.1" layer="51" curve="-161.075356"/>
+<wire x1="3.4418" y1="0.372540625" x2="3.5418" y2="0.27" width="0.1" layer="51"/>
+<wire x1="3.5418" y1="0.27" x2="3.5418" y2="0.172540625" width="0.1" layer="51"/>
+<text x="2.619" y="-1.53" size="0.254" layer="51" font="vector" ratio="12" rot="MR180" align="bottom-center">Y</text>
+<text x="4.119" y="-0.03" size="0.254" layer="51" font="vector" ratio="12" rot="MR180" align="center-left">X</text>
+<text x="2.619" y="0.27" size="0.254" layer="51" font="vector" ratio="12" rot="R180" align="top-center">Z</text>
+</package>
+</packages>
+<symbols>
+<symbol name="LSM9DS1">
+<wire x1="-17.78" y1="15.24" x2="-17.78" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-10.16" x2="17.78" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-10.16" x2="17.78" y2="15.24" width="0.254" layer="94"/>
+<wire x1="17.78" y1="15.24" x2="-17.78" y2="15.24" width="0.254" layer="94"/>
+<pin name="RES" x="2.54" y="-15.24" length="middle" rot="R90"/>
+<pin name="GND" x="-5.08" y="-15.24" length="middle" rot="R90"/>
+<pin name="VDD" x="2.54" y="20.32" length="middle" rot="R270"/>
+<pin name="VDD_IO" x="-5.08" y="20.32" length="middle" rot="R270"/>
+<pin name="CAP" x="22.86" y="10.16" length="middle" rot="R180"/>
+<pin name="C1" x="22.86" y="5.08" length="middle" rot="R180"/>
+<pin name="!CS!" x="-22.86" y="10.16" length="middle"/>
+<pin name="MOSI" x="-22.86" y="5.08" length="middle"/>
+<pin name="MISO" x="-22.86" y="0" length="middle"/>
+<pin name="INT" x="22.86" y="-5.08" length="middle" rot="R180"/>
+<pin name="DEN_A/G" x="22.86" y="0" length="middle" rot="R180"/>
+<pin name="CLK" x="-22.86" y="-5.08" length="middle"/>
+<text x="-20.32" y="17.78" size="1.778" layer="95">&gt;NAME</text>
+<text x="-20.32" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="LSM9DS1" prefix="U">
+<gates>
+<gate name="G$1" symbol="LSM9DS1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LGA-24L">
+<connects>
+<connect gate="G$1" pin="!CS!" pad="7"/>
+<connect gate="G$1" pin="C1" pad="24"/>
+<connect gate="G$1" pin="CAP" pad="21"/>
+<connect gate="G$1" pin="CLK" pad="2"/>
+<connect gate="G$1" pin="DEN_A/G" pad="13"/>
+<connect gate="G$1" pin="GND" pad="19 20"/>
+<connect gate="G$1" pin="INT" pad="11"/>
+<connect gate="G$1" pin="MISO" pad="5"/>
+<connect gate="G$1" pin="MOSI" pad="4"/>
+<connect gate="G$1" pin="RES" pad="14 15 16 17 18"/>
+<connect gate="G$1" pin="VDD" pad="22 23"/>
+<connect gate="G$1" pin="VDD_IO" pad="1 3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 <attribute name="REVISION" value="1.0"/>
@@ -7976,7 +7991,7 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="SCH_DESC" value="Breakout for LSM9DS1 IMU"/>
 <attribute name="TEAM" value="RoboCup SSL"/>
 </part>
-<part name="U1" library="RoboJackets-ICs" deviceset="LSM9DS1" device=""/>
+<part name="U1" library="RoboJackets-Sensors" deviceset="LSM9DS1" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>

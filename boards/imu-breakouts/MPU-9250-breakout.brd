@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -1299,23 +1299,23 @@ In this library you will find circuit elements that are used for getting measure
 <packages>
 <package name="QFN-24-4MM2">
 <circle x="-2.2292" y="2.2292" radius="0.0632" width="0.25" layer="21"/>
-<circle x="3.4925" y="-0.3175" radius="0.2" width="0.1" layer="51"/>
+<circle x="3" y="0" radius="0.2" width="0.1" layer="51"/>
 <wire x1="-2" y1="2" x2="2" y2="2" width="0.127" layer="21"/>
 <wire x1="2" y1="2" x2="2" y2="-2" width="0.127" layer="21"/>
 <wire x1="2" y1="-2" x2="-2" y2="-2" width="0.127" layer="21"/>
 <wire x1="-2" y1="-2" x2="-2" y2="2" width="0.127" layer="21"/>
-<wire x1="3.4925" y1="-0.1175" x2="3.4925" y2="1.0825" width="0.1" layer="51"/>
-<wire x1="3.2925" y1="0.8825" x2="3.4925" y2="1.0825" width="0.1" layer="51"/>
-<wire x1="3.4925" y1="1.0825" x2="3.6925" y2="0.8825" width="0.1" layer="51"/>
-<wire x1="3.1925" y1="0.3825" x2="3.7925" y2="0.3825" width="0.1" layer="51" curve="-161.075356"/>
-<wire x1="3.8925" y1="0.4825" x2="3.7925" y2="0.3825" width="0.1" layer="51"/>
-<wire x1="3.7925" y1="0.3825" x2="3.6925" y2="0.3825" width="0.1" layer="51"/>
-<wire x1="3.6925" y1="-0.3175" x2="4.8925" y2="-0.3175" width="0.1" layer="51"/>
-<wire x1="4.6925" y1="-0.1175" x2="4.8925" y2="-0.3175" width="0.1" layer="51"/>
-<wire x1="4.8925" y1="-0.3175" x2="4.6925" y2="-0.5175" width="0.1" layer="51"/>
-<wire x1="4.1925" y1="-0.0175" x2="4.1925" y2="-0.6175" width="0.1" layer="51" curve="-161.075356"/>
-<wire x1="4.2925" y1="-0.7175" x2="4.1925" y2="-0.6175" width="0.1" layer="51"/>
-<wire x1="4.1925" y1="-0.6175" x2="4.1925" y2="-0.5175" width="0.1" layer="51"/>
+<wire x1="3" y1="0.197459375" x2="3" y2="1.397459375" width="0.1" layer="51"/>
+<wire x1="2.7972" y1="1.197459375" x2="3" y2="1.397459375" width="0.1" layer="51"/>
+<wire x1="3" y1="1.397459375" x2="3.1972" y2="1.197459375" width="0.1" layer="51"/>
+<wire x1="2.6972" y1="0.697459375" x2="3.2972" y2="0.697459375" width="0.1" layer="51" curve="-161.075356"/>
+<wire x1="3.3972" y1="0.797459375" x2="3.2972" y2="0.697459375" width="0.1" layer="51"/>
+<wire x1="3.2972" y1="0.697459375" x2="3.1972" y2="0.697459375" width="0.1" layer="51"/>
+<wire x1="3.1972" y1="0" x2="4.3972" y2="0" width="0.1" layer="51"/>
+<wire x1="4.1972" y1="0.197459375" x2="4.3972" y2="0" width="0.1" layer="51"/>
+<wire x1="4.3972" y1="0" x2="4.1972" y2="-0.202540625" width="0.1" layer="51"/>
+<wire x1="3.6972" y1="0.3" x2="3.6972" y2="-0.3" width="0.1" layer="51" curve="-161.075356"/>
+<wire x1="3.7972" y1="-0.402540625" x2="3.6972" y2="-0.3" width="0.1" layer="51"/>
+<wire x1="3.6972" y1="-0.3" x2="3.6972" y2="-0.202540625" width="0.1" layer="51"/>
 <rectangle x1="-0.8382" y1="0.3302" x2="-0.3556" y2="0.8128" layer="31"/>
 <rectangle x1="0.4318" y1="0.3302" x2="0.9144" y2="0.8128" layer="31"/>
 <rectangle x1="-0.8255" y1="-0.8763" x2="-0.3429" y2="-0.3937" layer="31"/>
@@ -1344,10 +1344,11 @@ In this library you will find circuit elements that are used for getting measure
 <smd name="22" x="-0.2575" y="2.0816" dx="1.016" dy="0.254" layer="1" roundness="100" rot="R90"/>
 <smd name="23" x="-0.7621" y="2.0816" dx="1.016" dy="0.254" layer="1" roundness="100" rot="R90"/>
 <smd name="24" x="-1.2667" y="2.0816" dx="1.016" dy="0.254" layer="1" roundness="100" rot="R90"/>
-<text x="3.5052" y="1.1938" size="0.254" layer="51" font="vector" ratio="12" align="bottom-center">Y</text>
-<text x="4.9989" y="-0.3239" size="0.254" layer="51" font="vector" ratio="12" align="center-left">X</text>
-<text x="3.4941" y="-0.6127" size="0.254" layer="51" font="vector" ratio="12" align="top-center">Z</text>
-<text x="0" y="2.8575" size="1" layer="21" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<text x="3" y="1.5" size="0.254" layer="51" font="vector" ratio="12" align="bottom-center">Y</text>
+<text x="4.5" y="0" size="0.254" layer="51" font="vector" ratio="12" align="center-left">X</text>
+<text x="3" y="-0.3" size="0.254" layer="51" font="vector" ratio="12" align="top-center">Z</text>
+<text x="0" y="3" size="1" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3" size="1" layer="27" font="vector" align="top-center">&gt;VALUE</text>
 </package>
 </packages>
 </library>
@@ -1614,9 +1615,9 @@ Your Eurocircuits Team
 <wire x1="2.0862" y1="0.2567" x2="0.89744375" y2="0.2567" width="0.2" layer="1"/>
 <wire x1="0.7796" y1="0.37454375" x2="0.7796" y2="1.0816" width="0.2" layer="1"/>
 <wire x1="0.89744375" y1="0.2567" x2="0.7796" y2="0.37454375" width="0.2" layer="1"/>
+<wire x1="3.3974" y1="0.9974" x2="2.6567" y2="0.2567" width="0.2" layer="1"/>
 <wire x1="2.0862" y1="0.2567" x2="2.6567" y2="0.2567" width="0.2" layer="1"/>
-<wire x1="2.6567" y1="0.2567" x2="3.0164" y2="0.6164" width="0.2" layer="1"/>
-<via x="3.0164" y="0.6164" extent="1-16" drill="0.35"/>
+<via x="3.3974" y="0.9974" extent="1-16" drill="0.35"/>
 <wire x1="3.85" y1="4" x2="3.85" y2="4.85" width="0.2" layer="1"/>
 <wire x1="3.85" y1="4.85" x2="4" y2="5" width="0.2" layer="1"/>
 <via x="4" y="5" extent="1-16" drill="0.35"/>
