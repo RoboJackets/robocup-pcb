@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2628,35 +2628,6 @@ Source: 8x ADG1408_1409.pdf</description>
 <wire x1="-7.5" y1="7.5" x2="-6.5" y2="8.5" width="0.2" layer="21"/>
 <text x="-7.5" y="9" size="1" layer="25">&gt;NAME</text>
 </package>
-<package name="SOP63P574X165-16" urn="urn:adsk.eagle:footprint:12284954/1" locally_modified="yes">
-<description>16-SOP, 0.64 mm pitch, 5.74 mm span, 4.90 X 3.91 X 1.65 mm body
-&lt;p&gt;16-pin SOP package with 0.64 mm pitch, 5.74 mm span with body size 4.90 X 3.91 X 1.65 mm&lt;/p&gt;</description>
-<circle x="-2.6383" y="2.9336" radius="0.25" width="0" layer="21"/>
-<wire x1="-2.0066" y1="2.7436" x2="2.0066" y2="2.7436" width="0.12" layer="21"/>
-<wire x1="-2.0066" y1="-2.7436" x2="2.0066" y2="-2.7436" width="0.12" layer="21"/>
-<wire x1="2.0066" y1="-2.5019" x2="-2.0066" y2="-2.5019" width="0.12" layer="51"/>
-<wire x1="-2.0066" y1="-2.5019" x2="-2.0066" y2="2.5019" width="0.12" layer="51"/>
-<wire x1="-2.0066" y1="2.5019" x2="2.0066" y2="2.5019" width="0.12" layer="51"/>
-<wire x1="2.0066" y1="2.5019" x2="2.0066" y2="-2.5019" width="0.12" layer="51"/>
-<smd name="1" x="-2.3215" y="2.2225" dx="1.8971" dy="0.4143" layer="1"/>
-<smd name="2" x="-2.3215" y="1.5875" dx="1.8971" dy="0.4143" layer="1"/>
-<smd name="3" x="-2.3215" y="0.9525" dx="1.8971" dy="0.4143" layer="1"/>
-<smd name="4" x="-2.3215" y="0.3175" dx="1.8971" dy="0.4143" layer="1"/>
-<smd name="5" x="-2.3215" y="-0.3175" dx="1.8971" dy="0.4143" layer="1"/>
-<smd name="6" x="-2.3215" y="-0.9525" dx="1.8971" dy="0.4143" layer="1"/>
-<smd name="7" x="-2.3215" y="-1.5875" dx="1.8971" dy="0.4143" layer="1"/>
-<smd name="8" x="-2.3215" y="-2.2225" dx="1.8971" dy="0.4143" layer="1"/>
-<smd name="9" x="2.3215" y="-2.2225" dx="1.8971" dy="0.4143" layer="1"/>
-<smd name="10" x="2.3215" y="-1.5875" dx="1.8971" dy="0.4143" layer="1"/>
-<smd name="11" x="2.3215" y="-0.9525" dx="1.8971" dy="0.4143" layer="1"/>
-<smd name="12" x="2.3215" y="-0.3175" dx="1.8971" dy="0.4143" layer="1"/>
-<smd name="13" x="2.3215" y="0.3175" dx="1.8971" dy="0.4143" layer="1"/>
-<smd name="14" x="2.3215" y="0.9525" dx="1.8971" dy="0.4143" layer="1"/>
-<smd name="15" x="2.3215" y="1.5875" dx="1.8971" dy="0.4143" layer="1"/>
-<smd name="16" x="2.3215" y="2.2225" dx="1.8971" dy="0.4143" layer="1"/>
-<text x="-2" y="3.3186" size="1" layer="25" font="vector">&gt;NAME</text>
-<text x="-2" y="-3.3786" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
-</package>
 <package name="LGA-24L">
 <wire x1="-1.83" y1="-1.58" x2="-1.83" y2="1.58" width="0.127" layer="51"/>
 <wire x1="-1.83" y1="1.58" x2="1.83" y2="1.58" width="0.127" layer="51"/>
@@ -2699,23 +2670,36 @@ Source: 8x ADG1408_1409.pdf</description>
 <smd name="23" x="-0.645" y="1.22" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R90"/>
 <smd name="24" x="-1.075" y="1.22" dx="0.53" dy="0.28" layer="1" roundness="7" rot="R90"/>
 </package>
-</packages>
-<packages3d>
-<package3d name="TSSOP16-PW" urn="urn:adsk.eagle:package:4949/1" type="box">
-<description>PLASTIC SMALL-OUTLINE PACKAGE PW (R-PDSO-G16)
-
-Source: www.ti.com .. ADS7828.pdf</description>
-</package3d>
-<package3d name="RTJ20_2P7X2P7" urn="urn:adsk.eagle:package:7475668/1" locally_modified="yes" type="box">
-</package3d>
-<package3d name="SOP63P574X165-16" urn="urn:adsk.eagle:package:12284950/1" locally_modified="yes" type="model">
+<package name="SOP63P574X165-16">
 <description>16-SOP, 0.64 mm pitch, 5.74 mm span, 4.90 X 3.91 X 1.65 mm body
 &lt;p&gt;16-pin SOP package with 0.64 mm pitch, 5.74 mm span with body size 4.90 X 3.91 X 1.65 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="SOP63P574X165-16"/>
-</packageinstances>
-</package3d>
-</packages3d>
+<circle x="-2.6383" y="2.9336" radius="0.25" width="0" layer="21"/>
+<wire x1="-2.0066" y1="2.7436" x2="2.0066" y2="2.7436" width="0.12" layer="21"/>
+<wire x1="-2.0066" y1="-2.7436" x2="2.0066" y2="-2.7436" width="0.12" layer="21"/>
+<wire x1="2.0066" y1="-2.5019" x2="-2.0066" y2="-2.5019" width="0.12" layer="51"/>
+<wire x1="-2.0066" y1="-2.5019" x2="-2.0066" y2="2.5019" width="0.12" layer="51"/>
+<wire x1="-2.0066" y1="2.5019" x2="2.0066" y2="2.5019" width="0.12" layer="51"/>
+<wire x1="2.0066" y1="2.5019" x2="2.0066" y2="-2.5019" width="0.12" layer="51"/>
+<smd name="1" x="-2.3215" y="2.2225" dx="1.8971" dy="0.4143" layer="1"/>
+<smd name="2" x="-2.3215" y="1.5875" dx="1.8971" dy="0.4143" layer="1"/>
+<smd name="3" x="-2.3215" y="0.9525" dx="1.8971" dy="0.4143" layer="1"/>
+<smd name="4" x="-2.3215" y="0.3175" dx="1.8971" dy="0.4143" layer="1"/>
+<smd name="5" x="-2.3215" y="-0.3175" dx="1.8971" dy="0.4143" layer="1"/>
+<smd name="6" x="-2.3215" y="-0.9525" dx="1.8971" dy="0.4143" layer="1"/>
+<smd name="7" x="-2.3215" y="-1.5875" dx="1.8971" dy="0.4143" layer="1"/>
+<smd name="8" x="-2.3215" y="-2.2225" dx="1.8971" dy="0.4143" layer="1"/>
+<smd name="9" x="2.3215" y="-2.2225" dx="1.8971" dy="0.4143" layer="1"/>
+<smd name="10" x="2.3215" y="-1.5875" dx="1.8971" dy="0.4143" layer="1"/>
+<smd name="11" x="2.3215" y="-0.9525" dx="1.8971" dy="0.4143" layer="1"/>
+<smd name="12" x="2.3215" y="-0.3175" dx="1.8971" dy="0.4143" layer="1"/>
+<smd name="13" x="2.3215" y="0.3175" dx="1.8971" dy="0.4143" layer="1"/>
+<smd name="14" x="2.3215" y="0.9525" dx="1.8971" dy="0.4143" layer="1"/>
+<smd name="15" x="2.3215" y="1.5875" dx="1.8971" dy="0.4143" layer="1"/>
+<smd name="16" x="2.3215" y="2.2225" dx="1.8971" dy="0.4143" layer="1"/>
+<text x="-2" y="3.3186" size="1" layer="25" font="vector">&gt;NAME</text>
+<text x="-2" y="-3.3786" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
+</package>
+</packages>
 <symbols>
 <symbol name="LM2734">
 <wire x1="-15.24" y1="7.62" x2="15.24" y2="7.62" width="0.254" layer="94"/>
@@ -6455,9 +6439,6 @@ Datasheet: https://cdn-shop.adafruit.com/product-files/2343/APA102C.pdf</descrip
 <connect gate="G$1" pin="V_OC" pad="12"/>
 <connect gate="G$1" pin="V_OD" pad="6"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:12284950/1"/>
-</package3dinstances>
 <technologies>
 <technology name="A">
 <attribute name="DATA_RATE" value="1 Mbps"/>
@@ -6473,45 +6454,7 @@ Datasheet: https://cdn-shop.adafruit.com/product-files/2343/APA102C.pdf</descrip
 </device>
 </devices>
 </deviceset>
-<deviceset name="LSM9DS1" prefix="U">
-<gates>
-<gate name="G$1" symbol="LSM9DS1" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="LGA-24L">
-<connects>
-<connect gate="G$1" pin="!CS!" pad="7"/>
-<connect gate="G$1" pin="C1" pad="24"/>
-<connect gate="G$1" pin="CAP" pad="21"/>
-<connect gate="G$1" pin="CLK" pad="2"/>
-<connect gate="G$1" pin="DEN_A/G" pad="13"/>
-<connect gate="G$1" pin="GND" pad="19 20"/>
-<connect gate="G$1" pin="INT" pad="11"/>
-<connect gate="G$1" pin="MISO" pad="5"/>
-<connect gate="G$1" pin="MOSI" pad="4"/>
-<connect gate="G$1" pin="RES" pad="14 15 16 17 18"/>
-<connect gate="G$1" pin="VDD" pad="22 23"/>
-<connect gate="G$1" pin="VDD_IO" pad="1 3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 </drawing>
-<compatibility>
-<note version="8.3" severity="warning">
-Since Version 8.3, EAGLE supports URNs for individual library
-assets (packages, symbols, and devices). The URNs of those assets
-will not be understood (or retained) with this version.
-</note>
-<note version="8.3" severity="warning">
-Since Version 8.3, EAGLE supports the association of 3D packages
-with devices in libraries, schematics, and board files. Those 3D
-packages will not be understood (or retained) with this version.
-</note>
-</compatibility>
 </eagle>
