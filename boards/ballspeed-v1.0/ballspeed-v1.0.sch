@@ -9512,7 +9512,7 @@ So, we need an ADC.</text>
 <junction x="101.6" y="68.58"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="IR1-3.3V" class="0">
 <segment>
 <pinref part="R8" gate="G$1" pin="PIN2"/>
 <wire x1="22.86" y1="20.32" x2="27.94" y2="20.32" width="0.1524" layer="91"/>
@@ -9520,7 +9520,7 @@ So, we need an ADC.</text>
 <wire x1="27.94" y1="20.32" x2="27.94" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="IR3-3.3V" class="0">
 <segment>
 <pinref part="R10" gate="G$1" pin="PIN2"/>
 <wire x1="22.86" y1="10.16" x2="25.4" y2="10.16" width="0.1524" layer="91"/>
@@ -9529,7 +9529,7 @@ So, we need an ADC.</text>
 <wire x1="25.4" y1="12.7" x2="27.94" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="IR4-3.3V" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="7"/>
 <pinref part="R11" gate="G$1" pin="PIN2"/>
@@ -9558,7 +9558,7 @@ So, we need an ADC.</text>
 <label x="104.14" y="40.64" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="IR2-3.3V" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="PIN2"/>
 <pinref part="J2" gate="G$1" pin="3"/>
