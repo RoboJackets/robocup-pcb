@@ -4,6 +4,12 @@ Welcome to the Georgia Tech RoboJackets repository for management and storage of
 
 If you are a new member to the RoboCup electrical team and have never used *[git version control](http://git-scm.com/)* before, we highly recommend that you familiarize yourself with it.
 
+## Sponsor Thank You!
+
+- Maxon (discount of EC45 and EC16 motors)
+- PCBWay (donation of PCB fabrication runs)
+- Texas Instruments (donation of ICs and SBCs)
+
 ## Prerequisites
 - A computer configured with git [[Windows](https://windows.github.com)] [[Mac](https://mac.github.com/)]
 - An installation of [EAGLE](http://www.cadsoftusa.com/)
