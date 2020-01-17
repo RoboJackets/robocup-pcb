@@ -9403,11 +9403,6 @@ So, we need an ADC.</text>
 </net>
 <net name="IR1" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="GPIO5"/>
-<wire x1="106.68" y1="33.02" x2="104.14" y2="33.02" width="0.1524" layer="91"/>
-<label x="104.14" y="33.02" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="27.94" y1="63.5" x2="27.94" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="PIN2"/>
@@ -9418,11 +9413,6 @@ So, we need an ADC.</text>
 </segment>
 </net>
 <net name="IR2" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="GPIO6"/>
-<wire x1="106.68" y1="30.48" x2="104.14" y2="30.48" width="0.1524" layer="91"/>
-<label x="104.14" y="30.48" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="3"/>
 <pinref part="R5" gate="G$1" pin="PIN2"/>
@@ -9444,11 +9434,6 @@ So, we need an ADC.</text>
 <junction x="25.4" y="50.8"/>
 <label x="25.4" y="48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
-<segment>
-<pinref part="U$2" gate="G$1" pin="GPIO13"/>
-<wire x1="106.68" y1="27.94" x2="104.14" y2="27.94" width="0.1524" layer="91"/>
-<label x="104.14" y="27.94" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
 </net>
 <net name="IR4" class="0">
 <segment>
@@ -9459,11 +9444,6 @@ So, we need an ADC.</text>
 <wire x1="27.94" y1="43.18" x2="30.48" y2="43.18" width="0.1524" layer="91"/>
 <junction x="27.94" y="43.18"/>
 <label x="30.48" y="43.18" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$2" gate="G$1" pin="GPIO19"/>
-<wire x1="106.68" y1="25.4" x2="104.14" y2="25.4" width="0.1524" layer="91"/>
-<label x="104.14" y="25.4" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="+3.3V" class="0">
@@ -9506,9 +9486,7 @@ So, we need an ADC.</text>
 <pinref part="SUPPLY4" gate="P" pin="+3.3V"/>
 <pinref part="U$2" gate="G$1" pin="3V3@1"/>
 <wire x1="101.6" y1="68.58" x2="106.68" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="3V3@2"/>
-<wire x1="106.68" y1="48.26" x2="101.6" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="48.26" x2="101.6" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="68.58" x2="101.6" y2="68.58" width="0.1524" layer="91"/>
 <junction x="101.6" y="68.58"/>
 </segment>
 </net>

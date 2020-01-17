@@ -3,7 +3,7 @@
 <eagle version="9.5.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
@@ -23,17 +23,17 @@
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -47,9 +47,9 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -5369,7 +5369,6 @@ Your Eurocircuits Team
 <wire x1="26.31" y1="45.51" x2="26.8976" y2="46.0976" width="0.2" layer="1"/>
 </signal>
 <signal name="IR1">
-<contactref element="U$2" pad="29"/>
 <contactref element="J1" pad="1"/>
 <contactref element="R1" pad="2"/>
 <contactref element="U2" pad="1"/>
@@ -5380,16 +5379,6 @@ Your Eurocircuits Team
 <via x="9.4" y="13.2" extent="1-16" drill="0.35"/>
 <wire x1="9.4" y1="13.2" x2="9.4" y2="16.3" width="0.4" layer="16"/>
 <wire x1="19.75" y1="26.65" x2="9.4" y2="16.3" width="0.4" layer="16"/>
-<wire x1="15.3" y1="44.9" x2="19.745" y2="40.455" width="0.4" layer="1"/>
-<wire x1="15.3" y1="44.9" x2="15.3" y2="56.3" width="0.4" layer="1"/>
-<wire x1="15.3" y1="56.3" x2="15.4" y2="56.4" width="0.4" layer="1"/>
-<via x="15.4" y="56.4" extent="1-16" drill="0.35"/>
-<wire x1="15.4" y1="56.4" x2="14.8" y2="57" width="0.4" layer="16"/>
-<wire x1="14.8" y1="57" x2="11.1" y2="57" width="0.4" layer="16"/>
-<via x="11.1" y="57" extent="1-16" drill="0.35"/>
-<wire x1="11.1" y1="57" x2="7.67" y2="60.43" width="0.4" layer="1"/>
-<wire x1="7.67" y1="60.43" x2="5.47" y2="60.43" width="0.4" layer="1"/>
-<wire x1="19.745" y1="40.455" x2="19.745" y2="37.145" width="0.4" layer="1"/>
 <wire x1="19.745" y1="37.145" x2="19.7" y2="37.1" width="0.4" layer="1"/>
 <via x="19.7" y="37.1" extent="1-16" drill="0.35"/>
 <wire x1="19.7" y1="37.1" x2="19.75" y2="37.05" width="0.4" layer="16"/>
@@ -5397,7 +5386,6 @@ Your Eurocircuits Team
 <wire x1="19.745" y1="35.2" x2="19.745" y2="37.145" width="0.4" layer="1"/>
 </signal>
 <signal name="IR2">
-<contactref element="U$2" pad="31"/>
 <contactref element="J1" pad="3"/>
 <contactref element="R5" pad="2"/>
 <contactref element="U2" pad="2"/>
@@ -5408,16 +5396,7 @@ Your Eurocircuits Team
 <via x="6.9" y="13.2" extent="1-16" drill="0.35"/>
 <wire x1="6.9" y1="13.2" x2="6.9" y2="15.4" width="0.4" layer="16"/>
 <wire x1="18.5" y1="27" x2="6.9" y2="15.4" width="0.4" layer="16"/>
-<wire x1="14.3" y1="58" x2="14.3" y2="44.2" width="0.4" layer="1"/>
-<via x="14.3" y="58" extent="1-16" drill="0.35"/>
-<wire x1="14.3" y1="58" x2="13.5" y2="58.8" width="0.4" layer="16"/>
-<wire x1="13.5" y1="58.8" x2="11.1" y2="58.8" width="0.4" layer="16"/>
-<via x="11.1" y="58.8" extent="1-16" drill="0.35"/>
-<wire x1="11.1" y1="58.8" x2="6.93" y2="62.97" width="0.4" layer="1"/>
-<wire x1="6.93" y1="62.97" x2="5.47" y2="62.97" width="0.4" layer="1"/>
-<wire x1="18.5" y1="40" x2="18.5" y2="37.1" width="0.4" layer="1"/>
 <via x="18.5" y="37.1" extent="1-16" drill="0.35"/>
-<wire x1="14.3" y1="44.2" x2="18.5" y2="40" width="0.4" layer="1"/>
 <wire x1="18.5" y1="37.1" x2="18.5" y2="27" width="0.4" layer="16"/>
 <wire x1="18.475" y1="35.2" x2="18.475" y2="37.075" width="0.4" layer="1"/>
 <wire x1="18.475" y1="37.075" x2="18.5" y2="37.1" width="0.4" layer="1"/>
@@ -5425,7 +5404,6 @@ Your Eurocircuits Team
 <signal name="IR3">
 <contactref element="R6" pad="2"/>
 <contactref element="J1" pad="5"/>
-<contactref element="U$2" pad="33"/>
 <contactref element="U2" pad="3"/>
 <wire x1="4.33" y1="10.17" x2="5.3" y2="11.14" width="0.4" layer="1"/>
 <wire x1="5.3" y1="11.14" x2="5.3" y2="12.925" width="0.4" layer="1"/>
@@ -5434,15 +5412,6 @@ Your Eurocircuits Team
 <via x="4.3" y="13.2" extent="1-16" drill="0.35"/>
 <wire x1="4.3" y1="13.2" x2="4.3" y2="14.2" width="0.4" layer="16"/>
 <wire x1="17.2" y1="27.1" x2="4.3" y2="14.2" width="0.4" layer="16"/>
-<wire x1="13.1" y1="43.7" x2="13.1" y2="59.7" width="0.4" layer="1"/>
-<wire x1="13.1" y1="43.7" x2="17.205" y2="39.595" width="0.4" layer="1"/>
-<via x="13.1" y="59.7" extent="1-16" drill="0.35"/>
-<wire x1="13.1" y1="59.7" x2="12.1" y2="60.7" width="0.4" layer="16"/>
-<wire x1="12.1" y1="60.7" x2="11.1" y2="60.7" width="0.4" layer="16"/>
-<via x="11.1" y="60.7" extent="1-16" drill="0.35"/>
-<wire x1="11.1" y1="60.7" x2="6.29" y2="65.51" width="0.4" layer="1"/>
-<wire x1="6.29" y1="65.51" x2="5.47" y2="65.51" width="0.4" layer="1"/>
-<wire x1="17.205" y1="39.595" x2="17.205" y2="37.105" width="0.4" layer="1"/>
 <wire x1="17.205" y1="37.105" x2="17.2" y2="37.1" width="0.4" layer="1"/>
 <via x="17.2" y="37.1" extent="1-16" drill="0.35"/>
 <wire x1="17.2" y1="37.1" x2="17.2" y2="27.1" width="0.4" layer="16"/>
@@ -5451,7 +5420,6 @@ Your Eurocircuits Team
 <signal name="IR4">
 <contactref element="J1" pad="7"/>
 <contactref element="R7" pad="2"/>
-<contactref element="U$2" pad="35"/>
 <contactref element="U2" pad="4"/>
 <wire x1="1.79" y1="10.17" x2="2.7" y2="11.08" width="0.4" layer="1"/>
 <wire x1="2.7" y1="11.08" x2="2.7" y2="12.925" width="0.4" layer="1"/>
@@ -5462,10 +5430,6 @@ Your Eurocircuits Team
 <wire x1="1.4" y1="15.3" x2="1.9" y2="15.8" width="0.4" layer="16"/>
 <wire x1="1.9" y1="15.8" x2="4.5" y2="15.8" width="0.4" layer="16"/>
 <wire x1="15.9" y1="27.2" x2="4.5" y2="15.8" width="0.4" layer="16"/>
-<wire x1="12" y1="43" x2="15.935" y2="39.065" width="0.4" layer="1"/>
-<wire x1="12" y1="43" x2="12" y2="61.52" width="0.4" layer="1"/>
-<wire x1="12" y1="61.52" x2="5.47" y2="68.05" width="0.4" layer="1"/>
-<wire x1="15.935" y1="39.065" x2="15.935" y2="37.135" width="0.4" layer="1"/>
 <wire x1="15.935" y1="37.135" x2="15.9" y2="37.1" width="0.4" layer="1"/>
 <via x="15.9" y="37.1" extent="1-16" drill="0.35"/>
 <wire x1="15.9" y1="37.1" x2="15.9" y2="27.2" width="0.4" layer="16"/>
@@ -5482,9 +5446,7 @@ Your Eurocircuits Team
 <contactref element="R11" pad="1"/>
 <contactref element="U2" pad="15"/>
 <contactref element="U2" pad="16"/>
-<contactref element="U$2" pad="1"/>
-<wire x1="5.47" y1="24.87" x2="10.97" y2="19.37" width="0.4" layer="1"/>
-<wire x1="10.97" y1="19.37" x2="11.265" y2="19.075" width="0.4" layer="1"/>
+<wire x1="11.265" y1="19.075" x2="10.97" y2="19.37" width="0.4" layer="1"/>
 <wire x1="11.265" y1="19.075" x2="12.5" y2="19.075" width="0.4" layer="1"/>
 <wire x1="12.5" y1="19.075" x2="15" y2="19.075" width="0.4" layer="1"/>
 <wire x1="15" y1="19.075" x2="17.6" y2="19.075" width="0.4" layer="1"/>
@@ -5502,10 +5464,10 @@ Your Eurocircuits Team
 <contactref element="C3" pad="1"/>
 <wire x1="22.1" y1="30.05" x2="22.05" y2="30" width="0.4" layer="1"/>
 <wire x1="22.05" y1="30" x2="19.745" y2="30" width="0.4" layer="1"/>
-<contactref element="U$2" pad="17"/>
 <wire x1="10.895" y1="18.705" x2="10.895" y2="19.295" width="0.1524" layer="1"/>
 <wire x1="10.895" y1="19.295" x2="10.97" y2="19.37" width="0.1524" layer="1"/>
-<wire x1="18.475" y1="30" x2="5.47" y2="45.19" width="0" layer="19" extent="1-1"/>
+<contactref element="U$2" pad="1"/>
+<wire x1="10.97" y1="19.37" x2="5.47" y2="24.87" width="0.4" layer="1"/>
 </signal>
 <signal name="IR1-3.3V">
 <contactref element="R8" pad="2"/>
@@ -5587,9 +5549,6 @@ Your Eurocircuits Team
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
-<errors>
-<approved hash="21,19,b020b020b222b2a5"/>
-</errors>
 </board>
 </drawing>
 <compatibility>
