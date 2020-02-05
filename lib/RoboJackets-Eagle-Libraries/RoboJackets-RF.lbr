@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -3711,7 +3711,89 @@ In this library you will find circuit elements directly involved in controlling 
 KO</text>
 <text x="20.5" y="0.5" size="1.016" layer="21" rot="SR270">OCA
 KO</text>
-<text x="-11.43" y="-6.35" size="1.27" layer="21" font="vector" rot="R270" align="top-right">&gt;NAME</text>
+</package>
+<package name="ISM43340-L77">
+<smd name="61" x="-6.6" y="5.975" dx="1.15" dy="1.15" layer="1"/>
+<smd name="62" x="-6.6" y="-5.975" dx="1.15" dy="1.15" layer="1"/>
+<smd name="1" x="-6.6" y="4.745" dx="0.6" dy="0.35" layer="1"/>
+<smd name="2" x="-6.6" y="4.015" dx="0.6" dy="0.35" layer="1"/>
+<smd name="3" x="-6.6" y="3.285" dx="0.6" dy="0.35" layer="1"/>
+<smd name="4" x="-6.6" y="2.555" dx="0.6" dy="0.35" layer="1"/>
+<smd name="6" x="-6.6" y="1.095" dx="0.6" dy="0.35" layer="1"/>
+<smd name="7" x="-6.6" y="0.365" dx="0.6" dy="0.35" layer="1"/>
+<smd name="8" x="-6.6" y="-0.365" dx="0.6" dy="0.35" layer="1"/>
+<smd name="9" x="-6.6" y="-1.095" dx="0.6" dy="0.35" layer="1"/>
+<smd name="10" x="-6.6" y="-1.825" dx="0.6" dy="0.35" layer="1"/>
+<smd name="11" x="-6.6" y="-2.555" dx="0.6" dy="0.35" layer="1"/>
+<smd name="12" x="-6.6" y="-3.285" dx="0.6" dy="0.35" layer="1"/>
+<smd name="13" x="-6.6" y="-4.015" dx="0.6" dy="0.35" layer="1"/>
+<smd name="14" x="-6.6" y="-4.745" dx="0.6" dy="0.35" layer="1"/>
+<smd name="5" x="-6.6" y="1.825" dx="0.6" dy="0.35" layer="1"/>
+<smd name="64" x="6.6" y="5.975" dx="1.15" dy="1.15" layer="1"/>
+<smd name="63" x="6.6" y="-5.975" dx="1.15" dy="1.15" layer="1"/>
+<smd name="44" x="6.6" y="4.745" dx="0.6" dy="0.35" layer="1"/>
+<smd name="43" x="6.6" y="4.015" dx="0.6" dy="0.35" layer="1"/>
+<smd name="42" x="6.6" y="3.285" dx="0.6" dy="0.35" layer="1"/>
+<smd name="41" x="6.6" y="2.555" dx="0.6" dy="0.35" layer="1"/>
+<smd name="39" x="6.6" y="1.095" dx="0.6" dy="0.35" layer="1"/>
+<smd name="38" x="6.6" y="0.365" dx="0.6" dy="0.35" layer="1"/>
+<smd name="37" x="6.6" y="-0.365" dx="0.6" dy="0.35" layer="1"/>
+<smd name="36" x="6.6" y="-1.095" dx="0.6" dy="0.35" layer="1"/>
+<smd name="35" x="6.6" y="-1.825" dx="0.6" dy="0.35" layer="1"/>
+<smd name="34" x="6.6" y="-2.555" dx="0.6" dy="0.35" layer="1"/>
+<smd name="33" x="6.6" y="-3.285" dx="0.6" dy="0.35" layer="1"/>
+<smd name="32" x="6.6" y="-4.015" dx="0.6" dy="0.35" layer="1"/>
+<smd name="31" x="6.6" y="-4.745" dx="0.6" dy="0.35" layer="1"/>
+<smd name="40" x="6.6" y="1.825" dx="0.6" dy="0.35" layer="1"/>
+<smd name="55" x="-1.8246" y="5.975" dx="0.35" dy="0.6" layer="1"/>
+<smd name="60" x="-5.4746" y="5.975" dx="0.35" dy="0.6" layer="1"/>
+<smd name="59" x="-4.7446" y="5.975" dx="0.35" dy="0.6" layer="1"/>
+<smd name="58" x="-4.0146" y="5.975" dx="0.35" dy="0.6" layer="1"/>
+<smd name="57" x="-3.2846" y="5.975" dx="0.35" dy="0.6" layer="1"/>
+<smd name="56" x="-2.5546" y="5.975" dx="0.35" dy="0.6" layer="1"/>
+<smd name="54" x="-1.0946" y="5.975" dx="0.35" dy="0.6" layer="1"/>
+<smd name="53" x="-0.3646" y="5.975" dx="0.35" dy="0.6" layer="1"/>
+<smd name="52" x="0.3654" y="5.975" dx="0.35" dy="0.6" layer="1"/>
+<smd name="51" x="1.0954" y="5.975" dx="0.35" dy="0.6" layer="1"/>
+<smd name="50" x="1.8254" y="5.975" dx="0.35" dy="0.6" layer="1"/>
+<smd name="49" x="2.5554" y="5.975" dx="0.35" dy="0.6" layer="1"/>
+<smd name="48" x="3.2854" y="5.975" dx="0.35" dy="0.6" layer="1"/>
+<smd name="47" x="4.0154" y="5.975" dx="0.35" dy="0.6" layer="1"/>
+<smd name="46" x="4.7454" y="5.975" dx="0.35" dy="0.6" layer="1"/>
+<smd name="45" x="5.4754" y="5.975" dx="0.35" dy="0.6" layer="1"/>
+<smd name="20" x="-1.8246" y="-5.975" dx="0.35" dy="0.6" layer="1"/>
+<smd name="15" x="-5.4746" y="-5.975" dx="0.35" dy="0.6" layer="1"/>
+<smd name="16" x="-4.7446" y="-5.975" dx="0.35" dy="0.6" layer="1"/>
+<smd name="17" x="-4.0146" y="-5.975" dx="0.35" dy="0.6" layer="1"/>
+<smd name="18" x="-3.2846" y="-5.975" dx="0.35" dy="0.6" layer="1"/>
+<smd name="19" x="-2.5546" y="-5.975" dx="0.35" dy="0.6" layer="1"/>
+<smd name="21" x="-1.0946" y="-5.975" dx="0.35" dy="0.6" layer="1"/>
+<smd name="22" x="-0.3646" y="-5.975" dx="0.35" dy="0.6" layer="1"/>
+<smd name="23" x="0.3654" y="-5.975" dx="0.35" dy="0.6" layer="1"/>
+<smd name="24" x="1.0954" y="-5.975" dx="0.35" dy="0.6" layer="1"/>
+<smd name="25" x="1.8254" y="-5.975" dx="0.35" dy="0.6" layer="1"/>
+<smd name="26" x="2.5554" y="-5.975" dx="0.35" dy="0.6" layer="1"/>
+<smd name="27" x="3.2854" y="-5.975" dx="0.35" dy="0.6" layer="1"/>
+<smd name="28" x="4.0154" y="-5.975" dx="0.35" dy="0.6" layer="1"/>
+<smd name="29" x="4.7454" y="-5.975" dx="0.35" dy="0.6" layer="1"/>
+<smd name="30" x="5.4754" y="-5.975" dx="0.35" dy="0.6" layer="1"/>
+<smd name="65" x="-2.3102" y="-1.8232" dx="0.7" dy="0.7" layer="1"/>
+<smd name="66" x="-2.3102" y="0.1072" dx="0.7" dy="0.7" layer="1"/>
+<smd name="67" x="-2.3102" y="2.0376" dx="0.7" dy="0.7" layer="1"/>
+<smd name="69" x="-0.8482" y="3.0028" dx="0.7" dy="0.7" layer="1"/>
+<smd name="68" x="-0.8482" y="-3.0028" dx="0.7" dy="0.7" layer="1"/>
+<smd name="71" x="0.6139" y="0.1072" dx="0.7" dy="0.7" layer="1"/>
+<smd name="70" x="0.6139" y="-1.8232" dx="0.7" dy="0.7" layer="1"/>
+<smd name="73" x="2.0759" y="-3.0028" dx="0.7" dy="0.7" layer="1"/>
+<smd name="74" x="2.0759" y="3.0028" dx="0.7" dy="0.7" layer="1"/>
+<smd name="77" x="3.5379" y="2.0376" dx="0.7" dy="0.7" layer="1"/>
+<smd name="75" x="3.5379" y="-1.8232" dx="0.7" dy="0.7" layer="1"/>
+<smd name="76" x="3.5379" y="0.1072" dx="0.7" dy="0.7" layer="1"/>
+<smd name="72" x="0.6139" y="2.0376" dx="0.7" dy="0.7" layer="1"/>
+<wire x1="-7.5" y1="7" x2="7.5" y2="7" width="0.127" layer="51"/>
+<wire x1="7.5" y1="7" x2="7.5" y2="-7" width="0.127" layer="51"/>
+<wire x1="-7.5" y1="-7" x2="7.5" y2="-7" width="0.127" layer="51"/>
+<wire x1="-7.5" y1="-7" x2="-7.5" y2="7" width="0.127" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -3908,66 +3990,148 @@ KO</text>
 <text x="2.54" y="-30.48" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="ISM43340">
-<pin name="P01-GND" x="-38.1" y="-10.16" visible="pin" length="middle"/>
-<pin name="P02-VDD" x="-38.1" y="43.18" visible="pin" length="middle"/>
-<pin name="P03-GND" x="-38.1" y="-12.7" visible="pin" length="middle"/>
-<pin name="P04-JTAG_TMS" x="-5.08" y="53.34" visible="pin" length="middle" rot="R270"/>
-<pin name="P05-JTAG_TCK" x="-2.54" y="53.34" visible="pin" length="middle" rot="R270"/>
-<pin name="P06-JTAG_TDI" x="0" y="53.34" visible="pin" length="middle" rot="R270"/>
-<pin name="P07-JTAG_TDO" x="2.54" y="53.34" visible="pin" length="middle" rot="R270"/>
-<pin name="P08-JTAG_TDRSTN" x="5.08" y="53.34" visible="pin" length="middle" rot="R270"/>
-<pin name="P09-SPI_MOSI/ADC_4" x="38.1" y="35.56" visible="pin" length="middle" rot="R180"/>
-<pin name="P10-SPI_MISO/ADC_3" x="38.1" y="33.02" visible="pin" length="middle" rot="R180"/>
-<pin name="P11-SPI_SCK/ADC_2" x="38.1" y="30.48" visible="pin" length="middle" rot="R180"/>
-<pin name="P12-SPI_!SS!/ADC_1" x="38.1" y="27.94" visible="pin" length="middle" rot="R180"/>
-<pin name="P13-SPI_DR/DR/ADC_0" x="38.1" y="7.62" visible="pin" length="middle" rot="R180"/>
-<pin name="P14-VDD" x="-38.1" y="40.64" visible="pin" length="middle"/>
-<pin name="P15-VBAT" x="-38.1" y="35.56" visible="pin" length="middle"/>
-<pin name="P16-WAKEUP" x="38.1" y="0" visible="pin" length="middle" rot="R180"/>
-<pin name="P17-GND" x="-38.1" y="-15.24" visible="pin" length="middle"/>
-<pin name="P18-USB_DATA_P" x="38.1" y="15.24" visible="pin" length="middle" rot="R180"/>
-<pin name="P19-USB_DATA_N" x="38.1" y="12.7" visible="pin" length="middle" rot="R180"/>
-<pin name="P20-GND" x="-38.1" y="-17.78" visible="pin" length="middle"/>
-<pin name="P21-UART_RX" x="38.1" y="22.86" visible="pin" length="middle" rot="R180"/>
-<pin name="P22-UART_TX" x="38.1" y="20.32" visible="pin" length="middle" rot="R180"/>
-<pin name="P23-GPIO_0" x="38.1" y="-7.62" visible="pin" length="middle" rot="R180"/>
-<pin name="P24-GPIO_1" x="38.1" y="-10.16" visible="pin" length="middle" rot="R180"/>
-<pin name="P25-GPIO_2" x="38.1" y="-12.7" visible="pin" length="middle" rot="R180"/>
-<pin name="P26-GPIO_3" x="38.1" y="-15.24" visible="pin" length="middle" rot="R180"/>
-<pin name="P27-GPIO_4" x="38.1" y="-17.78" visible="pin" length="middle" rot="R180"/>
-<pin name="P28-DNC" x="-5.08" y="-53.34" visible="pin" length="middle" rot="R90"/>
-<pin name="P29-DNC" x="-2.54" y="-53.34" visible="pin" length="middle" rot="R90"/>
-<pin name="P30-RES/GPIO_15/PB15" x="0" y="-53.34" visible="pin" length="middle" rot="R90"/>
-<pin name="P31-RES/GPIO_14/PB14" x="2.54" y="-53.34" visible="pin" length="middle" rot="R90"/>
-<pin name="P32-RES/GPIO_13/PB13" x="5.08" y="-53.34" visible="pin" length="middle" rot="R90"/>
-<pin name="P33-BOOT_0" x="38.1" y="43.18" visible="pin" length="middle" rot="R180"/>
-<pin name="P34-!RST!" x="38.1" y="5.08" visible="pin" length="middle" rot="R180"/>
-<pin name="P35-GND" x="-38.1" y="-20.32" visible="pin" length="middle"/>
-<pin name="P36-GND" x="-38.1" y="-22.86" visible="pin" length="middle"/>
-<pin name="P37-GND" x="-38.1" y="-25.4" visible="pin" length="middle"/>
-<pin name="P38-GND" x="-38.1" y="-27.94" visible="pin" length="middle"/>
-<pin name="P39-GND" x="-38.1" y="-30.48" visible="pin" length="middle"/>
-<pin name="P40-GND" x="-38.1" y="-33.02" visible="pin" length="middle"/>
-<pin name="P41-GND" x="-38.1" y="-35.56" visible="pin" length="middle"/>
-<pin name="P42-GND" x="-38.1" y="-38.1" visible="pin" length="middle"/>
-<pin name="P43-GND" x="-38.1" y="-40.64" visible="pin" length="middle"/>
-<pin name="P44-GND" x="-38.1" y="-43.18" visible="pin" length="middle"/>
-<pin name="P45-GPIO_A" x="38.1" y="-20.32" visible="pin" length="middle" rot="R180"/>
-<pin name="P46-GPIO_B" x="38.1" y="-22.86" visible="pin" length="middle" rot="R180"/>
-<pin name="P47-GPIO_C" x="38.1" y="-25.4" visible="pin" length="middle" rot="R180"/>
-<pin name="P48-GPIO_D" x="38.1" y="-27.94" visible="pin" length="middle" rot="R180"/>
-<pin name="P49-GPIO_E" x="38.1" y="-30.48" visible="pin" length="middle" rot="R180"/>
-<pin name="P50-GPIO_F" x="38.1" y="-33.02" visible="pin" length="middle" rot="R180"/>
-<pin name="P51-GPIO_G" x="38.1" y="-35.56" visible="pin" length="middle" rot="R180"/>
-<pin name="P52-GPIO_H" x="38.1" y="-38.1" visible="pin" length="middle" rot="R180"/>
-<pin name="P53-GPIO_I" x="38.1" y="-40.64" visible="pin" length="middle" rot="R180"/>
-<pin name="P54-GPIO_K" x="38.1" y="-43.18" visible="pin" length="middle" rot="R180"/>
+<pin name="P01-GND" x="-38.1" y="-10.16" length="middle"/>
+<pin name="P02-VDD" x="-38.1" y="43.18" length="middle"/>
+<pin name="P03-GND" x="-38.1" y="-12.7" length="middle"/>
+<pin name="P04-JTAG_TMS" x="-5.08" y="53.34" length="middle" rot="R270"/>
+<pin name="P05-JTAG_TCK" x="-2.54" y="53.34" length="middle" rot="R270"/>
+<pin name="P06-JTAG_TDI" x="0" y="53.34" length="middle" rot="R270"/>
+<pin name="P07-JTAG_TDO" x="2.54" y="53.34" length="middle" rot="R270"/>
+<pin name="P08-JTAG_TDRSTN" x="5.08" y="53.34" length="middle" rot="R270"/>
+<pin name="P09-SPI_MOSI/ADC_4" x="38.1" y="35.56" length="middle" rot="R180"/>
+<pin name="P10-SPI_MISO/ADC_3" x="38.1" y="33.02" length="middle" rot="R180"/>
+<pin name="P11-SPI_SCK/ADC_2" x="38.1" y="30.48" length="middle" rot="R180"/>
+<pin name="P12-SPI_!SS!/ADC_1" x="38.1" y="27.94" length="middle" rot="R180"/>
+<pin name="P13-SPI_DR/DR/ADC_0" x="38.1" y="7.62" length="middle" rot="R180"/>
+<pin name="P14-VDD" x="-38.1" y="40.64" length="middle"/>
+<pin name="P15-VBAT" x="-38.1" y="35.56" length="middle"/>
+<pin name="P16-WAKEUP" x="38.1" y="0" length="middle" rot="R180"/>
+<pin name="P17-GND" x="-38.1" y="-15.24" length="middle"/>
+<pin name="P18-USB_DATA_P" x="38.1" y="15.24" length="middle" rot="R180"/>
+<pin name="P19-USB_DATA_N" x="38.1" y="12.7" length="middle" rot="R180"/>
+<pin name="P20-GND" x="-38.1" y="-17.78" length="middle"/>
+<pin name="P21-UART_RX" x="38.1" y="22.86" length="middle" rot="R180"/>
+<pin name="P22-UART_TX" x="38.1" y="20.32" length="middle" rot="R180"/>
+<pin name="P23-GPIO_0" x="38.1" y="-7.62" length="middle" rot="R180"/>
+<pin name="P24-GPIO_1" x="38.1" y="-10.16" length="middle" rot="R180"/>
+<pin name="P25-GPIO_2" x="38.1" y="-12.7" length="middle" rot="R180"/>
+<pin name="P26-GPIO_3" x="38.1" y="-15.24" length="middle" rot="R180"/>
+<pin name="P27-GPIO_4" x="38.1" y="-17.78" length="middle" rot="R180"/>
+<pin name="P28-DNC" x="-5.08" y="-53.34" length="middle" rot="R90"/>
+<pin name="P29-DNC" x="-2.54" y="-53.34" length="middle" rot="R90"/>
+<pin name="P30-RES/GPIO_15/PB15" x="0" y="-53.34" length="middle" rot="R90"/>
+<pin name="P31-RES/GPIO_14/PB14" x="2.54" y="-53.34" length="middle" rot="R90"/>
+<pin name="P32-RES/GPIO_13/PB13" x="5.08" y="-53.34" length="middle" rot="R90"/>
+<pin name="P33-BOOT_0" x="38.1" y="43.18" length="middle" rot="R180"/>
+<pin name="P34-!RST!" x="38.1" y="5.08" length="middle" rot="R180"/>
+<pin name="P35-GND" x="-38.1" y="-20.32" length="middle"/>
+<pin name="P36-GND" x="-38.1" y="-22.86" length="middle"/>
+<pin name="P37-GND" x="-38.1" y="-25.4" length="middle"/>
+<pin name="P38-GND" x="-38.1" y="-27.94" length="middle"/>
+<pin name="P39-GND" x="-38.1" y="-30.48" length="middle"/>
+<pin name="P40-GND" x="-38.1" y="-33.02" length="middle"/>
+<pin name="P41-GND" x="-38.1" y="-35.56" length="middle"/>
+<pin name="P42-GND" x="-38.1" y="-38.1" length="middle"/>
+<pin name="P43-GND" x="-38.1" y="-40.64" length="middle"/>
+<pin name="P44-GND" x="-38.1" y="-43.18" length="middle"/>
+<pin name="P45-GPIO_A" x="38.1" y="-20.32" length="middle" rot="R180"/>
+<pin name="P46-GPIO_B" x="38.1" y="-22.86" length="middle" rot="R180"/>
+<pin name="P47-GPIO_C" x="38.1" y="-25.4" length="middle" rot="R180"/>
+<pin name="P48-GPIO_D" x="38.1" y="-27.94" length="middle" rot="R180"/>
+<pin name="P49-GPIO_E" x="38.1" y="-30.48" length="middle" rot="R180"/>
+<pin name="P50-GPIO_F" x="38.1" y="-33.02" length="middle" rot="R180"/>
+<pin name="P51-GPIO_G" x="38.1" y="-35.56" length="middle" rot="R180"/>
+<pin name="P52-GPIO_H" x="38.1" y="-38.1" length="middle" rot="R180"/>
+<pin name="P53-GPIO_I" x="38.1" y="-40.64" length="middle" rot="R180"/>
+<pin name="P54-GPIO_K" x="38.1" y="-43.18" length="middle" rot="R180"/>
 <wire x1="-33.02" y1="48.26" x2="-33.02" y2="-48.26" width="0.254" layer="94"/>
 <wire x1="-33.02" y1="-48.26" x2="33.02" y2="-48.26" width="0.254" layer="94"/>
 <wire x1="33.02" y1="-48.26" x2="33.02" y2="48.26" width="0.254" layer="94"/>
 <wire x1="33.02" y1="48.26" x2="-33.02" y2="48.26" width="0.254" layer="94"/>
-<text x="-31.75" y="-49.53" size="1.778" layer="97" align="top-left">ISM43340</text>
-<text x="-31.75" y="49.53" size="1.778" layer="95">&gt;NAME</text>
+<text x="-31.75" y="-49.53" size="2.54" layer="97" font="vector" align="top-left">ISM43340</text>
+</symbol>
+<symbol name="ISM43340-L77">
+<pin name="P01-5G_RF" x="-40.168" y="18.92" length="middle"/>
+<pin name="P02-GND1" x="-39.914" y="-37.618" length="middle"/>
+<pin name="P03-GND2" x="-39.914" y="-39.612" length="middle"/>
+<pin name="P04-5G/2G_RF" x="-40.168" y="17.024" length="middle"/>
+<pin name="P05-GND3" x="-19.54" y="-59.98" length="middle" rot="R90"/>
+<pin name="P06-WRF_RFIN_2G" x="-40.168" y="10.484" length="middle"/>
+<pin name="P07-GND4" x="-17.302" y="-59.98" length="middle" rot="R90"/>
+<pin name="P08-WRF_GPIO_OUT" x="-40.168" y="8.214" length="middle"/>
+<pin name="P09-RF_SW0" x="-40.168" y="1.714" length="middle"/>
+<pin name="P10-RF_SW3" x="-40.168" y="-0.286" length="middle"/>
+<pin name="P11-RF_SW4" x="-40.168" y="-2.286" length="middle"/>
+<pin name="P12-BT_HOST_WAKE" x="41.2" y="-9" length="middle" rot="R180"/>
+<pin name="P13-32KHZ_SLEEPCLK" x="41.2" y="-7" length="middle" rot="R180"/>
+<pin name="P14-NFC_REG_PU" x="41.2" y="-5" length="middle" rot="R180"/>
+<pin name="P15-BT_I2S_DO" x="41.2" y="-3" length="middle" rot="R180"/>
+<pin name="P16-BT_I2S_CLK" x="41.2" y="-1" length="middle" rot="R180"/>
+<pin name="P17-BT_I2S_WS" x="41.2" y="1" length="middle" rot="R180"/>
+<pin name="P18-BT_PCM_SYNC" x="41.2" y="3" length="middle" rot="R180"/>
+<pin name="P19-BT_PCM_CLK" x="41.2" y="5" length="middle" rot="R180"/>
+<pin name="P20-BT_PCM_OUT" x="41.2" y="7" length="middle" rot="R180"/>
+<pin name="P21-BT_PCM_IN" x="41.2" y="9" length="middle" rot="R180"/>
+<pin name="P22-BT_DEV_WAKE" x="40.92" y="14.1" length="middle" rot="R180"/>
+<pin name="P23-VIO" x="-40.158" y="24.208" length="middle"/>
+<pin name="P24-BT_UART_CTS" x="40.92" y="18.1" length="middle" rot="R180"/>
+<pin name="P25-BT_UART_RTS" x="40.92" y="20.1" length="middle" rot="R180"/>
+<pin name="P26-BT_UART_TXD" x="40.92" y="22.1" length="middle" rot="R180"/>
+<pin name="P27-BT_UART_RXD" x="40.92" y="24.1" length="middle" rot="R180"/>
+<pin name="P28-NFC_VDDSWPIN_0" x="8.28" y="56.52" length="middle" rot="R270"/>
+<pin name="P29-NFC_VDD_SWP_0" x="6.28" y="56.52" length="middle" rot="R270"/>
+<pin name="P30-NFC_RTS" x="4.28" y="56.52" length="middle" rot="R270"/>
+<pin name="P31-NFC_CTS" x="2.28" y="56.52" length="middle" rot="R270"/>
+<pin name="P32-NFC_TX2" x="0.28" y="56.52" length="middle" rot="R270"/>
+<pin name="P33-NFC_TX1" x="-1.72" y="56.52" length="middle" rot="R270"/>
+<pin name="P34-NFC_SDA" x="-3.72" y="56.52" length="middle" rot="R270"/>
+<pin name="P35-NFC_SCL" x="-5.72" y="56.52" length="middle" rot="R270"/>
+<pin name="P36-NFC_SPI_INT" x="-7.72" y="56.52" length="middle" rot="R270"/>
+<pin name="P37-NFC_GPIO_0" x="-9.72" y="56.52" length="middle" rot="R270"/>
+<pin name="P38-GND5" x="-14.98" y="-60.06" length="middle" rot="R90"/>
+<pin name="P39-SD_CLK" x="41.26" y="-35.68" length="middle" rot="R180"/>
+<pin name="P40-SD_CMD" x="41.26" y="-33.68" length="middle" rot="R180"/>
+<pin name="P41-SD_D0" x="41.25" y="-31.05" length="middle" rot="R180"/>
+<pin name="P42-SD_D1" x="41.15" y="-29.05" length="middle" rot="R180"/>
+<pin name="P43-SD_D2" x="41.15" y="-27.05" length="middle" rot="R180"/>
+<pin name="P44-SD_D3" x="41.1" y="-25.05" length="middle" rot="R180"/>
+<pin name="P45-NFC_URX" x="-15.7" y="56.68" length="middle" rot="R270"/>
+<pin name="P46-NFC_UTX" x="-17.7" y="56.68" length="middle" rot="R270"/>
+<pin name="P47-GND6" x="-12.74" y="-60.15" length="middle" rot="R90"/>
+<pin name="P48-NFC_SWPIO_0" x="12.82" y="56.26" length="middle" rot="R270"/>
+<pin name="P49-JTAG_SEL" x="41" y="-16" length="middle" rot="R180"/>
+<pin name="P50-WL_REG_ON" x="-39.982" y="-29.506" length="middle"/>
+<pin name="P51-BT_REG_ON" x="41.12" y="28.06" length="middle" rot="R180"/>
+<pin name="P52-WL_GPIO0" x="-40.136" y="-9.224" length="middle"/>
+<pin name="P53-WL_GPIO1" x="-40.136" y="-11.224" length="middle"/>
+<pin name="P54-WL_GPIO6" x="-40.136" y="-13.224" length="middle"/>
+<pin name="P55-VBAT1" x="-40.136" y="33.958" length="middle"/>
+<pin name="P56-VBAT2" x="-40.136" y="31.336" length="middle"/>
+<pin name="P57-GND7" x="-10.43" y="-60.2" length="middle" rot="R90"/>
+<pin name="P58-GND8" x="-8.39" y="-60.2" length="middle" rot="R90"/>
+<pin name="P59-GND9" x="-6.35" y="-60.2" length="middle" rot="R90"/>
+<pin name="P60-GND10" x="-4.35" y="-60.2" length="middle" rot="R90"/>
+<pin name="P61-GND11" x="-2.35" y="-60.2" length="middle" rot="R90"/>
+<pin name="P62-GND12" x="-0.37" y="-60.2" length="middle" rot="R90"/>
+<pin name="P63-GND13" x="1.63" y="-60.2" length="middle" rot="R90"/>
+<pin name="P64-GND14" x="3.63" y="-60.2" length="middle" rot="R90"/>
+<pin name="P65-GND15" x="5.63" y="-60.2" length="middle" rot="R90"/>
+<pin name="P66-GND16" x="7.63" y="-60.2" length="middle" rot="R90"/>
+<pin name="P67-GND17" x="9.63" y="-60.2" length="middle" rot="R90"/>
+<pin name="P68-GND21" x="11.63" y="-60.2" length="middle" rot="R90"/>
+<pin name="P69-GND18" x="13.63" y="-60.2" length="middle" rot="R90"/>
+<pin name="P70-GND22" x="15.63" y="-60.2" length="middle" rot="R90"/>
+<pin name="P71-WL_GPIO2" x="-40.198" y="-15.326" length="middle"/>
+<pin name="P72-WL_GPIO3" x="-40.198" y="-17.326" length="middle"/>
+<pin name="P73-WL_GPIO4" x="-40.198" y="-19.326" length="middle"/>
+<pin name="P74-WL_GPIO5" x="-40.198" y="-21.326" length="middle"/>
+<pin name="P75-WL_GPIO12" x="-40.198" y="-23.326" length="middle"/>
+<pin name="P76-GND20" x="19.7" y="-60.2" length="middle" rot="R90"/>
+<pin name="P77-GND19" x="17.62" y="-60.2" length="middle" rot="R90"/>
+<wire x1="-35" y1="51.5" x2="-35" y2="-55" width="0.254" layer="94"/>
+<wire x1="-35" y1="-55" x2="36" y2="-55" width="0.254" layer="94"/>
+<wire x1="36" y1="-55" x2="36" y2="51.5" width="0.254" layer="94"/>
+<wire x1="36" y1="51.5" x2="-35" y2="51.5" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -4275,7 +4439,7 @@ This is the very popular, low cost, very low power RF transceiver from Nordic Se
 </device>
 </devices>
 </deviceset>
-<deviceset name="ISM43340" prefix="U">
+<deviceset name="ISM43340">
 <gates>
 <gate name="G$1" symbol="ISM43340" x="0" y="0"/>
 </gates>
@@ -4336,6 +4500,103 @@ This is the very popular, low cost, very low power RF transceiver from Nordic Se
 <connect gate="G$1" pin="P52-GPIO_H" pad="P$52"/>
 <connect gate="G$1" pin="P53-GPIO_I" pad="P$53"/>
 <connect gate="G$1" pin="P54-GPIO_K" pad="P$54"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ISM43340-L77">
+<description>&lt;h1&gt;Description&lt;/h1&gt;
+
+&lt;h2&gt;Part: ISM43340-L77&lt;/h2&gt;
+
+Datasheet: &lt;br&gt; 
+https://www.inventeksys.com/wp-content/uploads/ISM43340_Functional_Specification.pdf</description>
+<gates>
+<gate name="G$1" symbol="ISM43340-L77" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ISM43340-L77">
+<connects>
+<connect gate="G$1" pin="P01-5G_RF" pad="1"/>
+<connect gate="G$1" pin="P02-GND1" pad="2"/>
+<connect gate="G$1" pin="P03-GND2" pad="3"/>
+<connect gate="G$1" pin="P04-5G/2G_RF" pad="4"/>
+<connect gate="G$1" pin="P05-GND3" pad="5"/>
+<connect gate="G$1" pin="P06-WRF_RFIN_2G" pad="6"/>
+<connect gate="G$1" pin="P07-GND4" pad="7"/>
+<connect gate="G$1" pin="P08-WRF_GPIO_OUT" pad="8"/>
+<connect gate="G$1" pin="P09-RF_SW0" pad="9"/>
+<connect gate="G$1" pin="P10-RF_SW3" pad="10"/>
+<connect gate="G$1" pin="P11-RF_SW4" pad="11"/>
+<connect gate="G$1" pin="P12-BT_HOST_WAKE" pad="12"/>
+<connect gate="G$1" pin="P13-32KHZ_SLEEPCLK" pad="13"/>
+<connect gate="G$1" pin="P14-NFC_REG_PU" pad="14"/>
+<connect gate="G$1" pin="P15-BT_I2S_DO" pad="15"/>
+<connect gate="G$1" pin="P16-BT_I2S_CLK" pad="16"/>
+<connect gate="G$1" pin="P17-BT_I2S_WS" pad="17"/>
+<connect gate="G$1" pin="P18-BT_PCM_SYNC" pad="18"/>
+<connect gate="G$1" pin="P19-BT_PCM_CLK" pad="19"/>
+<connect gate="G$1" pin="P20-BT_PCM_OUT" pad="20"/>
+<connect gate="G$1" pin="P21-BT_PCM_IN" pad="21"/>
+<connect gate="G$1" pin="P22-BT_DEV_WAKE" pad="22"/>
+<connect gate="G$1" pin="P23-VIO" pad="23"/>
+<connect gate="G$1" pin="P24-BT_UART_CTS" pad="24"/>
+<connect gate="G$1" pin="P25-BT_UART_RTS" pad="25"/>
+<connect gate="G$1" pin="P26-BT_UART_TXD" pad="26"/>
+<connect gate="G$1" pin="P27-BT_UART_RXD" pad="27"/>
+<connect gate="G$1" pin="P28-NFC_VDDSWPIN_0" pad="28"/>
+<connect gate="G$1" pin="P29-NFC_VDD_SWP_0" pad="29"/>
+<connect gate="G$1" pin="P30-NFC_RTS" pad="30"/>
+<connect gate="G$1" pin="P31-NFC_CTS" pad="31"/>
+<connect gate="G$1" pin="P32-NFC_TX2" pad="32"/>
+<connect gate="G$1" pin="P33-NFC_TX1" pad="33"/>
+<connect gate="G$1" pin="P34-NFC_SDA" pad="34"/>
+<connect gate="G$1" pin="P35-NFC_SCL" pad="35"/>
+<connect gate="G$1" pin="P36-NFC_SPI_INT" pad="36"/>
+<connect gate="G$1" pin="P37-NFC_GPIO_0" pad="37"/>
+<connect gate="G$1" pin="P38-GND5" pad="38"/>
+<connect gate="G$1" pin="P39-SD_CLK" pad="39"/>
+<connect gate="G$1" pin="P40-SD_CMD" pad="40"/>
+<connect gate="G$1" pin="P41-SD_D0" pad="41"/>
+<connect gate="G$1" pin="P42-SD_D1" pad="42"/>
+<connect gate="G$1" pin="P43-SD_D2" pad="43"/>
+<connect gate="G$1" pin="P44-SD_D3" pad="44"/>
+<connect gate="G$1" pin="P45-NFC_URX" pad="45"/>
+<connect gate="G$1" pin="P46-NFC_UTX" pad="46"/>
+<connect gate="G$1" pin="P47-GND6" pad="47"/>
+<connect gate="G$1" pin="P48-NFC_SWPIO_0" pad="48"/>
+<connect gate="G$1" pin="P49-JTAG_SEL" pad="49"/>
+<connect gate="G$1" pin="P50-WL_REG_ON" pad="50"/>
+<connect gate="G$1" pin="P51-BT_REG_ON" pad="51"/>
+<connect gate="G$1" pin="P52-WL_GPIO0" pad="52"/>
+<connect gate="G$1" pin="P53-WL_GPIO1" pad="53"/>
+<connect gate="G$1" pin="P54-WL_GPIO6" pad="54"/>
+<connect gate="G$1" pin="P55-VBAT1" pad="55"/>
+<connect gate="G$1" pin="P56-VBAT2" pad="56"/>
+<connect gate="G$1" pin="P57-GND7" pad="57"/>
+<connect gate="G$1" pin="P58-GND8" pad="58"/>
+<connect gate="G$1" pin="P59-GND9" pad="59"/>
+<connect gate="G$1" pin="P60-GND10" pad="60"/>
+<connect gate="G$1" pin="P61-GND11" pad="61"/>
+<connect gate="G$1" pin="P62-GND12" pad="62"/>
+<connect gate="G$1" pin="P63-GND13" pad="63"/>
+<connect gate="G$1" pin="P64-GND14" pad="64"/>
+<connect gate="G$1" pin="P65-GND15" pad="65"/>
+<connect gate="G$1" pin="P66-GND16" pad="66"/>
+<connect gate="G$1" pin="P67-GND17" pad="67"/>
+<connect gate="G$1" pin="P68-GND21" pad="68"/>
+<connect gate="G$1" pin="P69-GND18" pad="69"/>
+<connect gate="G$1" pin="P70-GND22" pad="70"/>
+<connect gate="G$1" pin="P71-WL_GPIO2" pad="71"/>
+<connect gate="G$1" pin="P72-WL_GPIO3" pad="72"/>
+<connect gate="G$1" pin="P73-WL_GPIO4" pad="73"/>
+<connect gate="G$1" pin="P74-WL_GPIO5" pad="74"/>
+<connect gate="G$1" pin="P75-WL_GPIO12" pad="75"/>
+<connect gate="G$1" pin="P76-GND20" pad="76"/>
+<connect gate="G$1" pin="P77-GND19" pad="77"/>
 </connects>
 <technologies>
 <technology name=""/>
