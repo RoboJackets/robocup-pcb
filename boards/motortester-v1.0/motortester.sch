@@ -12496,8 +12496,8 @@ Board</text>
 <instance part="P+5" gate="VCC" x="104.14" y="68.58" smashed="yes">
 <attribute name="VALUE" x="101.6" y="66.04" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND4" gate="1" x="106.68" y="33.02" smashed="yes">
-<attribute name="VALUE" x="104.14" y="30.48" size="1.778" layer="96"/>
+<instance part="GND4" gate="1" x="101.6" y="33.02" smashed="yes">
+<attribute name="VALUE" x="99.06" y="30.48" size="1.778" layer="96"/>
 </instance>
 <instance part="FRAME1" gate="G$1" x="-81.28" y="-68.58" smashed="yes"/>
 <instance part="FRAME1" gate="G$2" x="91.44" y="-68.58" smashed="yes">
@@ -12520,6 +12520,11 @@ Board</text>
 <wire x1="-35.56" y1="109.22" x2="-45.72" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="-35.56" y1="109.22" x2="-35.56" y2="116.84" width="0.1524" layer="91"/>
 <junction x="-35.56" y="109.22"/>
+</segment>
+<segment>
+<pinref part="SV2" gate="1" pin="4"/>
+<wire x1="106.68" y1="5.08" x2="104.14" y2="5.08" width="0.1524" layer="91"/>
+<label x="104.14" y="5.08" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="MISO" class="0">
@@ -12653,9 +12658,10 @@ Board</text>
 <junction x="-43.18" y="27.94"/>
 </segment>
 <segment>
-<wire x1="106.68" y1="53.34" x2="106.68" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <pinref part="SV1" gate="1" pin="2"/>
+<wire x1="106.68" y1="53.34" x2="101.6" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="53.34" x2="101.6" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RS" class="0">
@@ -12778,20 +12784,6 @@ Board</text>
 <label x="12.7" y="40.64" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="ANALOG-A" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="(ADC7)PA7"/>
-<wire x1="10.16" y1="109.22" x2="12.7" y2="109.22" width="0.1524" layer="91"/>
-<label x="12.7" y="109.22" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="ANALOG-B" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="(ADC6)PA6"/>
-<wire x1="10.16" y1="106.68" x2="12.7" y2="106.68" width="0.1524" layer="91"/>
-<label x="12.7" y="106.68" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="ANALOG-C" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="(ADC5)PA5"/>
@@ -12856,11 +12848,18 @@ Board</text>
 <label x="12.7" y="96.52" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="RESET" class="0">
+<net name="ANALOG-A" class="0">
 <segment>
-<pinref part="SV2" gate="1" pin="4"/>
-<wire x1="106.68" y1="5.08" x2="104.14" y2="5.08" width="0.1524" layer="91"/>
-<label x="104.14" y="5.08" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="IC1" gate="G$1" pin="(ADC6)PA6"/>
+<wire x1="10.16" y1="106.68" x2="12.7" y2="106.68" width="0.1524" layer="91"/>
+<label x="12.7" y="106.68" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="ANALOG-B" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="(ADC7)PA7"/>
+<wire x1="10.16" y1="109.22" x2="12.7" y2="109.22" width="0.1524" layer="91"/>
+<label x="12.7" y="109.22" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -12973,23 +12972,6 @@ Board</text>
 <pinref part="IC2" gate="G$1" pin="+VS"/>
 <wire x1="63.5" y1="86.36" x2="63.5" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="76.2" x2="83.82" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="NC" class="0">
-<segment>
-<pinref part="IC2" gate="G$1" pin="VO"/>
-<wire x1="63.5" y1="106.68" x2="63.5" y2="109.22" width="0.1524" layer="91"/>
-<label x="63.5" y="109.22" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-<segment>
-<pinref part="IC3" gate="G$1" pin="VO"/>
-<wire x1="132.08" y1="106.68" x2="132.08" y2="109.22" width="0.1524" layer="91"/>
-<label x="132.08" y="109.22" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-<segment>
-<pinref part="IC4" gate="G$1" pin="VO"/>
-<wire x1="200.66" y1="106.68" x2="200.66" y2="109.22" width="0.1524" layer="91"/>
-<label x="200.66" y="109.22" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="PHASEB" class="0">
