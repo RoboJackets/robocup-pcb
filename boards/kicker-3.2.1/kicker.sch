@@ -34228,7 +34228,7 @@ In this library you will find inductors. If you are looking for a common package
 <part name="SUPPLY107" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY105" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY109" library="supply2" deviceset="GND" device=""/>
-<part name="R38" library="rcl" deviceset="R-US_" device="R0603" value="RC0603FR-07205KL"/>
+<part name="R38" library="rcl" deviceset="R-US_" device="R0603" value="RC0603FR-07102KL"/>
 <part name="SUPPLY61" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY60" library="supply2" deviceset="V+" device=""/>
 <part name="R36" library="rcl" deviceset="R-US_" device="R0805" value="ERJ-6GEYJ515V"/>
@@ -34255,7 +34255,7 @@ In this library you will find inductors. If you are looking for a common package
 <part name="R8" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="412k 1%"/>
 <part name="R9" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="294k 1%"/>
 <part name="R10" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="412k 1%"/>
-<part name="R16" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R2512" package3d_urn="urn:adsk.eagle:package:23545/2" value="15m 1% &gt;0.5W"/>
+<part name="R16" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R2512" package3d_urn="urn:adsk.eagle:package:23545/2" value="7m 1% &gt;1W"/>
 <part name="C13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R) 35V"/>
 <part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R) 35V"/>
 <part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R) 35V"/>
@@ -34414,7 +34414,7 @@ In this library you will find inductors. If you are looking for a common package
 <part name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="505k 0.1%"/>
 <part name="C38" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 50V"/>
 <part name="SUPPLY110" library="supply2" deviceset="GND" device=""/>
-<part name="R54" library="rcl" deviceset="R-US_" device="R0603" value="0"/>
+<part name="R54" library="rcl" deviceset="R-US_" device="R0603" value="ERJ-6GEYJ106V"/>
 <part name="SUPPLY111" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
@@ -34465,11 +34465,11 @@ polarity protection".</text>
 <text x="101.6" y="147.32" size="1.778" layer="97">Clamp VBatt @ 22.2V</text>
 <text x="251.46" y="187.96" size="1.778" layer="97">&lt;50mA</text>
 <text x="17.78" y="53.34" size="1.778" layer="97">AAM R1 and Voltage Divider selected from datasheet</text>
-<text x="40.64" y="167.64" size="1.27" layer="97">Everything but the fuse holder
-50A rated. Change this and adjust
-the current limiter calibration shunts
-on Sheet 2 if you want to increase
-this.</text>
+<text x="40.64" y="167.64" size="1.27" layer="97">Most components are 50A rated
+EXCEPT the fuse holder and the DA2034 inductor.
+The inductor is rated for continuous operation
+of 10A, however the current design of the board 
+does not operate at continuous current.</text>
 <text x="101.6" y="165.1" size="1.27" layer="97">Double Zener/TVS protection internal to ATP302</text>
 </plain>
 <instances>
@@ -34813,18 +34813,20 @@ near this resistor bank</text>
 capacitor charging mode. This is
 recommended. </text>
 <text x="195.58" y="144.78" size="1.778" layer="97" rot="R90">(opt) 0ohm</text>
-<text x="139.7" y="93.98" size="1.778" layer="97">Current Limit:
+<text x="139.7" y="91.44" size="1.778" layer="97">Current Limit:
 I = 106mV / Rshunt
 
 I = 0.106/0.015 = 7.06A
 I = 0.106/0.011 = 9.63A
 I = 0.106/0.010 = 10.6A
+I = 0.106/0.007 = 15.1A
 
 
 Power Dissipation:
 P = I^2 x R
-P = (7.066^2)*0.015 = 0.7489W
-P = (10.6^2)*0.015 = 1.6854W</text>
+P = (7.066^2)*0.007 = 0.3495W
+P = (10.6^2)*0.007 = 0.7865W
+P = (15.1^2)*0.007 = 1.596W</text>
 <text x="25.4" y="162.56" size="1.778" layer="97">Vdrain = Vtrans + (Vout + Vdiode) / N
 Vtrans = 15.5:21.5
 Vdrain = 40.5:47.5
@@ -36104,7 +36106,23 @@ This structure is repeated twice. Once for kicking and once for chipping.</text>
 <wire x1="149.86" y1="93.98" x2="17.78" y2="93.98" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="17.78" y1="93.98" x2="17.78" y2="198.12" width="0.1524" layer="97" style="shortdash"/>
 <text x="22.86" y="193.04" size="1.27" layer="97">Auto Discharge</text>
-<text x="104.14" y="104.14" size="1.778" layer="97">Leave R54 unpopulated</text>
+<text x="154.94" y="142.24" size="1.778" layer="97">R54 is an optional pull-down resistor to create a voltage divider
+to prevent voltage spikes from damaging Q6 and should be
+left unpopulated unless needed.
+
+Voltage Divider:
+V_in_typ = 250V  (Typical max voltage)
+V_out_typ = 250(1.0E7/(2 * 5.1E6 * 1.0E7)) = 123.8V
+
+V_in_spike = 600V
+V_out_spike = 600(1.0E7/(2 * 5.1E6 + 1.0E7)) = 297V
+
+V_th of the AOD1N60 is 4.1V and serves as the limit 
+for the lowest attainable voltage through the AOD alone
+(other factors nonwithstanding). Adding a voltage divider
+changes the V_min seen on the HV line.
+
+V_min = V_th((2 * 5.1E6 + 1.0E7)/1.0E7) = 8.28V</text>
 </plain>
 <instances>
 <instance part="R32" gate="G$1" x="63.5" y="165.1" smashed="yes" rot="R90">
@@ -36183,7 +36201,7 @@ This structure is repeated twice. Once for kicking and once for chipping.</text>
 </instance>
 <instance part="R54" gate="G$1" x="106.68" y="132.08" smashed="yes" rot="R90">
 <attribute name="NAME" x="105.1814" y="128.27" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="109.982" y="128.27" size="1.778" layer="96" rot="R90"/>
+<attribute name="VALUE" x="108.458" y="140.97" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="SUPPLY111" gate="GND" x="106.68" y="114.3" smashed="yes">
 <attribute name="VALUE" x="104.775" y="111.125" size="1.778" layer="96"/>
@@ -36325,6 +36343,14 @@ This structure is repeated twice. Once for kicking and once for chipping.</text>
 <text x="92.71" y="154.178" size="1.778" layer="97">Avoid JTAG pins</text>
 <text x="92.71" y="156.718" size="1.778" layer="97">Avoid JTAG pins</text>
 <text x="92.71" y="159.258" size="1.778" layer="97">Avoid JTAG pins</text>
+<text x="111.76" y="40.64" size="1.778" layer="97">R_up = 2 * 5.1E6 = 1.02E7 Ohms
+R_down = 1.02E3 Ohms
+Vmon_max_typ = 250V * (R_down/(R_up + R_down)) = 2.48V
+
+Max rated voltage for any pin on MCU is around 5V (input voltage),
+therefore the voltage divider can be adjusted to make VMON closer to 5V.
+But to account for the possibility of voltage spikes in excess of 600V,
+Vmon is adjusted to have the max typical voltage of around 2.5V</text>
 </plain>
 <instances>
 <instance part="C32" gate="G$1" x="132.08" y="109.22" smashed="yes" rot="R180">
