@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -53,7 +53,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
@@ -84,7 +84,7 @@
 <layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
 <layer number="103" name="tMap" color="7" fill="1" visible="no" active="yes"/>
 <layer number="104" name="Name" color="16" fill="1" visible="no" active="yes"/>
-<layer number="105" name="tPlate" color="7" fill="1" visible="no" active="yes"/>
+<layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="106" name="bPlate" color="7" fill="1" visible="no" active="yes"/>
 <layer number="107" name="Crop" color="7" fill="1" visible="no" active="yes"/>
 <layer number="108" name="tplace-old" color="10" fill="1" visible="no" active="yes"/>
@@ -334,6 +334,10 @@ D. Yang: dyang316@gatech.edu</text>
 <vertex x="-21.8" y="68.5"/>
 <vertex x="-21.8" y="76.5"/>
 </polygon>
+<text x="43.4" y="72.4" size="1.5" layer="105" font="vector" rot="SR135">TX</text>
+<text x="50.1" y="65.7" size="1.5" layer="105" font="vector" rot="SR135">RX</text>
+<text x="-31.1" y="76.3" size="1.778" layer="105" rot="SR180">PWR:
+16-22V</text>
 </plain>
 <libraries>
 <library name="RoboJackets-ICs">
@@ -18135,6 +18139,23 @@ Your Eurocircuits Team
 <approved hash="23,16,5192aa6eaa0e51f2"/>
 <approved hash="23,1,fd1da961a8e0fc9c"/>
 <approved hash="23,1,7f4b82b78d957069"/>
+<approved hash="5,1,22b7841b040bc54b"/>
+<approved hash="5,1,0e32b19ae50a3d4e"/>
+<approved hash="5,1,dbbe6d1b160bc742"/>
+<approved hash="5,1,a7391e9b110bcf45"/>
+<approved hash="5,1,74a4ca1b180bc158"/>
+<approved hash="5,1,4027e79b010bc15b"/>
+<approved hash="5,1,f92e4c9b150bc752"/>
+<approved hash="5,1,c6a9781b140bcd55"/>
+<approved hash="5,1,2393f81b0e56a87a"/>
+<approved hash="5,1,1c14cc9b0f56a27d"/>
+<approved hash="5,1,c898131b3c569a71"/>
+<approved hash="5,1,a51d679b1b56a474"/>
+<approved hash="5,1,919e4a1b0256a477"/>
+<approved hash="5,1,42039e9b0b56aa6a"/>
+<approved hash="5,1,3e84ed1b0c56a26d"/>
+<approved hash="5,1,eb08319aff575861"/>
+<approved hash="5,1,c78d041b1e56a064"/>
 </errors>
 </board>
 </drawing>
