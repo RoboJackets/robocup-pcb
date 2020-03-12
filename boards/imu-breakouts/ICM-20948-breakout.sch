@@ -9372,7 +9372,7 @@ Datasheet: https://www.onsemi.com/pub/Collateral/NCP161-D.PDF &lt;/p&gt;</descri
 <part name="SUPPLY3" library="RoboJackets-Supplies" deviceset="+1.8V" device=""/>
 <part name="R3" library="RoboJackets-Resistors" deviceset="R0603W" device="" value="2.2k"/>
 <part name="SUPPLY5" library="RoboJackets-Supplies" deviceset="+5.0V" device=""/>
-<part name="Q2" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCH" device="-RE1C002UN" value="20V/0.2A/8MHz/1.2Ω/1Vth"/>
+<part name="Q4" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCH" device="-RE1C002UN" value="20V/0.2A/8MHz/1.2Ω/1Vth"/>
 <part name="R4" library="RoboJackets-Resistors" deviceset="R0603W" device="" value="2.2k"/>
 <part name="SUPPLY7" library="RoboJackets-Supplies" deviceset="+1.8V" device=""/>
 <part name="R5" library="RoboJackets-Resistors" deviceset="R0603W" device="" value="2.2k"/>
@@ -9382,7 +9382,7 @@ Datasheet: https://www.onsemi.com/pub/Collateral/NCP161-D.PDF &lt;/p&gt;</descri
 <part name="SUPPLY9" library="RoboJackets-Supplies" deviceset="+1.8V" device=""/>
 <part name="R7" library="RoboJackets-Resistors" deviceset="R0603W" device="" value="2.2k"/>
 <part name="SUPPLY10" library="RoboJackets-Supplies" deviceset="+5.0V" device=""/>
-<part name="Q4" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCH" device="-RE1C002UN" value="20V/0.2A/8MHz/1.2Ω/1Vth"/>
+<part name="Q2" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCH" device="-RE1C002UN" value="20V/0.2A/8MHz/1.2Ω/1Vth"/>
 <part name="R8" library="RoboJackets-Resistors" deviceset="R0603W" device="" value="2.2k"/>
 <part name="SUPPLY11" library="RoboJackets-Supplies" deviceset="+1.8V" device=""/>
 <part name="R9" library="RoboJackets-Resistors" deviceset="R0603W" device="" value="2.2k"/>
@@ -9495,7 +9495,7 @@ Datasheet: https://www.onsemi.com/pub/Collateral/NCP161-D.PDF &lt;/p&gt;</descri
 <instance part="SUPPLY5" gate="P" x="45.72" y="119.38" smashed="yes">
 <attribute name="VALUE" x="43.815" y="122.555" size="1.778" layer="96"/>
 </instance>
-<instance part="Q2" gate="NMOS" x="83.82" y="99.06" smashed="yes" rot="R270">
+<instance part="Q4" gate="NMOS" x="83.82" y="99.06" smashed="yes" rot="R270">
 <attribute name="NAME" x="83.82" y="93.98" size="1.778" layer="95" font="vector" rot="R270"/>
 <attribute name="VALUE" x="68.58" y="86.36" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="83.82" y="93.98" size="1.778" layer="95" font="vector" rot="R270"/>
@@ -9533,7 +9533,7 @@ Datasheet: https://www.onsemi.com/pub/Collateral/NCP161-D.PDF &lt;/p&gt;</descri
 <instance part="SUPPLY10" gate="P" x="144.78" y="119.38" smashed="yes">
 <attribute name="VALUE" x="142.875" y="122.555" size="1.778" layer="96"/>
 </instance>
-<instance part="Q4" gate="NMOS" x="185.42" y="99.06" smashed="yes" rot="R270">
+<instance part="Q2" gate="NMOS" x="185.42" y="99.06" smashed="yes" rot="R270">
 <attribute name="NAME" x="185.42" y="93.98" size="1.778" layer="95" font="vector" rot="R270"/>
 <attribute name="VALUE" x="170.18" y="86.36" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="185.42" y="93.98" size="1.778" layer="95" font="vector" rot="R270"/>
@@ -9692,6 +9692,12 @@ Datasheet: https://www.onsemi.com/pub/Collateral/NCP161-D.PDF &lt;/p&gt;</descri
 <pinref part="U1" gate="G$1" pin="SDA/SDI"/>
 </segment>
 <segment>
+<pinref part="Q4" gate="NMOS" pin="S"/>
+<pinref part="R4" gate="G$1" pin="PIN1"/>
+<wire x1="78.74" y1="96.52" x2="73.66" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="96.52" x2="73.66" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="96.52" x2="68.58" y2="96.52" width="0.1524" layer="91"/>
+<junction x="73.66" y="96.52"/>
 <label x="68.58" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
@@ -9719,7 +9725,7 @@ Datasheet: https://www.onsemi.com/pub/Collateral/NCP161-D.PDF &lt;/p&gt;</descri
 </segment>
 <segment>
 <pinref part="R8" gate="G$1" pin="PIN1"/>
-<pinref part="Q4" gate="NMOS" pin="S"/>
+<pinref part="Q2" gate="NMOS" pin="S"/>
 <wire x1="175.26" y1="101.6" x2="175.26" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="96.52" x2="180.34" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="96.52" x2="170.18" y2="96.52" width="0.1524" layer="91"/>
@@ -9741,14 +9747,6 @@ Datasheet: https://www.onsemi.com/pub/Collateral/NCP161-D.PDF &lt;/p&gt;</descri
 <wire x1="20.32" y1="96.52" x2="25.4" y2="96.52" width="0.1524" layer="91"/>
 <junction x="25.4" y="96.52"/>
 <label x="20.32" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="R4" gate="G$1" pin="PIN1"/>
-<pinref part="Q2" gate="NMOS" pin="S"/>
-<wire x1="73.66" y1="101.6" x2="73.66" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="96.52" x2="78.74" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="96.52" x2="73.66" y2="96.52" width="0.1524" layer="91"/>
-<junction x="73.66" y="96.52"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -9797,7 +9795,7 @@ Datasheet: https://www.onsemi.com/pub/Collateral/NCP161-D.PDF &lt;/p&gt;</descri
 <pinref part="SUPPLY7" gate="G$1" pin="+1.8V"/>
 <pinref part="R4" gate="G$1" pin="PIN2"/>
 <wire x1="73.66" y1="116.84" x2="73.66" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="Q2" gate="NMOS" pin="G"/>
+<pinref part="Q4" gate="NMOS" pin="G"/>
 <wire x1="73.66" y1="114.3" x2="73.66" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="104.14" x2="81.28" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="114.3" x2="73.66" y2="114.3" width="0.1524" layer="91"/>
@@ -9817,7 +9815,7 @@ Datasheet: https://www.onsemi.com/pub/Collateral/NCP161-D.PDF &lt;/p&gt;</descri
 <pinref part="SUPPLY11" gate="G$1" pin="+1.8V"/>
 <pinref part="R8" gate="G$1" pin="PIN2"/>
 <wire x1="175.26" y1="116.84" x2="175.26" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="Q4" gate="NMOS" pin="G"/>
+<pinref part="Q2" gate="NMOS" pin="G"/>
 <wire x1="175.26" y1="114.3" x2="175.26" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="104.14" x2="182.88" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="114.3" x2="175.26" y2="114.3" width="0.1524" layer="91"/>
@@ -9867,7 +9865,7 @@ Datasheet: https://www.onsemi.com/pub/Collateral/NCP161-D.PDF &lt;/p&gt;</descri
 </net>
 <net name="CLK_VIN" class="0">
 <segment>
-<pinref part="Q4" gate="NMOS" pin="D"/>
+<pinref part="Q2" gate="NMOS" pin="D"/>
 <wire x1="190.5" y1="96.52" x2="195.58" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="PIN1"/>
 <wire x1="195.58" y1="101.6" x2="195.58" y2="96.52" width="0.1524" layer="91"/>
@@ -9888,7 +9886,7 @@ Datasheet: https://www.onsemi.com/pub/Collateral/NCP161-D.PDF &lt;/p&gt;</descri
 <label x="33.02" y="53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="Q2" gate="NMOS" pin="D"/>
+<pinref part="Q4" gate="NMOS" pin="D"/>
 <wire x1="88.9" y1="96.52" x2="93.98" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="PIN1"/>
 <wire x1="93.98" y1="96.52" x2="99.06" y2="96.52" width="0.1524" layer="91"/>
