@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -413,6 +413,112 @@ In this library you will find circuit elements that are used for getting measure
 <text x="4.119" y="-0.03" size="0.254" layer="51" font="vector" ratio="12" rot="MR180" align="center-left">X</text>
 <text x="2.619" y="0.27" size="0.254" layer="51" font="vector" ratio="12" rot="R180" align="top-center">Z</text>
 </package>
+<package name="ICM-20948-1">
+<smd name="P16" x="0.034290625" y="0.00508125" dx="0.00761875" dy="0.00508125" layer="1"/>
+<smd name="P0" x="0" y="0" dx="0.04318125" dy="0.039115625" layer="1"/>
+<smd name="P23" x="-0.015240625" y="0.034290625" dx="0.00508125" dy="0.00761875" layer="1"/>
+<smd name="P15" x="0.034290625" y="-0.00508125" dx="0.00761875" dy="0.00508125" layer="1"/>
+<smd name="P17" x="0.034290625" y="0.015240625" dx="0.00761875" dy="0.00508125" layer="1"/>
+<smd name="P14" x="0.034290625" y="-0.015240625" dx="0.00761875" dy="0.00508125" layer="1"/>
+<smd name="P18" x="0.034290625" y="0.0254" dx="0.00761875" dy="0.00508125" layer="1"/>
+<smd name="P13" x="0.034290625" y="-0.0254" dx="0.00761875" dy="0.00508125" layer="1"/>
+<smd name="P3" x="-0.034290625" y="0.00508125" dx="0.00761875" dy="0.00508125" layer="1"/>
+<smd name="P4" x="-0.034290625" y="-0.00508125" dx="0.00761875" dy="0.00508125" layer="1"/>
+<smd name="P2" x="-0.034290625" y="0.015240625" dx="0.00761875" dy="0.00508125" layer="1"/>
+<smd name="P5" x="-0.034290625" y="-0.015240625" dx="0.00761875" dy="0.00508125" layer="1"/>
+<smd name="P1" x="-0.034290625" y="0.0254" dx="0.00761875" dy="0.00508125" layer="1"/>
+<smd name="P6" x="-0.034290625" y="-0.0254" dx="0.00761875" dy="0.00508125" layer="1"/>
+<smd name="P10" x="0.00508125" y="-0.034290625" dx="0.00508125" dy="0.00761875" layer="1"/>
+<smd name="P11" x="0.015240625" y="-0.034290625" dx="0.00508125" dy="0.00761875" layer="1"/>
+<smd name="P8" x="-0.015240625" y="-0.034290625" dx="0.00508125" dy="0.00761875" layer="1"/>
+<smd name="P12" x="0.0254" y="-0.034290625" dx="0.00508125" dy="0.00761875" layer="1"/>
+<smd name="P7" x="-0.0254" y="-0.034290625" dx="0.00508125" dy="0.00761875" layer="1"/>
+<smd name="P9" x="-0.00508125" y="-0.034290625" dx="0.00508125" dy="0.00761875" layer="1"/>
+<smd name="P24" x="-0.0254" y="0.034290625" dx="0.00508125" dy="0.00761875" layer="1"/>
+<smd name="P19" x="0.0254" y="0.034290625" dx="0.00508125" dy="0.00761875" layer="1"/>
+<smd name="P20" x="0.015240625" y="0.034290625" dx="0.00508125" dy="0.00761875" layer="1"/>
+<smd name="P22" x="-0.00508125" y="0.034290625" dx="0.00508125" dy="0.00761875" layer="1"/>
+<smd name="P21" x="0.00508125" y="0.034290625" dx="0.00508125" dy="0.00761875" layer="1"/>
+<wire x1="0.0381" y1="0.0381" x2="0.0381" y2="-0.0381" width="0.000634375" layer="21"/>
+<wire x1="0.0381" y1="-0.0381" x2="-0.0381" y2="-0.0381" width="0.000634375" layer="21"/>
+<wire x1="-0.0381" y1="-0.0381" x2="-0.0381" y2="0.0381" width="0.000634375" layer="21"/>
+<wire x1="-0.0381" y1="0.0381" x2="0.0381" y2="0.0381" width="0.000634375" layer="21"/>
+<text x="-0.0381" y="0.0508" size="0.0254" layer="25">&gt;NAME</text>
+<wire x1="0.0635" y1="0.0127" x2="0.1143" y2="0.0127" width="0.002540625" layer="21"/>
+<wire x1="0.1143" y1="0.0127" x2="0.1016" y2="0.01905" width="0.002540625" layer="21"/>
+<wire x1="0.1143" y1="0.0127" x2="0.1016" y2="0.00635" width="0.002540625" layer="21"/>
+<wire x1="0.0635" y1="0.0127" x2="0.0635" y2="-0.0381" width="0.002540625" layer="21"/>
+<wire x1="0.0635" y1="-0.0381" x2="0.06985" y2="-0.0254" width="0.002540625" layer="21"/>
+<wire x1="0.0635" y1="-0.0381" x2="0.05715" y2="-0.0254" width="0.002540625" layer="21"/>
+<circle x="0.0635" y="0.0127" radius="0.0127" width="0.002540625" layer="21"/>
+<wire x1="0.072390625" y1="0.02184375" x2="0.054609375" y2="0.003809375" width="0.002540625" layer="21"/>
+<wire x1="0.054609375" y1="0.021590625" x2="0.072390625" y2="0.003809375" width="0.002540625" layer="21"/>
+<text x="0.059690625" y="0.03048125" size="0.0127" layer="21">Z</text>
+<text x="0.12065" y="0.00761875" size="0.0127" layer="21">X</text>
+<text x="0.05841875" y="-0.05841875" size="0.0127" layer="21">Y</text>
+</package>
+<package name="ICM-20948">
+<wire x1="-1.55" y1="1.55" x2="1.55" y2="1.55" width="0.127" layer="51"/>
+<wire x1="1.55" y1="1.55" x2="1.55" y2="-1.55" width="0.127" layer="51"/>
+<wire x1="1.55" y1="-1.55" x2="-1.55" y2="-1.55" width="0.127" layer="51"/>
+<wire x1="-1.55" y1="-1.55" x2="-1.55" y2="1.55" width="0.127" layer="51"/>
+<wire x1="-1.3" y1="1.55" x2="-1.55" y2="1.55" width="0.127" layer="21"/>
+<wire x1="-1.55" y1="1.55" x2="-1.55" y2="1.3" width="0.127" layer="21"/>
+<wire x1="1.3" y1="1.55" x2="1.55" y2="1.55" width="0.127" layer="21"/>
+<wire x1="1.55" y1="1.55" x2="1.55" y2="1.3" width="0.127" layer="21"/>
+<wire x1="1.55" y1="-1.3" x2="1.55" y2="-1.55" width="0.127" layer="21"/>
+<wire x1="1.55" y1="-1.55" x2="1.3" y2="-1.55" width="0.127" layer="21"/>
+<wire x1="-1.55" y1="-1.3" x2="-1.55" y2="-1.55" width="0.127" layer="21"/>
+<wire x1="-1.55" y1="-1.55" x2="-1.3" y2="-1.55" width="0.127" layer="21"/>
+<wire x1="-2.12" y1="2.12" x2="2.12" y2="2.12" width="0.05" layer="39"/>
+<wire x1="2.12" y1="2.12" x2="2.12" y2="-2.12" width="0.05" layer="39"/>
+<wire x1="2.12" y1="-2.12" x2="-2.12" y2="-2.12" width="0.05" layer="39"/>
+<wire x1="-2.12" y1="-2.12" x2="-2.12" y2="2.12" width="0.05" layer="39"/>
+<circle x="-2.4" y="1" radius="0.1" width="0.2" layer="21"/>
+<circle x="-1.2" y="1.1" radius="0.1" width="0.2" layer="51"/>
+<text x="-2.543359375" y="3.043359375" size="1.27168125" layer="25">&gt;NAME</text>
+<text x="-2.541740625" y="-3.812609375" size="1.27086875" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.85" y1="-0.77" x2="0.85" y2="0.77" layer="41"/>
+<rectangle x1="-0.85" y1="-0.77" x2="0.85" y2="0.77" layer="43"/>
+<smd name="1" x="-1.545" y="1" dx="0.64" dy="0.22" layer="1" roundness="25"/>
+<smd name="2" x="-1.545" y="0.6" dx="0.64" dy="0.22" layer="1" roundness="25"/>
+<smd name="3" x="-1.545" y="0.2" dx="0.64" dy="0.22" layer="1" roundness="25"/>
+<smd name="4" x="-1.545" y="-0.2" dx="0.64" dy="0.22" layer="1" roundness="25"/>
+<smd name="5" x="-1.545" y="-0.6" dx="0.64" dy="0.22" layer="1" roundness="25"/>
+<smd name="6" x="-1.545" y="-1" dx="0.64" dy="0.22" layer="1" roundness="25"/>
+<smd name="7" x="-1" y="-1.545" dx="0.64" dy="0.22" layer="1" roundness="25" rot="R90"/>
+<smd name="8" x="-0.6" y="-1.545" dx="0.64" dy="0.22" layer="1" roundness="25" rot="R90"/>
+<smd name="9" x="-0.2" y="-1.545" dx="0.64" dy="0.22" layer="1" roundness="25" rot="R90"/>
+<smd name="10" x="0.2" y="-1.545" dx="0.64" dy="0.22" layer="1" roundness="25" rot="R90"/>
+<smd name="11" x="0.6" y="-1.545" dx="0.64" dy="0.22" layer="1" roundness="25" rot="R90"/>
+<smd name="12" x="1" y="-1.545" dx="0.64" dy="0.22" layer="1" roundness="25" rot="R90"/>
+<smd name="13" x="1.545" y="-1" dx="0.64" dy="0.22" layer="1" roundness="25" rot="R180"/>
+<smd name="14" x="1.545" y="-0.6" dx="0.64" dy="0.22" layer="1" roundness="25" rot="R180"/>
+<smd name="15" x="1.545" y="-0.2" dx="0.64" dy="0.22" layer="1" roundness="25" rot="R180"/>
+<smd name="16" x="1.545" y="0.2" dx="0.64" dy="0.22" layer="1" roundness="25" rot="R180"/>
+<smd name="17" x="1.545" y="0.6" dx="0.64" dy="0.22" layer="1" roundness="25" rot="R180"/>
+<smd name="18" x="1.545" y="1" dx="0.64" dy="0.22" layer="1" roundness="25" rot="R180"/>
+<smd name="19" x="1" y="1.545" dx="0.64" dy="0.22" layer="1" roundness="25" rot="R270"/>
+<smd name="20" x="0.6" y="1.545" dx="0.64" dy="0.22" layer="1" roundness="25" rot="R270"/>
+<smd name="21" x="0.2" y="1.545" dx="0.64" dy="0.22" layer="1" roundness="25" rot="R270"/>
+<smd name="22" x="-0.2" y="1.545" dx="0.64" dy="0.22" layer="1" roundness="25" rot="R270"/>
+<smd name="23" x="-0.6" y="1.545" dx="0.64" dy="0.22" layer="1" roundness="25" rot="R270"/>
+<smd name="24" x="-1" y="1.545" dx="0.64" dy="0.22" layer="1" roundness="25" rot="R270"/>
+<wire x1="5" y1="1" x2="3" y2="1" width="0.127" layer="21"/>
+<wire x1="3" y1="1" x2="3" y2="-1" width="0.127" layer="21"/>
+<wire x1="5" y1="1" x2="4.5" y2="1.25" width="0.127" layer="21"/>
+<wire x1="5" y1="1" x2="4.5" y2="0.75" width="0.127" layer="21"/>
+<wire x1="3" y1="-1" x2="2.75" y2="-0.5" width="0.127" layer="21"/>
+<circle x="3" y="1" radius="0.353553125" width="0.127" layer="21"/>
+<wire x1="3" y1="-1" x2="3.25" y2="-0.5" width="0.127" layer="21"/>
+<text x="5.5" y="0.5" size="1" layer="21">X</text>
+<text x="2.5" y="-2" size="1" layer="21">Y</text>
+<text x="2.5" y="1.5" size="1" layer="21">Z</text>
+<wire x1="3" y1="1" x2="2.75" y2="1.25" width="0.127" layer="21"/>
+<wire x1="3" y1="1" x2="3.25" y2="0.75" width="0.127" layer="21"/>
+<wire x1="3" y1="1" x2="3.25" y2="1.25" width="0.127" layer="21"/>
+<wire x1="3" y1="1" x2="2.75" y2="0.75" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ADXL345">
@@ -551,6 +657,30 @@ In this library you will find circuit elements that are used for getting measure
 <pin name="CLK" x="-22.86" y="-5.08" length="middle"/>
 <text x="-20.32" y="17.78" size="1.778" layer="95">&gt;NAME</text>
 <text x="-20.32" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="ICM-20948">
+</symbol>
+<symbol name="ICM-20948-1">
+<wire x1="15.24" y1="17.78" x2="-15.24" y2="17.78" width="0.1524" layer="94"/>
+<wire x1="-15.24" y1="17.78" x2="-15.24" y2="-17.78" width="0.1524" layer="94"/>
+<wire x1="-15.24" y1="-17.78" x2="15.24" y2="-17.78" width="0.1524" layer="94"/>
+<wire x1="15.24" y1="-17.78" x2="15.24" y2="17.78" width="0.1524" layer="94"/>
+<text x="-15.2655" y="18.3186" size="1.78096875" layer="95">&gt;NAME</text>
+<text x="-15.2615" y="-20.3487" size="1.780509375" layer="96">&gt;VALUE</text>
+<pin name="FSYNC" x="-20.32" y="7.62" length="middle" direction="in"/>
+<pin name="VDDIO" x="20.32" y="12.7" length="middle" direction="pwr" rot="R180"/>
+<pin name="INT1" x="20.32" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="AD0/SDO" x="-20.32" y="-2.54" length="middle" direction="out"/>
+<pin name="REGOUT" x="20.32" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="VDD" x="20.32" y="15.24" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND" x="20.32" y="-15.24" length="middle" direction="pwr" rot="R180"/>
+<pin name="RESV_19" x="20.32" y="-5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="RESV_20" x="20.32" y="-7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="AUX_DA" x="-20.32" y="2.54" length="middle" direction="in"/>
+<pin name="SCL/SCLK" x="-20.32" y="0" length="middle" direction="in" function="clk"/>
+<pin name="NCS" x="-20.32" y="-7.62" length="middle" direction="in"/>
+<pin name="SDA/SDI" x="-20.32" y="-5.08" length="middle"/>
+<pin name="AUX_CL" x="-20.32" y="5.08" length="middle" direction="in" function="clk"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -736,6 +866,46 @@ In this library you will find circuit elements that are used for getting measure
 <connect gate="G$1" pin="RES" pad="14 15 16 17 18"/>
 <connect gate="G$1" pin="VDD" pad="22 23"/>
 <connect gate="G$1" pin="VDD_IO" pad="1 3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ICM-20948-1">
+<gates>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ICM-20948" prefix="U">
+<description>Axis=3 Axis Gyro+3 Axis Accel+Compass. Pin For Pin With m</description>
+<gates>
+<gate name="G$1" symbol="ICM-20948-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="ICM-20948" package="ICM-20948">
+<connects>
+<connect gate="G$1" pin="AD0/SDO" pad="9"/>
+<connect gate="G$1" pin="AUX_CL" pad="7"/>
+<connect gate="G$1" pin="AUX_DA" pad="21"/>
+<connect gate="G$1" pin="FSYNC" pad="11"/>
+<connect gate="G$1" pin="GND" pad="18"/>
+<connect gate="G$1" pin="INT1" pad="12"/>
+<connect gate="G$1" pin="NCS" pad="22"/>
+<connect gate="G$1" pin="REGOUT" pad="10"/>
+<connect gate="G$1" pin="RESV_19" pad="19"/>
+<connect gate="G$1" pin="RESV_20" pad="20"/>
+<connect gate="G$1" pin="SCL/SCLK" pad="23"/>
+<connect gate="G$1" pin="SDA/SDI" pad="24"/>
+<connect gate="G$1" pin="VDD" pad="13"/>
+<connect gate="G$1" pin="VDDIO" pad="8"/>
 </connects>
 <technologies>
 <technology name=""/>
