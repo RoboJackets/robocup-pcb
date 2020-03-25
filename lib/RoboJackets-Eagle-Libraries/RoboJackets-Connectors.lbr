@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1523,11 +1523,13 @@ rfk_1850.pdf</description>
 <text x="0" y="3" size="0.254" layer="51" font="vector" align="center">TALL COMPONENT KO</text>
 </package>
 <package name="B2P_SMALL">
-<pad name="2" x="3.98" y="0" drill="1.65" rot="R180"/>
-<pad name="1" x="0.02" y="0" drill="1.65" shape="square" rot="R180"/>
+<pad name="2" x="3.98" y="0" drill="1.65" shape="square" rot="R180"/>
+<pad name="1" x="0.02" y="0" drill="1.65" rot="R180"/>
 <text x="2" y="2.81" size="1" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
 <text x="7.493" y="0.127" size="2.54" layer="21" rot="R90">+</text>
-<text x="-3.556" y="1.778" size="2.54" layer="21">_</text>
+<text x="-3.175" y="1.778" size="2.54" layer="21">_</text>
+<text x="-3.175" y="1.778" size="2.54" layer="22">_</text>
+<text x="7.493" y="0.127" size="2.54" layer="22" rot="R90">+</text>
 </package>
 </packages>
 <symbols>
