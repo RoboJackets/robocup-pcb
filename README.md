@@ -44,3 +44,7 @@ Most CAD files found here are [EAGLE](http://www.cadsoftusa.com/) files. However
 	From EAGLE's Control Panel, navigate to the *Directories* window: *Options -> Directories*.
 
     Find the *Libraries* text box, and add the directory paths where the repositories were cloned from step 1. Don't forget to also include the path for the *[RoboJackets libraries](https://github.com/RoboJackets/robocup-pcb/tree/master/lib)*!
+
+    ## License
+
+This project is licensed under the Apache License v2.0.  See the [LICENSE](LICENSE) file for more information.
