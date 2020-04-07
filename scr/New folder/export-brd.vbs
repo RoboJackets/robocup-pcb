@@ -1,1 +1,0 @@
-CreateObject("Wscript.Shell").Run """" & "%HOMEDRIVE%%HOMEPATH%\Documents\GitHub\robocup-pcb\scripts\export-script.bat" & """", 0, False
