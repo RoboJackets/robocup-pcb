@@ -5,7 +5,6 @@ Welcome to the Georgia Tech RoboJackets repository for management and storage of
 If you are a new member to the RoboCup electrical team and have never used *[git version control](http://git-scm.com/)* before, we highly recommend that you familiarize yourself with it.
 
 ## Sponsor Thank You!
-
 - Maxon (discount of EC45 and EC16 motors)
 - PCBWay (donation of PCB fabrication runs)
 - Texas Instruments (donation of ICs and SBCs)
@@ -15,12 +14,10 @@ If you are a new member to the RoboCup electrical team and have never used *[git
 - An installation of [EAGLE](http://www.cadsoftusa.com/)
 
 ## Using this Repository
-Most CAD files found here are [EAGLE](http://www.cadsoftusa.com/) files. However, some older archived files were created using [PCB](http://pcb.geda-project.org) (a program that is part of the [gEDA project](http://www.geda-project.org)). Users will find the following items here:
-- Control, Kicker, Antenna, and Base Station files
-- Gerber files for most PCB designs
+Most CAD files found here are [EAGLE](http://www.cadsoftusa.com/) files. However, very few older archived files were created using [PCB](http://pcb.geda-project.org) (a program that is part of the [gEDA project](http://www.geda-project.org)). Users will find the following items here:
+- Control, Kicker, and Radio files
 - RoboCup libraries
 - DRU rulesets (for checking for errors)
-- CAM Jobs (for exporting gerber files)
 
 
 ### Setup libraries in EAGLE
@@ -45,6 +42,6 @@ Most CAD files found here are [EAGLE](http://www.cadsoftusa.com/) files. However
 
     Find the *Libraries* text box, and add the directory paths where the repositories were cloned from step 1. Don't forget to also include the path for the *[RoboJackets libraries](https://github.com/RoboJackets/robocup-pcb/tree/master/lib)*!
 
-    ## License
+## License
 
 This project is licensed under the Apache License v2.0.  See the [LICENSE](LICENSE) file for more information.
