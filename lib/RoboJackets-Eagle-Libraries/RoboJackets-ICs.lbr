@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -93,6 +93,8 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="113" name="IDFDebug" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="114" name="FRNTMAAT1" color="7" fill="1" visible="no" active="yes"/>
+<layer number="115" name="FRNTMAAT2" color="7" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="117" name="mPads" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
@@ -2698,6 +2700,49 @@ Source: 8x ADG1408_1409.pdf</description>
 <smd name="16" x="2.3215" y="2.2225" dx="1.8971" dy="0.4143" layer="1"/>
 <text x="-2" y="3.3186" size="1" layer="25" font="vector">&gt;NAME</text>
 <text x="-2" y="-3.3786" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
+</package>
+<package name="APA102_5050">
+<description>APA102 RGB LED</description>
+<wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="1.5" x2="-2.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="2.5" x2="-1.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="2.5" x2="-2.5" y2="1.5" width="0.127" layer="21"/>
+<circle x="-1.778" y="3.048" radius="0.254" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="2.1" width="0.127" layer="21"/>
+<smd name="1" x="2" y="-1.7" dx="2" dy="1.1" layer="1" rot="R180"/>
+<smd name="2" x="2" y="0" dx="2" dy="1.1" layer="1" rot="R180"/>
+<smd name="3" x="2" y="1.7" dx="2" dy="1.1" layer="1" rot="R180"/>
+<smd name="4" x="-2" y="1.7" dx="2" dy="1.1" layer="1" rot="R180"/>
+<smd name="5" x="-2" y="0" dx="2" dy="1.1" layer="1" rot="R180"/>
+<smd name="6" x="-2" y="-1.7" dx="2" dy="1.1" layer="1" rot="R180"/>
+<text x="-2.54" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="APA102_2020">
+<wire x1="0" y1="0" x2="2" y2="0" width="0.05" layer="21"/>
+<wire x1="2" y1="0" x2="2" y2="2" width="0.05" layer="21"/>
+<wire x1="2" y1="2" x2="0" y2="2" width="0.05" layer="21"/>
+<wire x1="0" y1="2" x2="0" y2="0" width="0.05" layer="21"/>
+<smd name="D_IN" x="0.25" y="1.825" dx="0.6" dy="0.35" layer="1"/>
+<smd name="D_OUT" x="1.75" y="1.825" dx="0.6" dy="0.35" layer="1"/>
+<smd name="GND" x="0.25" y="0.175" dx="0.6" dy="0.35" layer="1"/>
+<smd name="V_CC" x="1.75" y="0.175" dx="0.6" dy="0.35" layer="1"/>
+<smd name="C_IN" x="0.25" y="1" dx="0.6" dy="0.5" layer="1"/>
+<smd name="CL_OUT" x="1.75" y="1" dx="0.6" dy="0.5" layer="1"/>
+<text x="-0.05" y="1.825" size="0.5" layer="25" align="center-right">D_IN</text>
+<text x="-0.05" y="1" size="0.5" layer="25" align="center-right">CL_IN</text>
+<text x="-0.05" y="0.15" size="0.5" layer="25" align="center-right">GND</text>
+<text x="2.05" y="1.775" size="0.5" layer="25" align="center-left">D_OUT</text>
+<text x="2.05" y="1" size="0.5" layer="25" align="center-left">CL_OUT</text>
+<text x="2.1" y="0.2" size="0.5" layer="25" align="center-left">5V</text>
+<polygon width="0.05" layer="21" spacing="0.01" pour="hatch">
+<vertex x="0.1" y="2.1"/>
+<vertex x="-0.1" y="1.9"/>
+<vertex x="-0.1" y="2.1"/>
+</polygon>
 </package>
 </packages>
 <symbols>
@@ -6375,19 +6420,6 @@ Source: www.ti.com .. ADS7828.pdf</description>
 <devices>
 </devices>
 </deviceset>
-<deviceset name="APA102" prefix="LED">
-<description>APA102C 5050 RGB LED
-
---
-Adafruit DotStar Single LED Pixel
-Product Page: https://www.adafruit.com/products/2343
-Datasheet: https://cdn-shop.adafruit.com/product-files/2343/APA102C.pdf</description>
-<gates>
-<gate name="G$1" symbol="APA102" x="-5.08" y="0"/>
-</gates>
-<devices>
-</devices>
-</deviceset>
 <deviceset name="ADS7952SBRHBR" prefix="U">
 <description>12/10/8-Bit, 1 MSPS, 16/12/8/4-Channel, Single-Ended, MicroPower, Serial Interface ADCs</description>
 <gates>
@@ -6450,6 +6482,48 @@ Datasheet: https://cdn-shop.adafruit.com/product-files/2343/APA102C.pdf</descrip
 <attribute name="DIGIKEY_PN" value="ADUM7441CRQZ-RL7CT-ND"/>
 <attribute name="MANUFACTURER" value="ANALOG DEVICES"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="APA102" prefix="LED">
+<description>APA102C 5050 RGB LED
+
+--
+Adafruit DotStar Single LED Pixel
+Product Page: https://www.adafruit.com/products/2343
+Datasheet: https://cdn-shop.adafruit.com/product-files/2343/APA102C.pdf</description>
+<gates>
+<gate name="G$1" symbol="APA102" x="-5.08" y="0"/>
+</gates>
+<devices>
+<device name="5050" package="APA102_5050">
+<connects>
+<connect gate="G$1" pin="CI" pad="5"/>
+<connect gate="G$1" pin="CO" pad="2"/>
+<connect gate="G$1" pin="DI" pad="4"/>
+<connect gate="G$1" pin="DO" pad="3"/>
+<connect gate="G$1" pin="GND" pad="6"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="1568-1902-ND" constant="no"/>
+<attribute name="MPN" value="APA102C-5050" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="2020" package="APA102_2020">
+<connects>
+<connect gate="G$1" pin="CI" pad="C_IN"/>
+<connect gate="G$1" pin="CO" pad="CL_OUT"/>
+<connect gate="G$1" pin="DI" pad="D_IN"/>
+<connect gate="G$1" pin="DO" pad="D_OUT"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="VCC" pad="V_CC"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
