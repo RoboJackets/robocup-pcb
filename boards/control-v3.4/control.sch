@@ -29050,7 +29050,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </library>
 </libraries>
 <attributes>
-<attribute name="REVISION" value="v3.0"/>
+<attribute name="REVISION" value="v3.4"/>
 <attribute name="TEAM" value="RoboCup SSL"/>
 </attributes>
 <variantdefs>
@@ -29100,7 +29100,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </variantdefs>
 <parts>
 <part name="FRAME1" library="RoboJackets-Frames" deviceset="FRAME_A_L" device="">
-<attribute name="REVISION" value="v3.3"/>
+<attribute name="REVISION" value="v3.4"/>
 <attribute name="SCH_DESC" value="Wheel Motor Driver"/>
 </part>
 <part name="U1" library="RoboJackets-PowerICs" deviceset="DRV8303" device="DCA"/>
@@ -29815,7 +29815,7 @@ ripple current from motors</text>
 </variantdefs>
 <parts>
 <part name="FRAME1" library="RoboJackets-Frames" deviceset="FRAME_A_L" device="">
-<attribute name="REVISION" value="v3.3"/>
+<attribute name="REVISION" value="v3.4"/>
 <attribute name="SCH_DESC" value="Dribbler Motor Driver"/>
 </part>
 <part name="U1" library="RoboJackets-PowerICs" deviceset="DRV8303" device="DCA"/>
@@ -30454,7 +30454,7 @@ ripple current from motors</text>
 <parts>
 <part name="U1" library="RoboJackets-ICs" deviceset="XC3S250E-4TQG144C" device=""/>
 <part name="FRAME1" library="RoboJackets-Frames" deviceset="FRAME_A_L" device="">
-<attribute name="REVISION" value="v3.3"/>
+<attribute name="REVISION" value="v3.4"/>
 <attribute name="SCH_DESC" value="Microcontroller"/>
 </part>
 <part name="FRAME4" library="RoboJackets-Frames" deviceset="FRAME_A_L" device="">
@@ -30489,7 +30489,7 @@ ripple current from motors</text>
 <part name="R11" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="4.7k"/>
 <part name="SUPPLY24" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="FRAME5" library="RoboJackets-Frames" deviceset="FRAME_A_L" device="">
-<attribute name="REVISION" value="v3.3"/>
+<attribute name="REVISION" value="v3.4"/>
 <attribute name="SCH_DESC" value="Power Delivery Circuits"/>
 </part>
 <part name="J6" library="RoboJackets-Connectors" deviceset="DF22-2" device=""/>
@@ -30531,7 +30531,7 @@ ripple current from motors</text>
 <part name="D5" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-RED" value="RED"/>
 <part name="SUPPLY50" library="RoboJackets-Supplies" deviceset="+2.5V" device=""/>
 <part name="FRAME6" library="RoboJackets-Frames" deviceset="FRAME_A_L" device="">
-<attribute name="REVISION" value="v3.3"/>
+<attribute name="REVISION" value="v3.4"/>
 <attribute name="SCH_DESC" value="Motor Drivers"/>
 </part>
 <part name="SUPPLY55" library="supply2" deviceset="GND" device=""/>
@@ -30560,7 +30560,7 @@ ripple current from motors</text>
 <part name="GND58" library="supply1" deviceset="GND" device=""/>
 <part name="GND61" library="supply1" deviceset="GND" device=""/>
 <part name="FRAME2" library="RoboJackets-Frames" deviceset="FRAME_B_L" device="">
-<attribute name="REVISION" value="v3.3"/>
+<attribute name="REVISION" value="v3.4"/>
 <attribute name="SCH_DESC" value="FPGA"/>
 </part>
 <part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="68k 1%"/>
@@ -30673,7 +30673,7 @@ ripple current from motors</text>
 <part name="R6" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="4.7k"/>
 <part name="SUPPLY5" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="FRAME3" library="RoboJackets-Frames" deviceset="FRAME_A_L" device="">
-<attribute name="REVISION" value="v3.3"/>
+<attribute name="REVISION" value="v3.4"/>
 <attribute name="SCH_DESC" value="Miscellaneous ICs"/>
 </part>
 <part name="LED1" library="RoboJackets-ICs" deviceset="APA102" device="5050" value="APA102C-5050">
@@ -34037,7 +34037,7 @@ pins while connecting</text>
 <wire x1="167.64" y1="127" x2="15.24" y2="127" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="15.24" y1="127" x2="15.24" y2="203.2" width="0.1524" layer="97" style="shortdash"/>
 <text x="17.78" y="198.12" size="1.778" layer="97">Input &amp; Switch</text>
-<text x="17.78" y="116.84" size="1.778" layer="97">Regulators</text>
+<text x="17.78" y="116.84" size="1.778" layer="97">5V and 3.3V Regulators</text>
 <text x="175.26" y="95.504" size="1.778" layer="97">PWRGD pulls line to GND when
 V_OUT not in tolerance</text>
 <text x="220.98" y="95.504" size="1.778" layer="97">When 1.2v or 2.5v or out of
