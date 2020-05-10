@@ -16410,9 +16410,6 @@ In this library you will find LEDs and other visual output devices.
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="+5V"/>
 <part name="R8" library="pot" library_urn="urn:adsk.eagle:library:331" deviceset="3RP/1610N" device="" package3d_urn="urn:adsk.eagle:package:22726/1"/>
-<part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="X1" library="RoboJackets-FreqGen" deviceset="OSC" device=""/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="5V"/>
@@ -16421,6 +16418,9 @@ In this library you will find LEDs and other visual output devices.
 <part name="D8" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-GREEN" value="GREEN"/>
 <part name="SUPPLY76" library="supply2" deviceset="GND" device=""/>
 <part name="P+9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="+5V"/>
+<part name="P+10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="P+11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="P+12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17053,14 +17053,14 @@ Board</text>
 <attribute name="NAME" x="146.685" y="73.406" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="141.351" y="73.406" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="GND7" gate="1" x="144.78" y="60.96" smashed="yes">
-<attribute name="VALUE" x="142.24" y="58.42" size="1.778" layer="96"/>
+<instance part="P+10" gate="VCC" x="213.36" y="63.5" smashed="yes" rot="R180">
+<attribute name="VALUE" x="215.9" y="66.04" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="GND8" gate="1" x="73.66" y="60.96" smashed="yes">
-<attribute name="VALUE" x="71.12" y="58.42" size="1.778" layer="96"/>
+<instance part="P+11" gate="VCC" x="144.78" y="60.96" smashed="yes" rot="R180">
+<attribute name="VALUE" x="147.32" y="63.5" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="GND9" gate="1" x="213.36" y="63.5" smashed="yes">
-<attribute name="VALUE" x="210.82" y="60.96" size="1.778" layer="96"/>
+<instance part="P+12" gate="VCC" x="73.66" y="60.96" smashed="yes" rot="R180">
+<attribute name="VALUE" x="76.2" y="63.5" size="1.778" layer="96" rot="R270"/>
 </instance>
 </instances>
 <busses>
@@ -17170,21 +17170,21 @@ Board</text>
 <junction x="144.78" y="76.2"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="VCC" class="0">
+<segment>
+<pinref part="D2" gate="1" pin="C"/>
+<wire x1="213.36" y1="66.04" x2="213.36" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="P+10" gate="VCC" pin="VCC"/>
+</segment>
 <segment>
 <pinref part="D1" gate="1" pin="C"/>
-<pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="144.78" y1="63.5" x2="144.78" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="P+11" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
 <pinref part="D3" gate="1" pin="C"/>
-<pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="73.66" y1="63.5" x2="73.66" y2="68.58" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="D2" gate="1" pin="C"/>
-<pinref part="GND9" gate="1" pin="GND"/>
-<wire x1="213.36" y1="66.04" x2="213.36" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="P+12" gate="VCC" pin="VCC"/>
 </segment>
 </net>
 </nets>
