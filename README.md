@@ -33,7 +33,7 @@ Most CAD files found here are [EAGLE](http://www.cadsoftusa.com/) files. However
     # Go into our new directory
     cd robocup-pcb
 
-    # Download additional 3rd party libraries
+    # Download additional mtrain pcbs
     git submodule update --init
 	```
 2. Add the new directory locations to EAGLE:
