@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.6.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -34125,7 +34125,7 @@ In this library you will find inductors. If you are looking for a common package
 <attribute name="MATERIAL" value="FR-4"/>
 <attribute name="NCHECKED" value="Ryo Osawa"/>
 <attribute name="NDRAWN" value="Will Stuckey"/>
-<attribute name="REV" value="3.2"/>
+<attribute name="REV" value="3.3"/>
 <attribute name="SCALE" value="1:1"/>
 <attribute name="TITLE" value="SSL Kicker"/>
 </attributes>
@@ -34182,26 +34182,26 @@ In this library you will find inductors. If you are looking for a common package
 <part name="U4" library="RoboJackets-PowerICs" deviceset="IX4427" device="N"/>
 <part name="J4" library="RoboJackets-Connectors" deviceset="HFW8" device="R-1ST"/>
 <part name="FRAME2" library="ro-frames" deviceset="RO_FRAME_A_L_20161226" device="">
-<attribute name="REV" value="3.2"/>
+<attribute name="REV" value="3.3"/>
 </part>
 <part name="FRAME7" library="ro-frames" deviceset="RO_FRAME_A_L_20161226" device="">
-<attribute name="REV" value="3.2"/>
+<attribute name="REV" value="3.3"/>
 </part>
 <part name="FRAME6" library="ro-frames" deviceset="RO_FRAME_A_L_20161226" device="">
-<attribute name="REV" value="3.2"/>
+<attribute name="REV" value="3.3"/>
 </part>
 <part name="FRAME5" library="ro-frames" deviceset="RO_FRAME_A_L_20161226" device="">
-<attribute name="REV" value="3.2"/>
+<attribute name="REV" value="3.3"/>
 </part>
 <part name="FRAME1" library="ro-frames" deviceset="RO_FRAME_A_L_20161226" device="">
-<attribute name="REV" value="3.2"/>
+<attribute name="REV" value="3.3"/>
 </part>
 <part name="SUPPLY7" library="supply2" deviceset="+5V" device=""/>
 <part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
 <part name="D7" library="RoboJackets-Diodes" deviceset="DIODE-" device="DO214AA" value="3SMBJ5929B-TP"/>
 <part name="Q5" library="RoboJackets-Discrete" deviceset="BSS127" device=""/>
 <part name="FRAME8" library="ro-frames" deviceset="RO_FRAME_A_L_20161226" device="">
-<attribute name="REV" value="3.2"/>
+<attribute name="REV" value="3.3"/>
 </part>
 <part name="R48" library="rcl" deviceset="R-US_" device="R0603" value="51"/>
 <part name="R49" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
