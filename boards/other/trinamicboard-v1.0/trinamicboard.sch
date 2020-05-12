@@ -26463,6 +26463,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 1 connected to the TMC4671
 1 connected to the TMC6200
 1 connected to the ADC</text>
+<wire x1="78.74" y1="99.06" x2="139.7" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="139.7" y1="99.06" x2="139.7" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="139.7" y1="45.72" x2="78.74" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="78.74" y1="45.72" x2="78.74" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
+<text x="81.28" y="93.98" size="1.778" layer="97">Current ADC</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -26650,6 +26655,16 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <sheet>
 <description>Main Modules</description>
 <plain>
+<wire x1="7.62" y1="208.28" x2="7.62" y2="106.68" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="7.62" y1="106.68" x2="167.64" y2="106.68" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="167.64" y1="106.68" x2="167.64" y2="208.28" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="167.64" y1="208.28" x2="7.62" y2="208.28" width="0.1524" layer="97" style="shortdash"/>
+<text x="12.7" y="200.66" size="1.778" layer="97" font="vector">TMC4671</text>
+<wire x1="7.62" y1="104.14" x2="7.62" y2="5.08" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="7.62" y1="5.08" x2="167.64" y2="5.08" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="167.64" y1="5.08" x2="167.64" y2="104.14" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="167.64" y1="104.14" x2="7.62" y2="104.14" width="0.1524" layer="97" style="shortdash"/>
+<text x="12.7" y="96.52" size="1.778" layer="97" font="vector">TMC6200</text>
 </plain>
 <instances>
 <instance part="FRAME4" gate="G$1" x="0" y="0" smashed="yes"/>
