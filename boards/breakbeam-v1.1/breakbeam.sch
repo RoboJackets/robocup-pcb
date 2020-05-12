@@ -5345,7 +5345,7 @@ Source: http://www.molex.com/product/micro/87438.html</description>
 <attribute name="NCHECKED" value=""/>
 <attribute name="NDRAWN" value="MM"/>
 <attribute name="REV" value="1.0"/>
-<attribute name="REVISION" value="1.1"/>
+<attribute name="REVISION" value="v1.1"/>
 <attribute name="SCALE" value="1:1"/>
 <attribute name="TEAM" value="RoboCup"/>
 <attribute name="TITLE" value="SSL Breakbeam"/>
@@ -5358,8 +5358,8 @@ Source: http://www.molex.com/product/micro/87438.html</description>
 </classes>
 <parts>
 <part name="FRAME1" library="RoboJackets-Frames" deviceset="FRAME_B_L" device="">
-<attribute name="REVISION" value=""/>
-<attribute name="SCH_DESC" value="Breakbeam Circuitry"/>
+<attribute name="REVISION" value="v1.1"/>
+<attribute name="SCH_DESC" value="Breakbeam Circuits"/>
 <attribute name="TEAM" value="RoboCup SSL"/>
 </part>
 <part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1" value="PT204-6B/ IR204"/>
