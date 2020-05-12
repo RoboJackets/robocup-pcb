@@ -26388,18 +26388,13 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="SUPPLY45" library="supply2" deviceset="+5V" device=""/>
 <part name="FRAME6" library="RoboJackets-Frames" deviceset="FRAME_A_L" device="">
 <attribute name="REVISION" value="1.0"/>
-<attribute name="SCH_DESC" value="Motor Connections"/>
+<attribute name="SCH_DESC" value="External Connections"/>
 </part>
 <part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="68k 1%"/>
 <part name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10k 1%"/>
-<part name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10k 1%"/>
-<part name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10k 1%"/>
 <part name="C1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 50V"/>
-<part name="C2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="RoboJackets-Supplies" deviceset="+18.5V" device=""/>
-<part name="SUPPLY2" library="supply2" deviceset="+5V" device=""/>
 <part name="D3" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-GREEN" value="GREEN"/>
 <part name="GND83" library="supply1" deviceset="GND" device=""/>
 <part name="R32" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="1k"/>
@@ -26413,9 +26408,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="C27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22uF 16V"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="supply2" deviceset="+5V" device=""/>
-<part name="R5" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="4.7k"/>
-<part name="R6" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="4.7k"/>
-<part name="SUPPLY5" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="KIT1" library="RoboJackets-Boards" deviceset="MTRAIN" device=""/>
 <part name="R26" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="30.1k 1%"/>
 <part name="R25" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="160k 1%"/>
@@ -26462,15 +26454,15 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="269.24" y1="104.14" x2="269.24" y2="205.74" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="269.24" y1="205.74" x2="10.16" y2="205.74" width="0.1524" layer="97" style="shortdash"/>
 <text x="15.24" y="198.12" size="1.778" layer="97" font="vector">MTrain</text>
-<wire x1="10.16" y1="99.06" x2="104.14" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="104.14" y1="99.06" x2="104.14" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="104.14" y1="45.72" x2="10.16" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="10.16" y1="99.06" x2="71.12" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="71.12" y1="99.06" x2="71.12" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="71.12" y1="45.72" x2="10.16" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="10.16" y1="45.72" x2="10.16" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
 <text x="12.7" y="93.98" size="1.778" layer="97">Voltage Sense</text>
 <text x="22.86" y="142.24" size="1.778" layer="97">Three SPI buses:
-1 connected to the FPGA
-1 connected to the RADIO
-1 connected to the other devices</text>
+1 connected to the TMC4671
+1 connected to the TMC6200
+1 connected to the ADC</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -26488,17 +26480,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="SUPPLY3" gate="+5V" x="86.36" y="175.26" smashed="yes">
 <attribute name="VALUE" x="84.455" y="178.435" size="1.778" layer="96"/>
 </instance>
-<instance part="R5" gate="G$1" x="218.44" y="142.24" smashed="yes" rot="R90">
-<attribute name="NAME" x="216.9414" y="138.43" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="221.742" y="138.43" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="R6" gate="G$1" x="228.6" y="142.24" smashed="yes" rot="R90">
-<attribute name="NAME" x="227.1014" y="138.43" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="231.902" y="138.43" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="SUPPLY5" gate="P" x="223.52" y="157.48" smashed="yes">
-<attribute name="VALUE" x="221.615" y="160.655" size="1.778" layer="96"/>
-</instance>
 <instance part="KIT1" gate="G$1" x="139.7" y="147.32" smashed="yes">
 <attribute name="NAME" x="93.98" y="173.355" size="1.778" layer="95"/>
 </instance>
@@ -26510,52 +26491,20 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <attribute name="NAME" x="29.4386" y="69.85" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="24.638" y="69.85" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="R3" gate="G$1" x="71.12" y="76.2" smashed="yes" rot="R270">
-<attribute name="NAME" x="72.6186" y="80.01" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="67.818" y="80.01" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="R4" gate="G$1" x="71.12" y="66.04" smashed="yes" rot="R270">
-<attribute name="NAME" x="72.6186" y="69.85" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="67.818" y="69.85" size="1.778" layer="96" rot="R270"/>
-</instance>
 <instance part="C1" gate="G$1" x="38.1" y="66.04" smashed="yes">
 <attribute name="NAME" x="39.116" y="66.675" size="1.778" layer="95"/>
 <attribute name="VALUE" x="39.116" y="61.849" size="1.778" layer="96"/>
 </instance>
-<instance part="C2" gate="G$1" x="81.28" y="66.04" smashed="yes">
-<attribute name="NAME" x="82.296" y="66.675" size="1.778" layer="95"/>
-<attribute name="VALUE" x="82.296" y="61.849" size="1.778" layer="96"/>
-</instance>
 <instance part="GND1" gate="1" x="27.94" y="55.88" smashed="yes">
 <attribute name="VALUE" x="25.4" y="53.34" size="1.778" layer="96"/>
 </instance>
-<instance part="GND3" gate="1" x="71.12" y="55.88" smashed="yes">
-<attribute name="VALUE" x="68.58" y="53.34" size="1.778" layer="96"/>
-</instance>
 <instance part="SUPPLY1" gate="G$1" x="27.94" y="83.82" smashed="yes">
 <attribute name="VALUE" x="26.035" y="86.995" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY2" gate="+5V" x="71.12" y="83.82" smashed="yes">
-<attribute name="VALUE" x="69.215" y="86.995" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="FPGA-PROG" class="0">
-<segment>
-<pinref part="KIT1" gate="G$1" pin="P13"/>
-<wire x1="91.44" y1="139.7" x2="86.36" y2="139.7" width="0.1524" layer="91"/>
-<label x="86.36" y="139.7" size="1.27" layer="95" rot="MR0" xref="yes"/>
-</segment>
-</net>
-<net name="!CS!-FPGA" class="0">
-<segment>
-<pinref part="KIT1" gate="G$1" pin="P31"/>
-<wire x1="187.96" y1="147.32" x2="193.04" y2="147.32" width="0.1524" layer="91"/>
-<label x="193.04" y="147.32" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="GND" class="0">
 <segment>
 <wire x1="91.44" y1="170.18" x2="66.04" y2="170.18" width="0.1524" layer="91"/>
@@ -26570,14 +26519,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="27.94" y1="58.42" x2="27.94" y2="60.96" width="0.1524" layer="91"/>
 <junction x="27.94" y="60.96"/>
 </segment>
-<segment>
-<pinref part="C2" gate="G$1" pin="2"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="81.28" y1="60.96" x2="71.12" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="71.12" y1="58.42" x2="71.12" y2="60.96" width="0.1524" layer="91"/>
-<junction x="71.12" y="60.96"/>
-</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
@@ -26586,30 +26527,8 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="SUPPLY3" gate="+5V" pin="+5V"/>
 <pinref part="KIT1" gate="G$1" pin="VIN"/>
 </segment>
-<segment>
-<pinref part="SUPPLY2" gate="+5V" pin="+5V"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="+3.3V" class="0">
-<segment>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="218.44" y1="147.32" x2="218.44" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="149.86" x2="223.52" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="223.52" y1="149.86" x2="228.6" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="149.86" x2="228.6" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="149.86" x2="223.52" y2="154.94" width="0.1524" layer="91"/>
-<junction x="223.52" y="149.86"/>
-<pinref part="SUPPLY5" gate="P" pin="+3.3V"/>
-</segment>
 </net>
 <net name="SENSE-BATT" class="0">
-<segment>
-<wire x1="187.96" y1="152.4" x2="193.04" y2="152.4" width="0.1524" layer="91"/>
-<label x="193.04" y="152.4" size="1.27" layer="95" xref="yes"/>
-<pinref part="KIT1" gate="G$1" pin="P33"/>
-</segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="R2" gate="G$1" pin="1"/>
@@ -26622,225 +26541,108 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <label x="43.18" y="71.12" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="SENSE-VIN" class="0">
-<segment>
-<wire x1="187.96" y1="149.86" x2="193.04" y2="149.86" width="0.1524" layer="91"/>
-<label x="193.04" y="149.86" size="1.27" layer="95" xref="yes"/>
-<pinref part="KIT1" gate="G$1" pin="P32"/>
-</segment>
-<segment>
-<pinref part="R3" gate="G$1" pin="2"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="71.12" y1="71.12" x2="81.28" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="71.12" x2="81.28" y2="68.58" width="0.1524" layer="91"/>
-<junction x="71.12" y="71.12"/>
-<wire x1="81.28" y1="71.12" x2="86.36" y2="71.12" width="0.1524" layer="91"/>
-<junction x="81.28" y="71.12"/>
-<label x="86.36" y="71.12" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="FPGA-DONE" class="0">
-<segment>
-<wire x1="91.44" y1="134.62" x2="86.36" y2="134.62" width="0.1524" layer="91"/>
-<label x="86.36" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="KIT1" gate="G$1" pin="P15"/>
-</segment>
-</net>
-<net name="!RST!-RADIO" class="0">
-<segment>
-<wire x1="91.44" y1="124.46" x2="86.36" y2="124.46" width="0.1524" layer="91"/>
-<label x="86.36" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="KIT1" gate="G$1" pin="P19"/>
-</segment>
-</net>
-<net name="SDA" class="0">
-<segment>
-<wire x1="187.96" y1="134.62" x2="218.44" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="218.44" y1="134.62" x2="218.44" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="134.62" x2="236.22" y2="134.62" width="0.1524" layer="91"/>
-<junction x="218.44" y="134.62"/>
-<label x="236.22" y="134.62" size="1.27" layer="95" xref="yes"/>
-<pinref part="KIT1" gate="G$1" pin="P26"/>
-</segment>
-</net>
-<net name="SCL" class="0">
-<segment>
-<wire x1="187.96" y1="132.08" x2="228.6" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="228.6" y1="132.08" x2="236.22" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="137.16" x2="228.6" y2="132.08" width="0.1524" layer="91"/>
-<junction x="228.6" y="132.08"/>
-<label x="236.22" y="132.08" size="1.27" layer="95" xref="yes"/>
-<pinref part="KIT1" gate="G$1" pin="P25"/>
-</segment>
-</net>
-<net name="MOSI-RADIO" class="0">
-<segment>
-<wire x1="187.96" y1="137.16" x2="193.04" y2="137.16" width="0.1524" layer="91"/>
-<label x="193.04" y="137.16" size="1.27" layer="95" xref="yes"/>
-<pinref part="KIT1" gate="G$1" pin="P27"/>
-</segment>
-</net>
-<net name="MISO-RADIO" class="0">
-<segment>
-<wire x1="187.96" y1="139.7" x2="193.04" y2="139.7" width="0.1524" layer="91"/>
-<label x="193.04" y="139.7" size="1.27" layer="95" xref="yes"/>
-<pinref part="KIT1" gate="G$1" pin="P28"/>
-</segment>
-</net>
-<net name="SCK-RADIO" class="0">
-<segment>
-<wire x1="187.96" y1="142.24" x2="193.04" y2="142.24" width="0.1524" layer="91"/>
-<label x="193.04" y="142.24" size="1.27" layer="95" xref="yes"/>
-<pinref part="KIT1" gate="G$1" pin="P29"/>
-</segment>
-</net>
-<net name="INT-ICM" class="0">
-<segment>
-<wire x1="91.44" y1="132.08" x2="86.36" y2="132.08" width="0.1524" layer="91"/>
-<label x="86.36" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="KIT1" gate="G$1" pin="P16"/>
-</segment>
-</net>
-<net name="!CS!-KICK" class="0">
-<segment>
-<pinref part="KIT1" gate="G$1" pin="P8"/>
-<wire x1="91.44" y1="152.4" x2="86.36" y2="152.4" width="0.1524" layer="91"/>
-<label x="86.36" y="152.4" size="1.27" layer="95" rot="MR0" xref="yes"/>
-</segment>
-</net>
-<net name="!RST!-KICK" class="0">
-<segment>
-<pinref part="KIT1" gate="G$1" pin="P7"/>
-<wire x1="91.44" y1="154.94" x2="86.36" y2="154.94" width="0.1524" layer="91"/>
-<label x="86.36" y="154.94" size="1.27" layer="95" rot="MR0" xref="yes"/>
-</segment>
-</net>
-<net name="FPGA-INIT" class="0">
-<segment>
-<wire x1="91.44" y1="137.16" x2="86.36" y2="137.16" width="0.1524" layer="91"/>
-<label x="86.36" y="137.16" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="KIT1" gate="G$1" pin="P14"/>
-</segment>
-</net>
-<net name="INT-IO" class="0">
-<segment>
-<wire x1="91.44" y1="121.92" x2="86.36" y2="121.92" width="0.1524" layer="91"/>
-<label x="86.36" y="121.92" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="KIT1" gate="G$1" pin="P20"/>
-</segment>
-</net>
-<net name="SCK" class="0">
-<segment>
-<pinref part="KIT1" gate="G$1" pin="P6"/>
-<wire x1="91.44" y1="157.48" x2="86.36" y2="157.48" width="0.1524" layer="91"/>
-<label x="86.36" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="MISO" class="0">
-<segment>
-<pinref part="KIT1" gate="G$1" pin="P5"/>
-<wire x1="91.44" y1="160.02" x2="86.36" y2="160.02" width="0.1524" layer="91"/>
-<label x="86.36" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="MOSI" class="0">
-<segment>
-<pinref part="KIT1" gate="G$1" pin="P4"/>
-<wire x1="91.44" y1="162.56" x2="86.36" y2="162.56" width="0.1524" layer="91"/>
-<label x="86.36" y="162.56" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="!CS!-RAD0" class="0">
-<segment>
-<pinref part="KIT1" gate="G$1" pin="P17"/>
-<wire x1="91.44" y1="129.54" x2="86.36" y2="129.54" width="0.1524" layer="91"/>
-<label x="86.36" y="129.54" size="1.27" layer="95" rot="MR0" xref="yes"/>
-</segment>
-</net>
-<net name="INT-RAD0" class="0">
-<segment>
-<pinref part="KIT1" gate="G$1" pin="P30"/>
-<wire x1="187.96" y1="144.78" x2="193.04" y2="144.78" width="0.1524" layer="91"/>
-<label x="193.04" y="144.78" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="+18.5V" class="0">
 <segment>
 <pinref part="SUPPLY1" gate="G$1" pin="+18.5V"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="MOSI-FPGA" class="0">
+<net name="MOSI-6200" class="0">
 <segment>
-<pinref part="KIT1" gate="G$1" pin="P36"/>
-<wire x1="187.96" y1="160.02" x2="193.04" y2="160.02" width="0.1524" layer="91"/>
-<label x="193.04" y="160.02" size="1.27" layer="95" xref="yes"/>
+<wire x1="91.44" y1="162.56" x2="86.36" y2="162.56" width="0.1524" layer="91"/>
+<label x="86.36" y="162.56" size="1.27" layer="95" font="vector" rot="MR0" xref="yes"/>
+<pinref part="KIT1" gate="G$1" pin="P4"/>
 </segment>
 </net>
-<net name="MISO-FPGA" class="0">
+<net name="MISO-6200" class="0">
 <segment>
-<pinref part="KIT1" gate="G$1" pin="P35"/>
-<wire x1="187.96" y1="157.48" x2="193.04" y2="157.48" width="0.1524" layer="91"/>
-<label x="193.04" y="157.48" size="1.27" layer="95" xref="yes"/>
+<wire x1="91.44" y1="160.02" x2="86.36" y2="160.02" width="0.1524" layer="91"/>
+<label x="86.36" y="160.02" size="1.27" layer="95" font="vector" rot="MR0" xref="yes"/>
+<pinref part="KIT1" gate="G$1" pin="P5"/>
 </segment>
 </net>
-<net name="SCK-FPGA" class="0">
+<net name="SCK-6200" class="0">
 <segment>
-<pinref part="KIT1" gate="G$1" pin="P34"/>
+<wire x1="91.44" y1="157.48" x2="86.36" y2="157.48" width="0.1524" layer="91"/>
+<label x="86.36" y="157.48" size="1.27" layer="95" font="vector" rot="MR0" xref="yes"/>
+<pinref part="KIT1" gate="G$1" pin="P6"/>
+</segment>
+</net>
+<net name="!CS!-6200" class="0">
+<segment>
+<wire x1="91.44" y1="154.94" x2="86.36" y2="154.94" width="0.1524" layer="91"/>
+<label x="86.36" y="154.94" size="1.27" layer="95" font="vector" rot="MR0" xref="yes"/>
+<pinref part="KIT1" gate="G$1" pin="P7"/>
+</segment>
+</net>
+<net name="MOSI-4671" class="0">
+<segment>
+<wire x1="187.96" y1="137.16" x2="193.04" y2="137.16" width="0.1524" layer="91"/>
+<label x="193.04" y="137.16" size="1.27" layer="95" font="vector" rot="MR180" xref="yes"/>
+<pinref part="KIT1" gate="G$1" pin="P27"/>
+</segment>
+</net>
+<net name="MISO-4671" class="0">
+<segment>
+<wire x1="187.96" y1="139.7" x2="193.04" y2="139.7" width="0.1524" layer="91"/>
+<label x="193.04" y="139.7" size="1.27" layer="95" font="vector" rot="MR180" xref="yes"/>
+<pinref part="KIT1" gate="G$1" pin="P28"/>
+</segment>
+</net>
+<net name="SCK-4671" class="0">
+<segment>
+<wire x1="187.96" y1="142.24" x2="193.04" y2="142.24" width="0.1524" layer="91"/>
+<label x="193.04" y="142.24" size="1.27" layer="95" font="vector" rot="MR180" xref="yes"/>
+<pinref part="KIT1" gate="G$1" pin="P29"/>
+</segment>
+</net>
+<net name="!CS!-4671" class="0">
+<segment>
+<wire x1="187.96" y1="144.78" x2="193.04" y2="144.78" width="0.1524" layer="91"/>
+<label x="193.04" y="144.78" size="1.27" layer="95" font="vector" rot="MR180" xref="yes"/>
+<pinref part="KIT1" gate="G$1" pin="P30"/>
+</segment>
+</net>
+<net name="!CS!-ADC" class="0">
+<segment>
+<wire x1="187.96" y1="147.32" x2="193.04" y2="147.32" width="0.1524" layer="91"/>
+<label x="193.04" y="147.32" size="1.27" layer="95" font="vector" rot="MR180" xref="yes"/>
+<pinref part="KIT1" gate="G$1" pin="P31"/>
+</segment>
+</net>
+<net name="SCK-ADC" class="0">
+<segment>
 <wire x1="187.96" y1="154.94" x2="193.04" y2="154.94" width="0.1524" layer="91"/>
-<label x="193.04" y="154.94" size="1.27" layer="95" xref="yes"/>
+<label x="193.04" y="154.94" size="1.27" layer="95" font="vector" rot="MR180" xref="yes"/>
+<pinref part="KIT1" gate="G$1" pin="P34"/>
 </segment>
 </net>
-<net name="!RST!-IR" class="0">
+<net name="MISO-ADC" class="0">
 <segment>
-<pinref part="KIT1" gate="G$1" pin="P9"/>
-<wire x1="91.44" y1="149.86" x2="86.36" y2="149.86" width="0.1524" layer="91"/>
-<label x="86.36" y="149.86" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="187.96" y1="157.48" x2="193.04" y2="157.48" width="0.1524" layer="91"/>
+<label x="193.04" y="157.48" size="1.27" layer="95" font="vector" rot="MR180" xref="yes"/>
+<pinref part="KIT1" gate="G$1" pin="P35"/>
 </segment>
 </net>
-<net name="!CS!-IR" class="0">
+<net name="MOSI-ADC" class="0">
 <segment>
-<pinref part="KIT1" gate="G$1" pin="P10"/>
-<wire x1="91.44" y1="147.32" x2="86.36" y2="147.32" width="0.1524" layer="91"/>
-<label x="86.36" y="147.32" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="187.96" y1="160.02" x2="193.04" y2="160.02" width="0.1524" layer="91"/>
+<label x="193.04" y="160.02" size="1.27" layer="95" font="vector" rot="MR180" xref="yes"/>
+<pinref part="KIT1" gate="G$1" pin="P36"/>
 </segment>
 </net>
-<net name="!CS!-DOT" class="0">
+<net name="DRV_EN" class="0">
 <segment>
-<pinref part="KIT1" gate="G$1" pin="P11"/>
-<wire x1="91.44" y1="144.78" x2="86.36" y2="144.78" width="0.1524" layer="91"/>
-<label x="86.36" y="144.78" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="KIT1" gate="G$1" pin="P13"/>
+<wire x1="91.44" y1="139.7" x2="86.36" y2="139.7" width="0.1524" layer="91"/>
+<label x="86.36" y="139.7" size="1.27" layer="95" font="vector" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="!CS!-ICM" class="0">
+<net name="FAULT" class="0">
 <segment>
-<pinref part="KIT1" gate="G$1" pin="P18"/>
-<wire x1="91.44" y1="127" x2="86.36" y2="127" width="0.1524" layer="91"/>
-<label x="86.36" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="V_MTRAIN" class="0">
-<segment>
-<wire x1="187.96" y1="170.18" x2="193.04" y2="170.18" width="0.1524" layer="91"/>
-<pinref part="KIT1" gate="G$1" pin="VDD"/>
-<label x="193.04" y="170.18" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="!RST!-NETWORK" class="0">
-<segment>
-<pinref part="KIT1" gate="G$1" pin="!RST"/>
-<wire x1="187.96" y1="162.56" x2="193.04" y2="162.56" width="0.1524" layer="91"/>
-<label x="193.04" y="162.56" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="INT-I2C" class="0">
-<segment>
-<pinref part="KIT1" gate="G$1" pin="P3"/>
-<wire x1="91.44" y1="165.1" x2="86.36" y2="165.1" width="0.1524" layer="91"/>
-<label x="86.36" y="165.1" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="KIT1" gate="G$1" pin="P14"/>
+<wire x1="91.44" y1="137.16" x2="86.36" y2="137.16" width="0.1524" layer="91"/>
+<label x="86.36" y="137.16" size="1.27" layer="95" font="vector" rot="MR0" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -27535,8 +27337,13 @@ battery power</text>
 </nets>
 </sheet>
 <sheet>
-<description>Motor Connections</description>
+<description>External Connections</description>
 <plain>
+<wire x1="7.62" y1="208.28" x2="73.66" y2="208.28" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="73.66" y1="208.28" x2="73.66" y2="139.7" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="73.66" y1="139.7" x2="7.62" y2="139.7" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="7.62" y1="139.7" x2="7.62" y2="208.28" width="0.1524" layer="97" style="shortdash"/>
+<text x="10.16" y="203.2" size="1.778" layer="97">Motor Connection</text>
 </plain>
 <instances>
 <instance part="FRAME6" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -27548,19 +27355,19 @@ battery power</text>
 <attribute name="REVISION" x="245.11" y="6.35" size="2.54" layer="94"/>
 <attribute name="SCH_DESC" x="173.99" y="6.35" size="2.54" layer="94"/>
 </instance>
-<instance part="GND50" gate="1" x="124.46" y="25.4" smashed="yes">
-<attribute name="VALUE" x="121.92" y="22.86" size="1.778" layer="96"/>
+<instance part="GND50" gate="1" x="27.94" y="147.32" smashed="yes">
+<attribute name="VALUE" x="25.4" y="144.78" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY31" gate="+5V" x="127" y="73.66" smashed="yes">
-<attribute name="VALUE" x="125.095" y="76.835" size="1.778" layer="96"/>
+<instance part="SUPPLY31" gate="+5V" x="30.48" y="195.58" smashed="yes">
+<attribute name="VALUE" x="28.575" y="198.755" size="1.778" layer="96"/>
 </instance>
-<instance part="J7" gate="G$1" x="149.86" y="43.18" smashed="yes" rot="MR180">
-<attribute name="NAME" x="147.32" y="27.94" size="1.778" layer="95" rot="MR180" align="top-left"/>
-<attribute name="VALUE" x="147.32" y="55.88" size="1.778" layer="96" rot="MR180"/>
+<instance part="J7" gate="G$1" x="53.34" y="165.1" smashed="yes" rot="MR180">
+<attribute name="NAME" x="50.8" y="149.86" size="1.778" layer="95" rot="MR180" align="top-left"/>
+<attribute name="VALUE" x="50.8" y="177.8" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="J8" gate="G$1" x="149.86" y="63.5" smashed="yes" rot="R180">
-<attribute name="NAME" x="154.94" y="58.42" size="1.778" layer="95" font="vector" rot="R180" align="top-left"/>
-<attribute name="VALUE" x="154.94" y="76.2" size="1.778" layer="96" font="vector" rot="R180"/>
+<instance part="J8" gate="G$1" x="53.34" y="185.42" smashed="yes" rot="R180">
+<attribute name="NAME" x="58.42" y="180.34" size="1.778" layer="95" font="vector" rot="R180" align="top-left"/>
+<attribute name="VALUE" x="58.42" y="198.12" size="1.778" layer="96" font="vector" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -27568,12 +27375,12 @@ battery power</text>
 <nets>
 <net name="GND" class="0">
 <segment>
-<wire x1="142.24" y1="35.56" x2="124.46" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="68.58" x2="124.46" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="68.58" x2="124.46" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="157.48" x2="27.94" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="190.5" x2="27.94" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="190.5" x2="27.94" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="GND50" gate="1" pin="GND"/>
-<wire x1="124.46" y1="27.94" x2="124.46" y2="35.56" width="0.1524" layer="91"/>
-<junction x="124.46" y="35.56"/>
+<wire x1="27.94" y1="149.86" x2="27.94" y2="157.48" width="0.1524" layer="91"/>
+<junction x="27.94" y="157.48"/>
 <pinref part="J7" gate="G$1" pin="2"/>
 <pinref part="J8" gate="G$1" pin="3"/>
 </segment>
@@ -27581,67 +27388,67 @@ battery power</text>
 <net name="+5V" class="0">
 <segment>
 <pinref part="SUPPLY31" gate="+5V" pin="+5V"/>
-<wire x1="127" y1="71.12" x2="144.78" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="40.64" x2="127" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="127" y1="40.64" x2="127" y2="71.12" width="0.1524" layer="91"/>
-<junction x="127" y="71.12"/>
+<wire x1="30.48" y1="193.04" x2="48.26" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="162.56" x2="30.48" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="162.56" x2="30.48" y2="193.04" width="0.1524" layer="91"/>
+<junction x="30.48" y="193.04"/>
 <pinref part="J7" gate="G$1" pin="4"/>
 <pinref part="J8" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="PHASE-A" class="0">
 <segment>
-<wire x1="142.24" y1="48.26" x2="139.7" y2="48.26" width="0.1524" layer="91"/>
-<label x="139.7" y="48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="45.72" y1="170.18" x2="43.18" y2="170.18" width="0.1524" layer="91"/>
+<label x="43.18" y="170.18" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J7" gate="G$1" pin="7"/>
 </segment>
 </net>
 <net name="PHASE-B" class="0">
 <segment>
-<wire x1="142.24" y1="50.8" x2="139.7" y2="50.8" width="0.1524" layer="91"/>
-<label x="139.7" y="50.8" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="45.72" y1="172.72" x2="43.18" y2="172.72" width="0.1524" layer="91"/>
+<label x="43.18" y="172.72" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J7" gate="G$1" pin="8"/>
 </segment>
 </net>
 <net name="PHASE-C" class="0">
 <segment>
-<wire x1="142.24" y1="45.72" x2="139.7" y2="45.72" width="0.1524" layer="91"/>
-<label x="139.7" y="45.72" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="45.72" y1="167.64" x2="43.18" y2="167.64" width="0.1524" layer="91"/>
+<label x="43.18" y="167.64" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J7" gate="G$1" pin="6"/>
 </segment>
 </net>
 <net name="H1" class="0">
 <segment>
-<wire x1="142.24" y1="33.02" x2="139.7" y2="33.02" width="0.1524" layer="91"/>
-<label x="139.7" y="33.02" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="45.72" y1="154.94" x2="43.18" y2="154.94" width="0.1524" layer="91"/>
+<label x="43.18" y="154.94" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J7" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="H2" class="0">
 <segment>
-<wire x1="142.24" y1="38.1" x2="139.7" y2="38.1" width="0.1524" layer="91"/>
-<label x="139.7" y="38.1" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="45.72" y1="160.02" x2="43.18" y2="160.02" width="0.1524" layer="91"/>
+<label x="43.18" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J7" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="H3" class="0">
 <segment>
-<wire x1="142.24" y1="43.18" x2="139.7" y2="43.18" width="0.1524" layer="91"/>
-<label x="139.7" y="43.18" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="45.72" y1="165.1" x2="43.18" y2="165.1" width="0.1524" layer="91"/>
+<label x="43.18" y="165.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J7" gate="G$1" pin="5"/>
 </segment>
 </net>
 <net name="ENC-A" class="0">
 <segment>
-<wire x1="142.24" y1="66.04" x2="144.78" y2="66.04" width="0.1524" layer="91"/>
-<label x="142.24" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="45.72" y1="187.96" x2="48.26" y2="187.96" width="0.1524" layer="91"/>
+<label x="45.72" y="187.96" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J8" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="ENC-B" class="0">
 <segment>
-<wire x1="142.24" y1="63.5" x2="144.78" y2="63.5" width="0.1524" layer="91"/>
-<label x="142.24" y="63.5" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="45.72" y1="185.42" x2="48.26" y2="185.42" width="0.1524" layer="91"/>
+<label x="45.72" y="185.42" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J8" gate="G$1" pin="1"/>
 </segment>
 </net>
