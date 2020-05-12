@@ -424,15 +424,15 @@ In this library you will find uncommon capacitors. If you are looking for a comm
 </device>
 </devices>
 </deviceset>
-<deviceset name="ECA-1HHG221" prefix="C">
+<deviceset name="ECA-0JM221" prefix="C" uservalue="yes">
 <gates>
-<gate name="A" symbol="CAPH" x="0" y="0" swaplevel="1"/>
+<gate name="G$1" symbol="C_POL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="CAP_PAN_10X12.5">
+<device name="" package="ECA-0JM221-HGT_HORIZ">
 <connects>
-<connect gate="A" pin="11" pad="1"/>
-<connect gate="A" pin="22" pad="2"/>
+<connect gate="G$1" pin="+" pad="P$1"/>
+<connect gate="G$1" pin="-" pad="P$2"/>
 </connects>
 <technologies>
 <technology name="">
