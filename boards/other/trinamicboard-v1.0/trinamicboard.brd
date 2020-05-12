@@ -3698,6 +3698,26 @@ rfk_1850.pdf</description>
 <wire x1="6.985" y1="0" x2="5.715" y2="0" width="0.1524" layer="21"/>
 <circle x="8.89" y="2.54" radius="0.5" width="0" layer="25"/>
 </package>
+<package name="1X2">
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<pad name="1" x="-1.27" y="0" drill="1.016" diameter="2" shape="octagon" rot="R90"/>
+<pad name="2" x="1.27" y="0" drill="1.016" diameter="2" shape="octagon" rot="R90"/>
+<text x="-2.5" y="1.5" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
 </packages>
 </library>
 <library name="RoboJackets-Boards">
@@ -4399,6 +4419,35 @@ design rules under a new name.</description>
 <attribute name="NAME" x="-82.01" y="-50.82" size="1" layer="25"/>
 <attribute name="VALUE" x="-82.01" y="-53.32" size="1" layer="27" align="top-left"/>
 </element>
+<element name="C2" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.01uF" x="-80.01" y="-57.15" smashed="yes">
+<attribute name="NAME" x="-80.645" y="-56.515" size="1.27" layer="25"/>
+<attribute name="VALUE" x="-80.645" y="-59.055" size="1.27" layer="27"/>
+</element>
+<element name="C3" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="-80.01" y="-62.23" smashed="yes">
+<attribute name="NAME" x="-80.645" y="-61.595" size="1.27" layer="25"/>
+<attribute name="VALUE" x="-80.645" y="-64.135" size="1.27" layer="27"/>
+</element>
+<element name="C4" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="-80.01" y="-67.31" smashed="yes">
+<attribute name="NAME" x="-80.645" y="-66.675" size="1.27" layer="25"/>
+<attribute name="VALUE" x="-80.645" y="-69.215" size="1.27" layer="27"/>
+</element>
+<element name="C5" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="-80.01" y="-72.39" smashed="yes">
+<attribute name="NAME" x="-80.645" y="-71.755" size="1.27" layer="25"/>
+<attribute name="VALUE" x="-80.645" y="-74.295" size="1.27" layer="27"/>
+</element>
+<element name="J1" library="RoboJackets-Connectors" package="1X2" value="" x="-78.74" y="-78.74" smashed="yes">
+<attribute name="NAME" x="-81.24" y="-77.24" size="1.27" layer="25" ratio="10"/>
+</element>
+<element name="C6" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF" x="-80.01" y="-97.79" smashed="yes">
+<attribute name="NAME" x="-80.645" y="-97.155" size="1.27" layer="25"/>
+<attribute name="VALUE" x="-80.645" y="-99.695" size="1.27" layer="27"/>
+</element>
+<element name="J2" library="RoboJackets-Connectors" package="1X2" value="" x="-78.74" y="-104.14" smashed="yes">
+<attribute name="NAME" x="-81.24" y="-102.64" size="1.27" layer="25" ratio="10"/>
+</element>
+<element name="J3" library="RoboJackets-Connectors" package="1X2" value="" x="-78.74" y="-109.22" smashed="yes">
+<attribute name="NAME" x="-81.24" y="-107.72" size="1.27" layer="25" ratio="10"/>
+</element>
 </elements>
 <signals>
 <signal name="VBUS">
@@ -4462,9 +4511,19 @@ design rules under a new name.</description>
 <contactref element="U3" pad="4"/>
 <contactref element="U3" pad="6"/>
 <contactref element="U3" pad="2"/>
+<contactref element="C4" pad="2"/>
+<contactref element="C5" pad="2"/>
+<contactref element="C3" pad="2"/>
+<contactref element="C2" pad="2"/>
+<contactref element="C6" pad="2"/>
+<wire x1="-79.16" y1="-72.39" x2="-79.16" y2="-97.79" width="0" layer="19" extent="1-1"/>
+<wire x1="-79.16" y1="-67.31" x2="-79.16" y2="-72.39" width="0" layer="19" extent="1-1"/>
+<wire x1="-79.16" y1="-62.23" x2="-79.16" y2="-67.31" width="0" layer="19" extent="1-1"/>
+<wire x1="-79.16" y1="-57.15" x2="-79.16" y2="-62.23" width="0" layer="19" extent="1-1"/>
+<wire x1="-78.46" y1="-52.32" x2="-79.16" y2="-57.15" width="0" layer="19" extent="1-1"/>
+<wire x1="-81.56" y1="-52.82" x2="-78.46" y2="-52.32" width="0" layer="19" extent="1-1"/>
 <wire x1="-81.56" y1="-51.82" x2="-81.56" y2="-52.82" width="0" layer="19" extent="1-1"/>
 <wire x1="-81.56" y1="-49.01" x2="-81.56" y2="-51.82" width="0" layer="19" extent="1-1"/>
-<wire x1="-78.46" y1="-52.32" x2="-81.56" y2="-52.82" width="0" layer="19" extent="1-1"/>
 <wire x1="-81.56" y1="-34.54" x2="-81.56" y2="-49.01" width="0" layer="19" extent="1-1"/>
 <wire x1="-77.47" y1="-29.21" x2="-81.56" y2="-34.54" width="0" layer="19" extent="1-1"/>
 <wire x1="-77.47" y1="-26.67" x2="-77.47" y2="-29.21" width="0" layer="19" extent="1-1"/>
@@ -4536,6 +4595,16 @@ design rules under a new name.</description>
 <contactref element="U1" pad="2"/>
 <contactref element="U2" pad="8"/>
 <contactref element="U3" pad="8"/>
+<contactref element="C4" pad="1"/>
+<contactref element="C5" pad="1"/>
+<contactref element="C3" pad="1"/>
+<contactref element="C2" pad="1"/>
+<contactref element="C6" pad="1"/>
+<wire x1="-80.86" y1="-72.39" x2="-80.86" y2="-97.79" width="0" layer="19" extent="1-1"/>
+<wire x1="-80.86" y1="-67.31" x2="-80.86" y2="-72.39" width="0" layer="19" extent="1-1"/>
+<wire x1="-80.86" y1="-62.23" x2="-80.86" y2="-67.31" width="0" layer="19" extent="1-1"/>
+<wire x1="-80.86" y1="-57.15" x2="-80.86" y2="-62.23" width="0" layer="19" extent="1-1"/>
+<wire x1="-78.46" y1="-51.32" x2="-80.86" y2="-57.15" width="0" layer="19" extent="1-1"/>
 <wire x1="-78.46" y1="-47.51" x2="-78.46" y2="-51.32" width="0" layer="19" extent="1-1"/>
 <wire x1="-81.56" y1="-34.04" x2="-78.46" y2="-47.51" width="0" layer="19" extent="1-1"/>
 <wire x1="-80.86" y1="102.87" x2="-81.56" y2="-34.04" width="0" layer="19" extent="1-1"/>
@@ -4752,53 +4821,87 @@ design rules under a new name.</description>
 </signal>
 <signal name="MOSI-6200">
 <contactref element="KIT1" pad="P$4"/>
+<contactref element="JD" pad="8"/>
+<contactref element="J1" pad="2"/>
+<wire x1="-69.85" y1="-29.21" x2="-77.47" y2="-78.74" width="0" layer="19" extent="1-1"/>
+<wire x1="-38.1" y1="44.45" x2="-69.85" y2="-29.21" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MISO-6200">
 <contactref element="KIT1" pad="P$5"/>
+<contactref element="JD" pad="10"/>
+<contactref element="J2" pad="2"/>
+<wire x1="-74.93" y1="-29.21" x2="-77.47" y2="-104.14" width="0" layer="19" extent="1-1"/>
+<wire x1="-38.1" y1="41.91" x2="-74.93" y2="-29.21" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCK-6200">
 <contactref element="KIT1" pad="P$6"/>
+<contactref element="JD" pad="3"/>
+<contactref element="J3" pad="2"/>
+<wire x1="-72.39" y1="-26.67" x2="-77.47" y2="-109.22" width="0" layer="19" extent="1-1"/>
+<wire x1="-38.1" y1="39.37" x2="-72.39" y2="-26.67" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="!SS!-6200">
 <contactref element="KIT1" pad="P$7"/>
+<contactref element="JD" pad="1"/>
+<wire x1="-38.1" y1="36.83" x2="-67.31" y2="-26.67" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MOSI-4671">
 <contactref element="KIT1" pad="P$27"/>
+<contactref element="J1" pad="1"/>
+<wire x1="-15.24" y1="19.05" x2="-80.01" y2="-78.74" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MISO-4671">
 <contactref element="KIT1" pad="P$28"/>
+<contactref element="J2" pad="1"/>
+<wire x1="-15.24" y1="21.59" x2="-80.01" y2="-104.14" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCK-4671">
 <contactref element="KIT1" pad="P$29"/>
+<contactref element="J3" pad="1"/>
+<wire x1="-15.24" y1="24.13" x2="-80.01" y2="-109.22" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="!SS!-4671">
 <contactref element="KIT1" pad="P$30"/>
+<contactref element="JD" pad="7"/>
+<wire x1="-15.24" y1="26.67" x2="-67.31" y2="-29.21" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MOSI-ADC">
 <contactref element="KIT1" pad="P$36"/>
 <contactref element="U1" pad="8"/>
-<wire x1="-15.24" y1="41.91" x2="-78.46" y2="-34.54" width="0" layer="19" extent="1-1"/>
+<contactref element="JA" pad="10"/>
+<wire x1="-74.93" y1="-6.35" x2="-78.46" y2="-34.54" width="0" layer="19" extent="1-1"/>
+<wire x1="-15.24" y1="41.91" x2="-74.93" y2="-6.35" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MISO-ADC">
 <contactref element="KIT1" pad="P$35"/>
 <contactref element="U1" pad="9"/>
-<wire x1="-15.24" y1="39.37" x2="-78.46" y2="-34.04" width="0" layer="19" extent="1-1"/>
+<contactref element="JA" pad="9"/>
+<wire x1="-72.39" y1="-6.35" x2="-78.46" y2="-34.04" width="0" layer="19" extent="1-1"/>
+<wire x1="-15.24" y1="39.37" x2="-72.39" y2="-6.35" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCK-ADC">
 <contactref element="KIT1" pad="P$34"/>
 <contactref element="U1" pad="10"/>
-<wire x1="-15.24" y1="36.83" x2="-78.46" y2="-33.54" width="0" layer="19" extent="1-1"/>
+<contactref element="JA" pad="8"/>
+<wire x1="-69.85" y1="-6.35" x2="-78.46" y2="-33.54" width="0" layer="19" extent="1-1"/>
+<wire x1="-15.24" y1="36.83" x2="-69.85" y2="-6.35" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="!SS!-ADC">
 <contactref element="KIT1" pad="P$31"/>
 <contactref element="U1" pad="1"/>
-<wire x1="-15.24" y1="29.21" x2="-81.56" y2="-33.54" width="0" layer="19" extent="1-1"/>
+<contactref element="JD" pad="9"/>
+<wire x1="-72.39" y1="-29.21" x2="-81.56" y2="-33.54" width="0" layer="19" extent="1-1"/>
+<wire x1="-15.24" y1="29.21" x2="-72.39" y2="-29.21" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DRV_EN">
 <contactref element="KIT1" pad="P$13"/>
+<contactref element="JD" pad="2"/>
+<wire x1="-38.1" y1="21.59" x2="-69.85" y2="-26.67" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FAULT">
 <contactref element="KIT1" pad="P$14"/>
+<contactref element="JD" pad="4"/>
+<wire x1="-38.1" y1="19.05" x2="-74.93" y2="-26.67" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CURU">
 <contactref element="U1" pad="7"/>
@@ -4809,20 +4912,30 @@ design rules under a new name.</description>
 <signal name="CURW">
 <contactref element="U1" pad="5"/>
 </signal>
-<signal name="HALL_W">
+<signal name="HALL-W">
 <contactref element="U2" pad="2"/>
+<contactref element="JA" pad="7"/>
+<wire x1="-67.31" y1="-6.35" x2="-81.56" y2="-48.01" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="HALL_V">
+<signal name="HALL-V">
 <contactref element="U2" pad="5"/>
+<contactref element="JA" pad="4"/>
+<wire x1="-74.93" y1="-3.81" x2="-78.46" y2="-49.01" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="HALL_U">
+<signal name="HALL-U">
 <contactref element="U2" pad="7"/>
+<contactref element="JA" pad="3"/>
+<wire x1="-72.39" y1="-3.81" x2="-78.46" y2="-48.01" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ENC1-B">
 <contactref element="U3" pad="5"/>
+<contactref element="JA" pad="2"/>
+<wire x1="-69.85" y1="-3.81" x2="-78.46" y2="-52.82" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ENC1-A">
 <contactref element="U3" pad="7"/>
+<contactref element="JA" pad="1"/>
+<wire x1="-67.31" y1="-3.81" x2="-78.46" y2="-51.82" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
