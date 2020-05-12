@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="100" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="13" fill="1" visible="no" active="no"/>
@@ -28345,42 +28345,42 @@ Source: SN74LVC3G17.pdf</description>
 <segment>
 <pinref part="JB" gate="G$1" pin="1"/>
 <wire x1="83.82" y1="185.42" x2="88.9" y2="185.42" width="0.1524" layer="91"/>
-<label x="88.9" y="185.42" size="1.778" layer="95" xref="yes"/>
+<label x="88.9" y="185.42" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="PWM-UH" class="0">
 <segment>
 <pinref part="JB" gate="G$1" pin="3"/>
 <wire x1="83.82" y1="175.26" x2="88.9" y2="175.26" width="0.1524" layer="91"/>
-<label x="88.9" y="175.26" size="1.778" layer="95" xref="yes"/>
+<label x="88.9" y="175.26" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="PWM-VL" class="0">
 <segment>
 <pinref part="JB" gate="G$1" pin="8"/>
 <wire x1="83.82" y1="149.86" x2="88.9" y2="149.86" width="0.1524" layer="91"/>
-<label x="88.9" y="149.86" size="1.778" layer="95" xref="yes"/>
+<label x="88.9" y="149.86" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="PWM-WH" class="0">
 <segment>
 <pinref part="JC" gate="G$1" pin="8"/>
 <wire x1="137.16" y1="149.86" x2="142.24" y2="149.86" width="0.1524" layer="91"/>
-<label x="142.24" y="149.86" size="1.778" layer="95" xref="yes"/>
+<label x="142.24" y="149.86" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="PWM-WL" class="0">
 <segment>
 <pinref part="JC" gate="G$1" pin="3"/>
 <wire x1="137.16" y1="175.26" x2="142.24" y2="175.26" width="0.1524" layer="91"/>
-<label x="142.24" y="175.26" size="1.778" layer="95" xref="yes"/>
+<label x="142.24" y="175.26" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="PWM-VH" class="0">
 <segment>
 <pinref part="JC" gate="G$1" pin="1"/>
 <wire x1="137.16" y1="185.42" x2="142.24" y2="185.42" width="0.1524" layer="91"/>
-<label x="142.24" y="185.42" size="1.778" layer="95" xref="yes"/>
+<label x="142.24" y="185.42" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 </nets>
