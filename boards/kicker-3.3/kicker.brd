@@ -291,7 +291,7 @@
 <wire x1="46.25" y1="55.75" x2="52" y2="61.5" width="0.2" layer="21"/>
 <text x="50.25" y="58.75" size="1.27" layer="21" font="vector" ratio="15" rot="SR225">BALL</text>
 <text x="27.9" y="57.9" size="0.6096" layer="51">x</text>
-<text x="-42.2" y="41.1" size="3.81" layer="21" rot="SR270">Kicker v3.3</text>
+<text x="-42.2" y="41.1" size="3.81" layer="21" rot="SR270">Kicker</text>
 <text x="-59.9" y="-58.7" size="10" layer="21">-</text>
 <text x="55.3" y="-58.9" size="10" layer="21">-</text>
 <text x="58.6" y="42.2" size="0.6" layer="21" ratio="16" rot="SR180">MOSI</text>
@@ -338,6 +338,7 @@ D. Yang: dyang316@gatech.edu</text>
 <text x="50.1" y="65.7" size="1.5" layer="21" font="vector" rot="SR135">RX</text>
 <text x="-31.1" y="76.3" size="1.778" layer="21" rot="SR180">PWR:
 16-22V</text>
+<text x="-42.2" y="18.9" size="3.81" layer="21" rot="SR270">&gt;VERSION</text>
 </plain>
 <libraries>
 <library name="RoboJackets-ICs">
@@ -14782,6 +14783,7 @@ In this library you will find inductors. If you are looking for a common package
 </library>
 </libraries>
 <attributes>
+<attribute name="VERSION" value="v3.3"/>
 </attributes>
 <variantdefs>
 </variantdefs>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.6.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -5345,7 +5345,9 @@ Source: http://www.molex.com/product/micro/87438.html</description>
 <attribute name="NCHECKED" value=""/>
 <attribute name="NDRAWN" value="MM"/>
 <attribute name="REV" value="1.0"/>
+<attribute name="REVISION" value="v1.1"/>
 <attribute name="SCALE" value="1:1"/>
+<attribute name="TEAM" value="RoboCup"/>
 <attribute name="TITLE" value="SSL Breakbeam"/>
 </attributes>
 <variantdefs>
@@ -5355,7 +5357,11 @@ Source: http://www.molex.com/product/micro/87438.html</description>
 </class>
 </classes>
 <parts>
-<part name="FRAME1" library="RoboJackets-Frames" deviceset="FRAME_B_L" device=""/>
+<part name="FRAME1" library="RoboJackets-Frames" deviceset="FRAME_B_L" device="">
+<attribute name="REVISION" value="v1.1"/>
+<attribute name="SCH_DESC" value="Breakbeam Circuits"/>
+<attribute name="TEAM" value="RoboCup SSL"/>
+</part>
 <part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1" value="PT204-6B/ IR204"/>
 <part name="X1" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="87438-02" device=""/>
 <part name="X2" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="87438-02" device=""/>
@@ -5371,6 +5377,8 @@ Source: http://www.molex.com/product/micro/87438.html</description>
 <attribute name="SHEET" x="411.48" y="34.29" size="2.54" layer="94" font="vector"/>
 <attribute name="DRAWING_NAME" x="340.36" y="52.07" size="2.54" layer="94" font="vector"/>
 <attribute name="SCH_DESC" x="326.39" y="39.37" size="2.54" layer="94"/>
+<attribute name="TEAM" x="326.39" y="67.31" size="3.048" layer="94" ratio="10" align="top-left"/>
+<attribute name="REVISION" x="397.51" y="39.37" size="2.54" layer="94"/>
 </instance>
 <instance part="LED1" gate="G$1" x="213.36" y="200.66" smashed="yes">
 <attribute name="NAME" x="216.916" y="196.088" size="1.778" layer="95" rot="R90"/>
