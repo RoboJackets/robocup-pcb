@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -29148,6 +29148,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </parts>
 <sheets>
 <sheet>
+<description>Wheel Motor Driver</description>
 <plain>
 <text x="226.06" y="190.5" size="1.778" layer="97">Bootstrapping from motor driver
 chip allows for two n-fets</text>
@@ -29860,6 +29861,7 @@ ripple current from motors</text>
 </parts>
 <sheets>
 <sheet>
+<description>Dribbler Motor Driver</description>
 <plain>
 </plain>
 <instances>
@@ -30458,7 +30460,7 @@ ripple current from motors</text>
 <attribute name="SCH_DESC" value="Microcontroller"/>
 </part>
 <part name="FRAME4" library="RoboJackets-Frames" deviceset="FRAME_A_L" device="">
-<attribute name="REVISION" value="v3.3"/>
+<attribute name="REVISION" value="v3.4"/>
 <attribute name="SCH_DESC" value="User Interactions"/>
 </part>
 <part name="IC1" library="RoboJackets-ICs" deviceset="MCP23017" device="-E/SS"/>
