@@ -25772,6 +25772,91 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pad name="VDD" x="11.43" y="24.13" drill="1.02" rot="R180"/>
 <text x="-12.7" y="27.94" size="1.27" layer="25">&gt;NAME</text>
 </package>
+<package name="TMC4671-BOB">
+<description>TMC4671 BreakOut Board (BOB)</description>
+<wire x1="-19.05" y1="19.05" x2="19.05" y2="19.05" width="0.254" layer="21"/>
+<wire x1="19.05" y1="19.05" x2="19.05" y2="-22.86" width="0.254" layer="21"/>
+<wire x1="19.05" y1="-22.86" x2="-19.05" y2="-22.86" width="0.254" layer="21"/>
+<wire x1="-19.05" y1="-22.86" x2="-19.05" y2="19.05" width="0.254" layer="21"/>
+<pad name="1" x="-17.78" y="16.51" drill="1.016"/>
+<pad name="2" x="-17.78" y="13.97" drill="1.016"/>
+<pad name="3" x="-17.78" y="11.43" drill="1.016"/>
+<pad name="4" x="-17.78" y="8.89" drill="1.016"/>
+<pad name="20" x="17.78" y="8.89" drill="1.016"/>
+<pad name="19" x="17.78" y="11.43" drill="1.016"/>
+<pad name="18" x="17.78" y="13.97" drill="1.016"/>
+<pad name="17" x="17.78" y="16.51" drill="1.016"/>
+<text x="-19.05" y="20.32" size="1" layer="25">&gt;NAME</text>
+<circle x="-17.78" y="18.288" radius="0.254" width="0.127" layer="21"/>
+<text x="-19.05" y="-24.13" size="1" layer="27" align="top-left">&gt;VALUE</text>
+<pad name="5" x="-17.78" y="6.35" drill="1.016"/>
+<pad name="6" x="-17.78" y="3.81" drill="1.016"/>
+<pad name="7" x="-17.78" y="1.27" drill="1.016"/>
+<pad name="8" x="-17.78" y="-1.27" drill="1.016"/>
+<pad name="9" x="-17.78" y="-3.81" drill="1.016"/>
+<pad name="10" x="-17.78" y="-6.35" drill="1.016"/>
+<pad name="11" x="-17.78" y="-8.89" drill="1.016"/>
+<pad name="12" x="-17.78" y="-11.43" drill="1.016"/>
+<pad name="13" x="-17.78" y="-13.97" drill="1.016"/>
+<pad name="14" x="-17.78" y="-16.51" drill="1.016"/>
+<pad name="15" x="-17.78" y="-19.05" drill="1.016"/>
+<pad name="16" x="-17.78" y="-21.59" drill="1.016"/>
+<pad name="21" x="17.78" y="6.35" drill="1.016"/>
+<pad name="22" x="17.78" y="3.81" drill="1.016"/>
+<pad name="23" x="17.78" y="1.27" drill="1.016"/>
+<pad name="24" x="17.78" y="-1.27" drill="1.016"/>
+<pad name="25" x="17.78" y="-3.81" drill="1.016"/>
+<pad name="26" x="17.78" y="-6.35" drill="1.016"/>
+<pad name="27" x="17.78" y="-8.89" drill="1.016"/>
+<pad name="28" x="17.78" y="-11.43" drill="1.016"/>
+<pad name="29" x="17.78" y="-13.97" drill="1.016"/>
+<pad name="30" x="17.78" y="-16.51" drill="1.016"/>
+<pad name="31" x="17.78" y="-19.05" drill="1.016"/>
+<pad name="32" x="17.78" y="-21.59" drill="1.016"/>
+</package>
+<package name="TMC6200-BOB">
+<description>TMC6200 BreakOut Board (BOB)</description>
+<wire x1="-19.05" y1="19.05" x2="19.05" y2="19.05" width="0.254" layer="21"/>
+<wire x1="19.05" y1="19.05" x2="19.05" y2="-17.78" width="0.254" layer="21"/>
+<wire x1="19.05" y1="-17.78" x2="-19.05" y2="-17.78" width="0.254" layer="21"/>
+<wire x1="-19.05" y1="-17.78" x2="-19.05" y2="19.05" width="0.254" layer="21"/>
+<pad name="1" x="-17.78" y="16.51" drill="1.016"/>
+<pad name="2" x="-17.78" y="13.97" drill="1.016"/>
+<pad name="3" x="-17.78" y="11.43" drill="1.016"/>
+<pad name="4" x="-17.78" y="8.89" drill="1.016"/>
+<pad name="18" x="17.78" y="8.89" drill="1.016"/>
+<pad name="17" x="17.78" y="11.43" drill="1.016"/>
+<pad name="16" x="17.78" y="13.97" drill="1.016"/>
+<pad name="15" x="17.78" y="16.51" drill="1.016"/>
+<text x="-19.05" y="20.32" size="1" layer="25">&gt;NAME</text>
+<circle x="-17.78" y="18.288" radius="0.254" width="0.127" layer="21"/>
+<text x="-19.05" y="-19.05" size="1" layer="27" align="top-left">&gt;VALUE</text>
+<pad name="5" x="-17.78" y="6.35" drill="1.016"/>
+<pad name="6" x="-17.78" y="3.81" drill="1.016"/>
+<pad name="7" x="-17.78" y="1.27" drill="1.016"/>
+<pad name="8" x="-17.78" y="-1.27" drill="1.016"/>
+<pad name="9" x="-17.78" y="-3.81" drill="1.016"/>
+<pad name="10" x="-17.78" y="-6.35" drill="1.016"/>
+<pad name="11" x="-17.78" y="-8.89" drill="1.016"/>
+<pad name="12" x="-17.78" y="-11.43" drill="1.016"/>
+<pad name="13" x="-17.78" y="-13.97" drill="1.016"/>
+<pad name="14" x="-17.78" y="-16.51" drill="1.016"/>
+<pad name="19" x="17.78" y="6.35" drill="1.016"/>
+<pad name="20" x="17.78" y="3.81" drill="1.016"/>
+<pad name="21" x="17.78" y="1.27" drill="1.016"/>
+<pad name="22" x="17.78" y="-1.27" drill="1.016"/>
+<pad name="23" x="17.78" y="-3.81" drill="1.016"/>
+<pad name="24" x="17.78" y="-6.35" drill="1.016"/>
+<pad name="25" x="17.78" y="-8.89" drill="1.016"/>
+<pad name="26" x="17.78" y="-11.43" drill="1.016"/>
+<pad name="27" x="17.78" y="-13.97" drill="1.016"/>
+<pad name="28" x="17.78" y="-16.51" drill="1.016"/>
+<pad name="30" x="-7.112" y="16.51" drill="1.016" rot="R90"/>
+<pad name="29" x="-9.652" y="16.51" drill="1.016" rot="R90"/>
+<pad name="31" x="-4.572" y="16.51" drill="1.016" rot="R90"/>
+<pad name="32" x="-2.032" y="16.51" drill="1.016" rot="R90"/>
+<pad name="33" x="0.508" y="16.51" drill="1.016" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MTRAIN">
@@ -26430,6 +26515,74 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="-20.955" y1="10.16" x2="-8.255" y2="10.16" width="0.254" layer="94"/>
 <wire x1="-20.955" y1="7.62" x2="-8.255" y2="7.62" width="0.254" layer="94"/>
 </symbol>
+<symbol name="TMC4671-BOB">
+<description>TMC4671 BreakOut Board (BOB)</description>
+<pin name="+5V" x="-17.78" y="17.78" length="middle"/>
+<pin name="GND" x="-17.78" y="12.7" length="middle"/>
+<pin name="STP" x="-17.78" y="10.16" length="middle"/>
+<pin name="VCCIO" x="-17.78" y="15.24" length="middle"/>
+<pin name="DIR" x="-17.78" y="7.62" length="middle"/>
+<text x="-12.7" y="-22.86" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
+<text x="-12.7" y="20.32" size="1.778" layer="95">&gt;NAME</text>
+<pin name="!SS!" x="-17.78" y="5.08" length="middle"/>
+<pin name="MOSI" x="-17.78" y="0" length="middle"/>
+<pin name="MISO" x="-17.78" y="-2.54" length="middle"/>
+<pin name="SCK" x="-17.78" y="2.54" length="middle"/>
+<pin name="RXD" x="-17.78" y="-5.08" length="middle"/>
+<pin name="TXD" x="-17.78" y="-7.62" length="middle"/>
+<pin name="ADC_I0" x="-17.78" y="-12.7" length="middle"/>
+<pin name="ADC_I1" x="-17.78" y="-15.24" length="middle"/>
+<pin name="ENC1_N" x="17.78" y="-20.32" length="middle" rot="R180"/>
+<pin name="ENC1_A" x="17.78" y="-15.24" length="middle" rot="R180"/>
+<pin name="HALL_W" x="17.78" y="-12.7" length="middle" rot="R180"/>
+<pin name="ENC1_B" x="17.78" y="-17.78" length="middle" rot="R180"/>
+<pin name="HALL_V" x="17.78" y="-10.16" length="middle" rot="R180"/>
+<pin name="HALL_U" x="17.78" y="-7.62" length="middle" rot="R180"/>
+<pin name="PWM_UL" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="PWM_VH" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="PWM_UH" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="PWM_VL" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="PWM_WH" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="PWM_YH" x="17.78" y="10.16" length="middle" rot="R180"/>
+<pin name="PWM_YL" x="17.78" y="12.7" length="middle" rot="R180"/>
+<pin name="PWM_WL" x="17.78" y="7.62" length="middle" rot="R180"/>
+<pin name="VM" x="17.78" y="17.78" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="20.32" x2="12.7" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-22.86" x2="12.7" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-22.86" x2="-12.7" y2="20.32" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-22.86" x2="12.7" y2="20.32" width="0.254" layer="94"/>
+</symbol>
+<symbol name="TMC6200-BOB">
+<description>TMC6200 BreakOut Board (BOB)</description>
+<pin name="VCCIO" x="-22.86" y="17.78" length="middle"/>
+<pin name="!SS!" x="-22.86" y="12.7" length="middle"/>
+<pin name="SCK" x="-22.86" y="10.16" length="middle"/>
+<pin name="GND" x="-22.86" y="15.24" length="middle"/>
+<pin name="MOSI" x="-22.86" y="7.62" length="middle"/>
+<text x="-17.78" y="-17.78" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
+<text x="-17.78" y="20.32" size="1.778" layer="95">&gt;NAME</text>
+<pin name="MISO" x="-22.86" y="5.08" length="middle"/>
+<pin name="PWM_WH" x="-22.86" y="0" length="middle"/>
+<pin name="PWM_VL" x="-22.86" y="-2.54" length="middle"/>
+<pin name="PWM_WL" x="-22.86" y="2.54" length="middle"/>
+<pin name="PWM_VH" x="-22.86" y="-5.08" length="middle"/>
+<pin name="PWM_UL" x="-22.86" y="-7.62" length="middle"/>
+<pin name="DRV_EN" x="-22.86" y="-12.7" length="middle"/>
+<pin name="FAULT" x="-22.86" y="-15.24" length="middle"/>
+<pin name="PWM_UH" x="-22.86" y="-10.16" length="middle"/>
+<pin name="W" x="22.86" y="-7.62" length="middle" rot="R180"/>
+<pin name="V" x="22.86" y="0" length="middle" rot="R180"/>
+<pin name="U" x="22.86" y="7.62" length="middle" rot="R180"/>
+<pin name="VM" x="22.86" y="17.78" length="middle" rot="R180"/>
+<wire x1="-17.78" y1="20.32" x2="17.78" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-17.78" x2="17.78" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-17.78" x2="-17.78" y2="20.32" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-17.78" x2="17.78" y2="20.32" width="0.254" layer="94"/>
+<pin name="TEMP" x="5.08" y="25.4" length="middle" rot="R270"/>
+<pin name="CURU" x="0" y="25.4" length="middle" rot="R270"/>
+<pin name="CURV" x="-2.54" y="25.4" length="middle" rot="R270"/>
+<pin name="CURW" x="-5.08" y="25.4" length="middle" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MTRAIN" prefix="KIT">
@@ -26480,6 +26633,86 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="VBUS" pad="VBUS"/>
 <connect gate="G$1" pin="VDD" pad="VDD"/>
 <connect gate="G$1" pin="VIN" pad="VIN"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TMC4671-BOB" prefix="KIT" uservalue="yes">
+<description>&lt;a href="https://www.trinamic.com/support/eval-kits/details/tmc4671-bob/"&gt;TMC4671-BOB&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="TMC4671-BOB" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TMC4671-BOB">
+<connects>
+<connect gate="G$1" pin="!SS!" pad="6"/>
+<connect gate="G$1" pin="+5V" pad="1"/>
+<connect gate="G$1" pin="ADC_I0" pad="13"/>
+<connect gate="G$1" pin="ADC_I1" pad="14"/>
+<connect gate="G$1" pin="DIR" pad="5"/>
+<connect gate="G$1" pin="ENC1_A" pad="30"/>
+<connect gate="G$1" pin="ENC1_B" pad="31"/>
+<connect gate="G$1" pin="ENC1_N" pad="32"/>
+<connect gate="G$1" pin="GND" pad="3 12 15 16 18"/>
+<connect gate="G$1" pin="HALL_U" pad="27"/>
+<connect gate="G$1" pin="HALL_V" pad="28"/>
+<connect gate="G$1" pin="HALL_W" pad="29"/>
+<connect gate="G$1" pin="MISO" pad="9"/>
+<connect gate="G$1" pin="MOSI" pad="8"/>
+<connect gate="G$1" pin="PWM_UH" pad="26"/>
+<connect gate="G$1" pin="PWM_UL" pad="25"/>
+<connect gate="G$1" pin="PWM_VH" pad="24"/>
+<connect gate="G$1" pin="PWM_VL" pad="23"/>
+<connect gate="G$1" pin="PWM_WH" pad="22"/>
+<connect gate="G$1" pin="PWM_WL" pad="21"/>
+<connect gate="G$1" pin="PWM_YH" pad="20"/>
+<connect gate="G$1" pin="PWM_YL" pad="19"/>
+<connect gate="G$1" pin="RXD" pad="10"/>
+<connect gate="G$1" pin="SCK" pad="7"/>
+<connect gate="G$1" pin="STP" pad="4"/>
+<connect gate="G$1" pin="TXD" pad="11"/>
+<connect gate="G$1" pin="VCCIO" pad="2"/>
+<connect gate="G$1" pin="VM" pad="17"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TMC6200-BOB" prefix="KIT" uservalue="yes">
+<description>&lt;a href="https://www.trinamic.com/support/eval-kits/details/tmc6200-bob/"&gt;TMC6200-BOB&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="TMC6200-BOB" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TMC6200-BOB">
+<connects>
+<connect gate="G$1" pin="!SS!" pad="3"/>
+<connect gate="G$1" pin="CURU" pad="31"/>
+<connect gate="G$1" pin="CURV" pad="30"/>
+<connect gate="G$1" pin="CURW" pad="29"/>
+<connect gate="G$1" pin="DRV_EN" pad="13"/>
+<connect gate="G$1" pin="FAULT" pad="14"/>
+<connect gate="G$1" pin="GND" pad="2 17 18 28 32"/>
+<connect gate="G$1" pin="MISO" pad="6"/>
+<connect gate="G$1" pin="MOSI" pad="5"/>
+<connect gate="G$1" pin="PWM_UH" pad="12"/>
+<connect gate="G$1" pin="PWM_UL" pad="11"/>
+<connect gate="G$1" pin="PWM_VH" pad="10"/>
+<connect gate="G$1" pin="PWM_VL" pad="9"/>
+<connect gate="G$1" pin="PWM_WH" pad="8"/>
+<connect gate="G$1" pin="PWM_WL" pad="7"/>
+<connect gate="G$1" pin="SCK" pad="4"/>
+<connect gate="G$1" pin="TEMP" pad="33"/>
+<connect gate="G$1" pin="U" pad="19 20 21"/>
+<connect gate="G$1" pin="V" pad="22 23 24"/>
+<connect gate="G$1" pin="VCCIO" pad="1"/>
+<connect gate="G$1" pin="VM" pad="15 16"/>
+<connect gate="G$1" pin="W" pad="25 26 27"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -26781,15 +27014,21 @@ Source: SN74LVC3G17.pdf</description>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="J2" library="RoboJackets-Connectors" deviceset="CONN-2" device="VERT"/>
 <part name="J3" library="RoboJackets-Connectors" deviceset="CONN-2" device="VERT"/>
+<part name="KIT2" library="RoboJackets-Boards" deviceset="TMC4671-BOB" device=""/>
+<part name="SUPPLY6" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
+<part name="SUPPLY7" library="supply2" deviceset="+5V" device=""/>
+<part name="GND15" library="supply1" deviceset="GND" device=""/>
+<part name="SUPPLY8" library="RoboJackets-Supplies" deviceset="+18.5V" device=""/>
+<part name="KIT3" library="RoboJackets-Boards" deviceset="TMC6200-BOB" device=""/>
+<part name="GND16" library="supply1" deviceset="GND" device=""/>
+<part name="SUPPLY9" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
+<part name="SUPPLY10" library="RoboJackets-Supplies" deviceset="+18.5V" device=""/>
 </parts>
 <sheets>
 <sheet>
 <description>Microcontroller and Misc ICs</description>
 <plain>
-<wire x1="10.16" y1="205.74" x2="10.16" y2="104.14" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="10.16" y1="104.14" x2="248.92" y2="104.14" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="248.92" y1="104.14" x2="248.92" y2="205.74" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="248.92" y1="205.74" x2="10.16" y2="205.74" width="0.1524" layer="97" style="shortdash"/>
 <text x="15.24" y="198.12" size="1.778" layer="97" font="vector">MTrain</text>
 <wire x1="10.16" y1="99.06" x2="71.12" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="71.12" y1="99.06" x2="71.12" y2="48.26" width="0.1524" layer="97" style="shortdash"/>
@@ -27312,16 +27551,16 @@ Source: SN74LVC3G17.pdf</description>
 <sheet>
 <description>Main Modules</description>
 <plain>
-<wire x1="7.62" y1="208.28" x2="7.62" y2="106.68" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="7.62" y1="106.68" x2="167.64" y2="106.68" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="167.64" y1="106.68" x2="167.64" y2="208.28" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="167.64" y1="208.28" x2="7.62" y2="208.28" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="7.62" y1="208.28" x2="7.62" y2="139.7" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="7.62" y1="139.7" x2="91.44" y2="139.7" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="91.44" y1="139.7" x2="91.44" y2="208.28" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="91.44" y1="208.28" x2="7.62" y2="208.28" width="0.1524" layer="97" style="shortdash"/>
 <text x="12.7" y="200.66" size="1.778" layer="97" font="vector">TMC4671</text>
-<wire x1="7.62" y1="101.6" x2="7.62" y2="5.08" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="7.62" y1="5.08" x2="167.64" y2="5.08" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="167.64" y1="5.08" x2="167.64" y2="101.6" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="167.64" y1="101.6" x2="7.62" y2="101.6" width="0.1524" layer="97" style="shortdash"/>
-<text x="12.7" y="93.98" size="1.778" layer="97" font="vector">TMC6200</text>
+<wire x1="7.62" y1="134.62" x2="7.62" y2="38.1" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="7.62" y1="38.1" x2="114.3" y2="38.1" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="114.3" y1="38.1" x2="114.3" y2="134.62" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="114.3" y1="134.62" x2="7.62" y2="134.62" width="0.1524" layer="97" style="shortdash"/>
+<text x="12.7" y="127" size="1.778" layer="97" font="vector">TMC6200</text>
 </plain>
 <instances>
 <instance part="FRAME4" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -27333,10 +27572,287 @@ Source: SN74LVC3G17.pdf</description>
 <attribute name="REVISION" x="245.11" y="6.35" size="2.54" layer="94"/>
 <attribute name="SCH_DESC" x="173.99" y="6.35" size="2.54" layer="94"/>
 </instance>
+<instance part="KIT2" gate="G$1" x="50.8" y="170.18" smashed="yes">
+<attribute name="VALUE" x="38.1" y="147.32" size="1.778" layer="96" align="top-left"/>
+<attribute name="NAME" x="38.1" y="190.5" size="1.778" layer="95"/>
+</instance>
+<instance part="SUPPLY6" gate="P" x="22.86" y="193.04" smashed="yes">
+<attribute name="VALUE" x="18.415" y="196.215" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY7" gate="+5V" x="30.48" y="193.04" smashed="yes">
+<attribute name="VALUE" x="28.575" y="196.215" size="1.778" layer="96"/>
+</instance>
+<instance part="GND15" gate="1" x="22.86" y="182.88" smashed="yes" rot="R270">
+<attribute name="VALUE" x="20.32" y="185.42" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="SUPPLY8" gate="G$1" x="71.12" y="193.04" smashed="yes">
+<attribute name="VALUE" x="69.215" y="196.215" size="1.778" layer="96"/>
+</instance>
+<instance part="KIT3" gate="G$1" x="60.96" y="86.36" smashed="yes">
+<attribute name="VALUE" x="43.18" y="68.58" size="1.778" layer="96" align="top-left"/>
+<attribute name="NAME" x="43.18" y="106.68" size="1.778" layer="95"/>
+</instance>
+<instance part="GND16" gate="1" x="17.78" y="101.6" smashed="yes" rot="R270">
+<attribute name="VALUE" x="15.24" y="104.14" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="SUPPLY9" gate="P" x="30.48" y="106.68" smashed="yes">
+<attribute name="VALUE" x="26.035" y="109.855" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY10" gate="G$1" x="86.36" y="109.22" smashed="yes">
+<attribute name="VALUE" x="84.455" y="112.395" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
+<net name="+5V" class="0">
+<segment>
+<pinref part="KIT2" gate="G$1" pin="+5V"/>
+<wire x1="33.02" y1="187.96" x2="30.48" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="187.96" x2="30.48" y2="190.5" width="0.1524" layer="91"/>
+<pinref part="SUPPLY7" gate="+5V" pin="+5V"/>
+</segment>
+</net>
+<net name="+3.3V" class="0">
+<segment>
+<pinref part="KIT2" gate="G$1" pin="VCCIO"/>
+<wire x1="33.02" y1="185.42" x2="22.86" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="185.42" x2="22.86" y2="190.5" width="0.1524" layer="91"/>
+<pinref part="SUPPLY6" gate="P" pin="+3.3V"/>
+</segment>
+<segment>
+<pinref part="SUPPLY9" gate="P" pin="+3.3V"/>
+<pinref part="KIT3" gate="G$1" pin="VCCIO"/>
+<wire x1="30.48" y1="104.14" x2="38.1" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="KIT2" gate="G$1" pin="GND"/>
+<wire x1="33.02" y1="182.88" x2="25.4" y2="182.88" width="0.1524" layer="91"/>
+<pinref part="GND15" gate="1" pin="GND"/>
+</segment>
+<segment>
+<wire x1="38.1" y1="101.6" x2="20.32" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="GND16" gate="1" pin="GND"/>
+<pinref part="KIT3" gate="G$1" pin="GND"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="KIT2" gate="G$1" pin="!SS!"/>
+<wire x1="33.02" y1="175.26" x2="27.94" y2="175.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="KIT2" gate="G$1" pin="SCK"/>
+<wire x1="33.02" y1="172.72" x2="27.94" y2="172.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="KIT2" gate="G$1" pin="MOSI"/>
+<wire x1="33.02" y1="170.18" x2="27.94" y2="170.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="KIT2" gate="G$1" pin="MISO"/>
+<wire x1="33.02" y1="167.64" x2="27.94" y2="167.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CURU" class="0">
+<segment>
+<pinref part="KIT2" gate="G$1" pin="ADC_I0"/>
+<wire x1="33.02" y1="157.48" x2="27.94" y2="157.48" width="0.1524" layer="91"/>
+<label x="27.94" y="157.48" size="1.27" layer="95" font="vector" rot="MR0" xref="yes"/>
+</segment>
+</net>
+<net name="CURV" class="0">
+<segment>
+<pinref part="KIT2" gate="G$1" pin="ADC_I1"/>
+<wire x1="33.02" y1="154.94" x2="27.94" y2="154.94" width="0.1524" layer="91"/>
+<label x="27.94" y="154.94" size="1.27" layer="95" font="vector" rot="MR0" xref="yes"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="KIT2" gate="G$1" pin="ENC1_B"/>
+<wire x1="68.58" y1="152.4" x2="73.66" y2="152.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="KIT2" gate="G$1" pin="ENC1_A"/>
+<wire x1="68.58" y1="154.94" x2="73.66" y2="154.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="KIT2" gate="G$1" pin="HALL_W"/>
+<wire x1="68.58" y1="157.48" x2="73.66" y2="157.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="KIT2" gate="G$1" pin="HALL_V"/>
+<wire x1="68.58" y1="160.02" x2="73.66" y2="160.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="KIT2" gate="G$1" pin="HALL_U"/>
+<wire x1="68.58" y1="162.56" x2="73.66" y2="162.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="KIT2" gate="G$1" pin="PWM_UH"/>
+<wire x1="68.58" y1="165.1" x2="73.66" y2="165.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="KIT2" gate="G$1" pin="PWM_UL"/>
+<wire x1="68.58" y1="167.64" x2="73.66" y2="167.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="KIT2" gate="G$1" pin="PWM_VH"/>
+<wire x1="68.58" y1="170.18" x2="73.66" y2="170.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="KIT2" gate="G$1" pin="PWM_VL"/>
+<wire x1="68.58" y1="172.72" x2="73.66" y2="172.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="KIT2" gate="G$1" pin="PWM_WH"/>
+<wire x1="68.58" y1="175.26" x2="73.66" y2="175.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="KIT2" gate="G$1" pin="PWM_WL"/>
+<wire x1="68.58" y1="177.8" x2="73.66" y2="177.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="KIT2" gate="G$1" pin="PWM_YH"/>
+<wire x1="68.58" y1="180.34" x2="73.66" y2="180.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+18.5V" class="0">
+<segment>
+<pinref part="KIT2" gate="G$1" pin="VM"/>
+<wire x1="68.58" y1="187.96" x2="71.12" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="187.96" x2="71.12" y2="190.5" width="0.1524" layer="91"/>
+<pinref part="SUPPLY8" gate="G$1" pin="+18.5V"/>
+</segment>
+<segment>
+<wire x1="83.82" y1="104.14" x2="86.36" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="104.14" x2="86.36" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="SUPPLY10" gate="G$1" pin="+18.5V"/>
+<pinref part="KIT3" gate="G$1" pin="VM"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<pinref part="KIT3" gate="G$1" pin="FAULT"/>
+<wire x1="38.1" y1="71.12" x2="33.02" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="71.12" x2="35.56" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<pinref part="KIT3" gate="G$1" pin="DRV_EN"/>
+<wire x1="38.1" y1="73.66" x2="33.02" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="KIT3" gate="G$1" pin="PWM_UH"/>
+<wire x1="38.1" y1="76.2" x2="33.02" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="KIT3" gate="G$1" pin="PWM_UL"/>
+<wire x1="38.1" y1="78.74" x2="33.02" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<pinref part="KIT3" gate="G$1" pin="PWM_VH"/>
+<wire x1="38.1" y1="81.28" x2="33.02" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$27" class="0">
+<segment>
+<pinref part="KIT3" gate="G$1" pin="PWM_VL"/>
+<wire x1="38.1" y1="83.82" x2="33.02" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$28" class="0">
+<segment>
+<pinref part="KIT3" gate="G$1" pin="PWM_WH"/>
+<wire x1="38.1" y1="86.36" x2="33.02" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$29" class="0">
+<segment>
+<pinref part="KIT3" gate="G$1" pin="PWM_WL"/>
+<wire x1="38.1" y1="88.9" x2="33.02" y2="88.9" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$30" class="0">
+<segment>
+<pinref part="KIT3" gate="G$1" pin="MISO"/>
+<wire x1="38.1" y1="91.44" x2="33.02" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$31" class="0">
+<segment>
+<pinref part="KIT3" gate="G$1" pin="MOSI"/>
+<wire x1="38.1" y1="93.98" x2="33.02" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$32" class="0">
+<segment>
+<pinref part="KIT3" gate="G$1" pin="SCK"/>
+<wire x1="38.1" y1="96.52" x2="33.02" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$33" class="0">
+<segment>
+<pinref part="KIT3" gate="G$1" pin="!SS!"/>
+<wire x1="38.1" y1="99.06" x2="33.02" y2="99.06" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="KIT3" gate="G$1" pin="U"/>
+<wire x1="83.82" y1="93.98" x2="88.9" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="KIT3" gate="G$1" pin="V"/>
+<wire x1="83.82" y1="86.36" x2="88.9" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="KIT3" gate="G$1" pin="W"/>
+<wire x1="83.82" y1="78.74" x2="88.9" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>

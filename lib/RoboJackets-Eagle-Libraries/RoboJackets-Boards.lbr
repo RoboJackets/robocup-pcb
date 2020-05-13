@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -7394,71 +7394,71 @@
 </symbol>
 <symbol name="TMC4671-BOB">
 <description>TMC4671 BreakOut Board (BOB)</description>
-<pin name="+5V" x="-17.78" y="19.05" length="middle"/>
-<pin name="GND" x="-17.78" y="13.97" length="middle"/>
-<pin name="STP" x="-17.78" y="11.43" length="middle"/>
-<pin name="VCCIO" x="-17.78" y="16.51" length="middle"/>
-<pin name="DIR" x="-17.78" y="8.89" length="middle"/>
-<text x="-12.7" y="-21.59" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
-<text x="-12.7" y="21.59" size="1.778" layer="95">&gt;NAME</text>
-<pin name="!SS!" x="-17.78" y="6.35" length="middle"/>
-<pin name="MOSI" x="-17.78" y="1.27" length="middle"/>
-<pin name="MISO" x="-17.78" y="-1.27" length="middle"/>
-<pin name="SCK" x="-17.78" y="3.81" length="middle"/>
-<pin name="RXD" x="-17.78" y="-3.81" length="middle"/>
-<pin name="TXD" x="-17.78" y="-6.35" length="middle"/>
-<pin name="ADC_I0" x="-17.78" y="-11.43" length="middle"/>
-<pin name="ADC_I1" x="-17.78" y="-13.97" length="middle"/>
-<pin name="ENC1_N" x="17.78" y="-19.05" length="middle" rot="R180"/>
-<pin name="ENC1_A" x="17.78" y="-13.97" length="middle" rot="R180"/>
-<pin name="HALL_W" x="17.78" y="-11.43" length="middle" rot="R180"/>
-<pin name="ENC1_B" x="17.78" y="-16.51" length="middle" rot="R180"/>
-<pin name="HALL_V" x="17.78" y="-8.89" length="middle" rot="R180"/>
-<pin name="HALL_U" x="17.78" y="-6.35" length="middle" rot="R180"/>
-<pin name="PWM_UL" x="17.78" y="-1.27" length="middle" rot="R180"/>
-<pin name="PWM_VH" x="17.78" y="1.27" length="middle" rot="R180"/>
-<pin name="PWM_UH" x="17.78" y="-3.81" length="middle" rot="R180"/>
-<pin name="PWM_VL" x="17.78" y="3.81" length="middle" rot="R180"/>
-<pin name="PWM_WH" x="17.78" y="6.35" length="middle" rot="R180"/>
-<pin name="PWM_YH" x="17.78" y="11.43" length="middle" rot="R180"/>
-<pin name="PWM_YL" x="17.78" y="13.97" length="middle" rot="R180"/>
-<pin name="PWM_WL" x="17.78" y="8.89" length="middle" rot="R180"/>
-<pin name="VM" x="17.78" y="19.05" length="middle" rot="R180"/>
-<wire x1="-12.7" y1="21.59" x2="12.7" y2="21.59" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-21.59" x2="12.7" y2="-21.59" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-21.59" x2="-12.7" y2="21.59" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-21.59" x2="12.7" y2="21.59" width="0.254" layer="94"/>
+<pin name="+5V" x="-17.78" y="17.78" length="middle"/>
+<pin name="GND" x="-17.78" y="12.7" length="middle"/>
+<pin name="STP" x="-17.78" y="10.16" length="middle"/>
+<pin name="VCCIO" x="-17.78" y="15.24" length="middle"/>
+<pin name="DIR" x="-17.78" y="7.62" length="middle"/>
+<text x="-12.7" y="-22.86" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
+<text x="-12.7" y="20.32" size="1.778" layer="95">&gt;NAME</text>
+<pin name="!SS!" x="-17.78" y="5.08" length="middle"/>
+<pin name="MOSI" x="-17.78" y="0" length="middle"/>
+<pin name="MISO" x="-17.78" y="-2.54" length="middle"/>
+<pin name="SCK" x="-17.78" y="2.54" length="middle"/>
+<pin name="RXD" x="-17.78" y="-5.08" length="middle"/>
+<pin name="TXD" x="-17.78" y="-7.62" length="middle"/>
+<pin name="ADC_I0" x="-17.78" y="-12.7" length="middle"/>
+<pin name="ADC_I1" x="-17.78" y="-15.24" length="middle"/>
+<pin name="ENC1_N" x="17.78" y="-20.32" length="middle" rot="R180"/>
+<pin name="ENC1_A" x="17.78" y="-15.24" length="middle" rot="R180"/>
+<pin name="HALL_W" x="17.78" y="-12.7" length="middle" rot="R180"/>
+<pin name="ENC1_B" x="17.78" y="-17.78" length="middle" rot="R180"/>
+<pin name="HALL_V" x="17.78" y="-10.16" length="middle" rot="R180"/>
+<pin name="HALL_U" x="17.78" y="-7.62" length="middle" rot="R180"/>
+<pin name="PWM_UL" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="PWM_VH" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="PWM_UH" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="PWM_VL" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="PWM_WH" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="PWM_YH" x="17.78" y="10.16" length="middle" rot="R180"/>
+<pin name="PWM_YL" x="17.78" y="12.7" length="middle" rot="R180"/>
+<pin name="PWM_WL" x="17.78" y="7.62" length="middle" rot="R180"/>
+<pin name="VM" x="17.78" y="17.78" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="20.32" x2="12.7" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-22.86" x2="12.7" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-22.86" x2="-12.7" y2="20.32" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-22.86" x2="12.7" y2="20.32" width="0.254" layer="94"/>
 </symbol>
 <symbol name="TMC6200-BOB">
 <description>TMC6200 BreakOut Board (BOB)</description>
-<pin name="VCCIO" x="-22.86" y="16.51" length="middle"/>
-<pin name="!SS!" x="-22.86" y="11.43" length="middle"/>
-<pin name="SCK" x="-22.86" y="8.89" length="middle"/>
-<pin name="GND" x="-22.86" y="13.97" length="middle"/>
-<pin name="MOSI" x="-22.86" y="6.35" length="middle"/>
-<text x="-17.78" y="-19.05" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
-<text x="-17.78" y="19.05" size="1.778" layer="95">&gt;NAME</text>
-<pin name="MISO" x="-22.86" y="3.81" length="middle"/>
-<pin name="PWM_WH" x="-22.86" y="-1.27" length="middle"/>
-<pin name="PWM_VL" x="-22.86" y="-3.81" length="middle"/>
-<pin name="PWM_WL" x="-22.86" y="1.27" length="middle"/>
-<pin name="PWM_VH" x="-22.86" y="-6.35" length="middle"/>
-<pin name="PWM_UL" x="-22.86" y="-8.89" length="middle"/>
-<pin name="DRV_EN" x="-22.86" y="-13.97" length="middle"/>
-<pin name="FAULT" x="-22.86" y="-16.51" length="middle"/>
-<pin name="PWM_UH" x="-22.86" y="-11.43" length="middle"/>
-<pin name="W" x="22.86" y="-8.89" length="middle" rot="R180"/>
-<pin name="V" x="22.86" y="-1.27" length="middle" rot="R180"/>
-<pin name="U" x="22.86" y="6.35" length="middle" rot="R180"/>
-<pin name="VM" x="22.86" y="16.51" length="middle" rot="R180"/>
-<wire x1="-17.78" y1="19.05" x2="17.78" y2="19.05" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="-19.05" x2="17.78" y2="-19.05" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="-19.05" x2="-17.78" y2="19.05" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-19.05" x2="17.78" y2="19.05" width="0.254" layer="94"/>
-<pin name="TEMP" x="5.08" y="24.13" length="middle" rot="R270"/>
-<pin name="CURU" x="0" y="24.13" length="middle" rot="R270"/>
-<pin name="CURV" x="-2.54" y="24.13" length="middle" rot="R270"/>
-<pin name="CURW" x="-5.08" y="24.13" length="middle" rot="R270"/>
+<pin name="VCCIO" x="-22.86" y="17.78" length="middle"/>
+<pin name="!SS!" x="-22.86" y="12.7" length="middle"/>
+<pin name="SCK" x="-22.86" y="10.16" length="middle"/>
+<pin name="GND" x="-22.86" y="15.24" length="middle"/>
+<pin name="MOSI" x="-22.86" y="7.62" length="middle"/>
+<text x="-17.78" y="-17.78" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
+<text x="-17.78" y="20.32" size="1.778" layer="95">&gt;NAME</text>
+<pin name="MISO" x="-22.86" y="5.08" length="middle"/>
+<pin name="PWM_WH" x="-22.86" y="0" length="middle"/>
+<pin name="PWM_VL" x="-22.86" y="-2.54" length="middle"/>
+<pin name="PWM_WL" x="-22.86" y="2.54" length="middle"/>
+<pin name="PWM_VH" x="-22.86" y="-5.08" length="middle"/>
+<pin name="PWM_UL" x="-22.86" y="-7.62" length="middle"/>
+<pin name="DRV_EN" x="-22.86" y="-12.7" length="middle"/>
+<pin name="FAULT" x="-22.86" y="-15.24" length="middle"/>
+<pin name="PWM_UH" x="-22.86" y="-10.16" length="middle"/>
+<pin name="W" x="22.86" y="-7.62" length="middle" rot="R180"/>
+<pin name="V" x="22.86" y="0" length="middle" rot="R180"/>
+<pin name="U" x="22.86" y="7.62" length="middle" rot="R180"/>
+<pin name="VM" x="22.86" y="17.78" length="middle" rot="R180"/>
+<wire x1="-17.78" y1="20.32" x2="17.78" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-17.78" x2="17.78" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-17.78" x2="-17.78" y2="20.32" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-17.78" x2="17.78" y2="20.32" width="0.254" layer="94"/>
+<pin name="TEMP" x="5.08" y="25.4" length="middle" rot="R270"/>
+<pin name="CURU" x="0" y="25.4" length="middle" rot="R270"/>
+<pin name="CURV" x="-2.54" y="25.4" length="middle" rot="R270"/>
+<pin name="CURW" x="-5.08" y="25.4" length="middle" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
