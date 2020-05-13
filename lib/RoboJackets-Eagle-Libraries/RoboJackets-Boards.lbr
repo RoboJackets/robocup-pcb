@@ -844,6 +844,91 @@
 <wire x1="50.1" y1="-0.5" x2="58.1" y2="-0.5" width="0.127" layer="52"/>
 <wire x1="58.1" y1="-0.5" x2="57.85" y2="0" width="0.127" layer="52"/>
 </package>
+<package name="TMC4671-BOB">
+<description>TMC4671 BreakOut Board (BOB)</description>
+<wire x1="-19.05" y1="19.05" x2="19.05" y2="19.05" width="0.254" layer="21"/>
+<wire x1="19.05" y1="19.05" x2="19.05" y2="-22.86" width="0.254" layer="21"/>
+<wire x1="19.05" y1="-22.86" x2="-19.05" y2="-22.86" width="0.254" layer="21"/>
+<wire x1="-19.05" y1="-22.86" x2="-19.05" y2="19.05" width="0.254" layer="21"/>
+<pad name="1" x="-17.78" y="16.51" drill="1.016"/>
+<pad name="2" x="-17.78" y="13.97" drill="1.016"/>
+<pad name="3" x="-17.78" y="11.43" drill="1.016"/>
+<pad name="4" x="-17.78" y="8.89" drill="1.016"/>
+<pad name="20" x="17.78" y="8.89" drill="1.016"/>
+<pad name="19" x="17.78" y="11.43" drill="1.016"/>
+<pad name="18" x="17.78" y="13.97" drill="1.016"/>
+<pad name="17" x="17.78" y="16.51" drill="1.016"/>
+<text x="-19.05" y="20.32" size="1" layer="25">&gt;NAME</text>
+<circle x="-17.78" y="18.288" radius="0.254" width="0.127" layer="21"/>
+<text x="-19.05" y="-24.13" size="1" layer="27" align="top-left">&gt;VALUE</text>
+<pad name="5" x="-17.78" y="6.35" drill="1.016"/>
+<pad name="6" x="-17.78" y="3.81" drill="1.016"/>
+<pad name="7" x="-17.78" y="1.27" drill="1.016"/>
+<pad name="8" x="-17.78" y="-1.27" drill="1.016"/>
+<pad name="9" x="-17.78" y="-3.81" drill="1.016"/>
+<pad name="10" x="-17.78" y="-6.35" drill="1.016"/>
+<pad name="11" x="-17.78" y="-8.89" drill="1.016"/>
+<pad name="12" x="-17.78" y="-11.43" drill="1.016"/>
+<pad name="13" x="-17.78" y="-13.97" drill="1.016"/>
+<pad name="14" x="-17.78" y="-16.51" drill="1.016"/>
+<pad name="15" x="-17.78" y="-19.05" drill="1.016"/>
+<pad name="16" x="-17.78" y="-21.59" drill="1.016"/>
+<pad name="21" x="17.78" y="6.35" drill="1.016"/>
+<pad name="22" x="17.78" y="3.81" drill="1.016"/>
+<pad name="23" x="17.78" y="1.27" drill="1.016"/>
+<pad name="24" x="17.78" y="-1.27" drill="1.016"/>
+<pad name="25" x="17.78" y="-3.81" drill="1.016"/>
+<pad name="26" x="17.78" y="-6.35" drill="1.016"/>
+<pad name="27" x="17.78" y="-8.89" drill="1.016"/>
+<pad name="28" x="17.78" y="-11.43" drill="1.016"/>
+<pad name="29" x="17.78" y="-13.97" drill="1.016"/>
+<pad name="30" x="17.78" y="-16.51" drill="1.016"/>
+<pad name="31" x="17.78" y="-19.05" drill="1.016"/>
+<pad name="32" x="17.78" y="-21.59" drill="1.016"/>
+</package>
+<package name="TMC6200-BOB">
+<description>TMC6200 BreakOut Board (BOB)</description>
+<wire x1="-19.05" y1="19.05" x2="19.05" y2="19.05" width="0.254" layer="21"/>
+<wire x1="19.05" y1="19.05" x2="19.05" y2="-17.78" width="0.254" layer="21"/>
+<wire x1="19.05" y1="-17.78" x2="-19.05" y2="-17.78" width="0.254" layer="21"/>
+<wire x1="-19.05" y1="-17.78" x2="-19.05" y2="19.05" width="0.254" layer="21"/>
+<pad name="1" x="-17.78" y="16.51" drill="1.016"/>
+<pad name="2" x="-17.78" y="13.97" drill="1.016"/>
+<pad name="3" x="-17.78" y="11.43" drill="1.016"/>
+<pad name="4" x="-17.78" y="8.89" drill="1.016"/>
+<pad name="18" x="17.78" y="8.89" drill="1.016"/>
+<pad name="17" x="17.78" y="11.43" drill="1.016"/>
+<pad name="16" x="17.78" y="13.97" drill="1.016"/>
+<pad name="15" x="17.78" y="16.51" drill="1.016"/>
+<text x="-19.05" y="20.32" size="1" layer="25">&gt;NAME</text>
+<circle x="-17.78" y="18.288" radius="0.254" width="0.127" layer="21"/>
+<text x="-19.05" y="-19.05" size="1" layer="27" align="top-left">&gt;VALUE</text>
+<pad name="5" x="-17.78" y="6.35" drill="1.016"/>
+<pad name="6" x="-17.78" y="3.81" drill="1.016"/>
+<pad name="7" x="-17.78" y="1.27" drill="1.016"/>
+<pad name="8" x="-17.78" y="-1.27" drill="1.016"/>
+<pad name="9" x="-17.78" y="-3.81" drill="1.016"/>
+<pad name="10" x="-17.78" y="-6.35" drill="1.016"/>
+<pad name="11" x="-17.78" y="-8.89" drill="1.016"/>
+<pad name="12" x="-17.78" y="-11.43" drill="1.016"/>
+<pad name="13" x="-17.78" y="-13.97" drill="1.016"/>
+<pad name="14" x="-17.78" y="-16.51" drill="1.016"/>
+<pad name="19" x="17.78" y="6.35" drill="1.016"/>
+<pad name="20" x="17.78" y="3.81" drill="1.016"/>
+<pad name="21" x="17.78" y="1.27" drill="1.016"/>
+<pad name="22" x="17.78" y="-1.27" drill="1.016"/>
+<pad name="23" x="17.78" y="-3.81" drill="1.016"/>
+<pad name="24" x="17.78" y="-6.35" drill="1.016"/>
+<pad name="25" x="17.78" y="-8.89" drill="1.016"/>
+<pad name="26" x="17.78" y="-11.43" drill="1.016"/>
+<pad name="27" x="17.78" y="-13.97" drill="1.016"/>
+<pad name="28" x="17.78" y="-16.51" drill="1.016"/>
+<pad name="30" x="-7.112" y="16.51" drill="1.016" rot="R90"/>
+<pad name="29" x="-9.652" y="16.51" drill="1.016" rot="R90"/>
+<pad name="31" x="-4.572" y="16.51" drill="1.016" rot="R90"/>
+<pad name="32" x="-2.032" y="16.51" drill="1.016" rot="R90"/>
+<pad name="33" x="0.508" y="16.51" drill="1.016" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MBED">
@@ -7307,6 +7392,74 @@
 <text x="-20.32" y="35.56" size="1.27" layer="95" font="vector">&gt;NAME</text>
 <text x="-20.32" y="33.655" size="1.27" layer="96" font="vector">&gt;VALUE</text>
 </symbol>
+<symbol name="TMC4671-BOB">
+<description>TMC4671 BreakOut Board (BOB)</description>
+<pin name="+5V" x="-17.78" y="19.05" length="middle"/>
+<pin name="GND" x="-17.78" y="13.97" length="middle"/>
+<pin name="STP" x="-17.78" y="11.43" length="middle"/>
+<pin name="VCCIO" x="-17.78" y="16.51" length="middle"/>
+<pin name="DIR" x="-17.78" y="8.89" length="middle"/>
+<text x="-12.7" y="-21.59" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
+<text x="-12.7" y="21.59" size="1.778" layer="95">&gt;NAME</text>
+<pin name="!SS!" x="-17.78" y="6.35" length="middle"/>
+<pin name="MOSI" x="-17.78" y="1.27" length="middle"/>
+<pin name="MISO" x="-17.78" y="-1.27" length="middle"/>
+<pin name="SCK" x="-17.78" y="3.81" length="middle"/>
+<pin name="RXD" x="-17.78" y="-3.81" length="middle"/>
+<pin name="TXD" x="-17.78" y="-6.35" length="middle"/>
+<pin name="ADC_I0" x="-17.78" y="-11.43" length="middle"/>
+<pin name="ADC_I1" x="-17.78" y="-13.97" length="middle"/>
+<pin name="ENC1_N" x="17.78" y="-19.05" length="middle" rot="R180"/>
+<pin name="ENC1_A" x="17.78" y="-13.97" length="middle" rot="R180"/>
+<pin name="HALL_W" x="17.78" y="-11.43" length="middle" rot="R180"/>
+<pin name="ENC1_B" x="17.78" y="-16.51" length="middle" rot="R180"/>
+<pin name="HALL_V" x="17.78" y="-8.89" length="middle" rot="R180"/>
+<pin name="HALL_U" x="17.78" y="-6.35" length="middle" rot="R180"/>
+<pin name="PWM_UL" x="17.78" y="-1.27" length="middle" rot="R180"/>
+<pin name="PWM_VH" x="17.78" y="1.27" length="middle" rot="R180"/>
+<pin name="PWM_UH" x="17.78" y="-3.81" length="middle" rot="R180"/>
+<pin name="PWM_VL" x="17.78" y="3.81" length="middle" rot="R180"/>
+<pin name="PWM_WH" x="17.78" y="6.35" length="middle" rot="R180"/>
+<pin name="PWM_YH" x="17.78" y="11.43" length="middle" rot="R180"/>
+<pin name="PWM_YL" x="17.78" y="13.97" length="middle" rot="R180"/>
+<pin name="PWM_WL" x="17.78" y="8.89" length="middle" rot="R180"/>
+<pin name="VM" x="17.78" y="19.05" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="21.59" x2="12.7" y2="21.59" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-21.59" x2="12.7" y2="-21.59" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-21.59" x2="-12.7" y2="21.59" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-21.59" x2="12.7" y2="21.59" width="0.254" layer="94"/>
+</symbol>
+<symbol name="TMC6200-BOB">
+<description>TMC6200 BreakOut Board (BOB)</description>
+<pin name="VCCIO" x="-22.86" y="16.51" length="middle"/>
+<pin name="!SS!" x="-22.86" y="11.43" length="middle"/>
+<pin name="SCK" x="-22.86" y="8.89" length="middle"/>
+<pin name="GND" x="-22.86" y="13.97" length="middle"/>
+<pin name="MOSI" x="-22.86" y="6.35" length="middle"/>
+<text x="-17.78" y="-19.05" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
+<text x="-17.78" y="19.05" size="1.778" layer="95">&gt;NAME</text>
+<pin name="MISO" x="-22.86" y="3.81" length="middle"/>
+<pin name="PWM_WH" x="-22.86" y="-1.27" length="middle"/>
+<pin name="PWM_VL" x="-22.86" y="-3.81" length="middle"/>
+<pin name="PWM_WL" x="-22.86" y="1.27" length="middle"/>
+<pin name="PWM_VH" x="-22.86" y="-6.35" length="middle"/>
+<pin name="PWM_UL" x="-22.86" y="-8.89" length="middle"/>
+<pin name="DRV_EN" x="-22.86" y="-13.97" length="middle"/>
+<pin name="FAULT" x="-22.86" y="-16.51" length="middle"/>
+<pin name="PWM_UH" x="-22.86" y="-11.43" length="middle"/>
+<pin name="W" x="22.86" y="-8.89" length="middle" rot="R180"/>
+<pin name="V" x="22.86" y="-1.27" length="middle" rot="R180"/>
+<pin name="U" x="22.86" y="6.35" length="middle" rot="R180"/>
+<pin name="VM" x="22.86" y="16.51" length="middle" rot="R180"/>
+<wire x1="-17.78" y1="19.05" x2="17.78" y2="19.05" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-19.05" x2="17.78" y2="-19.05" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-19.05" x2="-17.78" y2="19.05" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-19.05" x2="17.78" y2="19.05" width="0.254" layer="94"/>
+<pin name="TEMP" x="5.08" y="24.13" length="middle" rot="R270"/>
+<pin name="CURU" x="0" y="24.13" length="middle" rot="R270"/>
+<pin name="CURV" x="-2.54" y="24.13" length="middle" rot="R270"/>
+<pin name="CURW" x="-5.08" y="24.13" length="middle" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MBED_NXP_LPC1768" prefix="KIT">
@@ -7618,6 +7771,86 @@
 <connect gate="G$1" pin="ID_SD" pad="27"/>
 <connect gate="G$1" pin="RXD0/GPIO15" pad="10"/>
 <connect gate="G$1" pin="TXD0/GPIO14" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TMC6200-BOB" prefix="KIT" uservalue="yes">
+<description>&lt;a href="https://www.trinamic.com/support/eval-kits/details/tmc6200-bob/"&gt;TMC6200-BOB&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="TMC6200-BOB" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TMC6200-BOB">
+<connects>
+<connect gate="G$1" pin="!SS!" pad="3"/>
+<connect gate="G$1" pin="CURU" pad="31"/>
+<connect gate="G$1" pin="CURV" pad="30"/>
+<connect gate="G$1" pin="CURW" pad="29"/>
+<connect gate="G$1" pin="DRV_EN" pad="13"/>
+<connect gate="G$1" pin="FAULT" pad="14"/>
+<connect gate="G$1" pin="GND" pad="2 17 18 28 32"/>
+<connect gate="G$1" pin="MISO" pad="6"/>
+<connect gate="G$1" pin="MOSI" pad="5"/>
+<connect gate="G$1" pin="PWM_UH" pad="12"/>
+<connect gate="G$1" pin="PWM_UL" pad="11"/>
+<connect gate="G$1" pin="PWM_VH" pad="10"/>
+<connect gate="G$1" pin="PWM_VL" pad="9"/>
+<connect gate="G$1" pin="PWM_WH" pad="8"/>
+<connect gate="G$1" pin="PWM_WL" pad="7"/>
+<connect gate="G$1" pin="SCK" pad="4"/>
+<connect gate="G$1" pin="TEMP" pad="33"/>
+<connect gate="G$1" pin="U" pad="19 20 21"/>
+<connect gate="G$1" pin="V" pad="22 23 24"/>
+<connect gate="G$1" pin="VCCIO" pad="1"/>
+<connect gate="G$1" pin="VM" pad="15 16"/>
+<connect gate="G$1" pin="W" pad="25 26 27"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TMC4671-BOB" prefix="KIT" uservalue="yes">
+<description>&lt;a href="https://www.trinamic.com/support/eval-kits/details/tmc4671-bob/"&gt;TMC4671-BOB&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="TMC4671-BOB" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TMC4671-BOB">
+<connects>
+<connect gate="G$1" pin="!SS!" pad="6"/>
+<connect gate="G$1" pin="+5V" pad="1"/>
+<connect gate="G$1" pin="ADC_I0" pad="13"/>
+<connect gate="G$1" pin="ADC_I1" pad="14"/>
+<connect gate="G$1" pin="DIR" pad="5"/>
+<connect gate="G$1" pin="ENC1_A" pad="30"/>
+<connect gate="G$1" pin="ENC1_B" pad="31"/>
+<connect gate="G$1" pin="ENC1_N" pad="32"/>
+<connect gate="G$1" pin="GND" pad="3 12 15 16 18"/>
+<connect gate="G$1" pin="HALL_U" pad="27"/>
+<connect gate="G$1" pin="HALL_V" pad="28"/>
+<connect gate="G$1" pin="HALL_W" pad="29"/>
+<connect gate="G$1" pin="MISO" pad="9"/>
+<connect gate="G$1" pin="MOSI" pad="8"/>
+<connect gate="G$1" pin="PWM_UH" pad="26"/>
+<connect gate="G$1" pin="PWM_UL" pad="25"/>
+<connect gate="G$1" pin="PWM_VH" pad="24"/>
+<connect gate="G$1" pin="PWM_VL" pad="23"/>
+<connect gate="G$1" pin="PWM_WH" pad="22"/>
+<connect gate="G$1" pin="PWM_WL" pad="21"/>
+<connect gate="G$1" pin="PWM_YH" pad="20"/>
+<connect gate="G$1" pin="PWM_YL" pad="19"/>
+<connect gate="G$1" pin="RXD" pad="10"/>
+<connect gate="G$1" pin="SCK" pad="7"/>
+<connect gate="G$1" pin="STP" pad="4"/>
+<connect gate="G$1" pin="TXD" pad="11"/>
+<connect gate="G$1" pin="VCCIO" pad="2"/>
+<connect gate="G$1" pin="VM" pad="17"/>
 </connects>
 <technologies>
 <technology name=""/>
