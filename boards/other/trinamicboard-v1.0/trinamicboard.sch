@@ -16791,10 +16791,10 @@ rfk_1850.pdf</description>
 <wire x1="-4.445" y1="2.54" x2="-3.175" y2="2.54" width="0.1524" layer="21"/>
 <wire x1="-3.175" y1="2.54" x2="-2.54" y2="1.905" width="0.1524" layer="21"/>
 <wire x1="-6.985" y1="2.54" x2="-7.62" y2="1.905" width="0.1524" layer="21"/>
-<pad name="6" x="-6.35" y="1.27" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="5" x="-3.81" y="1.27" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="4" x="-1.27" y="1.27" drill="1.016" shape="octagon" rot="R90"/>
-<text x="-7.81" y="3" size="1" layer="25">&gt;NAME</text>
+<pad name="12" x="-6.35" y="1.27" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="11" x="-3.81" y="1.27" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="10" x="-1.27" y="1.27" drill="1.016" shape="octagon" rot="R90"/>
+<text x="-7.81" y="-3" size="1" layer="25" align="top-left">&gt;NAME</text>
 <wire x1="0" y1="-1.905" x2="-0.635" y2="-2.54" width="0.1524" layer="21"/>
 <wire x1="-0.635" y1="-2.54" x2="-1.905" y2="-2.54" width="0.1524" layer="21"/>
 <wire x1="-1.905" y1="-2.54" x2="-2.54" y2="-1.905" width="0.1524" layer="21"/>
@@ -16807,9 +16807,9 @@ rfk_1850.pdf</description>
 <wire x1="-7.62" y1="1.905" x2="-7.62" y2="-1.905" width="0.1524" layer="21"/>
 <wire x1="-7.62" y1="-1.905" x2="-6.985" y2="-2.54" width="0.1524" layer="21"/>
 <wire x1="-5.715" y1="-2.54" x2="-6.985" y2="-2.54" width="0.1524" layer="21"/>
-<pad name="12" x="-6.35" y="-1.27" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="11" x="-3.81" y="-1.27" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="10" x="-1.27" y="-1.27" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="6" x="-6.35" y="-1.27" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="5" x="-3.81" y="-1.27" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="4" x="-1.27" y="-1.27" drill="1.016" shape="octagon" rot="R90"/>
 <wire x1="5.08" y1="1.905" x2="5.715" y2="2.54" width="0.1524" layer="21"/>
 <wire x1="5.715" y1="2.54" x2="6.985" y2="2.54" width="0.1524" layer="21"/>
 <wire x1="6.985" y1="2.54" x2="7.62" y2="1.905" width="0.1524" layer="21"/>
@@ -16819,9 +16819,9 @@ rfk_1850.pdf</description>
 <wire x1="3.175" y1="2.54" x2="4.445" y2="2.54" width="0.1524" layer="21"/>
 <wire x1="4.445" y1="2.54" x2="5.08" y2="1.905" width="0.1524" layer="21"/>
 <wire x1="0.635" y1="2.54" x2="0" y2="1.905" width="0.1524" layer="21"/>
-<pad name="3" x="1.27" y="1.27" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="2" x="3.81" y="1.27" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="1" x="6.35" y="1.27" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="9" x="1.27" y="1.27" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="8" x="3.81" y="1.27" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="7" x="6.35" y="1.27" drill="1.016" shape="octagon" rot="R90"/>
 <wire x1="7.62" y1="1.905" x2="7.62" y2="-1.905" width="0.1524" layer="21"/>
 <wire x1="7.62" y1="-1.905" x2="6.985" y2="-2.54" width="0.1524" layer="21"/>
 <wire x1="6.985" y1="-2.54" x2="5.715" y2="-2.54" width="0.1524" layer="21"/>
@@ -16835,13 +16835,15 @@ rfk_1850.pdf</description>
 <wire x1="0" y1="1.905" x2="0" y2="-1.905" width="0.1524" layer="21"/>
 <wire x1="0" y1="-1.905" x2="0.635" y2="-2.54" width="0.1524" layer="21"/>
 <wire x1="1.905" y1="-2.54" x2="0.635" y2="-2.54" width="0.1524" layer="21"/>
-<pad name="9" x="1.27" y="-1.27" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="8" x="3.81" y="-1.27" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="7" x="6.35" y="-1.27" drill="1.016" shape="octagon" rot="R90"/>
-<wire x1="7.62" y1="0.635" x2="6.985" y2="0" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="0.635" x2="5.715" y2="0" width="0.1524" layer="21"/>
-<wire x1="6.985" y1="0" x2="5.715" y2="0" width="0.1524" layer="21"/>
-<circle x="8.89" y="2.54" radius="0.5" width="0" layer="25"/>
+<pad name="3" x="1.27" y="-1.27" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="2" x="3.81" y="-1.27" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="1" x="6.35" y="-1.27" drill="1.016" shape="octagon" rot="R90"/>
+<circle x="8.89" y="-2.54" radius="0.5" width="0" layer="25"/>
+<text x="0.00761875" y="3.81" size="1.778" layer="21" font="vector" ratio="15" rot="SR180" align="top-center">^   ^
+CABLE</text>
+<wire x1="5.08" y1="-0.635" x2="5.715" y2="0" width="0.1524" layer="21"/>
+<wire x1="5.715" y1="0" x2="6.985" y2="0" width="0.1524" layer="21"/>
+<wire x1="6.985" y1="0" x2="7.62" y2="-0.635" width="0.1524" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -17076,18 +17078,18 @@ rfk_1850.pdf</description>
 <devices>
 <device name="" package="PMOD">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="10" pad="10"/>
-<connect gate="G$1" pin="11" pad="11"/>
-<connect gate="G$1" pin="12" pad="12"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-<connect gate="G$1" pin="9" pad="9"/>
+<connect gate="G$1" pin="1" pad="7"/>
+<connect gate="G$1" pin="10" pad="4"/>
+<connect gate="G$1" pin="11" pad="5"/>
+<connect gate="G$1" pin="12" pad="6"/>
+<connect gate="G$1" pin="2" pad="8"/>
+<connect gate="G$1" pin="3" pad="9"/>
+<connect gate="G$1" pin="4" pad="10"/>
+<connect gate="G$1" pin="5" pad="11"/>
+<connect gate="G$1" pin="6" pad="12"/>
+<connect gate="G$1" pin="7" pad="1"/>
+<connect gate="G$1" pin="8" pad="2"/>
+<connect gate="G$1" pin="9" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -25725,6 +25727,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pad name="VBUS" x="11.43" y="21.59" drill="1.02" rot="R180"/>
 <pad name="VDD" x="11.43" y="24.13" drill="1.02" rot="R180"/>
 <text x="-12.7" y="27.94" size="1.27" layer="25">&gt;NAME</text>
+<text x="0" y="17.78" size="1.778" layer="21" font="vector" ratio="15" rot="SR0" align="bottom-center">^   ^
+MTRAIN
+FRONT</text>
 </package>
 <package name="TMC4671-BOB">
 <description>TMC4671 BreakOut Board (BOB)</description>
@@ -28297,9 +28302,9 @@ Source: SN74LVC3G17.pdf</description>
 <pinref part="KIT3" gate="G$1" pin="MOSI"/>
 </segment>
 <segment>
-<label x="190.5" y="165.1" size="1.27" layer="95" font="vector" rot="MR0" xref="yes"/>
-<wire x1="190.5" y1="165.1" x2="195.58" y2="165.1" width="0.1524" layer="91"/>
-<pinref part="KIT2" gate="G$1" pin="MISO"/>
+<pinref part="KIT2" gate="G$1" pin="MOSI"/>
+<wire x1="195.58" y1="167.64" x2="190.5" y2="167.64" width="0.1524" layer="91"/>
+<label x="190.5" y="167.64" size="1.27" layer="95" font="vector" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="MISO-TMC" class="0">
@@ -28309,9 +28314,9 @@ Source: SN74LVC3G17.pdf</description>
 <pinref part="KIT3" gate="G$1" pin="MISO"/>
 </segment>
 <segment>
-<label x="190.5" y="167.64" size="1.27" layer="95" font="vector" rot="MR0" xref="yes"/>
-<wire x1="190.5" y1="167.64" x2="195.58" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="KIT2" gate="G$1" pin="MOSI"/>
+<pinref part="KIT2" gate="G$1" pin="MISO"/>
+<wire x1="195.58" y1="165.1" x2="190.5" y2="165.1" width="0.1524" layer="91"/>
+<label x="190.5" y="165.1" size="1.27" layer="95" font="vector" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="SCK-TMC" class="0">
