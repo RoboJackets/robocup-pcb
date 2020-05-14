@@ -28529,7 +28529,7 @@ external FPGA</text>
 <wire x1="266.7" y1="121.92" x2="10.16" y2="121.92" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="10.16" y1="121.92" x2="10.16" y2="205.74" width="0.1524" layer="97" style="shortdash"/>
 <text x="12.7" y="200.66" size="1.778" layer="97">FPGA PMOD Connectors</text>
-<text x="213.36" y="172.72" size="1.778" layer="97">Connection Mapping
+<text x="213.36" y="172.72" size="1.778" layer="97">Connections:
 None for no FPGA
 JA and JD for FPGA + 4671
 JA, JB, JC, and JD for FPGA only</text>
