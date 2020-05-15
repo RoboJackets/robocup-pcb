@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.1">
+<eagle version="9.5.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -28415,6 +28415,13 @@ Source: SN74LVC3G17.pdf</description>
 <pinref part="KIT2" gate="G$1" pin="ENC1_B"/>
 </segment>
 </net>
+<net name="CURW" class="0">
+<segment>
+<label x="215.9" y="114.3" size="1.27" layer="95" font="vector" rot="MR90" xref="yes"/>
+<pinref part="KIT3" gate="G$1" pin="CURW"/>
+<wire x1="215.9" y1="114.3" x2="215.9" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -28814,18 +28821,6 @@ JA, JB, JC, and JD for mTrain + FPGA </text>
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="102,2,218.44,124.46,V_OUT,+1.2V-PRE,,,,"/>
-<approved hash="102,2,218.44,73.66,V_OUT,+2.5V-PRE,,,,"/>
-<approved hash="201,2,218.44,73.66,V_OUT,+1.2V-PRE\, +2.5V-PRE,,,,"/>
-<approved hash="201,2,218.44,124.46,V_OUT,+1.2V-PRE\, +2.5V-PRE,,,,"/>
-<approved hash="104,1,91.44,167.64,KIT1,VIN,+5V,,,"/>
-<approved hash="204,1,188.087,167.64,KIT1,VBUS,,,,"/>
-<approved hash="104,1,187.96,170.18,KIT1,VDD,V_MTRAIN,,,"/>
-<approved hash="206,2,218.44,119.38,PWR-ERR,,,,,"/>
-<approved hash="206,2,218.44,68.58,PWR-ERR,,,,,"/>
-<approved hash="106,2,96.52,99.06,SW,,,,,"/>
-</errors>
 </schematic>
 </drawing>
 <compatibility>
