@@ -28074,7 +28074,7 @@ Source: SN74LVC3G17.pdf</description>
 <pinref part="SUPPLY9" gate="P" pin="+3.3V"/>
 </segment>
 </net>
-<net name="5V-LED" class="0">
+<net name="+5V-LED" class="0">
 <segment>
 <pinref part="R32" gate="G$1" pin="2"/>
 <pinref part="D3" gate="G$1" pin="A"/>
@@ -28133,7 +28133,7 @@ Source: SN74LVC3G17.pdf</description>
 <pinref part="SUPPLY7" gate="+5V" pin="+5V"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="+5V-PREFUSE" class="0">
 <segment>
 <pinref part="F1" gate="G$1" pin="2"/>
 <pinref part="R29" gate="G$1" pin="1"/>
@@ -28154,7 +28154,7 @@ Source: SN74LVC3G17.pdf</description>
 <pinref part="F2" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="5V-LED1" class="0">
+<net name="+3.3V-LED" class="0">
 <segment>
 <pinref part="R33" gate="G$1" pin="2"/>
 <pinref part="D4" gate="G$1" pin="A"/>
@@ -28192,7 +28192,7 @@ Source: SN74LVC3G17.pdf</description>
 <wire x1="91.44" y1="48.26" x2="93.98" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="+3.3V-PREFUSE" class="0">
 <segment>
 <pinref part="F2" gate="G$1" pin="2"/>
 <pinref part="R30" gate="G$1" pin="1"/>
@@ -28678,20 +28678,6 @@ JA, JB, JC, and JD for mTrain + FPGA </text>
 <label x="193.04" y="154.94" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
-<net name="!SS!-ADC" class="0">
-<segment>
-<pinref part="JD" gate="G$1" pin="9"/>
-<wire x1="187.96" y1="149.86" x2="193.04" y2="149.86" width="0.1524" layer="91"/>
-<label x="193.04" y="149.86" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-</net>
-<net name="MISO-TMC" class="0">
-<segment>
-<pinref part="JD" gate="G$1" pin="10"/>
-<wire x1="187.96" y1="144.78" x2="193.04" y2="144.78" width="0.1524" layer="91"/>
-<label x="193.04" y="144.78" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
-</net>
 <net name="ENC1-A" class="0">
 <segment>
 <pinref part="JA" gate="G$1" pin="1"/>
@@ -28816,6 +28802,20 @@ JA, JB, JC, and JD for mTrain + FPGA </text>
 <pinref part="JB" gate="G$1" pin="9"/>
 <wire x1="81.28" y1="149.86" x2="86.36" y2="149.86" width="0.1524" layer="91"/>
 <label x="86.36" y="149.86" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+</net>
+<net name="!SS!-ADC" class="0">
+<segment>
+<label x="193.04" y="144.78" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="JD" gate="G$1" pin="10"/>
+<wire x1="187.96" y1="144.78" x2="193.04" y2="144.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="MISO-TMC" class="0">
+<segment>
+<wire x1="187.96" y1="149.86" x2="193.04" y2="149.86" width="0.1524" layer="91"/>
+<label x="193.04" y="149.86" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="JD" gate="G$1" pin="9"/>
 </segment>
 </net>
 </nets>
