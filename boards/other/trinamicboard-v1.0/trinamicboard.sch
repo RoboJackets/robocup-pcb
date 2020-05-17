@@ -27172,7 +27172,7 @@ Source: SN74LVC3G17.pdf</description>
 <wire x1="104.14" y1="68.58" x2="114.3" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+5V" class="0">
+<net name="2+5V" class="0">
 <segment>
 <wire x1="58.42" y1="170.18" x2="53.34" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="170.18" x2="53.34" y2="175.26" width="0.1524" layer="91"/>
@@ -28116,7 +28116,7 @@ Source: SN74LVC3G17.pdf</description>
 <wire x1="91.44" y1="101.6" x2="93.98" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+5V" class="0">
+<net name="2+5V" class="0">
 <segment>
 <pinref part="R32" gate="G$1" pin="1"/>
 <wire x1="144.78" y1="96.52" x2="139.7" y2="96.52" width="0.1524" layer="91"/>
@@ -28569,7 +28569,7 @@ JA, JB, JC, and JD for mTrain + FPGA </text>
 <junction x="218.44" y="139.7"/>
 </segment>
 </net>
-<net name="+5V" class="0">
+<net name="2+5V" class="0">
 <segment>
 <pinref part="SUPPLY31" gate="+5V" pin="+5V"/>
 <wire x1="27.94" y1="83.82" x2="50.8" y2="83.82" width="0.1524" layer="91"/>
