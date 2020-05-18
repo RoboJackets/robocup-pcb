@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -9351,8 +9351,8 @@ Datasheet: https://www.onsemi.com/pub/Collateral/NCP161-D.PDF &lt;/p&gt;</descri
 </classes>
 <parts>
 <part name="FRAME1" library="RoboJackets-Frames" deviceset="FRAME_A_L" device="">
-<attribute name="REVISION" value="1.0"/>
-<attribute name="SCH_DESC" value="Breakout for ICM 42605 IMU"/>
+<attribute name="REVISION" value="v1.0"/>
+<attribute name="SCH_DESC" value="Breakout for ICM 20948 IMU"/>
 <attribute name="TEAM" value="RoboCup SSL"/>
 </part>
 <part name="U1" library="RoboJackets-Sensors" deviceset="ICM-20948" device="ICM-20948" value="ICM-20948"/>
@@ -9402,6 +9402,7 @@ Datasheet: https://www.onsemi.com/pub/Collateral/NCP161-D.PDF &lt;/p&gt;</descri
 </parts>
 <sheets>
 <sheet>
+<description>Breakout for ICM 20948 IMU</description>
 <plain>
 <wire x1="10.16" y1="205.74" x2="101.6" y2="205.74" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="101.6" y1="205.74" x2="101.6" y2="144.78" width="0.1524" layer="97" style="shortdash"/>

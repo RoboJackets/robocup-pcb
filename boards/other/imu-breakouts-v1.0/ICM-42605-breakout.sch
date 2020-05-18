@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -8055,7 +8055,7 @@ In this library you will find circuit elements that are used for getting measure
 </classes>
 <parts>
 <part name="FRAME1" library="RoboJackets-Frames" deviceset="FRAME_A_L" device="">
-<attribute name="REVISION" value="1.0"/>
+<attribute name="REVISION" value="v1.0"/>
 <attribute name="SCH_DESC" value="Breakout for ICM 42605 IMU"/>
 <attribute name="TEAM" value="RoboCup SSL"/>
 </part>
@@ -8074,6 +8074,7 @@ In this library you will find circuit elements that are used for getting measure
 </parts>
 <sheets>
 <sheet>
+<description>Breakout for ICM 42605 IMU</description>
 <plain>
 <wire x1="15.24" y1="175.26" x2="83.82" y2="175.26" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="83.82" y1="175.26" x2="83.82" y2="137.16" width="0.1524" layer="97" style="shortdash"/>
