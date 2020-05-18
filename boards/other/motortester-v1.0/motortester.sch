@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -12408,17 +12408,19 @@ In this library you will find frames that can be used to help organize a schemat
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="+5V"/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="FRAME1" library="RoboJackets-Frames" deviceset="FRAME_A_L" device="">
-<attribute name="REVISION" value=""/>
-<attribute name="TEAM" value=""/>
+<attribute name="REVISION" value="v1.0"/>
+<attribute name="SCH_DESC" value="Microcontroller and Connectors"/>
+<attribute name="TEAM" value="RoboCup SSL"/>
 </part>
 <part name="FRAME2" library="RoboJackets-Frames" deviceset="FRAME_A_L" device="">
-<attribute name="REVISION" value=""/>
-<attribute name="TEAM" value=""/>
+<attribute name="REVISION" value="v1.0"/>
+<attribute name="SCH_DESC" value="Resistor Network"/>
+<attribute name="TEAM" value="RoboCup SSL"/>
 </part>
 </parts>
 <sheets>
 <sheet>
-<description>Microcontroller and connectors</description>
+<description>Microcontroller and Connectors</description>
 <plain>
 <wire x1="91.44" y1="20.32" x2="91.44" y2="-2.54" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="91.44" y1="-2.54" x2="121.92" y2="-2.54" width="0.1524" layer="97" style="shortdash"/>
@@ -12506,6 +12508,7 @@ Board</text>
 <attribute name="DRAWING_NAME" x="106.68" y="-49.53" size="2.54" layer="94" font="vector"/>
 <attribute name="REVISION" x="163.83" y="-62.23" size="2.54" layer="94"/>
 <attribute name="TEAM" x="92.71" y="-34.29" size="3.048" layer="94" ratio="10" align="top-left"/>
+<attribute name="SCH_DESC" x="92.71" y="-62.23" size="2.54" layer="94"/>
 </instance>
 </instances>
 <busses>
@@ -12865,7 +12868,7 @@ Board</text>
 </nets>
 </sheet>
 <sheet>
-<description>Resistor network</description>
+<description>Resistor Network</description>
 <plain>
 <wire x1="48.26" y1="119.38" x2="48.26" y2="48.26" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="48.26" y1="48.26" x2="111.76" y2="48.26" width="0.1524" layer="97" style="shortdash"/>
@@ -12927,6 +12930,7 @@ Board</text>
 <attribute name="DRAWING_NAME" x="198.12" y="-13.97" size="2.54" layer="94" font="vector"/>
 <attribute name="REVISION" x="255.27" y="-26.67" size="2.54" layer="94"/>
 <attribute name="TEAM" x="184.15" y="1.27" size="3.048" layer="94" ratio="10" align="top-left"/>
+<attribute name="SCH_DESC" x="184.15" y="-26.67" size="2.54" layer="94"/>
 </instance>
 </instances>
 <busses>

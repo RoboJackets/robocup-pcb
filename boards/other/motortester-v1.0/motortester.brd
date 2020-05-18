@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -34,7 +34,7 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -123,7 +123,8 @@
 <wire x1="138.029" y1="19.431" x2="137.98" y2="81.019" width="0" layer="20"/>
 <wire x1="137.98" y1="81.019" x2="37.973" y2="80.918" width="0" layer="20"/>
 <wire x1="37.973" y1="80.918" x2="37.973" y2="19.431" width="0" layer="20"/>
-<text x="46" y="32.5" size="1.778" layer="25">Motor Tester v1.0</text>
+<text x="46" y="32.5" size="1.778" layer="25">Motor Tester</text>
+<text x="61.754" y="32.5" size="1.778" layer="25">&gt;VERSION</text>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
@@ -4804,6 +4805,7 @@ In this library you will find logos and images specific to RoboJackets. The part
 </library>
 </libraries>
 <attributes>
+<attribute name="VERSION" value="v1.0"/>
 </attributes>
 <variantdefs>
 </variantdefs>
