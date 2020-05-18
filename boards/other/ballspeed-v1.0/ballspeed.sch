@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -8834,7 +8834,7 @@ In this library you will find frames that can be used to help organize a schemat
 </libraries>
 <attributes>
 <attribute name="REVISION" value="v1.0"/>
-<attribute name="TEAM" value="RoboCup"/>
+<attribute name="TEAM" value="RoboCup SSL"/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -8884,16 +8884,19 @@ In this library you will find frames that can be used to help organize a schemat
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="FRAME1" library="RoboJackets-Frames" deviceset="FRAME_A_L" device="">
-<attribute name="REVISION" value=""/>
-<attribute name="TEAM" value=""/>
+<attribute name="REVISION" value="v1.0"/>
+<attribute name="SCH_DESC" value="Connectors"/>
+<attribute name="TEAM" value="RoboCup SSL"/>
 </part>
 <part name="FRAME2" library="RoboJackets-Frames" deviceset="FRAME_A_L" device="">
-<attribute name="REVISION" value=""/>
-<attribute name="TEAM" value=""/>
+<attribute name="REVISION" value="v1.0"/>
+<attribute name="SCH_DESC" value="ADC"/>
+<attribute name="TEAM" value="RoboCup SSL"/>
 </part>
 <part name="FRAME3" library="RoboJackets-Frames" deviceset="FRAME_A_L" device="">
-<attribute name="REVISION" value=""/>
-<attribute name="TEAM" value=""/>
+<attribute name="REVISION" value="v1.0"/>
+<attribute name="SCH_DESC" value="5V Regulator"/>
+<attribute name="TEAM" value="RoboCup SSL"/>
 </part>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value=".1uF"/>
 </parts>
@@ -8977,6 +8980,7 @@ In this library you will find frames that can be used to help organize a schemat
 <attribute name="DRAWING_NAME" x="177.8" y="-110.49" size="2.54" layer="94" font="vector"/>
 <attribute name="TEAM" x="163.83" y="-95.25" size="3.048" layer="94" ratio="10" align="top-left"/>
 <attribute name="REVISION" x="234.95" y="-123.19" size="2.54" layer="94"/>
+<attribute name="SCH_DESC" x="163.83" y="-123.19" size="2.54" layer="94"/>
 </instance>
 </instances>
 <busses>
@@ -9097,7 +9101,7 @@ In this library you will find frames that can be used to help organize a schemat
 <wire x1="73.66" y1="48.26" x2="0" y2="48.26" width="0.1524" layer="97" style="longdash"/>
 <wire x1="0" y1="48.26" x2="0" y2="0" width="0.1524" layer="97" style="longdash"/>
 <text x="2.54" y="45.72" size="1.27" layer="97">ADC</text>
-<text x="76.2" y="35.56" size="1.778" layer="91">The phototransistors send analog values,
+<text x="76.2" y="35.56" size="1.778" layer="97">The phototransistors send analog values,
 but the Raspberry Pi reads only digital signals.
 So, we need an ADC.</text>
 </plain>
@@ -9119,6 +9123,7 @@ So, we need an ADC.</text>
 <attribute name="DRAWING_NAME" x="177.8" y="-138.43" size="2.54" layer="94" font="vector"/>
 <attribute name="TEAM" x="163.83" y="-123.19" size="3.048" layer="94" ratio="10" align="top-left"/>
 <attribute name="REVISION" x="234.95" y="-151.13" size="2.54" layer="94"/>
+<attribute name="SCH_DESC" x="163.83" y="-151.13" size="2.54" layer="94"/>
 </instance>
 <instance part="C3" gate="G$1" x="66.04" y="22.86" smashed="yes">
 <attribute name="NAME" x="67.056" y="23.495" size="1.778" layer="95"/>
@@ -9310,6 +9315,7 @@ So, we need an ADC.</text>
 <attribute name="DRAWING_NAME" x="175.26" y="-102.87" size="2.54" layer="94" font="vector"/>
 <attribute name="TEAM" x="161.29" y="-87.63" size="3.048" layer="94" ratio="10" align="top-left"/>
 <attribute name="REVISION" x="232.41" y="-115.57" size="2.54" layer="94"/>
+<attribute name="SCH_DESC" x="161.29" y="-115.57" size="2.54" layer="94"/>
 </instance>
 </instances>
 <busses>
