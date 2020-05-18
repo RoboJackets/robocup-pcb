@@ -3729,7 +3729,8 @@ In this library you will find frames that can be used to help organize a schemat
 </deviceset>
 </devicesets>
 </library>
-<library name="adafruit">
+<library name="RoboJackets-Boards">
+<description>RoboJackets EAGLE Libraries - Boards</description>
 <packages>
 <package name="ARDUINOMICRO">
 <wire x1="-24.13" y1="-9.144" x2="24.13" y2="-9.144" width="0.127" layer="21"/>
@@ -3896,7 +3897,7 @@ In this library you will find frames that can be used to help organize a schemat
 <attribute name="SCH_DESC" value="Arduino and Connectors"/>
 <attribute name="TEAM" value="RoboCup SSL"/>
 </part>
-<part name="U$1" library="adafruit" deviceset="ARDUINOMICRO" device=""/>
+<part name="U$1" library="RoboJackets-Boards" deviceset="ARDUINOMICRO" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
