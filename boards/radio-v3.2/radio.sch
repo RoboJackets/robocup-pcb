@@ -16213,7 +16213,7 @@ In this library you will find diodes and other circuit protection elements.
 <part name="D5" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-GREEN" value="GREEN"/>
 <part name="D6" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-YELLOW" value="YELLOW"/>
 <part name="FRAME1" library="RoboJackets-Frames" deviceset="FRAME_B_L" device="">
-<attribute name="SCH_DESC" value="Dual TX/RX radio module using ISM43340"/>
+<attribute name="SCH_DESC" value="TX/RX radio module using ISM43340"/>
 </part>
 <part name="SUPPLY9" library="RoboJackets-Supplies" deviceset="+5.0V" device=""/>
 <part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
@@ -16229,7 +16229,7 @@ In this library you will find diodes and other circuit protection elements.
 </parts>
 <sheets>
 <sheet>
-<description>Radios &amp; Radio Power</description>
+<description>TX/RX radio module using ISM43340</description>
 <plain>
 <text x="83.82" y="246.38" size="1.778" layer="97">DNC</text>
 <text x="83.82" y="248.92" size="1.778" layer="97">DNC</text>
