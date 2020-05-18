@@ -34018,7 +34018,7 @@ pins while connecting</text>
 </nets>
 </sheet>
 <sheet>
-<description>Power Deliverey Circuits</description>
+<description>Power Delivery Circuits</description>
 <plain>
 <wire x1="172.72" y1="101.6" x2="266.7" y2="101.6" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="266.7" y1="101.6" x2="266.7" y2="144.78" width="0.1524" layer="97" style="shortdash"/>

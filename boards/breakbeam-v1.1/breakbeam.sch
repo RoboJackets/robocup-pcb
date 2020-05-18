@@ -5368,6 +5368,7 @@ Source: http://www.molex.com/product/micro/87438.html</description>
 </parts>
 <sheets>
 <sheet>
+<description>Breakbeam Circuits</description>
 <plain>
 </plain>
 <instances>
