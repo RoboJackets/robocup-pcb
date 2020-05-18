@@ -2744,6 +2744,69 @@ Source: 8x ADG1408_1409.pdf</description>
 <vertex x="-0.1" y="2.1"/>
 </polygon>
 </package>
+<package name="QFP80P1200X1200X120-44">
+<description>44-QFP, 0.8 mm pitch, 12 mm span, 10 X 10 X 1.2 mm body
+&lt;p&gt;44-pin QFP package with 0.8 mm pitch, 12 mm lead span1 X 12 mm lead span2 with body size 10 X 10 X 1.2 mm&lt;/p&gt;</description>
+<circle x="-5.7656" y="4.7775" radius="0.25" width="0" layer="21"/>
+<wire x1="-5.05" y1="4.5275" x2="-5.05" y2="5.05" width="0.12" layer="21"/>
+<wire x1="-5.05" y1="5.05" x2="-4.5275" y2="5.05" width="0.12" layer="21"/>
+<wire x1="5.05" y1="4.5275" x2="5.05" y2="5.05" width="0.12" layer="21"/>
+<wire x1="5.05" y1="5.05" x2="4.5275" y2="5.05" width="0.12" layer="21"/>
+<wire x1="5.05" y1="-4.5275" x2="5.05" y2="-5.05" width="0.12" layer="21"/>
+<wire x1="5.05" y1="-5.05" x2="4.5275" y2="-5.05" width="0.12" layer="21"/>
+<wire x1="-5.05" y1="-4.5275" x2="-5.05" y2="-5.05" width="0.12" layer="21"/>
+<wire x1="-5.05" y1="-5.05" x2="-4.5275" y2="-5.05" width="0.12" layer="21"/>
+<wire x1="5.05" y1="-5.05" x2="-5.05" y2="-5.05" width="0.12" layer="51"/>
+<wire x1="-5.05" y1="-5.05" x2="-5.05" y2="5.05" width="0.12" layer="51"/>
+<wire x1="-5.05" y1="5.05" x2="5.05" y2="5.05" width="0.12" layer="51"/>
+<wire x1="5.05" y1="5.05" x2="5.05" y2="-5.05" width="0.12" layer="51"/>
+<smd name="1" x="-5.6813" y="4" dx="1.5998" dy="0.5471" layer="1"/>
+<smd name="2" x="-5.6813" y="3.2" dx="1.5998" dy="0.5471" layer="1"/>
+<smd name="3" x="-5.6813" y="2.4" dx="1.5998" dy="0.5471" layer="1"/>
+<smd name="4" x="-5.6813" y="1.6" dx="1.5998" dy="0.5471" layer="1"/>
+<smd name="5" x="-5.6813" y="0.8" dx="1.5998" dy="0.5471" layer="1"/>
+<smd name="6" x="-5.6813" y="0" dx="1.5998" dy="0.5471" layer="1"/>
+<smd name="7" x="-5.6813" y="-0.8" dx="1.5998" dy="0.5471" layer="1"/>
+<smd name="8" x="-5.6813" y="-1.6" dx="1.5998" dy="0.5471" layer="1"/>
+<smd name="9" x="-5.6813" y="-2.4" dx="1.5998" dy="0.5471" layer="1"/>
+<smd name="10" x="-5.6813" y="-3.2" dx="1.5998" dy="0.5471" layer="1"/>
+<smd name="11" x="-5.6813" y="-4" dx="1.5998" dy="0.5471" layer="1"/>
+<smd name="12" x="-4" y="-5.6813" dx="1.5998" dy="0.5471" layer="1" rot="R90"/>
+<smd name="13" x="-3.2" y="-5.6813" dx="1.5998" dy="0.5471" layer="1" rot="R90"/>
+<smd name="14" x="-2.4" y="-5.6813" dx="1.5998" dy="0.5471" layer="1" rot="R90"/>
+<smd name="15" x="-1.6" y="-5.6813" dx="1.5998" dy="0.5471" layer="1" rot="R90"/>
+<smd name="16" x="-0.8" y="-5.6813" dx="1.5998" dy="0.5471" layer="1" rot="R90"/>
+<smd name="17" x="0" y="-5.6813" dx="1.5998" dy="0.5471" layer="1" rot="R90"/>
+<smd name="18" x="0.8" y="-5.6813" dx="1.5998" dy="0.5471" layer="1" rot="R90"/>
+<smd name="19" x="1.6" y="-5.6813" dx="1.5998" dy="0.5471" layer="1" rot="R90"/>
+<smd name="20" x="2.4" y="-5.6813" dx="1.5998" dy="0.5471" layer="1" rot="R90"/>
+<smd name="21" x="3.2" y="-5.6813" dx="1.5998" dy="0.5471" layer="1" rot="R90"/>
+<smd name="22" x="4" y="-5.6813" dx="1.5998" dy="0.5471" layer="1" rot="R90"/>
+<smd name="23" x="5.6813" y="-4" dx="1.5998" dy="0.5471" layer="1"/>
+<smd name="24" x="5.6813" y="-3.2" dx="1.5998" dy="0.5471" layer="1"/>
+<smd name="25" x="5.6813" y="-2.4" dx="1.5998" dy="0.5471" layer="1"/>
+<smd name="26" x="5.6813" y="-1.6" dx="1.5998" dy="0.5471" layer="1"/>
+<smd name="27" x="5.6813" y="-0.8" dx="1.5998" dy="0.5471" layer="1"/>
+<smd name="28" x="5.6813" y="0" dx="1.5998" dy="0.5471" layer="1"/>
+<smd name="29" x="5.6813" y="0.8" dx="1.5998" dy="0.5471" layer="1"/>
+<smd name="30" x="5.6813" y="1.6" dx="1.5998" dy="0.5471" layer="1"/>
+<smd name="31" x="5.6813" y="2.4" dx="1.5998" dy="0.5471" layer="1"/>
+<smd name="32" x="5.6813" y="3.2" dx="1.5998" dy="0.5471" layer="1"/>
+<smd name="33" x="5.6813" y="4" dx="1.5998" dy="0.5471" layer="1"/>
+<smd name="34" x="4" y="5.6813" dx="1.5998" dy="0.5471" layer="1" rot="R90"/>
+<smd name="35" x="3.2" y="5.6813" dx="1.5998" dy="0.5471" layer="1" rot="R90"/>
+<smd name="36" x="2.4" y="5.6813" dx="1.5998" dy="0.5471" layer="1" rot="R90"/>
+<smd name="37" x="1.6" y="5.6813" dx="1.5998" dy="0.5471" layer="1" rot="R90"/>
+<smd name="38" x="0.8" y="5.6813" dx="1.5998" dy="0.5471" layer="1" rot="R90"/>
+<smd name="39" x="0" y="5.6813" dx="1.5998" dy="0.5471" layer="1" rot="R90"/>
+<smd name="40" x="-0.8" y="5.6813" dx="1.5998" dy="0.5471" layer="1" rot="R90"/>
+<smd name="41" x="-1.6" y="5.6813" dx="1.5998" dy="0.5471" layer="1" rot="R90"/>
+<smd name="42" x="-2.4" y="5.6813" dx="1.5998" dy="0.5471" layer="1" rot="R90"/>
+<smd name="43" x="-3.2" y="5.6813" dx="1.5998" dy="0.5471" layer="1" rot="R90"/>
+<smd name="44" x="-4" y="5.6813" dx="1.5998" dy="0.5471" layer="1" rot="R90"/>
+<text x="0" y="7.1162" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-7.1162" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="LM2734">
@@ -4450,6 +4513,56 @@ http://www.digikey.com/product-detail/en/XC3S250E-4PQG208C/122-1483-ND/1091711</
 <pin name="CLK" x="-22.86" y="-5.08" length="middle"/>
 <text x="-20.32" y="17.78" size="1.778" layer="95">&gt;NAME</text>
 <text x="-20.32" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="AT32A">
+<pin name="PB5(MOSI)" x="27.94" y="-25.4" length="middle" rot="R180"/>
+<pin name="PB6(MISO)" x="27.94" y="-27.94" length="middle" rot="R180"/>
+<pin name="PB7(SCK)" x="27.94" y="-30.48" length="middle" rot="R180"/>
+<pin name="!RESET!" x="5.08" y="43.18" length="middle" rot="R270"/>
+<pin name="VCC1" x="27.94" y="30.48" length="middle" rot="R180"/>
+<pin name="GND1" x="-27.94" y="30.48" length="middle"/>
+<pin name="XTAL2" x="-2.54" y="43.18" length="middle" rot="R270"/>
+<pin name="XTAL1" x="-5.08" y="43.18" length="middle" rot="R270"/>
+<pin name="PD0(RXD)" x="-27.94" y="-12.7" length="middle"/>
+<pin name="PD1(TXD)" x="-27.94" y="-15.24" length="middle"/>
+<pin name="PD2(INT00" x="-27.94" y="-17.78" length="middle"/>
+<pin name="PD3(INT1)" x="-27.94" y="-20.32" length="middle"/>
+<pin name="PD4(OC1B)" x="-27.94" y="-22.86" length="middle"/>
+<pin name="PD5(OC1A)" x="-27.94" y="-25.4" length="middle"/>
+<pin name="PD6(ICP1)" x="-27.94" y="-27.94" length="middle"/>
+<pin name="PD7(OC2)" x="-27.94" y="-30.48" length="middle"/>
+<pin name="VCC2" x="27.94" y="27.94" length="middle" rot="R180"/>
+<pin name="GND2" x="-27.94" y="27.94" length="middle"/>
+<pin name="PC0(SCL)" x="-27.94" y="10.16" length="middle"/>
+<pin name="PC1(SDA)" x="-27.94" y="7.62" length="middle"/>
+<pin name="PC2(TCK)" x="-27.94" y="5.08" length="middle"/>
+<pin name="PC3(TMS)" x="-27.94" y="2.54" length="middle"/>
+<pin name="PC4(TDO)" x="-27.94" y="0" length="middle"/>
+<pin name="PC5(TDI)" x="-27.94" y="-2.54" length="middle"/>
+<pin name="PC6(TOSC1)" x="-27.94" y="-5.08" length="middle"/>
+<pin name="PC7(TOSC2)" x="-27.94" y="-7.62" length="middle"/>
+<pin name="AVCC" x="27.94" y="17.78" length="middle" rot="R180"/>
+<pin name="GND4" x="-27.94" y="22.86" length="middle"/>
+<pin name="AREF" x="27.94" y="20.32" length="middle" rot="R180"/>
+<pin name="PA7(ADC7)" x="27.94" y="-7.62" length="middle" rot="R180"/>
+<pin name="PA6(ADC6)" x="27.94" y="-5.08" length="middle" rot="R180"/>
+<pin name="PA5(ADC5)" x="27.94" y="-2.54" length="middle" rot="R180"/>
+<pin name="PA4(ADC4)" x="27.94" y="0" length="middle" rot="R180"/>
+<pin name="PA3(ADC3)" x="27.94" y="2.54" length="middle" rot="R180"/>
+<pin name="PA2(ADC2)" x="27.94" y="5.08" length="middle" rot="R180"/>
+<pin name="PA1(ADC1)" x="27.94" y="7.62" length="middle" rot="R180"/>
+<pin name="PA0(ADC0)" x="27.94" y="10.16" length="middle" rot="R180"/>
+<pin name="VCC3" x="27.94" y="25.4" length="middle" rot="R180"/>
+<pin name="GND3" x="-27.94" y="25.4" length="middle"/>
+<pin name="PB0(XCK/T0)" x="27.94" y="-12.7" length="middle" rot="R180"/>
+<pin name="PB1(T1)" x="27.94" y="-15.24" length="middle" rot="R180"/>
+<pin name="PB2(AIN0/INT2)" x="27.94" y="-17.78" length="middle" rot="R180"/>
+<pin name="PB3(AIN1/OC0)" x="27.94" y="-20.32" length="middle" rot="R180"/>
+<pin name="PB4(!SS!)" x="27.94" y="-22.86" length="middle" rot="R180"/>
+<wire x1="-22.86" y1="38.1" x2="-22.86" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="-35.56" x2="22.86" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-35.56" x2="22.86" y2="38.1" width="0.254" layer="94"/>
+<wire x1="22.86" y1="38.1" x2="-22.86" y2="38.1" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -6521,6 +6634,64 @@ Datasheet: https://cdn-shop.adafruit.com/product-files/2343/APA102C.pdf</descrip
 <connect gate="G$1" pin="DO" pad="D_OUT"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="VCC" pad="V_CC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AT32A" prefix="U">
+<gates>
+<gate name="AT32A" symbol="AT32A" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="TQFP44" package="QFP80P1200X1200X120-44">
+<connects>
+<connect gate="AT32A" pin="!RESET!" pad="4"/>
+<connect gate="AT32A" pin="AREF" pad="29"/>
+<connect gate="AT32A" pin="AVCC" pad="27"/>
+<connect gate="AT32A" pin="GND1" pad="6"/>
+<connect gate="AT32A" pin="GND2" pad="18"/>
+<connect gate="AT32A" pin="GND3" pad="28"/>
+<connect gate="AT32A" pin="GND4" pad="39"/>
+<connect gate="AT32A" pin="PA0(ADC0)" pad="37"/>
+<connect gate="AT32A" pin="PA1(ADC1)" pad="36"/>
+<connect gate="AT32A" pin="PA2(ADC2)" pad="35"/>
+<connect gate="AT32A" pin="PA3(ADC3)" pad="34"/>
+<connect gate="AT32A" pin="PA4(ADC4)" pad="33"/>
+<connect gate="AT32A" pin="PA5(ADC5)" pad="32"/>
+<connect gate="AT32A" pin="PA6(ADC6)" pad="31"/>
+<connect gate="AT32A" pin="PA7(ADC7)" pad="30"/>
+<connect gate="AT32A" pin="PB0(XCK/T0)" pad="40"/>
+<connect gate="AT32A" pin="PB1(T1)" pad="41"/>
+<connect gate="AT32A" pin="PB2(AIN0/INT2)" pad="42"/>
+<connect gate="AT32A" pin="PB3(AIN1/OC0)" pad="43"/>
+<connect gate="AT32A" pin="PB4(!SS!)" pad="44"/>
+<connect gate="AT32A" pin="PB5(MOSI)" pad="1"/>
+<connect gate="AT32A" pin="PB6(MISO)" pad="2"/>
+<connect gate="AT32A" pin="PB7(SCK)" pad="3"/>
+<connect gate="AT32A" pin="PC0(SCL)" pad="19"/>
+<connect gate="AT32A" pin="PC1(SDA)" pad="20"/>
+<connect gate="AT32A" pin="PC2(TCK)" pad="21"/>
+<connect gate="AT32A" pin="PC3(TMS)" pad="22"/>
+<connect gate="AT32A" pin="PC4(TDO)" pad="23"/>
+<connect gate="AT32A" pin="PC5(TDI)" pad="24"/>
+<connect gate="AT32A" pin="PC6(TOSC1)" pad="25"/>
+<connect gate="AT32A" pin="PC7(TOSC2)" pad="26"/>
+<connect gate="AT32A" pin="PD0(RXD)" pad="9"/>
+<connect gate="AT32A" pin="PD1(TXD)" pad="10"/>
+<connect gate="AT32A" pin="PD2(INT00" pad="11"/>
+<connect gate="AT32A" pin="PD3(INT1)" pad="12"/>
+<connect gate="AT32A" pin="PD4(OC1B)" pad="13"/>
+<connect gate="AT32A" pin="PD5(OC1A)" pad="14"/>
+<connect gate="AT32A" pin="PD6(ICP1)" pad="15"/>
+<connect gate="AT32A" pin="PD7(OC2)" pad="16"/>
+<connect gate="AT32A" pin="VCC1" pad="5"/>
+<connect gate="AT32A" pin="VCC2" pad="17"/>
+<connect gate="AT32A" pin="VCC3" pad="38"/>
+<connect gate="AT32A" pin="XTAL1" pad="8"/>
+<connect gate="AT32A" pin="XTAL2" pad="7"/>
 </connects>
 <technologies>
 <technology name=""/>
