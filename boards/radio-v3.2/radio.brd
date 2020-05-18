@@ -5999,7 +5999,13 @@ In this library you will find logos and images specific to RoboJackets. The part
 </package>
 </packages>
 </library>
-<library name="radio_in_progress">
+<library name="RoboJackets-Diodes">
+<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
+&lt;hr&gt;
+&lt;h1&gt;RoboJackets EAGLE Libraries - Diodes&lt;/h1&gt;&lt;/br&gt;
+&lt;p&gt;
+In this library you will find diodes and other circuit protection elements.
+&lt;/p&gt;</description>
 <packages>
 <package name="SOT-553">
 <smd name="1" x="-0.5" y="0" dx="0.45" dy="0.3" layer="1" rot="R90"/>
@@ -6364,15 +6370,15 @@ Your Eurocircuits Team
 <attribute name="MPN" value="HFW8R-1STE1LF" x="15" y="46.3" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="8.1" y="45.8" size="1" layer="25" font="vector" ratio="15"/>
 </element>
-<element name="U6" library="radio_in_progress" package="SOT-553" value="TPD2E2U06DRLR" x="16" y="38.5" smashed="yes">
+<element name="U6" library="RoboJackets-Diodes" package="SOT-553" value="TPD2E2U06DRLR" x="16" y="38.5" smashed="yes">
 <attribute name="NAME" x="15.4" y="36.8" size="1" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="15" y="40.5" size="1" layer="27" font="vector"/>
 </element>
-<element name="U7" library="radio_in_progress" package="SOT-553" value="TPD2E2U06DRLR" x="14" y="38.5" smashed="yes">
+<element name="U7" library="RoboJackets-Diodes" package="SOT-553" value="TPD2E2U06DRLR" x="14" y="38.5" smashed="yes">
 <attribute name="NAME" x="13.3" y="36.8" size="1" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="13" y="40.5" size="1" layer="27" font="vector"/>
 </element>
-<element name="U8" library="radio_in_progress" package="SOT-553" value="TPD2E2U06DRLR" x="12" y="38.5" smashed="yes">
+<element name="U8" library="RoboJackets-Diodes" package="SOT-553" value="TPD2E2U06DRLR" x="12" y="38.5" smashed="yes">
 <attribute name="NAME" x="11.1" y="36.8" size="1" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="11" y="40.5" size="1" layer="27" font="vector"/>
 </element>

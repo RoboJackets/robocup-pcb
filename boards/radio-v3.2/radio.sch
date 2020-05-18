@@ -16101,7 +16101,13 @@ In this library you will find frames that can be used to help organize a schemat
 </deviceset>
 </devicesets>
 </library>
-<library name="radio_in_progress">
+<library name="RoboJackets-Diodes">
+<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
+&lt;hr&gt;
+&lt;h1&gt;RoboJackets EAGLE Libraries - Diodes&lt;/h1&gt;&lt;/br&gt;
+&lt;p&gt;
+In this library you will find diodes and other circuit protection elements.
+&lt;/p&gt;</description>
 <packages>
 <package name="SOT-553">
 <smd name="1" x="-0.5" y="0" dx="0.45" dy="0.3" layer="1" rot="R90"/>
@@ -16130,7 +16136,8 @@ In this library you will find frames that can be used to help organize a schemat
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="TPD2E2U06DRLR" prefix="U">
+<deviceset name="TPD2E2U06DRLR" prefix="D">
+<description>&lt;a href="http://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf"&gt;TPD2E2U06DRLR&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="TPD2E2U06" x="-2.54" y="-2.54"/>
 </gates>
@@ -16214,9 +16221,9 @@ In this library you will find frames that can be used to help organize a schemat
 <part name="SUPPLY11" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY12" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY29" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="U6" library="radio_in_progress" deviceset="TPD2E2U06DRLR" device=""/>
-<part name="U7" library="radio_in_progress" deviceset="TPD2E2U06DRLR" device=""/>
-<part name="U8" library="radio_in_progress" deviceset="TPD2E2U06DRLR" device=""/>
+<part name="U6" library="RoboJackets-Diodes" deviceset="TPD2E2U06DRLR" device=""/>
+<part name="U7" library="RoboJackets-Diodes" deviceset="TPD2E2U06DRLR" device=""/>
+<part name="U8" library="RoboJackets-Diodes" deviceset="TPD2E2U06DRLR" device=""/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF"/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF"/>
 </parts>
