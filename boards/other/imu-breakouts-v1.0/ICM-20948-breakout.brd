@@ -1391,36 +1391,6 @@ In this library you will find LEDs and other visual output devices.
 </package>
 </packages>
 </library>
-<library name="SparkFun-DiscreteSemi">
-<description>&lt;h3&gt;SparkFun Discrete Semiconductors&lt;/h3&gt;
-This library contains diodes, optoisolators, TRIACs, MOSFETs, transistors, etc. 
-&lt;br&gt;
-&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
-&lt;br&gt;
-&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
-&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;
-&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="SOT-416FL">
-<smd name="1" x="-0.5" y="-1.1" dx="0.46" dy="0.65" layer="1"/>
-<smd name="2" x="0.5" y="-1.1" dx="0.46" dy="0.65" layer="1"/>
-<smd name="3" x="0" y="0.05" dx="0.46" dy="0.65" layer="1"/>
-<rectangle x1="-0.8" y1="-0.955" x2="0.8" y2="-0.095" layer="51"/>
-<wire x1="-0.725" y1="-0.525" x2="-0.725" y2="-0.175" width="0.2032" layer="21"/>
-<wire x1="-0.725" y1="-0.175" x2="-0.425" y2="-0.175" width="0.2032" layer="21"/>
-<wire x1="0.425" y1="-0.175" x2="0.725" y2="-0.175" width="0.2032" layer="21"/>
-<wire x1="0.725" y1="-0.175" x2="0.725" y2="-0.525" width="0.2032" layer="21"/>
-<wire x1="-0.075" y1="-0.875" x2="0.075" y2="-0.875" width="0.2032" layer="21"/>
-<text x="-1.5" y="0.6" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<text x="-1.75" y="-2.3" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
-</package>
-</packages>
-</library>
 <library name="RoboJackets-PowerICs">
 <description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
 &lt;hr&gt;
@@ -1497,6 +1467,29 @@ In this library you will find integrated circuits (ICs) that are directly involv
 <pad name="VBUS" x="11.43" y="21.59" drill="1.02" rot="R180"/>
 <pad name="VDD" x="11.43" y="24.13" drill="1.02" rot="R180"/>
 <text x="-12.7" y="27.94" size="1.27" layer="25">&gt;NAME</text>
+</package>
+</packages>
+</library>
+<library name="RoboJackets-Discrete">
+<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
+&lt;hr&gt;
+&lt;h1&gt;RoboJackets EAGLE Libraries - Discrete&lt;/h1&gt;&lt;/br&gt;
+&lt;p&gt;
+In this library you will find MOSFETs and other circuit elements commonly used for switching signals between HIGH and LOW.
+&lt;/p&gt;</description>
+<packages>
+<package name="SOT-416FL">
+<smd name="1" x="-0.5" y="-1.1" dx="0.46" dy="0.65" layer="1"/>
+<smd name="2" x="0.5" y="-1.1" dx="0.46" dy="0.65" layer="1"/>
+<smd name="3" x="0" y="0.05" dx="0.46" dy="0.65" layer="1"/>
+<rectangle x1="-0.8" y1="-0.955" x2="0.8" y2="-0.095" layer="51"/>
+<wire x1="-0.725" y1="-0.525" x2="-0.725" y2="-0.175" width="0.2032" layer="21"/>
+<wire x1="-0.725" y1="-0.175" x2="-0.425" y2="-0.175" width="0.2032" layer="21"/>
+<wire x1="0.425" y1="-0.175" x2="0.725" y2="-0.175" width="0.2032" layer="21"/>
+<wire x1="0.725" y1="-0.175" x2="0.725" y2="-0.525" width="0.2032" layer="21"/>
+<wire x1="-0.075" y1="-0.875" x2="0.075" y2="-0.875" width="0.2032" layer="21"/>
+<text x="-1.5" y="0.6" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.75" y="-2.3" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
 </packages>
 </library>
@@ -1759,7 +1752,7 @@ Your Eurocircuits Team
 <attribute name="NAME" x="-5.035" y="6.565" size="1.27" layer="25" rot="R90"/>
 <attribute name="VALUE" x="-2.495" y="6.565" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="Q1" library="SparkFun-DiscreteSemi" package="SOT-416FL" value="20V/0.2A/8MHz/1.2Ω/1Vth" x="16.6" y="14.2" smashed="yes">
+<element name="Q1" library="RoboJackets-Discrete" package="SOT-416FL" value="20V/0.2A/8MHz/1.2Ω/1Vth" x="16.6" y="14.2" smashed="yes">
 <attribute name="NAME" x="15.1" y="14.8" size="0.6096" layer="25" font="vector" ratio="20"/>
 <attribute name="PROD_ID" value="TRANS_14399" x="11.6" y="19.2" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="14.85" y="11.9" size="0.6096" layer="27" font="vector" ratio="20"/>
@@ -1770,7 +1763,7 @@ Your Eurocircuits Team
 <element name="R3" library="RoboJackets-Resistors" package="R0603W" value="2.2k" x="16.6" y="17.2" smashed="yes" rot="R270">
 <attribute name="NAME" x="17.6" y="18.7" size="1" layer="25" rot="R270"/>
 </element>
-<element name="Q4" library="SparkFun-DiscreteSemi" package="SOT-416FL" value="20V/0.2A/8MHz/1.2Ω/1Vth" x="34.6" y="14.2" smashed="yes">
+<element name="Q4" library="RoboJackets-Discrete" package="SOT-416FL" value="20V/0.2A/8MHz/1.2Ω/1Vth" x="34.6" y="14.2" smashed="yes">
 <attribute name="NAME" x="33.1" y="14.8" size="0.6096" layer="25" font="vector" ratio="20"/>
 <attribute name="PROD_ID" value="TRANS_14399" x="29.6" y="19.2" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="32.85" y="11.9" size="0.6096" layer="27" font="vector" ratio="20"/>
@@ -1781,7 +1774,7 @@ Your Eurocircuits Team
 <element name="R5" library="RoboJackets-Resistors" package="R0603W" value="2.2k" x="34.6" y="17.2" smashed="yes" rot="R270">
 <attribute name="NAME" x="35.6" y="18.7" size="1" layer="25" rot="R270"/>
 </element>
-<element name="Q3" library="SparkFun-DiscreteSemi" package="SOT-416FL" value="20V/0.2A/8MHz/1.2Ω/1Vth" x="28.6" y="14.2" smashed="yes">
+<element name="Q3" library="RoboJackets-Discrete" package="SOT-416FL" value="20V/0.2A/8MHz/1.2Ω/1Vth" x="28.6" y="14.2" smashed="yes">
 <attribute name="NAME" x="27.1" y="14.8" size="0.6096" layer="25" font="vector" ratio="20"/>
 <attribute name="PROD_ID" value="TRANS_14399" x="23.6" y="19.2" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="26.85" y="11.9" size="0.6096" layer="27" font="vector" ratio="20"/>
@@ -1792,7 +1785,7 @@ Your Eurocircuits Team
 <element name="R7" library="RoboJackets-Resistors" package="R0603W" value="2.2k" x="28.6" y="17.2" smashed="yes" rot="R270">
 <attribute name="NAME" x="29.6" y="18.7" size="1" layer="25" rot="R270"/>
 </element>
-<element name="Q2" library="SparkFun-DiscreteSemi" package="SOT-416FL" value="20V/0.2A/8MHz/1.2Ω/1Vth" x="22.6" y="14.2" smashed="yes">
+<element name="Q2" library="RoboJackets-Discrete" package="SOT-416FL" value="20V/0.2A/8MHz/1.2Ω/1Vth" x="22.6" y="14.2" smashed="yes">
 <attribute name="NAME" x="21.1" y="14.8" size="0.6096" layer="25" font="vector" ratio="20"/>
 <attribute name="PROD_ID" value="TRANS_14399" x="17.6" y="19.2" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="20.85" y="11.9" size="0.6096" layer="27" font="vector" ratio="20"/>
