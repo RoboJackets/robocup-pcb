@@ -111,13 +111,35 @@
 <layer number="130" name="SMDSTROOK" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="133" name="mtFinish" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="134" name="mbFinish" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="135" name="mtGlue" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="136" name="mbGlue" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="137" name="mtTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="138" name="mbTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="139" name="mtKeepout" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="140" name="mbKeepout" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="141" name="mtRestrict" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="142" name="mbRestrict" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="143" name="mvRestrict" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="145" name="mHoles" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="146" name="mMilling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="147" name="mMeasures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="148" name="mDocument" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="149" name="mReference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="191" name="mNets" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="192" name="mBusses" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="193" name="mPins" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="194" name="mSymbols" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="195" name="mNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="196" name="mValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="7" fill="1" visible="yes" active="yes"/>
@@ -363,163 +385,6 @@ In this library you will find all the connectors used on any of our boards.
 </gates>
 <devices>
 <device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="mchair">
-<packages>
-<package name="MPM3620GQV-P">
-<smd name="3" x="-1.25" y="0.25" dx="1.1" dy="0.25" layer="1" rot="R180"/>
-<smd name="2" x="-1.25" y="0.9" dx="1.1" dy="0.25" layer="1" rot="R180"/>
-<smd name="1" x="-1.45" y="1.55" dx="0.7" dy="0.25" layer="1" rot="R180"/>
-<smd name="10" x="1.25" y="0.25" dx="1.1" dy="0.25" layer="1" rot="R180"/>
-<smd name="11" x="1.25" y="0.9" dx="1.1" dy="0.25" layer="1" rot="R180"/>
-<smd name="12" x="1.45" y="1.55" dx="0.7" dy="0.25" layer="1" rot="R180"/>
-<smd name="18" x="-1.25" y="2.45" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<smd name="17" x="-0.75" y="2.45" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<smd name="16" x="-0.25" y="2.25" dx="1.1" dy="0.25" layer="1" rot="R90"/>
-<smd name="15" x="0.25" y="2.25" dx="1.1" dy="0.25" layer="1" rot="R90"/>
-<smd name="14" x="0.75" y="2.45" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<smd name="13" x="1.25" y="2.45" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<rectangle x1="-0.575" y1="0.18" x2="0.575" y2="0.97" layer="41"/>
-<wire x1="1.5" y1="2.5" x2="-1.5" y2="2.5" width="0.2" layer="51"/>
-<wire x1="-1.5" y1="2.5" x2="-1.5" y2="-2.5" width="0.2" layer="51"/>
-<wire x1="-1.5" y1="-2.5" x2="1.5" y2="-2.5" width="0.2" layer="51"/>
-<wire x1="1.5" y1="-2.5" x2="1.5" y2="2.5" width="0.2" layer="51"/>
-<text x="-1.5" y="3.25" size="1" layer="25">&gt;NAME</text>
-<text x="-1.5" y="-2.75" size="1" layer="27" align="top-left">&gt;VALUE</text>
-<smd name="456" x="-1" y="-1.25" dx="1.95" dy="0.6" layer="1" rot="R90" stop="no" cream="no"/>
-<polygon width="0" layer="1">
-<vertex x="-1.8" y="-2.225"/>
-<vertex x="-0.7" y="-2.225"/>
-<vertex x="-0.7" y="-0.275"/>
-<vertex x="-1.8" y="-0.275"/>
-<vertex x="-1.8" y="-0.525"/>
-<vertex x="-1.3" y="-0.525"/>
-<vertex x="-1.3" y="-1.125"/>
-<vertex x="-1.8" y="-1.125"/>
-<vertex x="-1.8" y="-1.375"/>
-<vertex x="-1.3" y="-1.365"/>
-<vertex x="-1.3" y="-1.975"/>
-<vertex x="-1.8" y="-1.975"/>
-</polygon>
-<polygon width="0" layer="1">
-<vertex x="1.8" y="-0.275"/>
-<vertex x="0.7" y="-0.275"/>
-<vertex x="0.7" y="-2.225"/>
-<vertex x="1.8" y="-2.225"/>
-<vertex x="1.8" y="-1.975"/>
-<vertex x="1.3" y="-1.975"/>
-<vertex x="1.3" y="-1.375"/>
-<vertex x="1.8" y="-1.375"/>
-<vertex x="1.8" y="-1.125"/>
-<vertex x="1.3" y="-1.135"/>
-<vertex x="1.3" y="-0.525"/>
-<vertex x="1.8" y="-0.525"/>
-</polygon>
-<smd name="789" x="1" y="-1.25" dx="1.95" dy="0.6" layer="1" rot="R90" stop="no" cream="no"/>
-<polygon width="0" layer="29">
-<vertex x="-1.8" y="-2.225"/>
-<vertex x="-0.7" y="-2.225"/>
-<vertex x="-0.7" y="-0.275"/>
-<vertex x="-1.8" y="-0.275"/>
-<vertex x="-1.8" y="-0.525"/>
-<vertex x="-1.3" y="-0.525"/>
-<vertex x="-1.3" y="-1.125"/>
-<vertex x="-1.8" y="-1.125"/>
-<vertex x="-1.8" y="-1.375"/>
-<vertex x="-1.3" y="-1.365"/>
-<vertex x="-1.3" y="-1.975"/>
-<vertex x="-1.8" y="-1.975"/>
-</polygon>
-<polygon width="0" layer="31">
-<vertex x="-1.8" y="-2.225"/>
-<vertex x="-0.7" y="-2.225"/>
-<vertex x="-0.7" y="-0.275"/>
-<vertex x="-1.8" y="-0.275"/>
-<vertex x="-1.8" y="-0.525"/>
-<vertex x="-1.3" y="-0.525"/>
-<vertex x="-1.3" y="-1.125"/>
-<vertex x="-1.8" y="-1.125"/>
-<vertex x="-1.8" y="-1.375"/>
-<vertex x="-1.3" y="-1.365"/>
-<vertex x="-1.3" y="-1.975"/>
-<vertex x="-1.8" y="-1.975"/>
-</polygon>
-<polygon width="0" layer="29">
-<vertex x="1.8" y="-0.275"/>
-<vertex x="0.7" y="-0.275"/>
-<vertex x="0.7" y="-2.225"/>
-<vertex x="1.8" y="-2.225"/>
-<vertex x="1.8" y="-1.975"/>
-<vertex x="1.3" y="-1.975"/>
-<vertex x="1.3" y="-1.375"/>
-<vertex x="1.8" y="-1.375"/>
-<vertex x="1.8" y="-1.125"/>
-<vertex x="1.3" y="-1.135"/>
-<vertex x="1.3" y="-0.525"/>
-<vertex x="1.8" y="-0.525"/>
-</polygon>
-<polygon width="0" layer="31">
-<vertex x="1.8" y="-0.275"/>
-<vertex x="0.7" y="-0.275"/>
-<vertex x="0.7" y="-2.225"/>
-<vertex x="1.8" y="-2.225"/>
-<vertex x="1.8" y="-1.975"/>
-<vertex x="1.3" y="-1.975"/>
-<vertex x="1.3" y="-1.375"/>
-<vertex x="1.8" y="-1.375"/>
-<vertex x="1.8" y="-1.125"/>
-<vertex x="1.3" y="-1.135"/>
-<vertex x="1.3" y="-0.525"/>
-<vertex x="1.8" y="-0.525"/>
-</polygon>
-</package>
-</packages>
-<symbols>
-<symbol name="MPM3620GQV-P">
-<pin name="IN" x="-15.24" y="10.16" length="middle"/>
-<pin name="EN" x="-15.24" y="2.54" length="middle"/>
-<pin name="AAM" x="-15.24" y="-2.54" length="middle"/>
-<pin name="VCC" x="15.24" y="10.16" length="middle" rot="R180"/>
-<pin name="PGND" x="-15.24" y="-7.62" length="middle"/>
-<pin name="AGND" x="-15.24" y="-10.16" length="middle"/>
-<pin name="BST" x="15.24" y="7.62" length="middle" rot="R180"/>
-<pin name="SW" x="15.24" y="5.08" length="middle" rot="R180"/>
-<pin name="OUT" x="15.24" y="0" length="middle" rot="R180"/>
-<pin name="FB" x="15.24" y="-10.16" length="middle" rot="R180"/>
-<wire x1="-10.16" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
-<wire x1="10.16" y1="12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
-<text x="-10.16" y="15.24" size="1.778" layer="95" align="top-left">&gt;NAME</text>
-<text x="-10.16" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="MPM3620GQV-P" prefix="U">
-<gates>
-<gate name="G$1" symbol="MPM3620GQV-P" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="MPM3620GQV-P">
-<connects>
-<connect gate="G$1" pin="AAM" pad="18"/>
-<connect gate="G$1" pin="AGND" pad="3"/>
-<connect gate="G$1" pin="BST" pad="11"/>
-<connect gate="G$1" pin="EN" pad="17"/>
-<connect gate="G$1" pin="FB" pad="1"/>
-<connect gate="G$1" pin="IN" pad="16"/>
-<connect gate="G$1" pin="OUT" pad="789"/>
-<connect gate="G$1" pin="PGND" pad="12 13 14"/>
-<connect gate="G$1" pin="SW" pad="456"/>
-<connect gate="G$1" pin="VCC" pad="2"/>
-</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -16158,6 +16023,169 @@ In this library you will find diodes and other circuit protection elements.
 </deviceset>
 </devicesets>
 </library>
+<library name="RoboJackets-PowerICs">
+<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
+&lt;hr&gt;
+&lt;h1&gt;RoboJackets EAGLE Libraries - Power ICs&lt;/h1&gt;&lt;/br&gt;
+&lt;p&gt;
+In this library you will find integrated circuits (ICs) that are directly involved with controlling a circuit's power requirements.
+&lt;/p&gt;</description>
+<packages>
+<package name="MPM3620GQV-P">
+<smd name="3" x="-1.25" y="0.25" dx="1.1" dy="0.25" layer="1" rot="R180"/>
+<smd name="2" x="-1.25" y="0.9" dx="1.1" dy="0.25" layer="1" rot="R180"/>
+<smd name="1" x="-1.45" y="1.55" dx="0.7" dy="0.25" layer="1" rot="R180"/>
+<smd name="10" x="1.25" y="0.25" dx="1.1" dy="0.25" layer="1" rot="R180"/>
+<smd name="11" x="1.25" y="0.9" dx="1.1" dy="0.25" layer="1" rot="R180"/>
+<smd name="12" x="1.45" y="1.55" dx="0.7" dy="0.25" layer="1" rot="R180"/>
+<smd name="18" x="-1.25" y="2.45" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="17" x="-0.75" y="2.45" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="16" x="-0.25" y="2.25" dx="1.1" dy="0.25" layer="1" rot="R90"/>
+<smd name="15" x="0.25" y="2.25" dx="1.1" dy="0.25" layer="1" rot="R90"/>
+<smd name="14" x="0.75" y="2.45" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="13" x="1.25" y="2.45" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<rectangle x1="-0.575" y1="0.18" x2="0.575" y2="0.97" layer="41"/>
+<wire x1="1.5" y1="2.5" x2="-1.5" y2="2.5" width="0.2" layer="51"/>
+<wire x1="-1.5" y1="2.5" x2="-1.5" y2="-2.5" width="0.2" layer="51"/>
+<wire x1="-1.5" y1="-2.5" x2="1.5" y2="-2.5" width="0.2" layer="51"/>
+<wire x1="1.5" y1="-2.5" x2="1.5" y2="2.5" width="0.2" layer="51"/>
+<text x="-1.5" y="3.25" size="1" layer="25">&gt;NAME</text>
+<text x="-1.5" y="-2.75" size="1" layer="27" align="top-left">&gt;VALUE</text>
+<smd name="456" x="-1" y="-1.25" dx="1.95" dy="0.6" layer="1" rot="R90" stop="no" cream="no"/>
+<polygon width="0" layer="1">
+<vertex x="-1.8" y="-2.225"/>
+<vertex x="-0.7" y="-2.225"/>
+<vertex x="-0.7" y="-0.275"/>
+<vertex x="-1.8" y="-0.275"/>
+<vertex x="-1.8" y="-0.525"/>
+<vertex x="-1.3" y="-0.525"/>
+<vertex x="-1.3" y="-1.125"/>
+<vertex x="-1.8" y="-1.125"/>
+<vertex x="-1.8" y="-1.375"/>
+<vertex x="-1.3" y="-1.365"/>
+<vertex x="-1.3" y="-1.975"/>
+<vertex x="-1.8" y="-1.975"/>
+</polygon>
+<polygon width="0" layer="1">
+<vertex x="1.8" y="-0.275"/>
+<vertex x="0.7" y="-0.275"/>
+<vertex x="0.7" y="-2.225"/>
+<vertex x="1.8" y="-2.225"/>
+<vertex x="1.8" y="-1.975"/>
+<vertex x="1.3" y="-1.975"/>
+<vertex x="1.3" y="-1.375"/>
+<vertex x="1.8" y="-1.375"/>
+<vertex x="1.8" y="-1.125"/>
+<vertex x="1.3" y="-1.135"/>
+<vertex x="1.3" y="-0.525"/>
+<vertex x="1.8" y="-0.525"/>
+</polygon>
+<smd name="789" x="1" y="-1.25" dx="1.95" dy="0.6" layer="1" rot="R90" stop="no" cream="no"/>
+<polygon width="0" layer="29">
+<vertex x="-1.8" y="-2.225"/>
+<vertex x="-0.7" y="-2.225"/>
+<vertex x="-0.7" y="-0.275"/>
+<vertex x="-1.8" y="-0.275"/>
+<vertex x="-1.8" y="-0.525"/>
+<vertex x="-1.3" y="-0.525"/>
+<vertex x="-1.3" y="-1.125"/>
+<vertex x="-1.8" y="-1.125"/>
+<vertex x="-1.8" y="-1.375"/>
+<vertex x="-1.3" y="-1.365"/>
+<vertex x="-1.3" y="-1.975"/>
+<vertex x="-1.8" y="-1.975"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="-1.8" y="-2.225"/>
+<vertex x="-0.7" y="-2.225"/>
+<vertex x="-0.7" y="-0.275"/>
+<vertex x="-1.8" y="-0.275"/>
+<vertex x="-1.8" y="-0.525"/>
+<vertex x="-1.3" y="-0.525"/>
+<vertex x="-1.3" y="-1.125"/>
+<vertex x="-1.8" y="-1.125"/>
+<vertex x="-1.8" y="-1.375"/>
+<vertex x="-1.3" y="-1.365"/>
+<vertex x="-1.3" y="-1.975"/>
+<vertex x="-1.8" y="-1.975"/>
+</polygon>
+<polygon width="0" layer="29">
+<vertex x="1.8" y="-0.275"/>
+<vertex x="0.7" y="-0.275"/>
+<vertex x="0.7" y="-2.225"/>
+<vertex x="1.8" y="-2.225"/>
+<vertex x="1.8" y="-1.975"/>
+<vertex x="1.3" y="-1.975"/>
+<vertex x="1.3" y="-1.375"/>
+<vertex x="1.8" y="-1.375"/>
+<vertex x="1.8" y="-1.125"/>
+<vertex x="1.3" y="-1.135"/>
+<vertex x="1.3" y="-0.525"/>
+<vertex x="1.8" y="-0.525"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="1.8" y="-0.275"/>
+<vertex x="0.7" y="-0.275"/>
+<vertex x="0.7" y="-2.225"/>
+<vertex x="1.8" y="-2.225"/>
+<vertex x="1.8" y="-1.975"/>
+<vertex x="1.3" y="-1.975"/>
+<vertex x="1.3" y="-1.375"/>
+<vertex x="1.8" y="-1.375"/>
+<vertex x="1.8" y="-1.125"/>
+<vertex x="1.3" y="-1.135"/>
+<vertex x="1.3" y="-0.525"/>
+<vertex x="1.8" y="-0.525"/>
+</polygon>
+</package>
+</packages>
+<symbols>
+<symbol name="MPM3620GQV-P">
+<pin name="IN" x="-15.24" y="10.16" length="middle"/>
+<pin name="EN" x="-15.24" y="2.54" length="middle"/>
+<pin name="AAM" x="-15.24" y="-2.54" length="middle"/>
+<pin name="VCC" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="PGND" x="-15.24" y="-7.62" length="middle"/>
+<pin name="AGND" x="-15.24" y="-10.16" length="middle"/>
+<pin name="BST" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="SW" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="OUT" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="FB" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<text x="-10.16" y="15.24" size="1.778" layer="95" align="top-left">&gt;NAME</text>
+<text x="-10.16" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MPM3620GQV-P" prefix="U">
+<gates>
+<gate name="G$1" symbol="MPM3620GQV-P" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MPM3620GQV-P">
+<connects>
+<connect gate="G$1" pin="AAM" pad="18"/>
+<connect gate="G$1" pin="AGND" pad="3"/>
+<connect gate="G$1" pin="BST" pad="11"/>
+<connect gate="G$1" pin="EN" pad="17"/>
+<connect gate="G$1" pin="FB" pad="1"/>
+<connect gate="G$1" pin="IN" pad="16"/>
+<connect gate="G$1" pin="OUT" pad="789"/>
+<connect gate="G$1" pin="PGND" pad="12 13 14"/>
+<connect gate="G$1" pin="SW" pad="456"/>
+<connect gate="G$1" pin="VCC" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 <attribute name="REVISION" value="3.2"/>
@@ -16171,7 +16199,7 @@ In this library you will find diodes and other circuit protection elements.
 </class>
 </classes>
 <parts>
-<part name="U2" library="mchair" deviceset="MPM3620GQV-P" device=""/>
+<part name="U2" library="RoboJackets-PowerICs" deviceset="MPM3620GQV-P" device=""/>
 <part name="SUPPLY7" library="RoboJackets-Supplies" deviceset="+5.0V" device=""/>
 <part name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="100k"/>
 <part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="88.7k 1%"/>
