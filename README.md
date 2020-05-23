@@ -26,16 +26,15 @@ Most CAD files found here are [EAGLE](http://www.cadsoftusa.com/) files. However
 
 	Once your computer is setup with git, the following lines can be used on any operating system within a *[terminal](http://en.wikipedia.org/wiki/Computer_terminal)* configured with git. Users who are using a GUI interface for git should simply add the respective repositories through the interface.
 
-	```shell
     # Download the initial files
-	$ git clone https://github.com/robojackets/robocup-pcb
+	git clone https://github.com/robojackets/robocup-pcb
 
     # Go into our new directory
     cd robocup-pcb
 
     # Download additional mtrain pcbs
     git submodule update --init
-	```
+
 2. Add the new directory locations to EAGLE:
 
 	From EAGLE's Control Panel, navigate to the *Directories* window: *Options -> Directories*.
@@ -44,7 +43,6 @@ Most CAD files found here are [EAGLE](http://www.cadsoftusa.com/) files. However
 
 ### Updating Repository
 
-	```shell
 	# Check which files will removed
 	git clean -d -x -n
 
@@ -53,7 +51,6 @@ Most CAD files found here are [EAGLE](http://www.cadsoftusa.com/) files. However
 
 	# Download additional mtrain pcbs
 	git submodule update --init
-	```
 
 ## License
 
