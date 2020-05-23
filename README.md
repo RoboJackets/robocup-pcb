@@ -42,6 +42,19 @@ Most CAD files found here are [EAGLE](http://www.cadsoftusa.com/) files. However
 
     Find the *Libraries* text box, and add the directory paths where the repositories were cloned from step 1. Don't forget to also include the path for the *[RoboJackets libraries](https://github.com/RoboJackets/robocup-pcb/tree/master/lib)*!
 
+### Updating Repository
+
+	```shell
+	# Check which files will removed
+	git clean -d -x -n
+
+	# After being sure which files are deleted
+	git clean -d -x -f
+
+	# Download additional mtrain pcbs
+	git submodule update --init
+	```
+
 ## License
 
 This project is licensed under the Apache License v2.0.  See the [LICENSE](LICENSE) file for more information.
