@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.0">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -65,6 +65,11 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
@@ -88,7 +93,13 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="113" name="IDFDebug" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="114" name="FRNTMAAT1" color="7" fill="1" visible="no" active="yes"/>
+<layer number="115" name="FRNTMAAT2" color="7" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="117" name="BACKMAAT1" color="7" fill="1" visible="no" active="yes"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="yes"/>
+<layer number="119" name="KAP_TEKEN" color="7" fill="1" visible="no" active="yes"/>
+<layer number="120" name="KAP_MAAT1" color="7" fill="1" visible="no" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
@@ -97,15 +108,39 @@
 <layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="no" active="yes"/>
+<layer number="130" name="SMDSTROOK" color="7" fill="1" visible="no" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="133" name="mtFinish" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="134" name="mbFinish" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="135" name="mtGlue" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="136" name="mbGlue" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="137" name="mtTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="138" name="mbTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="139" name="mtKeepout" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="140" name="mbKeepout" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="141" name="mtRestrict" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="142" name="mbRestrict" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="143" name="mvRestrict" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="145" name="mHoles" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="146" name="mMilling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="147" name="mMeasures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="148" name="mDocument" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="149" name="mReference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="191" name="mNets" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="192" name="mBusses" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="193" name="mPins" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="194" name="mSymbols" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="195" name="mNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="196" name="mValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="no"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
@@ -132,11 +167,21 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="229" name="229bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="230" name="230bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="231" name="231bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="no" active="yes"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="no" active="yes"/>
 <layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <library>
 <description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
@@ -1864,7 +1909,50 @@ Digi-Key: 1727-5865-1-ND</description>
 <rectangle x1="0.15" y1="-0.15" x2="0.3" y2="0.15" layer="51"/>
 <rectangle x1="-0.15" y1="-0.15" x2="0.15" y2="0.15" layer="21"/>
 </package>
-<package name="R0603" urn="urn:adsk.eagle:footprint:23044/1" locally_modified="yes">
+<package name="SOT-553">
+<smd name="1" x="-0.5" y="0" dx="0.45" dy="0.3" layer="1" rot="R90"/>
+<smd name="2" x="0" y="0" dx="0.45" dy="0.3" layer="1" rot="R90"/>
+<smd name="3" x="0.5" y="0" dx="0.45" dy="0.3" layer="1" rot="R90"/>
+<smd name="5" x="-0.5" y="1.35" dx="0.45" dy="0.3" layer="1" rot="R90"/>
+<smd name="4" x="0.5" y="1.35" dx="0.45" dy="0.3" layer="1" rot="R90"/>
+<wire x1="-0.75" y1="1.3" x2="-0.75" y2="0" width="0.05" layer="21"/>
+<text x="-1" y="-2" size="1" layer="25" font="vector">&gt;NAME</text>
+<text x="-1" y="2" size="1" layer="27" font="vector">&gt;VALUE</text>
+</package>
+<package name="TO460P990X239-3">
+<description>3-TO, DPAK, 4.6 mm pitch, 9.905 mm span, 6.54 X 6.095 X 2.39 mm body
+&lt;p&gt;3-pin TO, DPAK package with 4.6 mm pitch, 9.905 mm span with body size 6.54 X 6.095 X 2.39 mm&lt;/p&gt;</description>
+<circle x="-4.2409" y="3.2909" radius="0.25" width="0" layer="21"/>
+<wire x1="3.8175" y1="2.4999" x2="3.8175" y2="3.365" width="0.12" layer="21"/>
+<wire x1="3.8175" y1="3.365" x2="-2.4025" y2="3.365" width="0.12" layer="21"/>
+<wire x1="-2.4025" y1="3.365" x2="-2.4025" y2="-3.365" width="0.12" layer="21"/>
+<wire x1="-2.4025" y1="-3.365" x2="3.8175" y2="-3.365" width="0.12" layer="21"/>
+<wire x1="3.8175" y1="-3.365" x2="3.8175" y2="-2.4999" width="0.12" layer="21"/>
+<wire x1="3.8175" y1="-3.365" x2="-2.4025" y2="-3.365" width="0.12" layer="51"/>
+<wire x1="-2.4025" y1="-3.365" x2="-2.4025" y2="3.365" width="0.12" layer="51"/>
+<wire x1="-2.4025" y1="3.365" x2="3.8175" y2="3.365" width="0.12" layer="51"/>
+<wire x1="3.8175" y1="3.365" x2="3.8175" y2="-3.365" width="0.12" layer="51"/>
+<smd name="1" x="-4.2409" y="2.3" dx="2.6343" dy="0.9739" layer="1"/>
+<smd name="2" x="-4.2409" y="-2.3" dx="2.6343" dy="0.9739" layer="1"/>
+<smd name="3" x="2.5075" y="0" dx="6.1012" dy="4.4918" layer="1"/>
+<text x="0" y="4.1759" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-4" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="RESM5226X262">
+<description>MOLDED BODY, 5.21 X 2.605 X 2.62 mm body
+&lt;p&gt;MOLDED BODY package with body size 5.21 X 2.605 X 2.62 mm&lt;/p&gt;</description>
+<wire x1="-2.795" y1="1.46" x2="2.795" y2="1.46" width="0.12" layer="21"/>
+<wire x1="-2.795" y1="-1.46" x2="2.795" y2="-1.46" width="0.12" layer="21"/>
+<wire x1="2.795" y1="-1.46" x2="-2.795" y2="-1.46" width="0.12" layer="51"/>
+<wire x1="-2.795" y1="-1.46" x2="-2.795" y2="1.46" width="0.12" layer="51"/>
+<wire x1="-2.795" y1="1.46" x2="2.795" y2="1.46" width="0.12" layer="51"/>
+<wire x1="2.795" y1="1.46" x2="2.795" y2="-1.46" width="0.12" layer="51"/>
+<smd name="1" x="-2.1413" y="0" dx="2.3155" dy="1.5653" layer="1"/>
+<smd name="2" x="2.1413" y="0" dx="2.3155" dy="1.5653" layer="1"/>
+<text x="0" y="2.095" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.095" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="R0603">
 <description>&lt;b&gt;Capacitor&lt;/b&gt;&lt;p&gt;Part Number:  PESD5V0C1USFYL</description>
 <wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
 <wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="51"/>
@@ -1881,14 +1969,6 @@ Digi-Key: 1727-5865-1-ND</description>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
 </package>
 </packages>
-<packages3d>
-<package3d name="R0603" urn="urn:adsk.eagle:package:23555/3" locally_modified="yes" type="model">
-<description>RESISTOR</description>
-<packageinstances>
-<packageinstance name="R0603"/>
-</packageinstances>
-</package3d>
-</packages3d>
 <symbols>
 <symbol name="AN-AN">
 <wire x1="1.27" y1="1.27" x2="0" y2="3.81" width="0.254" layer="94"/>
@@ -2089,6 +2169,19 @@ Digi-Key: 1727-5865-1-ND</description>
 <wire x1="1.27" y1="-0.508" x2="0.762" y2="-0.508" width="0.254" layer="94"/>
 <wire x1="-1.27" y1="0.508" x2="-0.762" y2="0.508" width="0.254" layer="94"/>
 </symbol>
+<symbol name="TPD2E2U06">
+<pin name="IO2" x="-12.7" y="0" length="middle"/>
+<pin name="GND" x="-12.7" y="-5.08" length="middle" direction="pwr"/>
+<pin name="NC2" x="12.7" y="0" length="middle" direction="nc" rot="R180"/>
+<pin name="IO1" x="-12.7" y="5.08" length="middle"/>
+<pin name="NC1" x="12.7" y="5.08" length="middle" direction="nc" rot="R180"/>
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<text x="-7.62" y="8.636" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-7.62" y="-10.16" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CDSOD323" prefix="D">
@@ -2183,9 +2276,6 @@ Digi-Key: 1727-5865-1-ND</description>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="C" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23555/3"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -2991,19 +3081,59 @@ Digi-Key: 1727-5865-1-ND</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="TPD2E2U06DRLR" prefix="D">
+<description>&lt;a href="http://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf"&gt;TPD2E2U06DRLR&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="TPD2E2U06" x="-2.54" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="SOT-553">
+<connects>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="IO1" pad="3"/>
+<connect gate="G$1" pin="IO2" pad="5"/>
+<connect gate="G$1" pin="NC1" pad="1"/>
+<connect gate="G$1" pin="NC2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VS-5EWH06FN-M3" prefix="D">
+<gates>
+<gate name="VS-5EWH06FN-M3" symbol="D" x="0" y="0"/>
+</gates>
+<devices>
+<device name="D-PAK_TO252AA" package="TO460P990X239-3">
+<connects>
+<connect gate="VS-5EWH06FN-M3" pin="A" pad="2"/>
+<connect gate="VS-5EWH06FN-M3" pin="C" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SMAJ20A" prefix="D">
+<gates>
+<gate name="G$1" symbol="TVS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DO-214AC" package="RESM5226X262">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="C" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
-<compatibility>
-<note version="8.3" severity="warning">
-Since Version 8.3, EAGLE supports URNs for individual library
-assets (packages, symbols, and devices). The URNs of those assets
-will not be understood (or retained) with this version.
-</note>
-<note version="8.3" severity="warning">
-Since Version 8.3, EAGLE supports the association of 3D packages
-with devices in libraries, schematics, and board files. Those 3D
-packages will not be understood (or retained) with this version.
-</note>
-</compatibility>
 </eagle>

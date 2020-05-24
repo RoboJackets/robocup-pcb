@@ -1,16 +1,23 @@
-# Ignore list for Eagle, a PCB layout tool
-*.lck
+# Eagle
+
+# Unnecessary Files
+*.scr
+*.ulp
 
 # Backup files
 *.s#?
 *.b#?
 *.l#?
+*.b$?
+*.s$?
+*.l$?
 
 # Eagle project file
-# It contains a serial number and references to the file structure
-# on your computer.
-# comment the following line if you want to have your project file included.
-eagle.epf
+*.epf
+
+# Autorouter files
+*.pro
+*.job
 
 # CAM files
 *.$$$
@@ -28,20 +35,23 @@ eagle.epf
 *.drl
 *.gpi
 *.pls
+*.ger
+*.xln
 
 *.drd
 *.drd.*
 
-*.info
+*.s#*
+*.b#*
 
+*.info
+*.log
 *.eps
 
-Transcode?Report.txt
+# file locks introduced since 7.x
+*.lck
 
-#exclude datasheets
-datasheets/
-
-#exclude gerbers
+# Gerber files
 *.ger
 *.nc
 *.do
@@ -55,15 +65,97 @@ datasheets/
 *.GTP
 *.GTS
 
-# MATLAB autosave file
-*.asv
+# MacOS
+# General
+*.DS_Store
+*.AppleDouble
+*.LSOverride
 
-# OS X
-.DS_Store
+# Icon must end with two \r
+Icon
 
-# log files
-*.log
 
-# autorouter log files
-*.pro
+# Thumbnails
+._*
 
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+*.AppleDB
+*.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# Linux
+
+*~
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+
+
+# Vim
+
+# Swap
+[._]*.s[a-v][a-z]
+!*.svg  # comment out if you don't need vector files
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Session
+Session.vim
+Sessionx.vim
+
+# Temporary
+.netrwhist
+*~
+# Auto-generated tag files
+tags
+# Persistent undo
+[._]*.un~
