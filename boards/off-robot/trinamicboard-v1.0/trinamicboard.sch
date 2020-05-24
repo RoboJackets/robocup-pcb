@@ -26339,7 +26339,7 @@ FRONT</text>
 <pin name="NC" x="48.26" y="17.78" visible="pin" length="short" rot="R180"/>
 <pin name="VBUS" x="48.387" y="20.32" visible="pin" length="short" direction="pwr" rot="R180"/>
 <pin name="VDD" x="48.26" y="22.86" visible="pin" length="short" direction="pwr" rot="R180"/>
-<text x="2.54" y="-10.16" size="3.81" layer="95" rot="R90">MTrain</text>
+<text x="2.54" y="-10.16" size="3.81" layer="95" rot="R90">mTrain</text>
 <text x="25.4" y="-22.606" size="1.778" layer="95">Ethernet</text>
 <text x="34.925" y="-9.398" size="1.27" layer="95" rot="R180">MOSI</text>
 <wire x1="-37.465" y1="-15.24" x2="-8.255" y2="-15.24" width="0.254" layer="94"/>
