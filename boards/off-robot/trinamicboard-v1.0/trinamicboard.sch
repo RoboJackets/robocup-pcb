@@ -27140,10 +27140,6 @@ Source: SN74LVC3G17.pdf</description>
 <wire x1="142.24" y1="17.78" x2="142.24" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <pinref part="U3" gate="G$1" pin="GND"/>
-<pinref part="U3" gate="G$1" pin="3Y"/>
-<wire x1="139.7" y1="20.32" x2="142.24" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="20.32" x2="142.24" y2="17.78" width="0.1524" layer="91"/>
-<junction x="142.24" y="17.78"/>
 </segment>
 <segment>
 <wire x1="106.68" y1="17.78" x2="106.68" y2="15.24" width="0.1524" layer="91"/>
@@ -27441,7 +27437,7 @@ Source: SN74LVC3G17.pdf</description>
 <pinref part="KIT1" gate="G$1" pin="P29"/>
 </segment>
 </net>
-<net name="MISO-FPA" class="0">
+<net name="MISO-FPGA" class="0">
 <segment>
 <wire x1="154.94" y1="142.24" x2="160.02" y2="142.24" width="0.1524" layer="91"/>
 <label x="160.02" y="142.24" size="1.27" layer="95" font="vector" rot="MR180" xref="yes"/>
@@ -28557,6 +28553,7 @@ JA, JB, JC, and JD for mTrain + FPGA </text>
 <pinref part="JC" gate="G$1" pin="7"/>
 <wire x1="134.62" y1="160.02" x2="165.1" y2="160.02" width="0.1524" layer="91"/>
 <junction x="165.1" y="160.02"/>
+<junction x="165.1" y="175.26"/>
 </segment>
 <segment>
 <pinref part="GND7" gate="1" pin="GND"/>
@@ -28821,6 +28818,16 @@ JA, JB, JC, and JD for mTrain + FPGA </text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,58.42,170.18,KIT1,VIN,+5V,,,"/>
+<approved hash="204,1,155.067,170.18,KIT1,VBUS,,,,"/>
+<approved hash="204,1,154.94,172.72,KIT1,VDD,,,,"/>
+<approved hash="202,1,139.7,20.32,U3,3Y,,,,"/>
+<approved hash="106,2,91.44,101.6,SW,,,,,"/>
+<approved hash="106,2,91.44,48.26,SW1,,,,,"/>
+<approved hash="113,2,213.36,167.492,KIT2,,,,,"/>
+<approved hash="113,2,220.98,89.7255,KIT3,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
