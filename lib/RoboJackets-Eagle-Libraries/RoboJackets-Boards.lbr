@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.1">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -932,6 +932,7 @@ FRONT</text>
 <pad name="30" x="17.78" y="-16.51" drill="1.016"/>
 <pad name="31" x="17.78" y="-19.05" drill="1.016"/>
 <pad name="32" x="17.78" y="-21.59" drill="1.016"/>
+<text x="0.017" y="-0.05" size="1.778" layer="21" font="vector" ratio="15" align="center">TMC4671 BreakOut Board</text>
 </package>
 <package name="TMC6200-BOB">
 <description>TMC6200 BreakOut Board (BOB)</description>
@@ -949,7 +950,7 @@ FRONT</text>
 <pad name="15" x="17.78" y="16.51" drill="1.016"/>
 <text x="-19.05" y="20.32" size="1" layer="25">&gt;NAME</text>
 <circle x="-17.78" y="18.288" radius="0.254" width="0.127" layer="21"/>
-<text x="-19.05" y="-19.05" size="1" layer="27" align="top-left">&gt;VALUE</text>
+<text x="-19.05" y="-19.05" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
 <pad name="5" x="-17.78" y="6.35" drill="1.016"/>
 <pad name="6" x="-17.78" y="3.81" drill="1.016"/>
 <pad name="7" x="-17.78" y="1.27" drill="1.016"/>
@@ -975,6 +976,7 @@ FRONT</text>
 <pad name="31" x="-4.572" y="16.51" drill="1.016" rot="R90"/>
 <pad name="32" x="-2.032" y="16.51" drill="1.016" rot="R90"/>
 <pad name="33" x="0.508" y="16.51" drill="1.016" rot="R90"/>
+<text x="-0.06" y="0" size="1.778" layer="21" font="vector" ratio="15" align="center">TMC6200 BreakOut Board</text>
 </package>
 </packages>
 <symbols>
