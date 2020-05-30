@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="13" fill="1" visible="no" active="no"/>
@@ -28812,14 +28812,14 @@ JA, JB, JC, and JD for mTrain + FPGA </text>
 </sheet>
 </sheets>
 <errors>
-<approved hash="104,1,58.42,170.18,KIT1,VIN,+5V,,,"/>
-<approved hash="204,1,155.067,170.18,KIT1,VBUS,,,,"/>
-<approved hash="204,1,154.94,172.72,KIT1,VDD,,,,"/>
-<approved hash="202,1,139.7,20.32,U3,3Y,,,,"/>
+<approved hash="104,1,58.42,170.18,KIT3,VIN,+5V,,,"/>
+<approved hash="204,1,155.067,170.18,KIT3,VBUS,,,,"/>
+<approved hash="204,1,154.94,172.72,KIT3,VDD,,,,"/>
+<approved hash="202,1,139.7,20.32,U2,3Y,,,,"/>
 <approved hash="106,2,91.44,101.6,SW,,,,,"/>
 <approved hash="106,2,91.44,48.26,SW1,,,,,"/>
 <approved hash="113,2,213.36,167.587,KIT2,,,,,"/>
-<approved hash="113,2,220.98,89.7255,KIT3,,,,,"/>
+<approved hash="113,2,220.98,89.7255,KIT1,,,,,"/>
 </errors>
 </schematic>
 </drawing>
