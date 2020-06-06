@@ -12743,6 +12743,60 @@ In this library you will find crystals and oscillators used for clocking signals
 </deviceset>
 </devicesets>
 </library>
+<library name="RoboJackets-Diodes">
+<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
+&lt;hr&gt;
+&lt;h1&gt;RoboJackets EAGLE Libraries - Diodes&lt;/h1&gt;&lt;/br&gt;
+&lt;p&gt;
+In this library you will find diodes and other circuit protection elements.
+&lt;/p&gt;</description>
+<packages>
+<package name="CST2B">
+<smd name="A" x="0" y="0.425" dx="0.7" dy="0.25" layer="1"/>
+<smd name="K" x="0" y="-0.325" dx="0.7" dy="0.45" layer="1"/>
+<text x="-0.75" y="-0.75" size="1.5" layer="25" rot="R90">&gt;NAME</text>
+<wire x1="-0.5" y1="0.75" x2="0.5" y2="0.75" width="0.2" layer="25"/>
+<wire x1="0.5" y1="0.75" x2="0.5" y2="-0.75" width="0.2" layer="25"/>
+<wire x1="0.5" y1="-0.75" x2="-0.5" y2="-0.75" width="0.2" layer="25"/>
+<wire x1="-0.5" y1="-0.75" x2="-0.5" y2="0.75" width="0.2" layer="25"/>
+</package>
+</packages>
+<symbols>
+<symbol name="SCHOTTKY">
+<wire x1="1.27" y1="-2.54" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0.508" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-2.54" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-0.508" width="0.254" layer="94"/>
+<text x="2.54" y="0" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="C" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
+<wire x1="1.27" y1="-0.508" x2="0.762" y2="-0.508" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0.508" x2="-0.762" y2="0.508" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CBS10S30" prefix="D">
+<gates>
+<gate name="G$1" symbol="SCHOTTKY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CST2B">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="K"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 <library name="rcl">
 <description>&lt;b&gt;Resistors, Capacitors, Inductors&lt;/b&gt;&lt;p&gt;
 Based on the previous libraries:
@@ -16262,60 +16316,6 @@ In this library you will find LEDs and other visual output devices.
 </deviceset>
 </devicesets>
 </library>
-<library name="RoboJackets-Diodes">
-<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
-&lt;hr&gt;
-&lt;h1&gt;RoboJackets EAGLE Libraries - Diodes&lt;/h1&gt;&lt;/br&gt;
-&lt;p&gt;
-In this library you will find diodes and other circuit protection elements.
-&lt;/p&gt;</description>
-<packages>
-<package name="CST2B">
-<smd name="A" x="0" y="0.425" dx="0.7" dy="0.25" layer="1"/>
-<smd name="K" x="0" y="-0.325" dx="0.7" dy="0.45" layer="1"/>
-<text x="-0.75" y="-0.75" size="1.5" layer="25" rot="R90">&gt;NAME</text>
-<wire x1="-0.5" y1="0.75" x2="0.5" y2="0.75" width="0.2" layer="25"/>
-<wire x1="0.5" y1="0.75" x2="0.5" y2="-0.75" width="0.2" layer="25"/>
-<wire x1="0.5" y1="-0.75" x2="-0.5" y2="-0.75" width="0.2" layer="25"/>
-<wire x1="-0.5" y1="-0.75" x2="-0.5" y2="0.75" width="0.2" layer="25"/>
-</package>
-</packages>
-<symbols>
-<symbol name="SCHOTTKY">
-<wire x1="1.27" y1="-2.54" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="0.508" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="-2.54" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="1.27" y2="-0.508" width="0.254" layer="94"/>
-<text x="2.54" y="0" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="A" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="C" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
-<wire x1="1.27" y1="-0.508" x2="0.762" y2="-0.508" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="0.508" x2="-0.762" y2="0.508" width="0.254" layer="94"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="CBS10S30" prefix="D">
-<gates>
-<gate name="G$1" symbol="SCHOTTKY" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="CST2B">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="K"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 <attribute name="REVISION" value="v1.0"/>
@@ -16329,7 +16329,7 @@ In this library you will find diodes and other circuit protection elements.
 </classes>
 <groups>
 <schematic_group name="XTALOSC"/>
-<schematic_group name="POWERLEDS"/>
+<schematic_group name="POWERLEDS1"/>
 </groups>
 <parts>
 <part name="IC1" library="atmel" library_urn="urn:adsk.eagle:library:105" deviceset="MEGA32" device="-A" package3d_urn="urn:adsk.eagle:package:4319/1"/>
@@ -16375,15 +16375,15 @@ In this library you will find diodes and other circuit protection elements.
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="5V"/>
 <part name="FRAME3" library="RoboJackets-Frames" deviceset="FRAME_A_L" device=""/>
-<part name="R41" library="rcl" deviceset="R-US_" device="R0603" value="1k"/>
-<part name="D8" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-GREEN" value="GREEN"/>
-<part name="SUPPLY76" library="supply2" deviceset="GND" device=""/>
-<part name="P+9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="+5V"/>
 <part name="P+10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="+5V"/>
 <part name="P+11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="+5V"/>
 <part name="P+12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="+5V"/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
+<part name="R41" library="rcl" deviceset="R-US_" device="R0603" value="1k"/>
+<part name="D8" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-GREEN" value="GREEN"/>
+<part name="SUPPLY76" library="supply2" deviceset="GND" device=""/>
+<part name="P+9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="+5V"/>
 </parts>
 <sheets>
 <sheet>
@@ -16486,15 +16486,15 @@ Board</text>
 <attribute name="NAME" x="100.33" y="138.049" size="1.778" layer="95"/>
 <attribute name="VALUE" x="100.33" y="135.89" size="1.778" layer="96"/>
 </instance>
-<instance part="ASV-18.432MHZ-EJ-T" gate="G$1" x="40.64" y="-30.48" smashed="yes" grouprefs="XTALOSC">
-<attribute name="VALUE" x="30.48" y="-25.4" size="1.778" layer="95"/>
-<attribute name="NAME" x="30.48" y="-22.86" size="1.778" layer="95"/>
+<instance part="ASV-18.432MHZ-EJ-T" gate="G$1" x="35.56" y="-30.48" smashed="yes" grouprefs="XTALOSC">
+<attribute name="VALUE" x="25.4" y="-25.4" size="1.778" layer="95"/>
+<attribute name="NAME" x="25.4" y="-22.86" size="1.778" layer="95"/>
 </instance>
-<instance part="GND10" gate="1" x="25.4" y="-35.56" smashed="yes" grouprefs="XTALOSC">
-<attribute name="VALUE" x="22.86" y="-38.1" size="1.778" layer="96"/>
+<instance part="GND10" gate="1" x="20.32" y="-35.56" smashed="yes" grouprefs="XTALOSC">
+<attribute name="VALUE" x="17.78" y="-38.1" size="1.778" layer="96"/>
 </instance>
-<instance part="P+8" gate="VCC" x="55.88" y="-22.86" smashed="yes" grouprefs="XTALOSC">
-<attribute name="VALUE" x="53.34" y="-25.4" size="1.778" layer="96" rot="R90"/>
+<instance part="P+8" gate="VCC" x="50.8" y="-22.86" smashed="yes" grouprefs="XTALOSC">
+<attribute name="VALUE" x="48.26" y="-25.4" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="C3" gate="G$1" x="-45.72" y="-27.94" smashed="yes">
 <attribute name="NAME" x="-44.196" y="-27.559" size="1.778" layer="95"/>
@@ -16503,6 +16503,20 @@ Board</text>
 <instance part="C4" gate="G$1" x="-55.88" y="-27.94" smashed="yes">
 <attribute name="NAME" x="-54.356" y="-27.559" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-54.356" y="-32.639" size="1.778" layer="96"/>
+</instance>
+<instance part="R41" gate="G$1" x="162.56" y="10.16" smashed="yes" rot="R90" grouprefs="POWERLEDS1">
+<attribute name="NAME" x="161.0614" y="6.35" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="165.862" y="6.35" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="D8" gate="G$1" x="162.56" y="-2.54" smashed="yes" grouprefs="POWERLEDS1">
+<attribute name="NAME" x="165.1" y="0" size="1.778" layer="95"/>
+<attribute name="VALUE" x="165.1" y="-2.54" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY76" gate="GND" x="162.56" y="-12.7" smashed="yes" grouprefs="POWERLEDS1">
+<attribute name="VALUE" x="160.655" y="-15.875" size="1.778" layer="96"/>
+</instance>
+<instance part="P+9" gate="VCC" x="162.56" y="27.94" smashed="yes" grouprefs="POWERLEDS1">
+<attribute name="VALUE" x="160.02" y="25.4" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -16630,7 +16644,12 @@ Board</text>
 <segment>
 <pinref part="P+8" gate="VCC" pin="VCC"/>
 <pinref part="ASV-18.432MHZ-EJ-T" gate="G$1" pin="4_VCC"/>
-<wire x1="55.88" y1="-25.4" x2="55.88" y2="-27.94" width="0.1524" layer="91" grouprefs="XTALOSC"/>
+<wire x1="50.8" y1="-25.4" x2="50.8" y2="-27.94" width="0.1524" layer="91" grouprefs="XTALOSC"/>
+</segment>
+<segment>
+<pinref part="R41" gate="G$1" pin="2"/>
+<pinref part="P+9" gate="VCC" pin="VCC"/>
+<wire x1="162.56" y1="15.24" x2="162.56" y2="25.4" width="0.1524" layer="91" grouprefs="POWERLEDS1"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -16699,6 +16718,11 @@ Board</text>
 <segment>
 <pinref part="ASV-18.432MHZ-EJ-T" gate="G$1" pin="2_GND"/>
 <pinref part="GND10" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="SUPPLY76" gate="GND" pin="GND"/>
+<pinref part="D8" gate="G$1" pin="K"/>
+<wire x1="162.56" y1="-10.16" x2="162.56" y2="-5.08" width="0.1524" layer="91" grouprefs="POWERLEDS1"/>
 </segment>
 </net>
 <net name="RS" class="0">
@@ -16910,13 +16934,20 @@ Board</text>
 <net name="CLK" class="0">
 <segment>
 <pinref part="ASV-18.432MHZ-EJ-T" gate="G$1" pin="3_CLK"/>
-<wire x1="55.88" y1="-33.02" x2="58.42" y2="-33.02" width="0.1524" layer="91" grouprefs="XTALOSC"/>
-<label x="58.42" y="-33.02" size="1.778" layer="95" xref="yes" grouprefs="XTALOSC"/>
+<wire x1="50.8" y1="-33.02" x2="53.34" y2="-33.02" width="0.1524" layer="91" grouprefs="XTALOSC"/>
+<label x="53.34" y="-33.02" size="1.778" layer="95" xref="yes" grouprefs="XTALOSC"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="XTAL1"/>
 <wire x1="-30.48" y1="96.52" x2="-33.02" y2="96.52" width="0.1524" layer="91"/>
 <label x="-33.02" y="96.52" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="5V_PWR_BR" class="0">
+<segment>
+<pinref part="R41" gate="G$1" pin="1"/>
+<pinref part="D8" gate="G$1" pin="A"/>
+<wire x1="162.56" y1="5.08" x2="162.56" y2="2.54" width="0.1524" layer="91" grouprefs="POWERLEDS1"/>
 </segment>
 </net>
 </nets>
@@ -17150,45 +17181,10 @@ Board</text>
 <attribute name="TEAM" x="186.69" y="24.13" size="3.048" layer="94" ratio="10" align="top-left"/>
 <attribute name="REVISION" x="257.81" y="-3.81" size="2.54" layer="94"/>
 </instance>
-<instance part="R41" gate="G$1" x="71.12" y="116.84" smashed="yes" rot="R90" grouprefs="POWERLEDS">
-<attribute name="NAME" x="69.6214" y="113.03" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="74.422" y="113.03" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="D8" gate="G$1" x="71.12" y="104.14" smashed="yes" grouprefs="POWERLEDS">
-<attribute name="NAME" x="73.66" y="106.68" size="1.778" layer="95"/>
-<attribute name="VALUE" x="73.66" y="104.14" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY76" gate="GND" x="71.12" y="93.98" smashed="yes" grouprefs="POWERLEDS">
-<attribute name="VALUE" x="69.215" y="90.805" size="1.778" layer="96"/>
-</instance>
-<instance part="P+9" gate="VCC" x="71.12" y="134.62" smashed="yes" grouprefs="POWERLEDS">
-<attribute name="VALUE" x="68.58" y="132.08" size="1.778" layer="96" rot="R90"/>
-</instance>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="GND" class="0">
-<segment>
-<pinref part="SUPPLY76" gate="GND" pin="GND"/>
-<pinref part="D8" gate="G$1" pin="K"/>
-<wire x1="71.12" y1="96.52" x2="71.12" y2="101.6" width="0.1524" layer="91" grouprefs="POWERLEDS"/>
-</segment>
-</net>
-<net name="5V_PWR_BR" class="0">
-<segment>
-<pinref part="R41" gate="G$1" pin="1"/>
-<pinref part="D8" gate="G$1" pin="A"/>
-<wire x1="71.12" y1="111.76" x2="71.12" y2="109.22" width="0.1524" layer="91" grouprefs="POWERLEDS"/>
-</segment>
-</net>
-<net name="VCC" class="0">
-<segment>
-<pinref part="R41" gate="G$1" pin="2"/>
-<pinref part="P+9" gate="VCC" pin="VCC"/>
-<wire x1="71.12" y1="121.92" x2="71.12" y2="132.08" width="0.1524" layer="91" grouprefs="POWERLEDS"/>
-</segment>
-</net>
 </nets>
 </sheet>
 </sheets>
