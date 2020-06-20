@@ -8302,30 +8302,48 @@ Datasheet: https://www.onsemi.com/pub/Collateral/NCP161-D.PDF &lt;/p&gt;</descri
 </library>
 <library name="TXB0106">
 <packages>
-<package name="TSSOP16">
-<wire x1="-2.25" y1="2.6" x2="-2.25" y2="-2.6" width="0.127" layer="21"/>
-<wire x1="2.25" y1="-2.6" x2="-2.25" y2="-2.6" width="0.127" layer="21"/>
-<wire x1="2.25" y1="-2.6" x2="2.25" y2="2.6" width="0.127" layer="21"/>
-<wire x1="-2.25" y1="2.6" x2="2.25" y2="2.6" width="0.127" layer="21"/>
-<circle x="-1.8" y="2.1" radius="0.2" width="0.127" layer="21"/>
-<text x="-2.286" y="2.67101875" size="1" layer="25" font="vector">&gt;NAME</text>
-<text x="-2.286" y="-2.692" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
-<smd name="1" x="-3" y="2.275" dx="0.35" dy="1.2" layer="1" roundness="20" rot="R270"/>
-<smd name="2" x="-3" y="1.625" dx="0.35" dy="1.2" layer="1" roundness="20" rot="R270"/>
-<smd name="3" x="-3" y="0.975" dx="0.35" dy="1.2" layer="1" roundness="20" rot="R270"/>
-<smd name="4" x="-3" y="0.325" dx="0.35" dy="1.2" layer="1" roundness="20" rot="R270"/>
-<smd name="5" x="-3" y="-0.325" dx="0.35" dy="1.2" layer="1" roundness="20" rot="R270"/>
-<smd name="6" x="-3" y="-0.975" dx="0.35" dy="1.2" layer="1" roundness="20" rot="R270"/>
-<smd name="7" x="-3" y="-1.625" dx="0.35" dy="1.2" layer="1" roundness="20" rot="R270"/>
-<smd name="8" x="-3" y="-2.275" dx="0.35" dy="1.2" layer="1" roundness="20" rot="R270"/>
-<smd name="9" x="3" y="-2.275" dx="0.35" dy="1.2" layer="1" roundness="20" rot="R270"/>
-<smd name="10" x="3" y="-1.625" dx="0.35" dy="1.2" layer="1" roundness="20" rot="R270"/>
-<smd name="11" x="3" y="-0.975" dx="0.35" dy="1.2" layer="1" roundness="20" rot="R270"/>
-<smd name="12" x="3" y="-0.325" dx="0.35" dy="1.2" layer="1" roundness="20" rot="R270"/>
-<smd name="13" x="3" y="0.325" dx="0.35" dy="1.2" layer="1" roundness="20" rot="R270"/>
-<smd name="14" x="3" y="0.975" dx="0.35" dy="1.2" layer="1" roundness="20" rot="R270"/>
-<smd name="15" x="3" y="1.625" dx="0.35" dy="1.2" layer="1" roundness="20" rot="R270"/>
-<smd name="16" x="3" y="2.275" dx="0.35" dy="1.2" layer="1" roundness="20" rot="R270"/>
+<package name="TSSOP-16">
+<description>&lt;b&gt;16-Lead Thin Shrink Small Outline Package&lt;/b&gt; [TSSOP] (RU-16)&lt;p&gt;
+Source: 8x ADG1408_1409.pdf</description>
+<wire x1="-2.1484" y1="-2.3984" x2="2.1484" y2="-2.3984" width="0.2032" layer="21"/>
+<wire x1="2.1484" y1="-2.3984" x2="2.1484" y2="2.3984" width="0.2032" layer="21"/>
+<wire x1="2.1484" y1="2.3984" x2="-2.1484" y2="2.3984" width="0.2032" layer="21"/>
+<wire x1="-2.1484" y1="2.3984" x2="-2.1484" y2="-2.3984" width="0.2032" layer="21"/>
+<circle x="-1.575" y="1.925" radius="0.2136" width="0" layer="21"/>
+<smd name="1" x="-2.875" y="2.275" dx="0.9" dy="0.35" layer="1"/>
+<smd name="2" x="-2.875" y="1.625" dx="0.9" dy="0.35" layer="1"/>
+<smd name="3" x="-2.875" y="0.975" dx="0.9" dy="0.35" layer="1"/>
+<smd name="4" x="-2.875" y="0.325" dx="0.9" dy="0.35" layer="1"/>
+<smd name="5" x="-2.875" y="-0.325" dx="0.9" dy="0.35" layer="1"/>
+<smd name="6" x="-2.875" y="-0.975" dx="0.9" dy="0.35" layer="1"/>
+<smd name="7" x="-2.875" y="-1.625" dx="0.9" dy="0.35" layer="1"/>
+<smd name="8" x="-2.875" y="-2.275" dx="0.9" dy="0.35" layer="1"/>
+<smd name="9" x="2.875" y="-2.275" dx="0.9" dy="0.35" layer="1" rot="R180"/>
+<smd name="10" x="2.875" y="-1.625" dx="0.9" dy="0.35" layer="1" rot="R180"/>
+<smd name="11" x="2.875" y="-0.975" dx="0.9" dy="0.35" layer="1" rot="R180"/>
+<smd name="12" x="2.875" y="-0.325" dx="0.9" dy="0.35" layer="1" rot="R180"/>
+<smd name="13" x="2.875" y="0.325" dx="0.9" dy="0.35" layer="1" rot="R180"/>
+<smd name="14" x="2.875" y="0.975" dx="0.9" dy="0.35" layer="1" rot="R180"/>
+<smd name="15" x="2.875" y="1.625" dx="0.9" dy="0.35" layer="1" rot="R180"/>
+<smd name="16" x="2.875" y="2.275" dx="0.9" dy="0.35" layer="1" rot="R180"/>
+<text x="-3.175" y="3.175" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.175" y="-4.445" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-3.2" y1="2.125" x2="-2.25" y2="2.425" layer="51"/>
+<rectangle x1="-3.2" y1="1.475" x2="-2.25" y2="1.775" layer="51"/>
+<rectangle x1="-3.2" y1="0.825" x2="-2.25" y2="1.125" layer="51"/>
+<rectangle x1="-3.2" y1="0.175" x2="-2.25" y2="0.475" layer="51"/>
+<rectangle x1="-3.2" y1="-0.475" x2="-2.25" y2="-0.175" layer="51"/>
+<rectangle x1="-3.2" y1="-1.125" x2="-2.25" y2="-0.825" layer="51"/>
+<rectangle x1="-3.2" y1="-1.775" x2="-2.25" y2="-1.475" layer="51"/>
+<rectangle x1="-3.2" y1="-2.425" x2="-2.25" y2="-2.125" layer="51"/>
+<rectangle x1="2.25" y1="-2.425" x2="3.2" y2="-2.125" layer="51" rot="R180"/>
+<rectangle x1="2.25" y1="-1.775" x2="3.2" y2="-1.475" layer="51" rot="R180"/>
+<rectangle x1="2.25" y1="-1.125" x2="3.2" y2="-0.825" layer="51" rot="R180"/>
+<rectangle x1="2.25" y1="-0.475" x2="3.2" y2="-0.175" layer="51" rot="R180"/>
+<rectangle x1="2.25" y1="0.175" x2="3.2" y2="0.475" layer="51" rot="R180"/>
+<rectangle x1="2.25" y1="0.825" x2="3.2" y2="1.125" layer="51" rot="R180"/>
+<rectangle x1="2.25" y1="1.475" x2="3.2" y2="1.775" layer="51" rot="R180"/>
+<rectangle x1="2.25" y1="2.125" x2="3.2" y2="2.425" layer="51" rot="R180"/>
 </package>
 </packages>
 <symbols>
@@ -8341,7 +8359,7 @@ Datasheet: https://www.onsemi.com/pub/Collateral/NCP161-D.PDF &lt;/p&gt;</descri
 <pin name="A2" x="-17.78" y="0" length="middle"/>
 <pin name="A3" x="-17.78" y="-2.54" length="middle"/>
 <pin name="A4" x="-17.78" y="-5.08" length="middle"/>
-<pin name="GND" x="0" y="-20.32" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND" x="5.08" y="-20.32" length="middle" direction="pwr" rot="R90"/>
 <pin name="VCCB" x="17.78" y="12.7" length="middle" direction="pwr" rot="R180"/>
 <pin name="B1" x="17.78" y="2.54" length="middle" rot="R180"/>
 <pin name="B2" x="17.78" y="0" length="middle" rot="R180"/>
@@ -8361,7 +8379,7 @@ Datasheet: https://www.onsemi.com/pub/Collateral/NCP161-D.PDF &lt;/p&gt;</descri
 <gate name="U" symbol="TXB0106" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-PW" package="TSSOP16">
+<device name="" package="TSSOP-16">
 <connects>
 <connect gate="U" pin="A1" pad="1"/>
 <connect gate="U" pin="A2" pad="3"/>
@@ -8381,14 +8399,7 @@ Datasheet: https://www.onsemi.com/pub/Collateral/NCP161-D.PDF &lt;/p&gt;</descri
 <connect gate="U" pin="VCCB" pad="15"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="AVAILABILITY" value="Unavailable"/>
-<attribute name="DESCRIPTION" value=" Voltage Level Translator Bidirectional 1 Circuit 6 Channel 100Mbps 16-TSSOP "/>
-<attribute name="MF" value="Texas Instruments"/>
-<attribute name="MP" value="TXB0106"/>
-<attribute name="PACKAGE" value="TSSOP-16 Texas Instruments"/>
-<attribute name="PRICE" value="None"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -8436,7 +8447,7 @@ Datasheet: https://www.onsemi.com/pub/Collateral/NCP161-D.PDF &lt;/p&gt;</descri
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="SUPPLY4" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
-<part name="U3" library="TXB0106" deviceset="TXB0106" device="-PW"/>
+<part name="U3" library="TXB0106" deviceset="TXB0106" device=""/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SUPPLY5" library="RoboJackets-Supplies" deviceset="+1.8V" device=""/>
 <part name="SUPPLY6" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
@@ -8664,7 +8675,7 @@ Datasheet: https://www.onsemi.com/pub/Collateral/NCP161-D.PDF &lt;/p&gt;</descri
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
 <pinref part="U3" gate="U" pin="GND"/>
-<wire x1="57.74" y1="88.9" x2="57.74" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="62.82" y1="88.9" x2="57.74" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND8" gate="1" pin="GND"/>
