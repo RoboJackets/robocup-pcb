@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="13" fill="1" visible="no" active="no"/>
@@ -27467,12 +27467,12 @@ Source: SN74LVC3G17.pdf</description>
 <wire x1="167.64" y1="137.16" x2="259.08" y2="137.16" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="259.08" y1="137.16" x2="259.08" y2="205.74" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="259.08" y1="205.74" x2="167.64" y2="205.74" width="0.1524" layer="97" style="shortdash"/>
-<text x="172.72" y="198.12" size="1.778" layer="97" font="vector">TMC4671</text>
+<text x="172.72" y="198.12" size="1.778" layer="97">TMC4671</text>
 <wire x1="167.64" y1="132.08" x2="167.64" y2="55.88" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="167.64" y1="55.88" x2="269.24" y2="55.88" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="269.24" y1="55.88" x2="269.24" y2="132.08" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="269.24" y1="132.08" x2="167.64" y2="132.08" width="0.1524" layer="97" style="shortdash"/>
-<text x="172.72" y="124.46" size="1.778" layer="97" font="vector">TMC6200</text>
+<text x="172.72" y="124.46" size="1.778" layer="97">TMC6200</text>
 </plain>
 <instances>
 <instance part="FRAME5" gate="G$1" x="0" y="0" smashed="yes">
@@ -28421,9 +28421,9 @@ Source: SN74LVC3G17.pdf</description>
 <wire x1="76.2" y1="27.94" x2="10.16" y2="27.94" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="10.16" y1="27.94" x2="10.16" y2="101.6" width="0.1524" layer="97" style="shortdash"/>
 <text x="12.7" y="96.52" size="1.778" layer="97">Motor, Halls, and Encoder Connections</text>
-<wire x1="10.16" y1="205.74" x2="266.7" y2="205.74" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="266.7" y1="205.74" x2="266.7" y2="106.68" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="266.7" y1="106.68" x2="10.16" y2="106.68" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="10.16" y1="205.74" x2="241.3" y2="205.74" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="241.3" y1="205.74" x2="241.3" y2="106.68" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="241.3" y1="106.68" x2="10.16" y2="106.68" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="10.16" y1="106.68" x2="10.16" y2="205.74" width="0.1524" layer="97" style="shortdash"/>
 <text x="12.7" y="200.66" size="1.778" layer="97">FPGA PMOD Connectors</text>
 <text x="15.24" y="111.76" size="1.778" layer="97">Connections:
