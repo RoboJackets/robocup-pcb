@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -3769,10 +3769,11 @@ CABLE</text>
 <pad name="NC" x="11.43" y="19.05" drill="1.02" rot="R180"/>
 <pad name="VBUS" x="11.43" y="21.59" drill="1.02" rot="R180"/>
 <pad name="VDD" x="11.43" y="24.13" drill="1.02" rot="R180"/>
-<text x="-12.7" y="27.94" size="1.27" layer="25">&gt;NAME</text>
-<text x="0" y="17.78" size="1.778" layer="21" font="vector" ratio="15" rot="SR0" align="bottom-center">^   ^
-MTRAIN
+<text x="-12.7" y="27.94" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="20.32" size="1.778" layer="21" font="vector" ratio="15" rot="SR0" align="bottom-center">^   ^
 FRONT</text>
+<circle x="-13.97" y="27.94" radius="0.508" width="0" layer="21"/>
+<text x="0" y="0" size="1.778" layer="21" font="vector" ratio="15" rot="SR0" align="bottom-center">mTrain</text>
 </package>
 <package name="TMC4671-BOB">
 <description>TMC4671 BreakOut Board (BOB)</description>
@@ -3788,9 +3789,9 @@ FRONT</text>
 <pad name="19" x="17.78" y="11.43" drill="1.016"/>
 <pad name="18" x="17.78" y="13.97" drill="1.016"/>
 <pad name="17" x="17.78" y="16.51" drill="1.016"/>
-<text x="-19.05" y="20.32" size="1" layer="25">&gt;NAME</text>
-<circle x="-17.78" y="18.288" radius="0.254" width="0.127" layer="21"/>
-<text x="-19.05" y="-24.13" size="1" layer="27" align="top-left">&gt;VALUE</text>
+<text x="-19.05" y="20.32" size="1" layer="25" font="vector">&gt;NAME</text>
+<circle x="-20.32" y="20.32" radius="0.508" width="0" layer="21"/>
+<text x="-19.05" y="-24.13" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
 <pad name="5" x="-17.78" y="6.35" drill="1.016"/>
 <pad name="6" x="-17.78" y="3.81" drill="1.016"/>
 <pad name="7" x="-17.78" y="1.27" drill="1.016"/>
@@ -3815,7 +3816,9 @@ FRONT</text>
 <pad name="30" x="17.78" y="-16.51" drill="1.016"/>
 <pad name="31" x="17.78" y="-19.05" drill="1.016"/>
 <pad name="32" x="17.78" y="-21.59" drill="1.016"/>
-<text x="0.017" y="-0.05" size="1.778" layer="21" font="vector" ratio="15" align="center">TMC4671 BreakOut Board</text>
+<text x="0" y="0" size="1.778" layer="21" font="vector" ratio="15" rot="SR0" align="center">TMC4671 BreakOut Board</text>
+<text x="0" y="12.7" size="1.778" layer="21" font="vector" ratio="15" rot="SR0" align="bottom-center">^   ^
+FRONT</text>
 </package>
 <package name="TMC6200-BOB">
 <description>TMC6200 BreakOut Board (BOB)</description>
@@ -3831,8 +3834,8 @@ FRONT</text>
 <pad name="17" x="17.78" y="11.43" drill="1.016"/>
 <pad name="16" x="17.78" y="13.97" drill="1.016"/>
 <pad name="15" x="17.78" y="16.51" drill="1.016"/>
-<text x="-19.05" y="20.32" size="1" layer="25">&gt;NAME</text>
-<circle x="-17.78" y="18.288" radius="0.254" width="0.127" layer="21"/>
+<text x="-19.05" y="20.32" size="1" layer="25" font="vector">&gt;NAME</text>
+<circle x="-20.32" y="20.32" radius="0.508" width="0" layer="21"/>
 <text x="-19.05" y="-19.05" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
 <pad name="5" x="-17.78" y="6.35" drill="1.016"/>
 <pad name="6" x="-17.78" y="3.81" drill="1.016"/>
@@ -3859,7 +3862,9 @@ FRONT</text>
 <pad name="31" x="-4.572" y="16.51" drill="1.016" rot="R90"/>
 <pad name="32" x="-2.032" y="16.51" drill="1.016" rot="R90"/>
 <pad name="33" x="0.508" y="16.51" drill="1.016" rot="R90"/>
-<text x="-0.06" y="0" size="1.778" layer="21" font="vector" ratio="15" align="center">TMC6200 BreakOut Board</text>
+<text x="0" y="0" size="1.778" layer="21" font="vector" ratio="15" rot="SR0" align="center">TMC6200 BreakOut Board</text>
+<text x="0" y="10.16" size="1.778" layer="21" font="vector" ratio="15" rot="SR0" align="bottom-center">^   ^
+FRONT</text>
 </package>
 </packages>
 </library>
@@ -9911,16 +9916,16 @@ Your Eurocircuits Team
 <wire x1="1.27" y1="-9.73" x2="2.325" y2="-8.675" width="0.3" layer="1"/>
 </signal>
 <signal name="BOLT1">
-<via x="-62.9" y="50.64" extent="1-16" drill="3.8" diameter="7.2"/>
+<via x="-65" y="52" extent="1-16" drill="2.85" diameter="6.4"/>
 </signal>
 <signal name="BOLT2">
-<via x="56.5" y="50.64" extent="1-16" drill="3.8" diameter="7.2"/>
+<via x="58" y="52" extent="1-16" drill="2.85" diameter="6.4"/>
 </signal>
 <signal name="BOLT3">
-<via x="56.3" y="-25.36" extent="1-16" drill="3.8" diameter="7.2"/>
+<via x="58" y="-27" extent="1-16" drill="2.85" diameter="6.4"/>
 </signal>
 <signal name="BOLT4">
-<via x="-63" y="-25.36" extent="1-16" drill="3.8" diameter="7.2"/>
+<via x="-65" y="-27" extent="1-16" drill="2.85" diameter="6.4"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
