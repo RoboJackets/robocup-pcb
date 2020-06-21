@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="13" fill="1" visible="no" active="no"/>
@@ -219,7 +219,7 @@
 </deviceset>
 </devicesets>
 </library>
-<library name="supply2" urn="urn:adsk.eagle:library:372">
+<library name="supply2">
 <description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
 GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
 Please keep in mind, that these devices are necessary for the
@@ -230,7 +230,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <packages>
 </packages>
 <symbols>
-<symbol name="+05V" urn="urn:adsk.eagle:symbol:26987/1" library_version="2">
+<symbol name="+05V">
 <wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="94"/>
 <wire x1="0" y1="0.635" x2="0" y2="1.905" width="0.1524" layer="94"/>
 <circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
@@ -239,7 +239,7 @@ In this library the device names are the same as the pin names of the symbols, t
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="+5V" urn="urn:adsk.eagle:component:27032/1" prefix="SUPPLY" library_version="2">
+<deviceset name="+5V" prefix="SUPPLY">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="+5V" symbol="+05V" x="0" y="0"/>
@@ -25717,10 +25717,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pad name="NC" x="11.43" y="19.05" drill="1.02" rot="R180"/>
 <pad name="VBUS" x="11.43" y="21.59" drill="1.02" rot="R180"/>
 <pad name="VDD" x="11.43" y="24.13" drill="1.02" rot="R180"/>
-<text x="-12.7" y="27.94" size="1.27" layer="25">&gt;NAME</text>
-<text x="0" y="17.78" size="1.778" layer="21" font="vector" ratio="15" rot="SR0" align="bottom-center">^   ^
-MTRAIN
+<text x="-12.7" y="27.94" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="20.32" size="1.778" layer="21" font="vector" ratio="15" rot="SR0" align="bottom-center">^   ^
 FRONT</text>
+<circle x="-13.97" y="27.94" radius="0.508" width="0" layer="21"/>
+<text x="0" y="0" size="1.778" layer="21" font="vector" ratio="15" rot="SR0" align="bottom-center">mTrain</text>
 </package>
 <package name="TMC4671-BOB">
 <description>TMC4671 BreakOut Board (BOB)</description>
@@ -25736,9 +25737,9 @@ FRONT</text>
 <pad name="19" x="17.78" y="11.43" drill="1.016"/>
 <pad name="18" x="17.78" y="13.97" drill="1.016"/>
 <pad name="17" x="17.78" y="16.51" drill="1.016"/>
-<text x="-19.05" y="20.32" size="1" layer="25">&gt;NAME</text>
-<circle x="-17.78" y="18.288" radius="0.254" width="0.127" layer="21"/>
-<text x="-19.05" y="-24.13" size="1" layer="27" align="top-left">&gt;VALUE</text>
+<text x="-19.05" y="20.32" size="1" layer="25" font="vector">&gt;NAME</text>
+<circle x="-20.32" y="20.32" radius="0.508" width="0" layer="21"/>
+<text x="-19.05" y="-24.13" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
 <pad name="5" x="-17.78" y="6.35" drill="1.016"/>
 <pad name="6" x="-17.78" y="3.81" drill="1.016"/>
 <pad name="7" x="-17.78" y="1.27" drill="1.016"/>
@@ -25763,7 +25764,9 @@ FRONT</text>
 <pad name="30" x="17.78" y="-16.51" drill="1.016"/>
 <pad name="31" x="17.78" y="-19.05" drill="1.016"/>
 <pad name="32" x="17.78" y="-21.59" drill="1.016"/>
-<text x="0.017" y="-0.05" size="1.778" layer="21" font="vector" ratio="15" align="center">TMC4671 BreakOut Board</text>
+<text x="0" y="0" size="1.778" layer="21" font="vector" ratio="15" rot="SR0" align="center">TMC4671 BreakOut Board</text>
+<text x="0" y="12.7" size="1.778" layer="21" font="vector" ratio="15" rot="SR0" align="bottom-center">^   ^
+FRONT</text>
 </package>
 <package name="TMC6200-BOB">
 <description>TMC6200 BreakOut Board (BOB)</description>
@@ -25779,8 +25782,8 @@ FRONT</text>
 <pad name="17" x="17.78" y="11.43" drill="1.016"/>
 <pad name="16" x="17.78" y="13.97" drill="1.016"/>
 <pad name="15" x="17.78" y="16.51" drill="1.016"/>
-<text x="-19.05" y="20.32" size="1" layer="25">&gt;NAME</text>
-<circle x="-17.78" y="18.288" radius="0.254" width="0.127" layer="21"/>
+<text x="-19.05" y="20.32" size="1" layer="25" font="vector">&gt;NAME</text>
+<circle x="-20.32" y="20.32" radius="0.508" width="0" layer="21"/>
 <text x="-19.05" y="-19.05" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
 <pad name="5" x="-17.78" y="6.35" drill="1.016"/>
 <pad name="6" x="-17.78" y="3.81" drill="1.016"/>
@@ -25807,7 +25810,9 @@ FRONT</text>
 <pad name="31" x="-4.572" y="16.51" drill="1.016" rot="R90"/>
 <pad name="32" x="-2.032" y="16.51" drill="1.016" rot="R90"/>
 <pad name="33" x="0.508" y="16.51" drill="1.016" rot="R90"/>
-<text x="-0.06" y="0" size="1.778" layer="21" font="vector" ratio="15" align="center">TMC6200 BreakOut Board</text>
+<text x="0" y="0" size="1.778" layer="21" font="vector" ratio="15" rot="SR0" align="center">TMC6200 BreakOut Board</text>
+<text x="0" y="10.16" size="1.778" layer="21" font="vector" ratio="15" rot="SR0" align="bottom-center">^   ^
+FRONT</text>
 </package>
 </packages>
 <symbols>
@@ -26874,7 +26879,7 @@ Source: SN74LVC3G17.pdf</description>
 <part name="C10" library="rcl" deviceset="C-US" device="C0603" value="GRM188R6YA106MA73D"/>
 <part name="GND64" library="supply1" deviceset="GND" device=""/>
 <part name="GND77" library="supply1" deviceset="GND" device=""/>
-<part name="SUPPLY45" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
+<part name="SUPPLY45" library="supply2" deviceset="+5V" device=""/>
 <part name="FRAME6" library="RoboJackets-Frames" deviceset="FRAME_A_L" device="">
 <attribute name="REVISION" value="1.0"/>
 <attribute name="SCH_DESC" value="External Connections"/>
@@ -26896,7 +26901,7 @@ Source: SN74LVC3G17.pdf</description>
 <part name="GND79" library="supply1" deviceset="GND" device=""/>
 <part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22uF 16V"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
+<part name="SUPPLY3" library="supply2" deviceset="+5V" device=""/>
 <part name="KIT3" library="RoboJackets-Boards" deviceset="MTRAIN" device=""/>
 <part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="30.1k 1%"/>
 <part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="160k 1%"/>
@@ -26930,7 +26935,7 @@ Source: SN74LVC3G17.pdf</description>
 <part name="C9" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="2.2uF 50V"/>
 <part name="GND46" library="supply1" deviceset="GND" device=""/>
 <part name="GND50" library="supply1" deviceset="GND" device=""/>
-<part name="SUPPLY31" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
+<part name="SUPPLY31" library="supply2" deviceset="+5V" device=""/>
 <part name="J1" library="RoboJackets-Connectors" deviceset="MKS-1658" device=""/>
 <part name="J2" library="RoboJackets-Connectors" deviceset="4-PIN_2MM-*" device="H"/>
 <part name="JA" library="RoboJackets-Connectors" deviceset="PMOD" device=""/>
@@ -26961,7 +26966,7 @@ Source: SN74LVC3G17.pdf</description>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="KIT2" library="RoboJackets-Boards" deviceset="TMC4671-BOB" device=""/>
 <part name="SUPPLY6" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
-<part name="SUPPLY7" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
+<part name="SUPPLY7" library="supply2" deviceset="+5V" device=""/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY8" library="RoboJackets-Supplies" deviceset="+18.5V" device=""/>
 <part name="KIT1" library="RoboJackets-Boards" deviceset="TMC6200-BOB" device=""/>
