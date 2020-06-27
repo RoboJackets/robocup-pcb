@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8578,8 +8578,8 @@ Source: 8x ADG1408_1409.pdf</description>
 <attribute name="NAME" x="45.0193" y="127.0289" size="1.778" layer="95" font="vector" align="top-left"/>
 <attribute name="VALUE" x="45.0291" y="91.4247" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="GND6" gate="1" x="57.74" y="83.82" smashed="yes">
-<attribute name="VALUE" x="55.2" y="81.28" size="1.778" layer="96"/>
+<instance part="GND6" gate="1" x="62.82" y="83.82" smashed="yes">
+<attribute name="VALUE" x="60.28" y="81.28" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY5" gate="G$1" x="13.864" y="127.562" smashed="yes">
 <attribute name="VALUE" x="11.959" y="130.737" size="1.778" layer="96"/>
@@ -8675,7 +8675,7 @@ Source: 8x ADG1408_1409.pdf</description>
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
 <pinref part="U3" gate="U" pin="GND"/>
-<wire x1="62.82" y1="88.9" x2="57.74" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="62.82" y1="88.9" x2="62.82" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND8" gate="1" pin="GND"/>
