@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="13" fill="1" visible="no" active="no"/>
@@ -26908,7 +26908,7 @@ Source: SN74LVC3G17.pdf</description>
 <part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="43.2k"/>
 <part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="150k"/>
 <part name="SUPPLY41" library="RoboJackets-Supplies" deviceset="+18.5V" device=""/>
-<part name="F2" library="RoboJackets-Fuses" deviceset="CHIP_FUSE" device="0805" value="0805L200SLTHYR"/>
+<part name="F2" library="RoboJackets-Fuses" deviceset="CHIP_FUSE" device="0805" value="2A"/>
 <part name="R17" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="0"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="C7" library="rcl" deviceset="C-US" device="C0603" value="GRM188R6YA106MA73D"/>
@@ -26929,7 +26929,7 @@ Source: SN74LVC3G17.pdf</description>
 <part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="29.4k"/>
 <part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="150k"/>
 <part name="SUPPLY43" library="RoboJackets-Supplies" deviceset="+18.5V" device=""/>
-<part name="F1" library="RoboJackets-Fuses" deviceset="CHIP_FUSE" device="0805" value="0805L200SLTHYR"/>
+<part name="F1" library="RoboJackets-Fuses" deviceset="CHIP_FUSE" device="0805" value="2A"/>
 <part name="R10" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="0"/>
 <part name="SUPPLY42" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="C9" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="2.2uF 50V"/>
