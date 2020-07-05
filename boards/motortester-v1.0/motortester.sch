@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.0">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -12685,64 +12685,6 @@ Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="RoboJackets-FreqGen">
-<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
-&lt;hr&gt;
-&lt;h1&gt;RoboJackets EAGLE Libraries - Frequency Generation&lt;/h1&gt;&lt;/br&gt;
-&lt;p&gt;
-In this library you will find crystals and oscillators used for clocking signals.
-&lt;/p&gt;</description>
-<packages>
-<package name="XTAL_LCC">
-<wire x1="-3.5" y1="2.54" x2="3.5" y2="2.54" width="0.127" layer="21"/>
-<wire x1="3.5" y1="2.54" x2="3.5" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="-3.5" y1="-2.54" x2="3.5" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="-3.5" y1="-2.54" x2="-3.5" y2="-1" width="0.127" layer="21"/>
-<wire x1="-3.5" y1="-1" x2="-3.5" y2="2.54" width="0.127" layer="21"/>
-<wire x1="-3.5" y1="-1" x2="-1.5" y2="-1" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="-1" x2="-1.5" y2="-2.5" width="0.127" layer="21"/>
-<smd name="3" x="3.5" y="2.54" dx="2.8" dy="2.2" layer="1"/>
-<smd name="2" x="3.5" y="-2.54" dx="2.8" dy="2.2" layer="1"/>
-<smd name="1" x="-3.5" y="-2.54" dx="2.8" dy="2.2" layer="1"/>
-<smd name="4" x="-3.5" y="2.54" dx="2.8" dy="2.2" layer="1"/>
-<text x="-3" y="-0.5" size="1.27" layer="21">&gt;NAME</text>
-</package>
-</packages>
-<symbols>
-<symbol name="XTAL-1">
-<wire x1="-10.16" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
-<wire x1="10.16" y1="5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
-<text x="-10.16" y="5.08" size="1.778" layer="95">&gt;VALUE</text>
-<text x="-10.16" y="7.62" size="1.778" layer="95">&gt;NAME</text>
-<pin name="1_EN" x="-15.24" y="2.54" length="middle"/>
-<pin name="2_GND" x="-15.24" y="-2.54" length="middle"/>
-<pin name="3_CLK" x="15.24" y="-2.54" length="middle" rot="R180"/>
-<pin name="4_VCC" x="15.24" y="2.54" length="middle" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="OSC" prefix="X">
-<gates>
-<gate name="G$1" symbol="XTAL-1" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="XTAL_LCC">
-<connects>
-<connect gate="G$1" pin="1_EN" pad="1"/>
-<connect gate="G$1" pin="2_GND" pad="2"/>
-<connect gate="G$1" pin="3_CLK" pad="3"/>
-<connect gate="G$1" pin="4_VCC" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="RoboJackets-Diodes">
 <description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
 &lt;hr&gt;
@@ -16328,7 +16270,6 @@ In this library you will find LEDs and other visual output devices.
 </class>
 </classes>
 <groups>
-<schematic_group name="XTALOSC"/>
 <schematic_group name="POWERLEDS1"/>
 </groups>
 <parts>
@@ -16371,10 +16312,6 @@ In this library you will find LEDs and other visual output devices.
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="+5V"/>
 <part name="R8" library="pot" library_urn="urn:adsk.eagle:library:331" deviceset="3RP/1610N" device="" package3d_urn="urn:adsk.eagle:package:22726/1"/>
-<part name="ASV-18.432MHZ-EJ-T" library="RoboJackets-FreqGen" deviceset="OSC" device=""/>
-<part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="5V"/>
-<part name="FRAME3" library="RoboJackets-Frames" deviceset="FRAME_A_L" device=""/>
 <part name="P+10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="+5V"/>
 <part name="P+11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="+5V"/>
 <part name="P+12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="+5V"/>
@@ -16485,16 +16422,6 @@ Board</text>
 <instance part="R8" gate="G$1" x="104.14" y="132.08" smashed="yes" rot="R270">
 <attribute name="NAME" x="100.33" y="138.049" size="1.778" layer="95"/>
 <attribute name="VALUE" x="100.33" y="135.89" size="1.778" layer="96"/>
-</instance>
-<instance part="ASV-18.432MHZ-EJ-T" gate="G$1" x="35.56" y="-30.48" smashed="yes" grouprefs="XTALOSC">
-<attribute name="VALUE" x="25.4" y="-25.4" size="1.778" layer="95"/>
-<attribute name="NAME" x="25.4" y="-22.86" size="1.778" layer="95"/>
-</instance>
-<instance part="GND10" gate="1" x="20.32" y="-35.56" smashed="yes" grouprefs="XTALOSC">
-<attribute name="VALUE" x="17.78" y="-38.1" size="1.778" layer="96"/>
-</instance>
-<instance part="P+8" gate="VCC" x="50.8" y="-22.86" smashed="yes" grouprefs="XTALOSC">
-<attribute name="VALUE" x="48.26" y="-25.4" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="C3" gate="G$1" x="-45.72" y="-27.94" smashed="yes">
 <attribute name="NAME" x="-44.196" y="-27.559" size="1.778" layer="95"/>
@@ -16642,11 +16569,6 @@ Board</text>
 <wire x1="101.6" y1="2.54" x2="106.68" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="P+8" gate="VCC" pin="VCC"/>
-<pinref part="ASV-18.432MHZ-EJ-T" gate="G$1" pin="4_VCC"/>
-<wire x1="50.8" y1="-25.4" x2="50.8" y2="-27.94" width="0.1524" layer="91" grouprefs="XTALOSC"/>
-</segment>
-<segment>
 <pinref part="R41" gate="G$1" pin="2"/>
 <pinref part="P+9" gate="VCC" pin="VCC"/>
 <wire x1="162.56" y1="15.24" x2="162.56" y2="25.4" width="0.1524" layer="91" grouprefs="POWERLEDS1"/>
@@ -16714,10 +16636,6 @@ Board</text>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="106.68" y1="7.62" x2="104.14" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="7.62" x2="104.14" y2="-10.16" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="ASV-18.432MHZ-EJ-T" gate="G$1" pin="2_GND"/>
-<pinref part="GND10" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="SUPPLY76" gate="GND" pin="GND"/>
@@ -16929,18 +16847,6 @@ Board</text>
 <wire x1="104.14" y1="127" x2="104.14" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="VO"/>
 <wire x1="104.14" y1="119.38" x2="111.76" y2="119.38" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="CLK" class="0">
-<segment>
-<pinref part="ASV-18.432MHZ-EJ-T" gate="G$1" pin="3_CLK"/>
-<wire x1="50.8" y1="-33.02" x2="53.34" y2="-33.02" width="0.1524" layer="91" grouprefs="XTALOSC"/>
-<label x="53.34" y="-33.02" size="1.778" layer="95" xref="yes" grouprefs="XTALOSC"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="G$1" pin="XTAL1"/>
-<wire x1="-30.48" y1="96.52" x2="-33.02" y2="96.52" width="0.1524" layer="91"/>
-<label x="-33.02" y="96.52" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="5V_PWR_BR" class="0">
@@ -17166,25 +17072,6 @@ Board</text>
 <wire x1="73.66" y1="58.42" x2="73.66" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
-</nets>
-</sheet>
-<sheet>
-<description>Status LED</description>
-<plain>
-</plain>
-<instances>
-<instance part="FRAME3" gate="G$1" x="12.7" y="-10.16" smashed="yes"/>
-<instance part="FRAME3" gate="G$2" x="185.42" y="-10.16" smashed="yes">
-<attribute name="LAST_DATE_TIME" x="198.12" y="-8.89" size="2.54" layer="94" font="vector"/>
-<attribute name="SHEET" x="271.78" y="-8.89" size="2.54" layer="94" font="vector"/>
-<attribute name="DRAWING_NAME" x="200.66" y="8.89" size="2.54" layer="94" font="vector"/>
-<attribute name="TEAM" x="186.69" y="24.13" size="3.048" layer="94" ratio="10" align="top-left"/>
-<attribute name="REVISION" x="257.81" y="-3.81" size="2.54" layer="94"/>
-</instance>
-</instances>
-<busses>
-</busses>
-<nets>
 </nets>
 </sheet>
 </sheets>
