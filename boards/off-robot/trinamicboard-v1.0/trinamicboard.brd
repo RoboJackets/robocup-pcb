@@ -29,13 +29,13 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -47,8 +47,8 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -8836,7 +8836,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="-53.206" y1="-12.293" x2="-52.058" y2="-12.293" width="0.3" layer="1"/>
 <wire x1="-54.369" y1="-18.432" x2="-55.401" y2="-19.464" width="0.5" layer="1"/>
 <wire x1="-54.369" y1="-18.432" x2="-54" y2="-18.432" width="0.5" layer="1"/>
-<polygon width="0.25" layer="15" thermals="no">
+<polygon width="0.3" layer="2" thermals="no">
 <vertex x="-64" y="51"/>
 <vertex x="-64" y="-26"/>
 <vertex x="57" y="-26"/>
@@ -8875,6 +8875,12 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <vertex x="18" y="42"/>
 <vertex x="20" y="42"/>
 <vertex x="20" y="44"/>
+</polygon>
+<polygon width="0.3" layer="1" thermals="no" rank="2">
+<vertex x="-64" y="51"/>
+<vertex x="-64" y="-26"/>
+<vertex x="57" y="-26"/>
+<vertex x="57" y="51"/>
 </polygon>
 </signal>
 <signal name="+5V">
@@ -8934,12 +8940,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="-51.2" y1="-19.7" x2="-51.2" y2="-19.221" width="0.5" layer="1"/>
 <via x="-51.2" y="-19.7" extent="1-16" drill="0.35"/>
 <via x="-47.95259375" y="-20.7774" extent="1-16" drill="0.35"/>
-<polygon width="0.25" layer="2" thermals="no">
-<vertex x="-64" y="51"/>
-<vertex x="-64" y="-26"/>
-<vertex x="57" y="-26"/>
-<vertex x="57" y="51"/>
-</polygon>
 <wire x1="-15" y1="-20" x2="-14.582" y2="-19.582" width="0.5" layer="1"/>
 <wire x1="-12.521" y1="-19.582" x2="-14.582" y2="-19.582" width="0.5" layer="1"/>
 <via x="-15" y="-20" extent="1-16" drill="0.35"/>
@@ -8954,6 +8954,12 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <via x="-49" y="-15.1552" extent="1-16" drill="0.35"/>
 <wire x1="21.364" y1="41.621" x2="22.964" y2="40.021" width="0.5" layer="1"/>
 <wire x1="22.964" y1="40.021" x2="22.964" y2="38.781" width="0.5" layer="1"/>
+<polygon width="0.3" layer="15" thermals="no">
+<vertex x="-64" y="51"/>
+<vertex x="-64" y="-26"/>
+<vertex x="57" y="-26"/>
+<vertex x="57" y="51"/>
+</polygon>
 </signal>
 <signal name="SENSE-SUPPLY">
 <contactref element="R19" pad="2"/>
@@ -8999,8 +9005,9 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="44.332" y1="44.026" x2="43.358" y2="45" width="0.5" layer="1"/>
 <wire x1="41.707" y1="45" x2="40.06" y2="43.353" width="0.5" layer="1"/>
 <wire x1="43.358" y1="45" x2="41.707" y2="45" width="0.5" layer="1"/>
-<wire x1="-34.347" y1="30.831" x2="-34.347" y2="12.643" width="1.75" layer="16"/>
-<wire x1="-34.347" y1="12.643" x2="-52.07" y2="-5.08" width="1.75" layer="16"/>
+<wire x1="-34.347" y1="30.831" x2="-34.347" y2="11.373" width="1.75" layer="16"/>
+<wire x1="-34.347" y1="11.373" x2="-50.8" y2="-5.08" width="1.75" layer="16"/>
+<wire x1="-50.8" y1="-5.08" x2="-52.07" y2="-5.08" width="1.75" layer="16"/>
 <wire x1="48.1" y1="34.8" x2="47.15" y2="33.85" width="0.5" layer="1"/>
 <wire x1="48.1" y1="39.432" x2="46.032" y2="41.5" width="0.5" layer="1"/>
 <wire x1="48.1" y1="34.8" x2="48.1" y2="39.432" width="0.5" layer="1"/>
@@ -9088,9 +9095,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <signal name="18.5V-LED">
 <contactref element="R18" pad="1"/>
 <contactref element="D1" pad="A"/>
-<via x="49.2" y="41.4" extent="1-16" drill="0.35"/>
-<wire x1="49.196" y1="42.382" x2="49.196" y2="41.404" width="0.3" layer="1"/>
-<wire x1="49.196" y1="41.404" x2="49.2" y2="41.4" width="0.3" layer="1"/>
 <wire x1="49.1727125" y1="42.382" x2="49.196" y2="42.382" width="0.3" layer="1"/>
 <wire x1="46.032" y1="44.026" x2="47.5287125" y2="44.026" width="0.3" layer="1"/>
 <wire x1="47.5287125" y1="44.026" x2="49.1727125" y2="42.382" width="0.3" layer="1"/>
@@ -9833,6 +9837,14 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 </signal>
 <signal name="BOLT4">
 <via x="-65" y="-27" extent="1-16" drill="2.85" diameter="6.4"/>
+</signal>
+<signal name="GND1">
+<polygon width="0.3" layer="16" thermals="no">
+<vertex x="-64" y="51"/>
+<vertex x="-64" y="-26"/>
+<vertex x="57" y="-26"/>
+<vertex x="57" y="51"/>
+</polygon>
 </signal>
 </signals>
 <mfgpreviewcolors>
