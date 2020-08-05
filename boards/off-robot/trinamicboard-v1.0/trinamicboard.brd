@@ -9352,7 +9352,8 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="J2" pad="2"/>
 <contactref element="U2" pad="1"/>
 <contactref element="KIT2" pad="30"/>
-<wire x1="-17.2" y1="21.6" x2="-48.4" y2="-9.6" width="0.3" layer="1"/>
+<wire x1="-17.2" y1="21.6" x2="-20.9" y2="17.9" width="0.3" layer="1"/>
+<wire x1="-47.9" y1="-9.1" x2="-48.7" y2="-9.9" width="0.3" layer="1"/>
 <wire x1="-48.7" y1="-9.9" x2="-50.558" y2="-11.758" width="0.3" layer="1"/>
 <wire x1="-50.558" y1="-12.293" x2="-50.558" y2="-11.758" width="0.3" layer="1"/>
 <wire x1="-17.2" y1="21.6" x2="-14.7" y2="21.6" width="0.3" layer="1"/>
@@ -9370,7 +9371,11 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="-52.4" y1="-12.8" x2="-54.0942" y2="-11.1058" width="0.3" layer="16"/>
 <wire x1="-54.0942" y1="-11.1058" x2="-54.0942" y2="-11.0942" width="0.3" layer="16"/>
 <wire x1="-48.7" y1="-12.8" x2="-48.7" y2="-9.9" width="0.3" layer="1"/>
-<wire x1="-48.7" y1="-9.9" x2="-48.4" y2="-9.6" width="0.3" layer="1"/>
+<via x="-47.9" y="-9.1" extent="1-16" drill="0.35"/>
+<via x="-20.9" y="17.9" extent="1-16" drill="0.35"/>
+<wire x1="-47.9" y1="-9.1" x2="-20.8" y2="18" width="0.3" layer="16"/>
+<wire x1="-20.8" y1="18" x2="-20" y2="18" width="0.3" layer="16"/>
+<wire x1="-20" y1="18" x2="-20.9" y2="17.9" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="ENC-B">
 <contactref element="J2" pad="1"/>
