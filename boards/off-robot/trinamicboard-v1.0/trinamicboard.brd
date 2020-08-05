@@ -9,7 +9,7 @@
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
 <layer number="5" name="Route5" color="19" fill="1" visible="no" active="no"/>
@@ -22,8 +22,8 @@
 <layer number="12" name="Route12" color="20" fill="1" visible="no" active="no"/>
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
-<layer number="15" name="Route15" color="23" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="15" name="Route15" color="23" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -188,9 +188,9 @@
 <wire x1="63.35" y1="-32.35" x2="63.35" y2="57.35" width="0.25" layer="20"/>
 <wire x1="63.35" y1="57.35" x2="-70.35" y2="57.35" width="0.25" layer="20"/>
 <wire x1="-70.35" y1="57.35" x2="-70.35" y2="-32.35" width="0.25" layer="20"/>
-<text x="54.15" y="36" size="1" layer="21" font="vector" ratio="20" rot="SR90">+3.3V</text>
-<text x="52.05" y="36" size="1" layer="21" font="vector" ratio="20" rot="SR90">+5V</text>
-<text x="49.75" y="36" size="1" layer="21" font="vector" ratio="20" rot="SR90">+18.5V</text>
+<text x="54.15" y="36.5" size="1" layer="21" font="vector" ratio="20" rot="SR90">+3.3V</text>
+<text x="52.05" y="36.5" size="1" layer="21" font="vector" ratio="20" rot="SR90">+5V</text>
+<text x="49.75" y="36.5" size="1" layer="21" font="vector" ratio="20" rot="SR90">+18.5V</text>
 <wire x1="48.1" y1="45" x2="48.1" y2="36.8" width="0.25" layer="21"/>
 <wire x1="48.1" y1="36.8" x2="49.1" y2="35.8" width="0.25" layer="21"/>
 <wire x1="49.1" y1="35.8" x2="50.4" y2="35.8" width="0.25" layer="21"/>
@@ -8441,7 +8441,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="VALUE" x="38.751" y="44.496" size="1.27" layer="27"/>
 </element>
 <element name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22uF 16V" x="34.179" y="35.225" smashed="yes" rot="R180">
-<attribute name="NAME" x="33.036" y="36.241" size="1" layer="25" font="vector" ratio="15"/>
+<attribute name="NAME" x="33.306" y="36.241" size="1" layer="25" font="vector" ratio="15"/>
 <attribute name="POPULARITY" value="63" x="-2.651" y="121.585" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="-2.651" y="121.585" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="35.449" y="37.765" size="1.27" layer="27" rot="R180"/>
@@ -8478,11 +8478,11 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <element name="J3" library="RoboJackets-Connectors" package="DF22-2-H" value="DF22-2" x="-42.75" y="36.75" smashed="yes" rot="R90">
 <attribute name="DIGIKEY" value="H125155-ND" x="-36.4" y="87.55" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="DF22-2P-7.92DS(35)" x="-36.4" y="87.55" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="-54.086" y="47.504" size="1" layer="25" font="vector" ratio="15"/>
+<attribute name="NAME" x="-61.086" y="47.504" size="1" layer="25" font="vector" ratio="15"/>
 </element>
 <element name="J1" library="RoboJackets-Connectors" package="MKS-1658" value="MKS-1658" x="-58.42" y="1.84" smashed="yes" rot="R270">
 <attribute name="MPN" value="MKS 1658-6-0-808" x="-120.65" y="-47.69" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="-62.23" y="10.73" size="1" layer="25" font="vector" ratio="15"/>
+<attribute name="NAME" x="-62.23" y="9.73" size="1" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="-53.975" y="5.65" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="J2" library="RoboJackets-Connectors" package="2MM-4-H" value="4-PIN_2MM-H" x="-55.974" y="20.512" smashed="yes" rot="R270">
@@ -8652,11 +8652,11 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="VALUE" x="-11.886" y="-19.797" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="C1" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="-52.901" y="-18.432" smashed="yes" rot="R180">
-<attribute name="NAME" x="-54.366" y="-17.767" size="1" layer="25" font="vector" ratio="15"/>
+<attribute name="NAME" x="-53.366" y="-17.767" size="1" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="-52.266" y="-16.527" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="C2" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="-49.561" y="-18.432" smashed="yes">
-<attribute name="NAME" x="-51.096" y="-17.697" size="1" layer="25" font="vector" ratio="15"/>
+<attribute name="NAME" x="-50.096" y="-17.767" size="1" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="-50.196" y="-20.337" size="1.27" layer="27"/>
 </element>
 <element name="C5" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF" x="-7.441" y="-20.432" smashed="yes" rot="R270">
