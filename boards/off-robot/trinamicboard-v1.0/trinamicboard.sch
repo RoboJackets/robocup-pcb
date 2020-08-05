@@ -28823,8 +28823,8 @@ JA, JB, JC, and JD for mTrain + FPGA </text>
 <approved hash="202,1,139.7,20.32,U2,3Y,,,,"/>
 <approved hash="106,2,91.44,101.6,SW,,,,,"/>
 <approved hash="106,2,91.44,48.26,SW1,,,,,"/>
-<approved hash="113,2,213.36,167.568,KIT2,,,,,"/>
-<approved hash="113,2,220.98,89.7065,KIT1,,,,,"/>
+<approved hash="113,2,213.36,167.587,KIT2,,,,,"/>
+<approved hash="113,2,220.98,89.7255,KIT1,,,,,"/>
 </errors>
 </schematic>
 </drawing>
