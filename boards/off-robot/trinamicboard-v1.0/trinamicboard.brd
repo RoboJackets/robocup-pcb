@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -9362,11 +9362,10 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="J2" pad="2"/>
 <contactref element="U2" pad="1"/>
 <contactref element="KIT2" pad="30"/>
-<wire x1="-17.2" y1="21.6" x2="-20.9" y2="17.9" width="0.3" layer="1"/>
 <wire x1="-47.9" y1="-9.1" x2="-48.7" y2="-9.9" width="0.3" layer="1"/>
 <wire x1="-48.7" y1="-9.9" x2="-50.558" y2="-11.758" width="0.3" layer="1"/>
 <wire x1="-50.558" y1="-12.293" x2="-50.558" y2="-11.758" width="0.3" layer="1"/>
-<wire x1="-17.2" y1="21.6" x2="-14.7" y2="21.6" width="0.3" layer="1"/>
+<wire x1="-15" y1="21.6" x2="-14.7" y2="21.6" width="0.3" layer="1"/>
 <wire x1="-14.7" y1="21.6" x2="-11.43" y2="24.87" width="0.3" layer="1"/>
 <wire x1="-11.43" y1="24.87" x2="-11.43" y2="25.4" width="0.3" layer="1"/>
 <via x="-48.7" y="-12.8" extent="1-16" drill="0.35"/>
@@ -9382,8 +9381,10 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="-54.0942" y1="-11.1058" x2="-54.0942" y2="-11.0942" width="0.3" layer="16"/>
 <wire x1="-48.7" y1="-12.8" x2="-48.7" y2="-9.9" width="0.3" layer="1"/>
 <via x="-47.9" y="-9.1" extent="1-16" drill="0.35"/>
-<via x="-20.9" y="17.9" extent="1-16" drill="0.35"/>
-<wire x1="-47.9" y1="-9.1" x2="-20.9" y2="17.9" width="0.3" layer="16"/>
+<wire x1="-47.9" y1="-9.1" x2="-17.21" y2="21.59" width="0.3" layer="16"/>
+<via x="-17.21" y="21.59" extent="1-16" drill="0.35"/>
+<wire x1="-17.21" y1="21.59" x2="-15.01" y2="21.59" width="0.3" layer="1"/>
+<wire x1="-15.01" y1="21.59" x2="-15" y2="21.6" width="0.3" layer="1"/>
 </signal>
 <signal name="ENC-B">
 <contactref element="J2" pad="1"/>
@@ -9602,18 +9603,19 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="7.2" y1="-14.1" x2="5.8" y2="-14.1" width="0.3" layer="16"/>
 <wire x1="5.2" y1="-13.5" x2="5.2" y2="-11.8" width="0.3" layer="16"/>
 <wire x1="5.2" y1="-11.8" x2="-2.9" y2="-3.7" width="0.3" layer="16"/>
-<wire x1="-18.63" y1="20.87" x2="-16.64" y2="22.86" width="0.3" layer="16"/>
-<wire x1="-16.64" y1="22.86" x2="-16.51" y2="22.86" width="0.3" layer="16"/>
 <wire x1="12.102" y1="-16.6" x2="9.7" y2="-16.6" width="0.3" layer="16"/>
 <wire x1="9.7" y1="-16.6" x2="7.2" y2="-14.1" width="0.3" layer="16"/>
 <wire x1="5.8" y1="-14.1" x2="5.2" y2="-13.5" width="0.3" layer="16"/>
-<wire x1="-2.9" y1="-3.7" x2="-17.78" y2="-3.7" width="0.3" layer="16"/>
-<wire x1="-17.78" y1="-3.7" x2="-18.63" y2="-2.85" width="0.3" layer="16"/>
-<wire x1="-18.63" y1="-2.85" x2="-18.63" y2="20.87" width="0.3" layer="16"/>
+<wire x1="-2.9" y1="-3.7" x2="-18.3" y2="-3.7" width="0.3" layer="16"/>
 <wire x1="55" y1="-19" x2="51.207" y2="-22.793" width="0.3" layer="1"/>
 <wire x1="51.207" y1="-22.793" x2="20.761" y2="-22.793" width="0.3" layer="1"/>
 <wire x1="51.8" y1="12.35" x2="55" y2="9.15" width="0.3" layer="1"/>
 <wire x1="55" y1="9.15" x2="55" y2="-19" width="0.3" layer="1"/>
+<wire x1="-16.51" y1="22.86" x2="-18.14" y2="22.86" width="0.3" layer="1"/>
+<wire x1="-21" y1="20" x2="-18.14" y2="22.86" width="0.3" layer="1"/>
+<wire x1="-18.3" y1="-3.7" x2="-21" y2="-1" width="0.3" layer="16"/>
+<via x="-21" y="-1" extent="1-16" drill="0.35"/>
+<wire x1="-21" y1="-1" x2="-21" y2="20" width="0.3" layer="1"/>
 </signal>
 <signal name="FAULT">
 <contactref element="KIT3" pad="P$14"/>
@@ -9727,29 +9729,25 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="KIT1" pad="11"/>
 <contactref element="JB" pad="7"/>
 <wire x1="-16.51" y1="17.78" x2="-11.43" y2="12.7" width="0.3" layer="1"/>
-<via x="-31" y="1" extent="1-16" drill="0.35"/>
 <wire x1="-30.957" y1="0.857" x2="-31" y2="0.9" width="0.3" layer="16"/>
 <wire x1="-31" y1="0.9" x2="-31" y2="1" width="0.3" layer="16"/>
-<wire x1="-31" y1="1" x2="-31" y2="3.29" width="0.3" layer="1"/>
-<wire x1="-31" y1="3.29" x2="-16.51" y2="17.78" width="0.3" layer="1"/>
 <wire x1="-29.591" y1="-15.367" x2="-30.957" y2="-14.001" width="0.3" layer="16"/>
 <wire x1="-30.957" y1="-14.001" x2="-30.957" y2="0.857" width="0.3" layer="16"/>
+<wire x1="-16.51" y1="17.78" x2="-31" y2="3.29" width="0.3" layer="16"/>
+<wire x1="-31" y1="3.29" x2="-31" y2="1" width="0.3" layer="16"/>
 </signal>
 <signal name="PWM-UH">
 <contactref element="KIT2" pad="26"/>
 <contactref element="KIT1" pad="12"/>
 <contactref element="JB" pad="8"/>
 <wire x1="-16.51" y1="20.32" x2="-11.43" y2="15.24" width="0.3" layer="1"/>
-<via x="-33" y="1" extent="1-16" drill="0.35"/>
-<wire x1="-33" y1="1" x2="-33" y2="3.83" width="0.3" layer="1"/>
-<wire x1="-33" y1="3.83" x2="-16.51" y2="20.32" width="0.3" layer="1"/>
 <wire x1="-27.051" y1="-15.367" x2="-28.684" y2="-17" width="0.3" layer="16"/>
 <wire x1="-28.684" y1="-17" x2="-30" y2="-17" width="0.3" layer="16"/>
 <wire x1="-30" y1="-17" x2="-31.9358" y2="-15.0642" width="0.3" layer="16"/>
-<wire x1="-33.5" y1="0.5" x2="-33" y2="1" width="0.3" layer="16"/>
 <wire x1="-31.9358" y1="-15.0642" x2="-31.9358" y2="-11.0642" width="0.3" layer="16"/>
-<wire x1="-31.9358" y1="-11.0642" x2="-33.5" y2="-9.5" width="0.3" layer="16"/>
-<wire x1="-33.5" y1="-9.5" x2="-33.5" y2="0.5" width="0.3" layer="16"/>
+<wire x1="-33.5" y1="-9.5" x2="-31.9358" y2="-11.0642" width="0.3" layer="16"/>
+<wire x1="-16.51" y1="20.32" x2="-33.5" y2="3.33" width="0.3" layer="16"/>
+<wire x1="-33.5" y1="3.33" x2="-33.5" y2="-9.5" width="0.3" layer="16"/>
 </signal>
 <signal name="PWM-VL">
 <contactref element="KIT2" pad="23"/>
@@ -9760,11 +9758,9 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="-25.878" y1="-14" x2="-28" y2="-14" width="0.3" layer="16"/>
 <wire x1="-28" y1="-14" x2="-28.4" y2="-13.6" width="0.3" layer="16"/>
 <wire x1="-28.4" y1="-13.6" x2="-28.4" y2="-10.7" width="0.3" layer="16"/>
-<wire x1="-26" y1="-8.3" x2="-26" y2="2" width="0.3" layer="16"/>
-<via x="-26" y="2" extent="1-16" drill="0.35"/>
-<wire x1="-26" y1="2" x2="-26" y2="3.21" width="0.3" layer="1"/>
-<wire x1="-28.4" y1="-10.7" x2="-26" y2="-8.3" width="0.3" layer="16"/>
-<wire x1="-26" y1="3.21" x2="-16.51" y2="12.7" width="0.3" layer="1"/>
+<wire x1="-26" y1="-8.3" x2="-28.4" y2="-10.7" width="0.3" layer="16"/>
+<wire x1="-16.51" y1="12.7" x2="-26" y2="3.21" width="0.3" layer="16"/>
+<wire x1="-26" y1="3.21" x2="-26" y2="-8.3" width="0.3" layer="16"/>
 </signal>
 <signal name="PWM-WH">
 <contactref element="KIT2" pad="22"/>
@@ -9799,13 +9795,12 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <contactref element="KIT1" pad="10"/>
 <contactref element="JB" pad="1"/>
 <wire x1="-16.51" y1="15.24" x2="-11.43" y2="10.16" width="0.3" layer="1"/>
-<wire x1="-29" y1="2.75" x2="-16.51" y2="15.24" width="0.3" layer="1"/>
 <wire x1="-29.591" y1="-12.827" x2="-29.591" y2="-9.86236875" width="0.3" layer="16"/>
-<via x="-29" y="1" extent="1-16" drill="0.35"/>
-<wire x1="-28.479" y1="-8.75036875" x2="-28.479" y2="0.479" width="0.3" layer="16"/>
-<wire x1="-28.479" y1="0.479" x2="-29" y2="1" width="0.3" layer="16"/>
-<wire x1="-29" y1="1" x2="-29" y2="2.75" width="0.3" layer="1"/>
+<wire x1="-28.479" y1="-8.75036875" x2="-28.479" y2="0" width="0.3" layer="16"/>
+<wire x1="-28.479" y1="0" x2="-28.479" y2="0.479" width="0.3" layer="16"/>
 <wire x1="-29.591" y1="-9.86236875" x2="-28.479" y2="-8.75036875" width="0.3" layer="16"/>
+<wire x1="-16.51" y1="15.24" x2="-28.479" y2="3.271" width="0.3" layer="16"/>
+<wire x1="-28.479" y1="3.271" x2="-28.479" y2="0.479" width="0.3" layer="16"/>
 </signal>
 <signal name="!SS!-FPGA">
 <contactref element="KIT3" pad="P$30"/>
