@@ -34,8 +34,8 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -8247,7 +8247,7 @@ In this library you will find logos and images specific to RoboJackets. The part
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="JLCPCB (4 Layer)">
+<designrules name="JLC">
 <description language="en">&lt;b&gt;JLCPCB Design Rules (4 Layers)&lt;/b&gt;
 &lt;p&gt;
 The default Design Rules have been set to cover
@@ -9125,15 +9125,17 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="-13.2" y1="40.3" x2="-12.6" y2="40.9" width="0.3" layer="1"/>
 <wire x1="-13.2" y1="36" x2="-13.2" y2="40.3" width="0.3" layer="1"/>
 <wire x1="-11.605" y1="40.9" x2="-10.1" y2="40.9" width="0.3" layer="1"/>
-<wire x1="-10.1" y1="40.9" x2="-7.224" y2="43.776" width="0.3" layer="1"/>
+<wire x1="-10.1" y1="40.9" x2="-5.224" y2="45.776" width="0.3" layer="1"/>
 <wire x1="18.392" y1="46.639" x2="21.003" y2="46.639" width="0.3" layer="1"/>
 <wire x1="21.003" y1="46.639" x2="23" y2="48.636" width="0.3" layer="1"/>
 <wire x1="23" y1="48.636" x2="8.636" y2="48.636" width="0.3" layer="1"/>
-<wire x1="8.636" y1="48.636" x2="3.776" y2="43.776" width="0.3" layer="1"/>
-<wire x1="3.75" y1="42.324" x2="3.776" y2="43.776" width="0.3" layer="1"/>
-<wire x1="3.776" y1="43.776" x2="-7.224" y2="43.776" width="0.3" layer="1"/>
+<wire x1="8.636" y1="48.636" x2="6" y2="46" width="0.3" layer="1"/>
+<wire x1="6" y1="46" x2="5.776" y2="45.776" width="0.3" layer="1"/>
+<wire x1="5.776" y1="45.776" x2="-5.224" y2="45.776" width="0.3" layer="1"/>
 <wire x1="-11.605" y1="35.3" x2="-12.5" y2="35.3" width="0.3" layer="1"/>
 <wire x1="-12.5" y1="35.3" x2="-13.2" y2="36" width="0.3" layer="1"/>
+<wire x1="3.75" y1="42.324" x2="3.75" y2="43.75" width="0.3" layer="1"/>
+<wire x1="3.75" y1="43.75" x2="5.776" y2="45.776" width="0.3" layer="1"/>
 </signal>
 <signal name="+5V-FUSE">
 <contactref element="U6" pad="789"/>
