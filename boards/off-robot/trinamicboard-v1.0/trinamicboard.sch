@@ -26987,8 +26987,8 @@ Source: SN74LVC3G17.pdf</description>
 <text x="12.7" y="93.98" size="1.778" layer="97">Supply Voltage Sense</text>
 <text x="86.36" y="187.96" size="1.778" layer="97">Three SPI buses:
 1 connected to the TMC4671/TMC6200
-1 connected to the ADC
-1 connected to the FPGA</text>
+2 connected to the ADC
+3 connected to the FPGA</text>
 <wire x1="76.2" y1="99.06" x2="205.74" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="205.74" y1="99.06" x2="205.74" y2="48.26" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="205.74" y1="48.26" x2="76.2" y2="48.26" width="0.1524" layer="97" style="shortdash"/>
@@ -27042,7 +27042,7 @@ Source: SN74LVC3G17.pdf</description>
 </instance>
 <instance part="U4" gate="G$1" x="152.4" y="71.12" smashed="yes">
 <attribute name="NAME" x="142.24" y="78.74" size="1.778" layer="95" rot="SR0"/>
-<attribute name="VALUE" x="142.24" y="63.5" size="1.778" layer="97" font="vector" rot="SR0" align="top-left"/>
+<attribute name="VALUE" x="142.24" y="63.5" size="1.778" layer="97" rot="SR0" align="top-left"/>
 </instance>
 <instance part="SUPPLY2" gate="P" x="134.62" y="81.28" smashed="yes">
 <attribute name="VALUE" x="132.715" y="84.455" size="1.778" layer="96"/>
@@ -27052,11 +27052,11 @@ Source: SN74LVC3G17.pdf</description>
 </instance>
 <instance part="U1" gate="G$1" x="48.26" y="20.32" smashed="yes">
 <attribute name="NAME" x="38.1" y="27.94" size="1.778" layer="95" rot="SR0"/>
-<attribute name="VALUE" x="38.1" y="15.24" size="1.778" layer="97" font="vector" rot="SR0" align="top-left"/>
+<attribute name="VALUE" x="38.1" y="15.24" size="1.778" layer="97" rot="SR0" align="top-left"/>
 </instance>
 <instance part="U2" gate="G$1" x="124.46" y="20.32" smashed="yes">
 <attribute name="NAME" x="114.3" y="27.94" size="1.778" layer="95" rot="SR0"/>
-<attribute name="VALUE" x="114.3" y="15.24" size="1.778" layer="97" font="vector" rot="SR0" align="top-left"/>
+<attribute name="VALUE" x="114.3" y="15.24" size="1.778" layer="97" rot="SR0" align="top-left"/>
 </instance>
 <instance part="SUPPLY5" gate="P" x="30.48" y="30.48" smashed="yes">
 <attribute name="VALUE" x="28.575" y="33.655" size="1.778" layer="96"/>
@@ -27718,7 +27718,7 @@ Source: SN74LVC3G17.pdf</description>
 </instance>
 <instance part="KIT2" gate="G$1" x="213.36" y="167.64" smashed="yes">
 <attribute name="VALUE" x="200.66" y="144.78" size="1.778" layer="96" align="top-left"/>
-<attribute name="NAME" x="200.66" y="187.96" size="1.778" layer="95"/>
+<attribute name="NAME" x="200.66" y="188.722" size="1.778" layer="95"/>
 </instance>
 <instance part="SUPPLY6" gate="P" x="185.42" y="190.5" smashed="yes">
 <attribute name="VALUE" x="180.975" y="193.675" size="1.778" layer="96"/>
@@ -27734,13 +27734,13 @@ Source: SN74LVC3G17.pdf</description>
 </instance>
 <instance part="KIT1" gate="G$1" x="220.98" y="83.82" smashed="yes">
 <attribute name="VALUE" x="203.2" y="66.04" size="1.778" layer="96" align="top-left"/>
-<attribute name="NAME" x="203.2" y="104.14" size="1.778" layer="95"/>
+<attribute name="NAME" x="203.2" y="105.156" size="1.778" layer="95"/>
 </instance>
 <instance part="GND16" gate="1" x="175.26" y="99.06" smashed="yes" rot="R270">
 <attribute name="VALUE" x="172.72" y="101.6" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="SUPPLY9" gate="P" x="190.5" y="104.14" smashed="yes">
-<attribute name="VALUE" x="186.055" y="107.315" size="1.778" layer="96"/>
+<instance part="SUPPLY9" gate="P" x="193.04" y="106.68" smashed="yes">
+<attribute name="VALUE" x="188.595" y="109.855" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY10" gate="G$1" x="248.92" y="106.68" smashed="yes">
 <attribute name="VALUE" x="247.015" y="109.855" size="1.778" layer="96"/>
@@ -28063,7 +28063,8 @@ Source: SN74LVC3G17.pdf</description>
 <pinref part="SUPPLY6" gate="P" pin="+3.3V"/>
 </segment>
 <segment>
-<wire x1="190.5" y1="101.6" x2="198.12" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="104.14" x2="193.04" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="101.6" x2="198.12" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="KIT1" gate="G$1" pin="VCCIO"/>
 <pinref part="SUPPLY9" gate="P" pin="+3.3V"/>
 </segment>
