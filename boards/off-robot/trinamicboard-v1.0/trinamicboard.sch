@@ -27998,7 +27998,7 @@ Source: SN74LVC3G17.pdf</description>
 <pinref part="S1" gate="G$1" pin="A"/>
 </segment>
 </net>
-<net name="18.5V-LED" class="0">
+<net name="+18.5V-LED" class="0">
 <segment>
 <pinref part="R18" gate="G$1" pin="1"/>
 <pinref part="D1" gate="G$1" pin="A"/>
