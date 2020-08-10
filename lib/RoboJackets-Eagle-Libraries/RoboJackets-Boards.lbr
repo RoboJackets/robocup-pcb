@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -482,53 +482,6 @@
 <rectangle x1="-1.4443" y1="18.1465" x2="-0.1405" y2="18.4829" layer="51" rot="R270"/>
 <rectangle x1="-2.2433" y1="18.1465" x2="-0.9395" y2="18.4829" layer="51" rot="R270"/>
 </package>
-<package name="MTRAIN-KIT">
-<wire x1="-12.7" y1="26.67" x2="12.7" y2="26.67" width="0.127" layer="21"/>
-<wire x1="12.7" y1="26.67" x2="12.7" y2="-26.67" width="0.127" layer="21"/>
-<wire x1="12.7" y1="-26.67" x2="-12.7" y2="-26.67" width="0.127" layer="21"/>
-<wire x1="-12.7" y1="-26.67" x2="-12.7" y2="26.67" width="0.127" layer="21"/>
-<pad name="GND" x="-11.43" y="24.13" drill="1.02"/>
-<pad name="VIN" x="-11.43" y="21.59" drill="1.02"/>
-<pad name="P$3" x="-11.43" y="19.05" drill="1.02"/>
-<pad name="P$4" x="-11.43" y="16.51" drill="1.02"/>
-<pad name="P$5" x="-11.43" y="13.97" drill="1.02"/>
-<pad name="P$6" x="-11.43" y="11.43" drill="1.02"/>
-<pad name="P$7" x="-11.43" y="8.89" drill="1.02"/>
-<pad name="P$8" x="-11.43" y="6.35" drill="1.02"/>
-<pad name="P$9" x="-11.43" y="3.81" drill="1.02"/>
-<pad name="P$10" x="-11.43" y="1.27" drill="1.02"/>
-<pad name="P$11" x="-11.43" y="-1.27" drill="1.02"/>
-<pad name="P$12" x="-11.43" y="-3.81" drill="1.02"/>
-<pad name="P$13" x="-11.43" y="-6.35" drill="1.02"/>
-<pad name="P$14" x="-11.43" y="-8.89" drill="1.02"/>
-<pad name="P$15" x="-11.43" y="-11.43" drill="1.02"/>
-<pad name="P$16" x="-11.43" y="-13.97" drill="1.02"/>
-<pad name="P$17" x="-11.43" y="-16.51" drill="1.02"/>
-<pad name="P$18" x="-11.43" y="-19.05" drill="1.02"/>
-<pad name="P$19" x="-11.43" y="-21.59" drill="1.02"/>
-<pad name="P$20" x="-11.43" y="-24.13" drill="1.02"/>
-<pad name="TX-" x="11.43" y="-24.13" drill="1.02" rot="R180"/>
-<pad name="TX+" x="11.43" y="-21.59" drill="1.02" rot="R180"/>
-<pad name="RX-" x="11.43" y="-19.05" drill="1.02" rot="R180"/>
-<pad name="RX+" x="11.43" y="-16.51" drill="1.02" rot="R180"/>
-<pad name="P$25" x="11.43" y="-13.97" drill="1.02" rot="R180"/>
-<pad name="P$26" x="11.43" y="-11.43" drill="1.02" rot="R180"/>
-<pad name="P$27" x="11.43" y="-8.89" drill="1.02" rot="R180"/>
-<pad name="P$28" x="11.43" y="-6.35" drill="1.02" rot="R180"/>
-<pad name="P$29" x="11.43" y="-3.81" drill="1.02" rot="R180"/>
-<pad name="P$30" x="11.43" y="-1.27" drill="1.02" rot="R180"/>
-<pad name="P$31" x="11.43" y="1.27" drill="1.02" rot="R180"/>
-<pad name="P$32" x="11.43" y="3.81" drill="1.02" rot="R180"/>
-<pad name="P$33" x="11.43" y="6.35" drill="1.02" rot="R180"/>
-<pad name="P$34" x="11.43" y="8.89" drill="1.02" rot="R180"/>
-<pad name="P$35" x="11.43" y="11.43" drill="1.02" rot="R180"/>
-<pad name="P$36" x="11.43" y="13.97" drill="1.02" rot="R180"/>
-<pad name="!RST" x="11.43" y="16.51" drill="1.02" rot="R180"/>
-<pad name="NC" x="11.43" y="19.05" drill="1.02" rot="R180"/>
-<pad name="VBUS" x="11.43" y="21.59" drill="1.02" rot="R180"/>
-<pad name="VDD" x="11.43" y="24.13" drill="1.02" rot="R180"/>
-<text x="-12.7" y="27.94" size="1.27" layer="25">&gt;NAME</text>
-</package>
 <package name="IMU">
 <wire x1="-7.62" y1="6.35" x2="7.62" y2="6.35" width="0.127" layer="21"/>
 <wire x1="7.62" y1="6.35" x2="7.62" y2="-6.35" width="0.127" layer="21"/>
@@ -887,6 +840,148 @@
 <pad name="P$32" x="-15.24" y="-7.62" drill="1.1" diameter="1.9304"/>
 <pad name="P$33" x="-17.78" y="-7.62" drill="1.1" diameter="1.9304"/>
 <pad name="P$34" x="-20.32" y="-7.62" drill="1.1" diameter="1.9304"/>
+</package>
+<package name="MTRAIN-KIT">
+<wire x1="-12.7" y1="26.67" x2="12.7" y2="26.67" width="0.127" layer="21"/>
+<wire x1="12.7" y1="26.67" x2="12.7" y2="-26.67" width="0.127" layer="21"/>
+<wire x1="12.7" y1="-26.67" x2="-12.7" y2="-26.67" width="0.127" layer="21"/>
+<wire x1="-12.7" y1="-26.67" x2="-12.7" y2="26.67" width="0.127" layer="21"/>
+<pad name="GND" x="-11.43" y="24.13" drill="1.02"/>
+<pad name="VIN" x="-11.43" y="21.59" drill="1.02"/>
+<pad name="P$3" x="-11.43" y="19.05" drill="1.02"/>
+<pad name="P$4" x="-11.43" y="16.51" drill="1.02"/>
+<pad name="P$5" x="-11.43" y="13.97" drill="1.02"/>
+<pad name="P$6" x="-11.43" y="11.43" drill="1.02"/>
+<pad name="P$7" x="-11.43" y="8.89" drill="1.02"/>
+<pad name="P$8" x="-11.43" y="6.35" drill="1.02"/>
+<pad name="P$9" x="-11.43" y="3.81" drill="1.02"/>
+<pad name="P$10" x="-11.43" y="1.27" drill="1.02"/>
+<pad name="P$11" x="-11.43" y="-1.27" drill="1.02"/>
+<pad name="P$12" x="-11.43" y="-3.81" drill="1.02"/>
+<pad name="P$13" x="-11.43" y="-6.35" drill="1.02"/>
+<pad name="P$14" x="-11.43" y="-8.89" drill="1.02"/>
+<pad name="P$15" x="-11.43" y="-11.43" drill="1.02"/>
+<pad name="P$16" x="-11.43" y="-13.97" drill="1.02"/>
+<pad name="P$17" x="-11.43" y="-16.51" drill="1.02"/>
+<pad name="P$18" x="-11.43" y="-19.05" drill="1.02"/>
+<pad name="P$19" x="-11.43" y="-21.59" drill="1.02"/>
+<pad name="P$20" x="-11.43" y="-24.13" drill="1.02"/>
+<pad name="TX-" x="11.43" y="-24.13" drill="1.02" rot="R180"/>
+<pad name="TX+" x="11.43" y="-21.59" drill="1.02" rot="R180"/>
+<pad name="RX-" x="11.43" y="-19.05" drill="1.02" rot="R180"/>
+<pad name="RX+" x="11.43" y="-16.51" drill="1.02" rot="R180"/>
+<pad name="P$25" x="11.43" y="-13.97" drill="1.02" rot="R180"/>
+<pad name="P$26" x="11.43" y="-11.43" drill="1.02" rot="R180"/>
+<pad name="P$27" x="11.43" y="-8.89" drill="1.02" rot="R180"/>
+<pad name="P$28" x="11.43" y="-6.35" drill="1.02" rot="R180"/>
+<pad name="P$29" x="11.43" y="-3.81" drill="1.02" rot="R180"/>
+<pad name="P$30" x="11.43" y="-1.27" drill="1.02" rot="R180"/>
+<pad name="P$31" x="11.43" y="1.27" drill="1.02" rot="R180"/>
+<pad name="P$32" x="11.43" y="3.81" drill="1.02" rot="R180"/>
+<pad name="P$33" x="11.43" y="6.35" drill="1.02" rot="R180"/>
+<pad name="P$34" x="11.43" y="8.89" drill="1.02" rot="R180"/>
+<pad name="P$35" x="11.43" y="11.43" drill="1.02" rot="R180"/>
+<pad name="P$36" x="11.43" y="13.97" drill="1.02" rot="R180"/>
+<pad name="!RST" x="11.43" y="16.51" drill="1.02" rot="R180"/>
+<pad name="NC" x="11.43" y="19.05" drill="1.02" rot="R180"/>
+<pad name="VBUS" x="11.43" y="21.59" drill="1.02" rot="R180"/>
+<pad name="VDD" x="11.43" y="24.13" drill="1.02" rot="R180"/>
+<text x="-12.7" y="27.94" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="20.32" size="1.778" layer="21" font="vector" ratio="15" rot="SR0" align="bottom-center">^   ^
+FRONT</text>
+<circle x="-13.97" y="27.94" radius="0.508" width="0" layer="21"/>
+<text x="0" y="0" size="1.778" layer="21" font="vector" ratio="15" rot="SR0" align="bottom-center">mTrain</text>
+</package>
+<package name="TMC4671-BOB">
+<description>TMC4671 BreakOut Board (BOB)</description>
+<wire x1="-19.05" y1="19.05" x2="19.05" y2="19.05" width="0.254" layer="21"/>
+<wire x1="19.05" y1="19.05" x2="19.05" y2="-22.86" width="0.254" layer="21"/>
+<wire x1="19.05" y1="-22.86" x2="-19.05" y2="-22.86" width="0.254" layer="21"/>
+<wire x1="-19.05" y1="-22.86" x2="-19.05" y2="19.05" width="0.254" layer="21"/>
+<pad name="1" x="-17.78" y="16.51" drill="1.016"/>
+<pad name="2" x="-17.78" y="13.97" drill="1.016"/>
+<pad name="3" x="-17.78" y="11.43" drill="1.016"/>
+<pad name="4" x="-17.78" y="8.89" drill="1.016"/>
+<pad name="20" x="17.78" y="8.89" drill="1.016"/>
+<pad name="19" x="17.78" y="11.43" drill="1.016"/>
+<pad name="18" x="17.78" y="13.97" drill="1.016"/>
+<pad name="17" x="17.78" y="16.51" drill="1.016"/>
+<text x="-19.05" y="20.32" size="1" layer="25" font="vector">&gt;NAME</text>
+<circle x="-20.32" y="20.32" radius="0.508" width="0" layer="21"/>
+<text x="-19.05" y="-24.13" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
+<pad name="5" x="-17.78" y="6.35" drill="1.016"/>
+<pad name="6" x="-17.78" y="3.81" drill="1.016"/>
+<pad name="7" x="-17.78" y="1.27" drill="1.016"/>
+<pad name="8" x="-17.78" y="-1.27" drill="1.016"/>
+<pad name="9" x="-17.78" y="-3.81" drill="1.016"/>
+<pad name="10" x="-17.78" y="-6.35" drill="1.016"/>
+<pad name="11" x="-17.78" y="-8.89" drill="1.016"/>
+<pad name="12" x="-17.78" y="-11.43" drill="1.016"/>
+<pad name="13" x="-17.78" y="-13.97" drill="1.016"/>
+<pad name="14" x="-17.78" y="-16.51" drill="1.016"/>
+<pad name="15" x="-17.78" y="-19.05" drill="1.016"/>
+<pad name="16" x="-17.78" y="-21.59" drill="1.016"/>
+<pad name="21" x="17.78" y="6.35" drill="1.016"/>
+<pad name="22" x="17.78" y="3.81" drill="1.016"/>
+<pad name="23" x="17.78" y="1.27" drill="1.016"/>
+<pad name="24" x="17.78" y="-1.27" drill="1.016"/>
+<pad name="25" x="17.78" y="-3.81" drill="1.016"/>
+<pad name="26" x="17.78" y="-6.35" drill="1.016"/>
+<pad name="27" x="17.78" y="-8.89" drill="1.016"/>
+<pad name="28" x="17.78" y="-11.43" drill="1.016"/>
+<pad name="29" x="17.78" y="-13.97" drill="1.016"/>
+<pad name="30" x="17.78" y="-16.51" drill="1.016"/>
+<pad name="31" x="17.78" y="-19.05" drill="1.016"/>
+<pad name="32" x="17.78" y="-21.59" drill="1.016"/>
+<text x="0" y="0" size="1.778" layer="21" font="vector" ratio="15" rot="SR0" align="center">TMC4671 BreakOut Board</text>
+<text x="0" y="12.7" size="1.778" layer="21" font="vector" ratio="15" rot="SR0" align="bottom-center">^   ^
+FRONT</text>
+</package>
+<package name="TMC6200-BOB">
+<description>TMC6200 BreakOut Board (BOB)</description>
+<wire x1="-19.05" y1="19.05" x2="19.05" y2="19.05" width="0.254" layer="21"/>
+<wire x1="19.05" y1="19.05" x2="19.05" y2="-17.78" width="0.254" layer="21"/>
+<wire x1="19.05" y1="-17.78" x2="-19.05" y2="-17.78" width="0.254" layer="21"/>
+<wire x1="-19.05" y1="-17.78" x2="-19.05" y2="19.05" width="0.254" layer="21"/>
+<pad name="1" x="-17.78" y="16.51" drill="1.016"/>
+<pad name="2" x="-17.78" y="13.97" drill="1.016"/>
+<pad name="3" x="-17.78" y="11.43" drill="1.016"/>
+<pad name="4" x="-17.78" y="8.89" drill="1.016"/>
+<pad name="18" x="17.78" y="8.89" drill="1.016"/>
+<pad name="17" x="17.78" y="11.43" drill="1.016"/>
+<pad name="16" x="17.78" y="13.97" drill="1.016"/>
+<pad name="15" x="17.78" y="16.51" drill="1.016"/>
+<text x="-19.05" y="20.32" size="1" layer="25" font="vector">&gt;NAME</text>
+<circle x="-20.32" y="20.32" radius="0.508" width="0" layer="21"/>
+<text x="-19.05" y="-19.05" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
+<pad name="5" x="-17.78" y="6.35" drill="1.016"/>
+<pad name="6" x="-17.78" y="3.81" drill="1.016"/>
+<pad name="7" x="-17.78" y="1.27" drill="1.016"/>
+<pad name="8" x="-17.78" y="-1.27" drill="1.016"/>
+<pad name="9" x="-17.78" y="-3.81" drill="1.016"/>
+<pad name="10" x="-17.78" y="-6.35" drill="1.016"/>
+<pad name="11" x="-17.78" y="-8.89" drill="1.016"/>
+<pad name="12" x="-17.78" y="-11.43" drill="1.016"/>
+<pad name="13" x="-17.78" y="-13.97" drill="1.016"/>
+<pad name="14" x="-17.78" y="-16.51" drill="1.016"/>
+<pad name="19" x="17.78" y="6.35" drill="1.016"/>
+<pad name="20" x="17.78" y="3.81" drill="1.016"/>
+<pad name="21" x="17.78" y="1.27" drill="1.016"/>
+<pad name="22" x="17.78" y="-1.27" drill="1.016"/>
+<pad name="23" x="17.78" y="-3.81" drill="1.016"/>
+<pad name="24" x="17.78" y="-6.35" drill="1.016"/>
+<pad name="25" x="17.78" y="-8.89" drill="1.016"/>
+<pad name="26" x="17.78" y="-11.43" drill="1.016"/>
+<pad name="27" x="17.78" y="-13.97" drill="1.016"/>
+<pad name="28" x="17.78" y="-16.51" drill="1.016"/>
+<pad name="30" x="-7.112" y="16.51" drill="1.016" rot="R90"/>
+<pad name="29" x="-9.652" y="16.51" drill="1.016" rot="R90"/>
+<pad name="31" x="-4.572" y="16.51" drill="1.016" rot="R90"/>
+<pad name="32" x="-2.032" y="16.51" drill="1.016" rot="R90"/>
+<pad name="33" x="0.508" y="16.51" drill="1.016" rot="R90"/>
+<text x="0" y="0" size="1.778" layer="21" font="vector" ratio="15" rot="SR0" align="center">TMC6200 BreakOut Board</text>
+<text x="0" y="10.16" size="1.778" layer="21" font="vector" ratio="15" rot="SR0" align="bottom-center">^   ^
+FRONT</text>
 </package>
 </packages>
 <symbols>
@@ -6603,6 +6698,140 @@
 <pin name="VU" x="48.26" y="20.32" visible="pin" length="short" direction="pwr" rot="R180"/>
 <pin name="VO" x="48.26" y="22.86" visible="pin" length="short" direction="pwr" rot="R180"/>
 </symbol>
+<symbol name="IMU">
+<description>IMU</description>
+<pin name="GND" x="13.97" y="-7.62" length="middle" rot="R180"/>
+<pin name="INT" x="13.97" y="-2.54" length="middle" rot="R180"/>
+<pin name="NC" x="13.97" y="2.54" length="middle" rot="R180"/>
+<pin name="+3.3V" x="13.97" y="7.62" length="middle" rot="R180"/>
+<wire x1="8.89" y1="10.16" x2="8.89" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="8.89" y1="-10.16" x2="-8.89" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-8.89" y1="-10.16" x2="-8.89" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-8.89" y1="10.16" x2="8.89" y2="10.16" width="0.254" layer="94"/>
+<pin name="MOSI" x="-13.97" y="7.62" length="middle"/>
+<pin name="MISO" x="-13.97" y="2.54" length="middle"/>
+<pin name="SCK" x="-13.97" y="-2.54" length="middle"/>
+<pin name="!CS!" x="-13.97" y="-7.62" length="middle"/>
+<text x="-8.89" y="-10.668" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
+<text x="-8.89" y="10.668" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="LCD-HD44780">
+<wire x1="-7.62" y1="22.86" x2="-7.62" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-20.32" x2="5.08" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-20.32" x2="5.08" y2="22.86" width="0.254" layer="94"/>
+<wire x1="5.08" y1="22.86" x2="-7.62" y2="22.86" width="0.254" layer="94"/>
+<text x="-7.62" y="23.368" size="1.778" layer="95">&gt;Name</text>
+<text x="-7.62" y="-22.86" size="1.778" layer="96">&gt;Value</text>
+<text x="3.048" y="-9.398" size="2.286" layer="94" ratio="20" rot="R90">HD44780 LCD</text>
+<pin name="A" x="-10.16" y="-15.24" visible="pin" length="short" direction="pwr"/>
+<pin name="DB0" x="-10.16" y="5.08" visible="pin" length="short"/>
+<pin name="DB1" x="-10.16" y="2.54" visible="pin" length="short"/>
+<pin name="DB2" x="-10.16" y="0" visible="pin" length="short"/>
+<pin name="DB3" x="-10.16" y="-2.54" visible="pin" length="short"/>
+<pin name="DB4" x="-10.16" y="-5.08" visible="pin" length="short"/>
+<pin name="DB5" x="-10.16" y="-7.62" visible="pin" length="short"/>
+<pin name="DB6" x="-10.16" y="-10.16" visible="pin" length="short"/>
+<pin name="DB7" x="-10.16" y="-12.7" visible="pin" length="short"/>
+<pin name="E" x="-10.16" y="7.62" visible="pin" length="short" direction="in"/>
+<pin name="K" x="-10.16" y="-17.78" visible="pin" length="short" direction="pwr"/>
+<pin name="R/W" x="-10.16" y="10.16" visible="pin" length="short" direction="in"/>
+<pin name="RS" x="-10.16" y="12.7" visible="pin" length="short" direction="in"/>
+<pin name="VDD" x="-10.16" y="17.78" visible="pin" length="short" direction="pwr"/>
+<pin name="VO" x="-10.16" y="15.24" visible="pin" length="short"/>
+<pin name="VSS" x="-10.16" y="20.32" visible="pin" length="short" direction="pwr"/>
+</symbol>
+<symbol name="RPI-ZERO">
+<wire x1="-20.32" y1="33.02" x2="22.86" y2="33.02" width="0.254" layer="94"/>
+<wire x1="22.86" y1="33.02" x2="22.86" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-27.94" x2="12.7" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-27.94" x2="-10.16" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-27.94" x2="-20.32" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-27.94" x2="-20.32" y2="33.02" width="0.254" layer="94"/>
+<pin name="5V0@1" x="25.4" y="30.48" length="short" direction="sup" rot="R180"/>
+<pin name="3V3@1" x="-22.86" y="30.48" length="short" direction="sup"/>
+<pin name="GPIO2/SDA1" x="-22.86" y="27.94" length="short"/>
+<pin name="5V0@2" x="25.4" y="27.94" length="short" direction="sup" rot="R180"/>
+<pin name="GPIO3/SCL1" x="-22.86" y="25.4" length="short"/>
+<pin name="GND@8" x="25.4" y="25.4" length="short" direction="sup" rot="R180"/>
+<pin name="GPIO4/GCKL" x="-22.86" y="22.86" length="short"/>
+<pin name="TXD0/GPIO14" x="25.4" y="22.86" length="short" rot="R180"/>
+<pin name="GND@1" x="-22.86" y="20.32" length="short" direction="sup"/>
+<pin name="RXD0/GPIO15" x="25.4" y="20.32" length="short" rot="R180"/>
+<pin name="GPIO17/GEN0" x="-22.86" y="17.78" length="short"/>
+<pin name="GPIO18" x="25.4" y="17.78" length="short" rot="R180"/>
+<pin name="GPIO27/GEN2" x="-22.86" y="15.24" length="short"/>
+<pin name="GND@4" x="25.4" y="15.24" length="short" direction="sup" rot="R180"/>
+<pin name="GPIO22/GEN3" x="-22.86" y="12.7" length="short"/>
+<pin name="GEN4/GPIO23" x="25.4" y="12.7" length="short" rot="R180"/>
+<pin name="3V3@2" x="-22.86" y="10.16" length="short" direction="sup"/>
+<pin name="GEN5/GPIO24" x="25.4" y="10.16" length="short" rot="R180"/>
+<pin name="GPIO10/MOSI" x="-22.86" y="7.62" length="short"/>
+<pin name="GND@5" x="25.4" y="7.62" length="short" direction="sup" rot="R180"/>
+<pin name="GPIO9/MISO" x="-22.86" y="5.08" length="short"/>
+<pin name="GEN/6GPIO25" x="25.4" y="5.08" length="short" rot="R180"/>
+<pin name="GPIO11/SCLK" x="-22.86" y="2.54" length="short"/>
+<pin name="!CE0!/GPIO8" x="25.4" y="2.54" length="short" rot="R180"/>
+<pin name="GND@2" x="-22.86" y="0" length="short" direction="sup"/>
+<pin name="!CE!/GPIO7" x="25.4" y="0" length="short" rot="R180"/>
+<pin name="ID_SD" x="-22.86" y="-2.54" length="short"/>
+<pin name="ID_SC" x="25.4" y="-2.54" length="short" rot="R180"/>
+<pin name="GPIO5" x="-22.86" y="-5.08" length="short"/>
+<pin name="GND@6" x="25.4" y="-5.08" length="short" direction="sup" rot="R180"/>
+<pin name="GPIO6" x="-22.86" y="-7.62" length="short"/>
+<pin name="GPIO12" x="25.4" y="-7.62" length="short" rot="R180"/>
+<pin name="GPIO13" x="-22.86" y="-10.16" length="short"/>
+<pin name="GND@7" x="25.4" y="-10.16" length="short" direction="sup" rot="R180"/>
+<pin name="GPIO19" x="-22.86" y="-12.7" length="short"/>
+<pin name="GPIO16" x="25.4" y="-12.7" length="short" rot="R180"/>
+<pin name="GPIO26" x="-22.86" y="-15.24" length="short"/>
+<pin name="GPIO20" x="25.4" y="-15.24" length="short" rot="R180"/>
+<pin name="GND@3" x="-22.86" y="-17.78" length="short" direction="sup"/>
+<pin name="GPIO21" x="25.4" y="-17.78" length="short" rot="R180"/>
+<text x="-20.32" y="35.56" size="1.27" layer="95" font="vector">&gt;NAME</text>
+<text x="-20.32" y="33.655" size="1.27" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
+<symbol name="ARDUINOMICRO">
+<pin name="12" x="-20.32" y="12.7" visible="pin" length="middle" rot="R270"/>
+<pin name="11" x="-17.78" y="12.7" visible="pin" length="middle" rot="R270"/>
+<pin name="10" x="-15.24" y="12.7" visible="pin" length="middle" rot="R270"/>
+<pin name="9" x="-12.7" y="12.7" visible="pin" length="middle" rot="R270"/>
+<pin name="8" x="-10.16" y="12.7" visible="pin" length="middle" rot="R270"/>
+<pin name="7" x="-7.62" y="12.7" visible="pin" length="middle" rot="R270"/>
+<pin name="6" x="-5.08" y="12.7" visible="pin" length="middle" rot="R270"/>
+<pin name="5" x="-2.54" y="12.7" visible="pin" length="middle" rot="R270"/>
+<pin name="4" x="0" y="12.7" visible="pin" length="middle" rot="R270"/>
+<pin name="3" x="2.54" y="12.7" visible="pin" length="middle" rot="R270"/>
+<pin name="2" x="5.08" y="12.7" visible="pin" length="middle" rot="R270"/>
+<pin name="GND@1" x="7.62" y="12.7" visible="pin" length="middle" rot="R270"/>
+<pin name="R@2" x="10.16" y="12.7" visible="pin" length="middle" rot="R270"/>
+<pin name="RX" x="12.7" y="12.7" visible="pin" length="middle" rot="R270"/>
+<pin name="TX" x="15.24" y="12.7" visible="pin" length="middle" rot="R270"/>
+<pin name="SS" x="17.78" y="12.7" visible="pin" length="middle" rot="R270"/>
+<pin name="MOSI" x="20.32" y="12.7" visible="pin" length="middle" rot="R270"/>
+<pin name="SCK" x="20.32" y="-12.7" visible="pin" length="middle" rot="R90"/>
+<pin name="MISO" x="17.78" y="-12.7" visible="pin" length="middle" rot="R90"/>
+<pin name="9V" x="15.24" y="-12.7" visible="pin" length="middle" rot="R90"/>
+<pin name="GND" x="12.7" y="-12.7" visible="pin" length="middle" rot="R90"/>
+<pin name="R@1" x="10.16" y="-12.7" visible="pin" length="middle" rot="R90"/>
+<pin name="5V" x="7.62" y="-12.7" visible="pin" length="middle" rot="R90"/>
+<pin name="NC@1" x="5.08" y="-12.7" visible="pin" length="middle" rot="R90"/>
+<pin name="NC@2" x="2.54" y="-12.7" visible="pin" length="middle" rot="R90"/>
+<pin name="A5" x="0" y="-12.7" visible="pin" length="middle" rot="R90"/>
+<pin name="A4" x="-2.54" y="-12.7" visible="pin" length="middle" rot="R90"/>
+<pin name="A3" x="-5.08" y="-12.7" visible="pin" length="middle" rot="R90"/>
+<pin name="A2" x="-7.62" y="-12.7" visible="pin" length="middle" rot="R90"/>
+<pin name="A1" x="-10.16" y="-12.7" visible="pin" length="middle" rot="R90"/>
+<pin name="A0" x="-12.7" y="-12.7" visible="pin" length="middle" rot="R90"/>
+<pin name="AREF" x="-15.24" y="-12.7" visible="pin" length="middle" rot="R90"/>
+<pin name="3V" x="-17.78" y="-12.7" visible="pin" length="middle" rot="R90"/>
+<pin name="13" x="-20.32" y="-12.7" visible="pin" length="middle" rot="R90"/>
+<wire x1="-22.86" y1="7.62" x2="22.86" y2="7.62" width="0.254" layer="94"/>
+<wire x1="22.86" y1="7.62" x2="22.86" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-7.62" x2="-22.86" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="-7.62" x2="-22.86" y2="7.62" width="0.254" layer="94"/>
+<rectangle x1="-25.4" y1="-3.81" x2="-21.59" y2="3.81" layer="94"/>
+<text x="-7.62" y="0" size="1.778" layer="94">Micro</text>
+</symbol>
 <symbol name="MTRAIN">
 <wire x1="-45.72" y1="25.4" x2="-8.255" y2="25.4" width="0.254" layer="94"/>
 <wire x1="-8.255" y1="25.4" x2="8.255" y2="25.4" width="0.254" layer="94"/>
@@ -7124,7 +7353,7 @@
 <pin name="NC" x="48.26" y="17.78" visible="pin" length="short" rot="R180"/>
 <pin name="VBUS" x="48.387" y="20.32" visible="pin" length="short" direction="pwr" rot="R180"/>
 <pin name="VDD" x="48.26" y="22.86" visible="pin" length="short" direction="pwr" rot="R180"/>
-<text x="2.54" y="-10.16" size="3.81" layer="95" rot="R90">MTrain</text>
+<text x="2.54" y="-10.16" size="3.81" layer="95" rot="R90">mTrain</text>
 <text x="25.4" y="-22.606" size="1.778" layer="95">Ethernet</text>
 <text x="34.925" y="-9.398" size="1.27" layer="95" rot="R180">MOSI</text>
 <wire x1="-37.465" y1="-15.24" x2="-8.255" y2="-15.24" width="0.254" layer="94"/>
@@ -7259,139 +7488,73 @@
 <wire x1="-20.955" y1="10.16" x2="-8.255" y2="10.16" width="0.254" layer="94"/>
 <wire x1="-20.955" y1="7.62" x2="-8.255" y2="7.62" width="0.254" layer="94"/>
 </symbol>
-<symbol name="IMU">
-<description>IMU</description>
-<pin name="GND" x="13.97" y="-7.62" length="middle" rot="R180"/>
-<pin name="INT" x="13.97" y="-2.54" length="middle" rot="R180"/>
-<pin name="NC" x="13.97" y="2.54" length="middle" rot="R180"/>
-<pin name="+3.3V" x="13.97" y="7.62" length="middle" rot="R180"/>
-<wire x1="8.89" y1="10.16" x2="8.89" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="8.89" y1="-10.16" x2="-8.89" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-8.89" y1="-10.16" x2="-8.89" y2="10.16" width="0.254" layer="94"/>
-<wire x1="-8.89" y1="10.16" x2="8.89" y2="10.16" width="0.254" layer="94"/>
-<pin name="MOSI" x="-13.97" y="7.62" length="middle"/>
-<pin name="MISO" x="-13.97" y="2.54" length="middle"/>
-<pin name="SCK" x="-13.97" y="-2.54" length="middle"/>
-<pin name="!CS!" x="-13.97" y="-7.62" length="middle"/>
-<text x="-8.89" y="-10.668" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
-<text x="-8.89" y="10.668" size="1.778" layer="95">&gt;NAME</text>
+<symbol name="TMC4671-BOB">
+<description>TMC4671 BreakOut Board (BOB)</description>
+<pin name="+5V" x="-17.78" y="17.78" length="middle"/>
+<pin name="GND" x="-17.78" y="12.7" length="middle"/>
+<pin name="STP" x="-17.78" y="10.16" length="middle"/>
+<pin name="VCCIO" x="-17.78" y="15.24" length="middle"/>
+<pin name="DIR" x="-17.78" y="7.62" length="middle"/>
+<text x="-12.7" y="-22.86" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
+<text x="-12.7" y="20.32" size="1.778" layer="95">&gt;NAME</text>
+<pin name="!SS!" x="-17.78" y="5.08" length="middle"/>
+<pin name="MOSI" x="-17.78" y="0" length="middle"/>
+<pin name="MISO" x="-17.78" y="-2.54" length="middle"/>
+<pin name="SCK" x="-17.78" y="2.54" length="middle"/>
+<pin name="RXD" x="-17.78" y="-5.08" length="middle"/>
+<pin name="TXD" x="-17.78" y="-7.62" length="middle"/>
+<pin name="ADC_I0" x="-17.78" y="-12.7" length="middle"/>
+<pin name="ADC_I1" x="-17.78" y="-15.24" length="middle"/>
+<pin name="ENC1_N" x="17.78" y="-20.32" length="middle" rot="R180"/>
+<pin name="ENC1_A" x="17.78" y="-15.24" length="middle" rot="R180"/>
+<pin name="HALL_W" x="17.78" y="-12.7" length="middle" rot="R180"/>
+<pin name="ENC1_B" x="17.78" y="-17.78" length="middle" rot="R180"/>
+<pin name="HALL_V" x="17.78" y="-10.16" length="middle" rot="R180"/>
+<pin name="HALL_U" x="17.78" y="-7.62" length="middle" rot="R180"/>
+<pin name="PWM_UL" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="PWM_VH" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="PWM_UH" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="PWM_VL" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="PWM_WH" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="PWM_YH" x="17.78" y="10.16" length="middle" rot="R180"/>
+<pin name="PWM_YL" x="17.78" y="12.7" length="middle" rot="R180"/>
+<pin name="PWM_WL" x="17.78" y="7.62" length="middle" rot="R180"/>
+<pin name="VM" x="17.78" y="17.78" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="20.32" x2="12.7" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-22.86" x2="12.7" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-22.86" x2="-12.7" y2="20.32" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-22.86" x2="12.7" y2="20.32" width="0.254" layer="94"/>
 </symbol>
-<symbol name="LCD-HD44780">
-<wire x1="-7.62" y1="22.86" x2="-7.62" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-20.32" x2="5.08" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-20.32" x2="5.08" y2="22.86" width="0.254" layer="94"/>
-<wire x1="5.08" y1="22.86" x2="-7.62" y2="22.86" width="0.254" layer="94"/>
-<text x="-7.62" y="23.368" size="1.778" layer="95">&gt;Name</text>
-<text x="-7.62" y="-22.86" size="1.778" layer="96">&gt;Value</text>
-<text x="3.048" y="-9.398" size="2.286" layer="94" ratio="20" rot="R90">HD44780 LCD</text>
-<pin name="A" x="-10.16" y="-15.24" visible="pin" length="short" direction="pwr"/>
-<pin name="DB0" x="-10.16" y="5.08" visible="pin" length="short"/>
-<pin name="DB1" x="-10.16" y="2.54" visible="pin" length="short"/>
-<pin name="DB2" x="-10.16" y="0" visible="pin" length="short"/>
-<pin name="DB3" x="-10.16" y="-2.54" visible="pin" length="short"/>
-<pin name="DB4" x="-10.16" y="-5.08" visible="pin" length="short"/>
-<pin name="DB5" x="-10.16" y="-7.62" visible="pin" length="short"/>
-<pin name="DB6" x="-10.16" y="-10.16" visible="pin" length="short"/>
-<pin name="DB7" x="-10.16" y="-12.7" visible="pin" length="short"/>
-<pin name="E" x="-10.16" y="7.62" visible="pin" length="short" direction="in"/>
-<pin name="K" x="-10.16" y="-17.78" visible="pin" length="short" direction="pwr"/>
-<pin name="R/W" x="-10.16" y="10.16" visible="pin" length="short" direction="in"/>
-<pin name="RS" x="-10.16" y="12.7" visible="pin" length="short" direction="in"/>
-<pin name="VDD" x="-10.16" y="17.78" visible="pin" length="short" direction="pwr"/>
-<pin name="VO" x="-10.16" y="15.24" visible="pin" length="short"/>
-<pin name="VSS" x="-10.16" y="20.32" visible="pin" length="short" direction="pwr"/>
-</symbol>
-<symbol name="RPI-ZERO">
-<wire x1="-20.32" y1="33.02" x2="22.86" y2="33.02" width="0.254" layer="94"/>
-<wire x1="22.86" y1="33.02" x2="22.86" y2="-27.94" width="0.254" layer="94"/>
-<wire x1="22.86" y1="-27.94" x2="12.7" y2="-27.94" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-27.94" x2="-10.16" y2="-27.94" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-27.94" x2="-20.32" y2="-27.94" width="0.254" layer="94"/>
-<wire x1="-20.32" y1="-27.94" x2="-20.32" y2="33.02" width="0.254" layer="94"/>
-<pin name="5V0@1" x="25.4" y="30.48" length="short" direction="sup" rot="R180"/>
-<pin name="3V3@1" x="-22.86" y="30.48" length="short" direction="sup"/>
-<pin name="GPIO2/SDA1" x="-22.86" y="27.94" length="short"/>
-<pin name="5V0@2" x="25.4" y="27.94" length="short" direction="sup" rot="R180"/>
-<pin name="GPIO3/SCL1" x="-22.86" y="25.4" length="short"/>
-<pin name="GND@8" x="25.4" y="25.4" length="short" direction="sup" rot="R180"/>
-<pin name="GPIO4/GCKL" x="-22.86" y="22.86" length="short"/>
-<pin name="TXD0/GPIO14" x="25.4" y="22.86" length="short" rot="R180"/>
-<pin name="GND@1" x="-22.86" y="20.32" length="short" direction="sup"/>
-<pin name="RXD0/GPIO15" x="25.4" y="20.32" length="short" rot="R180"/>
-<pin name="GPIO17/GEN0" x="-22.86" y="17.78" length="short"/>
-<pin name="GPIO18" x="25.4" y="17.78" length="short" rot="R180"/>
-<pin name="GPIO27/GEN2" x="-22.86" y="15.24" length="short"/>
-<pin name="GND@4" x="25.4" y="15.24" length="short" direction="sup" rot="R180"/>
-<pin name="GPIO22/GEN3" x="-22.86" y="12.7" length="short"/>
-<pin name="GEN4/GPIO23" x="25.4" y="12.7" length="short" rot="R180"/>
-<pin name="3V3@2" x="-22.86" y="10.16" length="short" direction="sup"/>
-<pin name="GEN5/GPIO24" x="25.4" y="10.16" length="short" rot="R180"/>
-<pin name="GPIO10/MOSI" x="-22.86" y="7.62" length="short"/>
-<pin name="GND@5" x="25.4" y="7.62" length="short" direction="sup" rot="R180"/>
-<pin name="GPIO9/MISO" x="-22.86" y="5.08" length="short"/>
-<pin name="GEN/6GPIO25" x="25.4" y="5.08" length="short" rot="R180"/>
-<pin name="GPIO11/SCLK" x="-22.86" y="2.54" length="short"/>
-<pin name="!CE0!/GPIO8" x="25.4" y="2.54" length="short" rot="R180"/>
-<pin name="GND@2" x="-22.86" y="0" length="short" direction="sup"/>
-<pin name="!CE!/GPIO7" x="25.4" y="0" length="short" rot="R180"/>
-<pin name="ID_SD" x="-22.86" y="-2.54" length="short"/>
-<pin name="ID_SC" x="25.4" y="-2.54" length="short" rot="R180"/>
-<pin name="GPIO5" x="-22.86" y="-5.08" length="short"/>
-<pin name="GND@6" x="25.4" y="-5.08" length="short" direction="sup" rot="R180"/>
-<pin name="GPIO6" x="-22.86" y="-7.62" length="short"/>
-<pin name="GPIO12" x="25.4" y="-7.62" length="short" rot="R180"/>
-<pin name="GPIO13" x="-22.86" y="-10.16" length="short"/>
-<pin name="GND@7" x="25.4" y="-10.16" length="short" direction="sup" rot="R180"/>
-<pin name="GPIO19" x="-22.86" y="-12.7" length="short"/>
-<pin name="GPIO16" x="25.4" y="-12.7" length="short" rot="R180"/>
-<pin name="GPIO26" x="-22.86" y="-15.24" length="short"/>
-<pin name="GPIO20" x="25.4" y="-15.24" length="short" rot="R180"/>
-<pin name="GND@3" x="-22.86" y="-17.78" length="short" direction="sup"/>
-<pin name="GPIO21" x="25.4" y="-17.78" length="short" rot="R180"/>
-<text x="-20.32" y="35.56" size="1.27" layer="95" font="vector">&gt;NAME</text>
-<text x="-20.32" y="33.655" size="1.27" layer="96" font="vector">&gt;VALUE</text>
-</symbol>
-<symbol name="ARDUINOMICRO">
-<pin name="12" x="-20.32" y="12.7" visible="pin" length="middle" rot="R270"/>
-<pin name="11" x="-17.78" y="12.7" visible="pin" length="middle" rot="R270"/>
-<pin name="10" x="-15.24" y="12.7" visible="pin" length="middle" rot="R270"/>
-<pin name="9" x="-12.7" y="12.7" visible="pin" length="middle" rot="R270"/>
-<pin name="8" x="-10.16" y="12.7" visible="pin" length="middle" rot="R270"/>
-<pin name="7" x="-7.62" y="12.7" visible="pin" length="middle" rot="R270"/>
-<pin name="6" x="-5.08" y="12.7" visible="pin" length="middle" rot="R270"/>
-<pin name="5" x="-2.54" y="12.7" visible="pin" length="middle" rot="R270"/>
-<pin name="4" x="0" y="12.7" visible="pin" length="middle" rot="R270"/>
-<pin name="3" x="2.54" y="12.7" visible="pin" length="middle" rot="R270"/>
-<pin name="2" x="5.08" y="12.7" visible="pin" length="middle" rot="R270"/>
-<pin name="GND@1" x="7.62" y="12.7" visible="pin" length="middle" rot="R270"/>
-<pin name="R@2" x="10.16" y="12.7" visible="pin" length="middle" rot="R270"/>
-<pin name="RX" x="12.7" y="12.7" visible="pin" length="middle" rot="R270"/>
-<pin name="TX" x="15.24" y="12.7" visible="pin" length="middle" rot="R270"/>
-<pin name="SS" x="17.78" y="12.7" visible="pin" length="middle" rot="R270"/>
-<pin name="MOSI" x="20.32" y="12.7" visible="pin" length="middle" rot="R270"/>
-<pin name="SCK" x="20.32" y="-12.7" visible="pin" length="middle" rot="R90"/>
-<pin name="MISO" x="17.78" y="-12.7" visible="pin" length="middle" rot="R90"/>
-<pin name="9V" x="15.24" y="-12.7" visible="pin" length="middle" rot="R90"/>
-<pin name="GND" x="12.7" y="-12.7" visible="pin" length="middle" rot="R90"/>
-<pin name="R@1" x="10.16" y="-12.7" visible="pin" length="middle" rot="R90"/>
-<pin name="5V" x="7.62" y="-12.7" visible="pin" length="middle" rot="R90"/>
-<pin name="NC@1" x="5.08" y="-12.7" visible="pin" length="middle" rot="R90"/>
-<pin name="NC@2" x="2.54" y="-12.7" visible="pin" length="middle" rot="R90"/>
-<pin name="A5" x="0" y="-12.7" visible="pin" length="middle" rot="R90"/>
-<pin name="A4" x="-2.54" y="-12.7" visible="pin" length="middle" rot="R90"/>
-<pin name="A3" x="-5.08" y="-12.7" visible="pin" length="middle" rot="R90"/>
-<pin name="A2" x="-7.62" y="-12.7" visible="pin" length="middle" rot="R90"/>
-<pin name="A1" x="-10.16" y="-12.7" visible="pin" length="middle" rot="R90"/>
-<pin name="A0" x="-12.7" y="-12.7" visible="pin" length="middle" rot="R90"/>
-<pin name="AREF" x="-15.24" y="-12.7" visible="pin" length="middle" rot="R90"/>
-<pin name="3V" x="-17.78" y="-12.7" visible="pin" length="middle" rot="R90"/>
-<pin name="13" x="-20.32" y="-12.7" visible="pin" length="middle" rot="R90"/>
-<wire x1="-22.86" y1="7.62" x2="22.86" y2="7.62" width="0.254" layer="94"/>
-<wire x1="22.86" y1="7.62" x2="22.86" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="22.86" y1="-7.62" x2="-22.86" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-22.86" y1="-7.62" x2="-22.86" y2="7.62" width="0.254" layer="94"/>
-<rectangle x1="-25.4" y1="-3.81" x2="-21.59" y2="3.81" layer="94"/>
-<text x="-7.62" y="0" size="1.778" layer="94">Micro</text>
+<symbol name="TMC6200-BOB">
+<description>TMC6200 BreakOut Board (BOB)</description>
+<pin name="VCCIO" x="-22.86" y="17.78" length="middle"/>
+<pin name="!SS!" x="-22.86" y="12.7" length="middle"/>
+<pin name="SCK" x="-22.86" y="10.16" length="middle"/>
+<pin name="GND" x="-22.86" y="15.24" length="middle"/>
+<pin name="MOSI" x="-22.86" y="7.62" length="middle"/>
+<text x="-17.78" y="-17.78" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
+<text x="-17.78" y="20.32" size="1.778" layer="95">&gt;NAME</text>
+<pin name="MISO" x="-22.86" y="5.08" length="middle"/>
+<pin name="PWM_WH" x="-22.86" y="0" length="middle"/>
+<pin name="PWM_VL" x="-22.86" y="-2.54" length="middle"/>
+<pin name="PWM_WL" x="-22.86" y="2.54" length="middle"/>
+<pin name="PWM_VH" x="-22.86" y="-5.08" length="middle"/>
+<pin name="PWM_UL" x="-22.86" y="-7.62" length="middle"/>
+<pin name="DRV_EN" x="-22.86" y="-12.7" length="middle"/>
+<pin name="FAULT" x="-22.86" y="-15.24" length="middle"/>
+<pin name="PWM_UH" x="-22.86" y="-10.16" length="middle"/>
+<pin name="W" x="22.86" y="-7.62" length="middle" rot="R180"/>
+<pin name="V" x="22.86" y="0" length="middle" rot="R180"/>
+<pin name="U" x="22.86" y="7.62" length="middle" rot="R180"/>
+<pin name="VM" x="22.86" y="17.78" length="middle" rot="R180"/>
+<wire x1="-17.78" y1="20.32" x2="17.78" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-17.78" x2="17.78" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-17.78" x2="-17.78" y2="20.32" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-17.78" x2="17.78" y2="20.32" width="0.254" layer="94"/>
+<pin name="TEMP" x="5.08" y="25.4" length="middle" rot="R270"/>
+<pin name="CURU" x="0" y="25.4" length="middle" rot="R270"/>
+<pin name="CURV" x="-2.54" y="25.4" length="middle" rot="R270"/>
+<pin name="CURW" x="-5.08" y="25.4" length="middle" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -7450,61 +7613,6 @@
 <connect gate="KIT" pin="VIN" pad="VIN"/>
 <connect gate="KIT" pin="VO" pad="VOUT"/>
 <connect gate="KIT" pin="VU" pad="VU"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MTRAIN" prefix="KIT">
-<description>MTrain created by Evan Peterson</description>
-<gates>
-<gate name="G$1" symbol="MTRAIN" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="MTRAIN-KIT">
-<connects>
-<connect gate="G$1" pin="!RST" pad="!RST"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="NC" pad="NC"/>
-<connect gate="G$1" pin="P10" pad="P$10"/>
-<connect gate="G$1" pin="P11" pad="P$11"/>
-<connect gate="G$1" pin="P12" pad="P$12"/>
-<connect gate="G$1" pin="P13" pad="P$13"/>
-<connect gate="G$1" pin="P14" pad="P$14"/>
-<connect gate="G$1" pin="P15" pad="P$15"/>
-<connect gate="G$1" pin="P16" pad="P$16"/>
-<connect gate="G$1" pin="P17" pad="P$17"/>
-<connect gate="G$1" pin="P18" pad="P$18"/>
-<connect gate="G$1" pin="P19" pad="P$19"/>
-<connect gate="G$1" pin="P20" pad="P$20"/>
-<connect gate="G$1" pin="P25" pad="P$25"/>
-<connect gate="G$1" pin="P26" pad="P$26"/>
-<connect gate="G$1" pin="P27" pad="P$27"/>
-<connect gate="G$1" pin="P28" pad="P$28"/>
-<connect gate="G$1" pin="P29" pad="P$29"/>
-<connect gate="G$1" pin="P3" pad="P$3"/>
-<connect gate="G$1" pin="P30" pad="P$30"/>
-<connect gate="G$1" pin="P31" pad="P$31"/>
-<connect gate="G$1" pin="P32" pad="P$32"/>
-<connect gate="G$1" pin="P33" pad="P$33"/>
-<connect gate="G$1" pin="P34" pad="P$34"/>
-<connect gate="G$1" pin="P35" pad="P$35"/>
-<connect gate="G$1" pin="P36" pad="P$36"/>
-<connect gate="G$1" pin="P4" pad="P$4"/>
-<connect gate="G$1" pin="P5" pad="P$5"/>
-<connect gate="G$1" pin="P6" pad="P$6"/>
-<connect gate="G$1" pin="P7" pad="P$7"/>
-<connect gate="G$1" pin="P8" pad="P$8"/>
-<connect gate="G$1" pin="P9" pad="P$9"/>
-<connect gate="G$1" pin="RX+" pad="RX+"/>
-<connect gate="G$1" pin="RX-" pad="RX-"/>
-<connect gate="G$1" pin="TX+" pad="TX+"/>
-<connect gate="G$1" pin="TX-" pad="TX-"/>
-<connect gate="G$1" pin="VBUS" pad="VBUS"/>
-<connect gate="G$1" pin="VDD" pad="VDD"/>
-<connect gate="G$1" pin="VIN" pad="VIN"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7759,7 +7867,148 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="MTRAIN" prefix="KIT">
+<description>MTrain created by Evan Peterson</description>
+<gates>
+<gate name="G$1" symbol="MTRAIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MTRAIN-KIT">
+<connects>
+<connect gate="G$1" pin="!RST" pad="!RST"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="NC" pad="NC"/>
+<connect gate="G$1" pin="P10" pad="P$10"/>
+<connect gate="G$1" pin="P11" pad="P$11"/>
+<connect gate="G$1" pin="P12" pad="P$12"/>
+<connect gate="G$1" pin="P13" pad="P$13"/>
+<connect gate="G$1" pin="P14" pad="P$14"/>
+<connect gate="G$1" pin="P15" pad="P$15"/>
+<connect gate="G$1" pin="P16" pad="P$16"/>
+<connect gate="G$1" pin="P17" pad="P$17"/>
+<connect gate="G$1" pin="P18" pad="P$18"/>
+<connect gate="G$1" pin="P19" pad="P$19"/>
+<connect gate="G$1" pin="P20" pad="P$20"/>
+<connect gate="G$1" pin="P25" pad="P$25"/>
+<connect gate="G$1" pin="P26" pad="P$26"/>
+<connect gate="G$1" pin="P27" pad="P$27"/>
+<connect gate="G$1" pin="P28" pad="P$28"/>
+<connect gate="G$1" pin="P29" pad="P$29"/>
+<connect gate="G$1" pin="P3" pad="P$3"/>
+<connect gate="G$1" pin="P30" pad="P$30"/>
+<connect gate="G$1" pin="P31" pad="P$31"/>
+<connect gate="G$1" pin="P32" pad="P$32"/>
+<connect gate="G$1" pin="P33" pad="P$33"/>
+<connect gate="G$1" pin="P34" pad="P$34"/>
+<connect gate="G$1" pin="P35" pad="P$35"/>
+<connect gate="G$1" pin="P36" pad="P$36"/>
+<connect gate="G$1" pin="P4" pad="P$4"/>
+<connect gate="G$1" pin="P5" pad="P$5"/>
+<connect gate="G$1" pin="P6" pad="P$6"/>
+<connect gate="G$1" pin="P7" pad="P$7"/>
+<connect gate="G$1" pin="P8" pad="P$8"/>
+<connect gate="G$1" pin="P9" pad="P$9"/>
+<connect gate="G$1" pin="RX+" pad="RX+"/>
+<connect gate="G$1" pin="RX-" pad="RX-"/>
+<connect gate="G$1" pin="TX+" pad="TX+"/>
+<connect gate="G$1" pin="TX-" pad="TX-"/>
+<connect gate="G$1" pin="VBUS" pad="VBUS"/>
+<connect gate="G$1" pin="VDD" pad="VDD"/>
+<connect gate="G$1" pin="VIN" pad="VIN"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TMC4671-BOB" prefix="KIT" uservalue="yes">
+<description>&lt;a href="https://www.trinamic.com/support/eval-kits/details/tmc4671-bob/"&gt;TMC4671-BOB&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="TMC4671-BOB" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TMC4671-BOB">
+<connects>
+<connect gate="G$1" pin="!SS!" pad="6"/>
+<connect gate="G$1" pin="+5V" pad="1"/>
+<connect gate="G$1" pin="ADC_I0" pad="13"/>
+<connect gate="G$1" pin="ADC_I1" pad="14"/>
+<connect gate="G$1" pin="DIR" pad="5"/>
+<connect gate="G$1" pin="ENC1_A" pad="30"/>
+<connect gate="G$1" pin="ENC1_B" pad="31"/>
+<connect gate="G$1" pin="ENC1_N" pad="32"/>
+<connect gate="G$1" pin="GND" pad="3 12 15 16 18"/>
+<connect gate="G$1" pin="HALL_U" pad="27"/>
+<connect gate="G$1" pin="HALL_V" pad="28"/>
+<connect gate="G$1" pin="HALL_W" pad="29"/>
+<connect gate="G$1" pin="MISO" pad="9"/>
+<connect gate="G$1" pin="MOSI" pad="8"/>
+<connect gate="G$1" pin="PWM_UH" pad="26"/>
+<connect gate="G$1" pin="PWM_UL" pad="25"/>
+<connect gate="G$1" pin="PWM_VH" pad="24"/>
+<connect gate="G$1" pin="PWM_VL" pad="23"/>
+<connect gate="G$1" pin="PWM_WH" pad="22"/>
+<connect gate="G$1" pin="PWM_WL" pad="21"/>
+<connect gate="G$1" pin="PWM_YH" pad="20"/>
+<connect gate="G$1" pin="PWM_YL" pad="19"/>
+<connect gate="G$1" pin="RXD" pad="10"/>
+<connect gate="G$1" pin="SCK" pad="7"/>
+<connect gate="G$1" pin="STP" pad="4"/>
+<connect gate="G$1" pin="TXD" pad="11"/>
+<connect gate="G$1" pin="VCCIO" pad="2"/>
+<connect gate="G$1" pin="VM" pad="17"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TMC6200-BOB" prefix="KIT" uservalue="yes">
+<description>&lt;a href="https://www.trinamic.com/support/eval-kits/details/tmc6200-bob/"&gt;TMC6200-BOB&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="TMC6200-BOB" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TMC6200-BOB">
+<connects>
+<connect gate="G$1" pin="!SS!" pad="3"/>
+<connect gate="G$1" pin="CURU" pad="31"/>
+<connect gate="G$1" pin="CURV" pad="30"/>
+<connect gate="G$1" pin="CURW" pad="29"/>
+<connect gate="G$1" pin="DRV_EN" pad="13"/>
+<connect gate="G$1" pin="FAULT" pad="14"/>
+<connect gate="G$1" pin="GND" pad="2 17 18 28 32"/>
+<connect gate="G$1" pin="MISO" pad="6"/>
+<connect gate="G$1" pin="MOSI" pad="5"/>
+<connect gate="G$1" pin="PWM_UH" pad="12"/>
+<connect gate="G$1" pin="PWM_UL" pad="11"/>
+<connect gate="G$1" pin="PWM_VH" pad="10"/>
+<connect gate="G$1" pin="PWM_VL" pad="9"/>
+<connect gate="G$1" pin="PWM_WH" pad="8"/>
+<connect gate="G$1" pin="PWM_WL" pad="7"/>
+<connect gate="G$1" pin="SCK" pad="4"/>
+<connect gate="G$1" pin="TEMP" pad="33"/>
+<connect gate="G$1" pin="U" pad="19 20 21"/>
+<connect gate="G$1" pin="V" pad="22 23 24"/>
+<connect gate="G$1" pin="VCCIO" pad="1"/>
+<connect gate="G$1" pin="VM" pad="15 16"/>
+<connect gate="G$1" pin="W" pad="25 26 27"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>

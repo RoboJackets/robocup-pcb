@@ -1691,6 +1691,70 @@ rfk_1850.pdf</description>
 <text x="-5.08" y="2.794" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-5.08" y="-3.683" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
+<package name="PMOD">
+<wire x1="-2.54" y1="1.905" x2="-1.905" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="2.54" x2="-0.635" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="2.54" x2="0" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="-6.985" y1="2.54" x2="-5.715" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-5.715" y1="2.54" x2="-5.08" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="1.905" x2="-4.445" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="2.54" x2="-3.175" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="2.54" x2="-2.54" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="-6.985" y1="2.54" x2="-7.62" y2="1.905" width="0.1524" layer="21"/>
+<pad name="12" x="-6.35" y="1.27" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="11" x="-3.81" y="1.27" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="10" x="-1.27" y="1.27" drill="1.016" shape="octagon" rot="R90"/>
+<text x="-7.81" y="-3" size="1" layer="25" align="top-left">&gt;NAME</text>
+<wire x1="0" y1="-1.905" x2="-0.635" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-2.54" x2="-1.905" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="-2.54" x2="-2.54" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="1.905" x2="-5.08" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-1.905" x2="-5.715" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="1.905" x2="-2.54" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-1.905" x2="-3.175" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="-2.54" x2="-4.445" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="-2.54" x2="-5.08" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-7.62" y1="1.905" x2="-7.62" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-7.62" y1="-1.905" x2="-6.985" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-5.715" y1="-2.54" x2="-6.985" y2="-2.54" width="0.1524" layer="21"/>
+<pad name="6" x="-6.35" y="-1.27" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="5" x="-3.81" y="-1.27" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="4" x="-1.27" y="-1.27" drill="1.016" shape="octagon" rot="R90"/>
+<wire x1="5.08" y1="1.905" x2="5.715" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="5.715" y1="2.54" x2="6.985" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="6.985" y1="2.54" x2="7.62" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="2.54" x2="1.905" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="2.54" x2="2.54" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="1.905" x2="3.175" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="2.54" x2="4.445" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="4.445" y1="2.54" x2="5.08" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="2.54" x2="0" y2="1.905" width="0.1524" layer="21"/>
+<pad name="9" x="1.27" y="1.27" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="8" x="3.81" y="1.27" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="7" x="6.35" y="1.27" drill="1.016" shape="octagon" rot="R90"/>
+<wire x1="7.62" y1="1.905" x2="7.62" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="7.62" y1="-1.905" x2="6.985" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="6.985" y1="-2.54" x2="5.715" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="5.715" y1="-2.54" x2="5.08" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="1.905" x2="2.54" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="1.905" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="1.905" x2="5.08" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="-1.905" x2="4.445" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="4.445" y1="-2.54" x2="3.175" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="-2.54" x2="2.54" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="0" y1="1.905" x2="0" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="0" y1="-1.905" x2="0.635" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-2.54" x2="0.635" y2="-2.54" width="0.1524" layer="21"/>
+<pad name="3" x="1.27" y="-1.27" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="2" x="3.81" y="-1.27" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="1" x="6.35" y="-1.27" drill="1.016" shape="octagon" rot="R90"/>
+<circle x="8.89" y="-2.54" radius="0.5" width="0" layer="25"/>
+<text x="0.00761875" y="3.81" size="1.778" layer="21" font="vector" ratio="15" rot="SR180" align="top-center">^   ^
+CABLE</text>
+<wire x1="5.08" y1="-0.635" x2="5.715" y2="0" width="0.1524" layer="21"/>
+<wire x1="5.715" y1="0" x2="6.985" y2="0" width="0.1524" layer="21"/>
+<wire x1="6.985" y1="0" x2="7.62" y2="-0.635" width="0.1524" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="2-PIN_CONN">
@@ -2272,6 +2336,38 @@ rfk_1850.pdf</description>
 <pin name="2" x="7.62" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="3" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="4" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+<symbol name="12-PIN_CONN-1">
+<circle x="-0.762" y="27.94" radius="0.762" width="0.254" layer="94"/>
+<circle x="-0.762" y="22.86" radius="0.762" width="0.254" layer="94"/>
+<circle x="-0.762" y="17.78" radius="0.762" width="0.254" layer="94"/>
+<circle x="-0.762" y="12.7" radius="0.762" width="0.254" layer="94"/>
+<circle x="-0.762" y="7.62" radius="0.762" width="0.254" layer="94"/>
+<circle x="-0.762" y="2.54" radius="0.762" width="0.254" layer="94"/>
+<circle x="-0.762" y="-2.54" radius="0.762" width="0.254" layer="94"/>
+<circle x="-0.762" y="-7.62" radius="0.762" width="0.254" layer="94"/>
+<circle x="-0.762" y="-12.7" radius="0.762" width="0.254" layer="94"/>
+<circle x="-0.762" y="-17.78" radius="0.762" width="0.254" layer="94"/>
+<circle x="-0.762" y="-22.86" radius="0.762" width="0.254" layer="94"/>
+<circle x="-0.762" y="-27.94" radius="0.762" width="0.254" layer="94"/>
+<text x="-7.62" y="30.48" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-7.62" y="-30.48" size="1.778" layer="97" font="vector" align="top-left">&gt;VALUE</text>
+<pin name="1" x="5.08" y="27.94" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="5.08" y="22.86" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="3" x="5.08" y="17.78" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="4" x="5.08" y="12.7" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="5" x="5.08" y="7.62" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="6" x="5.08" y="2.54" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="7" x="5.08" y="-2.54" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="8" x="5.08" y="-7.62" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="9" x="5.08" y="-12.7" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="10" x="5.08" y="-17.78" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="11" x="5.08" y="-22.86" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="12" x="5.08" y="-27.94" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<wire x1="-7.62" y1="30.48" x2="-7.62" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-30.48" x2="2.54" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-30.48" x2="2.54" y2="30.48" width="0.254" layer="94"/>
+<wire x1="2.54" y1="30.48" x2="-7.62" y2="30.48" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3636,7 +3732,39 @@ Source: http://www.molex.com/product/micro/87438.html</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="PMOD" prefix="J">
+<gates>
+<gate name="G$1" symbol="12-PIN_CONN-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PMOD">
+<connects>
+<connect gate="G$1" pin="1" pad="7"/>
+<connect gate="G$1" pin="10" pad="4"/>
+<connect gate="G$1" pin="11" pad="5"/>
+<connect gate="G$1" pin="12" pad="6"/>
+<connect gate="G$1" pin="2" pad="8"/>
+<connect gate="G$1" pin="3" pad="9"/>
+<connect gate="G$1" pin="4" pad="10"/>
+<connect gate="G$1" pin="5" pad="11"/>
+<connect gate="G$1" pin="6" pad="12"/>
+<connect gate="G$1" pin="7" pad="1"/>
+<connect gate="G$1" pin="8" pad="2"/>
+<connect gate="G$1" pin="9" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
