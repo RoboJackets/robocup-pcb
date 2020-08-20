@@ -16192,13 +16192,10 @@ In this library you will find LEDs and other visual output devices.
 <parts>
 <part name="IC1" library="atmel" library_urn="urn:adsk.eagle:library:105" deviceset="MEGA32" device="-A" package3d_urn="urn:adsk.eagle:package:4319/1"/>
 <part name="U$1" library="HD44780LCD" deviceset="LCD-HD44780" device="20X4-4HOLES" technology="4-HOLES"/>
-<part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="250"/>
 <part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="1.2k"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="+5V"/>
-<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="250"/>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="1.2k"/>
-<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="250"/>
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="1.2k"/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="+5V"/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -16238,6 +16235,9 @@ In this library you will find LEDs and other visual output devices.
 <part name="D4" library="RoboJackets-Diodes" deviceset="CBS10S30" device=""/>
 <part name="D5" library="RoboJackets-Diodes" deviceset="CBS10S30" device=""/>
 <part name="D6" library="RoboJackets-Diodes" deviceset="CBS10S30" device=""/>
+<part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="250"/>
+<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="250"/>
+<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="250"/>
 </parts>
 <sheets>
 <sheet>
@@ -16796,25 +16796,13 @@ Board</text>
 <text x="228.6" y="91.44" size="1.778" layer="91">Va = vphase*R3/(R3+R4)</text>
 </plain>
 <instances>
-<instance part="R5" gate="G$1" x="83.82" y="66.04" smashed="yes" rot="R90">
-<attribute name="NAME" x="82.3214" y="62.23" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="87.122" y="62.23" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="R6" gate="G$1" x="83.82" y="86.36" smashed="yes" rot="R90">
 <attribute name="NAME" x="82.3214" y="82.55" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="87.122" y="82.55" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R1" gate="G$1" x="152.4" y="66.04" smashed="yes" rot="R90">
-<attribute name="NAME" x="150.9014" y="62.23" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="155.702" y="62.23" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="R2" gate="G$1" x="152.4" y="86.36" smashed="yes" rot="R90">
 <attribute name="NAME" x="150.9014" y="82.55" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="155.702" y="82.55" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="R3" gate="G$1" x="220.98" y="66.04" smashed="yes" rot="R90">
-<attribute name="NAME" x="219.4814" y="62.23" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="224.282" y="62.23" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R4" gate="G$1" x="220.98" y="86.36" smashed="yes" rot="R90">
 <attribute name="NAME" x="219.4814" y="82.55" size="1.778" layer="95" rot="R90"/>
@@ -16861,6 +16849,18 @@ Board</text>
 <attribute name="NAME" x="195.834" y="85.725" size="1.778" layer="95"/>
 <attribute name="VALUE" x="203.454" y="80.391" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="R9" gate="G$1" x="83.82" y="66.04" smashed="yes" rot="R90">
+<attribute name="NAME" x="82.3214" y="62.23" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="87.122" y="62.23" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R1" gate="G$1" x="152.4" y="66.04" smashed="yes" rot="R90">
+<attribute name="NAME" x="150.9014" y="62.23" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="155.702" y="62.23" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R3" gate="G$1" x="220.98" y="66.04" smashed="yes" rot="R90">
+<attribute name="NAME" x="219.4814" y="62.23" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="224.282" y="62.23" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -16879,19 +16879,19 @@ Board</text>
 </net>
 <net name="OTHER-PHASES" class="0">
 <segment>
-<pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="83.82" y1="60.96" x2="83.82" y2="58.42" width="0.1524" layer="91"/>
 <label x="83.82" y="58.42" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="R9" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="152.4" y1="60.96" x2="152.4" y2="58.42" width="0.1524" layer="91"/>
 <label x="152.4" y="58.42" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="R1" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="220.98" y1="60.96" x2="220.98" y2="58.42" width="0.1524" layer="91"/>
 <label x="220.98" y="58.42" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="R3" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="ANALOG-A" class="0">
@@ -16901,7 +16901,6 @@ Board</text>
 <wire x1="83.82" y1="76.2" x2="83.82" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="76.2" x2="91.44" y2="76.2" width="0.1524" layer="91"/>
 <junction x="83.82" y="76.2"/>
-<pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="83.82" y1="71.12" x2="83.82" y2="76.2" width="0.1524" layer="91"/>
 <label x="91.44" y="76.2" size="1.27" layer="95" font="vector" xref="yes"/>
 <wire x1="63.5" y1="76.2" x2="73.66" y2="76.2" width="0.1524" layer="91"/>
@@ -16910,6 +16909,7 @@ Board</text>
 <wire x1="73.66" y1="73.66" x2="73.66" y2="76.2" width="0.1524" layer="91"/>
 <junction x="73.66" y="76.2"/>
 <pinref part="D4" gate="G$1" pin="A"/>
+<pinref part="R9" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="PHASEB" class="0">
@@ -16938,7 +16938,6 @@ Board</text>
 </net>
 <net name="ANALOG-C" class="0">
 <segment>
-<pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="220.98" y1="71.12" x2="220.98" y2="76.2" width="0.1524" layer="91"/>
 <label x="228.6" y="76.2" size="1.27" layer="95" font="vector" xref="yes"/>
@@ -16952,11 +16951,11 @@ Board</text>
 <wire x1="213.36" y1="73.66" x2="213.36" y2="76.2" width="0.1524" layer="91"/>
 <junction x="213.36" y="76.2"/>
 <pinref part="D6" gate="G$1" pin="A"/>
+<pinref part="R3" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="ANALOG-B" class="0">
 <segment>
-<pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="152.4" y1="71.12" x2="152.4" y2="76.2" width="0.1524" layer="91"/>
 <label x="160.02" y="76.2" size="1.27" layer="95" font="vector" xref="yes"/>
@@ -16970,6 +16969,7 @@ Board</text>
 <wire x1="144.78" y1="73.66" x2="144.78" y2="76.2" width="0.1524" layer="91"/>
 <junction x="144.78" y="76.2"/>
 <pinref part="D5" gate="G$1" pin="A"/>
+<pinref part="R1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="VCC" class="0">
