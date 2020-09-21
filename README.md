@@ -7,7 +7,7 @@ If you are a new member to the RoboCup electrical team and have never used *[git
 ## Sponsor Thank You!
 - Maxon (discount of EC45 and EC16 motors)
 - PCBWay (donation of PCB fabrication runs)
-- Texas Instruments (donation of ICs and SBCs)
+- Texas Instruments (donation of ICs)
 
 ## Prerequisites
 - A computer configured with git [[Windows](https://windows.github.com)] [[Mac](https://mac.github.com/)]
