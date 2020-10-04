@@ -11,5 +11,5 @@ For each voltage, the ATMega checks to verify that it is correct, whether high, 
 110:01/  
 010:0/1  
 011:/01  
-This comparisons are made, and the LED screen tells us if the motor is working appropriately  
+These comparisons are made, and the LED screen tells us if the motor is being supplied appropriately, to ensure it won't be blown.  
 ![MotorTester Board](./motortester.png)
