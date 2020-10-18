@@ -214,9 +214,9 @@
 <pin name="M2" x="-20.32" y="2.54" length="middle" direction="pas"/>
 <pin name="M1" x="-20.32" y="7.62" length="middle" direction="pas"/>
 <pin name="M0" x="-20.32" y="12.7" length="middle" direction="pas"/>
-<pin name="ENABLE" x="-20.32" y="17.78" length="middle" direction="pas"/>
-<pin name="RESET" x="-20.32" y="-2.54" length="middle" direction="pas"/>
-<pin name="SLEEP" x="-20.32" y="-7.62" length="middle" direction="pas"/>
+<pin name="!ENABLE!" x="-20.32" y="17.78" length="middle" direction="pas"/>
+<pin name="!RESET!" x="-20.32" y="-2.54" length="middle" direction="pas"/>
+<pin name="!SLEEP!" x="-20.32" y="-7.62" length="middle" direction="pas"/>
 <pin name="STEP" x="-20.32" y="-12.7" length="middle" direction="pas"/>
 <pin name="B1" x="20.32" y="2.54" length="middle" direction="pas" rot="R180"/>
 <pin name="B2" x="20.32" y="7.62" length="middle" direction="pas" rot="R180"/>
@@ -224,7 +224,7 @@
 <pin name="VMOT" x="20.32" y="17.78" length="middle" direction="pas" rot="R180"/>
 <pin name="A1" x="20.32" y="-2.54" length="middle" direction="pas" rot="R180"/>
 <pin name="A2" x="20.32" y="-7.62" length="middle" direction="pas" rot="R180"/>
-<pin name="FAULT" x="20.32" y="-12.7" length="middle" direction="pas" rot="R180"/>
+<pin name="!FAULT!" x="20.32" y="-12.7" length="middle" direction="pas" rot="R180"/>
 <pin name="DIR" x="-20.32" y="-17.78" length="middle" direction="pas"/>
 <wire x1="-15.24" y1="20.32" x2="-15.24" y2="-20.32" width="0.254" layer="94"/>
 <wire x1="-15.24" y1="-20.32" x2="15.24" y2="-20.32" width="0.254" layer="94"/>
@@ -240,19 +240,19 @@
 <devices>
 <device name="" package="DRV8825">
 <connects>
+<connect gate="G$1" pin="!ENABLE!" pad="1"/>
+<connect gate="G$1" pin="!FAULT!" pad="15"/>
+<connect gate="G$1" pin="!RESET!" pad="5"/>
+<connect gate="G$1" pin="!SLEEP!" pad="6"/>
 <connect gate="G$1" pin="A1" pad="13"/>
 <connect gate="G$1" pin="A2" pad="14"/>
 <connect gate="G$1" pin="B1" pad="12"/>
 <connect gate="G$1" pin="B2" pad="11"/>
 <connect gate="G$1" pin="DIR" pad="8"/>
-<connect gate="G$1" pin="ENABLE" pad="1"/>
-<connect gate="G$1" pin="FAULT" pad="15"/>
 <connect gate="G$1" pin="GND" pad="10 16"/>
 <connect gate="G$1" pin="M0" pad="2"/>
 <connect gate="G$1" pin="M1" pad="3"/>
 <connect gate="G$1" pin="M2" pad="4"/>
-<connect gate="G$1" pin="RESET" pad="5"/>
-<connect gate="G$1" pin="SLEEP" pad="6"/>
 <connect gate="G$1" pin="STEP" pad="7"/>
 <connect gate="G$1" pin="VMOT" pad="9"/>
 </connects>
@@ -6527,13 +6527,6 @@ Power Barrel Connector Jack 2.10mm ID (0.083"), 5.50mm OD (0.217") Through Hole,
 <packages>
 </packages>
 <symbols>
-<symbol name="+5V">
-<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="0" y1="0.635" x2="0" y2="1.905" width="0.1524" layer="94"/>
-<circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
-<text x="-1.905" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 <symbol name="VBATT">
 <wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="94"/>
 <wire x1="0" y1="0.635" x2="0" y2="1.905" width="0.1524" layer="94"/>
@@ -6546,21 +6539,15 @@ Power Barrel Connector Jack 2.10mm ID (0.083"), 5.50mm OD (0.217") Through Hole,
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
+<symbol name="+3.3V">
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="0.635" x2="0" y2="1.905" width="0.1524" layer="94"/>
+<circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
+<text x="-1.905" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="+3.3V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="+5V" prefix="SUPPLY">
-<description>+5V Supply Symbol</description>
-<gates>
-<gate name="G$1" symbol="+5V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="VBATT" prefix="SUPPLY">
 <description>VBATT Supply Symbol</description>
 <gates>
@@ -6578,6 +6565,19 @@ Power Barrel Connector Jack 2.10mm ID (0.083"), 5.50mm OD (0.217") Through Hole,
 <description>Ground Symbol</description>
 <gates>
 <gate name="G$1" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+3.3V" prefix="SUPPLY">
+<description>+3.3V Supply Symbol</description>
+<gates>
+<gate name="P" symbol="+3.3V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -6605,9 +6605,6 @@ Power Barrel Connector Jack 2.10mm ID (0.083"), 5.50mm OD (0.217") Through Hole,
 <part name="J1" library="RoboJackets-Connectors" deviceset="4PIN-03536?" device="30460"/>
 <part name="J2" library="RoboJackets-Connectors" deviceset="4PIN-03536?" device="30460"/>
 <part name="J3" library="RoboJackets-Connectors" deviceset="PJ-037A*" device=""/>
-<part name="SUPPLY1" library="RoboJackets-Supplies" deviceset="+5V" device=""/>
-<part name="SUPPLY2" library="RoboJackets-Supplies" deviceset="+5V" device=""/>
-<part name="SUPPLY3" library="RoboJackets-Supplies" deviceset="+5V" device=""/>
 <part name="SUPPLY4" library="RoboJackets-Supplies" deviceset="VBATT" device=""/>
 <part name="SUPPLY5" library="RoboJackets-Supplies" deviceset="VBATT" device=""/>
 <part name="SUPPLY6" library="RoboJackets-Supplies" deviceset="GND" device=""/>
@@ -6616,6 +6613,9 @@ Power Barrel Connector Jack 2.10mm ID (0.083"), 5.50mm OD (0.217") Through Hole,
 <part name="SUPPLY9" library="RoboJackets-Supplies" deviceset="VBATT" device=""/>
 <part name="SUPPLY10" library="RoboJackets-Supplies" deviceset="VBATT" device=""/>
 <part name="SUPPLY11" library="RoboJackets-Supplies" deviceset="GND" device=""/>
+<part name="SUPPLY1" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
+<part name="SUPPLY2" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
+<part name="SUPPLY3" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6627,26 +6627,17 @@ Power Barrel Connector Jack 2.10mm ID (0.083"), 5.50mm OD (0.217") Through Hole,
 <attribute name="NAME" x="-45.72" y="28.575" size="1.778" layer="95"/>
 </instance>
 <instance part="U$2" gate="G$1" x="88.9" y="30.48" smashed="yes"/>
-<instance part="J1" gate="G$1" x="132.08" y="33.02" smashed="yes">
-<attribute name="NAME" x="125.73" y="41.275" size="1.778" layer="95"/>
-<attribute name="VALUE" x="125.73" y="25.4" size="1.778" layer="96"/>
+<instance part="J1" gate="G$1" x="139.7" y="45.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="131.445" y="39.37" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="147.32" y="39.37" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="J2" gate="G$1" x="132.08" y="-25.4" smashed="yes">
-<attribute name="NAME" x="125.73" y="-17.145" size="1.778" layer="95"/>
-<attribute name="VALUE" x="125.73" y="-33.02" size="1.778" layer="96"/>
+<instance part="J2" gate="G$1" x="139.7" y="-10.16" smashed="yes" rot="R90">
+<attribute name="NAME" x="131.445" y="-16.51" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="147.32" y="-16.51" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="J3" gate="G$1" x="129.54" y="76.2" smashed="yes" rot="R270">
 <attribute name="NAME" x="137.16" y="86.36" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="124.46" y="86.36" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="SUPPLY1" gate="G$1" x="63.5" y="-20.32" smashed="yes">
-<attribute name="VALUE" x="61.595" y="-17.145" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY2" gate="G$1" x="53.34" y="27.94" smashed="yes">
-<attribute name="VALUE" x="51.435" y="31.115" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY3" gate="G$1" x="63.5" y="38.1" smashed="yes">
-<attribute name="VALUE" x="61.595" y="41.275" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY4" gate="G$1" x="114.3" y="53.34" smashed="yes">
 <attribute name="VALUE" x="112.395" y="56.515" size="1.778" layer="96"/>
@@ -6671,6 +6662,15 @@ Power Barrel Connector Jack 2.10mm ID (0.083"), 5.50mm OD (0.217") Through Hole,
 </instance>
 <instance part="SUPPLY11" gate="G$1" x="-53.34" y="33.02" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-50.8" y="35.56" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="SUPPLY1" gate="P" x="50.8" y="30.48" smashed="yes">
+<attribute name="VALUE" x="48.895" y="33.655" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY2" gate="P" x="63.5" y="38.1" smashed="yes">
+<attribute name="VALUE" x="61.595" y="41.275" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY3" gate="P" x="63.5" y="-20.32" smashed="yes">
+<attribute name="VALUE" x="61.595" y="-17.145" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -6724,34 +6724,6 @@ Power Barrel Connector Jack 2.10mm ID (0.083"), 5.50mm OD (0.217") Through Hole,
 <label x="66.04" y="12.7" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="+5V" class="0">
-<segment>
-<pinref part="KIT1" gate="KIT" pin="VU"/>
-<wire x1="48.26" y1="22.86" x2="53.34" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="SUPPLY2" gate="G$1" pin="+5V"/>
-<wire x1="53.34" y1="22.86" x2="53.34" y2="25.4" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$2" gate="G$1" pin="RESET"/>
-<wire x1="68.58" y1="27.94" x2="63.5" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="SUPPLY3" gate="G$1" pin="+5V"/>
-<wire x1="63.5" y1="27.94" x2="63.5" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="SLEEP"/>
-<wire x1="68.58" y1="22.86" x2="63.5" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="22.86" x2="63.5" y2="27.94" width="0.1524" layer="91"/>
-<junction x="63.5" y="27.94"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="RESET"/>
-<wire x1="68.58" y1="-27.94" x2="63.5" y2="-27.94" width="0.1524" layer="91"/>
-<pinref part="SUPPLY1" gate="G$1" pin="+5V"/>
-<wire x1="63.5" y1="-27.94" x2="63.5" y2="-22.86" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="SLEEP"/>
-<wire x1="68.58" y1="-33.02" x2="63.5" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="-33.02" x2="63.5" y2="-27.94" width="0.1524" layer="91"/>
-<junction x="63.5" y="-27.94"/>
-</segment>
-</net>
 <net name="VBATT" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="VMOT"/>
@@ -6797,6 +6769,98 @@ Power Barrel Connector Jack 2.10mm ID (0.083"), 5.50mm OD (0.217") Through Hole,
 <wire x1="-48.26" y1="25.4" x2="-53.34" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="SUPPLY11" gate="G$1" pin="GND"/>
 <wire x1="-53.34" y1="25.4" x2="-53.34" y2="30.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="B2"/>
+<wire x1="109.22" y1="38.1" x2="134.62" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="134.62" y1="38.1" x2="134.62" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="B1"/>
+<wire x1="109.22" y1="33.02" x2="137.16" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="137.16" y1="33.02" x2="137.16" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="A1"/>
+<pinref part="J1" gate="G$1" pin="3"/>
+<wire x1="109.22" y1="27.94" x2="139.7" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="27.94" x2="139.7" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="A2"/>
+<wire x1="109.22" y1="22.86" x2="142.24" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="4"/>
+<wire x1="142.24" y1="22.86" x2="142.24" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="B2"/>
+<pinref part="J2" gate="G$1" pin="1"/>
+<wire x1="109.22" y1="-17.78" x2="134.62" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="-17.78" x2="134.62" y2="-12.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="B1"/>
+<pinref part="J2" gate="G$1" pin="2"/>
+<wire x1="109.22" y1="-22.86" x2="137.16" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="-22.86" x2="137.16" y2="-12.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="A1"/>
+<pinref part="J2" gate="G$1" pin="3"/>
+<wire x1="109.22" y1="-27.94" x2="139.7" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="-27.94" x2="139.7" y2="-12.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="A2"/>
+<pinref part="J2" gate="G$1" pin="4"/>
+<wire x1="109.22" y1="-33.02" x2="142.24" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="-33.02" x2="142.24" y2="-12.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+3.3V" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="!RESET!"/>
+<wire x1="68.58" y1="27.94" x2="63.5" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="27.94" x2="63.5" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="!SLEEP!"/>
+<wire x1="68.58" y1="22.86" x2="63.5" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="22.86" x2="63.5" y2="27.94" width="0.1524" layer="91"/>
+<junction x="63.5" y="27.94"/>
+<pinref part="SUPPLY2" gate="P" pin="+3.3V"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="!RESET!"/>
+<wire x1="68.58" y1="-27.94" x2="63.5" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="-27.94" x2="63.5" y2="-22.86" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="!SLEEP!"/>
+<wire x1="68.58" y1="-33.02" x2="63.5" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="-33.02" x2="63.5" y2="-27.94" width="0.1524" layer="91"/>
+<junction x="63.5" y="-27.94"/>
+<pinref part="SUPPLY3" gate="P" pin="+3.3V"/>
+</segment>
+<segment>
+<pinref part="KIT1" gate="KIT" pin="VO"/>
+<wire x1="48.26" y1="25.4" x2="50.8" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="SUPPLY1" gate="P" pin="+3.3V"/>
+<wire x1="50.8" y1="25.4" x2="50.8" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
