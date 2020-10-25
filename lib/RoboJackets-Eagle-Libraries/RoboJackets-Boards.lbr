@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -982,6 +982,28 @@ FRONT</text>
 <text x="0" y="0" size="1.778" layer="21" font="vector" ratio="15" rot="SR0" align="center">TMC6200 BreakOut Board</text>
 <text x="0" y="10.16" size="1.778" layer="21" font="vector" ratio="15" rot="SR0" align="bottom-center">^   ^
 FRONT</text>
+</package>
+<package name="DRV8825">
+<wire x1="-7.62" y1="10.16" x2="7.62" y2="10.16" width="0.127" layer="21"/>
+<wire x1="7.62" y1="10.16" x2="7.62" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-10.16" x2="-7.62" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-10.16" x2="-7.62" y2="10.16" width="0.127" layer="21"/>
+<pad name="1" x="-6.35" y="8.89" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="2" x="-6.35" y="6.35" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="3" x="-6.35" y="3.81" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="4" x="-6.35" y="1.27" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="5" x="-6.35" y="-1.27" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="6" x="-6.35" y="-3.81" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="7" x="-6.35" y="-6.35" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="8" x="-6.35" y="-8.89" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="9" x="6.35" y="8.89" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="10" x="6.35" y="6.35" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="11" x="6.35" y="3.81" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="12" x="6.35" y="1.27" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="13" x="6.35" y="-1.27" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="14" x="6.35" y="-3.81" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="15" x="6.35" y="-6.35" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="16" x="6.35" y="-8.89" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
 </package>
 </packages>
 <symbols>
@@ -7556,6 +7578,27 @@ FRONT</text>
 <pin name="CURV" x="-2.54" y="25.4" length="middle" rot="R270"/>
 <pin name="CURW" x="-5.08" y="25.4" length="middle" rot="R270"/>
 </symbol>
+<symbol name="DRV8825">
+<pin name="M2" x="-20.32" y="2.54" length="middle" direction="pas"/>
+<pin name="M1" x="-20.32" y="7.62" length="middle" direction="pas"/>
+<pin name="M0" x="-20.32" y="12.7" length="middle" direction="pas"/>
+<pin name="!ENABLE!" x="-20.32" y="17.78" length="middle" direction="pas"/>
+<pin name="!RESET!" x="-20.32" y="-2.54" length="middle" direction="pas"/>
+<pin name="!SLEEP!" x="-20.32" y="-7.62" length="middle" direction="pas"/>
+<pin name="STEP" x="-20.32" y="-12.7" length="middle" direction="pas"/>
+<pin name="B1" x="20.32" y="2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="B2" x="20.32" y="7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="GND" x="20.32" y="12.7" length="middle" direction="pas" rot="R180"/>
+<pin name="VMOT" x="20.32" y="17.78" length="middle" direction="pas" rot="R180"/>
+<pin name="A1" x="20.32" y="-2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="A2" x="20.32" y="-7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="!FAULT!" x="20.32" y="-12.7" length="middle" direction="pas" rot="R180"/>
+<pin name="DIR" x="-20.32" y="-17.78" length="middle" direction="pas"/>
+<wire x1="-15.24" y1="20.32" x2="-15.24" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-20.32" x2="15.24" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-20.32" x2="15.24" y2="20.32" width="0.254" layer="94"/>
+<wire x1="15.24" y1="20.32" x2="-15.24" y2="20.32" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MBED_NXP_LPC1768" prefix="KIT">
@@ -7995,6 +8038,35 @@ FRONT</text>
 <connect gate="G$1" pin="VCCIO" pad="1"/>
 <connect gate="G$1" pin="VM" pad="15 16"/>
 <connect gate="G$1" pin="W" pad="25 26 27"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DRV8825">
+<gates>
+<gate name="G$1" symbol="DRV8825" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DRV8825">
+<connects>
+<connect gate="G$1" pin="!ENABLE!" pad="1"/>
+<connect gate="G$1" pin="!FAULT!" pad="15"/>
+<connect gate="G$1" pin="!RESET!" pad="5"/>
+<connect gate="G$1" pin="!SLEEP!" pad="6"/>
+<connect gate="G$1" pin="A1" pad="13"/>
+<connect gate="G$1" pin="A2" pad="14"/>
+<connect gate="G$1" pin="B1" pad="12"/>
+<connect gate="G$1" pin="B2" pad="11"/>
+<connect gate="G$1" pin="DIR" pad="8"/>
+<connect gate="G$1" pin="GND" pad="10 16"/>
+<connect gate="G$1" pin="M0" pad="2"/>
+<connect gate="G$1" pin="M1" pad="3"/>
+<connect gate="G$1" pin="M2" pad="4"/>
+<connect gate="G$1" pin="STEP" pad="7"/>
+<connect gate="G$1" pin="VMOT" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
