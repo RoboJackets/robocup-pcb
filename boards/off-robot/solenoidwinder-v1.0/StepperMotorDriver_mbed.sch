@@ -6699,6 +6699,67 @@ In this library you will find resistors. If you are looking for a common package
 </deviceset>
 </devicesets>
 </library>
+<library name="RoboJackets-Capacitors">
+<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
+&lt;hr&gt;
+&lt;h1&gt;RoboJackets EAGLE Libraries - Capacitors&lt;/h1&gt;&lt;/br&gt;
+&lt;p&gt;
+In this library you will find uncommon capacitors. If you are looking for a common package, use the default &lt;b&gt;rcl &lt;/b&gt;library provided with EAGLE instead of looking here.
+&lt;/p&gt;</description>
+<packages>
+<package name="PCAP_8X112">
+<description>https://www.digikey.com/product-detail/en/panasonic-electronic-components/ECA-0JM102/P5115-ND/244974</description>
+<pad name="1" x="-1.7052" y="-0.1" drill="0.9652" diameter="1.524" shape="square"/>
+<pad name="2" x="1.8" y="-0.1" drill="0.9652" diameter="1.524" rot="R180"/>
+<wire x1="-5.4644" y1="-0.1" x2="-4.1944" y2="-0.1" width="0.1524" layer="21"/>
+<wire x1="-4.8548" y1="0.535" x2="-4.8548" y2="-0.735" width="0.1524" layer="21"/>
+<wire x1="4.1876" y1="-0.1" x2="-4.0928" y2="-0.1" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-4.0928" y1="-0.1" x2="4.1876" y2="-0.1" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-5.4644" y1="-0.1" x2="-4.1944" y2="-0.1" width="0.1524" layer="51"/>
+<wire x1="-4.8548" y1="0.535" x2="-4.8548" y2="-0.735" width="0.1524" layer="51"/>
+<wire x1="4.0352" y1="-0.1" x2="-3.9404" y2="-0.1" width="0" layer="51" curve="-180"/>
+<wire x1="-3.9404" y1="-0.1" x2="4.0352" y2="-0.1" width="0" layer="51" curve="-180"/>
+<text x="-3.2292" y="4.345" size="1" layer="25" font="vector" ratio="6" rot="SR0">&gt;NAME</text>
+<text x="-3.302" y="-4.572" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="CAP_POL">
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.016" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1" x2="2.4892" y2="-1.8542" width="0.254" layer="94" curve="-37.878202"/>
+<wire x1="-2.4669" y1="-1.8504" x2="0" y2="-1.0161" width="0.254" layer="94" curve="-37.376341"/>
+<text x="1.016" y="1.397" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.016" y="-2.54" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
+<rectangle x1="-2.253" y1="0.668" x2="-1.364" y2="0.795" layer="94"/>
+<rectangle x1="-1.872" y1="0.287" x2="-1.745" y2="1.176" layer="94"/>
+<pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ECA-0JM102" prefix="C">
+<description>https://www.digikey.com/product-detail/en/panasonic-electronic-components/ECA-0JM102/P5115-ND/244974</description>
+<gates>
+<gate name="G$1" symbol="CAP_POL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PCAP_8X112">
+<connects>
+<connect gate="G$1" pin="+" pad="1"/>
+<connect gate="G$1" pin="-" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER_PART_NUMBER" value="ECA0JM102" constant="no"/>
+<attribute name="VENDOR" value="Panasonic" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6731,6 +6792,7 @@ In this library you will find resistors. If you are looking for a common package
 <part name="SUPPLY13" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="SUPPLY14" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="SUPPLY15" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
+<part name="C1" library="RoboJackets-Capacitors" deviceset="ECA-0JM102" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6750,9 +6812,9 @@ In this library you will find resistors. If you are looking for a common package
 <attribute name="NAME" x="161.925" y="-16.51" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="177.8" y="-16.51" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="J3" gate="G$1" x="160.02" y="76.2" smashed="yes" rot="R270">
-<attribute name="NAME" x="167.64" y="86.36" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="154.94" y="86.36" size="1.778" layer="96" rot="R270"/>
+<instance part="J3" gate="G$1" x="160.02" y="104.14" smashed="yes" rot="R270">
+<attribute name="NAME" x="167.64" y="114.3" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="154.94" y="114.3" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="SUPPLY4" gate="G$1" x="144.78" y="53.34" smashed="yes">
 <attribute name="VALUE" x="142.875" y="56.515" size="1.778" layer="96"/>
@@ -6802,6 +6864,10 @@ In this library you will find resistors. If you are looking for a common package
 </instance>
 <instance part="SUPPLY15" gate="P" x="81.28" y="58.42" smashed="yes" rot="R270">
 <attribute name="VALUE" x="84.455" y="60.325" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="C1" gate="G$1" x="162.56" y="83.82" smashed="yes" rot="R270">
+<attribute name="NAME" x="163.957" y="82.804" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="160.02" y="82.804" size="1.778" layer="96" rot="R270" align="top-left"/>
 </instance>
 </instances>
 <busses>
@@ -6871,7 +6937,10 @@ In this library you will find resistors. If you are looking for a common package
 <segment>
 <pinref part="J3" gate="G$1" pin="1"/>
 <pinref part="SUPPLY9" gate="G$1" pin="VBATT"/>
-<wire x1="165.1" y1="66.04" x2="165.1" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="93.98" x2="165.1" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="+"/>
+<wire x1="165.1" y1="83.82" x2="165.1" y2="60.96" width="0.1524" layer="91"/>
+<junction x="165.1" y="83.82"/>
 </segment>
 <segment>
 <pinref part="KIT1" gate="KIT" pin="VIN"/>
@@ -6888,7 +6957,10 @@ In this library you will find resistors. If you are looking for a common package
 <segment>
 <pinref part="J3" gate="G$1" pin="2"/>
 <pinref part="SUPPLY8" gate="G$1" pin="GND"/>
-<wire x1="157.48" y1="66.04" x2="157.48" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="93.98" x2="157.48" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="-"/>
+<wire x1="157.48" y1="83.82" x2="157.48" y2="63.5" width="0.1524" layer="91"/>
+<junction x="157.48" y="83.82"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="GND"/>
