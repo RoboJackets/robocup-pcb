@@ -8161,12 +8161,50 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <text x="-1.905" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="+3.3V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
+<symbol name="GND">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="+5V">
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="0.635" x2="0" y2="1.905" width="0.1524" layer="94"/>
+<circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
+<text x="-1.905" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="+3.3V" prefix="SUPPLY">
 <description>+3.3V Supply Symbol</description>
 <gates>
 <gate name="P" symbol="+3.3V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GND" prefix="SUPPLY">
+<description>Ground Symbol</description>
+<gates>
+<gate name="G$1" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+5V" prefix="SUPPLY">
+<description>+5V Supply Symbol</description>
+<gates>
+<gate name="G$1" symbol="+5V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -8426,14 +8464,14 @@ In this library you will find all the connectors used on any of our boards.
 <part name="U3" library="robotshellid" deviceset="TCS34725FN" device=""/>
 <part name="U4" library="robotshellid" deviceset="TCS34725FN" device=""/>
 <part name="U5" library="robotshellid" deviceset="TCS34725FN" device=""/>
-<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3"/>
-<part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3"/>
-<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3"/>
-<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3"/>
-<part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3"/>
-<part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3"/>
-<part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3"/>
-<part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3"/>
+<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.7K"/>
+<part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.7K"/>
+<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.7K"/>
+<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.7K"/>
+<part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.7K"/>
+<part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.7K"/>
+<part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.7K"/>
+<part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.7K"/>
 <part name="SUPPLY1" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="SUPPLY2" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="SUPPLY3" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
@@ -8442,11 +8480,27 @@ In this library you will find all the connectors used on any of our boards.
 <part name="SUPPLY6" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="SUPPLY7" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="SUPPLY8" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
-<part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3"/>
+<part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.7K"/>
 <part name="SUPPLY9" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
-<part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3"/>
+<part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.7K"/>
 <part name="SUPPLY10" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="JP1" library="RoboJackets-Connectors" deviceset="PINHD-1X8" device="" package3d_urn="urn:adsk.eagle:package:22409/2"/>
+<part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.7K"/>
+<part name="SUPPLY11" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
+<part name="SUPPLY12" library="RoboJackets-Supplies" deviceset="GND" device=""/>
+<part name="SUPPLY13" library="RoboJackets-Supplies" deviceset="GND" device=""/>
+<part name="SUPPLY14" library="RoboJackets-Supplies" deviceset="GND" device=""/>
+<part name="SUPPLY15" library="RoboJackets-Supplies" deviceset="GND" device=""/>
+<part name="SUPPLY16" library="RoboJackets-Supplies" deviceset="GND" device=""/>
+<part name="SUPPLY17" library="RoboJackets-Supplies" deviceset="GND" device=""/>
+<part name="SUPPLY18" library="RoboJackets-Supplies" deviceset="+5V" device=""/>
+<part name="SUPPLY19" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
+<part name="SUPPLY20" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
+<part name="SUPPLY21" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
+<part name="SUPPLY22" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
+<part name="SUPPLY23" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
+<part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.7K"/>
+<part name="SUPPLY24" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8555,6 +8609,56 @@ In this library you will find all the connectors used on any of our boards.
 <instance part="JP1" gate="A" x="7.62" y="187.96" smashed="yes" rot="R180">
 <attribute name="NAME" x="13.97" y="174.625" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="13.97" y="200.66" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R11" gate="G$1" x="53.34" y="167.64" smashed="yes" rot="R90">
+<attribute name="NAME" x="51.8414" y="163.83" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="56.642" y="163.83" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="SUPPLY11" gate="P" x="53.34" y="175.26" smashed="yes">
+<attribute name="VALUE" x="48.895" y="178.435" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY12" gate="G$1" x="17.78" y="175.26" smashed="yes">
+<attribute name="VALUE" x="15.24" y="172.72" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY13" gate="G$1" x="101.6" y="114.3" smashed="yes">
+<attribute name="VALUE" x="99.06" y="111.76" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY14" gate="G$1" x="172.72" y="165.1" smashed="yes">
+<attribute name="VALUE" x="170.18" y="162.56" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY15" gate="G$1" x="172.72" y="139.7" smashed="yes">
+<attribute name="VALUE" x="170.18" y="137.16" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY16" gate="G$1" x="172.72" y="114.3" smashed="yes">
+<attribute name="VALUE" x="170.18" y="111.76" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY17" gate="G$1" x="172.72" y="88.9" smashed="yes">
+<attribute name="VALUE" x="170.18" y="86.36" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY18" gate="G$1" x="17.78" y="198.12" smashed="yes">
+<attribute name="VALUE" x="15.875" y="201.295" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY19" gate="P" x="96.52" y="170.18" smashed="yes">
+<attribute name="VALUE" x="94.615" y="173.355" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY20" gate="P" x="167.64" y="185.42" smashed="yes">
+<attribute name="VALUE" x="165.735" y="188.595" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY21" gate="P" x="167.64" y="160.02" smashed="yes">
+<attribute name="VALUE" x="165.735" y="163.195" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY22" gate="P" x="167.64" y="134.62" smashed="yes">
+<attribute name="VALUE" x="165.735" y="137.795" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY23" gate="P" x="167.64" y="109.22" smashed="yes">
+<attribute name="VALUE" x="165.735" y="112.395" size="1.778" layer="96"/>
+</instance>
+<instance part="R12" gate="G$1" x="20.32" y="160.02" smashed="yes" rot="R90">
+<attribute name="NAME" x="18.8214" y="156.21" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="23.622" y="156.21" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="SUPPLY24" gate="P" x="20.32" y="167.64" smashed="yes">
+<attribute name="VALUE" x="15.875" y="170.815" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -8721,6 +8825,34 @@ In this library you will find all the connectors used on any of our boards.
 <pinref part="R10" gate="G$1" pin="2"/>
 <pinref part="SUPPLY10" gate="P" pin="+3.3V"/>
 </segment>
+<segment>
+<pinref part="R11" gate="G$1" pin="2"/>
+<pinref part="SUPPLY11" gate="P" pin="+3.3V"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="VCC"/>
+<pinref part="SUPPLY19" gate="P" pin="+3.3V"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="VDD"/>
+<pinref part="SUPPLY20" gate="P" pin="+3.3V"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="VDD"/>
+<pinref part="SUPPLY21" gate="P" pin="+3.3V"/>
+</segment>
+<segment>
+<pinref part="U5" gate="G$1" pin="VDD"/>
+<pinref part="SUPPLY22" gate="P" pin="+3.3V"/>
+</segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="VDD"/>
+<pinref part="SUPPLY23" gate="P" pin="+3.3V"/>
+</segment>
+<segment>
+<pinref part="R12" gate="G$1" pin="2"/>
+<pinref part="SUPPLY24" gate="P" pin="+3.3V"/>
+</segment>
 </net>
 <net name="SCL_CONN" class="0">
 <segment>
@@ -8730,6 +8862,11 @@ In this library you will find all the connectors used on any of our boards.
 <pinref part="R10" gate="G$1" pin="1"/>
 <wire x1="27.94" y1="152.4" x2="20.32" y2="152.4" width="0.1524" layer="91"/>
 <junction x="27.94" y="152.4"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="3"/>
+<wire x1="10.16" y1="182.88" x2="17.78" y2="182.88" width="0.1524" layer="91"/>
+<label x="17.78" y="182.88" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SDA_CONN" class="0">
@@ -8741,12 +8878,22 @@ In this library you will find all the connectors used on any of our boards.
 <wire x1="27.94" y1="121.92" x2="20.32" y2="121.92" width="0.1524" layer="91"/>
 <junction x="27.94" y="121.92"/>
 </segment>
+<segment>
+<pinref part="JP1" gate="A" pin="2"/>
+<wire x1="10.16" y1="180.34" x2="17.78" y2="180.34" width="0.1524" layer="91"/>
+<label x="17.78" y="180.34" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="A0" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="A0"/>
 <wire x1="60.96" y1="160.02" x2="45.72" y2="160.02" width="0.1524" layer="91"/>
 <label x="45.72" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="7"/>
+<wire x1="10.16" y1="193.04" x2="17.78" y2="193.04" width="0.1524" layer="91"/>
+<label x="17.78" y="193.04" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="A1" class="0">
@@ -8755,12 +8902,79 @@ In this library you will find all the connectors used on any of our boards.
 <wire x1="60.96" y1="157.48" x2="45.72" y2="157.48" width="0.1524" layer="91"/>
 <label x="45.72" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="JP1" gate="A" pin="6"/>
+<wire x1="10.16" y1="190.5" x2="17.78" y2="190.5" width="0.1524" layer="91"/>
+<label x="17.78" y="190.5" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="A2" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="A2"/>
-<wire x1="60.96" y1="154.94" x2="45.72" y2="154.94" width="0.1524" layer="91"/>
-<label x="45.72" y="154.94" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="60.96" y1="154.94" x2="20.32" y2="154.94" width="0.1524" layer="91"/>
+<label x="12.7" y="154.94" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="R12" gate="G$1" pin="1"/>
+<wire x1="20.32" y1="154.94" x2="12.7" y2="154.94" width="0.1524" layer="91"/>
+<junction x="20.32" y="154.94"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="5"/>
+<wire x1="10.16" y1="187.96" x2="17.78" y2="187.96" width="0.1524" layer="91"/>
+<label x="17.78" y="187.96" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="!RESET" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="!RESET"/>
+<wire x1="60.96" y1="162.56" x2="53.34" y2="162.56" width="0.1524" layer="91"/>
+<label x="45.72" y="162.56" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="R11" gate="G$1" pin="1"/>
+<wire x1="53.34" y1="162.56" x2="45.72" y2="162.56" width="0.1524" layer="91"/>
+<junction x="53.34" y="162.56"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="4"/>
+<wire x1="10.16" y1="185.42" x2="17.78" y2="185.42" width="0.1524" layer="91"/>
+<label x="17.78" y="185.42" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="1"/>
+<wire x1="10.16" y1="177.8" x2="17.78" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="SUPPLY12" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="GND"/>
+<pinref part="SUPPLY13" gate="G$1" pin="GND"/>
+<wire x1="101.6" y1="116.84" x2="96.52" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="GND"/>
+<pinref part="SUPPLY14" gate="G$1" pin="GND"/>
+<wire x1="172.72" y1="167.64" x2="167.64" y2="167.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="GND"/>
+<pinref part="SUPPLY15" gate="G$1" pin="GND"/>
+<wire x1="172.72" y1="142.24" x2="167.64" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U5" gate="G$1" pin="GND"/>
+<pinref part="SUPPLY16" gate="G$1" pin="GND"/>
+<wire x1="172.72" y1="116.84" x2="167.64" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="GND"/>
+<pinref part="SUPPLY17" gate="G$1" pin="GND"/>
+<wire x1="172.72" y1="91.44" x2="167.64" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+5V" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="8"/>
+<wire x1="10.16" y1="195.58" x2="17.78" y2="195.58" width="0.1524" layer="91"/>
+<pinref part="SUPPLY18" gate="G$1" pin="+5V"/>
 </segment>
 </net>
 </nets>
