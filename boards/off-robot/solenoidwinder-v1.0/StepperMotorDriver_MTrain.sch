@@ -1385,6 +1385,67 @@ Power Barrel Connector Jack 2.10mm ID (0.083"), 5.50mm OD (0.217") Through Hole,
 </deviceset>
 </devicesets>
 </library>
+<library name="RoboJackets-Capacitors">
+<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
+&lt;hr&gt;
+&lt;h1&gt;RoboJackets EAGLE Libraries - Capacitors&lt;/h1&gt;&lt;/br&gt;
+&lt;p&gt;
+In this library you will find uncommon capacitors. If you are looking for a common package, use the default &lt;b&gt;rcl &lt;/b&gt;library provided with EAGLE instead of looking here.
+&lt;/p&gt;</description>
+<packages>
+<package name="PCAP_8X112">
+<description>https://www.digikey.com/product-detail/en/panasonic-electronic-components/ECA-0JM102/P5115-ND/244974</description>
+<pad name="1" x="-1.7052" y="-0.1" drill="0.9652" diameter="1.524" shape="square"/>
+<pad name="2" x="1.8" y="-0.1" drill="0.9652" diameter="1.524" rot="R180"/>
+<wire x1="-5.4644" y1="-0.1" x2="-4.1944" y2="-0.1" width="0.1524" layer="21"/>
+<wire x1="-4.8548" y1="0.535" x2="-4.8548" y2="-0.735" width="0.1524" layer="21"/>
+<wire x1="4.1876" y1="-0.1" x2="-4.0928" y2="-0.1" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-4.0928" y1="-0.1" x2="4.1876" y2="-0.1" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-5.4644" y1="-0.1" x2="-4.1944" y2="-0.1" width="0.1524" layer="51"/>
+<wire x1="-4.8548" y1="0.535" x2="-4.8548" y2="-0.735" width="0.1524" layer="51"/>
+<wire x1="4.0352" y1="-0.1" x2="-3.9404" y2="-0.1" width="0" layer="51" curve="-180"/>
+<wire x1="-3.9404" y1="-0.1" x2="4.0352" y2="-0.1" width="0" layer="51" curve="-180"/>
+<text x="-3.2292" y="4.345" size="1" layer="25" font="vector" ratio="6" rot="SR0">&gt;NAME</text>
+<text x="-3.302" y="-4.572" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="CAP_POL">
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.016" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1" x2="2.4892" y2="-1.8542" width="0.254" layer="94" curve="-37.878202"/>
+<wire x1="-2.4669" y1="-1.8504" x2="0" y2="-1.0161" width="0.254" layer="94" curve="-37.376341"/>
+<text x="1.016" y="1.397" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.016" y="-2.54" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
+<rectangle x1="-2.253" y1="0.668" x2="-1.364" y2="0.795" layer="94"/>
+<rectangle x1="-1.872" y1="0.287" x2="-1.745" y2="1.176" layer="94"/>
+<pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ECA-0JM102" prefix="C">
+<description>https://www.digikey.com/product-detail/en/panasonic-electronic-components/ECA-0JM102/P5115-ND/244974</description>
+<gates>
+<gate name="G$1" symbol="CAP_POL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PCAP_8X112">
+<connects>
+<connect gate="G$1" pin="+" pad="1"/>
+<connect gate="G$1" pin="-" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER_PART_NUMBER" value="ECA0JM102" constant="no"/>
+<attribute name="VENDOR" value="Panasonic" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1406,8 +1467,6 @@ Power Barrel Connector Jack 2.10mm ID (0.083"), 5.50mm OD (0.217") Through Hole,
 <part name="SUPPLY5" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="SUPPLY6" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="SUPPLY7" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
-<part name="SUPPLY10" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
-<part name="SUPPLY11" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="SUPPLY12" library="RoboJackets-Supplies" deviceset="GND" device=""/>
 <part name="SUPPLY13" library="RoboJackets-Supplies" deviceset="GND" device=""/>
 <part name="J1" library="RoboJackets-Connectors" deviceset="4PIN-03536?" device="20450"/>
@@ -1417,6 +1476,9 @@ Power Barrel Connector Jack 2.10mm ID (0.083"), 5.50mm OD (0.217") Through Hole,
 <part name="SUPPLY15" library="RoboJackets-Supplies" deviceset="VBATT" device=""/>
 <part name="SUPPLY8" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="SUPPLY9" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
+<part name="C1" library="RoboJackets-Capacitors" deviceset="ECA-0JM102" device=""/>
+<part name="SUPPLY16" library="RoboJackets-Supplies" deviceset="VBATT" device=""/>
+<part name="SUPPLY17" library="RoboJackets-Supplies" deviceset="VBATT" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1454,12 +1516,6 @@ Power Barrel Connector Jack 2.10mm ID (0.083"), 5.50mm OD (0.217") Through Hole,
 <instance part="SUPPLY7" gate="P" x="119.38" y="121.92" smashed="yes" rot="R270">
 <attribute name="VALUE" x="122.555" y="123.825" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="SUPPLY10" gate="P" x="180.34" y="116.84" smashed="yes">
-<attribute name="VALUE" x="178.435" y="120.015" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY11" gate="P" x="180.34" y="48.26" smashed="yes">
-<attribute name="VALUE" x="178.435" y="51.435" size="1.778" layer="96"/>
-</instance>
 <instance part="SUPPLY12" gate="G$1" x="182.88" y="106.68" smashed="yes" rot="R90">
 <attribute name="VALUE" x="185.42" y="104.14" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -1490,6 +1546,16 @@ Power Barrel Connector Jack 2.10mm ID (0.083"), 5.50mm OD (0.217") Through Hole,
 <instance part="SUPPLY9" gate="P" x="121.92" y="22.86" smashed="yes" rot="R90">
 <attribute name="VALUE" x="118.745" y="20.955" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="C1" gate="G$1" x="223.52" y="133.096" smashed="yes" rot="R270">
+<attribute name="NAME" x="224.917" y="132.08" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="220.98" y="132.08" size="1.778" layer="96" rot="R270" align="top-left"/>
+</instance>
+<instance part="SUPPLY16" gate="G$1" x="180.34" y="48.26" smashed="yes">
+<attribute name="VALUE" x="178.435" y="51.435" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY17" gate="G$1" x="180.34" y="116.84" smashed="yes">
+<attribute name="VALUE" x="178.435" y="120.015" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -1503,7 +1569,22 @@ Power Barrel Connector Jack 2.10mm ID (0.083"), 5.50mm OD (0.217") Through Hole,
 <segment>
 <pinref part="J3" gate="G$1" pin="1"/>
 <pinref part="SUPPLY15" gate="G$1" pin="VBATT"/>
-<wire x1="226.06" y1="134.62" x2="226.06" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="134.62" x2="226.06" y2="133.096" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="+"/>
+<wire x1="226.06" y1="133.096" x2="226.06" y2="129.54" width="0.1524" layer="91"/>
+<junction x="226.06" y="133.096"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="VMOT"/>
+<wire x1="175.26" y1="43.18" x2="180.34" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="43.18" x2="180.34" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="SUPPLY16" gate="G$1" pin="VBATT"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="VMOT"/>
+<wire x1="175.26" y1="111.76" x2="180.34" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="111.76" x2="180.34" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="SUPPLY17" gate="G$1" pin="VBATT"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -1526,7 +1607,10 @@ Power Barrel Connector Jack 2.10mm ID (0.083"), 5.50mm OD (0.217") Through Hole,
 <segment>
 <pinref part="J3" gate="G$1" pin="2"/>
 <pinref part="SUPPLY14" gate="G$1" pin="GND"/>
-<wire x1="218.44" y1="134.62" x2="218.44" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="134.62" x2="218.44" y2="133.096" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="-"/>
+<wire x1="218.44" y1="133.096" x2="218.44" y2="132.08" width="0.1524" layer="91"/>
+<junction x="218.44" y="133.096"/>
 </segment>
 </net>
 <net name="+3.3V" class="0">
@@ -1558,18 +1642,6 @@ Power Barrel Connector Jack 2.10mm ID (0.083"), 5.50mm OD (0.217") Through Hole,
 <pinref part="SUPPLY7" gate="P" pin="+3.3V"/>
 <wire x1="114.3" y1="119.38" x2="114.3" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="121.92" x2="116.84" y2="121.92" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$2" gate="G$1" pin="VMOT"/>
-<pinref part="SUPPLY11" gate="P" pin="+3.3V"/>
-<wire x1="175.26" y1="43.18" x2="180.34" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="43.18" x2="180.34" y2="45.72" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="VMOT"/>
-<pinref part="SUPPLY10" gate="P" pin="+3.3V"/>
-<wire x1="175.26" y1="111.76" x2="180.34" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="111.76" x2="180.34" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="!RESET!"/>
