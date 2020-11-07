@@ -1489,8 +1489,8 @@ In this library you will find uncommon capacitors. If you are looking for a comm
 <attribute name="NAME" x="104.902" y="109.22" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="117.856" y="109.22" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SUPPLY4" gate="P" x="101.6" y="121.92" smashed="yes" rot="R90">
-<attribute name="VALUE" x="98.425" y="120.015" size="1.778" layer="96" rot="R90"/>
+<instance part="SUPPLY4" gate="P" x="99.06" y="124.46" smashed="yes">
+<attribute name="VALUE" x="97.155" y="127.635" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY5" gate="P" x="106.68" y="127" smashed="yes">
 <attribute name="VALUE" x="104.775" y="130.175" size="1.778" layer="96"/>
@@ -1498,8 +1498,8 @@ In this library you will find uncommon capacitors. If you are looking for a comm
 <instance part="SUPPLY6" gate="P" x="114.3" y="127" smashed="yes">
 <attribute name="VALUE" x="112.395" y="130.175" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY7" gate="P" x="119.38" y="121.92" smashed="yes" rot="R270">
-<attribute name="VALUE" x="122.555" y="123.825" size="1.778" layer="96" rot="R270"/>
+<instance part="SUPPLY7" gate="P" x="119.38" y="124.46" smashed="yes">
+<attribute name="VALUE" x="117.475" y="127.635" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY12" gate="G$1" x="182.88" y="106.68" smashed="yes" rot="R90">
 <attribute name="VALUE" x="185.42" y="104.14" size="1.778" layer="96" rot="R90"/>
@@ -1507,23 +1507,21 @@ In this library you will find uncommon capacitors. If you are looking for a comm
 <instance part="SUPPLY13" gate="G$1" x="182.88" y="38.1" smashed="yes" rot="R90">
 <attribute name="VALUE" x="185.42" y="35.56" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="J1" gate="G$1" x="200.66" y="111.76" smashed="yes" rot="R90">
-<attribute name="NAME" x="192.405" y="105.41" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="208.28" y="105.41" size="1.778" layer="96" rot="R90"/>
+<instance part="J1" gate="G$1" x="200.66" y="111.76" smashed="yes" rot="MR270">
+<attribute name="NAME" x="192.405" y="118.11" size="1.778" layer="95" rot="MR270"/>
 </instance>
-<instance part="J2" gate="G$1" x="200.66" y="43.18" smashed="yes" rot="R90">
-<attribute name="NAME" x="192.405" y="36.83" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="208.28" y="36.83" size="1.778" layer="96" rot="R90"/>
+<instance part="J2" gate="G$1" x="200.66" y="43.18" smashed="yes" rot="MR270">
+<attribute name="NAME" x="192.405" y="49.53" size="1.778" layer="95" rot="MR270"/>
 </instance>
 <instance part="J3" gate="G$1" x="220.98" y="144.78" smashed="yes" rot="R270">
 <attribute name="NAME" x="228.6" y="154.94" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="215.9" y="154.94" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="SUPPLY14" gate="G$1" x="218.44" y="129.54" smashed="yes">
-<attribute name="VALUE" x="215.9" y="127" size="1.778" layer="96"/>
+<instance part="SUPPLY14" gate="G$1" x="218.44" y="114.3" smashed="yes">
+<attribute name="VALUE" x="215.9" y="111.76" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY15" gate="G$1" x="226.06" y="127" smashed="yes" rot="R180">
-<attribute name="VALUE" x="227.965" y="123.825" size="1.778" layer="96" rot="R180"/>
+<instance part="SUPPLY15" gate="G$1" x="226.06" y="119.38" smashed="yes" rot="R180">
+<attribute name="VALUE" x="227.965" y="116.205" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="SUPPLY8" gate="P" x="121.92" y="91.44" smashed="yes" rot="R90">
 <attribute name="VALUE" x="118.745" y="89.535" size="1.778" layer="96" rot="R90"/>
@@ -1556,7 +1554,7 @@ In this library you will find uncommon capacitors. If you are looking for a comm
 <pinref part="SUPPLY15" gate="G$1" pin="VBATT"/>
 <wire x1="226.06" y1="134.62" x2="226.06" y2="133.096" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="+"/>
-<wire x1="226.06" y1="133.096" x2="226.06" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="133.096" x2="226.06" y2="121.92" width="0.1524" layer="91"/>
 <junction x="226.06" y="133.096"/>
 </segment>
 <segment>
@@ -1594,7 +1592,7 @@ In this library you will find uncommon capacitors. If you are looking for a comm
 <pinref part="SUPPLY14" gate="G$1" pin="GND"/>
 <wire x1="218.44" y1="134.62" x2="218.44" y2="133.096" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="-"/>
-<wire x1="218.44" y1="133.096" x2="218.44" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="133.096" x2="218.44" y2="116.84" width="0.1524" layer="91"/>
 <junction x="218.44" y="133.096"/>
 </segment>
 </net>
@@ -1608,7 +1606,7 @@ In this library you will find uncommon capacitors. If you are looking for a comm
 <pinref part="RN1" gate="G$1" pin="2"/>
 <wire x1="106.68" y1="119.38" x2="106.68" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="SUPPLY4" gate="P" pin="+3.3V"/>
-<wire x1="106.68" y1="121.92" x2="104.14" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="121.92" x2="99.06" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="RN1" gate="G$1" pin="4"/>
@@ -1626,7 +1624,7 @@ In this library you will find uncommon capacitors. If you are looking for a comm
 <pinref part="RN1" gate="G$1" pin="8"/>
 <pinref part="SUPPLY7" gate="P" pin="+3.3V"/>
 <wire x1="114.3" y1="119.38" x2="114.3" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="121.92" x2="116.84" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="121.92" x2="119.38" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="!RESET!"/>
@@ -1685,16 +1683,16 @@ In this library you will find uncommon capacitors. If you are looking for a comm
 <segment>
 <pinref part="U$1" gate="G$1" pin="B2"/>
 <pinref part="J1" gate="G$1" pin="1"/>
-<wire x1="175.26" y1="101.6" x2="195.58" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="101.6" x2="200.66" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="101.6" x2="200.66" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="101.6" x2="200.66" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="B1"/>
 <pinref part="J1" gate="G$1" pin="2"/>
-<wire x1="175.26" y1="96.52" x2="198.12" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="96.52" x2="203.2" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="96.52" x2="203.2" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="96.52" x2="203.2" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -1702,7 +1700,8 @@ In this library you will find uncommon capacitors. If you are looking for a comm
 <pinref part="U$1" gate="G$1" pin="A1"/>
 <pinref part="J1" gate="G$1" pin="3"/>
 <wire x1="175.26" y1="91.44" x2="200.66" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="91.44" x2="205.74" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="91.44" x2="205.74" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="91.44" x2="205.74" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -1710,7 +1709,8 @@ In this library you will find uncommon capacitors. If you are looking for a comm
 <pinref part="U$1" gate="G$1" pin="A2"/>
 <pinref part="J1" gate="G$1" pin="4"/>
 <wire x1="175.26" y1="86.36" x2="203.2" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="86.36" x2="208.28" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="86.36" x2="208.28" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="86.36" x2="208.28" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -1718,7 +1718,8 @@ In this library you will find uncommon capacitors. If you are looking for a comm
 <pinref part="U$2" gate="G$1" pin="B2"/>
 <pinref part="J2" gate="G$1" pin="1"/>
 <wire x1="175.26" y1="33.02" x2="195.58" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="33.02" x2="200.66" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="33.02" x2="200.66" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="33.02" x2="200.66" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -1726,7 +1727,8 @@ In this library you will find uncommon capacitors. If you are looking for a comm
 <pinref part="U$2" gate="G$1" pin="B1"/>
 <pinref part="J2" gate="G$1" pin="2"/>
 <wire x1="175.26" y1="27.94" x2="198.12" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="27.94" x2="203.2" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="27.94" x2="203.2" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="27.94" x2="203.2" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -1734,7 +1736,8 @@ In this library you will find uncommon capacitors. If you are looking for a comm
 <pinref part="U$2" gate="G$1" pin="A1"/>
 <pinref part="J2" gate="G$1" pin="3"/>
 <wire x1="175.26" y1="22.86" x2="200.66" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="22.86" x2="205.74" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="22.86" x2="205.74" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="22.86" x2="205.74" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -1742,7 +1745,8 @@ In this library you will find uncommon capacitors. If you are looking for a comm
 <pinref part="U$2" gate="G$1" pin="A2"/>
 <pinref part="J2" gate="G$1" pin="4"/>
 <wire x1="175.26" y1="17.78" x2="203.2" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="17.78" x2="208.28" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="17.78" x2="208.28" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="17.78" x2="208.28" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="STEP1" class="0">
