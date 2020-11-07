@@ -23,7 +23,7 @@
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -191,6 +191,15 @@
 <wire x1="91" y1="88" x2="3" y2="88" width="0.5" layer="20"/>
 <wire x1="3" y1="88" x2="-4" y2="81" width="0.5" layer="20"/>
 <wire x1="-4" y1="81" x2="-4" y2="11" width="0.5" layer="20"/>
+<text x="0" y="26.67" size="2" layer="21" font="vector" ratio="15">mTrain-Swinder v1.0
+Fall 2020</text>
+<polygon width="0.1524" layer="21">
+<vertex x="0" y="24.13"/>
+<vertex x="10.16" y="24.13"/>
+<vertex x="10.16" y="13.97"/>
+<vertex x="0" y="13.97"/>
+</polygon>
+<text x="11.43" y="13.97" size="2" layer="21" font="vector" ratio="15">ID</text>
 </plain>
 <libraries>
 <library name="RoboJackets-Capacitors">
@@ -358,6 +367,7 @@ In this library you will find resistors. If you are looking for a common package
 <pad name="14" x="6.35" y="-3.81" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
 <pad name="15" x="6.35" y="-6.35" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
 <pad name="16" x="6.35" y="-8.89" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<circle x="-4.572" y="8.89" radius="0.457903125" width="0.0508" layer="21"/>
 </package>
 </packages>
 </library>
@@ -4406,7 +4416,7 @@ design rules under a new name.</description>
 <element name="U$1" library="StepperMotorDriver" package="DRV8825" value="DRV8825" x="80.91" y="61.96" smashed="yes"/>
 <element name="U$2" library="StepperMotorDriver" package="DRV8825" value="DRV8825" x="42.01" y="60.96" smashed="yes" rot="R180"/>
 <element name="U$3" library="RoboJackets-Aesthetics" package="ROBOJACKETS" value="" x="59" y="14" smashed="yes"/>
-<element name="U$5" library="RoboJackets-Aesthetics" package="ROBOBUZZ_1.4X" value="" x="16.51" y="21.59" smashed="yes"/>
+<element name="U$5" library="RoboJackets-Aesthetics" package="ROBOBUZZ_1.4X" value="" x="6.604" y="34.925" smashed="yes"/>
 </elements>
 <signals>
 <signal name="VBUS">

@@ -23,7 +23,7 @@
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -190,6 +190,15 @@
 <wire x1="70.8" y1="80" x2="75.8" y2="75" width="0.3" layer="20"/>
 <wire x1="75.8" y1="75" x2="75.8" y2="-2" width="0.3" layer="20"/>
 <wire x1="4" y1="-2" x2="75.8" y2="-2" width="0.3" layer="20"/>
+<text x="6.35" y="24.13" size="1.27" layer="21" font="vector" ratio="15" rot="R270">mbed-Swinder v1.0
+Fall 2020</text>
+<polygon width="0.1524" layer="21">
+<vertex x="6.35" y="6.35"/>
+<vertex x="13.97" y="6.35"/>
+<vertex x="13.97" y="0"/>
+<vertex x="6.35" y="0"/>
+</polygon>
+<text x="14.097" y="7.112" size="1.27" layer="21" font="vector" ratio="15" rot="R90">ID</text>
 </plain>
 <libraries>
 <library name="RoboJackets-Capacitors">
@@ -605,6 +614,7 @@ In this library you will find resistors. If you are looking for a common package
 <pad name="14" x="6.35" y="-3.81" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
 <pad name="15" x="6.35" y="-6.35" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
 <pad name="16" x="6.35" y="-8.89" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<circle x="-4.572" y="8.89" radius="0.457903125" width="0.0508" layer="21"/>
 </package>
 </packages>
 </library>
@@ -4917,4 +4927,10 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 </mfgpreviewcolors>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>

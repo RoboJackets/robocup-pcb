@@ -1043,6 +1043,7 @@ FRONT</text>
 <pad name="14" x="6.35" y="-3.81" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
 <pad name="15" x="6.35" y="-6.35" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
 <pad name="16" x="6.35" y="-8.89" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<circle x="-4.572" y="8.89" radius="0.457903125" width="0.0508" layer="21"/>
 </package>
 </packages>
 <symbols>
