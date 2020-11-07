@@ -6853,8 +6853,8 @@ In this library you will find uncommon capacitors. If you are looking for a comm
 <attribute name="NAME" x="66.802" y="45.72" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="79.756" y="45.72" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SUPPLY12" gate="P" x="63.5" y="58.42" smashed="yes" rot="R90">
-<attribute name="VALUE" x="60.325" y="56.515" size="1.778" layer="96" rot="R90"/>
+<instance part="SUPPLY12" gate="P" x="63.5" y="60.96" smashed="yes">
+<attribute name="VALUE" x="61.595" y="64.135" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY13" gate="P" x="68.58" y="66.04" smashed="yes">
 <attribute name="VALUE" x="66.675" y="69.215" size="1.778" layer="96"/>
@@ -6862,8 +6862,8 @@ In this library you will find uncommon capacitors. If you are looking for a comm
 <instance part="SUPPLY14" gate="P" x="76.2" y="66.04" smashed="yes">
 <attribute name="VALUE" x="74.295" y="69.215" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY15" gate="P" x="81.28" y="58.42" smashed="yes" rot="R270">
-<attribute name="VALUE" x="84.455" y="60.325" size="1.778" layer="96" rot="R270"/>
+<instance part="SUPPLY15" gate="P" x="81.28" y="60.96" smashed="yes">
+<attribute name="VALUE" x="79.375" y="64.135" size="1.778" layer="96"/>
 </instance>
 <instance part="C1" gate="G$1" x="162.56" y="83.82" smashed="yes" rot="R270">
 <attribute name="NAME" x="163.957" y="82.804" size="1.778" layer="95" rot="R270"/>
@@ -7069,7 +7069,7 @@ In this library you will find uncommon capacitors. If you are looking for a comm
 <pinref part="RN1" gate="G$1" pin="2"/>
 <wire x1="68.58" y1="55.88" x2="68.58" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="SUPPLY12" gate="P" pin="+3.3V"/>
-<wire x1="68.58" y1="58.42" x2="66.04" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="58.42" x2="63.5" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="RN1" gate="G$1" pin="4"/>
@@ -7087,7 +7087,7 @@ In this library you will find uncommon capacitors. If you are looking for a comm
 <pinref part="RN1" gate="G$1" pin="8"/>
 <pinref part="SUPPLY15" gate="P" pin="+3.3V"/>
 <wire x1="76.2" y1="55.88" x2="76.2" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="58.42" x2="78.74" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="58.42" x2="81.28" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
