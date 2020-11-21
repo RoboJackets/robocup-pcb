@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -208,6 +208,10 @@ R5-R6-R7-R8</text>
 1/4: R10-R13   1/32: ALL
 1/8: R9-R10-R12-R13
 </text>
+<hole x="7" y="7" drill="3.4"/>
+<hole x="7" y="103" drill="3.4"/>
+<hole x="116" y="103" drill="3.4"/>
+<hole x="116" y="7" drill="3.4"/>
 </plain>
 <libraries>
 <library name="RoboJackets-Capacitors">
@@ -235,37 +239,6 @@ In this library you will find uncommon capacitors. If you are looking for a comm
 </package>
 </packages>
 </library>
-<library name="RoboJackets-LEDs">
-<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
-&lt;hr&gt;
-&lt;h1&gt;RoboJackets EAGLE Libraries - LEDs&lt;/h1&gt;&lt;/br&gt;
-&lt;p&gt;
-In this library you will find LEDs and other visual output devices.
-&lt;/p&gt;</description>
-<packages>
-<package name="LED-1206">
-<description>&lt;h3&gt;LED 1206 SMT&lt;/h3&gt;
-
-1206, surface mount. 
-
-&lt;p&gt;Specifications:
-&lt;ul&gt;&lt;li&gt;Pin count: 2&lt;/li&gt;
-&lt;li&gt;Pin pitch: &lt;/li&gt;
-&lt;li&gt;Area: 0.125" x 0.06"&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;LED&lt;/li&gt;&lt;/ul&gt;</description>
-<wire x1="2.4" y1="0.6825" x2="2.4" y2="-0.6825" width="0.2032" layer="21"/>
-<wire x1="0.65375" y1="0.6825" x2="0.65375" y2="-0.6825" width="0.2032" layer="51"/>
-<wire x1="0.635" y1="0" x2="0.15875" y2="0.47625" width="0.2032" layer="51"/>
-<wire x1="0.635" y1="0" x2="0.15875" y2="-0.47625" width="0.2032" layer="51"/>
-<smd name="A" x="-1.5" y="0" dx="1.2" dy="1.4" layer="1"/>
-<smd name="C" x="1.5" y="0" dx="1.2" dy="1.4" layer="1"/>
-<text x="0" y="0.9525" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-0.9525" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-</package>
-</packages>
-</library>
 <library name="StepperMotorDriver">
 <packages>
 <package name="DRV8825">
@@ -290,8 +263,8 @@ In this library you will find LEDs and other visual output devices.
 <pad name="15" x="6.35" y="-6.35" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
 <pad name="16" x="6.35" y="-8.89" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
 <circle x="-4.445" y="8.89" radius="0.567959375" width="0" layer="21"/>
-<text x="-7.62" y="10.541" size="1.27" layer="25">DRV8825</text>
-<text x="-7.62" y="-11.938" size="1.27" layer="27">DV$</text>
+<text x="-7.62" y="10.541" size="1.27" layer="25">&gt;NAME</text>
+<text x="-7.62" y="-11.938" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 </library>
@@ -4474,6 +4447,31 @@ In this library you will find logos and images specific to RoboJackets. The part
 </package>
 </packages>
 </library>
+<library name="RoboJackets-LEDs">
+<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
+&lt;hr&gt;
+&lt;h1&gt;RoboJackets EAGLE Libraries - LEDs&lt;/h1&gt;&lt;/br&gt;
+&lt;p&gt;
+In this library you will find LEDs and other visual output devices.
+&lt;/p&gt;</description>
+<packages>
+<package name="CHIP-LED0603">
+<wire x1="-0.4" y1="0.45" x2="-0.4" y2="-0.45" width="0.1016" layer="51"/>
+<wire x1="0.4" y1="0.45" x2="0.4" y2="-0.45" width="0.1016" layer="51"/>
+<smd name="C" x="0" y="0.75" dx="0.8" dy="0.8" layer="1"/>
+<smd name="A" x="0" y="-0.75" dx="0.8" dy="0.8" layer="1"/>
+<text x="-0.635" y="-0.635" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="1.905" y="-0.635" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-0.45" y1="0.45" x2="0.45" y2="0.85" layer="51"/>
+<rectangle x1="-0.45" y1="-0.85" x2="0.45" y2="-0.45" layer="51"/>
+<polygon width="0.1" layer="21">
+<vertex x="-0.3" y="-0.2"/>
+<vertex x="0" y="0.2"/>
+<vertex x="0.3" y="-0.2"/>
+</polygon>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4673,23 +4671,14 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="11.856" y="64.842" size="1" layer="27" font="vector" rot="R180" align="top-left"/>
 <attribute name="VENDOR" value="Panasonic" x="-48.446" y="124.94" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="D1" library="RoboJackets-LEDs" package="LED-1206" value="GREEN" x="92.27" y="63.98" smashed="yes">
-<attribute name="NAME" x="92.27" y="64.9325" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
-<attribute name="PROD_ID" value="DIO-09911" x="132.91" y="-17.3" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="92.27" y="63.0275" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+<element name="DV1" library="StepperMotorDriver" package="DRV8825" value="DRV8825" x="46.55" y="83.03" smashed="yes">
+<attribute name="NAME" x="38.93" y="93.571" size="1.27" layer="25"/>
+<attribute name="VALUE" x="55.908" y="80.93" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="D2" library="RoboJackets-LEDs" package="LED-1206" value="GREEN" x="16.705" y="43.66" smashed="yes" rot="R270">
-<attribute name="NAME" x="17.6575" y="43.66" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
-<attribute name="PROD_ID" value="DIO-00862" x="-64.575" y="-2.06" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="15.7525" y="43.66" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
+<element name="DV2" library="StepperMotorDriver" package="DRV8825" value="DRV8825" x="91" y="83.03" smashed="yes">
+<attribute name="NAME" x="83.38" y="93.571" size="1.27" layer="25"/>
+<attribute name="VALUE" x="100.308" y="80.48" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="D3" library="RoboJackets-LEDs" package="LED-1206" value="RED" x="108.78" y="76.68" smashed="yes" rot="R180">
-<attribute name="NAME" x="108.78" y="75.7275" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
-<attribute name="PROD_ID" value="DIO-00862" x="57.98" y="157.96" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="108.78" y="77.6325" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
-</element>
-<element name="DV1" library="StepperMotorDriver" package="DRV8825" value="DRV8825" x="46.55" y="83.03" smashed="yes"/>
-<element name="DV2" library="StepperMotorDriver" package="DRV8825" value="DRV8825" x="91" y="83.03" smashed="yes"/>
 <element name="F1" library="RoboJackets-Fuses" package="F1206" value="4 A" x="18.102" y="72.997" smashed="yes" rot="R180">
 <attribute name="NAME" x="21.424" y="71.497" size="1" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="16.824" y="74.697" size="1" layer="27" font="vector" rot="R180" align="top-left"/>
@@ -4763,16 +4752,35 @@ design rules under a new name.</description>
 <element name="R9" library="RoboJackets-Resistors" package="R0603W" value="" x="31.31" y="89.38" smashed="yes">
 <attribute name="NAME" x="32.61" y="90.28" size="1" layer="25"/>
 </element>
-<element name="D4" library="RoboJackets-LEDs" package="LED-1206" value="RED" x="61.79" y="76.68" smashed="yes" rot="R180">
-<attribute name="NAME" x="60.49" y="74.4275" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
-<attribute name="PROD_ID" value="DIO-00862" x="61.79" y="76.68" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="61.79" y="77.6325" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
-</element>
 <element name="R18" library="RoboJackets-Resistors" package="R0603W" value="1K" x="69.41" y="76.68" smashed="yes">
 <attribute name="NAME" x="67.91" y="77.68" size="1" layer="25"/>
 </element>
 <element name="U$1" library="RoboJackets-Aesthetics" package="ROBOBUZZ_1.2X" value="" x="7" y="18" smashed="yes"/>
 <element name="U$2" library="RoboJackets-Aesthetics" package="ROBOJACKETS" value="" x="22" y="49.6" smashed="yes"/>
+<element name="D1" library="RoboJackets-LEDs" package="CHIP-LED0603" value="GREEN" x="92" y="64" smashed="yes" rot="R270">
+<attribute name="DIGIKEY" value="160-1446-1-ND" x="92" y="64" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="LTST-C191KGKT" x="92" y="64" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="91.365" y="64.635" size="1.27" layer="25"/>
+<attribute name="VALUE" x="91.365" y="62.095" size="1.27" layer="27"/>
+</element>
+<element name="D2" library="RoboJackets-LEDs" package="CHIP-LED0603" value="GREEN" x="16.7" y="45.1" smashed="yes" rot="R180">
+<attribute name="DIGIKEY" value="160-1446-1-ND" x="16.7" y="45.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="LTST-C191KGKT" x="16.7" y="45.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="14.435" y="46.035" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="17.795" y="45.835" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="D3" library="RoboJackets-LEDs" package="CHIP-LED0603" value="RED" x="60.8" y="78" smashed="yes" rot="R90">
+<attribute name="DIGIKEY" value="160-1447-1-ND" x="60.8" y="78" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="LTST-C191KRKT" x="60.8" y="78" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="61.435" y="77.365" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="61.435" y="79.905" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="D4" library="RoboJackets-LEDs" package="CHIP-LED0603" value="RED" x="108.6" y="76.7" smashed="yes" rot="R90">
+<attribute name="DIGIKEY" value="160-1447-1-ND" x="108.6" y="76.7" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="LTST-C191KRKT" x="108.6" y="76.7" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="109.235" y="76.065" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="109.235" y="78.605" size="1.27" layer="27" rot="R180"/>
+</element>
 </elements>
 <signals>
 <signal name="VB">
@@ -4820,23 +4828,24 @@ design rules under a new name.</description>
 <contactref element="DV2" pad="16"/>
 <contactref element="J3" pad="P$1"/>
 <contactref element="C1" pad="2"/>
-<contactref element="D1" pad="C"/>
-<contactref element="D2" pad="C"/>
 <polygon width="0.1524" layer="16">
 <vertex x="-1.27" y="113.03"/>
 <vertex x="-1.27" y="-3.81"/>
 <vertex x="123.19" y="-3.81"/>
 <vertex x="123.19" y="113.03"/>
 </polygon>
-<wire x1="16.705" y1="42.16" x2="14.945" y2="40.4" width="1" layer="1"/>
-<wire x1="14.945" y1="40.4" x2="13" y2="40.4" width="1" layer="1"/>
-<wire x1="13" y1="40.4" x2="11.3" y2="42.1" width="1" layer="1"/>
-<wire x1="11.3" y1="42.1" x2="11.3" y2="58.8" width="1" layer="1"/>
-<wire x1="11.3" y1="58.8" x2="12.77" y2="60.27" width="1" layer="1"/>
-<wire x1="12.77" y1="60.27" x2="13.254" y2="60.27" width="1" layer="1"/>
 <wire x1="97.35" y1="74.14" x2="97.35" y2="64.95" width="0.5" layer="1"/>
-<wire x1="96.38" y1="63.98" x2="93.77" y2="63.98" width="0.5" layer="1"/>
-<wire x1="97.35" y1="64.95" x2="96.38" y2="63.98" width="0.5" layer="1"/>
+<wire x1="96.38" y1="63.98" x2="97.35" y2="64.95" width="0.5" layer="1"/>
+<contactref element="D1" pad="C"/>
+<contactref element="D2" pad="C"/>
+<wire x1="92.75" y1="64" x2="96.36" y2="64" width="0.5" layer="1"/>
+<wire x1="96.36" y1="64" x2="96.38" y2="63.98" width="0.5" layer="1"/>
+<wire x1="16.7" y1="44.35" x2="16.7" y2="41.2" width="0.5" layer="1"/>
+<wire x1="16.7" y1="41.2" x2="16" y2="40.5" width="0.5" layer="1"/>
+<wire x1="16" y1="40.5" x2="14.6" y2="40.5" width="0.5" layer="1"/>
+<wire x1="13.3" y1="60.224" x2="13.254" y2="60.27" width="0.5" layer="1"/>
+<wire x1="14.6" y1="40.5" x2="13.3" y2="41.8" width="0.5" layer="1"/>
+<wire x1="13.3" y1="41.8" x2="13.3" y2="60.224" width="0.5" layer="1"/>
 </signal>
 <signal name="+12V">
 <contactref element="KIT1" pad="VIN"/>
@@ -4851,7 +4860,6 @@ design rules under a new name.</description>
 <wire x1="22.1" y1="60.27" x2="50.37" y2="60.27" width="1" layer="1"/>
 <wire x1="51.54" y1="61.44" x2="54.17" y2="61.44" width="1" layer="1"/>
 <wire x1="50.37" y1="60.27" x2="51.54" y2="61.44" width="1" layer="1"/>
-<wire x1="16.7592" y1="60.27" x2="16.7592" y2="50.2042" width="1" layer="1"/>
 <wire x1="16.7592" y1="50.2042" x2="16.705" y2="50.15" width="1" layer="1"/>
 <wire x1="22.1" y1="60.27" x2="27.1" y2="65.27" width="1" layer="1"/>
 <wire x1="27.1" y1="65.27" x2="27.1" y2="102.1" width="1" layer="1"/>
@@ -4866,6 +4874,7 @@ design rules under a new name.</description>
 <wire x1="59.1" y1="102.9" x2="59.1" y2="93.1" width="1" layer="1"/>
 <wire x1="59.1" y1="93.1" x2="57.92" y2="91.92" width="1" layer="1"/>
 <wire x1="57.92" y1="91.92" x2="52.9" y2="91.92" width="1" layer="1"/>
+<wire x1="16.7592" y1="60.27" x2="16.7592" y2="50.2042" width="0.5" layer="1"/>
 </signal>
 <signal name="+3.3V">
 <contactref element="KIT1" pad="VOUT"/>
@@ -4920,25 +4929,25 @@ design rules under a new name.</description>
 <signal name="TRA-D2">
 <contactref element="KIT1" pad="P$8"/>
 <contactref element="R5" pad="2"/>
-<wire x1="117.3" y1="66.655" x2="117.3" y2="10.3" width="0.3" layer="1"/>
-<wire x1="117.3" y1="10.3" x2="113.1" y2="6.1" width="0.3" layer="1"/>
-<wire x1="113.1" y1="6.1" x2="48.1" y2="6.1" width="0.3" layer="1"/>
-<wire x1="48.1" y1="6.1" x2="43.1" y2="11.1" width="0.3" layer="1"/>
+<wire x1="43.1" y1="11.1" x2="48.1" y2="6.1" width="0.3" layer="1"/>
 <wire x1="43.1" y1="11.1" x2="43.1" y2="40.6" width="0.3" layer="1"/>
 <wire x1="48.7" y1="46.2" x2="54.17" y2="46.2" width="0.3" layer="1"/>
 <wire x1="43.1" y1="40.6" x2="48.7" y2="46.2" width="0.3" layer="1"/>
+<wire x1="48.1" y1="6.1" x2="99.1" y2="6.1" width="0.25" layer="1"/>
+<wire x1="117.3" y1="24.3" x2="117.3" y2="66.655" width="0.25" layer="1"/>
+<wire x1="99.1" y1="6.1" x2="117.3" y2="24.3" width="0.25" layer="1"/>
 </signal>
 <signal name="TRA-S2">
 <contactref element="KIT1" pad="P$9"/>
 <contactref element="R6" pad="2"/>
-<wire x1="113.76" y1="66.655" x2="113.76" y2="11.76" width="0.3" layer="1"/>
-<wire x1="113.76" y1="11.76" x2="111.1" y2="9.1" width="0.3" layer="1"/>
-<wire x1="111.1" y1="9.1" x2="50.4" y2="9.1" width="0.3" layer="1"/>
 <wire x1="46.7" y1="40.5" x2="49.9" y2="43.7" width="0.3" layer="1"/>
 <wire x1="49.9" y1="43.7" x2="54.13" y2="43.7" width="0.3" layer="1"/>
 <wire x1="54.13" y1="43.7" x2="54.17" y2="43.66" width="0.3" layer="1"/>
-<wire x1="50.4" y1="9.1" x2="46.7" y2="12.8" width="0.3" layer="1"/>
+<wire x1="50.25" y1="9.25" x2="46.7" y2="12.8" width="0.3" layer="1"/>
 <wire x1="46.7" y1="12.8" x2="46.7" y2="40.5" width="0.3" layer="1"/>
+<wire x1="113.76" y1="24.76" x2="113.76" y2="66.655" width="0.25" layer="1"/>
+<wire x1="50.25" y1="9.25" x2="98.25" y2="9.25" width="0.25" layer="1"/>
+<wire x1="98.25" y1="9.25" x2="113.76" y2="24.76" width="0.25" layer="1"/>
 </signal>
 <signal name="TRA-S1">
 <contactref element="KIT1" pad="P$10"/>
@@ -5138,33 +5147,41 @@ design rules under a new name.</description>
 </signal>
 <signal name="R2-2">
 <contactref element="DV2" pad="15"/>
-<contactref element="D3" pad="C"/>
-<wire x1="107.28" y1="76.68" x2="97.35" y2="76.68" width="0.5" layer="1"/>
+<contactref element="D4" pad="C"/>
+<wire x1="107.85" y1="76.7" x2="97.37" y2="76.7" width="0.5" layer="1"/>
+<wire x1="97.37" y1="76.7" x2="97.35" y2="76.68" width="0.5" layer="1"/>
 </signal>
 <signal name="R2-1">
-<contactref element="D3" pad="A"/>
 <contactref element="R17" pad="1"/>
-<wire x1="110.28" y1="76.68" x2="115.625" y2="76.68" width="0.5" layer="1"/>
+<contactref element="D4" pad="A"/>
+<wire x1="109.35" y1="76.7" x2="115.605" y2="76.7" width="0.5" layer="1"/>
+<wire x1="115.605" y1="76.7" x2="115.625" y2="76.68" width="0.5" layer="1"/>
 </signal>
 <signal name="R1-1">
-<contactref element="D4" pad="A"/>
 <contactref element="R18" pad="1"/>
-<wire x1="68.635" y1="76.68" x2="63.29" y2="76.68" width="0.5" layer="1"/>
+<contactref element="D3" pad="A"/>
+<wire x1="61.55" y1="78" x2="63.5" y2="78" width="0.5" layer="1"/>
+<wire x1="64.82" y1="76.68" x2="68.635" y2="76.68" width="0.5" layer="1"/>
+<wire x1="63.5" y1="78" x2="64.82" y2="76.68" width="0.5" layer="1"/>
 </signal>
 <signal name="R1-2">
-<contactref element="D4" pad="C"/>
 <contactref element="DV1" pad="15"/>
-<wire x1="60.29" y1="76.68" x2="52.9" y2="76.68" width="0.5" layer="1"/>
+<contactref element="D3" pad="C"/>
+<wire x1="52.9" y1="76.68" x2="56.78" y2="76.68" width="0.5" layer="1"/>
+<wire x1="56.78" y1="76.68" x2="58.1" y2="78" width="0.5" layer="1"/>
+<wire x1="58.1" y1="78" x2="60.05" y2="78" width="0.5" layer="1"/>
 </signal>
 <signal name="G2">
 <contactref element="R15" pad="1"/>
 <contactref element="D1" pad="A"/>
-<wire x1="85.425" y1="63.98" x2="90.77" y2="63.98" width="0.5" layer="1"/>
+<wire x1="91.25" y1="64" x2="91.23" y2="63.98" width="0.5" layer="1"/>
+<wire x1="91.23" y1="63.98" x2="85.425" y2="63.98" width="0.5" layer="1"/>
 </signal>
 <signal name="G1">
 <contactref element="R16" pad="1"/>
 <contactref element="D2" pad="A"/>
-<wire x1="16.705" y1="48.6" x2="16.705" y2="45.16" width="1" layer="1"/>
+<wire x1="16.705" y1="48.6" x2="16.705" y2="45.855" width="0.5" layer="1"/>
+<wire x1="16.705" y1="45.855" x2="16.7" y2="45.85" width="0.5" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
