@@ -9711,7 +9711,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <pad name="14" x="6.35" y="-3.81" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
 <pad name="15" x="6.35" y="-6.35" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
 <pad name="16" x="6.35" y="-8.89" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
-<circle x="-4.572" y="8.89" radius="0.457903125" width="0.0508" layer="21"/>
+<circle x="-4.445" y="8.89" radius="0.567959375" width="0" layer="21"/>
+<text x="-7.62" y="10.541" size="1.27" layer="25">DRV8825</text>
+<text x="-7.62" y="-11.938" size="1.27" layer="27">DV$</text>
 </package>
 </packages>
 <symbols>
@@ -10611,28 +10613,28 @@ In this library you will find LEDs and other visual output devices.
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
+<net name="BED-D1" class="0">
 <segment>
 <pinref part="KIT1" gate="KIT" pin="P21"/>
 <pinref part="R1" gate="G$1" pin="PIN2"/>
 <wire x1="148.844" y1="194.056" x2="143.764" y2="194.056" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="BED-S1" class="0">
 <segment>
 <pinref part="KIT1" gate="KIT" pin="P22"/>
 <pinref part="R2" gate="G$1" pin="PIN2"/>
 <wire x1="148.844" y1="196.596" x2="143.764" y2="196.596" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="BED-S2" class="0">
 <segment>
 <pinref part="KIT1" gate="KIT" pin="P23"/>
 <pinref part="R3" gate="G$1" pin="PIN2"/>
 <wire x1="148.844" y1="199.136" x2="143.764" y2="199.136" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="BED-D2" class="0">
 <segment>
 <pinref part="KIT1" gate="KIT" pin="P24"/>
 <pinref part="R4" gate="G$1" pin="PIN2"/>
@@ -10779,70 +10781,70 @@ In this library you will find LEDs and other visual output devices.
 <wire x1="114.3" y1="119.38" x2="111.76" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="TRA-D2" class="0">
 <segment>
 <pinref part="KIT1" gate="KIT" pin="P8"/>
 <pinref part="R5" gate="G$1" pin="PIN2"/>
 <wire x1="42.164" y1="224.536" x2="47.244" y2="224.536" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="TRA-S2" class="0">
 <segment>
 <pinref part="KIT1" gate="KIT" pin="P9"/>
 <pinref part="R6" gate="G$1" pin="PIN2"/>
 <wire x1="42.164" y1="221.996" x2="47.244" y2="221.996" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="TRA-S1" class="0">
 <segment>
 <pinref part="KIT1" gate="KIT" pin="P10"/>
 <pinref part="R7" gate="G$1" pin="PIN2"/>
 <wire x1="42.164" y1="219.456" x2="47.244" y2="219.456" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="TRA-D1" class="0">
 <segment>
 <pinref part="KIT1" gate="KIT" pin="P11"/>
 <pinref part="R8" gate="G$1" pin="PIN2"/>
 <wire x1="42.164" y1="216.916" x2="47.244" y2="216.916" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="M0-1" class="0">
 <segment>
 <pinref part="DV1" gate="G$1" pin="M0"/>
 <pinref part="R9" gate="G$1" pin="PIN2"/>
 <wire x1="223.012" y1="176.276" x2="225.552" y2="176.276" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="M1-1" class="0">
 <segment>
 <pinref part="DV1" gate="G$1" pin="M1"/>
 <pinref part="R10" gate="G$1" pin="PIN2"/>
 <wire x1="223.012" y1="171.196" x2="225.552" y2="171.196" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="M2-1" class="0">
 <segment>
 <pinref part="DV1" gate="G$1" pin="M2"/>
 <pinref part="R11" gate="G$1" pin="PIN2"/>
 <wire x1="223.012" y1="166.116" x2="225.552" y2="166.116" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="M0-2" class="0">
 <segment>
 <pinref part="DV2" gate="G$1" pin="M0"/>
 <pinref part="R12" gate="G$1" pin="PIN2"/>
 <wire x1="223.774" y1="112.776" x2="226.314" y2="112.776" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="M1-2" class="0">
 <segment>
 <pinref part="DV2" gate="G$1" pin="M1"/>
 <pinref part="R13" gate="G$1" pin="PIN2"/>
 <wire x1="223.774" y1="107.696" x2="226.314" y2="107.696" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="M2-2" class="0">
 <segment>
 <pinref part="DV2" gate="G$1" pin="M2"/>
 <pinref part="R14" gate="G$1" pin="PIN2"/>
@@ -10973,7 +10975,7 @@ In this library you will find LEDs and other visual output devices.
 <wire x1="292.862" y1="97.536" x2="292.862" y2="115.824" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$22" class="0">
+<net name="A2$2" class="0">
 <segment>
 <pinref part="DV2" gate="G$1" pin="A2"/>
 <pinref part="J2" gate="G$1" pin="4"/>
@@ -10981,49 +10983,49 @@ In this library you will find LEDs and other visual output devices.
 <wire x1="295.402" y1="92.456" x2="295.402" y2="115.824" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="FPOW" class="0">
 <segment>
 <pinref part="J3" gate="G$1" pin="1"/>
 <pinref part="F1" gate="G$1" pin="1"/>
 <wire x1="48.26" y1="109.22" x2="48.26" y2="103.632" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$16" class="0">
+<net name="R2-2" class="0">
 <segment>
 <pinref part="DV2" gate="G$1" pin="!FAULT!"/>
 <pinref part="D3" gate="G$1" pin="C"/>
 <wire x1="266.954" y1="87.376" x2="271.78" y2="87.376" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$17" class="0">
+<net name="R2-1" class="0">
 <segment>
 <pinref part="D3" gate="G$1" pin="A"/>
 <pinref part="R17" gate="G$1" pin="PIN1"/>
 <wire x1="279.4" y1="87.376" x2="283.464" y2="87.376" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$19" class="0">
+<net name="R1-1" class="0">
 <segment>
 <pinref part="D4" gate="G$1" pin="A"/>
 <pinref part="R18" gate="G$1" pin="PIN1"/>
 <wire x1="278.638" y1="150.876" x2="282.702" y2="150.876" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$18" class="0">
+<net name="R1-2" class="0">
 <segment>
 <pinref part="D4" gate="G$1" pin="C"/>
 <pinref part="DV1" gate="G$1" pin="!FAULT!"/>
 <wire x1="271.018" y1="150.876" x2="266.192" y2="150.876" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$20" class="0">
+<net name="G2" class="0">
 <segment>
 <pinref part="R15" gate="G$1" pin="PIN1"/>
 <pinref part="D1" gate="G$1" pin="A"/>
 <wire x1="101.6" y1="119.38" x2="99.06" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$21" class="0">
+<net name="G1" class="0">
 <segment>
 <pinref part="R16" gate="G$1" pin="PIN1"/>
 <pinref part="D2" gate="G$1" pin="A"/>
