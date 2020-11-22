@@ -176,6 +176,12 @@
 <wire x1="100" y1="0" x2="100" y2="80" width="0" layer="20"/>
 <wire x1="100" y1="80" x2="0" y2="80" width="0" layer="20"/>
 <wire x1="0" y1="80" x2="0" y2="0" width="0" layer="20"/>
+<circle x="0" y="0" radius="90" width="0.1524" layer="51"/>
+<circle x="35.0012" y="-54.7624" radius="20.0025" width="0.1524" layer="51"/>
+<circle x="-35.0012" y="-54.7624" radius="20.0025" width="0.1524" layer="51"/>
+<circle x="54.7624" y="35.0012" radius="20.0025" width="0.1524" layer="51"/>
+<circle x="-54.7624" y="35.0012" radius="20.0025" width="0.1524" layer="51"/>
+<circle x="0" y="0" radius="25.0063" width="0.1524" layer="51"/>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
