@@ -10175,6 +10175,57 @@ In this library you will find LEDs and other visual output devices.
 </deviceset>
 </devicesets>
 </library>
+<library name="RoboJackets-Capacitors">
+<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
+&lt;hr&gt;
+&lt;h1&gt;RoboJackets EAGLE Libraries - Capacitors&lt;/h1&gt;&lt;/br&gt;
+&lt;p&gt;
+In this library you will find uncommon capacitors. If you are looking for a common package, use the default &lt;b&gt;rcl &lt;/b&gt;library provided with EAGLE instead of looking here.
+&lt;/p&gt;</description>
+<packages>
+<package name="UKL1E101KPDANATD">
+<circle x="0" y="0" radius="4" width="0.127" layer="21"/>
+<pad name="P$1" x="-1.75" y="0" drill="0.6" shape="square"/>
+<pad name="P$2" x="1.75" y="0" drill="0.6"/>
+<wire x1="-4" y1="0" x2="-6" y2="0" width="0.127" layer="21"/>
+<wire x1="-5" y1="1" x2="-5" y2="-1" width="0.127" layer="21"/>
+<text x="-3.81" y="4.572" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.81" y="-5.588" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="C_POL">
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.016" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1" x2="2.4892" y2="-1.8542" width="0.254" layer="94" curve="-37.878202"/>
+<wire x1="-2.4669" y1="-1.8504" x2="0" y2="-1.0161" width="0.254" layer="94" curve="-37.376341"/>
+<text x="1.016" y="0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.016" y="-4.191" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-2.253" y1="0.668" x2="-1.364" y2="0.795" layer="94"/>
+<rectangle x1="-1.872" y1="0.287" x2="-1.745" y2="1.176" layer="94"/>
+<pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="UKL1E101KPDANATD">
+<gates>
+<gate name="G$1" symbol="C_POL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="UKL1E101KPDANATD">
+<connects>
+<connect gate="G$1" pin="+" pad="P$1"/>
+<connect gate="G$1" pin="-" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -10206,8 +10257,6 @@ In this library you will find LEDs and other visual output devices.
 <part name="SUPPLY10" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="SUPPLY11" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="SUPPLY12" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
-<part name="SUPPLY13" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
-<part name="SUPPLY14" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
 <part name="SUPPLY15" library="RoboJackets-Supplies" deviceset="GND" device=""/>
 <part name="SUPPLY16" library="RoboJackets-Supplies" deviceset="GND" device=""/>
 <part name="J1" library="RoboJackets-Connectors" deviceset="4PIN-03536?" device="30460"/>
@@ -10243,6 +10292,10 @@ In this library you will find LEDs and other visual output devices.
 <part name="J9" library="RoboJackets-Connectors" deviceset="CONN-2" device="VERT"/>
 <part name="J10" library="RoboJackets-Connectors" deviceset="CONN-2" device="VERT"/>
 <part name="J11" library="RoboJackets-Connectors" deviceset="CONN-2" device="VERT"/>
+<part name="U$1" library="RoboJackets-Capacitors" deviceset="UKL1E101KPDANATD" device=""/>
+<part name="U$2" library="RoboJackets-Capacitors" deviceset="UKL1E101KPDANATD" device=""/>
+<part name="SUPPLY13" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
+<part name="SUPPLY14" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10342,12 +10395,6 @@ add resistor: R9-R10-R11-R12-R13-R14</text>
 </instance>
 <instance part="SUPPLY12" gate="P" x="294.894" y="153.416" smashed="yes" rot="R90">
 <attribute name="VALUE" x="292.735" y="155.829" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="SUPPLY13" gate="+12V" x="357.632" y="232.156" smashed="yes" rot="R270">
-<attribute name="VALUE" x="359.537" y="233.172" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY14" gate="+12V" x="358.394" y="168.656" smashed="yes" rot="R270">
-<attribute name="VALUE" x="360.553" y="169.418" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY15" gate="G$1" x="357.632" y="227.076" smashed="yes" rot="R90">
 <attribute name="VALUE" x="358.14" y="228.6" size="1.778" layer="96"/>
@@ -10468,6 +10515,20 @@ add resistor: R9-R10-R11-R12-R13-R14</text>
 <attribute name="NAME" x="140.97" y="149.225" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="140.97" y="160.02" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="U$1" gate="G$1" x="355.6" y="243.84" smashed="yes">
+<attribute name="NAME" x="356.616" y="244.475" size="1.778" layer="95"/>
+<attribute name="VALUE" x="356.616" y="239.649" size="1.778" layer="96"/>
+</instance>
+<instance part="U$2" gate="G$1" x="358.14" y="180.34" smashed="yes">
+<attribute name="NAME" x="359.156" y="180.975" size="1.778" layer="95"/>
+<attribute name="VALUE" x="359.156" y="176.149" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY13" gate="+12V" x="363.22" y="251.46" smashed="yes">
+<attribute name="VALUE" x="360.68" y="254.635" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY14" gate="+12V" x="360.68" y="187.96" smashed="yes">
+<attribute name="VALUE" x="358.14" y="191.135" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -10510,16 +10571,6 @@ add resistor: R9-R10-R11-R12-R13-R14</text>
 <pinref part="KIT1" gate="KIT" pin="VIN"/>
 <pinref part="SUPPLY1" gate="+12V" pin="+12V"/>
 <wire x1="58.928" y1="234.696" x2="62.484" y2="234.696" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="DV1" gate="G$1" pin="VMOT"/>
-<pinref part="SUPPLY13" gate="+12V" pin="+12V"/>
-<wire x1="355.092" y1="232.156" x2="352.552" y2="232.156" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="DV2" gate="G$1" pin="VMOT"/>
-<pinref part="SUPPLY14" gate="+12V" pin="+12V"/>
-<wire x1="355.854" y1="168.656" x2="353.314" y2="168.656" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY19" gate="+12V" pin="+12V"/>
