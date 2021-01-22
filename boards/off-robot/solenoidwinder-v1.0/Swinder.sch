@@ -9951,67 +9951,6 @@ Power Barrel Connector Jack 2.10mm ID (0.083"), 5.50mm OD (0.217") Through Hole,
 </deviceset>
 </devicesets>
 </library>
-<library name="RoboJackets-Capacitors">
-<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
-&lt;hr&gt;
-&lt;h1&gt;RoboJackets EAGLE Libraries - Capacitors&lt;/h1&gt;&lt;/br&gt;
-&lt;p&gt;
-In this library you will find uncommon capacitors. If you are looking for a common package, use the default &lt;b&gt;rcl &lt;/b&gt;library provided with EAGLE instead of looking here.
-&lt;/p&gt;</description>
-<packages>
-<package name="PCAP_8X112">
-<description>https://www.digikey.com/product-detail/en/panasonic-electronic-components/ECA-0JM102/P5115-ND/244974</description>
-<pad name="1" x="-1.7052" y="-0.1" drill="0.9652" diameter="1.524" shape="square"/>
-<pad name="2" x="1.8" y="-0.1" drill="0.9652" diameter="1.524" rot="R180"/>
-<wire x1="-5.4644" y1="-0.1" x2="-4.1944" y2="-0.1" width="0.1524" layer="21"/>
-<wire x1="-4.8548" y1="0.535" x2="-4.8548" y2="-0.735" width="0.1524" layer="21"/>
-<wire x1="4.1876" y1="-0.1" x2="-4.0928" y2="-0.1" width="0.1524" layer="21" curve="-180"/>
-<wire x1="-4.0928" y1="-0.1" x2="4.1876" y2="-0.1" width="0.1524" layer="21" curve="-180"/>
-<wire x1="-5.4644" y1="-0.1" x2="-4.1944" y2="-0.1" width="0.1524" layer="51"/>
-<wire x1="-4.8548" y1="0.535" x2="-4.8548" y2="-0.735" width="0.1524" layer="51"/>
-<wire x1="4.0352" y1="-0.1" x2="-3.9404" y2="-0.1" width="0" layer="51" curve="-180"/>
-<wire x1="-3.9404" y1="-0.1" x2="4.0352" y2="-0.1" width="0" layer="51" curve="-180"/>
-<text x="-3.2292" y="4.345" size="1" layer="25" font="vector" ratio="6" rot="SR0">&gt;NAME</text>
-<text x="-3.302" y="-4.572" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="CAP_POL">
-<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.016" x2="0" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="-1" x2="2.4892" y2="-1.8542" width="0.254" layer="94" curve="-37.878202"/>
-<wire x1="-2.4669" y1="-1.8504" x2="0" y2="-1.0161" width="0.254" layer="94" curve="-37.376341"/>
-<text x="1.016" y="1.397" size="1.778" layer="95">&gt;NAME</text>
-<text x="1.016" y="-2.54" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
-<rectangle x1="-2.253" y1="0.668" x2="-1.364" y2="0.795" layer="94"/>
-<rectangle x1="-1.872" y1="0.287" x2="-1.745" y2="1.176" layer="94"/>
-<pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
-<pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="ECA-0JM102" prefix="C">
-<description>https://www.digikey.com/product-detail/en/panasonic-electronic-components/ECA-0JM102/P5115-ND/244974</description>
-<gates>
-<gate name="G$1" symbol="CAP_POL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="PCAP_8X112">
-<connects>
-<connect gate="G$1" pin="+" pad="1"/>
-<connect gate="G$1" pin="-" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MANUFACTURER_PART_NUMBER" value="ECA0JM102" constant="no"/>
-<attribute name="VENDOR" value="Panasonic" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="RoboJackets-Fuses">
 <packages>
 <package name="F1812">
@@ -10235,8 +10174,7 @@ In this library you will find LEDs and other visual output devices.
 <part name="SUPPLY16" library="RoboJackets-Supplies" deviceset="GND" device=""/>
 <part name="J1" library="RoboJackets-Connectors" deviceset="4PIN-03536?" device="30460"/>
 <part name="J2" library="RoboJackets-Connectors" deviceset="4PIN-03536?" device="30460"/>
-<part name="C1" library="RoboJackets-Capacitors" deviceset="ECA-0JM102" device=""/>
-<part name="F1" library="RoboJackets-Fuses" deviceset="SMD_FUSE" device="1206" value="4 A"/>
+<part name="F1" library="RoboJackets-Fuses" deviceset="SMD_FUSE" device="1206" value="4.5 A"/>
 <part name="J3" library="RoboJackets-Connectors" deviceset="PJ-037A*" device=""/>
 <part name="SUPPLY17" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
 <part name="SUPPLY18" library="RoboJackets-Supplies" deviceset="GND" device=""/>
@@ -10267,15 +10205,11 @@ In this library you will find LEDs and other visual output devices.
 <wire x1="205.74" y1="251.46" x2="205.74" y2="144.78" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="205.74" y1="144.78" x2="33.02" y2="144.78" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="33.02" y1="144.78" x2="33.02" y2="251.46" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="254" y1="251.46" x2="403.86" y2="251.46" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="403.86" y1="251.46" x2="403.86" y2="88.9" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="403.86" y1="88.9" x2="254" y2="88.9" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="254" y1="88.9" x2="254" y2="251.46" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="33.02" y1="121.92" x2="149.86" y2="121.92" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="149.86" y1="121.92" x2="149.86" y2="20.32" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="149.86" y1="20.32" x2="33.02" y2="20.32" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="33.02" y1="20.32" x2="33.02" y2="121.92" width="0.1524" layer="94" style="shortdash"/>
-<text x="160.274" y="149.606" size="1.778" layer="94">Allows for support of mtrain &amp; mbed
+<text x="160.274" y="149.606" size="1.778" layer="97">Allows for support of mtrain &amp; mbed
 
 If mbed is used: 
 solder bridge - R1-R2-R3-R4 
@@ -10284,7 +10218,7 @@ don't populate - R5-R6-R7-R8
 If mtrain is used:
 solder bridge - R5-R6-R7-R8
 don't populate - R1-R2-R3-R4</text>
-<text x="259.08" y="91.44" size="1.778" layer="94">Changing Microstepping Factor:
+<text x="259.08" y="91.44" size="1.778" layer="97">Changing Microstepping Factor:
 
 [Full Step] 
 don't populate: R9-R10-R11-R12-R13-R14
@@ -10297,7 +10231,7 @@ don't populate: R10-R11-R13-R14
 add resistor: R10-R13
 don't populate: R9-R11-R12-R14
 </text>
-<text x="309.88" y="93.98" size="1.778" layer="94">[1/8 Step]
+<text x="309.88" y="93.98" size="1.778" layer="97">[1/8 Step]
 add resistor: R9-R10-R12-R13
 don't populate: R11-R14
 
@@ -10432,10 +10366,6 @@ add resistor: R9-R10-R11-R12-R13-R14</text>
 <attribute name="NAME" x="370.967" y="162.814" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="386.842" y="162.814" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C1" gate="G$1" x="60.198" y="56.388" smashed="yes" rot="R270">
-<attribute name="NAME" x="57.912" y="51.435" size="1.778" layer="95"/>
-<attribute name="VALUE" x="58.166" y="61.214" size="1.778" layer="96" align="top-left"/>
-</instance>
 <instance part="F1" gate="G$1" x="63.5" y="73.152" smashed="yes" rot="R270">
 <attribute name="NAME" x="66.04" y="83.312" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="60.96" y="83.312" size="1.778" layer="96" rot="R270" align="top-left"/>
@@ -10444,11 +10374,11 @@ add resistor: R9-R10-R11-R12-R13-R14</text>
 <attribute name="NAME" x="66.04" y="109.22" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="53.34" y="109.22" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="SUPPLY17" gate="+12V" x="62.738" y="43.688" smashed="yes" rot="R180">
-<attribute name="VALUE" x="65.278" y="40.513" size="1.778" layer="96" rot="R180"/>
+<instance part="SUPPLY17" gate="+12V" x="63.5" y="57.15" smashed="yes" rot="R180">
+<attribute name="VALUE" x="66.04" y="53.975" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="SUPPLY18" gate="G$1" x="55.118" y="41.656" smashed="yes">
-<attribute name="VALUE" x="52.578" y="39.116" size="1.778" layer="96"/>
+<instance part="SUPPLY18" gate="G$1" x="55.88" y="57.912" smashed="yes">
+<attribute name="VALUE" x="53.34" y="55.372" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY19" gate="+12V" x="132.08" y="86.36" smashed="yes" rot="R270">
 <attribute name="VALUE" x="135.255" y="88.9" size="1.778" layer="96" rot="R270"/>
@@ -10557,17 +10487,6 @@ add resistor: R9-R10-R11-R12-R13-R14</text>
 <wire x1="355.854" y1="163.576" x2="353.314" y2="163.576" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$1" pin="2"/>
-<wire x1="55.88" y1="88.9" x2="55.88" y2="62.484" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="62.484" x2="52.578" y2="62.484" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="-"/>
-<wire x1="52.578" y1="62.484" x2="52.578" y2="56.388" width="0.1524" layer="91"/>
-<wire x1="52.578" y1="56.388" x2="55.118" y2="56.388" width="0.1524" layer="91"/>
-<pinref part="SUPPLY18" gate="G$1" pin="GND"/>
-<wire x1="55.118" y1="56.388" x2="55.118" y2="44.196" width="0.1524" layer="91"/>
-<junction x="55.118" y="56.388"/>
-</segment>
-<segment>
 <pinref part="SUPPLY21" gate="G$1" pin="GND"/>
 <wire x1="106.68" y1="99.06" x2="103.886" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="K"/>
@@ -10576,6 +10495,13 @@ add resistor: R9-R10-R11-R12-R13-R14</text>
 <pinref part="SUPPLY22" gate="G$1" pin="GND"/>
 <wire x1="106.68" y1="86.36" x2="104.14" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="D2" gate="G$1" pin="K"/>
+</segment>
+<segment>
+<pinref part="J3" gate="G$1" pin="2"/>
+<wire x1="55.88" y1="88.9" x2="55.88" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="SUPPLY18" gate="G$1" pin="GND"/>
+<wire x1="55.88" y1="63.5" x2="55.88" y2="62.484" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="60.452" x2="55.88" y2="62.484" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -10595,18 +10521,14 @@ add resistor: R9-R10-R11-R12-R13-R14</text>
 <wire x1="355.854" y1="168.656" x2="353.314" y2="168.656" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="F1" gate="G$1" pin="2"/>
-<pinref part="C1" gate="G$1" pin="+"/>
-<wire x1="63.5" y1="62.992" x2="63.5" y2="56.388" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="56.388" x2="62.738" y2="56.388" width="0.1524" layer="91"/>
-<wire x1="62.738" y1="56.388" x2="62.738" y2="46.228" width="0.1524" layer="91"/>
-<junction x="62.738" y="56.388"/>
-<pinref part="SUPPLY17" gate="+12V" pin="+12V"/>
-</segment>
-<segment>
 <pinref part="SUPPLY19" gate="+12V" pin="+12V"/>
 <pinref part="R16" gate="G$1" pin="PIN2"/>
 <wire x1="129.54" y1="86.36" x2="127" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="F1" gate="G$1" pin="2"/>
+<pinref part="SUPPLY17" gate="+12V" pin="+12V"/>
+<wire x1="63.5" y1="62.992" x2="63.5" y2="59.69" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3.3V" class="0">
