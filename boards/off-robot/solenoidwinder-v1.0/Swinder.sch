@@ -10292,10 +10292,12 @@ In this library you will find uncommon capacitors. If you are looking for a comm
 <part name="J9" library="RoboJackets-Connectors" deviceset="CONN-2" device="VERT"/>
 <part name="J10" library="RoboJackets-Connectors" deviceset="CONN-2" device="VERT"/>
 <part name="J11" library="RoboJackets-Connectors" deviceset="CONN-2" device="VERT"/>
-<part name="U$1" library="RoboJackets-Capacitors" deviceset="UKL1E101KPDANATD" device=""/>
+<part name="U1" library="RoboJackets-Capacitors" deviceset="UKL1E101KPDANATD" device=""/>
 <part name="U$2" library="RoboJackets-Capacitors" deviceset="UKL1E101KPDANATD" device=""/>
 <part name="SUPPLY13" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
 <part name="SUPPLY14" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
+<part name="SUPPLY23" library="RoboJackets-Supplies" deviceset="GND" device=""/>
+<part name="SUPPLY24" library="RoboJackets-Supplies" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10515,19 +10517,25 @@ add resistor: R9-R10-R11-R12-R13-R14</text>
 <attribute name="NAME" x="140.97" y="149.225" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="140.97" y="160.02" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="U$1" gate="G$1" x="355.6" y="243.84" smashed="yes">
-<attribute name="NAME" x="356.616" y="244.475" size="1.778" layer="95"/>
-<attribute name="VALUE" x="356.616" y="239.649" size="1.778" layer="96"/>
+<instance part="U1" gate="G$1" x="365.76" y="243.84" smashed="yes" rot="R90">
+<attribute name="NAME" x="365.125" y="244.856" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="369.951" y="244.856" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="U$2" gate="G$1" x="358.14" y="180.34" smashed="yes">
-<attribute name="NAME" x="359.156" y="180.975" size="1.778" layer="95"/>
-<attribute name="VALUE" x="359.156" y="176.149" size="1.778" layer="96"/>
+<instance part="U$2" gate="G$1" x="363.22" y="177.8" smashed="yes" rot="R90">
+<attribute name="NAME" x="362.585" y="178.816" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="367.411" y="178.816" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SUPPLY13" gate="+12V" x="363.22" y="251.46" smashed="yes">
-<attribute name="VALUE" x="360.68" y="254.635" size="1.778" layer="96"/>
+<instance part="SUPPLY13" gate="+12V" x="363.22" y="254" smashed="yes">
+<attribute name="VALUE" x="360.68" y="257.175" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY14" gate="+12V" x="360.68" y="187.96" smashed="yes">
 <attribute name="VALUE" x="358.14" y="191.135" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY23" gate="G$1" x="378.46" y="243.84" smashed="yes" rot="R90">
+<attribute name="VALUE" x="381" y="241.3" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="SUPPLY24" gate="G$1" x="375.92" y="177.8" smashed="yes" rot="R90">
+<attribute name="VALUE" x="378.46" y="175.26" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -10565,6 +10573,16 @@ add resistor: R9-R10-R11-R12-R13-R14</text>
 <wire x1="55.88" y1="63.5" x2="55.88" y2="62.484" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="60.452" x2="55.88" y2="62.484" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="-"/>
+<pinref part="SUPPLY23" gate="G$1" pin="GND"/>
+<wire x1="375.92" y1="243.84" x2="370.84" y2="243.84" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="-"/>
+<wire x1="368.3" y1="177.8" x2="373.38" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="SUPPLY24" gate="G$1" pin="GND"/>
+</segment>
 </net>
 <net name="+12V" class="0">
 <segment>
@@ -10581,6 +10599,25 @@ add resistor: R9-R10-R11-R12-R13-R14</text>
 <pinref part="F1" gate="G$1" pin="2"/>
 <pinref part="SUPPLY17" gate="+12V" pin="+12V"/>
 <wire x1="63.5" y1="62.992" x2="63.5" y2="59.69" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY13" gate="+12V" pin="+12V"/>
+<pinref part="U1" gate="G$1" pin="+"/>
+<wire x1="363.22" y1="251.46" x2="363.22" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="363.22" y1="243.84" x2="362.966" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="362.966" y1="243.84" x2="362.966" y2="232.156" width="0.1524" layer="91"/>
+<junction x="363.22" y="243.84"/>
+<pinref part="DV1" gate="G$1" pin="VMOT"/>
+<wire x1="362.966" y1="232.156" x2="352.552" y2="232.156" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY14" gate="+12V" pin="+12V"/>
+<pinref part="U$2" gate="G$1" pin="+"/>
+<wire x1="360.68" y1="185.42" x2="360.68" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="DV2" gate="G$1" pin="VMOT"/>
+<wire x1="353.314" y1="168.656" x2="360.68" y2="168.656" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="168.656" x2="360.68" y2="177.8" width="0.1524" layer="91"/>
+<junction x="360.68" y="177.8"/>
 </segment>
 </net>
 <net name="+3.3V" class="0">
@@ -10977,6 +11014,10 @@ add resistor: R9-R10-R11-R12-R13-R14</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="204,1,62.484,232.156,KIT1,VB,,,,"/>
+<approved hash="204,1,159.004,234.696,KIT1,VU,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
