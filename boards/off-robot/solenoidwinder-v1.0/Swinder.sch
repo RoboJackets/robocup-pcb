@@ -10598,13 +10598,13 @@ add resistor: R9-R10-R11-R12-R13-R14</text>
 <instance part="SUPPLY24" gate="G$1" x="375.92" y="177.8" smashed="yes" rot="R90">
 <attribute name="VALUE" x="378.46" y="175.26" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="S1" gate="G$1" x="168.656" y="211.836" smashed="yes">
-<attribute name="NAME" x="163.576" y="215.646" size="2.54" layer="95" font="vector"/>
-<attribute name="VALUE" x="168.656" y="210.566" size="2.54" layer="96" font="vector" ratio="15" align="top-center"/>
-<attribute name="FUNCTION" x="168.656" y="207.518" size="1.27" layer="97" ratio="10" align="top-center"/>
+<instance part="S1" gate="G$1" x="172.974" y="206.756" smashed="yes">
+<attribute name="NAME" x="167.894" y="210.566" size="2.54" layer="95" font="vector"/>
+<attribute name="VALUE" x="172.974" y="205.486" size="2.54" layer="96" font="vector" ratio="15" align="top-center"/>
+<attribute name="FUNCTION" x="172.974" y="202.438" size="1.27" layer="97" ratio="10" align="top-center"/>
 </instance>
-<instance part="SUPPLY25" gate="G$1" x="186.69" y="211.836" smashed="yes" rot="R90">
-<attribute name="VALUE" x="192.786" y="215.138" size="1.778" layer="96" rot="R180"/>
+<instance part="SUPPLY25" gate="G$1" x="183.642" y="206.756" smashed="yes" rot="R90">
+<attribute name="VALUE" x="186.182" y="204.216" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -10654,10 +10654,8 @@ add resistor: R9-R10-R11-R12-R13-R14</text>
 </segment>
 <segment>
 <pinref part="S1" gate="G$1" pin="2"/>
-<wire x1="173.736" y1="211.836" x2="182.118" y2="211.836" width="0.1524" layer="91"/>
+<wire x1="178.054" y1="206.756" x2="181.102" y2="206.756" width="0.1524" layer="91"/>
 <pinref part="SUPPLY25" gate="G$1" pin="GND"/>
-<wire x1="182.118" y1="211.836" x2="182.372" y2="211.836" width="0.1524" layer="91"/>
-<wire x1="184.15" y1="211.836" x2="182.372" y2="211.836" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -11089,9 +11087,9 @@ add resistor: R9-R10-R11-R12-R13-R14</text>
 </net>
 <net name="N$1" class="0">
 <segment>
+<pinref part="KIT1" gate="KIT" pin="P28"/>
 <pinref part="S1" gate="G$1" pin="1"/>
-<pinref part="KIT1" gate="KIT" pin="P30"/>
-<wire x1="163.576" y1="211.836" x2="159.004" y2="211.836" width="0.1524" layer="91"/>
+<wire x1="159.004" y1="206.756" x2="167.894" y2="206.756" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
