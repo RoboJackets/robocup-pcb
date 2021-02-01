@@ -10226,6 +10226,65 @@ In this library you will find uncommon capacitors. If you are looking for a comm
 </deviceset>
 </devicesets>
 </library>
+<library name="RoboJackets-Switches">
+<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
+&lt;hr&gt;
+&lt;h1&gt;RoboJackets EAGLE Libraries - Switches&lt;/h1&gt;&lt;/br&gt;
+&lt;p&gt;
+In this library you will find switches and other mechanical assisted circuit elements that are used for controlling connections among wires.
+&lt;/p&gt;</description>
+<packages>
+<package name="KMR2">
+<wire x1="-2.3" y1="1.4" x2="2.3" y2="1.4" width="0.127" layer="21"/>
+<wire x1="2.3" y1="1.4" x2="2.3" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="2.3" y1="-1.4" x2="-2.3" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="-2.3" y1="-1.4" x2="-2.3" y2="1.4" width="0.127" layer="21"/>
+<smd name="1.1" x="-2.05" y="0.8" dx="0.9" dy="1" layer="1"/>
+<smd name="2.1" x="-2.05" y="-0.8" dx="0.9" dy="1" layer="1"/>
+<smd name="2.2" x="2.05" y="-0.8" dx="0.9" dy="1" layer="1"/>
+<smd name="1.2" x="2.05" y="0.8" dx="0.9" dy="1" layer="1"/>
+<text x="-2.54" y="1.905" size="1" layer="25" ratio="10">&gt;NAME</text>
+<text x="0" y="-1.905" size="1" layer="21" ratio="20" align="top-center">&gt;FUNCTION</text>
+<rectangle x1="-2.286" y1="-1.397" x2="2.286" y2="1.397" layer="39"/>
+</package>
+</packages>
+<symbols>
+<symbol name="TS2">
+<wire x1="1.905" y1="3.429" x2="1.905" y2="2.159" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="3.429" x2="-1.905" y2="2.159" width="0.254" layer="94"/>
+<wire x1="1.905" y1="3.429" x2="-1.905" y2="3.429" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="1.905" y2="1.27" width="0.254" layer="94"/>
+<circle x="-2.54" y="0" radius="0.127" width="0.4064" layer="94"/>
+<circle x="2.54" y="0" radius="0.127" width="0.4064" layer="94"/>
+<text x="-5.08" y="3.81" size="2.54" layer="95" font="vector">&gt;NAME</text>
+<text x="0" y="-1.27" size="2.54" layer="96" font="vector" ratio="15" align="top-center">&gt;VALUE</text>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<wire x1="0" y1="0.762" x2="0" y2="3.302" width="0.254" layer="94" style="shortdash"/>
+<text x="0" y="-4.318" size="1.27" layer="97" ratio="10" align="top-center">&gt;FUNCTION</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="KMR2" prefix="S">
+<gates>
+<gate name="G$1" symbol="TS2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="KMR2">
+<connects>
+<connect gate="G$1" pin="1" pad="1.1 1.2"/>
+<connect gate="G$1" pin="2" pad="2.1 2.2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="FUNCTION" value="Reset" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -10298,6 +10357,8 @@ In this library you will find uncommon capacitors. If you are looking for a comm
 <part name="SUPPLY14" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
 <part name="SUPPLY23" library="RoboJackets-Supplies" deviceset="GND" device=""/>
 <part name="SUPPLY24" library="RoboJackets-Supplies" deviceset="GND" device=""/>
+<part name="S1" library="RoboJackets-Switches" deviceset="KMR2" device=""/>
+<part name="SUPPLY25" library="RoboJackets-Supplies" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10537,6 +10598,14 @@ add resistor: R9-R10-R11-R12-R13-R14</text>
 <instance part="SUPPLY24" gate="G$1" x="375.92" y="177.8" smashed="yes" rot="R90">
 <attribute name="VALUE" x="378.46" y="175.26" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="S1" gate="G$1" x="168.656" y="211.836" smashed="yes">
+<attribute name="NAME" x="163.576" y="215.646" size="2.54" layer="95" font="vector"/>
+<attribute name="VALUE" x="168.656" y="210.566" size="2.54" layer="96" font="vector" ratio="15" align="top-center"/>
+<attribute name="FUNCTION" x="168.656" y="207.518" size="1.27" layer="97" ratio="10" align="top-center"/>
+</instance>
+<instance part="SUPPLY25" gate="G$1" x="186.69" y="211.836" smashed="yes" rot="R90">
+<attribute name="VALUE" x="192.786" y="215.138" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -10582,6 +10651,13 @@ add resistor: R9-R10-R11-R12-R13-R14</text>
 <pinref part="U$2" gate="G$1" pin="-"/>
 <wire x1="368.3" y1="177.8" x2="373.38" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="SUPPLY24" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="S1" gate="G$1" pin="2"/>
+<wire x1="173.736" y1="211.836" x2="182.118" y2="211.836" width="0.1524" layer="91"/>
+<pinref part="SUPPLY25" gate="G$1" pin="GND"/>
+<wire x1="182.118" y1="211.836" x2="182.372" y2="211.836" width="0.1524" layer="91"/>
+<wire x1="184.15" y1="211.836" x2="182.372" y2="211.836" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -11009,6 +11085,13 @@ add resistor: R9-R10-R11-R12-R13-R14</text>
 <pinref part="J7" gate="G$1" pin="2"/>
 <wire x1="137.16" y1="175.26" x2="142.24" y2="175.26" width="0.1524" layer="91"/>
 <label x="142.24" y="175.26" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="S1" gate="G$1" pin="1"/>
+<pinref part="KIT1" gate="KIT" pin="P30"/>
+<wire x1="163.576" y1="211.836" x2="159.004" y2="211.836" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
