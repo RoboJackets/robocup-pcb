@@ -10352,7 +10352,7 @@ In this library you will find switches and other mechanical assisted circuit ele
 <part name="J10" library="RoboJackets-Connectors" deviceset="CONN-2" device="VERT"/>
 <part name="J11" library="RoboJackets-Connectors" deviceset="CONN-2" device="VERT"/>
 <part name="U1" library="RoboJackets-Capacitors" deviceset="UKL1E101KPDANATD" device=""/>
-<part name="U$2" library="RoboJackets-Capacitors" deviceset="UKL1E101KPDANATD" device=""/>
+<part name="U2" library="RoboJackets-Capacitors" deviceset="UKL1E101KPDANATD" device=""/>
 <part name="SUPPLY13" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
 <part name="SUPPLY14" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
 <part name="SUPPLY23" library="RoboJackets-Supplies" deviceset="GND" device=""/>
@@ -10363,7 +10363,7 @@ In this library you will find switches and other mechanical assisted circuit ele
 <sheets>
 <sheet>
 <plain>
-<text x="355.6" y="76.2" size="1.778" layer="97">Changing Microstepping Factor:
+<text x="238.76" y="187.96" size="1.778" layer="97">Changing Microstepping Factor:
 
 [Full Step] 
 don't populate: R9-R10-R11-R12-R13-R14
@@ -10376,7 +10376,7 @@ don't populate: R10-R11-R13-R14
 add resistor: R10-R13
 don't populate: R9-R11-R12-R14
 </text>
-<text x="355.6" y="48.26" size="1.778" layer="97">[1/8 Step]
+<text x="238.76" y="157.48" size="1.778" layer="97">[1/8 Step]
 add resistor: R9-R10-R12-R13
 don't populate: R11-R14
 
@@ -10386,6 +10386,18 @@ don't populate: R9-R10-R12-R13
 
 [1/32 Step]
 add resistor: R9-R10-R11-R12-R13-R14</text>
+<wire x1="15.24" y1="127" x2="177.8" y2="127" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="177.8" y1="127" x2="177.8" y2="25.4" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="177.8" y1="25.4" x2="15.24" y2="25.4" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="15.24" y1="25.4" x2="15.24" y2="127" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="35.56" y1="251.46" x2="193.04" y2="251.46" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="193.04" y1="251.46" x2="193.04" y2="142.24" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="193.04" y1="142.24" x2="35.56" y2="142.24" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="35.56" y1="142.24" x2="35.56" y2="251.46" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="231.14" y1="269.24" x2="398.78" y2="269.24" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="398.78" y1="269.24" x2="398.78" y2="106.68" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="398.78" y1="106.68" x2="231.14" y2="106.68" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="231.14" y1="106.68" x2="231.14" y2="269.24" width="0.1524" layer="97" style="shortdash"/>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$2" x="325.12" y="0" smashed="yes">
@@ -10407,9 +10419,9 @@ add resistor: R9-R10-R11-R12-R13-R14</text>
 <attribute name="NAME" x="316.992" y="191.516" size="1.778" layer="95"/>
 <attribute name="VALUE" x="316.992" y="235.204" size="1.778" layer="96"/>
 </instance>
-<instance part="DV2" gate="G$1" x="332.994" y="150.876" smashed="yes">
-<attribute name="NAME" x="317.754" y="128.016" size="1.778" layer="95"/>
-<attribute name="VALUE" x="317.754" y="171.704" size="1.778" layer="96"/>
+<instance part="DV2" gate="G$1" x="332.994" y="143.256" smashed="yes">
+<attribute name="NAME" x="317.754" y="120.396" size="1.778" layer="95"/>
+<attribute name="VALUE" x="317.754" y="164.084" size="1.778" layer="96"/>
 </instance>
 <instance part="R9" gate="G$1" x="304.292" y="227.076" smashed="yes">
 <attribute name="NAME" x="300.482" y="228.5746" size="1.778" layer="95"/>
@@ -10423,20 +10435,20 @@ add resistor: R9-R10-R11-R12-R13-R14</text>
 <attribute name="NAME" x="300.482" y="218.4146" size="1.778" layer="95"/>
 <attribute name="VALUE" x="300.482" y="213.614" size="1.778" layer="96"/>
 </instance>
-<instance part="R12" gate="G$1" x="305.054" y="163.576" smashed="yes">
-<attribute name="NAME" x="301.244" y="165.0746" size="1.778" layer="95"/>
-<attribute name="VALUE" x="301.244" y="160.274" size="1.778" layer="96"/>
+<instance part="R12" gate="G$1" x="305.054" y="155.956" smashed="yes">
+<attribute name="NAME" x="301.244" y="157.4546" size="1.778" layer="95"/>
+<attribute name="VALUE" x="301.244" y="152.654" size="1.778" layer="96"/>
 </instance>
-<instance part="R13" gate="G$1" x="305.054" y="158.496" smashed="yes">
-<attribute name="NAME" x="301.244" y="159.9946" size="1.778" layer="95"/>
-<attribute name="VALUE" x="301.244" y="155.194" size="1.778" layer="96"/>
+<instance part="R13" gate="G$1" x="305.054" y="150.876" smashed="yes">
+<attribute name="NAME" x="301.244" y="152.3746" size="1.778" layer="95"/>
+<attribute name="VALUE" x="301.244" y="147.574" size="1.778" layer="96"/>
 </instance>
-<instance part="R14" gate="G$1" x="305.054" y="153.416" smashed="yes">
-<attribute name="NAME" x="301.244" y="154.9146" size="1.778" layer="95"/>
-<attribute name="VALUE" x="301.244" y="150.114" size="1.778" layer="96"/>
+<instance part="R14" gate="G$1" x="305.054" y="145.796" smashed="yes">
+<attribute name="NAME" x="301.244" y="147.2946" size="1.778" layer="95"/>
+<attribute name="VALUE" x="301.244" y="142.494" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY3" gate="P" x="302.514" y="148.336" smashed="yes" rot="R90">
-<attribute name="VALUE" x="300.609" y="151.003" size="1.778" layer="96" rot="R180"/>
+<instance part="SUPPLY3" gate="P" x="302.514" y="140.716" smashed="yes" rot="R90">
+<attribute name="VALUE" x="300.609" y="143.383" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="SUPPLY5" gate="P" x="301.752" y="211.836" smashed="yes" rot="R90">
 <attribute name="VALUE" x="299.593" y="214.249" size="1.778" layer="96" rot="R180"/>
@@ -10450,28 +10462,28 @@ add resistor: R9-R10-R11-R12-R13-R14</text>
 <instance part="SUPPLY9" gate="P" x="294.132" y="216.916" smashed="yes" rot="R90">
 <attribute name="VALUE" x="291.719" y="219.583" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="SUPPLY10" gate="P" x="294.894" y="163.576" smashed="yes" rot="R90">
-<attribute name="VALUE" x="292.735" y="165.989" size="1.778" layer="96" rot="R180"/>
+<instance part="SUPPLY10" gate="P" x="294.894" y="155.956" smashed="yes" rot="R90">
+<attribute name="VALUE" x="292.735" y="158.369" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="SUPPLY11" gate="P" x="294.894" y="158.496" smashed="yes" rot="R90">
-<attribute name="VALUE" x="292.735" y="160.909" size="1.778" layer="96" rot="R180"/>
+<instance part="SUPPLY11" gate="P" x="294.894" y="150.876" smashed="yes" rot="R90">
+<attribute name="VALUE" x="292.735" y="153.289" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="SUPPLY12" gate="P" x="294.894" y="153.416" smashed="yes" rot="R90">
-<attribute name="VALUE" x="292.735" y="155.829" size="1.778" layer="96" rot="R180"/>
+<instance part="SUPPLY12" gate="P" x="294.894" y="145.796" smashed="yes" rot="R90">
+<attribute name="VALUE" x="292.735" y="148.209" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="SUPPLY15" gate="G$1" x="357.632" y="227.076" smashed="yes" rot="R90">
 <attribute name="VALUE" x="358.14" y="228.6" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY16" gate="G$1" x="358.394" y="163.576" smashed="yes" rot="R90">
-<attribute name="VALUE" x="364.49" y="166.878" size="1.778" layer="96" rot="R180"/>
+<instance part="SUPPLY16" gate="G$1" x="358.394" y="155.956" smashed="yes" rot="R90">
+<attribute name="VALUE" x="364.49" y="159.258" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="J1" gate="G$1" x="379.476" y="231.902" smashed="yes" rot="R90">
 <attribute name="NAME" x="371.221" y="225.552" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="387.096" y="225.552" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="J2" gate="G$1" x="379.222" y="169.164" smashed="yes" rot="R90">
-<attribute name="NAME" x="370.967" y="162.814" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="386.842" y="162.814" size="1.778" layer="96" rot="R90"/>
+<instance part="J2" gate="G$1" x="379.222" y="161.544" smashed="yes" rot="R90">
+<attribute name="NAME" x="370.967" y="155.194" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="386.842" y="155.194" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="F1" gate="G$1" x="63.5" y="73.152" smashed="yes" rot="R270">
 <attribute name="NAME" x="66.04" y="83.312" size="1.778" layer="95" rot="R270"/>
@@ -10504,12 +10516,12 @@ add resistor: R9-R10-R11-R12-R13-R14</text>
 <attribute name="NAME" x="118.11" y="87.8586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="118.11" y="83.058" size="1.778" layer="96"/>
 </instance>
-<instance part="R17" gate="G$1" x="374.904" y="138.176" smashed="yes">
-<attribute name="NAME" x="371.094" y="139.6746" size="1.778" layer="95"/>
-<attribute name="VALUE" x="371.094" y="134.874" size="1.778" layer="96"/>
+<instance part="R17" gate="G$1" x="374.904" y="130.556" smashed="yes">
+<attribute name="NAME" x="371.094" y="132.0546" size="1.778" layer="95"/>
+<attribute name="VALUE" x="371.094" y="127.254" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY4" gate="P" x="386.842" y="138.176" smashed="yes" rot="R270">
-<attribute name="VALUE" x="390.017" y="140.081" size="1.778" layer="96" rot="R270"/>
+<instance part="SUPPLY4" gate="P" x="386.842" y="130.556" smashed="yes" rot="R270">
+<attribute name="VALUE" x="390.017" y="132.461" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="R18" gate="G$1" x="374.142" y="201.676" smashed="yes">
 <attribute name="NAME" x="370.332" y="203.1746" size="1.778" layer="95"/>
@@ -10542,9 +10554,9 @@ add resistor: R9-R10-R11-R12-R13-R14</text>
 <attribute name="NAME" x="362.458" y="204.216" size="1.778" layer="95"/>
 <attribute name="VALUE" x="358.648" y="197.612" size="1.778" layer="96"/>
 </instance>
-<instance part="D4" gate="G$1" x="360.68" y="138.176" smashed="yes" rot="R270">
-<attribute name="NAME" x="363.22" y="139.954" size="1.778" layer="95"/>
-<attribute name="VALUE" x="359.664" y="134.112" size="1.778" layer="96"/>
+<instance part="D4" gate="G$1" x="360.68" y="130.556" smashed="yes" rot="R270">
+<attribute name="NAME" x="363.22" y="132.334" size="1.778" layer="95"/>
+<attribute name="VALUE" x="359.664" y="126.492" size="1.778" layer="96"/>
 </instance>
 <instance part="J4" gate="G$1" x="71.12" y="175.26" smashed="yes" rot="R180">
 <attribute name="NAME" x="77.47" y="169.545" size="1.778" layer="95" rot="R180"/>
@@ -10580,23 +10592,23 @@ add resistor: R9-R10-R11-R12-R13-R14</text>
 </instance>
 <instance part="U1" gate="G$1" x="365.76" y="243.84" smashed="yes" rot="R90">
 <attribute name="NAME" x="365.125" y="244.856" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="369.951" y="244.856" size="1.778" layer="96" rot="R90"/>
+<attribute name="VALUE" x="369.697" y="244.094" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="U$2" gate="G$1" x="363.22" y="177.8" smashed="yes" rot="R90">
-<attribute name="NAME" x="362.585" y="178.816" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="367.411" y="178.816" size="1.778" layer="96" rot="R90"/>
+<instance part="U2" gate="G$1" x="363.22" y="170.18" smashed="yes" rot="R90">
+<attribute name="NAME" x="362.585" y="171.196" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="367.411" y="171.196" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="SUPPLY13" gate="+12V" x="363.22" y="254" smashed="yes">
 <attribute name="VALUE" x="360.68" y="257.175" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY14" gate="+12V" x="360.68" y="187.96" smashed="yes">
-<attribute name="VALUE" x="358.14" y="191.135" size="1.778" layer="96"/>
+<instance part="SUPPLY14" gate="+12V" x="360.68" y="180.34" smashed="yes">
+<attribute name="VALUE" x="358.14" y="183.515" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY23" gate="G$1" x="378.46" y="243.84" smashed="yes" rot="R90">
 <attribute name="VALUE" x="381" y="241.3" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SUPPLY24" gate="G$1" x="375.92" y="177.8" smashed="yes" rot="R90">
-<attribute name="VALUE" x="378.46" y="175.26" size="1.778" layer="96" rot="R90"/>
+<instance part="SUPPLY24" gate="G$1" x="375.92" y="170.18" smashed="yes" rot="R90">
+<attribute name="VALUE" x="378.46" y="167.64" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="S1" gate="G$1" x="172.974" y="206.756" smashed="yes">
 <attribute name="NAME" x="167.894" y="210.566" size="2.54" layer="95" font="vector"/>
@@ -10623,7 +10635,7 @@ add resistor: R9-R10-R11-R12-R13-R14</text>
 <segment>
 <pinref part="DV2" gate="G$1" pin="GND"/>
 <pinref part="SUPPLY16" gate="G$1" pin="GND"/>
-<wire x1="355.854" y1="163.576" x2="353.314" y2="163.576" width="0.1524" layer="91"/>
+<wire x1="355.854" y1="155.956" x2="353.314" y2="155.956" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY21" gate="G$1" pin="GND"/>
@@ -10648,8 +10660,8 @@ add resistor: R9-R10-R11-R12-R13-R14</text>
 <wire x1="375.92" y1="243.84" x2="370.84" y2="243.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="-"/>
-<wire x1="368.3" y1="177.8" x2="373.38" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="-"/>
+<wire x1="368.3" y1="170.18" x2="373.38" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="SUPPLY24" gate="G$1" pin="GND"/>
 </segment>
 <segment>
@@ -10686,12 +10698,12 @@ add resistor: R9-R10-R11-R12-R13-R14</text>
 </segment>
 <segment>
 <pinref part="SUPPLY14" gate="+12V" pin="+12V"/>
-<pinref part="U$2" gate="G$1" pin="+"/>
-<wire x1="360.68" y1="185.42" x2="360.68" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="+"/>
+<wire x1="360.68" y1="177.8" x2="360.68" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="DV2" gate="G$1" pin="VMOT"/>
-<wire x1="353.314" y1="168.656" x2="360.68" y2="168.656" width="0.1524" layer="91"/>
-<wire x1="360.68" y1="168.656" x2="360.68" y2="177.8" width="0.1524" layer="91"/>
-<junction x="360.68" y="177.8"/>
+<wire x1="353.314" y1="161.036" x2="360.68" y2="161.036" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="161.036" x2="360.68" y2="170.18" width="0.1524" layer="91"/>
+<junction x="360.68" y="170.18"/>
 </segment>
 </net>
 <net name="+3.3V" class="0">
@@ -10703,12 +10715,12 @@ add resistor: R9-R10-R11-R12-R13-R14</text>
 <segment>
 <pinref part="DV2" gate="G$1" pin="!RESET!"/>
 <pinref part="SUPPLY3" gate="P" pin="+3.3V"/>
-<wire x1="305.054" y1="148.336" x2="308.864" y2="148.336" width="0.1524" layer="91"/>
+<wire x1="305.054" y1="140.716" x2="308.864" y2="140.716" width="0.1524" layer="91"/>
 <pinref part="DV2" gate="G$1" pin="!SLEEP!"/>
-<wire x1="308.864" y1="148.336" x2="312.674" y2="148.336" width="0.1524" layer="91"/>
-<wire x1="312.674" y1="143.256" x2="308.864" y2="143.256" width="0.1524" layer="91"/>
-<wire x1="308.864" y1="143.256" x2="308.864" y2="148.336" width="0.1524" layer="91"/>
-<junction x="308.864" y="148.336"/>
+<wire x1="308.864" y1="140.716" x2="312.674" y2="140.716" width="0.1524" layer="91"/>
+<wire x1="312.674" y1="135.636" x2="308.864" y2="135.636" width="0.1524" layer="91"/>
+<wire x1="308.864" y1="135.636" x2="308.864" y2="140.716" width="0.1524" layer="91"/>
+<junction x="308.864" y="140.716"/>
 </segment>
 <segment>
 <pinref part="DV1" gate="G$1" pin="!RESET!"/>
@@ -10738,21 +10750,21 @@ add resistor: R9-R10-R11-R12-R13-R14</text>
 <segment>
 <pinref part="R12" gate="G$1" pin="PIN1"/>
 <pinref part="SUPPLY10" gate="P" pin="+3.3V"/>
-<wire x1="297.434" y1="163.576" x2="299.974" y2="163.576" width="0.1524" layer="91"/>
+<wire x1="297.434" y1="155.956" x2="299.974" y2="155.956" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R13" gate="G$1" pin="PIN1"/>
 <pinref part="SUPPLY11" gate="P" pin="+3.3V"/>
-<wire x1="297.434" y1="158.496" x2="299.974" y2="158.496" width="0.1524" layer="91"/>
+<wire x1="297.434" y1="150.876" x2="299.974" y2="150.876" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R14" gate="G$1" pin="PIN1"/>
 <pinref part="SUPPLY12" gate="P" pin="+3.3V"/>
-<wire x1="297.434" y1="153.416" x2="299.974" y2="153.416" width="0.1524" layer="91"/>
+<wire x1="297.434" y1="145.796" x2="299.974" y2="145.796" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R17" gate="G$1" pin="PIN2"/>
-<wire x1="379.984" y1="138.176" x2="384.302" y2="138.176" width="0.1524" layer="91"/>
+<wire x1="379.984" y1="130.556" x2="384.302" y2="130.556" width="0.1524" layer="91"/>
 <pinref part="SUPPLY4" gate="P" pin="+3.3V"/>
 </segment>
 <segment>
@@ -10791,21 +10803,21 @@ add resistor: R9-R10-R11-R12-R13-R14</text>
 <segment>
 <pinref part="DV2" gate="G$1" pin="M0"/>
 <pinref part="R12" gate="G$1" pin="PIN2"/>
-<wire x1="310.134" y1="163.576" x2="312.674" y2="163.576" width="0.1524" layer="91"/>
+<wire x1="310.134" y1="155.956" x2="312.674" y2="155.956" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="M1-2" class="0">
 <segment>
 <pinref part="DV2" gate="G$1" pin="M1"/>
 <pinref part="R13" gate="G$1" pin="PIN2"/>
-<wire x1="310.134" y1="158.496" x2="312.674" y2="158.496" width="0.1524" layer="91"/>
+<wire x1="310.134" y1="150.876" x2="312.674" y2="150.876" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="M2-2" class="0">
 <segment>
 <pinref part="DV2" gate="G$1" pin="M2"/>
 <pinref part="R14" gate="G$1" pin="PIN2"/>
-<wire x1="310.134" y1="153.416" x2="312.674" y2="153.416" width="0.1524" layer="91"/>
+<wire x1="310.134" y1="145.796" x2="312.674" y2="145.796" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="STEP1" class="0">
@@ -10845,8 +10857,8 @@ add resistor: R9-R10-R11-R12-R13-R14</text>
 <net name="STEP2" class="0">
 <segment>
 <pinref part="DV2" gate="G$1" pin="STEP"/>
-<wire x1="312.674" y1="138.176" x2="311.404" y2="138.176" width="0.1524" layer="91"/>
-<label x="311.404" y="138.176" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="312.674" y1="130.556" x2="311.404" y2="130.556" width="0.1524" layer="91"/>
+<label x="311.404" y="130.556" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J9" gate="G$1" pin="1"/>
@@ -10862,8 +10874,8 @@ add resistor: R9-R10-R11-R12-R13-R14</text>
 <net name="DIR2" class="0">
 <segment>
 <pinref part="DV2" gate="G$1" pin="DIR"/>
-<wire x1="312.674" y1="133.096" x2="311.15" y2="133.096" width="0.1524" layer="91"/>
-<label x="311.15" y="133.096" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="312.674" y1="125.476" x2="311.15" y2="125.476" width="0.1524" layer="91"/>
+<label x="311.15" y="125.476" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J8" gate="G$1" pin="1"/>
@@ -10912,32 +10924,32 @@ add resistor: R9-R10-R11-R12-R13-R14</text>
 <segment>
 <pinref part="DV2" gate="G$1" pin="B2"/>
 <pinref part="J2" gate="G$1" pin="1"/>
-<wire x1="353.314" y1="158.496" x2="374.142" y2="158.496" width="0.1524" layer="91"/>
-<wire x1="374.142" y1="158.496" x2="374.142" y2="166.624" width="0.1524" layer="91"/>
+<wire x1="353.314" y1="150.876" x2="374.142" y2="150.876" width="0.1524" layer="91"/>
+<wire x1="374.142" y1="150.876" x2="374.142" y2="159.004" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="B1$2" class="0">
 <segment>
 <pinref part="DV2" gate="G$1" pin="B1"/>
 <pinref part="J2" gate="G$1" pin="2"/>
-<wire x1="353.314" y1="153.416" x2="376.682" y2="153.416" width="0.1524" layer="91"/>
-<wire x1="376.682" y1="153.416" x2="376.682" y2="166.624" width="0.1524" layer="91"/>
+<wire x1="353.314" y1="145.796" x2="376.682" y2="145.796" width="0.1524" layer="91"/>
+<wire x1="376.682" y1="145.796" x2="376.682" y2="159.004" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="A1$2" class="0">
 <segment>
 <pinref part="DV2" gate="G$1" pin="A1"/>
 <pinref part="J2" gate="G$1" pin="3"/>
-<wire x1="353.314" y1="148.336" x2="379.222" y2="148.336" width="0.1524" layer="91"/>
-<wire x1="379.222" y1="148.336" x2="379.222" y2="166.624" width="0.1524" layer="91"/>
+<wire x1="353.314" y1="140.716" x2="379.222" y2="140.716" width="0.1524" layer="91"/>
+<wire x1="379.222" y1="140.716" x2="379.222" y2="159.004" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="A2$2" class="0">
 <segment>
 <pinref part="DV2" gate="G$1" pin="A2"/>
 <pinref part="J2" gate="G$1" pin="4"/>
-<wire x1="353.314" y1="143.256" x2="381.762" y2="143.256" width="0.1524" layer="91"/>
-<wire x1="381.762" y1="143.256" x2="381.762" y2="166.624" width="0.1524" layer="91"/>
+<wire x1="353.314" y1="135.636" x2="381.762" y2="135.636" width="0.1524" layer="91"/>
+<wire x1="381.762" y1="135.636" x2="381.762" y2="159.004" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FPOW" class="0">
@@ -10950,14 +10962,14 @@ add resistor: R9-R10-R11-R12-R13-R14</text>
 <net name="R2-2" class="0">
 <segment>
 <pinref part="DV2" gate="G$1" pin="!FAULT!"/>
-<wire x1="353.314" y1="138.176" x2="358.14" y2="138.176" width="0.1524" layer="91"/>
+<wire x1="353.314" y1="130.556" x2="358.14" y2="130.556" width="0.1524" layer="91"/>
 <pinref part="D4" gate="G$1" pin="K"/>
 </segment>
 </net>
 <net name="R2-1" class="0">
 <segment>
 <pinref part="R17" gate="G$1" pin="PIN1"/>
-<wire x1="365.76" y1="138.176" x2="369.824" y2="138.176" width="0.1524" layer="91"/>
+<wire x1="365.76" y1="130.556" x2="369.824" y2="130.556" width="0.1524" layer="91"/>
 <pinref part="D4" gate="G$1" pin="A"/>
 </segment>
 </net>
