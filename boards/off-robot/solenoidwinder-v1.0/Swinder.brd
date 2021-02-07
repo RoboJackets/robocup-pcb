@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
@@ -198,9 +198,9 @@
 <text x="130" y="37" size="1.778" layer="21" font="vector" ratio="15">Spring 2021</text>
 <rectangle x1="130" y1="20" x2="143" y2="35" layer="21"/>
 <text x="130" y="17" size="1.778" layer="21" font="vector" ratio="15">ID</text>
-<text x="82" y="69" size="1.3" layer="21" font="vector" ratio="15">MOTOR 1</text>
-<text x="71.9" y="69" size="1.3" layer="21" font="vector" ratio="15">MOTOR 2</text>
-<text x="62.3" y="36.5" size="1.2" layer="21" font="vector" ratio="15" rot="R180">POWERSWITCH</text>
+<text x="81.8" y="69.9" size="1.3" layer="21" font="vector" ratio="15">MOTOR 1</text>
+<text x="71.4" y="70" size="1.3" layer="21" font="vector" ratio="15">MOTOR 2</text>
+<text x="60.3" y="36.5" size="1.2" layer="21" font="vector" ratio="15" rot="R180">BUTTON</text>
 <wire x1="53" y1="46.4" x2="53" y2="65.4" width="0.1" layer="21"/>
 <wire x1="53" y1="65.4" x2="60.2" y2="65.4" width="0.1" layer="21"/>
 <wire x1="60.2" y1="65.4" x2="60.2" y2="46.4" width="0.1" layer="21"/>
@@ -211,8 +211,9 @@
 <wire x1="110.6" y1="40.4" x2="103.3" y2="40.4" width="0.1" layer="21"/>
 <wire x1="103.3" y1="40.4" x2="103.3" y2="20" width="0.1" layer="21"/>
 <text x="102" y="20.4" size="1.778" layer="21" font="vector" ratio="15" rot="R90">FOR MTRAIN</text>
-<text x="10" y="35" size="1.2" layer="21" font="vector" ratio="15">+12V</text>
-<text x="15" y="35" size="1.2" layer="21" font="vector" ratio="15">+3.3V</text>
+<text x="10" y="62" size="1.2" layer="21" font="vector" ratio="15">+12V</text>
+<text x="15" y="62" size="1.2" layer="21" font="vector" ratio="15">+3.3V</text>
+<text x="77.2" y="77.2" size="1.3" layer="21" font="vector" ratio="15">FAULT</text>
 </plain>
 <libraries>
 <library name="RoboJackets-LEDs">
@@ -4121,17 +4122,17 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="D1" library="RoboJackets-LEDs" package="CHIP-LED0603" value="GREEN" x="16.48" y="33.02" smashed="yes" rot="R180">
-<attribute name="DIGIKEY" value="160-1446-1-ND" x="-38.13" y="106.68" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="LTST-C191KGKT" x="-38.13" y="106.68" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="17.115" y="33.655" size="1.27" layer="25" rot="R270"/>
-<attribute name="VALUE" x="14.575" y="33.655" size="1.27" layer="27" rot="R270"/>
+<element name="D1" library="RoboJackets-LEDs" package="CHIP-LED0603" value="GREEN" x="16.48" y="60.02" smashed="yes" rot="R180">
+<attribute name="DIGIKEY" value="160-1446-1-ND" x="-38.13" y="133.68" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="LTST-C191KGKT" x="-38.13" y="133.68" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="17.115" y="60.655" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="14.575" y="60.655" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="D2" library="RoboJackets-LEDs" package="CHIP-LED0603" value="GREEN" x="12.7" y="33.02" smashed="yes" rot="R180">
-<attribute name="DIGIKEY" value="160-1446-1-ND" x="-46.99" y="106.68" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="LTST-C191KGKT" x="-46.99" y="106.68" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="13.335" y="33.655" size="1.27" layer="25" rot="R270"/>
-<attribute name="VALUE" x="10.795" y="33.655" size="1.27" layer="27" rot="R270"/>
+<element name="D2" library="RoboJackets-LEDs" package="CHIP-LED0603" value="GREEN" x="12.7" y="60.02" smashed="yes" rot="R180">
+<attribute name="DIGIKEY" value="160-1446-1-ND" x="-46.99" y="133.68" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="LTST-C191KGKT" x="-46.99" y="133.68" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="13.335" y="60.655" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="10.795" y="60.655" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="D3" library="RoboJackets-LEDs" package="CHIP-LED0603" value="RED" x="84.47" y="74.93" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="160-1447-1-ND" x="13.35" y="148.59" size="1.778" layer="27" rot="R180" display="off"/>
@@ -4214,11 +4215,11 @@ design rules under a new name.</description>
 <element name="R14" library="RoboJackets-Resistors" package="R0603W" value="" x="30.48" y="73.66" smashed="yes">
 <attribute name="NAME" x="28.98" y="74.66" size="1" layer="25"/>
 </element>
-<element name="R15" library="RoboJackets-Resistors" package="R0603W" value="1K" x="16.51" y="49.53" smashed="yes" rot="R90">
-<attribute name="NAME" x="15.51" y="48.03" size="1" layer="25" rot="R90"/>
+<element name="R15" library="RoboJackets-Resistors" package="R0603W" value="1K" x="16.51" y="65.53" smashed="yes" rot="R90">
+<attribute name="NAME" x="15.51" y="64.03" size="1" layer="25" rot="R90"/>
 </element>
-<element name="R16" library="RoboJackets-Resistors" package="R0603W" value="1K" x="12.7" y="49.53" smashed="yes" rot="R90">
-<attribute name="NAME" x="11.7" y="48.03" size="1" layer="25" rot="R90"/>
+<element name="R16" library="RoboJackets-Resistors" package="R0603W" value="1K" x="12.7" y="65.53" smashed="yes" rot="R90">
+<attribute name="NAME" x="11.7" y="64.03" size="1" layer="25" rot="R90"/>
 </element>
 <element name="R17" library="RoboJackets-Resistors" package="R0603W" value="1K" x="74.82" y="83.82" smashed="yes" rot="R90">
 <attribute name="NAME" x="73.82" y="82.32" size="1" layer="25" rot="R90"/>
@@ -4229,11 +4230,11 @@ design rules under a new name.</description>
 <element name="R9" library="RoboJackets-Resistors" package="R0603W" value="" x="104.14" y="78.74" smashed="yes">
 <attribute name="NAME" x="102.64" y="79.74" size="1" layer="25"/>
 </element>
-<element name="U2" library="RoboJackets-Capacitors" package="UKL1E101KPDANATD" value="UKL1E101KPDANATD" x="60.96" y="83.82" smashed="yes">
+<element name="C1" library="RoboJackets-Capacitors" package="UKL1E101KPDANATD" value="UKL1E101KPDANATD" x="60.96" y="83.82" smashed="yes">
 <attribute name="NAME" x="57.15" y="88.392" size="1.27" layer="25"/>
 <attribute name="VALUE" x="66.768" y="77.15" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="U1" library="RoboJackets-Capacitors" package="UKL1E101KPDANATD" value="UKL1E101KPDANATD" x="135.89" y="83.82" smashed="yes">
+<element name="C2" library="RoboJackets-Capacitors" package="UKL1E101KPDANATD" value="UKL1E101KPDANATD" x="135.89" y="83.82" smashed="yes">
 <attribute name="NAME" x="132.08" y="88.392" size="1.27" layer="25"/>
 <attribute name="VALUE" x="141.768" y="77.08" size="1.27" layer="27" rot="R90"/>
 </element>
@@ -4259,8 +4260,8 @@ design rules under a new name.</description>
 <contactref element="D1" pad="C"/>
 <contactref element="D2" pad="C"/>
 <contactref element="J3" pad="P$1"/>
-<contactref element="U1" pad="P$2"/>
-<contactref element="U2" pad="P$2"/>
+<contactref element="C2" pad="P$2"/>
+<contactref element="C1" pad="P$2"/>
 <polygon width="0.1524" layer="16">
 <vertex x="1.27" y="101.6"/>
 <vertex x="1.27" y="1.27"/>
@@ -4268,12 +4269,12 @@ design rules under a new name.</description>
 <vertex x="158.75" y="100.33"/>
 <vertex x="158.75" y="101.6"/>
 </polygon>
-<wire x1="16.48" y1="32.27" x2="16.48" y2="27.48" width="0.5" layer="1"/>
-<via x="12.7" y="21" extent="1-16" drill="0.35"/>
-<wire x1="12.7" y1="21" x2="12.7" y2="24" width="1" layer="1"/>
-<wire x1="12.7" y1="24" x2="12.7" y2="32.27" width="1" layer="1"/>
-<wire x1="16.48" y1="27.48" x2="13" y2="24" width="0.5" layer="1"/>
-<wire x1="13" y1="24" x2="12.7" y2="24" width="0.5" layer="1"/>
+<wire x1="16.48" y1="59.27" x2="16.48" y2="54.48" width="0.5" layer="1"/>
+<via x="12.7" y="48" extent="1-16" drill="0.35"/>
+<wire x1="12.7" y1="48" x2="12.7" y2="51" width="1" layer="1"/>
+<wire x1="12.7" y1="51" x2="12.7" y2="59.27" width="1" layer="1"/>
+<wire x1="16.48" y1="54.48" x2="13" y2="51" width="0.5" layer="1"/>
+<wire x1="13" y1="51" x2="12.7" y2="51" width="0.5" layer="1"/>
 <contactref element="S1" pad="2.1"/>
 <contactref element="S1" pad="2.2"/>
 <wire x1="57.8" y1="33.05" x2="57.8" y2="28.95" width="0.5" layer="1"/>
@@ -4286,14 +4287,13 @@ design rules under a new name.</description>
 <contactref element="KIT1" pad="VIN"/>
 <contactref element="R16" pad="2"/>
 <contactref element="F1" pad="2"/>
-<contactref element="U1" pad="P$1"/>
+<contactref element="C2" pad="P$1"/>
 <contactref element="DV1" pad="9"/>
-<contactref element="U2" pad="P$1"/>
+<contactref element="C1" pad="P$1"/>
 <contactref element="DV2" pad="9"/>
 <wire x1="10.693" y1="88.646" x2="15.047" y2="93" width="1" layer="1"/>
 <wire x1="15.047" y1="93" x2="17" y2="93" width="1" layer="1"/>
-<wire x1="17" y1="93" x2="20" y2="93" width="1" layer="1"/>
-<wire x1="20" y1="93" x2="51" y2="93" width="1" layer="1"/>
+<wire x1="17" y1="93" x2="51" y2="93" width="1" layer="1"/>
 <wire x1="59.21" y1="84.79" x2="51" y2="93" width="1" layer="1"/>
 <wire x1="59.21" y1="84.79" x2="59.21" y2="83.82" width="1" layer="1"/>
 <wire x1="49.53" y1="81.28" x2="58.28" y2="81.28" width="1" layer="1"/>
@@ -4308,10 +4308,10 @@ design rules under a new name.</description>
 <wire x1="134.14" y1="82.14" x2="134.14" y2="19.14" width="1" layer="1"/>
 <wire x1="128.97" y1="13.97" x2="92.71" y2="13.97" width="1" layer="1"/>
 <wire x1="134.14" y1="19.14" x2="128.97" y2="13.97" width="1" layer="1"/>
-<wire x1="12.7" y1="50.305" x2="12.7" y2="67.7" width="1" layer="1"/>
+<wire x1="12.7" y1="66.305" x2="12.7" y2="67.7" width="1" layer="1"/>
 <wire x1="20" y1="75" x2="20" y2="90" width="1" layer="1"/>
 <wire x1="20" y1="90" x2="17" y2="93" width="1" layer="1"/>
-<wire x1="12.7" y1="67.7" x2="20" y2="75" width="1" layer="1"/>
+<wire x1="20" y1="75" x2="12.7" y2="67.7" width="1" layer="1"/>
 </signal>
 <signal name="+3.3V">
 <contactref element="KIT1" pad="VOUT"/>
@@ -4344,8 +4344,7 @@ design rules under a new name.</description>
 <wire x1="30.88" y1="71.12" x2="29.705" y2="72.295" width="0.5" layer="1"/>
 <wire x1="29.705" y1="73.66" x2="29.705" y2="76.2" width="0.5" layer="1"/>
 <wire x1="29.705" y1="76.2" x2="29.705" y2="78.74" width="0.5" layer="1"/>
-<wire x1="31" y1="67" x2="16.51" y2="52.51" width="0.5" layer="1"/>
-<wire x1="16.51" y1="52.51" x2="16.51" y2="50.305" width="0.5" layer="1"/>
+<wire x1="16.51" y1="66.305" x2="16.51" y2="68.51" width="0.5" layer="1"/>
 <wire x1="36.83" y1="71.12" x2="40.55" y2="67.4" width="0.5" layer="1"/>
 <wire x1="54.6" y1="67.4" x2="71.8" y2="84.6" width="0.5" layer="1"/>
 <wire x1="71.8" y1="84.6" x2="74.815" y2="84.6" width="0.5" layer="1"/>
@@ -4357,6 +4356,8 @@ design rules under a new name.</description>
 <wire x1="98.09908125" y1="71" x2="104" y2="71" width="0.5" layer="1"/>
 <wire x1="85.10668125" y1="83.9924" x2="98.09908125" y2="71" width="0.5" layer="1"/>
 <wire x1="111.76" y1="68.58" x2="111.76" y2="71.12" width="0.5" layer="1"/>
+<wire x1="16.51" y1="68.51" x2="21.66" y2="73.66" width="0.5" layer="1"/>
+<wire x1="21.66" y1="73.66" x2="29.705" y2="73.66" width="0.5" layer="1"/>
 <wire x1="103.365" y1="78.74" x2="103.365" y2="76.2" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="M0-1">
@@ -4530,13 +4531,13 @@ design rules under a new name.</description>
 <signal name="G2">
 <contactref element="R15" pad="1"/>
 <contactref element="D1" pad="A"/>
-<wire x1="16.51" y1="48.755" x2="16.51" y2="33.8" width="0.5" layer="1"/>
-<wire x1="16.51" y1="33.8" x2="16.48" y2="33.77" width="0.5" layer="1"/>
+<wire x1="16.51" y1="64.755" x2="16.51" y2="60.8" width="0.5" layer="1"/>
+<wire x1="16.51" y1="60.8" x2="16.48" y2="60.77" width="0.5" layer="1"/>
 </signal>
 <signal name="G1">
 <contactref element="R16" pad="1"/>
 <contactref element="D2" pad="A"/>
-<wire x1="12.7" y1="33.77" x2="12.7" y2="48.755" width="1" layer="1"/>
+<wire x1="12.7" y1="64.755" x2="12.7" y2="60.77" width="1" layer="1"/>
 </signal>
 <signal name="DIR2A">
 <contactref element="KIT1" pad="P$24"/>
