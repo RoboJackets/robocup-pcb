@@ -14698,29 +14698,26 @@ Source: AVX .. aphvc.pdf</description>
 <sheets>
 <sheet>
 <plain>
-<text x="248.92" y="152.4" size="1.778" layer="97">Changing Microstepping Factor:
+<text x="248.92" y="149.86" size="1.778" layer="97">Changing Microstepping Factor:
 
 [Full Step] 
-don't populate: R9-R10-R11-R12-R13-R14
+don't populate: R3-R4-R5-R6-R7-R8
 
 [1/2 Step]
-add resistor: R9-R12
-don't populate: R10-R11-R13-R14
+add resistor: R3-R4
 
 [1/4 Step]
-add resistor: R10-R13
-don't populate: R9-R11-R12-R14
+add resistor: R5-R6
+
 </text>
-<text x="248.92" y="121.92" size="1.778" layer="97">[1/8 Step]
-add resistor: R9-R10-R12-R13
-don't populate: R11-R14
+<text x="248.92" y="129.54" size="1.778" layer="97">[1/8 Step]
+add resistor: R3-R4-R5-R6
 
 [1/16 Step]
-add resistor: R11-R14
-don't populate: R9-R10-R12-R13
+add resistor: R7-R8
 
 [1/32 Step]
-add resistor: R9-R10-R11-R12-R13-R14</text>
+add resistor: R3-R4-R5-R6-R7-R8</text>
 <wire x1="15.24" y1="127" x2="177.8" y2="127" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="177.8" y1="127" x2="177.8" y2="25.4" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="177.8" y1="25.4" x2="15.24" y2="25.4" width="0.1524" layer="97" style="shortdash"/>
