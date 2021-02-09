@@ -14643,12 +14643,12 @@ Source: AVX .. aphvc.pdf</description>
 <part name="SUPPLY2" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="U1" library="StepperMotorDriver" deviceset="DRV8825" device=""/>
 <part name="U2" library="StepperMotorDriver" deviceset="DRV8825" device=""/>
-<part name="R9" library="RoboJackets-Resistors" deviceset="R0603W" device=""/>
-<part name="R10" library="RoboJackets-Resistors" deviceset="R0603W" device=""/>
-<part name="R11" library="RoboJackets-Resistors" deviceset="R0603W" device=""/>
-<part name="R12" library="RoboJackets-Resistors" deviceset="R0603W" device=""/>
-<part name="R13" library="RoboJackets-Resistors" deviceset="R0603W" device=""/>
-<part name="R14" library="RoboJackets-Resistors" deviceset="R0603W" device=""/>
+<part name="R9" library="RoboJackets-Resistors" deviceset="R0603W" device="" value="0"/>
+<part name="R10" library="RoboJackets-Resistors" deviceset="R0603W" device="" value="0"/>
+<part name="R11" library="RoboJackets-Resistors" deviceset="R0603W" device="" value="0"/>
+<part name="R12" library="RoboJackets-Resistors" deviceset="R0603W" device="" value="0"/>
+<part name="R13" library="RoboJackets-Resistors" deviceset="R0603W" device="" value="0"/>
+<part name="R14" library="RoboJackets-Resistors" deviceset="R0603W" device="" value="0"/>
 <part name="SUPPLY3" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="SUPPLY5" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="SUPPLY7" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
@@ -14746,7 +14746,7 @@ add resistor: R9-R10-R11-R12-R13-R14</text>
 <text x="157.48" y="149.86" size="1.778" layer="97">Microcontroller Options:
 This board is compatible with both mBed
 and mTrain microcontrollers. This schematic contains 
-mBed. Since, mBed and mTrain have identical pinouts, 
+mBed. Since, mBed and mTrain have similiar pinouts, 
 mTrain can be used. Close the following jumpers 
 depending on microcontroller:
 
@@ -14781,28 +14781,28 @@ close: J4-J5-J6-J7</text>
 <attribute name="VALUE" x="327.914" y="128.524" size="1.778" layer="96"/>
 </instance>
 <instance part="R9" gate="G$1" x="314.452" y="191.516" smashed="yes">
-<attribute name="NAME" x="310.642" y="193.0146" size="1.778" layer="95"/>
-<attribute name="VALUE" x="310.642" y="188.214" size="1.778" layer="96"/>
+<attribute name="NAME" x="315.722" y="193.0146" size="1.778" layer="95"/>
+<attribute name="VALUE" x="313.182" y="188.214" size="1.778" layer="96"/>
 </instance>
 <instance part="R10" gate="G$1" x="314.452" y="186.436" smashed="yes">
-<attribute name="NAME" x="310.642" y="187.9346" size="1.778" layer="95"/>
-<attribute name="VALUE" x="310.642" y="183.134" size="1.778" layer="96"/>
+<attribute name="NAME" x="315.722" y="187.9346" size="1.778" layer="95"/>
+<attribute name="VALUE" x="313.182" y="183.134" size="1.778" layer="96"/>
 </instance>
 <instance part="R11" gate="G$1" x="314.452" y="181.356" smashed="yes">
-<attribute name="NAME" x="310.642" y="182.8546" size="1.778" layer="95"/>
-<attribute name="VALUE" x="310.642" y="178.054" size="1.778" layer="96"/>
+<attribute name="NAME" x="315.722" y="182.8546" size="1.778" layer="95"/>
+<attribute name="VALUE" x="313.182" y="178.054" size="1.778" layer="96"/>
 </instance>
 <instance part="R12" gate="G$1" x="315.214" y="120.396" smashed="yes">
-<attribute name="NAME" x="311.404" y="121.8946" size="1.778" layer="95"/>
-<attribute name="VALUE" x="311.404" y="117.094" size="1.778" layer="96"/>
+<attribute name="NAME" x="316.484" y="121.8946" size="1.778" layer="95"/>
+<attribute name="VALUE" x="313.944" y="117.094" size="1.778" layer="96"/>
 </instance>
 <instance part="R13" gate="G$1" x="315.214" y="115.316" smashed="yes">
-<attribute name="NAME" x="311.404" y="116.8146" size="1.778" layer="95"/>
-<attribute name="VALUE" x="311.404" y="112.014" size="1.778" layer="96"/>
+<attribute name="NAME" x="316.484" y="116.8146" size="1.778" layer="95"/>
+<attribute name="VALUE" x="313.944" y="112.014" size="1.778" layer="96"/>
 </instance>
 <instance part="R14" gate="G$1" x="315.214" y="110.236" smashed="yes">
-<attribute name="NAME" x="311.404" y="111.7346" size="1.778" layer="95"/>
-<attribute name="VALUE" x="311.404" y="106.934" size="1.778" layer="96"/>
+<attribute name="NAME" x="316.484" y="111.7346" size="1.778" layer="95"/>
+<attribute name="VALUE" x="313.944" y="106.934" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY3" gate="P" x="312.674" y="105.156" smashed="yes" rot="R90">
 <attribute name="VALUE" x="310.769" y="107.823" size="1.778" layer="96" rot="R180"/>

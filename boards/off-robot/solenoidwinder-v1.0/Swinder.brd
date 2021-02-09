@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
@@ -5287,19 +5287,19 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <element name="U3" library="RoboJackets-Boards" package="MBED-KIT" value="MBED_NXP_LPC1768" x="81.28" y="35.56" smashed="yes" rot="R180">
 <attribute name="NAME" x="94.28" y="8.22" size="1.27" layer="25" rot="R180"/>
 </element>
-<element name="R10" library="RoboJackets-Resistors" package="R0603W" value="" x="104.14" y="76.2" smashed="yes">
+<element name="R10" library="RoboJackets-Resistors" package="R0603W" value="0" x="104.14" y="76.2" smashed="yes">
 <attribute name="NAME" x="99.64" y="77.2" size="1" layer="25"/>
 </element>
-<element name="R11" library="RoboJackets-Resistors" package="R0603W" value="" x="104.14" y="73.66" smashed="yes">
+<element name="R11" library="RoboJackets-Resistors" package="R0603W" value="0" x="104.14" y="73.66" smashed="yes">
 <attribute name="NAME" x="99.64" y="74.66" size="1" layer="25"/>
 </element>
-<element name="R12" library="RoboJackets-Resistors" package="R0603W" value="" x="30.48" y="78.74" smashed="yes">
+<element name="R12" library="RoboJackets-Resistors" package="R0603W" value="0" x="30.48" y="78.74" smashed="yes">
 <attribute name="NAME" x="28.98" y="79.74" size="1" layer="25"/>
 </element>
-<element name="R13" library="RoboJackets-Resistors" package="R0603W" value="" x="30.48" y="76.2" smashed="yes">
+<element name="R13" library="RoboJackets-Resistors" package="R0603W" value="0" x="30.48" y="76.2" smashed="yes">
 <attribute name="NAME" x="25.98" y="77.2" size="1" layer="25"/>
 </element>
-<element name="R14" library="RoboJackets-Resistors" package="R0603W" value="" x="30.48" y="73.66" smashed="yes">
+<element name="R14" library="RoboJackets-Resistors" package="R0603W" value="0" x="30.48" y="73.66" smashed="yes">
 <attribute name="NAME" x="25.98" y="74.66" size="1" layer="25"/>
 </element>
 <element name="R15" library="RoboJackets-Resistors" package="R0603W" value="1K" x="16.51" y="65.53" smashed="yes" rot="R90">
@@ -5314,7 +5314,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <element name="R18" library="RoboJackets-Resistors" package="R0603W" value="1K" x="84.47" y="83.82" smashed="yes" rot="R90">
 <attribute name="NAME" x="83.47" y="82.32" size="1" layer="25" rot="R90"/>
 </element>
-<element name="R9" library="RoboJackets-Resistors" package="R0603W" value="" x="104.14" y="78.74" smashed="yes">
+<element name="R9" library="RoboJackets-Resistors" package="R0603W" value="0" x="104.14" y="78.74" smashed="yes">
 <attribute name="NAME" x="102.64" y="79.74" size="1" layer="25"/>
 </element>
 <element name="C1" library="RoboJackets-Capacitors" package="UKL1E101KPDANATD" value="UKL1E101KPDANATD" x="60.96" y="83.82" smashed="yes">
