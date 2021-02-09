@@ -260,35 +260,6 @@ In this library you will find LEDs and other visual output devices.
 </package>
 </packages>
 </library>
-<library name="StepperMotorDriver">
-<packages>
-<package name="DRV8825">
-<wire x1="-7.62" y1="10.16" x2="7.62" y2="10.16" width="0.127" layer="21"/>
-<wire x1="7.62" y1="10.16" x2="7.62" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="7.62" y1="-10.16" x2="-7.62" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="-10.16" x2="-7.62" y2="10.16" width="0.127" layer="21"/>
-<pad name="1" x="-6.35" y="8.89" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
-<pad name="2" x="-6.35" y="6.35" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
-<pad name="3" x="-6.35" y="3.81" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
-<pad name="4" x="-6.35" y="1.27" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
-<pad name="5" x="-6.35" y="-1.27" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
-<pad name="6" x="-6.35" y="-3.81" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
-<pad name="7" x="-6.35" y="-6.35" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
-<pad name="8" x="-6.35" y="-8.89" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
-<pad name="9" x="6.35" y="8.89" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
-<pad name="10" x="6.35" y="6.35" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
-<pad name="11" x="6.35" y="3.81" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
-<pad name="12" x="6.35" y="1.27" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
-<pad name="13" x="6.35" y="-1.27" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
-<pad name="14" x="6.35" y="-3.81" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
-<pad name="15" x="6.35" y="-6.35" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
-<pad name="16" x="6.35" y="-8.89" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
-<circle x="-4.445" y="8.89" radius="0.567959375" width="0" layer="21"/>
-<text x="-7.62" y="10.541" size="1.27" layer="25">&gt;NAME</text>
-<text x="-7.62" y="-11.938" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-</library>
 <library name="RoboJackets-Fuses">
 <packages>
 <package name="F1206">
@@ -654,6 +625,31 @@ In this library you will find all the connectors used on any of our boards.
 <rectangle x1="-0.6452" y1="18.1465" x2="0.6586" y2="18.4829" layer="51" rot="R270"/>
 <rectangle x1="-1.4443" y1="18.1465" x2="-0.1405" y2="18.4829" layer="51" rot="R270"/>
 <rectangle x1="-2.2433" y1="18.1465" x2="-0.9395" y2="18.4829" layer="51" rot="R270"/>
+</package>
+<package name="DRV8825">
+<wire x1="-7.62" y1="10.16" x2="7.62" y2="10.16" width="0.127" layer="21"/>
+<wire x1="7.62" y1="10.16" x2="7.62" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-10.16" x2="-7.62" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-10.16" x2="-7.62" y2="10.16" width="0.127" layer="21"/>
+<pad name="1" x="-6.35" y="8.89" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="2" x="-6.35" y="6.35" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="3" x="-6.35" y="3.81" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="4" x="-6.35" y="1.27" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="5" x="-6.35" y="-1.27" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="6" x="-6.35" y="-3.81" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="7" x="-6.35" y="-6.35" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="8" x="-6.35" y="-8.89" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="9" x="6.35" y="8.89" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="10" x="6.35" y="6.35" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="11" x="6.35" y="3.81" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="12" x="6.35" y="1.27" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="13" x="6.35" y="-1.27" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="14" x="6.35" y="-3.81" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="15" x="6.35" y="-6.35" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="16" x="6.35" y="-8.89" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<circle x="-4.445" y="8.89" radius="0.567959375" width="0" layer="21"/>
+<text x="-7.62" y="10.541" size="1.27" layer="25">&gt;NAME</text>
+<text x="-7.62" y="-11.938" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 </library>
@@ -5233,11 +5229,11 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="NAME" x="76.455" y="75.565" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="72.915" y="75.565" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="U1" library="StepperMotorDriver" package="DRV8825" value="DRV8825" x="118.11" y="72.39" smashed="yes">
+<element name="U1" library="RoboJackets-Boards" package="DRV8825" value="DRV8825" x="118.11" y="72.39" smashed="yes">
 <attribute name="NAME" x="110.49" y="82.931" size="1.27" layer="25"/>
 <attribute name="VALUE" x="110.49" y="60.452" size="1.27" layer="27"/>
 </element>
-<element name="U2" library="StepperMotorDriver" package="DRV8825" value="DRV8825" x="43.18" y="72.39" smashed="yes">
+<element name="U2" library="RoboJackets-Boards" package="DRV8825" value="DRV8825" x="43.18" y="72.39" smashed="yes">
 <attribute name="NAME" x="35.56" y="82.931" size="1.27" layer="25"/>
 <attribute name="VALUE" x="35.56" y="60.452" size="1.27" layer="27"/>
 </element>
@@ -5395,6 +5391,17 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <vertex x="143" y="98"/>
 <vertex x="143" y="99"/>
 </polygon>
+<wire x1="124.46" y1="78.74" x2="137.64" y2="83.82" width="0" layer="19" extent="1-1"/>
+<wire x1="124.46" y1="63.5" x2="124.46" y2="78.74" width="0" layer="19" extent="1-1"/>
+<wire x1="92.71" y1="11.43" x2="124.46" y2="63.5" width="0" layer="19" extent="1-1"/>
+<wire x1="61" y1="25" x2="92.71" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="49.53" y1="63.5" x2="56.3" y2="41.25" width="0" layer="19" extent="1-1"/>
+<wire x1="49.53" y1="78.74" x2="49.53" y2="63.5" width="0" layer="19" extent="1-1"/>
+<wire x1="62.71" y1="83.82" x2="49.53" y2="78.74" width="0" layer="19" extent="1-1"/>
+<wire x1="16.48" y1="59.27" x2="49.53" y2="63.5" width="0" layer="19" extent="1-1"/>
+<wire x1="12.7" y1="59.27" x2="16.48" y2="59.27" width="0" layer="19" extent="1-1"/>
+<wire x1="7.7" y1="48" x2="12.7" y2="48" width="0" layer="19" extent="1-1"/>
+<wire x1="8.97" y1="76.2" x2="12.7" y2="59.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+12V">
 <contactref element="U3" pad="VIN"/>
