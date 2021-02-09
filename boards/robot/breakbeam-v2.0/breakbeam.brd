@@ -23,17 +23,17 @@
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -47,9 +47,9 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -168,9 +168,7 @@
 <wire x1="0" y1="14.1732" x2="0" y2="0" width="0" layer="20"/>
 <hole x="9.644990625" y="4.499990625" drill="2.397759375"/>
 <hole x="9.644990625" y="10.9982" drill="2.397759375"/>
-<text x="19" y="1" size="1.016" layer="22" font="vector" rot="MR0">Breakbeam
-v2.0
-Spring 2021</text>
+<text x="19.1" y="0.6" size="1.016" layer="22" font="vector" rot="MR0">Breakbeam-v2.0</text>
 <text x="1.5" y="3.5" size="2.54" layer="21" font="vector">+</text>
 <text x="1.5" y="12.5" size="2.54" layer="21" font="vector">_</text>
 <text x="1.5" y="3.5" size="2.54" layer="22" font="vector">+</text>
@@ -180,6 +178,9 @@ Spring 2021</text>
 <text x="16.5" y="13.7" size="2.54" layer="21" font="vector">_</text>
 <text x="16.4" y="7.2" size="2.1844" layer="22" font="vector">+</text>
 <text x="16.4" y="7.2" size="2.1844" layer="21" font="vector">+</text>
+<text x="14.5" y="7" size="1.27" layer="21" font="vector" rot="R90">Receiver</text>
+<text x="14.5" y="13.5" size="1.27" layer="22" font="vector" rot="SMR270">Transmitter</text>
+<text x="8.1" y="0.6" size="1.016" layer="21" font="vector">Breakbeam-v2.0</text>
 </plain>
 <libraries>
 <library name="RoboJackets-LEDs">
@@ -3683,7 +3684,8 @@ Your Eurocircuits Team
 <element name="LED1" library="RoboJackets-LEDs" package="LED3MM" value="LED-TH" x="17.145" y="10.9982" smashed="yes" rot="R90">
 <attribute name="VALUE" x="18.796" y="12.9032" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="U$1" library="RoboJackets-Aesthetics" package="ROBOBUZZ_0.2X" value="" x="14" y="5.5" smashed="yes" rot="MR0"/>
+<element name="U$1" library="RoboJackets-Aesthetics" package="ROBOBUZZ_0.2X" value="" x="17.5" y="2.5" smashed="yes" rot="MR0"/>
+<element name="U$2" library="RoboJackets-Aesthetics" package="ROBOBUZZ_0.2X" value="" x="17.5" y="2.5" smashed="yes"/>
 </elements>
 <signals>
 <signal name="ANODE">
@@ -3715,10 +3717,6 @@ Your Eurocircuits Team
 </board>
 </drawing>
 <compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
 <note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports URNs for individual library
 assets (packages, symbols, and devices). The URNs of those assets

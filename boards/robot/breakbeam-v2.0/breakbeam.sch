@@ -3561,10 +3561,11 @@ In this library you will find LEDs and other visual output devices.
 - Both receiver and transmitter
   will use the same LED sockets.
 
-- Contrary to previous breakbeam
-  versions we only need to use
-  one side of this board for both
-  transmitter and emitter.</text>
+- If using as transmitter, assemble the
+  IR LED on the bottom side of the board.
+  
+- If used as receiver, assemble the 
+  phototransistor on the top side.</text>
 <wire x1="251.46" y1="424.18" x2="373.38" y2="424.18" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="373.38" y1="424.18" x2="373.38" y2="365.76" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="373.38" y1="365.76" x2="251.46" y2="365.76" width="0.1524" layer="97" style="shortdash"/>
