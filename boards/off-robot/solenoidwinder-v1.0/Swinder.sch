@@ -3775,6 +3775,31 @@ In this library you will find frames that can be used to help organize a schemat
 <rectangle x1="-1.4443" y1="18.1465" x2="-0.1405" y2="18.4829" layer="51" rot="R270"/>
 <rectangle x1="-2.2433" y1="18.1465" x2="-0.9395" y2="18.4829" layer="51" rot="R270"/>
 </package>
+<package name="DRV8825">
+<wire x1="-7.62" y1="10.16" x2="7.62" y2="10.16" width="0.127" layer="21"/>
+<wire x1="7.62" y1="10.16" x2="7.62" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-10.16" x2="-7.62" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-10.16" x2="-7.62" y2="10.16" width="0.127" layer="21"/>
+<pad name="1" x="-6.35" y="8.89" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="2" x="-6.35" y="6.35" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="3" x="-6.35" y="3.81" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="4" x="-6.35" y="1.27" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="5" x="-6.35" y="-1.27" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="6" x="-6.35" y="-3.81" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="7" x="-6.35" y="-6.35" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="8" x="-6.35" y="-8.89" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="9" x="6.35" y="8.89" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="10" x="6.35" y="6.35" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="11" x="6.35" y="3.81" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="12" x="6.35" y="1.27" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="13" x="6.35" y="-1.27" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="14" x="6.35" y="-3.81" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="15" x="6.35" y="-6.35" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<pad name="16" x="6.35" y="-8.89" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
+<circle x="-4.445" y="8.89" radius="0.567959375" width="0" layer="21"/>
+<text x="-7.62" y="10.541" size="1.27" layer="25">&gt;NAME</text>
+<text x="-7.62" y="-11.938" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MBED">
@@ -9490,6 +9515,29 @@ In this library you will find frames that can be used to help organize a schemat
 <pin name="VU" x="48.26" y="20.32" visible="pin" length="short" direction="pwr" rot="R180"/>
 <pin name="VO" x="48.26" y="22.86" visible="pin" length="short" direction="pwr" rot="R180"/>
 </symbol>
+<symbol name="DRV8825">
+<pin name="M2" x="-20.32" y="2.54" length="middle" direction="pas"/>
+<pin name="M1" x="-20.32" y="7.62" length="middle" direction="pas"/>
+<pin name="M0" x="-20.32" y="12.7" length="middle" direction="pas"/>
+<pin name="!ENABLE!" x="-20.32" y="17.78" length="middle" direction="pas"/>
+<pin name="!RESET!" x="-20.32" y="-2.54" length="middle" direction="pas"/>
+<pin name="!SLEEP!" x="-20.32" y="-7.62" length="middle" direction="pas"/>
+<pin name="STEP" x="-20.32" y="-12.7" length="middle" direction="pas"/>
+<pin name="B1" x="20.32" y="2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="B2" x="20.32" y="7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="GND" x="20.32" y="12.7" length="middle" direction="pas" rot="R180"/>
+<pin name="VMOT" x="20.32" y="17.78" length="middle" direction="pas" rot="R180"/>
+<pin name="A1" x="20.32" y="-2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="A2" x="20.32" y="-7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="!FAULT!" x="20.32" y="-12.7" length="middle" direction="pas" rot="R180"/>
+<pin name="DIR" x="-20.32" y="-17.78" length="middle" direction="pas"/>
+<wire x1="-15.24" y1="20.32" x2="-15.24" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-20.32" x2="15.24" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-20.32" x2="15.24" y2="20.32" width="0.254" layer="94"/>
+<wire x1="15.24" y1="20.32" x2="-15.24" y2="20.32" width="0.254" layer="94"/>
+<text x="-15.24" y="-22.86" size="1.778" layer="95">&gt;NAME</text>
+<text x="-15.24" y="20.828" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MBED_NXP_LPC1768" prefix="KIT">
@@ -9547,6 +9595,35 @@ In this library you will find frames that can be used to help organize a schemat
 <connect gate="KIT" pin="VIN" pad="VIN"/>
 <connect gate="KIT" pin="VO" pad="VOUT"/>
 <connect gate="KIT" pin="VU" pad="VU"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DRV8825" prefix="U">
+<gates>
+<gate name="G$1" symbol="DRV8825" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DRV8825">
+<connects>
+<connect gate="G$1" pin="!ENABLE!" pad="1"/>
+<connect gate="G$1" pin="!FAULT!" pad="15"/>
+<connect gate="G$1" pin="!RESET!" pad="5"/>
+<connect gate="G$1" pin="!SLEEP!" pad="6"/>
+<connect gate="G$1" pin="A1" pad="13"/>
+<connect gate="G$1" pin="A2" pad="14"/>
+<connect gate="G$1" pin="B1" pad="12"/>
+<connect gate="G$1" pin="B2" pad="11"/>
+<connect gate="G$1" pin="DIR" pad="8"/>
+<connect gate="G$1" pin="GND" pad="10 16"/>
+<connect gate="G$1" pin="M0" pad="2"/>
+<connect gate="G$1" pin="M1" pad="3"/>
+<connect gate="G$1" pin="M2" pad="4"/>
+<connect gate="G$1" pin="STEP" pad="7"/>
+<connect gate="G$1" pin="VMOT" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -9680,91 +9757,6 @@ In this library the device names are the same as the pin names of the symbols, t
 </gates>
 <devices>
 <device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="StepperMotorDriver">
-<packages>
-<package name="DRV8825">
-<wire x1="-7.62" y1="10.16" x2="7.62" y2="10.16" width="0.127" layer="21"/>
-<wire x1="7.62" y1="10.16" x2="7.62" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="7.62" y1="-10.16" x2="-7.62" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="-10.16" x2="-7.62" y2="10.16" width="0.127" layer="21"/>
-<pad name="1" x="-6.35" y="8.89" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
-<pad name="2" x="-6.35" y="6.35" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
-<pad name="3" x="-6.35" y="3.81" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
-<pad name="4" x="-6.35" y="1.27" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
-<pad name="5" x="-6.35" y="-1.27" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
-<pad name="6" x="-6.35" y="-3.81" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
-<pad name="7" x="-6.35" y="-6.35" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
-<pad name="8" x="-6.35" y="-8.89" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
-<pad name="9" x="6.35" y="8.89" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
-<pad name="10" x="6.35" y="6.35" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
-<pad name="11" x="6.35" y="3.81" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
-<pad name="12" x="6.35" y="1.27" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
-<pad name="13" x="6.35" y="-1.27" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
-<pad name="14" x="6.35" y="-3.81" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
-<pad name="15" x="6.35" y="-6.35" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
-<pad name="16" x="6.35" y="-8.89" drill="0.6" diameter="1.016" shape="square" rot="R180"/>
-<circle x="-4.445" y="8.89" radius="0.567959375" width="0" layer="21"/>
-<text x="-7.62" y="10.541" size="1.27" layer="25">&gt;NAME</text>
-<text x="-7.62" y="-11.938" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="DRV8825">
-<pin name="M2" x="-20.32" y="2.54" length="middle" direction="pas"/>
-<pin name="M1" x="-20.32" y="7.62" length="middle" direction="pas"/>
-<pin name="M0" x="-20.32" y="12.7" length="middle" direction="pas"/>
-<pin name="!ENABLE!" x="-20.32" y="17.78" length="middle" direction="pas"/>
-<pin name="!RESET!" x="-20.32" y="-2.54" length="middle" direction="pas"/>
-<pin name="!SLEEP!" x="-20.32" y="-7.62" length="middle" direction="pas"/>
-<pin name="STEP" x="-20.32" y="-12.7" length="middle" direction="pas"/>
-<pin name="B1" x="20.32" y="2.54" length="middle" direction="pas" rot="R180"/>
-<pin name="B2" x="20.32" y="7.62" length="middle" direction="pas" rot="R180"/>
-<pin name="GND" x="20.32" y="12.7" length="middle" direction="pas" rot="R180"/>
-<pin name="VMOT" x="20.32" y="17.78" length="middle" direction="pas" rot="R180"/>
-<pin name="A1" x="20.32" y="-2.54" length="middle" direction="pas" rot="R180"/>
-<pin name="A2" x="20.32" y="-7.62" length="middle" direction="pas" rot="R180"/>
-<pin name="!FAULT!" x="20.32" y="-12.7" length="middle" direction="pas" rot="R180"/>
-<pin name="DIR" x="-20.32" y="-17.78" length="middle" direction="pas"/>
-<wire x1="-15.24" y1="20.32" x2="-15.24" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="-20.32" x2="15.24" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-20.32" x2="15.24" y2="20.32" width="0.254" layer="94"/>
-<wire x1="15.24" y1="20.32" x2="-15.24" y2="20.32" width="0.254" layer="94"/>
-<text x="-15.24" y="-22.86" size="1.778" layer="95">&gt;NAME</text>
-<text x="-15.24" y="20.828" size="1.778" layer="96">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="DRV8825">
-<gates>
-<gate name="G$1" symbol="DRV8825" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="DRV8825">
-<connects>
-<connect gate="G$1" pin="!ENABLE!" pad="1"/>
-<connect gate="G$1" pin="!FAULT!" pad="15"/>
-<connect gate="G$1" pin="!RESET!" pad="5"/>
-<connect gate="G$1" pin="!SLEEP!" pad="6"/>
-<connect gate="G$1" pin="A1" pad="13"/>
-<connect gate="G$1" pin="A2" pad="14"/>
-<connect gate="G$1" pin="B1" pad="12"/>
-<connect gate="G$1" pin="B2" pad="11"/>
-<connect gate="G$1" pin="DIR" pad="8"/>
-<connect gate="G$1" pin="GND" pad="10 16"/>
-<connect gate="G$1" pin="M0" pad="2"/>
-<connect gate="G$1" pin="M1" pad="3"/>
-<connect gate="G$1" pin="M2" pad="4"/>
-<connect gate="G$1" pin="STEP" pad="7"/>
-<connect gate="G$1" pin="VMOT" pad="9"/>
-</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -14641,8 +14633,8 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND1" library="RoboJackets-Supplies" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
 <part name="SUPPLY2" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
-<part name="U1" library="StepperMotorDriver" deviceset="DRV8825" device=""/>
-<part name="U2" library="StepperMotorDriver" deviceset="DRV8825" device=""/>
+<part name="U1" library="RoboJackets-Boards" deviceset="DRV8825" device=""/>
+<part name="U2" library="RoboJackets-Boards" deviceset="DRV8825" device=""/>
 <part name="R9" library="RoboJackets-Resistors" deviceset="R0603W" device="" value="0"/>
 <part name="R10" library="RoboJackets-Resistors" deviceset="R0603W" device="" value="0"/>
 <part name="R11" library="RoboJackets-Resistors" deviceset="R0603W" device="" value="0"/>
