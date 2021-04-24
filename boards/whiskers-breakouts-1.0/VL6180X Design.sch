@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4495,6 +4495,56 @@ In this library you will find all the connectors used on any of our boards.
 </deviceset>
 </devicesets>
 </library>
+<library name="RoboJackets-Resistors">
+<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
+&lt;hr&gt;
+&lt;h1&gt;RoboJackets EAGLE Libraries - Resistors&lt;/h1&gt;&lt;/br&gt;
+&lt;p&gt;
+In this library you will find resistors. If you are looking for a common package, use the default &lt;b&gt;rcl &lt;/b&gt;library provided with EAGLE instead of looking here.
+&lt;/p&gt;</description>
+<packages>
+<package name="R0603W">
+<smd name="1" x="-0.775" y="0" dx="1.09" dy="0.94" layer="1"/>
+<smd name="2" x="0.775" y="0" dx="1.09" dy="0.94" layer="1"/>
+<text x="-1.5" y="1" size="1" layer="25">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="RES">
+<pin name="PIN1" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+<pin name="PIN2" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="-1.524" y1="-1.016" x2="-0.889" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="-0.889" y1="1.016" x2="-0.254" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="-0.254" y1="-1.016" x2="0.381" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="0.381" y1="1.016" x2="1.016" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="1.016" y1="-1.016" x2="1.651" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="1.651" y1="1.016" x2="2.286" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="2.286" y1="-1.016" x2="2.54" y2="0" width="0.2032" layer="94"/>
+<text x="-3.81" y="1.4986" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="R0603W" prefix="R" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="RES" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="R0603W">
+<connects>
+<connect gate="G$1" pin="PIN1" pad="1"/>
+<connect gate="G$1" pin="PIN2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4520,10 +4570,10 @@ In this library you will find all the connectors used on any of our boards.
 <part name="C3" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0NF/1000PF" device="-0603-50V-10%" package3d_urn="urn:adsk.eagle:package:37414/1" value="1uF"/>
 <part name="U$1" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$3" library="microbuilder" deviceset="GND" device=""/>
-<part name="R1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="0.05OHM" device="-0603-1/5W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="10k"/>
-<part name="R2" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="0.05OHM" device="-0603-1/5W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="10k"/>
-<part name="R3" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="0.05OHM" device="-0603-1/5W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="10k"/>
-<part name="R4" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="0.05OHM" device="-0603-1/5W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="10k"/>
+<part name="R1" library="RoboJackets-Resistors" deviceset="R0603W" device="" value="10k"/>
+<part name="R2" library="RoboJackets-Resistors" deviceset="R0603W" device="" value="4.7k"/>
+<part name="R3" library="RoboJackets-Resistors" deviceset="R0603W" device="" value="4.7k"/>
+<part name="R4" library="RoboJackets-Resistors" deviceset="R0603W" device="" value="4.7k"/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="+2.8V"/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="+2.8V"/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="+2.8V"/>
@@ -4630,20 +4680,20 @@ In this library you will find all the connectors used on any of our boards.
 <attribute name="VALUE" x="237.236" y="96.52" size="1.27" layer="96"/>
 </instance>
 <instance part="R1" gate="G$1" x="149.86" y="142.24" smashed="yes" rot="R90">
-<attribute name="NAME" x="148.336" y="142.24" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="151.384" y="142.24" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+<attribute name="NAME" x="148.3614" y="138.43" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="153.162" y="138.43" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R2" gate="G$1" x="119.38" y="142.24" smashed="yes" rot="R90">
-<attribute name="NAME" x="117.856" y="142.24" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="120.904" y="142.24" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+<attribute name="NAME" x="117.8814" y="138.43" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="122.682" y="138.43" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R3" gate="G$1" x="119.38" y="185.42" smashed="yes" rot="R90">
-<attribute name="NAME" x="117.856" y="185.42" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="120.904" y="185.42" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+<attribute name="NAME" x="117.8814" y="181.61" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="122.682" y="181.61" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R4" gate="G$1" x="149.86" y="185.42" smashed="yes" rot="R90">
-<attribute name="NAME" x="148.336" y="185.42" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="151.384" y="185.42" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+<attribute name="NAME" x="148.3614" y="181.61" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="153.162" y="181.61" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="P+1" gate="VCC" x="238.76" y="121.92" smashed="yes">
 <attribute name="VALUE" x="236.22" y="119.38" size="1.778" layer="96" rot="R90"/>
@@ -4806,7 +4856,7 @@ In this library you will find all the connectors used on any of our boards.
 <wire x1="134.62" y1="177.8" x2="134.62" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="193.04" x2="119.38" y2="193.04" width="0.1524" layer="91"/>
 <junction x="119.38" y="193.04"/>
-<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="R3" gate="G$1" pin="PIN2"/>
 </segment>
 <segment>
 <pinref part="SUPPLY11" gate="P" pin="+3.3V"/>
@@ -4816,7 +4866,7 @@ In this library you will find all the connectors used on any of our boards.
 <wire x1="134.62" y1="134.62" x2="134.62" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="149.86" x2="119.38" y2="149.86" width="0.1524" layer="91"/>
 <junction x="119.38" y="149.86"/>
-<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="R2" gate="G$1" pin="PIN2"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="IN"/>
@@ -4845,7 +4895,7 @@ In this library you will find all the connectors used on any of our boards.
 <wire x1="149.86" y1="172.72" x2="158.75" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="180.34" x2="149.86" y2="172.72" width="0.1524" layer="91"/>
 <junction x="149.86" y="172.72"/>
-<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="R4" gate="G$1" pin="PIN1"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="4"/>
@@ -4877,7 +4927,7 @@ In this library you will find all the connectors used on any of our boards.
 <wire x1="149.86" y1="129.54" x2="158.75" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="137.16" x2="149.86" y2="129.54" width="0.1524" layer="91"/>
 <junction x="149.86" y="129.54"/>
-<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="R1" gate="G$1" pin="PIN1"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="5"/>
@@ -4897,12 +4947,12 @@ In this library you will find all the connectors used on any of our boards.
 </segment>
 <segment>
 <wire x1="149.86" y1="147.32" x2="149.86" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="R1" gate="G$1" pin="PIN2"/>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
 <wire x1="149.86" y1="190.5" x2="149.86" y2="198.12" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="R4" gate="G$1" pin="PIN2"/>
 <pinref part="P+3" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
@@ -4989,7 +5039,7 @@ In this library you will find all the connectors used on any of our boards.
 <wire x1="119.38" y1="129.54" x2="115.57" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="137.16" x2="119.38" y2="129.54" width="0.1524" layer="91"/>
 <junction x="119.38" y="129.54"/>
-<pinref part="R2" gate="G$1" pin="1"/>
+<pinref part="R2" gate="G$1" pin="PIN1"/>
 </segment>
 <segment>
 <wire x1="25.4" y1="81.28" x2="12.7" y2="81.28" width="0.1524" layer="91"/>
@@ -5015,7 +5065,7 @@ In this library you will find all the connectors used on any of our boards.
 <wire x1="119.38" y1="172.72" x2="115.57" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="180.34" x2="119.38" y2="172.72" width="0.1524" layer="91"/>
 <junction x="119.38" y="172.72"/>
-<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="R3" gate="G$1" pin="PIN1"/>
 </segment>
 <segment>
 <wire x1="25.4" y1="83.82" x2="12.7" y2="83.82" width="0.1524" layer="91"/>
