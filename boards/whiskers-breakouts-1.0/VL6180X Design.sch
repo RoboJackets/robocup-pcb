@@ -4570,7 +4570,7 @@ In this library you will find resistors. If you are looking for a common package
 <part name="C3" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0NF/1000PF" device="-0603-50V-10%" package3d_urn="urn:adsk.eagle:package:37414/1" value="1uF"/>
 <part name="U$1" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$3" library="microbuilder" deviceset="GND" device=""/>
-<part name="R1" library="RoboJackets-Resistors" deviceset="R0603W" device="" value="10k"/>
+<part name="R1" library="RoboJackets-Resistors" deviceset="R0603W" device="" value="4.7k"/>
 <part name="R2" library="RoboJackets-Resistors" deviceset="R0603W" device="" value="4.7k"/>
 <part name="R3" library="RoboJackets-Resistors" deviceset="R0603W" device="" value="4.7k"/>
 <part name="R4" library="RoboJackets-Resistors" deviceset="R0603W" device="" value="4.7k"/>
