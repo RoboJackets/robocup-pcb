@@ -4545,6 +4545,41 @@ In this library you will find resistors. If you are looking for a common package
 </deviceset>
 </devicesets>
 </library>
+<library name="supply2" urn="urn:adsk.eagle:library:372">
+<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
+GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+Please keep in mind, that these devices are necessary for the
+automatic wiring of the supply signals.&lt;p&gt;
+The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="+05V" urn="urn:adsk.eagle:symbol:26987/1" library_version="2">
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="0.635" x2="0" y2="1.905" width="0.1524" layer="94"/>
+<circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
+<text x="-1.905" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="+5V" urn="urn:adsk.eagle:component:27032/1" prefix="SUPPLY" library_version="2">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="+5V" symbol="+05V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4595,8 +4630,18 @@ In this library you will find resistors. If you are looking for a common package
 <part name="R7" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="0.05OHM" device="-0603-1/5W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="47k"/>
 <part name="P+10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="+2.8V"/>
 <part name="J2" library="RoboJackets-Connectors" deviceset="6-PIN_2MM-*" device="V"/>
-<part name="SUPPLY2" library="RoboJackets-Supplies" deviceset="+3.3V" device="" value="+3.3V"/>
 <part name="U$5" library="microbuilder" deviceset="GND" device=""/>
+<part name="C6" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0NF/1000PF" device="-0603-50V-10%" package3d_urn="urn:adsk.eagle:package:37414/1" value="4.7uF"/>
+<part name="C7" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0NF/1000PF" device="-0603-50V-10%" package3d_urn="urn:adsk.eagle:package:37414/1" value="4.7uF"/>
+<part name="C8" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0NF/1000PF" device="-0603-50V-10%" package3d_urn="urn:adsk.eagle:package:37414/1" value="4.7uF"/>
+<part name="U5" library="microbuilder" deviceset="VREG_SOT23-5" device="" value="MIC5225_2.8V"/>
+<part name="SUPPLY3" library="RoboJackets-Supplies" deviceset="+3.3V" device="" value="+3.3V"/>
+<part name="C9" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0NF/1000PF" device="-0603-50V-10%" package3d_urn="urn:adsk.eagle:package:37414/1" value="1uF"/>
+<part name="C10" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0NF/1000PF" device="-0603-50V-10%" package3d_urn="urn:adsk.eagle:package:37414/1" value="1uF"/>
+<part name="U$6" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$8" library="microbuilder" deviceset="GND" device=""/>
+<part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
+<part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4614,10 +4659,10 @@ In this library you will find resistors. If you are looking for a common package
 <wire x1="182.88" y1="142.24" x2="182.88" y2="213.36" width="0.1524" layer="95" style="shortdash"/>
 <wire x1="182.88" y1="213.36" x2="243.84" y2="213.36" width="0.1524" layer="95" style="shortdash"/>
 <wire x1="243.84" y1="213.36" x2="243.84" y2="142.24" width="0.1524" layer="95" style="shortdash"/>
-<wire x1="182.88" y1="137.16" x2="243.84" y2="137.16" width="0.1524" layer="95" style="shortdash"/>
-<wire x1="243.84" y1="137.16" x2="243.84" y2="88.9" width="0.1524" layer="95" style="shortdash"/>
-<wire x1="243.84" y1="88.9" x2="182.88" y2="88.9" width="0.1524" layer="95" style="shortdash"/>
-<wire x1="182.88" y1="88.9" x2="182.88" y2="137.16" width="0.1524" layer="95" style="shortdash"/>
+<wire x1="182.88" y1="137.16" x2="248.92" y2="137.16" width="0.1524" layer="95" style="shortdash"/>
+<wire x1="248.92" y1="137.16" x2="248.92" y2="50.8" width="0.1524" layer="95" style="shortdash"/>
+<wire x1="248.92" y1="50.8" x2="182.88" y2="50.8" width="0.1524" layer="95" style="shortdash"/>
+<wire x1="182.88" y1="50.8" x2="182.88" y2="137.16" width="0.1524" layer="95" style="shortdash"/>
 <wire x1="0" y1="213.36" x2="93.98" y2="213.36" width="0.1524" layer="95" style="shortdash"/>
 <wire x1="93.98" y1="213.36" x2="93.98" y2="63.5" width="0.1524" layer="95" style="shortdash"/>
 <wire x1="93.98" y1="63.5" x2="0" y2="63.5" width="0.1524" layer="95" style="shortdash"/>
@@ -4635,8 +4680,8 @@ In this library you will find resistors. If you are looking for a common package
 <attribute name="VALUE" x="27.94" y="170.4086" size="1.27" layer="96" display="off"/>
 </instance>
 <instance part="C2" gate="G$1" x="76.2" y="187.96" smashed="yes" rot="R90">
-<attribute name="NAME" x="73.279" y="189.484" size="1.778" layer="95" font="vector" rot="R90"/>
-<attribute name="VALUE" x="78.359" y="189.484" size="1.778" layer="96" font="vector" rot="R90"/>
+<attribute name="NAME" x="73.279" y="190.5" size="1.778" layer="95" font="vector" rot="R180"/>
+<attribute name="VALUE" x="82.931" y="190.246" size="1.778" layer="96" font="vector" rot="R180"/>
 </instance>
 <instance part="U$2" gate="G$1" x="88.9" y="175.26" smashed="yes">
 <attribute name="VALUE" x="87.376" y="172.72" size="1.27" layer="96"/>
@@ -4713,8 +4758,8 @@ In this library you will find resistors. If you are looking for a common package
 <attribute name="VALUE" x="27.94" y="122.1486" size="1.27" layer="96" display="off"/>
 </instance>
 <instance part="C4" gate="G$1" x="76.2" y="139.7" smashed="yes" rot="R90">
-<attribute name="NAME" x="73.279" y="141.224" size="1.778" layer="95" font="vector" rot="R90"/>
-<attribute name="VALUE" x="78.359" y="141.224" size="1.778" layer="96" font="vector" rot="R90"/>
+<attribute name="NAME" x="73.279" y="142.24" size="1.778" layer="95" font="vector" rot="R180"/>
+<attribute name="VALUE" x="82.931" y="142.24" size="1.778" layer="96" font="vector" rot="R180"/>
 </instance>
 <instance part="U$4" gate="G$1" x="88.9" y="127" smashed="yes">
 <attribute name="VALUE" x="87.376" y="124.46" size="1.27" layer="96"/>
@@ -4731,8 +4776,8 @@ In this library you will find resistors. If you are looking for a common package
 <attribute name="VALUE" x="27.94" y="71.3486" size="1.27" layer="96" display="off"/>
 </instance>
 <instance part="C5" gate="G$1" x="76.2" y="88.9" smashed="yes" rot="R90">
-<attribute name="NAME" x="73.279" y="90.424" size="1.778" layer="95" font="vector" rot="R90"/>
-<attribute name="VALUE" x="78.359" y="90.424" size="1.778" layer="96" font="vector" rot="R90"/>
+<attribute name="NAME" x="70.993" y="89.408" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="82.931" y="91.186" size="1.778" layer="96" font="vector" rot="R180"/>
 </instance>
 <instance part="U$10" gate="G$1" x="88.9" y="76.2" smashed="yes">
 <attribute name="VALUE" x="87.376" y="73.66" size="1.27" layer="96"/>
@@ -4766,11 +4811,47 @@ In this library you will find resistors. If you are looking for a common package
 <attribute name="NAME" x="203.2" y="195.58" size="1.778" layer="95" font="vector" align="top-left"/>
 <attribute name="VALUE" x="203.2" y="160.02" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="SUPPLY2" gate="P" x="220.98" y="199.39" smashed="yes">
-<attribute name="VALUE" x="219.075" y="202.565" size="1.778" layer="96"/>
-</instance>
 <instance part="U$5" gate="G$1" x="223.52" y="157.48" smashed="yes">
 <attribute name="VALUE" x="221.996" y="154.94" size="1.27" layer="96"/>
+</instance>
+<instance part="C6" gate="G$1" x="76.2" y="83.82" smashed="yes" rot="R90">
+<attribute name="NAME" x="70.993" y="84.074" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="82.931" y="85.852" size="1.778" layer="96" font="vector" rot="R180"/>
+</instance>
+<instance part="C7" gate="G$1" x="76.2" y="134.62" smashed="yes" rot="R90">
+<attribute name="NAME" x="73.279" y="136.906" size="1.778" layer="95" font="vector" rot="R180"/>
+<attribute name="VALUE" x="76.835" y="135.128" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="C8" gate="G$1" x="76.2" y="182.88" smashed="yes" rot="R90">
+<attribute name="NAME" x="70.993" y="183.388" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="82.677" y="185.166" size="1.778" layer="96" font="vector" rot="R180"/>
+</instance>
+<instance part="U5" gate="G$1" x="215.9" y="71.12" smashed="yes">
+<attribute name="NAME" x="208.28" y="77.216" size="1.27" layer="95"/>
+<attribute name="VALUE" x="208.28" y="63.5" size="1.27" layer="95"/>
+</instance>
+<instance part="SUPPLY3" gate="P" x="238.76" y="81.28" smashed="yes">
+<attribute name="VALUE" x="236.855" y="84.455" size="1.778" layer="96"/>
+</instance>
+<instance part="C9" gate="G$1" x="238.76" y="68.58" smashed="yes" rot="R180">
+<attribute name="NAME" x="237.236" y="65.659" size="1.778" layer="95" font="vector" rot="R180"/>
+<attribute name="VALUE" x="237.236" y="70.739" size="1.778" layer="96" font="vector" rot="R180"/>
+</instance>
+<instance part="C10" gate="G$1" x="193.04" y="71.12" smashed="yes" rot="R180">
+<attribute name="NAME" x="191.516" y="68.199" size="1.778" layer="95" font="vector" rot="R180"/>
+<attribute name="VALUE" x="191.516" y="73.279" size="1.778" layer="96" font="vector" rot="R180"/>
+</instance>
+<instance part="U$6" gate="G$1" x="203.2" y="58.42" smashed="yes">
+<attribute name="VALUE" x="201.676" y="55.88" size="1.27" layer="96"/>
+</instance>
+<instance part="U$8" gate="G$1" x="238.76" y="58.42" smashed="yes">
+<attribute name="VALUE" x="237.236" y="55.88" size="1.27" layer="96"/>
+</instance>
+<instance part="SUPPLY2" gate="+5V" x="220.98" y="199.39" smashed="yes">
+<attribute name="VALUE" x="219.075" y="202.565" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY4" gate="+5V" x="203.2" y="81.28" smashed="yes">
+<attribute name="VALUE" x="201.295" y="84.455" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -4781,7 +4862,11 @@ In this library you will find resistors. If you are looking for a common package
 <pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="U$2" gate="G$1" pin="GND"/>
 <wire x1="78.74" y1="187.96" x2="88.9" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="187.96" x2="88.9" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="187.96" x2="88.9" y2="182.88" width="0.1524" layer="91"/>
+<pinref part="C8" gate="G$1" pin="2"/>
+<wire x1="88.9" y1="182.88" x2="88.9" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="182.88" x2="88.9" y2="182.88" width="0.1524" layer="91"/>
+<junction x="88.9" y="182.88"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="AVSS"/>
@@ -4812,7 +4897,11 @@ In this library you will find resistors. If you are looking for a common package
 <pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="U$4" gate="G$1" pin="GND"/>
 <wire x1="78.74" y1="139.7" x2="88.9" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="139.7" x2="88.9" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="139.7" x2="88.9" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="2"/>
+<wire x1="88.9" y1="134.62" x2="88.9" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="134.62" x2="88.9" y2="134.62" width="0.1524" layer="91"/>
+<junction x="88.9" y="134.62"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="AVSS"/>
@@ -4826,9 +4915,13 @@ In this library you will find resistors. If you are looking for a common package
 </segment>
 <segment>
 <wire x1="78.74" y1="88.9" x2="88.9" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="88.9" x2="88.9" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="88.9" x2="88.9" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="2"/>
 <pinref part="U$10" gate="G$1" pin="GND"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="88.9" y1="83.82" x2="88.9" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="83.82" x2="88.9" y2="83.82" width="0.1524" layer="91"/>
+<junction x="88.9" y="83.82"/>
 </segment>
 <segment>
 <wire x1="55.88" y1="93.98" x2="63.5" y2="93.98" width="0.1524" layer="91"/>
@@ -4845,6 +4938,21 @@ In this library you will find resistors. If you are looking for a common package
 <wire x1="213.36" y1="165.1" x2="223.52" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="165.1" x2="223.52" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U5" gate="G$1" pin="GND"/>
+<wire x1="205.74" y1="68.58" x2="203.2" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="68.58" x2="203.2" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="C10" gate="G$1" pin="1"/>
+<wire x1="203.2" y1="66.04" x2="203.2" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="66.04" x2="203.2" y2="66.04" width="0.1524" layer="91"/>
+<junction x="203.2" y="66.04"/>
+<pinref part="U$6" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C9" gate="G$1" pin="1"/>
+<wire x1="238.76" y1="63.5" x2="238.76" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="U$8" gate="G$1" pin="GND"/>
 </segment>
 </net>
 <net name="+3.3V" class="0">
@@ -4881,10 +4989,13 @@ In this library you will find resistors. If you are looking for a common package
 <pinref part="C3" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="1"/>
-<pinref part="SUPPLY2" gate="P" pin="+3.3V"/>
-<wire x1="213.36" y1="190.5" x2="220.98" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="190.5" x2="220.98" y2="196.85" width="0.1524" layer="91"/>
+<pinref part="U5" gate="G$1" pin="OUT"/>
+<wire x1="226.06" y1="73.66" x2="238.76" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="C9" gate="G$1" pin="2"/>
+<wire x1="238.76" y1="73.66" x2="238.76" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="78.74" x2="238.76" y2="73.66" width="0.1524" layer="91"/>
+<junction x="238.76" y="73.66"/>
+<pinref part="SUPPLY3" gate="P" pin="+3.3V"/>
 </segment>
 </net>
 <net name="SCL_3.3V" class="0">
@@ -4898,9 +5009,9 @@ In this library you will find resistors. If you are looking for a common package
 <pinref part="R4" gate="G$1" pin="PIN1"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="4"/>
-<wire x1="213.36" y1="175.26" x2="215.9" y2="175.26" width="0.1524" layer="91"/>
-<label x="215.9" y="175.26" size="1.778" layer="95" xref="yes"/>
+<pinref part="J2" gate="G$1" pin="5"/>
+<wire x1="213.36" y1="170.18" x2="215.9" y2="170.18" width="0.1524" layer="91"/>
+<label x="215.9" y="170.18" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="RST_1" class="0">
@@ -4930,9 +5041,9 @@ In this library you will find resistors. If you are looking for a common package
 <pinref part="R1" gate="G$1" pin="PIN1"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="5"/>
-<wire x1="213.36" y1="170.18" x2="215.9" y2="170.18" width="0.1524" layer="91"/>
-<label x="215.9" y="170.18" size="1.778" layer="95" xref="yes"/>
+<pinref part="J2" gate="G$1" pin="4"/>
+<wire x1="213.36" y1="175.26" x2="215.9" y2="175.26" width="0.1524" layer="91"/>
+<label x="215.9" y="175.26" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -4966,6 +5077,9 @@ In this library you will find resistors. If you are looking for a common package
 <wire x1="55.88" y1="182.88" x2="68.58" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="187.96" x2="68.58" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="P+4" gate="VCC" pin="VCC"/>
+<pinref part="C8" gate="G$1" pin="1"/>
+<wire x1="71.12" y1="182.88" x2="68.58" y2="182.88" width="0.1524" layer="91"/>
+<junction x="68.58" y="182.88"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="AVDD"/>
@@ -4978,6 +5092,9 @@ In this library you will find resistors. If you are looking for a common package
 <wire x1="55.88" y1="134.62" x2="68.58" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="139.7" x2="68.58" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="P+5" gate="VCC" pin="VCC"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="71.12" y1="134.62" x2="68.58" y2="134.62" width="0.1524" layer="91"/>
+<junction x="68.58" y="134.62"/>
 </segment>
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
@@ -4995,6 +5112,9 @@ In this library you will find resistors. If you are looking for a common package
 <pinref part="U4" gate="G$1" pin="AVDD"/>
 <pinref part="C5" gate="G$1" pin="1"/>
 <pinref part="P+7" gate="VCC" pin="VCC"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="71.12" y1="83.82" x2="68.58" y2="83.82" width="0.1524" layer="91"/>
+<junction x="68.58" y="83.82"/>
 </segment>
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
@@ -5081,6 +5201,26 @@ In this library you will find resistors. If you are looking for a common package
 <pinref part="U1" gate="G$1" pin="SCL"/>
 <wire x1="25.4" y1="182.88" x2="12.7" y2="182.88" width="0.1524" layer="91"/>
 <label x="12.7" y="182.88" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="+5V" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="1"/>
+<wire x1="213.36" y1="190.5" x2="220.98" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="190.5" x2="220.98" y2="196.85" width="0.1524" layer="91"/>
+<pinref part="SUPPLY2" gate="+5V" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="U5" gate="G$1" pin="IN"/>
+<wire x1="205.74" y1="73.66" x2="203.2" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="73.66" x2="193.04" y2="73.66" width="0.1524" layer="91"/>
+<junction x="203.2" y="73.66"/>
+<wire x1="203.2" y1="73.66" x2="203.2" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="U5" gate="G$1" pin="EN"/>
+<wire x1="203.2" y1="71.12" x2="205.74" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="C10" gate="G$1" pin="2"/>
+<pinref part="SUPPLY4" gate="+5V" pin="+5V"/>
+<wire x1="203.2" y1="73.66" x2="203.2" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
