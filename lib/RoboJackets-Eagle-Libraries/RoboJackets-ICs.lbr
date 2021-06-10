@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4846,6 +4846,20 @@ http://www.digikey.com/product-detail/en/XC3S250E-4PQG208C/122-1483-ND/1091711</
 <pin name="VCC2" x="-20.32" y="10.16" visible="pad" length="middle" direction="pwr"/>
 <pin name="GND" x="-20.32" y="2.54" length="middle" direction="pwr"/>
 </symbol>
+<symbol name="TXB0102">
+<wire x1="-8.89" y1="14.224" x2="-8.89" y2="-13.716" width="0.1524" layer="94"/>
+<wire x1="-8.89" y1="-13.716" x2="8.89" y2="-13.716" width="0.1524" layer="94"/>
+<wire x1="8.89" y1="-13.716" x2="8.89" y2="14.224" width="0.1524" layer="94"/>
+<wire x1="8.89" y1="14.224" x2="-8.89" y2="14.224" width="0.1524" layer="94"/>
+<pin name="B2" x="-13.97" y="11.684" length="middle"/>
+<pin name="GND" x="-13.97" y="4.064" length="middle"/>
+<pin name="VCCA" x="-13.97" y="-3.556" length="middle"/>
+<pin name="A2" x="-13.97" y="-11.176" length="middle"/>
+<pin name="B1" x="13.97" y="11.684" length="middle" rot="R180"/>
+<pin name="VCCB" x="13.97" y="4.064" length="middle" rot="R180"/>
+<pin name="OE" x="13.97" y="-3.556" length="middle" rot="R180"/>
+<pin name="A1" x="13.97" y="-11.176" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="LM2734" prefix="U">
@@ -7138,6 +7152,17 @@ Source: www.atmel.com .. doc2503.pdf</description>
 <attribute name="OC_NEWARK" value="69K6677" constant="no"/>
 <attribute name="POPULARITY" value="1" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TXB0102DCUT">
+<gates>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>

@@ -4599,7 +4599,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SUPPLY1" library="RoboJackets-Supplies" deviceset="+3.3V" device="" value="+3.3V"/>
 <part name="Q4" library="microbuilder" deviceset="MOSFET-N" device="WIDE" value="BSS138"/>
 <part name="SUPPLY11" library="RoboJackets-Supplies" deviceset="+3.3V" device="" value="+3.3V"/>
-<part name="U2" library="microbuilder" deviceset="VREG_SOT23-5" device="" value="MIC5225_2.8V"/>
+<part name="U2" library="microbuilder" deviceset="VREG_SOT23-5" device="" value="TLV74128PDBVR"/>
 <part name="SUPPLY13" library="RoboJackets-Supplies" deviceset="+3.3V" device="" value="+3.3V"/>
 <part name="C1" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0NF/1000PF" device="-0603-50V-10%" package3d_urn="urn:adsk.eagle:package:37414/1" value="1uF"/>
 <part name="C3" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0NF/1000PF" device="-0603-50V-10%" package3d_urn="urn:adsk.eagle:package:37414/1" value="1uF"/>
@@ -4634,7 +4634,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="C6" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0NF/1000PF" device="-0603-50V-10%" package3d_urn="urn:adsk.eagle:package:37414/1" value="4.7uF"/>
 <part name="C7" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0NF/1000PF" device="-0603-50V-10%" package3d_urn="urn:adsk.eagle:package:37414/1" value="4.7uF"/>
 <part name="C8" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0NF/1000PF" device="-0603-50V-10%" package3d_urn="urn:adsk.eagle:package:37414/1" value="4.7uF"/>
-<part name="U5" library="microbuilder" deviceset="VREG_SOT23-5" device="" value="MIC5225_2.8V"/>
+<part name="U5" library="microbuilder" deviceset="VREG_SOT23-5" device="" value="MIC5225-3.3YM5-TR"/>
 <part name="SUPPLY3" library="RoboJackets-Supplies" deviceset="+3.3V" device="" value="+3.3V"/>
 <part name="C9" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0NF/1000PF" device="-0603-50V-10%" package3d_urn="urn:adsk.eagle:package:37414/1" value="1uF"/>
 <part name="C10" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0NF/1000PF" device="-0603-50V-10%" package3d_urn="urn:adsk.eagle:package:37414/1" value="1uF"/>
