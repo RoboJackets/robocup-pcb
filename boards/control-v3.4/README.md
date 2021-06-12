@@ -23,11 +23,11 @@ Ball Speed (IR)
 I2C Module  
 The SPI interfaces for each of these connectors is supplied by the MTrain and monitored by the Dot Star network
 
-## The battery provides 18.5V, so the voltage regulation circuits also produce other voltage levels (5V and 3.3V) that other devices run off.
-18.5V is only needed for the motors.  
-There are also 1.2V and 2.5V lines, and when these are out of tolerance, error LEDs are activated
+- The battery provides 18.5V, so the voltage regulation circuits also produce other voltage levels (5V and 3.3V) that other devices run off.
+- 18.5V is only needed for the motors.  
+- There are also 1.2V and 2.5V lines, and when these are out of tolerance, error LEDs are activated
 
-## Wheel Drive Module writes each of the three phases for the motor. Takes inputs of whether phase should be high and low, and uses outputs to write each phase
-Phase is set that it can be high (shorted to 18V) low (shorted to ground) or float (some indeterminate phase in between).
-## Dribbler Drive Module works very similarly
-![Control Board](./control.png)
+- Wheel Drive Module writes each of the three phases for the motor. Takes inputs of whether phase should be high and low, and uses outputs to write each phase
+- Phase is set that it can be high (shorted to 18V) low (shorted to ground) or float (some indeterminate phase in between).
+- Dribbler Drive Module works in similar approach
+
