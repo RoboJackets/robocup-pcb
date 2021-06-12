@@ -16,13 +16,14 @@ IR connector, extra SPI connector, many improvements to be made
  - Handles hall sensors and writing three phase motor states.
 
 ## Control board has connectors for all of the different modules on the board, including:
-IMU  
-Kicker  
-Radio  
-Ball Speed (IR)  
-I2C Module  
+- IMU  
+- Kicker  
+- Radio  
+- Ball Speed (IR)  
+- I2C Module  
 The SPI interfaces for each of these connectors is supplied by the MTrain and monitored by the Dot Star network
-
+<br>
+<br> 
 - The battery provides 18.5V, so the voltage regulation circuits also produce other voltage levels (5V and 3.3V) that other devices run off.
 - 18.5V is only needed for the motors.  
 - There are also 1.2V and 2.5V lines, and when these are out of tolerance, error LEDs are activated
