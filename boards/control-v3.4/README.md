@@ -1,12 +1,19 @@
 # Control Board
+On Robot Board 
 
-## MTrain is our microcontroller, has three SPI buses which tie it to the FPGA, the radio, and then all other devices. 
-AnalogIn is used to monitor battery voltage and input voltage  
-Reset network reset MTrain if the 3.3V is low and the MTrain is high  
-IO expander connects hex pins and DIP switches to MTrain for inputs into MTrain
+## Objective 
+Regulates voltages, connects mTrain to other boards, user interface, hardware to enable motor control 
 
-## FPGA handles all of the wheel drivers and the dribble driver, including the SPI interface to those motor drivers (AUX)
-Handles hall sensors and writing three phase motor states.
+## Specifics of v3.4
+IR connector, extra SPI connector, many improvements to be made
+
+## Approach 
+ - MTrain is our microcontroller, has three SPI buses which tie it to the FPGA, the radio, and then all other devices. 
+ - AnalogIn is used to monitor battery voltage and input voltage  
+ - Reset network reset MTrain if the 3.3V is low and the MTrain is high  
+ - IO expander connects hex pins and DIP switches to MTrain for inputs into MTrain
+ - FPGA handles all of the wheel drivers and the dribble driver, including the SPI interface to those motor drivers (AUX)
+ - Handles hall sensors and writing three phase motor states.
 
 ## Control board has connectors for all of the different modules on the board, including:
 IMU  
