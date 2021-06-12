@@ -14,6 +14,15 @@ IR connector, extra SPI connector, many improvements to be made
  - IO expander connects hex pins and DIP switches to MTrain for inputs into MTrain
  - FPGA handles all of the wheel drivers and the dribble driver, including the SPI interface to those motor drivers (AUX)
  - Handles hall sensors and writing three phase motor states.
+ 
+ 
+- The battery provides 18.5V, so the voltage regulation circuits also produce other voltage levels (5V and 3.3V) that other devices run off.
+- 18.5V is only needed for the motors.  
+- There are also 1.2V and 2.5V lines, and when these are out of tolerance, error LEDs are activated
+
+- Wheel Drive Module writes each of the three phases for the motor. Takes inputs of whether phase should be high and low, and uses outputs to write each phase
+- Phase is set that it can be high (shorted to 18V) low (shorted to ground) or float (some indeterminate phase in between).
+- Dribbler Drive Module works in similar approach
 
 ## Control board has connectors for all of the different modules on the board, including:
 - IMU  
@@ -23,13 +32,4 @@ IR connector, extra SPI connector, many improvements to be made
 - I2C Module  
 The SPI interfaces for each of these connectors is supplied by the MTrain and monitored by the Dot Star network
 
-
-
-- The battery provides 18.5V, so the voltage regulation circuits also produce other voltage levels (5V and 3.3V) that other devices run off.
-- 18.5V is only needed for the motors.  
-- There are also 1.2V and 2.5V lines, and when these are out of tolerance, error LEDs are activated
-
-- Wheel Drive Module writes each of the three phases for the motor. Takes inputs of whether phase should be high and low, and uses outputs to write each phase
-- Phase is set that it can be high (shorted to 18V) low (shorted to ground) or float (some indeterminate phase in between).
-- Dribbler Drive Module works in similar approach
 
