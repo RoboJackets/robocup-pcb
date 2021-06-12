@@ -9,7 +9,7 @@ Simulate a 3 Phase Brushless Motor to connect to the control board, allowing us 
 - Voltages provided by the control board, either high (~18V), low (~0V) or float(somewhere in between), are stepped down by way of a voltage divider and the divided voltage is read in by the ATMega.  
 - For each voltage, the ATMega checks to verify that it is correct, whether high, low, or float, for the given hall sensors, as given for the following table. 
  
-## Hall value / Voltage level table:
+## Hall Value/Voltage Level: 
 001:10/  
 101:1/0  
 100:/10  
@@ -17,4 +17,4 @@ Simulate a 3 Phase Brushless Motor to connect to the control board, allowing us 
 010:0/1  
 011:/01  
 These comparisons are made, and the LCD screen tells us if the motor is being supplied appropriately, to ensure it won't be blown.  
-![MotorTester Board](./motortester.png)
+
