@@ -13,4 +13,6 @@ Board responsible for kicking and chipping functions of bot
 - Has LEDs to determine if the board is functioning properly, as well as manual switches to test certain functions.
 - Charges a bank of capacitors to a high voltage and discharges into solenoid(s).
 
+## PNG 
+
 ![Kicker Board](./kicker.png)
