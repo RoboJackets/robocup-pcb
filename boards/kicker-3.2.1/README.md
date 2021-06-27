@@ -12,3 +12,7 @@ Board responsible for kicking and chipping functions of bot.
 - This board interfaces with the breakbeam board to determine if the bot is in possession of the ball.  
 - Has LEDs to determine if the board is functioning properly, as well as manual switches to test certain functions.  
 
+## PNG 
+![kicker](https://user-images.githubusercontent.com/71445563/123549096-82a4a980-d735-11eb-89f2-4ae237051beb.PNG)
+
+
