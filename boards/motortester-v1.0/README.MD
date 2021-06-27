@@ -18,3 +18,7 @@ Simulate a 3 Phase Brushless Motor to connect to the control board, allowing us 
 011:/01  
 These comparisons are made, and the LCD screen tells us if the motor is being supplied appropriately, to ensure it won't be blown.  
 
+## PNG 
+![motortester](https://user-images.githubusercontent.com/71445563/123549140-a831b300-d735-11eb-8211-bc8b042677b4.PNG)
+
+
