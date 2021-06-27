@@ -11,4 +11,7 @@ To be able to measure the velocity and deceleration of the robot's kick.
 - Raspberry PI is supplied by a 5V source. DC-DC converter is used to step down the 12V supply on the board to the needed 5V, and keep power supply stable. 
 - Raspberry PI also supplies a 3.3V source that the rest of the circuit is connected to.  
 
+## PNG 
+![ballspeed](https://user-images.githubusercontent.com/71445563/123548993-1de94f00-d735-11eb-8374-33f9c099b5c2.PNG)
+
 
