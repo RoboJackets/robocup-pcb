@@ -32,4 +32,8 @@ IR connector, extra SPI connector, many improvements to be made
 - I2C Module  
 The SPI interfaces for each of these connectors is supplied by the MTrain and monitored by the Dot Star network
 
+## PNG 
+![control](https://user-images.githubusercontent.com/71445563/123549049-5c7f0980-d735-11eb-8a17-e233296ed65f.PNG)
+
+
 
