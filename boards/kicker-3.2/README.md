@@ -12,6 +12,8 @@ Board responsible for kicking and chipping functions of bot
 - This board interfaces with the breakbeam board to determine if the bot is in possession of the ball.
 - Has LEDs to determine if the board is functioning properly, as well as manual switches to test certain functions.
 - Charges a bank of capacitors to a high voltage and discharges into solenoid(s).
+# For Debugging: 
+- 3 switches: charge, kick, chip that send physical interrupts to use when debugging and testing safety/reliability 
 
 ## PNG 
 
