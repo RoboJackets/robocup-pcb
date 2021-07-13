@@ -11978,11 +11978,11 @@ In this library you will find LEDs and other visual output devices.
 <part name="D7" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" value="WHITE"/>
 <part name="R19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="330"/>
 <part name="SUPPLY34" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
-<part name="D2" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" value="GREEN - 3.3V"/>
+<part name="D2" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" value="GREEN - 5V - POWER"/>
 <part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="330"/>
 <part name="SUPPLY29" library="RoboJackets-Supplies" deviceset="+5V" device=""/>
 <part name="SUPPLY30" library="RoboJackets-Supplies" deviceset="GND" device=""/>
-<part name="D3" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" value="GREEN - 3.3V"/>
+<part name="D3" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" value="GREEN - 3.3V - POWER"/>
 <part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="330"/>
 <part name="SUPPLY35" library="RoboJackets-Supplies" deviceset="GND" device=""/>
 <part name="SUPPLY31" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
