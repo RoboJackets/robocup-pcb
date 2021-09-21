@@ -4712,7 +4712,7 @@ In this library you will find the larger circuit elements that are used to contr
 <label x="119.888" y="176.784" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="VCC" class="0">
+<net name="+2.8V" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="OUT"/>
 <wire x1="226.06" y1="114.3" x2="238.76" y2="114.3" width="0.1524" layer="91"/>
