@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -247,12 +247,12 @@ In this library you will find all the connectors used on any of our boards.
 In this library you will find LEDs and other visual output devices.
 &lt;/p&gt;</description>
 <packages>
-<package name="OP293B">
-<circle x="0" y="0" radius="5.97" width="0.127" layer="21"/>
-<pad name="P$1" x="1.27" y="0" drill="0.6" shape="square"/>
-<pad name="P$2" x="-1.27" y="0" drill="0.6"/>
-<text x="-3" y="7" size="1.27" layer="25">&gt;Name</text>
-<text x="-3" y="-8" size="1.27" layer="27">&gt;Value</text>
+<package name="OP593B">
+<pad name="P$1" x="-1.27" y="0" drill="0.6" shape="square"/>
+<pad name="P$2" x="1.27" y="0" drill="0.6"/>
+<circle x="0" y="0" radius="2.8" width="0.127" layer="21"/>
+<text x="-2" y="3" size="1.27" layer="25">&gt;Name</text>
+<text x="-2" y="-4" size="1.27" layer="27">&gt;Value</text>
 </package>
 </packages>
 <symbols>
@@ -283,16 +283,42 @@ In this library you will find LEDs and other visual output devices.
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="LED-OP293B">
+<deviceset name="LED-OP593B">
 <gates>
 <gate name="G$1" symbol="LED" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="OP293B">
+<device name="" package="OP593B">
 <connects>
-<connect gate="G$1" pin="A" pad="P$2"/>
-<connect gate="G$1" pin="C" pad="P$1"/>
+<connect gate="G$1" pin="A" pad="P$1"/>
+<connect gate="G$1" pin="C" pad="P$2"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="RoboJackets-Supplies">
+<packages>
+</packages>
+<symbols>
+<symbol name="GND">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GND" prefix="SUPPLY">
+<description>Ground Symbol</description>
+<gates>
+<gate name="G$1" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -3591,32 +3617,6 @@ In this library you will find frames that can be used to help organize a schemat
 </deviceset>
 </devicesets>
 </library>
-<library name="RoboJackets-Supplies">
-<packages>
-</packages>
-<symbols>
-<symbol name="GND">
-<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
-<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="GND" prefix="SUPPLY">
-<description>Ground Symbol</description>
-<gates>
-<gate name="G$1" symbol="GND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3628,9 +3628,9 @@ In this library you will find frames that can be used to help organize a schemat
 </classes>
 <parts>
 <part name="J1" library="RoboJackets-Connectors" deviceset="0353630260" device=""/>
-<part name="D1" library="RoboJackets-LEDs" deviceset="LED-OP293B" device=""/>
-<part name="FRAME1" library="RoboJackets-Frames" deviceset="FRAME_11_17" device=""/>
+<part name="D1" library="RoboJackets-LEDs" deviceset="LED-OP593B" device=""/>
 <part name="SUPPLY1" library="RoboJackets-Supplies" deviceset="GND" device=""/>
+<part name="FRAME1" library="RoboJackets-Frames" deviceset="FRAME_11_17" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3641,43 +3641,43 @@ In this library you will find frames that can be used to help organize a schemat
 <attribute name="NAME" x="-5.08" y="7.62" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-5.08" y="-7.62" size="1.778" layer="95" align="top-left"/>
 </instance>
-<instance part="D1" gate="G$1" x="27.94" y="-2.54" smashed="yes" rot="R270">
-<attribute name="NAME" x="32.004" y="-2.54" size="1.778" layer="95" rot="MR90" align="bottom-center"/>
-<attribute name="VALUE" x="25.4" y="-2.54" size="1.778" layer="96" rot="MR90" align="top-center"/>
+<instance part="D1" gate="G$1" x="23" y="0" smashed="yes" rot="R90">
+<attribute name="NAME" x="18.936" y="0" size="1.778" layer="95" rot="MR270" align="bottom-center"/>
+<attribute name="VALUE" x="25.54" y="0" size="1.778" layer="96" rot="MR270" align="top-center"/>
 </instance>
-<instance part="FRAME1" gate="G$1" x="-182.88" y="-121.92" smashed="yes"/>
-<instance part="FRAME1" gate="G$2" x="142.24" y="-121.92" smashed="yes">
-<attribute name="LAST_DATE_TIME" x="154.94" y="-120.65" size="2.54" layer="94"/>
-<attribute name="SHEET" x="228.6" y="-120.65" size="2.54" layer="94"/>
-<attribute name="DRAWING_NAME" x="157.48" y="-102.87" size="2.54" layer="94"/>
-<attribute name="TEAM" x="143.51" y="-87.63" size="3.81" layer="94" ratio="10" align="top-left"/>
-<attribute name="REVISION" x="214.63" y="-115.57" size="2.54" layer="94"/>
-<attribute name="SCH_DESC" x="143.51" y="-115.57" size="2.54" layer="94"/>
+<instance part="SUPPLY1" gate="G$1" x="23" y="-10" smashed="yes">
+<attribute name="VALUE" x="20.46" y="-12.54" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY1" gate="G$1" x="27.94" y="-12.7" smashed="yes">
-<attribute name="VALUE" x="25.4" y="-15.24" size="1.778" layer="96"/>
+<instance part="FRAME1" gate="G$1" x="-184" y="-148" smashed="yes"/>
+<instance part="FRAME1" gate="G$2" x="141.12" y="-148" smashed="yes">
+<attribute name="LAST_DATE_TIME" x="153.82" y="-146.73" size="2.54" layer="94"/>
+<attribute name="SHEET" x="227.48" y="-146.73" size="2.54" layer="94"/>
+<attribute name="DRAWING_NAME" x="156.36" y="-128.95" size="2.54" layer="94"/>
+<attribute name="TEAM" x="142.39" y="-113.71" size="3.81" layer="94" ratio="10" align="top-left"/>
+<attribute name="REVISION" x="213.51" y="-141.65" size="2.54" layer="94"/>
+<attribute name="SCH_DESC" x="142.39" y="-141.65" size="2.54" layer="94"/>
 </instance>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="TX" class="0">
+<net name="RX" class="0">
 <segment>
+<pinref part="D1" gate="G$1" pin="C"/>
 <pinref part="J1" gate="G$1" pin="P$1"/>
-<pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="7.62" y1="2.54" x2="27.94" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="23" y1="2.54" x2="7.62" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="D1" gate="G$1" pin="C"/>
-<wire x1="27.94" y1="-5.08" x2="27.94" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="SUPPLY1" gate="G$1" pin="GND"/>
-<wire x1="27.94" y1="-7.62" x2="27.94" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="-7.62" x2="7.62" y2="-7.62" width="0.1524" layer="91"/>
-<junction x="27.94" y="-7.62"/>
 <pinref part="J1" gate="G$1" pin="P$2"/>
-<wire x1="7.62" y1="-7.62" x2="7.62" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="-2.54" x2="17" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="17" y1="-2.54" x2="17" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="A"/>
+<wire x1="17" y1="-5.08" x2="23" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="SUPPLY1" gate="G$1" pin="GND"/>
+<wire x1="23" y1="-5.08" x2="23" y2="-7.46" width="0.1524" layer="91"/>
+<junction x="23" y="-5.08"/>
 </segment>
 </net>
 </nets>
