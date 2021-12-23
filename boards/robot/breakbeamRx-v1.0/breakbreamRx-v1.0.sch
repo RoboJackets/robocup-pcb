@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -230,68 +230,6 @@ In this library you will find all the connectors used on any of our boards.
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="RoboJackets-LEDs">
-<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
-&lt;hr&gt;
-&lt;h1&gt;RoboJackets EAGLE Libraries - LEDs&lt;/h1&gt;&lt;/br&gt;
-&lt;p&gt;
-In this library you will find LEDs and other visual output devices.
-&lt;/p&gt;</description>
-<packages>
-<package name="OP593B">
-<pad name="P$1" x="-1.27" y="0" drill="0.6" shape="square"/>
-<pad name="P$2" x="1.27" y="0" drill="0.6"/>
-<circle x="0" y="0" radius="2.8" width="0.127" layer="21"/>
-<text x="-2" y="3" size="1.27" layer="25">&gt;Name</text>
-<text x="-2" y="-4" size="1.27" layer="27">&gt;Value</text>
-</package>
-</packages>
-<symbols>
-<symbol name="LED">
-<description>&lt;h3&gt;LED&lt;/h3&gt;
-&lt;p&gt;A light-emitting diode (LED) is a semiconductor light source that emits light when current flows through it.&lt;/p&gt;</description>
-<wire x1="-2.54" y1="-1.27" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.27" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="1.27" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
-<wire x1="-1.778" y1="2.032" x2="-0.381" y2="3.429" width="0.1524" layer="94"/>
-<wire x1="-0.635" y1="1.905" x2="0.762" y2="3.302" width="0.1524" layer="94"/>
-<text x="0" y="4.064" size="1.778" layer="95" rot="MR0" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-2.54" size="1.778" layer="96" rot="MR0" align="top-center">&gt;VALUE</text>
-<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-<pin name="A" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
-<polygon width="0.1524" layer="94">
-<vertex x="-0.381" y="3.429"/>
-<vertex x="-1.27" y="3.048"/>
-<vertex x="-0.762" y="2.54"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="0.762" y="3.302"/>
-<vertex x="-0.127" y="2.921"/>
-<vertex x="0.381" y="2.413"/>
-</polygon>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="LED-OP593B">
-<gates>
-<gate name="G$1" symbol="LED" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="OP593B">
-<connects>
-<connect gate="G$1" pin="A" pad="P$1"/>
-<connect gate="G$1" pin="C" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3617,6 +3555,71 @@ In this library you will find frames that can be used to help organize a schemat
 </deviceset>
 </devicesets>
 </library>
+<library name="RoboJackets-Discrete">
+<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
+&lt;hr&gt;
+&lt;h1&gt;RoboJackets EAGLE Libraries - Discrete&lt;/h1&gt;&lt;/br&gt;
+&lt;p&gt;
+In this library you will find MOSFETs and other circuit elements commonly used for switching signals between HIGH and LOW.
+&lt;/p&gt;</description>
+<packages>
+<package name="OP593B">
+<circle x="0" y="0" radius="5.59" width="0.127" layer="21"/>
+<pad name="P$1" x="1.27" y="0" drill="0.6" shape="square"/>
+<pad name="P$2" x="-1.27" y="0" drill="0.6"/>
+</package>
+</packages>
+<symbols>
+<symbol name="PNP_PHOTOTRANSISTOR">
+<pin name="C" x="2.54" y="-7.62" visible="off" length="short" rot="R90"/>
+<pin name="E" x="2.54" y="7.62" visible="off" length="short" rot="R270"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.508" layer="94"/>
+<wire x1="0" y1="1.27" x2="0" y2="-1.27" width="0.508" layer="94"/>
+<wire x1="0" y1="-1.27" x2="0" y2="-2.54" width="0.508" layer="94"/>
+<wire x1="0" y1="-1.27" x2="2.54" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="2.54" y2="3.81" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-3.81" x2="2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="3.81" x2="2.54" y2="7.62" width="0.254" layer="94"/>
+<text x="5.08" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<polygon width="0.254" layer="94">
+<vertex x="-1.778" y="3.556"/>
+<vertex x="-3.048" y="2.286"/>
+<vertex x="-1.524" y="2.032"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="-3.302" y="1.524"/>
+<vertex x="-4.572" y="0.254"/>
+<vertex x="-3.048" y="0"/>
+</polygon>
+<wire x1="-3.81" y1="0.762" x2="-6.35" y2="3.302" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="3.048" x2="-5.08" y2="5.588" width="0.254" layer="94"/>
+<polygon width="0.254" layer="94">
+<vertex x="1.778" y="-1.778"/>
+<vertex x="0.508" y="-3.048"/>
+<vertex x="2.032" y="-3.302"/>
+</polygon>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="OP593B">
+<gates>
+<gate name="G$1" symbol="PNP_PHOTOTRANSISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="OP593B">
+<connects>
+<connect gate="G$1" pin="C" pad="P$1"/>
+<connect gate="G$1" pin="E" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3628,9 +3631,9 @@ In this library you will find frames that can be used to help organize a schemat
 </classes>
 <parts>
 <part name="J1" library="RoboJackets-Connectors" deviceset="0353630260" device=""/>
-<part name="D1" library="RoboJackets-LEDs" deviceset="LED-OP593B" device=""/>
 <part name="SUPPLY1" library="RoboJackets-Supplies" deviceset="GND" device=""/>
 <part name="FRAME1" library="RoboJackets-Frames" deviceset="FRAME_11_17" device=""/>
+<part name="U$1" library="RoboJackets-Discrete" deviceset="OP593B" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3641,12 +3644,8 @@ In this library you will find frames that can be used to help organize a schemat
 <attribute name="NAME" x="-5.08" y="7.62" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-5.08" y="-7.62" size="1.778" layer="95" align="top-left"/>
 </instance>
-<instance part="D1" gate="G$1" x="23" y="0" smashed="yes" rot="R90">
-<attribute name="NAME" x="18.936" y="0" size="1.778" layer="95" rot="MR270" align="bottom-center"/>
-<attribute name="VALUE" x="25.54" y="0" size="1.778" layer="96" rot="MR270" align="top-center"/>
-</instance>
-<instance part="SUPPLY1" gate="G$1" x="23" y="-10" smashed="yes">
-<attribute name="VALUE" x="20.46" y="-12.54" size="1.778" layer="96"/>
+<instance part="SUPPLY1" gate="G$1" x="23" y="-15.08" smashed="yes">
+<attribute name="VALUE" x="20.46" y="-17.62" size="1.778" layer="96"/>
 </instance>
 <instance part="FRAME1" gate="G$1" x="-184" y="-148" smashed="yes"/>
 <instance part="FRAME1" gate="G$2" x="141.12" y="-148" smashed="yes">
@@ -3657,27 +3656,35 @@ In this library you will find frames that can be used to help organize a schemat
 <attribute name="REVISION" x="213.51" y="-141.65" size="2.54" layer="94"/>
 <attribute name="SCH_DESC" x="142.39" y="-141.65" size="2.54" layer="94"/>
 </instance>
+<instance part="U$1" gate="G$1" x="25.4" y="0" smashed="yes">
+<attribute name="NAME" x="30.48" y="5.08" size="1.778" layer="95"/>
+<attribute name="VALUE" x="30.48" y="-5.08" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="RX" class="0">
+<net name="N$1" class="0">
 <segment>
-<pinref part="D1" gate="G$1" pin="C"/>
 <pinref part="J1" gate="G$1" pin="P$1"/>
-<wire x1="23" y1="2.54" x2="7.62" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="2.54" x2="15.24" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="2.54" x2="15.24" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="E"/>
+<wire x1="15.24" y1="7.62" x2="27.94" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="P$2"/>
-<wire x1="7.62" y1="-2.54" x2="17" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="17" y1="-2.54" x2="17" y2="-5.08" width="0.1524" layer="91"/>
-<pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="17" y1="-5.08" x2="23" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="C"/>
+<wire x1="27.94" y1="-7.62" x2="27.94" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="-10.16" x2="22.86" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="G$1" pin="GND"/>
-<wire x1="23" y1="-5.08" x2="23" y2="-7.46" width="0.1524" layer="91"/>
-<junction x="23" y="-5.08"/>
+<wire x1="22.86" y1="-10.16" x2="22.86" y2="-12.54" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="-12.54" x2="23" y2="-12.54" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="P$2"/>
+<wire x1="22.86" y1="-10.16" x2="7.62" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="-10.16" x2="7.62" y2="-2.54" width="0.1524" layer="91"/>
+<junction x="22.86" y="-10.16"/>
 </segment>
 </net>
 </nets>
