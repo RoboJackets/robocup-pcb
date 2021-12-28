@@ -18490,32 +18490,6 @@ rfk_1850.pdf</description>
 <pad name="8" x="8" y="0" drill="0.8" rot="R180"/>
 <text x="0.99" y="3.42" size="1" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
 </package>
-<package name="2MM-6-H">
-<wire x1="-6.2" y1="2" x2="-6.2" y2="-8" width="0.127" layer="21"/>
-<wire x1="-6.2" y1="-8" x2="8.2" y2="-8" width="0.127" layer="21"/>
-<wire x1="8.2" y1="-8" x2="8.2" y2="2" width="0.127" layer="21"/>
-<wire x1="8.2" y1="2" x2="-6.2" y2="2" width="0.127" layer="21"/>
-<pad name="2" x="-2" y="0" drill="0.8" rot="R90"/>
-<pad name="1" x="-4" y="0" drill="0.8" shape="square" rot="R180"/>
-<pad name="3" x="0" y="0" drill="0.8" rot="R90"/>
-<pad name="4" x="2" y="0" drill="0.8" rot="R90"/>
-<pad name="5" x="4" y="0" drill="0.8" rot="R90"/>
-<pad name="6" x="6" y="0" drill="0.8" rot="R90"/>
-<text x="1" y="2.5" size="1" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
-</package>
-<package name="2MM-6-V">
-<wire x1="-7" y1="3" x2="-7" y2="-3" width="0.127" layer="21"/>
-<wire x1="-7" y1="-3" x2="9" y2="-3" width="0.127" layer="21"/>
-<wire x1="9" y1="-3" x2="9" y2="3" width="0.127" layer="21"/>
-<wire x1="9" y1="3" x2="-7" y2="3" width="0.127" layer="21"/>
-<pad name="2" x="-2" y="0" drill="0.8" rot="R180"/>
-<pad name="1" x="-4" y="0" drill="0.8" shape="square" rot="R180"/>
-<pad name="3" x="0" y="0" drill="0.8" rot="R180"/>
-<pad name="4" x="2" y="0" drill="0.8" rot="R180"/>
-<pad name="5" x="4" y="0" drill="0.8" rot="R180"/>
-<pad name="6" x="6" y="0" drill="0.8" rot="R180"/>
-<text x="1" y="3.5" size="1" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
-</package>
 <package name="XT60PW-M">
 <pad name="P$1" x="-3.6" y="0" drill="2.7"/>
 <pad name="P$2" x="3.6" y="0" drill="2.7"/>
@@ -18623,26 +18597,6 @@ rfk_1850.pdf</description>
 <wire x1="-5.08" y1="-10.16" x2="2.54" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-10.16" x2="2.54" y2="2.54" width="0.254" layer="94"/>
 <wire x1="2.54" y1="2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
-</symbol>
-<symbol name="6-PIN_CONN">
-<circle x="-0.762" y="12.7" radius="0.762" width="0.254" layer="94"/>
-<circle x="-0.762" y="7.62" radius="0.762" width="0.254" layer="94"/>
-<circle x="-0.762" y="2.54" radius="0.762" width="0.254" layer="94"/>
-<circle x="-0.762" y="-2.54" radius="0.762" width="0.254" layer="94"/>
-<circle x="-0.762" y="-7.62" radius="0.762" width="0.254" layer="94"/>
-<circle x="-0.762" y="-12.7" radius="0.762" width="0.254" layer="94"/>
-<text x="-5.08" y="17.78" size="1.778" layer="95" font="vector" align="top-left">&gt;NAME</text>
-<text x="-5.08" y="-17.78" size="1.778" layer="96" font="vector">&gt;VALUE</text>
-<pin name="1" x="5.08" y="12.7" visible="pin" length="middle" direction="pas" rot="R180"/>
-<pin name="2" x="5.08" y="7.62" visible="pin" length="middle" direction="pas" rot="R180"/>
-<pin name="3" x="5.08" y="2.54" visible="pin" length="middle" direction="pas" rot="R180"/>
-<pin name="4" x="5.08" y="-2.54" visible="pin" length="middle" direction="pas" rot="R180"/>
-<pin name="5" x="5.08" y="-7.62" visible="pin" length="middle" direction="pas" rot="R180"/>
-<pin name="6" x="5.08" y="-12.7" visible="pin" length="middle" direction="pas" rot="R180"/>
-<wire x1="-5.08" y1="-15.24" x2="2.54" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-15.24" x2="2.54" y2="15.24" width="0.254" layer="94"/>
-<wire x1="2.54" y1="15.24" x2="-5.08" y2="15.24" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="15.24" x2="-5.08" y2="-15.24" width="0.254" layer="94"/>
 </symbol>
 <symbol name="PINHD2">
 <wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
@@ -18828,45 +18782,6 @@ rfk_1850.pdf</description>
 <technologies>
 <technology name="">
 <attribute name="PINS" value="8"/>
-<attribute name="PIN_PITCH" value="2.0 mm"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="6-PIN_2MM-*" prefix="J">
-<gates>
-<gate name="G$1" symbol="6-PIN_CONN" x="0" y="0" swaplevel="1"/>
-</gates>
-<devices>
-<device name="H" package="2MM-6-H">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PINS" value="6"/>
-<attribute name="PIN_PITCH" value="2.0 mm"/>
-</technology>
-</technologies>
-</device>
-<device name="V" package="2MM-6-V">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PINS" value="6"/>
 <attribute name="PIN_PITCH" value="2.0 mm"/>
 </technology>
 </technologies>
@@ -30549,13 +30464,13 @@ ripple current from motors</text>
 <part name="KIT2" library="RoboJackets-Boards" deviceset="IMU" device="IMU-KIT"/>
 <part name="C26" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="2.2uF 50V"/>
 <part name="GND46" library="supply1" deviceset="GND" device=""/>
-<part name="J3" library="RoboJackets-Connectors" deviceset="6-PIN_2MM-*" device="H"/>
-<part name="SUPPLY29" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="GND47" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="J6" library="RoboJackets-Connectors" deviceset="XT60PW-MAMASS" device=""/>
 <part name="GND50" library="supply1" deviceset="GND" device=""/>
 <part name="J5" library="RoboJackets-Connectors" deviceset="640389-2" device=""/>
 <part name="J2" library="RoboJackets-Connectors" deviceset="SFW8S-2STE1LF" device=""/>
+<part name="J3" library="RoboJackets-Connectors" deviceset="SFW8S-2STE1LF" device=""/>
+<part name="SUPPLY46" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -33394,15 +33309,8 @@ pins while connecting</text>
 <instance part="SUPPLY36" gate="P" x="172.72" y="200.66" smashed="yes">
 <attribute name="VALUE" x="170.815" y="203.835" size="1.778" layer="96"/>
 </instance>
-<instance part="J3" gate="G$1" x="27.94" y="165.1" smashed="yes">
-<attribute name="NAME" x="22.86" y="182.88" size="1.778" layer="95" font="vector" align="top-left"/>
-<attribute name="VALUE" x="22.86" y="147.32" size="1.778" layer="96" font="vector"/>
-</instance>
-<instance part="SUPPLY29" gate="+5V" x="45.72" y="180.34" smashed="yes">
-<attribute name="VALUE" x="43.815" y="183.515" size="1.778" layer="96"/>
-</instance>
-<instance part="GND47" gate="1" x="45.72" y="149.86" smashed="yes">
-<attribute name="VALUE" x="43.18" y="147.32" size="1.778" layer="96"/>
+<instance part="GND47" gate="1" x="20.32" y="152.4" smashed="yes">
+<attribute name="VALUE" x="17.78" y="149.86" size="1.778" layer="96"/>
 </instance>
 <instance part="J5" gate="A" x="203.2" y="78.74" smashed="yes">
 <attribute name="NAME" x="196.85" y="84.455" size="1.778" layer="95"/>
@@ -33410,6 +33318,12 @@ pins while connecting</text>
 </instance>
 <instance part="J2" gate="A" x="35.56" y="93.98" smashed="yes">
 <attribute name="NAME" x="39.7256" y="99.2886" size="2.0828" layer="95" ratio="6" rot="SR0"/>
+</instance>
+<instance part="J3" gate="A" x="38.1" y="175.26" smashed="yes">
+<attribute name="NAME" x="42.2656" y="180.5686" size="2.0828" layer="95" ratio="6" rot="SR0"/>
+</instance>
+<instance part="SUPPLY46" gate="+5V" x="20.32" y="175.26" smashed="yes">
+<attribute name="VALUE" x="18.415" y="178.435" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -33489,9 +33403,9 @@ pins while connecting</text>
 <wire x1="157.48" y1="193.04" x2="157.48" y2="195.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$1" pin="6"/>
-<wire x1="33.02" y1="152.4" x2="45.72" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="GND47" gate="1" pin="GND"/>
+<pinref part="J3" gate="A" pin="9"/>
+<wire x1="20.32" y1="154.94" x2="38.1" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="HEX-0" class="0">
@@ -33541,9 +33455,9 @@ pins while connecting</text>
 <pinref part="J2" gate="A" pin="6"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$1" pin="1"/>
-<wire x1="33.02" y1="177.8" x2="45.72" y2="177.8" width="0.1524" layer="91"/>
-<pinref part="SUPPLY29" gate="+5V" pin="+5V"/>
+<pinref part="J3" gate="A" pin="2"/>
+<wire x1="38.1" y1="172.72" x2="20.32" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="SUPPLY46" gate="+5V" pin="+5V"/>
 </segment>
 </net>
 <net name="!RST!-RADIO" class="0">
@@ -33709,34 +33623,6 @@ pins while connecting</text>
 <label x="149.86" y="172.72" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="INT-I2C" class="0">
-<segment>
-<pinref part="J3" gate="G$1" pin="3"/>
-<wire x1="33.02" y1="167.64" x2="35.56" y2="167.64" width="0.1524" layer="91"/>
-<label x="35.56" y="167.64" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="SDA" class="0">
-<segment>
-<pinref part="J3" gate="G$1" pin="4"/>
-<wire x1="33.02" y1="162.56" x2="35.56" y2="162.56" width="0.1524" layer="91"/>
-<label x="35.56" y="162.56" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="!RST!-I2C" class="0">
-<segment>
-<pinref part="J3" gate="G$1" pin="2"/>
-<wire x1="33.02" y1="172.72" x2="35.56" y2="172.72" width="0.1524" layer="91"/>
-<label x="35.56" y="172.72" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="SCL" class="0">
-<segment>
-<pinref part="J3" gate="G$1" pin="5"/>
-<wire x1="33.02" y1="157.48" x2="35.56" y2="157.48" width="0.1524" layer="91"/>
-<label x="35.56" y="157.48" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="INT-RAD0" class="0">
 <segment>
 <wire x1="30.48" y1="83.82" x2="35.56" y2="83.82" width="0.1524" layer="91"/>
@@ -33749,6 +33635,34 @@ pins while connecting</text>
 <wire x1="30.48" y1="78.74" x2="35.56" y2="78.74" width="0.1524" layer="91"/>
 <label x="30.48" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J2" gate="A" pin="7"/>
+</segment>
+</net>
+<net name="SCL" class="0">
+<segment>
+<pinref part="J3" gate="A" pin="1"/>
+<wire x1="38.1" y1="175.26" x2="33.02" y2="175.26" width="0.1524" layer="91"/>
+<label x="33.02" y="175.26" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="SDA" class="0">
+<segment>
+<pinref part="J3" gate="A" pin="3"/>
+<wire x1="38.1" y1="170.18" x2="33.02" y2="170.18" width="0.1524" layer="91"/>
+<label x="33.02" y="170.18" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="!RST!-I2C" class="0">
+<segment>
+<pinref part="J3" gate="A" pin="10"/>
+<wire x1="38.1" y1="152.4" x2="35.56" y2="152.4" width="0.1524" layer="91"/>
+<label x="35.56" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="INT-I2C" class="0">
+<segment>
+<pinref part="J3" gate="A" pin="8"/>
+<wire x1="38.1" y1="157.48" x2="35.56" y2="157.48" width="0.1524" layer="91"/>
+<label x="35.56" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
