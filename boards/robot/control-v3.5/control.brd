@@ -2596,8 +2596,8 @@ rfk_1850.pdf</description>
 <smd name="6" x="5" y="3.65" dx="0.6096" dy="1.905" layer="1"/>
 <smd name="7" x="6" y="0" dx="0.6096" dy="1.905" layer="1"/>
 <smd name="8" x="7" y="3.65" dx="0.6096" dy="1.905" layer="1"/>
-<smd name="9" x="-0.999996875" y="1.8034" dx="0.6096" dy="5.5118" layer="1"/>
-<smd name="10" x="8" y="1.8034" dx="0.6096" dy="5.5118" layer="1"/>
+<smd name="NC1" x="-0.999996875" y="1.8034" dx="0.6096" dy="5.5118" layer="1"/>
+<smd name="NC2" x="8" y="1.8034" dx="0.6096" dy="5.5118" layer="1"/>
 <wire x1="-3.8354" y1="-0.127" x2="-1.6256" y2="-0.127" width="0.1524" layer="21"/>
 <wire x1="10.8204" y1="-0.127" x2="10.8204" y2="3.7338" width="0.1524" layer="21"/>
 <wire x1="10.8204" y1="3.7338" x2="8.636" y2="3.7338" width="0.1524" layer="21"/>
@@ -13747,22 +13747,10 @@ Your Eurocircuits Team
 <attribute name="NAME" x="-29.345" y="63.9954" size="1.27" layer="27" ratio="6" rot="SR270"/>
 </element>
 <element name="J2" library="RoboJackets-Connectors" package="CON8_1X8_UB_SFW_JAE" value="SFW8S-2STE1LF" x="-16.5" y="61.5" smashed="yes">
-<attribute name="COPYRIGHT" value="Copyright (C) 2021 Ultra Librarian. All rights reserved." x="-16.5" y="61.5" size="1.778" layer="27" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_1" value="609-1139-1-ND" x="-16.5" y="61.5" size="1.778" layer="27" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_2" value="609-1139-2-ND" x="-16.5" y="61.5" size="1.778" layer="27" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_3" value="609-1139-6-ND" x="-16.5" y="61.5" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="SFW8S-2STE1LF" x="-16.5" y="61.5" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_NAME" value="JAE Electronics" x="-16.5" y="61.5" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-16.2714" y="65.945" size="1.27" layer="27" ratio="6" rot="SR0"/>
 </element>
-<element name="J3" library="RoboJackets-Connectors" package="CON8_1X8_UB_SFW_JAE" value="SFW8S-2STE1LF" x="-36" y="55" smashed="yes">
-<attribute name="COPYRIGHT" value="Copyright (C) 2021 Ultra Librarian. All rights reserved." x="-36" y="55" size="1.778" layer="27" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_1" value="609-1139-1-ND" x="-36" y="55" size="1.778" layer="27" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_2" value="609-1139-2-ND" x="-36" y="55" size="1.778" layer="27" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_3" value="609-1139-6-ND" x="-36" y="55" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="SFW8S-2STE1LF" x="-36" y="55" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_NAME" value="JAE Electronics" x="-36" y="55" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-35.7714" y="59.445" size="1.27" layer="27" ratio="6" rot="SR0"/>
+<element name="J3" library="RoboJackets-Connectors" package="CON8_1X8_UB_SFW_JAE" value="SFW8S-2STE1LF" x="-33.3" y="56.4" smashed="yes">
+<attribute name="NAME" x="-33.0714" y="60.845" size="1.27" layer="27" ratio="6" rot="SR0"/>
 </element>
 </elements>
 <signals>
@@ -14841,10 +14829,10 @@ Your Eurocircuits Team
 <contactref element="J2" pad="8"/>
 <wire x1="-9.5" y1="65.15" x2="-9.5" y2="58.6" width="0.5" layer="1"/>
 <wire x1="-9.5" y1="58.6" x2="-8.5" y2="57.6" width="0.5" layer="1"/>
-<contactref element="J3" pad="9"/>
-<wire x1="-36.999996875" y1="56.8034" x2="-38.196596875" y2="58" width="0.3" layer="1"/>
-<wire x1="-38.196596875" y1="58" x2="-39" y2="58" width="0.3" layer="1"/>
-<via x="-39" y="58" extent="1-16" drill="0.35"/>
+<contactref element="J3" pad="4"/>
+<wire x1="-30.299996875" y1="60.05" x2="-29.349996875" y2="61" width="0.3" layer="1"/>
+<wire x1="-29.349996875" y1="61" x2="-29.0548" y2="61" width="0.3" layer="1"/>
+<via x="-29.0548" y="61" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="+5V">
 <contactref element="R3" pad="1"/>
@@ -14892,10 +14880,10 @@ Your Eurocircuits Team
 <contactref element="J2" pad="6"/>
 <wire x1="-11.5" y1="65.15" x2="-11.5" y2="63.5" width="0.5" layer="1"/>
 <via x="-11.5" y="63.5" extent="1-16" drill="0.35"/>
-<contactref element="J3" pad="2"/>
-<wire x1="-35" y1="58.65" x2="-36" y2="59.65" width="0.3" layer="1"/>
-<wire x1="-36" y1="59.65" x2="-36" y2="61" width="0.3" layer="1"/>
-<via x="-36" y="61" extent="1-16" drill="0.35"/>
+<contactref element="J3" pad="7"/>
+<wire x1="-27.3" y1="56.4" x2="-26.5" y2="57.2" width="0.3" layer="1"/>
+<wire x1="-26.5" y1="57.2" x2="-26.5" y2="57.4" width="0.3" layer="1"/>
+<via x="-26.5" y="57.4" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="+3.3V">
 <contactref element="R11" pad="1"/>
@@ -15173,14 +15161,15 @@ Your Eurocircuits Team
 <wire x1="-35.4" y1="52.9" x2="-35.5" y2="52.9" width="0.3" layer="16"/>
 <via x="-35.5" y="52.9" extent="1-16" drill="0.35"/>
 <wire x1="-34.725" y1="53.575" x2="-35.4" y2="52.9" width="0.3" layer="16"/>
-<contactref element="J3" pad="3"/>
-<wire x1="-35.5" y1="52.9" x2="-34" y2="54.4" width="0.3" layer="1"/>
-<wire x1="-34" y1="54.4" x2="-34" y2="55" width="0.3" layer="1"/>
 <wire x1="-20.75146875" y1="52.9" x2="-20.725734375" y2="52.874265625" width="0.3" layer="1"/>
 <via x="-20.725734375" y="52.874265625" extent="1-16" drill="0.35"/>
 <wire x1="-35.5" y1="52.9" x2="-20.75146875" y2="52.9" width="0.3" layer="1"/>
 <wire x1="-12.85146875" y1="45" x2="-20.725734375" y2="52.874265625" width="0.3" layer="16"/>
 <wire x1="10" y1="45" x2="-12.85146875" y2="45" width="0.3" layer="16"/>
+<contactref element="J3" pad="2"/>
+<wire x1="-35.5" y1="52.9" x2="-35.1184375" y2="52.9" width="0.3" layer="1"/>
+<wire x1="-32.3" y1="55.7184375" x2="-35.1184375" y2="52.9" width="0.3" layer="1"/>
+<wire x1="-32.3" y1="55.7184375" x2="-32.3" y2="60.05" width="0.3" layer="1"/>
 </signal>
 <signal name="SCL">
 <contactref element="IC1" pad="12"/>
@@ -15202,12 +15191,16 @@ Your Eurocircuits Team
 <via x="-37" y="52.9" extent="1-16" drill="0.35"/>
 <wire x1="-33.35" y1="54.225" x2="-35.775" y2="54.225" width="0.3" layer="16"/>
 <wire x1="-35.775" y1="54.225" x2="-37" y2="53" width="0.3" layer="16"/>
-<contactref element="J3" pad="1"/>
 <via x="-18.7" y="52.075" extent="1-16" drill="0.35"/>
 <wire x1="-18.7" y1="52.075" x2="-36.175" y2="52.075" width="0.3" layer="1"/>
 <wire x1="-36.175" y1="52.075" x2="-37" y2="52.9" width="0.3" layer="1"/>
-<wire x1="-37" y1="52.9" x2="-36" y2="53.9" width="0.3" layer="1"/>
-<wire x1="-36" y1="53.9" x2="-36" y2="55" width="0.3" layer="1"/>
+<contactref element="J3" pad="1"/>
+<wire x1="-37" y1="52.9" x2="-36.8" y2="52.9" width="0.3" layer="1"/>
+<wire x1="-33.6952" y1="55.3232375" x2="-33.6952" y2="56.0048" width="0.3" layer="1"/>
+<wire x1="-33.6952" y1="56.0048" x2="-33.3" y2="56.4" width="0.3" layer="1"/>
+<wire x1="-36.8" y1="52.9" x2="-35.3" y2="54.4" width="0.3" layer="1"/>
+<wire x1="-35.3" y1="54.4" x2="-34.6184375" y2="54.4" width="0.3" layer="1"/>
+<wire x1="-34.6184375" y1="54.4" x2="-33.6952" y2="55.3232375" width="0.3" layer="1"/>
 </signal>
 <signal name="R-P9">
 <contactref element="RN6" pad="1"/>
@@ -19624,14 +19617,14 @@ Your Eurocircuits Team
 </signal>
 <signal name="!RST!-I2C">
 <contactref element="RN9" pad="11"/>
-<via x="-24.3" y="58.5" extent="1-16" drill="0.35"/>
+<via x="-24.4" y="54" extent="1-16" drill="0.35"/>
 <wire x1="-25.15" y1="50.75" x2="-24.25" y2="50.75" width="0.3" layer="16"/>
-<wire x1="-23.8" y1="58" x2="-24.3" y2="58.5" width="0.3" layer="16"/>
+<wire x1="-23.8" y1="53.4" x2="-24.4" y2="54" width="0.3" layer="16"/>
 <wire x1="-24.25" y1="50.75" x2="-23.8" y2="51.2" width="0.3" layer="16"/>
-<wire x1="-23.8" y1="51.2" x2="-23.8" y2="58" width="0.3" layer="16"/>
-<contactref element="J3" pad="10"/>
-<wire x1="-24.3" y1="58.5" x2="-25.9966" y2="56.8034" width="0.3" layer="1"/>
-<wire x1="-25.9966" y1="56.8034" x2="-28" y2="56.8034" width="0.3" layer="1"/>
+<wire x1="-23.8" y1="51.2" x2="-23.8" y2="53.4" width="0.3" layer="16"/>
+<contactref element="J3" pad="3"/>
+<wire x1="-24.4" y1="54" x2="-28.9" y2="54" width="0.3" layer="1"/>
+<wire x1="-28.9" y1="54" x2="-31.3" y2="56.4" width="0.3" layer="1"/>
 </signal>
 <signal name="INT-I2C">
 <contactref element="KIT1" pad="P$3"/>
@@ -19642,12 +19635,12 @@ Your Eurocircuits Team
 <wire x1="-8.82" y1="69.38" x2="-9.7564" y2="69.38" width="0.3" layer="16"/>
 <wire x1="-17.1364" y1="62" x2="-18.6" y2="62" width="0.3" layer="16"/>
 <wire x1="-9.7564" y1="69.38" x2="-17.1364" y2="62" width="0.3" layer="16"/>
-<wire x1="-18.6" y1="62" x2="-19.1" y2="62" width="0.3" layer="1"/>
-<contactref element="J3" pad="8"/>
-<wire x1="-19.1" y1="62" x2="-21.1" y2="60" width="0.3" layer="1"/>
-<wire x1="-21.1" y1="60" x2="-28.7" y2="60" width="0.3" layer="1"/>
-<wire x1="-28.7" y1="60" x2="-29" y2="59.7" width="0.3" layer="1"/>
-<wire x1="-29" y1="59.7" x2="-29" y2="58.65" width="0.3" layer="1"/>
+<contactref element="J3" pad="5"/>
+<wire x1="-29.3" y1="56.4" x2="-28.9815625" y2="56.4" width="0.3" layer="1"/>
+<wire x1="-28.9815625" y1="56.4" x2="-27.3290625" y2="54.7475" width="0.3" layer="1"/>
+<wire x1="-27.3290625" y1="54.7475" x2="-24.2525" y2="54.7475" width="0.3" layer="1"/>
+<wire x1="-18.6" y1="60.4" x2="-18.6" y2="62" width="0.3" layer="1"/>
+<wire x1="-24.2525" y1="54.7475" x2="-18.6" y2="60.4" width="0.3" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
