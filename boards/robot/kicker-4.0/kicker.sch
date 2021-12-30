@@ -3224,25 +3224,6 @@ In this library you will find all the connectors used on any of our boards.
 <wire x1="-4" y1="-4" x2="4" y2="-4" width="0.2" layer="21"/>
 <wire x1="-4" y1="-7.2" x2="4" y2="-7.2" width="0.2" layer="21"/>
 </package>
-<package name="HFW8R-1ST">
-<wire x1="5.3" y1="2.75" x2="5.3" y2="-2.75" width="0.2" layer="21"/>
-<wire x1="5.3" y1="-2.75" x2="-5.3" y2="-2.75" width="0.2" layer="21"/>
-<wire x1="-5.3" y1="-2.75" x2="-5.3" y2="2.75" width="0.2" layer="21"/>
-<smd name="6" x="1.5" y="3.25" dx="2" dy="0.6" layer="1" rot="R90"/>
-<smd name="LEG1" x="-4.5" y="1.15" dx="4.2" dy="0.7" layer="1" rot="R90"/>
-<smd name="LEG2" x="4.5" y="1.15" dx="4.2" dy="0.7" layer="1" rot="R90"/>
-<smd name="5" x="0.5" y="3.25" dx="2" dy="0.6" layer="1" rot="R90"/>
-<smd name="4" x="-0.5" y="3.25" dx="2" dy="0.6" layer="1" rot="R90"/>
-<smd name="3" x="-1.5" y="3.25" dx="2" dy="0.6" layer="1" rot="R90"/>
-<smd name="2" x="-2.5" y="3.25" dx="2" dy="0.6" layer="1" rot="R90"/>
-<smd name="1" x="-3.5" y="3.25" dx="2" dy="0.6" layer="1" rot="R90"/>
-<text x="-5.5" y="-2.5" size="1" layer="25" rot="R90">&gt;NAME</text>
-<circle x="-4.25" y="3.75" radius="0.25" width="0" layer="25"/>
-<wire x1="-5.3" y1="2.75" x2="-5" y2="2.75" width="0.2" layer="21"/>
-<wire x1="5" y1="2.75" x2="5.3" y2="2.75" width="0.2" layer="21"/>
-<smd name="7" x="2.5" y="3.25" dx="2" dy="0.6" layer="1" rot="R90"/>
-<smd name="8" x="3.5" y="3.25" dx="2" dy="0.6" layer="1" rot="R90"/>
-</package>
 <package name="2MM-2-H">
 <wire x1="-3" y1="2" x2="-3" y2="-8" width="0.127" layer="21"/>
 <wire x1="-3" y1="-8" x2="5" y2="-8" width="0.127" layer="21"/>
@@ -3281,6 +3262,24 @@ In this library you will find all the connectors used on any of our boards.
 <pad name="3" x="2" y="0" drill="0.8" rot="R180"/>
 <text x="-5" y="3.5" size="1" layer="25" font="vector">&gt;NAME</text>
 </package>
+<package name="SFW8R-1STE1LF">
+<text x="0" y="6.222" size="1.27" layer="25">&gt;Name</text>
+<text x="0" y="-3.778" size="1.27" layer="27">&gt;Value</text>
+<wire x1="-3.073" y1="-1.978" x2="12.727" y2="-1.978" width="0.127" layer="27"/>
+<wire x1="-3.073" y1="-1.978" x2="-3.073" y2="3.522" width="0.127" layer="27"/>
+<wire x1="12.727" y1="-1.978" x2="12.727" y2="3.522" width="0.127" layer="27"/>
+<wire x1="-3.073" y1="3.522" x2="12.727" y2="3.522" width="0.127" layer="27"/>
+<smd name="P$2" x="1.3" y="4.2" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$3" x="2.3" y="4.2" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$4" x="3.3" y="4.2" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$5" x="4.3" y="4.2" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$6" x="5.3" y="4.2" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$7" x="6.3" y="4.2" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$8" x="7.3" y="4.2" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="P$9" x="8.3" y="4.2" dx="2" dy="0.6" layer="1" rot="R90"/>
+<rectangle x1="0" y1="0" x2="0.7" y2="4.2" layer="1"/>
+<rectangle x1="9" y1="0" x2="9.7" y2="4.2" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="2-PIN_CONN">
@@ -3318,10 +3317,6 @@ In this library you will find all the connectors used on any of our boards.
 <wire x1="-5.08" y1="-20.32" x2="2.54" y2="-20.32" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-20.32" x2="2.54" y2="20.32" width="0.254" layer="94"/>
 <wire x1="2.54" y1="20.32" x2="-5.08" y2="20.32" width="0.254" layer="94"/>
-</symbol>
-<symbol name="LEGS">
-<pin name="LEG2" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="LEG1" x="-2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
 </symbol>
 <symbol name="3-PIN_CONN">
 <circle x="-0.762" y="5.08" radius="0.762" width="0.254" layer="94"/>
@@ -3401,34 +3396,6 @@ Power Connector
 </device>
 </devices>
 </deviceset>
-<deviceset name="HFW8" prefix="J">
-<gates>
-<gate name="G$1" symbol="8-PIN_CONN" x="0" y="0"/>
-<gate name="G$2" symbol="LEGS" x="-2.54" y="-20.32" addlevel="request"/>
-</gates>
-<devices>
-<device name="R-1ST" package="HFW8R-1ST">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-<connect gate="G$2" pin="LEG1" pad="LEG1"/>
-<connect gate="G$2" pin="LEG2" pad="LEG2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DIGIKEY" value="609-1788-1-ND" constant="no"/>
-<attribute name="MPN" value="HFW8R-1STE1LF" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="2-PIN_2MM-*" prefix="J">
 <gates>
 <gate name="G$1" symbol="2-PIN_CONN" x="0" y="0" swaplevel="1"/>
@@ -3489,6 +3456,28 @@ Power Connector
 <attribute name="PINS" value="3"/>
 <attribute name="PIN_PITCH" value="2.0 mm"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SFW8R-1STE1LF">
+<gates>
+<gate name="G$1" symbol="8-PIN_CONN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SFW8R-1STE1LF">
+<connects>
+<connect gate="G$1" pin="1" pad="P$2"/>
+<connect gate="G$1" pin="2" pad="P$3"/>
+<connect gate="G$1" pin="3" pad="P$4"/>
+<connect gate="G$1" pin="4" pad="P$5"/>
+<connect gate="G$1" pin="5" pad="P$6"/>
+<connect gate="G$1" pin="6" pad="P$7"/>
+<connect gate="G$1" pin="7" pad="P$8"/>
+<connect gate="G$1" pin="8" pad="P$9"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -13577,6 +13566,15 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <rectangle x1="3.45" y1="-1.2" x2="3.65" y2="1.2" layer="51" rot="R180"/>
 <rectangle x1="-3.5" y1="-2.1" x2="-2.4" y2="2.1" layer="51"/>
 </package>
+<package name="HPC0201" urn="urn:adsk.eagle:footprint:25783/1" library_version="11">
+<description>&lt;b&gt; &lt;/b&gt;&lt;p&gt;
+Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
+<smd name="1" x="-0.18" y="0" dx="0.2" dy="0.35" layer="1"/>
+<smd name="2" x="0.18" y="0" dx="0.2" dy="0.35" layer="1"/>
+<text x="-0.75" y="0.74" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.785" y="-1.865" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.305" y1="-0.15" x2="0.305" y2="0.15" layer="51"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="C2220K" urn="urn:adsk.eagle:package:23687/2" type="model" library_version="3">
@@ -15929,15 +15927,22 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <packageinstance name="SMC_E"/>
 </packageinstances>
 </package3d>
+<package3d name="HPC0201" urn="urn:adsk.eagle:package:26213/1" type="box" library_version="11">
+<description> 
+Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
+<packageinstances>
+<packageinstance name="HPC0201"/>
+</packageinstances>
+</package3d>
 </packages3d>
 <symbols>
-<symbol name="C-US" urn="urn:adsk.eagle:symbol:23201/1" library_version="3">
-<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.016" x2="0" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="-1" x2="2.4892" y2="-1.8542" width="0.254" layer="94" curve="-37.878202"/>
-<wire x1="-2.4668" y1="-1.8504" x2="0" y2="-1.0161" width="0.254" layer="94" curve="-37.373024"/>
-<text x="1.016" y="0.635" size="1.778" layer="95">&gt;NAME</text>
-<text x="1.016" y="-4.191" size="1.778" layer="96">&gt;VALUE</text>
+<symbol name="C-EU" urn="urn:adsk.eagle:symbol:23120/1" library_version="11">
+<wire x1="0" y1="0" x2="0" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-2.032" width="0.1524" layer="94"/>
+<text x="1.524" y="0.381" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.524" y="-4.699" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-2.032" y1="-2.032" x2="2.032" y2="-1.524" layer="94"/>
+<rectangle x1="-2.032" y1="-1.016" x2="2.032" y2="-0.508" layer="94"/>
 <pin name="1" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 </symbol>
@@ -15970,10 +15975,10 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="C-US" urn="urn:adsk.eagle:component:23794/44" prefix="C" uservalue="yes" library_version="11">
-<description>&lt;B&gt;CAPACITOR&lt;/B&gt;, American symbol</description>
+<deviceset name="C-EU" urn="urn:adsk.eagle:component:23793/46" prefix="C" uservalue="yes" library_version="11">
+<description>&lt;B&gt;CAPACITOR&lt;/B&gt;, European symbol</description>
 <gates>
-<gate name="G$1" symbol="C-US" x="0" y="0"/>
+<gate name="G$1" symbol="C-EU" x="0" y="0"/>
 </gates>
 <devices>
 <device name="C0402" package="C0402">
@@ -15986,7 +15991,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="POPULARITY" value="16" constant="no"/>
+<attribute name="POPULARITY" value="18" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -16001,7 +16006,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="POPULARITY" value="2" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -16016,7 +16021,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="POPULARITY" value="37" constant="no"/>
+<attribute name="POPULARITY" value="73" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -16031,7 +16036,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="POPULARITY" value="63" constant="no"/>
+<attribute name="POPULARITY" value="88" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -16046,7 +16051,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="POPULARITY" value="24" constant="no"/>
+<attribute name="POPULARITY" value="54" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -16061,7 +16066,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="POPULARITY" value="6" constant="no"/>
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -16091,7 +16096,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="POPULARITY" value="3" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -16106,7 +16111,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="POPULARITY" value="3" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -16151,7 +16156,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="POPULARITY" value="4" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -16211,7 +16216,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="POPULARITY" value="17" constant="no"/>
+<attribute name="POPULARITY" value="56" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -16226,7 +16231,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="POPULARITY" value="65" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -16241,7 +16246,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="POPULARITY" value="1" constant="no"/>
+<attribute name="POPULARITY" value="14" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -16256,7 +16261,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="POPULARITY" value="4" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -16271,7 +16276,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="POPULARITY" value="7" constant="no"/>
+<attribute name="POPULARITY" value="16" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -16286,7 +16291,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="POPULARITY" value="1" constant="no"/>
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -16361,7 +16366,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="POPULARITY" value="1" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -16376,7 +16381,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="POPULARITY" value="14" constant="no"/>
+<attribute name="POPULARITY" value="33" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -16391,7 +16396,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="POPULARITY" value="29" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -16406,7 +16411,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="POPULARITY" value="2" constant="no"/>
+<attribute name="POPULARITY" value="1" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -16421,7 +16426,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="POPULARITY" value="5" constant="no"/>
+<attribute name="POPULARITY" value="9" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -16436,7 +16441,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="POPULARITY" value="1" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -16451,7 +16456,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="POPULARITY" value="1" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -16466,7 +16471,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="POPULARITY" value="1" constant="no"/>
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -16496,7 +16501,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="POPULARITY" value="7" constant="no"/>
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -16511,7 +16516,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="POPULARITY" value="1" constant="no"/>
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -16526,7 +16531,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="POPULARITY" value="4" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -16541,7 +16546,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="POPULARITY" value="1" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -16601,7 +16606,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="POPULARITY" value="3" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -16691,7 +16696,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="POPULARITY" value="2" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -16886,7 +16891,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="POPULARITY" value="2" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -16916,7 +16921,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="POPULARITY" value="1" constant="no"/>
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -16961,7 +16966,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="POPULARITY" value="4" constant="no"/>
+<attribute name="POPULARITY" value="15" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -16976,7 +16981,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="POPULARITY" value="5" constant="no"/>
+<attribute name="POPULARITY" value="30" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -16991,7 +16996,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="POPULARITY" value="19" constant="no"/>
+<attribute name="POPULARITY" value="52" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -17006,7 +17011,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="POPULARITY" value="2" constant="no"/>
+<attribute name="POPULARITY" value="13" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -17086,6 +17091,21 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </technology>
 </technologies>
 </device>
+<device name="HPC0201" package="HPC0201">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:26213/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+<attribute name="SPICEPREFIX" value="C" constant="no"/>
+</technology>
+</technologies>
+</device>
 <device name="C0201" package="C0201">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
@@ -17096,7 +17116,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="POPULARITY" value="3" constant="no"/>
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -17141,7 +17161,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="POPULARITY" value="2" constant="no"/>
+<attribute name="POPULARITY" value="0" constant="no"/>
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
 </technologies>
@@ -21350,7 +21370,7 @@ In this library you will find inductors. If you are looking for a common package
 <part name="SUPPLY19" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY15" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY18" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="V+" device=""/>
-<part name="C32" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
+<part name="C32" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="R35" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k"/>
 <part name="SUPPLY59" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="SUPPLY51" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
@@ -21360,8 +21380,8 @@ In this library you will find inductors. If you are looking for a common package
 <part name="R27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k"/>
 <part name="SUPPLY42" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY43" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="C26" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 35V"/>
-<part name="C27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22uF 35V"/>
+<part name="C26" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 35V"/>
+<part name="C27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22uF 35V"/>
 <part name="R39" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k"/>
 <part name="R40" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k"/>
 <part name="SUPPLY63" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
@@ -21369,7 +21389,7 @@ In this library you will find inductors. If you are looking for a common package
 <part name="R32" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="ERJ-6GEYJ515V"/>
 <part name="SUPPLY54" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="V+" device=""/>
 <part name="SUPPLY55" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="R30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="270k"/>
+<part name="R30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="300k"/>
 <part name="R31" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k"/>
 <part name="SUPPLY56" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY53" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
@@ -21378,7 +21398,6 @@ In this library you will find inductors. If you are looking for a common package
 <part name="SUPPLY57" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="V+" device=""/>
 <part name="SUPPLY22" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="U4" library="RoboJackets-PowerICs" deviceset="IX4427" device="N"/>
-<part name="J4" library="RoboJackets-Connectors" deviceset="HFW8" device="R-1ST"/>
 <part name="FRAME2" library="ro-frames" deviceset="RO_FRAME_A_L_20161226" device="">
 <attribute name="REV" value="3.3"/>
 </part>
@@ -21443,12 +21462,12 @@ In this library you will find inductors. If you are looking for a common package
 <part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="412k 1%"/>
 <part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="294k 1%"/>
 <part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="412k 1%"/>
-<part name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R2512" package3d_urn="urn:adsk.eagle:package:23545/2" value="7m 1% &gt;1W"/>
-<part name="C13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R) 35V"/>
-<part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R) 35V"/>
-<part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R) 35V"/>
+<part name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R2512" package3d_urn="urn:adsk.eagle:package:23545/2" value="10m 0.1% &gt;1W"/>
+<part name="C13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R) 35V"/>
+<part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R) 35V"/>
+<part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R) 35V"/>
 <part name="SUPPLY16" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="XF1" library="RoboJackets-Fuses" deviceset="3557-2" device="" value="15A"/>
+<part name="XF1" library="RoboJackets-Fuses" deviceset="3557-2" device="" value="10A"/>
 <part name="U5" library="RoboJackets-ICs" deviceset="AT32A" device="TQFP44"/>
 <part name="SUPPLY62" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY65" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
@@ -21468,7 +21487,7 @@ In this library you will find inductors. If you are looking for a common package
 <part name="R44" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k"/>
 <part name="D20" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-YELLOW" value="YELLOW"/>
 <part name="SUPPLY91" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="V+" device=""/>
-<part name="R46" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="ERJ-P06J274V"/>
+<part name="R46" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="ERJ-P06J140V"/>
 <part name="D16" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-GREEN" value="GREEN"/>
 <part name="D18" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-RED" value="RED"/>
 <part name="SUPPLY88" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
@@ -21481,10 +21500,10 @@ In this library you will find inductors. If you are looking for a common package
 <part name="D2" library="RoboJackets-Diodes" deviceset="VS-5EWH06FN-M3" device="D-PAK_TO252AA" value="VS-5EWH06FN-M3"/>
 <part name="D5" library="RoboJackets-Diodes" deviceset="VS-5EWH06FN-M3" device="D-PAK_TO252AA" value="VS-5EWH06FN-M3"/>
 <part name="D6" library="RoboJackets-Diodes" deviceset="VS-5EWH06FN-M3" device="D-PAK_TO252AA" value="VS-5EWH06FN-M3"/>
-<part name="R28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="160"/>
-<part name="R29" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="160"/>
-<part name="C28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 50V"/>
-<part name="C29" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 50V"/>
+<part name="R28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="1k"/>
+<part name="R29" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="1k"/>
+<part name="C28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 50V"/>
+<part name="C29" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 50V"/>
 <part name="SUPPLY44" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY45" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="D4" library="RoboJackets-Diodes" deviceset="SMAJ20A" device="DO-214AC" value="SMAJ20A"/>
@@ -21495,60 +21514,62 @@ In this library you will find inductors. If you are looking for a common package
 <part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E10-25" package3d_urn="urn:adsk.eagle:package:23399/1" value="1000uF"/>
 <part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E10-25" package3d_urn="urn:adsk.eagle:package:23399/1" value="1000uF"/>
 <part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E10-25" package3d_urn="urn:adsk.eagle:package:23399/1" value="1000uF"/>
-<part name="R34" library="RoboJackets-Resistors" deviceset="PWR263S-35" device="TO-263AB" value="1.5k 35W"/>
+<part name="R34" library="RoboJackets-Resistors" deviceset="PWR263S-35" device="TO-263AB" value="1.0k 3.5W">
+<attribute name="DIGIKEY" value="PWR263S-35-1501F"/>
+</part>
 <part name="J6" library="RoboJackets-Connectors" deviceset="3-PIN_2MM-*" device="H"/>
 <part name="J5" library="RoboJackets-Connectors" deviceset="2-PIN_2MM-*" device="H"/>
 <part name="SUPPLY92" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="R47" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="160"/>
 <part name="D21" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-BLUE" value="BLUE"/>
 <part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="25.5k 1%"/>
-<part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="11.5k 1%"/>
-<part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="25.5k 1%"/>
-<part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1.02k 1%"/>
+<part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="11.5k 0.1%"/>
+<part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="25.5k 0.1%"/>
+<part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1k 0.1%"/>
 <part name="Q10" library="RoboJackets-Discrete" deviceset="BSS806N" device="SOT-23-3"/>
 <part name="U2" library="RoboJackets-PowerICs" deviceset="MIC5235YM5" device="SOT-23-5" value="15V"/>
-<part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF 50V"/>
-<part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="2.2uF 35V"/>
+<part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF 50V"/>
+<part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="2.2uF 35V"/>
 <part name="SUPPLY12" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+15V" device=""/>
 <part name="SUPPLY75" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+15V" device=""/>
 <part name="SUPPLY41" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+15V" device=""/>
 <part name="SUPPLY5" library="RoboJackets-Supplies" deviceset="VBATT" device=""/>
 <part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="D17" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-YELLOW" value="YELLOW"/>
-<part name="C33" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
+<part name="C33" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="Q4" library="RoboJackets-Discrete" deviceset="IXGK400N30A3" device=""/>
 <part name="Q3" library="RoboJackets-Discrete" deviceset="IXGK400N30A3" device=""/>
 <part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="22"/>
-<part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R) 35V"/>
-<part name="C14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 35V"/>
-<part name="C16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 35V"/>
+<part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R) 35V"/>
+<part name="C14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 35V"/>
+<part name="C16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 35V"/>
 <part name="U1" library="RoboJackets-PowerICs" deviceset="MPM3620GQV-P" device=""/>
-<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10uF 50V"/>
+<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10uF 50V"/>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k"/>
 <part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="43.2k 1%"/>
 <part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="160k 1%"/>
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="30.1k 1%"/>
-<part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="22uF 10V"/>
+<part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="22uF 10V"/>
 <part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY9" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY28" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="V+" device=""/>
-<part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="113k 0.1%"/>
-<part name="R19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="3.0k 0.1%"/>
+<part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="114k 0.1%"/>
+<part name="R19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="3.12k 0.1%"/>
 <part name="D13" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-YELLOW" value="YELLOW"/>
 <part name="D14" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-BLUE" value="BLUE"/>
-<part name="R20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k"/>
-<part name="R21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k"/>
-<part name="R22" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="160"/>
-<part name="R23" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="160"/>
+<part name="R20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k"/>
+<part name="R21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k"/>
+<part name="R22" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k"/>
+<part name="R23" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k"/>
 <part name="SUPPLY33" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
-<part name="C18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF"/>
-<part name="C17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF"/>
-<part name="R25" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="160"/>
-<part name="C22" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF"/>
+<part name="C18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF"/>
+<part name="C17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF"/>
+<part name="R25" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k"/>
+<part name="C22" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF"/>
 <part name="SUPPLY39" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="R24" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k"/>
+<part name="R24" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k"/>
 <part name="SUPPLY38" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY35" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY32" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
@@ -21558,23 +21579,23 @@ In this library you will find inductors. If you are looking for a common package
 <part name="SUPPLY36" library="RoboJackets-Supplies" deviceset="VBATT" device=""/>
 <part name="SUPPLY26" library="RoboJackets-Supplies" deviceset="VBATT" device=""/>
 <part name="SUPPLY27" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="C21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R)"/>
-<part name="C15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 35V"/>
+<part name="C21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R)"/>
+<part name="C15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 35V"/>
 <part name="SUPPLY30" library="RoboJackets-Supplies" deviceset="VBATT" device=""/>
 <part name="SUPPLY31" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="220pF 100V"/>
+<part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="220pF 100V"/>
 <part name="SUPPLY29" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY23" library="RoboJackets-Supplies" deviceset="VBATT" device=""/>
-<part name="C23" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R)"/>
+<part name="C23" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R)"/>
 <part name="D1" library="RoboJackets-Diodes" deviceset="TVS" device="SOD123W" value="PTVS20VS1UR"/>
 <part name="T1" library="RoboJackets-Inductors" deviceset="DA203X-AL" device="DA2034"/>
-<part name="C20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R)"/>
-<part name="C24" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R)"/>
-<part name="C25" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R)"/>
-<part name="C35" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
-<part name="C34" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
-<part name="C37" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
-<part name="C36" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
+<part name="C20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R)"/>
+<part name="C24" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R)"/>
+<part name="C25" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R)"/>
+<part name="C35" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
+<part name="C34" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
+<part name="C37" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
+<part name="C36" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="SUPPLY69" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY70" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY73" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
@@ -21593,14 +21614,14 @@ In this library you will find inductors. If you are looking for a common package
 <part name="SUPPLY81" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="SUPPLY78" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="SUPPLY77" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
-<part name="C31" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
-<part name="C30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
+<part name="C31" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
+<part name="C30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="SUPPLY66" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="RV1" library="RoboJackets-Resistors" deviceset="PVG3*" device="" value="500"/>
 <part name="FRAME3" library="ro-frames" deviceset="RO_FRAME_A_L_20161226" device=""/>
 <part name="FRAME4" library="ro-frames" deviceset="RO_FRAME_A_L_20161226" device=""/>
 <part name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="505k 0.1%"/>
-<part name="C38" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 50V"/>
+<part name="C38" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 50V"/>
 <part name="SUPPLY110" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R54" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="ERJ-6GEYJ106V"/>
 <part name="SUPPLY111" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
@@ -21614,6 +21635,10 @@ In this library you will find inductors. If you are looking for a common package
 <part name="S2" library="RoboJackets-Switches" deviceset="KMR2" device="">
 <attribute name="FUNCTION" value="Chip"/>
 </part>
+<part name="C39" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 25V"/>
+<part name="C40" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 25V"/>
+<part name="C41" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 25V"/>
+<part name="J4" library="RoboJackets-Connectors" deviceset="SFW8R-1STE1LF" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -22021,7 +22046,7 @@ P = I^2 x R
 P = (7.066^2)*0.007 = 0.3495W
 P = (10.6^2)*0.007 = 0.7865W
 P = (15.1^2)*0.007 = 1.596W</text>
-<text x="25.4" y="162.56" size="1.778" layer="97">Vdrain = Vtrans + (Vout + Vdiode) / N
+<text x="22.86" y="185.42" size="1.778" layer="97">Vdrain = Vtrans + (Vout + Vdiode) / N
 Vtrans = 15.5:21.5
 Vdrain = 40.5:47.5Vtrans RANGE = 6.0VDEL Vdrain RANGE (Vdrain - Vtrans)
 DEL Vdrain RANGE = 25.0:26.0Table 2 (pg. 17):
@@ -22043,11 +22068,12 @@ Trr_ideal @ Fsw=100KHz &lt;= 100nsFsw = 1 / (Ipk*Lpri*((1/Vtrans)+(N/Vout)))
 Fsw = 1 / (10*0.000010*((1/15.5)+(10/250)))
 Fsw = 1 / (10*0.000010*((1/21.5)+(10/250)))
 Fsw = 95.9kHz:115kHz</text>
-<text x="218.44" y="149.86" size="1.778" layer="97">FBH=((Vout-1.22)^2)/(Pd)
-FBH=((250-1.22)^2)/0.1)
-FBH=618.9kOhmFBL=(1.22/(Vout-1.22))*FBH
-FBL=(1.22/(250-1.22))*618900
-FBL=3.0kOhm</text>
+<text x="218.44" y="149.86" size="1.778" layer="97">FBH=((Vout-1.25)^2)/(Pd)
+FBH=((250-1.25)^2)/0.1
+FBH=618.76kOhm so 619K
+FBL=(1.25/(Vout-1.25))*FBH
+FBL=(1.25/(250-1.25))*61900
+FBL=3.110KOhm so 3.12kOhm</text>
 </plain>
 <instances>
 <instance part="SUPPLY25" gate="GND" x="187.96" y="137.16" smashed="yes">
@@ -22652,8 +22678,8 @@ FBL=3.0kOhm</text>
 <text x="116.84" y="114.3" size="1.778" layer="97">Battery/Charge-Cycle Decoupling</text>
 <text x="215.9" y="185.42" size="1.778" layer="97">Clamp all LT control lines @ 5.5V.Snub Ringing on the long control traces:
 F_cutoff = 1 / (2 * pi * R * C)
-F_cutoff = 1 / (2 * pi * 160 * 0.0000001)
-F_cutoff = 9947.18 = ~10kHz</text>
+F_cutoff = 1 / (2 * pi * 1000 * 0.0000001)
+F_cutoff = 1591.55 = ~1.5kHz</text>
 <text x="137.16" y="45.72" size="1.778" layer="97">Primary VBatt Decoupling:
 560uF Electrolytic
 50uF Fast Response CeramicAll components are still locally
@@ -23350,6 +23376,7 @@ changes the V_min seen on the HV line.V_min = V_th((2 * 5.1E6 + 1.0E7)/1.0E7) = 
 <instance part="R34" gate="PWR263S-35-3301J" x="121.92" y="172.72" smashed="yes" rot="R270">
 <attribute name="NAME" x="123.4186" y="176.53" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="118.618" y="176.53" size="1.778" layer="96" rot="R270"/>
+<attribute name="DIGIKEY" x="121.92" y="172.72" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="C38" gate="G$1" x="81.28" y="129.54" smashed="yes" rot="R180">
 <attribute name="NAME" x="80.264" y="128.905" size="1.778" layer="95" rot="R180"/>
@@ -23449,7 +23476,7 @@ changes the V_min seen on the HV line.V_min = V_th((2 * 5.1E6 + 1.0E7)/1.0E7) = 
 <segment>
 <pinref part="SUPPLY57" gate="1" pin="V+"/>
 <pinref part="R34" gate="PWR263S-35-3301J" pin="PIN1"/>
-<wire x1="121.92" y1="185.42" x2="121.92" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="177.8" x2="121.92" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DISCHARGE_DRAIN" class="0">
@@ -23460,7 +23487,7 @@ changes the V_min seen on the HV line.V_min = V_th((2 * 5.1E6 + 1.0E7)/1.0E7) = 
 <label x="127" y="157.48" size="1.27" layer="95" xref="yes"/>
 <junction x="121.92" y="157.48"/>
 <pinref part="R34" gate="PWR263S-35-3301J" pin="PIN2"/>
-<wire x1="121.92" y1="167.64" x2="121.92" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="157.48" x2="121.92" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="QD_PU_BR" class="0">
@@ -23537,10 +23564,6 @@ Vmon is adjusted to have the max typical voltage of around 2.5V</text>
 </instance>
 <instance part="SUPPLY64" gate="GND" x="134.62" y="180.34" smashed="yes">
 <attribute name="VALUE" x="132.715" y="177.165" size="1.778" layer="96"/>
-</instance>
-<instance part="J4" gate="G$1" x="20.32" y="48.26" smashed="yes">
-<attribute name="NAME" x="15.24" y="71.12" size="1.778" layer="95" font="vector" align="top-left"/>
-<attribute name="VALUE" x="15.24" y="25.4" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="FRAME6" gate="G$1" x="0" y="0" smashed="yes"/>
 <instance part="FRAME6" gate="G$2" x="124.46" y="0" smashed="yes">
@@ -23643,6 +23666,10 @@ Vmon is adjusted to have the max typical voltage of around 2.5V</text>
 </instance>
 <instance part="SUPPLY66" gate="GND" x="144.78" y="99.06" smashed="yes">
 <attribute name="VALUE" x="142.875" y="95.885" size="1.778" layer="96"/>
+</instance>
+<instance part="J4" gate="G$1" x="20.32" y="48.26" smashed="yes">
+<attribute name="NAME" x="15.24" y="71.12" size="1.778" layer="95" font="vector" align="top-left"/>
+<attribute name="VALUE" x="15.24" y="25.4" size="1.778" layer="96" font="vector"/>
 </instance>
 </instances>
 <busses>
@@ -24024,9 +24051,9 @@ Vmon is adjusted to have the max typical voltage of around 2.5V</text>
 </net>
 <net name="VCC_LGC_EXT" class="0">
 <segment>
-<pinref part="J4" gate="G$1" pin="2"/>
 <wire x1="25.4" y1="60.96" x2="27.94" y2="60.96" width="0.1524" layer="91"/>
 <label x="27.94" y="60.96" size="1.27" layer="95" xref="yes"/>
+<pinref part="J4" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="203.2" y1="177.8" x2="200.66" y2="177.8" width="0.1524" layer="91"/>
@@ -24066,9 +24093,9 @@ Vmon is adjusted to have the max typical voltage of around 2.5V</text>
 <pinref part="U6" gate="G$1" pin="GND1"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="3"/>
 <wire x1="25.4" y1="55.88" x2="27.94" y2="55.88" width="0.1524" layer="91"/>
 <label x="27.94" y="55.88" size="1.27" layer="95" xref="yes"/>
+<pinref part="J4" gate="G$1" pin="3"/>
 </segment>
 <segment>
 <label x="200.66" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -24089,8 +24116,8 @@ Vmon is adjusted to have the max typical voltage of around 2.5V</text>
 <net name="!RESET_EXT" class="0">
 <segment>
 <label x="27.94" y="50.8" size="1.27" layer="95" xref="yes"/>
-<pinref part="J4" gate="G$1" pin="4"/>
 <wire x1="27.94" y1="50.8" x2="25.4" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="J4" gate="G$1" pin="4"/>
 </segment>
 <segment>
 <wire x1="203.2" y1="187.96" x2="200.66" y2="187.96" width="0.1524" layer="91"/>
@@ -24113,8 +24140,8 @@ Vmon is adjusted to have the max typical voltage of around 2.5V</text>
 <net name="SCK_EXT" class="0">
 <segment>
 <label x="27.94" y="40.64" size="1.27" layer="95" xref="yes"/>
-<pinref part="J4" gate="G$1" pin="6"/>
 <wire x1="27.94" y1="40.64" x2="25.4" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="J4" gate="G$1" pin="6"/>
 </segment>
 <segment>
 <wire x1="203.2" y1="144.78" x2="200.66" y2="144.78" width="0.1524" layer="91"/>
@@ -24137,8 +24164,8 @@ Vmon is adjusted to have the max typical voltage of around 2.5V</text>
 <net name="MISO_EXT" class="0">
 <segment>
 <label x="27.94" y="30.48" size="1.27" layer="95" xref="yes"/>
-<pinref part="J4" gate="G$1" pin="8"/>
 <wire x1="27.94" y1="30.48" x2="25.4" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="J4" gate="G$1" pin="8"/>
 </segment>
 <segment>
 <wire x1="203.2" y1="139.7" x2="200.66" y2="139.7" width="0.1524" layer="91"/>
@@ -24874,9 +24901,9 @@ Vmon is adjusted to have the max typical voltage of around 2.5V</text>
 <wire x1="91.44" y1="157.48" x2="91.44" y2="200.66" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="91.44" y1="200.66" x2="15.24" y2="200.66" width="0.1524" layer="97" style="shortdash"/>
 <text x="20.32" y="195.58" size="1.27" layer="97">Debug Mode Select</text>
-<wire x1="104.14" y1="200.66" x2="104.14" y2="127" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="104.14" y1="127" x2="226.06" y2="127" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="226.06" y1="127" x2="226.06" y2="200.66" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="104.14" y1="200.66" x2="104.14" y2="124.46" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="104.14" y1="124.46" x2="226.06" y2="124.46" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="226.06" y1="124.46" x2="226.06" y2="200.66" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="226.06" y1="200.66" x2="104.14" y2="200.66" width="0.1524" layer="97" style="shortdash"/>
 <text x="109.22" y="195.58" size="1.27" layer="97">Chip/Kick Switch</text>
 </plain>
@@ -24937,14 +24964,14 @@ Vmon is adjusted to have the max typical voltage of around 2.5V</text>
 <instance part="SUPPLY108" gate="+5V" x="203.2" y="182.88" smashed="yes">
 <attribute name="VALUE" x="201.295" y="186.055" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY107" gate="GND" x="167.64" y="142.24" smashed="yes">
-<attribute name="VALUE" x="165.735" y="139.065" size="1.778" layer="96"/>
+<instance part="SUPPLY107" gate="GND" x="167.64" y="139.7" smashed="yes">
+<attribute name="VALUE" x="165.735" y="136.525" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY105" gate="GND" x="134.62" y="142.24" smashed="yes">
-<attribute name="VALUE" x="132.715" y="139.065" size="1.778" layer="96"/>
+<instance part="SUPPLY105" gate="GND" x="134.62" y="139.7" smashed="yes">
+<attribute name="VALUE" x="132.715" y="136.525" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY109" gate="GND" x="203.2" y="142.24" smashed="yes">
-<attribute name="VALUE" x="201.295" y="139.065" size="1.778" layer="96"/>
+<instance part="SUPPLY109" gate="GND" x="203.2" y="139.7" smashed="yes">
+<attribute name="VALUE" x="201.295" y="136.525" size="1.778" layer="96"/>
 </instance>
 <instance part="S4" gate="G$1" x="203.2" y="152.4" smashed="yes" rot="R90">
 <attribute name="NAME" x="199.39" y="147.32" size="2.54" layer="95" font="vector" rot="R90"/>
@@ -24957,6 +24984,18 @@ Vmon is adjusted to have the max typical voltage of around 2.5V</text>
 <instance part="S2" gate="G$1" x="134.62" y="152.4" smashed="yes" rot="R90">
 <attribute name="NAME" x="130.81" y="147.32" size="2.54" layer="95" font="vector" rot="R90"/>
 <attribute name="FUNCTION" x="136.398" y="152.4" size="1.27" layer="97" ratio="10" rot="R90" align="top-center"/>
+</instance>
+<instance part="C39" gate="G$1" x="142.24" y="152.4" smashed="yes">
+<attribute name="NAME" x="143.256" y="153.035" size="1.778" layer="95"/>
+<attribute name="VALUE" x="143.256" y="148.209" size="1.778" layer="96"/>
+</instance>
+<instance part="C40" gate="G$1" x="175.26" y="152.4" smashed="yes">
+<attribute name="NAME" x="176.276" y="153.035" size="1.778" layer="95"/>
+<attribute name="VALUE" x="176.276" y="148.209" size="1.778" layer="96"/>
+</instance>
+<instance part="C41" gate="G$1" x="210.82" y="152.4" smashed="yes">
+<attribute name="NAME" x="211.836" y="153.035" size="1.778" layer="95"/>
+<attribute name="VALUE" x="211.836" y="148.209" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -24983,16 +25022,31 @@ Vmon is adjusted to have the max typical voltage of around 2.5V</text>
 <pinref part="SUPPLY109" gate="GND" pin="GND"/>
 <wire x1="203.2" y1="147.32" x2="203.2" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="S4" gate="G$1" pin="1"/>
+<pinref part="C41" gate="G$1" pin="2"/>
+<wire x1="203.2" y1="144.78" x2="203.2" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="147.32" x2="210.82" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="144.78" x2="203.2" y2="144.78" width="0.1524" layer="91"/>
+<junction x="203.2" y="144.78"/>
 </segment>
 <segment>
 <pinref part="SUPPLY105" gate="GND" pin="GND"/>
 <wire x1="134.62" y1="147.32" x2="134.62" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="S2" gate="G$1" pin="1"/>
+<pinref part="C39" gate="G$1" pin="2"/>
+<wire x1="134.62" y1="144.78" x2="134.62" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="147.32" x2="142.24" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="144.78" x2="134.62" y2="144.78" width="0.1524" layer="91"/>
+<junction x="134.62" y="144.78"/>
 </segment>
 <segment>
 <pinref part="SUPPLY107" gate="GND" pin="GND"/>
 <wire x1="167.64" y1="147.32" x2="167.64" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="S3" gate="G$1" pin="1"/>
+<pinref part="C40" gate="G$1" pin="2"/>
+<wire x1="167.64" y1="144.78" x2="167.64" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="147.32" x2="175.26" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="144.78" x2="167.64" y2="144.78" width="0.1524" layer="91"/>
+<junction x="167.64" y="144.78"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -25041,6 +25095,9 @@ Vmon is adjusted to have the max typical voltage of around 2.5V</text>
 <label x="162.56" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="167.64" y1="157.48" x2="167.64" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="S3" gate="G$1" pin="2"/>
+<pinref part="C40" gate="G$1" pin="1"/>
+<wire x1="175.26" y1="154.94" x2="175.26" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="160.02" x2="167.64" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="!BTN_CHP" class="0">
@@ -25052,6 +25109,9 @@ Vmon is adjusted to have the max typical voltage of around 2.5V</text>
 <label x="129.54" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="134.62" y1="157.48" x2="134.62" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="S2" gate="G$1" pin="2"/>
+<pinref part="C39" gate="G$1" pin="1"/>
+<wire x1="142.24" y1="154.94" x2="142.24" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="160.02" x2="134.62" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="!BTN_CHG" class="0">
@@ -25063,6 +25123,9 @@ Vmon is adjusted to have the max typical voltage of around 2.5V</text>
 <label x="198.12" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="203.2" y1="157.48" x2="203.2" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="S4" gate="G$1" pin="2"/>
+<pinref part="C41" gate="G$1" pin="1"/>
+<wire x1="210.82" y1="154.94" x2="210.82" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="160.02" x2="203.2" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
