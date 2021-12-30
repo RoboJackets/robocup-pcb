@@ -549,13 +549,11 @@ In this library you will find the larger circuit elements that are used to contr
 <technologies>
 <technology name="A">
 <attribute name="DATA_RATE" value="1 Mbps"/>
-<attribute name="DIGIKEY_PN" value="ADUM7441ARQZ-RL7CT-ND"/>
-<attribute name="MANUFACTURER" value="ANALOG DEVICES"/>
+<attribute name="DIGIKEY" value="ADUM7441ARQZ-RL7CT-ND"/>
 </technology>
 <technology name="C">
-<attribute name="DATA_RATE" value="25 Mbps" constant="no"/>
-<attribute name="DIGIKEY_PN" value="ADUM7441CRQZ-RL7CT-ND"/>
-<attribute name="MANUFACTURER" value="ANALOG DEVICES"/>
+<attribute name="DATA_RATE" value="25 Mbps"/>
+<attribute name="DIGIKEY" value="ADUM7441CRQZ-RL7CT-ND"/>
 </technology>
 </technologies>
 </device>
@@ -4074,9 +4072,7 @@ Source: http://www.ctscorp.com/components/Datasheets/CTSChipArrayDs.pdf</descrip
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DIGIKEY_LINK" value="https://www.digikey.com/product-detail/en/bourns-inc/PVG3G501C01R00/PVG3G501C01R00CT-ND/6613133"/>
-<attribute name="DIGIKEY_PN" value="PVG3G501C01R00CT-ND"/>
-<attribute name="MANUFACTURER" value="Bourns"/>
+<attribute name="DIGIKEY" value="PVG3G501C01R00CT-ND"/>
 <attribute name="MPN" value="PVG3"/>
 </technology>
 </technologies>
@@ -16028,8 +16024,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23626/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C0504" package="C0504">
@@ -16041,8 +16036,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23624/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C0603" package="C0603">
@@ -16054,8 +16048,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23616/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C0805" package="C0805">
@@ -16067,7 +16060,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23617/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C1206" package="C1206">
@@ -16079,7 +16072,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23618/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C1210" package="C1210">
@@ -16091,7 +16084,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23619/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C1310" package="C1310">
@@ -16103,8 +16096,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23620/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C1608" package="C1608">
@@ -16116,8 +16108,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23621/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C1812" package="C1812">
@@ -16129,8 +16120,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23622/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C1825" package="C1825">
@@ -16142,8 +16132,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23623/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C2012" package="C2012">
@@ -16155,8 +16144,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23625/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C3216" package="C3216">
@@ -16168,8 +16156,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23628/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C3225" package="C3225">
@@ -16181,8 +16168,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23655/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C4532" package="C4532">
@@ -16194,8 +16180,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23627/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C4564" package="C4564">
@@ -16207,8 +16192,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23648/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="025-024X044" package="C025-024X044">
@@ -16220,7 +16204,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23630/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="025-025X050" package="C025-025X050">
@@ -16232,8 +16216,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23629/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="025-030X050" package="C025-030X050">
@@ -16245,7 +16228,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23631/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="025-040X050" package="C025-040X050">
@@ -16257,8 +16240,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23634/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="025-050X050" package="C025-050X050">
@@ -16270,7 +16252,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23633/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="025-060X050" package="C025-060X050">
@@ -16282,7 +16264,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23632/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C025_050-024X070" package="C025_050-024X070">
@@ -16294,8 +16276,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23639/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="025_050-025X075" package="C025_050-025X075">
@@ -16307,8 +16288,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23641/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="025_050-035X075" package="C025_050-035X075">
@@ -16320,8 +16300,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23651/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="025_050-045X075" package="C025_050-045X075">
@@ -16333,8 +16312,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23635/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="025_050-055X075" package="C025_050-055X075">
@@ -16346,8 +16324,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23636/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="050-024X044" package="C050-024X044">
@@ -16359,7 +16336,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23643/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="050-025X075" package="C050-025X075">
@@ -16371,8 +16348,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23637/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="050-045X075" package="C050-045X075">
@@ -16384,7 +16360,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23638/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="050-030X075" package="C050-030X075">
@@ -16396,7 +16372,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23640/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="050-050X075" package="C050-050X075">
@@ -16408,8 +16384,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23665/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="050-055X075" package="C050-055X075">
@@ -16421,8 +16396,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23642/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="050-075X075" package="C050-075X075">
@@ -16434,7 +16408,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23645/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="050H075X075" package="C050H075X075">
@@ -16446,8 +16420,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23644/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="075-032X103" package="C075-032X103">
@@ -16459,7 +16432,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23646/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="075-042X103" package="C075-042X103">
@@ -16471,7 +16444,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23656/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="075-052X106" package="C075-052X106">
@@ -16483,8 +16456,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23650/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="102-043X133" package="C102-043X133">
@@ -16496,8 +16468,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23647/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="102-054X133" package="C102-054X133">
@@ -16509,8 +16480,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23649/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="102-064X133" package="C102-064X133">
@@ -16522,8 +16492,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23653/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="102_152-062X184" package="C102_152-062X184">
@@ -16535,8 +16504,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23652/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="150-054X183" package="C150-054X183">
@@ -16548,8 +16516,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23669/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="150-064X183" package="C150-064X183">
@@ -16561,8 +16528,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23654/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="150-072X183" package="C150-072X183">
@@ -16574,8 +16540,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23657/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="150-084X183" package="C150-084X183">
@@ -16587,8 +16552,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23658/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="150-091X182" package="C150-091X182">
@@ -16600,8 +16564,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23659/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="225-062X268" package="C225-062X268">
@@ -16613,8 +16576,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23661/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="225-074X268" package="C225-074X268">
@@ -16626,8 +16588,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23660/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="225-087X268" package="C225-087X268">
@@ -16639,8 +16600,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23662/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="225-108X268" package="C225-108X268">
@@ -16652,8 +16612,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23663/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="225-113X268" package="C225-113X268">
@@ -16665,8 +16624,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23667/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="275-093X316" package="C275-093X316">
@@ -16678,8 +16636,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23701/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="275-113X316" package="C275-113X316">
@@ -16691,8 +16648,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23673/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="275-134X316" package="C275-134X316">
@@ -16704,8 +16660,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23664/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="275-205X316" package="C275-205X316">
@@ -16717,8 +16672,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23666/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="325-137X374" package="C325-137X374">
@@ -16730,8 +16684,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23672/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="325-162X374" package="C325-162X374">
@@ -16743,8 +16696,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23670/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="325-182X374" package="C325-182X374">
@@ -16756,8 +16708,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23668/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="375-192X418" package="C375-192X418">
@@ -16769,8 +16720,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23674/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="375-203X418" package="C375-203X418">
@@ -16782,8 +16732,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23671/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="050-035X075" package="C050-035X075">
@@ -16795,8 +16744,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23677/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="375-155X418" package="C375-155X418">
@@ -16808,8 +16756,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23675/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="075-063X106" package="C075-063X106">
@@ -16821,7 +16768,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23678/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="275-154X316" package="C275-154X316">
@@ -16833,8 +16780,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23685/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="275-173X316" package="C275-173X316">
@@ -16846,8 +16792,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23676/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C0402K" package="C0402K">
@@ -16859,7 +16804,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23679/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C0603K" package="C0603K">
@@ -16871,7 +16816,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23680/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C0805K" package="C0805K">
@@ -16883,7 +16828,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23681/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C1206K" package="C1206K">
@@ -16895,7 +16840,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23682/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C1210K" package="C1210K">
@@ -16907,8 +16852,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23683/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C1812K" package="C1812K">
@@ -16920,8 +16864,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23686/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C1825K" package="C1825K">
@@ -16933,8 +16876,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23684/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C2220K" package="C2220K">
@@ -16946,8 +16888,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23687/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C2225K" package="C2225K">
@@ -16959,8 +16900,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23692/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C0201" package="C0201">
@@ -16972,7 +16912,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23690/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C1808" package="C1808">
@@ -16984,8 +16924,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23689/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C3640" package="C3640">
@@ -16997,8 +16936,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23693/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="01005" package="C01005">
@@ -17010,7 +16948,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23691/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -17036,7 +16974,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23547/3"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="R0603" package="R0603">
@@ -17048,7 +16986,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23555/3"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="R0805" package="R0805">
@@ -17060,7 +16998,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23553/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="R0805W" package="R0805W">
@@ -17072,8 +17010,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23537/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="R1206" package="R1206">
@@ -17085,7 +17022,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23540/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="R1206W" package="R1206W">
@@ -17097,8 +17034,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23539/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="R1210" package="R1210">
@@ -17110,8 +17046,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23554/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="R1210W" package="R1210W">
@@ -17123,8 +17058,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23541/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="R2010" package="R2010">
@@ -17136,8 +17070,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23551/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="R2010W" package="R2010W">
@@ -17149,8 +17082,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23542/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="R2012" package="R2012">
@@ -17162,8 +17094,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23543/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="R2012W" package="R2012W">
@@ -17175,8 +17106,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23544/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="R2512" package="R2512">
@@ -17188,8 +17118,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23545/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="R2512W" package="R2512W">
@@ -17201,7 +17130,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23565/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="R3216" package="R3216">
@@ -17213,8 +17142,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23557/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="R3216W" package="R3216W">
@@ -17226,7 +17154,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23548/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="R3225" package="R3225">
@@ -17238,8 +17166,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23549/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="R3225W" package="R3225W">
@@ -17251,8 +17178,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23550/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="R5025" package="R5025">
@@ -17264,8 +17190,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23552/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="R5025W" package="R5025W">
@@ -17277,8 +17202,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23558/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="R6332" package="R6332">
@@ -17290,8 +17214,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23559/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="R6332W" package="R6332W">
@@ -17303,8 +17226,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:26078/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="M0805" package="M0805">
@@ -17316,7 +17238,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23556/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="M1206" package="M1206">
@@ -17328,7 +17250,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23566/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="M1406" package="M1406">
@@ -17340,8 +17262,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23569/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="M2012" package="M2012">
@@ -17353,8 +17274,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23561/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="M2309" package="M2309">
@@ -17366,8 +17286,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23562/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="M3216" package="M3216">
@@ -17379,8 +17298,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23563/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="M3516" package="M3516">
@@ -17392,8 +17310,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23573/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="M5923" package="M5923">
@@ -17405,8 +17322,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23564/3"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="0204/5" package="0204/5">
@@ -17418,7 +17334,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23488/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="0204/7" package="0204/7">
@@ -17430,7 +17346,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23498/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="0207/10" package="0207/10">
@@ -17442,7 +17358,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23491/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="0207/12" package="0207/12">
@@ -17454,7 +17370,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23489/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="0207/15" package="0207/15">
@@ -17466,8 +17382,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23492/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="0207/2V" package="0207/2V">
@@ -17479,8 +17394,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23490/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="0207/5V" package="0207/5V">
@@ -17492,8 +17406,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23502/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="0207/7" package="0207/7">
@@ -17505,7 +17418,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23493/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="0309/10" package="0309/10">
@@ -17517,8 +17430,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23567/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="0309/12" package="0309/12">
@@ -17530,7 +17442,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23571/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="0411/12" package="0411/12">
@@ -17542,8 +17454,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23578/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="0411/15" package="0411/15">
@@ -17555,7 +17466,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23568/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="0411/3V" package="0411V">
@@ -17567,8 +17478,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23570/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="0414/15" package="0414/15">
@@ -17580,8 +17490,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23579/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="0414/5V" package="0414V">
@@ -17593,8 +17502,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23574/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="0617/17" package="0617/17">
@@ -17606,8 +17514,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23575/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="0617/22" package="0617/22">
@@ -17619,8 +17526,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23577/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="0617/5V" package="0617V">
@@ -17632,8 +17538,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23576/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="0922/22" package="0922/22">
@@ -17645,8 +17550,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23580/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="0613/5V" package="P0613V">
@@ -17658,8 +17562,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23582/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="0613/15" package="P0613/15">
@@ -17671,8 +17574,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23581/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="0817/22" package="P0817/22">
@@ -17684,8 +17586,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23583/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="0817/7V" package="P0817V">
@@ -17697,8 +17598,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23608/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="V234/12" package="V234/12">
@@ -17710,8 +17610,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23592/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="V235/17" package="V235/17">
@@ -17723,8 +17622,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23586/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="V526-0" package="V526-0">
@@ -17736,8 +17634,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23590/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="MELF0102AX" package="MINI_MELF-0102AX">
@@ -17749,8 +17646,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23594/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="0922V" package="0922V">
@@ -17762,8 +17658,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23589/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="MELF0102R" package="MINI_MELF-0102R">
@@ -17775,7 +17670,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23591/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="MELF0102W" package="MINI_MELF-0102W">
@@ -17787,8 +17682,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23588/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="MELF0204R" package="MINI_MELF-0204R">
@@ -17800,7 +17694,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:26109/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="MELF0204W" package="MINI_MELF-0204W">
@@ -17812,8 +17706,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:26111/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="MELF0207R" package="MINI_MELF-0207R">
@@ -17825,8 +17718,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:26113/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="MELF0207W" package="MINI_MELF-0207W">
@@ -17838,8 +17730,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:26112/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="RDH/15" package="RDH/15">
@@ -17851,8 +17742,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23595/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="0204/2V" package="0204V">
@@ -17864,8 +17754,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23495/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="0309/V" package="0309V">
@@ -17877,8 +17766,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23572/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="R0201" package="R0201">
@@ -17890,8 +17778,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:26117/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="VMTA55" package="VMTA55">
@@ -17903,8 +17790,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:26121/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="VMTB60" package="VMTB60">
@@ -17916,8 +17802,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:26122/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="VTA52" package="VTA52">
@@ -17929,7 +17814,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:26116/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="VTA53" package="VTA53">
@@ -17941,8 +17826,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:26118/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="VTA54" package="VTA54">
@@ -17954,8 +17838,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:26119/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="VTA55" package="VTA55">
@@ -17967,8 +17850,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:26120/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="VTA56" package="VTA56">
@@ -17980,8 +17862,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:26129/3"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="R4527" package="R4527">
@@ -17993,8 +17874,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:13310/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="WSC0001" package="WSC0001">
@@ -18006,8 +17886,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:26123/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="WSC0002" package="WSC0002">
@@ -18019,8 +17898,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:26125/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="WSC01/2" package="WSC01/2">
@@ -18032,8 +17910,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:26127/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="WSC2515" package="WSC2515">
@@ -18045,8 +17922,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:26134/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="WSC4527" package="WSC4527">
@@ -18058,8 +17934,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:26126/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="WSC6927" package="WSC6927">
@@ -18071,8 +17946,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:26128/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="R1218" package="R1218">
@@ -18084,8 +17958,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:26131/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="1812X7R" package="1812X7R">
@@ -18097,8 +17970,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:26130/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="01005" package="R01005">
@@ -18110,7 +17982,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:26133/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -18136,7 +18008,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23327/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="CT3528" package="CT3528">
@@ -18148,7 +18020,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23325/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="CT6032" package="CT6032">
@@ -18160,8 +18032,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23305/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="CT7343" package="CT7343">
@@ -18173,7 +18044,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23304/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="B45181A" package="B45181A">
@@ -18185,8 +18056,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23316/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="B45181B" package="B45181B">
@@ -18198,7 +18068,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23320/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="B45181C" package="B45181C">
@@ -18210,8 +18080,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23306/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="B45181D" package="B45181D">
@@ -18223,8 +18092,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23308/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="TT2D4" package="TT2D4">
@@ -18236,8 +18104,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23310/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="TT2D4L" package="TT2D4L">
@@ -18249,8 +18116,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23321/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="TT2D5" package="TT2D5">
@@ -18262,8 +18128,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23300/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="TT2D6" package="TT2D6">
@@ -18275,8 +18140,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23303/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="TT2D6L" package="TT2D6L">
@@ -18288,8 +18152,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23323/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="TT2D7L" package="TT2D7L">
@@ -18301,8 +18164,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23329/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="TT2D7" package="TT2D7">
@@ -18314,8 +18176,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23319/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="TT5D10" package="TT5D10">
@@ -18327,7 +18188,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23302/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="TT5D11" package="TT5D11">
@@ -18339,8 +18200,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23309/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="TT5D11L" package="TT5D11L">
@@ -18352,8 +18212,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23312/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="TT6D6" package="TT5D6">
@@ -18365,8 +18224,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23307/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="TT5D6L" package="TT5D6L">
@@ -18378,8 +18236,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23324/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="TT5D7" package="TT5D7">
@@ -18391,8 +18248,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23314/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="TT5D7L" package="TT5D7L">
@@ -18404,8 +18260,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23318/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="TT5D9" package="TT5D9">
@@ -18417,8 +18272,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23301/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="TT5D9L" package="TT5D9L">
@@ -18430,8 +18284,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23313/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="ETR1" package="ETR1">
@@ -18443,8 +18296,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23322/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="ETR2" package="ETR2">
@@ -18456,8 +18308,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23315/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="ETR3" package="ETR3">
@@ -18469,7 +18320,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23311/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="ETR4" package="ETR4">
@@ -18481,8 +18332,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23317/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="ETR5" package="ETR5">
@@ -18494,8 +18344,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23328/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="P128-35" package="P128-35">
@@ -18507,8 +18356,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:25807/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="P128-40" package="P128-40">
@@ -18520,8 +18368,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23331/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="P128-50" package="P128-50">
@@ -18533,8 +18380,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23330/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="P128-60" package="P128-60">
@@ -18546,8 +18392,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23337/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="TAP5-45" package="TAP5-45">
@@ -18559,7 +18404,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23333/3"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="TAP5-50" package="TAP5-50">
@@ -18571,8 +18416,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23335/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="TAP5-70" package="TAP5-70">
@@ -18584,8 +18428,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23332/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="TAP5-60" package="TAP5-60">
@@ -18597,8 +18440,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23334/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="TAP5-80" package="TAP5-80">
@@ -18610,8 +18452,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23338/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E1.8-4" package="E1,8-4">
@@ -18623,7 +18464,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23336/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E15-5AXIAL" package="E15-5">
@@ -18635,8 +18476,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23341/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E15-6AXIAL" package="E15-6">
@@ -18648,8 +18488,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23339/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E15-9AXIAL" package="E15-9">
@@ -18661,8 +18500,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23340/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E2.5-5V" package="E2,5-4R">
@@ -18674,8 +18512,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23342/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E2.5-5" package="E2,5-5">
@@ -18687,7 +18524,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23344/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E2.5-6" package="E2,5-6">
@@ -18699,7 +18536,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23349/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E2.5-7" package="E2,5-7">
@@ -18711,8 +18548,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23345/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E2.5-4V" package="E2,5RE">
@@ -18724,8 +18560,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23343/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E2-4" package="E2-4">
@@ -18737,8 +18572,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23347/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E2-5" package="E2-5">
@@ -18750,7 +18584,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23346/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E22-10AXIAL" package="E22-10">
@@ -18762,8 +18596,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23348/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E22-6AXIAL" package="E22-6">
@@ -18775,8 +18608,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23359/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E22-9AXIAL" package="E22-9">
@@ -18788,8 +18620,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23350/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E3.5-10" package="E3,5-10">
@@ -18801,7 +18632,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23351/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E25-10AXIAL" package="E25-10">
@@ -18813,8 +18644,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23352/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E25-9AXIAL" package="E25-9">
@@ -18826,8 +18656,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23358/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E3.5-8" package="E3,5-8">
@@ -18839,7 +18668,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23360/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E30-10AXIAL" package="E30-10">
@@ -18851,8 +18680,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23355/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E30-12AXIAL" package="E30-12">
@@ -18864,8 +18692,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23354/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E30-16AXIAL" package="E30-16">
@@ -18877,8 +18704,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23353/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E35-12AXIAL" package="E35-12">
@@ -18890,8 +18716,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23357/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E35-14AXIAL" package="E35-14">
@@ -18903,8 +18728,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23377/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E35-16AXIAL" package="E35-16">
@@ -18916,8 +18740,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23362/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E35-18AXIAL" package="E35-18">
@@ -18929,8 +18752,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23356/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E45-16AXIAL" package="E45-16">
@@ -18942,8 +18764,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23365/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E45-18AXIAL" package="E45-18">
@@ -18955,8 +18776,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23361/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E45-21AXIAL" package="E45-21">
@@ -18968,8 +18788,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23363/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E45-22AXIAL" package="E45-22">
@@ -18981,8 +18800,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23366/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E45-25AXIAL" package="E45-25">
@@ -18994,8 +18812,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23364/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E5-10.5" package="E5-10,5">
@@ -19007,7 +18824,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23372/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E5-13" package="E5-13">
@@ -19019,7 +18836,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23375/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E5-4" package="E5-4">
@@ -19031,8 +18848,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23370/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E5-5" package="E5-5">
@@ -19044,7 +18860,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23367/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E5-6" package="E5-6">
@@ -19056,7 +18872,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23368/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E5-8.5" package="E5-8,5">
@@ -19068,7 +18884,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23374/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E50-25AXIAL" package="E50-25">
@@ -19080,8 +18896,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23369/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E50-30AXIAL" package="E50-30">
@@ -19093,8 +18908,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23371/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E55-25AXIAL" package="E55-25">
@@ -19106,8 +18920,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23376/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E55-30AXIAL" package="E55-30">
@@ -19119,8 +18932,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23378/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E5-9VAXIAL" package="E5R">
@@ -19132,8 +18944,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23373/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E7.5-16" package="E7,5-16">
@@ -19145,8 +18956,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23382/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E7.5-18" package="E7,5-18">
@@ -19158,7 +18968,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23379/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E10-20" package="EB20D">
@@ -19170,8 +18980,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23381/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E10-22.5" package="EB22,5D">
@@ -19183,8 +18992,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23380/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E10-25" package="EB25D">
@@ -19196,8 +19004,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23399/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E10-30" package="EB30D">
@@ -19209,7 +19016,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23389/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E10-35" package="EB35D">
@@ -19221,8 +19028,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23395/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="085CS-1R" package="085CS_1R">
@@ -19234,8 +19040,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23383/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="085CS-1W" package="085CS_1W">
@@ -19247,8 +19052,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23384/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="085CS-1AR" package="085CS_1AR">
@@ -19260,8 +19064,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23396/3"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="085CS-1AW" package="085CS_1AW">
@@ -19273,8 +19076,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23385/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="139CLL-2R" package="139CLL-2R">
@@ -19286,8 +19088,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23387/3"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="139CLL-2W" package="139CLL-2W">
@@ -19299,8 +19100,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23386/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="139CLL-3R" package="139CLL-3R">
@@ -19312,8 +19112,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23388/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="139CLL-3W" package="139CLL-3W">
@@ -19325,8 +19124,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23390/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="140CLH-0810" package="140CLH-0810">
@@ -19338,8 +19136,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23392/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="140CLH-1010" package="140CLH-1010">
@@ -19351,8 +19148,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23391/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="140CLH-1014" package="140CLH-1014">
@@ -19364,8 +19160,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23393/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="150CLZ-0810" package="150CLZ-0810">
@@ -19377,8 +19172,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23394/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="150CLZ-1010" package="150CLZ-1010">
@@ -19390,7 +19184,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23403/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="150CLZ-1014" package="150CLZ-1014">
@@ -19402,8 +19196,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23405/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="153CLV-0405" package="153CLV-0405">
@@ -19415,7 +19208,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23397/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="153CLV-0505" package="153CLV-0505">
@@ -19427,8 +19220,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23402/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="153CLV-0605" package="153CLV-0605">
@@ -19440,7 +19232,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23398/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="153CLV-0807" package="153CLV-0807">
@@ -19452,8 +19244,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23400/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="153CLV-0810" package="153CLV-0810">
@@ -19465,7 +19256,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23401/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="153CLV-1010" package="153CLV-1010">
@@ -19477,7 +19268,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23413/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="153CLV-1012" package="153CLV-1012">
@@ -19489,8 +19280,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23404/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="153CLV-1014" package="153CLV-1014">
@@ -19502,8 +19292,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23406/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="175TMP-0808" package="175TMP-0808">
@@ -19515,8 +19304,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23412/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="175TMP-0810" package="175TMP-0810">
@@ -19528,8 +19316,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23407/3"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="A/3216-18R" package="A/3216-18R">
@@ -19541,7 +19328,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23410/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="A/3216-18W" package="A/3216-18W">
@@ -19553,7 +19340,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23408/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="B/3528-21R" package="B/3528-21R">
@@ -19565,8 +19352,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23409/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="B/3528-21W" package="B/3528-21W">
@@ -19578,7 +19364,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23411/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C/6032-28R" package="C/6032-28R">
@@ -19590,8 +19376,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23415/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C/6032-28W" package="C/6032-28W">
@@ -19603,8 +19388,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23420/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="D/7343-31R" package="D/7343-31R">
@@ -19616,7 +19400,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23417/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="D/7343-31W" package="D/7343-31W">
@@ -19628,7 +19412,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23414/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E/7260-38R" package="E/7260-38R">
@@ -19640,7 +19424,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23416/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E/7260-38W" package="E/7260-38W">
@@ -19652,8 +19436,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23423/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="R/2012-12R" package="R/2012-12R">
@@ -19665,8 +19448,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23426/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="R/2012-12W" package="R/2012-12W">
@@ -19678,8 +19460,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23419/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="A" package="PANASONIC_A">
@@ -19691,7 +19472,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23418/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="B" package="PANASONIC_B">
@@ -19703,8 +19484,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23421/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="C" package="PANASONIC_C">
@@ -19716,7 +19496,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23422/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="D" package="PANASONIC_D">
@@ -19728,7 +19508,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23424/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E" package="PANASONIC_E">
@@ -19740,8 +19520,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23425/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="F" package="PANASONIC_F">
@@ -19753,7 +19532,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23428/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="G" package="PANASONIC_G">
@@ -19765,8 +19544,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23427/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="TT2D5L" package="TT2D5L">
@@ -19778,8 +19556,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23429/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="E2,5-6E" package="E2,5-6E">
@@ -19791,7 +19568,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23430/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="SMCA" package="SMC_A">
@@ -19803,8 +19580,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:25926/3"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="SMCZ" package="SMC_Z">
@@ -19816,8 +19592,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:25927/3"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="SMCP" package="SMC_P">
@@ -19829,8 +19604,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:25919/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="SMCB" package="SMC_B">
@@ -19842,8 +19616,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:25920/5"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="SMCC" package="SMC_C">
@@ -19855,7 +19628,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:25921/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="SMCD" package="SMC_D">
@@ -19867,8 +19640,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:25923/2"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="SMCE" package="SMC_E">
@@ -19880,7 +19652,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:25922/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="SANYO_9E" package="SANYO-OSCON_9E">
@@ -19892,8 +19664,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23439/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="SANYO_9F" package="SANYO-OSCON_9F">
@@ -19905,8 +19676,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23437/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="SANYO_A" package="SANYO-OSCON_A">
@@ -19918,8 +19688,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23438/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="SANYO_A'" package="SANYO-OSCON_A'">
@@ -19931,8 +19700,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23440/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="SANYO_B" package="SANYO-OSCON_B">
@@ -19944,8 +19712,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23449/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="SANYO_B'" package="SANYO-OSCON_B'">
@@ -19957,8 +19724,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23442/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="SANYO_C" package="SANYO-OSCON_C">
@@ -19970,8 +19736,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23441/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="SANYO_C'" package="SANYO-OSCON_C'">
@@ -19983,8 +19748,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23443/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="SANYO_C6" package="SANYO-OSCON_C6">
@@ -19996,8 +19760,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23444/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="SANYO_D" package="SANYO-OSCON_D">
@@ -20009,8 +19772,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23445/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="SANYO_E" package="SANYO-OSCON_E">
@@ -20022,8 +19784,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23451/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="SANYO_E'" package="SANYO-OSCON_E'">
@@ -20035,8 +19796,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23453/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="SANYO_E1" package="SANYO-OSCON_E1">
@@ -20048,8 +19808,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23447/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="SANYO_E12" package="SANYO-OSCON_E12">
@@ -20061,8 +19820,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23448/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="SANYO_E13" package="SANYO-OSCON_E13">
@@ -20074,8 +19832,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23454/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="SANYO_E7" package="SANYO-OSCON_E7">
@@ -20087,8 +19844,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23452/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="SANYO_E9" package="SANYO-OSCON_E9">
@@ -20100,8 +19856,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23457/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="SANYO_F" package="SANYO-OSCON_F">
@@ -20113,8 +19868,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23462/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="SANYO_F'" package="SANYO-OSCON_F'">
@@ -20126,8 +19880,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23450/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="SANYO_F0" package="SANYO-OSCON_F0">
@@ -20139,8 +19892,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23459/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="SANYO_F13" package="SANYO-OSCON_F13">
@@ -20152,8 +19904,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23455/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="SANYO_F8" package="SANYO-OSCON_F8">
@@ -20165,8 +19916,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23456/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="SANYO_G" package="SANYO-OSCON_G">
@@ -20178,8 +19928,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23458/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="SANYO_H" package="SANYO-OSCON_H">
@@ -20191,8 +19940,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23463/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="SANYO_SMD_A5" package="SANYO-OSCON_SMD_A5">
@@ -20204,8 +19952,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23460/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="SANYO_SMD_B6" package="SANYO-OSCON_SMD_B6">
@@ -20217,8 +19964,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23461/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="SANYO_SMD_C6" package="SANYO-OSCON_SMD_C6">
@@ -20230,8 +19976,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23465/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="SANYO_SMD_E12" package="SANYO-OSCON_SMD_E12">
@@ -20243,8 +19988,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23464/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="SANYO_SMD_E7" package="SANYO-OSCON_SMD_E7">
@@ -20256,8 +20000,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23467/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="SANYO_SMD_F12" package="SANYO-OSCON_SMD_F12">
@@ -20269,8 +20012,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23468/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="SANYO_SMD_F8" package="SANYO-OSCON_SMD_F8">
@@ -20282,8 +20024,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23466/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="UD-10X10" package="UD-10X10_NICHICON">
@@ -20295,7 +20036,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23469/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="UD-4X5,8" package="UD-4X5,8_NICHICON">
@@ -20307,7 +20048,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23474/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="UD-5X5,8" package="UD-5X5,8_NICHICON">
@@ -20319,8 +20060,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23470/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="UD-6,3X5,8" package="UD-6,3X5,8_NICHICON">
@@ -20332,8 +20072,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23471/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="UD-6,3X7,7" package="UD-6,3X7,7_NICHICON">
@@ -20345,7 +20084,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23472/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""></technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="UD-8X10" package="UD-8X10_NICHICON">
@@ -20357,8 +20096,7 @@ Source: www.farnell.com/datasheets/247.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:23473/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -24442,10 +24180,10 @@ with devices in libraries, schematics, and board files. Those 3D
 packages will not be understood (or retained) with this version.
 </note>
 <note version="8.4" severity="warning">
-Since Version 8.4, EAGLE supports properties for SPICE simulation.
+Since Version 8.4, EAGLE supports properties for SPICE simulation. 
 Probes in schematics and SPICE mapping objects found in parts and library devices
 will not be understood with this version. Update EAGLE to the latest version
-for full support of SPICE simulation.
+for full support of SPICE simulation. 
 </note>
 </compatibility>
 </eagle>

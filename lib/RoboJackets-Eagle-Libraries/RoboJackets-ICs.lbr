@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -6945,13 +6945,11 @@ Source: www.ti.com .. ADS7828.pdf</description>
 <technologies>
 <technology name="A">
 <attribute name="DATA_RATE" value="1 Mbps"/>
-<attribute name="DIGIKEY_PN" value="ADUM7441ARQZ-RL7CT-ND"/>
-<attribute name="MANUFACTURER" value="ANALOG DEVICES"/>
+<attribute name="DIGIKEY" value="ADUM7441ARQZ-RL7CT-ND"/>
 </technology>
 <technology name="C">
-<attribute name="DATA_RATE" value="25 Mbps" constant="no"/>
-<attribute name="DIGIKEY_PN" value="ADUM7441CRQZ-RL7CT-ND"/>
-<attribute name="MANUFACTURER" value="ANALOG DEVICES"/>
+<attribute name="DATA_RATE" value="25 Mbps"/>
+<attribute name="DIGIKEY" value="ADUM7441CRQZ-RL7CT-ND"/>
 </technology>
 </technologies>
 </device>
