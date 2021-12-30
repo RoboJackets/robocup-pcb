@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -135,6 +135,8 @@
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="166" name="AntennaArea" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="168" name="4mmHeightArea" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="191" name="mNets" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="192" name="mBusses" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="193" name="mPins" color="7" fill="1" visible="yes" active="yes"/>
@@ -195,7 +197,7 @@ In this library you will find the larger circuit elements that are used to contr
 <packages>
 <package name="TSSOP-20_EP">
 <smd name="1" x="-2.775" y="2.925" dx="1.05" dy="0.45" layer="1"/>
-<text x="-2" y="3.5" size="1" layer="25">&gt;NAME</text>
+<text x="-2" y="3.5" size="1" layer="25" font="vector">&gt;NAME</text>
 <smd name="2" x="-2.775" y="2.275" dx="1.05" dy="0.45" layer="1"/>
 <smd name="3" x="-2.775" y="1.625" dx="1.05" dy="0.45" layer="1"/>
 <smd name="4" x="-2.775" y="0.975" dx="1.05" dy="0.45" layer="1"/>
@@ -221,8 +223,9 @@ In this library you will find the larger circuit elements that are used to contr
 <wire x1="-1.75" y1="-3.3" x2="-2.25" y2="-3.3" width="0.2" layer="21"/>
 <wire x1="-1.75" y1="-3.3" x2="-1.75" y2="3.3" width="0.2" layer="21"/>
 <smd name="PAD" x="0" y="0" dx="2.74" dy="3.86" layer="1"/>
+<text x="-2.032" y="-3.556" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
 </package>
-<package name="QFP80P1200X1200X120-44" urn="urn:adsk.eagle:footprint:4066415/1" locally_modified="yes">
+<package name="QFP80P1200X1200X120-44">
 <description>44-QFP, 0.8 mm pitch, 12 mm span, 10 X 10 X 1.2 mm body
 &lt;p&gt;44-pin QFP package with 0.8 mm pitch, 12 mm lead span1 X 12 mm lead span2 with body size 10 X 10 X 1.2 mm&lt;/p&gt;</description>
 <circle x="-5.7656" y="4.7775" radius="0.25" width="0" layer="21"/>
@@ -285,7 +288,7 @@ In this library you will find the larger circuit elements that are used to contr
 <text x="0" y="7.1162" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-7.1162" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
-<package name="SOP63P574X165-16" urn="urn:adsk.eagle:footprint:12284954/1" locally_modified="yes">
+<package name="SOP63P574X165-16">
 <description>16-SOP, 0.64 mm pitch, 5.74 mm span, 4.90 X 3.91 X 1.65 mm body
 &lt;p&gt;16-pin SOP package with 0.64 mm pitch, 5.74 mm span with body size 4.90 X 3.91 X 1.65 mm&lt;/p&gt;</description>
 <circle x="-2.6383" y="2.9336" radius="0.25" width="0" layer="21"/>
@@ -315,22 +318,6 @@ In this library you will find the larger circuit elements that are used to contr
 <text x="-2" y="-3.3786" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
 </package>
 </packages>
-<packages3d>
-<package3d name="QFP80P1200X1200X120-44" urn="urn:adsk.eagle:package:4066407/1" locally_modified="yes" type="model">
-<description>44-QFP, 0.8 mm pitch, 12 mm span, 10 X 10 X 1.2 mm body
-&lt;p&gt;44-pin QFP package with 0.8 mm pitch, 12 mm lead span1 X 12 mm lead span2 with body size 10 X 10 X 1.2 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="QFP80P1200X1200X120-44"/>
-</packageinstances>
-</package3d>
-<package3d name="SOP63P574X165-16" urn="urn:adsk.eagle:package:12284950/1" locally_modified="yes" type="model">
-<description>16-SOP, 0.64 mm pitch, 5.74 mm span, 4.90 X 3.91 X 1.65 mm body
-&lt;p&gt;16-pin SOP package with 0.64 mm pitch, 5.74 mm span with body size 4.90 X 3.91 X 1.65 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="SOP63P574X165-16"/>
-</packageinstances>
-</package3d>
-</packages3d>
 <symbols>
 <symbol name="LT3751">
 <wire x1="-15.24" y1="22.86" x2="15.24" y2="22.86" width="0.254" layer="94"/>
@@ -448,6 +435,9 @@ In this library you will find the larger circuit elements that are used to contr
 </symbols>
 <devicesets>
 <deviceset name="LT3751" prefix="U">
+<description>IC CTRLR CAP CHARGER 20-TSSOP
+&lt;p&gt;&lt;\p&gt;
+&lt;a href="https://www.digikey.com/en/products/detail/analog-devices-inc./LT3751EFE-TRPBF/2042470"&gt;DigiKey&lt;\a&gt;</description>
 <gates>
 <gate name="G$1" symbol="LT3751" x="0" y="0"/>
 </gates>
@@ -475,7 +465,9 @@ In this library you will find the larger circuit elements that are used to contr
 <connect gate="G$1" pin="VCC" pad="13"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DKPN" value="LT3751EFE#TRPBFCT-ND"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -532,9 +524,6 @@ In this library you will find the larger circuit elements that are used to contr
 <connect gate="AT32A" pin="XTAL1" pad="8"/>
 <connect gate="AT32A" pin="XTAL2" pad="7"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:4066407/1"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -563,9 +552,6 @@ In this library you will find the larger circuit elements that are used to contr
 <connect gate="G$1" pin="V_OC" pad="12"/>
 <connect gate="G$1" pin="V_OD" pad="6"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:12284950/1"/>
-</package3dinstances>
 <technologies>
 <technology name="A">
 <attribute name="DATA_RATE" value="1 Mbps"/>
@@ -6350,6 +6336,7 @@ In this library the device names are the same as the pin names of the symbols, t
 </symbols>
 <devicesets>
 <deviceset name="VBATT" prefix="SUPPLY">
+<description>VBATT Supply Symbol</description>
 <gates>
 <gate name="G$1" symbol="VBATT" x="0" y="0"/>
 </gates>
@@ -7852,7 +7839,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <vertex x="-0.75" y="0"/>
 </polygon>
 </package>
-<package name="TO460P990X239-3" urn="urn:adsk.eagle:footprint:4100274/1">
+<package name="TO460P990X239-3">
 <description>3-TO, DPAK, 4.6 mm pitch, 9.905 mm span, 6.54 X 6.095 X 2.39 mm body
 &lt;p&gt;3-pin TO, DPAK package with 4.6 mm pitch, 9.905 mm span with body size 6.54 X 6.095 X 2.39 mm&lt;/p&gt;</description>
 <circle x="-4.2409" y="3.2909" radius="0.25" width="0" layer="21"/>
@@ -7871,7 +7858,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <text x="0" y="4.1759" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-4" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
-<package name="RESM5226X262" urn="urn:adsk.eagle:footprint:4103917/1">
+<package name="RESM5226X262">
 <description>MOLDED BODY, 5.21 X 2.605 X 2.62 mm body
 &lt;p&gt;MOLDED BODY package with body size 5.21 X 2.605 X 2.62 mm&lt;/p&gt;</description>
 <wire x1="-2.795" y1="1.46" x2="2.795" y2="1.46" width="0.12" layer="21"/>
@@ -7954,7 +7941,7 @@ Digi-Key: 1727-5865-1-ND</description>
 <rectangle x1="0.15" y1="-0.15" x2="0.3" y2="0.15" layer="51"/>
 <rectangle x1="-0.15" y1="-0.15" x2="0.15" y2="0.15" layer="21"/>
 </package>
-<package name="R0603" urn="urn:adsk.eagle:footprint:23044/1" locally_modified="yes">
+<package name="R0603">
 <description>&lt;b&gt;Capacitor&lt;/b&gt;&lt;p&gt;Part Number:  PESD5V0C1USFYL</description>
 <wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
 <wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="51"/>
@@ -7971,28 +7958,6 @@ Digi-Key: 1727-5865-1-ND</description>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
 </package>
 </packages>
-<packages3d>
-<package3d name="TO460P990X239-3" urn="urn:adsk.eagle:package:4100272/1" type="model">
-<description>3-TO, DPAK, 4.6 mm pitch, 9.905 mm span, 6.54 X 6.095 X 2.39 mm body
-&lt;p&gt;3-pin TO, DPAK package with 4.6 mm pitch, 9.905 mm span with body size 6.54 X 6.095 X 2.39 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="TO460P990X239-3"/>
-</packageinstances>
-</package3d>
-<package3d name="RESM5226X262" urn="urn:adsk.eagle:package:4103916/1" type="model">
-<description>MOLDED BODY, 5.21 X 2.605 X 2.62 mm body
-&lt;p&gt;MOLDED BODY package with body size 5.21 X 2.605 X 2.62 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="RESM5226X262"/>
-</packageinstances>
-</package3d>
-<package3d name="R0603" urn="urn:adsk.eagle:package:23555/3" locally_modified="yes" type="model">
-<description>RESISTOR</description>
-<packageinstances>
-<packageinstance name="R0603"/>
-</packageinstances>
-</package3d>
-</packages3d>
 <symbols>
 <symbol name="D">
 <wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
@@ -8596,9 +8561,6 @@ Digi-Key: 1727-5865-1-ND</description>
 <connect gate="VS-5EWH06FN-M3" pin="A" pad="2"/>
 <connect gate="VS-5EWH06FN-M3" pin="C" pad="3"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:4100272/1"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -8615,9 +8577,6 @@ Digi-Key: 1727-5865-1-ND</description>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="C" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:4103916/1"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -8680,9 +8639,6 @@ Digi-Key: 1727-5865-1-ND</description>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="C" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23555/3"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -8700,10 +8656,32 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 &lt;/p&gt;</description>
 <packages>
 <package name="DPAK">
-<smd name="FIN" x="0" y="0" dx="7" dy="7" layer="1"/>
-<smd name="1" x="-2.3" y="-6.25" dx="1.5" dy="2.5" layer="1"/>
-<smd name="3" x="2.3" y="-6.25" dx="1.5" dy="2.5" layer="1"/>
-<text x="-3.5" y="4" size="1" layer="25">&gt;NAME</text>
+<wire x1="3.2766" y1="2.4654" x2="3.277" y2="-3.729" width="0.2032" layer="21"/>
+<wire x1="3.277" y1="-3.729" x2="-3.277" y2="-3.729" width="0.2032" layer="21"/>
+<wire x1="-3.277" y1="-3.729" x2="-3.2766" y2="2.4654" width="0.2032" layer="21"/>
+<wire x1="-3.277" y1="2.465" x2="3.2774" y2="2.4646" width="0.2032" layer="51"/>
+<wire x1="-2.5654" y1="2.567" x2="-2.5654" y2="3.2782" width="0.2032" layer="51"/>
+<wire x1="-2.5654" y1="3.2782" x2="-2.1082" y2="3.7354" width="0.2032" layer="51"/>
+<wire x1="-2.1082" y1="3.7354" x2="2.1082" y2="3.7354" width="0.2032" layer="51"/>
+<wire x1="2.1082" y1="3.7354" x2="2.5654" y2="3.2782" width="0.2032" layer="51"/>
+<wire x1="2.5654" y1="3.2782" x2="2.5654" y2="2.567" width="0.2032" layer="51"/>
+<wire x1="2.5654" y1="2.567" x2="-2.5654" y2="2.567" width="0.2032" layer="51"/>
+<rectangle x1="-2.7178" y1="-6.7262" x2="-1.8542" y2="-3.8306" layer="51"/>
+<rectangle x1="1.8542" y1="-6.7262" x2="2.7178" y2="-3.8306" layer="51"/>
+<rectangle x1="-0.4318" y1="-4.5926" x2="0.4318" y2="-3.8306" layer="21"/>
+<smd name="1" x="-2.28" y="-5.31" dx="1.6" dy="3" layer="1"/>
+<smd name="3" x="2.28" y="-5.31" dx="1.6" dy="3" layer="1"/>
+<smd name="4" x="0" y="1.588" dx="4.826" dy="5.715" layer="1"/>
+<text x="-3.81" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="3.81" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;VALUE</text>
+<polygon width="0.1998" layer="51">
+<vertex x="-2.5654" y="2.567"/>
+<vertex x="-2.5654" y="3.2782"/>
+<vertex x="-2.1082" y="3.7354"/>
+<vertex x="2.1082" y="3.7354"/>
+<vertex x="2.5654" y="3.2782"/>
+<vertex x="2.5654" y="2.567"/>
+</polygon>
 </package>
 <package name="SOT-23-3">
 <smd name="3" x="0" y="1.2" dx="1" dy="0.7" layer="1" rot="R90"/>
@@ -8740,7 +8718,7 @@ INTERNATIONAL RECTIFIER, irg4bc15ud-s.pdf</description>
 <rectangle x1="1.8288" y1="-6.731" x2="3.2512" y2="-4.2418" layer="21"/>
 <rectangle x1="-0.7112" y1="-6.731" x2="0.7112" y2="-4.2418" layer="21"/>
 </package>
-<package name="TO460P950X150-3" urn="urn:adsk.eagle:footprint:4089488/1">
+<package name="TO460P950X150-3">
 <description>3-TO, DPAK, 4.6 mm pitch, 9.5 mm span, 6.5 X 7.3 X 1.5 mm body
 &lt;p&gt;3-pin TO, DPAK package with 4.6 mm pitch, 9.5 mm span with body size 6.5 X 7.3 X 1.5 mm&lt;/p&gt;</description>
 <circle x="-4.4" y="3.1899" radius="0.25" width="0" layer="21"/>
@@ -8759,7 +8737,7 @@ INTERNATIONAL RECTIFIER, irg4bc15ud-s.pdf</description>
 <text x="0" y="4.0749" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-3.885" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
-<package name="SOT95P240X110-3" urn="urn:adsk.eagle:footprint:4254589/1">
+<package name="SOT95P240X110-3">
 <description>3-SOT23, 0.95 mm pitch, 2.4 mm span, 2.9 X 1.3 X 1.1 mm body
 &lt;p&gt;3-pin SOT23 package with 0.95 mm pitch, 2.4 mm span with body size 2.9 X 1.3 X 1.1 mm&lt;/p&gt;</description>
 <circle x="-1.1573" y="1.7586" radius="0.25" width="0" layer="21"/>
@@ -8792,22 +8770,6 @@ INTERNATIONAL RECTIFIER, irg4bc15ud-s.pdf</description>
 <text x="-8.89" y="21.59" size="1.27" layer="25">&gt;NAME</text>
 </package>
 </packages>
-<packages3d>
-<package3d name="TO460P950X150-3" urn="urn:adsk.eagle:package:4087657/1" type="model">
-<description>3-TO, DPAK, 4.6 mm pitch, 9.5 mm span, 6.5 X 7.3 X 1.5 mm body
-&lt;p&gt;3-pin TO, DPAK package with 4.6 mm pitch, 9.5 mm span with body size 6.5 X 7.3 X 1.5 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="TO460P950X150-3"/>
-</packageinstances>
-</package3d>
-<package3d name="SOT95P240X110-3" urn="urn:adsk.eagle:package:4254587/1" type="model">
-<description>3-SOT23, 0.95 mm pitch, 2.4 mm span, 2.9 X 1.3 X 1.1 mm body
-&lt;p&gt;3-pin SOT23 package with 0.95 mm pitch, 2.4 mm span with body size 2.9 X 1.3 X 1.1 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="SOT95P240X110-3"/>
-</packageinstances>
-</package3d>
-</packages3d>
 <symbols>
 <symbol name="N_MOSFET">
 <wire x1="-0.508" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
@@ -8897,7 +8859,7 @@ INTERNATIONAL RECTIFIER, irg4bc15ud-s.pdf</description>
 <devices>
 <device name="" package="DPAK">
 <connects>
-<connect gate="G$1" pin="D" pad="FIN"/>
+<connect gate="G$1" pin="D" pad="4"/>
 <connect gate="G$1" pin="G" pad="1"/>
 <connect gate="G$1" pin="S" pad="3"/>
 </connects>
@@ -8952,9 +8914,6 @@ INTERNATIONAL RECTIFIER, irg4bc15ud-s.pdf</description>
 <connect gate="G$1" pin="G" pad="1"/>
 <connect gate="G$1" pin="S" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:4087657/1"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -8982,9 +8941,6 @@ INTERNATIONAL RECTIFIER, irg4bc15ud-s.pdf</description>
 <connect gate="G$1" pin="G" pad="1"/>
 <connect gate="G$1" pin="S" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:4254587/1"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -9457,7 +9413,7 @@ In this library you will find LEDs and other visual output devices.
 In this library you will find resistors. If you are looking for a common package, use the default &lt;b&gt;rcl &lt;/b&gt;library provided with EAGLE instead of looking here.
 &lt;/p&gt;</description>
 <packages>
-<package name="TO508P1539X450-3" urn="urn:adsk.eagle:footprint:4103957/1">
+<package name="TO508P1539X450-3">
 <description>3-TO, DPAK, 5.08 mm pitch, 15.39 mm span, 10.1 X 8.8 X 4.5 mm body
 &lt;p&gt;3-pin TO, DPAK package with 5.08 mm pitch, 15.39 mm span with body size 10.1 X 8.8 X 4.5 mm&lt;/p&gt;</description>
 <circle x="-6.145" y="3.8299" radius="0.25" width="0" layer="21"/>
@@ -9708,15 +9664,6 @@ Source: http://www.ctscorp.com/components/Datasheets/CTSChipArrayDs.pdf</descrip
 <text x="-2.05" y="-2.1" size="1" layer="21" font="vector" rot="R90">&gt;NAME</text>
 </package>
 </packages>
-<packages3d>
-<package3d name="TO508P1539X450-3" urn="urn:adsk.eagle:package:4103950/1" type="model">
-<description>3-TO, DPAK, 5.08 mm pitch, 15.39 mm span, 10.1 X 8.8 X 4.5 mm body
-&lt;p&gt;3-pin TO, DPAK package with 5.08 mm pitch, 15.39 mm span with body size 10.1 X 8.8 X 4.5 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="TO508P1539X450-3"/>
-</packageinstances>
-</package3d>
-</packages3d>
 <symbols>
 <symbol name="RES">
 <pin name="PIN1" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
@@ -9852,9 +9799,6 @@ Source: http://www.ctscorp.com/components/Datasheets/CTSChipArrayDs.pdf</descrip
 <connect gate="PWR263S-35-3301J" pin="PIN1" pad="1"/>
 <connect gate="PWR263S-35-3301J" pin="PIN2" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:4103950/1"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -9949,7 +9893,7 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
 <text x="-3" y="-2" size="1" layer="25" rot="R90">&gt;NAME</text>
 </package>
-<package name="SOT95P280X145-5" urn="urn:adsk.eagle:footprint:4254491/1">
+<package name="SOT95P280X145-5">
 <description>5-SOT23, 0.95 mm pitch, 2.8 mm span, 2.9 X 1.6 X 1.45 mm body
 &lt;p&gt;5-pin SOT23 package with 0.95 mm pitch, 2.8 mm span with body size 2.9 X 1.6 X 1.45 mm&lt;/p&gt;</description>
 <circle x="-1.3538" y="1.7586" radius="0.25" width="0" layer="21"/>
@@ -10075,15 +10019,6 @@ body 3.9 mm/JEDEC MS-012AA</description>
 </polygon>
 </package>
 </packages>
-<packages3d>
-<package3d name="SOT95P280X145-5" urn="urn:adsk.eagle:package:4254489/1" type="model">
-<description>5-SOT23, 0.95 mm pitch, 2.8 mm span, 2.9 X 1.6 X 1.45 mm body
-&lt;p&gt;5-pin SOT23 package with 0.95 mm pitch, 2.8 mm span with body size 2.9 X 1.6 X 1.45 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="SOT95P280X145-5"/>
-</packageinstances>
-</package3d>
-</packages3d>
 <symbols>
 <symbol name="IX4427">
 <wire x1="-10.16" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
@@ -10163,9 +10098,6 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <connect gate="MIC5235YM5-TR" pin="VIN" pad="1"/>
 <connect gate="MIC5235YM5-TR" pin="VOUT" pad="5"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:4254489/1"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -34261,7 +34193,7 @@ In this library you will find inductors. If you are looking for a common package
 <part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R) 35V"/>
 <part name="SUPPLY16" library="supply2" deviceset="GND" device=""/>
 <part name="XF1" library="RoboJackets-Fuses" deviceset="3557-2" device="" value="15A"/>
-<part name="U5" library="RoboJackets-ICs" deviceset="AT32A" device="TQFP44" package3d_urn="urn:adsk.eagle:package:4066407/1"/>
+<part name="U5" library="RoboJackets-ICs" deviceset="AT32A" device="TQFP44"/>
 <part name="SUPPLY62" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY65" library="supply2" deviceset="+5V" device=""/>
 <part name="SUPPLY79" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
@@ -34289,25 +34221,25 @@ In this library you will find inductors. If you are looking for a common package
 <part name="D12" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-YELLOW" value="YELLOW"/>
 <part name="SUPPLY85" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="Q7" library="RoboJackets-Discrete" deviceset="BSS127" device=""/>
-<part name="Q1" library="RoboJackets-Discrete" deviceset="ATP302" device="ATPAK" package3d_urn="urn:adsk.eagle:package:4087657/1"/>
-<part name="D2" library="RoboJackets-Diodes" deviceset="VS-5EWH06FN-M3" device="D-PAK_TO252AA" package3d_urn="urn:adsk.eagle:package:4100272/1" value="VS-5EWH06FN-M3"/>
-<part name="D5" library="RoboJackets-Diodes" deviceset="VS-5EWH06FN-M3" device="D-PAK_TO252AA" package3d_urn="urn:adsk.eagle:package:4100272/1" value="VS-5EWH06FN-M3"/>
-<part name="D6" library="RoboJackets-Diodes" deviceset="VS-5EWH06FN-M3" device="D-PAK_TO252AA" package3d_urn="urn:adsk.eagle:package:4100272/1" value="VS-5EWH06FN-M3"/>
+<part name="Q1" library="RoboJackets-Discrete" deviceset="ATP302" device="ATPAK"/>
+<part name="D2" library="RoboJackets-Diodes" deviceset="VS-5EWH06FN-M3" device="D-PAK_TO252AA" value="VS-5EWH06FN-M3"/>
+<part name="D5" library="RoboJackets-Diodes" deviceset="VS-5EWH06FN-M3" device="D-PAK_TO252AA" value="VS-5EWH06FN-M3"/>
+<part name="D6" library="RoboJackets-Diodes" deviceset="VS-5EWH06FN-M3" device="D-PAK_TO252AA" value="VS-5EWH06FN-M3"/>
 <part name="R28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="160"/>
 <part name="R29" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="160"/>
 <part name="C28" library="rcl" deviceset="C-US" device="C0603" value="0.1uF 50V"/>
 <part name="C29" library="rcl" deviceset="C-US" device="C0603" value="0.1uF 50V"/>
 <part name="SUPPLY44" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY45" library="supply2" deviceset="GND" device=""/>
-<part name="D4" library="RoboJackets-Diodes" deviceset="SMAJ20A" device="DO-214AC" package3d_urn="urn:adsk.eagle:package:4103916/1" value="SMAJ20A"/>
-<part name="D3" library="RoboJackets-Diodes" deviceset="SMAJ20A" device="DO-214AC" package3d_urn="urn:adsk.eagle:package:4103916/1" value="SMAJ20A"/>
+<part name="D4" library="RoboJackets-Diodes" deviceset="SMAJ20A" device="DO-214AC" value="SMAJ20A"/>
+<part name="D3" library="RoboJackets-Diodes" deviceset="SMAJ20A" device="DO-214AC" value="SMAJ20A"/>
 <part name="SUPPLY46" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY47" library="supply2" deviceset="GND" device=""/>
 <part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E10-25" package3d_urn="urn:adsk.eagle:package:23399/1" value="1000uF"/>
 <part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E10-25" package3d_urn="urn:adsk.eagle:package:23399/1" value="1000uF"/>
 <part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E10-25" package3d_urn="urn:adsk.eagle:package:23399/1" value="1000uF"/>
 <part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E10-25" package3d_urn="urn:adsk.eagle:package:23399/1" value="1000uF"/>
-<part name="R34" library="RoboJackets-Resistors" deviceset="PWR263S-35" device="TO-263AB" package3d_urn="urn:adsk.eagle:package:4103950/1" value="1.5k 35W"/>
+<part name="R34" library="RoboJackets-Resistors" deviceset="PWR263S-35" device="TO-263AB" value="1.5k 35W"/>
 <part name="J6" library="RoboJackets-Connectors" deviceset="3-PIN_2MM-*" device="H"/>
 <part name="J5" library="RoboJackets-Connectors" deviceset="2-PIN_2MM-*" device="H"/>
 <part name="SUPPLY92" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
@@ -34317,8 +34249,8 @@ In this library you will find inductors. If you are looking for a common package
 <part name="R13" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="11.5k 1%"/>
 <part name="R14" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="25.5k 1%"/>
 <part name="R12" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1.02k 1%"/>
-<part name="Q10" library="RoboJackets-Discrete" deviceset="BSS806N" device="SOT-23-3" package3d_urn="urn:adsk.eagle:package:4254587/1"/>
-<part name="U2" library="RoboJackets-PowerICs" deviceset="MIC5235YM5" device="SOT-23-5" package3d_urn="urn:adsk.eagle:package:4254489/1" value="15V"/>
+<part name="Q10" library="RoboJackets-Discrete" deviceset="BSS806N" device="SOT-23-3"/>
+<part name="U2" library="RoboJackets-PowerICs" deviceset="MIC5235YM5" device="SOT-23-5" value="15V"/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF 50V"/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="2.2uF 35V"/>
 <part name="SUPPLY12" library="RoboJackets-Supplies" deviceset="+15.0V" device=""/>
@@ -34393,8 +34325,8 @@ In this library you will find inductors. If you are looking for a common package
 <part name="SUPPLY74" library="supply2" deviceset="+5V" device=""/>
 <part name="SUPPLY68" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY67" library="supply2" deviceset="GND" device=""/>
-<part name="U7" library="RoboJackets-ICs" deviceset="ADUM744X*RQZ-RL7" device="" package3d_urn="urn:adsk.eagle:package:12284950/1" technology="C" value="ADUM7441CRQZ-RL7"/>
-<part name="U6" library="RoboJackets-ICs" deviceset="ADUM744X*RQZ-RL7" device="" package3d_urn="urn:adsk.eagle:package:12284950/1" technology="A" value="ADUM7441ARQZ-RL7"/>
+<part name="U7" library="RoboJackets-ICs" deviceset="ADUM744X*RQZ-RL7" device="" technology="C" value="ADUM7441CRQZ-RL7"/>
+<part name="U6" library="RoboJackets-ICs" deviceset="ADUM744X*RQZ-RL7" device="" technology="A" value="ADUM7441ARQZ-RL7"/>
 <part name="SUPPLY72" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY71" library="supply2" deviceset="+5V" device=""/>
 <part name="RN1" library="RoboJackets-Resistors" deviceset="RA-8" device="" value="330"/>
