@@ -3,11 +3,11 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -343,7 +343,7 @@ In this library you will find the larger circuit elements that are used to contr
 <packages>
 <package name="TSSOP-20_EP">
 <smd name="1" x="-2.775" y="2.925" dx="1.05" dy="0.45" layer="1"/>
-<text x="-2" y="3.5" size="1" layer="25" font="vector">&gt;NAME</text>
+<text x="-2" y="3.5" size="1" layer="25">&gt;NAME</text>
 <smd name="2" x="-2.775" y="2.275" dx="1.05" dy="0.45" layer="1"/>
 <smd name="3" x="-2.775" y="1.625" dx="1.05" dy="0.45" layer="1"/>
 <smd name="4" x="-2.775" y="0.975" dx="1.05" dy="0.45" layer="1"/>
@@ -369,7 +369,6 @@ In this library you will find the larger circuit elements that are used to contr
 <wire x1="-1.75" y1="-3.3" x2="-2.25" y2="-3.3" width="0.2" layer="21"/>
 <wire x1="-1.75" y1="-3.3" x2="-1.75" y2="3.3" width="0.2" layer="21"/>
 <smd name="PAD" x="0" y="0" dx="2.74" dy="3.86" layer="1"/>
-<text x="-2.032" y="-3.556" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
 </package>
 <package name="QFP80P1200X1200X120-44">
 <description>44-QFP, 0.8 mm pitch, 12 mm span, 10 X 10 X 1.2 mm body
@@ -1245,7 +1244,7 @@ In this library you will find switches and other mechanical assisted circuit ele
 Based on the previous libraries:
 &lt;ul&gt;
 &lt;li&gt;r.lbr
-&lt;li&gt;cap.lbr 
+&lt;li&gt;cap.lbr
 &lt;li&gt;cap-fe.lbr
 &lt;li&gt;captant.lbr
 &lt;li&gt;polcap.lbr
@@ -12749,6 +12748,8 @@ Your Eurocircuits Team
 </autorouter>
 <elements>
 <element name="J1" library="RoboJackets-Connectors" package="B2PS-CENTERED" value="B2PS-VH(LF)(SN)" x="-14.6" y="72.5" smashed="yes" rot="R270">
+<attribute name="DIGIKEY" value="455-1648-ND" x="-14.6" y="72.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="B2PS-VH(LF)(SN)" x="-14.6" y="72.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="-11.503803125" y="68.932228125" size="1" layer="25" font="vector" rot="R270" align="top-right"/>
 </element>
 <element name="J3" library="RoboJackets-Connectors" package="B2PS-CENTERED" value="B2PS-VH(LF)(SN)" x="27" y="44" smashed="yes" rot="MR270">
@@ -15713,8 +15714,8 @@ with devices in libraries, schematics, and board files. Those 3D
 packages will not be understood (or retained) with this version.
 </note>
 <note version="8.5" severity="warning">
-Since Version 8.5, EAGLE supports locking for holes, vias, wires and polygons. 
-The locking property on all objects of these types will not be understood in this version. 
+Since Version 8.5, EAGLE supports locking for holes, vias, wires and polygons.
+The locking property on all objects of these types will not be understood in this version.
 </note>
 </compatibility>
 </eagle>
