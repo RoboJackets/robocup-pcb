@@ -3,11 +3,11 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -36,7 +36,7 @@
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -135,8 +135,8 @@
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="no" active="yes"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="no" active="yes"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="no" active="yes"/>
-<layer number="166" name="AntennaArea" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="168" name="4mmHeightArea" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="166" name="AntennaArea" color="7" fill="1" visible="no" active="yes"/>
+<layer number="168" name="4mmHeightArea" color="7" fill="1" visible="no" active="yes"/>
 <layer number="191" name="mNets" color="7" fill="1" visible="no" active="yes"/>
 <layer number="192" name="mBusses" color="7" fill="1" visible="no" active="yes"/>
 <layer number="193" name="mPins" color="7" fill="1" visible="no" active="yes"/>
@@ -263,19 +263,7 @@
 <text x="62" y="-25" size="2" layer="21" ratio="16" rot="R90">CHARGE</text>
 <text x="62" y="-12.25" size="2" layer="21" ratio="16" rot="R90">KICK</text>
 <text x="62" y="-1.75" size="2" layer="21" ratio="16" rot="R90">CHIP</text>
-<text x="58.6" y="42.95" size="0.6" layer="21" ratio="16" rot="SR180">MISO</text>
-<text x="58.6" y="41.45" size="0.6" layer="21" ratio="16" rot="SR180">SCK</text>
-<text x="58.6" y="40.7" size="0.6" layer="21" ratio="16" rot="SR180">!CS!</text>
-<text x="58.6" y="39.7" size="0.6" layer="21" ratio="16" rot="SR180">!RESET</text>
-<text x="58.6" y="38.7" size="0.6" layer="21" ratio="16" rot="SR180">GND_LGC</text>
-<text x="58.6" y="37.95" size="0.6" layer="21" ratio="16" rot="SR180">VCC_LGC</text>
-<text x="58.6" y="37.2" size="0.6" layer="21" ratio="16" rot="SR180">NC</text>
-<text x="58.6" y="36.2" size="0.6" layer="21" ratio="16" rot="SR180">J4 PINOUT</text>
-<wire x1="59.1" y1="35.2" x2="53.6" y2="35.2" width="0.2" layer="21"/>
-<wire x1="53.6" y1="35.2" x2="53.6" y2="43.2" width="0.2" layer="21"/>
-<wire x1="53.6" y1="43.2" x2="59.1" y2="43.2" width="0.2" layer="21"/>
-<wire x1="59.1" y1="43.2" x2="59.1" y2="41.7" width="0.2" layer="21"/>
-<wire x1="59.1" y1="41.7" x2="59.1" y2="35.2" width="0.2" layer="21"/>
+<wire x1="59.1" y1="35.2" x2="59.6" y2="35.2" width="0.2" layer="21"/>
 <wire x1="61" y1="61.5" x2="61" y2="-9" width="1.27" layer="48"/>
 <wire x1="61" y1="-9" x2="39" y2="-31" width="1.27" layer="48"/>
 <polygon width="1.27" layer="48">
@@ -286,7 +274,7 @@
 <vertex x="61" y="-9"/>
 <vertex x="61" y="61.5"/>
 </polygon>
-<text x="-41.1" y="-22.1" size="2" layer="21" ratio="16" rot="SR270">ID</text>
+<text x="-41.1" y="-24.1" size="2" layer="21" ratio="16" rot="SR0">ID</text>
 <wire x1="52" y1="61.5" x2="54" y2="59.5" width="0.2" layer="21"/>
 <wire x1="54" y1="59.5" x2="48.25" y2="53.75" width="0.2" layer="21"/>
 <wire x1="48.25" y1="53.75" x2="46.25" y2="55.75" width="0.2" layer="21"/>
@@ -296,12 +284,11 @@
 <text x="-42.2" y="41.1" size="3.81" layer="21" rot="SR270">Kicker</text>
 <text x="-59.9" y="-58.7" size="10" layer="21">-</text>
 <text x="55.3" y="-58.9" size="10" layer="21">-</text>
-<text x="58.6" y="42.2" size="0.6" layer="21" ratio="16" rot="SR180">MOSI</text>
 <text x="20.475" y="66.025" size="1.778" layer="22" font="vector" rot="MR270">&gt;</text>
 <text x="15.525" y="66" size="1.778" layer="22" font="vector" rot="R270">&gt;</text>
 <text x="40.6" y="48.2" size="1" layer="21" font="vector" ratio="15" rot="R90">PWR</text>
 <text x="59.9" y="51.3" size="1" layer="21" font="vector" rot="SR135">DBG</text>
-<text x="40.375" y="-30.25" size="1.778" layer="21" font="vector" rot="R90">RoboJackets 2020.3</text>
+<text x="40.375" y="-30.25" size="1.778" layer="21" font="vector" rot="R90">RoboJackets 2021.12</text>
 <text x="3.5" y="65.125" size="1.778" layer="21" font="vector" ratio="15" rot="SR180">AUTO
 DSCHG</text>
 <wire x1="6.2" y1="65.9" x2="-5.1" y2="65.9" width="0.2" layer="21"/>
@@ -315,19 +302,16 @@ DSCHG</text>
 <wire x1="46.9" y1="-68.6" x2="39.1" y2="-68.6" width="0" layer="20"/>
 <wire x1="39.1" y1="-68.6" x2="30" y2="-59.5" width="0" layer="20"/>
 <text x="4.7" y="35.8" size="1.25" layer="21" ratio="16" rot="SR0">HIGH VOLTAGE</text>
-<text x="41.6" y="-30" size="1.016" layer="22" font="vector" rot="SMR90" align="top-left">W. Stuckey: wstuckey3@gatech.edu
-D. Yang: dyang316@gatech.edu</text>
+<text x="41.6" y="-30" size="1.016" layer="22" font="vector" rot="SMR90" align="top-left"></text>
 <rectangle x1="-49.8" y1="-30" x2="-41.8" y2="-22" layer="21"/>
 <wire x1="39.2" y1="47.4" x2="39.2" y2="51.6" width="0.1524" layer="21"/>
 <wire x1="39.2" y1="51.6" x2="48.1" y2="51.6" width="0.1524" layer="21"/>
 <wire x1="48.1" y1="51.6" x2="48.1" y2="47.4" width="0.1524" layer="21"/>
 <wire x1="48.1" y1="47.4" x2="39.2" y2="47.4" width="0.1524" layer="21"/>
 <wire x1="63.5" y1="44.3" x2="61.7" y2="44.3" width="0.3048" layer="21" style="shortdash"/>
-<wire x1="61.7" y1="44.3" x2="59.1" y2="41.7" width="0.3048" layer="21" style="shortdash"/>
+<wire x1="61.7" y1="44.3" x2="49" y2="33.6" width="0.3048" layer="21" style="shortdash"/>
 <wire x1="48.7" y1="33.4" x2="48.7" y2="29.7" width="0.3048" layer="21" style="shortdash"/>
 <wire x1="48.7" y1="29.7" x2="70.1" y2="29.7" width="0.3048" layer="21" style="shortdash"/>
-<wire x1="48.7" y1="33.4" x2="50.5" y2="35.2" width="0.3048" layer="21" style="shortdash"/>
-<wire x1="50.5" y1="35.2" x2="53.6" y2="35.2" width="0.3048" layer="21" style="shortdash"/>
 <text x="-29.2" y="50.2" size="1.778" layer="22" rot="MR180">CHIPPER</text>
 <text x="24.3" y="50.2" size="1.778" layer="22" rot="MR180">KICKER</text>
 <polygon width="0.1524" layer="21" spacing="1.26" pour="hatch">
@@ -340,7 +324,13 @@ D. Yang: dyang316@gatech.edu</text>
 <text x="50.1" y="65.7" size="1.5" layer="21" font="vector" rot="SR135">RX</text>
 <text x="-31.1" y="76.3" size="1.778" layer="21" rot="SR180">PWR:
 16-22V</text>
-<text x="-42.2" y="18.9" size="3.81" layer="21" rot="SR270">&gt;VERSION</text>
+<text x="-42.2" y="24.9" size="3.81" layer="21" rot="SR270">&gt;VERSION</text>
+<text x="31.5" y="-15" size="3" layer="22" ratio="16" rot="MR90">HIGH VOLTAGE</text>
+<text x="-31.5" y="16.5" size="3" layer="22" ratio="16" rot="SMR270">HIGH VOLTAGE</text>
+<text x="17.8" y="35.7" size="1.25" layer="22" ratio="16" rot="SMR0">HIGH VOLTAGE</text>
+<text x="-33" y="-36.5" size="1.25" layer="22" ratio="16" rot="SMR0">HIGH VOLTAGE</text>
+<text x="46" y="-36.5" size="1.25" layer="22" ratio="16" rot="SMR0">HIGH VOLTAGE</text>
+<text x="-4.7" y="35.8" size="1.25" layer="22" ratio="16" rot="SMR0">HIGH VOLTAGE</text>
 </plain>
 <libraries>
 <library name="RoboJackets-ICs">
@@ -472,1121 +462,6 @@ In this library you will find the larger circuit elements that are used to contr
 <smd name="16" x="2.3215" y="2.2225" dx="1.8971" dy="0.4143" layer="1"/>
 <text x="-2" y="3.3186" size="1" layer="25" font="vector">&gt;NAME</text>
 <text x="-2" y="-3.3786" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
-</package>
-</packages>
-</library>
-<library name="rcl">
-<description>&lt;b&gt;Resistors, Capacitors, Inductors&lt;/b&gt;&lt;p&gt;
-Based on the previous libraries:
-&lt;ul&gt;
-&lt;li&gt;r.lbr
-&lt;li&gt;cap.lbr 
-&lt;li&gt;cap-fe.lbr
-&lt;li&gt;captant.lbr
-&lt;li&gt;polcap.lbr
-&lt;li&gt;ipc-smd.lbr
-&lt;/ul&gt;
-All SMD packages are defined according to the IPC specifications and  CECC&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;&lt;p&gt;
-&lt;p&gt;
-for Electrolyt Capacitors see also :&lt;p&gt;
-www.bccomponents.com &lt;p&gt;
-www.panasonic.com&lt;p&gt;
-www.kemet.com&lt;p&gt;
-http://www.secc.co.jp/pdf/os_e/2004/e_os_all.pdf &lt;b&gt;(SANYO)&lt;/b&gt;
-&lt;p&gt;
-for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trimpotcrossref.asp&lt;/u&gt;&lt;p&gt;
-
-&lt;table border=0 cellspacing=0 cellpadding=0 width="100%" cellpaddding=0&gt;
-&lt;tr valign="top"&gt;
-
-&lt;! &lt;td width="10"&gt;&amp;nbsp;&lt;/td&gt;
-&lt;td width="90%"&gt;
-
-&lt;b&gt;&lt;font color="#0000FF" size="4"&gt;TRIM-POT CROSS REFERENCE&lt;/font&gt;&lt;/b&gt;
-&lt;P&gt;
-&lt;TABLE BORDER=0 CELLSPACING=1 CELLPADDING=2&gt;
-  &lt;TR&gt;
-    &lt;TD COLSPAN=8&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;RECTANGULAR MULTI-TURN&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  &lt;TR&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;B&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL color="#FF0000"&gt;BOURNS&lt;/FONT&gt;
-      &lt;/B&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;B&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL color="#FF0000"&gt;BI&amp;nbsp;TECH&lt;/FONT&gt;
-      &lt;/B&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;B&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL color="#FF0000"&gt;DALE-VISHAY&lt;/FONT&gt;
-      &lt;/B&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;B&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL color="#FF0000"&gt;PHILIPS/MEPCO&lt;/FONT&gt;
-      &lt;/B&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;B&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL color="#FF0000"&gt;MURATA&lt;/FONT&gt;
-      &lt;/B&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;B&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL color="#FF0000"&gt;PANASONIC&lt;/FONT&gt;
-      &lt;/B&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;B&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL color="#FF0000"&gt;SPECTROL&lt;/FONT&gt;
-      &lt;/B&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;B&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL color="#FF0000"&gt;MILSPEC&lt;/FONT&gt;
-      &lt;/B&gt;
-    &lt;/TD&gt;&lt;TD&gt;&amp;nbsp;&lt;/TD&gt;
-  &lt;/TR&gt;
-  &lt;TR&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3 &gt;
-      3005P&lt;BR&gt;
-      3006P&lt;BR&gt;
-      3006W&lt;BR&gt;
-      3006Y&lt;BR&gt;
-      3009P&lt;BR&gt;
-      3009W&lt;BR&gt;
-      3009Y&lt;BR&gt;
-      3057J&lt;BR&gt;
-      3057L&lt;BR&gt;
-      3057P&lt;BR&gt;
-      3057Y&lt;BR&gt;
-      3059J&lt;BR&gt;
-      3059L&lt;BR&gt;
-      3059P&lt;BR&gt;
-      3059Y&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      89P&lt;BR&gt;
-      89W&lt;BR&gt;
-      89X&lt;BR&gt;
-      89PH&lt;BR&gt;
-      76P&lt;BR&gt;
-      89XH&lt;BR&gt;
-      78SLT&lt;BR&gt;
-      78L&amp;nbsp;ALT&lt;BR&gt;
-      56P&amp;nbsp;ALT&lt;BR&gt;
-      78P&amp;nbsp;ALT&lt;BR&gt;
-      T8S&lt;BR&gt;
-      78L&lt;BR&gt;
-      56P&lt;BR&gt;
-      78P&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      T18/784&lt;BR&gt;
-      783&lt;BR&gt;
-      781&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      2199&lt;BR&gt;
-      1697/1897&lt;BR&gt;
-      1680/1880&lt;BR&gt;
-      2187&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      8035EKP/CT20/RJ-20P&lt;BR&gt;
-      -&lt;BR&gt;
-      RJ-20X&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      1211L&lt;BR&gt;
-      8012EKQ&amp;nbsp;ALT&lt;BR&gt;
-      8012EKR&amp;nbsp;ALT&lt;BR&gt;
-      1211P&lt;BR&gt;
-      8012EKJ&lt;BR&gt;
-      8012EKL&lt;BR&gt;
-      8012EKQ&lt;BR&gt;
-      8012EKR&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      2101P&lt;BR&gt;
-      2101W&lt;BR&gt;
-      2101Y&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      2102L&lt;BR&gt;
-      2102S&lt;BR&gt;
-      2102Y&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      EVMCOG&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      43P&lt;BR&gt;
-      43W&lt;BR&gt;
-      43Y&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      40L&lt;BR&gt;
-      40P&lt;BR&gt;
-      40Y&lt;BR&gt;
-      70Y-T602&lt;BR&gt;
-      70L&lt;BR&gt;
-      70P&lt;BR&gt;
-      70Y&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      RT/RTR12&lt;BR&gt;
-      RT/RTR12&lt;BR&gt;
-      RT/RTR12&lt;BR&gt;
-      -&lt;BR&gt;
-      RJ/RJR12&lt;BR&gt;
-      RJ/RJR12&lt;BR&gt;
-      RJ/RJR12&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  &lt;TR&gt;
-    &lt;TD COLSPAN=8&gt;&amp;nbsp;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  &lt;TR&gt;
-    &lt;TD COLSPAN=8&gt;
-      &lt;FONT SIZE=4 FACE=ARIAL&gt;&lt;B&gt;SQUARE MULTI-TURN&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  &lt;TR&gt;
-   &lt;TD ALIGN=CENTER&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;BOURN&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;BI&amp;nbsp;TECH&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;DALE-VISHAY&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;PHILIPS/MEPCO&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;MURATA&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;PANASONIC&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;SPECTROL&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;MILSPEC&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  &lt;TR&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      3250L&lt;BR&gt;
-      3250P&lt;BR&gt;
-      3250W&lt;BR&gt;
-      3250X&lt;BR&gt;
-      3252P&lt;BR&gt;
-      3252W&lt;BR&gt;
-      3252X&lt;BR&gt;
-      3260P&lt;BR&gt;
-      3260W&lt;BR&gt;
-      3260X&lt;BR&gt;
-      3262P&lt;BR&gt;
-      3262W&lt;BR&gt;
-      3262X&lt;BR&gt;
-      3266P&lt;BR&gt;
-      3266W&lt;BR&gt;
-      3266X&lt;BR&gt;
-      3290H&lt;BR&gt;
-      3290P&lt;BR&gt;
-      3290W&lt;BR&gt;
-      3292P&lt;BR&gt;
-      3292W&lt;BR&gt;
-      3292X&lt;BR&gt;
-      3296P&lt;BR&gt;
-      3296W&lt;BR&gt;
-      3296X&lt;BR&gt;
-      3296Y&lt;BR&gt;
-      3296Z&lt;BR&gt;
-      3299P&lt;BR&gt;
-      3299W&lt;BR&gt;
-      3299X&lt;BR&gt;
-      3299Y&lt;BR&gt;
-      3299Z&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      66P&amp;nbsp;ALT&lt;BR&gt;
-      66W&amp;nbsp;ALT&lt;BR&gt;
-      66X&amp;nbsp;ALT&lt;BR&gt;
-      66P&amp;nbsp;ALT&lt;BR&gt;
-      66W&amp;nbsp;ALT&lt;BR&gt;
-      66X&amp;nbsp;ALT&lt;BR&gt;
-      -&lt;BR&gt;
-      64W&amp;nbsp;ALT&lt;BR&gt;
-      -&lt;BR&gt;
-      64P&amp;nbsp;ALT&lt;BR&gt;
-      64W&amp;nbsp;ALT&lt;BR&gt;
-      64X&amp;nbsp;ALT&lt;BR&gt;
-      64P&lt;BR&gt;
-      64W&lt;BR&gt;
-      64X&lt;BR&gt;
-      66X&amp;nbsp;ALT&lt;BR&gt;
-      66P&amp;nbsp;ALT&lt;BR&gt;
-      66W&amp;nbsp;ALT&lt;BR&gt;
-      66P&lt;BR&gt;
-      66W&lt;BR&gt;
-      66X&lt;BR&gt;
-      67P&lt;BR&gt;
-      67W&lt;BR&gt;
-      67X&lt;BR&gt;
-      67Y&lt;BR&gt;
-      67Z&lt;BR&gt;
-      68P&lt;BR&gt;
-      68W&lt;BR&gt;
-      68X&lt;BR&gt;
-      67Y&amp;nbsp;ALT&lt;BR&gt;
-      67Z&amp;nbsp;ALT&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      5050&lt;BR&gt;
-      5091&lt;BR&gt;
-      5080&lt;BR&gt;
-      5087&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      T63YB&lt;BR&gt;
-      T63XB&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      5887&lt;BR&gt;
-      5891&lt;BR&gt;
-      5880&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      T93Z&lt;BR&gt;
-      T93YA&lt;BR&gt;
-      T93XA&lt;BR&gt;
-      T93YB&lt;BR&gt;
-      T93XB&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      8026EKP&lt;BR&gt;
-      8026EKW&lt;BR&gt;
-      8026EKM&lt;BR&gt;
-      8026EKP&lt;BR&gt;
-      8026EKB&lt;BR&gt;
-      8026EKM&lt;BR&gt;
-      1309X&lt;BR&gt;
-      1309P&lt;BR&gt;
-      1309W&lt;BR&gt;
-      8024EKP&lt;BR&gt;
-      8024EKW&lt;BR&gt;
-      8024EKN&lt;BR&gt;
-      RJ-9P/CT9P&lt;BR&gt;
-      RJ-9W&lt;BR&gt;
-      RJ-9X&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      3103P&lt;BR&gt;
-      3103Y&lt;BR&gt;
-      3103Z&lt;BR&gt;
-      3103P&lt;BR&gt;
-      3103Y&lt;BR&gt;
-      3103Z&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      3105P/3106P&lt;BR&gt;
-      3105W/3106W&lt;BR&gt;
-      3105X/3106X&lt;BR&gt;
-      3105Y/3106Y&lt;BR&gt;
-      3105Z/3105Z&lt;BR&gt;
-      3102P&lt;BR&gt;
-      3102W&lt;BR&gt;
-      3102X&lt;BR&gt;
-      3102Y&lt;BR&gt;
-      3102Z&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      EVMCBG&lt;BR&gt;
-      EVMCCG&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      55-1-X&lt;BR&gt;
-      55-4-X&lt;BR&gt;
-      55-3-X&lt;BR&gt;
-      55-2-X&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      50-2-X&lt;BR&gt;
-      50-4-X&lt;BR&gt;
-      50-3-X&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      64P&lt;BR&gt;
-      64W&lt;BR&gt;
-      64X&lt;BR&gt;
-      64Y&lt;BR&gt;
-      64Z&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      RT/RTR22&lt;BR&gt;
-      RT/RTR22&lt;BR&gt;
-      RT/RTR22&lt;BR&gt;
-      RT/RTR22&lt;BR&gt;
-      RJ/RJR22&lt;BR&gt;
-      RJ/RJR22&lt;BR&gt;
-      RJ/RJR22&lt;BR&gt;
-      RT/RTR26&lt;BR&gt;
-      RT/RTR26&lt;BR&gt;
-      RT/RTR26&lt;BR&gt;
-      RJ/RJR26&lt;BR&gt;
-      RJ/RJR26&lt;BR&gt;
-      RJ/RJR26&lt;BR&gt;
-      RJ/RJR26&lt;BR&gt;
-      RJ/RJR26&lt;BR&gt;
-      RJ/RJR26&lt;BR&gt;
-      RT/RTR24&lt;BR&gt;
-      RT/RTR24&lt;BR&gt;
-      RT/RTR24&lt;BR&gt;
-      RJ/RJR24&lt;BR&gt;
-      RJ/RJR24&lt;BR&gt;
-      RJ/RJR24&lt;BR&gt;
-      RJ/RJR24&lt;BR&gt;
-      RJ/RJR24&lt;BR&gt;
-      RJ/RJR24&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  &lt;TR&gt;
-    &lt;TD COLSPAN=8&gt;&amp;nbsp;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  &lt;TR&gt;
-    &lt;TD COLSPAN=8&gt;
-      &lt;FONT SIZE=4 FACE=ARIAL&gt;&lt;B&gt;SINGLE TURN&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  &lt;TR&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;BOURN&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;BI&amp;nbsp;TECH&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;DALE-VISHAY&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;PHILIPS/MEPCO&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;MURATA&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;PANASONIC&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;SPECTROL&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;MILSPEC&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  &lt;TR&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      3323P&lt;BR&gt;
-      3323S&lt;BR&gt;
-      3323W&lt;BR&gt;
-      3329H&lt;BR&gt;
-      3329P&lt;BR&gt;
-      3329W&lt;BR&gt;
-      3339H&lt;BR&gt;
-      3339P&lt;BR&gt;
-      3339W&lt;BR&gt;
-      3352E&lt;BR&gt;
-      3352H&lt;BR&gt;
-      3352K&lt;BR&gt;
-      3352P&lt;BR&gt;
-      3352T&lt;BR&gt;
-      3352V&lt;BR&gt;
-      3352W&lt;BR&gt;
-      3362H&lt;BR&gt;
-      3362M&lt;BR&gt;
-      3362P&lt;BR&gt;
-      3362R&lt;BR&gt;
-      3362S&lt;BR&gt;
-      3362U&lt;BR&gt;
-      3362W&lt;BR&gt;
-      3362X&lt;BR&gt;
-      3386B&lt;BR&gt;
-      3386C&lt;BR&gt;
-      3386F&lt;BR&gt;
-      3386H&lt;BR&gt;
-      3386K&lt;BR&gt;
-      3386M&lt;BR&gt;
-      3386P&lt;BR&gt;
-      3386S&lt;BR&gt;
-      3386W&lt;BR&gt;
-      3386X&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      25P&lt;BR&gt;
-      25S&lt;BR&gt;
-      25RX&lt;BR&gt;
-      82P&lt;BR&gt;
-      82M&lt;BR&gt;
-      82PA&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      91E&lt;BR&gt;
-      91X&lt;BR&gt;
-      91T&lt;BR&gt;
-      91B&lt;BR&gt;
-      91A&lt;BR&gt;
-      91V&lt;BR&gt;
-      91W&lt;BR&gt;
-      25W&lt;BR&gt;
-      25V&lt;BR&gt;
-      25P&lt;BR&gt;
-      -&lt;BR&gt;
-      25S&lt;BR&gt;
-      25U&lt;BR&gt;
-      25RX&lt;BR&gt;
-      25X&lt;BR&gt;
-      72XW&lt;BR&gt;
-      72XL&lt;BR&gt;
-      72PM&lt;BR&gt;
-      72RX&lt;BR&gt;
-      -&lt;BR&gt;
-      72PX&lt;BR&gt;
-      72P&lt;BR&gt;
-      72RXW&lt;BR&gt;
-      72RXL&lt;BR&gt;
-      72X&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      T7YB&lt;BR&gt;
-      T7YA&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      TXD&lt;BR&gt;
-      TYA&lt;BR&gt;
-      TYP&lt;BR&gt;
-      -&lt;BR&gt;
-      TYD&lt;BR&gt;
-      TX&lt;BR&gt;
-      -&lt;BR&gt;
-      150SX&lt;BR&gt;
-      100SX&lt;BR&gt;
-      102T&lt;BR&gt;
-      101S&lt;BR&gt;
-      190T&lt;BR&gt;
-      150TX&lt;BR&gt;
-      101&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      101SX&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      ET6P&lt;BR&gt;
-      ET6S&lt;BR&gt;
-      ET6X&lt;BR&gt;
-      RJ-6W/8014EMW&lt;BR&gt;
-      RJ-6P/8014EMP&lt;BR&gt;
-      RJ-6X/8014EMX&lt;BR&gt;
-      TM7W&lt;BR&gt;
-      TM7P&lt;BR&gt;
-      TM7X&lt;BR&gt;
-      -&lt;BR&gt;
-      8017SMS&lt;BR&gt;
-      -&lt;BR&gt;
-      8017SMB&lt;BR&gt;
-      8017SMA&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      CT-6W&lt;BR&gt;
-      CT-6H&lt;BR&gt;
-      CT-6P&lt;BR&gt;
-      CT-6R&lt;BR&gt;
-      -&lt;BR&gt;
-      CT-6V&lt;BR&gt;
-      CT-6X&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      8038EKV&lt;BR&gt;
-      -&lt;BR&gt;
-      8038EKX&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      8038EKP&lt;BR&gt;
-      8038EKZ&lt;BR&gt;
-      8038EKW&lt;BR&gt;
-      -&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      3321H&lt;BR&gt;
-      3321P&lt;BR&gt;
-      3321N&lt;BR&gt;
-      1102H&lt;BR&gt;
-      1102P&lt;BR&gt;
-      1102T&lt;BR&gt;
-      RVA0911V304A&lt;BR&gt;
-      -&lt;BR&gt;
-      RVA0911H413A&lt;BR&gt;
-      RVG0707V100A&lt;BR&gt;
-      RVA0607V(H)306A&lt;BR&gt;
-      RVA1214H213A&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      3104B&lt;BR&gt;
-      3104C&lt;BR&gt;
-      3104F&lt;BR&gt;
-      3104H&lt;BR&gt;
-      -&lt;BR&gt;
-      3104M&lt;BR&gt;
-      3104P&lt;BR&gt;
-      3104S&lt;BR&gt;
-      3104W&lt;BR&gt;
-      3104X&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      EVMQ0G&lt;BR&gt;
-      EVMQIG&lt;BR&gt;
-      EVMQ3G&lt;BR&gt;
-      EVMS0G&lt;BR&gt;
-      EVMQ0G&lt;BR&gt;
-      EVMG0G&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      EVMK4GA00B&lt;BR&gt;
-      EVM30GA00B&lt;BR&gt;
-      EVMK0GA00B&lt;BR&gt;
-      EVM38GA00B&lt;BR&gt;
-      EVMB6&lt;BR&gt;
-      EVLQ0&lt;BR&gt;
-      -&lt;BR&gt;
-      EVMMSG&lt;BR&gt;
-      EVMMBG&lt;BR&gt;
-      EVMMAG&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      EVMMCS&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      EVMM1&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      EVMM0&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      EVMM3&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      62-3-1&lt;BR&gt;
-      62-1-2&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      67R&lt;BR&gt;
-      -&lt;BR&gt;
-      67P&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      67X&lt;BR&gt;
-      63V&lt;BR&gt;
-      63S&lt;BR&gt;
-      63M&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      63H&lt;BR&gt;
-      63P&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      63X&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      RJ/RJR50&lt;BR&gt;
-      RJ/RJR50&lt;BR&gt;
-      RJ/RJR50&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-&lt;/TABLE&gt;
-&lt;P&gt;&amp;nbsp;&lt;P&gt;
-&lt;TABLE BORDER=0 CELLSPACING=1 CELLPADDING=3&gt;
-  &lt;TR&gt;
-    &lt;TD COLSPAN=7&gt;
-      &lt;FONT color="#0000FF" SIZE=4 FACE=ARIAL&gt;&lt;B&gt;SMD TRIM-POT CROSS REFERENCE&lt;/B&gt;&lt;/FONT&gt;
-      &lt;P&gt;
-      &lt;FONT SIZE=4 FACE=ARIAL&gt;&lt;B&gt;MULTI-TURN&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  &lt;TR&gt;
-    &lt;TD&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;BOURNS&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;BI&amp;nbsp;TECH&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;DALE-VISHAY&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;PHILIPS/MEPCO&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;PANASONIC&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;TOCOS&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;AUX/KYOCERA&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  &lt;TR&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      3224G&lt;BR&gt;
-      3224J&lt;BR&gt;
-      3224W&lt;BR&gt;
-      3269P&lt;BR&gt;
-      3269W&lt;BR&gt;
-      3269X&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      44G&lt;BR&gt;
-      44J&lt;BR&gt;
-      44W&lt;BR&gt;
-      84P&lt;BR&gt;
-      84W&lt;BR&gt;
-      84X&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      ST63Z&lt;BR&gt;
-      ST63Y&lt;BR&gt;
-      -&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      ST5P&lt;BR&gt;
-      ST5W&lt;BR&gt;
-      ST5X&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  &lt;TR&gt;
-    &lt;TD COLSPAN=7&gt;&amp;nbsp;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  &lt;TR&gt;
-    &lt;TD COLSPAN=7&gt;
-      &lt;FONT SIZE=4 FACE=ARIAL&gt;&lt;B&gt;SINGLE TURN&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  &lt;TR&gt;
-    &lt;TD&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;BOURNS&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;BI&amp;nbsp;TECH&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;DALE-VISHAY&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;PHILIPS/MEPCO&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;PANASONIC&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;TOCOS&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;AUX/KYOCERA&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  &lt;TR&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      3314G&lt;BR&gt;
-      3314J&lt;BR&gt;
-      3364A/B&lt;BR&gt;
-      3364C/D&lt;BR&gt;
-      3364W/X&lt;BR&gt;
-      3313G&lt;BR&gt;
-      3313J&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      23B&lt;BR&gt;
-      23A&lt;BR&gt;
-      21X&lt;BR&gt;
-      21W&lt;BR&gt;
-      -&lt;BR&gt;
-      22B&lt;BR&gt;
-      22A&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      ST5YL/ST53YL&lt;BR&gt;
-      ST5YJ/5T53YJ&lt;BR&gt;
-      ST-23A&lt;BR&gt;
-      ST-22B&lt;BR&gt;
-      ST-22&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      ST-4B&lt;BR&gt;
-      ST-4A&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      ST-3B&lt;BR&gt;
-      ST-3A&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      EVM-6YS&lt;BR&gt;
-      EVM-1E&lt;BR&gt;
-      EVM-1G&lt;BR&gt;
-      EVM-1D&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      G4B&lt;BR&gt;
-      G4A&lt;BR&gt;
-      TR04-3S1&lt;BR&gt;
-      TRG04-2S1&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      DVR-43A&lt;BR&gt;
-      CVR-42C&lt;BR&gt;
-      CVR-42A/C&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-&lt;/TABLE&gt;
-&lt;P&gt;
-&lt;FONT SIZE=4 FACE=ARIAL&gt;&lt;B&gt;ALT =&amp;nbsp;ALTERNATE&lt;/B&gt;&lt;/FONT&gt;
-&lt;P&gt;
-
-&amp;nbsp;
-&lt;P&gt;
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;</description>
-<packages>
-<package name="R0805">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;</description>
-<wire x1="-0.41" y1="0.635" x2="0.41" y2="0.635" width="0.1524" layer="51"/>
-<wire x1="-0.41" y1="-0.635" x2="0.41" y2="-0.635" width="0.1524" layer="51"/>
-<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
-<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
-<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
-<text x="-0.635" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.635" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="51"/>
-<rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
-</package>
-<package name="R0603">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
-<wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
-<wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="51"/>
-<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
-<smd name="1" x="-0.85" y="0" dx="1" dy="1.1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1" dy="1.1" layer="1"/>
-<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="0.4318" y1="-0.4318" x2="0.8382" y2="0.4318" layer="51"/>
-<rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
-</package>
-<package name="C0805">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;</description>
-<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="-0.381" y1="0.66" x2="0.381" y2="0.66" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.66" x2="0.381" y2="-0.66" width="0.1016" layer="51"/>
-<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
-<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
-<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
-<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
-<rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
-<rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
-</package>
-<package name="C0603">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
-<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
-<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
-<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
 </packages>
 </library>
@@ -3533,6 +2408,54 @@ grid 10.16 mm, diameter 25 mm</description>
 <rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
 </package>
+<package name="R0805" urn="urn:adsk.eagle:footprint:23045/1" library_version="3">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;</description>
+<wire x1="-0.41" y1="0.635" x2="0.41" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="-0.41" y1="-0.635" x2="0.41" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
+<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<text x="-0.635" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="51"/>
+<rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
+</package>
+<package name="C0805" urn="urn:adsk.eagle:footprint:23124/1" library_version="3">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;</description>
+<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="-0.381" y1="0.66" x2="0.381" y2="0.66" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.66" x2="0.381" y2="-0.66" width="0.1016" layer="51"/>
+<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
+<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
+<rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
+<rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
+</package>
+<package name="R2512" urn="urn:adsk.eagle:footprint:23055/1" library_version="3">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
+<wire x1="-2.362" y1="1.473" x2="2.387" y2="1.473" width="0.1524" layer="51"/>
+<wire x1="-2.362" y1="-1.473" x2="2.387" y2="-1.473" width="0.1524" layer="51"/>
+<wire x1="-3.973" y1="1.983" x2="3.973" y2="1.983" width="0.0508" layer="39"/>
+<wire x1="3.973" y1="1.983" x2="3.973" y2="-1.983" width="0.0508" layer="39"/>
+<wire x1="3.973" y1="-1.983" x2="-3.973" y2="-1.983" width="0.0508" layer="39"/>
+<wire x1="-3.973" y1="-1.983" x2="-3.973" y2="1.983" width="0.0508" layer="39"/>
+<smd name="1" x="-2.8" y="0" dx="1.8" dy="3.2" layer="1"/>
+<smd name="2" x="2.8" y="0" dx="1.8" dy="3.2" layer="1"/>
+<text x="-2.54" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-3.2004" y1="-1.5494" x2="-2.3505" y2="1.5507" layer="51"/>
+<rectangle x1="2.3622" y1="-1.5494" x2="3.2121" y2="1.5507" layer="51"/>
+<rectangle x1="-0.5001" y1="-1" x2="0.5001" y2="1" layer="35"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="C1210" urn="urn:adsk.eagle:package:23619/2" type="model" library_version="3">
@@ -3579,1166 +2502,22 @@ grid 10.16 mm, diameter 25 mm</description>
 <packageinstance name="C1206"/>
 </packageinstances>
 </package3d>
-</packages3d>
-</library>
-<library name="resistor" urn="urn:adsk.eagle:library:348">
-<description>&lt;b&gt;Resistors, Capacitors, Inductors&lt;/b&gt;&lt;p&gt;
-Based on the previous libraries:
-&lt;ul&gt;
-&lt;li&gt;r.lbr
-&lt;li&gt;cap.lbr 
-&lt;li&gt;cap-fe.lbr
-&lt;li&gt;captant.lbr
-&lt;li&gt;polcap.lbr
-&lt;li&gt;ipc-smd.lbr
-&lt;/ul&gt;
-All SMD packages are defined according to the IPC specifications and  CECC&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;&lt;p&gt;
-&lt;p&gt;
-for Electrolyt Capacitors see also :&lt;p&gt;
-www.bccomponents.com &lt;p&gt;
-www.panasonic.com&lt;p&gt;
-www.kemet.com&lt;p&gt;
-&lt;p&gt;
-for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trimpotcrossref.asp&lt;/u&gt;&lt;p&gt;
-
-&lt;map name="nav_main"&gt;
-&lt;area shape="rect" coords="0,1,140,23" href="../military_specs.asp" title=""&gt;
-&lt;area shape="rect" coords="0,24,140,51" href="../about.asp" title=""&gt;
-&lt;area shape="rect" coords="1,52,140,77" href="../rfq.asp" title=""&gt;
-&lt;area shape="rect" coords="0,78,139,103" href="../products.asp" title=""&gt;
-&lt;area shape="rect" coords="1,102,138,128" href="../excess_inventory.asp" title=""&gt;
-&lt;area shape="rect" coords="1,129,138,150" href="../edge.asp" title=""&gt;
-&lt;area shape="rect" coords="1,151,139,178" href="../industry_links.asp" title=""&gt;
-&lt;area shape="rect" coords="0,179,139,201" href="../comments.asp" title=""&gt;
-&lt;area shape="rect" coords="1,203,138,231" href="../directory.asp" title=""&gt;
-&lt;area shape="default" nohref&gt;
-&lt;/map&gt;
-
-&lt;html&gt;
-
-&lt;title&gt;&lt;/title&gt;
-
- &lt;LINK REL="StyleSheet" TYPE="text/css" HREF="style-sheet.css"&gt;
-
-&lt;body bgcolor="#ffffff" text="#000000" marginwidth="0" marginheight="0" topmargin="0" leftmargin="0"&gt;
-&lt;table border=0 cellspacing=0 cellpadding=0 width="100%" cellpaddding=0 height="55%"&gt;
-&lt;tr valign="top"&gt;
-
-&lt;/td&gt;
-&lt;! &lt;td width="10"&gt;&amp;nbsp;&lt;/td&gt;
-&lt;td width="90%"&gt;
-
-&lt;b&gt;&lt;font color="#0000FF" size="4"&gt;TRIM-POT CROSS REFERENCE&lt;/font&gt;&lt;/b&gt;
-&lt;P&gt;
-&lt;TABLE BORDER=0 CELLSPACING=1 CELLPADDING=2&gt;
-  &lt;TR&gt;
-    &lt;TD COLSPAN=8&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;RECTANGULAR MULTI-TURN&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  &lt;TR&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;B&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL color="#FF0000"&gt;BOURNS&lt;/FONT&gt;
-      &lt;/B&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;B&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL color="#FF0000"&gt;BI&amp;nbsp;TECH&lt;/FONT&gt;
-      &lt;/B&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;B&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL color="#FF0000"&gt;DALE-VISHAY&lt;/FONT&gt;
-      &lt;/B&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;B&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL color="#FF0000"&gt;PHILIPS/MEPCO&lt;/FONT&gt;
-      &lt;/B&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;B&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL color="#FF0000"&gt;MURATA&lt;/FONT&gt;
-      &lt;/B&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;B&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL color="#FF0000"&gt;PANASONIC&lt;/FONT&gt;
-      &lt;/B&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;B&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL color="#FF0000"&gt;SPECTROL&lt;/FONT&gt;
-      &lt;/B&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;B&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL color="#FF0000"&gt;MILSPEC&lt;/FONT&gt;
-      &lt;/B&gt;
-    &lt;/TD&gt;&lt;TD&gt;&amp;nbsp;&lt;/TD&gt;
-  &lt;/TR&gt;
-  &lt;TR&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3 &gt;
-      3005P&lt;BR&gt;
-      3006P&lt;BR&gt;
-      3006W&lt;BR&gt;
-      3006Y&lt;BR&gt;
-      3009P&lt;BR&gt;
-      3009W&lt;BR&gt;
-      3009Y&lt;BR&gt;
-      3057J&lt;BR&gt;
-      3057L&lt;BR&gt;
-      3057P&lt;BR&gt;
-      3057Y&lt;BR&gt;
-      3059J&lt;BR&gt;
-      3059L&lt;BR&gt;
-      3059P&lt;BR&gt;
-      3059Y&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      89P&lt;BR&gt;
-      89W&lt;BR&gt;
-      89X&lt;BR&gt;
-      89PH&lt;BR&gt;
-      76P&lt;BR&gt;
-      89XH&lt;BR&gt;
-      78SLT&lt;BR&gt;
-      78L&amp;nbsp;ALT&lt;BR&gt;
-      56P&amp;nbsp;ALT&lt;BR&gt;
-      78P&amp;nbsp;ALT&lt;BR&gt;
-      T8S&lt;BR&gt;
-      78L&lt;BR&gt;
-      56P&lt;BR&gt;
-      78P&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      T18/784&lt;BR&gt;
-      783&lt;BR&gt;
-      781&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      2199&lt;BR&gt;
-      1697/1897&lt;BR&gt;
-      1680/1880&lt;BR&gt;
-      2187&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      8035EKP/CT20/RJ-20P&lt;BR&gt;
-      -&lt;BR&gt;
-      RJ-20X&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      1211L&lt;BR&gt;
-      8012EKQ&amp;nbsp;ALT&lt;BR&gt;
-      8012EKR&amp;nbsp;ALT&lt;BR&gt;
-      1211P&lt;BR&gt;
-      8012EKJ&lt;BR&gt;
-      8012EKL&lt;BR&gt;
-      8012EKQ&lt;BR&gt;
-      8012EKR&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      2101P&lt;BR&gt;
-      2101W&lt;BR&gt;
-      2101Y&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      2102L&lt;BR&gt;
-      2102S&lt;BR&gt;
-      2102Y&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      EVMCOG&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      43P&lt;BR&gt;
-      43W&lt;BR&gt;
-      43Y&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      40L&lt;BR&gt;
-      40P&lt;BR&gt;
-      40Y&lt;BR&gt;
-      70Y-T602&lt;BR&gt;
-      70L&lt;BR&gt;
-      70P&lt;BR&gt;
-      70Y&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      RT/RTR12&lt;BR&gt;
-      RT/RTR12&lt;BR&gt;
-      RT/RTR12&lt;BR&gt;
-      -&lt;BR&gt;
-      RJ/RJR12&lt;BR&gt;
-      RJ/RJR12&lt;BR&gt;
-      RJ/RJR12&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  &lt;TR&gt;
-    &lt;TD COLSPAN=8&gt;&amp;nbsp;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  &lt;TR&gt;
-    &lt;TD COLSPAN=8&gt;
-      &lt;FONT SIZE=4 FACE=ARIAL&gt;&lt;B&gt;SQUARE MULTI-TURN&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  &lt;TR&gt;
-   &lt;TD ALIGN=CENTER&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;BOURN&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;BI&amp;nbsp;TECH&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;DALE-VISHAY&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;PHILIPS/MEPCO&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;MURATA&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;PANASONIC&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;SPECTROL&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;MILSPEC&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  &lt;TR&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      3250L&lt;BR&gt;
-      3250P&lt;BR&gt;
-      3250W&lt;BR&gt;
-      3250X&lt;BR&gt;
-      3252P&lt;BR&gt;
-      3252W&lt;BR&gt;
-      3252X&lt;BR&gt;
-      3260P&lt;BR&gt;
-      3260W&lt;BR&gt;
-      3260X&lt;BR&gt;
-      3262P&lt;BR&gt;
-      3262W&lt;BR&gt;
-      3262X&lt;BR&gt;
-      3266P&lt;BR&gt;
-      3266W&lt;BR&gt;
-      3266X&lt;BR&gt;
-      3290H&lt;BR&gt;
-      3290P&lt;BR&gt;
-      3290W&lt;BR&gt;
-      3292P&lt;BR&gt;
-      3292W&lt;BR&gt;
-      3292X&lt;BR&gt;
-      3296P&lt;BR&gt;
-      3296W&lt;BR&gt;
-      3296X&lt;BR&gt;
-      3296Y&lt;BR&gt;
-      3296Z&lt;BR&gt;
-      3299P&lt;BR&gt;
-      3299W&lt;BR&gt;
-      3299X&lt;BR&gt;
-      3299Y&lt;BR&gt;
-      3299Z&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      66P&amp;nbsp;ALT&lt;BR&gt;
-      66W&amp;nbsp;ALT&lt;BR&gt;
-      66X&amp;nbsp;ALT&lt;BR&gt;
-      66P&amp;nbsp;ALT&lt;BR&gt;
-      66W&amp;nbsp;ALT&lt;BR&gt;
-      66X&amp;nbsp;ALT&lt;BR&gt;
-      -&lt;BR&gt;
-      64W&amp;nbsp;ALT&lt;BR&gt;
-      -&lt;BR&gt;
-      64P&amp;nbsp;ALT&lt;BR&gt;
-      64W&amp;nbsp;ALT&lt;BR&gt;
-      64X&amp;nbsp;ALT&lt;BR&gt;
-      64P&lt;BR&gt;
-      64W&lt;BR&gt;
-      64X&lt;BR&gt;
-      66X&amp;nbsp;ALT&lt;BR&gt;
-      66P&amp;nbsp;ALT&lt;BR&gt;
-      66W&amp;nbsp;ALT&lt;BR&gt;
-      66P&lt;BR&gt;
-      66W&lt;BR&gt;
-      66X&lt;BR&gt;
-      67P&lt;BR&gt;
-      67W&lt;BR&gt;
-      67X&lt;BR&gt;
-      67Y&lt;BR&gt;
-      67Z&lt;BR&gt;
-      68P&lt;BR&gt;
-      68W&lt;BR&gt;
-      68X&lt;BR&gt;
-      67Y&amp;nbsp;ALT&lt;BR&gt;
-      67Z&amp;nbsp;ALT&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      5050&lt;BR&gt;
-      5091&lt;BR&gt;
-      5080&lt;BR&gt;
-      5087&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      T63YB&lt;BR&gt;
-      T63XB&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      5887&lt;BR&gt;
-      5891&lt;BR&gt;
-      5880&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      T93Z&lt;BR&gt;
-      T93YA&lt;BR&gt;
-      T93XA&lt;BR&gt;
-      T93YB&lt;BR&gt;
-      T93XB&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      8026EKP&lt;BR&gt;
-      8026EKW&lt;BR&gt;
-      8026EKM&lt;BR&gt;
-      8026EKP&lt;BR&gt;
-      8026EKB&lt;BR&gt;
-      8026EKM&lt;BR&gt;
-      1309X&lt;BR&gt;
-      1309P&lt;BR&gt;
-      1309W&lt;BR&gt;
-      8024EKP&lt;BR&gt;
-      8024EKW&lt;BR&gt;
-      8024EKN&lt;BR&gt;
-      RJ-9P/CT9P&lt;BR&gt;
-      RJ-9W&lt;BR&gt;
-      RJ-9X&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      3103P&lt;BR&gt;
-      3103Y&lt;BR&gt;
-      3103Z&lt;BR&gt;
-      3103P&lt;BR&gt;
-      3103Y&lt;BR&gt;
-      3103Z&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      3105P/3106P&lt;BR&gt;
-      3105W/3106W&lt;BR&gt;
-      3105X/3106X&lt;BR&gt;
-      3105Y/3106Y&lt;BR&gt;
-      3105Z/3105Z&lt;BR&gt;
-      3102P&lt;BR&gt;
-      3102W&lt;BR&gt;
-      3102X&lt;BR&gt;
-      3102Y&lt;BR&gt;
-      3102Z&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      EVMCBG&lt;BR&gt;
-      EVMCCG&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      55-1-X&lt;BR&gt;
-      55-4-X&lt;BR&gt;
-      55-3-X&lt;BR&gt;
-      55-2-X&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      50-2-X&lt;BR&gt;
-      50-4-X&lt;BR&gt;
-      50-3-X&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      64P&lt;BR&gt;
-      64W&lt;BR&gt;
-      64X&lt;BR&gt;
-      64Y&lt;BR&gt;
-      64Z&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      RT/RTR22&lt;BR&gt;
-      RT/RTR22&lt;BR&gt;
-      RT/RTR22&lt;BR&gt;
-      RT/RTR22&lt;BR&gt;
-      RJ/RJR22&lt;BR&gt;
-      RJ/RJR22&lt;BR&gt;
-      RJ/RJR22&lt;BR&gt;
-      RT/RTR26&lt;BR&gt;
-      RT/RTR26&lt;BR&gt;
-      RT/RTR26&lt;BR&gt;
-      RJ/RJR26&lt;BR&gt;
-      RJ/RJR26&lt;BR&gt;
-      RJ/RJR26&lt;BR&gt;
-      RJ/RJR26&lt;BR&gt;
-      RJ/RJR26&lt;BR&gt;
-      RJ/RJR26&lt;BR&gt;
-      RT/RTR24&lt;BR&gt;
-      RT/RTR24&lt;BR&gt;
-      RT/RTR24&lt;BR&gt;
-      RJ/RJR24&lt;BR&gt;
-      RJ/RJR24&lt;BR&gt;
-      RJ/RJR24&lt;BR&gt;
-      RJ/RJR24&lt;BR&gt;
-      RJ/RJR24&lt;BR&gt;
-      RJ/RJR24&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  &lt;TR&gt;
-    &lt;TD COLSPAN=8&gt;&amp;nbsp;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  &lt;TR&gt;
-    &lt;TD COLSPAN=8&gt;
-      &lt;FONT SIZE=4 FACE=ARIAL&gt;&lt;B&gt;SINGLE TURN&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  &lt;TR&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;BOURN&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;BI&amp;nbsp;TECH&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;DALE-VISHAY&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;PHILIPS/MEPCO&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;MURATA&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;PANASONIC&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;SPECTROL&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD ALIGN=CENTER&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;MILSPEC&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  &lt;TR&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      3323P&lt;BR&gt;
-      3323S&lt;BR&gt;
-      3323W&lt;BR&gt;
-      3329H&lt;BR&gt;
-      3329P&lt;BR&gt;
-      3329W&lt;BR&gt;
-      3339H&lt;BR&gt;
-      3339P&lt;BR&gt;
-      3339W&lt;BR&gt;
-      3352E&lt;BR&gt;
-      3352H&lt;BR&gt;
-      3352K&lt;BR&gt;
-      3352P&lt;BR&gt;
-      3352T&lt;BR&gt;
-      3352V&lt;BR&gt;
-      3352W&lt;BR&gt;
-      3362H&lt;BR&gt;
-      3362M&lt;BR&gt;
-      3362P&lt;BR&gt;
-      3362R&lt;BR&gt;
-      3362S&lt;BR&gt;
-      3362U&lt;BR&gt;
-      3362W&lt;BR&gt;
-      3362X&lt;BR&gt;
-      3386B&lt;BR&gt;
-      3386C&lt;BR&gt;
-      3386F&lt;BR&gt;
-      3386H&lt;BR&gt;
-      3386K&lt;BR&gt;
-      3386M&lt;BR&gt;
-      3386P&lt;BR&gt;
-      3386S&lt;BR&gt;
-      3386W&lt;BR&gt;
-      3386X&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      25P&lt;BR&gt;
-      25S&lt;BR&gt;
-      25RX&lt;BR&gt;
-      82P&lt;BR&gt;
-      82M&lt;BR&gt;
-      82PA&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      91E&lt;BR&gt;
-      91X&lt;BR&gt;
-      91T&lt;BR&gt;
-      91B&lt;BR&gt;
-      91A&lt;BR&gt;
-      91V&lt;BR&gt;
-      91W&lt;BR&gt;
-      25W&lt;BR&gt;
-      25V&lt;BR&gt;
-      25P&lt;BR&gt;
-      -&lt;BR&gt;
-      25S&lt;BR&gt;
-      25U&lt;BR&gt;
-      25RX&lt;BR&gt;
-      25X&lt;BR&gt;
-      72XW&lt;BR&gt;
-      72XL&lt;BR&gt;
-      72PM&lt;BR&gt;
-      72RX&lt;BR&gt;
-      -&lt;BR&gt;
-      72PX&lt;BR&gt;
-      72P&lt;BR&gt;
-      72RXW&lt;BR&gt;
-      72RXL&lt;BR&gt;
-      72X&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      T7YB&lt;BR&gt;
-      T7YA&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      TXD&lt;BR&gt;
-      TYA&lt;BR&gt;
-      TYP&lt;BR&gt;
-      -&lt;BR&gt;
-      TYD&lt;BR&gt;
-      TX&lt;BR&gt;
-      -&lt;BR&gt;
-      150SX&lt;BR&gt;
-      100SX&lt;BR&gt;
-      102T&lt;BR&gt;
-      101S&lt;BR&gt;
-      190T&lt;BR&gt;
-      150TX&lt;BR&gt;
-      101&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      101SX&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      ET6P&lt;BR&gt;
-      ET6S&lt;BR&gt;
-      ET6X&lt;BR&gt;
-      RJ-6W/8014EMW&lt;BR&gt;
-      RJ-6P/8014EMP&lt;BR&gt;
-      RJ-6X/8014EMX&lt;BR&gt;
-      TM7W&lt;BR&gt;
-      TM7P&lt;BR&gt;
-      TM7X&lt;BR&gt;
-      -&lt;BR&gt;
-      8017SMS&lt;BR&gt;
-      -&lt;BR&gt;
-      8017SMB&lt;BR&gt;
-      8017SMA&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      CT-6W&lt;BR&gt;
-      CT-6H&lt;BR&gt;
-      CT-6P&lt;BR&gt;
-      CT-6R&lt;BR&gt;
-      -&lt;BR&gt;
-      CT-6V&lt;BR&gt;
-      CT-6X&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      8038EKV&lt;BR&gt;
-      -&lt;BR&gt;
-      8038EKX&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      8038EKP&lt;BR&gt;
-      8038EKZ&lt;BR&gt;
-      8038EKW&lt;BR&gt;
-      -&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      3321H&lt;BR&gt;
-      3321P&lt;BR&gt;
-      3321N&lt;BR&gt;
-      1102H&lt;BR&gt;
-      1102P&lt;BR&gt;
-      1102T&lt;BR&gt;
-      RVA0911V304A&lt;BR&gt;
-      -&lt;BR&gt;
-      RVA0911H413A&lt;BR&gt;
-      RVG0707V100A&lt;BR&gt;
-      RVA0607V(H)306A&lt;BR&gt;
-      RVA1214H213A&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      3104B&lt;BR&gt;
-      3104C&lt;BR&gt;
-      3104F&lt;BR&gt;
-      3104H&lt;BR&gt;
-      -&lt;BR&gt;
-      3104M&lt;BR&gt;
-      3104P&lt;BR&gt;
-      3104S&lt;BR&gt;
-      3104W&lt;BR&gt;
-      3104X&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      EVMQ0G&lt;BR&gt;
-      EVMQIG&lt;BR&gt;
-      EVMQ3G&lt;BR&gt;
-      EVMS0G&lt;BR&gt;
-      EVMQ0G&lt;BR&gt;
-      EVMG0G&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      EVMK4GA00B&lt;BR&gt;
-      EVM30GA00B&lt;BR&gt;
-      EVMK0GA00B&lt;BR&gt;
-      EVM38GA00B&lt;BR&gt;
-      EVMB6&lt;BR&gt;
-      EVLQ0&lt;BR&gt;
-      -&lt;BR&gt;
-      EVMMSG&lt;BR&gt;
-      EVMMBG&lt;BR&gt;
-      EVMMAG&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      EVMMCS&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      EVMM1&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      EVMM0&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      EVMM3&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      62-3-1&lt;BR&gt;
-      62-1-2&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      67R&lt;BR&gt;
-      -&lt;BR&gt;
-      67P&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      67X&lt;BR&gt;
-      63V&lt;BR&gt;
-      63S&lt;BR&gt;
-      63M&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      63H&lt;BR&gt;
-      63P&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      63X&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      RJ/RJR50&lt;BR&gt;
-      RJ/RJR50&lt;BR&gt;
-      RJ/RJR50&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-&lt;/TABLE&gt;
-&lt;P&gt;&amp;nbsp;&lt;P&gt;
-&lt;TABLE BORDER=0 CELLSPACING=1 CELLPADDING=3&gt;
-  &lt;TR&gt;
-    &lt;TD COLSPAN=7&gt;
-      &lt;FONT color="#0000FF" SIZE=4 FACE=ARIAL&gt;&lt;B&gt;SMD TRIM-POT CROSS REFERENCE&lt;/B&gt;&lt;/FONT&gt;
-      &lt;P&gt;
-      &lt;FONT SIZE=4 FACE=ARIAL&gt;&lt;B&gt;MULTI-TURN&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  &lt;TR&gt;
-    &lt;TD&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;BOURNS&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;BI&amp;nbsp;TECH&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;DALE-VISHAY&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;PHILIPS/MEPCO&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;PANASONIC&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;TOCOS&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;AUX/KYOCERA&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  &lt;TR&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      3224G&lt;BR&gt;
-      3224J&lt;BR&gt;
-      3224W&lt;BR&gt;
-      3269P&lt;BR&gt;
-      3269W&lt;BR&gt;
-      3269X&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      44G&lt;BR&gt;
-      44J&lt;BR&gt;
-      44W&lt;BR&gt;
-      84P&lt;BR&gt;
-      84W&lt;BR&gt;
-      84X&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      ST63Z&lt;BR&gt;
-      ST63Y&lt;BR&gt;
-      -&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      ST5P&lt;BR&gt;
-      ST5W&lt;BR&gt;
-      ST5X&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  &lt;TR&gt;
-    &lt;TD COLSPAN=7&gt;&amp;nbsp;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  &lt;TR&gt;
-    &lt;TD COLSPAN=7&gt;
-      &lt;FONT SIZE=4 FACE=ARIAL&gt;&lt;B&gt;SINGLE TURN&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  &lt;TR&gt;
-    &lt;TD&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;BOURNS&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;BI&amp;nbsp;TECH&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;DALE-VISHAY&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;PHILIPS/MEPCO&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;PANASONIC&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;TOCOS&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD&gt;
-      &lt;FONT SIZE=3 FACE=ARIAL&gt;&lt;B&gt;AUX/KYOCERA&lt;/B&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  &lt;TR&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      3314G&lt;BR&gt;
-      3314J&lt;BR&gt;
-      3364A/B&lt;BR&gt;
-      3364C/D&lt;BR&gt;
-      3364W/X&lt;BR&gt;
-      3313G&lt;BR&gt;
-      3313J&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      23B&lt;BR&gt;
-      23A&lt;BR&gt;
-      21X&lt;BR&gt;
-      21W&lt;BR&gt;
-      -&lt;BR&gt;
-      22B&lt;BR&gt;
-      22A&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      ST5YL/ST53YL&lt;BR&gt;
-      ST5YJ/5T53YJ&lt;BR&gt;
-      ST-23A&lt;BR&gt;
-      ST-22B&lt;BR&gt;
-      ST-22&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      ST-4B&lt;BR&gt;
-      ST-4A&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      ST-3B&lt;BR&gt;
-      ST-3A&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      EVM-6YS&lt;BR&gt;
-      EVM-1E&lt;BR&gt;
-      EVM-1G&lt;BR&gt;
-      EVM-1D&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      G4B&lt;BR&gt;
-      G4A&lt;BR&gt;
-      TR04-3S1&lt;BR&gt;
-      TRG04-2S1&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;
-      DVR-43A&lt;BR&gt;
-      CVR-42C&lt;BR&gt;
-      CVR-42A/C&lt;BR&gt;
-      -&lt;BR&gt;
-      -&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-&lt;/TABLE&gt;
-&lt;P&gt;
-&lt;FONT SIZE=4 FACE=ARIAL&gt;&lt;B&gt;ALT =&amp;nbsp;ALTERNATE&lt;/B&gt;&lt;/FONT&gt;
-&lt;P&gt;
-
-&amp;nbsp;
-&lt;P&gt;
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-&lt;/BODY&gt;&lt;/HTML&gt;</description>
-<packages>
-<package name="R0603" urn="urn:adsk.eagle:footprint:23044/1" library_version="2">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
-<wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
-<wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="51"/>
-<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
-<smd name="1" x="-0.85" y="0" dx="1" dy="1.1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1" dy="1.1" layer="1"/>
-<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="0.4318" y1="-0.4318" x2="0.8382" y2="0.4318" layer="51"/>
-<rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
-</package>
-<package name="R0805" urn="urn:adsk.eagle:footprint:23045/1" library_version="2">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;</description>
-<wire x1="-0.41" y1="0.635" x2="0.41" y2="0.635" width="0.1524" layer="51"/>
-<wire x1="-0.41" y1="-0.635" x2="0.41" y2="-0.635" width="0.1524" layer="51"/>
-<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
-<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
-<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
-<text x="-0.635" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.635" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="51"/>
-<rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
-</package>
-<package name="R2512" urn="urn:adsk.eagle:footprint:23055/1" library_version="2">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
-<wire x1="-2.362" y1="1.473" x2="2.387" y2="1.473" width="0.1524" layer="51"/>
-<wire x1="-2.362" y1="-1.473" x2="2.387" y2="-1.473" width="0.1524" layer="51"/>
-<wire x1="-3.973" y1="1.983" x2="3.973" y2="1.983" width="0.0508" layer="39"/>
-<wire x1="3.973" y1="1.983" x2="3.973" y2="-1.983" width="0.0508" layer="39"/>
-<wire x1="3.973" y1="-1.983" x2="-3.973" y2="-1.983" width="0.0508" layer="39"/>
-<wire x1="-3.973" y1="-1.983" x2="-3.973" y2="1.983" width="0.0508" layer="39"/>
-<smd name="1" x="-2.8" y="0" dx="1.8" dy="3.2" layer="1"/>
-<smd name="2" x="2.8" y="0" dx="1.8" dy="3.2" layer="1"/>
-<text x="-2.54" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-3.2004" y1="-1.5494" x2="-2.3505" y2="1.5507" layer="51"/>
-<rectangle x1="2.3622" y1="-1.5494" x2="3.2121" y2="1.5507" layer="51"/>
-<rectangle x1="-0.5001" y1="-1" x2="0.5001" y2="1" layer="35"/>
-</package>
-<package name="C0805" urn="urn:adsk.eagle:footprint:23124/1" library_version="2">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;</description>
-<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="-0.381" y1="0.66" x2="0.381" y2="0.66" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.66" x2="0.381" y2="-0.66" width="0.1016" layer="51"/>
-<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
-<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
-<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
-<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
-<rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
-<rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="R0603" urn="urn:adsk.eagle:package:23555/2" type="model" library_version="2">
-<description>RESISTOR</description>
-<packageinstances>
-<packageinstance name="R0603"/>
-</packageinstances>
-</package3d>
-<package3d name="R0805" urn="urn:adsk.eagle:package:23553/2" type="model" library_version="2">
+<package3d name="R0805" urn="urn:adsk.eagle:package:23553/2" type="model" library_version="3">
 <description>RESISTOR</description>
 <packageinstances>
 <packageinstance name="R0805"/>
 </packageinstances>
 </package3d>
-<package3d name="R2512" urn="urn:adsk.eagle:package:23545/2" type="model" library_version="2">
-<description>RESISTOR</description>
-<packageinstances>
-<packageinstance name="R2512"/>
-</packageinstances>
-</package3d>
-<package3d name="C0805" urn="urn:adsk.eagle:package:23617/2" type="model" library_version="2">
+<package3d name="C0805" urn="urn:adsk.eagle:package:23617/2" type="model" library_version="3">
 <description>CAPACITOR</description>
 <packageinstances>
 <packageinstance name="C0805"/>
+</packageinstances>
+</package3d>
+<package3d name="R2512" urn="urn:adsk.eagle:package:23545/2" type="model" library_version="3">
+<description>RESISTOR</description>
+<packageinstances>
+<packageinstance name="R2512"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -14742,7 +12521,7 @@ In this library you will find inductors. If you are looking for a common package
 </library>
 </libraries>
 <attributes>
-<attribute name="VERSION" value="v3.3"/>
+<attribute name="VERSION" value="v4.0"/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -14970,68 +12749,51 @@ Your Eurocircuits Team
 </autorouter>
 <elements>
 <element name="J1" library="RoboJackets-Connectors" package="B2PS-CENTERED" value="B2PS-VH(LF)(SN)" x="-14.6" y="72.5" smashed="yes" rot="R270">
-<attribute name="DIGIKEY" value="455-1648-ND" x="-14.6" y="72.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="B2PS-VH(LF)(SN)" x="-14.6" y="72.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="-11.503803125" y="68.932228125" size="1" layer="25" font="vector" rot="R270" align="top-right"/>
 </element>
 <element name="J3" library="RoboJackets-Connectors" package="B2PS-CENTERED" value="B2PS-VH(LF)(SN)" x="27" y="44" smashed="yes" rot="MR270">
-<attribute name="DIGIKEY" value="455-1648-ND" x="27" y="44" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MPN" value="B2PS-VH(LF)(SN)" x="27" y="44" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="NAME" x="27.5" y="38.5" size="1" layer="26" font="vector" rot="MR0" align="bottom-center"/>
 </element>
 <element name="J2" library="RoboJackets-Connectors" package="B2PS-CENTERED" value="B2PS-VH(LF)(SN)" x="-17" y="44" smashed="yes" rot="MR90">
-<attribute name="DIGIKEY" value="455-1648-ND" x="-17" y="44" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="MPN" value="B2PS-VH(LF)(SN)" x="-17" y="44" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="NAME" x="-17.5" y="38.5" size="1" layer="26" font="vector" rot="MR0" align="bottom-center"/>
 </element>
 <element name="D15" library="RoboJackets-LEDs" package="CHIP-LED0603" value="GREEN" x="10.7" y="75.65" smashed="yes" rot="R90">
-<attribute name="DIGIKEY" value="160-1446-1-ND" x="10.7" y="75.65" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="LTST-C191KGKT" x="10.7" y="75.65" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="9.8" y="69.45" size="1" layer="25" font="vector" rot="SR180" align="top-right"/>
-<attribute name="VALUE" x="11.335" y="77.555" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R43" library="rcl" package="R0603" value="330" x="14.7" y="75.65" smashed="yes">
+<element name="R43" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="330" x="14.7" y="75.65" smashed="yes">
 <attribute name="NAME" x="15.875" y="71.35" size="1" layer="25" font="vector" rot="SR180"/>
-<attribute name="VALUE" x="14.065" y="73.745" size="1.27" layer="27"/>
 </element>
-<element name="C32" library="rcl" package="C0603" value="0.1uF" x="43" y="15.7" smashed="yes">
+<element name="C32" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="43" y="15.7" smashed="yes">
 <attribute name="NAME" x="41.75" y="13.45" size="1" layer="25" font="vector"/>
-<attribute name="VALUE" x="42.365" y="13.795" size="1.27" layer="27"/>
 </element>
-<element name="R35" library="rcl" package="R0603" value="10k" x="61.65" y="23.4" smashed="yes">
+<element name="R35" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k" x="61.65" y="23.4" smashed="yes">
 <attribute name="NAME" x="60.3" y="21.15" size="1" layer="25" font="vector"/>
-<attribute name="VALUE" x="63.015" y="23.495" size="1.27" layer="27"/>
 </element>
-<element name="R26" library="rcl" package="R0603" value="10k" x="19.4" y="60" smashed="yes" rot="R90">
+<element name="R26" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k" x="19.4" y="60" smashed="yes" rot="R90">
 <attribute name="NAME" x="18.25" y="60.75" size="1" layer="25" font="vector" rot="R90"/>
-<attribute name="VALUE" x="21.305" y="59.365" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R27" library="rcl" package="R0603" value="10k" x="23.3" y="69.4" smashed="yes" rot="R180">
+<element name="R27" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k" x="23.3" y="69.4" smashed="yes" rot="R180">
 <attribute name="NAME" x="24.535" y="71.465" size="1" layer="25" font="vector" rot="R180"/>
-<attribute name="VALUE" x="23.935" y="71.305" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="C26" library="rcl" package="C0603" value="0.1uF 35V" x="26" y="66.25" smashed="yes" rot="R270">
+<element name="C26" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 35V" x="26" y="66.25" smashed="yes" rot="R270">
 <attribute name="NAME" x="27.75" y="65" size="1" layer="25" font="vector" rot="R90"/>
 </element>
-<element name="C27" library="rcl" package="C0805" value="22uF 35V" x="23.25" y="66.25" smashed="yes" rot="R270">
+<element name="C27" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22uF 35V" x="23.25" y="66.25" smashed="yes" rot="R270">
 <attribute name="NAME" x="22" y="64.5" size="1" layer="25" font="vector" rot="R90"/>
 </element>
-<element name="R39" library="rcl" package="R0603" value="10k" x="66.8" y="13" smashed="yes" rot="R90">
+<element name="R39" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k" x="66.8" y="13" smashed="yes" rot="R90">
 <attribute name="NAME" x="68.925" y="11.5" size="1" layer="25" font="vector" rot="R90"/>
-<attribute name="VALUE" x="68.705" y="12.365" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R40" library="rcl" package="R0603" value="10k" x="64.95" y="25.3" smashed="yes">
+<element name="R40" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k" x="64.95" y="25.3" smashed="yes">
 <attribute name="NAME" x="67.65" y="26.825" size="1" layer="25" font="vector" rot="R270"/>
-<attribute name="VALUE" x="64.315" y="23.395" size="1.27" layer="27"/>
 </element>
-<element name="R32" library="rcl" package="R0805" value="ERJ-6GEYJ515V" x="-4.75" y="54.25" smashed="yes" rot="MR270">
+<element name="R32" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="ERJ-6GEYJ515V" x="-4.75" y="54.25" smashed="yes" rot="MR270">
 <attribute name="NAME" x="-7" y="52.5" size="1" layer="26" font="vector" rot="MR90"/>
-<attribute name="VALUE" x="-2.21" y="54.885" size="1.27" layer="28" rot="MR270"/>
 </element>
-<element name="R30" library="rcl" package="R0603" value="270k" x="-8.1" y="62.5" smashed="yes" rot="MR270">
+<element name="R30" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="270k" x="-8.1" y="62.5" smashed="yes" rot="MR270">
 <attribute name="NAME" x="-10.25" y="61.05" size="1" layer="26" font="vector" rot="MR90"/>
 </element>
-<element name="R31" library="rcl" package="R0603" value="100k" x="-8.1" y="65.8" smashed="yes" rot="MR270">
+<element name="R31" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k" x="-8.1" y="65.8" smashed="yes" rot="MR270">
 <attribute name="NAME" x="-10.25" y="64.35" size="1" layer="26" font="vector" rot="MR90"/>
 </element>
 <element name="Q6" library="RoboJackets-Discrete" package="DPAK" value="AOD1N60" x="1.5" y="55.5" smashed="yes" rot="MR180">
@@ -15041,8 +12803,6 @@ Your Eurocircuits Team
 <attribute name="NAME" x="21.5" y="58" size="1" layer="25" font="vector" rot="R90"/>
 </element>
 <element name="J4" library="RoboJackets-Connectors" package="HFW8R-1ST" value="HFW8R-1ST" x="67" y="39" smashed="yes" rot="R90">
-<attribute name="DIGIKEY" value="609-1788-1-ND" x="67" y="39" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="HFW8R-1STE1LF" x="67" y="39" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="68.5" y="32" size="1" layer="25" font="vector"/>
 </element>
 <element name="D7" library="RoboJackets-Diodes" package="DO214AA" value="3SMBJ5929B-TP" x="1.5" y="65" smashed="yes" rot="MR180">
@@ -15051,21 +12811,17 @@ Your Eurocircuits Team
 <element name="Q5" library="RoboJackets-Discrete" package="SOT-23-3" value="BSS127" x="-5" y="65" smashed="yes" rot="MR90">
 <attribute name="NAME" x="-2.2" y="63.15" size="1" layer="26" font="vector" rot="MR0"/>
 </element>
-<element name="R48" library="rcl" package="R0603" value="51" x="36" y="58.9" smashed="yes" rot="R45">
+<element name="R48" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="51" x="36" y="58.9" smashed="yes" rot="R45">
 <attribute name="NAME" x="33.394453125" y="57.6034625" size="1" layer="25" font="vector" rot="R315"/>
-<attribute name="VALUE" x="36.898025" y="57.103946875" size="1.27" layer="27" rot="R45"/>
 </element>
-<element name="R49" library="rcl" package="R0603" value="10k" x="40.35" y="53.8" smashed="yes" rot="R225">
+<element name="R49" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k" x="40.35" y="53.8" smashed="yes" rot="R225">
 <attribute name="NAME" x="37.509009375" y="50.373221875" size="1" layer="25" font="vector" rot="R45"/>
-<attribute name="VALUE" x="39.451975" y="55.596053125" size="1.27" layer="27" rot="R225"/>
 </element>
-<element name="R51" library="rcl" package="R0603" value="10k" x="57.2" y="5.1" smashed="yes" rot="R180">
+<element name="R51" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k" x="57.2" y="5.1" smashed="yes" rot="R180">
 <attribute name="NAME" x="52.4" y="4.7" size="1" layer="25" font="vector"/>
-<attribute name="VALUE" x="57.835" y="7.005" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R52" library="rcl" package="R0603" value="10k" x="57.2" y="-5.4" smashed="yes" rot="R180">
+<element name="R52" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k" x="57.2" y="-5.4" smashed="yes" rot="R180">
 <attribute name="NAME" x="51.7" y="-5.9" size="1" layer="25" font="vector"/>
-<attribute name="VALUE" x="57.835" y="-3.495" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="Q2" library="RoboJackets-Discrete" package="D2PAK" value="IRFS4227" x="-58.5" y="6.7" smashed="yes">
 <attribute name="NAME" x="-62.5" y="0.2" size="1" layer="25" font="vector" rot="R90"/>
@@ -15073,17 +12829,14 @@ Your Eurocircuits Team
 <element name="S1" library="RoboJackets-Switches" package="CSS-121XB" value="CSS-121XB" x="65" y="51" smashed="yes" rot="R135">
 <attribute name="NAME" x="69.8" y="46.1" size="1" layer="25" font="vector" rot="R135"/>
 </element>
-<element name="R50" library="rcl" package="R0603" value="10k" x="59.35" y="45.85" smashed="yes" rot="R225">
+<element name="R50" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k" x="59.35" y="45.85" smashed="yes" rot="R225">
 <attribute name="NAME" x="60.057109375" y="43.375128125" size="1" layer="25" font="vector" rot="R45"/>
-<attribute name="VALUE" x="58.451975" y="47.646053125" size="1.27" layer="27" rot="R225"/>
 </element>
-<element name="R53" library="rcl" package="R0603" value="10k" x="57.2" y="-15.95" smashed="yes" rot="R180">
+<element name="R53" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k" x="57.2" y="-15.95" smashed="yes" rot="R180">
 <attribute name="NAME" x="51.7" y="-16.45" size="1" layer="25" font="vector"/>
-<attribute name="VALUE" x="57.835" y="-14.045" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R33" library="rcl" package="R0805" value="ERJ-6GEYJ515V" x="-4.75" y="59" smashed="yes" rot="MR270">
+<element name="R33" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="ERJ-6GEYJ515V" x="-4.75" y="59" smashed="yes" rot="MR270">
 <attribute name="NAME" x="-7" y="58" size="1" layer="26" font="vector" rot="MR90"/>
-<attribute name="VALUE" x="-2.21" y="59.635" size="1.27" layer="28" rot="MR270"/>
 </element>
 <element name="S2" library="RoboJackets-Switches" package="HDP001R" value="HDP001R" x="67.5" y="1.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="66" y="-2" size="1" layer="25" font="vector" rot="R180"/>
@@ -15094,17 +12847,14 @@ Your Eurocircuits Team
 <element name="S4" library="RoboJackets-Switches" package="HDP001R" value="HDP001R" x="67.5" y="-19.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="66" y="-23" size="1" layer="25" font="vector" rot="R180"/>
 </element>
-<element name="R38" library="rcl" package="R0603" value="RC0603FR-07102KL" x="51.5" y="-26" smashed="yes">
+<element name="R38" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="RC0603FR-07102KL" x="51.5" y="-26" smashed="yes">
 <attribute name="NAME" x="53.25" y="-24.5" size="1" layer="25" font="vector" rot="R90"/>
-<attribute name="VALUE" x="50.865" y="-27.905" size="1.27" layer="27"/>
 </element>
-<element name="R36" library="rcl" package="R0805" value="ERJ-6GEYJ515V" x="60" y="-26" smashed="yes">
+<element name="R36" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="ERJ-6GEYJ515V" x="60" y="-26" smashed="yes">
 <attribute name="NAME" x="55.75" y="-24.5" size="1" layer="25" font="vector" rot="R90"/>
-<attribute name="VALUE" x="59.365" y="-28.54" size="1.27" layer="27"/>
 </element>
-<element name="R37" library="rcl" package="R0805" value="ERJ-6GEYJ515V" x="55.5" y="-26" smashed="yes">
+<element name="R37" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="ERJ-6GEYJ515V" x="55.5" y="-26" smashed="yes">
 <attribute name="NAME" x="54.5" y="-24.5" size="1" layer="25" font="vector" rot="R90"/>
-<attribute name="VALUE" x="54.865" y="-28.54" size="1.27" layer="27"/>
 </element>
 <element name="J7" library="RoboJackets-Connectors" package="1X2" value="!BTN_KCK_PRE_EXT" x="58" y="-9.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="57.1" y="-13.4" size="1" layer="25" font="vector"/>
@@ -15115,129 +12865,91 @@ Your Eurocircuits Team
 <element name="J9" library="RoboJackets-Connectors" package="1X2" value="!BTN_CHG_PRE_EXT" x="58" y="-20" smashed="yes" rot="R270">
 <attribute name="NAME" x="57.1" y="-23.9" size="1" layer="25" font="vector"/>
 </element>
-<element name="R5" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="110k 1%" x="23.5" y="59.9" smashed="yes" rot="MR90">
+<element name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="110k 1%" x="23.5" y="59.9" smashed="yes" rot="MR90">
 <attribute name="NAME" x="24.585" y="57.235" size="1" layer="26" font="vector" rot="SMR180" align="top-right"/>
 </element>
-<element name="R6" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10k 1%" x="21.2" y="59.9" smashed="yes" rot="MR270">
+<element name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k 1%" x="21.2" y="59.9" smashed="yes" rot="MR270">
 <attribute name="NAME" x="20.435" y="58.265" size="1" layer="26" font="vector" rot="SMR180"/>
 </element>
 <element name="U3" library="RoboJackets-ICs" package="TSSOP-20_EP" value="LT3751FE" x="-55.6" y="-12.6" smashed="yes" rot="R90">
-<attribute name="DKPN" value="LT3751EFE#TRPBFCT-ND" x="-55.6" y="-12.6" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-51" y="-16" size="1" layer="25" font="vector" rot="R90"/>
 </element>
-<element name="R7" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="294k 1%" x="-64.1" y="-19.5" smashed="yes" rot="R90">
+<element name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="294k 1%" x="-64.1" y="-19.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="-63.12" y="-17.235" size="1" layer="25" font="vector" rot="R90"/>
 </element>
-<element name="R8" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="412k 1%" x="-61.6" y="-19.5" smashed="yes" rot="R90">
+<element name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="412k 1%" x="-61.6" y="-19.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="-61.82" y="-17.235" size="1" layer="25" font="vector" rot="R90"/>
 </element>
-<element name="R9" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="294k 1%" x="-59.1" y="-19.5" smashed="yes" rot="R90">
+<element name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="294k 1%" x="-59.1" y="-19.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="-60.52" y="-17.235" size="1" layer="25" font="vector" rot="R90"/>
 </element>
-<element name="R10" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="412k 1%" x="-56.6" y="-19.5" smashed="yes" rot="R90">
+<element name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="412k 1%" x="-56.6" y="-19.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="-59.22" y="-17.235" size="1" layer="25" font="vector" rot="R90"/>
 </element>
-<element name="R16" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R2512" package3d_urn="urn:adsk.eagle:package:23545/2" value="7m 1% &gt;1W" x="-53" y="-6.3" smashed="yes" rot="R180">
+<element name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R2512" package3d_urn="urn:adsk.eagle:package:23545/2" value="7m 1% &gt;1W" x="-53" y="-6.3" smashed="yes" rot="R180">
 <attribute name="NAME" x="-49.06" y="-3.105" size="1" layer="25" font="vector" rot="R180"/>
 </element>
 <element name="C13" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R) 35V" x="-58.1" y="-25.5" smashed="yes" rot="R180">
 <attribute name="NAME" x="-54.205" y="-27.055" size="1" layer="25" font="vector" rot="SR90"/>
-<attribute name="SPICEPREFIX" value="C" x="-58.1" y="-25.5" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R) 35V" x="-65.1" y="-25.5" smashed="yes">
 <attribute name="NAME" x="-67.945" y="-27.045" size="1" layer="25" font="vector" rot="SR90"/>
-<attribute name="SPICEPREFIX" value="C" x="-65.1" y="-25.5" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R) 35V" x="-45.9" y="-8.9" smashed="yes" rot="R90">
 <attribute name="NAME" x="-40.5" y="-11.3" size="1" layer="25" font="vector" rot="R90"/>
-<attribute name="SPICEPREFIX" value="C" x="-45.9" y="-8.9" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="XF1" library="RoboJackets-Fuses" package="3557-2" value="15A" x="-21.3" y="63.9" smashed="yes" rot="R180">
-<attribute name="DIGIKEY" value="36-3557-2-ND" x="-21.3" y="63.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="3557-2" x="-21.3" y="63.9" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="-31.55" y="60.4" size="1" layer="21" font="vector" rot="R90"/>
 </element>
 <element name="U5" library="RoboJackets-ICs" package="QFP80P1200X1200X120-44" value="AT32ATQFP44" x="52.1" y="16" smashed="yes" rot="R270">
 <attribute name="NAME" x="57.6088" y="20.75" size="1" layer="25" font="vector" rot="R90" align="top-left"/>
-<attribute name="VALUE" x="44.9838" y="16" size="1.27" layer="27" rot="R270" align="top-center"/>
 </element>
-<element name="R41" library="rcl" package="R0603" value="1k" x="44.3" y="46.1" smashed="yes" rot="MR0">
+<element name="R41" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k" x="44.3" y="46.1" smashed="yes" rot="MR0">
 <attribute name="NAME" x="46.46" y="45.34" size="1" layer="26" font="vector" rot="MR90"/>
-<attribute name="VALUE" x="44.935" y="44.195" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="R42" library="rcl" package="R0603" value="330" x="46.6" y="46.1" smashed="yes">
+<element name="R42" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="330" x="46.6" y="46.1" smashed="yes">
 <attribute name="NAME" x="50.04" y="44.89" size="1" layer="25" font="vector" rot="R90"/>
-<attribute name="VALUE" x="45.965" y="44.195" size="1.27" layer="27"/>
 </element>
 <element name="D8" library="RoboJackets-LEDs" package="CHIP-LED0603" value="GREEN" x="43.6" y="49.5" smashed="yes">
-<attribute name="DIGIKEY" value="160-1446-1-ND" x="43.6" y="49.5" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="LTST-C191KGKT" x="43.6" y="49.5" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="42.74" y="51.885" size="1" layer="25" font="vector"/>
-<attribute name="VALUE" x="45.505" y="48.865" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="D10" library="RoboJackets-LEDs" package="CHIP-LED0603" value="GREEN" x="45.4" y="49.5" smashed="yes">
-<attribute name="DIGIKEY" value="160-1446-1-ND" x="45.4" y="49.5" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="LTST-C191KGKT" x="45.4" y="49.5" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="47.86" y="52.915" size="1" layer="25" font="vector" rot="R180"/>
-<attribute name="VALUE" x="47.305" y="48.865" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="D19" library="RoboJackets-LEDs" package="CHIP-LED0603" value="RED" x="10.7" y="72.7" smashed="yes" rot="R90">
-<attribute name="DIGIKEY" value="160-1447-1-ND" x="-5.8" y="67.7" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="LTST-C191KRKT" x="-5.8" y="67.7" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="9.81" y="68.215" size="1" layer="25" font="vector" rot="SR180" align="top-right"/>
-<attribute name="VALUE" x="11.335" y="74.605" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="Q9" library="RoboJackets-Discrete" package="SOT-23-3" value="BSS127" x="18.4" y="74.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="17.85" y="71.55" size="1" layer="25" font="vector"/>
 </element>
 <element name="R45" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="330" x="14.7" y="72.7" smashed="yes">
 <attribute name="NAME" x="13.135" y="69.015" size="1" layer="25" font="vector" rot="SR180" align="top-right"/>
-<attribute name="SPICEPREFIX" value="R" x="4.2" y="78.7" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="14.065" y="70.795" size="1.27" layer="27"/>
 </element>
 <element name="Q8" library="RoboJackets-Discrete" package="SOT-23-3" value="BSS127" x="24.4" y="74.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="26.7" y="72.5" size="1" layer="25" font="vector" rot="R180"/>
 </element>
 <element name="R44" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k" x="21.4" y="73.7" smashed="yes" rot="R270">
 <attribute name="NAME" x="20.415" y="75.56" size="1" layer="25" font="vector"/>
-<attribute name="SPICEPREFIX" value="R" x="21.4" y="73.7" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="19.495" y="74.335" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="D20" library="RoboJackets-LEDs" package="CHIP-LED0603" value="YELLOW" x="4.8" y="62.9" smashed="yes" rot="R180">
-<attribute name="DIGIKEY" value="160-1448-1-ND" x="10.3" y="53.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="LTST-C191KSKT" x="10.3" y="53.9" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="3.44" y="66.285" size="1" layer="25" font="vector"/>
-<attribute name="VALUE" x="2.895" y="63.535" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="R46" library="rcl" package="R0805" value="ERJ-P06J274V" x="7.9" y="61.8" smashed="yes" rot="R270">
+<element name="R46" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="ERJ-P06J274V" x="7.9" y="61.8" smashed="yes" rot="R270">
 <attribute name="NAME" x="10.13" y="60.04" size="1" layer="25" font="vector" rot="R90"/>
-<attribute name="VALUE" x="5.36" y="62.435" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="D16" library="RoboJackets-LEDs" package="CHIP-LED0603" value="GREEN" x="64.1" y="18.6" smashed="yes" rot="R180">
-<attribute name="DIGIKEY" value="160-1446-1-ND" x="69.6" y="20.6" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="LTST-C191KGKT" x="69.6" y="20.6" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="64.565" y="20.465" size="1" layer="25" font="vector" rot="R90"/>
-<attribute name="VALUE" x="62.195" y="19.235" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="D18" library="RoboJackets-LEDs" package="CHIP-LED0603" value="RED" x="68.1" y="18.6" smashed="yes" rot="R180">
-<attribute name="DIGIKEY" value="160-1447-1-ND" x="68.1" y="18.6" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="LTST-C191KRKT" x="68.1" y="18.6" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="68.565" y="20.465" size="1" layer="25" font="vector" rot="R90"/>
-<attribute name="VALUE" x="66.195" y="19.235" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="D11" library="RoboJackets-LEDs" package="CHIP-LED0603" value="RED" x="29.5" y="74.5" smashed="yes" rot="R180">
-<attribute name="DIGIKEY" value="160-1447-1-ND" x="29.5" y="74.5" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="LTST-C191KRKT" x="29.5" y="74.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="28.51" y="72.885" size="1" layer="25" font="vector" rot="R270"/>
 </element>
 <element name="D9" library="RoboJackets-LEDs" package="CHIP-LED0603" value="RED" x="28" y="74.5" smashed="yes" rot="R180">
-<attribute name="DIGIKEY" value="160-1447-1-ND" x="28" y="74.5" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="LTST-C191KRKT" x="28" y="74.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="27.26" y="72.885" size="1" layer="25" font="vector" rot="R270"/>
 </element>
 <element name="D12" library="RoboJackets-LEDs" package="CHIP-LED0603" value="YELLOW" x="31" y="74.5" smashed="yes" rot="R180">
-<attribute name="DIGIKEY" value="160-1448-1-ND" x="31" y="74.5" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="LTST-C191KSKT" x="31" y="74.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="29.76" y="72.885" size="1" layer="25" font="vector" rot="R270"/>
 </element>
 <element name="Q7" library="RoboJackets-Discrete" package="SOT-23-3" value="BSS127" x="-4.8" y="74.1" smashed="yes" rot="R270">
@@ -15257,81 +12969,59 @@ Your Eurocircuits Team
 </element>
 <element name="R28" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="160" x="16.4" y="66.1" smashed="yes" rot="R90">
 <attribute name="NAME" x="13.93" y="64.73" size="1" layer="25" font="vector" rot="R90"/>
-<attribute name="SPICEPREFIX" value="R" x="16.4" y="66.1" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="18.94" y="64.83" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="R29" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="160" x="19.6" y="66.1" smashed="yes" rot="R90">
 <attribute name="NAME" x="14.195" y="67.47" size="1" layer="25" font="vector" rot="R270"/>
-<attribute name="SPICEPREFIX" value="R" x="19.6" y="66.1" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="22.14" y="64.83" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C28" library="rcl" package="C0603" value="0.1uF 50V" x="12.1" y="67.4" smashed="yes" rot="MR0">
+<element name="C28" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 50V" x="12.1" y="67.4" smashed="yes" rot="MR0">
 <attribute name="NAME" x="10.715" y="66.14" size="1" layer="26" font="vector" rot="MR180"/>
-<attribute name="VALUE" x="12.735" y="65.495" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="C29" library="rcl" package="C0603" value="0.1uF 50V" x="23.9" y="67.4" smashed="yes" rot="MR180">
+<element name="C29" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 50V" x="23.9" y="67.4" smashed="yes" rot="MR180">
 <attribute name="NAME" x="25.765" y="68.265" size="1" layer="26" font="vector" rot="MR180"/>
-<attribute name="VALUE" x="23.265" y="69.305" size="1.27" layer="28" rot="MR180"/>
 </element>
 <element name="D4" library="RoboJackets-Diodes" package="RESM5226X262" value="SMAJ20A" x="19.6" y="65" smashed="yes" rot="MR90">
 <attribute name="NAME" x="18.155" y="59.275" size="1" layer="26" font="vector" rot="MR270" align="top-right"/>
-<attribute name="VALUE" x="17.505" y="65" size="1.27" layer="28" rot="MR90" align="top-center"/>
 </element>
 <element name="D3" library="RoboJackets-Diodes" package="RESM5226X262" value="SMAJ20A" x="16.4" y="65" smashed="yes" rot="MR90">
 <attribute name="NAME" x="13.68" y="66.25" size="1" layer="26" font="vector" rot="MR270" align="top-left"/>
-<attribute name="VALUE" x="14.305" y="65" size="1.27" layer="28" rot="MR90" align="top-center"/>
 </element>
 <element name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" package="EB25D" package3d_urn="urn:adsk.eagle:package:23399/1" value="1000uF" x="43" y="-59.5" smashed="yes">
 <attribute name="NAME" x="42.1774" y="-46.35" size="1" layer="25" font="vector"/>
-<attribute name="SPICEPREFIX" value="C" x="43" y="-59.5" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" package="EB25D" package3d_urn="urn:adsk.eagle:package:23399/1" value="1000uF" x="61" y="-41" smashed="yes" rot="R270">
 <attribute name="NAME" x="47.6774" y="-41.975" size="1" layer="25" font="vector" rot="R90"/>
-<attribute name="SPICEPREFIX" value="C" x="61" y="-41" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" package="EB25D" package3d_urn="urn:adsk.eagle:package:23399/1" value="1000uF" x="-43" y="-59.5" smashed="yes" rot="R180">
 <attribute name="NAME" x="-41.5524" y="-45.275" size="1" layer="25" font="vector" rot="R180"/>
-<attribute name="SPICEPREFIX" value="C" x="-43" y="-59.5" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="-37.9454" y="-53.785" size="1.778" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" package="EB25D" package3d_urn="urn:adsk.eagle:package:23399/1" value="1000uF" x="-61" y="-41" smashed="yes" rot="R270">
 <attribute name="NAME" x="-46.775" y="-42.0726" size="1" layer="25" font="vector" rot="R90"/>
-<attribute name="SPICEPREFIX" value="C" x="-61" y="-41" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="-66.715" y="-35.9454" size="1.778" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="R34" library="RoboJackets-Resistors" package="TO508P1539X450-3" value="1.5k 35W" x="9" y="46" smashed="yes" rot="MR180">
 <attribute name="NAME" x="6.5" y="39.4751" size="1" layer="26" font="vector" rot="MR180" align="top-left"/>
-<attribute name="VALUE" x="9" y="52.0249" size="1.27" layer="28" rot="MR180" align="top-center"/>
 </element>
 <element name="J6" library="RoboJackets-Connectors" package="2MM-3-H" value="3-PIN_2MM-H" x="42" y="59.5" smashed="yes" rot="R135">
 <attribute name="NAME" x="43.13223125" y="54.83223125" size="1" layer="25" font="vector" rot="R135" align="bottom-center"/>
-<attribute name="PINS" value="3" x="42" y="59.5" size="1.778" layer="27" rot="R135" display="off"/>
-<attribute name="PIN_PITCH" value="2.0 mm" x="42" y="59.5" size="1.778" layer="27" rot="R135" display="off"/>
 </element>
 <element name="J5" library="RoboJackets-Connectors" package="2MM-2-H" value="2-PIN_2MM-H" x="36" y="65.5" smashed="yes" rot="R135">
 <attribute name="NAME" x="31.325125" y="66.9393375" size="1" layer="25" font="vector" rot="R135" align="bottom-center"/>
-<attribute name="PINS" value="2" x="36" y="65.5" size="1.778" layer="27" rot="R135" display="off"/>
-<attribute name="PIN_PITCH" value="2.0 mm" x="36" y="65.5" size="1.778" layer="27" rot="R135" display="off"/>
 </element>
-<element name="R47" library="rcl" package="R0603" value="160" x="60.8" y="19.2" smashed="yes" rot="R180">
+<element name="R47" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="160" x="60.8" y="19.2" smashed="yes" rot="R180">
 <attribute name="NAME" x="62.411778125" y="18.134671875" size="1" layer="25" font="vector" rot="R180"/>
-<attribute name="VALUE" x="61.435" y="21.105003125" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="D21" library="RoboJackets-LEDs" package="CHIP-LED0603" value="BLUE" x="52" y="59.5" smashed="yes" rot="R315">
-<attribute name="DIGIKEY" value="160-1647-1-ND" x="52" y="59.5" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="MPN" value="LTST-C191TBKT" x="52" y="59.5" size="1.778" layer="27" rot="R315" display="off"/>
 <attribute name="NAME" x="52.375" y="61.598025" size="1" layer="25" font="vector" rot="R315"/>
 </element>
-<element name="R11" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="25.5k 1%" x="-66.6" y="-19.5" smashed="yes" rot="R270">
+<element name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="25.5k 1%" x="-66.6" y="-19.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="-65.58" y="-17.215" size="1" layer="25" font="vector" rot="R270" align="top-right"/>
 </element>
-<element name="R13" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="11.5k 1%" x="-62.6" y="-7.1" smashed="yes" rot="R270">
+<element name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="11.5k 1%" x="-62.6" y="-7.1" smashed="yes" rot="R270">
 <attribute name="NAME" x="-65.18" y="-9.015" size="1" layer="25" font="vector" rot="R270" align="top-right"/>
 </element>
-<element name="R14" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="25.5k 1%" x="-60.4" y="-7.1" smashed="yes" rot="R270">
+<element name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="25.5k 1%" x="-60.4" y="-7.1" smashed="yes" rot="R270">
 <attribute name="NAME" x="-63.88" y="-9.015" size="1" layer="25" font="vector" rot="R270" align="top-right"/>
 </element>
-<element name="R12" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1.02k 1%" x="-60.3" y="-11.6" smashed="yes" rot="R270">
+<element name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1.02k 1%" x="-60.3" y="-11.6" smashed="yes" rot="R270">
 <attribute name="NAME" x="-61.58" y="-13.615" size="1" layer="25" font="vector" rot="R270" align="top-right"/>
 </element>
 <element name="U$1" library="RoboJackets-Aesthetics" package="WARNING2" value="" x="-31.5" y="-20.5" smashed="yes" rot="R90"/>
@@ -15341,261 +13031,173 @@ Your Eurocircuits Team
 <element name="U$5" library="RoboJackets-Aesthetics" package="ROBOBUZZ_0.6X" value="" x="45" y="-28" smashed="yes"/>
 <element name="Q10" library="RoboJackets-Discrete" package="SOT95P240X110-3" value="BSS806NSOT-23-3" x="38.2" y="56" smashed="yes" rot="R45">
 <attribute name="NAME" x="36.780440625" y="54.040878125" size="1" layer="25" font="vector" rot="R45" align="top-right"/>
-<attribute name="VALUE" x="39.758178125" y="54.44181875" size="1.27" layer="27" rot="R45" align="top-center"/>
 </element>
-<element name="U2" library="RoboJackets-PowerICs" package="SOT95P280X145-5" value="15V" x="26.6" y="59.9" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="26.6" y="57.6964" size="1.27" layer="28" rot="MR0" align="top-center"/>
-</element>
+<element name="U2" library="RoboJackets-PowerICs" package="SOT95P280X145-5" value="15V" x="26.6" y="59.9" smashed="yes" rot="MR0"/>
 <element name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF 50V" x="27.7" y="63.6" smashed="yes" rot="MR90">
 <attribute name="NAME" x="26.835" y="65.235" size="1" layer="26" font="vector" rot="MR90"/>
-<attribute name="SPICEPREFIX" value="C" x="27.7" y="63.6" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="VALUE" x="25.795" y="62.965" size="1.27" layer="28" rot="MR90"/>
 </element>
 <element name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="2.2uF 35V" x="23.5" y="63.2" smashed="yes" rot="MR90">
 <attribute name="NAME" x="22.635" y="64.835" size="1" layer="26" font="vector" rot="MR90"/>
-<attribute name="SPICEPREFIX" value="C" x="23.5" y="63.2" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="VALUE" x="21.595" y="62.565" size="1.27" layer="28" rot="MR90"/>
 </element>
 <element name="D17" library="RoboJackets-LEDs" package="CHIP-LED0603" value="YELLOW" x="66.1" y="18.6" smashed="yes" rot="R180">
-<attribute name="DIGIKEY" value="160-1448-1-ND" x="66.1" y="18.6" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="LTST-C191KSKT" x="66.1" y="18.6" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="66.565" y="20.465" size="1" layer="25" font="vector" rot="R90"/>
-<attribute name="VALUE" x="64.195" y="19.235" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C33" library="rcl" package="C0603" value="0.1uF" x="51.8" y="7.7" smashed="yes">
+<element name="C33" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="51.8" y="7.7" smashed="yes">
 <attribute name="NAME" x="50.06" y="7.04" size="1" layer="25" font="vector" rot="R180"/>
-<attribute name="VALUE" x="51.165" y="5.795" size="1.27" layer="27"/>
 </element>
 <element name="Q4" library="RoboJackets-Discrete" package="TO264" value="IXGK400N30A3" x="16" y="49" smashed="yes" rot="R90">
 <attribute name="NAME" x="-7.99" y="59.79" size="1.27" layer="25"/>
-<attribute name="VALUE" x="-1.78" y="40.11" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="Q3" library="RoboJackets-Discrete" package="TO264" value="IXGK400N30A3" x="-5.5" y="49" smashed="yes" rot="R270">
 <attribute name="NAME" x="10.71" y="59.89" size="1.27" layer="25"/>
-<attribute name="VALUE" x="12.28" y="57.89" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="R15" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="22" x="-65.2" y="16.4" smashed="yes" rot="R180">
+<element name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="22" x="-65.2" y="16.4" smashed="yes" rot="R180">
 <attribute name="NAME" x="-67.17" y="14.17" size="1" layer="25" font="vector"/>
 </element>
 <element name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R) 35V" x="-48" y="-14" smashed="yes" rot="R270">
 <attribute name="NAME" x="-41.8" y="-14.3" size="1" layer="25" font="vector" rot="R90"/>
-<attribute name="SPICEPREFIX" value="C" x="-48" y="-14" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="-51.175" y="-12.095" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C14" library="rcl" package="C0603" value="0.1uF 35V" x="-48.5" y="-9.9" smashed="yes" rot="R90">
+<element name="C14" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 35V" x="-48.5" y="-9.9" smashed="yes" rot="R90">
 <attribute name="NAME" x="-41.785" y="-11.285" size="1" layer="25" font="vector" rot="R90"/>
-<attribute name="VALUE" x="-46.595" y="-10.535" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C16" library="rcl" package="C0603" value="0.1uF 35V" x="-50.6" y="-9.9" smashed="yes" rot="R90">
+<element name="C16" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 35V" x="-50.6" y="-9.9" smashed="yes" rot="R90">
 <attribute name="NAME" x="-43.1" y="-11.3" size="1" layer="25" font="vector" rot="R90"/>
-<attribute name="VALUE" x="-48.695" y="-10.535" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="U1" library="RoboJackets-PowerICs" package="MPM3620GQV-P" value="MPM3620GQV-P" x="43" y="39.4" smashed="yes">
 <attribute name="NAME" x="41.5" y="35.65" size="1" layer="25" font="vector"/>
-<attribute name="VALUE" x="41.5" y="36.65" size="1" layer="27" align="top-left"/>
 </element>
 <element name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10uF 50V" x="45" y="43.9" smashed="yes">
 <attribute name="NAME" x="48.93" y="42.23" size="1.016" layer="25" font="vector" rot="R90"/>
-<attribute name="SPICEPREFIX" value="C" x="45" y="43.9" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="43.73" y="41.36" size="1.27" layer="27"/>
 </element>
 <element name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k" x="41.3" y="45.3" smashed="yes" rot="R270">
 <attribute name="NAME" x="40.165" y="46.435" size="0.8128" layer="25" font="vector"/>
-<attribute name="SPICEPREFIX" value="R" x="41.3" y="45.3" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="39.395" y="45.935" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="43.2k 1%" x="42" y="43.4" smashed="yes" rot="MR0">
 <attribute name="NAME" x="42.935" y="44.435" size="0.8128" layer="26" font="vector" rot="MR0"/>
-<attribute name="SPICEPREFIX" value="R" x="42" y="43.4" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="VALUE" x="42.635" y="41.495" size="1.27" layer="28" rot="MR0"/>
 </element>
 <element name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="160k 1%" x="39.8" y="42.05" smashed="yes" rot="R90">
 <attribute name="NAME" x="38.865" y="41.415" size="0.8128" layer="25" font="vector" rot="R90"/>
-<attribute name="SPICEPREFIX" value="R" x="39.8" y="42.05" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="41.705" y="41.415" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="30.1k 1%" x="39.8" y="38.8" smashed="yes" rot="R90">
 <attribute name="NAME" x="38.865" y="37.665" size="0.8128" layer="25" font="vector" rot="R90"/>
-<attribute name="SPICEPREFIX" value="R" x="39.8" y="38.8" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="41.705" y="38.165" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="22uF 10V" x="46" y="39.4" smashed="yes" rot="R90">
 <attribute name="NAME" x="48.965" y="39.065" size="1.016" layer="25" font="vector" rot="R90"/>
-<attribute name="SPICEPREFIX" value="C" x="46" y="39.4" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="47.905" y="38.765" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="113k 0.1%" x="-43" y="-18" smashed="yes" rot="R180">
 <attribute name="NAME" x="-43.365" y="-19.135" size="1" layer="25" font="vector" rot="R180"/>
-<attribute name="SPICEPREFIX" value="R" x="-43" y="-18" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="-42.365" y="-16.095" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="R19" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="3.0k 0.1%" x="-52.1" y="-18.2" smashed="yes" rot="R180">
 <attribute name="NAME" x="-50.76" y="-19.385" size="1" layer="25" font="vector" rot="R180"/>
-<attribute name="SPICEPREFIX" value="R" x="-52.1" y="-18.2" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="-51.465" y="-16.295" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="D13" library="RoboJackets-LEDs" package="CHIP-LED0603" value="YELLOW" x="32.5" y="74.5" smashed="yes" rot="R180">
-<attribute name="DIGIKEY" value="160-1448-1-ND" x="38" y="66" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="LTST-C191KSKT" x="38" y="66" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="31.01" y="72.885" size="1" layer="25" rot="R270"/>
-<attribute name="VALUE" x="36.095" y="66.635" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="D14" library="RoboJackets-LEDs" package="CHIP-LED0603" value="BLUE" x="34" y="74.5" smashed="yes" rot="R180">
-<attribute name="DIGIKEY" value="160-1647-1-ND" x="39" y="68.5" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="LTST-C191TBKT" x="39" y="68.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="32.26" y="72.885" size="1" layer="25" rot="R270"/>
-<attribute name="VALUE" x="37.095" y="69.135" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="R20" library="rcl" package="R0603" value="100k" x="55.7" y="49.2" smashed="yes" rot="R270">
+<element name="R20" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k" x="55.7" y="49.2" smashed="yes" rot="R270">
 <attribute name="NAME" x="54.76" y="47.135" size="1" layer="25" font="vector" rot="R270"/>
-<attribute name="VALUE" x="53.795" y="49.835" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="R21" library="rcl" package="R0603" value="100k" x="58" y="49.2" smashed="yes" rot="R270">
+<element name="R21" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k" x="58" y="49.2" smashed="yes" rot="R270">
 <attribute name="NAME" x="56.06" y="47.085" size="1" layer="25" font="vector" rot="R270"/>
-<attribute name="VALUE" x="56.095" y="49.835" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="R22" library="rcl" package="R0603" value="160" x="42.5" y="26.3" smashed="yes" rot="R90">
+<element name="R22" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="160" x="42.5" y="26.3" smashed="yes" rot="R90">
 <attribute name="NAME" x="43.14" y="30.24" size="1" layer="25" font="vector" rot="R90"/>
-<attribute name="VALUE" x="44.405" y="25.665" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R23" library="rcl" package="R0603" value="160" x="39.9" y="26.3" smashed="yes" rot="R90">
+<element name="R23" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="160" x="39.9" y="26.3" smashed="yes" rot="R90">
 <attribute name="NAME" x="41.815" y="30.24" size="1" layer="25" font="vector" rot="R90"/>
-<attribute name="VALUE" x="41.805" y="25.665" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C18" library="rcl" package="C0603" value="1uF" x="39.9" y="22.7" smashed="yes" rot="R270">
+<element name="C18" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF" x="39.9" y="22.7" smashed="yes" rot="R270">
 <attribute name="NAME" x="39.435" y="20.135" size="1" layer="25" font="vector" rot="R270"/>
-<attribute name="VALUE" x="37.995" y="23.335" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C17" library="rcl" package="C0603" value="1uF" x="42.5" y="22.7" smashed="yes" rot="R270">
+<element name="C17" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF" x="42.5" y="22.7" smashed="yes" rot="R270">
 <attribute name="NAME" x="42.06" y="20.135" size="1" layer="25" font="vector" rot="R270"/>
-<attribute name="VALUE" x="40.595" y="23.335" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="R25" library="rcl" package="R0603" value="160" x="45.1" y="23.3" smashed="yes" rot="R90">
+<element name="R25" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="160" x="45.1" y="23.3" smashed="yes" rot="R90">
 <attribute name="NAME" x="47.365" y="21.84" size="1" layer="25" font="vector" rot="R90"/>
-<attribute name="VALUE" x="47.005" y="22.665" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C22" library="rcl" package="C0603" value="1uF" x="45.6" y="26.2" smashed="yes">
+<element name="C22" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF" x="45.6" y="26.2" smashed="yes">
 <attribute name="NAME" x="45.915" y="27.465" size="1" layer="25" font="vector" rot="R90"/>
-<attribute name="VALUE" x="44.965" y="24.295" size="1.27" layer="27"/>
 </element>
-<element name="R24" library="rcl" package="R0603" value="100k" x="53.4" y="49.2" smashed="yes" rot="R90">
+<element name="R24" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k" x="53.4" y="49.2" smashed="yes" rot="R90">
 <attribute name="NAME" x="54.465" y="44.365" size="1" layer="25" font="vector" rot="R90"/>
-<attribute name="VALUE" x="55.305" y="48.565" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="C19" library="rcl" library_urn="urn:adsk.eagle:library:334" package="E7,5-18" package3d_urn="urn:adsk.eagle:package:23379/1" value="560uF" x="-43.6" y="55.2" smashed="yes" rot="R45">
 <attribute name="NAME" x="-49.101996875" y="47.57809375" size="1" layer="25" font="vector" rot="R135"/>
-<attribute name="SPICEPREFIX" value="C" x="-43.6" y="55.2" size="1.778" layer="27" rot="R45" display="off"/>
-<attribute name="VALUE" x="-44.156775" y="48.57256875" size="1.778" layer="27" ratio="10" rot="R45"/>
 </element>
 <element name="C21" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R)" x="-18.5" y="55.1" smashed="yes" rot="R135">
 <attribute name="NAME" x="-18.100003125" y="52.305928125" size="1" layer="25" font="vector" rot="R135"/>
-<attribute name="SPICEPREFIX" value="C" x="-18.5" y="55.1" size="1.778" layer="27" rot="R135" display="off"/>
-<attribute name="VALUE" x="-14.90789375" y="55.9980375" size="1.27" layer="27" rot="R135"/>
 </element>
-<element name="C15" library="rcl" package="C0603" value="0.1uF 35V" x="-58.1" y="-22.75" smashed="yes" rot="R180">
+<element name="C15" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 35V" x="-58.1" y="-22.75" smashed="yes" rot="R180">
 <attribute name="NAME" x="-54.185" y="-24.085" size="1" layer="25" font="vector" rot="R90"/>
-<attribute name="VALUE" x="-57.465" y="-20.845" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="C9" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="220pF 100V" x="-67.1" y="19.6" smashed="yes" rot="R90">
+<element name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="220pF 100V" x="-67.1" y="19.6" smashed="yes" rot="R90">
 <attribute name="NAME" x="-69.33" y="20.37" size="1" layer="25" font="vector" rot="R270"/>
-<attribute name="VALUE" x="-64.56" y="18.33" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="C23" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R)" x="-55.4" y="47.4" smashed="yes" rot="R90">
 <attribute name="NAME" x="-54.1" y="50.1" size="1" layer="25" font="vector" rot="R90"/>
-<attribute name="SPICEPREFIX" value="C" x="-55.4" y="47.4" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="-52.224996875" y="45.49500625" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="D1" library="RoboJackets-Diodes" package="SOD123-W" value="PTVS20VS1UR" x="-16.4" y="57" smashed="yes" rot="R135">
 <attribute name="NAME" x="-13.9490125" y="57.956915625" size="1" layer="25" font="vector" rot="R135"/>
-<attribute name="VALUE" x="-12.358884375" y="58.34704375" size="1.27" layer="27" rot="R135"/>
 </element>
 <element name="T1" library="RoboJackets-Inductors" package="DA2034" value="DA203X-ALDA2034" x="-54.9" y="29.4" smashed="yes" rot="R270">
 <attribute name="NAME" x="-44.4" y="39.9" size="1.27" layer="25" rot="R270"/>
 </element>
 <element name="C20" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R)" x="-65" y="47.4" smashed="yes" rot="R90">
 <attribute name="NAME" x="-63.8" y="50.1" size="1" layer="25" font="vector" rot="R90"/>
-<attribute name="SPICEPREFIX" value="C" x="-65" y="47.4" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="-61.825" y="45.495" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="C24" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R)" x="-61.8" y="47.4" smashed="yes" rot="R90">
 <attribute name="NAME" x="-60.6" y="50.1" size="1" layer="25" font="vector" rot="R90"/>
-<attribute name="SPICEPREFIX" value="C" x="-61.8" y="47.4" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="-58.625" y="45.495" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="C25" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R)" x="-58.6" y="47.4" smashed="yes" rot="R90">
 <attribute name="NAME" x="-57.4" y="50.1" size="1" layer="25" font="vector" rot="R90"/>
-<attribute name="SPICEPREFIX" value="C" x="-58.6" y="47.4" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="-55.425" y="45.495" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="C35" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="49.7" y="31.4" smashed="yes" rot="R270">
 <attribute name="NAME" x="47.235" y="33.035" size="1" layer="25" font="vector" rot="R270"/>
-<attribute name="SPICEPREFIX" value="C" x="49.7" y="31.4" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="47.795" y="32.035" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="C34" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="64.4" y="31.4" smashed="yes" rot="R270">
 <attribute name="NAME" x="65.635" y="32.835" size="1" layer="25" font="vector" rot="R270"/>
-<attribute name="SPICEPREFIX" value="C" x="64.4" y="31.4" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="62.495" y="32.035" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="C37" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="49.7" y="28" smashed="yes" rot="R90">
 <attribute name="NAME" x="48.365" y="26.665" size="1" layer="25" font="vector" rot="R90"/>
-<attribute name="SPICEPREFIX" value="C" x="49.7" y="28" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="51.605" y="27.365" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="C36" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="64.4" y="28" smashed="yes" rot="R90">
 <attribute name="NAME" x="66.965" y="26.665" size="1" layer="25" font="vector" rot="R90"/>
-<attribute name="SPICEPREFIX" value="C" x="64.4" y="28" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="66.305" y="27.365" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="U7" library="RoboJackets-ICs" package="SOP63P574X165-16" value="ADUM7441CRQZ-RL7" x="53.9" y="29.7" smashed="yes" rot="R270">
-<attribute name="DATA_RATE" value="25 Mbps" x="53.9" y="29.7" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DIGIKEY_PN" value="ADUM7441CRQZ-RL7CT-ND" x="53.9" y="29.7" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MANUFACTURER" value="ANALOG DEVICES" x="53.9" y="29.7" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="56.3186" y="35.1" size="1" layer="25" font="vector" rot="R270"/>
-<attribute name="VALUE" x="50.5214" y="31.7" size="1" layer="27" font="vector" rot="R270" align="top-left"/>
 </element>
 <element name="U6" library="RoboJackets-ICs" package="SOP63P574X165-16" value="ADUM7441ARQZ-RL7" x="60.2" y="29.7" smashed="yes" rot="R270">
-<attribute name="DATA_RATE" value="1 Mbps" x="60.2" y="29.7" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DIGIKEY_PN" value="ADUM7441ARQZ-RL7CT-ND" x="60.2" y="29.7" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MANUFACTURER" value="ANALOG DEVICES" x="60.2" y="29.7" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="58.6186" y="35.1" size="1" layer="25" font="vector" rot="R270"/>
-<attribute name="VALUE" x="56.8214" y="31.7" size="1" layer="27" font="vector" rot="R270" align="top-left"/>
 </element>
 <element name="RN1" library="RoboJackets-Resistors" package="RA-8_2506" value="330" x="62.1" y="10.8" smashed="yes" rot="R90">
-<attribute name="DIGIKEY" value="742C163331JPCT-ND" x="62.1" y="10.8" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="742C163331JP" x="62.1" y="10.8" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="63.478" y="7.276" size="1" layer="25" font="vector" rot="R180"/>
-<attribute name="VALUE" x="64.894" y="7.422" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C31" library="rcl" package="C0603" value="0.1uF" x="51.6" y="24.1" smashed="yes">
+<element name="C31" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="51.6" y="24.1" smashed="yes">
 <attribute name="NAME" x="53.365" y="23.735" size="1" layer="25" font="vector"/>
-<attribute name="VALUE" x="50.965" y="22.195" size="1.27" layer="27"/>
 </element>
-<element name="C30" library="rcl" package="C0603" value="0.1uF" x="60.8" y="15.6" smashed="yes" rot="R180">
+<element name="C30" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF" x="60.8" y="15.6" smashed="yes" rot="R180">
 <attribute name="NAME" x="63.265" y="14.635" size="1" layer="25" font="vector"/>
-<attribute name="VALUE" x="61.435" y="17.505" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="RV1" library="RoboJackets-Resistors" package="PVG3G" value="500" x="33.8" y="61.5" smashed="yes" rot="R45">
-<attribute name="DIGIKEY_LINK" value="https://www.digikey.com/product-detail/en/bourns-inc/PVG3G501C01R00/PVG3G501C01R00CT-ND/6613133" x="33.8" y="61.5" size="1.778" layer="27" rot="R45" display="off"/>
-<attribute name="DIGIKEY_PN" value="PVG3G501C01R00CT-ND" x="33.8" y="61.5" size="1.778" layer="27" rot="R45" display="off"/>
-<attribute name="MANUFACTURER" value="Bourns" x="33.8" y="61.5" size="1.778" layer="27" rot="R45" display="off"/>
-<attribute name="MPN" value="PVG3" x="33.8" y="61.5" size="1.778" layer="27" rot="R45" display="off"/>
 <attribute name="NAME" x="33.835353125" y="58.56550625" size="1" layer="21" font="vector" rot="R135"/>
 </element>
 <element name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="505k 0.1%" x="-39.7" y="-18" smashed="yes" rot="R180">
 <attribute name="NAME" x="-38.965" y="-19.135" size="1.016" layer="25" font="vector" rot="R180"/>
-<attribute name="SPICEPREFIX" value="R" x="-39.7" y="-18" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="-39.065" y="-16.095" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="C38" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 50V" x="-9.3" y="59.5" smashed="yes" rot="MR180">
 <attribute name="NAME" x="-13.735" y="59.465" size="1" layer="26" font="vector" rot="MR180"/>
-<attribute name="SPICEPREFIX" value="C" x="-9.3" y="59.5" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="VALUE" x="-9.935" y="61.405" size="1.27" layer="28" rot="MR180"/>
 </element>
-<element name="R54" library="rcl" package="R0603" value="ERJ-6GEYJ106V" x="-9.3" y="56.9" smashed="yes" rot="MR180">
+<element name="R54" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="ERJ-6GEYJ106V" x="-9.3" y="56.9" smashed="yes" rot="MR180">
 <attribute name="NAME" x="-13.735" y="57.165" size="1" layer="26" font="vector" rot="MR180"/>
 <attribute name="VALUE" x="-9.935" y="58.805" size="1.27" layer="28" rot="MR180"/>
 </element>
+<element name="U$6" library="RoboJackets-Aesthetics" package="WARNING2" value="" x="31.5" y="-20.5" smashed="yes" rot="MR90"/>
+<element name="U$7" library="RoboJackets-Aesthetics" package="WARNING2" value="" x="31.5" y="18" smashed="yes" rot="MR90"/>
+<element name="U$8" library="RoboJackets-Aesthetics" package="WARNING2" value="" x="-31.5" y="22" smashed="yes" rot="MR270"/>
+<element name="U$9" library="RoboJackets-Aesthetics" package="WARNING2" value="" x="-31.5" y="-16.5" smashed="yes" rot="MR270"/>
+<element name="U$10" library="RoboJackets-Aesthetics" package="ROBOBUZZ_0.6X" value="" x="45" y="-28" smashed="yes" rot="MR0"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -18083,16 +15685,9 @@ Your Eurocircuits Team
 </mfgpreviewcolors>
 <errors>
 <approved hash="23,1,aa4b89b78a97a96b"/>
-<approved hash="23,16,b1bfbfbe835801df"/>
 <approved hash="23,1,f05e524233243f27"/>
 <approved hash="23,1,ecf903170004efea"/>
-<approved hash="23,1,ca1e053bc54182e3"/>
-<approved hash="23,1,07e7c97d05bc4670"/>
-<approved hash="23,1,1be54eff0a40d38c"/>
-<approved hash="23,16,3b8e454e87b806f2"/>
-<approved hash="23,1,776987491a811bd4"/>
 <approved hash="23,16,5192aa6eaa0e51f2"/>
-<approved hash="23,1,fd1da961a8e0fc9c"/>
 <approved hash="23,1,7f4b82b78d957069"/>
 </errors>
 </board>
