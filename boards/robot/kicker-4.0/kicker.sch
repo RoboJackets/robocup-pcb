@@ -2143,15 +2143,19 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 Source: https://assets.nexperia.com/documents/data-sheet/PTVSXS1UR_SER.pdf ..SOD123-W 22.2V Voltage Suppressor. Data Sheet
 Digi-Key: 1727-5865-1-ND</description>
 <wire x1="1.4" y1="0.95" x2="1.4" y2="-0.95" width="0.1016" layer="21"/>
-<wire x1="1.4" y1="-0.95" x2="-1.4" y2="-0.95" width="0.1016" layer="21"/>
+<wire x1="1.4" y1="-0.95" x2="-0.6" y2="-0.95" width="0.1016" layer="21"/>
+<wire x1="-0.6" y1="-0.95" x2="-1.4" y2="-0.95" width="0.1016" layer="21"/>
 <wire x1="-1.4" y1="-0.95" x2="-1.4" y2="0.95" width="0.1016" layer="21"/>
-<wire x1="-1.4" y1="0.95" x2="1.4" y2="0.95" width="0.1016" layer="21"/>
+<wire x1="-1.4" y1="0.95" x2="-0.6" y2="0.95" width="0.1016" layer="21"/>
 <smd name="C" x="-1.4" y="0" dx="1.2" dy="1.2" layer="1"/>
 <smd name="A" x="1.4" y="0" dx="1.2" dy="1.2" layer="1" rot="R180"/>
 <text x="-1.905" y="2.54" size="1.27" layer="25">&gt;NAME</text>
 <text x="-1.905" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-2" y1="-0.525" x2="-1.4" y2="0.525" layer="52"/>
 <rectangle x1="1.4" y1="-0.525" x2="2" y2="0.525" layer="52"/>
+<wire x1="-0.6" y1="0.95" x2="1.4" y2="0.95" width="0.1016" layer="21"/>
+<wire x1="-0.6" y1="-0.95" x2="-0.6" y2="0.95" width="0.1016" layer="21"/>
+<wire x1="-0.6" y1="-0.95" x2="-0.6" y2="0.95" width="0.1016" layer="21"/>
 </package>
 <package name="R0201">
 <description>&lt;b&gt;Chip TVS Diode, 0201 EIA (0603 Metric)&lt;/b&gt;</description>
@@ -3277,26 +3281,6 @@ In this library you will find all the connectors used on any of our boards.
 <pad name="3" x="2" y="0" drill="0.8" rot="R180"/>
 <text x="-5" y="3.5" size="1" layer="25" font="vector">&gt;NAME</text>
 </package>
-<package name="1X2">
-<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
-<pad name="1" x="-1.27" y="0" drill="1.016" diameter="2" shape="octagon" rot="R90"/>
-<pad name="2" x="1.27" y="0" drill="1.016" diameter="2" shape="octagon" rot="R90"/>
-<text x="-2.5" y="1.5" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
 </packages>
 <symbols>
 <symbol name="2-PIN_CONN">
@@ -3352,16 +3336,6 @@ In this library you will find all the connectors used on any of our boards.
 <wire x1="2.54" y1="-7.62" x2="2.54" y2="7.62" width="0.254" layer="94"/>
 <wire x1="2.54" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
-</symbol>
-<symbol name="PINHD2">
-<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="1.27" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="5.08" x2="-6.35" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="-6.35" y1="5.08" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
-<text x="-6.35" y="5.715" size="1.778" layer="95">&gt;NAME</text>
-<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="2" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3515,22 +3489,6 @@ Power Connector
 <attribute name="PINS" value="3"/>
 <attribute name="PIN_PITCH" value="2.0 mm"/>
 </technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="CONN-2" prefix="J" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="PINHD2" x="0" y="0"/>
-</gates>
-<devices>
-<device name="VERT" package="1X2">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -4538,20 +4496,18 @@ In this library you will find switches and other mechanical assisted circuit ele
 <wire x1="-2.175" y1="-0.1" x2="2.175" y2="-0.1" width="0.2" layer="21"/>
 <text x="-5" y="0" size="1" layer="25" rot="R90">&gt;NAME</text>
 </package>
-<package name="HDP001R">
-<smd name="C" x="-3.65" y="0" dx="1.7" dy="1.6" layer="1"/>
-<smd name="D" x="3.65" y="0" dx="1.7" dy="1.6" layer="1"/>
-<hole x="0" y="1.2" drill="1.1"/>
-<hole x="0" y="-1.2" drill="1.1"/>
-<smd name="A" x="-1.75" y="-3.85" dx="1.8" dy="1.5" layer="1"/>
-<smd name="B" x="1.75" y="-3.85" dx="1.8" dy="1.5" layer="1"/>
-<wire x1="-2.85" y1="2.25" x2="2.85" y2="2.25" width="0.5" layer="21"/>
-<wire x1="2.85" y1="-2.65" x2="-2.85" y2="-2.65" width="0.5" layer="21"/>
-<wire x1="-2.85" y1="-2.65" x2="-2.85" y2="-1.25" width="0.5" layer="21"/>
-<wire x1="2.85" y1="-1.25" x2="2.85" y2="-2.65" width="0.5" layer="21"/>
-<wire x1="2.85" y1="2.25" x2="2.85" y2="1.35" width="0.5" layer="21"/>
-<wire x1="-2.85" y1="1.35" x2="-2.85" y2="2.25" width="0.5" layer="21"/>
-<text x="3.5" y="-1.5" size="1" layer="25" rot="R270">&gt;NAME</text>
+<package name="KMR2">
+<wire x1="-2.3" y1="1.4" x2="2.3" y2="1.4" width="0.127" layer="21"/>
+<wire x1="2.3" y1="1.4" x2="2.3" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="2.3" y1="-1.4" x2="-2.3" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="-2.3" y1="-1.4" x2="-2.3" y2="1.4" width="0.127" layer="21"/>
+<smd name="1.1" x="-2.05" y="0.8" dx="0.9" dy="1" layer="1"/>
+<smd name="2.1" x="-2.05" y="-0.8" dx="0.9" dy="1" layer="1"/>
+<smd name="2.2" x="2.05" y="-0.8" dx="0.9" dy="1" layer="1"/>
+<smd name="1.2" x="2.05" y="0.8" dx="0.9" dy="1" layer="1"/>
+<text x="-2.54" y="1.905" size="1" layer="25" ratio="10">&gt;NAME</text>
+<text x="0" y="-1.905" size="1" layer="21" ratio="20" align="top-center">&gt;FUNCTION</text>
+<rectangle x1="-2.286" y1="-1.397" x2="2.286" y2="1.397" layer="39"/>
 </package>
 </packages>
 <symbols>
@@ -4567,20 +4523,19 @@ In this library you will find switches and other mechanical assisted circuit ele
 <pin name="LEG1" x="-2.54" y="-2.54" visible="off" length="short" rot="R90"/>
 <pin name="LEG2" x="2.54" y="-2.54" visible="off" length="short" rot="R90"/>
 </symbol>
-<symbol name="SPST-4PIN-NO">
-<wire x1="-2.54" y1="0" x2="2.54" y2="2.54" width="0.254" layer="94"/>
-<pin name="A1" x="-10.16" y="2.54" visible="off" length="middle"/>
-<pin name="B1" x="10.16" y="2.54" visible="off" length="middle" rot="R180"/>
-<text x="-5.08" y="5.08" size="1.778" layer="95" font="vector" align="top-left">&gt;NAME</text>
-<text x="-5.08" y="-5.08" size="1.778" layer="96" font="vector">&gt;VALUE</text>
-<pin name="A2" x="-10.16" y="-2.54" visible="off" length="middle"/>
-<pin name="B2" x="10.16" y="-2.54" visible="off" length="middle" rot="R180"/>
-<wire x1="-5.08" y1="2.54" x2="-5.08" y2="0" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="0" width="0.254" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="0" width="0.254" layer="94"/>
-<wire x1="5.08" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-2.54" x2="5.08" y2="0" width="0.254" layer="94"/>
+<symbol name="TS2">
+<wire x1="1.905" y1="3.429" x2="1.905" y2="2.159" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="3.429" x2="-1.905" y2="2.159" width="0.254" layer="94"/>
+<wire x1="1.905" y1="3.429" x2="-1.905" y2="3.429" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="1.905" y2="1.27" width="0.254" layer="94"/>
+<circle x="-2.54" y="0" radius="0.127" width="0.4064" layer="94"/>
+<circle x="2.54" y="0" radius="0.127" width="0.4064" layer="94"/>
+<text x="-5.08" y="3.81" size="2.54" layer="95" font="vector">&gt;NAME</text>
+<text x="0" y="-1.27" size="2.54" layer="96" font="vector" ratio="15" align="top-center">&gt;VALUE</text>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<wire x1="0" y1="0.762" x2="0" y2="3.302" width="0.254" layer="94" style="shortdash"/>
+<text x="0" y="-4.318" size="1.27" layer="97" ratio="10" align="top-center">&gt;FUNCTION</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -4604,20 +4559,20 @@ In this library you will find switches and other mechanical assisted circuit ele
 </device>
 </devices>
 </deviceset>
-<deviceset name="HDP001?" prefix="S">
+<deviceset name="KMR2" prefix="S">
 <gates>
-<gate name="G$1" symbol="SPST-4PIN-NO" x="0" y="0"/>
+<gate name="G$1" symbol="TS2" x="0" y="0"/>
 </gates>
 <devices>
-<device name="R" package="HDP001R">
+<device name="" package="KMR2">
 <connects>
-<connect gate="G$1" pin="A1" pad="A"/>
-<connect gate="G$1" pin="A2" pad="C"/>
-<connect gate="G$1" pin="B1" pad="B"/>
-<connect gate="G$1" pin="B2" pad="D"/>
+<connect gate="G$1" pin="1" pad="1.1 1.2"/>
+<connect gate="G$1" pin="2" pad="2.1 2.2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="FUNCTION" value="Reset" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -21465,9 +21420,6 @@ In this library you will find inductors. If you are looking for a common package
 <part name="R53" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k"/>
 <part name="SUPPLY108" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="R33" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="ERJ-6GEYJ515V"/>
-<part name="S2" library="RoboJackets-Switches" deviceset="HDP001?" device="R"/>
-<part name="S3" library="RoboJackets-Switches" deviceset="HDP001?" device="R"/>
-<part name="S4" library="RoboJackets-Switches" deviceset="HDP001?" device="R"/>
 <part name="SUPPLY107" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY105" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY109" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
@@ -21476,12 +21428,6 @@ In this library you will find inductors. If you are looking for a common package
 <part name="SUPPLY60" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="V+" device=""/>
 <part name="R36" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="ERJ-6GEYJ515V"/>
 <part name="R37" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="ERJ-6GEYJ515V"/>
-<part name="J7" library="RoboJackets-Connectors" deviceset="CONN-2" device="VERT" value="!BTN_KCK_PRE_EXT"/>
-<part name="J8" library="RoboJackets-Connectors" deviceset="CONN-2" device="VERT" value="!BTN_CHP_PRE_EXT"/>
-<part name="J9" library="RoboJackets-Connectors" deviceset="CONN-2" device="VERT" value="!BTN_CHG_PRE_EXT"/>
-<part name="SUPPLY97" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="SUPPLY98" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="SUPPLY99" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY10" library="RoboJackets-Supplies" deviceset="VBATT" device=""/>
 <part name="SUPPLY21" library="RoboJackets-Supplies" deviceset="VBATT" device=""/>
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="110k 1%"/>
@@ -21659,6 +21605,15 @@ In this library you will find inductors. If you are looking for a common package
 <part name="R54" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="ERJ-6GEYJ106V"/>
 <part name="SUPPLY111" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY112" library="RoboJackets-Supplies" deviceset="VBATT" device=""/>
+<part name="S4" library="RoboJackets-Switches" deviceset="KMR2" device="">
+<attribute name="FUNCTION" value="Charge"/>
+</part>
+<part name="S3" library="RoboJackets-Switches" deviceset="KMR2" device="">
+<attribute name="FUNCTION" value="Kick"/>
+</part>
+<part name="S2" library="RoboJackets-Switches" deviceset="KMR2" device="">
+<attribute name="FUNCTION" value="Chip"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -24919,16 +24874,11 @@ Vmon is adjusted to have the max typical voltage of around 2.5V</text>
 <wire x1="91.44" y1="157.48" x2="91.44" y2="200.66" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="91.44" y1="200.66" x2="15.24" y2="200.66" width="0.1524" layer="97" style="shortdash"/>
 <text x="20.32" y="195.58" size="1.27" layer="97">Debug Mode Select</text>
-<wire x1="104.14" y1="200.66" x2="104.14" y2="121.92" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="104.14" y1="121.92" x2="226.06" y2="121.92" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="226.06" y1="121.92" x2="226.06" y2="200.66" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="104.14" y1="200.66" x2="104.14" y2="127" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="104.14" y1="127" x2="226.06" y2="127" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="226.06" y1="127" x2="226.06" y2="200.66" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="226.06" y1="200.66" x2="104.14" y2="200.66" width="0.1524" layer="97" style="shortdash"/>
 <text x="109.22" y="195.58" size="1.27" layer="97">Chip/Kick Switch</text>
-<wire x1="15.24" y1="144.78" x2="91.44" y2="144.78" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="91.44" y1="144.78" x2="91.44" y2="76.2" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="91.44" y1="76.2" x2="15.24" y2="76.2" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="15.24" y1="76.2" x2="15.24" y2="144.78" width="0.1524" layer="97" style="shortdash"/>
-<text x="20.32" y="139.7" size="1.27" layer="97">Solder-in Debug Lines</text>
 </plain>
 <instances>
 <instance part="FRAME9" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -24987,47 +24937,26 @@ Vmon is adjusted to have the max typical voltage of around 2.5V</text>
 <instance part="SUPPLY108" gate="+5V" x="203.2" y="182.88" smashed="yes">
 <attribute name="VALUE" x="201.295" y="186.055" size="1.778" layer="96"/>
 </instance>
-<instance part="S2" gate="G$1" x="137.16" y="147.32" smashed="yes" rot="R270">
-<attribute name="NAME" x="142.24" y="152.4" size="1.778" layer="95" font="vector" rot="R270" align="top-left"/>
-<attribute name="VALUE" x="132.08" y="152.4" size="1.778" layer="96" font="vector" rot="R270"/>
+<instance part="SUPPLY107" gate="GND" x="167.64" y="142.24" smashed="yes">
+<attribute name="VALUE" x="165.735" y="139.065" size="1.778" layer="96"/>
 </instance>
-<instance part="S3" gate="G$1" x="170.18" y="147.32" smashed="yes" rot="R270">
-<attribute name="NAME" x="175.26" y="152.4" size="1.778" layer="95" font="vector" rot="R270" align="top-left"/>
-<attribute name="VALUE" x="165.1" y="152.4" size="1.778" layer="96" font="vector" rot="R270"/>
+<instance part="SUPPLY105" gate="GND" x="134.62" y="142.24" smashed="yes">
+<attribute name="VALUE" x="132.715" y="139.065" size="1.778" layer="96"/>
 </instance>
-<instance part="S4" gate="G$1" x="205.74" y="147.32" smashed="yes" rot="R270">
-<attribute name="NAME" x="210.82" y="152.4" size="1.778" layer="95" font="vector" rot="R270" align="top-left"/>
-<attribute name="VALUE" x="200.66" y="152.4" size="1.778" layer="96" font="vector" rot="R270"/>
+<instance part="SUPPLY109" gate="GND" x="203.2" y="142.24" smashed="yes">
+<attribute name="VALUE" x="201.295" y="139.065" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY107" gate="GND" x="172.72" y="132.08" smashed="yes">
-<attribute name="VALUE" x="170.815" y="128.905" size="1.778" layer="96"/>
+<instance part="S4" gate="G$1" x="203.2" y="152.4" smashed="yes" rot="R90">
+<attribute name="NAME" x="199.39" y="147.32" size="2.54" layer="95" font="vector" rot="R90"/>
+<attribute name="FUNCTION" x="204.978" y="152.4" size="1.27" layer="97" ratio="10" rot="R90" align="top-center"/>
 </instance>
-<instance part="SUPPLY105" gate="GND" x="139.7" y="132.08" smashed="yes">
-<attribute name="VALUE" x="137.795" y="128.905" size="1.778" layer="96"/>
+<instance part="S3" gate="G$1" x="167.64" y="152.4" smashed="yes" rot="R90">
+<attribute name="NAME" x="163.83" y="147.32" size="2.54" layer="95" font="vector" rot="R90"/>
+<attribute name="FUNCTION" x="169.418" y="152.4" size="1.27" layer="97" ratio="10" rot="R90" align="top-center"/>
 </instance>
-<instance part="SUPPLY109" gate="GND" x="208.28" y="132.08" smashed="yes">
-<attribute name="VALUE" x="206.375" y="128.905" size="1.778" layer="96"/>
-</instance>
-<instance part="J7" gate="G$1" x="55.88" y="121.92" smashed="yes">
-<attribute name="NAME" x="49.53" y="127.635" size="1.778" layer="95"/>
-<attribute name="VALUE" x="49.53" y="116.84" size="1.778" layer="96"/>
-</instance>
-<instance part="J8" gate="G$1" x="55.88" y="106.68" smashed="yes">
-<attribute name="NAME" x="49.53" y="112.395" size="1.778" layer="95"/>
-<attribute name="VALUE" x="49.53" y="101.6" size="1.778" layer="96"/>
-</instance>
-<instance part="J9" gate="G$1" x="55.88" y="91.44" smashed="yes">
-<attribute name="NAME" x="49.53" y="97.155" size="1.778" layer="95"/>
-<attribute name="VALUE" x="49.53" y="86.36" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY97" gate="GND" x="45.72" y="116.84" smashed="yes">
-<attribute name="VALUE" x="43.815" y="113.665" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY98" gate="GND" x="45.72" y="101.6" smashed="yes">
-<attribute name="VALUE" x="43.815" y="98.425" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY99" gate="GND" x="45.72" y="86.36" smashed="yes">
-<attribute name="VALUE" x="43.815" y="83.185" size="1.778" layer="96"/>
+<instance part="S2" gate="G$1" x="134.62" y="152.4" smashed="yes" rot="R90">
+<attribute name="NAME" x="130.81" y="147.32" size="2.54" layer="95" font="vector" rot="R90"/>
+<attribute name="FUNCTION" x="136.398" y="152.4" size="1.27" layer="97" ratio="10" rot="R90" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -25051,37 +24980,19 @@ Vmon is adjusted to have the max typical voltage of around 2.5V</text>
 <wire x1="81.28" y1="180.34" x2="81.28" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="S4" gate="G$1" pin="B1"/>
 <pinref part="SUPPLY109" gate="GND" pin="GND"/>
-<wire x1="208.28" y1="137.16" x2="208.28" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="147.32" x2="203.2" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="S4" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="S2" gate="G$1" pin="B1"/>
 <pinref part="SUPPLY105" gate="GND" pin="GND"/>
-<wire x1="139.7" y1="137.16" x2="139.7" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="147.32" x2="134.62" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="S2" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="S3" gate="G$1" pin="B1"/>
 <pinref part="SUPPLY107" gate="GND" pin="GND"/>
-<wire x1="172.72" y1="137.16" x2="172.72" y2="134.62" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="J7" gate="G$1" pin="2"/>
-<pinref part="SUPPLY97" gate="GND" pin="GND"/>
-<wire x1="53.34" y1="121.92" x2="45.72" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="121.92" x2="45.72" y2="119.38" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="J8" gate="G$1" pin="2"/>
-<pinref part="SUPPLY98" gate="GND" pin="GND"/>
-<wire x1="53.34" y1="106.68" x2="45.72" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="106.68" x2="45.72" y2="104.14" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="J9" gate="G$1" pin="2"/>
-<pinref part="SUPPLY99" gate="GND" pin="GND"/>
-<wire x1="53.34" y1="91.44" x2="45.72" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="91.44" x2="45.72" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="147.32" x2="167.64" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="S3" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -25128,13 +25039,8 @@ Vmon is adjusted to have the max typical voltage of around 2.5V</text>
 <wire x1="167.64" y1="160.02" x2="162.56" y2="160.02" width="0.1524" layer="91"/>
 <junction x="167.64" y="160.02"/>
 <label x="162.56" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="S3" gate="G$1" pin="A2"/>
 <wire x1="167.64" y1="157.48" x2="167.64" y2="160.02" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="53.34" y1="124.46" x2="45.72" y2="124.46" width="0.1524" layer="91"/>
-<label x="45.72" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J7" gate="G$1" pin="1"/>
+<pinref part="S3" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="!BTN_CHP" class="0">
@@ -25144,13 +25050,8 @@ Vmon is adjusted to have the max typical voltage of around 2.5V</text>
 <wire x1="134.62" y1="160.02" x2="129.54" y2="160.02" width="0.1524" layer="91"/>
 <junction x="134.62" y="160.02"/>
 <label x="129.54" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="S2" gate="G$1" pin="A2"/>
 <wire x1="134.62" y1="157.48" x2="134.62" y2="160.02" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<label x="45.72" y="109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J8" gate="G$1" pin="1"/>
-<wire x1="53.34" y1="109.22" x2="45.72" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="S2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="!BTN_CHG" class="0">
@@ -25160,13 +25061,8 @@ Vmon is adjusted to have the max typical voltage of around 2.5V</text>
 <wire x1="203.2" y1="160.02" x2="198.12" y2="160.02" width="0.1524" layer="91"/>
 <junction x="203.2" y="160.02"/>
 <label x="198.12" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="S4" gate="G$1" pin="A2"/>
 <wire x1="203.2" y1="157.48" x2="203.2" y2="160.02" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<label x="45.72" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J9" gate="G$1" pin="1"/>
-<wire x1="53.34" y1="93.98" x2="45.72" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="S4" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
