@@ -24745,8 +24745,8 @@ Vmon is adjusted to have the max typical voltage of around 2.5V</text>
 <attribute name="NAME" x="43.18" y="172.72" size="1.778" layer="95" align="top-left"/>
 <attribute name="VALUE" x="43.18" y="170.18" size="1.778" layer="96" align="top-left"/>
 </instance>
-<instance part="J8" gate="A" x="73.66" y="129.54" smashed="yes">
-<attribute name="NAME" x="77.8256" y="132.3086" size="2.0828" layer="95" ratio="6" rot="SR0"/>
+<instance part="J8" gate="A" x="78.74" y="160.02" smashed="yes" rot="R90">
+<attribute name="NAME" x="75.9714" y="164.1856" size="2.0828" layer="95" ratio="6" rot="SR90"/>
 </instance>
 </instances>
 <busses>
@@ -24755,11 +24755,18 @@ Vmon is adjusted to have the max typical voltage of around 2.5V</text>
 <net name="GND" class="0">
 <segment>
 <pinref part="SUPPLY95" gate="GND" pin="GND"/>
-<wire x1="101.6" y1="160.02" x2="104.14" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="160.02" x2="104.14" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="149.86" x2="104.14" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="149.86" x2="104.14" y2="149.86" width="0.1524" layer="91"/>
-<junction x="104.14" y="149.86"/>
+<pinref part="J8" gate="A" pin="3"/>
+<wire x1="104.14" y1="149.86" x2="91.44" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="149.86" x2="88.9" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="149.86" x2="83.82" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="149.86" x2="83.82" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="J8" gate="A" pin="S1"/>
+<wire x1="88.9" y1="160.02" x2="88.9" y2="149.86" width="0.1524" layer="91"/>
+<junction x="88.9" y="149.86"/>
+<pinref part="J8" gate="A" pin="S2"/>
+<wire x1="91.44" y1="160.02" x2="91.44" y2="149.86" width="0.1524" layer="91"/>
+<junction x="91.44" y="149.86"/>
 </segment>
 <segment>
 <pinref part="SUPPLY94" gate="GND" pin="GND"/>
@@ -24770,11 +24777,13 @@ Vmon is adjusted to have the max typical voltage of around 2.5V</text>
 <net name="BB_RX" class="0">
 <segment>
 <pinref part="R10" gate="G$1" pin="1"/>
-<wire x1="101.6" y1="154.94" x2="109.22" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="154.94" x2="109.22" y2="165.1" width="0.1524" layer="91"/>
 <junction x="109.22" y="154.94"/>
 <label x="114.3" y="154.94" size="1.778" layer="95" xref="yes"/>
 <wire x1="109.22" y1="154.94" x2="114.3" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="J8" gate="A" pin="4"/>
+<wire x1="109.22" y1="154.94" x2="86.36" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="154.94" x2="86.36" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -24800,15 +24809,19 @@ Vmon is adjusted to have the max typical voltage of around 2.5V</text>
 <segment>
 <wire x1="58.42" y1="149.86" x2="58.42" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="Q4" gate="G$1" pin="D"/>
-<wire x1="53.34" y1="149.86" x2="58.42" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="J8" gate="A" pin="2"/>
+<wire x1="58.42" y1="149.86" x2="81.28" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="149.86" x2="81.28" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BB_TX_CL" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="58.42" y1="154.94" x2="58.42" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="154.94" x2="58.42" y2="154.94" width="0.1524" layer="91"/>
 <label x="58.42" y="154.94" size="1.778" layer="95"/>
+<wire x1="58.42" y1="154.94" x2="78.74" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="J8" gate="A" pin="1"/>
+<wire x1="78.74" y1="154.94" x2="78.74" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
