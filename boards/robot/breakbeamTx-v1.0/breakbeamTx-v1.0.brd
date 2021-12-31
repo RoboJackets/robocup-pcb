@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -186,34 +186,18 @@
 </layers>
 <board>
 <plain>
-<wire x1="-43.18" y1="-85.09" x2="-43.18" y2="38.1" width="0.1524" layer="20"/>
-<wire x1="-43.18" y1="38.1" x2="35.56" y2="38.1" width="0.1524" layer="20"/>
-<wire x1="35.56" y1="38.1" x2="35.56" y2="-85.09" width="0.1524" layer="20"/>
-<wire x1="35.56" y1="-85.09" x2="-43.18" y2="-85.09" width="0.1524" layer="20"/>
-<text x="-12" y="-62" size="3.81" layer="21">+</text>
-<text x="2" y="-60" size="3.81" layer="21">_</text>
+<text x="0.5" y="12.6" size="3.81" layer="21" rot="R270">+</text>
+<text x="13" y="12" size="3.81" layer="21">_</text>
+<wire x1="0" y1="0" x2="18" y2="0" width="0.1524" layer="20"/>
+<wire x1="18" y1="0" x2="18" y2="26" width="0.1524" layer="20"/>
+<wire x1="18" y1="26" x2="0" y2="26" width="0.1524" layer="20"/>
+<wire x1="0" y1="26" x2="0" y2="0" width="0.1524" layer="20"/>
+<hole x="4" y="14" drill="3"/>
+<hole x="15" y="14" drill="3"/>
+<hole x="15" y="3" drill="3"/>
+<text x="2.5" y="16.8" size="1" layer="25" font="vector" ratio="10">J1</text>
 </plain>
 <libraries>
-<library name="RoboJackets-Connectors">
-<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
-&lt;hr&gt;
-&lt;h1&gt;RoboJackets EAGLE Libraries - Connectors&lt;/h1&gt;&lt;/br&gt;
-&lt;p&gt;
-In this library you will find all the connectors used on any of our boards.
-&lt;/p&gt;</description>
-<packages>
-<package name="0353630260">
-<pad name="P$1" x="0" y="-2" drill="0.8"/>
-<pad name="P$2" x="2" y="-2" drill="0.8" shape="square"/>
-<wire x1="-3" y1="6" x2="5" y2="6" width="0.127" layer="21"/>
-<wire x1="5" y1="6" x2="5" y2="-4" width="0.127" layer="21"/>
-<wire x1="5" y1="-4" x2="-3" y2="-4" width="0.127" layer="21"/>
-<wire x1="-3" y1="-4" x2="-3" y2="6" width="0.127" layer="21"/>
-<text x="-2.54" y="7.62" size="1.27" layer="25">&gt;Name</text>
-<text x="-2.54" y="-6.35" size="1.27" layer="27">&gt;Value</text>
-</package>
-</packages>
-</library>
 <library name="RoboJackets-LEDs">
 <description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
 &lt;hr&gt;
@@ -224,10 +208,50 @@ In this library you will find LEDs and other visual output devices.
 <packages>
 <package name="OP293B">
 <circle x="0" y="0" radius="5.97" width="0.127" layer="21"/>
-<pad name="P$1" x="1.27" y="0" drill="0.6" shape="square"/>
-<pad name="P$2" x="-1.27" y="0" drill="0.6"/>
+<pad name="P$1" x="1.27" y="0" drill="0.8" shape="square"/>
+<pad name="P$2" x="-1.27" y="0" drill="0.8"/>
 <text x="-3" y="7" size="1.27" layer="25">&gt;Name</text>
 <text x="-3" y="-8" size="1.27" layer="27">&gt;Value</text>
+</package>
+<package name="LED0603">
+<description>0603 LED</description>
+<wire x1="0.477" y1="0.4" x2="-0.423" y2="0.4" width="0.05" layer="51"/>
+<wire x1="0.477" y1="-0.4" x2="-0.423" y2="-0.4" width="0.05" layer="51"/>
+<smd name="C" x="0.775" y="0" dx="0.8" dy="0.8" layer="1" rot="R270"/>
+<smd name="A" x="-0.775" y="0" dx="0.8" dy="0.8" layer="1" rot="R270"/>
+<text x="0" y="0.75" size="1" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.75" size="1" layer="27" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
+<polygon width="0.05" layer="21">
+<vertex x="-0.173" y="0.3"/>
+<vertex x="0.227" y="0"/>
+<vertex x="-0.173" y="-0.3"/>
+</polygon>
+<wire x1="-1.3" y1="-0.5" x2="-1.3" y2="0.5" width="0.05" layer="39"/>
+<wire x1="-1.3" y1="0.5" x2="1.3" y2="0.5" width="0.05" layer="39"/>
+<wire x1="1.3" y1="0.5" x2="1.3" y2="-0.5" width="0.05" layer="39"/>
+<wire x1="1.3" y1="-0.5" x2="-1.3" y2="-0.5" width="0.05" layer="39"/>
+</package>
+</packages>
+</library>
+<library name="RoboJackets-Connectors">
+<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
+&lt;hr&gt;
+&lt;h1&gt;RoboJackets EAGLE Libraries - Connectors&lt;/h1&gt;&lt;/br&gt;
+&lt;p&gt;
+In this library you will find all the connectors used on any of our boards.
+&lt;/p&gt;</description>
+<packages>
+<package name="0436500213">
+<smd name="P$1" x="-5.385" y="0" dx="3.43" dy="1.65" layer="1"/>
+<smd name="P$2" x="5.385" y="0" dx="3.43" dy="1.65" layer="1"/>
+<smd name="1" x="-1.5" y="5.47" dx="2.92" dy="1.27" layer="1" rot="R90"/>
+<smd name="2" x="1.5" y="5.47" dx="2.92" dy="1.27" layer="1" rot="R90"/>
+<wire x1="-5" y1="-3" x2="-5" y2="5.4" width="0.127" layer="21"/>
+<wire x1="-5" y1="5.4" x2="5" y2="5.4" width="0.127" layer="21"/>
+<wire x1="5" y1="5.4" x2="5" y2="-3" width="0.127" layer="21"/>
+<wire x1="5" y1="-3" x2="-5" y2="-3" width="0.127" layer="21"/>
+<text x="-5.08" y="7.62" size="1.27" layer="21">&gt;Name</text>
+<text x="-5.08" y="-5.08" size="1.27" layer="21">&gt;Value</text>
 </package>
 </packages>
 </library>
@@ -424,26 +448,35 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="J1" library="RoboJackets-Connectors" package="0353630260" value="0353630260" x="-5.08" y="26.48" smashed="yes">
-<attribute name="NAME" x="-7.62" y="34.1" size="1.27" layer="25"/>
-<attribute name="VALUE" x="-7.62" y="20.13" size="1.27" layer="27"/>
+<element name="D1" library="RoboJackets-LEDs" package="OP293B" value="LED-OP293B" x="8" y="7" smashed="yes">
+<attribute name="NAME" x="2" y="2" size="1" layer="25" font="vector" ratio="10"/>
 </element>
-<element name="D1" library="RoboJackets-LEDs" package="OP293B" value="LED-OP293B" x="-3.81" y="-66.04" smashed="yes">
-<attribute name="NAME" x="-6.81" y="-59.04" size="1.27" layer="25"/>
-<attribute name="VALUE" x="-6.81" y="-74.04" size="1.27" layer="27"/>
+<element name="J1" library="RoboJackets-Connectors" package="0436500213" value="0436500213" x="9.5" y="22" smashed="yes" rot="R180"/>
+<element name="D2" library="RoboJackets-LEDs" package="LED0603" value="LED-SMD" x="16" y="8" smashed="yes" rot="R90">
+<attribute name="DKPN" value="" x="16" y="8" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="15.25" y="8" size="1" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
 </element>
 </elements>
 <signals>
-<signal name="TX">
-<contactref element="J1" pad="P$1"/>
-<contactref element="D1" pad="P$2"/>
-<wire x1="-5.08" y1="-66.04" x2="-5.08" y2="24.48" width="0.3" layer="1"/>
-</signal>
 <signal name="GND">
 <contactref element="D1" pad="P$1"/>
-<contactref element="J1" pad="P$2"/>
-<wire x1="-3.08" y1="24.48" x2="-3.08" y2="-65.5" width="0.3" layer="1"/>
-<wire x1="-3.08" y1="-65.5" x2="-2.54" y2="-66.04" width="0.3" layer="1"/>
+<contactref element="J1" pad="1"/>
+<wire x1="9.27" y1="7" x2="11" y2="8.73" width="0.3" layer="1"/>
+<wire x1="11" y1="8.73" x2="11" y2="16.53" width="0.3" layer="1"/>
+<contactref element="D2" pad="C"/>
+<wire x1="16" y1="8.775" x2="14.225" y2="7" width="0.3" layer="1"/>
+<wire x1="14.225" y1="7" x2="9.27" y2="7" width="0.3" layer="1"/>
+</signal>
+<signal name="N$1">
+<contactref element="J1" pad="2" route="any" routetag="G$1.2"/>
+<contactref element="D2" pad="A"/>
+<contactref element="D1" pad="P$2"/>
+<wire x1="8" y1="16.53" x2="8" y2="8.27" width="0.3" layer="1"/>
+<wire x1="8" y1="8.27" x2="6.73" y2="7" width="0.3" layer="1"/>
+<wire x1="6.73" y1="7" x2="7.53434375" y2="7" width="0.3" layer="1"/>
+<wire x1="7.53434375" y1="7" x2="8.49074375" y2="6.0436" width="0.3" layer="1"/>
+<wire x1="8.49074375" y1="6.0436" x2="14.8186" y2="6.0436" width="0.3" layer="1"/>
+<wire x1="14.8186" y1="6.0436" x2="16" y2="7.225" width="0.3" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
