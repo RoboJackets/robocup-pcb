@@ -1773,6 +1773,76 @@ CABLE</text>
 <rectangle x1="0" y1="0" x2="0.7" y2="4.2" layer="1"/>
 <rectangle x1="9" y1="0" x2="9.7" y2="4.2" layer="1"/>
 </package>
+<package name="CON_436500217_MOL">
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.524" shape="square"/>
+<pad name="2" x="-2.9972" y="0" drill="1.016" diameter="1.524"/>
+<pad name="M1" x="2.9972" y="-1.9558" drill="1.27" diameter="1.27"/>
+<pad name="M2" x="-5.9944" y="-1.9558" drill="1.27" diameter="1.27"/>
+<wire x1="3.5814" y1="0" x2="5.1054" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="5.1054" y1="0.635" x2="5.1054" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="5.1054" y1="-0.635" x2="3.5814" y2="0" width="0.1524" layer="51"/>
+<wire x1="-6.3246" y1="-2.4638" x2="3.3274" y2="-2.4638" width="0.1524" layer="51"/>
+<wire x1="3.3274" y1="-2.4638" x2="3.3274" y2="3.0988" width="0.1524" layer="51"/>
+<wire x1="3.3274" y1="3.0988" x2="-6.3246" y2="3.0988" width="0.1524" layer="51"/>
+<wire x1="-6.3246" y1="3.0988" x2="-6.3246" y2="-2.4638" width="0.1524" layer="51"/>
+<wire x1="3.5814" y1="0" x2="5.1054" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="5.1054" y1="0.635" x2="5.1054" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="5.1054" y1="-0.635" x2="3.5814" y2="0" width="0.1524" layer="21"/>
+<wire x1="-6.3246" y1="3.0988" x2="-6.3246" y2="-1.0668" width="0.1524" layer="21"/>
+<wire x1="-5.207" y1="-2.4638" x2="2.1844" y2="-2.4638" width="0.1524" layer="21"/>
+<wire x1="3.3274" y1="-1.0668" x2="3.3274" y2="3.0988" width="0.1524" layer="21"/>
+<wire x1="3.3274" y1="3.0988" x2="-6.3246" y2="3.0988" width="0.1524" layer="21"/>
+<text x="-4.7752" y="4.445" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Name</text>
+</package>
+<package name="CON_430450411_MOL">
+<smd name="1" x="1.5" y="5.115" dx="1.27" dy="2.92" layer="1" rot="R180"/>
+<smd name="2" x="-1.5" y="5.115" dx="1.27" dy="2.92" layer="1" rot="R180"/>
+<smd name="3" x="1.5" y="9.745003125" dx="1.27" dy="2.92" layer="1" rot="R180"/>
+<smd name="4" x="-1.5" y="9.745003125" dx="1.27" dy="2.92" layer="1" rot="R180"/>
+<smd name="S1" x="5.37496875" y="-0.355" dx="3.43" dy="1.65" layer="1"/>
+<smd name="S2" x="-5.395" y="-0.355" dx="3.43" dy="1.65" layer="1"/>
+<wire x1="7.0866" y1="5.1054" x2="8.1026" y2="5.7404" width="0.1524" layer="51"/>
+<wire x1="8.1026" y1="5.7404" x2="8.1026" y2="4.4704" width="0.1524" layer="51"/>
+<wire x1="8.1026" y1="4.4704" x2="7.0866" y2="5.1054" width="0.1524" layer="51"/>
+<wire x1="-6.8326" y1="-4.953" x2="6.8326" y2="-4.953" width="0.1524" layer="51"/>
+<wire x1="6.8326" y1="-4.953" x2="6.8326" y2="10.4394" width="0.1524" layer="51"/>
+<wire x1="6.8326" y1="10.4394" x2="-6.8326" y2="10.4394" width="0.1524" layer="51"/>
+<wire x1="-6.8326" y1="10.4394" x2="-6.8326" y2="-4.953" width="0.1524" layer="51"/>
+<wire x1="7.0866" y1="5.1054" x2="8.1026" y2="5.7404" width="0.1524" layer="21"/>
+<wire x1="8.1026" y1="5.7404" x2="8.1026" y2="4.4704" width="0.1524" layer="21"/>
+<wire x1="8.1026" y1="4.4704" x2="7.0866" y2="5.1054" width="0.1524" layer="21"/>
+<wire x1="-6.8326" y1="10.4394" x2="-6.8326" y2="0.7874" width="0.1524" layer="21"/>
+<wire x1="-6.8326" y1="-4.953" x2="6.8326" y2="-4.953" width="0.1524" layer="21"/>
+<wire x1="6.8326" y1="-4.953" x2="6.8326" y2="-1.4986" width="0.1524" layer="21"/>
+<wire x1="6.8326" y1="10.4394" x2="2.4638" y2="10.4394" width="0.1524" layer="21"/>
+<wire x1="0.5334" y1="10.4394" x2="-0.5334" y2="10.4394" width="0.1524" layer="21"/>
+<wire x1="-2.4638" y1="10.4394" x2="-6.8326" y2="10.4394" width="0.1524" layer="21"/>
+<wire x1="6.8326" y1="0.7874" x2="6.8326" y2="10.4394" width="0.1524" layer="21"/>
+<wire x1="-6.8326" y1="-1.4986" x2="-6.8326" y2="-4.953" width="0.1524" layer="21"/>
+<text x="-3.2766" y="12.065" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Name</text>
+</package>
+<package name="CON_436500202_MOL">
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.524" shape="square"/>
+<pad name="2" x="-2.9972" y="0" drill="1.016" diameter="1.524"/>
+<pad name="M1" x="-1.4986" y="-4.318" drill="2.9972" diameter="2.9972"/>
+<wire x1="3.5814" y1="0" x2="5.1054" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="5.1054" y1="0.635" x2="5.1054" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="5.1054" y1="-0.635" x2="3.5814" y2="0" width="0.1524" layer="51"/>
+<wire x1="-6.3246" y1="-8.9154" x2="3.3274" y2="-8.9154" width="0.1524" layer="51"/>
+<wire x1="3.3274" y1="-8.9154" x2="3.3274" y2="0.9906" width="0.1524" layer="51"/>
+<wire x1="3.3274" y1="0.9906" x2="-6.3246" y2="0.9906" width="0.1524" layer="51"/>
+<wire x1="-6.3246" y1="0.9906" x2="-6.3246" y2="-8.9154" width="0.1524" layer="51"/>
+<wire x1="3.5814" y1="0" x2="5.1054" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="5.1054" y1="0.635" x2="5.1054" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="5.1054" y1="-0.635" x2="3.5814" y2="0" width="0.1524" layer="21"/>
+<wire x1="-6.3246" y1="0.9906" x2="-6.3246" y2="-8.9154" width="0.1524" layer="21"/>
+<wire x1="-6.3246" y1="-8.9154" x2="3.3274" y2="-8.9154" width="0.1524" layer="21"/>
+<wire x1="3.3274" y1="-8.9154" x2="3.3274" y2="0.9906" width="0.1524" layer="21"/>
+<wire x1="3.3274" y1="0.9906" x2="0.9906" y2="0.9906" width="0.1524" layer="21"/>
+<wire x1="-0.9906" y1="0.9906" x2="-2.54" y2="0.9906" width="0.1524" layer="21"/>
+<wire x1="-3.4544" y1="0.9906" x2="-6.3246" y2="0.9906" width="0.1524" layer="21"/>
+<text x="-4.7752" y="1.905" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Name</text>
+</package>
 </packages>
 <symbols>
 <symbol name="2-PIN_CONN">
@@ -2386,6 +2456,67 @@ CABLE</text>
 <wire x1="-7.62" y1="-30.48" x2="2.54" y2="-30.48" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-30.48" x2="2.54" y2="30.48" width="0.254" layer="94"/>
 <wire x1="2.54" y1="30.48" x2="-7.62" y2="30.48" width="0.254" layer="94"/>
+</symbol>
+<symbol name="CON_436500217">
+<pin name="1" x="0" y="0" visible="pad" length="middle" direction="pas"/>
+<pin name="2" x="0" y="-2.54" visible="pad" length="middle" direction="pas"/>
+<wire x1="10.16" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="0" x2="8.89" y2="0.8382" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="8.89" y2="-1.7018" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="0" x2="8.89" y2="-0.8382" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="8.89" y2="-3.3782" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="12.7" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-5.08" x2="12.7" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
+<text x="4.1656" y="5.3086" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
+</symbol>
+<symbol name="CON_430450411">
+<pin name="1" x="0" y="0" visible="pad" length="middle" direction="pas"/>
+<pin name="2" x="0" y="-2.54" visible="pad" length="middle" direction="pas"/>
+<pin name="3" x="0" y="-5.08" visible="pad" length="middle" direction="pas"/>
+<pin name="4" x="0" y="-7.62" visible="pad" length="middle" direction="pas"/>
+<pin name="S1" x="0" y="-10.16" visible="pad" length="middle" direction="pas"/>
+<pin name="S2" x="0" y="-12.7" visible="pad" length="middle" direction="pas"/>
+<wire x1="10.16" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="5.08" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="5.08" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="5.08" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="5.08" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="0" x2="8.89" y2="0.8382" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="8.89" y2="-1.7018" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="8.89" y2="-4.2418" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="8.89" y2="-6.7818" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="8.89" y2="-9.3218" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="8.89" y2="-11.8618" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="0" x2="8.89" y2="-0.8382" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="8.89" y2="-3.3782" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="8.89" y2="-5.9182" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="8.89" y2="-8.4582" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="8.89" y2="-10.9982" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="8.89" y2="-13.5382" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-15.24" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-15.24" x2="12.7" y2="-15.24" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-15.24" x2="12.7" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
+<text x="4.1656" y="5.3086" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
+</symbol>
+<symbol name="CON_436500202">
+<pin name="1" x="0" y="0" visible="pad" length="middle" direction="pas"/>
+<pin name="2" x="0" y="-2.54" visible="pad" length="middle" direction="pas"/>
+<wire x1="10.16" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="0" x2="8.89" y2="0.8382" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="8.89" y2="-1.7018" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="0" x2="8.89" y2="-0.8382" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="8.89" y2="-3.3782" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="12.7" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-5.08" x2="12.7" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
+<text x="4.1656" y="5.3086" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3794,6 +3925,70 @@ Source: http://www.molex.com/product/micro/87438.html</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="436500217" prefix="J">
+<gates>
+<gate name="A" symbol="CON_436500217" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CON_436500217_MOL">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="WM12762-ND" constant="no"/>
+<attribute name="MFR_NAME" value="Molex Connector Corporation" constant="no"/>
+<attribute name="MPN" value="436500217" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="430450411" prefix="J">
+<gates>
+<gate name="A" symbol="CON_430450411" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CON_430450411_MOL">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+<connect gate="A" pin="4" pad="4"/>
+<connect gate="A" pin="S1" pad="S1"/>
+<connect gate="A" pin="S2" pad="S2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="WM1832CT-ND" constant="no"/>
+<attribute name="MFR_NAME" value="Molex Connector Corporation" constant="no"/>
+<attribute name="MPN" value="430450411" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="436500202" prefix="J">
+<gates>
+<gate name="A" symbol="CON_436500202" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CON_436500202_MOL">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="WM3264-ND" constant="no"/>
+<attribute name="MFR_NAME" value="Molex Connector Corporation" constant="no"/>
+<attribute name="MPN" value="436500202" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
