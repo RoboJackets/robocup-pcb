@@ -186,16 +186,16 @@
 </layers>
 <board>
 <plain>
-<text x="0.5" y="12.6" size="3.81" layer="21" rot="R270">+</text>
-<text x="13" y="12" size="3.81" layer="21">_</text>
-<wire x1="0" y1="0" x2="18" y2="0" width="0.1524" layer="20"/>
-<wire x1="18" y1="0" x2="18" y2="26" width="0.1524" layer="20"/>
-<wire x1="18" y1="26" x2="0" y2="26" width="0.1524" layer="20"/>
-<wire x1="0" y1="26" x2="0" y2="0" width="0.1524" layer="20"/>
-<hole x="4" y="14" drill="3"/>
-<hole x="15" y="14" drill="3"/>
-<hole x="15" y="3" drill="3"/>
-<text x="2.5" y="16.8" size="1" layer="25" font="vector" ratio="10">J1</text>
+<text x="-0.5" y="12.6" size="3.81" layer="21" rot="R270">+</text>
+<text x="12" y="12" size="3.81" layer="21">_</text>
+<wire x1="0" y1="0" x2="17" y2="0" width="0" layer="20"/>
+<wire x1="17" y1="0" x2="17" y2="26" width="0" layer="20"/>
+<wire x1="17" y1="26" x2="0" y2="26" width="0" layer="20"/>
+<wire x1="0" y1="26" x2="0" y2="0" width="0" layer="20"/>
+<hole x="3" y="14" drill="3"/>
+<hole x="14" y="14" drill="3"/>
+<hole x="14" y="3" drill="3"/>
+<text x="1.5" y="16.8" size="1" layer="25" font="vector" ratio="10">J1</text>
 </plain>
 <libraries>
 <library name="RoboJackets-LEDs">
@@ -448,35 +448,35 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="D1" library="RoboJackets-LEDs" package="OP293B" value="LED-OP293B" x="8" y="7" smashed="yes">
-<attribute name="NAME" x="2" y="2" size="1" layer="25" font="vector" ratio="10"/>
+<element name="D1" library="RoboJackets-LEDs" package="OP293B" value="LED-OP293B" x="7" y="7" smashed="yes">
+<attribute name="NAME" x="1" y="2" size="1" layer="25" font="vector" ratio="10"/>
 </element>
-<element name="J1" library="RoboJackets-Connectors" package="0436500213" value="0436500213" x="9.5" y="22" smashed="yes" rot="R180"/>
-<element name="D2" library="RoboJackets-LEDs" package="LED0603" value="LED-SMD" x="16" y="8" smashed="yes" rot="R90">
-<attribute name="DKPN" value="" x="16" y="8" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="15.25" y="8" size="1" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
+<element name="J1" library="RoboJackets-Connectors" package="0436500213" value="0436500213" x="8.5" y="22" smashed="yes" rot="R180"/>
+<element name="D2" library="RoboJackets-LEDs" package="LED0603" value="LED-SMD" x="15" y="8" smashed="yes" rot="R90">
+<attribute name="DKPN" value="" x="15" y="8" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="14.25" y="8" size="1" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
 </element>
 </elements>
 <signals>
 <signal name="GND">
 <contactref element="D1" pad="P$1"/>
 <contactref element="J1" pad="1"/>
-<wire x1="9.27" y1="7" x2="11" y2="8.73" width="0.3" layer="1"/>
-<wire x1="11" y1="8.73" x2="11" y2="16.53" width="0.3" layer="1"/>
+<wire x1="8.27" y1="7" x2="10" y2="8.73" width="0.3" layer="1"/>
+<wire x1="10" y1="8.73" x2="10" y2="16.53" width="0.3" layer="1"/>
 <contactref element="D2" pad="C"/>
-<wire x1="16" y1="8.775" x2="14.225" y2="7" width="0.3" layer="1"/>
-<wire x1="14.225" y1="7" x2="9.27" y2="7" width="0.3" layer="1"/>
+<wire x1="15" y1="8.775" x2="13.225" y2="7" width="0.3" layer="1"/>
+<wire x1="13.225" y1="7" x2="8.27" y2="7" width="0.3" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="J1" pad="2" route="any" routetag="G$1.2"/>
 <contactref element="D2" pad="A"/>
 <contactref element="D1" pad="P$2"/>
-<wire x1="8" y1="16.53" x2="8" y2="8.27" width="0.3" layer="1"/>
-<wire x1="8" y1="8.27" x2="6.73" y2="7" width="0.3" layer="1"/>
-<wire x1="6.73" y1="7" x2="7.53434375" y2="7" width="0.3" layer="1"/>
-<wire x1="7.53434375" y1="7" x2="8.49074375" y2="6.0436" width="0.3" layer="1"/>
-<wire x1="8.49074375" y1="6.0436" x2="14.8186" y2="6.0436" width="0.3" layer="1"/>
-<wire x1="14.8186" y1="6.0436" x2="16" y2="7.225" width="0.3" layer="1"/>
+<wire x1="7" y1="16.53" x2="7" y2="8.27" width="0.3" layer="1"/>
+<wire x1="7" y1="8.27" x2="5.73" y2="7" width="0.3" layer="1"/>
+<wire x1="5.73" y1="7" x2="6.53434375" y2="7" width="0.3" layer="1"/>
+<wire x1="6.53434375" y1="7" x2="7.49074375" y2="6.0436" width="0.3" layer="1"/>
+<wire x1="7.49074375" y1="6.0436" x2="13.8186" y2="6.0436" width="0.3" layer="1"/>
+<wire x1="13.8186" y1="6.0436" x2="15" y2="7.225" width="0.3" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
