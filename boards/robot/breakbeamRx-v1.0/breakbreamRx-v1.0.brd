@@ -185,46 +185,20 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.YnVzaW5lc3M6Z2F0ZWNoOTg4" projecturn="a.YnVzaW5lc3M6Z2F0ZWNoOTg4IzIwMjEwNzE5NDI4NDMwODUx" f3durn="urn:adsk.wipprod:dm.lineage:SzhHr0xETMGJz2IZ0Lh9Xw" pcbguid="" lastpulledtime="2021-12-31T17:45:24Z" lastsyncedchangeguid="" latestrevisionid="36663438-f42f-4080-9f2c-34fdbf4b8d22" lastsyncedrevisionid="16fc6c81-be08-47dc-af28-d5e4b56ddf86" lastboardhashguid="ebb75f8e-5716-af64-7a43-87aecf6a0761" lastpushedtime="2021-12-31T17:16:39Z" linktopcb3d="true"/>
+<fusionsync huburn="a.YnVzaW5lc3M6Z2F0ZWNoOTg4" projecturn="a.YnVzaW5lc3M6Z2F0ZWNoOTg4IzIwMjEwNzE5NDI4NDMwODUx" f3durn="urn:adsk.wipprod:dm.lineage:SzhHr0xETMGJz2IZ0Lh9Xw" pcbguid="" lastpulledtime="2021-12-31T17:45:24Z" lastsyncedchangeguid="" latestrevisionid="9b572263-9f3e-48d8-9dc1-7076be87c222" lastsyncedrevisionid="9b572263-9f3e-48d8-9dc1-7076be87c222" lastboardhashguid="5d413514-ac58-a94f-70eb-b149b7d8946d" lastpushedtime="2021-12-31T21:44:26Z" linktopcb3d="true"/>
 <plain>
-<text x="11.8" y="12.9" size="3.81" layer="21" rot="R180">+</text>
-<text x="1.2" y="12.3" size="3.81" layer="21">_</text>
-<hole x="15" y="3" drill="1"/>
-<hole x="15" y="14" drill="1"/>
-<hole x="3" y="14" drill="1"/>
-<wire x1="14.5" y1="2.9719" x2="15.5" y2="2.9719" width="0" layer="20" curve="173.5717"/>
-<wire x1="14.5" y1="2.9719" x2="14.5" y2="3.0281" width="0" layer="20"/>
-<wire x1="15.5" y1="3.0281" x2="14.5" y2="3.0281" width="0" layer="20" curve="173.5717"/>
-<wire x1="15.5" y1="3.0281" x2="15.5" y2="2.9719" width="0" layer="20"/>
-<wire x1="2.5" y1="13.9719" x2="3.5" y2="13.9719" width="0" layer="20" curve="173.5717"/>
-<wire x1="2.5" y1="13.9719" x2="2.5" y2="14.0281" width="0" layer="20"/>
-<wire x1="3.5" y1="14.0281" x2="2.5" y2="14.0281" width="0" layer="20" curve="173.5717"/>
-<wire x1="3.5" y1="14.0281" x2="3.5" y2="13.9719" width="0" layer="20"/>
-<wire x1="14.5" y1="13.9719" x2="15.5" y2="13.9719" width="0" layer="20" curve="173.5717"/>
-<wire x1="14.5" y1="13.9719" x2="14.5" y2="14.0281" width="0" layer="20"/>
-<wire x1="15.5" y1="14.0281" x2="14.5" y2="14.0281" width="0" layer="20" curve="173.5717"/>
-<wire x1="15.5" y1="14.0281" x2="15.5" y2="13.9719" width="0" layer="20"/>
-<wire x1="0" y1="25.8" x2="0" y2="0" width="0" layer="20"/>
-<wire x1="0" y1="0" x2="17.96" y2="0" width="0" layer="20"/>
-<wire x1="17.96" y1="0" x2="17.96" y2="25.8" width="0" layer="20"/>
-<wire x1="17.96" y1="25.8" x2="0" y2="25.8" width="0" layer="20"/>
+<text x="4.7" y="9.5" size="3.81" layer="21" rot="R90">+</text>
+<text x="12.7" y="11.8" size="3.81" layer="21">_</text>
+<hole x="4" y="14" drill="3"/>
+<wire x1="0" y1="26" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="18" y2="0" width="0" layer="20"/>
+<wire x1="18" y1="0" x2="18" y2="26" width="0" layer="20"/>
+<wire x1="18" y1="26" x2="0" y2="26" width="0" layer="20"/>
+<hole x="15" y="14" drill="3"/>
+<hole x="15" y="3" drill="3"/>
+<text x="3" y="16" size="1" layer="25" font="vector" ratio="10">J1</text>
 </plain>
 <libraries>
-<library name="RoboJackets-Discrete">
-<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
-&lt;hr&gt;
-&lt;h1&gt;RoboJackets EAGLE Libraries - Discrete&lt;/h1&gt;&lt;/br&gt;
-&lt;p&gt;
-In this library you will find MOSFETs and other circuit elements commonly used for switching signals between HIGH and LOW.
-&lt;/p&gt;</description>
-<packages>
-<package name="OP593B">
-<circle x="0" y="0" radius="5.59" width="0.127" layer="21"/>
-<pad name="P$1" x="1.27" y="0" drill="0.6" shape="square"/>
-<pad name="P$2" x="-1.27" y="0" drill="0.6"/>
-</package>
-</packages>
-</library>
 <library name="RoboJackets-Connectors">
 <description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
 &lt;hr&gt;
@@ -242,6 +216,25 @@ In this library you will find all the connectors used on any of our boards.
 <wire x1="-5" y1="5.4" x2="5" y2="5.4" width="0.127" layer="21"/>
 <wire x1="5" y1="5.4" x2="5" y2="-3" width="0.127" layer="21"/>
 <wire x1="5" y1="-3" x2="-5" y2="-3" width="0.127" layer="21"/>
+<text x="-5.08" y="7.62" size="1.27" layer="21">&gt;Name</text>
+<text x="-5.08" y="-5.08" size="1.27" layer="21">&gt;Value</text>
+</package>
+</packages>
+</library>
+<library name="RoboJackets-Discrete">
+<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
+&lt;hr&gt;
+&lt;h1&gt;RoboJackets EAGLE Libraries - Discrete&lt;/h1&gt;&lt;/br&gt;
+&lt;p&gt;
+In this library you will find MOSFETs and other circuit elements commonly used for switching signals between HIGH and LOW.
+&lt;/p&gt;</description>
+<packages>
+<package name="OP593B">
+<circle x="0" y="0" radius="5.59" width="0.127" layer="21"/>
+<pad name="P$1" x="1.27" y="0" drill="0.8" shape="square"/>
+<pad name="P$2" x="-1.27" y="0" drill="0.8"/>
+<text x="-5.08" y="6.35" size="1.27" layer="25">&gt;Name</text>
+<text x="-5.08" y="-7.62" size="1.27" layer="27">&gt;Value</text>
 </package>
 </packages>
 </library>
@@ -438,21 +431,23 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U$1" library="RoboJackets-Discrete" package="OP593B" override_package3d_urn="urn:adsk.eagle:package:33302060/2" override_package_urn="urn:adsk.eagle:footprint:33302061/1" value="OP593B" x="6" y="7" smashed="yes" rot="MR180"/>
-<element name="U$2" library="RoboJackets-Connectors" package="0436500213" override_package3d_urn="urn:adsk.eagle:package:33302042/2" override_package_urn="urn:adsk.eagle:footprint:33302043/1" value="0436500213" x="9" y="22" smashed="yes" rot="R180"/>
+<element name="U$2" library="RoboJackets-Connectors" package="0436500213" override_package3d_urn="urn:adsk.eagle:package:33302042/2" override_package_urn="urn:adsk.eagle:footprint:33302043/1" override_locally_modified="yes" value="0436500213" x="9.5" y="22" smashed="yes" rot="R180"/>
+<element name="D1" library="RoboJackets-Discrete" package="OP593B" value="OP593B" x="8" y="7" smashed="yes">
+<attribute name="NAME" x="1.92" y="2.35" size="1" layer="25" font="vector" ratio="10"/>
+</element>
 </elements>
 <signals>
 <signal name="N$1">
-<contactref element="U$1" pad="P$2"/>
 <contactref element="U$2" pad="2" route="any" routetag="G$1.2"/>
-<wire x1="7.5" y1="16.53" x2="4.73" y2="13.76" width="0.3" layer="1"/>
-<wire x1="4.73" y1="13.76" x2="4.73" y2="7" width="0.3" layer="1"/>
+<contactref element="D1" pad="P$2"/>
+<wire x1="8" y1="16.53" x2="6.73" y2="15.26" width="0.3" layer="1"/>
+<wire x1="6.73" y1="15.26" x2="6.73" y2="7" width="0.3" layer="1"/>
 </signal>
 <signal name="GND">
-<contactref element="U$1" pad="P$1"/>
 <contactref element="U$2" pad="1"/>
-<wire x1="10.5" y1="16.53" x2="7.27" y2="13.3" width="0.3" layer="1"/>
-<wire x1="7.27" y1="13.3" x2="7.27" y2="7" width="0.3" layer="1"/>
+<contactref element="D1" pad="P$1"/>
+<wire x1="9.27" y1="7" x2="9.27" y2="14.8" width="0.3" layer="1"/>
+<wire x1="9.27" y1="14.8" x2="11" y2="16.53" width="0.3" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

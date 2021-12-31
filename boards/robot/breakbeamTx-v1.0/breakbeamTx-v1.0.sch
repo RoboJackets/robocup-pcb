@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -186,59 +186,6 @@
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
-<library name="RoboJackets-Connectors">
-<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
-&lt;hr&gt;
-&lt;h1&gt;RoboJackets EAGLE Libraries - Connectors&lt;/h1&gt;&lt;/br&gt;
-&lt;p&gt;
-In this library you will find all the connectors used on any of our boards.
-&lt;/p&gt;</description>
-<packages>
-<package name="0353630260">
-<pad name="P$1" x="0" y="-2" drill="0.8"/>
-<pad name="P$2" x="2" y="-2" drill="0.8" shape="square"/>
-<wire x1="-3" y1="6" x2="5" y2="6" width="0.127" layer="21"/>
-<wire x1="5" y1="6" x2="5" y2="-4" width="0.127" layer="21"/>
-<wire x1="5" y1="-4" x2="-3" y2="-4" width="0.127" layer="21"/>
-<wire x1="-3" y1="-4" x2="-3" y2="6" width="0.127" layer="21"/>
-<text x="-2.54" y="7.62" size="1.27" layer="25">&gt;Name</text>
-<text x="-2.54" y="-6.35" size="1.27" layer="27">&gt;Value</text>
-</package>
-</packages>
-<symbols>
-<symbol name="CONN_02">
-<description>&lt;h3&gt;2 Pin Connection&lt;/h3&gt;</description>
-<wire x1="-3.81" y1="-5.08" x2="-3.81" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="5.08" x2="3.81" y2="5.08" width="0.254" layer="94"/>
-<wire x1="3.81" y1="5.08" x2="3.81" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="3.81" y1="-5.08" x2="-3.81" y2="-5.08" width="0.254" layer="94"/>
-<pin name="P$1" x="7.62" y="2.54" visible="pad" length="middle" rot="R180"/>
-<pin name="P$2" x="7.62" y="-2.54" visible="pad" length="middle" rot="R180"/>
-<wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.6096" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="2.54" y2="-2.54" width="0.6096" layer="94"/>
-<text x="-5.08" y="7.62" size="1.778" layer="95">&gt;NAME</text>
-<text x="-5.08" y="-7.62" size="1.778" layer="95" align="top-left">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="0353630260">
-<gates>
-<gate name="G$1" symbol="CONN_02" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="0353630260">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="RoboJackets-LEDs">
 <description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
 &lt;hr&gt;
@@ -249,10 +196,28 @@ In this library you will find LEDs and other visual output devices.
 <packages>
 <package name="OP293B">
 <circle x="0" y="0" radius="5.97" width="0.127" layer="21"/>
-<pad name="P$1" x="1.27" y="0" drill="0.6" shape="square"/>
-<pad name="P$2" x="-1.27" y="0" drill="0.6"/>
+<pad name="P$1" x="1.27" y="0" drill="0.8" shape="square"/>
+<pad name="P$2" x="-1.27" y="0" drill="0.8"/>
 <text x="-3" y="7" size="1.27" layer="25">&gt;Name</text>
 <text x="-3" y="-8" size="1.27" layer="27">&gt;Value</text>
+</package>
+<package name="LED0603">
+<description>0603 LED</description>
+<wire x1="0.477" y1="0.4" x2="-0.423" y2="0.4" width="0.05" layer="51"/>
+<wire x1="0.477" y1="-0.4" x2="-0.423" y2="-0.4" width="0.05" layer="51"/>
+<smd name="C" x="0.775" y="0" dx="0.8" dy="0.8" layer="1" rot="R270"/>
+<smd name="A" x="-0.775" y="0" dx="0.8" dy="0.8" layer="1" rot="R270"/>
+<text x="0" y="0.75" size="1" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.75" size="1" layer="27" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
+<polygon width="0.05" layer="21">
+<vertex x="-0.173" y="0.3"/>
+<vertex x="0.227" y="0"/>
+<vertex x="-0.173" y="-0.3"/>
+</polygon>
+<wire x1="-1.3" y1="-0.5" x2="-1.3" y2="0.5" width="0.05" layer="39"/>
+<wire x1="-1.3" y1="0.5" x2="1.3" y2="0.5" width="0.05" layer="39"/>
+<wire x1="1.3" y1="0.5" x2="1.3" y2="-0.5" width="0.05" layer="39"/>
+<wire x1="1.3" y1="-0.5" x2="-1.3" y2="-0.5" width="0.05" layer="39"/>
 </package>
 </packages>
 <symbols>
@@ -295,6 +260,46 @@ In this library you will find LEDs and other visual output devices.
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LED-SMD" prefix="D">
+<description>Series of 0603 LEDs</description>
+<gates>
+<gate name="A" symbol="LED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LED0603">
+<connects>
+<connect gate="A" pin="A" pad="A"/>
+<connect gate="A" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="VALUE" value="" constant="no"/>
+</technology>
+<technology name="-BLUE">
+<attribute name="DKPN" value="160-1647-1-ND" constant="no"/>
+<attribute name="VALUE" value="BLUE" constant="no"/>
+</technology>
+<technology name="-GREEN">
+<attribute name="DKPN" value="160-1446-1-ND" constant="no"/>
+<attribute name="VALUE" value="GREEN" constant="no"/>
+</technology>
+<technology name="-ORANGE">
+<attribute name="DKPN" value="160-1445-1-ND" constant="no"/>
+<attribute name="VALUE" value="ORANGE" constant="no"/>
+</technology>
+<technology name="-RED">
+<attribute name="DKPN" value="160-1447-1-ND" constant="no"/>
+<attribute name="VALUE" value="RED" constant="no"/>
+</technology>
+<technology name="-YELLOW">
+<attribute name="DKPN" value="160-1448-1-ND" constant="no"/>
+<attribute name="VALUE" value="YELLOW" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -3617,6 +3622,58 @@ In this library you will find frames that can be used to help organize a schemat
 </deviceset>
 </devicesets>
 </library>
+<library name="RoboJackets-Connectors">
+<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
+&lt;hr&gt;
+&lt;h1&gt;RoboJackets EAGLE Libraries - Connectors&lt;/h1&gt;&lt;/br&gt;
+&lt;p&gt;
+In this library you will find all the connectors used on any of our boards.
+&lt;/p&gt;</description>
+<packages>
+<package name="0436500213">
+<smd name="P$1" x="-5.385" y="0" dx="3.43" dy="1.65" layer="1"/>
+<smd name="P$2" x="5.385" y="0" dx="3.43" dy="1.65" layer="1"/>
+<smd name="1" x="-1.5" y="5.47" dx="2.92" dy="1.27" layer="1" rot="R90"/>
+<smd name="2" x="1.5" y="5.47" dx="2.92" dy="1.27" layer="1" rot="R90"/>
+<wire x1="-5" y1="-3" x2="-5" y2="5.4" width="0.127" layer="21"/>
+<wire x1="-5" y1="5.4" x2="5" y2="5.4" width="0.127" layer="21"/>
+<wire x1="5" y1="5.4" x2="5" y2="-3" width="0.127" layer="21"/>
+<wire x1="5" y1="-3" x2="-5" y2="-3" width="0.127" layer="21"/>
+<text x="-5.08" y="7.62" size="1.27" layer="21">&gt;Name</text>
+<text x="-5.08" y="-5.08" size="1.27" layer="21">&gt;Value</text>
+</package>
+</packages>
+<symbols>
+<symbol name="PINHD2">
+<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.27" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="5.08" x2="-6.35" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-6.35" y1="5.08" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
+<text x="-6.35" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="2" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="0436500213">
+<gates>
+<gate name="G$1" symbol="PINHD2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0436500213">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2" route="any"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3627,23 +3684,22 @@ In this library you will find frames that can be used to help organize a schemat
 </class>
 </classes>
 <parts>
-<part name="J1" library="RoboJackets-Connectors" deviceset="0353630260" device=""/>
 <part name="D1" library="RoboJackets-LEDs" deviceset="LED-OP293B" device=""/>
 <part name="FRAME1" library="RoboJackets-Frames" deviceset="FRAME_11_17" device=""/>
 <part name="SUPPLY1" library="RoboJackets-Supplies" deviceset="GND" device=""/>
+<part name="J1" library="RoboJackets-Connectors" deviceset="0436500213" device=""/>
+<part name="D2" library="RoboJackets-LEDs" deviceset="LED-SMD" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="0" y="-22.86" size="1.778" layer="97">Board interfaces with kicker board</text>
+<text x="0" y="-27.94" size="1.778" layer="97">5v source with potentiometer on kicker board</text>
 </plain>
 <instances>
-<instance part="J1" gate="G$1" x="0" y="0" smashed="yes">
-<attribute name="NAME" x="-5.08" y="7.62" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-5.08" y="-7.62" size="1.778" layer="95" align="top-left"/>
-</instance>
-<instance part="D1" gate="G$1" x="27.94" y="-2.54" smashed="yes" rot="R270">
-<attribute name="NAME" x="32.004" y="-2.54" size="1.778" layer="95" rot="MR90" align="bottom-center"/>
-<attribute name="VALUE" x="25.4" y="-2.54" size="1.778" layer="96" rot="MR90" align="top-center"/>
+<instance part="D1" gate="G$1" x="27.94" y="-5.08" smashed="yes" rot="R270">
+<attribute name="NAME" x="32.004" y="-5.08" size="1.778" layer="95" rot="MR90" align="bottom-center"/>
+<attribute name="VALUE" x="25.4" y="-5.08" size="1.778" layer="96" rot="MR90" align="top-center"/>
 </instance>
 <instance part="FRAME1" gate="G$1" x="-182.88" y="-121.92" smashed="yes"/>
 <instance part="FRAME1" gate="G$2" x="142.24" y="-121.92" smashed="yes">
@@ -3654,30 +3710,48 @@ In this library you will find frames that can be used to help organize a schemat
 <attribute name="REVISION" x="214.63" y="-115.57" size="2.54" layer="94"/>
 <attribute name="SCH_DESC" x="143.51" y="-115.57" size="2.54" layer="94"/>
 </instance>
-<instance part="SUPPLY1" gate="G$1" x="27.94" y="-12.7" smashed="yes">
-<attribute name="VALUE" x="25.4" y="-15.24" size="1.778" layer="96"/>
+<instance part="SUPPLY1" gate="G$1" x="27.94" y="-15.24" smashed="yes">
+<attribute name="VALUE" x="25.4" y="-17.78" size="1.778" layer="96"/>
+</instance>
+<instance part="J1" gate="G$1" x="2.54" y="2.54" smashed="yes" rot="R180">
+<attribute name="NAME" x="8.89" y="-3.175" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="8.89" y="7.62" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="D2" gate="A" x="17.78" y="-5.08" smashed="yes" rot="R270">
+<attribute name="NAME" x="21.844" y="-5.08" size="1.778" layer="95" rot="MR90" align="bottom-center"/>
+<attribute name="VALUE" x="15.24" y="-5.08" size="1.778" layer="96" rot="MR90" align="top-center"/>
 </instance>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="TX" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="P$1"/>
-<pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="7.62" y1="2.54" x2="27.94" y2="2.54" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="GND" class="0">
 <segment>
 <pinref part="D1" gate="G$1" pin="C"/>
-<wire x1="27.94" y1="-5.08" x2="27.94" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="SUPPLY1" gate="G$1" pin="GND"/>
 <wire x1="27.94" y1="-7.62" x2="27.94" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="-7.62" x2="7.62" y2="-7.62" width="0.1524" layer="91"/>
-<junction x="27.94" y="-7.62"/>
-<pinref part="J1" gate="G$1" pin="P$2"/>
-<wire x1="7.62" y1="-7.62" x2="7.62" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="SUPPLY1" gate="G$1" pin="GND"/>
+<wire x1="27.94" y1="-10.16" x2="27.94" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="-10.16" x2="17.78" y2="-10.16" width="0.1524" layer="91"/>
+<junction x="27.94" y="-10.16"/>
+<wire x1="17.78" y1="-10.16" x2="7.62" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="-10.16" x2="7.62" y2="0" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="7.62" y1="0" x2="5.08" y2="0" width="0.1524" layer="91"/>
+<pinref part="D2" gate="A" pin="C"/>
+<wire x1="17.78" y1="-7.62" x2="17.78" y2="-10.16" width="0.1524" layer="91"/>
+<junction x="17.78" y="-10.16"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="5.08" y1="2.54" x2="17.78" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="D2" gate="A" pin="A"/>
+<wire x1="17.78" y1="2.54" x2="17.78" y2="0" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="2.54" x2="27.94" y2="2.54" width="0.1524" layer="91"/>
+<junction x="17.78" y="2.54"/>
+<pinref part="D1" gate="G$1" pin="A"/>
+<wire x1="27.94" y1="2.54" x2="27.94" y2="0" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
