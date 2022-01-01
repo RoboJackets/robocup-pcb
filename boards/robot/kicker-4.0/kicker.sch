@@ -3136,24 +3136,6 @@ INTERNATIONAL RECTIFIER, irg4bc15ud-s.pdf</description>
 In this library you will find all the connectors used on any of our boards.
 &lt;/p&gt;</description>
 <packages>
-<package name="SFW8R-1STE1LF">
-<text x="0" y="6.222" size="1.27" layer="25">&gt;Name</text>
-<text x="0" y="-3.778" size="1.27" layer="27">&gt;Value</text>
-<wire x1="-3.073" y1="-1.978" x2="12.727" y2="-1.978" width="0.127" layer="27"/>
-<wire x1="-3.073" y1="-1.978" x2="-3.073" y2="3.522" width="0.127" layer="27"/>
-<wire x1="12.727" y1="-1.978" x2="12.727" y2="3.522" width="0.127" layer="27"/>
-<wire x1="-3.073" y1="3.522" x2="12.727" y2="3.522" width="0.127" layer="27"/>
-<smd name="P$2" x="1.3" y="4.2" dx="2" dy="0.6" layer="1" rot="R90"/>
-<smd name="P$3" x="2.3" y="4.2" dx="2" dy="0.6" layer="1" rot="R90"/>
-<smd name="P$4" x="3.3" y="4.2" dx="2" dy="0.6" layer="1" rot="R90"/>
-<smd name="P$5" x="4.3" y="4.2" dx="2" dy="0.6" layer="1" rot="R90"/>
-<smd name="P$6" x="5.3" y="4.2" dx="2" dy="0.6" layer="1" rot="R90"/>
-<smd name="P$7" x="6.3" y="4.2" dx="2" dy="0.6" layer="1" rot="R90"/>
-<smd name="P$8" x="7.3" y="4.2" dx="2" dy="0.6" layer="1" rot="R90"/>
-<smd name="P$9" x="8.3" y="4.2" dx="2" dy="0.6" layer="1" rot="R90"/>
-<rectangle x1="0" y1="0" x2="0.7" y2="4.2" layer="1"/>
-<rectangle x1="9" y1="0" x2="9.7" y2="4.2" layer="1"/>
-</package>
 <package name="CON_436500217_MOL">
 <pad name="1" x="0" y="0" drill="1.016" diameter="1.524" shape="square"/>
 <pad name="2" x="-2.9972" y="0" drill="1.016" diameter="1.524"/>
@@ -3223,6 +3205,34 @@ In this library you will find all the connectors used on any of our boards.
 <wire x1="6.8326" y1="0.7874" x2="6.8326" y2="10.4394" width="0.1524" layer="21"/>
 <wire x1="-6.8326" y1="-1.4986" x2="-6.8326" y2="-4.953" width="0.1524" layer="21"/>
 <text x="-3.2766" y="12.065" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Name</text>
+</package>
+<package name="CON8_1X8_UB_SFW_JAE">
+<smd name="1" x="0" y="0" dx="0.6096" dy="1.905" layer="1"/>
+<smd name="2" x="1" y="3.65" dx="0.6096" dy="1.905" layer="1"/>
+<smd name="3" x="2" y="0" dx="0.6096" dy="1.905" layer="1"/>
+<smd name="4" x="3.000003125" y="3.65" dx="0.6096" dy="1.905" layer="1"/>
+<smd name="5" x="4" y="0" dx="0.6096" dy="1.905" layer="1"/>
+<smd name="6" x="5" y="3.65" dx="0.6096" dy="1.905" layer="1"/>
+<smd name="7" x="6" y="0" dx="0.6096" dy="1.905" layer="1"/>
+<smd name="8" x="7" y="3.65" dx="0.6096" dy="1.905" layer="1"/>
+<smd name="NC1" x="-0.999996875" y="1.8034" dx="0.6096" dy="5.5118" layer="1"/>
+<smd name="NC2" x="8" y="1.8034" dx="0.6096" dy="5.5118" layer="1"/>
+<wire x1="-3.8354" y1="-0.127" x2="-1.6256" y2="-0.127" width="0.1524" layer="21"/>
+<wire x1="10.8204" y1="-0.127" x2="10.8204" y2="3.7338" width="0.1524" layer="21"/>
+<wire x1="10.8204" y1="3.7338" x2="8.636" y2="3.7338" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-0.127" x2="1.3716" y2="-0.127" width="0.1524" layer="21"/>
+<wire x1="0.3556" y1="3.7338" x2="-0.3556" y2="3.7338" width="0.1524" layer="21"/>
+<wire x1="2.6416" y1="-0.127" x2="3.3528" y2="-0.127" width="0.1524" layer="21"/>
+<wire x1="2.3622" y1="3.7338" x2="1.6256" y2="3.7338" width="0.1524" layer="21"/>
+<wire x1="4.6482" y1="-0.127" x2="5.3594" y2="-0.127" width="0.1524" layer="21"/>
+<wire x1="4.3688" y1="3.7338" x2="3.6322" y2="3.7338" width="0.1524" layer="21"/>
+<wire x1="6.6294" y1="-0.127" x2="7.366" y2="-0.127" width="0.1524" layer="21"/>
+<wire x1="6.35" y1="3.7338" x2="5.6388" y2="3.7338" width="0.1524" layer="21"/>
+<wire x1="-1.6256" y1="3.7338" x2="-3.8354" y2="3.7338" width="0.1524" layer="21"/>
+<wire x1="8.636" y1="-0.127" x2="10.8204" y2="-0.127" width="0.1524" layer="21"/>
+<text x="0.254" y="-2.286" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
+<text x="0.2286" y="4.445" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Name</text>
+<wire x1="-3.837" y1="3.81" x2="-3.837" y2="-0.127" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -3313,28 +3323,6 @@ In this library you will find all the connectors used on any of our boards.
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="SFW8R-1STE1LF">
-<gates>
-<gate name="G$1" symbol="8-PIN_CONN" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SFW8R-1STE1LF">
-<connects>
-<connect gate="G$1" pin="1" pad="P$2"/>
-<connect gate="G$1" pin="2" pad="P$3"/>
-<connect gate="G$1" pin="3" pad="P$4"/>
-<connect gate="G$1" pin="4" pad="P$5"/>
-<connect gate="G$1" pin="5" pad="P$6"/>
-<connect gate="G$1" pin="6" pad="P$7"/>
-<connect gate="G$1" pin="7" pad="P$8"/>
-<connect gate="G$1" pin="8" pad="P$9"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="436500217" prefix="J">
 <gates>
 <gate name="A" symbol="CON_436500217" x="0" y="0"/>
@@ -3395,6 +3383,28 @@ In this library you will find all the connectors used on any of our boards.
 <attribute name="MFR_NAME" value="Molex Connector Corporation" constant="no"/>
 <attribute name="MPN" value="430450411" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SFW8S-2STE1LF" prefix="J">
+<gates>
+<gate name="G$1" symbol="8-PIN_CONN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CON8_1X8_UB_SFW_JAE">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -21549,7 +21559,6 @@ In this library you will find inductors. If you are looking for a common package
 <part name="C22" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 25V"/>
 <part name="C26" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 25V"/>
 <part name="C28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 25V"/>
-<part name="J4" library="RoboJackets-Connectors" deviceset="SFW8R-1STE1LF" device=""/>
 <part name="R103" library="RoboJackets-Resistors" deviceset="PWR263S-35" device="TO-263AB" value="1.0k 3.5W">
 <attribute name="DIGIKEY" value="PWR263S-35-1501F"/>
 </part>
@@ -21561,6 +21570,7 @@ In this library you will find inductors. If you are looking for a common package
 <part name="D19" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-GREEN" value="GREEN"/>
 <part name="SUPPLY52" library="RoboJackets-Supplies" deviceset="VBATT" device=""/>
 <part name="SUPPLY97" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="J1" library="RoboJackets-Connectors" deviceset="SFW8S-2STE1LF" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -23605,7 +23615,7 @@ Vmon is adjusted to have the max typical voltage of around 2.5V</text>
 <instance part="SUPPLY66" gate="GND" x="144.78" y="99.06" smashed="yes">
 <attribute name="VALUE" x="142.875" y="95.885" size="1.778" layer="96"/>
 </instance>
-<instance part="J4" gate="G$1" x="20.32" y="48.26" smashed="yes">
+<instance part="J1" gate="G$1" x="20.32" y="48.26" smashed="yes">
 <attribute name="NAME" x="15.24" y="71.12" size="1.778" layer="95" font="vector" align="top-left"/>
 <attribute name="VALUE" x="15.24" y="25.4" size="1.778" layer="96" font="vector"/>
 </instance>
@@ -23991,7 +24001,7 @@ Vmon is adjusted to have the max typical voltage of around 2.5V</text>
 <segment>
 <wire x1="25.4" y1="60.96" x2="27.94" y2="60.96" width="0.1524" layer="91"/>
 <label x="27.94" y="60.96" size="1.27" layer="95" xref="yes"/>
-<pinref part="J4" gate="G$1" pin="2"/>
+<pinref part="J1" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="203.2" y1="177.8" x2="200.66" y2="177.8" width="0.1524" layer="91"/>
@@ -24033,7 +24043,7 @@ Vmon is adjusted to have the max typical voltage of around 2.5V</text>
 <segment>
 <wire x1="25.4" y1="55.88" x2="27.94" y2="55.88" width="0.1524" layer="91"/>
 <label x="27.94" y="55.88" size="1.27" layer="95" xref="yes"/>
-<pinref part="J4" gate="G$1" pin="3"/>
+<pinref part="J1" gate="G$1" pin="3"/>
 </segment>
 <segment>
 <label x="200.66" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -24055,7 +24065,7 @@ Vmon is adjusted to have the max typical voltage of around 2.5V</text>
 <segment>
 <label x="27.94" y="50.8" size="1.27" layer="95" xref="yes"/>
 <wire x1="27.94" y1="50.8" x2="25.4" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="4"/>
+<pinref part="J1" gate="G$1" pin="4"/>
 </segment>
 <segment>
 <wire x1="203.2" y1="187.96" x2="200.66" y2="187.96" width="0.1524" layer="91"/>
@@ -24067,7 +24077,7 @@ Vmon is adjusted to have the max typical voltage of around 2.5V</text>
 <segment>
 <wire x1="25.4" y1="45.72" x2="27.94" y2="45.72" width="0.1524" layer="91"/>
 <label x="27.94" y="45.72" size="1.27" layer="95" xref="yes"/>
-<pinref part="J4" gate="G$1" pin="5"/>
+<pinref part="J1" gate="G$1" pin="5"/>
 </segment>
 <segment>
 <wire x1="203.2" y1="185.42" x2="200.66" y2="185.42" width="0.1524" layer="91"/>
@@ -24079,7 +24089,7 @@ Vmon is adjusted to have the max typical voltage of around 2.5V</text>
 <segment>
 <label x="27.94" y="40.64" size="1.27" layer="95" xref="yes"/>
 <wire x1="27.94" y1="40.64" x2="25.4" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="6"/>
+<pinref part="J1" gate="G$1" pin="6"/>
 </segment>
 <segment>
 <wire x1="203.2" y1="144.78" x2="200.66" y2="144.78" width="0.1524" layer="91"/>
@@ -24091,7 +24101,7 @@ Vmon is adjusted to have the max typical voltage of around 2.5V</text>
 <segment>
 <wire x1="25.4" y1="35.56" x2="27.94" y2="35.56" width="0.1524" layer="91"/>
 <label x="27.94" y="35.56" size="1.27" layer="95" xref="yes"/>
-<pinref part="J4" gate="G$1" pin="7"/>
+<pinref part="J1" gate="G$1" pin="7"/>
 </segment>
 <segment>
 <wire x1="203.2" y1="142.24" x2="200.66" y2="142.24" width="0.1524" layer="91"/>
@@ -24103,7 +24113,7 @@ Vmon is adjusted to have the max typical voltage of around 2.5V</text>
 <segment>
 <label x="27.94" y="30.48" size="1.27" layer="95" xref="yes"/>
 <wire x1="27.94" y1="30.48" x2="25.4" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="8"/>
+<pinref part="J1" gate="G$1" pin="8"/>
 </segment>
 <segment>
 <wire x1="203.2" y1="139.7" x2="200.66" y2="139.7" width="0.1524" layer="91"/>
