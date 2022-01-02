@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
@@ -23,7 +23,7 @@
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -33,7 +33,7 @@
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -1630,13 +1630,13 @@ Your Eurocircuits Team
 <attribute name="POPULARITY" value="37" x="-3" y="4" size="1.778" layer="27" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="-3" y="4" size="1.778" layer="27" display="off"/>
 </element>
-<element name="D1" library="RoboJackets-LEDs" package="CHIP-LED0603" value="GREEN" x="8.9" y="1.1" smashed="yes" rot="R180">
-<attribute name="DIGIKEY" value="160-1446-1-ND" x="8.9" y="1.1" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="LTST-C191KGKT" x="8.9" y="1.1" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="9.535" y="1.735" size="1.27" layer="25" rot="R270"/>
+<element name="D1" library="RoboJackets-LEDs" package="CHIP-LED0603" value="GREEN" x="3.6" y="-0.2" smashed="yes" rot="R270">
+<attribute name="DIGIKEY" value="160-1446-1-ND" x="3.6" y="-0.2" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="LTST-C191KGKT" x="3.6" y="-0.2" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="2.965" y="0.435" size="1.27" layer="25"/>
 </element>
-<element name="R1" library="RoboJackets-Resistors" package="R0603W" value="" x="3.6" y="1.6" smashed="yes">
-<attribute name="NAME" x="2.1" y="2.6" size="1" layer="25"/>
+<element name="R1" library="RoboJackets-Resistors" package="R0603W" value="100" x="3.6" y="1.6" smashed="yes">
+<attribute name="NAME" x="2.1" y="2.6" size="1" layer="25" align="bottom-center"/>
 </element>
 </elements>
 <signals>
@@ -1672,11 +1672,9 @@ Your Eurocircuits Team
 <wire x1="-2.15" y1="4.85" x2="-2" y2="5" width="0.2" layer="1"/>
 <via x="-2" y="5" extent="1-16" drill="0.35"/>
 <contactref element="D1" pad="C"/>
-<wire x1="-2" y1="1.6" x2="8.9" y2="0.35" width="0" layer="19" extent="1-1"/>
-<wire x1="-2.15" y1="4" x2="-2" y2="1.6" width="0" layer="19" extent="1-1"/>
-<wire x1="0.85" y1="4" x2="-2.15" y2="4" width="0" layer="19" extent="1-1"/>
-<wire x1="3.85" y1="4" x2="0.85" y2="4" width="0" layer="19" extent="1-1"/>
-<wire x1="6.35" y1="-3.81" x2="0.9125" y2="-1" width="0" layer="19" extent="1-1"/>
+<via x="4.4" y="-1.5" extent="1-16" drill="0.35"/>
+<wire x1="4.4" y1="-1.5" x2="4.35" y2="-1.45" width="0.2" layer="1"/>
+<wire x1="4.35" y1="-1.45" x2="4.35" y2="-0.2" width="0.2" layer="1"/>
 </signal>
 <signal name="+3.3V">
 <contactref element="KIT1" pad="8"/>
@@ -1689,7 +1687,8 @@ Your Eurocircuits Team
 <wire x1="5.54" y1="3" x2="6.35" y2="3.81" width="0.2" layer="1"/>
 <wire x1="-2.85" y1="3" x2="0" y2="3" width="0.2" layer="1"/>
 <wire x1="0" y1="3" x2="3" y2="3" width="0.2" layer="1"/>
-<wire x1="3" y1="3" x2="5.54" y2="3" width="0.2" layer="1"/>
+<wire x1="3" y1="3" x2="4" y2="3" width="0.2" layer="1"/>
+<wire x1="4" y1="3" x2="5.54" y2="3" width="0.2" layer="1"/>
 <wire x1="-0.85" y1="4" x2="0" y2="3.15" width="0.2" layer="1"/>
 <wire x1="0" y1="3.15" x2="0" y2="3" width="0.2" layer="1"/>
 <wire x1="2.15" y1="4" x2="2.15" y2="3.85" width="0.2" layer="1"/>
@@ -1702,7 +1701,8 @@ Your Eurocircuits Team
 <wire x1="1.5" y1="-1.5" x2="1.8" y2="-1.2" width="0.2" layer="1"/>
 <wire x1="1.8" y1="-1.2" x2="1.8" y2="-0.6375" width="0.2" layer="1"/>
 <contactref element="R1" pad="2"/>
-<wire x1="6.35" y1="3.81" x2="4.375" y2="1.6" width="0" layer="19" extent="1-1"/>
+<wire x1="4" y1="3" x2="4.375" y2="2.625" width="0.2" layer="1"/>
+<wire x1="4.375" y1="2.625" x2="4.375" y2="1.6" width="0.2" layer="1"/>
 </signal>
 <signal name="MOSI">
 <contactref element="KIT1" pad="1"/>
@@ -1749,7 +1749,8 @@ Your Eurocircuits Team
 <signal name="N$1">
 <contactref element="D1" pad="A"/>
 <contactref element="R1" pad="1"/>
-<wire x1="2.825" y1="1.6" x2="8.9" y2="1.85" width="0" layer="19" extent="1-1"/>
+<wire x1="2.85" y1="-0.2" x2="2.85" y2="1.575" width="0.2" layer="1"/>
+<wire x1="2.85" y1="1.575" x2="2.825" y2="1.6" width="0.2" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

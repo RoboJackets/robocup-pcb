@@ -8219,7 +8219,7 @@ In this library you will find resistors. If you are looking for a common package
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="D1" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-GREEN" value="GREEN"/>
 <part name="SUPPLY1" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
-<part name="R1" library="RoboJackets-Resistors" deviceset="R0603W" device=""/>
+<part name="R1" library="RoboJackets-Resistors" deviceset="R0603W" device="" value="100"/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
