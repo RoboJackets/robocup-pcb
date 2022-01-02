@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -30,7 +30,7 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="0" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="0" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
@@ -245,6 +245,7 @@ FRONT</text>
 Board</text>
 <text x="-7.4" y="60.4" size="1" layer="25" font="vector" ratio="15" rot="R180">J2</text>
 <text x="17.6" y="-37.6" size="1" layer="25" font="vector" ratio="15" rot="R180">J6</text>
+<text x="-37" y="61" size="1" layer="25" font="vector" ratio="15">J3</text>
 </plain>
 <libraries>
 <library name="rcl">
@@ -2581,12 +2582,6 @@ rfk_1850.pdf</description>
 <text x="-8.636" y="17.399" size="1.27" layer="21">&gt;Name</text>
 <text x="-8.89" y="-3.81" size="1.27" layer="21">&gt;Value</text>
 </package>
-<package name="640389-2_TYC">
-<pad name="1" x="0" y="0" drill="1.778" diameter="2.286"/>
-<pad name="2" x="3.9624" y="0" drill="1.778" diameter="2.286"/>
-<text x="-1.016" y="-3.175" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
-<text x="-1.2954" y="3.175" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Name</text>
-</package>
 <package name="CON8_1X8_UB_SFW_JAE">
 <smd name="1" x="0" y="0" dx="0.6096" dy="1.905" layer="1"/>
 <smd name="2" x="1" y="3.65" dx="0.6096" dy="1.905" layer="1"/>
@@ -2611,9 +2606,31 @@ rfk_1850.pdf</description>
 <wire x1="6.35" y1="3.7338" x2="5.6388" y2="3.7338" width="0.1524" layer="21"/>
 <wire x1="-1.6256" y1="3.7338" x2="-3.8354" y2="3.7338" width="0.1524" layer="21"/>
 <wire x1="8.636" y1="-0.127" x2="10.8204" y2="-0.127" width="0.1524" layer="21"/>
-<text x="0.254" y="-2.286" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
-<text x="0.2286" y="4.445" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Name</text>
+<text x="0.254" y="-2.286" size="1" layer="27" font="vector" ratio="10" rot="SR0">&gt;Value</text>
+<text x="0.2286" y="4.445" size="1" layer="25" font="vector" ratio="10" rot="SR0">&gt;Name</text>
 <wire x1="-3.837" y1="3.81" x2="-3.837" y2="-0.127" width="0.127" layer="21"/>
+</package>
+<package name="CON_436500217_MOL">
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.524" shape="square"/>
+<pad name="2" x="-2.9972" y="0" drill="1.016" diameter="1.524"/>
+<pad name="M1" x="2.9972" y="-1.9558" drill="1.27" diameter="1.27"/>
+<pad name="M2" x="-5.9944" y="-1.9558" drill="1.27" diameter="1.27"/>
+<wire x1="3.5814" y1="0" x2="5.1054" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="5.1054" y1="0.635" x2="5.1054" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="5.1054" y1="-0.635" x2="3.5814" y2="0" width="0.1524" layer="51"/>
+<wire x1="-6.3246" y1="-2.4638" x2="3.3274" y2="-2.4638" width="0.1524" layer="51"/>
+<wire x1="3.3274" y1="-2.4638" x2="3.3274" y2="3.0988" width="0.1524" layer="51"/>
+<wire x1="3.3274" y1="3.0988" x2="-6.3246" y2="3.0988" width="0.1524" layer="51"/>
+<wire x1="-6.3246" y1="3.0988" x2="-6.3246" y2="-2.4638" width="0.1524" layer="51"/>
+<wire x1="3.5814" y1="0" x2="5.1054" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="5.1054" y1="0.635" x2="5.1054" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="5.1054" y1="-0.635" x2="3.5814" y2="0" width="0.1524" layer="21"/>
+<wire x1="-6.3246" y1="3.0988" x2="-6.3246" y2="-1.0668" width="0.1524" layer="21"/>
+<wire x1="-5.207" y1="-2.4638" x2="2.1844" y2="-2.4638" width="0.1524" layer="21"/>
+<wire x1="3.3274" y1="-1.0668" x2="3.3274" y2="3.0988" width="0.1524" layer="21"/>
+<wire x1="3.3274" y1="3.0988" x2="-6.3246" y2="3.0988" width="0.1524" layer="21"/>
+<text x="-4.9958" y="-4.045" size="1" layer="27" font="vector" ratio="10" rot="SR0">&gt;Value</text>
+<text x="-4.8752" y="4.045" size="1" layer="25" font="vector" ratio="10" rot="SR0">&gt;Name</text>
 </package>
 </packages>
 </library>
@@ -13739,18 +13756,19 @@ Your Eurocircuits Team
 <attribute name="VALUE" x="0.305" y="-23.365" size="1.27" layer="28" rot="MR270"/>
 </element>
 <element name="J6" library="RoboJackets-Connectors" package="XT60PW-M" value="XT60PW-MAMASS" x="10.9" y="-20.4" smashed="yes" rot="R180"/>
-<element name="J5" library="RoboJackets-Connectors" package="640389-2_TYC" value="640389-2" x="-50.3" y="62.7" smashed="yes" rot="R270">
-<attribute name="COPYRIGHT" value="Copyright (C) 2021 Ultra Librarian. All rights reserved." x="-50.3" y="62.7" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER_1" value="A1976-ND" x="-50.3" y="62.7" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="640389-2" x="-50.3" y="62.7" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MFR_NAME" value="TE Connectivity" x="-50.3" y="62.7" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="-29.345" y="63.9954" size="1.27" layer="27" ratio="6" rot="SR270"/>
-</element>
 <element name="J2" library="RoboJackets-Connectors" package="CON8_1X8_UB_SFW_JAE" value="SFW8S-2STE1LF" x="-16.5" y="61.5" smashed="yes">
 <attribute name="NAME" x="-16.2714" y="65.945" size="1.27" layer="27" ratio="6" rot="SR0"/>
 </element>
 <element name="J3" library="RoboJackets-Connectors" package="CON8_1X8_UB_SFW_JAE" value="SFW8S-2STE1LF" x="-33.3" y="56.4" smashed="yes">
 <attribute name="NAME" x="-33.0714" y="60.845" size="1.27" layer="27" ratio="6" rot="SR0"/>
+</element>
+<element name="J5" library="RoboJackets-Connectors" package="CON_436500217_MOL" value="436500217" x="-50" y="60" smashed="yes" rot="MR90">
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="-50" y="60" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_1" value="WM12762-ND" x="-50" y="60" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="436500217" x="-50" y="60" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MFR_NAME" value="Molex Connector Corporation" x="-50" y="60" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="NAME" x="-45.955" y="55.1248" size="1" layer="26" font="vector" ratio="10" rot="SMR90"/>
+<attribute name="VALUE" x="-54.045" y="55.0042" size="1" layer="28" font="vector" ratio="10" rot="SMR90"/>
 </element>
 </elements>
 <signals>
@@ -14822,7 +14840,6 @@ Your Eurocircuits Team
 <via x="-35" y="55" extent="1-16" drill="0.35"/>
 <contactref element="J6" pad="P$3"/>
 <contactref element="J6" pad="P$1"/>
-<contactref element="J5" pad="2"/>
 <wire x1="17.65" y1="-26.4" x2="16.41005" y2="-26.4" width="0.5" layer="1"/>
 <wire x1="16.41005" y1="-26.4" x2="14.5" y2="-24.48995" width="0.5" layer="1"/>
 <wire x1="14.5" y1="-20.4" x2="14.5" y2="-24.48995" width="0.5" layer="1"/>
@@ -14833,6 +14850,7 @@ Your Eurocircuits Team
 <wire x1="-30.299996875" y1="60.05" x2="-29.349996875" y2="61" width="0.3" layer="1"/>
 <wire x1="-29.349996875" y1="61" x2="-29.0548" y2="61" width="0.3" layer="1"/>
 <via x="-29.0548" y="61" extent="1-16" drill="0.35"/>
+<contactref element="J5" pad="2"/>
 </signal>
 <signal name="+5V">
 <contactref element="R3" pad="1"/>
