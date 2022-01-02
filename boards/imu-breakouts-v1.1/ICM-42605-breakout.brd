@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
@@ -186,7 +186,6 @@
 <wire x1="7.62" y1="-6.35" x2="7.62" y2="6.35" width="0" layer="20"/>
 <wire x1="7.62" y1="6.35" x2="-7.62" y2="6.35" width="0" layer="20"/>
 <wire x1="-7.62" y1="6.35" x2="-7.62" y2="-6.35" width="0" layer="20"/>
-<rectangle x1="-5" y1="-5" x2="-2.5" y2="-2.5" layer="22"/>
 <text x="0" y="-4" size="1.5" layer="21" font="vector" ratio="15" rot="R180" align="bottom-center">ICM 42605</text>
 <text x="0" y="2" size="1.5" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-center">2019</text>
 <text x="0" y="-1" size="1" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-center">IMU
