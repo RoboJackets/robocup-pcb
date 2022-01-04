@@ -11399,6 +11399,89 @@ Datasheet Link: https://industrial.panasonic.com/ww/products/pt/general-purpose-
 </deviceset>
 </devicesets>
 </library>
+<library name="RoboJackets-Discrete">
+<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
+&lt;hr&gt;
+&lt;h1&gt;RoboJackets EAGLE Libraries - Discrete&lt;/h1&gt;&lt;/br&gt;
+&lt;p&gt;
+In this library you will find MOSFETs and other circuit elements commonly used for switching signals between HIGH and LOW.
+&lt;/p&gt;</description>
+<packages>
+<package name="SOT-23-3">
+<wire x1="1.45" y1="0.8" x2="1.45" y2="-0.8" width="0.2" layer="21"/>
+<wire x1="-1.45" y1="-0.8" x2="-1.45" y2="0.8" width="0.2" layer="21"/>
+<wire x1="-1.45" y1="0.8" x2="-0.55" y2="0.8" width="0.2" layer="21"/>
+<wire x1="0.45" y1="-0.8" x2="-0.45" y2="-0.8" width="0.2" layer="21"/>
+<wire x1="0.55" y1="0.8" x2="1.45" y2="0.8" width="0.2" layer="21"/>
+<smd name="1" x="-0.95" y="-1.2" dx="1" dy="0.7" layer="1" rot="R90"/>
+<smd name="2" x="0.95" y="-1.2" dx="1" dy="0.7" layer="1" rot="R90"/>
+<smd name="3" x="0" y="1.2" dx="1" dy="0.7" layer="1" rot="R90"/>
+<text x="-2" y="-1" size="1" layer="25" rot="R90">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="N_MOSFET">
+<wire x1="-0.508" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.524" y1="-2.159" x2="0" y2="-2.159" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-2.159" width="0.1524" layer="94"/>
+<wire x1="1.397" y1="-0.254" x2="1.397" y2="-3.048" width="0.1524" layer="94"/>
+<wire x1="1.397" y1="-3.048" x2="0" y2="-3.048" width="0.1524" layer="94"/>
+<wire x1="-1.524" y1="2.159" x2="0" y2="2.159" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.159" x2="0" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="3.048" x2="1.397" y2="3.048" width="0.1524" layer="94"/>
+<wire x1="1.397" y1="3.048" x2="1.397" y2="0.762" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.159" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<text x="2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<text x="2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<rectangle x1="-2.032" y1="1.397" x2="-1.524" y2="2.921" layer="94"/>
+<rectangle x1="-2.032" y1="-0.762" x2="-1.524" y2="0.762" layer="94"/>
+<rectangle x1="-2.032" y1="-2.921" x2="-1.524" y2="-1.397" layer="94"/>
+<rectangle x1="0.762" y1="0.762" x2="2.032" y2="0.889" layer="94"/>
+<pin name="D" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="S" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="G" x="-5.08" y="-2.54" visible="off" length="short" direction="pas"/>
+<polygon width="0.1016" layer="94">
+<vertex x="-1.524" y="0"/>
+<vertex x="-0.508" y="0.635"/>
+<vertex x="-0.508" y="-0.635"/>
+</polygon>
+<polygon width="0.1016" layer="94">
+<vertex x="1.397" y="0.762"/>
+<vertex x="2.032" y="-0.254"/>
+<vertex x="0.762" y="-0.254"/>
+</polygon>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DMN65D8L-7" prefix="Q">
+<description>MOSFET N-CH 60V 310MA SOT23
+&lt;p&gt;
+&lt;a href="https://www.diodes.com/assets/Datasheets/DMN65D8L.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="N_MOSFET" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-23-3">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DKPN" value="DMN65D8L-7DICT-ND" constant="no"/>
+</technology>
+<technology name="MMBT2222A">
+<attribute name="DKPN" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -11429,31 +11512,31 @@ Datasheet Link: https://industrial.panasonic.com/ww/products/pt/general-purpose-
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10u"/>
 <part name="L1" library="RoboJackets-Inductors" deviceset="INDUCTOR_0805" device="" value="47u"/>
 <part name="FRAME1" library="RoboJackets-Frames" deviceset="FRAME_11_17" device=""/>
-<part name="D1-R1" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="330"/>
-<part name="D1-R2" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="330"/>
-<part name="D1-R3" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="330"/>
-<part name="D1-R4" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="330"/>
-<part name="D1-R5" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="330"/>
-<part name="D1-R6" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="330"/>
-<part name="D1-R7" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="330"/>
-<part name="D2-R1" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="330"/>
-<part name="D2-R2" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="330"/>
-<part name="D2-R3" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="330"/>
-<part name="D2-R4" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="330"/>
-<part name="D2-R5" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="330"/>
-<part name="D2-R6" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="330"/>
-<part name="D2-R7" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="330"/>
-<part name="D3-R1" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="330"/>
-<part name="D3-R2" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="330"/>
-<part name="D3-R3" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="330"/>
-<part name="D3-R4" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="330"/>
-<part name="D3-R5" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="330"/>
-<part name="D3-R6" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="330"/>
-<part name="D3-R7" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="330"/>
+<part name="D1-R1" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="100"/>
+<part name="D1-R2" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="100"/>
+<part name="D1-R3" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="100"/>
+<part name="D1-R4" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="100"/>
+<part name="D1-R5" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="100"/>
+<part name="D1-R6" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="100"/>
+<part name="D1-R7" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="100"/>
+<part name="D2-R1" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="100"/>
+<part name="D2-R2" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="100"/>
+<part name="D2-R3" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="100"/>
+<part name="D2-R4" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="100"/>
+<part name="D2-R5" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="100"/>
+<part name="D2-R6" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="100"/>
+<part name="D2-R7" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="100"/>
+<part name="D3-R1" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="100"/>
+<part name="D3-R2" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="100"/>
+<part name="D3-R3" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="100"/>
+<part name="D3-R4" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="100"/>
+<part name="D3-R5" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="100"/>
+<part name="D3-R6" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="100"/>
+<part name="D3-R7" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="100"/>
 <part name="LED1-R1" library="RoboJackets-Resistors" deviceset="RESISTOR" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="160"/>
 <part name="LED2-R1" library="RoboJackets-Resistors" deviceset="RESISTOR" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="145"/>
 <part name="LED3-R1" library="RoboJackets-Resistors" deviceset="RESISTOR" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="193"/>
-<part name="D2-R8" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="330"/>
+<part name="D2-R8" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="133"/>
 <part name="T5" library="transistor" library_urn="urn:adsk.eagle:library:402" deviceset="BC846" device="" package3d_urn="urn:adsk.eagle:package:28738/2"/>
 <part name="VD9" library="RoboJackets-Resistors" deviceset="RESISTOR" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="10.0k"/>
 <part name="VD10" library="RoboJackets-Resistors" deviceset="RESISTOR" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="20.0k"/>
@@ -11475,6 +11558,9 @@ Datasheet Link: https://industrial.panasonic.com/ww/products/pt/general-purpose-
 <part name="VD6" library="RoboJackets-Resistors" deviceset="RESISTOR" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="11k"/>
 <part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF"/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X4" device="" package3d_urn="urn:adsk.eagle:package:22461/2"/>
+<part name="MOS-R2" library="RoboJackets-Resistors" deviceset="RESISTOR" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="10.0k"/>
+<part name="MOS-R1" library="RoboJackets-Resistors" deviceset="RESISTOR" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="40.0k"/>
+<part name="Q1" library="RoboJackets-Discrete" deviceset="DMN65D8L-7" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11495,44 +11581,43 @@ Datasheet Link: https://industrial.panasonic.com/ww/products/pt/general-purpose-
 <wire x1="185.42" y1="-83.82" x2="185.42" y2="-17.78" width="0.1524" layer="95" style="longdash"/>
 <wire x1="185.42" y1="-17.78" x2="58.42" y2="-17.78" width="0.1524" layer="95" style="longdash"/>
 <wire x1="-220.98" y1="-53.34" x2="-220.98" y2="-134.62" width="0.1524" layer="95" style="longdash"/>
-<wire x1="-220.98" y1="-134.62" x2="45.72" y2="-134.62" width="0.1524" layer="95" style="longdash"/>
-<wire x1="45.72" y1="-134.62" x2="45.72" y2="-53.34" width="0.1524" layer="95" style="longdash"/>
-<wire x1="45.72" y1="-53.34" x2="-220.98" y2="-53.34" width="0.1524" layer="95" style="longdash"/>
+<wire x1="-220.98" y1="-134.62" x2="-43.18" y2="-134.62" width="0.1524" layer="95" style="longdash"/>
+<wire x1="-43.18" y1="-134.62" x2="-43.18" y2="-53.34" width="0.1524" layer="95" style="longdash"/>
+<wire x1="-43.18" y1="-53.34" x2="-220.98" y2="-53.34" width="0.1524" layer="95" style="longdash"/>
 <text x="-213.36" y="-66.04" size="5.08" layer="95">Voltage Divider</text>
 <text x="-212.852" y="32.258" size="5.08" layer="95">JST Pins</text>
 <text x="-159.512" y="35.56" size="5.08" layer="95">Button</text>
-<text x="-108.204" y="32.258" size="5.08" layer="95">Fuse</text>
-<text x="-44.704" y="35.052" size="5.08" layer="95">Buzzer</text>
-<wire x1="-215.9" y1="40.64" x2="-215.9" y2="2.54" width="0.1524" layer="95" style="longdash"/>
-<wire x1="-215.9" y1="2.54" x2="-175.26" y2="2.54" width="0.1524" layer="95" style="longdash"/>
+<text x="-32.004" y="35.052" size="5.08" layer="95">Buzzer</text>
+<wire x1="-223.52" y1="40.64" x2="-223.52" y2="2.54" width="0.1524" layer="95" style="longdash"/>
+<wire x1="-223.52" y1="2.54" x2="-175.26" y2="2.54" width="0.1524" layer="95" style="longdash"/>
 <wire x1="-175.26" y1="2.54" x2="-175.26" y2="40.64" width="0.1524" layer="95" style="longdash"/>
-<wire x1="-175.26" y1="40.64" x2="-215.9" y2="40.64" width="0.1524" layer="95" style="longdash"/>
+<wire x1="-175.26" y1="40.64" x2="-223.52" y2="40.64" width="0.1524" layer="95" style="longdash"/>
 <wire x1="-162.56" y1="40.64" x2="-162.56" y2="2.54" width="0.1524" layer="95" style="longdash"/>
-<wire x1="-162.56" y1="2.54" x2="-127" y2="2.54" width="0.1524" layer="95" style="longdash"/>
-<wire x1="-127" y1="2.54" x2="-127" y2="43.18" width="0.1524" layer="95" style="longdash"/>
-<wire x1="-127" y1="43.18" x2="-162.56" y2="43.18" width="0.1524" layer="95" style="longdash"/>
+<wire x1="-162.56" y1="2.54" x2="-124.46" y2="2.54" width="0.1524" layer="95" style="longdash"/>
+<wire x1="-124.46" y1="2.54" x2="-124.46" y2="43.18" width="0.1524" layer="95" style="longdash"/>
+<wire x1="-124.46" y1="43.18" x2="-162.56" y2="43.18" width="0.1524" layer="95" style="longdash"/>
 <wire x1="-162.56" y1="43.18" x2="-162.56" y2="40.64" width="0.1524" layer="95"/>
-<wire x1="-111.76" y1="40.64" x2="-111.76" y2="10.16" width="0.1524" layer="95" style="longdash"/>
-<wire x1="-111.76" y1="10.16" x2="-63.5" y2="10.16" width="0.1524" layer="95" style="longdash"/>
-<wire x1="-63.5" y1="10.16" x2="-63.5" y2="40.64" width="0.1524" layer="95" style="longdash"/>
-<wire x1="-63.5" y1="40.64" x2="-106.68" y2="40.64" width="0.1524" layer="95" style="longdash"/>
-<wire x1="-106.68" y1="40.64" x2="-111.76" y2="40.64" width="0.1524" layer="95"/>
-<wire x1="-48.26" y1="43.18" x2="-48.26" y2="5.08" width="0.1524" layer="95" style="longdash"/>
-<wire x1="-48.26" y1="5.08" x2="2.54" y2="5.08" width="0.1524" layer="95" style="longdash"/>
-<wire x1="2.54" y1="5.08" x2="2.54" y2="43.18" width="0.1524" layer="95" style="longdash"/>
-<wire x1="2.54" y1="43.18" x2="-48.26" y2="43.18" width="0.1524" layer="95" style="longdash"/>
-<wire x1="-218.44" y1="-4.318" x2="-218.44" y2="-48.26" width="0.1524" layer="95" style="longdash"/>
+<wire x1="-35.56" y1="43.18" x2="-35.56" y2="5.08" width="0.1524" layer="95" style="longdash"/>
+<wire x1="-35.56" y1="5.08" x2="15.24" y2="5.08" width="0.1524" layer="95" style="longdash"/>
+<wire x1="15.24" y1="5.08" x2="15.24" y2="43.18" width="0.1524" layer="95" style="longdash"/>
+<wire x1="15.24" y1="43.18" x2="-35.56" y2="43.18" width="0.1524" layer="95" style="longdash"/>
+<wire x1="-218.44" y1="-1.778" x2="-218.44" y2="-48.26" width="0.1524" layer="95" style="longdash"/>
 <wire x1="-218.44" y1="-48.26" x2="-119.38" y2="-48.26" width="0.1524" layer="95"/>
-<wire x1="-119.38" y1="-48.26" x2="-119.38" y2="-4.318" width="0.1524" layer="95" style="longdash"/>
-<wire x1="-119.38" y1="-4.318" x2="-218.44" y2="-4.318" width="0.1524" layer="95" style="longdash"/>
+<wire x1="-119.38" y1="-48.26" x2="-119.38" y2="-1.778" width="0.1524" layer="95" style="longdash"/>
+<wire x1="-119.38" y1="-1.778" x2="-218.44" y2="-1.778" width="0.1524" layer="95" style="longdash"/>
 <text x="-214.63" y="-13.462" size="5.08" layer="95">LEDs</text>
 <wire x1="-116.84" y1="106.68" x2="-116.84" y2="55.88" width="0.1524" layer="95"/>
 <wire x1="-28.194" y1="109.474" x2="-28.194" y2="58.674" width="0.1524" layer="95"/>
-<wire x1="-93.98" y1="-5.08" x2="-15.24" y2="-5.08" width="0.1524" layer="97" style="longdash"/>
-<wire x1="-15.24" y1="-5.08" x2="-15.24" y2="-45.72" width="0.1524" layer="97" style="longdash"/>
-<wire x1="-15.24" y1="-45.72" x2="-93.98" y2="-45.72" width="0.1524" layer="97" style="longdash"/>
-<wire x1="-93.98" y1="-45.72" x2="-93.98" y2="-5.08" width="0.1524" layer="97" style="longdash"/>
-<text x="-88.9" y="-12.7" size="5.08" layer="97">Programming Header</text>
+<wire x1="-42.672" y1="-4.826" x2="36.068" y2="-4.826" width="0.1524" layer="97" style="longdash"/>
+<wire x1="36.068" y1="-4.826" x2="36.068" y2="-45.466" width="0.1524" layer="97" style="longdash"/>
+<wire x1="36.068" y1="-45.466" x2="-42.672" y2="-45.466" width="0.1524" layer="97" style="longdash"/>
+<wire x1="-42.672" y1="-45.466" x2="-42.672" y2="-4.826" width="0.1524" layer="97" style="longdash"/>
+<text x="-37.592" y="-12.446" size="5.08" layer="97">Programming Header</text>
+<text x="-104.14" y="35.56" size="5.08" layer="95">MOSFET</text>
+<wire x1="-111.76" y1="43.18" x2="-111.76" y2="-45.72" width="0.1524" layer="95" style="longdash"/>
+<wire x1="-111.76" y1="-45.72" x2="-58.42" y2="-45.72" width="0.1524" layer="95" style="longdash"/>
+<wire x1="-58.42" y1="-45.72" x2="-58.42" y2="43.18" width="0.1524" layer="95" style="longdash"/>
+<wire x1="-58.42" y1="43.18" x2="-111.76" y2="43.18" width="0.1524" layer="95" style="longdash"/>
 </plain>
 <instances>
 <instance part="D1" gate="G$1" x="147.32" y="-63.5" smashed="yes" rot="R90">
@@ -11547,9 +11632,9 @@ Datasheet Link: https://industrial.panasonic.com/ww/products/pt/general-purpose-
 <attribute name="NAME" x="-201.93" y="20.955" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-201.93" y="7.62" size="1.778" layer="96"/>
 </instance>
-<instance part="F1" gate="G$1" x="-86.36" y="17.78" smashed="yes">
-<attribute name="NAME" x="-96.52" y="20.32" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-96.52" y="15.24" size="1.778" layer="96" align="top-left"/>
+<instance part="F1" gate="G$1" x="-81.28" y="-15.24" smashed="yes" rot="R270">
+<attribute name="NAME" x="-78.74" y="-5.08" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="-83.82" y="-5.08" size="1.778" layer="96" rot="R270" align="top-left"/>
 </instance>
 <instance part="U1" gate="A" x="73.66" y="-53.34" smashed="yes">
 <attribute name="NAME" x="99.4156" y="-44.2214" size="2.0828" layer="95" ratio="6" rot="SR0"/>
@@ -11583,9 +11668,9 @@ Datasheet Link: https://industrial.panasonic.com/ww/products/pt/general-purpose-
 <attribute name="VALUE" x="58.42" y="78.74" size="1.778" layer="96" rot="R90"/>
 <attribute name="NAME" x="45.085" y="78.74" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="XTAL1" gate="A" x="-30.48" y="22.86" smashed="yes">
-<attribute name="NAME" x="-33.2994" y="25.5524" size="3.4798" layer="95" ratio="10" rot="SR0"/>
-<attribute name="VALUE" x="-34.3662" y="16.6624" size="3.4798" layer="96" ratio="10" rot="SR0"/>
+<instance part="XTAL1" gate="A" x="-17.78" y="22.86" smashed="yes">
+<attribute name="NAME" x="-20.5994" y="25.5524" size="3.4798" layer="95" ratio="10" rot="SR0"/>
+<attribute name="VALUE" x="-21.6662" y="16.6624" size="3.4798" layer="96" ratio="10" rot="SR0"/>
 </instance>
 <instance part="LED1" gate="G$1" x="-187.96" y="-15.24" smashed="yes">
 <attribute name="NAME" x="-184.404" y="-19.812" size="1.778" layer="95" rot="R90"/>
@@ -11625,7 +11710,7 @@ Datasheet Link: https://industrial.panasonic.com/ww/products/pt/general-purpose-
 <attribute name="LAST_DATE_TIME" x="104.14" y="-140.97" size="2.54" layer="94"/>
 <attribute name="SHEET" x="180.34" y="-140.97" size="2.54" layer="94"/>
 <attribute name="DRAWING_NAME" x="109.22" y="-123.19" size="2.54" layer="94"/>
-<attribute name="TEAM" x="95.25" y="-107.95" size="3.81" layer="94" ratio="10" align="top-left"/>
+<attribute name="TEAM" x="95.25" y="-110.49" size="3.81" layer="94" ratio="10" align="top-left"/>
 <attribute name="REVISION" x="166.37" y="-135.89" size="2.54" layer="94"/>
 <attribute name="SCH_DESC" x="95.25" y="-135.89" size="2.54" layer="94"/>
 </instance>
@@ -11809,9 +11894,21 @@ Datasheet Link: https://industrial.panasonic.com/ww/products/pt/general-purpose-
 <attribute name="NAME" x="-207.264" y="-111.125" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-207.264" y="-115.951" size="1.778" layer="96"/>
 </instance>
-<instance part="JP1" gate="A" x="-68.58" y="-30.48" smashed="yes">
-<attribute name="NAME" x="-74.93" y="-22.225" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-74.93" y="-38.1" size="1.778" layer="96"/>
+<instance part="JP1" gate="A" x="-17.272" y="-30.226" smashed="yes">
+<attribute name="NAME" x="-23.622" y="-21.971" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-23.622" y="-37.846" size="1.778" layer="96"/>
+</instance>
+<instance part="MOS-R2" gate="A" x="-99.06" y="-5.08" smashed="yes" rot="R90">
+<attribute name="NAME" x="-100.584" y="-5.08" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="-97.536" y="-5.08" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="MOS-R1" gate="A" x="-99.06" y="10.16" smashed="yes" rot="R90">
+<attribute name="NAME" x="-100.584" y="10.16" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="-97.536" y="10.16" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="Q1" gate="G$1" x="-81.28" y="5.08" smashed="yes">
+<attribute name="VALUE" x="-78.74" y="2.54" size="1.778" layer="96"/>
+<attribute name="NAME" x="-78.74" y="7.62" size="1.778" layer="95"/>
 </instance>
 </instances>
 <busses>
@@ -11915,8 +12012,8 @@ Datasheet Link: https://industrial.panasonic.com/ww/products/pt/general-purpose-
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="6"/>
-<wire x1="-63.5" y1="-30.48" x2="-58.42" y2="-30.48" width="0.1524" layer="91"/>
-<label x="-58.42" y="-30.48" size="1.778" layer="95" xref="yes"/>
+<wire x1="-12.192" y1="-30.226" x2="-7.112" y2="-30.226" width="0.1524" layer="91"/>
+<label x="-7.112" y="-30.226" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -11985,8 +12082,8 @@ Datasheet Link: https://industrial.panasonic.com/ww/products/pt/general-purpose-
 </segment>
 <segment>
 <pinref part="XTAL1" gate="A" pin="2"/>
-<wire x1="-20.32" y1="22.86" x2="-17.78" y2="22.86" width="0.1524" layer="91"/>
-<label x="-17.78" y="22.86" size="1.778" layer="95" xref="yes"/>
+<wire x1="-7.62" y1="22.86" x2="-5.08" y2="22.86" width="0.1524" layer="91"/>
+<label x="-5.08" y="22.86" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="P" pin="VSS"/>
@@ -12100,8 +12197,13 @@ Datasheet Link: https://industrial.panasonic.com/ww/products/pt/general-purpose-
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="5"/>
-<wire x1="-71.12" y1="-30.48" x2="-76.2" y2="-30.48" width="0.1524" layer="91"/>
-<label x="-76.2" y="-30.48" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="-19.812" y1="-30.226" x2="-24.892" y2="-30.226" width="0.1524" layer="91"/>
+<label x="-24.892" y="-30.226" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="MOS-R2" gate="A" pin="1"/>
+<wire x1="-99.06" y1="-10.16" x2="-99.06" y2="-12.7" width="0.1524" layer="91"/>
+<label x="-99.06" y="-12.7" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="18.5V" class="0">
@@ -12122,6 +12224,11 @@ Datasheet Link: https://industrial.panasonic.com/ww/products/pt/general-purpose-
 <pinref part="T3" gate="G$1" pin="C"/>
 <wire x1="-193.04" y1="-81.28" x2="-193.04" y2="-78.74" width="0.1524" layer="91"/>
 <label x="-193.04" y="-78.74" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="Q1" gate="G$1" pin="D"/>
+<wire x1="-81.28" y1="10.16" x2="-81.28" y2="12.7" width="0.1524" layer="91"/>
+<label x="-81.28" y="12.7" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="14.8V" class="0">
@@ -12174,11 +12281,6 @@ Datasheet Link: https://industrial.panasonic.com/ww/products/pt/general-purpose-
 </net>
 <net name="18.5VF" class="0">
 <segment>
-<pinref part="F1" gate="G$1" pin="2"/>
-<wire x1="-76.2" y1="17.78" x2="-73.66" y2="17.78" width="0.1524" layer="91"/>
-<label x="-73.66" y="17.78" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U1" gate="A" pin="VIN"/>
 <wire x1="76.2" y1="-53.34" x2="71.12" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="-53.34" x2="71.12" y2="-50.8" width="0.1524" layer="91"/>
@@ -12188,13 +12290,13 @@ Datasheet Link: https://industrial.panasonic.com/ww/products/pt/general-purpose-
 <junction x="71.12" y="-53.34"/>
 <label x="71.12" y="-50.8" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
+<segment>
+<pinref part="F1" gate="G$1" pin="2"/>
+<wire x1="-81.28" y1="-25.4" x2="-81.28" y2="-27.94" width="0.1524" layer="91"/>
+<label x="-81.28" y="-27.94" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
 </net>
 <net name="18.5VB" class="0">
-<segment>
-<pinref part="F1" gate="G$1" pin="1"/>
-<wire x1="-96.52" y1="17.78" x2="-99.06" y2="17.78" width="0.1524" layer="91"/>
-<label x="-99.06" y="17.78" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
 <segment>
 <pinref part="U$1" gate="A" pin="2"/>
 <wire x1="-139.7" y1="12.7" x2="-137.16" y2="12.7" width="0.1524" layer="91"/>
@@ -12202,6 +12304,11 @@ Datasheet Link: https://industrial.panasonic.com/ww/products/pt/general-purpose-
 <pinref part="U$1" gate="A" pin="3"/>
 <wire x1="-137.16" y1="27.94" x2="-139.7" y2="27.94" width="0.1524" layer="91"/>
 <label x="-137.16" y="27.94" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="MOS-R1" gate="A" pin="2"/>
+<wire x1="-99.06" y1="15.24" x2="-99.06" y2="17.78" width="0.1524" layer="91"/>
+<label x="-99.06" y="17.78" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -12800,29 +12907,29 @@ Datasheet Link: https://industrial.panasonic.com/ww/products/pt/general-purpose-
 <net name="MISO" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="1"/>
-<wire x1="-71.12" y1="-25.4" x2="-76.2" y2="-25.4" width="0.1524" layer="91"/>
-<label x="-76.2" y="-25.4" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-19.812" y1="-25.146" x2="-24.892" y2="-25.146" width="0.1524" layer="91"/>
+<label x="-24.892" y="-25.146" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="2"/>
-<wire x1="-63.5" y1="-25.4" x2="-58.42" y2="-25.4" width="0.1524" layer="91"/>
-<label x="-58.42" y="-25.4" size="1.27" layer="95" xref="yes"/>
+<wire x1="-12.192" y1="-25.146" x2="-7.112" y2="-25.146" width="0.1524" layer="91"/>
+<label x="-7.112" y="-25.146" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SCK" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="3"/>
-<wire x1="-71.12" y1="-27.94" x2="-76.2" y2="-27.94" width="0.1524" layer="91"/>
-<label x="-76.2" y="-27.94" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-19.812" y1="-27.686" x2="-24.892" y2="-27.686" width="0.1524" layer="91"/>
+<label x="-24.892" y="-27.686" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="!RESET!" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="4"/>
-<wire x1="-63.5" y1="-27.94" x2="-58.42" y2="-27.94" width="0.1524" layer="91"/>
-<label x="-58.42" y="-27.94" size="1.27" layer="95" xref="yes"/>
+<wire x1="-12.192" y1="-27.686" x2="-7.112" y2="-27.686" width="0.1524" layer="91"/>
+<label x="-7.112" y="-27.686" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="DI1" class="0">
@@ -12864,8 +12971,8 @@ Datasheet Link: https://industrial.panasonic.com/ww/products/pt/general-purpose-
 <net name="DI4" class="0">
 <segment>
 <pinref part="XTAL1" gate="A" pin="1"/>
-<wire x1="-30.48" y1="22.86" x2="-33.02" y2="22.86" width="0.1524" layer="91"/>
-<label x="-33.02" y="22.86" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="-17.78" y1="22.86" x2="-20.32" y2="22.86" width="0.1524" layer="91"/>
+<label x="-20.32" y="22.86" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="PINS4"/>
@@ -13027,6 +13134,24 @@ Datasheet Link: https://industrial.panasonic.com/ww/products/pt/general-purpose-
 <pinref part="U$2" gate="G$1" pin="PINS26"/>
 <wire x1="129.54" y1="91.44" x2="129.54" y2="93.98" width="0.1524" layer="91"/>
 <label x="129.54" y="93.98" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+</net>
+<net name="N$30" class="0">
+<segment>
+<pinref part="MOS-R1" gate="A" pin="1"/>
+<pinref part="MOS-R2" gate="A" pin="2"/>
+<wire x1="-99.06" y1="5.08" x2="-99.06" y2="2.54" width="0.1524" layer="91"/>
+<junction x="-99.06" y="2.54"/>
+<wire x1="-99.06" y1="2.54" x2="-99.06" y2="0" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="G$1" pin="G"/>
+<wire x1="-99.06" y1="2.54" x2="-86.36" y2="2.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$32" class="0">
+<segment>
+<pinref part="Q1" gate="G$1" pin="S"/>
+<pinref part="F1" gate="G$1" pin="1"/>
+<wire x1="-81.28" y1="0" x2="-81.28" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
