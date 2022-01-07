@@ -8008,12 +8008,12 @@ In this library you will find circuit elements that are used for getting measure
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="ICM-42605" prefix="U">
+<deviceset name="ICM-42688">
 <gates>
 <gate name="G$1" symbol="ICM-42605" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="ICM-442605-2530091">
+<device name="ICM42688" package="ICM-442605-2530091">
 <connects>
 <connect gate="G$1" pin="CSN" pad="P$12"/>
 <connect gate="G$1" pin="GND" pad="P$6"/>
@@ -8031,12 +8031,7 @@ In this library you will find circuit elements that are used for getting measure
 <connect gate="G$1" pin="VDDIO" pad="P$5"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="DIGIKEY_LINK" value="https://www.digikey.com/product-detail/en/tdk-invensense/ICM-42605/1428-1152-1-ND/9953675"/>
-<attribute name="DIGIKEY_PN" value="1428-1152-1-ND"/>
-<attribute name="MANUFACTURER" value="InvenSense"/>
-<attribute name="MPN" value="ICM-42605"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -8208,7 +8203,7 @@ In this library you will find resistors. If you are looking for a common package
 <part name="KIT1" library="RoboJackets-Boards" deviceset="IMU" device="IMU-KIT"/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
-<part name="U3" library="RoboJackets-Sensors" deviceset="ICM-42605" device=""/>
+<part name="U3" library="RoboJackets-Sensors" deviceset="ICM-42688" device="ICM42688"/>
 <part name="SUPPLY4" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="SUPPLY6" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="2.2uF"/>

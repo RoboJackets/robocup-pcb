@@ -1609,12 +1609,7 @@ Your Eurocircuits Team
 </autorouter>
 <elements>
 <element name="KIT1" library="RoboJackets-Boards" package="IMU-KIT" value="IMUIMU-KIT" x="0" y="0" smashed="yes"/>
-<element name="U3" library="RoboJackets-Sensors" package="ICM-442605-2530091" value="ICM-42605" x="0" y="-1" smashed="yes" rot="R90">
-<attribute name="DIGIKEY_LINK" value="https://www.digikey.com/product-detail/en/tdk-invensense/ICM-42605/1428-1152-1-ND/9953675" x="0" y="-1" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGIKEY_PN" value="1428-1152-1-ND" x="0" y="-1" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER" value="InvenSense" x="0" y="-1" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="ICM-42605" x="0" y="-1" size="1.778" layer="27" rot="R90" display="off"/>
-</element>
+<element name="U3" library="RoboJackets-Sensors" package="ICM-442605-2530091" value="ICM-42688ICM42688" x="0" y="-1" smashed="yes" rot="R90"/>
 <element name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="2.2uF" x="3" y="4" smashed="yes">
 <attribute name="NAME" x="3" y="5" size="1" layer="25" font="vector" ratio="15" align="bottom-center"/>
 <attribute name="POPULARITY" value="37" x="3" y="4" size="1.778" layer="27" display="off"/>
