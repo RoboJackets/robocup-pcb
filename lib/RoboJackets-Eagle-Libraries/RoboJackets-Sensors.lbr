@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -895,6 +895,34 @@ In this library you will find circuit elements that are used for getting measure
 <connect gate="G$1" pin="SDA/SDI" pad="24"/>
 <connect gate="G$1" pin="VDD" pad="13"/>
 <connect gate="G$1" pin="VDDIO" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ICM-42688">
+<gates>
+<gate name="G$1" symbol="ICM-42605" x="0" y="0"/>
+</gates>
+<devices>
+<device name="ICM42688" package="ICM-442605-2530091">
+<connects>
+<connect gate="G$1" pin="CSN" pad="P$12"/>
+<connect gate="G$1" pin="GND" pad="P$6"/>
+<connect gate="G$1" pin="INT1(INT)" pad="P$4"/>
+<connect gate="G$1" pin="INT2(FSYNC)" pad="P$9"/>
+<connect gate="G$1" pin="MISO(SDO/AD0)" pad="P$1"/>
+<connect gate="G$1" pin="MOSI(SDI/SDIO/SDA)" pad="P$14"/>
+<connect gate="G$1" pin="RESV1(NC)" pad="P$2"/>
+<connect gate="G$1" pin="RESV2(NC)" pad="P$3"/>
+<connect gate="G$1" pin="RESV3(GND)" pad="P$7"/>
+<connect gate="G$1" pin="RESV4(NC)" pad="P$10"/>
+<connect gate="G$1" pin="RESV5(NC)" pad="P$11"/>
+<connect gate="G$1" pin="SCK(SCL/SCLK)" pad="P$13"/>
+<connect gate="G$1" pin="VDD" pad="P$8"/>
+<connect gate="G$1" pin="VDDIO" pad="P$5"/>
 </connects>
 <technologies>
 <technology name=""/>
