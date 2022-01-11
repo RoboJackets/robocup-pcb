@@ -16963,6 +16963,9 @@ every board.</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="106,1,81.28,243.84,THERMAL_DNC,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
