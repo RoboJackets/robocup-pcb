@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -17101,6 +17101,9 @@ every board.</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="106,1,81.28,243.84,THERMAL_DNC,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
