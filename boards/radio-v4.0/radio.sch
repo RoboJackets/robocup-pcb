@@ -12625,53 +12625,51 @@ KO</text>
 In this library you will find uncommon capacitors. If you are looking for a common package, use the default &lt;b&gt;rcl &lt;/b&gt;library provided with EAGLE instead of looking here.
 &lt;/p&gt;</description>
 <packages>
-<package name="ECA-0JM221-HGT_HORIZ">
-<smd name="P$1" x="0" y="1.905" dx="4.5" dy="3" layer="1"/>
-<smd name="P$2" x="0" y="1.905" dx="4.5" dy="3" layer="16"/>
-<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="0" x2="-2.54" y2="-12.7" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-12.7" x2="2.54" y2="-12.7" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-12.7" x2="2.54" y2="0" width="0.127" layer="21"/>
-<rectangle x1="-2.159" y1="3.81" x2="2.159" y2="4.445" layer="22"/>
-<text x="0" y="-6.35" size="1.27" layer="21" rot="SR270" align="center">CUT OUT</text>
-<text x="-2.54" y="3.81" size="1.27" layer="25">&gt;NAME</text>
-<wire x1="-2.286" y1="3.429" x2="-2.286" y2="0.381" width="0.127" layer="21"/>
-<wire x1="-2.286" y1="0.381" x2="2.286" y2="0.381" width="0.127" layer="21"/>
-<wire x1="2.286" y1="0.381" x2="2.286" y2="3.429" width="0.127" layer="21"/>
-<wire x1="2.286" y1="3.429" x2="-2.286" y2="3.429" width="0.127" layer="21"/>
-<wire x1="-2.286" y1="3.429" x2="-2.286" y2="0.381" width="0.127" layer="22"/>
-<wire x1="-2.286" y1="0.381" x2="2.286" y2="0.381" width="0.127" layer="22"/>
-<wire x1="2.286" y1="0.381" x2="2.286" y2="3.429" width="0.127" layer="22"/>
-<wire x1="2.286" y1="3.429" x2="-2.286" y2="3.429" width="0.127" layer="22"/>
+<package name="CAP_PAN_10X12.5">
+<pad name="1" x="-5.0038" y="0" drill="0.9144" diameter="1.6764" shape="square"/>
+<pad name="2" x="0" y="0" drill="0.9144" diameter="1.6764" rot="R180"/>
+<wire x1="-9.271" y1="0" x2="-8.001" y2="0" width="0.1524" layer="21"/>
+<wire x1="-8.636" y1="0.635" x2="-8.636" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="2.8702" y1="0" x2="-7.874" y2="0" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-7.874" y1="0" x2="2.8702" y2="0" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-9.271" y1="0" x2="-8.001" y2="0" width="0.1524" layer="51"/>
+<wire x1="-8.636" y1="0.635" x2="-8.636" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="2.7432" y1="0" x2="-7.747" y2="0" width="0" layer="51" curve="-180"/>
+<wire x1="-7.747" y1="0" x2="2.7432" y2="0" width="0" layer="51" curve="-180"/>
+<text x="-5.7658" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 </package>
 </packages>
 <symbols>
-<symbol name="C_POL">
-<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.016" x2="0" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="-1" x2="2.4892" y2="-1.8542" width="0.254" layer="94" curve="-37.878202"/>
-<wire x1="-2.4669" y1="-1.8504" x2="0" y2="-1.0161" width="0.254" layer="94" curve="-37.376341"/>
-<text x="1.016" y="0.635" size="1.778" layer="95">&gt;NAME</text>
-<text x="1.016" y="-4.191" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="-2.253" y1="0.668" x2="-1.364" y2="0.795" layer="94"/>
-<rectangle x1="-1.872" y1="0.287" x2="-1.745" y2="1.176" layer="94"/>
-<pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
-<pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<symbol name="CAPH">
+<pin name="22" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="11" x="-2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<wire x1="0.9398" y1="-1.905" x2="0.9398" y2="0" width="0.2032" layer="94"/>
+<wire x1="0.9398" y1="0" x2="0.9398" y2="1.905" width="0.2032" layer="94"/>
+<wire x1="1.5748" y1="-1.905" x2="1.5748" y2="0" width="0.2032" layer="94"/>
+<wire x1="1.5748" y1="0" x2="1.5748" y2="1.905" width="0.2032" layer="94"/>
+<wire x1="1.5748" y1="0" x2="2.54" y2="0" width="0.2032" layer="94"/>
+<wire x1="0" y1="0" x2="0.9398" y2="0" width="0.2032" layer="94"/>
+<text x="-7.6962" y="-5.5372" size="3.4798" layer="96" ratio="10" rot="SR0">&gt;Value</text>
+<text x="-6.6294" y="2.0828" size="3.4798" layer="95" ratio="10" rot="SR0">&gt;Name</text>
+<text x="-2.54" y="0" size="1.778" layer="94">+</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="ECA-0JM221" prefix="C" uservalue="yes">
+<deviceset name="ECA-1HHG221" prefix="C">
 <gates>
-<gate name="G$1" symbol="C_POL" x="0" y="0"/>
+<gate name="A" symbol="CAPH" x="0" y="0" swaplevel="1"/>
 </gates>
 <devices>
-<device name="" package="ECA-0JM221-HGT_HORIZ">
+<device name="" package="CAP_PAN_10X12.5">
 <connects>
-<connect gate="G$1" pin="+" pad="P$1"/>
-<connect gate="G$1" pin="-" pad="P$2"/>
+<connect gate="A" pin="11" pad="1"/>
+<connect gate="A" pin="22" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="P5572-ND" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="ECA-1HHG221" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -16165,7 +16163,6 @@ In this library you will find integrated circuits (ICs) that are directly involv
 <part name="SUPPLY1" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="U1" library="RoboJackets-RF" deviceset="ISM43340" device=""/>
-<part name="C1" library="RoboJackets-Capacitors" deviceset="ECA-0JM221" device="" value="220uF"/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF"/>
 <part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
@@ -16191,6 +16188,9 @@ In this library you will find integrated circuits (ICs) that are directly involv
 <part name="J1" library="RoboJackets-Connectors" deviceset="HFW8" device="R-1ST"/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF"/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF"/>
+<part name="C8" library="RoboJackets-Capacitors" deviceset="ECA-1HHG221" device="">
+<attribute name="VAL" value="220uF"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -16342,10 +16342,6 @@ every board.</text>
 <instance part="U1" gate="G$1" x="58.42" y="106.68" smashed="yes">
 <attribute name="NAME" x="26.67" y="156.21" size="1.778" layer="95"/>
 </instance>
-<instance part="C1" gate="G$1" x="40.64" y="33.02" smashed="yes">
-<attribute name="NAME" x="41.656" y="33.655" size="1.778" layer="95"/>
-<attribute name="VALUE" x="41.656" y="28.829" size="1.778" layer="96"/>
-</instance>
 <instance part="C4" gate="G$1" x="71.12" y="33.02" smashed="yes">
 <attribute name="NAME" x="72.136" y="33.655" size="1.778" layer="95"/>
 <attribute name="VALUE" x="72.136" y="28.829" size="1.778" layer="96"/>
@@ -16434,6 +16430,11 @@ every board.</text>
 <attribute name="NAME" x="61.976" y="33.655" size="1.778" layer="95"/>
 <attribute name="VALUE" x="61.976" y="28.829" size="1.778" layer="96"/>
 </instance>
+<instance part="C8" gate="A" x="40.64" y="33.02" smashed="yes" rot="R270">
+<attribute name="VALUE" x="35.1028" y="40.7162" size="3.4798" layer="96" ratio="10" rot="SR270" display="off"/>
+<attribute name="NAME" x="42.4688" y="33.0454" size="1.778" layer="95" ratio="10" rot="SR0"/>
+<attribute name="VAL" x="41.656" y="28.702" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -16485,7 +16486,6 @@ every board.</text>
 <wire x1="71.12" y1="38.1" x2="81.28" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="38.1" x2="91.44" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="38.1" x2="91.44" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="+"/>
 <wire x1="40.64" y1="35.56" x2="40.64" y2="38.1" width="0.1524" layer="91"/>
 <junction x="40.64" y="38.1"/>
 <wire x1="50.8" y1="35.56" x2="50.8" y2="38.1" width="0.1524" layer="91"/>
@@ -16502,6 +16502,7 @@ every board.</text>
 <pinref part="SUPPLY3" gate="P" pin="+3.3V"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <pinref part="C3" gate="G$1" pin="1"/>
+<pinref part="C8" gate="A" pin="11"/>
 </segment>
 <segment>
 <wire x1="147.32" y1="33.02" x2="144.78" y2="33.02" width="0.1524" layer="91"/>
@@ -16632,13 +16633,13 @@ every board.</text>
 <junction x="60.96" y="25.4"/>
 <wire x1="50.8" y1="27.94" x2="50.8" y2="25.4" width="0.1524" layer="91"/>
 <junction x="50.8" y="25.4"/>
-<pinref part="C1" gate="G$1" pin="-"/>
 <wire x1="40.64" y1="27.94" x2="40.64" y2="25.4" width="0.1524" layer="91"/>
 <junction x="40.64" y="25.4"/>
 <wire x1="35.56" y1="25.4" x2="35.56" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="SUPPLY4" gate="GND" pin="GND"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="C3" gate="G$1" pin="2"/>
+<pinref part="C8" gate="A" pin="22"/>
 </segment>
 <segment>
 <wire x1="238.76" y1="223.52" x2="238.76" y2="205.74" width="0.1524" layer="91"/>
