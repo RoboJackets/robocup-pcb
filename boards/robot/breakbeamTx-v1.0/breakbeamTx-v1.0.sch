@@ -195,11 +195,11 @@ In this library you will find LEDs and other visual output devices.
 &lt;/p&gt;</description>
 <packages>
 <package name="OP293B">
-<circle x="0" y="0" radius="5.97" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="3" width="0.127" layer="21"/>
 <pad name="P$1" x="1.27" y="0" drill="0.8" shape="square"/>
 <pad name="P$2" x="-1.27" y="0" drill="0.8"/>
-<text x="-3" y="7" size="1.27" layer="25">&gt;Name</text>
-<text x="-3" y="-8" size="1.27" layer="27">&gt;Value</text>
+<text x="-3" y="4" size="1.27" layer="25">&gt;Name</text>
+<text x="-3" y="-5" size="1.27" layer="27">&gt;Value</text>
 </package>
 <package name="LED0603">
 <description>0603 LED</description>
@@ -3684,10 +3684,10 @@ In this library you will find all the connectors used on any of our boards.
 </class>
 </classes>
 <parts>
-<part name="D1" library="RoboJackets-LEDs" deviceset="LED-OP293B" device=""/>
+<part name="D1" library="RoboJackets-LEDs" deviceset="LED-OP293B" device="" override_package3d_urn="urn:adsk.eagle:package:33521984/2" override_package_urn="urn:adsk.eagle:footprint:33521985/1"/>
 <part name="FRAME1" library="RoboJackets-Frames" deviceset="FRAME_11_17" device=""/>
 <part name="SUPPLY1" library="RoboJackets-Supplies" deviceset="GND" device=""/>
-<part name="J1" library="RoboJackets-Connectors" deviceset="0436500213" device=""/>
+<part name="J1" library="RoboJackets-Connectors" deviceset="0436500213" device="" override_package3d_urn="urn:adsk.eagle:package:33521981/2" override_package_urn="urn:adsk.eagle:footprint:33521982/1"/>
 <part name="D2" library="RoboJackets-LEDs" deviceset="LED-SMD" device=""/>
 </parts>
 <sheets>
@@ -3759,4 +3759,16 @@ In this library you will find all the connectors used on any of our boards.
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
+</note>
+<note version="9.4" severity="warning">
+Since Version 9.4, EAGLE supports the overriding of 3D packages
+in schematics and board files. Those overridden 3d packages
+will not be understood (or retained) with this version.
+</note>
+</compatibility>
 </eagle>
