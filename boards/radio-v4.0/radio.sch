@@ -16188,9 +16188,7 @@ In this library you will find integrated circuits (ICs) that are directly involv
 <part name="J1" library="RoboJackets-Connectors" deviceset="HFW8" device="R-1ST"/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF"/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF"/>
-<part name="C8" library="RoboJackets-Capacitors" deviceset="ECA-1HHG221" device="">
-<attribute name="VAL" value="220uF"/>
-</part>
+<part name="C1" library="RoboJackets-Capacitors" deviceset="ECA-1HHG221" device="" value="220uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -16430,10 +16428,9 @@ every board.</text>
 <attribute name="NAME" x="61.976" y="33.655" size="1.778" layer="95"/>
 <attribute name="VALUE" x="61.976" y="28.829" size="1.778" layer="96"/>
 </instance>
-<instance part="C8" gate="A" x="40.64" y="33.02" smashed="yes" rot="R270">
-<attribute name="VALUE" x="35.1028" y="40.7162" size="3.4798" layer="96" ratio="10" rot="SR270" display="off"/>
-<attribute name="NAME" x="42.4688" y="33.0454" size="1.778" layer="95" ratio="10" rot="SR0"/>
-<attribute name="VAL" x="41.656" y="28.702" size="1.778" layer="96"/>
+<instance part="C1" gate="A" x="40.64" y="33.02" smashed="yes" rot="R270">
+<attribute name="VALUE" x="41.8338" y="28.4988" size="1.778" layer="96" ratio="10" rot="SR0"/>
+<attribute name="NAME" x="42.1386" y="33.0708" size="1.778" layer="95" ratio="10" rot="SR0"/>
 </instance>
 </instances>
 <busses>
@@ -16502,7 +16499,7 @@ every board.</text>
 <pinref part="SUPPLY3" gate="P" pin="+3.3V"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <pinref part="C3" gate="G$1" pin="1"/>
-<pinref part="C8" gate="A" pin="11"/>
+<pinref part="C1" gate="A" pin="11"/>
 </segment>
 <segment>
 <wire x1="147.32" y1="33.02" x2="144.78" y2="33.02" width="0.1524" layer="91"/>
@@ -16639,7 +16636,7 @@ every board.</text>
 <pinref part="SUPPLY4" gate="GND" pin="GND"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="C3" gate="G$1" pin="2"/>
-<pinref part="C8" gate="A" pin="22"/>
+<pinref part="C1" gate="A" pin="22"/>
 </segment>
 <segment>
 <wire x1="238.76" y1="223.52" x2="238.76" y2="205.74" width="0.1524" layer="91"/>
