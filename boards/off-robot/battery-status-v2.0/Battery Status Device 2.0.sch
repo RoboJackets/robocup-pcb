@@ -12410,23 +12410,6 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 <wire x1="-160.02" y1="73.66" x2="-157.48" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="IC1" gate="A" pin="F"/>
-<wire x1="-165.1" y1="78.74" x2="-162.56" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="-162.56" y1="78.74" x2="-162.56" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="D1-R6" gate="A" pin="1"/>
-<wire x1="-162.56" y1="66.04" x2="-157.48" y2="66.04" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="IC1" gate="A" pin="G"/>
-<pinref part="D1-R7" gate="A" pin="1"/>
-<wire x1="-165.1" y1="76.2" x2="-165.1" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="-165.1" y1="58.42" x2="-157.48" y2="58.42" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$12" class="0">
 <segment>
 <pinref part="IC2" gate="A" pin="A"/>
@@ -12994,9 +12977,9 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 <label x="-187.96" y="-10.16" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="PINS1"/>
-<wire x1="96.52" y1="73.66" x2="93.98" y2="73.66" width="0.1524" layer="91"/>
-<label x="93.98" y="73.66" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$2" gate="G$1" pin="PINS3"/>
+<wire x1="96.52" y1="68.58" x2="93.98" y2="68.58" width="0.1524" layer="91"/>
+<label x="93.98" y="68.58" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="DI2" class="0">
@@ -13018,9 +13001,9 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 <label x="-139.7" y="-10.16" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="PINS3"/>
-<wire x1="96.52" y1="68.58" x2="93.98" y2="68.58" width="0.1524" layer="91"/>
-<label x="93.98" y="68.58" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$2" gate="G$1" pin="PINS1"/>
+<wire x1="96.52" y1="73.66" x2="93.98" y2="73.66" width="0.1524" layer="91"/>
+<label x="93.98" y="73.66" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="DI4" class="0">
@@ -13030,9 +13013,9 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 <label x="-20.32" y="22.86" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="PINS4"/>
-<wire x1="96.52" y1="66.04" x2="93.98" y2="66.04" width="0.1524" layer="91"/>
-<label x="93.98" y="66.04" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$2" gate="G$1" pin="PINS5"/>
+<wire x1="96.52" y1="63.5" x2="93.98" y2="63.5" width="0.1524" layer="91"/>
+<label x="93.98" y="63.5" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="DI5" class="0">
@@ -13042,9 +13025,9 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 <label x="-193.04" y="91.44" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="PINS5"/>
-<wire x1="96.52" y1="63.5" x2="93.98" y2="63.5" width="0.1524" layer="91"/>
-<label x="93.98" y="63.5" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$2" gate="G$1" pin="PINS4"/>
+<wire x1="96.52" y1="66.04" x2="93.98" y2="66.04" width="0.1524" layer="91"/>
+<label x="93.98" y="66.04" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="DI6" class="0">
@@ -13207,6 +13190,23 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 <pinref part="Q1" gate="G$1" pin="S"/>
 <pinref part="F1" gate="G$1" pin="1"/>
 <wire x1="-81.28" y1="0" x2="-81.28" y2="-5.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="D1-R6" gate="A" pin="1"/>
+<wire x1="-157.48" y1="66.04" x2="-162.56" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="A" pin="F"/>
+<wire x1="-162.56" y1="66.04" x2="-162.56" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="-162.56" y1="78.74" x2="-165.1" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="D1-R7" gate="A" pin="1"/>
+<pinref part="IC1" gate="A" pin="G"/>
+<wire x1="-157.48" y1="58.42" x2="-165.1" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-165.1" y1="58.42" x2="-165.1" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
