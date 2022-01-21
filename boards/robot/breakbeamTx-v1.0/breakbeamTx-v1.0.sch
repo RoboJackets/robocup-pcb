@@ -3688,7 +3688,7 @@ In this library you will find all the connectors used on any of our boards.
 <part name="FRAME1" library="RoboJackets-Frames" deviceset="FRAME_11_17" device=""/>
 <part name="SUPPLY1" library="RoboJackets-Supplies" deviceset="GND" device=""/>
 <part name="J1" library="RoboJackets-Connectors" deviceset="0436500213" device="" override_package3d_urn="urn:adsk.eagle:package:33521981/2" override_package_urn="urn:adsk.eagle:footprint:33521982/1"/>
-<part name="D2" library="RoboJackets-LEDs" deviceset="LED-SMD" device=""/>
+<part name="D2" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" override_package3d_urn="urn:adsk.eagle:package:33676357/2" override_package_urn="urn:adsk.eagle:footprint:33676358/1"/>
 </parts>
 <sheets>
 <sheet>
