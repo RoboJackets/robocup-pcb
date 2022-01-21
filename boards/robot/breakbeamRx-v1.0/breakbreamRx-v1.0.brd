@@ -430,7 +430,7 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U$2" library="RoboJackets-Connectors" package="0436500213" override_package3d_urn="urn:adsk.eagle:package:33302042/2" override_package_urn="urn:adsk.eagle:footprint:33302043/1" override_locally_modified="yes" value="0436500213" x="5.5" y="34" smashed="yes" rot="R180"/>
+<element name="U$2" library="RoboJackets-Connectors" package="0436500213" override_package3d_urn="urn:adsk.eagle:package:33302042/2" override_package_urn="urn:adsk.eagle:footprint:33302043/1" override_locally_modified="yes" value="0436500213" x="5.5" y="34" smashed="yes" rot="MR180"/>
 <element name="D1" library="RoboJackets-Discrete" package="OP593B" override_package3d_urn="urn:adsk.eagle:package:33676039/2" override_package_urn="urn:adsk.eagle:footprint:33676040/1" value="OP593B" x="0" y="0" smashed="yes">
 <attribute name="NAME" x="-2.08" y="-4.65" size="1" layer="25" font="vector" ratio="10"/>
 </element>
@@ -439,14 +439,16 @@ design rules under a new name.</description>
 <signal name="N$1">
 <contactref element="U$2" pad="2" route="any" routetag="G$1.2"/>
 <contactref element="D1" pad="P$2"/>
-<wire x1="4" y1="28.53" x2="4" y2="5.27" width="0.3" layer="1"/>
-<wire x1="4" y1="5.27" x2="-1.27" y2="0" width="0.3" layer="1"/>
+<wire x1="-1.27" y1="0" x2="7" y2="8.27" width="0.3" layer="1"/>
+<wire x1="7" y1="8.27" x2="7" y2="25" width="0.3" layer="1"/>
+<via x="7" y="25" extent="1-16" drill="0.35"/>
+<wire x1="7" y1="25" x2="7" y2="28.53" width="0.3" layer="16"/>
 </signal>
 <signal name="GND">
 <contactref element="U$2" pad="1"/>
 <contactref element="D1" pad="P$1"/>
-<wire x1="1.27" y1="0" x2="7" y2="5.73" width="0.3" layer="1"/>
-<wire x1="7" y1="5.73" x2="7" y2="28.53" width="0.3" layer="1"/>
+<wire x1="1.27" y1="0" x2="4" y2="2.73" width="0.3" layer="16"/>
+<wire x1="4" y1="2.73" x2="4" y2="28.53" width="0.3" layer="16"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
