@@ -3563,11 +3563,11 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 &lt;/p&gt;</description>
 <packages>
 <package name="OP593B">
-<circle x="0" y="0" radius="5.59" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="3" width="0.127" layer="21"/>
 <pad name="P$1" x="1.27" y="0" drill="0.8" shape="square"/>
 <pad name="P$2" x="-1.27" y="0" drill="0.8"/>
-<text x="-5.08" y="6.35" size="1.27" layer="25">&gt;Name</text>
-<text x="-5.08" y="-7.62" size="1.27" layer="27">&gt;Value</text>
+<text x="-5.08" y="3.35" size="1" layer="25" font="vector" ratio="10">&gt;Name</text>
+<text x="-5.08" y="-4.62" size="1" layer="27" font="vector" ratio="10">&gt;Value</text>
 </package>
 </packages>
 <symbols>
@@ -3634,7 +3634,7 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 <part name="FRAME1" library="RoboJackets-Frames" deviceset="FRAME_11_17" device=""/>
 <part name="U$2" library="RoboJackets-Connectors" deviceset="0436500213" device="" override_package3d_urn="urn:adsk.eagle:package:33302042/2" override_package_urn="urn:adsk.eagle:footprint:33302043/1" override_locally_modified="yes"/>
 <part name="SUPPLY1" library="RoboJackets-Supplies" deviceset="GND" device=""/>
-<part name="D1" library="RoboJackets-Discrete" deviceset="OP593B" device=""/>
+<part name="D1" library="RoboJackets-Discrete" deviceset="OP593B" device="" override_package3d_urn="urn:adsk.eagle:package:33676039/2" override_package_urn="urn:adsk.eagle:footprint:33676040/1"/>
 </parts>
 <sheets>
 <sheet>
