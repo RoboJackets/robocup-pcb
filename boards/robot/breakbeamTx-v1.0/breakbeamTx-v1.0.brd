@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
@@ -189,13 +189,15 @@
 <plain>
 <text x="-3.5" y="4.6" size="3.81" layer="21" rot="R270">+</text>
 <text x="1" y="3" size="3.81" layer="21">_</text>
-<wire x1="-3" y1="-7" x2="15" y2="-7" width="0" layer="20"/>
-<wire x1="15" y1="-7" x2="15" y2="39" width="0" layer="20"/>
+<wire x1="-3" y1="-7" x2="10" y2="-7" width="0" layer="20"/>
+<wire x1="15" y1="24" x2="15" y2="39" width="0" layer="20"/>
 <wire x1="15" y1="39" x2="-3" y2="39" width="0" layer="20"/>
 <wire x1="-3" y1="39" x2="-3" y2="-7" width="0" layer="20"/>
 <hole x="12" y="27" drill="3"/>
 <hole x="7" y="-1" drill="3"/>
 <text x="-0.5" y="26.8" size="1" layer="25" font="vector" ratio="10">J1</text>
+<wire x1="10" y1="-7" x2="10" y2="24" width="0" layer="20"/>
+<wire x1="10" y1="24" x2="15" y2="24" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="RoboJackets-LEDs">
