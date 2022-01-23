@@ -190,12 +190,14 @@
 <text x="-0.3" y="2.5" size="3.81" layer="21" rot="R90">+</text>
 <text x="2.7" y="2.8" size="3.81" layer="21">_</text>
 <wire x1="-3" y1="39" x2="-3" y2="-7" width="0" layer="20"/>
-<wire x1="-3" y1="-7" x2="15" y2="-7" width="0" layer="20"/>
-<wire x1="15" y1="-7" x2="15" y2="39" width="0" layer="20"/>
+<wire x1="-3" y1="-7" x2="10" y2="-7" width="0" layer="20"/>
+<wire x1="15" y1="24" x2="15" y2="39" width="0" layer="20"/>
 <wire x1="15" y1="39" x2="-3" y2="39" width="0" layer="20"/>
 <hole x="12" y="27" drill="3"/>
 <hole x="7" y="-1" drill="3"/>
 <text x="2" y="16" size="1" layer="25" font="vector" ratio="10">J1</text>
+<wire x1="10" y1="-7" x2="10" y2="24" width="0" layer="20"/>
+<wire x1="10" y1="24" x2="15" y2="24" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="RoboJackets-Connectors">
