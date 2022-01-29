@@ -16188,7 +16188,7 @@ In this library you will find integrated circuits (ICs) that are directly involv
 <part name="J1" library="RoboJackets-Connectors" deviceset="HFW8" device="R-1ST"/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF"/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF"/>
-<part name="C1" library="RoboJackets-Capacitors" deviceset="ECA-1HHG221" device="" value="220uF"/>
+<part name="C1" library="RoboJackets-Capacitors" deviceset="ECA-1HHG221" device="" override_package3d_urn="urn:adsk.eagle:package:33768299/2" override_package_urn="urn:adsk.eagle:footprint:33768301/1" value="220uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -16985,6 +16985,11 @@ will not be understood (or retained) with this version.
 Since Version 8.3, EAGLE supports the association of 3D packages
 with devices in libraries, schematics, and board files. Those 3D
 packages will not be understood (or retained) with this version.
+</note>
+<note version="9.4" severity="warning">
+Since Version 9.4, EAGLE supports the overriding of 3D packages
+in schematics and board files. Those overridden 3d packages
+will not be understood (or retained) with this version.
 </note>
 <note version="8.4" severity="warning">
 Since Version 8.4, EAGLE supports properties for SPICE simulation. 
