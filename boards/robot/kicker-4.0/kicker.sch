@@ -21323,26 +21323,26 @@ In this library you will find inductors. If you are looking for a common package
 <part name="SUPPLY22" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="U1" library="RoboJackets-PowerICs" deviceset="IX4427" device="N"/>
 <part name="FRAME2" library="ro-frames" deviceset="RO_FRAME_A_L_20161226" device="">
-<attribute name="REV" value="3.3"/>
+<attribute name="REV" value="4.0"/>
 </part>
 <part name="FRAME7" library="ro-frames" deviceset="RO_FRAME_A_L_20161226" device="">
-<attribute name="REV" value="3.3"/>
+<attribute name="REV" value="4.0"/>
 </part>
 <part name="FRAME6" library="ro-frames" deviceset="RO_FRAME_A_L_20161226" device="">
-<attribute name="REV" value="3.3"/>
+<attribute name="REV" value="4.0"/>
 </part>
 <part name="FRAME5" library="ro-frames" deviceset="RO_FRAME_A_L_20161226" device="">
-<attribute name="REV" value="3.3"/>
+<attribute name="REV" value="4.0"/>
 </part>
 <part name="FRAME1" library="ro-frames" deviceset="RO_FRAME_A_L_20161226" device="">
-<attribute name="REV" value="3.3"/>
+<attribute name="REV" value="4.0"/>
 </part>
 <part name="SUPPLY7" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="D22" library="RoboJackets-Diodes" deviceset="DIODE-" device="DO214AA" value="3SMBJ5929B-TP"/>
 <part name="Q9" library="RoboJackets-Discrete" deviceset="BSS127" device=""/>
 <part name="FRAME8" library="ro-frames" deviceset="RO_FRAME_A_L_20161226" device="">
-<attribute name="REV" value="3.3"/>
+<attribute name="REV" value="4.0"/>
 </part>
 <part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="51"/>
 <part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k"/>
@@ -21386,7 +21386,7 @@ In this library you will find inductors. If you are looking for a common package
 <part name="R40" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="412k 1%"/>
 <part name="R41" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="294k 1%"/>
 <part name="R42" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="412k 1%"/>
-<part name="R30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R2512" package3d_urn="urn:adsk.eagle:package:23545/2" value="10m 0.1% &gt;1W"/>
+<part name="R30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R2512" package3d_urn="urn:adsk.eagle:package:23545/2" value="11m 0.1% &gt;0.5W"/>
 <part name="C31" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R) 35V"/>
 <part name="C30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R) 35V"/>
 <part name="C23" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R) 35V"/>
@@ -21586,22 +21586,13 @@ In this library you will find inductors. If you are looking for a common package
 <wire x1="15.24" y1="50.8" x2="162.56" y2="50.8" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="162.56" y1="50.8" x2="162.56" y2="116.84" width="0.1524" layer="97" style="shortdash"/>
 <text x="17.78" y="111.76" size="1.778" layer="97">5V Regulator</text>
-<text x="40.64" y="149.86" size="1.27" layer="97">NOTE: Spec fuse based on the
-reverse current protection FET
-and diode on this sheet as well
-as the max switching current
-of Q1, T1, and D1 on the LT3751
+<text x="40.64" y="152.4" size="1.27" layer="97">NOTE: Spec fuse based on the
+diode on this sheet as well as
+the max switching current of 
+Q1, T1, and D1 on the LT3751
 sheet. The LT3751 current sense
 resistors should be set to limit
-current below the limit of the fuse. </text>
-<text x="40.64" y="149.86" size="1.27" layer="97">NOTE: Spec fuse based on the
-reverse current protection FET
-and diode on this sheet as well
-as the max switching current
-of Q1, T1, and D1 on the LT3751
-sheet. The LT3751 current sense
-resistors should be set to limit
-current below the limit of the fuse. </text>
+current below the fuse limit.</text>
 <wire x1="160.02" y1="129.54" x2="160.02" y2="200.66" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="160.02" y1="200.66" x2="266.7" y2="200.66" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="266.7" y1="200.66" x2="266.7" y2="129.54" width="0.1524" layer="97" style="shortdash"/>
@@ -21985,7 +21976,7 @@ P = I^2 x R
 P = (7.066^2)*0.007 = 0.3495W
 P = (10.6^2)*0.007 = 0.7865W
 P = (15.1^2)*0.007 = 1.596W</text>
-<text x="22.86" y="185.42" size="1.778" layer="97">Vdrain = Vtrans + (Vout + Vdiode) / N
+<text x="15.24" y="185.42" size="1.778" layer="97">Vdrain = Vtrans + (Vout + Vdiode) / N
 Vtrans = 15.5:21.5
 Vdrain = 40.5:47.5Vtrans RANGE = 6.0VDEL Vdrain RANGE (Vdrain - Vtrans)
 DEL Vdrain RANGE = 25.0:26.0Table 2 (pg. 17):
