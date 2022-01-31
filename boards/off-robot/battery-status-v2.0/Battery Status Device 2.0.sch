@@ -11495,7 +11495,7 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 <part name="D1" library="RoboJackets-Diodes" deviceset="MBR0520LT1G_DIODE" device=""/>
 <part name="U$1" library="Button K12SCS1.55NOLFTX" deviceset="K12SA" device=""/>
 <part name="J1" library="RoboJackets-Connectors" deviceset="6PIN-03536?" device="20650"/>
-<part name="F1" library="RoboJackets-Fuses" deviceset="SMD_FUSE" device="1206"/>
+<part name="F1" library="RoboJackets-Fuses" deviceset="SMD_FUSE" device="1206" value="1.5A"/>
 <part name="U1" library="voltage regulator Robocup" deviceset="AP1509-50SG-13" device=""/>
 <part name="U$2" library="atmega808" deviceset="ATMEGA808" device=""/>
 <part name="IC1" library="45xx" library_urn="urn:adsk.eagle:library:82" deviceset="4511" device="D" package3d_urn="urn:adsk.eagle:package:1005/2"/>
@@ -11533,9 +11533,9 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 <part name="D3-R5" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="100"/>
 <part name="D3-R6" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="100"/>
 <part name="D3-R7" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="100"/>
-<part name="LED1-R1" library="RoboJackets-Resistors" deviceset="RESISTOR" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="160"/>
-<part name="LED2-R1" library="RoboJackets-Resistors" deviceset="RESISTOR" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="145"/>
-<part name="LED3-R1" library="RoboJackets-Resistors" deviceset="RESISTOR" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="193"/>
+<part name="LED1-R1" library="RoboJackets-Resistors" deviceset="RESISTOR" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="75"/>
+<part name="LED2-R1" library="RoboJackets-Resistors" deviceset="RESISTOR" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="60"/>
+<part name="LED3-R1" library="RoboJackets-Resistors" deviceset="RESISTOR" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="80"/>
 <part name="D2-R8" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="133"/>
 <part name="T5" library="transistor" library_urn="urn:adsk.eagle:library:402" deviceset="BC846" device="" package3d_urn="urn:adsk.eagle:package:28738/2"/>
 <part name="VD9" library="RoboJackets-Resistors" deviceset="RESISTOR" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="10.0k"/>
@@ -11620,6 +11620,9 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 <wire x1="-111.76" y1="-45.72" x2="-58.42" y2="-45.72" width="0.1524" layer="95" style="longdash"/>
 <wire x1="-58.42" y1="-45.72" x2="-58.42" y2="43.18" width="0.1524" layer="95" style="longdash"/>
 <wire x1="-58.42" y1="43.18" x2="-111.76" y2="43.18" width="0.1524" layer="95" style="longdash"/>
+<text x="-5.08" y="-22.86" size="1.778" layer="97">Not connecting a power supply from the programmer, 
+so will need to have a battery plugged in to
+ power the board while programming</text>
 </plain>
 <instances>
 <instance part="D1" gate="G$1" x="147.32" y="-63.5" smashed="yes" rot="R90">
@@ -12016,11 +12019,6 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 <label x="-200.66" y="-86.36" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="6"/>
-<wire x1="-12.192" y1="-30.226" x2="-7.112" y2="-30.226" width="0.1524" layer="91"/>
-<label x="-7.112" y="-30.226" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U$2" gate="G$1" pin="PINS28"/>
 <wire x1="124.46" y1="91.44" x2="124.46" y2="93.98" width="0.1524" layer="91"/>
 <label x="124.46" y="99.06" size="1.778" layer="95" rot="R90" xref="yes"/>
@@ -12039,6 +12037,11 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 <pinref part="C8" gate="G$1" pin="1"/>
 <wire x1="162.56" y1="58.42" x2="162.56" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="53.34" x2="165.1" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="D2-R8" gate="A" pin="2"/>
+<wire x1="-33.02" y1="58.42" x2="-33.02" y2="55.88" width="0.1524" layer="91"/>
+<label x="-33.02" y="55.88" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -12214,11 +12217,6 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 <pinref part="U$2" gate="G$1" pin="PINS19"/>
 <wire x1="149.86" y1="60.96" x2="152.4" y2="60.96" width="0.1524" layer="91"/>
 <label x="152.4" y="60.96" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="JP1" gate="A" pin="5"/>
-<wire x1="-19.812" y1="-30.226" x2="-24.892" y2="-30.226" width="0.1524" layer="91"/>
-<label x="-24.892" y="-30.226" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="MOS-R2" gate="A" pin="1"/>
@@ -12936,14 +12934,14 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 </net>
 <net name="MOSI" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="2"/>
-<wire x1="-12.192" y1="-25.146" x2="-7.112" y2="-25.146" width="0.1524" layer="91"/>
-<label x="-7.112" y="-25.146" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U$2" gate="G$1" pin="PINS6"/>
 <wire x1="96.52" y1="60.96" x2="93.98" y2="60.96" width="0.1524" layer="91"/>
 <label x="93.98" y="60.96" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="4"/>
+<wire x1="-12.192" y1="-27.686" x2="-7.112" y2="-27.686" width="0.1524" layer="91"/>
+<label x="-7.112" y="-27.686" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -12960,14 +12958,14 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 </net>
 <net name="!RESET!" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="4"/>
-<wire x1="-12.192" y1="-27.686" x2="-7.112" y2="-27.686" width="0.1524" layer="91"/>
-<label x="-7.112" y="-27.686" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U$2" gate="G$1" pin="PINS26"/>
 <wire x1="129.54" y1="91.44" x2="129.54" y2="93.98" width="0.1524" layer="91"/>
 <label x="129.54" y="93.98" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="5"/>
+<wire x1="-19.812" y1="-30.226" x2="-24.892" y2="-30.226" width="0.1524" layer="91"/>
+<label x="-24.892" y="-30.226" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="DI1" class="0">
@@ -13114,18 +13112,6 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 <label x="152.4" y="66.04" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="DI13" class="0">
-<segment>
-<pinref part="D2-R8" gate="A" pin="2"/>
-<wire x1="-33.02" y1="58.42" x2="-33.02" y2="55.88" width="0.1524" layer="91"/>
-<label x="-33.02" y="55.88" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$2" gate="G$1" pin="PINS9"/>
-<wire x1="114.3" y1="38.1" x2="114.3" y2="35.56" width="0.1524" layer="91"/>
-<label x="114.3" y="35.56" size="1.778" layer="95" rot="R270" xref="yes"/>
-</segment>
-</net>
 <net name="DI14" class="0">
 <segment>
 <pinref part="IC3" gate="A" pin="IA"/>
@@ -13215,6 +13201,10 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
