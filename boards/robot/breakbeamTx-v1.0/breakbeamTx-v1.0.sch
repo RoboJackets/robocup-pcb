@@ -3674,6 +3674,85 @@ In this library you will find all the connectors used on any of our boards.
 </deviceset>
 </devicesets>
 </library>
+<library name="RoboJackets-Resistors">
+<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
+&lt;hr&gt;
+&lt;h1&gt;RoboJackets EAGLE Libraries - Resistors&lt;/h1&gt;&lt;/br&gt;
+&lt;p&gt;
+In this library you will find resistors. If you are looking for a common package, use the default &lt;b&gt;rcl &lt;/b&gt;library provided with EAGLE instead of looking here.
+&lt;/p&gt;</description>
+<packages>
+<package name="0603" urn="urn:adsk.eagle:footprint:39615/1">
+<description>&lt;p&gt;&lt;b&gt;Generic 1608 (0603) package&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
+<wire x1="-1.6" y1="0.7" x2="1.6" y2="0.7" width="0.0508" layer="39"/>
+<wire x1="1.6" y1="0.7" x2="1.6" y2="-0.7" width="0.0508" layer="39"/>
+<wire x1="1.6" y1="-0.7" x2="-1.6" y2="-0.7" width="0.0508" layer="39"/>
+<wire x1="-1.6" y1="-0.7" x2="-1.6" y2="0.7" width="0.0508" layer="39"/>
+<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
+<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="0603" urn="urn:adsk.eagle:package:39650/1" type="box">
+<description>Generic 1608 (0603) package
+0.2mm courtyard excess rounded to nearest 0.05mm.</description>
+<packageinstances>
+<packageinstance name="0603"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="RESISTOR-1">
+<wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-1.524" y1="-1.016" x2="-0.889" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-0.889" y1="1.016" x2="-0.254" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-0.254" y1="-1.016" x2="0.381" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="0.381" y1="1.016" x2="1.016" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="1.016" y1="-1.016" x2="1.651" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="1.651" y1="1.016" x2="2.286" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="2.286" y1="-1.016" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<text x="0" y="1.524" size="1.778" layer="95" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.524" size="1.778" layer="96" font="vector" align="top-center">&gt;VALUE</text>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="R330" prefix="ERJ-3GEYJ6R2V">
+<description>&lt;h3&gt;330Ω resistor&lt;/h3&gt;
+&lt;p&gt;A resistor is a passive two-terminal electrical component that implements electrical resistance as a circuit element. Resistors act to reduce current flow, and, at the same time, act to lower voltage levels within circuits. - Wikipedia&lt;/p&gt;
+Datasheet Link: https://industrial.panasonic.com/ww/products/pt/general-purpose-chip-resistors/models/ERJ3GEYJ6R2V</description>
+<gates>
+<gate name="A" symbol="RESISTOR-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-0603-1/10W-5%" package="0603">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:39650/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="VALUE" value="330"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3685,41 +3764,49 @@ In this library you will find all the connectors used on any of our boards.
 </classes>
 <parts>
 <part name="D1" library="RoboJackets-LEDs" deviceset="LED-OP293B" device="" override_package3d_urn="urn:adsk.eagle:package:33521984/2" override_package_urn="urn:adsk.eagle:footprint:33521985/1"/>
-<part name="FRAME1" library="RoboJackets-Frames" deviceset="FRAME_11_17" device=""/>
+<part name="FRAME1" library="RoboJackets-Frames" deviceset="FRAME_11_17" device="">
+<attribute name="SCH_DESC" value="Breakbeam transceiver board"/>
+<attribute name="TEAM" value="RoboCup"/>
+</part>
 <part name="SUPPLY1" library="RoboJackets-Supplies" deviceset="GND" device=""/>
 <part name="J1" library="RoboJackets-Connectors" deviceset="0436500213" device="" override_package3d_urn="urn:adsk.eagle:package:33521981/2" override_package_urn="urn:adsk.eagle:footprint:33521982/1"/>
 <part name="D2" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" override_package3d_urn="urn:adsk.eagle:package:33695372/2" override_package_urn="urn:adsk.eagle:footprint:33695373/1"/>
+<part name="RESISTOR" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="200"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="0" y="-22.86" size="1.778" layer="97">Board interfaces with kicker board</text>
-<text x="0" y="-27.94" size="1.778" layer="97">5v source with potentiometer on kicker board</text>
+<text x="0" y="-38.1" size="1.778" layer="97">Board interfaces with kicker board</text>
+<text x="-0.762" y="-42.418" size="1.778" layer="97">5v source with potentiometer on kicker board</text>
 </plain>
 <instances>
-<instance part="D1" gate="G$1" x="27.94" y="-5.08" smashed="yes" rot="R270">
-<attribute name="NAME" x="32.004" y="-5.08" size="1.778" layer="95" rot="MR90" align="bottom-center"/>
-<attribute name="VALUE" x="25.4" y="-5.08" size="1.778" layer="96" rot="MR90" align="top-center"/>
+<instance part="D1" gate="G$1" x="27.94" y="-12.7" smashed="yes" rot="R270">
+<attribute name="NAME" x="32.004" y="-12.7" size="1.778" layer="95" rot="MR90" align="bottom-center"/>
+<attribute name="VALUE" x="25.4" y="-12.7" size="1.778" layer="96" rot="MR90" align="top-center"/>
 </instance>
 <instance part="FRAME1" gate="G$1" x="-182.88" y="-121.92" smashed="yes"/>
 <instance part="FRAME1" gate="G$2" x="142.24" y="-121.92" smashed="yes">
 <attribute name="LAST_DATE_TIME" x="154.94" y="-120.65" size="2.54" layer="94"/>
 <attribute name="SHEET" x="228.6" y="-120.65" size="2.54" layer="94"/>
 <attribute name="DRAWING_NAME" x="157.48" y="-102.87" size="2.54" layer="94"/>
-<attribute name="TEAM" x="143.51" y="-87.63" size="3.81" layer="94" ratio="10" align="top-left"/>
+<attribute name="TEAM" x="144.018" y="-90.678" size="3.81" layer="94" ratio="10" align="top-left"/>
 <attribute name="REVISION" x="214.63" y="-115.57" size="2.54" layer="94"/>
 <attribute name="SCH_DESC" x="143.51" y="-115.57" size="2.54" layer="94"/>
 </instance>
-<instance part="SUPPLY1" gate="G$1" x="27.94" y="-15.24" smashed="yes">
-<attribute name="VALUE" x="25.4" y="-17.78" size="1.778" layer="96"/>
+<instance part="SUPPLY1" gate="G$1" x="27.94" y="-30.48" smashed="yes">
+<attribute name="VALUE" x="25.4" y="-33.02" size="1.778" layer="96"/>
 </instance>
 <instance part="J1" gate="G$1" x="2.54" y="2.54" smashed="yes" rot="R180">
 <attribute name="NAME" x="8.89" y="-3.175" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="8.89" y="7.62" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="D2" gate="A" x="17.78" y="-5.08" smashed="yes" rot="R270">
-<attribute name="NAME" x="21.844" y="-5.08" size="1.778" layer="95" rot="MR90" align="bottom-center"/>
-<attribute name="VALUE" x="15.24" y="-5.08" size="1.778" layer="96" rot="MR90" align="top-center"/>
+<instance part="D2" gate="A" x="17.78" y="-20.32" smashed="yes" rot="R270">
+<attribute name="NAME" x="21.844" y="-20.32" size="1.778" layer="95" rot="MR90" align="bottom-center"/>
+<attribute name="VALUE" x="15.24" y="-20.32" size="1.778" layer="96" rot="MR90" align="top-center"/>
+</instance>
+<instance part="RESISTOR" gate="A" x="17.78" y="-6.604" smashed="yes" rot="R90">
+<attribute name="NAME" x="16.256" y="-6.604" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="19.304" y="-6.604" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -3728,30 +3815,37 @@ In this library you will find all the connectors used on any of our boards.
 <net name="GND" class="0">
 <segment>
 <pinref part="D1" gate="G$1" pin="C"/>
-<wire x1="27.94" y1="-7.62" x2="27.94" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="-15.24" x2="27.94" y2="-25.4" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="G$1" pin="GND"/>
-<wire x1="27.94" y1="-10.16" x2="27.94" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="-10.16" x2="17.78" y2="-10.16" width="0.1524" layer="91"/>
-<junction x="27.94" y="-10.16"/>
-<wire x1="17.78" y1="-10.16" x2="7.62" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="-10.16" x2="7.62" y2="0" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="-25.4" x2="27.94" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="-25.4" x2="17.78" y2="-25.4" width="0.1524" layer="91"/>
+<junction x="27.94" y="-25.4"/>
+<wire x1="17.78" y1="-25.4" x2="7.874" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="7.874" y1="-25.4" x2="7.874" y2="-4.318" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="1"/>
-<wire x1="7.62" y1="0" x2="5.08" y2="0" width="0.1524" layer="91"/>
+<wire x1="7.874" y1="-4.318" x2="5.08" y2="0" width="0.1524" layer="91"/>
 <pinref part="D2" gate="A" pin="C"/>
-<wire x1="17.78" y1="-7.62" x2="17.78" y2="-10.16" width="0.1524" layer="91"/>
-<junction x="17.78" y="-10.16"/>
+<wire x1="17.78" y1="-22.86" x2="17.78" y2="-25.4" width="0.1524" layer="91"/>
+<junction x="17.78" y="-25.4"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="2"/>
 <wire x1="5.08" y1="2.54" x2="17.78" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="D2" gate="A" pin="A"/>
-<wire x1="17.78" y1="2.54" x2="17.78" y2="0" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="2.54" x2="27.94" y2="2.54" width="0.1524" layer="91"/>
-<junction x="17.78" y="2.54"/>
 <pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="27.94" y1="2.54" x2="27.94" y2="0" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="2.54" x2="27.94" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="2.54" x2="27.94" y2="-7.62" width="0.1524" layer="91"/>
+<junction x="17.78" y="2.54"/>
+<pinref part="RESISTOR" gate="A" pin="2"/>
+<wire x1="17.78" y1="-1.524" x2="17.78" y2="2.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="D2" gate="A" pin="A"/>
+<pinref part="RESISTOR" gate="A" pin="1"/>
+<wire x1="17.78" y1="-15.24" x2="17.78" y2="-11.684" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -3760,6 +3854,11 @@ In this library you will find all the connectors used on any of our boards.
 </schematic>
 </drawing>
 <compatibility>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
 <note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports the association of 3D packages
 with devices in libraries, schematics, and board files. Those 3D
