@@ -3631,8 +3631,11 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 </class>
 </classes>
 <parts>
-<part name="FRAME1" library="RoboJackets-Frames" deviceset="FRAME_11_17" device=""/>
-<part name="U$2" library="RoboJackets-Connectors" deviceset="0436500213" device="" override_package3d_urn="urn:adsk.eagle:package:33302042/2" override_package_urn="urn:adsk.eagle:footprint:33302043/1" override_locally_modified="yes"/>
+<part name="FRAME1" library="RoboJackets-Frames" deviceset="FRAME_11_17" device="">
+<attribute name="SCH_DESC" value="Breakbeam receiver board"/>
+<attribute name="TEAM" value="RoboCup"/>
+</part>
+<part name="U$100" library="RoboJackets-Connectors" deviceset="0436500213" device="" override_package3d_urn="urn:adsk.eagle:package:33302042/2" override_package_urn="urn:adsk.eagle:footprint:33302043/1" override_locally_modified="yes"/>
 <part name="SUPPLY1" library="RoboJackets-Supplies" deviceset="GND" device=""/>
 <part name="D1" library="RoboJackets-Discrete" deviceset="OP593B" device="" override_package3d_urn="urn:adsk.eagle:package:33676039/2" override_package_urn="urn:adsk.eagle:footprint:33676040/1"/>
 </parts>
@@ -3646,11 +3649,11 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 <attribute name="LAST_DATE_TIME" x="153.82" y="-146.73" size="2.54" layer="94"/>
 <attribute name="SHEET" x="227.48" y="-146.73" size="2.54" layer="94"/>
 <attribute name="DRAWING_NAME" x="156.36" y="-128.95" size="2.54" layer="94"/>
-<attribute name="TEAM" x="142.39" y="-113.71" size="3.81" layer="94" ratio="10" align="top-left"/>
+<attribute name="TEAM" x="142.898" y="-116.25" size="3.81" layer="94" ratio="10" align="top-left"/>
 <attribute name="REVISION" x="213.51" y="-141.65" size="2.54" layer="94"/>
 <attribute name="SCH_DESC" x="142.39" y="-141.65" size="2.54" layer="94"/>
 </instance>
-<instance part="U$2" gate="G$1" x="-2.54" y="2.54" smashed="yes" rot="R180">
+<instance part="U$100" gate="G$1" x="-2.54" y="2.54" smashed="yes" rot="R180">
 <attribute name="NAME" x="3.81" y="-3.175" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="3.81" y="7.62" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -3669,7 +3672,7 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 <segment>
 <wire x1="15.24" y1="2.54" x2="15.24" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="7.62" x2="27.94" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="2"/>
+<pinref part="U$100" gate="G$1" pin="2"/>
 <wire x1="15.24" y1="2.54" x2="0" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="E"/>
 </segment>
@@ -3679,7 +3682,7 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 <wire x1="27.94" y1="-7.62" x2="27.94" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="-10.16" x2="7.62" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="-10.16" x2="7.62" y2="0" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="1"/>
+<pinref part="U$100" gate="G$1" pin="1"/>
 <wire x1="7.62" y1="0" x2="0" y2="0" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="G$1" pin="GND"/>
 <wire x1="27.94" y1="-10.16" x2="27.94" y2="-12.7" width="0.1524" layer="91"/>
