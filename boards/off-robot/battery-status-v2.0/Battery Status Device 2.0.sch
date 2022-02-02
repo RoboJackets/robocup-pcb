@@ -11533,9 +11533,9 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 <part name="D3-R5" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="250"/>
 <part name="D3-R6" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="250"/>
 <part name="D3-R7" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="250"/>
-<part name="LED1-R1" library="RoboJackets-Resistors" deviceset="RESISTOR" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="160"/>
-<part name="LED2-R1" library="RoboJackets-Resistors" deviceset="RESISTOR" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="145"/>
-<part name="LED3-R1" library="RoboJackets-Resistors" deviceset="RESISTOR" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="193"/>
+<part name="LED1-R1" library="RoboJackets-Resistors" deviceset="RESISTOR" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="180"/>
+<part name="LED2-R1" library="RoboJackets-Resistors" deviceset="RESISTOR" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="180"/>
+<part name="LED3-R1" library="RoboJackets-Resistors" deviceset="RESISTOR" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="180"/>
 <part name="D2-R8" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="300"/>
 <part name="T5" library="transistor" library_urn="urn:adsk.eagle:library:402" deviceset="BC846" device="" package3d_urn="urn:adsk.eagle:package:28738/2"/>
 <part name="VD9" library="RoboJackets-Resistors" deviceset="RESISTOR" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="5.0k"/>
@@ -11614,11 +11614,6 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 <wire x1="-93.98" y1="10.16" x2="-40.64" y2="10.16" width="0.1524" layer="95" style="longdash"/>
 <wire x1="-40.64" y1="10.16" x2="-40.64" y2="99.06" width="0.1524" layer="95" style="longdash"/>
 <wire x1="-40.64" y1="99.06" x2="-93.98" y2="99.06" width="0.1524" layer="95" style="longdash"/>
-<text x="19.304" y="24.638" size="1.778" layer="97">Not connecting a power supply
-from the programmer, 
-so will need to have a battery
-plugged in to power
-the board while programming</text>
 <text x="-111.76" y="-17.78" size="2.54" layer="97">All of these should output 2.47V
 at typical battery output</text>
 </plain>
@@ -11950,6 +11945,12 @@ at typical battery output</text>
 <pinref part="C8" gate="G$1" pin="2"/>
 <wire x1="172.72" y1="53.34" x2="175.26" y2="53.34" width="0.1524" layer="91"/>
 <label x="175.26" y="53.34" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="6"/>
+<wire x1="5.588" y1="28.194" x2="5.588" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="5.588" y1="27.94" x2="10.16" y2="27.94" width="0.1524" layer="91"/>
+<label x="10.16" y="27.94" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="18.5V" class="0">
@@ -12449,6 +12450,12 @@ at typical battery output</text>
 <pinref part="C8" gate="G$1" pin="1"/>
 <wire x1="162.56" y1="58.42" x2="162.56" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="53.34" x2="165.1" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="2"/>
+<wire x1="5.588" y1="33.274" x2="9.652" y2="33.274" width="0.1524" layer="91"/>
+<wire x1="9.652" y1="33.274" x2="9.652" y2="33.528" width="0.1524" layer="91"/>
+<label x="9.906" y="33.528" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="11.1VB" class="0">
