@@ -33175,6 +33175,7 @@ pins while connecting</text>
 <wire x1="7.62" y1="58.42" x2="7.62" y2="2.54" width="0.1524" layer="97" style="shortdash"/>
 <text x="10.16" y="53.34" size="1.778" layer="97">IR Connector</text>
 <wire x1="7.62" y1="2.54" x2="78.74" y2="2.54" width="0.1524" layer="97" style="shortdash"/>
+<text x="10.16" y="63.5" size="1.524" layer="97">Connector is backwards compatible with radio boards before radio v4.0</text>
 </plain>
 <instances>
 <instance part="FRAME4" gate="G$1" x="0" y="0" smashed="yes"/>
