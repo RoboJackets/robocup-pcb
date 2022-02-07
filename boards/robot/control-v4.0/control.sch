@@ -35226,6 +35226,8 @@ battery power</text>
 <approved hash="201,5,218.44,124.46,V_OUT,+1.2V-PRE\, +2.5V-PRE,,,,"/>
 <approved hash="104,3,55.88,71.12,IC1,VDD,+3.3V,,,"/>
 <approved hash="104,3,55.88,30.48,IC1,VSS,GND,,,"/>
+<approved hash="104,5,190.5,124.46,U6,V_IN,+3.3V,,,"/>
+<approved hash="104,5,190.5,73.66,U7,V_IN,+3.3V,,,"/>
 <approved hash="104,2,350.52,144.78,X1,VDD,+3.3V,,,"/>
 <approved hash="104,1,91.44,167.64,KIT1,VIN,+5V,,,"/>
 <approved hash="204,1,188.087,167.64,KIT1,VBUS,,,,"/>
@@ -35233,6 +35235,7 @@ battery power</text>
 <approved hash="206,5,218.44,119.38,PWR-ERR,,,,,"/>
 <approved hash="206,5,218.44,68.58,PWR-ERR,,,,,"/>
 <approved hash="106,5,96.52,99.06,SW,,,,,"/>
+<approved hash="106,5,96.52,45.72,SW1,,,,,"/>
 <approved hash="118,1@WHEEL_DRIVE,87.63,190.5,Net,+18.5V,,,,"/>
 <approved hash="118,1@WHEEL_DRIVE,49.53,116.84,Net,GND,,,,"/>
 <approved hash="118,1@WHEEL_DRIVE,26.67,53.34,Net,+5V,,,,"/>
