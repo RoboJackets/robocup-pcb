@@ -8196,8 +8196,8 @@ In this library you will find resistors. If you are looking for a common package
 </classes>
 <parts>
 <part name="FRAME1" library="RoboJackets-Frames" deviceset="FRAME_A_L" device="">
-<attribute name="REVISION" value="v1.0"/>
-<attribute name="SCH_DESC" value="Breakout for ICM 42605 IMU"/>
+<attribute name="REVISION" value="v1.2"/>
+<attribute name="SCH_DESC" value="Breakout for ICM 42605/42688 IMU"/>
 <attribute name="TEAM" value="RoboCup SSL"/>
 </part>
 <part name="KIT1" library="RoboJackets-Boards" deviceset="IMU" device="IMU-KIT"/>
@@ -8214,7 +8214,7 @@ In this library you will find resistors. If you are looking for a common package
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="D1" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-GREEN" value="GREEN"/>
 <part name="SUPPLY1" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
-<part name="R1" library="RoboJackets-Resistors" deviceset="R0603W" device="" value="100"/>
+<part name="R1" library="RoboJackets-Resistors" deviceset="R0603W" device="" value="330"/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
