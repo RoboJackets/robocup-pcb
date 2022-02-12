@@ -3771,13 +3771,13 @@ Datasheet Link: https://industrial.panasonic.com/ww/products/pt/general-purpose-
 <part name="SUPPLY1" library="RoboJackets-Supplies" deviceset="GND" device=""/>
 <part name="J1" library="RoboJackets-Connectors" deviceset="0436500213" device="" override_package3d_urn="urn:adsk.eagle:package:33521981/2" override_package_urn="urn:adsk.eagle:footprint:33521982/1"/>
 <part name="D2" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" override_package3d_urn="urn:adsk.eagle:package:33695372/2" override_package_urn="urn:adsk.eagle:footprint:33695373/1"/>
-<part name="RESISTOR" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="200"/>
+<part name="R1" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="100"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="0" y="-38.1" size="1.778" layer="97">Board interfaces with kicker board</text>
-<text x="-0.762" y="-42.418" size="1.778" layer="97">5v source with potentiometer on kicker board</text>
+<text x="-0.762" y="-42.418" size="1.778" layer="97">5v source with potentiometer and 51 ohm resistor on kicker board</text>
 </plain>
 <instances>
 <instance part="D1" gate="G$1" x="27.94" y="-12.7" smashed="yes" rot="R270">
@@ -3804,7 +3804,7 @@ Datasheet Link: https://industrial.panasonic.com/ww/products/pt/general-purpose-
 <attribute name="NAME" x="21.844" y="-20.32" size="1.778" layer="95" rot="MR90" align="bottom-center"/>
 <attribute name="VALUE" x="15.24" y="-20.32" size="1.778" layer="96" rot="MR90" align="top-center"/>
 </instance>
-<instance part="RESISTOR" gate="A" x="17.78" y="-6.604" smashed="yes" rot="R90">
+<instance part="R1" gate="A" x="17.78" y="-6.604" smashed="yes" rot="R90">
 <attribute name="NAME" x="16.256" y="-6.604" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="19.304" y="-6.604" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
@@ -3820,16 +3820,16 @@ Datasheet Link: https://industrial.panasonic.com/ww/products/pt/general-purpose-
 <wire x1="27.94" y1="-25.4" x2="27.94" y2="-27.94" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="-25.4" x2="17.78" y2="-25.4" width="0.1524" layer="91"/>
 <junction x="27.94" y="-25.4"/>
-<wire x1="17.78" y1="-25.4" x2="7.874" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="7.874" y1="-25.4" x2="7.874" y2="-4.318" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="1"/>
-<wire x1="7.874" y1="-4.318" x2="5.08" y2="0" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="-25.4" x2="10.16" y2="-25.4" width="0.1524" layer="91"/>
 <pinref part="D2" gate="A" pin="C"/>
 <wire x1="17.78" y1="-22.86" x2="17.78" y2="-25.4" width="0.1524" layer="91"/>
 <junction x="17.78" y="-25.4"/>
+<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="5.08" y1="0" x2="10.16" y2="0" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="0" x2="10.16" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="BB_TX" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="2"/>
 <wire x1="5.08" y1="2.54" x2="17.78" y2="2.54" width="0.1524" layer="91"/>
@@ -3837,14 +3837,14 @@ Datasheet Link: https://industrial.panasonic.com/ww/products/pt/general-purpose-
 <wire x1="17.78" y1="2.54" x2="27.94" y2="2.54" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="2.54" x2="27.94" y2="-7.62" width="0.1524" layer="91"/>
 <junction x="17.78" y="2.54"/>
-<pinref part="RESISTOR" gate="A" pin="2"/>
+<pinref part="R1" gate="A" pin="2"/>
 <wire x1="17.78" y1="-1.524" x2="17.78" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="D2" gate="A" pin="A"/>
-<pinref part="RESISTOR" gate="A" pin="1"/>
+<pinref part="R1" gate="A" pin="1"/>
 <wire x1="17.78" y1="-15.24" x2="17.78" y2="-11.684" width="0.1524" layer="91"/>
 </segment>
 </net>
