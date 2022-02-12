@@ -11908,6 +11908,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SUPPLY39" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="J1" library="RoboJackets-Connectors" deviceset="SFW8R-1STE1LF" device=""/>
 <part name="SUPPLY18" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
+<part name="SUPPLY40" library="RoboJackets-Supplies" deviceset="GND" device=""/>
+<part name="SUPPLY41" library="RoboJackets-Supplies" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12203,6 +12205,12 @@ In this library the device names are the same as the pin names of the symbols, t
 </instance>
 <instance part="SUPPLY18" gate="+5V" x="22.86" y="226.06" smashed="yes">
 <attribute name="VALUE" x="20.955" y="229.235" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY40" gate="G$1" x="55.88" y="106.68" smashed="yes">
+<attribute name="VALUE" x="50.8" y="104.14" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY41" gate="G$1" x="121.92" y="104.14" smashed="yes">
+<attribute name="VALUE" x="116.84" y="101.6" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -12589,6 +12597,18 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="SUPPLY12" gate="G$1" pin="GND"/>
 <wire x1="17.78" y1="193.04" x2="22.86" y2="193.04" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="A0"/>
+<wire x1="66.04" y1="114.3" x2="55.88" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="114.3" x2="55.88" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="SUPPLY40" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="A1"/>
+<wire x1="96.52" y1="109.22" x2="121.92" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="SUPPLY41" gate="G$1" pin="GND"/>
+<wire x1="121.92" y1="109.22" x2="121.92" y2="106.68" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
@@ -12651,30 +12671,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <net name="N$2" class="0">
 <segment>
 <junction x="175.26" y="106.68"/>
-</segment>
-</net>
-<net name="!RST!-I2C" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="4"/>
-<wire x1="17.78" y1="208.28" x2="22.86" y2="208.28" width="0.1524" layer="91"/>
-<label x="22.86" y="208.28" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<label x="104.14" y="109.22" size="1.27" layer="95" xref="yes"/>
-<wire x1="104.14" y1="109.22" x2="96.52" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="A1"/>
-</segment>
-</net>
-<net name="INT-I2C" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="5"/>
-<wire x1="17.78" y1="203.2" x2="22.86" y2="203.2" width="0.1524" layer="91"/>
-<label x="22.86" y="203.2" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<label x="50.8" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="50.8" y1="114.3" x2="66.04" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="A0"/>
 </segment>
 </net>
 </nets>
