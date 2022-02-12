@@ -11996,8 +11996,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="SUPPLY11" gate="P" x="60.96" y="132.08" smashed="yes">
 <attribute name="VALUE" x="56.515" y="135.255" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY12" gate="G$1" x="33.02" y="200.66" smashed="yes">
-<attribute name="VALUE" x="27.94" y="198.12" size="1.778" layer="96"/>
+<instance part="SUPPLY12" gate="G$1" x="22.86" y="190.5" smashed="yes">
+<attribute name="VALUE" x="17.78" y="187.96" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY13" gate="G$1" x="58.42" y="81.28" smashed="yes">
 <attribute name="VALUE" x="55.88" y="78.74" size="1.778" layer="96"/>
@@ -12201,8 +12201,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <attribute name="NAME" x="7.62" y="228.6" size="1.778" layer="95" font="vector" align="top-left"/>
 <attribute name="VALUE" x="7.62" y="182.88" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="SUPPLY18" gate="+5V" x="22.86" y="220.98" smashed="yes">
-<attribute name="VALUE" x="20.955" y="224.155" size="1.778" layer="96"/>
+<instance part="SUPPLY18" gate="+5V" x="22.86" y="226.06" smashed="yes">
+<attribute name="VALUE" x="20.955" y="229.235" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -12466,9 +12466,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <junction x="101.6" y="111.76"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="8"/>
-<wire x1="17.78" y1="187.96" x2="22.86" y2="187.96" width="0.1524" layer="91"/>
-<label x="22.86" y="187.96" size="1.778" layer="95" xref="yes"/>
+<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="17.78" y1="218.44" x2="22.86" y2="218.44" width="0.1524" layer="91"/>
+<label x="22.86" y="218.44" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SDA_CONN" class="0">
@@ -12482,33 +12482,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <junction x="109.22" y="114.3"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="7"/>
-<wire x1="17.78" y1="193.04" x2="22.86" y2="193.04" width="0.1524" layer="91"/>
-<label x="22.86" y="193.04" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="A0" class="0">
-<segment>
-<label x="50.8" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="50.8" y1="114.3" x2="66.04" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="A0"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="4"/>
-<wire x1="17.78" y1="208.28" x2="22.86" y2="208.28" width="0.1524" layer="91"/>
-<label x="22.86" y="208.28" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="A1" class="0">
-<segment>
-<label x="104.14" y="109.22" size="1.27" layer="95" xref="yes"/>
-<wire x1="104.14" y1="109.22" x2="96.52" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="A1"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="6"/>
-<wire x1="17.78" y1="198.12" x2="22.86" y2="198.12" width="0.1524" layer="91"/>
-<label x="22.86" y="198.12" size="1.778" layer="95" xref="yes"/>
+<pinref part="J1" gate="G$1" pin="3"/>
+<wire x1="17.78" y1="213.36" x2="22.86" y2="213.36" width="0.1524" layer="91"/>
+<label x="22.86" y="213.36" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="!RESET" class="0">
@@ -12609,9 +12585,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <junction x="213.36" y="218.44"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="5"/>
+<pinref part="J1" gate="G$1" pin="7"/>
 <pinref part="SUPPLY12" gate="G$1" pin="GND"/>
-<wire x1="17.78" y1="203.2" x2="33.02" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="193.04" x2="22.86" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -12631,9 +12607,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="SUPPLY29" gate="G$1" pin="+5V"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="2"/>
-<wire x1="17.78" y1="218.44" x2="22.86" y2="218.44" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="1"/>
 <pinref part="SUPPLY18" gate="+5V" pin="+5V"/>
+<wire x1="17.78" y1="223.52" x2="22.86" y2="223.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -12677,9 +12653,57 @@ In this library the device names are the same as the pin names of the symbols, t
 <junction x="175.26" y="106.68"/>
 </segment>
 </net>
+<net name="!RST!-I2C" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="4"/>
+<wire x1="17.78" y1="208.28" x2="22.86" y2="208.28" width="0.1524" layer="91"/>
+<label x="22.86" y="208.28" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<label x="104.14" y="109.22" size="1.27" layer="95" xref="yes"/>
+<wire x1="104.14" y1="109.22" x2="96.52" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="A1"/>
+</segment>
+</net>
+<net name="INT-I2C" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="5"/>
+<wire x1="17.78" y1="203.2" x2="22.86" y2="203.2" width="0.1524" layer="91"/>
+<label x="22.86" y="203.2" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<label x="50.8" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="50.8" y1="114.3" x2="66.04" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="A0"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,208.28,198.12,U2,VDD,+3.3V,,,"/>
+<approved hash="104,1,208.28,233.68,U3,VDD,+3.3V,,,"/>
+<approved hash="104,1,208.28,116.84,U4,VDD,+3.3V,,,"/>
+<approved hash="104,1,208.28,154.94,U5,VDD,+3.3V,,,"/>
+<approved hash="208,1,83.82,205.74,GND,out,,,,"/>
+<approved hash="208,1,68.58,205.74,GND,sup,,,,"/>
+<approved hash="208,1,60.96,195.58,GND,sup,,,,"/>
+<approved hash="208,1,127,195.58,GND,sup,,,,"/>
+<approved hash="208,1,220.98,215.9,GND,sup,,,,"/>
+<approved hash="208,1,220.98,177.8,GND,sup,,,,"/>
+<approved hash="208,1,220.98,137.16,GND,sup,,,,"/>
+<approved hash="208,1,220.98,99.06,GND,sup,,,,"/>
+<approved hash="208,1,58.42,83.82,GND,sup,,,,"/>
+<approved hash="208,1,213.36,99.06,GND,sup,,,,"/>
+<approved hash="208,1,213.36,137.16,GND,sup,,,,"/>
+<approved hash="208,1,213.36,177.8,GND,sup,,,,"/>
+<approved hash="208,1,213.36,215.9,GND,sup,,,,"/>
+<approved hash="208,1,22.86,193.04,GND,sup,,,,"/>
+<approved hash="105,1,175.26,106.68,N$2,,,,,"/>
+<approved hash="107,1,175.26,106.68,SDA_SENSOR4,N$2,,,,"/>
+<approved hash="107,1,175.26,106.68,SDA_SENSOR4,N$2,,,,"/>
+<approved hash="107,1,175.26,106.68,SDA_SENSOR4,N$2,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
