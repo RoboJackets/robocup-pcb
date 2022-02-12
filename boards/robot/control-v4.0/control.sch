@@ -19807,37 +19807,6 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 <smd name="5678" x="1.3225" y="0" dx="4.895" dy="4.41" layer="1"/>
 <text x="-3.5" y="2.5" size="1" layer="25">&gt;NAME</text>
 </package>
-<package name="SOT-23-3">
-<smd name="3" x="0" y="1.2" dx="1" dy="0.7" layer="1" rot="R90"/>
-<smd name="1" x="-0.95" y="-1.2" dx="1" dy="0.7" layer="1" rot="R90"/>
-<smd name="2" x="0.95" y="-1.2" dx="1" dy="0.7" layer="1" rot="R90"/>
-<wire x1="1.45" y1="0.8" x2="1.45" y2="-0.8" width="0.2" layer="21"/>
-<wire x1="-1.45" y1="-0.8" x2="-1.45" y2="0.8" width="0.2" layer="21"/>
-<wire x1="-1.45" y1="0.8" x2="-0.55" y2="0.8" width="0.2" layer="21"/>
-<wire x1="0.45" y1="-0.8" x2="-0.45" y2="-0.8" width="0.2" layer="21"/>
-<wire x1="0.55" y1="0.8" x2="1.45" y2="0.8" width="0.2" layer="21"/>
-<text x="-2" y="-1" size="1" layer="25" rot="R90">&gt;NAME</text>
-</package>
-<package name="SOT223">
-<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
-<wire x1="3.2766" y1="1.778" x2="3.2766" y2="-1.778" width="0.2032" layer="21"/>
-<wire x1="3.2766" y1="-1.778" x2="-3.2766" y2="-1.778" width="0.2032" layer="21"/>
-<wire x1="-3.2766" y1="-1.778" x2="-3.2766" y2="1.778" width="0.2032" layer="21"/>
-<wire x1="-3.2766" y1="1.778" x2="3.2766" y2="1.778" width="0.2032" layer="21"/>
-<smd name="1" x="-2.3114" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
-<smd name="2" x="0" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
-<smd name="3" x="2.3114" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
-<smd name="4" x="0" y="3.099" dx="3.6" dy="2.2" layer="1"/>
-<text x="-3.5508" y="-2.04" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
-<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
-<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
-<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
-<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
-<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
-<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
-<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
-</package>
 </packages>
 <symbols>
 <symbol name="N_MOSFET">
@@ -19890,33 +19859,6 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 <attribute name="DIGIKEY" value="IRFH7545TRPBFCT-ND" constant="no"/>
 <attribute name="MPN" value="IRFH7545TRPBF" constant="no"/>
 </technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="NMOS" prefix="Q" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="N_MOSFET" x="0" y="0"/>
-</gates>
-<devices>
-<device name="SOT-23-3" package="SOT-23-3">
-<connects>
-<connect gate="G$1" pin="D" pad="3"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="SOT223" package="SOT223">
-<connects>
-<connect gate="G$1" pin="D" pad="2 4"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -30371,15 +30313,6 @@ ripple current from motors</text>
 <part name="U2" library="RoboJackets-ICs" deviceset="74*1G125" device="D" technology="AHC" value="SN74AHC1G125"/>
 <part name="GND51" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SUPPLY36" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
-<part name="R12" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10k"/>
-<part name="R13" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="100k"/>
-<part name="R14" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="100k"/>
-<part name="SUPPLY4" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
-<part name="GND38" library="supply1" deviceset="GND" device=""/>
-<part name="GND39" library="supply1" deviceset="GND" device=""/>
-<part name="GND40" library="supply1" deviceset="GND" device=""/>
-<part name="Q1" library="RoboJackets-Discrete" deviceset="NMOS" device="SOT-23-3" value="BSS806NH6327XTSA1"/>
-<part name="Q2" library="RoboJackets-Discrete" deviceset="NMOS" device="SOT-23-3" value="BSS806NH6327XTSA1"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="$$C100" library="rcl" deviceset="C-US" device="C0603" value="GRM188R6YA106MA73D"/>
 <part name="GND41" library="supply1" deviceset="GND" device=""/>
@@ -32720,23 +32653,11 @@ serial from MTrain</text>
 <wire x1="139.7" y1="5.08" x2="7.62" y2="5.08" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="7.62" y1="5.08" x2="7.62" y2="88.9" width="0.1524" layer="97" style="shortdash"/>
 <text x="10.16" y="83.82" size="1.778" layer="97">IO Expander</text>
-<wire x1="12.7" y1="198.12" x2="127" y2="198.12" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="127" y1="198.12" x2="127" y2="114.3" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="127" y1="114.3" x2="12.7" y2="114.3" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="12.7" y1="114.3" x2="12.7" y2="198.12" width="0.1524" layer="97" style="shortdash"/>
-<text x="15.24" y="193.04" size="1.778" layer="97">Reset Network</text>
 <wire x1="144.78" y1="198.12" x2="254" y2="198.12" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="254" y1="198.12" x2="254" y2="167.64" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="254" y1="167.64" x2="144.78" y2="167.64" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="144.78" y1="167.64" x2="144.78" y2="198.12" width="0.1524" layer="97" style="shortdash"/>
 <text x="147.32" y="193.04" size="1.778" layer="97">IMU Connector</text>
-<text x="48.26" y="116.84" size="1.778" layer="97">|  3.3V  |  V_MTRAIN    ||  !RST!   |
--------------------------------
-|  LOW   |     LOW     ||    X   |
-|  LOW   |     HIGH    ||  LOW   |
-|  HIGH  |     LOW     ||    X   |
-|  HIGH  |     HIGH     ||  HIGH  |
--------------------------------</text>
 <text x="215.9" y="187.96" size="1.778" layer="97">Pay attention to put the 
 IMU board in the right 
 pins while connecting</text>
@@ -32772,38 +32693,6 @@ pins while connecting</text>
 <attribute name="NAME" x="86.995" y="27.94" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="86.36" y="52.578" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="R12" gate="G$1" x="25.4" y="170.18" smashed="yes" rot="R90">
-<attribute name="NAME" x="23.9014" y="166.37" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="28.702" y="166.37" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="R13" gate="G$1" x="25.4" y="152.4" smashed="yes" rot="R90">
-<attribute name="NAME" x="23.9014" y="148.59" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="28.702" y="148.59" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="R14" gate="G$1" x="58.42" y="170.18" smashed="yes" rot="R90">
-<attribute name="NAME" x="56.9214" y="166.37" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="61.722" y="166.37" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="SUPPLY4" gate="P" x="25.4" y="182.88" smashed="yes">
-<attribute name="VALUE" x="18.415" y="180.975" size="1.778" layer="96"/>
-</instance>
-<instance part="GND38" gate="1" x="25.4" y="139.7" smashed="yes">
-<attribute name="VALUE" x="22.86" y="137.16" size="1.778" layer="96"/>
-</instance>
-<instance part="GND39" gate="1" x="58.42" y="142.24" smashed="yes">
-<attribute name="VALUE" x="55.88" y="139.7" size="1.778" layer="96"/>
-</instance>
-<instance part="GND40" gate="1" x="93.98" y="142.24" smashed="yes">
-<attribute name="VALUE" x="91.44" y="139.7" size="1.778" layer="96"/>
-</instance>
-<instance part="Q1" gate="G$1" x="58.42" y="152.4" smashed="yes">
-<attribute name="VALUE" x="60.96" y="152.4" size="1.778" layer="96"/>
-<attribute name="NAME" x="60.96" y="154.94" size="1.778" layer="95"/>
-</instance>
-<instance part="Q2" gate="G$1" x="93.98" y="162.56" smashed="yes">
-<attribute name="VALUE" x="96.52" y="162.56" size="1.778" layer="96"/>
-<attribute name="NAME" x="96.52" y="165.1" size="1.778" layer="95"/>
-</instance>
 <instance part="KIT2" gate="G$1" x="180.34" y="180.34" smashed="yes">
 <attribute name="VALUE" x="171.45" y="169.672" size="1.778" layer="96" align="top-left"/>
 <attribute name="NAME" x="171.45" y="191.008" size="1.778" layer="95"/>
@@ -32831,21 +32720,6 @@ pins while connecting</text>
 <junction x="53.34" y="30.48"/>
 </segment>
 <segment>
-<pinref part="GND38" gate="1" pin="GND"/>
-<pinref part="R13" gate="G$1" pin="1"/>
-<wire x1="25.4" y1="142.24" x2="25.4" y2="147.32" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND39" gate="1" pin="GND"/>
-<wire x1="58.42" y1="147.32" x2="58.42" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="G$1" pin="S"/>
-</segment>
-<segment>
-<pinref part="GND40" gate="1" pin="GND"/>
-<wire x1="93.98" y1="157.48" x2="93.98" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="Q2" gate="G$1" pin="S"/>
-</segment>
-<segment>
 <label x="200.66" y="172.72" size="1.27" layer="95" xref="yes"/>
 <wire x1="200.66" y1="172.72" x2="194.31" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="KIT2" gate="G$1" pin="GND"/>
@@ -32868,11 +32742,6 @@ pins while connecting</text>
 <junction x="53.34" y="40.64"/>
 <wire x1="25.4" y1="40.64" x2="53.34" y2="40.64" width="0.1524" layer="91"/>
 <junction x="25.4" y="40.64"/>
-</segment>
-<segment>
-<pinref part="R12" gate="G$1" pin="2"/>
-<pinref part="SUPPLY4" gate="P" pin="+3.3V"/>
-<wire x1="25.4" y1="175.26" x2="25.4" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <label x="200.66" y="187.96" size="1.27" layer="95" xref="yes"/>
@@ -33025,45 +32894,6 @@ pins while connecting</text>
 <label x="101.6" y="38.1" size="1.27" layer="95" xref="yes"/>
 <pinref part="RN9" gate="G$1" pin="13"/>
 <wire x1="96.52" y1="38.1" x2="101.6" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="BATT_PWR_AVAIL" class="0">
-<segment>
-<pinref part="R13" gate="G$1" pin="2"/>
-<pinref part="R12" gate="G$1" pin="1"/>
-<wire x1="25.4" y1="157.48" x2="25.4" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="160.02" x2="25.4" y2="165.1" width="0.1524" layer="91"/>
-<junction x="25.4" y="160.02"/>
-<wire x1="25.4" y1="160.02" x2="40.64" y2="160.02" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="G$1" pin="G"/>
-<wire x1="40.64" y1="160.02" x2="40.64" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="149.86" x2="53.34" y2="149.86" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="!RST!-NETWORK" class="0">
-<segment>
-<wire x1="93.98" y1="185.42" x2="96.52" y2="185.42" width="0.1524" layer="91"/>
-<label x="96.52" y="185.42" size="1.27" layer="95" xref="yes"/>
-<wire x1="93.98" y1="167.64" x2="93.98" y2="185.42" width="0.1524" layer="91"/>
-<pinref part="Q2" gate="G$1" pin="D"/>
-</segment>
-</net>
-<net name="V_MTRAIN" class="0">
-<segment>
-<pinref part="R14" gate="G$1" pin="2"/>
-<wire x1="58.42" y1="175.26" x2="58.42" y2="185.42" width="0.1524" layer="91"/>
-<label x="58.42" y="185.42" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="!RST!_CTRL" class="0">
-<segment>
-<pinref part="R14" gate="G$1" pin="1"/>
-<wire x1="58.42" y1="165.1" x2="58.42" y2="160.02" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="G$1" pin="D"/>
-<pinref part="Q2" gate="G$1" pin="G"/>
-<wire x1="58.42" y1="160.02" x2="58.42" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="160.02" x2="58.42" y2="160.02" width="0.1524" layer="91"/>
-<junction x="58.42" y="160.02"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
