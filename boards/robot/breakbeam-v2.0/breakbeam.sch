@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.1">
+<eagle version="9.5.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -77,7 +77,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="99" name="SpiceOrder" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
@@ -120,20 +120,20 @@
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="202" name="202bmp" color="3" fill="10" visible="yes" active="yes"/>
-<layer number="203" name="203bmp" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="204" name="204bmp" color="5" fill="10" visible="yes" active="yes"/>
-<layer number="205" name="205bmp" color="6" fill="10" visible="yes" active="yes"/>
-<layer number="206" name="206bmp" color="7" fill="10" visible="yes" active="yes"/>
-<layer number="207" name="207bmp" color="8" fill="10" visible="yes" active="yes"/>
-<layer number="208" name="208bmp" color="9" fill="10" visible="yes" active="yes"/>
-<layer number="209" name="209bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="210" name="210bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="211" name="211bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="212" name="212bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="213" name="213bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="214" name="214bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="201" name="201bmp" color="2" fill="10" visible="no" active="yes"/>
+<layer number="202" name="202bmp" color="3" fill="10" visible="no" active="yes"/>
+<layer number="203" name="203bmp" color="4" fill="10" visible="no" active="yes"/>
+<layer number="204" name="204bmp" color="5" fill="10" visible="no" active="yes"/>
+<layer number="205" name="205bmp" color="6" fill="10" visible="no" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="10" visible="no" active="yes"/>
+<layer number="207" name="207bmp" color="8" fill="10" visible="no" active="yes"/>
+<layer number="208" name="208bmp" color="9" fill="10" visible="no" active="yes"/>
+<layer number="209" name="209bmp" color="10" fill="10" visible="no" active="yes"/>
+<layer number="210" name="210bmp" color="11" fill="10" visible="no" active="yes"/>
+<layer number="211" name="211bmp" color="12" fill="10" visible="no" active="yes"/>
+<layer number="212" name="212bmp" color="13" fill="10" visible="no" active="yes"/>
+<layer number="213" name="213bmp" color="14" fill="10" visible="no" active="yes"/>
+<layer number="214" name="214bmp" color="15" fill="10" visible="no" active="yes"/>
 <layer number="215" name="215bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="216" name="216bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
@@ -172,8 +172,8 @@ In this library you will find frames that can be used to help organize a schemat
 <packages>
 </packages>
 <symbols>
-<symbol name="FRAME_B_L">
-<frame x1="0" y1="0" x2="431.8" y2="279.4" columns="9" rows="6" layer="94" border-bottom="no"/>
+<symbol name="FRAME_A_L">
+<frame x1="0" y1="0" x2="279.4" y2="215.9" columns="6" rows="5" layer="94" border-bottom="no"/>
 </symbol>
 <symbol name="DOCFIELD">
 <wire x1="0" y1="0" x2="71.12" y2="0" width="0.1016" layer="94"/>
@@ -3432,84 +3432,16 @@ In this library you will find frames that can be used to help organize a schemat
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="FRAME_B_L" prefix="FRAME">
-<description>&lt;b&gt;FRAME&lt;/b&gt; B Size , 11 x 17 INCH, Landscape&lt;p&gt;</description>
+<deviceset name="FRAME_A_L" prefix="FRAME">
+<description>&lt;b&gt;FRAME&lt;/b&gt; A Size , 8 1/2 x 11 INCH, Landscape&lt;p&gt;</description>
 <gates>
-<gate name="G$1" symbol="FRAME_B_L" x="0" y="0" addlevel="always"/>
-<gate name="G$2" symbol="DOCFIELD" x="325.12" y="0" addlevel="always"/>
+<gate name="G$1" symbol="FRAME_A_L" x="0" y="0" addlevel="always"/>
+<gate name="G$2" symbol="DOCFIELD" x="172.72" y="0" addlevel="always"/>
 </gates>
 <devices>
 <device name="">
 <technologies>
-<technology name="">
-<attribute name="SCH_DESC" value="insert_description" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="RoboJackets-Connectors">
-<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
-&lt;hr&gt;
-&lt;h1&gt;RoboJackets EAGLE Libraries - Connectors&lt;/h1&gt;&lt;/br&gt;
-&lt;p&gt;
-In this library you will find all the connectors used on any of our boards.
-&lt;/p&gt;</description>
-<packages>
-<package name="87438-02" library_version="2">
-<description>&lt;b&gt;1.50mm Pitch Pico-SPOX™ Wire-to-Board Header, Surface Mount, Right Angle, Shrouded, Nylon, 2 Circuits, Embossed Tape on Reel, Beige&lt;/b&gt;&lt;p&gt;&lt;a href =http://www.molex.com/pdm_docs/sd/874380243_sd.pdf&gt;Datasheet &lt;/a&gt;</description>
-<wire x1="-4.8" y1="0.75" x2="-4.05" y2="0.75" width="0.2032" layer="21"/>
-<wire x1="-4.05" y1="0.75" x2="-4.05" y2="2.05" width="0.2032" layer="21"/>
-<wire x1="-4.05" y1="2.05" x2="0.75" y2="2.05" width="0.2032" layer="21"/>
-<wire x1="0.75" y1="2.05" x2="0.75" y2="-2.05" width="0.2032" layer="51"/>
-<wire x1="0.75" y1="-2.05" x2="-4.05" y2="-2.05" width="0.2032" layer="21"/>
-<wire x1="-4.05" y1="-2.05" x2="-4.05" y2="-0.75" width="0.2032" layer="21"/>
-<wire x1="-4.05" y1="-0.75" x2="-4.8" y2="-0.75" width="0.2032" layer="21"/>
-<wire x1="-4.8" y1="-0.75" x2="-4.8" y2="0.75" width="0.2032" layer="21"/>
-<smd name="1" x="0" y="0.75" dx="7" dy="0.85" layer="1"/>
-<smd name="2" x="0" y="-0.75" dx="7" dy="0.85" layer="1"/>
-<text x="-3.75" y="3" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.75" y="-3.75" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="0.8" y1="0.525" x2="2.85" y2="0.975" layer="51"/>
-<rectangle x1="0.8" y1="-0.975" x2="2.85" y2="-0.525" layer="51"/>
-</package>
-</packages>
-<symbols>
-<symbol name="MV">
-<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
-<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
-<text x="-0.762" y="1.397" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-</symbol>
-<symbol name="M">
-<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
-<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
-<pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="87438-02" prefix="X">
-<description>&lt;b&gt;Wire-to-Board  1.50mm (.059") Pitch Header - Right Angle, SMT, Shrouded&lt;/b&gt;&lt;p&gt;
-Source: http://www.molex.com/product/micro/87438.html</description>
-<gates>
-<gate name="-1" symbol="MV" x="0" y="0" addlevel="always" swaplevel="1"/>
-<gate name="-2" symbol="M" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
-</gates>
-<devices>
-<device name="" package="87438-02">
-<connects>
-<connect gate="-1" pin="S" pad="1"/>
-<connect gate="-2" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="MOLEX" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="1711327" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -3600,17 +3532,9 @@ In this library you will find LEDs and other visual output devices.
 </library>
 </libraries>
 <attributes>
-<attribute name="DDRAWN" value="11/27/2018"/>
-<attribute name="DWG_NO" value=""/>
-<attribute name="FINISH" value="HASL"/>
-<attribute name="MATERIAL" value="FR-4"/>
-<attribute name="NCHECKED" value=""/>
-<attribute name="NDRAWN" value="MM"/>
-<attribute name="REV" value="1.0"/>
-<attribute name="REVISION" value="v1.1"/>
-<attribute name="SCALE" value="1:1"/>
-<attribute name="TEAM" value="RoboCup"/>
-<attribute name="TITLE" value="SSL Breakbeam"/>
+<attribute name="REVISION" value="v2.0"/>
+<attribute name="SCH_DESC" value="Robot's ball-detecting sensors."/>
+<attribute name="TEAM" value="ROBOCUP"/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -3619,47 +3543,48 @@ In this library you will find LEDs and other visual output devices.
 </class>
 </classes>
 <parts>
-<part name="FRAME1" library="RoboJackets-Frames" deviceset="FRAME_B_L" device="">
-<attribute name="REVISION" value="v1.1"/>
-<attribute name="SCH_DESC" value="Breakbeam Circuits"/>
-<attribute name="TEAM" value="RoboCup SSL"/>
+<part name="FRAME1" library="RoboJackets-Frames" deviceset="FRAME_A_L" device="">
+<attribute name="REVISION" value=""/>
+<attribute name="SCH_DESC" value=""/>
+<attribute name="TEAM" value=""/>
 </part>
-<part name="X1" library="RoboJackets-Connectors" deviceset="87438-02" device=""/>
-<part name="X2" library="RoboJackets-Connectors" deviceset="87438-02" device=""/>
-<part name="LED1" library="RoboJackets-LEDs" deviceset="LED-TH" device="" value="PT204-6B/ IR204"/>
+<part name="LED1" library="RoboJackets-LEDs" deviceset="LED-TH" device=""/>
 </parts>
 <sheets>
 <sheet>
-<description>Breakbeam Circuits</description>
+<description>Breakbeam Schematics</description>
 <plain>
+<text x="292.1" y="373.38" size="2.54" layer="97">- ANODE and CATHODE will be
+  connected to large vias which we
+  solder the wires that go to kicker.
+
+- Both receiver and transmitter
+  will use the same LED sockets.
+
+- If using as transmitter, assemble the
+  IR LED on the bottom side of the board.
+  
+- If used as receiver, assemble the 
+  phototransistor on the top side.</text>
+<wire x1="251.46" y1="424.18" x2="373.38" y2="424.18" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="373.38" y1="424.18" x2="373.38" y2="365.76" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="373.38" y1="365.76" x2="251.46" y2="365.76" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="251.46" y1="365.76" x2="251.46" y2="424.18" width="0.1524" layer="97" style="shortdash"/>
+<text x="254" y="419.1" size="2.54" layer="97">Breakbeam</text>
 </plain>
 <instances>
-<instance part="FRAME1" gate="G$1" x="0" y="33.02" smashed="yes"/>
-<instance part="FRAME1" gate="G$2" x="325.12" y="33.02" smashed="yes">
-<attribute name="LAST_DATE_TIME" x="337.82" y="34.29" size="2.54" layer="94" font="vector"/>
-<attribute name="SHEET" x="411.48" y="34.29" size="2.54" layer="94" font="vector"/>
-<attribute name="DRAWING_NAME" x="340.36" y="52.07" size="2.54" layer="94" font="vector"/>
-<attribute name="SCH_DESC" x="326.39" y="39.37" size="2.54" layer="94"/>
-<attribute name="TEAM" x="326.39" y="67.31" size="3.048" layer="94" ratio="10" align="top-left"/>
-<attribute name="REVISION" x="397.51" y="39.37" size="2.54" layer="94"/>
+<instance part="FRAME1" gate="G$1" x="160.02" y="256.54" smashed="yes"/>
+<instance part="FRAME1" gate="G$2" x="332.74" y="256.54" smashed="yes">
+<attribute name="LAST_DATE_TIME" x="345.44" y="257.81" size="2.54" layer="94" font="vector"/>
+<attribute name="SHEET" x="419.1" y="257.81" size="2.54" layer="94" font="vector"/>
+<attribute name="DRAWING_NAME" x="347.98" y="275.59" size="2.54" layer="94" font="vector"/>
+<attribute name="TEAM" x="334.01" y="290.83" size="3.048" layer="94" ratio="10" align="top-left"/>
+<attribute name="REVISION" x="405.13" y="262.89" size="2.54" layer="94"/>
+<attribute name="SCH_DESC" x="334.01" y="262.89" size="2.54" layer="94"/>
 </instance>
-<instance part="X1" gate="-1" x="195.58" y="198.12" smashed="yes" rot="MR0">
-<attribute name="NAME" x="193.04" y="197.358" size="1.524" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="196.342" y="199.517" size="1.778" layer="96" rot="MR0"/>
-</instance>
-<instance part="X1" gate="-2" x="195.58" y="195.58" smashed="yes" rot="MR0">
-<attribute name="NAME" x="193.04" y="194.818" size="1.524" layer="95" rot="MR0"/>
-</instance>
-<instance part="X2" gate="-1" x="228.6" y="198.12" smashed="yes">
-<attribute name="NAME" x="231.14" y="197.358" size="1.524" layer="95"/>
-<attribute name="VALUE" x="227.838" y="199.517" size="1.778" layer="96"/>
-</instance>
-<instance part="X2" gate="-2" x="228.6" y="195.58" smashed="yes">
-<attribute name="NAME" x="231.14" y="194.818" size="1.524" layer="95"/>
-</instance>
-<instance part="LED1" gate="G$1" x="213.36" y="198.12" smashed="yes">
-<attribute name="NAME" x="216.662" y="198.12" size="1.778" layer="95" font="vector" rot="R90"/>
-<attribute name="VALUE" x="219.202" y="198.12" size="1.778" layer="96" font="vector" rot="R90"/>
+<instance part="LED1" gate="G$1" x="266.7" y="393.7" smashed="yes">
+<attribute name="NAME" x="269.24" y="396.24" size="1.778" layer="95"/>
+<attribute name="VALUE" x="269.24" y="393.7" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -3667,25 +3592,16 @@ In this library you will find LEDs and other visual output devices.
 <nets>
 <net name="ANODE" class="0">
 <segment>
-<pinref part="X1" gate="-1" pin="S"/>
-<wire x1="198.12" y1="198.12" x2="198.12" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="205.74" x2="213.36" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="205.74" x2="213.36" y2="203.2" width="0.1524" layer="91"/>
-<pinref part="X2" gate="-1" pin="S"/>
-<wire x1="226.06" y1="198.12" x2="226.06" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="205.74" x2="213.36" y2="205.74" width="0.1524" layer="91"/>
-<junction x="213.36" y="205.74"/>
 <pinref part="LED1" gate="G$1" pin="A"/>
+<wire x1="266.7" y1="398.78" x2="266.7" y2="403.86" width="0.1524" layer="91"/>
+<label x="266.7" y="403.86" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="CATHODE" class="0">
 <segment>
-<pinref part="X2" gate="-2" pin="S"/>
-<pinref part="X1" gate="-2" pin="S"/>
-<wire x1="198.12" y1="195.58" x2="213.36" y2="195.58" width="0.1524" layer="91"/>
 <pinref part="LED1" gate="G$1" pin="K"/>
-<wire x1="213.36" y1="195.58" x2="226.06" y2="195.58" width="0.1524" layer="91"/>
-<junction x="213.36" y="195.58"/>
+<wire x1="266.7" y1="391.16" x2="266.7" y2="386.08" width="0.1524" layer="91"/>
+<label x="266.7" y="386.08" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -3694,6 +3610,10 @@ In this library you will find LEDs and other visual output devices.
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports URNs for individual library
 assets (packages, symbols, and devices). The URNs of those assets
