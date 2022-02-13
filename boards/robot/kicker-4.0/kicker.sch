@@ -3752,16 +3752,16 @@ Source: http://www.ctscorp.com/components/Datasheets/CTSChipArrayDs.pdf</descrip
 <wire x1="1.45" y1="0.75" x2="1.75" y2="0.75" width="0.1016" layer="51"/>
 <wire x1="1.75" y1="-0.75" x2="1.45" y2="-0.75" width="0.1016" layer="51"/>
 </package>
-<package name="PVG3G">
-<smd name="P$1" x="1.15" y="-1.75" dx="0.75" dy="0.8" layer="1" thermals="no"/>
-<smd name="P$2" x="0" y="1.75" dx="0.8" dy="1" layer="1" rot="R90" thermals="no"/>
-<smd name="P$3" x="-1.15" y="-1.75" dx="0.75" dy="0.8" layer="1" thermals="no"/>
-<wire x1="-1.8" y1="-1.7" x2="-1.8" y2="1.7" width="0.127" layer="21"/>
-<wire x1="1.8" y1="-1.7" x2="1.8" y2="1.7" width="0.127" layer="21"/>
-<wire x1="-1.8" y1="1.7" x2="1.8" y2="1.7" width="0.127" layer="21"/>
-<wire x1="-1.8" y1="-1.7" x2="1.8" y2="-1.7" width="0.127" layer="21"/>
-<circle x="0" y="0" radius="1.1" width="0.127" layer="21"/>
-<text x="-2.05" y="-2.1" size="1" layer="21" font="vector" rot="R90">&gt;NAME</text>
+<package name="3214J">
+<smd name="P$1" x="1.15" y="-2" dx="1.3" dy="2" layer="1" thermals="no"/>
+<smd name="P$2" x="0" y="2" dx="2" dy="2" layer="1" rot="R90" thermals="no"/>
+<smd name="P$3" x="-1.15" y="-2" dx="1.3" dy="2" layer="1" thermals="no"/>
+<wire x1="-2.4" y1="-2.5" x2="-2.4" y2="2.5" width="0.127" layer="21"/>
+<wire x1="2.4" y1="-2.5" x2="2.4" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-2.4" y1="2.5" x2="2.4" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-2.4" y1="-2.5" x2="2.4" y2="-2.5" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="0.75" width="0.127" layer="21"/>
+<text x="-2.5" y="-2.1" size="1" layer="21" font="vector" rot="R90">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -3939,12 +3939,12 @@ Source: http://www.ctscorp.com/components/Datasheets/CTSChipArrayDs.pdf</descrip
 </device>
 </devices>
 </deviceset>
-<deviceset name="PVG3*" prefix="RV" uservalue="yes">
+<deviceset name="3214J*" prefix="RV" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="POTENTIOMETER" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="PVG3G">
+<device name="" package="3214J">
 <connects>
 <connect gate="G$1" pin="PIN1" pad="P$1"/>
 <connect gate="G$1" pin="PIN2" pad="P$2"/>
@@ -3952,8 +3952,8 @@ Source: http://www.ctscorp.com/components/Datasheets/CTSChipArrayDs.pdf</descrip
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DIGIKEY" value="PVG3G501C01R00CT-ND"/>
-<attribute name="MPN" value="PVG3"/>
+<attribute name="DIGIKEY" value="3214J-201ETR-ND"/>
+<attribute name="MPN" value="3214J"/>
 </technology>
 </technologies>
 </device>
@@ -4412,18 +4412,18 @@ In this library you will find switches and other mechanical assisted circuit ele
 <wire x1="-2.175" y1="-0.1" x2="2.175" y2="-0.1" width="0.2" layer="21"/>
 <text x="-5" y="0" size="1" layer="25" rot="R90">&gt;NAME</text>
 </package>
-<package name="KMR2">
-<wire x1="-2.3" y1="1.4" x2="2.3" y2="1.4" width="0.127" layer="21"/>
-<wire x1="2.3" y1="1.4" x2="2.3" y2="-1.4" width="0.127" layer="21"/>
-<wire x1="2.3" y1="-1.4" x2="-2.3" y2="-1.4" width="0.127" layer="21"/>
-<wire x1="-2.3" y1="-1.4" x2="-2.3" y2="1.4" width="0.127" layer="21"/>
-<smd name="1.1" x="-2.05" y="0.8" dx="0.9" dy="1" layer="1"/>
-<smd name="2.1" x="-2.05" y="-0.8" dx="0.9" dy="1" layer="1"/>
-<smd name="2.2" x="2.05" y="-0.8" dx="0.9" dy="1" layer="1"/>
-<smd name="1.2" x="2.05" y="0.8" dx="0.9" dy="1" layer="1"/>
-<text x="-2.54" y="1.905" size="1" layer="25" ratio="10">&gt;NAME</text>
-<text x="0" y="-1.905" size="1" layer="21" ratio="20" align="top-center">&gt;FUNCTION</text>
-<rectangle x1="-2.286" y1="-1.397" x2="2.286" y2="1.397" layer="39"/>
+<package name="KSS32">
+<wire x1="-2.75" y1="1.75" x2="2.75" y2="1.75" width="0.127" layer="21"/>
+<wire x1="2.75" y1="1.75" x2="2.75" y2="-0.75" width="0.127" layer="21"/>
+<wire x1="2.75" y1="-0.75" x2="2.75" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="2.75" y1="-1.75" x2="-2.75" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="-2.75" y1="-1.75" x2="-2.75" y2="-0.75" width="0.127" layer="21"/>
+<smd name="1" x="-2.95" y="0" dx="1.7" dy="3.7" layer="1"/>
+<smd name="2" x="2.95" y="0" dx="1.7" dy="3.7" layer="1"/>
+<text x="-2.54" y="2" size="1" layer="25" ratio="10">&gt;NAME</text>
+<text x="0" y="-2" size="1" layer="21" ratio="20" align="top-center">&gt;FUNCTION</text>
+<wire x1="-2.75" y1="-0.75" x2="-2.75" y2="1.75" width="0.127" layer="21"/>
+<wire x1="2.75" y1="-0.75" x2="-2.75" y2="-0.75" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -4475,15 +4475,15 @@ In this library you will find switches and other mechanical assisted circuit ele
 </device>
 </devices>
 </deviceset>
-<deviceset name="KMR2" prefix="S">
+<deviceset name="KSS32" prefix="S">
 <gates>
 <gate name="G$1" symbol="TS2" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="KMR2">
+<device name="" package="KSS32">
 <connects>
-<connect gate="G$1" pin="1" pad="1.1 1.2"/>
-<connect gate="G$1" pin="2" pad="2.1 2.2"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
@@ -21313,7 +21313,7 @@ In this library you will find inductors. If you are looking for a common package
 <part name="R50" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="ERJ-6GEYJ515V"/>
 <part name="SUPPLY54" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="V+" device=""/>
 <part name="SUPPLY55" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="R55" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="300k"/>
+<part name="R55" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k"/>
 <part name="R56" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k"/>
 <part name="SUPPLY56" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY53" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
@@ -21345,7 +21345,7 @@ In this library you will find inductors. If you are looking for a common package
 <attribute name="REV" value="4.0"/>
 </part>
 <part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="27 &gt;0.25W"/>
-<part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="50k"/>
+<part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k"/>
 <part name="SUPPLY95" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY96" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="FRAME9" library="ro-frames" deviceset="RO_FRAME_A_L_20161226" device=""/>
@@ -21366,11 +21366,11 @@ In this library you will find inductors. If you are looking for a common package
 <part name="SUPPLY107" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY105" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY109" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="R43" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="RC0603FR-07102KL"/>
+<part name="R43" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="149K 0.1%"/>
 <part name="SUPPLY61" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY60" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="V+" device=""/>
-<part name="R45" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="ERJ-6GEYJ515V"/>
-<part name="R44" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="ERJ-6GEYJ515V"/>
+<part name="R45" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="5.05M 0.1%"/>
+<part name="R44" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="5.05M 0.1%"/>
 <part name="SUPPLY10" library="RoboJackets-Supplies" deviceset="VBATT" device=""/>
 <part name="SUPPLY21" library="RoboJackets-Supplies" deviceset="VBATT" device=""/>
 <part name="R53" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="110k 1%"/>
@@ -21386,7 +21386,7 @@ In this library you will find inductors. If you are looking for a common package
 <part name="R40" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="412k 1%"/>
 <part name="R41" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="294k 1%"/>
 <part name="R42" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="412k 1%"/>
-<part name="R30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R2512" package3d_urn="urn:adsk.eagle:package:23545/2" value="11m 0.1% &gt;0.5W"/>
+<part name="R30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R2512" package3d_urn="urn:adsk.eagle:package:23545/2" value="11m 0.1% &gt;1W"/>
 <part name="C31" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R) 35V"/>
 <part name="C30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R) 35V"/>
 <part name="C23" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R) 35V"/>
@@ -21420,23 +21420,23 @@ In this library you will find inductors. If you are looking for a common package
 <part name="D4" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-YELLOW" value="YELLOW"/>
 <part name="SUPPLY85" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="Q3" library="RoboJackets-Discrete" deviceset="BSS127" device=""/>
-<part name="D15" library="RoboJackets-Diodes" deviceset="VS-5EWH06FN-M3" device="D-PAK_TO252AA" value="VS-5EWH06FN-M3"/>
-<part name="D16" library="RoboJackets-Diodes" deviceset="VS-5EWH06FN-M3" device="D-PAK_TO252AA" value="VS-5EWH06FN-M3"/>
-<part name="D14" library="RoboJackets-Diodes" deviceset="VS-5EWH06FN-M3" device="D-PAK_TO252AA" value="VS-5EWH06FN-M3"/>
-<part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="1k"/>
-<part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="1k"/>
+<part name="D15" library="RoboJackets-Diodes" deviceset="VS-5EWH06FN-M3" device="D-PAK_TO252AA" value="GD10MPS12E"/>
+<part name="D16" library="RoboJackets-Diodes" deviceset="VS-5EWH06FN-M3" device="D-PAK_TO252AA" value="GD10MPS12E"/>
+<part name="D14" library="RoboJackets-Diodes" deviceset="VS-5EWH06FN-M3" device="D-PAK_TO252AA" value="GD10MPS12E"/>
+<part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="100"/>
+<part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="100"/>
 <part name="C41" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 35V"/>
 <part name="C40" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 35V"/>
 <part name="SUPPLY44" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY45" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="D20" library="RoboJackets-Diodes" deviceset="SMAJ20A" device="DO-214AC" value="SMAJ20A"/>
-<part name="D21" library="RoboJackets-Diodes" deviceset="SMAJ20A" device="DO-214AC" value="SMAJ20A"/>
+<part name="D20" library="RoboJackets-Diodes" deviceset="SMAJ20A" device="DO-214AC" value="SMA6J18A"/>
+<part name="D21" library="RoboJackets-Diodes" deviceset="SMAJ20A" device="DO-214AC" value="SMA6J18A"/>
 <part name="SUPPLY46" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY47" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="C35" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E10-25" package3d_urn="urn:adsk.eagle:package:23399/1" value="1000uF"/>
-<part name="C33" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E10-25" package3d_urn="urn:adsk.eagle:package:23399/1" value="1000uF"/>
-<part name="C34" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E10-25" package3d_urn="urn:adsk.eagle:package:23399/1" value="1000uF"/>
-<part name="C32" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E10-25" package3d_urn="urn:adsk.eagle:package:23399/1" value="1000uF"/>
+<part name="C35" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E10-25" package3d_urn="urn:adsk.eagle:package:23399/1" value="820uF"/>
+<part name="C33" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E10-25" package3d_urn="urn:adsk.eagle:package:23399/1" value="820uF"/>
+<part name="C34" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E10-25" package3d_urn="urn:adsk.eagle:package:23399/1" value="820uF"/>
+<part name="C32" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E10-25" package3d_urn="urn:adsk.eagle:package:23399/1" value="820uF"/>
 <part name="R48" library="RoboJackets-Resistors" deviceset="PWR263S-35" device="TO-263AB" value="1.0k 3.5W">
 <attribute name="DIGIKEY" value="PWR263S-35-1501F"/>
 </part>
@@ -21446,7 +21446,7 @@ In this library you will find inductors. If you are looking for a common package
 <part name="R38" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="25.5k 1%"/>
 <part name="R31" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="11.5k 0.1%"/>
 <part name="R32" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="25.5k 0.1%"/>
-<part name="R33" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1k 0.1%"/>
+<part name="R33" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="898 0.1%"/>
 <part name="Q4" library="RoboJackets-Discrete" deviceset="BSS806N" device="SOT-23-3"/>
 <part name="U7" library="RoboJackets-PowerICs" deviceset="MIC5235YM5" device="SOT-23-5" value="15V"/>
 <part name="C39" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF 50V"/>
@@ -21458,8 +21458,8 @@ In this library you will find inductors. If you are looking for a common package
 <part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="D18" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-YELLOW" value="YELLOW"/>
 <part name="C21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
-<part name="Q6" library="RoboJackets-Discrete" deviceset="IXGK400N30A3" device=""/>
-<part name="Q5" library="RoboJackets-Discrete" deviceset="IXGK400N30A3" device=""/>
+<part name="Q6" library="RoboJackets-Discrete" deviceset="IXGK400N30A3" device="" value="IXYH55N120A4"/>
+<part name="Q5" library="RoboJackets-Discrete" deviceset="IXGK400N30A3" device="" value="IXYH55N120A4"/>
 <part name="R26" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="22"/>
 <part name="C27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="10uF (X7R) 35V"/>
 <part name="C25" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="0.1uF 35V"/>
@@ -21476,18 +21476,18 @@ In this library you will find inductors. If you are looking for a common package
 <part name="SUPPLY8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY9" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY28" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="V+" device=""/>
-<part name="R35" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="114k 0.1%"/>
-<part name="R37" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="3.12k 0.1%"/>
+<part name="R35" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="340k 0.1%"/>
+<part name="R37" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="336 0.1%"/>
 <part name="D5" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-YELLOW" value="YELLOW"/>
-<part name="D6" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-BLUE" value="BLUE"/>
+<part name="D6" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-GREEN" value="GREEN"/>
 <part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k"/>
 <part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k"/>
-<part name="R21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k"/>
-<part name="R20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k"/>
+<part name="R21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100"/>
+<part name="R20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100"/>
 <part name="SUPPLY33" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="C16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF"/>
 <part name="C17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF"/>
-<part name="R24" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k"/>
+<part name="R24" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100"/>
 <part name="C14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF"/>
 <part name="SUPPLY39" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k"/>
@@ -21538,22 +21538,22 @@ In this library you will find inductors. If you are looking for a common package
 <part name="C15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="C20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="SUPPLY66" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="RV1" library="RoboJackets-Resistors" deviceset="PVG3*" device="" value="500"/>
+<part name="RV1" library="RoboJackets-Resistors" deviceset="3214J*" device="" value="200"/>
 <part name="FRAME3" library="ro-frames" deviceset="RO_FRAME_A_L_20161226" device=""/>
 <part name="FRAME4" library="ro-frames" deviceset="RO_FRAME_A_L_20161226" device=""/>
-<part name="R36" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="505k 0.1%"/>
+<part name="R36" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="384k 0.1%"/>
 <part name="C37" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF 35V"/>
 <part name="SUPPLY110" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R51" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="ERJ-6GEYJ106V"/>
 <part name="SUPPLY111" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY112" library="RoboJackets-Supplies" deviceset="VBATT" device=""/>
-<part name="S4" library="RoboJackets-Switches" deviceset="KMR2" device="">
+<part name="S4" library="RoboJackets-Switches" deviceset="KSS32" device="">
 <attribute name="FUNCTION" value="Charge"/>
 </part>
-<part name="S3" library="RoboJackets-Switches" deviceset="KMR2" device="">
+<part name="S3" library="RoboJackets-Switches" deviceset="KSS32" device="">
 <attribute name="FUNCTION" value="Kick"/>
 </part>
-<part name="S2" library="RoboJackets-Switches" deviceset="KMR2" device="">
+<part name="S2" library="RoboJackets-Switches" deviceset="KSS32" device="">
 <attribute name="FUNCTION" value="Chip"/>
 </part>
 <part name="C22" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
@@ -21589,7 +21589,7 @@ In this library you will find inductors. If you are looking for a common package
 <text x="40.64" y="152.4" size="1.27" layer="97">NOTE: Spec fuse based on the
 diode on this sheet as well as
 the max switching current of 
-Q1, T1, and D1 on the LT3751
+Q7, T1, and D15 on the LT3751
 sheet. The LT3751 current sense
 resistors should be set to limit
 current below the fuse limit.</text>
@@ -21872,7 +21872,7 @@ does not operate at continuous current.</text>
 <pinref part="U7" gate="MIC5235YM5-TR" pin="FB"/>
 </segment>
 </net>
-<net name="+15.0V" class="0">
+<net name="+15V" class="0">
 <segment>
 <pinref part="R53" gate="G$1" pin="2"/>
 <wire x1="236.22" y1="180.34" x2="236.22" y2="182.88" width="0.1524" layer="91"/>
@@ -21951,7 +21951,7 @@ does not operate at continuous current.</text>
 <wire x1="271.78" y1="63.5" x2="271.78" y2="205.74" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="271.78" y1="205.74" x2="10.16" y2="205.74" width="0.1524" layer="97" style="shortdash"/>
 <text x="15.24" y="200.66" size="1.778" layer="97">High Voltage Regulator</text>
-<text x="35.56" y="45.72" size="1.778" layer="97">250V: LGG2E102MELA50</text>
+<text x="35.56" y="45.72" size="1.778" layer="97">350V: ESMQ351VSN821MR50S</text>
 <wire x1="83.82" y1="190.5" x2="83.82" y2="157.48" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="83.82" y1="157.48" x2="124.46" y2="157.48" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="124.46" y1="157.48" x2="124.46" y2="190.5" width="0.1524" layer="97" style="shortdash"/>
@@ -21965,45 +21965,42 @@ near this resistor bank</text>
 <text x="218.44" y="139.7" size="1.778" layer="97">Desolder FBH and jump FBL-&gt;GND to enter
 capacitor charging mode. This is
 recommended. </text>
-<text x="195.58" y="144.78" size="1.778" layer="97" rot="R90">(opt) 0ohm</text>
+<text x="195.58" y="142.24" size="1.778" layer="97" rot="R90">(opt) 0ohm</text>
 <text x="139.7" y="91.44" size="1.778" layer="97">Current Limit:
-I = 106mV / RshuntI = 0.106/0.015 = 7.06A
-I = 0.106/0.011 = 9.63A
-I = 0.106/0.010 = 10.6A
-I = 0.106/0.007 = 15.1A
+I = 106mV / RshuntI = 0.106/0.011 = 9.63A
 Power Dissipation:
 P = I^2 x R
-P = (7.066^2)*0.007 = 0.3495W
-P = (10.6^2)*0.007 = 0.7865W
-P = (15.1^2)*0.007 = 1.596W</text>
-<text x="15.24" y="185.42" size="1.778" layer="97">Vdrain = Vtrans + (Vout + Vdiode) / N
-Vtrans = 15.5:21.5
-Vdrain = 40.5:47.5Vtrans RANGE = 6.0VDEL Vdrain RANGE (Vdrain - Vtrans)
-DEL Vdrain RANGE = 25.0:26.0Table 2 (pg. 17):
-ENT: 4.75-60.0, 2.5-50.0</text>
-<text x="135.89" y="98.552" size="1.778" layer="97" rot="R90">Req: Lparasitic &lt; 2nH </text>
+P = (9.63^2)*0.011 = 1.02W</text>
+<text x="135.89" y="103.632" size="1.778" layer="97" rot="R90">Req: Lparasitic &lt; 2nH </text>
 <text x="40.64" y="76.2" size="1.778" layer="97">Rbg = 0.98*N*(RVout / (RVout,trip + Vdiode))
-Rbg = 0.98*10*(25500 / 251.8)
-Rbg = 992.45 ~ 1k (E96)</text>
-<text x="142.24" y="187.96" size="1.778" layer="97">Vout = 250V
-Vtrans = 15.5:21.5
+Rbg = 0.98*10*(25500 / 276.8)
+Rbg = 898</text>
+<text x="142.24" y="187.96" size="1.778" layer="97">Vout = 275V
+Vtrans = 15:21
 N &lt;= Vout / Vtrans
-N &lt;= 16.1:11.6
+N &lt;= 18.3:13.1
 N = 10</text>
-<text x="218.44" y="170.18" size="1.778" layer="97">D2:
-Vfwd = 1.85
-Trr = 18nsTrr_ideal @ Fsw=1MHz &lt;= 10ns
+<text x="218.44" y="170.18" size="1.778" layer="97">D5:
+Vfwd = 1.8
+Trr = 20ns
+Trr_ideal @ Fsw=1MHz &lt;= 10ns
 Trr_ideal @ Fsw=300KHz &lt;= 33ns
-Trr_ideal @ Fsw=100KHz &lt;= 100nsFsw = 1 / (Ipk*Lpri*((1/Vtrans)+(N/Vout)))
-Fsw = 1 / (10*0.000010*((1/15.5)+(10/250)))
-Fsw = 1 / (10*0.000010*((1/21.5)+(10/250)))
-Fsw = 95.9kHz:115kHz</text>
+Trr_ideal @ Fsw=100KHz &lt;= 100ns
+Fsw = 1 / (Ipk*Lpri*((1/Vtrans)+(N/Vout)))
+Fsw = 1 / (9.63*0.000010*((1/15)+(10/275)))
+Fsw = 1 / (9.63*0.000010*((1/21)+(10/275)))
+Fsw = 100.8kHz:123.5kHz</text>
 <text x="218.44" y="149.86" size="1.778" layer="97">FBH=((Vout-1.25)^2)/(Pd)
-FBH=((250-1.25)^2)/0.1
-FBH=618.76kOhm so 619K
+FBH=((270-1.25)^2)/0.1
+FBH=722.27kOhm so 723K
 FBL=(1.25/(Vout-1.25))*FBH
-FBL=(1.25/(250-1.25))*61900
-FBL=3.110KOhm so 3.12kOhm</text>
+FBL=(1.25/(270-1.25))*72300
+FBL=336.27Ohm so 336Ohm</text>
+<text x="15.24" y="185.42" size="1.778" layer="97">Vdrain = Vtrans + (Vout + Vdiode) / N
+Vtrans = 15:21
+Vdrain = 42.6:48.6
+Table 2 (pg. 17):
+ENT: 4.75-60.0, 2.5-50.0</text>
 </plain>
 <instances>
 <instance part="SUPPLY25" gate="GND" x="187.96" y="137.16" smashed="yes">
@@ -22590,30 +22587,33 @@ FBL=3.110KOhm so 3.12kOhm</text>
 <wire x1="101.6" y1="200.66" x2="101.6" y2="129.54" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="101.6" y1="129.54" x2="15.24" y2="129.54" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="15.24" y1="129.54" x2="15.24" y2="200.66" width="0.1524" layer="97" style="shortdash"/>
-<text x="17.78" y="195.58" size="1.778" layer="97">Done Line - Pull, Filter, ESD Prot</text>
+<text x="17.78" y="195.58" size="1.778" layer="97">Done Line - Pullup, Filter</text>
 <wire x1="15.24" y1="119.38" x2="101.6" y2="119.38" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="101.6" y1="119.38" x2="101.6" y2="43.18" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="101.6" y1="43.18" x2="15.24" y2="43.18" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="15.24" y1="43.18" x2="15.24" y2="119.38" width="0.1524" layer="97" style="shortdash"/>
-<text x="20.32" y="114.3" size="1.778" layer="97">Fault Line - Pull, Filter, ESD Prot</text>
+<text x="20.32" y="114.3" size="1.778" layer="97">Fault Line - Pullup, Filter</text>
 <wire x1="111.76" y1="129.54" x2="111.76" y2="200.66" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="111.76" y1="200.66" x2="208.28" y2="200.66" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="208.28" y1="200.66" x2="208.28" y2="129.54" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="208.28" y1="129.54" x2="111.76" y2="129.54" width="0.1524" layer="97" style="shortdash"/>
-<text x="114.3" y="195.58" size="1.778" layer="97">Charge Line - Pull, Filter, ESD Prot</text>
+<text x="114.3" y="195.58" size="1.778" layer="97">Charge Line - Pulldown, Filter</text>
 <wire x1="111.76" y1="119.38" x2="218.44" y2="119.38" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="218.44" y1="119.38" x2="218.44" y2="43.18" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="218.44" y1="43.18" x2="111.76" y2="43.18" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="111.76" y1="43.18" x2="111.76" y2="119.38" width="0.1524" layer="97" style="shortdash"/>
 <text x="116.84" y="114.3" size="1.778" layer="97">Battery/Charge-Cycle Decoupling</text>
-<text x="215.9" y="185.42" size="1.778" layer="97">Clamp all LT control lines @ 5.5V.Snub Ringing on the long control traces:
+<text x="215.9" y="185.42" size="1.778" layer="97">Clamp all LT control lines @ 5.5V.
+Snub Ringing on the long control traces:
 F_cutoff = 1 / (2 * pi * R * C)
-F_cutoff = 1 / (2 * pi * 1000 * 0.0000001)
-F_cutoff = 1591.55 = ~1.5kHz</text>
+F_cutoff = 1 / (2 * pi * 100 * 0.0000001)
+F_cutoff = 159.155 = ~0.15kHz</text>
 <text x="137.16" y="45.72" size="1.778" layer="97">Primary VBatt Decoupling:
 560uF Electrolytic
-50uF Fast Response CeramicAll components are still locally
-decoupled.IMPORTANT: Minimize the distance
+50uF Fast Response Ceramic
+All components are still locally
+decoupled.
+IMPORTANT: Minimize the distance
 between the ceramics and primary
 of the transformer.</text>
 </plain>
@@ -22645,16 +22645,16 @@ of the transformer.</text>
 <attribute name="NAME" x="74.676" y="155.575" size="1.778" layer="95"/>
 <attribute name="VALUE" x="74.676" y="150.749" size="1.778" layer="96"/>
 </instance>
-<instance part="R24" gate="G$1" x="177.8" y="180.34" smashed="yes" rot="R180">
-<attribute name="NAME" x="181.61" y="178.8414" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="181.61" y="183.642" size="1.778" layer="96" rot="R180"/>
+<instance part="R24" gate="G$1" x="167.64" y="180.34" smashed="yes" rot="R180">
+<attribute name="NAME" x="171.45" y="178.8414" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="171.45" y="183.642" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C14" gate="G$1" x="167.64" y="172.72" smashed="yes">
-<attribute name="NAME" x="168.656" y="173.355" size="1.778" layer="95"/>
-<attribute name="VALUE" x="168.656" y="168.529" size="1.778" layer="96"/>
+<instance part="C14" gate="G$1" x="180.34" y="172.72" smashed="yes">
+<attribute name="NAME" x="181.356" y="173.355" size="1.778" layer="95"/>
+<attribute name="VALUE" x="181.356" y="168.529" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY39" gate="GND" x="167.64" y="157.48" smashed="yes">
-<attribute name="VALUE" x="165.735" y="154.305" size="1.778" layer="96"/>
+<instance part="SUPPLY39" gate="GND" x="180.34" y="157.48" smashed="yes">
+<attribute name="VALUE" x="178.435" y="154.305" size="1.778" layer="96"/>
 </instance>
 <instance part="R12" gate="G$1" x="154.94" y="170.18" smashed="yes" rot="R90">
 <attribute name="NAME" x="153.4414" y="166.37" size="1.778" layer="95" rot="R90"/>
@@ -22723,29 +22723,29 @@ of the transformer.</text>
 <net name="CHARGE_RAW" class="0">
 <segment>
 <pinref part="R24" gate="G$1" pin="2"/>
-<wire x1="172.72" y1="180.34" x2="167.64" y2="180.34" width="0.1524" layer="91"/>
 <label x="139.7" y="180.34" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="R12" gate="G$1" pin="2"/>
-<wire x1="167.64" y1="180.34" x2="154.94" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="180.34" x2="154.94" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="180.34" x2="139.7" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="175.26" x2="154.94" y2="180.34" width="0.1524" layer="91"/>
 <junction x="154.94" y="180.34"/>
-<pinref part="C14" gate="G$1" pin="1"/>
-<wire x1="167.64" y1="175.26" x2="167.64" y2="180.34" width="0.1524" layer="91"/>
-<junction x="167.64" y="180.34"/>
 </segment>
 </net>
 <net name="CHARGE" class="0">
 <segment>
 <pinref part="R24" gate="G$1" pin="1"/>
 <label x="185.42" y="180.34" size="1.27" layer="95" rot="MR180" xref="yes"/>
-<wire x1="182.88" y1="180.34" x2="185.42" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="180.34" x2="180.34" y2="180.34" width="0.1524" layer="91"/>
+<pinref part="C14" gate="G$1" pin="1"/>
+<wire x1="180.34" y1="180.34" x2="185.42" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="175.26" x2="180.34" y2="180.34" width="0.1524" layer="91"/>
+<junction x="180.34" y="180.34"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <pinref part="C14" gate="G$1" pin="2"/>
-<wire x1="167.64" y1="167.64" x2="167.64" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="167.64" x2="180.34" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="SUPPLY39" gate="GND" pin="GND"/>
 </segment>
 <segment>
@@ -22885,8 +22885,9 @@ of the transformer.</text>
 <wire x1="205.74" y1="203.2" x2="12.7" y2="203.2" width="0.1524" layer="97" style="shortdash"/>
 <text x="17.78" y="198.12" size="1.27" layer="97">Discharge Action</text>
 <text x="17.78" y="111.76" size="1.778" layer="97">Clamp the IGBT gates @ 20V with
-V_br_min of 22.2V. The IGBT V_ge_max
-is 20V, with a transient rating of 30V.Snub ringing &gt;10kHz, this should only
+V_br_min of 20V. The IGBT V_ge_max
+is 20V, with a transient rating of 30V.
+Snub ringing &gt;10kHz, this should only
 affect switch time by 10s of uS and no
 PWM is applied.</text>
 <text x="17.78" y="50.8" size="1.778" layer="97">This is a fairly dense bit, so an explanation is here.The IZ4427N is a FET gate drive. It turns a weakly driven lower voltage from the MCU
@@ -22951,11 +22952,11 @@ the discharge FET/IGBT is closed.This structure is repeated twice. Once for kick
 </instance>
 <instance part="D16" gate="VS-5EWH06FN-M3" x="149.86" y="180.34" smashed="yes" rot="R90">
 <attribute name="NAME" x="147.32" y="177.8" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="127" y="177.8" size="1.778" layer="96" align="top-left"/>
+<attribute name="VALUE" x="129.54" y="177.8" size="1.778" layer="96" align="top-left"/>
 </instance>
 <instance part="D14" gate="VS-5EWH06FN-M3" x="162.56" y="149.86" smashed="yes" rot="R90">
 <attribute name="NAME" x="160.02" y="147.32" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="139.7" y="147.32" size="1.778" layer="96" align="top-left"/>
+<attribute name="VALUE" x="142.24" y="147.32" size="1.778" layer="96" align="top-left"/>
 </instance>
 <instance part="R6" gate="G$1" x="104.14" y="165.1" smashed="yes">
 <attribute name="NAME" x="100.33" y="166.5986" size="1.778" layer="95"/>
@@ -23204,7 +23205,7 @@ the discharge FET/IGBT is closed.This structure is repeated twice. Once for kick
 <label x="119.38" y="134.62" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="+15.0V" class="0">
+<net name="+15V" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="VDD"/>
 <wire x1="73.66" y1="154.94" x2="71.12" y2="154.94" width="0.1524" layer="91"/>
@@ -23225,20 +23226,21 @@ the discharge FET/IGBT is closed.This structure is repeated twice. Once for kick
 <sheet>
 <description>HV - Auto Discharge</description>
 <plain>
-<wire x1="17.78" y1="198.12" x2="149.86" y2="198.12" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="149.86" y1="198.12" x2="149.86" y2="93.98" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="149.86" y1="93.98" x2="17.78" y2="93.98" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="17.78" y1="198.12" x2="152.4" y2="198.12" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="152.4" y1="198.12" x2="152.4" y2="93.98" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="152.4" y1="93.98" x2="17.78" y2="93.98" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="17.78" y1="93.98" x2="17.78" y2="198.12" width="0.1524" layer="97" style="shortdash"/>
 <text x="22.86" y="193.04" size="1.27" layer="97">Auto Discharge</text>
-<text x="154.94" y="142.24" size="1.778" layer="97">R54 is an optional pull-down resistor to create a voltage divider
-to prevent voltage spikes from damaging Q6 and should be
-left unpopulated unless needed.Voltage Divider:
-V_in_typ = 250V  (Typical max voltage)
-V_out_typ = 250(1.0E7/(2 * 5.1E6 * 1.0E7)) = 123.8VV_in_spike = 600V
-V_out_spike = 600(1.0E7/(2 * 5.1E6 + 1.0E7)) = 297VV_th of the AOD1N60 is 4.1V and serves as the limit
+<text x="154.94" y="142.24" size="1.778" layer="97">Voltage Divider:
+V_in_typ = 276V  (Typical max voltage)
+V_out_typ = 275(1.0E7/(2 * 5.1E6 + 1.0E7)) = 136.2V
+V_in_spike = 600V
+V_out_spike = 600(1.0E7/(2 * 5.1E6 + 1.0E7)) = 297V
+V_th of the AOD1N60 is 4.1V and serves as the limit
 for the lowest attainable voltage through the AOD alone
-(other factors nonwithstanding). Adding a voltage divider
-changes the V_min seen on the HV line.V_min = V_th((2 * 5.1E6 + 1.0E7)/1.0E7) = 8.28V</text>
+(other factors nonwithstanding). 
+Adding a voltage divider changes the V_min seen on the HV line.
+V_min = V_th((2 * 5.1E6 + 1.0E7)/1.0E7) = 8.28V</text>
 </plain>
 <instances>
 <instance part="R50" gate="G$1" x="63.5" y="165.1" smashed="yes" rot="R90">
@@ -23471,12 +23473,13 @@ changes the V_min seen on the HV line.V_min = V_th((2 * 5.1E6 + 1.0E7)/1.0E7) = 
 <text x="92.71" y="154.178" size="1.778" layer="97">Avoid JTAG pins</text>
 <text x="92.71" y="156.718" size="1.778" layer="97">Avoid JTAG pins</text>
 <text x="92.71" y="159.258" size="1.778" layer="97">Avoid JTAG pins</text>
-<text x="111.76" y="40.64" size="1.778" layer="97">R_up = 2 * 5.1E6 = 1.02E7 Ohms
-R_down = 1.02E3 Ohms
-Vmon_max_typ = 250V * (R_down/(R_up + R_down)) = 2.48VMax rated voltage for any pin on MCU is around 5V (input voltage),
+<text x="111.76" y="40.64" size="1.778" layer="97">R_up = 2 * 5.05M = 10.1M
+R_down = 149K
+Vmon_max_typ = 275V * (R_down/(R_up + R_down)) = 3.99V
+Max rated voltage for any pin on MCU is around 5V (input voltage),
 therefore the voltage divider can be adjusted to make VMON closer to 5V.
 But to account for the possibility of voltage spikes in excess of 600V,
-Vmon is adjusted to have the max typical voltage of around 2.5V</text>
+Vmon is adjusted to have the max typical voltage of around 4.0V with a protection diode</text>
 </plain>
 <instances>
 <instance part="C19" gate="G$1" x="132.08" y="109.22" smashed="yes" rot="R180">
@@ -24579,7 +24582,7 @@ Vmon is adjusted to have the max typical voltage of around 2.5V</text>
 <label x="86.36" y="149.86" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
-<net name="+15.0V" class="0">
+<net name="+15V" class="0">
 <segment>
 <pinref part="R47" gate="G$1" pin="2"/>
 <wire x1="20.32" y1="180.34" x2="20.32" y2="185.42" width="0.1524" layer="91"/>
@@ -25073,11 +25076,6 @@ Vmon is adjusted to have the max typical voltage of around 2.5V</text>
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="102,1,248.92,185.42,+15V,+15.0V,,,,"/>
-<approved hash="102,4,73.66,187.96,+15V,+15.0V,,,,"/>
-<approved hash="102,7,20.32,185.42,+15V,+15.0V,,,,"/>
-</errors>
 </schematic>
 </drawing>
 <compatibility>
