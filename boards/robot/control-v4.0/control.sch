@@ -18604,7 +18604,7 @@ rfk_1850.pdf</description>
 <smd name="8" x="7" y="3.65" dx="0.6096" dy="1.905" layer="1"/>
 <smd name="NC1" x="-0.999996875" y="1.8034" dx="0.6096" dy="5.5118" layer="1"/>
 <smd name="NC2" x="8" y="1.8034" dx="0.6096" dy="5.5118" layer="1"/>
-<wire x1="-3.8354" y1="-0.127" x2="-1.6256" y2="-0.127" width="0.1524" layer="21"/>
+<wire x1="-3.836996875" y1="-0.127" x2="-1.6256" y2="-0.127" width="0.1524" layer="21"/>
 <wire x1="10.8204" y1="-0.127" x2="10.8204" y2="3.7338" width="0.1524" layer="21"/>
 <wire x1="10.8204" y1="3.7338" x2="8.636" y2="3.7338" width="0.1524" layer="21"/>
 <wire x1="0.635" y1="-0.127" x2="1.3716" y2="-0.127" width="0.1524" layer="21"/>
@@ -18615,11 +18615,13 @@ rfk_1850.pdf</description>
 <wire x1="4.3688" y1="3.7338" x2="3.6322" y2="3.7338" width="0.1524" layer="21"/>
 <wire x1="6.6294" y1="-0.127" x2="7.366" y2="-0.127" width="0.1524" layer="21"/>
 <wire x1="6.35" y1="3.7338" x2="5.6388" y2="3.7338" width="0.1524" layer="21"/>
-<wire x1="-1.6256" y1="3.7338" x2="-3.8354" y2="3.7338" width="0.1524" layer="21"/>
+<wire x1="-1.6256" y1="3.7338" x2="-3.836996875" y2="3.7338" width="0.1524" layer="21"/>
 <wire x1="8.636" y1="-0.127" x2="10.8204" y2="-0.127" width="0.1524" layer="21"/>
 <text x="0.254" y="-2.286" size="1" layer="27" font="vector" ratio="10" rot="SR0">&gt;Value</text>
 <text x="0.2286" y="4.445" size="1" layer="25" font="vector" ratio="10" rot="SR0">&gt;Name</text>
-<wire x1="-3.837" y1="3.81" x2="-3.837" y2="-0.127" width="0.127" layer="21"/>
+<wire x1="-3.837" y1="3.7338" x2="-3.837" y2="-0.127" width="0.127" layer="21"/>
+<wire x1="-3.429" y1="3.683" x2="-2.794" y2="2.413" width="0.127" layer="21"/>
+<wire x1="-2.794" y1="2.413" x2="-2.159" y2="3.683" width="0.127" layer="21"/>
 </package>
 <package name="B2P_SMALL">
 <pad name="2" x="0" y="0" drill="1.016" diameter="1.524" shape="square" rot="R180"/>
@@ -31205,13 +31207,6 @@ ripple current from motors</text>
 <label x="86.36" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="!RST!-NETWORK" class="0">
-<segment>
-<pinref part="KIT1" gate="G$1" pin="!RST"/>
-<wire x1="187.96" y1="162.56" x2="193.04" y2="162.56" width="0.1524" layer="91"/>
-<label x="193.04" y="162.56" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="INT-I2C" class="0">
 <segment>
 <pinref part="KIT1" gate="G$1" pin="P3"/>
@@ -33959,10 +33954,10 @@ pins while connecting</text>
 <wire x1="167.64" y1="121.92" x2="167.64" y2="5.08" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="167.64" y1="5.08" x2="15.24" y2="5.08" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="15.24" y1="5.08" x2="15.24" y2="121.92" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="15.24" y1="203.2" x2="167.64" y2="203.2" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="12.7" y1="203.2" x2="167.64" y2="203.2" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="167.64" y1="203.2" x2="167.64" y2="127" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="167.64" y1="127" x2="15.24" y2="127" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="15.24" y1="127" x2="15.24" y2="203.2" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="167.64" y1="127" x2="12.7" y2="127" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="12.7" y1="127" x2="12.7" y2="203.2" width="0.1524" layer="97" style="shortdash"/>
 <text x="17.78" y="198.12" size="1.778" layer="97">Input &amp; Switch</text>
 <text x="17.78" y="116.84" size="1.778" layer="97">5V and 3.3V Regulators</text>
 <text x="175.26" y="95.504" size="1.778" layer="97">PWRGD pulls line to GND when
@@ -35579,7 +35574,6 @@ battery power</text>
 <approved hash="104,1,91.44,167.64,KIT1,VIN,+5V,,,"/>
 <approved hash="204,1,188.087,167.64,KIT1,VBUS,,,,"/>
 <approved hash="204,1,187.96,170.18,KIT1,VDD,,,,"/>
-<approved hash="106,1,187.96,162.56,!RST!-NETWORK,,,,,"/>
 <approved hash="106,5,218.44,68.58,PWR-ERR,,,,,"/>
 <approved hash="106,5,96.52,99.06,SW,,,,,"/>
 <approved hash="106,5,96.52,45.72,SW1,,,,,"/>
