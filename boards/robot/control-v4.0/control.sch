@@ -33941,10 +33941,10 @@ pins while connecting</text>
 <description>Power Delivery Circuits</description>
 <plain>
 <wire x1="172.72" y1="101.6" x2="266.7" y2="101.6" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="266.7" y1="101.6" x2="266.7" y2="144.78" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="266.7" y1="144.78" x2="172.72" y2="144.78" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="172.72" y1="144.78" x2="172.72" y2="101.6" width="0.1524" layer="97" style="shortdash"/>
-<text x="175.26" y="139.7" size="1.778" layer="97">1.2V Reg</text>
+<wire x1="266.7" y1="101.6" x2="266.7" y2="157.48" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="266.7" y1="157.48" x2="172.72" y2="157.48" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="172.72" y1="157.48" x2="172.72" y2="101.6" width="0.1524" layer="97" style="shortdash"/>
+<text x="175.26" y="152.4" size="1.778" layer="97">1.2V Reg</text>
 <text x="175.26" y="88.9" size="1.778" layer="97">2.5V Reg</text>
 <wire x1="172.72" y1="93.98" x2="266.7" y2="93.98" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="266.7" y1="93.98" x2="266.7" y2="50.8" width="0.1524" layer="97" style="shortdash"/>
