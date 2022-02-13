@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -245,7 +245,7 @@
 <text x="64" y="-23" size="1.778" layer="21" font="vector" ratio="15" rot="R90">CHARGE</text>
 <text x="64" y="-11" size="1.778" layer="21" font="vector" ratio="15" rot="R90">KICK</text>
 <text x="64" y="-0.75" size="1.778" layer="21" font="vector" ratio="15" rot="R90">CHIP</text>
-<text x="-41.1" y="-24.1" size="1.778" layer="21" font="vector" ratio="15" rot="SR0">ID</text>
+<text x="-43.259" y="-30" size="1.778" layer="21" font="vector" ratio="15" rot="SR0">ID</text>
 <wire x1="52" y1="61.5" x2="54" y2="59.5" width="0.2" layer="21"/>
 <wire x1="54" y1="59.5" x2="48.05" y2="53.55" width="0.2" layer="21"/>
 <wire x1="48.05" y1="53.55" x2="46.05" y2="55.55" width="0.2" layer="21"/>
@@ -272,7 +272,7 @@ DSCHG</text>
 <wire x1="39.1" y1="-68.6" x2="27" y2="-56.5" width="0" layer="20"/>
 <text x="4.7" y="35.8" size="1.25" layer="21" font="vector" ratio="16" rot="SR0">HIGH VOLTAGE</text>
 <text x="41.6" y="-30" size="1.016" layer="22" font="vector" rot="SMR90" align="top-left"></text>
-<rectangle x1="-49.8" y1="-30" x2="-41.8" y2="-22" layer="21"/>
+<rectangle x1="-49.8" y1="-30" x2="-43.8" y2="-24" layer="21"/>
 <wire x1="40.2" y1="47.4" x2="40.2" y2="52.6" width="0.1524" layer="21"/>
 <wire x1="48.1" y1="52.6" x2="48.1" y2="47.4" width="0.1524" layer="21"/>
 <wire x1="48.1" y1="47.4" x2="40.2" y2="47.4" width="0.1524" layer="21"/>

@@ -21576,9 +21576,9 @@ In this library you will find inductors. If you are looking for a common package
 <sheet>
 <description>Power</description>
 <plain>
-<wire x1="15.24" y1="200.66" x2="144.78" y2="200.66" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="144.78" y1="200.66" x2="144.78" y2="129.54" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="144.78" y1="129.54" x2="15.24" y2="129.54" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="15.24" y1="200.66" x2="147.32" y2="200.66" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="147.32" y1="200.66" x2="147.32" y2="129.54" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="147.32" y1="129.54" x2="15.24" y2="129.54" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="15.24" y1="129.54" x2="15.24" y2="200.66" width="0.1524" layer="97" style="shortdash"/>
 <text x="20.32" y="195.58" size="1.27" layer="97">Power Input</text>
 <wire x1="15.24" y1="116.84" x2="162.56" y2="116.84" width="0.1524" layer="97" style="shortdash"/>
