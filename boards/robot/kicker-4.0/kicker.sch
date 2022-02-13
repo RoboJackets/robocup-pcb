@@ -21344,7 +21344,6 @@ In this library you will find inductors. If you are looking for a common package
 <part name="FRAME8" library="ro-frames" deviceset="RO_FRAME_A_L_20161226" device="">
 <attribute name="REV" value="4.0"/>
 </part>
-<part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="27 &gt;0.25W"/>
 <part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k"/>
 <part name="SUPPLY95" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY96" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
@@ -21581,10 +21580,10 @@ In this library you will find inductors. If you are looking for a common package
 <wire x1="147.32" y1="129.54" x2="15.24" y2="129.54" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="15.24" y1="129.54" x2="15.24" y2="200.66" width="0.1524" layer="97" style="shortdash"/>
 <text x="20.32" y="195.58" size="1.27" layer="97">Power Input</text>
-<wire x1="15.24" y1="116.84" x2="162.56" y2="116.84" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="15.24" y1="116.84" x2="129.54" y2="116.84" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="15.24" y1="116.84" x2="15.24" y2="50.8" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="15.24" y1="50.8" x2="162.56" y2="50.8" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="162.56" y1="50.8" x2="162.56" y2="116.84" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="15.24" y1="50.8" x2="129.54" y2="50.8" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="129.54" y1="50.8" x2="129.54" y2="116.84" width="0.1524" layer="97" style="shortdash"/>
 <text x="17.78" y="111.76" size="1.778" layer="97">5V Regulator</text>
 <text x="40.64" y="152.4" size="1.27" layer="97">NOTE: Spec fuse based on the
 diode on this sheet as well as
@@ -22603,7 +22602,7 @@ ENT: 4.75-60.0, 2.5-50.0</text>
 <wire x1="218.44" y1="43.18" x2="111.76" y2="43.18" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="111.76" y1="43.18" x2="111.76" y2="119.38" width="0.1524" layer="97" style="shortdash"/>
 <text x="116.84" y="114.3" size="1.778" layer="97">Battery/Charge-Cycle Decoupling</text>
-<text x="215.9" y="185.42" size="1.778" layer="97">Clamp all LT control lines @ 5.5V.
+<text x="231.14" y="124.46" size="1.778" layer="97">Clamp all LT control lines @ 5.5V.
 Snub Ringing on the long control traces:
 F_cutoff = 1 / (2 * pi * R * C)
 F_cutoff = 1 / (2 * pi * 100 * 0.0000001)
@@ -24721,10 +24720,6 @@ Vmon is adjusted to have the max typical voltage of around 4.0V with a protectio
 <attribute name="DCHECKED" x="213.36" y="22.86" size="1.27" layer="94" align="center"/>
 <attribute name="DDRAWN" x="213.36" y="27.94" size="1.27" layer="94" align="center"/>
 </instance>
-<instance part="R10" gate="G$1" x="58.42" y="165.1" smashed="yes" rot="R270">
-<attribute name="NAME" x="59.9186" y="168.91" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="55.118" y="168.91" size="1.778" layer="96" rot="R270"/>
-</instance>
 <instance part="R11" gate="G$1" x="109.22" y="170.18" smashed="yes" rot="R90">
 <attribute name="NAME" x="107.7214" y="166.37" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="112.522" y="166.37" size="1.778" layer="96" rot="R90"/>
@@ -24820,20 +24815,13 @@ Vmon is adjusted to have the max typical voltage of around 4.0V with a protectio
 </net>
 <net name="BB_TX_CL" class="0">
 <segment>
-<pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="58.42" y1="154.94" x2="58.42" y2="160.02" width="0.1524" layer="91"/>
 <label x="58.42" y="154.94" size="1.778" layer="95"/>
 <wire x1="58.42" y1="154.94" x2="78.74" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="J2" gate="A" pin="1"/>
 <wire x1="78.74" y1="154.94" x2="78.74" y2="160.02" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
+<wire x1="58.42" y1="154.94" x2="58.42" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="RV1" gate="G$1" pin="PIN3"/>
-<pinref part="R10" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="175.26" x2="58.42" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="175.26" x2="58.42" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
