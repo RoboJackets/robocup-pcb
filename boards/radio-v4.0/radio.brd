@@ -211,7 +211,7 @@
 <text x="44.2" y="29.5" size="1" layer="21" font="vector" ratio="15" distance="8">5.0V</text>
 <rectangle x1="37.9" y1="0.6" x2="42.5" y2="5.4" layer="21"/>
 <text x="34.5" y="2" size="2" layer="21" font="vector" ratio="15" distance="8">ID</text>
-<text x="35" y="19" size="1" layer="25" font="vector" ratio="15" distance="8" align="top-center">Jan. 2020</text>
+<text x="35" y="19" size="1" layer="25" font="vector" ratio="15" distance="8" align="top-center">Jan. 2022</text>
 <rectangle x1="37.1" y1="21.9" x2="40.1" y2="24.9" layer="29"/>
 <text x="33.2" y="23.2" size="1" layer="25" font="vector" ratio="15" distance="8">GND</text>
 <wire x1="9.4" y1="42.9" x2="5.6" y2="42.9" width="0.1524" layer="25"/>
@@ -6377,7 +6377,7 @@ Your Eurocircuits Team
 <element name="C1" library="RoboJackets-Capacitors" package="CAP_PAN_10X12.5" override_package3d_urn="urn:adsk.eagle:package:33768299/2" override_package_urn="urn:adsk.eagle:footprint:33768301/1" value="220uF" x="47" y="15" smashed="yes">
 <attribute name="DIGIKEY" value="P5572-ND" x="47" y="15" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="ECA-1HHG221" x="47" y="15" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="47.8342" y="9.465" size="1.27" layer="25" ratio="6" rot="SR0"/>
+<attribute name="NAME" x="48.0342" y="9.265" size="1" layer="25" font="vector" ratio="15" rot="SR0"/>
 </element>
 <element name="U$1" library="RoboJackets-Aesthetics" package="ROBOBUZZ_0.4X" value="" x="37" y="6" smashed="yes"/>
 </elements>
@@ -6422,10 +6422,9 @@ Your Eurocircuits Team
 <polygon width="0.2" layer="1" thermals="no">
 <vertex x="30.6" y="21.2"/>
 <vertex x="30.6" y="15.2"/>
-<vertex x="39" y="15.2"/>
-<vertex x="39" y="19.1"/>
-<vertex x="39.4" y="19.5"/>
-<vertex x="45" y="19.5"/>
+<vertex x="40.4" y="15.2"/>
+<vertex x="40.4" y="17.5"/>
+<vertex x="44.92" y="17.5"/>
 <vertex x="45.100003125" y="22"/>
 <vertex x="50.3" y="22"/>
 <vertex x="50.3" y="25"/>
@@ -6433,7 +6432,6 @@ Your Eurocircuits Team
 <vertex x="40.9" y="21.2"/>
 </polygon>
 <wire x1="30.835" y1="4.06" x2="33.3" y2="6.525" width="0.45" layer="1"/>
-<wire x1="23.41505" y1="16.61505" x2="23.4" y2="16.6" width="0.3" layer="1"/>
 <via x="26.5" y="29.6" extent="1-16" drill="0.35"/>
 <wire x1="20.9" y1="34.9" x2="20.83" y2="34.83" width="0.3" layer="16"/>
 <wire x1="20.83" y1="34.83" x2="20.83" y2="32.24" width="0.3" layer="16"/>
@@ -6475,9 +6473,9 @@ Your Eurocircuits Team
 <wire x1="31" y1="28.3" x2="31.04" y2="28.3" width="0.35" layer="1"/>
 <wire x1="31.04" y1="28.3" x2="32.83" y2="30.09" width="0.35" layer="1"/>
 <contactref element="C1" pad="1"/>
-<wire x1="41.9962" y1="15" x2="41.9962" y2="16.0038" width="0.45" layer="1"/>
-<wire x1="41.9962" y1="16.0038" x2="41" y2="17" width="0.45" layer="1"/>
-<wire x1="41" y1="17" x2="38" y2="17" width="0.45" layer="1"/>
+<wire x1="23.41505" y1="16.61505" x2="23.4" y2="16.6" width="0.3" layer="1"/>
+<wire x1="41.9962" y1="15" x2="41.9962" y2="16.0038" width="2" layer="1"/>
+<wire x1="41.9962" y1="16.0038" x2="39" y2="19" width="2" layer="1"/>
 </signal>
 <signal name="GND">
 <contactref element="U2" pad="14"/>
