@@ -3771,7 +3771,7 @@ Datasheet Link: https://industrial.panasonic.com/ww/products/pt/general-purpose-
 <part name="SUPPLY1" library="RoboJackets-Supplies" deviceset="GND" device=""/>
 <part name="J1" library="RoboJackets-Connectors" deviceset="0436500213" device="" override_package3d_urn="urn:adsk.eagle:package:33521981/2" override_package_urn="urn:adsk.eagle:footprint:33521982/1"/>
 <part name="D2" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" override_package3d_urn="urn:adsk.eagle:package:33695372/2" override_package_urn="urn:adsk.eagle:footprint:33695373/1"/>
-<part name="R1" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="100"/>
+<part name="R1" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="330"/>
 </parts>
 <sheets>
 <sheet>
