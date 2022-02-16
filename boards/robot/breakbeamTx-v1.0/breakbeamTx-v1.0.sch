@@ -194,13 +194,6 @@
 In this library you will find LEDs and other visual output devices.
 &lt;/p&gt;</description>
 <packages>
-<package name="OP293B">
-<circle x="0" y="0" radius="3" width="0.127" layer="21"/>
-<pad name="P$1" x="1.27" y="0" drill="0.8" shape="square"/>
-<pad name="P$2" x="-1.27" y="0" drill="0.8"/>
-<text x="-3" y="4" size="1.27" layer="25">&gt;Name</text>
-<text x="-3" y="-5" size="1.27" layer="27">&gt;Value</text>
-</package>
 <package name="LED0603">
 <description>0603 LED</description>
 <wire x1="0.477" y1="0.4" x2="-0.423" y2="0.4" width="0.05" layer="51"/>
@@ -248,22 +241,6 @@ In this library you will find LEDs and other visual output devices.
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="LED-OP293B">
-<gates>
-<gate name="G$1" symbol="LED" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="OP293B">
-<connects>
-<connect gate="G$1" pin="A" pad="P$2"/>
-<connect gate="G$1" pin="C" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="LED-SMD" prefix="D">
 <description>Series of 0603 LEDs</description>
 <gates>
@@ -3753,6 +3730,76 @@ Datasheet Link: https://industrial.panasonic.com/ww/products/pt/general-purpose-
 </deviceset>
 </devicesets>
 </library>
+<library name="VSLY5940">
+<packages>
+<package name="LEDRD254W50D590H1318">
+<circle x="0" y="0" radius="2.95" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="3.2" width="0.05" layer="39"/>
+<circle x="-3.5" y="0" radius="0.1" width="0.2" layer="21"/>
+<circle x="-3.5" y="0" radius="0.1" width="0.2" layer="51"/>
+<text x="-3.3" y="3.3" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.5" y="-4.5" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="0" y="0" radius="2.95" width="0.127" layer="21"/>
+<pad name="C" x="-1.27" y="0" drill="0.95" diameter="1.43" shape="square"/>
+<pad name="A" x="1.27" y="0" drill="0.95" diameter="1.43"/>
+</package>
+</packages>
+<symbols>
+<symbol name="VSLY5940">
+<wire x1="-2.54" y1="1.524" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-1.524" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-2.54" y2="1.524" width="0.254" layer="94"/>
+<wire x1="0" y1="1.524" x2="0" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-5.08" y2="0" width="0.1524" layer="94"/>
+<text x="-3.556" y="4.826" size="1.27" layer="95">&gt;NAME</text>
+<text x="-3.556" y="-3.302" size="1.27" layer="96">&gt;VALUE</text>
+<text x="1.016" y="2.032" size="1.016" layer="94">IR</text>
+<wire x1="1.016" y1="4.064" x2="-0.762" y2="2.032" width="0.254" layer="94"/>
+<wire x1="0.6858" y1="3.0988" x2="0.127" y2="3.5814" width="0.254" layer="94"/>
+<wire x1="0.127" y1="3.5814" x2="1.016" y2="4.064" width="0.254" layer="94"/>
+<wire x1="1.016" y1="4.064" x2="0.6858" y2="3.0988" width="0.254" layer="94"/>
+<wire x1="0.6858" y1="3.0988" x2="0.7112" y2="3.8354" width="0.254" layer="94"/>
+<wire x1="0.7112" y1="3.8354" x2="0.5842" y2="3.8354" width="0.254" layer="94"/>
+<wire x1="0.3048" y1="3.5052" x2="0.5334" y2="3.6576" width="0.254" layer="94"/>
+<wire x1="-0.2286" y1="4.1656" x2="-2.0066" y2="2.1336" width="0.254" layer="94"/>
+<wire x1="-0.5588" y1="3.2004" x2="-1.1176" y2="3.683" width="0.254" layer="94"/>
+<wire x1="-1.1176" y1="3.683" x2="-0.2286" y2="4.1656" width="0.254" layer="94"/>
+<wire x1="-0.2286" y1="4.1656" x2="-0.5588" y2="3.2004" width="0.254" layer="94"/>
+<wire x1="-0.5588" y1="3.2004" x2="-0.5334" y2="3.937" width="0.254" layer="94"/>
+<wire x1="-0.5334" y1="3.937" x2="-0.6604" y2="3.937" width="0.254" layer="94"/>
+<wire x1="-0.9398" y1="3.6068" x2="-0.7112" y2="3.7592" width="0.254" layer="94"/>
+<pin name="C" x="5.08" y="0" visible="pad" length="middle" direction="pas" rot="R180"/>
+<pin name="A" x="-7.62" y="0" visible="pad" length="short" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="VSLY5940" prefix="D">
+<description>VSLY5940 Series Ø 5 mm ±3° 940 nm 600 mw/sr Infrared Emitting Diode - T-1 3/4 </description>
+<gates>
+<gate name="G$1" symbol="VSLY5940" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LEDRD254W50D590H1318">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value=" Infrared (IR) Emitter 940nm 1.65V 100mA 300mW/sr @ 100mA 6° Radial "/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="VSLY5940-ND"/>
+<attribute name="MF" value="Vishay Semiconductor"/>
+<attribute name="MP" value="VSLY5940"/>
+<attribute name="PACKAGE" value="Radial Vishay Semiconductor"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/VSLY5940/?ref=eda"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3763,7 +3810,6 @@ Datasheet Link: https://industrial.panasonic.com/ww/products/pt/general-purpose-
 </class>
 </classes>
 <parts>
-<part name="D1" library="RoboJackets-LEDs" deviceset="LED-OP293B" device="" override_package3d_urn="urn:adsk.eagle:package:33521984/2" override_package_urn="urn:adsk.eagle:footprint:33521985/1"/>
 <part name="FRAME1" library="RoboJackets-Frames" deviceset="FRAME_11_17" device="">
 <attribute name="SCH_DESC" value="Breakbeam transceiver board"/>
 <attribute name="TEAM" value="RoboCup"/>
@@ -3772,6 +3818,7 @@ Datasheet Link: https://industrial.panasonic.com/ww/products/pt/general-purpose-
 <part name="J1" library="RoboJackets-Connectors" deviceset="0436500213" device="" override_package3d_urn="urn:adsk.eagle:package:33521981/2" override_package_urn="urn:adsk.eagle:footprint:33521982/1"/>
 <part name="D2" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" override_package3d_urn="urn:adsk.eagle:package:33695372/2" override_package_urn="urn:adsk.eagle:footprint:33695373/1"/>
 <part name="R1" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="330"/>
+<part name="D1" library="VSLY5940" deviceset="VSLY5940" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3780,10 +3827,6 @@ Datasheet Link: https://industrial.panasonic.com/ww/products/pt/general-purpose-
 <text x="-0.762" y="-42.418" size="1.778" layer="97">5v source with potentiometer and 51 ohm resistor on kicker board</text>
 </plain>
 <instances>
-<instance part="D1" gate="G$1" x="27.94" y="-12.7" smashed="yes" rot="R270">
-<attribute name="NAME" x="32.004" y="-12.7" size="1.778" layer="95" rot="MR90" align="bottom-center"/>
-<attribute name="VALUE" x="25.4" y="-12.7" size="1.778" layer="96" rot="MR90" align="top-center"/>
-</instance>
 <instance part="FRAME1" gate="G$1" x="-182.88" y="-121.92" smashed="yes"/>
 <instance part="FRAME1" gate="G$2" x="142.24" y="-121.92" smashed="yes">
 <attribute name="LAST_DATE_TIME" x="154.94" y="-120.65" size="2.54" layer="94"/>
@@ -3801,12 +3844,16 @@ Datasheet Link: https://industrial.panasonic.com/ww/products/pt/general-purpose-
 <attribute name="VALUE" x="8.89" y="7.62" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="D2" gate="A" x="17.78" y="-20.32" smashed="yes" rot="R270">
-<attribute name="NAME" x="21.844" y="-20.32" size="1.778" layer="95" rot="MR90" align="bottom-center"/>
-<attribute name="VALUE" x="15.24" y="-20.32" size="1.778" layer="96" rot="MR90" align="top-center"/>
+<attribute name="NAME" x="21.844" y="-21.082" size="1.778" layer="95" rot="MR90" align="bottom-center"/>
+<attribute name="VALUE" x="15.24" y="-19.304" size="1.778" layer="96" rot="MR90" align="top-center"/>
 </instance>
 <instance part="R1" gate="A" x="17.78" y="-6.604" smashed="yes" rot="R90">
 <attribute name="NAME" x="16.256" y="-6.604" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="19.304" y="-6.604" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="D1" gate="G$1" x="27.94" y="-13.716" smashed="yes" rot="R270">
+<attribute name="NAME" x="33.274" y="-10.922" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="23.368" y="-6.35" size="1.778" layer="96" rot="R270"/>
 </instance>
 </instances>
 <busses>
@@ -3814,12 +3861,9 @@ Datasheet Link: https://industrial.panasonic.com/ww/products/pt/general-purpose-
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="D1" gate="G$1" pin="C"/>
-<wire x1="27.94" y1="-15.24" x2="27.94" y2="-25.4" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="G$1" pin="GND"/>
 <wire x1="27.94" y1="-25.4" x2="27.94" y2="-27.94" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="-25.4" x2="17.78" y2="-25.4" width="0.1524" layer="91"/>
-<junction x="27.94" y="-25.4"/>
 <wire x1="17.78" y1="-25.4" x2="10.16" y2="-25.4" width="0.1524" layer="91"/>
 <pinref part="D2" gate="A" pin="C"/>
 <wire x1="17.78" y1="-22.86" x2="17.78" y2="-25.4" width="0.1524" layer="91"/>
@@ -3827,18 +3871,21 @@ Datasheet Link: https://industrial.panasonic.com/ww/products/pt/general-purpose-
 <pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="5.08" y1="0" x2="10.16" y2="0" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="0" x2="10.16" y2="-25.4" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="C"/>
+<wire x1="27.94" y1="-25.4" x2="27.94" y2="-18.796" width="0.1524" layer="91"/>
+<junction x="27.94" y="-25.4"/>
 </segment>
 </net>
 <net name="BB_TX" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="2"/>
 <wire x1="5.08" y1="2.54" x2="17.78" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="D1" gate="G$1" pin="A"/>
 <wire x1="17.78" y1="2.54" x2="27.94" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="2.54" x2="27.94" y2="-7.62" width="0.1524" layer="91"/>
 <junction x="17.78" y="2.54"/>
 <pinref part="R1" gate="A" pin="2"/>
 <wire x1="17.78" y1="-1.524" x2="17.78" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="A"/>
+<wire x1="27.94" y1="2.54" x2="27.94" y2="-6.096" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
