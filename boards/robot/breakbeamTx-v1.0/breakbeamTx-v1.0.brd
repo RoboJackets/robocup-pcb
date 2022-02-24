@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
@@ -185,7 +185,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.YnVzaW5lc3M6Z2F0ZWNoOTg4" projecturn="a.YnVzaW5lc3M6Z2F0ZWNoOTg4IzIwMjEwNzE5NDI4NDMwODUx" f3durn="urn:adsk.wipprod:dm.lineage:Bs0RIPzwQ2iRdHOdl2pSMw" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="0f02617b-329e-4820-80cf-166d5dde4bf6" lastsyncedrevisionid="0f02617b-329e-4820-80cf-166d5dde4bf6" lastboardhashguid="ec8a9942-9ff3-7ffb-c5f4-3f79ac5c9b5a" lastpushedtime="2022-01-23T18:20:38Z" linktopcb3d="false"/>
+<fusionsync huburn="a.YnVzaW5lc3M6Z2F0ZWNoOTg4" projecturn="a.YnVzaW5lc3M6Z2F0ZWNoOTg4IzIwMjEwNzE5NDI4NDMwODUx" f3durn="urn:adsk.wipprod:dm.lineage:Bs0RIPzwQ2iRdHOdl2pSMw" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="0f02617b-329e-4820-80cf-166d5dde4bf6" lastsyncedrevisionid="0f02617b-329e-4820-80cf-166d5dde4bf6" lastboardhashguid="ec8a9942-9ff3-7ffb-c5f4-3f79ac5c9b5a" lastpushedtime="2022-01-23T18:20:38Z" linktopcb3d="true"/>
 <plain>
 <text x="-1.2" y="2.7" size="1.6764" layer="21" rot="R270">+</text>
 <text x="1.8" y="2.2" size="1.6764" layer="21">_</text>
@@ -203,7 +203,7 @@
 <hole x="12" y="27" drill="3"/>
 <hole x="7" y="-1" drill="3"/>
 <text x="-0.5" y="26.8" size="1" layer="25" font="vector" ratio="10">J1</text>
-<text x="0.3" y="-6.3" size="1.016" layer="21">Transmitter</text>
+<text x="0.2" y="-5.8" size="0.9" layer="21" font="vector">Transmitter</text>
 <text x="1.7" y="12.6" size="0.9" layer="25" font="vector" rot="R90">Breakbeam Tx v1.0
 RoboCup
 February 2022</text>
@@ -3745,7 +3745,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="DIGI-KEY_PART_NUMBER" value="VSLY5940-ND" x="1" y="0.4" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="Vishay Semiconductor" x="1" y="0.4" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MP" value="VSLY5940" x="1" y="0.4" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="2.3" y="-3.9" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="2.2" y="-3.6" size="0.9" layer="25" font="vector"/>
 <attribute name="PACKAGE" value="Radial Vishay Semiconductor" x="1" y="0.4" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/VSLY5940/?ref=eda" x="1" y="0.4" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
