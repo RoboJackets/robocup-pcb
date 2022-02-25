@@ -5768,7 +5768,7 @@ design rules under a new name.</description>
 <wire x1="33.02" y1="54.651" x2="33.02" y2="62.23" width="1.016" layer="1"/>
 <contactref element="Q1" pad="3"/>
 <wire x1="34.201" y1="67.469" x2="34.106" y2="67.564" width="1.016" layer="1"/>
-<wire x1="34.106" y1="67.564" x2="34.106" y2="63.465" width="0.1524" layer="1"/>
+<wire x1="34.106" y1="67.564" x2="34.106" y2="63.465" width="1.016" layer="1"/>
 <wire x1="34.106" y1="63.465" x2="34.201" y2="63.37" width="0.1524" layer="1"/>
 <wire x1="34.201" y1="53.47" x2="34.201" y2="45.618" width="1.016" layer="1"/>
 <wire x1="34.201" y1="45.618" x2="34.29" y2="45.529" width="1.016" layer="1"/>
@@ -6657,7 +6657,6 @@ design rules under a new name.</description>
 <wire x1="64.262" y1="52.262" x2="64" y2="52" width="0.1524" layer="1"/>
 <wire x1="64" y1="52" x2="64" y2="52.636" width="0.1524" layer="1"/>
 <wire x1="64" y1="52.636" x2="64.262" y2="52.898" width="0.1524" layer="1"/>
-<wire x1="64.29" y1="49.66" x2="64.262" y2="52.898" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="18.5VB">
 <contactref element="U$1" pad="2"/>
