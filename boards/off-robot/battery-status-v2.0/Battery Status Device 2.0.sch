@@ -12077,6 +12077,19 @@ at typical battery output</text>
 <wire x1="-157.48" y1="-35.56" x2="-157.48" y2="-33.02" width="0.1524" layer="91"/>
 <label x="-157.48" y="-33.02" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="A" pin="4"/>
+<wire x1="-127" y1="86.36" x2="-129.54" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="A" pin="1"/>
+<wire x1="-129.54" y1="86.36" x2="-129.54" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-129.54" y1="71.12" x2="-127" y2="71.12" width="0.1524" layer="91"/>
+<label x="-129.54" y="86.36" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="Q1" gate="G$1" pin="D"/>
+<wire x1="-63.5" y1="66.04" x2="-63.5" y2="68.58" width="0.1524" layer="91"/>
+<label x="-63.5" y="68.58" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
 </net>
 <net name="14.8V" class="0">
 <segment>
@@ -12124,19 +12137,6 @@ at typical battery output</text>
 <pinref part="T1" gate="G$1" pin="C"/>
 <wire x1="-88.9" y1="-35.56" x2="-88.9" y2="-33.02" width="0.1524" layer="91"/>
 <label x="-88.9" y="-33.02" size="1.778" layer="95" rot="R90" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="A" pin="4"/>
-<wire x1="-127" y1="86.36" x2="-129.54" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="A" pin="1"/>
-<wire x1="-129.54" y1="86.36" x2="-129.54" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="-129.54" y1="71.12" x2="-127" y2="71.12" width="0.1524" layer="91"/>
-<label x="-129.54" y="86.36" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="Q1" gate="G$1" pin="D"/>
-<wire x1="-63.5" y1="66.04" x2="-63.5" y2="68.58" width="0.1524" layer="91"/>
-<label x="-63.5" y="68.58" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="11.1VF" class="0">
@@ -12571,7 +12571,7 @@ at typical battery output</text>
 <label x="9.906" y="33.528" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="11.1VB" class="0">
+<net name="18.5VB" class="0">
 <segment>
 <pinref part="U$1" gate="A" pin="2"/>
 <wire x1="-116.84" y1="71.12" x2="-114.3" y2="71.12" width="0.1524" layer="91"/>
