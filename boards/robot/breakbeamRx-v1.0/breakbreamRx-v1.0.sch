@@ -3635,7 +3635,7 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 </part>
 <part name="J1" library="RoboJackets-Connectors" deviceset="0436500213" device="" override_package3d_urn="urn:adsk.eagle:package:33302042/2" override_package_urn="urn:adsk.eagle:footprint:33302043/1" override_locally_modified="yes"/>
 <part name="SUPPLY1" library="RoboJackets-Supplies" deviceset="GND" device=""/>
-<part name="U$2" library="RoboJackets-Discrete" deviceset="LTR-209" device=""/>
+<part name="D1" library="RoboJackets-Discrete" deviceset="LTR-209" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3658,7 +3658,7 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 <instance part="SUPPLY1" gate="G$1" x="27.94" y="-15.24" smashed="yes">
 <attribute name="VALUE" x="25.4" y="-17.78" size="1.778" layer="96"/>
 </instance>
-<instance part="U$2" gate="A" x="25.4" y="0" smashed="yes">
+<instance part="D1" gate="A" x="25.4" y="0" smashed="yes">
 <attribute name="NAME" x="30.48" y="5.08" size="1.778" layer="95"/>
 <attribute name="VALUE" x="30.48" y="-5.08" size="1.778" layer="96"/>
 </instance>
@@ -3666,12 +3666,12 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
+<net name="RX" class="0">
 <segment>
 <wire x1="15.24" y1="2.54" x2="15.24" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="2"/>
 <wire x1="15.24" y1="2.54" x2="0" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="A" pin="E"/>
+<pinref part="D1" gate="A" pin="E"/>
 <wire x1="15.24" y1="7.62" x2="27.94" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -3683,7 +3683,7 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 <wire x1="7.62" y1="0" x2="0" y2="0" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="G$1" pin="GND"/>
 <wire x1="27.94" y1="-10.16" x2="27.94" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="A" pin="C"/>
+<pinref part="D1" gate="A" pin="C"/>
 <wire x1="27.94" y1="-10.16" x2="27.94" y2="-7.62" width="0.1524" layer="91"/>
 <junction x="27.94" y="-10.16"/>
 </segment>
