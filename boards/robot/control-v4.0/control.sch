@@ -28367,9 +28367,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <pad name="NC" x="11.43" y="19.05" drill="1.02" rot="R180"/>
 <pad name="VBUS" x="11.43" y="21.59" drill="1.02" rot="R180"/>
 <pad name="VDD" x="11.43" y="24.13" drill="1.02" rot="R180"/>
-<text x="-12.7" y="27.94" size="1.27" layer="25">&gt;NAME</text>
+<text x="-12.7" y="27.178" size="1.27" layer="25" font="vector">&gt;NAME</text>
 </package>
-<package name="IMU-KIT">
+<package name="IMU">
 <wire x1="-7.62" y1="6.35" x2="7.62" y2="6.35" width="0.127" layer="21"/>
 <wire x1="7.62" y1="6.35" x2="7.62" y2="-6.35" width="0.127" layer="21"/>
 <wire x1="7.62" y1="-6.35" x2="-7.62" y2="-6.35" width="0.127" layer="21"/>
@@ -28382,9 +28382,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <pad name="6" x="6.35" y="-1.27" drill="1.016"/>
 <pad name="7" x="6.35" y="1.27" drill="1.016"/>
 <pad name="8" x="6.35" y="3.81" drill="1.016"/>
-<text x="-7.62" y="6.62" size="1" layer="25">&gt;NAME</text>
+<text x="-7.62" y="6.62" size="1" layer="25" font="vector">&gt;NAME</text>
 <circle x="-6.731" y="5.588" radius="0.283978125" width="0.127" layer="21"/>
-<text x="-7.62" y="-6.62" size="1" layer="27" align="top-left">&gt;VALUE</text>
+<text x="-7.62" y="-6.62" size="1" layer="27" font="vector" align="top-left">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -29043,6 +29043,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="-20.955" y1="12.7" x2="-8.255" y2="12.7" width="0.254" layer="94"/>
 <wire x1="-20.955" y1="10.16" x2="-8.255" y2="10.16" width="0.254" layer="94"/>
 <wire x1="-20.955" y1="7.62" x2="-8.255" y2="7.62" width="0.254" layer="94"/>
+<text x="-45.466" y="-28.956" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
 </symbol>
 <symbol name="IMU">
 <description>IMU</description>
@@ -29119,12 +29120,12 @@ In this library the device names are the same as the pin names of the symbols, t
 </devices>
 </deviceset>
 <deviceset name="IMU" prefix="KIT">
-<description>IMU breakout board</description>
+<description>RoboCup's IMU breakout board</description>
 <gates>
 <gate name="G$1" symbol="IMU" x="15.24" y="2.54"/>
 </gates>
 <devices>
-<device name="IMU-KIT" package="IMU-KIT">
+<device name="" package="IMU">
 <connects>
 <connect gate="G$1" pin="!CS!" pad="4"/>
 <connect gate="G$1" pin="+3.3V" pad="8"/>
@@ -30810,7 +30811,7 @@ ripple current from motors</text>
 <part name="F2" library="RoboJackets-Fuses" deviceset="CHIP_FUSE" device="0805" package3d_urn="urn:adsk.eagle:package:8760197/1" value="0805L200SLTHYR"/>
 <part name="R30" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="0"/>
 <part name="SUPPLY42" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
-<part name="KIT2" library="RoboJackets-Boards" deviceset="IMU" device="IMU-KIT"/>
+<part name="KIT2" library="RoboJackets-Boards" deviceset="IMU" device=""/>
 <part name="$$C102" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="2.2uF 50V"/>
 <part name="GND46" library="supply1" deviceset="GND" device=""/>
 <part name="GND47" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
