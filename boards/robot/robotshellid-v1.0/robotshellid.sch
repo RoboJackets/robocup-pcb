@@ -12766,7 +12766,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="58.42" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="IN_T-I2C" class="0">
+<net name="INT-I2C" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="4"/>
 <wire x1="17.78" y1="208.28" x2="25.4" y2="208.28" width="0.1524" layer="91"/>
@@ -12778,14 +12778,12 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <pinref part="J1" gate="G$1" pin="3"/>
 <wire x1="17.78" y1="213.36" x2="25.4" y2="213.36" width="0.1524" layer="91"/>
-<label x="25.4" y="213.36" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PIN8" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="17.78" y1="223.52" x2="25.4" y2="223.52" width="0.1524" layer="91"/>
-<label x="25.4" y="223.52" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="!RESET" class="0">
