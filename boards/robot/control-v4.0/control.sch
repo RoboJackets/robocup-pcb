@@ -30810,6 +30810,9 @@ ripple current from motors</text>
 <part name="GND47" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY33" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="J7" library="RoboJackets-Connectors" deviceset="436500217" device=""/>
+<part name="R13" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="330"/>
+<part name="D4" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-BLUE" value="BLUE"/>
+<part name="GND48" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -30830,6 +30833,11 @@ ripple current from motors</text>
 1 connected to the RADIO
 1 connected to the other devices</text>
 <text x="246.38" y="7.62" size="1.778" layer="94">v4.0</text>
+<wire x1="119.38" y1="99.06" x2="119.38" y2="58.42" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="119.38" y1="58.42" x2="180.34" y2="58.42" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="180.34" y1="58.42" x2="180.34" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="180.34" y1="99.06" x2="119.38" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
+<text x="124.46" y="93.98" size="1.778" layer="97">Extra Indicator</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -30896,6 +30904,17 @@ ripple current from motors</text>
 <instance part="SUPPLY2" gate="+5V" x="71.12" y="83.82" smashed="yes">
 <attribute name="VALUE" x="69.215" y="86.995" size="1.778" layer="96"/>
 </instance>
+<instance part="R13" gate="G$1" x="149.86" y="78.74" smashed="yes">
+<attribute name="NAME" x="146.05" y="80.2386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="146.05" y="75.438" size="1.778" layer="96"/>
+</instance>
+<instance part="D4" gate="G$1" x="165.1" y="78.74" smashed="yes" rot="R90">
+<attribute name="NAME" x="162.56" y="81.28" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="165.1" y="81.28" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND48" gate="1" x="172.72" y="71.12" smashed="yes">
+<attribute name="VALUE" x="170.18" y="68.58" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -30935,6 +30954,12 @@ ripple current from motors</text>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="71.12" y1="58.42" x2="71.12" y2="60.96" width="0.1524" layer="91"/>
 <junction x="71.12" y="60.96"/>
+</segment>
+<segment>
+<pinref part="D4" gate="G$1" pin="K"/>
+<pinref part="GND48" gate="1" pin="GND"/>
+<wire x1="167.64" y1="78.74" x2="172.72" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="78.74" x2="172.72" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -31185,6 +31210,25 @@ ripple current from motors</text>
 <pinref part="KIT1" gate="G$1" pin="P3"/>
 <wire x1="91.44" y1="165.1" x2="86.36" y2="165.1" width="0.1524" layer="91"/>
 <label x="86.36" y="165.1" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="EXTRA-IND" class="0">
+<segment>
+<pinref part="KIT1" gate="G$1" pin="P12"/>
+<wire x1="91.44" y1="142.24" x2="86.36" y2="142.24" width="0.1524" layer="91"/>
+<label x="86.36" y="142.24" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R13" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="78.74" x2="139.7" y2="78.74" width="0.1524" layer="91"/>
+<label x="139.7" y="78.74" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="R13" gate="G$1" pin="2"/>
+<pinref part="D4" gate="G$1" pin="A"/>
+<wire x1="154.94" y1="78.74" x2="160.02" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
