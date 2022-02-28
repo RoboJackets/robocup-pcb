@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
@@ -187,8 +187,8 @@
 <board>
 <fusionsync huburn="a.YnVzaW5lc3M6Z2F0ZWNoOTg4" projecturn="a.YnVzaW5lc3M6Z2F0ZWNoOTg4IzIwMjEwNzE5NDI4NDMwODUx" f3durn="urn:adsk.wipprod:dm.lineage:SzhHr0xETMGJz2IZ0Lh9Xw" pcbguid="" lastpulledtime="2021-12-31T17:45:24Z" lastsyncedchangeguid="" latestrevisionid="9b572263-9f3e-48d8-9dc1-7076be87c222" lastsyncedrevisionid="9b572263-9f3e-48d8-9dc1-7076be87c222" lastboardhashguid="5d413514-ac58-a94f-70eb-b149b7d8946d" lastpushedtime="2021-12-31T21:44:26Z" linktopcb3d="true"/>
 <plain>
-<text x="0.1" y="0.7" size="1.27" layer="22" rot="MR90">+</text>
-<text x="-0.4" y="1.2" size="1.27" layer="22" rot="MR0">_</text>
+<text x="-1.4" y="1.7" size="1.27" layer="21" rot="R90">+</text>
+<text x="1.6" y="2.2" size="1.27" layer="21">_</text>
 <wire x1="10" y1="-5.97574375" x2="10" y2="22.12539375" width="0" layer="20"/>
 <wire x1="10" y1="22.12539375" x2="11.87460625" y2="24" width="0" layer="20" curve="-90"/>
 <wire x1="11.87460625" y1="24" x2="13.7101125" y2="24" width="0" layer="20"/>
@@ -3667,22 +3667,23 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 </autorouter>
 <elements>
 <element name="J1" library="RoboJackets-Connectors" package="0436500213" override_package3d_urn="urn:adsk.eagle:package:33302042/2" override_package_urn="urn:adsk.eagle:footprint:33302043/1" override_locally_modified="yes" value="0436500213" x="5.5" y="34" smashed="yes" rot="MR180"/>
-<element name="D1" library="RoboJackets-Discrete" package="LTR-209" value="LTR-209" x="0" y="0" smashed="yes" rot="MR0"/>
-<element name="U$1" library="RoboJackets-Aesthetics" package="ROBOBUZZ_0.8X" value="" x="3" y="-2" smashed="yes"/>
+<element name="D1" library="RoboJackets-Discrete" package="LTR-209" value="LTR-209" x="0" y="0" smashed="yes"/>
+<element name="U$1" library="RoboJackets-Aesthetics" package="ROBOBUZZ_0.8X" value="" x="4" y="-2" smashed="yes" rot="MR0"/>
 </elements>
 <signals>
 <signal name="RX">
 <contactref element="J1" pad="2" route="any" routetag="G$1.2"/>
 <contactref element="D1" pad="VCC"/>
-<wire x1="0.635" y1="0" x2="7" y2="6.365" width="1" layer="16"/>
-<wire x1="7" y1="6.365" x2="7" y2="28.53" width="1" layer="16"/>
+<wire x1="7" y1="28.53" x2="7" y2="4" width="1" layer="16"/>
+<wire x1="7" y1="4" x2="0" y2="-3" width="1" layer="16"/>
+<wire x1="0" y1="-3" x2="-0.635" y2="-2.365" width="1" layer="16"/>
+<wire x1="-0.635" y1="-2.365" x2="-0.635" y2="0" width="1" layer="16"/>
 </signal>
 <signal name="GND">
 <contactref element="J1" pad="1"/>
 <contactref element="D1" pad="GND"/>
-<wire x1="-0.635" y1="0" x2="-0.635" y2="6.365" width="1" layer="16"/>
-<wire x1="4" y1="11" x2="4" y2="28.53" width="1" layer="16"/>
-<wire x1="-0.635" y1="6.365" x2="4" y2="11" width="1" layer="16"/>
+<wire x1="4" y1="3.365" x2="0.635" y2="0" width="1" layer="16"/>
+<wire x1="4" y1="28.53" x2="4" y2="3.365" width="1" layer="16"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

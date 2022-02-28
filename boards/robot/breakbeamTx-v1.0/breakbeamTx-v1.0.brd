@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
@@ -187,8 +187,8 @@
 <board>
 <fusionsync huburn="a.YnVzaW5lc3M6Z2F0ZWNoOTg4" projecturn="a.YnVzaW5lc3M6Z2F0ZWNoOTg4IzIwMjEwNzE5NDI4NDMwODUx" f3durn="urn:adsk.wipprod:dm.lineage:Bs0RIPzwQ2iRdHOdl2pSMw" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="0f02617b-329e-4820-80cf-166d5dde4bf6" lastsyncedrevisionid="0f02617b-329e-4820-80cf-166d5dde4bf6" lastboardhashguid="ec8a9942-9ff3-7ffb-c5f4-3f79ac5c9b5a" lastpushedtime="2022-01-23T18:20:38Z" linktopcb3d="true"/>
 <plain>
-<text x="-1.2" y="2.7" size="1.6764" layer="21" rot="R270">+</text>
-<text x="1.8" y="2.2" size="1.6764" layer="21">_</text>
+<text x="3.8" y="4.7" size="1.6764" layer="22" rot="MR270">+</text>
+<text x="-1.2" y="4.2" size="1.6764" layer="22" rot="MR0">_</text>
 <wire x1="10" y1="-5.8101" x2="10" y2="21.2775" width="0" layer="20"/>
 <wire x1="10" y1="21.2775" x2="12.7225" y2="24" width="0" layer="20" curve="-90"/>
 <wire x1="12.7225" y1="24" x2="13.634303125" y2="24" width="0" layer="20"/>
@@ -3738,14 +3738,14 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <element name="R1" library="RoboJackets-Resistors" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="330" x="6.9" y="16.9" smashed="yes" rot="R270">
 <attribute name="NAME" x="7.662" y="16.9" size="1" layer="25" font="vector" ratio="15" rot="R270" align="bottom-center"/>
 </element>
-<element name="D1" library="VSLY5940" package="LEDRD254W50D590H1318" value="VSLY5940" x="1" y="0.4" smashed="yes" rot="R180">
-<attribute name="DESCRIPTION" value=" Infrared (IR) Emitter 940nm 1.65V 100mA 300mW/sr @ 100mA 6° Radial " x="1" y="0.4" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER" value="VSLY5940-ND" x="1" y="0.4" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MF" value="Vishay Semiconductor" x="1" y="0.4" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MP" value="VSLY5940" x="1" y="0.4" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="2.2" y="-3.6" size="1" layer="25" font="vector" ratio="15"/>
-<attribute name="PACKAGE" value="Radial Vishay Semiconductor" x="1" y="0.4" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/VSLY5940/?ref=eda" x="1" y="0.4" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="D1" library="VSLY5940" package="LEDRD254W50D590H1318" value="VSLY5940" x="1" y="0.4" smashed="yes" rot="MR180">
+<attribute name="DESCRIPTION" value=" Infrared (IR) Emitter 940nm 1.65V 100mA 300mW/sr @ 100mA 6° Radial " x="1" y="0.4" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="VSLY5940-ND" x="1" y="0.4" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MF" value="Vishay Semiconductor" x="1" y="0.4" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MP" value="VSLY5940" x="1" y="0.4" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="-0.2" y="-3.6" size="1" layer="26" font="vector" ratio="15" rot="MR0"/>
+<attribute name="PACKAGE" value="Radial Vishay Semiconductor" x="1" y="0.4" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/VSLY5940/?ref=eda" x="1" y="0.4" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="U$1" library="RoboJackets-Aesthetics" package="ROBOBUZZ_0.8X" value="" x="4" y="2" smashed="yes"/>
 </elements>
@@ -3753,26 +3753,26 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <signal name="GND">
 <contactref element="D2" pad="C"/>
 <wire x1="7" y1="23.775" x2="7" y2="24" width="1" layer="1"/>
-<wire x1="5.3" y1="22.4" x2="6.9" y2="24" width="1" layer="1"/>
 <wire x1="6.9" y1="24" x2="7" y2="24" width="1" layer="1"/>
 <contactref element="J1" pad="1"/>
 <wire x1="7" y1="23.775" x2="7" y2="28.53" width="1" layer="1"/>
 <contactref element="D1" pad="C"/>
-<wire x1="2.27" y1="0.4" x2="5.3" y2="3.43" width="1" layer="1"/>
-<wire x1="5.3" y1="3.43" x2="5.3" y2="22.4" width="1" layer="1"/>
+<wire x1="4.8947125" y1="30.617" x2="3.1052875" y2="30.617" width="1" layer="1"/>
+<wire x1="3.1052875" y1="30.617" x2="-0.27" y2="27.2417125" width="1" layer="1"/>
+<wire x1="-0.27" y1="27.2417125" x2="-0.27" y2="0.4" width="1" layer="1"/>
+<wire x1="7" y1="28.53" x2="6.9817125" y2="28.53" width="1" layer="1"/>
+<wire x1="6.9817125" y1="28.53" x2="4.8947125" y2="30.617" width="1" layer="1"/>
 </signal>
 <signal name="BB_TX">
 <contactref element="J1" pad="2" route="any" routetag="G$1.2"/>
 <wire x1="4" y1="28.53" x2="3.865" y2="28.395" width="1" layer="1"/>
 <contactref element="R1" pad="2"/>
 <contactref element="D1" pad="A"/>
-<wire x1="3.865" y1="4.535" x2="-0.27" y2="0.4" width="1" layer="1"/>
-<wire x1="3.865" y1="28.395" x2="3.865" y2="4.535" width="1" layer="1"/>
 <wire x1="6.9" y1="16.05" x2="6.9" y2="2.4" width="1" layer="1"/>
-<wire x1="3.4" y1="-1.1" x2="0.5" y2="-1.1" width="1" layer="1"/>
-<wire x1="0.5" y1="-1.1" x2="-0.27" y2="-0.33" width="1" layer="1"/>
-<wire x1="-0.27" y1="-0.33" x2="-0.27" y2="0.4" width="1" layer="1"/>
-<wire x1="6.9" y1="2.4" x2="3.4" y2="-1.1" width="1" layer="1"/>
+<wire x1="3.865" y1="1.995" x2="2.27" y2="0.4" width="1" layer="1"/>
+<wire x1="3.865" y1="28.395" x2="3.865" y2="1.995" width="1" layer="1"/>
+<wire x1="6.9" y1="2.4" x2="6.495" y2="1.995" width="1" layer="1"/>
+<wire x1="6.495" y1="1.995" x2="3.865" y2="1.995" width="1" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="D2" pad="A"/>
