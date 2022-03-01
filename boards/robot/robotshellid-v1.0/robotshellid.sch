@@ -11934,6 +11934,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="137.16" y1="40.64" x2="236.22" y2="40.64" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="236.22" y1="40.64" x2="236.22" y2="274.32" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="137.16" y1="71.12" x2="3.81" y2="71.12" width="0.1524" layer="95" style="shortdash"/>
+<text x="7.62" y="248.92" size="1.778" layer="97">1 and 3 not connected
+b/c nothing to connect to</text>
 </plain>
 <instances>
 <instance part="U2" gate="G$1" x="193.04" y="190.5" smashed="yes">
@@ -12822,6 +12824,10 @@ In this library the device names are the same as the pin names of the symbols, t
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
