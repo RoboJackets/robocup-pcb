@@ -16277,7 +16277,6 @@ not OD.</text>
 unclear as to when radios 
 are in a passthrough 
 enabled state.</text>
-<text x="215.9" y="172.72" size="1.4224" layer="97">(SEMI) COMPAT V2.X</text>
 <text x="96.52" y="152.4" size="1.27" layer="97">Pin left floating on purpose, 
 internally connected to GND.</text>
 <text x="68.58" y="256.54" size="1.778" layer="97">Routing comment: Feedback pin(FB)
