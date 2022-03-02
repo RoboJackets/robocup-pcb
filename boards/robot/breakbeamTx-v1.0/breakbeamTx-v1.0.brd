@@ -205,7 +205,8 @@
 <hole x="7" y="-1" drill="3"/>
 <text x="-1.4" y="29.2" size="1" layer="25" font="vector" ratio="15">J1</text>
 <text x="-1.5" y="-5.9" size="1.778" layer="21" font="vector" ratio="15">Transmit</text>
-<text x="0.5" y="13.8" size="1" layer="25" font="vector" ratio="15" rot="R90">Breakbeam TX v1.0
+<text x="1.5" y="13.8" size="1" layer="25" font="vector" ratio="15" rot="R90">Breakbeam TX v1.0
+RoboJackets
 February 2022</text>
 </plain>
 <libraries>
@@ -3747,21 +3748,19 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="PACKAGE" value="Radial Vishay Semiconductor" x="1" y="0.4" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/VSLY5940/?ref=eda" x="1" y="0.4" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
-<element name="U$1" library="RoboJackets-Aesthetics" package="ROBOBUZZ_0.8X" value="" x="4" y="2" smashed="yes"/>
+<element name="U$1" library="RoboJackets-Aesthetics" package="ROBOBUZZ_0.8X" value="" x="4" y="-1.5" smashed="yes"/>
 </elements>
 <signals>
 <signal name="GND">
 <contactref element="D2" pad="C"/>
-<wire x1="7" y1="23.775" x2="7" y2="24" width="1" layer="1"/>
-<wire x1="6.9" y1="24" x2="7" y2="24" width="1" layer="1"/>
 <contactref element="J1" pad="1"/>
 <wire x1="7" y1="23.775" x2="7" y2="28.53" width="1" layer="1"/>
 <contactref element="D1" pad="C"/>
-<wire x1="4.8947125" y1="30.617" x2="3.1052875" y2="30.617" width="1" layer="1"/>
-<wire x1="3.1052875" y1="30.617" x2="-0.27" y2="27.2417125" width="1" layer="1"/>
-<wire x1="-0.27" y1="27.2417125" x2="-0.27" y2="0.4" width="1" layer="1"/>
-<wire x1="7" y1="28.53" x2="6.9817125" y2="28.53" width="1" layer="1"/>
-<wire x1="6.9817125" y1="28.53" x2="4.8947125" y2="30.617" width="1" layer="1"/>
+<wire x1="4.8947125" y1="31.617" x2="2.1052875" y2="31.617" width="1" layer="1"/>
+<wire x1="2.1052875" y1="31.617" x2="-0.27" y2="29.2417125" width="1" layer="1"/>
+<wire x1="-0.27" y1="29.2417125" x2="-0.27" y2="0.4" width="1" layer="1"/>
+<wire x1="7" y1="28.53" x2="7" y2="29.5117125" width="1" layer="1"/>
+<wire x1="7" y1="29.5117125" x2="4.8947125" y2="31.617" width="1" layer="1"/>
 </signal>
 <signal name="BB_TX">
 <contactref element="J1" pad="2" route="any" routetag="G$1.2"/>

@@ -206,6 +206,7 @@
 <text x="-0.4" y="29" size="1" layer="26" font="vector" ratio="15" rot="MR0">J1</text>
 <text x="8.2" y="-6.2" size="1.778" layer="22" font="vector" ratio="15" rot="MR0">Receiver</text>
 <text x="-1.6" y="13.6" size="1" layer="22" font="vector" ratio="15" rot="MR90">Breakbeam RX v1.0
+RoboJackets
 February 2022</text>
 </plain>
 <libraries>
@@ -3674,10 +3675,11 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <signal name="RX">
 <contactref element="J1" pad="2" route="any" routetag="G$1.2"/>
 <contactref element="D1" pad="VCC"/>
-<wire x1="7" y1="28.53" x2="7" y2="4" width="1" layer="16"/>
-<wire x1="7" y1="4" x2="0" y2="-3" width="1" layer="16"/>
-<wire x1="0" y1="-3" x2="-0.635" y2="-2.365" width="1" layer="16"/>
-<wire x1="-0.635" y1="-2.365" x2="-0.635" y2="0" width="1" layer="16"/>
+<wire x1="7" y1="28.53" x2="7" y2="3" width="1" layer="16"/>
+<wire x1="0.0704875" y1="-1.127" x2="-0.635" y2="-0.4215125" width="1" layer="16"/>
+<wire x1="-0.635" y1="-0.4215125" x2="-0.635" y2="0" width="1" layer="16"/>
+<wire x1="7" y1="3" x2="2.873" y2="-1.127" width="1" layer="16"/>
+<wire x1="2.873" y1="-1.127" x2="0.0704875" y2="-1.127" width="1" layer="16"/>
 </signal>
 <signal name="GND">
 <contactref element="J1" pad="1"/>
