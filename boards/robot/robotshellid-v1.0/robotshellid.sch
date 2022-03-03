@@ -11715,23 +11715,24 @@ Source: &lt;a href="http://www.nxp.com/docs/en/data-sheet/PCA9848.pdf"&gt; Datas
 In this library you will find all the connectors used on any of our boards.
 &lt;/p&gt;</description>
 <packages>
-<package name="SFW8R-1STE1LF">
-<text x="0" y="6.222" size="1.27" layer="25">&gt;Name</text>
-<text x="0" y="-3.778" size="1.27" layer="27">&gt;Value</text>
-<wire x1="-3.073" y1="-1.978" x2="12.727" y2="-1.978" width="0.127" layer="27"/>
-<wire x1="-3.073" y1="-1.978" x2="-3.073" y2="3.522" width="0.127" layer="27"/>
-<wire x1="12.727" y1="-1.978" x2="12.727" y2="3.522" width="0.127" layer="27"/>
-<wire x1="-3.073" y1="3.522" x2="12.727" y2="3.522" width="0.127" layer="27"/>
-<smd name="P$2" x="1.3" y="4.2" dx="2" dy="0.6" layer="1" rot="R90"/>
-<smd name="P$3" x="2.3" y="4.2" dx="2" dy="0.6" layer="1" rot="R90"/>
-<smd name="P$4" x="3.3" y="4.2" dx="2" dy="0.6" layer="1" rot="R90"/>
-<smd name="P$5" x="4.3" y="4.2" dx="2" dy="0.6" layer="1" rot="R90"/>
-<smd name="P$6" x="5.3" y="4.2" dx="2" dy="0.6" layer="1" rot="R90"/>
-<smd name="P$7" x="6.3" y="4.2" dx="2" dy="0.6" layer="1" rot="R90"/>
-<smd name="P$8" x="7.3" y="4.2" dx="2" dy="0.6" layer="1" rot="R90"/>
-<smd name="P$9" x="8.3" y="4.2" dx="2" dy="0.6" layer="1" rot="R90"/>
-<rectangle x1="0" y1="0" x2="0.7" y2="4.2" layer="1"/>
-<rectangle x1="9" y1="0" x2="9.7" y2="4.2" layer="1"/>
+<package name="SFW8R-1ST">
+<wire x1="6.3" y1="2.75" x2="6.3" y2="-2.75" width="0.2" layer="21"/>
+<wire x1="6.3" y1="-2.75" x2="-6.3" y2="-2.75" width="0.2" layer="21"/>
+<wire x1="-6.3" y1="-2.75" x2="-6.3" y2="2.75" width="0.2" layer="21"/>
+<smd name="6" x="1.5" y="3.25" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="LEG1" x="-4.5" y="1.15" dx="4.2" dy="0.7" layer="1" rot="R90"/>
+<smd name="LEG2" x="4.5" y="1.15" dx="4.2" dy="0.7" layer="1" rot="R90"/>
+<smd name="5" x="0.5" y="3.25" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="4" x="-0.5" y="3.25" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="3" x="-1.5" y="3.25" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="2" x="-2.5" y="3.25" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="1" x="-3.5" y="3.25" dx="2" dy="0.6" layer="1" rot="R90"/>
+<text x="-6.77" y="-2.5" size="1" layer="25" rot="R90">&gt;NAME</text>
+<circle x="-4.25" y="3.75" radius="0.25" width="0" layer="25"/>
+<wire x1="-6.3" y1="2.75" x2="-5" y2="2.75" width="0.2" layer="21"/>
+<wire x1="5" y1="2.75" x2="6.3" y2="2.75" width="0.2" layer="21"/>
+<smd name="7" x="2.5" y="3.25" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="8" x="3.5" y="3.25" dx="2" dy="0.6" layer="1" rot="R90"/>
 </package>
 </packages>
 <symbols>
@@ -11759,23 +11760,30 @@ In this library you will find all the connectors used on any of our boards.
 <wire x1="2.54" y1="-20.32" x2="2.54" y2="20.32" width="0.254" layer="94"/>
 <wire x1="2.54" y1="20.32" x2="-5.08" y2="20.32" width="0.254" layer="94"/>
 </symbol>
+<symbol name="LEGS">
+<pin name="LEG2" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="LEG1" x="-2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="SFW8R-1STE1LF">
+<deviceset name="SFW8" prefix="J">
 <gates>
 <gate name="G$1" symbol="8-PIN_CONN" x="0" y="0"/>
+<gate name="G$2" symbol="LEGS" x="-2.54" y="-20.32" addlevel="request"/>
 </gates>
 <devices>
-<device name="" package="SFW8R-1STE1LF">
+<device name="" package="SFW8R-1ST">
 <connects>
-<connect gate="G$1" pin="1" pad="P$2"/>
-<connect gate="G$1" pin="2" pad="P$3"/>
-<connect gate="G$1" pin="3" pad="P$4"/>
-<connect gate="G$1" pin="4" pad="P$5"/>
-<connect gate="G$1" pin="5" pad="P$6"/>
-<connect gate="G$1" pin="6" pad="P$7"/>
-<connect gate="G$1" pin="7" pad="P$8"/>
-<connect gate="G$1" pin="8" pad="P$9"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$2" pin="LEG1" pad="LEG1"/>
+<connect gate="G$2" pin="LEG2" pad="LEG2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -11846,8 +11854,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.7K"/>
 <part name="SUPPLY9" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="SUPPLY10" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
-<part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.7K"/>
-<part name="SUPPLY11" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="SUPPLY12" library="RoboJackets-Supplies" deviceset="GND" device=""/>
 <part name="SUPPLY13" library="RoboJackets-Supplies" deviceset="GND" device=""/>
 <part name="SUPPLY14" library="RoboJackets-Supplies" deviceset="GND" device=""/>
@@ -11902,7 +11908,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="IC1" library="SamacSys_Parts" deviceset="PCA9848PWJ" device=""/>
 <part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value=".1uF"/>
 <part name="SUPPLY39" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
-<part name="J1" library="RoboJackets-Connectors" deviceset="SFW8R-1STE1LF" device=""/>
+<part name="J1" library="RoboJackets-Connectors" deviceset="SFW8" device=""/>
 <part name="SUPPLY18" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="SUPPLY40" library="RoboJackets-Supplies" deviceset="GND" device=""/>
 <part name="SUPPLY41" library="RoboJackets-Supplies" deviceset="GND" device=""/>
@@ -11934,7 +11940,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="137.16" y1="40.64" x2="236.22" y2="40.64" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="236.22" y1="40.64" x2="236.22" y2="274.32" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="137.16" y1="71.12" x2="3.81" y2="71.12" width="0.1524" layer="95" style="shortdash"/>
-<text x="7.62" y="248.92" size="1.778" layer="97">1 and 3 not connected
+<text x="7.62" y="248.92" size="1.778" layer="97">1 and 7 not connected
 b/c nothing to connect to</text>
 </plain>
 <instances>
@@ -12000,13 +12006,6 @@ b/c nothing to connect to</text>
 </instance>
 <instance part="SUPPLY10" gate="P" x="101.6" y="132.08" smashed="yes">
 <attribute name="VALUE" x="94.615" y="130.175" size="1.778" layer="96"/>
-</instance>
-<instance part="R11" gate="G$1" x="60.96" y="124.46" smashed="yes" rot="R90">
-<attribute name="NAME" x="59.4614" y="120.65" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="64.262" y="120.65" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="SUPPLY11" gate="P" x="60.96" y="132.08" smashed="yes">
-<attribute name="VALUE" x="56.515" y="135.255" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY12" gate="G$1" x="43.18" y="213.36" smashed="yes">
 <attribute name="VALUE" x="38.1" y="210.82" size="1.778" layer="96"/>
@@ -12124,8 +12123,8 @@ b/c nothing to connect to</text>
 <attribute name="NAME" x="100.1014" y="120.65" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="104.902" y="120.65" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SUPPLY8" gate="P" x="175.26" y="132.08" smashed="yes">
-<attribute name="VALUE" x="175.895" y="135.255" size="1.778" layer="96"/>
+<instance part="SUPPLY8" gate="P" x="175.26" y="134.62" smashed="yes">
+<attribute name="VALUE" x="175.895" y="137.795" size="1.778" layer="96"/>
 </instance>
 <instance part="R1" gate="G$1" x="175.26" y="124.46" smashed="yes" rot="R270">
 <attribute name="NAME" x="176.7586" y="128.27" size="1.778" layer="95" rot="R270"/>
@@ -12202,8 +12201,8 @@ b/c nothing to connect to</text>
 <instance part="SUPPLY18" gate="+5V" x="43.18" y="193.04" smashed="yes">
 <attribute name="VALUE" x="41.275" y="196.215" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY40" gate="G$1" x="55.88" y="106.68" smashed="yes">
-<attribute name="VALUE" x="50.8" y="104.14" size="1.778" layer="96"/>
+<instance part="SUPPLY40" gate="G$1" x="50.8" y="106.68" smashed="yes">
+<attribute name="VALUE" x="45.72" y="104.14" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY41" gate="G$1" x="121.92" y="104.14" smashed="yes">
 <attribute name="VALUE" x="116.84" y="101.6" size="1.778" layer="96"/>
@@ -12400,10 +12399,6 @@ b/c nothing to connect to</text>
 <pinref part="SUPPLY9" gate="P" pin="+3.3V"/>
 </segment>
 <segment>
-<pinref part="R11" gate="G$1" pin="2"/>
-<pinref part="SUPPLY11" gate="P" pin="+3.3V"/>
-</segment>
-<segment>
 <pinref part="SUPPLY20" gate="P" pin="+3.3V"/>
 <pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="213.36" y1="233.68" x2="213.36" y2="236.22" width="0.1524" layer="91"/>
@@ -12480,6 +12475,7 @@ b/c nothing to connect to</text>
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="SUPPLY8" gate="P" pin="+3.3V"/>
+<wire x1="175.26" y1="132.08" x2="175.26" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
@@ -12528,9 +12524,9 @@ b/c nothing to connect to</text>
 <junction x="101.6" y="111.76"/>
 </segment>
 <segment>
-<label x="25.4" y="193.04" size="1.27" layer="95" xref="yes"/>
-<pinref part="J1" gate="G$1" pin="7"/>
-<wire x1="17.78" y1="193.04" x2="25.4" y2="193.04" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="3"/>
+<wire x1="17.78" y1="213.36" x2="25.4" y2="213.36" width="0.1524" layer="91"/>
+<label x="25.4" y="213.36" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SDA_CONN" class="0">
@@ -12547,13 +12543,6 @@ b/c nothing to connect to</text>
 <label x="25.4" y="198.12" size="1.27" layer="95" xref="yes"/>
 <pinref part="J1" gate="G$1" pin="6"/>
 <wire x1="17.78" y1="198.12" x2="25.4" y2="198.12" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="!RST-I2C" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="5"/>
-<wire x1="17.78" y1="203.2" x2="25.4" y2="203.2" width="0.1524" layer="91"/>
-<label x="25.4" y="203.2" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -12643,8 +12632,8 @@ b/c nothing to connect to</text>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="A0"/>
-<wire x1="66.04" y1="114.3" x2="55.88" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="114.3" x2="55.88" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="114.3" x2="50.8" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="114.3" x2="50.8" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="SUPPLY40" gate="G$1" pin="GND"/>
 </segment>
 <segment>
@@ -12726,11 +12715,6 @@ b/c nothing to connect to</text>
 <pinref part="R14" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$2" class="0">
-<segment>
-<junction x="175.26" y="106.68"/>
-</segment>
-</net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="D8" gate="A" pin="A"/>
@@ -12757,10 +12741,10 @@ b/c nothing to connect to</text>
 <pinref part="R16" gate="G$1" pin="2"/>
 <pinref part="U1" gate="G$1" pin="SDA"/>
 <wire x1="172.466" y1="75.692" x2="172.466" y2="62.992" width="0.1524" layer="91"/>
-<wire x1="172.466" y1="62.992" x2="175.006" y2="62.992" width="0.1524" layer="91"/>
-<wire x1="175.006" y1="62.992" x2="165.1" y2="62.992" width="0.1524" layer="91"/>
-<junction x="172.466" y="62.992"/>
+<wire x1="175.006" y1="62.992" x2="172.466" y2="62.992" width="0.1524" layer="91"/>
 <label x="165.1" y="62.992" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="172.466" y1="62.992" x2="165.1" y2="62.992" width="0.1524" layer="91"/>
+<junction x="172.466" y="62.992"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="SD3"/>
@@ -12773,27 +12757,25 @@ b/c nothing to connect to</text>
 <pinref part="J1" gate="G$1" pin="4"/>
 <wire x1="17.78" y1="208.28" x2="25.4" y2="208.28" width="0.1524" layer="91"/>
 <label x="25.4" y="208.28" size="1.778" layer="95" xref="yes"/>
-<label x="25.4" y="208.28" size="1.778" layer="95" xref="yes"/>
+<label x="25.4" y="208.28" size="1.27" layer="95" xref="yes"/>
 </segment>
-</net>
-<net name="PIN6" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="3"/>
-<wire x1="17.78" y1="213.36" x2="25.4" y2="213.36" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="INT"/>
+<wire x1="205.486" y1="68.072" x2="205.486" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="205.486" y1="63.5" x2="205.74" y2="63.5" width="0.1524" layer="91"/>
+<label x="205.74" y="63.5" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="PIN8" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="1"/>
-<wire x1="17.78" y1="223.52" x2="25.4" y2="223.52" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="!RESET" class="0">
+<net name="!RST-I2C!" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="!RESET"/>
-<pinref part="R11" gate="G$1" pin="1"/>
-<wire x1="60.96" y1="111.76" x2="66.04" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="119.38" x2="60.96" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="111.76" x2="63.5" y2="111.76" width="0.1524" layer="91"/>
+<label x="63.5" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="5"/>
+<wire x1="17.78" y1="203.2" x2="25.4" y2="203.2" width="0.1524" layer="91"/>
+<label x="25.4" y="203.2" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -12804,6 +12786,7 @@ b/c nothing to connect to</text>
 <approved hash="104,1,208.28,233.68,U3,VDD,+3.3V,,,"/>
 <approved hash="104,1,208.28,116.84,U4,VDD,+3.3V,,,"/>
 <approved hash="104,1,208.28,154.94,U5,VDD,+3.3V,,,"/>
+<approved hash="104,1,205.486,73.152,U1,VDD,+3.3V,,,"/>
 <approved hash="208,1,83.82,205.74,GND,out,,,,"/>
 <approved hash="208,1,68.58,205.74,GND,sup,,,,"/>
 <approved hash="208,1,60.96,195.58,GND,sup,,,,"/>
@@ -12816,10 +12799,11 @@ b/c nothing to connect to</text>
 <approved hash="208,1,213.36,137.16,GND,sup,,,,"/>
 <approved hash="208,1,213.36,177.8,GND,sup,,,,"/>
 <approved hash="208,1,213.36,215.9,GND,sup,,,,"/>
-<approved hash="105,1,175.26,106.68,N$2,,,,,"/>
-<approved hash="107,1,175.26,106.68,SDA_SENSOR4,N$2,,,,"/>
-<approved hash="107,1,175.26,106.68,SDA_SENSOR4,N$2,,,,"/>
-<approved hash="107,1,175.26,106.68,SDA_SENSOR4,N$2,,,,"/>
+<approved hash="208,1,50.8,109.22,GND,sup,,,,"/>
+<approved hash="208,1,121.92,106.68,GND,sup,,,,"/>
+<approved hash="208,1,218.186,55.372,GND,sup,,,,"/>
+<approved hash="208,1,210.566,55.372,GND,sup,,,,"/>
+<approved hash="208,1,43.18,215.9,GND,sup,,,,"/>
 </errors>
 </schematic>
 </drawing>
