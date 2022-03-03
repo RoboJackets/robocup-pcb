@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.1">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4922,6 +4922,30 @@ http://www.digikey.com/product-detail/en/XC3S250E-4PQG208C/122-1483-ND/1091711</
 <text x="-10.16" y="7.62" size="1.778" layer="95" rot="SR0">&gt;Name</text>
 <text x="-10.16" y="-5.08" size="1.778" layer="97" font="vector" rot="SR0" align="top-left">&gt;Value</text>
 </symbol>
+<symbol name="TXB0106">
+<wire x1="-12.7" y1="15.24" x2="12.7" y2="15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="15.24" x2="12.7" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-15.24" x2="-12.7" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-15.24" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
+<text x="-12.7207" y="17.8089" size="1.778" layer="95" font="vector" align="top-left">&gt;NAME</text>
+<text x="-12.7109" y="-17.7953" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+<pin name="VCCA" x="-17.78" y="12.7" length="middle" direction="pwr"/>
+<pin name="A1" x="-17.78" y="2.54" length="middle"/>
+<pin name="A2" x="-17.78" y="0" length="middle"/>
+<pin name="A3" x="-17.78" y="-2.54" length="middle"/>
+<pin name="A4" x="-17.78" y="-5.08" length="middle"/>
+<pin name="GND" x="5.08" y="-20.32" length="middle" direction="pwr" rot="R90"/>
+<pin name="VCCB" x="17.78" y="12.7" length="middle" direction="pwr" rot="R180"/>
+<pin name="B1" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="B2" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="B3" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="B4" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="OE" x="-17.78" y="7.62" length="middle"/>
+<pin name="A5" x="-17.78" y="-7.62" length="middle"/>
+<pin name="A6" x="-17.78" y="-10.16" length="middle"/>
+<pin name="B5" x="17.78" y="-7.62" length="middle" rot="R180"/>
+<pin name="B6" x="17.78" y="-10.16" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="LM2734" prefix="U">
@@ -7266,6 +7290,37 @@ Source: www.atmel.com .. doc2503.pdf</description>
 <technology name="">
 <attribute name="DKPN" value="296-18818-1-ND" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TXB0106" prefix="U">
+<description>TI TXB0106 6-Bit Bi-Directional Level Shifter (1.2V-3.6V to 1.65V-5.5V)</description>
+<gates>
+<gate name="U" symbol="TXB0106" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TSSOP-16">
+<connects>
+<connect gate="U" pin="A1" pad="1"/>
+<connect gate="U" pin="A2" pad="3"/>
+<connect gate="U" pin="A3" pad="4"/>
+<connect gate="U" pin="A4" pad="5"/>
+<connect gate="U" pin="A5" pad="6"/>
+<connect gate="U" pin="A6" pad="7"/>
+<connect gate="U" pin="B1" pad="16"/>
+<connect gate="U" pin="B2" pad="14"/>
+<connect gate="U" pin="B3" pad="13"/>
+<connect gate="U" pin="B4" pad="12"/>
+<connect gate="U" pin="B5" pad="11"/>
+<connect gate="U" pin="B6" pad="10"/>
+<connect gate="U" pin="GND" pad="9"/>
+<connect gate="U" pin="OE" pad="8"/>
+<connect gate="U" pin="VCCA" pad="2"/>
+<connect gate="U" pin="VCCB" pad="15"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>

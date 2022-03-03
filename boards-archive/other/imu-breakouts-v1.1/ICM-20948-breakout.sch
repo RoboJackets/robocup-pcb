@@ -8469,9 +8469,9 @@ Source: 8x ADG1408_1409.pdf</description>
 <wire x1="101.6" y1="142.24" x2="10.16" y2="142.24" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="10.16" y1="142.24" x2="10.16" y2="205.74" width="0.1524" layer="97" style="shortdash"/>
 <text x="17.78" y="198.12" size="2.1844" layer="97">IMU</text>
-<wire x1="106.68" y1="205.74" x2="208.28" y2="205.74" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="208.28" y1="205.74" x2="208.28" y2="142.24" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="208.28" y1="142.24" x2="106.68" y2="142.24" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="106.68" y1="205.74" x2="182.88" y2="205.74" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="182.88" y1="205.74" x2="182.88" y2="142.24" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="182.88" y1="142.24" x2="106.68" y2="142.24" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="106.68" y1="142.24" x2="106.68" y2="205.74" width="0.1524" layer="97" style="shortdash"/>
 <text x="116.84" y="198.12" size="2.1844" layer="97">Power</text>
 <text x="115.062" y="135.636" size="2.1844" layer="97">Board Header Pins</text>
@@ -8484,9 +8484,6 @@ Source: 8x ADG1408_1409.pdf</description>
 <wire x1="101.6" y1="76.2" x2="101.6" y2="139.7" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="101.6" y1="139.7" x2="10.16" y2="139.7" width="0.1524" layer="97" style="shortdash"/>
 <text x="12.7" y="134.62" size="2.1844" layer="97">Level Shifters</text>
-<text x="177.8" y="162.56" size="1.778" layer="97">Internal 4K output resistor
-in TXB0106 may take out
-the need for R1.</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -8941,10 +8938,6 @@ the need for R1.</text>
 </schematic>
 </drawing>
 <compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
