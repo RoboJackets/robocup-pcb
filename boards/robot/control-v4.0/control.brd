@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -248,9 +248,9 @@ Board</text>
 <text x="-23" y="55" size="1" layer="25" font="vector" ratio="15">J3</text>
 <text x="27.8" y="31.3" size="1" layer="21" font="vector" ratio="15">Util</text>
 <text x="-5.5" y="41.2" size="1" layer="21" font="vector" ratio="15">FPGA</text>
-<text x="-12.75" y="51" size="1" layer="21" font="vector" ratio="15" align="bottom-center">Robot Shell ID</text>
-<text x="-12.75" y="59" size="1.5" layer="21" font="vector" ratio="15" align="bottom-center">Radio</text>
-<text x="-28.75" y="54" size="1.5" layer="21" font="vector" ratio="15" align="bottom-center">SPI</text>
+<text x="-12.75" y="51" size="1" layer="21" font="vector" ratio="15" align="bottom-center">Radio</text>
+<text x="-12.75" y="59" size="1" layer="21" font="vector" ratio="15" align="bottom-center">Robot Shell ID</text>
+<text x="-28.75" y="54" size="1" layer="21" font="vector" ratio="15" align="bottom-center">SPI</text>
 <text x="2" y="73" size="1" layer="22" font="vector" ratio="15" rot="MR0">Kicker Power</text>
 </plain>
 <libraries>
