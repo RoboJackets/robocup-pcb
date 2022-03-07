@@ -11908,7 +11908,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="IC1" library="SamacSys_Parts" deviceset="PCA9848PWJ" device=""/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value=".1uF"/>
 <part name="SUPPLY39" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
-<part name="J100" library="RoboJackets-Connectors" deviceset="SFW8" device=""/>
+<part name="J1" library="RoboJackets-Connectors" deviceset="SFW8" device=""/>
 <part name="SUPPLY18" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="SUPPLY40" library="RoboJackets-Supplies" deviceset="GND" device=""/>
 <part name="SUPPLY41" library="RoboJackets-Supplies" deviceset="GND" device=""/>
@@ -12194,7 +12194,7 @@ b/c nothing to connect to</text>
 <instance part="SUPPLY39" gate="P" x="35.56" y="119.38" smashed="yes">
 <attribute name="VALUE" x="33.655" y="122.555" size="1.778" layer="96"/>
 </instance>
-<instance part="J100" gate="G$1" x="12.7" y="205.74" smashed="yes">
+<instance part="J1" gate="G$1" x="12.7" y="205.74" smashed="yes">
 <attribute name="NAME" x="7.62" y="228.6" size="1.778" layer="95" font="vector" align="top-left"/>
 <attribute name="VALUE" x="7.62" y="182.88" size="1.778" layer="96" font="vector"/>
 </instance>
@@ -12524,7 +12524,7 @@ b/c nothing to connect to</text>
 <junction x="101.6" y="111.76"/>
 </segment>
 <segment>
-<pinref part="J100" gate="G$1" pin="3"/>
+<pinref part="J1" gate="G$1" pin="3"/>
 <wire x1="17.78" y1="213.36" x2="25.4" y2="213.36" width="0.1524" layer="91"/>
 <label x="25.4" y="213.36" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -12541,7 +12541,7 @@ b/c nothing to connect to</text>
 </segment>
 <segment>
 <label x="25.4" y="198.12" size="1.27" layer="95" xref="yes"/>
-<pinref part="J100" gate="G$1" pin="6"/>
+<pinref part="J1" gate="G$1" pin="6"/>
 <wire x1="17.78" y1="198.12" x2="25.4" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -12656,7 +12656,7 @@ b/c nothing to connect to</text>
 <junction x="210.566" y="57.912"/>
 </segment>
 <segment>
-<pinref part="J100" gate="G$1" pin="2"/>
+<pinref part="J1" gate="G$1" pin="2"/>
 <pinref part="SUPPLY12" gate="G$1" pin="GND"/>
 <wire x1="17.78" y1="218.44" x2="43.18" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="218.44" x2="43.18" y2="215.9" width="0.1524" layer="91"/>
@@ -12679,7 +12679,7 @@ b/c nothing to connect to</text>
 <pinref part="SUPPLY29" gate="G$1" pin="+5V"/>
 </segment>
 <segment>
-<pinref part="J100" gate="G$1" pin="8"/>
+<pinref part="J1" gate="G$1" pin="8"/>
 <wire x1="17.78" y1="187.96" x2="43.18" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="SUPPLY18" gate="+5V" pin="+5V"/>
 <wire x1="43.18" y1="187.96" x2="43.18" y2="190.5" width="0.1524" layer="91"/>
@@ -12754,7 +12754,7 @@ b/c nothing to connect to</text>
 </net>
 <net name="INT-I2C" class="0">
 <segment>
-<pinref part="J100" gate="G$1" pin="4"/>
+<pinref part="J1" gate="G$1" pin="4"/>
 <wire x1="17.78" y1="208.28" x2="25.4" y2="208.28" width="0.1524" layer="91"/>
 <label x="25.4" y="208.28" size="1.778" layer="95" xref="yes"/>
 <label x="25.4" y="208.28" size="1.27" layer="95" xref="yes"/>
@@ -12773,7 +12773,7 @@ b/c nothing to connect to</text>
 <label x="63.5" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J100" gate="G$1" pin="5"/>
+<pinref part="J1" gate="G$1" pin="5"/>
 <wire x1="17.78" y1="203.2" x2="25.4" y2="203.2" width="0.1524" layer="91"/>
 <label x="25.4" y="203.2" size="1.27" layer="95" xref="yes"/>
 </segment>
