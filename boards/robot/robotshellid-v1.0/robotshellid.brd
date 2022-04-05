@@ -5138,8 +5138,8 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="SPICEPREFIX" value="C" x="-10" y="38" size="1" layer="27" font="vector" ratio="15" display="off"/>
 <attribute name="VALUE" x="-10.635" y="36.095" size="1" layer="27" font="vector" ratio="15"/>
 </element>
-<element name="J100" library="RoboJackets-Connectors" package="SFW8R-1ST" value="SFW8" x="-13.3" y="41" smashed="yes" rot="MR180">
-<attribute name="NAME" x="-15.3" y="36.778" size="1" layer="26" font="vector" ratio="15" rot="MR180"/>
+<element name="J1" library="RoboJackets-Connectors" package="SFW8R-1ST" value="SFW8" x="-13.3" y="41" smashed="yes" rot="MR180">
+<attribute name="NAME" x="-15.3" y="35.778" size="1" layer="26" font="vector" ratio="15" rot="MR180"/>
 </element>
 <element name="U4" library="TSL25721FN" package="SON65P200X200X70-6N" value="TSL25721FN" x="2" y="-2" smashed="yes">
 <attribute name="AVAILABILITY" value="In Stock" x="2" y="-2" size="1" layer="27" font="vector" ratio="15" display="off"/>
@@ -5580,7 +5580,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="-18.725" y1="32.062" x2="-18.725" y2="33.5694" width="0.3" layer="1"/>
 <wire x1="-18.725" y1="33.5694" x2="-18.6944" y2="33.6" width="0.3" layer="1"/>
 <via x="-18.6944" y="33.6" extent="1-16" drill="0.35"/>
-<contactref element="J100" pad="3"/>
+<contactref element="J1" pad="3"/>
 <wire x1="-18.6944" y1="33.6" x2="-18.655575" y2="33.638825" width="0.3" layer="16"/>
 <wire x1="-18.655575" y1="33.638825" x2="-18.655575" y2="34.80694375" width="0.3" layer="16"/>
 <wire x1="-15.3852625" y1="36.473" x2="-14.8" y2="37.0582625" width="0.3" layer="16"/>
@@ -5600,7 +5600,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="-18.075" y1="33.25688125" x2="-18.0138" y2="33.31808125" width="0.3" layer="1"/>
 <wire x1="-18.0138" y1="34.4862" x2="-17.974975" y2="34.525025" width="0.3" layer="1"/>
 <wire x1="-18.0138" y1="33.31808125" x2="-18.0138" y2="34.4862" width="0.3" layer="1"/>
-<contactref element="J100" pad="6"/>
+<contactref element="J1" pad="6"/>
 <wire x1="-17.3924" y1="35.1076" x2="-17.974975" y2="34.525025" width="0.3" layer="16"/>
 <wire x1="-13" y1="35.1076" x2="-17.3924" y2="35.1076" width="0.3" layer="16"/>
 <wire x1="-11.8" y1="36.3076" x2="-13" y2="35.1076" width="0.3" layer="16"/>
@@ -5718,7 +5718,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="6" y1="-1.225" x2="7.1" y2="-0.125" width="0.4" layer="1"/>
 <wire x1="7.1" y1="-0.125" x2="7.1" y2="-0.1" width="0.4" layer="1"/>
 <via x="7.1" y="-0.1" extent="1-16" drill="0.35"/>
-<contactref element="J100" pad="2"/>
+<contactref element="J1" pad="2"/>
 </signal>
 <signal name="+5V">
 <contactref element="U1" pad="1"/>
@@ -5741,7 +5741,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="9.7338" y1="36.1978" x2="9.7338" y2="34.69605" width="0.4" layer="1"/>
 <wire x1="8" y1="35" x2="8" y2="36.504" width="0.4" layer="1"/>
 <via x="-32" y="42" extent="1-16" drill="0.35"/>
-<contactref element="J100" pad="8"/>
+<contactref element="J1" pad="8"/>
 <via x="-7" y="39" extent="1-16" drill="0.35"/>
 <wire x1="-7" y1="39" x2="-9.6" y2="41.6" width="0.4" layer="1"/>
 <wire x1="-7" y1="39" x2="-5.67" y2="40.33" width="0.4" layer="1"/>
@@ -5854,7 +5854,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="-28.6" y1="35.8" x2="-26.1" y2="35.8" width="0.2" layer="16"/>
 </signal>
 <signal name="INT-I2C">
-<contactref element="J100" pad="4"/>
+<contactref element="J1" pad="4"/>
 <contactref element="U4" pad="5"/>
 <via x="7" y="2" extent="1-16" drill="0.35"/>
 <wire x1="2.745" y1="-2" x2="2.958" y2="-1.787" width="0.3" layer="1"/>
@@ -5878,7 +5878,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 </signal>
 <signal name="!RST-I2C!">
 <contactref element="IC1" pad="3"/>
-<contactref element="J100" pad="5"/>
+<contactref element="J1" pad="5"/>
 <via x="-16.7118" y="35.7882" extent="1-16" drill="0.35"/>
 <wire x1="-16.454" y1="36.046" x2="-16.7118" y2="35.7882" width="0.3" layer="16"/>
 <wire x1="-12.8" y1="37.75" x2="-12.8" y2="36.8582625" width="0.3" layer="16"/>
