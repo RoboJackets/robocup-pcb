@@ -18644,6 +18644,28 @@ In this library you will find all the connectors used on any of our boards.
 <wire x1="-13.2588" y1="0" x2="-12.4968" y2="0" width="0.508" layer="22" curve="-180"/>
 <text x="1.8034" y="4.445" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Name</text>
 </package>
+<package name="CON_436500217_MOL">
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.524" shape="square"/>
+<pad name="2" x="-2.9972" y="0" drill="1.016" diameter="1.524"/>
+<text x="-4.9958" y="-4.045" size="1" layer="27" font="vector" ratio="10" rot="SR0">&gt;Value</text>
+<text x="-4.8752" y="4.045" size="1" layer="25" font="vector" ratio="10" rot="SR0">&gt;Name</text>
+<pad name="M1" x="2.9972" y="-1.9558" drill="1.27" diameter="1.27"/>
+<pad name="M2" x="-5.9944" y="-1.9558" drill="1.27" diameter="1.27"/>
+<wire x1="3.5814" y1="0" x2="5.1054" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="5.1054" y1="0.635" x2="5.1054" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="5.1054" y1="-0.635" x2="3.5814" y2="0" width="0.1524" layer="51"/>
+<wire x1="-6.3246" y1="-2.4638" x2="3.3274" y2="-2.4638" width="0.1524" layer="51"/>
+<wire x1="3.3274" y1="-2.4638" x2="3.3274" y2="3.0988" width="0.1524" layer="51"/>
+<wire x1="3.3274" y1="3.0988" x2="-6.3246" y2="3.0988" width="0.1524" layer="51"/>
+<wire x1="-6.3246" y1="3.0988" x2="-6.3246" y2="-2.4638" width="0.1524" layer="51"/>
+<wire x1="3.5814" y1="0" x2="5.1054" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="5.1054" y1="0.635" x2="5.1054" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="5.1054" y1="-0.635" x2="3.5814" y2="0" width="0.1524" layer="21"/>
+<wire x1="-6.3246" y1="3.0988" x2="-6.3246" y2="-1.0668" width="0.1524" layer="21"/>
+<wire x1="-5.207" y1="-2.4638" x2="2.1844" y2="-2.4638" width="0.1524" layer="21"/>
+<wire x1="3.3274" y1="-1.0668" x2="3.3274" y2="3.0988" width="0.1524" layer="21"/>
+<wire x1="3.3274" y1="3.0988" x2="-6.3246" y2="3.0988" width="0.1524" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="8-PIN_CONN">
@@ -18759,6 +18781,25 @@ In this library you will find all the connectors used on any of our boards.
 <wire x1="33.02" y1="5.08" x2="7.62" y2="5.08" width="0.1524" layer="94"/>
 <text x="15.5956" y="9.1186" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
 <text x="14.9606" y="6.5786" size="2.0828" layer="96" ratio="6" rot="SR0">&gt;Value</text>
+</symbol>
+<symbol name="CON_436500217">
+<pin name="1" x="0" y="0" visible="pad" length="middle" direction="pas"/>
+<pin name="2" x="0" y="-2.54" visible="pad" length="middle" direction="pas"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="-5.08" width="0.1524" layer="94"/>
+<text x="4.1656" y="5.3086" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
+<text x="4.1656" y="5.3086" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
+<wire x1="10.16" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="0" x2="8.89" y2="0.8382" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="8.89" y2="-1.7018" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="0" x2="8.89" y2="-0.8382" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="8.89" y2="-3.3782" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="12.7" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-5.08" x2="12.7" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
+<text x="4.1656" y="5.3086" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -18914,6 +18955,27 @@ In this library you will find all the connectors used on any of our boards.
 <attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." constant="no"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="N3793-6303RB" constant="no"/>
 <attribute name="MFR_NAME" value="3M" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="436500217" prefix="J">
+<gates>
+<gate name="A" symbol="CON_436500217" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CON_436500217_MOL">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." constant="no"/>
+<attribute name="DIGI-KEY_PART_NUMBER_1" value="WM12762-ND" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="436500217" constant="no"/>
+<attribute name="MFR_NAME" value="Molex Connector Corporation" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -30852,6 +30914,7 @@ ripple current from motors</text>
 <part name="R13" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="330"/>
 <part name="D4" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-BLUE" value="BLUE"/>
 <part name="GND48" library="supply1" deviceset="GND" device=""/>
+<part name="J5" library="RoboJackets-Connectors" deviceset="436500217" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -33641,6 +33704,11 @@ pins while connecting</text>
 <instance part="SUPPLY33" gate="+5V" x="55.88" y="12.7" smashed="yes">
 <attribute name="VALUE" x="53.975" y="15.875" size="1.778" layer="96"/>
 </instance>
+<instance part="J5" gate="A" x="203.2" y="81.28" smashed="yes">
+<attribute name="NAME" x="207.3656" y="86.5886" size="2.0828" layer="95" ratio="6" rot="SR0"/>
+<attribute name="NAME" x="207.3656" y="86.5886" size="2.0828" layer="95" ratio="6" rot="SR0"/>
+<attribute name="NAME" x="207.3656" y="86.5886" size="2.0828" layer="95" ratio="6" rot="SR0"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -33684,6 +33752,7 @@ pins while connecting</text>
 <pinref part="GND61" gate="1" pin="GND"/>
 <wire x1="190.5" y1="78.74" x2="190.5" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="78.74" x2="203.2" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="J5" gate="A" pin="2"/>
 </segment>
 <segment>
 <pinref part="GND62" gate="1" pin="GND"/>
@@ -33825,6 +33894,7 @@ pins while connecting</text>
 <wire x1="190.5" y1="81.28" x2="190.5" y2="83.82" width="0.1524" layer="91"/>
 <label x="190.5" y="83.82" size="1.27" layer="95" font="vector" rot="R90" xref="yes"/>
 <wire x1="190.5" y1="81.28" x2="203.2" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="J5" gate="A" pin="1"/>
 </segment>
 </net>
 <net name="SCK-RADIO" class="0">
