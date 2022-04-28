@@ -18558,57 +18558,6 @@ In this library you will find all the connectors used on any of our boards.
 <wire x1="-3.429" y1="3.683" x2="-2.794" y2="2.413" width="0.127" layer="21"/>
 <wire x1="-2.794" y1="2.413" x2="-2.159" y2="3.683" width="0.127" layer="21"/>
 </package>
-<package name="CON_436500217_MOL">
-<pad name="1" x="0" y="0" drill="1.016" diameter="1.524" shape="square"/>
-<pad name="2" x="-2.9972" y="0" drill="1.016" diameter="1.524"/>
-<pad name="M1" x="2.9972" y="-1.9558" drill="1.27" diameter="1.27"/>
-<pad name="M2" x="-5.9944" y="-1.9558" drill="1.27" diameter="1.27"/>
-<wire x1="3.5814" y1="0" x2="5.1054" y2="0.635" width="0.1524" layer="51"/>
-<wire x1="5.1054" y1="0.635" x2="5.1054" y2="-0.635" width="0.1524" layer="51"/>
-<wire x1="5.1054" y1="-0.635" x2="3.5814" y2="0" width="0.1524" layer="51"/>
-<wire x1="-6.3246" y1="-2.4638" x2="3.3274" y2="-2.4638" width="0.1524" layer="51"/>
-<wire x1="3.3274" y1="-2.4638" x2="3.3274" y2="3.0988" width="0.1524" layer="51"/>
-<wire x1="3.3274" y1="3.0988" x2="-6.3246" y2="3.0988" width="0.1524" layer="51"/>
-<wire x1="-6.3246" y1="3.0988" x2="-6.3246" y2="-2.4638" width="0.1524" layer="51"/>
-<wire x1="3.5814" y1="0" x2="5.1054" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="5.1054" y1="0.635" x2="5.1054" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="5.1054" y1="-0.635" x2="3.5814" y2="0" width="0.1524" layer="21"/>
-<wire x1="-6.3246" y1="3.0988" x2="-6.3246" y2="-1.0668" width="0.1524" layer="21"/>
-<wire x1="-5.207" y1="-2.4638" x2="2.1844" y2="-2.4638" width="0.1524" layer="21"/>
-<wire x1="3.3274" y1="-1.0668" x2="3.3274" y2="3.0988" width="0.1524" layer="21"/>
-<wire x1="3.3274" y1="3.0988" x2="-6.3246" y2="3.0988" width="0.1524" layer="21"/>
-<text x="-4.7752" y="4.445" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Name</text>
-</package>
-<package name="N3793-6303RB_3MM">
-<pad name="1" x="0" y="0" drill="0.8636" diameter="1.3716"/>
-<pad name="2" x="2.54" y="0" drill="0.8636" diameter="1.3716"/>
-<pad name="3" x="5.08" y="0" drill="0.8636" diameter="1.3716"/>
-<pad name="4" x="7.62" y="0" drill="0.8636" diameter="1.3716"/>
-<pad name="5" x="10.16" y="0" drill="0.8636" diameter="1.3716"/>
-<pad name="6" x="0" y="-2.54" drill="0.8636" diameter="1.3716"/>
-<pad name="7" x="2.54" y="-2.54" drill="0.8636" diameter="1.3716"/>
-<pad name="8" x="5.08" y="-2.54" drill="0.8636" diameter="1.3716"/>
-<pad name="9" x="7.62" y="-2.54" drill="0.8636" diameter="1.3716"/>
-<pad name="10" x="10.16" y="-2.54" drill="0.8636" diameter="1.3716"/>
-<pad name="11" x="-8.9408" y="-1.27" drill="2.54" diameter="3.048"/>
-<pad name="12" x="19.1008" y="-1.27" drill="2.54" diameter="3.048"/>
-<wire x1="-11.0998" y1="-5.969" x2="21.2598" y2="-5.969" width="0.1524" layer="21"/>
-<wire x1="21.2598" y1="-5.969" x2="21.2598" y2="2.8956" width="0.1524" layer="21"/>
-<wire x1="21.2598" y1="2.8956" x2="-11.0998" y2="2.8956" width="0.1524" layer="21"/>
-<wire x1="-11.0998" y1="2.8956" x2="-11.0998" y2="-5.969" width="0.1524" layer="21"/>
-<wire x1="-12.4968" y1="0" x2="-13.2588" y2="0" width="0.508" layer="21" curve="-180"/>
-<wire x1="-13.2588" y1="0" x2="-12.4968" y2="0" width="0.508" layer="21" curve="-180"/>
-<text x="2.0828" y="-8.255" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
-<wire x1="-10.9728" y1="-5.842" x2="21.1328" y2="-5.842" width="0.1524" layer="51"/>
-<wire x1="21.1328" y1="-5.842" x2="21.1328" y2="2.7686" width="0.1524" layer="51"/>
-<wire x1="21.1328" y1="2.7686" x2="-10.9728" y2="2.7686" width="0.1524" layer="51"/>
-<wire x1="-10.9728" y1="2.7686" x2="-10.9728" y2="-5.842" width="0.1524" layer="51"/>
-<wire x1="0.381" y1="1.905" x2="-0.381" y2="1.905" width="0.508" layer="51" curve="-180"/>
-<wire x1="-0.381" y1="1.905" x2="0.381" y2="1.905" width="0.508" layer="51" curve="-180"/>
-<wire x1="-12.4968" y1="0" x2="-13.2588" y2="0" width="0.508" layer="22" curve="-180"/>
-<wire x1="-13.2588" y1="0" x2="-12.4968" y2="0" width="0.508" layer="22" curve="-180"/>
-<text x="1.8034" y="4.445" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Name</text>
-</package>
 <package name="CON_430450618_MOL">
 <smd name="1" x="3" y="-4.7" dx="1.27" dy="2.54" layer="1" rot="R180"/>
 <smd name="2" x="0" y="-4.7" dx="1.27" dy="2.54" layer="1" rot="R180"/>
@@ -18665,6 +18614,36 @@ In this library you will find all the connectors used on any of our boards.
 <wire x1="-3.0988" y1="2.2606" x2="-3.0988" y2="-8.7376" width="0.1524" layer="51"/>
 <text x="-2.4384" y="3.175" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Name</text>
 </package>
+<package name="N3793-6303RB_3MM">
+<pad name="9" x="0" y="0" drill="0.8636" diameter="1.3716"/>
+<pad name="7" x="2.54" y="0" drill="0.8636" diameter="1.3716"/>
+<pad name="5" x="5.08" y="0" drill="0.8636" diameter="1.3716"/>
+<pad name="3" x="7.62" y="0" drill="0.8636" diameter="1.3716"/>
+<pad name="1" x="10.16" y="0" drill="0.8636" diameter="1.3716"/>
+<pad name="10" x="0" y="-2.54" drill="0.8636" diameter="1.3716"/>
+<pad name="8" x="2.54" y="-2.54" drill="0.8636" diameter="1.3716"/>
+<pad name="6" x="5.08" y="-2.54" drill="0.8636" diameter="1.3716"/>
+<pad name="4" x="7.62" y="-2.54" drill="0.8636" diameter="1.3716"/>
+<pad name="2" x="10.16" y="-2.54" drill="0.8636" diameter="1.3716"/>
+<pad name="11" x="-8.9408" y="-1.27" drill="2.54" diameter="3.048"/>
+<pad name="12" x="19.1008" y="-1.27" drill="2.54" diameter="3.048"/>
+<wire x1="-11.0998" y1="-5.969" x2="21.2598" y2="-5.969" width="0.1524" layer="21"/>
+<wire x1="21.2598" y1="-5.969" x2="21.2598" y2="2.8956" width="0.1524" layer="21"/>
+<wire x1="21.2598" y1="2.8956" x2="-11.0998" y2="2.8956" width="0.1524" layer="21"/>
+<wire x1="-11.0998" y1="2.8956" x2="-11.0998" y2="-5.969" width="0.1524" layer="21"/>
+<wire x1="-12.4968" y1="0" x2="-13.2588" y2="0" width="0.508" layer="21" curve="-180"/>
+<wire x1="-13.2588" y1="0" x2="-12.4968" y2="0" width="0.508" layer="21" curve="-180"/>
+<text x="2.0828" y="-8.255" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
+<wire x1="-10.9728" y1="-5.842" x2="21.1328" y2="-5.842" width="0.1524" layer="51"/>
+<wire x1="21.1328" y1="-5.842" x2="21.1328" y2="2.7686" width="0.1524" layer="51"/>
+<wire x1="21.1328" y1="2.7686" x2="-10.9728" y2="2.7686" width="0.1524" layer="51"/>
+<wire x1="-10.9728" y1="2.7686" x2="-10.9728" y2="-5.842" width="0.1524" layer="51"/>
+<wire x1="0.381" y1="1.905" x2="-0.381" y2="1.905" width="0.508" layer="51" curve="-180"/>
+<wire x1="-0.381" y1="1.905" x2="0.381" y2="1.905" width="0.508" layer="51" curve="-180"/>
+<wire x1="-12.4968" y1="0" x2="-13.2588" y2="0" width="0.508" layer="22" curve="-180"/>
+<wire x1="-13.2588" y1="0" x2="-12.4968" y2="0" width="0.508" layer="22" curve="-180"/>
+<text x="1.8034" y="4.445" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Name</text>
+</package>
 </packages>
 <symbols>
 <symbol name="8-PIN_CONN">
@@ -18700,39 +18679,6 @@ In this library you will find all the connectors used on any of our boards.
 <text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="1" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="2" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
-</symbol>
-<symbol name="CON_436500217">
-<pin name="1" x="0" y="0" visible="pad" length="middle" direction="pas"/>
-<pin name="2" x="0" y="-2.54" visible="pad" length="middle" direction="pas"/>
-<wire x1="10.16" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="-2.54" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="0" x2="8.89" y2="0.8382" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="-2.54" x2="8.89" y2="-1.7018" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="0" x2="8.89" y2="-0.8382" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="-2.54" x2="8.89" y2="-3.3782" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="12.7" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="12.7" y1="-5.08" x2="12.7" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="12.7" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
-<text x="4.1656" y="5.3086" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
-</symbol>
-<symbol name="N3793-6303RB">
-<pin name="1" x="2.54" y="0" length="middle" direction="pas"/>
-<pin name="2" x="2.54" y="-2.54" length="middle" direction="pas"/>
-<pin name="3" x="2.54" y="-5.08" length="middle" direction="pas"/>
-<pin name="4" x="2.54" y="-7.62" length="middle" direction="pas"/>
-<pin name="5" x="2.54" y="-10.16" length="middle" direction="pas"/>
-<pin name="6" x="38.1" y="-10.16" length="middle" direction="pas" rot="R180"/>
-<pin name="7" x="38.1" y="-7.62" length="middle" direction="pas" rot="R180"/>
-<pin name="8" x="38.1" y="-5.08" length="middle" direction="pas" rot="R180"/>
-<pin name="9" x="38.1" y="-2.54" length="middle" direction="pas" rot="R180"/>
-<pin name="10" x="38.1" y="0" length="middle" direction="pas" rot="R180"/>
-<wire x1="7.62" y1="5.08" x2="7.62" y2="-15.24" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="-15.24" x2="33.02" y2="-15.24" width="0.1524" layer="94"/>
-<wire x1="33.02" y1="-15.24" x2="33.02" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="33.02" y1="5.08" x2="7.62" y2="5.08" width="0.1524" layer="94"/>
-<text x="15.5956" y="9.1186" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
-<text x="14.9606" y="6.5786" size="2.0828" layer="96" ratio="6" rot="SR0">&gt;Value</text>
 </symbol>
 <symbol name="CON_430450618">
 <pin name="1" x="0" y="0" visible="pad" length="middle" direction="pas"/>
@@ -18795,6 +18741,24 @@ In this library you will find all the connectors used on any of our boards.
 <wire x1="12.7" y1="-10.16" x2="12.7" y2="2.54" width="0.1524" layer="94"/>
 <wire x1="12.7" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
 <text x="4.1656" y="5.3086" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
+</symbol>
+<symbol name="N3793-6303RB">
+<pin name="1" x="2.54" y="0" length="middle" direction="pas"/>
+<pin name="2" x="2.54" y="-2.54" length="middle" direction="pas"/>
+<pin name="3" x="2.54" y="-5.08" length="middle" direction="pas"/>
+<pin name="4" x="2.54" y="-7.62" length="middle" direction="pas"/>
+<pin name="5" x="2.54" y="-10.16" length="middle" direction="pas"/>
+<pin name="6" x="38.1" y="-10.16" length="middle" direction="pas" rot="R180"/>
+<pin name="7" x="38.1" y="-7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="8" x="38.1" y="-5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="9" x="38.1" y="-2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="10" x="38.1" y="0" length="middle" direction="pas" rot="R180"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="-15.24" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-15.24" x2="33.02" y2="-15.24" width="0.1524" layer="94"/>
+<wire x1="33.02" y1="-15.24" x2="33.02" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="33.02" y1="5.08" x2="7.62" y2="5.08" width="0.1524" layer="94"/>
+<text x="15.5956" y="9.1186" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
+<text x="14.9606" y="6.5786" size="2.0828" layer="96" ratio="6" rot="SR0">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -18879,54 +18843,6 @@ In this library you will find all the connectors used on any of our boards.
 </device>
 </devices>
 </deviceset>
-<deviceset name="436500217" prefix="J">
-<gates>
-<gate name="A" symbol="CON_436500217" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="CON_436500217_MOL">
-<connects>
-<connect gate="A" pin="1" pad="1"/>
-<connect gate="A" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DIGIKEY" value="WM12762-ND" constant="no"/>
-<attribute name="MFR_NAME" value="Molex Connector Corporation" constant="no"/>
-<attribute name="MPN" value="436500217" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="N3793-6303RB" prefix="U">
-<gates>
-<gate name="A" symbol="N3793-6303RB" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="N3793-6303RB_3MM">
-<connects>
-<connect gate="A" pin="1" pad="1"/>
-<connect gate="A" pin="10" pad="10"/>
-<connect gate="A" pin="2" pad="2"/>
-<connect gate="A" pin="3" pad="3"/>
-<connect gate="A" pin="4" pad="4"/>
-<connect gate="A" pin="5" pad="5"/>
-<connect gate="A" pin="6" pad="6"/>
-<connect gate="A" pin="7" pad="7"/>
-<connect gate="A" pin="8" pad="8"/>
-<connect gate="A" pin="9" pad="9"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="N3793-6303RB" constant="no"/>
-<attribute name="MFR_NAME" value="3M" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="430450618" prefix="J">
 <gates>
 <gate name="A" symbol="CON_430450618" x="0" y="0"/>
@@ -18970,6 +18886,34 @@ In this library you will find all the connectors used on any of our boards.
 <attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." constant="no"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="39288040" constant="no"/>
 <attribute name="MFR_NAME" value="Molex Connector Corporation" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="N3793-6303RB" prefix="U">
+<gates>
+<gate name="A" symbol="N3793-6303RB" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="N3793-6303RB_3MM">
+<connects>
+<connect gate="A" pin="1" pad="9"/>
+<connect gate="A" pin="10" pad="2"/>
+<connect gate="A" pin="2" pad="7"/>
+<connect gate="A" pin="3" pad="5"/>
+<connect gate="A" pin="4" pad="3"/>
+<connect gate="A" pin="5" pad="1"/>
+<connect gate="A" pin="6" pad="10"/>
+<connect gate="A" pin="7" pad="8"/>
+<connect gate="A" pin="8" pad="6"/>
+<connect gate="A" pin="9" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="N3793-6303RB" constant="no"/>
+<attribute name="MFR_NAME" value="3M" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -29295,7 +29239,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY10" library="RoboJackets-Supplies" deviceset="+18.5V" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
-<part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="supply2" deviceset="+5V" device=""/>
 <part name="C12" library="RoboJackets-Capacitors" deviceset="ECA-1HHG221" device=""/>
 <part name="C13" library="RoboJackets-Capacitors" deviceset="ECA-1HHG221" device=""/>
@@ -29303,11 +29246,11 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SUPPLY2" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="SUPPLY3" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="SUPPLY9" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
-<part name="U2" library="RoboJackets-Connectors" deviceset="N3793-6303RB" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="J1" library="RoboJackets-Connectors" deviceset="430450618" device=""/>
 <part name="J2" library="RoboJackets-Connectors" deviceset="39288040" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
+<part name="U2" library="RoboJackets-Connectors" deviceset="N3793-6303RB" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -29440,9 +29383,6 @@ ripple current from motors</text>
 <instance part="GND11" gate="1" x="101.6" y="22.86" smashed="yes">
 <attribute name="VALUE" x="99.06" y="20.32" size="1.778" layer="96"/>
 </instance>
-<instance part="GND12" gate="1" x="15.24" y="7.62" smashed="yes">
-<attribute name="VALUE" x="12.7" y="5.08" size="1.778" layer="96"/>
-</instance>
 <instance part="SUPPLY1" gate="+5V" x="17.78" y="55.88" smashed="yes">
 <attribute name="VALUE" x="15.875" y="59.055" size="1.778" layer="96"/>
 </instance>
@@ -29466,12 +29406,8 @@ ripple current from motors</text>
 <instance part="SUPPLY9" gate="P" x="30.48" y="106.68" smashed="yes">
 <attribute name="VALUE" x="28.575" y="109.855" size="1.778" layer="96"/>
 </instance>
-<instance part="U2" gate="A" x="63.5" y="71.12" smashed="yes">
-<attribute name="NAME" x="79.0956" y="80.2386" size="2.0828" layer="95" ratio="6" rot="SR0"/>
-<attribute name="VALUE" x="78.4606" y="77.6986" size="2.0828" layer="96" ratio="6" rot="SR0"/>
-</instance>
-<instance part="GND13" gate="1" x="38.1" y="38.1" smashed="yes">
-<attribute name="VALUE" x="35.56" y="35.56" size="1.778" layer="96"/>
+<instance part="GND13" gate="1" x="33.02" y="45.72" smashed="yes" rot="R270">
+<attribute name="VALUE" x="30.48" y="48.26" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="J1" gate="A" x="40.64" y="53.34" smashed="yes">
 <attribute name="NAME" x="44.8056" y="58.6486" size="2.0828" layer="95" ratio="6" rot="SR0"/>
@@ -29481,6 +29417,10 @@ ripple current from motors</text>
 </instance>
 <instance part="GND14" gate="1" x="60.96" y="63.5" smashed="yes">
 <attribute name="VALUE" x="58.42" y="60.96" size="1.778" layer="96"/>
+</instance>
+<instance part="U2" gate="A" x="63.5" y="68.58" smashed="yes">
+<attribute name="NAME" x="79.0956" y="77.6986" size="2.0828" layer="95" ratio="6" rot="SR0"/>
+<attribute name="VALUE" x="78.4606" y="75.1586" size="2.0828" layer="96" ratio="6" rot="SR0"/>
 </instance>
 </instances>
 <busses>
@@ -29559,11 +29499,6 @@ ripple current from motors</text>
 </net>
 <net name="PHASE-A" class="0">
 <segment>
-<wire x1="43.18" y1="15.24" x2="40.64" y2="15.24" width="0.1524" layer="91"/>
-<label x="40.64" y="15.24" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J2" gate="A" pin="3"/>
-</segment>
-<segment>
 <wire x1="83.82" y1="137.16" x2="96.52" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="137.16" x2="167.64" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="137.16" x2="167.64" y2="142.24" width="0.1524" layer="91"/>
@@ -29578,6 +29513,11 @@ ripple current from motors</text>
 <pinref part="U1" gate="G$1" pin="SH_B"/>
 <wire x1="172.72" y1="142.24" x2="208.28" y2="142.24" width="0.1524" layer="91"/>
 <label x="208.28" y="142.24" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J2" gate="A" pin="4"/>
+<wire x1="43.18" y1="12.7" x2="40.64" y2="12.7" width="0.1524" layer="91"/>
+<label x="40.64" y="12.7" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GL-A" class="0">
@@ -29605,11 +29545,6 @@ ripple current from motors</text>
 </net>
 <net name="PHASE-B" class="0">
 <segment>
-<wire x1="43.18" y1="12.7" x2="40.64" y2="12.7" width="0.1524" layer="91"/>
-<label x="40.64" y="12.7" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J2" gate="A" pin="4"/>
-</segment>
-<segment>
 <wire x1="83.82" y1="152.4" x2="96.52" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="152.4" x2="121.92" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="152.4" x2="121.92" y2="157.48" width="0.1524" layer="91"/>
@@ -29624,6 +29559,11 @@ ripple current from motors</text>
 <pinref part="C6" gate="G$1" pin="2"/>
 <wire x1="127" y1="157.48" x2="160.02" y2="157.48" width="0.1524" layer="91"/>
 <label x="160.02" y="157.48" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J2" gate="A" pin="1"/>
+<wire x1="43.18" y1="20.32" x2="40.64" y2="20.32" width="0.1524" layer="91"/>
+<label x="40.64" y="20.32" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GH-B" class="0">
@@ -29651,11 +29591,6 @@ ripple current from motors</text>
 </net>
 <net name="PHASE-C" class="0">
 <segment>
-<wire x1="43.18" y1="20.32" x2="40.64" y2="20.32" width="0.1524" layer="91"/>
-<label x="40.64" y="20.32" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J2" gate="A" pin="1"/>
-</segment>
-<segment>
 <wire x1="83.82" y1="121.92" x2="96.52" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="121.92" x2="215.9" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="121.92" x2="215.9" y2="127" width="0.1524" layer="91"/>
@@ -29670,6 +29605,11 @@ ripple current from motors</text>
 <pinref part="U1" gate="G$1" pin="SH_C"/>
 <wire x1="220.98" y1="127" x2="259.08" y2="127" width="0.1524" layer="91"/>
 <label x="259.08" y="127" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J2" gate="A" pin="3"/>
+<wire x1="43.18" y1="15.24" x2="40.64" y2="15.24" width="0.1524" layer="91"/>
+<label x="40.64" y="15.24" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GL-C" class="0">
@@ -29831,22 +29771,14 @@ ripple current from motors</text>
 <pinref part="GND9" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="33.02" y1="17.78" x2="15.24" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="50.8" x2="15.24" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="50.8" x2="15.24" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="GND12" gate="1" pin="GND"/>
-<wire x1="15.24" y1="10.16" x2="15.24" y2="17.78" width="0.1524" layer="91"/>
-<junction x="15.24" y="17.78"/>
-</segment>
-<segment>
-<wire x1="40.64" y1="40.64" x2="38.1" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="GND13" gate="1" pin="GND"/>
-<pinref part="J1" gate="A" pin="6"/>
-</segment>
-<segment>
 <pinref part="GND14" gate="1" pin="GND"/>
-<pinref part="U2" gate="A" pin="3"/>
 <wire x1="60.96" y1="66.04" x2="66.04" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="2"/>
+</segment>
+<segment>
+<pinref part="GND13" gate="1" pin="GND"/>
+<pinref part="J1" gate="A" pin="4"/>
+<wire x1="35.56" y1="45.72" x2="40.64" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+18.5V" class="0">
@@ -29880,13 +29812,6 @@ ripple current from motors</text>
 <wire x1="220.98" y1="170.18" x2="220.98" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="H1" class="0">
-<segment>
-<wire x1="40.64" y1="48.26" x2="38.1" y2="48.26" width="0.1524" layer="91"/>
-<label x="38.1" y="48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J1" gate="A" pin="3"/>
-</segment>
-</net>
 <net name="H2" class="0">
 <segment>
 <wire x1="40.64" y1="50.8" x2="38.1" y2="50.8" width="0.1524" layer="91"/>
@@ -29894,42 +29819,33 @@ ripple current from motors</text>
 <pinref part="J1" gate="A" pin="2"/>
 </segment>
 </net>
-<net name="H3" class="0">
-<segment>
-<wire x1="40.64" y1="53.34" x2="38.1" y2="53.34" width="0.1524" layer="91"/>
-<label x="38.1" y="53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J1" gate="A" pin="1"/>
-</segment>
-</net>
 <net name="ENC-A" class="0">
 <segment>
 <wire x1="106.68" y1="60.96" x2="101.6" y2="60.96" width="0.1524" layer="91"/>
 <label x="106.68" y="60.96" size="1.27" layer="95" xref="yes"/>
-<pinref part="U2" gate="A" pin="6"/>
+<pinref part="U2" gate="A" pin="7"/>
 </segment>
 </net>
 <net name="ENC-B" class="0">
 <segment>
 <wire x1="106.68" y1="66.04" x2="101.6" y2="66.04" width="0.1524" layer="91"/>
 <label x="106.68" y="66.04" size="1.27" layer="95" xref="yes"/>
-<pinref part="U2" gate="A" pin="8"/>
+<pinref part="U2" gate="A" pin="9"/>
 </segment>
 </net>
 <net name="+5V" class="0">
 <segment>
 <pinref part="SUPPLY1" gate="+5V" pin="+5V"/>
 <wire x1="17.78" y1="53.34" x2="30.48" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="53.34" x2="35.56" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="22.86" x2="17.78" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="22.86" x2="17.78" y2="43.18" width="0.1524" layer="91"/>
 <junction x="17.78" y="53.34"/>
 <wire x1="17.78" y1="43.18" x2="17.78" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="43.18" x2="40.64" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="J1" gate="A" pin="5"/>
-<pinref part="U2" gate="A" pin="2"/>
 <wire x1="30.48" y1="53.34" x2="30.48" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="68.58" x2="66.04" y2="68.58" width="0.1524" layer="91"/>
-<junction x="30.48" y="53.34"/>
+<pinref part="U2" gate="A" pin="1"/>
 </segment>
 </net>
 <net name="+3.3V" class="0">
@@ -29961,6 +29877,20 @@ ripple current from motors</text>
 <wire x1="30.48" y1="104.14" x2="48.26" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="REF"/>
 <pinref part="SUPPLY9" gate="P" pin="+3.3V"/>
+</segment>
+</net>
+<net name="H1" class="0">
+<segment>
+<pinref part="J1" gate="A" pin="1"/>
+<wire x1="40.64" y1="53.34" x2="38.1" y2="53.34" width="0.1524" layer="91"/>
+<label x="38.1" y="53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="H3" class="0">
+<segment>
+<pinref part="J1" gate="A" pin="3"/>
+<wire x1="40.64" y1="48.26" x2="38.1" y2="48.26" width="0.1524" layer="91"/>
+<label x="38.1" y="48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -30919,7 +30849,6 @@ ripple current from motors</text>
 <part name="SUPPLY35" library="RoboJackets-Supplies" deviceset="+3.3V" device=""/>
 <part name="GND47" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY33" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
-<part name="J7" library="RoboJackets-Connectors" deviceset="436500217" device=""/>
 <part name="R13" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="330"/>
 <part name="D4" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" technology="-BLUE" value="BLUE"/>
 <part name="GND48" library="supply1" deviceset="GND" device=""/>
@@ -33712,9 +33641,6 @@ pins while connecting</text>
 <instance part="SUPPLY33" gate="+5V" x="55.88" y="12.7" smashed="yes">
 <attribute name="VALUE" x="53.975" y="15.875" size="1.778" layer="96"/>
 </instance>
-<instance part="J7" gate="A" x="203.2" y="81.28" smashed="yes">
-<attribute name="NAME" x="207.3656" y="86.5886" size="2.0828" layer="95" ratio="6" rot="SR0"/>
-</instance>
 </instances>
 <busses>
 </busses>
@@ -33758,7 +33684,6 @@ pins while connecting</text>
 <pinref part="GND61" gate="1" pin="GND"/>
 <wire x1="190.5" y1="78.74" x2="190.5" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="78.74" x2="203.2" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="J7" gate="A" pin="2"/>
 </segment>
 <segment>
 <pinref part="GND62" gate="1" pin="GND"/>
@@ -33900,7 +33825,6 @@ pins while connecting</text>
 <wire x1="190.5" y1="81.28" x2="190.5" y2="83.82" width="0.1524" layer="91"/>
 <label x="190.5" y="83.82" size="1.27" layer="95" font="vector" rot="R90" xref="yes"/>
 <wire x1="190.5" y1="81.28" x2="203.2" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="J7" gate="A" pin="1"/>
 </segment>
 </net>
 <net name="SCK-RADIO" class="0">
@@ -35709,8 +35633,6 @@ battery power</text>
 </sheets>
 <errors>
 <approved hash="102,5,218.44,73.66,V_OUT,+2.5V-PRE,,,,"/>
-<approved hash="104,3,55.88,71.12,IC1,VDD,+3.3V,,,"/>
-<approved hash="104,3,55.88,30.48,IC1,VSS,GND,,,"/>
 <approved hash="104,5,190.5,73.66,U7,V_IN,+3.3V,,,"/>
 <approved hash="104,2,350.52,144.78,X1,VDD,+3.3V,,,"/>
 <approved hash="104,1,91.44,167.64,KIT1,VIN,+5V,,,"/>
@@ -35719,9 +35641,6 @@ battery power</text>
 <approved hash="106,5,218.44,68.58,PWR-ERR,,,,,"/>
 <approved hash="106,5,96.52,99.06,SW,,,,,"/>
 <approved hash="106,5,96.52,45.72,SW1,,,,,"/>
-<approved hash="118,1@WHEEL_DRIVE,87.63,190.5,Net,+18.5V,,,,"/>
-<approved hash="118,1@WHEEL_DRIVE,49.53,116.84,Net,GND,,,,"/>
-<approved hash="118,1@WHEEL_DRIVE,26.67,53.34,Net,+5V,,,,"/>
 <approved hash="118,1@DRIBBLER_DRIVE,236.22,91.44,Net,+5V,,,,"/>
 </errors>
 </schematic>
