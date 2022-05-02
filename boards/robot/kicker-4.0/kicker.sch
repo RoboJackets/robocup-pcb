@@ -24066,7 +24066,7 @@ Vmon is adjusted to have the max typical voltage of around 4.0V with a protectio
 <pinref part="U4" gate="G$1" pin="V_IB"/>
 </segment>
 </net>
-<net name="!KICKER_SELECT_EXT" class="0">
+<net name="!CS_KICKER_EXT" class="0">
 <segment>
 <wire x1="25.4" y1="45.72" x2="27.94" y2="45.72" width="0.1524" layer="91"/>
 <label x="27.94" y="45.72" size="1.27" layer="95" xref="yes"/>
