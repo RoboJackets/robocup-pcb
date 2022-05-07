@@ -19016,9 +19016,10 @@ In this library you will find integrated circuits (ICs) that are directly involv
 <wire x1="-3.75" y1="-4.2" x2="-3.75" y2="-4.05" width="0.3" layer="21"/>
 <wire x1="3.75" y1="4.7" x2="3.75" y2="4.05" width="0.3" layer="21"/>
 <wire x1="3.75" y1="-4.05" x2="3.75" y2="-4.2" width="0.3" layer="21"/>
-<text x="-5.5" y="-4" size="1" layer="25" rot="R90">&gt;NAME</text>
+<text x="-5.5" y="-4" size="1" layer="25" font="vector" ratio="10" rot="R90">&gt;NAME</text>
 <wire x1="3.75" y1="-4.2" x2="3.75" y2="-4.7" width="0.3" layer="21"/>
 <wire x1="3.75" y1="-4.2" x2="-3.75" y2="-4.2" width="0.3" layer="21"/>
+<text x="6.5" y="-4" size="1" layer="27" font="vector" ratio="10" rot="R90">&gt;VALUE</text>
 </package>
 <package name="TSSOP-48_PAD">
 <smd name="1" x="-5.75" y="-3.75" dx="1.55" dy="0.3" layer="1" rot="R90"/>
@@ -19082,7 +19083,7 @@ In this library you will find integrated circuits (ICs) that are directly involv
 <smd name="1" x="-0.95" y="-1.306" dx="0.6" dy="1.2" layer="1"/>
 <smd name="2" x="0" y="-1.306" dx="0.6" dy="1.2" layer="1"/>
 <smd name="3" x="0.95" y="-1.306" dx="0.6" dy="1.2" layer="1"/>
-<text x="-1.5" y="2" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.5" y="2.4" size="1" layer="25" font="vector" ratio="10">&gt;NAME</text>
 <rectangle x1="-1.1875" y1="0.7126" x2="-0.7125" y2="1.5439" layer="51"/>
 <rectangle x1="0.7125" y1="0.7126" x2="1.1875" y2="1.5439" layer="51"/>
 <rectangle x1="-1.1875" y1="-1.5437" x2="-0.7125" y2="-0.7124" layer="51"/>
@@ -19092,18 +19093,11 @@ In this library you will find integrated circuits (ICs) that are directly involv
 <wire x1="-1.4" y1="-0.8" x2="-1.4" y2="0.8" width="0.2" layer="21"/>
 <circle x="-1" y="-0.25" radius="0.2" width="0" layer="21"/>
 <wire x1="-0.5" y1="0.9" x2="0.5" y2="0.9" width="0.2" layer="21"/>
-</package>
-<package name="SOT-223-5">
-<smd name="6" x="0" y="2.9" dx="3.3" dy="1.8" layer="1"/>
-<smd name="3" x="0" y="-3.2" dx="0.457" dy="1.6" layer="1"/>
-<smd name="4" x="1.27" y="-3.2" dx="0.457" dy="1.6" layer="1"/>
-<smd name="2" x="-1.27" y="-3.2" dx="0.457" dy="1.6" layer="1"/>
-<smd name="1" x="-2.54" y="-3.2" dx="0.457" dy="1.6" layer="1"/>
-<smd name="5" x="2.54" y="-3.2" dx="0.457" dy="1.6" layer="1"/>
-<wire x1="-3.25" y1="-1.75" x2="-3.25" y2="1.75" width="0.1" layer="21"/>
-<wire x1="3.25" y1="-1.75" x2="3.25" y2="1.75" width="0.1" layer="21"/>
-<wire x1="-3.25" y1="1.75" x2="3.25" y2="1.75" width="0.1" layer="21"/>
-<wire x1="-3.25" y1="-1.75" x2="3.25" y2="-1.75" width="0.1" layer="21"/>
+<text x="-1.5" y="-3.3" size="1" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+<wire x1="-1.8" y1="2.1" x2="1.8" y2="2.1" width="0.1524" layer="39"/>
+<wire x1="1.8" y1="2.1" x2="1.8" y2="-2.1" width="0.1524" layer="39"/>
+<wire x1="1.8" y1="-2.1" x2="-1.8" y2="-2.1" width="0.1524" layer="39"/>
+<wire x1="-1.8" y1="-2.1" x2="-1.8" y2="2.1" width="0.1524" layer="39"/>
 </package>
 <package name="MPM3620GQV-P">
 <smd name="3" x="-1.25" y="0.25" dx="1.1" dy="0.25" layer="1" rot="R180"/>
@@ -19123,8 +19117,8 @@ In this library you will find integrated circuits (ICs) that are directly involv
 <wire x1="-1.5" y1="2.5" x2="-1.5" y2="-2.5" width="0.2" layer="51"/>
 <wire x1="-1.5" y1="-2.5" x2="1.5" y2="-2.5" width="0.2" layer="51"/>
 <wire x1="1.5" y1="-2.5" x2="1.5" y2="2.5" width="0.2" layer="51"/>
-<text x="-1.5" y="3.25" size="1" layer="25">&gt;NAME</text>
-<text x="-1.5" y="-2.75" size="1" layer="27" align="top-left">&gt;VALUE</text>
+<text x="-1.5" y="3.25" size="1" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="-1.5" y="-3.131" size="1" layer="27" font="vector" ratio="10" align="top-left">&gt;VALUE</text>
 <smd name="456" x="-1" y="-1.25" dx="1.95" dy="0.6" layer="1" rot="R90" stop="no" cream="no"/>
 <polygon width="0" layer="1">
 <vertex x="-1.8" y="-2.225"/>
@@ -19211,6 +19205,10 @@ In this library you will find integrated circuits (ICs) that are directly involv
 <vertex x="1.3" y="-0.525"/>
 <vertex x="1.8" y="-0.525"/>
 </polygon>
+<wire x1="-2.032" y1="2.921" x2="2.032" y2="2.921" width="0.1524" layer="39"/>
+<wire x1="2.032" y1="2.921" x2="2.032" y2="-2.794" width="0.1524" layer="39"/>
+<wire x1="2.032" y1="-2.794" x2="-2.032" y2="-2.794" width="0.1524" layer="39"/>
+<wire x1="-2.032" y1="-2.794" x2="-2.032" y2="2.921" width="0.1524" layer="39"/>
 </package>
 <package name="ADP7158ARDZ-1.2-R7_ADI">
 <smd name="1" x="-2.72195" y="1.905" dx="1.4561" dy="0.558" layer="1"/>
@@ -19518,6 +19516,24 @@ In this library you will find integrated circuits (ICs) that are directly involv
 <text x="-1.7272" y="-4.445" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
 <text x="-2.0066" y="3.175" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Name</text>
 </package>
+<package name="SOT-223-5">
+<smd name="6" x="0" y="2.9" dx="3.3" dy="1.8" layer="1"/>
+<smd name="3" x="0" y="-3.2" dx="0.457" dy="1.6" layer="1"/>
+<smd name="4" x="1.27" y="-3.2" dx="0.457" dy="1.6" layer="1"/>
+<smd name="2" x="-1.27" y="-3.2" dx="0.457" dy="1.6" layer="1"/>
+<smd name="1" x="-2.54" y="-3.2" dx="0.457" dy="1.6" layer="1"/>
+<smd name="5" x="2.54" y="-3.2" dx="0.457" dy="1.6" layer="1"/>
+<wire x1="-3.25" y1="-1.75" x2="-3.25" y2="1.75" width="0.1" layer="21"/>
+<wire x1="3.25" y1="-1.75" x2="3.25" y2="1.75" width="0.1" layer="21"/>
+<wire x1="-3.25" y1="1.75" x2="3.25" y2="1.75" width="0.1" layer="21"/>
+<wire x1="-3.25" y1="-1.75" x2="3.25" y2="-1.75" width="0.1" layer="21"/>
+<text x="-2.421" y="4.153" size="1" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="-2.448" y="-4.45" size="1" layer="27" font="vector" ratio="10" align="top-left">&gt;VALUE</text>
+<wire x1="-3.556" y1="3.937" x2="3.556" y2="3.937" width="0.1524" layer="39"/>
+<wire x1="3.556" y1="3.937" x2="3.556" y2="-4.191" width="0.1524" layer="39"/>
+<wire x1="3.556" y1="-4.191" x2="-3.556" y2="-4.191" width="0.1524" layer="39"/>
+<wire x1="-3.556" y1="-4.191" x2="-3.556" y2="3.937" width="0.1524" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="VND5E006ASPTR-E">
@@ -19596,14 +19612,14 @@ In this library you will find integrated circuits (ICs) that are directly involv
 <wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="-7.62" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
-<text x="-12.7" y="10.16" size="1.778" layer="95" font="vector" align="top-left">&gt;NAME</text>
-<text x="-12.7" y="-10.16" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+<text x="-12.7" y="10.16" size="1.778" layer="95" align="top-left">&gt;NAME</text>
+<text x="-12.7" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="V_IN" x="-15.24" y="5.08" visible="pin" length="short" direction="pwr"/>
 <pin name="GND" x="-15.24" y="-5.08" visible="pin" length="short" direction="oc"/>
 <pin name="!SHDN" x="-15.24" y="0" visible="pin" length="short" direction="in"/>
-<pin name="PWRGD" x="12.7" y="0" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="P_GOOD" x="12.7" y="0" visible="pin" length="short" direction="out" rot="R180"/>
 <pin name="V_OUT" x="12.7" y="5.08" visible="pin" length="short" direction="sup" rot="R180"/>
-<text x="3.048" y="-5.842" size="1.778" layer="97" font="vector" ratio="20" align="bottom-center">&gt;VOLTAGE</text>
+<text x="2.032" y="-5.842" size="1.27" layer="97" ratio="20">&gt;VOLT</text>
 </symbol>
 <symbol name="MPM3620GQV-P">
 <pin name="IN" x="-15.24" y="10.16" length="middle"/>
@@ -19624,45 +19640,45 @@ In this library you will find integrated circuits (ICs) that are directly involv
 <text x="-10.16" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="ADP7158ARDZ-1.2-R7">
-<pin name="VOUT" x="2.54" y="0" length="middle" direction="pas"/>
-<pin name="VOUT_SENSE" x="2.54" y="-2.54" length="middle" direction="pas"/>
-<pin name="BYP" x="2.54" y="-5.08" length="middle" direction="pas"/>
-<pin name="EN" x="2.54" y="-7.62" length="middle" direction="pas"/>
-<pin name="REF_SENSE" x="63.5" y="-10.16" length="middle" direction="pas" rot="R180"/>
-<pin name="REF" x="63.5" y="-7.62" length="middle" direction="pas" rot="R180"/>
-<pin name="VREG" x="63.5" y="-5.08" length="middle" direction="pas" rot="R180"/>
-<pin name="VIN" x="63.5" y="-2.54" length="middle" direction="pas" rot="R180"/>
-<pin name="EPAD" x="63.5" y="0" length="middle" direction="pas" rot="R180"/>
-<wire x1="7.62" y1="5.08" x2="7.62" y2="-15.24" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="-15.24" x2="58.42" y2="-15.24" width="0.1524" layer="94"/>
-<wire x1="58.42" y1="-15.24" x2="58.42" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="58.42" y1="5.08" x2="7.62" y2="5.08" width="0.1524" layer="94"/>
-<text x="28.2956" y="9.1186" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
-<text x="27.6606" y="6.5786" size="2.0828" layer="96" ratio="6" rot="SR0">&gt;Value</text>
+<pin name="VOUT" x="-30.48" y="5.08" length="middle" direction="pas"/>
+<pin name="VOUT_SENSE" x="-30.48" y="2.54" length="middle" direction="pas"/>
+<pin name="BYP" x="-30.48" y="0" length="middle" direction="pas"/>
+<pin name="EN" x="-30.48" y="-2.54" length="middle" direction="pas"/>
+<pin name="REF_SENSE" x="30.48" y="-5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="REF" x="30.48" y="-2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="VREG" x="30.48" y="0" length="middle" direction="pas" rot="R180"/>
+<pin name="VIN" x="30.48" y="2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="EPAD" x="30.48" y="5.08" length="middle" direction="pas" rot="R180"/>
+<wire x1="-25.4" y1="10.16" x2="-25.4" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="-25.4" y1="-10.16" x2="25.4" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="25.4" y1="-10.16" x2="25.4" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="25.4" y1="10.16" x2="-25.4" y2="10.16" width="0.1524" layer="94"/>
+<text x="-4.7244" y="14.1986" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
+<text x="-5.3594" y="11.6586" size="2.0828" layer="96" ratio="6" rot="SR0">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
 <deviceset name="VND5E006ASPTR-E" prefix="U">
+<description>Power Switch/Driver 1:1 N-Channel 70A PowerSO-16™</description>
 <gates>
-<gate name="G$1" symbol="VND5E006ASPTR-E" x="0" y="0"/>
+<gate name="A" symbol="VND5E006ASPTR-E" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="POWERSO-16">
 <connects>
-<connect gate="G$1" pin="CS1" pad="10"/>
-<connect gate="G$1" pin="CS2" pad="15"/>
-<connect gate="G$1" pin="CS_DIS" pad="12"/>
-<connect gate="G$1" pin="GND" pad="13"/>
-<connect gate="G$1" pin="IN1" pad="9"/>
-<connect gate="G$1" pin="IN2" pad="16"/>
-<connect gate="G$1" pin="OUT1" pad="5 6 7 8"/>
-<connect gate="G$1" pin="OUT2" pad="1 2 3 4"/>
-<connect gate="G$1" pin="VCC" pad="17"/>
+<connect gate="A" pin="CS1" pad="10"/>
+<connect gate="A" pin="CS2" pad="15"/>
+<connect gate="A" pin="CS_DIS" pad="12"/>
+<connect gate="A" pin="GND" pad="13"/>
+<connect gate="A" pin="IN1" pad="9"/>
+<connect gate="A" pin="IN2" pad="16"/>
+<connect gate="A" pin="OUT1" pad="5 6 7 8"/>
+<connect gate="A" pin="OUT2" pad="1 2 3 4"/>
+<connect gate="A" pin="VCC" pad="17"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DIGIKEY" value="497-11623-1-ND" constant="no"/>
-<attribute name="MPN" value="VND5E006ASPTR-E" constant="no"/>
+<attribute name="DKPN" value="497-11623-1-ND"/>
 </technology>
 </technologies>
 </device>
@@ -19732,130 +19748,126 @@ In this library you will find integrated circuits (ICs) that are directly involv
 </devices>
 </deviceset>
 <deviceset name="MCP1824T*?" prefix="U">
+<description>Linear Voltage Regulator IC 1 Output 300mA</description>
 <gates>
-<gate name="G$1" symbol="MCP1824T" x="0" y="0"/>
+<gate name="A" symbol="MCP1824T" x="0" y="0"/>
 </gates>
 <devices>
 <device name="OT" package="SOT-23-5">
 <connects>
-<connect gate="G$1" pin="!SHDN" pad="3"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="PWRGD" pad="4"/>
-<connect gate="G$1" pin="V_IN" pad="1"/>
-<connect gate="G$1" pin="V_OUT" pad="5"/>
+<connect gate="A" pin="!SHDN" pad="3"/>
+<connect gate="A" pin="GND" pad="2"/>
+<connect gate="A" pin="P_GOOD" pad="4"/>
+<connect gate="A" pin="V_IN" pad="1"/>
+<connect gate="A" pin="V_OUT" pad="5"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DIGIKEY" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="VOLTAGE" value="" constant="no"/>
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="VOLT" value="" constant="no"/>
 </technology>
 <technology name="-1202E/">
-<attribute name="DIGIKEY" value="MCP1824T-1202E/OTCT-ND" constant="no"/>
-<attribute name="MPN" value="MCP1824T-1202E/OT" constant="no"/>
-<attribute name="VOLTAGE" value="1.2V"/>
+<attribute name="DKPN" value="MCP1824T-1202E/OTCT-ND"/>
+<attribute name="VOLT" value="1.2V"/>
 </technology>
 <technology name="-1802E/">
-<attribute name="DIGIKEY" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="VOLTAGE" value="1.8V"/>
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="VOLT" value="1.8V"/>
 </technology>
 <technology name="-2502E/">
-<attribute name="DIGIKEY" value="MCP1824T-2502E/OTCT-ND" constant="no"/>
-<attribute name="MPN" value="MCP1824T-2502E/OT" constant="no"/>
-<attribute name="VOLTAGE" value="2.5V"/>
+<attribute name="DKPN" value="MCP1824T-2502E/OTCT-ND"/>
+<attribute name="VOLT" value="2.5V"/>
 </technology>
 <technology name="-3002E/">
-<attribute name="DIGIKEY" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="VOLTAGE" value="3.0V"/>
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="VOLT" value="3.0V"/>
 </technology>
 <technology name="-3302E/">
-<attribute name="DIGIKEY" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="VOLTAGE" value="3.3V"/>
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="VOLT" value="3.3V"/>
 </technology>
 <technology name="-5002E/">
-<attribute name="DIGIKEY" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="VOLTAGE" value="5.0V"/>
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="VOLT" value="5.0V"/>
 </technology>
 <technology name="-ADJE/">
-<attribute name="DIGIKEY" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="VOLTAGE" value="0.8V~5.0V" constant="no"/>
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="VOLT" value="0.8V~5.0V" constant="no"/>
 </technology>
 </technologies>
 </device>
 <device name="DC" package="SOT-223-5">
 <connects>
-<connect gate="G$1" pin="!SHDN" pad="1"/>
-<connect gate="G$1" pin="GND" pad="3 6"/>
-<connect gate="G$1" pin="PWRGD" pad="4"/>
-<connect gate="G$1" pin="V_IN" pad="2"/>
-<connect gate="G$1" pin="V_OUT" pad="5"/>
+<connect gate="A" pin="!SHDN" pad="1"/>
+<connect gate="A" pin="GND" pad="3 6"/>
+<connect gate="A" pin="P_GOOD" pad="4"/>
+<connect gate="A" pin="V_IN" pad="2"/>
+<connect gate="A" pin="V_OUT" pad="5"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="CURRENT" value="0.3A"/>
-<attribute name="VOLTAGE" value="" constant="no"/>
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="VOLT" value="" constant="no"/>
 </technology>
 <technology name="-0802E/">
-<attribute name="CURRENT" value="0.3A"/>
-<attribute name="VOLTAGE" value="0.8V"/>
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="VOLT" value="0.8V"/>
 </technology>
 <technology name="-1202E/">
-<attribute name="CURRENT" value="0.3A"/>
-<attribute name="VOLTAGE" value="1.2V"/>
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="VOLT" value="1.2V"/>
 </technology>
 <technology name="-1802E/">
-<attribute name="CURRENT" value="0.3A"/>
-<attribute name="VOLTAGE" value="1.8V"/>
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="VOLT" value="1.8V"/>
 </technology>
 <technology name="-2502E/">
-<attribute name="CURRENT" value="0.3A"/>
-<attribute name="VOLTAGE" value="2.5V"/>
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="VOLT" value="2.5V"/>
 </technology>
 <technology name="-3002E/">
-<attribute name="CURRENT" value="0.3A"/>
-<attribute name="VOLTAGE" value="3.0V"/>
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="VOLT" value="3.0V"/>
 </technology>
 <technology name="-3302E/">
-<attribute name="CURRENT" value="0.3A"/>
-<attribute name="VOLTAGE" value="3.3V"/>
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="VOLT" value="3.3V"/>
 </technology>
 <technology name="-5002E/">
-<attribute name="CURRENT" value="0.3A"/>
-<attribute name="VOLTAGE" value="5.0V"/>
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="VOLT" value="5.0V"/>
 </technology>
 <technology name="-ADJE/">
-<attribute name="CURRENT" value="0.3A"/>
-<attribute name="VOLTAGE" value="0.8V~5.0V" constant="no"/>
+<attribute name="DKPN" value="" constant="no"/>
+<attribute name="VOLT" value="0.8V~5.0V" constant="no"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="MPM3620GQV-P" prefix="U">
+<description>Non-Isolated PoL Module DC DC Converter 1 Output 0.8 ~ 18.48V 2A 4.5V - 24V Input</description>
 <gates>
-<gate name="G$1" symbol="MPM3620GQV-P" x="0" y="0"/>
+<gate name="A" symbol="MPM3620GQV-P" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="MPM3620GQV-P">
 <connects>
-<connect gate="G$1" pin="AAM" pad="18"/>
-<connect gate="G$1" pin="AGND" pad="3"/>
-<connect gate="G$1" pin="BST" pad="11"/>
-<connect gate="G$1" pin="EN" pad="17"/>
-<connect gate="G$1" pin="FB" pad="1"/>
-<connect gate="G$1" pin="IN" pad="16"/>
-<connect gate="G$1" pin="OUT" pad="789"/>
-<connect gate="G$1" pin="PGND" pad="12 13 14"/>
-<connect gate="G$1" pin="SW" pad="456"/>
-<connect gate="G$1" pin="VCC" pad="2"/>
+<connect gate="A" pin="AAM" pad="18"/>
+<connect gate="A" pin="AGND" pad="3"/>
+<connect gate="A" pin="BST" pad="11"/>
+<connect gate="A" pin="EN" pad="17"/>
+<connect gate="A" pin="FB" pad="1"/>
+<connect gate="A" pin="IN" pad="16"/>
+<connect gate="A" pin="OUT" pad="789"/>
+<connect gate="A" pin="PGND" pad="12 13 14"/>
+<connect gate="A" pin="SW" pad="456"/>
+<connect gate="A" pin="VCC" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DKPN" value="1589-1252-1-ND" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -34084,7 +34096,7 @@ battery power</text>
 <attribute name="TEAM" x="173.99" y="34.29" size="3.048" layer="94" ratio="10" align="top-left"/>
 <attribute name="SCH_DESC" x="173.99" y="6.35" size="2.54" layer="94"/>
 </instance>
-<instance part="U5" gate="G$1" x="93.98" y="162.56" smashed="yes">
+<instance part="U5" gate="A" x="93.98" y="162.56" smashed="yes">
 <attribute name="VALUE" x="83.82" y="149.86" size="1.778" layer="96"/>
 <attribute name="NAME" x="83.82" y="175.26" size="1.778" layer="95" align="top-left"/>
 </instance>
@@ -34156,10 +34168,9 @@ battery power</text>
 <instance part="SUPPLY45" gate="+5V" x="144.78" y="101.6" smashed="yes">
 <attribute name="VALUE" x="142.875" y="104.775" size="1.778" layer="96"/>
 </instance>
-<instance part="U7" gate="G$1" x="205.74" y="68.58" smashed="yes">
+<instance part="U7" gate="A" x="205.74" y="68.58" smashed="yes">
 <attribute name="NAME" x="193.04" y="78.74" size="1.778" layer="95" font="vector" align="top-left"/>
 <attribute name="VALUE" x="193.04" y="58.42" size="1.778" layer="96" font="vector"/>
-<attribute name="VOLTAGE" x="208.788" y="62.738" size="1.778" layer="97" font="vector" ratio="20" align="bottom-center"/>
 </instance>
 <instance part="GND85" gate="1" x="187.96" y="58.42" smashed="yes">
 <attribute name="VALUE" x="185.42" y="55.88" size="1.778" layer="96"/>
@@ -34192,7 +34203,7 @@ battery power</text>
 <attribute name="NAME" x="132.08" y="165.1" size="1.778" layer="95"/>
 <attribute name="VALUE" x="132.08" y="160.02" size="1.778" layer="96" align="top-left"/>
 </instance>
-<instance part="U3" gate="G$1" x="81.28" y="93.98" smashed="yes">
+<instance part="U3" gate="A" x="81.28" y="93.98" smashed="yes">
 <attribute name="NAME" x="71.12" y="109.22" size="1.778" layer="95" align="top-left"/>
 <attribute name="VALUE" x="71.12" y="78.74" size="1.778" layer="96"/>
 <attribute name="DIGIKEY" x="81.28" y="93.98" size="1.778" layer="96" display="off"/>
@@ -34263,7 +34274,7 @@ battery power</text>
 <attribute name="NAME" x="151.13" y="42.1386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="151.13" y="37.338" size="1.778" layer="96"/>
 </instance>
-<instance part="U4" gate="G$1" x="81.28" y="40.64" smashed="yes">
+<instance part="U4" gate="A" x="81.28" y="40.64" smashed="yes">
 <attribute name="NAME" x="71.12" y="55.88" size="1.778" layer="95" align="top-left"/>
 <attribute name="VALUE" x="71.12" y="25.4" size="1.778" layer="96"/>
 <attribute name="DIGIKEY" x="81.28" y="40.64" size="1.778" layer="96" display="off"/>
@@ -34327,8 +34338,8 @@ battery power</text>
 <attribute name="NAME" x="58.42" y="170.18" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="58.42" y="175.26" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="U6" gate="A" x="182.88" y="127" smashed="yes">
-<attribute name="NAME" x="213.7156" y="133.5786" size="2.0828" layer="95" ratio="6" rot="SR0"/>
+<instance part="U6" gate="A" x="215.9" y="121.92" smashed="yes">
+<attribute name="NAME" x="246.7356" y="128.4986" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 </instance>
 <instance part="SUPPLY4" gate="P" x="261.62" y="127" smashed="yes">
 <attribute name="VALUE" x="259.715" y="130.175" size="1.778" layer="96"/>
@@ -34397,7 +34408,7 @@ battery power</text>
 <wire x1="76.2" y1="142.24" x2="76.2" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U5" gate="G$1" pin="GND"/>
+<pinref part="U5" gate="A" pin="GND"/>
 <pinref part="GND78" gate="1" pin="GND"/>
 <wire x1="109.22" y1="154.94" x2="111.76" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="154.94" x2="111.76" y2="152.4" width="0.1524" layer="91"/>
@@ -34421,11 +34432,11 @@ battery power</text>
 <segment>
 <pinref part="GND72" gate="1" pin="GND"/>
 <wire x1="60.96" y1="83.82" x2="60.96" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="PGND"/>
+<pinref part="U3" gate="A" pin="PGND"/>
 <wire x1="66.04" y1="86.36" x2="60.96" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="86.36" x2="60.96" y2="83.82" width="0.1524" layer="91"/>
 <junction x="60.96" y="83.82"/>
-<pinref part="U3" gate="G$1" pin="AGND"/>
+<pinref part="U3" gate="A" pin="AGND"/>
 <wire x1="60.96" y1="83.82" x2="66.04" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -34435,7 +34446,7 @@ battery power</text>
 </segment>
 <segment>
 <pinref part="GND85" gate="1" pin="GND"/>
-<pinref part="U7" gate="G$1" pin="GND"/>
+<pinref part="U7" gate="A" pin="GND"/>
 <wire x1="187.96" y1="60.96" x2="187.96" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="63.5" x2="190.5" y2="63.5" width="0.1524" layer="91"/>
 </segment>
@@ -34466,11 +34477,11 @@ battery power</text>
 <segment>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="60.96" y1="30.48" x2="60.96" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="U4" gate="G$1" pin="PGND"/>
+<pinref part="U4" gate="A" pin="PGND"/>
 <wire x1="66.04" y1="33.02" x2="60.96" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="33.02" x2="60.96" y2="30.48" width="0.1524" layer="91"/>
 <junction x="60.96" y="30.48"/>
-<pinref part="U4" gate="G$1" pin="AGND"/>
+<pinref part="U4" gate="A" pin="AGND"/>
 <wire x1="60.96" y1="30.48" x2="66.04" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -34534,10 +34545,10 @@ battery power</text>
 </net>
 <net name="VBATT" class="0">
 <segment>
-<pinref part="U5" gate="G$1" pin="OUT1"/>
+<pinref part="U5" gate="A" pin="OUT1"/>
 <wire x1="109.22" y1="165.1" x2="111.76" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="165.1" x2="111.76" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="U5" gate="G$1" pin="OUT2"/>
+<pinref part="U5" gate="A" pin="OUT2"/>
 <wire x1="111.76" y1="162.56" x2="111.76" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="160.02" x2="109.22" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="XF1" gate="G$1" pin="1"/>
@@ -34556,7 +34567,7 @@ battery power</text>
 <label x="25.4" y="187.96" size="1.27" layer="95" font="vector" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U5" gate="G$1" pin="VCC"/>
+<pinref part="U5" gate="A" pin="VCC"/>
 <wire x1="109.22" y1="170.18" x2="111.76" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="170.18" x2="111.76" y2="172.72" width="0.1524" layer="91"/>
 <label x="111.76" y="172.72" size="1.27" layer="95" font="vector" rot="R90" xref="yes"/>
@@ -34569,7 +34580,7 @@ battery power</text>
 </net>
 <net name="CS2" class="0">
 <segment>
-<pinref part="U5" gate="G$1" pin="CS2"/>
+<pinref part="U5" gate="A" pin="CS2"/>
 <pinref part="R24" gate="G$1" pin="2"/>
 <wire x1="78.74" y1="154.94" x2="76.2" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="154.94" x2="76.2" y2="152.4" width="0.1524" layer="91"/>
@@ -34577,7 +34588,7 @@ battery power</text>
 </net>
 <net name="CS1" class="0">
 <segment>
-<pinref part="U5" gate="G$1" pin="CS1"/>
+<pinref part="U5" gate="A" pin="CS1"/>
 <pinref part="R23" gate="G$1" pin="2"/>
 <wire x1="78.74" y1="157.48" x2="68.58" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="157.48" x2="68.58" y2="152.4" width="0.1524" layer="91"/>
@@ -34585,7 +34596,7 @@ battery power</text>
 </net>
 <net name="CS-DIS" class="0">
 <segment>
-<pinref part="U5" gate="G$1" pin="CS_DIS"/>
+<pinref part="U5" gate="A" pin="CS_DIS"/>
 <pinref part="R22" gate="G$1" pin="2"/>
 <wire x1="78.74" y1="162.56" x2="60.96" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="162.56" x2="60.96" y2="152.4" width="0.1524" layer="91"/>
@@ -34606,7 +34617,7 @@ battery power</text>
 <pinref part="C32" gate="G$1" pin="1"/>
 <wire x1="22.86" y1="93.98" x2="22.86" y2="104.14" width="0.1524" layer="91"/>
 <junction x="22.86" y="104.14"/>
-<pinref part="U3" gate="G$1" pin="IN"/>
+<pinref part="U3" gate="A" pin="IN"/>
 <pinref part="SUPPLY41" gate="G$1" pin="+18.5V"/>
 </segment>
 <segment>
@@ -34614,7 +34625,7 @@ battery power</text>
 <pinref part="C30" gate="G$1" pin="1"/>
 <wire x1="22.86" y1="40.64" x2="22.86" y2="50.8" width="0.1524" layer="91"/>
 <junction x="22.86" y="50.8"/>
-<pinref part="U4" gate="G$1" pin="IN"/>
+<pinref part="U4" gate="A" pin="IN"/>
 <pinref part="SUPPLY43" gate="G$1" pin="+18.5V"/>
 </segment>
 </net>
@@ -34638,9 +34649,9 @@ battery power</text>
 </net>
 <net name="EN-PWR" class="0">
 <segment>
-<pinref part="U5" gate="G$1" pin="IN1"/>
+<pinref part="U5" gate="A" pin="IN1"/>
 <wire x1="58.42" y1="170.18" x2="66.04" y2="170.18" width="0.1524" layer="91"/>
-<pinref part="U5" gate="G$1" pin="IN2"/>
+<pinref part="U5" gate="A" pin="IN2"/>
 <wire x1="66.04" y1="170.18" x2="76.2" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="170.18" x2="78.74" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="167.64" x2="76.2" y2="167.64" width="0.1524" layer="91"/>
@@ -34666,7 +34677,7 @@ battery power</text>
 </net>
 <net name="+5V-FUSE" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="OUT"/>
+<pinref part="U3" gate="A" pin="OUT"/>
 <wire x1="96.52" y1="93.98" x2="104.14" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="93.98" x2="116.84" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="93.98" x2="124.46" y2="93.98" width="0.1524" layer="91"/>
@@ -34681,10 +34692,10 @@ battery power</text>
 <net name="+3.3V" class="0">
 <segment>
 <pinref part="SUPPLY48" gate="P" pin="+3.3V"/>
-<pinref part="U7" gate="G$1" pin="V_IN"/>
+<pinref part="U7" gate="A" pin="V_IN"/>
 <wire x1="187.96" y1="76.2" x2="187.96" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="73.66" x2="190.5" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="U7" gate="G$1" pin="!SHDN"/>
+<pinref part="U7" gate="A" pin="!SHDN"/>
 <wire x1="187.96" y1="73.66" x2="187.96" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="68.58" x2="190.5" y2="68.58" width="0.1524" layer="91"/>
 <junction x="187.96" y="73.66"/>
@@ -34712,14 +34723,14 @@ battery power</text>
 </net>
 <net name="PWR-ERR" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="PWRGD"/>
+<pinref part="U7" gate="A" pin="P_GOOD"/>
 <wire x1="218.44" y1="68.58" x2="238.76" y2="68.58" width="0.1524" layer="91"/>
 <label x="238.76" y="68.58" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="+2.5V-PRE" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="V_OUT"/>
+<pinref part="U7" gate="A" pin="V_OUT"/>
 <wire x1="218.44" y1="73.66" x2="223.52" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="C28" gate="G$1" pin="1"/>
 <wire x1="223.52" y1="66.04" x2="223.52" y2="73.66" width="0.1524" layer="91"/>
@@ -34736,7 +34747,7 @@ battery power</text>
 </net>
 <net name="AAM" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="AAM"/>
+<pinref part="U3" gate="A" pin="AAM"/>
 <wire x1="66.04" y1="91.44" x2="45.72" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="91.44" x2="45.72" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="R19" gate="G$1" pin="2"/>
@@ -34744,7 +34755,7 @@ battery power</text>
 </net>
 <net name="EN" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="EN"/>
+<pinref part="U3" gate="A" pin="EN"/>
 <wire x1="66.04" y1="96.52" x2="53.34" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="R18" gate="G$1" pin="2"/>
 <pinref part="C31" gate="G$1" pin="1"/>
@@ -34755,7 +34766,7 @@ battery power</text>
 </net>
 <net name="FB" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="FB"/>
+<pinref part="U3" gate="A" pin="FB"/>
 <wire x1="96.52" y1="83.82" x2="104.14" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="83.82" x2="104.14" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="R26" gate="G$1" pin="2"/>
@@ -34765,7 +34776,7 @@ battery power</text>
 </net>
 <net name="SW" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="SW"/>
+<pinref part="U3" gate="A" pin="SW"/>
 <wire x1="96.52" y1="99.06" x2="99.06" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -34796,7 +34807,7 @@ battery power</text>
 </net>
 <net name="+3.3V-FUSE" class="0">
 <segment>
-<pinref part="U4" gate="G$1" pin="OUT"/>
+<pinref part="U4" gate="A" pin="OUT"/>
 <wire x1="96.52" y1="40.64" x2="104.14" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="40.64" x2="116.84" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="40.64" x2="124.46" y2="40.64" width="0.1524" layer="91"/>
@@ -34817,7 +34828,7 @@ battery power</text>
 </net>
 <net name="AAM1" class="0">
 <segment>
-<pinref part="U4" gate="G$1" pin="AAM"/>
+<pinref part="U4" gate="A" pin="AAM"/>
 <wire x1="66.04" y1="38.1" x2="53.34" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="38.1" x2="53.34" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="R20" gate="G$1" pin="2"/>
@@ -34825,14 +34836,14 @@ battery power</text>
 </net>
 <net name="EN1" class="0">
 <segment>
-<pinref part="U4" gate="G$1" pin="EN"/>
+<pinref part="U4" gate="A" pin="EN"/>
 <wire x1="66.04" y1="43.18" x2="60.96" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="R21" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="FB1" class="0">
 <segment>
-<pinref part="U4" gate="G$1" pin="FB"/>
+<pinref part="U4" gate="A" pin="FB"/>
 <wire x1="96.52" y1="30.48" x2="104.14" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="30.48" x2="104.14" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="R28" gate="G$1" pin="2"/>
@@ -34842,7 +34853,7 @@ battery power</text>
 </net>
 <net name="SW1" class="0">
 <segment>
-<pinref part="U4" gate="G$1" pin="SW"/>
+<pinref part="U4" gate="A" pin="SW"/>
 <wire x1="96.52" y1="45.72" x2="99.06" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -34858,14 +34869,14 @@ battery power</text>
 <pinref part="U6" gate="A" pin="VOUT_SENSE"/>
 <pinref part="U6" gate="A" pin="VOUT"/>
 <wire x1="185.42" y1="124.46" x2="185.42" y2="127" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="127" x2="185.42" y2="132.08" width="0.1524" layer="91"/>
 <junction x="185.42" y="127"/>
 <pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="185.42" y1="132.08" x2="177.8" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="132.08" x2="177.8" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="132.08" x2="177.8" y2="134.62" width="0.1524" layer="91"/>
 <junction x="177.8" y="132.08"/>
 <pinref part="R12" gate="G$1" pin="1"/>
+<wire x1="177.8" y1="132.08" x2="185.42" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="132.08" x2="185.42" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BYP" class="0">
