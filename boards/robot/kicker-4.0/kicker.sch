@@ -24693,6 +24693,11 @@ Vmon is adjusted to have the max typical voltage of around 4.0V with a protectio
 <pinref part="SUPPLY92" gate="+5V" pin="+5V"/>
 <wire x1="195.58" y1="96.52" x2="195.58" y2="101.6" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<wire x1="91.44" y1="187.96" x2="106.68" y2="187.96" width="0.1524" layer="91"/>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="91.44" y1="187.96" x2="91.44" y2="185.42" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$20" class="0">
 <segment>
@@ -24920,13 +24925,6 @@ Vmon is adjusted to have the max typical voltage of around 4.0V with a protectio
 <pinref part="Q10" gate="G$1" pin="S"/>
 <wire x1="91.44" y1="142.24" x2="91.44" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="139.7" x2="106.68" y2="139.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="+5V1" class="0">
-<segment>
-<wire x1="91.44" y1="187.96" x2="106.68" y2="187.96" width="0.1524" layer="91"/>
-<pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="91.44" y1="187.96" x2="91.44" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FAULT_INV_BR1" class="0">
