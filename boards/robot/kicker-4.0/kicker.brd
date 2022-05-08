@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -189,9 +189,13 @@
 <plain>
 <wire x1="-26" y1="20" x2="26" y2="20" width="0" layer="20"/>
 <wire x1="26" y1="20" x2="27" y2="19" width="0" layer="20"/>
-<wire x1="27" y1="19" x2="27" y2="-56.5" width="0" layer="20"/>
+<wire x1="46.9" y1="-68.6" x2="36.6" y2="-68.6" width="0" layer="20"/>
+<wire x1="36.6" y1="-68.6" x2="27" y2="-59" width="0" layer="20"/>
+<wire x1="27" y1="-59" x2="27" y2="19" width="0" layer="20"/>
 <wire x1="-26" y1="20" x2="-27" y2="19" width="0" layer="20"/>
-<wire x1="-27" y1="19" x2="-27" y2="-56.5" width="0" layer="20"/>
+<wire x1="-46.9" y1="-68.6" x2="-36.6" y2="-68.6" width="0" layer="20"/>
+<wire x1="-36.6" y1="-68.6" x2="-27" y2="-59" width="0" layer="20"/>
+<wire x1="-27" y1="-59" x2="-27" y2="19" width="0" layer="20"/>
 <wire x1="70.5" y1="-45" x2="70.5" y2="46.5857875" width="0" layer="20"/>
 <wire x1="70.5" y1="46.5857875" x2="70.20710625" y2="47.29289375" width="0" layer="20" curve="45"/>
 <wire x1="70.20710625" y1="47.29289375" x2="62" y2="55.5" width="0" layer="20"/>
@@ -263,11 +267,7 @@ DSCHG</text>
 <wire x1="-5.1" y1="59.9" x2="6.2" y2="59.9" width="0.2" layer="21"/>
 <wire x1="6.2" y1="59.9" x2="6.2" y2="65.9" width="0.2" layer="21"/>
 <wire x1="-70.5" y1="-45" x2="-46.9" y2="-68.6" width="0" layer="20"/>
-<wire x1="-46.9" y1="-68.6" x2="-39.1" y2="-68.6" width="0" layer="20"/>
-<wire x1="-39.1" y1="-68.6" x2="-27" y2="-56.5" width="0" layer="20"/>
 <wire x1="70.5" y1="-45" x2="46.9" y2="-68.6" width="0" layer="20"/>
-<wire x1="46.9" y1="-68.6" x2="39.1" y2="-68.6" width="0" layer="20"/>
-<wire x1="39.1" y1="-68.6" x2="27" y2="-56.5" width="0" layer="20"/>
 <text x="41.6" y="-30" size="1.778" layer="22" font="vector" ratio="15" rot="SMR90" align="top-left"></text>
 <rectangle x1="39.2" y1="-5" x2="44.2" y2="0.5" layer="21"/>
 <wire x1="40.2" y1="47.4" x2="40.2" y2="52.6" width="0.1524" layer="21"/>
@@ -16278,25 +16278,25 @@ Your Eurocircuits Team
 <element name="D21" library="RoboJackets-Diodes" package="RESM5226X262" value="SMA6J18A" x="16.4" y="65" smashed="yes" rot="MR90">
 <attribute name="NAME" x="13.68" y="66.25" size="1" layer="26" font="vector" ratio="15" rot="MR270" align="top-left"/>
 </element>
-<element name="C35" library="rcl" library_urn="urn:adsk.eagle:library:334" package="EB25D" package3d_urn="urn:adsk.eagle:package:23399/1" value="820uF" x="43" y="-59.5" smashed="yes">
-<attribute name="NAME" x="42.1774" y="-46.35" size="1" layer="25" font="vector" ratio="15"/>
-<attribute name="POPULARITY" value="0" x="43" y="-59.5" size="1" layer="27" font="vector" ratio="15" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="43" y="-59.5" size="1" layer="27" font="vector" ratio="15" display="off"/>
+<element name="C35" library="rcl" library_urn="urn:adsk.eagle:library:334" package="EB25D" package3d_urn="urn:adsk.eagle:package:23399/1" value="820uF" x="40" y="-62.6" smashed="yes">
+<attribute name="NAME" x="39.1774" y="-49.45" size="1" layer="25" font="vector" ratio="15"/>
+<attribute name="POPULARITY" value="0" x="40" y="-62.6" size="1" layer="27" font="vector" ratio="15" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="40" y="-62.6" size="1" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="C33" library="rcl" library_urn="urn:adsk.eagle:library:334" package="EB25D" package3d_urn="urn:adsk.eagle:package:23399/1" value="820uF" x="61" y="-41" smashed="yes" rot="R270">
-<attribute name="NAME" x="47.6774" y="-41.975" size="1" layer="25" font="vector" ratio="15" rot="R90"/>
-<attribute name="POPULARITY" value="0" x="61" y="-41" size="1" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="61" y="-41" size="1" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
+<element name="C33" library="rcl" library_urn="urn:adsk.eagle:library:334" package="EB25D" package3d_urn="urn:adsk.eagle:package:23399/1" value="820uF" x="62" y="-41" smashed="yes" rot="R270">
+<attribute name="NAME" x="48.6774" y="-41.975" size="1" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="POPULARITY" value="0" x="62" y="-41" size="1" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="62" y="-41" size="1" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
 </element>
-<element name="C34" library="rcl" library_urn="urn:adsk.eagle:library:334" package="EB25D" package3d_urn="urn:adsk.eagle:package:23399/1" value="820uF" x="-43" y="-59.5" smashed="yes" rot="R180">
-<attribute name="NAME" x="-41.5524" y="-45.275" size="1" layer="25" font="vector" ratio="15" rot="R180"/>
-<attribute name="POPULARITY" value="0" x="-43" y="-59.5" size="1" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="-43" y="-59.5" size="1" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
+<element name="C34" library="rcl" library_urn="urn:adsk.eagle:library:334" package="EB25D" package3d_urn="urn:adsk.eagle:package:23399/1" value="820uF" x="-40" y="-62.5" smashed="yes" rot="R180">
+<attribute name="NAME" x="-38.5524" y="-48.275" size="1" layer="25" font="vector" ratio="15" rot="R180"/>
+<attribute name="POPULARITY" value="0" x="-40" y="-62.5" size="1" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="-40" y="-62.5" size="1" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
 </element>
-<element name="C32" library="rcl" library_urn="urn:adsk.eagle:library:334" package="EB25D" package3d_urn="urn:adsk.eagle:package:23399/1" value="820uF" x="-61" y="-41" smashed="yes" rot="R270">
-<attribute name="NAME" x="-46.775" y="-42.0726" size="1" layer="25" font="vector" ratio="15" rot="R90"/>
-<attribute name="POPULARITY" value="0" x="-61" y="-41" size="1" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="-61" y="-41" size="1" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
+<element name="C32" library="rcl" library_urn="urn:adsk.eagle:library:334" package="EB25D" package3d_urn="urn:adsk.eagle:package:23399/1" value="820uF" x="-62" y="-41" smashed="yes" rot="R270">
+<attribute name="NAME" x="-47.775" y="-42.0726" size="1" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="POPULARITY" value="0" x="-62" y="-41" size="1" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="-62" y="-41" size="1" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
 </element>
 <element name="R48" library="RoboJackets-Resistors" package="TO508P1539X450-3" value="1.0k 3.5W" x="-1" y="46.5" smashed="yes" rot="MR0">
 <attribute name="DIGIKEY" value="PWR263S-35-1501F" x="-1" y="46.5" size="1" layer="28" font="vector" ratio="15" rot="MR0" display="off"/>
@@ -16796,21 +16796,19 @@ Your Eurocircuits Team
 <vertex x="27.7" y="55.9"/>
 <vertex x="36.2" y="47.4"/>
 <vertex x="36.2" y="-32.8"/>
-<vertex x="50.280953125" y="-32.8"/>
-<vertex x="62" y="-43.5"/>
-<vertex x="63.5" y="-45"/>
-<vertex x="63.5" y="-47"/>
-<vertex x="49" y="-62"/>
-<vertex x="47" y="-62"/>
-<vertex x="35" y="-50.5"/>
-<vertex x="27" y="-43.388890625"/>
+<vertex x="51.280953125" y="-32.8"/>
+<vertex x="64.9783625" y="-45.30633125"/>
+<vertex x="65.042728125" y="-47.369590625"/>
+<vertex x="48.03765" y="-64.961053125"/>
+<vertex x="44.451175" y="-65.0296"/>
+<vertex x="27" y="-48.30555625"/>
 <vertex x="27" y="18.73"/>
 <vertex x="-27" y="18.73"/>
-<vertex x="-27" y="-42.5"/>
-<vertex x="-47" y="-62.5"/>
-<vertex x="-49" y="-62.5"/>
-<vertex x="-63.5" y="-47"/>
-<vertex x="-63.5" y="-45"/>
+<vertex x="-27" y="-48.5"/>
+<vertex x="-45" y="-66.5"/>
+<vertex x="-46.525809375" y="-66.5"/>
+<vertex x="-64.1" y="-47.71379375"/>
+<vertex x="-64.1" y="-45.6"/>
 <vertex x="-51.7" y="-33.2"/>
 <vertex x="-36" y="-33.2"/>
 <vertex x="-36" y="42"/>
@@ -17590,12 +17588,12 @@ Your Eurocircuits Team
 <vertex x="-27" y="-33.2"/>
 <vertex x="-27" y="18.73"/>
 <vertex x="27" y="18.73"/>
-<vertex x="27" y="-53.5"/>
-<vertex x="36.5" y="-63"/>
-<vertex x="39.02" y="-63"/>
-<vertex x="63.5" y="-37.5"/>
-<vertex x="63.5" y="-34.5"/>
-<vertex x="61.8" y="-32.8"/>
+<vertex x="27" y="-57.5"/>
+<vertex x="34.5" y="-65"/>
+<vertex x="39.02" y="-65"/>
+<vertex x="64.0098875" y="-38.96886875"/>
+<vertex x="63.979384375" y="-35.979384375"/>
+<vertex x="60.8" y="-32.8"/>
 <vertex x="36.2" y="-32.8"/>
 <vertex x="36.2" y="42"/>
 <vertex x="35.7" y="42.5"/>
@@ -17619,14 +17617,13 @@ Your Eurocircuits Team
 <vertex x="-18.5" y="43.5"/>
 </polygon>
 <polygon width="0.2" layer="1" thermals="no">
-<vertex x="-63.5" y="-34.5"/>
-<vertex x="-62.2" y="-33.2"/>
+<vertex x="-64.6" y="-35.3"/>
+<vertex x="-62.5" y="-33.2"/>
 <vertex x="-27.5" y="-33.2"/>
-<vertex x="-27.5" y="-53.5"/>
-<vertex x="-36.5" y="-62.5"/>
-<vertex x="-39.5" y="-62.5"/>
-<vertex x="-62" y="-39"/>
-<vertex x="-63.5" y="-37.5"/>
+<vertex x="-27.5" y="-58.8"/>
+<vertex x="-34.2" y="-65.5"/>
+<vertex x="-36.738296875" y="-65.5"/>
+<vertex x="-64.6" y="-36.4"/>
 </polygon>
 <polygon width="0.1524" layer="16" thermals="no">
 <vertex x="2.5" y="46.6"/>
@@ -17645,8 +17642,6 @@ Your Eurocircuits Team
 <via x="6.5" y="42.5" extent="1-16" drill="0.35"/>
 <contactref element="R45" pad="2"/>
 <wire x1="-4.75" y1="52.1409" x2="-4.75" y2="54.3" width="0.2" layer="16"/>
-<wire x1="61" y1="-26.05" x2="60.95" y2="-26" width="0.2" layer="1"/>
-<wire x1="61" y1="-26.05" x2="61" y2="-35.92" width="0.2" layer="1"/>
 <contactref element="R36" pad="1"/>
 <contactref element="R48" pad="2"/>
 <contactref element="R49" pad="1"/>
@@ -17661,11 +17656,6 @@ Your Eurocircuits Team
 <wire x1="5" y1="53" x2="-3.75" y2="53" width="0.2" layer="1"/>
 <contactref element="J5" pad="1"/>
 <contactref element="J4" pad="1"/>
-<wire x1="-60.92" y1="-36" x2="-38" y2="-36" width="0.2" layer="1"/>
-<wire x1="-60.92" y1="-36" x2="-61" y2="-35.92" width="0.2" layer="1"/>
-<wire x1="-35" y1="-18" x2="-38.85" y2="-18" width="0.2" layer="1"/>
-<wire x1="-38" y1="-36" x2="-35" y2="-33" width="0.2" layer="1"/>
-<wire x1="-35" y1="-33" x2="-35" y2="-18" width="0.2" layer="1"/>
 <contactref element="R57" pad="2"/>
 <wire x1="-38.925" y1="-18.075" x2="-38.85" y2="-18" width="0.2" layer="1"/>
 <via x="-46" y="-26.5" extent="1-16" drill="0.75" diameter="0.75"/>
@@ -17674,6 +17664,14 @@ Your Eurocircuits Team
 <wire x1="-41.5" y1="-26.5" x2="-38.925" y2="-23.925" width="0.2" layer="1"/>
 <wire x1="-46" y1="-26.5" x2="-42.93" y2="-23.43" width="0.3" layer="1"/>
 <wire x1="-42.93" y1="-23.43" x2="-41.4" y2="-23.43" width="0.3" layer="1"/>
+<wire x1="60.95" y1="-26" x2="60.95" y2="-34.87" width="0.1524" layer="1"/>
+<wire x1="60.95" y1="-34.87" x2="62" y2="-35.92" width="0.1524" layer="1"/>
+<wire x1="-62" y1="-35.92" x2="-40.34805625" y2="-35.92" width="0.1524" layer="1"/>
+<wire x1="-40.34805625" y1="-35.92" x2="-36.6688" y2="-32.24074375" width="0.1524" layer="1"/>
+<wire x1="-36.6688" y1="-18.75925625" x2="-37.00925625" y2="-18.4188" width="0.1524" layer="1"/>
+<wire x1="-38.5812" y1="-18.4188" x2="-38.925" y2="-18.075" width="0.1524" layer="1"/>
+<wire x1="-37.00925625" y1="-18.4188" x2="-38.5812" y2="-18.4188" width="0.1524" layer="1"/>
+<wire x1="-36.6688" y1="-32.24074375" x2="-36.6688" y2="-18.75925625" width="0.1524" layer="1"/>
 </signal>
 <signal name="VSN">
 <contactref element="Q7" pad="2"/>
