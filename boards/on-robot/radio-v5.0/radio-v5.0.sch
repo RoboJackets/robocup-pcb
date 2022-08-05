@@ -726,12 +726,66 @@ voltage regulator if the board is
 <wire x1="81.28" y1="215.9" x2="76.2" y2="215.9" width="0.1524" layer="91" style="longdash"/>
 <label x="76.2" y="215.9" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="JP2" gate="A" pin="8"/>
+<wire x1="142.24" y1="218.44" x2="137.16" y2="218.44" width="0.1524" layer="91"/>
+<label x="137.16" y="218.44" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="VIN" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="10"/>
 <wire x1="81.28" y1="213.36" x2="76.2" y2="213.36" width="0.1524" layer="91" style="longdash"/>
 <label x="76.2" y="213.36" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="PB1" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="1"/>
+<wire x1="142.24" y1="236.22" x2="137.16" y2="236.22" width="0.1524" layer="91"/>
+<label x="137.16" y="236.22" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="PB2" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="2"/>
+<wire x1="142.24" y1="233.68" x2="137.16" y2="233.68" width="0.1524" layer="91"/>
+<label x="137.16" y="233.68" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="PA12" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="3"/>
+<wire x1="142.24" y1="231.14" x2="137.16" y2="231.14" width="0.1524" layer="91"/>
+<label x="137.16" y="231.14" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="PA30" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="4"/>
+<wire x1="142.24" y1="228.6" x2="137.16" y2="228.6" width="0.1524" layer="91"/>
+<label x="137.16" y="228.6" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="PA14" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="5"/>
+<wire x1="142.24" y1="226.06" x2="137.16" y2="226.06" width="0.1524" layer="91"/>
+<label x="137.16" y="226.06" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="PA7" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="6"/>
+<wire x1="142.24" y1="223.52" x2="137.16" y2="223.52" width="0.1524" layer="91"/>
+<label x="137.16" y="223.52" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="PA25" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="7"/>
+<wire x1="142.24" y1="220.98" x2="137.16" y2="220.98" width="0.1524" layer="91"/>
+<label x="137.16" y="220.98" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>

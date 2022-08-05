@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -54,7 +54,7 @@
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -103,6 +103,26 @@
 actual pad dimension on the part 
 for ease of soldering (twice as long)</text>
 </package>
+<package name="MS0P10">
+<smd name="1" x="0" y="0" dx="0.99" dy="0.25" layer="1"/>
+<smd name="10" x="3.61" y="0" dx="0.99" dy="0.25" layer="1"/>
+<smd name="2" x="0" y="-0.5" dx="0.99" dy="0.25" layer="1"/>
+<smd name="4" x="0" y="-1.5" dx="0.99" dy="0.25" layer="1"/>
+<smd name="3" x="0" y="-1" dx="0.99" dy="0.25" layer="1"/>
+<smd name="5" x="0" y="-2" dx="0.99" dy="0.25" layer="1"/>
+<smd name="9" x="3.61" y="-0.5" dx="0.99" dy="0.25" layer="1"/>
+<smd name="7" x="3.61" y="-1.5" dx="0.99" dy="0.25" layer="1"/>
+<smd name="8" x="3.61" y="-1" dx="0.99" dy="0.25" layer="1"/>
+<smd name="6" x="3.61" y="-2" dx="0.99" dy="0.25" layer="1"/>
+<dimension x1="0.495" y1="0" x2="3.115" y2="0" x3="1.805" y3="3" textsize="1.27" layer="47"/>
+<dimension x1="0" y1="-2" x2="0" y2="-1.5" x3="-7" y3="-1.75" textsize="1.27" layer="47"/>
+<wire x1="4.1" y1="-2.6" x2="4.1" y2="0.6" width="0.127" layer="21"/>
+<wire x1="4.1" y1="-2.6" x2="-0.5" y2="-2.6" width="0.127" layer="21"/>
+<wire x1="4.1" y1="0.6" x2="-0.5" y2="0.6" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="0.6" x2="-0.5" y2="-2.6" width="0.127" layer="21"/>
+<text x="-1" y="1" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1" y="-4" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="RTL8720DN">
@@ -128,6 +148,24 @@ for ease of soldering (twice as long)</text>
 <pin name="GND" x="20.32" y="-17.78" length="middle" rot="R180"/>
 <text x="-15.24" y="22.86" size="1.27" layer="95">&gt;NAME</text>
 <text x="-15.24" y="-22.86" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="CH340E">
+<wire x1="-17.78" y1="15.24" x2="17.78" y2="15.24" width="0.254" layer="94"/>
+<wire x1="17.78" y1="15.24" x2="17.78" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-10.16" x2="-17.78" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-10.16" x2="-17.78" y2="15.24" width="0.254" layer="94"/>
+<pin name="UD+" x="-22.86" y="7.62" length="middle"/>
+<pin name="UD-" x="-22.86" y="5.08" length="middle"/>
+<pin name="GND" x="-22.86" y="2.54" length="middle"/>
+<pin name="RTS#" x="-22.86" y="0" length="middle"/>
+<pin name="CTS#" x="-22.86" y="-2.54" length="middle"/>
+<pin name="V3" x="22.86" y="7.62" length="middle" rot="R180"/>
+<pin name="RXD" x="22.86" y="5.08" length="middle" rot="R180"/>
+<pin name="TXD" x="22.86" y="2.54" length="middle" rot="R180"/>
+<pin name="VCC" x="22.86" y="0" length="middle" rot="R180"/>
+<pin name="TNOW" x="22.86" y="-2.54" length="middle" rot="R180"/>
+<text x="-4.826" y="10.16" size="1.778" layer="94">CH340E</text>
+<text x="-3.302" y="-7.62" size="1.778" layer="94">UART</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -155,6 +193,18 @@ for ease of soldering (twice as long)</text>
 <connect gate="G$1" pin="PB3" pad="2"/>
 <connect gate="G$1" pin="VDD33" pad="8"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CH340E">
+<gates>
+<gate name="G$1" symbol="CH340E" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MS0P10">
 <technologies>
 <technology name=""/>
 </technologies>
