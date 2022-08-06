@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -632,7 +632,7 @@ for ease of soldering (twice as long)</text>
 <wire x1="1.016" y1="-0.3556" x2="1.016" y2="0.3556" width="0.1524" layer="21"/>
 <wire x1="1.016" y1="1.651" x2="-1.016" y2="1.651" width="0.1524" layer="21"/>
 <text x="-2.1844" y="1.3208" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
-<text x="-1.7272" y="-0.635" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
+<text x="-1.7272" y="-3.175" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Value</text>
 <wire x1="-0.8636" y1="-1.524" x2="0.8636" y2="-1.524" width="0.1524" layer="51"/>
 <wire x1="0.8636" y1="-1.524" x2="0.8636" y2="-0.6858" width="0.1524" layer="51"/>
 <wire x1="0.8636" y1="-0.6858" x2="0.8636" y2="0.6858" width="0.1524" layer="51"/>
@@ -666,7 +666,7 @@ for ease of soldering (twice as long)</text>
 <wire x1="1.4986" y1="1.1938" x2="0.8636" y2="1.1938" width="0.1524" layer="51"/>
 <wire x1="0.3048" y1="1.524" x2="-0.3048" y2="1.524" width="0.1524" layer="51" curve="-180"/>
 <text x="-1.1938" y="0.3556" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
-<text x="-3.2766" y="-0.635" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Name</text>
+<text x="-2.0066" y="3.175" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 </package>
 <package name="DBV5_TEX-L">
 <smd name="1" x="-1.26245" y="0.95" dx="0.7723" dy="0.458" layer="1"/>
@@ -909,8 +909,8 @@ for ease of soldering (twice as long)</text>
 <smd name="4" x="1.3" y="-0.95" dx="1.15" dy="0.6" layer="1"/>
 <smd name="5" x="1.3" y="0" dx="1.15" dy="0.6" layer="1"/>
 <smd name="6" x="1.3" y="0.95" dx="1.15" dy="0.6" layer="1"/>
-<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<text x="0" y="2.54" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.27" layer="27" align="center">&gt;VALUE</text>
 <wire x1="-2.125" y1="1.8" x2="2.125" y2="1.8" width="0.05" layer="51"/>
 <wire x1="2.125" y1="1.8" x2="2.125" y2="-1.8" width="0.05" layer="51"/>
 <wire x1="2.125" y1="-1.8" x2="-2.125" y2="-1.8" width="0.05" layer="51"/>
@@ -3480,20 +3480,20 @@ for ease of soldering (twice as long)</text>
 <wire x1="1.6256" y1="0.9398" x2="1.6256" y2="1.5748" width="0.1524" layer="21"/>
 <wire x1="1.6256" y1="3.429" x2="1.6256" y2="4.6228" width="0.1524" layer="21"/>
 <text x="-3.5814" y="3.6068" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
-<text x="-1.7272" y="-0.635" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
-<text x="-3.2766" y="-0.635" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Name</text>
+<text x="-1.7272" y="-6.985" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Value</text>
+<text x="-2.0066" y="5.715" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 </package>
 <package name="TL6200CBF300QG">
-<smd name="1" x="-3.81" y="0" dx="1.2" dy="2.5" layer="1"/>
-<smd name="2" x="-3.81" y="-12.5" dx="1.2" dy="2.5" layer="1"/>
-<smd name="3" x="3.81" y="0" dx="1.2" dy="2.5" layer="1"/>
-<smd name="4" x="3.81" y="-12.5" dx="1.2" dy="2.5" layer="1"/>
-<wire x1="-5.05" y1="-1.25" x2="5.05" y2="-1.25" width="0.127" layer="21"/>
-<wire x1="-5.05" y1="-11.25" x2="5.05" y2="-11.25" width="0.127" layer="21"/>
-<wire x1="-5.05" y1="-1.25" x2="-5.05" y2="-11.25" width="0.127" layer="21"/>
-<wire x1="5.05" y1="-1.25" x2="5.05" y2="-11.25" width="0.127" layer="21"/>
-<text x="-5" y="2" size="1.27" layer="25" ratio="6">&gt;NAME</text>
-<text x="-5" y="-16" size="1.27" layer="27" ratio="6">&gt;VALUE</text>
+<smd name="1" x="-3.81" y="6.35" dx="1.2" dy="2.5" layer="1"/>
+<smd name="2" x="-3.81" y="-6.15" dx="1.2" dy="2.5" layer="1"/>
+<smd name="3" x="3.81" y="6.35" dx="1.2" dy="2.5" layer="1"/>
+<smd name="4" x="3.81" y="-6.15" dx="1.2" dy="2.5" layer="1"/>
+<wire x1="-5.05" y1="5.1" x2="5.05" y2="5.1" width="0.127" layer="21"/>
+<wire x1="-5.05" y1="-4.9" x2="5.05" y2="-4.9" width="0.127" layer="21"/>
+<wire x1="-5.05" y1="5.1" x2="-5.05" y2="-4.9" width="0.127" layer="21"/>
+<wire x1="5.05" y1="5.1" x2="5.05" y2="-4.9" width="0.127" layer="21"/>
+<text x="-5" y="8.35" size="1.27" layer="25" ratio="6">&gt;NAME</text>
+<text x="-5" y="-9.65" size="1.27" layer="27" ratio="6">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -3538,6 +3538,8 @@ for ease of soldering (twice as long)</text>
 <pin name="TNOW" x="22.86" y="-2.54" length="middle" rot="R180"/>
 <text x="-4.826" y="10.16" size="1.778" layer="94">CH340E</text>
 <text x="-3.302" y="-7.62" size="1.778" layer="94">UART</text>
+<text x="-17.78" y="17.78" size="1.778" layer="95">&gt;NAME</text>
+<text x="-17.78" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="47590-0001">
 <wire x1="5.08" y1="10.16" x2="-5.08" y2="10.16" width="0.254" layer="94"/>
@@ -3609,9 +3611,9 @@ for ease of soldering (twice as long)</text>
 <pin name="1" x="0" y="2.54" length="middle" direction="pas" rot="R90"/>
 <pin name="2" x="12.7" y="2.54" length="middle" direction="pas" rot="R90"/>
 <pin name="3" x="15.24" y="2.54" length="middle" direction="pas" rot="R90"/>
-<pin name="4" x="0" y="40.64" length="middle" direction="pas" rot="R270"/>
+<pin name="6" x="0" y="40.64" length="middle" direction="pas" rot="R270"/>
 <pin name="5" x="12.7" y="40.64" length="middle" direction="pas" rot="R270"/>
-<pin name="6" x="15.24" y="40.64" length="middle" direction="pas" rot="R270"/>
+<pin name="4" x="15.24" y="40.64" length="middle" direction="pas" rot="R270"/>
 <wire x1="-1.27" y1="8.89" x2="0" y2="8.89" width="0.1524" layer="94"/>
 <wire x1="0" y1="8.89" x2="12.7" y2="8.89" width="0.1524" layer="94"/>
 <wire x1="12.7" y1="8.89" x2="13.97" y2="8.89" width="0.1524" layer="94"/>
@@ -3700,6 +3702,8 @@ for ease of soldering (twice as long)</text>
 <wire x1="3.81" y1="-0.254" x2="6.35" y2="-0.254" width="0.254" layer="94"/>
 <circle x="0" y="1.524" radius="0.762" width="0.254" layer="94"/>
 <circle x="0" y="-2.032" radius="0.762" width="0.254" layer="94"/>
+<text x="-7.62" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3734,7 +3738,7 @@ for ease of soldering (twice as long)</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CH340E">
+<deviceset name="CH340E" prefix="U">
 <description>USB to Serial IC (https://www.sparkfun.com/products/16278)</description>
 <gates>
 <gate name="G$1" symbol="CH340E" x="0" y="0"/>
