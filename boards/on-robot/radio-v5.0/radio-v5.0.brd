@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
@@ -1687,6 +1687,66 @@ for ease of soldering (twice as long)</text>
 </package3d>
 </packages3d>
 </library>
+<library name="RoboJackets-Connectors">
+<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
+&lt;hr&gt;
+&lt;h1&gt;RoboJackets EAGLE Libraries - Connectors&lt;/h1&gt;&lt;/br&gt;
+&lt;p&gt;
+In this library you will find all the connectors used on any of our boards.
+&lt;/p&gt;</description>
+<packages>
+<package name="SFW8R2STE1LF">
+<description>&lt;b&gt;SFW8R-2STE1LF-1&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-3.5" y="2.1" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="2" x="-2.5" y="2.1" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="3" x="-1.5" y="2.1" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="4" x="-0.5" y="2.1" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="5" x="0.5" y="2.1" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="6" x="1.5" y="2.1" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="7" x="2.5" y="2.1" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="8" x="3.5" y="2.1" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="MP1" x="-4.5" y="0" dx="4.2" dy="0.7" layer="1" rot="R90"/>
+<smd name="MP2" x="4.5" y="0" dx="4.2" dy="0.7" layer="1" rot="R90"/>
+<text x="0" y="-0.4" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="-0.4" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-6.9" y1="-3.9" x2="6.9" y2="-3.9" width="0.1" layer="51"/>
+<wire x1="6.9" y1="-3.9" x2="6.9" y2="1.6" width="0.1" layer="51"/>
+<wire x1="6.9" y1="1.6" x2="-6.9" y2="1.6" width="0.1" layer="51"/>
+<wire x1="-6.9" y1="1.6" x2="-6.9" y2="-3.9" width="0.1" layer="51"/>
+<wire x1="-5.5" y1="1.6" x2="-6.9" y2="1.6" width="0.2" layer="21"/>
+<wire x1="-6.9" y1="1.6" x2="-6.9" y2="1.6" width="0.2" layer="21"/>
+<wire x1="-6.9" y1="1.6" x2="-5.5" y2="1.6" width="0.2" layer="21"/>
+<wire x1="-5.5" y1="1.6" x2="-5.5" y2="1.6" width="0.2" layer="21"/>
+<wire x1="-6.9" y1="-3.9" x2="6.9" y2="-3.9" width="0.2" layer="21"/>
+<wire x1="6.9" y1="-3.9" x2="6.9" y2="-3.9" width="0.2" layer="21"/>
+<wire x1="6.9" y1="-3.9" x2="-6.9" y2="-3.9" width="0.2" layer="21"/>
+<wire x1="-6.9" y1="-3.9" x2="-6.9" y2="-3.9" width="0.2" layer="21"/>
+<wire x1="6.9" y1="1.6" x2="5.5" y2="1.6" width="0.2" layer="21"/>
+<wire x1="5.5" y1="1.6" x2="5.5" y2="1.6" width="0.2" layer="21"/>
+<wire x1="5.5" y1="1.6" x2="6.9" y2="1.6" width="0.2" layer="21"/>
+<wire x1="6.9" y1="1.6" x2="6.9" y2="1.6" width="0.2" layer="21"/>
+<wire x1="-7.9" y1="4.1" x2="7.9" y2="4.1" width="0.1" layer="51"/>
+<wire x1="7.9" y1="4.1" x2="7.9" y2="-4.9" width="0.1" layer="51"/>
+<wire x1="7.9" y1="-4.9" x2="-7.9" y2="-4.9" width="0.1" layer="51"/>
+<wire x1="-7.9" y1="-4.9" x2="-7.9" y2="4.1" width="0.1" layer="51"/>
+<wire x1="-6.9" y1="1.6" x2="-6.9" y2="1.6" width="0.2" layer="21"/>
+<wire x1="-6.9" y1="1.6" x2="-6.9" y2="-3.9" width="0.2" layer="21"/>
+<wire x1="-6.9" y1="-3.9" x2="-6.9" y2="-3.9" width="0.2" layer="21"/>
+<wire x1="-6.9" y1="-3.9" x2="-6.9" y2="1.6" width="0.2" layer="21"/>
+<wire x1="6.9" y1="-3.9" x2="6.9" y2="-3.9" width="0.2" layer="21"/>
+<wire x1="6.9" y1="-3.9" x2="6.9" y2="1.6" width="0.2" layer="21"/>
+<wire x1="6.9" y1="1.6" x2="6.9" y2="1.6" width="0.2" layer="21"/>
+<wire x1="6.9" y1="1.6" x2="6.9" y2="-3.9" width="0.2" layer="21"/>
+<wire x1="-3.5" y1="3.75" x2="-3.5" y2="3.75" width="0.2" layer="21"/>
+<wire x1="-3.5" y1="3.75" x2="-3.5" y2="3.55" width="0.2" layer="21" curve="180"/>
+<wire x1="-3.5" y1="3.55" x2="-3.5" y2="3.55" width="0.2" layer="21"/>
+<wire x1="-3.5" y1="3.55" x2="-3.5" y2="3.75" width="0.2" layer="21" curve="180"/>
+<wire x1="-3.5" y1="3.75" x2="-3.5" y2="3.75" width="0.2" layer="21"/>
+<wire x1="-3.5" y1="3.75" x2="-3.5" y2="3.55" width="0.2" layer="21" curve="180"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2132,6 +2192,18 @@ Everything else you will find on https://aisler.net/help</description>
 <attribute name="REFDES" value="RefDes" x="-19" y="-103" size="1.778" layer="27" display="off"/>
 <attribute name="TYPE" value="TYPE" x="-19" y="-103" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-21.9972" y="-108.715" size="1.27" layer="27" ratio="6" rot="SR0"/>
+</element>
+<element name="J2" library="RoboJackets-Connectors" package="SFW8R2STE1LF" value="SFW8R-2STE1LF" x="-103" y="-151" smashed="yes">
+<attribute name="ARROW_PART_NUMBER" value="SFW8R-2STE1LF" x="-103" y="-151" size="1.778" layer="27" display="off"/>
+<attribute name="ARROW_PRICE-STOCK" value="https://www.arrow.com/en/products/sfw8r-2ste1lf/amphenol-fci" x="-103" y="-151" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="Amphenol FCI SFW8R 1mm Pitch 8 Way SMT Female FPC Connector, ZIF Top Contact" x="-103" y="-151" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="2.9mm" x="-103" y="-151" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Amphenol" x="-103" y="-151" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="SFW8R-2STE1LF" x="-103" y="-151" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="649-SFW8R-2STE1LF" x="-103" y="-151" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Amphenol-FCI/SFW8R-2STE1LF/?qs=XRaITl65jns0x63GKwAL0A%3D%3D" x="-103" y="-151" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-103" y="-151.4" size="1.27" layer="25" align="center"/>
+<attribute name="VALUE" x="-103" y="-151.4" size="1.27" layer="27" align="center"/>
 </element>
 </elements>
 <signals>
