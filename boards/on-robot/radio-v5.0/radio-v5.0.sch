@@ -3266,6 +3266,59 @@ for ease of soldering (twice as long)</text>
 <text x="-1.7272" y="-6.985" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Value</text>
 <text x="-2.0066" y="5.715" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 </package>
+<package name="DRL0006A">
+<smd name="1" x="-0.75" y="0.5" dx="0.3" dy="0.5" layer="1" rot="R90"/>
+<smd name="2" x="-0.75" y="0.000003125" dx="0.3" dy="0.5" layer="1" rot="R90"/>
+<smd name="3" x="-0.75" y="-0.5" dx="0.3" dy="0.5" layer="1" rot="R90"/>
+<smd name="4" x="0.75" y="-0.5" dx="0.3" dy="0.5" layer="1" rot="R90"/>
+<smd name="5" x="0.75" y="0.000003125" dx="0.3" dy="0.5" layer="1" rot="R90"/>
+<smd name="6" x="0.75" y="0.5" dx="0.3" dy="0.5" layer="1" rot="R90"/>
+<wire x1="-0.635" y1="-0.635" x2="-0.635" y2="-0.381" width="0.1524" layer="51"/>
+<wire x1="0.635" y1="-0.635" x2="0.635" y2="-0.381" width="0.1524" layer="51"/>
+<wire x1="-0.6604" y1="-0.8382" x2="-0.6604" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="-0.6604" y1="-0.381" x2="-0.6604" y2="-0.127" width="0.1524" layer="51"/>
+<wire x1="-0.8382" y1="-0.635" x2="-0.8382" y2="-0.381" width="0.1524" layer="51"/>
+<wire x1="-0.8382" y1="0.381" x2="-0.8382" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="-0.6604" y1="-0.8382" x2="0.6604" y2="-0.8382" width="0.1524" layer="51"/>
+<wire x1="-0.635" y1="0.381" x2="-0.635" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="0.635" y1="-0.381" x2="0.6604" y2="-0.381" width="0.1524" layer="51"/>
+<wire x1="0.6604" y1="-0.381" x2="0.8382" y2="-0.381" width="0.1524" layer="51"/>
+<wire x1="-0.8382" y1="-0.381" x2="-0.635" y2="-0.381" width="0.1524" layer="51"/>
+<wire x1="-0.8382" y1="-0.635" x2="-0.635" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="0.635" y1="-0.635" x2="0.6604" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="0.6604" y1="-0.635" x2="0.8382" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="0.6604" y1="-0.381" x2="0.6604" y2="0.381" width="0.1524" layer="51"/>
+<wire x1="-0.635" y1="-0.127" x2="-0.635" y2="0.127" width="0.1524" layer="51"/>
+<wire x1="0.635" y1="0.381" x2="0.635" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="0.635" y1="0.381" x2="0.8382" y2="0.381" width="0.1524" layer="51"/>
+<wire x1="-0.6604" y1="0.635" x2="-0.6604" y2="0.8382" width="0.1524" layer="51"/>
+<wire x1="0.635" y1="0.635" x2="0.6604" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="0.6604" y1="0.635" x2="0.8382" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="0.8382" y1="0.381" x2="0.8382" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="-0.8382" y1="-0.127" x2="-0.635" y2="-0.127" width="0.1524" layer="51"/>
+<wire x1="-0.8382" y1="-0.127" x2="-0.8382" y2="0.127" width="0.1524" layer="51"/>
+<wire x1="0.6604" y1="0.635" x2="0.6604" y2="0.8382" width="0.1524" layer="51"/>
+<wire x1="-0.8382" y1="0.127" x2="-0.6604" y2="0.127" width="0.1524" layer="51"/>
+<wire x1="-0.6604" y1="0.127" x2="-0.635" y2="0.127" width="0.1524" layer="51"/>
+<wire x1="0.6604" y1="-0.8382" x2="0.6604" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="0.8382" y1="-0.635" x2="0.8382" y2="-0.381" width="0.1524" layer="51"/>
+<wire x1="-0.6604" y1="0.8382" x2="0.6604" y2="0.8382" width="0.1524" layer="51"/>
+<wire x1="-0.8382" y1="0.635" x2="-0.635" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="-0.6604" y1="0.127" x2="-0.6604" y2="0.381" width="0.1524" layer="51"/>
+<wire x1="-0.8382" y1="0.381" x2="-0.635" y2="0.381" width="0.1524" layer="51"/>
+<wire x1="0.635" y1="0.127" x2="0.8382" y2="0.127" width="0.1524" layer="51"/>
+<wire x1="0.8382" y1="-0.127" x2="0.8382" y2="0.127" width="0.1524" layer="51"/>
+<wire x1="0.635" y1="-0.127" x2="0.8382" y2="-0.127" width="0.1524" layer="51"/>
+<wire x1="0.635" y1="-0.127" x2="0.635" y2="0.127" width="0.1524" layer="51"/>
+<wire x1="-0.1778" y1="0.508" x2="-0.4826" y2="0.508" width="0.1016" layer="51" curve="-180"/>
+<wire x1="-0.4826" y1="0.508" x2="-0.1778" y2="0.508" width="0.1016" layer="51" curve="-180"/>
+<wire x1="-0.889" y1="-0.9398" x2="-0.7112" y2="-0.9398" width="0.2032" layer="21"/>
+<wire x1="0.7112" y1="-0.9398" x2="0.889" y2="-0.9398" width="0.2032" layer="21"/>
+<wire x1="0.7112" y1="0.9398" x2="0.889" y2="0.9398" width="0.2032" layer="21"/>
+<wire x1="-0.889" y1="0.9398" x2="-0.1778" y2="0.9398" width="0.2032" layer="21"/>
+<text x="-2.4892" y="-2.54" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Value</text>
+<text x="-2.5146" y="1.27" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
+</package>
 </packages>
 <symbols>
 <symbol name="RTL8720DN">
@@ -3461,6 +3514,21 @@ for ease of soldering (twice as long)</text>
 </polygon>
 <text x="2.2606" y="45.3136" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
 <text x="0.9906" y="42.7736" size="2.0828" layer="96" ratio="6" rot="SR0">&gt;Value</text>
+</symbol>
+<symbol name="SN74LVC1T45DRL">
+<pin name="VCCA" x="-20.32" y="5.08" length="middle" direction="pwr"/>
+<pin name="GND" x="20.32" y="-5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="A" x="-20.32" y="0" length="middle"/>
+<pin name="B" x="20.32" y="0" length="middle" rot="R180"/>
+<pin name="DIR" x="-20.32" y="-5.08" length="middle" direction="in"/>
+<pin name="VCCB" x="20.32" y="5.08" length="middle" direction="pwr" rot="R180"/>
+<wire x1="-15.24" y1="-10.16" x2="15.24" y2="-10.16" width="0.2032" layer="94"/>
+<wire x1="15.24" y1="-10.16" x2="15.24" y2="10.16" width="0.2032" layer="94"/>
+<wire x1="15.24" y1="10.16" x2="-15.24" y2="10.16" width="0.2032" layer="94"/>
+<wire x1="-15.24" y1="10.16" x2="-15.24" y2="-10.16" width="0.2032" layer="94"/>
+<text x="-4.7244" y="1.4986" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
+<text x="-5.3594" y="-1.0414" size="2.0828" layer="96" ratio="6" rot="SR0">&gt;Value</text>
+<text x="-5.3594" y="-1.0414" size="2.0828" layer="96" ratio="6" rot="SR0">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3751,6 +3819,36 @@ Source: &lt;a href="https://www.diodes.com/assets/Datasheets/ds31449.pdf"&gt; Da
 <attribute name="DIGI-KEY_PART_NUMBER_4" value="401-2002-6-ND" constant="no"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="JS202011SCQN" constant="no"/>
 <attribute name="MFR_NAME" value="C&amp;K" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SN74LVC1T45DRLR" prefix="U">
+<gates>
+<gate name="A" symbol="SN74LVC1T45DRL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DRL0006A">
+<connects>
+<connect gate="A" pin="A" pad="3"/>
+<connect gate="A" pin="B" pad="4"/>
+<connect gate="A" pin="DIR" pad="5"/>
+<connect gate="A" pin="GND" pad="2"/>
+<connect gate="A" pin="VCCA" pad="1"/>
+<connect gate="A" pin="VCCB" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." constant="no"/>
+<attribute name="DIGI-KEY_PART_NUMBER_1" value="296-20629-1-ND" constant="no"/>
+<attribute name="DIGI-KEY_PART_NUMBER_2" value="296-20629-2-ND" constant="no"/>
+<attribute name="DIGI-KEY_PART_NUMBER_3" value="296-20629-6-ND" constant="no"/>
+<attribute name="DIGI-KEY_PART_NUMBER_4" value="2156-SN74LVC1T45DRLR-ND" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="SN74LVC1T45DRLR" constant="no"/>
+<attribute name="MFR_NAME" value="Texas Instruments" constant="no"/>
+<attribute name="REFDES" value="RefDes" constant="no"/>
+<attribute name="TYPE" value="TYPE" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -5884,6 +5982,10 @@ Source: &lt;a href="https://datasheet.datasheetarchive.com/originals/distributor
 <part name="R3" library="Resistor" library_urn="urn:adsk.eagle:library:16378527" deviceset="R-US" device="CHIP-0603(1608-METRIC)" package3d_urn="urn:adsk.eagle:package:16378565/2" technology="_" value="200"/>
 <part name="R4" library="Resistor" library_urn="urn:adsk.eagle:library:16378527" deviceset="R-US" device="CHIP-0603(1608-METRIC)" package3d_urn="urn:adsk.eagle:package:16378565/2" technology="_" value="200"/>
 <part name="SUPPLY16" library="Power_Symbols" library_urn="urn:adsk.eagle:library:16502351" deviceset="GND-EARTH" device="" value="GND"/>
+<part name="U5" library="radio-v5.0" deviceset="SN74LVC1T45DRLR" device=""/>
+<part name="U6" library="radio-v5.0" deviceset="SN74LVC1T45DRLR" device=""/>
+<part name="SUPPLY17" library="Power_Symbols" library_urn="urn:adsk.eagle:library:16502351" deviceset="GND-EARTH" device="" value="GND"/>
+<part name="SUPPLY18" library="Power_Symbols" library_urn="urn:adsk.eagle:library:16502351" deviceset="GND-EARTH" device="" value="GND"/>
 </parts>
 <sheets>
 <sheet>
@@ -5897,19 +5999,19 @@ Source: &lt;a href="https://datasheet.datasheetarchive.com/originals/distributor
  requirement to supply to the 
 voltage regulator if the board is
  not being powered over USB</text>
-<wire x1="213.36" y1="254" x2="360.68" y2="254" width="0.1524" layer="97" style="longdash"/>
-<wire x1="360.68" y1="254" x2="360.68" y2="147.32" width="0.1524" layer="97" style="longdash"/>
-<wire x1="360.68" y1="147.32" x2="213.36" y2="147.32" width="0.1524" layer="97" style="longdash"/>
-<wire x1="213.36" y1="147.32" x2="213.36" y2="254" width="0.1524" layer="97" style="longdash"/>
-<text x="215.9" y="256.54" size="5.08" layer="97">Power Supply</text>
+<wire x1="177.8" y1="254" x2="325.12" y2="254" width="0.1524" layer="97" style="longdash"/>
+<wire x1="325.12" y1="254" x2="325.12" y2="147.32" width="0.1524" layer="97" style="longdash"/>
+<wire x1="325.12" y1="147.32" x2="177.8" y2="147.32" width="0.1524" layer="97" style="longdash"/>
+<wire x1="177.8" y1="147.32" x2="177.8" y2="254" width="0.1524" layer="97" style="longdash"/>
+<text x="180.34" y="256.54" size="5.08" layer="97">Power Supply</text>
 <wire x1="25.4" y1="124.46" x2="170.18" y2="124.46" width="0.1524" layer="97" style="longdash"/>
 <wire x1="170.18" y1="124.46" x2="170.18" y2="35.56" width="0.1524" layer="97" style="longdash"/>
 <wire x1="170.18" y1="35.56" x2="25.4" y2="35.56" width="0.1524" layer="97" style="longdash"/>
 <wire x1="25.4" y1="35.56" x2="25.4" y2="124.46" width="0.1524" layer="97" style="longdash"/>
 <text x="27.94" y="127" size="5.08" layer="97">RTL8720DN</text>
-<text x="246.38" y="152.4" size="1.27" layer="97">Dual USB/Voltage Source circuit
+<text x="210.82" y="152.4" size="1.27" layer="97">Dual USB/Voltage Source circuit
 https://electronics.stackexchange.com/questions/529115/power-a-circuit-with-power-supply-and-usb-port-my-solution</text>
-<text x="243.84" y="205.74" size="1.27" layer="97">P-Channel MOSFET for reverse polarity protection.
+<text x="208.28" y="205.74" size="1.27" layer="97">P-Channel MOSFET for reverse polarity protection.
 P-Channel MOSFETs don't conduct current
 in the reverse direction when the source is
 connected to the load and the drain is
@@ -5930,12 +6032,18 @@ Datasheet specifically states to use a decoupling cap WHEN using 5v power</text>
 <text x="127" y="109.22" size="1.27" layer="97">Essentially a reset button for the RTL8720DN</text>
 <text x="124.46" y="76.2" size="1.27" layer="97">Used to indicate to the RTL8720DN
 when you're flashing firmware</text>
-<text x="317.5" y="231.14" size="1.778" layer="97">LED just for indicating power</text>
+<text x="281.94" y="231.14" size="1.778" layer="97">LED just for indicating power</text>
 <text x="93.98" y="182.88" size="1.27" layer="97">Previously, pins 3, 4, 6, and 7 were used for
 MISO, INT, !RST!, and MOSI respectively when 
 we were using them for SPI to control radio. 
 Could be utilized as something else here.
 Ex. !RST! can still be used to force a !RST! from mTrain.</text>
+<wire x1="337.82" y1="238.76" x2="421.64" y2="238.76" width="0.1524" layer="97" style="longdash"/>
+<wire x1="421.64" y1="238.76" x2="421.64" y2="134.62" width="0.1524" layer="97" style="longdash"/>
+<wire x1="421.64" y1="134.62" x2="337.82" y2="134.62" width="0.1524" layer="97" style="longdash"/>
+<wire x1="337.82" y1="134.62" x2="337.82" y2="238.76" width="0.1524" layer="97" style="longdash"/>
+<text x="342.9" y="241.3" size="5.08" layer="97">Level Shifters</text>
+<text x="355.6" y="147.32" size="1.27" layer="97">Level shifters in unidirectional configuration</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="71.12" y="86.36" smashed="yes">
@@ -5954,57 +6062,57 @@ Ex. !RST! can still be used to force a !RST! from mTrain.</text>
 <instance part="SUPPLY2" gate="G$1" x="68.58" y="152.4" smashed="yes">
 <attribute name="VALUE" x="68.58" y="149.225" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="C1" gate="G$1" x="347.98" y="175.26" smashed="yes">
-<attribute name="NAME" x="350.52" y="177.8" size="1.778" layer="95"/>
-<attribute name="VALUE" x="350.52" y="175.26" size="1.778" layer="96"/>
+<instance part="C1" gate="G$1" x="312.42" y="175.26" smashed="yes">
+<attribute name="NAME" x="314.96" y="177.8" size="1.778" layer="95"/>
+<attribute name="VALUE" x="314.96" y="175.26" size="1.778" layer="96"/>
 </instance>
 <instance part="C2" gate="G$1" x="48.26" y="58.42" smashed="yes">
 <attribute name="NAME" x="50.8" y="60.96" size="1.778" layer="95"/>
 <attribute name="VALUE" x="50.8" y="58.42" size="1.778" layer="96"/>
 </instance>
-<instance part="C3" gate="G$1" x="312.42" y="170.18" smashed="yes">
-<attribute name="NAME" x="314.96" y="172.72" size="1.778" layer="95"/>
-<attribute name="VALUE" x="314.96" y="170.18" size="1.778" layer="96"/>
+<instance part="C3" gate="G$1" x="276.86" y="170.18" smashed="yes">
+<attribute name="NAME" x="279.4" y="172.72" size="1.778" layer="95"/>
+<attribute name="VALUE" x="279.4" y="170.18" size="1.778" layer="96"/>
 </instance>
-<instance part="C4" gate="G$1" x="327.66" y="175.26" smashed="yes">
-<attribute name="NAME" x="330.2" y="177.8" size="1.778" layer="95"/>
-<attribute name="VALUE" x="330.2" y="175.26" size="1.778" layer="96"/>
+<instance part="C4" gate="G$1" x="292.1" y="175.26" smashed="yes">
+<attribute name="NAME" x="294.64" y="177.8" size="1.778" layer="95"/>
+<attribute name="VALUE" x="294.64" y="175.26" size="1.778" layer="96"/>
 </instance>
-<instance part="C5" gate="G$1" x="337.82" y="175.26" smashed="yes">
-<attribute name="NAME" x="340.36" y="177.8" size="1.778" layer="95"/>
-<attribute name="VALUE" x="340.36" y="175.26" size="1.778" layer="96"/>
+<instance part="C5" gate="G$1" x="302.26" y="175.26" smashed="yes">
+<attribute name="NAME" x="304.8" y="177.8" size="1.778" layer="95"/>
+<attribute name="VALUE" x="304.8" y="175.26" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY3" gate="G$1" x="337.82" y="162.56" smashed="yes">
-<attribute name="VALUE" x="337.82" y="159.385" size="1.778" layer="96" align="center"/>
+<instance part="SUPPLY3" gate="G$1" x="302.26" y="162.56" smashed="yes">
+<attribute name="VALUE" x="302.26" y="159.385" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="SUPPLY4" gate="G$1" x="259.08" y="167.64" smashed="yes">
-<attribute name="VALUE" x="259.08" y="164.465" size="1.778" layer="96" align="center"/>
+<instance part="SUPPLY4" gate="G$1" x="223.52" y="167.64" smashed="yes">
+<attribute name="VALUE" x="223.52" y="164.465" size="1.778" layer="96" align="center"/>
 </instance>
 <instance part="SUPPLY5" gate="G$1" x="48.26" y="45.72" smashed="yes">
 <attribute name="VALUE" x="48.26" y="42.545" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="SUPPLY6" gate="G$1" x="312.42" y="160.02" smashed="yes">
-<attribute name="VALUE" x="312.42" y="156.845" size="1.778" layer="96" align="center"/>
+<instance part="SUPPLY6" gate="G$1" x="276.86" y="160.02" smashed="yes">
+<attribute name="VALUE" x="276.86" y="156.845" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="SUPPLY7" gate="G$1" x="284.48" y="203.2" smashed="yes">
-<attribute name="VALUE" x="284.48" y="200.025" size="1.778" layer="96" align="center"/>
+<instance part="SUPPLY7" gate="G$1" x="248.92" y="203.2" smashed="yes">
+<attribute name="VALUE" x="248.92" y="200.025" size="1.778" layer="96" align="center"/>
 </instance>
 <instance part="SUPPLY8" gate="G$1" x="81.28" y="167.64" smashed="yes">
 <attribute name="VALUE" x="81.28" y="164.465" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="SUPPLY9" gate="G$1" x="292.1" y="228.6" smashed="yes">
-<attribute name="VALUE" x="292.1" y="225.425" size="1.778" layer="96" align="center"/>
+<instance part="SUPPLY9" gate="G$1" x="256.54" y="228.6" smashed="yes">
+<attribute name="VALUE" x="256.54" y="225.425" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="C6" gate="G$1" x="281.94" y="241.3" smashed="yes">
-<attribute name="NAME" x="284.48" y="243.84" size="1.778" layer="95"/>
-<attribute name="VALUE" x="284.48" y="241.3" size="1.778" layer="96"/>
+<instance part="C6" gate="G$1" x="246.38" y="241.3" smashed="yes">
+<attribute name="NAME" x="248.92" y="243.84" size="1.778" layer="95"/>
+<attribute name="VALUE" x="248.92" y="241.3" size="1.778" layer="96"/>
 </instance>
-<instance part="C7" gate="G$1" x="228.6" y="233.68" smashed="yes">
-<attribute name="NAME" x="231.14" y="236.22" size="1.778" layer="95"/>
-<attribute name="VALUE" x="231.14" y="233.68" size="1.778" layer="96"/>
+<instance part="C7" gate="G$1" x="193.04" y="233.68" smashed="yes">
+<attribute name="NAME" x="195.58" y="236.22" size="1.778" layer="95"/>
+<attribute name="VALUE" x="195.58" y="233.68" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY10" gate="G$1" x="228.6" y="223.52" smashed="yes">
-<attribute name="VALUE" x="228.6" y="220.345" size="1.778" layer="96" align="center"/>
+<instance part="SUPPLY10" gate="G$1" x="193.04" y="223.52" smashed="yes">
+<attribute name="VALUE" x="193.04" y="220.345" size="1.778" layer="96" align="center"/>
 </instance>
 <instance part="SUPPLY11" gate="G$1" x="200.66" y="68.58" smashed="yes">
 <attribute name="VALUE" x="200.66" y="65.405" size="1.778" layer="96" align="center"/>
@@ -6019,13 +6127,13 @@ Ex. !RST! can still be used to force a !RST! from mTrain.</text>
 <instance part="SUPPLY13" gate="G$1" x="134.62" y="55.88" smashed="yes">
 <attribute name="VALUE" x="134.62" y="52.705" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="D1" gate="G$1" x="304.8" y="233.68" smashed="yes" rot="R270">
-<attribute name="NAME" x="302.26" y="230.378" size="1.778" layer="95" rot="R180" align="top-right"/>
-<attribute name="VALUE" x="302.26" y="227.838" size="1.778" layer="96" rot="R180" align="top-right"/>
+<instance part="D1" gate="G$1" x="269.24" y="233.68" smashed="yes" rot="R270">
+<attribute name="NAME" x="266.7" y="230.378" size="1.778" layer="95" rot="R180" align="top-right"/>
+<attribute name="VALUE" x="266.7" y="227.838" size="1.778" layer="96" rot="R180" align="top-right"/>
 </instance>
-<instance part="R2" gate="G$1" x="312.42" y="241.3" smashed="yes" rot="R90">
-<attribute name="NAME" x="309.6514" y="241.3" size="1.778" layer="95" rot="R90" align="center"/>
-<attribute name="VALUE" x="315.722" y="241.3" size="1.778" layer="96" rot="R90" align="center"/>
+<instance part="R2" gate="G$1" x="276.86" y="241.3" smashed="yes" rot="R90">
+<attribute name="NAME" x="274.0914" y="241.3" size="1.778" layer="95" rot="R90" align="center"/>
+<attribute name="VALUE" x="280.162" y="241.3" size="1.778" layer="96" rot="R90" align="center"/>
 </instance>
 <instance part="J2" gate="G$1" x="109.22" y="172.72" smashed="yes">
 <attribute name="NAME" x="128.27" y="180.34" size="1.778" layer="95" align="center-left"/>
@@ -6051,21 +6159,21 @@ Ex. !RST! can still be used to force a !RST! from mTrain.</text>
 <attribute name="NAME" x="50.79378125" y="175.2724" size="1.783209375" layer="95"/>
 <attribute name="VALUE" x="50.799540625" y="154.9391" size="1.77996875" layer="96" rot="MR180"/>
 </instance>
-<instance part="Q1" gate="G$1" x="287.02" y="213.36" smashed="yes">
-<attribute name="NAME" x="308.61" y="220.98" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="308.61" y="218.44" size="1.778" layer="96" align="center-left"/>
+<instance part="Q1" gate="G$1" x="251.46" y="213.36" smashed="yes">
+<attribute name="NAME" x="273.05" y="220.98" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="273.05" y="218.44" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="U2" gate="A" x="256.54" y="238.76" smashed="yes">
-<attribute name="NAME" x="241.6556" y="247.8786" size="2.0828" layer="95" ratio="6" rot="SR0"/>
-<attribute name="VALUE" x="241.0206" y="227.5586" size="2.0828" layer="96" ratio="6" rot="SR0"/>
+<instance part="U2" gate="A" x="220.98" y="238.76" smashed="yes">
+<attribute name="NAME" x="206.0956" y="247.8786" size="2.0828" layer="95" ratio="6" rot="SR0"/>
+<attribute name="VALUE" x="205.4606" y="227.5586" size="2.0828" layer="96" ratio="6" rot="SR0"/>
 </instance>
 <instance part="U3" gate="G$1" x="228.6" y="71.12" smashed="yes">
 <attribute name="NAME" x="210.82" y="88.9" size="1.778" layer="95"/>
 <attribute name="VALUE" x="210.82" y="55.88" size="1.778" layer="96"/>
 </instance>
-<instance part="U4" gate="A" x="256.54" y="182.88" smashed="yes">
-<attribute name="NAME" x="279.7556" y="191.9986" size="2.0828" layer="95" ratio="6" rot="SR0"/>
-<attribute name="VALUE" x="279.1206" y="189.4586" size="2.0828" layer="96" ratio="6" rot="SR0"/>
+<instance part="U4" gate="A" x="220.98" y="182.88" smashed="yes">
+<attribute name="NAME" x="244.1956" y="191.9986" size="2.0828" layer="95" ratio="6" rot="SR0"/>
+<attribute name="VALUE" x="243.5606" y="189.4586" size="2.0828" layer="96" ratio="6" rot="SR0"/>
 </instance>
 <instance part="SW1" gate="A" x="327.66" y="48.26" smashed="yes">
 <attribute name="NAME" x="324.8406" y="96.1136" size="2.0828" layer="95" ratio="6" rot="SR0"/>
@@ -6095,6 +6203,20 @@ Ex. !RST! can still be used to force a !RST! from mTrain.</text>
 </instance>
 <instance part="SUPPLY16" gate="G$1" x="152.4" y="167.64" smashed="yes">
 <attribute name="VALUE" x="152.4" y="164.465" size="1.778" layer="96" align="center"/>
+</instance>
+<instance part="U5" gate="A" x="383.54" y="218.44" smashed="yes">
+<attribute name="NAME" x="368.6556" y="230.0986" size="2.0828" layer="95" ratio="6" rot="SR0"/>
+<attribute name="VALUE" x="368.0206" y="204.6986" size="2.0828" layer="96" ratio="6" rot="SR0"/>
+</instance>
+<instance part="U6" gate="A" x="383.54" y="180.34" smashed="yes">
+<attribute name="NAME" x="368.6556" y="191.9986" size="2.0828" layer="95" ratio="6" rot="SR0"/>
+<attribute name="VALUE" x="368.0206" y="166.5986" size="2.0828" layer="96" ratio="6" rot="SR0"/>
+</instance>
+<instance part="SUPPLY17" gate="G$1" x="383.54" y="195.58" smashed="yes">
+<attribute name="VALUE" x="383.54" y="192.405" size="1.778" layer="96" align="center"/>
+</instance>
+<instance part="SUPPLY18" gate="G$1" x="383.54" y="157.48" smashed="yes">
+<attribute name="VALUE" x="383.54" y="154.305" size="1.778" layer="96" align="center"/>
 </instance>
 </instances>
 <busses>
@@ -6214,7 +6336,7 @@ Ex. !RST! can still be used to force a !RST! from mTrain.</text>
 <pinref part="J1" gate="G$1" pin="SHIELD"/>
 </segment>
 <segment>
-<wire x1="259.08" y1="180.34" x2="259.08" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="180.34" x2="223.52" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="SUPPLY4" gate="G$1" pin="GND"/>
 <pinref part="U4" gate="A" pin="GND"/>
 </segment>
@@ -6225,31 +6347,31 @@ Ex. !RST! can still be used to force a !RST! from mTrain.</text>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="312.42" y1="165.1" x2="312.42" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="165.1" x2="276.86" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="SUPPLY6" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="287.02" y1="208.28" x2="284.48" y2="208.28" width="0.1524" layer="91"/>
-<wire x1="284.48" y1="208.28" x2="284.48" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="208.28" x2="248.92" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="208.28" x2="248.92" y2="205.74" width="0.1524" layer="91"/>
 <pinref part="SUPPLY7" gate="G$1" pin="GND"/>
 <pinref part="Q1" gate="G$1" pin="G"/>
 </segment>
 <segment>
-<wire x1="292.1" y1="233.68" x2="292.1" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="233.68" x2="256.54" y2="231.14" width="0.1524" layer="91"/>
 <pinref part="SUPPLY9" gate="G$1" pin="GND"/>
-<wire x1="292.1" y1="233.68" x2="281.94" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="233.68" x2="246.38" y2="233.68" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="2"/>
-<wire x1="281.94" y1="233.68" x2="276.86" y2="233.68" width="0.1524" layer="91"/>
-<wire x1="281.94" y1="236.22" x2="281.94" y2="233.68" width="0.1524" layer="91"/>
-<junction x="281.94" y="233.68"/>
+<wire x1="246.38" y1="233.68" x2="241.3" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="236.22" x2="246.38" y2="233.68" width="0.1524" layer="91"/>
+<junction x="246.38" y="233.68"/>
 <pinref part="D1" gate="G$1" pin="C"/>
-<wire x1="299.72" y1="233.68" x2="292.1" y2="233.68" width="0.1524" layer="91"/>
-<junction x="292.1" y="233.68"/>
+<wire x1="264.16" y1="233.68" x2="256.54" y2="233.68" width="0.1524" layer="91"/>
+<junction x="256.54" y="233.68"/>
 <pinref part="U2" gate="A" pin="COMMON"/>
 </segment>
 <segment>
 <pinref part="C7" gate="G$1" pin="2"/>
-<wire x1="228.6" y1="228.6" x2="228.6" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="228.6" x2="193.04" y2="226.06" width="0.1524" layer="91"/>
 <pinref part="SUPPLY10" gate="G$1" pin="GND"/>
 </segment>
 <segment>
@@ -6273,12 +6395,12 @@ Ex. !RST! can still be used to force a !RST! from mTrain.</text>
 <segment>
 <pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="327.66" y1="170.18" x2="337.82" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="170.18" x2="302.26" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="2"/>
-<wire x1="337.82" y1="170.18" x2="347.98" y2="170.18" width="0.1524" layer="91"/>
-<junction x="337.82" y="170.18"/>
+<wire x1="302.26" y1="170.18" x2="312.42" y2="170.18" width="0.1524" layer="91"/>
+<junction x="302.26" y="170.18"/>
 <pinref part="SUPPLY3" gate="G$1" pin="GND"/>
-<wire x1="337.82" y1="170.18" x2="337.82" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="170.18" x2="302.26" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="D2" gate="G$1" pin="C"/>
@@ -6295,6 +6417,28 @@ Ex. !RST! can still be used to force a !RST! from mTrain.</text>
 <pinref part="SUPPLY16" gate="G$1" pin="GND"/>
 <wire x1="132.08" y1="170.18" x2="152.4" y2="170.18" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U5" gate="A" pin="DIR"/>
+<wire x1="363.22" y1="213.36" x2="363.22" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="383.54" y1="200.66" x2="363.22" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="383.54" y1="200.66" x2="383.54" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="SUPPLY17" gate="G$1" pin="GND"/>
+<pinref part="U5" gate="A" pin="GND"/>
+<wire x1="383.54" y1="200.66" x2="403.86" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="403.86" y1="200.66" x2="403.86" y2="213.36" width="0.1524" layer="91"/>
+<junction x="383.54" y="200.66"/>
+</segment>
+<segment>
+<pinref part="U6" gate="A" pin="DIR"/>
+<wire x1="363.22" y1="175.26" x2="363.22" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="363.22" y1="162.56" x2="383.54" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="U6" gate="A" pin="GND"/>
+<wire x1="383.54" y1="162.56" x2="403.86" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="403.86" y1="162.56" x2="403.86" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="383.54" y1="162.56" x2="383.54" y2="160.02" width="0.1524" layer="91"/>
+<junction x="383.54" y="162.56"/>
+<pinref part="SUPPLY18" gate="G$1" pin="GND"/>
+</segment>
 </net>
 <net name="VIN" class="0">
 <segment>
@@ -6303,19 +6447,19 @@ Ex. !RST! can still be used to force a !RST! from mTrain.</text>
 <pinref part="JP1" gate="A" pin="8"/>
 </segment>
 <segment>
-<wire x1="287.02" y1="210.82" x2="287.02" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="287.02" y1="213.36" x2="287.02" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="287.02" y1="218.44" x2="312.42" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="312.42" y1="218.44" x2="312.42" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="312.42" y1="213.36" x2="312.42" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="287.02" y1="218.44" x2="284.48" y2="218.44" width="0.1524" layer="91"/>
-<junction x="287.02" y="218.44"/>
-<label x="284.48" y="218.44" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="251.46" y1="210.82" x2="251.46" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="213.36" x2="251.46" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="218.44" x2="276.86" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="218.44" x2="276.86" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="213.36" x2="276.86" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="218.44" x2="248.92" y2="218.44" width="0.1524" layer="91"/>
+<junction x="251.46" y="218.44"/>
+<label x="248.92" y="218.44" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="Q1" gate="G$1" pin="D_1"/>
-<junction x="287.02" y="213.36"/>
+<junction x="251.46" y="213.36"/>
 <pinref part="Q1" gate="G$1" pin="D_2"/>
 <pinref part="Q1" gate="G$1" pin="D_4"/>
-<junction x="312.42" y="213.36"/>
+<junction x="276.86" y="213.36"/>
 <pinref part="Q1" gate="G$1" pin="D_3"/>
 </segment>
 <segment>
@@ -6439,17 +6583,17 @@ Ex. !RST! can still be used to force a !RST! from mTrain.</text>
 <junction x="48.26" y="68.58"/>
 </segment>
 <segment>
-<wire x1="276.86" y1="241.3" x2="276.86" y2="248.92" width="0.1524" layer="91"/>
-<wire x1="276.86" y1="248.92" x2="281.94" y2="248.92" width="0.1524" layer="91"/>
-<label x="317.5" y="248.92" size="1.27" layer="95" xref="yes"/>
+<wire x1="241.3" y1="241.3" x2="241.3" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="248.92" x2="246.38" y2="248.92" width="0.1524" layer="91"/>
+<label x="281.94" y="248.92" size="1.27" layer="95" xref="yes"/>
 <pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="281.94" y1="248.92" x2="312.42" y2="248.92" width="0.1524" layer="91"/>
-<wire x1="312.42" y1="248.92" x2="317.5" y2="248.92" width="0.1524" layer="91"/>
-<wire x1="281.94" y1="243.84" x2="281.94" y2="248.92" width="0.1524" layer="91"/>
-<junction x="281.94" y="248.92"/>
+<wire x1="246.38" y1="248.92" x2="276.86" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="248.92" x2="281.94" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="243.84" x2="246.38" y2="248.92" width="0.1524" layer="91"/>
+<junction x="246.38" y="248.92"/>
 <pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="312.42" y1="248.92" x2="312.42" y2="246.38" width="0.1524" layer="91"/>
-<junction x="312.42" y="248.92"/>
+<wire x1="276.86" y1="248.92" x2="276.86" y2="246.38" width="0.1524" layer="91"/>
+<junction x="276.86" y="248.92"/>
 <pinref part="U2" gate="A" pin="OUTPUT"/>
 </segment>
 <segment>
@@ -6461,6 +6605,18 @@ Ex. !RST! can still be used to force a !RST! from mTrain.</text>
 <pinref part="U3" gate="G$1" pin="V3"/>
 <wire x1="251.46" y1="78.74" x2="254" y2="78.74" width="0.1524" layer="91"/>
 <label x="254" y="78.74" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U5" gate="A" pin="VCCB"/>
+<wire x1="403.86" y1="223.52" x2="406.4" y2="223.52" width="0.1524" layer="91" style="longdash"/>
+<wire x1="406.4" y1="223.52" x2="406.4" y2="226.06" width="0.1524" layer="91" style="longdash"/>
+<label x="406.4" y="226.06" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U6" gate="A" pin="VCCB"/>
+<wire x1="403.86" y1="185.42" x2="406.4" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="406.4" y1="185.42" x2="406.4" y2="187.96" width="0.1524" layer="91"/>
+<label x="406.4" y="187.96" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D-" class="0">
@@ -6494,51 +6650,74 @@ Ex. !RST! can still be used to force a !RST! from mTrain.</text>
 <pinref part="J1" gate="G$1" pin="5"/>
 </segment>
 <segment>
-<wire x1="259.08" y1="182.88" x2="259.08" y2="187.96" width="0.1524" layer="91"/>
-<label x="259.08" y="187.96" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U4" gate="A" pin="EN"/>
+<wire x1="274.32" y1="182.88" x2="276.86" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="182.88" x2="276.86" y2="187.96" width="0.1524" layer="91"/>
+<label x="314.96" y="187.96" size="1.27" layer="95" xref="yes"/>
+<wire x1="276.86" y1="187.96" x2="312.42" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="312.42" y1="187.96" x2="314.96" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="312.42" y1="187.96" x2="312.42" y2="177.8" width="0.1524" layer="91"/>
+<junction x="312.42" y="187.96"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<pinref part="U4" gate="A" pin="IN1"/>
 </segment>
 </net>
 <net name="VO" class="0">
 <segment>
-<wire x1="236.22" y1="241.3" x2="228.6" y2="241.3" width="0.1524" layer="91"/>
-<label x="223.52" y="241.3" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="228.6" y1="241.3" x2="223.52" y2="241.3" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="241.3" x2="228.6" y2="236.22" width="0.1524" layer="91"/>
-<junction x="228.6" y="241.3"/>
+<wire x1="200.66" y1="241.3" x2="193.04" y2="241.3" width="0.1524" layer="91"/>
+<label x="187.96" y="241.3" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="193.04" y1="241.3" x2="187.96" y2="241.3" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="241.3" x2="193.04" y2="236.22" width="0.1524" layer="91"/>
+<junction x="193.04" y="241.3"/>
 <pinref part="C7" gate="G$1" pin="1"/>
 <pinref part="U2" gate="A" pin="INPUT"/>
 </segment>
 <segment>
-<wire x1="309.88" y1="180.34" x2="317.5" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="317.5" y1="180.34" x2="317.5" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="317.5" y1="185.42" x2="327.66" y2="185.42" width="0.1524" layer="91"/>
-<label x="340.36" y="185.42" size="1.27" layer="95" xref="yes"/>
-<wire x1="327.66" y1="185.42" x2="337.82" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="337.82" y1="185.42" x2="340.36" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="180.34" x2="281.94" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="180.34" x2="281.94" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="185.42" x2="292.1" y2="185.42" width="0.1524" layer="91"/>
+<label x="304.8" y="185.42" size="1.27" layer="95" xref="yes"/>
+<wire x1="292.1" y1="185.42" x2="302.26" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="185.42" x2="304.8" y2="185.42" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="337.82" y1="185.42" x2="337.82" y2="177.8" width="0.1524" layer="91"/>
-<junction x="337.82" y="185.42"/>
+<wire x1="302.26" y1="185.42" x2="302.26" y2="177.8" width="0.1524" layer="91"/>
+<junction x="302.26" y="185.42"/>
 <pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="327.66" y1="177.8" x2="327.66" y2="185.42" width="0.1524" layer="91"/>
-<junction x="327.66" y="185.42"/>
+<wire x1="292.1" y1="177.8" x2="292.1" y2="185.42" width="0.1524" layer="91"/>
+<junction x="292.1" y="185.42"/>
 <pinref part="U4" gate="A" pin="OUT"/>
+</segment>
+<segment>
+<pinref part="U5" gate="A" pin="VCCA"/>
+<wire x1="363.22" y1="223.52" x2="360.68" y2="223.52" width="0.1524" layer="91" style="longdash"/>
+<wire x1="360.68" y1="223.52" x2="360.68" y2="226.06" width="0.1524" layer="91" style="longdash"/>
+<label x="360.68" y="226.06" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U6" gate="A" pin="VCCA"/>
+<wire x1="363.22" y1="185.42" x2="360.68" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="185.42" x2="360.68" y2="187.96" width="0.1524" layer="91"/>
+<label x="360.68" y="187.96" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="VMAIN" class="0">
 <segment>
-<wire x1="312.42" y1="208.28" x2="314.96" y2="208.28" width="0.1524" layer="91"/>
-<label x="314.96" y="208.28" size="1.27" layer="95" xref="yes"/>
+<wire x1="276.86" y1="208.28" x2="279.4" y2="208.28" width="0.1524" layer="91"/>
+<label x="279.4" y="208.28" size="1.27" layer="95" xref="yes"/>
 <pinref part="Q1" gate="G$1" pin="S"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="309.88" y1="177.8" x2="312.42" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="312.42" y1="177.8" x2="312.42" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="312.42" y1="177.8" x2="314.96" y2="177.8" width="0.1524" layer="91"/>
-<junction x="312.42" y="177.8"/>
-<label x="314.96" y="177.8" size="1.27" layer="95" xref="yes"/>
+<wire x1="274.32" y1="177.8" x2="276.86" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="177.8" x2="276.86" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="177.8" x2="279.4" y2="177.8" width="0.1524" layer="91"/>
+<junction x="276.86" y="177.8"/>
+<label x="279.4" y="177.8" size="1.27" layer="95" xref="yes"/>
 <pinref part="U4" gate="A" pin="IN2"/>
+</segment>
+<segment>
+<pinref part="U4" gate="A" pin="EN"/>
+<wire x1="223.52" y1="182.88" x2="223.52" y2="187.96" width="0.1524" layer="91" style="longdash"/>
+<label x="223.52" y="187.96" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="RX" class="0">
@@ -6558,9 +6737,9 @@ Ex. !RST! can still be used to force a !RST! from mTrain.</text>
 <pinref part="SW1" gate="A" pin="5"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="5"/>
-<wire x1="132.08" y1="162.56" x2="134.62" y2="162.56" width="0.1524" layer="91"/>
-<label x="134.62" y="162.56" size="1.27" layer="95" xref="yes"/>
+<pinref part="U6" gate="A" pin="B"/>
+<wire x1="403.86" y1="180.34" x2="406.4" y2="180.34" width="0.1524" layer="91"/>
+<label x="406.4" y="180.34" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="TX" class="0">
@@ -6580,9 +6759,9 @@ Ex. !RST! can still be used to force a !RST! from mTrain.</text>
 <pinref part="SW1" gate="A" pin="2"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="8"/>
-<wire x1="132.08" y1="154.94" x2="134.62" y2="154.94" width="0.1524" layer="91"/>
-<label x="134.62" y="154.94" size="1.27" layer="95" xref="yes"/>
+<pinref part="U5" gate="A" pin="B"/>
+<wire x1="403.86" y1="218.44" x2="406.4" y2="218.44" width="0.1524" layer="91"/>
+<label x="406.4" y="218.44" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -6596,8 +6775,8 @@ Ex. !RST! can still be used to force a !RST! from mTrain.</text>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="312.42" y1="236.22" x2="312.42" y2="233.68" width="0.1524" layer="91"/>
-<wire x1="312.42" y1="233.68" x2="307.34" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="236.22" x2="276.86" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="233.68" x2="271.78" y2="233.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -6606,19 +6785,6 @@ Ex. !RST! can still be used to force a !RST! from mTrain.</text>
 <wire x1="81.28" y1="172.72" x2="81.28" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="SUPPLY8" gate="G$1" pin="GND"/>
 <pinref part="J1" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$14" class="0">
-<segment>
-<wire x1="309.88" y1="182.88" x2="312.42" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="312.42" y1="182.88" x2="312.42" y2="187.96" width="0.1524" layer="91"/>
-<label x="350.52" y="187.96" size="1.27" layer="95" xref="yes"/>
-<wire x1="312.42" y1="187.96" x2="347.98" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="347.98" y1="187.96" x2="350.52" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="347.98" y1="187.96" x2="347.98" y2="177.8" width="0.1524" layer="91"/>
-<junction x="347.98" y="187.96"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-<pinref part="U4" gate="A" pin="IN1"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -6633,6 +6799,30 @@ Ex. !RST! can still be used to force a !RST! from mTrain.</text>
 <pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="D3" gate="G$1" pin="A"/>
 <wire x1="289.56" y1="60.96" x2="289.56" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="HOST-RX" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="5"/>
+<wire x1="132.08" y1="162.56" x2="134.62" y2="162.56" width="0.1524" layer="91"/>
+<label x="134.62" y="162.56" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U5" gate="A" pin="A"/>
+<wire x1="363.22" y1="218.44" x2="360.68" y2="218.44" width="0.1524" layer="91"/>
+<label x="360.68" y="218.44" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="HOST-TX" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="8"/>
+<wire x1="132.08" y1="154.94" x2="134.62" y2="154.94" width="0.1524" layer="91"/>
+<label x="134.62" y="154.94" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U6" gate="A" pin="A"/>
+<wire x1="363.22" y1="180.34" x2="360.68" y2="180.34" width="0.1524" layer="91"/>
+<label x="360.68" y="180.34" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
