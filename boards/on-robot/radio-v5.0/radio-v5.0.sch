@@ -219,18 +219,6 @@
 actual pad dimension on the part 
 for ease of soldering (twice as long)</text>
 </package>
-<package name="TL6200CBF300QG">
-<smd name="1" x="-3.81" y="6.35" dx="1.2" dy="2.5" layer="1"/>
-<smd name="2" x="-3.81" y="-6.15" dx="1.2" dy="2.5" layer="1"/>
-<smd name="3" x="3.81" y="6.35" dx="1.2" dy="2.5" layer="1"/>
-<smd name="4" x="3.81" y="-6.15" dx="1.2" dy="2.5" layer="1"/>
-<wire x1="-5.05" y1="5.1" x2="5.05" y2="5.1" width="0.127" layer="21"/>
-<wire x1="-5.05" y1="-4.9" x2="5.05" y2="-4.9" width="0.127" layer="21"/>
-<wire x1="-5.05" y1="5.1" x2="-5.05" y2="-4.9" width="0.127" layer="21"/>
-<wire x1="5.05" y1="5.1" x2="5.05" y2="-4.9" width="0.127" layer="21"/>
-<text x="-5" y="8.35" size="1.27" layer="25" ratio="6">&gt;NAME</text>
-<text x="-5" y="-9.65" size="1.27" layer="27" ratio="6">&gt;VALUE</text>
-</package>
 <package name="MOLEX_47590-0001">
 <wire x1="-2.55" y1="2.575" x2="-2.55" y2="3.425" width="0.0001" layer="46"/>
 <wire x1="-2.55" y1="3.425" x2="-1.9" y2="3.425" width="0.0001" layer="46"/>
@@ -314,32 +302,6 @@ for ease of soldering (twice as long)</text>
 <smd name="3" x="0" y="2.675" dx="1.35" dy="0.4" layer="1" rot="R90"/>
 <smd name="4" x="-0.65" y="2.675" dx="1.35" dy="0.4" layer="1" rot="R90"/>
 <smd name="5" x="-1.3" y="2.675" dx="1.35" dy="0.4" layer="1" rot="R90"/>
-</package>
-<package name="SOT95P285X140-6N">
-<description>&lt;b&gt;DMP3056LDM-7-1&lt;/b&gt;&lt;br&gt;
-</description>
-<smd name="1" x="-1.3" y="0.95" dx="1.15" dy="0.6" layer="1"/>
-<smd name="2" x="-1.3" y="0" dx="1.15" dy="0.6" layer="1"/>
-<smd name="3" x="-1.3" y="-0.95" dx="1.15" dy="0.6" layer="1"/>
-<smd name="4" x="1.3" y="-0.95" dx="1.15" dy="0.6" layer="1"/>
-<smd name="5" x="1.3" y="0" dx="1.15" dy="0.6" layer="1"/>
-<smd name="6" x="1.3" y="0.95" dx="1.15" dy="0.6" layer="1"/>
-<text x="0" y="2.54" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="0" y="-2.54" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<wire x1="-2.125" y1="1.8" x2="2.125" y2="1.8" width="0.05" layer="51"/>
-<wire x1="2.125" y1="1.8" x2="2.125" y2="-1.8" width="0.05" layer="51"/>
-<wire x1="2.125" y1="-1.8" x2="-2.125" y2="-1.8" width="0.05" layer="51"/>
-<wire x1="-2.125" y1="-1.8" x2="-2.125" y2="1.8" width="0.05" layer="51"/>
-<wire x1="-0.8" y1="1.5" x2="0.8" y2="1.5" width="0.1" layer="51"/>
-<wire x1="0.8" y1="1.5" x2="0.8" y2="-1.5" width="0.1" layer="51"/>
-<wire x1="0.8" y1="-1.5" x2="-0.8" y2="-1.5" width="0.1" layer="51"/>
-<wire x1="-0.8" y1="-1.5" x2="-0.8" y2="1.5" width="0.1" layer="51"/>
-<wire x1="-0.8" y1="0.55" x2="0.15" y2="1.5" width="0.1" layer="51"/>
-<wire x1="-0.375" y1="1.5" x2="0.375" y2="1.5" width="0.2" layer="21"/>
-<wire x1="0.375" y1="1.5" x2="0.375" y2="-1.5" width="0.2" layer="21"/>
-<wire x1="0.375" y1="-1.5" x2="-0.375" y2="-1.5" width="0.2" layer="21"/>
-<wire x1="-0.375" y1="-1.5" x2="-0.375" y2="1.5" width="0.2" layer="21"/>
-<wire x1="-1.875" y1="1.6" x2="-0.725" y2="1.6" width="0.2" layer="21"/>
 </package>
 <package name="KVU0003A_N">
 <smd name="1" x="-3.869996875" y="2.29" dx="1" dy="2.8" layer="1" rot="R90"/>
@@ -3319,6 +3281,36 @@ for ease of soldering (twice as long)</text>
 <text x="-2.4892" y="-2.54" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Value</text>
 <text x="-2.5146" y="1.27" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 </package>
+<package name="SW_TS09-63-25-WT-260-SMT-TR">
+<circle x="-4.72" y="1.21" radius="0.1" width="0.2" layer="21"/>
+<circle x="-4.72" y="1.21" radius="0.1" width="0.2" layer="51"/>
+<text x="-3.1" y="2.75" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.1" y="-2.7" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
+<wire x1="-3.3" y1="2.1" x2="3.3" y2="2.1" width="0.05" layer="39"/>
+<wire x1="3.3" y1="2.1" x2="3.3" y2="0.75" width="0.05" layer="39"/>
+<wire x1="3.3" y1="0.75" x2="4.55" y2="0.75" width="0.05" layer="39"/>
+<wire x1="4.55" y1="0.75" x2="4.55" y2="-0.75" width="0.05" layer="39"/>
+<wire x1="4.55" y1="-0.75" x2="3.3" y2="-0.75" width="0.05" layer="39"/>
+<wire x1="3.3" y1="-0.75" x2="3.3" y2="-2.1" width="0.05" layer="39"/>
+<wire x1="3.3" y1="-2.1" x2="-3.3" y2="-2.1" width="0.05" layer="39"/>
+<wire x1="-3.3" y1="-2.1" x2="-3.3" y2="-0.75" width="0.05" layer="39"/>
+<wire x1="-3.3" y1="-0.75" x2="-4.55" y2="-0.75" width="0.05" layer="39"/>
+<wire x1="-4.55" y1="-0.75" x2="-4.55" y2="0.75" width="0.05" layer="39"/>
+<wire x1="-4.55" y1="0.75" x2="-3.3" y2="0.75" width="0.05" layer="39"/>
+<wire x1="-3.3" y1="0.75" x2="-3.3" y2="2.1" width="0.05" layer="39"/>
+<wire x1="-3.05" y1="1.85" x2="-3.05" y2="-1.85" width="0.127" layer="51"/>
+<wire x1="-3.05" y1="-1.85" x2="3.05" y2="-1.85" width="0.127" layer="51"/>
+<wire x1="3.05" y1="-1.85" x2="3.05" y2="1.85" width="0.127" layer="51"/>
+<wire x1="3.05" y1="1.85" x2="-3.05" y2="1.85" width="0.127" layer="51"/>
+<wire x1="-3.05" y1="0.85" x2="-3.05" y2="1.85" width="0.127" layer="21"/>
+<wire x1="-3.05" y1="1.85" x2="3.05" y2="1.85" width="0.127" layer="21"/>
+<wire x1="3.05" y1="1.85" x2="3.05" y2="0.85" width="0.127" layer="21"/>
+<wire x1="-3.05" y1="-0.85" x2="-3.05" y2="-1.85" width="0.127" layer="21"/>
+<wire x1="-3.05" y1="-1.85" x2="3.05" y2="-1.85" width="0.127" layer="21"/>
+<wire x1="3.05" y1="-1.85" x2="3.05" y2="-0.85" width="0.127" layer="21"/>
+<smd name="1" x="-3.75" y="0" dx="1.1" dy="1" layer="1"/>
+<smd name="2" x="3.75" y="0" dx="1.1" dy="1" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="RTL8720DN">
@@ -3345,25 +3337,6 @@ for ease of soldering (twice as long)</text>
 <text x="-15.24" y="22.86" size="1.27" layer="95">&gt;NAME</text>
 <text x="-15.24" y="-22.86" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="TL6200CBF300QG">
-<pin name="3" x="-7.62" y="5.08" length="middle" direction="pas"/>
-<pin name="1" x="-7.62" y="-5.08" length="middle" direction="pas"/>
-<pin name="4" x="7.62" y="5.08" length="middle" direction="pas" rot="R180"/>
-<pin name="2" x="7.874" y="-5.08" length="middle" direction="pas" rot="R180"/>
-<wire x1="-5.08" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="-5.08" x2="0" y2="-2.794" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="0" y2="2.286" width="0.254" layer="94"/>
-<wire x1="3.81" y1="2.286" x2="3.81" y2="-0.254" width="0.254" layer="94"/>
-<wire x1="3.81" y1="-0.254" x2="3.81" y2="-2.794" width="0.254" layer="94"/>
-<wire x1="3.81" y1="-0.254" x2="6.35" y2="-0.254" width="0.254" layer="94"/>
-<circle x="0" y="1.524" radius="0.762" width="0.254" layer="94"/>
-<circle x="0" y="-2.032" radius="0.762" width="0.254" layer="94"/>
-<text x="-7.62" y="7.62" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
-</symbol>
 <symbol name="47590-0001">
 <wire x1="5.08" y1="10.16" x2="-5.08" y2="10.16" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
@@ -3377,20 +3350,6 @@ for ease of soldering (twice as long)</text>
 <pin name="4" x="10.16" y="0" length="middle" direction="pas" rot="R180"/>
 <pin name="5" x="10.16" y="-2.54" length="middle" direction="pas" rot="R180"/>
 <pin name="SHIELD" x="10.16" y="-7.62" length="middle" direction="pas" rot="R180"/>
-</symbol>
-<symbol name="DMP3056LDM-7">
-<wire x1="5.08" y1="2.54" x2="20.32" y2="2.54" width="0.254" layer="94"/>
-<wire x1="20.32" y1="-7.62" x2="20.32" y2="2.54" width="0.254" layer="94"/>
-<wire x1="20.32" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
-<text x="21.59" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
-<text x="21.59" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
-<pin name="D_1" x="0" y="0" length="middle"/>
-<pin name="D_2" x="0" y="-2.54" length="middle"/>
-<pin name="G" x="0" y="-5.08" length="middle"/>
-<pin name="D_4" x="25.4" y="0" length="middle" rot="R180"/>
-<pin name="D_3" x="25.4" y="-2.54" length="middle" rot="R180"/>
-<pin name="S" x="25.4" y="-5.08" length="middle" rot="R180"/>
 </symbol>
 <symbol name="UA78M05CKVU">
 <pin name="INPUT" x="-20.32" y="2.54" length="middle" direction="pwr"/>
@@ -3530,6 +3489,16 @@ for ease of soldering (twice as long)</text>
 <text x="-5.3594" y="-1.0414" size="2.0828" layer="96" ratio="6" rot="SR0">&gt;Value</text>
 <text x="-5.3594" y="-1.0414" size="2.0828" layer="96" ratio="6" rot="SR0">&gt;Value</text>
 </symbol>
+<symbol name="TS09-63-25-WT-260-SMT-TR">
+<text x="-2.54" y="2.54" size="1.27" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="1.27" layer="96" align="top-left">&gt;VALUE</text>
+<wire x1="-2.54" y1="0" x2="2.794" y2="2.1336" width="0.1524" layer="94"/>
+<circle x="2.54" y="0" radius="0.3302" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="0" x2="2.921" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-5.08" y2="0" width="0.1524" layer="94"/>
+<pin name="1" x="-7.62" y="0" visible="pad" length="short" direction="pas"/>
+<pin name="2" x="7.62" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="RTL8720DN" prefix="U">
@@ -3563,24 +3532,6 @@ for ease of soldering (twice as long)</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TL6200CBF300QG" prefix="S">
-<gates>
-<gate name="A" symbol="TL6200CBF300QG" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TL6200CBF300QG">
-<connects>
-<connect gate="A" pin="1" pad="1"/>
-<connect gate="A" pin="2" pad="2"/>
-<connect gate="A" pin="3" pad="3"/>
-<connect gate="A" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="47590-0001" prefix="J">
 <description>0.65mm (.0256") Pitch Micro-USB AB Receptacle, Right Angle, Bottom Mount, SMT, Lead Free </description>
 <gates>
@@ -3604,37 +3555,6 @@ for ease of soldering (twice as long)</text>
 <attribute name="MP" value="47590-0001"/>
 <attribute name="PACKAGE" value="None"/>
 <attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/47590-0001/?ref=eda"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="DMP3056LDM-7" prefix="Q">
-<description>&lt;b&gt;Trans MOSFET PCH 30V 5A 6Pin SOT26&lt;/b&gt;&lt;p&gt;
-Source: &lt;a href="https://www.diodes.com/assets/Datasheets/ds31449.pdf"&gt; Datasheet &lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="DMP3056LDM-7" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT95P285X140-6N">
-<connects>
-<connect gate="G$1" pin="D_1" pad="1"/>
-<connect gate="G$1" pin="D_2" pad="2"/>
-<connect gate="G$1" pin="D_3" pad="5"/>
-<connect gate="G$1" pin="D_4" pad="6"/>
-<connect gate="G$1" pin="G" pad="3"/>
-<connect gate="G$1" pin="S" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="ARROW_PART_NUMBER" value="DMP3056LDM-7" constant="no"/>
-<attribute name="ARROW_PRICE-STOCK" value="https://www.arrow.com/en/products/dmp3056ldm-7/diodes-incorporated?region=nac" constant="no"/>
-<attribute name="DESCRIPTION" value="Trans MOSFET PCH 30V 5A 6Pin SOT26" constant="no"/>
-<attribute name="HEIGHT" value="1.4mm" constant="no"/>
-<attribute name="MANUFACTURER_NAME" value="Diodes Inc." constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="DMP3056LDM-7" constant="no"/>
-<attribute name="MOUSER_PART_NUMBER" value="621-DMP3056LDM-7" constant="no"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/DMP3056LDM-7?qs=ptj1V1atRAr09JA7Hjs5uw%3D%3D" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -3849,6 +3769,29 @@ Source: &lt;a href="https://www.diodes.com/assets/Datasheets/ds31449.pdf"&gt; Da
 <attribute name="MFR_NAME" value="Texas Instruments" constant="no"/>
 <attribute name="REFDES" value="RefDes" constant="no"/>
 <attribute name="TYPE" value="TYPE" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TS09-63-25-WT-260-SMT-TR" prefix="S">
+<gates>
+<gate name="G$1" symbol="TS09-63-25-WT-260-SMT-TR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SW_TS09-63-25-WT-260-SMT-TR">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value=" Switch Tactile OFF (ON) SPST Rectangular Button Gull Wing 0.05A 12VDC 40000Cycles 2.6N SMD T/R "/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="2223-TS09-63-25-WT-260-SMT-TR-ND"/>
+<attribute name="MF" value="CUI DEVICES"/>
+<attribute name="MP" value="TS09-63-25-WT-260-SMT-TR"/>
+<attribute name="PACKAGE" value="None"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/TS09-63-25-WT-260-SMT-TR/?ref=eda"/>
 </technology>
 </technologies>
 </device>
@@ -5952,7 +5895,6 @@ Source: &lt;a href="https://datasheet.datasheetarchive.com/originals/distributor
 <part name="SUPPLY4" library="Power_Symbols" library_urn="urn:adsk.eagle:library:16502351" deviceset="GND-EARTH" device="" value="GND"/>
 <part name="SUPPLY5" library="Power_Symbols" library_urn="urn:adsk.eagle:library:16502351" deviceset="GND-EARTH" device="" value="GND"/>
 <part name="SUPPLY6" library="Power_Symbols" library_urn="urn:adsk.eagle:library:16502351" deviceset="GND-EARTH" device="" value="GND"/>
-<part name="SUPPLY7" library="Power_Symbols" library_urn="urn:adsk.eagle:library:16502351" deviceset="GND-EARTH" device="" value="GND"/>
 <part name="SUPPLY8" library="Power_Symbols" library_urn="urn:adsk.eagle:library:16502351" deviceset="GND-EARTH" device="" value="GND"/>
 <part name="SUPPLY9" library="Power_Symbols" library_urn="urn:adsk.eagle:library:16502351" deviceset="GND-EARTH" device="" value="GND"/>
 <part name="C6" library="Capacitor" library_urn="urn:adsk.eagle:library:16290819" deviceset="C" device="CHIP-0603(1608-METRIC)" package3d_urn="urn:adsk.eagle:package:16290898/2" technology="_" value=".1uF"/>
@@ -5967,10 +5909,7 @@ Source: &lt;a href="https://datasheet.datasheetarchive.com/originals/distributor
 <part name="J2" library="RoboJackets-Connectors" deviceset="SFW8R-2STE1LF" device=""/>
 <part name="JP1" library="Connector" library_urn="urn:adsk.eagle:library:16378166" deviceset="PINHD-1X8" device="" package3d_urn="urn:adsk.eagle:package:22409/2"/>
 <part name="JP2" library="Connector" library_urn="urn:adsk.eagle:library:16378166" deviceset="PINHD-1X8" device="" package3d_urn="urn:adsk.eagle:package:22409/2"/>
-<part name="S1" library="radio-v5.0" deviceset="TL6200CBF300QG" device=""/>
-<part name="S2" library="radio-v5.0" deviceset="TL6200CBF300QG" device=""/>
 <part name="J1" library="radio-v5.0" deviceset="47590-0001" device=""/>
-<part name="Q1" library="radio-v5.0" deviceset="DMP3056LDM-7" device=""/>
 <part name="U2" library="radio-v5.0" deviceset="UA78M33CKVURG3" device=""/>
 <part name="U3" library="radio-v5.0" deviceset="CH340E" device=""/>
 <part name="U4" library="radio-v5.0" deviceset="TPS2105MDBVREP" device=""/>
@@ -5986,6 +5925,8 @@ Source: &lt;a href="https://datasheet.datasheetarchive.com/originals/distributor
 <part name="U6" library="radio-v5.0" deviceset="SN74LVC1T45DRLR" device=""/>
 <part name="SUPPLY17" library="Power_Symbols" library_urn="urn:adsk.eagle:library:16502351" deviceset="GND-EARTH" device="" value="GND"/>
 <part name="SUPPLY18" library="Power_Symbols" library_urn="urn:adsk.eagle:library:16502351" deviceset="GND-EARTH" device="" value="GND"/>
+<part name="S1" library="radio-v5.0" deviceset="TS09-63-25-WT-260-SMT-TR" device=""/>
+<part name="S2" library="radio-v5.0" deviceset="TS09-63-25-WT-260-SMT-TR" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6011,11 +5952,6 @@ voltage regulator if the board is
 <text x="27.94" y="127" size="5.08" layer="97">RTL8720DN</text>
 <text x="210.82" y="152.4" size="1.27" layer="97">Dual USB/Voltage Source circuit
 https://electronics.stackexchange.com/questions/529115/power-a-circuit-with-power-supply-and-usb-port-my-solution</text>
-<text x="208.28" y="205.74" size="1.27" layer="97">P-Channel MOSFET for reverse polarity protection.
-P-Channel MOSFETs don't conduct current
-in the reverse direction when the source is
-connected to the load and the drain is
-connected to the voltage source.</text>
 <wire x1="185.42" y1="104.14" x2="426.72" y2="104.14" width="0.1524" layer="97" style="longdash"/>
 <wire x1="426.72" y1="104.14" x2="426.72" y2="38.1" width="0.1524" layer="97" style="longdash"/>
 <wire x1="426.72" y1="38.1" x2="185.42" y2="38.1" width="0.1524" layer="97" style="longdash"/>
@@ -6094,9 +6030,6 @@ Ex. !RST! can still be used to force a !RST! from mTrain.</text>
 <instance part="SUPPLY6" gate="G$1" x="276.86" y="160.02" smashed="yes">
 <attribute name="VALUE" x="276.86" y="156.845" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="SUPPLY7" gate="G$1" x="248.92" y="203.2" smashed="yes">
-<attribute name="VALUE" x="248.92" y="200.025" size="1.778" layer="96" align="center"/>
-</instance>
 <instance part="SUPPLY8" gate="G$1" x="81.28" y="167.64" smashed="yes">
 <attribute name="VALUE" x="81.28" y="164.465" size="1.778" layer="96" align="center"/>
 </instance>
@@ -6117,15 +6050,15 @@ Ex. !RST! can still be used to force a !RST! from mTrain.</text>
 <instance part="SUPPLY11" gate="G$1" x="200.66" y="68.58" smashed="yes">
 <attribute name="VALUE" x="200.66" y="65.405" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="SUPPLY12" gate="G$1" x="121.92" y="88.9" smashed="yes">
-<attribute name="VALUE" x="121.92" y="85.725" size="1.778" layer="96" align="center"/>
+<instance part="SUPPLY12" gate="G$1" x="121.92" y="83.82" smashed="yes">
+<attribute name="VALUE" x="121.92" y="80.645" size="1.778" layer="96" align="center"/>
 </instance>
 <instance part="R1" gate="G$1" x="127" y="71.12" smashed="yes">
 <attribute name="NAME" x="127" y="73.8886" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="127" y="67.818" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="SUPPLY13" gate="G$1" x="134.62" y="55.88" smashed="yes">
-<attribute name="VALUE" x="134.62" y="52.705" size="1.778" layer="96" align="center"/>
+<instance part="SUPPLY13" gate="G$1" x="134.62" y="50.8" smashed="yes">
+<attribute name="VALUE" x="134.62" y="47.625" size="1.778" layer="96" align="center"/>
 </instance>
 <instance part="D1" gate="G$1" x="269.24" y="233.68" smashed="yes" rot="R270">
 <attribute name="NAME" x="266.7" y="230.378" size="1.778" layer="95" rot="R180" align="top-right"/>
@@ -6147,21 +6080,9 @@ Ex. !RST! can still be used to force a !RST! from mTrain.</text>
 <attribute name="NAME" x="113.03" y="229.235" size="1.778" layer="95"/>
 <attribute name="VALUE" x="113.03" y="203.2" size="1.778" layer="96"/>
 </instance>
-<instance part="S1" gate="A" x="132.08" y="99.06" smashed="yes">
-<attribute name="NAME" x="124.46" y="106.68" size="1.778" layer="95"/>
-<attribute name="VALUE" x="124.46" y="91.44" size="1.778" layer="96"/>
-</instance>
-<instance part="S2" gate="A" x="144.78" y="66.04" smashed="yes">
-<attribute name="NAME" x="137.16" y="73.66" size="1.778" layer="95"/>
-<attribute name="VALUE" x="137.16" y="58.42" size="1.778" layer="96"/>
-</instance>
 <instance part="J1" gate="G$1" x="55.88" y="165.1" smashed="yes">
 <attribute name="NAME" x="50.79378125" y="175.2724" size="1.783209375" layer="95"/>
 <attribute name="VALUE" x="50.799540625" y="154.9391" size="1.77996875" layer="96" rot="MR180"/>
-</instance>
-<instance part="Q1" gate="G$1" x="251.46" y="213.36" smashed="yes">
-<attribute name="NAME" x="273.05" y="220.98" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="273.05" y="218.44" size="1.778" layer="96" align="center-left"/>
 </instance>
 <instance part="U2" gate="A" x="220.98" y="238.76" smashed="yes">
 <attribute name="NAME" x="206.0956" y="247.8786" size="2.0828" layer="95" ratio="6" rot="SR0"/>
@@ -6218,6 +6139,14 @@ Ex. !RST! can still be used to force a !RST! from mTrain.</text>
 <instance part="SUPPLY18" gate="G$1" x="383.54" y="157.48" smashed="yes">
 <attribute name="VALUE" x="383.54" y="154.305" size="1.778" layer="96" align="center"/>
 </instance>
+<instance part="S1" gate="G$1" x="124.46" y="96.52" smashed="yes" rot="R270">
+<attribute name="NAME" x="127" y="99.06" size="1.27" layer="95" rot="R270"/>
+<attribute name="VALUE" x="132.08" y="104.14" size="1.27" layer="96" rot="R270" align="top-left"/>
+</instance>
+<instance part="S2" gate="G$1" x="137.16" y="63.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="139.7" y="66.04" size="1.27" layer="95" rot="R270"/>
+<attribute name="VALUE" x="144.78" y="71.12" size="1.27" layer="96" rot="R270" align="top-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6261,7 +6190,7 @@ Ex. !RST! can still be used to force a !RST! from mTrain.</text>
 <wire x1="124.46" y1="104.14" x2="121.92" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="104.14" x2="121.92" y2="106.68" width="0.1524" layer="91"/>
 <label x="121.92" y="106.68" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="S1" gate="A" pin="3"/>
+<pinref part="S1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="PA15" class="0">
@@ -6351,12 +6280,6 @@ Ex. !RST! can still be used to force a !RST! from mTrain.</text>
 <pinref part="SUPPLY6" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="251.46" y1="208.28" x2="248.92" y2="208.28" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="208.28" x2="248.92" y2="205.74" width="0.1524" layer="91"/>
-<pinref part="SUPPLY7" gate="G$1" pin="GND"/>
-<pinref part="Q1" gate="G$1" pin="G"/>
-</segment>
-<segment>
 <wire x1="256.54" y1="233.68" x2="256.54" y2="231.14" width="0.1524" layer="91"/>
 <pinref part="SUPPLY9" gate="G$1" pin="GND"/>
 <wire x1="256.54" y1="233.68" x2="246.38" y2="233.68" width="0.1524" layer="91"/>
@@ -6381,16 +6304,16 @@ Ex. !RST! can still be used to force a !RST! from mTrain.</text>
 <pinref part="U3" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="124.46" y1="93.98" x2="121.92" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="93.98" x2="121.92" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="88.9" x2="121.92" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="88.9" x2="121.92" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="SUPPLY12" gate="G$1" pin="GND"/>
-<pinref part="S1" gate="A" pin="1"/>
+<pinref part="S1" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<wire x1="137.16" y1="60.96" x2="134.62" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="60.96" x2="134.62" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="55.88" x2="134.62" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="55.88" x2="134.62" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="SUPPLY13" gate="G$1" pin="GND"/>
-<pinref part="S2" gate="A" pin="1"/>
+<pinref part="S2" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="C4" gate="G$1" pin="2"/>
@@ -6447,25 +6370,23 @@ Ex. !RST! can still be used to force a !RST! from mTrain.</text>
 <pinref part="JP1" gate="A" pin="8"/>
 </segment>
 <segment>
-<wire x1="251.46" y1="210.82" x2="251.46" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="213.36" x2="251.46" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="218.44" x2="276.86" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="276.86" y1="218.44" x2="276.86" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="276.86" y1="213.36" x2="276.86" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="218.44" x2="248.92" y2="218.44" width="0.1524" layer="91"/>
-<junction x="251.46" y="218.44"/>
-<label x="248.92" y="218.44" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="Q1" gate="G$1" pin="D_1"/>
-<junction x="251.46" y="213.36"/>
-<pinref part="Q1" gate="G$1" pin="D_2"/>
-<pinref part="Q1" gate="G$1" pin="D_4"/>
-<junction x="276.86" y="213.36"/>
-<pinref part="Q1" gate="G$1" pin="D_3"/>
-</segment>
-<segment>
 <pinref part="J2" gate="G$1" pin="1"/>
 <wire x1="132.08" y1="172.72" x2="134.62" y2="172.72" width="0.1524" layer="91"/>
 <label x="134.62" y="172.72" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="274.32" y1="177.8" x2="276.86" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="177.8" x2="276.86" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="177.8" x2="279.4" y2="177.8" width="0.1524" layer="91"/>
+<junction x="276.86" y="177.8"/>
+<label x="279.4" y="177.8" size="1.27" layer="95" xref="yes"/>
+<pinref part="U4" gate="A" pin="IN2"/>
+</segment>
+<segment>
+<pinref part="U4" gate="A" pin="EN"/>
+<wire x1="223.52" y1="182.88" x2="223.52" y2="187.96" width="0.1524" layer="91" style="longdash"/>
+<label x="223.52" y="187.96" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PB1" class="0">
@@ -6699,27 +6620,6 @@ Ex. !RST! can still be used to force a !RST! from mTrain.</text>
 <label x="360.68" y="187.96" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="VMAIN" class="0">
-<segment>
-<wire x1="276.86" y1="208.28" x2="279.4" y2="208.28" width="0.1524" layer="91"/>
-<label x="279.4" y="208.28" size="1.27" layer="95" xref="yes"/>
-<pinref part="Q1" gate="G$1" pin="S"/>
-</segment>
-<segment>
-<pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="274.32" y1="177.8" x2="276.86" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="276.86" y1="177.8" x2="276.86" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="276.86" y1="177.8" x2="279.4" y2="177.8" width="0.1524" layer="91"/>
-<junction x="276.86" y="177.8"/>
-<label x="279.4" y="177.8" size="1.27" layer="95" xref="yes"/>
-<pinref part="U4" gate="A" pin="IN2"/>
-</segment>
-<segment>
-<pinref part="U4" gate="A" pin="EN"/>
-<wire x1="223.52" y1="182.88" x2="223.52" y2="187.96" width="0.1524" layer="91" style="longdash"/>
-<label x="223.52" y="187.96" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="RX" class="0">
 <segment>
 <wire x1="251.46" y1="76.2" x2="276.86" y2="76.2" width="0.1524" layer="91"/>
@@ -6768,7 +6668,7 @@ Ex. !RST! can still be used to force a !RST! from mTrain.</text>
 <segment>
 <wire x1="137.16" y1="71.12" x2="132.08" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="S2" gate="A" pin="3"/>
+<pinref part="S2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$3" class="0">
