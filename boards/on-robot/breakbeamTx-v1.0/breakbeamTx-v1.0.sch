@@ -3599,58 +3599,6 @@ In this library you will find frames that can be used to help organize a schemat
 </deviceset>
 </devicesets>
 </library>
-<library name="RoboJackets-Connectors">
-<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
-&lt;hr&gt;
-&lt;h1&gt;RoboJackets EAGLE Libraries - Connectors&lt;/h1&gt;&lt;/br&gt;
-&lt;p&gt;
-In this library you will find all the connectors used on any of our boards.
-&lt;/p&gt;</description>
-<packages>
-<package name="0436500213">
-<smd name="P$1" x="-5.385" y="0" dx="3.43" dy="1.65" layer="1"/>
-<smd name="P$2" x="5.385" y="0" dx="3.43" dy="1.65" layer="1"/>
-<smd name="1" x="-1.5" y="5.47" dx="2.92" dy="1.27" layer="1" rot="R90"/>
-<smd name="2" x="1.5" y="5.47" dx="2.92" dy="1.27" layer="1" rot="R90"/>
-<wire x1="-5" y1="-3" x2="-5" y2="5.4" width="0.127" layer="21"/>
-<wire x1="-5" y1="5.4" x2="5" y2="5.4" width="0.127" layer="21"/>
-<wire x1="5" y1="5.4" x2="5" y2="-3" width="0.127" layer="21"/>
-<wire x1="5" y1="-3" x2="-5" y2="-3" width="0.127" layer="21"/>
-<text x="-5.08" y="7.62" size="1.27" layer="21">&gt;Name</text>
-<text x="-5.08" y="-5.08" size="1.27" layer="21">&gt;Value</text>
-</package>
-</packages>
-<symbols>
-<symbol name="PINHD2">
-<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="1.27" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="5.08" x2="-6.35" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="-6.35" y1="5.08" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
-<text x="-6.35" y="5.715" size="1.778" layer="95">&gt;NAME</text>
-<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="2" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="0436500213">
-<gates>
-<gate name="G$1" symbol="PINHD2" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="0436500213">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2" route="any"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="RoboJackets-Resistors">
 <description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
 &lt;hr&gt;
@@ -3800,6 +3748,58 @@ Datasheet Link: https://industrial.panasonic.com/ww/products/pt/general-purpose-
 </deviceset>
 </devicesets>
 </library>
+<library name="RoboJackets-Connectors">
+<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
+&lt;hr&gt;
+&lt;h1&gt;RoboJackets EAGLE Libraries - Connectors&lt;/h1&gt;&lt;/br&gt;
+&lt;p&gt;
+In this library you will find all the connectors used on any of our boards.
+&lt;/p&gt;</description>
+<packages>
+<package name="0436500213">
+<smd name="P$1" x="-5.385" y="0" dx="3.43" dy="1.65" layer="1"/>
+<smd name="P$2" x="5.385" y="0" dx="3.43" dy="1.65" layer="1"/>
+<smd name="1" x="-1.5" y="5.47" dx="2.92" dy="1.27" layer="1" rot="R90"/>
+<smd name="2" x="1.5" y="5.47" dx="2.92" dy="1.27" layer="1" rot="R90"/>
+<wire x1="-5" y1="-3" x2="-5" y2="5.4" width="0.127" layer="21"/>
+<wire x1="-5" y1="5.4" x2="5" y2="5.4" width="0.127" layer="21"/>
+<wire x1="5" y1="5.4" x2="5" y2="-3" width="0.127" layer="21"/>
+<wire x1="5" y1="-3" x2="-5" y2="-3" width="0.127" layer="21"/>
+<text x="-5.08" y="7.62" size="1" layer="21" font="vector" ratio="10">&gt;Name</text>
+<text x="-5.08" y="-5.08" size="1" layer="21" font="vector" ratio="10">&gt;Value</text>
+</package>
+</packages>
+<symbols>
+<symbol name="PINHD2">
+<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.27" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="5.08" x2="-6.35" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-6.35" y1="5.08" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
+<text x="-6.35" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="2" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="0436500213" prefix="J">
+<gates>
+<gate name="G$1" symbol="PINHD2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0436500213">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2" route="any"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3815,10 +3815,10 @@ Datasheet Link: https://industrial.panasonic.com/ww/products/pt/general-purpose-
 <attribute name="TEAM" value="RoboCup"/>
 </part>
 <part name="SUPPLY1" library="RoboJackets-Supplies" deviceset="GND" device=""/>
-<part name="J1" library="RoboJackets-Connectors" deviceset="0436500213" device="" override_package3d_urn="urn:adsk.eagle:package:33521981/2" override_package_urn="urn:adsk.eagle:footprint:33521982/1"/>
 <part name="D2" library="RoboJackets-LEDs" deviceset="LED-SMD" device="" override_package3d_urn="urn:adsk.eagle:package:33695372/2" override_package_urn="urn:adsk.eagle:footprint:33695373/1"/>
 <part name="R1" library="RoboJackets-Resistors" deviceset="R330" device="-0603-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39650/1" value="330"/>
 <part name="D1" library="VSLY5940" deviceset="VSLY5940" device=""/>
+<part name="J1" library="RoboJackets-Connectors" deviceset="0436500213" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3839,10 +3839,6 @@ Datasheet Link: https://industrial.panasonic.com/ww/products/pt/general-purpose-
 <instance part="SUPPLY1" gate="G$1" x="27.94" y="-30.48" smashed="yes">
 <attribute name="VALUE" x="25.4" y="-33.02" size="1.778" layer="96"/>
 </instance>
-<instance part="J1" gate="G$1" x="2.54" y="2.54" smashed="yes" rot="R180">
-<attribute name="NAME" x="8.89" y="-3.175" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="8.89" y="7.62" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="D2" gate="A" x="17.78" y="-20.32" smashed="yes" rot="R270">
 <attribute name="NAME" x="21.844" y="-21.082" size="1.778" layer="95" rot="MR90" align="bottom-center"/>
 <attribute name="VALUE" x="15.24" y="-19.304" size="1.778" layer="96" rot="MR90" align="top-center"/>
@@ -3854,6 +3850,10 @@ Datasheet Link: https://industrial.panasonic.com/ww/products/pt/general-purpose-
 <instance part="D1" gate="G$1" x="27.94" y="-13.716" smashed="yes" rot="R270">
 <attribute name="NAME" x="33.274" y="-10.922" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="23.368" y="-6.35" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="J1" gate="G$1" x="2.54" y="2.54" smashed="yes" rot="R180">
+<attribute name="NAME" x="8.89" y="-3.175" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="8.89" y="7.62" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -3868,17 +3868,16 @@ Datasheet Link: https://industrial.panasonic.com/ww/products/pt/general-purpose-
 <pinref part="D2" gate="A" pin="C"/>
 <wire x1="17.78" y1="-22.86" x2="17.78" y2="-25.4" width="0.1524" layer="91"/>
 <junction x="17.78" y="-25.4"/>
-<pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="5.08" y1="0" x2="10.16" y2="0" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="0" x2="10.16" y2="-25.4" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="27.94" y1="-25.4" x2="27.94" y2="-18.796" width="0.1524" layer="91"/>
 <junction x="27.94" y="-25.4"/>
+<pinref part="J1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="BB_TX" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="2"/>
 <wire x1="5.08" y1="2.54" x2="17.78" y2="2.54" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="2.54" x2="27.94" y2="2.54" width="0.1524" layer="91"/>
 <junction x="17.78" y="2.54"/>
@@ -3886,6 +3885,7 @@ Datasheet Link: https://industrial.panasonic.com/ww/products/pt/general-purpose-
 <wire x1="17.78" y1="-1.524" x2="17.78" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="A"/>
 <wire x1="27.94" y1="2.54" x2="27.94" y2="-6.096" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$2" class="0">
