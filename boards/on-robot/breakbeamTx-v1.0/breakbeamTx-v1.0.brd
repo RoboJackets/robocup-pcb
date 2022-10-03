@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
@@ -203,7 +203,6 @@
 <wire x1="8.8101" y1="-7" x2="10" y2="-5.8101" width="0" layer="20" curve="90"/>
 <hole x="12" y="27" drill="3"/>
 <hole x="7" y="-1" drill="3"/>
-<text x="-1.4" y="29.2" size="1" layer="25" font="vector" ratio="15">J1</text>
 <text x="-1.5" y="-5.9" size="1.778" layer="21" font="vector" ratio="15">Transmit</text>
 <text x="1.5" y="13.8" size="1" layer="25" font="vector" ratio="15" rot="R90">Breakbeam TX v1.0
 RoboJackets
@@ -235,28 +234,6 @@ In this library you will find LEDs and other visual output devices.
 <wire x1="-1.3" y1="0.5" x2="1.3" y2="0.5" width="0.05" layer="39"/>
 <wire x1="1.3" y1="0.5" x2="1.3" y2="-0.5" width="0.05" layer="39"/>
 <wire x1="1.3" y1="-0.5" x2="-1.3" y2="-0.5" width="0.05" layer="39"/>
-</package>
-</packages>
-</library>
-<library name="RoboJackets-Connectors">
-<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
-&lt;hr&gt;
-&lt;h1&gt;RoboJackets EAGLE Libraries - Connectors&lt;/h1&gt;&lt;/br&gt;
-&lt;p&gt;
-In this library you will find all the connectors used on any of our boards.
-&lt;/p&gt;</description>
-<packages>
-<package name="0436500213">
-<smd name="P$1" x="-5.385" y="0" dx="3.43" dy="1.65" layer="1"/>
-<smd name="P$2" x="5.385" y="0" dx="3.43" dy="1.65" layer="1"/>
-<smd name="1" x="-1.5" y="5.47" dx="2.92" dy="1.27" layer="1" rot="R90"/>
-<smd name="2" x="1.5" y="5.47" dx="2.92" dy="1.27" layer="1" rot="R90"/>
-<wire x1="-5" y1="-3" x2="-5" y2="5.4" width="0.127" layer="21"/>
-<wire x1="-5" y1="5.4" x2="5" y2="5.4" width="0.127" layer="21"/>
-<wire x1="5" y1="5.4" x2="5" y2="-3" width="0.127" layer="21"/>
-<wire x1="5" y1="-3" x2="-5" y2="-3" width="0.127" layer="21"/>
-<text x="-5.08" y="7.62" size="1.27" layer="21">&gt;Name</text>
-<text x="-5.08" y="-5.08" size="1.27" layer="21">&gt;Value</text>
 </package>
 </packages>
 </library>
@@ -3545,6 +3522,28 @@ In this library you will find logos and images specific to RoboJackets. The part
 </package>
 </packages>
 </library>
+<library name="RoboJackets-Connectors">
+<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
+&lt;hr&gt;
+&lt;h1&gt;RoboJackets EAGLE Libraries - Connectors&lt;/h1&gt;&lt;/br&gt;
+&lt;p&gt;
+In this library you will find all the connectors used on any of our boards.
+&lt;/p&gt;</description>
+<packages>
+<package name="0436500213">
+<smd name="P$1" x="-5.385" y="0" dx="3.43" dy="1.65" layer="1"/>
+<smd name="P$2" x="5.385" y="0" dx="3.43" dy="1.65" layer="1"/>
+<smd name="1" x="-1.5" y="5.47" dx="2.92" dy="1.27" layer="1" rot="R90"/>
+<smd name="2" x="1.5" y="5.47" dx="2.92" dy="1.27" layer="1" rot="R90"/>
+<wire x1="-5" y1="-3" x2="-5" y2="5.4" width="0.127" layer="21"/>
+<wire x1="-5" y1="5.4" x2="5" y2="5.4" width="0.127" layer="21"/>
+<wire x1="5" y1="5.4" x2="5" y2="-3" width="0.127" layer="21"/>
+<wire x1="5" y1="-3" x2="-5" y2="-3" width="0.127" layer="21"/>
+<text x="-5.08" y="7.62" size="1" layer="21" font="vector" ratio="10">&gt;Name</text>
+<text x="-5.08" y="-5.08" size="1" layer="21" font="vector" ratio="10">&gt;Value</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3731,7 +3730,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 </pass>
 </autorouter>
 <elements>
-<element name="J1" library="RoboJackets-Connectors" package="0436500213" override_package3d_urn="urn:adsk.eagle:package:33521981/2" override_package_urn="urn:adsk.eagle:footprint:33521982/1" value="0436500213" x="5.5" y="34" smashed="yes" rot="R180"/>
 <element name="D2" library="RoboJackets-LEDs" package="LED0603" override_package3d_urn="urn:adsk.eagle:package:33695372/2" override_package_urn="urn:adsk.eagle:footprint:33695373/1" value="LED-SMD" x="7" y="23" smashed="yes" rot="R90">
 <attribute name="DKPN" value="" x="7" y="23" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="7.65" y="23.1" size="1" layer="25" font="vector" ratio="15" rot="R270" align="bottom-center"/>
@@ -3749,35 +3747,39 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/VSLY5940/?ref=eda" x="1" y="0.4" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="U$1" library="RoboJackets-Aesthetics" package="ROBOBUZZ_0.8X" value="" x="4" y="-1.5" smashed="yes"/>
+<element name="J1" library="RoboJackets-Connectors" package="0436500213" value="0436500213" x="5.5" y="34" smashed="yes" rot="R180">
+<attribute name="NAME" x="12.58" y="30.38" size="1" layer="21" font="vector" ratio="10" rot="R180"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
 <contactref element="D2" pad="C"/>
-<contactref element="J1" pad="1"/>
-<wire x1="7" y1="23.775" x2="7" y2="28.53" width="1" layer="1"/>
 <contactref element="D1" pad="C"/>
-<wire x1="4.8947125" y1="31.617" x2="2.1052875" y2="31.617" width="1" layer="1"/>
-<wire x1="2.1052875" y1="31.617" x2="-0.27" y2="29.2417125" width="1" layer="1"/>
-<wire x1="-0.27" y1="29.2417125" x2="-0.27" y2="0.4" width="1" layer="1"/>
-<wire x1="7" y1="28.53" x2="7" y2="29.5117125" width="1" layer="1"/>
-<wire x1="7" y1="29.5117125" x2="4.8947125" y2="31.617" width="1" layer="1"/>
+<wire x1="4.8947125" y1="31.617" x2="2.1052875" y2="31.617" width="0.5" layer="1"/>
+<wire x1="2.1052875" y1="31.617" x2="-0.27" y2="29.2417125" width="0.5" layer="1"/>
+<wire x1="-0.27" y1="29.2417125" x2="-0.27" y2="0.4" width="0.5" layer="1"/>
+<wire x1="7" y1="29.5117125" x2="4.8947125" y2="31.617" width="0.5" layer="1"/>
+<contactref element="J1" pad="1"/>
+<wire x1="7" y1="28.53" x2="7" y2="27" width="0.5" layer="1"/>
+<wire x1="7" y1="27" x2="7" y2="23.775" width="0.5" layer="1"/>
+<wire x1="7" y1="28.53" x2="7" y2="29.5117125" width="0.5" layer="1"/>
 </signal>
 <signal name="BB_TX">
-<contactref element="J1" pad="2" route="any" routetag="G$1.2"/>
-<wire x1="4" y1="28.53" x2="3.865" y2="28.395" width="1" layer="1"/>
 <contactref element="R1" pad="2"/>
 <contactref element="D1" pad="A"/>
-<wire x1="6.9" y1="16.05" x2="6.9" y2="2.4" width="1" layer="1"/>
-<wire x1="3.865" y1="1.995" x2="2.27" y2="0.4" width="1" layer="1"/>
-<wire x1="3.865" y1="28.395" x2="3.865" y2="1.995" width="1" layer="1"/>
-<wire x1="6.9" y1="2.4" x2="6.495" y2="1.995" width="1" layer="1"/>
-<wire x1="6.495" y1="1.995" x2="3.865" y2="1.995" width="1" layer="1"/>
+<wire x1="6.9" y1="16.05" x2="6.9" y2="2.4" width="0.5" layer="1"/>
+<wire x1="3.865" y1="1.995" x2="2.27" y2="0.4" width="0.5" layer="1"/>
+<wire x1="6.9" y1="2.4" x2="6.495" y2="1.995" width="0.5" layer="1"/>
+<wire x1="6.495" y1="1.995" x2="3.865" y2="1.995" width="0.5" layer="1"/>
+<contactref element="J1" pad="2" route="any" routetag="G$1.2"/>
+<wire x1="3.865" y1="28.395" x2="4" y2="28.53" width="0.5" layer="1"/>
+<wire x1="3.865" y1="1.995" x2="3.865" y2="28.395" width="0.5" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="D2" pad="A"/>
 <contactref element="R1" pad="1"/>
-<wire x1="6.9" y1="17.75" x2="7" y2="17.85" width="1" layer="1"/>
-<wire x1="7" y1="17.85" x2="7" y2="22.225" width="1" layer="1"/>
+<wire x1="6.9" y1="17.75" x2="7" y2="17.85" width="0.5" layer="1"/>
+<wire x1="7" y1="17.85" x2="7" y2="22.225" width="0.5" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

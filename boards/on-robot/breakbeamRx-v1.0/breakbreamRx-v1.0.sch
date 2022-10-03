@@ -3476,58 +3476,6 @@ In this library you will find frames that can be used to help organize a schemat
 </deviceset>
 </devicesets>
 </library>
-<library name="RoboJackets-Connectors">
-<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
-&lt;hr&gt;
-&lt;h1&gt;RoboJackets EAGLE Libraries - Connectors&lt;/h1&gt;&lt;/br&gt;
-&lt;p&gt;
-In this library you will find all the connectors used on any of our boards.
-&lt;/p&gt;</description>
-<packages>
-<package name="0436500213">
-<smd name="P$1" x="-5.385" y="0" dx="3.43" dy="1.65" layer="1"/>
-<smd name="P$2" x="5.385" y="0" dx="3.43" dy="1.65" layer="1"/>
-<smd name="1" x="-1.5" y="5.47" dx="2.92" dy="1.27" layer="1" rot="R90"/>
-<smd name="2" x="1.5" y="5.47" dx="2.92" dy="1.27" layer="1" rot="R90"/>
-<wire x1="-5" y1="-3" x2="-5" y2="5.4" width="0.127" layer="21"/>
-<wire x1="-5" y1="5.4" x2="5" y2="5.4" width="0.127" layer="21"/>
-<wire x1="5" y1="5.4" x2="5" y2="-3" width="0.127" layer="21"/>
-<wire x1="5" y1="-3" x2="-5" y2="-3" width="0.127" layer="21"/>
-<text x="-5.08" y="7.62" size="1.27" layer="21">&gt;Name</text>
-<text x="-5.08" y="-5.08" size="1.27" layer="21">&gt;Value</text>
-</package>
-</packages>
-<symbols>
-<symbol name="PINHD2">
-<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="1.27" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="5.08" x2="-6.35" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="-6.35" y1="5.08" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
-<text x="-6.35" y="5.715" size="1.778" layer="95">&gt;NAME</text>
-<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="2" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="0436500213">
-<gates>
-<gate name="G$1" symbol="PINHD2" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="0436500213">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2" route="any"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="RoboJackets-Supplies">
 <packages>
 </packages>
@@ -3554,6 +3502,58 @@ In this library you will find all the connectors used on any of our boards.
 </deviceset>
 </devicesets>
 </library>
+<library name="RoboJackets-Connectors">
+<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
+&lt;hr&gt;
+&lt;h1&gt;RoboJackets EAGLE Libraries - Connectors&lt;/h1&gt;&lt;/br&gt;
+&lt;p&gt;
+In this library you will find all the connectors used on any of our boards.
+&lt;/p&gt;</description>
+<packages>
+<package name="0436500213">
+<smd name="P$1" x="-5.385" y="0" dx="3.43" dy="1.65" layer="1"/>
+<smd name="P$2" x="5.385" y="0" dx="3.43" dy="1.65" layer="1"/>
+<smd name="1" x="-1.5" y="5.47" dx="2.92" dy="1.27" layer="1" rot="R90"/>
+<smd name="2" x="1.5" y="5.47" dx="2.92" dy="1.27" layer="1" rot="R90"/>
+<wire x1="-5" y1="-3" x2="-5" y2="5.4" width="0.127" layer="21"/>
+<wire x1="-5" y1="5.4" x2="5" y2="5.4" width="0.127" layer="21"/>
+<wire x1="5" y1="5.4" x2="5" y2="-3" width="0.127" layer="21"/>
+<wire x1="5" y1="-3" x2="-5" y2="-3" width="0.127" layer="21"/>
+<text x="-5.08" y="7.62" size="1" layer="21" font="vector" ratio="10">&gt;Name</text>
+<text x="-5.08" y="-5.08" size="1" layer="21" font="vector" ratio="10">&gt;Value</text>
+</package>
+</packages>
+<symbols>
+<symbol name="PINHD2">
+<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.27" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="5.08" x2="-6.35" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-6.35" y1="5.08" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
+<text x="-6.35" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="2" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="0436500213" prefix="J">
+<gates>
+<gate name="G$1" symbol="PINHD2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0436500213">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2" route="any"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 <library name="RoboJackets-Discrete">
 <description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
 &lt;hr&gt;
@@ -3562,14 +3562,16 @@ In this library you will find all the connectors used on any of our boards.
 In this library you will find MOSFETs and other circuit elements commonly used for switching signals between HIGH and LOW.
 &lt;/p&gt;</description>
 <packages>
-<package name="LTR-209">
-<circle x="0" y="0" radius="2" width="0.127" layer="21"/>
-<pad name="VCC" x="-0.635" y="0" drill="0.5"/>
-<pad name="GND" x="0.635" y="0" drill="0.5" shape="square"/>
+<package name="OP593B">
+<pad name="P$1" x="-1.27" y="0" drill="0.6" shape="square"/>
+<pad name="P$2" x="1.27" y="0" drill="0.6"/>
+<circle x="0" y="0" radius="2.8" width="0.127" layer="21"/>
+<text x="-2" y="3" size="1.27" layer="25" font="vector">&gt;Name</text>
+<text x="-2" y="-4.381" size="1.27" layer="27" font="vector">&gt;Value</text>
 </package>
 </packages>
 <symbols>
-<symbol name="PNP_PHOTOTRANSISTOR@1">
+<symbol name="NPN_PHOTOTRANSISTOR">
 <pin name="C" x="2.54" y="-7.62" visible="off" length="short" rot="R90"/>
 <pin name="E" x="2.54" y="7.62" visible="off" length="short" rot="R270"/>
 <wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.508" layer="94"/>
@@ -3601,15 +3603,15 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="LTR-209">
+<deviceset name="LED-OP593B" prefix="D">
 <gates>
-<gate name="A" symbol="PNP_PHOTOTRANSISTOR@1" x="0" y="0"/>
+<gate name="G$1" symbol="NPN_PHOTOTRANSISTOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="LTR-209">
+<device name="" package="OP593B">
 <connects>
-<connect gate="A" pin="C" pad="GND"/>
-<connect gate="A" pin="E" pad="VCC"/>
+<connect gate="G$1" pin="C" pad="P$1"/>
+<connect gate="G$1" pin="E" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3633,9 +3635,9 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 <attribute name="SCH_DESC" value="Breakbeam receiver board"/>
 <attribute name="TEAM" value="RoboCup"/>
 </part>
-<part name="J1" library="RoboJackets-Connectors" deviceset="0436500213" device="" override_package3d_urn="urn:adsk.eagle:package:33302042/2" override_package_urn="urn:adsk.eagle:footprint:33302043/1" override_locally_modified="yes"/>
 <part name="SUPPLY1" library="RoboJackets-Supplies" deviceset="GND" device=""/>
-<part name="D1" library="RoboJackets-Discrete" deviceset="LTR-209" device=""/>
+<part name="J1" library="RoboJackets-Connectors" deviceset="0436500213" device=""/>
+<part name="D1" library="RoboJackets-Discrete" deviceset="LED-OP593B" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3651,16 +3653,16 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 <attribute name="REVISION" x="213.51" y="-141.65" size="2.54" layer="94"/>
 <attribute name="SCH_DESC" x="142.39" y="-141.65" size="2.54" layer="94"/>
 </instance>
-<instance part="J1" gate="G$1" x="-2.54" y="2.54" smashed="yes" rot="R180">
-<attribute name="NAME" x="0.762" y="-3.429" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="3.81" y="7.62" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="SUPPLY1" gate="G$1" x="27.94" y="-15.24" smashed="yes">
 <attribute name="VALUE" x="25.4" y="-17.78" size="1.778" layer="96"/>
 </instance>
-<instance part="D1" gate="A" x="25.4" y="0" smashed="yes">
-<attribute name="NAME" x="30.48" y="5.08" size="1.778" layer="95"/>
-<attribute name="VALUE" x="30.48" y="-5.08" size="1.778" layer="96"/>
+<instance part="J1" gate="G$1" x="-2.54" y="2.54" smashed="yes" rot="R180">
+<attribute name="NAME" x="3.81" y="-3.175" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="3.81" y="7.62" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="D1" gate="G$1" x="30.48" y="0" smashed="yes">
+<attribute name="NAME" x="35.56" y="5.08" size="1.778" layer="95"/>
+<attribute name="VALUE" x="35.56" y="-5.08" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -3669,23 +3671,24 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 <net name="RX" class="0">
 <segment>
 <wire x1="15.24" y1="2.54" x2="15.24" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="2"/>
 <wire x1="15.24" y1="2.54" x2="0" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="D1" gate="A" pin="E"/>
-<wire x1="15.24" y1="7.62" x2="27.94" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="15.24" y1="7.62" x2="33.02" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="E"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <wire x1="27.94" y1="-10.16" x2="7.62" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="-10.16" x2="7.62" y2="0" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="7.62" y1="0" x2="0" y2="0" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="G$1" pin="GND"/>
 <wire x1="27.94" y1="-10.16" x2="27.94" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="D1" gate="A" pin="C"/>
-<wire x1="27.94" y1="-10.16" x2="27.94" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="33.02" y1="-7.62" x2="33.02" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="-10.16" x2="27.94" y2="-10.16" width="0.1524" layer="91"/>
 <junction x="27.94" y="-10.16"/>
+<pinref part="D1" gate="G$1" pin="C"/>
 </segment>
 </net>
 </nets>
@@ -3693,16 +3696,4 @@ In this library you will find MOSFETs and other circuit elements commonly used f
 </sheets>
 </schematic>
 </drawing>
-<compatibility>
-<note version="8.3" severity="warning">
-Since Version 8.3, EAGLE supports the association of 3D packages
-with devices in libraries, schematics, and board files. Those 3D
-packages will not be understood (or retained) with this version.
-</note>
-<note version="9.4" severity="warning">
-Since Version 9.4, EAGLE supports the overriding of 3D packages
-in schematics and board files. Those overridden 3d packages
-will not be understood (or retained) with this version.
-</note>
-</compatibility>
 </eagle>
