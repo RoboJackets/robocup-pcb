@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
@@ -193,9 +193,9 @@
 <circle x="54.7624" y="35.0012" radius="20.0025" width="0.1524" layer="51"/>
 <circle x="-54.7624" y="35.0012" radius="20.0025" width="0.1524" layer="51"/>
 <circle x="0" y="0" radius="25.0063" width="0.1524" layer="51"/>
-<text x="-10" y="14" size="1" layer="25" font="vector" ratio="15">Robot Shell ID v2.0
+<text x="-10" y="14" size="1" layer="25" font="vector" ratio="15">Robot Shell ID v2.1
 RoboJackets
-March 2022</text>
+Jan 2023</text>
 <rectangle x1="-8" y1="9" x2="-4" y2="13" layer="21"/>
 <text x="-3" y="9" size="1" layer="21" font="vector" ratio="15">ID</text>
 <wire x1="-36.7" y1="42.7" x2="-31" y2="42.7" width="0.2" layer="21"/>
@@ -5057,155 +5057,150 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 </element>
 <element name="U$1" library="RoboJackets-Aesthetics" package="ROBOBUZZ_1.4X" value="" x="12" y="3" smashed="yes"/>
 <element name="LED1" library="VEML6040A3OG" package="LED_VEML6040A3OG_VIS" value="VEML6040A3OG" x="34" y="-56" smashed="yes" rot="R180">
-<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="34" y="-56" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="VEML6040A3OG" x="34" y="-56" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MFR_NAME" value="Vishay" x="34" y="-56" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="37.2766" y="-55.365" size="1.27" layer="27" ratio="6" rot="SR180"/>
-<attribute name="VALUE" x="35.7272" y="-55.365" size="1.27" layer="21" ratio="6" rot="SR180"/>
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="34" y="-56" size="1" layer="27" font="vector" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="VEML6040A3OG" x="34" y="-56" size="1" layer="27" font="vector" rot="R180" display="off"/>
+<attribute name="MFR_NAME" value="Vishay" x="34" y="-56" size="1" layer="27" font="vector" rot="R180" display="off"/>
+<attribute name="NAME" x="37.2766" y="-55.365" size="1" layer="27" font="vector" ratio="6" rot="SR180"/>
 </element>
 <element name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.7K" x="-46" y="30" smashed="yes" rot="R180">
-<attribute name="NAME" x="-45.365" y="29.365" size="1.27" layer="25" rot="R180"/>
-<attribute name="POPULARITY" value="77" x="-46" y="9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="-46" y="9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="-45.365" y="31.905" size="1.27" layer="27" rot="R180"/>
+<attribute name="NAME" x="-45.365" y="29.365" size="1" layer="25" font="vector" rot="R180"/>
+<attribute name="POPULARITY" value="77" x="-46" y="9" size="1" layer="27" font="vector" rot="R180" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="-46" y="9" size="1" layer="27" font="vector" rot="R180" display="off"/>
+<attribute name="VALUE" x="-45.365" y="31.905" size="1" layer="27" font="vector" rot="R180"/>
 </element>
 <element name="D2" library="RoboJackets-LEDs" package="LED0603" value="WHITE" x="-51" y="42" smashed="yes" rot="R180">
-<attribute name="DKPN" value="" x="-29" y="26" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DKPN" value="" x="-29" y="26" size="1" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="NAME" x="-51" y="41.25" size="1" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="-51" y="42.75" size="1" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="330" x="-44" y="41" smashed="yes" rot="R270">
-<attribute name="NAME" x="-43.365" y="41.635" size="1.27" layer="25" rot="R180"/>
-<attribute name="POPULARITY" value="77" x="-33" y="58" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="-33" y="58" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="-45.905" y="41.635" size="1.27" layer="27" rot="R270"/>
+<attribute name="NAME" x="-43.365" y="41.635" size="1" layer="25" font="vector" rot="R180"/>
+<attribute name="POPULARITY" value="77" x="-33" y="58" size="1" layer="27" font="vector" rot="R270" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="-33" y="58" size="1" layer="27" font="vector" rot="R270" display="off"/>
+<attribute name="VALUE" x="-45.905" y="41.635" size="1" layer="27" font="vector" rot="R270"/>
 </element>
 <element name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.7K" x="-58" y="31" smashed="yes" rot="R180">
-<attribute name="NAME" x="-57.365" y="30.365" size="1.27" layer="25" rot="R180"/>
-<attribute name="POPULARITY" value="77" x="-52" y="25" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="-52" y="25" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="-57.365" y="32.905" size="1.27" layer="27" rot="R180"/>
+<attribute name="NAME" x="-57.365" y="30.365" size="1" layer="25" font="vector" rot="R180"/>
+<attribute name="POPULARITY" value="77" x="-52" y="25" size="1" layer="27" font="vector" rot="R180" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="-52" y="25" size="1" layer="27" font="vector" rot="R180" display="off"/>
+<attribute name="VALUE" x="-57.365" y="32.905" size="1" layer="27" font="vector" rot="R180"/>
 </element>
 <element name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value=".1uF" x="-59" y="41" smashed="yes" rot="R180">
-<attribute name="NAME" x="-58.365" y="40.365" size="1.27" layer="25" rot="R270"/>
-<attribute name="POPULARITY" value="37" x="-47" y="40" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="-47" y="40" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="-58.365" y="42.905" size="1.27" layer="27" rot="R180"/>
+<attribute name="NAME" x="-58.365" y="40.365" size="1" layer="25" font="vector" rot="R270"/>
+<attribute name="POPULARITY" value="37" x="-47" y="40" size="1" layer="27" font="vector" rot="R180" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="-47" y="40" size="1" layer="27" font="vector" rot="R180" display="off"/>
+<attribute name="VALUE" x="-58.365" y="42.905" size="1" layer="27" font="vector" rot="R180"/>
 </element>
 <element name="LED2" library="VEML6040A3OG" package="LED_VEML6040A3OG_VIS" value="VEML6040A3OG" x="-53" y="35" smashed="yes">
-<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="-53" y="10" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="VEML6040A3OG" x="-53" y="10" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_NAME" value="Vishay" x="-53" y="10" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-56.2766" y="34.365" size="1.27" layer="27" ratio="6" rot="SR0"/>
-<attribute name="VALUE" x="-54.7272" y="34.365" size="1.27" layer="21" ratio="6" rot="SR0"/>
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="-53" y="10" size="1" layer="27" font="vector" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="VEML6040A3OG" x="-53" y="10" size="1" layer="27" font="vector" display="off"/>
+<attribute name="MFR_NAME" value="Vishay" x="-53" y="10" size="1" layer="27" font="vector" display="off"/>
+<attribute name="NAME" x="-56.2766" y="34.365" size="1" layer="27" font="vector" ratio="6" rot="SR0"/>
 </element>
 <element name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.7K" x="61" y="30" smashed="yes">
-<attribute name="NAME" x="61.365" y="31.635" size="1.27" layer="25"/>
-<attribute name="POPULARITY" value="77" x="61" y="51" size="1.778" layer="27" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="61" y="51" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="60.365" y="28.095" size="1.27" layer="27"/>
+<attribute name="NAME" x="61.365" y="31.635" size="1" layer="25" font="vector"/>
+<attribute name="POPULARITY" value="77" x="61" y="51" size="1" layer="27" font="vector" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="61" y="51" size="1" layer="27" font="vector" display="off"/>
+<attribute name="VALUE" x="60.365" y="28.095" size="1" layer="27" font="vector"/>
 </element>
 <element name="D3" library="RoboJackets-LEDs" package="LED0603" value="WHITE" x="53" y="39" smashed="yes" rot="R180">
-<attribute name="DKPN" value="" x="75" y="23" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DKPN" value="" x="75" y="23" size="1" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="NAME" x="53" y="38.25" size="1" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="53" y="39.75" size="1" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="330" x="63" y="41" smashed="yes" rot="R270">
-<attribute name="NAME" x="63.635" y="41.635" size="1.27" layer="25" rot="R270"/>
-<attribute name="POPULARITY" value="77" x="74" y="58" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="74" y="58" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="61.095" y="41.635" size="1.27" layer="27" rot="R270"/>
+<attribute name="NAME" x="63.635" y="41.635" size="1" layer="25" font="vector" rot="R270"/>
+<attribute name="POPULARITY" value="77" x="74" y="58" size="1" layer="27" font="vector" rot="R270" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="74" y="58" size="1" layer="27" font="vector" rot="R270" display="off"/>
+<attribute name="VALUE" x="61.095" y="41.635" size="1" layer="27" font="vector" rot="R270"/>
 </element>
 <element name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.7K" x="45" y="31" smashed="yes" rot="R90">
-<attribute name="NAME" x="44.365" y="30.365" size="1.27" layer="25" rot="R90"/>
-<attribute name="POPULARITY" value="77" x="39" y="25" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="39" y="25" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="46.905" y="30.365" size="1.27" layer="27" rot="R90"/>
+<attribute name="NAME" x="44.365" y="30.365" size="1" layer="25" font="vector" rot="R90"/>
+<attribute name="POPULARITY" value="77" x="39" y="25" size="1" layer="27" font="vector" rot="R90" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="39" y="25" size="1" layer="27" font="vector" rot="R90" display="off"/>
+<attribute name="VALUE" x="46.905" y="30.365" size="1" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value=".1uF" x="45" y="42" smashed="yes" rot="R90">
-<attribute name="NAME" x="44.365" y="41.365" size="1.27" layer="25" rot="R90"/>
-<attribute name="POPULARITY" value="37" x="44" y="30" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="44" y="30" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="46.905" y="41.365" size="1.27" layer="27" rot="R90"/>
+<attribute name="NAME" x="44.365" y="41.365" size="1" layer="25" font="vector" rot="R90"/>
+<attribute name="POPULARITY" value="37" x="44" y="30" size="1" layer="27" font="vector" rot="R90" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="44" y="30" size="1" layer="27" font="vector" rot="R90" display="off"/>
+<attribute name="VALUE" x="46.905" y="41.365" size="1" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="LED3" library="VEML6040A3OG" package="LED_VEML6040A3OG_VIS" value="VEML6040A3OG" x="53" y="34" smashed="yes">
-<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="53" y="9" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="VEML6040A3OG" x="53" y="9" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_NAME" value="Vishay" x="53" y="9" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="49.7234" y="33.365" size="1.27" layer="27" ratio="6" rot="SR0"/>
-<attribute name="VALUE" x="51.2728" y="33.365" size="1.27" layer="21" ratio="6" rot="SR0"/>
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="53" y="9" size="1" layer="27" font="vector" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="VEML6040A3OG" x="53" y="9" size="1" layer="27" font="vector" display="off"/>
+<attribute name="MFR_NAME" value="Vishay" x="53" y="9" size="1" layer="27" font="vector" display="off"/>
+<attribute name="NAME" x="49.7234" y="33.365" size="1" layer="27" font="vector" ratio="6" rot="SR0"/>
 </element>
 <element name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.7K" x="-25" y="-55" smashed="yes">
-<attribute name="NAME" x="-25.635" y="-54.365" size="1.27" layer="25"/>
-<attribute name="POPULARITY" value="77" x="-25" y="-34" size="1.778" layer="27" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="-25" y="-34" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-25.635" y="-56.905" size="1.27" layer="27"/>
+<attribute name="NAME" x="-25.635" y="-54.365" size="1" layer="25" font="vector"/>
+<attribute name="POPULARITY" value="77" x="-25" y="-34" size="1" layer="27" font="vector" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="-25" y="-34" size="1" layer="27" font="vector" display="off"/>
+<attribute name="VALUE" x="-25.635" y="-56.905" size="1" layer="27" font="vector"/>
 </element>
 <element name="D4" library="RoboJackets-LEDs" package="LED0603" value="WHITE" x="-35" y="-58" smashed="yes">
-<attribute name="DKPN" value="" x="-57" y="-42" size="1.778" layer="27" display="off"/>
+<attribute name="DKPN" value="" x="-57" y="-42" size="1" layer="27" font="vector" display="off"/>
 <attribute name="NAME" x="-35" y="-57.25" size="1" layer="25" font="vector" ratio="10" align="bottom-center"/>
 <attribute name="VALUE" x="-35" y="-58.75" size="1" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
 <element name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="330" x="-41" y="-57" smashed="yes" rot="R90">
-<attribute name="NAME" x="-41.635" y="-57.635" size="1.27" layer="25" rot="R90"/>
-<attribute name="POPULARITY" value="77" x="-52" y="-74" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="-52" y="-74" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="-39.095" y="-57.635" size="1.27" layer="27" rot="R90"/>
+<attribute name="NAME" x="-41.635" y="-57.635" size="1" layer="25" font="vector" rot="R90"/>
+<attribute name="POPULARITY" value="77" x="-52" y="-74" size="1" layer="27" font="vector" rot="R90" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="-52" y="-74" size="1" layer="27" font="vector" rot="R90" display="off"/>
+<attribute name="VALUE" x="-39.095" y="-57.635" size="1" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.7K" x="-41" y="-53" smashed="yes">
-<attribute name="NAME" x="-41.635" y="-52.365" size="1.27" layer="25"/>
-<attribute name="POPULARITY" value="77" x="-47" y="-47" size="1.778" layer="27" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="-47" y="-47" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-41.635" y="-54.905" size="1.27" layer="27"/>
+<attribute name="NAME" x="-41.635" y="-52.365" size="1" layer="25" font="vector"/>
+<attribute name="POPULARITY" value="77" x="-47" y="-47" size="1" layer="27" font="vector" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="-47" y="-47" size="1" layer="27" font="vector" display="off"/>
+<attribute name="VALUE" x="-41.635" y="-54.905" size="1" layer="27" font="vector"/>
 </element>
 <element name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value=".1uF" x="-30" y="-52" smashed="yes" rot="R180">
-<attribute name="NAME" x="-29.365" y="-52.635" size="1.27" layer="25" rot="R180"/>
-<attribute name="POPULARITY" value="37" x="-18" y="-53" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="-18" y="-53" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="-29.365" y="-50.095" size="1.27" layer="27" rot="R180"/>
+<attribute name="NAME" x="-29.365" y="-52.635" size="1" layer="25" font="vector" rot="R180"/>
+<attribute name="POPULARITY" value="37" x="-18" y="-53" size="1" layer="27" font="vector" rot="R180" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="-18" y="-53" size="1" layer="27" font="vector" rot="R180" display="off"/>
+<attribute name="VALUE" x="-29.365" y="-50.095" size="1" layer="27" font="vector" rot="R180"/>
 </element>
 <element name="LED4" library="VEML6040A3OG" package="LED_VEML6040A3OG_VIS" value="VEML6040A3OG" x="-35" y="-54" smashed="yes">
-<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="-35" y="-79" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="VEML6040A3OG" x="-35" y="-79" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_NAME" value="Vishay" x="-35" y="-79" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-38.2766" y="-54.635" size="1.27" layer="27" ratio="6" rot="SR0"/>
-<attribute name="VALUE" x="-36.7272" y="-54.635" size="1.27" layer="21" ratio="6" rot="SR0"/>
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="-35" y="-79" size="1" layer="27" font="vector" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="VEML6040A3OG" x="-35" y="-79" size="1" layer="27" font="vector" display="off"/>
+<attribute name="MFR_NAME" value="Vishay" x="-35" y="-79" size="1" layer="27" font="vector" display="off"/>
+<attribute name="NAME" x="-38.2766" y="-54.635" size="1" layer="27" font="vector" ratio="6" rot="SR0"/>
 </element>
 <element name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.7K" x="13" y="-14" smashed="yes">
-<attribute name="NAME" x="12.365" y="-13.365" size="1.27" layer="25"/>
-<attribute name="POPULARITY" value="77" x="13" y="7" size="1.778" layer="27" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="13" y="7" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="12.365" y="-15.905" size="1.27" layer="27"/>
+<attribute name="NAME" x="12.365" y="-13.365" size="1" layer="25" font="vector"/>
+<attribute name="POPULARITY" value="77" x="13" y="7" size="1" layer="27" font="vector" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="13" y="7" size="1" layer="27" font="vector" display="off"/>
+<attribute name="VALUE" x="12.365" y="-15.905" size="1" layer="27" font="vector"/>
 </element>
 <element name="D6" library="RoboJackets-LEDs" package="LED0603" value="WHITE" x="6" y="-5" smashed="yes" rot="R180">
-<attribute name="DKPN" value="" x="28" y="-21" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DKPN" value="" x="28" y="-21" size="1" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="NAME" x="6" y="-5.75" size="1" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="6" y="-4.25" size="1" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="330" x="13" y="-5" smashed="yes">
-<attribute name="NAME" x="12.365" y="-4.365" size="1.27" layer="25"/>
-<attribute name="POPULARITY" value="77" x="-4" y="6" size="1.778" layer="27" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="-4" y="6" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="12.365" y="-6.905" size="1.27" layer="27"/>
+<attribute name="NAME" x="12.365" y="-4.365" size="1" layer="25" font="vector"/>
+<attribute name="POPULARITY" value="77" x="-4" y="6" size="1" layer="27" font="vector" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="-4" y="6" size="1" layer="27" font="vector" display="off"/>
+<attribute name="VALUE" x="12.365" y="-6.905" size="1" layer="27" font="vector"/>
 </element>
 <element name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.7K" x="-1" y="-14" smashed="yes">
-<attribute name="NAME" x="-1.635" y="-13.365" size="1.27" layer="25"/>
-<attribute name="POPULARITY" value="77" x="-7" y="-8" size="1.778" layer="27" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="-7" y="-8" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-1.635" y="-15.905" size="1.27" layer="27"/>
+<attribute name="NAME" x="-1.635" y="-13.365" size="1" layer="25" font="vector"/>
+<attribute name="POPULARITY" value="77" x="-7" y="-8" size="1" layer="27" font="vector" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="-7" y="-8" size="1" layer="27" font="vector" display="off"/>
+<attribute name="VALUE" x="-1.635" y="-15.905" size="1" layer="27" font="vector"/>
 </element>
 <element name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value=".1uF" x="-1" y="-5" smashed="yes">
-<attribute name="NAME" x="-1.635" y="-4.365" size="1.27" layer="25"/>
-<attribute name="POPULARITY" value="37" x="-13" y="-4" size="1.778" layer="27" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="-13" y="-4" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-1.635" y="-6.905" size="1.27" layer="27"/>
+<attribute name="NAME" x="-1.635" y="-4.365" size="1" layer="25" font="vector"/>
+<attribute name="POPULARITY" value="37" x="-13" y="-4" size="1" layer="27" font="vector" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="-13" y="-4" size="1" layer="27" font="vector" display="off"/>
+<attribute name="VALUE" x="-1.635" y="-6.905" size="1" layer="27" font="vector"/>
 </element>
 <element name="LED5" library="VEML6040A3OG" package="LED_VEML6040A3OG_VIS" value="VEML6040A3OG" x="6" y="-10" smashed="yes">
-<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="6" y="-35" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="VEML6040A3OG" x="6" y="-35" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_NAME" value="Vishay" x="6" y="-35" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="2.7234" y="-10.635" size="1.27" layer="27" ratio="6" rot="SR0"/>
-<attribute name="VALUE" x="4.2728" y="-10.635" size="1.27" layer="21" ratio="6" rot="SR0"/>
+<attribute name="COPYRIGHT" value="Copyright (C) 2022 Ultra Librarian. All rights reserved." x="6" y="-35" size="1" layer="27" font="vector" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="VEML6040A3OG" x="6" y="-35" size="1" layer="27" font="vector" display="off"/>
+<attribute name="MFR_NAME" value="Vishay" x="6" y="-35" size="1" layer="27" font="vector" display="off"/>
+<attribute name="NAME" x="2.7234" y="-10.635" size="1" layer="27" ratio="6" rot="SR0"/>
 </element>
 </elements>
 <signals>
@@ -5268,11 +5263,11 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="-41" y1="30" x2="-45.15" y2="30" width="0.1524" layer="1"/>
 <wire x1="-41" y1="30" x2="-41" y2="31" width="0.1524" layer="1"/>
 <via x="-41" y="31" extent="1-16" drill="0.35"/>
-<wire x1="-41" y1="31" x2="-41" y2="34" width="0.1524" layer="16"/>
-<wire x1="-41" y1="34" x2="-48" y2="34" width="0.1524" layer="16"/>
 <via x="-48" y="34" extent="1-16" drill="0.35"/>
 <wire x1="-48" y1="34" x2="-51.451" y2="34" width="0.1524" layer="1"/>
 <wire x1="-51.451" y1="34" x2="-52.101" y2="34.65" width="0.1524" layer="1"/>
+<wire x1="-48" y1="34" x2="-44" y2="34" width="0.2" layer="16"/>
+<wire x1="-44" y1="34" x2="-41" y2="31" width="0.2" layer="16"/>
 </signal>
 <signal name="SCL_SENSOR4">
 <contactref element="R10" pad="1"/>
@@ -5733,8 +5728,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <via x="-54" y="38" extent="1-16" drill="0.35"/>
 <wire x1="-54" y1="38" x2="-54" y2="35.4" width="0.4" layer="1"/>
 <wire x1="-54" y1="35.4" x2="-53.95" y2="35.35" width="0.4" layer="1"/>
-<wire x1="45" y1="42.85" x2="49.225" y2="42" width="0.4" layer="1"/>
-<wire x1="49.225" y1="42" x2="52.225" y2="39" width="0.4" layer="1"/>
 <wire x1="14.48" y1="33.37" x2="27.37" y2="33.37" width="0.4" layer="1"/>
 <wire x1="14" y1="35" x2="9" y2="35" width="0.4" layer="16"/>
 <wire x1="3" y1="35" x2="9" y2="35" width="0.4" layer="16"/>
@@ -5748,8 +5741,7 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="-37.65" y1="-53.65" x2="-38" y2="-54" width="0.4" layer="1"/>
 <via x="-38" y="-54" extent="1-16" drill="0.35"/>
 <wire x1="-38" y1="-54" x2="-39" y2="-55" width="0.4" layer="16"/>
-<wire x1="-39" y1="-55" x2="-39" y2="-57" width="0.4" layer="16"/>
-<wire x1="-39" y1="-57" x2="-39" y2="-58" width="0.4" layer="16"/>
+<wire x1="-39" y1="-55" x2="-39" y2="-58" width="0.4" layer="16"/>
 <wire x1="-39" y1="-58" x2="-32" y2="-58" width="0.4" layer="16"/>
 <via x="-32" y="-58" extent="1-16" drill="0.35"/>
 <wire x1="-32" y1="-58" x2="-34.225" y2="-58" width="0.4" layer="1"/>
@@ -5777,7 +5769,6 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="40" y1="-51.15" x2="38" y2="-51.15" width="0.4" layer="1"/>
 <wire x1="38" y1="-51.15" x2="35.745" y2="-51.15" width="0.4" layer="1"/>
 <wire x1="35.745" y1="-51.15" x2="35.255" y2="-51.64" width="0.4" layer="1"/>
-<wire x1="31" y1="-58" x2="31" y2="-58" width="0.4" layer="1"/>
 <via x="34" y="-58" extent="1-16" drill="0.35"/>
 <wire x1="34" y1="-58" x2="38" y2="-58" width="0.4" layer="16"/>
 <wire x1="38" y1="-58" x2="38" y2="-52" width="0.4" layer="16"/>
@@ -5796,6 +5787,11 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 <wire x1="-14.49095" y1="26.403" x2="-14.349525" y2="26.403" width="0.4" layer="1"/>
 <wire x1="-13" y1="25" x2="-11" y2="25" width="0.4" layer="1"/>
 <via x="-11" y="25" extent="1-16" drill="0.35"/>
+<wire x1="45" y1="42.85" x2="48.375" y2="42.85" width="0.4" layer="1"/>
+<wire x1="48.375" y1="42.85" x2="52.225" y2="39" width="0.4" layer="1"/>
+<wire x1="-15.8" y1="37.75" x2="-9.15" y2="38" width="0" layer="19" extent="1-16"/>
+<wire x1="-18.075" y1="37.938" x2="-15.8" y2="37.75" width="0" layer="19" extent="1-16"/>
+<wire x1="-19.375" y1="32.062" x2="-18.075" y2="37.938" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+5V">
 <contactref element="U1" pad="1"/>
