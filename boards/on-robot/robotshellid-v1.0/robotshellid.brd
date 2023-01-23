@@ -213,16 +213,20 @@ Jan 2023</text>
 <text x="-36.2" y="38.5" size="1" layer="21" font="vector" ratio="15">GND</text>
 <wire x1="65" y1="28" x2="65" y2="44" width="0.1524" layer="20"/>
 <wire x1="-62" y1="44" x2="-62" y2="28" width="0.1524" layer="20"/>
-<wire x1="-62" y1="28" x2="-28" y2="28" width="0.1524" layer="20"/>
-<wire x1="65" y1="28" x2="26" y2="28" width="0.1524" layer="20"/>
-<wire x1="-28" y1="28" x2="-28" y2="-50" width="0.1524" layer="20"/>
+<wire x1="-62" y1="28" x2="-30" y2="28" width="0.1524" layer="20"/>
+<wire x1="-30" y1="28" x2="-28" y2="26" width="0.1524" layer="20" curve="-90"/>
+<wire x1="-28" y1="26" x2="-28" y2="-48" width="0.1524" layer="20"/>
+<wire x1="65" y1="28" x2="28" y2="28" width="0.1524" layer="20"/>
+<wire x1="28" y1="28" x2="26" y2="26" width="0.1524" layer="20" curve="90"/>
+<wire x1="42" y1="-50" x2="28" y2="-50" width="0.1524" layer="20"/>
+<wire x1="28" y1="-50" x2="26" y2="-48" width="0.1524" layer="20" curve="-90"/>
+<wire x1="26" y1="-48" x2="26" y2="26" width="0.1524" layer="20"/>
+<wire x1="-28" y1="-48" x2="-30" y2="-50" width="0.1524" layer="20" curve="-90"/>
+<wire x1="-30" y1="-50" x2="-43" y2="-50" width="0.1524" layer="20"/>
 <wire x1="65" y1="44" x2="-62" y2="44" width="0.1524" layer="20"/>
 <wire x1="42" y1="-59" x2="42" y2="-50" width="0.1524" layer="20"/>
-<wire x1="42" y1="-50" x2="26" y2="-50" width="0.1524" layer="20"/>
-<wire x1="-28" y1="-50" x2="-43" y2="-50" width="0.1524" layer="20"/>
 <wire x1="-43" y1="-50" x2="-43" y2="-59" width="0.1524" layer="20"/>
 <wire x1="42" y1="-59" x2="-43" y2="-59" width="0.1524" layer="20"/>
-<wire x1="26" y1="28" x2="26" y2="-50" width="0.1524" layer="20"/>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
