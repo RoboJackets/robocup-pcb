@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
@@ -185,7 +185,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.YnVzaW5lc3M6Z2F0ZWNoOTg4" projecturn="a.YnVzaW5lc3M6Z2F0ZWNoOTg4IzIwMjEwNzE5NDI4NDMwODUx" f3durn="urn:adsk.wipprod:dm.lineage:Bs0RIPzwQ2iRdHOdl2pSMw" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="0f02617b-329e-4820-80cf-166d5dde4bf6" lastsyncedrevisionid="0f02617b-329e-4820-80cf-166d5dde4bf6" lastboardhashguid="ec8a9942-9ff3-7ffb-c5f4-3f79ac5c9b5a" lastpushedtime="2022-01-23T18:20:38Z" linktopcb3d="true"/>
+<fusionsync huburn="a.YnVzaW5lc3M6Z2F0ZWNoOTg4" projecturn="a.YnVzaW5lc3M6Z2F0ZWNoOTg4IzIwMjEwNzE5NDI4NDMwODUx" f3durn="urn:adsk.wipprod:dm.lineage:Bs0RIPzwQ2iRdHOdl2pSMw" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="0f02617b-329e-4820-80cf-166d5dde4bf6" lastsyncedrevisionid="0f02617b-329e-4820-80cf-166d5dde4bf6" lastboardhashguid="ec8a9942-9ff3-7ffb-c5f4-3f79ac5c9b5a" lastpushedtime="2022-01-23T18:20:38Z" linktopcb3d="false"/>
 <plain>
 <text x="3.8" y="4.7" size="1.6764" layer="22" rot="MR270">+</text>
 <text x="-1.2" y="4.2" size="1.6764" layer="22" rot="MR0">_</text>
@@ -210,34 +210,6 @@ RoboJackets
 February 2022</text>
 </plain>
 <libraries>
-<library name="RoboJackets-LEDs">
-<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
-&lt;hr&gt;
-&lt;h1&gt;RoboJackets EAGLE Libraries - LEDs&lt;/h1&gt;&lt;/br&gt;
-&lt;p&gt;
-In this library you will find LEDs and other visual output devices.
-&lt;/p&gt;</description>
-<packages>
-<package name="LED0603">
-<description>0603 LED</description>
-<wire x1="0.477" y1="0.4" x2="-0.423" y2="0.4" width="0.05" layer="51"/>
-<wire x1="0.477" y1="-0.4" x2="-0.423" y2="-0.4" width="0.05" layer="51"/>
-<smd name="C" x="0.775" y="0" dx="0.8" dy="0.8" layer="1" rot="R270"/>
-<smd name="A" x="-0.775" y="0" dx="0.8" dy="0.8" layer="1" rot="R270"/>
-<text x="0" y="0.75" size="1" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-0.75" size="1" layer="27" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
-<polygon width="0.05" layer="21">
-<vertex x="-0.173" y="0.3"/>
-<vertex x="0.227" y="0"/>
-<vertex x="-0.173" y="-0.3"/>
-</polygon>
-<wire x1="-1.3" y1="-0.5" x2="-1.3" y2="0.5" width="0.05" layer="39"/>
-<wire x1="-1.3" y1="0.5" x2="1.3" y2="0.5" width="0.05" layer="39"/>
-<wire x1="1.3" y1="0.5" x2="1.3" y2="-0.5" width="0.05" layer="39"/>
-<wire x1="1.3" y1="-0.5" x2="-1.3" y2="-0.5" width="0.05" layer="39"/>
-</package>
-</packages>
-</library>
 <library name="RoboJackets-Connectors">
 <description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
 &lt;hr&gt;
@@ -295,21 +267,6 @@ In this library you will find resistors. If you are looking for a common package
 </packageinstances>
 </package3d>
 </packages3d>
-</library>
-<library name="VSLY5940">
-<packages>
-<package name="LEDRD254W50D590H1318">
-<circle x="0" y="0" radius="2.95" width="0.127" layer="51"/>
-<circle x="0" y="0" radius="3.2" width="0.05" layer="39"/>
-<circle x="-3.5" y="0" radius="0.1" width="0.2" layer="21"/>
-<circle x="-3.5" y="0" radius="0.1" width="0.2" layer="51"/>
-<text x="-3.3" y="3.3" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.5" y="-4.5" size="1.27" layer="27">&gt;VALUE</text>
-<circle x="0" y="0" radius="2.95" width="0.127" layer="21"/>
-<pad name="C" x="-1.27" y="0" drill="0.95" diameter="1.43" shape="square"/>
-<pad name="A" x="1.27" y="0" drill="0.95" diameter="1.43"/>
-</package>
-</packages>
 </library>
 <library name="RoboJackets-Aesthetics">
 <description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
@@ -3545,6 +3502,115 @@ In this library you will find logos and images specific to RoboJackets. The part
 </package>
 </packages>
 </library>
+<library name="RoboJackets-LEDs">
+<description>&lt;img src="http://www.robojackets.org/wp-content/themes/RoboJackets-3.0/img/banner.png" width="600"&gt;
+&lt;hr&gt;
+&lt;h1&gt;RoboJackets EAGLE Libraries - LEDs&lt;/h1&gt;&lt;/br&gt;
+&lt;p&gt;
+In this library you will find LEDs and other visual output devices.
+&lt;/p&gt;</description>
+<packages>
+<package name="VSLY5940">
+<wire x1="0" y1="1.524" x2="1.2401" y2="0.8858" width="0.1524" layer="21" curve="-54.461337"/>
+<wire x1="-1.2192" y1="0.9144" x2="0" y2="1.524" width="0.1524" layer="21" curve="-53.130102"/>
+<wire x1="0" y1="-1.524" x2="1.203" y2="-0.9356" width="0.1524" layer="21" curve="52.126876"/>
+<wire x1="-1.203" y1="-0.9356" x2="0" y2="-1.524" width="0.1524" layer="21" curve="52.126876"/>
+<wire x1="0" y1="2.032" x2="1.561" y2="1.3009" width="0.254" layer="21" curve="-50.193108"/>
+<wire x1="-1.7929" y1="0.9562" x2="0" y2="2.032" width="0.254" layer="21" curve="-61.926949"/>
+<wire x1="0" y1="-2.032" x2="1.5512" y2="-1.3126" width="0.254" layer="21" curve="49.763022"/>
+<wire x1="-1.7643" y1="-1.0082" x2="0" y2="-2.032" width="0.254" layer="21" curve="60.255215"/>
+<pad name="A" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
+<pad name="K" x="1.27" y="0" drill="0.8128" shape="octagon"/>
+<text x="1.905" y="0.381" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="1.905" y="-1.651" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="599-0081-007F_DIA">
+<smd name="1" x="-0.4952" y="0" dx="0.6096" dy="0.7112" layer="1"/>
+<smd name="2" x="0.4952" y="0" dx="0.6096" dy="0.7112" layer="1"/>
+<wire x1="-0.7874" y1="0" x2="-0.7874" y2="2.54" width="0.1524" layer="47"/>
+<wire x1="-0.7874" y1="2.54" x2="-0.7874" y2="6.35" width="0.1524" layer="47"/>
+<wire x1="-0.7874" y1="6.35" x2="-0.7874" y2="6.731" width="0.1524" layer="47"/>
+<wire x1="0.7874" y1="0" x2="0.7874" y2="6.35" width="0.1524" layer="47"/>
+<wire x1="0.7874" y1="6.35" x2="0.7874" y2="6.731" width="0.1524" layer="47"/>
+<wire x1="-0.7874" y1="6.35" x2="-2.0574" y2="6.35" width="0.1524" layer="47"/>
+<wire x1="0.7874" y1="6.35" x2="2.0574" y2="6.35" width="0.1524" layer="47"/>
+<wire x1="-0.7874" y1="6.35" x2="-1.0414" y2="6.477" width="0.1524" layer="47"/>
+<wire x1="-0.7874" y1="6.35" x2="-1.0414" y2="6.223" width="0.1524" layer="47"/>
+<wire x1="-1.0414" y1="6.477" x2="-1.0414" y2="6.223" width="0.1524" layer="47"/>
+<wire x1="0.7874" y1="6.35" x2="1.0414" y2="6.477" width="0.1524" layer="47"/>
+<wire x1="0.7874" y1="6.35" x2="1.0414" y2="6.223" width="0.1524" layer="47"/>
+<wire x1="1.0414" y1="6.477" x2="1.0414" y2="6.223" width="0.1524" layer="47"/>
+<wire x1="-0.1778" y1="0" x2="-0.1778" y2="2.54" width="0.1524" layer="47"/>
+<wire x1="-0.1778" y1="2.54" x2="-0.1778" y2="2.921" width="0.1524" layer="47"/>
+<wire x1="-0.7874" y1="2.54" x2="-2.0574" y2="2.54" width="0.1524" layer="47"/>
+<wire x1="-0.1778" y1="2.54" x2="1.0922" y2="2.54" width="0.1524" layer="47"/>
+<wire x1="-0.7874" y1="2.54" x2="-1.0414" y2="2.667" width="0.1524" layer="47"/>
+<wire x1="-0.7874" y1="2.54" x2="-1.0414" y2="2.413" width="0.1524" layer="47"/>
+<wire x1="-1.0414" y1="2.667" x2="-1.0414" y2="2.413" width="0.1524" layer="47"/>
+<wire x1="-0.1778" y1="2.54" x2="0.0762" y2="2.667" width="0.1524" layer="47"/>
+<wire x1="-0.1778" y1="2.54" x2="0.0762" y2="2.413" width="0.1524" layer="47"/>
+<wire x1="0.0762" y1="2.667" x2="0.0762" y2="2.413" width="0.1524" layer="47"/>
+<wire x1="-0.4826" y1="0" x2="-3.0226" y2="0" width="0.1524" layer="47"/>
+<wire x1="-3.0226" y1="0" x2="-3.4036" y2="0" width="0.1524" layer="47"/>
+<wire x1="-0.4826" y1="-0.6604" x2="-3.0226" y2="-0.6604" width="0.1524" layer="47"/>
+<wire x1="-3.0226" y1="-0.6604" x2="-3.4036" y2="-0.6604" width="0.1524" layer="47"/>
+<wire x1="-3.0226" y1="0" x2="-3.0226" y2="1.27" width="0.1524" layer="47"/>
+<wire x1="-3.0226" y1="-0.6604" x2="-3.0226" y2="-1.9304" width="0.1524" layer="47"/>
+<wire x1="-3.0226" y1="0" x2="-3.1496" y2="0.254" width="0.1524" layer="47"/>
+<wire x1="-3.0226" y1="0" x2="-2.8956" y2="0.254" width="0.1524" layer="47"/>
+<wire x1="-3.1496" y1="0.254" x2="-2.8956" y2="0.254" width="0.1524" layer="47"/>
+<wire x1="-3.0226" y1="-0.6604" x2="-3.1496" y2="-0.9144" width="0.1524" layer="47"/>
+<wire x1="-3.0226" y1="-0.6604" x2="-2.8956" y2="-0.9144" width="0.1524" layer="47"/>
+<wire x1="-3.1496" y1="-0.9144" x2="-2.8956" y2="-0.9144" width="0.1524" layer="47"/>
+<wire x1="0.8128" y1="0.4064" x2="3.0226" y2="0.4064" width="0.1524" layer="47"/>
+<wire x1="3.0226" y1="0.4064" x2="3.4036" y2="0.4064" width="0.1524" layer="47"/>
+<wire x1="0.8128" y1="-0.4064" x2="3.0226" y2="-0.4064" width="0.1524" layer="47"/>
+<wire x1="3.0226" y1="-0.4064" x2="3.4036" y2="-0.4064" width="0.1524" layer="47"/>
+<wire x1="3.0226" y1="0.4064" x2="3.0226" y2="1.6764" width="0.1524" layer="47"/>
+<wire x1="3.0226" y1="-0.4064" x2="3.0226" y2="-1.6764" width="0.1524" layer="47"/>
+<wire x1="3.0226" y1="0.4064" x2="2.8956" y2="0.6604" width="0.1524" layer="47"/>
+<wire x1="3.0226" y1="0.4064" x2="3.1496" y2="0.6604" width="0.1524" layer="47"/>
+<wire x1="2.8956" y1="0.6604" x2="3.1496" y2="0.6604" width="0.1524" layer="47"/>
+<wire x1="3.0226" y1="-0.4064" x2="2.8956" y2="-0.6604" width="0.1524" layer="47"/>
+<wire x1="3.0226" y1="-0.4064" x2="3.1496" y2="-0.6604" width="0.1524" layer="47"/>
+<wire x1="2.8956" y1="-0.6604" x2="3.1496" y2="-0.6604" width="0.1524" layer="47"/>
+<wire x1="-0.8128" y1="-0.4064" x2="-0.8128" y2="-2.9464" width="0.1524" layer="47"/>
+<wire x1="-0.8128" y1="-2.9464" x2="-0.8128" y2="-3.3274" width="0.1524" layer="47"/>
+<wire x1="0.8128" y1="-0.4064" x2="0.8128" y2="-2.9464" width="0.1524" layer="47"/>
+<wire x1="0.8128" y1="-2.9464" x2="0.8128" y2="-3.3274" width="0.1524" layer="47"/>
+<wire x1="-0.8128" y1="-2.9464" x2="-2.0828" y2="-2.9464" width="0.1524" layer="47"/>
+<wire x1="0.8128" y1="-2.9464" x2="2.0828" y2="-2.9464" width="0.1524" layer="47"/>
+<wire x1="-0.8128" y1="-2.9464" x2="-1.0668" y2="-2.8194" width="0.1524" layer="47"/>
+<wire x1="-0.8128" y1="-2.9464" x2="-1.0668" y2="-3.0734" width="0.1524" layer="47"/>
+<wire x1="-1.0668" y1="-2.8194" x2="-1.0668" y2="-3.0734" width="0.1524" layer="47"/>
+<wire x1="0.8128" y1="-2.9464" x2="1.0668" y2="-2.8194" width="0.1524" layer="47"/>
+<wire x1="0.8128" y1="-2.9464" x2="1.0668" y2="-3.0734" width="0.1524" layer="47"/>
+<wire x1="1.0668" y1="-2.8194" x2="1.0668" y2="-3.0734" width="0.1524" layer="47"/>
+<text x="-14.4272" y="-8.2804" size="1.27" layer="47" ratio="6" rot="SR0">Pin 1 Padstyle: RX24Y28D0T</text>
+<text x="-16.9418" y="-9.8044" size="1.27" layer="47" ratio="6" rot="SR0">Default Padstyle: RX24Y28D0TSM2</text>
+<text x="-14.8082" y="-14.3764" size="1.27" layer="47" ratio="6" rot="SR0">Alt 1 Padstyle: OX60Y90D30P</text>
+<text x="-14.8082" y="-15.9004" size="1.27" layer="47" ratio="6" rot="SR0">Alt 2 Padstyle: OX90Y60D30P</text>
+<text x="-3.4544" y="6.858" size="0.635" layer="47" ratio="4" rot="SR0">0.063in/1.6mm</text>
+<text x="-4.2418" y="3.048" size="0.635" layer="47" ratio="4" rot="SR0">0.024in/0.61mm</text>
+<text x="-11.049" y="-0.635" size="0.635" layer="47" ratio="4" rot="SR0">0.026in/0.65mm</text>
+<text x="3.5306" y="-0.3048" size="0.635" layer="47" ratio="4" rot="SR0">0.032in/0.813mm</text>
+<text x="-3.4544" y="-4.0894" size="0.635" layer="47" ratio="4" rot="SR0">0.063in/1.6mm</text>
+<wire x1="-1.397" y1="0" x2="-1.6002" y2="0" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-1.6002" y1="0" x2="-1.397" y2="0" width="0.1524" layer="21" curve="-180"/>
+<text x="-1.7272" y="-0.635" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
+<wire x1="-0.8128" y1="-0.4064" x2="0.8128" y2="-0.4064" width="0.1524" layer="51"/>
+<wire x1="0.8128" y1="-0.4064" x2="0.8128" y2="0.4064" width="0.1524" layer="51"/>
+<wire x1="0.8128" y1="0.4064" x2="0.3048" y2="0.4064" width="0.1524" layer="51"/>
+<wire x1="0.3048" y1="0.4064" x2="-0.3048" y2="0.4064" width="0.1524" layer="51"/>
+<wire x1="-0.3048" y1="0.4064" x2="-0.8128" y2="0.4064" width="0.1524" layer="51"/>
+<wire x1="-0.8128" y1="0.4064" x2="-0.8128" y2="-0.4064" width="0.1524" layer="51"/>
+<wire x1="-0.1016" y1="0" x2="-0.254" y2="0" width="0" layer="51" curve="-180"/>
+<wire x1="-0.254" y1="0" x2="-0.1016" y2="0" width="0" layer="51" curve="-180"/>
+<wire x1="0.3048" y1="0.4064" x2="-0.3048" y2="0.4064" width="0.1524" layer="51" curve="-180"/>
+<text x="-3.2766" y="-0.635" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Name</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3732,52 +3798,55 @@ Source: &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabilities&quot;&gt;J
 </autorouter>
 <elements>
 <element name="J1" library="RoboJackets-Connectors" package="0436500213" override_package3d_urn="urn:adsk.eagle:package:33521981/2" override_package_urn="urn:adsk.eagle:footprint:33521982/1" value="0436500213" x="5.5" y="34" smashed="yes" rot="R180"/>
-<element name="D2" library="RoboJackets-LEDs" package="LED0603" override_package3d_urn="urn:adsk.eagle:package:33695372/2" override_package_urn="urn:adsk.eagle:footprint:33695373/1" value="LED-SMD" x="7" y="23" smashed="yes" rot="R90">
-<attribute name="DKPN" value="" x="7" y="23" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="7.65" y="23.1" size="1" layer="25" font="vector" ratio="15" rot="R270" align="bottom-center"/>
-</element>
 <element name="R1" library="RoboJackets-Resistors" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="330" x="6.9" y="16.9" smashed="yes" rot="R270">
 <attribute name="NAME" x="7.662" y="16.9" size="1" layer="25" font="vector" ratio="15" rot="R270" align="bottom-center"/>
 </element>
-<element name="D1" library="VSLY5940" package="LEDRD254W50D590H1318" value="VSLY5940" x="1" y="0.4" smashed="yes" rot="MR180">
-<attribute name="DESCRIPTION" value=" Infrared (IR) Emitter 940nm 1.65V 100mA 300mW/sr @ 100mA 6° Radial " x="1" y="0.4" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER" value="VSLY5940-ND" x="1" y="0.4" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MF" value="Vishay Semiconductor" x="1" y="0.4" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MP" value="VSLY5940" x="1" y="0.4" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="-0.2" y="-3.6" size="1" layer="26" font="vector" ratio="15" rot="MR0"/>
-<attribute name="PACKAGE" value="Radial Vishay Semiconductor" x="1" y="0.4" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/VSLY5940/?ref=eda" x="1" y="0.4" size="1.778" layer="28" rot="MR180" display="off"/>
-</element>
 <element name="U$1" library="RoboJackets-Aesthetics" package="ROBOBUZZ_0.8X" value="" x="4" y="-1.5" smashed="yes"/>
+<element name="D1" library="RoboJackets-LEDs" package="VSLY5940" value="VSLY5940" x="0" y="0" smashed="yes" rot="R180">
+<attribute name="NAME" x="-1.905" y="-2.381" size="1" layer="25" font="vector" ratio="15" rot="R270" align="bottom-center"/>
+</element>
+<element name="D2" library="RoboJackets-LEDs" package="599-0081-007F_DIA" value="599-0081-007F" x="8" y="24" smashed="yes" rot="R90">
+<attribute name="COPYRIGHT" value="Copyright (C) 2023 Ultra Librarian. All rights reserved." x="8" y="24" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_1" value="350-4351-2-ND" x="8" y="24" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_2" value="350-4351-1-ND" x="8" y="24" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER_3" value="350-4351-6-ND" x="8" y="24" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="599-0081-007F" x="8" y="24" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFR_NAME" value="Dialight" x="8" y="24" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="8.635" y="21.7234" size="1" layer="25" font="vector" ratio="15" rot="R270" align="bottom-center"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
-<contactref element="D2" pad="C"/>
 <contactref element="J1" pad="1"/>
-<wire x1="7" y1="23.775" x2="7" y2="28.53" width="1" layer="1"/>
-<contactref element="D1" pad="C"/>
-<wire x1="4.8947125" y1="31.617" x2="2.1052875" y2="31.617" width="1" layer="1"/>
-<wire x1="2.1052875" y1="31.617" x2="-0.27" y2="29.2417125" width="1" layer="1"/>
-<wire x1="-0.27" y1="29.2417125" x2="-0.27" y2="0.4" width="1" layer="1"/>
-<wire x1="7" y1="28.53" x2="7" y2="29.5117125" width="1" layer="1"/>
-<wire x1="7" y1="29.5117125" x2="4.8947125" y2="31.617" width="1" layer="1"/>
+<wire x1="2.1052875" y1="31.617" x2="4.8947125" y2="31.617" width="0.4" layer="1"/>
+<wire x1="-0.27" y1="29.2417125" x2="2.1052875" y2="31.617" width="0.4" layer="1"/>
+<wire x1="7" y1="29.5117125" x2="7" y2="28.53" width="0.4" layer="1"/>
+<contactref element="D1" pad="K"/>
+<contactref element="D2" pad="2"/>
+<wire x1="-1.27" y1="0" x2="-0.27" y2="1" width="0.4" layer="1"/>
+<wire x1="-0.27" y1="1" x2="-0.27" y2="29.2417125" width="0.4" layer="1"/>
+<wire x1="4.8947125" y1="31.617" x2="7" y2="29.5117125" width="0.4" layer="1"/>
+<wire x1="8" y1="24.4952" x2="7" y2="25.4952" width="0.4" layer="1"/>
+<wire x1="7" y1="25.4952" x2="7" y2="28.53" width="0.4" layer="1"/>
 </signal>
 <signal name="BB_TX">
 <contactref element="J1" pad="2" route="any" routetag="G$1.2"/>
-<wire x1="4" y1="28.53" x2="3.865" y2="28.395" width="1" layer="1"/>
+<wire x1="4" y1="28.53" x2="3.865" y2="28.395" width="0.4" layer="1"/>
 <contactref element="R1" pad="2"/>
+<wire x1="6.9" y1="16.05" x2="6.9" y2="2.4" width="0.4" layer="1"/>
+<wire x1="3.865" y1="28.395" x2="3.865" y2="3" width="0.4" layer="1"/>
+<wire x1="3.865" y1="2.595" x2="3.865" y2="1.995" width="0.4" layer="1"/>
+<wire x1="6.9" y1="2.4" x2="6.495" y2="1.995" width="0.4" layer="1"/>
+<wire x1="6.495" y1="1.995" x2="3.865" y2="1.995" width="0.4" layer="1"/>
 <contactref element="D1" pad="A"/>
-<wire x1="6.9" y1="16.05" x2="6.9" y2="2.4" width="1" layer="1"/>
-<wire x1="3.865" y1="1.995" x2="2.27" y2="0.4" width="1" layer="1"/>
-<wire x1="3.865" y1="28.395" x2="3.865" y2="1.995" width="1" layer="1"/>
-<wire x1="6.9" y1="2.4" x2="6.495" y2="1.995" width="1" layer="1"/>
-<wire x1="6.495" y1="1.995" x2="3.865" y2="1.995" width="1" layer="1"/>
+<wire x1="1.27" y1="0" x2="3.865" y2="2.595" width="0.4" layer="1"/>
+<wire x1="3.865" y1="2.595" x2="3.865" y2="3" width="0.4" layer="1"/>
 </signal>
 <signal name="N$2">
-<contactref element="D2" pad="A"/>
 <contactref element="R1" pad="1"/>
-<wire x1="6.9" y1="17.75" x2="7" y2="17.85" width="1" layer="1"/>
-<wire x1="7" y1="17.85" x2="7" y2="22.225" width="1" layer="1"/>
+<contactref element="D2" pad="1"/>
+<wire x1="6.9" y1="17.75" x2="6.9" y2="22.4048" width="0.4" layer="1"/>
+<wire x1="6.9" y1="22.4048" x2="8" y2="23.5048" width="0.4" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
