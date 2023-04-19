@@ -30577,8 +30577,8 @@ ripple current from motors</text>
 <net name="MISO" class="0">
 <segment>
 <wire x1="78.74" y1="149.86" x2="76.2" y2="149.86" width="0.1524" layer="91"/>
-<label x="76.2" y="149.86" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U1" gate="A" pin="SDO"/>
+<label x="76.2" y="149.86" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -30794,9 +30794,9 @@ ripple current from motors</text>
 <wire x1="157.48" y1="170.18" x2="157.48" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="VDD_SPI"/>
 <wire x1="157.48" y1="172.72" x2="157.48" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="152.4" x2="147.32" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="152.4" x2="147.32" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="172.72" x2="157.48" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="152.4" x2="152.4" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="152.4" x2="152.4" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="172.72" x2="157.48" y2="172.72" width="0.1524" layer="91"/>
 <junction x="157.48" y="172.72"/>
 </segment>
 <segment>
@@ -34994,7 +34994,7 @@ pins while connecting</text>
 <label x="22.86" y="165.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="COUT1" class="0">
 <segment>
 <pinref part="LED1" gate="A" pin="COUT"/>
 <wire x1="228.6" y1="185.42" x2="233.68" y2="185.42" width="0.1524" layer="91"/>
@@ -35005,7 +35005,7 @@ pins while connecting</text>
 <wire x1="190.5" y1="162.56" x2="193.04" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="DOUT1" class="0">
 <segment>
 <pinref part="LED1" gate="A" pin="DOUT"/>
 <wire x1="228.6" y1="187.96" x2="236.22" y2="187.96" width="0.1524" layer="91"/>
@@ -35015,7 +35015,7 @@ pins while connecting</text>
 <wire x1="193.04" y1="172.72" x2="193.04" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="COUT2" class="0">
 <segment>
 <pinref part="LED2" gate="A" pin="COUT"/>
 <wire x1="228.6" y1="162.56" x2="233.68" y2="162.56" width="0.1524" layer="91"/>
@@ -35026,7 +35026,7 @@ pins while connecting</text>
 <wire x1="193.04" y1="139.7" x2="190.5" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="DOUT2" class="0">
 <segment>
 <pinref part="LED2" gate="A" pin="DOUT"/>
 <wire x1="228.6" y1="165.1" x2="236.22" y2="165.1" width="0.1524" layer="91"/>
