@@ -34661,11 +34661,11 @@ pins while connecting</text>
 <instance part="J3" gate="A" x="25.4" y="177.8" smashed="yes">
 <attribute name="NAME" x="29.5646" y="183.1086" size="2.083" layer="95" ratio="6"/>
 </instance>
-<instance part="GND47" gate="1" x="17.78" y="177.8" smashed="yes" rot="R180">
-<attribute name="VALUE" x="20.32" y="180.34" size="1.778" layer="96" rot="R180"/>
+<instance part="GND47" gate="1" x="17.78" y="160.02" smashed="yes">
+<attribute name="VALUE" x="15.24" y="157.48" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY29" gate="+5V" x="17.78" y="157.48" smashed="yes" rot="R180">
-<attribute name="VALUE" x="19.685" y="154.305" size="1.778" layer="96" rot="R180"/>
+<instance part="SUPPLY29" gate="+5V" x="17.78" y="180.34" smashed="yes">
+<attribute name="VALUE" x="15.875" y="183.515" size="1.778" layer="96"/>
 </instance>
 <instance part="LED1" gate="A" x="190.5" y="187.96" smashed="yes">
 <attribute name="NAME" x="206.0946" y="197.0786" size="2.083" layer="95" ratio="6"/>
@@ -34763,11 +34763,6 @@ pins while connecting</text>
 <wire x1="157.48" y1="193.04" x2="157.48" y2="195.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J3" gate="A" pin="2"/>
-<wire x1="25.4" y1="175.26" x2="17.78" y2="175.26" width="0.1524" layer="91"/>
-<pinref part="GND47" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="LED1" gate="A" pin="GND"/>
 <wire x1="193.04" y1="182.88" x2="190.5" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="GND44" gate="1" pin="GND"/>
@@ -34781,6 +34776,11 @@ pins while connecting</text>
 <pinref part="LED3" gate="A" pin="GND"/>
 <wire x1="193.04" y1="137.16" x2="190.5" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="GND55" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="J3" gate="A" pin="7"/>
+<pinref part="GND47" gate="1" pin="GND"/>
+<wire x1="25.4" y1="162.56" x2="17.78" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="HEX-0" class="0">
@@ -34818,12 +34818,6 @@ pins while connecting</text>
 <wire x1="43.18" y1="68.58" x2="38.1" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J3" gate="A" pin="8"/>
-<wire x1="25.4" y1="160.02" x2="22.86" y2="160.02" width="0.1524" layer="91"/>
-<pinref part="SUPPLY29" gate="+5V" pin="+5V"/>
-<wire x1="22.86" y1="160.02" x2="17.78" y2="160.02" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="LED1" gate="A" pin="VCC"/>
 <wire x1="228.6" y1="182.88" x2="231.14" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="SUPPLY31" gate="+5V" pin="+5V"/>
@@ -34837,6 +34831,11 @@ pins while connecting</text>
 <pinref part="LED3" gate="A" pin="VCC"/>
 <pinref part="SUPPLY35" gate="+5V" pin="+5V"/>
 <wire x1="228.6" y1="137.16" x2="231.14" y2="137.16" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J3" gate="A" pin="1"/>
+<pinref part="SUPPLY29" gate="+5V" pin="+5V"/>
+<wire x1="25.4" y1="177.8" x2="17.78" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="!RST!-RADIO" class="0">
@@ -34990,27 +34989,6 @@ pins while connecting</text>
 <label x="149.86" y="172.72" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="SCL" class="0">
-<segment>
-<pinref part="J3" gate="A" pin="3"/>
-<wire x1="25.4" y1="172.72" x2="22.86" y2="172.72" width="0.1524" layer="91"/>
-<label x="22.86" y="172.72" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="!RST!-I2C" class="0">
-<segment>
-<pinref part="J3" gate="A" pin="5"/>
-<wire x1="25.4" y1="167.64" x2="22.86" y2="167.64" width="0.1524" layer="91"/>
-<label x="22.86" y="167.64" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="SDA" class="0">
-<segment>
-<pinref part="J3" gate="A" pin="6"/>
-<wire x1="25.4" y1="165.1" x2="22.86" y2="165.1" width="0.1524" layer="91"/>
-<label x="22.86" y="165.1" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="COUT1" class="0">
 <segment>
 <pinref part="LED1" gate="A" pin="COUT"/>
@@ -35051,6 +35029,27 @@ pins while connecting</text>
 <wire x1="236.22" y1="149.86" x2="193.04" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="LED3" gate="A" pin="DIN"/>
 <wire x1="193.04" y1="149.86" x2="193.04" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SDA" class="0">
+<segment>
+<pinref part="J3" gate="A" pin="3"/>
+<wire x1="25.4" y1="172.72" x2="22.86" y2="172.72" width="0.1524" layer="91"/>
+<label x="22.86" y="172.72" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="!RST!-I2C" class="0">
+<segment>
+<pinref part="J3" gate="A" pin="4"/>
+<wire x1="25.4" y1="170.18" x2="22.86" y2="170.18" width="0.1524" layer="91"/>
+<label x="22.86" y="170.18" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="SCL" class="0">
+<segment>
+<pinref part="J3" gate="A" pin="6"/>
+<wire x1="25.4" y1="165.1" x2="22.86" y2="165.1" width="0.1524" layer="91"/>
+<label x="22.86" y="165.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
