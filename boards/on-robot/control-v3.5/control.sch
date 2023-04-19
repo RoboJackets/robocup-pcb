@@ -30207,6 +30207,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="R2" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="C4" library="rcl" deviceset="C-US" device="C0603" value="2.2uF 50V"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
+<part name="GND14" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -30375,6 +30376,9 @@ ripple current from motors</text>
 </instance>
 <instance part="GND13" gate="1" x="147.32" y="172.72" smashed="yes" rot="R90">
 <attribute name="VALUE" x="149.86" y="170.18" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND14" gate="1" x="147.32" y="167.64" smashed="yes" rot="R90">
+<attribute name="VALUE" x="149.86" y="165.1" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -30700,6 +30704,10 @@ ripple current from motors</text>
 <pinref part="U1" gate="A" pin="EPAD"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="U1" gate="A" pin="EN_BUCK"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="+18.5V" class="0">
 <segment>
@@ -30924,6 +30932,7 @@ ripple current from motors</text>
 <part name="U1" library="DRV8301DCAR" deviceset="DRV8301DCAR" device="DCA56_6P35X3P61"/>
 <part name="GND13" library="RoboJackets-Supplies" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
+<part name="GND14" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -31079,6 +31088,9 @@ ripple current from motors</text>
 </instance>
 <instance part="GND3" gate="1" x="139.7" y="157.48" smashed="yes">
 <attribute name="VALUE" x="137.16" y="154.94" size="1.778" layer="96"/>
+</instance>
+<instance part="GND14" gate="1" x="134.62" y="152.4" smashed="yes">
+<attribute name="VALUE" x="132.08" y="149.86" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -31396,6 +31408,11 @@ ripple current from motors</text>
 <wire x1="132.08" y1="160.02" x2="139.7" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="U1" gate="A" pin="EN_BUCK"/>
+<wire x1="132.08" y1="154.94" x2="134.62" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="+18.5V" class="0">
 <segment>
@@ -31471,9 +31488,9 @@ ripple current from motors</text>
 <wire x1="149.86" y1="160.02" x2="149.86" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="VDD_SPI"/>
 <wire x1="149.86" y1="162.56" x2="149.86" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="139.7" x2="134.62" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="139.7" x2="134.62" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="162.56" x2="149.86" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="139.7" x2="144.78" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="139.7" x2="144.78" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="162.56" x2="149.86" y2="162.56" width="0.1524" layer="91"/>
 <junction x="149.86" y="162.56"/>
 </segment>
 <segment>
