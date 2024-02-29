@@ -1,5 +1,65 @@
 (kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 10df9e93-5aa4-4429-b57b-91676d6753d5)
+
   (paper "A4")
-  (lib_symbols)
-  (symbol_instances)
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 19.05 166.37) (size 34.29 26.67) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 4960fc97-437c-4b96-9504-62dc958184a4)
+    (property "Sheetname" "fpga" (at 19.05 165.6584 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "fpga.kicad_sch" (at 19.05 193.6246 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "motortester-v2.0"
+        (path "/10df9e93-5aa4-4429-b57b-91676d6753d5" (page "2"))
+      )
+    )
+  )
+
+  (sheet (at 97.79 166.37) (size 34.29 26.67) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid b49e6d61-cabc-4c92-8d10-69e43d81e75b)
+    (property "Sheetname" "motor" (at 97.79 165.6584 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "motor.kicad_sch" (at 97.79 193.6246 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "motortester-v2.0"
+        (path "/10df9e93-5aa4-4429-b57b-91676d6753d5" (page "4"))
+      )
+    )
+  )
+
+  (sheet (at 58.42 166.37) (size 34.29 26.67) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid b6d360d6-86a6-483d-be74-04420b53d25a)
+    (property "Sheetname" "power" (at 58.42 165.6584 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "power.kicad_sch" (at 58.42 193.6246 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "motortester-v2.0"
+        (path "/10df9e93-5aa4-4429-b57b-91676d6753d5" (page "3"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
 )
