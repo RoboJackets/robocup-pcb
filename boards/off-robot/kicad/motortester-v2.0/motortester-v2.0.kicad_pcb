@@ -26132,6 +26132,19 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "LEDs are \nflipped"
+		(at 48.9 22 0)
+		(layer "Cmts.User")
+		(uuid "a9d76163-dd2c-48f0-8beb-d1ecc838a33b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.25)
+				(bold yes)
+			)
+			(justify bottom)
+		)
+	)
 	(segment
 		(start 58.032 56.268)
 		(end 59.047 56.268)
