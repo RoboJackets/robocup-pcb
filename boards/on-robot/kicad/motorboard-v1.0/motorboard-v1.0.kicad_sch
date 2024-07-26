@@ -1,0 +1,99 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "0b831060-eebb-4b19-8627-ea88aba682f7")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 25.4 63.5)
+		(size 25.4 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 255 194 1.0000)
+		)
+		(uuid "028bb400-f97a-4477-afbf-d0e5fc577b5b")
+		(property "Sheetname" "motor_1"
+			(at 25.4 62.7884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "untitled.kicad_sch"
+			(at 25.4 89.4846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "motorboard-v1.0"
+				(path "/0b831060-eebb-4b19-8627-ea88aba682f7"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 25.4 25.4)
+		(size 12.7 19.05)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 255 194 1.0000)
+		)
+		(uuid "66197b7d-a392-422b-aa0b-0ad6a6091dd5")
+		(property "Sheetname" "power"
+			(at 25.4 24.6884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 25.4 45.0346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "V_{BATT}" output
+			(at 38.1 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "ce3ace15-5464-4c9f-9d2b-0d9e97eeb40d")
+		)
+		(instances
+			(project "motorboard-v1.0"
+				(path "/0b831060-eebb-4b19-8627-ea88aba682f7"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
