@@ -4,9 +4,427 @@
 	(generator_version "8.0")
 	(uuid "0b831060-eebb-4b19-8627-ea88aba682f7")
 	(paper "A4")
-	(lib_symbols)
+	(lib_symbols
+		(symbol "RoboJackets-Connectors:XT60PW-M"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at -0.762 5.588 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "XT60PW-M"
+				(at -5.08 -5.0923 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "XT60PW-M:AMASS_XT60PW-M"
+				(at 0.254 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "\nSocket, DC supply, male, PIN: 2\n"
+				(at 1.524 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "XT60PW-M_0_0"
+				(rectangle
+					(start 1.27 -2.54)
+					(end -1.27 5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "XT60PW-M_1_0"
+				(pin power_in line
+					(at 6.35 2.54 180)
+					(length 5.08)
+					(name "+"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 6.35 0 180)
+					(length 5.08)
+					(name "-"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 35.56 33.02) (xy 35.56 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "062a6188-59d5-4463-b7e5-773e8b875714")
+	)
+	(wire
+		(pts
+			(xy 87.63 34.29) (xy 91.44 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bba788d-206a-4ba0-9986-477a782301d5")
+	)
+	(wire
+		(pts
+			(xy 33.02 30.48) (xy 38.1 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "914d8591-b752-4ad4-be3c-ae89ff1c2be6")
+	)
+	(wire
+		(pts
+			(xy 33.02 33.02) (xy 35.56 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ffb77fbc-a188-488f-9d1f-86705d56d88f")
+	)
+	(rectangle
+		(start 20.32 21.59)
+		(end 44.45 40.64)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 207ba7d2-f59a-45bd-977d-8117b6713a63)
+	)
+	(text "Battery Input"
+		(exclude_from_sim no)
+		(at 32.512 18.796 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "7787a743-3c00-4414-a1c8-6450afa8d9fe")
+	)
+	(label "V_{BATT}"
+		(at 38.1 30.48 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0833b7b1-1519-4362-994a-712b94ae1c36")
+	)
+	(label "V_{BATT}"
+		(at 87.63 34.29 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e082bab2-28f7-420b-ab9d-4e217f3f19fe")
+	)
+	(symbol
+		(lib_id "RoboJackets-Connectors:XT60PW-M")
+		(at 26.67 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5be222c9-e32a-4c05-aedc-0385c9601ee6")
+		(property "Reference" "J1"
+			(at 26.67 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "XT60PW-M"
+			(at 26.67 26.416 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "XT60PW-M:AMASS_XT60PW-M"
+			(at 26.924 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 26.67 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Socket, DC supply, male, PIN: 2"
+			(at 28.194 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e801028c-1112-4c12-9e79-a772fac193cc")
+		)
+		(pin "2"
+			(uuid "e38bd028-cc72-4ae5-8593-d8d037c9110d")
+		)
+		(instances
+			(project "motorboard-v1.0"
+				(path "/0b831060-eebb-4b19-8627-ea88aba682f7"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 35.56 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f0de424a-6124-42ac-912c-60cc063db807")
+		(property "Reference" "#PWR034"
+			(at 35.56 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 35.56 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 35.56 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35.56 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 35.56 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "78564efe-094a-436b-b397-4c586d84de3f")
+		)
+		(instances
+			(project "motorboard-v1.0"
+				(path "/0b831060-eebb-4b19-8627-ea88aba682f7"
+					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(sheet
-		(at 25.4 63.5)
+		(at 91.44 60.96)
 		(size 25.4 25.4)
 		(fields_autoplaced yes)
 		(stroke
@@ -18,7 +436,7 @@
 		)
 		(uuid "028bb400-f97a-4477-afbf-d0e5fc577b5b")
 		(property "Sheetname" "motor_1"
-			(at 25.4 62.7884 0)
+			(at 91.44 60.2484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27,7 +445,7 @@
 			)
 		)
 		(property "Sheetfile" "untitled.kicad_sch"
-			(at 25.4 89.4846 0)
+			(at 91.44 86.9446 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -44,7 +462,7 @@
 		)
 	)
 	(sheet
-		(at 25.4 25.4)
+		(at 91.44 29.21)
 		(size 12.7 19.05)
 		(fields_autoplaced yes)
 		(stroke
@@ -56,7 +474,7 @@
 		)
 		(uuid "66197b7d-a392-422b-aa0b-0ad6a6091dd5")
 		(property "Sheetname" "power"
-			(at 25.4 24.6884 0)
+			(at 91.44 28.4984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -65,7 +483,7 @@
 			)
 		)
 		(property "Sheetfile" "power.kicad_sch"
-			(at 25.4 45.0346 0)
+			(at 91.44 48.8446 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -73,15 +491,55 @@
 				(justify left top)
 			)
 		)
-		(pin "V_{BATT}" output
-			(at 38.1 30.48 0)
+		(pin "V_{BATT}" input
+			(at 91.44 34.29 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "ce3ace15-5464-4c9f-9d2b-0d9e97eeb40d")
+		)
+		(pin "+5V" output
+			(at 104.14 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "ce3ace15-5464-4c9f-9d2b-0d9e97eeb40d")
+			(uuid "853e1318-16dc-45fe-9901-5e62aa81a923")
+		)
+		(pin "+3.3V" output
+			(at 104.14 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "a1a0da5c-d575-4ad2-8f9b-049da28b6b08")
+		)
+		(pin "~{INT}" output
+			(at 104.14 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "ba18d4f2-e128-479c-9f57-67f92a3af0ac")
+		)
+		(pin "~{KILL}" output
+			(at 104.14 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "8878aede-40e3-4098-a4d6-6e24f5f35bb4")
 		)
 		(instances
 			(project "motorboard-v1.0"
