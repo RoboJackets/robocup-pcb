@@ -3,9 +3,10 @@
 	(generator "pcbnew")
 	(generator_version "8.0")
 	(layer "F.Cu")
+	(descr "430450610")
 	(tags "430450610 ")
 	(property "Reference" "REF**"
-		(at 0 -15.24 0)
+		(at 0 7.5 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "bb7a3810-6035-4d55-acce-080c5a6dfe62")
@@ -17,7 +18,7 @@
 		)
 	)
 	(property "Value" "CON_430450610_MOL"
-		(at 0 -15.24 0)
+		(at 0 11 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "3369e2a1-2b8e-44be-87af-caa01688acc4")
@@ -296,19 +297,7 @@
 		(uuid "289c84d9-af8b-473f-aa3a-a85a4eed2560")
 	)
 	(fp_text user "430450610"
-		(at 0 -17.985001 0)
-		(unlocked yes)
-		(layer "F.SilkS")
-		(uuid "36fb7821-e93c-4cb1-8bf6-56e6e8ae650a")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(fp_text user "430450610"
-		(at 0 -17.985001 0)
+		(at 0 13 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "9176f424-ccf1-4a71-8f88-a2df8d529e8a")
@@ -320,7 +309,7 @@
 		)
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0 -15.24 0)
+		(at 0 9 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "e3c9f9d7-3107-47a8-aa1c-11e4a551f36b")

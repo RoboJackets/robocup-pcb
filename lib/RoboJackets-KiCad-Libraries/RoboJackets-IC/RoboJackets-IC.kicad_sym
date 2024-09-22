@@ -27,7 +27,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RoboJackets-IC:SOIC127P600X175-16N"
 			(at 4.445 -25.4 0)
 			(effects
 				(font
@@ -48,6 +48,15 @@
 		)
 		(property "Description" "0/4 Receiver RS422, RS423 16-SOIC"
 			(at -0.254 -32.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "MC3486DR"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -380,7 +389,7 @@
 				)
 			)
 		)
-		(property "Footprint" "DCT8"
+		(property "Footprint" "RoboJackets-IC:SOP65P400X130-8N"
 			(at 21.082 -22.352 0)
 			(effects
 				(font
@@ -637,6 +646,14 @@
 				)
 				(justify bottom)
 				(hide yes)
+			)
+		)
+		(property "Package" "IC_STSPIN32F0A"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(symbol "STSPIN32F0A_0_0"
@@ -1558,7 +1575,7 @@
 				)
 			)
 		)
-		(property "Footprint" "HTSSOP14_PWP_TEX"
+		(property "Footprint" "RoboJackets-IC:HTSSOP14_PWP_TEX"
 			(at 25.146 -46.736 0)
 			(effects
 				(font
