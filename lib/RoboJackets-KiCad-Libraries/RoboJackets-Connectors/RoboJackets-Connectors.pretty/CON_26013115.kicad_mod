@@ -3,9 +3,10 @@
 	(generator "pcbnew")
 	(generator_version "8.0")
 	(layer "F.Cu")
+	(descr "26013115")
 	(tags "26013115 ")
 	(property "Reference" "REF**"
-		(at -2.099998 -11.43 0)
+		(at 0 17 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "632f16ea-a864-467d-827a-969aae6a9777")
@@ -17,7 +18,7 @@
 		)
 	)
 	(property "Value" "CON_26013115"
-		(at -2.099998 -11.43 0)
+		(at 0 19 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "4aae09d2-9b99-42aa-9972-46c4bcd7dcc1")
@@ -265,20 +266,8 @@
 		(layer "F.Fab")
 		(uuid "cab76572-2560-4f26-a5a2-b15ac2136f3b")
 	)
-	(fp_text user "26013115"
-		(at -2.099998 -16.387501 0)
-		(unlocked yes)
-		(layer "F.SilkS")
-		(uuid "c9736fb9-3944-4b79-b6a1-9fa30bfb60c2")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
 	(fp_text user "NPTH_DRILL_SIZE:_3.0_MM,_TOL:_+0.05/-0.05"
-		(at -2.099998 21.712499 0)
+		(at 0 26 0)
 		(unlocked yes)
 		(layer "Cmts.User")
 		(uuid "0678f700-15c6-420a-a79a-ac1907c2c509")
@@ -290,7 +279,7 @@
 		)
 	)
 	(fp_text user "PTH_DRILL_SIZE:_1.8_MM,_TOL:_+0.05/-0.05"
-		(at -2.099998 19.172499 0)
+		(at 0 23.46 0)
 		(unlocked yes)
 		(layer "Cmts.User")
 		(uuid "ad563693-2964-4a3d-a304-81434b07f0b9")
@@ -301,20 +290,8 @@
 			)
 		)
 	)
-	(fp_text user "26013115"
-		(at -2.099998 -16.387501 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(uuid "6c2bc231-9e51-47a9-b4c2-731890b6f6c2")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
 	(fp_text user "${REFERENCE}"
-		(at -2.099998 -11.43 0)
+		(at 0 21.327501 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "716df4e8-7043-49c0-8361-3b5a2170a953")
