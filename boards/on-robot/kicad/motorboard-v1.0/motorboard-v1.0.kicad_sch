@@ -4827,7 +4827,7 @@
 	)
 	(polyline
 		(pts
-			(xy 177.8 260.35) (xy 177.8 267.97)
+			(xy 177.8 260.35) (xy 177.8 270.51)
 		)
 		(stroke
 			(width 0)
@@ -5467,7 +5467,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 267.97) (xy 191.77 267.97)
+			(xy 187.96 267.97) (xy 191.77 267.97)
 		)
 		(stroke
 			(width 0)
@@ -5534,6 +5534,16 @@
 			(type default)
 		)
 		(uuid "3d7f62ae-a5ef-4699-8b17-1ba0018fa32b")
+	)
+	(wire
+		(pts
+			(xy 187.96 270.51) (xy 191.77 270.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e8580c7-9c81-4c85-b755-96b4ca5ca62e")
 	)
 	(wire
 		(pts
@@ -8697,7 +8707,7 @@
 	)
 	(text "HSS"
 		(exclude_from_sim no)
-		(at 175.768 264.414 90)
+		(at 176.022 265.938 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9012,7 +9022,7 @@
 		(uuid "24fe6749-5a4b-4970-b39b-e82cf0fa620f")
 	)
 	(label "LATCH"
-		(at 186.69 267.97 180)
+		(at 187.96 267.97 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9439,6 +9449,17 @@
 			(justify left bottom)
 		)
 		(uuid "823af8da-9f9b-49d1-95fc-c57440ef1107")
+	)
+	(label "SNS"
+		(at 187.96 270.51 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8416c569-a3f4-4188-8df9-2ac681dbc2ae")
 	)
 	(label "M2_USART_TX"
 		(at 35.56 118.11 180)
