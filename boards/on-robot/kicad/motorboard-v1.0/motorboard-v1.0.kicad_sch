@@ -6247,6 +6247,16 @@
 	)
 	(wire
 		(pts
+			(xy 30.48 260.35) (xy 33.02 260.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72b2d195-a571-4789-99ca-b92138cf56d4")
+	)
+	(wire
+		(pts
 			(xy 34.29 190.5) (xy 36.83 190.5)
 		)
 		(stroke
@@ -6727,6 +6737,16 @@
 	)
 	(wire
 		(pts
+			(xy 30.48 257.81) (xy 33.02 257.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8df898f2-df10-46d6-9aa0-ba58ec304f3e")
+	)
+	(wire
+		(pts
 			(xy 123.19 90.17) (xy 129.54 90.17)
 		)
 		(stroke
@@ -6764,6 +6784,16 @@
 			(type default)
 		)
 		(uuid "907ce514-8059-4772-9a94-cef24d37d42b")
+	)
+	(wire
+		(pts
+			(xy 30.48 262.89) (xy 33.02 262.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92fb1289-96da-4c22-937c-74cb817a6fc7")
 	)
 	(wire
 		(pts
@@ -6834,6 +6864,16 @@
 			(type default)
 		)
 		(uuid "967083c9-6d7f-4a59-8786-36426202f835")
+	)
+	(wire
+		(pts
+			(xy 30.48 265.43) (xy 33.02 265.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "970b44c5-3bc0-4bb9-ba30-1c57f12e6e33")
 	)
 	(wire
 		(pts
@@ -6944,6 +6984,16 @@
 			(type default)
 		)
 		(uuid "9f2e4838-f5e6-4197-9b8f-5342b2aad15b")
+	)
+	(polyline
+		(pts
+			(xy 17.78 255.27) (xy 17.78 267.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f447e60-d90f-4720-895d-3906d190e0ed")
 	)
 	(wire
 		(pts
@@ -7364,6 +7414,16 @@
 			(type default)
 		)
 		(uuid "bbd70b07-5abd-424d-8a3d-9ba31cb12308")
+	)
+	(wire
+		(pts
+			(xy 30.48 267.97) (xy 33.02 267.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc0fd7a6-1225-4e51-8224-d5da13830a4a")
 	)
 	(wire
 		(pts
@@ -8401,7 +8461,7 @@
 		)
 		(uuid fe4df7c6-fcdc-42f2-a785-0a54460a0a6b)
 	)
-	(text_box "Ensure button is on top-side of board."
+	(text_box "SPST: Ensure button is on top-side of board."
 		(exclude_from_sim no)
 		(at 337.82 38.1 0)
 		(size 25.4 6.35)
@@ -8460,10 +8520,10 @@
 		)
 		(uuid "6b872589-1d06-429c-bc58-77e8c2fde545")
 	)
-	(text_box "Should be placed on bottom-center edge of board, near the battery."
+	(text_box "XT60PW-M: Should be placed on bottom-center edge of board on the underside, near the battery.\nFuse: Check to see if enough vertical space on top. If not, place on underside."
 		(exclude_from_sim no)
 		(at 242.57 31.75 0)
-		(size 25.4 8.89)
+		(size 52.07 10.16)
 		(stroke
 			(width 0)
 			(type default)
@@ -8524,7 +8584,7 @@
 	(text_box "52901-0274: Place on top-side of board. Doesn't need to be on edge of the board. Try to space these equidistant from the center and from each other. If the routing doesn't make sense later, we can redistribute these signals to other unoccupied pins."
 		(exclude_from_sim no)
 		(at 62.23 231.14 0)
-		(size 127 6.35)
+		(size 130.81 6.35)
 		(stroke
 			(width 0)
 			(type default)
@@ -8542,7 +8602,7 @@
 		)
 		(uuid "b77115b9-2a40-45e7-ae9c-f80947c588ad")
 	)
-	(text_box "See datasheet for routing and placement notes."
+	(text_box "TPS1: See datasheet for routing and placement notes."
 		(exclude_from_sim no)
 		(at 322.58 60.96 0)
 		(size 25.4 7.62)
@@ -8563,10 +8623,10 @@
 		)
 		(uuid "eac3ed27-9e11-4089-8c5b-7fbeffb894d8")
 	)
-	(text_box "See datasheet for optimal routing and placement notes."
+	(text_box "MPM: See datasheet for optimal routing and placement notes."
 		(exclude_from_sim no)
 		(at 269.24 139.7 0)
-		(size 31.75 6.35)
+		(size 36.83 6.35)
 		(stroke
 			(width 0)
 			(type default)
@@ -8736,6 +8796,16 @@
 		)
 		(uuid "ca802dbc-de6e-4b43-9f7a-5eb293fa145f")
 	)
+	(text "KICKER"
+		(exclude_from_sim no)
+		(at 16.256 261.874 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d3c7e502-48d7-4a15-9125-ef91406957d2")
+	)
 	(text "Voltage regulator configured for 5V, 2A Output\nSee Figure 12 on datasheet."
 		(exclude_from_sim no)
 		(at 252.73 162.306 0)
@@ -8830,6 +8900,17 @@
 			(justify right bottom)
 		)
 		(uuid "06dc4c30-9a03-4c45-b772-0179a14a3a14")
+	)
+	(label "~{CS}_KICK"
+		(at 30.48 265.43 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "074b0c35-e86b-45b6-91bd-e23447904a6c")
 	)
 	(label "M2_USART_RX"
 		(at 35.56 120.65 180)
@@ -9249,6 +9330,17 @@
 		)
 		(uuid "649ba555-9253-4edd-a168-16551fcb590f")
 	)
+	(label "MISO_KICK"
+		(at 30.48 257.81 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "65d0bc4a-3203-4726-9a0a-56590cd0d162")
+	)
 	(label "M2_USART_TX"
 		(at 82.55 250.19 180)
 		(fields_autoplaced yes)
@@ -9612,6 +9704,17 @@
 		)
 		(uuid "bcc14178-e8d7-464f-9075-9146a981ca57")
 	)
+	(label "MOSI_KICK"
+		(at 30.48 260.35 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "be1d0f78-c784-4b49-afba-5351f0ef9735")
+	)
 	(label "M3_ENCB_P"
 		(at 107.95 156.21 0)
 		(fields_autoplaced yes)
@@ -9655,6 +9758,17 @@
 			(justify left bottom)
 		)
 		(uuid "d4a6eb03-61bb-4235-9df5-08df0b84b4bb")
+	)
+	(label "~{RST}_KICK"
+		(at 30.48 267.97 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d575f6d4-efb2-4ce4-9a19-64d6084d89d1")
 	)
 	(label "M3_ENCA_P"
 		(at 107.95 148.59 0)
@@ -9776,6 +9890,17 @@
 			(justify right bottom)
 		)
 		(uuid "f2664046-88ea-4477-9455-54a2cf261edd")
+	)
+	(label "SCK_KICK"
+		(at 30.48 262.89 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f4b3940f-fe6c-43d7-8f3a-c8304ea2e8c6")
 	)
 	(label "~{RST}_KICK"
 		(at 256.54 254 180)
