@@ -7242,6 +7242,90 @@
 		)
 		(uuid "fef7f1f1-8773-4dde-881f-83d49cc6ad90")
 	)
+	(text_box "SW: Place on topside & and the very edge to ensure it is accessible"
+		(exclude_from_sim no)
+		(at 213.36 54.61 0)
+		(size 69.85 3.81)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 11 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 13 1)
+			)
+			(justify left top)
+		)
+		(uuid "5a7b42f2-8cd5-485c-afa9-c48697b0f8f8")
+	)
+	(text_box "LED: Should go on top and still be visible."
+		(exclude_from_sim no)
+		(at 201.93 105.41 0)
+		(size 46.99 3.81)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 11 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 13 1)
+			)
+			(justify left top)
+		)
+		(uuid "6d8d9e56-46f3-44fc-bc83-894171608115")
+	)
+	(text_box "39301080: Place on underside and at the edge of the board, adjacent to the 51021601-1\n5102160-1: Place on underside and at the edge of the board."
+		(exclude_from_sim no)
+		(at 13.97 184.15 0)
+		(size 93.98 6.35)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 11 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 13 1)
+			)
+			(justify left top)
+		)
+		(uuid "b5de2534-5b1f-417f-af29-7256d453d9d7")
+	)
+	(text_box "No specific capacitors have been chose yet, but likely the 220 uF caps will be quite large (meaning electrolytic caps). Either ensure there is enough space vertically above or place on underside."
+		(exclude_from_sim no)
+		(at 213.36 41.91 0)
+		(size 69.85 7.62)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 11 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 13 1)
+			)
+			(justify left top)
+		)
+		(uuid "c8a24c40-4951-4d85-99b3-009ccf75bc86")
+	)
 	(text "Motor and Hall Sensors"
 		(exclude_from_sim no)
 		(at 46.736 149.86 0)
