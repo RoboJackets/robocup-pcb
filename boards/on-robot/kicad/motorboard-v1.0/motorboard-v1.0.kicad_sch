@@ -8471,6 +8471,27 @@
 		)
 		(uuid fe4df7c6-fcdc-42f2-a785-0a54460a0a6b)
 	)
+	(text_box "IMPORTANT! NEED TO ADD DRIBBLER MOTOR DRIVER\n\nDRIBBLER DOES NOT NEED ENCODER"
+		(exclude_from_sim no)
+		(at 125.73 121.92 0)
+		(size 44.45 10.16)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 255 1)
+			)
+			(justify left top)
+		)
+		(uuid "46ddee81-4951-4599-ad2f-1a5db9d14a69")
+	)
 	(text_box "SPST: Ensure button is on top-side of board."
 		(exclude_from_sim no)
 		(at 337.82 38.1 0)
@@ -8612,6 +8633,69 @@
 		)
 		(uuid "b77115b9-2a40-45e7-ae9c-f80947c588ad")
 	)
+	(text_box "~{RST} vs NRST? Should we standardize this naming convention?"
+		(exclude_from_sim no)
+		(at 55.88 274.32 0)
+		(size 26.67 7.62)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 255 1)
+			)
+			(justify left top)
+		)
+		(uuid "d30e1433-3718-4d83-88aa-6945892d096c")
+	)
+	(text_box "Also would like to go ahead and replace the kicker connector with something like a JST SH 8 Pin connector"
+		(exclude_from_sim no)
+		(at 347.98 229.87 0)
+		(size 57.15 7.62)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 255 1)
+			)
+			(justify left top)
+		)
+		(uuid "df63c824-174a-41b2-91ea-b8535f8d1f61")
+	)
+	(text_box "KELVIN TODO: Replace pushbutton :)"
+		(exclude_from_sim no)
+		(at 337.82 45.72 0)
+		(size 24.13 7.62)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 255 1)
+			)
+			(justify left top)
+		)
+		(uuid "e9f34391-5dae-44eb-bd42-42dcd60ff198")
+	)
 	(text_box "TPS1: See datasheet for routing and placement notes."
 		(exclude_from_sim no)
 		(at 322.58 60.96 0)
@@ -8653,6 +8737,27 @@
 			(justify left top)
 		)
 		(uuid "eb21d26b-ef9f-467c-8375-70c30263f3d7")
+	)
+	(text_box "Is it possible to use an XT-30 connector for the kicker power passthrough? I would feel more comfortable with a higher AMP rated connector that is commonly used in LiPo battery applications"
+		(exclude_from_sim no)
+		(at 271.78 229.87 0)
+		(size 73.66 7.62)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 255 1)
+			)
+			(justify left top)
+		)
+		(uuid "edb23681-27a5-4b90-8b90-ec723945a770")
 	)
 	(text "R_{SNS}"
 		(exclude_from_sim no)
@@ -10175,7 +10280,7 @@
 			(uuid "fb66ed1f-4a6c-4ce0-a728-dfe58979e024")
 		)
 		(instances
-			(project ""
+			(project "motorboard-v1.0"
 				(path "/0b831060-eebb-4b19-8627-ea88aba682f7"
 					(reference "J9")
 					(unit 1)
@@ -11831,7 +11936,7 @@
 			(uuid "5511aef7-40af-4046-a9c3-a9d61976ca3f")
 		)
 		(instances
-			(project ""
+			(project "motorboard-v1.0"
 				(path "/0b831060-eebb-4b19-8627-ea88aba682f7"
 					(reference "J8")
 					(unit 1)
@@ -12435,7 +12540,7 @@
 			(uuid "02a26e16-e3ab-4cae-ac35-bb7bfefc1db5")
 		)
 		(instances
-			(project ""
+			(project "motorboard-v1.0"
 				(path "/0b831060-eebb-4b19-8627-ea88aba682f7"
 					(reference "J20")
 					(unit 1)
