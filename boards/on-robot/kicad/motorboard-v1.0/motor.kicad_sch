@@ -4829,12 +4829,6 @@
 		(uuid "23fc92ad-6478-43bc-a4c8-863bffdabe63")
 	)
 	(junction
-		(at 213.36 139.7)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "29ad8279-7817-41f4-bdaa-8f5de5eae403")
-	)
-	(junction
 		(at 147.32 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4899,18 +4893,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5ddb0c7e-cf0f-485d-9dc3-cd6bf1555415")
-	)
-	(junction
-		(at 213.36 144.78)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6273e2a6-5fc3-4483-b8b4-dbefebd65371")
-	)
-	(junction
-		(at 213.36 142.24)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "630fa37c-6e2c-4373-8dba-def123d58de5")
 	)
 	(junction
 		(at 158.75 173.99)
@@ -5348,16 +5330,6 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 142.24) (xy 213.36 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1863ef98-40c3-4076-9c4a-c3b60b96b646")
-	)
-	(wire
-		(pts
 			(xy 147.32 87.63) (xy 175.26 87.63)
 		)
 		(stroke
@@ -5365,16 +5337,6 @@
 			(type default)
 		)
 		(uuid "187db56a-ae28-4506-be1b-ed305b85fdfc")
-	)
-	(wire
-		(pts
-			(xy 210.82 142.24) (xy 213.36 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "18c7d3d8-396d-4dbc-a8fd-06d47f268aca")
 	)
 	(wire
 		(pts
@@ -5505,16 +5467,6 @@
 			(type default)
 		)
 		(uuid "26e4a093-f212-463e-ab12-43ed25db7d59")
-	)
-	(wire
-		(pts
-			(xy 213.36 144.78) (xy 213.36 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "275ec60f-a2d8-4032-8e8b-1d82ca8a7d05")
 	)
 	(wire
 		(pts
@@ -5828,16 +5780,6 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 139.7) (xy 213.36 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4c82cd95-ed09-4de6-8ee7-84a1ad6f6774")
-	)
-	(wire
-		(pts
 			(xy 152.4 26.67) (xy 161.29 26.67)
 		)
 		(stroke
@@ -5945,16 +5887,6 @@
 			(type default)
 		)
 		(uuid "57517f63-575c-4031-a94d-53d5163b0642")
-	)
-	(wire
-		(pts
-			(xy 213.36 158.75) (xy 213.36 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "58d8028c-c7e4-49ac-b5e4-9b17eeb202ae")
 	)
 	(wire
 		(pts
@@ -6518,16 +6450,6 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 139.7) (xy 213.36 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a6434515-7892-444a-b976-56c8ee57653e")
-	)
-	(wire
-		(pts
 			(xy 158.75 189.23) (xy 167.64 189.23)
 		)
 		(stroke
@@ -6638,16 +6560,6 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 137.16) (xy 213.36 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b4a849e2-5ff0-4f55-9c82-2f58300b5080")
-	)
-	(wire
-		(pts
 			(xy 232.41 34.29) (xy 241.3 34.29)
 		)
 		(stroke
@@ -6705,16 +6617,6 @@
 			(type default)
 		)
 		(uuid "b930f2b6-8518-4e1b-853d-f90b15c1095d")
-	)
-	(wire
-		(pts
-			(xy 213.36 142.24) (xy 213.36 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b9366742-488c-447e-b123-6f47726c5c72")
 	)
 	(wire
 		(pts
@@ -7228,16 +7130,6 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 144.78) (xy 215.9 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eaedb6f5-9890-42a4-869e-015984c89edd")
-	)
-	(wire
-		(pts
 			(xy 175.26 90.17) (xy 180.34 90.17)
 		)
 		(stroke
@@ -7397,48 +7289,6 @@
 			(justify left top)
 		)
 		(uuid "6d8d9e56-46f3-44fc-bc83-894171608115")
-	)
-	(text_box "We should use OC_COMP!"
-		(exclude_from_sim no)
-		(at 19.05 38.1 0)
-		(size 16.51 5.08)
-		(stroke
-			(width 0)
-			(type default)
-			(color 255 0 255 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 0 255 1)
-			)
-			(justify left top)
-		)
-		(uuid "8a249376-2949-4dc5-a15a-2ea7f47aabf6")
-	)
-	(text_box "Seems like to be able to use OC_COMP we need the a common node form the SENSE_N signals into another SHUNT"
-		(exclude_from_sim no)
-		(at 218.44 149.86 0)
-		(size 39.37 10.16)
-		(stroke
-			(width 0)
-			(type default)
-			(color 255 0 255 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 0 255 1)
-			)
-			(justify left top)
-		)
-		(uuid "9db92e1a-0da5-4efc-bb96-65e4f0ff2378")
 	)
 	(text_box "39301080: Place on underside and at the edge of the board, adjacent to the 51021601-1\n5102160-1: Place on underside and at the edge of the board."
 		(exclude_from_sim no)
@@ -7652,17 +7502,6 @@
 			(justify left bottom)
 		)
 		(uuid "1a62bacb-1c7d-4bd4-8805-3b6fec9a9017")
-	)
-	(label "SENSE_W_N"
-		(at 210.82 142.24 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "1a8081b7-b6b9-448b-86b9-fad7c52ce17e")
 	)
 	(label "H2_M"
 		(at 41.91 158.75 180)
@@ -7917,7 +7756,7 @@
 		)
 		(uuid "721cf092-03fb-4c9f-b1fe-67447b72595c")
 	)
-	(label "SENSE_OC_COMP_P"
+	(label "SENSE_U_P"
 		(at 35.56 52.07 180)
 		(fields_autoplaced yes)
 		(effects
@@ -7983,28 +7822,6 @@
 		)
 		(uuid "8e6822e8-ea36-4769-9e9c-2eeb0495793a")
 	)
-	(label "SENSE_V_N"
-		(at 210.82 139.7 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8f4f6c54-d264-4cc4-ae6b-2fe81f861505")
-	)
-	(label "SENSE_OC_COMP_P"
-		(at 215.9 144.78 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "9a1f36fe-d5a0-4b6a-8af5-cad11afb647d")
-	)
 	(label "PHASE_V"
 		(at 106.68 72.39 0)
 		(fields_autoplaced yes)
@@ -8048,17 +7865,6 @@
 			(justify right bottom)
 		)
 		(uuid "a36c3500-b6aa-4d51-a659-0312cf00e188")
-	)
-	(label "SENSE_U_N"
-		(at 210.82 137.16 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "adbddaee-073d-4326-8ae8-656fb842c792")
 	)
 	(label "HSW"
 		(at 125.73 100.33 180)
@@ -8593,83 +8399,6 @@
 				)
 				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/60fbc74e-8e36-4280-91eb-bd909ace4d6a"
 					(reference "#PWR068")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 213.36 158.75 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0cec91b1-2c93-40a2-94e1-cd52ac13f9cd")
-		(property "Reference" "#PWR0201"
-			(at 213.36 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 213.36 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 213.36 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 213.36 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 213.36 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7a920d25-7c35-4489-9b5c-59e66d3f4b63")
-		)
-		(instances
-			(project "motorboard-v1.0"
-				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/028bb400-f97a-4477-afbf-d0e5fc577b5b"
-					(reference "#PWR0201")
-					(unit 1)
-				)
-				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/60fbc74e-8e36-4280-91eb-bd909ace4d6a"
-					(reference "#PWR0301")
-					(unit 1)
-				)
-				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/0c3b9bb9-6010-4172-a207-f7847b9176dc"
-					(reference "#PWR0401")
-					(unit 1)
-				)
-				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/3e01a677-8998-4204-9b3a-67308b3f646b"
-					(reference "#PWR0501")
 					(unit 1)
 				)
 			)
@@ -13513,87 +13242,6 @@
 				)
 				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/60fbc74e-8e36-4280-91eb-bd909ace4d6a"
 					(reference "C32")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 213.36 151.13 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "cb4e80a3-cd0a-41b6-9a94-16080ec81942")
-		(property "Reference" "R201"
-			(at 207.01 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2m"
-			(at 208.28 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 214.376 151.384 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 213.36 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 213.36 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "212406b7-a627-4174-9455-eb1e0d0207b2")
-		)
-		(pin "1"
-			(uuid "a8ee611d-339c-46e1-9807-42a7555898c2")
-		)
-		(instances
-			(project "motorboard-v1.0"
-				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/028bb400-f97a-4477-afbf-d0e5fc577b5b"
-					(reference "R201")
-					(unit 1)
-				)
-				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/60fbc74e-8e36-4280-91eb-bd909ace4d6a"
-					(reference "R301")
-					(unit 1)
-				)
-				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/0c3b9bb9-6010-4172-a207-f7847b9176dc"
-					(reference "R401")
-					(unit 1)
-				)
-				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/3e01a677-8998-4204-9b3a-67308b3f646b"
-					(reference "R501")
 					(unit 1)
 				)
 			)
