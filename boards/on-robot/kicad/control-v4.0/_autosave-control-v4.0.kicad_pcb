@@ -234,7 +234,7 @@
 	(footprint "RF_Module:nRF24L01_Breakout"
 		(layer "F.Cu")
 		(uuid "19b2c847-f3d0-41cb-beee-1ab44ca2facf")
-		(at 66.5475 80.725)
+		(at 69.2105 96.375)
 		(descr "nRF24L01 breakout board")
 		(tags "nRF24L01 adapter breakout")
 		(property "Reference" "U3"
@@ -6534,5 +6534,16 @@
 				(xyz -90 0 0)
 			)
 		)
+	)
+	(gr_rect
+		(start 57 26)
+		(end 253 141)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "Edge.Cuts")
+		(uuid "a1f5735b-0cad-40fc-8411-bf1d9d41075c")
 	)
 )
