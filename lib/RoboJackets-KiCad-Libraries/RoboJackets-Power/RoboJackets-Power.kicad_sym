@@ -49,6 +49,51 @@
 				(hide yes)
 			)
 		)
+		(property "Vendor" "Digikey"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor P/N" "505-LTC2955CTS8-1#TRMPBFCT-ND"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor URL" "https://www.digikey.com/en/products/detail/analog-devices-inc/LTC2955CTS8-1-TRMPBF/3065178"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Analog Devices"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer P/N" "LTC2955CTS8-1#TRMPBF"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "ki_keywords" "LTC,LTC2995,LT2955,Linear Technology,LinearTechnology,Linear,Technology"
 			(at 0 0 0)
 			(effects
@@ -216,213 +261,6 @@
 			)
 		)
 	)
-	(symbol "LTC4367"
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "U"
-			(at 2.54 13.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LTC4367"
-			(at 0 -15.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "AT-IC:MS8"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/4367fb.pdf"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "SUPPLY PROTECTION CONTROLLER"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "LTC4367_0_1"
-			(rectangle
-				(start -7.62 12.7)
-				(end 7.62 -12.7)
-				(stroke
-					(width 0.1524)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "LTC4367_1_1"
-			(pin power_in line
-				(at -10.16 11.43 0)
-				(length 2.54)
-				(name "V_{IN}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -10.16 3.81 0)
-				(length 2.54)
-				(name "UV"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -10.16 -3.81 0)
-				(length 2.54)
-				(name "OV"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -10.16 -11.43 0)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 10.16 -11.43 180)
-				(length 2.54)
-				(name "~{SHDN}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin open_collector line
-				(at 10.16 -8.89 180)
-				(length 2.54)
-				(name "~{FAULT}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 10.16 11.43 180)
-				(length 2.54)
-				(name "V_{OUT}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 0 15.24 270)
-				(length 2.54)
-				(name "GATE"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-	)
 	(symbol "MPM3620GQV-P"
 		(pin_names
 			(offset 0.254)
@@ -468,6 +306,51 @@
 		)
 		(property "Description" "DC DC CONVERTER 0.8-18.48V"
 			(at 14.986 -34.798 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor P/N" "1589-1252-1-ND"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor URL" "https://www.digikey.com/en/products/detail/monolithic-power-systems-inc/MPM3620GQV-P/5299009?s=N4IgTCBcDaILIAU4GYBsYAMBxAigNQFoEQBdAXyA"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Monolithic Power Systems"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer P/N" "MPM3620GQV-P"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -867,52 +750,51 @@
 			)
 		)
 	)
-	(symbol "VND5E006ASPTR-E"
+	(symbol "VN5E006ASP-E"
 		(pin_names
-			(offset 1.016)
+			(offset 0.254)
 		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -10.178 13.2313 0)
+			(at 25.4 10.16 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
-				(justify left bottom)
 			)
 		)
-		(property "Value" "VND5E006ASPTR-E"
-			(at -10.1727 -30.4991 0)
+		(property "Value" "VN5E006ASPTR-E"
+			(at 25.4 7.62 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
-				(justify left bottom)
 			)
 		)
-		(property "Footprint" "VND5E006ASPTR-E:IC_VND5E006ASPTR-E"
-			(at 0.254 -32.766 0)
+		(property "Footprint" "SO_E006ASP-E_STM"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.st.com/content/ccc/resource/technical/document/datasheet/33/64/cd/3c/86/f6/4e/b7/CD00269984.pdf/files/CD00269984.pdf/jcr:content/translations/en.CD00269984.pdf"
-			(at 1.778 -37.592 0)
-			(effects
-				(font
-					(size 1.27 1.27)
+					(italic yes)
 				)
 				(hide yes)
 			)
 		)
-		(property "Description" "Power Switch/Driver 1:1 N-Channel 70A PowerSO-16™"
-			(at 3.81 -34.544 0)
+		(property "Datasheet" "https://www.st.com/content/ccc/resource/technical/document/datasheet/c0/f1/18/8b/97/61/43/da/CD00280450.pdf/files/CD00280450.pdf/jcr:content/translations/en.CD00280450.pdf"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power Switch/Driver 1:1 N-Channel 63.5A 10-PowerSO"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -920,286 +802,279 @@
 				(hide yes)
 			)
 		)
-		(symbol "VND5E006ASPTR-E_0_0"
-			(rectangle
-				(start -10.16 12.7)
-				(end 10.16 -27.94)
-				(stroke
-					(width 0.254)
-					(type default)
+		(property "Vendor" "Digikey"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(fill
-					(type background)
-				)
+				(hide yes)
 			)
+		)
+		(property "Vendor P/N" "497-19722-1-ND"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor URL" "https://www.digikey.com/en/products/detail/stmicroelectronics/VN5E006ASPTR-E/3087941?s=N4IgjCBcoLQBxVAYygMwIYBsDOBTANCAPZQDaIALAJwDsIAugL6OEBMZIAagHICsAogAZBANgCCAZQAKAFQBKMfg0ZA"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer P/N" "VN5E006ASPTR-E"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "VN5E006ASP-E"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "SO_E006ASP-E_STM SO_E006ASP-E_STM-M SO_E006ASP-E_STM-L"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "VN5E006ASP-E_0_1"
 			(pin output line
-				(at 15.24 -5.08 180)
-				(length 5.08)
-				(name "OUT_2"
+				(at 0 0 0)
+				(length 7.62)
+				(name "OUTPUT"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 1.27 1.27)
 						)
 					)
 				)
 				(number "1"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 1.27 1.27)
 						)
 					)
 				)
 			)
-			(pin input line
-				(at -15.24 -2.54 0)
-				(length 5.08)
-				(name "CS_1"
+			(pin no_connect line
+				(at 50.8 -2.54 180)
+				(length 7.62)
+				(name "NC"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 1.27 1.27)
 						)
 					)
 				)
 				(number "10"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 1.27 1.27)
 						)
 					)
 				)
 			)
 			(pin output line
-				(at 15.24 -20.32 180)
-				(length 5.08)
-				(name "CS_DIS"
+				(at 0 -2.54 0)
+				(length 7.62)
+				(name "OUTPUT"
 					(effects
 						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "12"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 15.24 -25.4 180)
-				(length 5.08)
-				(name "GND"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "13"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -15.24 -5.08 0)
-				(length 5.08)
-				(name "CS_2"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "15"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -15.24 2.54 0)
-				(length 5.08)
-				(name "IN_2"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "16"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 15.24 10.16 180)
-				(length 5.08)
-				(name "VCC"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "17"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 15.24 -7.62 180)
-				(length 5.08)
-				(name "OUT_2__1"
-					(effects
-						(font
-							(size 1.016 1.016)
+							(size 1.27 1.27)
 						)
 					)
 				)
 				(number "2"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 1.27 1.27)
 						)
 					)
 				)
 			)
 			(pin output line
-				(at 15.24 -10.16 180)
-				(length 5.08)
-				(name "OUT_2__2"
+				(at 0 -5.08 0)
+				(length 7.62)
+				(name "OUTPUT"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 1.27 1.27)
 						)
 					)
 				)
 				(number "3"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 1.27 1.27)
 						)
 					)
 				)
 			)
 			(pin output line
-				(at 15.24 -12.7 180)
-				(length 5.08)
-				(name "OUT_2__3"
+				(at 0 -7.62 0)
+				(length 7.62)
+				(name "OUTPUT"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 1.27 1.27)
 						)
 					)
 				)
 				(number "4"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 1.27 1.27)
 						)
 					)
 				)
 			)
 			(pin output line
-				(at 15.24 5.08 180)
-				(length 5.08)
-				(name "OUT_1"
+				(at 0 -10.16 0)
+				(length 7.62)
+				(name "OUTPUT"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 1.27 1.27)
 						)
 					)
 				)
 				(number "5"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 1.27 1.27)
 						)
 					)
 				)
 			)
-			(pin output line
-				(at 15.24 2.54 180)
-				(length 5.08)
-				(name "OUT_1__1"
+			(pin power_out line
+				(at 50.8 -12.7 180)
+				(length 7.62)
+				(name "GND"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 1.27 1.27)
 						)
 					)
 				)
 				(number "6"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 1.27 1.27)
 						)
 					)
 				)
 			)
-			(pin output line
-				(at 15.24 0 180)
-				(length 5.08)
-				(name "OUT_1__2"
+			(pin input line
+				(at 50.8 -10.16 180)
+				(length 7.62)
+				(name "INPUT"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 1.27 1.27)
 						)
 					)
 				)
 				(number "7"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 1.27 1.27)
 						)
 					)
 				)
 			)
-			(pin output line
-				(at 15.24 -2.54 180)
-				(length 5.08)
-				(name "OUT_1__3"
+			(pin unspecified line
+				(at 50.8 -7.62 180)
+				(length 7.62)
+				(name "CURSENSE"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 1.27 1.27)
 						)
 					)
 				)
 				(number "8"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 1.27 1.27)
 						)
 					)
 				)
 			)
-			(pin input line
-				(at -15.24 5.08 0)
-				(length 5.08)
-				(name "IN_1"
+			(pin unspecified line
+				(at 50.8 -5.08 180)
+				(length 7.62)
+				(name "DE"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 1.27 1.27)
 						)
 					)
 				)
 				(number "9"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 1.27 1.27)
 						)
 					)
+				)
+			)
+			(pin power_in line
+				(at 50.8 0 180)
+				(length 7.62)
+				(name "VCC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "EPAD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "VN5E006ASP-E_1_1"
+			(rectangle
+				(start 7.62 5.08)
+				(end 43.18 -17.78)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
 				)
 			)
 		)
