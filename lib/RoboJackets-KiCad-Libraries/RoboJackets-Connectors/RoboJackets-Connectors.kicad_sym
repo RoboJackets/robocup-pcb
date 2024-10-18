@@ -54,6 +54,51 @@
 				(hide yes)
 			)
 		)
+		(property "Vendor" "Digikey"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor P/N" "WM1354-ND"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor URL" "https://www.digikey.com/en/products/detail/molex/0039301080/561081?s=N4IgTCBcDaIMwE44AYCMyAcyQF0C%2BQA"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer P/N" "0039301080"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "ki_keywords" "39301080"
 			(at 0 0 0)
 			(effects
@@ -1000,572 +1045,6 @@
 			)
 		)
 	)
-	(symbol "466220200"
-		(pin_names
-			(offset 0.254)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "J"
-			(at 8.89 6.35 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "466220200"
-			(at 9.144 -11.938 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "RoboJackets-Connectors:CON_466220200"
-			(at 9.144 -14.224 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "466220200"
-			(at 8.89 -16.256 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "466220200"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "CON_466220200"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "466220200_1_1"
-			(polyline
-				(pts
-					(xy 10.16 -7.62) (xy 5.08 -7.62)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 10.16 -7.62) (xy 8.89 -8.4667)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 10.16 -7.62) (xy 8.89 -6.7733)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 10.16 -5.08) (xy 5.08 -5.08)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 10.16 -5.08) (xy 8.89 -5.9267)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 10.16 -5.08) (xy 8.89 -4.2333)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 10.16 -2.54) (xy 5.08 -2.54)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 10.16 -2.54) (xy 8.89 -3.3867)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 10.16 -2.54) (xy 8.89 -1.6933)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 10.16 0) (xy 5.08 0)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 10.16 0) (xy 8.89 -0.8467)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 10.16 0) (xy 8.89 0.8467)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(rectangle
-				(start 5.08 2.54)
-				(end 12.7 -10.16)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-			(pin unspecified line
-				(at 0 0 0)
-				(length 5.08)
-				(name "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at 0 -2.54 0)
-				(length 5.08)
-				(name "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at 0 -5.08 0)
-				(length 5.08)
-				(name "P1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "P1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at 0 -7.62 0)
-				(length 5.08)
-				(name "P2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "P2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-		(symbol "466220200_1_2"
-			(polyline
-				(pts
-					(xy 5.08 -10.16) (xy 12.7 -10.16)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 5.08 2.54) (xy 5.08 -10.16)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 -7.62) (xy 5.08 -7.62)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 -7.62) (xy 8.89 -8.4667)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 -7.62) (xy 8.89 -6.7733)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 -5.08) (xy 5.08 -5.08)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 -5.08) (xy 8.89 -5.9267)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 -5.08) (xy 8.89 -4.2333)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 -2.54) (xy 5.08 -2.54)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 -2.54) (xy 8.89 -3.3867)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 -2.54) (xy 8.89 -1.6933)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 0) (xy 5.08 0)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 0) (xy 8.89 -0.8467)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 0) (xy 8.89 0.8467)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 12.7 -10.16) (xy 12.7 2.54)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 12.7 2.54) (xy 5.08 2.54)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(pin unspecified line
-				(at 0 0 0)
-				(length 5.08)
-				(name "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at 0 -2.54 0)
-				(length 5.08)
-				(name "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at 0 -5.08 0)
-				(length 5.08)
-				(name "P1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "P1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at 0 -7.62 0)
-				(length 5.08)
-				(name "P2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "P2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-	)
 	(symbol "5102160-1"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1617,17 +1096,7 @@
 				(hide yes)
 			)
 		)
-		(property "Height" ""
-			(at 19.05 -394.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "TE Connectivity"
+		(property "Vendor" "Digikey"
 			(at -11.176 -137.16 0)
 			(effects
 				(font
@@ -1637,7 +1106,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "5102160-1"
+		(property "Vendor P/N" "AHR10L-ND"
 			(at -6.604 -144.272 0)
 			(effects
 				(font
@@ -1647,7 +1116,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" ""
+		(property "Vendor URL" "https://www.digikey.com/en/products/detail/5102160-1/AHR10L-ND/769018?curr=usd&utm_campaign=buynow&utm_medium=aggregator&utm_source=octopart"
 			(at -6.604 40.412 0)
 			(effects
 				(font
@@ -1657,7 +1126,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" ""
+		(property "Manufacturer" "TE Connectivity"
 			(at -19.304 -127.914 0)
 			(effects
 				(font
@@ -1667,18 +1136,8 @@
 				(hide yes)
 			)
 		)
-		(property "Arrow Part Number" "5102160-1"
+		(property "Manufacturer P/N" "5102160-1"
 			(at -7.874 -140.208 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/5102160-1/te-connectivity?region=europe"
-			(at -38.1 -147.574 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2051,17 +1510,7 @@
 				(hide yes)
 			)
 		)
-		(property "Height" "10.45"
-			(at 34.29 -389.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Molex"
+		(property "Vendor" "Digikey"
 			(at 34.29 -489.84 0)
 			(effects
 				(font
@@ -2071,17 +1520,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "52901-0274"
-			(at 34.29 -589.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "538-52901-0274"
+		(property "Vendor P/N" "WM3411CT-ND"
 			(at 34.29 -689.84 0)
 			(effects
 				(font
@@ -2091,7 +1530,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Molex/52901-0274?qs=5MaBjaOy8G1z2e7RZjBBtg%3D%3D"
+		(property "Vendor URL" "https://www.digikey.com/en/products/detail/molex/0529010274/2405836?s=N4IgTCBcDaIKxgJwAYCMBaZYDsAWEAugL5A"
 			(at 34.29 -789.84 0)
 			(effects
 				(font
@@ -2101,8 +1540,17 @@
 				(hide yes)
 			)
 		)
-		(property "Arrow Part Number" ""
-			(at 34.29 -889.84 0)
+		(property "Manufacturer" "Molex"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer P/N" "52901-0274"
+			(at 34.29 -589.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2111,8 +1559,8 @@
 				(hide yes)
 			)
 		)
-		(property "Arrow Price/Stock" ""
-			(at 34.29 -989.84 0)
+		(property "Height" "10.45"
+			(at 34.29 -389.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2582,17 +2030,7 @@
 				(hide yes)
 			)
 		)
-		(property "Height" "6.2"
-			(at 34.29 -389.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Molex"
+		(property "Vendor" "Digikey"
 			(at 34.29 -489.84 0)
 			(effects
 				(font
@@ -2602,17 +2040,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "53625-0274"
-			(at 34.29 -589.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "538-53625-0274"
+		(property "Vendor P/N" "900-0536250274CT-ND"
 			(at 34.29 -689.84 0)
 			(effects
 				(font
@@ -2622,7 +2050,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Molex/53625-0274?qs=byeeYqUIh0P2unwZpz4xHQ%3D%3D"
+		(property "Vendor URL" "https://www.digikey.com/en/products/detail/molex/0536250274/10482852?s=N4IgTCBcDaIKwGYBsY4FoAMYDsAWEAugL5A"
 			(at 34.29 -789.84 0)
 			(effects
 				(font
@@ -2632,8 +2060,17 @@
 				(hide yes)
 			)
 		)
-		(property "Arrow Part Number" ""
-			(at 34.29 -889.84 0)
+		(property "Manufacturer" "Molex"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer P/N" "  0536250274"
+			(at 34.29 -589.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2642,8 +2079,8 @@
 				(hide yes)
 			)
 		)
-		(property "Arrow Price/Stock" ""
-			(at 34.29 -989.84 0)
+		(property "Height" "6.2"
+			(at 34.29 -389.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3115,6 +2552,52 @@
 				(hide yes)
 			)
 		)
+		(property "Vendor" "Digikey"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor P/N" "609-HFW8R-1STE1H1LFCT-ND"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor URL" "https://www.digikey.com/en/products/detail/amphenol-cs-fci/HFW8R-1STE1H1LF/9695136?s=N4IgTCBcDaIBIDEDqAOASgWgIwGUAqAolnFgDIIgC6AvkA"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Amphenol"
+			(at 0.762 -21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer P/N" "HFW8R-1STE1H1LF"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "PARTREV" "B"
 			(at 1.016 -27.178 0)
 			(effects
@@ -3137,16 +2620,6 @@
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "2.0 mm"
 			(at 1.27 -24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "Amphenol"
-			(at 0.762 -21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3335,7 +2808,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "XT60PWF"
+		(property "Footprint" "RoboJackets-Connectors:XT60PWF"
 			(at 19.05 -94.92 0)
 			(effects
 				(font
@@ -3364,6 +2837,53 @@
 				(hide yes)
 			)
 		)
+		(property "Vendor" "Digikey"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor P/N" "609-HFW8R-1STE1H1LFCT-ND"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor URL" "https://www.digikey.com/en/products/detail/amphenol-cs-fci/HFW8R-1STE1H1LF/9695136?s=N4IgTCBcDaIBIDEDqAOASgWgIwGUAqAolnFgDIIgC6AvkA"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Amass"
+			(at 19.05 -694.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer P/N" "XT60PW-F"
+			(at 19.05 -794.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
 		(property "Height" "8.4"
 			(at 19.05 -394.92 0)
 			(effects
@@ -3386,26 +2906,6 @@
 		)
 		(property "TME Electronic Components Price/Stock" ""
 			(at 19.05 -594.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Amass"
-			(at 19.05 -694.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "XT60PW-F"
-			(at 19.05 -794.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3548,6 +3048,51 @@
 					(size 1.27 1.27)
 				)
 				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "TME"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor P/N" "XT60PW-M"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor URL" "https://www.tme.com/us/en-us/details/xt60pw-m/dc-power-connectors/amass/"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Amass"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer P/N" "XT60PW-M"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
