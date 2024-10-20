@@ -932,6 +932,51 @@
 					(hide yes)
 				)
 			)
+			(property "Vendor" "Digikey"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Vendor P/N" "WM1354-ND"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Vendor URL" "https://www.digikey.com/en/products/detail/molex/0039301080/561081?s=N4IgTCBcDaIMwE44AYCMyAcyQF0C%2BQA"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Molex"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer P/N" "0039301080"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
 			(property "ki_keywords" "39301080"
 				(at 0 0 0)
 				(effects
@@ -2205,10 +2250,64 @@
 					(hide yes)
 				)
 			)
+			(property "Package" "IC_STSPIN32F0A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "Digikey"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Vendor P/N" "497-17635-ND"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Vendor URL" "https://www.digikey.com/en/products/detail/stmicroelectronics/STSPIN32F0A/7702467"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "STMicroelectronics"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer P/N" "STSPIN32F0A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
 			(symbol "STSPIN32F0A_0_0"
 				(rectangle
-					(start -22.86 -48.26)
-					(end 22.86 48.26)
+					(start -22.86 48.26)
+					(end 22.86 -48.26)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -3123,7 +3222,7 @@
 					)
 				)
 			)
-			(property "Footprint" "DPAKTO-252_A2_STM"
+			(property "Footprint" "RoboJackets-Transistors:DPAKTO-252_A2_STM"
 				(at 0 -13.462 0)
 				(effects
 					(font
@@ -3145,6 +3244,51 @@
 			)
 			(property "Description" "MOSFET N-CH 60V 80A DPAK"
 				(at 1.016 -16.002 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "Digikey"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Vendor P/N" "497-16937-1-ND"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Vendor URL" "https://www.digikey.com/en/products/detail/stmicroelectronics/STD140N6F7/6230146"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "STMicroelectronics"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer P/N" "STD140N6F7"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -7297,7 +7441,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "DPAKTO-252_A2_STM"
+		(property "Footprint" "RoboJackets-Transistors:DPAKTO-252_A2_STM"
 			(at 144.78 94.742 0)
 			(effects
 				(font
@@ -7319,6 +7463,51 @@
 		)
 		(property "Description" "MOSFET N-CH 60V 80A DPAK"
 			(at 145.796 97.282 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 144.78 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor P/N" "497-16937-1-ND"
+			(at 144.78 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor URL" "https://www.digikey.com/en/products/detail/stmicroelectronics/STD140N6F7/6230146"
+			(at 144.78 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 144.78 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer P/N" "STD140N6F7"
+			(at 144.78 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8517,7 +8706,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "DPAKTO-252_A2_STM"
+		(property "Footprint" "RoboJackets-Transistors:DPAKTO-252_A2_STM"
 			(at 144.78 51.562 0)
 			(effects
 				(font
@@ -8539,6 +8728,51 @@
 		)
 		(property "Description" "MOSFET N-CH 60V 80A DPAK"
 			(at 145.796 54.102 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 144.78 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor P/N" "497-16937-1-ND"
+			(at 144.78 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor URL" "https://www.digikey.com/en/products/detail/stmicroelectronics/STD140N6F7/6230146"
+			(at 144.78 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 144.78 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer P/N" "STD140N6F7"
+			(at 144.78 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8591,7 +8825,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "DPAKTO-252_A2_STM"
+		(property "Footprint" "RoboJackets-Transistors:DPAKTO-252_A2_STM"
 			(at 144.78 64.262 0)
 			(effects
 				(font
@@ -8613,6 +8847,51 @@
 		)
 		(property "Description" "MOSFET N-CH 60V 80A DPAK"
 			(at 145.796 66.802 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 144.78 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor P/N" "497-16937-1-ND"
+			(at 144.78 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor URL" "https://www.digikey.com/en/products/detail/stmicroelectronics/STD140N6F7/6230146"
+			(at 144.78 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 144.78 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer P/N" "STD140N6F7"
+			(at 144.78 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8688,6 +8967,51 @@
 		)
 		(property "Description" "Mini-Fit Jr. Header, Dual Row, Right-Angle, with Snap-in Plastic Peg PCB Lock, 8 Circuits, Nylon 6/6 94V-2, 2.54µm Matte Tin (Sn) Plating, Natural, Bag"
 			(at 44.704 184.912 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 43.18 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor P/N" "WM1354-ND"
+			(at 43.18 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor URL" "https://www.digikey.com/en/products/detail/molex/0039301080/561081?s=N4IgTCBcDaIMwE44AYCMyAcyQF0C%2BQA"
+			(at 43.18 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 43.18 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer P/N" "0039301080"
+			(at 43.18 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8830,7 +9154,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "DPAKTO-252_A2_STM"
+		(property "Footprint" "RoboJackets-Transistors:DPAKTO-252_A2_STM"
 			(at 144.78 125.222 0)
 			(effects
 				(font
@@ -8852,6 +9176,51 @@
 		)
 		(property "Description" "MOSFET N-CH 60V 80A DPAK"
 			(at 145.796 127.762 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 144.78 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor P/N" "497-16937-1-ND"
+			(at 144.78 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor URL" "https://www.digikey.com/en/products/detail/stmicroelectronics/STD140N6F7/6230146"
+			(at 144.78 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 144.78 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer P/N" "STD140N6F7"
+			(at 144.78 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9466,6 +9835,60 @@
 					(size 1.27 1.27)
 				)
 				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "IC_STSPIN32F0A"
+			(at 66.04 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 66.04 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor P/N" "497-17635-ND"
+			(at 66.04 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor URL" "https://www.digikey.com/en/products/detail/stmicroelectronics/STSPIN32F0A/7702467"
+			(at 66.04 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 66.04 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer P/N" "STSPIN32F0A"
+			(at 66.04 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -11393,7 +11816,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "DPAKTO-252_A2_STM"
+		(property "Footprint" "RoboJackets-Transistors:DPAKTO-252_A2_STM"
 			(at 144.78 82.042 0)
 			(effects
 				(font
@@ -11415,6 +11838,51 @@
 		)
 		(property "Description" "MOSFET N-CH 60V 80A DPAK"
 			(at 145.796 84.582 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 144.78 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor P/N" "497-16937-1-ND"
+			(at 144.78 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor URL" "https://www.digikey.com/en/products/detail/stmicroelectronics/STD140N6F7/6230146"
+			(at 144.78 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 144.78 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer P/N" "STD140N6F7"
+			(at 144.78 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11536,7 +12004,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "DPAKTO-252_A2_STM"
+		(property "Footprint" "RoboJackets-Transistors:DPAKTO-252_A2_STM"
 			(at 144.78 112.522 0)
 			(effects
 				(font
@@ -11558,6 +12026,51 @@
 		)
 		(property "Description" "MOSFET N-CH 60V 80A DPAK"
 			(at 145.796 115.062 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 144.78 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor P/N" "497-16937-1-ND"
+			(at 144.78 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor URL" "https://www.digikey.com/en/products/detail/stmicroelectronics/STD140N6F7/6230146"
+			(at 144.78 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 144.78 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer P/N" "STD140N6F7"
+			(at 144.78 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
