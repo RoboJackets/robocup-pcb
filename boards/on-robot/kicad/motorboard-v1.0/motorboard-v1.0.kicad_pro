@@ -335,13 +335,145 @@
           "label": "DNP",
           "name": "${DNP}",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Arrow Part Number",
+          "name": "Arrow Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Arrow Price/Stock",
+          "name": "Arrow Price/Stock",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Height",
+          "name": "Height",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MANUFACTURER",
+          "name": "MANUFACTURER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MAXIMUM_PACKAGE_HEIGHT",
+          "name": "MAXIMUM_PACKAGE_HEIGHT",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer",
+          "name": "Manufacturer",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer P/N",
+          "name": "Manufacturer P/N",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Name",
+          "name": "Manufacturer_Name",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Part_Number",
+          "name": "Manufacturer_Part_Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mating PN",
+          "name": "Mating PN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Part Number",
+          "name": "Mouser Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Price/Stock",
+          "name": "Mouser Price/Stock",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PARTREV",
+          "name": "PARTREV",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "STANDARD",
+          "name": "STANDARD",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "TME Electronic Components Part Number",
+          "name": "TME Electronic Components Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "TME Electronic Components Price/Stock",
+          "name": "TME Electronic Components Price/Stock",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Vendor",
+          "name": "Vendor",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Vendor P/N",
+          "name": "Vendor P/N",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Vendor URL",
+          "name": "Vendor URL",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Package",
+          "name": "Package",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
-      "name": "Grouped By Value",
+      "name": "",
       "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_field": "Manufacturer"
     },
     "connection_grid_size": 50.0,
     "drawing": {
@@ -392,20 +524,20 @@
       "motor_1"
     ],
     [
-      "60fbc74e-8e36-4280-91eb-bd909ace4d6a",
+      "8fc0da5c-3918-4553-a998-e98e77fe9a47",
       "motor_2"
     ],
     [
-      "0c3b9bb9-6010-4172-a207-f7847b9176dc",
+      "41a7dec4-d763-4b9c-a5db-d176bef259c9",
       "motor_3"
     ],
     [
-      "3e01a677-8998-4204-9b3a-67308b3f646b",
+      "df1931d3-1f72-47fc-a09e-3bf11ff117b3",
       "motor_4"
     ],
     [
-      "4e7cb12a-c9ec-47e2-bf5b-d6e6bfb9eac7",
-      "motor_dribbler"
+      "d8f9e87f-a514-4f9b-b7e2-1c541ceb3e7c",
+      "motor_drib"
     ]
   ],
   "text_variables": {}
