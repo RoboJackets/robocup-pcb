@@ -3606,12 +3606,12 @@
 				)
 			)
 		)
-		(symbol "RoboJackets-Connectors:XT60PW-F"
+		(symbol "RoboJackets-Connectors:XT30PW-M"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at 19.05 7.62 0)
+				(at 16.51 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3619,8 +3619,8 @@
 					(justify left top)
 				)
 			)
-			(property "Value" "XT60PW-F"
-				(at 19.05 5.08 0)
+			(property "Value" "XT30PW-M"
+				(at 16.51 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3628,18 +3628,8 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "RoboJackets-Connectors:XT60PWF"
-				(at 19.05 -94.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.tme.eu/Document/1191bc2fa3aee3c446e5a895fd8f7983/XT60PW-F.pdf"
-				(at 19.05 -194.92 0)
+			(property "Footprint" "XT30PWM"
+				(at 16.51 -94.92 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3648,16 +3638,17 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Socket; DC supply; XT60; female; PIN: 2; on PCBs; THT; Colour: yellow"
-				(at 10.16 -8.128 0)
+			(property "Datasheet" "https://www.tme.eu/sl/Document/ce4077e36b79046da520ca73227e15de/XT30PW%20SPEC.pdf"
+				(at 16.51 -194.92 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left top)
 					(hide yes)
 				)
 			)
-			(property "Vendor" "Digikey"
+			(property "Description" "30A Low Temperature Rise Fire Retardant Plug"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3666,7 +3657,7 @@
 					(hide yes)
 				)
 			)
-			(property "Vendor P/N" "609-HFW8R-1STE1H1LFCT-ND"
+			(property "Vendor" "TME"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3675,7 +3666,16 @@
 					(hide yes)
 				)
 			)
-			(property "Vendor URL" "https://www.digikey.com/en/products/detail/amphenol-cs-fci/HFW8R-1STE1H1LF/9695136?s=N4IgTCBcDaIBIDEDqAOASgWgIwGUAqAolnFgDIIgC6AvkA"
+			(property "Vendor P/N" "XT30PW-M"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Vendor URL" "https://www.tme.com/us/en-us/details/xt30pw-m/dc-power-connectors/amass/?brutto=1&currency=USD&utm_source=google&utm_medium=cpc&utm_campaign=USA%20[PLA]%20com&gad_source=1&gclid=CjwKCAjw1NK4BhAwEiwAVUHPUP3yTIfch64WR8lDr4ogIt2VrF1qvMF_dfcJsI2uThtyVyTAlDqeqBoCfAcQAvD_BwE"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3685,7 +3685,7 @@
 				)
 			)
 			(property "Manufacturer" "Amass"
-				(at 19.05 -694.92 0)
+				(at 16.51 -694.92 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3694,8 +3694,8 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer P/N" "XT60PW-F"
-				(at 19.05 -794.92 0)
+			(property "Manufacturer P/N" "XT30PW-M"
+				(at 16.51 -794.92 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3704,8 +3704,8 @@
 					(hide yes)
 				)
 			)
-			(property "Height" "8.4"
-				(at 19.05 -394.92 0)
+			(property "Height" "5"
+				(at 16.51 -394.92 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3715,7 +3715,7 @@
 				)
 			)
 			(property "TME Electronic Components Part Number" ""
-				(at 19.05 -494.92 0)
+				(at 16.51 -494.92 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3725,7 +3725,7 @@
 				)
 			)
 			(property "TME Electronic Components Price/Stock" ""
-				(at 19.05 -594.92 0)
+				(at 16.51 -594.92 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3734,10 +3734,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "XT60PW-F_1_1"
+			(symbol "XT30PW-M_1_1"
 				(rectangle
 					(start 5.08 2.54)
-					(end 17.78 -5.08)
+					(end 15.24 -5.08)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -3783,9 +3783,9 @@
 					)
 				)
 				(pin passive line
-					(at 22.86 0 180)
+					(at 20.32 -2.54 180)
 					(length 5.08)
-					(name "MH1"
+					(name "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3801,9 +3801,9 @@
 					)
 				)
 				(pin passive line
-					(at 22.86 -2.54 180)
+					(at 20.32 0 180)
 					(length 5.08)
-					(name "MH2"
+					(name "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -7709,7 +7709,7 @@
 		(uuid "bf0958c0-a0c3-4a43-a7d6-5b02195f2399")
 	)
 	(no_connect
-		(at 304.8 379.73)
+		(at 302.26 379.73)
 		(uuid "c1f0c022-b604-4b7b-b07e-797d3eda092e")
 	)
 	(no_connect
@@ -7729,7 +7729,7 @@
 		(uuid "cc137ccb-c1ec-4f8d-ae56-516714431dde")
 	)
 	(no_connect
-		(at 304.8 377.19)
+		(at 302.26 377.19)
 		(uuid "dc61f176-722c-452b-8374-6ba482fe847a")
 	)
 	(no_connect
@@ -9590,7 +9590,7 @@
 	)
 	(wire
 		(pts
-			(xy 302.26 379.73) (xy 304.8 379.73)
+			(xy 299.72 379.73) (xy 302.26 379.73)
 		)
 		(stroke
 			(width 0)
@@ -11120,7 +11120,7 @@
 	)
 	(wire
 		(pts
-			(xy 302.26 377.19) (xy 304.8 377.19)
+			(xy 299.72 377.19) (xy 302.26 377.19)
 		)
 		(stroke
 			(width 0)
@@ -14562,7 +14562,7 @@
 		)
 		(uuid "ef5cff8e-9408-44b4-b96e-3acde4047290")
 	)
-	(label "DRIB_USART_TX"
+	(label "DRIB_UART_TX"
 		(at 52.07 361.95 180)
 		(fields_autoplaced yes)
 		(effects
@@ -14573,7 +14573,7 @@
 		)
 		(uuid "02380ae1-aa49-4558-9e45-0419dfd36641")
 	)
-	(label "M3_USART_TX"
+	(label "M3_UART_TX"
 		(at 157.48 351.79 180)
 		(fields_autoplaced yes)
 		(effects
@@ -14793,7 +14793,7 @@
 		)
 		(uuid "1ac219b8-2c68-4e1b-9f38-8f7844bd80a5")
 	)
-	(label "M4_NRST"
+	(label "~{M4_RST}"
 		(at 339.09 379.73 180)
 		(fields_autoplaced yes)
 		(effects
@@ -14826,7 +14826,7 @@
 		)
 		(uuid "1bcc11b8-383f-4cc0-9b3f-7187c4b68eae")
 	)
-	(label "M1_NRST"
+	(label "~{M1_RST}"
 		(at 339.09 349.25 180)
 		(fields_autoplaced yes)
 		(effects
@@ -14859,7 +14859,7 @@
 		)
 		(uuid "1d4a9078-7e44-4fbf-a001-b93968dee390")
 	)
-	(label "M4_USART_TX"
+	(label "M4_UART_TX"
 		(at 339.09 374.65 180)
 		(fields_autoplaced yes)
 		(effects
@@ -14881,7 +14881,7 @@
 		)
 		(uuid "21965226-e167-4d06-ace4-e225a9357962")
 	)
-	(label "M2_USART_RX"
+	(label "M2_UART_RX"
 		(at 104.14 354.33 180)
 		(fields_autoplaced yes)
 		(effects
@@ -14991,7 +14991,7 @@
 		)
 		(uuid "2afe3e4e-a8cd-4efb-96d4-4f4af7872244")
 	)
-	(label "M2_USART_RX"
+	(label "M2_UART_RX"
 		(at 339.09 356.87 180)
 		(fields_autoplaced yes)
 		(effects
@@ -15013,7 +15013,7 @@
 		)
 		(uuid "2bc65f4a-9757-49a1-a114-7524f8d30908")
 	)
-	(label "M3_USART_RX"
+	(label "M3_UART_RX"
 		(at 157.48 354.33 180)
 		(fields_autoplaced yes)
 		(effects
@@ -15178,7 +15178,7 @@
 		)
 		(uuid "3c9a09e7-2bf4-4522-ba39-2efce3f40c0f")
 	)
-	(label "M4_USART_RX"
+	(label "M4_UART_RX"
 		(at 339.09 377.19 180)
 		(fields_autoplaced yes)
 		(effects
@@ -15233,7 +15233,7 @@
 		)
 		(uuid "452c2d7f-3bb5-4615-b026-4c1af41b4e59")
 	)
-	(label "DRIB_USART_TX"
+	(label "DRIB_UART_TX"
 		(at 171.45 184.15 180)
 		(fields_autoplaced yes)
 		(effects
@@ -15310,7 +15310,7 @@
 		)
 		(uuid "4cfb4474-6f41-4e4a-8321-29b013648dea")
 	)
-	(label "M1_USART_RX"
+	(label "M1_UART_RX"
 		(at 52.07 354.33 180)
 		(fields_autoplaced yes)
 		(effects
@@ -15332,7 +15332,7 @@
 		)
 		(uuid "4d958fdb-5200-4964-89b2-0697ec9d8812")
 	)
-	(label "M1_USART_TX"
+	(label "M1_UART_TX"
 		(at 339.09 344.17 180)
 		(fields_autoplaced yes)
 		(effects
@@ -15442,7 +15442,7 @@
 		)
 		(uuid "58012fc3-9140-41c9-b340-efcc7f9b3eaf")
 	)
-	(label "M3_NRST"
+	(label "~{M3_RST}"
 		(at 157.48 356.87 180)
 		(fields_autoplaced yes)
 		(effects
@@ -15552,7 +15552,7 @@
 		)
 		(uuid "65d186e6-920f-491a-a204-029b779dbc81")
 	)
-	(label "M2_USART_TX"
+	(label "M2_UART_TX"
 		(at 104.14 351.79 180)
 		(fields_autoplaced yes)
 		(effects
@@ -15728,7 +15728,7 @@
 		)
 		(uuid "7270e6c1-b244-4d4a-bdeb-5aef7d4dd330")
 	)
-	(label "DRIB_USART_TX"
+	(label "DRIB_UART_TX"
 		(at 339.09 384.81 180)
 		(fields_autoplaced yes)
 		(effects
@@ -15772,7 +15772,7 @@
 		)
 		(uuid "73f5b6e1-5328-4971-9f7a-386efd0bfb51")
 	)
-	(label "M2_NRST"
+	(label "~{M2_RST}"
 		(at 339.09 359.41 180)
 		(fields_autoplaced yes)
 		(effects
@@ -15959,7 +15959,7 @@
 		)
 		(uuid "8630d920-40b8-46be-898e-4a304cc7cc08")
 	)
-	(label "DRIB_USART_RX"
+	(label "DRIB_UART_RX"
 		(at 52.07 364.49 180)
 		(fields_autoplaced yes)
 		(effects
@@ -16003,7 +16003,7 @@
 		)
 		(uuid "89473267-b943-45cd-9533-246c7d7b9789")
 	)
-	(label "DRIB_USART_RX"
+	(label "DRIB_UART_RX"
 		(at 339.09 387.35 180)
 		(fields_autoplaced yes)
 		(effects
@@ -16190,7 +16190,7 @@
 		)
 		(uuid "9d6eccb3-bb0e-4828-b7bf-8d34a2da2be7")
 	)
-	(label "M1_USART_TX"
+	(label "M1_UART_TX"
 		(at 52.07 351.79 180)
 		(fields_autoplaced yes)
 		(effects
@@ -16278,7 +16278,7 @@
 		)
 		(uuid "a2e6475a-7ee4-43c8-94c4-209abc1dfadd")
 	)
-	(label "M1_USART_RX"
+	(label "M1_UART_RX"
 		(at 339.09 346.71 180)
 		(fields_autoplaced yes)
 		(effects
@@ -16300,7 +16300,7 @@
 		)
 		(uuid "a4d45206-6270-4e52-b14d-b9096ffc7c03")
 	)
-	(label "DRIB_USART_RX"
+	(label "DRIB_UART_RX"
 		(at 171.45 186.69 180)
 		(fields_autoplaced yes)
 		(effects
@@ -16366,7 +16366,7 @@
 		)
 		(uuid "acd9e690-6af2-4a7e-8c81-abca2a30fbce")
 	)
-	(label "M4_USART_RX"
+	(label "M4_UART_RX"
 		(at 210.82 354.33 180)
 		(fields_autoplaced yes)
 		(effects
@@ -16399,7 +16399,7 @@
 		)
 		(uuid "b0fd7ef5-6bc1-4499-af6d-838bb9e21923")
 	)
-	(label "M4_NRST"
+	(label "~{M4_RST}"
 		(at 210.82 356.87 180)
 		(fields_autoplaced yes)
 		(effects
@@ -16454,7 +16454,7 @@
 		)
 		(uuid "b234787e-3945-463b-8ebd-3195798733cd")
 	)
-	(label "M3_USART_RX"
+	(label "M3_UART_RX"
 		(at 339.09 367.03 180)
 		(fields_autoplaced yes)
 		(effects
@@ -16828,7 +16828,7 @@
 		)
 		(uuid "d78cb025-5345-410c-a5c9-9f92dbacd913")
 	)
-	(label "M2_USART_TX"
+	(label "M2_UART_TX"
 		(at 339.09 354.33 180)
 		(fields_autoplaced yes)
 		(effects
@@ -16872,7 +16872,7 @@
 		)
 		(uuid "db5f238b-df87-4da8-902a-b852b58f7cc2")
 	)
-	(label "M1_NRST"
+	(label "~{M1_RST}"
 		(at 52.07 356.87 180)
 		(fields_autoplaced yes)
 		(effects
@@ -16982,7 +16982,7 @@
 		)
 		(uuid "e77795b1-07fa-4b97-8755-b7a0099adb04")
 	)
-	(label "M4_USART_TX"
+	(label "M4_UART_TX"
 		(at 210.82 351.79 180)
 		(fields_autoplaced yes)
 		(effects
@@ -17026,7 +17026,7 @@
 		)
 		(uuid "ea3a3040-8a7d-4270-90ef-607cbacac065")
 	)
-	(label "M2_NRST"
+	(label "~{M2_RST}"
 		(at 104.14 356.87 180)
 		(fields_autoplaced yes)
 		(effects
@@ -17103,7 +17103,7 @@
 		)
 		(uuid "f1e30de7-3746-4d58-98a9-4f44efe4816f")
 	)
-	(label "M3_NRST"
+	(label "~{M3_RST}"
 		(at 339.09 369.57 180)
 		(fields_autoplaced yes)
 		(effects
@@ -17213,7 +17213,7 @@
 		)
 		(uuid "fa3cd847-5aca-46dd-84f5-edea25cfe0e7")
 	)
-	(label "M3_USART_TX"
+	(label "M3_UART_TX"
 		(at 339.09 364.49 180)
 		(fields_autoplaced yes)
 		(effects
@@ -19257,179 +19257,6 @@
 			(project "motorboard-v1.0"
 				(path "/0b831060-eebb-4b19-8627-ea88aba682f7"
 					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "RoboJackets-Connectors:XT60PW-F")
-		(at 279.4 377.19 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "29cf6d23-3c3b-4b26-88fa-385f02dc5a99")
-		(property "Reference" "J9"
-			(at 290.83 369.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "XT60PW-F"
-			(at 290.83 372.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "RoboJackets-Connectors:XT60PWF"
-			(at 298.45 472.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.tme.eu/Document/1191bc2fa3aee3c446e5a895fd8f7983/XT60PW-F.pdf"
-			(at 298.45 572.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Socket; DC supply; XT60; female; PIN: 2; on PCBs; THT; Colour: yellow"
-			(at 289.56 385.318 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "8.4"
-			(at 298.45 772.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "TME Electronic Components Part Number" ""
-			(at 298.45 872.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "TME Electronic Components Price/Stock" ""
-			(at 298.45 972.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Amass"
-			(at 298.45 1072.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "XT60PW-F"
-			(at 298.45 1172.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Vendor" "Digikey"
-			(at 279.4 377.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Vendor P/N" "609-HFW8R-1STE1H1LFCT-ND"
-			(at 279.4 377.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Vendor URL" "https://www.digikey.com/en/products/detail/amphenol-cs-fci/HFW8R-1STE1H1LF/9695136?s=N4IgTCBcDaIBIDEDqAOASgWgIwGUAqAolnFgDIIgC6AvkA"
-			(at 279.4 377.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Amass"
-			(at 298.45 1072.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer P/N" "XT60PW-F"
-			(at 298.45 1172.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "696249b1-0999-4ae8-ba30-11e38c87215e")
-		)
-		(pin "1"
-			(uuid "7895cf3b-d169-4d6d-9ca1-0a32e0df0fef")
-		)
-		(pin "3"
-			(uuid "71e7bf94-189e-4b86-8937-8cb5805883f6")
-		)
-		(pin "2"
-			(uuid "83bc082e-2f35-45d1-80c8-b781a8e15fc4")
-		)
-		(instances
-			(project ""
-				(path "/0b831060-eebb-4b19-8627-ea88aba682f7"
-					(reference "J9")
 					(unit 1)
 				)
 			)
@@ -29054,6 +28881,159 @@
 			(project "motorboard-v1.0"
 				(path "/0b831060-eebb-4b19-8627-ea88aba682f7"
 					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RoboJackets-Connectors:XT30PW-M")
+		(at 279.4 377.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f81b56a2-3d41-4b35-ba38-e2286325454f")
+		(property "Reference" "J9"
+			(at 289.56 369.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "XT30PW-M"
+			(at 289.56 372.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "XT30PWM"
+			(at 295.91 472.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tme.eu/sl/Document/ce4077e36b79046da520ca73227e15de/XT30PW%20SPEC.pdf"
+			(at 295.91 572.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "30A Low Temperature Rise Fire Retardant Plug"
+			(at 279.4 377.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "TME"
+			(at 279.4 377.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor P/N" "XT30PW-M"
+			(at 279.4 377.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor URL" "https://www.tme.com/us/en-us/details/xt30pw-m/dc-power-connectors/amass/?brutto=1&currency=USD&utm_source=google&utm_medium=cpc&utm_campaign=USA%20[PLA]%20com&gad_source=1&gclid=CjwKCAjw1NK4BhAwEiwAVUHPUP3yTIfch64WR8lDr4ogIt2VrF1qvMF_dfcJsI2uThtyVyTAlDqeqBoCfAcQAvD_BwE"
+			(at 279.4 377.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Amass"
+			(at 295.91 1072.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer P/N" "XT30PW-M"
+			(at 295.91 1172.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Height" "5"
+			(at 295.91 772.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "TME Electronic Components Part Number" ""
+			(at 295.91 872.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "TME Electronic Components Price/Stock" ""
+			(at 295.91 972.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "48afa3a8-8cda-4811-86ca-7af478065b70")
+		)
+		(pin "4"
+			(uuid "82f07b12-d2ef-4702-a571-d5fdb1a5288f")
+		)
+		(pin "2"
+			(uuid "758b2674-fd36-4f30-8621-3796a8c13776")
+		)
+		(pin "1"
+			(uuid "9c4e6022-cfa3-40ca-995b-a9479b2002dc")
+		)
+		(instances
+			(project ""
+				(path "/0b831060-eebb-4b19-8627-ea88aba682f7"
+					(reference "J9")
 					(unit 1)
 				)
 			)
