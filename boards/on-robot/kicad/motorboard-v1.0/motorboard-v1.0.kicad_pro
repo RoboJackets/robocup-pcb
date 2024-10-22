@@ -6,14 +6,14 @@
         "apply_defaults_to_fp_fields": false,
         "apply_defaults_to_fp_shapes": false,
         "apply_defaults_to_fp_text": false,
-        "board_outline_line_width": 0.049999999999999996,
-        "copper_line_width": 0.19999999999999998,
+        "board_outline_line_width": 0.05,
+        "copper_line_width": 0.2,
         "copper_text_italic": false,
         "copper_text_size_h": 1.5,
         "copper_text_size_v": 1.5,
         "copper_text_thickness": 0.3,
         "copper_text_upright": false,
-        "courtyard_line_width": 0.049999999999999996,
+        "courtyard_line_width": 0.05,
         "dimension_precision": 4,
         "dimension_units": 3,
         "dimensions": {
@@ -24,13 +24,13 @@
           "text_position": 0,
           "units_format": 1
         },
-        "fab_line_width": 0.09999999999999999,
+        "fab_line_width": 0.1,
         "fab_text_italic": false,
         "fab_text_size_h": 1.0,
         "fab_text_size_v": 1.0,
         "fab_text_thickness": 0.15,
         "fab_text_upright": false,
-        "other_line_width": 0.09999999999999999,
+        "other_line_width": 0.1,
         "other_text_italic": false,
         "other_text_size_h": 1.0,
         "other_text_size_v": 1.0,
@@ -41,11 +41,11 @@
           "height": 1.524,
           "width": 1.524
         },
-        "silk_line_width": 0.09999999999999999,
+        "silk_line_width": 0.1,
         "silk_text_italic": false,
         "silk_text_size_h": 1.0,
         "silk_text_size_v": 1.0,
-        "silk_text_thickness": 0.09999999999999999,
+        "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
           "min_clearance": 0.5
@@ -79,6 +79,7 @@
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
         "hole_near_hole": "error",
+        "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
@@ -115,20 +116,20 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.19999999999999998,
+        "min_clearance": 0.2,
         "min_connection": 0.15,
-        "min_copper_edge_clearance": 0.39999999999999997,
+        "min_copper_edge_clearance": 0.4,
         "min_hole_clearance": 0.35,
         "min_hole_to_hole": 0.5,
-        "min_microvia_diameter": 0.19999999999999998,
-        "min_microvia_drill": 0.09999999999999999,
+        "min_microvia_diameter": 0.2,
+        "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
-        "min_text_height": 0.7999999999999999,
+        "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.19999999999999998,
-        "min_via_annular_width": 0.09999999999999999,
+        "min_track_width": 0.2,
+        "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
@@ -731,20 +732,20 @@
       "motor_1"
     ],
     [
-      "8fc0da5c-3918-4553-a998-e98e77fe9a47",
+      "ede1f750-cc04-4040-9d07-fb723a67e5f8",
       "motor_2"
     ],
     [
-      "41a7dec4-d763-4b9c-a5db-d176bef259c9",
+      "182a15cb-62d5-4ac6-9c7a-79ec349daafc",
       "motor_3"
     ],
     [
-      "df1931d3-1f72-47fc-a09e-3bf11ff117b3",
+      "d374dfc5-0847-4eab-9670-eadbeaf0b405",
       "motor_4"
     ],
     [
-      "d8f9e87f-a514-4f9b-b7e2-1c541ceb3e7c",
-      "motor_drib"
+      "560c80c7-e8e4-4ad8-b2ec-62b8ce55169f",
+      "dribbler"
     ]
   ],
   "text_variables": {}
