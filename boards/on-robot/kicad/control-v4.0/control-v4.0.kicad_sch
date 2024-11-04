@@ -9049,197 +9049,6 @@
 		(uuid "ffd53310-337e-41c1-aa8b-505fb029e4f2")
 	)
 	(symbol
-		(lib_id "RoboJackets-Connectors:53625-0274")
-		(at 57.15 241.3 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "01cc0cca-3f20-4a74-9e1e-8e3743768d2a")
-		(property "Reference" "J1"
-			(at 54.9559 279.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "53625-0274"
-			(at 54.9559 276.86 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "RoboJackets-Connectors:536250274"
-			(at -32.69 275.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.molex.com/pdm_docs/sd/536250274_sd.pdf"
-			(at -132.69 275.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Board to Board & Mezzanine Connectors SlimStack .635mm Plg 20Ckt"
-			(at 34.798 259.588 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Vendor" "Digikey"
-			(at -432.69 275.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Vendor P/N" "900-0536250274CT-ND"
-			(at -632.69 275.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Vendor URL" "https://www.digikey.com/en/products/detail/molex/0536250274/10482852?s=N4IgTCBcDaIKwGYBsY4FoAMYDsAWEAugL5A"
-			(at -732.69 275.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Molex"
-			(at 57.15 241.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer P/N" "  0536250274"
-			(at -532.69 275.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Height" "6.2"
-			(at -332.69 275.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "13"
-			(uuid "bab99127-1944-48f7-bba2-466626c19ff6")
-		)
-		(pin "19"
-			(uuid "8531e3cb-29ee-45cc-b94d-500434772420")
-		)
-		(pin "9"
-			(uuid "bbc689a4-043c-400a-a1dd-841adec0d918")
-		)
-		(pin "3"
-			(uuid "eec73f02-7293-4bc4-b6bb-43c3cb2b34b2")
-		)
-		(pin "7"
-			(uuid "386dee33-e99a-41a9-b8d6-d4dcef7e1a48")
-		)
-		(pin "4"
-			(uuid "567397f9-b549-4367-9ff9-6d18057e0539")
-		)
-		(pin "10"
-			(uuid "a89452b2-50b3-40c4-9bcd-8a382483ac33")
-		)
-		(pin "1"
-			(uuid "7f2e10f5-3f34-4c6d-a120-e6a1154672cb")
-		)
-		(pin "12"
-			(uuid "687f3885-ecde-4af4-8ab9-147151519011")
-		)
-		(pin "17"
-			(uuid "fdd5cfa0-08d2-431f-8203-2ac385668a7d")
-		)
-		(pin "MP1"
-			(uuid "ef8f8dc4-d1cd-407e-aa43-f76bbb22ba9b")
-		)
-		(pin "5"
-			(uuid "1e87793d-2077-48e8-a005-28741c22c444")
-		)
-		(pin "MP2"
-			(uuid "099a8888-bc06-4177-81a8-3d35174b91b0")
-		)
-		(pin "2"
-			(uuid "024c2ee1-27af-4a33-83c7-0d4feb1a7c5c")
-		)
-		(pin "6"
-			(uuid "43a5aae1-6c0d-4537-9807-75bb6f694e1b")
-		)
-		(pin "15"
-			(uuid "6100c851-d399-42e9-ab3f-6a948f0c7832")
-		)
-		(pin "20"
-			(uuid "976ba8a9-da84-4fdf-a4e5-7a07a60583ee")
-		)
-		(pin "8"
-			(uuid "041826c7-1a28-44a9-8bbf-00dd3362db00")
-		)
-		(pin "11"
-			(uuid "0a9f1b2f-7bea-4af9-a2ce-25244127d38f")
-		)
-		(pin "14"
-			(uuid "3c5c2c08-89d4-423d-87ba-8e0d7cce71cb")
-		)
-		(pin "16"
-			(uuid "26015b40-1a38-4fb8-87ba-6ba25b3e6f73")
-		)
-		(pin "18"
-			(uuid "3e05b57c-0be4-44ab-85c9-2e0c169a8bae")
-		)
-		(instances
-			(project ""
-				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 137.16 267.97 0)
 		(unit 1)
@@ -9249,7 +9058,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "02fccb41-9ad9-46b8-a520-11b3e2993312")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR017"
 			(at 137.16 274.32 0)
 			(effects
 				(font
@@ -9299,7 +9108,7 @@
 		(instances
 			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "#PWR021")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -9315,7 +9124,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "05a16425-3a1f-4ca5-aa79-b89f0cbb5bd7")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR015"
 			(at 127 128.27 0)
 			(effects
 				(font
@@ -9365,7 +9174,7 @@
 		(instances
 			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "#PWR028")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -9381,7 +9190,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0daeaaac-36fe-46db-a897-d5ec97e6ee9d")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR016"
 			(at 137.16 255.27 0)
 			(effects
 				(font
@@ -9431,7 +9240,7 @@
 		(instances
 			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "#PWR020")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -9447,7 +9256,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1a4a26f7-c349-4ee6-a2ef-9a845175dfba")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR024"
 			(at 306.07 130.81 0)
 			(effects
 				(font
@@ -9497,7 +9306,7 @@
 		(instances
 			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "#PWR07")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -9513,7 +9322,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1b85de46-4279-4e6b-960e-43cb09605f76")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR03"
 			(at 31.75 22.86 0)
 			(effects
 				(font
@@ -9563,7 +9372,7 @@
 		(instances
 			(project ""
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "#PWR01")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -9579,7 +9388,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1de6d3f0-68ac-4325-a16b-fbac9828ff6d")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR027"
 			(at 367.03 53.34 0)
 			(effects
 				(font
@@ -9629,7 +9438,7 @@
 		(instances
 			(project ""
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "#PWR04")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -9645,7 +9454,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "27480323-69d6-412c-bd17-5c085299ec4c")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR029"
 			(at 379.73 86.36 0)
 			(effects
 				(font
@@ -9695,7 +9504,7 @@
 		(instances
 			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "#PWR08")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -9711,7 +9520,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "27619762-24fe-4c37-97cc-92868e6b0801")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR02"
 			(at 20.32 60.96 0)
 			(effects
 				(font
@@ -9761,7 +9570,7 @@
 		(instances
 			(project ""
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "#PWR017")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -9777,7 +9586,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2790045b-ccd4-404d-bf92-5006edef57b7")
-		(property "Reference" "U3"
+		(property "Reference" "U1"
 			(at 91.44 119.3799 0)
 			(effects
 				(font
@@ -9851,7 +9660,7 @@
 		(instances
 			(project ""
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "U3")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -9867,7 +9676,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "27d7c4db-d169-418a-a741-b89a28478107")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR01"
 			(at 19.05 22.86 0)
 			(effects
 				(font
@@ -9917,7 +9726,7 @@
 		(instances
 			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "#PWR02")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -9933,7 +9742,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2a842551-661c-4ded-bc18-2a77ef3dc171")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR08"
 			(at 76.2 257.81 0)
 			(effects
 				(font
@@ -9983,7 +9792,7 @@
 		(instances
 			(project ""
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "#PWR018")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -9999,7 +9808,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2ca1f9f2-bc73-4565-b8ee-831c2bf857ad")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR012"
 			(at 99.06 26.67 0)
 			(effects
 				(font
@@ -10049,7 +9858,7 @@
 		(instances
 			(project ""
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "#PWR09")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -10065,7 +9874,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3f8a9f10-fa2b-4df0-89eb-71c42a5aa5b8")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR023"
 			(at 299.72 128.27 0)
 			(effects
 				(font
@@ -10115,7 +9924,7 @@
 		(instances
 			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "#PWR06")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -10131,7 +9940,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "40c78637-3ba7-4525-a2a5-113c83764826")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR028"
 			(at 368.3 118.11 0)
 			(effects
 				(font
@@ -10181,7 +9990,7 @@
 		(instances
 			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "#PWR026")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -10197,7 +10006,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "445ac870-b76f-4955-b1a0-30b910f5b4fe")
-		(property "Reference" "R1"
+		(property "Reference" "R2"
 			(at 34.29 20.3199 0)
 			(effects
 				(font
@@ -10251,7 +10060,7 @@
 		(instances
 			(project ""
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "R1")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -10561,6 +10370,197 @@
 		)
 	)
 	(symbol
+		(lib_id "RoboJackets-Connectors:53625-0274")
+		(at 168.91 241.3 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "51661c8c-02e8-46e2-b035-3428a2708008")
+		(property "Reference" "J3"
+			(at 171.9265 241.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "53625-0274"
+			(at 171.9265 243.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "RoboJackets-Connectors:536250274"
+			(at 79.07 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.molex.com/pdm_docs/sd/536250274_sd.pdf"
+			(at -20.93 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Board to Board & Mezzanine Connectors SlimStack .635mm Plg 20Ckt"
+			(at 146.558 259.588 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at -320.93 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Vendor P/N" "900-0536250274CT-ND"
+			(at -520.93 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Vendor URL" "https://www.digikey.com/en/products/detail/molex/0536250274/10482852?s=N4IgTCBcDaIKwGYBsY4FoAMYDsAWEAugL5A"
+			(at -620.93 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 168.91 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer P/N" "  0536250274"
+			(at -420.93 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Height" "6.2"
+			(at -220.93 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "15"
+			(uuid "447a0ebf-d152-4373-9236-39d974f39f9d")
+		)
+		(pin "19"
+			(uuid "b4243464-babb-4d25-afd8-29dcb0a8a20b")
+		)
+		(pin "20"
+			(uuid "38eb4cdc-e52a-4a86-9b8d-d8861054f78b")
+		)
+		(pin "10"
+			(uuid "f1298ae9-704c-472f-bf12-f47772714210")
+		)
+		(pin "MP2"
+			(uuid "38b716b0-3f4d-4fa1-9064-3a95117046f0")
+		)
+		(pin "2"
+			(uuid "61838e2a-902c-4751-8d29-068589f46239")
+		)
+		(pin "16"
+			(uuid "d82bd3b0-58bf-4578-aa1e-f955bba4da75")
+		)
+		(pin "9"
+			(uuid "8d6ed48e-0065-441c-808e-db0d5b8d6373")
+		)
+		(pin "13"
+			(uuid "15b81074-277e-4cc2-84a8-83ceef526d9d")
+		)
+		(pin "17"
+			(uuid "2e7010f3-e867-40e3-bb72-3548b4eecd19")
+		)
+		(pin "5"
+			(uuid "a8dd2bd2-c406-4b76-b02e-a6e91319d8df")
+		)
+		(pin "1"
+			(uuid "231e9a0a-5f1b-4142-8b59-d8ab49e8e1a6")
+		)
+		(pin "3"
+			(uuid "8b2da698-7231-4ba5-b623-9027c700b7db")
+		)
+		(pin "8"
+			(uuid "9ead2e3b-197d-44e3-ac6b-c1c89354cbf3")
+		)
+		(pin "14"
+			(uuid "6b940214-d93b-4a41-a8a5-654c70efca93")
+		)
+		(pin "11"
+			(uuid "729fc786-9216-48d2-a2fb-cd61ee18ce7b")
+		)
+		(pin "12"
+			(uuid "69870bfe-d558-480b-b0d9-499a436a462c")
+		)
+		(pin "4"
+			(uuid "de7c1bad-e469-4634-adb6-3a5b1f714f27")
+		)
+		(pin "MP1"
+			(uuid "aae0bad4-4cc9-43b9-94f3-2bc60cf71082")
+		)
+		(pin "18"
+			(uuid "90e32c76-1868-4428-a1a1-6914475cb111")
+		)
+		(pin "7"
+			(uuid "1434934f-ceae-4d8b-92c6-d4aa9c11fc71")
+		)
+		(pin "6"
+			(uuid "02149d81-5bc3-48c8-abe1-12b5d61dc89f")
+		)
+		(instances
+			(project "control-v4.0"
+				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 81.28 135.89 0)
 		(unit 1)
@@ -10570,7 +10570,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5348a8d7-3809-4a62-9709-6822df451288")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR011"
 			(at 81.28 142.24 0)
 			(effects
 				(font
@@ -10620,7 +10620,198 @@
 		(instances
 			(project ""
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "#PWR012")
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RoboJackets-Connectors:53625-0274")
+		(at 57.15 241.3 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5d4142d8-bee9-4d8c-8e10-85f7b47b0099")
+		(property "Reference" "J1"
+			(at 60.1665 241.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "53625-0274"
+			(at 60.1665 243.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "RoboJackets-Connectors:536250274"
+			(at -32.69 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.molex.com/pdm_docs/sd/536250274_sd.pdf"
+			(at -132.69 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Board to Board & Mezzanine Connectors SlimStack .635mm Plg 20Ckt"
+			(at 34.798 259.588 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at -432.69 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Vendor P/N" "900-0536250274CT-ND"
+			(at -632.69 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Vendor URL" "https://www.digikey.com/en/products/detail/molex/0536250274/10482852?s=N4IgTCBcDaIKwGYBsY4FoAMYDsAWEAugL5A"
+			(at -732.69 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 57.15 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer P/N" "  0536250274"
+			(at -532.69 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Height" "6.2"
+			(at -332.69 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "15"
+			(uuid "1bdb8931-ede7-40e5-be33-70444fd6dbcc")
+		)
+		(pin "19"
+			(uuid "6f4b162e-b993-4713-9989-80b502aa54f4")
+		)
+		(pin "20"
+			(uuid "eea7ffd7-c2c2-48b4-9574-e0ac06277b04")
+		)
+		(pin "10"
+			(uuid "2aba3cda-7ea9-4b70-bfc5-09e54bf2e83c")
+		)
+		(pin "MP2"
+			(uuid "6c4421bc-fcda-4396-9b17-93f094f14781")
+		)
+		(pin "2"
+			(uuid "b98f292f-8377-4c1c-9397-aad21fabbf28")
+		)
+		(pin "16"
+			(uuid "7c260bb1-02b0-43a3-889c-64f18b72218c")
+		)
+		(pin "9"
+			(uuid "bf381a5d-b8f2-443f-afa4-abb18e2a808c")
+		)
+		(pin "13"
+			(uuid "419975c6-ee33-40a8-9ad3-7f3a6cd8d48e")
+		)
+		(pin "17"
+			(uuid "35fd97a6-b1ce-4090-b3d1-785cdc5c8d2a")
+		)
+		(pin "5"
+			(uuid "0a70eae5-cee4-43b9-a222-b37fe8e9c667")
+		)
+		(pin "1"
+			(uuid "5baadcea-f698-493f-a24a-bad81165dd07")
+		)
+		(pin "3"
+			(uuid "dd102ba7-c9d3-403c-b3d9-a24f9ac8ec45")
+		)
+		(pin "8"
+			(uuid "56a3ab7f-93de-4780-9285-e3f1a8daac8e")
+		)
+		(pin "14"
+			(uuid "66665815-54c9-4ef6-8b47-e450d82ab2a0")
+		)
+		(pin "11"
+			(uuid "fbc21d53-a4cf-44ee-8baf-82d403b5d3ad")
+		)
+		(pin "12"
+			(uuid "e91970dd-a8e0-493d-bb8b-a43a575fa3d1")
+		)
+		(pin "4"
+			(uuid "303b3daa-964a-4435-86d4-cb203775f29d")
+		)
+		(pin "MP1"
+			(uuid "ba257f60-0afc-4a4d-8a13-b1ef35def9f7")
+		)
+		(pin "18"
+			(uuid "9b35f322-29d3-4fd5-b41f-3e23f4f8d10d")
+		)
+		(pin "7"
+			(uuid "23ba9a37-a056-4235-9bfe-b42b8a58ca3e")
+		)
+		(pin "6"
+			(uuid "5cecb2e6-9e33-4b3a-9a0f-a655d1f66ffa")
+		)
+		(instances
+			(project ""
+				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -10636,7 +10827,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "69ab76c8-9fed-4014-8126-3333e7ec8dc8")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR019"
 			(at 190.5 273.05 0)
 			(effects
 				(font
@@ -10686,7 +10877,7 @@
 		(instances
 			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "#PWR023")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -10702,7 +10893,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "72ba5454-c655-4845-bf23-e6e65e71eb6d")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR010"
 			(at 81.28 109.22 0)
 			(effects
 				(font
@@ -10752,7 +10943,7 @@
 		(instances
 			(project ""
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "#PWR013")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -10767,7 +10958,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "80672dcf-eb06-42cb-9f5c-866fb469ad4e")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR04"
 			(at 50.8 125.73 0)
 			(effects
 				(font
@@ -10817,7 +11008,7 @@
 		(instances
 			(project ""
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "#PWR016")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -10985,6 +11176,197 @@
 		)
 	)
 	(symbol
+		(lib_id "RoboJackets-Connectors:53625-0274")
+		(at 115.57 241.3 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "824228b8-641f-421b-b6b4-f25d8b795f1b")
+		(property "Reference" "J2"
+			(at 118.5865 241.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "53625-0274"
+			(at 118.5865 243.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "RoboJackets-Connectors:536250274"
+			(at 25.73 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.molex.com/pdm_docs/sd/536250274_sd.pdf"
+			(at -74.27 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Board to Board & Mezzanine Connectors SlimStack .635mm Plg 20Ckt"
+			(at 93.218 259.588 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at -374.27 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Vendor P/N" "900-0536250274CT-ND"
+			(at -574.27 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Vendor URL" "https://www.digikey.com/en/products/detail/molex/0536250274/10482852?s=N4IgTCBcDaIKwGYBsY4FoAMYDsAWEAugL5A"
+			(at -674.27 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 115.57 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer P/N" "  0536250274"
+			(at -474.27 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Height" "6.2"
+			(at -274.27 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "15"
+			(uuid "6cd99ea9-da9a-419e-b7b5-53ede20e4c23")
+		)
+		(pin "19"
+			(uuid "89821e98-c4a0-4d1a-be74-2812509d616e")
+		)
+		(pin "20"
+			(uuid "42aebaea-0506-4016-bf3e-616558eeab32")
+		)
+		(pin "10"
+			(uuid "be8e21f7-0d6c-46de-a4f3-c83203f4700b")
+		)
+		(pin "MP2"
+			(uuid "0fd587fd-f48c-4501-a1a0-fe8fbbfbd7e9")
+		)
+		(pin "2"
+			(uuid "39407a29-e81d-4115-bd32-3334ba276124")
+		)
+		(pin "16"
+			(uuid "a97933da-6b69-476e-baec-914002d07814")
+		)
+		(pin "9"
+			(uuid "12a4414e-ec24-4d5c-a7ee-a0ff851ac66c")
+		)
+		(pin "13"
+			(uuid "c07a8208-f688-4224-909b-5e15ab16b0c7")
+		)
+		(pin "17"
+			(uuid "e669f739-3aea-4e15-97f3-965510209795")
+		)
+		(pin "5"
+			(uuid "b865c4b3-3fc3-46cb-a57c-434bedf57bf3")
+		)
+		(pin "1"
+			(uuid "8ea1b641-d9e3-4e6a-8d1b-910a2b59d8e3")
+		)
+		(pin "3"
+			(uuid "cfd00704-78ac-4218-baa3-988e3e00c44d")
+		)
+		(pin "8"
+			(uuid "04521fb9-cbbd-4746-8d9d-71cc6392123d")
+		)
+		(pin "14"
+			(uuid "db1f3f4f-b165-4d5f-b82c-34f3aa5ee349")
+		)
+		(pin "11"
+			(uuid "67f58ac4-16f6-4691-a38b-45844617c1fa")
+		)
+		(pin "12"
+			(uuid "534002da-e2fe-48a5-93ff-f6dde1952a38")
+		)
+		(pin "4"
+			(uuid "cee08204-65be-4e14-a076-8b16070622f9")
+		)
+		(pin "MP1"
+			(uuid "3546d921-7521-4f4f-b2f5-53efefc2d030")
+		)
+		(pin "18"
+			(uuid "6b43c330-2e9d-483a-8a50-0b7f0be41e62")
+		)
+		(pin "7"
+			(uuid "63415ea3-8f0f-451a-ba6f-ffed05ad1de6")
+		)
+		(pin "6"
+			(uuid "3a76fab0-2275-4d2e-8445-74a3f69f63b0")
+		)
+		(instances
+			(project "control-v4.0"
+				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 76.2 266.7 0)
 		(unit 1)
@@ -10994,7 +11376,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "82852ff9-f377-4ee2-9599-88beffc79a63")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR09"
 			(at 76.2 273.05 0)
 			(effects
 				(font
@@ -11044,7 +11426,7 @@
 		(instances
 			(project ""
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "#PWR019")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -11060,7 +11442,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "872dc12a-88f7-44fa-bc91-cdc06fc6170e")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR06"
 			(at 68.58 57.15 0)
 			(effects
 				(font
@@ -11110,7 +11492,7 @@
 		(instances
 			(project ""
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "#PWR014")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -11126,7 +11508,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8c271573-6834-44d7-9b78-f72d155969f0")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR020"
 			(at 248.92 257.81 0)
 			(effects
 				(font
@@ -11176,7 +11558,7 @@
 		(instances
 			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "#PWR024")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -11192,7 +11574,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "966d2890-f28e-4d6b-a2c1-50cdc0c93fe4")
-		(property "Reference" "U1"
+		(property "Reference" "U3"
 			(at 334.01 33.02 0)
 			(effects
 				(font
@@ -11208,7 +11590,7 @@
 				)
 			)
 		)
-		(property "Footprint" "teensy.pretty-master:Teensy41"
+		(property "Footprint" "RoboJackets-Boards:Teensy41"
 			(at 323.85 88.9 0)
 			(effects
 				(font
@@ -11439,7 +11821,7 @@
 		(instances
 			(project ""
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "U1")
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -11609,7 +11991,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9f45cb32-1a97-4cf9-9726-e2cba279592b")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR021"
 			(at 248.92 273.05 0)
 			(effects
 				(font
@@ -11659,7 +12041,7 @@
 		(instances
 			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "#PWR025")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -11675,7 +12057,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a095046f-6c9f-4057-a5d8-5b2efc1e9206")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR025"
 			(at 334.01 139.7 0)
 			(effects
 				(font
@@ -11725,7 +12107,7 @@
 		(instances
 			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "#PWR027")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -11741,7 +12123,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a2b945e9-fa6f-477b-9bb1-b51dd07f3df2")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR022"
 			(at 299.72 40.64 0)
 			(effects
 				(font
@@ -11791,7 +12173,271 @@
 		(instances
 			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 68.58 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b14d46e5-771d-4502-9987-138240004f4d")
+		(property "Reference" "#PWR07"
+			(at 68.58 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 68.58 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 68.58 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 68.58 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "94384297-4a64-4212-8870-e8082cbac16b")
+		)
+		(instances
+			(project ""
+				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 64.77 34.29 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b213589c-ff33-43ff-bd20-a2e2b99e7c7d")
+		(property "Reference" "#PWR05"
+			(at 64.77 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 64.77 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 64.77 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.77 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 64.77 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "77e519a3-fa2b-4c5f-9fbe-d82b0f2047c2")
+		)
+		(instances
+			(project ""
+				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 190.5 252.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c46c3f87-1166-47d5-9df9-4593dfd84628")
+		(property "Reference" "#PWR018"
+			(at 190.5 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 190.5 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 190.5 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 190.5 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "82e4d8ca-1c7c-4d4a-9f7e-5d44c1df5069")
+		)
+		(instances
+			(project "control-v4.0"
+				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 120.65 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cf2ff372-05aa-4c8a-aeab-584f1d7c23c3")
+		(property "Reference" "#PWR014"
+			(at 120.65 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 120.65 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 120.65 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 120.65 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 120.65 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "50049505-a212-462e-9667-0fa1ba1241b5")
+		)
+		(instances
+			(project ""
+				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -11806,23 +12452,23 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ac10aefe-d6b9-4780-b711-e5805e426bc6")
-		(property "Reference" "J8"
-			(at 227.6759 279.4 90)
+		(uuid "d5787c5a-c9f6-46d0-89f4-bd5115844c82")
+		(property "Reference" "J4"
+			(at 232.8865 241.3 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "53625-0274"
-			(at 227.6759 276.86 90)
+			(at 232.8865 243.84 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" "RoboJackets-Connectors:536250274"
@@ -11913,340 +12559,76 @@
 				(hide yes)
 			)
 		)
-		(pin "13"
-			(uuid "2b6a2f68-d3b3-4f21-b238-2b3ba6fa6bab")
+		(pin "15"
+			(uuid "3f987b0c-90cf-4783-8789-5a2404d66c97")
 		)
 		(pin "19"
-			(uuid "c51910ee-3ebb-49df-8297-4eddb90e7e9a")
-		)
-		(pin "9"
-			(uuid "562e6d0b-28de-49d5-a8a9-7f39a64339b3")
-		)
-		(pin "3"
-			(uuid "d99431d9-6513-488a-bb46-7880c6a0e334")
-		)
-		(pin "7"
-			(uuid "9b9f2a9d-bc40-4831-955a-9d0498ad963a")
-		)
-		(pin "4"
-			(uuid "01f248d2-47b5-4f67-a480-09e24f1472b7")
-		)
-		(pin "10"
-			(uuid "32e9630c-23b8-49e6-ac29-721f4840649a")
-		)
-		(pin "1"
-			(uuid "fadd9da6-2413-41c6-ab20-cc80cdc164eb")
-		)
-		(pin "12"
-			(uuid "8aa43589-e774-43d1-83a8-3f0027b80a68")
-		)
-		(pin "17"
-			(uuid "7d36bda8-c27b-48c3-8534-d0b48c1c85aa")
-		)
-		(pin "MP1"
-			(uuid "3fe8eb10-34b2-4c47-995b-061ac01b6115")
-		)
-		(pin "5"
-			(uuid "9e3645a0-8390-43f3-9594-226384a04281")
-		)
-		(pin "MP2"
-			(uuid "22daf684-5768-4d5c-a814-a8c99b5fa683")
-		)
-		(pin "2"
-			(uuid "01800d7f-3f7a-40e1-a6d7-ee94e2611301")
-		)
-		(pin "6"
-			(uuid "79029193-d993-4e71-863a-5203ffec20b2")
-		)
-		(pin "15"
-			(uuid "241ff7b1-19fd-4d98-b318-f5d93e47f117")
+			(uuid "1d9b5683-fc55-4925-9741-4e5b72d1b128")
 		)
 		(pin "20"
-			(uuid "882f80f9-875b-4a2f-b64a-6944c1fbfcdd")
+			(uuid "120ee87d-85eb-423d-901f-b26ad6f04aeb")
 		)
-		(pin "8"
-			(uuid "9716048f-be2d-449c-b9eb-7a2b3c0bf3e8")
+		(pin "10"
+			(uuid "869d9213-46bd-46f7-b5b1-8c7eaef8432f")
 		)
-		(pin "11"
-			(uuid "7d231cb4-7c4a-40ca-aac5-412ddbd858fb")
+		(pin "MP2"
+			(uuid "6efe8335-b2d9-4d4a-9380-f3750d4d520b")
 		)
-		(pin "14"
-			(uuid "a51e4e7b-6b84-4d24-bf5b-cadbf4628e9f")
+		(pin "2"
+			(uuid "95de3a92-cfbd-44cc-abf0-bc21c4528d9d")
 		)
 		(pin "16"
-			(uuid "a3bb4369-b4ff-4395-9cd1-3b6423e6f4d0")
+			(uuid "12e35757-3ea4-4b76-a821-a3771d11d989")
+		)
+		(pin "9"
+			(uuid "26de8050-b443-46e9-937e-b4c318ccb1d2")
+		)
+		(pin "13"
+			(uuid "33709879-b8ea-41f9-8977-c4231111e989")
+		)
+		(pin "17"
+			(uuid "2bd37c2b-d5da-400e-b665-b22baf22e6e6")
+		)
+		(pin "5"
+			(uuid "91e8638b-f4c3-4c5f-b6ad-c710b19530da")
+		)
+		(pin "1"
+			(uuid "83c22f33-2d6d-4afd-86e7-af6295556bdb")
+		)
+		(pin "3"
+			(uuid "8033c733-6450-44a9-964c-7e35c2d420ec")
+		)
+		(pin "8"
+			(uuid "16c640a1-db67-44c7-a534-0e4f12167059")
+		)
+		(pin "14"
+			(uuid "ff836778-8cc9-4c59-b431-6ba739e5be16")
+		)
+		(pin "11"
+			(uuid "cd1e2bf5-bf8f-4daa-a78f-d2d2d4ae2fe4")
+		)
+		(pin "12"
+			(uuid "2dc6574e-2186-49ac-ac8e-3cf17a40e6dd")
+		)
+		(pin "4"
+			(uuid "87d97e52-d479-4cc1-9832-27c2010f1686")
+		)
+		(pin "MP1"
+			(uuid "6bac7f61-ca09-4161-a77b-83c9542677c9")
 		)
 		(pin "18"
-			(uuid "b807340c-c873-481a-9e91-4f0da1ecd612")
+			(uuid "463785dc-5eaa-4960-a0d6-fbff638a0616")
+		)
+		(pin "7"
+			(uuid "2f53d6a7-2010-48f3-b43a-1addb99f4458")
+		)
+		(pin "6"
+			(uuid "93cf9d04-598c-4ad5-aa86-edbe1234e88f")
 		)
 		(instances
 			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "J8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 68.58 67.31 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b14d46e5-771d-4502-9987-138240004f4d")
-		(property "Reference" "#PWR015"
-			(at 68.58 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 68.58 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 68.58 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 68.58 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 68.58 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "94384297-4a64-4212-8870-e8082cbac16b")
-		)
-		(instances
-			(project ""
-				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "#PWR015")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 64.77 34.29 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b213589c-ff33-43ff-bd20-a2e2b99e7c7d")
-		(property "Reference" "#PWR011"
-			(at 64.77 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 64.77 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 64.77 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 64.77 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 64.77 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "77e519a3-fa2b-4c5f-9fbe-d82b0f2047c2")
-		)
-		(instances
-			(project ""
-				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 190.5 252.73 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c46c3f87-1166-47d5-9df9-4593dfd84628")
-		(property "Reference" "#PWR022"
-			(at 190.5 256.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 190.5 247.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 190.5 252.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 190.5 252.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 190.5 252.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "82e4d8ca-1c7c-4d4a-9f7e-5d44c1df5069")
-		)
-		(instances
-			(project "control-v4.0"
-				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 120.65 123.19 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cf2ff372-05aa-4c8a-aeab-584f1d7c23c3")
-		(property "Reference" "#PWR029"
-			(at 120.65 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 120.65 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 120.65 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 120.65 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 120.65 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "50049505-a212-462e-9667-0fa1ba1241b5")
-		)
-		(instances
-			(project ""
-				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "#PWR029")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -12262,7 +12644,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "edc861b3-5f08-49f0-96b5-c349e2d61f3b")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR026"
 			(at 367.03 48.26 0)
 			(effects
 				(font
@@ -12312,7 +12694,7 @@
 		(instances
 			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "#PWR03")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -12328,7 +12710,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "efc99d80-2460-4168-a69c-e840298acf96")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR013"
 			(at 99.06 40.64 0)
 			(effects
 				(font
@@ -12378,7 +12760,7 @@
 		(instances
 			(project ""
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "#PWR010")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -12394,7 +12776,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f8800919-e815-4a23-84cd-99ab6cf1f7e0")
-		(property "Reference" "R2"
+		(property "Reference" "R1"
 			(at 21.59 20.3199 0)
 			(effects
 				(font
@@ -12448,389 +12830,7 @@
 		(instances
 			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "RoboJackets-Connectors:53625-0274")
-		(at 115.57 241.3 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fbc1bbc2-88d1-4e24-8bc3-f7dcbf24a893")
-		(property "Reference" "J6"
-			(at 118.5865 241.3 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "53625-0274"
-			(at 118.5865 243.84 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "RoboJackets-Connectors:536250274"
-			(at 25.73 275.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.molex.com/pdm_docs/sd/536250274_sd.pdf"
-			(at -74.27 275.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Board to Board & Mezzanine Connectors SlimStack .635mm Plg 20Ckt"
-			(at 93.218 259.588 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Vendor" "Digikey"
-			(at -374.27 275.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Vendor P/N" "900-0536250274CT-ND"
-			(at -574.27 275.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Vendor URL" "https://www.digikey.com/en/products/detail/molex/0536250274/10482852?s=N4IgTCBcDaIKwGYBsY4FoAMYDsAWEAugL5A"
-			(at -674.27 275.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Molex"
-			(at 115.57 241.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer P/N" "  0536250274"
-			(at -474.27 275.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Height" "6.2"
-			(at -274.27 275.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "10"
-			(uuid "bacde3fa-3ffd-4848-9e71-4671daffdf76")
-		)
-		(pin "3"
-			(uuid "8cdf6fa1-f5cb-4bf3-a109-1f04e1949c39")
-		)
-		(pin "9"
-			(uuid "9cbf4c1d-e9d5-44ea-8ca2-b4757276b4e6")
-		)
-		(pin "17"
-			(uuid "3d2d12f7-96e5-4970-a57f-01041a3a6557")
-		)
-		(pin "16"
-			(uuid "0662d2dd-a640-4af2-9690-009279464aec")
-		)
-		(pin "7"
-			(uuid "453ee160-c969-4598-af5e-fc900096d0f7")
-		)
-		(pin "12"
-			(uuid "94da90ff-fa70-44a8-b845-93d922088652")
-		)
-		(pin "5"
-			(uuid "122b3c35-bde6-4762-a197-1f17e05b747a")
-		)
-		(pin "19"
-			(uuid "1250bc89-b221-4cb2-afd8-7439de8301b8")
-		)
-		(pin "13"
-			(uuid "ee995c6a-fff3-4cd3-8753-81fa8f676234")
-		)
-		(pin "2"
-			(uuid "77356a0c-34e0-42ab-9391-978642a66c72")
-		)
-		(pin "18"
-			(uuid "bd65221b-ad0f-491b-9bf3-caa56a7466ee")
-		)
-		(pin "8"
-			(uuid "8417ad44-6bbb-48a4-943f-60539cf984ae")
-		)
-		(pin "20"
-			(uuid "f6f2927b-20e8-41ed-a6c5-c49a708ed177")
-		)
-		(pin "15"
-			(uuid "c0ac40bb-2b22-422a-971c-08a6648f28f0")
-		)
-		(pin "4"
-			(uuid "37c56c29-8333-40be-8fa4-3fd6f1f30be3")
-		)
-		(pin "MP1"
-			(uuid "58c115cd-75a9-4590-80f6-d79fe0206c9c")
-		)
-		(pin "MP2"
-			(uuid "a395194c-e6f1-47ee-90b4-0fffbec09c51")
-		)
-		(pin "11"
-			(uuid "20fc657d-679d-41eb-8afa-a5997a8c363f")
-		)
-		(pin "14"
-			(uuid "daf612af-604b-4082-a2f3-503a89d9de65")
-		)
-		(pin "6"
-			(uuid "bcecd7a9-624f-4b6b-9fe7-54819757ca50")
-		)
-		(pin "1"
-			(uuid "9c6fe275-60ed-4ab0-90af-02cc07fcf208")
-		)
-		(instances
-			(project ""
-				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "J6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "RoboJackets-Connectors:53625-0274")
-		(at 168.91 241.3 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "feabb5b6-2b73-4ded-862e-99147f925dd0")
-		(property "Reference" "J7"
-			(at 171.9265 241.3 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "53625-0274"
-			(at 171.9265 243.84 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "RoboJackets-Connectors:536250274"
-			(at 79.07 275.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.molex.com/pdm_docs/sd/536250274_sd.pdf"
-			(at -20.93 275.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Board to Board & Mezzanine Connectors SlimStack .635mm Plg 20Ckt"
-			(at 146.558 259.588 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Vendor" "Digikey"
-			(at -320.93 275.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Vendor P/N" "900-0536250274CT-ND"
-			(at -520.93 275.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Vendor URL" "https://www.digikey.com/en/products/detail/molex/0536250274/10482852?s=N4IgTCBcDaIKwGYBsY4FoAMYDsAWEAugL5A"
-			(at -620.93 275.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Molex"
-			(at 168.91 241.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer P/N" "  0536250274"
-			(at -420.93 275.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Height" "6.2"
-			(at -220.93 275.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "10"
-			(uuid "322beddb-09a8-45fe-962e-2fb2d6809e61")
-		)
-		(pin "3"
-			(uuid "8f185961-f140-434a-9a59-8bd86850450d")
-		)
-		(pin "9"
-			(uuid "4bae7bee-a076-4117-b0b5-4ad2109b3e40")
-		)
-		(pin "17"
-			(uuid "bd391820-e4c6-441b-a8a1-c29d25c281cd")
-		)
-		(pin "16"
-			(uuid "1f164401-458d-4db8-81b5-2ad94dbd9c40")
-		)
-		(pin "7"
-			(uuid "bfac77c4-f969-4c11-b25b-a0fa62cedc79")
-		)
-		(pin "12"
-			(uuid "d0fe6e11-d320-41fe-b4be-f6dfe0e55ee0")
-		)
-		(pin "5"
-			(uuid "87d8a85e-38be-40ff-98bd-8d130729387a")
-		)
-		(pin "19"
-			(uuid "a92db187-cbaf-4c47-add6-981c9174251d")
-		)
-		(pin "13"
-			(uuid "85b0822e-bf90-4393-a053-ceacabde2b2e")
-		)
-		(pin "2"
-			(uuid "243fdc78-db55-4b83-95f3-b185060bdf70")
-		)
-		(pin "18"
-			(uuid "e695dde6-7567-4ab4-bef9-13812ec06b26")
-		)
-		(pin "8"
-			(uuid "f991c67d-f016-4a73-9e4b-afe3ff3e5262")
-		)
-		(pin "20"
-			(uuid "143e6715-7531-4ba6-8d69-129ee30877b1")
-		)
-		(pin "15"
-			(uuid "6261e64e-951c-4c66-9a77-846532975f0a")
-		)
-		(pin "4"
-			(uuid "a1a251d7-a2c6-415d-a6ef-913563c1eadc")
-		)
-		(pin "MP1"
-			(uuid "13a84879-6aaa-4b4b-938e-8e280be98d9e")
-		)
-		(pin "MP2"
-			(uuid "dd3c354b-8174-4cb2-8e45-2c26a39b2f53")
-		)
-		(pin "11"
-			(uuid "bdebe40f-0396-4603-a4e2-4e43f8664f85")
-		)
-		(pin "14"
-			(uuid "5fe1ce10-4237-49cd-9b9d-b3b010f744dc")
-		)
-		(pin "6"
-			(uuid "7d6cd591-018b-490b-8906-cc92f7c6eda1")
-		)
-		(pin "1"
-			(uuid "47069603-519a-4add-9c30-0ecb6e5b9052")
-		)
-		(instances
-			(project "control-v4.0"
-				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "J7")
+					(reference "R1")
 					(unit 1)
 				)
 			)
