@@ -6500,25 +6500,6 @@
 		)
 		(uuid "fe32ee31-125a-4a97-a132-eae651e3c6b3")
 	)
-	(text_box "Sallen-Key Two-Stage Low Pass Filter. Sums motor phase currents and translates to voltage.\nKeep current under 3 A to prevent thermal issues in continous operation\nNominal (max) continuous current is 4.29 A\nIf R_{s} << Z_{1} then V_{in} = R_{s}*i_{3Phase}\nA_{V} = 1+R_{A}/R_{B}  A_{Z} =  R_{s}[1+R_{A}/R_{B}]\nSuppose we want OC_COMP to trigger at 3 A and V_{OC_TH} = 500 mV\nIf R_{s} = 10 mOhm, R_{A} =  R_{B} then... \nV_{in} = 50 mV and A_{V} = 2 -> V_{O} = 100 mV"
-		(exclude_from_sim no)
-		(at 181.61 144.78 0)
-		(size 96.52 17.78)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "17e26b9c-9624-4ef3-a013-d7e3f384286c")
-	)
 	(text_box "LEDs: Should go on top and still be visible."
 		(exclude_from_sim no)
 		(at 214.63 99.06 0)
