@@ -1,0 +1,17 @@
+Version 4
+SymbolType BLOCK
+RECTANGLE Normal 112 80 -112 -48
+SYMATTR Prefix X
+SYMATTR Value motor_diff_amp
+PIN -112 16 LEFT 8
+PINATTR PinName Vin+
+PINATTR SpiceOrder 1
+PIN -112 -16 LEFT 8
+PINATTR PinName VDD
+PINATTR SpiceOrder 2
+PIN 112 -16 RIGHT 8
+PINATTR PinName Vout
+PINATTR SpiceOrder 3
+PIN -112 48 LEFT 8
+PINATTR PinName Vin-
+PINATTR SpiceOrder 4

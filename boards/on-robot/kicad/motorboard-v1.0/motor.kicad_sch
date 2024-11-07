@@ -5554,6 +5554,12 @@
 		(uuid "7f2042ed-eeaf-438e-b99e-bece2b0a2913")
 	)
 	(junction
+		(at 228.6 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7f8390c2-78bd-40b3-83b5-f269a655a898")
+	)
+	(junction
 		(at 97.79 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5870,6 +5876,16 @@
 			(type default)
 		)
 		(uuid "0d4a002b-6a8e-48d8-9ce0-766de3742b1e")
+	)
+	(wire
+		(pts
+			(xy 226.06 118.11) (xy 228.6 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10903784-0868-4a70-b5c0-974cd53c4782")
 	)
 	(wire
 		(pts
@@ -7883,6 +7899,16 @@
 	)
 	(wire
 		(pts
+			(xy 228.6 118.11) (xy 228.6 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7c3a11f-1b31-4a06-87a1-444441b06591")
+	)
+	(wire
+		(pts
 			(xy 228.6 124.46) (xy 231.14 124.46)
 		)
 		(stroke
@@ -7933,6 +7959,16 @@
 	)
 	(wire
 		(pts
+			(xy 228.6 124.46) (xy 228.6 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc358f35-2189-46ee-aeb9-4d6d14a00015")
+	)
+	(wire
+		(pts
 			(xy 147.32 26.67) (xy 152.4 26.67)
 		)
 		(stroke
@@ -7980,16 +8016,6 @@
 			(type default)
 		)
 		(uuid "e163ea3a-b2c9-4c4b-b0a5-5b547336f42f")
-	)
-	(wire
-		(pts
-			(xy 228.6 124.46) (xy 228.6 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e206ad31-2455-49c3-8ff5-eed25485cf25")
 	)
 	(wire
 		(pts
@@ -8531,7 +8557,7 @@
 		(uuid "1a0847e7-984c-40e0-8056-19f5cc5d5ec2")
 	)
 	(label "SENSE_O1"
-		(at 228.6 130.81 180)
+		(at 226.06 118.11 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
