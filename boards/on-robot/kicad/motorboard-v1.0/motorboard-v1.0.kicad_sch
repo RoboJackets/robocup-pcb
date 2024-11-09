@@ -9462,7 +9462,7 @@
 		)
 		(uuid "0973516c-b0c9-4ead-8650-577c5edcf380")
 	)
-	(label "M2_ENCB_A"
+	(label "M2_ENCB_S"
 		(at 33.02 90.17 180)
 		(fields_autoplaced yes)
 		(effects
@@ -9473,7 +9473,7 @@
 		)
 		(uuid "0b856ca4-f9e5-4c07-8601-ed8fc1f31063")
 	)
-	(label "M4_ENCB_A"
+	(label "M4_ENCB_S"
 		(at 298.45 102.87 0)
 		(fields_autoplaced yes)
 		(effects
@@ -9748,7 +9748,7 @@
 		)
 		(uuid "2ff764c9-f2c5-4862-bb13-d2893e825eb9")
 	)
-	(label "M3_ENCB_A"
+	(label "M3_ENCB_S"
 		(at 299.72 85.09 0)
 		(fields_autoplaced yes)
 		(effects
@@ -9759,7 +9759,7 @@
 		)
 		(uuid "33c93d67-c650-405a-9887-21e5bf66781b")
 	)
-	(label "M2_ENCB_A"
+	(label "M2_ENCB_S"
 		(at 147.32 101.6 0)
 		(fields_autoplaced yes)
 		(effects
@@ -9968,7 +9968,7 @@
 		)
 		(uuid "58c7028a-8c1c-421c-864b-3f8e273cf566")
 	)
-	(label "M3_ENCA_A"
+	(label "M3_ENCA_S"
 		(at 299.72 80.01 0)
 		(fields_autoplaced yes)
 		(effects
@@ -9979,7 +9979,7 @@
 		)
 		(uuid "5903a7d8-4e56-44c4-883b-b26e702a78cd")
 	)
-	(label "M1_ENCB_A"
+	(label "M1_ENCB_S"
 		(at 148.59 83.82 0)
 		(fields_autoplaced yes)
 		(effects
@@ -10012,7 +10012,7 @@
 		)
 		(uuid "5b3e74f3-52a1-4e08-9b59-1623c5974b33")
 	)
-	(label "M2_ENCA_A"
+	(label "M2_ENCA_S"
 		(at 147.32 96.52 0)
 		(fields_autoplaced yes)
 		(effects
@@ -10100,7 +10100,7 @@
 		)
 		(uuid "6519abf7-4b9c-4d1b-a8db-80063b621440")
 	)
-	(label "M1_ENCA_A"
+	(label "M1_ENCA_S"
 		(at 148.59 78.74 0)
 		(fields_autoplaced yes)
 		(effects
@@ -10364,7 +10364,7 @@
 		)
 		(uuid "8dbca5d8-aab8-469a-be43-c0bc49f54503")
 	)
-	(label "M4_ENCA_A"
+	(label "M4_ENCA_S"
 		(at 184.15 88.9 180)
 		(fields_autoplaced yes)
 		(effects
@@ -10386,7 +10386,7 @@
 		)
 		(uuid "9212e750-e201-4269-9639-3f801986acc9")
 	)
-	(label "M3_ENCB_A"
+	(label "M3_ENCB_S"
 		(at 184.15 43.18 180)
 		(fields_autoplaced yes)
 		(effects
@@ -10562,7 +10562,7 @@
 		)
 		(uuid "a69d1ac3-1bd6-433f-8f9d-c69d103c80cf")
 	)
-	(label "M2_ENCA_A"
+	(label "M2_ENCA_S"
 		(at 33.02 87.63 180)
 		(fields_autoplaced yes)
 		(effects
@@ -10661,7 +10661,7 @@
 		)
 		(uuid "b5481e72-d2bb-4650-8784-5c7d43893ee3")
 	)
-	(label "M1_ENCA_A"
+	(label "M1_ENCA_S"
 		(at 33.02 39.37 180)
 		(fields_autoplaced yes)
 		(effects
@@ -10716,7 +10716,7 @@
 		)
 		(uuid "c2e51d54-0335-4f19-b633-5621b3417cce")
 	)
-	(label "M4_ENCB_A"
+	(label "M4_ENCB_S"
 		(at 184.15 91.44 180)
 		(fields_autoplaced yes)
 		(effects
@@ -10859,7 +10859,7 @@
 		)
 		(uuid "d95dc850-00b5-49b8-8e9e-bbce9faec38d")
 	)
-	(label "M1_ENCB_A"
+	(label "M1_ENCB_S"
 		(at 33.02 41.91 180)
 		(fields_autoplaced yes)
 		(effects
@@ -11046,7 +11046,7 @@
 		)
 		(uuid "ef962a1e-4956-478e-aa1a-8e60d2b8ab82")
 	)
-	(label "M3_ENCA_A"
+	(label "M3_ENCA_S"
 		(at 184.15 40.64 180)
 		(fields_autoplaced yes)
 		(effects
@@ -11189,7 +11189,7 @@
 		)
 		(uuid "fca2df55-bec7-455f-a8af-510d7f7edd62")
 	)
-	(label "M4_ENCA_A"
+	(label "M4_ENCA_S"
 		(at 298.45 97.79 0)
 		(fields_autoplaced yes)
 		(effects
@@ -17837,7 +17837,7 @@
 			)
 			(uuid "91d56981-961f-45c6-b9a2-e02602eaf7dd")
 		)
-		(pin "ENCA_A" input
+		(pin "ENCA_S" input
 			(at 35.56 39.37 180)
 			(effects
 				(font
@@ -17845,9 +17845,9 @@
 				)
 				(justify left)
 			)
-			(uuid "f1e34a78-1475-411c-9020-6709a2ddda61")
+			(uuid "ab532e4f-6351-489c-abc2-7e9b914122c8")
 		)
-		(pin "ENCB_A" input
+		(pin "ENCB_S" input
 			(at 35.56 41.91 180)
 			(effects
 				(font
@@ -17855,7 +17855,7 @@
 				)
 				(justify left)
 			)
-			(uuid "f46f21ea-87c5-44bc-801b-7d89f1736f52")
+			(uuid "d0f3f450-58aa-4507-ad29-91d90b75d57e")
 		)
 		(instances
 			(project "motorboard-v1.0"
@@ -17995,7 +17995,7 @@
 			)
 			(uuid "3e8be776-c8d8-481b-93a0-7dcabae96766")
 		)
-		(pin "ENCA_A" input
+		(pin "ENCA_S" input
 			(at 186.69 40.64 180)
 			(effects
 				(font
@@ -18003,9 +18003,9 @@
 				)
 				(justify left)
 			)
-			(uuid "7c389817-e075-4be3-97cc-c625eaba2d86")
+			(uuid "55b1ebbe-505e-4e6b-87f2-37cdb5bd0ed6")
 		)
-		(pin "ENCB_A" input
+		(pin "ENCB_S" input
 			(at 186.69 43.18 180)
 			(effects
 				(font
@@ -18013,7 +18013,7 @@
 				)
 				(justify left)
 			)
-			(uuid "c5837519-c2d7-4a95-8c82-4f0a98fb89b3")
+			(uuid "2fe024a8-d7ff-415d-af7b-9494313016af")
 		)
 		(instances
 			(project "motorboard-v1.0"
@@ -18251,7 +18251,7 @@
 			)
 			(uuid "3c2ee7ba-d743-4502-9d29-8de3574cc4a7")
 		)
-		(pin "ENCA_A" input
+		(pin "ENCA_S" input
 			(at 186.69 88.9 180)
 			(effects
 				(font
@@ -18259,9 +18259,9 @@
 				)
 				(justify left)
 			)
-			(uuid "58159906-bfd6-4aac-94c9-7a4ba08ab5ec")
+			(uuid "5d0a6bc3-2aa4-4729-9911-cfedf688ffb2")
 		)
-		(pin "ENCB_A" input
+		(pin "ENCB_S" input
 			(at 186.69 91.44 180)
 			(effects
 				(font
@@ -18269,7 +18269,7 @@
 				)
 				(justify left)
 			)
-			(uuid "565c0464-ea0a-4786-bc0b-bdd5c244f262")
+			(uuid "4b7675c0-c5a8-4f1d-99c2-5b79d4cf77f5")
 		)
 		(instances
 			(project "motorboard-v1.0"
@@ -18409,7 +18409,7 @@
 			)
 			(uuid "7d101322-de1f-4364-888f-21f056e8f7c2")
 		)
-		(pin "ENCA_A" input
+		(pin "ENCA_S" input
 			(at 35.56 87.63 180)
 			(effects
 				(font
@@ -18417,9 +18417,9 @@
 				)
 				(justify left)
 			)
-			(uuid "fefe5a06-c8bb-4182-972e-ba398760fe00")
+			(uuid "c63dc300-497a-43d9-8ac5-0d6f8b4f4c27")
 		)
-		(pin "ENCB_A" input
+		(pin "ENCB_S" input
 			(at 35.56 90.17 180)
 			(effects
 				(font
@@ -18427,7 +18427,7 @@
 				)
 				(justify left)
 			)
-			(uuid "f002bcc6-b38d-4a6c-a661-e52ca3e7ea2c")
+			(uuid "742cf2b0-b8e0-4725-b86d-09ea18698ea9")
 		)
 		(instances
 			(project "motorboard-v1.0"
