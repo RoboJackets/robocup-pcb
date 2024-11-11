@@ -6007,18 +6007,6 @@
 		(uuid "cf673e36-0898-4fee-9581-d45d298de333")
 	)
 	(junction
-		(at 73.66 78.74)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d28c33ce-e695-437c-9706-e8639b47de84")
-	)
-	(junction
-		(at 73.66 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d5ba91eb-fce2-4717-a9fa-bef6fb95d2fc")
-	)
-	(junction
 		(at 246.38 254)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6059,6 +6047,10 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f5925163-b7ee-494e-a740-449a859336d6")
+	)
+	(no_connect
+		(at 361.95 49.53)
+		(uuid "c6f194e8-f160-4f44-9b42-fa92211cf7c1")
 	)
 	(wire
 		(pts
@@ -6822,16 +6814,6 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 78.74) (xy 73.66 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5fb2df26-d0ea-43d6-bb40-c69d107544cf")
-	)
-	(wire
-		(pts
 			(xy 361.95 111.76) (xy 368.3 111.76)
 		)
 		(stroke
@@ -6859,16 +6841,6 @@
 			(type default)
 		)
 		(uuid "60c86a7b-a6e6-4315-aab0-7bb40cb1efd0")
-	)
-	(wire
-		(pts
-			(xy 73.66 76.2) (xy 90.17 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "624bb502-5e9c-47f3-8ecc-23f3dbe83f72")
 	)
 	(wire
 		(pts
@@ -6949,16 +6921,6 @@
 			(type default)
 		)
 		(uuid "6af7957d-b9ac-4027-98cf-a0018728fa4e")
-	)
-	(wire
-		(pts
-			(xy 73.66 76.2) (xy 69.85 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6b96ce23-ee59-4986-b313-ff64eefd0545")
 	)
 	(wire
 		(pts
@@ -7842,16 +7804,6 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 63.5) (xy 73.66 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e8ab88a1-5837-4909-9757-af84a24524f3")
-	)
-	(wire
-		(pts
 			(xy 124.46 93.98) (xy 124.46 88.9)
 		)
 		(stroke
@@ -7919,16 +7871,6 @@
 			(type default)
 		)
 		(uuid "ee997226-37cb-437b-ab7f-c5f46e9f1736")
-	)
-	(wire
-		(pts
-			(xy 69.85 76.2) (xy 69.85 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f102fb0e-469a-4736-a89a-b01341e1f95f")
 	)
 	(wire
 		(pts
@@ -8145,6 +8087,39 @@
 			(type none)
 		)
 		(uuid fac30582-e7dd-43c3-9657-5bf50e23c36c)
+	)
+	(text "CHANGE TEENSY VIN"
+		(exclude_from_sim no)
+		(at 367.284 36.576 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 0 1)
+			)
+		)
+		(uuid "6285dd59-3d8c-431f-ba3e-f412f417dfc1")
+	)
+	(text "change this"
+		(exclude_from_sim no)
+		(at 22.352 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 0 1)
+			)
+		)
+		(uuid "909d714e-b8ff-4a6c-a8ec-9bae3268e1f6")
+	)
+	(text "We have extra pins.\nRemove IO expander"
+		(exclude_from_sim no)
+		(at 293.116 84.074 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 0 1)
+			)
+		)
+		(uuid "d8aa6056-559b-43f1-9106-cd0d8a884c3e")
 	)
 	(label "IMU_SCL"
 		(at 365.76 62.23 0)
