@@ -4249,6 +4249,12 @@
 		(uuid "573ab0f3-25d9-42b5-bad9-7e932859dae7")
 	)
 	(junction
+		(at 102.87 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "58072dab-7ad4-43e8-a8ec-522f421dda53")
+	)
+	(junction
 		(at 104.14 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4461,6 +4467,16 @@
 			(type default)
 		)
 		(uuid "08980bcb-9b02-4a28-98f9-8756f32fd910")
+	)
+	(wire
+		(pts
+			(xy 95.25 113.03) (xy 97.79 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b267010-dc18-40a9-8053-95bf7addab5a")
 	)
 	(wire
 		(pts
@@ -4844,6 +4860,16 @@
 	)
 	(wire
 		(pts
+			(xy 95.25 100.33) (xy 102.87 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "386bb82e-3c37-4b1c-b0b1-aca033a23e08")
+	)
+	(wire
+		(pts
 			(xy 161.29 31.75) (xy 170.18 31.75)
 		)
 		(stroke
@@ -4861,6 +4887,16 @@
 			(type default)
 		)
 		(uuid "3df78502-f1b7-4882-9dc6-3ef36aa3bb22")
+	)
+	(wire
+		(pts
+			(xy 97.79 105.41) (xy 97.79 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f29aac2-e7e0-4a30-b255-598d0d0875d3")
 	)
 	(wire
 		(pts
@@ -4944,6 +4980,16 @@
 	)
 	(wire
 		(pts
+			(xy 102.87 100.33) (xy 102.87 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48ec729b-3904-4d03-9a66-5c1055ca109e")
+	)
+	(wire
+		(pts
 			(xy 147.32 73.66) (xy 147.32 74.93)
 		)
 		(stroke
@@ -4974,6 +5020,16 @@
 	)
 	(wire
 		(pts
+			(xy 95.25 105.41) (xy 97.79 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5059e6ff-7135-44c0-b326-e38d518262d8")
+	)
+	(wire
+		(pts
 			(xy 34.29 165.1) (xy 49.53 165.1)
 		)
 		(stroke
@@ -4991,6 +5047,16 @@
 			(type default)
 		)
 		(uuid "51796306-d763-483e-8e0c-a34b23e5c47a")
+	)
+	(wire
+		(pts
+			(xy 95.25 115.57) (xy 97.79 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5451ae0f-569f-4813-8855-360b90fa5d3e")
 	)
 	(wire
 		(pts
@@ -5171,6 +5237,16 @@
 			(type default)
 		)
 		(uuid "642bb066-7e42-49ed-89c0-6c26a3b870ad")
+	)
+	(wire
+		(pts
+			(xy 95.25 110.49) (xy 102.87 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "648d5053-bccd-4988-b449-1c833824bf2b")
 	)
 	(wire
 		(pts
@@ -5391,6 +5467,16 @@
 			(type default)
 		)
 		(uuid "79d0669e-355f-4e13-b12e-346bd9ac61fb")
+	)
+	(wire
+		(pts
+			(xy 95.25 102.87) (xy 97.79 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7de776b1-8152-4a38-8143-05b719fad03f")
 	)
 	(wire
 		(pts
@@ -5631,6 +5717,16 @@
 			(type default)
 		)
 		(uuid "979edc55-5ad6-4a81-aea6-9eaad913c55a")
+	)
+	(wire
+		(pts
+			(xy 102.87 110.49) (xy 102.87 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98ab6d36-c470-4dcd-8ab4-be8d0362e8db")
 	)
 	(wire
 		(pts
@@ -5881,6 +5977,16 @@
 			(type default)
 		)
 		(uuid "b6c8bfba-9fb8-4ebd-949e-71178c2031a5")
+	)
+	(wire
+		(pts
+			(xy 97.79 115.57) (xy 97.79 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8072086-c6af-41b2-86a1-7da47cac5f06")
 	)
 	(wire
 		(pts
@@ -6472,6 +6578,16 @@
 			)
 		)
 		(uuid "1cdb978e-7fe1-4b74-80e2-39a48738bc75")
+	)
+	(text "Config for unused op amps"
+		(exclude_from_sim no)
+		(at 113.284 123.444 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "46adaa4f-de59-415c-bd6e-4e0dc45312ea")
 	)
 	(text "boot_0 status LED"
 		(exclude_from_sim no)
@@ -7278,6 +7394,71 @@
 			(project "motorboard-v1.0"
 				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/560c80c7-e8e4-4ad8-b2ec-62b8ce55169f"
 					(reference "R84")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 102.87 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1363b489-6935-44d9-8811-9752fd0c7209")
+		(property "Reference" "#PWR0163"
+			(at 102.87 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 102.87 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 102.87 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 102.87 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "729b3ceb-1cae-41c6-8e7c-37cf74603b38")
+		)
+		(instances
+			(project "motorboard-v1.0"
+				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/560c80c7-e8e4-4ad8-b2ec-62b8ce55169f"
+					(reference "#PWR0163")
 					(unit 1)
 				)
 			)
