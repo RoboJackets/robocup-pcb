@@ -7193,8 +7193,8 @@
 		)
 		(uuid "1fffb753-d444-473b-ba61-e7360bae765a")
 	)
-	(label "M2"
-		(at 40.64 165.1 180)
+	(label "PHASE_U"
+		(at 40.64 167.64 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7202,7 +7202,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "223353e6-f886-416f-8967-1718de9abfb1")
+		(uuid "21344dc5-dab7-419f-9823-66d9673bc771")
 	)
 	(label "SWD_IO"
 		(at 35.56 87.63 180)
@@ -7236,6 +7236,28 @@
 			(justify left bottom)
 		)
 		(uuid "25d14b67-83b0-441a-bca9-3b6d7470386d")
+	)
+	(label "PHASE_W"
+		(at 40.64 162.56 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2a371263-a717-4527-a769-459bcdf56dab")
+	)
+	(label "PHASE_V"
+		(at 40.64 165.1 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2cec6d5e-c98e-4ac5-9980-0f52526f288b")
 	)
 	(label "LSV"
 		(at 106.68 72.39 0)
@@ -7501,17 +7523,6 @@
 		)
 		(uuid "8592e87e-24b6-44dd-9876-85a3f7cfe9e9")
 	)
-	(label "M1"
-		(at 40.64 167.64 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "88c8457e-9263-42d8-99ba-6a9ab14a3079")
-	)
 	(label "H2_A"
 		(at 95.25 158.75 180)
 		(fields_autoplaced yes)
@@ -7599,17 +7610,6 @@
 			(justify right bottom)
 		)
 		(uuid "be2a209b-8038-45c2-b051-dac03dc80ef6")
-	)
-	(label "M3"
-		(at 40.64 162.56 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "d1966aae-edbc-4655-a17b-a57f6082ac6a")
 	)
 	(label "H1_A"
 		(at 95.25 156.21 180)
@@ -10915,7 +10915,7 @@
 				)
 			)
 		)
-		(property "Footprint" "3220-10-0300-00:CNC_3220-10-0300-00"
+		(property "Footprint" "RoboJackets-Connectors:CNC_3220-10-0300-00"
 			(at 53.34 189.23 0)
 			(effects
 				(font
