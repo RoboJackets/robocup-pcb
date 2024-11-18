@@ -6024,12 +6024,6 @@
 		)
 	)
 	(junction
-		(at 201.93 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "09c69314-80e5-481e-adae-8d90b4eda9ec")
-	)
-	(junction
 		(at 168.91 163.83)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6124,12 +6118,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5ddb0c7e-cf0f-485d-9dc3-cd6bf1555415")
-	)
-	(junction
-		(at 201.93 26.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "66b2f70a-fb03-40a3-8884-e1685004fbed")
 	)
 	(junction
 		(at 147.32 45.72)
@@ -6573,7 +6561,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 25.4) (xy 201.93 26.67)
+			(xy 201.93 25.4) (xy 201.93 27.94)
 		)
 		(stroke
 			(width 0)
@@ -6730,26 +6718,6 @@
 			(type default)
 		)
 		(uuid "20c04658-bde1-45f8-97b9-a436613cfc56")
-	)
-	(wire
-		(pts
-			(xy 201.93 27.94) (xy 201.93 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "215e166d-2a2c-4221-adfd-78b427d29723")
-	)
-	(wire
-		(pts
-			(xy 214.63 26.67) (xy 214.63 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "21d0d1e6-1548-4fdf-a0f0-375cc4402dd0")
 	)
 	(wire
 		(pts
@@ -7041,16 +7009,6 @@
 			(type default)
 		)
 		(uuid "42e7deb9-8731-4024-b667-0dec61672cbe")
-	)
-	(wire
-		(pts
-			(xy 201.93 36.83) (xy 201.93 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "42fd4647-a351-49d0-9c1f-5fb9b4382208")
 	)
 	(wire
 		(pts
@@ -7474,16 +7432,6 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 36.83) (xy 214.63 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "75731f09-4f1e-4f71-ba9e-ff4df9960993")
-	)
-	(wire
-		(pts
 			(xy 204.47 123.19) (xy 186.69 123.19)
 		)
 		(stroke
@@ -7714,16 +7662,6 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 26.67) (xy 214.63 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "87ce4292-792e-4afd-9253-18e07d4dc3b6")
-	)
-	(wire
-		(pts
 			(xy 175.26 87.63) (xy 175.26 120.65)
 		)
 		(stroke
@@ -7774,7 +7712,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 35.56) (xy 201.93 36.83)
+			(xy 201.93 35.56) (xy 201.93 38.1)
 		)
 		(stroke
 			(width 0)
@@ -7791,16 +7729,6 @@
 			(type default)
 		)
 		(uuid "8c9afe63-ad99-49a6-a3b0-2deb2715ef15")
-	)
-	(wire
-		(pts
-			(xy 201.93 36.83) (xy 214.63 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8cb474a5-c1d9-47f6-94c5-28725d4a8c48")
 	)
 	(wire
 		(pts
@@ -8979,6 +8907,27 @@
 		)
 		(uuid "a2f0f123-e0b9-4b70-bb93-ad09fb575eef")
 	)
+	(text_box "How much decap is enough...?"
+		(exclude_from_sim no)
+		(at 196.85 12.7 0)
+		(size 24.13 6.35)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "b42ddc81-0ff3-4cd9-baac-e5f797831411")
+	)
 	(text_box "No specific capacitors have been chose yet, but likely the 220 uF caps will be quite large (meaning electrolytic caps). Either ensure there is enough space vertically above or place on underside."
 		(exclude_from_sim no)
 		(at 213.36 41.91 0)
@@ -9011,7 +8960,7 @@
 		)
 		(uuid "240a6420-5e51-4836-abeb-25427516865c")
 	)
-	(text "Two large decoupling"
+	(text " large decoupling"
 		(exclude_from_sim no)
 		(at 204.47 25.4 0)
 		(effects
@@ -9128,7 +9077,7 @@
 	)
 	(text "4 VDC general decoupling"
 		(exclude_from_sim no)
-		(at 149.86 25.4 0)
+		(at 162.56 25.4 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9290,7 +9239,7 @@
 		)
 		(uuid "37cacb78-9b75-47c9-a0f3-4f80f4c18f60")
 	)
-	(label "SENSE_O2"
+	(label "SENSE_O1"
 		(at 35.56 46.99 180)
 		(fields_autoplaced yes)
 		(effects
@@ -9444,7 +9393,7 @@
 		)
 		(uuid "712080c0-8979-488e-b55a-4e02355af816")
 	)
-	(label "SENSE_O2"
+	(label "SENSE_O1"
 		(at 35.56 69.85 180)
 		(fields_autoplaced yes)
 		(effects
@@ -10704,16 +10653,16 @@
 					(reference "#PWR0203")
 					(unit 1)
 				)
-				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/ede1f750-cc04-4040-9d07-fb723a67e5f8"
-					(reference "#PWR0303")
-					(unit 1)
-				)
 				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/182a15cb-62d5-4ac6-9c7a-79ec349daafc"
 					(reference "#PWR0403")
 					(unit 1)
 				)
 				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/d374dfc5-0847-4eab-9670-eadbeaf0b405"
 					(reference "#PWR0503")
+					(unit 1)
+				)
+				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/ede1f750-cc04-4040-9d07-fb723a67e5f8"
+					(reference "#PWR0303")
 					(unit 1)
 				)
 			)
@@ -10991,16 +10940,16 @@
 					(reference "#PWR0201")
 					(unit 1)
 				)
-				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/ede1f750-cc04-4040-9d07-fb723a67e5f8"
-					(reference "#PWR0301")
-					(unit 1)
-				)
 				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/182a15cb-62d5-4ac6-9c7a-79ec349daafc"
 					(reference "#PWR0401")
 					(unit 1)
 				)
 				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/d374dfc5-0847-4eab-9670-eadbeaf0b405"
 					(reference "#PWR0501")
+					(unit 1)
+				)
+				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/ede1f750-cc04-4040-9d07-fb723a67e5f8"
+					(reference "#PWR0301")
 					(unit 1)
 				)
 			)
@@ -11694,16 +11643,16 @@
 					(reference "#PWR0202")
 					(unit 1)
 				)
-				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/ede1f750-cc04-4040-9d07-fb723a67e5f8"
-					(reference "#PWR0302")
-					(unit 1)
-				)
 				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/182a15cb-62d5-4ac6-9c7a-79ec349daafc"
 					(reference "#PWR0402")
 					(unit 1)
 				)
 				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/d374dfc5-0847-4eab-9670-eadbeaf0b405"
 					(reference "#PWR0502")
+					(unit 1)
+				)
+				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/ede1f750-cc04-4040-9d07-fb723a67e5f8"
+					(reference "#PWR0302")
 					(unit 1)
 				)
 			)
@@ -13182,16 +13131,16 @@
 					(reference "U201")
 					(unit 1)
 				)
-				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/ede1f750-cc04-4040-9d07-fb723a67e5f8"
-					(reference "U301")
-					(unit 1)
-				)
 				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/182a15cb-62d5-4ac6-9c7a-79ec349daafc"
 					(reference "U401")
 					(unit 1)
 				)
 				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/d374dfc5-0847-4eab-9670-eadbeaf0b405"
 					(reference "U501")
+					(unit 1)
+				)
+				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/ede1f750-cc04-4040-9d07-fb723a67e5f8"
+					(reference "U301")
 					(unit 1)
 				)
 			)
@@ -13428,87 +13377,6 @@
 				)
 				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/ede1f750-cc04-4040-9d07-fb723a67e5f8"
 					(reference "#PWR074")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized_US")
-		(at 214.63 31.75 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "84522b50-3acf-4129-bdae-177bd14c9979")
-		(property "Reference" "C23"
-			(at 217.17 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "220uF"
-			(at 217.17 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_10x10.5"
-			(at 214.63 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 214.63 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor, US symbol"
-			(at 214.63 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "950a0941-1488-4c46-880e-b29d710f1006")
-		)
-		(pin "2"
-			(uuid "f212b560-eadf-4ae9-9d2a-2a2c6ab39c59")
-		)
-		(instances
-			(project "motorboard-v1.0"
-				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/028bb400-f97a-4477-afbf-d0e5fc577b5b"
-					(reference "C23")
-					(unit 1)
-				)
-				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/182a15cb-62d5-4ac6-9c7a-79ec349daafc"
-					(reference "C69")
-					(unit 1)
-				)
-				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/d374dfc5-0847-4eab-9670-eadbeaf0b405"
-					(reference "C92")
-					(unit 1)
-				)
-				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/ede1f750-cc04-4040-9d07-fb723a67e5f8"
-					(reference "C46")
 					(unit 1)
 				)
 			)
@@ -14210,16 +14078,16 @@
 					(reference "C201")
 					(unit 1)
 				)
-				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/ede1f750-cc04-4040-9d07-fb723a67e5f8"
-					(reference "C301")
-					(unit 1)
-				)
 				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/182a15cb-62d5-4ac6-9c7a-79ec349daafc"
 					(reference "C401")
 					(unit 1)
 				)
 				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/d374dfc5-0847-4eab-9670-eadbeaf0b405"
 					(reference "C501")
+					(unit 1)
+				)
+				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/ede1f750-cc04-4040-9d07-fb723a67e5f8"
+					(reference "C301")
 					(unit 1)
 				)
 			)

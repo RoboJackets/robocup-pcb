@@ -4616,12 +4616,6 @@
 		(uuid "2de30918-6682-4f45-91ce-a47e0b8f69da")
 	)
 	(junction
-		(at 201.93 24.13)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "313b2167-dc5f-4b18-b552-898c026f59e6")
-	)
-	(junction
 		(at 233.68 127)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4656,12 +4650,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "49882bb9-03ca-4bec-9354-30938a0a7d8e")
-	)
-	(junction
-		(at 201.93 34.29)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4bf0cbb0-02f9-499b-b388-5c6b55b59ad1")
 	)
 	(junction
 		(at 180.34 24.13)
@@ -5115,16 +5103,6 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 34.29) (xy 214.63 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1efe7768-e5d0-40f7-a6f9-85f63355a1b8")
-	)
-	(wire
-		(pts
 			(xy 228.6 87.63) (xy 232.41 87.63)
 		)
 		(stroke
@@ -5305,16 +5283,6 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 33.02) (xy 201.93 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "349f3f44-4ac2-4d43-ac18-34eebb00d39d")
-	)
-	(wire
-		(pts
 			(xy 106.68 72.39) (xy 95.25 72.39)
 		)
 		(stroke
@@ -5335,7 +5303,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 22.86) (xy 201.93 24.13)
+			(xy 201.93 22.86) (xy 201.93 25.4)
 		)
 		(stroke
 			(width 0)
@@ -5755,7 +5723,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 34.29) (xy 201.93 35.56)
+			(xy 201.93 33.02) (xy 201.93 35.56)
 		)
 		(stroke
 			(width 0)
@@ -6175,16 +6143,6 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 24.13) (xy 214.63 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "96ec29ad-94a9-4eb4-aed1-3deee9b434a5")
-	)
-	(wire
-		(pts
 			(xy 175.26 54.61) (xy 175.26 85.09)
 		)
 		(stroke
@@ -6435,16 +6393,6 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 25.4) (xy 201.93 24.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b0e89bda-a93d-4192-8432-0fe0a0b755a0")
-	)
-	(wire
-		(pts
 			(xy 101.6 77.47) (xy 104.14 77.47)
 		)
 		(stroke
@@ -6655,16 +6603,6 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 24.13) (xy 214.63 24.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d3e84573-d59d-46c2-9dd0-8e832d3307dd")
-	)
-	(wire
-		(pts
 			(xy 267.97 30.48) (xy 267.97 31.75)
 		)
 		(stroke
@@ -6732,16 +6670,6 @@
 			(type default)
 		)
 		(uuid "dd0f1872-3745-41fd-9d71-14821d904de8")
-	)
-	(wire
-		(pts
-			(xy 201.93 34.29) (xy 214.63 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "df5d1366-c84d-4813-b444-4775d2706560")
 	)
 	(wire
 		(pts
@@ -7096,7 +7024,7 @@
 		)
 		(uuid "b91107ea-c959-44df-b9b1-a359d259a081")
 	)
-	(text "Two large decoupling"
+	(text "large decoupling"
 		(exclude_from_sim no)
 		(at 204.47 22.86 0)
 		(effects
@@ -9447,7 +9375,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_10x10.5"
 			(at 201.93 29.21 0)
 			(effects
 				(font
@@ -10612,75 +10540,6 @@
 			(project "motorboard-v1.0"
 				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/560c80c7-e8e4-4ad8-b2ec-62b8ce55169f"
 					(reference "C115")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized_US")
-		(at 214.63 29.21 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a06ba221-218b-405c-a39f-f558206551cf")
-		(property "Reference" "C112"
-			(at 217.17 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "220uF"
-			(at 217.17 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
-			(at 214.63 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 214.63 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor, US symbol"
-			(at 214.63 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d1824c0e-8bb0-4ec0-b0f0-d44986ab032d")
-		)
-		(pin "2"
-			(uuid "f6cefa15-d8a9-4203-b78f-d3557923f569")
-		)
-		(instances
-			(project "motorboard-v1.0"
-				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/560c80c7-e8e4-4ad8-b2ec-62b8ce55169f"
-					(reference "C112")
 					(unit 1)
 				)
 			)
