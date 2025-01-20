@@ -6481,6 +6481,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 182.88) (xy 67.31 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08d832ce-a506-42f0-858c-e3f4455375bd")
+	)
+	(wire
+		(pts
 			(xy 101.6 62.23) (xy 104.14 62.23)
 		)
 		(stroke
@@ -6908,6 +6918,16 @@
 			(type default)
 		)
 		(uuid "3a8ce1d4-94ba-4f65-8bee-742c87488c5c")
+	)
+	(wire
+		(pts
+			(xy 66.04 185.42) (xy 67.31 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b3d6a09-d8ad-4a3d-9829-c2347f19f89e")
 	)
 	(wire
 		(pts
@@ -7992,6 +8012,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 180.34) (xy 67.31 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0002411-bc88-4679-8faa-9192fb83755f")
+	)
+	(wire
+		(pts
 			(xy 270.51 153.67) (xy 273.05 153.67)
 		)
 		(stroke
@@ -8623,6 +8653,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 187.96) (xy 67.31 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea6df53f-8334-46c2-afb1-3c069d9489e3")
+	)
+	(wire
+		(pts
 			(xy 248.92 59.69) (xy 248.92 63.5)
 		)
 		(stroke
@@ -8827,7 +8867,7 @@
 		(stroke
 			(width 0)
 			(type default)
-			(color 255 0 17 1)
+			(color 0 72 0 1)
 		)
 		(fill
 			(type none)
@@ -8971,13 +9011,13 @@
 		)
 		(uuid "2d3f00f2-2350-49a6-a904-122184c50401")
 	)
-	(text "[IMPORTANT] Double check this resistor...\nIt should be a different package"
+	(text "[DONE] Double check this resistor...\nIt should be a different package"
 		(exclude_from_sim no)
 		(at 180.34 149.86 0)
 		(effects
 			(font
 				(size 1.27 1.27)
-				(color 255 0 20 1)
+				(color 0 132 0 1)
 			)
 			(justify left)
 		)
@@ -9405,7 +9445,7 @@
 		(uuid "775d992b-bd6e-491a-8fd7-35e01f57cd45")
 	)
 	(label "ENCA_P"
-		(at 67.31 180.34 180)
+		(at 66.04 180.34 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9515,7 +9555,7 @@
 		(uuid "acab29db-a5f5-48d6-a463-c69b70065b26")
 	)
 	(label "ENCB_P"
-		(at 67.31 185.42 180)
+		(at 66.04 185.42 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9581,7 +9621,7 @@
 		(uuid "b5566fc1-25f8-4d87-bfc7-aa9f3d993ac8")
 	)
 	(label "ENCB_N"
-		(at 67.31 187.96 180)
+		(at 66.04 187.96 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9603,7 +9643,7 @@
 		(uuid "b70d7a51-2227-40c6-9634-398f3cae392b")
 	)
 	(label "ENCA_N"
-		(at 67.31 182.88 180)
+		(at 66.04 182.88 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
