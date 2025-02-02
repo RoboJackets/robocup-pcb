@@ -67,15 +67,15 @@
 	)
 	(attr through_hole)
 	(fp_circle
-		(center -6.8326 0)
-		(end -6.4516 0)
+		(center -5.1 0)
+		(end -4.719 0)
 		(stroke
 			(width 0.508)
 			(type solid)
 		)
 		(fill none)
-		(layer "B.SilkS")
-		(uuid "2780d993-84fc-440b-94b1-bf9902322004")
+		(layer "F.SilkS")
+		(uuid "fb1a3e94-b26a-4200-b45c-3f21a06157e8")
 	)
 	(fp_line
 		(start -5.0546 -5.6896)
@@ -84,7 +84,7 @@
 			(width 0.1524)
 			(type solid)
 		)
-		(layer "F.SilkS")
+		(layer "Dwgs.User")
 		(uuid "b641eb71-c29e-49c1-967b-3b6a6a4588f0")
 	)
 	(fp_line
@@ -94,7 +94,7 @@
 			(width 0.1524)
 			(type solid)
 		)
-		(layer "F.SilkS")
+		(layer "Dwgs.User")
 		(uuid "bf13df22-cd09-4561-9f76-b62d31b3417d")
 	)
 	(fp_line
@@ -104,7 +104,7 @@
 			(width 0.1524)
 			(type solid)
 		)
-		(layer "F.SilkS")
+		(layer "Dwgs.User")
 		(uuid "ca636ce8-e0f9-4d7a-a4ad-bc97978190ee")
 	)
 	(fp_line
@@ -114,19 +114,8 @@
 			(width 0.1524)
 			(type solid)
 		)
-		(layer "F.SilkS")
+		(layer "Dwgs.User")
 		(uuid "1e2c4d90-e777-4751-86ea-387ad2444e82")
-	)
-	(fp_circle
-		(center -6.8326 0)
-		(end -6.4516 0)
-		(stroke
-			(width 0.508)
-			(type solid)
-		)
-		(fill none)
-		(layer "F.SilkS")
-		(uuid "fb1a3e94-b26a-4200-b45c-3f21a06157e8")
 	)
 	(fp_line
 		(start -5.1816 -5.8166)

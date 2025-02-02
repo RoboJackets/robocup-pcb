@@ -253,6 +253,12 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "aa11fb94-ae2c-4134-b002-5241ce620f48")
 	)
+	(pad "4" smd rect
+		(at -1 1.25)
+		(size 0.6 1.95)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "902a3359-b418-41ba-8b9a-9fc2b4a8222d")
+	)
 	(pad "5" smd rect
 		(at -1.55 1.25 90)
 		(size 0.25 0.5)
@@ -264,6 +270,12 @@
 		(size 0.25 0.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "f6761a74-4964-452d-85e2-edfa85001dde")
+	)
+	(pad "7" smd rect
+		(at 1 1.25)
+		(size 0.6 1.95)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "48932522-a4e6-460b-a55b-4ec85004ef4b")
 	)
 	(pad "7" smd rect
 		(at 1.55 2.1 90)
@@ -336,18 +348,6 @@
 		(size 0.25 0.7)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "e1628f7e-f817-4a43-b0b8-6d27c0b8428a")
-	)
-	(pad "A4" smd rect
-		(at -1 1.25)
-		(size 0.6 1.95)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(uuid "902a3359-b418-41ba-8b9a-9fc2b4a8222d")
-	)
-	(pad "A7" smd rect
-		(at 1 1.25)
-		(size 0.6 1.95)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(uuid "48932522-a4e6-460b-a55b-4ec85004ef4b")
 	)
 	(model "MPM3620GQV-P.stp"
 		(offset
