@@ -5879,16 +5879,6 @@
 	)
 	(wire
 		(pts
-			(xy 365.76 102.87) (xy 365.76 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5a19cb06-e6f6-42a1-ae09-ad0dd5f0b8fa")
-	)
-	(wire
-		(pts
 			(xy 242.57 266.7) (xy 246.38 266.7)
 		)
 		(stroke
@@ -5916,6 +5906,16 @@
 			(type default)
 		)
 		(uuid "5c5e1082-7531-49fb-bcdf-1819574f4bbb")
+	)
+	(wire
+		(pts
+			(xy 361.95 64.77) (xy 370.84 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fd2255f-2dd6-4565-93ba-7264210af38f")
 	)
 	(wire
 		(pts
@@ -6169,6 +6169,16 @@
 	)
 	(wire
 		(pts
+			(xy 293.37 59.69) (xy 293.37 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b8a0509-2764-48fa-bbe6-397e9dbd6eba")
+	)
+	(wire
+		(pts
 			(xy 186.69 254) (xy 191.77 254)
 		)
 		(stroke
@@ -6389,6 +6399,16 @@
 	)
 	(wire
 		(pts
+			(xy 293.37 59.69) (xy 306.07 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8ebc30f-3f1e-49ce-9af1-4c843931664c")
+	)
+	(wire
+		(pts
 			(xy 64.77 22.86) (xy 68.58 22.86)
 		)
 		(stroke
@@ -6456,16 +6476,6 @@
 			(type default)
 		)
 		(uuid "ae7aebd3-88b8-43cd-9d92-61f7d35624e4")
-	)
-	(wire
-		(pts
-			(xy 361.95 102.87) (xy 365.76 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b0e16917-8571-4e31-92df-2478e4295a8b")
 	)
 	(wire
 		(pts
@@ -6799,6 +6809,16 @@
 	)
 	(wire
 		(pts
+			(xy 361.95 62.23) (xy 370.84 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f36c503c-8e8a-492a-8d65-fdccd09b154b")
+	)
+	(wire
+		(pts
 			(xy 44.45 256.54) (xy 39.37 256.54)
 		)
 		(stroke
@@ -6996,8 +7016,8 @@
 		)
 		(uuid "d8aa6056-559b-43f1-9106-cd0d8a884c3e")
 	)
-	(label "HEX_0"
-		(at 306.07 87.63 180)
+	(label "~{M1_RST}"
+		(at 293.37 59.69 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7005,18 +7025,18 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "030d3170-93f1-49d3-b765-e711147d1ceb")
+		(uuid "00d54777-4711-42c3-82a1-bd36de436d16")
 	)
-	(label "SHARE_SDA"
-		(at 361.95 67.31 0)
+	(label "M1_UART_TX"
+		(at 306.07 46.99 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "05094fcf-f1ce-4a83-beb3-8821fbb91831")
+		(uuid "06c37391-5129-48a2-aece-7d175679c5e1")
 	)
 	(label "RADIO_CE"
 		(at 73.66 76.2 180)
@@ -7029,6 +7049,17 @@
 		)
 		(uuid "0dc632fa-bd21-41b8-9197-6598730a708b")
 	)
+	(label "MISO_KICK"
+		(at 361.95 87.63 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "13b41515-33ca-4513-9667-2558720bdd86")
+	)
 	(label "M1_UART_TX"
 		(at 97.79 256.54 180)
 		(fields_autoplaced yes)
@@ -7039,28 +7070,6 @@
 			(justify right bottom)
 		)
 		(uuid "156b8b82-91f1-43d3-b2d6-70b822449e06")
-	)
-	(label "M2_PROG"
-		(at 361.95 85.09 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1a1d1077-bdc7-4daf-b590-805899523aff")
-	)
-	(label "M3_UART_RX"
-		(at 306.07 92.71 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "1cd9f334-8497-4363-982d-89d81d034282")
 	)
 	(label "M1_UART_RX"
 		(at 97.79 254 180)
@@ -7073,19 +7082,19 @@
 		)
 		(uuid "1cf7c4f6-265c-46cf-87bc-56a167033fea")
 	)
-	(label "DRIB_PROG"
-		(at 306.07 62.23 180)
+	(label "HEX_0"
+		(at 361.95 97.79 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "1df0e35c-b285-4697-bf80-a7ff2fdf88e9")
+		(uuid "20dd6341-8c32-422c-b61e-f19d445baa77")
 	)
-	(label "HEX_1"
-		(at 306.07 90.17 180)
+	(label "M4_UART_RX"
+		(at 306.07 95.25 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7093,7 +7102,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "2139c7cd-9908-4b2a-ae68-10103ff5f603")
+		(uuid "222a6287-3ae6-4b69-95ad-1559a47b6ffe")
 	)
 	(label "M2_UART_RX"
 		(at 97.79 269.24 180)
@@ -7106,17 +7115,6 @@
 		)
 		(uuid "24c17a17-40fb-4931-acd3-19dc5cd25b6f")
 	)
-	(label "M3_UART_TX"
-		(at 306.07 95.25 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "25ee75eb-6db6-4f29-8aac-8e5198334279")
-	)
 	(label "MOSI_KICK"
 		(at 212.09 264.16 180)
 		(fields_autoplaced yes)
@@ -7128,17 +7126,6 @@
 		)
 		(uuid "260bd5ed-1616-4f3a-8c77-c949479bb624")
 	)
-	(label "SCK_KICK"
-		(at 361.95 52.07 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "26bba1e5-8943-4a9d-857b-868b992bbf08")
-	)
 	(label "INT_IMU"
 		(at 99.06 30.48 0)
 		(fields_autoplaced yes)
@@ -7149,17 +7136,6 @@
 			(justify left bottom)
 		)
 		(uuid "26cca7cc-1b2d-4a86-83a0-e800d97abec2")
-	)
-	(label "M4_UART_RX"
-		(at 361.95 100.33 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2b0914fd-715d-4d22-9424-5a14c9546328")
 	)
 	(label "RADIO_INT"
 		(at 73.66 78.74 180)
@@ -7183,19 +7159,8 @@
 		)
 		(uuid "2d45a1cb-e091-4c39-9ed7-fdd203b9a414")
 	)
-	(label "~{DRIB_RST}"
-		(at 365.76 113.03 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "351e2883-7e48-4074-819e-09869f1795ea")
-	)
-	(label "RADIO_~{CSN}"
-		(at 306.07 72.39 180)
+	(label "MOSI_KICK"
+		(at 306.07 87.63 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7203,7 +7168,18 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "36c22633-4ea6-4b77-88eb-6bf348e2ebe3")
+		(uuid "33ad9530-60c6-42d5-b731-c6fe14f0eed3")
+	)
+	(label "M3_PROG"
+		(at 306.07 100.33 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "378ba24d-a315-4b81-9d30-7668163e2ce4")
 	)
 	(label "SHARE_SCL"
 		(at 137.16 67.31 180)
@@ -7227,8 +7203,8 @@
 		)
 		(uuid "3b5f5425-88a9-4b83-8d9d-163385f3665d")
 	)
-	(label "RADIO_SCK"
-		(at 361.95 77.47 0)
+	(label "~{KILL}"
+		(at 361.95 95.25 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7236,7 +7212,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "3e017642-6ec1-494b-b0e9-1203a268cff2")
+		(uuid "3d3fd23a-190e-40f9-ba0c-9189baef3ba0")
 	)
 	(label "M1_PROG"
 		(at 97.79 251.46 180)
@@ -7249,8 +7225,19 @@
 		)
 		(uuid "3e97cf24-2143-4fb3-845c-be8f339dfbb1")
 	)
-	(label "M2_UART_TX"
-		(at 306.07 82.55 180)
+	(label "SHARE_SCL"
+		(at 370.84 62.23 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "47bb292c-e042-4d15-bc3b-769a267d8c3f")
+	)
+	(label "RADIO_MISO"
+		(at 306.07 77.47 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7258,7 +7245,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "47505cc7-f361-4c4e-a039-2843fcea3168")
+		(uuid "486ec8de-4311-41b1-af96-f4b9e8c41ed4")
 	)
 	(label "~{CS}_KICK"
 		(at 212.09 269.24 180)
@@ -7293,17 +7280,6 @@
 		)
 		(uuid "49a44696-6758-4fef-a9d2-9946401030d8")
 	)
-	(label "DRIB_UART_RX"
-		(at 306.07 64.77 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "4a3a05fc-ee84-4a15-a090-31c76d679451")
-	)
 	(label "IMU_SDA"
 		(at 31.75 27.94 0)
 		(fields_autoplaced yes)
@@ -7314,6 +7290,28 @@
 			(justify left bottom)
 		)
 		(uuid "4be3eeed-740f-4733-97d4-1234186f7bf3")
+	)
+	(label "RADIO_CE"
+		(at 361.95 82.55 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4c17a7a8-954b-493e-a875-250aae122a39")
+	)
+	(label "M1_UART_RX"
+		(at 306.07 49.53 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4ce8e995-2f65-474d-8dd9-106b00dfbe4d")
 	)
 	(label "M2_PROG"
 		(at 97.79 266.7 180)
@@ -7337,6 +7335,28 @@
 		)
 		(uuid "4e5bc664-0439-4200-b164-d4035b257add")
 	)
+	(label "IMU_SDA"
+		(at 361.95 64.77 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4fd19956-c3b5-4e12-948b-4e87acd96b5b")
+	)
+	(label "~{M4_RST}"
+		(at 293.37 52.07 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "529c2243-edae-453c-be1e-9939b0be3610")
+	)
 	(label "M4_UART_TX"
 		(at 156.21 271.78 180)
 		(fields_autoplaced yes)
@@ -7348,39 +7368,6 @@
 		)
 		(uuid "530219f2-b702-4489-8a95-6b7f064b7a7c")
 	)
-	(label "M2_UART_RX"
-		(at 306.07 85.09 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "558bdded-0efa-4a89-847c-1155f69983d1")
-	)
-	(label "~{KILL}"
-		(at 361.95 92.71 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "57514a51-4212-4e9d-89d1-578c570d5bb5")
-	)
-	(label "3V3_EN"
-		(at 306.07 102.87 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "599aab7b-c75a-4341-aa40-e820fc45c68b")
-	)
 	(label "DRIB_UART_RX"
 		(at 39.37 266.7 180)
 		(fields_autoplaced yes)
@@ -7391,6 +7378,28 @@
 			(justify right bottom)
 		)
 		(uuid "59a9d3a9-ef93-47ad-8aae-c33530ea4c83")
+	)
+	(label "M3_UART_RX"
+		(at 306.07 82.55 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5ac0f3c0-48da-4247-90ec-6ca911ae5375")
+	)
+	(label "M4_UART_TX"
+		(at 306.07 92.71 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5bb2d840-ee38-46a3-a222-37fd98182e56")
 	)
 	(label "M4_PROG"
 		(at 156.21 266.7 180)
@@ -7414,8 +7423,8 @@
 		)
 		(uuid "62249e9e-28c9-47bb-a66d-345431fe62ab")
 	)
-	(label "~{M3_RST}"
-		(at 365.76 107.95 0)
+	(label "HEX_1"
+		(at 361.95 100.33 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7423,18 +7432,18 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "68b8383e-7617-4a80-afa4-0d2bf5a8a6ee")
+		(uuid "665a797a-f8a9-42bd-8fd0-acf8ff77fda6")
 	)
-	(label "~{RST}_KICK"
-		(at 306.07 54.61 180)
+	(label "DRIB_UART_RX"
+		(at 361.95 59.69 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "6d4ffc67-53c9-4da8-b219-5f285a469484")
+		(uuid "6aa9f005-35ea-4095-9798-0f04fd6cd072")
 	)
 	(label "HEX_3"
 		(at 39.37 58.42 0)
@@ -7456,7 +7465,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "7300e7c8-a582-4228-b7b6-ea7454100203")
+		(uuid "70ba307b-c3bd-4751-a9f0-607bfa9fb34b")
 	)
 	(label "M3_PROG"
 		(at 156.21 251.46 180)
@@ -7469,6 +7478,17 @@
 		)
 		(uuid "748c0789-418f-41f7-b416-26a0c63aafc6")
 	)
+	(label "RADIO_MOSI"
+		(at 306.07 74.93 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "75b9cc1e-9f02-4e38-82c1-d765cc8816fa")
+	)
 	(label "~{M2_RST}"
 		(at 97.79 264.16 180)
 		(fields_autoplaced yes)
@@ -7479,6 +7499,17 @@
 			(justify right bottom)
 		)
 		(uuid "776d7d47-0807-4557-876c-1cb975007447")
+	)
+	(label "RADIO_INT"
+		(at 306.07 69.85 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "795f7b29-6f30-452e-bd51-c1b74d300f60")
 	)
 	(label "IMU_SCL"
 		(at 19.05 27.94 0)
@@ -7491,19 +7522,8 @@
 		)
 		(uuid "7b5bca88-eb86-4ab6-b14b-f9b683080e7c")
 	)
-	(label "SHARE_SCL"
-		(at 361.95 69.85 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7b717499-2f08-4651-8aae-bfc53c10f7c1")
-	)
-	(label "RADIO_MOSI"
-		(at 306.07 74.93 180)
+	(label "RADIO_~{CSN}"
+		(at 306.07 72.39 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7511,7 +7531,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "7c16ccf4-c522-43c8-b4e3-8777b512cb5c")
+		(uuid "7db7df61-5d87-48fb-8a97-502d5e0a216f")
 	)
 	(label "HEX_0"
 		(at 39.37 50.8 0)
@@ -7546,17 +7566,6 @@
 		)
 		(uuid "817b8911-7446-4bb3-9a4d-59b7153cd3a9")
 	)
-	(label "SNS"
-		(at 361.95 82.55 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "885d8dd5-74db-4e81-9c88-14e1e574448e")
-	)
 	(label "M4_UART_RX"
 		(at 156.21 269.24 180)
 		(fields_autoplaced yes)
@@ -7568,8 +7577,8 @@
 		)
 		(uuid "89d390c7-49fd-4f53-b40e-47dab23cfeb2")
 	)
-	(label "~{CS}_KICK"
-		(at 306.07 59.69 180)
+	(label "HEX_3"
+		(at 306.07 102.87 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7577,7 +7586,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "8add6bb3-8031-4a7e-b357-1c00cd00ecb3")
+		(uuid "8a4517be-b39d-4e42-b9c8-5aebc4fa7c1c")
 	)
 	(label "~{INT}"
 		(at 212.09 248.92 180)
@@ -7589,28 +7598,6 @@
 			(justify right bottom)
 		)
 		(uuid "8b64d9f1-cf89-4ef9-9947-82aecfd30e88")
-	)
-	(label "M1_UART_TX"
-		(at 306.07 49.53 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8e8f6419-dd84-49c6-ab16-bcb9e6d88dbd")
-	)
-	(label "~{M1_RST}"
-		(at 365.76 102.87 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8ed6fb42-8a52-4f93-9ba0-734e6d50e023")
 	)
 	(label "RADIO_MISO"
 		(at 71.12 66.04 180)
@@ -7634,8 +7621,8 @@
 		)
 		(uuid "90206209-182b-4934-9e68-0cd9e1805b3b")
 	)
-	(label "RADIO_CE"
-		(at 361.95 74.93 0)
+	(label "SHARE_SDA"
+		(at 370.84 64.77 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7643,10 +7630,21 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "95df6742-4f3f-4a60-abd3-c1a43e535087")
+		(uuid "91ee3ab5-d6a2-4603-8fd0-00f4b077001a")
 	)
-	(label "M1_UART_RX"
-		(at 306.07 46.99 180)
+	(label "RADIO_SCK"
+		(at 361.95 77.47 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9454ab53-6942-43d7-9028-b62fc24b9294")
+	)
+	(label "M4_PROG"
+		(at 306.07 97.79 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7654,21 +7652,32 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "9afd856d-9558-4338-ab67-8e58c8f8e981")
+		(uuid "959d85df-aaa5-4f1b-a14e-d9a629675158")
+	)
+	(label "DRIB_PROG"
+		(at 361.95 54.61 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9a451797-a6bd-4064-9a7b-76a4120f3d22")
+	)
+	(label "M1_PROG"
+		(at 306.07 52.07 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9a7f6408-1736-4091-bf7f-afd0956fce70")
 	)
 	(label "DIAG_EN"
-		(at 306.07 69.85 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "9f410803-68ea-4adc-a4fe-af72a96c40b9")
-	)
-	(label "~{M2_RST}"
-		(at 365.76 105.41 0)
+		(at 361.95 67.31 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7676,7 +7685,40 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "a06b5be5-c58a-4211-825f-02691c9d5cc0")
+		(uuid "9c9262a4-5852-4454-8d81-731d584b3b8e")
+	)
+	(label "3V3_EN"
+		(at 361.95 52.07 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9d577da7-8f35-463e-bef1-78b03f95095a")
+	)
+	(label "~{DRIB_RST}"
+		(at 293.37 49.53 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a0440203-80d4-444e-ab92-c9b7934de754")
+	)
+	(label "M2_PROG"
+		(at 306.07 62.23 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a5ca5ac2-7828-40ed-a98b-850d8771655e")
 	)
 	(label "~{KILL}"
 		(at 212.09 251.46 180)
@@ -7700,28 +7742,6 @@
 		)
 		(uuid "a85f9798-fbb0-476d-8b4e-64f2c18c588b")
 	)
-	(label "IMU_SDA"
-		(at 361.95 64.77 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a8659775-e0ac-4fa1-9197-0b301f436126")
-	)
-	(label "HEX_3"
-		(at 361.95 90.17 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "abeb12ae-3a95-4a98-92c0-d9edd506aa2c")
-	)
 	(label "RADIO_SCK"
 		(at 71.12 68.58 180)
 		(fields_autoplaced yes)
@@ -7733,8 +7753,8 @@
 		)
 		(uuid "ae9cf67b-0e89-4195-af57-03271bcef2d3")
 	)
-	(label "MISO_KICK"
-		(at 306.07 57.15 180)
+	(label "M2_UART_RX"
+		(at 306.07 67.31 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7742,7 +7762,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "b51aa3fb-ff83-4837-89a9-323912c79ba5")
+		(uuid "b27d8bd3-180f-4d1f-9c2d-6d5ba805f777")
 	)
 	(label "M2_UART_TX"
 		(at 97.79 271.78 180)
@@ -7777,8 +7797,8 @@
 		)
 		(uuid "b8c49260-eb38-4ae3-a2c1-c34566b54d86")
 	)
-	(label "M1_PROG"
-		(at 306.07 52.07 180)
+	(label "M2_UART_TX"
+		(at 306.07 64.77 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7786,10 +7806,10 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "b8e1820c-7d73-426f-81ab-bd00b2229357")
+		(uuid "be95a597-82a7-42b8-85e9-8792d75cd813")
 	)
-	(label "HEX_2"
-		(at 361.95 87.63 0)
+	(label "~{INT}"
+		(at 361.95 85.09 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7797,29 +7817,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "b8fad058-8cb0-423f-a800-7a6eed75bdc0")
-	)
-	(label "RADIO_MISO"
-		(at 306.07 77.47 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "bb82f50e-1f16-474a-9834-d560048776d7")
-	)
-	(label "~{INT}"
-		(at 306.07 97.79 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "bfacd437-23d1-4cb2-bcc8-012ca1833a1c")
+		(uuid "bfef0dba-afc4-4e3f-910c-2e5dcbb39dd8")
 	)
 	(label "IMU_SCL"
 		(at 64.77 30.48 180)
@@ -7843,27 +7841,16 @@
 		)
 		(uuid "c4175d60-5a50-42af-905e-25366f491b3b")
 	)
-	(label "M4_UART_TX"
-		(at 361.95 97.79 0)
+	(label "SCK_KICK"
+		(at 306.07 90.17 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "c427fd66-0def-40a8-8aea-593290a96d19")
-	)
-	(label "RADIO_INT"
-		(at 361.95 72.39 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c74050ab-e91b-4de7-acc2-3679b9619d38")
+		(uuid "c6c66523-e94c-467d-9719-34d56d95ab01")
 	)
 	(label "DRIB_UART_TX"
 		(at 39.37 264.16 180)
@@ -7887,16 +7874,16 @@
 		)
 		(uuid "d088c7ce-5619-45d1-97ad-0dbd3f844981")
 	)
-	(label "MOSI_KICK"
-		(at 361.95 54.61 0)
+	(label "M3_UART_TX"
+		(at 306.07 85.09 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "d331407a-9f6e-4332-b524-336bd69a8bb2")
+		(uuid "d5343d08-07e9-480e-93ef-5c1480eba927")
 	)
 	(label "RADIO_MOSI"
 		(at 71.12 63.5 180)
@@ -7908,6 +7895,28 @@
 			(justify right bottom)
 		)
 		(uuid "d6fc9a61-e8ca-4974-b3b7-7ff1eed822fe")
+	)
+	(label "SNS"
+		(at 361.95 69.85 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "db43d70c-9ed2-43d9-8ec5-cd2f2d2345cb")
+	)
+	(label "~{M3_RST}"
+		(at 293.37 54.61 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "dca0ec9c-f057-40f5-9cbe-11ed2dadf4d0")
 	)
 	(label "MISO_KICK"
 		(at 212.09 261.62 180)
@@ -7931,16 +7940,27 @@
 		)
 		(uuid "e063dec5-d6a1-4797-b7cd-afa485c6ae01")
 	)
-	(label "DRIB_UART_TX"
-		(at 306.07 67.31 180)
+	(label "HEX_2"
+		(at 361.95 102.87 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "e55586ce-3aca-4fab-b0a5-b43631d5c35f")
+		(uuid "e359642d-53bc-4c12-a369-aa7c0581366b")
+	)
+	(label "~{CS}_KICK"
+		(at 361.95 90.17 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e6e254e4-918d-4e9f-9fce-bb330c786fe9")
 	)
 	(label "DRIB_PROG"
 		(at 39.37 269.24 180)
@@ -7953,6 +7973,17 @@
 		)
 		(uuid "e95f52a8-b03d-49c9-8521-6952096a8ef7")
 	)
+	(label "~{RST}_KICK"
+		(at 361.95 92.71 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ea32dad2-27b7-4ca2-b4ef-d8f401e688ee")
+	)
 	(label "~{M4_RST}"
 		(at 156.21 264.16 180)
 		(fields_autoplaced yes)
@@ -7964,8 +7995,8 @@
 		)
 		(uuid "ec1e13b1-2336-43e5-a1af-81c1bd1f9cd5")
 	)
-	(label "~{M4_RST}"
-		(at 365.76 110.49 0)
+	(label "DRIB_UART_TX"
+		(at 361.95 57.15 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7973,18 +8004,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "ee226629-df9c-4875-9d92-7492a2c93e5c")
-	)
-	(label "M4_PROG"
-		(at 306.07 100.33 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f0339363-5e39-4b87-abdb-e3753ecefe7c")
+		(uuid "ed7956a3-08b8-44ef-89e8-cc2eb5ab8785")
 	)
 	(label "SNS"
 		(at 39.37 261.62 180)
@@ -7997,16 +8017,16 @@
 		)
 		(uuid "f8e3e55a-0e12-4b78-988e-d76baebb9d4b")
 	)
-	(label "M3_PROG"
-		(at 361.95 95.25 0)
+	(label "~{M2_RST}"
+		(at 293.37 57.15 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "ffa91a93-39b0-4b54-932b-474768ba7f95")
+		(uuid "fed836c7-becb-4eb1-bbe1-c0bac9b4ebf2")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -8135,73 +8155,6 @@
 			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
 					(reference "#PWR015")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 306.07 80.01 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "067afc25-65f9-40e8-8f8a-d40e28ca2a5e")
-		(property "Reference" "#PWR023"
-			(at 309.88 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 302.26 80.0099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 306.07 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 306.07 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 306.07 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "de0c2b44-4f6d-4ce3-84d3-0e9e0b0a6fcf")
-		)
-		(instances
-			(project ""
-				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -8829,72 +8782,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 306.07 44.45 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2dd4d8fe-e43d-4a12-a046-d6283413be83")
-		(property "Reference" "#PWR022"
-			(at 306.07 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 306.07 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 306.07 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 306.07 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 306.07 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "00cb2938-fafa-45ed-bd37-0c2ab165b836")
-		)
-		(instances
-			(project ""
-				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 22.86 95.25 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9114,7 +9001,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "4.7k"
 			(at 34.29 22.8599 0)
 			(effects
 				(font
@@ -9758,6 +9645,73 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 361.95 80.01 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6895cb82-e1c6-4c94-ba53-295bd25408fd")
+		(property "Reference" "#PWR024"
+			(at 368.3 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 365.76 80.0099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 361.95 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 361.95 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 361.95 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c07f9c0e-b02a-4ff1-8357-023e9afba43c")
+		)
+		(instances
+			(project "control-v4.0"
+				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 195.58 266.7 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9883,6 +9837,72 @@
 			(project ""
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 306.07 44.45 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7e221b76-598a-44aa-b0e4-9f8a58ec5f99")
+		(property "Reference" "#PWR022"
+			(at 306.07 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 306.07 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 306.07 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 306.07 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 306.07 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bd94757d-ba4a-41e9-9fc1-80d0288354ba")
+		)
+		(instances
+			(project "control-v4.0"
+				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -10301,73 +10321,6 @@
 			(project ""
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
 					(reference "#PWR09")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 361.95 44.45 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "851c3874-6270-43bd-983f-3c8f989e89f1")
-		(property "Reference" "#PWR024"
-			(at 358.14 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 365.76 44.4499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 361.95 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 361.95 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 361.95 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b1347f6c-a6da-412f-88ba-caf8f677c245")
-		)
-		(instances
-			(project "control-v4.0"
-				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -10996,8 +10949,8 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a1f16482-541e-4966-8f15-2b1ade2ca3be")
-		(property "Reference" "#PWR025"
+		(uuid "9f982cc3-b619-4304-9eeb-0730e680bb42")
+		(property "Reference" "#PWR026"
 			(at 368.3 46.99 0)
 			(effects
 				(font
@@ -11043,77 +10996,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "95c1a897-1e53-43e5-981f-6a285d7e7b5c")
+			(uuid "0b233641-16ba-4d57-aa48-66dfb800869d")
 		)
 		(instances
-			(project ""
-				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "#PWR025")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 361.95 80.01 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a2c5e15a-4d43-445b-ac65-5fb3fd3f7734")
-		(property "Reference" "#PWR026"
-			(at 368.3 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 365.76 80.0099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 361.95 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 361.95 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 361.95 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6e9d30cf-507f-40d2-96d2-432590476ae2")
-		)
-		(instances
-			(project ""
+			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
 					(reference "#PWR026")
 					(unit 1)
@@ -11514,6 +11400,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 306.07 80.01 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dc5237b3-ba92-488d-b175-8da279a1ee84")
+		(property "Reference" "#PWR023"
+			(at 309.88 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 302.26 80.0099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 306.07 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 306.07 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 306.07 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6a8ebe5e-b114-41d8-ac59-32f466be9bc1")
+		)
+		(instances
+			(project "control-v4.0"
+				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 99.06 34.29 0)
 		(unit 1)
@@ -11580,6 +11533,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 361.95 44.45 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f6e92b32-705e-4cfe-9c4d-de464fb2b22d")
+		(property "Reference" "#PWR025"
+			(at 358.14 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 365.76 44.4499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 361.95 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 361.95 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 361.95 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9663df2d-fb1a-44ca-9df2-49115c778c30")
+		)
+		(instances
+			(project "control-v4.0"
+				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 19.05 21.59 0)
 		(unit 1)
@@ -11598,7 +11618,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "4.7k"
 			(at 21.59 22.8599 0)
 			(effects
 				(font
