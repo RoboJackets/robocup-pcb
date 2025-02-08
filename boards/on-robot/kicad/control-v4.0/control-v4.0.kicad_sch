@@ -8165,7 +8165,7 @@
 				)
 			)
 		)
-		(property "Value" "1000"
+		(property "Value" "1K"
 			(at 25.4 80.01 90)
 			(effects
 				(font
@@ -8173,7 +8173,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 25.4 83.82 0)
 			(effects
 				(font
@@ -8342,6 +8342,74 @@
 			(project ""
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
 					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 31.75 21.59 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "183e12bf-07c3-4551-8ae6-96f0f5b04224")
+		(property "Reference" "R2"
+			(at 25.4 21.59 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.7K"
+			(at 27.94 21.59 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 31.75 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 31.75 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 31.75 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "25dc744f-c503-49fc-8026-cae6d903785b")
+		)
+		(pin "1"
+			(uuid "2e8c6dee-af61-488e-9093-fdf372813586")
+		)
+		(instances
+			(project "control-v4.0"
+				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -8903,34 +8971,32 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 31.75 21.59 0)
+		(at 19.05 21.59 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "445ac870-b76f-4955-b1a0-30b910f5b4fe")
-		(property "Reference" "R2"
-			(at 34.29 20.3199 0)
+		(uuid "44c47c5e-f7ab-46e9-922a-1d91acbc58ec")
+		(property "Reference" "R1"
+			(at 12.7 21.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "4.7k"
-			(at 34.29 22.8599 0)
+		(property "Value" "4.7K"
+			(at 15.24 21.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
-			(at 31.75 21.59 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 19.05 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8939,7 +9005,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 31.75 21.59 0)
+			(at 19.05 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8948,7 +9014,7 @@
 			)
 		)
 		(property "Description" "Resistor, small US symbol"
-			(at 31.75 21.59 0)
+			(at 19.05 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8957,15 +9023,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "ac805c55-e708-4976-bc56-0b2daf45a3c6")
+			(uuid "bb6d960d-6bd1-4297-9440-144e575e7f5e")
 		)
 		(pin "1"
-			(uuid "3d6c7e25-d6c0-4258-9191-7fb7e735cb9c")
+			(uuid "aed27922-07c1-444f-9bec-9d825707c5a6")
 		)
 		(instances
-			(project ""
+			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "R2")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -10811,7 +10877,7 @@
 				)
 			)
 		)
-		(property "Value" "1000"
+		(property "Value" "1K"
 			(at 25.4 91.44 90)
 			(effects
 				(font
@@ -10819,7 +10885,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 25.4 95.25 0)
 			(effects
 				(font
@@ -11581,76 +11647,6 @@
 			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
 					(reference "#PWR025")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 19.05 21.59 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f8800919-e815-4a23-84cd-99ab6cf1f7e0")
-		(property "Reference" "R1"
-			(at 21.59 20.3199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4.7k"
-			(at 21.59 22.8599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
-			(at 19.05 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 19.05 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 19.05 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "e1c0a6a9-fda2-4d38-9799-3a0cdc9be9ed")
-		)
-		(pin "1"
-			(uuid "117b034b-9110-42eb-8349-35ac736bfd61")
-		)
-		(instances
-			(project "control-v4.0"
-				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
-					(reference "R1")
 					(unit 1)
 				)
 			)
