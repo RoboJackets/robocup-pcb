@@ -54,21 +54,21 @@
 		)
 		(symbol "HeaderIMU_0_1"
 			(rectangle
-				(start -12.192 -1.778)
-				(end 11.684 -17.018)
+				(start -11.43 -1.778)
+				(end 10.16 -17.018)
 				(stroke
 					(width 0)
 					(type default)
 				)
 				(fill
-					(type none)
+					(type background)
 				)
 			)
 		)
 		(symbol "HeaderIMU_1_1"
 			(pin input line
 				(at -13.97 -3.81 0)
-				(length 1.905)
+				(length 2.54)
 				(name "MOSI"
 					(effects
 						(font
@@ -86,7 +86,7 @@
 			)
 			(pin input line
 				(at -13.97 -7.62 0)
-				(length 1.905)
+				(length 2.54)
 				(name "MISO"
 					(effects
 						(font
@@ -104,7 +104,7 @@
 			)
 			(pin input line
 				(at -13.97 -11.43 0)
-				(length 1.905)
+				(length 2.54)
 				(name "SCK"
 					(effects
 						(font
@@ -122,7 +122,7 @@
 			)
 			(pin power_in line
 				(at -13.97 -15.24 0)
-				(length 1.905)
+				(length 2.54)
 				(name "~{CS}"
 					(effects
 						(font
@@ -139,7 +139,7 @@
 				)
 			)
 			(pin output line
-				(at 13.97 -15.24 180)
+				(at 12.7 -15.24 180)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -157,7 +157,7 @@
 				)
 			)
 			(pin output line
-				(at 13.97 -11.43 180)
+				(at 12.7 -11.43 180)
 				(length 2.54)
 				(name "INT"
 					(effects
@@ -175,7 +175,7 @@
 				)
 			)
 			(pin input line
-				(at 13.97 -7.62 180)
+				(at 12.7 -7.62 180)
 				(length 2.54)
 				(name "NC"
 					(effects
@@ -193,7 +193,7 @@
 				)
 			)
 			(pin power_in line
-				(at 13.97 -3.81 180)
+				(at 12.7 -3.81 180)
 				(length 2.54)
 				(name "3.3V"
 					(effects
