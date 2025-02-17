@@ -9122,17 +9122,6 @@
 		)
 		(uuid "894f1f32-4bd2-4734-a082-03b62c96f087")
 	)
-	(label "DRIB_NRST"
-		(at 36.83 269.24 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8af7d683-be61-4332-88f0-817e4b1ec807")
-	)
 	(label "MOSI_KICK"
 		(at 162.56 110.49 180)
 		(fields_autoplaced yes)
@@ -9396,6 +9385,17 @@
 			(justify right bottom)
 		)
 		(uuid "dd6c1651-5dd7-46f6-8f50-d6c4c070b183")
+	)
+	(label "~{DRIB_RST}"
+		(at 36.83 269.24 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "df0ab44e-a4d6-44c1-b80f-5efcfbea6d40")
 	)
 	(label "MISO_KICK"
 		(at 162.56 107.95 180)
@@ -10771,7 +10771,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "38740e7b-0975-455d-8353-ebfcf03a69b9")
 		(property "Reference" "J10"
@@ -10916,7 +10916,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "39661684-11d9-4107-8064-f38d10a23583")
 		(property "Reference" "J7"
@@ -11363,7 +11363,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "4717a646-6e83-48ff-be2a-fbe70fa25e7f")
 		(property "Reference" "J12"
@@ -15381,7 +15381,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "ac5f8fe1-527d-4931-bf82-6c7a623e32bf")
 		(property "Reference" "J28"
@@ -16257,7 +16257,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "c4f8530f-5bfe-4d6e-85e1-9fac9be1831d")
 		(property "Reference" "J29"
@@ -16931,7 +16931,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "e8af4414-c555-407b-a9f2-fb0a5a58c8a2")
 		(property "Reference" "J9"
@@ -18041,7 +18041,7 @@
 		(at 123.19 252.73 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
