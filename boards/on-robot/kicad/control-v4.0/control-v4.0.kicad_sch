@@ -5386,6 +5386,12 @@
 		(uuid "8847254f-dee3-4300-949d-14989afc64c8")
 	)
 	(junction
+		(at 35.56 168.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "98b7f106-80dc-4ebc-a26f-c93f2c4d96d3")
+	)
+	(junction
 		(at 260.35 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5492,10 +5498,6 @@
 		(uuid "017eb5a3-5455-4085-8645-aa3dc01e22f0")
 	)
 	(no_connect
-		(at 36.83 171.45)
-		(uuid "06249acb-b00c-4475-accf-1cb20d582711")
-	)
-	(no_connect
 		(at 36.83 115.57)
 		(uuid "12e66214-57ac-4a31-8980-b0ba0116119a")
 	)
@@ -5536,16 +5538,16 @@
 		(uuid "4991dde2-cbc5-4784-8851-4ae9063cfd72")
 	)
 	(no_connect
+		(at 233.68 73.66)
+		(uuid "4a6d6ca6-ec2c-4741-a18e-713a6094d74c")
+	)
+	(no_connect
 		(at 177.8 78.74)
 		(uuid "4a8bc066-9b9f-4cd9-8492-99c4bab41984")
 	)
 	(no_connect
 		(at 177.8 113.03)
 		(uuid "4ea6467b-53d9-405a-b189-5302903acccf")
-	)
-	(no_connect
-		(at 36.83 168.91)
-		(uuid "54e30904-1626-44c2-8234-e5be58e65696")
 	)
 	(no_connect
 		(at 177.8 115.57)
@@ -5606,6 +5608,10 @@
 	(no_connect
 		(at 177.8 120.65)
 		(uuid "ac0027fa-dfdc-4e27-a070-bbf55afe51ea")
+	)
+	(no_connect
+		(at 60.96 31.75)
+		(uuid "b6d61a0d-ae55-445d-a4fe-3a7a74949038")
 	)
 	(no_connect
 		(at 233.68 48.26)
@@ -5769,6 +5775,16 @@
 	)
 	(wire
 		(pts
+			(xy 35.56 171.45) (xy 35.56 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13144525-9a44-49f0-91e9-efd220b01ead")
+	)
+	(wire
+		(pts
 			(xy 120.65 130.81) (xy 124.46 130.81)
 		)
 		(stroke
@@ -5849,16 +5865,6 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 73.66) (xy 233.68 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1ca798ac-447d-4ae5-8684-37e267e2742a")
-	)
-	(wire
-		(pts
 			(xy 120.65 166.37) (xy 124.46 166.37)
 		)
 		(stroke
@@ -5926,6 +5932,16 @@
 			(type default)
 		)
 		(uuid "288c5594-69fd-4fe2-96bc-fdeff8b55705")
+	)
+	(wire
+		(pts
+			(xy 233.68 71.12) (xy 234.95 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28af38a3-4deb-42d1-975a-a822c0ec76a9")
 	)
 	(wire
 		(pts
@@ -6599,6 +6615,16 @@
 	)
 	(wire
 		(pts
+			(xy 31.75 168.91) (xy 35.56 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73a7f5aa-d0d5-48b6-94b4-3d91b118e8f8")
+	)
+	(wire
+		(pts
 			(xy 31.75 133.35) (xy 36.83 133.35)
 		)
 		(stroke
@@ -6616,6 +6642,16 @@
 			(type default)
 		)
 		(uuid "78ef1961-affe-4c15-b39b-5a289fbdd012")
+	)
+	(wire
+		(pts
+			(xy 35.56 168.91) (xy 36.83 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79595a08-29d2-47f8-83b7-5f5ed8cdadd2")
 	)
 	(wire
 		(pts
@@ -6646,16 +6682,6 @@
 			(type default)
 		)
 		(uuid "7ddd4d08-6634-4511-93a2-14d33bf8f33b")
-	)
-	(wire
-		(pts
-			(xy 60.96 31.75) (xy 63.5 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7fd1bc07-6e2d-40cd-9a85-eb594a413cec")
 	)
 	(wire
 		(pts
@@ -6969,7 +6995,7 @@
 	)
 	(polyline
 		(pts
-			(xy 245.11 68.58) (xy 245.11 73.66)
+			(xy 41.91 43.18) (xy 41.91 48.26)
 		)
 		(stroke
 			(width 0)
@@ -7036,16 +7062,6 @@
 			(type default)
 		)
 		(uuid "a2613999-89c0-48ca-9d42-5db877f0a2fa")
-	)
-	(wire
-		(pts
-			(xy 234.95 71.12) (xy 233.68 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a2af09ae-0fd3-494f-a9b7-d32a56d423d2")
 	)
 	(wire
 		(pts
@@ -7479,6 +7495,16 @@
 	)
 	(wire
 		(pts
+			(xy 36.83 171.45) (xy 35.56 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "debe77a0-d26b-4b3e-ba23-c0a0caefad5f")
+	)
+	(wire
+		(pts
 			(xy 49.53 148.59) (xy 49.53 151.13)
 		)
 		(stroke
@@ -7506,6 +7532,16 @@
 			(type default)
 		)
 		(uuid "e2e16f22-4628-43e8-85a3-556d65e43eaf")
+	)
+	(wire
+		(pts
+			(xy 30.48 48.26) (xy 31.75 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e31f7265-a9f1-4d72-a66f-f6022caaa591")
 	)
 	(wire
 		(pts
@@ -7826,13 +7862,14 @@
 		)
 		(uuid "268aff38-142f-46b0-9dca-6273e0fca8ee")
 	)
-	(text "Is this the\nright connection?"
+	(text "We don't use IMU Interrupt\nAddr is just pulled low bc \nwe don't need extra i2c addr"
 		(exclude_from_sim no)
-		(at 254 71.374 0)
+		(at 42.926 46.228 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
+			(justify left)
 		)
 		(uuid "44573815-28aa-495d-8bdb-0c442fbbaa19")
 	)
@@ -7892,7 +7929,7 @@
 		(uuid "0dc632fa-bd21-41b8-9197-6598730a708b")
 	)
 	(label "ADDR_IMU"
-		(at 234.95 73.66 0)
+		(at 31.75 48.26 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7979,17 +8016,6 @@
 		)
 		(uuid "260bd5ed-1616-4f3a-8c77-c949479bb624")
 	)
-	(label "INT_IMU"
-		(at 63.5 31.75 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "26cca7cc-1b2d-4a86-83a0-e800d97abec2")
-	)
 	(label "RADIO_INT"
 		(at 33.02 76.2 180)
 		(fields_autoplaced yes)
@@ -8000,6 +8026,17 @@
 			(justify right bottom)
 		)
 		(uuid "2c2bec1b-3b32-44ab-b428-9601552e821f")
+	)
+	(label "VBAT_READ"
+		(at 31.75 168.91 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2c3db411-c95f-4309-b7e2-db9c690a1478")
 	)
 	(label "HEX_1"
 		(at 109.22 52.07 0)
@@ -8209,6 +8246,17 @@
 			(justify right bottom)
 		)
 		(uuid "5ac0f3c0-48da-4247-90ec-6ca911ae5375")
+	)
+	(label "VBAT_READ"
+		(at 234.95 71.12 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5b06c8e4-8f11-478a-8d59-b299f97e145b")
 	)
 	(label "M4_UART_TX"
 		(at 176.53 91.44 180)
@@ -8563,7 +8611,7 @@
 		(uuid "a85f9798-fbb0-476d-8b4e-64f2c18c588b")
 	)
 	(label "INT_IMU"
-		(at 234.95 71.12 0)
+		(at 31.75 45.72 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12366,6 +12414,73 @@
 			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
 					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 30.48 48.26 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bf7c90b1-a283-42c2-8786-08c5f185a25b")
+		(property "Reference" "#PWR03"
+			(at 24.13 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 26.67 48.2599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 30.48 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9c169a67-0d31-4383-9907-ad4aa4f71023")
+		)
+		(instances
+			(project "control-v4.0"
+				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
