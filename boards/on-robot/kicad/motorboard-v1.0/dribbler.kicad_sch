@@ -4442,6 +4442,12 @@
 		(uuid "b1b22d3b-44bc-4897-98cc-4d0f2b9cebcb")
 	)
 	(junction
+		(at 24.13 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b72adc01-40bc-45bf-9421-3f31406a6e5e")
+	)
+	(junction
 		(at 259.08 24.13)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5969,6 +5975,16 @@
 	)
 	(wire
 		(pts
+			(xy 24.13 44.45) (xy 39.37 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "add15f5f-361c-4951-a538-a82d55e2448b")
+	)
+	(wire
+		(pts
 			(xy 74.93 182.88) (xy 78.74 182.88)
 		)
 		(stroke
@@ -6229,16 +6245,6 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 44.45) (xy 39.37 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dd0f1872-3745-41fd-9d71-14821d904de8")
-	)
-	(wire
-		(pts
 			(xy 147.32 24.13) (xy 147.32 31.75)
 		)
 		(stroke
@@ -6446,6 +6452,26 @@
 			(type default)
 		)
 		(uuid "f872b180-262f-42bd-8dca-897f74e35851")
+	)
+	(wire
+		(pts
+			(xy 24.13 45.72) (xy 24.13 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f873292d-0d03-4184-8c70-5727145821a4")
+	)
+	(wire
+		(pts
+			(xy 20.32 44.45) (xy 24.13 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa294627-905f-4681-9cf0-15d04e29f117")
 	)
 	(wire
 		(pts
@@ -7150,18 +7176,6 @@
 		)
 		(uuid "f67c64b2-b71e-4952-b753-414e5025a039")
 	)
-	(hierarchical_label "PROG"
-		(shape input)
-		(at 35.56 44.45 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4c0cc30a-4e13-4615-8e31-f0e3d69e51bf")
-	)
 	(hierarchical_label "~{RST}"
 		(shape input)
 		(at 35.56 59.69 180)
@@ -7185,6 +7199,18 @@
 			(justify right)
 		)
 		(uuid "a66d3a00-a093-4ece-912e-67335bd9dc09")
+	)
+	(hierarchical_label "PROG"
+		(shape input)
+		(at 20.32 44.45 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d4799487-ac22-409d-b062-cfedba681001")
 	)
 	(hierarchical_label "UART_TX"
 		(shape output)
@@ -9495,6 +9521,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 24.13 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7efb289e-cbe3-4581-a65b-7480a034a65a")
+		(property "Reference" "#PWR0164"
+			(at 24.13 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 24.13 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 24.13 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 24.13 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 24.13 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c107dc3e-441c-425b-9d0e-e6c59abcc1d9")
+		)
+		(instances
+			(project "motorboard-v1.0"
+				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/560c80c7-e8e4-4ad8-b2ec-62b8ce55169f"
+					(reference "#PWR0164")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 97.79 21.59 0)
 		(unit 1)
@@ -9688,6 +9779,75 @@
 			(project "motorboard-v1.0"
 				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/560c80c7-e8e4-4ad8-b2ec-62b8ce55169f"
 					(reference "C116")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 24.13 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "91e42c6f-39a3-4284-8181-64445b077202")
+		(property "Reference" "R73"
+			(at 18.796 48.514 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 18.796 51.054 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 25.146 49.784 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 24.13 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 24.13 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bbf75dd8-68a9-49a8-8c81-10f7571748c6")
+		)
+		(pin "2"
+			(uuid "38228d93-ef92-48be-bb27-f528f722d83e")
+		)
+		(instances
+			(project "motorboard-v1.0"
+				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/560c80c7-e8e4-4ad8-b2ec-62b8ce55169f"
+					(reference "R73")
 					(unit 1)
 				)
 			)
