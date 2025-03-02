@@ -82,7 +82,7 @@
 				(at -0.762 7.62 0)
 				(effects
 					(font
-						(size 0.001 0.001)
+						(size 0.0254 0.0254)
 					)
 					(justify bottom)
 					(hide yes)
@@ -5502,10 +5502,6 @@
 		(uuid "12e66214-57ac-4a31-8980-b0ba0116119a")
 	)
 	(no_connect
-		(at 45.72 97.79)
-		(uuid "25097312-b6fd-4dc3-9a3c-c74d66c80cb5")
-	)
-	(no_connect
 		(at 95.25 163.83)
 		(uuid "256cab11-9474-467d-86ca-fa1c30a318d7")
 	)
@@ -6995,7 +6991,7 @@
 	)
 	(polyline
 		(pts
-			(xy 41.91 43.18) (xy 41.91 48.26)
+			(xy 44.704 42.672) (xy 44.704 47.752)
 		)
 		(stroke
 			(width 0)
@@ -7535,7 +7531,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 48.26) (xy 31.75 48.26)
+			(xy 33.02 46.99) (xy 34.29 46.99)
 		)
 		(stroke
 			(width 0)
@@ -7851,6 +7847,17 @@
 		)
 		(uuid c714f540-fb37-4e23-b59e-605fa8ad29d0)
 	)
+	(text "We don't use \nIMU Interrupt"
+		(exclude_from_sim no)
+		(at 61.722 32.004 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1c8840fc-1f01-40fd-9cfc-38d132be413b")
+	)
 	(text "Debug Power"
 		(exclude_from_sim no)
 		(at 84.328 67.31 0)
@@ -7862,9 +7869,9 @@
 		)
 		(uuid "268aff38-142f-46b0-9dca-6273e0fca8ee")
 	)
-	(text "We don't use IMU Interrupt\nAddr is just pulled low bc \nwe don't need extra i2c addr"
+	(text "Addr is just pulled low bc \nwe don't need extra i2c addr"
 		(exclude_from_sim no)
-		(at 42.926 46.228 0)
+		(at 45.72 45.72 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7929,7 +7936,7 @@
 		(uuid "0dc632fa-bd21-41b8-9197-6598730a708b")
 	)
 	(label "ADDR_IMU"
-		(at 31.75 48.26 0)
+		(at 34.29 46.99 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8610,17 +8617,6 @@
 		)
 		(uuid "a85f9798-fbb0-476d-8b4e-64f2c18c588b")
 	)
-	(label "INT_IMU"
-		(at 31.75 45.72 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a90d10bc-7458-4739-8220-83673ae9f143")
-	)
 	(label "RADIO_SCK"
 		(at 33.02 66.04 180)
 		(fields_autoplaced yes)
@@ -9175,7 +9171,7 @@
 			(uuid "8e5385ee-697d-401b-a569-562d33e79a26")
 		)
 		(instances
-			(project ""
+			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
 					(reference "#PWR014")
 					(unit 1)
@@ -9241,7 +9237,7 @@
 			(uuid "25772fd0-a20b-4922-868b-33f2434dbc33")
 		)
 		(instances
-			(project ""
+			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
 					(reference "#PWR016")
 					(unit 1)
@@ -9374,7 +9370,7 @@
 			(uuid "2fb5c20c-12f1-4e61-96bb-93452e8d076d")
 		)
 		(instances
-			(project ""
+			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
 					(reference "#PWR02")
 					(unit 1)
@@ -9463,7 +9459,7 @@
 			(uuid "495b7504-a66f-44f3-a14b-c1d6f917082d")
 		)
 		(instances
-			(project ""
+			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
 					(reference "U1")
 					(unit 1)
@@ -9594,7 +9590,7 @@
 			(uuid "43980c15-78a5-418e-ad5a-2267a33690d6")
 		)
 		(instances
-			(project ""
+			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
 					(reference "#PWR08")
 					(unit 1)
@@ -9660,7 +9656,7 @@
 			(uuid "2c9098e9-b58d-49bd-9e9d-737b040dfa54")
 		)
 		(instances
-			(project ""
+			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
 					(reference "#PWR012")
 					(unit 1)
@@ -10001,7 +9997,7 @@
 			(uuid "53022874-6d5a-4fd2-a117-be8413c99e99")
 		)
 		(instances
-			(project ""
+			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
 					(reference "Brd1")
 					(unit 1)
@@ -10326,7 +10322,7 @@
 			(uuid "5e052fa1-9c75-46df-be4d-db2533ca22a1")
 		)
 		(instances
-			(project ""
+			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
 					(reference "#PWR011")
 					(unit 1)
@@ -10394,7 +10390,7 @@
 			(uuid "32068841-1198-4c7c-84dc-69eabd84ca8c")
 		)
 		(instances
-			(project ""
+			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
 					(reference "D1")
 					(unit 1)
@@ -10585,7 +10581,7 @@
 			(uuid "5cecb2e6-9e33-4b3a-9a0f-a655d1f66ffa")
 		)
 		(instances
-			(project ""
+			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
 					(reference "J1")
 					(unit 1)
@@ -10652,7 +10648,7 @@
 			(uuid "6fe65f50-4649-4b91-a503-bce87b82b5cb")
 		)
 		(instances
-			(project ""
+			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
 					(reference "C1")
 					(unit 1)
@@ -10851,7 +10847,7 @@
 			(uuid "8b166d75-17f1-4567-85d3-79c610eb41db")
 		)
 		(instances
-			(project ""
+			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
 					(reference "#PWR010")
 					(unit 1)
@@ -11068,7 +11064,7 @@
 			(at 99.568 44.45 0)
 			(effects
 				(font
-					(size 0.001 0.001)
+					(size 0.0254 0.0254)
 				)
 				(justify bottom)
 				(hide yes)
@@ -11143,7 +11139,7 @@
 			(uuid "afd86d79-b4e2-4ab2-a5b1-42ac445cdd02")
 		)
 		(instances
-			(project ""
+			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
 					(reference "S1")
 					(unit 1)
@@ -11400,7 +11396,7 @@
 			(uuid "7b0377db-a8e1-4a55-8660-cc308b3c50c7")
 		)
 		(instances
-			(project ""
+			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
 					(reference "#PWR09")
 					(unit 1)
@@ -11597,7 +11593,7 @@
 			(uuid "ebb96bc2-3256-42c2-a4d2-976e1ea6e4b4")
 		)
 		(instances
-			(project ""
+			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
 					(reference "#PWR018")
 					(unit 1)
@@ -11860,7 +11856,7 @@
 			(uuid "93d2a3bc-7acc-4647-a02f-575c12d4def5")
 		)
 		(instances
-			(project ""
+			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
 					(reference "U3")
 					(unit 1)
@@ -11945,7 +11941,7 @@
 			(uuid "dea394bf-2b39-4fb1-ba6c-a4c207cec786")
 		)
 		(instances
-			(project ""
+			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
 					(reference "U2")
 					(unit 1)
@@ -12211,7 +12207,7 @@
 			(uuid "77e519a3-fa2b-4c5f-9fbe-d82b0f2047c2")
 		)
 		(instances
-			(project ""
+			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
 					(reference "#PWR05")
 					(unit 1)
@@ -12421,7 +12417,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 30.48 48.26 270)
+		(at 33.02 46.99 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12430,7 +12426,7 @@
 		(fields_autoplaced yes)
 		(uuid "bf7c90b1-a283-42c2-8786-08c5f185a25b")
 		(property "Reference" "#PWR03"
-			(at 24.13 48.26 0)
+			(at 26.67 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12439,7 +12435,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 26.67 48.2599 90)
+			(at 29.21 46.9899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12448,7 +12444,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 30.48 48.26 0)
+			(at 33.02 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12457,7 +12453,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 30.48 48.26 0)
+			(at 33.02 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12466,7 +12462,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 30.48 48.26 0)
+			(at 33.02 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12865,7 +12861,7 @@
 			(uuid "36c6c8c6-6ab1-4a1d-bcd6-4061ea76472b")
 		)
 		(instances
-			(project ""
+			(project "control-v4.0"
 				(path "/ae565616-1e9e-4753-8357-99638ad3b9f6"
 					(reference "#PWR013")
 					(unit 1)
