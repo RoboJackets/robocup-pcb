@@ -8472,27 +8472,6 @@
 		)
 		(uuid "79544964-761a-4ffd-a34e-30e3e680bc53")
 	)
-	(text_box "39301080: Place on TOP and at the edge of the board.\n5102160-1: Place on TOP and notch facing in toward board center."
-		(exclude_from_sim no)
-		(at 15.24 124.46 0)
-		(size 69.85 6.35)
-		(stroke
-			(width 0)
-			(type default)
-			(color 255 0 11 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 0 13 1)
-			)
-			(justify left top)
-		)
-		(uuid "79bb0472-911f-4326-86d4-dc7784f5bb5f")
-	)
 	(text_box "Intention is to use Segger J-Link for SWD.\nSee chapter 15 of linked document.\nEmbedded MCU (STM32F031C6) has internal pull-up for SWD_IO and pull-down for SWD_CLK (footnote 5 in STM32F031C6 datasheet) which are enabled by default on reset."
 		(exclude_from_sim no)
 		(at 121.92 200.66 0)
@@ -8512,48 +8491,6 @@
 			(href "https://www.segger.com/fileadmin/images/products/J-Link/Technology/ARM_DS-5/UM08001_JLink.pdf")
 		)
 		(uuid "a2f0f123-e0b9-4b70-bb93-ad09fb575eef")
-	)
-	(text_box "How much decap is enough...?"
-		(exclude_from_sim no)
-		(at 196.85 12.7 0)
-		(size 24.13 6.35)
-		(stroke
-			(width 0)
-			(type default)
-			(color 255 0 0 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "b42ddc81-0ff3-4cd9-baac-e5f797831411")
-	)
-	(text_box "No specific capacitors have been chose yet, but likely the 220 uF caps will be quite large (meaning electrolytic caps). Either ensure there is enough space vertically above or place on underside."
-		(exclude_from_sim no)
-		(at 213.36 41.91 0)
-		(size 69.85 7.62)
-		(stroke
-			(width 0)
-			(type default)
-			(color 255 0 11 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 0 13 1)
-			)
-			(justify left top)
-		)
-		(uuid "c8a24c40-4951-4d85-99b3-009ccf75bc86")
 	)
 	(text " large decoupling"
 		(exclude_from_sim no)
