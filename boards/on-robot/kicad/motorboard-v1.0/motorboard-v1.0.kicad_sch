@@ -8409,27 +8409,6 @@
 		)
 		(uuid "1a3198f5-a44f-413f-a505-7a8e6770c39a")
 	)
-	(text_box "SPST: Ensure button is on top-side of board."
-		(exclude_from_sim no)
-		(at 363.22 33.02 0)
-		(size 15.24 10.16)
-		(stroke
-			(width 0)
-			(type default)
-			(color 255 0 15 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 0 4 1)
-			)
-			(justify left top)
-		)
-		(uuid "4c1b45cd-5ba7-4993-80a5-a51d44dd4763")
-	)
 	(text_box "From application note AN1596\nRsense is chosen using the following equation:\nV_{SENSE} = R_{SENSE}I_{OUT}/K < 5 V (clamped)\nK = I_{OUT}/I_{SENSE} ~= 10500 (from chip datasheet)"
 		(exclude_from_sim no)
 		(at 203.2 66.04 0)
@@ -8508,48 +8487,6 @@
 		)
 		(uuid "6dc86c15-222b-4851-a0e8-d9152d48c071")
 	)
-	(text_box "XT60PW-M: Should be placed on TOP at the edge of board, near the battery.\nFuse: Is right angle. Can place on top or bottom depending on space availability."
-		(exclude_from_sim no)
-		(at 308.61 33.02 0)
-		(size 52.07 10.16)
-		(stroke
-			(width 0)
-			(type default)
-			(color 255 0 11 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 0 13 1)
-			)
-			(justify left top)
-		)
-		(uuid "7bb2dc4c-fe9d-4d4f-a03b-f930d1005391")
-	)
-	(text_box "XT30PW-M: Needs to be placed on very edge of board above where the kicker power connector will go.\nHFW8R-1STE1H1LF: Closer to the edge of the board is better. Place DIRECTLY above its location on kicker.\nNote: Both connectors should be placed on the underside of the board."
-		(exclude_from_sim no)
-		(at 148.59 160.02 0)
-		(size 38.1 25.4)
-		(stroke
-			(width 0)
-			(type default)
-			(color 255 0 10 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 22 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "a3cbbac1-141c-47b7-b6a4-cb9c7b15fc33")
-	)
 	(text_box "ICs need protection from electrical overstress.\nSee Chapters 5 & 7 of linked document.\nSolution is integrated into high side switch, which has protection against low energy spikes (see AN1596)\nThis removes the need for a hot swap controller."
 		(exclude_from_sim no)
 		(at 256.54 66.04 0)
@@ -8571,27 +8508,6 @@
 		)
 		(uuid "b1de26dc-9126-4981-9edd-2756fa868ee2")
 	)
-	(text_box "52901-0274: Place on top-side of board. Doesn't need to be on edge of the board. Try to space these equidistant from the center and from each other. If the routing doesn't make sense later, we can redistribute these signals to other unoccupied pins."
-		(exclude_from_sim no)
-		(at 15.24 195.58 0)
-		(size 116.84 7.62)
-		(stroke
-			(width 0)
-			(type default)
-			(color 255 4 0 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 0 2 1)
-			)
-			(justify left top)
-		)
-		(uuid "b77115b9-2a40-45e7-ae9c-f80947c588ad")
-	)
 	(text_box "2.54 mm pitch board headers. Can exclude from BOM."
 		(exclude_from_sim no)
 		(at 73.66 210.82 0)
@@ -8612,27 +8528,6 @@
 			(justify left top)
 		)
 		(uuid "e211abe6-b068-46d5-8816-b13e178537d4")
-	)
-	(text_box "MPM: See datasheet for optimal routing and placement notes."
-		(exclude_from_sim no)
-		(at 309.88 163.83 0)
-		(size 44.45 6.35)
-		(stroke
-			(width 0)
-			(type default)
-			(color 255 0 7 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 0 4 1)
-			)
-			(justify left top)
-		)
-		(uuid "eb21d26b-ef9f-467c-8375-70c30263f3d7")
 	)
 	(text "Mounting\n\n"
 		(exclude_from_sim no)

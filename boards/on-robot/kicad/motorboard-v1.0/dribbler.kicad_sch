@@ -4709,7 +4709,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 185.42) (xy 78.74 185.42)
+			(xy 104.14 189.23) (xy 107.95 189.23)
 		)
 		(stroke
 			(width 0)
@@ -5969,7 +5969,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 182.88) (xy 78.74 182.88)
+			(xy 104.14 186.69) (xy 107.95 186.69)
 		)
 		(stroke
 			(width 0)
@@ -6516,6 +6516,18 @@
 		)
 		(uuid "79da711b-6291-4753-be5b-4b53f0e58331")
 	)
+	(text "Dribbler motor: Maxon EC 16, brushless, 30 Watt"
+		(exclude_from_sim no)
+		(at 49.276 184.404 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 0 1)
+			)
+			(href "https://www.maxongroup.com/medias/sys_master/root/8825423364126/17-EN-212.pdf")
+		)
+		(uuid "0d1befe0-45c4-4c63-b14f-694fc76c1ec1")
+	)
 	(text "Low Side BLDC Current Sensing"
 		(exclude_from_sim no)
 		(at 199.136 111.506 0)
@@ -6525,6 +6537,17 @@
 			)
 		)
 		(uuid "1cdb978e-7fe1-4b74-80e2-39a48738bc75")
+	)
+	(text "TODO: Change this connector"
+		(exclude_from_sim no)
+		(at 39.37 177.546 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 0 1)
+			)
+		)
+		(uuid "2096920e-ba1e-4883-88c4-0c9ea963d4d1")
 	)
 	(text "Config for unused op amps"
 		(exclude_from_sim no)
@@ -6536,9 +6559,20 @@
 		)
 		(uuid "46adaa4f-de59-415c-bd6e-4e0dc45312ea")
 	)
+	(text "Wrong connector for the dribbler motor we have"
+		(exclude_from_sim no)
+		(at 49.022 180.848 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 0 1)
+			)
+		)
+		(uuid "561aa553-3c1d-42dd-8e13-2be6bbb8cf38")
+	)
 	(text "SWD Header"
 		(exclude_from_sim no)
-		(at 84.328 178.054 0)
+		(at 113.538 181.864 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6556,6 +6590,18 @@
 			(justify left bottom)
 		)
 		(uuid "68713f02-3f73-4446-9bae-b90aa69aa3ad")
+	)
+	(text "Want: Molex 0353630860"
+		(exclude_from_sim no)
+		(at 37.846 187.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 0 1)
+			)
+			(href "https://www.digikey.com/en/products/detail/molex/0353630860/755312?s=N4IgTCBcDaIOoFkCMAOAnAZgOwFoByAIiALoC%2BQA")
+		)
+		(uuid "691ef8c6-7a29-42e6-afdc-c13d743b9430")
 	)
 	(text "Two decoupling for each phase line"
 		(exclude_from_sim no)
@@ -6985,7 +7031,7 @@
 		(uuid "8592e87e-24b6-44dd-9876-85a3f7cfe9e9")
 	)
 	(label "SWD_IO"
-		(at 74.93 182.88 180)
+		(at 104.14 186.69 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7062,7 +7108,7 @@
 		(uuid "bbd3aad6-cfdd-4669-ba4d-54d37bbf287c")
 	)
 	(label "SWD_CLK"
-		(at 74.93 185.42 180)
+		(at 104.14 189.23 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8951,7 +8997,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 83.82 182.88 0)
+		(at 113.03 186.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8960,7 +9006,7 @@
 		(fields_autoplaced yes)
 		(uuid "657b987d-9955-4d38-9359-ada8007897d8")
 		(property "Reference" "J29"
-			(at 86.36 182.8799 0)
+			(at 115.57 186.6899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8969,7 +9015,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02"
-			(at 86.36 185.4199 0)
+			(at 115.57 189.2299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8978,7 +9024,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 83.82 182.88 0)
+			(at 113.03 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8987,7 +9033,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 83.82 182.88 0)
+			(at 113.03 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8996,7 +9042,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 83.82 182.88 0)
+			(at 113.03 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
