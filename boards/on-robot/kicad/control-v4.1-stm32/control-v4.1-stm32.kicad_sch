@@ -6482,6 +6482,16 @@
 		)
 		(uuid "715512a4-df03-4bac-9505-052a6d9477ca")
 	)
+	(text "No footprint yet."
+		(exclude_from_sim no)
+		(at 140.97 91.186 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b5520d1b-0a17-4d9e-b103-80cfd5fbe980")
+	)
 	(text "BOOT Settings"
 		(exclude_from_sim no)
 		(at 45.212 16.51 0)
@@ -9343,7 +9353,7 @@
 				)
 			)
 		)
-		(property "Value" "Crystal_GND24"
+		(property "Value" "25 MHz 10 pF"
 			(at 145.034 87.884 90)
 			(effects
 				(font
