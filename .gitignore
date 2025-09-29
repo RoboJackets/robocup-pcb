@@ -12,6 +12,11 @@
 *.s$?
 *.l$?
 
+# KiCad backup files
+*-backups/
+*.bak
+*.bck
+
 # EAGLE project file
 *.epf
 
