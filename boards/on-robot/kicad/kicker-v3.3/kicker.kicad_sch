@@ -1,0 +1,167 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 5631d996-2118-450e-9b33-8c3b7d98c252)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 25.4 25.4) (size 12.7 3.81) (fields_autoplaced)
+    (stroke (width 0) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 02196348-1d1f-4371-a886-9c50d0d26063)
+    (property "Sheetname" "Power" (at 25.4 24.6884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Power.kicad_sch" (at 25.4 29.7946 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "kicker"
+        (path "/5631d996-2118-450e-9b33-8c3b7d98c252" (page "1"))
+      )
+    )
+  )
+
+  (sheet (at 177.8 76.2) (size 12.7 3.81) (fields_autoplaced)
+    (stroke (width 0) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 0501fac1-bbb3-434f-bb19-f61b450739a7)
+    (property "Sheetname" "User Input" (at 177.8 75.4884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "User_Input.kicad_sch" (at 177.8 80.5946 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "kicker"
+        (path "/5631d996-2118-450e-9b33-8c3b7d98c252" (page "9"))
+      )
+    )
+  )
+
+  (sheet (at 127 25.4) (size 12.7 3.81) (fields_autoplaced)
+    (stroke (width 0) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 1ab3cb79-5dcb-46a0-9355-cd2a0cc8234b)
+    (property "Sheetname" "HV - Control & Bypass" (at 127 24.6884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "HV_-_Control_&_Bypass.kicad_sch" (at 127 29.7946 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "kicker"
+        (path "/5631d996-2118-450e-9b33-8c3b7d98c252" (page "3"))
+      )
+    )
+  )
+
+  (sheet (at 76.2 76.2) (size 12.7 3.81) (fields_autoplaced)
+    (stroke (width 0) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 2865ae1b-fe82-400d-971b-78b088b049ea)
+    (property "Sheetname" "LED Indicators" (at 76.2 75.4884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "LED_Indicators.kicad_sch" (at 76.2 80.5946 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "kicker"
+        (path "/5631d996-2118-450e-9b33-8c3b7d98c252" (page "7"))
+      )
+    )
+  )
+
+  (sheet (at 25.4 76.2) (size 12.7 3.81) (fields_autoplaced)
+    (stroke (width 0) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 2a8fb48b-1094-4238-8884-b388f94f0b97)
+    (property "Sheetname" "MCU" (at 25.4 75.4884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "MCU.kicad_sch" (at 25.4 80.5946 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "kicker"
+        (path "/5631d996-2118-450e-9b33-8c3b7d98c252" (page "6"))
+      )
+    )
+  )
+
+  (sheet (at 76.2 25.4) (size 12.7 3.81) (fields_autoplaced)
+    (stroke (width 0) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 5cda965e-6296-459c-bd8f-a6ec1df3eaca)
+    (property "Sheetname" "HV - Regulation" (at 76.2 24.6884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "HV_-_Regulation.kicad_sch" (at 76.2 29.7946 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "kicker"
+        (path "/5631d996-2118-450e-9b33-8c3b7d98c252" (page "2"))
+      )
+    )
+  )
+
+  (sheet (at 177.8 25.4) (size 12.7 3.81) (fields_autoplaced)
+    (stroke (width 0) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 7557c20b-6ca2-4f94-84e0-cc541c127ed1)
+    (property "Sheetname" "HV - Kick Discharge" (at 177.8 24.6884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "HV_-_Kick_Discharge.kicad_sch" (at 177.8 29.7946 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "kicker"
+        (path "/5631d996-2118-450e-9b33-8c3b7d98c252" (page "4"))
+      )
+    )
+  )
+
+  (sheet (at 127 76.2) (size 12.7 3.81) (fields_autoplaced)
+    (stroke (width 0) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid eae4c367-10b3-48e6-9df5-e7004eef6587)
+    (property "Sheetname" "Breakbeam" (at 127 75.4884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Breakbeam.kicad_sch" (at 127 80.5946 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "kicker"
+        (path "/5631d996-2118-450e-9b33-8c3b7d98c252" (page "8"))
+      )
+    )
+  )
+
+  (sheet (at 228.6 25.4) (size 12.7 3.81) (fields_autoplaced)
+    (stroke (width 0) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid ff98ff99-3cc8-4174-913c-307ed9aa0527)
+    (property "Sheetname" "HV - Auto Discharge" (at 228.6 24.6884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "HV_-_Auto_Discharge.kicad_sch" (at 228.6 29.7946 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "kicker"
+        (path "/5631d996-2118-450e-9b33-8c3b7d98c252" (page "5"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)
