@@ -11439,6 +11439,17 @@
 		)
 		(uuid "2ba3f502-5384-4cc5-983c-ae2b2bfb9ba7")
 	)
+	(label "USB_DP"
+		(at 59.69 243.84 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2c0e3ddf-8f8e-4143-ba92-3df5e795adf5")
+	)
 	(label "USB_DM"
 		(at 314.96 109.22 0)
 		(fields_autoplaced yes)
@@ -11571,17 +11582,6 @@
 		)
 		(uuid "38d0ba85-af00-4b32-af9c-1863c021ffc5")
 	)
-	(label "USB_DM"
-		(at 52.07 238.76 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3cee8942-acba-46b3-b03b-7cfc92ab8c2b")
-	)
 	(label "SPI4_MOSI"
 		(at 264.16 139.7 180)
 		(fields_autoplaced yes)
@@ -11680,17 +11680,6 @@
 			(justify left bottom)
 		)
 		(uuid "4979507f-1871-4200-87b8-7d464415dfa4")
-	)
-	(label "USB_DP"
-		(at 52.07 243.84 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4ab1a960-1d11-4f58-b80e-0eb6c1354dad")
 	)
 	(label "RADIO_~{CSN}"
 		(at 264.16 132.08 180)
@@ -12714,6 +12703,17 @@
 			(justify right bottom)
 		)
 		(uuid "dec7dc20-c5ac-4f77-bc44-a015b62d8b28")
+	)
+	(label "USB_DM"
+		(at 59.69 238.76 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "df3cf389-7bbd-47e8-bec1-639be1dac908")
 	)
 	(label "USART6_TX"
 		(at 337.82 182.88 180)
@@ -15864,6 +15864,75 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 55.88 238.76 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4e937f5b-1254-43fa-8af1-744941f142f3")
+		(property "Reference" "R16"
+			(at 51.562 239.014 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5.1k"
+			(at 56.134 239.014 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 55.88 236.982 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 55.88 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3ed4f379-e444-4720-86bf-c42b7323a0b8")
+		)
+		(pin "2"
+			(uuid "bc031797-e573-4af7-a2ad-9ef1d34e7ccd")
+		)
+		(instances
+			(project "control-v4.1-stm32"
+				(path "/87ee05c0-8a28-453e-99fb-d652e1b19f2a"
+					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 50.8 120.65 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15926,6 +15995,75 @@
 			(project "control-v4.1-stm32"
 				(path "/87ee05c0-8a28-453e-99fb-d652e1b19f2a"
 					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 55.88 243.84 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "51e422c7-70f4-4d00-be1a-e8cd655f905e")
+		(property "Reference" "R17"
+			(at 51.562 244.094 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5.1k"
+			(at 56.134 244.094 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 55.88 242.062 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 55.88 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cdd2a93a-8f14-439f-a00e-4e67236bf28c")
+		)
+		(pin "2"
+			(uuid "8585942e-0bf9-4ae1-86ee-d2de20610822")
+		)
+		(instances
+			(project "control-v4.1-stm32"
+				(path "/87ee05c0-8a28-453e-99fb-d652e1b19f2a"
+					(reference "R17")
 					(unit 1)
 				)
 			)
