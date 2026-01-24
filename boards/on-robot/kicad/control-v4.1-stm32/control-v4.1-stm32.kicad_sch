@@ -11627,6 +11627,16 @@
 		)
 		(uuid "d282502b-cc5a-462e-91f1-cc1662974a39")
 	)
+	(text "Check if this pin works\n"
+		(exclude_from_sim no)
+		(at 350.012 154.178 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d79d0d85-db4e-4941-88db-aea76227cb4b")
+	)
 	(text "OLED\n"
 		(exclude_from_sim no)
 		(at 118.872 119.38 0)
@@ -12329,17 +12339,6 @@
 		)
 		(uuid "6e060c7e-b8b0-41be-8f3b-e221395b92d2")
 	)
-	(label "ST1"
-		(at 334.01 66.04 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6e7a2624-670e-46df-a842-eb9e68c412fa")
-	)
 	(label "M2_UART_RX"
 		(at 38.1 99.06 180)
 		(fields_autoplaced yes)
@@ -12505,8 +12504,8 @@
 		)
 		(uuid "83a9e86e-39f9-4c2c-bf13-4e692f296c84")
 	)
-	(label "~{KILL}"
-		(at 334.01 91.44 0)
+	(label "ST1"
+		(at 334.01 154.94 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12514,7 +12513,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "8533d189-8fbd-44eb-974a-a185b98d44a3")
+		(uuid "84cf2666-22b6-4267-b349-ca2a7231e81a")
 	)
 	(label "M3_PROG"
 		(at 93.98 80.01 180)
@@ -12561,13 +12560,13 @@
 		(uuid "8b526074-5446-40e4-ae75-6282c622ad2a")
 	)
 	(label "ST2"
-		(at 210.82 128.27 0)
+		(at 210.82 128.27 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "8b7c2180-2ee1-4f62-a277-794dd2e5f93e")
 	)
@@ -12680,17 +12679,6 @@
 			(justify left bottom)
 		)
 		(uuid "9827b18f-5f37-4ded-8882-a7a6d626787a")
-	)
-	(label "~{INT}"
-		(at 334.01 93.98 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "993f238d-fad1-467a-9e05-14d233088d6c")
 	)
 	(label "USART1_RX"
 		(at 334.01 106.68 0)
@@ -13188,15 +13176,15 @@
 		(uuid "df3cf389-7bbd-47e8-bec1-639be1dac908")
 	)
 	(label "ST2"
-		(at 274.32 85.09 180)
+		(at 334.01 66.04 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "e1bfa394-0fc8-40ec-8c67-63462149d421")
+		(uuid "e18aac09-1b1f-47fd-a0f2-e79adef1b321")
 	)
 	(label "USART6_TX"
 		(at 356.87 147.32 180)
@@ -13341,6 +13329,17 @@
 		)
 		(uuid "f958179e-8c6f-42b3-8870-7c2f7e1e525f")
 	)
+	(label "~{INT}"
+		(at 334.01 91.44 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fa195b33-a6dc-4626-b3af-a7e0b8445154")
+	)
 	(label "USB_DM"
 		(at 60.96 251.46 180)
 		(fields_autoplaced yes)
@@ -13406,6 +13405,17 @@
 			(justify right bottom)
 		)
 		(uuid "fc20c9db-547f-42a3-9ad1-9238874ce0f3")
+	)
+	(label "~{KILL}"
+		(at 334.01 93.98 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ff0a750d-62f2-41be-a6de-bb18312ca569")
 	)
 	(symbol
 		(lib_id "power:GNDREF")
