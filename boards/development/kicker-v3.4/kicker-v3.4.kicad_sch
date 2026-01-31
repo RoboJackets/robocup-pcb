@@ -1,0 +1,79 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "fb305a0d-eecf-446c-8807-75cb24f9e3a5")
+	(paper "A4")
+	(title_block
+		(title "Kicker Board")
+		(date "2026-01-30")
+		(rev "3.4-dev")
+		(company "RoboJackets - RoboCup")
+		(comment 1 "Aiden Lee (alee659@gatech.edu)")
+		(comment 2 "William Stuckey (rcssl.ateam@gmail.com)")
+		(comment 4 "Rev 3.4 is a modernization of rev 3.3 designed by William Stuckey (alum, now of A-Team)")
+	)
+	(lib_symbols)
+	(text "Notes to self:\n\nVerify exactly which transformer was used originally. \nThe math looks like it's for the CoilCraft HA3994-AL, but the part # for the DA2034-AL.\nIf it's the HA3994-AL, I'm fucked and I need to re-do all of the charger math. If not,\nthe 750032051 from Würth Elektronik is very close to spec.\n\n"
+		(exclude_from_sim no)
+		(at 69.088 32.512 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 255 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "e3ae2a1c-a20e-4146-920f-2dea091790ef")
+	)
+	(sheet
+		(at 25.4 25.4)
+		(size 25.4 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e86782f0-611b-4534-aff3-65b08805c510")
+		(property "Sheetname" "Power"
+			(at 25.4 24.6884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 25.4 51.3846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "kicker-v3.4"
+				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
