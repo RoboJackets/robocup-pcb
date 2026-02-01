@@ -7760,12 +7760,6 @@
 		(uuid "06ca07fd-effb-49e6-9727-4a621a783ffd")
 	)
 	(junction
-		(at 29.21 160.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "08bb6db9-2fd6-44dd-a2bb-b5bec1db31cb")
-	)
-	(junction
 		(at 67.31 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7826,6 +7820,18 @@
 		(uuid "18c630d4-9d01-4eae-91b8-7b535005cf6a")
 	)
 	(junction
+		(at 78.74 179.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "19087333-2fb7-4474-b289-734897fa0373")
+	)
+	(junction
+		(at 29.21 160.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1a121e7d-50f5-4f87-b7e8-0cf74b6c7c3f")
+	)
+	(junction
 		(at 149.86 252.73)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7878,6 +7884,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3a57cb4e-90ff-44f7-b5c6-3d000c9d6b7e")
+	)
+	(junction
+		(at 63.5 170.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3db9df04-adf7-47c4-92f4-9a6640a64017")
 	)
 	(junction
 		(at 123.19 50.8)
@@ -7958,12 +7970,6 @@
 		(uuid "625f55a9-9c12-4704-bcd3-91035a1689b4")
 	)
 	(junction
-		(at 185.42 210.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "64457068-e530-4c0a-836b-aa449a457ea3")
-	)
-	(junction
 		(at 67.31 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7976,22 +7982,10 @@
 		(uuid "64b49842-f10a-4bf6-87b4-c1f5dd6ece6d")
 	)
 	(junction
-		(at 63.5 170.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6556e314-a101-40fa-9fff-6f8c5139be1a")
-	)
-	(junction
 		(at 123.19 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6732ee48-c06a-42a3-a680-1a9c99ba8ef6")
-	)
-	(junction
-		(at 36.83 187.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6ba43c08-a002-4dc7-92e2-4bcfa55d7900")
 	)
 	(junction
 		(at 48.26 243.84)
@@ -8084,6 +8078,12 @@
 		(uuid "8e3785ff-ab61-4fe7-8107-000f3d161149")
 	)
 	(junction
+		(at 185.42 210.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8e395fc4-edb1-45e3-9dd2-74561ef9876d")
+	)
+	(junction
 		(at 130.81 260.35)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8112,12 +8112,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "96c97692-e5f8-4ee5-b5cb-07a8510e95e4")
-	)
-	(junction
-		(at 78.74 179.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "97a0ae74-7381-4df1-b7d7-cd0fb64b1172")
 	)
 	(junction
 		(at 67.31 81.28)
@@ -8196,6 +8190,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b5b0347e-71a0-4e1a-9296-d7a8880aadd7")
+	)
+	(junction
+		(at 36.83 187.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b704fdd2-510b-4123-8149-318b2b3433d0")
 	)
 	(junction
 		(at 36.83 135.89)
@@ -8388,6 +8388,10 @@
 		(uuid "1fd69e6a-0286-4033-9a75-1e7487e0343c")
 	)
 	(no_connect
+		(at 283.21 111.76)
+		(uuid "2a13b2ca-a87e-4cd3-ba8c-8069d51e1536")
+	)
+	(no_connect
 		(at 300.99 38.1)
 		(uuid "35cf9edd-362d-48d9-8191-cda91f7be3d1")
 	)
@@ -8557,7 +8561,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 179.07) (xy 81.28 179.07)
+			(xy 76.2 179.07) (xy 78.74 179.07)
 		)
 		(stroke
 			(width 0)
@@ -8714,16 +8718,6 @@
 			(type default)
 		)
 		(uuid "1452f10f-e888-46a5-8ac0-67c8bc8445be")
-	)
-	(wire
-		(pts
-			(xy 63.5 170.18) (xy 66.04 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1523fb93-e947-4104-b955-fed4416f8c39")
 	)
 	(wire
 		(pts
@@ -9274,6 +9268,16 @@
 			(type default)
 		)
 		(uuid "481ac32d-2594-4e77-97bd-de048930d668")
+	)
+	(wire
+		(pts
+			(xy 78.74 179.07) (xy 81.28 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48a707df-8d6a-461c-b2e7-fde018e3d108")
 	)
 	(wire
 		(pts
@@ -9907,6 +9911,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 170.18) (xy 66.04 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "797139ca-057f-4996-89dd-959b213a2cc4")
+	)
+	(wire
+		(pts
 			(xy 180.34 168.91) (xy 181.61 168.91)
 		)
 		(stroke
@@ -10187,7 +10201,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 243.84) (xy 52.07 243.84)
+			(xy 48.26 243.84) (xy 59.69 243.84)
 		)
 		(stroke
 			(width 0)
@@ -10727,6 +10741,16 @@
 	)
 	(wire
 		(pts
+			(xy 341.63 31.75) (xy 341.63 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd62dac5-6e3b-4729-8cc7-7c4a6e08ce5c")
+	)
+	(wire
+		(pts
 			(xy 356.87 99.06) (xy 355.6 99.06)
 		)
 		(stroke
@@ -10904,16 +10928,6 @@
 			(type default)
 		)
 		(uuid "d0e2d35e-d16a-432f-9d79-c9288a79a427")
-	)
-	(wire
-		(pts
-			(xy 76.2 179.07) (xy 78.74 179.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d0e38ada-a02c-4b8c-a2cc-01841449810c")
 	)
 	(wire
 		(pts
@@ -11317,7 +11331,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 238.76) (xy 48.26 238.76)
+			(xy 48.26 238.76) (xy 59.69 238.76)
 		)
 		(stroke
 			(width 0)
@@ -14341,7 +14355,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "1251adaa-671a-406f-9acf-10494ab78805")
 		(property "Reference" "C17"
 			(at 353.822 162.052 90)
@@ -16185,6 +16199,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_TVS_Filled")
+		(at 63.5 173.99 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "34049b93-179f-4d57-a8f7-8058451315af")
+		(property "Reference" "D4"
+			(at 66.548 172.974 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "ESD5Z5.0T1G"
+			(at 65.532 175.006 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "footprints:SOD-523_0P9X1P3_ONS"
+			(at 63.5 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/onsemi/ESD5Z5-0T1G/1476609"
+			(at 63.5 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bidirectional transient-voltage-suppression diode, filled shape"
+			(at 63.5 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1b34d175-2993-4352-8bc3-3521a4ed3522")
+		)
+		(pin "1"
+			(uuid "78be9b92-7233-4382-8420-38814cdedcfe")
+		)
+		(instances
+			(project "control-v4.1-stm32"
+				(path "/87ee05c0-8a28-453e-99fb-d652e1b19f2a"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GNDREF")
 		(at 242.57 80.01 0)
 		(unit 1)
@@ -16968,43 +17051,34 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 55.88 238.76 270)
+		(lib_id "Device:D_TVS_Filled")
+		(at 36.83 191.77 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "4e937f5b-1254-43fa-8af1-744941f142f3")
-		(property "Reference" "R16"
-			(at 51.562 239.014 90)
+		(uuid "502175b9-daba-4a99-bb1d-475b591d41e3")
+		(property "Reference" "D3"
+			(at 48.514 190.754 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "5.1k"
-			(at 56.134 239.014 90)
+		(property "Value" "ESD5Z5.0T1G"
+			(at 38.608 192.532 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 55.88 236.982 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 55.88 238.76 0)
+		(property "Footprint" "footprints:SOD-523_0P9X1P3_ONS"
+			(at 36.83 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17012,8 +17086,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 55.88 238.76 0)
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/onsemi/ESD5Z5-0T1G/1476609"
+			(at 36.83 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17021,16 +17095,25 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "3ed4f379-e444-4720-86bf-c42b7323a0b8")
+		(property "Description" "Bidirectional transient-voltage-suppression diode, filled shape"
+			(at 36.83 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "2"
-			(uuid "bc031797-e573-4af7-a2ad-9ef1d34e7ccd")
+			(uuid "29ec3e27-b497-4656-bfa6-0209ddcdbe0d")
+		)
+		(pin "1"
+			(uuid "577e7c38-441d-468d-bada-3838acbbcc2d")
 		)
 		(instances
 			(project "control-v4.1-stm32"
 				(path "/87ee05c0-8a28-453e-99fb-d652e1b19f2a"
-					(reference "R16")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -17100,75 +17183,6 @@
 			(project "control-v4.1-stm32"
 				(path "/87ee05c0-8a28-453e-99fb-d652e1b19f2a"
 					(reference "R7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 55.88 243.84 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "51e422c7-70f4-4d00-be1a-e8cd655f905e")
-		(property "Reference" "R17"
-			(at 51.562 244.094 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "5.1k"
-			(at 56.134 244.094 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 55.88 242.062 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 55.88 243.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 55.88 243.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cdd2a93a-8f14-439f-a00e-4e67236bf28c")
-		)
-		(pin "2"
-			(uuid "8585942e-0bf9-4ae1-86ee-d2de20610822")
-		)
-		(instances
-			(project "control-v4.1-stm32"
-				(path "/87ee05c0-8a28-453e-99fb-d652e1b19f2a"
-					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -17911,6 +17925,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_TVS_Filled")
+		(at 78.74 182.88 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5fdea668-ba34-4ead-b140-1c6e04158de9")
+		(property "Reference" "D5"
+			(at 73.914 181.356 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "ESD5Z5.0T1G"
+			(at 64.008 184.404 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "footprints:SOD-523_0P9X1P3_ONS"
+			(at 78.74 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/onsemi/ESD5Z5-0T1G/1476609"
+			(at 78.74 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bidirectional transient-voltage-suppression diode, filled shape"
+			(at 78.74 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5a6fbd96-13a4-4286-ac10-dc655280b046")
+		)
+		(pin "1"
+			(uuid "5f64eb7c-d51d-4e17-8c7c-aea03ce8c1a0")
+		)
+		(instances
+			(project "control-v4.1-stm32"
+				(path "/87ee05c0-8a28-453e-99fb-d652e1b19f2a"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 110.49 217.17 0)
 		(unit 1)
@@ -17986,7 +18069,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "6107e0a2-4070-4762-9dd5-a0afb2ec7db9")
 		(property "Reference" "C18"
 			(at 354.076 180.594 90)
@@ -19801,75 +19884,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_TVS_Filled")
-		(at 78.74 182.88 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7c7f284e-8bda-4306-a13b-aceab5873f7e")
-		(property "Reference" "D5"
-			(at 73.914 182.626 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "8231706A"
-			(at 66.802 184.404 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "footprints:WE-VE_FEMTOF_0402"
-			(at 78.74 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 78.74 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Bidirectional transient-voltage-suppression diode, filled shape"
-			(at 78.74 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ea288865-354c-4482-a9a0-59e8d1e73199")
-		)
-		(pin "1"
-			(uuid "c3a875b8-847b-498b-951f-469ef1922b0e")
-		)
-		(instances
-			(project "control-v4.1-stm32"
-				(path "/87ee05c0-8a28-453e-99fb-d652e1b19f2a"
-					(reference "D5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GNDREF")
 		(at 199.39 181.61 0)
 		(mirror y)
@@ -20466,76 +20480,6 @@
 			(project "control-v4.1-stm32"
 				(path "/87ee05c0-8a28-453e-99fb-d652e1b19f2a"
 					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_TVS_Filled")
-		(at 36.83 191.77 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "943a25fa-33b8-4a77-bd7e-da3e87c0aa8d")
-		(property "Reference" "D3"
-			(at 39.37 190.4999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "8231706A"
-			(at 39.37 193.0399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "footprints:WE-VE_FEMTOF_0402"
-			(at 36.83 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 36.83 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Bidirectional transient-voltage-suppression diode, filled shape"
-			(at 36.83 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "e783b707-d4f3-4293-9ff7-dd27f522886b")
-		)
-		(pin "1"
-			(uuid "c3e907dc-04a9-4d36-83f6-9b48be5e9dc9")
-		)
-		(instances
-			(project "control-v4.1-stm32"
-				(path "/87ee05c0-8a28-453e-99fb-d652e1b19f2a"
-					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -22068,6 +22012,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_TVS_Filled")
+		(at 29.21 163.83 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b45037bd-b9ad-48a9-8429-bb423f64969e")
+		(property "Reference" "D2"
+			(at 24.384 162.306 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "ESD5Z5.0T1G"
+			(at 14.478 164.084 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "footprints:SOD-523_0P9X1P3_ONS"
+			(at 29.21 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/onsemi/ESD5Z5-0T1G/1476609"
+			(at 29.21 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bidirectional transient-voltage-suppression diode, filled shape"
+			(at 29.21 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ebd43414-e88c-43c2-8120-c3bdebdb84f1")
+		)
+		(pin "1"
+			(uuid "a50b8584-3730-468c-af08-410285d25890")
+		)
+		(instances
+			(project "control-v4.1-stm32"
+				(path "/87ee05c0-8a28-453e-99fb-d652e1b19f2a"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 138.43 217.17 0)
 		(unit 1)
@@ -22421,76 +22434,6 @@
 			(project "control-v4.1-stm32"
 				(path "/87ee05c0-8a28-453e-99fb-d652e1b19f2a"
 					(reference "#PWR035")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_TVS_Filled")
-		(at 29.21 163.83 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bd4a5722-0f02-4d87-9b3f-0bfb02cd0c55")
-		(property "Reference" "D2"
-			(at 31.75 162.5599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "8231706A"
-			(at 31.75 165.0999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "footprints:WE-VE_FEMTOF_0402"
-			(at 29.21 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 29.21 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Bidirectional transient-voltage-suppression diode, filled shape"
-			(at 29.21 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "916b7621-ac4b-4a15-a668-474d61f55422")
-		)
-		(pin "1"
-			(uuid "c7f64762-2d85-4a1e-82f9-cfff9dfd20ab")
-		)
-		(instances
-			(project "control-v4.1-stm32"
-				(path "/87ee05c0-8a28-453e-99fb-d652e1b19f2a"
-					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -23507,6 +23450,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_TVS_Filled")
+		(at 185.42 214.63 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cbb38430-a862-4fec-913c-872659142dec")
+		(property "Reference" "D10"
+			(at 187.452 213.614 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "ESD5Z5.0T1G"
+			(at 186.944 215.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "footprints:SOD-523_0P9X1P3_ONS"
+			(at 185.42 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/onsemi/ESD5Z5-0T1G/1476609"
+			(at 185.42 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bidirectional transient-voltage-suppression diode, filled shape"
+			(at 185.42 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "06f9ec53-baa1-4174-b425-660fd3b6f15c")
+		)
+		(pin "1"
+			(uuid "442e7f73-35ce-4ebd-afef-548775239cb7")
+		)
+		(instances
+			(project "control-v4.1-stm32"
+				(path "/87ee05c0-8a28-453e-99fb-d652e1b19f2a"
+					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GNDREF")
 		(at 199.39 190.5 0)
 		(mirror y)
@@ -24254,16 +24266,16 @@
 	)
 	(symbol
 		(lib_id "Device:FerriteBead")
-		(at 341.63 31.75 0)
+		(at 341.63 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "deb2a60b-c268-4189-891e-e5f8952518ec")
 		(property "Reference" "FB1"
-			(at 345.44 30.4291 0)
+			(at 345.44 26.6191 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24272,7 +24284,7 @@
 			)
 		)
 		(property "Value" "1K, 100Mhz"
-			(at 345.44 32.9691 0)
+			(at 345.44 29.1591 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24281,7 +24293,7 @@
 			)
 		)
 		(property "Footprint" "footprints:BEADC1608X95N"
-			(at 339.852 31.75 90)
+			(at 339.852 27.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24290,7 +24302,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.com/datasheet/3/76/1/ENFA0004.pdf"
-			(at 341.63 31.75 0)
+			(at 341.63 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24299,7 +24311,7 @@
 			)
 		)
 		(property "Description" "Ferrite bead"
-			(at 341.63 31.75 0)
+			(at 341.63 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24393,7 +24405,7 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
-		(at 341.63 27.94 0)
+		(at 341.63 24.13 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -24402,7 +24414,7 @@
 		(fields_autoplaced yes)
 		(uuid "e3d680e8-437f-40c1-bbd6-9810303dd286")
 		(property "Reference" "#PWR02"
-			(at 341.63 31.75 0)
+			(at 341.63 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24411,7 +24423,7 @@
 			)
 		)
 		(property "Value" "VDDMCU"
-			(at 341.63 22.86 0)
+			(at 341.63 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24419,7 +24431,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 341.63 27.94 0)
+			(at 341.63 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24428,7 +24440,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 341.63 27.94 0)
+			(at 341.63 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24437,7 +24449,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 341.63 27.94 0)
+			(at 341.63 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24811,76 +24823,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_TVS_Filled")
-		(at 63.5 173.99 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ecd38833-6f3e-4509-bc84-44c6bf9fcf02")
-		(property "Reference" "D4"
-			(at 66.04 172.7199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "8231706A"
-			(at 66.04 175.2599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "footprints:WE-VE_FEMTOF_0402"
-			(at 63.5 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 63.5 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Bidirectional transient-voltage-suppression diode, filled shape"
-			(at 63.5 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "53248fe0-7ce9-4cac-b363-0faa9aa003e9")
-		)
-		(pin "1"
-			(uuid "834147f1-3122-4e24-9a03-3d572ec38dd2")
-		)
-		(instances
-			(project "control-v4.1-stm32"
-				(path "/87ee05c0-8a28-453e-99fb-d652e1b19f2a"
-					(reference "D4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GNDREF")
 		(at 123.19 53.34 0)
 		(unit 1)
@@ -25019,7 +24961,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "f19e81be-c605-4fd1-abc9-a1641e79dc18")
 		(property "Reference" "Y2"
@@ -25410,76 +25352,6 @@
 			(project "control-v4.1-stm32"
 				(path "/87ee05c0-8a28-453e-99fb-d652e1b19f2a"
 					(reference "#PWR057")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_TVS_Filled")
-		(at 185.42 214.63 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f6eb9719-5aa8-4457-8316-dff3f3c8cb1c")
-		(property "Reference" "D10"
-			(at 187.96 213.3599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "8231706A"
-			(at 187.96 215.8999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "footprints:WE-VE_FEMTOF_0402"
-			(at 185.42 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 185.42 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Bidirectional transient-voltage-suppression diode, filled shape"
-			(at 185.42 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "81e7687e-18b5-40fe-b3d2-25a7fcb7fd88")
-		)
-		(pin "1"
-			(uuid "59abf894-b869-4529-bc66-89ea983575e6")
-		)
-		(instances
-			(project "control-v4.1-stm32"
-				(path "/87ee05c0-8a28-453e-99fb-d652e1b19f2a"
-					(reference "D10")
 					(unit 1)
 				)
 			)
