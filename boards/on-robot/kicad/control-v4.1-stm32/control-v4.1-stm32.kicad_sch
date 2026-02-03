@@ -8213,6 +8213,12 @@
 		(uuid "11f5d73e-fa54-484d-9548-049bd996e001")
 	)
 	(junction
+		(at 63.5 170.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "16752d2c-a32c-42f6-962f-716ec904a203")
+	)
+	(junction
 		(at 250.19 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8223,12 +8229,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "18c630d4-9d01-4eae-91b8-7b535005cf6a")
-	)
-	(junction
-		(at 78.74 179.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "19087333-2fb7-4474-b289-734897fa0373")
 	)
 	(junction
 		(at 29.21 160.02)
@@ -8289,12 +8289,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3a57cb4e-90ff-44f7-b5c6-3d000c9d6b7e")
-	)
-	(junction
-		(at 63.5 170.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3db9df04-adf7-47c4-92f4-9a6640a64017")
 	)
 	(junction
 		(at 123.19 50.8)
@@ -8687,6 +8681,12 @@
 		(uuid "d9767ea3-c92b-4fef-b329-12949633069e")
 	)
 	(junction
+		(at 78.74 179.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dd3b7f14-b793-4127-a339-ae859d82aa1c")
+	)
+	(junction
 		(at 67.31 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8963,16 +8963,6 @@
 			(type default)
 		)
 		(uuid "0c0bacdb-68d1-4cab-8304-f8515794b818")
-	)
-	(wire
-		(pts
-			(xy 76.2 179.07) (xy 78.74 179.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0c789a5f-5027-41a2-a211-c4dc7a0fc4eb")
 	)
 	(wire
 		(pts
@@ -9676,7 +9666,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 179.07) (xy 81.28 179.07)
+			(xy 76.2 179.07) (xy 78.74 179.07)
 		)
 		(stroke
 			(width 0)
@@ -9793,6 +9783,16 @@
 			(type default)
 		)
 		(uuid "515bff9d-0f2f-4877-ba01-f97dd1d07ca8")
+	)
+	(wire
+		(pts
+			(xy 78.74 179.07) (xy 81.28 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5197115d-8a27-4dd7-9274-2699ec600106")
 	)
 	(wire
 		(pts
@@ -10313,16 +10313,6 @@
 			(type default)
 		)
 		(uuid "7906a195-89dd-47f1-a77c-9c5820b6425b")
-	)
-	(wire
-		(pts
-			(xy 63.5 170.18) (xy 66.04 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "797139ca-057f-4996-89dd-959b213a2cc4")
 	)
 	(wire
 		(pts
@@ -11383,6 +11373,16 @@
 			(type default)
 		)
 		(uuid "d68594bf-0aa2-4c9b-99bf-34f5e34ef19d")
+	)
+	(wire
+		(pts
+			(xy 63.5 170.18) (xy 66.04 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6cfec44-477c-4de2-9905-309736c66360")
 	)
 	(wire
 		(pts
@@ -14476,6 +14476,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_TVS_Filled")
+		(at 78.74 182.88 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "17c2c187-7c76-4301-a95a-b3661661a999")
+		(property "Reference" "D5"
+			(at 81.28 181.6099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TPD1E04U04DPYR"
+			(at 60.452 184.658 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "footprints:DPY2_TEX"
+			(at 78.74 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 78.74 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bidirectional transient-voltage-suppression diode, filled shape"
+			(at 78.74 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b2296537-9521-4463-bc12-3f5b0b937a3d")
+		)
+		(pin "1"
+			(uuid "49ceef89-79bc-49ca-bd39-6f7a51a498ab")
+		)
+		(instances
+			(project "control-v4.1-stm32"
+				(path "/87ee05c0-8a28-453e-99fb-d652e1b19f2a"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 246.38 73.66 90)
 		(unit 1)
@@ -16122,75 +16191,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_TVS_Filled")
-		(at 63.5 173.99 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "34049b93-179f-4d57-a8f7-8058451315af")
-		(property "Reference" "D4"
-			(at 66.548 172.974 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "ESD5Z5.0T1G"
-			(at 65.532 175.006 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "footprints:SOD-523_0P9X1P3_ONS"
-			(at 63.5 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/onsemi/ESD5Z5-0T1G/1476609"
-			(at 63.5 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Bidirectional transient-voltage-suppression diode, filled shape"
-			(at 63.5 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "1b34d175-2993-4352-8bc3-3521a4ed3522")
-		)
-		(pin "1"
-			(uuid "78be9b92-7233-4382-8420-38814cdedcfe")
-		)
-		(instances
-			(project "control-v4.1-stm32"
-				(path "/87ee05c0-8a28-453e-99fb-d652e1b19f2a"
-					(reference "D4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GNDREF")
 		(at 242.57 80.01 0)
 		(unit 1)
@@ -16656,6 +16656,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_TVS_Filled")
+		(at 63.5 173.99 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "49d03402-25a8-4f5a-a649-890816db03d5")
+		(property "Reference" "D4"
+			(at 66.04 172.7199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TPD1E04U04DPYR"
+			(at 66.04 175.2599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "footprints:DPY2_TEX"
+			(at 63.5 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 63.5 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bidirectional transient-voltage-suppression diode, filled shape"
+			(at 63.5 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2acbb096-4451-4e10-88a2-d6332fc2dc25")
+		)
+		(pin "1"
+			(uuid "e4732aec-fdcc-4457-b7f7-df34d77e980a")
+		)
+		(instances
+			(project "control-v4.1-stm32"
+				(path "/87ee05c0-8a28-453e-99fb-d652e1b19f2a"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:USB_C_Receptacle_USB2.0_16P")
 		(at 33.02 238.76 0)
 		(unit 1)
@@ -16991,7 +17061,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "ESD5Z5.0T1G"
+		(property "Value" "PJSD05TS"
 			(at 38.608 192.532 90)
 			(effects
 				(font
@@ -17842,75 +17912,6 @@
 			(project "control-v4.1-stm32"
 				(path "/87ee05c0-8a28-453e-99fb-d652e1b19f2a"
 					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_TVS_Filled")
-		(at 78.74 182.88 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5fdea668-ba34-4ead-b140-1c6e04158de9")
-		(property "Reference" "D5"
-			(at 73.914 181.356 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "ESD5Z5.0T1G"
-			(at 64.008 184.404 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "footprints:SOD-523_0P9X1P3_ONS"
-			(at 78.74 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/onsemi/ESD5Z5-0T1G/1476609"
-			(at 78.74 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Bidirectional transient-voltage-suppression diode, filled shape"
-			(at 78.74 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "5a6fbd96-13a4-4286-ac10-dc655280b046")
-		)
-		(pin "1"
-			(uuid "5f64eb7c-d51d-4e17-8c7c-aea03ce8c1a0")
-		)
-		(instances
-			(project "control-v4.1-stm32"
-				(path "/87ee05c0-8a28-453e-99fb-d652e1b19f2a"
-					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -18948,7 +18949,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "ESD5Z5.0T1G"
+		(property "Value" "PJSD05TS"
 			(at 55.118 214.884 90)
 			(effects
 				(font
@@ -21952,8 +21953,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "ESD5Z5.0T1G"
-			(at 14.478 164.084 90)
+		(property "Value" "PJSD05TS"
+			(at 17.78 164.084 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23390,7 +23391,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "ESD5Z5.0T1G"
+		(property "Value" "PJSD05TS"
 			(at 186.944 215.9 90)
 			(effects
 				(font
@@ -24001,7 +24002,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "ESD5Z5.0T1G"
+		(property "Value" "PJSD05TS"
 			(at 148.59 218.4399 90)
 			(effects
 				(font
