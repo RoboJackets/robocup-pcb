@@ -8153,6 +8153,12 @@
 		(uuid "034cd8c5-ea11-45dc-8e04-bdf07b0b78d0")
 	)
 	(junction
+		(at 67.31 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "03b47556-0f14-4591-ae0f-f479d536bdad")
+	)
+	(junction
 		(at 308.61 180.34)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8163,12 +8169,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "06ca07fd-effb-49e6-9727-4a621a783ffd")
-	)
-	(junction
-		(at 67.31 29.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0bf2c787-e0d5-4aeb-897b-f9677d54b179")
 	)
 	(junction
 		(at 97.79 87.63)
@@ -8193,12 +8193,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0df62ba0-4da4-4df5-b5ab-ebb60df35058")
-	)
-	(junction
-		(at 123.19 77.47)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1046d62c-641c-4dc9-8a55-5cba6abaaa5b")
 	)
 	(junction
 		(at 123.19 35.56)
@@ -8339,6 +8333,12 @@
 		(uuid "53c181d9-af3c-4089-b431-f7ef5ea6209b")
 	)
 	(junction
+		(at 123.19 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "554d8cb8-91ec-4f23-999e-93327206db3d")
+	)
+	(junction
 		(at 67.31 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8349,12 +8349,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "57296da4-b864-4bf8-82d2-6eb783b62eb0")
-	)
-	(junction
-		(at 67.31 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5ec3b10c-c55f-4397-9372-bfacbd1fe608")
 	)
 	(junction
 		(at 96.52 92.71)
@@ -8379,12 +8373,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "64b49842-f10a-4bf6-87b4-c1f5dd6ece6d")
-	)
-	(junction
-		(at 123.19 30.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6732ee48-c06a-42a3-a680-1a9c99ba8ef6")
 	)
 	(junction
 		(at 48.26 243.84)
@@ -8573,6 +8561,12 @@
 		(uuid "b02be755-2b99-4122-8de4-82bd79a7e104")
 	)
 	(junction
+		(at 67.31 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b0d4893d-1304-4a45-bd49-b456ca39ec41")
+	)
+	(junction
 		(at 306.07 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8649,6 +8643,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d210b5ea-da36-45be-ab2d-918da2c808ef")
+	)
+	(junction
+		(at 123.19 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d2871036-cf30-4ad8-b9e2-fe8f2b25d6c0")
 	)
 	(junction
 		(at 123.19 97.79)
@@ -18462,7 +18462,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 123.19 30.48 0)
+		(at 123.19 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18470,7 +18470,7 @@
 		(dnp no)
 		(uuid "691a73d8-7dd0-4318-b077-fd79fe1c2ef3")
 		(property "Reference" "#PWR040"
-			(at 123.19 34.29 0)
+			(at 123.19 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18479,7 +18479,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 121.158 26.67 0)
+			(at 121.158 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18488,7 +18488,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 123.19 30.48 0)
+			(at 123.19 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18497,7 +18497,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 123.19 30.48 0)
+			(at 123.19 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18506,7 +18506,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 123.19 30.48 0)
+			(at 123.19 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20411,7 +20411,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 67.31 76.2 0)
+		(at 67.31 29.21 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20420,7 +20420,7 @@
 		(dnp no)
 		(uuid "976a67a7-094e-4135-85fb-c57d7a2c3e6a")
 		(property "Reference" "#PWR037"
-			(at 67.31 80.01 0)
+			(at 67.31 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20429,7 +20429,7 @@
 			)
 		)
 		(property "Value" "3V3"
-			(at 67.31 71.12 0)
+			(at 67.31 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20437,7 +20437,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 67.31 76.2 0)
+			(at 67.31 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20446,7 +20446,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 67.31 76.2 0)
+			(at 67.31 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20455,7 +20455,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 67.31 76.2 0)
+			(at 67.31 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21084,7 +21084,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 123.19 77.47 0)
+		(at 123.19 30.48 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21093,7 +21093,7 @@
 		(dnp no)
 		(uuid "9f7cced5-40d8-405d-9871-b70d089841c9")
 		(property "Reference" "#PWR038"
-			(at 123.19 81.28 0)
+			(at 123.19 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21102,7 +21102,7 @@
 			)
 		)
 		(property "Value" "3V3"
-			(at 123.19 72.39 0)
+			(at 123.19 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21110,7 +21110,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 123.19 77.47 0)
+			(at 123.19 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21119,7 +21119,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 123.19 77.47 0)
+			(at 123.19 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21128,7 +21128,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 123.19 77.47 0)
+			(at 123.19 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21408,7 +21408,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 67.31 29.21 0)
+		(at 67.31 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21416,7 +21416,7 @@
 		(dnp no)
 		(uuid "a8adc768-dfbf-4eac-9ce6-2ce7f25677cb")
 		(property "Reference" "#PWR039"
-			(at 67.31 33.02 0)
+			(at 67.31 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21425,7 +21425,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 65.278 25.4 0)
+			(at 65.278 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21434,7 +21434,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 67.31 29.21 0)
+			(at 67.31 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21443,7 +21443,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 67.31 29.21 0)
+			(at 67.31 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21452,7 +21452,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 67.31 29.21 0)
+			(at 67.31 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
