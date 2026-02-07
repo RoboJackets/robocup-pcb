@@ -11,7 +11,7 @@
 		(company "RoboJackets - RoboCup")
 		(comment 1 "Aiden Lee (alee659@gatech.edu)")
 		(comment 2 "William Stuckey (rcssl.ateam@gmail.com)")
-		(comment 4 "Rev 3.4 is a modernization of rev 3.3 designed by William Stuckey (alum, now of A-Team)")
+		(comment 3 "Bernardo Perez (bperez40@gatech.edu)")
 	)
 	(lib_symbols
 		(symbol "power:+3.3V"
@@ -265,9 +265,25 @@
 			(embedded_fonts no)
 		)
 	)
+	(junction
+		(at 59.69 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "115c5d2f-dab9-4e1e-b07b-3c260f05dd6d")
+	)
 	(wire
 		(pts
-			(xy 54.61 29.21) (xy 54.61 26.67)
+			(xy 59.69 29.21) (xy 73.66 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62f70662-1085-48b7-80f0-50b51d75768f")
+	)
+	(wire
+		(pts
+			(xy 59.69 29.21) (xy 59.69 26.67)
 		)
 		(stroke
 			(width 0)
@@ -277,7 +293,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 29.21) (xy 54.61 29.21)
+			(xy 50.8 29.21) (xy 59.69 29.21)
 		)
 		(stroke
 			(width 0)
@@ -297,6 +313,26 @@
 	)
 	(wire
 		(pts
+			(xy 111.76 29.21) (xy 128.27 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b22563ee-5644-4183-acec-7f93c9db9973")
+	)
+	(wire
+		(pts
+			(xy 128.27 63.5) (xy 128.27 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1b1504e-4eb1-4a3f-adc3-4824c59795d6")
+	)
+	(wire
+		(pts
 			(xy 54.61 38.1) (xy 54.61 35.56)
 		)
 		(stroke
@@ -307,7 +343,7 @@
 	)
 	(symbol
 		(lib_id "power:+BATT")
-		(at 54.61 26.67 0)
+		(at 59.69 26.67 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -316,7 +352,7 @@
 		(fields_autoplaced yes)
 		(uuid "77aec058-e39a-4ac6-9ba8-735dce763d01")
 		(property "Reference" "#PWR01"
-			(at 54.61 30.48 0)
+			(at 59.69 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -325,7 +361,7 @@
 			)
 		)
 		(property "Value" "+BATT"
-			(at 54.61 21.59 0)
+			(at 59.69 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -333,7 +369,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 54.61 26.67 0)
+			(at 59.69 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -342,7 +378,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 26.67 0)
+			(at 59.69 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -351,7 +387,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 54.61 26.67 0)
+			(at 59.69 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -471,6 +507,46 @@
 				(justify left top)
 			)
 		)
+		(pin "BATT+" input
+			(at 73.66 29.21 180)
+			(uuid "a011411b-2ca2-4b1a-b73a-878aac33e721")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "HV" bidirectional
+			(at 111.76 29.21 0)
+			(uuid "71fc2894-4710-4e70-a49a-a9d100f94738")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SYNC" input
+			(at 111.76 44.45 0)
+			(uuid "e5134d50-8a2e-4237-92d3-cfaa94890aa1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "~{SHUTDOWN}" input
+			(at 111.76 48.26 0)
+			(uuid "a0fe3bb6-9c2b-4381-8a69-4edd27c398c5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5"
@@ -547,6 +623,58 @@
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 101.6 63.5)
+		(size 45.72 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f4dc7313-c52c-44cc-8499-a4707a9c67a5")
+		(property "Sheetname" "Capacitor Bank"
+			(at 101.6 62.7884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "hv_bank.kicad_sch"
+			(at 101.6 89.4846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "HV" bidirectional
+			(at 128.27 63.5 90)
+			(uuid "f052dd8f-5bb4-4449-a8db-719337f35620")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "kicker-v3.4"
+				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5"
+					(page "4")
 				)
 			)
 		)
