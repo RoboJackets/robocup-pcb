@@ -2264,6 +2264,20 @@
 		)
 		(uuid "b544af50-fe37-420b-98bd-a27e46d9eb19")
 	)
+	(text "Target voltage dropped from 250V to 200V"
+		(exclude_from_sim no)
+		(at 241.3 160.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 255 0 0 1)
+			)
+			(justify right)
+		)
+		(uuid "d4692ce7-0d19-4858-a256-8e2d8db47bde")
+	)
 	(text_box "Components connected to V_{C} pin are part of the LT3757's loop compensation network.\nThe capacitor voltage raises proportionally with (but is not equal to) V_{out}.\nOnce the capacitor charges to 1.78 V, the loop compensation feature stops."
 		(exclude_from_sim no)
 		(at 129.54 90.17 0)
@@ -2348,7 +2362,7 @@
 		)
 		(uuid "7eecacf8-d4a0-43d4-84ad-00f28bb51487")
 	)
-	(text_box "V_{out} = 1.6*(R2/R1) \n= 1.6*240kOhm/1.54kOhm \n~ 250V"
+	(text_box "V_{out} = 1.6*(R2/R1) \n= 1.6*240kOhm/1.96kOhm \n~ 200V"
 		(exclude_from_sim no)
 		(at 254 157.48 0)
 		(size 29.464 7.874)
@@ -3159,6 +3173,17 @@
 			(type default)
 		)
 		(uuid "c2f42f1e-6201-4c1b-8bb0-1b187a76f998")
+	)
+	(polyline
+		(pts
+			(xy 241.3 160.02) (xy 254 161.29)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+			(color 255 0 0 1)
+		)
+		(uuid "c571630d-5231-4f19-884f-774cc1899885")
 	)
 	(wire
 		(pts
@@ -5060,7 +5085,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1.54k"
+		(property "Value" "1.96k"
 			(at 265.43 142.2399 0)
 			(effects
 				(font
@@ -5332,7 +5357,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "40k"
 			(at 265.43 132.0799 0)
 			(effects
 				(font
