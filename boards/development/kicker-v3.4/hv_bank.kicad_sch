@@ -5,7 +5,7 @@
 	(uuid "4eefef83-73e0-43be-b064-94e941d29669")
 	(paper "A5")
 	(title_block
-		(title "High Voltage Cap Bank w/ Auto Discharge")
+		(title "High Voltage Cap Bank w/ Safety Auto Discharge")
 		(rev "3.4-dev")
 		(company "RoboJackets - RoboCup")
 		(comment 1 "Aiden Lee (alee659@gatech.edu)")
@@ -1456,14 +1456,14 @@
 		)
 		(uuid "5ac45653-b16d-476d-84da-b795d3e93b9d")
 	)
-	(text "Caps rated 250V 1000uF"
+	(text "Caps rated 250V 1mF"
 		(exclude_from_sim no)
-		(at 64.262 96.266 0)
+		(at 123.444 98.552 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left top)
+			(justify right bottom)
 		)
 		(uuid "5fc20051-bb0c-4edd-a6f1-a6c41d63d6de")
 	)
@@ -1478,7 +1478,7 @@
 		)
 		(uuid "beb22aaf-5d9a-4b5d-a643-93c3fb8d0d96")
 	)
-	(text "High-Voltage Auto Discharge"
+	(text "High-Voltage Auto Safety Discharge"
 		(exclude_from_sim no)
 		(at 13.97 17.272 0)
 		(effects
