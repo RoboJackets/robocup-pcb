@@ -226,7 +226,24 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "pin_to_pin|2387600|1143000|5606029b-464a-461b-92bd-d0395f5ab471|980b9618-fc61-4b37-beb5-e70036446e75|/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e86782f0-611b-4534-aff3-65b08805c510|/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e86782f0-611b-4534-aff3-65b08805c510|/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e86782f0-611b-4534-aff3-65b08805c510",
+        ""
+      ],
+      [
+        "pin_to_pin|2387600|1473200|009baf9f-78c6-4a50-bb1d-3ad2684b6eb8|95423e31-daa3-4e00-bf9a-b2b22ee56254|/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e86782f0-611b-4534-aff3-65b08805c510|/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e86782f0-611b-4534-aff3-65b08805c510|/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e86782f0-611b-4534-aff3-65b08805c510",
+        ""
+      ],
+      [
+        "pin_to_pin|2463800|1143000|5a6f55e9-7ae0-420b-89c9-d3b2e9ede884|5606029b-464a-461b-92bd-d0395f5ab471|/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e86782f0-611b-4534-aff3-65b08805c510|/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e86782f0-611b-4534-aff3-65b08805c510|/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e86782f0-611b-4534-aff3-65b08805c510",
+        ""
+      ],
+      [
+        "pin_to_pin|2628900|825500|22419e6e-84d8-4691-b5e6-9af5bc67c953|aa4a3536-0c38-434b-bae1-148e50d02e4a|/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e86782f0-611b-4534-aff3-65b08805c510|/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e86782f0-611b-4534-aff3-65b08805c510|/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e86782f0-611b-4534-aff3-65b08805c510",
+        ""
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -412,19 +429,19 @@
       "endpoint_off_grid": "warning",
       "extra_units": "error",
       "footprint_filter": "ignore",
-      "footprint_link_issues": "warning",
+      "footprint_link_issues": "ignore",
       "four_way_junction": "ignore",
       "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
       "label_multiple_wires": "warning",
-      "lib_symbol_issues": "warning",
-      "lib_symbol_mismatch": "warning",
+      "lib_symbol_issues": "ignore",
+      "lib_symbol_mismatch": "ignore",
       "missing_bidi_pin": "warning",
       "missing_input_pin": "warning",
       "missing_power_pin": "error",
       "missing_unit": "warning",
-      "multiple_net_names": "warning",
+      "multiple_net_names": "ignore",
       "net_not_bus_member": "warning",
       "no_connect_connected": "warning",
       "no_connect_dangling": "warning",
@@ -597,6 +614,14 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "space_save_all_events": true,
@@ -629,6 +654,22 @@
     [
       "e4304b20-4d06-4872-95c9-1dabf011b89c",
       "HV Discharge"
+    ],
+    [
+      "22347599-bf0c-4fd4-a7a3-7c86a35ae01b",
+      "MCU"
+    ],
+    [
+      "fae60b2c-2bb3-4faf-8ca4-fe71f7b6041c",
+      "Indicator LEDs"
+    ],
+    [
+      "cb2ed4c1-6aa6-4f43-8deb-f53b1c57f0a4",
+      "Breakbeam"
+    ],
+    [
+      "f89236ed-aad2-4303-8073-83e97e337226",
+      "Debug Buttons"
     ]
   ],
   "text_variables": {}
