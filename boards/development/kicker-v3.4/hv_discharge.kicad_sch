@@ -6,6 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "High Voltage Discharge")
+		(date "2026-02-08")
 		(rev "3.4-dev")
 		(company "RoboJackets - RoboCup")
 		(comment 1 "Aiden Lee (alee659@gatech.edu)")
@@ -2078,7 +2079,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.645 31.75) (xy 80.645 34.29)
+			(xy 80.01 31.75) (xy 80.01 34.29)
 		)
 		(stroke
 			(width 0)
@@ -2268,16 +2269,6 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 83.82) (xy 26.67 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5c4cecae-bafa-48c2-8dc8-dd0318f72a14")
-	)
-	(wire
-		(pts
 			(xy 241.3 49.53) (xy 246.38 49.53)
 		)
 		(stroke
@@ -2355,6 +2346,16 @@
 			(type default)
 		)
 		(uuid "7553f2c7-de49-4bfe-b068-3dbb02322692")
+	)
+	(wire
+		(pts
+			(xy 26.67 83.82) (xy 26.67 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a4b8c61-fd9f-47e1-bae8-a438f6dd330f")
 	)
 	(wire
 		(pts
@@ -2528,7 +2529,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 34.29) (xy 80.645 34.29)
+			(xy 73.66 34.29) (xy 80.01 34.29)
 		)
 		(stroke
 			(width 0)
@@ -2884,7 +2885,7 @@
 	)
 	(symbol
 		(lib_id "power:+15V")
-		(at 80.645 31.75 0)
+		(at 80.01 31.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2892,8 +2893,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1790cd03-8262-49ff-9c3e-60c500565518")
-		(property "Reference" "#PWR041"
-			(at 80.645 35.56 0)
+		(property "Reference" "#PWR046"
+			(at 80.01 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2902,7 +2903,7 @@
 			)
 		)
 		(property "Value" "+15V"
-			(at 80.645 26.67 0)
+			(at 80.01 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2910,7 +2911,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 80.645 31.75 0)
+			(at 80.01 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2919,7 +2920,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 80.645 31.75 0)
+			(at 80.01 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2928,7 +2929,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+15V\""
-			(at 80.645 31.75 0)
+			(at 80.01 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2942,7 +2943,7 @@
 		(instances
 			(project ""
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "#PWR041")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -2958,7 +2959,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "17f8fba7-6248-43d2-b39a-310e80eb1a91")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR049"
 			(at 90.17 76.2 0)
 			(effects
 				(font
@@ -3008,7 +3009,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "#PWR042")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -3024,7 +3025,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1f97f6dd-4a30-4b8e-8eb2-52da81561a47")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR040"
 			(at 26.67 77.47 0)
 			(effects
 				(font
@@ -3074,7 +3075,7 @@
 		(instances
 			(project ""
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "#PWR049")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -3178,7 +3179,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "RoboJackets-Power:SMC"
+		(property "Footprint" "Diode_SMD:D_SMC"
 			(at 190.5 50.038 0)
 			(effects
 				(font
@@ -3275,7 +3276,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3e562997-104b-438d-a272-56d1d073c43a")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR051"
 			(at 101.6 76.2 0)
 			(effects
 				(font
@@ -3325,7 +3326,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "#PWR045")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -3341,7 +3342,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4029091e-d16d-4224-ad6f-622b41092e5d")
-		(property "Reference" "Q5"
+		(property "Reference" "Q6"
 			(at 250.19 72.3899 0)
 			(effects
 				(font
@@ -3445,7 +3446,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "Q5")
+					(reference "Q6")
 					(unit 1)
 				)
 			)
@@ -3461,7 +3462,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4112d46d-22ca-465e-aa61-b4563bbcf6a0")
-		(property "Reference" "J4"
+		(property "Reference" "J3"
 			(at 170.815 44.45 0)
 			(effects
 				(font
@@ -3513,7 +3514,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "J4")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -3529,7 +3530,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "49578214-78df-4757-850b-7074c9b31685")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR047"
 			(at 85.09 88.9 0)
 			(effects
 				(font
@@ -3579,7 +3580,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "#PWR043")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -3595,7 +3596,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4aff2acc-d09a-4b7c-9b3f-300bbf4a8ee3")
-		(property "Reference" "J3"
+		(property "Reference" "J5"
 			(at 230.505 44.45 0)
 			(effects
 				(font
@@ -3647,7 +3648,7 @@
 		(instances
 			(project ""
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "J3")
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -3663,7 +3664,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5a2617d0-69bc-45d8-a76e-37cea709d8f1")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR044"
 			(at 59.69 104.14 0)
 			(effects
 				(font
@@ -3713,7 +3714,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "#PWR048")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -3729,7 +3730,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5b799645-4062-47e5-bfe0-becc4a9a4e09")
-		(property "Reference" "J5"
+		(property "Reference" "J6"
 			(at 230.505 54.61 0)
 			(effects
 				(font
@@ -3781,7 +3782,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "J5")
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -3797,7 +3798,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "64315f40-ae66-4dc9-a4b0-9e67029d56fa")
-		(property "Reference" "C25"
+		(property "Reference" "C23"
 			(at 41.91 78.7399 0)
 			(effects
 				(font
@@ -3851,7 +3852,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "C25")
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -3867,7 +3868,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "65753cf2-294a-44ed-b946-1a732fc76e9e")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR052"
 			(at 101.6 114.3 0)
 			(effects
 				(font
@@ -3917,7 +3918,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "#PWR047")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -3933,7 +3934,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "65aade3b-865a-4fa3-9e99-6730d21ee367")
-		(property "Reference" "Q6"
+		(property "Reference" "Q5"
 			(at 190.5 72.3899 0)
 			(effects
 				(font
@@ -4037,7 +4038,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "Q6")
+					(reference "Q5")
 					(unit 1)
 				)
 			)
@@ -4071,7 +4072,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "RoboJackets-Power:SMC"
+		(property "Footprint" "Diode_SMD:D_SMC"
 			(at 250.19 50.038 0)
 			(effects
 				(font
@@ -4168,7 +4169,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7a5335ac-e951-4f5f-a431-da75ed1cc2b8")
-		(property "Reference" "C23"
+		(property "Reference" "C25"
 			(at 93.98 101.5999 0)
 			(effects
 				(font
@@ -4222,7 +4223,7 @@
 		(instances
 			(project ""
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "C23")
+					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -4238,7 +4239,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7c9eae24-9380-4fe2-8b7b-1861361c210e")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR048"
 			(at 85.09 104.14 0)
 			(effects
 				(font
@@ -4288,7 +4289,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "#PWR044")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -4304,7 +4305,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "820e3200-01e1-4380-8894-9a05436d8f52")
-		(property "Reference" "J6"
+		(property "Reference" "J4"
 			(at 170.815 53.34 0)
 			(effects
 				(font
@@ -4356,7 +4357,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "J6")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -4372,7 +4373,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9239b4bb-b242-4afc-a0e6-fdb18211c858")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR050"
 			(at 90.17 114.3 0)
 			(effects
 				(font
@@ -4422,7 +4423,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "#PWR046")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -4438,7 +4439,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b208c944-856a-4622-9d03-a225c6f848ae")
-		(property "Reference" "C21"
+		(property "Reference" "C24"
 			(at 77.47 36.8299 0)
 			(effects
 				(font
@@ -4492,7 +4493,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "C21")
+					(reference "C24")
 					(unit 1)
 				)
 			)
@@ -4508,7 +4509,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "be059281-4640-4482-8a82-20134060bd6b")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR042"
 			(at 38.1 91.44 0)
 			(effects
 				(font
@@ -4558,7 +4559,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "#PWR050")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -4574,7 +4575,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c4883017-0f42-4cf1-a2d3-52bf03bf57bd")
-		(property "Reference" "C26"
+		(property "Reference" "C21"
 			(at 30.48 78.7399 0)
 			(effects
 				(font
@@ -4628,7 +4629,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "C26")
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -4644,7 +4645,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c4a94518-0d16-43d3-b83a-865038d6a916")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR054"
 			(at 246.38 88.9 0)
 			(effects
 				(font
@@ -4694,7 +4695,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "#PWR055")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -4710,7 +4711,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cef23896-1b66-417b-86a8-1b0fd9de2d20")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR041"
 			(at 35.56 49.53 0)
 			(effects
 				(font
@@ -4760,7 +4761,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "#PWR039")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -4844,7 +4845,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "da467066-4c6d-4604-a472-9a389364a74b")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR045"
 			(at 73.66 49.53 0)
 			(effects
 				(font
@@ -4894,7 +4895,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "#PWR040")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -4910,7 +4911,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e6c094f3-1631-42b6-8f8a-8b1c369e3b07")
-		(property "Reference" "C24"
+		(property "Reference" "C26"
 			(at 105.41 101.5999 0)
 			(effects
 				(font
@@ -4964,7 +4965,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "C24")
+					(reference "C26")
 					(unit 1)
 				)
 			)
@@ -5167,7 +5168,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ec9533ce-38d2-4a2a-b36a-beff8cf0e652")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR043"
 			(at 59.69 49.53 0)
 			(effects
 				(font
@@ -5217,7 +5218,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "#PWR038")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -5322,7 +5323,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f0a5bb76-924b-4be0-a93e-70f4fd822aaf")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR053"
 			(at 186.69 88.9 0)
 			(effects
 				(font
@@ -5372,7 +5373,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "#PWR054")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -5380,7 +5381,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 26.5905 85.4322 0)
+		(at 26.67 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5388,8 +5389,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ff9f5116-5beb-4e0a-acdc-70decc513ce0")
-		(property "Reference" "#PWR051"
-			(at 26.5905 91.7822 0)
+		(property "Reference" "#PWR039"
+			(at 26.67 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5398,7 +5399,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 26.5905 90.5122 0)
+			(at 26.67 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5406,7 +5407,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 26.5905 85.4322 0)
+			(at 26.67 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5415,7 +5416,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 26.5905 85.4322 0)
+			(at 26.67 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5424,7 +5425,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 26.5905 85.4322 0)
+			(at 26.67 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5438,7 +5439,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "#PWR051")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)

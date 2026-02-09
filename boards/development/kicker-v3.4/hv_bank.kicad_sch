@@ -6,6 +6,7 @@
 	(paper "A5")
 	(title_block
 		(title "High Voltage Cap Bank w/ Safety Auto Discharge")
+		(date "2026-02-08")
 		(rev "3.4-dev")
 		(company "RoboJackets - RoboCup")
 		(comment 1 "Aiden Lee (alee659@gatech.edu)")
@@ -760,6 +761,189 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:LED"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -1411,6 +1595,18 @@
 		)
 	)
 	(rectangle
+		(start 153.67 24.13)
+		(end 186.69 58.42)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 15b278fe-6857-48f8-8bc6-51c085972d1d)
+	)
+	(rectangle
 		(start 13.97 73.66)
 		(end 124.46 99.06)
 		(stroke
@@ -1433,6 +1629,28 @@
 			(type none)
 		)
 		(uuid b8c430ee-8062-4823-a0bf-2e99713990c7)
+	)
+	(text "Safety Discharge Indicator"
+		(exclude_from_sim no)
+		(at 153.924 23.622 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "09f93714-a5bd-45fb-82c3-8bccf0eaee55")
+	)
+	(text "Only on when discharging"
+		(exclude_from_sim no)
+		(at 169.418 57.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify bottom)
+		)
+		(uuid "4d81a134-f08f-4910-836b-70d4ba435b07")
 	)
 	(text "High-Voltage Capacitor Bank"
 		(exclude_from_sim no)
@@ -1638,6 +1856,16 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 30.48) (xy 162.56 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "287e543e-b633-4aa6-b295-41f68aa6180d")
+	)
+	(wire
+		(pts
 			(xy 76.2 77.47) (xy 76.2 80.01)
 		)
 		(stroke
@@ -1695,6 +1923,16 @@
 			(type default)
 		)
 		(uuid "500e1929-aca8-4962-9abf-1dff675cd8c8")
+	)
+	(wire
+		(pts
+			(xy 162.56 38.1) (xy 162.56 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53b11366-70dc-40b4-bd60-15c9b901eaa4")
 	)
 	(wire
 		(pts
@@ -1928,6 +2166,16 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 48.26) (xy 162.56 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edc6b4b9-573e-4dae-8441-aef9bd966038")
+	)
+	(wire
+		(pts
 			(xy 100.33 77.47) (xy 100.33 80.01)
 		)
 		(stroke
@@ -1985,6 +2233,37 @@
 			(type default)
 		)
 		(uuid "fee1a56e-933b-4533-9ca5-7db986b8d74d")
+	)
+	(label "DISCHG_DRAIN"
+		(at 127 35.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "236c66f3-52f0-4a8d-a6eb-b93adf8c5c9c")
+	)
+	(label "DISCHG_DRAIN"
+		(at 162.56 54.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fad208e9-8165-4668-9e04-12f21435671a")
+	)
+	(hierarchical_label "HV"
+		(shape bidirectional)
+		(at 162.56 29.21 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "19b1ac55-3380-4b89-a905-7e86bf3bcfa2")
 	)
 	(hierarchical_label "HV"
 		(shape bidirectional)
@@ -2169,7 +2448,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "26cea636-4482-4126-beba-57d3764de492")
-		(property "Reference" "R20"
+		(property "Reference" "R21"
 			(at 46.99 35.5599 0)
 			(effects
 				(font
@@ -2223,7 +2502,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f4dc7313-c52c-44cc-8499-a4707a9c67a5"
-					(reference "R20")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -2397,7 +2676,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4337d329-fbbf-4aa4-aaf7-27c935e99d33")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR038"
 			(at 127 57.15 0)
 			(effects
 				(font
@@ -2447,7 +2726,77 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f4dc7313-c52c-44cc-8499-a4707a9c67a5"
-					(reference "#PWR037")
+					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 162.56 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4b28cbe4-38d1-42ed-8d59-c4af0d7e3c0a")
+		(property "Reference" "R43"
+			(at 165.1 33.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "270k"
+			(at 165.1 35.5599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.782 34.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 162.56 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1d5d00d8-f10e-48d8-9187-1555e087f341")
+		)
+		(pin "2"
+			(uuid "7c5bd26e-9c43-455c-a25d-f254f75f4ebf")
+		)
+		(instances
+			(project "kicker-v3.4"
+				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f4dc7313-c52c-44cc-8499-a4707a9c67a5"
+					(reference "R43")
 					(unit 1)
 				)
 			)
@@ -2463,7 +2812,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4fa9533d-8893-4165-9b34-3b080951d05c")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR037"
 			(at 109.22 63.5 0)
 			(effects
 				(font
@@ -2513,7 +2862,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f4dc7313-c52c-44cc-8499-a4707a9c67a5"
-					(reference "#PWR036")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -2669,7 +3018,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6b4805f3-e27a-43b4-a743-68cffea60f96")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR035"
 			(at 63.5 63.5 0)
 			(effects
 				(font
@@ -2719,7 +3068,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f4dc7313-c52c-44cc-8499-a4707a9c67a5"
-					(reference "#PWR034")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -3157,7 +3506,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b3bfc8ca-7b79-4e40-b61a-218da96a47ce")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR036"
 			(at 83.82 63.5 0)
 			(effects
 				(font
@@ -3207,7 +3556,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f4dc7313-c52c-44cc-8499-a4707a9c67a5"
-					(reference "#PWR035")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -3223,7 +3572,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bae43303-fff4-4991-b1a9-8d40a5b969cc")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR034"
 			(at 44.45 63.5 0)
 			(effects
 				(font
@@ -3273,7 +3622,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f4dc7313-c52c-44cc-8499-a4707a9c67a5"
-					(reference "#PWR033")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -3355,7 +3704,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d205335c-7ac8-46e8-8907-d4c54edfe4d4")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR033"
 			(at 27.94 97.79 0)
 			(effects
 				(font
@@ -3405,7 +3754,7 @@
 		(instances
 			(project ""
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f4dc7313-c52c-44cc-8499-a4707a9c67a5"
-					(reference "#PWR030")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -3421,7 +3770,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d807e479-b1c4-45c3-aade-2836e69978ef")
-		(property "Reference" "R21"
+		(property "Reference" "R20"
 			(at 46.99 25.3999 0)
 			(effects
 				(font
@@ -3475,7 +3824,86 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f4dc7313-c52c-44cc-8499-a4707a9c67a5"
-					(reference "R21")
+					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 162.56 44.45 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dda97af8-cb97-489e-a376-4316f14853eb")
+		(property "Reference" "D14"
+			(at 166.37 44.7674 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "HV_MID"
+			(at 166.37 47.3074 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 162.56 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 162.56 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 162.56 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a9557ffe-3984-41f0-9f0b-0b0eae32aea4")
+		)
+		(pin "1"
+			(uuid "795ec733-2df4-4462-b9d5-96d36cb8409d")
+		)
+		(instances
+			(project "kicker-v3.4"
+				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f4dc7313-c52c-44cc-8499-a4707a9c67a5"
+					(reference "D14")
 					(unit 1)
 				)
 			)
