@@ -1020,6 +1020,153 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "*piman_lib:TPD1E04U04DPYR"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TPD1E04U04DPYR"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_SMD:D_0402_1005Metric"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftpd1e04u04"
+				(at -1.27 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "8.9V Clamp 2.5A (8/20µs) Ipp Tvs Diode Surface Mount 2-X1SON (1x.60)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer P/N" "TPD1E04U04DPYR"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Vendor P/N" "296-47224-1-ND"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "unidirectional diode TVS voltage suppressor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TPD1E04U04DPYR_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TPD1E04U04DPYR_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:Conn_01x02_Pin"
 			(pin_names
 				(offset 1.016)
@@ -2692,20 +2839,6 @@
 		)
 		(uuid "94657afb-9f35-437b-b5cc-1e2f144afcfe")
 	)
-	(text "TODO: Add ESD prot"
-		(exclude_from_sim no)
-		(at 73.152 103.378 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.508)
-				(bold yes)
-				(color 255 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "973cb314-715a-416f-b65f-db4f7eb83341")
-	)
 	(text "Nom switching freq. 1 MHz"
 		(exclude_from_sim no)
 		(at 215.392 58.42 0)
@@ -2814,6 +2947,12 @@
 		(uuid "2a7aec26-b208-41ce-b407-734c9d17516d")
 	)
 	(junction
+		(at 83.82 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "301e3a41-53a8-469a-a10d-7112737184df")
+	)
+	(junction
 		(at 214.63 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2830,6 +2969,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4cfadae5-0e9f-40f3-9db9-ea7896293eef")
+	)
+	(junction
+		(at 80.01 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6736885d-4a14-4e84-bfb6-4c4d9aabbf98")
 	)
 	(junction
 		(at 198.12 35.56)
@@ -2942,7 +3087,7 @@
 		(uuid "a5863de2-f1da-4825-afed-98a942d17194")
 	)
 	(bus_entry
-		(at 88.9 107.95)
+		(at 92.71 107.95)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -2951,7 +3096,7 @@
 		(uuid "243b4cac-e94e-4116-bd75-72efa2fffcc1")
 	)
 	(bus_entry
-		(at 88.9 110.49)
+		(at 92.71 110.49)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -3001,6 +3146,16 @@
 	)
 	(wire
 		(pts
+			(xy 67.31 107.95) (xy 80.01 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bb04b2f-0fb4-466d-876e-3473ceeb08a3")
+	)
+	(wire
+		(pts
 			(xy 45.72 52.07) (xy 68.58 52.07)
 		)
 		(stroke
@@ -3008,6 +3163,16 @@
 			(type default)
 		)
 		(uuid "0f9539a4-ade7-45a3-969c-ab5458fe839c")
+	)
+	(wire
+		(pts
+			(xy 83.82 110.49) (xy 83.82 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11bfba4c-6516-4c7c-9496-eaee23b38dfa")
 	)
 	(wire
 		(pts
@@ -3191,6 +3356,16 @@
 	)
 	(wire
 		(pts
+			(xy 80.01 137.16) (xy 80.01 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2fb9b697-4abd-4eff-ac10-e0d8a0c557bc")
+	)
+	(wire
+		(pts
 			(xy 256.54 33.02) (xy 256.54 35.56)
 		)
 		(stroke
@@ -3311,16 +3486,6 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 107.95) (xy 88.9 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "54a4e4a0-072a-4b45-9282-f6af8c673b52")
-	)
-	(wire
-		(pts
 			(xy 256.54 44.45) (xy 256.54 43.18)
 		)
 		(stroke
@@ -3351,7 +3516,7 @@
 	)
 	(bus
 		(pts
-			(xy 91.44 113.03) (xy 100.33 113.03)
+			(xy 95.25 113.03) (xy 96.52 113.03)
 		)
 		(stroke
 			(width 0)
@@ -3378,6 +3543,16 @@
 			(type default)
 		)
 		(uuid "64ead842-a0a4-4509-97fd-dc6bf2ac7186")
+	)
+	(wire
+		(pts
+			(xy 67.31 110.49) (xy 83.82 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "664f9cc1-7a55-422b-bcaa-fd8b1f753b9a")
 	)
 	(wire
 		(pts
@@ -3511,6 +3686,16 @@
 	)
 	(wire
 		(pts
+			(xy 83.82 120.65) (xy 83.82 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c08463d-96b0-42ce-834a-853eb1150f36")
+	)
+	(wire
+		(pts
 			(xy 245.11 33.02) (xy 245.11 22.86)
 		)
 		(stroke
@@ -3521,16 +3706,6 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 110.49) (xy 88.9 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7d53c55e-3e93-4d2e-bc5a-d533f3710353")
-	)
-	(wire
-		(pts
 			(xy 189.23 45.72) (xy 189.23 44.45)
 		)
 		(stroke
@@ -3538,6 +3713,16 @@
 			(type default)
 		)
 		(uuid "7d5420c0-d068-4976-bed1-4cbee66eeae2")
+	)
+	(wire
+		(pts
+			(xy 83.82 110.49) (xy 92.71 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "800e8a0d-0373-4ffd-a39f-bec2ee73188c")
 	)
 	(wire
 		(pts
@@ -3618,6 +3803,16 @@
 			(type default)
 		)
 		(uuid "8e53f230-97ce-45db-b294-cbf9587ea13a")
+	)
+	(wire
+		(pts
+			(xy 80.01 107.95) (xy 80.01 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f0b6234-5a15-439c-9ad8-d82a02219f4a")
 	)
 	(wire
 		(pts
@@ -3731,7 +3926,7 @@
 	)
 	(bus
 		(pts
-			(xy 91.44 110.49) (xy 91.44 113.03)
+			(xy 95.25 113.03) (xy 95.25 110.49)
 		)
 		(stroke
 			(width 0)
@@ -3931,6 +4126,16 @@
 	)
 	(wire
 		(pts
+			(xy 80.01 107.95) (xy 92.71 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e08878c2-ad5a-4f16-a77e-3f156a98db3e")
+	)
+	(wire
+		(pts
 			(xy 256.54 33.02) (xy 259.08 33.02)
 		)
 		(stroke
@@ -4040,7 +4245,7 @@
 		(uuid "13354440-70d3-4e87-930e-8eb67e6fa473")
 	)
 	(label "USB0"
-		(at 81.28 107.95 0)
+		(at 86.36 107.95 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4059,16 +4264,6 @@
 		)
 		(uuid "38bbac0f-82f9-49ae-8cec-3978a259b322")
 	)
-	(label "USB_DN"
-		(at 72.39 107.95 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "43c57184-6775-4f48-a959-2afe6f50f2df")
-	)
 	(label "3.3V_DEBUG"
 		(at 267.97 82.55 0)
 		(effects
@@ -4078,6 +4273,16 @@
 			(justify left bottom)
 		)
 		(uuid "6846108f-4071-4fda-9db3-1e947aabdb63")
+	)
+	(label "USB0"
+		(at 26.67 110.49 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "81c714d3-1c5a-4690-8c60-10c9ad50efab")
 	)
 	(label "3.3V_DEBUG"
 		(at 204.47 114.3 180)
@@ -4089,7 +4294,7 @@
 		)
 		(uuid "8385e3ea-0567-4674-93de-e88e8e6178cd")
 	)
-	(label "USB_DP"
+	(label "USB1"
 		(at 26.67 107.95 180)
 		(effects
 			(font
@@ -4097,7 +4302,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "9a184042-2d33-4e3f-a7b2-c5e59774e4a2")
+		(uuid "abf5da4f-4041-4063-92ad-20b5ad5b4a7b")
 	)
 	(label "5V_USB"
 		(at 69.85 100.33 0)
@@ -4109,18 +4314,8 @@
 		)
 		(uuid "bc99966b-e033-4362-82a8-38a14ccec5bf")
 	)
-	(label "USB_DN"
-		(at 26.67 110.49 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c4bbecdd-ca93-48f7-b1be-082688ff4df8")
-	)
 	(label "USB1"
-		(at 81.28 110.49 0)
+		(at 86.36 110.49 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4138,16 +4333,6 @@
 			(justify left bottom)
 		)
 		(uuid "ce83185b-3689-46f4-9c64-0b65f2804ede")
-	)
-	(label "USB_DP"
-		(at 72.39 110.49 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e8ec47ae-6497-4366-9ab9-27b00909ce99")
 	)
 	(hierarchical_label "+BATT"
 		(shape output)
@@ -4184,7 +4369,7 @@
 	)
 	(hierarchical_label "USB[0..1]"
 		(shape output)
-		(at 100.33 113.03 0)
+		(at 96.52 113.03 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4254,6 +4439,160 @@
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e86782f0-611b-4534-aff3-65b08805c510"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "*piman_lib:TPD1E04U04DPYR")
+		(at 80.01 133.35 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0ea95225-eb6c-4fc2-a864-d41818a96349")
+		(property "Reference" "D20"
+			(at 82.55 132.0799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TPD1E04U04DPYR"
+			(at 82.55 134.6199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0402_1005Metric"
+			(at 74.93 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftpd1e04u04"
+			(at 80.01 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "8.9V Clamp 2.5A (8/20µs) Ipp Tvs Diode Surface Mount 2-X1SON (1x.60)"
+			(at 80.01 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer P/N" "TPD1E04U04DPYR"
+			(at 80.01 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor P/N" "296-47224-1-ND"
+			(at 80.01 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7ed0b6b3-739c-4ef4-83b1-5f1408ffdf17")
+		)
+		(pin "2"
+			(uuid "5f6ba641-0b33-4119-96d5-12e0a2b5ed1b")
+		)
+		(instances
+			(project ""
+				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e86782f0-611b-4534-aff3-65b08805c510"
+					(reference "D20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 83.82 121.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1f1764c1-5763-468a-aa15-b1e5371e4830")
+		(property "Reference" "#PWR098"
+			(at 83.82 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 83.82 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 83.82 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1a9784d0-98fa-45a9-afd2-361c39da684e")
+		)
+		(instances
+			(project "kicker-v3.4"
+				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e86782f0-611b-4534-aff3-65b08805c510"
+					(reference "#PWR098")
 					(unit 1)
 				)
 			)
@@ -5333,6 +5672,94 @@
 		)
 	)
 	(symbol
+		(lib_id "*piman_lib:TPD1E04U04DPYR")
+		(at 83.82 116.84 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4a9b432b-dd52-4b56-ae37-461e76cfcfdc")
+		(property "Reference" "D21"
+			(at 86.36 115.5699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TPD1E04U04DPYR"
+			(at 86.36 118.1099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0402_1005Metric"
+			(at 78.74 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftpd1e04u04"
+			(at 83.82 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "8.9V Clamp 2.5A (8/20µs) Ipp Tvs Diode Surface Mount 2-X1SON (1x.60)"
+			(at 83.82 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer P/N" "TPD1E04U04DPYR"
+			(at 83.82 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor P/N" "296-47224-1-ND"
+			(at 83.82 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c8538ba1-1827-4bfa-9c05-ca4e21c67b4c")
+		)
+		(pin "2"
+			(uuid "41a4d84d-6ee3-4ca5-953a-4d63abb27424")
+		)
+		(instances
+			(project "kicker-v3.4"
+				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e86782f0-611b-4534-aff3-65b08805c510"
+					(reference "D21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 213.36 123.19 0)
 		(unit 1)
@@ -6156,6 +6583,72 @@
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e86782f0-611b-4534-aff3-65b08805c510"
 					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 80.01 138.43 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "adac2416-6b69-4c91-a4fe-7cd5c30356df")
+		(property "Reference" "#PWR097"
+			(at 80.01 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 80.01 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 80.01 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d5ae61f4-3746-49fd-9e1e-2f19a5f1e19d")
+		)
+		(instances
+			(project "kicker-v3.4"
+				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e86782f0-611b-4534-aff3-65b08805c510"
+					(reference "#PWR097")
 					(unit 1)
 				)
 			)
