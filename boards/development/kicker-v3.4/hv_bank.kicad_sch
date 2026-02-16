@@ -1620,7 +1620,7 @@
 	)
 	(rectangle
 		(start 13.97 17.78)
-		(end 140.97 68.58)
+		(end 151.13 68.58)
 		(stroke
 			(width 0)
 			(type default)
@@ -2308,7 +2308,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "1629a283-43c8-4d1c-b063-05321ed97989")
-		(property "Reference" "R22"
+		(property "Reference" "R23"
 			(at 111.76 49.5299 0)
 			(effects
 				(font
@@ -2326,7 +2326,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 107.442 50.8 90)
 			(effects
 				(font
@@ -2362,7 +2362,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f4dc7313-c52c-44cc-8499-a4707a9c67a5"
-					(reference "R22")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -2376,9 +2376,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "1bbe1444-3bde-46e8-bd52-9b3c0c276d63")
-		(property "Reference" "R23"
+		(property "Reference" "R19"
 			(at 129.54 26.6699 0)
 			(effects
 				(font
@@ -2387,7 +2386,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1.5k 35W"
+		(property "Value" "3.3k 35W"
 			(at 129.54 29.2099 0)
 			(effects
 				(font
@@ -2396,7 +2395,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "*piman_footprints:RES_PWR263S-35-3301F"
 			(at 125.222 27.94 90)
 			(effects
 				(font
@@ -2405,7 +2404,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/PWR263S-35.pdf"
 			(at 127 27.94 0)
 			(effects
 				(font
@@ -2414,7 +2413,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "3.3 kOhms ±1% 35W Chip Resistor TO-263-3, D2PAK (2 Leads + Tab), TO-263AB Automotive AEC-Q200, Current Sense, Pulse Withstanding Thick Film"
+			(at 127 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer P/N" "PWR263S-35-3301F"
+			(at 129.54 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Vendor P/N" "PWR263S-35-3301F-ND"
 			(at 127 27.94 0)
 			(effects
 				(font
@@ -2432,7 +2449,77 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f4dc7313-c52c-44cc-8499-a4707a9c67a5"
-					(reference "R23")
+					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 52.07 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2105f24f-46b3-42b2-b753-499207de91fc")
+		(property "Reference" "C18"
+			(at 55.88 81.6609 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LLG2E102MELA50"
+			(at 55.88 84.2009 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "*piman_footprints:CP_A50_NCH"
+			(at 53.0352 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 52.07 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9af2145c-370c-40a2-8bd5-75217d99a933")
+		)
+		(pin "2"
+			(uuid "fca3cf34-ac26-4ae9-842c-cb5519ca299e")
+		)
+		(instances
+			(project "kicker-v3.4"
+				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f4dc7313-c52c-44cc-8499-a4707a9c67a5"
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -2466,7 +2553,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 42.672 36.83 90)
 			(effects
 				(font
@@ -2509,6 +2596,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 76.2 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2c28faea-26d6-4569-bba3-3109cb22281d")
+		(property "Reference" "C19"
+			(at 80.01 81.6609 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LLG2E102MELA50"
+			(at 80.01 84.2009 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "*piman_footprints:CP_A50_NCH"
+			(at 77.1652 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 76.2 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1f7f3eac-9488-4a1e-b549-d748cbcc726e")
+		)
+		(pin "2"
+			(uuid "dc60ec8e-70ea-49e7-a2ee-43a659141692")
+		)
+		(instances
+			(project "kicker-v3.4"
+				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f4dc7313-c52c-44cc-8499-a4707a9c67a5"
+					(reference "C19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "*piman_lib:3SMBJ5929B-TP")
 		(at 83.82 50.8 90)
 		(unit 1)
@@ -2518,7 +2675,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "32d70bc7-0b7a-4a84-b220-baca3537f448")
-		(property "Reference" "D4"
+		(property "Reference" "D7"
 			(at 86.36 49.5299 90)
 			(effects
 				(font
@@ -2590,77 +2747,7 @@
 		(instances
 			(project ""
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f4dc7313-c52c-44cc-8499-a4707a9c67a5"
-					(reference "D4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 76.2 83.82 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3a53b3ac-421b-43ca-954c-4056045c5b93")
-		(property "Reference" "C19"
-			(at 80.01 81.6609 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "LLG2E102MELA50"
-			(at 80.01 84.2009 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 77.1652 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 76.2 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 76.2 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c34117ee-6078-408a-a0e0-9b1bceb7b46e")
-		)
-		(pin "2"
-			(uuid "5bc0b616-4f7e-4ff3-bba1-8f0bc75704d0")
-		)
-		(instances
-			(project "kicker-v3.4"
-				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f4dc7313-c52c-44cc-8499-a4707a9c67a5"
-					(reference "C19")
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -2676,7 +2763,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4337d329-fbbf-4aa4-aaf7-27c935e99d33")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR035"
 			(at 127 57.15 0)
 			(effects
 				(font
@@ -2726,7 +2813,77 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f4dc7313-c52c-44cc-8499-a4707a9c67a5"
-					(reference "#PWR038")
+					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 100.33 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4602a6f8-e42e-41e7-a810-f1912ba49136")
+		(property "Reference" "C20"
+			(at 104.14 81.6609 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LLG2E102MELA50"
+			(at 104.14 84.2009 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "*piman_footprints:CP_A50_NCH"
+			(at 101.2952 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 100.33 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 100.33 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "564b0f2e-4da3-472f-ad7f-d176d0f113c6")
+		)
+		(pin "2"
+			(uuid "81c3869b-e8e7-48e8-8766-f1e2501420a1")
+		)
+		(instances
+			(project "kicker-v3.4"
+				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f4dc7313-c52c-44cc-8499-a4707a9c67a5"
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -2742,7 +2899,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4b28cbe4-38d1-42ed-8d59-c4af0d7e3c0a")
-		(property "Reference" "R43"
+		(property "Reference" "R20"
 			(at 165.1 33.0199 0)
 			(effects
 				(font
@@ -2760,7 +2917,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 160.782 34.29 90)
 			(effects
 				(font
@@ -2796,7 +2953,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f4dc7313-c52c-44cc-8499-a4707a9c67a5"
-					(reference "R43")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -2812,7 +2969,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4fa9533d-8893-4165-9b34-3b080951d05c")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR039"
 			(at 109.22 63.5 0)
 			(effects
 				(font
@@ -2862,7 +3019,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f4dc7313-c52c-44cc-8499-a4707a9c67a5"
-					(reference "#PWR037")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -2878,7 +3035,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "630a1089-8bfc-43cf-a0c0-4f63491b7353")
-		(property "Reference" "C16"
+		(property "Reference" "C17"
 			(at 31.75 81.6609 0)
 			(effects
 				(font
@@ -2896,7 +3053,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "*piman_footprints:CP_A50_NCH"
 			(at 28.9052 87.63 0)
 			(effects
 				(font
@@ -2932,77 +3089,7 @@
 		(instances
 			(project ""
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f4dc7313-c52c-44cc-8499-a4707a9c67a5"
-					(reference "C16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 100.33 83.82 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "67d46632-023b-4395-acc6-0c20056f0c95")
-		(property "Reference" "C20"
-			(at 104.14 81.6609 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "LLG2E102MELA50"
-			(at 104.14 84.2009 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 101.2952 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 100.33 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 100.33 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e2a69d38-0b0b-4529-b730-0113096b6054")
-		)
-		(pin "2"
-			(uuid "1671f17a-693c-4cf2-9af5-3068f84d393c")
-		)
-		(instances
-			(project "kicker-v3.4"
-				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f4dc7313-c52c-44cc-8499-a4707a9c67a5"
-					(reference "C20")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -3018,7 +3105,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6b4805f3-e27a-43b4-a743-68cffea60f96")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR037"
 			(at 63.5 63.5 0)
 			(effects
 				(font
@@ -3068,7 +3155,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f4dc7313-c52c-44cc-8499-a4707a9c67a5"
-					(reference "#PWR035")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -3084,7 +3171,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6bbead2a-4af2-45f1-a29b-711a97b924d5")
-		(property "Reference" "Q3"
+		(property "Reference" "Q4"
 			(at 48.26 46.9899 0)
 			(effects
 				(font
@@ -3144,7 +3231,7 @@
 		(instances
 			(project ""
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f4dc7313-c52c-44cc-8499-a4707a9c67a5"
-					(reference "Q3")
+					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -3160,7 +3247,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "847eb8d5-cc09-4773-aefc-d71d86fd5cda")
-		(property "Reference" "R19"
+		(property "Reference" "R24"
 			(at 22.86 52.0699 0)
 			(effects
 				(font
@@ -3178,7 +3265,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 18.542 53.34 90)
 			(effects
 				(font
@@ -3214,7 +3301,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f4dc7313-c52c-44cc-8499-a4707a9c67a5"
-					(reference "R19")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -3230,7 +3317,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8878ebe3-2cfd-4aea-85ff-53eac79dcaaa")
-		(property "Reference" "C18"
+		(property "Reference" "C16"
 			(at 67.31 48.2599 0)
 			(effects
 				(font
@@ -3248,7 +3335,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 64.4652 53.34 0)
 			(effects
 				(font
@@ -3284,7 +3371,7 @@
 		(instances
 			(project ""
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f4dc7313-c52c-44cc-8499-a4707a9c67a5"
-					(reference "C18")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -3300,7 +3387,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8b70edb7-6e53-4237-bd10-5cc3cc31ff05")
-		(property "Reference" "R18"
+		(property "Reference" "R22"
 			(at 22.86 41.9099 0)
 			(effects
 				(font
@@ -3318,7 +3405,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 18.542 43.18 90)
 			(effects
 				(font
@@ -3354,7 +3441,7 @@
 		(instances
 			(project ""
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f4dc7313-c52c-44cc-8499-a4707a9c67a5"
-					(reference "R18")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -3370,7 +3457,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8bfda278-704c-40ec-af31-97462035a4f8")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR040"
 			(at 20.32 67.31 0)
 			(effects
 				(font
@@ -3420,77 +3507,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f4dc7313-c52c-44cc-8499-a4707a9c67a5"
-					(reference "#PWR032")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 52.07 83.82 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9d3347f9-1630-4761-9b7e-9367f54a05d8")
-		(property "Reference" "C17"
-			(at 55.88 81.6609 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "LLG2E102MELA50"
-			(at 55.88 84.2009 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 53.0352 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 52.07 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 52.07 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "93331457-97ae-4d28-8251-7c68cb383e9b")
-		)
-		(pin "2"
-			(uuid "ef8030e7-b990-453e-976b-e98a1e530530")
-		)
-		(instances
-			(project "kicker-v3.4"
-				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f4dc7313-c52c-44cc-8499-a4707a9c67a5"
-					(reference "C17")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -3506,7 +3523,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b3bfc8ca-7b79-4e40-b61a-218da96a47ce")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR038"
 			(at 83.82 63.5 0)
 			(effects
 				(font
@@ -3556,7 +3573,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f4dc7313-c52c-44cc-8499-a4707a9c67a5"
-					(reference "#PWR036")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -3572,7 +3589,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bae43303-fff4-4991-b1a9-8d40a5b969cc")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR036"
 			(at 44.45 63.5 0)
 			(effects
 				(font
@@ -3622,7 +3639,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f4dc7313-c52c-44cc-8499-a4707a9c67a5"
-					(reference "#PWR034")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -3638,7 +3655,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cb42dce6-fa1f-488f-84df-8da702667ead")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR034"
 			(at 20.32 39.37 0)
 			(effects
 				(font
@@ -3688,7 +3705,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f4dc7313-c52c-44cc-8499-a4707a9c67a5"
-					(reference "#PWR031")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -3704,7 +3721,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d205335c-7ac8-46e8-8907-d4c54edfe4d4")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR041"
 			(at 27.94 97.79 0)
 			(effects
 				(font
@@ -3754,7 +3771,7 @@
 		(instances
 			(project ""
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f4dc7313-c52c-44cc-8499-a4707a9c67a5"
-					(reference "#PWR033")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -3770,7 +3787,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d807e479-b1c4-45c3-aade-2836e69978ef")
-		(property "Reference" "R20"
+		(property "Reference" "R18"
 			(at 46.99 25.3999 0)
 			(effects
 				(font
@@ -3788,7 +3805,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 42.672 26.67 90)
 			(effects
 				(font
@@ -3824,7 +3841,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f4dc7313-c52c-44cc-8499-a4707a9c67a5"
-					(reference "R20")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -3840,7 +3857,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dda97af8-cb97-489e-a376-4316f14853eb")
-		(property "Reference" "D14"
+		(property "Reference" "D6"
 			(at 166.37 44.7674 90)
 			(effects
 				(font
@@ -3903,7 +3920,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f4dc7313-c52c-44cc-8499-a4707a9c67a5"
-					(reference "D14")
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -3919,7 +3936,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e47ad722-46a5-441b-97e4-915db9980def")
-		(property "Reference" "Q4"
+		(property "Reference" "Q3"
 			(at 130.81 40.6399 0)
 			(effects
 				(font
@@ -3976,7 +3993,7 @@
 		(instances
 			(project ""
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f4dc7313-c52c-44cc-8499-a4707a9c67a5"
-					(reference "Q4")
+					(reference "Q3")
 					(unit 1)
 				)
 			)

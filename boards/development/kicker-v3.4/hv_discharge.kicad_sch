@@ -3127,7 +3127,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1790cd03-8262-49ff-9c3e-60c500565518")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR042"
 			(at 80.01 35.56 0)
 			(effects
 				(font
@@ -3177,7 +3177,7 @@
 		(instances
 			(project ""
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "#PWR046")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -3193,7 +3193,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "17f8fba7-6248-43d2-b39a-310e80eb1a91")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR046"
 			(at 90.17 76.2 0)
 			(effects
 				(font
@@ -3243,7 +3243,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "#PWR049")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -3259,7 +3259,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "192684b2-4f85-4d7c-905a-f0d999a1e260")
-		(property "Reference" "D18"
+		(property "Reference" "D10"
 			(at 167.64 80.0099 90)
 			(effects
 				(font
@@ -3313,7 +3313,7 @@
 		(instances
 			(project ""
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "D18")
+					(reference "D10")
 					(unit 1)
 				)
 			)
@@ -3329,7 +3329,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1f97f6dd-4a30-4b8e-8eb2-52da81561a47")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR048"
 			(at 26.67 77.47 0)
 			(effects
 				(font
@@ -3379,7 +3379,7 @@
 		(instances
 			(project ""
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "#PWR040")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -3395,7 +3395,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2112ba3b-b7c6-4048-832a-9310996056a6")
-		(property "Reference" "C22"
+		(property "Reference" "C21"
 			(at 39.37 36.8299 0)
 			(effects
 				(font
@@ -3413,7 +3413,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 36.5252 41.91 0)
 			(effects
 				(font
@@ -3449,7 +3449,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "C22")
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -3465,7 +3465,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2452e481-9858-4e89-8b05-5760c7c1cb71")
-		(property "Reference" "D19"
+		(property "Reference" "D11"
 			(at 227.33 80.0099 90)
 			(effects
 				(font
@@ -3519,7 +3519,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "D19")
+					(reference "D11")
 					(unit 1)
 				)
 			)
@@ -3535,7 +3535,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2eec06e1-d04c-44aa-b8c3-e40470df6c2f")
-		(property "Reference" "D5"
+		(property "Reference" "D8"
 			(at 193.04 49.5299 90)
 			(effects
 				(font
@@ -3634,7 +3634,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "D5")
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -3650,7 +3650,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3e562997-104b-438d-a272-56d1d073c43a")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR047"
 			(at 101.6 76.2 0)
 			(effects
 				(font
@@ -3700,7 +3700,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "#PWR051")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -3904,7 +3904,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "49578214-78df-4757-850b-7074c9b31685")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR049"
 			(at 85.09 88.9 0)
 			(effects
 				(font
@@ -3954,7 +3954,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "#PWR047")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -3970,7 +3970,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4aff2acc-d09a-4b7c-9b3f-300bbf4a8ee3")
-		(property "Reference" "J5"
+		(property "Reference" "J4"
 			(at 230.505 44.45 0)
 			(effects
 				(font
@@ -4022,7 +4022,7 @@
 		(instances
 			(project ""
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "J5")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -4038,7 +4038,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5a2617d0-69bc-45d8-a76e-37cea709d8f1")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR056"
 			(at 59.69 104.14 0)
 			(effects
 				(font
@@ -4088,7 +4088,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "#PWR044")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -4172,7 +4172,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "61b3f211-97e6-47d9-92b3-4a853f62ca17")
-		(property "Reference" "#PWR095"
+		(property "Reference" "#PWR054"
 			(at 165.1 92.71 0)
 			(effects
 				(font
@@ -4222,7 +4222,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "#PWR095")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -4238,7 +4238,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "64315f40-ae66-4dc9-a4b0-9e67029d56fa")
-		(property "Reference" "C23"
+		(property "Reference" "C24"
 			(at 41.91 78.7399 0)
 			(effects
 				(font
@@ -4256,7 +4256,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 39.0652 83.82 0)
 			(effects
 				(font
@@ -4292,7 +4292,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "C23")
+					(reference "C24")
 					(unit 1)
 				)
 			)
@@ -4308,7 +4308,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "65753cf2-294a-44ed-b946-1a732fc76e9e")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR059"
 			(at 101.6 114.3 0)
 			(effects
 				(font
@@ -4358,7 +4358,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "#PWR052")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -4494,7 +4494,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "733df716-af20-46df-a6b0-c7d013163ba0")
-		(property "Reference" "D6"
+		(property "Reference" "D9"
 			(at 252.73 49.5299 90)
 			(effects
 				(font
@@ -4593,7 +4593,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "D6")
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -4627,7 +4627,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 91.1352 106.68 0)
 			(effects
 				(font
@@ -4679,7 +4679,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7c9eae24-9380-4fe2-8b7b-1861361c210e")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR057"
 			(at 85.09 104.14 0)
 			(effects
 				(font
@@ -4729,7 +4729,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "#PWR048")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -4745,7 +4745,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "820e3200-01e1-4380-8894-9a05436d8f52")
-		(property "Reference" "J4"
+		(property "Reference" "J5"
 			(at 170.815 53.34 0)
 			(effects
 				(font
@@ -4797,7 +4797,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "J4")
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -4813,7 +4813,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9239b4bb-b242-4afc-a0e6-fdb18211c858")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR058"
 			(at 90.17 114.3 0)
 			(effects
 				(font
@@ -4863,7 +4863,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "#PWR050")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -4879,7 +4879,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b208c944-856a-4622-9d03-a225c6f848ae")
-		(property "Reference" "C24"
+		(property "Reference" "C22"
 			(at 77.47 36.8299 0)
 			(effects
 				(font
@@ -4897,7 +4897,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 74.6252 41.91 0)
 			(effects
 				(font
@@ -4933,7 +4933,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "C24")
+					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -4949,7 +4949,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "be059281-4640-4482-8a82-20134060bd6b")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR053"
 			(at 38.1 91.44 0)
 			(effects
 				(font
@@ -4999,7 +4999,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "#PWR042")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -5015,7 +5015,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c4883017-0f42-4cf1-a2d3-52bf03bf57bd")
-		(property "Reference" "C21"
+		(property "Reference" "C23"
 			(at 30.48 78.7399 0)
 			(effects
 				(font
@@ -5033,7 +5033,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 27.6352 83.82 0)
 			(effects
 				(font
@@ -5069,7 +5069,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "C21")
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -5085,7 +5085,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c4a94518-0d16-43d3-b83a-865038d6a916")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR051"
 			(at 246.38 88.9 0)
 			(effects
 				(font
@@ -5135,7 +5135,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "#PWR054")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -5151,7 +5151,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c9d1287c-6cc3-4b7d-8392-c0c9e43c82f3")
-		(property "Reference" "#PWR096"
+		(property "Reference" "#PWR055"
 			(at 224.79 92.71 0)
 			(effects
 				(font
@@ -5201,7 +5201,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "#PWR096")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -5217,7 +5217,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cef23896-1b66-417b-86a8-1b0fd9de2d20")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR043"
 			(at 35.56 49.53 0)
 			(effects
 				(font
@@ -5267,7 +5267,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "#PWR041")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -5283,7 +5283,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d252e380-06e3-4ea5-b05d-29c517053a4c")
-		(property "Reference" "R25"
+		(property "Reference" "R26"
 			(at 232.41 68.58 90)
 			(effects
 				(font
@@ -5299,7 +5299,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 232.41 76.708 90)
 			(effects
 				(font
@@ -5335,7 +5335,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "R25")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -5435,7 +5435,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 102.5652 106.68 0)
 			(effects
 				(font
@@ -5606,7 +5606,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ec37cfca-6a18-4c3c-9caa-2eaf5c40dc9e")
-		(property "Reference" "R24"
+		(property "Reference" "R25"
 			(at 172.72 68.58 90)
 			(effects
 				(font
@@ -5622,7 +5622,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 172.72 76.708 90)
 			(effects
 				(font
@@ -5658,7 +5658,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "R24")
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -5674,7 +5674,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ec9533ce-38d2-4a2a-b36a-beff8cf0e652")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR044"
 			(at 59.69 49.53 0)
 			(effects
 				(font
@@ -5724,7 +5724,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "#PWR043")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -5829,7 +5829,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f0a5bb76-924b-4be0-a93e-70f4fd822aaf")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR050"
 			(at 186.69 88.9 0)
 			(effects
 				(font
@@ -5879,7 +5879,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "#PWR053")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -5895,7 +5895,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ff9f5116-5beb-4e0a-acdc-70decc513ce0")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR052"
 			(at 26.67 91.44 0)
 			(effects
 				(font
@@ -5945,7 +5945,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
-					(reference "#PWR039")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)

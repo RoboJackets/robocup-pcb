@@ -11,6 +11,202 @@
 		(comment 1 "Aiden Lee (alee659@gatech.edu)")
 	)
 	(lib_symbols
+		(symbol "*piman_lib:EVQ-P7A01P"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "S"
+				(at -2.54 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "EVQ-P7A01P"
+				(at -2.54 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "*piman_footprints:SW_EVQ-P7A01P"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://api.pim.na.industrial.panasonic.com/file_stream/main/fileversion/245500"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Tactile Switch SPST-NO Side Actuated Surface Mount, Right Angle"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Vendor P/N" "P16763CT-ND"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer P/N" "EVQ-P7A01P"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "EVQ-P7A01P_0_0"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -5.08 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0) (xy 2.794 2.1336)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 0)
+					(radius 0.3302)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 2.921 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1_1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 0 0)
+					(length 2.54)
+					(hide yes)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1_2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2_1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 2.54)
+					(hide yes)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2_2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -118,142 +314,6 @@
 					(at 0 -3.81 90)
 					(length 1.27)
 					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Switch:SW_SPST"
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "SW"
-				(at 0 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SW_SPST"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Single Pole Single Throw (SPST) switch"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "switch lever"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SW_SPST_0_0"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 0.254) (xy 1.524 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SW_SPST_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "B"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -522,26 +582,26 @@
 		(uuid "6dd1a284-99cd-42b7-90b8-7300c325962b")
 	)
 	(junction
-		(at 58.42 38.1)
+		(at 62.23 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "58f00af7-47a6-4839-a8b0-ad7dc42264bb")
+		(uuid "49bf2c99-fe12-4afc-a2e8-efa904431066")
 	)
 	(junction
-		(at 58.42 93.98)
+		(at 62.23 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "74e7d7fb-c867-430a-8ec6-427c987bf929")
+		(uuid "6bb3d3d2-212c-419e-b49d-7c8b0e6e9c37")
 	)
 	(junction
-		(at 58.42 66.04)
+		(at 62.23 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7d33dba0-d301-4c53-9411-6901f8ce429d")
+		(uuid "cb941a9f-4ee1-478c-9ea2-72cedcdf6919")
 	)
 	(wire
 		(pts
-			(xy 58.42 38.1) (xy 58.42 39.37)
+			(xy 62.23 38.1) (xy 62.23 39.37)
 		)
 		(stroke
 			(width 0)
@@ -551,7 +611,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 38.1) (xy 60.96 38.1)
+			(xy 62.23 38.1) (xy 64.77 38.1)
 		)
 		(stroke
 			(width 0)
@@ -561,7 +621,17 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 66.04) (xy 58.42 67.31)
+			(xy 58.42 93.98) (xy 62.23 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11117e23-2b17-427b-94de-6d0814167cfd")
+	)
+	(wire
+		(pts
+			(xy 62.23 66.04) (xy 62.23 67.31)
 		)
 		(stroke
 			(width 0)
@@ -571,17 +641,17 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 38.1) (xy 43.18 38.1)
+			(xy 58.42 38.1) (xy 62.23 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "31737a95-514f-4ba3-91dc-6d1a524edf01")
+		(uuid "1ab67fdd-321e-41e1-9a0d-576741a8bf06")
 	)
 	(wire
 		(pts
-			(xy 58.42 93.98) (xy 60.96 93.98)
+			(xy 62.23 93.98) (xy 64.77 93.98)
 		)
 		(stroke
 			(width 0)
@@ -591,27 +661,37 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 38.1) (xy 58.42 38.1)
+			(xy 39.37 66.04) (xy 43.18 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "56684914-2e72-45b1-b536-ccd5a4e5b062")
+		(uuid "44b5444a-8a92-4fd4-91bf-5546fd86e1b9")
 	)
 	(wire
 		(pts
-			(xy 53.34 66.04) (xy 58.42 66.04)
+			(xy 58.42 66.04) (xy 62.23 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "56c630cf-fd96-4ae4-85ef-a79e302cde72")
+		(uuid "54e456e3-c1a4-4228-b93f-a874577b1b24")
 	)
 	(wire
 		(pts
-			(xy 58.42 66.04) (xy 60.96 66.04)
+			(xy 39.37 38.1) (xy 43.18 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fb16624-f1aa-4a7f-b1f5-b5ecff691a2b")
+	)
+	(wire
+		(pts
+			(xy 62.23 66.04) (xy 64.77 66.04)
 		)
 		(stroke
 			(width 0)
@@ -621,7 +701,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 93.98) (xy 58.42 95.25)
+			(xy 62.23 93.98) (xy 62.23 95.25)
 		)
 		(stroke
 			(width 0)
@@ -641,16 +721,6 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 66.04) (xy 43.18 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7b0f2738-ad22-40a7-846b-6b8abf5d849f")
-	)
-	(wire
-		(pts
 			(xy 39.37 34.29) (xy 39.37 38.1)
 		)
 		(stroke
@@ -658,16 +728,6 @@
 			(type default)
 		)
 		(uuid "7eafe639-0286-40bc-9fe5-c4176b9377ee")
-	)
-	(wire
-		(pts
-			(xy 39.37 93.98) (xy 43.18 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8817aacb-f27e-487d-b0f2-37e7a52cc2ed")
 	)
 	(wire
 		(pts
@@ -681,17 +741,17 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 93.98) (xy 58.42 93.98)
+			(xy 39.37 93.98) (xy 43.18 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e2945ecd-12c1-4a2c-bc64-1ad2c1a2067a")
+		(uuid "a9b15a06-fef7-4dc5-a08d-4b749a4ebe58")
 	)
 	(hierarchical_label "CHARGE_BTN"
 		(shape output)
-		(at 60.96 93.98 0)
+		(at 64.77 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -702,7 +762,7 @@
 	)
 	(hierarchical_label "CHIP_BTN"
 		(shape output)
-		(at 60.96 66.04 0)
+		(at 64.77 66.04 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -713,7 +773,7 @@
 	)
 	(hierarchical_label "KICK_BTN"
 		(shape output)
-		(at 60.96 38.1 0)
+		(at 64.77 38.1 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -721,6 +781,99 @@
 			(justify left)
 		)
 		(uuid "fa29e98c-11d2-4286-a7ad-08bec814b6e4")
+	)
+	(symbol
+		(lib_id "*piman_lib:EVQ-P7A01P")
+		(at 50.8 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "056cffbf-339f-4419-bbf8-626f21774c75")
+		(property "Reference" "S4"
+			(at 50.8 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "EVQ-P7A01P"
+			(at 50.8 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "*piman_footprints:SW_EVQ-P7A01P"
+			(at 50.8 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://api.pim.na.industrial.panasonic.com/file_stream/main/fileversion/245500"
+			(at 50.8 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switch SPST-NO Side Actuated Surface Mount, Right Angle"
+			(at 50.8 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor P/N" "P16763CT-ND"
+			(at 50.8 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer P/N" "EVQ-P7A01P"
+			(at 50.8 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1_1"
+			(uuid "8fe2f58b-9566-42e5-b2bc-b7614760179c")
+		)
+		(pin "2_1"
+			(uuid "bde57775-0a09-47b3-9742-08ebf3ff3009")
+		)
+		(pin "1_2"
+			(uuid "2d3b1c40-677c-4d8c-8c83-ee2cd8283dad")
+		)
+		(pin "2_2"
+			(uuid "7db799b3-db3b-4005-9641-bf8b9e8dcda6")
+		)
+		(instances
+			(project "kicker-v3.4"
+				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f89236ed-aad2-4303-8073-83e97e337226"
+					(reference "S4")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:+3.3V")
@@ -732,7 +885,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0b6b1134-2a5a-4b16-98f3-4edebffe94b8")
-		(property "Reference" "#PWR091"
+		(property "Reference" "#PWR095"
 			(at 39.37 66.04 0)
 			(effects
 				(font
@@ -782,7 +935,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f89236ed-aad2-4303-8073-83e97e337226"
-					(reference "#PWR091")
+					(reference "#PWR095")
 					(unit 1)
 				)
 			)
@@ -790,7 +943,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 58.42 43.18 180)
+		(at 62.23 43.18 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -799,7 +952,7 @@
 		(fields_autoplaced yes)
 		(uuid "25a36d67-6e19-46bb-b7c0-3bc38a2fd7f9")
 		(property "Reference" "R50"
-			(at 60.96 41.9099 0)
+			(at 64.77 41.9099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -808,7 +961,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 60.96 44.4499 0)
+			(at 64.77 44.4499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -816,8 +969,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 60.198 43.18 90)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 64.008 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -826,7 +979,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 58.42 43.18 0)
+			(at 62.23 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -835,7 +988,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 58.42 43.18 0)
+			(at 62.23 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -859,76 +1012,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_SPST")
-		(at 48.26 93.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2a922a0a-dc53-40f4-b039-844e88c3eefe")
-		(property "Reference" "SW5"
-			(at 48.26 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_SPST"
-			(at 48.26 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 48.26 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 48.26 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 48.26 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7f00a257-6698-4cf4-9626-5eb20c63c88a")
-		)
-		(pin "2"
-			(uuid "b411434e-50a3-4cd7-99cf-b884c71337ef")
-		)
-		(instances
-			(project "kicker-v3.4"
-				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f89236ed-aad2-4303-8073-83e97e337226"
-					(reference "SW5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 58.42 74.93 0)
+		(at 62.23 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -936,8 +1021,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2ac2efa3-86bb-4712-ae72-16a5ffa916b6")
-		(property "Reference" "#PWR092"
-			(at 58.42 81.28 0)
+		(property "Reference" "#PWR096"
+			(at 62.23 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -946,7 +1031,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 58.42 80.01 0)
+			(at 62.23 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -954,7 +1039,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 58.42 74.93 0)
+			(at 62.23 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -963,7 +1048,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 58.42 74.93 0)
+			(at 62.23 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -972,7 +1057,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 58.42 74.93 0)
+			(at 62.23 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -986,7 +1071,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f89236ed-aad2-4303-8073-83e97e337226"
-					(reference "#PWR092")
+					(reference "#PWR096")
 					(unit 1)
 				)
 			)
@@ -1002,7 +1087,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "328dac0b-d820-4b2c-b723-ed11e1dceb98")
-		(property "Reference" "#PWR089"
+		(property "Reference" "#PWR093"
 			(at 39.37 38.1 0)
 			(effects
 				(font
@@ -1052,7 +1137,100 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f89236ed-aad2-4303-8073-83e97e337226"
-					(reference "#PWR089")
+					(reference "#PWR093")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "*piman_lib:EVQ-P7A01P")
+		(at 50.8 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "489211b6-1587-49bd-86f9-9389425ae8c3")
+		(property "Reference" "S3"
+			(at 50.8 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "EVQ-P7A01P"
+			(at 50.8 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "*piman_footprints:SW_EVQ-P7A01P"
+			(at 50.8 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://api.pim.na.industrial.panasonic.com/file_stream/main/fileversion/245500"
+			(at 50.8 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switch SPST-NO Side Actuated Surface Mount, Right Angle"
+			(at 50.8 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor P/N" "P16763CT-ND"
+			(at 50.8 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer P/N" "EVQ-P7A01P"
+			(at 50.8 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1_1"
+			(uuid "003aee51-500b-4c6e-88be-e00443758458")
+		)
+		(pin "2_1"
+			(uuid "8ce7994f-1eee-409f-92ab-7f650d4bc56e")
+		)
+		(pin "1_2"
+			(uuid "07a855a6-f12e-4e9e-a7d4-7a82484acf62")
+		)
+		(pin "2_2"
+			(uuid "85818c35-6020-47d2-9d3a-dca0d63df41a")
+		)
+		(instances
+			(project "kicker-v3.4"
+				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f89236ed-aad2-4303-8073-83e97e337226"
+					(reference "S3")
 					(unit 1)
 				)
 			)
@@ -1060,7 +1238,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 58.42 99.06 180)
+		(at 62.23 99.06 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1069,7 +1247,7 @@
 		(fields_autoplaced yes)
 		(uuid "5d4f3f45-8ae9-47a2-bfd4-97c251ad3531")
 		(property "Reference" "R52"
-			(at 60.96 97.7899 0)
+			(at 64.77 97.7899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1078,7 +1256,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 60.96 100.3299 0)
+			(at 64.77 100.3299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1086,8 +1264,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 60.198 99.06 90)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 64.008 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1096,7 +1274,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 58.42 99.06 0)
+			(at 62.23 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1105,7 +1283,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 58.42 99.06 0)
+			(at 62.23 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1130,7 +1308,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 58.42 102.87 0)
+		(at 62.23 102.87 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1138,8 +1316,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5ee30f3a-60bd-478d-aca5-a8b21903a2a3")
-		(property "Reference" "#PWR094"
-			(at 58.42 109.22 0)
+		(property "Reference" "#PWR098"
+			(at 62.23 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1148,7 +1326,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 58.42 107.95 0)
+			(at 62.23 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1156,7 +1334,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 58.42 102.87 0)
+			(at 62.23 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1165,7 +1343,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 58.42 102.87 0)
+			(at 62.23 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1174,7 +1352,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 58.42 102.87 0)
+			(at 62.23 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1188,7 +1366,7 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f89236ed-aad2-4303-8073-83e97e337226"
-					(reference "#PWR094")
+					(reference "#PWR098")
 					(unit 1)
 				)
 			)
@@ -1196,7 +1374,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 58.42 71.12 180)
+		(at 62.23 71.12 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1205,7 +1383,7 @@
 		(fields_autoplaced yes)
 		(uuid "6505af4e-0177-459b-a2ff-53ffa250d79d")
 		(property "Reference" "R51"
-			(at 60.96 69.8499 0)
+			(at 64.77 69.8499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1214,7 +1392,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 60.96 72.3899 0)
+			(at 64.77 72.3899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1222,8 +1400,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 60.198 71.12 90)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 64.008 71.12 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1232,7 +1410,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 58.42 71.12 0)
+			(at 62.23 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1241,7 +1419,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 58.42 71.12 0)
+			(at 62.23 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1265,74 +1443,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_SPST")
-		(at 48.26 38.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "97b49859-aed5-4a57-aa7e-5b17048fead5")
-		(property "Reference" "SW3"
-			(at 48.26 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_SPST"
-			(at 48.26 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 48.26 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 48.26 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 48.26 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7f5abe63-542a-409b-9a47-341085f7fb08")
-		)
-		(pin "2"
-			(uuid "384fb75b-4870-408b-8465-8efbc01246c2")
-		)
-		(instances
-			(project ""
-				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f89236ed-aad2-4303-8073-83e97e337226"
-					(reference "SW3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
 		(at 39.37 90.17 0)
 		(unit 1)
@@ -1342,7 +1452,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a17120c2-f2f5-4127-9d5c-95e94a9b4200")
-		(property "Reference" "#PWR093"
+		(property "Reference" "#PWR097"
 			(at 39.37 93.98 0)
 			(effects
 				(font
@@ -1392,40 +1502,50 @@
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f89236ed-aad2-4303-8073-83e97e337226"
-					(reference "#PWR093")
+					(reference "#PWR097")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_SPST")
-		(at 48.26 66.04 0)
+		(lib_id "*piman_lib:EVQ-P7A01P")
+		(at 50.8 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "f1fb1843-4e52-4279-acf7-99b46e7663c3")
-		(property "Reference" "SW4"
-			(at 48.26 59.69 0)
+		(uuid "bf9562b3-c5a6-4d7b-89ab-73128d94fc89")
+		(property "Reference" "S5"
+			(at 50.8 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SW_SPST"
-			(at 48.26 62.23 0)
+		(property "Value" "EVQ-P7A01P"
+			(at 50.8 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 48.26 66.04 0)
+		(property "Footprint" "*piman_footprints:SW_EVQ-P7A01P"
+			(at 50.8 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://api.pim.na.industrial.panasonic.com/file_stream/main/fileversion/245500"
+			(at 50.8 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1433,8 +1553,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 48.26 66.04 0)
+		(property "Description" "Tactile Switch SPST-NO Side Actuated Surface Mount, Right Angle"
+			(at 50.8 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1442,8 +1562,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 48.26 66.04 0)
+		(property "Vendor P/N" "P16763CT-ND"
+			(at 50.8 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1451,16 +1571,31 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "6c89d9d1-101f-492a-8472-2da3793ce8fd")
+		(property "Manufacturer P/N" "EVQ-P7A01P"
+			(at 50.8 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "2"
-			(uuid "fdc3a9c8-e804-41fe-a5e8-d699c4cab9f2")
+		(pin "1_1"
+			(uuid "280550cd-ac3c-4a6b-aec8-c1ad5354c56b")
+		)
+		(pin "2_1"
+			(uuid "215bd4ab-94c2-4819-8812-f9b67dfa946f")
+		)
+		(pin "1_2"
+			(uuid "dabfd07f-40ea-4ed4-8505-e7feeb6539fb")
+		)
+		(pin "2_2"
+			(uuid "85ab8d59-27e9-4d59-9a59-017299aa106d")
 		)
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f89236ed-aad2-4303-8073-83e97e337226"
-					(reference "SW4")
+					(reference "S5")
 					(unit 1)
 				)
 			)
@@ -1468,7 +1603,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 58.42 46.99 0)
+		(at 62.23 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1476,8 +1611,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ff3c8f40-b5b9-43b3-922f-50b6fc39151c")
-		(property "Reference" "#PWR090"
-			(at 58.42 53.34 0)
+		(property "Reference" "#PWR094"
+			(at 62.23 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1486,7 +1621,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 58.42 52.07 0)
+			(at 62.23 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1494,7 +1629,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 58.42 46.99 0)
+			(at 62.23 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1503,7 +1638,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 58.42 46.99 0)
+			(at 62.23 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1512,7 +1647,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 58.42 46.99 0)
+			(at 62.23 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1526,7 +1661,7 @@
 		(instances
 			(project ""
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/f89236ed-aad2-4303-8073-83e97e337226"
-					(reference "#PWR090")
+					(reference "#PWR094")
 					(unit 1)
 				)
 			)
