@@ -4537,7 +4537,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_10x10"
 			(at 59.3852 171.45 0)
 			(effects
 				(font
@@ -4546,7 +4546,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-pcr.pdf"
 			(at 58.42 167.64 0)
 			(effects
 				(font
@@ -4555,7 +4555,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Polarized capacitor"
+		(property "Description" "47 µF 63 V Aluminum - Polymer Capacitors Radial, Can - SMD 35mOhm 4000 Hrs @ 125°C"
+			(at 58.42 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer P/N" "PCR1J470MCL1GS"
+			(at 58.42 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor P/N" "493-13780-1-ND"
 			(at 58.42 167.64 0)
 			(effects
 				(font
