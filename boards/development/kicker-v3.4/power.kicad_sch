@@ -819,7 +819,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -837,7 +837,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6499,7 +6499,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 187.452 40.64 90)
 			(effects
 				(font
@@ -7073,7 +7073,7 @@
 	(symbol
 		(lib_name "01530007Z_1")
 		(lib_id "*piman_lib:01530007Z")
-		(at 49.53 36.83 0)
+		(at 49.53 36.83 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7098,7 +7098,7 @@
 			)
 		)
 		(property "Footprint" "*piman_footprints:FUSE_01530007Z"
-			(at 47.752 36.83 90)
+			(at 51.308 36.83 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7107,7 +7107,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.littelfuse.com/assetdocs/mini-153-pc-datasheet?assetguid=e17755be-ccca-4a76-9579-7e7a830e5578"
-			(at 63.5 48.26 0)
+			(at 35.56 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7116,7 +7116,7 @@
 			)
 		)
 		(property "Description" "Fuse Holder 15 A 32V 1 Circuit Blade Through Hole"
-			(at 80.01 40.64 0)
+			(at 19.05 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7125,7 +7125,7 @@
 			)
 		)
 		(property "Manufacturer P/N" "01530007Z"
-			(at 69.85 46.99 0)
+			(at 29.21 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7134,7 +7134,7 @@
 			)
 		)
 		(property "Vendor P/N" "F064-ND"
-			(at 62.23 44.45 0)
+			(at 36.83 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
