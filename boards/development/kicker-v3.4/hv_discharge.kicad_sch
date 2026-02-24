@@ -631,6 +631,113 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -2013,7 +2120,7 @@
 	)
 	(rectangle
 		(start 19.05 21.59)
-		(end 92.71 52.07)
+		(end 118.11 52.07)
 		(stroke
 			(width 0)
 			(type default)
@@ -2160,6 +2267,12 @@
 		(uuid "2b01dcb2-ef3c-4511-aec6-96862242fb63")
 	)
 	(junction
+		(at 80.01 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "33a29970-e0f8-4c49-9c53-0b03a407fc48")
+	)
+	(junction
 		(at 73.66 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2253,7 +2366,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 31.75) (xy 80.01 34.29)
+			(xy 99.06 31.75) (xy 99.06 34.29)
 		)
 		(stroke
 			(width 0)
@@ -2270,6 +2383,16 @@
 			(type default)
 		)
 		(uuid "07115082-dc42-4792-8916-cb42faed8c23")
+	)
+	(wire
+		(pts
+			(xy 40.64 105.41) (xy 40.64 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "135c117e-ffed-4fd3-b3b5-b8e833e413ab")
 	)
 	(wire
 		(pts
@@ -2343,6 +2466,16 @@
 	)
 	(wire
 		(pts
+			(xy 80.01 31.75) (xy 80.01 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c18ad37-f631-4948-9722-1b21b7a10bf1")
+	)
+	(wire
+		(pts
 			(xy 186.69 80.01) (xy 186.69 82.55)
 		)
 		(stroke
@@ -2380,6 +2513,16 @@
 			(type default)
 		)
 		(uuid "36638721-6b50-491b-ac0f-75c6d250ea49")
+	)
+	(wire
+		(pts
+			(xy 25.4 105.41) (xy 25.4 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "388be8ae-ca72-4729-aeb3-3f78bbee83ae")
 	)
 	(wire
 		(pts
@@ -3001,6 +3144,16 @@
 		)
 		(uuid "fb616aaa-c0d0-47bc-8acd-04f1abbed0fa")
 	)
+	(wire
+		(pts
+			(xy 80.01 34.29) (xy 99.06 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe250573-a4c1-43ab-a0f6-9e30ec20c2f3")
+	)
 	(label "KICK_OUT"
 		(at 220.98 74.93 180)
 		(effects
@@ -3062,12 +3215,23 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
+				(thickness 0.1588)
 			)
 			(justify right)
 		)
 		(uuid "11f717d4-284b-46d3-b0d1-f6869d55638a")
+	)
+	(hierarchical_label "CHIP_IN"
+		(shape input)
+		(at 40.64 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify left)
+		)
+		(uuid "19b51e4f-c123-482f-b878-a9bc5eff2bbf")
 	)
 	(hierarchical_label "HV"
 		(shape input)
@@ -3086,8 +3250,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
+				(thickness 0.1588)
 			)
 			(justify right)
 		)
@@ -3099,12 +3262,23 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
+				(thickness 0.1588)
 			)
 			(justify right)
 		)
 		(uuid "8eb2ffba-8f30-473a-8b27-35342d9a13ef")
+	)
+	(hierarchical_label "KICK_IN"
+		(shape input)
+		(at 25.4 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify left)
+		)
+		(uuid "c0ee7b39-0338-4dc6-89a9-b47233a26c4f")
 	)
 	(hierarchical_label "HV"
 		(shape input)
@@ -3118,8 +3292,75 @@
 		(uuid "f70764ab-5e93-4bf0-89d9-5b436b96a936")
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 40.64 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0be6de22-ca77-483b-875a-d5eb9893a701")
+		(property "Reference" "TP18"
+			(at 43.18 100.8379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CHIP_IN"
+			(at 43.18 103.3779 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 45.72 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 45.72 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 40.64 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aed675b0-fe6d-4647-945f-ebeaf8ecc862")
+		)
+		(instances
+			(project "kicker-v3.4"
+				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
+					(reference "TP18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+15V")
-		(at 80.01 31.75 0)
+		(at 99.06 31.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3128,7 +3369,7 @@
 		(fields_autoplaced yes)
 		(uuid "1790cd03-8262-49ff-9c3e-60c500565518")
 		(property "Reference" "#PWR042"
-			(at 80.01 35.56 0)
+			(at 99.06 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3137,7 +3378,7 @@
 			)
 		)
 		(property "Value" "+15V"
-			(at 80.01 26.67 0)
+			(at 99.06 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3145,7 +3386,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 80.01 31.75 0)
+			(at 99.06 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3154,7 +3395,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 80.01 31.75 0)
+			(at 99.06 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3163,7 +3404,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+15V\""
-			(at 80.01 31.75 0)
+			(at 99.06 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3889,6 +4130,73 @@
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
 					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 80.01 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "473af693-2ad7-4c4f-803c-3b95d0dfe61b")
+		(property "Reference" "TP16"
+			(at 82.55 27.1779 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "15V"
+			(at 82.55 29.7179 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 85.09 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 85.09 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 80.01 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8d043034-d97b-4c4a-bcac-5ebbd203aa00")
+		)
+		(instances
+			(project "kicker-v3.4"
+				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
+					(reference "TP16")
 					(unit 1)
 				)
 			)
@@ -5402,6 +5710,73 @@
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
 					(reference "#PWR045")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 25.4 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e37860f5-8e46-4a44-9f84-91dcdea285d5")
+		(property "Reference" "TP17"
+			(at 27.94 100.8379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "KICK_IN"
+			(at 27.94 103.3779 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 30.48 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 30.48 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 25.4 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bce701c0-069c-4efc-b00e-934eec4d6e84")
+		)
+		(instances
+			(project "kicker-v3.4"
+				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/e4304b20-4d06-4872-95c9-1dabf011b89c"
+					(reference "TP17")
 					(unit 1)
 				)
 			)
