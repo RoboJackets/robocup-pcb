@@ -4510,6 +4510,16 @@
 		)
 		(uuid "13354440-70d3-4e87-930e-8eb67e6fa473")
 	)
+	(label "USB_P"
+		(at 74.93 110.49 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "14123302-40f2-4b47-87c4-bc2011b0eafc")
+	)
 	(label "USB0"
 		(at 86.36 107.95 0)
 		(effects
@@ -4579,6 +4589,16 @@
 			(justify left bottom)
 		)
 		(uuid "bc99966b-e033-4362-82a8-38a14ccec5bf")
+	)
+	(label "USB_N"
+		(at 74.93 107.95 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c8230144-56c0-4ef4-9493-75a7b289981d")
 	)
 	(label "USB1"
 		(at 86.36 110.49 0)
@@ -6322,7 +6342,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SON:WSON-10-1EP_2x3mm_P0.5mm_EP0.84x2.4mm_ThermalVias"
+		(property "Footprint" "Package_SON:WSON-10-1EP_2x3mm_P0.5mm_EP0.84x2.4mm"
 			(at 220.98 52.07 0)
 			(effects
 				(font
