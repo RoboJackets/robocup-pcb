@@ -189,8 +189,10 @@
       "track_widths": [
         0.0,
         0.127,
+        0.1905,
         0.254,
-        0.381
+        0.381,
+        0.508
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -443,7 +445,7 @@
       "hier_label_mismatch": "error",
       "label_dangling": "error",
       "label_multiple_wires": "warning",
-      "lib_symbol_issues": "error",
+      "lib_symbol_issues": "ignore",
       "lib_symbol_mismatch": "ignore",
       "missing_bidi_pin": "warning",
       "missing_input_pin": "warning",
@@ -503,13 +505,7 @@
     "meta": {
       "version": 4
     },
-    "net_colors": {
-      "+3.3V": "rgb(0, 255, 0)",
-      "+BATT": "rgb(0, 0, 255)",
-      "GND": "rgb(0, 255, 255)",
-      "Net-(U8-VREG_VOUT)": "rgb(255, 0, 255)",
-      "VBUS": "rgb(255, 255, 0)"
-    },
+    "net_colors": null,
     "netclass_assignments": null,
     "netclass_patterns": []
   },

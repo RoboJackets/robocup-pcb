@@ -453,6 +453,16 @@
 	)
 	(wire
 		(pts
+			(xy 68.58 59.69) (xy 128.27 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f3c0940-8fae-42fb-8afa-bfa41cb4ac59")
+	)
+	(wire
+		(pts
 			(xy 179.07 30.48) (xy 185.42 30.48)
 		)
 		(stroke
@@ -460,6 +470,16 @@
 			(type default)
 		)
 		(uuid "60e56e54-2afa-45c3-897f-b9d92eb4c4bf")
+	)
+	(wire
+		(pts
+			(xy 68.58 57.15) (xy 128.27 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e9991c3-2f7f-4815-a809-3298589ace0c")
 	)
 	(wire
 		(pts
@@ -503,7 +523,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 66.04) (xy 128.27 66.04)
+			(xy 123.19 68.58) (xy 128.27 68.58)
 		)
 		(stroke
 			(width 0)
@@ -523,7 +543,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 63.5) (xy 128.27 63.5)
+			(xy 123.19 66.04) (xy 128.27 66.04)
 		)
 		(stroke
 			(width 0)
@@ -543,7 +563,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 82.55) (xy 128.27 82.55)
+			(xy 123.19 83.82) (xy 128.27 83.82)
 		)
 		(stroke
 			(width 0)
@@ -553,23 +573,13 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 80.01) (xy 128.27 80.01)
+			(xy 123.19 81.28) (xy 128.27 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "acd536da-22a7-49cd-b721-fc497fd28605")
-	)
-	(bus
-		(pts
-			(xy 68.58 57.15) (xy 128.27 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b19ee3ed-cf74-44ae-89e1-662668dae42d")
 	)
 	(wire
 		(pts
@@ -633,7 +643,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 77.47) (xy 128.27 77.47)
+			(xy 123.19 78.74) (xy 128.27 78.74)
 		)
 		(stroke
 			(width 0)
@@ -1029,16 +1039,6 @@
 				(justify left)
 			)
 		)
-		(pin "USB[0..1]" bidirectional
-			(at 128.27 57.15 180)
-			(uuid "05f3ca17-dd38-4602-8454-6598bcd11403")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "HV[0..4]" output
 			(at 160.02 78.74 0)
 			(uuid "022e0e89-067b-44b8-a7f8-052a715d5149")
@@ -1060,7 +1060,7 @@
 			)
 		)
 		(pin "BB_TRIGGER" output
-			(at 128.27 66.04 180)
+			(at 128.27 68.58 180)
 			(uuid "ae5ad6e7-f0d0-4679-b901-63c8a44a6aa4")
 			(effects
 				(font
@@ -1070,7 +1070,7 @@
 			)
 		)
 		(pin "BB_SENSE" input
-			(at 128.27 63.5 180)
+			(at 128.27 66.04 180)
 			(uuid "9d2de5a5-7321-4c6c-8c87-65010a2cf84b")
 			(effects
 				(font
@@ -1080,7 +1080,7 @@
 			)
 		)
 		(pin "CHARGE_BTN" input
-			(at 128.27 77.47 180)
+			(at 128.27 78.74 180)
 			(uuid "b21405d4-00b6-4a63-8ce5-ed4848b2bfe4")
 			(effects
 				(font
@@ -1090,7 +1090,7 @@
 			)
 		)
 		(pin "CHIP_BTN" input
-			(at 128.27 80.01 180)
+			(at 128.27 81.28 180)
 			(uuid "78b6de9f-9b7d-41d0-a836-d99bad0a6817")
 			(effects
 				(font
@@ -1100,8 +1100,28 @@
 			)
 		)
 		(pin "KICK_BTN" input
-			(at 128.27 82.55 180)
+			(at 128.27 83.82 180)
 			(uuid "29efcff9-afdf-4fe9-a586-5af1b2cb4d74")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "USB_N" bidirectional
+			(at 128.27 59.69 180)
+			(uuid "b994ebfe-308c-459c-9bef-83b321d4f1f2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "USB_P" bidirectional
+			(at 128.27 57.15 180)
+			(uuid "cd4d44f9-c433-4bbb-8bf5-1df2ecf50e70")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1200,7 +1220,7 @@
 		)
 	)
 	(sheet
-		(at 87.63 60.96)
+		(at 93.98 63.5)
 		(size 29.21 7.62)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1216,7 +1236,7 @@
 		)
 		(uuid "cb2ed4c1-6aa6-4f43-8deb-f53b1c57f0a4")
 		(property "Sheetname" "Breakbeam"
-			(at 87.63 60.2484 0)
+			(at 93.98 62.7884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1225,7 +1245,7 @@
 			)
 		)
 		(property "Sheetfile" "breakbeam.kicad_sch"
-			(at 87.63 69.1646 0)
+			(at 93.98 71.7046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1234,7 +1254,7 @@
 			)
 		)
 		(pin "BB_SENSE" output
-			(at 116.84 63.5 0)
+			(at 123.19 66.04 0)
 			(uuid "3380dd5d-5762-4f60-b0d1-7f5ad35f0985")
 			(effects
 				(font
@@ -1244,7 +1264,7 @@
 			)
 		)
 		(pin "BB_TRIGGER" input
-			(at 116.84 66.04 0)
+			(at 123.19 68.58 0)
 			(uuid "8660c280-4906-48bc-990a-214155ccc78c")
 			(effects
 				(font
@@ -1407,9 +1427,19 @@
 				(justify right)
 			)
 		)
-		(pin "USB[0..1]" output
+		(pin "USB_N" bidirectional
+			(at 68.58 59.69 0)
+			(uuid "d6bc4ff0-5c41-4318-8edc-0b20ebcf4930")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "USB_P" bidirectional
 			(at 68.58 57.15 0)
-			(uuid "f9d08247-0783-4511-aa86-f2b12b5a9971")
+			(uuid "bc0ede34-7ce1-41ef-923a-b160378083d6")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1478,7 +1508,7 @@
 		)
 	)
 	(sheet
-		(at 87.63 74.93)
+		(at 93.98 76.2)
 		(size 29.21 10.16)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1494,7 +1524,7 @@
 		)
 		(uuid "f89236ed-aad2-4303-8073-83e97e337226")
 		(property "Sheetname" "Debug Buttons"
-			(at 87.63 74.2184 0)
+			(at 93.98 75.4884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1503,7 +1533,7 @@
 			)
 		)
 		(property "Sheetfile" "debug_btn.kicad_sch"
-			(at 87.63 85.6746 0)
+			(at 93.98 86.9446 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1512,7 +1542,7 @@
 			)
 		)
 		(pin "CHARGE_BTN" output
-			(at 116.84 77.47 0)
+			(at 123.19 78.74 0)
 			(uuid "dcfd698c-472e-4c79-84d6-a2ab9ebb8084")
 			(effects
 				(font
@@ -1522,7 +1552,7 @@
 			)
 		)
 		(pin "CHIP_BTN" output
-			(at 116.84 80.01 0)
+			(at 123.19 81.28 0)
 			(uuid "3c264890-612d-46db-8fd0-a05d99ae4671")
 			(effects
 				(font
@@ -1532,7 +1562,7 @@
 			)
 		)
 		(pin "KICK_BTN" output
-			(at 116.84 82.55 0)
+			(at 123.19 83.82 0)
 			(uuid "d3320e5f-d285-4d84-b841-1eafa0f0384d")
 			(effects
 				(font
