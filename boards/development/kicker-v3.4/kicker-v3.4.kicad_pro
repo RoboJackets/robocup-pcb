@@ -58,7 +58,40 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "courtyards_overlap|125205000|58055000|749db96c-3996-49dd-9b62-6c9a0c6bd0c8|c37b7385-8fe3-4630-b0c9-eaffb5128e85",
+          ""
+        ],
+        [
+          "courtyards_overlap|66205000|58055000|799bf1eb-55f0-4c04-a677-2e31b19899d9|908a5b74-69e1-4461-8ad3-5738fe149c79",
+          ""
+        ],
+        [
+          "silk_edge_clearance|130377967|164877966|52ac8f8e-7085-47c9-9f52-3f52470cf534|3046f97a-df9f-4af1-8146-b98350e73fe8",
+          ""
+        ],
+        [
+          "silk_edge_clearance|170500000|137499954|3b6d5fee-96e4-4eb1-b917-615c2c3ab285|7ad1281a-a644-4022-b14f-6c66398647c9",
+          ""
+        ],
+        [
+          "silk_edge_clearance|29499999|137499954|af996028-05e9-433c-adcd-e3c8dbb6e827|54a07f33-f077-4b76-a8b7-1b60dfcf3eb7",
+          ""
+        ],
+        [
+          "silk_edge_clearance|44377967|164877966|3deba123-d48b-4915-aa35-30e20daaabb5|021b5873-1d9f-4a38-94dc-4beddf89cd7e",
+          ""
+        ],
+        [
+          "silk_over_copper|127115000|63100000|460a7044-3101-4b30-9dc0-26c333fd254b|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_over_copper|72885000|63100000|e2af8e4e-2a05-48d7-a618-c83de4fbc5c3|00000000-0000-0000-0000-000000000000",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -102,7 +135,7 @@
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
         "silk_over_copper": "warning",
-        "silk_overlap": "warning",
+        "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
@@ -125,7 +158,7 @@
         "max_error": 0.005,
         "min_clearance": 0.0,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.5,
+        "min_copper_edge_clearance": 0.75,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.15,
         "min_hole_to_hole": 0.25,
@@ -500,6 +533,20 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "clearance": 0.2,
+        "diff_pair_gap": 0.2,
+        "diff_pair_width": 0.36,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "USB DP",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.36,
+        "via_diameter": 0.6,
+        "via_drill": 0.3
       }
     ],
     "meta": {
@@ -507,7 +554,12 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "USB DP",
+        "pattern": "/MCU/USB*"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -734,6 +786,10 @@
     [
       "f89236ed-aad2-4303-8073-83e97e337226",
       "Debug Buttons"
+    ],
+    [
+      "ebfaf136-90a8-49e8-9dee-625b6197ce05",
+      "Mechanical"
     ]
   ],
   "text_variables": {}
