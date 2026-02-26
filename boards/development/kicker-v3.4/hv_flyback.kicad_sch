@@ -2426,30 +2426,6 @@
 		)
 		(uuid "0abb6ab6-d7de-47f9-bcad-b0df1941422f")
 	)
-	(text_box "THIS IS AN UNVERIFIED DESIGN BY BERNARDO PEREZ!!!!\nTHIS WAS COPIED FROM BRANCH FLYBACK-BREAKOUT-V1.0\nTHIS WAS ONLY WORKED IN LTSPICE AND FAILED REAL TESTS!!!\nDO NOT BLINDLY TRUST THAT THIS WORKS OUT OF THE BOX!!!"
-		(exclude_from_sim no)
-		(at 95.25 110.49 0)
-		(size 97.79 12.7)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-			(color 255 0 0 1)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.905 1.905)
-				(thickness 0.381)
-				(bold yes)
-				(color 255 2 51 1)
-			)
-			(justify top)
-		)
-		(uuid "1a122707-9622-4b14-9e5a-d41e5e7a6f90")
-	)
 	(text_box "From sim...\nV_{sn} = 17.75 V\ndV_{sn} = 890 mV (5% of V_{sn})\nV_{in(max)} = 22 V\nV_{d(rvsmax)} = V_{sn}+V_{in(max)} = 40 V"
 		(exclude_from_sim no)
 		(at 136.906 168.402 0)
