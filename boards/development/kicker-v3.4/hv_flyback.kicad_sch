@@ -2228,7 +2228,7 @@
 	)
 	(rectangle
 		(start 20.32 153.67)
-		(end 77.47 180.34)
+		(end 54.61 180.34)
 		(stroke
 			(width 0)
 			(type default)
@@ -2262,7 +2262,7 @@
 		)
 		(uuid d2ddce89-575c-468d-b1c4-db7a5efe5af6)
 	)
-	(text "Place MLCC (10uF) caps close to Vin pin.\nPolymer cap (47uF) can be placed slightly further away."
+	(text "Place MLCC (10uF) caps close to Vin pin."
 		(exclude_from_sim no)
 		(at 20.574 192.278 0)
 		(effects
@@ -2306,6 +2306,18 @@
 			)
 		)
 		(uuid "53995ddc-99c9-4dc2-8e33-01619a98fabe")
+	)
+	(text "Polymer cap (47uF) near transformer"
+		(exclude_from_sim no)
+		(at 213.868 17.526 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 0 1)
+			)
+			(justify right)
+		)
+		(uuid "6df7313e-baa1-4c60-8609-53025e6e8a83")
 	)
 	(text "VIN Decoupling"
 		(exclude_from_sim no)
@@ -2372,7 +2384,7 @@
 		)
 		(uuid "b544af50-fe37-420b-98bd-a27e46d9eb19")
 	)
-	(text "Target voltage dropped from 250V to 200V"
+	(text "Target voltage dropped from 250V to 200V\nbecause Cap voltage dropped from 350V to 250V"
 		(exclude_from_sim no)
 		(at 241.3 160.02 0)
 		(effects
@@ -2595,6 +2607,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bd34b587-2359-4d58-b208-f74aec6be2e0")
+	)
+	(junction
+		(at 186.69 20.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dd7ed4aa-0959-464d-a9ca-47e2d37e3476")
 	)
 	(junction
 		(at 196.85 48.26)
@@ -2834,16 +2852,6 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 162.56) (xy 58.42 162.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "44fd6b05-2e18-4fd0-9d75-d8f78dfe0569")
-	)
-	(wire
-		(pts
 			(xy 99.06 45.72) (xy 100.33 45.72)
 		)
 		(stroke
@@ -2914,7 +2922,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 20.32) (xy 209.55 20.32)
+			(xy 184.15 20.32) (xy 186.69 20.32)
 		)
 		(stroke
 			(width 0)
@@ -3074,7 +3082,17 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 171.45) (xy 58.42 172.72)
+			(xy 186.69 20.32) (xy 186.69 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ddb035c-b8e2-4e2f-99ac-baa67cb8cdf4")
+	)
+	(wire
+		(pts
+			(xy 186.69 29.21) (xy 186.69 30.48)
 		)
 		(stroke
 			(width 0)
@@ -3485,6 +3503,16 @@
 	)
 	(wire
 		(pts
+			(xy 186.69 20.32) (xy 209.55 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1d5e511-0617-40dd-850e-65bbf0568f76")
+	)
+	(wire
+		(pts
 			(xy 40.64 158.75) (xy 40.64 162.56)
 		)
 		(stroke
@@ -3492,16 +3520,6 @@
 			(type default)
 		)
 		(uuid "f31ddfd5-fc54-4558-8a81-bc46f49cf752")
-	)
-	(wire
-		(pts
-			(xy 58.42 162.56) (xy 58.42 163.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f3f16757-d029-46db-ad9a-92794c18e8b1")
 	)
 	(wire
 		(pts
@@ -3626,7 +3644,7 @@
 	)
 	(hierarchical_label "BATT+"
 		(shape input)
-		(at 205.74 20.32 180)
+		(at 184.15 20.32 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4811,7 +4829,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 58.42 167.64 0)
+		(at 186.69 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4820,7 +4838,7 @@
 		(fields_autoplaced yes)
 		(uuid "51586e1a-6f38-4579-98ac-20a631dd791d")
 		(property "Reference" "C15"
-			(at 62.23 165.4809 0)
+			(at 190.5 23.2409 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4829,7 +4847,7 @@
 			)
 		)
 		(property "Value" "47u 50V"
-			(at 62.23 168.0209 0)
+			(at 190.5 25.7809 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4838,7 +4856,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:CP_Elec_10x10"
-			(at 59.3852 171.45 0)
+			(at 187.6552 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4847,7 +4865,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-pcr.pdf"
-			(at 58.42 167.64 0)
+			(at 186.69 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4856,7 +4874,7 @@
 			)
 		)
 		(property "Description" "47 µF 63 V Aluminum - Polymer Capacitors Radial, Can - SMD 35mOhm 4000 Hrs @ 125°C"
-			(at 58.42 167.64 0)
+			(at 186.69 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4865,7 +4883,7 @@
 			)
 		)
 		(property "Manufacturer P/N" "PCR1J470MCL1GS"
-			(at 58.42 167.64 0)
+			(at 186.69 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4874,7 +4892,7 @@
 			)
 		)
 		(property "Vendor P/N" "493-13780-1-ND"
-			(at 58.42 167.64 0)
+			(at 186.69 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4965,7 +4983,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 58.42 172.72 0)
+		(at 186.69 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4974,7 +4992,7 @@
 		(fields_autoplaced yes)
 		(uuid "581095c8-f430-46e2-9e6a-bd4ce7f6a012")
 		(property "Reference" "#PWR033"
-			(at 58.42 179.07 0)
+			(at 186.69 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4983,7 +5001,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 58.42 177.8 0)
+			(at 186.69 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4991,7 +5009,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 58.42 172.72 0)
+			(at 186.69 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5000,7 +5018,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 58.42 172.72 0)
+			(at 186.69 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5009,7 +5027,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 58.42 172.72 0)
+			(at 186.69 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)

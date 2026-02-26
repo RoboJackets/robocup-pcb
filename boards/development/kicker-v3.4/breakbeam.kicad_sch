@@ -1220,7 +1220,7 @@
 	)
 	(rectangle
 		(start 20.32 59.69)
-		(end 83.82 92.71)
+		(end 96.52 101.6)
 		(stroke
 			(width 0)
 			(type default)
@@ -1271,7 +1271,7 @@
 		(uuid "0f800a33-05b6-49cf-a24a-edd19066cf9d")
 	)
 	(junction
-		(at 38.1 72.39)
+		(at 44.45 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "13ffc04e-cc64-4a29-aeaa-2b82fcd9e0fd")
@@ -1289,14 +1289,26 @@
 		(uuid "4a9bc2be-77ad-4015-947b-74445f12fdb3")
 	)
 	(junction
-		(at 58.42 80.01)
+		(at 64.77 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "64813c61-1da4-4586-b586-b2a5f5536b4d")
 	)
+	(junction
+		(at 55.88 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "93a74442-052f-417b-bbd8-8cc04375b56f")
+	)
+	(junction
+		(at 44.45 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "deb4cf73-ab43-4b0a-8cdb-abe70041a786")
+	)
 	(wire
 		(pts
-			(xy 58.42 80.01) (xy 63.5 80.01)
+			(xy 64.77 87.63) (xy 69.85 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1326,7 +1338,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 67.31) (xy 36.83 67.31)
+			(xy 44.45 74.93) (xy 43.18 74.93)
 		)
 		(stroke
 			(width 0)
@@ -1336,7 +1348,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 85.09) (xy 38.1 86.36)
+			(xy 44.45 92.71) (xy 44.45 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1356,7 +1368,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 66.04) (xy 55.88 69.85)
+			(xy 81.28 73.66) (xy 81.28 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1366,7 +1378,17 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 80.01) (xy 46.99 80.01)
+			(xy 55.88 77.47) (xy 68.58 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f0477d4-4ef1-4234-b161-401b7660bacb")
+	)
+	(wire
+		(pts
+			(xy 52.07 87.63) (xy 53.34 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1376,7 +1398,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 69.85) (xy 55.88 69.85)
+			(xy 76.2 77.47) (xy 81.28 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1386,7 +1408,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 72.39) (xy 38.1 74.93)
+			(xy 44.45 80.01) (xy 44.45 82.55)
 		)
 		(stroke
 			(width 0)
@@ -1416,7 +1438,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 69.85) (xy 43.18 69.85)
+			(xy 43.18 77.47) (xy 55.88 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1446,7 +1468,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 72.39) (xy 38.1 67.31)
+			(xy 44.45 80.01) (xy 44.45 74.93)
 		)
 		(stroke
 			(width 0)
@@ -1456,7 +1478,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 80.01) (xy 58.42 80.01)
+			(xy 60.96 87.63) (xy 64.77 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1476,13 +1498,23 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 72.39) (xy 36.83 72.39)
+			(xy 44.45 80.01) (xy 43.18 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "e514bcb0-bef6-4025-8e21-ce88d8f0c71b")
+	)
+	(wire
+		(pts
+			(xy 44.45 72.39) (xy 44.45 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8c7e6f1-4062-41ac-8950-83e1a5764e94")
 	)
 	(wire
 		(pts
@@ -1517,7 +1549,7 @@
 	)
 	(hierarchical_label "BB_TRIGGER"
 		(shape input)
-		(at 63.5 80.01 0)
+		(at 69.85 87.63 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1528,7 +1560,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 55.88 66.04 0)
+		(at 81.28 73.66 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1537,7 +1569,7 @@
 		(fields_autoplaced yes)
 		(uuid "2591f6eb-0fbe-4c7f-9a18-2db3afff3613")
 		(property "Reference" "#PWR089"
-			(at 55.88 69.85 0)
+			(at 81.28 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1546,7 +1578,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 55.88 60.96 0)
+			(at 81.28 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1554,7 +1586,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 55.88 66.04 0)
+			(at 81.28 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1563,7 +1595,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 66.04 0)
+			(at 81.28 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1572,7 +1604,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 55.88 66.04 0)
+			(at 81.28 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1594,7 +1626,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 58.42 80.01 0)
+		(at 64.77 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1603,7 +1635,7 @@
 		(fields_autoplaced yes)
 		(uuid "3dac60db-b4f9-4ac6-866e-49b1b4c7052e")
 		(property "Reference" "TP12"
-			(at 60.96 75.4379 0)
+			(at 67.31 83.0579 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1612,7 +1644,7 @@
 			)
 		)
 		(property "Value" "BB_TRIGGER"
-			(at 60.96 77.9779 0)
+			(at 67.31 85.5979 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1621,7 +1653,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 63.5 80.01 0)
+			(at 69.85 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1630,7 +1662,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 63.5 80.01 0)
+			(at 69.85 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1639,7 +1671,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 58.42 80.01 0)
+			(at 64.77 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1654,6 +1686,73 @@
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/cb2ed4c1-6aa6-4f43-8deb-f53b1c57f0a4"
 					(reference "TP12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 44.45 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3f449d09-d82b-4224-acac-7f500871dcd3")
+		(property "Reference" "TP34"
+			(at 46.99 67.8179 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BB_DRAIN"
+			(at 46.99 70.3579 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 49.53 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 49.53 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 44.45 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dd359847-c00f-43f8-8f2a-e930390e2354")
+		)
+		(instances
+			(project "kicker-v3.4"
+				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/cb2ed4c1-6aa6-4f43-8deb-f53b1c57f0a4"
+					(reference "TP34")
 					(unit 1)
 				)
 			)
@@ -1729,7 +1828,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x03_Pin")
-		(at 31.75 69.85 0)
+		(at 38.1 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1738,7 +1837,7 @@
 		(fields_autoplaced yes)
 		(uuid "59d325b8-e53f-4548-b7ba-c4e59354802f")
 		(property "Reference" "J9"
-			(at 32.385 62.23 0)
+			(at 38.735 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1746,7 +1845,7 @@
 			)
 		)
 		(property "Value" "BB_TX"
-			(at 32.385 64.77 0)
+			(at 38.735 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1754,7 +1853,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_PH_S3B-PH-K_1x03_P2.00mm_Horizontal"
-			(at 31.75 69.85 0)
+			(at 38.1 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1763,7 +1862,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 31.75 69.85 0)
+			(at 38.1 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1772,7 +1871,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated"
-			(at 31.75 69.85 0)
+			(at 38.1 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1867,8 +1966,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 55.88 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "96b1952a-23eb-4db6-b347-accda3591cc4")
+		(property "Reference" "TP35"
+			(at 58.42 72.8979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BB_SOURCE"
+			(at 58.42 75.4379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 60.96 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 60.96 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 55.88 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3dd84859-d28f-416f-882c-1c0f7771a2d0")
+		)
+		(instances
+			(project "kicker-v3.4"
+				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/cb2ed4c1-6aa6-4f43-8deb-f53b1c57f0a4"
+					(reference "TP35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 38.1 86.36 0)
+		(at 44.45 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1877,7 +2043,7 @@
 		(fields_autoplaced yes)
 		(uuid "9d572163-69af-43e9-a159-3e142ed7410d")
 		(property "Reference" "#PWR092"
-			(at 38.1 92.71 0)
+			(at 44.45 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1886,7 +2052,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 38.1 91.44 0)
+			(at 44.45 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1894,7 +2060,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 38.1 86.36 0)
+			(at 44.45 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1903,7 +2069,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 38.1 86.36 0)
+			(at 44.45 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1912,7 +2078,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 38.1 86.36 0)
+			(at 44.45 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1934,7 +2100,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 46.99 69.85 90)
+		(at 72.39 77.47 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1943,7 +2109,7 @@
 		(fields_autoplaced yes)
 		(uuid "a413a992-e80d-4fcd-a4c3-541b7d87e3f1")
 		(property "Reference" "R47"
-			(at 46.99 63.5 90)
+			(at 72.39 71.12 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1951,7 +2117,7 @@
 			)
 		)
 		(property "Value" "100"
-			(at 46.99 66.04 90)
+			(at 72.39 73.66 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1959,7 +2125,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 46.99 71.628 90)
+			(at 72.39 79.248 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1968,7 +2134,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 46.99 69.85 0)
+			(at 72.39 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1977,7 +2143,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 46.99 69.85 0)
+			(at 72.39 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2002,7 +2168,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 50.8 80.01 90)
+		(at 57.15 87.63 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2011,7 +2177,7 @@
 		(fields_autoplaced yes)
 		(uuid "ce4f7ccf-4a4c-43ae-8755-148ddaf456e6")
 		(property "Reference" "R49"
-			(at 50.8 73.66 90)
+			(at 57.15 81.28 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2019,7 +2185,7 @@
 			)
 		)
 		(property "Value" "100"
-			(at 50.8 76.2 90)
+			(at 57.15 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2027,7 +2193,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 50.8 81.788 90)
+			(at 57.15 89.408 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2036,7 +2202,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 50.8 80.01 0)
+			(at 57.15 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2045,7 +2211,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 50.8 80.01 0)
+			(at 57.15 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2137,7 +2303,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:DMG1012T")
-		(at 40.64 80.01 0)
+		(at 46.99 87.63 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2146,7 +2312,7 @@
 		(dnp no)
 		(uuid "e7318a50-864d-4a62-aff9-82ccc4817435")
 		(property "Reference" "Q7"
-			(at 34.29 79.4384 0)
+			(at 40.64 87.0584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2155,7 +2321,7 @@
 			)
 		)
 		(property "Value" "DMG1012T"
-			(at 34.29 81.9784 0)
+			(at 40.64 89.5984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2164,7 +2330,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-523"
-			(at 35.56 81.915 0)
+			(at 41.91 89.535 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2174,7 +2340,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds31783.pdf"
-			(at 35.56 83.82 0)
+			(at 41.91 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2184,7 +2350,7 @@
 			)
 		)
 		(property "Description" "20V Vds, 0.63 Id, N-Channel MOSFET with ESD protection, SOT-523"
-			(at 40.64 80.01 0)
+			(at 46.99 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)

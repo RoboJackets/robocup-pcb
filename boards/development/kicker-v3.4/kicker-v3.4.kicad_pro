@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.25
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -65,22 +65,6 @@
         ],
         [
           "courtyards_overlap|66205000|58055000|799bf1eb-55f0-4c04-a677-2e31b19899d9|908a5b74-69e1-4461-8ad3-5738fe149c79",
-          ""
-        ],
-        [
-          "silk_edge_clearance|130377967|164877966|52ac8f8e-7085-47c9-9f52-3f52470cf534|3046f97a-df9f-4af1-8146-b98350e73fe8",
-          ""
-        ],
-        [
-          "silk_edge_clearance|170500000|137499954|3b6d5fee-96e4-4eb1-b917-615c2c3ab285|7ad1281a-a644-4022-b14f-6c66398647c9",
-          ""
-        ],
-        [
-          "silk_edge_clearance|29499999|137499954|af996028-05e9-433c-adcd-e3c8dbb6e827|54a07f33-f077-4b76-a8b7-1b60dfcf3eb7",
-          ""
-        ],
-        [
-          "silk_edge_clearance|44377967|164877966|3deba123-d48b-4915-aa35-30e20daaabb5|021b5873-1d9f-4a38-94dc-4beddf89cd7e",
           ""
         ],
         [
@@ -692,6 +676,12 @@
           "group_by": false,
           "label": "#",
           "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "DigiKey P/N",
+          "name": "DigiKey P/N",
           "show": false
         }
       ],
