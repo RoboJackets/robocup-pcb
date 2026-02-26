@@ -3130,7 +3130,7 @@
 		)
 		(uuid "1eafcde2-2cf0-432f-9d15-34c09cd518c4")
 	)
-	(text "SYNC is disconnected by default\nChange jumper configuration to enable"
+	(text "SYNC is disconnected by default\nDrive low when not in use"
 		(exclude_from_sim no)
 		(at 127 104.14 0)
 		(effects
@@ -3285,16 +3285,6 @@
 		)
 		(uuid "8cf4cb5d-10b3-4059-aaa1-4bf139fd99ad")
 	)
-	(text "TX"
-		(exclude_from_sim no)
-		(at 220.726 128.524 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "8dde19ec-eefb-44f2-97e9-f40ad8ee69e2")
-	)
 	(text "General-Purpose Indicator LEDs"
 		(exclude_from_sim no)
 		(at 199.644 60.452 0)
@@ -3404,18 +3394,6 @@
 			(justify left bottom)
 		)
 		(uuid "edf7db4e-3280-40e3-8e07-f1f693dc1e98")
-	)
-	(text "Consider adding subbers"
-		(exclude_from_sim no)
-		(at 126.746 100.838 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 0 0 1)
-			)
-			(justify left)
-		)
-		(uuid "f282e194-8652-4d65-b096-249a17b71f74")
 	)
 	(text "12 MHz Crystal"
 		(exclude_from_sim no)
