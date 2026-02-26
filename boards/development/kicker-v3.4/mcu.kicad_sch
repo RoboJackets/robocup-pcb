@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "RP2040 MCU + Support Circuitry")
-		(date "2026-02-24")
+		(date "2026-02-26")
 		(rev "3.4-dev")
 		(company "RoboJackets - RoboCup")
 		(comment 1 "Aiden Lee (alee659@gatech.edu)")
@@ -3130,6 +3130,18 @@
 		)
 		(uuid "1eafcde2-2cf0-432f-9d15-34c09cd518c4")
 	)
+	(text "SYNC is disconnected by default\nChange jumper configuration to enable"
+		(exclude_from_sim no)
+		(at 127 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "43a1831f-70d9-45f0-bd8c-a09f5d14d789")
+	)
 	(text "Driving line low causes RP2040\nto enter a reset state."
 		(exclude_from_sim no)
 		(at 224.79 34.29 0)
@@ -3307,13 +3319,13 @@
 	)
 	(text "MISO = TX\nMOSI = RX"
 		(exclude_from_sim no)
-		(at 120.396 75.692 0)
+		(at 120.142 75.184 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 				(color 255 0 0 1)
 			)
-			(justify left bottom)
+			(justify left)
 		)
 		(uuid "b54f57b5-4b4f-4349-ac44-c5fcaa95246c")
 	)
@@ -3392,6 +3404,18 @@
 			(justify left bottom)
 		)
 		(uuid "edf7db4e-3280-40e3-8e07-f1f693dc1e98")
+	)
+	(text "Consider adding subbers"
+		(exclude_from_sim no)
+		(at 126.746 100.838 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "f282e194-8652-4d65-b096-249a17b71f74")
 	)
 	(text "12 MHz Crystal"
 		(exclude_from_sim no)
@@ -5661,14 +5685,14 @@
 	)
 	(hierarchical_label "~{HV_SHUTDOWN}"
 		(shape output)
-		(at 110.49 104.14 0)
+		(at 110.49 101.6 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "1a319474-07dc-48d5-bc3b-c03e762e0793")
+		(uuid "018fb54b-421d-447c-b739-197062f9f510")
 	)
 	(hierarchical_label "BB_SENSE"
 		(shape input)
@@ -5758,6 +5782,17 @@
 		)
 		(uuid "54d06c21-d9e5-4834-827b-5734c9da4a95")
 	)
+	(hierarchical_label "HV_SYNC"
+		(shape output)
+		(at 110.49 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5f85d2d7-4fc4-48ce-b146-b1c178226df9")
+	)
 	(hierarchical_label "CHIP_BTN"
 		(shape input)
 		(at 110.49 45.72 0)
@@ -5779,17 +5814,6 @@
 			(justify left)
 		)
 		(uuid "677fee8d-8226-429d-bd09-a92ba41979d7")
-	)
-	(hierarchical_label "HV_SYNC"
-		(shape output)
-		(at 110.49 101.6 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "72dea708-3e94-4afe-9675-b484cdbba420")
 	)
 	(hierarchical_label "KICK_BTN"
 		(shape input)

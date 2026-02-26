@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "High Voltage Flyback Transformer")
-		(date "2026-02-24")
+		(date "2026-02-26")
 		(rev "3.4-dev")
 		(company "RoboJackets - RoboCup")
 		(comment 1 "Aiden Lee (alee659@gatech.edu)")
@@ -2251,7 +2251,7 @@
 		(uuid c4960bf2-89a6-47b0-b335-47ac51828c23)
 	)
 	(rectangle
-		(start 34.29 41.91)
+		(start 17.78 39.37)
 		(end 81.28 76.2)
 		(stroke
 			(width 0)
@@ -3214,6 +3214,16 @@
 	)
 	(wire
 		(pts
+			(xy 31.75 48.26) (xy 34.29 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93dde898-f59d-48a0-a833-ce2c860b88bd")
+	)
+	(wire
+		(pts
 			(xy 44.45 48.26) (xy 44.45 59.69)
 		)
 		(stroke
@@ -3636,17 +3646,6 @@
 		)
 		(uuid "3096d914-2d41-4bfc-9891-03684bf5f278")
 	)
-	(hierarchical_label "SYNC"
-		(shape input)
-		(at 41.91 48.26 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "38bcebf5-6060-4298-a5eb-14d5d5f91e85")
-	)
 	(hierarchical_label "~{SHUTDOWN}"
 		(shape input)
 		(at 232.41 121.92 0)
@@ -3657,6 +3656,17 @@
 			(justify left)
 		)
 		(uuid "44541484-fbc9-4855-aee4-ba3757ee07f6")
+	)
+	(hierarchical_label "SYNC"
+		(shape input)
+		(at 31.75 48.26 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "831d9c80-b1a1-432e-8a70-55ee3347cab5")
 	)
 	(hierarchical_label "~{SHUTDOWN}"
 		(shape input)
@@ -4040,7 +4050,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1ccb6d9d-55da-4dc5-a067-f6f347a49c9d")
 		(property "Reference" "R8"
@@ -5385,6 +5395,74 @@
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/5f36fbad-06fd-4a1c-b77f-deef0ffe50ab"
 					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 38.1 48.26 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "84d48a97-a101-4e6b-897c-3fa3193e0ece")
+		(property "Reference" "R34"
+			(at 38.1 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 38.1 44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 38.1 50.038 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 38.1 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 38.1 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4a889145-ed2d-4cd0-8476-560561252511")
+		)
+		(pin "1"
+			(uuid "8b0f44ff-1f9b-4eb0-ac8a-706b69234baa")
+		)
+		(instances
+			(project "kicker-v3.4"
+				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/5f36fbad-06fd-4a1c-b77f-deef0ffe50ab"
+					(reference "R34")
 					(unit 1)
 				)
 			)
