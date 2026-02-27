@@ -2812,7 +2812,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 166.37) (xy 119.38 166.37)
+			(xy 109.22 166.37) (xy 120.65 166.37)
 		)
 		(stroke
 			(width 0)
@@ -2842,7 +2842,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 166.37) (xy 119.38 158.75)
+			(xy 120.65 166.37) (xy 120.65 158.75)
 		)
 		(stroke
 			(width 0)
@@ -2892,7 +2892,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 148.59) (xy 99.06 152.4)
+			(xy 96.52 148.59) (xy 96.52 152.4)
 		)
 		(stroke
 			(width 0)
@@ -2912,7 +2912,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 166.37) (xy 109.22 166.37)
+			(xy 96.52 166.37) (xy 109.22 166.37)
 		)
 		(stroke
 			(width 0)
@@ -2932,7 +2932,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 160.02) (xy 99.06 166.37)
+			(xy 96.52 160.02) (xy 96.52 166.37)
 		)
 		(stroke
 			(width 0)
@@ -3072,7 +3072,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 148.59) (xy 99.06 148.59)
+			(xy 109.22 148.59) (xy 96.52 148.59)
 		)
 		(stroke
 			(width 0)
@@ -3533,7 +3533,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 148.59) (xy 119.38 148.59)
+			(xy 109.22 148.59) (xy 120.65 148.59)
 		)
 		(stroke
 			(width 0)
@@ -3543,7 +3543,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 148.59) (xy 119.38 153.67)
+			(xy 120.65 148.59) (xy 120.65 153.67)
 		)
 		(stroke
 			(width 0)
@@ -3743,7 +3743,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 119.38 156.21 0)
+		(at 120.65 156.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3752,7 +3752,7 @@
 		(fields_autoplaced yes)
 		(uuid "00a4f478-27dd-4b6a-856c-3d4a18e93dec")
 		(property "Reference" "C12"
-			(at 121.92 154.9462 0)
+			(at 123.19 154.9462 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3761,7 +3761,7 @@
 			)
 		)
 		(property "Value" "0.1uF 50V"
-			(at 121.92 157.4862 0)
+			(at 123.19 157.4862 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3770,7 +3770,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 119.38 156.21 0)
+			(at 120.65 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3779,7 +3779,7 @@
 			)
 		)
 		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/658/CL10B104KB8NNWC_Spec.pdf"
-			(at 119.38 156.21 0)
+			(at 120.65 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3788,7 +3788,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 119.38 156.21 0)
+			(at 120.65 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3797,7 +3797,7 @@
 			)
 		)
 		(property "Vendor" "Digikey"
-			(at 119.38 156.21 0)
+			(at 120.65 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3806,7 +3806,7 @@
 			)
 		)
 		(property "Vendor P/N" "1276-1935-1-ND"
-			(at 119.38 156.21 0)
+			(at 120.65 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3815,7 +3815,7 @@
 			)
 		)
 		(property "Vendor URL" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B104KB8NNWC/3887593"
-			(at 119.38 156.21 0)
+			(at 120.65 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3824,7 +3824,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 119.38 156.21 0)
+			(at 120.65 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3833,7 +3833,7 @@
 			)
 		)
 		(property "Manufacturer P/N" "CL10B104KB8NNWC"
-			(at 119.38 156.21 0)
+			(at 120.65 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4603,16 +4603,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 99.06 156.21 0)
+		(at 96.52 156.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "3c2d7ccf-1f91-4b65-8726-c0e859319837")
 		(property "Reference" "R17"
-			(at 101.6 154.9399 0)
+			(at 99.06 154.9399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4621,7 +4620,7 @@
 			)
 		)
 		(property "Value" "4.22k 1W"
-			(at 101.6 157.4799 0)
+			(at 99.06 157.4799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4630,7 +4629,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
-			(at 97.282 156.21 90)
+			(at 94.742 156.21 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4639,7 +4638,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
-			(at 99.06 156.21 0)
+			(at 96.52 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4648,7 +4647,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 99.06 156.21 0)
+			(at 96.52 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4657,16 +4656,16 @@
 			)
 		)
 		(property "Manufacturer P/N" "CRCW25124K22FKEG"
-			(at 99.06 156.21 0)
+			(at 99.06 159.766 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
 		(property "DigiKey P/N" "541-4.22KAFCT-ND"
-			(at 99.06 156.21 0)
+			(at 96.52 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4675,7 +4674,7 @@
 			)
 		)
 		(property "Vendor P/N" "541-4.22KAFCT-ND"
-			(at 99.06 156.21 0)
+			(at 96.52 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)

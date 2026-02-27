@@ -1706,6 +1706,18 @@
 		)
 		(uuid "d740dbc0-5318-46a1-9c47-86d5e28567e3")
 	)
+	(text "(Order 2/26/26) Replaced with 1.5k due to parts shortage\nThis is only safe for charge voltage @ 200V or below.\n3.3k is safe for up to 250V"
+		(exclude_from_sim no)
+		(at 124.968 28.194 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 0 1)
+			)
+			(justify right)
+		)
+		(uuid "d7535de2-e204-434f-b6b1-97cc762a93e9")
+	)
 	(text "This is an optional pull-down resistor to create a voltage divider\nto prevent voltage spikes from damaging Q6 and should be\nleft unpopulated unless needed.\nVoltage Divider:\nV_in_typ = 250V  (Typical max voltage)\nV_out_typ = 250(1.0E7/(2 * 5.1E6 * 1.0E7)) = 123.8V\nV_in_spike = 600V\nV_out_spike = 600(1.0E7/(2 * 5.1E6 + 1.0E7)) = 297V\nV_th of the AOD1N60 is 4.1V and serves as the limit\nfor the lowest attainable voltage through the AOD alone\n(other factors nonwithstanding). Adding a voltage divider\nchanges the V_min seen on the HV line.\nV_min = V_th((2 * 5.1E6 + 1.0E7)/1.0E7) = 8.28V"
 		(exclude_from_sim no)
 		(at 129.54 74.422 0)
