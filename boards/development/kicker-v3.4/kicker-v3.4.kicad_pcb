@@ -318,7 +318,7 @@
 		(path "/f89236ed-aad2-4303-8073-83e97e337226/2036f779-3275-4943-b79a-7f9ce08185d9")
 		(sheetname "/Debug Buttons/")
 		(sheetfile "debug_btn.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -415,11 +415,23 @@
 				)
 			)
 		)
+		(property "LCSC" "C23164"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "41ec63fd-67c3-46c0-86ed-943fcd804caf")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/e4304b20-4d06-4872-95c9-1dabf011b89c/ec37cfca-6a18-4c3c-9caa-2eaf5c40dc9e")
 		(sheetname "/HV Discharge/")
 		(sheetfile "hv_discharge.kicad_sch")
-		(attr smd exclude_from_bom)
+		(attr smd)
 		(fp_line
 			(start -0.237258 0.5225)
 			(end 0.237258 0.5225)
@@ -532,7 +544,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/4886/eVH.doc.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -586,7 +598,7 @@
 		(path "/e86782f0-611b-4534-aff3-65b08805c510/3c4eadff-43b5-423e-b106-59d1cf6a95a0")
 		(sheetname "/Power/")
 		(sheetfile "power.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start -0.82 13.51)
 			(end 0.82 13.51)
@@ -1178,6 +1190,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "2abaaa04-644e-4cf3-b6d4-4f24d3e8aab7")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/22347599-bf0c-4fd4-a7a3-7c86a35ae01b/394d918d-6974-4300-b727-6f76c6826852")
 		(sheetname "/MCU/")
@@ -1328,6 +1352,18 @@
 			(effects
 				(font
 					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C2286"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "fca00123-7f08-45f3-bdaa-53c6ede2e244")
+			(effects
+				(font
+					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -1518,6 +1554,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "cee716b2-910d-4960-8b63-3374869536c5")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C1688"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "4e89aa26-5fff-488a-9038-9146e2217474")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1797,6 +1845,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C19829541"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "d85d4b12-7a26-4919-ae99-f96b876f8e8a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/e86782f0-611b-4534-aff3-65b08805c510/4a9b432b-dd52-4b56-ae37-461e76cfcfdc")
 		(sheetname "/Power/")
 		(sheetfile "power.kicad_sch")
@@ -1956,7 +2016,7 @@
 		(path "/f89236ed-aad2-4303-8073-83e97e337226/3c9e662f-870c-4d57-abab-de8a4dbc0bd5")
 		(sheetname "/Debug Buttons/")
 		(sheetfile "debug_btn.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -2261,10 +2321,22 @@
 				)
 			)
 		)
+		(property "LCSC" "C536153"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "4380852c-e3ca-443c-ac44-7fbce4c4ca9c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/e4304b20-4d06-4872-95c9-1dabf011b89c/65aade3b-865a-4fa3-9e99-6730d21ee367")
 		(sheetname "/HV Discharge/")
 		(sheetfile "hv_discharge.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start -3.46 5.2)
 			(end -4.825 5.2)
@@ -2564,6 +2636,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C25804"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "6f5fbe1e-6bf3-405c-8663-6106d8b63e76")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/f89236ed-aad2-4303-8073-83e97e337226/5d4f3f45-8ae9-47a2-bfd4-97c251ad3531")
 		(sheetname "/Debug Buttons/")
@@ -2698,6 +2782,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "82448111-410b-4cc0-bde1-05b31ed4817c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C11702"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "dfb3c975-3dba-4aa0-8402-e4f61c0423df")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2850,7 +2946,7 @@
 		(path "/cb2ed4c1-6aa6-4f43-8deb-f53b1c57f0a4/902798de-2fe7-4de6-a76d-df114a75efdc")
 		(sheetname "/Breakbeam/")
 		(sheetfile "breakbeam.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start 4.06 -1.459999)
 			(end 3.14 -1.46)
@@ -3270,7 +3366,7 @@
 		(path "/cb2ed4c1-6aa6-4f43-8deb-f53b1c57f0a4/59d325b8-e53f-4548-b7ba-c4e59354802f")
 		(sheetname "/Breakbeam/")
 		(sheetfile "breakbeam.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start 6.06 -1.46)
 			(end 5.14 -1.46)
@@ -3762,10 +3858,22 @@
 				)
 			)
 		)
+		(property "LCSC" "C536153"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "f210e64e-01a5-4f26-b077-7d632d76745b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/e4304b20-4d06-4872-95c9-1dabf011b89c/4029091e-d16d-4224-ad6f-622b41092e5d")
 		(sheetname "/HV Discharge/")
 		(sheetfile "hv_discharge.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start -4.825 -5.2)
 			(end -4.825 -3.39)
@@ -4070,7 +4178,7 @@
 		(path "/f4dc7313-c52c-44cc-8499-a4707a9c67a5/630a1089-8bfc-43cf-a0c0-4f63491b7353")
 		(sheetname "/Capacitor Bank/")
 		(sheetfile "hv_bank.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start -8.3858 -0.635)
 			(end -8.3858 0.635)
@@ -4312,6 +4420,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C12065"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "b6860c37-cc70-432d-b8f9-30b3c0d60729")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/f4dc7313-c52c-44cc-8499-a4707a9c67a5/dda97af8-cb97-489e-a376-4316f14853eb")
 		(sheetname "/Capacitor Bank/")
@@ -4504,6 +4624,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C274349"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "170a57f7-5f55-415b-9497-5d703b9eb5d2")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/22347599-bf0c-4fd4-a7a3-7c86a35ae01b/4feec5d7-9f5a-4d86-8a8f-72ecc1c7d732")
 		(sheetname "/MCU/")
@@ -4654,6 +4786,18 @@
 			(effects
 				(font
 					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C12065"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "0c5816ed-01d1-4f90-84e9-e267e81373a7")
+			(effects
+				(font
+					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -4860,6 +5004,18 @@
 			(effects
 				(font
 					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C2287"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "9f2af351-3bac-42d6-bc3b-18cbc8948df2")
+			(effects
+				(font
+					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -5084,7 +5240,7 @@
 		(path "/5f36fbad-06fd-4a1c-b77f-deef0ffe50ab/f2113eec-5d38-487c-99b3-e373d7176d79")
 		(sheetname "/HV Flyback/")
 		(sheetfile "hv_flyback.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start -11.85 11.085)
 			(end -11.85 8.6)
@@ -5446,6 +5602,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C21189"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "870ae2e8-e9b9-4f02-89e1-b4d67dd9ad57")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/5f36fbad-06fd-4a1c-b77f-deef0ffe50ab/1ccb6d9d-55da-4dc5-a067-f6f347a49c9d")
 		(sheetname "/HV Flyback/")
@@ -5580,6 +5748,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "78c9d9a2-8d00-4622-90d4-489562a971e3")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C21122"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "a620d67c-1f46-4c68-9cdc-5601303df068")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6679,6 +6859,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C12065"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "5329c8c6-5624-4330-8f8f-a3c16e1a570b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/fae60b2c-2bb3-4faf-8ca4-fe71f7b6041c/1abba28a-039e-4356-9342-82f8e5e121b3")
 		(sheetname "/Indicator LEDs/")
@@ -6935,6 +7127,18 @@
 			(effects
 				(font
 					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C5249144"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "2c774988-f429-4384-87b4-ecae8d5045bf")
+			(effects
+				(font
+					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -7229,6 +7433,18 @@
 			(effects
 				(font
 					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C79167"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "6362ff38-05a4-497f-8eed-3129bc86b057")
+			(effects
+				(font
+					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -7719,6 +7935,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C79167"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "d423f9b8-5838-421a-a1b5-04a097058a03")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/22347599-bf0c-4fd4-a7a3-7c86a35ae01b/833adb17-8451-4e3e-ac01-21b10ae7dcbe")
 		(sheetname "/MCU/")
 		(sheetfile "mcu.kicad_sch")
@@ -8042,7 +8270,7 @@
 		(path "/cb2ed4c1-6aa6-4f43-8deb-f53b1c57f0a4/deaaa956-fe19-41e5-8c0b-472f1bce8f23")
 		(sheetname "/Breakbeam/")
 		(sheetfile "breakbeam.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -8132,6 +8360,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "8badc1ff-455f-4039-90dc-b7a0cff7cbdf")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C23186"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "13f8cc28-6654-4fba-81a6-2f38eb38810d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8280,6 +8520,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C25803"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "19c23842-0328-4dbc-947e-de94d3323d5a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/5f36fbad-06fd-4a1c-b77f-deef0ffe50ab/d60cc781-659f-4f08-b57a-b89d3b08103d")
 		(sheetname "/HV Flyback/")
@@ -8421,6 +8673,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C861392"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "a2940a65-af63-46d2-b81c-a197bcf26817")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/22347599-bf0c-4fd4-a7a3-7c86a35ae01b/ffc4cda5-968c-4db7-b7f3-6f02a25dc2b4")
 		(sheetname "/MCU/")
@@ -8538,7 +8802,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.rohm.com/datasheet?p=GMR100HJBFIR022&dist=Digi-Key&media=referral&source=digi-key.com&campaign=Digi-Key"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -8592,7 +8856,7 @@
 		(path "/5f36fbad-06fd-4a1c-b77f-deef0ffe50ab/d1de15ea-ace7-4b23-8fd1-de0c42e4bffa")
 		(sheetname "/HV Flyback/")
 		(sheetfile "hv_flyback.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start -2.177064 -1.71)
 			(end 2.177064 -1.71)
@@ -8751,6 +9015,18 @@
 			(effects
 				(font
 					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C17317654"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "c37fb70f-c21a-463a-9e2f-e6ab9c698776")
+			(effects
+				(font
+					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -9190,6 +9466,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C25804"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "cdc2d438-a4d5-430c-bbc7-9ab30bbec795")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/f89236ed-aad2-4303-8073-83e97e337226/25a36d67-6e19-46bb-b7c0-3bc38a2fd7f9")
 		(sheetname "/Debug Buttons/")
@@ -9324,6 +9612,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "32db54ed-8849-46db-84f0-ee0ef79d88c4")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "304b9850-6f67-4000-85ad-2cce7a3ed6cf")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9479,7 +9779,7 @@
 		(path "/f89236ed-aad2-4303-8073-83e97e337226/64475f2a-9261-4c63-9d16-338c612cd7db")
 		(sheetname "/Debug Buttons/")
 		(sheetfile "debug_btn.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -9585,6 +9885,18 @@
 			(effects
 				(font
 					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C1644"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "3b0f766e-1acb-4fc0-a3c4-5ee1f35df2f8")
+			(effects
+				(font
+					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -9723,6 +10035,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "4f5ab71c-e992-4f8e-81ad-a09a4a411800")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C23186"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "5e1fd481-b53d-4067-9cb1-3bbe5138c1e4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9891,6 +10215,18 @@
 			(effects
 				(font
 					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C79167"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "c2d4b82d-5c50-4181-b542-91d617ccba62")
+			(effects
+				(font
+					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -10240,7 +10576,7 @@
 		(path "/e86782f0-611b-4534-aff3-65b08805c510/c6d92c35-65b7-4865-9898-0e50e320c02a")
 		(sheetname "/Power/")
 		(sheetfile "power.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start 4.47 -2.81)
 			(end 4.47 -1.22)
@@ -10604,6 +10940,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C185352"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "ee225aa4-fa72-4802-bd6f-626f367d727f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/22347599-bf0c-4fd4-a7a3-7c86a35ae01b/092d36bb-e48e-46f9-8a1e-7a22701eaf60")
 		(sheetname "/MCU/")
@@ -10856,7 +11204,7 @@
 		(path "/cb2ed4c1-6aa6-4f43-8deb-f53b1c57f0a4/3dac60db-b4f9-4ac6-866e-49b1b4c7052e")
 		(sheetname "/Breakbeam/")
 		(sheetfile "breakbeam.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -10946,6 +11294,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e093a116-2e0f-4e85-986c-394122e0ac61")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "8c6a645b-68e5-4533-bfc9-5665b0501c1a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11087,6 +11447,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6cf7cf62-eef8-4b5d-8176-6f200a89c5cc")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C165489"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "eeb85430-5f1f-486f-8910-d9029f88c8e2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11519,6 +11891,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C21190"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "2523bbf4-8e39-41c7-a8d3-f9ae606d7f14")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/22347599-bf0c-4fd4-a7a3-7c86a35ae01b/41ab566f-a16b-4954-85e5-be257aa67378")
 		(sheetname "/MCU/")
@@ -11653,6 +12037,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1787cb1e-c6dd-4944-9dc7-b64516ba9857")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "99247296-1c72-440d-b3dd-31c2b9a8c1b6")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12563,6 +12959,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C57112"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "9582a144-eaf8-4bf7-a90d-97fb957e6a73")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/5f36fbad-06fd-4a1c-b77f-deef0ffe50ab/81744e78-30b7-453e-bad8-3493787c1504")
 		(sheetname "/HV Flyback/")
@@ -12710,7 +13118,7 @@
 		(path "/22347599-bf0c-4fd4-a7a3-7c86a35ae01b/0ffd6bd7-1726-42ec-82a0-181f8067a631")
 		(sheetname "/MCU/")
 		(sheetfile "mcu.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -12814,7 +13222,7 @@
 		(path "/22347599-bf0c-4fd4-a7a3-7c86a35ae01b/f07aab7e-7fd5-4a60-9be9-fcd7d72f6087")
 		(sheetname "/MCU/")
 		(sheetfile "mcu.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start 0.95 0.95)
 			(end -0.95 0.95)
@@ -12977,7 +13385,7 @@
 		(path "/cb2ed4c1-6aa6-4f43-8deb-f53b1c57f0a4/e92ffb43-4075-4759-893e-72e5c3b3cec8")
 		(sheetname "/Breakbeam/")
 		(sheetfile "breakbeam.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -13067,6 +13475,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "46092187-e83b-46f9-9444-88bd33e8108b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "e408ac69-b185-4dbe-ae44-61dcff1c07d0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13215,6 +13635,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C14663"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "a290e0f2-651a-4bbc-aa8e-c02b7e31b2c8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/22347599-bf0c-4fd4-a7a3-7c86a35ae01b/20e773ba-ab13-41ca-a7ad-afc59d9d1e00")
 		(sheetname "/MCU/")
@@ -13356,6 +13788,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C21122"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "c7af953a-afdc-437c-b94f-7d19c71f9d8e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/5f36fbad-06fd-4a1c-b77f-deef0ffe50ab/15c70c5d-f96b-4acf-8387-393132174f17")
 		(sheetname "/HV Flyback/")
@@ -13473,7 +13917,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6536/ABM8_Datasheet.pdf"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13512,11 +13956,37 @@
 				)
 			)
 		)
+		(property "Manufacturer P/N" "ABM8-272-T3"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "388fa7c2-6ecd-483f-9c1d-a626b7df8bcd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Vendor P/N" "535-ABM8-272-T3CT-ND"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "45682846-4e3c-4c41-aa37-eda293596e5f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Crystal*")
 		(path "/22347599-bf0c-4fd4-a7a3-7c86a35ae01b/3a253fb0-b2d1-4934-a22d-151935b1a7a5")
 		(sheetname "/MCU/")
 		(sheetfile "mcu.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start -2 -1.65)
 			(end -2 1.65)
@@ -13796,7 +14266,7 @@
 		(path "/22347599-bf0c-4fd4-a7a3-7c86a35ae01b/6d797582-719f-421d-b2fa-becc6041b669")
 		(sheetname "/MCU/")
 		(sheetfile "mcu.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -14103,6 +14573,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C22775"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "7466f2db-b8fb-4e6e-88be-8fe3f8e9e715")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/cb2ed4c1-6aa6-4f43-8deb-f53b1c57f0a4/ce4f7ccf-4a4c-43ae-8755-148ddaf456e6")
 		(sheetname "/Breakbeam/")
@@ -14237,6 +14719,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "5ab87af8-d330-426f-ac65-347af7c5745c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "903d63ff-fecf-46c7-8c3d-951d958ddf35")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14392,7 +14886,7 @@
 		(path "/5f36fbad-06fd-4a1c-b77f-deef0ffe50ab/94fdd574-6cd5-4743-a2ac-d09e559c347d")
 		(sheetname "/HV Flyback/")
 		(sheetfile "hv_flyback.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -14482,6 +14976,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6e968c27-21ea-4f96-9bb8-437c269b38dc")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C96446"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "bb81aeb6-189b-42e5-8c4f-4513379bfb7f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14630,6 +15136,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C165489"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "561579c1-6d5b-45bf-a5d4-803751a1e0cf")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/22347599-bf0c-4fd4-a7a3-7c86a35ae01b/bd810526-37b7-4fa5-a9ba-3823b07ba2b7")
 		(sheetname "/MCU/")
@@ -14764,6 +15282,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d965b707-3dce-48cf-ae83-6a4a45416321")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "287c9a73-5fee-41ec-b21f-b8a0bbd9c208")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14921,6 +15451,18 @@
 			(effects
 				(font
 					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C12065"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "2b170f3f-6313-4e69-8bbd-effe30820036")
+			(effects
+				(font
+					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -15118,6 +15660,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C844805"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "6d8dec0f-172e-4bd0-ad8d-0228427386b3")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/5f36fbad-06fd-4a1c-b77f-deef0ffe50ab/8e473d81-d717-4fb8-a681-2e7c28aacf3c")
 		(sheetname "/HV Flyback/")
@@ -15265,7 +15819,7 @@
 		(path "/5f36fbad-06fd-4a1c-b77f-deef0ffe50ab/91f379d7-281b-42c8-8a14-77ab22007dc9")
 		(sheetname "/HV Flyback/")
 		(sheetfile "hv_flyback.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -15384,6 +15938,31 @@
 			(effects
 				(font
 					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer P/N" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "502c6209-ebb7-43d5-8919-baacf71e9512")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C12065"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "597f6e3c-78cb-43dd-b43b-231e50ae31b3")
+			(effects
+				(font
+					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -15575,6 +16154,44 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "fd07725e-809d-4297-b864-ba92277364bd")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "DMG1012T"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "53750e50-839a-4ca0-9714-082f8bb78af6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Vendor P/N" "DMG1012T-7DICT-ND"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6005a3b0-e7cf-4e50-bba3-07fc3831ca3e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C20512"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "8a78848b-3f7c-434b-87d0-5154331b5f18")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15814,6 +16431,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C14663"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "69df6a83-dcc5-4d64-8050-ef2f3ee67211")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/e4304b20-4d06-4872-95c9-1dabf011b89c/7a5335ac-e951-4f5f-a431-da75ed1cc2b8")
 		(sheetname "/HV Discharge/")
@@ -15948,6 +16577,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f35c94f7-ad97-4325-8cc4-55056887511b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C185352"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "2e456e0b-b435-414a-b760-710d9f24b5cb")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16118,6 +16759,31 @@
 			(effects
 				(font
 					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer P/N" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b0354192-b1f6-4e65-b248-1d0879814726")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C12065"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "2b70c2b0-1574-41f0-977f-d2e29741bad7")
+			(effects
+				(font
+					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -16307,6 +16973,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "14a649c1-2971-4156-b0fa-811b77cbcfd9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "a2d30307-10ba-43c5-a834-a530f0181a05")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18674,7 +19352,7 @@
 		(path "/e4304b20-4d06-4872-95c9-1dabf011b89c/0be6de22-ca77-483b-875a-d5eb9893a701")
 		(sheetname "/HV Discharge/")
 		(sheetfile "hv_discharge.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -18764,6 +19442,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b8664447-438d-42e5-b5de-ae08a4b3a5c8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C22775"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "008e2ada-acfe-4cb5-98b1-534e1f10c268")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18932,6 +19622,18 @@
 			(effects
 				(font
 					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C79167"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "4ac6f0c2-751b-4908-b949-570fce948b38")
+			(effects
+				(font
+					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -19259,7 +19961,7 @@
 		(path "/5f36fbad-06fd-4a1c-b77f-deef0ffe50ab/61489db1-7a97-4c48-bb03-87a3ff8969af")
 		(sheetname "/HV Flyback/")
 		(sheetfile "hv_flyback.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -19349,6 +20051,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6f76aa27-8a4c-4d3a-a111-ab9eb6778fbd")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "22d3327f-9159-49bc-af55-6215931299ea")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20435,6 +21149,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C14663"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "c4dba054-f472-43c8-972a-2ae7b46c682f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/e4304b20-4d06-4872-95c9-1dabf011b89c/e6c094f3-1631-42b6-8f8a-8b1c369e3b07")
 		(sheetname "/HV Discharge/")
@@ -20798,7 +21524,7 @@
 		(path "/5f36fbad-06fd-4a1c-b77f-deef0ffe50ab/51586e1a-6f38-4579-98ac-20a631dd791d")
 		(sheetname "/HV Flyback/")
 		(sheetfile "hv_flyback.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start 5.26 -5.26)
 			(end 5.26 -1.51)
@@ -21237,6 +21963,44 @@
 				)
 			)
 		)
+		(property "Manufacturer P/N" "W25Q128JVS"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a8e34550-1450-491f-a5c0-2137cf88ff17")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Vendor P/N" "256-W25Q128JVSIMTRCT-ND"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2ddf8812-b3fa-4589-a274-9fb4a772c25f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C97521"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "29cb1307-6d97-4793-b2cf-22db6f1d8f4e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "*SOIC*5.3x5.3mm*P1.27mm*")
 		(path "/22347599-bf0c-4fd4-a7a3-7c86a35ae01b/60dfa9bd-2016-4db9-a3fe-40b3d01e130c")
 		(sheetname "/MCU/")
@@ -21669,6 +22433,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C5249144"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "9697c974-1cea-4267-a911-cb2e8c8dd980")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/e4304b20-4d06-4872-95c9-1dabf011b89c/2eec06e1-d04c-44aa-b8c3-e40470df6c2f")
 		(sheetname "/HV Discharge/")
 		(sheetfile "hv_discharge.kicad_sch")
@@ -21944,7 +22720,7 @@
 		(path "/f4dc7313-c52c-44cc-8499-a4707a9c67a5/4602a6f8-e42e-41e7-a810-f1912ba49136")
 		(sheetname "/Capacitor Bank/")
 		(sheetfile "hv_bank.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start -9.0208 0)
 			(end -7.7508 0)
@@ -22180,7 +22956,7 @@
 		(path "/22347599-bf0c-4fd4-a7a3-7c86a35ae01b/1b6a7184-b000-4f8f-ac62-5536d635fdc8")
 		(sheetname "/MCU/")
 		(sheetfile "mcu.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start 0.95 0.95)
 			(end -0.95 0.95)
@@ -22330,6 +23106,44 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "19703910-3694-4656-93e2-8d002cd118b2")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "LT3757AEMSE"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "db879504-a7f8-4984-865a-26134ad7d6a5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Vendor P/N" "LT3757AEMSE#TRPBFCT-ND"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9038edd0-2574-4279-86ae-e34954b0f596")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C671471"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "834cde39-bd48-4333-b657-eafe4cbe63c5")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22761,6 +23575,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C165489"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "2b4a6c24-eb8b-468f-ba44-e4029d366276")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/22347599-bf0c-4fd4-a7a3-7c86a35ae01b/2dbfae0b-5522-40c9-936f-4a9679fc5710")
 		(sheetname "/MCU/")
@@ -22895,6 +23721,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "15617808-10e7-4863-84e9-1323bd7e2591")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "66e42d6f-ef7b-4a13-9e04-98f27ccc33fd")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23043,6 +23881,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C25804"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "57fd7ca7-5884-4e37-be99-5fbcbc28b239")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/5f36fbad-06fd-4a1c-b77f-deef0ffe50ab/b977c38f-08ed-4831-b293-c70c53bd064d")
 		(sheetname "/HV Flyback/")
@@ -23177,6 +24027,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "836ad73c-56d5-4488-8d3a-343a9d5a940f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C861392"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "8f06b8a1-bbc4-4f26-acb7-277c43a1abc9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23325,6 +24187,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C96446"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "d9d83a3e-1880-4e79-83b8-1e7e2c5701d9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/e4304b20-4d06-4872-95c9-1dabf011b89c/c4883017-0f42-4cf1-a2d3-52bf03bf57bd")
 		(sheetname "/HV Discharge/")
@@ -23459,6 +24333,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "86945177-46bc-4cfb-8eb3-6a3b3f2ef4b4")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "93f78975-6ffd-46d1-81a5-d4d76c5b8cdf")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23620,6 +24506,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C1644"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "f054ea2e-8134-4bc0-8f0e-872ceffa7392")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/22347599-bf0c-4fd4-a7a3-7c86a35ae01b/bb7c6350-4e18-4cfa-890f-b9a6bfe647dd")
 		(sheetname "/MCU/")
@@ -23754,6 +24652,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c063f573-7d95-41d2-86d7-87b630ec06d7")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "e4197c44-fb07-4dfb-807c-2906beba9786")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23928,6 +24838,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C19829541"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "36bfe7f5-d056-461d-8a19-221cb2efe95d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/e86782f0-611b-4534-aff3-65b08805c510/0ea95225-eb6c-4fc2-a864-d41818a96349")
 		(sheetname "/Power/")
 		(sheetfile "power.kicad_sch")
@@ -24081,6 +25003,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C14858"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "30230908-d7c7-4204-8aff-c754bfb41458")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/5f36fbad-06fd-4a1c-b77f-deef0ffe50ab/454186b4-7fad-4897-982e-0a33ff9e2cef")
 		(sheetname "/HV Flyback/")
@@ -24215,6 +25149,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2153170a-3d35-470d-b437-2a54315b2484")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C23175"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "164687f1-96c3-4c41-bed3-5b8ea9c4ac9f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24363,11 +25309,23 @@
 				)
 			)
 		)
+		(property "LCSC" "C21189"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "1a9a929f-d0f9-417a-9619-be2e4a4dc990")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/5f36fbad-06fd-4a1c-b77f-deef0ffe50ab/84d48a97-a101-4e6b-897c-3fa3193e0ece")
 		(sheetname "/HV Flyback/")
 		(sheetfile "hv_flyback.kicad_sch")
-		(attr smd dnp)
+		(attr smd exclude_from_pos_files dnp)
 		(fp_line
 			(start -0.237258 -0.5225)
 			(end 0.237258 -0.5225)
@@ -24509,7 +25467,7 @@
 		(path "/f4dc7313-c52c-44cc-8499-a4707a9c67a5/2105f24f-46b3-42b2-b753-499207de91fc")
 		(sheetname "/Capacitor Bank/")
 		(sheetfile "hv_bank.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start -9.0208 0)
 			(end -7.7508 0)
@@ -24738,6 +25696,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "c049857d-e006-4f32-a6de-bf61c66c3366")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/22347599-bf0c-4fd4-a7a3-7c86a35ae01b/89098226-689a-458a-9412-6196d32880a4")
 		(sheetname "/MCU/")
@@ -24879,11 +25849,23 @@
 				)
 			)
 		)
+		(property "LCSC" "C23164"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "d3cd0028-1d08-487d-83bc-a195d9d7e21e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/e4304b20-4d06-4872-95c9-1dabf011b89c/d252e380-06e3-4ea5-b05d-29c517053a4c")
 		(sheetname "/HV Discharge/")
 		(sheetfile "hv_discharge.kicad_sch")
-		(attr smd exclude_from_bom)
+		(attr smd)
 		(fp_line
 			(start -0.237258 0.5225)
 			(end 0.237258 0.5225)
@@ -25013,6 +25995,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "5a5e833d-5be7-42ec-bc24-b2443e510edf")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "433e461b-b389-4e13-9270-8e5a4c47fcd7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25167,7 +26161,7 @@
 		(path "/f89236ed-aad2-4303-8073-83e97e337226/e9494e06-1c71-4697-8865-7d1ae6e9a44a")
 		(sheetname "/Debug Buttons/")
 		(sheetfile "debug_btn.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -25257,6 +26251,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e6f57d11-bf87-4dee-9dd4-b8386aa2d1b4")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C274349"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "600ab6be-1a86-4fdf-854f-99d0f9f92988")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25411,7 +26417,7 @@
 		(path "/22347599-bf0c-4fd4-a7a3-7c86a35ae01b/cd661a89-88b7-4bb6-88a8-0f875fc0e96a")
 		(sheetname "/MCU/")
 		(sheetfile "mcu.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -25501,6 +26507,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "54e36267-b9b7-409f-8705-637a21a2a89b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "a556e206-350c-4a53-ae68-bc28138a61b3")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26803,6 +27821,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C79167"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "06747b1e-f850-4ddf-ad2f-399bb898d070")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/22347599-bf0c-4fd4-a7a3-7c86a35ae01b/8a6bf9a1-32c3-4d05-9b6b-b15e87b38901")
 		(sheetname "/MCU/")
 		(sheetfile "mcu.kicad_sch")
@@ -27120,6 +28150,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "6abc3e2e-7fe9-4194-bdb4-92f96123eb7d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/22347599-bf0c-4fd4-a7a3-7c86a35ae01b/b359ec47-21d2-4d5f-9c44-9062fb6f77dc")
 		(sheetname "/MCU/")
@@ -27288,7 +28330,7 @@
 		(path "/e86782f0-611b-4534-aff3-65b08805c510/df2836d8-c8d6-4ad5-8f7f-f957d5ad223c")
 		(sheetname "/Power/")
 		(sheetfile "power.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start 8.636 -8.3312)
 			(end 5.1 -8.3312)
@@ -27529,7 +28571,7 @@
 		(path "/e4304b20-4d06-4872-95c9-1dabf011b89c/e37860f5-8e46-4a44-9f84-91dcdea285d5")
 		(sheetname "/HV Discharge/")
 		(sheetfile "hv_discharge.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -27631,7 +28673,7 @@
 		(path "/f4dc7313-c52c-44cc-8499-a4707a9c67a5/2c28faea-26d6-4569-bba3-3109cb22281d")
 		(sheetname "/Capacitor Bank/")
 		(sheetfile "hv_bank.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start -9.0208 0)
 			(end -7.7508 0)
@@ -27873,6 +28915,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C2286"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "40a5763e-0268-49d0-b956-4edccd492f85")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/fae60b2c-2bb3-4faf-8ca4-fe71f7b6041c/55cd489a-9ac3-4d3c-8066-669eddfe17fc")
 		(sheetname "/Indicator LEDs/")
@@ -28073,7 +29127,7 @@
 		(path "/22347599-bf0c-4fd4-a7a3-7c86a35ae01b/3ed057b3-ec08-42f5-8ebe-4572cc7ae0c7")
 		(sheetname "/MCU/")
 		(sheetfile "mcu.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start 0.95 0.95)
 			(end -0.95 0.95)
@@ -28252,6 +29306,31 @@
 			(effects
 				(font
 					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer P/N" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a12c018e-bce2-4b58-911a-a3e69a55e042")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C12065"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "f8a83710-3670-42dc-8c5c-feef07243144")
+			(effects
+				(font
+					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -28457,6 +29536,44 @@
 			(effects
 				(font
 					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "RP2040"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "37eb5cfc-8f49-4d06-b678-93f627ea8b66")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Vendor P/N" "2648-SC0914(13)CT-ND"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "98ace072-f1a8-4e4b-9cbc-a0a045042f94")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C2040"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "974815e1-8b6b-47f5-8b2a-bc90c73329a0")
+			(effects
+				(font
+					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -29419,7 +30536,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/flex/flexconnectors_100mm_hfw_r.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -29431,7 +30548,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x08, script generated"
+		(property "Description" "8 Position FFC, FPC Connector Contacts, Bottom 0.039\" (1.00mm) Surface Mount, Right Angle"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -29443,11 +30560,37 @@
 				)
 			)
 		)
+		(property "Manufacturer P/N" "HFW8R-1STE1H1LF"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2eb7f6b2-8557-4f0c-8647-18fd26fa7d64")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Vendor P/N" "609-HFW8R-1STE1H1LFCT-ND"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ec93ad1e-7e70-4945-9d25-48eaa6eff468")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/22347599-bf0c-4fd4-a7a3-7c86a35ae01b/33bc5a04-14cd-485c-b1d1-97a93a70f5fb")
 		(sheetname "/MCU/")
 		(sheetfile "mcu.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start 5.3 -2.75)
 			(end 5.3 2.75)
@@ -29752,6 +30895,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1f12933b-b286-43d5-aee2-e53e7567260d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "eb402bdf-50a0-4662-9013-a501b3bc69e5")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30131,7 +31286,7 @@
 		(path "/f89236ed-aad2-4303-8073-83e97e337226/b90328b8-16b3-4113-9dc3-375a51c2fc91")
 		(sheetname "/Debug Buttons/")
 		(sheetfile "debug_btn.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -30221,6 +31376,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "58a92261-0b07-49bc-bf3d-76627594902a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C23345"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "2a711f4f-6303-47c5-924a-11851162518a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30369,6 +31536,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C23164"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "8caadd11-5e0a-4794-a8cb-058b8382eaea")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/5f36fbad-06fd-4a1c-b77f-deef0ffe50ab/1ca99425-81b4-43b0-a7fa-b685c9b70893")
 		(sheetname "/HV Flyback/")
@@ -30501,6 +31680,44 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a2031b73-7256-4896-a702-4e155c5c2798")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "SIR880BDPT1RE3"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fc728cda-df43-4c48-a57f-0f447a5cd787")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Vendor P/N" "742-SIR880BDP-T1-RE3CT-ND"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7e6b4e61-4d2d-4e1c-a8f2-970251a31adf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C5900133"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "74297f13-f0d8-41b6-a04a-87b5d63fcb3b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30862,6 +32079,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C668919"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "ae61c7b2-b866-44a4-bf03-47df514484b1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/5f36fbad-06fd-4a1c-b77f-deef0ffe50ab/ba747bc8-5285-43a4-b604-69660bba17e6")
 		(sheetname "/HV Flyback/")
 		(sheetfile "hv_flyback.kicad_sch")
@@ -31132,6 +32361,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "07dd46b1-aa18-48af-847f-819ffd849a9d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/22347599-bf0c-4fd4-a7a3-7c86a35ae01b/df978636-6d08-4b6b-8a0f-376feab67847")
 		(sheetname "/MCU/")
@@ -31279,7 +32520,7 @@
 		(path "/5f36fbad-06fd-4a1c-b77f-deef0ffe50ab/a9e684de-57ae-4354-995c-a5725b702515")
 		(sheetname "/HV Flyback/")
 		(sheetfile "hv_flyback.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -31369,6 +32610,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "49960f39-96fb-414a-8993-e6a99d05fbe7")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "450ee97d-2c24-45b4-a9cd-ee09b9de4365")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31510,6 +32763,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ec0a2b05-0659-426b-b776-56e7e42619a1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C96446"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "07bf749c-4024-4a2f-b686-bc1a82f668db")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31665,7 +32930,7 @@
 		(path "/5f36fbad-06fd-4a1c-b77f-deef0ffe50ab/0c3438ab-a53d-49ab-ab1c-35638d8d9cd4")
 		(sheetname "/HV Flyback/")
 		(sheetfile "hv_flyback.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 0.7)
@@ -32733,6 +33998,18 @@
 				(justify mirror)
 			)
 		)
+		(property "LCSC" "C5156028"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "3a294bca-a741-41b5-a780-16f6d2d166de")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/e86782f0-611b-4534-aff3-65b08805c510/328f53be-64d7-411a-9006-06b6ba05356c")
 		(sheetname "/Power/")
 		(sheetfile "power.kicad_sch")
@@ -33041,10 +34318,38 @@
 				(justify mirror)
 			)
 		)
+		(property "Manufacturer P/N" "AOD1N60"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "678b81b0-61e2-43aa-8ee5-ecb3073a415f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Vendor P/N" "785-1179-1-ND"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "a676c6ac-bf06-4223-b4a2-8129e5845d89")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(path "/f4dc7313-c52c-44cc-8499-a4707a9c67a5/e47ad722-46a5-441b-97e4-915db9980def")
 		(sheetname "/Capacitor Bank/")
 		(sheetfile "hv_bank.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start -3.31 3.45)
 			(end -3.31 3.18)
@@ -33349,6 +34654,18 @@
 				(justify mirror)
 			)
 		)
+		(property "LCSC" "C21190"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "69aadd5c-345c-461b-9118-d0c50584ebbe")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/fae60b2c-2bb3-4faf-8ca4-fe71f7b6041c/452ed37c-634f-4b36-94a5-e367167f4881")
 		(sheetname "/Indicator LEDs/")
@@ -33503,7 +34820,7 @@
 		(path "/cb2ed4c1-6aa6-4f43-8deb-f53b1c57f0a4/3f449d09-d82b-4224-acac-7f500871dcd3")
 		(sheetname "/Breakbeam/")
 		(sheetfile "breakbeam.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 -0.7)
@@ -33603,6 +34920,18 @@
 					(thickness 0.15)
 				)
 				(justify mirror)
+			)
+		)
+		(property "LCSC" "C13585"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "91ce222a-361c-464a-b06b-ff10e89ddf6a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
 			)
 		)
 		(property ki_fp_filters "C_*")
@@ -33725,7 +35054,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/339/CL21A226MAYNNNE_Spec.pdf"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -33777,6 +35106,18 @@
 					(thickness 0.15)
 				)
 				(justify mirror)
+			)
+		)
+		(property "LCSC" "C59461"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "0ae3fdfe-b110-43ea-9936-882dfd801fe5")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
 			)
 		)
 		(property ki_fp_filters "C_*")
@@ -33923,6 +35264,46 @@
 					(thickness 0.15)
 				)
 				(justify mirror)
+			)
+		)
+		(property "Manufacturer P/N" "TLV75733PDBV"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "9c8237b5-546e-476e-894d-ee3e41e199c5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Vendor P/N" "296-50414-1-ND"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "0d7d2ad2-c66d-4653-9076-84a2e008ddb3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "LCSC" "C485517"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "dd8f9e52-7055-493f-b27b-fe37c4fb7809")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
 			)
 		)
 		(property ki_fp_filters "SOT?23*")
@@ -34315,6 +35696,18 @@
 				(justify mirror)
 			)
 		)
+		(property "LCSC" "C15849"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "b83344c9-9bae-42c4-8a21-30c9c8f870e7")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/e86782f0-611b-4534-aff3-65b08805c510/2849f7eb-5b07-47e4-82ce-57c31169c332")
 		(sheetname "/Power/")
@@ -34459,6 +35852,18 @@
 					(thickness 0.15)
 				)
 				(justify mirror)
+			)
+		)
+		(property "LCSC" "C22380013"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "facf03cf-75eb-4463-a94c-2022c1525032")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
 			)
 		)
 		(property ki_fp_filters "C_*")
@@ -34607,6 +36012,46 @@
 					(thickness 0.15)
 				)
 				(justify mirror)
+			)
+		)
+		(property "Manufacturer P/N" "SMAJ16CA"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "5a3eacd0-45fc-46ae-ac54-4b20d68febb0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Vendor P/N" "SMAJ16CALFCT-ND"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "6ed15a18-99b3-4b42-96f0-335e09307d12")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "LCSC" "C148217"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "284b51bc-f0b9-497a-af09-1a6c083b1ab3")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
 			)
 		)
 		(property ki_fp_filters "D*SMA*")
@@ -34891,7 +36336,7 @@
 		(path "/e86782f0-611b-4534-aff3-65b08805c510/44b0c238-0c41-45e0-b892-0b67b2dd5550")
 		(sheetname "/Power/")
 		(sheetfile "power.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 -0.7)
@@ -35477,6 +36922,18 @@
 				(justify mirror)
 			)
 		)
+		(property "LCSC" "C22965"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "5fe38589-dcfb-4d01-a574-96744f4d2a05")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/f4dc7313-c52c-44cc-8499-a4707a9c67a5/8b70edb7-6e53-4237-bd10-5cc3cc31ff05")
 		(sheetname "/Capacitor Bank/")
@@ -35630,7 +37087,7 @@
 		(path "/22347599-bf0c-4fd4-a7a3-7c86a35ae01b/6fc3904a-683e-4b2f-b524-26339ccd9b43")
 		(sheetname "/MCU/")
 		(sheetfile "mcu.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 -0.7)
@@ -35730,6 +37187,18 @@
 					(thickness 0.15)
 				)
 				(justify mirror)
+			)
+		)
+		(property "LCSC" "C913904"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "30029aac-c87a-4709-b3c3-1db07faf6c11")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
 			)
 		)
 		(property ki_fp_filters "C_*")
@@ -35876,6 +37345,46 @@
 					(thickness 0.15)
 				)
 				(justify mirror)
+			)
+		)
+		(property "Manufacturer P/N" "LM66100DCK"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "6f63b0e4-6531-4bd7-8eef-0d3d9922e94e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Vendor P/N" "296-53541-1-ND"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "5f88ed0d-a73a-448a-8a71-ce3229b0557b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "LCSC" "C2869734"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "fbb8eb46-e094-4378-81e5-495586b68f7b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
 			)
 		)
 		(property ki_fp_filters "*SC?70*")
@@ -36195,7 +37704,7 @@
 		(path "/22347599-bf0c-4fd4-a7a3-7c86a35ae01b/84d63053-3dab-4653-8612-e86437c2db0f")
 		(sheetname "/MCU/")
 		(sheetfile "mcu.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 -0.7)
@@ -36295,6 +37804,18 @@
 					(thickness 0.15)
 				)
 				(justify mirror)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "2d09ee4f-b301-48b3-b4a9-074780e8d537")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
 			)
 		)
 		(property ki_fp_filters "R_*")
@@ -36452,7 +37973,7 @@
 		(path "/22347599-bf0c-4fd4-a7a3-7c86a35ae01b/998f5183-1f3a-4188-88bf-1b1419a1b8ff")
 		(sheetname "/MCU/")
 		(sheetfile "mcu.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 -0.7)
@@ -36560,7 +38081,7 @@
 		(path "/e4304b20-4d06-4872-95c9-1dabf011b89c/473af693-2ad7-4c4f-803c-3b95d0dfe61b")
 		(sheetname "/HV Discharge/")
 		(sheetfile "hv_discharge.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 -0.7)
@@ -36660,6 +38181,46 @@
 					(thickness 0.15)
 				)
 				(justify mirror)
+			)
+		)
+		(property "Manufacturer P/N" "TPS62177DQC"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "9ce23678-1c8f-41c1-ba13-050d00cc16a4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Vendor P/N" "296-41856-1-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "6d002815-de14-4e4f-bd1e-45ddea8bf785")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "LCSC" "C91241"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "dfc082a0-a857-4de0-98f1-02746dbc586f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
 			)
 		)
 		(property ki_fp_filters "WSON*EP*2x3mm*P0.5mm*")
@@ -37067,6 +38628,18 @@
 				(justify mirror)
 			)
 		)
+		(property "LCSC" "C13585"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "2297caed-57c7-4587-b7d9-8af778b04525")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/5f36fbad-06fd-4a1c-b77f-deef0ffe50ab/fe8d437c-92c7-4aef-9796-a75017c971fb")
 		(sheetname "/HV Flyback/")
@@ -37187,7 +38760,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/610/LBC3225T100KR_SS.pdf"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -37239,6 +38812,18 @@
 					(thickness 0.15)
 				)
 				(justify mirror)
+			)
+		)
+		(property "LCSC" "C223424"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "63d7288f-bd2d-4905-b1b2-57d11402c97b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
 			)
 		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
@@ -38332,7 +39917,7 @@
 		(path "/e4304b20-4d06-4872-95c9-1dabf011b89c/4aff2acc-d09a-4b7c-9b3f-300bbf4a8ee3")
 		(sheetname "/HV Discharge/")
 		(sheetfile "hv_discharge.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start -2.06 1.46)
 			(end -2.06 -6.36)
@@ -38750,6 +40335,18 @@
 				(justify mirror)
 			)
 		)
+		(property "LCSC" "C15849"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "c8649a7a-aa0c-460c-bd8e-d9a6449e0a55")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/e86782f0-611b-4534-aff3-65b08805c510/2c4d3694-9c6f-4c0e-abef-e53774efaf3d")
 		(sheetname "/Power/")
@@ -38900,7 +40497,7 @@
 		(path "/e4304b20-4d06-4872-95c9-1dabf011b89c/4112d46d-22ca-465e-aa61-b4563bbcf6a0")
 		(sheetname "/HV Discharge/")
 		(sheetfile "hv_discharge.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start 4.06 -6.36)
 			(end 4.06 1.46)
@@ -39318,6 +40915,46 @@
 					(thickness 0.15)
 				)
 				(justify mirror)
+			)
+		)
+		(property "Manufacturer P/N" "SMAJ16CA"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "3793a7fa-c38e-447a-b863-4aa9038bfb9a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Vendor P/N" "SMAJ16CALFCT-ND"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "648fa5ab-77cf-42c6-a484-d7fcee7b0f30")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "LCSC" "C148217"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "8277f5c3-0a1b-466b-8acf-0fbf13947bd2")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
 			)
 		)
 		(property ki_fp_filters "D*SMA*")
@@ -40080,6 +41717,18 @@
 				(justify mirror)
 			)
 		)
+		(property "LCSC" "C163423"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "e45cf57c-4153-4c0d-9039-9207d41c8c69")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/f4dc7313-c52c-44cc-8499-a4707a9c67a5/26cea636-4482-4126-beba-57d3764de492")
 		(sheetname "/Capacitor Bank/")
@@ -40230,7 +41879,7 @@
 		(path "/e4304b20-4d06-4872-95c9-1dabf011b89c/820e3200-01e1-4380-8894-9a05436d8f52")
 		(sheetname "/HV Discharge/")
 		(sheetfile "hv_discharge.kicad_sch")
-		(attr through_hole dnp)
+		(attr through_hole exclude_from_pos_files exclude_from_bom dnp)
 		(fp_line
 			(start 4.78 -15.01)
 			(end 4.78 -13.51)
@@ -40717,6 +42366,46 @@
 				(justify mirror)
 			)
 		)
+		(property "Manufacturer P/N" "LM66100DCK"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "f7dae579-4dfe-4617-9a3d-229a0e89e86b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Vendor P/N" "296-53541-1-ND"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "9f7fdef9-599a-4fc1-8b35-e838d14b27c2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "LCSC" "C2869734"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "0f5c5e47-6cd0-4387-8792-d1da5fe1b2be")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "*SC?70*")
 		(path "/e86782f0-611b-4534-aff3-65b08805c510/2a1ead64-81d0-4824-b856-b9b407a1ab7c")
 		(sheetname "/Power/")
@@ -41033,7 +42722,7 @@
 		(path "/e86782f0-611b-4534-aff3-65b08805c510/7e82f208-8f57-4025-ac2b-0a9c46c2dd6d")
 		(sheetname "/Power/")
 		(sheetfile "power.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 -0.7)
@@ -41142,7 +42831,7 @@
 		(path "/22347599-bf0c-4fd4-a7a3-7c86a35ae01b/e8dc7c93-d4f2-4ccc-8755-fd3d8145d7ce")
 		(sheetname "/MCU/")
 		(sheetfile "mcu.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 -0.7)
@@ -41268,6 +42957,18 @@
 					(thickness 0.15)
 				)
 				(justify mirror)
+			)
+		)
+		(property "LCSC" "C4270818"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "0d589715-6349-439c-99d2-9421faeee777")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
 			)
 		)
 		(property ki_fp_filters "R_*")
@@ -41835,6 +43536,18 @@
 				(justify mirror)
 			)
 		)
+		(property "LCSC" "C163423"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "5ffc9619-d0f2-4137-9f48-d2f70aec9c80")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/f4dc7313-c52c-44cc-8499-a4707a9c67a5/d807e479-b1c4-45c3-aade-2836e69978ef")
 		(sheetname "/Capacitor Bank/")
@@ -41981,6 +43694,18 @@
 				(justify mirror)
 			)
 		)
+		(property "LCSC" "C21190"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "9db4e7db-ad7d-4f82-afe7-7e30e2f09ad5")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/fae60b2c-2bb3-4faf-8ca4-fe71f7b6041c/33a74a39-f936-4879-8dd1-bac06a02fe1d")
 		(sheetname "/Indicator LEDs/")
@@ -42103,7 +43828,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/658/CL10B104KB8NNWC_Spec.pdf"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -42199,6 +43924,18 @@
 				(justify mirror)
 			)
 		)
+		(property "LCSC" "C13585"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "10309ee1-932e-4226-b1b7-ceb5c131461c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/5f36fbad-06fd-4a1c-b77f-deef0ffe50ab/00a4f478-27dd-4b6a-856c-3d4a18e93dec")
 		(sheetname "/HV Flyback/")
@@ -42289,14 +44026,14 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_0402_1005Metric"
+	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "B.Cu")
 		(uuid "be59c84b-ab47-418f-8928-08afe434e6b5")
-		(at 111.25 31.5 90)
-		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
+		(at 111.5 31 90)
+		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R1"
-			(at 0 1.25 90)
+			(at 0 1.43 270)
 			(layer "B.SilkS")
 			(uuid "143d7622-bdd7-4bf0-ada0-99adce3dbc05")
 			(effects
@@ -42308,7 +44045,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 0 -1.17 270)
+			(at 0 -1.43 270)
 			(layer "B.Fab")
 			(uuid "ecb65d70-76ff-456f-9305-0e1302a67633")
 			(effects
@@ -42345,52 +44082,64 @@
 				(justify mirror)
 			)
 		)
+		(property "LCSC" "C25803"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "a47e13f6-6e05-4cce-885b-87bc92988907")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/e86782f0-611b-4534-aff3-65b08805c510/a0958b6e-a1e6-4b89-be84-2ae9dfa74801")
 		(sheetname "/Power/")
 		(sheetfile "power.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start -0.153641 -0.38)
-			(end 0.153641 -0.38)
+			(start -0.237258 -0.5225)
+			(end 0.237258 -0.5225)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "3e8234ab-caba-460e-9540-6ce2482ffd65")
+			(uuid "eac68f78-e28d-48b1-9a4b-0d071cfbbcba")
 		)
 		(fp_line
-			(start -0.153641 0.38)
-			(end 0.153641 0.38)
+			(start -0.237258 0.5225)
+			(end 0.237258 0.5225)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "8e3dcb57-9205-4387-a95e-47130ef1d649")
+			(uuid "fee2d164-b247-490d-b9cb-6d67c6040fc9")
 		)
 		(fp_rect
-			(start -0.93 0.47)
-			(end 0.93 -0.47)
+			(start -1.48 0.73)
+			(end 1.48 -0.73)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(fill no)
 			(layer "B.CrtYd")
-			(uuid "f606723b-926e-4b3e-86ec-98c4467f42fe")
+			(uuid "827cb58d-c6a9-404f-8c7b-491f65dddf6d")
 		)
 		(fp_rect
-			(start -0.525 0.27)
-			(end 0.525 -0.27)
+			(start -0.8 0.4125)
+			(end 0.8 -0.4125)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(fill no)
 			(layer "B.Fab")
-			(uuid "b0cd4245-522a-4126-892a-8739297d49e8")
+			(uuid "6fbb1c09-e0d2-4a43-97d5-2311811e3b42")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 0 270)
@@ -42398,15 +44147,15 @@
 			(uuid "7baf97ea-328d-4b70-b3c6-df9137c2ceea")
 			(effects
 				(font
-					(size 0.26 0.26)
-					(thickness 0.04)
+					(size 0.4 0.4)
+					(thickness 0.06)
 				)
 				(justify mirror)
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.51 0 90)
-			(size 0.54 0.64)
+			(at -0.825 0 90)
+			(size 0.8 0.95)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net 3 "/Power/3.3V_REG")
@@ -42414,8 +44163,8 @@
 			(uuid "7e34869a-fe64-442f-83e6-4a71d7758620")
 		)
 		(pad "2" smd roundrect
-			(at 0.51 0 90)
-			(size 0.54 0.64)
+			(at 0.825 0 90)
+			(size 0.8 0.95)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net 62 "Net-(U1-PG)")
@@ -42423,7 +44172,7 @@
 			(uuid "286180d0-c3d8-4065-a840-9ccda3ccfcf1")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -42497,7 +44246,7 @@
 		(path "/cb2ed4c1-6aa6-4f43-8deb-f53b1c57f0a4/96b1952a-23eb-4db6-b347-accda3591cc4")
 		(sheetname "/Breakbeam/")
 		(sheetfile "breakbeam.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 -0.7)
@@ -42605,7 +44354,7 @@
 		(path "/e86782f0-611b-4534-aff3-65b08805c510/593d98e8-8bca-4aae-af51-97f291da9894")
 		(sheetname "/Power/")
 		(sheetfile "power.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 -0.7)
@@ -42711,7 +44460,7 @@
 		(path "/e4304b20-4d06-4872-95c9-1dabf011b89c/5b799645-4062-47e5-bfe0-becc4a9a4e09")
 		(sheetname "/HV Discharge/")
 		(sheetfile "hv_discharge.kicad_sch")
-		(attr through_hole dnp)
+		(attr through_hole exclude_from_pos_files exclude_from_bom dnp)
 		(fp_line
 			(start -1.61 1.61)
 			(end -1.61 0)
@@ -43198,6 +44947,18 @@
 				(justify mirror)
 			)
 		)
+		(property "LCSC" "C21190"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "867681b3-41c0-4dde-b235-4d22648030ff")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/fae60b2c-2bb3-4faf-8ca4-fe71f7b6041c/eaa21668-bbc5-4f31-8b19-7881b1820335")
 		(sheetname "/Indicator LEDs/")
@@ -43344,6 +45105,18 @@
 					(thickness 0.15)
 				)
 				(justify mirror)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "a1d73fb0-78ac-433b-92ff-0bce1d119038")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
 			)
 		)
 		(property ki_fp_filters "R_*")
@@ -43522,6 +45295,18 @@
 					(thickness 0.15)
 				)
 				(justify mirror)
+			)
+		)
+		(property "LCSC" "C151257"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "5c0fc334-0f82-46f2-93f9-5c7843fcee7c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
 			)
 		)
 		(path "/e86782f0-611b-4534-aff3-65b08805c510/f503ba3a-9afc-493b-9481-1e770a43ed99")
@@ -43799,6 +45584,18 @@
 				(justify mirror)
 			)
 		)
+		(property "LCSC" "C1688"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "6e258786-9ea5-484e-9387-365b3803b937")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/f4dc7313-c52c-44cc-8499-a4707a9c67a5/8878ebe3-2cfd-4aea-85ff-53eac79dcaaa")
 		(sheetname "/Capacitor Bank/")
@@ -43952,7 +45749,7 @@
 		(path "/22347599-bf0c-4fd4-a7a3-7c86a35ae01b/bc5d9f33-2882-4c57-b6ad-257e5d0a896c")
 		(sheetname "/MCU/")
 		(sheetfile "mcu.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 -0.7)
@@ -44052,6 +45849,18 @@
 					(thickness 0.15)
 				)
 				(justify mirror)
+			)
+		)
+		(property "LCSC" "C7250"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "afc2a457-9cba-4543-9156-603d832116c7")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
 			)
 		)
 		(property ki_fp_filters "R_*")
@@ -44200,6 +46009,18 @@
 				(justify mirror)
 			)
 		)
+		(property "LCSC" "C21190"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "98189a07-8ae2-4d23-af45-b3eaaf38e8b0")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/e86782f0-611b-4534-aff3-65b08805c510/597ac3d6-497b-4730-8c38-bf7d6e34e5d9")
 		(sheetname "/Power/")
@@ -44346,6 +46167,46 @@
 					(thickness 0.15)
 				)
 				(justify mirror)
+			)
+		)
+		(property "Manufacturer P/N" "SBR1U150SA-13"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "71c7da83-cd20-4372-b490-6d8f0192047a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Vendor P/N" "SBR1U150SA-13DICT-ND"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "b9e48268-c46e-4747-940f-7704236fc803")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "LCSC" "C151618"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "76acf38f-7932-4946-80eb-6f6d0d2c7f92")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
 			)
 		)
 		(path "/5f36fbad-06fd-4a1c-b77f-deef0ffe50ab/e4a76ff1-d04b-4ddf-9a22-7833d538e721")
@@ -44623,6 +46484,18 @@
 				(justify mirror)
 			)
 		)
+		(property "LCSC" "C21190"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "87168442-5b4c-4840-ae37-fca773ea55c8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/fae60b2c-2bb3-4faf-8ca4-fe71f7b6041c/9c20d869-6daf-46ec-b8fb-28cb54a5c994")
 		(sheetname "/Indicator LEDs/")
@@ -44777,7 +46650,7 @@
 		(path "/e86782f0-611b-4534-aff3-65b08805c510/edc27409-0a1a-41fc-bd89-75e2e0d872bf")
 		(sheetname "/Power/")
 		(sheetfile "power.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 -0.7)
@@ -44877,6 +46750,18 @@
 					(thickness 0.15)
 				)
 				(justify mirror)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "14bb18fb-23cf-47f8-bced-b15bdcdfebc8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
 			)
 		)
 		(property ki_fp_filters "R_*")
@@ -45051,6 +46936,18 @@
 					(thickness 0.15)
 				)
 				(justify mirror)
+			)
+		)
+		(property "LCSC" "C460417"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "89d6ca30-0e6d-4419-8ed8-985d17cd5a6b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
 			)
 		)
 		(path "/e4304b20-4d06-4872-95c9-1dabf011b89c/ed82759e-7d5a-4ef2-8c18-952dd1507216")
@@ -45361,6 +47258,18 @@
 				(justify mirror)
 			)
 		)
+		(property "LCSC" "C96446"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "d82dea19-62bb-44ff-b552-476043a8028f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/e86782f0-611b-4534-aff3-65b08805c510/ae878fdb-704c-47d9-9927-62854aaf1951")
 		(sheetname "/Power/")
@@ -45513,7 +47422,7 @@
 		(path "/e86782f0-611b-4534-aff3-65b08805c510/1915ec26-48f1-4b37-b128-9becb9a8135c")
 		(sheetname "/Power/")
 		(sheetfile "power.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 -0.7)
@@ -45613,6 +47522,18 @@
 					(thickness 0.15)
 				)
 				(justify mirror)
+			)
+		)
+		(property "LCSC" "C1688"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "13653f67-3204-4795-86bb-7e8d423cf2e9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
 			)
 		)
 		(property ki_fp_filters "C_*")
@@ -46728,11 +48649,25 @@
 				(justify mirror)
 			)
 		)
+		(property "Vendor P/N" "541-4.22KAFCT-ND"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "010edb26-425c-4cb5-a222-d30c16eee03b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/5f36fbad-06fd-4a1c-b77f-deef0ffe50ab/3c2d7ccf-1f91-4b65-8726-c0e859319837")
 		(sheetname "/HV Flyback/")
 		(sheetfile "hv_flyback.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start -2.177064 -1.71)
 			(end 2.177064 -1.71)
@@ -46880,7 +48815,7 @@
 		(path "/e86782f0-611b-4534-aff3-65b08805c510/c23a8f15-8624-411e-a1a5-5dccea9b5e78")
 		(sheetname "/Power/")
 		(sheetfile "power.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 -0.7)
@@ -47643,6 +49578,18 @@
 				(justify mirror)
 			)
 		)
+		(property "LCSC" "C22965"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "735a91f8-7fb0-4b22-a9a8-9548a065c667")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/f4dc7313-c52c-44cc-8499-a4707a9c67a5/4b28cbe4-38d1-42ed-8d59-c4af0d7e3c0a")
 		(sheetname "/Capacitor Bank/")
@@ -47822,7 +49769,7 @@
 		(path "/f4dc7313-c52c-44cc-8499-a4707a9c67a5/32d70bc7-0b7a-4a84-b220-baca3537f448")
 		(sheetname "/Capacitor Bank/")
 		(sheetfile "hv_bank.kicad_sch")
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start -3.66 -2.15)
 			(end 2.15 -2.15)
@@ -48092,6 +50039,46 @@
 					(thickness 0.15)
 				)
 				(justify mirror)
+			)
+		)
+		(property "Manufacturer P/N" "BSS127S"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "6ff4d09a-b80d-458a-bfc7-b1ca29b3665a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Vendor P/N" "BSS127S-7DICT-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "a74cc710-bc98-4020-a629-c4833ef8af0f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "LCSC" "C154890"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "00d5af7a-5383-4148-bded-831eeedf0feb")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
 			)
 		)
 		(property ki_fp_filters "SOT?23*")
@@ -56019,6 +58006,22 @@
 		(uuid "047018cf-81c9-4235-b33a-fc34b7b1e688")
 	)
 	(segment
+		(start 111.5 31.825)
+		(end 110.825 32.5)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 3)
+		(uuid "10847d66-d355-45be-8d1b-31c939296de8")
+	)
+	(segment
+		(start 110.825 32.5)
+		(end 109.75 32.5)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 3)
+		(uuid "a7b540ac-b724-4e96-a4d8-388f12149c46")
+	)
+	(segment
 		(start 122.65 36.65)
 		(end 122.5 36.5)
 		(width 0.381)
@@ -56027,28 +58030,12 @@
 		(uuid "a7fe509d-d0a4-4ccd-b865-622fd6fa667e")
 	)
 	(segment
-		(start 110.76 32.5)
-		(end 111.25 32.01)
-		(width 0.254)
-		(layer "B.Cu")
-		(net 3)
-		(uuid "b15a427f-e448-4e7a-87c1-17245cbd4c63")
-	)
-	(segment
 		(start 111 36.5)
 		(end 109 36.5)
 		(width 0.381)
 		(layer "B.Cu")
 		(net 3)
 		(uuid "be894152-0f3c-4f4c-8fd3-5381cf641341")
-	)
-	(segment
-		(start 109.75 32.5)
-		(end 110.76 32.5)
-		(width 0.254)
-		(layer "B.Cu")
-		(net 3)
-		(uuid "fbe0572d-7455-4da9-94e8-2fdf7df34358")
 	)
 	(via
 		(at 122 30.5)
@@ -58527,12 +60514,20 @@
 		(uuid "c1426c1d-7f61-4a84-bd38-488086dfc114")
 	)
 	(segment
-		(start 157 75.4)
-		(end 155 77.4)
+		(start 163.25 66)
+		(end 159 66)
 		(width 0.1905)
 		(layer "F.Cu")
 		(net 47)
-		(uuid "1f8c1c47-4c78-4ca0-a7f1-0a84418e7b0b")
+		(uuid "2b66972f-53f5-49a3-bd60-6d1f623d5ca2")
+	)
+	(segment
+		(start 157 68)
+		(end 157 75.4)
+		(width 0.1905)
+		(layer "F.Cu")
+		(net 47)
+		(uuid "63145426-6eff-4dfd-9f61-2f9e48a507a8")
 	)
 	(segment
 		(start 151.9 77.9)
@@ -58540,7 +60535,15 @@
 		(width 0.1905)
 		(layer "F.Cu")
 		(net 47)
-		(uuid "2d430187-6b9f-4905-8667-1795e92c5a6d")
+		(uuid "6e0c9898-7967-4b30-9f98-8b480aae321c")
+	)
+	(segment
+		(start 157 75.4)
+		(end 154.9 77.5)
+		(width 0.1905)
+		(layer "F.Cu")
+		(net 47)
+		(uuid "799b5229-d994-42bb-8c0a-367ec36caf3c")
 	)
 	(segment
 		(start 159 66)
@@ -58548,15 +60551,15 @@
 		(width 0.1905)
 		(layer "F.Cu")
 		(net 47)
-		(uuid "35ce4fc1-c172-4aa2-982e-f222f845d98e")
+		(uuid "7ebf5f0b-1ca6-4db2-9583-cbdd475de260")
 	)
 	(segment
-		(start 163.25 66)
-		(end 159 66)
+		(start 154.9 77.5)
+		(end 152.3 77.5)
 		(width 0.1905)
 		(layer "F.Cu")
 		(net 47)
-		(uuid "86a477f0-7eb0-4600-b5f2-819c5f707e77")
+		(uuid "7fb2ad14-e672-403f-936b-f5d1ee050b11")
 	)
 	(segment
 		(start 163.25 66)
@@ -58567,28 +60570,12 @@
 		(uuid "e4076751-c74d-4f7d-a375-e2100cf594df")
 	)
 	(segment
-		(start 157 68)
-		(end 157 75.4)
-		(width 0.1905)
-		(layer "F.Cu")
-		(net 47)
-		(uuid "ea90f994-4d44-4a90-b67c-b672456a414c")
-	)
-	(segment
-		(start 155 77.4)
-		(end 152.4 77.4)
-		(width 0.1905)
-		(layer "F.Cu")
-		(net 47)
-		(uuid "f031cb4d-8993-4260-a72d-42d71c1d2c19")
-	)
-	(segment
-		(start 152.4 77.4)
+		(start 152.3 77.5)
 		(end 151.9 77.9)
 		(width 0.1905)
 		(layer "F.Cu")
 		(net 47)
-		(uuid "fee948a0-c8c8-49e6-9319-c8e79ce3d8bf")
+		(uuid "f9230e3f-79bf-4c64-8977-ff03ce7f2e0c")
 	)
 	(via
 		(at 164.8 66)
@@ -59223,12 +61210,36 @@
 		(uuid "16e22030-db57-4307-aed1-133da29fbd99")
 	)
 	(segment
-		(start 111.25 30.99)
-		(end 110.24 32)
-		(width 0.254)
+		(start 110.724 31.576)
+		(end 110.724 30.951)
+		(width 0.2)
 		(layer "B.Cu")
 		(net 62)
-		(uuid "c9c84ef5-de4d-4807-af84-5cae0dacbaf7")
+		(uuid "3419c748-b1f0-40da-98b5-f550c929fc76")
+	)
+	(segment
+		(start 110.724 30.951)
+		(end 111.5 30.175)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 62)
+		(uuid "8c1c5525-c427-430c-a937-428e054dd45f")
+	)
+	(segment
+		(start 110.3 32)
+		(end 110.724 31.576)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 62)
+		(uuid "ee7ac566-4327-4934-82ef-fc0c9996a040")
+	)
+	(segment
+		(start 109.75 32)
+		(end 110.3 32)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 62)
+		(uuid "ff05b648-0538-406d-9110-d119c9b98270")
 	)
 	(segment
 		(start 120 42)
