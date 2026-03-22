@@ -18,25 +18,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "D"
-				(at 12.7 8.89 0)
+			(property "Reference" "D1"
+				(at 10.16 -7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 				)
 			)
 			(property "Value" "B5819WS-TP"
-				(at 12.7 6.35 0)
+				(at 10.16 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 				)
 			)
-			(property "Footprint" "SOD2512X115N"
+			(property "Footprint" "footprints:SOD2512X115N"
 				(at 12.7 -93.65 0)
 				(effects
 					(font
@@ -222,7 +220,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -240,7 +238,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -7983,6 +7981,21 @@
 		)
 		(uuid "1b3b0e79-6271-42b9-b0fc-4cc92b676208")
 	)
+	(text "Add diode here"
+		(exclude_from_sim no)
+		(at 120.396 209.804 0)
+		(effects
+			(font
+				(face "KiCad Font")
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(italic yes)
+				(color 255 0 0 1)
+			)
+		)
+		(uuid "240bfda2-ee47-4b20-97d2-1995add0856f")
+	)
 	(text "Power MUX 5v"
 		(exclude_from_sim no)
 		(at 216.154 108.458 0)
@@ -8012,6 +8025,21 @@
 			)
 		)
 		(uuid "68bf66f4-7678-4d66-a9dc-baf7d20cb029")
+	)
+	(text "Change to 180k\n"
+		(exclude_from_sim no)
+		(at 108.712 167.894 0)
+		(effects
+			(font
+				(face "KiCad Font")
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(italic yes)
+				(color 255 0 0 1)
+			)
+		)
+		(uuid "68f86743-39b7-492a-8a61-69f748436a01")
 	)
 	(text "Debug Pins."
 		(exclude_from_sim no)
@@ -18933,7 +18961,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_TVS_Filled")
-		(at 69.85 214.63 90)
+		(at 69.85 214.63 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18941,7 +18969,7 @@
 		(dnp no)
 		(uuid "7125b581-253b-4831-b81a-926c6420ac08")
 		(property "Reference" "D8"
-			(at 65.024 213.106 90)
+			(at 74.676 216.154 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18950,7 +18978,7 @@
 			)
 		)
 		(property "Value" "PJSD05TS"
-			(at 55.118 214.884 90)
+			(at 67.056 213.614 90)
 			(effects
 				(font
 					(size 1.27 1.27)
