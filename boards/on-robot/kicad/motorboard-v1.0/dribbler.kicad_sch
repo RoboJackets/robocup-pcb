@@ -5155,6 +5155,16 @@
 	)
 	(wire
 		(pts
+			(xy 77.47 179.07) (xy 77.47 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27eb8350-4534-4485-aa71-bd07c36c070e")
+	)
+	(wire
+		(pts
 			(xy 95.25 24.13) (xy 95.25 31.75)
 		)
 		(stroke
@@ -6165,6 +6175,16 @@
 	)
 	(wire
 		(pts
+			(xy 77.47 180.34) (xy 73.66 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0d7722d-0577-4d2c-bd29-61ee966593c5")
+	)
+	(wire
+		(pts
 			(xy 134.62 67.31) (xy 139.7 67.31)
 		)
 		(stroke
@@ -6272,6 +6292,16 @@
 			(type default)
 		)
 		(uuid "aa4ae098-a7d5-4cdf-a681-a87049310acc")
+	)
+	(wire
+		(pts
+			(xy 73.66 180.34) (xy 73.66 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aaa22947-9210-4716-92b1-fce1acf25f2c")
 	)
 	(polyline
 		(pts
@@ -6505,6 +6535,16 @@
 	)
 	(wire
 		(pts
+			(xy 82.55 176.53) (xy 82.55 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2a5ddf5-d091-44b4-8881-1e8ab6b6336d")
+	)
+	(wire
+		(pts
 			(xy 264.16 30.48) (xy 264.16 31.75)
 		)
 		(stroke
@@ -6552,6 +6592,16 @@
 			(type default)
 		)
 		(uuid "d786835d-2280-440c-a9bf-c2c5db7d5c57")
+	)
+	(wire
+		(pts
+			(xy 88.9 176.53) (xy 82.55 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dae75f99-7db9-47db-a604-8d81854e11df")
 	)
 	(wire
 		(pts
@@ -7600,6 +7650,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 77.47 179.07 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "12fd6c2f-60fe-427d-a69c-92e7ee7be871")
+		(property "Reference" "#PWR0189"
+			(at 77.47 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 77.47 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 77.47 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 77.47 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b9372b0f-75d2-4958-89d1-39adb99329dd")
+		)
+		(instances
+			(project "motorboard-v1.0"
+				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/560c80c7-e8e4-4ad8-b2ec-62b8ce55169f"
+					(reference "#PWR0189")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 102.87 116.84 0)
 		(unit 1)
@@ -7981,71 +8097,6 @@
 			(project "motorboard-v1.0"
 				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/560c80c7-e8e4-4ad8-b2ec-62b8ce55169f"
 					(reference "C104")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 73.66 175.26 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1d0edcbc-9361-4a52-9489-d49c0eb65352")
-		(property "Reference" "#PWR0189"
-			(at 73.66 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 73.66 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 73.66 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 73.66 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 73.66 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2574ab88-335a-4ae2-a070-3c6d7ea79d72")
-		)
-		(instances
-			(project "motorboard-v1.0"
-				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/560c80c7-e8e4-4ad8-b2ec-62b8ce55169f"
-					(reference "#PWR0189")
 					(unit 1)
 				)
 			)
@@ -8501,6 +8552,72 @@
 			(project "motorboard-v1.0"
 				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/560c80c7-e8e4-4ad8-b2ec-62b8ce55169f"
 					(reference "C98")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 88.9 176.53 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "37cad374-e86c-4a4c-99d8-7d2a9305d87f")
+		(property "Reference" "#PWR0190"
+			(at 88.9 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 88.9 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 88.9 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 88.9 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c8e5fad8-9d06-4f10-ba64-afb508de7265")
+		)
+		(instances
+			(project "motorboard-v1.0"
+				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/560c80c7-e8e4-4ad8-b2ec-62b8ce55169f"
+					(reference "#PWR0190")
 					(unit 1)
 				)
 			)
@@ -9004,71 +9121,6 @@
 			(project "motorboard-v1.0"
 				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/560c80c7-e8e4-4ad8-b2ec-62b8ce55169f"
 					(reference "C99")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 82.55 175.26 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5145a69e-dc0b-45ee-b5a9-768d0c407282")
-		(property "Reference" "#PWR0190"
-			(at 82.55 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 82.55 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 82.55 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 82.55 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 82.55 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0590c693-0fbe-4bdb-b13b-851517450068")
-		)
-		(instances
-			(project "motorboard-v1.0"
-				(path "/0b831060-eebb-4b19-8627-ea88aba682f7/560c80c7-e8e4-4ad8-b2ec-62b8ce55169f"
-					(reference "#PWR0190")
 					(unit 1)
 				)
 			)
