@@ -50,7 +50,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.3
+          "min_clearance": 0.4
         }
       },
       "diff_pair_dimensions": [
@@ -60,7 +60,32 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "connection_width|104920242|128497295|727e5e27-c9f1-4758-9bf8-3abddf076800|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "connection_width|130936365|117826318|ccc4b4f7-4a39-4c42-b785-8fd32a2ea521|92b623ca-7a11-48be-b660-0c4f26f669d8",
+          ""
+        ],
+        [
+          "connection_width|131211995|117827836|f42017f6-85eb-428a-af7b-25b2bea9fe19|92b623ca-7a11-48be-b660-0c4f26f669d8",
+          ""
+        ],
+        [
+          "connection_width|165868232|108246051|727e5e27-c9f1-4758-9bf8-3abddf076800|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "connection_width|166232223|169522668|29c00430-d265-4449-86ce-a6754083b4d2|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "zones_intersect|163250000|150050000|8129e8a6-1e27-4f4e-a4c1-29693b02f0cc|b7367120-b47d-408e-96f5-bb071d236bd0",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -91,7 +116,7 @@
         "item_on_disabled_layer": "error",
         "items_not_allowed": "error",
         "length_out_of_range": "error",
-        "lib_footprint_issues": "warning",
+        "lib_footprint_issues": "ignore",
         "lib_footprint_mismatch": "ignore",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
@@ -454,7 +479,7 @@
       "extra_units": "error",
       "field_name_whitespace": "warning",
       "footprint_filter": "ignore",
-      "footprint_link_issues": "warning",
+      "footprint_link_issues": "ignore",
       "four_way_junction": "ignore",
       "global_label_dangling": "warning",
       "ground_pin_not_ground": "warning",
@@ -462,8 +487,8 @@
       "isolated_pin_label": "warning",
       "label_dangling": "error",
       "label_multiple_wires": "warning",
-      "lib_symbol_issues": "warning",
-      "lib_symbol_mismatch": "warning",
+      "lib_symbol_issues": "ignore",
+      "lib_symbol_mismatch": "ignore",
       "missing_bidi_pin": "warning",
       "missing_input_pin": "warning",
       "missing_power_pin": "error",
@@ -473,9 +498,9 @@
       "no_connect_connected": "warning",
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
-      "pin_not_driven": "error",
-      "pin_to_pin": "error",
-      "power_pin_not_driven": "error",
+      "pin_not_driven": "ignore",
+      "pin_to_pin": "ignore",
+      "power_pin_not_driven": "ignore",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",

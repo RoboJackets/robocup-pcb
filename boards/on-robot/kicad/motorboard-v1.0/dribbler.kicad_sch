@@ -4793,6 +4793,16 @@
 		)
 		(uuid "691ef8c6-7a29-42e6-afdc-c13d743b9430")
 	)
+	(text ""
+		(exclude_from_sim no)
+		(at 31.242 79.756 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "7b24135a-7ff5-4625-a08b-901e94620d4d")
+	)
 	(text "Two decoupling for each phase line"
 		(exclude_from_sim no)
 		(at 231.14 22.86 0)
@@ -5109,6 +5119,14 @@
 	(no_connect
 		(at 39.37 107.95)
 		(uuid "059b1811-3ac0-4fbf-9e8f-8d25a68f574c")
+	)
+	(no_connect
+		(at 39.37 80.01)
+		(uuid "5bb64d0c-cf5c-4f85-9017-287cc64932af")
+	)
+	(no_connect
+		(at 39.37 82.55)
+		(uuid "82e4f3d7-fc2d-4c3f-a99d-c1389e9b8fea")
 	)
 	(no_connect
 		(at 39.37 102.87)
@@ -5723,16 +5741,6 @@
 			(type default)
 		)
 		(uuid "4a0e44d3-5962-4e8f-996e-9d9e6db8741e")
-	)
-	(wire
-		(pts
-			(xy 35.56 82.55) (xy 39.37 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4acab0e6-69bf-44a6-af0f-ba0a3fe7ebc6")
 	)
 	(wire
 		(pts
@@ -6476,16 +6484,6 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 80.01) (xy 39.37 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a5654560-1325-49dc-8971-f9d710b826db")
-	)
-	(wire
-		(pts
 			(xy 29.21 163.83) (xy 29.21 157.48)
 		)
 		(stroke
@@ -7144,16 +7142,6 @@
 		)
 		(uuid "fe32ee31-125a-4a97-a132-eae651e3c6b3")
 	)
-	(label "ENCA"
-		(at 35.56 80.01 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "022e595d-7eab-4c73-8835-0902f9baa5a1")
-	)
 	(label "HSW"
 		(at 106.68 80.01 0)
 		(effects
@@ -7403,16 +7391,6 @@
 			(justify left bottom)
 		)
 		(uuid "5410f9f3-6778-4dbd-b655-921ae875754a")
-	)
-	(label "ENCB"
-		(at 35.56 82.55 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "552a4d1c-ab80-41a8-b7d7-ec08a8ea089e")
 	)
 	(label "SENSE_N1"
 		(at 210.82 129.54 0)
