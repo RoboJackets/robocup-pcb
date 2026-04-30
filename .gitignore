@@ -1,3 +1,7 @@
+# SPICE
+*.raw
+*.log
+
 # EAGLE
 
 # Unnecessary Files
@@ -16,6 +20,11 @@
 *-backups/
 *.bak
 *.bck
+
+# KiCad Cache
+*fp-info-cache
+# KiCad Autosave
+\#auto_saved_files#
 
 # EAGLE project file
 *.epf
