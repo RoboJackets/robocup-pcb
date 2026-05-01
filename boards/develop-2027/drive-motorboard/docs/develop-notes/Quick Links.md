@@ -1,0 +1,6 @@
+- `STSPIN32G0A2`
+	- [DigiKey](https://www.digikey.com/en/products/result?s=N4IgTCBcDaIMoBU4AUCSA5AzGA4gBgEEIBdAXyA)
+	- [[stm32g0x1.pdf |STSPIN32G0A2 Datasheet]] (Analog Front-End)
+	- [[stm32g031x4-x6-x8.pdf |STM32G031x8 Datasheet]] (Internal MCU Docs)
+	- [[stm32g0x1.pdf |STM32g0x1 Datasheet]] (Detailed information on MCU perhipherals)
+- 
