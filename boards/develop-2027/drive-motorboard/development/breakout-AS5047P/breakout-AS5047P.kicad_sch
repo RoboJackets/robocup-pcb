@@ -7,7 +7,7 @@
 	(title_block
 		(title "AS5047P Breakout")
 		(date "2026-05-01")
-		(rev "v1.0")
+		(rev "v1.1")
 		(company "RoboJackets")
 		(comment 1 "Aiden Lee")
 	)
@@ -1472,17 +1472,6 @@
 		)
 		(uuid "f7bc0835-ef3f-47b5-a555-e19e78c23bfd")
 	)
-	(text "Unused\nDrive low"
-		(exclude_from_sim no)
-		(at 77.47 46.99 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "22fb7956-62bb-419d-9075-4fe60f49dfe3")
-	)
 	(text "AS5047P Magnetic Encoder"
 		(exclude_from_sim no)
 		(at 25.4 24.765 0)
@@ -1493,6 +1482,17 @@
 			(justify left bottom)
 		)
 		(uuid "45cf7826-2071-4b9b-ba1c-78e7878a2e98")
+	)
+	(text "Unused,\nDefault Off"
+		(exclude_from_sim no)
+		(at 77.47 49.53 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "528cfd04-e0f7-4c21-8a63-2318bfbbdc0d")
 	)
 	(text "Breakout Pinouts"
 		(exclude_from_sim no)
@@ -1556,12 +1556,6 @@
 		(uuid "852301d1-0699-4c48-b821-faefd294689a")
 	)
 	(junction
-		(at 77.47 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8552c6ed-4ebd-47c3-9ae3-80858fffe065")
-	)
-	(junction
 		(at 157.48 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1572,6 +1566,14 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "da19f018-8d02-49d0-989e-98f7397326d9")
+	)
+	(no_connect
+		(at 76.2 48.26)
+		(uuid "76507e91-d190-4955-b38f-0f7940e63a0c")
+	)
+	(no_connect
+		(at 76.2 50.8)
+		(uuid "d8c094e8-7e6f-486e-9894-fed3ca03e2f3")
 	)
 	(wire
 		(pts
@@ -1702,16 +1704,6 @@
 			(type default)
 		)
 		(uuid "41fc985b-c3c0-4b77-8b71-3a8a8f317d0d")
-	)
-	(wire
-		(pts
-			(xy 76.2 48.26) (xy 77.47 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "461892e2-97d0-4ae5-9ace-30671c6987b9")
 	)
 	(wire
 		(pts
@@ -1935,36 +1927,6 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 48.26) (xy 85.09 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dfa40041-0f59-4c7c-a030-766448ba85af")
-	)
-	(wire
-		(pts
-			(xy 77.47 48.26) (xy 77.47 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e167e4c0-8e46-45b9-8301-2981ed5c04af")
-	)
-	(wire
-		(pts
-			(xy 76.2 50.8) (xy 77.47 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "edf33a53-be6f-4826-9480-87b258e05dde")
-	)
-	(wire
-		(pts
 			(xy 44.45 59.69) (xy 45.72 59.69)
 		)
 		(stroke
@@ -1983,16 +1945,6 @@
 		)
 		(uuid "f9890177-38f8-4988-8c0c-0a370fc0635d")
 	)
-	(wire
-		(pts
-			(xy 77.47 48.26) (xy 85.09 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa771fcc-39c8-48ba-b3cb-231f35407c25")
-	)
 	(label "SPI_CLK"
 		(at 137.16 41.91 0)
 		(effects
@@ -2002,16 +1954,6 @@
 			(justify left bottom)
 		)
 		(uuid "1e6c03f4-ca96-4dde-8f83-3683caf1eaa2")
-	)
-	(label "PWM"
-		(at 153.67 52.07 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "2629cf42-2b9a-4aa4-8417-f3234d64e34d")
 	)
 	(label "SPI_MISO"
 		(at 137.16 44.45 0)
@@ -2052,16 +1994,6 @@
 			(justify left bottom)
 		)
 		(uuid "7816f8a6-d212-4485-b518-a262089822f6")
-	)
-	(label "ENC_I"
-		(at 153.67 39.37 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "7c05dd35-b987-4af0-94a0-494437aed4d9")
 	)
 	(label "ENC_A"
 		(at 137.16 52.07 0)
@@ -2144,6 +2076,16 @@
 		(uuid "c01e0847-baac-4815-b555-eaa3466ff793")
 	)
 	(label "PWM"
+		(at 153.67 39.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c2b80e5b-39f5-4134-b15e-eda20961d0d9")
+	)
+	(label "PWM"
 		(at 77.47 53.34 0)
 		(effects
 			(font
@@ -2152,6 +2094,16 @@
 			(justify left bottom)
 		)
 		(uuid "c8ae1ea4-92c7-4569-8a75-6b1e51e65e14")
+	)
+	(label "ENC_I"
+		(at 153.67 52.07 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "df49a045-ec88-41c0-bf13-671bc908e566")
 	)
 	(symbol
 		(lib_id "power:+3.3V")
@@ -3100,8 +3052,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x06_Pin")
-		(at 166.37 44.45 0)
-		(mirror y)
+		(at 166.37 46.99 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3109,9 +3060,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "cb26a72a-dc48-4484-aab2-aa0d5df988fa")
+		(uuid "b9621817-46f1-4414-9970-bc609dbbe2b0")
 		(property "Reference" "J2"
-			(at 167.64 44.45 0)
+			(at 167.64 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3122,7 +3073,7 @@
 			)
 		)
 		(property "Value" "Right Header"
-			(at 167.64 41.91 0)
+			(at 167.64 49.53 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3133,7 +3084,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
-			(at 166.37 44.45 0)
+			(at 166.37 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3144,7 +3095,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 166.37 44.45 0)
+			(at 166.37 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3155,7 +3106,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x06, script generated"
-			(at 166.37 44.45 0)
+			(at 166.37 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3166,22 +3117,22 @@
 			)
 		)
 		(pin "1"
-			(uuid "f8cc6c55-9f82-486a-a975-ba006e927e4d")
+			(uuid "1865e974-60a1-4ff4-9ff3-555d08c58b97")
 		)
 		(pin "3"
-			(uuid "23a4bbe2-9c58-4066-b024-b56983f2aa29")
+			(uuid "34584a08-adc6-4ba9-8b79-da14a8a16b6f")
 		)
 		(pin "2"
-			(uuid "b2b9fd57-a39a-4715-a84b-c924905ce3c2")
+			(uuid "5a832948-cd04-40d3-8c61-7fad341a71c0")
 		)
 		(pin "6"
-			(uuid "86823c17-28c6-42c0-b8cb-8855fb94cbda")
+			(uuid "b0fc2f0b-ede0-4bac-8eb7-698d677f22e8")
 		)
 		(pin "4"
-			(uuid "9c9a4538-ab20-41b5-9b4a-a113dbcb040c")
+			(uuid "830279b9-91b6-401e-a55f-522a4ca329bf")
 		)
 		(pin "5"
-			(uuid "b18ea9da-d6da-4477-a987-5c50d2552380")
+			(uuid "23f4807c-fa50-417e-9abe-7cbe1d82c136")
 		)
 		(instances
 			(project "breakout-AS5047P"
@@ -3418,84 +3369,6 @@
 			(project "breakout-AS5047P"
 				(path "/75c8f45c-8b13-4bdc-9614-0f18f8c3c391"
 					(reference "H1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 85.09 52.07 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f9e6a0c8-4008-4b20-86fc-d09cfb87e736")
-		(property "Reference" "#PWR06"
-			(at 85.09 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 85.09 57.15 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 85.09 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 85.09 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 85.09 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d8b41836-5728-4ef7-83b2-983d1ecc193b")
-		)
-		(instances
-			(project "breakout-AS5047P"
-				(path "/75c8f45c-8b13-4bdc-9614-0f18f8c3c391"
-					(reference "#PWR06")
 					(unit 1)
 				)
 			)
