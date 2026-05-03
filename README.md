@@ -7,6 +7,7 @@ If you are a new member to the RoboCup electrical team and have never used *[git
 ## Prerequisites
 - A computer configured with git [[Linux (Preferred)](https://git-scm.com/install/linux)] [[Windows](https://windows.github.com)] [[Mac](https://mac.github.com/)]
 - An installation of [KiCAD v10.0](http://kicad-pcb.org/download/)
+- An installation of [Obsidian](https://obsidian.md/download)
 
 ## Setup
 
