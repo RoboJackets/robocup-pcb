@@ -4,21 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "a5bb2039a26d895d",
+        "id": "e463bd684a3662a8",
         "type": "tabs",
         "children": [
           {
-            "id": "15e4422ca7ec8e78",
+            "id": "84ca4e0e5a20351b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Breakout Tests/AS5047P.md",
-                "mode": "source",
-                "source": false
+                "file": "datasheets/AS5047x/MPS_AN000271_2-00.pdf"
               },
-              "icon": "lucide-file",
-              "title": "AS5047P"
+              "icon": "lucide-file-text",
+              "title": "MPS_AN000271_2-00"
             }
           }
         ]
@@ -94,8 +92,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Breakout Tests/AS5047P.md",
-                "collapseAll": true,
+                "file": "Quick Links.md",
+                "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -104,7 +102,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for AS5047P"
+              "title": "Backlinks for Quick Links"
             }
           },
           {
@@ -156,21 +154,21 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Breakout Tests/AS5047P.md",
+                "file": "Quick Links.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of AS5047P"
+              "title": "Outline of Quick Links"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -183,28 +181,31 @@
       "bases:Create new base": false
     }
   },
-  "active": "15e4422ca7ec8e78",
+  "active": "84ca4e0e5a20351b",
   "lastOpenFiles": [
-    "_media/as5047p/breakout_AS5047P_schem.pdf",
+    "Application Notes.md",
+    "datasheets/AS5047x/MPS_AN000271_2-00.pdf.part",
+    "Part Selection.md",
+    "datasheets/AS5047x/MPS_AN000271_2-00.pdf",
+    "datasheets/AS5047x/AS5047P.pdf",
+    "Quick Links.md",
     "Breakout Tests/AS5047P.md",
-    "_media/as5047p/kicad_as5047p_breakout.png",
-    "_media/as5047p/assembled_as5047p_breakout.jpg",
+    "_media/as5047p/breakout_AS5047P_schem.pdf",
+    "datasheets/DF45M024053-A2/electrical.png",
+    "datasheets/DF45M024053-A2/Screen Shot 2026-05-03 at 17.25.04.png",
+    "datasheets/DF45M024053-A2/torque_curve_DF45M024053-A2.pdf",
+    "datasheets/DF45M024053-A2/Nanotec_DF45M024053-A2.pdf",
+    "datasheets/DF45M024053-A2/DF45M024053-A2.pdf",
+    "datasheets/DF45M024053-A2",
+    "datasheets/STSPIN32G0A2/stm32g0x1.pdf",
+    "datasheets/AS5047x",
+    "_media/as5047p/scope_2.png",
+    "_media/as5047p/scope_1.png",
+    "_media/as5047p/scope_0.png",
+    "_media/as5047p/rig2.jpg",
     "_media/as5047p/rig1.jpg",
     "_media/as5047p/rig0.jpg",
-    "_media/as5047p/rig2.jpg",
-    "_media/as5047p/scope_2.png",
-    "_media/as5047p/scope_0.png",
-    "_media/as5047p/scope_1.png",
-    "_media/as5047p",
-    "Quick Links.md",
-    "_media/Pasted image 20260503141202.png",
-    "_media",
-    "Breakout Tests",
-    "datasheets/AS5047P.pdf",
-    "datasheets/AS5047P.pdf.part",
-    "datasheets/AS5047P_DS000324_3-00.pdf",
-    "datasheets/STSPIN32G0A2/stspin32g0a1-a2-b1-b2.pdf",
-    "datasheets/STSPIN32G0A2/stm32g031x4-x6-x8.pdf",
-    "datasheets/STSPIN32G0A2/stm32g0x1.pdf"
+    "_media/as5047p/kicad_as5047p_breakout.png",
+    "_media/as5047p/assembled_as5047p_breakout.jpg"
   ]
 }
