@@ -28,7 +28,7 @@
 	- Recommended sizes
 		- 6 mm (dia) x 2.5 mm (prefered)
 			- Better signal/noise ratio
-			- Larger air gaps: $1\;mm < gap <2.5\;mm$
+			- Larger air gaps: $1\;mm < gap <2\;mm$ from top of package
 			- Purchased [469-1024-ND](https://www.digikey.com/en/products/detail/radial-magnets-inc/8995/5126077?s=N4IgTCBcDaICwDYCcBaAjABjHFA5AIiALoC%2BQA) for testing ($80°C$ rating)
 			- **[469-1075-ND](https://www.digikey.com/en/products/detail/radial-magnets-inc/9049/6030786) should be used on robots due to $150\degree C$ rating**
 		- 8 mm (dia) x 3 mm
