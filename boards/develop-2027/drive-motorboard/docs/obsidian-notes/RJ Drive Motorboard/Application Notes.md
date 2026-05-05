@@ -129,12 +129,24 @@
 		- Maximum $I_{RRM} = 3.6\;A$
 		- Assuming $f_{sw} = 50\;kHz$
 		- $P = V_{SD}I_{RRM}t_{rr}f_{sw} = (1.1\;V)(3.6\;A)(90\;ns)(50\;kHz) = 17.8\;mW$ (negligible)
-	- Estimated total losses
+	- Estimated total losses ($f_{sw} = 50\;kHz$)
 		- By type:
 			- Switching loss: $\approx 0.16\;W$
 			- Conduction loss: $\approx 0.39\;W$ (typ.) | $\approx 5.25\;W$ (worst-case)
-			- DTBD loss: $\approx 0.02\;W$
+			- Dead-Time Body Diode loss: $\approx 0.02\;W$
 		- Total: $0.57\;W$ (typ.)
 			- Using $R_{thJA} = 31\;\degree C/W$, $T_{rise} \approx 17.67\degree C$ (Maximum $T_A \approx 157 \degree C$)
 		- Note: Over-current protection threshold must be set so worse-case conduction loss cannot occur for even short periods of time. Suggested threshold is $10\;A$.
+
+### `LM75ADP,118`
+- $I^2C$ Fast Mode ($400\;kHz$)
+- Address configurable using pins `A0,A1,A2`
+	- Address `1001xxx` where `xxx = A2, A1, A0`
+	- `A*` pins should be tied to $V_{CC}$ or GND directly.
+- 11 bit temperature output ($LSB = 0.125\degree C$)
+- $\pm 3 \degree C$ accuracy over full temperature range
+- Active-low Over-temp Shutdown (OS) pin with configurable thresholds
+	- Default $T_{OS} = 80\degree C$
+	- Default $T_{hyst} = 75\degree C$
+- Temperature updates every $100\;ms$
 
