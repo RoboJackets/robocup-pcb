@@ -7,6 +7,9 @@
 	- [[stm32g0x1.pdf |STSPIN32G0A2 Datasheet]] (Analog Front-End)
 	- [[stm32g031x4-x6-x8.pdf |STM32G031x8 Datasheet]] (Internal MCU Docs)
 	- [[stm32g0x1.pdf |STM32g0x1 Datasheet]] (Detailed information on MCU peripherals)
+	- [TI Application Note, MOSFET bootstrapping](https://www.ti.com/lit/an/slua887a/slua887a.pdf?ts=1777934109208)
+	- [[evlspin32g0a2.pdf|Evaluation Board Documentation]]
+	- [[evlspin32goa2-schematic.pdf|Evaluation Board Schematic]]
 - `AS5047P` (14-bit Magnetic Encoder)
 	- [DigiKey](https://www.digikey.com/en/products/detail/ams-osram-usa-inc/AS5047P-ATSM-TSSOP14-LF-T-RDP/5287311)
 	- [[AS5047P.pdf |Datasheet]]

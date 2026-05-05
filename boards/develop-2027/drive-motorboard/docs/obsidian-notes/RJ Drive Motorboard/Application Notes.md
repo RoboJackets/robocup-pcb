@@ -7,6 +7,20 @@
 
 ### `STSPIN32G0A2`
 - The general-purpose timer peripherals (`TIM2`, `TIM3`) has a mode to automatically count AB encoders, ensure pin assignment allows this mode to be used.
+- This variant doesn't support external crystal oscillators.
+- $REG_{3V3}$ can be isolated to only supply the analog block as a precise voltage reference.
+- There is an onboard temperature sensor for die temperature.
+	- Use the factory calibration values (See [[stm32g031x4-x6-x8.pdf|STM32G031x8, Page 24]])
+- SPI supports up to $32\;Mbits/s$
+- Absolute maximum $100\;mA$ current consumption
+- Absolute maximum $80\;mA$ sunk/sourced by all pins (sum)
+- Maximum $T_J =130 \degree C$
+- Maximum $T_A=125\degree C$
+- Estimate of baseline current consumption: $10\;mA$ (Absolute Maximum $100\;mA$)
+	- Assumes all peripherals on, clock at $64\;MHz$
+- Flash memory lasts at least 7 years.
+- ADC Error maximum $\pm 7.5\;LSB$
+- Maximum gate driver sink/source current: $350\;mA$ (full temperature range)
 
 ## `AS5047P`
 - See [[breakout_AS5047P_schem.pdf|breakout board schematic]] for a known working example.
