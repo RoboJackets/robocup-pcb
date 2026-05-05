@@ -30,4 +30,10 @@
 	- $R_{DS(on)} \le 8\;m\Omega$
 	- $I_D = 70\;A$
 
-
+## Temperature Sensor: `LM75ADP,118`
+- `LM75` family chosen
+	- Jellybean part
+	- Accurate temperatures not needed ($\pm2\degree C$ accuracy)
+	- $I^2C$ Interface minimizes pin usage on MCU
+	- Small packages (SOP, TSSOP, MSOP) available
+- `LM75ADP,118` chosen due to small package (MSOP-8) and reputable manufacturer (NXP)
