@@ -3,7 +3,7 @@
 	- All Inputs/Outputs: Required
 	- Test points: Recommended
 - Target board area: **50 mm x 50 mm**
-- Target maximum junction temperature: **85 °C**
+- Target maximum ambient temperature: **85 °C**
 
 ### `STSPIN32G0A2`
 - The general-purpose timer peripherals (`TIM2`, `TIM3`) has a mode to automatically count AB encoders, ensure pin assignment allows this mode to be used.
@@ -52,4 +52,46 @@
 	- <span style="color:red">TEST ME: Magnetic field is significantly weakened (thus angular error is increased) when shaft is a magnetic material.</span>
 		- Manufacturer recommends using a non-magnetic spacer.
 		- [[AS5047P#Breakout Test (May 3, 2026)|Breakout board testing]] found that a magnetic shaft still works, but error was not measured.
+
+## `STL90N10F7`
+- Current Rating
+	- Motor winding resistance $R_{motor} = 0.8\;\Omega$
+	- Maximum $V_{BATT} = 20.5\;V$
+	- Theoretical maximum current: $\dfrac{V_{BATT}}{R_{motor}}= \dfrac{20.5\;V}{0.8\;\Omega} = 25.625\;A$
+		- Well under rated continuous current of $70\;A$
+- Losses estimation (TODO: Confirm with SPICE simulation)
+	- Switching Loss
+		- Assuming test conditions for Table 5 in [[en.DM00082639.pdf|Datasheet Page 3]] apply for all $V_{DS},I_{D}$
+			- $t_r = 32\;ns$
+			- $t_f = 13\;ns$
+			- $t_{rf} = \dfrac{t_r + t_f}{2} = 22.5\;ns$
+		- Assuming $f_{sw} = 50\;kHz$
+		- Assuming peak motor current: $I = 7\;A$
+		- Assuming $V_{BATT} = 20.5\;V$
+		- $P = V_{DS}I_{D}t_{rf}f_{sw} = (20.5\;V)(7\;A)(22.5\;ns)(50\;kHz) \approx 0.16\;W$ (negligible)
+	- Conduction Loss
+		- Worst-case (total stall)
+			- Assuming worst-case current: $I = 25.625\;A$
+			- Maximum possible $R_{DS(on)} = 8\;m\Omega$
+			- $P = I^2R = (25.625\;A)^2(0.008\;\Omega) \approx 5.25\;W$
+			- Using $R_{thJA} = 31\;\degree C/W$, $T_{rise} \approx 162.72\degree C$ (Maximum $T_A = 12.28\degree C$)
+		- Typical (motor peak current)
+			- Assuming peak motor current: $I = 7\;A$
+			- Maximum possible $R_{DS(on)} = 8\;m\Omega$
+			- $P=I^2R = (7\;A)^2(0.008\;\Omega) \approx 0.39\;W$
+			- Using $R_{thJA} = 31\;\degree C/W$, $T_{rise} \approx 12.09\degree C$ (Maximum $T_A = 162 \degree C$)
+	- Dead-Time Body Diode Loss (worst-case)
+		- Assuming dead time over $t_{rr} = 90\;ns$
+		- Maximum $V_{SD} = 1.1\;V$
+		- Maximum $I_{RRM} = 3.6\;A$
+		- Assuming $f_{sw} = 50\;kHz$
+		- $P = V_{SD}I_{RRM}t_{rr}f_{sw} = (1.1\;V)(3.6\;A)(90\;ns)(50\;kHz) = 17.8\;mW$ (negligible)
+	- Estimated total losses
+		- By type:
+			- Switching loss: $\approx 0.16\;W$
+			- Conduction loss: $\approx 0.39\;W$ (typ.) | $\approx 5.25\;W$ (worst-case)
+			- DTBD loss: $\approx 0.02\;W$
+		- Total: $0.57\;W$ (typ.)
+			- Using $R_{thJA} = 31\;\degree C/W$, $T_{rise} \approx 17.67\degree C$ (Maximum $T_A \approx 157 \degree C$)
+		- Note: Over-current protection threshold must be set so worse-case conduction loss cannot occur for even short periods of time. Suggested threshold is $10\;A$.
 

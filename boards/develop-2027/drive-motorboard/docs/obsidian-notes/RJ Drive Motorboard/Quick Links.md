@@ -18,3 +18,9 @@
 	- [Nanotec](https://www.nanotec.com/us/en/products/1789-df45m024053-a2)
 	- [[DF45M024053-A2.pdf|Datasheet]]
 	- [[torque_curve_DF45M024053-A2.pdf|Torque Curves]]
+- `STL90N10F7`
+	- [DigiKey](https://www.digikey.com/en/products/detail/stmicroelectronics/STL90N10F7/4357557)
+	- [[en.DM00082639.pdf|Datasheet]]
+	- [PSPICE Model](https://www.st.com/resource/en/spice_model/stl90n10f7_spice.zip)
+	- [TI Note on estimating MOSFET Power losses](https://www.ti.com/lit/an/slyt664/slyt664.pdf)
+	- 
