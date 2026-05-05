@@ -3,7 +3,7 @@
 
 ## Part-Specific Documentation
 - `STSPIN32G0A2` (Motor Controller Front-End + MCU)
-	- [DigiKey](https://www.digikey.com/en/products/result?s=N4IgTCBcDaIMoBU4AUCSA5AzGA4gBgEEIBdAXyA)
+	- [DigiKey](https://www.digikey.com/en/products/result?s=N4IgTCBcDaIMoBU4AUCSA5AzGA4gBgEEIBdAXyA), [LCSC](https://www.lcsc.com/product-detail/C24896466.html)
 	- [[stm32g0x1.pdf |STSPIN32G0A2 Datasheet]] (Analog Front-End)
 	- [[stm32g031x4-x6-x8.pdf |STM32G031x8 Datasheet]] (Internal MCU Docs)
 	- [[stm32g0x1.pdf |STM32g0x1 Datasheet]] (Detailed information on MCU peripherals)
@@ -14,16 +14,18 @@
 	- [[evlspin32g0a2-getting-started.pdf|Evaluation Board User Manual]]
 	- [[evlspin32goa2-schematic.pdf|Evaluation Board Schematic]]
 - `AS5047P` (14-bit Magnetic Encoder)
-	- [DigiKey](https://www.digikey.com/en/products/detail/ams-osram-usa-inc/AS5047P-ATSM-TSSOP14-LF-T-RDP/5287311)
+	- [DigiKey](https://www.digikey.com/en/products/detail/ams-osram-usa-inc/AS5047P-ATSM-TSSOP14-LF-T-RDP/5287311), [LCSC](https://www.lcsc.com/product-detail/C962063.html)
 	- [[AS5047P.pdf |Datasheet]]
 	- [[MPS_AN000271_2-00.pdf|Magnet Selection Guide]]
 - `DF45M024053-A2` (Drive Motor)
 	- [Nanotec](https://www.nanotec.com/us/en/products/1789-df45m024053-a2)
 	- [[DF45M024053-A2.pdf|Datasheet]]
 	- [[torque_curve_DF45M024053-A2.pdf|Torque Curves]]
-- `STL90N10F7`
-	- [DigiKey](https://www.digikey.com/en/products/detail/stmicroelectronics/STL90N10F7/4357557)
+- `STL90N10F7` (Power MOSFET)
+	- [DigiKey](https://www.digikey.com/en/products/detail/stmicroelectronics/STL90N10F7/4357557), [LCSC](https://www.lcsc.com/product-detail/C457493.html)
 	- [[en.DM00082639.pdf|Datasheet]]
 	- [PSPICE Model](https://www.st.com/resource/en/spice_model/stl90n10f7_spice.zip)
 	- [TI Note on estimating MOSFET Power losses](https://www.ti.com/lit/an/slyt664/slyt664.pdf)
-	- 
+- `LM75ADP,118` (I2C Temperature Sensor)
+	- [DigiKey](https://www.digikey.com/en/products/detail/nxp-usa-inc/LM75ADP-118/1156588), [LCSC](https://www.lcsc.com/product-detail/C843694.html)
+	- [[LM75A.pdf|Datasheet]]
