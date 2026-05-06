@@ -95,6 +95,14 @@
 		- Manufacturer recommends using a non-magnetic spacer.
 		- [[AS5047P#Breakout Test (May 3, 2026)|Breakout board testing]] found that a magnetic shaft still works, but error was not measured.
 
+
+## `DF45M024053-A2`
+- Hall sensor outputs require pull-ups (sourced from A-Team design)
+- Manufacturer standard connector (`STOCKO MKF 13270-6-0-1010`) is not sold on DigiKey, Mouser, or LCSC
+	- A replacement connector will have to be made.
+	- A-Team uses JST ACHF series.
+	- Stock wires are UL1430 AWG24
+
 ## `STL90N10F7`
 - `STSPIN32G0A2` eval board puts diodes on MOSFET gates to reduce dead-time (and losses). This is probably not necessary for this application.
 - Current Rating
