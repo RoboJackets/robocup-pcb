@@ -47,3 +47,15 @@
 	- This means for a $3\;W$ resistor, the maximum resistance $\Omega_{max} = \dfrac{3}{\frac{1}{5}(25\;A)^2} \approx 24 \;m\Omega$
 - Resistors also derate with heat, so $20\;m\Omega$ seems to be a good upper-bound.
 - Bourns `CRA2512-FZ-R015ELF` ( $15\;m\Omega$ 1% 3W 2512) looks to be a solid choice for price, availability, and performance. Significant quantities in stock on DigiKey and LCSC
+
+## VBATT Fuse: `0679H9100-05`
+- Requirements:
+	- $10\;A$ continuous @ $20.5\;VDC$ during normal operation
+	- $15\;A$ peak during normal operation (momentary stalls)
+	- Must blow within $250\;ms$ @ $25\;A$
+	- Small size (surface-mount)
+- Selected model:
+	- Rated $10\;A$ continuous @ $60\;V$
+	- Blows @ $10\;s$ at $15\;A$ (average)
+	- Blows @ $50\;ms$ at $25\;A$ (average)
+	- 
