@@ -33,4 +33,7 @@
 	- [DigiKey](https://www.digikey.com/en/products/detail/bourns-inc/CRA2512-FZ-R015ELF/2563864), [LCSC](https://www.lcsc.com/product-detail/C2073490.html)
 	- [[cra.pdf|Datasheet]]
 	- [Analog Devices - Pad layouts for High Current Sensing Accuracy](https://www.analog.com/en/resources/analog-dialogue/articles/optimize-high-current-sensing-accuracy.html)
-	- 
+- `0679H9100-05` (VBATT Fuse)
+	- [DigiKey](https://www.digikey.com/en/products/detail/bel-fuse-inc/0679H9100-05/6139777), [LCSC](https://www.lcsc.com/product-detail/C3167147.html?s_z=n_q_0679H9100-05&spm=wm.fly.bg.0.xh&lcsc_vid=FgQNBgYCElINUQBTQgRbUgdTQVIMUlUARVULAV1eRgUxVlNRT1BZUVRVQVdeVjsOAxUeFF5JWBYZEEoKFBINSQcJGk4dAgUUFAk%3D)
+	- [[cra.pdf|Datasheet]]
+- 
