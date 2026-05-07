@@ -29,3 +29,8 @@
 - `LM75ADP,118` (I2C Temperature Sensor)
 	- [DigiKey](https://www.digikey.com/en/products/detail/nxp-usa-inc/LM75ADP-118/1156588), [LCSC](https://www.lcsc.com/product-detail/C843694.html)
 	- [[LM75A.pdf|Datasheet]]
+- `CRA2512-FZ-R015ELF` (Current Sense Shunt Resistor)
+	- [DigiKey](https://www.digikey.com/en/products/detail/bourns-inc/CRA2512-FZ-R015ELF/2563864), [LCSC](https://www.lcsc.com/product-detail/C2073490.html)
+	- [[cra.pdf|Datasheet]]
+	- [Analog Devices - Pad layouts for High Current Sensing Accuracy](https://www.analog.com/en/resources/analog-dialogue/articles/optimize-high-current-sensing-accuracy.html)
+	- 
