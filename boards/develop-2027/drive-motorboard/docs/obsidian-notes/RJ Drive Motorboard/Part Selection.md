@@ -37,3 +37,13 @@
 	- $I^2C$ Interface minimizes pin usage on MCU
 	- Small packages (SOP, TSSOP, MSOP) available
 - `LM75ADP,118` chosen due to small package (MSOP-8) and reputable manufacturer (NXP)
+
+## Shunt Resistor: `CRA2512-FZ-R015ELF`
+- Initialy chose SMD 2512 rated for $3\;W$ as it is a common package/rating for shunt resistors.
+- Expected Currents:
+	- Absolute max: $25\;A$ (Motors can induce currents of $33.06\;A$, but assume board protections limit it to this value)
+	- Typical peak: $10\;A$
+- Most resistors are built to handle 5 times the rated power for up to 5 seconds without significant derating.
+	- This means for a $3\;W$ resistor, the maximum resistance $\Omega_{max} = \dfrac{3}{\frac{1}{5}(25\;A)^2} \approx 24 \;m\Omega$
+- Resistors also derate with heat, so $20\;m\Omega$ seems to be a good upper-bound.
+- Bourns `CRA2512-FZ-R015ELF` ( $15\;m\Omega$ 1% 3W 2512) looks to be a solid choice for price, availability, and performance. Significant quantities in stock on DigiKey and LCSC

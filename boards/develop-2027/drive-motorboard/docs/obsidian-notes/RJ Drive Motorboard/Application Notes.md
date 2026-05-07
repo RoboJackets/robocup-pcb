@@ -4,6 +4,7 @@
 	- Test points: *Recommended*
 - Target board area: **45 mm x 45 mm**
 - Target ambient temperature range: **0°C - 100 °C**
+- Critical parts must be available from DigiKey and LCSC (exact match only)
 ### `STSPIN32G0A2`
 
 #### General
@@ -102,13 +103,14 @@
 	- A replacement connector will have to be made.
 	- A-Team uses JST ACHF series.
 	- Stock wires are UL1430 AWG24
+- This P/N is rated for $50\;W$, others in family up to $65 \;W$
 
 ## `STL90N10F7`
 - `STSPIN32G0A2` eval board puts diodes on MOSFET gates to reduce dead-time (and losses). This is probably not necessary for this application.
-- Current Rating
-	- Motor winding resistance $R_{motor} = 0.8\;\Omega$
+- Current Rating (rated for `DF45L024048-A2` @ $65\;W$, since it's higher power)
+	- Motor winding resistance $R_{motor} = 0.62\;\Omega$
 	- Maximum $V_{BATT} = 20.5\;V$
-	- Theoretical maximum current: $\dfrac{V_{BATT}}{R_{motor}}= \dfrac{20.5\;V}{0.8\;\Omega} = 25.625\;A$
+	- Theoretical maximum current: $\dfrac{V_{BATT}}{R_{motor}}= \dfrac{20.5\;V}{0.62\;\Omega} = 33.06\;A$
 		- Well under rated continuous current of $70\;A$
 - Losses estimation (TODO: Confirm with SPICE simulation)
 	- Switching Loss
@@ -117,20 +119,20 @@
 			- $t_f = 13\;ns$
 			- $t_{rf} = \dfrac{t_r + t_f}{2} = 22.5\;ns$
 		- Assuming $f_{sw} = 50\;kHz$
-		- Assuming peak motor current: $I = 7\;A$
+		- Assuming peak motor current: $I = 10\;A$
 		- Assuming $V_{BATT} = 20.5\;V$
-		- $P = V_{DS}I_{D}t_{rf}f_{sw} = (20.5\;V)(7\;A)(22.5\;ns)(50\;kHz) \approx 0.16\;W$ (negligible)
+		- $P = V_{DS}I_{D}t_{rf}f_{sw} = (20.5\;V)(10\;A)(22.5\;ns)(50\;kHz) \approx 0.23\;W$ (negligible)
 	- Conduction Loss
 		- Worst-case (total stall)
-			- Assuming worst-case current: $I = 25.625\;A$
+			- Assuming worst-case current: $I = 33.06\;A$
 			- Maximum possible $R_{DS(on)} = 8\;m\Omega$
-			- $P = I^2R = (25.625\;A)^2(0.008\;\Omega) \approx 5.25\;W$
-			- Using $R_{thJA} = 31\;\degree C/W$, $T_{rise} \approx 162.72\degree C$ (Maximum $T_A = 12.28\degree C$)
+			- $P = I^2R = (33.06\;A)^2(0.008\;\Omega) \approx 8.74\;W$
+			- Using $R_{thJA} = 31\;\degree C/W$, $T_{rise} \approx 270.94\degree C$ (**Requires additional heat dissipation**)
 		- Typical (motor peak current)
-			- Assuming peak motor current: $I = 7\;A$
+			- Assuming peak motor current: $I = 10\;A$
 			- Maximum possible $R_{DS(on)} = 8\;m\Omega$
-			- $P=I^2R = (7\;A)^2(0.008\;\Omega) \approx 0.39\;W$
-			- Using $R_{thJA} = 31\;\degree C/W$, $T_{rise} \approx 12.09\degree C$ (Maximum $T_A = 162 \degree C$)
+			- $P=I^2R = (10\;A)^2(0.008\;\Omega) \approx 0.8\;W$
+			- Using $R_{thJA} = 31\;\degree C/W$, $T_{rise} \approx  24.8\degree C$ (Maximum $T_A = 150 \degree C$)
 	- Dead-Time Body Diode Loss (worst-case)
 		- Assuming dead time over $t_{rr} = 90\;ns$
 		- Maximum $V_{SD} = 1.1\;V$
@@ -139,14 +141,14 @@
 		- $P = V_{SD}I_{RRM}t_{rr}f_{sw} = (1.1\;V)(3.6\;A)(90\;ns)(50\;kHz) = 17.8\;mW$ (negligible)
 	- Estimated total losses ($f_{sw} = 50\;kHz$)
 		- By type:
-			- Switching loss: $\approx 0.16\;W$
-			- Conduction loss: $\approx 0.39\;W$ (typ.) | $\approx 5.25\;W$ (worst-case)
+			- Switching loss: $\approx 0.23\;W$
+			- Conduction loss: $\approx 0.8\;W$ (typ.) | $\approx 8.74\;W$ (worst-case)
 			- Dead-Time Body Diode loss: $\approx 0.02\;W$
-		- Total: $0.57\;W$ (typ.)
-			- Using $R_{thJA} = 31\;\degree C/W$, $T_{rise} \approx 17.67\degree C$ (Maximum $T_A \approx 157 \degree C$)
-		- Note: Over-current protection threshold must be set so worse-case conduction loss cannot occur for even short periods of time. Suggested threshold is $10\;A$.
+		- Total: $1.05\;W$ (typ.)
+			- Using $R_{thJA} = 31\;\degree C/W$, $T_{rise} \approx 32.55\degree C$ (Maximum $T_A \approx 142.45 \degree C$)
+		- Note: Motor currents over $25\;A$ for periods over around $250\;ms$ will cause $T_J$ to exceed maximums. Fuses must be set to never allow this to happen.
 
-### `LM75ADP,118`
+## `LM75ADP,118`
 - $I^2C$ Fast Mode ($400\;kHz$)
 - Address configurable using pins `A0,A1,A2`
 	- Address `1001xxx` where `xxx = A2, A1, A0`
@@ -157,4 +159,3 @@
 	- Default $T_{OS} = 80\degree C$
 	- Default $T_{hyst} = 75\degree C$
 - Temperature updates every $100\;ms$
-
