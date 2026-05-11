@@ -92,10 +92,11 @@
 			- Less sensitive to horizontal misalignment
 			- Worse signal/noise ratio
 			- Smaller air gaps
-	- <span style="color:red">TEST ME: Magnetic field is significantly weakened (thus angular error is increased) when shaft is a magnetic material.</span>
+	- Magnetic field is significantly weakened (thus angular error is increased) when shaft is a magnetic material.
 		- Manufacturer recommends using a non-magnetic spacer.
 		- [[AS5047P#Breakout Test (May 3, 2026)|Breakout board testing]] found that a magnetic shaft still works, but error was not measured.
-
+		- Later tests using a logic analyzer at $25\degree C$ show the error isn't an issue when using incremental A/B/I encoders.
+- Start-up time is $10\;ms$ max according to datasheet. Tests using a logic analyzer at $25\degree C$ show a measured start-up time of $244\pm 1\;\micro s$
 
 ## `DF45M024053-A2`
 - Hall sensor outputs require pull-ups (sourced from A-Team design)
