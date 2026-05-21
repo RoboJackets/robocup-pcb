@@ -58,4 +58,24 @@
 	- Rated $10\;A$ continuous @ $60\;V$
 	- Blows @ $10\;s$ at $15\;A$ (average)
 	- Blows @ $50\;ms$ at $25\;A$ (average)
+
+## Motor Connector Family: `TBD`
+- Requirements:
+	- Current rating of at least $1\;A$ per terminal
+	- Pre-crimped wires must be sold on DigiKey
+	- Height up to $4\;mm$ when mated ($<3\;mm$ preferred)
+	- Surface-Mount only sockets must exist
+- Candidates
+	- JST ACH(F/L) Series
+		- Pitch $1.2\;mm$
+		- Height $1.4\;mm$ mated
+		- Top Entry, side feed
+		- $2\;A$ per circuit (AWG 28)
+		- 3 position
+			- `BM03B-ACHSS-GAN-TF` (male socket)
+			- `ACHR-03V-S` (female housing)
+		- 5 position
+			- `BM05B-ACHSS-A-GAN-ETF` (male socket)
+			- `ACHR-05V-A-S` (female housing)
+		- `ASACHSACH28W102` (pre-crimped cable)
 	- 
