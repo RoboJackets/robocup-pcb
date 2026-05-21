@@ -582,12 +582,42 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Vendor",
+          "name": "Vendor",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Vendor P/N",
+          "name": "Vendor P/N",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer P/N",
+          "name": "Manufacturer P/N",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -620,6 +650,14 @@
     "meta": {
       "version": 1
     },
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "reuse_designators": true,
@@ -632,13 +670,21 @@
         "uuid": "2f9570f4-e846-4a86-b134-ae7438cb1d91"
       }
     ],
-    "used_designators": "U1",
+    "used_designators": "C1-3,#PWR1-6,R1-12",
     "variants": []
   },
   "sheets": [
     [
       "2f9570f4-e846-4a86-b134-ae7438cb1d91",
       "Root"
+    ],
+    [
+      "36fdf732-df19-4f5e-b539-629a29280074",
+      "Motor Phase U"
+    ],
+    [
+      "2176b25b-920c-4211-945a-20df519a7ce9",
+      "Motor Controller"
     ]
   ],
   "text_variables": {},
