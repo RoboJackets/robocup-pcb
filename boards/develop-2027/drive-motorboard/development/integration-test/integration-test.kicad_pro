@@ -50,7 +50,23 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "border_display_style": 2,
+          "border_hatch_pitch": 0.5,
+          "corner_radius": 0.0,
+          "corner_smoothing": 0,
+          "fill_mode": 0,
+          "hatch_gap": 1.5,
+          "hatch_orientation": 0.0,
+          "hatch_smoothing_level": 0,
+          "hatch_smoothing_value": 0.1,
+          "hatch_thickness": 1.0,
+          "min_clearance": 0.5,
+          "min_island_area": 10.0,
+          "min_thickness": 0.25,
+          "pad_connection": 1,
+          "remove_islands": 0,
+          "thermal_relief_gap": 0.5,
+          "thermal_relief_spoke_width": 0.5
         }
       },
       "diff_pair_dimensions": [],
@@ -468,8 +484,17 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_footprint_libs": [
+      "RJ-Graphics",
+      "RJ-Passives"
+    ],
+    "pinned_symbol_libs": [
+      "RJ-MCU",
+      "RJ-Sensors",
+      "RJ-Transistors",
+      "RJ-Passives",
+      "RJ-Diodes"
+    ]
   },
   "meta": {
     "filename": "integration-test.kicad_pro",
@@ -518,7 +543,7 @@
     "annotate_start_num": 0,
     "annotation": {
       "method": 0,
-      "sort_order": 0
+      "sort_order": 1
     },
     "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
@@ -670,7 +695,7 @@
         "uuid": "2f9570f4-e846-4a86-b134-ae7438cb1d91"
       }
     ],
-    "used_designators": "C1-3,#PWR1-6,R1-12",
+    "used_designators": "R1-37,#PWR1-20,Q1-6,U1,D1-6,C1-10",
     "variants": []
   },
   "sheets": [
@@ -685,6 +710,14 @@
     [
       "2176b25b-920c-4211-945a-20df519a7ce9",
       "Motor Controller"
+    ],
+    [
+      "35d99ca0-41c7-44c3-88a4-e7f3d2e98d62",
+      "Motor Phase V"
+    ],
+    [
+      "2a8ffb24-aa29-412e-aaf4-36ae4d1be593",
+      "Motor Phase W"
     ]
   ],
   "text_variables": {},
