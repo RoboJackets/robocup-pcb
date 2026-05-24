@@ -50,6 +50,86 @@
 				(justify left top)
 			)
 		)
+		(pin "ENC" input
+			(at 63.5 69.85 180)
+			(uuid "c5913410-640d-4cea-8493-58abeb1871f5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "HALL" input
+			(at 101.6 82.55 0)
+			(uuid "b9becdb3-adb1-48a7-8be8-f365bd2c85cf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "I2C" bidirectional
+			(at 63.5 82.55 180)
+			(uuid "20a7662b-9a14-47de-8496-d89314701a88")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OUTU" output
+			(at 101.6 69.85 0)
+			(uuid "3a0554cc-c643-46e3-b17f-bcd44e1d3e37")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OUTV" output
+			(at 101.6 72.39 0)
+			(uuid "2cd6a5c2-a8ca-400a-b6f7-7a0d59e7da85")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OUTW" output
+			(at 101.6 74.93 0)
+			(uuid "ae31932e-4271-40c6-b086-eaeabf19bec2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SPI" bidirectional
+			(at 63.5 86.36 180)
+			(uuid "75382e7b-9573-4229-8c5e-1e219b3d2358")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SWD" bidirectional
+			(at 63.5 89.535 180)
+			(uuid "da157e41-596e-4e44-a3fb-adaa5141095b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91"

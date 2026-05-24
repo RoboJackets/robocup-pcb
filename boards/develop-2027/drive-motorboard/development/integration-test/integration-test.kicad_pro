@@ -637,6 +637,12 @@
           "label": "#",
           "name": "${ITEM_NUMBER}",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -695,7 +701,7 @@
         "uuid": "2f9570f4-e846-4a86-b134-ae7438cb1d91"
       }
     ],
-    "used_designators": "TP1-16",
+    "used_designators": "TP1-20,R1-38,U1,Q1-6,#PWR1-33,D1-7,C1-18",
     "variants": []
   },
   "sheets": [
