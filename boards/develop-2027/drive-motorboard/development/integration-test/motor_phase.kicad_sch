@@ -2470,7 +2470,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "185c2709-c9bf-472c-86c3-cd2b94d94754")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR01"
 			(at 88.9 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -2530,15 +2530,15 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/2a8ffb24-aa29-412e-aaf4-36ae4d1be593"
-					(reference "#PWR059")
+					(reference "#PWR028")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/35d99ca0-41c7-44c3-88a4-e7f3d2e98d62"
-					(reference "#PWR053")
+					(reference "#PWR022")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/36fdf732-df19-4f5e-b539-629a29280074"
-					(reference "#PWR032")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -2556,7 +2556,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1f00f4e1-b8c7-4381-9fb7-1cc82c5d9821")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR05"
 			(at 165.1 111.125 0)
 			(hide yes)
 			(show_name no)
@@ -2616,15 +2616,15 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/2a8ffb24-aa29-412e-aaf4-36ae4d1be593"
-					(reference "#PWR063")
+					(reference "#PWR032")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/35d99ca0-41c7-44c3-88a4-e7f3d2e98d62"
-					(reference "#PWR057")
+					(reference "#PWR026")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/36fdf732-df19-4f5e-b539-629a29280074"
-					(reference "#PWR036")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -2642,7 +2642,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "25976eba-cff1-48e9-ad25-6bae6fd72669")
-		(property "Reference" "R15"
+		(property "Reference" "R6"
 			(at 234.95 79.375 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2673,7 +2673,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 234.95 85.725 0)
 			(hide yes)
 			(show_name no)
@@ -2695,7 +2695,7 @@
 				)
 			)
 		)
-		(property "Manufacturer P/N" ""
+		(property "Manufacturer P/N" "RC0402JR-07300RL"
 			(at 234.95 85.725 0)
 			(hide yes)
 			(show_name no)
@@ -2706,7 +2706,7 @@
 				)
 			)
 		)
-		(property "Vendor" ""
+		(property "Vendor" "DigiKey"
 			(at 234.95 85.725 0)
 			(hide yes)
 			(show_name no)
@@ -2717,7 +2717,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" ""
+		(property "Vendor P/N" "311-300JRCT-ND"
 			(at 234.95 85.725 0)
 			(hide yes)
 			(show_name no)
@@ -2737,15 +2737,15 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/2a8ffb24-aa29-412e-aaf4-36ae4d1be593"
-					(reference "R42")
+					(reference "R33")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/35d99ca0-41c7-44c3-88a4-e7f3d2e98d62"
-					(reference "R31")
+					(reference "R22")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/36fdf732-df19-4f5e-b539-629a29280074"
-					(reference "R15")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -2763,7 +2763,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2cea06ec-82dc-4ce7-b83c-a8ebc1ba5f30")
-		(property "Reference" "R12"
+		(property "Reference" "R3"
 			(at 184.15 73.025 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2858,15 +2858,15 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/2a8ffb24-aa29-412e-aaf4-36ae4d1be593"
-					(reference "R39")
+					(reference "R30")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/35d99ca0-41c7-44c3-88a4-e7f3d2e98d62"
-					(reference "R28")
+					(reference "R19")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/36fdf732-df19-4f5e-b539-629a29280074"
-					(reference "R12")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -2884,7 +2884,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "384d04df-c06d-4b93-8b3a-8043de2c736e")
-		(property "Reference" "D7"
+		(property "Reference" "D1"
 			(at 57.15 63.5 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2979,15 +2979,15 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/2a8ffb24-aa29-412e-aaf4-36ae4d1be593"
-					(reference "D12")
+					(reference "D6")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/35d99ca0-41c7-44c3-88a4-e7f3d2e98d62"
-					(reference "D10")
+					(reference "D4")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/36fdf732-df19-4f5e-b539-629a29280074"
-					(reference "D7")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -3005,7 +3005,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3e8447d9-b6bf-44b7-9709-6882c5243ae5")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR04"
 			(at 241.3 104.775 0)
 			(hide yes)
 			(show_name no)
@@ -3065,15 +3065,15 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/2a8ffb24-aa29-412e-aaf4-36ae4d1be593"
-					(reference "#PWR062")
+					(reference "#PWR031")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/35d99ca0-41c7-44c3-88a4-e7f3d2e98d62"
-					(reference "#PWR056")
+					(reference "#PWR025")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/36fdf732-df19-4f5e-b539-629a29280074"
-					(reference "#PWR035")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -3091,7 +3091,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "524c9a18-7044-4b9a-b16a-71d2a3d55e9a")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR03"
 			(at 107.95 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -3151,15 +3151,15 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/2a8ffb24-aa29-412e-aaf4-36ae4d1be593"
-					(reference "#PWR061")
+					(reference "#PWR030")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/35d99ca0-41c7-44c3-88a4-e7f3d2e98d62"
-					(reference "#PWR055")
+					(reference "#PWR024")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/36fdf732-df19-4f5e-b539-629a29280074"
-					(reference "#PWR034")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -3177,7 +3177,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "63f1319a-e28f-4f4e-bc77-88a94e02db33")
-		(property "Reference" "R10"
+		(property "Reference" "R1"
 			(at 209.55 60.325 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3272,15 +3272,15 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/2a8ffb24-aa29-412e-aaf4-36ae4d1be593"
-					(reference "R37")
+					(reference "R28")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/35d99ca0-41c7-44c3-88a4-e7f3d2e98d62"
-					(reference "R26")
+					(reference "R17")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/36fdf732-df19-4f5e-b539-629a29280074"
-					(reference "R10")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -3298,7 +3298,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "76505b2d-0015-471d-b875-09ea6fbe509b")
-		(property "Reference" "R19"
+		(property "Reference" "R10"
 			(at 63.5 101.6 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3329,7 +3329,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 63.5 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -3351,6 +3351,39 @@
 				)
 			)
 		)
+		(property "Manufacturer P/N" "RC0402FR-0768RL"
+			(at 63.5 107.95 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 63.5 107.95 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "311-68.0LRCT-ND"
+			(at 63.5 107.95 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "2383b05b-ca34-45b4-a634-8bf82df7faa8")
 		)
@@ -3360,15 +3393,15 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/2a8ffb24-aa29-412e-aaf4-36ae4d1be593"
-					(reference "R46")
+					(reference "R37")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/35d99ca0-41c7-44c3-88a4-e7f3d2e98d62"
-					(reference "R35")
+					(reference "R26")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/36fdf732-df19-4f5e-b539-629a29280074"
-					(reference "R19")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -3386,7 +3419,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "769b4075-0844-448f-a032-8937bf5b772c")
-		(property "Reference" "TP12"
+		(property "Reference" "TP3"
 			(at 110.49 131.5719 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3419,7 +3452,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/K75p62.pdf"
 			(at 102.87 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -3430,7 +3463,40 @@
 				)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" "White PC Test Point, Miniature Phosphor Bronze Silver Plating Through Hole Mounting Type"
+			(at 107.95 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 107.95 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "5002"
+			(at 107.95 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "36-5002-ND"
 			(at 107.95 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -3447,15 +3513,15 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/2a8ffb24-aa29-412e-aaf4-36ae4d1be593"
-					(reference "TP28")
+					(reference "TP19")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/35d99ca0-41c7-44c3-88a4-e7f3d2e98d62"
-					(reference "TP25")
+					(reference "TP16")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/36fdf732-df19-4f5e-b539-629a29280074"
-					(reference "TP12")
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -3473,7 +3539,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8a364842-b5e3-47bf-b381-cf4898885478")
-		(property "Reference" "R14"
+		(property "Reference" "R5"
 			(at 167.64 84.4549 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3570,15 +3636,15 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/2a8ffb24-aa29-412e-aaf4-36ae4d1be593"
-					(reference "R41")
+					(reference "R32")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/35d99ca0-41c7-44c3-88a4-e7f3d2e98d62"
-					(reference "R30")
+					(reference "R21")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/36fdf732-df19-4f5e-b539-629a29280074"
-					(reference "R14")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -3596,7 +3662,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8e844e29-0a88-41e1-a8fc-d4f7f91644e0")
-		(property "Reference" "R11"
+		(property "Reference" "R2"
 			(at 69.85 63.5 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3627,7 +3693,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 69.85 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -3649,6 +3715,39 @@
 				)
 			)
 		)
+		(property "Manufacturer P/N" "RC0402JR-070RL"
+			(at 69.85 69.85 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 69.85 69.85 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "311-0.0JRCT-ND"
+			(at 69.85 69.85 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "596e64f7-10ab-4978-833a-c7b73a2ce30a")
 		)
@@ -3658,15 +3757,15 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/2a8ffb24-aa29-412e-aaf4-36ae4d1be593"
-					(reference "R38")
+					(reference "R29")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/35d99ca0-41c7-44c3-88a4-e7f3d2e98d62"
-					(reference "R27")
+					(reference "R18")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/36fdf732-df19-4f5e-b539-629a29280074"
-					(reference "R11")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -3684,7 +3783,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9c0b3043-7f95-49e6-999f-152ebbd8e6b6")
-		(property "Reference" "D8"
+		(property "Reference" "D2"
 			(at 57.15 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3779,15 +3878,15 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/2a8ffb24-aa29-412e-aaf4-36ae4d1be593"
-					(reference "D13")
+					(reference "D7")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/35d99ca0-41c7-44c3-88a4-e7f3d2e98d62"
-					(reference "D11")
+					(reference "D5")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/36fdf732-df19-4f5e-b539-629a29280074"
-					(reference "D8")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -3805,7 +3904,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a49a91e1-e335-4f6e-8cae-a80d82f770ad")
-		(property "Reference" "TP10"
+		(property "Reference" "TP1"
 			(at 256.54 77.9779 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3838,7 +3937,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/K75p62.pdf"
 			(at 259.08 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -3849,7 +3948,40 @@
 				)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" "White PC Test Point, Miniature Phosphor Bronze Silver Plating Through Hole Mounting Type"
+			(at 254 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 254 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "5002"
+			(at 254 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "36-5002-ND"
 			(at 254 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -3866,15 +3998,15 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/2a8ffb24-aa29-412e-aaf4-36ae4d1be593"
-					(reference "TP26")
+					(reference "TP17")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/35d99ca0-41c7-44c3-88a4-e7f3d2e98d62"
-					(reference "TP23")
+					(reference "TP14")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/36fdf732-df19-4f5e-b539-629a29280074"
-					(reference "TP10")
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -3892,7 +4024,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ab6dcad7-506a-43d4-9650-c1f3dab59172")
-		(property "Reference" "TP11"
+		(property "Reference" "TP2"
 			(at 110.49 119.8879 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3925,7 +4057,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/K75p62.pdf"
 			(at 113.03 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -3936,7 +4068,40 @@
 				)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" "White PC Test Point, Miniature Phosphor Bronze Silver Plating Through Hole Mounting Type"
+			(at 107.95 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 107.95 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "5002"
+			(at 107.95 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "36-5002-ND"
 			(at 107.95 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -3953,15 +4118,15 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/2a8ffb24-aa29-412e-aaf4-36ae4d1be593"
-					(reference "TP27")
+					(reference "TP18")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/35d99ca0-41c7-44c3-88a4-e7f3d2e98d62"
-					(reference "TP24")
+					(reference "TP15")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/36fdf732-df19-4f5e-b539-629a29280074"
-					(reference "TP11")
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -3979,7 +4144,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "becaf0c5-cd0d-4e0e-b8cd-03f0a94d4228")
-		(property "Reference" "R16"
+		(property "Reference" "R7"
 			(at 146.05 85.725 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4074,15 +4239,15 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/2a8ffb24-aa29-412e-aaf4-36ae4d1be593"
-					(reference "R43")
+					(reference "R34")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/35d99ca0-41c7-44c3-88a4-e7f3d2e98d62"
-					(reference "R32")
+					(reference "R23")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/36fdf732-df19-4f5e-b539-629a29280074"
-					(reference "R16")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -4099,7 +4264,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c20cb117-380a-4e43-8ab1-c24ef283233e")
-		(property "Reference" "R20"
+		(property "Reference" "R11"
 			(at 86.36 125.7299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4202,15 +4367,15 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/2a8ffb24-aa29-412e-aaf4-36ae4d1be593"
-					(reference "R47")
+					(reference "R38")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/35d99ca0-41c7-44c3-88a4-e7f3d2e98d62"
-					(reference "R36")
+					(reference "R27")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/36fdf732-df19-4f5e-b539-629a29280074"
-					(reference "R20")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -4228,7 +4393,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c272425a-924a-4101-8171-25c64417ec94")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR06"
 			(at 88.9 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -4288,15 +4453,15 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/2a8ffb24-aa29-412e-aaf4-36ae4d1be593"
-					(reference "#PWR064")
+					(reference "#PWR033")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/35d99ca0-41c7-44c3-88a4-e7f3d2e98d62"
-					(reference "#PWR058")
+					(reference "#PWR027")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/36fdf732-df19-4f5e-b539-629a29280074"
-					(reference "#PWR037")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -4314,7 +4479,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d9984b6c-8de7-45dc-ae93-a49fbe5282df")
-		(property "Reference" "R17"
+		(property "Reference" "R8"
 			(at 69.85 88.9 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4345,7 +4510,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 69.85 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -4367,6 +4532,39 @@
 				)
 			)
 		)
+		(property "Manufacturer P/N" "RC0402JR-070RL"
+			(at 69.85 95.25 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 69.85 95.25 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "311-0.0JRCT-ND"
+			(at 69.85 95.25 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "b7f6224e-1fb7-428d-bb38-5d78e9465746")
 		)
@@ -4376,15 +4574,15 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/2a8ffb24-aa29-412e-aaf4-36ae4d1be593"
-					(reference "R44")
+					(reference "R35")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/35d99ca0-41c7-44c3-88a4-e7f3d2e98d62"
-					(reference "R33")
+					(reference "R24")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/36fdf732-df19-4f5e-b539-629a29280074"
-					(reference "R17")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -4402,7 +4600,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e2b94b0f-ecb8-4f37-bd67-7fd8531f1b46")
-		(property "Reference" "R13"
+		(property "Reference" "R4"
 			(at 63.5 76.2 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4433,7 +4631,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 63.5 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -4455,6 +4653,39 @@
 				)
 			)
 		)
+		(property "Manufacturer P/N" "RC0402FR-0768RL"
+			(at 63.5 82.55 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 63.5 82.55 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "311-68.0LRCT-ND"
+			(at 63.5 82.55 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "dea1272c-3ac5-4359-893a-2a19ffc0a319")
 		)
@@ -4464,15 +4695,15 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/2a8ffb24-aa29-412e-aaf4-36ae4d1be593"
-					(reference "R40")
+					(reference "R31")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/35d99ca0-41c7-44c3-88a4-e7f3d2e98d62"
-					(reference "R29")
+					(reference "R20")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/36fdf732-df19-4f5e-b539-629a29280074"
-					(reference "R13")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -4490,7 +4721,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eaf30d43-b6ba-4bf5-90be-9484d73cc0a0")
-		(property "Reference" "R18"
+		(property "Reference" "R9"
 			(at 167.64 97.1549 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4587,15 +4818,15 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/2a8ffb24-aa29-412e-aaf4-36ae4d1be593"
-					(reference "R45")
+					(reference "R36")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/35d99ca0-41c7-44c3-88a4-e7f3d2e98d62"
-					(reference "R34")
+					(reference "R25")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/36fdf732-df19-4f5e-b539-629a29280074"
-					(reference "R18")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -4613,7 +4844,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ec71ef32-f3cb-433f-b3f1-6a567cf2bdb2")
-		(property "Reference" "C6"
+		(property "Reference" "C2"
 			(at 245.11 90.8049 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4646,7 +4877,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/503/CL05A104KA5NNNC.pdf"
 			(at 241.3 92.075 0)
 			(hide yes)
 			(show_name no)
@@ -4668,7 +4899,7 @@
 				)
 			)
 		)
-		(property "Manufacturer P/N" ""
+		(property "Manufacturer P/N" "CL05A104KA5NNNC"
 			(at 241.3 92.075 0)
 			(hide yes)
 			(show_name no)
@@ -4679,7 +4910,7 @@
 				)
 			)
 		)
-		(property "Vendor" ""
+		(property "Vendor" "DigiKey"
 			(at 241.3 92.075 0)
 			(hide yes)
 			(show_name no)
@@ -4690,7 +4921,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" ""
+		(property "Vendor P/N" "1276-1043-1-ND "
 			(at 241.3 92.075 0)
 			(hide yes)
 			(show_name no)
@@ -4710,15 +4941,15 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/2a8ffb24-aa29-412e-aaf4-36ae4d1be593"
-					(reference "C21")
+					(reference "C17")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/35d99ca0-41c7-44c3-88a4-e7f3d2e98d62"
-					(reference "C19")
+					(reference "C15")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/36fdf732-df19-4f5e-b539-629a29280074"
-					(reference "C6")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -4988,7 +5219,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f3241236-ce45-4cee-9ee7-4495767d83a7")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR02"
 			(at 165.1 83.185 0)
 			(hide yes)
 			(show_name no)
@@ -5048,15 +5279,15 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/2a8ffb24-aa29-412e-aaf4-36ae4d1be593"
-					(reference "#PWR060")
+					(reference "#PWR029")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/35d99ca0-41c7-44c3-88a4-e7f3d2e98d62"
-					(reference "#PWR054")
+					(reference "#PWR023")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/36fdf732-df19-4f5e-b539-629a29280074"
-					(reference "#PWR033")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -5074,7 +5305,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f3c005f9-b070-44e3-83d7-9b2ddf913826")
-		(property "Reference" "C5"
+		(property "Reference" "C1"
 			(at 111.76 74.9299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5096,7 +5327,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 108.9152 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -5107,7 +5338,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188D72A105KE01-01A.pdf"
 			(at 107.95 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -5118,7 +5349,40 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "1 µF ±10% 100V Ceramic Capacitor X7T 0603 (1608 Metric)"
+			(at 107.95 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "GRM188D72A105KE01J"
+			(at 107.95 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 107.95 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "490-GRM188D72A105KE01JCT-ND"
 			(at 107.95 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -5138,15 +5402,15 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/2a8ffb24-aa29-412e-aaf4-36ae4d1be593"
-					(reference "C20")
+					(reference "C16")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/35d99ca0-41c7-44c3-88a4-e7f3d2e98d62"
-					(reference "C18")
+					(reference "C14")
 					(unit 1)
 				)
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/36fdf732-df19-4f5e-b539-629a29280074"
-					(reference "C5")
+					(reference "C1")
 					(unit 1)
 				)
 			)

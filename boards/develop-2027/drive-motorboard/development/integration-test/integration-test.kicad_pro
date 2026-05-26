@@ -558,7 +558,7 @@
       "method": 0,
       "sort_order": 1
     },
-    "bom_export_filename": "${PROJECTNAME}.csv",
+    "bom_export_filename": "exports/integration-test.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -586,7 +586,7 @@
           "show": true
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Value",
           "name": "Value",
           "show": true
@@ -598,27 +598,21 @@
           "show": true
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Exclude from BOM",
           "name": "${EXCLUDE_FROM_BOM}",
-          "show": true
-        },
-        {
-          "group_by": true,
-          "label": "Exclude from Board",
-          "name": "${EXCLUDE_FROM_BOARD}",
-          "show": true
-        },
-        {
-          "group_by": true,
-          "label": "Footprint",
-          "name": "Footprint",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
-          "label": "Datasheet",
-          "name": "Datasheet",
+          "label": "Exclude from Board",
+          "name": "${EXCLUDE_FROM_BOARD}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Footprint",
+          "name": "Footprint",
           "show": true
         },
         {
@@ -628,7 +622,7 @@
           "show": true
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Vendor P/N",
           "name": "Vendor P/N",
           "show": true
@@ -637,6 +631,12 @@
           "group_by": false,
           "label": "Manufacturer P/N",
           "name": "Manufacturer P/N",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Datasheet",
+          "name": "Datasheet",
           "show": true
         },
         {
@@ -663,7 +663,7 @@
       "include_excluded_from_bom": true,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_field": "Vendor P/N"
     },
     "bus_aliases": {},
     "connection_grid_size": 50.0,
@@ -714,7 +714,7 @@
         "uuid": "2f9570f4-e846-4a86-b134-ae7438cb1d91"
       }
     ],
-    "used_designators": "Q1-6,F1,U1-9,L1,#FLG1-3,#FLG5,#FLG7-8,H1-8,J1-6,TP1-34,R1-48,#PWR1-74,C1-24,D1-13",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
@@ -737,6 +737,26 @@
     [
       "2a8ffb24-aa29-412e-aaf4-36ae4d1be593",
       "Motor Phase W"
+    ],
+    [
+      "65153d9e-5a1b-421c-8fe4-5f071af15722",
+      "Power"
+    ],
+    [
+      "70ef40bf-13ae-49a6-b679-701b94f13188",
+      "External Connections"
+    ],
+    [
+      "d4780e5d-8897-4fbd-a4f0-0cae90768857",
+      "Temperature Sensor"
+    ],
+    [
+      "0308e67a-e03f-433c-b789-eb1432fe4170",
+      "Magnetic Encoder"
+    ],
+    [
+      "0228c7f4-9370-4f69-b541-0382c88a8752",
+      "Motor Connections"
     ]
   ],
   "text_variables": {},
