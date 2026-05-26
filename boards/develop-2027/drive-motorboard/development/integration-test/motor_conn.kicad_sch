@@ -806,7 +806,7 @@
 				)
 				(polyline
 					(pts
-						(xy -3.81 1.905) (xy -3.81 -2.54)
+						(xy -3.81 1.27) (xy -3.81 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -866,7 +866,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 1.905) (xy -1.27 -2.54)
+						(xy -1.27 1.27) (xy -1.27 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -902,7 +902,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -4.445) (xy 0 -2.54)
+						(xy 0 -5.08) (xy 0 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -926,7 +926,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 1.905) (xy 1.27 -2.54)
+						(xy 1.27 1.27) (xy 1.27 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -974,7 +974,7 @@
 				)
 				(polyline
 					(pts
-						(xy 3.81 1.905) (xy 3.81 -2.54)
+						(xy 3.81 1.27) (xy 3.81 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -1011,7 +1011,7 @@
 			)
 			(symbol "PUSB3FR4_1_1"
 				(pin passive line
-					(at -3.81 4.445 270)
+					(at -3.81 3.81 270)
 					(length 2.54)
 					(name "CH1"
 						(effects
@@ -1029,7 +1029,7 @@
 					)
 				)
 				(pin passive line
-					(at -1.27 4.445 270)
+					(at -1.27 3.81 270)
 					(length 2.54)
 					(name "CH2"
 						(effects
@@ -1047,7 +1047,7 @@
 					)
 				)
 				(pin passive line
-					(at 1.27 4.445 270)
+					(at 1.27 3.81 270)
 					(length 2.54)
 					(name "CH3"
 						(effects
@@ -1065,7 +1065,7 @@
 					)
 				)
 				(pin passive line
-					(at 3.81 4.445 270)
+					(at 3.81 3.81 270)
 					(length 2.54)
 					(name "CH5"
 						(effects
@@ -1082,8 +1082,84 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 3.81 3.81 270)
+					(length 2.54)
+					(hide yes)
+					(name "CH5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 1.27 3.81 270)
+					(length 2.54)
+					(hide yes)
+					(name "CH3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -1.27 3.81 270)
+					(length 2.54)
+					(hide yes)
+					(name "CH2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -3.81 3.81 270)
+					(length 2.54)
+					(hide yes)
+					(name "CH1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin input line
-					(at 0 -6.985 90)
+					(at 0 -7.62 90)
 					(length 2.54)
 					(name "GND"
 						(effects
@@ -2472,7 +2548,7 @@
 				)
 			)
 		)
-		(property "Description" "Connector Header Surface Mount, Right Angle 5 position 0.047\" (1.20mm)"
+		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 22.86 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -2900,7 +2976,7 @@
 				)
 			)
 		)
-		(property "Description" "Connector Header Surface Mount, Right Angle 3 position 0.047\" (1.20mm)"
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 126.365 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -3269,6 +3345,18 @@
 		)
 		(pin "4"
 			(uuid "fa5a9e47-0c3a-4b93-9d63-fdb789f04772")
+		)
+		(pin "10"
+			(uuid "83341ec3-3444-4ea0-9fb1-a8fe41dd5c85")
+		)
+		(pin "7"
+			(uuid "d8774ede-4e86-45f1-a46e-e89610b81b25")
+		)
+		(pin "9"
+			(uuid "bb6468d9-2812-4015-9859-002b14a0b345")
+		)
+		(pin "6"
+			(uuid "49776e64-0154-43ce-892c-355a9b99ddd6")
 		)
 		(instances
 			(project "integration-test"
