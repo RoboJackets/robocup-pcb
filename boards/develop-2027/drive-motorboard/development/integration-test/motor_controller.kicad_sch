@@ -4741,7 +4741,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "04096284-58e2-4adf-82a1-59e3b8469b66")
-		(property "Reference" "R21"
+		(property "Reference" "R12"
 			(at 250.825 79.375 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4772,7 +4772,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 250.825 85.725 0)
 			(hide yes)
 			(show_name no)
@@ -4794,7 +4794,7 @@
 				)
 			)
 		)
-		(property "Manufacturer P/N" ""
+		(property "Manufacturer P/N" "RC0402FR-074K7L"
 			(at 250.825 85.725 0)
 			(hide yes)
 			(show_name no)
@@ -4805,7 +4805,7 @@
 				)
 			)
 		)
-		(property "Vendor" ""
+		(property "Vendor" "DigiKey"
 			(at 250.825 85.725 0)
 			(hide yes)
 			(show_name no)
@@ -4816,7 +4816,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" ""
+		(property "Vendor P/N" "311-4.7KLRCT-ND"
 			(at 250.825 85.725 0)
 			(hide yes)
 			(show_name no)
@@ -4836,7 +4836,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "R21")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -4854,7 +4854,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "089df57a-f16a-40b9-9577-50e01cb66a43")
-		(property "Reference" "C17"
+		(property "Reference" "C13"
 			(at 48.26 177.7999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4876,7 +4876,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 45.4152 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -4887,7 +4887,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188D72A105KE01-01A.pdf"
 			(at 44.45 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -4898,7 +4898,40 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "1 µF ±10% 100V Ceramic Capacitor X7T 0603 (1608 Metric)"
+			(at 44.45 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "GRM188D72A105KE01J"
+			(at 44.45 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 44.45 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "490-GRM188D72A105KE01JCT-ND"
 			(at 44.45 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -4918,7 +4951,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "C17")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -4936,7 +4969,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "100cce97-d242-4236-9881-f03da20ceb68")
-		(property "Reference" "U6"
+		(property "Reference" "U1"
 			(at 147.32 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5172,7 +5205,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "U6")
+					(reference "U1")
 					(unit 4)
 				)
 			)
@@ -5190,7 +5223,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "105300a0-9d28-4779-9240-7fe4e026618d")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR012"
 			(at 111.125 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -5250,7 +5283,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "#PWR043")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -5268,7 +5301,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "170fe82e-4b7d-482f-b427-4ddcf3db25d3")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR015"
 			(at 53.975 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -5328,7 +5361,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "#PWR046")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -5346,7 +5379,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1bc13eae-8811-4c56-991b-22a8f83f8d02")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR08"
 			(at 184.15 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -5406,7 +5439,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "#PWR039")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -5424,7 +5457,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "283d547c-7ae1-4f1f-afa1-2e0afaedbc27")
-		(property "Reference" "TP22"
+		(property "Reference" "TP13"
 			(at 68.58 175.1329 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5457,7 +5490,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/K75p62.pdf"
 			(at 71.755 179.705 0)
 			(hide yes)
 			(show_name no)
@@ -5468,7 +5501,40 @@
 				)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" "White PC Test Point, Miniature Phosphor Bronze Silver Plating Through Hole Mounting Type"
+			(at 66.675 179.705 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 66.675 179.705 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "5002"
+			(at 66.675 179.705 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "36-5002-ND"
 			(at 66.675 179.705 0)
 			(hide yes)
 			(show_name no)
@@ -5485,7 +5551,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "TP22")
+					(reference "TP13")
 					(unit 1)
 				)
 			)
@@ -5503,7 +5569,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "30a5ee65-4b45-48c5-b2dc-e218388774a1")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR07"
 			(at 31.75 33.655 0)
 			(hide yes)
 			(show_name no)
@@ -5563,7 +5629,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "#PWR038")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -5581,7 +5647,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "399e34f3-b171-4ed0-9e45-fec318b67adc")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR014"
 			(at 38.1 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -5641,7 +5707,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "#PWR045")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -5659,7 +5725,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3b56963c-09e3-4491-a0a7-7b555fbc6bdb")
-		(property "Reference" "TP20"
+		(property "Reference" "TP11"
 			(at 68.58 145.9229 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5692,7 +5758,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/K75p62.pdf"
 			(at 71.755 150.495 0)
 			(hide yes)
 			(show_name no)
@@ -5703,7 +5769,40 @@
 				)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" "White PC Test Point, Miniature Phosphor Bronze Silver Plating Through Hole Mounting Type"
+			(at 66.675 150.495 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 66.675 150.495 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "5002"
+			(at 66.675 150.495 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "36-5002-ND"
 			(at 66.675 150.495 0)
 			(hide yes)
 			(show_name no)
@@ -5720,7 +5819,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "TP20")
+					(reference "TP11")
 					(unit 1)
 				)
 			)
@@ -5738,7 +5837,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "437d4f75-979d-4927-ade3-c7bebcdd997d")
-		(property "Reference" "U6"
+		(property "Reference" "U1"
 			(at 209.55 26.67 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5974,7 +6073,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "U6")
+					(reference "U1")
 					(unit 2)
 				)
 			)
@@ -5992,7 +6091,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "49a536b6-a45d-4b63-bdff-a727938ef568")
-		(property "Reference" "C9"
+		(property "Reference" "C5"
 			(at 59.055 36.8299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6014,7 +6113,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 61.2648 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -6025,7 +6124,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188D72A105KE01-01A.pdf"
 			(at 62.23 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -6036,7 +6135,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "1 µF ±10% 100V Ceramic Capacitor X7T 0603 (1608 Metric)"
 			(at 62.23 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -6047,7 +6146,7 @@
 				)
 			)
 		)
-		(property "Manufacturer P/N" ""
+		(property "Manufacturer P/N" "GRM188D72A105KE01J"
 			(at 62.23 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -6058,7 +6157,7 @@
 				)
 			)
 		)
-		(property "Vendor" ""
+		(property "Vendor" "DigiKey"
 			(at 62.23 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -6069,7 +6168,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" ""
+		(property "Vendor P/N" "490-GRM188D72A105KE01JCT-ND"
 			(at 62.23 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -6089,7 +6188,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "C9")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -6107,7 +6206,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4e831807-8192-4516-bf4f-1fb4b1d904ca")
-		(property "Reference" "TP18"
+		(property "Reference" "TP9"
 			(at 69.215 116.7129 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6140,7 +6239,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/K75p62.pdf"
 			(at 71.755 121.285 0)
 			(hide yes)
 			(show_name no)
@@ -6151,7 +6250,40 @@
 				)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" "White PC Test Point, Miniature Phosphor Bronze Silver Plating Through Hole Mounting Type"
+			(at 66.675 121.285 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 66.675 121.285 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "5002"
+			(at 66.675 121.285 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "36-5002-ND"
 			(at 66.675 121.285 0)
 			(hide yes)
 			(show_name no)
@@ -6168,7 +6300,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "TP18")
+					(reference "TP9")
 					(unit 1)
 				)
 			)
@@ -6186,7 +6318,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "50dae08d-329c-41af-9ae2-a229d00bd219")
-		(property "Reference" "C8"
+		(property "Reference" "C4"
 			(at 44.45 35.9409 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6283,7 +6415,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "C8")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -6301,7 +6433,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5a955f8c-3bf5-4b14-9a43-d2d4b668f930")
-		(property "Reference" "R23"
+		(property "Reference" "R14"
 			(at 224.79 113.0299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6398,7 +6530,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "R23")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -6416,7 +6548,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5b3ba8a6-1b25-4e66-afcf-c8c8e8694465")
-		(property "Reference" "TP15"
+		(property "Reference" "TP6"
 			(at 110.49 69.0879 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6449,7 +6581,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/K75p62.pdf"
 			(at 113.03 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -6460,7 +6592,40 @@
 				)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" "Red PC Test Point, Miniature Phosphor Bronze Silver Plating Through Hole Mounting Type"
+			(at 107.95 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 107.95 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "5000"
+			(at 107.95 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "36-5000-ND"
 			(at 107.95 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -6477,7 +6642,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "TP15")
+					(reference "TP6")
 					(unit 1)
 				)
 			)
@@ -6495,7 +6660,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "61ef2cc2-02d2-4b3c-998c-6e4ac93e0adf")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR017"
 			(at 92.075 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -6555,7 +6720,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "#PWR048")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -6573,7 +6738,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6215d69e-3d03-4431-9aba-fa1613fcb981")
-		(property "Reference" "C7"
+		(property "Reference" "C3"
 			(at 27.94 35.9409 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6670,7 +6835,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "C7")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -6688,7 +6853,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6827ed70-9c57-4f9c-9ac9-083c91203313")
-		(property "Reference" "R25"
+		(property "Reference" "R16"
 			(at 203.2 127 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6783,7 +6948,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "R25")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -6801,7 +6966,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6bf4d32f-9a06-4ca3-b61f-ed75b71fbf54")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR09"
 			(at 48.26 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -6861,7 +7026,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "#PWR040")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -6879,7 +7044,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6c7483f6-85c6-4418-9dfb-4a1f570aad20")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR010"
 			(at 62.23 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -6939,7 +7104,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "#PWR041")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -6956,7 +7121,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "74e13e36-54af-477b-b8b4-603393a7a71e")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR013"
 			(at 38.1 57.785 0)
 			(hide yes)
 			(show_name no)
@@ -7016,7 +7181,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "#PWR044")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -7034,7 +7199,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "77a75ede-e431-41e8-93a9-0fb71d18621f")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR011"
 			(at 31.75 51.435 0)
 			(hide yes)
 			(show_name no)
@@ -7094,7 +7259,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "#PWR042")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -7112,7 +7277,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8322ffb7-e5ce-4e96-ba34-a58300ee0350")
-		(property "Reference" "C15"
+		(property "Reference" "C11"
 			(at 226.06 125.7299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7145,7 +7310,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71H272KA01-01.pdf"
 			(at 222.25 127 0)
 			(hide yes)
 			(show_name no)
@@ -7167,7 +7332,7 @@
 				)
 			)
 		)
-		(property "Manufacturer P/N" ""
+		(property "Manufacturer P/N" "GRM155R71H272KA01J"
 			(at 222.25 127 0)
 			(hide yes)
 			(show_name no)
@@ -7178,7 +7343,7 @@
 				)
 			)
 		)
-		(property "Vendor" ""
+		(property "Vendor" "DigiKey"
 			(at 222.25 127 0)
 			(hide yes)
 			(show_name no)
@@ -7189,7 +7354,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" ""
+		(property "Vendor P/N" "490-6361-1-ND"
 			(at 222.25 127 0)
 			(hide yes)
 			(show_name no)
@@ -7209,7 +7374,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "C15")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -7227,7 +7392,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "86f30402-4ae1-4ecd-9cbb-dcef9d111a16")
-		(property "Reference" "TP13"
+		(property "Reference" "TP4"
 			(at 64.135 25.9079 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7260,7 +7425,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/K75p62.pdf"
 			(at 67.31 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -7271,7 +7436,40 @@
 				)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" "Red PC Test Point, Miniature Phosphor Bronze Silver Plating Through Hole Mounting Type"
+			(at 62.23 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "5000"
+			(at 62.23 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 62.23 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "36-5000-ND"
 			(at 62.23 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -7288,7 +7486,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "TP13")
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -7306,7 +7504,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "931b7af1-579f-4533-a614-827d68eb3301")
-		(property "Reference" "TP16"
+		(property "Reference" "TP7"
 			(at 243.84 109.7279 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7339,7 +7537,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/K75p62.pdf"
 			(at 246.38 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -7350,7 +7548,40 @@
 				)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" "White PC Test Point, Miniature Phosphor Bronze Silver Plating Through Hole Mounting Type"
+			(at 241.3 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 241.3 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "5002"
+			(at 241.3 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "36-5002-ND"
 			(at 241.3 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -7367,7 +7598,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "TP16")
+					(reference "TP7")
 					(unit 1)
 				)
 			)
@@ -7385,7 +7616,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "961a840c-eb01-4132-8518-83d6dee5deee")
-		(property "Reference" "R22"
+		(property "Reference" "R13"
 			(at 203.2 101.6 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7480,7 +7711,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "R22")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -7498,7 +7729,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9e290b21-cee2-4dd8-b9aa-cbed630e4f35")
-		(property "Reference" "TP14"
+		(property "Reference" "TP5"
 			(at 53.34 51.3079 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7531,7 +7762,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/K75p62.pdf"
 			(at 55.88 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -7542,7 +7773,40 @@
 				)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" "Red PC Test Point, Miniature Phosphor Bronze Silver Plating Through Hole Mounting Type"
+			(at 50.8 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "5000"
+			(at 50.8 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 50.8 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "36-5000-ND"
 			(at 50.8 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -7559,7 +7823,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "TP14")
+					(reference "TP5")
 					(unit 1)
 				)
 			)
@@ -7577,7 +7841,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9e5b84a7-5de4-4f1b-a50f-0b02c14f3913")
-		(property "Reference" "TP17"
+		(property "Reference" "TP8"
 			(at 59.69 116.7129 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7610,7 +7874,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/K75p62.pdf"
 			(at 62.23 121.285 0)
 			(hide yes)
 			(show_name no)
@@ -7621,7 +7885,40 @@
 				)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" "White PC Test Point, Miniature Phosphor Bronze Silver Plating Through Hole Mounting Type"
+			(at 57.15 121.285 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 57.15 121.285 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "5002"
+			(at 57.15 121.285 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "36-5002-ND"
 			(at 57.15 121.285 0)
 			(hide yes)
 			(show_name no)
@@ -7638,7 +7935,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "TP17")
+					(reference "TP8")
 					(unit 1)
 				)
 			)
@@ -7656,7 +7953,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a04e9192-6776-4523-ac65-342d98113bdc")
-		(property "Reference" "TP21"
+		(property "Reference" "TP12"
 			(at 59.69 175.1329 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7689,7 +7986,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/K75p62.pdf"
 			(at 62.23 179.705 0)
 			(hide yes)
 			(show_name no)
@@ -7700,7 +7997,40 @@
 				)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" "White PC Test Point, Miniature Phosphor Bronze Silver Plating Through Hole Mounting Type"
+			(at 57.15 179.705 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 57.15 179.705 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "5002"
+			(at 57.15 179.705 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "36-5002-ND"
 			(at 57.15 179.705 0)
 			(hide yes)
 			(show_name no)
@@ -7717,7 +8047,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "TP21")
+					(reference "TP12")
 					(unit 1)
 				)
 			)
@@ -7735,7 +8065,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a7f29e16-c71a-4b9f-bb4c-40260b2d4074")
-		(property "Reference" "TP19"
+		(property "Reference" "TP10"
 			(at 59.69 145.9229 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7768,7 +8098,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/K75p62.pdf"
 			(at 62.23 150.495 0)
 			(hide yes)
 			(show_name no)
@@ -7779,7 +8109,40 @@
 				)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" "White PC Test Point, Miniature Phosphor Bronze Silver Plating Through Hole Mounting Type"
+			(at 57.15 150.495 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 57.15 150.495 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "5002"
+			(at 57.15 150.495 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "36-5002-ND"
 			(at 57.15 150.495 0)
 			(hide yes)
 			(show_name no)
@@ -7796,7 +8159,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "TP19")
+					(reference "TP10")
 					(unit 1)
 				)
 			)
@@ -7814,7 +8177,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ab8634ab-08ca-4553-a88b-dec48700d9d8")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR018"
 			(at 107.95 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -7874,7 +8237,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "#PWR049")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -7892,7 +8255,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b0582707-d2b5-47f4-9a84-8f2b5dc3ab55")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR021"
 			(at 222.25 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -7952,7 +8315,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "#PWR052")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -7970,7 +8333,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b3382fdf-8550-4226-924e-e627e2469969")
-		(property "Reference" "C12"
+		(property "Reference" "C8"
 			(at 95.885 77.4699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8003,7 +8366,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R6YA106MA73-01A.pdf"
 			(at 92.075 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -8025,7 +8388,7 @@
 				)
 			)
 		)
-		(property "Manufacturer P/N" ""
+		(property "Manufacturer P/N" "GRM188R6YA106MA73D"
 			(at 92.075 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -8036,7 +8399,7 @@
 				)
 			)
 		)
-		(property "Vendor" ""
+		(property "Vendor" "DigiKey"
 			(at 92.075 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -8047,7 +8410,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" ""
+		(property "Vendor P/N" "490-13248-1-ND"
 			(at 92.075 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -8067,7 +8430,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "C12")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -8085,7 +8448,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b69aa93a-9611-4f2c-80b8-42510c2a7203")
-		(property "Reference" "U6"
+		(property "Reference" "U1"
 			(at 147.32 133.35 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8321,7 +8684,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "U6")
+					(reference "U1")
 					(unit 5)
 				)
 			)
@@ -8339,7 +8702,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ba2e8a7c-8d48-4a4a-a7ea-9594d9dfbdc8")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR019"
 			(at 241.935 88.265 0)
 			(hide yes)
 			(show_name no)
@@ -8399,7 +8762,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "#PWR050")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -8417,7 +8780,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bef20047-6228-4201-95fd-7b286419cd64")
-		(property "Reference" "U6"
+		(property "Reference" "U1"
 			(at 266.065 123.1899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8655,7 +9018,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "U6")
+					(reference "U1")
 					(unit 7)
 				)
 			)
@@ -8673,7 +9036,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bfc92761-3292-4ea7-9156-41c9a43f0800")
-		(property "Reference" "D9"
+		(property "Reference" "D3"
 			(at 265.1125 78.105 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8704,7 +9067,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://optoelectronics.liteon.com/upload/download/DS-22-99-0151/LTST-C190KRKT.pdf"
 			(at 263.525 85.725 0)
 			(hide yes)
 			(show_name no)
@@ -8737,6 +9100,39 @@
 				)
 			)
 		)
+		(property "Manufacturer P/N" "LTST-C190KRKT"
+			(at 263.525 85.725 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 263.525 85.725 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "160-1436-1-ND"
+			(at 263.525 85.725 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "6add2e2b-a786-4f94-9cf4-59108485fa31")
 		)
@@ -8746,7 +9142,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "D9")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -8764,7 +9160,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c5f92ed6-6518-4ef6-8f53-21af8953076e")
-		(property "Reference" "U6"
+		(property "Reference" "U1"
 			(at 27.94 107.95 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9000,7 +9396,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "U6")
+					(reference "U1")
 					(unit 3)
 				)
 			)
@@ -9018,7 +9414,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c7cf149a-7a70-4294-ae01-a2a585dbdc22")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR020"
 			(at 222.25 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -9078,7 +9474,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "#PWR051")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -9096,7 +9492,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cb5958ee-f8b4-4388-9875-5890ef5291d0")
-		(property "Reference" "C11"
+		(property "Reference" "C7"
 			(at 50.165 62.2299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9129,7 +9525,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/503/CL05A104KA5NNNC.pdf"
 			(at 53.975 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -9151,7 +9547,7 @@
 				)
 			)
 		)
-		(property "Manufacturer P/N" ""
+		(property "Manufacturer P/N" "CL05A104KA5NNNC"
 			(at 53.975 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -9162,7 +9558,7 @@
 				)
 			)
 		)
-		(property "Vendor" ""
+		(property "Vendor" "DigiKey"
 			(at 53.975 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -9173,7 +9569,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" ""
+		(property "Vendor P/N" "1276-1043-1-ND "
 			(at 53.975 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -9193,7 +9589,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "C11")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -9211,7 +9607,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cc662cdc-a18c-493e-8bd0-0f7756cf852e")
-		(property "Reference" "C10"
+		(property "Reference" "C6"
 			(at 34.29 62.2299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9244,7 +9640,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61E105KA12-01.pdf"
 			(at 38.1 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -9266,7 +9662,7 @@
 				)
 			)
 		)
-		(property "Manufacturer P/N" ""
+		(property "Manufacturer P/N" "GRM155R61E105KA12D"
 			(at 38.1 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -9277,7 +9673,7 @@
 				)
 			)
 		)
-		(property "Vendor" ""
+		(property "Vendor" "DigiKey"
 			(at 38.1 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -9288,7 +9684,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" ""
+		(property "Vendor P/N" "490-10017-1-ND"
 			(at 38.1 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -9308,7 +9704,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "C10")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -9326,7 +9722,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d2080a5f-da82-4608-93d4-a5dc7c2107a9")
-		(property "Reference" "R24"
+		(property "Reference" "R15"
 			(at 203.2 114.3 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9421,7 +9817,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "R24")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -9439,7 +9835,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e058f39e-3884-418e-98be-f0c7b2ec65ad")
-		(property "Reference" "U6"
+		(property "Reference" "U1"
 			(at 147.32 162.56 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9675,7 +10071,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "U6")
+					(reference "U1")
 					(unit 6)
 				)
 			)
@@ -9693,7 +10089,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e4971244-0e8a-40f7-9e52-5f062cfa236e")
-		(property "Reference" "C16"
+		(property "Reference" "C12"
 			(at 48.26 148.5899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9715,7 +10111,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 45.4152 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -9726,7 +10122,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188D72A105KE01-01A.pdf"
 			(at 44.45 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -9737,7 +10133,40 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "1 µF ±10% 100V Ceramic Capacitor X7T 0603 (1608 Metric)"
+			(at 44.45 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "GRM188D72A105KE01J"
+			(at 44.45 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 44.45 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "490-GRM188D72A105KE01JCT-ND"
 			(at 44.45 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -9757,7 +10186,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "C16")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -9775,7 +10204,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ee43bb8c-dad6-4667-92b3-9233de17d733")
-		(property "Reference" "C13"
+		(property "Reference" "C9"
 			(at 111.76 77.4699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9808,7 +10237,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/503/CL05A104KA5NNNC.pdf"
 			(at 107.95 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -9830,7 +10259,7 @@
 				)
 			)
 		)
-		(property "Manufacturer P/N" ""
+		(property "Manufacturer P/N" "CL05A104KA5NNNC"
 			(at 107.95 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -9841,7 +10270,7 @@
 				)
 			)
 		)
-		(property "Vendor" ""
+		(property "Vendor" "DigiKey"
 			(at 107.95 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -9852,7 +10281,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" ""
+		(property "Vendor P/N" "1276-1043-1-ND "
 			(at 107.95 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -9872,7 +10301,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "C13")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -9890,7 +10319,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f1eb83f5-f009-48b2-a8c4-be32dfc1d1ed")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR016"
 			(at 66.675 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -9950,7 +10379,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "#PWR047")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -9968,7 +10397,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f30a95e4-aa4c-4b78-bd2c-18fcba99fae5")
-		(property "Reference" "U6"
+		(property "Reference" "U1"
 			(at 79.375 45.72 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10204,7 +10633,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "U6")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -10222,7 +10651,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f5c0fed6-f246-4ecf-8e88-070f174fbed1")
-		(property "Reference" "C14"
+		(property "Reference" "C10"
 			(at 48.26 119.3799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10244,7 +10673,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 45.4152 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -10255,7 +10684,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188D72A105KE01-01A.pdf"
 			(at 44.45 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -10266,7 +10695,40 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "1 µF ±10% 100V Ceramic Capacitor X7T 0603 (1608 Metric)"
+			(at 44.45 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "GRM188D72A105KE01J"
+			(at 44.45 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 44.45 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "490-GRM188D72A105KE01JCT-ND"
 			(at 44.45 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -10286,7 +10748,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "C14")
+					(reference "C10")
 					(unit 1)
 				)
 			)
