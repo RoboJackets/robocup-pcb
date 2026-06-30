@@ -1,4 +1,4 @@
-## General
+fir## General
 - [STSPIN32G0A2 Pinout Planning](https://docs.google.com/spreadsheets/d/1ySYtqQ6EA-5jgOAME3G-pq1A0lj88GovU7v7TTIiKpc/edit?usp=sharing)
 
 ## Part-Specific Documentation
