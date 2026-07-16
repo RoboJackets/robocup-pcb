@@ -5,7 +5,7 @@
 	(uuid "0a349a34-070e-4e3c-abfd-c99e892d3769")
 	(paper "A4")
 	(title_block
-		(date "2026-05-25")
+		(date "2026-07-16")
 		(rev "v1.0")
 		(company "Robojackets - RoboCup")
 		(comment 1 "Aiden Lee")
@@ -1836,28 +1836,22 @@
 		(uuid "970e66c0-b426-42a5-aae5-b387aa30688b")
 	)
 	(junction
+		(at 49.53 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0999414c-48a5-40f8-a252-241c93bb5408")
+	)
+	(junction
 		(at 52.07 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1c5bdf77-d70f-4a58-a4f4-dbd3e18184f9")
+		(uuid "19df2994-9e7f-4043-95e5-1d9ef25d16c2")
 	)
 	(junction
 		(at 50.8 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1f1c22a9-0177-439d-9b10-cf1478d1eb9b")
-	)
-	(junction
-		(at 49.53 92.71)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3c5070e3-cfd4-41fb-9d62-9fe3e53d32e3")
-	)
-	(junction
-		(at 46.99 90.17)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "66729017-fc25-4549-a846-b76f6ca5cd5e")
 	)
 	(junction
 		(at 50.8 25.4)
@@ -1872,10 +1866,16 @@
 		(uuid "68ef4c75-39da-4ea5-8839-533702a66d25")
 	)
 	(junction
+		(at 46.99 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ade25edd-3599-439e-a62c-e0068368c6f9")
+	)
+	(junction
 		(at 54.61 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b3c833db-d753-423a-80f2-fc1a2677974d")
+		(uuid "e7a66a0f-2621-4fdd-95f9-8794007d0404")
 	)
 	(no_connect
 		(at 85.09 33.02)
@@ -1913,7 +1913,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 111.125) (xy 50.8 113.03)
+			(xy 50.8 111.76) (xy 50.8 113.03)
 		)
 		(stroke
 			(width 0)
@@ -2003,7 +2003,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 95.25) (xy 52.07 99.695)
+			(xy 52.07 95.25) (xy 52.07 100.33)
 		)
 		(stroke
 			(width 0)
@@ -2023,7 +2023,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 90.17) (xy 46.99 99.695)
+			(xy 46.99 90.17) (xy 46.99 100.33)
 		)
 		(stroke
 			(width 0)
@@ -2043,7 +2043,7 @@
 	)
 	(bus
 		(pts
-			(xy 97.79 48.26) (xy 109.855 48.26)
+			(xy 97.79 48.26) (xy 99.06 48.26)
 		)
 		(stroke
 			(width 0)
@@ -2060,6 +2060,16 @@
 			(type default)
 		)
 		(uuid "5f1fe253-b5d6-409e-83cb-3e21a16e7f77")
+	)
+	(wire
+		(pts
+			(xy 31.75 86.36) (xy 31.75 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "624607e8-fbaf-44ca-b666-5d193e78770a")
 	)
 	(wire
 		(pts
@@ -2093,6 +2103,16 @@
 	)
 	(wire
 		(pts
+			(xy 33.02 86.36) (xy 31.75 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7828c046-881f-4121-983d-e6c1c27f90aa")
+	)
+	(wire
+		(pts
 			(xy 50.8 50.8) (xy 50.8 53.34)
 		)
 		(stroke
@@ -2113,7 +2133,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 97.79) (xy 54.61 99.695)
+			(xy 54.61 97.79) (xy 54.61 100.33)
 		)
 		(stroke
 			(width 0)
@@ -2233,7 +2253,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 92.71) (xy 49.53 99.695)
+			(xy 49.53 92.71) (xy 49.53 100.33)
 		)
 		(stroke
 			(width 0)
@@ -2311,16 +2331,6 @@
 		)
 		(uuid "49547b00-cdd9-4e6a-a0ef-5aa7edb37ba6")
 	)
-	(label "ENC{A B}"
-		(at 107.95 48.26 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "5b770801-269e-4ac7-93b3-40550cb94dcf")
-	)
 	(label "ENC.A"
 		(at 93.98 43.18 180)
 		(effects
@@ -2391,16 +2401,6 @@
 		)
 		(uuid "c83ebf5f-7566-46bb-be31-90dd89145562")
 	)
-	(label "3.3V_DEBUG"
-		(at 31.75 87.63 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e35aaf86-6a68-44da-aa3e-b1b0663446e9")
-	)
 	(label "PROGSPI.MOSI"
 		(at 53.34 41.91 180)
 		(effects
@@ -2421,9 +2421,9 @@
 		)
 		(uuid "fd0fd0ee-773f-43e7-ab86-c24240fdad6c")
 	)
-	(hierarchical_label "ENC"
+	(hierarchical_label "ENC{A B}"
 		(shape output)
-		(at 109.855 48.26 0)
+		(at 99.06 48.26 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2431,6 +2431,17 @@
 			(justify left)
 		)
 		(uuid "cc17b608-38b9-44d4-9855-c6c9793ef28e")
+	)
+	(hierarchical_label "3.3V DEBUG"
+		(shape output)
+		(at 33.02 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e0f5cf3b-cf1b-41ca-8bd5-2428eeeff69d")
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -3437,7 +3448,7 @@
 	)
 	(symbol
 		(lib_id "RJ-Diodes:PUSB3FR4")
-		(at 50.8 103.505 0)
+		(at 50.8 104.14 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3448,7 +3459,7 @@
 		(fields_autoplaced yes)
 		(uuid "fa829a37-7910-4a6d-9f16-92ea2d94fde2")
 		(property "Reference" "D14"
-			(at 56.515 103.5049 0)
+			(at 56.515 104.1399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3459,7 +3470,7 @@
 			)
 		)
 		(property "Value" "PUSB3FR4Z"
-			(at 56.515 106.0449 0)
+			(at 56.515 106.6799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3470,7 +3481,7 @@
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:Diodes_UDFN-10_1x2.5mm_P0.5mm"
-			(at 50.8 75.565 0)
+			(at 50.8 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3481,7 +3492,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PUSB3FR4.pdf"
-			(at 51.435 73.025 0)
+			(at 51.435 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3492,7 +3503,7 @@
 			)
 		)
 		(property "Description" "3V (Typ) Clamp 5A (8/20µs) Ipp Tvs Diode Surface Mount DFN2510A-10"
-			(at 50.8 78.105 0)
+			(at 50.8 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3503,7 +3514,7 @@
 			)
 		)
 		(property "Manufacturer P/N" "PUSB3FR4Z"
-			(at 50.8 83.185 0)
+			(at 50.8 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3514,7 +3525,7 @@
 			)
 		)
 		(property "Vendor" "DigiKey"
-			(at 50.8 85.725 0)
+			(at 50.8 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3525,7 +3536,7 @@
 			)
 		)
 		(property "Vendor P/N" "1727-2026-1-ND"
-			(at 50.8 80.645 0)
+			(at 50.8 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

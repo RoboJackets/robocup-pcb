@@ -5,7 +5,7 @@
 	(uuid "6324953c-d5d9-40c6-8bf2-9f34baffcd5e")
 	(paper "A4")
 	(title_block
-		(date "2026-05-25")
+		(date "2026-07-16")
 		(rev "v1.0")
 		(company "Robojackets - RoboCup")
 		(comment 1 "Aiden Lee")
@@ -1524,22 +1524,22 @@
 		(uuid "0fbb18c6-6ec5-427a-9142-501947008336")
 	)
 	(junction
-		(at 67.31 43.18)
+		(at 57.15 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "01d45148-02a7-4617-b8b7-c2cfff324c90")
-	)
-	(junction
-		(at 57.785 40.64)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "85b8fed7-6b08-4164-a3fc-9fc14afbabfe")
+		(uuid "3bb4110b-a706-4a63-9d40-f56499c3b482")
 	)
 	(junction
 		(at 48.26 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b9ce801b-3d11-4543-aa89-70c568e62121")
+		(uuid "a0486b54-d8ea-4436-b6a0-d25d238093f2")
+	)
+	(junction
+		(at 66.04 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b27aedd0-d006-44be-8856-9a30a506190f")
 	)
 	(junction
 		(at 40.64 43.18)
@@ -1564,7 +1564,7 @@
 		(uuid "90dd04b7-d9c9-4298-8f38-f125d4099adc")
 	)
 	(bus_entry
-		(at 79.375 40.64)
+		(at 80.01 40.64)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -1573,7 +1573,7 @@
 		(uuid "e80176a9-df21-4bfa-ba36-926db271c134")
 	)
 	(bus_entry
-		(at 79.375 43.18)
+		(at 80.01 43.18)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -1582,7 +1582,7 @@
 		(uuid "eef2a033-21b8-49ff-ae2c-372c51fa3e66")
 	)
 	(bus_entry
-		(at 79.375 38.1)
+		(at 80.01 38.1)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -1592,7 +1592,7 @@
 	)
 	(bus
 		(pts
-			(xy 81.915 46.99) (xy 97.155 46.99)
+			(xy 82.55 46.99) (xy 86.36 46.99)
 		)
 		(stroke
 			(width 0)
@@ -1602,7 +1602,7 @@
 	)
 	(wire
 		(pts
-			(xy 131.445 29.21) (xy 135.255 29.21)
+			(xy 130.81 29.21) (xy 135.89 29.21)
 		)
 		(stroke
 			(width 0)
@@ -1612,7 +1612,7 @@
 	)
 	(wire
 		(pts
-			(xy 131.445 31.75) (xy 135.255 31.75)
+			(xy 130.81 31.75) (xy 135.89 31.75)
 		)
 		(stroke
 			(width 0)
@@ -1622,13 +1622,13 @@
 	)
 	(wire
 		(pts
-			(xy 57.785 40.64) (xy 79.375 40.64)
+			(xy 57.15 40.64) (xy 80.01 40.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1bb42c3c-6e24-4d71-a1cc-1f24a2752eec")
+		(uuid "2574e023-c358-4c33-9b61-98e3528fa10b")
 	)
 	(wire
 		(pts
@@ -1642,7 +1642,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 43.18) (xy 67.31 43.18)
+			(xy 40.64 43.18) (xy 66.04 43.18)
 		)
 		(stroke
 			(width 0)
@@ -1672,7 +1672,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 40.64) (xy 57.785 40.64)
+			(xy 38.1 40.64) (xy 57.15 40.64)
 		)
 		(stroke
 			(width 0)
@@ -1682,7 +1682,7 @@
 	)
 	(wire
 		(pts
-			(xy 131.445 26.67) (xy 135.255 26.67)
+			(xy 130.81 26.67) (xy 135.89 26.67)
 		)
 		(stroke
 			(width 0)
@@ -1692,7 +1692,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.785 25.4) (xy 57.785 27.94)
+			(xy 57.15 25.4) (xy 57.15 27.94)
 		)
 		(stroke
 			(width 0)
@@ -1712,6 +1712,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 43.18) (xy 80.01 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e3acf8c-84f2-41fb-9646-ebc915c358fa")
+	)
+	(wire
+		(pts
 			(xy 39.37 58.42) (xy 39.37 59.69)
 		)
 		(stroke
@@ -1722,7 +1732,7 @@
 	)
 	(bus
 		(pts
-			(xy 81.915 40.64) (xy 81.915 46.99)
+			(xy 82.55 40.64) (xy 82.55 46.99)
 		)
 		(stroke
 			(width 0)
@@ -1732,7 +1742,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 35.56) (xy 67.31 43.18)
+			(xy 66.04 35.56) (xy 66.04 43.18)
 		)
 		(stroke
 			(width 0)
@@ -1762,23 +1772,13 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 25.4) (xy 67.31 27.94)
+			(xy 66.04 25.4) (xy 66.04 27.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "b9fbbcf4-bba4-4e9c-be8d-e0992439b88f")
-	)
-	(wire
-		(pts
-			(xy 67.31 43.18) (xy 79.375 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bbeb385f-cd1a-4829-8247-d1d7f4944992")
 	)
 	(wire
 		(pts
@@ -1789,16 +1789,6 @@
 			(type default)
 		)
 		(uuid "bf0e74f6-4e47-4441-a9d8-af21d16f0ce5")
-	)
-	(wire
-		(pts
-			(xy 48.26 38.1) (xy 79.375 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c257f2e3-2cf9-4a76-bcc9-9dab4835534b")
 	)
 	(wire
 		(pts
@@ -1842,6 +1832,16 @@
 	)
 	(wire
 		(pts
+			(xy 48.26 38.1) (xy 80.01 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef7bdf04-ed6a-43f2-93d6-12dd6ed34296")
+	)
+	(wire
+		(pts
 			(xy 48.26 35.56) (xy 48.26 38.1)
 		)
 		(stroke
@@ -1852,7 +1852,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.785 35.56) (xy 57.785 40.64)
+			(xy 57.15 35.56) (xy 57.15 40.64)
 		)
 		(stroke
 			(width 0)
@@ -1870,18 +1870,8 @@
 		)
 		(uuid "faf02ca7-d127-4901-bbd5-dbde2ae16bb4")
 	)
-	(label "HALL{A B C}"
-		(at 95.25 46.99 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "532361d3-b0af-4a62-b747-1ad198a38fab")
-	)
 	(label "HALL.A"
-		(at 73.025 38.1 0)
+		(at 73.66 38.1 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1891,7 +1881,7 @@
 		(uuid "6a8a5a13-80d0-49b2-a7dc-596282cdbe99")
 	)
 	(label "HALL.B"
-		(at 73.025 40.64 0)
+		(at 73.66 40.64 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1901,7 +1891,7 @@
 		(uuid "a4424736-7518-4619-8a8c-77e9f978d067")
 	)
 	(label "HALL.C"
-		(at 73.025 43.18 0)
+		(at 73.66 43.18 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1912,7 +1902,7 @@
 	)
 	(hierarchical_label "MOTORU"
 		(shape input)
-		(at 135.255 26.67 0)
+		(at 135.89 26.67 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1923,7 +1913,7 @@
 	)
 	(hierarchical_label "MOTORW"
 		(shape input)
-		(at 135.255 31.75 0)
+		(at 135.89 31.75 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1932,9 +1922,9 @@
 		)
 		(uuid "36751f96-f61e-4cb2-9eff-1b706c94df5f")
 	)
-	(hierarchical_label "HALL"
+	(hierarchical_label "HALL{A B C}"
 		(shape output)
-		(at 97.155 46.99 0)
+		(at 86.36 46.99 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1945,7 +1935,7 @@
 	)
 	(hierarchical_label "MOTORV"
 		(shape input)
-		(at 135.255 29.21 0)
+		(at 135.89 29.21 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2032,7 +2022,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 57.785 25.4 0)
+		(at 57.15 25.4 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2043,7 +2033,7 @@
 		(fields_autoplaced yes)
 		(uuid "10f52223-7d5f-471a-84b2-195d35d85915")
 		(property "Reference" "#PWR064"
-			(at 57.785 29.21 0)
+			(at 57.15 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2054,7 +2044,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 57.785 20.32 0)
+			(at 57.15 20.32 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2064,7 +2054,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 57.785 25.4 0)
+			(at 57.15 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2075,7 +2065,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 57.785 25.4 0)
+			(at 57.15 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2086,7 +2076,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 57.785 25.4 0)
+			(at 57.15 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2110,7 +2100,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 67.31 25.4 0)
+		(at 66.04 25.4 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2121,7 +2111,7 @@
 		(fields_autoplaced yes)
 		(uuid "212102cc-6d33-48c2-9605-358ac887f5fb")
 		(property "Reference" "#PWR065"
-			(at 67.31 29.21 0)
+			(at 66.04 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2132,7 +2122,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 67.31 20.32 0)
+			(at 66.04 20.32 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2142,7 +2132,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 67.31 25.4 0)
+			(at 66.04 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2153,7 +2143,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 67.31 25.4 0)
+			(at 66.04 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2164,7 +2154,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 67.31 25.4 0)
+			(at 66.04 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2266,7 +2256,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 67.31 31.75 0)
+		(at 66.04 31.75 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -2277,7 +2267,7 @@
 		(dnp no)
 		(uuid "390fa70f-36f4-46c5-a11a-a557534bfb6a")
 		(property "Reference" "R47"
-			(at 64.77 30.4799 0)
+			(at 63.5 30.4799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2288,7 +2278,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 64.77 33.0199 0)
+			(at 63.5 33.0199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2299,7 +2289,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 69.088 31.75 90)
+			(at 67.818 31.75 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2310,7 +2300,7 @@
 			)
 		)
 		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
-			(at 67.31 31.75 0)
+			(at 66.04 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2321,7 +2311,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 67.31 31.75 0)
+			(at 66.04 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2332,7 +2322,7 @@
 			)
 		)
 		(property "Manufacturer P/N" "RC0402JR-0710KL"
-			(at 67.31 31.75 0)
+			(at 66.04 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2343,7 +2333,7 @@
 			)
 		)
 		(property "Vendor" "DigiKey"
-			(at 67.31 31.75 0)
+			(at 66.04 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2354,7 +2344,7 @@
 			)
 		)
 		(property "Vendor P/N" "311-10KJRCT-ND"
-			(at 67.31 31.75 0)
+			(at 66.04 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2924,7 +2914,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
-		(at 126.365 29.21 180)
+		(at 125.73 29.21 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2935,7 +2925,7 @@
 		(fields_autoplaced yes)
 		(uuid "97555648-5c3b-485b-9f87-94588df0b9ed")
 		(property "Reference" "J5"
-			(at 126.365 20.32 0)
+			(at 125.73 20.32 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2945,7 +2935,7 @@
 			)
 		)
 		(property "Value" "MOTOR UVW"
-			(at 126.365 22.86 0)
+			(at 125.73 22.86 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2955,7 +2945,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_ACH_BM03B-ACHSS-GAN-ETF_1x03-1MP_P1.20mm_Vertical"
-			(at 126.365 29.21 0)
+			(at 125.73 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2966,7 +2956,7 @@
 			)
 		)
 		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2226/ACH_1.2Pitch_DisconnectableCrimp.pdf"
-			(at 126.365 29.21 0)
+			(at 125.73 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2977,7 +2967,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 126.365 29.21 0)
+			(at 125.73 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2988,7 +2978,7 @@
 			)
 		)
 		(property "Manufacturer P/N" "BM03B-ACHSS-GAN-TF"
-			(at 126.365 29.21 0)
+			(at 125.73 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2999,7 +2989,7 @@
 			)
 		)
 		(property "Vendor" "Digikey"
-			(at 126.365 29.21 0)
+			(at 125.73 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3010,7 +3000,7 @@
 			)
 		)
 		(property "Vendor P/N" "455-BM03B-ACHSS-GAN-TFCT-ND"
-			(at 126.365 29.21 0)
+			(at 125.73 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3040,7 +3030,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 57.785 31.75 0)
+		(at 57.15 31.75 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -3051,7 +3041,7 @@
 		(dnp no)
 		(uuid "c86c965b-1188-43c6-9a60-2d59829015ae")
 		(property "Reference" "R46"
-			(at 55.245 30.4799 0)
+			(at 54.61 30.4799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3062,7 +3052,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 55.245 33.0199 0)
+			(at 54.61 33.0199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3073,7 +3063,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 59.563 31.75 90)
+			(at 58.928 31.75 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3084,7 +3074,7 @@
 			)
 		)
 		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
-			(at 57.785 31.75 0)
+			(at 57.15 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3095,7 +3085,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 57.785 31.75 0)
+			(at 57.15 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3106,7 +3096,7 @@
 			)
 		)
 		(property "Manufacturer P/N" "RC0402JR-0710KL"
-			(at 57.785 31.75 0)
+			(at 57.15 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3117,7 +3107,7 @@
 			)
 		)
 		(property "Vendor" "DigiKey"
-			(at 57.785 31.75 0)
+			(at 57.15 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3128,7 +3118,7 @@
 			)
 		)
 		(property "Vendor P/N" "311-10KJRCT-ND"
-			(at 57.785 31.75 0)
+			(at 57.15 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3233,7 +3223,7 @@
 	)
 	(symbol
 		(lib_id "RJ-Diodes:PUSB3FR4")
-		(at 39.37 51.435 0)
+		(at 39.37 50.8 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3244,7 +3234,7 @@
 		(fields_autoplaced yes)
 		(uuid "cbb3cd69-ddb7-4ece-985a-92a5885e4ad0")
 		(property "Reference" "D13"
-			(at 45.085 51.4349 0)
+			(at 45.085 50.7999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3255,7 +3245,7 @@
 			)
 		)
 		(property "Value" "PUSB3FR4Z"
-			(at 45.085 53.9749 0)
+			(at 45.085 53.3399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3266,7 +3256,7 @@
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:Diodes_UDFN-10_1x2.5mm_P0.5mm"
-			(at 39.37 23.495 0)
+			(at 39.37 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3277,7 +3267,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PUSB3FR4.pdf"
-			(at 40.005 20.955 0)
+			(at 40.005 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3288,7 +3278,7 @@
 			)
 		)
 		(property "Description" "3V (Typ) Clamp 5A (8/20µs) Ipp Tvs Diode Surface Mount DFN2510A-10"
-			(at 39.37 26.035 0)
+			(at 39.37 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3299,7 +3289,7 @@
 			)
 		)
 		(property "Manufacturer P/N" "PUSB3FR4Z"
-			(at 39.37 31.115 0)
+			(at 39.37 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3310,7 +3300,7 @@
 			)
 		)
 		(property "Vendor" "DigiKey"
-			(at 39.37 33.655 0)
+			(at 39.37 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3321,7 +3311,7 @@
 			)
 		)
 		(property "Vendor P/N" "1727-2026-1-ND"
-			(at 39.37 28.575 0)
+			(at 39.37 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

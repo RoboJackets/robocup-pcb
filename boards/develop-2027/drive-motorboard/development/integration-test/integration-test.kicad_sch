@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Drive Motor Board Test")
-		(date "2026-05-25")
+		(date "2026-07-16")
 		(rev "v1.0")
 		(company "Robojackets - RoboCup")
 		(comment 1 "Aiden Lee")
@@ -252,8 +252,8 @@
 		)
 	)
 	(rectangle
-		(start 190.5 101.6)
-		(end 215.9 139.7)
+		(start 215.9 101.6)
+		(end 241.3 139.7)
 		(stroke
 			(width 0)
 			(type default)
@@ -265,7 +265,7 @@
 	)
 	(text "Board Mounting Holes"
 		(exclude_from_sim no)
-		(at 190.5 100.965 0)
+		(at 215.9 100.965 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -274,9 +274,15 @@
 		)
 		(uuid "8f5a9e4b-b8c7-472e-9d79-e3da1d12191f")
 	)
+	(junction
+		(at 95.25 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "925ebaa4-f437-42e8-b26e-f4cf9a4cd17e")
+	)
 	(wire
 		(pts
-			(xy 206.375 127.635) (xy 206.375 131.445)
+			(xy 231.14 128.27) (xy 231.14 132.08)
 		)
 		(stroke
 			(width 0)
@@ -286,7 +292,17 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 78.74) (xy 190.5 78.74)
+			(xy 95.25 73.66) (xy 101.6 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "154d967f-fbd7-4112-88f1-2833707d891c")
+	)
+	(wire
+		(pts
+			(xy 203.2 78.74) (xy 215.9 78.74)
 		)
 		(stroke
 			(width 0)
@@ -296,7 +312,7 @@
 	)
 	(bus
 		(pts
-			(xy 138.43 116.84) (xy 133.35 116.84)
+			(xy 149.86 116.84) (xy 139.7 116.84)
 		)
 		(stroke
 			(width 0)
@@ -306,7 +322,7 @@
 	)
 	(bus
 		(pts
-			(xy 146.05 91.44) (xy 138.43 91.44)
+			(xy 152.4 91.44) (xy 149.86 91.44)
 		)
 		(stroke
 			(width 0)
@@ -316,7 +332,7 @@
 	)
 	(bus
 		(pts
-			(xy 138.43 91.44) (xy 138.43 116.84)
+			(xy 149.86 91.44) (xy 149.86 116.84)
 		)
 		(stroke
 			(width 0)
@@ -326,7 +342,17 @@
 	)
 	(wire
 		(pts
-			(xy 193.675 110.49) (xy 193.675 114.3)
+			(xy 101.6 116.84) (xy 95.25 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b572d58-c302-4116-bb55-77e374878c88")
+	)
+	(wire
+		(pts
+			(xy 218.44 110.49) (xy 218.44 114.3)
 		)
 		(stroke
 			(width 0)
@@ -334,19 +360,9 @@
 		)
 		(uuid "816cfac8-f2e4-4cca-accc-3bb009f0c8c4")
 	)
-	(wire
-		(pts
-			(xy 101.6 78.74) (xy 107.95 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8fd5ab69-188c-44f5-9f19-f154f48ee1ef")
-	)
 	(bus
 		(pts
-			(xy 133.35 81.28) (xy 146.05 81.28)
+			(xy 139.7 81.28) (xy 152.4 81.28)
 		)
 		(stroke
 			(width 0)
@@ -356,7 +372,7 @@
 	)
 	(wire
 		(pts
-			(xy 206.375 110.49) (xy 206.375 114.3)
+			(xy 231.14 110.49) (xy 231.14 114.3)
 		)
 		(stroke
 			(width 0)
@@ -364,9 +380,19 @@
 		)
 		(uuid "9dae04ae-483e-4e89-a8e7-04e1092a1375")
 	)
+	(wire
+		(pts
+			(xy 88.9 73.66) (xy 95.25 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0a9586f-a1af-4bfe-8476-465272707c0a")
+	)
 	(bus
 		(pts
-			(xy 135.89 97.79) (xy 135.89 86.36)
+			(xy 147.32 97.79) (xy 147.32 86.36)
 		)
 		(stroke
 			(width 0)
@@ -376,7 +402,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 81.28) (xy 190.5 81.28)
+			(xy 203.2 81.28) (xy 215.9 81.28)
 		)
 		(stroke
 			(width 0)
@@ -386,7 +412,7 @@
 	)
 	(bus
 		(pts
-			(xy 133.35 78.74) (xy 146.05 78.74)
+			(xy 139.7 78.74) (xy 152.4 78.74)
 		)
 		(stroke
 			(width 0)
@@ -396,7 +422,7 @@
 	)
 	(bus
 		(pts
-			(xy 177.8 90.17) (xy 190.5 90.17)
+			(xy 203.2 90.17) (xy 215.9 90.17)
 		)
 		(stroke
 			(width 0)
@@ -406,17 +432,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 74.295) (xy 101.6 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dec2ea33-d886-4087-8ffa-99192d357b00")
-	)
-	(wire
-		(pts
-			(xy 177.8 83.82) (xy 190.5 83.82)
+			(xy 203.2 83.82) (xy 215.9 83.82)
 		)
 		(stroke
 			(width 0)
@@ -426,7 +442,7 @@
 	)
 	(bus
 		(pts
-			(xy 133.35 97.79) (xy 135.89 97.79)
+			(xy 139.7 97.79) (xy 147.32 97.79)
 		)
 		(stroke
 			(width 0)
@@ -436,7 +452,7 @@
 	)
 	(bus
 		(pts
-			(xy 135.89 86.36) (xy 146.05 86.36)
+			(xy 147.32 86.36) (xy 152.4 86.36)
 		)
 		(stroke
 			(width 0)
@@ -446,17 +462,17 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 74.295) (xy 101.6 74.295)
+			(xy 95.25 116.84) (xy 95.25 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f73856e3-220e-4b33-9f6f-5a1c042a894a")
+		(uuid "f7ffaf78-3700-4e71-ab1f-ddb1274dca3f")
 	)
 	(wire
 		(pts
-			(xy 193.675 127.635) (xy 193.675 131.445)
+			(xy 218.44 128.27) (xy 218.44 132.08)
 		)
 		(stroke
 			(width 0)
@@ -466,7 +482,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 193.675 114.3 0)
+		(at 218.44 114.3 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -477,7 +493,7 @@
 		(fields_autoplaced yes)
 		(uuid "01346273-acc4-47f6-a183-90dc1ed97af5")
 		(property "Reference" "#PWR069"
-			(at 193.675 120.65 0)
+			(at 218.44 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -488,7 +504,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 193.675 119.38 0)
+			(at 218.44 119.38 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -498,7 +514,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 193.675 114.3 0)
+			(at 218.44 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -509,7 +525,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 193.675 114.3 0)
+			(at 218.44 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -520,7 +536,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 193.675 114.3 0)
+			(at 218.44 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -544,7 +560,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 193.675 125.095 0)
+		(at 218.44 125.73 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -555,7 +571,7 @@
 		(fields_autoplaced yes)
 		(uuid "178080f4-4298-43a7-8ea0-fb59c7329f01")
 		(property "Reference" "H3"
-			(at 196.215 122.5549 0)
+			(at 220.98 123.1899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -566,7 +582,7 @@
 			)
 		)
 		(property "Value" "Corner"
-			(at 196.215 125.0949 0)
+			(at 220.98 125.7299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -577,7 +593,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
-			(at 193.675 125.095 0)
+			(at 218.44 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -588,7 +604,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 193.675 125.095 0)
+			(at 218.44 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -599,7 +615,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 193.675 125.095 0)
+			(at 218.44 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -623,7 +639,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 206.375 107.95 0)
+		(at 231.14 107.95 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -634,7 +650,7 @@
 		(fields_autoplaced yes)
 		(uuid "413d4c85-6dfa-4ec5-8634-15aa8d22e445")
 		(property "Reference" "H2"
-			(at 208.915 105.4099 0)
+			(at 233.68 105.4099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -645,7 +661,7 @@
 			)
 		)
 		(property "Value" "Corner"
-			(at 208.915 107.9499 0)
+			(at 233.68 107.9499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -656,7 +672,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
-			(at 206.375 107.95 0)
+			(at 231.14 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -667,7 +683,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 206.375 107.95 0)
+			(at 231.14 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -678,7 +694,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 206.375 107.95 0)
+			(at 231.14 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -702,7 +718,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 206.375 131.445 0)
+		(at 231.14 132.08 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -713,7 +729,7 @@
 		(fields_autoplaced yes)
 		(uuid "70d00deb-6f07-4b1c-b39c-357a7a2eea8f")
 		(property "Reference" "#PWR072"
-			(at 206.375 137.795 0)
+			(at 231.14 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -724,7 +740,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 206.375 136.525 0)
+			(at 231.14 137.16 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -734,7 +750,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 206.375 131.445 0)
+			(at 231.14 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -745,7 +761,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 206.375 131.445 0)
+			(at 231.14 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -756,7 +772,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 206.375 131.445 0)
+			(at 231.14 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -780,7 +796,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 206.375 114.3 0)
+		(at 231.14 114.3 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -791,7 +807,7 @@
 		(fields_autoplaced yes)
 		(uuid "85f1fec2-a0be-4ff7-9bb5-ed98233701f2")
 		(property "Reference" "#PWR070"
-			(at 206.375 120.65 0)
+			(at 231.14 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -802,7 +818,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 206.375 119.38 0)
+			(at 231.14 119.38 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -812,7 +828,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 206.375 114.3 0)
+			(at 231.14 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -823,7 +839,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 206.375 114.3 0)
+			(at 231.14 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -834,7 +850,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 206.375 114.3 0)
+			(at 231.14 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -858,7 +874,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 206.375 125.095 0)
+		(at 231.14 125.73 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -869,7 +885,7 @@
 		(fields_autoplaced yes)
 		(uuid "89cf2f60-6921-4fa0-b796-32570b658fe4")
 		(property "Reference" "H4"
-			(at 208.915 122.5549 0)
+			(at 233.68 123.1899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -880,7 +896,7 @@
 			)
 		)
 		(property "Value" "Corner"
-			(at 208.915 125.0949 0)
+			(at 233.68 125.7299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -891,7 +907,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
-			(at 206.375 125.095 0)
+			(at 231.14 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -902,7 +918,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 206.375 125.095 0)
+			(at 231.14 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -913,7 +929,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 206.375 125.095 0)
+			(at 231.14 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -937,7 +953,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 193.675 107.95 0)
+		(at 218.44 107.95 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -948,7 +964,7 @@
 		(fields_autoplaced yes)
 		(uuid "a46e8e7f-80ac-4422-98c2-ba9a29716f89")
 		(property "Reference" "H1"
-			(at 196.215 105.4099 0)
+			(at 220.98 105.4099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -959,7 +975,7 @@
 			)
 		)
 		(property "Value" "Corner"
-			(at 196.215 107.9499 0)
+			(at 220.98 107.9499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -970,7 +986,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
-			(at 193.675 107.95 0)
+			(at 218.44 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -981,7 +997,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 193.675 107.95 0)
+			(at 218.44 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -992,7 +1008,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 193.675 107.95 0)
+			(at 218.44 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1016,7 +1032,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 193.675 131.445 0)
+		(at 218.44 132.08 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1027,7 +1043,7 @@
 		(fields_autoplaced yes)
 		(uuid "df06c65e-e02d-4820-b8a4-dce31f5f7267")
 		(property "Reference" "#PWR071"
-			(at 193.675 137.795 0)
+			(at 218.44 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1038,7 +1054,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 193.675 136.525 0)
+			(at 218.44 137.16 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1048,7 +1064,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 193.675 131.445 0)
+			(at 218.44 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1059,7 +1075,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 193.675 131.445 0)
+			(at 218.44 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1070,7 +1086,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 193.675 131.445 0)
+			(at 218.44 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1093,7 +1109,7 @@
 		)
 	)
 	(sheet
-		(at 190.5 76.2)
+		(at 215.9 76.2)
 		(size 25.4 19.05)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1109,7 +1125,7 @@
 		)
 		(uuid "0228c7f4-9370-4f69-b541-0382c88a8752")
 		(property "Sheetname" "Motor Connections"
-			(at 190.5 75.4884 0)
+			(at 215.9 75.4884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1120,7 +1136,7 @@
 			)
 		)
 		(property "Sheetfile" "motor_conn.kicad_sch"
-			(at 190.5 95.8346 0)
+			(at 215.9 95.8346 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1130,18 +1146,8 @@
 				(justify left top)
 			)
 		)
-		(pin "HALL" output
-			(at 190.5 90.17 180)
-			(uuid "be827f59-2459-4ab6-b4d5-a6d6aaa1a0a6")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "MOTORU" input
-			(at 190.5 78.74 180)
+			(at 215.9 78.74 180)
 			(uuid "9311702a-f4d1-4a24-8eb1-af8c0d3c16ad")
 			(effects
 				(font
@@ -1151,7 +1157,7 @@
 			)
 		)
 		(pin "MOTORV" input
-			(at 190.5 81.28 180)
+			(at 215.9 81.28 180)
 			(uuid "882ff38c-95a4-4fc3-ae2d-f35d9fa25dad")
 			(effects
 				(font
@@ -1161,8 +1167,18 @@
 			)
 		)
 		(pin "MOTORW" input
-			(at 190.5 83.82 180)
+			(at 215.9 83.82 180)
 			(uuid "6a82bf42-2df5-4509-b1ef-0b16a45a49c1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "HALL{A B C}" output
+			(at 215.9 90.17 180)
+			(uuid "0928883d-6c9f-4a52-8268-01faa9bcbf9b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1179,8 +1195,8 @@
 		)
 	)
 	(sheet
-		(at 107.95 114.3)
-		(size 25.4 12.7)
+		(at 101.6 114.3)
+		(size 38.1 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1195,7 +1211,7 @@
 		)
 		(uuid "0308e67a-e03f-433c-b789-eb1432fe4170")
 		(property "Sheetname" "Magnetic Encoder"
-			(at 107.95 113.5884 0)
+			(at 101.6 113.5884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1206,7 +1222,7 @@
 			)
 		)
 		(property "Sheetfile" "enc_sense.kicad_sch"
-			(at 107.95 127.5846 0)
+			(at 101.6 127.5846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1216,14 +1232,24 @@
 				(justify left top)
 			)
 		)
-		(pin "ENC" output
-			(at 133.35 116.84 0)
-			(uuid "ea9f6249-53c5-413f-a999-1a40144b1e0c")
+		(pin "ENC{A B}" output
+			(at 139.7 116.84 0)
+			(uuid "adb7255f-8a74-43d7-8e33-20785e3243b6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "3.3V DEBUG" output
+			(at 101.6 116.84 180)
+			(uuid "9818eb4d-2d45-4422-86f8-267f3b4deffb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -1235,8 +1261,8 @@
 		)
 	)
 	(sheet
-		(at 146.05 76.2)
-		(size 31.75 19.05)
+		(at 152.4 76.2)
+		(size 50.8 19.05)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1251,7 +1277,7 @@
 		)
 		(uuid "2176b25b-920c-4211-945a-20df519a7ce9")
 		(property "Sheetname" "Motor Controller"
-			(at 146.05 75.4884 0)
+			(at 152.4 75.4884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1262,7 +1288,7 @@
 			)
 		)
 		(property "Sheetfile" "motor_controller.kicad_sch"
-			(at 146.05 95.8346 0)
+			(at 152.4 95.8346 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1272,38 +1298,8 @@
 				(justify left top)
 			)
 		)
-		(pin "ENC" input
-			(at 146.05 91.44 180)
-			(uuid "c5913410-640d-4cea-8493-58abeb1871f5")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "HALL" input
-			(at 177.8 90.17 0)
-			(uuid "b9becdb3-adb1-48a7-8be8-f365bd2c85cf")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "I2C" bidirectional
-			(at 146.05 86.36 180)
-			(uuid "20a7662b-9a14-47de-8496-d89314701a88")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "OUTU" output
-			(at 177.8 78.74 0)
+			(at 203.2 78.74 0)
 			(uuid "3a0554cc-c643-46e3-b17f-bcd44e1d3e37")
 			(effects
 				(font
@@ -1313,7 +1309,7 @@
 			)
 		)
 		(pin "OUTV" output
-			(at 177.8 81.28 0)
+			(at 203.2 81.28 0)
 			(uuid "2cd6a5c2-a8ca-400a-b6f7-7a0d59e7da85")
 			(effects
 				(font
@@ -1323,7 +1319,7 @@
 			)
 		)
 		(pin "OUTW" output
-			(at 177.8 83.82 0)
+			(at 203.2 83.82 0)
 			(uuid "ae31932e-4271-40c6-b086-eaeabf19bec2")
 			(effects
 				(font
@@ -1332,9 +1328,9 @@
 				(justify right)
 			)
 		)
-		(pin "SPI" bidirectional
-			(at 146.05 78.74 180)
-			(uuid "75382e7b-9573-4229-8c5e-1e219b3d2358")
+		(pin "ENC{A B}" input
+			(at 152.4 91.44 180)
+			(uuid "c584f6b9-2fa1-40f2-aaa7-1dbba2bbfd1f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1342,9 +1338,39 @@
 				(justify left)
 			)
 		)
-		(pin "SWD" bidirectional
-			(at 146.05 81.28 180)
-			(uuid "da157e41-596e-4e44-a3fb-adaa5141095b")
+		(pin "HALL{A B C}" input
+			(at 203.2 90.17 0)
+			(uuid "637ffc86-bf3f-47f3-a906-fd96afdf4f18")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "I2C{SDA SCL}" bidirectional
+			(at 152.4 86.36 180)
+			(uuid "9ee1bf22-fd21-4f77-b76b-32a48f63883a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SPI{CSN SCK MISO MOSI}" bidirectional
+			(at 152.4 78.74 180)
+			(uuid "3d648ac2-3b80-4213-8032-353660e7af3e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SWD{CLK IO}" bidirectional
+			(at 152.4 81.28 180)
+			(uuid "73850e3b-356e-4e7e-afda-28881ac3a7ba")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1361,8 +1387,8 @@
 		)
 	)
 	(sheet
-		(at 69.85 63.5)
-		(size 25.4 12.7)
+		(at 57.15 63.5)
+		(size 31.75 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1377,7 +1403,7 @@
 		)
 		(uuid "65153d9e-5a1b-421c-8fe4-5f071af15722")
 		(property "Sheetname" "Power"
-			(at 69.85 62.7884 0)
+			(at 57.15 62.7884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1388,7 +1414,7 @@
 			)
 		)
 		(property "Sheetfile" "power.kicad_sch"
-			(at 69.85 76.7846 0)
+			(at 57.15 76.7846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1399,7 +1425,7 @@
 			)
 		)
 		(pin "3.3V DEBUG" input
-			(at 95.25 74.295 0)
+			(at 88.9 73.66 0)
 			(uuid "1dd9d8fc-b101-4f89-b727-0b5376ee46fb")
 			(effects
 				(font
@@ -1417,8 +1443,8 @@
 		)
 	)
 	(sheet
-		(at 107.95 76.2)
-		(size 25.4 12.7)
+		(at 101.6 70.485)
+		(size 38.1 18.415)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1433,7 +1459,7 @@
 		)
 		(uuid "70ef40bf-13ae-49a6-b679-701b94f13188")
 		(property "Sheetname" "External Connections"
-			(at 107.95 75.4884 0)
+			(at 101.6 69.7734 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1444,7 +1470,7 @@
 			)
 		)
 		(property "Sheetfile" "ext_conn.kicad_sch"
-			(at 107.95 89.4846 0)
+			(at 101.6 89.4846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1454,34 +1480,34 @@
 				(justify left top)
 			)
 		)
-		(pin "SPI" bidirectional
-			(at 133.35 78.74 0)
-			(uuid "92547235-070d-497e-b967-3e19be7162c2")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "SWD" bidirectional
-			(at 133.35 81.28 0)
-			(uuid "8d1863df-60bb-4efa-8f76-bf787b9eceb5")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "3.3V DEBUG" output
-			(at 107.95 78.74 180)
+			(at 101.6 73.66 180)
 			(uuid "388ea842-6de9-489b-94a0-970851ad6c08")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "SPI{CSN SCK MISO MOSI}" bidirectional
+			(at 139.7 78.74 0)
+			(uuid "e6d5694b-5701-4fbf-9f31-adfecd092a74")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SWD{CLK IO}" bidirectional
+			(at 139.7 81.28 0)
+			(uuid "dd66f0f3-45e2-47a6-92f5-1c8b09ae4066")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -1493,8 +1519,8 @@
 		)
 	)
 	(sheet
-		(at 107.95 95.25)
-		(size 25.4 12.7)
+		(at 101.6 95.25)
+		(size 38.1 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1509,7 +1535,7 @@
 		)
 		(uuid "d4780e5d-8897-4fbd-a4f0-0cae90768857")
 		(property "Sheetname" "Temperature Sensor"
-			(at 107.95 94.5384 0)
+			(at 101.6 94.5384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1520,7 +1546,7 @@
 			)
 		)
 		(property "Sheetfile" "temp_sens.kicad_sch"
-			(at 107.95 108.5346 0)
+			(at 101.6 108.5346 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1530,9 +1556,9 @@
 				(justify left top)
 			)
 		)
-		(pin "I2C" bidirectional
-			(at 133.35 97.79 0)
-			(uuid "f377f7c4-36b0-4a74-b709-510fd330537b")
+		(pin "I2C{SDA SCL}" bidirectional
+			(at 139.7 97.79 0)
+			(uuid "9f1c054d-f626-436c-92a8-cb5c5928c2f3")
 			(effects
 				(font
 					(size 1.27 1.27)
