@@ -281,7 +281,16 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "pin_to_pin|546100|1168400|abe28d9d-c0ba-4b9c-8063-bd75bcedfc78|e79603d8-c54d-4e51-81b5-bc55789ea5d3|/2f9570f4-e846-4a86-b134-ae7438cb1d91/65153d9e-5a1b-421c-8fe4-5f071af15722|/2f9570f4-e846-4a86-b134-ae7438cb1d91/65153d9e-5a1b-421c-8fe4-5f071af15722|/2f9570f4-e846-4a86-b134-ae7438cb1d91/65153d9e-5a1b-421c-8fe4-5f071af15722",
+        "This is a power OR-ing mux, this design has been tested before."
+      ],
+      [
+        "pin_to_pin|546100|838200|d8781fe9-9cd2-44d0-b4d3-8830bfd7aeb0|344354ef-75da-4acd-9a99-2d62166449f5|/2f9570f4-e846-4a86-b134-ae7438cb1d91/65153d9e-5a1b-421c-8fe4-5f071af15722|/2f9570f4-e846-4a86-b134-ae7438cb1d91/65153d9e-5a1b-421c-8fe4-5f071af15722|/2f9570f4-e846-4a86-b134-ae7438cb1d91/65153d9e-5a1b-421c-8fe4-5f071af15722",
+        "This is a power OR-ing mux, this design has been tested before."
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -566,7 +575,7 @@
       "method": 0,
       "sort_order": 1
     },
-    "bom_export_filename": "exports/integration-test.csv",
+    "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -722,7 +731,7 @@
         "uuid": "2f9570f4-e846-4a86-b134-ae7438cb1d91"
       }
     ],
-    "used_designators": "D14,J4,#PWR62,#PWR73",
+    "used_designators": "R48,SW1,#FLG3-5,D14,J4,#PWR62,#PWR73-76",
     "variants": []
   },
   "sheets": [
