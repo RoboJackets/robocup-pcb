@@ -5,7 +5,7 @@
 	(uuid "b1facfa3-7685-406b-966a-8bbbf3c18912")
 	(paper "A4")
 	(title_block
-		(date "2026-07-16")
+		(date "2026-08-21")
 		(rev "v1.0")
 		(company "Robojackets - RoboCup")
 		(comment 1 "Aiden Lee")
@@ -1503,6 +1503,12 @@
 		(color 0 0 0 0)
 		(uuid "f7b7a1b2-e16c-4560-b5f7-9e962a3ccee9")
 	)
+	(junction
+		(at 90.17 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f9aad940-3281-40ae-a761-30de2aa4e5aa")
+	)
 	(no_connect
 		(at 54.61 95.25)
 		(uuid "a1ec8fd7-44c2-4d2d-b7ec-614f23fff926")
@@ -1577,6 +1583,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 33.02) (xy 111.76 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00ed38b3-c62b-469b-ba1d-e66ae9c97b81")
+	)
+	(wire
+		(pts
 			(xy 49.53 38.1) (xy 66.04 38.1)
 		)
 		(stroke
@@ -1637,6 +1653,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 20.32) (xy 90.17 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a2395b1-52e8-4c1d-bfbf-d469f1d4406b")
+	)
+	(wire
+		(pts
 			(xy 30.48 92.71) (xy 33.02 92.71)
 		)
 		(stroke
@@ -1694,6 +1720,16 @@
 			(type default)
 		)
 		(uuid "56663196-ca2a-4046-8295-e35d6e3411b1")
+	)
+	(wire
+		(pts
+			(xy 90.17 30.48) (xy 90.17 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b4ddc57-9eb2-4141-a3f4-a8dc69042c97")
 	)
 	(wire
 		(pts
@@ -1827,7 +1863,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 33.02) (xy 111.76 33.02)
+			(xy 48.26 33.02) (xy 90.17 33.02)
 		)
 		(stroke
 			(width 0)
@@ -1985,6 +2021,16 @@
 		)
 		(uuid "f973cc32-c611-4864-874b-33035f6d56e5")
 	)
+	(wire
+		(pts
+			(xy 92.71 20.32) (xy 90.17 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb82c971-2fad-4bdd-a9da-244cc29f5ea1")
+	)
 	(label "SWD.CLK"
 		(at 33.02 87.63 0)
 		(effects
@@ -2088,6 +2134,17 @@
 			(justify left)
 		)
 		(uuid "b16cbdfb-1273-46e0-84d1-e322fcfb2826")
+	)
+	(hierarchical_label "3.3V DEBUG"
+		(shape output)
+		(at 92.71 20.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d32de53e-a986-420d-9f6c-7668595e4706")
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
@@ -2773,7 +2830,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 90.17 27.94 0)
+		(at 90.17 26.67 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2784,7 +2841,7 @@
 		(fields_autoplaced yes)
 		(uuid "4a00138e-7433-400a-8c73-c511c2617315")
 		(property "Reference" "R49"
-			(at 92.71 26.6699 0)
+			(at 92.71 25.3999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2795,7 +2852,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 92.71 29.2099 0)
+			(at 92.71 27.9399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2806,7 +2863,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 88.392 27.94 90)
+			(at 88.392 26.67 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2817,7 +2874,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 27.94 0)
+			(at 90.17 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2828,7 +2885,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 90.17 27.94 0)
+			(at 90.17 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2839,7 +2896,7 @@
 			)
 		)
 		(property "Manufacturer P/N" ""
-			(at 90.17 27.94 0)
+			(at 90.17 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2850,7 +2907,7 @@
 			)
 		)
 		(property "Vendor" ""
-			(at 90.17 27.94 0)
+			(at 90.17 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2861,7 +2918,7 @@
 			)
 		)
 		(property "Vendor P/N" ""
-			(at 90.17 27.94 0)
+			(at 90.17 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

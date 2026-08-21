@@ -283,6 +283,14 @@
   "erc": {
     "erc_exclusions": [
       [
+        "pin_to_pin|1219200|1816100|2753576e-3a41-4d76-8882-82b472bce528|e79603d8-c54d-4e51-81b5-bc55789ea5d3|/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9|/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9|/2f9570f4-e846-4a86-b134-ae7438cb1d91/65153d9e-5a1b-421c-8fe4-5f071af15722",
+        ""
+      ],
+      [
+        "pin_to_pin|1511300|1816100|15e9ce0e-d25c-4b32-9d7d-fced52a2be8f|e79603d8-c54d-4e51-81b5-bc55789ea5d3|/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9|/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9|/2f9570f4-e846-4a86-b134-ae7438cb1d91/65153d9e-5a1b-421c-8fe4-5f071af15722",
+        ""
+      ],
+      [
         "pin_to_pin|546100|1168400|abe28d9d-c0ba-4b9c-8063-bd75bcedfc78|e79603d8-c54d-4e51-81b5-bc55789ea5d3|/2f9570f4-e846-4a86-b134-ae7438cb1d91/65153d9e-5a1b-421c-8fe4-5f071af15722|/2f9570f4-e846-4a86-b134-ae7438cb1d91/65153d9e-5a1b-421c-8fe4-5f071af15722|/2f9570f4-e846-4a86-b134-ae7438cb1d91/65153d9e-5a1b-421c-8fe4-5f071af15722",
         "This is a power OR-ing mux, this design has been tested before."
       ],
@@ -732,7 +740,7 @@
         "uuid": "2f9570f4-e846-4a86-b134-ae7438cb1d91"
       }
     ],
-    "used_designators": "R48-49,SW1,#FLG3-5,C22,D14,J4,#PWR62,#PWR73-77",
+    "used_designators": "Q3-6,TP1,R1,R3,R5-7,R9,R11,R17-23,R41,R48-51,SW1,#FLG3-5,C2,C14-15,C22,D4-7,D14,J4,#PWR2,#PWR4-6,#PWR22-27,#PWR62,#PWR73-77",
     "variants": []
   },
   "sheets": [
@@ -749,11 +757,11 @@
       "Motor Controller"
     ],
     [
-      "35d99ca0-41c7-44c3-88a4-e7f3d2e98d62",
+      "f3d4dad4-7804-4973-a1c8-5598db67abdb",
       "Motor Phase V"
     ],
     [
-      "2a8ffb24-aa29-412e-aaf4-36ae4d1be593",
+      "880dde5c-fcd3-4b13-aaa9-070f3e144f39",
       "Motor Phase W"
     ],
     [
@@ -775,6 +783,10 @@
     [
       "0228c7f4-9370-4f69-b541-0382c88a8752",
       "Motor Connections"
+    ],
+    [
+      "a5292b11-b9f3-47b5-82b7-15b9f4351b45",
+      "Current Sensing"
     ]
   ],
   "text_variables": {},

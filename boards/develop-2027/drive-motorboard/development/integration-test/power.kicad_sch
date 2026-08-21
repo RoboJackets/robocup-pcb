@@ -5,7 +5,7 @@
 	(uuid "f7ad6451-ef3e-440a-9656-5d4350b0f1e3")
 	(paper "A4")
 	(title_block
-		(date "2026-07-16")
+		(date "2026-08-21")
 		(rev "v1.0")
 		(company "Robojackets - RoboCup")
 		(comment 1 "Aiden Lee")
@@ -2267,12 +2267,6 @@
 		(uuid "ed44209a-912a-405e-87e7-c471d7576cc2")
 	)
 	(junction
-		(at 44.45 83.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "00220d72-4ec9-4906-bb67-e9524aa7410d")
-	)
-	(junction
 		(at 46.99 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2611,16 +2605,6 @@
 			(type default)
 		)
 		(uuid "60bcf1fc-35fd-4188-9f3a-0d4c99310000")
-	)
-	(wire
-		(pts
-			(xy 36.83 83.82) (xy 44.45 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "69d94be6-d17f-48b2-a40c-ff2e0f720f8a")
 	)
 	(wire
 		(pts
@@ -2994,7 +2978,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 83.82) (xy 67.31 83.82)
+			(xy 36.83 83.82) (xy 67.31 83.82)
 		)
 		(stroke
 			(width 0)
@@ -4114,84 +4098,6 @@
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/65153d9e-5a1b-421c-8fe4-5f071af15722"
 					(reference "#FLG02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 44.45 83.82 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6a1d0d33-491e-4646-b8ad-d2b0d22e159f")
-		(property "Reference" "#FLG04"
-			(at 44.45 81.915 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 44.45 78.74 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 44.45 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 44.45 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 44.45 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c25e834a-e2c0-457a-8668-28f0bfb9532a")
-		)
-		(instances
-			(project "integration-test"
-				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/65153d9e-5a1b-421c-8fe4-5f071af15722"
-					(reference "#FLG04")
 					(unit 1)
 				)
 			)
