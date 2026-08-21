@@ -624,6 +624,146 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "RJ-Diodes:PUSB3FR4"
 			(pin_names
 				(offset 0)
@@ -1251,7 +1391,7 @@
 	)
 	(rectangle
 		(start 15.875 15.875)
-		(end 120.65 66.04)
+		(end 152.4 66.04)
 		(stroke
 			(width 0)
 			(type default)
@@ -1285,7 +1425,7 @@
 	)
 	(text_box "Warning: MISO/MOSI is relative to the STSPIN32G0A2.\n\nTest what MISO/MOSI needs to be to operate in Slave Mode."
 		(exclude_from_sim no)
-		(at 81.28 48.895 0)
+		(at 111.76 48.895 0)
 		(size 38.1 15.875)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -1304,10 +1444,10 @@
 		(uuid "a1c7f1cf-8930-4d7e-91ca-7a9e8d1c191e")
 	)
 	(junction
-		(at 57.15 35.56)
+		(at 66.04 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3698a657-ee3e-4544-a998-0031155cc4c6")
+		(uuid "3f553304-0c72-4f95-a689-31941fc1f7fc")
 	)
 	(junction
 		(at 49.53 38.1)
@@ -1316,22 +1456,16 @@
 		(uuid "7279213d-b73d-4b91-937d-90f83e52c77f")
 	)
 	(junction
-		(at 66.04 38.1)
+		(at 48.26 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "873bde93-c848-49df-b1f2-ee1c38aa99be")
+		(uuid "87985fcb-5cde-4378-a814-69e15621369c")
 	)
 	(junction
 		(at 46.99 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "916b2c42-47d3-409a-9c07-6b9e0ed5e8bd")
-	)
-	(junction
-		(at 48.26 33.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b06bab31-2273-415a-9e41-bbcc6c7b6dea")
 	)
 	(junction
 		(at 49.53 90.17)
@@ -1355,7 +1489,13 @@
 		(at 74.93 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "dda36131-43ca-4064-b48c-ef6e104c7c59")
+		(uuid "dba69f44-8804-453a-a6dd-d176d570dfbc")
+	)
+	(junction
+		(at 57.15 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e51d97c5-184f-4f64-b917-4dccd14ffae4")
 	)
 	(junction
 		(at 52.07 40.64)
@@ -1381,7 +1521,7 @@
 		(uuid "0ab7a8ca-aacb-43fd-aca6-deec92a292d4")
 	)
 	(bus_entry
-		(at 81.28 33.02)
+		(at 111.76 33.02)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -1390,7 +1530,7 @@
 		(uuid "32da3c75-d413-4645-b75f-88934c2389ee")
 	)
 	(bus_entry
-		(at 81.28 40.64)
+		(at 111.76 40.64)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -1408,7 +1548,7 @@
 		(uuid "a61bbe57-488e-4126-8766-318d7f89b212")
 	)
 	(bus_entry
-		(at 81.28 35.56)
+		(at 111.76 35.56)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -1417,7 +1557,7 @@
 		(uuid "f712801c-1335-4650-a3a2-0a5ccfa9e680")
 	)
 	(bus_entry
-		(at 81.28 38.1)
+		(at 111.76 38.1)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -1487,7 +1627,7 @@
 	)
 	(bus
 		(pts
-			(xy 83.82 44.45) (xy 92.71 44.45)
+			(xy 114.3 44.45) (xy 123.19 44.45)
 		)
 		(stroke
 			(width 0)
@@ -1524,16 +1664,6 @@
 			(type default)
 		)
 		(uuid "28104ecf-d487-408f-949b-022ddca1cf3b")
-	)
-	(wire
-		(pts
-			(xy 57.15 35.56) (xy 81.28 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3b5dfa55-dfa3-473a-9709-435e27ba4192")
 	)
 	(wire
 		(pts
@@ -1577,7 +1707,7 @@
 	)
 	(bus
 		(pts
-			(xy 83.82 35.56) (xy 83.82 44.45)
+			(xy 114.3 35.56) (xy 114.3 44.45)
 		)
 		(stroke
 			(width 0)
@@ -1627,13 +1757,13 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 33.02) (xy 81.28 33.02)
+			(xy 57.15 35.56) (xy 111.76 35.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6d1f847b-c381-4646-a099-0772e0210ed5")
+		(uuid "6e5e1dd7-40d0-4097-8606-36eb6b23c4aa")
 	)
 	(wire
 		(pts
@@ -1687,6 +1817,26 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 38.1) (xy 111.76 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9818f756-c0d7-42f4-80e9-449ff09068c1")
+	)
+	(wire
+		(pts
+			(xy 48.26 33.02) (xy 111.76 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f91fa32-a8b3-4688-8459-ea0ced3b930d")
+	)
+	(wire
+		(pts
 			(xy 30.48 85.09) (xy 31.75 85.09)
 		)
 		(stroke
@@ -1697,16 +1847,6 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 40.64) (xy 81.28 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a5fabb06-0f34-4be9-b653-42a3ae76ca50")
-	)
-	(wire
-		(pts
 			(xy 46.99 87.63) (xy 46.99 95.25)
 		)
 		(stroke
@@ -1714,16 +1854,6 @@
 			(type default)
 		)
 		(uuid "a6223bd4-9d5a-4aa0-bf04-26fa763d3fa4")
-	)
-	(wire
-		(pts
-			(xy 66.04 38.1) (xy 81.28 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ab80db77-d3fa-486a-9a78-205d4e9c6b7d")
 	)
 	(wire
 		(pts
@@ -1764,6 +1894,16 @@
 			(type default)
 		)
 		(uuid "c7bc9cc6-4c4d-4242-b867-5f31fa28a6ca")
+	)
+	(wire
+		(pts
+			(xy 74.93 40.64) (xy 111.76 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c872c787-00c3-4a6a-978f-389d2ff14eff")
 	)
 	(wire
 		(pts
@@ -1940,7 +2080,7 @@
 	)
 	(hierarchical_label "SPI{CSN SCK MISO MOSI}"
 		(shape bidirectional)
-		(at 92.71 44.45 0)
+		(at 123.19 44.45 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2626,6 +2766,121 @@
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/70ef40bf-13ae-49a6-b679-701b94f13188"
 					(reference "TP27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 90.17 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4a00138e-7433-400a-8c73-c511c2617315")
+		(property "Reference" "R49"
+			(at 92.71 26.6699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 92.71 29.2099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 88.392 27.94 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 90.17 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 90.17 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" ""
+			(at 90.17 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" ""
+			(at 90.17 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" ""
+			(at 90.17 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1edea04e-ec5c-42ba-8c86-5af6317364c4")
+		)
+		(pin "2"
+			(uuid "61821a13-cc85-49c9-bab7-cfd44902daec")
+		)
+		(instances
+			(project "integration-test"
+				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/70ef40bf-13ae-49a6-b679-701b94f13188"
+					(reference "R49")
 					(unit 1)
 				)
 			)

@@ -1965,6 +1965,1163 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "STSPIN32G0A2_1"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 17.145 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "STSPIN32G0A2"
+				(at 0 15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_DFN_QFN:VQFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm"
+				(at 0 41.91 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.st.com/resource/en/datasheet/stspin32g0a1.pdf"
+				(at 0 39.37 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Advanced brushless motor controller with embedded STM32G0 MCU"
+				(at 0 44.45 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer P/N" "STSPIN32G0A2"
+				(at 0 36.83 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Vendor" "DigiKey"
+				(at 0 34.29 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Vendor P/N" "497-STSPIN32G0A2-ND"
+				(at 0 31.75 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "STSPIN32G0A2_1_1_1"
+				(unit_name "Power")
+				(rectangle
+					(start -8.89 12.7)
+					(end 8.89 -12.7)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at -11.43 7.62 0)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 11.43 -10.16 180)
+					(length 2.54)
+					(name "REG12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -11.43 10.16 0)
+					(length 2.54)
+					(name "VM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 11.43 10.16 180)
+					(length 2.54)
+					(name "SW"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 11.43 1.27 180)
+					(length 2.54)
+					(name "REG3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -11.43 -5.08 0)
+					(length 2.54)
+					(name "TESTMODE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -11.43 -7.62 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "44"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -11.43 -10.16 0)
+					(length 2.54)
+					(name "EPAD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "49"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "STSPIN32G0A2_1_2_1"
+				(unit_name "MCU")
+				(rectangle
+					(start -19.05 12.7)
+					(end 19.05 -22.86)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin bidirectional line
+					(at 21.59 10.16 180)
+					(length 2.54)
+					(name "PC14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 21.59 7.62 180)
+					(length 2.54)
+					(name "PF0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -21.59 7.62 0)
+					(length 2.54)
+					(name "PF2/~{RST}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 21.59 2.54 180)
+					(length 2.54)
+					(name "PA0/TIM2_CH1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 21.59 0 180)
+					(length 2.54)
+					(name "PA1/TIM2_CH2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 21.59 -2.54 180)
+					(length 2.54)
+					(name "PA2/TIM2_CH3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -21.59 -10.16 0)
+					(length 2.54)
+					(name "PA3/SPI2_MISO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -21.59 -5.08 0)
+					(length 2.54)
+					(name "PA4/SPI2_~{SS}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -21.59 -7.62 0)
+					(length 2.54)
+					(name "PA5/SPI2_SCK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -21.59 2.54 0)
+					(length 2.54)
+					(name "PA6/TIM3_CH1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -21.59 0 0)
+					(length 2.54)
+					(name "PA7/TIM3_CH2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 21.59 -12.7 180)
+					(length 2.54)
+					(name "PB1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -21.59 10.16 0)
+					(length 2.54)
+					(name "~{STBY}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "38"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -21.59 -12.7 0)
+					(length 2.54)
+					(name "PA12[PA10]/SPI2_MOSI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "39"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -21.59 -17.78 0)
+					(length 2.54)
+					(name "PA13/SWCLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "40"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -21.59 -20.32 0)
+					(length 2.54)
+					(name "PA14/SWDIO/BOOT0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "41"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 21.59 -7.62 180)
+					(length 2.54)
+					(name "PA15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "42"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 21.59 -17.78 180)
+					(length 2.54)
+					(name "PB6/I2C1_SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "43"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 21.59 -20.32 180)
+					(length 2.54)
+					(name "PB7/I2C1_SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "45"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "STSPIN32G0A2_1_3_1"
+				(unit_name "BLDC Output")
+				(rectangle
+					(start -8.89 12.7)
+					(end 8.89 -64.77)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin output line
+					(at 11.43 -57.15 180)
+					(length 2.54)
+					(name "HSW"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "26"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 11.43 -59.69 180)
+					(length 2.54)
+					(name "OUTW"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "27"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 11.43 -48.26 180)
+					(length 2.54)
+					(name "VBOOTW"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "28"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 11.43 -62.23 180)
+					(length 2.54)
+					(name "LSW"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "29"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 11.43 -27.94 180)
+					(length 2.54)
+					(name "HSV"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "30"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 11.43 -30.48 180)
+					(length 2.54)
+					(name "OUTV"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "31"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 11.43 -19.05 180)
+					(length 2.54)
+					(name "VBOOTV"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "32"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 11.43 -33.02 180)
+					(length 2.54)
+					(name "LSV"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "33"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 11.43 1.27 180)
+					(length 2.54)
+					(name "HSU"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "34"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 11.43 -1.27 180)
+					(length 2.54)
+					(name "OUTU"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "35"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 11.43 10.16 180)
+					(length 2.54)
+					(name "VBOOTU"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "36"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 11.43 -3.81 180)
+					(length 2.54)
+					(name "LSU"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "37"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "STSPIN32G0A2_1_4_1"
+				(unit_name "Op-Amp 1")
+				(polyline
+					(pts
+						(xy -6.35 12.7) (xy -6.35 -2.54) (xy 8.89 5.08) (xy -6.35 12.7)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin bidirectional line
+					(at 11.43 5.08 180)
+					(length 2.54)
+					(name "OP1O"
+						(effects
+							(font
+								(size 0.889 0.889)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -8.89 1.27 0)
+					(length 2.54)
+					(name "OP1N"
+						(effects
+							(font
+								(size 0.889 0.889)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -8.89 8.89 0)
+					(length 2.54)
+					(name "OP1P"
+						(effects
+							(font
+								(size 0.889 0.889)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "STSPIN32G0A2_1_5_1"
+				(unit_name "Op-Amp 2")
+				(polyline
+					(pts
+						(xy -6.35 12.7) (xy -6.35 -2.54) (xy 8.89 5.08) (xy -6.35 12.7)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin bidirectional line
+					(at -8.89 8.89 0)
+					(length 2.54)
+					(name "OP2P"
+						(effects
+							(font
+								(size 0.889 0.889)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -8.89 1.27 0)
+					(length 2.54)
+					(name "OP2N"
+						(effects
+							(font
+								(size 0.889 0.889)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 11.43 5.08 180)
+					(length 2.54)
+					(name "OP2O"
+						(effects
+							(font
+								(size 0.889 0.889)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "STSPIN32G0A2_1_6_1"
+				(unit_name "Op-Amp 3")
+				(polyline
+					(pts
+						(xy -6.35 12.7) (xy -6.35 -2.54) (xy 8.89 5.08) (xy -6.35 12.7)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin bidirectional line
+					(at -8.89 8.89 0)
+					(length 2.54)
+					(name "OP3P"
+						(effects
+							(font
+								(size 0.889 0.889)
+							)
+						)
+					)
+					(number "46"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -8.89 1.27 0)
+					(length 2.54)
+					(name "OP3N"
+						(effects
+							(font
+								(size 0.889 0.889)
+							)
+						)
+					)
+					(number "47"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 11.43 5.08 180)
+					(length 2.54)
+					(name "OP3O"
+						(effects
+							(font
+								(size 0.889 0.889)
+							)
+						)
+					)
+					(number "48"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "STSPIN32G0A2_1_7_1"
+				(unit_name "Over-Current")
+				(polyline
+					(pts
+						(xy -8.89 1.27) (xy -6.35 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 12.7) (xy -6.35 -2.54) (xy 8.89 5.08) (xy -6.35 12.7)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 6.985) (xy -3.81 6.985)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 3.175) (xy -3.81 3.175)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.445 7.62) (xy -4.445 6.35)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.89 5.08) (xy 11.43 5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "255 mV"
+					(at -5.715 1.27 0)
+					(effects
+						(font
+							(size 0.889 0.889)
+						)
+						(justify left)
+					)
+				)
+				(pin bidirectional line
+					(at -8.89 8.89 0)
+					(length 2.54)
+					(name "OCCOMP"
+						(effects
+							(font
+								(size 0.889 0.889)
+							)
+						)
+					)
+					(number "25"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Switch:SW_SPST"
 			(pin_names
 				(offset 0)
@@ -2985,6 +4142,14 @@
 		(at 90.17 53.34)
 		(uuid "9ede313b-7c62-43f8-ac44-73a501e9763a")
 	)
+	(no_connect
+		(at 231.14 40.64)
+		(uuid "c5b71d3f-29ac-4094-a283-15209a90b816")
+	)
+	(no_connect
+		(at 231.14 55.88)
+		(uuid "e30c76ee-3621-461e-a0e2-5cb25054faf9")
+	)
 	(bus_entry
 		(at 171.45 55.88)
 		(size -2.54 2.54)
@@ -2995,7 +4160,7 @@
 		(uuid "19dc44a8-7e18-4556-a18a-e34fa12f768e")
 	)
 	(bus_entry
-		(at 247.65 55.88)
+		(at 247.65 48.26)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -3040,7 +4205,7 @@
 		(uuid "5e79d20c-35d8-4384-84c3-f523415142ca")
 	)
 	(bus_entry
-		(at 247.65 58.42)
+		(at 247.65 50.8)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -3067,7 +4232,7 @@
 		(uuid "a9c11a4b-5420-4bdc-ad36-eaafb326171a")
 	)
 	(bus_entry
-		(at 247.65 40.64)
+		(at 247.65 45.72)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -3214,7 +4379,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 55.88) (xy 247.65 55.88)
+			(xy 231.14 48.26) (xy 247.65 48.26)
 		)
 		(stroke
 			(width 0)
@@ -3271,6 +4436,16 @@
 			(type default)
 		)
 		(uuid "1385af8a-ba45-4803-8d7d-9d0b710089f1")
+	)
+	(wire
+		(pts
+			(xy 231.14 60.96) (xy 238.76 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15589793-9c2b-45fc-ab66-1bd74a36409d")
 	)
 	(wire
 		(pts
@@ -3384,7 +4559,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 58.42) (xy 247.65 58.42)
+			(xy 231.14 50.8) (xy 247.65 50.8)
 		)
 		(stroke
 			(width 0)
@@ -3744,16 +4919,6 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 50.8) (xy 238.76 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "57c6d4dd-163a-4851-b912-00d0dae33c60")
-	)
-	(wire
-		(pts
 			(xy 50.8 161.29) (xy 44.45 161.29)
 		)
 		(stroke
@@ -3904,16 +5069,6 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 48.26) (xy 238.76 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "71b90e8e-b4af-43c6-a048-fd32b4e52f96")
-	)
-	(wire
-		(pts
 			(xy 231.14 68.58) (xy 247.65 68.58)
 		)
 		(stroke
@@ -3931,16 +5086,6 @@
 			(type default)
 		)
 		(uuid "761facfd-c275-4fe3-939e-065a5d202c21")
-	)
-	(wire
-		(pts
-			(xy 231.14 45.72) (xy 238.76 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "76d13e56-b54e-4805-bc2f-488ae225f55f")
 	)
 	(wire
 		(pts
@@ -4292,16 +5437,6 @@
 		)
 		(uuid "ad48212b-0634-4232-901f-f4e53024feb6")
 	)
-	(bus
-		(pts
-			(xy 260.35 60.96) (xy 250.19 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b1ab953a-ef3b-4da7-bb04-094b48b5540d")
-	)
 	(wire
 		(pts
 			(xy 196.85 120.65) (xy 199.39 120.65)
@@ -4324,7 +5459,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 40.64) (xy 247.65 40.64)
+			(xy 231.14 45.72) (xy 247.65 45.72)
 		)
 		(stroke
 			(width 0)
@@ -4361,6 +5496,16 @@
 			(type default)
 		)
 		(uuid "b6007418-4977-4d26-89d8-1eac71960138")
+	)
+	(bus
+		(pts
+			(xy 250.19 53.34) (xy 260.35 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba05d732-28ed-4f7d-9cd4-546d28e7bd5f")
 	)
 	(wire
 		(pts
@@ -4564,7 +5709,7 @@
 	)
 	(bus
 		(pts
-			(xy 250.19 43.18) (xy 250.19 60.96)
+			(xy 250.19 48.26) (xy 250.19 53.34)
 		)
 		(stroke
 			(width 0)
@@ -4733,7 +5878,7 @@
 		(uuid "015560ae-da49-4cdf-8b44-334cff081efb")
 	)
 	(label "HALL.A"
-		(at 238.76 40.64 0)
+		(at 238.76 45.72 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4741,16 +5886,6 @@
 			(justify left bottom)
 		)
 		(uuid "0279597f-9362-494c-af0e-33eadbcd1b48")
-	)
-	(label "I_{SENSEW}"
-		(at 238.76 50.8 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "05ce0e5c-75c6-4f33-9105-33b13d6ff33d")
 	)
 	(label "FAULT"
 		(at 269.24 86.36 0)
@@ -4763,7 +5898,7 @@
 		(uuid "09934cae-25be-470c-ba41-296fc3f29ebe")
 	)
 	(label "HALL.C"
-		(at 238.76 58.42 0)
+		(at 238.76 50.8 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4872,16 +6007,6 @@
 		)
 		(uuid "60fdb348-7b24-4470-aa94-72a67f5f6653")
 	)
-	(label "ENC.A"
-		(at 172.72 48.26 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6de633f8-89f8-4165-bdb5-96ca9e1ded04")
-	)
 	(label "~{RST}"
 		(at 172.72 40.64 0)
 		(effects
@@ -4902,7 +6027,7 @@
 		)
 		(uuid "7bb410d0-8b1f-4bce-a802-48e22cc08c0c")
 	)
-	(label "ENC.B"
+	(label "ENC.A"
 		(at 172.72 45.72 0)
 		(effects
 			(font
@@ -4910,7 +6035,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "9cf6b2ea-637f-4951-81a6-618b0a858935")
+		(uuid "83ec47a0-c945-4d6d-83f2-2c7f8a5e0735")
 	)
 	(label "SHUNTVP"
 		(at 123.19 161.29 0)
@@ -4952,16 +6077,6 @@
 		)
 		(uuid "acc15242-107c-4621-8720-f711f943983b")
 	)
-	(label "I_{SENSEV}"
-		(at 238.76 48.26 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b0331fdd-1d01-433a-ad95-e320ff3d3b4e")
-	)
 	(label "FAULT"
 		(at 238.76 38.1 0)
 		(effects
@@ -4982,18 +6097,28 @@
 		)
 		(uuid "b6cc4947-31bb-4dbf-93df-f3f80d058f52")
 	)
-	(label "I_{SENSEU}"
-		(at 238.76 45.72 0)
+	(label "I_{SENSE}"
+		(at 238.76 60.96 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "e6be8b44-01d5-44b6-af7f-1defb38f01d8")
+		(uuid "c146bb73-2e80-4de7-bb44-9d79a3e8dff6")
+	)
+	(label "ENC.B"
+		(at 172.72 48.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c72b8999-2f5d-40f2-bb1a-6a1e7923c02b")
 	)
 	(label "HALL.B"
-		(at 238.76 55.88 0)
+		(at 238.76 48.26 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5014,7 +6139,7 @@
 	)
 	(hierarchical_label "HALL{A B C}"
 		(shape input)
-		(at 260.35 60.96 0)
+		(at 260.35 53.34 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6275,6 +7400,7 @@
 		)
 	)
 	(symbol
+		(lib_name "STSPIN32G0A2_1")
 		(lib_id "RJ-MCU:STSPIN32G0A2")
 		(at 209.55 48.26 0)
 		(unit 2)
