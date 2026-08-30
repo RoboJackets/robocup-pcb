@@ -8876,6 +8876,12 @@
 		(uuid "8d85a2bd-0a3e-480c-b27f-280a614017bb")
 	)
 	(junction
+		(at 105.41 132.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "91e40dae-9cbf-4db2-9c84-05a2a290ba3f")
+	)
+	(junction
 		(at 60.96 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8952,6 +8958,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c999dfd0-02f1-4c24-9019-dcd7f027e657")
+	)
+	(junction
+		(at 105.41 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e5b240ad-3335-4c9c-95fd-aadbf1fb2b8d")
 	)
 	(junction
 		(at 30.48 31.75)
@@ -9166,7 +9178,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 115.57) (xy 109.22 118.11)
+			(xy 115.57 115.57) (xy 115.57 118.11)
 		)
 		(stroke
 			(width 0)
@@ -9186,7 +9198,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 123.19) (xy 143.51 123.19)
+			(xy 172.72 123.19) (xy 147.32 123.19)
 		)
 		(stroke
 			(width 0)
@@ -9256,7 +9268,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 190.5) (xy 97.79 190.5)
+			(xy 95.25 190.5) (xy 105.41 190.5)
 		)
 		(stroke
 			(width 0)
@@ -9286,7 +9298,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 114.3) (xy 168.91 123.19)
+			(xy 172.72 114.3) (xy 172.72 123.19)
 		)
 		(stroke
 			(width 0)
@@ -9466,7 +9478,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 102.87) (xy 109.22 105.41)
+			(xy 115.57 102.87) (xy 115.57 105.41)
 		)
 		(stroke
 			(width 0)
@@ -9483,6 +9495,16 @@
 			(type default)
 		)
 		(uuid "398e91c3-45f1-4209-8a08-9a8e8570dd65")
+	)
+	(wire
+		(pts
+			(xy 105.41 161.29) (xy 105.41 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39b2ac68-6a35-49e4-8051-427d5f12883a")
 	)
 	(wire
 		(pts
@@ -9506,7 +9528,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 110.49) (xy 146.05 110.49)
+			(xy 147.32 110.49) (xy 149.86 110.49)
 		)
 		(stroke
 			(width 0)
@@ -9646,6 +9668,16 @@
 	)
 	(wire
 		(pts
+			(xy 95.25 132.08) (xy 105.41 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "543b5eac-b4f9-439f-8ecc-97a8d2dd81a5")
+	)
+	(wire
+		(pts
 			(xy 30.48 41.91) (xy 30.48 44.45)
 		)
 		(stroke
@@ -9683,16 +9715,6 @@
 			(type default)
 		)
 		(uuid "58b5cbae-5861-4649-a58b-90652e4e5ebb")
-	)
-	(wire
-		(pts
-			(xy 95.25 132.08) (xy 97.79 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "58fcf1f7-1991-49d2-8efc-529848fe617e")
 	)
 	(wire
 		(pts
@@ -9816,6 +9838,16 @@
 	)
 	(wire
 		(pts
+			(xy 97.79 118.11) (xy 105.41 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6feff17f-96fd-450a-beac-af6f1705133a")
+	)
+	(wire
+		(pts
 			(xy 116.84 181.61) (xy 121.92 181.61)
 		)
 		(stroke
@@ -9833,6 +9865,16 @@
 			(type default)
 		)
 		(uuid "73294134-c1d7-4396-8c28-96cca86de9c4")
+	)
+	(wire
+		(pts
+			(xy 105.41 132.08) (xy 105.41 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75716af5-c5cc-4f97-a055-afbc97e72c80")
 	)
 	(wire
 		(pts
@@ -9886,7 +9928,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 113.03) (xy 123.19 113.03)
+			(xy 118.11 113.03) (xy 127 113.03)
 		)
 		(stroke
 			(width 0)
@@ -9913,6 +9955,16 @@
 			(type default)
 		)
 		(uuid "843cbef9-aaea-4479-830b-2c9a2868dbbf")
+	)
+	(wire
+		(pts
+			(xy 97.79 102.87) (xy 97.79 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "862ce93e-652d-4abb-8766-4837efe02b2f")
 	)
 	(wire
 		(pts
@@ -9996,7 +10048,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 107.95) (xy 123.19 107.95)
+			(xy 118.11 107.95) (xy 127 107.95)
 		)
 		(stroke
 			(width 0)
@@ -10096,23 +10148,23 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 102.87) (xy 109.22 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9fee5197-82cb-480a-8fe0-b645a55aaef3")
-	)
-	(wire
-		(pts
-			(xy 143.51 128.27) (xy 146.05 128.27)
+			(xy 147.32 128.27) (xy 149.86 128.27)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "a1fa0faa-bb77-410c-aac2-7681d300ae86")
+	)
+	(wire
+		(pts
+			(xy 105.41 132.08) (xy 105.41 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a25a186f-700c-4b42-815b-3a6b647e021b")
 	)
 	(wire
 		(pts
@@ -10193,6 +10245,16 @@
 			(type default)
 		)
 		(uuid "ad17848e-93dc-44ee-b0c3-482bd66b1e1d")
+	)
+	(wire
+		(pts
+			(xy 97.79 102.87) (xy 115.57 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0d85d19-7fe6-4b3b-b869-eef4fb2e3d8e")
 	)
 	(wire
 		(pts
@@ -10436,7 +10498,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 161.29) (xy 97.79 161.29)
+			(xy 95.25 161.29) (xy 105.41 161.29)
 		)
 		(stroke
 			(width 0)
@@ -10536,7 +10598,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 118.11) (xy 146.05 118.11)
+			(xy 147.32 118.11) (xy 149.86 118.11)
 		)
 		(stroke
 			(width 0)
@@ -10556,7 +10618,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 114.3) (xy 168.91 114.3)
+			(xy 170.18 114.3) (xy 172.72 114.3)
 		)
 		(stroke
 			(width 0)
@@ -10635,7 +10697,7 @@
 		(uuid "0b070f7f-7912-4ca6-a357-ce88513569fc")
 	)
 	(label "SHUNTN"
-		(at 114.3 113.03 0)
+		(at 118.11 113.03 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10643,16 +10705,6 @@
 			(justify left bottom)
 		)
 		(uuid "12a9a99e-27f7-4e6d-ac06-fe733d595d01")
-	)
-	(label "SHUNT_H"
-		(at 97.79 161.29 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "170310c9-c17a-4733-8d56-94af585a59e5")
 	)
 	(label "SPI.MISO"
 		(at 172.72 58.42 0)
@@ -10675,7 +10727,7 @@
 		(uuid "1d3794c0-9d4b-4cd5-9a8c-82d8323446c0")
 	)
 	(label "SHUNTP"
-		(at 114.3 107.95 0)
+		(at 118.11 107.95 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10715,7 +10767,7 @@
 		(uuid "2d5f8c50-ee5f-48b3-8f6c-62a299d476f8")
 	)
 	(label "SHUNT_H"
-		(at 104.14 102.87 180)
+		(at 107.95 102.87 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10725,7 +10777,7 @@
 		(uuid "302d7b3f-fc37-4e34-a0a5-7a41c391da35")
 	)
 	(label "I_{SENSE}"
-		(at 146.05 128.27 0)
+		(at 149.86 128.27 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10794,16 +10846,6 @@
 		)
 		(uuid "b6cc4947-31bb-4dbf-93df-f3f80d058f52")
 	)
-	(label "SHUNT_H"
-		(at 97.79 190.5 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bcd5ff5e-e227-4a0f-9f09-f347fc271192")
-	)
 	(label "I_{SENSE}"
 		(at 238.76 60.96 0)
 		(effects
@@ -10823,16 +10865,6 @@
 			(justify left bottom)
 		)
 		(uuid "c72b8999-2f5d-40f2-bb1a-6a1e7923c02b")
-	)
-	(label "SHUNT_H"
-		(at 97.79 132.08 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c8d4713f-09de-4415-9594-734bacec959c")
 	)
 	(label "HALL.B"
 		(at 238.76 48.26 0)
@@ -11172,7 +11204,7 @@
 	)
 	(symbol
 		(lib_id "RJ-MCU:STSPIN32G0A2")
-		(at 154.94 119.38 0)
+		(at 158.75 119.38 0)
 		(unit 4)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11183,7 +11215,7 @@
 		(fields_autoplaced yes)
 		(uuid "100cce97-d242-4236-9881-f03da20ceb68")
 		(property "Reference" "U1"
-			(at 156.21 101.6 0)
+			(at 160.02 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11193,7 +11225,7 @@
 			)
 		)
 		(property "Value" "STSPIN32G0A2"
-			(at 156.21 104.14 0)
+			(at 160.02 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11203,7 +11235,7 @@
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:VQFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm"
-			(at 154.94 77.47 0)
+			(at 158.75 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11214,7 +11246,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stspin32g0a1.pdf"
-			(at 154.94 80.01 0)
+			(at 158.75 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11225,7 +11257,7 @@
 			)
 		)
 		(property "Description" "Advanced brushless motor controller with embedded STM32G0 MCU"
-			(at 154.94 74.93 0)
+			(at 158.75 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11236,7 +11268,7 @@
 			)
 		)
 		(property "Manufacturer P/N" "STSPIN32G0A2"
-			(at 154.94 82.55 0)
+			(at 158.75 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11247,7 +11279,7 @@
 			)
 		)
 		(property "Vendor" "DigiKey"
-			(at 154.94 85.09 0)
+			(at 158.75 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11258,7 +11290,7 @@
 			)
 		)
 		(property "Vendor P/N" "497-STSPIN32G0A2-ND"
-			(at 154.94 87.63 0)
+			(at 158.75 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11770,7 +11802,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
 			(at 71.12 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -11781,7 +11813,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.keyelco.com/userAssets/file/K75p62.pdf"
+		(property "Datasheet" ""
 			(at 71.12 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -11803,7 +11835,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" ""
 			(at 66.04 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -11814,7 +11846,7 @@
 				)
 			)
 		)
-		(property "Manufacturer P/N" "5002"
+		(property "Manufacturer P/N" ""
 			(at 66.04 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -11825,7 +11857,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "36-5002-ND"
+		(property "Vendor P/N" ""
 			(at 66.04 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -12116,7 +12148,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
 			(at 71.12 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -12127,7 +12159,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.keyelco.com/userAssets/file/K75p62.pdf"
+		(property "Datasheet" ""
 			(at 71.12 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -12149,7 +12181,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" ""
 			(at 66.04 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -12160,7 +12192,7 @@
 				)
 			)
 		)
-		(property "Manufacturer P/N" "5002"
+		(property "Manufacturer P/N" ""
 			(at 66.04 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -12171,7 +12203,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "36-5002-ND"
+		(property "Vendor P/N" ""
 			(at 66.04 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -12598,7 +12630,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
 			(at 71.12 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -12609,7 +12641,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.keyelco.com/userAssets/file/K75p62.pdf"
+		(property "Datasheet" ""
 			(at 71.12 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -12631,7 +12663,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" ""
 			(at 66.04 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -12642,7 +12674,7 @@
 				)
 			)
 		)
-		(property "Manufacturer P/N" "5002"
+		(property "Manufacturer P/N" ""
 			(at 66.04 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -12653,7 +12685,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "36-5002-ND"
+		(property "Vendor P/N" ""
 			(at 66.04 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -14353,7 +14385,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
 			(at 62.23 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -14364,7 +14396,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.keyelco.com/userAssets/file/K75p62.pdf"
+		(property "Datasheet" ""
 			(at 62.23 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -14386,7 +14418,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" ""
 			(at 57.15 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -14397,7 +14429,7 @@
 				)
 			)
 		)
-		(property "Manufacturer P/N" "5002"
+		(property "Manufacturer P/N" ""
 			(at 57.15 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -14408,7 +14440,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "36-5002-ND"
+		(property "Vendor P/N" ""
 			(at 57.15 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -14465,7 +14497,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
 			(at 62.23 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -14476,7 +14508,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.keyelco.com/userAssets/file/K75p62.pdf"
+		(property "Datasheet" ""
 			(at 62.23 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -14498,7 +14530,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" ""
 			(at 57.15 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -14509,7 +14541,7 @@
 				)
 			)
 		)
-		(property "Manufacturer P/N" "5002"
+		(property "Manufacturer P/N" ""
 			(at 57.15 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -14520,7 +14552,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "36-5002-ND"
+		(property "Vendor P/N" ""
 			(at 57.15 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -14577,7 +14609,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
 			(at 62.23 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -14588,7 +14620,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.keyelco.com/userAssets/file/K75p62.pdf"
+		(property "Datasheet" ""
 			(at 62.23 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -14610,7 +14642,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" ""
 			(at 57.15 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -14621,7 +14653,7 @@
 				)
 			)
 		)
-		(property "Manufacturer P/N" "5002"
+		(property "Manufacturer P/N" ""
 			(at 57.15 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -14632,7 +14664,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "36-5002-ND"
+		(property "Vendor P/N" ""
 			(at 57.15 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -15641,7 +15673,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 109.22 118.11 0)
+		(at 115.57 118.11 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15652,7 +15684,7 @@
 		(fields_autoplaced yes)
 		(uuid "c1b567c8-0c8a-431c-a181-2236e8bba746")
 		(property "Reference" "#PWR027"
-			(at 109.22 124.46 0)
+			(at 115.57 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15663,7 +15695,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 109.22 123.19 0)
+			(at 115.57 123.19 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15673,7 +15705,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 109.22 118.11 0)
+			(at 115.57 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15684,7 +15716,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 109.22 118.11 0)
+			(at 115.57 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15695,7 +15727,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 109.22 118.11 0)
+			(at 115.57 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16282,7 +16314,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Shunt")
-		(at 109.22 110.49 0)
+		(at 115.57 110.49 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16292,7 +16324,7 @@
 		(dnp no)
 		(uuid "ce90958c-3d2e-470e-bf8a-ad2470faf447")
 		(property "Reference" "R50"
-			(at 106.68 109.2199 0)
+			(at 113.03 109.2199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16303,7 +16335,7 @@
 			)
 		)
 		(property "Value" "15m ±1% 3W"
-			(at 106.68 111.7599 0)
+			(at 113.03 111.7599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16314,7 +16346,7 @@
 			)
 		)
 		(property "Footprint" "RJ-Passives:R_Shunt_Analog_2512_6332_HighAccuracy"
-			(at 107.442 110.49 90)
+			(at 113.792 110.49 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16325,7 +16357,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.bourns.com/docs/product-datasheets/cra.pdf"
-			(at 109.22 110.49 0)
+			(at 115.57 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16336,7 +16368,7 @@
 			)
 		)
 		(property "Description" "Shunt resistor with Kelvin connections"
-			(at 109.22 110.49 0)
+			(at 115.57 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16347,7 +16379,7 @@
 			)
 		)
 		(property "Manufacturer P/N" "CRA2512-FZ-R015ELF"
-			(at 106.68 114.3 0)
+			(at 113.03 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16358,7 +16390,7 @@
 			)
 		)
 		(property "Vendor" "DigiKey"
-			(at 109.22 110.49 0)
+			(at 115.57 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16369,7 +16401,7 @@
 			)
 		)
 		(property "Vendor P/N" "CRA2512-FZ-R015ELFCT-ND"
-			(at 109.22 110.49 0)
+			(at 115.57 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17734,7 +17766,7 @@
 		)
 	)
 	(sheet
-		(at 123.19 105.41)
+		(at 127 105.41)
 		(size 20.32 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17750,7 +17782,7 @@
 		)
 		(uuid "a5292b11-b9f3-47b5-82b7-15b9f4351b45")
 		(property "Sheetname" "Current Sensing"
-			(at 123.19 104.6984 0)
+			(at 127 104.6984 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17761,7 +17793,7 @@
 			)
 		)
 		(property "Sheetfile" "current_sense.kicad_sch"
-			(at 123.19 131.3946 0)
+			(at 127 131.3946 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17772,7 +17804,7 @@
 			)
 		)
 		(pin "I_{SENSE}" output
-			(at 143.51 128.27 0)
+			(at 147.32 128.27 0)
 			(uuid "baa69238-1cb4-44b6-a9c7-ef0a4e5a15a0")
 			(effects
 				(font
@@ -17782,7 +17814,7 @@
 			)
 		)
 		(pin "OPxN" output
-			(at 143.51 118.11 0)
+			(at 147.32 118.11 0)
 			(uuid "3f6c4213-3e46-4c62-a7f8-a0365e2aaa15")
 			(effects
 				(font
@@ -17792,7 +17824,7 @@
 			)
 		)
 		(pin "OPxO" input
-			(at 143.51 123.19 0)
+			(at 147.32 123.19 0)
 			(uuid "a9e65de3-5513-4ded-a194-c5dc034aeea2")
 			(effects
 				(font
@@ -17802,7 +17834,7 @@
 			)
 		)
 		(pin "OPxP" output
-			(at 143.51 110.49 0)
+			(at 147.32 110.49 0)
 			(uuid "0b446159-8151-414f-90e6-4e651b20f627")
 			(effects
 				(font
@@ -17812,7 +17844,7 @@
 			)
 		)
 		(pin "SHUNTN" input
-			(at 123.19 113.03 180)
+			(at 127 113.03 180)
 			(uuid "fffd9172-3aad-4250-9af3-ea7ee11facb5")
 			(effects
 				(font
@@ -17822,7 +17854,7 @@
 			)
 		)
 		(pin "SHUNTP" input
-			(at 123.19 107.95 180)
+			(at 127 107.95 180)
 			(uuid "f78fd69b-988d-4b2b-bed1-23f37f57509c")
 			(effects
 				(font

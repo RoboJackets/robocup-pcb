@@ -1783,7 +1783,7 @@
 	)
 	(rectangle
 		(start 15.875 78.74)
-		(end 95.25 120.65)
+		(end 95.25 139.7)
 		(stroke
 			(width 0)
 			(type default)
@@ -1803,6 +1803,17 @@
 			(justify left bottom)
 		)
 		(uuid "200bba2b-f6fd-4b87-8929-820dfe0a922c")
+	)
+	(text "TODO: Unused SPI requires a certain resistor configuration"
+		(exclude_from_sim no)
+		(at 50.8 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 0 1)
+			)
+		)
+		(uuid "b25c9b7c-d2c7-4bdf-933e-c554e6172f33")
 	)
 	(text "AS5047P magnetic encoder"
 		(exclude_from_sim no)
@@ -1836,13 +1847,13 @@
 		(uuid "970e66c0-b426-42a5-aae5-b387aa30688b")
 	)
 	(junction
-		(at 49.53 92.71)
+		(at 49.53 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0999414c-48a5-40f8-a252-241c93bb5408")
 	)
 	(junction
-		(at 52.07 95.25)
+		(at 52.07 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "19df2994-9e7f-4043-95e5-1d9ef25d16c2")
@@ -1866,13 +1877,13 @@
 		(uuid "68ef4c75-39da-4ea5-8839-533702a66d25")
 	)
 	(junction
-		(at 46.99 90.17)
+		(at 46.99 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ade25edd-3599-439e-a62c-e0068368c6f9")
 	)
 	(junction
-		(at 54.61 97.79)
+		(at 54.61 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e7a66a0f-2621-4fdd-95f9-8794007d0404")
@@ -1913,7 +1924,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 111.76) (xy 50.8 113.03)
+			(xy 50.8 130.81) (xy 50.8 132.08)
 		)
 		(stroke
 			(width 0)
@@ -1923,7 +1934,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 97.79) (xy 76.2 97.79)
+			(xy 54.61 116.84) (xy 76.2 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1973,7 +1984,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 87.63) (xy 30.48 87.63)
+			(xy 31.75 106.68) (xy 30.48 106.68)
 		)
 		(stroke
 			(width 0)
@@ -1983,7 +1994,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 100.33) (xy 30.48 100.33)
+			(xy 31.75 119.38) (xy 30.48 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2003,7 +2014,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 95.25) (xy 52.07 100.33)
+			(xy 52.07 114.3) (xy 52.07 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2023,7 +2034,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 90.17) (xy 46.99 100.33)
+			(xy 46.99 109.22) (xy 46.99 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2063,7 +2074,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 86.36) (xy 31.75 87.63)
+			(xy 31.75 105.41) (xy 31.75 106.68)
 		)
 		(stroke
 			(width 0)
@@ -2073,7 +2084,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 102.87) (xy 31.75 100.33)
+			(xy 31.75 121.92) (xy 31.75 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2083,7 +2094,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 95.25) (xy 52.07 95.25)
+			(xy 30.48 114.3) (xy 52.07 114.3)
 		)
 		(stroke
 			(width 0)
@@ -2103,7 +2114,7 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 86.36) (xy 31.75 86.36)
+			(xy 33.02 105.41) (xy 31.75 105.41)
 		)
 		(stroke
 			(width 0)
@@ -2133,7 +2144,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 97.79) (xy 54.61 100.33)
+			(xy 54.61 116.84) (xy 54.61 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2163,7 +2174,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 97.79) (xy 54.61 97.79)
+			(xy 30.48 116.84) (xy 54.61 116.84)
 		)
 		(stroke
 			(width 0)
@@ -2173,7 +2184,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 92.71) (xy 49.53 92.71)
+			(xy 30.48 111.76) (xy 49.53 111.76)
 		)
 		(stroke
 			(width 0)
@@ -2193,7 +2204,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 95.25) (xy 76.2 95.25)
+			(xy 52.07 114.3) (xy 76.2 114.3)
 		)
 		(stroke
 			(width 0)
@@ -2223,7 +2234,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 90.17) (xy 76.2 90.17)
+			(xy 46.99 109.22) (xy 76.2 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2233,7 +2244,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 92.71) (xy 76.2 92.71)
+			(xy 49.53 111.76) (xy 76.2 111.76)
 		)
 		(stroke
 			(width 0)
@@ -2253,7 +2264,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 92.71) (xy 49.53 100.33)
+			(xy 49.53 111.76) (xy 49.53 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2263,7 +2274,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 90.17) (xy 46.99 90.17)
+			(xy 30.48 109.22) (xy 46.99 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2352,7 +2363,7 @@
 		(uuid "6c3a1a2b-6007-4198-96db-cb0ad47b5d53")
 	)
 	(label "PROGSPI.MOSI"
-		(at 76.2 90.17 0)
+		(at 76.2 109.22 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2362,7 +2373,7 @@
 		(uuid "8c1cc609-fd8a-4bec-9682-f44319346a62")
 	)
 	(label "PROGSPI.CLK"
-		(at 76.2 95.25 0)
+		(at 76.2 114.3 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2382,7 +2393,7 @@
 		(uuid "bb502b89-442f-4abc-8074-256a61d170d4")
 	)
 	(label "PROGSPI.MISO"
-		(at 76.2 92.71 0)
+		(at 76.2 111.76 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2412,7 +2423,7 @@
 		(uuid "f5548ca6-0749-47a3-88dc-0b0e0aa3e714")
 	)
 	(label "PROGSPI.CSN"
-		(at 76.2 97.79 0)
+		(at 76.2 116.84 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2434,7 +2445,7 @@
 	)
 	(hierarchical_label "3.3V DEBUG"
 		(shape output)
-		(at 33.02 86.36 0)
+		(at 33.02 105.41 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2828,7 +2839,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x06")
-		(at 25.4 95.25 180)
+		(at 25.4 114.3 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2839,7 +2850,7 @@
 		(fields_autoplaced yes)
 		(uuid "95487853-d2fc-4145-9dd1-60d8b6df08de")
 		(property "Reference" "J4"
-			(at 25.4 81.28 0)
+			(at 25.4 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2849,7 +2860,7 @@
 			)
 		)
 		(property "Value" "PROG SPI"
-			(at 25.4 83.82 0)
+			(at 25.4 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2859,7 +2870,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_GH_SM06B-GHS-TB_1x06-1MP_P1.25mm_Horizontal"
-			(at 25.4 95.25 0)
+			(at 25.4 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2870,7 +2881,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf"
-			(at 25.4 95.25 0)
+			(at 25.4 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2881,7 +2892,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 25.4 95.25 0)
+			(at 25.4 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2892,7 +2903,7 @@
 			)
 		)
 		(property "Manufacturer P/N" "SM06B-SRSS-TB"
-			(at 25.4 95.25 0)
+			(at 25.4 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2903,7 +2914,7 @@
 			)
 		)
 		(property "Vendor" "Digikey"
-			(at 25.4 95.25 0)
+			(at 25.4 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2914,7 +2925,7 @@
 			)
 		)
 		(property "Vendor P/N" "455-SM06B-SRSS-TBCT-ND"
-			(at 25.4 95.25 0)
+			(at 25.4 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3031,7 +3042,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 50.8 113.03 0)
+		(at 50.8 132.08 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3042,7 +3053,7 @@
 		(fields_autoplaced yes)
 		(uuid "d561c563-4403-441f-b54b-4e8c2cc55c32")
 		(property "Reference" "#PWR073"
-			(at 50.8 119.38 0)
+			(at 50.8 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3053,7 +3064,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 50.8 118.11 0)
+			(at 50.8 137.16 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3063,7 +3074,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 50.8 113.03 0)
+			(at 50.8 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3074,7 +3085,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 113.03 0)
+			(at 50.8 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3085,7 +3096,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 50.8 113.03 0)
+			(at 50.8 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3258,7 +3269,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 31.75 102.87 0)
+		(at 31.75 121.92 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3269,7 +3280,7 @@
 		(fields_autoplaced yes)
 		(uuid "e2ef1c02-766b-4233-b3ef-34d5e6082a53")
 		(property "Reference" "#PWR062"
-			(at 31.75 109.22 0)
+			(at 31.75 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3280,7 +3291,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 31.75 107.95 0)
+			(at 31.75 127 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3290,7 +3301,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 31.75 102.87 0)
+			(at 31.75 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3301,7 +3312,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 31.75 102.87 0)
+			(at 31.75 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3312,7 +3323,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 31.75 102.87 0)
+			(at 31.75 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3448,7 +3459,7 @@
 	)
 	(symbol
 		(lib_id "RJ-Diodes:PUSB3FR4")
-		(at 50.8 104.14 0)
+		(at 50.8 123.19 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3459,7 +3470,7 @@
 		(fields_autoplaced yes)
 		(uuid "fa829a37-7910-4a6d-9f16-92ea2d94fde2")
 		(property "Reference" "D14"
-			(at 56.515 104.1399 0)
+			(at 56.515 123.1899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3470,7 +3481,7 @@
 			)
 		)
 		(property "Value" "PUSB3FR4Z"
-			(at 56.515 106.6799 0)
+			(at 56.515 125.7299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3481,7 +3492,7 @@
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:Diodes_UDFN-10_1x2.5mm_P0.5mm"
-			(at 50.8 76.2 0)
+			(at 50.8 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3492,7 +3503,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PUSB3FR4.pdf"
-			(at 51.435 73.66 0)
+			(at 51.435 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3503,7 +3514,7 @@
 			)
 		)
 		(property "Description" "3V (Typ) Clamp 5A (8/20µs) Ipp Tvs Diode Surface Mount DFN2510A-10"
-			(at 50.8 78.74 0)
+			(at 50.8 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3514,7 +3525,7 @@
 			)
 		)
 		(property "Manufacturer P/N" "PUSB3FR4Z"
-			(at 50.8 83.82 0)
+			(at 50.8 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3525,7 +3536,7 @@
 			)
 		)
 		(property "Vendor" "DigiKey"
-			(at 50.8 86.36 0)
+			(at 50.8 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3536,7 +3547,7 @@
 			)
 		)
 		(property "Vendor P/N" "1727-2026-1-ND"
-			(at 50.8 81.28 0)
+			(at 50.8 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
