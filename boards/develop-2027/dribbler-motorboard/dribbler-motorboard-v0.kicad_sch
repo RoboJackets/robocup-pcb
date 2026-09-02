@@ -2,9 +2,55 @@
 	(version 20260306)
 	(generator "eeschema")
 	(generator_version "10.0")
-	(uuid 7d37c9fc-c142-4312-af40-b979167e951a)
+	(uuid "7d37c9fc-c142-4312-af40-b979167e951a")
 	(paper "A4")
 	(lib_symbols)
+	(sheet
+		(at 45.72 45.72)
+		(size 22.86 31.75)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "c0b216c9-2268-483f-9e32-275fa93793cc")
+		(property "Sheetname" "Motor Phase U"
+			(at 45.72 45.0084 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "motor_phase_u.kicad_sch"
+			(at 45.72 78.0546 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "dribbler-motorboard-v0"
+				(path "/7d37c9fc-c142-4312-af40-b979167e951a"
+					(page "2")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")
