@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20250114)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(uuid "b8d85ae0-a5da-4af9-b351-f0dbe95fa781")
 	(paper "A4")
 	(title_block
@@ -883,11 +883,13 @@
 			(type solid)
 		)
 		(fill
-			(color 255 255 194 1.0000)
+			(color 255 255 194 1)
 		)
 		(uuid "32b72c58-af4a-4aa9-b0e4-73ff39d8a9bb")
 		(property "Sheetname" "Motor Phase V"
 			(at 134.62 66.5984 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -897,6 +899,8 @@
 		)
 		(property "Sheetfile" "motor_phase.kicad_sch"
 			(at 134.62 93.2946 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -995,11 +999,13 @@
 			(type solid)
 		)
 		(fill
-			(color 255 255 194 1.0000)
+			(color 255 255 194 1)
 		)
 		(uuid "54ce0c5e-cb70-4a37-89fc-37f3d6c1f72c")
 		(property "Sheetname" "Motor Phase W"
 			(at 134.62 98.3484 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1009,6 +1015,8 @@
 		)
 		(property "Sheetfile" "motor_phase.kicad_sch"
 			(at 134.62 125.0446 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1107,11 +1115,13 @@
 			(type solid)
 		)
 		(fill
-			(color 255 255 194 1.0000)
+			(color 255 255 194 1)
 		)
 		(uuid "7324c9d3-46ba-4af3-8bff-6bf5a0cf9f47")
 		(property "Sheetname" "Power & Data Connectors"
 			(at 36.83 33.5784 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1121,6 +1131,8 @@
 		)
 		(property "Sheetfile" "connectors.kicad_sch"
 			(at 36.83 60.9096 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1209,11 +1221,13 @@
 			(type solid)
 		)
 		(fill
-			(color 255 255 194 1.0000)
+			(color 255 255 194 1)
 		)
 		(uuid "97e3dcf2-db5f-4e06-a94e-cb766bd55d66")
 		(property "Sheetname" "Motor Interface"
 			(at 191.77 34.2134 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1223,6 +1237,8 @@
 		)
 		(property "Sheetfile" "motorconn.kicad_sch"
 			(at 191.77 55.1946 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1331,11 +1347,13 @@
 			(type solid)
 		)
 		(fill
-			(color 255 255 194 1.0000)
+			(color 255 255 194 1)
 		)
 		(uuid "a988d78a-37f9-46b9-b053-50f8327a9f4f")
 		(property "Sheetname" "Overcurrent Protection"
 			(at 191.77 64.0584 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1345,6 +1363,8 @@
 		)
 		(property "Sheetfile" "ts_ocprot.kicad_sch"
 			(at 191.77 79.9596 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1413,11 +1433,13 @@
 			(type solid)
 		)
 		(fill
-			(color 255 255 194 1.0000)
+			(color 255 255 194 1)
 		)
 		(uuid "aa0d0988-06c4-4b98-b6bc-d332dc918d3d")
 		(property "Sheetname" "Motor Phase U"
 			(at 134.62 33.5784 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1427,6 +1449,8 @@
 		)
 		(property "Sheetfile" "motor_phase.kicad_sch"
 			(at 134.62 60.2746 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1525,11 +1549,13 @@
 			(type solid)
 		)
 		(fill
-			(color 255 255 194 1.0000)
+			(color 255 255 194 1)
 		)
 		(uuid "adc1b618-263f-49a4-a838-a56113ca6a39")
 		(property "Sheetname" "Microcontroller"
 			(at 73.66 33.5784 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1539,6 +1565,8 @@
 		)
 		(property "Sheetfile" "mcu.kicad_sch"
 			(at 73.66 149.1746 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
