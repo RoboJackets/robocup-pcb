@@ -6,8 +6,522 @@
 	(paper "A4")
 	(lib_symbols)
 	(sheet
-		(at 45.72 45.72)
-		(size 22.86 31.75)
+		(at 116.84 45.72)
+		(size 36.83 83.82)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "03937a4e-2216-4faa-9f2f-27ca1915360b")
+		(property "Sheetname" "Microcontroller"
+			(at 116.84 45.0084 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "microcontroller.kicad_sch"
+			(at 116.84 130.1246 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "ENC_A" input
+			(at 116.84 123.19 180)
+			(uuid "1fde3876-46aa-43a2-830c-dd5339000c34")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ENC_B" input
+			(at 116.84 125.73 180)
+			(uuid "7a6f0abc-10b5-4382-824c-eab0b0469473")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "H1" input
+			(at 116.84 101.6 180)
+			(uuid "86178ad2-d62e-4fa3-bbc6-8f01d09e4c26")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "H2" input
+			(at 116.84 104.14 180)
+			(uuid "adbb9a03-27fd-4e8b-a60e-e953546bea94")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "H3" input
+			(at 116.84 106.68 180)
+			(uuid "d53e1705-2351-4613-90f4-236757af0506")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "HS_U" output
+			(at 153.67 48.26 0)
+			(uuid "cf441eb0-176b-4601-bc4b-52e0c8c79124")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "HS_V" output
+			(at 153.67 77.47 0)
+			(uuid "74b999f5-340d-48ab-9b63-cf81f7036f20")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "HS_W" output
+			(at 153.67 107.95 0)
+			(uuid "9bf936de-ba90-414b-93db-e5cef9eba3ec")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ISENSE_U" input
+			(at 153.67 63.5 0)
+			(uuid "5b742bcc-f8bd-4192-82f3-92c295df1064")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ISENSE_V" input
+			(at 153.67 93.98 0)
+			(uuid "30f4f990-7d7d-4bb4-81ba-b4a71e307719")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ISENSE_W" input
+			(at 153.67 123.19 0)
+			(uuid "b5669973-804d-455b-839d-b21d5e5f1aa3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LS_U" output
+			(at 153.67 50.8 0)
+			(uuid "c8ec0c3a-1585-44de-a2bf-43387e82dadc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LS_V" output
+			(at 153.67 80.01 0)
+			(uuid "c691ea35-3433-464e-8842-cb3f14ffd7a8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LS_W" output
+			(at 153.67 110.49 0)
+			(uuid "09f7b1f8-fb19-4a17-9495-a2c4b89f1d53")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OCCOMP" input
+			(at 116.84 87.63 180)
+			(uuid "126b9a76-3608-48ba-9055-46b435ea52ca")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OP_U_N" input
+			(at 153.67 57.15 0)
+			(uuid "29cdc805-3d2c-4bf9-8e9d-14b24ef74901")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OP_U_O" bidirectional
+			(at 153.67 59.69 0)
+			(uuid "52f1d25f-398c-4d2f-b4f6-3ccab5b45cec")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OP_U_P" input
+			(at 153.67 54.61 0)
+			(uuid "10f7eb5b-7fdd-4e77-bce4-725b7540f8d1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OP_V_N" input
+			(at 153.67 87.63 0)
+			(uuid "929645e6-a02a-429e-b371-916e6cb468f5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OP_V_O" bidirectional
+			(at 153.67 90.17 0)
+			(uuid "3227d245-8e13-42a8-a586-64172eb2738c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OP_V_P" input
+			(at 153.67 85.09 0)
+			(uuid "2c9e8465-7b32-410e-afcb-4ed7fc9669d1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OP_W_N" input
+			(at 153.67 116.84 0)
+			(uuid "95f00a84-130f-434e-93aa-bc55ffc96f5c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OP_W_O" bidirectional
+			(at 153.67 119.38 0)
+			(uuid "16b7b1b2-7365-4b81-8ac1-50687c4f469f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OP_W_P" input
+			(at 153.67 114.3 0)
+			(uuid "14e3c884-b160-4b11-8b3a-610e5336a86c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PHASE_U" bidirectional
+			(at 153.67 67.31 0)
+			(uuid "31478bb0-fe83-42bf-867b-543bc67f3f2d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PHASE_V" bidirectional
+			(at 153.67 97.79 0)
+			(uuid "6618c7b8-0daa-47ee-9405-8e5179485c2d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PHASE_W" bidirectional
+			(at 153.67 127 0)
+			(uuid "7e471939-dc6b-4733-bf97-4ab697e5666d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SPI1_CE_USART2_RX" bidirectional
+			(at 116.84 67.31 180)
+			(uuid "db6e3e6c-2f4d-47a0-99f8-baf545742201")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SPI1_MISO" bidirectional
+			(at 116.84 69.85 180)
+			(uuid "61aaa0fd-0371-4f9f-b522-44538b926955")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SPI1_MOSI_USART2_TX" bidirectional
+			(at 116.84 72.39 180)
+			(uuid "bf1b3f6b-2b66-4c5e-a15a-07a8d0cfbe9e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SPI1_SCK" bidirectional
+			(at 116.84 74.93 180)
+			(uuid "ceda2b51-2be6-4a48-89c9-8c50e90693b3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SWD_CLK" bidirectional
+			(at 116.84 77.47 180)
+			(uuid "4efc21a6-317c-464e-9eb3-2af06db25edc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SWD_IO" bidirectional
+			(at 116.84 80.01 180)
+			(uuid "6dbb3891-88b6-4832-8466-c989cde44998")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "dribbler-motorboard-v0"
+				(path "/7d37c9fc-c142-4312-af40-b979167e951a"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 162.56 76.2)
+		(size 22.86 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "84c5db92-4afe-4995-a0e1-79b8a825e013")
+		(property "Sheetname" "Motor Phase V"
+			(at 162.56 75.4884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "motor_phase.kicad_sch"
+			(at 162.56 99.6446 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "dribbler-motorboard-v0"
+				(path "/7d37c9fc-c142-4312-af40-b979167e951a"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 212.09 43.18)
+		(size 30.48 33.02)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "bcec7d22-930f-460a-9958-2961b95a11c6")
+		(property "Sheetname" "Motor Interface"
+			(at 212.09 42.4684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "motor_interface.kicad_sch"
+			(at 212.09 76.7846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "dribbler-motorboard-v0"
+				(path "/7d37c9fc-c142-4312-af40-b979167e951a"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 215.9 86.36)
+		(size 12.7 21.59)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "be6c398c-2890-45a3-8e6e-77d65129b319")
+		(property "Sheetname" "Overcurrent Protection"
+			(at 215.9 85.6484 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "overcurrent_protection.kicad_sch"
+			(at 215.9 108.5346 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "dribbler-motorboard-v0"
+				(path "/7d37c9fc-c142-4312-af40-b979167e951a"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 162.56 45.72)
+		(size 22.86 22.86)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -22,7 +536,7 @@
 		)
 		(uuid "c0b216c9-2268-483f-9e32-275fa93793cc")
 		(property "Sheetname" "Motor Phase U"
-			(at 45.72 45.0084 0)
+			(at 162.56 45.0084 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -32,8 +546,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "motor_phase_u.kicad_sch"
-			(at 45.72 78.0546 0)
+		(property "Sheetfile" "motor_phase.kicad_sch"
+			(at 162.56 69.1646 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -47,6 +561,98 @@
 			(project "dribbler-motorboard-v0"
 				(path "/7d37c9fc-c142-4312-af40-b979167e951a"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 162.56 106.68)
+		(size 22.86 21.59)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "e085c01f-e259-45ce-851a-e0836fd5fe4f")
+		(property "Sheetname" "Motor Phase W"
+			(at 162.56 105.9684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "motor_phase.kicad_sch"
+			(at 162.56 128.8546 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "dribbler-motorboard-v0"
+				(path "/7d37c9fc-c142-4312-af40-b979167e951a"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 73.66 45.72)
+		(size 36.83 39.37)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "f5c6041e-de80-44a4-b8e2-3ca99d3a305f")
+		(property "Sheetname" "Power and Data Connectors"
+			(at 73.66 45.0084 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power_data_connectors.kicad_sch"
+			(at 73.66 85.6746 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "dribbler-motorboard-v0"
+				(path "/7d37c9fc-c142-4312-af40-b979167e951a"
+					(page "8")
 				)
 			)
 		)
