@@ -5,6 +5,18 @@
 	(uuid "7d37c9fc-c142-4312-af40-b979167e951a")
 	(paper "A4")
 	(lib_symbols)
+	(text "TODO: Op Amp Math\n"
+		(exclude_from_sim no)
+		(at 166.116 41.148 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify left bottom)
+		)
+		(uuid "4b909168-43f3-4318-bc33-37c45441a6bf")
+	)
 	(sheet
 		(at 116.84 45.72)
 		(size 36.83 83.82)
@@ -18,7 +30,7 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0)
+			(color 0 176 11 0.1176470588)
 		)
 		(uuid "03937a4e-2216-4faa-9f2f-27ca1915360b")
 		(property "Sheetname" "Microcontroller"
@@ -394,7 +406,7 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0)
+			(color 0 176 11 0.1176470588)
 		)
 		(uuid "84c5db92-4afe-4995-a0e1-79b8a825e013")
 		(property "Sheetname" "Motor Phase V"
@@ -419,6 +431,76 @@
 				(justify left top)
 			)
 		)
+		(pin "HS_{x}" input
+			(at 162.56 77.47 180)
+			(uuid "da5155cf-507a-445a-8ee0-129997ccd724")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LS_{x}" input
+			(at 162.56 80.01 180)
+			(uuid "fce59b5c-5a6b-4a2a-a1db-1f9d1087477b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OP_N" output
+			(at 162.56 87.63 180)
+			(uuid "a45887db-e265-4ee3-b462-a030a1b4c321")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OP_O" bidirectional
+			(at 162.56 90.17 180)
+			(uuid "0a2af214-9ea8-4ca7-bbb5-61d1488004c1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OP_P" output
+			(at 162.56 85.09 180)
+			(uuid "62cebfef-d21c-4f62-a283-723cd1c4ec7d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PHASE_{x}" input
+			(at 185.42 77.47 0)
+			(uuid "fc7587ac-72ed-4514-827a-402c469b096e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SHUNT_P" input
+			(at 185.42 80.01 0)
+			(uuid "eb43f172-24f4-4885-845a-7dcede304827")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "dribbler-motorboard-v0"
 				(path "/7d37c9fc-c142-4312-af40-b979167e951a"
@@ -428,8 +510,8 @@
 		)
 	)
 	(sheet
-		(at 212.09 43.18)
-		(size 30.48 33.02)
+		(at 194.31 46.99)
+		(size 22.86 52.07)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -440,11 +522,11 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0)
+			(color 0 176 11 0.1176470588)
 		)
 		(uuid "bcec7d22-930f-460a-9958-2961b95a11c6")
 		(property "Sheetname" "Motor Interface"
-			(at 212.09 42.4684 0)
+			(at 194.31 46.2784 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -455,7 +537,7 @@
 			)
 		)
 		(property "Sheetfile" "motor_interface.kicad_sch"
-			(at 212.09 76.7846 0)
+			(at 194.31 99.6446 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -474,23 +556,22 @@
 		)
 	)
 	(sheet
-		(at 215.9 86.36)
-		(size 12.7 21.59)
+		(at 73.66 77.47)
+		(size 22.86 21.59)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0)
+			(color 0 176 11 0.1176470588)
 		)
 		(uuid "be6c398c-2890-45a3-8e6e-77d65129b319")
 		(property "Sheetname" "Overcurrent Protection"
-			(at 215.9 85.6484 0)
+			(at 73.66 76.7584 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -501,7 +582,7 @@
 			)
 		)
 		(property "Sheetfile" "overcurrent_protection.kicad_sch"
-			(at 215.9 108.5346 0)
+			(at 73.66 99.6446 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -532,7 +613,7 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0)
+			(color 0 176 11 0.1176470588)
 		)
 		(uuid "c0b216c9-2268-483f-9e32-275fa93793cc")
 		(property "Sheetname" "Motor Phase U"
@@ -557,6 +638,76 @@
 				(justify left top)
 			)
 		)
+		(pin "HS_{x}" input
+			(at 162.56 48.26 180)
+			(uuid "82d22b7d-49c7-463d-8e24-8e0877d28d02")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LS_{x}" input
+			(at 162.56 50.8 180)
+			(uuid "ed835efd-39ac-4876-aff7-0d8d137f85c7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OP_N" output
+			(at 162.56 57.15 180)
+			(uuid "a25f2c9c-8441-4645-bb8b-6083826243f2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OP_O" bidirectional
+			(at 162.56 59.69 180)
+			(uuid "1be100fd-d486-40c1-8415-c86668606960")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OP_P" output
+			(at 162.56 54.61 180)
+			(uuid "fdf41708-54bc-4c17-ba4e-9eff8be6cd31")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PHASE_{x}" input
+			(at 185.42 48.26 0)
+			(uuid "22f71339-28e9-4aff-b5cf-9e63ea0cdeb3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SHUNT_P" input
+			(at 185.42 50.8 0)
+			(uuid "811c78d7-4d57-4f11-b365-da0ef2fe0064")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "dribbler-motorboard-v0"
 				(path "/7d37c9fc-c142-4312-af40-b979167e951a"
@@ -578,7 +729,7 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0)
+			(color 0 176 11 0.1176470588)
 		)
 		(uuid "e085c01f-e259-45ce-851a-e0836fd5fe4f")
 		(property "Sheetname" "Motor Phase W"
@@ -603,6 +754,76 @@
 				(justify left top)
 			)
 		)
+		(pin "HS_{x}" input
+			(at 162.56 107.95 180)
+			(uuid "38e056a5-fc69-4fed-b64b-65ebafa95815")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LS_{x}" input
+			(at 162.56 110.49 180)
+			(uuid "a95cea35-d145-4e69-aa85-2fa1b373151b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OP_N" output
+			(at 162.56 116.84 180)
+			(uuid "0699da40-947a-4050-9a43-af1365a836fe")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OP_O" bidirectional
+			(at 162.56 119.38 180)
+			(uuid "8b736a7f-d502-4868-b9a9-59179f841897")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OP_P" output
+			(at 162.56 114.3 180)
+			(uuid "a7f648e5-9821-429f-a648-e89a61e78ec9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PHASE_{x}" input
+			(at 185.42 107.95 0)
+			(uuid "3382754a-f260-443c-be3d-9d7284424b28")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SHUNT_P" input
+			(at 185.42 110.49 0)
+			(uuid "29b50b8b-3acf-44ee-ad92-c9859b0f7ed0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "dribbler-motorboard-v0"
 				(path "/7d37c9fc-c142-4312-af40-b979167e951a"
@@ -612,19 +833,73 @@
 		)
 	)
 	(sheet
-		(at 73.66 45.72)
-		(size 36.83 39.37)
+		(at 73.66 107.95)
+		(size 22.86 21.59)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0)
+			(color 0 176 11 0.1176470588)
+		)
+		(uuid "e706b651-4f5b-49b1-b752-4d773f33fac2")
+		(property "Sheetname" "Temperature Sensor"
+			(at 73.66 107.2384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "temperature_sensor.kicad_sch"
+			(at 73.66 130.1246 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "TEMP_SENSE" output
+			(at 96.52 118.11 0)
+			(uuid "bc45309e-e543-494c-a8ce-ca9487044c53")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "dribbler-motorboard-v0"
+				(path "/7d37c9fc-c142-4312-af40-b979167e951a"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 73.66 45.72)
+		(size 22.86 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 176 11 0.1176470588)
 		)
 		(uuid "f5c6041e-de80-44a4-b8e2-3ca99d3a305f")
 		(property "Sheetname" "Power and Data Connectors"
@@ -639,7 +914,7 @@
 			)
 		)
 		(property "Sheetfile" "power_data_connectors.kicad_sch"
-			(at 73.66 85.6746 0)
+			(at 73.66 69.1646 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
