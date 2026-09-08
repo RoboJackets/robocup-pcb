@@ -6,10 +6,10 @@
 	(paper "A4")
 	(title_block
 		(title "STSPIN32G0A2 Motor Controller")
-		(date "2026-09-02")
+		(date "2026-09-07")
 		(rev "v1.0")
 		(company "Robojackets - RoboCup")
-		(comment 1 "Aiden Lee [piman PCB]")
+		(comment 1 "Niko Cornell & Miles Schuler")
 	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
@@ -8789,7 +8789,7 @@
 		)
 		(uuid "fd582b84-ec50-42b6-9f22-a4488985650d")
 	)
-	(text_box "Single-Shunt Overcurrent Protection. Design derived from EVLSPIN32G0A2 Evaluation Board.\nR_{LP} chosen for part commonality.\nIdeal Characteristics:\nOver-Current Threshold: 10.05 A\nLow Pass Filter Cutoff (-3 dB gain): 145.67 kHz"
+	(text_box "Single-Shunt Overcurrent Protection. Design derived from EVLSPIN32G0A2 Evaluation Board.\nR_{LP} chosen for part commonality.\nIdeal Characteristics:\nOver-Current Threshold: 11.05A (min 11.06, max 11.08)\nLow Pass Filter Cutoff (-0.25 dB gain): 146.14 kHz"
 		(exclude_from_sim no)
 		(at 184.15 146.05 0)
 		(size 95.25 12.7)
@@ -9002,15 +9002,6 @@
 		(uuid "2e758a8e-2ae1-4313-9cff-a4cd8edeb039")
 	)
 	(bus_entry
-		(at 171.45 45.72)
-		(size -2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "35b4d4df-89f0-49f1-830c-62eb2cdfbfa6")
-	)
-	(bus_entry
 		(at 171.45 53.34)
 		(size -2.54 2.54)
 		(stroke
@@ -9091,15 +9082,6 @@
 		)
 		(uuid "c00a222c-2f51-4408-9267-4f3292bd095e")
 	)
-	(bus_entry
-		(at 171.45 48.26)
-		(size -2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fcbe6133-b8c0-4656-bc1f-aaf932ee67e6")
-	)
 	(wire
 		(pts
 			(xy 171.45 66.04) (xy 187.96 66.04)
@@ -9129,16 +9111,6 @@
 			(type default)
 		)
 		(uuid "00dccedf-5814-4541-bbe5-08a7fe7eaff6")
-	)
-	(bus
-		(pts
-			(xy 168.91 48.26) (xy 168.91 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "011c431d-9ba0-4920-b597-3b0c5c7d5584")
 	)
 	(wire
 		(pts
@@ -9630,16 +9602,6 @@
 		)
 		(uuid "4f3e629c-ad2d-4d4f-ab6f-064d43fd29e8")
 	)
-	(bus
-		(pts
-			(xy 158.75 50.8) (xy 168.91 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f5c8507-ce9f-47cf-8e40-95dffa5f884d")
-	)
 	(wire
 		(pts
 			(xy 50.8 132.08) (xy 44.45 132.08)
@@ -9719,16 +9681,6 @@
 			(type default)
 		)
 		(uuid "59433b8f-01a4-4943-b8b5-d84e99b7281c")
-	)
-	(wire
-		(pts
-			(xy 171.45 45.72) (xy 187.96 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5b2727d2-9b05-4f18-8138-6ea97975ab6e")
 	)
 	(wire
 		(pts
@@ -10502,16 +10454,6 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 48.26) (xy 187.96 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dbe6b62f-0d5e-4552-9ee3-cdff3e5b5c0b")
-	)
-	(wire
-		(pts
 			(xy 149.86 40.64) (xy 152.4 40.64)
 		)
 		(stroke
@@ -10790,16 +10732,6 @@
 		)
 		(uuid "793aba63-c771-4a59-889c-f97b320cb72e")
 	)
-	(label "ENC.A"
-		(at 172.72 45.72 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "83ec47a0-c945-4d6d-83f2-2c7f8a5e0735")
-	)
 	(label "I2C.SDA"
 		(at 238.76 68.58 0)
 		(effects
@@ -10839,16 +10771,6 @@
 			(justify left bottom)
 		)
 		(uuid "c146bb73-2e80-4de7-bb44-9d79a3e8dff6")
-	)
-	(label "ENC.B"
-		(at 172.72 48.26 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c72b8999-2f5d-40f2-bb1a-6a1e7923c02b")
 	)
 	(label "HALL.B"
 		(at 238.76 48.26 0)
@@ -10891,17 +10813,6 @@
 			(justify left)
 		)
 		(uuid "3fcf4b3d-58cd-421d-b243-85cd90cb7278")
-	)
-	(hierarchical_label "ENC{A B}"
-		(shape input)
-		(at 158.75 50.8 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "7050a96c-173e-4041-97c2-df46204513e0")
 	)
 	(hierarchical_label "SWD{CLK IO}"
 		(shape bidirectional)
@@ -12830,7 +12741,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "33k ±0.1%"
+		(property "Value" "1.13k ±0.1%"
 			(at 224.79 115.5699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13830,7 +13741,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1n"
+		(property "Value" "33nF"
 			(at 226.06 128.2699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16215,7 +16126,7 @@
 				)
 			)
 		)
-		(property "Value" "1.13k ±0.1%"
+		(property "Value" "33 ±0.1%"
 			(at 209.55 116.84 90)
 			(show_name no)
 			(do_not_autoplace no)

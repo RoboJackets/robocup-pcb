@@ -5,10 +5,10 @@
 	(uuid "11e44779-e416-4d79-a6c7-af5f65fd64ec")
 	(paper "A4")
 	(title_block
-		(date "2026-09-02")
+		(date "2026-09-07")
 		(rev "v1.0")
 		(company "Robojackets - RoboCup")
-		(comment 1 "Aiden Lee [piman PCB]")
+		(comment 1 "Niko Cornell & Miles Schuler")
 	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
@@ -1146,6 +1146,17 @@
 			(justify right)
 		)
 		(uuid "29ad6687-b810-4149-a4c7-5a6544a003d1")
+	)
+	(text ""
+		(exclude_from_sim no)
+		(at 275.59 96.774 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3786c063-2bc6-4134-a3db-c6854737afdf")
 	)
 	(text_box "Intended to monitior MOSFET temperatures.\nPlace close to MOSFETs.\n\nBy default, OVERTEMP is on when T_{A}>80°C."
 		(exclude_from_sim no)
