@@ -2151,7 +2151,7 @@
 		)
 		(uuid "0025e1ed-d329-4fd7-8902-ba0fddf6a64a")
 	)
-	(text "V_{R} 22.0V\nV_{BR} 24.4V"
+	(text "V_{R} ~16V\nV_{BR} ~18V"
 		(exclude_from_sim no)
 		(at 45.085 41.275 0)
 		(effects
@@ -2172,6 +2172,17 @@
 			(justify right top)
 		)
 		(uuid "ba0a106d-6eb4-4276-878a-8961379994f0")
+	)
+	(text "slow firing"
+		(exclude_from_sim no)
+		(at 41.91 24.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c00c78a8-528a-40e2-9352-fd63296e8219")
 	)
 	(text "3.3V Inputs"
 		(exclude_from_sim no)
@@ -3491,7 +3502,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SMAJ22A"
+		(property "Value" ""
 			(at 49.53 41.9099 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3502,7 +3513,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SMA"
+		(property "Footprint" ""
 			(at 41.91 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -3513,7 +3524,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=75e32973-b177-4ee3-a0ff-cedaf1abdb93&filename=smaj-datasheet"
+		(property "Datasheet" ""
 			(at 46.99 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -3524,7 +3535,7 @@
 				)
 			)
 		)
-		(property "Description" "400W unidirectional Transient Voltage Suppressor, 22.0Vr, SMA(DO-214AC)"
+		(property "Description" ""
 			(at 46.99 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -3535,7 +3546,7 @@
 				)
 			)
 		)
-		(property "Manufacturer P/N" "SMAJ22A"
+		(property "Manufacturer P/N" ""
 			(at 46.99 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -3546,7 +3557,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" ""
 			(at 46.99 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -3557,7 +3568,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "SMAJ22ALFCT-ND"
+		(property "Vendor P/N" ""
 			(at 46.99 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -3857,7 +3868,7 @@
 				)
 			)
 		)
-		(property "Value" "10A 60V"
+		(property "Value" "15A"
 			(at 38.1 28.575 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3867,7 +3878,7 @@
 				)
 			)
 		)
-		(property "Footprint" "RJ-Passives:Fuse_2410_6125Metric"
+		(property "Footprint" ""
 			(at 38.1 33.528 90)
 			(hide yes)
 			(show_name no)
@@ -3878,7 +3889,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://belfuse.com/media/datasheets/products/circuit-protection/ds-cp-0679h-series.pdf"
+		(property "Datasheet" ""
 			(at 38.1 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -3900,7 +3911,7 @@
 				)
 			)
 		)
-		(property "Manufacturer P/N" "0679H9100-05"
+		(property "Manufacturer P/N" ""
 			(at 38.1 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -3911,7 +3922,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" ""
 			(at 38.1 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -3922,7 +3933,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "5923-0679H9100-05CT-ND"
+		(property "Vendor P/N" ""
 			(at 38.1 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -6308,7 +6319,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "VBATT PWR"
+		(property "Value" "+12V PWR"
 			(at 62.23 53.6574 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6319,7 +6330,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" ""
 			(at 66.04 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -6330,7 +6341,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://optoelectronics.liteon.com/upload/download/DS22-2000-074/LTST-C190KGKT.PDF"
+		(property "Datasheet" ""
 			(at 66.04 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -6341,7 +6352,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" ""
 			(at 66.04 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -6352,7 +6363,7 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=K 2=A"
+		(property "Sim.Pins" ""
 			(at 66.04 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -6363,7 +6374,7 @@
 				)
 			)
 		)
-		(property "Manufacturer P/N" "LTST-C190KGKT"
+		(property "Manufacturer P/N" ""
 			(at 66.04 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -6374,7 +6385,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" ""
 			(at 66.04 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -6385,7 +6396,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "160-1435-1-ND"
+		(property "Vendor P/N" ""
 			(at 66.04 50.8 0)
 			(hide yes)
 			(show_name no)
