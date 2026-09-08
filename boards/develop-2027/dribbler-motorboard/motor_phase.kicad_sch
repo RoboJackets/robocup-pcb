@@ -1695,7 +1695,7 @@
 		)
 		(uuid "0fc6f47a-3a27-4fd2-8966-2999c8e6637a")
 	)
-	(text "Differential Amplifier Specifications:\n\nGain = 27.36 V/V\nCurrent sensing gain = 136.8 mV/A @ R_{shunt} = 5 mOhm\nCurrent sensing range = ±12.06 A (rail to rail)\nOutput offset = 1.65 V\nLow pass cut-off frequency: 1.59 MHz\n\nUsing 12-bit ADC:\nCurrent sensing resolution: 11.84 mA/LSB"
+	(text "Differential Amplifier Specifications:\n\nGain = 12 V/V\nCurrent sensing gain = 60 mV/A @ R_{shunt} = 5 mOhm\nCurrent sensing range = ±27.5.06 A (rail to rail)\nOutput offset = 1.65 V\nLow pass cut-off frequency: 1.59 MHz\n\nUsing 12-bit ADC:\nCurrent sensing resolution: 11.84 mA/LSB"
 		(exclude_from_sim no)
 		(at 165.608 122.936 0)
 		(effects
@@ -2790,7 +2790,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "24k"
 			(at 195.58 90.1699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2879,7 +2879,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "12k"
 			(at 222.25 57.15 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2967,7 +2967,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "1k"
 			(at 181.61 78.74 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3463,7 +3463,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "1k"
 			(at 199.39 57.15 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4685,7 +4685,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "24k"
 			(at 195.58 77.4699 0)
 			(show_name no)
 			(do_not_autoplace no)
