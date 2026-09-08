@@ -10534,6 +10534,16 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 45.72) (xy 187.96 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7adc709-5d61-4163-a118-d5651da01a82")
+	)
+	(wire
+		(pts
 			(xy 60.96 31.75) (xy 66.04 31.75)
 		)
 		(stroke
@@ -10824,6 +10834,17 @@
 			(justify right)
 		)
 		(uuid "76f66d36-e268-4440-9a10-62be0a6494d2")
+	)
+	(hierarchical_label "TEMP_SENSE"
+		(shape input)
+		(at 180.34 45.72 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "afe87bb7-0817-44ae-b140-f84fbaf17daa")
 	)
 	(hierarchical_label "I2C{SDA SCL}"
 		(shape bidirectional)
