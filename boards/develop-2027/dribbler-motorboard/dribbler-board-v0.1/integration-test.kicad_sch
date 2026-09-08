@@ -5,11 +5,12 @@
 	(uuid "2f9570f4-e846-4a86-b134-ae7438cb1d91")
 	(paper "A4")
 	(title_block
-		(title "Drive Motor Board Test")
-		(date "2026-09-02")
+		(title "Dribbler Motor Board Test")
+		(date "2026-09-07")
 		(rev "v1.0")
 		(company "Robojackets - RoboCup")
-		(comment 1 "Aiden Lee [piman PCB]")
+		(comment 1 "Special and Many Thanks: Aiden Lee [piman PCB]")
+		(comment 2 "Niko Cornell & Miles Schuler")
 	)
 	(lib_symbols
 		(symbol "Mechanical:MountingHole_Pad"
@@ -256,7 +257,7 @@
 		(end 241.3 139.7)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(fill
 			(type none)
@@ -286,16 +287,6 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 73.66) (xy 101.6 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "154d967f-fbd7-4112-88f1-2833707d891c")
-	)
-	(wire
-		(pts
 			(xy 203.2 78.74) (xy 215.9 78.74)
 		)
 		(stroke
@@ -306,6 +297,36 @@
 	)
 	(wire
 		(pts
+			(xy 149.86 92.71) (xy 152.4 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52bd7a5f-858e-4e65-b1b7-506c13a9fd6b")
+	)
+	(wire
+		(pts
+			(xy 149.86 116.84) (xy 149.86 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a5a0b9d-14ae-4332-bcbc-88a3dbd5796a")
+	)
+	(wire
+		(pts
+			(xy 88.9 86.36) (xy 101.6 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e65a446-e9e3-438d-8b87-0a13a8bdfee6")
+	)
+	(wire
+		(pts
 			(xy 218.44 110.49) (xy 218.44 114.3)
 		)
 		(stroke
@@ -313,6 +334,16 @@
 			(type default)
 		)
 		(uuid "816cfac8-f2e4-4cca-accc-3bb009f0c8c4")
+	)
+	(wire
+		(pts
+			(xy 139.7 116.84) (xy 149.86 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8dcbb644-c783-49c0-96f3-09410379f482")
 	)
 	(bus
 		(pts
@@ -1055,7 +1086,7 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0)
+			(color 0 176 11 0.1176470588)
 		)
 		(uuid "0228c7f4-9370-4f69-b541-0382c88a8752")
 		(property "Sheetname" "Motor Connections"
@@ -1141,7 +1172,7 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0)
+			(color 0 176 11 0.1176470588)
 		)
 		(uuid "2176b25b-920c-4211-945a-20df519a7ce9")
 		(property "Sheetname" "Motor Controller"
@@ -1236,6 +1267,16 @@
 				(justify left)
 			)
 		)
+		(pin "TEMP_SENSE" input
+			(at 152.4 92.71 180)
+			(uuid "587bce07-db99-42d9-bff8-ceeac1870067")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91"
@@ -1245,7 +1286,7 @@
 		)
 	)
 	(sheet
-		(at 57.15 63.5)
+		(at 57.15 76.2)
 		(size 31.75 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1257,11 +1298,11 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0)
+			(color 0 176 11 0.1176470588)
 		)
 		(uuid "65153d9e-5a1b-421c-8fe4-5f071af15722")
 		(property "Sheetname" "Power"
-			(at 57.15 62.7884 0)
+			(at 57.15 75.4884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1272,7 +1313,7 @@
 			)
 		)
 		(property "Sheetfile" "power.kicad_sch"
-			(at 57.15 76.7846 0)
+			(at 57.15 89.4846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1283,7 +1324,7 @@
 			)
 		)
 		(pin "3.3V DEBUG" input
-			(at 88.9 73.66 0)
+			(at 88.9 86.36 0)
 			(uuid "1dd9d8fc-b101-4f89-b727-0b5376ee46fb")
 			(effects
 				(font
@@ -1301,8 +1342,8 @@
 		)
 	)
 	(sheet
-		(at 101.6 70.485)
-		(size 38.1 18.415)
+		(at 101.6 76.2)
+		(size 38.1 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1313,11 +1354,11 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0)
+			(color 0 176 11 0.1176470588)
 		)
 		(uuid "70ef40bf-13ae-49a6-b679-701b94f13188")
 		(property "Sheetname" "External Connections"
-			(at 101.6 69.7734 0)
+			(at 101.6 75.4884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1339,7 +1380,7 @@
 			)
 		)
 		(pin "3.3V DEBUG" output
-			(at 101.6 73.66 180)
+			(at 101.6 86.36 180)
 			(uuid "388ea842-6de9-489b-94a0-970851ad6c08")
 			(effects
 				(font
@@ -1377,8 +1418,8 @@
 		)
 	)
 	(sheet
-		(at 101.6 113.03)
-		(size 38.1 12.7)
+		(at 101.6 114.3)
+		(size 38.1 11.43)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1389,11 +1430,11 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0)
+			(color 0 176 11 0.1176470588)
 		)
 		(uuid "cc6a8bde-954b-4921-aec8-fe00d52ae8d8")
 		(property "Sheetname" "Motor Temperature Sensor"
-			(at 101.6 112.3184 0)
+			(at 101.6 113.5884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1415,7 +1456,7 @@
 			)
 		)
 		(pin "TEMP_SENSE" output
-			(at 139.7 115.57 0)
+			(at 139.7 116.84 0)
 			(uuid "d616dbb2-8f6c-48ef-962b-3a04e6a83a48")
 			(effects
 				(font
@@ -1445,7 +1486,7 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0)
+			(color 0 176 11 0.1176470588)
 		)
 		(uuid "d4780e5d-8897-4fbd-a4f0-0cae90768857")
 		(property "Sheetname" "MOSFET Temperature Sensor"
