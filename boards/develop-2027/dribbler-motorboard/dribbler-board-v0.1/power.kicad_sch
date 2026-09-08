@@ -5,10 +5,10 @@
 	(uuid "f7ad6451-ef3e-440a-9656-5d4350b0f1e3")
 	(paper "A4")
 	(title_block
-		(date "2026-09-02")
+		(date "2026-09-07")
 		(rev "v1.0")
 		(company "Robojackets - RoboCup")
-		(comment 1 "Aiden Lee [piman PCB]")
+		(comment 1 "Niko Cornell & Miles Schuler")
 	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
@@ -2206,7 +2206,7 @@
 		)
 		(uuid "ca776446-567f-4854-960a-c58ef1b6aae3")
 	)
-	(text "VBATT Power Input"
+	(text "+12V Power Input"
 		(exclude_from_sim no)
 		(at 15.875 15.24 0)
 		(effects

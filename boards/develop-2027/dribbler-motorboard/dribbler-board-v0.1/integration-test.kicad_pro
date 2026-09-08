@@ -740,7 +740,7 @@
         "uuid": "2f9570f4-e846-4a86-b134-ae7438cb1d91"
       }
     ],
-    "used_designators": "",
+    "used_designators": "TH1,R13,J7-8,#PWR28-29",
     "variants": []
   },
   "sheets": [
@@ -774,11 +774,7 @@
     ],
     [
       "d4780e5d-8897-4fbd-a4f0-0cae90768857",
-      "Temperature Sensor"
-    ],
-    [
-      "0308e67a-e03f-433c-b789-eb1432fe4170",
-      "Magnetic Encoder"
+      "MOSFET Temperature Sensor"
     ],
     [
       "0228c7f4-9370-4f69-b541-0382c88a8752",
@@ -787,6 +783,10 @@
     [
       "a5292b11-b9f3-47b5-82b7-15b9f4351b45",
       "Current Sensing"
+    ],
+    [
+      "cc6a8bde-954b-4921-aec8-fe00d52ae8d8",
+      "Motor Temperature Sensor"
     ]
   ],
   "text_variables": {},

@@ -6,10 +6,10 @@
 	(paper "A4")
 	(title_block
 		(title "Current Sense Op-Amp")
-		(date "2026-09-02")
+		(date "2026-09-07")
 		(rev "v1.0")
 		(company "Robojackets - RoboCup")
-		(comment 1 "Aiden Lee [piman PCB]")
+		(comment 1 "Niko Cornell & Miles Schuler")
 	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
@@ -819,7 +819,7 @@
 		)
 		(uuid "f811e790-4075-43f6-af08-e085e201d934")
 	)
-	(text_box "Differental amplifier with low pass filtered output. Design derived from EVLSPIN32G0A2 Evaluation Board.\nIntended for Field-Oriented Control of the Nanotec DF45 65W (10 A peak) or DF45 50W (7 A peak).\nAll Resistors except for R_{LP}: ±0.1% 25ppm/°C or better.\n\nIdeal Characteristics:\nVoltage Gain (G_{V/V}): 7.301 V/V\nCurrent Gain (G_{V/A}): 109.5 mV/A (15 mΩ shunt)\nCurrent Sense Range (I_{RANGE}): ±15.07 A\nOutput Offset (I_{SHUNT} = 0 A): 1.65 V\nLow Pass Filter Cutoff (-3 dB gain): 4.82 kHz\n\nSee ST Manual on EVLSPIN32G0A2, Section 4.4 for derivation"
+	(text_box "Differental amplifier with low pass filtered output. Design derived from EVLSPIN32G0A2 Evaluation Board.\nIntended for Field-Oriented Control of the 16CL41-12-P2-7300 (11 A peak).\nAll Resistors except for R_{LP}: ±0.1% 25ppm/°C or better.\n\nIdeal Characteristics:\nVoltage Gain (G_{V/V}): 4.0 V/V\nCurrent Gain (G_{V/A}): 60 mV/A (15 mΩ shunt)\nCurrent Sense Range (I_{RANGE}): ±27.5 A\nOutput Offset (I_{SHUNT} = 0 A): 1.65 V\nLow Pass Filter Cutoff (-3 dB gain): 4.82 kHz\n\nSee ST Manual on EVLSPIN32G0A2, Section 4.4 for derivation"
 		(exclude_from_sim no)
 		(at 53.34 105.41 0)
 		(size 133.35 26.4392)
@@ -1431,7 +1431,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "16.5k ±0.1%"
+		(property "Value" "240k ±0.1%"
 			(at 87.63 72.3899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1545,7 +1545,7 @@
 				)
 			)
 		)
-		(property "Value" "1.13k ±0.1%"
+		(property "Value" "30k ±0.1%"
 			(at 104.14 60.96 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1736,7 +1736,7 @@
 				)
 			)
 		)
-		(property "Value" "1.13k ±0.1%"
+		(property "Value" "30k ±0.1%"
 			(at 66.04 73.66 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2039,7 +2039,7 @@
 				)
 			)
 		)
-		(property "Value" "8.25k ±0.1%"
+		(property "Value" "120k ±0.1%"
 			(at 129.54 48.26 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2153,7 +2153,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "16.5k ±0.1%"
+		(property "Value" "240k ±0.1%"
 			(at 87.63 85.0899 0)
 			(show_name no)
 			(do_not_autoplace no)

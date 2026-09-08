@@ -274,12 +274,6 @@
 		)
 		(uuid "8f5a9e4b-b8c7-472e-9d79-e3da1d12191f")
 	)
-	(junction
-		(at 95.25 73.66)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "925ebaa4-f437-42e8-b26e-f4cf9a4cd17e")
-	)
 	(wire
 		(pts
 			(xy 231.14 128.27) (xy 231.14 132.08)
@@ -292,7 +286,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 73.66) (xy 101.6 73.66)
+			(xy 88.9 73.66) (xy 101.6 73.66)
 		)
 		(stroke
 			(width 0)
@@ -309,46 +303,6 @@
 			(type default)
 		)
 		(uuid "33e1bc4a-cf14-457e-aa09-b0c382708e23")
-	)
-	(bus
-		(pts
-			(xy 149.86 116.84) (xy 139.7 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4225b45f-07d4-4ee9-aaf8-835a01930e7f")
-	)
-	(bus
-		(pts
-			(xy 152.4 91.44) (xy 149.86 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4cf94d9c-1be3-4a96-a4bf-9a6b628bf0b8")
-	)
-	(bus
-		(pts
-			(xy 149.86 91.44) (xy 149.86 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "65bf61dc-8636-4fd1-8fe9-8d07ac50a3e1")
-	)
-	(wire
-		(pts
-			(xy 101.6 116.84) (xy 95.25 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6b572d58-c302-4116-bb55-77e374878c88")
 	)
 	(wire
 		(pts
@@ -379,16 +333,6 @@
 			(type default)
 		)
 		(uuid "9dae04ae-483e-4e89-a8e7-04e1092a1375")
-	)
-	(wire
-		(pts
-			(xy 88.9 73.66) (xy 95.25 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b0a9586f-a1af-4bfe-8476-465272707c0a")
 	)
 	(bus
 		(pts
@@ -459,16 +403,6 @@
 			(type default)
 		)
 		(uuid "f48548fb-339e-4c1d-9029-e3d78c6fe4bd")
-	)
-	(wire
-		(pts
-			(xy 95.25 116.84) (xy 95.25 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f7ffaf78-3700-4e71-ab1f-ddb1274dca3f")
 	)
 	(wire
 		(pts
@@ -1195,72 +1129,6 @@
 		)
 	)
 	(sheet
-		(at 101.6 114.3)
-		(size 38.1 12.7)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "0308e67a-e03f-433c-b789-eb1432fe4170")
-		(property "Sheetname" "Magnetic Encoder"
-			(at 101.6 113.5884 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "enc_sense.kicad_sch"
-			(at 101.6 127.5846 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "ENC{A B}" output
-			(at 139.7 116.84 0)
-			(uuid "adb7255f-8a74-43d7-8e33-20785e3243b6")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "3.3V DEBUG" output
-			(at 101.6 116.84 180)
-			(uuid "9818eb4d-2d45-4422-86f8-267f3b4deffb")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(instances
-			(project "integration-test"
-				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91"
-					(page "9")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 152.4 76.2)
 		(size 50.8 19.05)
 		(exclude_from_sim no)
@@ -1326,16 +1194,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-			)
-		)
-		(pin "ENC{A B}" input
-			(at 152.4 91.44 180)
-			(uuid "c584f6b9-2fa1-40f2-aaa7-1dbba2bbfd1f")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 		(pin "HALL{A B C}" input
@@ -1519,6 +1377,62 @@
 		)
 	)
 	(sheet
+		(at 101.6 113.03)
+		(size 38.1 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "cc6a8bde-954b-4921-aec8-fe00d52ae8d8")
+		(property "Sheetname" "Motor Temperature Sensor"
+			(at 101.6 112.3184 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "motor_temp_sense.kicad_sch"
+			(at 101.6 126.3146 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "TEMP_SENSE" output
+			(at 139.7 115.57 0)
+			(uuid "d616dbb2-8f6c-48ef-962b-3a04e6a83a48")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "integration-test"
+				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91"
+					(page "12")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 101.6 95.25)
 		(size 38.1 12.7)
 		(exclude_from_sim no)
@@ -1534,7 +1448,7 @@
 			(color 0 0 0 0)
 		)
 		(uuid "d4780e5d-8897-4fbd-a4f0-0cae90768857")
-		(property "Sheetname" "Temperature Sensor"
+		(property "Sheetname" "MOSFET Temperature Sensor"
 			(at 101.6 94.5384 0)
 			(show_name no)
 			(do_not_autoplace no)
