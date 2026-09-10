@@ -1,13 +1,46 @@
 ================================================================================
 2027 CONTROL BOARD - OUTSTANDING WORK
 ================================================================================
-Schematic state at this commit: all 7 sheets drawn as wired blocks.
-ERC: 0 errors, 0 warnings. Netlist verified pin-for-pin against the previous
-iteration. Pin assignment verified 45/47 exact against the authoritative CubeMX
-config in ControlBoard_Testing_V0.2.pdf (the 2 differences are PA5/PA7, which
-reach the motor SPI bus through the R41/R42 22R series resistors - intended).
-
+State: 9 sheets + root. ERC 0 errors / 0 warnings (kicad-cli).
+Netlist verified by NET MEMBERSHIP against the pre-review baseline at every step.
 NO PCB LAYOUT HAS BEEN STARTED. Schematic only.
+
+Part-by-part justification lives in PART_AUDIT.txt.
+
+
+================================================================================
+0. KNOWN OPEN DEFECT - ANNOTATION HYGIENE  (needs one Eeschema action)
+================================================================================
+Two defects that neither konnect nor kicad-cli can fix. Both are annotation
+bookkeeping - NEITHER can produce a wrong board, because power symbols are
+virtual and never reach the netlist (verified: 0 of 151 netlist components are
+#PWR). But Eeschema ERC reports them and they should be cleared.
+
+0.1 DUPLICATE #PWR REFERENCES  (28 references duplicated across sheets)
+    Every sheet independently numbers its power symbols from #PWR001, so
+    #PWR001..#PWR028 each appear on several sheets. Cause: konnect's
+    add_power_symbol picks "the lowest number free ON THE SHEET", not
+    project-wide. 144 power symbols total.
+
+0.2 STALE INSTANCE PATHS  (50 of them)
+    05_IMU (15), 08_DIP (14), 09_Buttons (21) still carry symbol instance
+    entries pointing at sheet UUID 625025f8-a6e0-4c52-95c6-7a2fc84d0410 - the
+    old combined "IMU, DIP and Buttons" sheet, deleted when it was split three
+    ways. Cause: duplicate_sheet copies the source's instance data and
+    delete_sheet does not prune the orphans.
+    `kicad-cli sch upgrade --force` does NOT clear these (tested).
+
+    FIX FOR BOTH, one action:
+      Open the project in Eeschema -> Tools -> Annotate Schematic
+        - scope: entire schematic
+        - "Keep existing annotations" (so R/C/U references are NOT disturbed;
+          they are referenced by name throughout PART_AUDIT.txt and the sheet
+          notes)
+      then File -> Save All.
+    Annotating reassigns unique #PWR references and rewrites instance data for
+    the live hierarchy, dropping the orphans.
+    VERIFY AFTERWARDS: re-run ERC, and diff the netlist by membership - it must
+    come out IDENTICAL, since none of this is supposed to touch connectivity.
 
 
 ================================================================================
@@ -15,126 +48,162 @@ NO PCB LAYOUT HAS BEEN STARTED. Schematic only.
 ================================================================================
 
 1.1 FOOTPRINTS NOT ASSIGNED
-    No component on any sheet has a footprint. This is the single biggest
-    remaining task. Nothing can be laid out until it is done.
+    Only J1 (JST-XH B6B-XH-A) and X1 (Crystal_SMD_2016-4Pin) have footprints.
+    149 of 151 parts still need one. Single biggest remaining task.
 
-1.2 SECURE CONNECTORS REQUIRED (design doc constraint, currently unmet)
-    The radio doc says verbatim: "Do not do simple 2.54mm male/female pin
-    headers; it WILL go loose during comp."
-    The control board doc says: "Make sure ports are using secure connectors
-    (try to find cheaper Molex alternatives)".
-      - J14 RADIO_MEZZANINE is currently a generic Conn_02x05. It MUST get a
-        latching mezzanine / board-to-board footprint, not a pin header.
-      - J5-J9  (motor/dribbler), J10 (kicker), J11/J12 (expansion) must all get
-        latching JST/Molex footprints.
-    The schematic symbols are generic, so this is purely a footprint + BOM
-    decision - but it is a stated requirement, not a preference.
+1.2 SECURE CONNECTORS REQUIRED (design doc constraint, still unmet)
+    "Do not do simple 2.54mm male/female pin headers; it WILL go loose during
+    comp." J5-J9 (motor/dribbler), J10 (kicker), J11/J12 (expansion) and J14
+    (radio mezzanine) all need latching JST/Molex footprints. J14 in particular
+    is now a 2x10 and must be a real mezzanine part.
 
-1.3 OLED CONNECTOR PIN ORDER NOT VERIFIED  <-- needs a human with the part
-    J13 is wired as:
-        1=SDA  2=SCL  3=GND  4=RST  5=GND  6=NC  7=+5V  8=GND
-    The intent is that pin 3 (SA0) grounded selects I2C address 0x3C and pin 5
-    (CS) grounded enables I2C mode - both standard for an SSD1306 breakout.
-    This has NOT been checked against the actual Adafruit #326 silkscreen.
-    Verify before layout; a wrong order here is a dead display and a respin.
+1.3 OLED CONNECTOR PIN ORDER NOT VERIFIED   <-- needs a human with the part
+    J13 is wired 1=SDA 2=SCL 3=GND 4=RST 5=GND 6=NC 7=+5V 8=GND, on the
+    assumption that pin 3 (SA0) grounded selects 0x3C and pin 5 (CS) grounded
+    selects I2C. NOT checked against the real Adafruit #326 silkscreen.
+    A wrong order here is a dead display and a respin.
 
-
-================================================================================
-2. ELECTRICAL FINDINGS FROM THE AUDIT
-================================================================================
-
-2.1 I2C PULL-UPS PROBABLY TOO WEAK FOR 400 kHz  (recommend changing)
-    R30/R31 (kicker) and R32/R33 (expansion) are 4.7k.
-    I2C Fast Mode allows 300 ns rise time. 4.7k into only 100 pF already gives
-    roughly 400 ns, and these buses leave the board on cable, so real bus
-    capacitance will be higher.
-      -> Change R30-R33 to 2.2k (or 1.5k if the cables are long).
-    Leave alone:
-      - R16/R17 (IMU, 4.7k) - on-board, short trace, fine.
-      - R34/R35 (OLED, 3k)  - matches the design doc's "~3 kOhm" exactly.
-
-2.2 CONFIRM WHICH I2C INSTANCE PF0/PF1 BINDS TO  (firmware check)
-    The CubeMX config enables FOUR I2C instances: I2C1, I2C2, I2C4, I2C5, and
-    the board has exactly four independent I2C buses:
-        OLED       PB8/PB9    -> I2C1
-        KICKER     PB10/PB11  -> I2C2
-        EXPANSION  PF14/PF15  -> I2C4
-        IMU        PF0/PF1    -> I2C5 (by elimination)
-    PF0/PF1 are the classic I2C2 pins on most STM32H7 parts. Confirm in the
-    H723 datasheet / CubeMX that they can be driven as I2C5. If they cannot,
-    the IMU and the kicker contend for I2C2 and one of them must move pins -
-    which changes the netlist, so settle this BEFORE layout.
-
-2.3 SUSTAINED 3V3 OVERVOLTAGE IS NOT PROTECTED  (accepted limitation)
-    D10 (SMAJ4.0CA) does not conduct until 4.44 V, while the STM32 VDD abs max
-    is 4.0 V. It is transient/ESD protection only. The polyfuse trips on
-    overcurrent, not overvoltage. A powerboard regulator failure that puts 5 V
-    on the 3V3 pin will kill the MCU.
-    Upgrade path if this matters: replace F3/Q2 with an active OVP load switch
-    (TPS2595 or NCP360). The 5 V rail is fine - D9 is a TVS0500 flat clamp at
-    6.0 V, chosen to protect the TPS2116's 6.0 V abs max.
-
-2.4 USB-ONLY OPERATION IS BENCH-PROGRAMMING ONLY  (documented on sheet 1)
-    U3 (TLV1117-33) is an 800 mA LDO dissipating (5.0-3.3) x I.
-    Doc load budget on 3V3 is ~1000 mA (150 mA STM32 + 650 mA radio + 200 mA
-    SD). That exceeds both the LDO and a default USB port. Run from the
-    powerboard for full-system operation. This is noted on the schematic.
-
-2.5 RADIO POWER PIN COUNT
-    J14 carries 650 mA on a single +3V3 pin (pin 1), returning on two grounds
-    (pins 2 and 10). Within a header's rating but marginal. If the mezzanine
-    part chosen in 1.2 has spare ways, give +3V3 a second pin.
-
-2.6 MINOR / NICE TO HAVE
-    - D2 (3V3 indicator) runs ~1.5 mA through R6=1k. Visible but dim.
-      470R would give ~3 mA. D1 on 5V is ~3 mA already.
-    - SW4/SW5/SW6 Value fields say USER_BTN0/1/2. The doc specifies PTS820;
-      put the MPN in the BOM fields.
-    - Consider a 10-22uF bulk cap local to the APA102 string on 06_LEDs. The
-      string switches ~300 mA; C3 (22uF) is over on the power sheet.
-    - Motor SPI is a 5-drop shared bus at 15.625 Mbit/s. R41/R42 (22R at the
-      source) are in place, but treat stub length as a layout constraint.
-    - Expansion and kicker headers supply +5V while their I2C pull-ups go to
-      +3V3. Fine for open-drain devices, but if an attached board has its own
-      pull-ups to 5V, that 5V lands on PF14/PF15/PB10/PB11 - confirm those are
-      FT (5V tolerant) pins on the H723 before shipping cables.
+1.4 CONFIRM PF0/PF1 CAN BE I2C5  (firmware / datasheet check)
+    CubeMX enables I2C1/2/4/5 and the board has four independent buses:
+      OLED PB8/PB9 = I2C1, KICKER PB10/PB11 = I2C2,
+      EXPANSION PF14/PF15 = I2C4, IMU PF0/PF1 = I2C5 (by elimination).
+    PF0/PF1 are the classic I2C2 pins on most STM32H7 parts. If the H723 cannot
+    map them to I2C5, the IMU and kicker contend for I2C2 and one must move -
+    which changes the netlist. Settle BEFORE layout.
 
 
 ================================================================================
-3. NOT STARTED
+2. DESIGN REVIEW - WHAT WAS DONE
 ================================================================================
+Root      reordered hierarchical ports, grouped by protocol; 1006 wire
+          crossings -> 0. Direct pin-to-pin wires.
+          BUSES NOT USED - see section 3.
+Power     J1 -> JST-XH. F2/F3 PTC -> regular fuse (PTC derating maths in
+          PART_AUDIT). D11/D12 10V Vgs clamps added. C1/C2/C7 un-floated onto
+          real copper. R45 VBUS bleeder added. Spec callouts at the parts.
+MCU       HSE crystal X1 25MHz + C49/C50 5.6pF (copied from the Nucleo-H723ZG
+          reference project, not guessed). Ferrite FB1 dropped, VDDA -> +3V3.
+          BOOT0 pull-down and NRST cap wired. R41/R42 documented.
+          DIP4/DIP5 moved PH0/PH1 -> PF5/PF6 to free the oscillator pins.
+          All four I2C pull-up pairs moved here from the peripheral sheets.
+SD        Shield ungrounded + no-connect flagged. 31.25 MHz clock documented.
+Sensors   Split into 05_IMU / 08_DIP / 09_Buttons. DIP pull-ups 10k -> 100k
+          (1M was rejected with numbers - it fails VIH; see sheet 08).
+          Debounce cutoff 159.2 Hz documented.
+DotStars  C51 22uF bulk added. AHCT-vs-AHC verdict and the 7.815 Mbit/s timing
+          check written on the sheet.
+Connectors Mezzanine J14 2x5 -> 2x10: 3x +3V3, 10x GND, a ground opposite every
+          signal. Pinout documented on the sheet.
+Misc      Rail budget 5V @ 1A / 3V3 @ 1.5A applied throughout. R6 1k -> 470R so
+          the 3V3 indicator matches the 5V one.
+Boxing    Skipped at your request (you are grouping submodules yourself).
 
-3.1 RADIO DAUGHTERBOARD - ENTIRE BOARD
-    Separate project, nothing drawn yet. From the radio design doc:
-      - ESP32-C5-WROOM-1U-N8R8. KiCad only ships an ESP32-C6-MINI-1 symbol, so
-        a custom symbol is needed.
-      - USB-C for programming.
-      - FXP831.07.0100C antenna (Taoglas) -> needs a U.FL / IPEX connector.
-      - Power: 3.3 V in @ 600-650 mA.
-      - Debug LED indicating the power rail is active.
-      - Mezzanine matching J14 on this board:
-          1=+3V3  2=GND  3=SCK  4=MOSI  5=MISO  6=CS
-          7=HANDSHAKE  8=DATA_READY  9=RST  10=GND
 
-3.2 LAYOUT CONSTRAINTS ALREADY KNOWN
-    - The 5 DotStar LEDs must be placed to mimic the 5-dot pattern of the robot
-      shells (design doc).
-    - 4x M2 screw holes for the OLED (H1-H4 exist as symbols).
+================================================================================
+3. BUSES ON THE ROOT SHEET - NOT DONE, AND WHY
+================================================================================
+The review asked for "real KiCad buses everywhere". A first attempt put buses on
+the root with a local label on each sheet-pin stub. Eeschema rejected it: ~200
+ERC errors, all label-dangling. Root-sheet local labels beside sheet pins do not
+resolve. That attempt was removed.
+
+The CORRECT KiCad pattern is bus-type sheet pins: each child sheet carries ONE
+hierarchical label named {SIG_A SIG_B ...}, fans it out to individual signals
+INSIDE the child, and the root then draws bare bus wires between bus pins - no
+labels on the root at all. Labels work fine on child sheets.
+
+Cost: the fan-out (bus + bus entry + label per signal) moves into all nine child
+sheets. konnect has no batch tool for labels or bus entries, so it is ~200
+individual calls. Deferred pending a decision that it is worth it.
+
+Current root is direct pin-to-pin: crossing-free, ERC-clean, ports grouped by
+protocol - which addresses the "not a spaghetti" half of the comment.
+
+
+================================================================================
+4. ELECTRICAL FINDINGS STILL OPEN
+================================================================================
+4.1 SUSTAINED 3V3 OVERVOLTAGE IS NOT PROTECTED  (accepted limitation)
+    D10 (SMAJ4.0CA) does not conduct until 4.44 V; STM32 VDD abs max is 4.0 V.
+    Transient/ESD only. No flat-clamp part exists below 5 V Vrwm. A powerboard
+    regulator failure putting 5 V on the 3V3 rail kills the MCU.
+    Upgrade path: active OVP load switch (TPS2595 / NCP360) in place of F3/Q2.
+    The 5 V rail IS protected - D9 TVS0500 is a 6.0 V flat clamp chosen against
+    the TPS2116's 6.0 V abs max.
+
+4.2 USB-ONLY OPERATION IS BENCH PROGRAMMING ONLY  (documented on sheet 01)
+    U3 TLV1117-33 is 800 mA and dissipates 1.4 W at that. The 3V3 budget is
+    ~1000 mA (150 mA STM32 + 650 mA radio + 200 mA SD). Run from the powerboard
+    for full-system operation.
+    Related: F1 is a 500 mA PTC whose hold current derates to ~375 mA at 50 C.
+    Consistent with bench-only use; if bench draw approaches 400 mA go to 1.1 A.
+
+4.3 I2C CABLE LENGTH
+    Kicker/expansion pull-ups are now 2.2k. t_r ~ 0.85*R*C: 2.2k into 200 pF is
+    ~370 ns against the 300 ns Fast Mode limit - still marginal. If those cables
+    run long, drop to 1.5k and re-check.
+
+4.4 5V TOLERANCE ON THE EXPANSION/KICKER I2C PINS
+    Those headers supply +5V while their pull-ups go to +3V3. Fine for
+    open-drain, but if an attached board pulls up to 5 V that lands on
+    PF14/PF15/PB10/PB11. Confirm those are FT pins before shipping cables.
+
+4.5 MINOR
+    - SW4/SW5/SW6 Value fields say USER_BTN0/1/2; doc specifies PTS820 - put the
+      MPN in the BOM fields.
+    - One benign wire crossing remains on 03_USB_Debug (no junction, not a
+      short). Cosmetic.
+    - No LSE / RTC crystal: PC14-OSC32_IN is USER_EXTI2. PC15 is free if one is
+      ever needed - move USER_EXTI2 to PE1 (pin 142, EXTI1 unused).
+
+
+================================================================================
+5. NOT STARTED
+================================================================================
+5.1 RADIO DAUGHTERBOARD - ENTIRE BOARD
+    ESP32-C5-WROOM-1U-N8R8 (KiCad only ships ESP32-C6-MINI-1, so a custom symbol
+    is needed). USB-C for programming. FXP831.07.0100C antenna -> U.FL/IPEX.
+    3.3 V in @ 600-650 mA. Power LED.
+    ITS MEZZANINE MUST MATCH THE NEW 2x10 PINOUT ON SHEET 07 - the old 1..10
+    pinout in the radio design doc is superseded.
+
+5.2 LAYOUT CONSTRAINTS ALREADY KNOWN
+    - The 5 DotStars must sit in the 5-dot pattern of the robot shell.
+    - 4x M2 screw holes for the OLED (H1-H4 exist).
     - Decoupling: every cap on 02_MCU carries a text annotation naming the exact
       STM32 pin it must sit beside. That pairing exists ONLY as those
-      annotations - all the caps share the +3V3/GND nets, so the netlist cannot
-      preserve it. Do not let layout scatter them.
+      annotations - all the caps share +3V3/GND so the netlist cannot preserve
+      it. Do not let layout scatter them. Same for C40-C44 on 06_LEDs (one per
+      DotStar) and C28-C31 on 02_MCU (one pair per supply pin).
+    - X1 and C49/C50 tight to PH0/PH1, guard-ringed, no traces underneath.
+    - R41/R42 at the MCU end of the motor SPI traces, not near the connectors.
 
 
 ================================================================================
-4. HOW THIS SCHEMATIC IS MAINTAINED
+6. HOW THIS SCHEMATIC IS MAINTAINED
 ================================================================================
 All schematic edits go through the konnect MCP server - do not hand-edit the
-.kicad_sch files. KiCad must be closed while konnect writes, or it refuses with
-"stale_target".
+.kicad_sch files. KiCad must be CLOSED while konnect writes, or it refuses with
+a file-lock error.
+
+Two checkers live in the session scratchpad and should be re-run after any edit:
+  checksch.py  - copper geometry: wire crossings (flagging any that carry a
+                 junction, i.e. a real short), collinear overlaps, wires through
+                 symbol bodies, symbol-on-symbol overlap, pins sitting mid-wire
+                 with no junction, duplicate junctions.
+  checktext.py - readability, driven off kicad-cli's SVG text metrics: label on
+                 label, notes inside chip bodies, text outside the page frame.
 
 Every change is verified by diffing the generated netlist against the previous
-one by NET MEMBERSHIP (not by text), because ERC does not catch shorts created
-by junctions auto-inserted at wire crossings. That check has caught two real
-shorts and one scope regression (VBUS silently downgraded from a global power
-symbol to a sheet-local label, which cut it off from the USB sheet).
+one by NET MEMBERSHIP, not by text. ERC does not catch shorts created by
+junctions that konnect auto-inserts at wire crossings. That check has caught:
+two real shorts, a VBUS scope regression, a sheet-split that silently
+cross-connected the IMU/DIP/button nets, and an orphaned VDDA cap row.
+
+Known konnect quirks to watch for:
+  - Wire coordinates are SNAPPED to the 1.27 mm grid. Placing a sheet at x=400
+    and a wire at x=400 leaves a 0.05 mm gap, because the wire lands on 400.05.
+  - It auto-inserts junctions at T-intersections, so adding your own on top
+    produces duplicates. checksch.py catches these.
+  - add_power_symbol numbers #PWR references per sheet, not per project.
+  - Wires it writes have no (stroke ...) block. Harmless - KiCad defaults it.

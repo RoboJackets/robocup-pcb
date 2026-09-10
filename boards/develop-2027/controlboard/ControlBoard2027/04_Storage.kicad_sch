@@ -936,6 +936,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "SD CARD SHIELD - deliberately NOT grounded (design review: \"don't ground shields\").\nJ4 pin SH carries a no-connect flag. Grounding a card-cage shell at the schematic level forces\nit onto the digital ground net, which turns the shell into a return path for card-slot noise and\ncan inject it straight into the SDMMC bus. Leave the decision to layout: bring the shell pad out\nas an isolated pad with a 0R / stitching-cap footprint next to it, and populate only if EMC\ntesting asks for it. The USB-C shell on J2 IS still grounded - that one is correct, a USB-C\nreceptacle shell is meant to be bonded for cable-shield continuity.\n\nSD CLOCK - \"homework: find out SD protocol clock speed\"\n  SDMMC1 kernel clock = 125 MHz (PLL1Q) in the CubeMX config.\n  SD bus modes:  Default Speed 25 MHz | High Speed 50 MHz | SDR104 208 MHz (UHS-I, needs 1.8V)\n  This board is 3.3V only, so the UHS modes are out and 50 MHz is the hard ceiling.\n  SDMMC divider:  f = 125 / (2 x CLKDIV)\n     CLKDIV = 0  -> 125   MHz   bypass, far too fast\n     CLKDIV = 1  ->  62.5 MHz   TOO FAST (over the 50 MHz ceiling)\n     CLKDIV = 2  ->  31.25 MHz  <- High Speed, safe, this is the target\n     CLKDIV = 3  ->  20.8  MHz\n  Bring up at 25 MHz (Default Speed), then move to CLKDIV=2 / 31.25 MHz.\n  4-bit wide at 31.25 MHz = 125 Mbit/s = ~15.6 MB/s raw.\n  R10-R14 (47k) are the bus pull-ups the SD spec requires on DAT0-3 and CMD; R15 (10k) pulls\n  the card-detect line up. CLK is the one SDMMC line that must NOT be pulled up.\n  Layout: keep all six bus traces length-matched and short - at 31.25 MHz the edges matter."
+		(exclude_from_sim no)
+		(at 33.02 271.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "de7deed6-216b-4d2a-9ae1-2702dd9e9335")
+	)
 	(junction
 		(at 83.82 113.03)
 		(diameter 0)
@@ -971,6 +982,10 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "508f4b68-a3b0-4848-8058-7b72a55e319a")
+	)
+	(no_connect
+		(at 177.8 139.7)
+		(uuid "9e5da915-82eb-4f40-9a75-1db5d5cd0eee")
 	)
 	(wire
 		(pts
@@ -1101,16 +1116,6 @@
 			(type default)
 		)
 		(uuid "96abb078-e784-4088-a451-f33421b644b5")
-	)
-	(wire
-		(pts
-			(xy 177.8 139.7) (xy 185.42 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a8f3b7a7-4f1b-4287-baf2-71566820cc1d")
 	)
 	(wire
 		(pts
@@ -1363,83 +1368,6 @@
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/3bd2a0be-2830-4496-a16c-53a27fc2ce56"
 					(reference "R15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 185.42 139.7 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "21d7ab48-19ae-40f8-945e-5e548929c343")
-		(property "Reference" "#PWR009"
-			(at 185.42 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 185.42 143.51 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 185.42 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 185.42 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 185.42 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2ba0669c-87a8-4242-bf28-81935670d1f9")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/3bd2a0be-2830-4496-a16c-53a27fc2ce56"
-					(reference "#PWR009")
 					(unit 1)
 				)
 			)
