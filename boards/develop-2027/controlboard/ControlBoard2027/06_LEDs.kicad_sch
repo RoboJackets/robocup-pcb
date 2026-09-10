@@ -1138,6 +1138,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "LEVEL SHIFTER vs DOTSTAR RATE - checked, it works\n(design review asked).\nU7 = SN74AHCT125 quad buffer, tpd ~6-10 ns at 5V,\nrated well past 100 MHz. The design doc prescales\nthe DotStar SPI to 7.815 Mbit/s (12 MHz is the\nAPA102 ceiling).\n   one bit at 7.815 MHz = 128 ns\n   tpd 10 ns = 8% of a bit\n   -> nowhere near the limit. VERDICT: fine.\n\n3.3V INPUT SIDE - why the part is AHCT, not AHC:\n   AHCT has TTL input thresholds, VIH = 2.0 V max,\n   so a 3.3 V CMOS output clears it by 1.3 V.\n   Plain AHC is CMOS-threshold, VIH = 0.7 x 5 =\n   3.5 V, which a 3.3 V output can NEVER reach.\n   AHC here would half-work and glitch. Do not\n   substitute.\nU7 runs from +5V (pin 14) so its outputs swing 5 V.\n2 of the 4 buffers are used:\n   pin2 -> pin3 = CLK,  pin5 -> pin6 = DATA\nThe 2 spare buffers have their INPUTS tied to +5V\n(pins 10, 13) so nothing floats; their outputs\n(pins 8, 11) are left open. All four ~OE pins\n(1, 4, 9, 12) are tied to GND = enabled.\n\nDECOUPLING (\"maybe more caps to the DotStars\")\n   C45 100nF at U7's supply pin.\n   C40-C44 100nF, one per LED - D3..D7 left to right.\n   C51 22uF NEW bulk reservoir at the head of the\n       string. Five APA102-2020 at full white draw\n       ~300 mA and switch it at the frame rate;\n       100nF parts cannot supply that, and the\n       nearest bulk (C3, 22uF) is on the power sheet.\nLayout: C40-C44 are NOT interchangeable - each sits\nbeside its own LED. The five LEDs must be placed in\nthe 5-dot pattern of the robot shell (design doc)."
+		(exclude_from_sim no)
+		(at 297.18 252.73 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7a9d5a69-dbbf-4626-8f5c-08a0c7fe09d3")
+	)
 	(junction
 		(at 152.4 195.58)
 		(diameter 0)
@@ -2058,7 +2069,7 @@
 				)
 			)
 		)
-		(property "Description" "Quadruple Bus Buffer Gates With 3-State Outputs"
+		(property "Description" "3.3V->5V level shifter for the APA102 clock and data. AHCT (TTL thresholds, VIH 2.0V max) is required - plain AHC needs 0.7*5 = 3.5V and a 3.3V CMOS output would NOT reliably drive it."
 			(at 86.36 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -2250,7 +2261,7 @@
 				)
 			)
 		)
-		(property "Description" "Quadruple Bus Buffer Gates With 3-State Outputs"
+		(property "Description" "3.3V->5V level shifter for the APA102 clock and data. AHCT (TTL thresholds, VIH 2.0V max) is required - plain AHC needs 0.7*5 = 3.5V and a 3.3V CMOS output would NOT reliably drive it."
 			(at 86.36 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -2442,7 +2453,7 @@
 				)
 			)
 		)
-		(property "Description" "Quadruple Bus Buffer Gates With 3-State Outputs"
+		(property "Description" "3.3V->5V level shifter for the APA102 clock and data. AHCT (TTL thresholds, VIH 2.0V max) is required - plain AHC needs 0.7*5 = 3.5V and a 3.3V CMOS output would NOT reliably drive it."
 			(at 86.36 232.41 0)
 			(hide yes)
 			(show_name no)
@@ -2811,6 +2822,83 @@
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/ee62a278-a94c-4411-ba4b-a0279340f73e"
 					(reference "#PWR009")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 121.92 209.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "74b977bf-f5b6-412d-93ef-c9788de229f8")
+		(property "Reference" "#PWR040"
+			(at 121.92 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 121.92 205.994 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 121.92 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4e6fe839-ec1d-48bb-a93c-72a5e15fac8a")
+		)
+		(instances
+			(project "ControlBoard2027"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/ee62a278-a94c-4411-ba4b-a0279340f73e"
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -3274,7 +3362,7 @@
 				)
 			)
 		)
-		(property "Description" "Quadruple Bus Buffer Gates With 3-State Outputs"
+		(property "Description" "3.3V->5V level shifter for the APA102 clock and data. AHCT (TTL thresholds, VIH 2.0V max) is required - plain AHC needs 0.7*5 = 3.5V and a 3.3V CMOS output would NOT reliably drive it."
 			(at 86.36 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -3973,6 +4061,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 121.92 213.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c1306eb7-0ea0-4f8b-93fc-88de96508987")
+		(property "Reference" "C51"
+			(at 122.555 210.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 122.555 215.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Bulk reservoir at the head of the APA102 string. Five APA102-2020 at full white draw ~300mA and switch it at the frame rate; the per-LED 100nF cannot supply that. Place at the point where +5V enters the LED cluster."
+			(at 121.92 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d73d50fa-e135-44d5-8fb1-b802ce17931d")
+		)
+		(pin "2"
+			(uuid "e0ebef26-5263-453e-bb5a-337356041f04")
+		)
+		(instances
+			(project "ControlBoard2027"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/ee62a278-a94c-4411-ba4b-a0279340f73e"
+					(reference "C51")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 86.36 137.16 0)
 		(unit 1)
@@ -4507,7 +4676,7 @@
 				)
 			)
 		)
-		(property "Description" "Quadruple Bus Buffer Gates With 3-State Outputs"
+		(property "Description" "3.3V->5V level shifter for the APA102 clock and data. AHCT (TTL thresholds, VIH 2.0V max) is required - plain AHC needs 0.7*5 = 3.5V and a 3.3V CMOS output would NOT reliably drive it."
 			(at 152.4 232.41 0)
 			(hide yes)
 			(show_name no)
@@ -4565,6 +4734,83 @@
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/ee62a278-a94c-4411-ba4b-a0279340f73e"
 					(reference "U7")
 					(unit 4)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 121.92 217.17 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fb374346-c38f-412f-ac07-aec51b0e9a98")
+		(property "Reference" "#PWR041"
+			(at 121.92 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 121.92 220.98 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 217.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 217.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 121.92 217.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e88db500-2149-4cd2-9530-4a195f392726")
+		)
+		(instances
+			(project "ControlBoard2027"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/ee62a278-a94c-4411-ba4b-a0279340f73e"
+					(reference "#PWR041")
+					(unit 1)
 				)
 			)
 		)
