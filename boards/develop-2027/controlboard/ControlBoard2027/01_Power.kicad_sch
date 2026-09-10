@@ -723,6 +723,324 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:D_Zener"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Zener"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Zener diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "D_Zener_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Zener_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:Fuse"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "F"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Fuse"
+				(at -1.905 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Fuse"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "fuse"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "*Fuse*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Fuse_0_1"
+				(rectangle
+					(start -0.762 -2.54)
+					(end 0.762 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Fuse_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:LED"
 			(pin_numbers
 				(hide yes)
@@ -3155,39 +3473,82 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "LIMITS / DESIGN NOTES\n1. D9 TVS0500 is a FLAT CLAMP (6.0V), chosen because TPS2116 abs max VIN is 6.0V.\n   A plain SMAJ6.0A clamps at 10.3V and would NOT have protected the mux.\n2. D10 on the 3V3 rail is transient/ESD only. No flat-clamp part exists below 5V Vrwm,\n   and SMAJ4.0CA does not conduct until 4.44V while STM32 VDD abs max is 4.0V.\n   A SUSTAINED 3V3 overvoltage is therefore NOT protected; the polyfuse trips on\n   overcurrent only. Upgrade path: active OVP load switch (TPS2595 / NCP360) for F3/Q2.\n3. R4 = 68k, not 56k. The series drop lowers +3V3_PB, and a 100k/56k divider puts\n   V(PR1) at 1.077V against the TPS2116 1.08V max VREF at 2A, so the mux would falsely\n   declare the powerboard rail dead. 100k/68k restores margin.\n4. Series drop budget per rail: P-FET 70-100 mOhm + polyfuse ~50 mOhm."
+	(text "POWER MUX - powerboard has priority over USB.\nTPS2116 MODE tied to VIN1 = priority mode (TI SLVSFG1A sec 7.6.1); VREF(PR1) = 1.00V typ, 1.08V max.\n  U1 (5V):   VIN1 = +5V_PB,  VIN2 = VBUS.       PR1 divider R1/R2 = 100k/33k -> switchover at 4.03V\n  U2 (3V3):  VIN1 = +3V3_PB, VIN2 = +3V3_LDO.   PR1 divider R3/R4 = 100k/68k -> switchover at 2.47V\nWith the powerboard present, PR1 > VREF so VIN1 (powerboard) is selected. With USB only,\n+5V_PB/+3V3_PB = 0V so PR1 < VREF and the mux falls back to VBUS / the LDO.\n\nMARGIN AT THE RATED LOAD (5V @ 1A, 3V3 @ 1.5A), worst case against the 1.08V max VREF:\n  5V  @ 1.0A: drop = 1.0 x (0.100 FET + 0.020 fuse) = 0.120V -> rail 4.880V -> V(PR1) = 1.211V  (+12%)\n  3V3 @ 1.5A: drop = 1.5 x (0.100 FET + 0.015 fuse) = 0.173V -> rail 3.128V -> V(PR1) = 1.266V  (+17%)\n\nR45 (100k, VBUS->GND) is a bleeder. With no USB cable inserted VBUS is an open circuit,\nleaving U1 VIN2 and the U3 input floating; the bleeder defines them at 0V. Cost is 50 uA.\nC1 / C2 / C7 are the mux input decouplers - C1 on +5V_PB (U1 VIN1), C2 on VBUS (U1 VIN2),\nC7 on +3V3_PB (U2 VIN1). Each is drawn on the node it decouples, not hung off a bare label.\n\nCAUTION - USB-only operation is for BENCH PROGRAMMING, not full operation:\nU3 (TLV1117-33) is 800 mA and dissipates (5.0-3.3) x I = 1.4 W at 800 mA.\nThe radio module alone draws 650 mA on +3V3, plus ~330 mA on +5V for LEDs/OLED.\nThat exceeds both a default USB port and U3's comfortable dissipation."
 		(exclude_from_sim no)
-		(at 33.02 232.41 0)
+		(at 33.02 279.4 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left top)
+			(justify left bottom)
 		)
-		(uuid "38b69c0c-05fd-4845-8f03-f308cb11136c")
+		(uuid "2a565227-375a-4add-939d-78bbbafbb28c")
 	)
-	(text "INPUT PROTECTION (powerboard connector J1)\nEach rail: polyfuse -> P-FET reverse-polarity -> TVS, emerging as +5V_PB / +3V3_PB.\nQ1/Q2 orientation: DRAIN->input, SOURCE->load, GATE->GND via 100k (R43/R44).\nA reversed supply reverse-biases the body diode AND drives Vgs to 0 => blocked.\nEach TVS sits AFTER its FET, so it never sees a reversed input."
+	(text "PR1 divider R1/R2\n100k/33k -> 4.03V"
 		(exclude_from_sim no)
-		(at 33.02 129.54 0)
+		(at 154.94 107.95 0)
 		(effects
 			(font
-				(size 1.27 1.27)
-				(bold yes)
+				(size 1 1)
 			)
-			(justify left top)
+			(justify left bottom)
 		)
-		(uuid "a4b234d6-9f6b-44c6-94be-3a4297bbbc84")
+		(uuid "41236ea3-1472-42ac-a378-0605b434ac50")
 	)
-	(text "POWER MUX - powerboard has priority over USB.\nTPS2116 MODE tied to VIN1 = priority mode (TI SLVSFG1A sec 7.6.1); VREF(PR1) = 1.0V typ.\n  U1 (5V):   VIN1 = +5V_PB,  VIN2 = VBUS.       PR1 divider 100k/33k -> switchover at 4.03V\n  U2 (3V3):  VIN1 = +3V3_PB, VIN2 = +3V3_LDO.   PR1 divider 100k/68k -> switchover at 2.47V\nWith the powerboard present, PR1 > VREF so VIN1 (powerboard) is selected. With USB only,\n+5V_PB/+3V3_PB = 0V so PR1 < VREF and the mux falls back to VBUS / the LDO.\n\nCAUTION - USB-only operation is for BENCH PROGRAMMING, not full operation:\nU3 (TLV1117-33) is 800 mA and dissipates (5.0-3.3) x I = 1.4 W at 800 mA.\nThe radio module alone draws 650 mA on +3V3, plus ~330 mA on +5V for LEDs/OLED.\nThat exceeds both a default USB port and U3's comfortable dissipation."
+	(text "LIMITS / DESIGN NOTES\n1. D9 TVS0500 is a FLAT CLAMP (6.0V), chosen because TPS2116 abs max VIN is 6.0V.\n   A plain SMAJ6.0A clamps at 10.3V and would NOT have protected the mux.\n2. D10 on the 3V3 rail is transient/ESD only. No flat-clamp part exists below 5V Vrwm,\n   and SMAJ4.0CA does not conduct until 4.44V while STM32 VDD abs max is 4.0V.\n   A SUSTAINED 3V3 overvoltage is therefore NOT protected; the fuse trips on overcurrent\n   only. Upgrade path: active OVP load switch (TPS2595 / NCP360) in place of F3/Q2.\n3. R4 = 68k, not 56k. The series drop lowers +3V3_PB, and a 100k/56k divider leaves only\n   +4% over the 1.08V max VREF at the 1.5A rating, so the mux could falsely declare the\n   powerboard rail dead. 100k/68k restores it to +17%.\n4. Series drop budget per rail: P-FET 70-100 mOhm + fuse 15-20 mOhm."
 		(exclude_from_sim no)
-		(at 33.02 152.4 0)
+		(at 156.21 252.73 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left top)
+			(justify left bottom)
 		)
-		(uuid "ff126b98-59f6-47f4-99aa-aeb8e14b2cff")
+		(uuid "543133a3-9bc9-4a4a-af92-381338c7d171")
+	)
+	(text "R45 = VBUS bleeder\nVBUS floats with no\nUSB cable inserted"
+		(exclude_from_sim no)
+		(at 185.42 127 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "741638c9-705f-4d39-ac0b-20762cd71018")
+	)
+	(text "INPUT PROTECTION (powerboard connector J1 - JST-XH 6-way, friction lock)\nEach rail: fuse -> P-FET reverse-polarity -> TVS, emerging as +5V_PB / +3V3_PB.\nQ1/Q2 orientation: DRAIN->input, SOURCE->load, GATE->GND via 100k (R43/R44).\nA reversed supply reverse-biases the body diode AND drives Vgs to 0 => blocked.\nD11/D12 (10V zener, K->source, A->gate) clamp Vgs. In normal conduction Vgs = -Vin\nand the AO3401A abs max is +/-20V, so a miswired high supply would otherwise punch\nthrough the gate oxide. R43/R44 double as the zener current limit, (Vin-10V)/100k.\nEach TVS sits AFTER its FET, so it never sees a reversed input.\nF2/F3 are REGULAR fuses, NOT PTCs. A PTC's hold current derates to ~75% at 50C\nand ~50% at 70C: a 1.1A PTC on the 1A 5V rail holds only 0.83A at 50C and would\nnuisance-trip in a hot robot. A PTC is also 50-100 mOhm and rises after every\ntrip, against 15-20 mOhm stable for a fuse - and that series R sets the mux margin."
+		(exclude_from_sim no)
+		(at 156.21 279.4 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8a2b5f17-bc57-4bf4-83a0-bdea060c3600")
+	)
+	(text "PR1 divider R3/R4\n100k/68k -> 2.47V"
+		(exclude_from_sim no)
+		(at 154.94 207.01 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "95a57186-e715-4bb5-b6d8-484c7245cc26")
+	)
+	(text "D11/D12: 10V Vgs clamp\n(AO3401A Vgs max +/-20V)"
+		(exclude_from_sim no)
+		(at 124.46 85.09 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "fdecc146-108e-448b-9522-ebca0f37b186")
 	)
 	(junction
 		(at 264.16 198.12)
@@ -3196,10 +3557,40 @@
 		(uuid "031229c1-f33a-4b51-9e2a-4cf47e5e6da2")
 	)
 	(junction
+		(at 182.88 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "034443f3-cc50-47b6-86a5-0d1ebc197bab")
+	)
+	(junction
+		(at 170.18 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0aa4fd34-ac45-4525-8b18-5f2b162d44bc")
+	)
+	(junction
 		(at 233.68 152.4)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "15f05c72-da50-482e-9a5b-b8e28a995ce1")
+	)
+	(junction
+		(at 170.18 189.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "19d8d47c-4258-48c5-977d-3d3092bcb181")
+	)
+	(junction
+		(at 121.92 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "227f9c89-2621-4d36-87dc-ccd0e699f011")
+	)
+	(junction
+		(at 182.88 189.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2590c518-434a-46a0-b668-96a1cf7c03c2")
 	)
 	(junction
 		(at 243.84 198.12)
@@ -3226,16 +3617,40 @@
 		(uuid "546871ab-5099-47bc-92a6-3861ecbfd06e")
 	)
 	(junction
+		(at 116.84 210.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "599550d1-14e7-4b13-aacc-a64dc8a30a30")
+	)
+	(junction
 		(at 233.68 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5a5323be-8b68-4303-906d-30bb18dd8647")
 	)
 	(junction
+		(at 121.92 203.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5df1adbe-5bb0-46a3-b59a-587bb85256be")
+	)
+	(junction
 		(at 137.16 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "68f8287e-4caf-4c0d-a45e-21085c3e0e7c")
+	)
+	(junction
+		(at 196.85 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "843182a0-c126-4687-b52a-6a92eb74571f")
+	)
+	(junction
+		(at 116.84 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8ae53b7b-89ac-4068-b665-f4ead742c0e0")
 	)
 	(junction
 		(at 243.84 99.06)
@@ -3266,6 +3681,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ba95461d-84fa-4ce2-968b-c603df300d85")
+	)
+	(junction
+		(at 190.5 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bc83c4cd-47c4-4354-8ffb-5e5704c1a381")
 	)
 	(junction
 		(at 137.16 203.2)
@@ -3325,6 +3746,16 @@
 	)
 	(wire
 		(pts
+			(xy 147.32 104.14) (xy 152.4 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10fd8bf9-5b52-4734-8a51-da03249b9d8a")
+	)
+	(wire
+		(pts
 			(xy 137.16 203.2) (xy 147.32 203.2)
 		)
 		(stroke
@@ -3342,6 +3773,16 @@
 			(type default)
 		)
 		(uuid "3129f24b-db2f-47a8-8898-b7f92ba9b478")
+	)
+	(wire
+		(pts
+			(xy 193.04 99.06) (xy 203.2 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "338ef83c-5540-4312-a217-5013321ee83f")
 	)
 	(wire
 		(pts
@@ -3365,13 +3806,13 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 99.06) (xy 203.2 99.06)
+			(xy 116.84 111.76) (xy 121.92 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4a166a2f-e2f7-41e4-8371-9837dfd58163")
+		(uuid "4583075a-c223-4b28-9a53-0c08df464aea")
 	)
 	(wire
 		(pts
@@ -3385,6 +3826,16 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 203.2) (xy 152.4 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5deb74bf-1117-4fab-91cd-aa6f257d4768")
+	)
+	(wire
+		(pts
 			(xy 147.32 104.14) (xy 147.32 96.52)
 		)
 		(stroke
@@ -3392,16 +3843,6 @@
 			(type default)
 		)
 		(uuid "60c90fdb-1aff-40db-ae67-a4143cbce801")
-	)
-	(wire
-		(pts
-			(xy 198.12 198.12) (xy 203.2 198.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "630c5aa2-c77d-462e-af19-f3c8b88c5298")
 	)
 	(wire
 		(pts
@@ -3425,6 +3866,16 @@
 	)
 	(wire
 		(pts
+			(xy 193.04 198.12) (xy 203.2 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7080a499-2331-419e-89ce-8a6ea52ae5c5")
+	)
+	(wire
+		(pts
 			(xy 58.42 106.68) (xy 58.42 104.14)
 		)
 		(stroke
@@ -3432,6 +3883,26 @@
 			(type default)
 		)
 		(uuid "71eb5e84-e323-4350-93fd-bc88f264081b")
+	)
+	(wire
+		(pts
+			(xy 193.04 189.23) (xy 193.04 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72e57b67-8623-436e-a898-78c69629fef4")
+	)
+	(wire
+		(pts
+			(xy 152.4 189.23) (xy 193.04 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74fe6c1e-2637-4299-a8e0-bc69d383c240")
 	)
 	(wire
 		(pts
@@ -3495,6 +3966,46 @@
 	)
 	(wire
 		(pts
+			(xy 116.84 210.82) (xy 121.92 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a87799e-f2b5-498e-8be7-bbd92122cbb3")
+	)
+	(wire
+		(pts
+			(xy 187.96 109.22) (xy 203.2 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f9fb288-d1a8-4af2-a401-4050cba62390")
+	)
+	(wire
+		(pts
+			(xy 152.4 104.14) (xy 152.4 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a26475d6-6a15-4fd4-8dd0-bc4115e57ffd")
+	)
+	(wire
+		(pts
+			(xy 147.32 203.2) (xy 152.4 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a376e89b-0505-48b0-835d-185efd682722")
+	)
+	(wire
+		(pts
 			(xy 182.88 200.66) (xy 203.2 200.66)
 		)
 		(stroke
@@ -3512,16 +4023,6 @@
 			(type default)
 		)
 		(uuid "aa2bdf1e-f997-4ac9-9ff3-bed59804198b")
-	)
-	(wire
-		(pts
-			(xy 198.12 109.22) (xy 203.2 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aa9b2717-0841-4ecf-8fa7-09d4b087b809")
 	)
 	(wire
 		(pts
@@ -3585,6 +4086,16 @@
 	)
 	(wire
 		(pts
+			(xy 193.04 90.17) (xy 193.04 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca0948ac-caab-47f4-b974-d52cdceda54e")
+	)
+	(wire
+		(pts
 			(xy 78.74 93.98) (xy 78.74 109.22)
 		)
 		(stroke
@@ -3592,6 +4103,16 @@
 			(type default)
 		)
 		(uuid "ce6fd1a6-14a6-4439-80ae-5cf9c2a66231")
+	)
+	(wire
+		(pts
+			(xy 152.4 90.17) (xy 193.04 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dae20b2d-b6f7-44a1-a6b0-81e4653eb2b7")
 	)
 	(wire
 		(pts
@@ -3645,6 +4166,26 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 105.41) (xy 187.96 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f091349b-ddf5-42b2-bdcd-d515e225d358")
+	)
+	(wire
+		(pts
+			(xy 182.88 109.22) (xy 182.88 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2600f4c-4b4a-472e-a410-bfe18f1e68b7")
+	)
+	(wire
+		(pts
 			(xy 58.42 96.52) (xy 58.42 93.98)
 		)
 		(stroke
@@ -3692,26 +4233,6 @@
 			(type default)
 		)
 		(uuid "ffc177de-eb7f-417b-9691-dca681773973")
-	)
-	(label "+3V3_PB"
-		(at 182.88 189.23 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "02f5cd62-3056-4d21-8f6e-324002927efe")
-	)
-	(label "+5V_PB"
-		(at 182.88 90.17 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "18936dbd-ce05-4793-862e-fa7fbc0ba74c")
 	)
 	(label "+5V_RAW"
 		(at 93.98 104.14 180)
@@ -3813,16 +4334,6 @@
 		)
 		(uuid "bd7cda63-e439-4845-9d45-0b95c2a2b6a1")
 	)
-	(label "+5V_PB"
-		(at 172.72 113.03 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c743f5aa-c5bc-4c46-a950-97b233515e70")
-	)
 	(label "+3V3_PB"
 		(at 147.32 203.2 0)
 		(effects
@@ -3843,15 +4354,84 @@
 		)
 		(uuid "e12ecdd5-b27e-43fb-b4c6-93161c52458b")
 	)
-	(label "+3V3_PB"
-		(at 172.72 212.09 90)
-		(effects
-			(font
-				(size 1.27 1.27)
+	(symbol
+		(lib_id "Device:D_Zener")
+		(at 121.92 207.01 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "008910ee-4607-4da6-a391-4d6977f61dd6")
+		(property "Reference" "D12"
+			(at 124.46 207.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
-			(justify left bottom)
 		)
-		(uuid "f17d0ca8-cf08-476d-b6ac-d547a22ff6b8")
+		(property "Value" "10V"
+			(at 119.38 207.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Vgs clamp for Q2 on the 3V3 rail, same role as D11 on the 5V rail."
+			(at 121.92 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ca660b5d-7c20-490e-b558-8c277d8126d0")
+		)
+		(pin "2"
+			(uuid "71ecccc8-919a-48f9-930f-eecbf6c46c9a")
+		)
+		(instances
+			(project "ControlBoard2027"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
+					(reference "D12")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -4346,7 +4926,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 172.72 215.9 0)
+		(at 170.18 193.04 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4356,7 +4936,7 @@
 		(dnp no)
 		(uuid "234d37c7-9016-4870-b4f2-fa8ac8accb82")
 		(property "Reference" "C7"
-			(at 173.355 213.36 0)
+			(at 170.815 190.5 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4367,7 +4947,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 173.355 218.44 0)
+			(at 170.815 195.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4378,7 +4958,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 172.72 215.9 0)
+			(at 170.18 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4389,7 +4969,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 172.72 215.9 0)
+			(at 170.18 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4400,7 +4980,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 172.72 215.9 0)
+			(at 170.18 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5014,8 +5594,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Polyfuse")
-		(at 97.79 104.14 90)
+		(lib_id "power:GND")
+		(at 190.5 116.84 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5023,9 +5603,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "4c324818-d337-490f-a30e-964311857926")
-		(property "Reference" "F2"
-			(at 97.79 106.68 90)
+		(uuid "4a5e58c7-1abd-44b2-8c8f-7058ab9b89de")
+		(property "Reference" "#PWR027"
+			(at 190.5 123.19 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5034,8 +5615,8 @@
 				)
 			)
 		)
-		(property "Value" "1.1A_PTC"
-			(at 97.79 101.6 90)
+		(property "Value" "GND"
+			(at 190.5 120.65 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5045,7 +5626,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 97.79 104.14 0)
+			(at 190.5 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5056,7 +5637,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 97.79 104.14 0)
+			(at 190.5 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5066,8 +5647,8 @@
 				)
 			)
 		)
-		(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
-			(at 97.79 104.14 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 190.5 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5076,17 +5657,14 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "2"
-			(uuid "a34f3bf9-f434-4f61-9d37-b8c738c59371")
 		)
 		(pin "1"
-			(uuid "2442c4db-d7fe-4f28-af9e-ce769249f68a")
+			(uuid "2ead5aa4-9088-4f48-91ff-7613bca2cacd")
 		)
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "F2")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -5170,8 +5748,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Polyfuse")
-		(at 97.79 203.2 90)
+		(lib_id "Device:R")
+		(at 196.85 113.03 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5179,9 +5757,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "53a14e7d-4e85-47bb-bb0e-a92765b55f0f")
-		(property "Reference" "F3"
-			(at 97.79 205.74 90)
+		(uuid "55446c5f-1dbc-4f58-be86-93658ffdb11d")
+		(property "Reference" "R45"
+			(at 198.882 113.03 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5190,8 +5768,8 @@
 				)
 			)
 		)
-		(property "Value" "2.6A_PTC"
-			(at 97.79 200.66 90)
+		(property "Value" "100k"
+			(at 196.85 113.03 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5201,7 +5779,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 97.79 203.2 0)
+			(at 196.85 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5212,7 +5790,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 97.79 203.2 0)
+			(at 196.85 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5222,8 +5800,8 @@
 				)
 			)
 		)
-		(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
-			(at 97.79 203.2 0)
+		(property "Description" "VBUS bleeder. Without it VBUS floats when no USB cable is inserted, leaving TPS2116 VIN2 and the TLV1117 input undefined. 100k = 50uA at 5V."
+			(at 196.85 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5234,15 +5812,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "f483a56c-0676-4fd9-a851-96ce7b1a0b1e")
+			(uuid "0eef063c-5a56-4695-97de-5f1fff4d2512")
 		)
 		(pin "1"
-			(uuid "808c7ba8-4ec5-443d-acb5-4cf8e5ef5429")
+			(uuid "e80dff45-d24a-4264-99dc-5201dc6583f7")
 		)
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "F3")
+					(reference "R45")
 					(unit 1)
 				)
 			)
@@ -5346,7 +5924,7 @@
 				)
 			)
 		)
-		(property "Value" "Powerboard_In"
+		(property "Value" "Powerboard_In JST-XH"
 			(at 45.72 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5356,7 +5934,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_XH_B6B-XH-A_1x06_P2.50mm_Vertical"
 			(at 45.72 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -5378,7 +5956,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "6-way JST XH 2.50mm vertical header, friction-lock. Latching connector per design doc (no bare 2.54mm headers - they work loose during comp)."
 			(at 45.72 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -5499,7 +6077,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 172.72 116.84 0)
+		(at 170.18 93.98 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5509,7 +6087,7 @@
 		(dnp no)
 		(uuid "5fe53266-34bd-4527-81d1-02f614529eee")
 		(property "Reference" "C1"
-			(at 173.355 114.3 0)
+			(at 170.815 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5520,7 +6098,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 173.355 119.38 0)
+			(at 170.815 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5531,7 +6109,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 172.72 116.84 0)
+			(at 170.18 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5542,7 +6120,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 172.72 116.84 0)
+			(at 170.18 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5553,7 +6131,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 172.72 116.84 0)
+			(at 170.18 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5573,6 +6151,162 @@
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 196.85 116.84 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "626da117-8402-48c2-ab80-dbd01fe075b9")
+		(property "Reference" "#PWR030"
+			(at 196.85 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 196.85 120.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 196.85 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 196.85 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 196.85 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fe5430cd-c1a2-40f7-862e-36c60fe312c2")
+		)
+		(instances
+			(project "ControlBoard2027"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Fuse")
+		(at 97.79 203.2 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6bcd1e8e-1188-47cc-be80-0fff6924a8df")
+		(property "Reference" "F3"
+			(at 97.79 201.168 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3A"
+			(at 97.79 205.105 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 97.79 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 97.79 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Regular fuse, not a PTC. At the 1.5A 3V3 budget a 2.6A PTC derates to 1.30A at 70C and nuisance-trips."
+			(at 97.79 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e84bc8a8-bf62-4899-8b92-1e1732691367")
+		)
+		(pin "1"
+			(uuid "a0f079fc-58ad-4149-a4ff-4406df7bc23a")
+		)
+		(instances
+			(project "ControlBoard2027"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
+					(reference "F3")
 					(unit 1)
 				)
 			)
@@ -5832,7 +6566,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "470R"
 			(at 271.78 201.93 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5864,7 +6598,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "3V3 indicator LED resistor. 470R, not 1k: at 1k the 3.3V rail only pushes (3.3-1.8)/1k = 1.5mA and D2 is visibly dimmer than D1. 470R gives 3.2mA, matching D1 on the 5V rail."
 			(at 271.78 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -5891,8 +6625,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VBUS")
-		(at 160.02 113.03 0)
+		(lib_id "Device:D_Zener")
+		(at 121.92 107.95 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5900,10 +6634,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "86ebc412-2d68-42f6-81cd-952e5f5b0897")
-		(property "Reference" "#PWR030"
-			(at 160.02 116.84 0)
-			(hide yes)
+		(uuid "866cf91c-fd25-4911-ba41-52e21b85870f")
+		(property "Reference" "D11"
+			(at 124.46 107.95 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5912,8 +6645,8 @@
 				)
 			)
 		)
-		(property "Value" "VBUS"
-			(at 160.02 109.474 0)
+		(property "Value" "10V"
+			(at 119.38 107.95 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5923,7 +6656,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 160.02 113.03 0)
+			(at 121.92 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5934,7 +6667,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 160.02 113.03 0)
+			(at 121.92 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5944,8 +6677,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 160.02 113.03 0)
+		(property "Description" "Vgs clamp for Q1. AO3401A Vgs abs max +/-20V; a miswired high input would put -Vin on the gate. 10V zener + R43 100k limits it."
+			(at 121.92 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5954,14 +6687,17 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(pin "2"
+			(uuid "a4af5053-008b-49e5-a4b5-7710c7d50514")
 		)
 		(pin "1"
-			(uuid "5c54cb9c-a115-4ad9-88d7-3c830653b2c9")
+			(uuid "a1b91594-2349-4b5f-9bf1-8ab7fe91262b")
 		)
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "#PWR030")
+					(reference "D11")
 					(unit 1)
 				)
 			)
@@ -5969,7 +6705,7 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
-		(at 198.12 109.22 90)
+		(at 187.96 105.41 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5979,7 +6715,7 @@
 		(dnp no)
 		(uuid "8b5a87aa-3181-4fc0-b50b-fc7203eba851")
 		(property "Reference" "#PWR029"
-			(at 201.93 109.22 0)
+			(at 191.77 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5990,7 +6726,7 @@
 			)
 		)
 		(property "Value" "VBUS"
-			(at 194.564 109.22 0)
+			(at 184.404 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6000,7 +6736,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 198.12 109.22 0)
+			(at 187.96 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6011,7 +6747,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 198.12 109.22 0)
+			(at 187.96 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6022,7 +6758,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 198.12 109.22 0)
+			(at 187.96 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6097,7 +6833,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "5V indicator LED resistor. (5.0-1.8)/1k = 3.2mA."
 			(at 271.78 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -6195,6 +6931,85 @@
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
 					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Fuse")
+		(at 97.79 104.14 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "917583cf-e4f7-4143-bf1b-7d123ad4f7b4")
+		(property "Reference" "F2"
+			(at 97.79 102.108 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2A"
+			(at 97.79 106.045 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 97.79 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 97.79 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Regular fuse, not a PTC. At the 1A 5V budget a 1.1A PTC derates to 0.83A at 50C and nuisance-trips."
+			(at 97.79 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "f7958b7a-3ab9-4b1f-b84f-5dfbf992f106")
+		)
+		(pin "1"
+			(uuid "0dfcd6cf-7541-405d-a976-b6e2dcc19174")
+		)
+		(instances
+			(project "ControlBoard2027"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
+					(reference "F2")
 					(unit 1)
 				)
 			)
@@ -7128,7 +7943,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 172.72 219.71 0)
+		(at 170.18 196.85 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7138,7 +7953,7 @@
 		(dnp no)
 		(uuid "bb7535d0-fc14-4921-9b71-e6111b55fc14")
 		(property "Reference" "#PWR022"
-			(at 172.72 226.06 0)
+			(at 170.18 203.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7149,7 +7964,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 172.72 223.52 0)
+			(at 170.18 200.66 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7159,7 +7974,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 172.72 219.71 0)
+			(at 170.18 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7170,7 +7985,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 172.72 219.71 0)
+			(at 170.18 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7181,7 +7996,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 172.72 219.71 0)
+			(at 170.18 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7519,7 +8334,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 172.72 120.65 0)
+		(at 170.18 97.79 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7529,7 +8344,7 @@
 		(dnp no)
 		(uuid "c75e7dca-86fa-4e9c-9cc7-cc7755c1643f")
 		(property "Reference" "#PWR011"
-			(at 172.72 127 0)
+			(at 170.18 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7540,7 +8355,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 172.72 124.46 0)
+			(at 170.18 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7550,7 +8365,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 172.72 120.65 0)
+			(at 170.18 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7561,7 +8376,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 172.72 120.65 0)
+			(at 170.18 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7572,7 +8387,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 172.72 120.65 0)
+			(at 170.18 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7680,7 +8495,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 160.02 116.84 0)
+		(at 190.5 113.03 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7690,7 +8505,7 @@
 		(dnp no)
 		(uuid "cfbfb982-1f93-4edf-ab49-925c141ae357")
 		(property "Reference" "C2"
-			(at 160.655 114.3 0)
+			(at 191.135 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7701,7 +8516,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 160.655 119.38 0)
+			(at 191.135 115.57 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7712,7 +8527,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 160.02 116.84 0)
+			(at 190.5 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7723,7 +8538,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 160.02 116.84 0)
+			(at 190.5 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7734,7 +8549,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 160.02 116.84 0)
+			(at 190.5 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8469,83 +9284,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 160.02 120.65 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f0d4e8ad-9112-45e0-9dba-2a8847c7d968")
-		(property "Reference" "#PWR027"
-			(at 160.02 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 160.02 124.46 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 160.02 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 160.02 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 160.02 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "37ee65c7-4a21-4afd-9b7d-7d446563027e")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "#PWR027")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 147.32 96.52 0)
 		(unit 1)
@@ -8701,7 +9439,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 182.88 109.22 0)
+		(at 182.88 114.3 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8711,7 +9449,7 @@
 		(dnp no)
 		(uuid "fbda4073-1b11-4f16-8d2e-45875fcc625a")
 		(property "Reference" "#PWR010"
-			(at 182.88 115.57 0)
+			(at 182.88 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8722,7 +9460,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 182.88 113.03 0)
+			(at 182.88 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8732,7 +9470,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 182.88 109.22 0)
+			(at 182.88 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8743,7 +9481,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 182.88 109.22 0)
+			(at 182.88 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8754,7 +9492,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 182.88 109.22 0)
+			(at 182.88 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
