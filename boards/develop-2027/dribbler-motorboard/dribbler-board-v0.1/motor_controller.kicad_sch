@@ -8778,6 +8778,17 @@
 		)
 		(uuid "cb7a83bd-4f7a-4557-bea7-c8972a511452")
 	)
+	(text "Shunt Resistor Power Consumption\nP = (0.015 Ohms) * (11.01A)^2 = 1.818 W"
+		(exclude_from_sim no)
+		(at 129.286 139.446 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 194 1)
+			)
+		)
+		(uuid "dff92d9f-6c87-47b6-a4ee-cef1fe099d3c")
+	)
 	(text "Single-Shunt Overcurrent Protection"
 		(exclude_from_sim no)
 		(at 180.975 97.79 0)
