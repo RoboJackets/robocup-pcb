@@ -8701,6 +8701,17 @@
 		)
 		(uuid "1cec8648-e994-484e-a796-ebd3a23ae1ce")
 	)
+	(text "Shunt Resistor Power Consumption: \nP = 0.015 ohms * (11.01A)^2 = 1.818 W"
+		(exclude_from_sim no)
+		(at 130.302 138.43 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 194 1)
+			)
+		)
+		(uuid "2e6b6235-6589-4896-87cf-3d30872c6202")
+	)
 	(text "Using external 3.3V\nregulator not needed"
 		(exclude_from_sim no)
 		(at 88.9 55.88 0)
@@ -8970,6 +8981,10 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ef33a9a6-db11-43e5-bcea-6df4670fffa3")
+	)
+	(no_connect
+		(at 187.96 48.26)
+		(uuid "5cd957e7-8c59-4f86-827b-f3df79e9b3d6")
 	)
 	(no_connect
 		(at 90.17 53.34)
