@@ -5512,26 +5512,6 @@
 		)
 		(uuid "b072471c-d9df-4856-9b1a-073807ef3e2d")
 	)
-	(text "D11 10V zener clamps Q1 Vgs\n(AO3401A Vgs abs max +/-12V)"
-		(at 102.87 130.81 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "2de1161a-e341-4882-b2a4-2c7d98829719")
-	)
-	(text "PR1 divider R3/R4\n100k/68k -> 2.47V"
-		(at 238.76 182.88 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "4a803a1e-00f1-43ca-aaf3-da80371dba7e")
-	)
 	(text "ROUTING - POWER INPUT\nJ1 -> Q1/D9/D10 -> U8/U9 -> U1/U2: 2A traces, >=1.0mm on 1oz outer (or pours).\nU8/U9 thermal pad to a GND pour with vias. R51/R56 right at the ILM pins.\nD9/D10 right at the rail, short wide GND via. C1/C2/C7 at TPS2116 VIN, C3/C8 at VOUT.\nU3 tab to a copper pour. R46/R47 near J1, UART pair away from the power pours."
 		(at 90.17 68.58 0)
 		(effects
@@ -5544,26 +5524,6 @@
 		)
 		(uuid "4eb9f006-ad9e-464c-9bec-1c277fd5ecb2")
 	)
-	(text "PR1 divider R1/R2\n100k/33k -> 4.03V"
-		(at 238.76 121.92 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "8d724972-cd1f-4d41-bcfd-d0ef49960dcd")
-	)
-	(text "R45 = VBUS_SW bleeder:\nholds VIN2 at 0V with no\nUSB cable inserted"
-		(at 269.494 131.572 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "e867d50c-8d12-428b-bc4d-236c384b2678")
-	)
 	(text "USB VBUS (J2, sheet 03)   U13 eFuse -> VBUS_SW -> U1 VIN2 (+5V backup) and U3 LDO -> +3V3_LDO -> U2 VIN2 (+3V3 backup)"
 		(at 22.86 199.39 0)
 		(effects
@@ -5575,36 +5535,6 @@
 			(justify left bottom)
 		)
 		(uuid "eca4a877-365d-4c91-a2e9-9b81dd623ac3")
-	)
-	(text "J1 POWERBOARD CONNECTOR - JST-XH 8P\n  1-2 +5V   3-4 +3V3   5-6 GND   7 PWR_UART_TX   8 PWR_UART_RX\n  UART4 115200 (PA0/PA1), 3.3V, R46/R47 1k series. Pin 7/8 order to confirm with powerboard.\n5V:  Q1 reverse polarity -> D9 TVS -> U8 eFuse -> +5V_PB (also feeds the DotStars)\n3V3: D10 TVS -> U9 eFuse -> +3V3_PB (also feeds the radio J14)  (no series FET: saves ~0.15V)\neFuse TPS259621DDA (TI SLVSET8A): output overvoltage clamp, auto-retry, no lockout.\n  EN/UVLO 1.2V at the pin. ILIM: RILM = 903 / (ILIM - 0.0112) (Eq. 7). 22nF dVdt = 2V/ms.\n  U8: UVLO 4.29V, clamp 5.28-5.61V, ILIM 1.51A    U9: UVLO 2.78V, clamp 3.47-3.70V, ILIM 2.01A\n  FLT wired-OR with R52 pull-up -> PWR_FAULT (PA4): thermal shutdown only, not current limit.\nQ1: D = input, S = load, G to GND via R43. D11 10V zener clamps Vgs (AO3401A abs max +/-12V)."
-		(at 156.21 279.4 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "16a90605-73b3-4228-9ba1-f70830168bbc")
-	)
-	(text "POWER MUX - U1/U2 TPS2116, priority mode (MODE = VIN1)\nVIN1 = powerboard (after eFuse), VIN2 = USB side. VREF 0.92 / 1.00 / 1.08V, no built-in hysteresis.\n  U1 5V:   R1/R2 100k/33k + R58 1M from ST  -> ~3.80V falling / 4.13V rising\n  U2 3V3:  R3/R4 100k/68k + R60 1M from ST  -> ~2.24V falling / 2.57V rising\n  While VIN1 is selected it is tied to VOUT, so when the powerboard drops out with USB attached\n  the rail sags to the PR1 threshold before VIN2 takes over (bench only; DESIGN_AUDIT M7).\nST is open-drain (R57/R59 pull-ups): PWR_SRC_5V -> R83 1k -> PA2, PWR_SRC_3V3 -> PA3. High = powerboard.\nR45 100k holds VBUS_SW at 0V while U13 is off (50uA).\nU3 AP7361C-33E: 1A LDO, 360mV dropout. USB-only is bench use: U13 ILIM 0.46-0.56A.\nRadio (+3V3_PB) and DotStars (+5V_PB) are not powered from USB, so USB carries MCU, SD, IMU, OLED."
-		(at 33.02 279.4 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "35b45056-fcbb-435d-b3d0-e77d890347d4")
-	)
-	(text "U13 USB VBUS LIMITER (TPS259621DDA)\nUSB 2.0 7.2.4.1: max 10uF on VBUS incl. caps visible through regulators;\n~100uF is downstream of VBUS_SW. dVdt 47nF -> 0.94V/ms soft start.\nClamp 5.28-5.61V (5.5V VBUS passes), UVLO 4.01V, ILIM 0.46-0.56A, FLT -> PWR_FAULT.\nC55 2.2uF: USB Device Capacitance ECN needs 1-10uF on VBUS."
-		(at 115.57 238.76 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8bc20da4-34d6-47f8-939b-5dd22ffb001c")
 	)
 	(text "5V FROM POWERBOARD   J1 pins 1-2 -> Q1 reverse polarity -> D9 TVS -> U8 eFuse -> +5V_PB (DotStars) -> U1 mux VIN1 -> +5V"
 		(at 22.86 45.72 0)
@@ -5629,16 +5559,6 @@
 			(justify left bottom)
 		)
 		(uuid "ea106cde-5ed4-4ac3-91a4-bda77ba818a3")
-	)
-	(text "LIMITS (TPS2596 SLVSET8A 7.5)\n1. Overvoltage: TPS25962x clamps the output instead of locking out.\n   U9 (OVCSEL GND): clamps above 3.75-3.92V at 3.47-3.70V, under the STM32 4.0V abs max.\n   U8/U13 (OVCSEL 402k): clamp above 5.54-5.83V at 5.28-5.61V. VIN must stay below the clamp.\n2. TPS2596 ILIM max is 2.0A. A 3V3 budget above ~1.8A needs a higher-current eFuse.\n3. D9/D10 TVS0500 (VRWM 5V, VBR 7.5-8.4V) are surge/ESD only; the eFuse clamp does OV.\n4. 3V3 drop at 1.25A: U9 143m + U2 59m + J1 20m = 0.28V. Powerboard 3V3 >= 3.4V (radio min 3.0V)."
-		(at 223.52 248.92 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7c5e8856-7794-4347-89db-19f29364a08d")
 	)
 	(label "U1_PR1"
 		(at 297.18 124.46 180)
@@ -5891,6 +5811,46 @@
 		)
 		(uuid "c730dfa5-6691-4d94-921f-81ceb138b856")
 	)
+  (text "D11 keeps Q1 gate voltage in rating\n(DESIGN_NOTES.md §3)"
+    (at 102.87 130.81 0)
+    (effects (font (size 1 1)) (justify left bottom))
+    (uuid "3c84212c-d8b6-44ed-82e7-2913eeda6c88")
+  )
+  (text "R1/R2: 5V source switchover point\n(DESIGN_NOTES.md §4)"
+    (at 238.76 121.92 0)
+    (effects (font (size 1 1)) (justify left bottom))
+    (uuid "e3deb549-eb03-416f-846f-85f831125d8c")
+  )
+  (text "R3/R4: 3V3 source switchover point\n(DESIGN_NOTES.md §4)"
+    (at 238.76 182.88 0)
+    (effects (font (size 1 1)) (justify left bottom))
+    (uuid "0599eba5-bbee-48e1-b724-c91309f81697")
+  )
+  (text "R45 holds VIN2 at 0V\nwith no USB cable (§4)"
+    (at 269.494 131.572 0)
+    (effects (font (size 1 1)) (justify left bottom))
+    (uuid "2a338f03-b3b9-4df1-a460-1176c06d4431")
+  )
+  (text "J1 POWERBOARD CONNECTOR - JST-XH 8P\n  1-2 +5V   3-4 +3V3   5-6 GND   7 PWR_UART_TX   8 PWR_UART_RX (order to confirm with powerboard)\nQ1 blocks a reversed 5V input. D9/D10 absorb surges.\nU8/U9 eFuses: undervoltage cut-off, current limit, overvoltage clamp.\n  Clamp type chosen so a rail cannot latch off after a spike.\nWhy these parts and values: DESIGN_NOTES.md §3. Open issues M1-M3."
+    (at 156.21 279.4 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "7bc0ecbd-7573-4390-9cb7-3bdc4047038f")
+  )
+  (text "POWER MUX - U1/U2 TPS2116, priority mode\nPowerboard (VIN1) is used whenever present; USB (VIN2) is the bench fallback.\nST tells the MCU which source is active (PWR_SRC_5V/3V3). R83 protects PA2 from the bootloader.\nRadio and DotStars run from the powerboard-only rails, so USB never carries them.\nDetails: DESIGN_NOTES.md §2 and §4. Sag at switchover with USB attached: M7."
+    (at 33.02 279.4 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "a7d3359b-41ec-46f9-91e4-2e932bff7144")
+  )
+  (text "U13 USB VBUS LIMITER\nSoft-starts the board capacitance to meet the USB inrush limit,\nlimits USB current and passes a 5.5V VBUS.\nC55 meets the USB minimum VBUS capacitance.\nDetails: DESIGN_NOTES.md §4."
+    (at 115.57 238.76 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "4d11fc4e-4e2b-4ac2-abd8-fe24b3b650ba")
+  )
+  (text "LIMITS\nOvervoltage is clamped by the eFuses; the TVS diodes only take surges.\n3V3 current is capped at the eFuse maximum (M3). Powerboard 3V3 should be 3.4V (M2).\nDetails: DESIGN_NOTES.md §3 and §13."
+    (at 223.52 248.92 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "d31fb6da-8d9c-434b-b267-3fed183cc2be")
+  )
 	(symbol
 		(lib_id "Device:R")
 		(at 214.63 123.19 0)
@@ -6021,7 +5981,7 @@
 				)
 			)
 		)
-		(property "Description" "U2 PR1 hysteresis from ST. 3V3 switchover ~2.24V falling / 2.57V rising (VREF typ). +3V3 follows VIN1 down to the falling threshold (DESIGN_AUDIT M7)."
+		(property "Description" "U2 PR1 hysteresis from ST. 3V3 switchover ~2.24V falling / 2.57V rising (VREF typ). +3V3 follows VIN1 down to the falling threshold (DESIGN_NOTES.md M7)."
 			(at 300.99 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -6758,7 +6718,7 @@
 				)
 			)
 		)
-		(property "Description" "+3V3_RAW (U9 input). With TP2 gives the U9+U2 drop (DESIGN_AUDIT M2, needs >=3.0V at the radio)."
+		(property "Description" "+3V3_RAW (U9 input). With TP2 gives the U9+U2 drop (DESIGN_NOTES.md M2, radio needs >= 3.0V)."
 			(at 154.94 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -14539,7 +14499,7 @@
 				)
 			)
 		)
-		(property "Description" "3V3 input TVS, same part as D9. TVS0500: VRWM 5V, VBR 7.5-8.4V, flat clamp 9.2V at 43A; U9 VIN abs max 21V. Stays off in the 5V-on-3V3 crimp fault (DESIGN_AUDIT M1); U9 clamps its output instead."
+		(property "Description" "3V3 input TVS, same part as D9. TVS0500: VRWM 5V, VBR 7.5-8.4V, flat clamp 9.2V at 43A; U9 VIN abs max 21V. Stays off in the 5V-on-3V3 crimp fault (DESIGN_NOTES.md M1); U9 clamps its output instead."
 			(at 137.16 172.72 0)
 			(hide yes)
 			(effects

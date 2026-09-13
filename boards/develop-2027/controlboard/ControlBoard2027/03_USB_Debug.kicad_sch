@@ -3340,10 +3340,10 @@
 		)
 		(uuid "995b28f7-3951-438a-b949-1fa8fd012a11")
 	)
-  (text "R39/R40 22R: series resistors on SWCLK/SWDIO.\nDamp ringing on the probe cable. They do not protect against a mis-plugged\n5V probe (~50mA). Not critical (0R works). J3 must be keyed.\nU5 pin 5 on +3V3 (not VBUS): stops D+ back-feeding VBUS when unplugged."
+  (text "R39/R40 22R damp ringing on the SWD cable (0R also works). They do not\nprotect against a mis-plugged 5V probe, so J3 must be keyed.\nU5 rail pin on +3V3 so an unplugged USB cable is detected.\nDESIGN_NOTES.md §7."
     (at 199.39 156.21 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "b29fa268-4b0f-42ec-b222-88b464e964c6")
+    (uuid "b46ab7d9-2306-4c6f-9ad3-0d43c20e5631")
   )
 	(symbol
 		(lib_id "power:GND")

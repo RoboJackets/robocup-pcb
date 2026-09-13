@@ -6722,16 +6722,6 @@
 		)
 		(uuid "5c7df374-0b95-4a8f-968b-7396380c1fc6")
 	)
-	(text "R41/R42 22R: series termination on motor SPI SCK/MOSI.\nPin ~25R + 22R ~ 50R line, so reflections from the 5 cables are\nabsorbed at the MCU (a ring on SCK = false clock edge).\nMISO has none (input). Multidrop bus: tune 0-47R on a scope."
-		(at 369.57 130.81 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "683b9c26-f7e4-4beb-8bf0-5c9f1463bccf")
-	)
 	(text "VDD p52"
 		(at 120.65 66.04 0)
 		(effects
@@ -6781,28 +6771,6 @@
 			(justify top)
 		)
 		(uuid "b2bdd5eb-df01-41e6-a235-b2631c622d28")
-	)
-	(text "VDDA p33 + VREF+ p32 tie directly to +3V3\n(ferrite bead dropped). C28+C29 at VDDA,\nC30+C31 at VREF+ - one pair per pin."
-		(at 332.74 92.71 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "bc14bd9d-a1a5-4c62-9558-d89a9ea2a0d3")
-	)
-	(text "OPTIONAL I2C PULL-UP CHANGE (not applied - measure first)\nR30/R31 (kicker) and R32/R33 (expansion): 2.2k -> 1.5k only if measured t_r > 300ns.\n  Fast Mode: t_r <= 300ns, Cb <= 400pF, VOL 0.4V at 3mA (TI SLVA689 Table 1).\n  t_r (0.3 to 0.7 VCC) = 0.8473 x Rp x Cb (SLVA689 eq. 5).\n  2.2k: Cb max = 300ns / (0.8473 x 2.2k) = 161pF.   1.5k: Cb max = 236pF.\n  Rp min = (3.3V - 0.4V) / 3mA = 967R (SLVA689 eq. 1), so 1.5k is legal.\n  Measure SCL at TP16/TP17 with the real cable fitted. Keep 2.2k if t_r passes."
-		(at 400.05 255.27 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(bold yes)
-				(color 255 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "c08e1f74-f24b-4c8a-ba34-a0205dcb4ca5")
 	)
 	(text "ROUTING - MOTOR SPI (6 Mbit/s, 5 drops)\nR41/R42 within 5mm of PA5/PA7, not at the connectors."
 		(at 356.87 153.67 0)
@@ -6865,26 +6833,6 @@
 			(justify top)
 		)
 		(uuid "ff8fe13e-0cf9-4dd3-a373-06f7648e9a39")
-	)
-	(text "CLOCKING (reasoning: FIRMWARE_CONFIG.txt)\nX1 Abracon ABM8-25.000MHZ-10-B1U-T on PH0 p23 / PH1 p24 (via R86 0R). CL 10pF, ESR 50R, C0 3pF.\n  Crystal, not HSI48: USB FS needs +/-0.25% (USB 2.0 7.1.11); HSI48 is +/-1.04% untrimmed\n  (DS13313 Table 35). ABM8 total ~22ppm.\n  25MHz, not 48MHz: gm_crit = 4 ESR (2 pi F)^2 (C0+CL)^2 = 0.83mA/V at 25MHz (1.08 worst case),\n  2.15mA/V at 48MHz; STM32 Gmcritmax is 1.5mA/V (DS13313 Table 33).\nC49/C50 12pF C0G: (12+5)(12+5)/34 + 1-2pF PCB = 9.5-10.5pF (CIO 5pF, DS13313).\nR86 0R on OSC_OUT: fit a few hundred ohms if the measured drive level exceeds 100uW (ABM8).\n!! CubeMX V0.3 has HSE = 48MHz. Set HSE_VALUE 25000000, PLL1 M/5 N x96 P/2 Q/10:\n   5MHz PLL in (2-16), VCO 480 (192-836, Table 39) -> SYSCLK 240MHz, PLL1Q 48MHz\n   for USB, SDMMC1, SPI1-3. AHB max 200MHz at VOS1 (Table 12): use HPRE /2, or VOS0.\nDIP4 = PC0 (p26), DIP5 = PC1 (p27); PF5/PF6 unused. No LSE: PC14 = USER_EXTI2.\n\nSUPPLY PINS (LDO supply only; the H723 has no SMPS)\nVDDA (p33) and VREF+ (p32) on +3V3, no ferrite (same as Nucleo).\nC28+C29 at VDDA, C30+C31 at VREF+.\nPDR_ON (p143) = +3V3, internal reset on. VBAT (p6) = +3V3, no battery.\nVCAP p71 and p106 are one node (DS13313 Table 14 note 3, as on the Nucleo): C26 + C27 2.2uF,\n  ESR under 100m. ERC flags this tie because the symbol types both pins as power output."
-		(at 47.24 226.82 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "38ba57bf-6d09-455d-9a62-239071c366fd")
-	)
-	(text "I2C PULL-UPS - one pair per bus, all here\n   IMU        PF0/PF1     R16/R17  4.7k  on-board\n   KICKER     PB10/PB11   R30/R31  2.2k  cabled\n   EXPANSION  PF14/PF15   R32/R33  2.2k  cabled (no pull-ups on the expansion boards)\n   OLED       PB8/PB9     R34/R35  3k    design doc\n400kHz: t_r max 300ns, t_r = 0.8473 x Rp x Cb (TI SLVA689).\n   Cb max (Rp +5%): 4.7k 72pF (short on-board IMU bus), 3k 112pF, 2.2k 153pF.\n   Above that on a cable: see the 1.5k option note. Sink at 2.2k = 1.5mA."
-		(at 396.24 232.41 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "33860280-c579-4369-919b-1a160427415d")
 	)
 	(label "VBUS_SENSE"
 		(at 411.48 101.6 0)
@@ -7500,6 +7448,31 @@
 		)
 		(uuid "fe6d64fe-bd92-4e75-9e51-66f5fbbcfde4")
 	)
+  (text "CLOCKING\nX1 25MHz crystal: USB needs a tighter clock than the internal HSI48, and 25MHz starts\nreliably where a 48MHz crystal would not. C49/C50 match the crystal load. R86 (0R) leaves\nroom for a drive-level resistor if measurement calls for one.\n!! CubeMX V0.3 assumes a 48MHz HSE: use the clock tree in DESIGN_NOTES.md §12 (C2, M16).\nDIP4 = PC0 (p26), DIP5 = PC1 (p27); PF5/PF6 unused. No LSE: PC14 = USER_EXTI2.\n\nSUPPLY PINS\nLDO supply only. VDDA and VREF+ tie straight to +3V3, as on the Nucleo.\nPDR_ON = +3V3 (internal reset). VBAT = +3V3 (no battery).\nVCAP pins 71/106 are joined as the datasheet requires; KiCad ERC flags the tie (m21).\nDetails: DESIGN_NOTES.md §5."
+    (at 47.24 226.82 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "9d45d54e-4e75-4470-a181-98cc19bea250")
+  )
+  (text "I2C PULL-UPS - one pair per bus, all here\n   IMU        PF0/PF1     R16/R17  4.7k  on-board\n   KICKER     PB10/PB11   R30/R31  2.2k  cabled\n   EXPANSION  PF14/PF15   R32/R33  2.2k  cabled (no pull-ups on expansion boards)\n   OLED       PB8/PB9     R34/R35  3k    design doc\nCabled buses get stronger pull-ups to keep 400kHz rise times. DESIGN_NOTES.md §6."
+    (at 396.24 232.41 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "e0617221-7c8c-42a9-8d3e-f52e7d3a0944")
+  )
+  (text "VDDA p33 + VREF+ p32 tie directly to +3V3\n(no ferrite, as on the Nucleo). One cap pair\nper pin. DESIGN_NOTES.md §5."
+    (at 332.74 92.71 0)
+    (effects (font (size 1 1)) (justify left bottom))
+    (uuid "31008ce9-aad1-4588-a867-353b8a577bd4")
+  )
+  (text "R41/R42 22R: source termination on motor SPI SCK/MOSI, damps ringing\nfrom the five cable drops. Tune on a scope. MISO has none.\nDESIGN_NOTES.md §5 (m4)."
+    (at 369.57 130.81 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "67f23d33-3d3a-43c2-8001-c22146562a73")
+  )
+  (text "OPTIONAL I2C PULL-UP CHANGE (not applied - measure first)\nR30/R31 and R32/R33: 2.2k -> 1.5k only if SCL rise time at TP16/TP17\nexceeds 300ns with the real cable fitted. DESIGN_NOTES.md §6."
+    (at 400.05 255.27 0)
+    (effects (font (size 1.27 1.27) (bold yes) (color 255 0 0 1)) (justify left bottom))
+    (uuid "d17c29af-f7a6-48ba-9a94-c0cba9552a04")
+  )
 	(symbol
 		(lib_id "Device:C")
 		(at 81.28 57.15 0)
