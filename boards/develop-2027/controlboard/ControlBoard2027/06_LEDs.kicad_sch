@@ -102,7 +102,10 @@
 			(symbol "74AHCT125_1_0"
 				(polyline
 					(pts
-						(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
+						(xy -3.81 3.81)
+						(xy -3.81 -3.81)
+						(xy 3.81 0)
+						(xy -3.81 3.81)
 					)
 					(stroke
 						(width 0.254)
@@ -170,7 +173,10 @@
 			(symbol "74AHCT125_2_0"
 				(polyline
 					(pts
-						(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
+						(xy -3.81 3.81)
+						(xy -3.81 -3.81)
+						(xy 3.81 0)
+						(xy -3.81 3.81)
 					)
 					(stroke
 						(width 0.254)
@@ -238,7 +244,10 @@
 			(symbol "74AHCT125_3_0"
 				(polyline
 					(pts
-						(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
+						(xy -3.81 3.81)
+						(xy -3.81 -3.81)
+						(xy 3.81 0)
+						(xy -3.81 3.81)
 					)
 					(stroke
 						(width 0.254)
@@ -306,7 +315,10 @@
 			(symbol "74AHCT125_4_0"
 				(polyline
 					(pts
-						(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
+						(xy -3.81 3.81)
+						(xy -3.81 -3.81)
+						(xy 3.81 0)
+						(xy -3.81 3.81)
 					)
 					(stroke
 						(width 0.254)
@@ -639,7 +651,8 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 0.762)
+						(xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -651,7 +664,8 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 -0.762)
+						(xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -940,7 +954,8 @@
 			(symbol "APA102-2020_0_1"
 				(polyline
 					(pts
-						(xy 1.27 -2.54) (xy 1.778 -2.54)
+						(xy 1.27 -2.54)
+						(xy 1.778 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -952,7 +967,8 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -3.556) (xy 1.778 -3.556)
+						(xy 1.27 -3.556)
+						(xy 1.778 -3.556)
 					)
 					(stroke
 						(width 0)
@@ -964,7 +980,9 @@
 				)
 				(polyline
 					(pts
-						(xy 2.286 -1.524) (xy 1.27 -2.54) (xy 1.27 -2.032)
+						(xy 2.286 -1.524)
+						(xy 1.27 -2.54)
+						(xy 1.27 -2.032)
 					)
 					(stroke
 						(width 0)
@@ -976,7 +994,9 @@
 				)
 				(polyline
 					(pts
-						(xy 2.286 -2.54) (xy 1.27 -3.556) (xy 1.27 -3.048)
+						(xy 2.286 -2.54)
+						(xy 1.27 -3.556)
+						(xy 1.27 -3.048)
 					)
 					(stroke
 						(width 0)
@@ -988,7 +1008,9 @@
 				)
 				(polyline
 					(pts
-						(xy 3.683 -1.016) (xy 3.683 -3.556) (xy 3.683 -4.064)
+						(xy 3.683 -1.016)
+						(xy 3.683 -3.556)
+						(xy 3.683 -4.064)
 					)
 					(stroke
 						(width 0)
@@ -1000,7 +1022,10 @@
 				)
 				(polyline
 					(pts
-						(xy 4.699 -1.524) (xy 2.667 -1.524) (xy 3.683 -3.556) (xy 4.699 -1.524)
+						(xy 4.699 -1.524)
+						(xy 2.667 -1.524)
+						(xy 3.683 -3.556)
+						(xy 4.699 -1.524)
 					)
 					(stroke
 						(width 0)
@@ -1012,7 +1037,8 @@
 				)
 				(polyline
 					(pts
-						(xy 4.699 -3.556) (xy 2.667 -3.556)
+						(xy 4.699 -3.556)
+						(xy 2.667 -3.556)
 					)
 					(stroke
 						(width 0)
@@ -1228,7 +1254,8 @@
 			(symbol "+5V_0_1"
 				(polyline
 					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
+						(xy -0.762 1.27)
+						(xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1240,7 +1267,8 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 2.54)
+						(xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1252,7 +1280,8 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 0)
+						(xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1367,7 +1396,12 @@
 			(symbol "GND_0_1"
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+						(xy 0 0)
+						(xy 0 -1.27)
+						(xy 1.27 -1.27)
+						(xy 0 -2.54)
+						(xy -1.27 -1.27)
+						(xy 0 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -1400,30 +1434,6 @@
 			)
 			(embedded_fonts no)
 		)
-	)
-	(text "DOTSTAR LEVEL SHIFT\nU7 SN74AHCT125 on +5V, 3.3V in -> 5V out, tpd 6-10ns.\nBB-2020BGR-TRB VIH = 0.7 x VDD = 3.5V, so a shifter is needed.\nLED SPI (SPI2, TX only) = 3 Mbit/s in V0.3:\n   bit = 333ns, tpd = 3% of a bit. LED max clock under 10MHz.\nMust be AHCT: VIH 2.0V (TTL). AHC needs 3.5V.\nUsed: 1A p2 -> 1Y p3 CKI, 2A p5 -> 2Y p6 SDI, 1OE/2OE p1/p4 = GND.\nSpare gates 3/4: inputs p9/p12 = GND, OE p10/p13 = +5V (off),\noutputs p8/p11 open.\n!! Default KiCad APA102-2020 footprint does NOT fit this LED -\n   make one from the BB-2020BGR-TRB land pattern.\n\nDECOUPLING\n   C45 100nF at U7.\n   C40-C44 100nF, one per LED (D3-D7).\n   C51 22uF bulk (5 LEDs at full white ~300mA)."
-		(exclude_from_sim no)
-		(at 297.18 252.73 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8a94281a-3f35-470c-b1c8-0ac9981b87b2")
-	)
-	(text "ROUTING - DOTSTARS\nU7 -> D3 CLK/DATA short and routed together, over GND.\nLED-to-LED CO->CI and DO->DI as matched pairs.\nC40-C44 at each LED VDD pin. C51 where +5V enters the chain.\nLEDs in the 5-dot shell pattern."
-		(exclude_from_sim no)
-		(at 199.39 149.86 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(bold yes)
-				(color 255 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "c089af8c-c54b-4930-8722-8dbe584c13c8")
 	)
 	(junction
 		(at 152.4 195.58)
@@ -1507,7 +1517,8 @@
 	)
 	(wire
 		(pts
-			(xy 281.94 180.34) (xy 287.02 180.34)
+			(xy 281.94 180.34)
+			(xy 287.02 180.34)
 		)
 		(stroke
 			(width 0)
@@ -1517,7 +1528,8 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 180.34) (xy 78.74 180.34)
+			(xy 74.93 180.34)
+			(xy 78.74 180.34)
 		)
 		(stroke
 			(width 0)
@@ -1527,7 +1539,8 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 180.34) (xy 266.7 180.34)
+			(xy 251.46 180.34)
+			(xy 266.7 180.34)
 		)
 		(stroke
 			(width 0)
@@ -1537,7 +1550,8 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 187.96) (xy 213.36 195.58)
+			(xy 213.36 187.96)
+			(xy 213.36 195.58)
 		)
 		(stroke
 			(width 0)
@@ -1547,7 +1561,8 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 157.48) (xy 74.93 157.48)
+			(xy 71.12 157.48)
+			(xy 74.93 157.48)
 		)
 		(stroke
 			(width 0)
@@ -1557,7 +1572,8 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 157.48) (xy 127 157.48)
+			(xy 93.98 157.48)
+			(xy 127 157.48)
 		)
 		(stroke
 			(width 0)
@@ -1567,7 +1583,8 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 165.1) (xy 274.32 165.1)
+			(xy 144.78 165.1)
+			(xy 274.32 165.1)
 		)
 		(stroke
 			(width 0)
@@ -1577,7 +1594,8 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 187.96) (xy 182.88 195.58)
+			(xy 182.88 187.96)
+			(xy 182.88 195.58)
 		)
 		(stroke
 			(width 0)
@@ -1587,7 +1605,8 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 157.48) (xy 78.74 157.48)
+			(xy 74.93 157.48)
+			(xy 78.74 157.48)
 		)
 		(stroke
 			(width 0)
@@ -1597,7 +1616,8 @@
 	)
 	(wire
 		(pts
-			(xy 127 177.8) (xy 144.78 177.8)
+			(xy 127 177.8)
+			(xy 144.78 177.8)
 		)
 		(stroke
 			(width 0)
@@ -1607,7 +1627,8 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 133.35) (xy 104.14 133.35)
+			(xy 86.36 133.35)
+			(xy 104.14 133.35)
 		)
 		(stroke
 			(width 0)
@@ -1617,7 +1638,8 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 180.34) (xy 236.22 180.34)
+			(xy 220.98 180.34)
+			(xy 236.22 180.34)
 		)
 		(stroke
 			(width 0)
@@ -1627,7 +1649,8 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 187.96) (xy 152.4 195.58)
+			(xy 152.4 187.96)
+			(xy 152.4 195.58)
 		)
 		(stroke
 			(width 0)
@@ -1637,7 +1660,8 @@
 	)
 	(wire
 		(pts
-			(xy 127 157.48) (xy 127 177.8)
+			(xy 127 157.48)
+			(xy 127 177.8)
 		)
 		(stroke
 			(width 0)
@@ -1647,7 +1671,8 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 172.72) (xy 213.36 165.1)
+			(xy 213.36 172.72)
+			(xy 213.36 165.1)
 		)
 		(stroke
 			(width 0)
@@ -1657,7 +1682,8 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 133.35) (xy 86.36 137.16)
+			(xy 86.36 133.35)
+			(xy 86.36 137.16)
 		)
 		(stroke
 			(width 0)
@@ -1667,7 +1693,8 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 172.72) (xy 152.4 165.1)
+			(xy 152.4 172.72)
+			(xy 152.4 165.1)
 		)
 		(stroke
 			(width 0)
@@ -1677,7 +1704,8 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 172.72) (xy 243.84 165.1)
+			(xy 243.84 172.72)
+			(xy 243.84 165.1)
 		)
 		(stroke
 			(width 0)
@@ -1687,7 +1715,8 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 172.72) (xy 274.32 165.1)
+			(xy 274.32 172.72)
+			(xy 274.32 165.1)
 		)
 		(stroke
 			(width 0)
@@ -1697,7 +1726,8 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 195.58) (xy 274.32 195.58)
+			(xy 144.78 195.58)
+			(xy 274.32 195.58)
 		)
 		(stroke
 			(width 0)
@@ -1707,7 +1737,8 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 133.35) (xy 104.14 124.46)
+			(xy 104.14 133.35)
+			(xy 104.14 124.46)
 		)
 		(stroke
 			(width 0)
@@ -1717,7 +1748,8 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 187.96) (xy 274.32 195.58)
+			(xy 274.32 187.96)
+			(xy 274.32 195.58)
 		)
 		(stroke
 			(width 0)
@@ -1727,7 +1759,8 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 232.41) (xy 137.16 232.41)
+			(xy 144.78 232.41)
+			(xy 137.16 232.41)
 		)
 		(stroke
 			(width 0)
@@ -1737,7 +1770,8 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 177.8) (xy 266.7 177.8)
+			(xy 251.46 177.8)
+			(xy 266.7 177.8)
 		)
 		(stroke
 			(width 0)
@@ -1747,7 +1781,8 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 180.34) (xy 175.26 180.34)
+			(xy 160.02 180.34)
+			(xy 175.26 180.34)
 		)
 		(stroke
 			(width 0)
@@ -1757,7 +1792,8 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 180.34) (xy 144.78 180.34)
+			(xy 93.98 180.34)
+			(xy 144.78 180.34)
 		)
 		(stroke
 			(width 0)
@@ -1767,7 +1803,8 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 107.95) (xy 104.14 116.84)
+			(xy 104.14 107.95)
+			(xy 104.14 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1777,7 +1814,8 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 243.84) (xy 165.1 243.84)
+			(xy 152.4 243.84)
+			(xy 165.1 243.84)
 		)
 		(stroke
 			(width 0)
@@ -1787,7 +1825,8 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 232.41) (xy 71.12 232.41)
+			(xy 78.74 232.41)
+			(xy 71.12 232.41)
 		)
 		(stroke
 			(width 0)
@@ -1797,7 +1836,8 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 107.95) (xy 86.36 104.14)
+			(xy 86.36 107.95)
+			(xy 86.36 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1807,7 +1847,8 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 243.84) (xy 99.06 243.84)
+			(xy 86.36 243.84)
+			(xy 99.06 243.84)
 		)
 		(stroke
 			(width 0)
@@ -1817,7 +1858,8 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 177.8) (xy 205.74 177.8)
+			(xy 190.5 177.8)
+			(xy 205.74 177.8)
 		)
 		(stroke
 			(width 0)
@@ -1827,7 +1869,8 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 238.76) (xy 152.4 243.84)
+			(xy 152.4 238.76)
+			(xy 152.4 243.84)
 		)
 		(stroke
 			(width 0)
@@ -1837,7 +1880,8 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 107.95) (xy 104.14 107.95)
+			(xy 86.36 107.95)
+			(xy 104.14 107.95)
 		)
 		(stroke
 			(width 0)
@@ -1847,7 +1891,8 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 172.72) (xy 182.88 165.1)
+			(xy 182.88 172.72)
+			(xy 182.88 165.1)
 		)
 		(stroke
 			(width 0)
@@ -1857,7 +1902,8 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 180.34) (xy 205.74 180.34)
+			(xy 190.5 180.34)
+			(xy 205.74 180.34)
 		)
 		(stroke
 			(width 0)
@@ -1867,7 +1913,8 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 187.96) (xy 243.84 195.58)
+			(xy 243.84 187.96)
+			(xy 243.84 195.58)
 		)
 		(stroke
 			(width 0)
@@ -1877,7 +1924,8 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 180.34) (xy 74.93 180.34)
+			(xy 71.12 180.34)
+			(xy 74.93 180.34)
 		)
 		(stroke
 			(width 0)
@@ -1887,7 +1935,8 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 238.76) (xy 86.36 243.84)
+			(xy 86.36 238.76)
+			(xy 86.36 243.84)
 		)
 		(stroke
 			(width 0)
@@ -1897,7 +1946,8 @@
 	)
 	(wire
 		(pts
-			(xy 281.94 177.8) (xy 287.02 177.8)
+			(xy 281.94 177.8)
+			(xy 287.02 177.8)
 		)
 		(stroke
 			(width 0)
@@ -1907,7 +1957,8 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 177.8) (xy 236.22 177.8)
+			(xy 220.98 177.8)
+			(xy 236.22 177.8)
 		)
 		(stroke
 			(width 0)
@@ -1917,13 +1968,124 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 177.8) (xy 175.26 177.8)
+			(xy 160.02 177.8)
+			(xy 175.26 177.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "efebaa18-1081-4524-9dcb-7ac7350ee800")
+	)
+	(global_label "+5V_PB"
+		(shape passive)
+		(at 165.1 243.84 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3bc1d4e9-cd7e-4523-924a-6c8d2f80156a")
+	)
+	(global_label "+5V_PB"
+		(shape passive)
+		(at 243.84 209.55 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7b560277-ed45-4c80-9e4b-6f4236c97ba9")
+	)
+	(global_label "+5V_PB"
+		(shape passive)
+		(at 144.78 165.1 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6fe599c0-6031-4c79-b6b5-9a85c1770cc9")
+	)
+	(global_label "+5V_PB"
+		(shape passive)
+		(at 152.4 209.55 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "32081697-660b-4df4-a780-294d67a3fc67")
+	)
+	(global_label "+5V_PB"
+		(shape passive)
+		(at 274.32 209.55 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0c602627-190a-4135-80da-36e009e12bdf")
+	)
+	(global_label "+5V_PB"
+		(shape passive)
+		(at 86.36 104.14 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d8f067a7-9064-4847-a6fe-094ae65c637f")
+	)
+	(global_label "+5V_PB"
+		(shape passive)
+		(at 213.36 209.55 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d8fe5cad-17f7-47df-ab80-c6538783022b")
+	)
+	(global_label "+5V_PB"
+		(shape passive)
+		(at 182.88 209.55 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7c7a8430-7f89-4549-ba2a-9cd6e69a6bfd")
+	)
+	(global_label "+5V_PB"
+		(shape passive)
+		(at 121.92 209.55 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "82eafe88-bba4-469a-bc44-5ff8a83e7fc5")
+	)
+	(global_label "+5V_PB"
+		(shape passive)
+		(at 99.06 243.84 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9d4c61e2-cdb0-4e46-a4d3-303a40e7f035")
 	)
 	(hierarchical_label "LED_SPI_MOSI"
 		(shape input)
@@ -1947,15 +2109,23 @@
 		)
 		(uuid "e942c53e-f5fb-4318-9c42-cc9460a5573a")
 	)
+  (text "ROUTING - DOTSTARS\nU7 -> D3 CLK/DATA short and routed together, over GND.\nLED-to-LED CO->CI and DO->DI as matched pairs.\nC40-C44 at each LED VDD pin. C51 where +5V_PB enters the chain.\nLEDs in the 5-dot shell pattern."
+    (at 199.39 149.86 0)
+    (effects (font (size 1.27 1.27) (bold yes) (color 255 0 0 1)) (justify left bottom))
+    (uuid "a1fbaeb4-5931-4903-8029-c076764cc3d9")
+  )
+  (text "DOTSTAR LEVEL SHIFT\nPower: +5V_PB (powerboard only). The LEDs and U7 are unpowered on USB, so a USB-only\n  board never carries LED current. U7 inputs are rated -0.5 to 7V regardless of VCC and\n  leak +/-1uA at VCC = 0V (SCLS264R), so 3.3V MCU drive is safe while U7 is off.\nU7 SN74AHCT125, 3.3V in -> 5V out, tpd 6.5ns max at 15pF (SCLS264R).\nBB-2020BGR-TRB VIH = 0.7 x VDD = 3.5V, so a shifter is needed.\nLED SPI (SPI2, TX only) = 3 Mbit/s in V0.3:\n   bit = 333ns, tpd = 2% of a bit. LED clock 15MHz abs, under 10MHz operating (p6).\nMust be AHCT: VIH 2.0V (TTL). AHC needs 3.5V.\nUsed: 1A p2 -> 1Y p3 CKI, 2A p5 -> 2Y p6 SDI, 1OE/2OE p1/p4 = GND.\nSpare gates 3/4: inputs p9/p12 = GND, OE p10/p13 = +5V_PB (off), outputs p8/p11 open.\nLED power-on state is not specified: firmware sends an all-off frame first.\n!! Default KiCad APA102-2020 footprint does NOT fit this LED -\n   make one from the BB-2020BGR-TRB land pattern.\n\nDECOUPLING\n   C45 100nF at U7.\n   C40-C44 100nF, one per LED (D3-D7).\n   C51 22uF bulk, >= 10V X5R/X7R. Up to 0.5W per LED (p3): 500mA for 5 LEDs."
+    (at 297.18 252.73 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "ee0554ae-c238-4ade-aa2d-d1c0e3e396fc")
+  )
 	(symbol
 		(lib_id "Device:R")
 		(at 74.93 161.29 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "036720c2-5304-4b48-a1d1-20f7cd8408bb")
 		(property "Reference" "R67"
@@ -2011,6 +2181,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "2"
 			(uuid "52b402da-d520-4f49-9304-8672a8cc3a1c")
 		)
@@ -2030,11 +2202,9 @@
 		(lib_id "power:GND")
 		(at 213.36 217.17 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "03d6b272-dd01-480d-8f77-5d2075c72a42")
 		(property "Reference" "#PWR618"
@@ -2091,6 +2261,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "21a5a31f-1da8-4b91-8940-873523056ddd")
 		)
@@ -2107,11 +2279,9 @@
 		(lib_id "power:GND")
 		(at 71.12 232.41 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "04782867-8e82-4f03-9c82-d1b7dd551011")
 		(property "Reference" "#PWR601"
@@ -2168,6 +2338,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "abe230a4-07dd-4b75-9e17-592eff6269eb")
 		)
@@ -2181,91 +2353,12 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 165.1 243.84 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "0a2dd7b4-4242-4620-a98d-2583fef741f7")
-		(property "Reference" "#PWR614"
-			(at 165.1 247.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 165.1 240.284 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 165.1 243.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 165.1 243.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 165.1 243.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7d0777ed-2fad-45b2-aa3d-3a143c6d648c")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/ee62a278-a94c-4411-ba4b-a0279340f73e"
-					(reference "#PWR614")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 213.36 213.36 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "0fe0f3fa-dd59-4e9b-971f-41b585ca166a")
 		(property "Reference" "C42"
@@ -2323,6 +2416,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "1719b2ca-953a-465e-b602-295760d86652")
 		)
@@ -2342,11 +2437,9 @@
 		(lib_id "power:GND")
 		(at 152.4 217.17 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "159d3aab-5c38-4806-b083-29928fc7c39f")
 		(property "Reference" "#PWR613"
@@ -2403,6 +2496,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "bd8385bc-e95e-439f-bc3f-9b7726dc9ace")
 		)
@@ -2416,91 +2511,12 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 243.84 209.55 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "182dfbd7-7cae-42cf-a128-a9ef3cce6880")
-		(property "Reference" "#PWR619"
-			(at 243.84 213.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 243.84 205.994 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 243.84 209.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 243.84 209.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 243.84 209.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ca93b0a2-564a-437a-9b29-2b7d5b41cd7d")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/ee62a278-a94c-4411-ba4b-a0279340f73e"
-					(reference "#PWR619")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 287.02 177.8 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "1ceaf150-20f9-408b-8c28-6e35e2f3c207")
 		(property "Reference" "TP18"
@@ -2556,6 +2572,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "8a358fee-dc85-425c-82e2-24e4fc8b50f2")
 		)
@@ -2572,11 +2590,9 @@
 		(lib_id "power:GND")
 		(at 86.36 186.69 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "22b7f531-0f94-42c8-bf4f-62274460861a")
 		(property "Reference" "#PWR605"
@@ -2633,6 +2649,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "9d753e0a-a43b-450b-939b-169fa4994b4b")
 		)
@@ -2646,91 +2664,12 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 144.78 165.1 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "270ba908-c344-4803-8ce2-c7798565a7cd")
-		(property "Reference" "#PWR610"
-			(at 144.78 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 144.78 161.544 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 144.78 165.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 144.78 165.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 144.78 165.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3505792c-7561-4416-ac38-d529fa36a56c")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/ee62a278-a94c-4411-ba4b-a0279340f73e"
-					(reference "#PWR610")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 274.32 213.36 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "28fab398-c802-4f33-81c0-84f1d6e6db61")
 		(property "Reference" "C44"
@@ -2788,6 +2727,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "30c57bb5-8438-4638-91ed-624d3eb176fb")
 		)
@@ -2804,168 +2745,12 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 152.4 209.55 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "37a2641f-b2dc-4208-a78c-837b02f104e8")
-		(property "Reference" "#PWR612"
-			(at 152.4 213.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 152.4 205.994 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 152.4 209.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 152.4 209.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 152.4 209.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9a5c52c3-7bef-406f-a334-ba3552316c7c")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/ee62a278-a94c-4411-ba4b-a0279340f73e"
-					(reference "#PWR612")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 274.32 209.55 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3de6f4ce-d392-4d8a-bcbc-7f9cccbbcb51")
-		(property "Reference" "#PWR621"
-			(at 274.32 213.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 274.32 205.994 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 274.32 209.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 274.32 209.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 274.32 209.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d9a400c1-7cdf-4aae-85e4-a85ceb7506b1")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/ee62a278-a94c-4411-ba4b-a0279340f73e"
-					(reference "#PWR621")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "LED:APA102-2020")
 		(at 243.84 180.34 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "3ea058e3-0208-4161-97f0-bf75a5315216")
 		(property "Reference" "D6"
@@ -3023,6 +2808,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "6"
 			(uuid "64cc0d75-7482-4e1f-8307-f0f32c337134")
 		)
@@ -3054,11 +2841,9 @@
 		(lib_id "74xx:74AHCT125")
 		(at 86.36 180.34 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "3f3eaea3-cec6-4033-8b95-da2ccdfb3257")
 		(property "Reference" "U7"
@@ -3114,6 +2899,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "11"
 			(uuid "196c653e-c6f6-441b-83ae-259d773a8b35")
 		)
@@ -3166,91 +2953,12 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 86.36 104.14 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "41cf2ae6-0cae-42ee-8419-12b2e9423061")
-		(property "Reference" "#PWR602"
-			(at 86.36 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 86.36 100.584 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 86.36 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 86.36 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 86.36 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "324904e6-f8a4-4bf8-bb93-edff4697bf9a")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/ee62a278-a94c-4411-ba4b-a0279340f73e"
-					(reference "#PWR602")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "74xx:74AHCT125")
 		(at 86.36 157.48 0)
 		(unit 2)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "42744fb3-c5de-4e21-bc15-af36cfdbaa9a")
 		(property "Reference" "U7"
@@ -3306,6 +3014,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "2e40ab24-a09b-48d7-8a8a-a76f39494b64")
 		)
@@ -3361,11 +3071,9 @@
 		(lib_id "power:GND")
 		(at 74.93 187.96 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "47833593-f26c-46e8-95d3-bff3afbcc61f")
 		(property "Reference" "#PWR623"
@@ -3422,6 +3130,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "af09f272-b919-4b22-ab3b-7d6e4ad4b241")
 		)
@@ -3435,91 +3145,12 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 213.36 209.55 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "573f1719-f0f6-43b7-840a-2fad3a4ebce6")
-		(property "Reference" "#PWR617"
-			(at 213.36 213.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 213.36 205.994 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 213.36 209.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 213.36 209.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 213.36 209.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6534a89f-8ca8-451e-9efd-c80834d281f8")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/ee62a278-a94c-4411-ba4b-a0279340f73e"
-					(reference "#PWR617")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "74xx:74AHCT125")
 		(at 86.36 232.41 0)
 		(unit 3)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "59f216b6-9df1-4e27-b372-ae1eba3501f9")
 		(property "Reference" "U7"
@@ -3575,6 +3206,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "2"
 			(uuid "480f3439-6ea5-4210-95e5-cbbcd75a5121")
 		)
@@ -3630,11 +3263,9 @@
 		(lib_id "power:GND")
 		(at 86.36 137.16 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "5c011def-c7b8-4e5b-a50a-ad02372a692e")
 		(property "Reference" "#PWR603"
@@ -3691,6 +3322,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "02109c81-8e49-4fa1-ab5a-742bfebc15f7")
 		)
@@ -3707,11 +3340,9 @@
 		(lib_id "Device:R")
 		(at 74.93 184.15 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "5f06c122-14f7-4ef2-b165-77ad97248f5e")
 		(property "Reference" "R66"
@@ -3767,6 +3398,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "c82c5377-b5bd-4408-a0e0-9d8fa0c48f9b")
 		)
@@ -3786,11 +3419,9 @@
 		(lib_id "Device:C")
 		(at 182.88 213.36 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "69bfe6e8-4b4d-432d-b3d6-b45c41246deb")
 		(property "Reference" "C41"
@@ -3848,6 +3479,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "55816690-f033-4968-9c4b-7b345ead6d56")
 		)
@@ -3867,11 +3500,9 @@
 		(lib_id "power:GND")
 		(at 137.16 232.41 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "8166b645-fcd0-4f10-a586-70982cbb4016")
 		(property "Reference" "#PWR609"
@@ -3928,6 +3559,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "782db682-3640-4e70-a2f3-49b687d0dcb0")
 		)
@@ -3944,11 +3577,9 @@
 		(lib_id "power:GND")
 		(at 144.78 195.58 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "87f8c639-08b7-40e8-98e5-ee4f03d1902c")
 		(property "Reference" "#PWR611"
@@ -4005,6 +3636,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "7dc9a173-67c0-402c-9c6c-2d754c4e639d")
 		)
@@ -4021,11 +3654,9 @@
 		(lib_id "power:GND")
 		(at 86.36 163.83 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "91265f0d-9982-4cc3-8cb8-3061f8c6e105")
 		(property "Reference" "#PWR604"
@@ -4082,6 +3713,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "390fef2b-0039-4584-8cfc-ac64de849157")
 		)
@@ -4098,11 +3731,9 @@
 		(lib_id "LED:APA102-2020")
 		(at 274.32 180.34 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "97df0155-4493-40f3-95c1-ecbfc28fadf9")
 		(property "Reference" "D7"
@@ -4160,6 +3791,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "1eb517f3-a952-4a2f-a759-767705c59db1")
 		)
@@ -4191,11 +3824,9 @@
 		(lib_id "Device:C")
 		(at 104.14 120.65 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "98c8c71b-da55-4f2f-abe9-f63c87778ace")
 		(property "Reference" "C45"
@@ -4253,6 +3884,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "2"
 			(uuid "0b77b132-c2c4-4671-9f29-2ec6ee44f296")
 		)
@@ -4272,11 +3905,9 @@
 		(lib_id "74xx:74AHCT125")
 		(at 86.36 120.65 0)
 		(unit 5)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "9f906914-aea1-485c-a736-acacf61c78de")
 		(property "Reference" "U7"
@@ -4332,6 +3963,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "2"
 			(uuid "b7e0f0b7-0dff-417e-8aab-e96af0ffa6ad")
 		)
@@ -4384,91 +4017,12 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 182.88 209.55 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a0c0094d-569b-4c80-a9cb-e7353e8042e5")
-		(property "Reference" "#PWR615"
-			(at 182.88 213.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 182.88 205.994 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 182.88 209.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 182.88 209.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 182.88 209.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5ec8c64b-e96d-4c86-861c-dba5098b124a")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/ee62a278-a94c-4411-ba4b-a0279340f73e"
-					(reference "#PWR615")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 243.84 213.36 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "b2991cf9-e774-47d2-8671-d3e5c5e8b867")
 		(property "Reference" "C43"
@@ -4526,6 +4080,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "8da28af1-76ef-435b-9b0f-495b6526e371")
 		)
@@ -4545,11 +4101,9 @@
 		(lib_id "LED:APA102-2020")
 		(at 152.4 180.34 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "b5a9526a-6fa6-476b-bb08-c400ca365d12")
 		(property "Reference" "D3"
@@ -4607,6 +4161,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "4"
 			(uuid "2892cf28-97c4-4321-9732-62a5c31bd9b4")
 		)
@@ -4638,11 +4194,9 @@
 		(lib_id "Connector:TestPoint")
 		(at 287.02 180.34 180)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "b9a0c686-0013-48a6-815f-1f6d7501a909")
 		(property "Reference" "TP19"
@@ -4698,6 +4252,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "6d720130-a2de-4df4-bb1f-d2ab627e4383")
 		)
@@ -4714,11 +4270,9 @@
 		(lib_id "power:GND")
 		(at 182.88 217.17 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "b9b81dc7-a8de-4c58-88b4-f213dbc940b6")
 		(property "Reference" "#PWR616"
@@ -4775,6 +4329,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "a5efa4a0-47f6-49d1-83eb-ec7e5e830ba8")
 		)
@@ -4791,11 +4347,9 @@
 		(lib_id "Device:C")
 		(at 121.92 213.36 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "c1306eb7-0ea0-4f8b-93fc-88de96508987")
 		(property "Reference" "C51"
@@ -4842,7 +4396,7 @@
 				)
 			)
 		)
-		(property "Description" "Bulk for the APA102 string (~300mA full white). Place where +5V enters the LEDs."
+		(property "Description" "Bulk for the DotStar chain, 22uF X5R/X7R >= 10V. Up to 0.5W per LED (BB-2020BGR-TRB p3): 500mA for 5 LEDs. Place where +5V_PB enters the LEDs."
 			(at 121.92 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -4853,6 +4407,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "d73d50fa-e135-44d5-8fb1-b802ce17931d")
 		)
@@ -4872,11 +4428,9 @@
 		(lib_id "power:GND")
 		(at 121.92 217.17 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "c827a889-a401-43eb-8680-30c6850f92c2")
 		(property "Reference" "#PWR608"
@@ -4933,6 +4487,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "58a9f4d3-7dc7-4999-9639-b0d6838462d0")
 		)
@@ -4946,168 +4502,12 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 121.92 209.55 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c84affe7-d0b4-443c-9e9a-95dc6a7e2c3f")
-		(property "Reference" "#PWR607"
-			(at 121.92 213.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 121.92 205.994 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 121.92 209.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 121.92 209.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 121.92 209.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e0493f87-e110-4d27-bb5a-07c7e503f0b4")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/ee62a278-a94c-4411-ba4b-a0279340f73e"
-					(reference "#PWR607")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 99.06 243.84 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ce2c7b37-dc6c-4bdc-9f15-b14c63c97c90")
-		(property "Reference" "#PWR606"
-			(at 99.06 247.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 99.06 240.284 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 99.06 243.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 99.06 243.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 99.06 243.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "152b7acc-25d1-4b79-9e27-10ecb3483742")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/ee62a278-a94c-4411-ba4b-a0279340f73e"
-					(reference "#PWR606")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 74.93 165.1 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "cfa9d00b-c1e4-43f8-aeaa-7174d4f6a2fc")
 		(property "Reference" "#PWR624"
@@ -5164,6 +4564,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "0598c5e0-78be-4d7b-95f1-9efd9bc37c03")
 		)
@@ -5180,11 +4582,9 @@
 		(lib_id "Device:C")
 		(at 152.4 213.36 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "d7fdddcc-eab8-4492-9c13-c425bcba2c6d")
 		(property "Reference" "C40"
@@ -5242,6 +4642,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "bbee466a-3246-4971-a2b4-eb35d372b0c1")
 		)
@@ -5261,11 +4663,9 @@
 		(lib_id "LED:APA102-2020")
 		(at 213.36 180.34 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "e6e2c4c9-7a0d-43c8-9790-1300d8f76c24")
 		(property "Reference" "D5"
@@ -5323,6 +4723,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "4"
 			(uuid "6e076cc8-c8dc-4877-982f-a81ae26600a8")
 		)
@@ -5354,11 +4756,9 @@
 		(lib_id "power:GND")
 		(at 243.84 217.17 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "ee72f2c3-131b-4d05-ae17-f46342a3a908")
 		(property "Reference" "#PWR620"
@@ -5415,6 +4815,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "f63d8181-ad94-41c2-b7b7-d9fb906a7045")
 		)
@@ -5431,11 +4833,9 @@
 		(lib_id "74xx:74AHCT125")
 		(at 152.4 232.41 0)
 		(unit 4)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "f2acf1c5-5ff3-4f06-8054-24176412c4ea")
 		(property "Reference" "U7"
@@ -5491,6 +4891,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "54c0656b-5e5d-4e0e-ba17-dbc7c64c0341")
 		)
@@ -5546,11 +4948,9 @@
 		(lib_id "power:GND")
 		(at 274.32 217.17 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "fc171fa0-e253-47bb-b34f-13451e4b1f48")
 		(property "Reference" "#PWR622"
@@ -5607,6 +5007,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "02910af4-9b26-4ee7-a473-ef9a7d646e73")
 		)
@@ -5623,11 +5025,9 @@
 		(lib_id "LED:APA102-2020")
 		(at 182.88 180.34 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
 		(uuid "fd9de8da-be93-401d-b3d5-9d73e0249e3c")
 		(property "Reference" "D4"
@@ -5685,6 +5085,8 @@
 				)
 			)
 		)
+		(body_style 1)
+		(in_pos_files yes)
 		(pin "1"
 			(uuid "2ebedb01-00a0-46cd-8941-83540f83c49c")
 		)
