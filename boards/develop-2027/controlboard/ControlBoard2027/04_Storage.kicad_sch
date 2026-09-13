@@ -2661,17 +2661,6 @@
 		)
 		(uuid "bff7c316-d43b-4cc1-929b-679edf97e40c")
 	)
-	(text "SD CARD\nCard detect: J4 (XKTF-015) CD switch returns through the shell, so SH is on GND.\nClock (V0.3 clock tree): SDMMC1 kernel = PLL1Q = 48MHz, CLKDIV = 3\n  f = 48 / (2 x 3) = 8MHz. Default Speed allows 25MHz; 4-bit = 32 Mbit/s raw.\n  Fastest Default Speed from 48MHz: CLKDIV 1 = 24MHz.\nR63 22R series on CLK (at the MCU). R10-R14 47k on DAT0-3/CMD, R15 10k on CD.\nCard detect = PG7 (p92), CubeMX label Detect_SDIO (net SD_DETECT)."
-		(exclude_from_sim no)
-		(at 192.278 151.892 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ec835ff9-c552-49c0-b264-43069521223e")
-	)
 	(junction
 		(at 83.82 113.03)
 		(diameter 0)
@@ -3229,6 +3218,11 @@
 		)
 		(uuid "e05bf707-f789-4369-aee4-3be5e93ae4d7")
 	)
+  (text "SD CARD\nCard detect: the XKTF-015 drawing shows a Cd terminal but not its return or polarity.\n  SH is on GND assuming Cd returns through the shell; check a sample (DESIGN_AUDIT m13).\nClock (V0.3 clock tree): SDMMC1 kernel = PLL1Q = 48MHz, CLKDIV = 3\n  f = 48 / (2 x 3) = 8MHz. Default Speed allows 25MHz; 4-bit = 32 Mbit/s raw.\n  Fastest Default Speed from 48MHz: CLKDIV 1 = 24MHz.\nR63 22R series on CLK (at the MCU). R10-R14 47k on DAT0-3/CMD, R15 10k on CD.\nCard detect = PG7 (p92), CubeMX label Detect_SDIO (net SD_DETECT).\nCard VDD is not switchable: firmware recovers a hung card with CMD0 (DESIGN_AUDIT M18)."
+    (at 192.278 151.892 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "88bc3135-1eef-42be-b481-0acae0027d10")
+  )
 	(symbol
 		(lib_id "Device:R")
 		(at 83.82 172.72 0)
@@ -4139,7 +4133,7 @@
 				)
 			)
 		)
-		(property "Description" "microSD push-push (XKTF-015). CD switch returns through the shell, so SH must be on GND."
+		(property "Description" "microSD push-push (XKTF-015). The drawing shows a Cd terminal but not its return path or polarity; SH on GND assumes Cd returns through the shell. Check a sample before release (DESIGN_AUDIT m13). Needs a custom footprint."
 			(at 157.48 127 0)
 			(hide yes)
 			(show_name no)
