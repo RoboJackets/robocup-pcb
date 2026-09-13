@@ -2114,10 +2114,10 @@
     (effects (font (size 1.27 1.27) (bold yes) (color 255 0 0 1)) (justify left bottom))
     (uuid "a1fbaeb4-5931-4903-8029-c076764cc3d9")
   )
-  (text "DOTSTAR LEVEL SHIFT\nPower: +5V_PB (powerboard only). The LEDs and U7 are unpowered on USB, so a USB-only\n  board never carries LED current. U7 inputs are rated -0.5 to 7V regardless of VCC and\n  leak +/-1uA at VCC = 0V (SCLS264R), so 3.3V MCU drive is safe while U7 is off.\nU7 SN74AHCT125, 3.3V in -> 5V out, tpd 6.5ns max at 15pF (SCLS264R).\nBB-2020BGR-TRB VIH = 0.7 x VDD = 3.5V, so a shifter is needed.\nLED SPI (SPI2, TX only) = 3 Mbit/s in V0.3:\n   bit = 333ns, tpd = 2% of a bit. LED clock 15MHz abs, under 10MHz operating (p6).\nMust be AHCT: VIH 2.0V (TTL). AHC needs 3.5V.\nUsed: 1A p2 -> 1Y p3 CKI, 2A p5 -> 2Y p6 SDI, 1OE/2OE p1/p4 = GND.\nSpare gates 3/4: inputs p9/p12 = GND, OE p10/p13 = +5V_PB (off), outputs p8/p11 open.\nLED power-on state is not specified: firmware sends an all-off frame first.\n!! Default KiCad APA102-2020 footprint does NOT fit this LED -\n   make one from the BB-2020BGR-TRB land pattern.\n\nDECOUPLING\n   C45 100nF at U7.\n   C40-C44 100nF, one per LED (D3-D7).\n   C51 22uF bulk, >= 10V X5R/X7R. Up to 0.5W per LED (p3): 500mA for 5 LEDs."
+  (text "DOTSTAR LEVEL SHIFT\nThe LEDs need a 5V-level logic high, so U7 (AHCT, TTL inputs) shifts the 3.3V SPI.\nPowered from +5V_PB: the LEDs never load USB, and U7 inputs are safe while unpowered.\nUsed: 1A p2 -> 1Y p3 CKI, 2A p5 -> 2Y p6 SDI, 1OE/2OE p1/p4 = GND.\nSpare gates 3/4: inputs p9/p12 = GND, OE p10/p13 = +5V_PB (off), outputs p8/p11 open.\nR66/R67 hold the inputs low while the MCU pins float at reset.\nLED power-on state is undefined: firmware sends an all-off frame first.\n!! Default KiCad APA102-2020 footprint does NOT fit this LED (C1).\nC45 at U7, C40-C44 one per LED, C51 bulk where +5V_PB enters.\nDESIGN_NOTES.md §10."
     (at 297.18 252.73 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "ee0554ae-c238-4ade-aa2d-d1c0e3e396fc")
+    (uuid "7618e3c3-001a-4018-8468-0e06eef5aa33")
   )
 	(symbol
 		(lib_id "Device:R")

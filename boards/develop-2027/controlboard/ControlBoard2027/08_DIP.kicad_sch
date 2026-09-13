@@ -2020,10 +2020,10 @@
 		)
 		(uuid "9bb53f5c-abc4-44af-a9a0-31a54cd1b65f")
 	)
-  (text "DIP PULL-UPS = 100k\nSTM32H7 input leakage +/-250nA (DS13313 Table 51), VIH = 0.7 x VDD = 2.31V. Worst-case high:\n   10k  -> 3.30V, 330uA per closed switch\n   100k -> 3.28V, 33uA per closed switch   <- used\n   1M   -> 3.05V, 3.3uA; still valid but slow and noise-prone\n100k: solid high level, low current, still enough wetting current for gold contacts.\nRead at boot only. If read continuously, add 100nF per pin.\nDIP4 = PC0, DIP5 = PC1 (V0.3)."
+  (text "DIP PULL-UPS = 100k\nSolid logic high with little current through each closed switch.\nRead at boot only; add 100nF per pin if read continuously.\nDIP4 = PC0, DIP5 = PC1 (V0.3). DESIGN_NOTES.md §9."
     (at 33.02 271.78 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "dd0b7267-c9aa-4732-bd45-1454195557a0")
+    (uuid "c0223946-7410-49bf-8eaf-db42cff3e567")
   )
 	(symbol
 		(lib_id "power:+3V3")

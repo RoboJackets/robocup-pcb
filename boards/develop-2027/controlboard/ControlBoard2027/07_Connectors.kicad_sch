@@ -5274,16 +5274,6 @@
 		)
 		(uuid "8dff072c-ed6b-44ff-9a75-e627cc03a03e")
 	)
-	(text "RADIO MEZZANINE J14 - 2x10\n\n   1  +3V3_PB         2  GND\n   3  +3V3_PB         4  GND\n   5  ESP_SPI_SCK     6  GND\n   7  ESP_SPI_MOSI    8  GND\n   9  ESP_SPI_MISO   10  GND\n  11  ESP_SPI_CS     12  GND\n  13  ESP_HANDSHAKE  14  GND\n  15  ESP_DATA_READY 16  GND\n  17  ESP_RST        18  GND\n  19  +3V3_PB        20  GND\n\nPower: +3V3_PB (after U9, powerboard only). The radio is off on USB-only power, which keeps\n  USB under U13's 0.5A limit. While PWR_SRC_3V3 is low, firmware holds SPI3, CS and RST\n  low or Hi-Z so the unpowered ESP is not back-fed through its I/O.\n3x +3V3_PB for the 650mA radio (~217mA/pin vs 408mA TX peak). GND opposite every signal.\nESP SPI (SPI3) = 3 Mbit/s, mode 3 (CPOL high, CPHA 2-edge) - matches ESP-Hosted.\n!! V0.3 has SPI hardware CRC on and 4-bit data size: set CRC off, 8-bit (ESP-Hosted\n   uses its own checksum).\nDaughterboard: match this pinout, pull ESP EN up, diode-OR its own USB 3V3, and keep\n  HANDSHAKE/DATA_READY off ESP32-C5 strapping pins (R75/R76 100k pull-downs).\nFootprint TBD - must latch, not a 2.54mm header."
-		(at 149.86 300.99 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ac82c1ed-4ae2-4c73-9c81-4632c53113ca")
-	)
 	(text "ROUTING - RADIO MEZZANINE J14\nESP_SPI SCK/MOSI/MISO/CS: 50R, length-matched +/-2mm, over solid GND.\n+3V3_PB pins 1/3/19 from a wide pour; every GND pin via straight to the plane.\n\nROUTING - MOTOR SPI J5-J9\nMOTOR_SPI SCK/MOSI/MISO: one daisy-chained bus, 50R, no stubs.\nSCK spaced 3W from MISO/MOSI. U10/U11 ESD right at the connectors.\n\nROUTING - I2C J10-J13\nSDA/SCL routed as a pair. U12 ESD at J10-J12 (keep them together). U15 at the +5V_EXT branch."
 		(at 219.71 250.19 0)
 		(effects
@@ -6514,6 +6504,11 @@
 		)
 		(uuid "f907c8c4-11ca-4588-b12f-f2d5e8cdfdc6")
 	)
+  (text "RADIO MEZZANINE J14 - 2x10\n\n   1  +3V3_PB         2  GND\n   3  +3V3_PB         4  GND\n   5  ESP_SPI_SCK     6  GND\n   7  ESP_SPI_MOSI    8  GND\n   9  ESP_SPI_MISO   10  GND\n  11  ESP_SPI_CS     12  GND\n  13  ESP_HANDSHAKE  14  GND\n  15  ESP_DATA_READY 16  GND\n  17  ESP_RST        18  GND\n  19  +3V3_PB        20  GND\n\nPowered from +3V3_PB (powerboard only): the radio is off on USB, keeping USB current low.\nWith no powerboard, firmware holds the radio pins low or Hi-Z.\nSPI3 mode 3, 3 Mbit/s, hardware CRC off, 8-bit (V0.3 differs: M4).\nDaughterboard: match this pinout, pull EN up, diode-OR its USB 3V3, keep HANDSHAKE and\nDATA_READY off strapping pins (m1). Needs a latching connector (M6).\nDESIGN_NOTES.md §11."
+    (at 149.86 300.99 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "ef1a2424-8c7f-4dda-878d-0d340d0529c4")
+  )
 	(symbol
 		(lib_id "Device:R")
 		(at 345.44 53.34 90)
@@ -9472,7 +9467,7 @@
 				)
 			)
 		)
-		(property "Description" "MOTOR_SPI_SCK at the connector end of the bus. Scope with the 5 cables fitted to tune R41 (DESIGN_AUDIT m4)."
+		(property "Description" "MOTOR_SPI_SCK at the connector end of the bus. Scope with the 5 cables fitted to tune R41 (DESIGN_NOTES.md m4)."
 			(at 342.9 147.32 0)
 			(hide yes)
 			(show_name no)

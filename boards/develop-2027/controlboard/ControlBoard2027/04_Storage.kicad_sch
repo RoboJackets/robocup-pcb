@@ -2611,17 +2611,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "R63 22R: series termination on SDMMC_CK.\nPin ~25R + 22R ~ 50R trace, so edge reflections are absorbed\nat the MCU instead of ringing (a ring on CLK = extra clock edge).\nOnly works at the MCU end (PC12)."
-		(exclude_from_sim no)
-		(at 95.25 189.23 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "044350bf-df1a-48a8-822c-9518725d335b")
-	)
 	(text "SD ESD U14 (at J4) + CLK test point"
 		(exclude_from_sim no)
 		(at 160.02 180.34 0)
@@ -3218,10 +3207,15 @@
 		)
 		(uuid "e05bf707-f789-4369-aee4-3be5e93ae4d7")
 	)
-  (text "SD CARD\nCard detect: the XKTF-015 drawing shows a Cd terminal but not its return or polarity.\n  SH is on GND assuming Cd returns through the shell; check a sample (DESIGN_AUDIT m13).\nClock (V0.3 clock tree): SDMMC1 kernel = PLL1Q = 48MHz, CLKDIV = 3\n  f = 48 / (2 x 3) = 8MHz. Default Speed allows 25MHz; 4-bit = 32 Mbit/s raw.\n  Fastest Default Speed from 48MHz: CLKDIV 1 = 24MHz.\nR63 22R series on CLK (at the MCU). R10-R14 47k on DAT0-3/CMD, R15 10k on CD.\nCard detect = PG7 (p92), CubeMX label Detect_SDIO (net SD_DETECT).\nCard VDD is not switchable: firmware recovers a hung card with CMD0 (DESIGN_AUDIT M18)."
+  (text "R63 22R: source termination on SDMMC_CK, at the MCU (PC12),\nso clock reflections are absorbed instead of adding clock edges.\nDESIGN_NOTES.md §8."
+    (at 95.25 189.23 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "5b5b41e4-3d76-42f9-a3b0-96f85a9f7408")
+  )
+  (text "SD CARD\nCard detect on PG7 (SD_DETECT). SH on GND assumes detect returns through the shell;\ncheck a sample (m13). DAT/CMD pull-ups in the SD range, none on CLK.\nSDMMC1 starts at 8MHz for bring-up, 24MHz after checking TP11.\nCard power is not switchable; firmware recovers a hung card (M18).\nDESIGN_NOTES.md §8."
     (at 192.278 151.892 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "88bc3135-1eef-42be-b481-0acae0027d10")
+    (uuid "23847d3c-b34d-4b6d-ba5f-ea9778e3dd2d")
   )
 	(symbol
 		(lib_id "Device:R")
@@ -4133,7 +4127,7 @@
 				)
 			)
 		)
-		(property "Description" "microSD push-push (XKTF-015). The drawing shows a Cd terminal but not its return path or polarity; SH on GND assumes Cd returns through the shell. Check a sample before release (DESIGN_AUDIT m13). Needs a custom footprint."
+		(property "Description" "microSD push-push (XKTF-015). The drawing shows a Cd terminal but not its return path or polarity; SH on GND assumes Cd returns through the shell. Check a sample before release (DESIGN_NOTES.md m13). Needs a custom footprint."
 			(at 157.48 127 0)
 			(hide yes)
 			(show_name no)
