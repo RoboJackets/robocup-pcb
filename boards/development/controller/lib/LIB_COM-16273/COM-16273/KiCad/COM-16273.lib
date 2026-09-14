@@ -1,0 +1,35 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model COM-16273
+#/13667532/2024811/2.50/14/3/Variable Resistor
+DEF COM-16273 VR 0 30 Y Y 1 F N
+F0 "VR" 1150 300 50 H V L CNN
+F1 "COM-16273" 1150 200 50 H V L CNN
+F2 "COM16273" 1150 100 50 H I L CNN
+F3 "https://cdn.sparkfun.com/assets/f/e/3/8/0/3D16A1N-T-50___________.pdf" 1150 0 50 H I L CNN
+F4 "Joystick, 2 - Axis Analog (Resistive) Output" 1150 -100 50 H I L CNN "Description"
+F5 "19.5" 1150 -200 50 H I L CNN "Height"
+F6 "474-COM-16273" 1150 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/SparkFun/COM-16273?qs=DPoM0jnrROWh8LlDtBljIg%3D%3D" 1150 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "SparkFun" 1150 -500 50 H I L CNN "Manufacturer_Name"
+F9 "COM-16273" 1150 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X CCW1 1 0 0 200 R 50 50 0 0 P
+X WIPER1 2 0 -100 200 R 50 50 0 0 P
+X CW1 3 0 -200 200 R 50 50 0 0 P
+X CCW2 4 0 -300 200 R 50 50 0 0 P
+X WIPER2 5 0 -400 200 R 50 50 0 0 P
+X CW2 6 0 -500 200 R 50 50 0 0 P
+X MH1 7 0 -600 200 R 50 50 0 0 P
+X MH2 8 1300 0 200 L 50 50 0 0 P
+X MH3 9 1300 -100 200 L 50 50 0 0 P
+X MH4 10 1300 -200 200 L 50 50 0 0 P
+X COM_1 S1 1300 -300 200 L 50 50 0 0 P
+X COM_2 S2 1300 -400 200 L 50 50 0 0 P
+X NO_1 S3 1300 -500 200 L 50 50 0 0 P
+X NO_2 S4 1300 -600 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 1100 100 1100 -700 200 -700 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

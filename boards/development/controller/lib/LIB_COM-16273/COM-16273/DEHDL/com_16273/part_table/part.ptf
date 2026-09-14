@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'COM_16273'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "SparkFun", "COM-16273" (!) = "", "COM16273", "Other", "474-COM-16273", "https://www.mouser.co.uk/ProductDetail/SparkFun/COM-16273?qs=DPoM0jnrROWh8LlDtBljIg%3D%3D", "Joystick, 2 - Axis Analog (Resistive) Output", "https://cdn.sparkfun.com/assets/f/e/3/8/0/3D16A1N-T-50___________.pdf", "19.5 mm"
+END_PART
+
+END.
