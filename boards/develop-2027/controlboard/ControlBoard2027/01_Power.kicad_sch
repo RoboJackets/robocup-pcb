@@ -5483,11 +5483,6 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid "a1393490-7732-48d7-a6d6-92c33f0f3444")
   )
-  (text "POWER MUX - U1/U2 TPS2116, priority mode\nPowerboard (VIN1) is used whenever present; USB (VIN2) is the bench fallback.\nNo output diodes needed: the TPS2116 blocks reverse current into an unused input.\nST tells the MCU which source is active (PWR_SRC_5V/3V3). R83 protects PA2 from the bootloader.\nThe radio runs from +3V3_PB only. The DotStars run from +5V, so they also draw from USB.\nDetails: DESIGN_NOTES.md §2 and §4. Sag at switchover with USB attached: M7."
-    (at 33.02 279.4 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "1125f3b8-40d8-4744-8bd5-71e33fec6866")
-  )
   (text "ROUTING - POWER INPUT\nJ1 -> Q1/D9/D10 -> F2/F3 -> U1/U2: 2A traces, >=1.0mm on 1oz outer (or pours).\nQ1, D9 and D10 right at J1 (D9 stays after Q1). Short wide GND via at each TVS.\nC1/C2/C7 at TPS2116 VIN, C3/C8 at VOUT.\nU3 tab to a copper pour. R46/R47 near J1, UART pair away from the power pours."
     (at 240.03 68.58 0)
     (effects (font (size 1.27 1.27) (bold yes) (color 255 0 0 1)) (justify left bottom))
@@ -5532,6 +5527,11 @@
     (at 40.64 196.85 0)
     (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
     (uuid "16e0dd19-30b6-4064-952d-214b9fd9cb3b")
+  )
+  (text "POWER MUX - U1/U2 TPS2116, priority mode\nPowerboard (VIN1) is used whenever present; USB (VIN2) is the bench fallback.\nNo output diodes needed: the TPS2116 blocks reverse current into an unused input.\nST tells the MCU which source is active (PWR_SRC_5V/3V3). R83 protects PA2 from the bootloader.\nThe radio (J14, +3V3) and DotStars (+5V) run from the mux outputs, so they also draw from USB.\nDetails: DESIGN_NOTES.md §2 and §4. Sag at switchover with USB attached: M7."
+    (at 33.02 279.4 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "7f1dff67-4aad-42b0-a332-56d6e98c3926")
   )
 	(symbol
 		(lib_id "Device:R")

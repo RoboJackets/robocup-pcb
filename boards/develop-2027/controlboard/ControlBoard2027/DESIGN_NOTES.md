@@ -65,14 +65,15 @@ The powerboard supplies 5V and 3V3 on J1. USB supplies 5V as a bench fallback.
 | Rail | Source | Loads |
 |---|---|---|
 | +5V_PB | Powerboard, after Q1 and F2 | U1 VIN1 |
-| +3V3_PB | Powerboard, after F3 | Radio (J14), U2 VIN1 |
+| +3V3_PB | Powerboard, after F3 | U2 VIN1 |
 | VBUS | USB, after F1 | U1 VIN2, U3 |
 | +3V3_LDO | U3 from VBUS | U2 VIN2 |
 | +5V | U1 output (powerboard, else USB) | DotStars, U7, motor connectors, F4 (+5V_EXT) |
-| +3V3 | U2 output (powerboard, else USB) | MCU, SD, IMU, OLED, pull-ups, motor 3V3 |
+| +3V3 | U2 output (powerboard, else USB) | MCU, SD, IMU, OLED, pull-ups, motor 3V3, radio (J14) |
 
-The radio sits on the powerboard-only rail, so on USB alone it stays unpowered. The DotStars
-run from the mux output, so they light on USB too; firmware caps their brightness on USB (§10).
+The radio board (RadioBoard2027) and the DotStars run from the mux outputs, so both also work
+on USB alone. Firmware caps LED brightness on USB (§10). The radio adds up to about 0.4A of Wi-Fi
+TX peaks to the USB budget (§4, m22).
 
 Protection is kept simple: a TVS and a PTC fuse on each input. There are no eFuses, so the
 board has no undervoltage lockout, no overvoltage clamp, no fast current limit, no fault
@@ -174,6 +175,9 @@ VBUS from J2 goes through F1 straight to U1 VIN2 and U3. There is no eFuse or lo
 ### U3 AP7361C-33E LDO
 1A, 360mV dropout at 1A, stable with ≥2.2µF MLCC (DS37274). SOT-223: 1 IN, 2 GND, 3 OUT.
 On USB alone it carries the MCU, SD, IMU and OLED, about 0.35A: (5.0 - 3.3) × 0.35 = 0.6W.
+The radio adds Wi-Fi TX peaks of 313mA at 2.4GHz and 403mA at 5GHz (ESP32-C5-WROOM-1U datasheet
+v1.3, Tables 6-4/6-5), so the LDO sees up to about 0.75A peak and 1.3W. Its average is far lower,
+but check the SOT-223 copper area on the layout.
 C5/C6 10uF in and out.
 
 ### Rail LEDs and test points
@@ -273,7 +277,7 @@ must not add their own pull-ups.
   0.55A at 50°C, 0.11-0.45Ω, max 0.2s to trip at 8A, 16V. The plain MF-MSMF075 used before is
   marked not recommended for new designs in the Rev BD datasheet; the /16X version is current.
   The hold current matches the 0.5A a USB 2.0 port supplies. The USB-only load is about 0.35A
-  plus the LEDs capped at 100mA (§10). A 1.5A trip opens on a board or cable short from any
+  plus the LEDs capped at 100mA (§10) plus the radio's Wi-Fi TX bursts (m22). A 1.5A trip opens on a board or cable short from any
   port that can source it; a port with a lower limit shuts itself off first. Running motor
   modules from USB can exceed the hold current and trip F1, which is intended: use the
   powerboard for that.
@@ -396,32 +400,39 @@ holes differ. The schematic assumes STEMMA QT, which has its own reset chip (M5)
 SA0 goes through a diode on the module, so firmware also probes 0x3D. H1-H4 are the M2 mounting
 holes.
 
-### J14 radio mezzanine
-2x10, pins 1-2 at the top.
+### J14 radio link
+Cable to RadioBoard2027 J2 (ESP32-C5-WROOM-1U, ESP-Hosted over SPI; see that project's
+DESIGN_NOTES.md). Both boards use the same JST GH 1.25mm 15-pin vertical header,
+BM15B-GHS-TBT(LF)(SN), with a straight 1:1 cable (housing GHR-15V-S, terminal SSHL-002T-P0.2,
+26 AWG).
+
+JST GH was chosen because its datasheet is the only one of the candidates that states a positive
+latch ("large outer latch for positive lock", JST eGH), it is rated 1.0A per contact at 26 AWG,
+and footprints exist in KiCad 10. 2.54mm headers came loose in competition (radio design doc).
 
 | Pin | Net | Pin | Net |
 |---|---|---|---|
-| 1 | +3V3_PB | 2 | +3V3_PB |
-| 3 | GND | 4 | +3V3_PB |
-| 5 | ESP_SPI_SCK | 6 | GND |
-| 7 | GND | 8 | ESP_HANDSHAKE |
-| 9 | ESP_SPI_MOSI | 10 | GND |
-| 11 | GND | 12 | ESP_DATA_READY |
-| 13 | ESP_SPI_MISO | 14 | GND |
-| 15 | GND | 16 | ESP_RST |
-| 17 | ESP_SPI_CS | 18 | GND |
-| 19 | GND | 20 | GND |
+| 1 | +3V3 | 9 | GND |
+| 2 | +3V3 | 10 | ESP_SPI_CS |
+| 3 | GND | 11 | GND |
+| 4 | ESP_SPI_SCK | 12 | ESP_HANDSHAKE |
+| 5 | GND | 13 | ESP_DATA_READY |
+| 6 | ESP_SPI_MOSI | 14 | ESP_RST (radio EN) |
+| 7 | GND | 15 | GND |
+| 8 | ESP_SPI_MISO | MP | GND |
 
-Signals alternate sides, so every signal has GND across from it and above and below it in its
-own column. No two signals are adjacent in either direction. The daughterboard must copy this.
-
-
-- Three power pins carry 217mA each against a 408mA TX peak (m3).
-- +3V3_PB leaves the radio unpowered on USB alone. Firmware then holds its pins low or Hi-Z.
-- R73 10k ESP_SPI_CS pull-up goes to +3V3_PB, so no current flows into an unpowered ESP.
-- R75/R76 100k pull-downs on HANDSHAKE/DATA_READY stop false interrupts with the radio absent.
-  The daughterboard must keep these off ESP32-C5 strapping pins (m1).
-- C47 22uF + C48 100nF local decoupling on +3V3_PB.
+- SCK, MOSI, MISO and CS each have GND on both sides. The slow lines (HANDSHAKE, DATA_READY,
+  RESET) are grouped; a fully interleaved layout would need 17 pins, which GH does not offer.
+- Power: two pins at 1.0A each carry the radio's 403mA TX peak with margin.
+- The radio runs from the muxed +3V3, so it is powered whenever the MCU is. The radio board has its
+  own TPS2116, which blocks its USB supply from back-feeding this board.
+- R73 10k ESP_SPI_CS pull-up to +3V3 keeps the radio deselected while PG15 floats at reset.
+- R75/R76 100k pull-downs on HANDSHAKE/DATA_READY stop false interrupts with the radio absent or
+  in reset. On the C5 these are GPIO3 (MTDI) and GPIO4 (MTCK). GPIO3 is a strapping pin, but it only
+  sets the SDIO clock edge; boot mode is set by GPIO26-28 (ESP32-C5 datasheet v1.5 §3).
+- ESP_RST (PB7) drives the radio EN open-drain. The radio board holds EN up with 10k/1µF and
+  has 470Ω in series.
+- C47 22uF + C48 100nF local decoupling on +3V3 at J14.
 
 ---
 
@@ -488,8 +499,8 @@ clocking (AN2606 Table 111), so DFU does not depend on these settings.
 | PA15 | (unused) | Reset / analog | R81 holds bootloader SPI3 NSS high |
 | PC5, PB0, PB1, PB2 | MOTOR0-3_SPI_CS | Output PP, init high | R68-R71 hold CS high through reset |
 | PF11 | DRIBBLER_SPI_CS | Output PP, init high | R72 |
-| PG15 | ESP_SPI_CS | Output PP, init high | R73 to +3V3_PB; drive low while PWR_SRC_3V3 is low |
-| PB7 | ESP_RST | Open drain, init released | ESP EN pull-up is on the daughterboard; never drive high |
+| PG15 | ESP_SPI_CS | Output PP, init high | R73 pull-up to +3V3 |
+| PB7 | ESP_RST | Open drain, init released | ESP EN pull-up is on the radio board; never drive high |
 | PB5 | ESP_HANDSHAKE | EXTI rising | R75 pull-down |
 | PB6 | ESP_DATA_READY | EXTI rising | R76 pull-down |
 | PF3 | ACCEL_EXTI | EXTI rising | R64 pull-down; set INT1 push-pull active high (BMI088 5.3.16) |
@@ -502,9 +513,9 @@ clocking (AN2606 Table 111), so DFU does not depend on these settings.
 - Set "Set all free pins as analog" to Yes (V0.3: No).
 - OLED: probe 0x3C and 0x3D (M5).
 - Power-source changes: poll PA2/PA3. On any change, re-initialise SD, IMU and OLED (M7).
-- While PWR_SRC_3V3 is low, hold PB3, PB4, PD6, PG15 and PB7 low or Hi-Z so the unpowered radio
-  is not back-fed; restart ESP-Hosted when it goes high. Resend the LED frame after any
-  PWR_SRC change.
+- The radio shares +3V3 with the MCU, so no pin holding is needed for it. After a PWR_SRC change
+  or brown-out, pulse ESP_RST and restart ESP-Hosted. Resend the LED frame after any PWR_SRC
+  change.
 - Cap total LED current to about 250mA on the powerboard and about 100mA while PWR_SRC_5V is
   low (USB power) (§10).
 - The motor modules must release MISO while their CS is high (M9).
@@ -559,9 +570,9 @@ J1 and the loads limits voltage except the TVS diodes, which only start at 7.5V.
 - The 3V3 input has no reverse protection: a mirrored cable puts -3.3V on the 3V3 loads.
 The powerboard has to regulate and J1 has to be keyed and pinned so these cannot happen.
 
-**M2 3V3 margin.** At 1A, F3 (140mΩ max) + U2 (59mΩ) + J1 (20mΩ) drop 0.22V. The radio sits
-before U2, so it sees about 0.16V less than the powerboard: a 3.30V powerboard gives about 3.14V
-against the ESP32-C5's 3.0V minimum. 3.4V ±3% is still the preferred setpoint; with no clamp,
+**M2 3V3 margin.** At 1A, F3 (140mΩ max) + U2 (59mΩ) + J1 (20mΩ) drop 0.22V, so a 3.30V
+powerboard gives about 3.08V on +3V3. The radio module (3.0V minimum) sits behind a further cable
+and mux drop (m3). 3.4V ±3% is still the preferred setpoint; with no clamp,
 the powerboard must never exceed 3.6V (STM32 VDD max).
 
 **M3 Rail budget.** F2 and F3 hold 0.95A at 50°C and trip at 2.5A (§3). On 5V, the DotStars
@@ -578,21 +589,23 @@ has no reset chip, and the SSD1306 needs RES# held low ≥3µs after power-up. S
 through a diode (about 0.5-0.6V against 0.66V max low), so probe both addresses. Order STEMMA QT
 and take J13 and H1-H4 from its board file.
 
-**M6 Connector parts.** J10-J12 are generic, unkeyed and have no MPN. J14 needs a latching
-mezzanine. J1 JST-XH is friction lock and rated 3A only with AWG22. J3 needs a keyed header.
+**M6 Connector parts.** J10-J12 are generic, unkeyed and have no MPN. J1 JST-XH is friction lock
+and rated 3A only with AWG22. J3 needs a keyed header. J14 is now a latching JST GH (§11); a
+premade 15-pin GH cable could not be confirmed at a distributor, so plan on crimping or a
+custom harness.
 
 **M7 Mux switchover sag (bench only).** With USB attached, removing the powerboard lets +3V3 sag to
 2.13-2.55V and +5V to 3.42-4.20V before the mux switches, because VIN1 stays tied to VOUT until
 PR1 falls. On the robot there is no USB, so this never happens. Handled with a BOR level and
-firmware re-initialisation. The radio is on +3V3_PB and never sees the mux. The DotStars do; they
-may show garbage during the sag, so firmware resends the frame after any PWR_SRC change.
+firmware re-initialisation. The radio and DotStars both see the sag; firmware resets the radio
+and resends the LED frame after any PWR_SRC change.
 
 **M9 Shared motor MISO.** All five modules share MISO. It works only if each module releases MISO
 while deselected. Add a 100k pull-down if they do not.
 
-**M10 No mating kicker or radio design.** The only kicker in the repo (v3.4) uses SPI with RESET
-over 8 pins, not I2C. The in-repo daughterboard is the Seeed XIAO ESP32-C5 reference, not the
-WROOM-1U design. Freeze J10 and J14 before layout.
+**M10 No mating kicker design.** The only kicker in the repo (v3.4) uses SPI with RESET over 8
+pins, not I2C. Freeze J10 before layout. The radio side is now RadioBoard2027 (same J14/J2
+pinout); keep both projects in step if either connector changes.
 
 **M11 SPI2 pin.** V0.3 puts SPI2_SCK on PA9; the board uses PB13. Re-pin in the .ioc.
 
@@ -607,14 +620,18 @@ that ignores CMD0 needs a board power cycle. Accepted to keep the circuit simple
 
 ### Minor
 
-- **m1** Daughterboard: diode-OR its own USB 3V3 so it does not drive +3V3_PB, pull ESP EN up, and
-  keep HANDSHAKE/DATA_READY off ESP32-C5 strapping pins (GPIO7, 25-28, MTMS, MTDI). R75/R76 100k
-  against a 45k internal pull-up gives 2.28V, below the 2.475V input-high threshold. ESP_RST has
-  no pull on this board.
+- **m1** RadioBoard2027 firmware must set the ESP-Hosted pins explicitly: its C5 defaults are CLK
+  GPIO3 and HANDSHAKE GPIO1, but the board uses CLK GPIO6 and HANDSHAKE GPIO3. GPIO4 (DATA_READY)
+  has a weak internal pull-up at reset; R76 100k against about 45k gives 2.28V, below the 2.475V
+  input-high threshold, so no false interrupt until the firmware takes the pin. ESP_RST has no
+  pull on this board (the radio board has it).
 - **m2** DotStar and U7 VDD is 4.5-5.5V. On the powerboard, Q1 (60mΩ) + F2 (140mΩ max) + U1
   (59mΩ) drop about 0.25V at 1A, so a 5.0V powerboard gives about 4.75V. On USB, +5V can fall below
   4.5V. LEDs are rated to 70°C ambient; cap brightness in firmware.
-- **m3** J14 carries 217mA per power pin against a 408mA TX peak; check the mezzanine rating.
+- **m3** The radio sees +3V3 minus the J14 cable and its own mux: roughly 0.05V more at a 403mA
+  TX peak (two GH contacts in parallel, a short 26 AWG pair, TPS2116 on-resistance). Added to
+  M2's worst case this leaves about 3.03V at the module from a 3.30V powerboard, just above the
+  module's 3.0V minimum. Measure on the first boards.
 - **m4** Motor SPI termination and speed (motorboard scope): R41/R42, 6 vs 15.625Mbit/s.
 - **m5** J10-J12 pin order is not Qwiic. 3.3V pull-ups do not suit 5V-logic slaves, and a far-side
   5V pull-up is only safe while the MCU is powered (DS13313 Table 9).
@@ -638,7 +655,9 @@ that ignores CMD0 needs a board power cycle. Accepted to keep the circuit simple
   +3V3/+5V/GND next to power symbols.
 - **m21** KiCad ERC reports the VCAP pin tie as power output to power output. The tie is correct;
   exclude the violation in KiCad.
-- **m22** On USB alone the board draws more than the 100mA allowed before enumeration. Bench only.
+- **m22** On USB alone the board draws more than the 100mA allowed before enumeration, and with
+  the radio transmitting it can exceed a USB 2.0 port's 500mA in bursts. Bench only; disable
+  Wi-Fi or use the powerboard if a port drops out.
 - **m23** J2 and J4 shells float. ESD that hits a shell has no direct path to GND and couples
   into nearby traces. Keep signal copper away from the shell pads; U5, U14 and D12 still clamp
   the pins.
