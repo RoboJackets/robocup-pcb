@@ -2694,6 +2694,17 @@
 		)
 		(uuid "6bf62424-656b-45f2-b9fa-443175536a86")
 	)
+	(text "put close to Vin"
+		(exclude_from_sim no)
+		(at 50.8 141.224 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "896a7197-7aa9-48e6-98ff-bd3f7ba8a074")
+	)
 	(text "TODO: replace with fuse mount if this isn't the mount"
 		(exclude_from_sim no)
 		(at 42.164 36.068 0)
@@ -2717,7 +2728,7 @@
 	)
 	(text "From datasheet:\nR_{_FB_H} = (R_{_FB_L}(V_{OUT} - V_{FB})) / V_{FB}\n\"Where V_{FB} is 0.6 V for the SiC43X.\"\n\n= 10000*(12-0.6)/0.6 = 190kΩ"
 		(exclude_from_sim no)
-		(at 149.098 183.642 0)
+		(at 155.702 164.084 0)
 		(effects
 			(font
 				(size 0.8 0.8)
@@ -2726,15 +2737,26 @@
 		)
 		(uuid "9d38846f-054c-494c-a753-fa96a96f02eb")
 	)
-	(text "add up to 100µF plus margin (so 110µF)"
+	(text "five 22µF parts at 12V bias give roughly 55µF effective"
 		(exclude_from_sim no)
-		(at 167.64 135.636 0)
+		(at 162.56 135.89 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 		(uuid "ac1071bf-f175-4b7c-9e66-0107df3752eb")
+	)
+	(text "<--- use electrolytic instead of ceramic\ncuz better price for the ratings you\nget (for the 44µF)"
+		(exclude_from_sim no)
+		(at 124.968 63.246 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "beccaeeb-d4a1-437a-a23f-8b4954bd28fc")
 	)
 	(junction
 		(at 168.91 147.32)
@@ -3030,16 +3052,6 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 177.8) (xy 147.32 190.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1995da54-8a5e-4371-88d6-ed8d85396b2d")
-	)
-	(wire
-		(pts
 			(xy 307.34 44.45) (xy 309.88 44.45)
 		)
 		(stroke
@@ -3190,7 +3202,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 137.16) (xy 191.77 139.7)
+			(xy 191.77 134.62) (xy 191.77 139.7)
 		)
 		(stroke
 			(width 0)
@@ -3470,16 +3482,6 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 170.18) (xy 147.32 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "819c943a-52e1-4bbb-8bb8-96fbe9305717")
-	)
-	(wire
-		(pts
 			(xy 87.63 58.42) (xy 90.17 58.42)
 		)
 		(stroke
@@ -3597,6 +3599,16 @@
 			(type default)
 		)
 		(uuid "b679cdc6-384c-49f7-872c-cabf73d08491")
+	)
+	(wire
+		(pts
+			(xy 147.32 166.37) (xy 147.32 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9aa3571-65ac-4320-893d-25553a6d97d3")
 	)
 	(wire
 		(pts
@@ -3840,7 +3852,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 160.02) (xy 147.32 170.18)
+			(xy 147.32 160.02) (xy 147.32 161.29)
 		)
 		(stroke
 			(width 0)
@@ -3899,7 +3911,7 @@
 		(uuid "2ac97b9d-5428-4e45-a7a2-5bc2d83abfbe")
 	)
 	(label "+12V_SOURCE"
-		(at 191.77 137.16 0)
+		(at 191.77 134.62 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4426,7 +4438,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 147.32 175.26 0)
+		(at 147.32 163.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4436,7 +4448,7 @@
 		(dnp no)
 		(uuid "09b47f3a-2e78-4dc8-a507-2d1cb3eaac0a")
 		(property "Reference" "R16"
-			(at 148.082 174.2439 0)
+			(at 148.082 162.8139 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4447,7 +4459,7 @@
 			)
 		)
 		(property "Value" "190kΩ"
-			(at 148.082 175.768 0)
+			(at 148.082 164.338 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4458,7 +4470,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 147.32 175.26 0)
+			(at 147.32 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4469,7 +4481,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 147.32 175.26 0)
+			(at 147.32 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4480,7 +4492,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 147.32 175.26 0)
+			(at 147.32 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4491,7 +4503,7 @@
 			)
 		)
 		(property "Datasheet Label" "R_{_FB_H}"
-			(at 151.13 177.546 0)
+			(at 151.13 166.116 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5895,7 +5907,7 @@
 		(dnp no)
 		(uuid "65c2478f-a32e-4708-9e75-d671f8386a8a")
 		(property "Reference" "R15"
-			(at 152.4 166.878 90)
+			(at 152.4 171.958 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5905,7 +5917,7 @@
 			)
 		)
 		(property "Value" "10kΩ"
-			(at 152.4 168.402 90)
+			(at 152.4 173.482 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7895,84 +7907,6 @@
 			(project "power-board"
 				(path "/cb63459b-b5eb-4b1b-8316-cdcb6a76275f/78bc56ac-35bc-4a48-b190-7d489bf5b351"
 					(reference "#PWR053")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 147.32 190.5 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b7cd7139-4dc4-4465-a8c5-f9c85b78f9e3")
-		(property "Reference" "#PWR016"
-			(at 147.32 196.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 147.32 195.58 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 147.32 190.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 147.32 190.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 147.32 190.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "66939a50-77d9-4a55-9c0e-1d24d1144a89")
-		)
-		(instances
-			(project "power-board"
-				(path "/cb63459b-b5eb-4b1b-8316-cdcb6a76275f/78bc56ac-35bc-4a48-b190-7d489bf5b351"
-					(reference "#PWR016")
 					(unit 1)
 				)
 			)
