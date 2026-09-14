@@ -12,7 +12,8 @@ side of the link is in `../ControlBoard2027/DESIGN_NOTES.md` §11.
 4. [USB](#4-usb)
 5. [Controlboard link](#5-controlboard-link)
 6. [Firmware configuration](#6-firmware-configuration)
-7. [Open issues](#7-open-issues)
+7. [Layout](#7-layout)
+8. [Open issues](#8-open-issues)
 
 ---
 
@@ -30,12 +31,17 @@ side of the link is in `../ControlBoard2027/DESIGN_NOTES.md` §11.
 | eGH | JST GH connector catalogue |
 | TAO | Taoglas FXP831.07.0100C spec SPE-11-8-026-K |
 | Radio doc | 2027 Radio Module Design Doc (in `../`) |
+| USB2 | USB 2.0 specification (usb.org `usb_20.pdf`), §7.1.1.1, §7.1.2.1, §7.1.6.1 |
+| AN0046 | Silicon Labs AN0046 USB hardware design guidelines, §3.1, §3.3 |
+| JLC | JLCPCB impedance page, stackup JLC04161H-7628 |
 
 The Seeed XIAO ESP32-C5 project in `../daughterboard` was used as a cross-check for the USB-C,
 EN and BOOT circuits.
 
-The ESP32-C5-WROOM-1U symbol and footprint in `lib/` come from espressif/kicad-libraries 3.2.1.
-All 32 pin numbers match MOD Table 3-2.
+The ESP32-C5-WROOM-1U is the only part not in the KiCad 10 standard library. Its symbol, footprint
+and STEP model come from espressif/kicad-libraries 3.2.1 and live in `lib/` (the model in
+`lib/RadioBoard2027.3dshapes`). All 32 pin numbers match MOD Table 3-2. Every other footprint is a
+stock KiCad 10 footprint.
 
 ---
 
@@ -141,8 +147,10 @@ the Taoglas FXP831.07.0100C named in the radio design doc. N8R8 has 8MB flash an
   R5/R6 22Ω sit in series near the module (HDG 1.3.13 suggests 22-33Ω).
 - **U2 USBLC6-2SC6** on D+/D- at J1. Its rail pin goes to +3V3, as on the controlboard, so an
   unplugged cable does not hold VBUS up through the D+ pull-up.
-- **D2 TVS0500** on VBUS at J1, then **F1 MF-MSMF075/16X-2**: hold 0.75A (0.55A at 50°C), trip
-  1.50A. The module's 403mA peak sits under the hold current.
+- **D2 TVS0500** on VBUS at J1, then **F1 MF-MSMF075/33X-2**: hold 0.75A (0.56A at 50°C), trip
+  1.50A, 33V (MF-MSMF Rev BD). The module's 403mA peak sits under the hold current. The /16X
+  part is not stocked at LCSC; /33X is the current Bourns part with the same ratings and 1812
+  land pattern.
 - **C5 4.7µF** on VBUS/LDO input. The USB Device Capacitance ECN requires 1-10µF on VBUS.
 - Auto-download over USB stops working if the application disables the USB PHY or reuses
   GPIO13/14 (HDG 1.5). The BOOT button is the fallback.
@@ -212,9 +220,124 @@ adds no pulls on those lines.
 - **Status LED (GPIO24)**: active high. What it shows is up to the firmware (link up, activity).
 - **Flashing**: USB Serial/JTAG. If the app has disabled USB, hold BOOT and press RESET.
 
+### BOM (JLCPCB/LCSC, stock checked 2026-09-14)
+
+Passives are 0402 except where 0402 lacks the rating: 22µF needs 0805 (25V keeps about 14µF at
+3.3V), 10µF uses 0603 10V (about 6µF at 3.3V), 4.7µF on VBUS uses 0805 25V (about 3.7µF at 5V).
+DC-bias figures are typical X5R estimates, not part-specific curves.
+
+| Ref | Value | Package | MPN | LCSC | Class |
+|---|---|---|---|---|---|
+| C1, C8 | 22µF 25V X5R | 0805 | Samsung CL21A226MAQNNNE | C45783 | Basic |
+| C2, C9 | 100nF 16V X7R | 0402 | Samsung CL05B104KO5NNNC | C1525 | Basic |
+| C3 | 1µF 25V X5R | 0402 | Samsung CL05A105KA5NQNC | C52923 | Basic |
+| C4 (DNP) | 15pF C0G | 0402 | FH 0402CG150J500NT | C1548 | Basic |
+| C5 | 4.7µF 25V X5R | 0805 | Samsung CL21A475KAQNNNE | C1779 | Basic |
+| C6, C7 | 10µF 10V X5R | 0603 | Samsung CL10A106KP8NNNC | C19702 | Basic |
+| R1, R3, R13 | 10k 1% | 0402 | UniOhm 0402WGF1002TCE | C25744 | Basic |
+| R2 | 470 1% | 0402 | UniOhm 0402WGF4700TCE | C25117 | Basic |
+| R4 | 33 | 0402 | UniOhm 0402WGF330JTCE | C25105 | Basic |
+| R5, R6 | 22 | 0402 | UniOhm 0402WGF220JTCE | C25092 | Basic |
+| R7 | 499 1% | 0402 | UniOhm 0402WGF4990TCE | C4125 | Ext |
+| R8, R15 | 1.5k 1% | 0402 | UniOhm 0402WGF1501TCE | C25867 | Basic |
+| R9, R10 | 5.1k 1% | 0402 | UniOhm 0402WGF5101TCE | C25905 | Basic |
+| R11 | 100k 1% | 0402 | UniOhm 0402WGF1003TCE | C25741 | Basic |
+| R12 | 68k 1% | 0402 | UniOhm 0402WGF6802TCE | C36871 | Ext (preferred) |
+| R14 | 1M 1% | 0402 | UniOhm 0402WGF1004TCE | C26083 | Basic |
+| D1 | Green | 0603 | NationStar NCD0603G1 | C84267 | Ext |
+| D3 | Red | 0603 | Kingbright APT1608EC | C5554143 | Ext |
+| SW1, SW2 | Tactile 5.1×5.1 | SMD | XKB TS-1187A-B-A-B | C318884 | Basic |
+| U1 | ESP32-C5-WROOM-1U-N8R8 | module | Espressif | C51950748 | Ext, **0 stock** |
+| U3 | TPS2116DRLR | SOT-583 | TI | C3235557 | Ext |
+| U4 | AP7361C-33E-13 | SOT-223 | Diodes | C500795 | Ext |
+| J1 | USB4110-GF-A | SMD | GCT | C5143397 | Ext |
+| U2 | USBLC6-2SC6 | SOT-23-6 | ST | C7519 | Ext |
+| D2, D4 | TVS0500DRVR | WSON-6 | TI | C609571 | Ext |
+| F1 | MF-MSMF075/33X-2 | 1812 | Bourns | C3760814 | Ext |
+| J2 | BM15B-GHS-TBT(LF)(SN) | SMD | JST | C5305069 | Ext |
+| U5, U6 | TPD4E05U06DQAR | USON-10 | TI | C138714 | Ext |
+| TP1, TP2 | pad | - | - | - | - |
+
+- **TS-1187A.** The switch has two pairs of legs shorted inside the part (A-B and C-D). The
+  KiCad footprint numbers them 1,1 and 2,2 at x = ±3.0, y = ±1.875, which matches the XKB drawing,
+  so it works directly with SW_Push.
+- **D1.** The green LED is far brighter per mA than the red Kingbright. Raise R8 if 0.8mA looks
+  too bright.
+
 ---
 
-## 7. Open issues
+## 7. Layout
+
+36 × 54mm, 4 layers, JLC04161H-7628 stackup, JLC assembly on the top side only.
+
+| Layer | Use |
+|---|---|
+| F.Cu | Parts, short signals, USB pair, power traces, GND pour |
+| In1.Cu | Solid GND |
+| In2.Cu | +3V3 pour, SPI trunk (SCK, MOSI, MISO, CS) and DATA_READY |
+| B.Cu | HANDSHAKE, ESP_EN, EN, PWR_SRC_HOST, CC1/CC2, short power jumps, GND pour |
+
+- **Rules.** Default netclass: 0.2mm track, 0.15mm clearance, 0.6/0.3mm vias.
+  `RadioBoard2027.kicad_dru` raises power nets (+3V3, +3V3_HOST, VBUS, VIN2, pre-fuse VBUS) to
+  0.2mm clearance and a 0.25mm minimum width. Netclass clearance overrides a lower custom rule, so
+  the 0.15mm default must stay in Board Setup.
+- **USB.** 0.25mm lines with a 0.15mm gap on F.Cu over In1. D+ and D- from J1 are joined at the
+  connector: the DP pads on the left, under the shell, and the DN pads on the right.
+- **SPI.** J2 → U5/U6 on F.Cu, then a via beside each ESD pin into the In2 trunk (MISO, SCK, MOSI,
+  CS) to the module-side vias. In2 is 0.21mm from the B.Cu GND pour and 1.07mm from In1 GND. The
+  ESD pads are 12-14mm from J2 along the line. HANDSHAKE and ESP_EN run on B.Cu along the left
+  edge.
+- **Stitching vias.** PWR_SRC_HOST, CC1 and CC2 on B.Cu cut the pour under the In2 trunk, and
+  HANDSHAKE crosses under MISO near the module. Eight GND vias sit 1-2mm from these crossings so
+  the return current can move to In1.
+- **Power.** VBUS: J1 → D2 → F1 → C5, then to U4 on B.Cu. U4 VOUT → C6 → U3 VIN2 on F.Cu.
+  +3V3_HOST: J2 → D4 → C7/R11 → U3 VIN1. U3 OUT feeds the In2 +3V3 pour through vias at U3, C8 and
+  C9. The module takes +3V3 from C2/C1 at pin 2, with a via into In2. U4 tab has three GND vias
+  to In1 for about 0.85W at 500mA from 5V.
+- **Module.** Nine GND vias in the EPAD grid. U1 is placed so its U.FL connector (top-right corner
+  of the module, next to pads 27/28, MOD Fig 3-2 and 10-2) sits about 2.4mm from the top board
+  edge; the cable leaves over the edge. The connector is on the module itself, so the HDG advice to
+  clear all layers under an IPEX connector (which applies to a chip-down design) does not apply.
+- **Corners.** Track bends are 45° chamfers. The remaining 90° corners are inside pads or vias, or
+  are jogs shorter than 0.5mm into a via. At these edge rates a 90° corner causes no measurable
+  reflection; the chamfers are for manufacturing and consistency.
+- **Silkscreen.** Every reference sits outside all courtyards, pads and vias, inside the board
+  edge, with at least 0.4mm between labels. C1 and C2 use 0.8mm text to fit beside H1; the rest are
+  1.0mm. Board Setup silk clearance is 0.1mm.
+- **J1 shield.** The four shell pads are tied together on F.Cu but not to GND (§4).
+- **DRC.** 0 errors, 0 unconnected. `min_resolved_spokes` is 1: U5 pin 8, U6 pin 8, C2 pin 2 and C8
+  pin 2 get one thermal spoke from the pour and a direct trace to a GND via.
+
+### Impedance and length (as routed)
+
+Impedance is from a 2D field solver on the JLC stackup (7628 prepreg 0.2104mm, εr 4.4; core
+1.065mm, εr 4.6; 1oz outer, 0.5oz inner; mask 1.2mil, εr 3.8). The solver was checked against the
+exact stripline formula (47.1 vs 47.9Ω) and a w = h microstrip (70 vs 71Ω).
+
+| Trace | Width / gap | Impedance |
+|---|---|---|
+| USB pair, F.Cu | 0.25 / 0.15mm | 96Ω bare, 86-91Ω under mask |
+| SPI, F.Cu | 0.2mm | 68Ω |
+| SPI, In2 | 0.2mm | 57Ω |
+
+- **USB requirement.** The C5 USB is Full-Speed only, 12 Mbit/s (MOD §5.2.1.5). USB2 requires
+  90Ω ±15% (§7.1.1.1, §7.1.6.1) with 4-20ns edges (§7.1.2.1). HDG §1.4.8 asks for 90Ω ±10%, in
+  parallel at equal length, with no number for skew. The pair meets both.
+- **USB length.** J1 → U2: D+ 13.6mm / D- 9.6mm with the plug one way, 11.1 / 10.5mm the other
+  way. U2 → R5/R6: 31.0 / 30.8mm. R → module: 1.7 / 1.7mm. Worst-case skew is 4.1mm, about 25ps.
+  AN0046 §3.3 allows up to 400ps (60mm) of skew for Full-Speed. The 50 mil figure in many layout
+  guides is for High-Speed parts.
+- **SPI length.** J2 → module: SCK 47.6mm, MOSI 47.5mm, CS 47.7mm, MISO 57.7mm (to R4),
+  DATA_READY 49.1mm, HANDSHAKE 75.5mm. EH asks for SPI lines length-matched to CLK, with no
+  number. SCK/MOSI/CS agree within 0.2mm. MISO is 10mm (about 60ps) longer, which is small
+  against a 25ns period at 40MHz. HANDSHAKE and DATA_READY are slow interrupts.
+- **SPI impedance.** HDG and EH give no impedance for SPI. 57-68Ω over about 5cm is fine at the
+  planned 10-40MHz. R4 33Ω source-terminates MISO at the module. Bring the link up at 10MHz
+  first (§6).
+
+---
+
+## 8. Open issues
 
 ### Critical
 
@@ -235,8 +358,8 @@ controlboard's STM32 pins. The chip datasheet gives no I/O injection limit. Firm
 pins Hi-Z while PWR_SRC_HOST is low (§6). Check the STM32H723 pin tolerance (DS13313 pin table)
 for PB4, PB5, PB6 and PB7, and add series resistors if needed.
 
-**M3 Footprints and MPNs.** Passives, SW1/SW2, D1, TP1/TP2 and U2/U3/U5/U6/D2/D4 still need
-footprints. Capacitors need voltage and dielectric ratings.
+**M3 Module sourcing.** No ESP32-C5-WROOM-1U variant is in stock at LCSC (checked 2026-09-14).
+Consign modules to JLC, use JLC global sourcing, or hand-solder U1.
 
 **M4 Cable.** No premade 15-pin GH-to-GH cable was found at a distributor. Crimp or order a
 custom harness; keep it short (EH ≤10cm for jumpers).
@@ -254,3 +377,5 @@ custom harness; keep it short (EH ≤10cm for jumpers).
 - **m5** Per HDG 1.3.13, USB D+ can toggle at power-up; no external pull-up is fitted. Revisit only
   if enumeration is unreliable.
 - **m6** No test points on +3V3_HOST or +3V3.
+- **m7** 41 footprints are flagged lib_footprint_mismatch (DRC warning). Check with Update
+  Footprints from Library before ordering.
