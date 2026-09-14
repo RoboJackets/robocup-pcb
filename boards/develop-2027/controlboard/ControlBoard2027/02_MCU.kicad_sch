@@ -5730,6 +5730,14 @@
 		(at 261.62 168.91)
 		(uuid "fddaf4d1-25f1-45b8-ace2-cdb36a16a857")
 	)
+	(no_connect
+		(at 261.62 171.45)
+		(uuid "d95c16b0-4fb4-4ceb-a9a0-0da3ace2add3")
+	)
+	(no_connect
+		(at 337.82 135.89)
+		(uuid "3f84cbbc-cea2-4eba-a2df-a6e8ea30bad2")
+	)
 	(wire
 		(pts
 			(xy 297.18 115.57)
@@ -6680,18 +6688,6 @@
 		)
 		(uuid "298ea597-2a24-4450-ad6b-ffdab51334c7")
 	)
-	(text "ROUTING - HSE CRYSTAL\nX1, C49, C50 within 5mm of PH0/PH1.\nShort equal OSC traces, GND guard ring.\nNothing routed under or beside the loop."
-		(at 184.15 184.15 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(bold yes)
-				(color 255 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "30fcc195-c4d9-4b3a-9730-3f673ee6d308")
-	)
 	(text "VDD33USB p95 (C24+C25)\nUSB FS PHY - keep both close"
 		(at 149.86 99.06 0)
 		(effects
@@ -6772,18 +6768,6 @@
 		)
 		(uuid "b2bdd5eb-df01-41e6-a235-b2631c622d28")
 	)
-	(text "ROUTING - MOTOR SPI (6 Mbit/s, 5 drops)\nR41/R42 within 5mm of PA5/PA7, not at the connectors."
-		(at 356.87 153.67 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(bold yes)
-				(color 255 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "c4b94f7a-d944-44cd-a5ed-07052f444732")
-	)
 	(text "VREF+ p32 (C30+C31)"
 		(at 378.46 117 0)
 		(effects
@@ -6833,6 +6817,38 @@
 			(justify top)
 		)
 		(uuid "ff8fe13e-0cf9-4dd3-a373-06f7648e9a39")
+	)
+	(text "CLOCKING\nX1 25MHz crystal: USB needs a tighter clock than the internal HSI48, and 25MHz starts\nreliably where a 48MHz crystal would not. C49/C50 match the crystal load. R86 (0R) leaves\nroom for a drive-level resistor if measurement calls for one.\n!! CubeMX V0.3 assumes a 48MHz HSE: use the clock tree in DESIGN_NOTES.md §12 (C2, M16).\nDIP4 = PC0 (p26), DIP5 = PC1 (p27); PF5/PF6 unused. No LSE: PC14 = USER_EXTI2.\n\nSUPPLY PINS\nLDO supply only. VDDA and VREF+ tie straight to +3V3, as on the Nucleo.\nPDR_ON = +3V3 (internal reset). VBAT = +3V3 (no battery).\nVCAP pins 71/106 are joined as the datasheet requires; KiCad ERC flags the tie (m21).\nDetails: DESIGN_NOTES.md §5."
+		(at 47.24 226.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9d45d54e-4e75-4470-a181-98cc19bea250")
+	)
+	(text "VDDA p33 + VREF+ p32 tie directly to +3V3\n(no ferrite, as on the Nucleo). One cap pair\nper pin. DESIGN_NOTES.md §5."
+		(at 332.74 92.71 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "31008ce9-aad1-4588-a867-353b8a577bd4")
+	)
+	(text "OPTIONAL I2C PULL-UP CHANGE (not applied - measure first)\nR30/R31 and R32/R33: 2.2k -> 1.5k only if SCL rise time at TP16/TP17\nexceeds 300ns with the real cable fitted. DESIGN_NOTES.md §6."
+		(at 400.05 255.27 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(bold yes)
+				(color 255 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "d17c29af-f7a6-48ba-9a94-c0cba9552a04")
 	)
 	(label "VBUS_SENSE"
 		(at 411.48 101.6 0)
@@ -7206,17 +7222,6 @@
 		)
 		(uuid "b1de548c-733c-4204-bfa3-fd2cf1a7770f")
 	)
-	(hierarchical_label "PWR_FAULT"
-		(shape input)
-		(at 337.82 135.89 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b3b9219d-f6cd-4b22-97eb-8105aa326f3d")
-	)
 	(hierarchical_label "BOOT0"
 		(shape bidirectional)
 		(at 254 130.81 180)
@@ -7404,17 +7409,6 @@
 		)
 		(uuid "ede3f4cc-9060-4793-bb13-297d44b89514")
 	)
-	(hierarchical_label "SD_DETECT"
-		(shape input)
-		(at 261.62 171.45 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "f287037a-af47-4b48-8a12-b010911fe32e")
-	)
 	(hierarchical_label "LED_SPI_SCK"
 		(shape output)
 		(at 337.82 201.93 0)
@@ -7448,30 +7442,45 @@
 		)
 		(uuid "fe6d64fe-bd92-4e75-9e51-66f5fbbcfde4")
 	)
-  (text "CLOCKING\nX1 25MHz crystal: USB needs a tighter clock than the internal HSI48, and 25MHz starts\nreliably where a 48MHz crystal would not. C49/C50 match the crystal load. R86 (0R) leaves\nroom for a drive-level resistor if measurement calls for one.\n!! CubeMX V0.3 assumes a 48MHz HSE: use the clock tree in DESIGN_NOTES.md §12 (C2, M16).\nDIP4 = PC0 (p26), DIP5 = PC1 (p27); PF5/PF6 unused. No LSE: PC14 = USER_EXTI2.\n\nSUPPLY PINS\nLDO supply only. VDDA and VREF+ tie straight to +3V3, as on the Nucleo.\nPDR_ON = +3V3 (internal reset). VBAT = +3V3 (no battery).\nVCAP pins 71/106 are joined as the datasheet requires; KiCad ERC flags the tie (m21).\nDetails: DESIGN_NOTES.md §5."
-    (at 47.24 226.82 0)
+  (text "R41/R42 22R: source termination on motor SPI SCK/MOSI, damps ringing\nfrom the five cable drops. Tune on a scope. MISO has none.\nDESIGN_NOTES.md §5 (m4)."
+    (at 400.05 142.24 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "9d45d54e-4e75-4470-a181-98cc19bea250")
+    (uuid "e3853d5a-b979-409a-a51e-8d72363ed636")
+  )
+  (text "ROUTING - MOTOR SPI (6 Mbit/s, 5 drops)\nR41/R42 within 5mm of PA5/PA7, not at the connectors."
+    (at 400.05 151.13 0)
+    (effects (font (size 1.27 1.27) (bold yes) (color 255 0 0 1)) (justify left bottom))
+    (uuid "c872ad77-c99b-44fc-b736-abbd4c2b5d36")
   )
   (text "I2C PULL-UPS - one pair per bus, all here\n   IMU        PF0/PF1     R16/R17  4.7k  on-board\n   KICKER     PB10/PB11   R30/R31  2.2k  cabled\n   EXPANSION  PF14/PF15   R32/R33  2.2k  cabled (no pull-ups on expansion boards)\n   OLED       PB8/PB9     R34/R35  3k    design doc\nCabled buses get stronger pull-ups to keep 400kHz rise times. DESIGN_NOTES.md §6."
-    (at 396.24 232.41 0)
+    (at 400.05 232.41 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "e0617221-7c8c-42a9-8d3e-f52e7d3a0944")
+    (uuid "0291a6ca-5588-4d94-a3ab-153757b15262")
   )
-  (text "VDDA p33 + VREF+ p32 tie directly to +3V3\n(no ferrite, as on the Nucleo). One cap pair\nper pin. DESIGN_NOTES.md §5."
-    (at 332.74 92.71 0)
-    (effects (font (size 1 1)) (justify left bottom))
-    (uuid "31008ce9-aad1-4588-a867-353b8a577bd4")
-  )
-  (text "R41/R42 22R: source termination on motor SPI SCK/MOSI, damps ringing\nfrom the five cable drops. Tune on a scope. MISO has none.\nDESIGN_NOTES.md §5 (m4)."
-    (at 369.57 130.81 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "67f23d33-3d3a-43c2-8001-c22146562a73")
-  )
-  (text "OPTIONAL I2C PULL-UP CHANGE (not applied - measure first)\nR30/R31 and R32/R33: 2.2k -> 1.5k only if SCL rise time at TP16/TP17\nexceeds 300ns with the real cable fitted. DESIGN_NOTES.md §6."
-    (at 400.05 255.27 0)
+  (text "ROUTING - HSE CRYSTAL\nX1, C49, C50 within 5mm of PH0/PH1.\nShort equal OSC traces, GND guard ring.\nNothing routed under or beside the loop."
+    (at 184.15 181.61 0)
     (effects (font (size 1.27 1.27) (bold yes) (color 255 0 0 1)) (justify left bottom))
-    (uuid "d17c29af-f7a6-48ba-9a94-c0cba9552a04")
+    (uuid "ec75c30a-1ce7-422b-aef7-9d9dd79e80c7")
+  )
+  (text "VDD DECOUPLING (EACH CAP AT ITS PIN)"
+    (at 45.72 34.29 0)
+    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
+    (uuid "8dfd3553-355d-41f0-95b4-1451b43b8e1d")
+  )
+  (text "VDDA / VREF+ DECOUPLING"
+    (at 321.31 83.82 0)
+    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
+    (uuid "a527e175-5f11-4bbd-9a69-78690c25533e")
+  )
+  (text "VBUS SENSE"
+    (at 400.05 83.82 0)
+    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
+    (uuid "195b2698-be45-4ea5-8f71-a857baf67bed")
+  )
+  (text "HSE 25MHZ CRYSTAL"
+    (at 184.15 148.59 0)
+    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
+    (uuid "1e902b63-60b0-4540-a05c-b89b005fbc6d")
   )
 	(symbol
 		(lib_id "Device:C")
@@ -12329,7 +12338,7 @@
 			)
 		)
 		(property "Value" "STM32H723ZGT6"
-			(at 320.04 119.38 0)
+			(at 266.7 312.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12814,7 +12823,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "MPN" "ST STM32H723ZGT6"
+			(at 299.72 209.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:+3V3")
 		(at 241.3 53.34 0)
@@ -13346,5 +13364,57 @@
 				)
 			)
 		)
+	)
+	(rectangle
+		(start 45 30)
+		(end 255 108)
+		(stroke
+			(width 0.254)
+			(type dash)
+			(color 0 0 132 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "4f91b692-5719-4247-b70a-4289e7ee491d")
+	)
+	(rectangle
+		(start 320 80)
+		(end 396.5 119.9)
+		(stroke
+			(width 0.254)
+			(type dash)
+			(color 0 0 132 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "0c48d3d2-ff9f-4f76-9126-2299e89f00da")
+	)
+	(rectangle
+		(start 399 80)
+		(end 440 117)
+		(stroke
+			(width 0.254)
+			(type dash)
+			(color 0 0 132 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "22f2f832-c8bc-47e5-ac07-d962b02c9ea5")
+	)
+	(rectangle
+		(start 183 144.9)
+		(end 260 183)
+		(stroke
+			(width 0.254)
+			(type dash)
+			(color 0 0 132 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "bc26fc0b-f9cb-4ef3-845d-4b131d32e73e")
 	)
 )

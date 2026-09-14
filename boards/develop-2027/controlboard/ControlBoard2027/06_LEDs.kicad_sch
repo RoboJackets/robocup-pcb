@@ -1977,116 +1977,6 @@
 		)
 		(uuid "efebaa18-1081-4524-9dcb-7ac7350ee800")
 	)
-	(global_label "+5V_PB"
-		(shape passive)
-		(at 165.1 243.84 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3bc1d4e9-cd7e-4523-924a-6c8d2f80156a")
-	)
-	(global_label "+5V_PB"
-		(shape passive)
-		(at 243.84 209.55 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7b560277-ed45-4c80-9e4b-6f4236c97ba9")
-	)
-	(global_label "+5V_PB"
-		(shape passive)
-		(at 144.78 165.1 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "6fe599c0-6031-4c79-b6b5-9a85c1770cc9")
-	)
-	(global_label "+5V_PB"
-		(shape passive)
-		(at 152.4 209.55 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "32081697-660b-4df4-a780-294d67a3fc67")
-	)
-	(global_label "+5V_PB"
-		(shape passive)
-		(at 274.32 209.55 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0c602627-190a-4135-80da-36e009e12bdf")
-	)
-	(global_label "+5V_PB"
-		(shape passive)
-		(at 86.36 104.14 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d8f067a7-9064-4847-a6fe-094ae65c637f")
-	)
-	(global_label "+5V_PB"
-		(shape passive)
-		(at 213.36 209.55 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d8fe5cad-17f7-47df-ab80-c6538783022b")
-	)
-	(global_label "+5V_PB"
-		(shape passive)
-		(at 182.88 209.55 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7c7a8430-7f89-4549-ba2a-9cd6e69a6bfd")
-	)
-	(global_label "+5V_PB"
-		(shape passive)
-		(at 121.92 209.55 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "82eafe88-bba4-469a-bc44-5ff8a83e7fc5")
-	)
-	(global_label "+5V_PB"
-		(shape passive)
-		(at 99.06 243.84 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "9d4c61e2-cdb0-4e46-a4d3-303a40e7f035")
-	)
 	(hierarchical_label "LED_SPI_MOSI"
 		(shape input)
 		(at 71.12 157.48 180)
@@ -2109,15 +1999,30 @@
 		)
 		(uuid "e942c53e-f5fb-4318-9c42-cc9460a5573a")
 	)
-  (text "ROUTING - DOTSTARS\nU7 -> D3 CLK/DATA short and routed together, over GND.\nLED-to-LED CO->CI and DO->DI as matched pairs.\nC40-C44 at each LED VDD pin. C51 where +5V_PB enters the chain.\nLEDs in the 5-dot shell pattern."
+  (text "ROUTING - DOTSTARS\nU7 -> D3 CLK/DATA short and routed together, over GND.\nLED-to-LED CO->CI and DO->DI as matched pairs.\nC40-C44 at each LED VDD pin. C51 where +5V enters the chain.\nLEDs in the 5-dot shell pattern."
     (at 199.39 149.86 0)
     (effects (font (size 1.27 1.27) (bold yes) (color 255 0 0 1)) (justify left bottom))
-    (uuid "a1fbaeb4-5931-4903-8029-c076764cc3d9")
+    (uuid "3a45f6a3-7628-4be4-aff9-fb794cbc0547")
   )
-  (text "DOTSTAR LEVEL SHIFT\nThe LEDs need a 5V-level logic high, so U7 (AHCT, TTL inputs) shifts the 3.3V SPI.\nPowered from +5V_PB: the LEDs never load USB, and U7 inputs are safe while unpowered.\nUsed: 1A p2 -> 1Y p3 CKI, 2A p5 -> 2Y p6 SDI, 1OE/2OE p1/p4 = GND.\nSpare gates 3/4: inputs p9/p12 = GND, OE p10/p13 = +5V_PB (off), outputs p8/p11 open.\nR66/R67 hold the inputs low while the MCU pins float at reset.\nLED power-on state is undefined: firmware sends an all-off frame first.\n!! Default KiCad APA102-2020 footprint does NOT fit this LED (C1).\nC45 at U7, C40-C44 one per LED, C51 bulk where +5V_PB enters.\nDESIGN_NOTES.md §10."
+  (text "DOTSTAR LEVEL SHIFT\nThe LEDs need a 5V-level logic high, so U7 (AHCT, TTL inputs) shifts the 3.3V SPI.\nLEDs and U7 run from +5V (mux output), so they also work on USB.\nFirmware caps LED current: ~250mA on the powerboard (F2 budget), ~100mA on USB (F1).\nUsed: 1A p2 -> 1Y p3 CKI, 2A p5 -> 2Y p6 SDI, 1OE/2OE p1/p4 = GND.\nSpare gates 3/4: inputs p9/p12 = GND, OE p10/p13 = +5V (off), outputs p8/p11 open.\nR66/R67 hold the inputs low while the MCU pins float at reset.\nLED power-on state is undefined: firmware sends an all-off frame first.\n!! Default KiCad APA102-2020 footprint does NOT fit this LED (C1).\nC45 at U7, C40-C44 one per LED, C51 bulk where +5V enters.\nDESIGN_NOTES.md §10."
     (at 297.18 252.73 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "7618e3c3-001a-4018-8468-0e06eef5aa33")
+    (uuid "74ab3582-6a6f-43af-a483-2c26c2b10597")
+  )
+  (text "LEVEL SHIFT U7 (3.3V SPI TO 5V)"
+    (at 50.8 95.25 0)
+    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
+    (uuid "3e4e7d9c-55d7-4e2e-960f-3aeaa4c4325b")
+  )
+  (text "DOTSTAR CHAIN D3-D7 AND DECOUPLING"
+    (at 116.84 139.7 0)
+    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
+    (uuid "021a4a15-5918-4ee0-8468-81ad160c0518")
+  )
+  (text "U7 SPARE GATES"
+    (at 40.64 229.87 0)
+    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
+    (uuid "0ebbdc4e-94af-43bd-ab3c-654102aff20e")
   )
 	(symbol
 		(lib_id "Device:R")
@@ -2951,7 +2856,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "MPN" "TI SN74AHCT125PWR"
+			(at 86.36 180.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "74xx:74AHCT125")
 		(at 86.36 157.48 0)
@@ -3066,7 +2980,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "MPN" "TI SN74AHCT125PWR"
+			(at 86.36 157.48 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 74.93 187.96 0)
@@ -3258,7 +3181,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "MPN" "TI SN74AHCT125PWR"
+			(at 86.36 232.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 86.36 137.16 0)
@@ -4015,7 +3947,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "MPN" "TI SN74AHCT125PWR"
+			(at 86.36 120.65 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C")
 		(at 243.84 213.36 0)
@@ -4396,7 +4337,7 @@
 				)
 			)
 		)
-		(property "Description" "Bulk for the DotStar chain, 22uF X5R/X7R >= 10V. Up to 0.5W per LED (BB-2020BGR-TRB p3): 500mA for 5 LEDs. Place where +5V_PB enters the LEDs."
+		(property "Description" "Bulk for the DotStar chain, 22uF X5R/X7R >= 10V. Up to 0.5W per LED (BB-2020BGR-TRB p3): 500mA for 5 LEDs. Place where +5V enters the LEDs."
 			(at 121.92 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -4943,7 +4884,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "MPN" "TI SN74AHCT125PWR"
+			(at 152.4 232.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 274.32 217.17 0)
@@ -5113,5 +5063,654 @@
 				)
 			)
 		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 86.36 104.14 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a6712c0c-c121-4f28-bd3f-637e5ae27772")
+		(property "Reference" "#PWR602"
+			(at 86.36 107.95 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 86.36 100.584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 86.36 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 86.36 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 86.36 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "ControlBoard2027"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/ee62a278-a94c-4411-ba4b-a0279340f73e"
+					(reference "#PWR602")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 99.06 243.84 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9d05ca0f-de51-44e4-ad93-00bdb1771e5d")
+		(property "Reference" "#PWR606"
+			(at 99.06 247.65 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 99.06 240.284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 243.84 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 243.84 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 99.06 243.84 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "ControlBoard2027"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/ee62a278-a94c-4411-ba4b-a0279340f73e"
+					(reference "#PWR606")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 121.92 209.55 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "70169a21-52fb-400c-90e3-bfab557f7869")
+		(property "Reference" "#PWR607"
+			(at 121.92 213.36 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 121.92 205.994 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 209.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 209.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 121.92 209.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "ControlBoard2027"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/ee62a278-a94c-4411-ba4b-a0279340f73e"
+					(reference "#PWR607")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 144.78 165.1 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b6a02d74-bdc2-4734-8e3b-ba118e8be5e4")
+		(property "Reference" "#PWR610"
+			(at 144.78 168.91 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 144.78 161.544 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 144.78 165.1 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 144.78 165.1 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 144.78 165.1 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "ControlBoard2027"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/ee62a278-a94c-4411-ba4b-a0279340f73e"
+					(reference "#PWR610")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 152.4 209.55 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b0383170-be57-47dd-b9d2-9aa5c1a1ee1e")
+		(property "Reference" "#PWR612"
+			(at 152.4 213.36 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 152.4 205.994 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 209.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 209.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 152.4 209.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "ControlBoard2027"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/ee62a278-a94c-4411-ba4b-a0279340f73e"
+					(reference "#PWR612")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 165.1 243.84 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "498276b5-d652-4851-a70c-cd0130555ee4")
+		(property "Reference" "#PWR614"
+			(at 165.1 247.65 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 165.1 240.284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 243.84 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 243.84 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 165.1 243.84 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "ControlBoard2027"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/ee62a278-a94c-4411-ba4b-a0279340f73e"
+					(reference "#PWR614")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 182.88 209.55 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d026f633-6a6f-487a-864f-088333290acd")
+		(property "Reference" "#PWR615"
+			(at 182.88 213.36 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 182.88 205.994 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 182.88 209.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 209.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 182.88 209.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "ControlBoard2027"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/ee62a278-a94c-4411-ba4b-a0279340f73e"
+					(reference "#PWR615")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 213.36 209.55 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3ff72887-f1a0-426a-afd5-7b210323a171")
+		(property "Reference" "#PWR617"
+			(at 213.36 213.36 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 213.36 205.994 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 213.36 209.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 213.36 209.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 213.36 209.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "ControlBoard2027"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/ee62a278-a94c-4411-ba4b-a0279340f73e"
+					(reference "#PWR617")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 243.84 209.55 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ef3c242c-0bfa-4c8a-ae26-6a4dee3c7958")
+		(property "Reference" "#PWR619"
+			(at 243.84 213.36 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 243.84 205.994 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 243.84 209.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 243.84 209.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 243.84 209.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "ControlBoard2027"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/ee62a278-a94c-4411-ba4b-a0279340f73e"
+					(reference "#PWR619")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 274.32 209.55 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bbcf4602-644c-4f1f-bc42-1e9b8aa7f23e")
+		(property "Reference" "#PWR621"
+			(at 274.32 213.36 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 274.32 205.994 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 274.32 209.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 274.32 209.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 274.32 209.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "ControlBoard2027"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/ee62a278-a94c-4411-ba4b-a0279340f73e"
+					(reference "#PWR621")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(rectangle
+		(start 50 92)
+		(end 113 197)
+		(stroke
+			(width 0.254)
+			(type dash)
+			(color 0 0 132 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "6dd9aa3e-712a-43e5-8058-0993a8b05c95")
+	)
+	(rectangle
+		(start 116 136)
+		(end 297 224.3)
+		(stroke
+			(width 0.254)
+			(type dash)
+			(color 0 0 132 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "34da7edd-48ee-4546-94b4-ab71506360a6")
+	)
+	(rectangle
+		(start 40 225.5)
+		(end 170 250)
+		(stroke
+			(width 0.254)
+			(type dash)
+			(color 0 0 132 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "01b97816-c5f0-4b1e-8bb3-897146b2eef9")
 	)
 )

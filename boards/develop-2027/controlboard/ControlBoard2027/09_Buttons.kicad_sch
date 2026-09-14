@@ -1817,6 +1817,16 @@
 		)
 		(uuid "f9784638-8328-4b69-9393-95531d4af803")
 	)
+  (text "BUTTON DEBOUNCE (same for SW4, SW5, SW6)\nPull-up R24/R25/R26 = 10k, series R27/R28/R29 = 10k, C37/C38/C39 = 100nF, no inductor.\nPress (C discharges through series R):   tau = R27 x C37 = 10k x 100nF = 1.0ms\nRelease (C charges through pull-up + series R):   tau = (R24 + R27) x C37 = 20k x 100nF = 2.0ms\nWith 1% resistors and 10% caps: press 0.9-1.1ms, release 1.8-2.2ms. Settles in ~5 tau.\nThe RC removes sub-millisecond bounce spikes; firmware ignores re-triggers for ~10ms.\nThe series R also limits current into the MCU pin from the discharging cap.\nDESIGN_NOTES.md §9."
+    (at 60.96 175.26 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "71ce9dd5-d2ab-4f9f-b3ad-12eb566300ed")
+  )
+  (text "USER BUTTONS SW4-SW6 WITH RC DEBOUNCE"
+    (at 57.15 80.01 0)
+    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
+    (uuid "ebaea286-cf9a-4b4c-ba6a-cde9912eecce")
+  )
 	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 71.12 96.52 180)
@@ -3466,5 +3476,18 @@
 				)
 			)
 		)
+	)
+	(rectangle
+		(start 56 76)
+		(end 168 180)
+		(stroke
+			(width 0.254)
+			(type dash)
+			(color 0 0 132 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "28ae16b7-07f0-4ddc-aa02-b99d34440784")
 	)
 )

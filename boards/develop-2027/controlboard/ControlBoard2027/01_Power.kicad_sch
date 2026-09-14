@@ -4426,12 +4426,6 @@
 		(uuid "de60b079-b407-4709-b475-c7b1b4eec7f0")
 	)
 	(junction
-		(at 280.67 109.22)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "eb3641d9-0a28-4e31-afcf-9e7cec77dea7")
-	)
-	(junction
 		(at 274.32 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4449,6 +4443,12 @@
 		(color 0 0 0 0)
 		(uuid "fef38c18-2268-4c69-bd13-98cda76a4cb3")
 	)
+	(junction
+		(at 219.71 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9f4f45cb-7e20-4387-9ad2-4ad252762425")
+	)
 	(wire
 		(pts
 			(xy 121.92 104.14)
@@ -4459,17 +4459,6 @@
 			(type default)
 		)
 		(uuid "016c6b1d-092e-4cff-8f51-513a5761830e")
-	)
-	(wire
-		(pts
-			(xy 212.09 180.34)
-			(xy 214.63 180.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "075d93b3-127f-4c1c-871d-cdc9585c818e")
 	)
 	(wire
 		(pts
@@ -4495,17 +4484,6 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 210.82)
-			(xy 85.09 210.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0ec9b3b5-28c2-4322-93ae-46e396bc6339")
-	)
-	(wire
-		(pts
 			(xy 50.8 93.98)
 			(xy 58.42 93.98)
 		)
@@ -4514,39 +4492,6 @@
 			(type default)
 		)
 		(uuid "1051b06e-ff29-4ce7-8b5a-34d432071cd2")
-	)
-	(wire
-		(pts
-			(xy 179.07 104.14)
-			(xy 191.77 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "13c01cca-fd4b-46b2-9ae7-b725012f0fe2")
-	)
-	(wire
-		(pts
-			(xy 181.61 111.76)
-			(xy 181.61 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "14a347f4-a71b-4e54-a7cb-cf1e6bbae5e5")
-	)
-	(wire
-		(pts
-			(xy 187.96 180.34)
-			(xy 191.77 180.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1a3ef583-d13e-453a-877d-fe6fd6afefc0")
 	)
 	(wire
 		(pts
@@ -4572,17 +4517,6 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 114.3)
-			(xy 191.77 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1fda54fb-13cf-4e25-a8b6-48bf9e9fda26")
-	)
-	(wire
-		(pts
 			(xy 66.04 76.2)
 			(xy 76.2 76.2)
 		)
@@ -4591,17 +4525,6 @@
 			(type default)
 		)
 		(uuid "21b529b5-253f-4561-b2ff-90bf5bc0816a")
-	)
-	(wire
-		(pts
-			(xy 105.41 215.9)
-			(xy 116.84 215.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "253f988e-c617-4f6e-a0ce-9471c98f2ab0")
 	)
 	(wire
 		(pts
@@ -4616,28 +4539,6 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 218.44)
-			(xy 71.12 218.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2d6a5f1b-97a0-43e9-a284-c0fb8488139a")
-	)
-	(wire
-		(pts
-			(xy 71.12 218.44)
-			(xy 71.12 215.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "30bc2050-edbb-484a-a6e6-9515d5ea0237")
-	)
-	(wire
-		(pts
 			(xy 55.88 210.82)
 			(xy 66.04 210.82)
 		)
@@ -4649,17 +4550,6 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 220.98)
-			(xy 85.09 220.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "32dc0a70-b0f5-46b9-a123-02379e8bdc90")
-	)
-	(wire
-		(pts
 			(xy 160.02 104.14)
 			(xy 171.45 104.14)
 		)
@@ -4668,17 +4558,6 @@
 			(type default)
 		)
 		(uuid "344b2672-22dc-4a1a-a138-bc7e0b0908f7")
-	)
-	(wire
-		(pts
-			(xy 212.09 109.22)
-			(xy 222.25 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "34f10d3e-a41d-4549-9f0e-b0ac7e142253")
 	)
 	(wire
 		(pts
@@ -4701,17 +4580,6 @@
 			(type default)
 		)
 		(uuid "3dba928d-a34b-4c57-8d5f-bdb59a83d4ef")
-	)
-	(wire
-		(pts
-			(xy 212.09 119.38)
-			(xy 214.63 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3df942a0-4271-4c5f-83ac-5b93682787fa")
 	)
 	(wire
 		(pts
@@ -4767,17 +4635,6 @@
 			(type default)
 		)
 		(uuid "4fc4a2af-5281-4c80-998d-c54a8f737653")
-	)
-	(wire
-		(pts
-			(xy 222.25 109.22)
-			(xy 227.33 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5017826e-9b95-43ce-bc21-e83de0ebd1e9")
 	)
 	(wire
 		(pts
@@ -4858,17 +4715,6 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 172.72)
-			(xy 181.61 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6b1bab1f-7a98-464b-8541-f7dd23b0ba47")
-	)
-	(wire
-		(pts
 			(xy 171.45 104.14)
 			(xy 179.07 104.14)
 		)
@@ -4877,17 +4723,6 @@
 			(type default)
 		)
 		(uuid "6b2c5384-2fcd-41fd-bcaf-1f85146df280")
-	)
-	(wire
-		(pts
-			(xy 212.09 170.18)
-			(xy 227.33 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ec23209-fcbc-4dd2-b384-236310be3529")
 	)
 	(wire
 		(pts
@@ -4910,50 +4745,6 @@
 			(type default)
 		)
 		(uuid "72b0ffde-4bca-4e21-8a0e-2c5dca8d8dbe")
-	)
-	(wire
-		(pts
-			(xy 71.12 215.9)
-			(xy 85.09 215.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7c0dc9d2-9553-4d70-a724-fa00b2a9fbea")
-	)
-	(wire
-		(pts
-			(xy 181.61 170.18)
-			(xy 191.77 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "82b355a0-b508-41ce-8e07-502302163a89")
-	)
-	(wire
-		(pts
-			(xy 81.28 226.06)
-			(xy 85.09 226.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "85d4f58c-4df9-4079-9c90-c5f3d4c62e7a")
-	)
-	(wire
-		(pts
-			(xy 73.66 226.06)
-			(xy 73.66 220.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8618fc6b-6537-435e-bbe5-77869671bf3b")
 	)
 	(wire
 		(pts
@@ -5056,17 +4847,6 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 226.06)
-			(xy 107.95 226.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d198d47-77bb-4212-9371-90499a2d3a33")
-	)
-	(wire
-		(pts
 			(xy 180.34 210.82)
 			(xy 190.5 210.82)
 		)
@@ -5144,17 +4924,6 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 109.22)
-			(xy 191.77 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b3da8b31-08d4-43fb-800c-df4b3ed84cf9")
-	)
-	(wire
-		(pts
 			(xy 50.8 210.82)
 			(xy 55.88 210.82)
 		)
@@ -5163,17 +4932,6 @@
 			(type default)
 		)
 		(uuid "b7a33177-66e4-4f81-9d55-ce52070ba9b1")
-	)
-	(wire
-		(pts
-			(xy 187.96 119.38)
-			(xy 191.77 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bb8e8df8-b362-49c4-927a-6c1eea2ad923")
 	)
 	(wire
 		(pts
@@ -5196,17 +4954,6 @@
 			(type default)
 		)
 		(uuid "c187c5d5-2d8e-4a43-8e0c-e5c1f40ac938")
-	)
-	(wire
-		(pts
-			(xy 171.45 172.72)
-			(xy 181.61 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c3327630-9964-426c-a47f-02704fb44d82")
 	)
 	(wire
 		(pts
@@ -5262,17 +5009,6 @@
 			(type default)
 		)
 		(uuid "ce6fd1a6-14a6-4439-80ae-5cf9c2a66231")
-	)
-	(wire
-		(pts
-			(xy 184.15 119.38)
-			(xy 184.15 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d3ee8fed-25b4-45a1-84ed-3760903da77d")
 	)
 	(wire
 		(pts
@@ -5386,28 +5122,6 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 165.1)
-			(xy 191.77 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eb0f3ab4-5f24-4608-96da-20e817b98263")
-	)
-	(wire
-		(pts
-			(xy 171.45 111.76)
-			(xy 181.61 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eb9efb12-c1f5-4bae-ac7d-8f9b58ce27e8")
-	)
-	(wire
-		(pts
 			(xy 281.94 167.64)
 			(xy 287.02 167.64)
 		)
@@ -5507,58 +5221,48 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 119.38)
-			(xy 184.15 119.38)
+			(xy 179.07 104.14)
+			(xy 198.12 104.14)
 		)
-		(uuid "b072471c-d9df-4856-9b1a-073807ef3e2d")
+		(uuid "32faf067-c43f-4291-a0cb-7907f57cda2d")
 	)
-	(text "ROUTING - POWER INPUT\nJ1 -> Q1/D9/D10 -> U8/U9 -> U1/U2: 2A traces, >=1.0mm on 1oz outer (or pours).\nU8/U9 thermal pad to a GND pour with vias. R51/R56 right at the ILM pins.\nD9/D10 right at the rail, short wide GND via. C1/C2/C7 at TPS2116 VIN, C3/C8 at VOUT.\nU3 tab to a copper pour. R46/R47 near J1, UART pair away from the power pours."
-		(at 90.17 68.58 0)
+	(wire
+		(pts
+			(xy 205.74 104.14)
+			(xy 212.09 104.14)
+		)
+		(uuid "713f285a-9cbb-41cb-928d-2305137efd57")
+	)
+	(wire
+		(pts
+			(xy 179.07 165.1)
+			(xy 198.12 165.1)
+		)
+		(uuid "a565683a-b4d3-4328-a029-1b79f6a54c28")
+	)
+	(wire
+		(pts
+			(xy 205.74 165.1)
+			(xy 212.09 165.1)
+		)
+		(uuid "cc03ba0d-405c-4646-98db-d3def6a17f4d")
+	)
+	(wire
+		(pts
+			(xy 66.04 210.82)
+			(xy 105.41 210.82)
+		)
+		(uuid "8b6a7c22-e1ce-4f74-b281-51eda0c50616")
+	)
+	(text "D11 keeps Q1 gate voltage in rating\n(DESIGN_NOTES.md §3)"
+		(at 102.87 130.81 0)
 		(effects
 			(font
-				(size 1.27 1.27)
-				(bold yes)
-				(color 255 0 0 1)
+				(size 1 1)
 			)
 			(justify left bottom)
 		)
-		(uuid "4eb9f006-ad9e-464c-9bec-1c277fd5ecb2")
-	)
-	(text "USB VBUS (J2, sheet 03)   U13 eFuse -> VBUS_SW -> U1 VIN2 (+5V backup) and U3 LDO -> +3V3_LDO -> U2 VIN2 (+3V3 backup)"
-		(at 22.86 199.39 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "eca4a877-365d-4c91-a2e9-9b81dd623ac3")
-	)
-	(text "5V FROM POWERBOARD   J1 pins 1-2 -> Q1 reverse polarity -> D9 TVS -> U8 eFuse -> +5V_PB (DotStars) -> U1 mux VIN1 -> +5V"
-		(at 22.86 45.72 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "3cfc5287-83c1-451b-b68c-ed58aef2b55c")
-	)
-	(text "3V3 FROM POWERBOARD   J1 pins 3-4 -> D10 TVS -> U9 eFuse -> +3V3_PB (radio J14) -> U2 mux VIN1 -> +3V3"
-		(at 22.86 143.51 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "ea106cde-5ed4-4ac3-91a4-bda77ba818a3")
+		(uuid "3c84212c-d8b6-44ed-82e7-2913eeda6c88")
 	)
 	(label "U1_PR1"
 		(at 297.18 124.46 180)
@@ -5610,16 +5314,6 @@
 		)
 		(uuid "4f793a14-35cd-425b-9ccb-9fecdc41bcc7")
 	)
-	(label "VBUS_SW"
-		(at 116.84 210.82 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7e173939-d312-415c-88f7-963f2f1a6c9b")
-	)
 	(label "U1_PR1"
 		(at 284.48 101.6 180)
 		(effects
@@ -5659,16 +5353,6 @@
 			(justify right bottom)
 		)
 		(uuid "ba8008ca-80ff-4e46-9b8b-bac9a9cbe5e1")
-	)
-	(label "VBUS_SW"
-		(at 271.78 105.41 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d089c186-81ed-4511-bbd6-6728d3ce497f")
 	)
 	(label "U2_PR1"
 		(at 297.18 185.42 180)
@@ -5745,28 +5429,6 @@
 		)
 		(uuid "3d006279-346d-4bce-9efc-7d4f313f8987")
 	)
-	(hierarchical_label "PWR_FAULT"
-		(shape output)
-		(at 116.84 215.9 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4523f459-8102-4321-b9b8-9d4c379f3cc0")
-	)
-	(hierarchical_label "PWR_FAULT"
-		(shape output)
-		(at 227.33 170.18 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "661bdb5e-3a06-45c7-a10e-365960327b15")
-	)
 	(hierarchical_label "PWR_UART_RX"
 		(shape output)
 		(at 76.2 72.39 0)
@@ -5789,17 +5451,6 @@
 		)
 		(uuid "8f806f6e-c6cd-4f61-92f3-3bfad3ee03d5")
 	)
-	(hierarchical_label "PWR_FAULT"
-		(shape output)
-		(at 227.33 109.22 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "95d5374b-5945-4d4d-afec-b0130da3be19")
-	)
 	(hierarchical_label "PWR_UART_TX"
 		(shape input)
 		(at 76.2 76.2 0)
@@ -5811,125 +5462,77 @@
 		)
 		(uuid "c730dfa5-6691-4d94-921f-81ceb138b856")
 	)
-  (text "D11 keeps Q1 gate voltage in rating\n(DESIGN_NOTES.md §3)"
-    (at 102.87 130.81 0)
-    (effects (font (size 1 1)) (justify left bottom))
-    (uuid "3c84212c-d8b6-44ed-82e7-2913eeda6c88")
+  (junction
+    (at 219.71 165.1)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "c9dc0531-6cd5-42e5-8cc8-e7e9908a8345")
   )
-  (text "R1/R2: 5V source switchover point\n(DESIGN_NOTES.md §4)"
-    (at 238.76 121.92 0)
-    (effects (font (size 1 1)) (justify left bottom))
-    (uuid "e3deb549-eb03-416f-846f-85f831125d8c")
-  )
-  (text "R3/R4: 3V3 source switchover point\n(DESIGN_NOTES.md §4)"
-    (at 238.76 182.88 0)
-    (effects (font (size 1 1)) (justify left bottom))
-    (uuid "0599eba5-bbee-48e1-b724-c91309f81697")
-  )
-  (text "R45 holds VIN2 at 0V\nwith no USB cable (§4)"
-    (at 269.494 131.572 0)
-    (effects (font (size 1 1)) (justify left bottom))
-    (uuid "2a338f03-b3b9-4df1-a460-1176c06d4431")
-  )
-  (text "J1 POWERBOARD CONNECTOR - JST-XH 8P\n  1-2 +5V   3-4 +3V3   5-6 GND   7 PWR_UART_TX   8 PWR_UART_RX (order to confirm with powerboard)\nQ1 blocks a reversed 5V input. D9/D10 absorb surges.\nU8/U9 eFuses: undervoltage cut-off, current limit, overvoltage clamp.\n  Clamp type chosen so a rail cannot latch off after a spike.\nWhy these parts and values: DESIGN_NOTES.md §3. Open issues M1-M3."
+  (text "J1 POWERBOARD CONNECTOR - JST-XH 8P\n  1-2 +5V   3-4 +3V3   5-6 GND   7 PWR_UART_TX   8 PWR_UART_RX (order to confirm with powerboard)\nQ1 blocks a reversed 5V input. D9/D10 absorb surges.\nF2/F3 PTC fuses open on a sustained short. No undervoltage or overvoltage cut-off (kept simple).\nWhy these parts and values: DESIGN_NOTES.md §3. Open issues M1-M3."
     (at 156.21 279.4 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "7bc0ecbd-7573-4390-9cb7-3bdc4047038f")
+    (uuid "eaa74447-9623-4586-af7e-f48d3f6c5ebc")
   )
-  (text "POWER MUX - U1/U2 TPS2116, priority mode\nPowerboard (VIN1) is used whenever present; USB (VIN2) is the bench fallback.\nST tells the MCU which source is active (PWR_SRC_5V/3V3). R83 protects PA2 from the bootloader.\nRadio and DotStars run from the powerboard-only rails, so USB never carries them.\nDetails: DESIGN_NOTES.md §2 and §4. Sag at switchover with USB attached: M7."
-    (at 33.02 279.4 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "a7d3359b-41ec-46f9-91e4-2e932bff7144")
-  )
-  (text "U13 USB VBUS LIMITER\nSoft-starts the board capacitance to meet the USB inrush limit,\nlimits USB current and passes a 5.5V VBUS.\nC55 meets the USB minimum VBUS capacitance.\nDetails: DESIGN_NOTES.md §4."
+  (text "USB VBUS INPUT\nF1 PTC fuse (sheet 03) opens on a cable or board short. D12 at J2 absorbs surges.\nC55 meets the USB minimum VBUS capacitance. No inrush limiter.\nDetails: DESIGN_NOTES.md §4."
     (at 115.57 238.76 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "4d11fc4e-4e2b-4ac2-abd8-fe24b3b650ba")
+    (uuid "d3fe3c7f-cb5b-4212-85ed-b97fc23b0f6b")
   )
-  (text "LIMITS\nOvervoltage is clamped by the eFuses; the TVS diodes only take surges.\n3V3 current is capped at the eFuse maximum (M3). Powerboard 3V3 should be 3.4V (M2).\nDetails: DESIGN_NOTES.md §3 and §13."
+  (text "LIMITS\nNo overvoltage cut-off on the powerboard rails: the powerboard must regulate (M1, M2).\nThe TVS diodes only take surges. PTC fuses are slow; they protect wiring and connectors.\nDetails: DESIGN_NOTES.md §3 and §13."
     (at 223.52 248.92 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "d31fb6da-8d9c-434b-b267-3fed183cc2be")
+    (uuid "a1393490-7732-48d7-a6d6-92c33f0f3444")
   )
-	(symbol
-		(lib_id "Device:R")
-		(at 214.63 123.19 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "021e24e2-8cfe-4e79-8bd1-cd8fd7670698")
-		(property "Reference" "R51"
-			(at 216.662 123.19 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "604R"
-			(at 214.63 123.19 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 214.63 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 214.63 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "U8 current limit: RILM = 903 / (ILIM - 0.0112) (SLVSET8A Eq. 7). 604R -> 1.51A."
-			(at 214.63 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "2"
-			(uuid "0de0d62a-f110-4ce4-837b-47ce15ae9893")
-		)
-		(pin "1"
-			(uuid "f6a71da1-9e80-4a24-990d-8dc294ad483e")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "R51")
-					(unit 1)
-				)
-			)
-		)
-	)
+  (text "POWER MUX - U1/U2 TPS2116, priority mode\nPowerboard (VIN1) is used whenever present; USB (VIN2) is the bench fallback.\nNo output diodes needed: the TPS2116 blocks reverse current into an unused input.\nST tells the MCU which source is active (PWR_SRC_5V/3V3). R83 protects PA2 from the bootloader.\nThe radio runs from +3V3_PB only. The DotStars run from +5V, so they also draw from USB.\nDetails: DESIGN_NOTES.md §2 and §4. Sag at switchover with USB attached: M7."
+    (at 33.02 279.4 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "1125f3b8-40d8-4744-8bd5-71e33fec6866")
+  )
+  (text "ROUTING - POWER INPUT\nJ1 -> Q1/D9/D10 -> F2/F3 -> U1/U2: 2A traces, >=1.0mm on 1oz outer (or pours).\nQ1, D9 and D10 right at J1 (D9 stays after Q1). Short wide GND via at each TVS.\nC1/C2/C7 at TPS2116 VIN, C3/C8 at VOUT.\nU3 tab to a copper pour. R46/R47 near J1, UART pair away from the power pours."
+    (at 240.03 68.58 0)
+    (effects (font (size 1.27 1.27) (bold yes) (color 255 0 0 1)) (justify left bottom))
+    (uuid "7918ee8b-1686-43e5-baee-b69f4b344b9a")
+  )
+  (text "R1/R2: 5V source switchover point\n(DESIGN_NOTES.md §4)"
+    (at 243.84 121.92 0)
+    (effects (font (size 1 1)) (justify left bottom))
+    (uuid "df526cc9-9a6a-40bf-b270-4bc6a9a279ee")
+  )
+  (text "R3/R4: 3V3 source switchover point\n(DESIGN_NOTES.md §4)"
+    (at 243.84 182.88 0)
+    (effects (font (size 1 1)) (justify left bottom))
+    (uuid "cce8de1d-3050-4c3b-b01a-9c1b24ff931c")
+  )
+  (text "POWERBOARD CONNECTOR J1"
+    (at 17.78 60.96 0)
+    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
+    (uuid "eba1d35b-53c5-487d-9121-8b8956a4eb76")
+  )
+  (text "5V INPUT: Q1 REVERSE POLARITY, D9 TVS, F2 FUSE"
+    (at 100.33 77.47 0)
+    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
+    (uuid "86734f9c-4944-4910-8e69-63360ddcaa62")
+  )
+  (text "5V MUX U1: POWERBOARD, ELSE USB"
+    (at 241.3 77.47 0)
+    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
+    (uuid "6a54e356-fccd-4b74-8a72-37e7bd842db2")
+  )
+  (text "3V3 INPUT: D10 TVS, F3 FUSE"
+    (at 81.28 151.13 0)
+    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
+    (uuid "c656a3c7-c368-4776-8b56-0fc72e1f128e")
+  )
+  (text "3V3 MUX U2: POWERBOARD, ELSE USB LDO"
+    (at 241.3 148.59 0)
+    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
+    (uuid "92b19831-ffc6-4ade-9d18-2d37f79039e4")
+  )
+  (text "USB VBUS AND 3V3 LDO U3"
+    (at 40.64 196.85 0)
+    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
+    (uuid "16e0dd19-30b6-4064-952d-214b9fd9cb3b")
+  )
 	(symbol
 		(lib_id "Device:R")
 		(at 300.99 185.42 90)
@@ -6186,84 +5789,16 @@
 				)
 			)
 		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 201.93 124.46 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "09bbe128-e08e-4814-a8a4-1755526f00ef")
-		(property "Reference" "#PWR133"
-			(at 201.93 130.81 0)
+	
+		(property "MPN" "TI TPS2116DRLR"
+			(at 297.18 104.14 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(property "Value" "GND"
-			(at 201.93 128.27 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 201.93 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 201.93 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 201.93 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "1"
-			(uuid "f95d89cc-27c3-44f8-816a-428c11495ac9")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "#PWR133")
-					(unit 1)
-				)
-			)
-		)
-	)
+		))
 	(symbol
 		(lib_id "Device:C")
 		(at 139.7 214.63 0)
@@ -6512,83 +6047,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 201.93 185.42 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1e363947-4f7e-4b2c-9daf-0841381a5e5d")
-		(property "Reference" "#PWR138"
-			(at 201.93 191.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 201.93 189.23 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 201.93 185.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 201.93 185.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 201.93 185.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "1"
-			(uuid "5ec87319-76b9-4c8d-b968-2373f45de970")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "#PWR138")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 312.42 118.11 0)
 		(unit 1)
@@ -6718,7 +6176,7 @@
 				)
 			)
 		)
-		(property "Description" "+3V3_RAW (U9 input). With TP2 gives the U9+U2 drop (DESIGN_NOTES.md M2, radio needs >= 3.0V)."
+		(property "Description" "+3V3_RAW (F3 input). With TP2 gives the F3+U2 drop (DESIGN_NOTES.md M2, radio needs >= 3.0V)."
 			(at 154.94 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -6892,83 +6350,6 @@
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
 					(reference "#PWR110")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 160.02 111.76 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "22d2f33b-c53f-4526-9697-d6479dffcca8")
-		(property "Reference" "#PWR150"
-			(at 160.02 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 160.02 115.57 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 160.02 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 160.02 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 160.02 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "1"
-			(uuid "3ffdf504-baeb-45e5-8d19-53cc919662fc")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "#PWR150")
 					(unit 1)
 				)
 			)
@@ -7291,85 +6672,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 107.95 229.87 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "284f8ebd-875a-4d78-aeaa-5c4d094be9b7")
-		(property "Reference" "R80"
-			(at 109.982 229.87 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1.82k"
-			(at 107.95 229.87 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 107.95 229.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 107.95 229.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "U13 current limit: 1.82k -> 0.507A (0.455-0.560A) by SLVSET8A Eq. 7. USB-only loads are MCU, SD, IMU and OLED; radio and DotStars are on the powerboard-only rails."
-			(at 107.95 229.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "1"
-			(uuid "f0fe9cf7-b13f-4d67-bf41-060378761b39")
-		)
-		(pin "2"
-			(uuid "60260ae0-dceb-43d9-afef-707b41cd97b3")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "R80")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 116.84 121.92 0)
 		(unit 1)
@@ -7526,87 +6828,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 187.96 123.19 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2e863e15-1c22-40d5-a187-944e91eeb3c4")
-		(property "Reference" "C52"
-			(at 188.595 120.65 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22nF"
-			(at 188.595 125.73 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 187.96 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 187.96 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 187.96 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "2"
-			(uuid "3c6e64a9-573f-49a2-ae6d-330224fcc127")
-		)
-		(pin "1"
-			(uuid "678d9497-86c1-4cb9-8107-ba2dc71c151f")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "C52")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Power_Management:TPS2116DRL")
 		(at 297.18 165.1 0)
 		(unit 1)
@@ -7704,86 +6925,16 @@
 				)
 			)
 		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 222.25 113.03 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3cc886ba-5056-43da-b773-457e58f3f066")
-		(property "Reference" "R52"
-			(at 224.282 113.03 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 222.25 113.03 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 222.25 113.03 0)
+	
+		(property "MPN" "TI TPS2116DRLR"
+			(at 297.18 165.1 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(property "Datasheet" ""
-			(at 222.25 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "PWR_FAULT pull-up; U8/U9 FLT are open-drain, wired-OR."
-			(at 222.25 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "1"
-			(uuid "cc55d3df-ab27-4fb5-bff3-ffade9526f98")
-		)
-		(pin "2"
-			(uuid "423c6144-d6e3-4d8f-b6ec-d97eed509868")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "R52")
-					(unit 1)
-				)
-			)
-		)
-	)
+		))
 	(symbol
 		(lib_id "Device:LED")
 		(at 355.6 110.49 90)
@@ -7927,7 +7078,7 @@
 				)
 			)
 		)
-		(property "Description" "U13 CIN at the USB connector side. USB 2.0 Device Capacitance ECN requires 1.0-10uF on VBUS; TPS2596 9.2 recommends >= 1uF. 2.2uF X7R >= 10V keeps >= 1uF after DC bias."
+		(property "Description" "VBUS input capacitor at the USB side. USB 2.0 Device Capacitance ECN requires 1.0-10uF on VBUS. 2.2uF X7R >= 10V keeps >= 1uF after DC bias."
 			(at 55.88 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -7957,7 +7108,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 179.07 165.1 0)
+		(at 219.71 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7965,7 +7116,7 @@
 		(dnp no)
 		(uuid "402904c0-4cf9-4da9-b4b0-5d444bf8ecf3")
 		(property "Reference" "#PWR143"
-			(at 179.07 163.195 0)
+			(at 219.71 163.195 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7976,7 +7127,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 179.07 161.29 0)
+			(at 219.71 161.29 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7986,7 +7137,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 179.07 165.1 0)
+			(at 219.71 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7997,7 +7148,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 179.07 165.1 0)
+			(at 219.71 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8008,7 +7159,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 179.07 165.1 0)
+			(at 219.71 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8187,166 +7338,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 66.04 214.63 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "45cb397b-702c-4b49-b2f3-9b4293631675")
-		(property "Reference" "R77"
-			(at 68.072 214.63 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "110k"
-			(at 66.04 214.63 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 66.04 214.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 66.04 214.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "U13 EN/UVLO divider top. With R78 47k: UVLO 4.01V rising."
-			(at 66.04 214.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "1"
-			(uuid "95174e10-d5b7-4727-988a-f93c99ce2645")
-		)
-		(pin "2"
-			(uuid "97507d71-9c5c-4a8d-8106-802cd388f7b5")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "R77")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 160.02 168.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "47b2a39e-b320-4159-90e0-5d0b8cd45fd0")
-		(property "Reference" "C57"
-			(at 160.655 166.37 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 160.655 171.45 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 160.02 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 160.02 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "U9 CIN 100nF (TPS2596 9.2). Place at U9 IN pin."
-			(at 160.02 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "2"
-			(uuid "d87e93e3-7f8e-4d7d-8a09-ed4eee36ed4c")
-		)
-		(pin "1"
-			(uuid "faa1b53c-71db-4d25-9961-0c16e3965747")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "C57")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Power_Protection:TVS0500DRV")
 		(at 137.16 111.76 0)
 		(unit 1)
@@ -8399,7 +7390,7 @@
 				)
 			)
 		)
-		(property "Description" "TVS0500 flat clamp: VBR 7.5-8.4V, 9.2V @43A. Above TPS2116 6V abs max - see LIMITS note."
+		(property "Description" "5V input TVS at J1, after Q1 (unidirectional, so a reversed input must not forward-bias it). TVS0500: VBR 7.5-8.4V, 9.2V @43A. Takes surges only; its clamp is above the TPS2116 6V abs max (DESIGN_NOTES.md §3)."
 			(at 137.16 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -8441,7 +7432,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "MPN" "TI TVS0500DRVR"
+			(at 137.16 111.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 266.7 105.41 0)
@@ -8522,653 +7522,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 107.95 233.68 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4f381159-ad80-4ade-9c92-81503dcce919")
-		(property "Reference" "#PWR149"
-			(at 107.95 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 107.95 237.49 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 107.95 233.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 107.95 233.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 107.95 233.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "1"
-			(uuid "48f60b27-137a-4b8f-95c6-036d67fa1b51")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "#PWR149")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Power_Management:TPS2596xx")
-		(at 201.93 172.72 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "52a698c1-bebc-432e-9d2c-f6faaec79748")
-		(property "Reference" "U9"
-			(at 195.072 161.29 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TPS259621DDA"
-			(at 201.93 172.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:TI_SO-PowerPAD-8_ThermalVias"
-			(at 201.93 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps2596.pdf"
-			(at 201.93 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "3V3 powerboard eFuse. TPS259621DDA (SLVSET8A): auto-retry, output overvoltage CLAMP. OVCSEL to GND: clamp starts 3.75-3.92V, output held 3.47-3.70V (7.5), under the STM32 4.0V abs max. UVLO R53 61.9k / R54 47k: 1.2V x (1 + 61.9/47) = 2.78V rising. ILIM R56 453R: 2.01A (Eq. 7, device max). dVdt C53 22nF: 2.0V/ms."
-			(at 201.93 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "TI TPS259621DDAR"
-			(at 201.93 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "8"
-			(uuid "3d2e5628-453b-4168-98eb-e5c70e763756")
-		)
-		(pin "9"
-			(uuid "ad9b8e63-8c65-4981-b48f-57ce44be06d7")
-		)
-		(pin "1"
-			(uuid "240a199b-f976-42da-9192-c05303658c7f")
-		)
-		(pin "4"
-			(uuid "e024a726-d588-4a4a-ab56-89c933cf4030")
-		)
-		(pin "3"
-			(uuid "7bdcb67c-9d1e-463e-a1a1-9853a8cace81")
-		)
-		(pin "2"
-			(uuid "5fb492fd-6ada-4b05-97d9-a4baf6564517")
-		)
-		(pin "6"
-			(uuid "420ddcb7-d4f2-47a7-95cc-2f895b31e9b6")
-		)
-		(pin "7"
-			(uuid "1414d752-5e7a-430a-be0c-72d6f4f1eafb")
-		)
-		(pin "5"
-			(uuid "d4b7aa46-ffb3-4f7b-91ad-966e1b840770")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "U9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 280.67 113.03 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "55446c5f-1dbc-4f58-be86-93658ffdb11d")
-		(property "Reference" "R45"
-			(at 282.702 113.03 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100k"
-			(at 280.67 113.03 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 280.67 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 280.67 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "VBUS_SW bleeder: holds U1 VIN2 / U3 input at 0V while U13 is off. 50uA."
-			(at 280.67 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "2"
-			(uuid "0eef063c-5a56-4695-97de-5f1fff4d2512")
-		)
-		(pin "1"
-			(uuid "e80dff45-d24a-4264-99dc-5201dc6583f7")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "R45")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Power_Management:TPS2596xx")
-		(at 201.93 111.76 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "563aba39-a18b-483d-ba7b-dc36cbdbb33b")
-		(property "Reference" "U8"
-			(at 195.072 100.33 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TPS259621DDA"
-			(at 201.93 111.76 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:TI_SO-PowerPAD-8_ThermalVias"
-			(at 201.93 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps2596.pdf"
-			(at 201.93 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "5V powerboard eFuse. TPS259621DDA (SLVSET8A): auto-retry, output overvoltage CLAMP (no lockout). OVCSEL R50 402k: clamp starts 5.54-5.83V, output held 5.28-5.61V (7.5). UVLO R48 121k / R49 47k: 1.2V x (1 + 121/47) = 4.29V rising. ILIM R51 604R: 903/604 + 0.0112 = 1.51A (Eq. 7). dVdt C52 22nF: 2.0V/ms. For TPS25962x, VIN must stay below the selected clamp in normal operation (datasheet rating note)."
-			(at 201.93 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "TI TPS259621DDAR"
-			(at 201.93 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "7"
-			(uuid "920aba21-b612-4803-b4ad-3c4bf93a92ee")
-		)
-		(pin "6"
-			(uuid "d387d402-6d71-429e-ab2a-9dda0f529280")
-		)
-		(pin "9"
-			(uuid "df2e8067-f32f-4812-9a95-c796c2760039")
-		)
-		(pin "5"
-			(uuid "514079f0-b8da-4f21-842a-1b21a6f172b3")
-		)
-		(pin "8"
-			(uuid "93d2c16b-049f-4948-b783-5c536f0a8eea")
-		)
-		(pin "2"
-			(uuid "8a65f890-3d5b-49a9-ab25-dd5388433b03")
-		)
-		(pin "3"
-			(uuid "51463a12-c27c-46d0-bd57-0d0ea21ef79f")
-		)
-		(pin "1"
-			(uuid "7f3a79ec-6e90-461e-9fa6-c44afecea742")
-		)
-		(pin "4"
-			(uuid "4a2e113e-7b49-4ae0-9c27-b4b4ef083d00")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "U8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Power_Management:TPS2596xx")
-		(at 95.25 218.44 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "58748f58-0d1c-4623-aba1-fda03f9c28aa")
-		(property "Reference" "U13"
-			(at 88.392 207.01 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TPS259621DDA"
-			(at 95.25 218.44 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:TI_SO-PowerPAD-8_ThermalVias"
-			(at 95.25 218.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps2596.pdf"
-			(at 95.25 218.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "USB VBUS eFuse / inrush limiter. TPS259621DDA: OVCSEL R79 402k: clamp starts 5.54-5.83V, so the 5.50V USB VBUS max passes; output held 5.28-5.61V. UVLO R77 110k / R78 47k: 4.01V rising (USB device min 4.40V). ILIM R80 1.82k: 0.507A (0.455-0.560A). dVdt C54 47nF: ~0.94V/ms into ~152uF downstream (USB 2.0 7.2.4.1 inrush). FLT joins PWR_FAULT."
-			(at 95.25 218.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "TI TPS259621DDAR"
-			(at 95.25 218.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "3"
-			(uuid "687cb309-72e3-476c-8e83-66894b10f94b")
-		)
-		(pin "2"
-			(uuid "379574f2-a0a2-4724-b9ff-7794e6065b66")
-		)
-		(pin "1"
-			(uuid "80267f16-4e38-4a67-a180-ed4eb2c1dde4")
-		)
-		(pin "4"
-			(uuid "f96f3adc-27c3-41fd-8622-93892d8e271c")
-		)
-		(pin "5"
-			(uuid "32744c80-5f99-4422-a0bb-ea85ba0caebc")
-		)
-		(pin "6"
-			(uuid "57ed1076-8f7a-4f13-88c5-6c35ef28d7d1")
-		)
-		(pin "8"
-			(uuid "9a655652-9f6e-447d-852b-c98e721ea9c4")
-		)
-		(pin "7"
-			(uuid "e287e70a-bb0c-4ffe-b2fe-ed7a95036fa1")
-		)
-		(pin "9"
-			(uuid "ad03d16b-cfa1-40dc-add6-8caacc28f107")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "U13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 214.63 127 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "596560b9-953b-4089-b0fb-c927500ee62c")
-		(property "Reference" "#PWR134"
-			(at 214.63 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 214.63 130.81 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 214.63 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 214.63 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 214.63 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "1"
-			(uuid "6baa25a9-cc8c-4491-983d-0cdbd05efb68")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "#PWR134")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 171.45 107.95 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5c1bf826-bab1-40f6-aa56-2dfe9f4caa02")
-		(property "Reference" "R48"
-			(at 173.482 107.95 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "121k"
-			(at 171.45 107.95 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 171.45 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 171.45 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "U8 EN/UVLO divider top. With R49 47k: UVLO 4.29V rising."
-			(at 171.45 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "2"
-			(uuid "e630cacc-04ce-4473-a628-12900376d67b")
-		)
-		(pin "1"
-			(uuid "407276fe-a16a-4101-8e34-2bb939ae46e3")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "R48")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 179.07 104.14 0)
+		(at 219.71 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9176,7 +7531,7 @@
 		(dnp no)
 		(uuid "5c753caf-5ce2-4b6c-ae35-5f7271470653")
 		(property "Reference" "#PWR142"
-			(at 179.07 102.235 0)
+			(at 219.71 102.235 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9187,7 +7542,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 179.07 100.33 0)
+			(at 219.71 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9197,7 +7552,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 179.07 104.14 0)
+			(at 219.71 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9208,7 +7563,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 179.07 104.14 0)
+			(at 219.71 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9219,7 +7574,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 179.07 104.14 0)
+			(at 219.71 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9238,160 +7593,6 @@
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
 					(reference "#PWR142")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 95.25 231.14 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5ccb00e7-e29b-4f03-a7c2-2055336f9e62")
-		(property "Reference" "#PWR148"
-			(at 95.25 237.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 95.25 234.95 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 95.25 231.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 95.25 231.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 95.25 231.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "1"
-			(uuid "d4fe0d70-529b-4f77-a3e3-ffeb6a728d5b")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "#PWR148")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 179.07 127 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5ce5c3de-5411-4932-9cb7-9fdb247f450d")
-		(property "Reference" "#PWR131"
-			(at 179.07 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 179.07 130.81 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 179.07 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 179.07 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 179.07 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "1"
-			(uuid "769b9938-435e-4318-a43e-fb1cb94aa705")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "#PWR131")
 					(unit 1)
 				)
 			)
@@ -9662,322 +7863,6 @@
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
 					(reference "C1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 171.45 115.57 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6060ef2f-c12a-4b90-875a-61f445a501fc")
-		(property "Reference" "R49"
-			(at 173.482 115.57 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "47k"
-			(at 171.45 115.57 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 171.45 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 171.45 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "U8 EN/UVLO divider bottom."
-			(at 171.45 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "1"
-			(uuid "9e1bb2ac-b199-4321-bd9f-8c1ee2626736")
-		)
-		(pin "2"
-			(uuid "05fd6ad6-ddab-4b1d-8749-8d07553ddfec")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "R49")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 160.02 107.95 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "64f2b437-ad0a-4712-b27e-9f2db2ac535b")
-		(property "Reference" "C56"
-			(at 160.655 105.41 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 160.655 110.49 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 160.02 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 160.02 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "U8 CIN 100nF (TPS2596 9.2). Place at U8 IN pin."
-			(at 160.02 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "1"
-			(uuid "5e6fc3c8-abcb-4b82-9fa2-082f0aac12c5")
-		)
-		(pin "2"
-			(uuid "b556ac46-3fd6-443f-bb23-983471b7dc38")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "C56")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 171.45 176.53 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6ea4e01e-aef7-47fd-a1b8-f90e1452ba32")
-		(property "Reference" "R54"
-			(at 173.482 176.53 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "47k"
-			(at 171.45 176.53 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 171.45 176.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 171.45 176.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "U9 EN/UVLO divider bottom. U9 OVCSEL is tied to GND (3.83V clamp option)."
-			(at 171.45 176.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "1"
-			(uuid "593fdc7e-7cce-4232-8991-0a7099d7700a")
-		)
-		(pin "2"
-			(uuid "53bb5d5a-0de8-49ed-8ad0-ba5b89ad73ea")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "R54")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 160.02 172.72 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "746ec771-c84e-428d-b0c8-df0f7a6a2d73")
-		(property "Reference" "#PWR151"
-			(at 160.02 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 160.02 176.53 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 160.02 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 160.02 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 160.02 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "1"
-			(uuid "9fdb7c6f-247d-49f4-9514-d8f215ff9045")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "#PWR151")
 					(unit 1)
 				)
 			)
@@ -10291,83 +8176,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 280.67 116.84 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7e26d621-e782-494f-a62e-e57b3a938a7c")
-		(property "Reference" "#PWR116"
-			(at 280.67 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 280.67 120.65 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 280.67 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 280.67 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 280.67 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "1"
-			(uuid "1427d197-0551-4293-a70a-6ba32d90a382")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "#PWR116")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
 		(at 347.98 160.02 0)
 		(unit 1)
@@ -10540,7 +8348,7 @@
 				)
 			)
 		)
-		(property "Value" "470R"
+		(property "Value" "1.5k"
 			(at 355.6 163.83 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10572,7 +8380,7 @@
 				)
 			)
 		)
-		(property "Description" "3V3 indicator LED resistor. (3.3-2.0)/470 = 2.8mA, close to D1's 3.0mA."
+		(property "Description" "3V3 power LED resistor. (3.3 - 2.0) / 1.5k = 0.87mA, matched to D1's brightness."
 			(at 355.6 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -10755,7 +8563,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "MPN" "Nexperia BZX384-C10"
+			(at 121.92 107.95 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 254 97.79 0)
@@ -10929,7 +8746,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "3.3k"
 			(at 355.6 102.87 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10961,7 +8778,7 @@
 				)
 			)
 		)
-		(property "Description" "5V indicator LED resistor. (5.0-2.0)/1k = 3.0mA (D1 VF 2.0V typ)."
+		(property "Description" "5V power LED resistor. (5.0 - 2.0) / 3.3k = 0.9mA: dim indicator (APT1608EC is rated 20mA; ~1mA is plenty indoors)."
 			(at 355.6 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -10984,83 +8801,6 @@
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
 					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 81.28 233.68 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8d102e6f-219c-4e59-8a30-4421eef45ab2")
-		(property "Reference" "#PWR147"
-			(at 81.28 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 81.28 237.49 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 81.28 233.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 81.28 233.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 81.28 233.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "1"
-			(uuid "996a6fa2-afc3-4b48-8f0f-73f92ee9fd78")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "#PWR147")
 					(unit 1)
 				)
 			)
@@ -11300,247 +9040,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 187.96 184.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9f7a9982-dc49-44d1-bfa5-723496f91a05")
-		(property "Reference" "C53"
-			(at 188.595 181.61 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22nF"
-			(at 188.595 186.69 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 187.96 184.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 187.96 184.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 187.96 184.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "1"
-			(uuid "50bf6f0d-eb25-4c6f-aebe-e7ad0f85a87e")
-		)
-		(pin "2"
-			(uuid "4ac52dd4-1a86-4c00-b143-aa693197203c")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "C53")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 81.28 229.87 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a30b9ff2-f4f6-4eb2-95d3-f323f2b3daac")
-		(property "Reference" "C54"
-			(at 81.915 227.33 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "47nF"
-			(at 81.915 232.41 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 81.28 229.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 81.28 229.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "U13 dVdt: SR = 2.11uA x 20.93 / 47nF = 0.94V/ms (TPS2596 IdVdt, GdVdt)."
-			(at 81.28 229.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "2"
-			(uuid "e2215e8c-7fbd-457d-9108-1dadc5f8cce3")
-		)
-		(pin "1"
-			(uuid "8058e540-4b61-46c8-b91d-e1f306df9581")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "C54")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 73.66 229.87 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a6845098-65cf-4f44-b420-44086441ce3b")
-		(property "Reference" "R79"
-			(at 75.692 229.87 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "402k"
-			(at 73.66 229.87 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 73.66 229.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 73.66 229.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "U13 OVCSEL to GND: 5.69V clamp option (SLVSET8A 7.5 specifies 400k; nearest E96)."
-			(at 73.66 229.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "2"
-			(uuid "8809ee88-b525-46ce-a613-e95119fba4ca")
-		)
-		(pin "1"
-			(uuid "3ddf6645-6d17-4e00-bd7a-3f706ccb73e0")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "R79")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 327.66 167.64 0)
 		(unit 1)
@@ -11668,7 +9167,7 @@
 				)
 			)
 		)
-		(property "Description" "+5V_PROT (U8 input). With TP1 gives the U8+U1 drop."
+		(property "Description" "+5V_PROT (F2 input). With TP1 gives the F2+U1 drop."
 			(at 154.94 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -11765,85 +9264,6 @@
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
 					(reference "#PWR119")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 171.45 168.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "aba614c9-d013-495a-85d9-457de90c6d1b")
-		(property "Reference" "R53"
-			(at 173.482 168.91 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "61.9k"
-			(at 171.45 168.91 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 171.45 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 171.45 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "U9 EN/UVLO divider top. With R54 47k: UVLO 2.78V rising."
-			(at 171.45 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "1"
-			(uuid "9ac7a220-5159-47ba-b047-73fd376bfbe5")
-		)
-		(pin "2"
-			(uuid "7e2c7cce-e71e-4fbd-b28c-9ab234861afd")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "R53")
 					(unit 1)
 				)
 			)
@@ -12083,83 +9503,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 187.96 127 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b14916ef-728a-4bee-9d21-afb82b3e1151")
-		(property "Reference" "#PWR132"
-			(at 187.96 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 187.96 130.81 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 187.96 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 187.96 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 187.96 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "1"
-			(uuid "aea92ab5-12c1-49a0-b80b-a1f5778dc54e")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "#PWR132")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 340.36 99.06 0)
 		(unit 1)
@@ -12391,162 +9734,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 187.96 187.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c0dca43e-e5d3-4496-9ad4-6704876e1ef8")
-		(property "Reference" "#PWR137"
-			(at 187.96 194.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 187.96 191.77 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 187.96 187.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 187.96 187.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 187.96 187.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "1"
-			(uuid "32b0f6ac-ee6a-47e3-be75-b20ccc2c3cb8")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "#PWR137")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 179.07 123.19 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c19c55df-e4a6-41aa-a103-17417030972c")
-		(property "Reference" "R50"
-			(at 181.102 123.19 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "402k"
-			(at 179.07 123.19 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 179.07 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 179.07 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "U8 OVCSEL to GND. SLVSET8A 7.5 specifies 400k for the 5.69V clamp option; 402k is the nearest E96."
-			(at 179.07 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "1"
-			(uuid "54a42894-1d1c-469f-85e0-39ee5848755c")
-		)
-		(pin "2"
-			(uuid "f5a44203-f2df-445c-aecf-4832aaa46ce3")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "R50")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
 		(at 312.42 175.26 0)
 		(unit 1)
@@ -12705,162 +9892,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 73.66 233.68 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c599d44d-afe2-4a56-b603-e472c0379175")
-		(property "Reference" "#PWR146"
-			(at 73.66 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 73.66 237.49 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 73.66 233.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 73.66 233.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 73.66 233.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "1"
-			(uuid "c3ace8f2-22ed-48b9-8620-b664bb32b9d9")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "#PWR146")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 66.04 222.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ceb68685-1e27-476f-bc92-1c03a3e9dd5c")
-		(property "Reference" "R78"
-			(at 68.072 222.25 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "47k"
-			(at 66.04 222.25 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 66.04 222.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 66.04 222.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "U13 EN/UVLO divider bottom."
-			(at 66.04 222.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "2"
-			(uuid "776b4340-56e9-4905-a193-097344a4d990")
-		)
-		(pin "1"
-			(uuid "20f32288-1e38-42d9-993d-7aa92980f347")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "R78")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 274.32 113.03 0)
 		(unit 1)
@@ -12936,83 +9967,6 @@
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
 					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 222.25 116.84 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d8d9804b-1059-4881-a98c-cafdeefdceee")
-		(property "Reference" "#PWR135"
-			(at 222.25 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 222.25 120.396 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 222.25 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 222.25 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 222.25 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "1"
-			(uuid "2aaa6b09-7b41-48e2-8550-0eea94b0a05b")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "#PWR135")
 					(unit 1)
 				)
 			)
@@ -13101,7 +10055,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "MPN" "AOS AO3401A"
+			(at 116.84 106.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C")
 		(at 327.66 102.87 0)
@@ -13178,162 +10141,6 @@
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
 					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 214.63 184.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "da637f70-bf1f-4857-89dd-b668bfa3dcba")
-		(property "Reference" "R56"
-			(at 216.662 184.15 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "453R"
-			(at 214.63 184.15 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 214.63 184.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 214.63 184.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "U9 current limit 2.0A (datasheet row: 453R -> 1.83-2.15A)."
-			(at 214.63 184.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "1"
-			(uuid "2b2e890e-1b67-4332-907e-d804e75a46c7")
-		)
-		(pin "2"
-			(uuid "406f94cb-a6cc-48e8-9326-3a52d9b98734")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "R56")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 214.63 187.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "dc230d8a-f273-4799-a958-abad344475d7")
-		(property "Reference" "#PWR139"
-			(at 214.63 194.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 214.63 191.77 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 214.63 187.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 214.63 187.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 214.63 187.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "1"
-			(uuid "597aae85-16bd-4729-9ec8-b388e3b7f88b")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "#PWR139")
 					(unit 1)
 				)
 			)
@@ -14212,250 +11019,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 171.45 119.38 0)
-		(unit 1)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6efe77a7-5aaa-466c-9ff3-3e54433b6e0d")
-		(property "Reference" "#PWR152"
-			(at 171.45 125.73 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 171.45 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 171.45 119.38 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 171.45 119.38 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 171.45 119.38 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "#PWR152")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 171.45 180.34 0)
-		(unit 1)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1082580d-bca0-4240-8c17-bdc3de8f12ff")
-		(property "Reference" "#PWR153"
-			(at 171.45 186.69 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 171.45 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 171.45 180.34 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 171.45 180.34 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 171.45 180.34 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "#PWR153")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 191.77 175.26 270)
-		(unit 1)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1a783881-5e1b-4c14-9f98-b7c008298fec")
-		(property "Reference" "#PWR154"
-			(at 185.42 175.26 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 187.96 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 191.77 175.26 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 191.77 175.26 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 191.77 175.26 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "#PWR154")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 66.04 226.06 0)
-		(unit 1)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "dcbacb35-0a97-43f7-86aa-3480e5171ca7")
-		(property "Reference" "#PWR155"
-			(at 66.04 232.41 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 66.04 229.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 66.04 226.06 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 66.04 226.06 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 66.04 226.06 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
-					(reference "#PWR155")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Power_Protection:TVS0500DRV")
 		(at 137.16 172.72 0)
 		(unit 1)
@@ -14499,7 +11062,7 @@
 				)
 			)
 		)
-		(property "Description" "3V3 input TVS, same part as D9. TVS0500: VRWM 5V, VBR 7.5-8.4V, flat clamp 9.2V at 43A; U9 VIN abs max 21V. Stays off in the 5V-on-3V3 crimp fault (DESIGN_NOTES.md M1); U9 clamps its output instead."
+		(property "Description" "3V3 input TVS, same part as D9, placed at J1. Takes surges only; does not clamp a sustained 5V-on-3V3 crimp fault (DESIGN_NOTES.md M1)."
 			(at 137.16 172.72 0)
 			(hide yes)
 			(effects
@@ -14646,5 +11209,282 @@
 				)
 			)
 		)
+	)
+	(symbol
+		(lib_id "Device:Polyfuse")
+		(at 201.93 104.14 270)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "088110fd-d441-4500-8cd0-b9431c78ac5b")
+		(property "Reference" "F2"
+			(at 201.93 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MF-MSMF125/16X"
+			(at 201.93 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Fuse:Fuse_1812_4532Metric"
+			(at 201.93 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/mf-msmf.pdf"
+			(at 201.93 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Powerboard 5V PTC, 1812. Ihold 1.25A / Itrip 2.50A at 23C, 0.95A hold at 50C, 0.04-0.14 Ohm, 8A trips in 0.4s max (Bourns MF-MSMF Rev BD). Trip current matches the U1 TPS2116 2.5A rating (DESIGN_NOTES.md §3)."
+			(at 201.93 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "ControlBoard2027"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
+					(reference "F2")
+					(unit 1)
+				)
+			)
+		)
+	
+		(property "MPN" "Bourns MF-MSMF125/16X-2"
+			(at 201.93 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
+	(symbol
+		(lib_id "Device:Polyfuse")
+		(at 201.93 165.1 270)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "51e045dd-b207-42a5-983f-2e5a849bcf4e")
+		(property "Reference" "F3"
+			(at 201.93 162.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MF-MSMF125/16X"
+			(at 201.93 167.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Fuse:Fuse_1812_4532Metric"
+			(at 201.93 165.1 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/mf-msmf.pdf"
+			(at 201.93 165.1 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Powerboard 3V3 PTC, same part as F2. Trip 2.50A = U2 TPS2116 rating. 0.14 Ohm max: 0.14V at 1A (DESIGN_NOTES.md §3, M2)."
+			(at 201.93 165.1 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "ControlBoard2027"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
+					(reference "F3")
+					(unit 1)
+				)
+			)
+		)
+	
+		(property "MPN" "Bourns MF-MSMF125/16X-2"
+			(at 201.93 165.1 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
+	(symbol
+		(lib_id "power:VBUS")
+		(at 271.78 105.41 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7ffddb01-d83e-4330-9962-7749638b1ac8")
+		(property "Reference" "#PWR146"
+			(at 271.78 109.22 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 271.78 101.854 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 271.78 105.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 271.78 105.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 271.78 105.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "ControlBoard2027"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/dd236844-b7a2-45c2-9b05-76546186af68"
+					(reference "#PWR146")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(rectangle
+		(start 17 57)
+		(end 97 118)
+		(stroke
+			(width 0.254)
+			(type dash)
+			(color 0 0 132 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "88e7c941-0014-49d4-8a2d-a1f842ea4aeb")
+	)
+	(rectangle
+		(start 99 74)
+		(end 238.5 133)
+		(stroke
+			(width 0.254)
+			(type dash)
+			(color 0 0 132 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "be7d4705-24a8-4f23-ac43-df846d2f419c")
+	)
+	(rectangle
+		(start 240.5 74)
+		(end 368 133)
+		(stroke
+			(width 0.254)
+			(type dash)
+			(color 0 0 132 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "e91de264-d22b-4501-bcf9-879991fc005c")
+	)
+	(rectangle
+		(start 80 147)
+		(end 238.5 190)
+		(stroke
+			(width 0.254)
+			(type dash)
+			(color 0 0 132 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "de6a9f8e-e739-4e00-aedd-760f20d6fd33")
+	)
+	(rectangle
+		(start 240.5 145)
+		(end 368 191)
+		(stroke
+			(width 0.254)
+			(type dash)
+			(color 0 0 132 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "197cadd1-d94a-453d-926c-b60eed6b5f40")
+	)
+	(rectangle
+		(start 40 193.5)
+		(end 203 241)
+		(stroke
+			(width 0.254)
+			(type dash)
+			(color 0 0 132 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "92b6cd7d-fd1f-418b-aab0-cacc779d768b")
 	)
 )

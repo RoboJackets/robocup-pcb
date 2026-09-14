@@ -1861,6 +1861,11 @@
 		)
 		(uuid "f5fdc9bc-2e60-4d48-b431-42ca6909f844")
 	)
+  (text "IMU U6 BMI088: I2C, ACCEL AND GYRO INTERRUPTS"
+    (at 134.62 83.82 0)
+    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
+    (uuid "9ea7051f-b2bc-4f61-92c5-44b43e641138")
+  )
 	(symbol
 		(lib_id "power:GND")
 		(at 165.1 124.46 0)
@@ -3227,7 +3232,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "MPN" "Bosch BMI088"
+			(at 190.5 114.3 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 213.36 120.65 0)
@@ -3383,5 +3397,18 @@
 				)
 			)
 		)
+	)
+	(rectangle
+		(start 133 80)
+		(end 250 160)
+		(stroke
+			(width 0.254)
+			(type dash)
+			(color 0 0 132 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "5ee5e7cf-2130-40ca-99d6-0dae354840ff")
 	)
 )
