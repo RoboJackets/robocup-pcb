@@ -2662,6 +2662,17 @@
 		)
 		(uuid "3172996c-8f21-462c-8270-cbf01a88e9d0")
 	)
+	(text "not connected\nin datasheet"
+		(exclude_from_sim no)
+		(at 129.032 165.1 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left)
+		)
+		(uuid "4fa0087e-d084-485c-837a-104e54f066f7")
+	)
 	(text "Calculations for SIC437 external circuitry:\nhttps://www.desmos.com/calculator/lv8rmnqqm9"
 		(exclude_from_sim no)
 		(at 77.978 201.422 0)
@@ -2870,12 +2881,6 @@
 		(uuid "96f24c52-37af-4b21-a40d-77c8b50318a8")
 	)
 	(junction
-		(at 115.57 144.78)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "989b93b0-1785-4ec9-bb1a-a223e1834081")
-	)
-	(junction
 		(at 309.88 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2959,6 +2964,10 @@
 		(color 0 0 0 0)
 		(uuid "f6b082e9-b2a6-4752-bb20-d6d9b63feda1")
 	)
+	(no_connect
+		(at 128.27 165.1)
+		(uuid "a9658125-eba4-4f04-bc58-75f5167d1440")
+	)
 	(wire
 		(pts
 			(xy 133.35 147.32) (xy 133.35 148.59)
@@ -3028,16 +3037,6 @@
 			(type default)
 		)
 		(uuid "1995da54-8a5e-4371-88d6-ed8d85396b2d")
-	)
-	(wire
-		(pts
-			(xy 102.87 152.4) (xy 102.87 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "19b1b6dd-6609-4400-870a-7c40781691c3")
 	)
 	(wire
 		(pts
@@ -3291,13 +3290,13 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 144.78) (xy 115.57 144.78)
+			(xy 80.01 152.4) (xy 102.87 152.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "55db1653-c479-4f8b-aaa7-bd4b672593ae")
+		(uuid "56a32f38-6503-403e-beaf-d950325b63e2")
 	)
 	(wire
 		(pts
@@ -3979,6 +3978,17 @@
 			(justify left)
 		)
 		(uuid "0de95ae2-41c1-4c25-a29a-f363f657e847")
+	)
+	(hierarchical_label "RAIL_EN_12V"
+		(shape input)
+		(at 80.01 152.4 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2c0fdb72-1849-43e8-b82d-321c1e5ffd5d")
 	)
 	(symbol
 		(lib_id "power:GND")

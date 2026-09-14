@@ -5525,6 +5525,16 @@
 	)
 	(wire
 		(pts
+			(xy 158.75 85.09) (xy 182.88 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e76ee4f-a93b-4c77-bcc9-f3435090b743")
+	)
+	(wire
+		(pts
 			(xy 102.87 55.88) (xy 100.33 55.88)
 		)
 		(stroke
@@ -7154,6 +7164,17 @@
 			(justify left)
 		)
 		(uuid "89110943-509b-46b4-8c3f-351802525e92")
+	)
+	(hierarchical_label "RAIL_EN_12V"
+		(shape output)
+		(at 182.88 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a314d825-af1e-4e71-a90a-3cda6b2d2e2d")
 	)
 	(hierarchical_label "BAT_CELL_SCALED_3"
 		(shape input)
