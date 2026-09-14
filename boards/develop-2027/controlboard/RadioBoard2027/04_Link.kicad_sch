@@ -2506,15 +2506,15 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid "3a1bed32-bc1e-4750-96c5-c97007ca2347")
   )
-  (text "ROUTING - LINK\nU5, U6 and D4 right at J2 with short GND vias.\nSPI lines 50R over solid GND, length-matched +/-2mm, as on the controlboard."
-    (at 152.4 228.6 0)
-    (effects (font (size 1.27 1.27) (bold yes) (color 255 0 0 1)) (justify left bottom))
-    (uuid "f26ee5a9-14c0-4bf5-990f-e25f76feb1e3")
-  )
   (text "CONTROLBOARD LINK J2, ESD"
     (at 149.86 104.14 0)
     (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
     (uuid "5e45a96d-1211-4e9a-a6d6-3abcfbff4e41")
+  )
+  (text "ROUTING - LINK\nU5, U6 and D4 right at J2 with short GND vias.\nSPI lines over solid GND, length-matched to SCK, as on the controlboard."
+    (at 152.4 228.6 0)
+    (effects (font (size 1.27 1.27) (bold yes) (color 255 0 0 1)) (justify left bottom))
+    (uuid "c6708707-8c94-4f82-9e03-3f24472f2a04")
   )
 	(symbol
 		(lib_id "Connector_Generic_MountingPin:Conn_01x15_MountingPin")
@@ -2611,7 +2611,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SON:USON-10_2.5x1.0mm_P0.5mm"
 			(at 236.22 124.46 0)
 			(hide yes)
 			(effects
@@ -2681,7 +2681,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SON:USON-10_2.5x1.0mm_P0.5mm"
 			(at 236.22 172.72 0)
 			(hide yes)
 			(effects
@@ -2752,7 +2752,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm"
 			(at 190.5 165.1 0)
 			(hide yes)
 			(effects

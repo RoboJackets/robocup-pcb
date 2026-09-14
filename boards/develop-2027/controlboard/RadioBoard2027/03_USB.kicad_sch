@@ -2650,15 +2650,15 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid "8efa979c-2771-4cfa-9485-febe7f9d9b18")
   )
-  (text "ROUTING - USB\nUSB_DP/USB_DN 90R differential, length-matched within 1mm. Join A6/B6 and A7/B7 at J1.\nU2 right at J1, D2 right at J1 VBUS, short GND vias."
-    (at 71.12 208.28 0)
-    (effects (font (size 1.27 1.27) (bold yes) (color 255 0 0 1)) (justify left bottom))
-    (uuid "4ec4f4eb-7ea7-418e-93e2-7fbf6efe9490")
-  )
   (text "USB-C J1: TVS, FUSE, CC, ESD"
     (at 69.85 96.52 0)
     (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
     (uuid "cca5b3c7-9543-4cbc-8af5-cea250b5ed0f")
+  )
+  (text "ROUTING - USB\nUSB_DP/USB_DN 90R differential, in parallel at equal length. Join A6/B6 and A7/B7 at J1.\nU2 right at J1, D2 right at J1 VBUS, short GND vias."
+    (at 71.12 208.28 0)
+    (effects (font (size 1.27 1.27) (bold yes) (color 255 0 0 1)) (justify left bottom))
+    (uuid "31ae9f7f-d8f5-4a89-bfa4-ba7768919682")
   )
 	(symbol
 		(lib_id "Connector:USB_C_Receptacle_USB2.0_16P")
@@ -2753,7 +2753,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 132.08 144.78 0)
 			(hide yes)
 			(effects
@@ -2813,7 +2813,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 121.92 144.78 0)
 			(hide yes)
 			(effects
@@ -2875,7 +2875,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
 			(at 172.72 160.02 0)
 			(hide yes)
 			(effects
@@ -2946,7 +2946,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm"
 			(at 121.92 116.84 0)
 			(hide yes)
 			(effects
@@ -3007,7 +3007,7 @@
 				)
 			)
 		)
-		(property "Value" "MF-MSMF075/16X"
+		(property "Value" "MF-MSMF075/33X"
 			(at 142.24 127 90)
 			(effects
 				(font
@@ -3033,7 +3033,7 @@
 				)
 			)
 		)
-		(property "Description" "USB VBUS PTC. Hold 0.75A (0.55A at 50C), trip 1.50A (Bourns MF-MSMF Rev BD). Module peak 403mA fits under the hold current."
+		(property "Description" "USB VBUS PTC. Hold 0.75A (0.56A at 50C), trip 1.50A, 33V (Bourns MF-MSMF Rev BD). /33X used because /16X is not stocked at LCSC. Module peak 403mA fits under the hold current."
 			(at 142.24 124.46 0)
 			(hide yes)
 			(effects
@@ -3051,7 +3051,7 @@
 			)
 		)
 	
-		(property "MPN" "Bourns MF-MSMF075/16X-2"
+		(property "MPN" "Bourns MF-MSMF075/33X-2"
 			(at 142.24 124.46 0)
 			(hide yes)
 			(effects

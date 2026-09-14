@@ -1,0 +1,10 @@
+(version 1)
+
+(rule "Power nets"
+	(condition "A.NetName == '+3V3' || A.NetName == '+3V3_HOST' || A.NetName == 'VBUS' || A.NetName == 'Net-(D2-IN-Pad4)' || A.NetName == 'Net-(U3-VIN2)'")
+	(constraint clearance (min 0.2))
+	(constraint track_width (min 0.25)))
+
+(rule "USB pair"
+	(condition "A.NetName == 'USB_DP' || A.NetName == 'USB_DN'")
+	(constraint diff_pair_gap (min 0.14) (opt 0.15) (max 0.3)))
