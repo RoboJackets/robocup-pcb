@@ -1,0 +1,98 @@
+(kicad_sch
+	(version 20250610)
+	(generator "konnect")
+	(generator_version "10.0")
+	(uuid "2a1fca76-8d18-4454-959e-9d1803ee158d")
+	(paper "A4")
+	(lib_symbols
+	)
+	(sheet
+    (at 30.48 40.64)
+    (size 60.96 40.64)
+    (fields_autoplaced yes)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0))
+    (uuid "2ff95fff-49b1-4d01-9cac-1cb6dbac2b66")
+    (property "Sheetname" "Power"
+      (at 30.48 40.005 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "01_Power.kicad_sch"
+      (at 30.48 81.915 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "RadioBoard2027"
+        (path "/2a1fca76-8d18-4454-959e-9d1803ee158d" (page "2"))
+      )
+    )
+  )
+	(sheet
+    (at 121.92 40.64)
+    (size 60.96 60.96)
+    (fields_autoplaced yes)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0))
+    (uuid "1e40acf6-717b-4faa-8a28-5b02c685b3b7")
+    (property "Sheetname" "ESP32-C5"
+      (at 121.92 40.005 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "02_ESP32.kicad_sch"
+      (at 121.92 102.235 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "RadioBoard2027"
+        (path "/2a1fca76-8d18-4454-959e-9d1803ee158d" (page "3"))
+      )
+    )
+  )
+	(sheet
+    (at 30.48 101.6)
+    (size 60.96 30.48)
+    (fields_autoplaced yes)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0))
+    (uuid "93b0df52-048d-4e85-82fa-2a8a90c41d7f")
+    (property "Sheetname" "USB"
+      (at 30.48 100.96499999999999 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "03_USB.kicad_sch"
+      (at 30.48 132.71499999999997 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "RadioBoard2027"
+        (path "/2a1fca76-8d18-4454-959e-9d1803ee158d" (page "4"))
+      )
+    )
+  )
+	(sheet
+    (at 213.36 40.64)
+    (size 60.96 60.96)
+    (fields_autoplaced yes)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0))
+    (uuid "2b09e6e8-3abe-4dbc-82f5-49519564e645")
+    (property "Sheetname" "Controlboard Link"
+      (at 213.36 40.005 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "04_Link.kicad_sch"
+      (at 213.36 102.235 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "RadioBoard2027"
+        (path "/2a1fca76-8d18-4454-959e-9d1803ee158d" (page "5"))
+      )
+    )
+  )
+  (text "RADIOBOARD2027 - ESP32-C5 Wi-Fi co-processor for ControlBoard2027 (ESP-Hosted over SPI)\nPower: controlboard +3V3 over the J2 cable, or USB-C alone for flashing (TPS2116 mux).\nCross-sheet nets use global labels. Design justification: DESIGN_NOTES.md."
+    (at 30.48 160.02 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "7d62e49f-9f8f-4457-954e-6fc97cefeed1")
+  )
+)
