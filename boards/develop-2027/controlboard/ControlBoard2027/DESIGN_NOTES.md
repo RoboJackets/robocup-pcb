@@ -11,7 +11,7 @@ the inputs and the source table are given.
 
 1. [Sources](#1-sources)
 2. [Power architecture](#2-power-architecture)
-3. [Power input and eFuses](#3-power-input-and-efuses)
+3. [Power input and fuses](#3-power-input-and-fuses)
 4. [Power mux, USB power and LDO](#4-power-mux-usb-power-and-ldo)
 5. [MCU, clock and supply pins](#5-mcu-clock-and-supply-pins)
 6. [I2C pull-ups](#6-i2c-pull-ups)
@@ -32,12 +32,11 @@ the inputs and the source table are given.
 | DS13313 | STM32H723 datasheet |
 | RM0468 | STM32H723 reference manual (st.com did not serve it during the audit) |
 | AN2606 | STM32 system bootloader, Rev 61, STM32H72x section (Tables 111/112) |
-| SLVSET8A | TI TPS2596 / TPS25962x / TPS25963x eFuse |
 | SLVSFG1A | TI TPS2116 power mux |
 | DS37274 | Diodes AP7361C LDO |
 | TVS0500 | TI TVS0500 flat-clamp TVS |
 | AO3401A | AOS AO3401A P-FET |
-| MF-MSMF | Bourns MF-MSMF PTC |
+| MF-MSMF | Bourns MF-MSMF PTC, Rev BD 06/26 |
 | SCLS264R | TI SN74AHCT125 |
 | BMI088 | Bosch BST-BMI088-DS001 Rev 1.9 |
 | BB2020 | American Bright BB-2020BGR-TRB |
@@ -65,19 +64,23 @@ The powerboard supplies 5V and 3V3 on J1. USB supplies 5V as a bench fallback.
 
 | Rail | Source | Loads |
 |---|---|---|
-| +5V_PB | Powerboard, after Q1 and U8 | DotStars, U7, U1 VIN1 |
-| +3V3_PB | Powerboard, after U9 | Radio (J14), U2 VIN1 |
-| VBUS_SW | USB, after U13 | U1 VIN2, U3 |
-| +3V3_LDO | U3 from VBUS_SW | U2 VIN2 |
-| +5V | U1 output (powerboard, else USB) | Motor connectors, U15 (+5V_EXT) |
+| +5V_PB | Powerboard, after Q1 and F2 | U1 VIN1 |
+| +3V3_PB | Powerboard, after F3 | Radio (J14), U2 VIN1 |
+| VBUS | USB, after F1 | U1 VIN2, U3 |
+| +3V3_LDO | U3 from VBUS | U2 VIN2 |
+| +5V | U1 output (powerboard, else USB) | DotStars, U7, motor connectors, F4 (+5V_EXT) |
 | +3V3 | U2 output (powerboard, else USB) | MCU, SD, IMU, OLED, pull-ups, motor 3V3 |
 
-The radio and DotStars sit on the powerboard-only rails on purpose. On USB alone they stay
-unpowered, which keeps USB current under U13's 0.5A limit without a load switch.
+The radio sits on the powerboard-only rail, so on USB alone it stays unpowered. The DotStars
+run from the mux output, so they light on USB too; firmware caps their brightness on USB (§10).
+
+Protection is kept simple: a TVS and a PTC fuse on each input. There are no eFuses, so the
+board has no undervoltage lockout, no overvoltage clamp, no fast current limit, no fault
+signal and no USB inrush limit. The consequences are listed in M1, M3 and m18.
 
 ---
 
-## 3. Power input and eFuses
+## 3. Power input and fuses
 
 ### J1 powerboard connector
 JST B8B-XH-A. Pins 1-2 +5V, 3-4 +3V3, 5-6 GND, 7 PWR_UART_TX, 8 PWR_UART_RX. 3A per contact
@@ -92,37 +95,44 @@ GND through R43 100k. D11 (10V zener) keeps Vgs inside ±12V. RDS(on) ≤60mΩ a
 at 1.5A. The 3V3 input has no series FET: its drop would take the radio below 3.0V (see M2).
 
 ### D9, D10 input TVS
-TVS0500DRV on both inputs: VRWM 5V, VBR 7.5-8.4V, flat clamp 9.2V at 43A. They handle surge
-and ESD only; the eFuse clamp handles overvoltage. The eFuse inputs are rated to 21V. Using
-the same part on the 3V3 input means it stays off if 5V lands on the 3V3 pins (M1).
+TVS0500DRV on both inputs: VRWM 5V, VBR 7.5-8.4V, flat clamp 9.2V at 43A. They take surge and
+ESD only. Their clamp is above the TPS2116 6V abs max, so a long overvoltage from the
+powerboard reaches the muxes and the 3V3 loads; the powerboard has to regulate (M1).
 
-### U8 (5V) and U9 (3V3) eFuses
-TPS259621DDA: 2.7-19V, 89mΩ typ (143mΩ hot), current limit 0.125-2A, auto-retry, output
-overvoltage clamp.
+Both sit at J1. D10 is directly on the connector pins. D9 sits right after Q1, not before it:
+the TVS0500 is unidirectional, so on a reversed input it would conduct forward and short the
+supply before Q1 could block it.
 
-The clamp variant was chosen over TPS25963x (adjustable overvoltage lockout). The lockout
-releases 95mV below its trip point at the pin, and the divider multiplies that. With the
-dividers needed here the output re-enabled only below 3.25-3.49V (3V3) and 4.96-5.36V (5V),
-which overlaps normal supply voltages. One overshoot could leave a rail off. The clamp has no
-latched state.
+### F2 (5V) and F3 (3V3) fuses
+Bourns MF-MSMF125/16X-2, 1812. Hold 1.25A and trip 2.50A at 23°C; hold 1.00A at 40°C and
+0.95A at 50°C; 0.04-0.14Ω; max 0.4s to trip at 8A; 16V (MF-MSMF Rev BD tables). The same
+part on both rails keeps the BOM short.
 
-| | U8 (5V) | U9 (3V3) |
+Sizing rule: the trip current must sit at or below what the protected parts and the source
+can carry, or the fuse never opens. The trip current equals the TPS2116's 2.5A rating and is
+below J1's 3A per contact. The powerboard must be able to source more than 2.5A per rail into
+a fault, otherwise its own current limit acts first (M3). The hold current at 50°C still
+covers the rail budget below.
+
+| Rail load | +5V | +3V3 |
 |---|---|---|
-| UVLO divider (1.2V at EN) | R48 121k / R49 47k → 4.29V | R53 61.9k / R54 47k → 2.78V |
-| OVCSEL | R50 402k to GND | tied to GND |
-| Clamp starts | 5.54-5.83V | 3.75-3.92V |
-| Output held at | 5.28-5.61V | 3.47-3.70V |
-| RILM | R51 604Ω → 1.51A | R56 453Ω → 2.01A |
-| dVdt cap | C52 22nF → 2.0V/ms | C53 22nF → 2.0V/ms |
+| DotStars (capped by firmware, §10) | 250mA | - |
+| Motor modules J5-J9, logic only (motor power is separate) | not documented, measure | not documented, measure |
+| +5V_EXT (J10-J12, F4) | up to F4's 0.55A hold at 50°C | - |
+| Radio (TX peak 408mA) | - | 408mA peak |
+| MCU, SD, IMU, OLED | - | about 0.35A (§4) |
+| Fuse hold at 50°C | 0.95A | 0.95A |
 
-- Current limit: RILM = 903 / (ILIM - 0.0112) (SLVSET8A Eq. 7).
-- OVCSEL: SLVSET8A §7.5 specifies 400k for the 5.7V option; 402k is the nearest E96 value.
-- Slew rate: 2.11µA × 20.93 / C (SLVSET8A). Rate dVdt capacitors for at least 4V.
-- VIN must stay below the selected clamp in normal operation (SLVSET8A rating note). The
-  3V3 clamp keeps +3V3_PB under the STM32 4.0V abs max.
-- FLT (open drain) outputs are wired together with R52 10k to +3V3 → PWR_FAULT (PA4). FLT is
-  asserted on thermal shutdown, not on current limit or clamping (SLVSET8A Table 3).
-- C56/C57 100nF at the IN pins (SLVSET8A §9.2).
+The motor modules put the encoder receiver, Hall and encoder supplies and a power LED on
++5V, and the STSPIN32G0 MCU, Hall buffers and LEDs on +3V3. Their draw is not in the module
+design files; measure one module before the budget is final (M3).
+
+- A PTC is slow. It opens on a short or a heavy overload. Current between the hold and trip
+  values may flow indefinitely.
+- 3V3 drop: 0.14Ω × 1A = 0.14V worst case (M2).
+- No UVLO: the muxes see the powerboard rail as it ramps. TPS2116 priority switching (§4)
+  still decides the source.
+- No fault output. PA4 is now unused.
 
 ---
 
@@ -146,20 +156,20 @@ Priority mode (MODE tied to VIN1). VIN1 is the powerboard rail, VIN2 the USB sid
   With USB attached and the powerboard removed, the rail therefore sags to the switchover
   voltage first. See M7 for why this is accepted.
 - C1, C7 10uF at VIN1, C2 10uF at VIN2, C3/C8 22uF and C4/C9 100nF at the outputs.
+- No diodes on the mux outputs. The TPS2116 blocks reverse current: an input is disconnected
+  once VOUT exceeds it by 42mV (SLVSFG1A §7.3.4), so the powerboard rail cannot back-feed USB
+  and USB cannot back-feed the powerboard. A diode would also cost 0.3-0.5V on the 3V3 rail.
 
-### U13 USB VBUS eFuse
-TPS259621DDA between VBUS and VBUS_SW.
+### USB VBUS input
+VBUS from J2 goes through F1 straight to U1 VIN2 and U3. There is no eFuse or load switch.
 
-- Inrush: USB 2.0 §7.2.4.1 limits attach capacitance to 10µF, including capacitance visible
-  through regulators. About 107µF sits behind VBUS_SW, so U13 soft-starts it with C54 47nF
-  (0.82-1.07V/ms).
-- UVLO R77 110k / R78 47k → 4.01V. USB guarantees 4.40V at the device.
-- R79 402k on OVCSEL: the clamp starts at 5.54-5.83V, so a 5.50V VBUS (USB 2.0 VBUS Max Limit
-  ECN) passes.
-- R80 1.82k → 0.455-0.560A. FLT joins PWR_FAULT.
-- C55 2.2uF X7R ≥10V at the connector side. The USB Device Capacitance ECN requires 1-10µF on
-  VBUS and SLVSET8A §9.2 asks for ≥1µF; 2.2µF stays above 1µF after DC bias.
-- R45 100k bleeds VBUS_SW to 0V while U13 is off (50µA), so U1 VIN2 does not float.
+- F1 Bourns MF-MSMF075/16X-2 (sheet 03), see §7.
+- D12 TVS0500DRV sits on VBUS at J2, before F1.
+- C55 2.2uF X7R ≥10V at the input. The USB Device Capacitance ECN requires 1-10µF on VBUS;
+  2.2µF stays above 1µF after DC bias.
+- No inrush limit. Everything on +5V and, through U3, on +3V3 charges straight from the host
+  at attach: well over the 10µF that USB 2.0 §7.2.4.1 allows (m18).
+- With the cable out, R61/R62 (115k, §5) pull VBUS to 0V, so U1 VIN2 does not float.
 
 ### U3 AP7361C-33E LDO
 1A, 360mV dropout at 1A, stable with ≥2.2µF MLCC (DS37274). SOT-223: 1 IN, 2 GND, 3 OUT.
@@ -167,9 +177,10 @@ On USB alone it carries the MCU, SD, IMU and OLED, about 0.35A: (5.0 - 3.3) × 0
 C5/C6 10uF in and out.
 
 ### Rail LEDs and test points
-D1/D2 Kingbright APT1608EC red: VF 2.0V typ, 30mA max. R5 1k → 3.0mA on 5V, R6 470Ω → 2.8mA on
-3V3. TP7 (+5V_PROT) and TP8 (+3V3_RAW) with TP1/TP2 measure the eFuse plus mux drop. TP9/TP10
-give logic-analyser access to the powerboard UART.
+D1/D2 Kingbright APT1608EC red: VF 2.0V typ, 30mA max. R5 3.3k → 0.9mA on 5V, R6 1.5k → 0.87mA
+on 3V3. Around 1mA is plenty for an indicator; the earlier 3mA was too bright. TP7 (+5V_PROT)
+and TP8 (+3V3_RAW) with TP1/TP2 measure the fuse plus mux drop. TP9/TP10 give logic-analyser
+access to the powerboard UART.
 
 ---
 
@@ -217,8 +228,8 @@ C32 100nF on NRST. SW2 pulls BOOT0 to 3V3 for DFU.
 - R41/R42 22Ω in series with PA5/PA7 (motor SPI SCK/MOSI) at the MCU. MISO has none.
 - R61 47k / R62 68k divide VBUS to PA9, which firmware reads as a GPIO. The divider ratio is
   0.591: 2.60V at 4.4V VBUS (input-high threshold 2.31V, DS13313 Table 51), 3.10V at 5.25V.
-  The pin's 4.0V abs max (with VDD off) is only reached at 6.77V VBUS. The divider sits
-  upstream of U13 so it senses the cable itself.
+  The pin's 4.0V abs max (with VDD off) is only reached at 6.77V VBUS. The divider sits on
+  VBUS after F1; F1 drops under 0.1V at normal load, well inside the threshold margin.
 - R81 10k pull-up on PA15. The bootloader runs SPI3 as a slave on PC10-PC12 (the SD bus) with
   NSS on PA15 and no pull (AN2606 Table 111). Holding NSS high keeps SD activity from
   selecting SPI3 instead of USB DFU.
@@ -256,12 +267,19 @@ must not add their own pull-ups.
   diode when the cable is unplugged, and the board cannot see the detach. Full-speed
   signalling stays under 3.6V, so a 3V3 rail reference is enough.
 - No series resistors on D+/D-: the STM32 full-speed driver is already 28-44Ω.
-- F1 Bourns MF-MSMF075-2 (1812): hold 0.75A / trip 1.50A at 23°C, 0.60A hold at 50°C,
-  0.11-0.45Ω. It holds above U13's 0.56A limit when warm, so U13 limits first and F1 only
-  backs up a U13 failure or cable short. The MF-MSMF050 held only 0.40A at 50°C.
+- J2 shield (SH) is left floating by choice. A6/B6 and A7/B7 still join at the connector.
+- D12 TVS0500DRV on VBUS right at J2, before F1, with a short via to GND.
+- F1 Bourns MF-MSMF075/16X-2 (1812): hold 0.75A / trip 1.50A at 23°C, 0.60A hold at 40°C and
+  0.55A at 50°C, 0.11-0.45Ω, max 0.2s to trip at 8A, 16V. The plain MF-MSMF075 used before is
+  marked not recommended for new designs in the Rev BD datasheet; the /16X version is current.
+  The hold current matches the 0.5A a USB 2.0 port supplies. The USB-only load is about 0.35A
+  plus the LEDs capped at 100mA (§10). A 1.5A trip opens on a board or cable short from any
+  port that can source it; a port with a lower limit shuts itself off first. Running motor
+  modules from USB can exceed the hold current and trip F1, which is intended: use the
+  powerboard for that.
 - J3 SWD: 1 VTref, 2 SWCLK, 3 SWDIO, 4 GND, 5 NRST. Pins 1-4 match the motor-module cable.
-  D8 BAT54 on VTref stops a probe from back-powering +3V3; VTref reads 2.98-3.06V. J3 must be
-  keyed: reversed, VTref and GND land on NRST.
+  VTref ties straight to +3V3. Probes only sense VTref, so the series diode was removed. J3
+  must be keyed: reversed, VTref and GND land on NRST.
 - R39/R40 22Ω on SWCLK/SWDIO damp cable ringing. They do not protect against a mis-plugged
   5V probe. 0Ω also works.
 - SW1 reset. SW2 BOOT0 to 3V3. The ROM DFU uses HSI48 with CRS, so it needs neither the
@@ -271,12 +289,12 @@ must not add their own pull-ups.
 
 ## 8. SD card
 
-- J4 XKTF-015 microSD socket. The drawing shows a card-detect terminal but not its return path
-  or polarity. SH goes to GND on the assumption that detect returns through the shell; check
-  a sample before release (m13). J4 needs a custom footprint.
+- J4 XKTF-015-N microSD socket. SH floats and the card-detect terminal is left unconnected.
+  The drawing does not give the detect return path, and that path likely runs through the
+  shell, so floating the shell rules detect out. Firmware finds a card by initialising it.
+  J4 needs a custom footprint.
 - R10-R14 47k pull-ups on DAT0-3 and CMD, inside the SD range of 10-100k. Idle high is at
   least 2.79V against the card's 2.06V and the MCU's 2.31V input thresholds. CLK has none.
-- R15 10k card-detect pull-up on PG7 (net SD_DETECT, CubeMX label Detect_SDIO).
 - R63 22Ω in series with SDMMC_CK at the MCU (PC12). The pin's ~25Ω plus 22Ω matches a 50Ω
   trace, so reflections are absorbed at the source instead of ringing into a false clock edge.
   Edge time is about 1.9ns with about 26ns setup margin at 24MHz.
@@ -314,17 +332,30 @@ leakage is ±250nA max (DS13313 Table 51) against a 2.31V input-high threshold:
 Read at boot; add 100nF per pin if read continuously.
 
 ### SW4-SW6 user buttons
-Active low. R24-R26 10k pull-ups, R27-R29 10k series, C37-C39 100nF at the MCU pin. Press time
-constant 0.76-1.26ms (R27 × C37), release 1.5-2.5ms ((R24 + R27) × C37). Peak switch current is
-0.76mA and the pin stays inside the rails. The PTS820 datasheet could not be retrieved, so the
+Active low. R24-R26 10k pull-ups, R27-R29 10k series, C37-C39 100nF at the MCU pin, no
+inductor.
+
+| | Path | Nominal | 1% R, 10% C | 5% R, 20% C |
+|---|---|---|---|---|
+| Press | C discharges through R27: τ = R27 × C37 | 1.0ms | 0.89-1.11ms | 0.76-1.26ms |
+| Release | C charges through R24 + R27: τ = 20k × C37 | 2.0ms | 1.78-2.22ms | 1.5-2.5ms |
+
+The pin settles in about 5τ. The RC removes sub-millisecond bounce; firmware ignores
+re-triggers for about 10ms. Peak switch current is 0.76mA and the pin stays inside the rails.
+The same numbers are on the buttons sheet. The PTS820 datasheet could not be retrieved, so the
 4-pad to 2-pin mapping is unverified (m15).
 
 ---
 
 ## 10. DotStar LEDs
 
-- Power comes from +5V_PB, so the LEDs never load USB. U7 inputs are rated -0.5 to 7V
-  independent of VCC and leak ±1µA at VCC = 0V (SCLS264R), so MCU drive is safe while U7 is off.
+- Power comes from +5V, the U1 mux output, so the LEDs work on USB as well as the powerboard.
+  The chain can draw 500mA at full white. Firmware caps the total LED current to about 250mA
+  on the powerboard, keeping +5V inside F2's hold current (§3), and to about 100mA on USB
+  (PWR_SRC_5V low), keeping the board inside F1's hold current (§7). On USB, +5V can sit below the LEDs' 4.5V minimum (VBUS may be 4.40V
+  at the device, before F1 and U1), so colours and data are only guaranteed on the powerboard.
+- U7 shares +5V with the LEDs, so it is powered whenever the MCU is. Its inputs are rated
+  -0.5 to 7V regardless of VCC (SCLS264R).
 - D3-D7 BB-2020BGR-TRB (APA102-2020 compatible): VDD 4.5-5.5V, input high 0.7 × VDD = 3.5V,
   clock 15MHz abs and under 10MHz operating (p6), 70°C max ambient (p3). The power-on state is
   not specified, so firmware sends an all-off frame first.
@@ -332,11 +363,11 @@ constant 0.76-1.26ms (R27 × C37), release 1.5-2.5ms ((R24 + R27) × C37). Peak 
   pattern (C1).
 - U7 SN74AHCT125 shifts 3.3V to 5V. It must be AHCT (TTL input high 2.0V); AHC needs 3.5V.
   Gates 1/2: pin 2→3 CKI, 5→6 SDI, OE pins 1/4 to GND. Gates 3/4: inputs 9/12 to GND, OE 10/13
-  to +5V_PB (disabled), outputs open. Propagation delay is 6.5ns max at 15pF, 2% of a 333ns
+  to +5V (disabled), outputs open. Propagation delay is 6.5ns max at 15pF, 2% of a 333ns
   bit at 3Mbit/s.
 - R66/R67 100k pull-downs on LED_SPI_SCK/MOSI hold the inputs at 0.13V (vs 0.8V input-low
   limit) while the MCU pins are Hi-Z at reset. AHCT has no bus hold.
-- C45 100nF at U7, C40-C44 100nF one beside each LED, C51 22uF X5R/X7R ≥10V where +5V_PB
+- C45 100nF at U7, C40-C44 100nF one beside each LED, C51 22uF X5R/X7R ≥10V where +5V
   enters. Each LED can draw 0.5W (BB2020 p3), so 500mA for the chain.
 - TP18/TP19 on D7 SDO/CKO: valid data at the end of the chain proves all five LEDs pass it.
 
@@ -349,13 +380,14 @@ JST S8B-PH-K-S, 2A per contact with AWG24. Order matches motor-module J2: 1 +5V,
 4 GND, 5 SCK, 6 MOSI, 7 MISO, 8 CS. J9 is the dribbler. R68-R72 10k CS pull-ups hold the modules
 deselected through reset. R74 100k pull-down on SCK. U10/U11 TPD4E05U06 ESD at the connectors.
 
-### I2C connectors J10-J12 and U15
+### I2C connectors J10-J12 and F4
 - J10 kicker I2C, J11/J12 expansion I2C: +5V_EXT, GND, SCL, SDA. U12 TPD4E05U06 protects SCL/SDA
   and must sit at the connectors, so J10-J12 stay together (m8).
-- U15 TPS259621DDA feeds +5V_EXT from +5V. A PTC could not trip before U8's 1.51A limit, so a
-  shorted cable would have dropped all of +5V. R82 1.13k sets 0.81A (SLVSET8A Eq. 7). R84 100k
-  pulls EN to VIN (allowed below 6V by the SLVSET8A rating note). C58 100nF at IN. OVCSEL open
-  (13.8V clamp; the input is already clamped by U8), dVdT open, FLT unused.
+- F4 Bourns MF-MSMF075/16X-2 (same part as F1) feeds +5V_EXT from +5V: hold 0.75A (0.55A at
+  50°C), trip 1.50A. Its trip current is well below F2's 2.50A, so an overload between 1.5A
+  and 2.5A opens F4 and never F2. On a hard short F4 also trips faster (0.2s against 0.4s max
+  at 8A). +5V still dips while F4 heats, so a hard short can reset the board once before F4
+  opens. Expansion loads must stay under 0.55A total.
 
 ### J13 OLED (Adafruit 326)
 1 SDA, 2 SCL, 3 DC/SA0 to GND, 4 RST NC, 5 CS to GND, 6 3V3 out NC, 7 Vin +3V3, 8 GND. The
@@ -365,8 +397,24 @@ SA0 goes through a diode on the module, so firmware also probes 0x3D. H1-H4 are 
 holes.
 
 ### J14 radio mezzanine
-2x10: +3V3_PB on pins 1/3/19, GND on every even pin (one opposite each signal), ESP SPI (SPI3),
-HANDSHAKE, DATA_READY and RST.
+2x10, pins 1-2 at the top.
+
+| Pin | Net | Pin | Net |
+|---|---|---|---|
+| 1 | +3V3_PB | 2 | +3V3_PB |
+| 3 | GND | 4 | +3V3_PB |
+| 5 | ESP_SPI_SCK | 6 | GND |
+| 7 | GND | 8 | ESP_HANDSHAKE |
+| 9 | ESP_SPI_MOSI | 10 | GND |
+| 11 | GND | 12 | ESP_DATA_READY |
+| 13 | ESP_SPI_MISO | 14 | GND |
+| 15 | GND | 16 | ESP_RST |
+| 17 | ESP_SPI_CS | 18 | GND |
+| 19 | GND | 20 | GND |
+
+Signals alternate sides, so every signal has GND across from it and above and below it in its
+own column. No two signals are adjacent in either direction. The daughterboard must copy this.
+
 
 - Three power pins carry 217mA each against a 408mA TX peak (m3).
 - +3V3_PB leaves the radio unpowered on USB alone. Firmware then holds its pins low or Hi-Z.
@@ -415,8 +463,8 @@ clocking (AN2606 Table 111), so DFU does not depend on these settings.
   CRC off and 8-bit frames: ESP-Hosted uses fixed 1600-byte frames with its own checksum, and
   STM32 CRC would add a phase the slave never sends (M4). Enable the internal pull-up on PB4.
 - **SDMMC1** (PC8-PC12, PD2), 4-bit: CLKDIV 3 (8MHz) for bring-up, then CLKDIV 1 (24MHz) after
-  checking the clock at TP11. Card detect PG7, no internal pull, low = card present. Recover a
-  hung card with CMD0 (M18).
+  checking the clock at TP11. No card-detect pin: make the FATFS/BSP detect function report a
+  card as present and treat an init failure as "no card". Recover a hung card with CMD0 (M18).
 - **I2C1 OLED, I2C2 kicker, I2C4 expansion, I2C5 IMU**: 400kHz. Let CubeMX recompute the Timing
   value after the clock change; never copy V0.3's hex value. Enter measured rise/fall times.
   Internal pull-ups off. Run bus recovery (up to 9 SCL clocks, then STOP) before each init.
@@ -436,7 +484,6 @@ clocking (AN2606 Table 111), so DFU does not depend on these settings.
 |---|---|---|---|
 | PA2 | PWR_SRC_5V | Input, polled | R57 pull-up on U1 ST via R83; high = powerboard 5V. EXTI2 belongs to PF2 (m11) |
 | PA3 | PWR_SRC_3V3 | Input, polled | R59 pull-up on U2 ST; high = powerboard 3V3. EXTI3 belongs to PF3 |
-| PA4 | PWR_FAULT | Input, polled | R52 pull-up, low = eFuse thermal fault. EXTI4 belongs to PE4 |
 | PA9 | VBUS_SENSE | GPIO input | R61/R62 divider on cable VBUS |
 | PA15 | (unused) | Reset / analog | R81 holds bootloader SPI3 NSS high |
 | PC5, PB0, PB1, PB2 | MOTOR0-3_SPI_CS | Output PP, init high | R68-R71 hold CS high through reset |
@@ -449,15 +496,17 @@ clocking (AN2606 Table 111), so DFU does not depend on these settings.
 | PF2 | GYRO_EXTI | EXTI rising | R65 pull-down; set INT3 push-pull active high (BMI088 5.5.10) |
 | PE4, PC13, PC14 | USER_EXTI0-2 | EXTI falling | Buttons pull low; ~1ms RC debounce. V0.3 uses rising |
 | PF7-PF10, PC0, PC1 | DIP0-5 | Input | R18-R23 pull-ups; closed = 0 |
-| PG7 | SD_DETECT | Input | R15 pull-up; low = card present |
+| PA4, PG7 | (unused) | Analog | Were PWR_FAULT and SD_DETECT; both removed |
 
 - PC13: keep RTC tamper and wake-up disabled.
 - Set "Set all free pins as analog" to Yes (V0.3: No).
 - OLED: probe 0x3C and 0x3D (M5).
-- Power-source changes: poll PA2/PA3/PA4. On any change, re-initialise SD, IMU and OLED (M7).
+- Power-source changes: poll PA2/PA3. On any change, re-initialise SD, IMU and OLED (M7).
 - While PWR_SRC_3V3 is low, hold PB3, PB4, PD6, PG15 and PB7 low or Hi-Z so the unpowered radio
-  is not back-fed; restart ESP-Hosted when it goes high. Resend the LED frame after PWR_SRC_5V
-  goes high.
+  is not back-fed; restart ESP-Hosted when it goes high. Resend the LED frame after any
+  PWR_SRC change.
+- Cap total LED current to about 250mA on the powerboard and about 100mA while PWR_SRC_5V is
+  low (USB power) (§10).
 - The motor modules must release MISO while their CS is high (M9).
 
 ### Bootloader (DFU)
@@ -469,7 +518,7 @@ activity (AN2606). Board nets on bootloader pins (AN2606 Table 111):
 | PA2/PA3 | USART2 | PWR_SRC_5V / PWR_SRC_3V3 | Static levels, cannot send 0x7F |
 | PB10/PB11 | USART3 | Kicker I2C | Idle high |
 | PA9/PA10 | USART1 | VBUS_SENSE / unconnected | Static |
-| PA4-PA7 | SPI1 | PWR_FAULT (NSS) + motor SPI | NSS high except during an eFuse fault; no clock edges arrive (m12) |
+| PA4-PA7 | SPI1 | Unconnected (NSS) + motor SPI | NSS floats, but no clock edges arrive on SCK (m12) |
 | PC10-PC12 | SPI3 | SD DAT2/DAT3/CLK | NSS on PA15 held high by R81 |
 | PB6/PB9 | I2C1 | ESP_DATA_READY / OLED SDA | SDA stays high, so no start condition |
 | PF0/PF1 | I2C2 | IMU bus | Idle high |
@@ -495,24 +544,32 @@ top or bottom view. Confirm with the vendor or a sample, then build the footprin
 **C2 CubeMX HSE setting.** V0.3 sets HSE to 48MHz with PLL1 /3 ×12. With the 25MHz crystal the VCO
 lands at 100MHz, below the 192MHz minimum. Apply the clock tree in §12.
 
-**C3 Footprints, MPNs and ratings.** 17 of 211 parts have a footprint and the PCB file is empty.
-Capacitors need voltage and dielectric ratings (dVdt caps ≥4V; C51, C47, C55 X5R/X7R ≥10V).
+**C3 Footprints, MPNs and ratings.** 17 of 188 parts have a footprint and the PCB file is empty.
+Capacitors need voltage and dielectric ratings (C51, C47, C55 X5R/X7R ≥10V). U7 must be ordered
+as SN74AHCT125PWR or DR; the D (tube) option is obsolete.
 
 ### Major
 
-**M1 J1 pinout.** +5V (pin 2) sits next to +3V3 (pin 3). A crimp fault puts 5V on the 3V3 input.
-U9 clamps its output, but sustained 5V on U9 IN violates the "VIN below the clamp" rating and
-ends in thermal cycling. A GND pin between the rails fixes it; needs agreement with the
-powerboard. The 3V3 input also has no reverse protection: a mirrored cable puts -3.3V on U9 IN
-(abs min -0.3V).
+**M1 No overvoltage protection on the powerboard inputs.** With the eFuses gone, nothing between
+J1 and the loads limits voltage except the TVS diodes, which only start at 7.5V.
+- +5V (pin 2) sits next to +3V3 (pin 3). A crimp fault puts 5V through F3 and U2 onto +3V3 and
+  destroys the MCU (4.0V abs max), SD card, IMU and radio. A GND pin between the rails fixes
+  it; needs agreement with the powerboard. This is now a release blocker for J1.
+- A powerboard fault above 6V damages U1/U2 (TPS2116 abs max) and everything after them.
+- The 3V3 input has no reverse protection: a mirrored cable puts -3.3V on the 3V3 loads.
+The powerboard has to regulate and J1 has to be keyed and pinned so these cannot happen.
 
-**M2 3V3 margin.** At 1.25A hot, U9 (143mΩ) + U2 (59mΩ) + J1 (20mΩ) drop 0.28V. The radio sits
-before U2, so it sees about 0.2V less than the powerboard: a 3.30V powerboard gives about 3.1V
-against the ESP32-C5's 3.0V minimum. Ask for 3.4V ±3%, which stays under U9's 3.75V clamp.
+**M2 3V3 margin.** At 1A, F3 (140mΩ max) + U2 (59mΩ) + J1 (20mΩ) drop 0.22V. The radio sits
+before U2, so it sees about 0.16V less than the powerboard: a 3.30V powerboard gives about 3.14V
+against the ESP32-C5's 3.0V minimum. 3.4V ±3% is still the preferred setpoint; with no clamp,
+the powerboard must never exceed 3.6V (STM32 VDD max).
 
-**M3 Rail budget.** U9's 2.01A limit is the TPS2596 maximum. On 5V, U15 (0.81A) plus the DotStars
-(500mA) plus the motor modules must fit under U8's ~1.35A minimum. Motor module current is not
-yet known.
+**M3 Rail budget.** F2 and F3 hold 0.95A at 50°C and trip at 2.5A (§3). On 5V, the DotStars
+(capped at 250mA) plus +5V_EXT (up to 0.55A) plus the motor-module logic must stay under 0.95A.
+The module logic draw is undocumented; measure one module. If the budget does not fit, lower
+the LED cap or +5V_EXT allowance before choosing a larger fuse, because a larger fuse would no
+longer trip below the TPS2116 rating. The powerboard must source more than 2.5A per rail into
+a fault, or F2/F3 never trip and the powerboard's own limit is the protection.
 
 **M4 SPI3 configuration.** V0.3 has hardware CRC on and 4-bit frames. Set CRC off and 8-bit.
 
@@ -526,11 +583,9 @@ mezzanine. J1 JST-XH is friction lock and rated 3A only with AWG22. J3 needs a k
 
 **M7 Mux switchover sag (bench only).** With USB attached, removing the powerboard lets +3V3 sag to
 2.13-2.55V and +5V to 3.42-4.20V before the mux switches, because VIN1 stays tied to VOUT until
-PR1 falls. Sensing PR1 before the eFuse is not an option: MODE is tied to VIN1, and MODE low with
-PR1 high turns the mux off (SLVSFG1A truth table), which would cut the rail during eFuse
-soft-start. On the robot there is no USB, so this never happens. Handled with a BOR level and
-firmware re-initialisation. The radio and DotStars are on the powerboard-only rails and never
-see the mux.
+PR1 falls. On the robot there is no USB, so this never happens. Handled with a BOR level and
+firmware re-initialisation. The radio is on +3V3_PB and never sees the mux. The DotStars do; they
+may show garbage during the sag, so firmware resends the frame after any PWR_SRC change.
 
 **M9 Shared motor MISO.** All five modules share MISO. It works only if each module releases MISO
 while deselected. Add a 100k pull-down if they do not.
@@ -556,8 +611,9 @@ that ignores CMD0 needs a board power cycle. Accepted to keep the circuit simple
   keep HANDSHAKE/DATA_READY off ESP32-C5 strapping pins (GPIO7, 25-28, MTMS, MTDI). R75/R76 100k
   against a 45k internal pull-up gives 2.28V, below the 2.475V input-high threshold. ESP_RST has
   no pull on this board.
-- **m2** DotStar VDD is 4.5-5.5V. +5V_PB drops about 0.1V through Q1 and U8 at 0.5A, so a 5.0V
-  powerboard gives about 4.9V. LEDs are rated to 70°C ambient; cap brightness in firmware.
+- **m2** DotStar and U7 VDD is 4.5-5.5V. On the powerboard, Q1 (60mΩ) + F2 (140mΩ max) + U1
+  (59mΩ) drop about 0.25V at 1A, so a 5.0V powerboard gives about 4.75V. On USB, +5V can fall below
+  4.5V. LEDs are rated to 70°C ambient; cap brightness in firmware.
 - **m3** J14 carries 217mA per power pin against a 408mA TX peak; check the mezzanine rating.
 - **m4** Motor SPI termination and speed (motorboard scope): R41/R42, 6 vs 15.625Mbit/s.
 - **m5** J10-J12 pin order is not Qwiic. 3.3V pull-ups do not suit 5V-logic slaves, and a far-side
@@ -566,20 +622,25 @@ that ignores CMD0 needs a board power cycle. Accepted to keep the circuit simple
 - **m8** U12 serves J10 and J11/J12 and must sit at the connectors, so keep them together.
 - **m9** Crystal drive level may reach 103µW at 1.4Vpp (max 100µW). Measure and fit R86 if
   needed. ABM8 is rated -20 to 70°C.
-- **m11** PA2/PA3/PA4 share EXTI lines with PF2, PF3 and PE4; poll them.
-- **m12** PWR_FAULT low during a U13 thermal fault in DFU selects bootloader SPI1 NSS. No clock
-  edges arrive, so DFU still works.
-- **m13** J4 card detect return path and polarity are not in the drawing; check a sample. J4 needs
-  a custom footprint.
-- **m14** D8 has no MPN. R39/R40 do not protect against a 5V mis-plug.
+- **m11** PA2/PA3 share EXTI lines with PF2 and PF3; poll them.
+- **m12** PA4 (bootloader SPI1 NSS) is unconnected and floats in DFU. Nothing drives the motor
+  SCK (R74 pull-down), so no SPI frame arrives and DFU still answers on USB.
+- **m14** R39/R40 do not protect against a 5V mis-plug on J3.
 - **m15** SW4-SW6 pad mapping is unverified (PTS820 datasheet unavailable). SW3 has no MPN.
 - **m16** BMI088 has no reset pin; firmware re-checks it after brown-out and runs I2C recovery.
 - **m17** AN2867, RM0468 and AN4879 were not available from st.com. VBUS is read as a GPIO, so the
   OTG threshold is not needed.
-- **m18** U13 soft-start into ~107µF; host-side VBUS droop against USB 2.0 §7.2.4.1 not measured.
-- **m19** No test points on +5V_PB, +3V3_PB or VBUS_SW.
+- **m18** No USB inrush limit. Over 100µF charges straight from VBUS at attach, against the 10µF
+  in USB 2.0 §7.2.4.1. Most hosts ride through it, but a port may drop out or reset other
+  devices on the hub. Bench only; check with the laptops the team uses.
+- **m19** No test points on +5V_PB or +3V3_PB.
 - **m20** SWCLK sheet pin is "input" on both sheets (cosmetic). Sheet 07 uses global labels named
   +3V3/+5V/GND next to power symbols.
 - **m21** KiCad ERC reports the VCAP pin tie as power output to power output. The tie is correct;
   exclude the violation in KiCad.
 - **m22** On USB alone the board draws more than the 100mA allowed before enumeration. Bench only.
+- **m23** J2 and J4 shells float. ESD that hits a shell has no direct path to GND and couples
+  into nearby traces. Keep signal copper away from the shell pads; U5, U14 and D12 still clamp
+  the pins.
+- **m24** No fault reporting: a tripped F2/F3/F4 is only visible as a missing rail (PWR_SRC low
+  or dead +5V_EXT loads).

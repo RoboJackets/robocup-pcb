@@ -2025,6 +2025,11 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid "c0223946-7410-49bf-8eaf-db42cff3e567")
   )
+  (text "ROBOT ID DIP SWITCH SW3 (100K PULL-UPS)"
+    (at 189.23 128.27 0)
+    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
+    (uuid "9f308f85-53dd-4abe-afea-97f72c5419ab")
+  )
 	(symbol
 		(lib_id "power:+3V3")
 		(at 210.82 189.23 0)
@@ -3146,5 +3151,18 @@
 				)
 			)
 		)
+	)
+	(rectangle
+		(start 188 124)
+		(end 296 215)
+		(stroke
+			(width 0.254)
+			(type dash)
+			(color 0 0 132 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "60e56df6-beaa-4a54-b65a-514f9455f7a6")
 	)
 )
