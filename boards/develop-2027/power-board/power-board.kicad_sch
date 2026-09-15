@@ -5,351 +5,6 @@
 	(uuid "cb63459b-b5eb-4b1b-8316-cdcb6a76275f")
 	(paper "A3")
 	(lib_symbols
-		(symbol "Connector:Conn_01x06_Pin"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0 7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x06_Pin"
-				(at 0 -10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x06, script generated"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Conn_01x06_Pin_1_1"
-				(rectangle
-					(start 0.8636 5.207)
-					(end 0 4.953)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 2.667)
-					(end 0 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 -4.953)
-					(end 0 -5.207)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 -7.493)
-					(end 0 -7.747)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 5.08) (xy 0.8636 5.08)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 2.54) (xy 0.8636 2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy 0.8636 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -2.54) (xy 0.8636 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -5.08) (xy 0.8636 -5.08)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -7.62) (xy 0.8636 -7.62)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 5.08 5.08 180)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 3.81)
-					(name "Pin_3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 3.81)
-					(name "Pin_4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -5.08 180)
-					(length 3.81)
-					(name "Pin_5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -7.62 180)
-					(length 3.81)
-					(name "Pin_6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -466,7 +121,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "todo next:\n- do all the todos listed around the sheet\n- shunts and op amps for current sensing\n- add connectors for connecting to other boards\n- add part numbers for everything"
+	(text "todo next:\n- do all the todos listed around the sheet\n- add connectors for connecting to other boards\n- add part numbers for everything"
 		(exclude_from_sim no)
 		(at 48.768 156.21 0)
 		(effects
@@ -477,25 +132,15 @@
 		)
 		(uuid "b1d62566-c589-43a4-9523-6475f60f4ed6")
 	)
-	(text "TODO: find the right\nconnector to use that\nthe battery's balance\nconnector uses"
-		(exclude_from_sim no)
-		(at 140.97 98.044 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "ef3fd864-b047-4cb0-982f-5aa33bb3ead9")
-	)
 	(junction
-		(at 132.08 119.38)
+		(at 213.36 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "528b82b6-4586-4505-a882-555379ac8625")
+		(uuid "8840a1d7-33f5-444b-b8dd-6767a6881687")
 	)
 	(wire
 		(pts
-			(xy 83.82 118.11) (xy 91.44 118.11)
+			(xy 137.16 100.33) (xy 144.78 100.33)
 		)
 		(stroke
 			(width 0)
@@ -505,7 +150,17 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 106.68) (xy 129.54 106.68)
+			(xy 71.12 45.72) (xy 215.9 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ae93658-aaee-4dbf-822e-a6886278cbe8")
+	)
+	(wire
+		(pts
+			(xy 215.9 88.9) (xy 182.88 88.9)
 		)
 		(stroke
 			(width 0)
@@ -515,17 +170,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 88.9) (xy 29.21 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2696d0fa-4745-4fbc-8f52-5fd4a8e65964")
-	)
-	(wire
-		(pts
-			(xy 132.08 111.76) (xy 129.54 111.76)
+			(xy 215.9 93.98) (xy 182.88 93.98)
 		)
 		(stroke
 			(width 0)
@@ -535,7 +180,17 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 119.38) (xy 129.54 119.38)
+			(xy 71.12 88.9) (xy 82.55 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a4c18e7-e386-457f-8645-ce56aa6fc4c3")
+	)
+	(wire
+		(pts
+			(xy 182.88 101.6) (xy 215.9 101.6)
 		)
 		(stroke
 			(width 0)
@@ -545,7 +200,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 113.03) (xy 91.44 113.03)
+			(xy 137.16 95.25) (xy 144.78 95.25)
 		)
 		(stroke
 			(width 0)
@@ -555,7 +210,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 115.57) (xy 91.44 115.57)
+			(xy 137.16 97.79) (xy 144.78 97.79)
 		)
 		(stroke
 			(width 0)
@@ -565,17 +220,47 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 106.68) (xy 27.94 88.9)
+			(xy 71.12 99.06) (xy 82.55 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9650c675-a2c3-4def-b1ed-bedf77cb1b6c")
+		(uuid "6e1fe815-129d-4064-a40a-e103bfe48fa1")
 	)
 	(wire
 		(pts
-			(xy 132.08 114.3) (xy 129.54 114.3)
+			(xy 137.16 67.31) (xy 215.9 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "792734ff-a4e4-4e52-bdbc-87d71f38be4f")
+	)
+	(wire
+		(pts
+			(xy 71.12 96.52) (xy 82.55 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84969131-38d0-4010-b2a9-730f86c13386")
+	)
+	(wire
+		(pts
+			(xy 71.12 93.98) (xy 82.55 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9212613c-833c-46b3-ae4e-b23e36210e98")
+	)
+	(wire
+		(pts
+			(xy 215.9 96.52) (xy 182.88 96.52)
 		)
 		(stroke
 			(width 0)
@@ -585,17 +270,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 106.68) (xy 27.94 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c16c1efc-0e47-4cd4-a3d8-d0727c1004b4")
-	)
-	(wire
-		(pts
-			(xy 132.08 109.22) (xy 129.54 109.22)
+			(xy 215.9 91.44) (xy 182.88 91.44)
 		)
 		(stroke
 			(width 0)
@@ -605,7 +280,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 110.49) (xy 91.44 110.49)
+			(xy 137.16 92.71) (xy 144.78 92.71)
 		)
 		(stroke
 			(width 0)
@@ -615,7 +290,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 116.84) (xy 129.54 116.84)
+			(xy 215.9 99.06) (xy 182.88 99.06)
 		)
 		(stroke
 			(width 0)
@@ -625,7 +300,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 107.95) (xy 91.44 107.95)
+			(xy 137.16 90.17) (xy 144.78 90.17)
 		)
 		(stroke
 			(width 0)
@@ -633,9 +308,20 @@
 		)
 		(uuid "f739aef6-f6ac-4003-8d7d-79147f4f7bf7")
 	)
+	(wire
+		(pts
+			(xy 137.16 69.85) (xy 215.9 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f96bdf4a-bf21-4d93-ba8c-718c48b47611")
+	)
 	(symbol
 		(lib_id "power:GND")
-		(at 132.08 119.38 0)
+		(at 213.36 101.6 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -643,10 +329,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a3116a44-d0fa-4d6e-b6c4-7086b919cbac")
 		(property "Reference" "#PWR037"
-			(at 132.08 125.73 0)
+			(at 213.36 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -657,7 +342,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 132.08 124.46 0)
+			(at 213.36 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -667,7 +352,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 132.08 119.38 0)
+			(at 213.36 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -678,7 +363,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 132.08 119.38 0)
+			(at 213.36 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -689,7 +374,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 132.08 119.38 0)
+			(at 213.36 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -711,100 +396,145 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "Connector:Conn_01x06_Pin")
-		(at 137.16 114.3 180)
-		(unit 1)
-		(body_style 1)
+	(sheet
+		(at 215.9 41.91)
+		(size 57.15 102.87)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(uuid "bf111f2c-b479-4a31-b576-1a4a1db62b0b")
-		(property "Reference" "J3"
-			(at 142.24 113.03 90)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "255590aa-e6da-45e7-b5b3-d716553f470b")
+		(property "Sheetname" "Connectors"
+			(at 215.9 41.1984 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left bottom)
 			)
 		)
-		(property "Value" "Conn_01x06_Pin"
-			(at 139.7 113.03 90)
+		(property "Sheetfile" "connectors.kicad_sch"
+			(at 215.9 145.3646 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 			)
 		)
-		(property "Footprint" ""
-			(at 137.16 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
+		(pin "BAT_BALANCE_1" output
+			(at 215.9 101.6 180)
+			(uuid "e8b236c5-6e0d-445e-9441-abd7c7cec028")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Datasheet" ""
-			(at 137.16 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
+		(pin "BAT_BALANCE_2" output
+			(at 215.9 99.06 180)
+			(uuid "ad194514-8245-4a85-bdbb-20b94c9c6d09")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x06, script generated"
-			(at 137.16 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
+		(pin "BAT_BALANCE_3" output
+			(at 215.9 96.52 180)
+			(uuid "17daa75f-0cf7-41d2-af81-c78dc071c092")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(pin "2"
-			(uuid "63805d68-a580-452c-8a5a-c6b3f3048340")
+		(pin "BAT_BALANCE_4" output
+			(at 215.9 93.98 180)
+			(uuid "6be1a663-ca72-42e2-910b-5346a55f76a0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
 		)
-		(pin "6"
-			(uuid "a2a679a4-1cf5-4708-9d70-1095556a16da")
+		(pin "BAT_BALANCE_5" output
+			(at 215.9 91.44 180)
+			(uuid "44785279-1cd0-4133-9ad0-8422b3d818b0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
 		)
-		(pin "5"
-			(uuid "c50f93e9-42b1-4d5c-b6f9-af276383a143")
+		(pin "BAT_BALANCE_6" output
+			(at 215.9 88.9 180)
+			(uuid "dd3c227d-fc9b-4040-bf67-97681f500ed9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
 		)
-		(pin "4"
-			(uuid "05f413a6-760e-4221-9b3d-568a5dfbe86b")
+		(pin "I2C_SCL" bidirectional
+			(at 215.9 69.85 180)
+			(uuid "9ee91ee5-fc85-4a4f-9da5-518481131bfe")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
 		)
-		(pin "3"
-			(uuid "136acd76-9a75-4cde-be93-af1616e517a4")
+		(pin "I2C_SDA" bidirectional
+			(at 215.9 67.31 180)
+			(uuid "0cf6c2bc-4076-4190-8aed-d40011d8096d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
 		)
-		(pin "1"
-			(uuid "3815d000-153a-4c8a-a9cb-448bc4394a2f")
+		(pin "VBAT_FUSED" input
+			(at 215.9 45.72 180)
+			(uuid "e27dfff1-7826-48a3-886a-b3bd7810c41c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
 		)
 		(instances
 			(project "power-board"
 				(path "/cb63459b-b5eb-4b1b-8316-cdcb6a76275f"
-					(reference "J3")
-					(unit 1)
+					(page "5")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 29.21 104.14)
-		(size 54.61 31.75)
+		(at 82.55 64.77)
+		(size 54.61 53.34)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -819,7 +549,7 @@
 		)
 		(uuid "71f9ccf2-01cf-47d9-b25c-170e05250cb5")
 		(property "Sheetname" "MCU"
-			(at 29.21 103.4284 0)
+			(at 82.55 64.0584 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -830,7 +560,7 @@
 			)
 		)
 		(property "Sheetfile" "mcu.kicad_sch"
-			(at 29.21 136.4746 0)
+			(at 82.55 118.6946 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -841,7 +571,7 @@
 			)
 		)
 		(pin "BAT_CELL_SCALED_1" input
-			(at 83.82 118.11 0)
+			(at 137.16 100.33 0)
 			(uuid "aa63a627-1aff-41fd-bb52-eb0277ed3653")
 			(effects
 				(font
@@ -851,7 +581,7 @@
 			)
 		)
 		(pin "BAT_CELL_SCALED_2" input
-			(at 83.82 115.57 0)
+			(at 137.16 97.79 0)
 			(uuid "5cf1b8b1-4073-42af-98c7-25f43b638027")
 			(effects
 				(font
@@ -861,7 +591,7 @@
 			)
 		)
 		(pin "BAT_CELL_SCALED_3" input
-			(at 83.82 113.03 0)
+			(at 137.16 95.25 0)
 			(uuid "301b2104-289b-4c2d-a3d8-e13f2fb49b86")
 			(effects
 				(font
@@ -871,7 +601,7 @@
 			)
 		)
 		(pin "BAT_CELL_SCALED_4" input
-			(at 83.82 110.49 0)
+			(at 137.16 92.71 0)
 			(uuid "415d53a1-9321-42bd-be0f-de3f6eaedca6")
 			(effects
 				(font
@@ -881,7 +611,7 @@
 			)
 		)
 		(pin "BAT_CELL_SCALED_5" input
-			(at 83.82 107.95 0)
+			(at 137.16 90.17 0)
 			(uuid "dc7e00b9-20ba-4e33-afcb-e30f763dbfbe")
 			(effects
 				(font
@@ -891,13 +621,63 @@
 			)
 		)
 		(pin "RAIL_EN_12V" output
-			(at 29.21 106.68 180)
+			(at 82.55 88.9 180)
 			(uuid "0317f550-def9-4b71-a978-88e29d14f3b5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "I_SENSE_3V3" input
+			(at 82.55 93.98 180)
+			(uuid "6c7473fe-2ceb-4f18-ac26-cbda3785741b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I_SENSE_5V" input
+			(at 82.55 96.52 180)
+			(uuid "85c25bc1-780d-4b8c-98df-987846e2cbba")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I_SENSE_12V" input
+			(at 82.55 99.06 180)
+			(uuid "6d0f25d3-c6a6-450b-8832-8d8d7b0299cb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I2C_SCL0" bidirectional
+			(at 137.16 69.85 0)
+			(uuid "860b25b9-6ab3-4b95-bf3f-9cc3e262ac96")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "I2C_SDA0" bidirectional
+			(at 137.16 67.31 0)
+			(uuid "3327fd67-9b55-4d37-8581-589255895b7a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -909,8 +689,8 @@
 		)
 	)
 	(sheet
-		(at 29.21 60.96)
-		(size 41.91 30.48)
+		(at 29.21 43.18)
+		(size 41.91 74.93)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -925,7 +705,7 @@
 		)
 		(uuid "78bc56ac-35bc-4a48-b190-7d489bf5b351")
 		(property "Sheetname" "Power Management"
-			(at 29.21 60.2484 0)
+			(at 29.21 42.4684 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -936,7 +716,7 @@
 			)
 		)
 		(property "Sheetfile" "power_management.kicad_sch"
-			(at 29.21 92.0246 0)
+			(at 29.21 118.6946 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -947,7 +727,7 @@
 			)
 		)
 		(pin "VBAT_FUSED" output
-			(at 71.12 63.5 0)
+			(at 71.12 45.72 0)
 			(uuid "3d0c7a74-432e-48fa-baa3-555fd827c7c1")
 			(effects
 				(font
@@ -957,23 +737,43 @@
 			)
 		)
 		(pin "I_SENSE_3V3" output
-			(at 29.21 71.12 180)
+			(at 71.12 93.98 0)
 			(uuid "b475f2a4-4845-4bdd-890f-26bc241d5d2c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(pin "RAIL_EN_12V" input
-			(at 29.21 88.9 180)
+			(at 71.12 88.9 0)
 			(uuid "444acfb4-8ae7-43ec-9112-c242a6c32898")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
+			)
+		)
+		(pin "I_SENSE_5V" output
+			(at 71.12 96.52 0)
+			(uuid "ba2fdc1a-12ef-45e6-9c32-dc872e061ecc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "I_SENSE_12V" output
+			(at 71.12 99.06 0)
+			(uuid "e24e7090-5964-45a3-8eff-414f3c4d9f81")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -985,8 +785,8 @@
 		)
 	)
 	(sheet
-		(at 91.44 104.14)
-		(size 38.1 17.78)
+		(at 144.78 86.36)
+		(size 38.1 31.75)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1001,7 +801,7 @@
 		)
 		(uuid "fdbe268e-2a8d-4749-bb7a-3089b2b80b38")
 		(property "Sheetname" "Battery Status Reader"
-			(at 91.44 103.4284 0)
+			(at 144.78 85.6484 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1012,7 +812,7 @@
 			)
 		)
 		(property "Sheetfile" "battery_status_reader.kicad_sch"
-			(at 91.44 122.5046 0)
+			(at 144.78 118.6946 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1023,7 +823,7 @@
 			)
 		)
 		(pin "BAT_BALANCE_1" input
-			(at 129.54 119.38 0)
+			(at 182.88 101.6 0)
 			(uuid "ca524ed6-5d71-4c4b-b81b-c74a9044e80a")
 			(effects
 				(font
@@ -1033,7 +833,7 @@
 			)
 		)
 		(pin "BAT_BALANCE_2" input
-			(at 129.54 116.84 0)
+			(at 182.88 99.06 0)
 			(uuid "9e0bb5fb-5be5-4fc1-a1d6-68b246d7777d")
 			(effects
 				(font
@@ -1043,7 +843,7 @@
 			)
 		)
 		(pin "BAT_BALANCE_3" input
-			(at 129.54 114.3 0)
+			(at 182.88 96.52 0)
 			(uuid "91f17084-2996-4725-94c5-b258aff428f6")
 			(effects
 				(font
@@ -1053,7 +853,7 @@
 			)
 		)
 		(pin "BAT_BALANCE_4" input
-			(at 129.54 111.76 0)
+			(at 182.88 93.98 0)
 			(uuid "cc2fdc17-9de0-4a54-b887-9b8367d77146")
 			(effects
 				(font
@@ -1063,7 +863,7 @@
 			)
 		)
 		(pin "BAT_BALANCE_5" input
-			(at 129.54 109.22 0)
+			(at 182.88 91.44 0)
 			(uuid "d638e0b5-5c85-4fb5-aeed-5c19bcdf1715")
 			(effects
 				(font
@@ -1073,7 +873,7 @@
 			)
 		)
 		(pin "BAT_BALANCE_6" input
-			(at 129.54 106.68 0)
+			(at 182.88 88.9 0)
 			(uuid "5bba796a-2916-4fd8-b4c6-3f387d7e62d1")
 			(effects
 				(font
@@ -1083,7 +883,7 @@
 			)
 		)
 		(pin "BAT_CELL_SCALED_1" output
-			(at 91.44 118.11 180)
+			(at 144.78 100.33 180)
 			(uuid "5c77cdeb-7778-43a2-8ab4-5ffa44e81115")
 			(effects
 				(font
@@ -1093,7 +893,7 @@
 			)
 		)
 		(pin "BAT_CELL_SCALED_2" output
-			(at 91.44 115.57 180)
+			(at 144.78 97.79 180)
 			(uuid "30dba3fa-bb9b-4a83-9e2a-cf74e5780a85")
 			(effects
 				(font
@@ -1103,7 +903,7 @@
 			)
 		)
 		(pin "BAT_CELL_SCALED_3" output
-			(at 91.44 113.03 180)
+			(at 144.78 95.25 180)
 			(uuid "cedca403-3777-4203-bf2f-b75a75eab815")
 			(effects
 				(font
@@ -1113,7 +913,7 @@
 			)
 		)
 		(pin "BAT_CELL_SCALED_4" output
-			(at 91.44 110.49 180)
+			(at 144.78 92.71 180)
 			(uuid "b6bb3f21-108b-4021-b861-2647b5fa6197")
 			(effects
 				(font
@@ -1123,7 +923,7 @@
 			)
 		)
 		(pin "BAT_CELL_SCALED_5" output
-			(at 91.44 107.95 180)
+			(at 144.78 90.17 180)
 			(uuid "3987686e-667b-49e2-a19e-60f05d454c88")
 			(effects
 				(font
