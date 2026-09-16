@@ -12,7 +12,7 @@
 		(comment 1 "Miles Schuler")
 	)
 	(lib_symbols
-		(symbol "Connector:Conn_01x02_Pin"
+		(symbol "Connector_Generic:Conn_01x03"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -23,7 +23,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "J"
-				(at 0 2.54 0)
+				(at 0 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -32,7 +32,7 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x02_Pin"
+			(property "Value" "Conn_01x03"
 				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -64,21 +64,11 @@
 					)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x02, script generated"
+			(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -107,33 +97,21 @@
 					)
 				)
 			)
-			(symbol "Conn_01x02_Pin_1_1"
+			(symbol "Conn_01x03_1_1"
 				(rectangle
-					(start 0.8636 0.127)
-					(end 0 -0.127)
+					(start -1.27 3.81)
+					(end 1.27 -3.81)
 					(stroke
-						(width 0.1524)
+						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type outline)
+						(type background)
 					)
 				)
 				(rectangle
-					(start 0.8636 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy 0.8636 0)
-					)
+					(start -1.27 2.667)
+					(end 0 2.413)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -142,10 +120,20 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
 					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -155,7 +143,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 0 180)
+					(at -5.08 2.54 0)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -173,7 +161,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 -2.54 180)
+					(at -5.08 0 0)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -183,171 +171,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Connector:Conn_01x02_Socket"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x02_Socket"
-				(at 0 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x02, script generated"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Conn_01x02_Socket_1_1"
-				(polyline
-					(pts
-						(xy -1.27 0) (xy -0.508 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -2.54) (xy -0.508 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -0.508)
-					(mid -0.5058 0)
-					(end 0 0.508)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -3.048)
-					(mid -0.5058 -2.54)
-					(end 0 -2.032)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -358,14 +181,14 @@
 				(pin passive line
 					(at -5.08 -2.54 0)
 					(length 3.81)
-					(name "Pin_2"
+					(name "Pin_3"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "2"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -969,10 +792,20 @@
 		(uuid "77ae147b-1c9e-42ed-84dd-a3d289cd73f6")
 	)
 	(junction
-		(at 113.03 102.87)
+		(at 111.76 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "54b42e21-26ab-49a3-a73e-ba915609ab20")
+		(uuid "36551464-a839-4e8f-99ae-47c70b9f7d1d")
+	)
+	(wire
+		(pts
+			(xy 118.11 102.87) (xy 118.11 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "029c14ce-b72f-4eb9-bab1-0abb817c1bce")
 	)
 	(wire
 		(pts
@@ -986,7 +819,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 80.01) (xy 119.38 80.01)
+			(xy 118.11 74.93) (xy 120.65 74.93)
 		)
 		(stroke
 			(width 0)
@@ -996,7 +829,27 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 90.17) (xy 116.84 80.01)
+			(xy 115.57 101.6) (xy 115.57 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c668bdb-2418-4f80-b9b2-44c1dd6c1370")
+	)
+	(wire
+		(pts
+			(xy 120.65 105.41) (xy 120.65 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "505c5187-083c-4aaf-9875-8cd58f1ac436")
+	)
+	(wire
+		(pts
+			(xy 118.11 85.09) (xy 118.11 74.93)
 		)
 		(stroke
 			(width 0)
@@ -1006,7 +859,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 106.68) (xy 113.03 102.87)
+			(xy 111.76 106.68) (xy 111.76 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1016,7 +869,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 102.87) (xy 116.84 102.87)
+			(xy 111.76 102.87) (xy 118.11 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1026,17 +879,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 102.87) (xy 125.73 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e626acf5-2ce2-4af1-b042-b159d557d1af")
-	)
-	(wire
-		(pts
-			(xy 113.03 102.87) (xy 110.49 102.87)
+			(xy 111.76 102.87) (xy 110.49 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1046,7 +889,7 @@
 	)
 	(hierarchical_label "TEMP_SENSE"
 		(shape output)
-		(at 113.03 106.68 270)
+		(at 111.76 106.68 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1056,8 +899,8 @@
 		(uuid "87ee9d22-0f6d-48b2-9edd-09281f0316dd")
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x02_Pin")
-		(at 119.38 97.79 270)
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 118.11 96.52 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1065,9 +908,117 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "0719a283-7267-4e55-a916-39b2ba404945")
-		(property "Reference" "J8"
-			(at 120.904 98.298 90)
+		(fields_autoplaced yes)
+		(uuid "12611ec8-c3cc-4ba0-bb5c-37283dee86ec")
+		(property "Reference" "J4"
+			(at 123.19 95.2499 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x03"
+			(at 123.19 97.7899 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_GH_SM03B-GHS-TB_1x03-1MP_P1.25mm_Horizontal"
+			(at 118.11 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/eGH.pdf"
+			(at 118.11 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 118.11 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 118.11 96.52 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "455-BM03B-GHS-TBTCT-ND"
+			(at 118.11 96.52 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "4dc98f84-918a-443b-bb6b-be883fa18281")
+		)
+		(pin "1"
+			(uuid "4e1b13af-8829-478c-8be7-0b98dec6dadf")
+		)
+		(pin "2"
+			(uuid "d0ca2b4d-e0ce-4a08-83b5-e62c6631d05b")
+		)
+		(instances
+			(project "integration-test"
+				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/cc6a8bde-954b-4921-aec8-fe00d52ae8d8"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 118.11 90.17 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1a522db8-ce25-4df6-8900-ae39de681780")
+		(property "Reference" "J7"
+			(at 123.19 88.8999 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1077,8 +1028,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Thermistor Pin"
-			(at 120.65 100.584 90)
+		(property "Value" "Conn_01x03"
+			(at 123.19 91.4399 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1089,7 +1040,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_GH_SM02B-GHS-TB_1x02-1MP_P1.25mm_Horizontal"
-			(at 119.38 97.79 0)
+			(at 118.11 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1099,8 +1050,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://docs.sparkfun.com/SparkFun_GNSS_ZED-X20P/assets/component_documentation/JST-GH_datasheet.pdf"
-			(at 119.38 97.79 0)
+		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/eGH.pdf"
+			(at 118.11 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1110,8 +1061,8 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 119.38 97.79 0)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 118.11 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1121,16 +1072,41 @@
 				)
 			)
 		)
-		(pin "2"
-			(uuid "77bb10d7-26c4-4284-aca0-00ce2081af33")
+		(property "Vendor" "DigiKey"
+			(at 118.11 90.17 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "455-1593-ND"
+			(at 118.11 90.17 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "f1c5135e-2b53-4e9a-bbe5-eb94246e0b9a")
 		)
 		(pin "1"
-			(uuid "06ad2bd3-a1ba-4b45-80aa-c67be44b692e")
+			(uuid "ebf8d9ac-9014-4937-a858-5357091fc014")
+		)
+		(pin "2"
+			(uuid "c60cfd8e-201b-425a-b61b-d501de581980")
 		)
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/cc6a8bde-954b-4921-aec8-fe00d52ae8d8"
-					(reference "J8")
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -1138,7 +1114,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 125.73 102.87 0)
+		(at 120.65 105.41 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1149,7 +1125,7 @@
 		(fields_autoplaced yes)
 		(uuid "21bfb5ff-fccd-4871-b559-42bc5d1849f8")
 		(property "Reference" "#PWR029"
-			(at 125.73 109.22 0)
+			(at 120.65 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1160,7 +1136,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 125.73 107.95 0)
+			(at 120.65 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1170,7 +1146,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 125.73 102.87 0)
+			(at 120.65 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1181,7 +1157,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 125.73 102.87 0)
+			(at 120.65 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1192,7 +1168,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 125.73 102.87 0)
+			(at 120.65 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1215,40 +1191,40 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x02_Socket")
-		(at 119.38 95.25 270)
+		(lib_id "power:GND")
+		(at 115.57 105.41 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "2f8f2d71-5c04-4420-9a3d-8a479c304686")
-		(property "Reference" "J7"
-			(at 123.444 90.932 90)
+		(fields_autoplaced yes)
+		(uuid "2403f0e9-4532-44b0-9923-08ee2b16a1dd")
+		(property "Reference" "#PWR030"
+			(at 115.57 111.76 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Value" "Thermistor Socket"
-			(at 138.684 93.472 90)
+		(property "Value" "GND"
+			(at 115.57 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_GH_SM02B-GHS-TB_1x02-1MP_P1.25mm_Horizontal"
-			(at 119.38 95.25 0)
+		(property "Footprint" ""
+			(at 115.57 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1259,7 +1235,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 119.38 95.25 0)
+			(at 115.57 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1269,8 +1245,8 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 119.38 95.25 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 115.57 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1279,17 +1255,14 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "2"
-			(uuid "5258992b-7e0c-4381-a863-90af3e62abd4")
 		)
 		(pin "1"
-			(uuid "b22962e3-74da-4166-852f-d467ad6939fa")
+			(uuid "55f9ebcf-635f-4815-b903-a41cc4aac10e")
 		)
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/cc6a8bde-954b-4921-aec8-fe00d52ae8d8"
-					(reference "J7")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -1375,7 +1348,7 @@
 	)
 	(symbol
 		(lib_id "Device:Thermistor")
-		(at 119.38 85.09 180)
+		(at 120.65 80.01 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1386,7 +1359,7 @@
 		(fields_autoplaced yes)
 		(uuid "d494a7ff-fd8e-406e-beb5-62afaec35446")
 		(property "Reference" "TH1"
-			(at 123.19 83.8199 0)
+			(at 124.46 78.7399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1397,7 +1370,7 @@
 			)
 		)
 		(property "Value" "Thermistor"
-			(at 123.19 86.3599 0)
+			(at 124.46 81.2799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1408,7 +1381,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 119.38 85.09 0)
+			(at 120.65 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1419,7 +1392,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.eaton.com/content/dam/eaton/products/electronic-components/resources/data-sheet/eaton-nrse-epoxy-sealed-radial-lead-ntc-thermistor-data-sheet-elx1227.pdf"
-			(at 119.38 85.09 0)
+			(at 120.65 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1430,7 +1403,7 @@
 			)
 		)
 		(property "Description" "Temperature dependent resistor"
-			(at 119.38 85.09 0)
+			(at 120.65 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1441,7 +1414,7 @@
 			)
 		)
 		(property "Vendor" "DigiKey"
-			(at 119.38 85.09 0)
+			(at 120.65 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1452,7 +1425,7 @@
 			)
 		)
 		(property "Vendor P/N" "283-NRSE105H3950B1H-ND"
-			(at 119.38 85.09 0)
+			(at 120.65 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
