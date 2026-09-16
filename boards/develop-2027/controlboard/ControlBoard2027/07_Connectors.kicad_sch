@@ -5540,6 +5540,34 @@
 		)
 		(uuid "e18afabb-361b-48c6-bac7-c70a825efc0e")
 	)
+	(wire
+		(pts
+			(xy 170.18 121.92)
+			(xy 175.26 121.92)
+		)
+		(uuid "c4809455-affb-46f1-a7b8-d1ae453d7ce4")
+	)
+	(wire
+		(pts
+			(xy 182.88 121.92)
+			(xy 193.04 121.92)
+		)
+		(uuid "baba5dbc-2da1-4dba-b437-b66781436f51")
+	)
+	(wire
+		(pts
+			(xy 170.18 109.22)
+			(xy 175.26 109.22)
+		)
+		(uuid "d6c95d38-6b56-4c85-ac54-bcc54a68ecc2")
+	)
+	(wire
+		(pts
+			(xy 182.88 109.22)
+			(xy 193.04 109.22)
+		)
+		(uuid "a043dac4-7e46-449a-970d-83eedd26e9ee")
+	)
 	(text "MOTOR MODULES J5-J9"
 		(at 101.6 63.5 0)
 		(effects
@@ -5552,19 +5580,6 @@
 			(justify left bottom)
 		)
 		(uuid "56ec4ede-c371-4092-97d3-e17dee02d516")
-	)
-	(text "I2C CONNECTORS J10-J12, F4 FUSE"
-		(at 158.75 72.39 0)
-		(effects
-			(font
-				(size 2 2)
-				(thickness 0.4)
-				(bold yes)
-				(color 0 0 132 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "eb5c98f0-9898-406c-bfd2-77bfd0fe9bff")
 	)
 	(text "OLED J13"
 		(at 238.76 167.64 0)
@@ -5631,7 +5646,50 @@
 		)
 		(uuid "f0fe1078-4c83-476b-aacf-9cd4db36bc31")
 	)
-	(label "+5V_EXT"
+	(text "RADIO LINK J14 - JST GH 15P (matches RadioBoard2027 J2)\n\n   1  +3V3            9  GND\n   2  +3V3           10  ESP_SPI_CS\n   3  GND            11  GND\n   4  ESP_SPI_SCK    12  ESP_HANDSHAKE\n   5  GND            13  ESP_DATA_READY\n   6  ESP_SPI_MOSI   14  ESP_RST (radio EN)\n   7  GND            15  GND\n   8  ESP_SPI_MISO   MP  GND\n\nStraight 1:1 cable, 26 AWG, latching housings on both ends.\nGND on both sides of SCK, MOSI, MISO and CS.\nThe radio runs from the muxed +3V3, so it also runs on USB (m22).\nSPI3 mode 3, 3 Mbit/s, hardware CRC off, 8-bit (V0.3 differs: M4).\nESP_RST is open-drain; the EN pull-up is on the radio board.\nDESIGN_NOTES.md §11."
+		(at 151.13 302.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1882e97d-3617-45e2-be62-c7b37cb1aec4")
+	)
+	(text "RADIO LINK J14 (JST GH 15P)"
+		(at 151.13 191.77 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 132 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "6d04d248-c8cf-4c44-a165-111abe0c7039")
+	)
+	(text "I2C CONNECTORS J10-J12, INDEPENDENT F4/F5/F6"
+		(at 158.75 72.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "937da8c2-9f25-4d66-8495-ef68aa91a49c")
+	)
+	(text "ROUTING - RADIO / MOTOR SPI\nSingle-ended target: 55 ohms, over solid GND; validate with final stackup.\nRadio signals length-matched +/-2mm. Motor bus daisy-chain, short drops.\nR41/R42 are tunable damping; a multidrop cable bus has no single matched Z.\nU10/U11 ESD at connectors; wide power traces and direct GND-plane vias.\n\nI2C J10-J12: F4 -> J10; F5 -> J11; F6 -> J12. Separate output rails.\n0.55A combined external-load budget at 50C; no increase from adding fuses.\nPTCs do not guarantee uninterrupted power or isolate a shorted shared I2C bus."
+		(at 260.35 300.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f44868a7-9614-43a7-96c2-bda9f7fadcb4")
+	)
+	(label "+5V_KICKER"
 		(at 259.08 93.98 180)
 		(effects
 			(font
@@ -5639,9 +5697,9 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "9d3ebcfe-3564-4c89-aa06-ca826964df4d")
+		(uuid "da95a8b3-d62f-47f6-99b6-8043d6a88f77")
 	)
-	(label "+5V_EXT"
+	(label "+5V_EXT1"
 		(at 259.08 121.92 180)
 		(effects
 			(font
@@ -5649,9 +5707,9 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "ed674402-38e2-4734-a429-b8623a944d34")
+		(uuid "0e3c2139-2836-45b1-b209-2b888555b24e")
 	)
-	(label "+5V_EXT"
+	(label "+5V_EXT2"
 		(at 259.08 144.78 180)
 		(effects
 			(font
@@ -5659,9 +5717,9 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "fadd58f1-6bff-4ca6-a6c5-d7283157b9c7")
+		(uuid "b8497b10-fd81-4156-bc2c-d06944c15382")
 	)
-	(label "+5V_EXT"
+	(label "+5V_KICKER"
 		(at 193.04 81.28 0)
 		(effects
 			(font
@@ -5669,7 +5727,27 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "d67b465a-e992-48a0-9e42-68c27f435765")
+		(uuid "5514013f-6007-4c7e-9a7a-7b91bac2d256")
+	)
+	(label "+5V_EXT2"
+		(at 193.04 121.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "151a1882-0c10-4c3b-809c-9dbda6b564b9")
+	)
+	(label "+5V_EXT1"
+		(at 193.04 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c1642979-7e6d-4fad-9b50-440faaae5998")
 	)
 	(global_label "GND"
 		(shape passive)
@@ -6914,21 +6992,6 @@
 		)
 		(uuid "4ccf770b-3eda-4f4b-95fb-9bd36ca0edf4")
 	)
-  (text "RADIO LINK J14 - JST GH 15P (matches RadioBoard2027 J2)\n\n   1  +3V3            9  GND\n   2  +3V3           10  ESP_SPI_CS\n   3  GND            11  GND\n   4  ESP_SPI_SCK    12  ESP_HANDSHAKE\n   5  GND            13  ESP_DATA_READY\n   6  ESP_SPI_MOSI   14  ESP_RST (radio EN)\n   7  GND            15  GND\n   8  ESP_SPI_MISO   MP  GND\n\nStraight 1:1 cable, 26 AWG, latching housings on both ends.\nGND on both sides of SCK, MOSI, MISO and CS.\nThe radio runs from the muxed +3V3, so it also runs on USB (m22).\nSPI3 mode 3, 3 Mbit/s, hardware CRC off, 8-bit (V0.3 differs: M4).\nESP_RST is open-drain; the EN pull-up is on the radio board.\nDESIGN_NOTES.md §11."
-    (at 151.13 302.26 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "1882e97d-3617-45e2-be62-c7b37cb1aec4")
-  )
-  (text "ROUTING - RADIO LINK J14\nESP_SPI SCK/MOSI/MISO/CS: 50R, length-matched +/-2mm, over solid GND.\n+3V3 pins 1/2 from a wide trace; every GND pin via straight to the plane.\n\nROUTING - MOTOR SPI J5-J9\nMOTOR_SPI SCK/MOSI/MISO: one daisy-chained bus, 50R, no stubs.\nSCK spaced 3W from MISO/MOSI. U10/U11 ESD right at the connectors.\n\nROUTING - I2C J10-J13\nSDA/SCL routed as a pair. U12 ESD at J10-J12 (keep them together). F4 at the +5V_EXT branch."
-    (at 260.35 300.99 0)
-    (effects (font (size 1.27 1.27) (bold yes) (color 255 0 0 1)) (justify left bottom))
-    (uuid "b065b613-3918-4dce-8612-51f6d7d5994b")
-  )
-  (text "RADIO LINK J14 (JST GH 15P)"
-    (at 151.13 191.77 0)
-    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
-    (uuid "6d04d248-c8cf-4c44-a165-111abe0c7039")
-  )
 	(symbol
 		(lib_id "Device:R")
 		(at 345.44 53.34 90)
@@ -11431,7 +11494,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/mf-msmf.pdf"
+		(property "Datasheet" "https://www.bourns.com/docs/product-datasheets/mf-msmf.pdf"
 			(at 179.07 81.28 0)
 			(hide yes)
 			(effects
@@ -11440,7 +11503,7 @@
 				)
 			)
 		)
-		(property "Description" "+5V_EXT PTC for J10-J12, same part as F1. Ihold 0.75A / Itrip 1.50A at 23C, 0.55A hold at 50C. Trip 1.5A is well below F2's 2.5A, so an I2C cable fault opens F4, not F2 (DESIGN_NOTES.md §11)."
+		(property "Description" "Independent PTC for J10. 0.75A hold / 1.5A trip at 23C; 0.55A hold at 50C. Combined external load budget unchanged. Selective trip and uninterrupted operation require testing; see DESIGN_NOTES section 11."
 			(at 179.07 81.28 0)
 			(hide yes)
 			(effects
@@ -11519,15 +11582,6 @@
 				)
 			)
 		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/c387934c-6c45-449c-9c7b-623c2e31b062"
-					(reference "J14")
-					(unit 1)
-				)
-			)
-		)
-	
 		(property "MPN" "JST BM15B-GHS-TBT(LF)(SN)"
 			(at 190.5 218.44 0)
 			(hide yes)
@@ -11536,7 +11590,276 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+		(instances
+			(project "ControlBoard2027"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/c387934c-6c45-449c-9c7b-623c2e31b062"
+					(reference "J14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Polyfuse")
+		(at 179.07 109.22 270)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "812c36c5-ea76-407c-af83-4f5dde88adaf")
+		(property "Reference" "F5"
+			(at 179.07 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MF-MSMF075/16X"
+			(at 179.07 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Fuse:Fuse_1812_4532Metric"
+			(at 179.07 109.22 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.bourns.com/docs/product-datasheets/mf-msmf.pdf"
+			(at 179.07 109.22 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Independent PTC for J11. 0.75A hold / 1.5A trip at 23C; 0.55A hold at 50C. Combined external load budget unchanged. Selective trip and uninterrupted operation require testing; see DESIGN_NOTES section 11."
+			(at 179.07 109.22 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Bourns MF-MSMF075/16X-2"
+			(at 179.07 109.22 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "ControlBoard2027"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/c387934c-6c45-449c-9c7b-623c2e31b062"
+					(reference "F5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Polyfuse")
+		(at 179.07 121.92 270)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b6a94567-32be-48c7-82a7-470360c2fd5e")
+		(property "Reference" "F6"
+			(at 179.07 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MF-MSMF075/16X"
+			(at 179.07 124.46 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Fuse:Fuse_1812_4532Metric"
+			(at 179.07 121.92 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.bourns.com/docs/product-datasheets/mf-msmf.pdf"
+			(at 179.07 121.92 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Independent PTC for J12. 0.75A hold / 1.5A trip at 23C; 0.55A hold at 50C. Combined external load budget unchanged. Selective trip and uninterrupted operation require testing; see DESIGN_NOTES section 11."
+			(at 179.07 121.92 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Bourns MF-MSMF075/16X-2"
+			(at 179.07 121.92 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "ControlBoard2027"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/c387934c-6c45-449c-9c7b-623c2e31b062"
+					(reference "F6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 170.18 109.22 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0b2f87f3-a937-43b1-b697-1baf30e6df12")
+		(property "Reference" "#PWR001"
+			(at 170.18 113.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 170.18 105.664 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 170.18 109.22 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170.18 109.22 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 170.18 109.22 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "ControlBoard2027"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/c387934c-6c45-449c-9c7b-623c2e31b062"
+					(reference "#PWR001")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 170.18 121.92 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dd6d6aa4-9993-4927-960f-1ada4eaa192e")
+		(property "Reference" "#PWR002"
+			(at 170.18 125.73 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 170.18 118.364 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 170.18 121.92 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170.18 121.92 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 170.18 121.92 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "ControlBoard2027"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/c387934c-6c45-449c-9c7b-623c2e31b062"
+					(reference "#PWR002")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(rectangle
 		(start 100 60)
 		(end 147.8 208.5)

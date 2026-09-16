@@ -3204,18 +3204,6 @@
 		)
 		(uuid "ff60dc87-e35f-4952-8e13-2b6b06c17d2c")
 	)
-	(text "ROUTING - SDMMC\nCLK, CMD, DAT0-3: 50R single-ended, length-matched +/-1mm to CLK, over solid GND.\nCLK spaced 3W from other traces, no vias if possible. C33/C34 at J4 VDD."
-		(at 189.23 171.45 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(bold yes)
-				(color 255 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "bff7c316-d43b-4cc1-929b-679edf97e40c")
-	)
 	(label "SDMMC_CMD"
 		(at 195.58 203.2 90)
 		(effects
@@ -3367,11 +3355,6 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid "7a1aa2a4-c131-4e15-9745-fd72d9350618")
   )
-  (text "R63 22R: source termination on SDMMC_CK, at the MCU (PC12),\nso clock reflections are absorbed instead of adding clock edges.\nDESIGN_NOTES.md §8."
-    (at 59.69 175.26 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "375c1327-518e-491a-8e43-befa87f42f6d")
-  )
   (text "MICROSD J4 ON SDMMC1 4-BIT (NO CARD DETECT)"
     (at 59.69 83.82 0)
     (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
@@ -3381,6 +3364,16 @@
     (at 158.75 184.15 0)
     (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
     (uuid "2c2b87fc-1d1a-4e04-a0cb-3e46c8df6281")
+  )
+  (text "ROUTING - SDMMC\nCLK, CMD, DAT0-3: requested 55-ohm single-ended target, over solid GND.\n55 ohms is the upper edge of ST's 50 +/-10% guidance: agree fab tolerance.\nMatch all six signal lengths within 1mm; CLK spacing 3W; short, minimal vias.\nC33/C34 at J4. Pull-ups are bias resistors, not termination."
+    (at 189.23 171.45 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "3c0ddac0-d00d-4b62-a6d0-e7c2b0fd4336")
+  )
+  (text "R63 30R at PC12: initial clock damping value.\n55-ohm trace impedance depends on the PCB stackup.\nNo guaranteed 25R MCU driver assumption.\nCMD/DAT are direct for the short 24MHz bus; verify both directions.\nAN5419 SDMMC guidelines; DESIGN_NOTES section 8."
+    (at 59.69 175.26 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "56f864a6-f968-40b1-90da-2963abd995aa")
   )
 	(symbol
 		(lib_id "power:GND")
@@ -5120,7 +5113,7 @@
 				)
 			)
 		)
-		(property "Value" "22R"
+		(property "Value" "30R"
 			(at 97.79 138.43 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5141,7 +5134,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.st.com/resource/en/application_note/an5419-getting-started-with-stm32h723733-stm32h725735-and-stm32h730-mcu-hardware-development-stmicroelectronics.pdf"
 			(at 97.79 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -5152,7 +5145,7 @@
 				)
 			)
 		)
-		(property "Description" "22R series termination on SDMMC_CK (PC12). CLK is the most edge-sensitive SD line: ringing crossing the threshold twice clocks in a bad bit. Brings the fast H7 driver up to ~50R and reduces EMI toward the card. Place at the MCU, not at J4."
+		(property "Description" "SDMMC_CK source damping at PC12. 30R initial tuning value for requested 55-ohm trace target; driver impedance is not specified as a fixed 25R. Verify using IBIS/scope, including card CMD/DAT waveforms. AN5419 SDMMC guidelines."
 			(at 97.79 138.43 0)
 			(hide yes)
 			(show_name no)
