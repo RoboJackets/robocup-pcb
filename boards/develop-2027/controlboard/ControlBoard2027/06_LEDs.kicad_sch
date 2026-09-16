@@ -1507,6 +1507,16 @@
 		(color 0 0 0 0)
 		(uuid "ec0c74c9-1ec0-4936-bf54-c07f5181e3fa")
 	)
+	(junction
+		(at 137.16 177.8)
+		(diameter 0)
+		(uuid "cae71fba-e377-4ba6-883d-b5bb88705628")
+	)
+	(junction
+		(at 137.16 180.34)
+		(diameter 0)
+		(uuid "f8983cde-df85-4c4e-863c-91410a3eaf90")
+	)
 	(no_connect
 		(at 93.98 232.41)
 		(uuid "232ff46a-728c-4d7c-8222-264368e48798")
@@ -1977,6 +1987,67 @@
 		)
 		(uuid "efebaa18-1081-4524-9dcb-7ac7350ee800")
 	)
+	(text "ROUTING - DOTSTARS\nU7 -> D3 CLK/DATA short and routed together, over GND.\nLED-to-LED CO->CI and DO->DI as matched pairs.\nC40-C44 at each LED VDD pin. C51 where +5V enters the chain.\nLEDs in the 5-dot shell pattern."
+		(at 199.39 149.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(bold yes)
+				(color 255 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "3a45f6a3-7628-4be4-aff9-fb794cbc0547")
+	)
+	(text "DOTSTAR LEVEL SHIFT\nThe LEDs need a 5V-level logic high, so U7 (AHCT, TTL inputs) shifts the 3.3V SPI.\nLEDs and U7 run from +5V (mux output), so they also work on USB.\nFirmware caps LED current: ~250mA on the powerboard (F2 budget), ~100mA on USB (F1).\nUsed: 1A p2 -> 1Y p3 CKI, 2A p5 -> 2Y p6 SDI, 1OE/2OE p1/p4 = GND.\nSpare gates 3/4: inputs p9/p12 = GND, OE p10/p13 = +5V (off), outputs p8/p11 open.\nR66/R67 hold the inputs low while the MCU pins float at reset.\nLED power-on state is undefined: firmware sends an all-off frame first.\n!! Default KiCad APA102-2020 footprint does NOT fit this LED (C1).\nC45 at U7, C40-C44 one per LED, C51 bulk where +5V enters.\nDESIGN_NOTES.md §10."
+		(at 297.18 252.73 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "74ab3582-6a6f-43af-a483-2c26c2b10597")
+	)
+	(text "LEVEL SHIFT U7 (3.3V SPI TO 5V)"
+		(at 50.8 95.25 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 132 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "3e4e7d9c-55d7-4e2e-960f-3aeaa4c4325b")
+	)
+	(text "DOTSTAR CHAIN D3-D7 AND DECOUPLING"
+		(at 116.84 139.7 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 132 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "021a4a15-5918-4ee0-8468-81ad160c0518")
+	)
+	(text "U7 SPARE GATES"
+		(at 40.64 229.87 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 132 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "0ebbdc4e-94af-43bd-ab3c-654102aff20e")
+	)
 	(hierarchical_label "LED_SPI_MOSI"
 		(shape input)
 		(at 71.12 157.48 180)
@@ -1999,31 +2070,6 @@
 		)
 		(uuid "e942c53e-f5fb-4318-9c42-cc9460a5573a")
 	)
-  (text "ROUTING - DOTSTARS\nU7 -> D3 CLK/DATA short and routed together, over GND.\nLED-to-LED CO->CI and DO->DI as matched pairs.\nC40-C44 at each LED VDD pin. C51 where +5V enters the chain.\nLEDs in the 5-dot shell pattern."
-    (at 199.39 149.86 0)
-    (effects (font (size 1.27 1.27) (bold yes) (color 255 0 0 1)) (justify left bottom))
-    (uuid "3a45f6a3-7628-4be4-aff9-fb794cbc0547")
-  )
-  (text "DOTSTAR LEVEL SHIFT\nThe LEDs need a 5V-level logic high, so U7 (AHCT, TTL inputs) shifts the 3.3V SPI.\nLEDs and U7 run from +5V (mux output), so they also work on USB.\nFirmware caps LED current: ~250mA on the powerboard (F2 budget), ~100mA on USB (F1).\nUsed: 1A p2 -> 1Y p3 CKI, 2A p5 -> 2Y p6 SDI, 1OE/2OE p1/p4 = GND.\nSpare gates 3/4: inputs p9/p12 = GND, OE p10/p13 = +5V (off), outputs p8/p11 open.\nR66/R67 hold the inputs low while the MCU pins float at reset.\nLED power-on state is undefined: firmware sends an all-off frame first.\n!! Default KiCad APA102-2020 footprint does NOT fit this LED (C1).\nC45 at U7, C40-C44 one per LED, C51 bulk where +5V enters.\nDESIGN_NOTES.md §10."
-    (at 297.18 252.73 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "74ab3582-6a6f-43af-a483-2c26c2b10597")
-  )
-  (text "LEVEL SHIFT U7 (3.3V SPI TO 5V)"
-    (at 50.8 95.25 0)
-    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
-    (uuid "3e4e7d9c-55d7-4e2e-960f-3aeaa4c4325b")
-  )
-  (text "DOTSTAR CHAIN D3-D7 AND DECOUPLING"
-    (at 116.84 139.7 0)
-    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
-    (uuid "021a4a15-5918-4ee0-8468-81ad160c0518")
-  )
-  (text "U7 SPARE GATES"
-    (at 40.64 229.87 0)
-    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
-    (uuid "0ebbdc4e-94af-43bd-ab3c-654102aff20e")
-  )
 	(symbol
 		(lib_id "Device:R")
 		(at 74.93 161.29 0)
@@ -2804,6 +2850,15 @@
 				)
 			)
 		)
+		(property "MPN" "TI SN74AHCT125PWR"
+			(at 86.36 180.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "11"
@@ -2856,16 +2911,7 @@
 				)
 			)
 		)
-	
-		(property "MPN" "TI SN74AHCT125PWR"
-			(at 86.36 180.34 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "74xx:74AHCT125")
 		(at 86.36 157.48 0)
@@ -2928,6 +2974,15 @@
 				)
 			)
 		)
+		(property "MPN" "TI SN74AHCT125PWR"
+			(at 86.36 157.48 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "1"
@@ -2980,16 +3035,7 @@
 				)
 			)
 		)
-	
-		(property "MPN" "TI SN74AHCT125PWR"
-			(at 86.36 157.48 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 74.93 187.96 0)
@@ -3129,6 +3175,15 @@
 				)
 			)
 		)
+		(property "MPN" "TI SN74AHCT125PWR"
+			(at 86.36 232.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "2"
@@ -3181,16 +3236,7 @@
 				)
 			)
 		)
-	
-		(property "MPN" "TI SN74AHCT125PWR"
-			(at 86.36 232.41 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 86.36 137.16 0)
@@ -3895,6 +3941,15 @@
 				)
 			)
 		)
+		(property "MPN" "TI SN74AHCT125PWR"
+			(at 86.36 120.65 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "2"
@@ -3947,16 +4002,7 @@
 				)
 			)
 		)
-	
-		(property "MPN" "TI SN74AHCT125PWR"
-			(at 86.36 120.65 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 243.84 213.36 0)
@@ -4832,6 +4878,15 @@
 				)
 			)
 		)
+		(property "MPN" "TI SN74AHCT125PWR"
+			(at 152.4 232.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "1"
@@ -4884,16 +4939,7 @@
 				)
 			)
 		)
-	
-		(property "MPN" "TI SN74AHCT125PWR"
-			(at 152.4 232.41 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 274.32 217.17 0)
@@ -5669,6 +5715,126 @@
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/ee62a278-a94c-4411-ba4b-a0279340f73e"
 					(reference "#PWR621")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 137.16 177.8 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c9343bc9-20c9-4bb2-83f0-5276757ddf4a")
+		(property "Reference" "TP20"
+			(at 137.16 170.942 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_SDI_IN"
+			(at 137.16 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 137.16 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://americanbrightled.com/products/rgb-ic-led-components/"
+			(at 137.16 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Beginning of LED chain: D3 SDI pin 4 after U7 level shifting. Compare against TP18 (D7 SDO)."
+			(at 137.16 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "ControlBoard2027"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/ee62a278-a94c-4411-ba4b-a0279340f73e"
+					(reference "TP20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 137.16 180.34 180)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "94d7f7df-8433-4dfb-be13-2571644a830b")
+		(property "Reference" "TP21"
+			(at 137.16 187.198 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_CKI_IN"
+			(at 137.16 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 137.16 180.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://americanbrightled.com/products/rgb-ic-led-components/"
+			(at 137.16 180.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Beginning of LED chain: D3 CKI pin 5 after U7 level shifting. Compare against TP19 (D7 CKO)."
+			(at 137.16 180.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "ControlBoard2027"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/ee62a278-a94c-4411-ba4b-a0279340f73e"
+					(reference "TP21")
 					(unit 1)
 				)
 			)

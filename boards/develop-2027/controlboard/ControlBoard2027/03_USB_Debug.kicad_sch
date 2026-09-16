@@ -3650,15 +3650,57 @@
 		)
 		(uuid "6bfb0f64-312a-4eba-bb56-6d81cc6f9b47")
 	)
-	(text "R39/R40 22R damp ringing on the SWD cable (0R also works). They do not\nprotect against a mis-plugged 5V probe, so J3 must be keyed.\nU5 rail pin on +3V3 so an unplugged USB cable is detected.\nDESIGN_NOTES.md §7."
-		(at 199.39 156.21 0)
+	(wire
+		(pts
+			(xy 212.09 109.22)
+			(xy 219.71 109.22)
+		)
+		(uuid "b19c84ba-98b3-477b-9129-73bfbb3e4bdb")
+	)
+	(wire
+		(pts
+			(xy 212.09 114.3)
+			(xy 219.71 114.3)
+		)
+		(uuid "a2a8847d-9f8f-4798-ae58-049f03ac0d93")
+	)
+	(text "ROUTING - USB FS\nUSB_DP/USB_DM: 90R differential pair, length-matched within 1mm,\nover solid GND, no vias if possible, no stubs.\nJoin J2 A6/B6 and A7/B7 at the connector. U5 right at J2, then to PA11/PA12.\nR8/R9 near J2. SWD to J3 short."
+		(at 105.41 83.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
+				(bold yes)
+				(color 255 0 0 1)
 			)
 			(justify left bottom)
 		)
-		(uuid "b46ab7d9-2306-4c6f-9ad3-0d43c20e5631")
+		(uuid "e6f6c959-6ee4-4c22-b235-ac8c2b9e5afb")
+	)
+	(text "USB-C J2: TVS, FUSE, CC RESISTORS, ESD"
+		(at 60.96 71.12 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 132 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "5cabd68c-3fcf-4dfd-a283-05b4c8cf62ec")
+	)
+	(text "SWD DEBUG J3, RESET AND BOOT BUTTONS"
+		(at 191.77 91.44 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 132 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "15767f32-98c4-4ffb-bd4c-5cd4f851812b")
 	)
 	(label "USB_DP_CON"
 		(at 104.14 119.38 0)
@@ -3766,20 +3808,15 @@
 		)
 		(uuid "995b28f7-3951-438a-b949-1fa8fd012a11")
 	)
-  (text "ROUTING - USB FS\nUSB_DP/USB_DM: 90R differential pair, length-matched within 1mm,\nover solid GND, no vias if possible, no stubs.\nJoin J2 A6/B6 and A7/B7 at the connector. U5 right at J2, then to PA11/PA12.\nR8/R9 near J2. SWD to J3 short."
-    (at 105.41 83.82 0)
-    (effects (font (size 1.27 1.27) (bold yes) (color 255 0 0 1)) (justify left bottom))
-    (uuid "e6f6c959-6ee4-4c22-b235-ac8c2b9e5afb")
+  (text "SWD: R39/R40 removed; direct SWCLK/SWDIO connections.\nUse short GND-referenced probe wiring; start SWCLK at 1MHz.\nSeries damping is optional SI tuning, not required DC matching.\nNRST: internal 30-50k pull-up + C32 100nF (DS13313 section 6.3.17).\nJ3 must be keyed. U5 rail pin stays on +3V3."
+    (at 199.39 156.21 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "5b3ac294-32b5-404e-bcd4-889c876d17c9")
   )
-  (text "USB-C J2: TVS, FUSE, CC RESISTORS, ESD"
-    (at 60.96 71.12 0)
-    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
-    (uuid "5cabd68c-3fcf-4dfd-a283-05b4c8cf62ec")
-  )
-  (text "SWD DEBUG J3, RESET AND BOOT BUTTONS"
-    (at 191.77 91.44 0)
-    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
-    (uuid "15767f32-98c4-4ffb-bd4c-5cd4f851812b")
+  (text "USB POWER LIMIT: F1 holds 0.55A at 50C.\n~0.85A concurrent base + Wi-Fi + LEDs exceeds this.\nUse powerboard for full operation; USB bench mode restricted.\nA larger fuse alone does not increase allowed USB current."
+    (at 60.96 170.18 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "1eda0778-8ee5-4d0d-a5d7-8b15f89469bb")
   )
 	(symbol
 		(lib_id "power:GND")
@@ -4370,6 +4407,15 @@
 				)
 			)
 		)
+		(property "MPN" "ST USBLC6-2SC6"
+			(at 152.4 119.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "4"
@@ -4398,16 +4444,7 @@
 				)
 			)
 		)
-	
-		(property "MPN" "ST USBLC6-2SC6"
-			(at 152.4 119.38 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 101.6 110.49 0)
@@ -4618,7 +4655,7 @@
 				)
 			)
 		)
-		(property "Description" "USB VBUS PTC, 1812. Ihold 0.75A / Itrip 1.50A at 23C, 0.55A hold at 50C, 0.11-0.45 Ohm, 8A trips in 0.2s max (Bourns MF-MSMF Rev BD). Holds a USB 2.0 port's 0.5A and trips on a board or cable short. Motor modules on USB may trip it (DESIGN_NOTES.md §7)."
+		(property "Description" "Bourns MF-MSMF075/16X-2: 0.75A hold/1.5A trip at 23C; 0.55A hold at 50C. Retained for restricted USB bench use only. Estimated 0.85A concurrent board/radio/LED load exceeds hot hold and legacy USB allowance; see DESIGN_NOTES sections 4/7. Not an active current limiter."
 			(at 110.49 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -5207,85 +5244,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 215.9 109.22 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f73fc3d4-bb79-4014-bd14-5a4bbafbf01b")
-		(property "Reference" "R39"
-			(at 215.9 107.188 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "22R"
-			(at 215.9 109.22 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 215.9 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 215.9 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "22R series on SWCLK. Damps ringing on the probe cable and limits current into PA14 from ESD or a mis-plugged probe. SWD is slow, so the value is not critical; 0R also works."
-			(at 215.9 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "1"
-			(uuid "92c45acd-4600-4dcc-ba4b-2042fd4f96d9")
-		)
-		(pin "2"
-			(uuid "c1862ea1-6546-4728-8ad3-6aeb1d47447c")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/b44198b9-a21d-475d-9b21-d8da342bbbd1"
-					(reference "R39")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 226.06 116.84 270)
 		(unit 1)
@@ -5440,85 +5398,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 215.9 114.3 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "fe2f4cba-472f-47bf-a5f8-95d95857768f")
-		(property "Reference" "R40"
-			(at 215.9 112.268 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "22R"
-			(at 215.9 114.3 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 215.9 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 215.9 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "22R series on SWDIO. Same role as R39: cable ringing damping and PA13 protection at the SWD header."
-			(at 215.9 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "1"
-			(uuid "8eb95065-a413-4e24-b5d6-47f1966df0c6")
-		)
-		(pin "2"
-			(uuid "57649908-41f6-4d77-8591-b61aeb3af9c0")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/b44198b9-a21d-475d-9b21-d8da342bbbd1"
-					(reference "R40")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
 		(at 152.4 114.3 0)
 		(unit 1)
@@ -5632,15 +5511,6 @@
 				)
 			)
 		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/b44198b9-a21d-475d-9b21-d8da342bbbd1"
-					(reference "D12")
-					(unit 1)
-				)
-			)
-		)
-	
 		(property "MPN" "TI TVS0500DRVR"
 			(at 99.06 91.44 0)
 			(hide yes)
@@ -5649,7 +5519,16 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+		(instances
+			(project "ControlBoard2027"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/b44198b9-a21d-475d-9b21-d8da342bbbd1"
+					(reference "D12")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 99.06 83.82 180)

@@ -7,6 +7,10 @@ depends on, and the issues still open. Schematic notes point to sections here by
 Datasheets are the reference for every number. Where a value comes from a calculation,
 the inputs and the source table are given.
 
+2026-09-16 feedback revision: schematic edits made using Konnect. See
+`review/REVIEW.md` for changes, validation and remaining qualification work. This is
+a schematic review, not a finished PCB impedance or power qualification.
+
 **Contents**
 
 1. [Sources](#1-sources)
@@ -30,6 +34,7 @@ the inputs and the source table are given.
 | Tag | Document |
 |---|---|
 | DS13313 | STM32H723 datasheet |
+| AN5419 | STM32H723/733 hardware development, Rev 3; SDMMC routing §9.4.1 |
 | RM0468 | STM32H723 reference manual (st.com did not serve it during the audit) |
 | AN2606 | STM32 system bootloader, Rev 61, STM32H72x section (Tables 111/112) |
 | SLVSFG1A | TI TPS2116 power mux |
@@ -53,6 +58,8 @@ the inputs and the source table are given.
 | ESP-Hosted | Espressif esp-hosted-mcu, SPI full-duplex design |
 | V0.3 | ControlBoard_TestingV0.3 CubeMX report and clock tree |
 
+See `datasheets/SOURCES.md` for the local-reference inventory and official download URLs.
+
 Backup references in the repo: `nucleo/MB1364` (ST Nucleo-144 H7), `rev-2026/control-v4.1-stm32`,
 `drive-motorboard/motor-module`, `rev-2026/kicker-v3.4`, `daughterboard`.
 
@@ -68,7 +75,7 @@ The powerboard supplies 5V and 3V3 on J1. USB supplies 5V as a bench fallback.
 | +3V3_PB | Powerboard, after F3 | U2 VIN1 |
 | VBUS | USB, after F1 | U1 VIN2, U3 |
 | +3V3_LDO | U3 from VBUS | U2 VIN2 |
-| +5V | U1 output (powerboard, else USB) | DotStars, U7, motor connectors, F4 (+5V_EXT) |
+| +5V | U1 output (powerboard, else USB) | DotStars, U7, motor connectors, F4/F5/F6 (independent J10/J11/J12 feeds) |
 | +3V3 | U2 output (powerboard, else USB) | MCU, SD, IMU, OLED, pull-ups, motor 3V3, radio (J14) |
 
 The radio board (RadioBoard2027) and the DotStars run from the mux outputs, so both also work
@@ -119,7 +126,7 @@ covers the rail budget below.
 |---|---|---|
 | DotStars (capped by firmware, §10) | 250mA | - |
 | Motor modules J5-J9, logic only (motor power is separate) | not documented, measure | not documented, measure |
-| +5V_EXT (J10-J12, F4) | up to F4's 0.55A hold at 50°C | - |
+| J10-J12 via F4/F5/F6 | 0.55A combined allocation at 50°C; not 0.55A per port simultaneously | - |
 | Radio (TX peak 408mA) | - | 408mA peak |
 | MCU, SD, IMU, OLED | - | about 0.35A (§4) |
 | Fuse hold at 50°C | 0.95A | 0.95A |
@@ -226,14 +233,24 @@ needed (m9).
 
 ### Reset and boot
 R7 10k BOOT0 pull-down holds 0.15V at worst-case leakage against a 0.73V input-low limit.
-C32 100nF on NRST. SW2 pulls BOOT0 to 3V3 for DFU.
+C32 100nF on NRST. DS13313 Rev 5 §6.3.17, Table 57 specifies a permanent internal
+30–50k pull-up (40k typical); Figure 18 shows the 100nF capacitor. NRST therefore is
+not floating and no extra pull-up is required here. SW2 pulls BOOT0 to 3V3 for DFU.
 
 ### Other MCU-side parts
-- R41/R42 22Ω in series with PA5/PA7 (motor SPI SCK/MOSI) at the MCU. MISO has none.
+- R41/R42 30Ω in series with PA5/PA7 (motor SPI SCK/MOSI) at the MCU. MISO has none.
+  Standardized from 22Ω to the same initial assembly value as R63 after the follow-up
+  review. DS13313 Rev 5 Tables 52/54 specify output voltage/timing by load and drive
+  setting, not a constant 25Ω driver resistance; they do not prescribe a 30Ω resistor.
+  These are initial damping values, not guaranteed 55Ω source matches. PCB traces target
+  55Ω single-ended; tune series resistance using the actual driver, cable and loads.
+  The multidrop motor bus and point-to-point SD clock may ultimately need different
+  values. Qualify SCK ringing and MOSI setup/hold at all five motor connectors.
 - R61 47k / R62 68k divide VBUS to PA9, which firmware reads as a GPIO. The divider ratio is
   0.591: 2.60V at 4.4V VBUS (input-high threshold 2.31V, DS13313 Table 51), 3.10V at 5.25V.
   The pin's 4.0V abs max (with VDD off) is only reached at 6.77V VBUS. The divider sits on
-  VBUS after F1; F1 drops under 0.1V at normal load, well inside the threshold margin.
+  VBUS after F1; allow its specified resistance and hot operating drop in the margin
+  calculation (0.45Ω × 0.45A is already about 0.20V, before thermal changes).
 - R81 10k pull-up on PA15. The bootloader runs SPI3 as a slave on PC10-PC12 (the SD bus) with
   NSS on PA15 and no pull (AN2606 Table 111). Holding NSS high keeps SD activity from
   selecting SPI3 instead of USB DFU.
@@ -242,18 +259,24 @@ C32 100nF on NRST. SW2 pulls BOOT0 to 3V3 for DFU.
 
 ## 6. I2C pull-ups
 
-All buses run at 400kHz. One pull-up pair per bus, all on sheet 02.
+All buses run at 400kHz. One pull-up pair per bus, all on sheet 02. Different original
+values traded lower current on short on-board buses against faster rise time on cables.
+2.2k is a common workable starting value, not evidence that all buses have equal capacitance.
 
 | Bus | Pins | Pull-ups | Notes |
 |---|---|---|---|
-| IMU (I2C5) | PF0/PF1 | R16/R17 4.7k | Short on-board bus |
+| IMU (I2C5) | PF0/PF1 | R16/R17 2.2k | Short on-board bus; standardized value |
 | Kicker (I2C2) | PB10/PB11 | R30/R31 2.2k | Cabled |
 | Expansion (I2C4) | PF14/PF15 | R32/R33 2.2k | Cabled, J11 and J12 share it |
-| OLED (I2C1) | PB8/PB9 | R34/R35 3k | Module adds 10k |
+| OLED (I2C1) | PB8/PB9 | R34/R35 2.2k | Module adds 10k; effective pull-up about 1.8k |
 
-Fast mode allows a 300ns rise time and 3mA sink at 0.4V. Rise time = 0.8473 × Rp × Cb
-(SLVA689). With resistors at +5%, maximum bus capacitance is 72pF for 4.7k, 112pF for 3k and
-153pF for 2.2k. Minimum Rp = (3.66V - 0.4V) / 3mA = 1.09k.
+Fast mode requires a 300ns maximum rise time. For devices guaranteeing 3mA sink at
+0.4V, TI SLVA689 equations 1 and 6 give Rp(min) = (VDD(max) - 0.4V) / 3mA and
+tr = 0.8473 × Rp × Cb. At 3.6V maximum, Rp(min) = 1.067k. Standardizing at 2.2k
+gives 153pF capacitance budget with +5% resistor tolerance. The OLED module's assumed
+10k parallel pull-up gives about 1.8k nominal, still above that lower limit even at
+-5% tolerance. Verify the purchased module and every external slave's sink rating;
+measure actual rise times before approving 400kHz operation.
 
 The kicker and expansion buses may need 1.5k (236pF budget) once real cables are fitted.
 Measure SCL rise time at TP16/TP17 and change only if it exceeds 300ns. Expansion boards
@@ -276,16 +299,25 @@ must not add their own pull-ups.
 - F1 Bourns MF-MSMF075/16X-2 (1812): hold 0.75A / trip 1.50A at 23°C, 0.60A hold at 40°C and
   0.55A at 50°C, 0.11-0.45Ω, max 0.2s to trip at 8A, 16V. The plain MF-MSMF075 used before is
   marked not recommended for new designs in the Rev BD datasheet; the /16X version is current.
-  The hold current matches the 0.5A a USB 2.0 port supplies. The USB-only load is about 0.35A
-  plus the LEDs capped at 100mA (§10) plus the radio's Wi-Fi TX bursts (m22). A 1.5A trip opens on a board or cable short from any
-  port that can source it; a port with a lower limit shuts itself off first. Running motor
-  modules from USB can exceed the hold current and trip F1, which is intended: use the
-  powerboard for that.
+  This is NOT sufficient to approve unrestricted USB operation: estimated base 0.35A +
+  LED cap 0.10A + radio TX 0.403A is about 0.85A before motor/extension loads. Peak duration
+  and duty cycle affect PTC heating; a burst above hold does not prove immediate tripping.
+  Sustained full load exceeds the 0.55A hot hold rating and legacy USB 500mA allowance.
+  F1 remains unchanged for restricted bench use: disable radio TX and external loads,
+  enforce the source's allowed current, and measure base load/inrush first. CC pull-downs
+  alone do not detect an advertised 1.5A/3A source. A larger fuse alone is not a fix;
+  full USB operation requires source-current detection, enforced load/inrush budget and
+  LDO thermal qualification. Use the powerboard for full operation.
 - J3 SWD: 1 VTref, 2 SWCLK, 3 SWDIO, 4 GND, 5 NRST. Pins 1-4 match the motor-module cable.
   VTref ties straight to +3V3. Probes only sense VTref, so the series diode was removed. J3
   must be keyed: reversed, VTref and GND land on NRST.
-- R39/R40 22Ω on SWCLK/SWDIO damp cable ringing. They do not protect against a mis-plugged
-  5V probe. 0Ω also works.
+- R39/R40 removed and their nets wired directly. AN5419's SWJ reference connection does
+  not require series resistors. Damping can help particular cables, but is not mandatory
+  impedance matching. Use a short ground-referenced cable, start at 1MHz and qualify the
+  intended probe/speed. SWCLK's source is the probe; a board-side resistor is not its
+  source termination. J3 still has no protection against a mis-plugged 5V probe.
+- NRST has the STM32H7 internal pull-up and C32 (100nF) to GND. No external pull-up is fitted:
+  ST H7 guidance recommends the capacitor and cautions that an external pull-up is unnecessary.
 - SW1 reset. SW2 BOOT0 to 3V3. The ROM DFU uses HSI48 with CRS, so it needs neither the
   crystal nor VBUS sensing.
 
@@ -299,15 +331,27 @@ must not add their own pull-ups.
   J4 needs a custom footprint.
 - R10-R14 47k pull-ups on DAT0-3 and CMD, inside the SD range of 10-100k. Idle high is at
   least 2.79V against the card's 2.06V and the MCU's 2.31V input thresholds. CLK has none.
-- R63 22Ω in series with SDMMC_CK at the MCU (PC12). The pin's ~25Ω plus 22Ω matches a 50Ω
-  trace, so reflections are absorbed at the source instead of ringing into a false clock edge.
-  Edge time is about 1.9ns with about 26ns setup margin at 24MHz.
+- R63 30Ω in series with SDMMC_CK at the MCU (PC12), an initial clock-damping value.
+  The STM32 output is not a guaranteed fixed 25Ω resistor, so 30Ω does not establish a
+  verified 55Ω source match. Use the selected GPIO drive setting/IBIS model and measured
+  waveforms to tune it; no numerical edge-time or setup-margin guarantee is made here.
 - U14 TPD6E05U06RVZR on CLK (card side of R63), CMD and DAT0-3: VRWM 5.5V, 10nA leakage max,
   0.47pF per line (SLVSBO7O Table 4-3). Place at J4.
 - C33 10uF + C34 100nF at the card supply. Card VDD is not switchable (M18).
 - Clock: SDMMC kernel = PLL1Q = 48MHz, f = 48 / (2 × CLKDIV). CLKDIV 3 gives 8MHz for bring-up,
   CLKDIV 1 gives 24MHz, the fastest Default Speed setting (25MHz max).
-- TP11 is the SD clock at the card.
+- All SIX SD traces (CLK, CMD, DAT0-3) are specified at 55Ω single-ended, with an unbroken
+  ground reference and length mismatch within 1mm. This is a PCB geometry requirement,
+  not a 55Ω resistor value. AN5419 Rev 3 §9.4.1 specifies 50Ω ±10%, less than 10mm skew,
+  and less than 120mm length before termination. 55Ω is the upper boundary, so a fab's
+  nominal 55Ω ±10% process would not guarantee ST's range; confirm the actual stackup
+  and delivered tolerance before release, or revisit the target with the fabricator.
+- TP11 measures clock at the card. CMD and DAT0-3 retain direct connections and 47k
+  pull-ups for the proposed short, 24MHz bus. Pull-ups are NOT AC terminations. These
+  bidirectional lines can also need damping; direction alone is no reason to forbid it.
+  Qualify read AND write edges with actual lengths/loading and the selected card. Add/tune
+  series damping if that analysis needs it; blindly copying the clock resistor onto all
+  five lines is not a validated match. Routing has not yet been implemented on the empty PCB.
 
 ---
 
@@ -356,7 +400,8 @@ The same numbers are on the buttons sheet. The PTS820 datasheet could not be ret
 - Power comes from +5V, the U1 mux output, so the LEDs work on USB as well as the powerboard.
   The chain can draw 500mA at full white. Firmware caps the total LED current to about 250mA
   on the powerboard, keeping +5V inside F2's hold current (§3), and to about 100mA on USB
-  (PWR_SRC_5V low), keeping the board inside F1's hold current (§7). On USB, +5V can sit below the LEDs' 4.5V minimum (VBUS may be 4.40V
+  (PWR_SRC_5V low). This LED cap alone does not keep the whole board inside F1's hold
+  current when Wi-Fi transmits (§7). On USB, +5V can sit below the LEDs' 4.5V minimum (VBUS may be 4.40V
   at the device, before F1 and U1), so colours and data are only guaranteed on the powerboard.
 - U7 shares +5V with the LEDs, so it is powered whenever the MCU is. Its inputs are rated
   -0.5 to 7V regardless of VCC (SCLS264R).
@@ -374,6 +419,9 @@ The same numbers are on the buttons sheet. The PTS820 datasheet could not be ret
 - C45 100nF at U7, C40-C44 100nF one beside each LED, C51 22uF X5R/X7R ≥10V where +5V
   enters. Each LED can draw 0.5W (BB2020 p3), so 500mA for the chain.
 - TP18/TP19 on D7 SDO/CKO: valid data at the end of the chain proves all five LEDs pass it.
+- TP20/TP21 added at D3 SDI/CKI, after U7's level shifting. Compare beginning data/clock
+  against TP18/TP19 at the end to separate upstream drive faults from a broken chain.
+  Keep pad stubs short and use 5V-tolerant probes (BB2020 and SCLS264R).
 
 ---
 
@@ -384,14 +432,21 @@ JST S8B-PH-K-S, 2A per contact with AWG24. Order matches motor-module J2: 1 +5V,
 4 GND, 5 SCK, 6 MOSI, 7 MISO, 8 CS. J9 is the dribbler. R68-R72 10k CS pull-ups hold the modules
 deselected through reset. R74 100k pull-down on SCK. U10/U11 TPD4E05U06 ESD at the connectors.
 
-### I2C connectors J10-J12 and F4
-- J10 kicker I2C, J11/J12 expansion I2C: +5V_EXT, GND, SCL, SDA. U12 TPD4E05U06 protects SCL/SDA
+### I2C connectors J10-J12 and independent F4/F5/F6
+- J10 kicker I2C, J11/J12 expansion I2C: separately fused 5V, GND, SCL, SDA. U12 TPD4E05U06 protects SCL/SDA
   and must sit at the connectors, so J10-J12 stay together (m8).
-- F4 Bourns MF-MSMF075/16X-2 (same part as F1) feeds +5V_EXT from +5V: hold 0.75A (0.55A at
-  50°C), trip 1.50A. Its trip current is well below F2's 2.50A, so an overload between 1.5A
-  and 2.5A opens F4 and never F2. On a hard short F4 also trips faster (0.2s against 0.4s max
-  at 8A). +5V still dips while F4 heats, so a hard short can reset the board once before F4
-  opens. Expansion loads must stay under 0.55A total.
+- F4 feeds J10.1 on +5V_KICKER; new F5 feeds J11.1 on +5V_EXT1; new F6 feeds J12.1
+  on +5V_EXT2. Each input goes to +5V, with no shared downstream fused rail.
+- All three are Bourns MF-MSMF075/16X-2 (same as F1): hold 0.75A at 23°C, 0.55A at
+  50°C, trip 1.50A at 23°C, max 0.2s at the specified 8A test current. See MF-MSMF
+  electrical/thermal tables. Independent protection does not increase the total source
+  budget: retain 0.55A COMBINED external-load allocation pending M3 measurements.
+- A single tripped branch no longer directly removes power from the other two ports.
+  However PTC selectivity is not guaranteed by nominal trip currents or maximum trip
+  times alone; an upstream current limit, F2, or USB F1 may act first. Test hot/cold
+  shorts on each port with real source/cables. Rail sag can still reset healthy loads.
+  Guaranteed uninterrupted operation needs coordinated active per-port limiting.
+  J11/J12 also share I2C: a signal short can still block both even with separate fuses.
 
 ### J13 OLED (Adafruit 326)
 1 SDA, 2 SCL, 3 DC/SA0 to GND, 4 RST NC, 5 CS to GND, 6 3V3 out NC, 7 Vin +3V3, 8 GND. The
@@ -555,7 +610,7 @@ top or bottom view. Confirm with the vendor or a sample, then build the footprin
 **C2 CubeMX HSE setting.** V0.3 sets HSE to 48MHz with PLL1 /3 ×12. With the 25MHz crystal the VCO
 lands at 100MHz, below the 192MHz minimum. Apply the clock tree in §12.
 
-**C3 Footprints, MPNs and ratings.** 17 of 188 parts have a footprint and the PCB file is empty.
+**C3 Footprints, MPNs and ratings.** Most parts still lack footprints and the PCB file is empty.
 Capacitors need voltage and dielectric ratings (C51, C47, C55 X5R/X7R ≥10V). U7 must be ordered
 as SN74AHCT125PWR or DR; the D (tube) option is obsolete.
 
@@ -576,9 +631,9 @@ and mux drop (m3). 3.4V ±3% is still the preferred setpoint; with no clamp,
 the powerboard must never exceed 3.6V (STM32 VDD max).
 
 **M3 Rail budget.** F2 and F3 hold 0.95A at 50°C and trip at 2.5A (§3). On 5V, the DotStars
-(capped at 250mA) plus +5V_EXT (up to 0.55A) plus the motor-module logic must stay under 0.95A.
+(capped at 250mA) plus J10-J12 combined (up to 0.55A) plus the motor-module logic must stay under 0.95A.
 The module logic draw is undocumented; measure one module. If the budget does not fit, lower
-the LED cap or +5V_EXT allowance before choosing a larger fuse, because a larger fuse would no
+the LED cap or combined external-load allowance before choosing a larger fuse, because a larger fuse would no
 longer trip below the TPS2116 rating. The powerboard must source more than 2.5A per rail into
 a fault, or F2/F3 never trip and the powerboard's own limit is the protection.
 
@@ -642,7 +697,7 @@ that ignores CMD0 needs a board power cycle. Accepted to keep the circuit simple
 - **m11** PA2/PA3 share EXTI lines with PF2 and PF3; poll them.
 - **m12** PA4 (bootloader SPI1 NSS) is unconnected and floats in DFU. Nothing drives the motor
   SCK (R74 pull-down), so no SPI frame arrives and DFU still answers on USB.
-- **m14** R39/R40 do not protect against a 5V mis-plug on J3.
+- **m14** J3 has no protection against a 5V mis-plug; R39/R40 have been removed.
 - **m15** SW4-SW6 pad mapping is unverified (PTS820 datasheet unavailable). SW3 has no MPN.
 - **m16** BMI088 has no reset pin; firmware re-checks it after brown-out and runs I2C recovery.
 - **m17** AN2867, RM0468 and AN4879 were not available from st.com. VBUS is read as a GPIO, so the
@@ -655,11 +710,13 @@ that ignores CMD0 needs a board power cycle. Accepted to keep the circuit simple
   +3V3/+5V/GND next to power symbols.
 - **m21** KiCad ERC reports the VCAP pin tie as power output to power output. The tie is correct;
   exclude the violation in KiCad.
-- **m22** On USB alone the board draws more than the 100mA allowed before enumeration, and with
-  the radio transmitting it can exceed a USB 2.0 port's 500mA in bursts. Bench only; disable
-  Wi-Fi or use the powerboard if a port drops out.
+- **m22** USB unrestricted operation is NOT qualified. Estimated concurrent load is ~0.85A
+  before peripherals versus F1's 0.55A hot hold, and may exceed USB limits before/after
+  enumeration. Disable radio TX/external loads for restricted bench use; use the powerboard
+  for full operation. Resolve source-current detection, enforcement, inrush and thermal
+  budget before claiming compliant USB bus-powered operation (§7).
 - **m23** J2 and J4 shells float. ESD that hits a shell has no direct path to GND and couples
   into nearby traces. Keep signal copper away from the shell pads; U5, U14 and D12 still clamp
   the pins.
-- **m24** No fault reporting: a tripped F2/F3/F4 is only visible as a missing rail (PWR_SRC low
-  or dead +5V_EXT loads).
+- **m24** No fault reporting: a tripped F2/F3/F4/F5/F6 is only visible as a missing rail
+  (PWR_SRC low or a dead connector supply).

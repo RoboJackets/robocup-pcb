@@ -7442,20 +7442,10 @@
 		)
 		(uuid "fe6d64fe-bd92-4e75-9e51-66f5fbbcfde4")
 	)
-  (text "R41/R42 22R: source termination on motor SPI SCK/MOSI, damps ringing\nfrom the five cable drops. Tune on a scope. MISO has none.\nDESIGN_NOTES.md §5 (m4)."
-    (at 400.05 142.24 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "e3853d5a-b979-409a-a51e-8d72363ed636")
-  )
   (text "ROUTING - MOTOR SPI (6 Mbit/s, 5 drops)\nR41/R42 within 5mm of PA5/PA7, not at the connectors."
     (at 400.05 151.13 0)
     (effects (font (size 1.27 1.27) (bold yes) (color 255 0 0 1)) (justify left bottom))
     (uuid "c872ad77-c99b-44fc-b736-abbd4c2b5d36")
-  )
-  (text "I2C PULL-UPS - one pair per bus, all here\n   IMU        PF0/PF1     R16/R17  4.7k  on-board\n   KICKER     PB10/PB11   R30/R31  2.2k  cabled\n   EXPANSION  PF14/PF15   R32/R33  2.2k  cabled (no pull-ups on expansion boards)\n   OLED       PB8/PB9     R34/R35  3k    design doc\nCabled buses get stronger pull-ups to keep 400kHz rise times. DESIGN_NOTES.md §6."
-    (at 400.05 232.41 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "0291a6ca-5588-4d94-a3ab-153757b15262")
   )
   (text "ROUTING - HSE CRYSTAL\nX1, C49, C50 within 5mm of PH0/PH1.\nShort equal OSC traces, GND guard ring.\nNothing routed under or beside the loop."
     (at 184.15 181.61 0)
@@ -7481,6 +7471,16 @@
     (at 184.15 148.59 0)
     (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
     (uuid "1e902b63-60b0-4540-a05c-b89b005fbc6d")
+  )
+  (text "I2C PULL-UPS - all 2.2k, one pair per bus\nIMU R16/R17; kicker R30/R31; expansion R32/R33; OLED R34/R35.\nTI SLVA689: 153pF maximum at 400kHz and +5% R.\nOLED module 10k in parallel gives about 1.8k.\nMeasure loaded buses; no extra expansion-board pull-ups."
+    (at 400.05 232.41 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "b9d5201e-a60a-403a-b776-5776440cfe16")
+  )
+  (text "R41/R42 30R: motor SPI SCK/MOSI damping, same initial value as R63.\n55-ohm PCB traces do not imply an exact source match. MISO has none.\nQualify all five cable drops; DS13313 Tables 52/54; DESIGN_NOTES section 5."
+    (at 400.05 142.24 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "4ebcb592-3fae-453d-b6b7-4609edebb05d")
   )
 	(symbol
 		(lib_id "Device:C")
@@ -8845,7 +8845,7 @@
 				)
 			)
 		)
-		(property "Value" "3k"
+		(property "Value" "2.2k"
 			(at 368.3 187.96 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8866,7 +8866,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/an/slva689/slva689.pdf"
 			(at 368.3 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -8877,7 +8877,7 @@
 				)
 			)
 		)
-		(property "Description" "OLED I2C SDA pull-up, 3k per design doc."
+		(property "Description" "400kHz I2C pull-up, standardized 2.2k. TI SLVA689 equations 1 and 6: 153pF budget with +5% R; check actual capacitance and slave sink rating. OLED module 10k in parallel gives about 1.8k."
 			(at 368.3 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -9569,7 +9569,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/an/slva689/slva689.pdf"
 			(at 241.3 228.6 0)
 			(hide yes)
 			(show_name no)
@@ -9580,7 +9580,7 @@
 				)
 			)
 		)
-		(property "Description" "Expansion I2C SCL pull-up. See R30."
+		(property "Description" "400kHz I2C pull-up, standardized 2.2k. TI SLVA689 equations 1 and 6: 153pF budget with +5% R; check actual capacitance and slave sink rating. OLED module 10k in parallel gives about 1.8k."
 			(at 241.3 228.6 0)
 			(hide yes)
 			(show_name no)
@@ -9704,7 +9704,7 @@
 				)
 			)
 		)
-		(property "Value" "22R"
+		(property "Value" "30R"
 			(at 360.68 143.51 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9725,7 +9725,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32h723zg.pdf"
 			(at 360.68 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -9736,7 +9736,7 @@
 				)
 			)
 		)
-		(property "Description" "22R series termination on MOTOR_SPI_MOSI (PA7). Same role as R41: matches the driver to the ~50R line, cuts overshoot/ringing and EMI on the cabled bus. Within 5mm of PA7. MISO has none - the MCU receives it."
+		(property "Description" "30 ohm motor SPI source damping, standardized with R63 as an initial assembly value. DS13313 Rev 5 Tables 52/54 describe load/drive-dependent output behavior, not fixed 25 ohm output resistance. Target PCB traces 55 ohm; qualify five cable drops with IBIS/scope. Not a verified source match."
 			(at 360.68 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -10270,7 +10270,7 @@
 				)
 			)
 		)
-		(property "Value" "4.7k"
+		(property "Value" "2.2k"
 			(at 228.6 195.58 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10291,7 +10291,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/an/slva689/slva689.pdf"
 			(at 228.6 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -10302,7 +10302,7 @@
 				)
 			)
 		)
-		(property "Description" "IMU I2C SCL pull-up, on-board bus."
+		(property "Description" "400kHz I2C pull-up, standardized 2.2k. TI SLVA689 equations 1 and 6: 153pF budget with +5% R; check actual capacitance and slave sink rating. OLED module 10k in parallel gives about 1.8k."
 			(at 228.6 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -10511,7 +10511,7 @@
 				)
 			)
 		)
-		(property "Value" "22R"
+		(property "Value" "30R"
 			(at 360.68 138.43 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10532,7 +10532,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32h723zg.pdf"
 			(at 360.68 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -10543,7 +10543,7 @@
 				)
 			)
 		)
-		(property "Description" "22R series termination on MOTOR_SPI_SCK (PA5). Pin ~25R + 22R ~ 50R trace impedance, so edge reflections from the 5 motor cables are absorbed at the source instead of ringing back (a ring on SCK = false clock edge). Must sit within 5mm of PA5. Tune 0-47R on a scope (multidrop bus)."
+		(property "Description" "30 ohm motor SPI source damping, standardized with R63 as an initial assembly value. DS13313 Rev 5 Tables 52/54 describe load/drive-dependent output behavior, not fixed 25 ohm output resistance. Target PCB traces 55 ohm; qualify five cable drops with IBIS/scope. Not a verified source match."
 			(at 360.68 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -11012,7 +11012,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/an/slva689/slva689.pdf"
 			(at 378.46 190.5 0)
 			(hide yes)
 			(show_name no)
@@ -11023,7 +11023,7 @@
 				)
 			)
 		)
-		(property "Description" "Kicker I2C SCL pull-up. 2.2k for cable capacitance (4.7k/100pF = 400ns > 300ns)."
+		(property "Description" "400kHz I2C pull-up, standardized 2.2k. TI SLVA689 equations 1 and 6: 153pF budget with +5% R; check actual capacitance and slave sink rating. OLED module 10k in parallel gives about 1.8k."
 			(at 378.46 190.5 0)
 			(hide yes)
 			(show_name no)
@@ -11249,7 +11249,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/an/slva689/slva689.pdf"
 			(at 228.6 231.14 0)
 			(hide yes)
 			(show_name no)
@@ -11260,7 +11260,7 @@
 				)
 			)
 		)
-		(property "Description" "Expansion I2C SDA pull-up. See R30."
+		(property "Description" "400kHz I2C pull-up, standardized 2.2k. TI SLVA689 equations 1 and 6: 153pF budget with +5% R; check actual capacitance and slave sink rating. OLED module 10k in parallel gives about 1.8k."
 			(at 228.6 231.14 0)
 			(hide yes)
 			(show_name no)
@@ -11546,7 +11546,7 @@
 				)
 			)
 		)
-		(property "Value" "4.7k"
+		(property "Value" "2.2k"
 			(at 241.3 193.04 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11567,7 +11567,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/an/slva689/slva689.pdf"
 			(at 241.3 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -11578,7 +11578,7 @@
 				)
 			)
 		)
-		(property "Description" "IMU I2C SDA pull-up, on-board bus."
+		(property "Description" "400kHz I2C pull-up, standardized 2.2k. TI SLVA689 equations 1 and 6: 153pF budget with +5% R; check actual capacitance and slave sink rating. OLED module 10k in parallel gives about 1.8k."
 			(at 241.3 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -11885,7 +11885,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/an/slva689/slva689.pdf"
 			(at 388.62 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -11896,7 +11896,7 @@
 				)
 			)
 		)
-		(property "Description" "Kicker I2C SDA pull-up. See R30."
+		(property "Description" "400kHz I2C pull-up, standardized 2.2k. TI SLVA689 equations 1 and 6: 153pF budget with +5% R; check actual capacitance and slave sink rating. OLED module 10k in parallel gives about 1.8k."
 			(at 388.62 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -13245,7 +13245,7 @@
 				)
 			)
 		)
-		(property "Value" "3k"
+		(property "Value" "2.2k"
 			(at 358.14 185.42 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13266,7 +13266,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/an/slva689/slva689.pdf"
 			(at 358.14 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -13277,7 +13277,7 @@
 				)
 			)
 		)
-		(property "Description" "OLED I2C SCL pull-up, 3k per design doc."
+		(property "Description" "400kHz I2C pull-up, standardized 2.2k. TI SLVA689 equations 1 and 6: 153pF budget with +5% R; check actual capacitance and slave sink rating. OLED module 10k in parallel gives about 1.8k."
 			(at 358.14 185.42 0)
 			(hide yes)
 			(show_name no)
