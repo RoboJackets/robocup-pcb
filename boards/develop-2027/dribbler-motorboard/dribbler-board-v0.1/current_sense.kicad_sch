@@ -1216,121 +1216,6 @@
 		(uuid "cee4b4ff-0c18-47fa-badd-ca2c0b31d09e")
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 161.29 77.47 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "027e2269-655b-4fbe-b314-cb9083da6f7f")
-		(property "Reference" "C2"
-			(at 165.1 76.1999 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 165.1 78.7399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 162.2552 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/503/CL05A104KA5NNNC.pdf"
-			(at 161.29 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 161.29 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer P/N" "CL05A104KA5NNNC"
-			(at 161.29 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor" "DigiKey"
-			(at 161.29 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor P/N" "1276-1043-1-ND "
-			(at 161.29 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "25e21164-e11d-4e96-b295-04c01b598646")
-		)
-		(pin "2"
-			(uuid "023c004c-5a19-415e-ab35-581ed35070a8")
-		)
-		(instances
-			(project "integration-test"
-				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/a5292b11-b9f3-47b5-82b7-15b9f4351b45"
-					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 161.29 83.82 0)
 		(unit 1)
@@ -1342,7 +1227,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1b80288a-41ed-415f-89ab-beba944d646b")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR061"
 			(at 161.29 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -1402,7 +1287,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/a5292b11-b9f3-47b5-82b7-15b9f4351b45"
-					(reference "#PWR04")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -1420,7 +1305,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "229da6ff-0094-41af-a762-26b96f3a3fc7")
-		(property "Reference" "R5"
+		(property "Reference" "R29"
 			(at 87.63 69.8499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1517,7 +1402,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/a5292b11-b9f3-47b5-82b7-15b9f4351b45"
-					(reference "R5")
+					(reference "R29")
 					(unit 1)
 				)
 			)
@@ -1535,7 +1420,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "24a9570d-11dc-44af-a6ce-5dd340ba1d03")
-		(property "Reference" "R3"
+		(property "Reference" "R28"
 			(at 104.14 58.42 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1630,7 +1515,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/a5292b11-b9f3-47b5-82b7-15b9f4351b45"
-					(reference "R3")
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -1648,7 +1533,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2942c951-b51d-41ac-a6f4-1ca8aab43190")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR060"
 			(at 85.09 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -1708,7 +1593,122 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/a5292b11-b9f3-47b5-82b7-15b9f4351b45"
-					(reference "#PWR02")
+					(reference "#PWR060")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 161.29 77.47 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2c35cd38-c200-437b-a6c6-7bf3e792270c")
+		(property "Reference" "C18"
+			(at 165.1 76.1999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n 25V"
+			(at 165.1 78.7399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 162.2552 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/503/CL05A104KA5NNNC.pdf"
+			(at 161.29 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 161.29 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "CL05A104KA5NNNC"
+			(at 161.29 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 161.29 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "1276-1043-1-ND "
+			(at 161.29 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b8b0ea9a-cae8-46ef-a9bb-f640eeca3f1b")
+		)
+		(pin "2"
+			(uuid "dc772f9c-47e3-405c-89ab-f0110d615bc4")
+		)
+		(instances
+			(project "integration-test"
+				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/a5292b11-b9f3-47b5-82b7-15b9f4351b45"
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -1726,7 +1726,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "388359b7-f0ce-46b6-a6fe-598c8efd9af9")
-		(property "Reference" "R7"
+		(property "Reference" "R31"
 			(at 66.04 71.12 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1821,7 +1821,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/a5292b11-b9f3-47b5-82b7-15b9f4351b45"
-					(reference "R7")
+					(reference "R31")
 					(unit 1)
 				)
 			)
@@ -1839,7 +1839,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "47d31cae-7ce5-457a-b631-5c9f8b13e675")
-		(property "Reference" "TP1"
+		(property "Reference" "TP24"
 			(at 176.53 64.0079 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1933,7 +1933,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/a5292b11-b9f3-47b5-82b7-15b9f4351b45"
-					(reference "TP1")
+					(reference "TP24")
 					(unit 1)
 				)
 			)
@@ -1951,7 +1951,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5808f860-ee50-4ffa-9fa3-5d6c723a660e")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR062"
 			(at 85.09 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -2011,7 +2011,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/a5292b11-b9f3-47b5-82b7-15b9f4351b45"
-					(reference "#PWR05")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -2029,7 +2029,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9e1d9775-41fd-4beb-bd96-f2c6b674675d")
-		(property "Reference" "R1"
+		(property "Reference" "R27"
 			(at 129.54 45.72 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2124,7 +2124,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/a5292b11-b9f3-47b5-82b7-15b9f4351b45"
-					(reference "R1")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -2142,7 +2142,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ac6f70f1-3c7d-4662-84c2-1d6dfc598984")
-		(property "Reference" "R9"
+		(property "Reference" "R32"
 			(at 87.63 82.5499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2239,7 +2239,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/a5292b11-b9f3-47b5-82b7-15b9f4351b45"
-					(reference "R9")
+					(reference "R32")
 					(unit 1)
 				)
 			)
@@ -2257,7 +2257,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d3b61f90-dc28-4bfb-a82f-d278a751a3b1")
-		(property "Reference" "R6"
+		(property "Reference" "R30"
 			(at 154.94 64.77 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2352,7 +2352,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9/a5292b11-b9f3-47b5-82b7-15b9f4351b45"
-					(reference "R6")
+					(reference "R30")
 					(unit 1)
 				)
 			)

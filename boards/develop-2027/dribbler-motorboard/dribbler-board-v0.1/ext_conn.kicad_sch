@@ -2055,7 +2055,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "02e617e4-314b-417d-921a-545a40ba6861")
-		(property "Reference" "TP30"
+		(property "Reference" "TP21"
 			(at 76.835 20.8279 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2149,7 +2149,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/70ef40bf-13ae-49a6-b679-701b94f13188"
-					(reference "TP30")
+					(reference "TP21")
 					(unit 1)
 				)
 			)
@@ -2167,7 +2167,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1be050b2-56e6-4b4b-9759-11b1931bdeb2")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR047"
 			(at 33.02 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -2227,7 +2227,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/70ef40bf-13ae-49a6-b679-701b94f13188"
-					(reference "#PWR052")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -2245,7 +2245,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2e7e143f-fcfc-4db2-8b9d-6e0aa929a23d")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR048"
 			(at 50.8 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -2305,7 +2305,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/70ef40bf-13ae-49a6-b679-701b94f13188"
-					(reference "#PWR053")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -2323,7 +2323,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "30934f19-f42e-417f-a2b6-3042e1ee3432")
-		(property "Reference" "TP28"
+		(property "Reference" "TP19"
 			(at 59.055 20.8279 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2417,7 +2417,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/70ef40bf-13ae-49a6-b679-701b94f13188"
-					(reference "TP28")
+					(reference "TP19")
 					(unit 1)
 				)
 			)
@@ -2435,7 +2435,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "311165d6-0c0c-4c64-8b85-d210f26a498e")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR046"
 			(at 33.02 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -2495,7 +2495,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/70ef40bf-13ae-49a6-b679-701b94f13188"
-					(reference "#PWR050")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -2513,7 +2513,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3bb0ca1e-daa3-42a6-a48f-c7fb5708d061")
-		(property "Reference" "TP29"
+		(property "Reference" "TP20"
 			(at 67.945 20.8279 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2607,7 +2607,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/70ef40bf-13ae-49a6-b679-701b94f13188"
-					(reference "TP29")
+					(reference "TP20")
 					(unit 1)
 				)
 			)
@@ -2625,7 +2625,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3c0da726-b73c-466f-b6ff-90c8edd42e0c")
-		(property "Reference" "TP27"
+		(property "Reference" "TP18"
 			(at 50.165 20.8279 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2719,7 +2719,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/70ef40bf-13ae-49a6-b679-701b94f13188"
-					(reference "TP27")
+					(reference "TP18")
 					(unit 1)
 				)
 			)
@@ -2737,7 +2737,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4a00138e-7433-400a-8c73-c511c2617315")
-		(property "Reference" "R49"
+		(property "Reference" "R20"
 			(at 92.71 25.3999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2814,7 +2814,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "RMCF0402FT10K0CT-ND"
+		(property "Vendor P/N" "311-10KJRCT-ND"
 			(at 90.17 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -2834,7 +2834,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/70ef40bf-13ae-49a6-b679-701b94f13188"
-					(reference "R49")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -3096,7 +3096,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f15c6333-634d-4492-88c3-c33571776147")
-		(property "Reference" "D11"
+		(property "Reference" "D10"
 			(at 57.15 99.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3214,7 +3214,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/70ef40bf-13ae-49a6-b679-701b94f13188"
-					(reference "D11")
+					(reference "D10")
 					(unit 1)
 				)
 			)

@@ -910,7 +910,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "12611ec8-c3cc-4ba0-bb5c-37283dee86ec")
-		(property "Reference" "J4"
+		(property "Reference" "J7"
 			(at 123.19 95.2499 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -999,7 +999,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/cc6a8bde-954b-4921-aec8-fe00d52ae8d8"
-					(reference "J4")
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -1017,7 +1017,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1a522db8-ce25-4df6-8900-ae39de681780")
-		(property "Reference" "J7"
+		(property "Reference" "J6"
 			(at 123.19 88.8999 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1106,7 +1106,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/cc6a8bde-954b-4921-aec8-fe00d52ae8d8"
-					(reference "J7")
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -1124,7 +1124,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "21bfb5ff-fccd-4871-b559-42bc5d1849f8")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR065"
 			(at 120.65 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -1184,7 +1184,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/cc6a8bde-954b-4921-aec8-fe00d52ae8d8"
-					(reference "#PWR029")
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -1202,7 +1202,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2403f0e9-4532-44b0-9923-08ee2b16a1dd")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR064"
 			(at 115.57 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -1262,7 +1262,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/cc6a8bde-954b-4921-aec8-fe00d52ae8d8"
-					(reference "#PWR030")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -1280,7 +1280,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "727f5370-8e89-4015-b934-bafd9202fe27")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR063"
 			(at 100.33 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -1340,7 +1340,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/cc6a8bde-954b-4921-aec8-fe00d52ae8d8"
-					(reference "#PWR028")
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -1462,7 +1462,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ddd22f58-9810-497a-8809-6fd34f892a2a")
-		(property "Reference" "R13"
+		(property "Reference" "R33"
 			(at 106.68 96.52 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1526,7 +1526,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "RMCF0402FT10K0CT-ND"
+		(property "Vendor P/N" "311-10KJRCT-ND"
 			(at 106.68 102.87 90)
 			(hide yes)
 			(show_name no)
@@ -1546,7 +1546,7 @@
 		(instances
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/cc6a8bde-954b-4921-aec8-fe00d52ae8d8"
-					(reference "R13")
+					(reference "R33")
 					(unit 1)
 				)
 			)

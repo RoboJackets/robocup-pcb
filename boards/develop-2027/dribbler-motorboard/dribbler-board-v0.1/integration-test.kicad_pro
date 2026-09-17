@@ -609,19 +609,19 @@
           "group_by": false,
           "label": "Qty",
           "name": "${QUANTITY}",
-          "show": false
+          "show": true
         },
         {
           "group_by": true,
           "label": "Value",
           "name": "Value",
-          "show": false
+          "show": true
         },
         {
           "group_by": true,
           "label": "DNP",
           "name": "${DNP}",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -639,7 +639,7 @@
           "group_by": false,
           "label": "Footprint",
           "name": "Footprint",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -663,7 +663,7 @@
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -740,7 +740,7 @@
         "uuid": "2f9570f4-e846-4a86-b134-ae7438cb1d91"
       }
     ],
-    "used_designators": "#PWR30,D10,J4,J7",
+    "used_designators": "L1,#PWR1-65,D1-12,R1-33,#FLG1-4,J1-7,C1-18,F1,H1-4,Q1-6,SW1,TH1,TP1-24,U1-3",
     "variants": []
   },
   "sheets": [
