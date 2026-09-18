@@ -1917,7 +1917,7 @@
 		)
 		(uuid "ffe2eeaf-c982-4ca5-932b-0ef832410b38")
 	)
-	(label "SWD.CLK"
+	(label "SWD.IO"
 		(at 33.02 87.63 0)
 		(effects
 			(font
@@ -1925,7 +1925,17 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "4b7cb4c4-63aa-4d8f-b9bf-e2c23ee58762")
+		(uuid "3332190a-af8d-417a-a2d5-b35ddd116329")
+	)
+	(label "SWD.CLK"
+		(at 33.02 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "51a5599c-6085-4292-8be6-49c92ee3abf7")
 	)
 	(label "SPI.MISO"
 		(at 33.655 38.1 0)
@@ -1956,16 +1966,6 @@
 			(justify left bottom)
 		)
 		(uuid "d23ec004-8b89-4832-b4a4-0ef6034c194f")
-	)
-	(label "SWD.IO"
-		(at 33.02 90.17 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e9b32c53-9431-4db7-b5a4-f32ec316dbfd")
 	)
 	(label "SPI.MOSI"
 		(at 33.655 40.64 0)
