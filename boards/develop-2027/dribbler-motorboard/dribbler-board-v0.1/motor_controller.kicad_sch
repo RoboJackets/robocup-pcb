@@ -8917,12 +8917,6 @@
 		(uuid "97603761-cace-479c-81cd-22d838323d8f")
 	)
 	(junction
-		(at 44.45 182.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9dac7d73-e32b-459e-9bff-3296f69332fe")
-	)
-	(junction
 		(at 107.95 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8933,12 +8927,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "abb424d7-c859-490c-ab9d-346abd8beac9")
-	)
-	(junction
-		(at 44.45 153.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "aeea04f4-5d23-495d-9a44-9e733d1c5119")
 	)
 	(junction
 		(at 36.83 55.88)
@@ -8957,12 +8945,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bb64f5b7-246b-42b4-aaf1-c39e6f059333")
-	)
-	(junction
-		(at 44.45 124.46)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c406c2d0-667a-432b-8e28-3b05cb5f4988")
 	)
 	(junction
 		(at 105.41 161.29)
@@ -9119,16 +9101,6 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 144.78) (xy 44.45 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "00dccedf-5814-4541-bbe5-08a7fe7eaff6")
-	)
-	(wire
-		(pts
 			(xy 66.04 120.65) (xy 66.04 129.54)
 		)
 		(stroke
@@ -9186,16 +9158,6 @@
 			(type default)
 		)
 		(uuid "0b4f4754-f736-4555-b27e-2c3a72554d0f")
-	)
-	(wire
-		(pts
-			(xy 39.37 182.88) (xy 44.45 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0c6eb625-d3bf-4c6e-ae66-9d1658378ba9")
 	)
 	(wire
 		(pts
@@ -9379,6 +9341,16 @@
 	)
 	(wire
 		(pts
+			(xy 44.45 123.19) (xy 44.45 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "283ec734-7a10-474b-87bc-c50bb16145fc")
+	)
+	(wire
+		(pts
 			(xy 172.72 185.42) (xy 171.45 185.42)
 		)
 		(stroke
@@ -9409,7 +9381,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 182.88) (xy 57.15 182.88)
+			(xy 39.37 182.88) (xy 57.15 182.88)
 		)
 		(stroke
 			(width 0)
@@ -9669,16 +9641,6 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 115.57) (xy 44.45 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "57740890-3b2d-4b2d-b18f-27a34956a62f")
-	)
-	(wire
-		(pts
 			(xy 50.8 161.29) (xy 44.45 161.29)
 		)
 		(stroke
@@ -9689,13 +9651,13 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 173.99) (xy 44.45 175.26)
+			(xy 44.45 181.61) (xy 44.45 185.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "59433b8f-01a4-4943-b8b5-d84e99b7281c")
+		(uuid "5921c748-d633-41d7-acd1-b69462f2f726")
 	)
 	(wire
 		(pts
@@ -9776,6 +9738,16 @@
 			(type default)
 		)
 		(uuid "69e8bc58-b322-4e37-8c40-c9127f37563a")
+	)
+	(wire
+		(pts
+			(xy 44.45 152.4) (xy 44.45 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b9c46d4-b510-4a23-b145-b38743dafca3")
 	)
 	(bus
 		(pts
@@ -10279,23 +10251,13 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 153.67) (xy 44.45 153.67)
+			(xy 39.37 153.67) (xy 57.15 153.67)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "bd8f43e6-bb23-4fc6-8cb9-647d82e54509")
-	)
-	(wire
-		(pts
-			(xy 44.45 153.67) (xy 57.15 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bef4ccea-81d6-42f6-bb6b-3c207af5a1b2")
 	)
 	(wire
 		(pts
@@ -10329,7 +10291,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 124.46) (xy 44.45 124.46)
+			(xy 39.37 124.46) (xy 57.15 124.46)
 		)
 		(stroke
 			(width 0)
@@ -10456,16 +10418,6 @@
 			(type default)
 		)
 		(uuid "d89364e5-d616-49c9-964c-0e8816a62e0d")
-	)
-	(wire
-		(pts
-			(xy 44.45 124.46) (xy 57.15 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d987c527-d081-428f-8e54-e954b730899a")
 	)
 	(wire
 		(pts
@@ -11010,7 +10962,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 44.45 179.07 0)
+		(at 44.45 177.8 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11021,7 +10973,7 @@
 		(fields_autoplaced yes)
 		(uuid "089df57a-f16a-40b9-9577-50e01cb66a43")
 		(property "Reference" "C12"
-			(at 48.26 177.7999 0)
+			(at 48.26 176.5299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11032,7 +10984,7 @@
 			)
 		)
 		(property "Value" "1u 63V"
-			(at 48.26 180.3399 0)
+			(at 48.26 179.0699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11043,7 +10995,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 45.4152 182.88 0)
+			(at 45.4152 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11054,7 +11006,7 @@
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188D72A105KE01-01A.pdf"
-			(at 44.45 179.07 0)
+			(at 44.45 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11065,7 +11017,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 44.45 179.07 0)
+			(at 44.45 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11076,7 +11028,7 @@
 			)
 		)
 		(property "Manufacturer P/N" "GRM188D72A105KE01J"
-			(at 44.45 179.07 0)
+			(at 44.45 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11087,7 +11039,7 @@
 			)
 		)
 		(property "Vendor" "DigiKey"
-			(at 44.45 179.07 0)
+			(at 44.45 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11098,7 +11050,7 @@
 			)
 		)
 		(property "Vendor P/N" "490-GRM188D72A105KE01JCT-ND"
-			(at 44.45 179.07 0)
+			(at 44.45 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16500,7 +16452,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 44.45 149.86 0)
+		(at 44.45 148.59 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16511,7 +16463,7 @@
 		(fields_autoplaced yes)
 		(uuid "e4971244-0e8a-40f7-9e52-5f062cfa236e")
 		(property "Reference" "C11"
-			(at 48.26 148.5899 0)
+			(at 48.26 147.3199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16522,7 +16474,7 @@
 			)
 		)
 		(property "Value" "1u 63V"
-			(at 48.26 151.1299 0)
+			(at 48.26 149.8599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16533,7 +16485,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 45.4152 153.67 0)
+			(at 45.4152 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16544,7 +16496,7 @@
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188D72A105KE01-01A.pdf"
-			(at 44.45 149.86 0)
+			(at 44.45 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16555,7 +16507,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 44.45 149.86 0)
+			(at 44.45 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16566,7 +16518,7 @@
 			)
 		)
 		(property "Manufacturer P/N" "GRM188D72A105KE01J"
-			(at 44.45 149.86 0)
+			(at 44.45 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16577,7 +16529,7 @@
 			)
 		)
 		(property "Vendor" "DigiKey"
-			(at 44.45 149.86 0)
+			(at 44.45 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16588,7 +16540,7 @@
 			)
 		)
 		(property "Vendor P/N" "490-GRM188D72A105KE01JCT-ND"
-			(at 44.45 149.86 0)
+			(at 44.45 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17178,7 +17130,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 44.45 120.65 0)
+		(at 44.45 119.38 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17189,7 +17141,7 @@
 		(fields_autoplaced yes)
 		(uuid "f5c0fed6-f246-4ecf-8e88-070f174fbed1")
 		(property "Reference" "C9"
-			(at 48.26 119.3799 0)
+			(at 48.26 118.1099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17200,7 +17152,7 @@
 			)
 		)
 		(property "Value" "1u 63V"
-			(at 48.26 121.9199 0)
+			(at 48.26 120.6499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17211,7 +17163,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 45.4152 124.46 0)
+			(at 45.4152 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17222,7 +17174,7 @@
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188D72A105KE01-01A.pdf"
-			(at 44.45 120.65 0)
+			(at 44.45 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17233,7 +17185,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 44.45 120.65 0)
+			(at 44.45 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17244,7 +17196,7 @@
 			)
 		)
 		(property "Manufacturer P/N" "GRM188D72A105KE01J"
-			(at 44.45 120.65 0)
+			(at 44.45 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17255,7 +17207,7 @@
 			)
 		)
 		(property "Vendor" "DigiKey"
-			(at 44.45 120.65 0)
+			(at 44.45 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17266,7 +17218,7 @@
 			)
 		)
 		(property "Vendor P/N" "490-GRM188D72A105KE01JCT-ND"
-			(at 44.45 120.65 0)
+			(at 44.45 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
