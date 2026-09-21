@@ -621,7 +621,7 @@
           "group_by": true,
           "label": "DNP",
           "name": "${DNP}",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -657,7 +657,7 @@
           "group_by": false,
           "label": "Manufacturer P/N",
           "name": "Manufacturer P/N",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -669,7 +669,7 @@
           "group_by": false,
           "label": "Description",
           "name": "Description",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -740,7 +740,7 @@
         "uuid": "2f9570f4-e846-4a86-b134-ae7438cb1d91"
       }
     ],
-    "used_designators": "L1,#PWR1-65,D1-12,R1-33,#FLG1-4,J1-7,C1-18,F1,H1-4,Q1-6,SW1,TH1,TP1-24,U1-3",
+    "used_designators": "J5,J8",
     "variants": []
   },
   "sheets": [
