@@ -121,7 +121,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "todo next:\n- do all the todos listed around the sheet\n- add connectors for connecting to other boards\n- add part numbers for everything"
+	(text "todo next:\n- do all the todos listed around the sheet\n- add connectors for connecting to other boards\n- determine ratings for all components\n- add part numbers for everything"
 		(exclude_from_sim no)
 		(at 48.768 156.21 0)
 		(effects
@@ -167,6 +167,16 @@
 			(type default)
 		)
 		(uuid "1b05f10e-5b3b-40f4-a170-b3af0bdbd83e")
+	)
+	(wire
+		(pts
+			(xy 71.12 132.08) (xy 215.9 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25f3a52d-d0cb-4dc7-a9db-17e24820f44f")
 	)
 	(wire
 		(pts
@@ -230,16 +240,6 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 67.31) (xy 215.9 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "792734ff-a4e4-4e52-bdbc-87d71f38be4f")
-	)
-	(wire
-		(pts
 			(xy 71.12 96.52) (xy 82.55 96.52)
 		)
 		(stroke
@@ -290,6 +290,16 @@
 	)
 	(wire
 		(pts
+			(xy 137.16 69.85) (xy 215.9 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e043a361-42b6-431e-bf1b-de5b1ff29ff1")
+	)
+	(wire
+		(pts
 			(xy 215.9 99.06) (xy 182.88 99.06)
 		)
 		(stroke
@@ -310,13 +320,13 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 69.85) (xy 215.9 69.85)
+			(xy 137.16 67.31) (xy 215.9 67.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f96bdf4a-bf21-4d93-ba8c-718c48b47611")
+		(uuid "f95b7ea3-e5db-4d53-a06e-fdb75040091f")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -494,29 +504,39 @@
 				(justify left)
 			)
 		)
-		(pin "I2C_SCL" bidirectional
-			(at 215.9 69.85 180)
-			(uuid "9ee91ee5-fc85-4a4f-9da5-518481131bfe")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "I2C_SDA" bidirectional
-			(at 215.9 67.31 180)
-			(uuid "0cf6c2bc-4076-4190-8aed-d40011d8096d")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "VBAT_FUSED" input
+		(pin "RAIL_BAT" input
 			(at 215.9 45.72 180)
-			(uuid "e27dfff1-7826-48a3-886a-b3bd7810c41c")
+			(uuid "9cce70f1-fec4-4809-874a-77a8a26eb89b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "UART_RX" output
+			(at 215.9 69.85 180)
+			(uuid "b3ba11a1-8fbb-4dd2-aaf2-af434781d669")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "UART_TX" input
+			(at 215.9 67.31 180)
+			(uuid "f9d13798-bbb6-490a-8f45-071731c9b689")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "3V3_DEBUG" output
+			(at 215.9 132.08 180)
+			(uuid "6fb93b8b-4ab2-43ba-b8e2-7f5dc88ce1c1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -533,8 +553,8 @@
 		)
 	)
 	(sheet
-		(at 82.55 64.77)
-		(size 54.61 53.34)
+		(at 82.55 55.88)
+		(size 54.61 62.23)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -549,7 +569,7 @@
 		)
 		(uuid "71f9ccf2-01cf-47d9-b25c-170e05250cb5")
 		(property "Sheetname" "MCU"
-			(at 82.55 64.0584 0)
+			(at 82.55 55.1684 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -660,9 +680,9 @@
 				(justify left)
 			)
 		)
-		(pin "I2C_SCL0" bidirectional
+		(pin "UART1_RX" input
 			(at 137.16 69.85 0)
-			(uuid "860b25b9-6ab3-4b95-bf3f-9cc3e262ac96")
+			(uuid "db503054-ce33-44dd-86c1-a13f768da5bf")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -670,9 +690,9 @@
 				(justify right)
 			)
 		)
-		(pin "I2C_SDA0" bidirectional
+		(pin "UART1_TX" output
 			(at 137.16 67.31 0)
-			(uuid "3327fd67-9b55-4d37-8581-589255895b7a")
+			(uuid "8e7bf161-2d3a-417d-ba1d-dd356209e3ae")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -690,7 +710,7 @@
 	)
 	(sheet
 		(at 29.21 43.18)
-		(size 41.91 74.93)
+		(size 41.91 102.87)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -716,7 +736,7 @@
 			)
 		)
 		(property "Sheetfile" "power_management.kicad_sch"
-			(at 29.21 118.6946 0)
+			(at 29.21 146.6346 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -724,16 +744,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
-			)
-		)
-		(pin "VBAT_FUSED" output
-			(at 71.12 45.72 0)
-			(uuid "3d0c7a74-432e-48fa-baa3-555fd827c7c1")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 		(pin "I_SENSE_3V3" output
@@ -769,6 +779,26 @@
 		(pin "I_SENSE_12V" output
 			(at 71.12 99.06 0)
 			(uuid "e24e7090-5964-45a3-8eff-414f3c4d9f81")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RAIL_BAT" output
+			(at 71.12 45.72 0)
+			(uuid "08ad18e7-f7ec-4644-b518-c5de2672113f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "3.3V_DEBUG" input
+			(at 71.12 132.08 0)
+			(uuid "5ba6aeb8-33e5-4be8-a80e-8f5231ec9db6")
 			(effects
 				(font
 					(size 1.27 1.27)

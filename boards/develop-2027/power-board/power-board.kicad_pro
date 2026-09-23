@@ -576,6 +576,12 @@
         },
         {
           "group_by": true,
+          "label": "Footprint",
+          "name": "Footprint",
+          "show": true
+        },
+        {
+          "group_by": true,
           "label": "DNP",
           "name": "${DNP}",
           "show": true
@@ -590,12 +596,6 @@
           "group_by": true,
           "label": "Exclude from Board",
           "name": "${EXCLUDE_FROM_BOARD}",
-          "show": true
-        },
-        {
-          "group_by": true,
-          "label": "Footprint",
-          "name": "Footprint",
           "show": true
         },
         {
@@ -705,6 +705,24 @@
           "label": "Gain",
           "name": "Gain",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Type",
+          "name": "Sim.Type",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Part #",
+          "name": "Part #",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Digikey Part #",
+          "name": "Digikey Part #",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -763,7 +781,7 @@
         "uuid": "cb63459b-b5eb-4b1b-8316-cdcb6a76275f"
       }
     ],
-    "used_designators": "R_Shunt1-3,J1-3,#PWR1-56,#PWR64,#PWR66-67,#PWR76,#PWR78-82,#PWR99,#PWR102-103,#PWR106-107,#PWR109,D1,D12-14,Y1,RN1,F1,TP1-3,TP32-33,C1-29,C38-54,U1-7,U10,SW10-11,L1-4,R1-23,R27-28,R32-33,R39-40,R46-51,R53-54",
+    "used_designators": "R1-23,R27-28,R32-33,R39-40,R46-51,R53-54,L1-4,TP1-3,TP21-23,TP32-33,F1,D1-2,D12-14,#PWR1-64,#PWR66-67,#PWR76,#PWR78-82,#PWR99,#PWR102-103,#PWR106-107,#PWR109,Y1,RN1,SW10-11,U1-10,C1-69,R_Shunt1-3,Q1,#FLG7,J1-4",
     "variants": []
   },
   "sheets": [
