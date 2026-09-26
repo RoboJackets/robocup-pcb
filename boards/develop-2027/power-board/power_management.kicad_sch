@@ -4111,6 +4111,16 @@
 		)
 		(uuid "beccaeeb-d4a1-437a-a23f-8b4954bd28fc")
 	)
+	(text "TODO: Find footprints for parts"
+		(exclude_from_sim no)
+		(at 256.286 88.138 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d113988d-940c-4b8e-b5b6-3e0bdce63711")
+	)
 	(junction
 		(at 31.75 35.56)
 		(diameter 0)
@@ -6933,7 +6943,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/30100/wsl.pdf"
 			(at 306.07 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -6946,6 +6956,28 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 306.07 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part#" "WSL25122L500FEA"
+			(at 306.07 76.2 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigikeyPart#" "541-10116-1-ND"
+			(at 306.07 76.2 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11755,7 +11787,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDN0000/AOA0000C319.pdf"
 			(at 257.81 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -11768,6 +11800,28 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 257.81 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part#" "ERJ-MS4HF10MU"
+			(at 257.81 76.2 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigikeyPart#" "P17098CT-ND"
+			(at 257.81 76.2 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13755,7 +13809,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDN0000/AOA0000C319.pdf"
 			(at 257.81 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -13768,6 +13822,28 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 257.81 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part#" "ERJ-MS4HF10MU"
+			(at 257.81 63.5 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigikeyPart#" "P17098CT-ND"
+			(at 257.81 63.5 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
