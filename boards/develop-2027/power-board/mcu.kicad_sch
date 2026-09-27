@@ -3526,16 +3526,6 @@
 		)
 		(uuid "329dcbf6-96cf-4526-9908-baadc5d217ff")
 	)
-	(text "TODO: if using these still,\nconnect to a GPIO"
-		(exclude_from_sim no)
-		(at 354.33 121.92 0)
-		(effects
-			(font
-				(size 2 2)
-			)
-		)
-		(uuid "33995d15-ed8b-4980-a4c4-24cbecf18cad")
-	)
 	(text "Three LEDs to be used for debugging"
 		(exclude_from_sim no)
 		(at 325.628 78.486 0)
@@ -4055,6 +4045,16 @@
 	)
 	(wire
 		(pts
+			(xy 158.75 100.33) (xy 168.91 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c618e7a-c9e6-45be-b4e7-6167302800c9")
+	)
+	(wire
+		(pts
 			(xy 172.72 93.98) (xy 172.72 95.25)
 		)
 		(stroke
@@ -4222,6 +4222,16 @@
 			(type default)
 		)
 		(uuid "1923f148-d2af-4ff8-886c-e366f1a6c733")
+	)
+	(wire
+		(pts
+			(xy 158.75 105.41) (xy 168.91 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19cbeb8e-179f-4ef1-8a65-6d8f7a796ecb")
 	)
 	(wire
 		(pts
@@ -5205,6 +5215,16 @@
 	)
 	(wire
 		(pts
+			(xy 158.75 102.87) (xy 168.91 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5adea0c-98b4-4008-8b3a-1f6f777a487d")
+	)
+	(wire
+		(pts
 			(xy 76.2 104.14) (xy 88.9 104.14)
 		)
 		(stroke
@@ -5703,6 +5723,16 @@
 		)
 		(uuid "f7b70e4c-7c12-4f2e-9eb1-e3194ce25cba")
 	)
+	(label "gp_led1"
+		(at 168.91 102.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "074a408b-ad9e-4a5c-8a45-761e90f5c919")
+	)
 	(label "gp_led2"
 		(at 355.6 91.44 90)
 		(effects
@@ -5712,16 +5742,6 @@
 			(justify left bottom)
 		)
 		(uuid "1ed3373f-0438-44c4-a85c-f2ed5491e1dd")
-	)
-	(label "gp_led0"
-		(at 356.87 128.27 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2522822c-d754-4783-a8b7-64343fda118f")
 	)
 	(label "QSPI_IO1"
 		(at 76.2 101.6 0)
@@ -5763,6 +5783,16 @@
 		)
 		(uuid "467a3fa9-7d0f-4ef8-b054-86dd399fed8a")
 	)
+	(label "gp_led0"
+		(at 168.91 100.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "53c69609-c48f-474a-973c-cf5a1d496e5a")
+	)
 	(label "QSPI_IO2"
 		(at 76.2 104.14 0)
 		(effects
@@ -5783,16 +5813,6 @@
 		)
 		(uuid "63debcf3-f557-4e0c-805d-5df997f688a3")
 	)
-	(label "gp_led1"
-		(at 356.87 130.81 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "69398a7b-c167-4886-b092-edcc4a19da73")
-	)
 	(label "SWCLK"
 		(at 86.36 148.59 180)
 		(effects
@@ -5802,16 +5822,6 @@
 			(justify right bottom)
 		)
 		(uuid "779474a3-441b-44fa-bad4-1547562579a0")
-	)
-	(label "gp_led2"
-		(at 356.87 133.35 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "880f99db-32a3-49d4-8616-a18b22b44920")
 	)
 	(label "SWDIO"
 		(at 52.07 173.99 180)
@@ -5902,6 +5912,16 @@
 			(justify right bottom)
 		)
 		(uuid "cfccfe46-5ee5-406c-8da9-ca01d106d07d")
+	)
+	(label "gp_led2"
+		(at 168.91 105.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "d86681f7-681e-4c4f-b85d-b2031e38b640")
 	)
 	(label "XTAL_OUT"
 		(at 340.36 57.15 180)
@@ -6094,9 +6114,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "05b26c61-241b-4aa9-9ee5-703a87570e8a")
 		(property "Reference" "C53"
-			(at 198.374 39.37 0)
+			(at 199.39 39.3699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6107,7 +6128,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 198.374 41.91 0)
+			(at 199.39 41.9099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6117,7 +6138,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 196.5452 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -6128,7 +6149,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8942/490_Chip_Multilayer_CAT2021_MLCC.pdf"
 			(at 195.58 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -6162,6 +6183,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 195.58 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "490-10700-1-ND"
+			(at 195.58 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "GRM155R71H104KE14D"
 			(at 195.58 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -6319,7 +6362,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 167.64 76.708 90)
 			(hide yes)
 			(show_name no)
@@ -6330,7 +6373,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 167.64 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -6364,6 +6407,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 167.64 74.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "YAG3085CT-ND"
+			(at 167.64 74.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "RC0402FR-0727R4L"
 			(at 167.64 74.93 90)
 			(hide yes)
 			(show_name no)
@@ -6421,7 +6486,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 167.64 79.248 90)
 			(hide yes)
 			(show_name no)
@@ -6432,7 +6497,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 167.64 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -6476,6 +6541,28 @@
 				)
 			)
 		)
+		(property "DigiKey Part #" "YAG3085CT-ND"
+			(at 167.64 77.47 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "RC0402FR-0727R4L"
+			(at 167.64 77.47 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "9ed5c7d2-778a-4d8c-9d24-facba49d0dfd")
 		)
@@ -6501,9 +6588,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "0d085b13-8106-4006-803b-121697bc49d9")
 		(property "Reference" "C52"
-			(at 186.944 39.37 0)
+			(at 187.96 39.3699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6514,7 +6602,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 186.944 41.91 0)
+			(at 187.96 41.9099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6524,7 +6612,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 185.1152 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -6535,7 +6623,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8942/490_Chip_Multilayer_CAT2021_MLCC.pdf"
 			(at 184.15 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -6569,6 +6657,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 184.15 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "490-10700-1-ND"
+			(at 184.15 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "GRM155R71H104KE14D"
 			(at 184.15 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -6628,7 +6738,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 291.592 107.95 90)
 			(hide yes)
 			(show_name no)
@@ -6639,7 +6749,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCF_RMCP.pdf"
 			(at 293.37 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -6673,6 +6783,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 293.37 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "RMCF0402FT10K0CT-ND"
+			(at 293.37 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "RMCF0402FT10K0"
 			(at 293.37 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -6765,17 +6897,6 @@
 				)
 			)
 		)
-		(property "DigiKey Part #" "535-AOTA-B201610S3R3-101-TCT-ND"
-			(at 59.69 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Sim.Library" ""
 			(at 59.69 81.28 0)
 			(hide yes)
@@ -6788,6 +6909,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 59.69 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "535-AOTA-B201610S3R3-101-TCT-ND"
+			(at 59.69 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "AOTA-B201610S3R3-101-T"
 			(at 59.69 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -6847,7 +6990,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 341.63 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -6858,7 +7001,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://otmm.lumileds.com/adaptivemedia/ebbc9358c2e68f2d55e2ff2be1bc300fbdb86bfe"
 			(at 341.63 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -6924,6 +7067,28 @@
 				)
 			)
 		)
+		(property "DigiKey Part #" "L128-RED1003500000"
+			(at 341.63 95.25 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "L128-RED1003500000"
+			(at 341.63 95.25 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "f68cf7c8-e28d-4747-8927-6539aa8d179a")
 		)
@@ -6951,7 +7116,7 @@
 		(dnp no)
 		(uuid "1c0d4df1-3882-4940-92b3-86ee51210ad4")
 		(property "Reference" "C47"
-			(at 129.794 39.37 0)
+			(at 130.81 39.3699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6962,7 +7127,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 129.794 41.91 0)
+			(at 130.81 41.9099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6972,7 +7137,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 127.9652 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -6983,7 +7148,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8942/490_Chip_Multilayer_CAT2021_MLCC.pdf"
 			(at 127 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -7017,6 +7182,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 127 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "490-10700-1-ND"
+			(at 127 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "GRM155R71H104KE14D"
 			(at 127 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -7076,7 +7263,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 87.3252 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -7087,7 +7274,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8942/490_Chip_Multilayer_CAT2021_MLCC.pdf"
 			(at 86.36 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -7121,6 +7308,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 86.36 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "490-10700-1-ND"
+			(at 86.36 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "GRM155R71H104KE14D"
 			(at 86.36 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -7234,9 +7443,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "243192cb-bc78-43e7-b53f-7fa3ce1ee95c")
 		(property "Reference" "C54"
-			(at 209.804 39.37 0)
+			(at 210.82 39.3699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7247,7 +7457,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 209.804 41.91 0)
+			(at 210.82 41.9099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7257,7 +7467,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 207.9752 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -7268,7 +7478,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8942/490_Chip_Multilayer_CAT2021_MLCC.pdf"
 			(at 207.01 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -7302,6 +7512,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 207.01 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "490-10700-1-ND"
+			(at 207.01 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "GRM155R71H104KE14D"
 			(at 207.01 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -7359,7 +7591,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 370.84 58.1152 0)
 			(hide yes)
 			(show_name no)
@@ -7370,7 +7602,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8942/490_Chip_Multilayer_CAT2021_MLCC.pdf"
 			(at 367.03 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -7415,6 +7647,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 367.03 57.15 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "490-5888-1-ND"
+			(at 367.03 57.15 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "GRM1555C1H150JA01D"
 			(at 367.03 57.15 90)
 			(hide yes)
 			(show_name no)
@@ -7474,7 +7728,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 339.852 104.14 90)
 			(hide yes)
 			(show_name no)
@@ -7485,7 +7739,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 341.63 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -7519,6 +7773,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 341.63 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "311-1.6KERCT-ND"
+			(at 341.63 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "RC1206JR-071K6L"
 			(at 341.63 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -7757,7 +8033,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 355.6 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -7768,7 +8044,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://otmm.lumileds.com/adaptivemedia/ebbc9358c2e68f2d55e2ff2be1bc300fbdb86bfe"
 			(at 355.6 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -7824,6 +8100,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 355.6 95.25 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "L128-RED1003500000"
+			(at 355.6 95.25 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "L128-RED1003500000"
 			(at 355.6 95.25 90)
 			(hide yes)
 			(show_name no)
@@ -8036,7 +8334,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 363.22 35.8648 0)
 			(hide yes)
 			(show_name no)
@@ -8047,7 +8345,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8942/490_Chip_Multilayer_CAT2021_MLCC.pdf"
 			(at 367.03 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -8092,6 +8390,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 367.03 36.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "490-5888-1-ND"
+			(at 367.03 36.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "GRM1555C1H150JA01D"
 			(at 367.03 36.83 90)
 			(hide yes)
 			(show_name no)
@@ -8151,7 +8471,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 64.4652 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -8162,7 +8482,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8942/490_Chip_Multilayer_CAT2021_MLCC.pdf"
 			(at 63.5 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -8196,6 +8516,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 63.5 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "490-10700-1-ND"
+			(at 63.5 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "GRM155R71H104KE14D"
 			(at 63.5 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -8308,6 +8650,28 @@
 				)
 			)
 		)
+		(property "DigiKey Part #" "4809-SKRPABE010CT-ND"
+			(at 278.13 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "SKRPABE010"
+			(at 278.13 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c6858e71-d7cd-445a-82ca-8619b0a86292")
 		)
@@ -8357,7 +8721,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 75.8952 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -8368,7 +8732,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/41/CL21A475KAQNNNE_Spec.pdf"
 			(at 74.93 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -8402,6 +8766,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 74.93 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "1276-1244-1-ND"
+			(at 74.93 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "CL21A475KAQNNNE"
 			(at 74.93 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -8514,6 +8900,28 @@
 				)
 			)
 		)
+		(property "DigiKey Part #" "4809-SKRPABE010CT-ND"
+			(at 278.13 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "SKRPABE010"
+			(at 278.13 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "74056451-9991-45ac-b43e-37d15a412479")
 		)
@@ -8563,7 +8971,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 353.822 104.14 90)
 			(hide yes)
 			(show_name no)
@@ -8574,7 +8982,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 355.6 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -8608,6 +9016,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 355.6 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "311-1.6KERCT-ND"
+			(at 355.6 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "RC1206JR-071K6L"
 			(at 355.6 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -8665,7 +9095,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 63.5 69.088 90)
 			(hide yes)
 			(show_name no)
@@ -8745,9 +9175,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "65e5d993-bba6-42f2-aa54-c486b64dfc6f")
 		(property "Reference" "C48"
-			(at 141.224 39.37 0)
+			(at 142.24 39.3699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8758,7 +9189,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 141.224 41.91 0)
+			(at 142.24 41.9099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8768,7 +9199,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 139.3952 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -8779,7 +9210,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8942/490_Chip_Multilayer_CAT2021_MLCC.pdf"
 			(at 138.43 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -8813,6 +9244,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 138.43 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "490-10700-1-ND"
+			(at 138.43 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "GRM155R71H104KE14D"
 			(at 138.43 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -8870,7 +9323,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 242.57 113.538 90)
 			(hide yes)
 			(show_name no)
@@ -8881,7 +9334,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 242.57 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -8915,6 +9368,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 242.57 111.76 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "311-1.00KHRCT-ND"
+			(at 242.57 111.76 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "RC0603FR-071KL"
 			(at 242.57 111.76 90)
 			(hide yes)
 			(show_name no)
@@ -8971,7 +9446,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 187.96 96.012 90)
 			(hide yes)
 			(show_name no)
@@ -8982,7 +9457,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 187.96 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -9016,6 +9491,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 187.96 97.79 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "311-4.70KHRCT-ND"
+			(at 187.96 97.79 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "RC0603FR-074K7L"
 			(at 187.96 97.79 90)
 			(hide yes)
 			(show_name no)
@@ -9151,7 +9648,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Module:Maple_Mini"
 			(at 60.96 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -9248,9 +9745,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "697e35b0-7083-43bf-ac6e-a50b63fe8ba9")
 		(property "Reference" "C50"
-			(at 164.084 39.37 0)
+			(at 165.1 39.3699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9261,7 +9759,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 164.084 41.91 0)
+			(at 165.1 41.9099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9271,7 +9769,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 162.2552 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -9282,7 +9780,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8942/490_Chip_Multilayer_CAT2021_MLCC.pdf"
 			(at 161.29 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -9316,6 +9814,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 161.29 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "490-10700-1-ND"
+			(at 161.29 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "GRM155R71H104KE14D"
 			(at 161.29 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -9676,7 +10196,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 187.96 93.472 90)
 			(hide yes)
 			(show_name no)
@@ -9687,7 +10207,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 187.96 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -9721,6 +10241,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 187.96 95.25 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "311-4.70KHRCT-ND"
+			(at 187.96 95.25 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "RC0603FR-074K7L"
 			(at 187.96 95.25 90)
 			(hide yes)
 			(show_name no)
@@ -10012,7 +10554,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 50.4952 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -10023,7 +10565,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/41/CL21A475KAQNNNE_Spec.pdf"
 			(at 49.53 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -10057,6 +10599,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 49.53 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "1276-1244-1-ND"
+			(at 49.53 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "CL21A475KAQNNNE"
 			(at 49.53 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -10602,7 +11166,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 325.882 104.14 90)
 			(hide yes)
 			(show_name no)
@@ -10613,7 +11177,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 327.66 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -10647,6 +11211,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 327.66 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "311-1.6KERCT-ND"
+			(at 327.66 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "RC1206JR-071K6L"
 			(at 327.66 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -10783,7 +11369,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 75.8952 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -10794,7 +11380,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/41/CL21A475KAQNNNE_Spec.pdf"
 			(at 74.93 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -10828,6 +11414,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 74.93 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "1276-1244-1-ND"
+			(at 74.93 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "CL21A475KAQNNNE"
 			(at 74.93 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -11218,7 +11826,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 346.71 58.928 90)
 			(hide yes)
 			(show_name no)
@@ -11229,7 +11837,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 346.71 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -11263,6 +11871,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 346.71 57.15 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "311-1.00KHRCT-ND"
+			(at 346.71 57.15 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "RC0603FR-071KL"
 			(at 346.71 57.15 90)
 			(hide yes)
 			(show_name no)
@@ -11321,7 +11951,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 242.57 94.488 90)
 			(hide yes)
 			(show_name no)
@@ -11332,7 +11962,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 242.57 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -11366,6 +11996,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 242.57 92.71 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "311-1.00KHRCT-ND"
+			(at 242.57 92.71 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "RC0603FR-071KL"
 			(at 242.57 92.71 90)
 			(hide yes)
 			(show_name no)
@@ -11501,9 +12153,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "ccbd7a21-d86e-4ba7-b40e-f97a4c8fa19f")
 		(property "Reference" "C51"
-			(at 175.514 39.37 0)
+			(at 176.53 39.3699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11514,7 +12167,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 175.514 41.91 0)
+			(at 176.53 41.9099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11524,7 +12177,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 173.6852 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -11535,7 +12188,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8942/490_Chip_Multilayer_CAT2021_MLCC.pdf"
 			(at 172.72 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -11569,6 +12222,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 172.72 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "490-10700-1-ND"
+			(at 172.72 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "GRM155R71H104KE14D"
 			(at 172.72 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -11758,9 +12433,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "d3a50f58-f964-4d04-b952-ff3302f17273")
 		(property "Reference" "C49"
-			(at 152.654 39.37 0)
+			(at 153.67 39.3699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11771,7 +12447,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 152.654 41.91 0)
+			(at 153.67 41.9099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11781,7 +12457,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 150.8252 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -11792,7 +12468,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8942/490_Chip_Multilayer_CAT2021_MLCC.pdf"
 			(at 149.86 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -11826,6 +12502,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 149.86 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "490-10700-1-ND"
+			(at 149.86 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "GRM155R71H104KE14D"
 			(at 149.86 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -11962,7 +12660,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 39.0652 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -11973,7 +12671,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/41/CL21A475KAQNNNE_Spec.pdf"
 			(at 38.1 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -12007,6 +12705,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 38.1 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "1276-1244-1-ND"
+			(at 38.1 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "CL21A475KAQNNNE"
 			(at 38.1 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -12066,7 +12786,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 327.66 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -12077,7 +12797,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://otmm.lumileds.com/adaptivemedia/ebbc9358c2e68f2d55e2ff2be1bc300fbdb86bfe"
 			(at 327.66 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -12133,6 +12853,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 327.66 95.25 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "L128-RED1003500000"
+			(at 327.66 95.25 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "L128-RED1003500000"
 			(at 327.66 95.25 90)
 			(hide yes)
 			(show_name no)
@@ -12379,7 +13121,7 @@
 				)
 			)
 		)
-		(property "Digikey Part #" ""
+		(property "Digikey Part #" "2648-SC1512(13)-A4CT-ND"
 			(at 128.016 216.408 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12402,17 +13144,6 @@
 			)
 		)
 		(property "Sim.Name" ""
-			(at 124.46 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey Part #" "2648-SC1512(13)-A4CT-ND"
 			(at 124.46 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -12685,9 +13416,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "f572d8a0-aa1c-483a-8e8a-2950bd33aaf5")
 		(property "Reference" "C46"
-			(at 118.364 39.37 0)
+			(at 119.38 39.3699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12698,7 +13430,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 118.364 41.91 0)
+			(at 119.38 41.9099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12708,7 +13440,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 116.5352 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -12719,7 +13451,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8942/490_Chip_Multilayer_CAT2021_MLCC.pdf"
 			(at 115.57 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -12731,6 +13463,28 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 115.57 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "GRM155R71H104KE14D"
+			(at 115.57 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part #" ""
 			(at 115.57 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -12753,6 +13507,17 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 115.57 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "490-10700-1-ND"
 			(at 115.57 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -12812,7 +13577,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 291.592 88.9 90)
 			(hide yes)
 			(show_name no)
@@ -12823,7 +13588,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.seielect.com/catalog/SEI-RMCF_RMCP.pdf"
 			(at 293.37 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -12857,6 +13622,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 293.37 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "RMCF0402FT10K0CT-ND"
+			(at 293.37 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "RMCF0402FT10K0"
 			(at 293.37 88.9 0)
 			(hide yes)
 			(show_name no)
