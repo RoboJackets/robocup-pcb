@@ -428,7 +428,7 @@ The same numbers are on the buttons sheet. The PTS820 datasheet could not be ret
 ## 11. Connectors
 
 ### Motor connectors J5-J9 (interface still open)
-JST S8B-PH-K-S, 2A per contact with AWG24. Order matches motor-module J2: 1 +5V, 2 GND, 3 +3V3,
+JST B8B-PH-K-S (vertical, matching the placed footprints; side-entry S8B would overhang the ESD parts), 2A per contact with AWG24. Order matches motor-module J2: 1 +5V, 2 GND, 3 +3V3,
 4 GND, 5 SCK, 6 MOSI, 7 MISO, 8 CS. J9 is the dribbler. R68-R72 10k CS pull-ups hold the modules
 deselected through reset. R74 100k pull-down on SCK. U10/U11 TPD4E05U06 ESD at the connectors.
 
@@ -603,16 +603,20 @@ IDs stay fixed. Closed items are removed, not renumbered.
 
 ### Critical (release blockers)
 
-**C1 DotStar footprint.** D3-D7 have no footprint, and the stock APA102-2020 footprint does not
-match the BB-2020BGR-TRB 2x3 land pattern (BB2020 p2). The drawing does not say whether it is a
-top or bottom view. Confirm with the vendor or a sample, then build the footprint.
+**C1 DotStar footprint.** D7-D11 now use `ControlBoard2027:AmericanBright_BB-2020BGR-TRB`, built
+from the BB2020 p2 2x3 land pattern: CO/VCC/CI over DO/GND/DI. The stock APA102-2020 footprint did
+not match; it put CO on +5V and CI on GND. The drawing does not say whether it is a top or bottom
+view. The footprint assumes top view, because it labels the corners the same way as the p2 die
+bonding diagram. Confirm with the vendor or a sample before ordering boards. If it turns out to be
+a bottom view, mirror the pads left-right.
 
 **C2 CubeMX HSE setting.** V0.3 sets HSE to 48MHz with PLL1 /3 ×12. With the 25MHz crystal the VCO
 lands at 100MHz, below the 192MHz minimum. Apply the clock tree in §12.
 
 **C3 Footprints, MPNs and ratings.** Most parts still lack footprints and the PCB file is empty.
-Capacitors need voltage and dielectric ratings (C51, C47, C55 X5R/X7R ≥10V). U7 must be ordered
-as SN74AHCT125PWR or DR; the D (tube) option is obsolete.
+Capacitors need voltage and dielectric ratings (C51, C47, C55 X5R/X7R ≥10V). The level shifter (U10
+on the PCB) must be ordered as SN74AHCT125DR, the SOIC-14 that matches its footprint. The PW
+(TSSOP) part does not fit, and the D (tube) option is obsolete.
 
 ### Major
 
