@@ -541,7 +541,7 @@
       "method": 0,
       "sort_order": 0
     },
-    "bom_export_filename": "power-board.csv",
+    "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -557,7 +557,7 @@
       "exclude_dnp": false,
       "fields_ordered": [
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Reference",
           "name": "Reference",
           "show": true
@@ -729,14 +729,20 @@
           "label": "Part#",
           "name": "Part#",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Connects To",
+          "name": "Connects To",
+          "show": false
         }
       ],
       "filter_string": "",
-      "group_symbols": false,
+      "group_symbols": true,
       "include_excluded_from_bom": true,
       "name": "",
-      "sort_asc": true,
-      "sort_field": "Value"
+      "sort_asc": false,
+      "sort_field": "Reference"
     },
     "bus_aliases": {},
     "connection_grid_size": 50.0,
