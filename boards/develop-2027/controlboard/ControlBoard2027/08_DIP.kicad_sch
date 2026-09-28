@@ -1628,6 +1628,44 @@
 			(embedded_fonts no)
 		)
 	)
+	(rectangle
+		(start 188 124)
+		(end 296 215)
+		(stroke
+			(width 0.254)
+			(type dash)
+			(color 0 0 132 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "60e56df6-beaa-4a54-b65a-514f9455f7a6")
+	)
+	(text "DIP R18-R23 = 100k: STM32 250 nA input leakage gives 25 mV drop nominal.\nLogic bias is adequate for an unloaded MCU input (DS13313 Table 51).\nSelect switch MPN and verify minimum contact load; 33 uA is not proof.\nDebounce/sample stability needs firmware; no universal 100nF requirement."
+		(exclude_from_sim no)
+		(at 33.02 271.78 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left bottom)
+		)
+		(uuid "832befb0-6adb-4f62-921a-f3395788ef5f")
+	)
+	(text "ROBOT ID DIP SWITCH SW3 (100K PULL-UPS)"
+		(exclude_from_sim no)
+		(at 189.23 128.27 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 132 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "9f308f85-53dd-4abe-afea-97f72c5419ab")
+	)
 	(junction
 		(at 210.82 184.15)
 		(diameter 0)
@@ -2020,16 +2058,6 @@
 		)
 		(uuid "9bb53f5c-abc4-44af-a9a0-31a54cd1b65f")
 	)
-  (text "DIP PULL-UPS = 100k\nSolid logic high with little current through each closed switch.\nRead at boot only; add 100nF per pin if read continuously.\nDIP4 = PC0, DIP5 = PC1 (V0.3). DESIGN_NOTES.md §9."
-    (at 33.02 271.78 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "c0223946-7410-49bf-8eaf-db42cff3e567")
-  )
-  (text "ROBOT ID DIP SWITCH SW3 (100K PULL-UPS)"
-    (at 189.23 128.27 0)
-    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
-    (uuid "9f308f85-53dd-4abe-afea-97f72c5419ab")
-  )
 	(symbol
 		(lib_id "power:+3V3")
 		(at 210.82 189.23 0)
@@ -2041,7 +2069,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "01ace5f6-72fe-481b-943d-61b743a89cf3")
-		(property "Reference" "#PWR805"
+		(property "Reference" "#PWR0150"
 			(at 210.82 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -2101,7 +2129,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/e320275b-99c9-4503-aa31-e49dd4eed027"
-					(reference "#PWR805")
+					(reference "#PWR0150")
 					(unit 1)
 				)
 			)
@@ -2118,7 +2146,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1bcc9c4f-1493-4774-87e4-735664b21876")
-		(property "Reference" "#PWR802"
+		(property "Reference" "#PWR0147"
 			(at 210.82 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -2178,7 +2206,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/e320275b-99c9-4503-aa31-e49dd4eed027"
-					(reference "#PWR802")
+					(reference "#PWR0147")
 					(unit 1)
 				)
 			)
@@ -2195,7 +2223,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "46a5d8b1-4885-4e90-8c80-285ebbb95e65")
-		(property "Reference" "#PWR807"
+		(property "Reference" "#PWR0152"
 			(at 287.02 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -2255,7 +2283,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/e320275b-99c9-4503-aa31-e49dd4eed027"
-					(reference "#PWR807")
+					(reference "#PWR0152")
 					(unit 1)
 				)
 			)
@@ -2272,7 +2300,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4a0cbe66-298a-41a6-9c9b-798f3a212e2b")
-		(property "Reference" "R22"
+		(property "Reference" "R57"
 			(at 212.852 193.04 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2334,7 +2362,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/e320275b-99c9-4503-aa31-e49dd4eed027"
-					(reference "R22")
+					(reference "R57")
 					(unit 1)
 				)
 			)
@@ -2351,7 +2379,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7f3a3156-c0b5-4369-9ff6-28f078d96f0b")
-		(property "Reference" "R19"
+		(property "Reference" "R54"
 			(at 212.852 154.94 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2413,7 +2441,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/e320275b-99c9-4503-aa31-e49dd4eed027"
-					(reference "R19")
+					(reference "R54")
 					(unit 1)
 				)
 			)
@@ -2430,7 +2458,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "855c4d2b-4880-442a-8605-ee4194eced06")
-		(property "Reference" "#PWR804"
+		(property "Reference" "#PWR0149"
 			(at 210.82 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -2490,7 +2518,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/e320275b-99c9-4503-aa31-e49dd4eed027"
-					(reference "#PWR804")
+					(reference "#PWR0149")
 					(unit 1)
 				)
 			)
@@ -2507,7 +2535,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "97e371dc-3b52-4e38-a130-9acb48397cc5")
-		(property "Reference" "R18"
+		(property "Reference" "R53"
 			(at 212.852 142.24 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2569,7 +2597,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/e320275b-99c9-4503-aa31-e49dd4eed027"
-					(reference "R18")
+					(reference "R53")
 					(unit 1)
 				)
 			)
@@ -2586,7 +2614,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9c5fd53a-1b1f-4f0b-b636-b5534f6cc1d6")
-		(property "Reference" "R23"
+		(property "Reference" "R58"
 			(at 212.852 205.74 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2648,7 +2676,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/e320275b-99c9-4503-aa31-e49dd4eed027"
-					(reference "R23")
+					(reference "R58")
 					(unit 1)
 				)
 			)
@@ -2665,7 +2693,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ad6238e8-a432-4109-8a02-c334c3148c32")
-		(property "Reference" "R21"
+		(property "Reference" "R56"
 			(at 212.852 180.34 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2727,7 +2755,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/e320275b-99c9-4503-aa31-e49dd4eed027"
-					(reference "R21")
+					(reference "R56")
 					(unit 1)
 				)
 			)
@@ -2744,7 +2772,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b79f0080-eb24-4e12-9f34-a26cf628a626")
-		(property "Reference" "#PWR803"
+		(property "Reference" "#PWR0148"
 			(at 210.82 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -2804,7 +2832,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/e320275b-99c9-4503-aa31-e49dd4eed027"
-					(reference "#PWR803")
+					(reference "#PWR0148")
 					(unit 1)
 				)
 			)
@@ -2821,7 +2849,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b88e5f9b-4e0f-4f74-a759-b2e6f589c63e")
-		(property "Reference" "#PWR806"
+		(property "Reference" "#PWR0151"
 			(at 210.82 205.74 0)
 			(hide yes)
 			(show_name no)
@@ -2881,7 +2909,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/e320275b-99c9-4503-aa31-e49dd4eed027"
-					(reference "#PWR806")
+					(reference "#PWR0151")
 					(unit 1)
 				)
 			)
@@ -3007,7 +3035,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "eeec928d-3629-49fb-89d0-0c3fe0bbe939")
-		(property "Reference" "R20"
+		(property "Reference" "R55"
 			(at 212.852 167.64 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3069,7 +3097,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/e320275b-99c9-4503-aa31-e49dd4eed027"
-					(reference "R20")
+					(reference "R55")
 					(unit 1)
 				)
 			)
@@ -3086,7 +3114,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f5a55417-ead5-4dd3-b06d-43b2d6570687")
-		(property "Reference" "#PWR801"
+		(property "Reference" "#PWR0146"
 			(at 210.82 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -3146,23 +3174,10 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/e320275b-99c9-4503-aa31-e49dd4eed027"
-					(reference "#PWR801")
+					(reference "#PWR0146")
 					(unit 1)
 				)
 			)
 		)
-	)
-	(rectangle
-		(start 188 124)
-		(end 296 215)
-		(stroke
-			(width 0.254)
-			(type dash)
-			(color 0 0 132 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "60e56df6-beaa-4a54-b65a-514f9455f7a6")
 	)
 )

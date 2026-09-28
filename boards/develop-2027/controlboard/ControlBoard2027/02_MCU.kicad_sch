@@ -4064,8 +4064,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 0.762)
-						(xy 2.032 0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -4077,8 +4076,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 -0.762)
-						(xy 2.032 -0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -4241,10 +4239,7 @@
 			(symbol "Crystal_GND24_0_1"
 				(polyline
 					(pts
-						(xy -2.54 2.286)
-						(xy -2.54 3.556)
-						(xy 2.54 3.556)
-						(xy 2.54 2.286)
+						(xy -2.54 2.286) (xy -2.54 3.556) (xy 2.54 3.556) (xy 2.54 2.286)
 					)
 					(stroke
 						(width 0)
@@ -4256,8 +4251,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.54 0)
-						(xy -2.032 0)
+						(xy -2.54 0) (xy -2.032 0)
 					)
 					(stroke
 						(width 0)
@@ -4269,10 +4263,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.54 -2.286)
-						(xy -2.54 -3.556)
-						(xy 2.54 -3.556)
-						(xy 2.54 -2.286)
+						(xy -2.54 -2.286) (xy -2.54 -3.556) (xy 2.54 -3.556) (xy 2.54 -2.286)
 					)
 					(stroke
 						(width 0)
@@ -4284,8 +4275,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 -1.27)
-						(xy -2.032 1.27)
+						(xy -2.032 -1.27) (xy -2.032 1.27)
 					)
 					(stroke
 						(width 0.508)
@@ -4308,8 +4298,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -3.81)
-						(xy 0 -3.556)
+						(xy 0 -3.81) (xy 0 -3.556)
 					)
 					(stroke
 						(width 0)
@@ -4321,8 +4310,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.032 0)
-						(xy 2.54 0)
+						(xy 2.032 0) (xy 2.54 0)
 					)
 					(stroke
 						(width 0)
@@ -4334,8 +4322,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.032 -1.27)
-						(xy 2.032 1.27)
+						(xy 2.032 -1.27) (xy 2.032 1.27)
 					)
 					(stroke
 						(width 0.508)
@@ -4513,11 +4500,7 @@
 			(symbol "FerriteBead_0_1"
 				(polyline
 					(pts
-						(xy -2.7686 0.4064)
-						(xy -1.7018 2.2606)
-						(xy 2.7686 -0.3048)
-						(xy 1.6764 -2.159)
-						(xy -2.7686 0.4064)
+						(xy -2.7686 0.4064) (xy -1.7018 2.2606) (xy 2.7686 -0.3048) (xy 1.6764 -2.159) (xy -2.7686 0.4064)
 					)
 					(stroke
 						(width 0)
@@ -4529,8 +4512,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 1.27)
-						(xy 0 1.2954)
+						(xy 0 1.27) (xy 0 1.2954)
 					)
 					(stroke
 						(width 0)
@@ -4542,8 +4524,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -1.27)
-						(xy 0 -1.2192)
+						(xy 0 -1.27) (xy 0 -1.2192)
 					)
 					(stroke
 						(width 0)
@@ -4816,8 +4797,7 @@
 			(symbol "+3V3_0_1"
 				(polyline
 					(pts
-						(xy -0.762 1.27)
-						(xy 0 2.54)
+						(xy -0.762 1.27) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -4829,8 +4809,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54)
-						(xy 0.762 1.27)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -4842,8 +4821,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0)
-						(xy 0 2.54)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -4958,12 +4936,7 @@
 			(symbol "GND_0_1"
 				(polyline
 					(pts
-						(xy 0 0)
-						(xy 0 -1.27)
-						(xy 1.27 -1.27)
-						(xy 0 -2.54)
-						(xy -1.27 -1.27)
-						(xy 0 -1.27)
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -5098,12 +5071,7 @@
 			(symbol "PWR_FLAG_0_1"
 				(polyline
 					(pts
-						(xy 0 0)
-						(xy 0 1.27)
-						(xy -1.016 1.905)
-						(xy 0 2.54)
-						(xy 1.016 1.905)
-						(xy 0 1.27)
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
 					)
 					(stroke
 						(width 0)
@@ -5198,8 +5166,7 @@
 			(symbol "VBUS_0_1"
 				(polyline
 					(pts
-						(xy -0.762 1.27)
-						(xy 0 2.54)
+						(xy -0.762 1.27) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -5211,8 +5178,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54)
-						(xy 0.762 1.27)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -5224,8 +5190,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0)
-						(xy 0 2.54)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -5258,6 +5223,384 @@
 			)
 			(embedded_fonts no)
 		)
+	)
+	(rectangle
+		(start 320 80)
+		(end 396.5 119.9)
+		(stroke
+			(width 0.254)
+			(type dash)
+			(color 0 0 132 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "0c48d3d2-ff9f-4f76-9126-2299e89f00da")
+	)
+	(rectangle
+		(start 399 80)
+		(end 440 117)
+		(stroke
+			(width 0.254)
+			(type dash)
+			(color 0 0 132 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "22f2f832-c8bc-47e5-ac07-d962b02c9ea5")
+	)
+	(rectangle
+		(start 45 30)
+		(end 255 108)
+		(stroke
+			(width 0.254)
+			(type dash)
+			(color 0 0 132 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "4f91b692-5719-4247-b70a-4289e7ee491d")
+	)
+	(rectangle
+		(start 183 144.9)
+		(end 260 183)
+		(stroke
+			(width 0.254)
+			(type dash)
+			(color 0 0 132 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "bc26fc0b-f9cb-4ef3-845d-4b131d32e73e")
+	)
+	(text "VDD p30"
+		(exclude_from_sim no)
+		(at 81.28 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "0eeaee8a-c3ce-4e30-9f90-e438e61224d2")
+	)
+	(text "VBUS SENSE"
+		(exclude_from_sim no)
+		(at 400.05 83.82 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 132 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "195b2698-be45-4ea5-8f71-a857baf67bed")
+	)
+	(text "VDD p17"
+		(exclude_from_sim no)
+		(at 60.96 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "1c451927-6530-4c3e-b37b-48299de7e08a")
+	)
+	(text "VDD p131"
+		(exclude_from_sim no)
+		(at 241.3 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "1e8b8607-39b4-4705-a29d-34cd8cf52f69")
+	)
+	(text "HSE 25MHZ CRYSTAL"
+		(exclude_from_sim no)
+		(at 184.15 148.59 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 132 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "1e902b63-60b0-4540-a05c-b89b005fbc6d")
+	)
+	(text "ROUTING - DECOUPLING: each cap beside the STM32 pin named under it, via straight to GND.\nC26/C27 (VCAP) tight to p71/p106. The netlist does not keep this pairing."
+		(exclude_from_sim no)
+		(at 59.69 44.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(bold yes)
+				(color 255 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "298ea597-2a24-4450-ad6b-ffdab51334c7")
+	)
+	(text "R41/R42 = 30R: provisional source damping, not certified matching.\nNo fixed driver resistance or 55R target follows from DS13313 Tables 52/54.\nValidate SCK/MOSI/MISO/CS at every cable receiver, both directions."
+		(exclude_from_sim no)
+		(at 400.05 142.24 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left bottom)
+		)
+		(uuid "4fe605e5-03a1-404b-9709-e3a27eb47804")
+	)
+	(text "VDD33USB p95 (C24+C25)\nUSB FS PHY - keep both close"
+		(exclude_from_sim no)
+		(at 149.86 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "517e8ec6-b41a-4cbc-800e-971536c29e03")
+	)
+	(text "VDD p84"
+		(exclude_from_sim no)
+		(at 181.61 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "5a90337b-64ff-41eb-893f-4dcc930976ab")
+	)
+	(text "VDD bulk (C21+C22)\nnot pin-specific"
+		(exclude_from_sim no)
+		(at 90.17 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "5c7df374-0b95-4a8f-968b-7396380c1fc6")
+	)
+	(text "VDDA p33 and VREF+ p32 use +3V3.\nSeparate local bypass pairs; analog noise must be measured.\nSource: DS13313 supply scheme / electrical characteristics."
+		(exclude_from_sim no)
+		(at 332.74 92.71 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left bottom)
+		)
+		(uuid "64d74ad1-dd7c-4f9b-bf14-d6050d8299b8")
+	)
+	(text "I2C: R16/17, R30/31, R32/33, R34/35 are each 2.2k.\nAt 3.3 V: (3.3-0.4)/2.2k = 1.32 mA sink requirement.\nFor a 300 ns rise-time limit: C <= 300ns/(0.8473R) = 161 pF nominal.\nAt +5% R: 153 pF. Include ESD, pins, cables and parallel pull-ups.\nBMI088 / SSD1306 / DS13313 timing and I/O data; external loads not qualified."
+		(exclude_from_sim no)
+		(at 400.05 232.41 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left bottom)
+		)
+		(uuid "6c408674-9087-4b84-be09-45ed74ac80b2")
+	)
+	(text "VDD p52"
+		(exclude_from_sim no)
+		(at 120.65 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "704826e7-777a-4873-8f2a-19ef6fdfe5c9")
+	)
+	(text "VBAT p6"
+		(exclude_from_sim no)
+		(at 119.38 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "742ec6bf-ffaa-49d7-b661-4d595b6073db")
+	)
+	(text "VDD DECOUPLING (EACH CAP AT ITS PIN)"
+		(exclude_from_sim no)
+		(at 45.72 34.29 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 132 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "8dfd3553-355d-41f0-95b4-1451b43b8e1d")
+	)
+	(text "CLOCK: X1 = 25 MHz; set firmware clock tree to the fitted part.\nR86 = 0R is an oscillator drive-tuning link, not line termination.\nC49/C50 need measured stray capacitance to establish the 10 pF load.\nStartup margin and crystal drive remain unverified (ABM8, DS13313 HSE data).\nNo blanket claim that 25 MHz always starts or HSI48 is unusable.\n\nSUPPLIES: PDR_ON and VBAT are on +3V3; no backup battery.\nVCAP 71/106 share their bypass node; retained pending ERC symbol review.\nDo not separate a required supply node merely to silence ERC.\nSource: DS13313 power-supply scheme / VCAP data."
+		(exclude_from_sim no)
+		(at 47.24 226.82 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left bottom)
+		)
+		(uuid "91c9dc15-2840-48ee-9cce-48118447830d")
+	)
+	(text "VDD p39"
+		(exclude_from_sim no)
+		(at 101.6 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "95eef347-0738-477d-af4f-719c0e85eaa6")
+	)
+	(text "VDD p62"
+		(exclude_from_sim no)
+		(at 140.97 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "98391c94-b925-4acd-8b54-76a852c625ab")
+	)
+	(text "VDDA / VREF+ DECOUPLING"
+		(exclude_from_sim no)
+		(at 321.31 83.82 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 132 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "a527e175-5f11-4bbd-9a69-78690c25533e")
+	)
+	(text "VDD p108"
+		(exclude_from_sim no)
+		(at 200.66 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "b2bdd5eb-df01-41e6-a235-b2631c622d28")
+	)
+	(text "VREF+ p32 (C30+C31)"
+		(exclude_from_sim no)
+		(at 378.46 117 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "c70d4c9a-db22-4d2b-ab37-99f244f6cf36")
+	)
+	(text "ROUTING - MOTOR SPI (6 Mbit/s, 5 drops)\nR41/R42 within 5mm of PA5/PA7, not at the connectors."
+		(exclude_from_sim no)
+		(at 400.05 151.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(bold yes)
+				(color 255 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "c872ad77-c99b-44fc-b736-abbd4c2b5d36")
+	)
+	(text "I2C VALIDATION REQUIRED: measure SDA and SCL at worst load.\nDo not change to 1.5k from rise time alone: recheck every device's VOL/current.\nOLED module pull-ups and expansion-device specifications are not established."
+		(exclude_from_sim no)
+		(at 400.05 255.27 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left bottom)
+		)
+		(uuid "d495211a-7ce9-48fc-a602-f6bdfcd65a10")
+	)
+	(text "VDDA p33 (C28+C29)"
+		(exclude_from_sim no)
+		(at 338.46 117 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "d766b9d9-772a-4fdc-9816-b9608d6dccdd")
+	)
+	(text "VDD p72"
+		(exclude_from_sim no)
+		(at 161.29 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "e2f9aeab-b894-49ff-8867-ee48e68a1ce2")
+	)
+	(text "ROUTING - HSE CRYSTAL\nX1, C49, C50 within 5mm of PH0/PH1.\nShort equal OSC traces, GND guard ring.\nNothing routed under or beside the loop."
+		(exclude_from_sim no)
+		(at 184.15 181.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(bold yes)
+				(color 255 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "ec75c30a-1ce7-422b-aef7-9d9dd79e80c7")
+	)
+	(text "VDD p121"
+		(exclude_from_sim no)
+		(at 220.98 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "fa3f75ff-aa6d-4fa0-92d2-88e6668f107e")
+	)
+	(text "VDD p144"
+		(exclude_from_sim no)
+		(at 59.69 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "ff8fe13e-0cf9-4dd3-a373-06f7648e9a39")
 	)
 	(junction
 		(at 287.02 115.57)
@@ -5348,6 +5691,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7475f165-4132-42c6-958b-217e0fd694e6")
+	)
+	(junction
+		(at 259.08 283.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7487862b-570f-4a14-aaba-83610bbb49e8")
 	)
 	(junction
 		(at 294.64 115.57)
@@ -5493,11 +5842,6 @@
 		(color 0 0 0 0)
 		(uuid "ff357305-f103-4c1c-bf9f-08a929cdcf28")
 	)
-	(junction
-		(at 259.08 283.21)
-		(diameter 0)
-		(uuid "7487862b-570f-4a14-aaba-83610bbb49e8")
-	)
 	(no_connect
 		(at 337.82 250.19)
 		(uuid "022a3e86-11d4-48e0-b7e8-5a58c03cdf88")
@@ -5541,6 +5885,10 @@
 	(no_connect
 		(at 261.62 212.09)
 		(uuid "3c424bb6-b4d2-4265-bdc1-05276849ede3")
+	)
+	(no_connect
+		(at 337.82 135.89)
+		(uuid "3f84cbbc-cea2-4eba-a2df-a6e8ea30bad2")
 	)
 	(no_connect
 		(at 261.62 270.51)
@@ -5687,6 +6035,10 @@
 		(uuid "d85be68b-6ec6-42af-a085-ceeb9ca8152c")
 	)
 	(no_connect
+		(at 261.62 171.45)
+		(uuid "d95c16b0-4fb4-4ceb-a9a0-0da3ace2add3")
+	)
+	(no_connect
 		(at 261.62 184.15)
 		(uuid "dc80f0e4-0bb2-4b9b-8ff0-685771a19844")
 	)
@@ -5730,18 +6082,19 @@
 		(at 261.62 168.91)
 		(uuid "fddaf4d1-25f1-45b8-ace2-cdb36a16a857")
 	)
-	(no_connect
-		(at 261.62 171.45)
-		(uuid "d95c16b0-4fb4-4ceb-a9a0-0da3ace2add3")
-	)
-	(no_connect
-		(at 337.82 135.89)
-		(uuid "3f84cbbc-cea2-4eba-a2df-a6e8ea30bad2")
+	(wire
+		(pts
+			(xy 247.65 148.59) (xy 247.65 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0501b58a-34ec-441f-a360-73fe891f56d8")
 	)
 	(wire
 		(pts
-			(xy 297.18 115.57)
-			(xy 299.72 115.57)
+			(xy 297.18 115.57) (xy 299.72 115.57)
 		)
 		(stroke
 			(width 0)
@@ -5751,8 +6104,7 @@
 	)
 	(wire
 		(pts
-			(xy 317.5 109.22)
-			(xy 317.5 115.57)
+			(xy 317.5 109.22) (xy 317.5 115.57)
 		)
 		(stroke
 			(width 0)
@@ -5762,8 +6114,7 @@
 	)
 	(wire
 		(pts
-			(xy 284.48 115.57)
-			(xy 287.02 115.57)
+			(xy 284.48 115.57) (xy 287.02 115.57)
 		)
 		(stroke
 			(width 0)
@@ -5773,8 +6124,7 @@
 	)
 	(wire
 		(pts
-			(xy 337.82 196.85)
-			(xy 388.62 196.85)
+			(xy 337.82 196.85) (xy 388.62 196.85)
 		)
 		(stroke
 			(width 0)
@@ -5784,8 +6134,7 @@
 	)
 	(wire
 		(pts
-			(xy 299.72 115.57)
-			(xy 302.26 115.57)
+			(xy 299.72 115.57) (xy 302.26 115.57)
 		)
 		(stroke
 			(width 0)
@@ -5795,8 +6144,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 93.98)
-			(xy 80.01 93.98)
+			(xy 59.69 93.98) (xy 80.01 93.98)
 		)
 		(stroke
 			(width 0)
@@ -5806,8 +6154,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 60.96)
-			(xy 101.6 60.96)
+			(xy 81.28 60.96) (xy 101.6 60.96)
 		)
 		(stroke
 			(width 0)
@@ -5817,8 +6164,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 158.75)
-			(xy 229.87 158.75)
+			(xy 224.79 158.75) (xy 229.87 158.75)
 		)
 		(stroke
 			(width 0)
@@ -5828,8 +6174,7 @@
 	)
 	(wire
 		(pts
-			(xy 347.98 111.76)
-			(xy 368.3 111.76)
+			(xy 347.98 111.76) (xy 368.3 111.76)
 		)
 		(stroke
 			(width 0)
@@ -5839,8 +6184,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 158.75)
-			(xy 229.87 163.83)
+			(xy 229.87 158.75) (xy 229.87 163.83)
 		)
 		(stroke
 			(width 0)
@@ -5850,8 +6194,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 196.85)
-			(xy 241.3 196.85)
+			(xy 261.62 196.85) (xy 241.3 196.85)
 		)
 		(stroke
 			(width 0)
@@ -5861,8 +6204,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 60.96)
-			(xy 220.98 60.96)
+			(xy 200.66 60.96) (xy 220.98 60.96)
 		)
 		(stroke
 			(width 0)
@@ -5872,8 +6214,7 @@
 	)
 	(wire
 		(pts
-			(xy 309.88 109.22)
-			(xy 317.5 109.22)
+			(xy 309.88 109.22) (xy 317.5 109.22)
 		)
 		(stroke
 			(width 0)
@@ -5883,8 +6224,7 @@
 	)
 	(wire
 		(pts
-			(xy 328.93 99.06)
-			(xy 328.93 104.14)
+			(xy 328.93 99.06) (xy 328.93 104.14)
 		)
 		(stroke
 			(width 0)
@@ -5894,8 +6234,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 60.96)
-			(xy 161.29 60.96)
+			(xy 140.97 60.96) (xy 161.29 60.96)
 		)
 		(stroke
 			(width 0)
@@ -5905,8 +6244,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 86.36)
-			(xy 100.33 86.36)
+			(xy 80.01 86.36) (xy 100.33 86.36)
 		)
 		(stroke
 			(width 0)
@@ -5916,8 +6254,7 @@
 	)
 	(wire
 		(pts
-			(xy 307.34 115.57)
-			(xy 309.88 115.57)
+			(xy 307.34 115.57) (xy 309.88 115.57)
 		)
 		(stroke
 			(width 0)
@@ -5927,8 +6264,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 86.36)
-			(xy 160.02 86.36)
+			(xy 139.7 86.36) (xy 160.02 86.36)
 		)
 		(stroke
 			(width 0)
@@ -5938,8 +6274,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 53.34)
-			(xy 181.61 53.34)
+			(xy 161.29 53.34) (xy 181.61 53.34)
 		)
 		(stroke
 			(width 0)
@@ -5949,8 +6284,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 53.34)
-			(xy 161.29 53.34)
+			(xy 140.97 53.34) (xy 161.29 53.34)
 		)
 		(stroke
 			(width 0)
@@ -5960,8 +6294,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 130.81)
-			(xy 261.62 130.81)
+			(xy 254 130.81) (xy 261.62 130.81)
 		)
 		(stroke
 			(width 0)
@@ -5971,8 +6304,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 60.96)
-			(xy 120.65 60.96)
+			(xy 101.6 60.96) (xy 120.65 60.96)
 		)
 		(stroke
 			(width 0)
@@ -5982,8 +6314,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 283.21)
-			(xy 248.92 285.75)
+			(xy 248.92 283.21) (xy 248.92 285.75)
 		)
 		(stroke
 			(width 0)
@@ -5993,8 +6324,7 @@
 	)
 	(wire
 		(pts
-			(xy 337.82 189.23)
-			(xy 358.14 189.23)
+			(xy 337.82 189.23) (xy 358.14 189.23)
 		)
 		(stroke
 			(width 0)
@@ -6004,8 +6334,7 @@
 	)
 	(wire
 		(pts
-			(xy 368.3 111.76)
-			(xy 388.62 111.76)
+			(xy 368.3 111.76) (xy 388.62 111.76)
 		)
 		(stroke
 			(width 0)
@@ -6015,8 +6344,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 86.36)
-			(xy 139.7 86.36)
+			(xy 119.38 86.36) (xy 139.7 86.36)
 		)
 		(stroke
 			(width 0)
@@ -6026,8 +6354,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 283.21)
-			(xy 261.62 283.21)
+			(xy 248.92 283.21) (xy 261.62 283.21)
 		)
 		(stroke
 			(width 0)
@@ -6037,8 +6364,7 @@
 	)
 	(wire
 		(pts
-			(xy 294.64 115.57)
-			(xy 297.18 115.57)
+			(xy 294.64 115.57) (xy 297.18 115.57)
 		)
 		(stroke
 			(width 0)
@@ -6048,8 +6374,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 60.96)
-			(xy 241.3 60.96)
+			(xy 220.98 60.96) (xy 241.3 60.96)
 		)
 		(stroke
 			(width 0)
@@ -6059,8 +6384,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 60.96)
-			(xy 200.66 60.96)
+			(xy 181.61 60.96) (xy 200.66 60.96)
 		)
 		(stroke
 			(width 0)
@@ -6070,8 +6394,7 @@
 	)
 	(wire
 		(pts
-			(xy 304.8 115.57)
-			(xy 307.34 115.57)
+			(xy 304.8 115.57) (xy 307.34 115.57)
 		)
 		(stroke
 			(width 0)
@@ -6081,8 +6404,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 53.34)
-			(xy 220.98 53.34)
+			(xy 200.66 53.34) (xy 220.98 53.34)
 		)
 		(stroke
 			(width 0)
@@ -6092,8 +6414,7 @@
 	)
 	(wire
 		(pts
-			(xy 328.93 104.14)
-			(xy 347.98 104.14)
+			(xy 328.93 104.14) (xy 347.98 104.14)
 		)
 		(stroke
 			(width 0)
@@ -6103,8 +6424,7 @@
 	)
 	(wire
 		(pts
-			(xy 403.86 101.6)
-			(xy 411.48 101.6)
+			(xy 403.86 101.6) (xy 411.48 101.6)
 		)
 		(stroke
 			(width 0)
@@ -6114,8 +6434,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 53.34)
-			(xy 241.3 53.34)
+			(xy 220.98 53.34) (xy 241.3 53.34)
 		)
 		(stroke
 			(width 0)
@@ -6125,8 +6444,17 @@
 	)
 	(wire
 		(pts
-			(xy 337.82 138.43)
-			(xy 356.87 138.43)
+			(xy 259.08 285.75) (xy 259.08 283.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66c29fb7-d7dd-4a2a-8f59-7f0616fc48a9")
+	)
+	(wire
+		(pts
+			(xy 337.82 138.43) (xy 356.87 138.43)
 		)
 		(stroke
 			(width 0)
@@ -6136,8 +6464,7 @@
 	)
 	(wire
 		(pts
-			(xy 347.98 104.14)
-			(xy 368.3 104.14)
+			(xy 347.98 104.14) (xy 368.3 104.14)
 		)
 		(stroke
 			(width 0)
@@ -6147,8 +6474,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 199.39)
-			(xy 228.6 199.39)
+			(xy 261.62 199.39) (xy 228.6 199.39)
 		)
 		(stroke
 			(width 0)
@@ -6158,8 +6484,7 @@
 	)
 	(wire
 		(pts
-			(xy 368.3 104.14)
-			(xy 388.62 104.14)
+			(xy 368.3 104.14) (xy 388.62 104.14)
 		)
 		(stroke
 			(width 0)
@@ -6169,8 +6494,17 @@
 	)
 	(wire
 		(pts
-			(xy 337.82 191.77)
-			(xy 368.3 191.77)
+			(xy 261.62 148.59) (xy 257.81 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72ea0188-4f1a-4726-81ab-c254ce65ca95")
+	)
+	(wire
+		(pts
+			(xy 337.82 191.77) (xy 368.3 191.77)
 		)
 		(stroke
 			(width 0)
@@ -6180,8 +6514,7 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 115.57)
-			(xy 314.96 115.57)
+			(xy 312.42 115.57) (xy 314.96 115.57)
 		)
 		(stroke
 			(width 0)
@@ -6191,8 +6524,7 @@
 	)
 	(wire
 		(pts
-			(xy 337.82 163.83)
-			(xy 344.17 163.83)
+			(xy 337.82 163.83) (xy 344.17 163.83)
 		)
 		(stroke
 			(width 0)
@@ -6202,8 +6534,7 @@
 	)
 	(wire
 		(pts
-			(xy 309.88 115.57)
-			(xy 312.42 115.57)
+			(xy 309.88 115.57) (xy 312.42 115.57)
 		)
 		(stroke
 			(width 0)
@@ -6213,8 +6544,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 53.34)
-			(xy 81.28 53.34)
+			(xy 60.96 53.34) (xy 81.28 53.34)
 		)
 		(stroke
 			(width 0)
@@ -6224,8 +6554,7 @@
 	)
 	(wire
 		(pts
-			(xy 309.88 109.22)
-			(xy 309.88 115.57)
+			(xy 309.88 109.22) (xy 309.88 115.57)
 		)
 		(stroke
 			(width 0)
@@ -6235,8 +6564,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 53.34)
-			(xy 101.6 53.34)
+			(xy 81.28 53.34) (xy 101.6 53.34)
 		)
 		(stroke
 			(width 0)
@@ -6246,8 +6574,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 234.95)
-			(xy 228.6 234.95)
+			(xy 261.62 234.95) (xy 228.6 234.95)
 		)
 		(stroke
 			(width 0)
@@ -6257,8 +6584,7 @@
 	)
 	(wire
 		(pts
-			(xy 287.02 115.57)
-			(xy 289.56 115.57)
+			(xy 287.02 115.57) (xy 289.56 115.57)
 		)
 		(stroke
 			(width 0)
@@ -6268,8 +6594,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 86.36)
-			(xy 59.69 86.36)
+			(xy 52.07 86.36) (xy 59.69 86.36)
 		)
 		(stroke
 			(width 0)
@@ -6279,8 +6604,7 @@
 	)
 	(wire
 		(pts
-			(xy 289.56 115.57)
-			(xy 292.1 115.57)
+			(xy 289.56 115.57) (xy 292.1 115.57)
 		)
 		(stroke
 			(width 0)
@@ -6290,8 +6614,7 @@
 	)
 	(wire
 		(pts
-			(xy 317.5 104.14)
-			(xy 328.93 104.14)
+			(xy 317.5 104.14) (xy 328.93 104.14)
 		)
 		(stroke
 			(width 0)
@@ -6301,8 +6624,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 93.98)
-			(xy 100.33 93.98)
+			(xy 80.01 93.98) (xy 100.33 93.98)
 		)
 		(stroke
 			(width 0)
@@ -6312,8 +6634,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 53.34)
-			(xy 200.66 53.34)
+			(xy 181.61 53.34) (xy 200.66 53.34)
 		)
 		(stroke
 			(width 0)
@@ -6323,8 +6644,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 60.96)
-			(xy 81.28 60.96)
+			(xy 60.96 60.96) (xy 81.28 60.96)
 		)
 		(stroke
 			(width 0)
@@ -6334,8 +6654,7 @@
 	)
 	(wire
 		(pts
-			(xy 292.1 115.57)
-			(xy 294.64 115.57)
+			(xy 292.1 115.57) (xy 294.64 115.57)
 		)
 		(stroke
 			(width 0)
@@ -6345,8 +6664,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 60.96)
-			(xy 181.61 60.96)
+			(xy 161.29 60.96) (xy 181.61 60.96)
 		)
 		(stroke
 			(width 0)
@@ -6356,8 +6674,7 @@
 	)
 	(wire
 		(pts
-			(xy 328.93 111.76)
-			(xy 347.98 111.76)
+			(xy 328.93 111.76) (xy 347.98 111.76)
 		)
 		(stroke
 			(width 0)
@@ -6367,8 +6684,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 86.36)
-			(xy 119.38 86.36)
+			(xy 100.33 86.36) (xy 119.38 86.36)
 		)
 		(stroke
 			(width 0)
@@ -6378,8 +6694,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 93.98)
-			(xy 59.69 93.98)
+			(xy 52.07 93.98) (xy 59.69 93.98)
 		)
 		(stroke
 			(width 0)
@@ -6389,8 +6704,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 146.05)
-			(xy 224.79 158.75)
+			(xy 224.79 146.05) (xy 224.79 158.75)
 		)
 		(stroke
 			(width 0)
@@ -6400,8 +6714,7 @@
 	)
 	(wire
 		(pts
-			(xy 302.26 115.57)
-			(xy 304.8 115.57)
+			(xy 302.26 115.57) (xy 304.8 115.57)
 		)
 		(stroke
 			(width 0)
@@ -6411,8 +6724,7 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 171.45)
-			(xy 227.33 176.53)
+			(xy 227.33 171.45) (xy 227.33 176.53)
 		)
 		(stroke
 			(width 0)
@@ -6422,8 +6734,7 @@
 	)
 	(wire
 		(pts
-			(xy 337.82 143.51)
-			(xy 356.87 143.51)
+			(xy 337.82 143.51) (xy 356.87 143.51)
 		)
 		(stroke
 			(width 0)
@@ -6433,8 +6744,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 146.05)
-			(xy 224.79 146.05)
+			(xy 261.62 146.05) (xy 224.79 146.05)
 		)
 		(stroke
 			(width 0)
@@ -6444,8 +6754,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 93.98)
-			(xy 160.02 93.98)
+			(xy 139.7 93.98) (xy 160.02 93.98)
 		)
 		(stroke
 			(width 0)
@@ -6455,8 +6764,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 163.83)
-			(xy 233.68 171.45)
+			(xy 233.68 163.83) (xy 233.68 171.45)
 		)
 		(stroke
 			(width 0)
@@ -6466,8 +6774,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 232.41)
-			(xy 241.3 232.41)
+			(xy 261.62 232.41) (xy 241.3 232.41)
 		)
 		(stroke
 			(width 0)
@@ -6477,8 +6784,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 158.75)
-			(xy 237.49 158.75)
+			(xy 247.65 158.75) (xy 237.49 158.75)
 		)
 		(stroke
 			(width 0)
@@ -6488,8 +6794,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 93.98)
-			(xy 119.38 93.98)
+			(xy 100.33 93.98) (xy 119.38 93.98)
 		)
 		(stroke
 			(width 0)
@@ -6499,8 +6804,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 53.34)
-			(xy 120.65 53.34)
+			(xy 101.6 53.34) (xy 120.65 53.34)
 		)
 		(stroke
 			(width 0)
@@ -6510,8 +6814,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 125.73)
-			(xy 261.62 125.73)
+			(xy 238.76 125.73) (xy 261.62 125.73)
 		)
 		(stroke
 			(width 0)
@@ -6521,8 +6824,17 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 53.34)
-			(xy 140.97 53.34)
+			(xy 250.19 148.59) (xy 247.65 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2a8a556-5e1f-447c-8653-87bf6149025b")
+	)
+	(wire
+		(pts
+			(xy 120.65 53.34) (xy 140.97 53.34)
 		)
 		(stroke
 			(width 0)
@@ -6532,8 +6844,7 @@
 	)
 	(wire
 		(pts
-			(xy 317.5 104.14)
-			(xy 317.5 109.22)
+			(xy 317.5 104.14) (xy 317.5 109.22)
 		)
 		(stroke
 			(width 0)
@@ -6543,8 +6854,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 60.96)
-			(xy 140.97 60.96)
+			(xy 120.65 60.96) (xy 140.97 60.96)
 		)
 		(stroke
 			(width 0)
@@ -6554,8 +6864,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 158.75)
-			(xy 237.49 163.83)
+			(xy 237.49 158.75) (xy 237.49 163.83)
 		)
 		(stroke
 			(width 0)
@@ -6565,8 +6874,7 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 171.45)
-			(xy 237.49 171.45)
+			(xy 227.33 171.45) (xy 237.49 171.45)
 		)
 		(stroke
 			(width 0)
@@ -6576,8 +6884,7 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 285.75)
-			(xy 261.62 285.75)
+			(xy 259.08 285.75) (xy 261.62 285.75)
 		)
 		(stroke
 			(width 0)
@@ -6587,8 +6894,7 @@
 	)
 	(wire
 		(pts
-			(xy 337.82 194.31)
-			(xy 378.46 194.31)
+			(xy 337.82 194.31) (xy 378.46 194.31)
 		)
 		(stroke
 			(width 0)
@@ -6598,8 +6904,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 86.36)
-			(xy 80.01 86.36)
+			(xy 59.69 86.36) (xy 80.01 86.36)
 		)
 		(stroke
 			(width 0)
@@ -6609,246 +6914,13 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 93.98)
-			(xy 139.7 93.98)
+			(xy 119.38 93.98) (xy 139.7 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "fe43f4b5-ae9d-492f-8ce3-ecd08d2f879a")
-	)
-	(wire
-		(pts
-			(xy 259.08 285.75)
-			(xy 259.08 283.21)
-		)
-		(uuid "66c29fb7-d7dd-4a2a-8f59-7f0616fc48a9")
-	)
-	(wire
-		(pts
-			(xy 261.62 148.59)
-			(xy 257.81 148.59)
-		)
-		(uuid "72ea0188-4f1a-4726-81ab-c254ce65ca95")
-	)
-	(wire
-		(pts
-			(xy 250.19 148.59)
-			(xy 247.65 148.59)
-		)
-		(uuid "d2a8a556-5e1f-447c-8653-87bf6149025b")
-	)
-	(wire
-		(pts
-			(xy 247.65 148.59)
-			(xy 247.65 158.75)
-		)
-		(uuid "0501b58a-34ec-441f-a360-73fe891f56d8")
-	)
-	(text "VDD p30"
-		(at 81.28 66.04 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify top)
-		)
-		(uuid "0eeaee8a-c3ce-4e30-9f90-e438e61224d2")
-	)
-	(text "VDD p17"
-		(at 60.96 66.04 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify top)
-		)
-		(uuid "1c451927-6530-4c3e-b37b-48299de7e08a")
-	)
-	(text "VDD p131"
-		(at 241.3 66.04 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify top)
-		)
-		(uuid "1e8b8607-39b4-4705-a29d-34cd8cf52f69")
-	)
-	(text "ROUTING - DECOUPLING: each cap beside the STM32 pin named under it, via straight to GND.\nC26/C27 (VCAP) tight to p71/p106. The netlist does not keep this pairing."
-		(at 59.69 44.45 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(bold yes)
-				(color 255 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "298ea597-2a24-4450-ad6b-ffdab51334c7")
-	)
-	(text "VDD33USB p95 (C24+C25)\nUSB FS PHY - keep both close"
-		(at 149.86 99.06 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify top)
-		)
-		(uuid "517e8ec6-b41a-4cbc-800e-971536c29e03")
-	)
-	(text "VDD p84"
-		(at 181.61 66.04 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify top)
-		)
-		(uuid "5a90337b-64ff-41eb-893f-4dcc930976ab")
-	)
-	(text "VDD bulk (C21+C22)\nnot pin-specific"
-		(at 90.17 99.06 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify top)
-		)
-		(uuid "5c7df374-0b95-4a8f-968b-7396380c1fc6")
-	)
-	(text "VDD p52"
-		(at 120.65 66.04 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify top)
-		)
-		(uuid "704826e7-777a-4873-8f2a-19ef6fdfe5c9")
-	)
-	(text "VBAT p6"
-		(at 119.38 99.06 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify top)
-		)
-		(uuid "742ec6bf-ffaa-49d7-b661-4d595b6073db")
-	)
-	(text "VDD p39"
-		(at 101.6 66.04 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify top)
-		)
-		(uuid "95eef347-0738-477d-af4f-719c0e85eaa6")
-	)
-	(text "VDD p62"
-		(at 140.97 66.04 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify top)
-		)
-		(uuid "98391c94-b925-4acd-8b54-76a852c625ab")
-	)
-	(text "VDD p108"
-		(at 200.66 66.04 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify top)
-		)
-		(uuid "b2bdd5eb-df01-41e6-a235-b2631c622d28")
-	)
-	(text "VREF+ p32 (C30+C31)"
-		(at 378.46 117 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify top)
-		)
-		(uuid "c70d4c9a-db22-4d2b-ab37-99f244f6cf36")
-	)
-	(text "VDDA p33 (C28+C29)"
-		(at 338.46 117 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify top)
-		)
-		(uuid "d766b9d9-772a-4fdc-9816-b9608d6dccdd")
-	)
-	(text "VDD p72"
-		(at 161.29 66.04 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify top)
-		)
-		(uuid "e2f9aeab-b894-49ff-8867-ee48e68a1ce2")
-	)
-	(text "VDD p121"
-		(at 220.98 66.04 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify top)
-		)
-		(uuid "fa3f75ff-aa6d-4fa0-92d2-88e6668f107e")
-	)
-	(text "VDD p144"
-		(at 59.69 99.06 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify top)
-		)
-		(uuid "ff8fe13e-0cf9-4dd3-a373-06f7648e9a39")
-	)
-	(text "CLOCKING\nX1 25MHz crystal: USB needs a tighter clock than the internal HSI48, and 25MHz starts\nreliably where a 48MHz crystal would not. C49/C50 match the crystal load. R86 (0R) leaves\nroom for a drive-level resistor if measurement calls for one.\n!! CubeMX V0.3 assumes a 48MHz HSE: use the clock tree in DESIGN_NOTES.md §12 (C2, M16).\nDIP4 = PC0 (p26), DIP5 = PC1 (p27); PF5/PF6 unused. No LSE: PC14 = USER_EXTI2.\n\nSUPPLY PINS\nLDO supply only. VDDA and VREF+ tie straight to +3V3, as on the Nucleo.\nPDR_ON = +3V3 (internal reset). VBAT = +3V3 (no battery).\nVCAP pins 71/106 are joined as the datasheet requires; KiCad ERC flags the tie (m21).\nDetails: DESIGN_NOTES.md §5."
-		(at 47.24 226.82 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "9d45d54e-4e75-4470-a181-98cc19bea250")
-	)
-	(text "VDDA p33 + VREF+ p32 tie directly to +3V3\n(no ferrite, as on the Nucleo). One cap pair\nper pin. DESIGN_NOTES.md §5."
-		(at 332.74 92.71 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "31008ce9-aad1-4588-a867-353b8a577bd4")
-	)
-	(text "OPTIONAL I2C PULL-UP CHANGE (not applied - measure first)\nR30/R31 and R32/R33: 2.2k -> 1.5k only if SCL rise time at TP16/TP17\nexceeds 300ns with the real cable fitted. DESIGN_NOTES.md §6."
-		(at 400.05 255.27 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(bold yes)
-				(color 255 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "d17c29af-f7a6-48ba-9a94-c0cba9552a04")
 	)
 	(label "VBUS_SENSE"
 		(at 411.48 101.6 0)
@@ -7442,56 +7514,18 @@
 		)
 		(uuid "fe6d64fe-bd92-4e75-9e51-66f5fbbcfde4")
 	)
-  (text "ROUTING - MOTOR SPI (6 Mbit/s, 5 drops)\nR41/R42 within 5mm of PA5/PA7, not at the connectors."
-    (at 400.05 151.13 0)
-    (effects (font (size 1.27 1.27) (bold yes) (color 255 0 0 1)) (justify left bottom))
-    (uuid "c872ad77-c99b-44fc-b736-abbd4c2b5d36")
-  )
-  (text "ROUTING - HSE CRYSTAL\nX1, C49, C50 within 5mm of PH0/PH1.\nShort equal OSC traces, GND guard ring.\nNothing routed under or beside the loop."
-    (at 184.15 181.61 0)
-    (effects (font (size 1.27 1.27) (bold yes) (color 255 0 0 1)) (justify left bottom))
-    (uuid "ec75c30a-1ce7-422b-aef7-9d9dd79e80c7")
-  )
-  (text "VDD DECOUPLING (EACH CAP AT ITS PIN)"
-    (at 45.72 34.29 0)
-    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
-    (uuid "8dfd3553-355d-41f0-95b4-1451b43b8e1d")
-  )
-  (text "VDDA / VREF+ DECOUPLING"
-    (at 321.31 83.82 0)
-    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
-    (uuid "a527e175-5f11-4bbd-9a69-78690c25533e")
-  )
-  (text "VBUS SENSE"
-    (at 400.05 83.82 0)
-    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
-    (uuid "195b2698-be45-4ea5-8f71-a857baf67bed")
-  )
-  (text "HSE 25MHZ CRYSTAL"
-    (at 184.15 148.59 0)
-    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
-    (uuid "1e902b63-60b0-4540-a05c-b89b005fbc6d")
-  )
-  (text "I2C PULL-UPS - all 2.2k, one pair per bus\nIMU R16/R17; kicker R30/R31; expansion R32/R33; OLED R34/R35.\nTI SLVA689: 153pF maximum at 400kHz and +5% R.\nOLED module 10k in parallel gives about 1.8k.\nMeasure loaded buses; no extra expansion-board pull-ups."
-    (at 400.05 232.41 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "b9d5201e-a60a-403a-b776-5776440cfe16")
-  )
-  (text "R41/R42 30R: motor SPI SCK/MOSI damping, same initial value as R63.\n55-ohm PCB traces do not imply an exact source match. MISO has none.\nQualify all five cable drops; DS13313 Tables 52/54; DESIGN_NOTES section 5."
-    (at 400.05 142.24 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "4ebcb592-3fae-453d-b6b7-4609edebb05d")
-  )
 	(symbol
 		(lib_id "Device:C")
 		(at 81.28 57.15 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "06a1b6dc-b597-4940-9bfc-01a80163b1c1")
-		(property "Reference" "C11"
+		(property "Reference" "C6"
 			(at 81.915 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7546,8 +7580,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "2"
 			(uuid "4958baaf-7334-414a-9743-c7800c65e921")
 		)
@@ -7557,7 +7589,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "C11")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -7567,12 +7599,14 @@
 		(lib_id "Device:C")
 		(at 220.98 57.15 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "09b3ded6-fd49-4008-b31a-04821605da4f")
-		(property "Reference" "C18"
+		(property "Reference" "C17"
 			(at 221.615 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7627,8 +7661,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "841b0cf5-fdde-4204-9bc6-cd67b1d6b72c")
 		)
@@ -7638,7 +7670,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "C18")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -7648,12 +7680,14 @@
 		(lib_id "Device:C")
 		(at 259.08 289.56 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "0a8b452c-3dbe-4e71-adbf-a53d8b69df79")
-		(property "Reference" "C27"
+		(property "Reference" "C23"
 			(at 259.715 287.02 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7708,8 +7742,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "dff2c56b-8684-4584-a078-e0abfc96df18")
 		)
@@ -7719,7 +7751,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "C27")
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -7729,12 +7761,14 @@
 		(lib_id "Connector:TestPoint")
 		(at 328.93 99.06 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "0b7458da-b115-4496-b513-2be0f163f268")
-		(property "Reference" "TP6"
+		(property "Reference" "TP2"
 			(at 328.93 92.202 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7787,15 +7821,13 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "7b900628-4ef0-4cc9-97f1-3d25f752c598")
 		)
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "TP6")
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -7805,12 +7837,14 @@
 		(lib_id "Device:C")
 		(at 119.38 90.17 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "0f444cce-88bc-446e-843e-5efd49ba1e48")
-		(property "Reference" "C23"
+		(property "Reference" "C9"
 			(at 120.015 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7865,8 +7899,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "e120f7aa-5a03-4c4e-a9c2-1dc104212244")
 		)
@@ -7876,7 +7908,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "C23")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -7886,12 +7918,14 @@
 		(lib_id "Device:C")
 		(at 161.29 57.15 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "15cbcd60-685b-4c1a-a1bd-5b86b8da0c97")
-		(property "Reference" "C15"
+		(property "Reference" "C14"
 			(at 161.925 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7946,8 +7980,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "2"
 			(uuid "0056da1a-bec8-497a-ab36-3062d10e89f8")
 		)
@@ -7957,7 +7989,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "C15")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -7967,12 +7999,14 @@
 		(lib_id "power:+3V3")
 		(at 241.3 224.79 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "1a28a5d2-6b72-4e75-b28d-c5ef65a840cd")
-		(property "Reference" "#PWR210"
+		(property "Reference" "#PWR022"
 			(at 241.3 228.6 0)
 			(hide yes)
 			(show_name no)
@@ -8026,15 +8060,13 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "c8790009-b04b-48cd-869a-63253d492f58")
 		)
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "#PWR210")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -8044,12 +8076,14 @@
 		(lib_id "Device:C")
 		(at 248.92 289.56 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "1a497e7d-67d2-4357-b970-a585454f7c7b")
-		(property "Reference" "C26"
+		(property "Reference" "C22"
 			(at 249.555 287.02 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8104,8 +8138,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "d56633f3-b49b-43e2-b76a-6dbd5db9555f")
 		)
@@ -8115,7 +8147,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "C26")
+					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -8125,12 +8157,14 @@
 		(lib_id "Device:C")
 		(at 80.01 90.17 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "1ce546d3-9ef7-438c-85fe-eac35991b966")
-		(property "Reference" "C21"
+		(property "Reference" "C5"
 			(at 80.645 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8185,8 +8219,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "cc3bbf8c-3117-4f4f-9620-8f7b466680c9")
 		)
@@ -8196,7 +8228,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "C21")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -8206,12 +8238,14 @@
 		(lib_id "power:+3V3")
 		(at 358.14 181.61 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "21befb2b-874b-47a4-aa55-ad946cdb23d4")
-		(property "Reference" "#PWR220"
+		(property "Reference" "#PWR033"
 			(at 358.14 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -8265,15 +8299,13 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "38fa2146-aa8a-4179-ab3a-81f2237b0529")
 		)
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "#PWR220")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -8283,12 +8315,14 @@
 		(lib_id "Device:C")
 		(at 59.69 90.17 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "277b4b20-dc89-4af1-b0ae-4f992fc340e7")
-		(property "Reference" "C20"
+		(property "Reference" "C3"
 			(at 60.325 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8343,8 +8377,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "79826ab5-0e2e-44af-9a66-dd7b4756607d")
 		)
@@ -8354,7 +8386,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "C20")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -8364,12 +8396,14 @@
 		(lib_id "power:GND")
 		(at 302.26 303.53 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "2f0ba0b0-3d23-45bf-a5ec-0cca07dedd73")
-		(property "Reference" "#PWR218"
+		(property "Reference" "#PWR030"
 			(at 302.26 309.88 0)
 			(hide yes)
 			(show_name no)
@@ -8423,15 +8457,13 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "33b1a0b8-042c-46c3-9f5d-73038ce96f15")
 		)
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "#PWR218")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -8441,12 +8473,14 @@
 		(lib_id "power:+3V3")
 		(at 388.62 189.23 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "303453b4-c73c-4275-b1a5-a8035275bb59")
-		(property "Reference" "#PWR223"
+		(property "Reference" "#PWR036"
 			(at 388.62 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -8500,15 +8534,13 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "127cf816-3803-4052-b554-eb483c7735e7")
 		)
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "#PWR223")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -8518,12 +8550,14 @@
 		(lib_id "Device:C")
 		(at 60.96 57.15 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "3480d93e-9cb9-4f19-a914-43d79f8728ee")
-		(property "Reference" "C10"
+		(property "Reference" "C4"
 			(at 61.595 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8578,8 +8612,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "d65e05f4-5113-4dc9-b93a-9a445fe7921a")
 		)
@@ -8589,7 +8621,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "C10")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -8599,12 +8631,14 @@
 		(lib_id "power:+3V3")
 		(at 241.3 189.23 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "360e87fd-8f0a-4d79-a3f3-ec8997f0f670")
-		(property "Reference" "#PWR209"
+		(property "Reference" "#PWR021"
 			(at 241.3 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -8658,15 +8692,13 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "5b58c76f-2224-46e2-a6c0-bcf019424784")
 		)
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "#PWR209")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -8676,12 +8708,14 @@
 		(lib_id "power:+3V3")
 		(at 228.6 227.33 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "3706f3d5-9f41-4041-9d64-62530142d3cd")
-		(property "Reference" "#PWR205"
+		(property "Reference" "#PWR017"
 			(at 228.6 231.14 0)
 			(hide yes)
 			(show_name no)
@@ -8735,15 +8769,13 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "250305ed-d57b-41d8-b3e6-e1933bc10cd1")
 		)
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "#PWR205")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -8753,12 +8785,14 @@
 		(lib_id "power:+3V3")
 		(at 261.62 135.89 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "3dfd1f27-4f51-4718-943a-480a38d0c3a7")
-		(property "Reference" "#PWR214"
+		(property "Reference" "#PWR026"
 			(at 265.43 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -8812,15 +8846,13 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "52dfb545-3011-4a02-a560-1343f311b9c0")
 		)
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "#PWR214")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -8830,12 +8862,14 @@
 		(lib_id "Device:R")
 		(at 368.3 187.96 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "3e4548cb-e0d3-4c76-a2bc-aa5a2eefd21a")
-		(property "Reference" "R35"
+		(property "Reference" "R17"
 			(at 370.332 187.96 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8877,7 +8911,7 @@
 				)
 			)
 		)
-		(property "Description" "400kHz I2C pull-up, standardized 2.2k. TI SLVA689 equations 1 and 6: 153pF budget with +5% R; check actual capacitance and slave sink rating. OLED module 10k in parallel gives about 1.8k."
+		(property "Description" "2.2k I2C pull-up. I=(Vrail-VOL)/R; at 3.3V and VOL=0.4V, 1.32mA. For a 300ns limit and +5% R, RC 30-70% rise permits <=153pF. Verify receiver VOL, real capacitance, any parallel pull-ups and configured bus timing; not a universal 400kHz approval."
 			(at 368.3 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -8888,8 +8922,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "3b2f8a45-526b-4718-887d-4c1593d06290")
 		)
@@ -8899,7 +8931,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "R35")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -8909,12 +8941,14 @@
 		(lib_id "power:VBUS")
 		(at 403.86 93.98 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "423ce6b4-b820-4669-9ff3-e9cdf92e222b")
-		(property "Reference" "#PWR224"
+		(property "Reference" "#PWR037"
 			(at 403.86 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -8968,15 +9002,13 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "5badb5d9-f56a-4908-9095-07754d932964")
 		)
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "#PWR224")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -8986,12 +9018,14 @@
 		(lib_id "power:+3V3")
 		(at 378.46 186.69 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "4b225241-6951-4ee3-a51b-4a0939e45288")
-		(property "Reference" "#PWR222"
+		(property "Reference" "#PWR035"
 			(at 378.46 190.5 0)
 			(hide yes)
 			(show_name no)
@@ -9045,15 +9079,13 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "b4041239-3d9c-4c87-bbec-04a16b4672e4")
 		)
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "#PWR222")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -9063,12 +9095,14 @@
 		(lib_id "power:+3V3")
 		(at 351.79 163.83 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "4b83b38d-31bd-4b7e-9de2-745e1dc159cf")
-		(property "Reference" "#PWR226"
+		(property "Reference" "#PWR032"
 			(at 347.98 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -9122,15 +9156,92 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "75741f8d-1733-4a75-a99b-9e05d4f64667")
 		)
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "#PWR226")
+					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 254 148.59 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4de37010-061a-4e84-88c0-82c99cce6848")
+		(property "Reference" "R12"
+			(at 254 146.558 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 254 148.59 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 254 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 254 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "0R oscillator tuning link on PH1; not transmission-line termination. ABM8 max drive 100uW. Actual oscillation amplitude/current, ESR and stray capacitance must establish drive and startup margin before selecting a nonzero value."
+			(at 254 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "5ebc234a-6e09-42b9-b537-91e535fb3880")
+		)
+		(pin "1"
+			(uuid "942e53d1-3f08-4fbe-a62c-0b7c598a0801")
+		)
+		(instances
+			(project "ControlBoard2027"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -9140,12 +9251,14 @@
 		(lib_id "Device:C")
 		(at 160.02 90.17 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "4ffa981c-81c2-4bf9-915b-6a8bd385ffed")
-		(property "Reference" "C25"
+		(property "Reference" "C13"
 			(at 160.655 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9200,8 +9313,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "c8d2b908-6375-4b65-966b-30f0b5fd495d")
 		)
@@ -9211,7 +9322,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "C25")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -9221,12 +9332,14 @@
 		(lib_id "power:GND")
 		(at 52.07 93.98 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "59e08293-0bad-4715-b0ca-34a2c9b0d068")
-		(property "Reference" "#PWR202"
+		(property "Reference" "#PWR014"
 			(at 52.07 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -9280,15 +9393,13 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "8e420cb4-3863-46aa-a95a-66f60399d8bc")
 		)
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "#PWR202")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -9298,12 +9409,14 @@
 		(lib_id "power:+3V3")
 		(at 52.07 86.36 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "5f92b9fe-9f7b-402b-bea4-1f9d54a8da57")
-		(property "Reference" "#PWR201"
+		(property "Reference" "#PWR013"
 			(at 52.07 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -9357,15 +9470,13 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "314596fe-84e4-4e65-90ff-c7a4fbbad207")
 		)
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "#PWR201")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -9375,12 +9486,14 @@
 		(lib_id "Device:C")
 		(at 101.6 57.15 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "6117815f-4df9-4e97-a547-ef38f161d19d")
-		(property "Reference" "C12"
+		(property "Reference" "C8"
 			(at 102.235 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9435,8 +9548,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "3dd50674-4bc5-49af-a88b-ae754e019c4d")
 		)
@@ -9446,7 +9557,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "C12")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -9456,12 +9567,14 @@
 		(lib_id "power:GND")
 		(at 259.08 293.37 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "68af550c-47a7-4106-9bf6-3c5c7a4b8c7d")
-		(property "Reference" "#PWR213"
+		(property "Reference" "#PWR025"
 			(at 259.08 299.72 0)
 			(hide yes)
 			(show_name no)
@@ -9515,15 +9628,13 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "a9bb2f93-3d6c-4a01-b879-ffb1c163f8be")
 		)
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "#PWR213")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -9533,12 +9644,14 @@
 		(lib_id "Device:R")
 		(at 241.3 228.6 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "6b40e95f-ba11-452b-b8c0-6cfed0a7bce9")
-		(property "Reference" "R32"
+		(property "Reference" "R10"
 			(at 243.332 228.6 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9580,7 +9693,7 @@
 				)
 			)
 		)
-		(property "Description" "400kHz I2C pull-up, standardized 2.2k. TI SLVA689 equations 1 and 6: 153pF budget with +5% R; check actual capacitance and slave sink rating. OLED module 10k in parallel gives about 1.8k."
+		(property "Description" "2.2k I2C pull-up. I=(Vrail-VOL)/R; at 3.3V and VOL=0.4V, 1.32mA. For a 300ns limit and +5% R, RC 30-70% rise permits <=153pF. Verify receiver VOL, real capacitance, any parallel pull-ups and configured bus timing; not a universal 400kHz approval."
 			(at 241.3 228.6 0)
 			(hide yes)
 			(show_name no)
@@ -9591,8 +9704,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "2"
 			(uuid "da6a2c19-5aed-422a-944e-8c6a6703fd7a")
 		)
@@ -9602,7 +9713,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "R32")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -9612,12 +9723,14 @@
 		(lib_id "power:GND")
 		(at 403.86 109.22 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "6e55a70d-cab1-4339-9441-dac64a95cdc3")
-		(property "Reference" "#PWR225"
+		(property "Reference" "#PWR038"
 			(at 403.86 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -9671,15 +9784,13 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "1377727e-1b0b-4dc5-8c69-42940e5de041")
 		)
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "#PWR225")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -9689,12 +9800,14 @@
 		(lib_id "Device:R")
 		(at 360.68 143.51 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "6e688c2e-00d7-47fd-a468-8782e0212ab2")
-		(property "Reference" "R42"
+		(property "Reference" "R16"
 			(at 360.68 141.478 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9736,7 +9849,7 @@
 				)
 			)
 		)
-		(property "Description" "30 ohm motor SPI source damping, standardized with R63 as an initial assembly value. DS13313 Rev 5 Tables 52/54 describe load/drive-dependent output behavior, not fixed 25 ohm output resistance. Target PCB traces 55 ohm; qualify five cable drops with IBIS/scope. Not a verified source match."
+		(property "Description" "30R initial source damping, not a proved impedance match. DS13313 Tables 52/54 give load/drive-dependent output behavior, not fixed output resistance. Final value requires stackup, firmware slew setting and receiver/cable SI validation."
 			(at 360.68 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -9747,8 +9860,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "16523e21-174c-417e-8c68-57acd227b75d")
 		)
@@ -9758,7 +9869,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "R42")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -9768,12 +9879,14 @@
 		(lib_id "power:GND")
 		(at 241.3 60.96 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "6fc652e5-876e-451d-8c33-bbaebfa94e15")
-		(property "Reference" "#PWR208"
+		(property "Reference" "#PWR020"
 			(at 241.3 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -9827,15 +9940,13 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "db0fe9e5-c5f8-4770-960f-f350889f1e28")
 		)
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "#PWR208")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -9845,12 +9956,14 @@
 		(lib_id "power:GND")
 		(at 299.72 303.53 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "7210f61b-de68-4816-8bef-b89d8661b981")
-		(property "Reference" "#PWR217"
+		(property "Reference" "#PWR029"
 			(at 299.72 309.88 0)
 			(hide yes)
 			(show_name no)
@@ -9904,15 +10017,13 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "21cee106-8e4d-4a62-a649-424c9590f81b")
 		)
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "#PWR217")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -9922,12 +10033,14 @@
 		(lib_id "Device:R")
 		(at 403.86 105.41 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "7312c07e-2dc2-42b0-a3b5-8ecb39a58a7a")
-		(property "Reference" "R62"
+		(property "Reference" "R21"
 			(at 405.892 105.41 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9969,7 +10082,7 @@
 				)
 			)
 		)
-		(property "Description" "VBUS sense divider bottom. R61 47k / R62 68k: PA9 = VBUS x 0.591: 2.60V at the USB 4.4V minimum (above the 2.31V VIH at VDD 3.3V, DS13313 Table 51), 3.10V at 5.25V, and the 4.0V abs max (VDD off) is only reached at 6.77V. Read as a GPIO, not the OTG comparator."
+		(property "Description" "68k bottom of 47k/68k VBUS GPIO divider. Thevenin resistance 27.79k; FT input leakage and resistor tolerances affect sense voltage. DS13313 Table 51 and recommended input-voltage limits; absolute max is not an operating target."
 			(at 403.86 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -9980,8 +10093,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "0909c45c-33a0-4e53-ab49-6036fe6439c7")
 		)
@@ -9991,7 +10102,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "R62")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -10001,9 +10112,11 @@
 		(lib_id "Device:Crystal_GND24")
 		(at 233.68 158.75 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "7662189e-a042-45cd-814b-e411b254998c")
 		(property "Reference" "X1"
@@ -10072,8 +10185,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "43f577ae-1efe-4842-9bdb-75edf556527e")
 		)
@@ -10099,12 +10210,14 @@
 		(lib_id "power:+3V3")
 		(at 228.6 191.77 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "767280e3-b9ab-4036-a253-e066c61ac819")
-		(property "Reference" "#PWR204"
+		(property "Reference" "#PWR016"
 			(at 228.6 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -10158,15 +10271,13 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "2ef2e0de-2785-4f2c-9b59-2e7b5a631939")
 		)
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "#PWR204")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -10176,12 +10287,14 @@
 		(lib_id "Device:R")
 		(at 403.86 97.79 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "874641da-9ff4-49bd-a841-2d0a28ff9bc2")
-		(property "Reference" "R61"
+		(property "Reference" "R20"
 			(at 405.892 97.79 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10223,7 +10336,7 @@
 				)
 			)
 		)
-		(property "Description" "VBUS sense divider top. 5.25V -> 3.57V on PA9 (OTG_HS_VBUS). Stays under 4.0V FT limit with VDD off."
+		(property "Description" "VBUS divider top 47k; bottom R62=68k. Ideal GPIO sense = 0.591304*VBUS: 3.104 V at 5.25 V, 2.602 V at 4.4 V. Recheck tolerances, leakage and powered-off limits; not a precision OTG comparator threshold."
 			(at 403.86 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -10234,8 +10347,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "2"
 			(uuid "9b90ddb9-8f97-4eda-bd8b-96e5baea1126")
 		)
@@ -10245,7 +10356,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "R61")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -10255,12 +10366,14 @@
 		(lib_id "Device:R")
 		(at 228.6 195.58 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "87dc559e-80a8-46ed-824b-41ec9409ef9e")
-		(property "Reference" "R16"
+		(property "Reference" "R7"
 			(at 230.632 195.58 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10302,7 +10415,7 @@
 				)
 			)
 		)
-		(property "Description" "400kHz I2C pull-up, standardized 2.2k. TI SLVA689 equations 1 and 6: 153pF budget with +5% R; check actual capacitance and slave sink rating. OLED module 10k in parallel gives about 1.8k."
+		(property "Description" "2.2k I2C pull-up. I=(Vrail-VOL)/R; at 3.3V and VOL=0.4V, 1.32mA. For a 300ns limit and +5% R, RC 30-70% rise permits <=153pF. Verify receiver VOL, real capacitance, any parallel pull-ups and configured bus timing; not a universal 400kHz approval."
 			(at 228.6 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -10313,8 +10426,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "6fd8597f-7332-444e-a670-97ae103aef1b")
 		)
@@ -10324,7 +10435,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "R16")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -10334,12 +10445,14 @@
 		(lib_id "Device:C")
 		(at 241.3 57.15 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "89888963-2fda-4855-aef3-af8129310652")
-		(property "Reference" "C19"
+		(property "Reference" "C21"
 			(at 241.935 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10394,8 +10507,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "2"
 			(uuid "0658e0bf-f244-4abc-ae61-980d94d4b764")
 		)
@@ -10405,7 +10516,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "C19")
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -10415,12 +10526,14 @@
 		(lib_id "Device:C")
 		(at 140.97 57.15 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "8d526390-c327-4940-95e3-eda3707260ea")
-		(property "Reference" "C14"
+		(property "Reference" "C12"
 			(at 141.605 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10475,8 +10588,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "2850a3dd-0f19-4083-869a-52e0999d3272")
 		)
@@ -10486,7 +10597,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "C14")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -10496,12 +10607,14 @@
 		(lib_id "Device:R")
 		(at 360.68 138.43 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "90102003-15f4-406c-a815-70f2eb3a0fff")
-		(property "Reference" "R41"
+		(property "Reference" "R15"
 			(at 360.68 136.398 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10543,7 +10656,7 @@
 				)
 			)
 		)
-		(property "Description" "30 ohm motor SPI source damping, standardized with R63 as an initial assembly value. DS13313 Rev 5 Tables 52/54 describe load/drive-dependent output behavior, not fixed 25 ohm output resistance. Target PCB traces 55 ohm; qualify five cable drops with IBIS/scope. Not a verified source match."
+		(property "Description" "30R initial source damping, not a proved impedance match. DS13313 Tables 52/54 give load/drive-dependent output behavior, not fixed output resistance. Final value requires stackup, firmware slew setting and receiver/cable SI validation."
 			(at 360.68 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -10554,8 +10667,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "f31424b5-a351-4a05-9a06-43951b1f9fc7")
 		)
@@ -10565,7 +10676,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "R41")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -10575,12 +10686,14 @@
 		(lib_id "Device:C")
 		(at 200.66 57.15 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "9112b7f3-a570-44c8-b7d5-9247546b7d8a")
-		(property "Reference" "C17"
+		(property "Reference" "C16"
 			(at 201.295 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10635,8 +10748,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "876b942f-50fa-4d23-b5e0-9f0ee66f1b34")
 		)
@@ -10646,7 +10757,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "C17")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -10656,12 +10767,14 @@
 		(lib_id "power:GND")
 		(at 254 138.43 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "93e28414-6a12-43d7-9662-c3eb8bb1ec16")
-		(property "Reference" "#PWR212"
+		(property "Reference" "#PWR024"
 			(at 254 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -10715,15 +10828,13 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "47c50bef-88a2-4462-b81f-74bb9a110baf")
 		)
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "#PWR212")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -10733,12 +10844,14 @@
 		(lib_id "Device:C")
 		(at 368.3 107.95 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "962fcecb-2ab0-471f-881d-31bda390da38")
-		(property "Reference" "C30"
+		(property "Reference" "C26"
 			(at 368.935 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10793,8 +10906,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "2"
 			(uuid "02e80405-a17d-4ed2-8331-934f88a38154")
 		)
@@ -10804,7 +10915,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "C30")
+					(reference "C26")
 					(unit 1)
 				)
 			)
@@ -10814,12 +10925,14 @@
 		(lib_id "Device:C")
 		(at 229.87 167.64 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "99bd2710-5174-4eff-ad09-0aa5fd39fead")
-		(property "Reference" "C49"
+		(property "Reference" "C18"
 			(at 230.505 165.1 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10863,7 +10976,7 @@
 				)
 			)
 		)
-		(property "Description" "HSE load cap, C0G. CL = (12+5)(12+5)/(34) + ~1-2pF PCB = 9.5-10.5pF vs ABM8 CL 10pF. 5pF = STM32 CIO (DS13313). Tune on the bench by measured frequency."
+		(property "Description" "12pF C0G HSE load capacitor. Effective crystal load is (C49+Cin)*(C50+Cout)/(C49+C50+Cin+Cout)+Cstray; actual oscillator pin and PCB capacitance are not measured. Tune with fitted crystal; generic GPIO CIO is not proof of oscillator capacitance."
 			(at 229.87 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -10874,8 +10987,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "6aaf8e16-41bf-4fa3-8bcb-d5641aee96fb")
 		)
@@ -10885,7 +10996,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "C49")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -10895,12 +11006,14 @@
 		(lib_id "Device:C")
 		(at 120.65 57.15 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "9e8b346b-617d-447a-86c3-3af750a911d4")
-		(property "Reference" "C13"
+		(property "Reference" "C10"
 			(at 121.285 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10955,8 +11068,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "7fb7f438-e55c-4b2c-8a89-47aae09abd09")
 		)
@@ -10966,7 +11077,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "C13")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -10976,12 +11087,14 @@
 		(lib_id "Device:R")
 		(at 378.46 190.5 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "9e8f4d63-80eb-499b-b759-42de7e2894e2")
-		(property "Reference" "R30"
+		(property "Reference" "R18"
 			(at 380.492 190.5 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11023,7 +11136,7 @@
 				)
 			)
 		)
-		(property "Description" "400kHz I2C pull-up, standardized 2.2k. TI SLVA689 equations 1 and 6: 153pF budget with +5% R; check actual capacitance and slave sink rating. OLED module 10k in parallel gives about 1.8k."
+		(property "Description" "2.2k I2C pull-up. I=(Vrail-VOL)/R; at 3.3V and VOL=0.4V, 1.32mA. For a 300ns limit and +5% R, RC 30-70% rise permits <=153pF. Verify receiver VOL, real capacitance, any parallel pull-ups and configured bus timing; not a universal 400kHz approval."
 			(at 378.46 190.5 0)
 			(hide yes)
 			(show_name no)
@@ -11034,8 +11147,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "0b4ad2e4-9364-4344-97e2-80240e4b9821")
 		)
@@ -11045,7 +11156,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "R30")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -11055,12 +11166,14 @@
 		(lib_id "Device:C")
 		(at 347.98 107.95 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "a2a367f9-13ca-4a47-a599-64004207475f")
-		(property "Reference" "C29"
+		(property "Reference" "C25"
 			(at 348.615 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11115,8 +11228,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "2b154514-c795-4c4a-a044-dc8f51748fdd")
 		)
@@ -11126,7 +11237,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "C29")
+					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -11136,12 +11247,14 @@
 		(lib_id "power:GND")
 		(at 238.76 133.35 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "a2ea3dab-779b-4b02-bf0f-20a61a1e9c17")
-		(property "Reference" "#PWR206"
+		(property "Reference" "#PWR018"
 			(at 238.76 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -11195,15 +11308,13 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "54efd793-f808-42e1-946c-f80d4f8f0ff3")
 		)
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "#PWR206")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -11213,12 +11324,14 @@
 		(lib_id "Device:R")
 		(at 228.6 231.14 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "a65e654c-7cdc-49f4-93be-90981065348c")
-		(property "Reference" "R33"
+		(property "Reference" "R8"
 			(at 230.632 231.14 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11260,7 +11373,7 @@
 				)
 			)
 		)
-		(property "Description" "400kHz I2C pull-up, standardized 2.2k. TI SLVA689 equations 1 and 6: 153pF budget with +5% R; check actual capacitance and slave sink rating. OLED module 10k in parallel gives about 1.8k."
+		(property "Description" "2.2k I2C pull-up. I=(Vrail-VOL)/R; at 3.3V and VOL=0.4V, 1.32mA. For a 300ns limit and +5% R, RC 30-70% rise permits <=153pF. Verify receiver VOL, real capacitance, any parallel pull-ups and configured bus timing; not a universal 400kHz approval."
 			(at 228.6 231.14 0)
 			(hide yes)
 			(show_name no)
@@ -11271,8 +11384,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "edf20f3a-f030-4cab-86e9-b5af768d4ef7")
 		)
@@ -11282,7 +11393,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "R33")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -11292,12 +11403,14 @@
 		(lib_id "Device:C")
 		(at 388.62 107.95 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "a8a00f40-cf8d-4a0e-a7ef-3da100cf2ac4")
-		(property "Reference" "C31"
+		(property "Reference" "C27"
 			(at 389.255 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11352,8 +11465,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "2"
 			(uuid "c44967ad-4db7-4c73-937c-6a4df5848e21")
 		)
@@ -11363,7 +11474,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "C31")
+					(reference "C27")
 					(unit 1)
 				)
 			)
@@ -11373,12 +11484,14 @@
 		(lib_id "power:+3V3")
 		(at 284.48 115.57 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "aadac5c4-b03d-4a32-b4b5-b3b532e552e3")
-		(property "Reference" "#PWR216"
+		(property "Reference" "#PWR028"
 			(at 284.48 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -11432,15 +11545,13 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "1b9e8bf0-2d8a-4224-8b99-2997329c7699")
 		)
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "#PWR216")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -11450,12 +11561,14 @@
 		(lib_id "Device:C")
 		(at 181.61 57.15 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "b3a327ee-3105-485a-9097-deddce477242")
-		(property "Reference" "C16"
+		(property "Reference" "C15"
 			(at 182.245 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11510,8 +11623,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "2"
 			(uuid "4677be11-8e85-427b-9ae1-58c7f4e43199")
 		)
@@ -11521,7 +11632,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "C16")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -11531,12 +11642,14 @@
 		(lib_id "Device:R")
 		(at 241.3 193.04 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "b51b041c-b75c-439c-a404-542c4f2a973b")
-		(property "Reference" "R17"
+		(property "Reference" "R9"
 			(at 243.332 193.04 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11578,7 +11691,7 @@
 				)
 			)
 		)
-		(property "Description" "400kHz I2C pull-up, standardized 2.2k. TI SLVA689 equations 1 and 6: 153pF budget with +5% R; check actual capacitance and slave sink rating. OLED module 10k in parallel gives about 1.8k."
+		(property "Description" "2.2k I2C pull-up. I=(Vrail-VOL)/R; at 3.3V and VOL=0.4V, 1.32mA. For a 300ns limit and +5% R, RC 30-70% rise permits <=153pF. Verify receiver VOL, real capacitance, any parallel pull-ups and configured bus timing; not a universal 400kHz approval."
 			(at 241.3 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -11589,8 +11702,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "e20d287f-41c9-4107-bcd1-57f4e76350d5")
 		)
@@ -11600,7 +11711,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "R17")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -11610,12 +11721,14 @@
 		(lib_id "power:GND")
 		(at 328.93 111.76 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "b58e4c81-7c01-4109-b902-b997cec6603f")
-		(property "Reference" "#PWR219"
+		(property "Reference" "#PWR031"
 			(at 328.93 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -11669,15 +11782,13 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "f1a1b7b5-8b11-4db3-9228-2d4ab3ff99a4")
 		)
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "#PWR219")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -11687,12 +11798,14 @@
 		(lib_id "Device:C")
 		(at 238.76 129.54 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "b9c73167-dfa6-4e4e-903f-03031e10e9e5")
-		(property "Reference" "C32"
+		(property "Reference" "C20"
 			(at 239.395 127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11747,8 +11860,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "2"
 			(uuid "d14d9632-f61b-482a-9539-e7e864991802")
 		)
@@ -11758,7 +11869,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "C32")
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -11768,12 +11879,14 @@
 		(lib_id "Device:C")
 		(at 328.93 107.95 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "ba15b362-df94-41fb-a2e7-f3745ac6f2be")
-		(property "Reference" "C28"
+		(property "Reference" "C24"
 			(at 329.565 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11828,8 +11941,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "a5bbf72a-e1f9-4205-b005-2590e2a73712")
 		)
@@ -11839,7 +11950,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "C28")
+					(reference "C24")
 					(unit 1)
 				)
 			)
@@ -11849,12 +11960,14 @@
 		(lib_id "Device:R")
 		(at 388.62 193.04 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "ba789668-cd51-4f13-a77a-c32caff6fbe8")
-		(property "Reference" "R31"
+		(property "Reference" "R19"
 			(at 390.652 193.04 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11896,7 +12009,7 @@
 				)
 			)
 		)
-		(property "Description" "400kHz I2C pull-up, standardized 2.2k. TI SLVA689 equations 1 and 6: 153pF budget with +5% R; check actual capacitance and slave sink rating. OLED module 10k in parallel gives about 1.8k."
+		(property "Description" "2.2k I2C pull-up. I=(Vrail-VOL)/R; at 3.3V and VOL=0.4V, 1.32mA. For a 300ns limit and +5% R, RC 30-70% rise permits <=153pF. Verify receiver VOL, real capacitance, any parallel pull-ups and configured bus timing; not a universal 400kHz approval."
 			(at 388.62 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -11907,8 +12020,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "2"
 			(uuid "ed795ccd-84f7-46a4-97c0-83b91708d027")
 		)
@@ -11918,7 +12029,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "R31")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -11928,12 +12039,14 @@
 		(lib_id "power:+3V3")
 		(at 368.3 184.15 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "c8134628-fa1e-49f5-ab85-a4d55ce95828")
-		(property "Reference" "#PWR221"
+		(property "Reference" "#PWR034"
 			(at 368.3 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -11987,15 +12100,13 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "51dfdf76-6731-4ca5-b813-f1565865f39b")
 		)
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "#PWR221")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -12005,12 +12116,14 @@
 		(lib_id "Device:C")
 		(at 237.49 167.64 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "c9e7f33e-8b0a-4526-b51d-a8e6326d828e")
-		(property "Reference" "C50"
+		(property "Reference" "C19"
 			(at 238.125 165.1 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12065,8 +12178,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "2"
 			(uuid "9ba1fdfd-df7b-4fdf-9ffc-72078353dbe4")
 		)
@@ -12076,7 +12187,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "C50")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -12086,12 +12197,14 @@
 		(lib_id "Device:R")
 		(at 347.98 163.83 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "cba4e688-7eb2-4d9e-bd91-af0831fa3bbe")
-		(property "Reference" "R81"
+		(property "Reference" "R13"
 			(at 347.98 161.798 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12133,7 +12246,7 @@
 				)
 			)
 		)
-		(property "Description" "PA15 pull-up. AN2606 Table 111: the H72x ROM bootloader runs SPI3 as a slave on PC10/PC11/PC12 (our SD DAT2/DAT3/CLK) with NSS on PA15 'no pull'. Holding NSS high keeps SPI3 deselected so SD activity cannot take the bootloader away from USB DFU."
+		(property "Description" "10k PA15 logic pull-up; MCU leakage drop ~2.5mV at 250nA. Intended to hold PA15 high. ROM bootloader selection claims require separate firmware/bootloader documentation; not established by this datasheet-only audit."
 			(at 347.98 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -12144,8 +12257,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "4432267f-a796-4a09-a41c-e0fb290cc64a")
 		)
@@ -12155,7 +12266,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "R81")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -12165,12 +12276,14 @@
 		(lib_id "power:GND")
 		(at 248.92 293.37 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "d10eea6f-9580-4d98-85b9-bcabdb42e640")
-		(property "Reference" "#PWR211"
+		(property "Reference" "#PWR023"
 			(at 248.92 299.72 0)
 			(hide yes)
 			(show_name no)
@@ -12224,15 +12337,13 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "c5bf0f72-5dc1-442f-bde5-8cfaad5281bb")
 		)
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "#PWR211")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -12242,12 +12353,14 @@
 		(lib_id "Device:R")
 		(at 254 134.62 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "d42e73fb-232a-4afc-ad4e-1d72d7f14abd")
-		(property "Reference" "R7"
+		(property "Reference" "R11"
 			(at 256.032 134.62 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12289,7 +12402,7 @@
 				)
 			)
 		)
-		(property "Description" "BOOT0 pull-down, boots from flash. SW2 pulls high for DFU."
+		(property "Description" "10k BOOT0 pulldown: at 15uA worst-case input leakage, nominal rise is 0.15V. Establishes low bias; actual boot destination also depends on MCU boot configuration. DS13313 GPIO/BOOT0 data."
 			(at 254 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -12300,8 +12413,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "6de5a021-eb45-4ae3-a727-34738fd93014")
 		)
@@ -12311,7 +12422,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "R7")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -12321,12 +12432,14 @@
 		(lib_id "ControlBoard2027:STM32H723ZGTx")
 		(at 299.72 209.55 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "dd829366-fe02-4121-88d0-9fad169e50ec")
-		(property "Reference" "U4"
+		(property "Reference" "U2"
 			(at 266.7 119.38 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12348,7 +12461,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_QFP:LQFP-144_20x20mm_P0.5mm"
 			(at 299.72 209.55 0)
 			(hide yes)
 			(show_name no)
@@ -12381,8 +12494,17 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
+		(property "MPN" "ST STM32H723ZGT6"
+			(at 299.72 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "11"
 			(uuid "40ed396f-aa39-4d0f-930a-235335a01ae1")
 		)
@@ -12818,31 +12940,24 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "U4")
+					(reference "U2")
 					(unit 1)
 				)
 			)
 		)
-	
-		(property "MPN" "ST STM32H723ZGT6"
-			(at 299.72 209.55 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:+3V3")
 		(at 241.3 53.34 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "ddaffefc-7fb9-418e-8e9b-26965ee63a64")
-		(property "Reference" "#PWR207"
+		(property "Reference" "#PWR019"
 			(at 241.3 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -12896,15 +13011,13 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "1e876f98-76f2-4018-afad-293af94ab302")
 		)
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "#PWR207")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -12914,12 +13027,14 @@
 		(lib_id "Device:C")
 		(at 100.33 90.17 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "def77d48-d7b9-44ec-9dfd-d68620137f8e")
-		(property "Reference" "C22"
+		(property "Reference" "C7"
 			(at 100.965 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12974,8 +13089,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "82382f08-bf4a-4c84-bad1-afc482c8cf20")
 		)
@@ -12985,7 +13098,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "C22")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -12995,12 +13108,14 @@
 		(lib_id "power:GND")
 		(at 227.33 176.53 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "e3de55b1-f727-426c-a41e-221a4b7d3b04")
-		(property "Reference" "#PWR203"
+		(property "Reference" "#PWR015"
 			(at 227.33 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -13054,15 +13169,13 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "ef600d6b-f6de-46e5-8d85-6e4faa83b8e3")
 		)
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "#PWR203")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -13072,12 +13185,14 @@
 		(lib_id "Device:C")
 		(at 139.7 90.17 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "e74101a0-9a20-4da5-aacf-6f7dff8aa481")
-		(property "Reference" "C24"
+		(property "Reference" "C11"
 			(at 140.335 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13132,8 +13247,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "79344285-363a-4250-aa88-9954f07a8545")
 		)
@@ -13143,7 +13256,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "C24")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -13153,12 +13266,14 @@
 		(lib_id "power:+3V3")
 		(at 261.62 140.97 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "ef87d169-ee61-4c9c-bc8b-cdcd4affd82f")
-		(property "Reference" "#PWR215"
+		(property "Reference" "#PWR027"
 			(at 261.62 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -13212,15 +13327,13 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "956dbb1f-e889-4104-ae3d-24dc09d1f712")
 		)
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "#PWR215")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -13230,12 +13343,14 @@
 		(lib_id "Device:R")
 		(at 358.14 185.42 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "f4b91dfe-16be-4d6a-b6e5-76884ca88d0b")
-		(property "Reference" "R34"
+		(property "Reference" "R14"
 			(at 360.172 185.42 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13277,7 +13392,7 @@
 				)
 			)
 		)
-		(property "Description" "400kHz I2C pull-up, standardized 2.2k. TI SLVA689 equations 1 and 6: 153pF budget with +5% R; check actual capacitance and slave sink rating. OLED module 10k in parallel gives about 1.8k."
+		(property "Description" "2.2k I2C pull-up. I=(Vrail-VOL)/R; at 3.3V and VOL=0.4V, 1.32mA. For a 300ns limit and +5% R, RC 30-70% rise permits <=153pF. Verify receiver VOL, real capacitance, any parallel pull-ups and configured bus timing; not a universal 400kHz approval."
 			(at 358.14 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -13288,8 +13403,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
 		(pin "1"
 			(uuid "0af8bfd3-9b6c-45ef-ac4a-783bd3c4bd52")
 		)
@@ -13299,122 +13412,10 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "R34")
+					(reference "R14")
 					(unit 1)
 				)
 			)
 		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 254 148.59 90)
-		(unit 1)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4de37010-061a-4e84-88c0-82c99cce6848")
-		(property "Reference" "R86"
-			(at 254 146.558 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0R"
-			(at 254 148.59 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 254 148.59 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 254 148.59 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "HSE drive-level resistor on PH1 (OSC_OUT), fitted 0R. ABM8 max drive 100uW; estimate 53uW at 1.0Vpp but 103uW at 1.4Vpp (Ctot ~18.5pF). Measure on the first board (ST AN2867 method) and fit a few hundred ohms here if the level exceeds 100uW."
-			(at 254 148.59 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "R86")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(rectangle
-		(start 45 30)
-		(end 255 108)
-		(stroke
-			(width 0.254)
-			(type dash)
-			(color 0 0 132 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "4f91b692-5719-4247-b70a-4289e7ee491d")
-	)
-	(rectangle
-		(start 320 80)
-		(end 396.5 119.9)
-		(stroke
-			(width 0.254)
-			(type dash)
-			(color 0 0 132 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "0c48d3d2-ff9f-4f76-9126-2299e89f00da")
-	)
-	(rectangle
-		(start 399 80)
-		(end 440 117)
-		(stroke
-			(width 0.254)
-			(type dash)
-			(color 0 0 132 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "22f2f832-c8bc-47e5-ac07-d962b02c9ea5")
-	)
-	(rectangle
-		(start 183 144.9)
-		(end 260 183)
-		(stroke
-			(width 0.254)
-			(type dash)
-			(color 0 0 132 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "bc26fc0b-f9cb-4ef3-845d-4b131d32e73e")
 	)
 )

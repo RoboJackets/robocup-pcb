@@ -1628,6 +1628,44 @@
 			(embedded_fonts no)
 		)
 	)
+	(rectangle
+		(start 133 80)
+		(end 250 160)
+		(stroke
+			(width 0.254)
+			(type dash)
+			(color 0 0 132 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "5ee5e7cf-2130-40ca-99d6-0dae354840ff")
+	)
+	(text "INTERRUPTS: R64/R65 are pulldowns. Configure INT1 and INT3 push-pull active-high.\nGyro INT3 defaults open-drain (BMI088 register 0x16); pulldown alone cannot make HIGH.\nValidate firmware setup before enabling MCU EXTI; do not rely on reset behavior."
+		(exclude_from_sim no)
+		(at 100.33 180.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1fa314f5-cf88-4833-a715-5eebbe770a3d")
+	)
+	(text "IMU U6 BMI088: I2C, ACCEL AND GYRO INTERRUPTS"
+		(exclude_from_sim no)
+		(at 134.62 83.82 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 132 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "9ea7051f-b2bc-4f61-92c5-44b43e641138")
+	)
 	(text "ROUTING - IMU\nC35/C36 at the BMI088 VDD/VDDIO pins.\nNo traces or vias under the package.\nAway from mounting holes, connectors and board edges\n(board flex shifts the sensor offset)."
 		(exclude_from_sim no)
 		(at 189.23 154.94 0)
@@ -1861,11 +1899,6 @@
 		)
 		(uuid "f5fdc9bc-2e60-4d48-b431-42ca6909f844")
 	)
-  (text "IMU U6 BMI088: I2C, ACCEL AND GYRO INTERRUPTS"
-    (at 134.62 83.82 0)
-    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
-    (uuid "9ea7051f-b2bc-4f61-92c5-44b43e641138")
-  )
 	(symbol
 		(lib_id "power:GND")
 		(at 165.1 124.46 0)
@@ -1877,7 +1910,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00fded87-c6b5-4307-bfd2-ce14fcd7b65e")
-		(property "Reference" "#PWR505"
+		(property "Reference" "#PWR0138"
 			(at 165.1 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -1937,7 +1970,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/f9cd1353-5e51-470a-8e69-6a3a62e8f681"
-					(reference "#PWR505")
+					(reference "#PWR0138")
 					(unit 1)
 				)
 			)
@@ -1954,7 +1987,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "04b37cd6-ea46-459b-a959-41ac00578e0f")
-		(property "Reference" "#PWR501"
+		(property "Reference" "#PWR0134"
 			(at 152.4 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -2014,7 +2047,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/f9cd1353-5e51-470a-8e69-6a3a62e8f681"
-					(reference "#PWR501")
+					(reference "#PWR0134")
 					(unit 1)
 				)
 			)
@@ -2031,7 +2064,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0606dc93-05cd-4666-a989-4d8707f85515")
-		(property "Reference" "R37"
+		(property "Reference" "R49"
 			(at 163.068 120.65 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2093,7 +2126,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/f9cd1353-5e51-470a-8e69-6a3a62e8f681"
-					(reference "R37")
+					(reference "R49")
 					(unit 1)
 				)
 			)
@@ -2110,7 +2143,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0b0f7ecf-d665-4243-b02d-a89878dc6bb9")
-		(property "Reference" "#PWR510"
+		(property "Reference" "#PWR0143"
 			(at 190.5 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -2170,7 +2203,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/f9cd1353-5e51-470a-8e69-6a3a62e8f681"
-					(reference "#PWR510")
+					(reference "#PWR0143")
 					(unit 1)
 				)
 			)
@@ -2187,7 +2220,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "10cbc4fc-4822-4bef-947a-f58c11f2f854")
-		(property "Reference" "#PWR502"
+		(property "Reference" "#PWR0135"
 			(at 152.4 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -2247,7 +2280,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/f9cd1353-5e51-470a-8e69-6a3a62e8f681"
-					(reference "#PWR502")
+					(reference "#PWR0135")
 					(unit 1)
 				)
 			)
@@ -2264,7 +2297,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "260bd38e-7571-435e-87a1-6fa4511c18ff")
-		(property "Reference" "#PWR504"
+		(property "Reference" "#PWR0137"
 			(at 162.56 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -2324,7 +2357,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/f9cd1353-5e51-470a-8e69-6a3a62e8f681"
-					(reference "#PWR504")
+					(reference "#PWR0137")
 					(unit 1)
 				)
 			)
@@ -2341,7 +2374,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "338423b0-9457-4d6c-b335-f359b0412b55")
-		(property "Reference" "#PWR508"
+		(property "Reference" "#PWR0141"
 			(at 177.8 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -2401,7 +2434,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/f9cd1353-5e51-470a-8e69-6a3a62e8f681"
-					(reference "#PWR508")
+					(reference "#PWR0141")
 					(unit 1)
 				)
 			)
@@ -2418,7 +2451,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4960f23c-00ff-46af-9860-c6ef7a257d7b")
-		(property "Reference" "R38"
+		(property "Reference" "R50"
 			(at 171.958 123.19 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2480,7 +2513,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/f9cd1353-5e51-470a-8e69-6a3a62e8f681"
-					(reference "R38")
+					(reference "R50")
 					(unit 1)
 				)
 			)
@@ -2497,7 +2530,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6772aa8e-eaa9-49b1-86bd-127cf3e0c1c7")
-		(property "Reference" "R64"
+		(property "Reference" "R51"
 			(at 215.392 102.87 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2539,7 +2572,7 @@
 				)
 			)
 		)
-		(property "Description" "ACCEL_EXTI pull-down. BMI088 INT1 is Hi-Z after reset (reg 0x53 = 0x00)."
+		(property "Description" "100k accelerometer interrupt pulldown; requires configured push-pull active-high interrupt. BMI088 INT1/INT2 configuration. Do not claim reset/noise immunity without firmware and leakage verification."
 			(at 213.36 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -2559,7 +2592,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/f9cd1353-5e51-470a-8e69-6a3a62e8f681"
-					(reference "R64")
+					(reference "R51")
 					(unit 1)
 				)
 			)
@@ -2576,7 +2609,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6e3770b1-b596-4abe-8f65-f1d91ffdd70b")
-		(property "Reference" "#PWR507"
+		(property "Reference" "#PWR0140"
 			(at 173.99 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -2636,7 +2669,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/f9cd1353-5e51-470a-8e69-6a3a62e8f681"
-					(reference "#PWR507")
+					(reference "#PWR0140")
 					(unit 1)
 				)
 			)
@@ -2653,7 +2686,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "76988ba2-957d-444a-a323-a1b9b1a53d63")
-		(property "Reference" "#PWR509"
+		(property "Reference" "#PWR0142"
 			(at 190.5 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -2713,7 +2746,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/f9cd1353-5e51-470a-8e69-6a3a62e8f681"
-					(reference "#PWR509")
+					(reference "#PWR0142")
 					(unit 1)
 				)
 			)
@@ -2730,7 +2763,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "77819faa-1fca-4b34-bcd9-ab0b60c51d7a")
-		(property "Reference" "C36"
+		(property "Reference" "C49"
 			(at 163.195 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2794,7 +2827,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/f9cd1353-5e51-470a-8e69-6a3a62e8f681"
-					(reference "C36")
+					(reference "C49")
 					(unit 1)
 				)
 			)
@@ -2811,7 +2844,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "810d824d-3927-42f1-a316-e51081d16f1d")
-		(property "Reference" "#PWR512"
+		(property "Reference" "#PWR0145"
 			(at 213.36 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -2871,7 +2904,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/f9cd1353-5e51-470a-8e69-6a3a62e8f681"
-					(reference "#PWR512")
+					(reference "#PWR0145")
 					(unit 1)
 				)
 			)
@@ -2888,7 +2921,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "931d59b5-0dcd-4a83-8f68-73faa9236116")
-		(property "Reference" "C35"
+		(property "Reference" "C48"
 			(at 153.035 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2952,7 +2985,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/f9cd1353-5e51-470a-8e69-6a3a62e8f681"
-					(reference "C35")
+					(reference "C48")
 					(unit 1)
 				)
 			)
@@ -2969,7 +3002,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ccd24f2b-5d8b-48ce-8c78-04efc717e242")
-		(property "Reference" "#PWR503"
+		(property "Reference" "#PWR0136"
 			(at 162.56 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -3029,7 +3062,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/f9cd1353-5e51-470a-8e69-6a3a62e8f681"
-					(reference "#PWR503")
+					(reference "#PWR0136")
 					(unit 1)
 				)
 			)
@@ -3046,7 +3079,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "dc3f5148-297f-4f37-9744-6431cf2ceed2")
-		(property "Reference" "#PWR506"
+		(property "Reference" "#PWR0139"
 			(at 170.18 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -3106,7 +3139,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/f9cd1353-5e51-470a-8e69-6a3a62e8f681"
-					(reference "#PWR506")
+					(reference "#PWR0139")
 					(unit 1)
 				)
 			)
@@ -3123,7 +3156,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e3505ccc-3233-4ba1-8b38-520b81886aff")
-		(property "Reference" "U6"
+		(property "Reference" "U11"
 			(at 181.61 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3143,7 +3176,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_LGA:Bosch_LGA-16_4.5x3mm_P0.5mm_LayoutBorder7x1y_ClockwisePinNumbering"
 			(at 190.5 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -3166,6 +3199,17 @@
 			)
 		)
 		(property "Description" "Accelerometer, Gyroscope, 6-Axis Sensor, I2C / SPI interface, LGA-16"
+			(at 190.5 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Bosch BMI088"
 			(at 190.5 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -3227,21 +3271,12 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/f9cd1353-5e51-470a-8e69-6a3a62e8f681"
-					(reference "U6")
+					(reference "U11")
 					(unit 1)
 				)
 			)
 		)
-	
-		(property "MPN" "Bosch BMI088"
-			(at 190.5 114.3 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 213.36 120.65 0)
@@ -3253,7 +3288,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e53e6fa9-c357-4808-8ac0-bfd4701de8ee")
-		(property "Reference" "R65"
+		(property "Reference" "R52"
 			(at 215.392 120.65 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3295,7 +3330,7 @@
 				)
 			)
 		)
-		(property "Description" "GYRO_EXTI pull-down. INT3 resets open-drain; set push-pull active-high in firmware."
+		(property "Description" "100k gyroscope INT3 pulldown; BMI088 register 0x16 defaults to open-drain. Firmware MUST set push-pull for active-high operation before enabling interrupt; pulldown cannot pull an open-drain output high."
 			(at 213.36 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -3315,7 +3350,7 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/f9cd1353-5e51-470a-8e69-6a3a62e8f681"
-					(reference "R65")
+					(reference "R52")
 					(unit 1)
 				)
 			)
@@ -3332,7 +3367,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f4eb2b16-33c2-42ad-9238-3e4b96619323")
-		(property "Reference" "#PWR511"
+		(property "Reference" "#PWR0144"
 			(at 213.36 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -3392,23 +3427,10 @@
 		(instances
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/f9cd1353-5e51-470a-8e69-6a3a62e8f681"
-					(reference "#PWR511")
+					(reference "#PWR0144")
 					(unit 1)
 				)
 			)
 		)
-	)
-	(rectangle
-		(start 133 80)
-		(end 250 160)
-		(stroke
-			(width 0.254)
-			(type dash)
-			(color 0 0 132 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "5ee5e7cf-2130-40ca-99d6-0dae354840ff")
 	)
 )
