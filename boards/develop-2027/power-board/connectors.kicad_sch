@@ -2592,7 +2592,7 @@
 		(at 292.1 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5658ca51-840d-449b-a53e-61557a7ffd10")
+		(uuid "bd702097-0e12-40cb-8d58-57199ea088d5")
 	)
 	(junction
 		(at 261.62 46.99)
@@ -2692,6 +2692,16 @@
 	)
 	(wire
 		(pts
+			(xy 292.1 46.99) (xy 298.45 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21c8d058-ea11-4490-8cdc-96b37c7f18a6")
+	)
+	(wire
+		(pts
 			(xy 48.26 38.1) (xy 45.72 38.1)
 		)
 		(stroke
@@ -2759,16 +2769,6 @@
 			(type default)
 		)
 		(uuid "43590fb3-d749-48ea-b02e-bce9d6f07840")
-	)
-	(wire
-		(pts
-			(xy 292.1 46.99) (xy 298.45 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "52b4847c-8090-48b8-a717-9a8b3b2e3b01")
 	)
 	(wire
 		(pts
@@ -3353,7 +3353,18 @@
 				)
 			)
 		)
-		(property "Digikey Part #" "455-1593-ND"
+		(property "Digikey Part #" ""
+			(at 118.11 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "455-1593-ND"
 			(at 118.11 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -3624,7 +3635,18 @@
 				)
 			)
 		)
-		(property "Digikey Part #" "455-1593-ND"
+		(property "Digikey Part #" ""
+			(at 172.72 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "455-1593-ND"
 			(at 172.72 127 0)
 			(hide yes)
 			(show_name no)
@@ -3722,109 +3744,6 @@
 			(project "power-board"
 				(path "/cb63459b-b5eb-4b1b-8316-cdcb6a76275f/255590aa-e6da-45e7-b5b3-d716553f470b"
 					(reference "#PWR049")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 292.1 49.53 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2716177b-fc64-41f6-a523-1f7f99a81b3a")
-		(property "Reference" "C1"
-			(at 290.322 49.2761 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10µF"
-			(at 290.322 51.054 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-			(at 292.1 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 292.1 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 292.1 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Library" ""
-			(at 292.1 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Name" ""
-			(at 292.1 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "1d49532b-9ff3-4b38-91c6-ddd543108a77")
-		)
-		(pin "1"
-			(uuid "1151b554-59da-4c84-a74d-33c3da188f10")
-		)
-		(instances
-			(project "power-board"
-				(path "/cb63459b-b5eb-4b1b-8316-cdcb6a76275f/255590aa-e6da-45e7-b5b3-d716553f470b"
-					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -4004,7 +3923,18 @@
 				)
 			)
 		)
-		(property "Digikey Part #" "455-B6B-XH-A-ND"
+		(property "Digikey Part #" ""
+			(at 53.34 40.64 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "455-B6B-XH-A-ND"
 			(at 53.34 40.64 90)
 			(hide yes)
 			(show_name no)
@@ -4130,7 +4060,18 @@
 				)
 			)
 		)
-		(property "Digikey Part #" "455-1593-ND"
+		(property "Digikey Part #" ""
+			(at 219.71 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "455-1593-ND"
 			(at 219.71 127 0)
 			(hide yes)
 			(show_name no)
@@ -4321,7 +4262,18 @@
 				)
 			)
 		)
-		(property "Digikey Part #" "455-1595-ND"
+		(property "Digikey Part #" ""
+			(at 55.88 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "455-1595-ND"
 			(at 55.88 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -4642,6 +4594,256 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 292.1 49.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "785f18d8-4d5d-4517-8feb-b1eaefeb5bb8")
+		(property "Reference" "C68"
+			(at 293.878 48.514 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10µF"
+			(at 293.878 50.292 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
+			(at 292.1 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2124/CL32B106KMVNNWE_Spec.pdf"
+			(at 292.1 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 292.1 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "CL32B106KMVNNWE"
+			(at 292.1 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "1276-7053-1-ND"
+			(at 292.1 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 292.1 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 292.1 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "cc319f04-f612-4738-9fa3-767fe8e95941")
+		)
+		(pin "1"
+			(uuid "8e1f7836-826f-4b32-aa05-57caceec61fb")
+		)
+		(instances
+			(project "power-board"
+				(path "/cb63459b-b5eb-4b1b-8316-cdcb6a76275f/255590aa-e6da-45e7-b5b3-d716553f470b"
+					(reference "C68")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 261.62 49.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7899eb19-8e68-4a4f-8b01-95cad099b0ee")
+		(property "Reference" "C67"
+			(at 263.398 48.514 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10µF"
+			(at 263.398 50.292 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
+			(at 261.62 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2124/CL32B106KMVNNWE_Spec.pdf"
+			(at 261.62 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 261.62 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "CL32B106KMVNNWE"
+			(at 261.62 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "1276-7053-1-ND"
+			(at 261.62 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Library" ""
+			(at 261.62 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Name" ""
+			(at 261.62 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "940ea1b5-3081-4ac8-8450-feea306e7ba6")
+		)
+		(pin "1"
+			(uuid "b4c37764-adea-4f23-b7ad-ec00386129c2")
+		)
+		(instances
+			(project "power-board"
+				(path "/cb63459b-b5eb-4b1b-8316-cdcb6a76275f/255590aa-e6da-45e7-b5b3-d716553f470b"
+					(reference "C67")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x03_Socket")
 		(at 118.11 157.48 0)
 		(unit 1)
@@ -4729,7 +4931,18 @@
 				)
 			)
 		)
-		(property "Digikey Part #" "455-1593-ND"
+		(property "Digikey Part #" ""
+			(at 118.11 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "455-1593-ND"
 			(at 118.11 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -4856,7 +5069,18 @@
 				)
 			)
 		)
-		(property "Digikey Part #" "609-4618-1-ND"
+		(property "Digikey Part #" ""
+			(at 220.98 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "609-4618-1-ND"
 			(at 220.98 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -5057,6 +5281,17 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 275.59 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "NCP1117LPST33T3G"
 			(at 275.59 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -5405,7 +5640,18 @@
 				)
 			)
 		)
-		(property "Digikey Part #" "455-1593-ND"
+		(property "Digikey Part #" ""
+			(at 118.11 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "455-1593-ND"
 			(at 118.11 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -5677,7 +5923,18 @@
 				)
 			)
 		)
-		(property "Digikey Part #" "455-1593-ND"
+		(property "Digikey Part #" ""
+			(at 118.11 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "455-1593-ND"
 			(at 118.11 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -5932,109 +6189,6 @@
 			(project "power-board"
 				(path "/cb63459b-b5eb-4b1b-8316-cdcb6a76275f/255590aa-e6da-45e7-b5b3-d716553f470b"
 					(reference "#PWR065")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 261.62 49.53 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f5b842d5-3006-4050-8776-40d4f28628c9")
-		(property "Reference" "C2"
-			(at 263.398 49.022 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10µF"
-			(at 263.398 50.8 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-			(at 261.62 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 261.62 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 261.62 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Library" ""
-			(at 261.62 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Name" ""
-			(at 261.62 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "d9360290-6a7d-480e-b51d-6933f78cc8fe")
-		)
-		(pin "1"
-			(uuid "0c1442a6-be6d-4ee1-b98e-97f41cc035b2")
-		)
-		(instances
-			(project "power-board"
-				(path "/cb63459b-b5eb-4b1b-8316-cdcb6a76275f/255590aa-e6da-45e7-b5b3-d716553f470b"
-					(reference "C2")
 					(unit 1)
 				)
 			)

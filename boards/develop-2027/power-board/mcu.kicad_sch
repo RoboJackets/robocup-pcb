@@ -9073,10 +9073,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "623d7e1e-5571-4ff3-bfdf-97912b753dc2")
 		(property "Reference" "R46"
-			(at 63.5 60.96 90)
+			(at 63.5 61.722 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9086,7 +9085,7 @@
 			)
 		)
 		(property "Value" "33"
-			(at 63.5 63.5 90)
+			(at 63.5 64.262 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9095,7 +9094,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" ""
 			(at 63.5 69.088 90)
 			(hide yes)
 			(show_name no)
@@ -9140,6 +9139,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 63.5 67.31 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part #" "2019-SG73P1JTTD33R0FCT-ND"
+			(at 63.5 67.31 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "SG73P1JTTD33R0F"
 			(at 63.5 67.31 90)
 			(hide yes)
 			(show_name no)
@@ -9979,6 +10000,17 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 359.41 44.45 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "ABM8-272-T3"
 			(at 359.41 44.45 90)
 			(hide yes)
 			(show_name no)
@@ -13121,7 +13153,7 @@
 				)
 			)
 		)
-		(property "Digikey Part #" "2648-SC1512(13)-A4CT-ND"
+		(property "DigiKey Part #" "2648-SC1512(13)-A4CT-ND"
 			(at 128.016 216.408 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13144,6 +13176,17 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 124.46 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "SC1512(13)-A4"
 			(at 124.46 135.89 0)
 			(hide yes)
 			(show_name no)
