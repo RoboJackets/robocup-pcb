@@ -2281,7 +2281,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_PH_S8B-PH-K_1x08_P2.00mm_Horizontal"
 			(at 125.73 24.13 0)
 			(hide yes)
 			(show_name no)
@@ -2292,7 +2292,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
 			(at 125.73 21.59 0)
 			(hide yes)
 			(show_name no)
@@ -2303,8 +2303,41 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "CONN HEADER SMD R/A 8POS 2MM"
 			(at 125.984 20.066 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 125.73 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "455-S8B-PH-SM4-TBCT-ND"
+			(at 125.73 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturing P/N" "S8B-PH-SM4-TB"
+			(at 125.73 21.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2787,7 +2820,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_PH_S8B-PH-K_1x08_P2.00mm_Horizontal"
 			(at 22.86 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -2798,7 +2831,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
 			(at 22.86 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -2809,8 +2842,41 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "CONN HEADER SMD R/A 8POS 2MM"
 			(at 23.114 39.116 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 22.86 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "455-S8B-PH-SM4-TBCT-ND"
+			(at 22.86 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturing P/N" "S8B-PH-SM4-TB"
+			(at 22.86 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
