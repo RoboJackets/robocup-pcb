@@ -124,12 +124,12 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
+        "min_clearance": 0.2,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
-        "min_hole_to_hole": 0.25,
+        "min_hole_to_hole": 0.5,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
@@ -187,7 +187,15 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.2,
+        0.25,
+        0.3,
+        0.4,
+        0.5,
+        1.0
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -214,7 +222,24 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        },
+        {
+          "diameter": 0.5,
+          "drill": 0.3
+        },
+        {
+          "diameter": 0.8,
+          "drill": 0.4
+        },
+        {
+          "diameter": 1.0,
+          "drill": 0.5
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -490,10 +515,10 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
+        "track_width": 0.25,
         "tuning_profile": "",
-        "via_diameter": 0.6,
-        "via_drill": 0.3,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
         "wire_width": 6
       }
     ],
@@ -502,7 +527,52 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "USB_90R",
+        "pattern": "/MCU/USB_DP"
+      },
+      {
+        "netclass": "USB_90R",
+        "pattern": "/MCU/USB_DM"
+      },
+      {
+        "netclass": "USB_90R",
+        "pattern": "/USB and Debug/USB_DP_CON"
+      },
+      {
+        "netclass": "USB_90R",
+        "pattern": "/USB and Debug/USB_DM_CON"
+      },
+      {
+        "netclass": "SDMMC_50R",
+        "pattern": "/MCU/SDMMC_CK"
+      },
+      {
+        "netclass": "SDMMC_50R",
+        "pattern": "/SD Card Storage/SD_CLK_CARD"
+      },
+      {
+        "netclass": "SDMMC_50R",
+        "pattern": "/SD Card Storage/SDMMC_CMD"
+      },
+      {
+        "netclass": "SDMMC_50R",
+        "pattern": "/SD Card Storage/SDMMC_D0"
+      },
+      {
+        "netclass": "SDMMC_50R",
+        "pattern": "/SD Card Storage/SDMMC_D1"
+      },
+      {
+        "netclass": "SDMMC_50R",
+        "pattern": "/SD Card Storage/SDMMC_D2"
+      },
+      {
+        "netclass": "SDMMC_50R",
+        "pattern": "/SD Card Storage/SDMMC_D3"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -632,7 +702,7 @@
         "uuid": "2be89789-dd04-494d-960d-2531c7ce8a2f"
       }
     ],
-    "used_designators": "#PWR1-161,D1-11,C1-52,F1-6,H1-4,R1-64,J1-18,Q1,SW1-6,TP1-21,U1-11,X1",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
