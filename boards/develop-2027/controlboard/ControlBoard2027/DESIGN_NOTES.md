@@ -43,7 +43,7 @@ a schematic review, not a finished PCB impedance or power qualification.
 | AO3401A | AOS AO3401A P-FET |
 | MF-MSMF | Bourns MF-MSMF PTC, Rev BD 06/26 |
 | SCLS264R | TI SN74AHCT125 |
-| BMI088 | Bosch BST-BMI088-DS001 Rev 1.9 |
+| DS15060 | ST LSM6DSK320X datasheet, Rev 1 (July 2026); DB5732 data brief Rev 1 |
 | BB2020 | American Bright BB-2020BGR-TRB |
 | ABM8 | Abracon ABM8 crystal |
 | SLVA689 | TI I2C pull-up resistor calculation |
@@ -357,14 +357,29 @@ must not add their own pull-ups.
 
 ## 9. IMU, DIP switch and buttons
 
-### U6 BMI088
-I2C mode. All 16 pins follow BMI088 Table 14 and Figure 9: PS and CSB1 to VDDIO, CSB2, INT2 and
-INT4 open. R37/R38 10k SDO straps give accelerometer 0x18 and gyro 0x68. C35/C36 100nF at VDD and
-VDDIO. VDD range 2.4-3.6V.
+### U11 LSM6DSK320X
+ST LSM6DSK320XTR in LGA-14L 2.5 x 3.0mm, which replaces the BMI088. It combines a low-g accelerometer
+(±16g), a high-g accelerometer (±32 to ±320g) and a ±4000dps gyroscope. The high-g channel captures
+collisions and kicks that saturate a ±16g part.
 
-R64/R65 100k pull-downs on ACCEL_EXTI (PF3) and GYRO_EXTI (PF2). INT1 is off at power-up. INT3
-resets to open drain, so firmware writes 0x16 = 0x01 (push-pull, active high) or the gyro
-interrupt never appears. The IMU has no reset pin (m16).
+Mode 1 (I2C target) per DS15060 Fig. 27 and Table 1:
+- CS (12) to VDDIO selects I2C.
+- SDO/TA0 (1) to GND gives address 0x6A (0xD4 write, 0xD5 read); 0x6B would need TA0 high.
+- SDx/SCx (2/3) to GND, because the controller interface is unused.
+- OCS_aux/SDO_aux (10/11) left unconnected; they have internal pull-ups.
+- SCL (13)/SDA (14) on I2C2 (PF1/PF0) with the existing 2.2k pull-ups R7/R9. ST's figure shows 10k; 2.2k gives
+  faster edges for 400kHz/1MHz.
+- C48 100nF at VDDIO (5) and C49 100nF at VDD (8).
+
+INT1 (4) -> ACCEL_EXTI (PF3) and INT2 (9) -> GYRO_EXTI (PF2). Both are push-pull and driven low from
+power-up (Table 25), so the old BMI088 pull-downs are gone. The four BMI088 straps and pull-downs
+(10k SDO1/SDO2, 100k INT) were removed. The net names ACCEL_EXTI/GYRO_EXTI are kept for firmware
+continuity. Route any event to either pin with INT1_CTRL/INT2_CTRL. The part has no reset pin (m16).
+
+Layout: U11 at (60.0, 69.5) uses `ControlBoard2027:ST_LGA-14L_2.5x3mm_P0.5mm`. That is the KiCad
+LGA-14 3x2.5 land pattern with 0.30mm pads (package pads 0.25 ±0.05mm) to keep 0.2mm gaps. Nothing
+is routed under the package. INT1 leaves on the left side and reaches PF3 on B.Cu through a via
+under the MCU body, because PF0-PF3 face the IMU in SDA, SCL, INT2, INT1 order.
 
 ### SW3 DIP switch
 Six positions for robot ID on PF7-PF10, PC0, PC1; closed reads 0. R18-R23 100k pull-ups. Input
@@ -377,7 +392,8 @@ leakage is ±250nA max (DS13313 Table 51) against a 2.31V input-high threshold:
 | 1M | 3.3µA | 3.05V, still valid but slow and noise-prone |
 
 100k gives a solid high at low current and still enough wetting current for gold contacts.
-Read at boot; add 100nF per pin if read continuously.
+Read at boot; add 100nF per pin if read continuously. The part is a CTS 209-6MS through-hole
+slide DIP (2.54mm pitch, 7.62mm rows). Pins 1-6 carry DIP0-DIP5 and pins 7-12 go to GND.
 
 ### SW4-SW6 user buttons
 Active low. R24-R26 10k pull-ups, R27-R29 10k series, C37-C39 100nF at the MCU pin, no
@@ -390,8 +406,9 @@ inductor.
 
 The pin settles in about 5τ. The RC removes sub-millisecond bounce; firmware ignores
 re-triggers for about 10ms. Peak switch current is 0.76mA and the pin stays inside the rails.
-The same numbers are on the buttons sheet. The PTS820 datasheet could not be retrieved, so the
-4-pad to 2-pin mapping is unverified (m15).
+The same numbers are on the buttons sheet. SW1, SW2 and SW4-SW6 are APEM MJTP1243 through-hole
+tactiles (6 x 3.5mm, two pins at 6.5mm), so the pin mapping is direct and the GND/3V3 pins tie
+straight into the planes.
 
 ---
 
@@ -452,8 +469,15 @@ deselected through reset. R74 100k pull-down on SCK. U10/U11 TPD4E05U06 ESD at t
 1 SDA, 2 SCL, 3 DC/SA0 to GND, 4 RST NC, 5 CS to GND, 6 3V3 out NC, 7 Vin +3V3, 8 GND. The
 STEMMA QT and v2.1 boards use the same pin numbers, but the header is rotated 180° and the
 holes differ. The schematic assumes STEMMA QT, which has its own reset chip (M5). Address 0x3C;
-SA0 goes through a diode on the module, so firmware also probes 0x3D. H1-H4 are the M2 mounting
-holes.
+SA0 goes through a diode on the module, so firmware also probes 0x3D. The module is held by its
+header pins only; there are no mounting holes on this board.
+
+Layout: the module sits fully on the board in the bottom-left corner (J13 at 36.9, 78.3, rotated
+270°, header along the left edge). The silkscreen outline marks the module's 29.21 × 31.75mm size;
+nothing is screwed down. Only 0402/0603 passives sit under the outline: R14, R17, the SW4/SW5
+debounce parts and the corner of C5. Keep the header tall enough that the module clears them.
+Because the header runs along the module's side, the 128x64 image is rotated 90°; set the u8g2
+rotation (U8G2_R1 or U8G2_R3) to match the mounting.
 
 ### J14 radio link
 Cable to RadioBoard2027 J2 (ESP32-C5-WROOM-1U, ESP-Hosted over SPI; see that project's
@@ -558,8 +582,8 @@ clocking (AN2606 Table 111), so DFU does not depend on these settings.
 | PB7 | ESP_RST | Open drain, init released | ESP EN pull-up is on the radio board; never drive high |
 | PB5 | ESP_HANDSHAKE | EXTI rising | R75 pull-down |
 | PB6 | ESP_DATA_READY | EXTI rising | R76 pull-down |
-| PF3 | ACCEL_EXTI | EXTI rising | R64 pull-down; set INT1 push-pull active high (BMI088 5.3.16) |
-| PF2 | GYRO_EXTI | EXTI rising | R65 pull-down; set INT3 push-pull active high (BMI088 5.5.10) |
+| PF3 | ACCEL_EXTI | EXTI rising | LSM6DSK320X INT1 (push-pull, active high by default) |
+| PF2 | GYRO_EXTI | EXTI rising | LSM6DSK320X INT2 (push-pull, active high by default) |
 | PE4, PC13, PC14 | USER_EXTI0-2 | EXTI falling | Buttons pull low; ~1ms RC debounce. V0.3 uses rising |
 | PF7-PF10, PC0, PC1 | DIP0-5 | Input | R18-R23 pull-ups; closed = 0 |
 | PA4, PG7 | (unused) | Analog | Were PWR_FAULT and SD_DETECT; both removed |
@@ -646,7 +670,7 @@ a fault, or F2/F3 never trip and the powerboard's own limit is the protection.
 **M5 OLED variant.** The schematic assumes the STEMMA QT board (reset chip, J13.4 NC). The v2.1 board
 has no reset chip, and the SSD1306 needs RES# held low ≥3µs after power-up. SA0 reaches the chip
 through a diode (about 0.5-0.6V against 0.66V max low), so probe both addresses. Order STEMMA QT
-and take J13 and H1-H4 from its board file.
+and take J13 from its board file.
 
 **M6 Connector parts.** J10-J12 are generic, unkeyed and have no MPN. J1 JST-XH is friction lock
 and rated 3A only with AWG22. J3 needs a keyed header. J14 is now a latching JST GH (§11); a
@@ -702,8 +726,8 @@ that ignores CMD0 needs a board power cycle. Accepted to keep the circuit simple
 - **m12** PA4 (bootloader SPI1 NSS) is unconnected and floats in DFU. Nothing drives the motor
   SCK (R74 pull-down), so no SPI frame arrives and DFU still answers on USB.
 - **m14** J3 has no protection against a 5V mis-plug; R39/R40 have been removed.
-- **m15** SW4-SW6 pad mapping is unverified (PTS820 datasheet unavailable). SW3 has no MPN.
-- **m16** BMI088 has no reset pin; firmware re-checks it after brown-out and runs I2C recovery.
+- **m15** Resolved: all switches are through-hole (APEM MJTP1243 buttons, CTS 209-6MS DIP) with MPNs set.
+- **m16** The LSM6DSK320X has no reset pin. Firmware uses the SW_RESET/BOOT bits after a brown-out and runs I2C bus recovery.
 - **m17** AN2867, RM0468 and AN4879 were not available from st.com. VBUS is read as a GPIO, so the
   OTG threshold is not needed.
 - **m18** No USB inrush limit. Over 100µF charges straight from VBUS at attach, against the 10µF

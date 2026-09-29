@@ -2946,7 +2946,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_DIP_SPSTx06_Slide_Omron_A6H-6101_W6.15mm_P1.27mm"
+		(property "Footprint" "Button_Switch_THT:SW_DIP_SPSTx06_Slide_6.7x16.8mm_W7.62mm_P2.54mm_LowProfile"
 			(at 271.78 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -2957,7 +2957,18 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ctscorp.com/wp-content/uploads/209-210.pdf"
+			(at 271.78 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CTS 209-6MS"
 			(at 271.78 165.1 0)
 			(hide yes)
 			(show_name no)
