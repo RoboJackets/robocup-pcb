@@ -3465,6 +3465,17 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 157.48 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "03ec5d30-8e84-41b2-ab35-8a713a84cfe7")
 		)
@@ -3621,6 +3632,17 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 83.82 96.52 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "92f84552-f0a8-48f0-a6f0-6a676ffb110d")
 		)
@@ -3690,6 +3712,17 @@
 			)
 		)
 		(property "Description" "SD CLK at the card (J4 side of R63). Verify 8MHz with CLKDIV 3 before moving to CLKDIV 1 (24MHz)."
+			(at 170.18 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" ""
 			(at 170.18 203.2 0)
 			(hide yes)
 			(show_name no)
@@ -3930,6 +3963,17 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 83.82 160.02 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f1b78f81-a74d-4310-a5de-a8cebb394b48")
 		)
@@ -4022,6 +4066,17 @@
 			)
 		)
 		(property "Footprint_Source" "datasheets/XKTF-015-X.pdf (recommended PCB layout); LCSC C381082 EasyEDA model 338023942c854de68c5324f8a6f8127e cross-check"
+			(at 157.48 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" "C381082 (LCSC)"
 			(at 157.48 127 0)
 			(hide yes)
 			(show_name no)
@@ -4127,6 +4182,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 167.64 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" ""
 			(at 167.64 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -4447,6 +4513,17 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 83.82 147.32 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "2e1a0dbe-259c-4a36-921f-84a838d0d110")
 		)
@@ -4603,6 +4680,17 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 83.82 109.22 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f4e213fc-2a28-4c91-92f3-982ed1bd911b")
 		)
@@ -4673,6 +4761,17 @@
 		)
 		(property "Description" "Resistor"
 			(at 83.82 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" ""
+			(at 83.82 121.92 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4849,6 +4948,17 @@
 				)
 			)
 		)
+		(property "Vendor PN" "296-39349-1-ND"
+			(at 203.2 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "10"
 			(uuid "9ac0a2ee-da62-4942-a414-0c035963b8c4")
 		)
@@ -4931,7 +5041,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 97.79 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -4955,6 +5065,17 @@
 		)
 		(property "Description" "30R initial CLK source damping at PC12. No universal exact match is established. Validate CLK and bidirectional CMD/DAT timing using DS13313 and selected card data; final R depends on actual layout and drive configuration."
 			(at 97.79 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" ""
+			(at 97.79 138.43 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

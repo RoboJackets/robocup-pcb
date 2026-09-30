@@ -1909,6 +1909,17 @@
 				)
 			)
 		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 71.12 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "MPN" "APEM MJTP1243"
 			(at 71.12 96.52 0)
 			(hide yes)
@@ -1920,7 +1931,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Vendor PN" "679-2452-ND"
 			(at 71.12 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -2000,6 +2011,17 @@
 				)
 			)
 		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 71.12 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "MPN" "APEM MJTP1243"
 			(at 71.12 142.24 0)
 			(hide yes)
@@ -2011,7 +2033,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Vendor PN" "679-2452-ND"
 			(at 71.12 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -2180,6 +2202,17 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 114.3 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "f33afc99-3e4e-4709-aa51-0d944cc76069")
 		)
@@ -2250,6 +2283,17 @@
 		)
 		(property "Description" "Resistor"
 			(at 81.28 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" ""
+			(at 81.28 115.57 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2492,6 +2536,17 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 81.28 138.43 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b57475db-054b-46df-be8f-0ba3883da622")
 		)
@@ -2562,6 +2617,17 @@
 		)
 		(property "Description" "Debounce R, see R27."
 			(at 105.41 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" ""
+			(at 105.41 119.38 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2642,6 +2708,17 @@
 			)
 		)
 		(property "Description" "Debounce cap at the MCU pin side of R29."
+			(at 114.3 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" ""
 			(at 114.3 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -2798,6 +2875,17 @@
 				)
 			)
 		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 71.12 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "MPN" "APEM MJTP1243"
 			(at 71.12 119.38 0)
 			(hide yes)
@@ -2809,7 +2897,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Vendor PN" "679-2452-ND"
 			(at 71.12 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -2890,6 +2978,17 @@
 		)
 		(property "Description" "Debounce R. SW press: C37 discharges through 10k (tau 1ms); release: 20k (tau 2ms). Limits switch current."
 			(at 105.41 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" ""
+			(at 105.41 96.52 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2980,6 +3079,17 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 114.3 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "befda672-17f9-4d28-b5c0-452f53d9241b")
 		)
@@ -3050,6 +3160,17 @@
 		)
 		(property "Description" "Resistor"
 			(at 81.28 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" ""
+			(at 81.28 92.71 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3283,6 +3404,17 @@
 		)
 		(property "Description" "Debounce R, see R27."
 			(at 105.41 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" ""
+			(at 105.41 142.24 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

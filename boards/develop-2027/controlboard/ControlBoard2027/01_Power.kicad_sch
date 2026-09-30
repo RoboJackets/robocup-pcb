@@ -7178,6 +7178,17 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 300.99 185.42 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e29d6fd5-da9a-4b79-93a2-3378904ebf95")
 		)
@@ -7248,6 +7259,17 @@
 		)
 		(property "Description" "Resistor"
 			(at 266.7 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" ""
+			(at 266.7 97.79 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7424,6 +7446,17 @@
 				)
 			)
 		)
+		(property "Vendor PN" "118-MF-MSMF125/16X-2CT-ND"
+			(at 201.93 104.14 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5ae85578-4faf-4fd7-a26c-2df2b83052d7")
 		)
@@ -7506,6 +7539,17 @@
 			)
 		)
 		(property "MPN" "TI TPS2116DRLR"
+			(at 297.18 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" "296-TPS2116DRLRCT-ND"
 			(at 297.18 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -7615,6 +7659,17 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 139.7 214.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "0c694d1c-4b27-4a9b-b889-c7df904f0b79")
 		)
@@ -7705,6 +7760,17 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 355.6 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a6e12491-9a4a-465e-9ab6-aecb75b44274")
 		)
@@ -7774,6 +7840,17 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 340.36 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" ""
 			(at 340.36 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -7860,6 +7937,17 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 312.42 118.11 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "0f6b3637-3e51-4a6c-a470-9c25168d92ce")
 		)
@@ -7929,6 +8017,17 @@
 			)
 		)
 		(property "Description" "+3V3_RAW (F3 input). With TP2 gives the F3+U2 drop (DESIGN_NOTES.md M2, radio needs >= 3.0V)."
+			(at 154.94 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" ""
 			(at 154.94 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -8161,6 +8260,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 254 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" ""
 			(at 254 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -8483,6 +8593,17 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 317.5 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e1a57373-e577-4068-a879-e10531dcd63e")
 		)
@@ -8630,6 +8751,17 @@
 		)
 		(property "Description" "1k UART series resistor; not proof of safe back-powering. Verify powerboard transceiver limits and sequencing. STM32H723 DS13313 Tables 10/50."
 			(at 55.88 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" ""
+			(at 55.88 80.01 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8817,6 +8949,28 @@
 				)
 			)
 		)
+		(property "Vendor PN" "612-TSW-102-07-G-D-ND"
+			(at 243.84 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Shunt VPN" "SAM8858-ND"
+			(at 243.84 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
 			(uuid "f0736cdf-0afc-4c91-8afd-6dda629cfc3c")
 		)
@@ -8992,6 +9146,17 @@
 				)
 			)
 		)
+		(property "Vendor PN" "296-TPS2116DRLRCT-ND"
+			(at 297.18 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "cee4c61e-6977-4be8-a1ef-417a1bc65918")
 		)
@@ -9100,6 +9265,17 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 355.6 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d4724589-eee0-47fb-8fd3-d2bbdf425bee")
 		)
@@ -9171,6 +9347,17 @@
 			)
 		)
 		(property "Description" "VBUS input capacitor at the USB side. USB 2.0 Device Capacitance ECN requires 1.0-10uF on VBUS. 2.2uF X7R >= 10V keeps >= 1uF after DC bias."
+			(at 55.88 214.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" ""
 			(at 55.88 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -9504,6 +9691,17 @@
 				)
 			)
 		)
+		(property "Vendor PN" "296-48382-1-ND"
+			(at 137.16 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "6"
 			(uuid "09f5c72a-843a-440a-98ba-13051e254009")
 		)
@@ -9598,6 +9796,17 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 266.7 105.41 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "3970994a-e834-4575-b991-0a2430147a9d")
 		)
@@ -9679,6 +9888,17 @@
 		)
 		(property "MPN" "Bourns MF-MSMF125/16X-2"
 			(at 201.93 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" "118-MF-MSMF125/16X-2CT-ND"
+			(at 201.93 165.1 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9855,6 +10075,17 @@
 				)
 			)
 		)
+		(property "Vendor PN" "455-B8B-XH-A-ND"
+			(at 45.72 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "0f293c9c-8363-48ee-bd7c-63b32e20ac5b")
 		)
@@ -9954,6 +10185,17 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 170.18 214.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "b01ede44-17f6-4229-ba32-bc33bc030012")
 		)
@@ -10025,6 +10267,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 254 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" ""
 			(at 254 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -10281,6 +10534,17 @@
 				)
 			)
 		)
+		(property "Vendor PN" "296-48382-1-ND"
+			(at 137.16 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "7"
 			(uuid "64eccce1-f631-49b5-bc47-82783de82594")
 		)
@@ -10442,6 +10706,17 @@
 			)
 		)
 		(property "Description" "PWR_UART_TX logic-analyser access; the line otherwise only exists on the J15 cable."
+			(at 72.39 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" ""
 			(at 72.39 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -10682,6 +10957,17 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 355.6 163.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "6186637d-04b4-4cde-b65d-f407c0f79e52")
 		)
@@ -10839,6 +11125,17 @@
 			)
 		)
 		(property "MPN" "Nexperia BZX384-C10"
+			(at 121.92 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" ""
 			(at 121.92 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -11027,6 +11324,28 @@
 				)
 			)
 		)
+		(property "Vendor PN" "612-TSW-103-07-G-D-ND"
+			(at 325.12 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Shunt VPN" "SAM8858-ND"
+			(at 325.12 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "2b8bfa51-00d7-48ff-852b-b50a057a79d6")
 		)
@@ -11195,6 +11514,17 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 355.6 102.87 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "83b00ef9-4da4-46d0-ac1e-03b11ced7bc6")
 		)
@@ -11342,6 +11672,17 @@
 		)
 		(property "Description" "Resistor"
 			(at 266.7 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" ""
+			(at 266.7 158.75 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11584,6 +11925,17 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 154.94 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4a0b8160-9a4a-4f97-b19e-320a7c549997")
 		)
@@ -11814,6 +12166,17 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 266.7 166.37 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "63fa79c1-9043-4f52-b014-fa0b1008b589")
 		)
@@ -11983,6 +12346,17 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 274.32 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "87328559-3269-4874-8b2c-afe5a4bcaa57")
 		)
@@ -12139,6 +12513,17 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 340.36 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ca5af90e-44dd-4ce0-a09a-801978e788a8")
 		)
@@ -12205,6 +12590,17 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 180.34 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" ""
 			(at 180.34 210.82 0)
 			(hide yes)
 			(show_name no)
@@ -12282,6 +12678,17 @@
 		)
 		(property "Description" "U2 ST pull-up (open-drain). High = powerboard 3V3 selected."
 			(at 312.42 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" ""
+			(at 312.42 179.07 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12449,6 +12856,17 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 327.66 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "995a306e-bbc2-4497-aeed-3690d360f2dd")
 		)
@@ -12540,6 +12958,28 @@
 			)
 		)
 		(property "Shunt_MPN" "SNT-100-BK-G"
+			(at 124.46 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" "612-TSW-103-07-G-D-ND"
+			(at 124.46 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Shunt VPN" "SAM8858-ND"
 			(at 124.46 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -12720,6 +13160,17 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 274.32 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "abf9636b-62bf-427c-9662-995a7e613ed1")
 		)
@@ -12812,6 +13263,17 @@
 				)
 			)
 		)
+		(property "Vendor PN" "785-1001-1-ND"
+			(at 116.84 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2cbcf546-ced3-423d-9ad5-a1c237b66c32")
 		)
@@ -12886,6 +13348,17 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 327.66 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" ""
 			(at 327.66 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -13052,6 +13525,17 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 66.04 80.01 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a0778da1-76a9-4f0f-8805-4dda8a9af623")
 		)
@@ -13133,6 +13617,17 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 317.5 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8d72b5dd-431a-478e-aafc-e7f87578a1a1")
 		)
@@ -13203,6 +13698,17 @@
 		)
 		(property "Description" "Resistor"
 			(at 116.84 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" ""
+			(at 116.84 118.11 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13445,6 +13951,17 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 78.74 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "76600482-b468-4855-b036-35b023c36c42")
 		)
@@ -13533,6 +14050,28 @@
 			)
 		)
 		(property "Shunt_MPN" "SNT-100-BK-G"
+			(at 43.18 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" "612-TSW-102-07-G-D-ND"
+			(at 43.18 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Shunt VPN" "SAM8858-ND"
 			(at 43.18 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -13705,6 +14244,17 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 300.99 124.46 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4c9fd393-b7a5-4437-bc0f-70082a341d5c")
 		)
@@ -13774,6 +14324,17 @@
 			)
 		)
 		(property "Description" "PWR_UART_RX logic-analyser access."
+			(at 72.39 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" ""
 			(at 72.39 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -13862,6 +14423,17 @@
 		)
 		(property "Tolerance" "1%"
 			(at 316.23 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" ""
+			(at 316.23 124.46 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14106,6 +14678,17 @@
 			)
 		)
 		(property "MPN" "Diodes AP7361C-33E-13"
+			(at 149.86 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" "AP7361C-33E-13DICT-ND"
 			(at 149.86 210.82 0)
 			(hide yes)
 			(show_name no)
