@@ -5129,77 +5129,6 @@
 		)
 		(uuid "e91de264-d22b-4501-bcf9-879991fc005c")
 	)
-	(text "USB VBUS AND 3V3 LDO U3"
-		(exclude_from_sim no)
-		(at 40.64 196.85 0)
-		(effects
-			(font
-				(size 2 2)
-				(thickness 0.4)
-				(bold yes)
-				(color 0 0 132 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "16e0dd19-30b6-4064-952d-214b9fd9cb3b")
-	)
-	(text "5V MUX U1: AUTO; BYPASS AT J15"
-		(exclude_from_sim no)
-		(at 241.3 77.47 0)
-		(effects
-			(font
-				(size 2 2)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "29437a54-e9a5-44f2-b876-8b0efa52f226")
-	)
-	(text "USB INPUT: C55+C5 = 12.2uF directly on VBUS; C2 adds 10uF via J17.\nBypass has no mux soft-start or reverse blocking; validate inrush and load.\nPTC rating is not USB-current permission. USB 3V3 still uses U3 LDO.\nSources: TPS2116 7.3.2; MF-MSMF; AP7361C."
-		(exclude_from_sim no)
-		(at 110.49 232.41 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "30f9046a-f1d7-4b10-83e0-5baacf08f677")
-	)
-	(text "3V3 MUX U2: AUTO; BYPASS AT J16"
-		(exclude_from_sim no)
-		(at 241.3 148.59 0)
-		(effects
-			(font
-				(size 2 2)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "55b1c566-f825-46a3-b386-957b7d4575f0")
-	)
-	(text "J15/J16: ONE cap each, same position on both.\n1-2 MUX | 3-4 POWERBOARD | 5-6 USB. No cap = OFF.\nPOWER OFF before moving caps. Multiple caps SHORT SOURCES."
-		(exclude_from_sim no)
-		(at 220.98 43.18 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "64819f11-bd12-4e52-a2a8-bfda0bbfa0b9")
-	)
-	(text "3V3 POWER PATHS: J18 INPUT LINKS / J16 LOAD SELECT"
-		(exclude_from_sim no)
-		(at 220.98 15.24 0)
-		(effects
-			(font
-				(size 1.5 1.5)
-			)
-			(justify left top)
-		)
-		(uuid "7bbe6ebd-e390-44f1-a122-9ae16bb74dd3")
-	)
 	(text "PROTECTION LIMITS: TVS0500 clamps up to 9.2 V at 43 A.\nThis is NOT proof of protection for 6 V-absolute-max TPS2116 or 3V3 loads.\nPTCs are thermal devices, not fast current limits; verify fault coordination.\nSources: TVS0500, TPS2116 absolute ratings, Bourns MF-MSMF."
 		(exclude_from_sim no)
 		(at 223.52 248.92 0)
@@ -5211,42 +5140,6 @@
 		)
 		(uuid "7cf2295f-503d-4661-a083-890e676ddccb")
 	)
-	(text "PHYSICAL BYPASS: J15/J16 carry load current, not PR1 control.\nFor recovery: power OFF, remove all J17/J18 caps, select PB or USB on J15/J16.\nBypass omits mux reverse blocking / soft-start. Source fuses remain.\nST reports MUX state only; cannot identify bypass source or USB current budget.\nControl/status resistors remain: NOT galvanic or arbitrary-fault isolation.\nSources: TPS2116 SLVSFG1A 7.3 / 7.6.1; Samtec TSW and SNT datasheets."
-		(exclude_from_sim no)
-		(at 20.32 262.89 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "82594232-e3ec-4a9b-8f32-0018c4c10cd2")
-	)
-	(text "5V INPUT: Q1 REVERSE POLARITY, D9 TVS, F2 FUSE"
-		(exclude_from_sim no)
-		(at 100.33 77.47 0)
-		(effects
-			(font
-				(size 2 2)
-				(thickness 0.4)
-				(bold yes)
-				(color 0 0 132 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "86734f9c-4944-4910-8e69-63360ddcaa62")
-	)
-	(text "R1/R2 + R58: AUTO ~3.80 V fall / 4.13 V rise\nonly with 3.3 V ST bias. VREF tolerance is +/-8%."
-		(exclude_from_sim no)
-		(at 243.84 129.54 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "90e261e1-c205-4f24-90de-1f08f653118d")
-	)
 	(text "PWR_FLAGs after jumpers assume the documented caps are installed.\nThey are ERC source assertions, not permanent electrical bridges."
 		(exclude_from_sim no)
 		(at 220.98 57.15 0)
@@ -5257,100 +5150,6 @@
 			(justify left top)
 		)
 		(uuid "a99c709c-ee4f-400e-b908-7fd18fd0ca9e")
-	)
-	(text "J17/J18: fit BOTH caps for normal operation.\nRemove ALL FOUR input caps for failed-mux recovery."
-		(exclude_from_sim no)
-		(at 20.32 43.18 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "b0b1cafc-e5b8-4edf-a763-d2f51975cb89")
-	)
-	(text "J1: 1-2 +5V; 3-4 +3V3; 5-6 GND; 7 TX; 8 RX.\nMate/cable pinout and load remain external-interface requirements.\nQ1 polarity agrees with AO3401A pinout. No 3V3 reverse-polarity FET.\nR46/R47 limit current; they do not guarantee powered-off isolation.\nPTC faults and mux source change can still interrupt other loads."
-		(exclude_from_sim no)
-		(at 156.21 279.4 0)
-		(effects
-			(font
-				(size 1.1 1.1)
-			)
-			(justify left bottom)
-		)
-		(uuid "b44e9fff-c821-4ee4-8b06-26132838cdcd")
-	)
-	(text "R3/R4 + R60: AUTO thresholds depend on ST supply.\nNominal fall ~2.34 V, rise ~2.57 V; NOT rail-valid detection."
-		(exclude_from_sim no)
-		(at 243.84 190.5 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "bde94863-57d1-4c4c-83e7-15141f9efb20")
-	)
-	(text "3V3 INPUT: D10 TVS, F3 FUSE"
-		(exclude_from_sim no)
-		(at 81.28 151.13 0)
-		(effects
-			(font
-				(size 2 2)
-				(thickness 0.4)
-				(bold yes)
-				(color 0 0 132 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "c656a3c7-c368-4776-8b56-0fc72e1f128e")
-	)
-	(text "5V POWER PATHS: J17 INPUT LINKS / J15 LOAD SELECT"
-		(exclude_from_sim no)
-		(at 20.32 15.24 0)
-		(effects
-			(font
-				(size 1.5 1.5)
-			)
-			(justify left top)
-		)
-		(uuid "ca3dcee6-2e1e-469e-864d-71ebd531eecf")
-	)
-	(text "D11: BZX384-C10 gate clamp; characterize transients.\n10 V rating is tested at 5 mA, not the R43 bias current."
-		(exclude_from_sim no)
-		(at 102.87 130.81 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "cbbb2c96-1832-4eed-92e0-cf08e75e17f1")
-	)
-	(text "POWER LAYOUT: pending PCB and thermal verification.\nMinimize TVS return inductance; input/output caps close to U1/U2.\nSize copper from actual load, temperature and stackup, not a fixed 1 mm rule.\nTPS2116 section 10; AP7361C thermal data; TVS0500 layout guidance."
-		(exclude_from_sim no)
-		(at 240.03 68.58 0)
-		(effects
-			(font
-				(size 1.1 1.1)
-			)
-			(justify left bottom)
-		)
-		(uuid "cec243ae-89d3-4c77-8376-76ec606ce292")
-	)
-	(text "POWERBOARD CONNECTOR J1"
-		(exclude_from_sim no)
-		(at 17.78 60.96 0)
-		(effects
-			(font
-				(size 2 2)
-				(thickness 0.4)
-				(bold yes)
-				(color 0 0 132 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "eba1d35b-53c5-487d-9121-8b8956a4eb76")
 	)
 	(junction
 		(at 327.66 160.02)
@@ -7114,6 +6913,91 @@
 		)
 		(uuid "c730dfa5-6691-4d94-921f-81ceb138b856")
 	)
+  (text "USB VBUS AND 3V3 LDO U7"
+    (at 40.64 196.85 0)
+    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
+    (uuid "bc7ffcc6-d360-4f2c-a932-c4f07bb8c2d5")
+  )
+  (text "5V MUX U8: AUTO; BYPASS AT J16"
+    (at 241.3 77.47 0)
+    (effects (font (size 2 2) (bold yes)) (justify left bottom))
+    (uuid "f8519224-3379-4f75-aedd-88d57fef10d6")
+  )
+  (text "USB INPUT: C30+C31 = 6.9uF directly on VBUS; C35 adds 10uF via J14.\nBypass has no mux soft-start or reverse blocking; validate inrush and load.\nPTC rating is not USB-current permission. USB 3V3 still uses U7 LDO.\nSources: TPS2116 7.3.2; MF-MSMF; AP7361C."
+    (at 110.49 232.41 0)
+    (effects (font (size 1.27 1.27)) (justify left top))
+    (uuid "62fc2f09-3187-4ae6-9c70-552fb3341983")
+  )
+  (text "3V3 MUX U9: AUTO; BYPASS AT J18"
+    (at 241.3 148.59 0)
+    (effects (font (size 2 2) (bold yes)) (justify left bottom))
+    (uuid "d9829972-2b36-4d58-9a79-404525a91bb3")
+  )
+  (text "J16/J18: ONE cap each, same position on both.\n1-2 MUX | 3-4 POWERBOARD | 5-6 USB. No cap = OFF.\nPOWER OFF before moving caps. Multiple caps SHORT SOURCES."
+    (at 220.98 43.18 0)
+    (effects (font (size 1.27 1.27)) (justify left top))
+    (uuid "81b53250-73cf-4914-a776-c23a2bb95c3f")
+  )
+  (text "3V3 POWER PATHS: J17 INPUT LINKS / J18 LOAD SELECT"
+    (at 220.98 15.24 0)
+    (effects (font (size 1.5 1.5)) (justify left top))
+    (uuid "f3ffe13e-6e00-4051-a61f-c85d04407c09")
+  )
+  (text "PHYSICAL BYPASS: J16/J18 carry load current, not PR1 control.\nFor recovery: power OFF, remove all J14/J17 caps, select PB or USB on J16/J18.\nBypass omits mux reverse blocking / soft-start. Source fuses remain.\nST reports MUX state only; cannot identify bypass source or USB current budget.\nControl/status resistors remain: NOT galvanic or arbitrary-fault isolation.\nSources: TPS2116 SLVSFG1A 7.3 / 7.6.1; Samtec TSW and SNT datasheets."
+    (at 20.32 262.89 0)
+    (effects (font (size 1.27 1.27)) (justify left top))
+    (uuid "255abc0c-a634-4305-b27b-2b5e0a698521")
+  )
+  (text "5V INPUT: Q1 REVERSE POLARITY, D3 TVS, F5 FUSE"
+    (at 100.33 77.47 0)
+    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
+    (uuid "6738b783-17f0-48dd-bb51-6533582e197d")
+  )
+  (text "J14/J17: fit BOTH caps for normal operation.\nRemove ALL FOUR input caps for failed-mux recovery."
+    (at 20.32 43.18 0)
+    (effects (font (size 1.27 1.27)) (justify left top))
+    (uuid "81581b65-9164-451f-80d7-698ae6704c10")
+  )
+  (text "J15: 1-2 +5V; 3-4 +3V3; 5-6 GND; 7 TX; 8 RX.\nMate/cable pinout and load remain external-interface requirements.\nQ1 polarity agrees with AO3401A pinout. No 3V3 reverse-polarity FET.\nR33/R34 limit current; they do not guarantee powered-off isolation.\nPTC faults and mux source change can still interrupt other loads."
+    (at 156.21 279.4 0)
+    (effects (font (size 1.1 1.1)) (justify left bottom))
+    (uuid "e39d0fd9-a35e-4acb-8e78-1947d8cdef13")
+  )
+  (text "3V3 INPUT: D4 TVS, F6 FUSE"
+    (at 81.28 151.13 0)
+    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
+    (uuid "aa45ca84-5269-40cd-bd7c-379869f9816f")
+  )
+  (text "5V POWER PATHS: J14 INPUT LINKS / J16 LOAD SELECT"
+    (at 20.32 15.24 0)
+    (effects (font (size 1.5 1.5)) (justify left top))
+    (uuid "0ed5ef8e-72ca-4f92-bfeb-4676c76b6d82")
+  )
+  (text "D2: BZX384-C10 gate clamp; characterize transients.\n10 V rating is tested at 5 mA, not the R35 bias current."
+    (at 102.87 130.81 0)
+    (effects (font (size 1 1)) (justify left bottom))
+    (uuid "3f645bfe-4208-4102-9135-acccdc38c25a")
+  )
+  (text "POWER LAYOUT: PCB routed; thermal verification pending.\nMinimize TVS return inductance; input/output caps close to U8/U9.\nSize copper from actual load, temperature and stackup, not a fixed 1 mm rule.\nTPS2116 section 10; AP7361C thermal data; TVS0500 layout guidance."
+    (at 240.03 68.58 0)
+    (effects (font (size 1.1 1.1)) (justify left bottom))
+    (uuid "69bf5e71-4427-44d4-8f42-68acc85ae0b4")
+  )
+  (text "POWERBOARD CONNECTOR J15"
+    (at 17.78 60.96 0)
+    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
+    (uuid "bf09b795-579f-48f5-811f-f8b70d0ecbcb")
+  )
+  (text "R36/R37 + R40: AUTO ~3.55 V fall / 3.88 V rise (VREF 1.00 V)\nonly with 3.3 V ST bias. VREF tolerance is +/-8%: fall 3.24-3.86 V."
+    (at 243.84 129.54 0)
+    (effects (font (size 1 1)) (justify left bottom))
+    (uuid "2d5a78a8-7c47-406d-8bcd-09b57c1ef056")
+  )
+  (text "R38/R39 + R41: ST pull-up is +3V3, which tracks VIN1 while selected.\nNominal fall ~2.34 V, rise ~2.57 V; NOT rail-valid detection."
+    (at 243.84 190.5 0)
+    (effects (font (size 1 1)) (justify left bottom))
+    (uuid "eb567ba8-dea3-4442-82a0-2eb639e0411a")
+  )
 	(symbol
 		(lib_id "Device:R")
 		(at 300.99 185.42 90)
@@ -7167,7 +7051,7 @@
 				)
 			)
 		)
-		(property "Description" "1M ST-to-AUTO3 feedback. ST pull-up follows U2 output while VIN1 selected; self-consistent nominal falling threshold approximately 2.34 V, not 2.24 V. Rising approx. 2.57 V. Not adequate proof of 3V3 peripheral brownout protection."
+		(property "Description" "1M ST-to-AUTO3 feedback. ST pull-up follows U9 output while VIN1 selected; self-consistent nominal falling threshold approximately 2.34 V, not 2.24 V. Rising approx. 2.57 V. Not adequate proof of 3V3 peripheral brownout protection."
 			(at 300.99 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -7203,7 +7087,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "1%"
+			(at 300.99 185.42 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 266.7 97.79 0)
@@ -7293,7 +7186,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "1%"
+			(at 266.7 97.79 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 177.8 36.83 0)
@@ -7738,7 +7640,7 @@
 				)
 			)
 		)
-		(property "Description" "APT1608EC indicator with R6=1.5k. Approx. (3.3-2)/1500=0.87 mA, using illustrative VF=2 V; brightness at this current is not guaranteed by the 20 mA bin."
+		(property "Description" "APT1608EC indicator with R46=1.5k. Approx. (3.3-2)/1500=0.87 mA, using illustrative VF=2 V; brightness at this current is not guaranteed by the 20 mA bin."
 			(at 355.6 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -7760,7 +7662,7 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "754-1117-1-ND"
 			(at 355.6 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -7926,7 +7828,7 @@
 				)
 			)
 		)
-		(property "Description" "U1 ST pull-up (open-drain). High = powerboard 5V selected."
+		(property "Description" "U8 ST pull-up (open-drain). High = powerboard 5V selected."
 			(at 312.42 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -8016,7 +7918,7 @@
 				)
 			)
 		)
-		(property "Description" "+3V3_RAW (F3 input). With TP2 gives the F3+U2 drop (DESIGN_NOTES.md M2, radio needs >= 3.0V)."
+		(property "Description" "+3V3_RAW (F6 input). With TP17 gives the F6+U9 drop (DESIGN_NOTES.md M2, radio needs >= 3.0V)."
 			(at 154.94 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -9243,7 +9145,7 @@
 				)
 			)
 		)
-		(property "Description" "APT1608EC indicator with R5=3.3k. Approx. (5-2)/3300=0.91 mA, using illustrative VF=2 V; brightness at this current is not guaranteed by the 20 mA bin."
+		(property "Description" "APT1608EC indicator with R45=3.3k. Approx. (5-2)/3300=0.91 mA, using illustrative VF=2 V; brightness at this current is not guaranteed by the 20 mA bin."
 			(at 355.6 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -9265,7 +9167,7 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "754-1117-1-ND"
 			(at 355.6 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -9669,7 +9571,7 @@
 				)
 			)
 		)
-		(property "Description" "TVS0500 after Q1; IN pins4/5/6 now joined to Q1 source/F2 input by explicit junction. Max 9.2V clamp at 43A is above TPS2116 6V absolute maximum: system surge survival not established."
+		(property "Description" "TVS0500 after Q1; IN pins4/5/6 now joined to Q1 source/F5 input by explicit junction. Max 9.2V clamp at 43A is above TPS2116 6V absolute maximum: system surge survival not established."
 			(at 137.16 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -9821,7 +9723,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "1%"
+			(at 266.7 105.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:Polyfuse")
 		(at 201.93 165.1 270)
@@ -10946,7 +10857,7 @@
 				)
 			)
 		)
-		(property "Description" "1.5k current limiter for D2: approx. 0.87mA with 3.3V and illustrative VF=2V. At 3.6V and -5% R even VF=0 bounds current at 2.53mA. Does not guarantee equal perceived brightness to D1."
+		(property "Description" "1.5k current limiter for D6: approx. 0.87mA with 3.3V and illustrative VF=2V. At 3.6V and -5% R even VF=0 bounds current at 2.53mA. Does not guarantee equal perceived brightness to D5."
 			(at 355.6 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -11113,7 +11024,7 @@
 				)
 			)
 		)
-		(property "Description" "BZX384-C10 zener between Q1 gate/source. Nominal10V tested at5mA; R43 provides much lower bias in many faults, so dynamic VGS compliance needs validation. AO3401A absolute VGS +/-12V."
+		(property "Description" "BZX384-C10 zener between Q1 gate/source. Nominal10V tested at5mA; R35 provides much lower bias in many faults, so dynamic VGS compliance needs validation. AO3401A absolute VGS +/-12V."
 			(at 121.92 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -11503,7 +11414,7 @@
 				)
 			)
 		)
-		(property "Description" "3.3k current limiter for D1: approx. 0.91mA with 5V and illustrative VF=2V. At 5.5V and -5% R even VF=0 bounds current at 1.76mA; brightness must be evaluated (APT1608EC 20mA bin)."
+		(property "Description" "3.3k current limiter for D5: approx. 0.91mA with 5V and illustrative VF=2V. At 5.5V and -5% R even VF=0 bounds current at 1.76mA; brightness must be evaluated (APT1608EC 20mA bin)."
 			(at 355.6 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -11706,7 +11617,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "1%"
+			(at 266.7 158.75 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:VBUS")
 		(at 50.8 210.82 0)
@@ -11914,7 +11834,7 @@
 				)
 			)
 		)
-		(property "Description" "+5V_PROT (F2 input). With TP1 gives the F2+U1 drop."
+		(property "Description" "+5V_PROT (F5 input). With TP16 gives the F5+U8 drop."
 			(at 154.94 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -12191,7 +12111,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "1%"
+			(at 266.7 166.37 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 88.9 93.98 0)
@@ -12291,7 +12220,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2uF 10V X5R"
+		(property "Value" "2.2uF 10V X7R"
 			(at 274.955 176.53 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12676,7 +12605,7 @@
 				)
 			)
 		)
-		(property "Description" "U2 ST pull-up (open-drain). High = powerboard 3V3 selected."
+		(property "Description" "U9 ST pull-up (open-drain). High = powerboard 3V3 selected."
 			(at 312.42 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -12881,7 +12810,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "16V X7R"
+			(at 327.66 163.83 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Connector_Generic:Conn_02x03_Odd_Even")
 		(at 124.46 35.56 0)
@@ -13383,7 +13321,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "16V X7R"
+			(at 327.66 102.87 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 177.8 29.21 0)
@@ -14233,7 +14180,7 @@
 				)
 			)
 		)
-		(property "Description" "1M ST-to-AUTO5 positive feedback. At VREF=1 V and ST-high=3.3 V: approximately 3.80 V falling / 4.13 V rising. Actual ST bias, VOL, resistor and VREF tolerances change thresholds. TPS2116 electrical data; not power-good."
+		(property "Description" "1M ST-to-AUTO5 positive feedback. At VREF=1 V and ST-high=3.3 V (R42 to +3V3): approximately 3.55 V falling / 3.88 V rising with R36 100k / R37 36k. Actual ST bias, VOL, resistor and VREF tolerances change thresholds. TPS2116 electrical data; not power-good."
 			(at 300.99 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -14269,7 +14216,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "1%"
+			(at 300.99 124.46 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 72.39 72.39 0)
@@ -14410,7 +14366,7 @@
 				)
 			)
 		)
-		(property "Description" "Limits accidental PA2-high / U1-ST-low contention. At 3.6 V, R83 and R57 (10k) contribute <0.76 mA including 5% R57 tolerance and R58 feedback; TPS2116 VOL specified at 1 mA. DS13313 GPIO leakage gives <3 mV added input error."
+		(property "Description" "Limits accidental PA2-high / U8-ST-low contention. At 3.6 V, R42 and R44 (10k) contribute <0.76 mA including 5% R44 tolerance and R40 feedback; TPS2116 VOL specified at 1 mA. DS13313 GPIO leakage gives <3 mV added input error."
 			(at 316.23 124.46 0)
 			(hide yes)
 			(show_name no)

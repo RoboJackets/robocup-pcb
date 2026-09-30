@@ -3614,16 +3614,6 @@
 		)
 		(uuid "15767f32-98c4-4ffb-bd4c-5cd4f851812b")
 	)
-	(text "USB LAYOUT: keep DP/DM coupled over an uninterrupted ground reference.\nJoin duplicate Type-C data contacts at J2; U5 close to connector.\nFinal impedance/skew depend on stackup and PHY timing, not series R alone.\nDS4260 Figures 6/17: minimize ESD path inductance. No routed PCB yet."
-		(at 105.41 83.82 0)
-		(effects
-			(font
-				(size 1.1 1.1)
-			)
-			(justify left bottom)
-		)
-		(uuid "2eab22f4-f37a-4539-af95-adf525593d78")
-	)
 	(text "USB LOAD: MF-MSMF075/16X Ihold = 0.75 A at 23C, 0.55 A at 50C.\nActual concurrent worst-case board/external current is not established.\nRestricted bench use until host current, startup and thermal budget are checked.\nF1 does not negotiate USB current; replacing it alone cannot approve more load."
 		(at 60.96 170.18 0)
 		(effects
@@ -3646,16 +3636,6 @@
 			(justify left bottom)
 		)
 		(uuid "5cabd68c-3fcf-4dfd-a283-05b4c8cf62ec")
-	)
-	(text "SWD is direct; damping depends on probe/cable edges and layout.\nDS13313 does not prescribe a universal 22R or 55R series resistor.\nNRST has an internal 30-50k pull-up; C32 = 100nF (DS13313 NRST data).\nU5 clamp rail is +3V3: validate rail injection and power-off behavior.\nUSBLC6-2 DS4260 pinout/topology; short return path required."
-		(at 199.39 156.21 0)
-		(effects
-			(font
-				(size 1.1 1.1)
-			)
-			(justify left bottom)
-		)
-		(uuid "ef5767a3-207d-47fb-90a2-9b73c0d11012")
 	)
 	(label "USB_DP_CON"
 		(at 104.14 119.38 0)
@@ -3783,6 +3763,16 @@
 		)
 		(uuid "7324e98a-8a67-4d67-8b2b-f6ad80557724")
 	)
+  (text "USB LAYOUT: keep DP/DM coupled over an uninterrupted ground reference.\nJoin duplicate Type-C data contacts at J2; U3 close to connector.\nFinal impedance/skew depend on stackup and PHY timing, not series R alone.\nDS4260 Figures 6/17: minimize ESD path inductance. Routed 90R pair over In1 GND."
+    (at 105.41 83.82 0)
+    (effects (font (size 1.1 1.1)) (justify left bottom))
+    (uuid "3c1f8674-cc10-447f-a9a6-a9b4e188efa7")
+  )
+  (text "SWD is direct; damping depends on probe/cable edges and layout.\nDS13313 does not prescribe a universal 22R or 55R series resistor.\nNRST has an internal 30-50k pull-up; C20 = 100nF (DS13313 NRST data).\nU3 clamp rail is +3V3: validate rail injection and power-off behavior.\nUSBLC6-2 DS4260 pinout/topology; short return path required."
+    (at 199.39 156.21 0)
+    (effects (font (size 1.1 1.1)) (justify left bottom))
+    (uuid "3083236b-03db-45f9-bfcd-0c07ebe67e21")
+  )
 	(symbol
 		(lib_id "power:GND")
 		(at 228.6 127 0)
@@ -4441,7 +4431,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.apem.com/int/mjtp-series-1-1-1-1.html"
+		(property "Datasheet" "https://www.farnell.com/datasheets/1598766.pdf"
 			(at 215.9 127 0)
 			(hide yes)
 			(show_name no)
@@ -4742,7 +4732,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.apem.com/int/mjtp-series-1-1-1-1.html"
+		(property "Datasheet" "https://www.farnell.com/datasheets/1598766.pdf"
 			(at 215.9 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -5179,7 +5169,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://suddendocs.samtec.com/catalog_english/tsw_th.pdf"
 			(at 233.68 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -5228,6 +5218,15 @@
 		)
 	
 		(property "Vendor PN" ""
+			(at 233.68 114.3 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samtec TSW-105-07-G-S"
 			(at 233.68 114.3 0)
 			(hide yes)
 			(effects
@@ -5597,7 +5596,7 @@
 				)
 			)
 		)
-		(property "Description" "USB VBUS TVS at J2, same part as D9/D10. TVS0500: VRWM 5V, VBR 7.5-8.4V, flat clamp 9.2V at 43A. Place right at J2 VBUS pins with a short GND via."
+		(property "Description" "USB VBUS TVS at J2, same part as D3/D4. TVS0500: VRWM 5V, VBR 7.5-8.4V, flat clamp 9.2V at 43A. Place right at J2 VBUS pins with a short GND via."
 			(at 99.06 91.44 0)
 			(hide yes)
 			(show_name no)

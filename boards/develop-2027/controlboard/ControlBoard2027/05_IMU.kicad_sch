@@ -2476,7 +2476,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "16V X7R"
+			(at 162.56 143.51 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C")
 		(at 152.4 143.51 0)
@@ -2568,7 +2577,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "16V X7R"
+			(at 152.4 143.51 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:+3V3")
 		(at 162.56 139.7 0)

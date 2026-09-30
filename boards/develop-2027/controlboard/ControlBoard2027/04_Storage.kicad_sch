@@ -2637,56 +2637,6 @@
 		)
 		(uuid "f421389e-e4fd-4b97-aa22-56bcd9cc5e5f")
 	)
-	(text "R63 = 30R provisional CLK source damping near PC12.\nCMD and DAT0-3 currently have no series damping; check both directions.\n47k pull-ups are bias, not impedance termination.\nNo data sheet establishes a constant 25R MCU output impedance."
-		(exclude_from_sim no)
-		(at 59.69 175.26 0)
-		(effects
-			(font
-				(size 1.1 1.1)
-			)
-			(justify left bottom)
-		)
-		(uuid "2b90965c-d9f6-418f-808b-87ee4fad138e")
-	)
-	(text "SD ESD U14 AT J4, CLK TEST POINT"
-		(exclude_from_sim no)
-		(at 158.75 184.15 0)
-		(effects
-			(font
-				(size 2 2)
-				(thickness 0.4)
-				(bold yes)
-				(color 0 0 132 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "2c2b87fc-1d1a-4e04-a0cb-3e46c8df6281")
-	)
-	(text "MICROSD J4 ON SDMMC1 4-BIT (NO CARD DETECT)"
-		(exclude_from_sim no)
-		(at 59.69 83.82 0)
-		(effects
-			(font
-				(size 2 2)
-				(thickness 0.4)
-				(bold yes)
-				(color 0 0 132 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "44684b75-d88a-4ffb-ae2c-3e0eff58cf2d")
-	)
-	(text "SDMMC LAYOUT: review CLK, CMD and DAT0-3 as one timing interface.\nNo verified stackup, lengths or fixed 55R target exists for this empty PCB.\nKeep return paths continuous, short stubs and local J4 bypass capacitors.\nUse DS13313 SDMMC timing plus the selected card's data sheet."
-		(exclude_from_sim no)
-		(at 189.23 171.45 0)
-		(effects
-			(font
-				(size 1.1 1.1)
-			)
-			(justify left bottom)
-		)
-		(uuid "85cd5555-60d1-4c62-ba00-ec934577aaad")
-	)
 	(text "SD CARD: select an actual card MPN before final timing approval.\nKingston SDCIT example: identification clock <=400 kHz, NOT 8 MHz.\nHigher transfer rates require successful initialization and timing validation.\nShell is floating; DET unused; power cannot be cycled independently.\nCard recovery and shell/ESD treatment remain verification items."
 		(exclude_from_sim no)
 		(at 192.278 151.892 0)
@@ -3168,6 +3118,26 @@
 		)
 		(uuid "e05bf707-f789-4369-aee4-3be5e93ae4d7")
 	)
+  (text "R6 = 30R provisional CLK source damping near PC12.\nCMD and DAT0-3 currently have no series damping; check both directions.\n47k pull-ups are bias, not impedance termination.\nNo data sheet establishes a constant 25R MCU output impedance."
+    (at 59.69 175.26 0)
+    (effects (font (size 1.1 1.1)) (justify left bottom))
+    (uuid "d8d986e7-f7d3-4da5-8863-8932fce095f4")
+  )
+  (text "SD ESD U1 AT J1, CLK TEST POINT"
+    (at 158.75 184.15 0)
+    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
+    (uuid "0fe1f8af-97d2-44e8-8daa-dcd39ecf62e7")
+  )
+  (text "MICROSD J1 ON SDMMC1 4-BIT (NO CARD DETECT)"
+    (at 59.69 83.82 0)
+    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
+    (uuid "94ddc2ca-f7f9-4e84-918a-80ae31149b7b")
+  )
+  (text "SDMMC LAYOUT: review CLK, CMD and DAT0-3 as one timing interface.\nRouted ~50R over In1 GND; CLK/CMD/DAT0-3 matched 45.5-46.2 mm incl. R6.\nKeep return paths continuous, short stubs and local J1 bypass capacitors.\nUse DS13313 SDMMC timing plus the selected card's data sheet."
+    (at 189.23 171.45 0)
+    (effects (font (size 1.1 1.1)) (justify left bottom))
+    (uuid "9ccabccd-a724-437a-be78-4070028fae0f")
+  )
 	(symbol
 		(lib_id "power:GND")
 		(at 167.64 168.91 0)
@@ -3711,7 +3681,7 @@
 				)
 			)
 		)
-		(property "Description" "SD CLK at the card (J4 side of R63). Verify 8MHz with CLKDIV 3 before moving to CLKDIV 1 (24MHz)."
+		(property "Description" "SD CLK at the card (J1 side of R6). Verify 8MHz with CLKDIV 3 before moving to CLKDIV 1 (24MHz)."
 			(at 170.18 203.2 0)
 			(hide yes)
 			(show_name no)
@@ -4217,7 +4187,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "16V X7R"
+			(at 167.64 165.1 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:+3V3")
 		(at 83.82 105.41 0)
@@ -4926,7 +4905,7 @@
 				)
 			)
 		)
-		(property "Description" "ESD for the user-accessible SD slot: CLK (card side of R63), CMD, DAT0-3. TI SLVSBO7O: IEC 61000-4-2 +/-12kV contact, VRWM 5.5V, VBR 6.5V min, leakage 10nA max, ~0.5pF/line. Place at J4."
+		(property "Description" "ESD for the user-accessible SD slot: CLK (card side of R6), CMD, DAT0-3. TI SLVSBO7O: IEC 61000-4-2 +/-12kV contact, VRWM 5.5V, VBR 6.5V min, leakage 10nA max, ~0.5pF/line. Place at J1."
 			(at 203.2 218.44 0)
 			(hide yes)
 			(show_name no)

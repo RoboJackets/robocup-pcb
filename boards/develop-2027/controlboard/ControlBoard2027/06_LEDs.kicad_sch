@@ -1440,72 +1440,6 @@
 		)
 		(uuid "6dd9aa3e-712a-43e5-8058-0993a8b05c95")
 	)
-	(text "DOTSTAR CHAIN D3-D7 AND DECOUPLING"
-		(exclude_from_sim no)
-		(at 116.84 139.7 0)
-		(effects
-			(font
-				(size 2 2)
-				(thickness 0.4)
-				(bold yes)
-				(color 0 0 132 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "021a4a15-5918-4ee0-8468-81ad160c0518")
-	)
-	(text "U7 SPARE GATES"
-		(exclude_from_sim no)
-		(at 40.64 229.87 0)
-		(effects
-			(font
-				(size 2 2)
-				(thickness 0.4)
-				(bold yes)
-				(color 0 0 132 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "0ebbdc4e-94af-43bd-ab3c-654102aff20e")
-	)
-	(text "ROUTING - DOTSTARS\nU7 -> D3 CLK/DATA short and routed together, over GND.\nLED-to-LED CO->CI and DO->DI as matched pairs.\nC40-C44 at each LED VDD pin. C51 where +5V enters the chain.\nLEDs in the 5-dot shell pattern."
-		(exclude_from_sim no)
-		(at 199.39 149.86 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(bold yes)
-				(color 255 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "3a45f6a3-7628-4be4-aff9-fb794cbc0547")
-	)
-	(text "LEVEL SHIFT U7 (3.3V SPI TO 5V)"
-		(exclude_from_sim no)
-		(at 50.8 95.25 0)
-		(effects
-			(font
-				(size 2 2)
-				(thickness 0.4)
-				(bold yes)
-				(color 0 0 132 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "3e4e7d9c-55d7-4e2e-960f-3aeaa4c4325b")
-	)
-	(text "LED LEVEL SHIFT: U7 = SN74AHCT125, specified for VCC 4.5-5.5 V.\n3.3 V logic satisfies TTL input levels at a valid U7 supply.\nR66/R67 = 100k bias inputs low; unused gates disabled.\nD3-D7 = American Bright BB-2020BGR-TRB; use its data sheet/pad drawing.\nA muxed USB source does NOT guarantee >=4.5 V after all cable/fuse drops.\nFirmware current caps are requirements, not evidence of implemented limits.\nVerify LED startup/current, power budget and custom footprints.\nTP20/21 check chain input; TP18/19 check chain output."
-		(exclude_from_sim no)
-		(at 297.18 252.73 0)
-		(effects
-			(font
-				(size 1.1 1.1)
-			)
-			(justify left bottom)
-		)
-		(uuid "d4557482-90fe-4fad-a1a9-6e0b67daae27")
-	)
 	(junction
 		(at 152.4 195.58)
 		(diameter 0)
@@ -2040,6 +1974,31 @@
 		)
 		(uuid "e942c53e-f5fb-4318-9c42-cc9460a5573a")
 	)
+  (text "DOTSTAR CHAIN D7-D11 AND DECOUPLING"
+    (at 116.84 139.7 0)
+    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
+    (uuid "a74d4f62-8248-4291-aa18-a2fb085a2e6c")
+  )
+  (text "U10 SPARE GATES"
+    (at 40.64 229.87 0)
+    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
+    (uuid "959c1ae4-d6e0-4110-be18-2714a14bbc1c")
+  )
+  (text "ROUTING - DOTSTARS\nU10 -> D7 CLK/DATA short and routed together, over GND.\nLED-to-LED CO->CI and DO->DI as matched pairs.\nC43-C47 at each LED VDD pin. C42 where +5V enters the chain.\nLEDs in the 5-dot shell pattern."
+    (at 199.39 149.86 0)
+    (effects (font (size 1.27 1.27) (bold yes) (color 255 0 0 1)) (justify left bottom))
+    (uuid "d52f576b-7090-4129-bb69-8aec897a2f17")
+  )
+  (text "LEVEL SHIFT U10 (3.3V SPI TO 5V)"
+    (at 50.8 95.25 0)
+    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
+    (uuid "91ed53bf-233f-4dc5-b2e5-9d313ae26222")
+  )
+  (text "LED LEVEL SHIFT: U10 = SN74AHCT125, specified for VCC 4.5-5.5 V.\n3.3 V logic satisfies TTL input levels at a valid U10 supply.\nR47/R48 = 100k bias inputs low; unused gates disabled.\nD7-D11 = American Bright BB-2020BGR-TRB; use its data sheet/pad drawing.\nA muxed USB source does NOT guarantee >=4.5 V after all cable/fuse drops.\nFirmware current caps are requirements, not evidence of implemented limits.\nVerify LED startup/current, power budget and custom footprints.\nTP18/19 check chain input; TP20/21 check chain output."
+    (at 297.18 252.73 0)
+    (effects (font (size 1.1 1.1)) (justify left bottom))
+    (uuid "29c1d41c-dbaf-48a1-94b6-7d1859f225bd")
+  )
 	(symbol
 		(lib_id "Device:R")
 		(at 74.93 161.29 0)
@@ -2375,7 +2334,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "16V X7R"
+			(at 213.36 213.36 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 152.4 217.17 0)
@@ -2506,7 +2474,7 @@
 				)
 			)
 		)
-		(property "Description" "D7 SDO, end of the DotStar chain. Seeing valid data here proves all 5 LEDs pass data (each LED re-drives SDO)."
+		(property "Description" "D11 SDO, end of the DotStar chain. Seeing valid data here proves all 5 LEDs pass data (each LED re-drives SDO)."
 			(at 287.02 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -2708,7 +2676,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "16V X7R"
+			(at 274.32 213.36 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "LED:APA102-2020")
 		(at 243.84 180.34 0)
@@ -3713,7 +3690,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "16V X7R"
+			(at 182.88 213.36 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:+5V")
 		(at 121.92 209.55 0)
@@ -4064,7 +4050,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://americanbrightled.com/products/rgb-ic-led-components/"
+		(property "Datasheet" "~"
 			(at 137.16 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -4075,7 +4061,7 @@
 				)
 			)
 		)
-		(property "Description" "Beginning of LED chain: D3 CKI pin 5 after U7 level shifting. Compare against TP19 (D7 CKO)."
+		(property "Description" "Beginning of LED chain: D7 CKI pin 5 after U10 level shifting. Compare against TP21 (D11 CKO)."
 			(at 137.16 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -4304,7 +4290,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "16V X7R"
+			(at 104.14 120.65 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:+5V")
 		(at 99.06 243.84 0)
@@ -4764,7 +4759,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "16V X7R"
+			(at 243.84 213.36 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "LED:APA102-2020")
 		(at 152.4 180.34 0)
@@ -4999,7 +5003,7 @@
 				)
 			)
 		)
-		(property "Description" "D7 CKO, end of the chain clock. Check CLKH/CLKL > 30ns (BB-2020BGR-TRB p6) at 3 Mbit/s."
+		(property "Description" "D11 CKO, end of the chain clock. Check CLKH/CLKL > 30ns (BB-2020BGR-TRB p6) at 3 Mbit/s."
 			(at 287.02 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -5398,7 +5402,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://americanbrightled.com/products/rgb-ic-led-components/"
+		(property "Datasheet" "~"
 			(at 137.16 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -5409,7 +5413,7 @@
 				)
 			)
 		)
-		(property "Description" "Beginning of LED chain: D3 SDI pin 4 after U7 level shifting. Compare against TP18 (D7 SDO)."
+		(property "Description" "Beginning of LED chain: D7 SDI pin 4 after U10 level shifting. Compare against TP20 (D11 SDO)."
 			(at 137.16 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -5688,7 +5692,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "16V X7R"
+			(at 152.4 213.36 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "LED:APA102-2020")
 		(at 213.36 180.34 0)

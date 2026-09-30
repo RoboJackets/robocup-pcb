@@ -1641,17 +1641,6 @@
 		)
 		(uuid "28ae16b7-07f0-4ddc-aa02-b99d34440784")
 	)
-	(text "BUTTONS: R24-R26 pull up with 10k; R27-R29 series 10k; C37-C39 = 100nF.\nCalculated nominal time constants: press 1 ms, release 2 ms.\nAt +/-1% R and +/-10% C: 0.891-1.111 ms and 1.782-2.222 ms.\nThese tolerances must be specified in the BOM; current generic values do not prove them.\nRC filtering does not guarantee removal of all bounce; qualify switch and firmware.\nSeries R is between switch node and MCU/cap node, not between cap and MCU.\nInput leakage check uses STM32H723 DS13313 Table 51."
-		(exclude_from_sim no)
-		(at 60.96 175.26 0)
-		(effects
-			(font
-				(size 1.1 1.1)
-			)
-			(justify left bottom)
-		)
-		(uuid "33c705a4-c1b0-429d-a062-f737920df9dc")
-	)
 	(text "USER BUTTONS SW4-SW6 WITH RC DEBOUNCE"
 		(exclude_from_sim no)
 		(at 57.15 80.01 0)
@@ -1855,6 +1844,11 @@
 		)
 		(uuid "f9784638-8328-4b69-9393-95531d4af803")
 	)
+  (text "BUTTONS: R59-R61 pull up with 10k; R62-R64 series 10k; C50-C52 = 100nF.\nCalculated nominal time constants: press 1 ms, release 2 ms.\nAt +/-1% R and +/-10% C: 0.891-1.111 ms and 1.782-2.222 ms.\nBOM: R59-R64 are 1%; C50-C52 need a +/-10% X7R part.\nRC filtering does not guarantee removal of all bounce; qualify switch and firmware.\nSeries R is between switch node and MCU/cap node, not between cap and MCU.\nInput leakage check uses STM32H723 DS13313 Table 51."
+    (at 60.96 175.26 0)
+    (effects (font (size 1.1 1.1)) (justify left bottom))
+    (uuid "39a07d70-159a-4f5e-a38d-202346ed989d")
+  )
 	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 71.12 96.52 180)
@@ -1898,7 +1892,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.apem.com/int/mjtp-series-1-1-1-1.html"
+		(property "Datasheet" "https://www.farnell.com/datasheets/1598766.pdf"
 			(at 71.12 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -2000,7 +1994,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.apem.com/int/mjtp-series-1-1-1-1.html"
+		(property "Datasheet" "https://www.farnell.com/datasheets/1598766.pdf"
 			(at 71.12 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -2191,7 +2185,7 @@
 				)
 			)
 		)
-		(property "Description" "Debounce cap at the MCU pin side of R28."
+		(property "Description" "Debounce cap at the MCU pin side of R63."
 			(at 114.3 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -2227,7 +2221,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "16V X7R"
+			(at 114.3 123.19 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 81.28 115.57 0)
@@ -2317,7 +2320,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "1%"
+			(at 81.28 115.57 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 114.3 127 0)
@@ -2561,7 +2573,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "1%"
+			(at 81.28 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 105.41 119.38 90)
@@ -2615,7 +2636,7 @@
 				)
 			)
 		)
-		(property "Description" "Debounce R, see R27."
+		(property "Description" "Debounce R, see R62."
 			(at 105.41 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -2651,7 +2672,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "1%"
+			(at 105.41 119.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C")
 		(at 114.3 146.05 0)
@@ -2707,7 +2737,7 @@
 				)
 			)
 		)
-		(property "Description" "Debounce cap at the MCU pin side of R29."
+		(property "Description" "Debounce cap at the MCU pin side of R64."
 			(at 114.3 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -2743,7 +2773,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "16V X7R"
+			(at 114.3 146.05 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:+3V3")
 		(at 81.28 88.9 0)
@@ -2864,7 +2903,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.apem.com/int/mjtp-series-1-1-1-1.html"
+		(property "Datasheet" "https://www.farnell.com/datasheets/1598766.pdf"
 			(at 71.12 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -2976,7 +3015,7 @@
 				)
 			)
 		)
-		(property "Description" "Debounce R. SW press: C37 discharges through 10k (tau 1ms); release: 20k (tau 2ms). Limits switch current."
+		(property "Description" "Debounce R. SW press: C50 discharges through 10k (tau 1ms); release: 20k (tau 2ms). Limits switch current."
 			(at 105.41 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -3012,7 +3051,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "1%"
+			(at 105.41 96.52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C")
 		(at 114.3 100.33 0)
@@ -3068,7 +3116,7 @@
 				)
 			)
 		)
-		(property "Description" "Debounce cap at the MCU pin side of R27."
+		(property "Description" "Debounce cap at the MCU pin side of R62."
 			(at 114.3 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -3104,7 +3152,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "16V X7R"
+			(at 114.3 100.33 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 81.28 92.71 0)
@@ -3194,7 +3251,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "1%"
+			(at 81.28 92.71 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:+3V3")
 		(at 81.28 134.62 0)
@@ -3402,7 +3468,7 @@
 				)
 			)
 		)
-		(property "Description" "Debounce R, see R27."
+		(property "Description" "Debounce R, see R62."
 			(at 105.41 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -3438,7 +3504,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "1%"
+			(at 105.41 142.24 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 63.5 96.52 0)

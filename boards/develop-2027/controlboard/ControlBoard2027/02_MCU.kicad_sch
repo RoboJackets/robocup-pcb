@@ -5337,41 +5337,6 @@
 		)
 		(uuid "1e902b63-60b0-4540-a05c-b89b005fbc6d")
 	)
-	(text "ROUTING - DECOUPLING: each cap beside the STM32 pin named under it, via straight to GND.\nC26/C27 (VCAP) tight to p71/p106. The netlist does not keep this pairing."
-		(exclude_from_sim no)
-		(at 59.69 44.45 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(bold yes)
-				(color 255 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "298ea597-2a24-4450-ad6b-ffdab51334c7")
-	)
-	(text "R41/R42 = 30R: provisional source damping, not certified matching.\nNo fixed driver resistance or 55R target follows from DS13313 Tables 52/54.\nValidate SCK/MOSI/MISO/CS at every cable receiver, both directions."
-		(exclude_from_sim no)
-		(at 400.05 142.24 0)
-		(effects
-			(font
-				(size 1.1 1.1)
-			)
-			(justify left bottom)
-		)
-		(uuid "4fe605e5-03a1-404b-9709-e3a27eb47804")
-	)
-	(text "VDD33USB p95 (C24+C25)\nUSB FS PHY - keep both close"
-		(exclude_from_sim no)
-		(at 149.86 99.06 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify top)
-		)
-		(uuid "517e8ec6-b41a-4cbc-800e-971536c29e03")
-	)
 	(text "VDD p84"
 		(exclude_from_sim no)
 		(at 181.61 66.04 0)
@@ -5383,17 +5348,6 @@
 		)
 		(uuid "5a90337b-64ff-41eb-893f-4dcc930976ab")
 	)
-	(text "VDD bulk (C21+C22)\nnot pin-specific"
-		(exclude_from_sim no)
-		(at 90.17 99.06 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify top)
-		)
-		(uuid "5c7df374-0b95-4a8f-968b-7396380c1fc6")
-	)
 	(text "VDDA p33 and VREF+ p32 use +3V3.\nSeparate local bypass pairs; analog noise must be measured.\nSource: DS13313 supply scheme / electrical characteristics."
 		(exclude_from_sim no)
 		(at 332.74 92.71 0)
@@ -5404,17 +5358,6 @@
 			(justify left bottom)
 		)
 		(uuid "64d74ad1-dd7c-4f9b-bf14-d6050d8299b8")
-	)
-	(text "I2C: R16/17, R30/31, R32/33, R34/35 are each 2.2k.\nAt 3.3 V: (3.3-0.4)/2.2k = 1.32 mA sink requirement.\nFor a 300 ns rise-time limit: C <= 300ns/(0.8473R) = 161 pF nominal.\nAt +5% R: 153 pF. Include ESD, pins, cables and parallel pull-ups.\nBMI088 / SSD1306 / DS13313 timing and I/O data; external loads not qualified."
-		(exclude_from_sim no)
-		(at 400.05 232.41 0)
-		(effects
-			(font
-				(size 1.1 1.1)
-			)
-			(justify left bottom)
-		)
-		(uuid "6c408674-9087-4b84-be09-45ed74ac80b2")
 	)
 	(text "VDD p52"
 		(exclude_from_sim no)
@@ -5451,17 +5394,6 @@
 			(justify left bottom)
 		)
 		(uuid "8dfd3553-355d-41f0-95b4-1451b43b8e1d")
-	)
-	(text "CLOCK: X1 = 25 MHz; set firmware clock tree to the fitted part.\nR86 = 0R is an oscillator drive-tuning link, not line termination.\nC49/C50 need measured stray capacitance to establish the 10 pF load.\nStartup margin and crystal drive remain unverified (ABM8, DS13313 HSE data).\nNo blanket claim that 25 MHz always starts or HSI48 is unusable.\n\nSUPPLIES: PDR_ON and VBAT are on +3V3; no backup battery.\nVCAP 71/106 share their bypass node; retained pending ERC symbol review.\nDo not separate a required supply node merely to silence ERC.\nSource: DS13313 power-supply scheme / VCAP data."
-		(exclude_from_sim no)
-		(at 47.24 226.82 0)
-		(effects
-			(font
-				(size 1.1 1.1)
-			)
-			(justify left bottom)
-		)
-		(uuid "91c9dc15-2840-48ee-9cce-48118447830d")
 	)
 	(text "VDD p39"
 		(exclude_from_sim no)
@@ -5510,30 +5442,6 @@
 		)
 		(uuid "b2bdd5eb-df01-41e6-a235-b2631c622d28")
 	)
-	(text "VREF+ p32 (C30+C31)"
-		(exclude_from_sim no)
-		(at 378.46 117 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify top)
-		)
-		(uuid "c70d4c9a-db22-4d2b-ab37-99f244f6cf36")
-	)
-	(text "ROUTING - MOTOR SPI (6 Mbit/s, 5 drops)\nR41/R42 within 5mm of PA5/PA7, not at the connectors."
-		(exclude_from_sim no)
-		(at 400.05 151.13 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(bold yes)
-				(color 255 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "c872ad77-c99b-44fc-b736-abbd4c2b5d36")
-	)
 	(text "I2C VALIDATION REQUIRED: measure SDA and SCL at worst load.\nDo not change to 1.5k from rise time alone: recheck every device's VOL/current.\nOLED module pull-ups and expansion-device specifications are not established."
 		(exclude_from_sim no)
 		(at 400.05 255.27 0)
@@ -5545,17 +5453,6 @@
 		)
 		(uuid "d495211a-7ce9-48fc-a602-f6bdfcd65a10")
 	)
-	(text "VDDA p33 (C28+C29)"
-		(exclude_from_sim no)
-		(at 338.46 117 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify top)
-		)
-		(uuid "d766b9d9-772a-4fdc-9816-b9608d6dccdd")
-	)
 	(text "VDD p72"
 		(exclude_from_sim no)
 		(at 161.29 66.04 0)
@@ -5566,19 +5463,6 @@
 			(justify top)
 		)
 		(uuid "e2f9aeab-b894-49ff-8867-ee48e68a1ce2")
-	)
-	(text "ROUTING - HSE CRYSTAL\nX1, C49, C50 within 5mm of PH0/PH1.\nShort equal OSC traces, GND guard ring.\nNothing routed under or beside the loop."
-		(exclude_from_sim no)
-		(at 184.15 181.61 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(bold yes)
-				(color 255 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "ec75c30a-1ce7-422b-aef7-9d9dd79e80c7")
 	)
 	(text "VDD p121"
 		(exclude_from_sim no)
@@ -7510,6 +7394,56 @@
 		)
 		(uuid "fe6d64fe-bd92-4e75-9e51-66f5fbbcfde4")
 	)
+  (text "ROUTING - DECOUPLING: each cap beside the STM32 pin named under it, via straight to GND.\nC22/C23 (VCAP) tight to p71/p106. The netlist does not keep this pairing."
+    (at 59.69 44.45 0)
+    (effects (font (size 1.27 1.27) (bold yes) (color 255 0 0 1)) (justify left bottom))
+    (uuid "b3923c74-7dd7-45ac-a29f-4dbb19f17d6e")
+  )
+  (text "R15/R16 = 30R: provisional source damping, not certified matching.\nNo fixed driver resistance or 55R target follows from DS13313 Tables 52/54.\nValidate SCK/MOSI/MISO/CS at every cable receiver, both directions."
+    (at 400.05 142.24 0)
+    (effects (font (size 1.1 1.1)) (justify left bottom))
+    (uuid "55923652-cd5f-43ec-a273-d652162ad820")
+  )
+  (text "VDD33USB p95 (C11+C13)\nUSB FS PHY - keep both close"
+    (at 149.86 99.06 0)
+    (effects (font (size 1.27 1.27)) (justify top))
+    (uuid "05c4deae-b2aa-4e0a-a7b9-ed830b8a876e")
+  )
+  (text "VDD bulk (C5+C7)\nnot pin-specific"
+    (at 90.17 99.06 0)
+    (effects (font (size 1.27 1.27)) (justify top))
+    (uuid "be408f99-5ac1-408f-9c97-7803eaaf720b")
+  )
+  (text "I2C: R7/R9, R8/R10, R14/R17, R18/R19 are each 2.2k.\nAt 3.3 V: (3.3-0.4)/2.2k = 1.32 mA sink requirement.\nFor a 300 ns rise-time limit: C <= 300ns/(0.8473R) = 161 pF nominal.\nAt +5% R: 153 pF. Include ESD, pins, cables and parallel pull-ups.\nLSM6DSK320X / SSD1306 / DS13313 timing and I/O data; external loads not qualified."
+    (at 400.05 232.41 0)
+    (effects (font (size 1.1 1.1)) (justify left bottom))
+    (uuid "d549b8ca-a660-45b0-8bc0-1ab0d48a0ce1")
+  )
+  (text "CLOCK: X1 = 25 MHz; set firmware clock tree to the fitted part.\nR12 = 0R is an oscillator drive-tuning link, not line termination.\nC18/C19 need measured stray capacitance to establish the 10 pF load.\nStartup margin and crystal drive remain unverified (ABM8, DS13313 HSE data).\nNo blanket claim that 25 MHz always starts or HSI48 is unusable.\n\nSUPPLIES: PDR_ON and VBAT are on +3V3; no backup battery.\nVCAP 71/106 share their bypass node; retained pending ERC symbol review.\nDo not separate a required supply node merely to silence ERC.\nSource: DS13313 power-supply scheme / VCAP data."
+    (at 47.24 226.82 0)
+    (effects (font (size 1.1 1.1)) (justify left bottom))
+    (uuid "1fbb18bf-83c1-49a6-8212-3a5ce5376c4a")
+  )
+  (text "VREF+ p32 (C26+C27)"
+    (at 378.46 117 0)
+    (effects (font (size 1.27 1.27)) (justify top))
+    (uuid "80de017e-e060-4d61-9de5-4324bfa12e82")
+  )
+  (text "ROUTING - MOTOR SPI (6 Mbit/s, 5 drops)\nR15/R16 within 5mm of PA5/PA7, not at the connectors."
+    (at 400.05 151.13 0)
+    (effects (font (size 1.27 1.27) (bold yes) (color 255 0 0 1)) (justify left bottom))
+    (uuid "d060b003-9687-4fe1-a232-e83e79e0854d")
+  )
+  (text "VDDA p33 (C24+C25)"
+    (at 338.46 117 0)
+    (effects (font (size 1.27 1.27)) (justify top))
+    (uuid "1d1d816f-d370-4dc5-86b4-412fbfb162ec")
+  )
+  (text "ROUTING - HSE CRYSTAL\nX1, C18, C19 within 5mm of PH0/PH1.\nShort equal OSC traces, GND guard ring.\nNothing routed under or beside the loop."
+    (at 184.15 181.61 0)
+    (effects (font (size 1.27 1.27) (bold yes) (color 255 0 0 1)) (justify left bottom))
+    (uuid "ac2aeb1b-f2a6-45df-b5c5-e3b7e200c26f")
+  )
 	(symbol
 		(lib_id "Device:C")
 		(at 81.28 57.15 0)
@@ -7601,7 +7535,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "16V X7R"
+			(at 81.28 57.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C")
 		(at 220.98 57.15 0)
@@ -7693,7 +7636,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "16V X7R"
+			(at 220.98 57.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C")
 		(at 259.08 289.56 0)
@@ -7964,7 +7916,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "16V X7R"
+			(at 119.38 90.17 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C")
 		(at 161.29 57.15 0)
@@ -8056,7 +8017,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "16V X7R"
+			(at 161.29 57.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:+3V3")
 		(at 241.3 224.79 0)
@@ -8486,7 +8456,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "16V X7R"
+			(at 59.69 90.17 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 302.26 303.53 0)
@@ -8732,7 +8711,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "16V X7R"
+			(at 60.96 57.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:+3V3")
 		(at 241.3 189.23 0)
@@ -9466,7 +9454,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "16V X7R"
+			(at 160.02 90.17 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 52.07 93.98 0)
@@ -9712,7 +9709,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "16V X7R"
+			(at 101.6 57.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 259.08 293.37 0)
@@ -10290,7 +10296,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "1%"
+			(at 403.86 105.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:Crystal_GND24")
 		(at 233.68 158.75 0)
@@ -10530,7 +10545,7 @@
 				)
 			)
 		)
-		(property "Description" "VBUS divider top 47k; bottom R62=68k. Ideal GPIO sense = 0.591304*VBUS: 3.104 V at 5.25 V, 2.602 V at 4.4 V. Recheck tolerances, leakage and powered-off limits; not a precision OTG comparator threshold."
+		(property "Description" "VBUS divider top 47k; bottom R21=68k. Ideal GPIO sense = 0.591304*VBUS: 3.104 V at 5.25 V, 2.602 V at 4.4 V. Recheck tolerances, leakage and powered-off limits; not a precision OTG comparator threshold."
 			(at 403.86 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -10566,7 +10581,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "1%"
+			(at 403.86 97.79 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 228.6 195.58 0)
@@ -10748,7 +10772,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "16V X7R"
+			(at 241.3 57.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C")
 		(at 140.97 57.15 0)
@@ -10840,7 +10873,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "16V X7R"
+			(at 140.97 57.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 360.68 138.43 90)
@@ -11022,7 +11064,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "16V X7R"
+			(at 200.66 57.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 254 138.43 0)
@@ -11247,7 +11298,7 @@
 				)
 			)
 		)
-		(property "Description" "12pF C0G HSE load capacitor. Effective crystal load is (C49+Cin)*(C50+Cout)/(C49+C50+Cin+Cout)+Cstray; actual oscillator pin and PCB capacitance are not measured. Tune with fitted crystal; generic GPIO CIO is not proof of oscillator capacitance."
+		(property "Description" "12pF C0G HSE load capacitor. Effective crystal load is (C18+Cin)*(C19+Cout)/(C18+C19+Cin+Cout)+Cstray; actual oscillator pin and PCB capacitance are not measured. Tune with fitted crystal; generic GPIO CIO is not proof of oscillator capacitance."
 			(at 229.87 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -11283,7 +11334,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "50V C0G"
+			(at 229.87 167.64 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C")
 		(at 120.65 57.15 0)
@@ -11375,7 +11435,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "16V X7R"
+			(at 120.65 57.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 378.46 190.5 0)
@@ -11557,7 +11626,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "16V X7R"
+			(at 347.98 107.95 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 238.76 133.35 0)
@@ -11816,7 +11894,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "16V X7R"
+			(at 388.62 107.95 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:+3V3")
 		(at 284.48 115.57 0)
@@ -11985,7 +12072,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "16V X7R"
+			(at 181.61 57.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 241.3 193.04 0)
@@ -12244,7 +12340,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "16V X7R"
+			(at 238.76 129.54 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C")
 		(at 328.93 107.95 0)
@@ -12559,7 +12664,7 @@
 				)
 			)
 		)
-		(property "Description" "HSE load cap, C0G, pair with C49."
+		(property "Description" "HSE load cap, C0G, pair with C18."
 			(at 237.49 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -12595,7 +12700,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Rating" "50V C0G"
+			(at 237.49 167.64 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 347.98 163.83 90)
@@ -12930,7 +13044,7 @@
 				)
 			)
 		)
-		(property "Vendor PN" " 511-STM32H723ZGT6  (Mouser)"
+		(property "Vendor PN" "511-STM32H723ZGT6 (Mouser)"
 			(at 299.72 209.55 0)
 			(hide yes)
 			(show_name no)

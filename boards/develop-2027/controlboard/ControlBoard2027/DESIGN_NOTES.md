@@ -137,7 +137,7 @@ groups:
 |---|---|
 | USB D+/D- | About 23mm, F.Cu only, 90Ω pair, no vias, through U3 |
 | Radio SPI (J9) | F.Cu only, no vias, 0.36mm (about 50Ω) except 0.25mm at the MCU escape. Pin-to-pin copper length: SCK 58.2mm, MOSI 57.8mm, MISO 58.2mm, CS 58.2mm (matched within 0.5mm; the series resistor bodies are not counted). Rows are 2.4mm apart, verticals 1.1mm apart |
-| SD (J1) | F.Cu at 0.36mm (about 50Ω) on the main runs, 0.25mm only at the MCU pins, under U1 and into the socket pads. Flow-through U1, no stubs. Copper length MCU pin to socket pad: CLK 46.1mm (including 1.0mm through R6), CMD 45.5mm, DAT0 46.2mm, DAT1 46.0mm, DAT2 46.1mm, DAT3 46.1mm (0.7mm spread). CLK and CMD carry short serpentines to match the data lines. DAT2 and DAT3 each cross CMD and CLK once on B.Cu next to the MCU (5.0mm and 3.7mm, two vias each). Gaps are 0.5mm or more except at the MCU pins (0.5mm pitch), under the MCU body for DAT0/DAT1, through U1 and in the socket fan-out |
+| SD (J1) | F.Cu at 0.36mm (about 50Ω) on the main runs, 0.25mm only at the MCU pins, under U1 and into the socket pads. Flow-through U1, no stubs. Copper length MCU pin to socket pad: CLK 46.1mm (including 1.0mm through R6), CMD 45.5mm, DAT0 46.2mm, DAT1 46.0mm, DAT2 46.1mm, DAT3 46.1mm (0.7mm spread). CLK and CMD carry short serpentines to match the data lines. DAT2 and DAT3 each cross CMD and CLK once on B.Cu next to the MCU (5.0mm and 3.7mm, two vias each, with a GND return via within 0.9mm of three of the four). Gaps are 0.5mm or more except at the MCU pins (0.5mm pitch), under the MCU body for DAT0/DAT1, through U1 and in the socket fan-out |
 | Motor SPI (J4-J8) | F.Cu only over In1 GND, daisy-chained through each connector's TVS array (flow-through). 0.36mm on the runs between connectors and back to the MCU (178mm of the bus), 0.25mm through the TVS arrays and pin escapes, where SCK and MOSI sit 0.25mm apart for about 3mm per connector |
 | Crystal | X1, C18, C19 and R12 on the top side next to PH0/PH1, GND vias at each capacitor |
 | I2C | Pull-ups at the MCU; kicker and expansion buses run as a spaced bundle to U6 and J10-J12 with TP7/TP8 inline |
@@ -219,7 +219,7 @@ Priority mode (MODE tied to VIN1). VIN1 is the powerboard rail, VIN2 the USB sid
 |---|---|---|
 | PR1 divider | R36 100k / R37 36k | R38 100k / R39 68k |
 | Hysteresis | R40 1M from ST | R41 1M from ST |
-| Switchover (VREF typ) | ~3.55V falling / 3.88V rising | ~2.24V falling / 2.57V rising |
+| Switchover (VREF typ) | ~3.55V falling / 3.88V rising | ~2.34V falling / 2.57V rising |
 
 - ST is open drain. R42/R43 10k pull it up to 3V3. PWR_SRC_5V goes through R44 10k to PA2;
   PWR_SRC_3V3 goes to PA3. High means the powerboard is selected.
@@ -506,7 +506,7 @@ leakage is ±250nA max (DS13313 Table 51) against a 2.31V input-high threshold:
 | 1M | 3.3µA | 3.05V, still valid but slow and noise-prone |
 
 100k gives a solid high at low current and still enough wetting current for gold contacts.
-Read at boot; add 100nF per pin if read continuously. The part is a CTS 209-6MSD through-hole
+Read at boot; add 100nF per pin if read continuously. The part is a CTS 209-6MS through-hole
 slide DIP (2.54mm pitch, 7.62mm rows). Pins 1-6 carry DIP0-DIP5 and pins 7-12 go to GND.
 
 ### SW4-SW6 user buttons
@@ -769,9 +769,12 @@ lands at 100MHz, below the 192MHz minimum. Apply the clock tree in §12.
 
 **C3 Footprints, MPNs and ratings.** Partly resolved: every part now has a footprint, the bulk
 capacitors carry voltage and dielectric in their values (C42 22uF 16V, C28 22uF 10V, C30 2.2uF 16V,
-all X5R), and U10 carries the SN74AHCT125DR MPN (the SOIC-14 that matches its footprint; the PW
-TSSOP part does not fit and the D tube option is obsolete). Still open: no MPN field on D7-D11,
-J3 and J10-J13.
+all X5R; C36 2.2uF 10V X7R). A "Rating" field carries the rest: every 100nF is 16V X7R,
+C18/C19 are 50V C0G, and the resistors that set thresholds or time constants (R20/R21,
+R36-R41, R59-R64) are 1%. U10 carries
+the SN74AHCT125DR MPN (the SOIC-14 that matches its footprint; the PW TSSOP part does not fit and
+the D tube option is obsolete). J3 is Samtec TSW-105-07-G-S; J4-J8 and J10-J12 have Digi-Key PNs.
+Still open: no MPN on D7-D11 or J13, and the generic passives have no MPN or vendor PN.
 
 ### Major
 
@@ -804,8 +807,7 @@ has no reset chip, and the SSD1306 needs RES# held low ≥3µs after power-up. S
 through a diode (about 0.5-0.6V against 0.66V max low), so probe both addresses. Order STEMMA QT
 and take J13 from its board file.
 
-**M6 Connector parts.** J10-J12 now use JST PH B4B-PH-K-S footprints (friction lock) but still
-have no MPN. J15 JST-XH is friction lock and rated 3A only with AWG22. J3 needs a keyed header.
+**M6 Connector parts.** J10-J12 use JST PH B4B-PH-K-S (friction lock, 455-1706-ND). J15 JST-XH is friction lock and rated 3A only with AWG22. J3 needs a keyed header.
 J9 is now a latching JST GH (§11); a
 premade 15-pin GH cable could not be confirmed at a distributor, so plan on crimping or a
 custom harness.
@@ -868,7 +870,7 @@ outline on the silkscreen crosses the pads of R34 (the fab clips silkscreen on p
 - **m12** PA4 (bootloader SPI1 NSS) is unconnected and floats in DFU. Nothing drives the motor
   SCK (R30 pull-down), so no SPI frame arrives and DFU still answers on USB.
 - **m14** J3 has no protection against a 5V mis-plug; the SWD series resistors have been removed.
-- **m15** Resolved: all switches are through-hole (APEM MJTP1243 buttons SW1/SW2/SW4-SW6, CTS 209-6MSD DIP SW3) with MPNs set.
+- **m15** Resolved: all switches are through-hole (APEM MJTP1243 buttons SW1/SW2/SW4-SW6, CTS 209-6MS DIP SW3) with MPNs set.
 - **m16** The LSM6DSK320X has no reset pin. Firmware uses the SW_RESET/BOOT bits after a brown-out and runs I2C bus recovery.
 - **m17** AN2867, RM0468 and AN4879 were not available from st.com. VBUS is read as a GPIO, so the
   OTG threshold is not needed.

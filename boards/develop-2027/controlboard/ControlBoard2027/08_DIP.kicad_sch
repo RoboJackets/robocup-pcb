@@ -1641,17 +1641,6 @@
 		)
 		(uuid "60e56df6-beaa-4a54-b65a-514f9455f7a6")
 	)
-	(text "DIP R18-R23 = 100k: STM32 250 nA input leakage gives 25 mV drop nominal.\nLogic bias is adequate for an unloaded MCU input (DS13313 Table 51).\nSelect switch MPN and verify minimum contact load; 33 uA is not proof.\nDebounce/sample stability needs firmware; no universal 100nF requirement."
-		(exclude_from_sim no)
-		(at 33.02 271.78 0)
-		(effects
-			(font
-				(size 1.1 1.1)
-			)
-			(justify left bottom)
-		)
-		(uuid "832befb0-6adb-4f62-921a-f3395788ef5f")
-	)
 	(text "ROBOT ID DIP SWITCH SW3 (100K PULL-UPS)"
 		(exclude_from_sim no)
 		(at 189.23 128.27 0)
@@ -2058,6 +2047,11 @@
 		)
 		(uuid "9bb53f5c-abc4-44af-a9a0-31a54cd1b65f")
 	)
+  (text "DIP R53-R58 = 100k: STM32 250 nA input leakage gives 25 mV drop nominal.\nLogic bias is adequate for an unloaded MCU input (DS13313 Table 51).\nCTS 209-6MS: verify minimum contact load; 33 uA is not proof.\nDebounce/sample stability needs firmware; no universal 100nF requirement."
+    (at 33.02 271.78 0)
+    (effects (font (size 1.1 1.1)) (justify left bottom))
+    (uuid "78f7d630-b1bf-4baf-b65d-16b82e96f117")
+  )
 	(symbol
 		(lib_id "power:+3V3")
 		(at 210.82 189.23 0)
@@ -3013,7 +3007,7 @@
 				)
 			)
 		)
-		(property "MPN" "CTS 209-6MSD"
+		(property "MPN" "CTS 209-6MS"
 			(at 271.78 165.1 0)
 			(hide yes)
 			(show_name no)
