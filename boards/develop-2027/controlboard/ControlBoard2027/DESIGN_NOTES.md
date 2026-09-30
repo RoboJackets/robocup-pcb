@@ -288,7 +288,8 @@ D5/D6 Kingbright APT1608EC red: VF 2.0V typ, 30mA max. R45 3.3k → 0.9mA on 5V,
 0.87mA on 3V3. Around 1mA is plenty for an indicator; the earlier 3mA was too bright. TP13
 (+5V_PROT) and TP14 (+3V3_RAW) with TP16/TP17 (+5V/+3V3) measure the fuse plus mux drop. TP3
 (VBUS), TP15 (+3V3_LDO) and TP12 (GND) cover the USB side. TP10/TP11 give logic-analyser
-access to the powerboard UART. All test points are `TestPoint_Pad_1.5x1.5mm`.
+access to the powerboard UART. All test points are `TestPoint_Pad_1.5x1.5mm`. On the board each test point is labelled with its signal name
+(for example "UART TX", "MOT SCK", "3V3 LDO", "GND") instead of its TP number.
 
 ---
 
@@ -838,10 +839,9 @@ that ignores CMD0 needs a board power cycle. Accepted to keep the circuit simple
 it to the same 6-pin pinout, or build an adapter cable, before connecting the boards.
 
 **M20 Layout warnings before ordering.** The routed board passes DRC with no errors, no
-unconnected nets and no schematic-parity differences. Remaining warnings: 142 footprints differ
-from their library copies in metadata only (3D model, description, field text; pads, mask,
-paste and drills are identical), and the OLED outline on the silkscreen crosses the pads of
-R34 (the fab clips silkscreen on pads).
+unconnected nets and no schematic-parity differences. Every footprint is the current library
+version (KiCad stock or the project library). The only warnings left are two where the OLED
+outline on the silkscreen crosses the pads of R34 (the fab clips silkscreen on pads).
 
 ### Minor
 
