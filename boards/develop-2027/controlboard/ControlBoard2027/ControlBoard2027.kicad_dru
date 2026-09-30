@@ -1,0 +1,22 @@
+(version 1)
+
+# Stackup: JLC04161H-7628, 1.6 mm. Outer layers are microstrip over 0.2104 mm 7628 prepreg (er 4.4).
+# USB 2.0: 90 ohm differential = 0.30 mm width / 0.20 mm gap on F.Cu over In1 GND.
+# SDMMC: 50 ohm single-ended = 0.36 mm width.
+
+(rule "USB diff pair geometry"
+	(condition "A.NetName == '/MCU/USB_DP' || A.NetName == '/MCU/USB_DM' || A.NetName == '/USB and Debug/USB_DP_CON' || A.NetName == '/USB and Debug/USB_DM_CON'")
+	(constraint track_width (min 0.2) (opt 0.3))
+	(constraint diff_pair_gap (min 0.18) (opt 0.2)))
+
+(rule "USB pour clearance"
+	(condition "(A.NetName == '/MCU/USB_DP' || A.NetName == '/MCU/USB_DM' || A.NetName == '/USB and Debug/USB_DP_CON' || A.NetName == '/USB and Debug/USB_DM_CON') && B.Type == 'Zone'")
+	(constraint clearance (min 0.6)))
+
+(rule "SDMMC pour clearance"
+	(condition "(A.NetName == '/MCU/SDMMC_CK' || A.NetName == '/SD Card Storage/SD_CLK_CARD' || A.NetName == '/SD Card Storage/SDMMC_CMD' || A.NetName == '/SD Card Storage/SDMMC_D0' || A.NetName == '/SD Card Storage/SDMMC_D1' || A.NetName == '/SD Card Storage/SDMMC_D2' || A.NetName == '/SD Card Storage/SDMMC_D3') && B.Type == 'Zone'")
+	(constraint clearance (min 0.5)))
+
+# J13 (Adafruit 326 OLED) is held by its 1x8 header pins only. Its footprint
+# courtyard covers only the header strip; the full module outline is on F.SilkS/F.Fab. Keep parts
+# under that outline below ~2 mm (0402/0603 passives only).
