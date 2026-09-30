@@ -2462,7 +2462,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Keystone_5015_Micro_Mini"
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
 			(at 287.02 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -2964,7 +2964,7 @@
 	(symbol
 		(lib_id "74xx:74AHCT125")
 		(at 86.36 157.48 0)
-		(unit 2)
+		(unit 4)
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3082,7 +3082,7 @@
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/ee62a278-a94c-4411-ba4b-a0279340f73e"
 					(reference "U10")
-					(unit 2)
+					(unit 4)
 				)
 			)
 		)
@@ -3943,7 +3943,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
 			(at 137.16 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -4801,7 +4801,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Keystone_5015_Micro_Mini"
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
 			(at 287.02 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -5022,7 +5022,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22uF"
+		(property "Value" "22uF 16V X5R"
 			(at 122.555 215.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5033,7 +5033,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 121.92 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -5189,7 +5189,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
 			(at 137.16 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -5719,7 +5719,7 @@
 	(symbol
 		(lib_id "74xx:74AHCT125")
 		(at 152.4 232.41 0)
-		(unit 4)
+		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5837,7 +5837,7 @@
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/ee62a278-a94c-4411-ba4b-a0279340f73e"
 					(reference "U10")
-					(unit 4)
+					(unit 2)
 				)
 			)
 		)

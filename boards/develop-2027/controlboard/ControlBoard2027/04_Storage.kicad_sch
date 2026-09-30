@@ -2729,34 +2729,6 @@
 		(uuid "476526e6-b03c-488b-b113-40c211575ff9")
 	)
 	(no_connect
-		(at 190.5 228.6)
-		(uuid "1e2887f3-9abd-4b47-acca-018fa520743a")
-	)
-	(no_connect
-		(at 177.8 139.7)
-		(uuid "1ee65160-b9d1-49f7-80c6-3895fd8fcaac")
-	)
-	(no_connect
-		(at 200.66 228.6)
-		(uuid "498a9e61-b953-40bb-b660-01cd990a1e45")
-	)
-	(no_connect
-		(at 195.58 228.6)
-		(uuid "5b7a486c-8160-4336-a317-b34a881bd1b5")
-	)
-	(no_connect
-		(at 215.9 228.6)
-		(uuid "7b192aa2-3945-461d-acda-6a8a5dcdbaf4")
-	)
-	(no_connect
-		(at 210.82 228.6)
-		(uuid "a318d166-ac26-4cd6-9dca-8b52ac2a6b25")
-	)
-	(no_connect
-		(at 205.74 228.6)
-		(uuid "efc4a663-bec4-4ec8-88f1-613d9ddef520")
-	)
-	(no_connect
 		(at 134.62 139.7)
 		(uuid "f2ee4bb9-6dc2-47e0-8351-06958154bb64")
 	)
@@ -3050,7 +3022,7 @@
 		)
 		(uuid "ff60dc87-e35f-4952-8e13-2b6b06c17d2c")
 	)
-	(label "SDMMC_CMD"
+	(label "SDMMC_D3"
 		(at 195.58 203.2 90)
 		(effects
 			(font
@@ -3060,7 +3032,7 @@
 		)
 		(uuid "173aa106-65d0-4c2d-9f5f-9190ac0f8106")
 	)
-	(label "SDMMC_D1"
+	(label "SD_CLK_CARD"
 		(at 205.74 203.2 90)
 		(effects
 			(font
@@ -3070,7 +3042,7 @@
 		)
 		(uuid "4badbe5b-ec56-4b9e-ad83-e832457a35c3")
 	)
-	(label "SDMMC_D0"
+	(label "SDMMC_CMD"
 		(at 200.66 203.2 90)
 		(effects
 			(font
@@ -3100,7 +3072,7 @@
 		)
 		(uuid "8c2b5a38-78d4-4a99-accb-d43247dd66a3")
 	)
-	(label "SDMMC_D2"
+	(label "SDMMC_D0"
 		(at 210.82 203.2 90)
 		(effects
 			(font
@@ -3110,7 +3082,7 @@
 		)
 		(uuid "8e22cfba-e718-43b3-a9be-dac6b0c507a5")
 	)
-	(label "SD_CLK_CARD"
+	(label "SDMMC_D2"
 		(at 190.5 203.2 90)
 		(effects
 			(font
@@ -3120,7 +3092,7 @@
 		)
 		(uuid "b3e80a59-04f3-42f4-b9bb-9bb982cde715")
 	)
-	(label "SDMMC_D3"
+	(label "SDMMC_D1"
 		(at 215.9 203.2 90)
 		(effects
 			(font
@@ -3449,7 +3421,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "10uF 10V X5R"
 			(at 158.115 167.64 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3695,7 +3667,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Keystone_5015_Micro_Mini"
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
 			(at 170.18 203.2 0)
 			(hide yes)
 			(show_name no)
@@ -4959,7 +4931,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 97.79 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -5084,4 +5056,141 @@
 			)
 		)
 	)
-)
+
+	(label "SDMMC_D2"
+		(at 190.5 228.6 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9f269112-706f-4507-a67e-850354ac6209")
+	)
+	(label "SDMMC_D3"
+		(at 195.58 228.6 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0e4947e5-c065-4405-b0bf-11833495c0da")
+	)
+	(label "SDMMC_CMD"
+		(at 200.66 228.6 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "99e8c286-391a-4c26-9436-93d303e1b088")
+	)
+	(label "SD_CLK_CARD"
+		(at 205.74 228.6 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e84a3cbe-035f-4026-8af2-5ba426ccb7c6")
+	)
+	(label "SDMMC_D0"
+		(at 210.82 228.6 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "57ed1569-545f-4fce-a60b-5391c19a9ff9")
+	)
+	(label "SDMMC_D1"
+		(at 215.9 228.6 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fbd0dfc3-1865-43a5-9d9c-6221487e93b2")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 177.8 139.7 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d7a957b4-131f-408e-98e4-45b5ef41c079")
+		(property "Reference" "#PWR0165"
+			(at 177.8 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 177.8 143.51 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 177.8 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 177.8 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f78d425f-2f58-4441-b62d-ab2c2a7280b8")
+		)
+		(instances
+			(project "ControlBoard2027"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/3bd2a0be-2830-4496-a16c-53a27fc2ce56"
+					(reference "#PWR0165")
+					(unit 1)
+				)
+			)
+		)
+	))

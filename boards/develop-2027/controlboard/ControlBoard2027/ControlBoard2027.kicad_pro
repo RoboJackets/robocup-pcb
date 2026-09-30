@@ -517,8 +517,84 @@
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
         "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "PWR",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2147483647,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.8,
+        "tuning_profile": "",
         "via_diameter": 0.8,
         "via_drill": 0.4,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "PWR3V3",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2147483647,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.5,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "SIG50",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2147483647,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.36,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.2,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.3,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "USB_90R",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2147483647,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.3,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
         "wire_width": 6
       }
     ],
@@ -545,32 +621,100 @@
         "pattern": "/USB and Debug/USB_DM_CON"
       },
       {
-        "netclass": "SDMMC_50R",
+        "netclass": "SIG50",
         "pattern": "/MCU/SDMMC_CK"
       },
       {
-        "netclass": "SDMMC_50R",
+        "netclass": "SIG50",
         "pattern": "/SD Card Storage/SD_CLK_CARD"
       },
       {
-        "netclass": "SDMMC_50R",
-        "pattern": "/SD Card Storage/SDMMC_CMD"
+        "netclass": "SIG50",
+        "pattern": "/SD Card Storage/SDMMC_*"
       },
       {
-        "netclass": "SDMMC_50R",
-        "pattern": "/SD Card Storage/SDMMC_D0"
+        "netclass": "SIG50",
+        "pattern": "/MCU/ESP_SPI_*"
       },
       {
-        "netclass": "SDMMC_50R",
-        "pattern": "/SD Card Storage/SDMMC_D1"
+        "netclass": "SIG50",
+        "pattern": "Net-(U2-PB3_SWO)"
       },
       {
-        "netclass": "SDMMC_50R",
-        "pattern": "/SD Card Storage/SDMMC_D2"
+        "netclass": "SIG50",
+        "pattern": "Net-(U2-PD6)"
       },
       {
-        "netclass": "SDMMC_50R",
-        "pattern": "/SD Card Storage/SDMMC_D3"
+        "netclass": "SIG50",
+        "pattern": "/MCU/MOTOR_SPI_*"
+      },
+      {
+        "netclass": "SIG50",
+        "pattern": "/MCU/MOTOR?_SPI_CS"
+      },
+      {
+        "netclass": "SIG50",
+        "pattern": "/MCU/DRIBBLER_SPI_CS"
+      },
+      {
+        "netclass": "SIG50",
+        "pattern": "Net-(U2-PA5)"
+      },
+      {
+        "netclass": "SIG50",
+        "pattern": "Net-(U2-PA7)"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "+5V"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "+5V_*"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "VBUS"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "/Power/+5V_*"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "/Power/+3V3_*"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "+3V3_PB"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "/Power/M5_*"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "/Power/M3_*"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "Net-(D1-IN-Pad4)"
+      },
+      {
+        "netclass": "PWR3V3",
+        "pattern": "+3V3"
+      },
+      {
+        "netclass": "SIG50",
+        "pattern": "/DotStar LEDs/LED_SPI_*"
+      },
+      {
+        "netclass": "SIG50",
+        "pattern": "Net-(D7-SDI)"
+      },
+      {
+        "netclass": "SIG50",
+        "pattern": "Net-(D7-CKI)"
       }
     ]
   },

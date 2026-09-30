@@ -3224,10 +3224,6 @@
 		(at 91.44 129.54)
 		(uuid "b23f3058-3765-4638-a11d-31bfb7bb36ce")
 	)
-	(no_connect
-		(at 68.58 137.16)
-		(uuid "b6d21d6d-09b2-4a00-962c-191b9d4d7432")
-	)
 	(wire
 		(pts
 			(xy 220.98 139.7)
@@ -4780,7 +4776,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Fuse:Fuse_1812_4532Metric"
+		(property "Footprint" "ControlBoard2027:Fuse_Bourns_MF-MSMF_1812"
 			(at 110.49 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -4947,7 +4943,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Keystone_5015_Micro_Mini"
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
 			(at 127 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -5677,4 +5673,81 @@
 		)
 		(uuid "fa104737-e844-49ee-9aa9-73aeaea52972")
 	)
-)
+
+	(symbol
+		(lib_id "power:GND")
+		(at 68.58 137.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "900eec39-e8e6-4f88-aea7-b1db465f4c35")
+		(property "Reference" "#PWR0166"
+			(at 68.58 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 68.58 140.97 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 68.58 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 68.58 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(body_style 1)
+		(in_pos_files yes)
+		(pin "1"
+			(uuid "a4adcda4-ba6e-47ab-bd9b-e18f8d16a599")
+		)
+		(instances
+			(project "ControlBoard2027"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/b44198b9-a21d-475d-9b21-d8da342bbbd1"
+					(reference "#PWR0166")
+					(unit 1)
+				)
+			)
+		)
+	))

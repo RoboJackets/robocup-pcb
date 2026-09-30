@@ -5855,10 +5855,6 @@
 		(uuid "133a40db-aca2-4a44-a5b1-6a01231ab449")
 	)
 	(no_connect
-		(at 261.62 242.57)
-		(uuid "1a0e5234-7c70-4081-bceb-db00b7475e29")
-	)
-	(no_connect
 		(at 261.62 166.37)
 		(uuid "1f578eaa-1d88-4b81-8bd1-f7f444594b64")
 	)
@@ -7186,7 +7182,7 @@
 	)
 	(hierarchical_label "ESP_SPI_SCK"
 		(shape output)
-		(at 337.82 176.53 0)
+		(at 364.49 176.53 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7197,7 +7193,7 @@
 	)
 	(hierarchical_label "ESP_SPI_MOSI"
 		(shape output)
-		(at 337.82 270.51 0)
+		(at 364.49 270.51 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7263,12 +7259,12 @@
 	)
 	(hierarchical_label "ESP_SPI_CS"
 		(shape output)
-		(at 261.62 191.77 180)
+		(at 337.82 181.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "a851199f-1668-4be8-8bc2-997c2e19a48c")
 	)
@@ -7285,12 +7281,12 @@
 	)
 	(hierarchical_label "ESP_RST"
 		(shape output)
-		(at 337.82 186.69 0)
+		(at 261.62 242.57 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "b1de548c-733c-4204-bfa3-fd2cf1a7770f")
 	)
@@ -7329,7 +7325,7 @@
 	)
 	(hierarchical_label "ESP_HANDSHAKE"
 		(shape input)
-		(at 337.82 181.61 0)
+		(at 337.82 184.15 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7406,7 +7402,7 @@
 	)
 	(hierarchical_label "ESP_DATA_READY"
 		(shape input)
-		(at 337.82 184.15 0)
+		(at 337.82 186.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7698,7 +7694,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2uF"
+		(property "Value" "2.2uF 10V X7R"
 			(at 259.715 292.1 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7788,7 +7784,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Keystone_5015_Micro_Mini"
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
 			(at 328.93 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -8094,7 +8090,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2uF"
+		(property "Value" "2.2uF 10V X7R"
 			(at 249.555 292.1 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8175,7 +8171,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "10uF 10V X5R"
 			(at 80.645 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9827,7 +9823,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 360.68 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -10862,7 +10858,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "1uF 10V X5R"
 			(at 368.935 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11897,7 +11893,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "1uF 10V X5R"
 			(at 329.565 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13045,7 +13041,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7uF"
+		(property "Value" "4.7uF 10V X5R"
 			(at 100.965 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13203,7 +13199,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7uF"
+		(property "Value" "4.7uF 10V X5R"
 			(at 140.335 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13418,4 +13414,186 @@
 			)
 		)
 	)
-)
+
+	(symbol
+		(lib_id "Device:R")
+		(at 360.68 176.53 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4df0f0a4-0e83-462f-af27-6ff64bdc473e")
+		(property "Reference" "R65"
+			(at 360.68 174.498 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "30R"
+			(at 360.68 176.53 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 360.68 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32h723zg.pdf"
+			(at 360.68 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Source series termination for ESP_SPI_SCK (with the STM32 driver about 50 ohm into the 50 ohm trace). Place within 5mm of U2."
+			(at 360.68 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "af9c1fed-d99d-499b-ac1b-12d36c8e4f72")
+		)
+		(pin "2"
+			(uuid "fc542475-6257-481f-a601-7a2d6549311f")
+		)
+		(instances
+			(project "ControlBoard2027"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
+					(reference "R65")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 337.82 176.53) (xy 356.87 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8272b132-03a9-48be-884b-b80cb7dd228c")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 360.68 270.51 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "014e9d11-465d-4749-bc81-033fd9fcf213")
+		(property "Reference" "R66"
+			(at 360.68 268.478 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "30R"
+			(at 360.68 270.51 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 360.68 270.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32h723zg.pdf"
+			(at 360.68 270.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Source series termination for ESP_SPI_MOSI (with the STM32 driver about 50 ohm into the 50 ohm trace). Place within 5mm of U2."
+			(at 360.68 270.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3d7a3d8d-dcc1-4a23-902b-578da8aa4918")
+		)
+		(pin "2"
+			(uuid "387b7603-12dd-4376-8568-d86e4101a056")
+		)
+		(instances
+			(project "ControlBoard2027"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
+					(reference "R66")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 337.82 270.51) (xy 356.87 270.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a23abfe-4c67-438a-8e04-a34af8e08e07")
+	)
+	(no_connect
+		(at 261.62 191.77)
+		(uuid "48e1583d-67bd-4d64-bdfb-b2377005e079")
+	))
