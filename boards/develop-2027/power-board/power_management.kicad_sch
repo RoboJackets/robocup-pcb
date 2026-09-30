@@ -2632,8 +2632,8 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Q"
-				(at 5.08 1.27 0)
+			(property "Reference" "Q2"
+				(at 5.08 1.778 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -2644,7 +2644,7 @@
 				)
 			)
 			(property "Value" "NMOS"
-				(at 5.08 -1.27 0)
+				(at 5.08 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -2654,7 +2654,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Package_TO_SOT_SMD:TO-236AB_SOT23_NEX-M"
 				(at 5.08 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2665,7 +2665,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/2N7002NXAK.pdf"
 				(at 0 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2718,6 +2718,28 @@
 					(font
 						(size 1.27 1.27)
 					)
+				)
+			)
+			(property "DigiKey Part #" "1727-8643-1-ND"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part #" "2N7002NXAKR"
+				(at 5.08 -1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+					(justify left)
 				)
 			)
 			(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET simulation"
@@ -2899,10 +2921,10 @@
 				)
 			)
 			(symbol "NMOS_1_1"
-				(pin passive line
-					(at 2.54 5.08 270)
+				(pin input line
+					(at -5.08 0 0)
 					(length 2.54)
-					(name "D"
+					(name "G"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2917,10 +2939,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at -5.08 0 0)
+				(pin passive line
+					(at 2.54 -5.08 90)
 					(length 2.54)
-					(name "G"
+					(name "S"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2936,9 +2958,9 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 -5.08 90)
+					(at 2.54 5.08 270)
 					(length 2.54)
-					(name "S"
+					(name "D"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2968,29 +2990,27 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Q"
-				(at 5.08 1.27 0)
+			(property "Reference" "Q1"
+				(at 7.874 0 90)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Value" "PMOS"
-				(at 5.08 -1.27 0)
+				(at 9.652 0 90)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
 				(at 5.08 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3001,7 +3021,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
+			(property "Datasheet" "https://www.gofordsemi.com/upload/cn/propdf/GT065P06K.pdf"
 				(at 0 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3053,6 +3073,49 @@
 				(effects
 					(font
 						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Library" ""
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Name" ""
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "DigiKey Part #" "3141-GT065P06KCT-ND"
+				(at 5.842 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+				)
+			)
+			(property "Part #" "GT065P06K"
+				(at 6.096 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.8 0.8)
 					)
 				)
 			)
@@ -3235,10 +3298,10 @@
 				)
 			)
 			(symbol "PMOS_1_1"
-				(pin passive line
-					(at 2.54 5.08 270)
+				(pin input line
+					(at -5.08 0 0)
 					(length 2.54)
-					(name "D"
+					(name "G"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3253,10 +3316,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at -5.08 0 0)
+				(pin passive line
+					(at 2.54 5.08 270)
 					(length 2.54)
-					(name "G"
+					(name "D"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6910,7 +6973,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
 			(at 81.28 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -7019,6 +7082,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 78.74 31.75 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "dc603bd2-c570-475d-95cb-8e7e75195d7c")
 		)
@@ -7070,7 +7144,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 90.17 245.11 0)
 			(hide yes)
 			(show_name no)
@@ -7147,6 +7221,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 90.17 245.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "26bc73a6-1032-4e24-ab43-9cd93df2f833")
 		)
@@ -7195,7 +7280,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 45.72 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -7273,6 +7358,17 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 45.72 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 45.72 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -7418,6 +7514,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 125.73 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "63a89401-ef4a-444b-8ee0-a3778dd075b1")
 		)
@@ -7533,6 +7640,17 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 132.08 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 132.08 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -7667,7 +7785,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric_Pad1.40x3.35mm_HandSolder"
 			(at 280.67 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -7755,6 +7873,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 280.67 128.27 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "65386af1-a3f3-4400-a99e-1d413c7ee8db")
 		)
@@ -7803,7 +7932,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 90.17 250.19 0)
 			(hide yes)
 			(show_name no)
@@ -7870,6 +7999,17 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 90.17 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 90.17 250.19 0)
 			(hide yes)
 			(show_name no)
@@ -8072,6 +8212,17 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 63.5 233.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 63.5 233.68 0)
 			(hide yes)
 			(show_name no)
@@ -8285,6 +8436,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 123.19 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "cab7519e-99d4-41d6-9cbb-4cf3b897e82b")
 		)
@@ -8334,7 +8496,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+		(property "Footprint" ""
 			(at 226.06 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -8590,7 +8752,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+		(property "Footprint" ""
 			(at 215.9 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -8690,7 +8852,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 101.6 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -8768,6 +8930,17 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 101.6 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 101.6 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -8904,7 +9077,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CAPAE660X600N - A768EB226M1HLAE048"
+		(property "Footprint" "Capacitor_SMD:CAPAE660X600N"
 			(at 53.34 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -8960,6 +9133,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 53.34 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
+			(at 53.34 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "A768EB226M1HLAE048"
 			(at 53.34 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -9096,7 +9291,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 71.12 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -9141,6 +9336,17 @@
 			)
 		)
 		(property "Part #" "RC0402FR-07100KL"
+			(at 71.12 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 71.12 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -9199,7 +9405,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CAPAE660X600N - A768EB226M1HLAE048"
+		(property "Footprint" "Capacitor_SMD:CAPAE660X600N"
 			(at 44.45 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -9255,6 +9461,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 44.45 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
+			(at 44.45 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "A768EB226M1HLAE048"
 			(at 44.45 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -9313,7 +9541,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CAPAE660X600N - A768EB226M1HLAE048"
+		(property "Footprint" "Capacitor_SMD:CAPAE660X600N"
 			(at 163.83 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -9369,6 +9597,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 163.83 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
+			(at 163.83 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "A768EB226M1HLAE048"
 			(at 163.83 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -9427,7 +9677,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CAPAE660X600N - A768EB226M1HLAE048"
+		(property "Footprint" "Capacitor_SMD:CAPAE660X600N"
 			(at 80.01 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -9493,6 +9743,28 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 80.01 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "A768EB226M1HLAE048"
+			(at 80.01 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "6433fc12-4c6d-4a51-b59e-5f26b7261a38")
 		)
@@ -9541,7 +9813,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CAPAE660X600N"
 			(at 114.3 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -9619,6 +9891,17 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 114.3 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 114.3 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -9839,6 +10122,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 130.81 232.41 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ab125dfe-f2a0-4347-bdec-52375910db62")
 		)
@@ -9887,7 +10181,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 45.72 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -9965,6 +10259,17 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 45.72 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 45.72 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -10101,7 +10406,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 101.6 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -10179,6 +10484,17 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 101.6 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 101.6 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -10314,6 +10630,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 140.97 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "c0189411-69d0-4c22-a9be-d7a62d7aa95f")
 		)
@@ -10362,7 +10689,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CAPAE660X600N - A768EB226M1HLAE048"
+		(property "Footprint" "Capacitor_SMD:CAPAE660X600N"
 			(at 154.94 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -10418,6 +10745,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 154.94 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
+			(at 154.94 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "A768EB226M1HLAE048"
 			(at 154.94 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -10476,7 +10825,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CAPAE660X600N - A768EB226M1HLAE048"
+		(property "Footprint" "Capacitor_SMD:CAPAE660X600N"
 			(at 71.12 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -10532,6 +10881,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 71.12 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
+			(at 71.12 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "A768EB226M1HLAE048"
 			(at 71.12 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -10735,6 +11106,17 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 92.71 209.55 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 92.71 209.55 90)
 			(hide yes)
 			(show_name no)
@@ -11024,6 +11406,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 114.3 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "c40f69ec-0ed1-4eed-af26-85bf55c0e294")
 		)
@@ -11226,6 +11619,17 @@
 			)
 		)
 		(property "Part #" "LM66100DCKR"
+			(at 246.38 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 246.38 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -11471,6 +11875,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 246.38 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
 			(uuid "42c96e0a-ad53-4d39-b6a0-86c77aa2e45d")
 		)
@@ -11601,6 +12016,17 @@
 			)
 		)
 		(property "Part #" "SIC437AED-T1-GE3"
+			(at 77.47 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 77.47 229.87 0)
 			(hide yes)
 			(show_name no)
@@ -11814,6 +12240,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 64.77 222.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ddeaafd7-1828-4690-a4b8-8d5938b18b79")
 		)
@@ -11929,6 +12366,17 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 99.06 224.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 99.06 224.79 0)
 			(hide yes)
 			(show_name no)
@@ -12064,7 +12512,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 101.6 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -12142,6 +12590,17 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 101.6 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 101.6 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -12278,7 +12737,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 57.15 33.02 90)
 			(hide yes)
 			(show_name no)
@@ -12331,6 +12790,17 @@
 					(size 0.8 0.8)
 				)
 				(justify left)
+			)
+		)
+		(property "verified footprint" "y"
+			(at 57.15 33.02 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -12456,7 +12926,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_Changjiang_FNR6040S"
 			(at 110.49 222.25 0)
 			(hide yes)
 			(show_name no)
@@ -12534,6 +13004,17 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 110.49 222.25 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 110.49 222.25 90)
 			(hide yes)
 			(show_name no)
@@ -12669,6 +13150,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 95.25 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "565ffb79-bb73-4d23-a474-a478dd75bab1")
 		)
@@ -12716,7 +13208,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_Panasonic_PCC-M1040ML"
 			(at 93.98 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -12804,6 +13296,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 93.98 140.97 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c09aa887-c4c7-4b9b-84c6-364cb47e7e4b")
 		)
@@ -12852,7 +13355,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CAPAE660X600N - A768EB226M1HLAE048"
+		(property "Footprint" "Capacitor_SMD:CAPAE660X600N"
 			(at 128.27 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -12918,6 +13421,28 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 128.27 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "A768EB226M1HLAE048"
+			(at 128.27 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "b11e411e-1e73-48fc-91f9-68861fa466fc")
 		)
@@ -12965,7 +13490,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 85.09 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -13043,6 +13568,17 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 85.09 138.43 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 85.09 138.43 90)
 			(hide yes)
 			(show_name no)
@@ -13178,7 +13714,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 78.74 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -13223,6 +13759,17 @@
 			)
 		)
 		(property "Part #" "RC0603FR-072KL"
+			(at 78.74 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 78.74 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -13281,7 +13828,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:TO-236AB_SOT23_NEX-M"
 			(at 81.28 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -13369,6 +13916,17 @@
 				(justify left)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 76.2 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "2a54903a-757b-4b6a-9865-bb21a8ea438b")
 		)
@@ -13421,7 +13979,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 226.822 187.96 90)
 			(hide yes)
 			(show_name no)
@@ -13498,6 +14056,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 228.6 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "28a60f22-61c2-4ec0-903b-99cb34d5fbf8")
 		)
@@ -13546,7 +14115,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CAPAE660X600N - A768EB226M1HLAE048"
+		(property "Footprint" "Capacitor_SMD:CAPAE660X600N"
 			(at 62.23 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -13612,6 +14181,28 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 62.23 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "A768EB226M1HLAE048"
+			(at 62.23 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "d482f187-3513-41a7-b5cc-2b8d7250e9d3")
 		)
@@ -13660,7 +14251,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:PW14_TEX-M"
 			(at 256.54 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -13759,6 +14350,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 256.54 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "7"
 			(uuid "d47b015d-a39e-4637-bd15-f5e5df2c1443")
 		)
@@ -13842,7 +14444,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_APV_ANR8065"
 			(at 93.98 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -13920,6 +14522,17 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 93.98 110.49 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 93.98 110.49 90)
 			(hide yes)
 			(show_name no)
@@ -14131,7 +14744,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric_Pad1.40x3.35mm_HandSolder"
 			(at 232.41 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -14209,6 +14822,17 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 232.41 128.27 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 232.41 128.27 90)
 			(hide yes)
 			(show_name no)
@@ -14345,7 +14969,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+		(property "Footprint" ""
 			(at 281.94 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -14445,7 +15069,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 101.6 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -14523,6 +15147,17 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 101.6 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 101.6 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -14812,6 +15447,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 66.04 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "5e0203e3-293b-46b8-99cf-1758457de1ad")
 		)
@@ -14870,7 +15516,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 66.04 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -14915,6 +15561,17 @@
 			)
 		)
 		(property "Part #" "RC0603FR-071KL"
+			(at 66.04 53.34 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 66.04 53.34 90)
 			(hide yes)
 			(show_name no)
@@ -15127,6 +15784,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 160.02 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "fe70c91b-a8c0-4d35-8e23-cf97ff935c44")
 		)
@@ -15175,7 +15843,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CAPAE660X600N"
 			(at 114.3 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -15263,6 +15931,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 114.3 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "726a1cbc-e823-42f4-b92d-3963b96a1b9a")
 		)
@@ -15311,7 +15990,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 41.91 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -15356,6 +16035,17 @@
 			)
 		)
 		(property "Part #" "RC0402FR-07100KL"
+			(at 41.91 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 41.91 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -15481,6 +16171,17 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 105.41 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 105.41 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -15693,6 +16394,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 41.91 240.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d8ee0bb7-52f6-4581-a329-b7a885fe91c9")
 		)
@@ -15895,6 +16607,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 66.04 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "001050d5-b6e1-4f47-bb1a-b4969f99ab07")
 		)
@@ -15955,7 +16678,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CAPAE660X600N - A768EB226M1HLAE048"
+		(property "Footprint" "Capacitor_SMD:CAPAE660X600N"
 			(at 137.16 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -16021,6 +16744,28 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 137.16 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "A768EB226M1HLAE048"
+			(at 137.16 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "4e6ba1fe-36b2-41e3-81f1-a388dc0f74c3")
 		)
@@ -16068,7 +16813,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 85.09 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -16146,6 +16891,17 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 85.09 107.95 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 85.09 107.95 90)
 			(hide yes)
 			(show_name no)
@@ -16348,6 +17104,17 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 96.52 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 96.52 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -16637,6 +17404,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 53.34 233.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9545052f-ae1b-4fc8-ba31-704efa36107e")
 		)
@@ -16685,7 +17463,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CAPAE660X600N - A768EB226M1HLAE048"
+		(property "Footprint" "Capacitor_SMD:CAPAE660X600N"
 			(at 146.05 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -16741,6 +17519,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 146.05 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
+			(at 146.05 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "A768EB226M1HLAE048"
 			(at 146.05 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -16876,6 +17676,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 271.78 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "336de048-a198-4ae1-96a9-cb7a355e448f")
 		)
@@ -16922,7 +17733,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric_Pad1.40x3.35mm_HandSolder"
 			(at 232.41 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -17000,6 +17811,17 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 232.41 115.57 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 232.41 115.57 90)
 			(hide yes)
 			(show_name no)

@@ -6138,7 +6138,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 196.5452 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -6215,6 +6215,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 195.58 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d5125b6c-02bc-4100-a400-f614ed3cc787")
 		)
@@ -6263,7 +6274,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+		(property "Footprint" ""
 			(at 58.42 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -6362,7 +6373,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 167.64 76.708 90)
 			(hide yes)
 			(show_name no)
@@ -6439,6 +6450,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 167.64 74.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "b855a21a-a51b-416c-ab45-6a2d52bde6a5")
 		)
@@ -6486,7 +6508,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 167.64 79.248 90)
 			(hide yes)
 			(show_name no)
@@ -6563,6 +6585,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 167.64 77.47 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "9ed5c7d2-778a-4d8c-9d24-facba49d0dfd")
 		)
@@ -6612,7 +6645,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 185.1152 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -6689,6 +6722,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 184.15 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a2aaf122-25b0-4dce-8b79-ca182f27a49b")
 		)
@@ -6738,7 +6782,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 291.592 107.95 90)
 			(hide yes)
 			(show_name no)
@@ -6815,6 +6859,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 293.37 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4a79ef0b-fd22-4ab4-b72d-8f1ff17af7b3")
 		)
@@ -6864,7 +6919,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "ControllerLib:AOTAB201610S3R3101T"
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric_Pad1.05x1.20mm_HandSolder"
 			(at 59.69 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -6941,6 +6996,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 59.69 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "caf0e669-e730-42fc-a61c-c958b41e11a0")
 		)
@@ -6990,7 +7056,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "LED_SMD:LED_L128_LUL-M"
 			(at 341.63 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -7089,6 +7155,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 341.63 95.25 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "f68cf7c8-e28d-4747-8927-6539aa8d179a")
 		)
@@ -7137,7 +7214,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 127.9652 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -7214,6 +7291,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 127 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "bb72bfbe-841f-4cbe-985a-443043f43ca2")
 		)
@@ -7263,7 +7351,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 87.3252 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -7330,6 +7418,17 @@
 			)
 		)
 		(property "Part #" "GRM155R71H104KE14D"
+			(at 86.36 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 86.36 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -7467,7 +7566,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 207.9752 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -7544,6 +7643,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 207.01 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "58cfff80-0713-4545-88c0-387feb025af6")
 		)
@@ -7591,7 +7701,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 370.84 58.1152 0)
 			(hide yes)
 			(show_name no)
@@ -7679,6 +7789,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 367.03 57.15 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f5d7bfc6-d4ef-4410-9adc-c99afc0e5e09")
 		)
@@ -7728,7 +7849,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 339.852 104.14 90)
 			(hide yes)
 			(show_name no)
@@ -7805,6 +7926,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 341.63 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "184eba3d-df3e-47f0-88ed-f367c307a685")
 		)
@@ -7854,7 +7986,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+		(property "Footprint" ""
 			(at 241.3 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -8033,7 +8165,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "LED_SMD:LED_L128_LUL-M"
 			(at 355.6 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -8122,6 +8254,17 @@
 			)
 		)
 		(property "Part #" "L128-RED1003500000"
+			(at 355.6 95.25 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 355.6 95.25 90)
 			(hide yes)
 			(show_name no)
@@ -8334,7 +8477,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 363.22 35.8648 0)
 			(hide yes)
 			(show_name no)
@@ -8422,6 +8565,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 367.03 36.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f29d203e-8bb9-4442-9da7-83230e11b7b0")
 		)
@@ -8471,7 +8625,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 64.4652 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -8548,6 +8702,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 63.5 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "7ecd0bcf-d71c-46c3-9e52-b7e66723bfe4")
 		)
@@ -8595,7 +8760,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ControllerLib:SW_SKRPABE010"
+		(property "Footprint" ""
 			(at 278.13 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -8721,7 +8886,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 75.8952 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -8798,6 +8963,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 74.93 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "db68f0a2-0a7d-4ee5-971d-7f9c4ab033ac")
 		)
@@ -8845,7 +9021,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ControllerLib:SW_SKRPABE010"
+		(property "Footprint" ""
 			(at 278.13 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -8971,7 +9147,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 353.822 104.14 90)
 			(hide yes)
 			(show_name no)
@@ -9048,6 +9224,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 355.6 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "368ce0b3-cf24-46bc-8a98-ca61e9749672")
 		)
@@ -9094,7 +9281,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 63.5 69.088 90)
 			(hide yes)
 			(show_name no)
@@ -9171,6 +9358,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 63.5 67.31 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "f7b8681f-e12b-4e58-8164-d1d73b6761e9")
 		)
@@ -9220,7 +9418,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 139.3952 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -9297,6 +9495,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 138.43 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ec9663b6-ec94-4807-9e43-255af95e9ea4")
 		)
@@ -9344,7 +9553,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 242.57 113.538 90)
 			(hide yes)
 			(show_name no)
@@ -9421,6 +9630,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 242.57 111.76 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "8a5d32fe-7a4d-4d0b-94a0-8a1ad8b65f7a")
 		)
@@ -9467,7 +9687,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 187.96 96.012 90)
 			(hide yes)
 			(show_name no)
@@ -9534,6 +9754,17 @@
 			)
 		)
 		(property "Part #" "RC0603FR-074K7L"
+			(at 187.96 97.79 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 187.96 97.79 90)
 			(hide yes)
 			(show_name no)
@@ -9669,7 +9900,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Module:Maple_Mini"
+		(property "Footprint" "Connector_JST:JST_SH_SM03B-SRSS-TB_1x03-1MP_P1.00mm_Horizontal"
 			(at 60.96 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -9680,7 +9911,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.jst.com/wp-content/uploads/2025/06/eSR_SZ.pdf"
 			(at 60.96 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -9725,6 +9956,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 60.96 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "SM03B-SRSS-TB"
+			(at 60.96 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 60.96 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -9790,7 +10043,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 162.2552 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -9857,6 +10110,17 @@
 			)
 		)
 		(property "Part #" "GRM155R71H104KE14D"
+			(at 161.29 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 161.29 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -10011,6 +10275,17 @@
 			)
 		)
 		(property "Part #" "ABM8-272-T3"
+			(at 359.41 44.45 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 359.41 44.45 90)
 			(hide yes)
 			(show_name no)
@@ -10228,7 +10503,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 187.96 93.472 90)
 			(hide yes)
 			(show_name no)
@@ -10295,6 +10570,17 @@
 			)
 		)
 		(property "Part #" "RC0603FR-074K7L"
+			(at 187.96 95.25 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 187.96 95.25 90)
 			(hide yes)
 			(show_name no)
@@ -10586,7 +10872,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 50.4952 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -10653,6 +10939,17 @@
 			)
 		)
 		(property "Part #" "GRM155R60J475ME47D"
+			(at 49.53 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 49.53 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -10866,7 +11163,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+		(property "Footprint" ""
 			(at 68.58 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -11198,7 +11495,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 325.882 104.14 90)
 			(hide yes)
 			(show_name no)
@@ -11265,6 +11562,17 @@
 			)
 		)
 		(property "Part #" "RC1206JR-071K6L"
+			(at 327.66 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 327.66 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -11401,7 +11709,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 75.8952 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -11468,6 +11776,17 @@
 			)
 		)
 		(property "Part #" "GRM155R60J475ME47D"
+			(at 74.93 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 74.93 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -11605,7 +11924,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+		(property "Footprint" ""
 			(at 228.6 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -11858,7 +12177,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 346.71 58.928 90)
 			(hide yes)
 			(show_name no)
@@ -11935,6 +12254,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 346.71 57.15 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "272de76e-550c-4411-90f7-97a68950e449")
 		)
@@ -11983,7 +12313,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 242.57 94.488 90)
 			(hide yes)
 			(show_name no)
@@ -12060,6 +12390,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 242.57 92.71 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "6d720cca-4193-493f-9ba8-675c52f821a5")
 		)
@@ -12108,7 +12449,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm"
+		(property "Footprint" ""
 			(at 50.8 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -12209,7 +12550,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 173.6852 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -12276,6 +12617,17 @@
 			)
 		)
 		(property "Part #" "GRM155R71H104KE14D"
+			(at 172.72 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 172.72 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -12489,7 +12841,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 150.8252 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -12556,6 +12908,17 @@
 			)
 		)
 		(property "Part #" "GRM155R71H104KE14D"
+			(at 149.86 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 149.86 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -12692,7 +13055,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 39.0652 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -12769,6 +13132,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 38.1 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5b55faad-d4e3-437b-bfd5-2f191d385771")
 		)
@@ -12818,7 +13192,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "LED_SMD:LED_L128_LUL-M"
 			(at 327.66 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -12907,6 +13281,17 @@
 			)
 		)
 		(property "Part #" "L128-RED1003500000"
+			(at 327.66 95.25 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 327.66 95.25 90)
 			(hide yes)
 			(show_name no)
@@ -13187,6 +13572,17 @@
 			)
 		)
 		(property "Part #" "SC1512(13)-A4"
+			(at 124.46 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 124.46 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -13483,7 +13879,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 116.5352 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -13571,6 +13967,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 115.57 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "eaf3dee8-c3f2-4e91-8fc0-33a01836cc3f")
 		)
@@ -13620,7 +14027,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 291.592 88.9 90)
 			(hide yes)
 			(show_name no)
@@ -13687,6 +14094,17 @@
 			)
 		)
 		(property "Part #" "RMCF0402FT10K0"
+			(at 293.37 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 293.37 88.9 0)
 			(hide yes)
 			(show_name no)

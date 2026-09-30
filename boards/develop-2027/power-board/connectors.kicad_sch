@@ -3857,7 +3857,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_XH_B6B-XH-A_1x06_P2.50mm_Vertical"
 			(at 53.34 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -3935,6 +3935,17 @@
 			)
 		)
 		(property "DigiKey Part #" "455-B6B-XH-A-ND"
+			(at 53.34 40.64 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 53.34 40.64 90)
 			(hide yes)
 			(show_name no)
@@ -4339,7 +4350,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SON:WSON-8-1EP_6x5mm_P1.27mm_EP3.4x4mm"
+		(property "Footprint" "Diode_SMD:D_SOD-323F"
 			(at 275.59 34.29 90)
 			(hide yes)
 			(show_name no)
@@ -4414,6 +4425,28 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 275.59 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "BAT201M3 RRG"
+			(at 275.59 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 275.59 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -4703,6 +4736,17 @@
 				)
 			)
 		)
+		(property "verified footprint" "y"
+			(at 292.1 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "cc319f04-f612-4738-9fa3-767fe8e95941")
 		)
@@ -4818,6 +4862,17 @@
 			)
 		)
 		(property "Sim.Name" ""
+			(at 261.62 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 261.62 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -5003,7 +5058,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_USB:USB_Micro-B_Amphenol_10118194-0001LF_Horizontal"
 			(at 224.79 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -5081,6 +5136,17 @@
 			)
 		)
 		(property "DigiKey Part #" "609-4618-1-ND"
+			(at 220.98 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 220.98 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -5226,7 +5292,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223"
 			(at 275.59 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -5292,6 +5358,17 @@
 			)
 		)
 		(property "Part #" "NCP1117LPST33T3G"
+			(at 275.59 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "verified footprint" "y"
 			(at 275.59 46.99 0)
 			(hide yes)
 			(show_name no)
