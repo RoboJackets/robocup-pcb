@@ -10494,14 +10494,15 @@
 		(at 134.5 136.2 90)
 		(descr "CK components KMR2 tactile switch http://www.ckswitches.com/media/1479/kmr2.pdf")
 		(tags "tactile switch kmr2")
-		(property "Reference" "SW1"
+		(property "Reference" "RESET"
 			(at 0.1 2.7 270)
 			(layer "F.SilkS")
 			(uuid "ab0ec53e-ef56-42ce-bdfb-8eeaf09280f9")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
+					(thickness 0.2)
+					(bold yes)
 				)
 			)
 		)
@@ -18745,7 +18746,7 @@
 		(property "Reference" "J2"
 			(at 0 -3.9 0)
 			(layer "F.SilkS")
-			(uuid "dc5e141c-3716-48f2-9db0-0349dc979ea1")
+			(uuid "f9dbaac0-08f6-429d-af31-1efea4214372")
 			(effects
 				(font
 					(size 1 1)
@@ -18756,7 +18757,7 @@
 		(property "Value" "COMM SPI"
 			(at 0 3.9 0)
 			(layer "F.Fab")
-			(uuid "28c4a06b-abab-4b70-bfbe-b8b30517e0a7")
+			(uuid "21ef83d8-3121-4f50-99d6-bc16c33a206f")
 			(effects
 				(font
 					(size 1 1)
@@ -18768,7 +18769,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "7fa8fa46-3c2a-4b88-b77a-25af6fce6cdd")
+			(uuid "109ba34d-6459-4f5e-bb05-bbd6f6602e29")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18779,7 +18780,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "7f4ea71d-fa54-4a07-8b66-c17b7ada4914")
+			(uuid "61ec8040-1bcb-41f7-8092-c33c0a10bad8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20107,7 +20108,8 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
+					(thickness 0.2)
+					(bold yes)
 				)
 			)
 		)
@@ -29762,14 +29764,6 @@
 		(uuid "0db8c094-5244-4572-8cd9-7d4e0329440d")
 	)
 	(segment
-		(start 165.55 48.45)
-		(end 165.55 52.75)
-		(width 1)
-		(layer "F.Cu")
-		(net "GND")
-		(uuid "14299959-a432-47f6-a86d-1cab0d010e26")
-	)
-	(segment
 		(start 168.725 130.6)
 		(end 168.725 131.55)
 		(width 0.2)
@@ -29784,6 +29778,14 @@
 		(layer "F.Cu")
 		(net "GND")
 		(uuid "277ec75e-b423-4e25-bc6e-1947af029dfb")
+	)
+	(segment
+		(start 165.55 48.45)
+		(end 165.55 51.25)
+		(width 1)
+		(layer "F.Cu")
+		(net "GND")
+		(uuid "29f7bc1a-0fc0-42c2-ae42-0b730ac7ab9a")
 	)
 	(segment
 		(start 161.175 135.575)
@@ -30345,15 +30347,6 @@
 		(uuid "2f7bacf3-59d8-48be-8a21-f060e6a46096")
 	)
 	(via
-		(at 165.55 52.75)
-		(size 0.6)
-		(drill 0.3)
-		(layers "F.Cu" "B.Cu")
-		(free yes)
-		(net "GND")
-		(uuid "3bd8cc59-1c04-4b80-afee-1a90559ca0c8")
-	)
-	(via
 		(at 119.8 133.3)
 		(size 0.6)
 		(drill 0.3)
@@ -30558,15 +30551,6 @@
 		(layers "F.Cu" "B.Cu")
 		(net "GND")
 		(uuid "ad28eed1-66e6-4cb5-b8ec-6bfc5788ec05")
-	)
-	(via
-		(at 165.55 52)
-		(size 0.6)
-		(drill 0.3)
-		(layers "F.Cu" "B.Cu")
-		(free yes)
-		(net "GND")
-		(uuid "ad86c8e3-3ac3-4348-85a1-574482545009")
 	)
 	(via
 		(at 169.75 132.6)
