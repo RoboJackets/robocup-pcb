@@ -13,16 +13,16 @@
       "shapes": 1.0,
       "tracks": 1.0,
       "vias": 1.0,
-      "zones": 0.27000001072883606
+      "zones": 0.9100000262260437
     },
     "prototype_zone_fills": false,
     "selection_filter": {
-      "dimensions": true,
+      "dimensions": false,
       "footprints": true,
-      "graphics": true,
-      "keepouts": true,
-      "lockedItems": true,
-      "otherItems": true,
+      "graphics": false,
+      "keepouts": false,
+      "lockedItems": false,
+      "otherItems": false,
       "pads": true,
       "text": true,
       "tracks": true,
@@ -54,7 +54,7 @@
       "ly_points"
     ],
     "visible_layers": "ffffffff_ffffffff_ffffff75_ffffffff",
-    "zone_display_mode": 1
+    "zone_display_mode": 0
   },
   "git": {
     "integration_disabled": false,
@@ -96,20 +96,18 @@
       11
     ],
     "col_widths": [
-      162,
-      147,
-      91,
+      156,
+      141,
+      103,
       71,
-      91,
-      91,
-      91,
+      103,
+      103,
+      103,
       74,
-      91,
-      91,
-      91,
-      91,
-      91,
-      91
+      103,
+      103,
+      103,
+      103
     ],
     "custom_group_rules": [],
     "expanded_rows": [],
