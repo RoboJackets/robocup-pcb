@@ -27306,6 +27306,26 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text_box "Dribbler Test Board v0.1\nNiko Cornell, Miles Schuler\nMany Thanks: Aiden Lee\n\nThis expensive hand warmer was created by two mechanical engineers."
+		(start 99.75 41.2)
+		(end 131.493389 52.77572)
+		(margins 1.0025 1.0025 1.0025 1.0025)
+		(layer "F.SilkS")
+		(uuid "113e0809-31d9-4bf1-9536-c9d1073cf967")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left top)
+		)
+		(border yes)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(knockout no)
+	)
 	(point
 		(at 95 45)
 		(size 1)
