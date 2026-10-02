@@ -5,14 +5,14 @@
 	(uuid "fe9d33c9-5178-4c57-bc83-f7cec26732cb")
 	(paper "A4")
 	(title_block
-		(date "2026-09-30")
+		(date "2026-10-02")
 		(rev "v1.0-proto")
 		(company "RoboJackets RoboCup")
 		(comment 1 "Based on a Design by Akshat Sehgal, Sean Seguin, & Ibrahim Irfan")
 		(comment 2 "Aiden Lee")
 	)
 	(lib_symbols)
-	(text "TODO: Add a physical power switch so MCU isn't always on!\nTODO: Add external fan control!"
+	(text "TODO: Add external fan control!"
 		(exclude_from_sim no)
 		(at 72.39 127 0)
 		(effects
@@ -192,6 +192,16 @@
 		)
 		(uuid "cf75f9ed-164d-4678-99d3-882d4c4defa9")
 	)
+	(bus
+		(pts
+			(xy 64.77 107.95) (xy 88.9 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efd86e71-931c-4ed6-b9ff-dbe8d526edfd")
+	)
 	(sheet
 		(at 26.67 101.6)
 		(size 38.1 12.7)
@@ -228,6 +238,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "I2C{SDA SCL}" bidirectional
+			(at 64.77 107.95 0)
+			(uuid "0fd1dd2c-8e63-44c9-b275-adea78c47a81")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -765,7 +785,7 @@
 			)
 		)
 		(pin "I2C0{SDA,SCL}" bidirectional
-			(at 88.9 106.68 180)
+			(at 88.9 107.95 180)
 			(uuid "9dd7e81e-1c69-4685-9684-6d505178f261")
 			(effects
 				(font

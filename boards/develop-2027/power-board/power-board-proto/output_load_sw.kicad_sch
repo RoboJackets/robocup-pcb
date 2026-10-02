@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "40 V, 40 A Output Load Switch")
-		(date "2026-09-30")
+		(date "2026-10-02")
 		(rev "v1.0-proto")
 		(company "RoboJackets RoboCup")
 		(comment 1 "Based on a Design by Akshat Sehgal, Sean Seguin, & Ibrahim Irfan")
@@ -1641,10 +1641,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "4f0ae60d-0413-4404-8a7f-d430b5d82e3c")
+			(uuid "0bffd1f4-60ea-4c0f-88a6-787078339147")
 		)
 		(pin "2"
-			(uuid "3b2ea7cb-6e70-48a6-9aa4-cedc620a7b2b")
+			(uuid "a85e9e45-000d-4d16-a8e2-28a043827ac0")
 		)
 		(instances
 			(project "power-board-proto"
@@ -1662,6 +1662,10 @@
 				)
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09/a49b5787-1ba6-4e34-a7ea-2e00e3ad30ca"
 					(reference "R25")
+					(unit 1)
+				)
+				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/4d1d1f5d-fb00-4e31-8e19-895f37bb6ca7/9be5d336-229a-4e98-9894-1694dc41418d"
+					(reference "R61")
 					(unit 1)
 				)
 			)
@@ -1768,10 +1772,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "2a82d0f3-d05e-4a71-88be-4694e748dcfe")
+			(uuid "9cc3d940-ac13-4a87-9261-f077799ac3d2")
 		)
 		(pin "2"
-			(uuid "3e20f3cb-c026-4150-991b-bfc5f67ebab1")
+			(uuid "6e77aa04-1b76-40d5-ae44-23127d262921")
 		)
 		(instances
 			(project "power-board-proto"
@@ -1789,6 +1793,10 @@
 				)
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09/a49b5787-1ba6-4e34-a7ea-2e00e3ad30ca"
 					(reference "R23")
+					(unit 1)
+				)
+				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/4d1d1f5d-fb00-4e31-8e19-895f37bb6ca7/9be5d336-229a-4e98-9894-1694dc41418d"
+					(reference "R54")
 					(unit 1)
 				)
 			)
@@ -1895,10 +1903,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "4efabc18-a8d0-4e4b-8e7a-6eff6bd59951")
+			(uuid "a66397c4-f802-4e50-825b-45de1808f1bd")
 		)
 		(pin "2"
-			(uuid "e742d6e9-56a4-407e-b8a9-864e16cedab7")
+			(uuid "4c920438-5864-45a3-a3bd-d02972c9f07b")
 		)
 		(instances
 			(project "power-board-proto"
@@ -1916,6 +1924,10 @@
 				)
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09/a49b5787-1ba6-4e34-a7ea-2e00e3ad30ca"
 					(reference "R26")
+					(unit 1)
+				)
+				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/4d1d1f5d-fb00-4e31-8e19-895f37bb6ca7/9be5d336-229a-4e98-9894-1694dc41418d"
+					(reference "R62")
 					(unit 1)
 				)
 			)
@@ -1988,7 +2000,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "9d680b94-9d4c-4280-a9c2-e1d1491036c5")
+			(uuid "d76e6b71-d47e-494b-8fad-efc45508a14c")
 		)
 		(instances
 			(project "power-board-proto"
@@ -2006,6 +2018,10 @@
 				)
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09/a49b5787-1ba6-4e34-a7ea-2e00e3ad30ca"
 					(reference "#PWR014")
+					(unit 1)
+				)
+				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/4d1d1f5d-fb00-4e31-8e19-895f37bb6ca7/9be5d336-229a-4e98-9894-1694dc41418d"
+					(reference "#PWR099")
 					(unit 1)
 				)
 			)
@@ -2090,10 +2106,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "58747225-d385-4802-83ed-907e7293fce5")
+			(uuid "bb692fbe-f339-410a-8ab5-d83abb7575eb")
 		)
 		(pin "1"
-			(uuid "d464de44-50f4-4842-aaca-75401c6bd7b2")
+			(uuid "4b89b206-21df-4c0e-a966-3c7e15a027f1")
 		)
 		(instances
 			(project "power-board-proto"
@@ -2111,6 +2127,10 @@
 				)
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09/a49b5787-1ba6-4e34-a7ea-2e00e3ad30ca"
 					(reference "D14")
+					(unit 1)
+				)
+				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/4d1d1f5d-fb00-4e31-8e19-895f37bb6ca7/9be5d336-229a-4e98-9894-1694dc41418d"
+					(reference "D15")
 					(unit 1)
 				)
 			)
@@ -2217,10 +2237,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "613b0194-f3f0-4c8e-b1d3-96fc308076c9")
+			(uuid "84216f3e-7c81-4c47-bc14-5c8987e1bf18")
 		)
 		(pin "2"
-			(uuid "c7f764c5-4a36-4bbc-8e8d-8f932b3deb7a")
+			(uuid "fffa8b6c-77fc-4b27-9de5-2cbeec9f4cfa")
 		)
 		(instances
 			(project "power-board-proto"
@@ -2238,6 +2258,10 @@
 				)
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09/a49b5787-1ba6-4e34-a7ea-2e00e3ad30ca"
 					(reference "D5")
+					(unit 1)
+				)
+				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/4d1d1f5d-fb00-4e31-8e19-895f37bb6ca7/9be5d336-229a-4e98-9894-1694dc41418d"
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -2266,7 +2290,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Q_NMOS_GDS"
+		(property "Value" "T2N7002BK,LM"
 			(at 166.37 105.4099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2277,7 +2301,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:Nordic_AQFN-94-1EP_7x7mm_P0.4mm"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
 			(at 165.1 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -2288,7 +2312,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://toshiba.semicon-storage.com/info/T2N7002BK_datasheet_en_20191025.pdf?did=30376&prodName=T2N7002BK"
 			(at 160.02 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -2299,7 +2323,40 @@
 				)
 			)
 		)
-		(property "Description" "N-MOSFET transistor, gate/drain/source"
+		(property "Description" "N-Channel 60 V 400mA (Ta) 320mW (Ta) Surface Mount SOT-23-3"
+			(at 160.02 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "T2N7002BK,LM"
+			(at 160.02 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 160.02 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "T2N7002BKLMCT-ND"
 			(at 160.02 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -2311,13 +2368,13 @@
 			)
 		)
 		(pin "2"
-			(uuid "20e27de7-5ffd-4ea7-911c-34c18739149c")
+			(uuid "8c43a2fe-13ba-4cdc-bae8-de135fa5e496")
 		)
 		(pin "1"
-			(uuid "022b1e9b-eee9-4e68-a532-a7ec0a610f54")
+			(uuid "abcf72e9-9a98-4ad8-9c14-567be8e7f02d")
 		)
 		(pin "3"
-			(uuid "8877183c-64dd-426e-85a6-6260f53977f2")
+			(uuid "ea2d1b3d-f13a-4198-a422-8c01063a47a9")
 		)
 		(instances
 			(project "power-board-proto"
@@ -2335,6 +2392,10 @@
 				)
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09/a49b5787-1ba6-4e34-a7ea-2e00e3ad30ca"
 					(reference "Q7")
+					(unit 1)
+				)
+				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/4d1d1f5d-fb00-4e31-8e19-895f37bb6ca7/9be5d336-229a-4e98-9894-1694dc41418d"
+					(reference "Q9")
 					(unit 1)
 				)
 			)
@@ -2407,7 +2468,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "5e0c1f13-3c95-4203-846c-79c598a11390")
+			(uuid "d291f071-79b3-4bac-be1f-7411492f9095")
 		)
 		(instances
 			(project "power-board-proto"
@@ -2425,6 +2486,10 @@
 				)
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09/a49b5787-1ba6-4e34-a7ea-2e00e3ad30ca"
 					(reference "#PWR0103")
+					(unit 1)
+				)
+				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/4d1d1f5d-fb00-4e31-8e19-895f37bb6ca7/9be5d336-229a-4e98-9894-1694dc41418d"
+					(reference "#PWR0104")
 					(unit 1)
 				)
 			)
@@ -2497,7 +2562,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "e3a5752d-6521-4e34-aa7d-1c6be4c071c8")
+			(uuid "64fcec51-ef4b-45d7-9f16-112a24390c5e")
 		)
 		(instances
 			(project "power-board-proto"
@@ -2515,6 +2580,10 @@
 				)
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09/a49b5787-1ba6-4e34-a7ea-2e00e3ad30ca"
 					(reference "#PWR015")
+					(unit 1)
+				)
+				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/4d1d1f5d-fb00-4e31-8e19-895f37bb6ca7/9be5d336-229a-4e98-9894-1694dc41418d"
+					(reference "#PWR0105")
 					(unit 1)
 				)
 			)
@@ -2619,10 +2688,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "eb71c71f-9d94-4803-9ac8-586a496174d2")
+			(uuid "fe9aa4a8-a78d-4913-a8e8-a010c31c3161")
 		)
 		(pin "2"
-			(uuid "ef93e110-b332-4d47-b129-d75fcca45f0e")
+			(uuid "54b9fd49-18c6-4f0d-a49d-c5e291843011")
 		)
 		(instances
 			(project "power-board-proto"
@@ -2640,6 +2709,10 @@
 				)
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09/a49b5787-1ba6-4e34-a7ea-2e00e3ad30ca"
 					(reference "R24")
+					(unit 1)
+				)
+				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/4d1d1f5d-fb00-4e31-8e19-895f37bb6ca7/9be5d336-229a-4e98-9894-1694dc41418d"
+					(reference "R55")
 					(unit 1)
 				)
 			)
@@ -2746,10 +2819,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "ff9b0f02-2230-426b-bfda-0fe33ebf0877")
+			(uuid "a20d7584-662e-412e-ad4f-7cd5fe04f2b5")
 		)
 		(pin "2"
-			(uuid "ec542257-a01b-4b5a-953c-aa57244931e0")
+			(uuid "38e58cc1-10e6-49a2-b279-66126c78ed11")
 		)
 		(instances
 			(project "power-board-proto"
@@ -2767,6 +2840,10 @@
 				)
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09/a49b5787-1ba6-4e34-a7ea-2e00e3ad30ca"
 					(reference "R59")
+					(unit 1)
+				)
+				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/4d1d1f5d-fb00-4e31-8e19-895f37bb6ca7/9be5d336-229a-4e98-9894-1694dc41418d"
+					(reference "R60")
 					(unit 1)
 				)
 			)
@@ -2871,13 +2948,13 @@
 			)
 		)
 		(pin "1"
-			(uuid "21d302de-34f0-4477-9010-beed579425b2")
+			(uuid "594de794-bc90-42a3-b410-51527c1f6e0b")
 		)
 		(pin "2"
-			(uuid "81178e29-3a79-4a46-b00b-32eb09eb797e")
+			(uuid "a442ac26-7807-4eab-80c4-7498e0d537a1")
 		)
 		(pin "3"
-			(uuid "4acbd2f2-6e22-4dc8-afc1-56017fdade34")
+			(uuid "472f8d76-c922-4819-8d9b-0d1be4c286bd")
 		)
 		(instances
 			(project "power-board-proto"
@@ -2895,6 +2972,10 @@
 				)
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09/a49b5787-1ba6-4e34-a7ea-2e00e3ad30ca"
 					(reference "Q8")
+					(unit 1)
+				)
+				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/4d1d1f5d-fb00-4e31-8e19-895f37bb6ca7/9be5d336-229a-4e98-9894-1694dc41418d"
+					(reference "Q10")
 					(unit 1)
 				)
 			)
