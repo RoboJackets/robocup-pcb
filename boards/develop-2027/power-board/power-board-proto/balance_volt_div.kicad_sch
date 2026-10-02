@@ -484,7 +484,7 @@
 		)
 		(uuid "a0bdff0d-a543-45a0-9052-055269c441cc")
 	)
-	(text "Input Range: 0.0 - 21.0 V\nDivider Ratio: XX:XX\nFinal Voltage Range: 0.0 - 2.74 V"
+	(text "Input Range: 0.0 - 21.0 V\nDivider Ratio: 7.66:1\nFinal Voltage Range: 0.0 - 2.74 V"
 		(exclude_from_sim no)
 		(at 189.23 77.47 0)
 		(effects
@@ -495,7 +495,7 @@
 		)
 		(uuid "0e5077d5-ac0a-41f0-8e6c-ad7482e4e043")
 	)
-	(text "Input Range: 0.0 - 8.4 V\nDivider Ratio: XX:XX\nFinal Voltage Range: 0.0 - 2.75 V"
+	(text "Input Range: 0.0 - 8.4 V\nDivider Ratio: 3.05:1\nFinal Voltage Range: 0.0 - 2.75 V"
 		(exclude_from_sim no)
 		(at 189.23 26.67 0)
 		(effects
@@ -528,7 +528,7 @@
 		)
 		(uuid "632f7bb5-dbab-447a-8395-cb6fcdb63af5")
 	)
-	(text "Input Range: 0.0 - 12.6 V\nDivider Ratio: XX:XX\nFinal Voltage Range: 0.0 - 2.72 V"
+	(text "Input Range: 0.0 - 12.6 V\nDivider Ratio: 4.63:1\nFinal Voltage Range: 0.0 - 2.72 V"
 		(exclude_from_sim no)
 		(at 278.13 26.67 0)
 		(effects
@@ -539,7 +539,7 @@
 		)
 		(uuid "8361f910-4769-43a2-b93b-84bc1ebf218c")
 	)
-	(text "Input Range: 0.0 - 4.2 V\nDivider Ratio: XX:XX\nFinal Voltage Range: 0.0 - 2.718 V"
+	(text "Input Range: 0.0 - 4.2 V\nDivider Ratio: 1.55:1\nFinal Voltage Range: 0.0 - 2.72 V"
 		(exclude_from_sim no)
 		(at 100.33 26.67 0)
 		(effects
@@ -583,7 +583,7 @@
 		)
 		(uuid "d289bbdf-8914-402a-814b-0e1f881ba416")
 	)
-	(text "Input Range: 0.0 - 16.8 V\nDivider Ratio: XX:XX\nFinal Voltage Range: 0.0 - 2.60 V"
+	(text "Input Range: 0.0 - 16.8 V\nDivider Ratio: 6.46:1\nFinal Voltage Range: 0.0 - 2.60 V"
 		(exclude_from_sim no)
 		(at 100.33 77.47 0)
 		(effects
@@ -594,7 +594,7 @@
 		)
 		(uuid "e2f596b2-26cb-4e53-911b-74fd4f111f9f")
 	)
-	(text_box "TODO: Put note about how op-amps are the better solution if we actually care about accuracy beyond maybe 2 sig figs."
+	(text_box "The intent of these dividers is to get a general idea of the battery's charge level, rather than get an exact measurement.\nAs such, the decreased resolution caused by scaling down the voltage to 3.3 V max is acceptable."
 		(exclude_from_sim no)
 		(at 203.2 76.2 0)
 		(size 76.2 38.1)
