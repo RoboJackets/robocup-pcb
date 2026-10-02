@@ -594,7 +594,7 @@
 		)
 		(uuid "e2f596b2-26cb-4e53-911b-74fd4f111f9f")
 	)
-	(text_box "The intent of these dividers is to get a general idea of the battery's charge level, rather than get an exact measurement.\nAs such, the decreased resolution caused by scaling down the voltage to 3.3 V max is acceptable."
+	(text_box "The intent of these dividers is to get a general idea of the battery's charge level, rather than get an exact measurement.\nAs such, the decreased resolution caused by scaling down the voltage to 3.3 V max is acceptable.\nIf more precision is needed in the future, consider using op-amps instead."
 		(exclude_from_sim no)
 		(at 203.2 76.2 0)
 		(size 76.2 38.1)

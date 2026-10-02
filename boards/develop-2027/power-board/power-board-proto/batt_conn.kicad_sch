@@ -1178,7 +1178,7 @@
 		)
 		(uuid "319bad0c-eb00-49b8-b279-8f4f3c5331d8")
 	)
-	(text "XT60 for 5s LiPo\nTA-RL3-120C-1550-5S1P"
+	(text "XT60 for 5s LiPo: TA-RL3-120C-1550-5S1P"
 		(exclude_from_sim no)
 		(at 26.67 26.67 0)
 		(effects
@@ -1274,7 +1274,7 @@
 		(uuid "dc36ca52-29ce-46d9-9b3c-997d00db991a")
 	)
 	(bus_entry
-		(at 124.46 86.36)
+		(at 123.19 86.36)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -1283,7 +1283,7 @@
 		(uuid "05e47f5f-749d-454f-92a9-19cd99fe645a")
 	)
 	(bus_entry
-		(at 124.46 93.98)
+		(at 123.19 93.98)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -1292,7 +1292,7 @@
 		(uuid "20c86ded-ec93-46e4-84bc-5ef0dfbed707")
 	)
 	(bus_entry
-		(at 124.46 91.44)
+		(at 123.19 91.44)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -1301,7 +1301,7 @@
 		(uuid "4ab2b64c-14be-430e-b987-985555d50be5")
 	)
 	(bus_entry
-		(at 124.46 83.82)
+		(at 123.19 83.82)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -1310,7 +1310,7 @@
 		(uuid "719ad76a-06b5-4e7c-9b20-f44cc58aadbe")
 	)
 	(bus_entry
-		(at 124.46 88.9)
+		(at 123.19 88.9)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -1320,7 +1320,17 @@
 	)
 	(bus
 		(pts
-			(xy 127 86.36) (xy 127 99.06)
+			(xy 125.73 99.06) (xy 128.27 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "027fb30c-f8c7-4de3-89a4-f8d217359257")
+	)
+	(bus
+		(pts
+			(xy 125.73 86.36) (xy 125.73 99.06)
 		)
 		(stroke
 			(width 0)
@@ -1370,7 +1380,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 91.44) (xy 124.46 91.44)
+			(xy 101.6 91.44) (xy 123.19 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1390,7 +1400,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 83.82) (xy 124.46 83.82)
+			(xy 101.6 83.82) (xy 123.19 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1468,19 +1478,9 @@
 		)
 		(uuid "bb9fcc18-65e4-4708-b4c2-689377e1b6fb")
 	)
-	(bus
-		(pts
-			(xy 127 99.06) (xy 137.16 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bdd5ef34-e89d-4766-8890-9cb425c5d1a3")
-	)
 	(wire
 		(pts
-			(xy 101.6 88.9) (xy 124.46 88.9)
+			(xy 101.6 88.9) (xy 123.19 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1500,7 +1500,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 93.98) (xy 124.46 93.98)
+			(xy 101.6 93.98) (xy 123.19 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1520,7 +1520,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 86.36) (xy 124.46 86.36)
+			(xy 101.6 86.36) (xy 123.19 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1568,6 +1568,16 @@
 		)
 		(uuid "fcf6c39b-ff6b-4e88-8bab-074e57d9a258")
 	)
+	(label "Batt_Balance.Cell1"
+		(at 121.92 91.44 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "22e9015f-14e9-46a8-8bfc-4933f64b5148")
+	)
 	(label "Batt_Cell1"
 		(at 43.18 91.44 0)
 		(effects
@@ -1577,6 +1587,16 @@
 			(justify left bottom)
 		)
 		(uuid "44feb775-2bb3-41c4-bfbd-66a73a3859ee")
+	)
+	(label "Batt_Balance.Cell4"
+		(at 121.92 83.82 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "57401cc9-82ca-4550-9de9-025d7c330e31")
 	)
 	(label "Batt_Cell0"
 		(at 43.18 93.98 0)
@@ -1588,15 +1608,15 @@
 		)
 		(uuid "7f364738-05cc-4d70-97c7-e9e51350c1f1")
 	)
-	(label "Batt_Cell4_Scaled"
-		(at 104.14 83.82 0)
+	(label "Batt_Balance.Cell2"
+		(at 121.92 88.9 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "81ca56b3-c90e-4c33-9981-a68bd404a428")
+		(uuid "a406979b-c6cb-4624-98e2-3f847fa7d12a")
 	)
 	(label "Batt_Cell3"
 		(at 43.18 86.36 0)
@@ -1608,16 +1628,6 @@
 		)
 		(uuid "a50d14a2-07ee-4f69-931b-8a2b843ee9af")
 	)
-	(label "Batt_Cell1_Scaled"
-		(at 104.14 91.44 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b3400248-cc47-4e68-9721-a4e5e876e58d")
-	)
 	(label "Batt_Cell4"
 		(at 43.18 83.82 0)
 		(effects
@@ -1628,25 +1638,15 @@
 		)
 		(uuid "b79131fc-13f3-455c-afe4-d116086cad4f")
 	)
-	(label "Batt_Cell0_Scaled"
-		(at 104.14 93.98 0)
+	(label "Batt_Balance.Cell0"
+		(at 121.92 93.98 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "be7c2c00-a6e7-493b-8fab-4702053a0b27")
-	)
-	(label "Batt_Cell3_Scaled"
-		(at 104.14 86.36 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c07da693-fa18-4821-9c85-fc2a87c8ca07")
+		(uuid "d4bdb838-8716-4773-8823-c9d5d1674e4c")
 	)
 	(label "Batt_Cell2"
 		(at 43.18 88.9 0)
@@ -1658,15 +1658,15 @@
 		)
 		(uuid "dda44c06-2b1b-4e45-b976-d12a7ec8cd32")
 	)
-	(label "Batt_Cell2_Scaled"
-		(at 104.14 88.9 0)
+	(label "Batt_Balance.Cell3"
+		(at 121.92 86.36 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "fc60f883-cb88-4f3a-8cd2-a46e65e489f4")
+		(uuid "fb02ab45-dd46-4228-87a6-58a8093b2349")
 	)
 	(hierarchical_label "VBATT"
 		(shape output)
@@ -1679,16 +1679,16 @@
 		)
 		(uuid "684922ee-b523-4868-9b1d-48eb3280938d")
 	)
-	(hierarchical_label "Batt_Balance"
+	(hierarchical_label "Batt_Balance.Cell[0..4]"
 		(shape output)
-		(at 137.16 99.06 0)
+		(at 128.27 99.06 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "d5d56a20-daa0-4b97-a8a5-e699dd8c6058")
+		(uuid "dc1d5851-3adb-4472-b86b-180b4f875551")
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
@@ -1939,6 +1939,119 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 34.29 39.37 0)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4fcd18e9-ac5d-4573-b0ad-adf069119375")
+		(property "Reference" "J2"
+			(at 34.925 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Batt Power"
+			(at 34.925 41.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_AMASS:AMASS_XT60PW-M_1x02_P7.20mm_Horizontal"
+			(at 34.29 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C98732.pdf"
+			(at 34.29 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "PCB Connector  XT60PW-M  2-Pin Right Angle Male Plug for LiPo Battery"
+			(at 34.29 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "XT60PW-M"
+			(at 34.29 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "LCSC"
+			(at 34.29 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "C98732"
+			(at 34.29 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0cb82566-9347-4776-85e2-a9631f386b5f")
+		)
+		(pin "2"
+			(uuid "e8e84705-1220-448c-aefb-3fa0e798243a")
+		)
+		(instances
+			(project "power-board-proto"
+				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/4d1d1f5d-fb00-4e31-8e19-895f37bb6ca7"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 102.87 52.07 0)
 		(unit 1)
@@ -2011,86 +2124,6 @@
 			(project "power-board-proto"
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/4d1d1f5d-fb00-4e31-8e19-895f37bb6ca7"
 					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x02_Pin")
-		(at 34.29 36.83 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ba2fa4e2-5448-4070-9120-d95422d04de5")
-		(property "Reference" "J2"
-			(at 34.925 31.75 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Batt Power"
-			(at 34.925 34.29 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 34.29 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 34.29 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 34.29 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "86528aff-e997-41e7-a6d2-7e4f91e4d4cd")
-		)
-		(pin "2"
-			(uuid "10d092e5-b96f-4473-a414-0b6fc3681319")
-		)
-		(instances
-			(project "power-board-proto"
-				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/4d1d1f5d-fb00-4e31-8e19-895f37bb6ca7"
-					(reference "J2")
 					(unit 1)
 				)
 			)
