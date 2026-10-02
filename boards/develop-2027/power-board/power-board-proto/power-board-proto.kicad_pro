@@ -539,7 +539,7 @@
       "method": 0,
       "sort_order": 0
     },
-    "bom_export_filename": "exports/kmm-pmask-mask.csv",
+    "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -618,7 +618,7 @@
           "group_by": false,
           "label": "Vendor P/N",
           "name": "Vendor P/N",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -630,7 +630,7 @@
           "group_by": false,
           "label": "Vendor",
           "name": "Vendor",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -642,6 +642,12 @@
           "group_by": false,
           "label": "Manufacturer P/N",
           "name": "Manufacturer P/N",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
           "show": false
         }
       ],
@@ -649,8 +655,8 @@
       "group_symbols": true,
       "include_excluded_from_bom": true,
       "name": "",
-      "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_asc": false,
+      "sort_field": "Value"
     },
     "bus_aliases": {},
     "connection_grid_size": 50.0,
@@ -693,7 +699,7 @@
         "uuid": "fe9d33c9-5178-4c57-bc83-f7cec26732cb"
       }
     ],
-    "used_designators": "JP1-2,J1-4,F1-2,Q1-8,#PWR1-103,Y1,U1-9,D1-14,C1-60,C66,R1-59,TP21-23,L1-5,#FLG1-2,#FLG7,SW1-2",
+    "used_designators": "C1-60,C66,L1-5,#FLG1-2,#FLG7,SW1-2,JP1-2,R1-59,TP21-23,J1-4,F1-2,Q1-8,D1-14,U1-9,Y1,#PWR1-103",
     "variants": []
   },
   "sheets": [
@@ -756,6 +762,10 @@
     [
       "62640792-e0de-4994-801a-0d183306c046",
       "Or-ing Power Mux"
+    ],
+    [
+      "0b010258-f86d-4f77-894a-d8a93894f339",
+      "Temperature Sensing"
     ]
   ],
   "text_variables": {},

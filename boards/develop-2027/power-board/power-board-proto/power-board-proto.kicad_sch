@@ -12,6 +12,16 @@
 		(comment 2 "Aiden Lee")
 	)
 	(lib_symbols)
+	(text "TODO: Add a physical power switch so MCU isn't always on!\nTODO: Add external fan control!"
+		(exclude_from_sim no)
+		(at 72.39 127 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "65ea8c3a-42e7-4aaf-859c-3c54176e4f96")
+	)
 	(wire
 		(pts
 			(xy 127 91.44) (xy 152.4 91.44)
@@ -181,6 +191,52 @@
 			(type default)
 		)
 		(uuid "cf75f9ed-164d-4678-99d3-882d4c4defa9")
+	)
+	(sheet
+		(at 26.67 101.6)
+		(size 38.1 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "0b010258-f86d-4f77-894a-d8a93894f339")
+		(property "Sheetname" "Temperature Sensing"
+			(at 26.67 100.8884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "temp_sens.kicad_sch"
+			(at 26.67 114.8846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "power-board-proto"
+				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb"
+					(page "16")
+				)
+			)
+		)
 	)
 	(sheet
 		(at 152.4 25.4)
@@ -698,9 +754,9 @@
 				(justify left)
 			)
 		)
-		(pin "UART0_RX" output
-			(at 127 111.76 0)
-			(uuid "8d13bca4-d428-4632-a61b-5d5fa3a441e9")
+		(pin "FAN_PWM" output
+			(at 127 109.22 0)
+			(uuid "5ddfa12d-6400-4a7e-99d4-5ff145df8cae")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -708,9 +764,19 @@
 				(justify right)
 			)
 		)
-		(pin "UART0_TX" output
-			(at 127 109.22 0)
-			(uuid "31156362-06e6-47f7-aac9-a4e95c0260fd")
+		(pin "I2C0{SDA,SCL}" bidirectional
+			(at 88.9 106.68 180)
+			(uuid "9dd7e81e-1c69-4685-9684-6d505178f261")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "UART0{TX,RX}" bidirectional
+			(at 127 106.68 0)
+			(uuid "806939bd-0bfb-4cbb-93b4-83cb6dded3fd")
 			(effects
 				(font
 					(size 1.27 1.27)
