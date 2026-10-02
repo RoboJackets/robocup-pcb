@@ -965,6 +965,129 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -1674,6 +1797,12 @@
 		(uuid "24b12bde-36d6-4b94-a1f9-50e741acd14c")
 	)
 	(junction
+		(at 149.86 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "32e3a5ae-0b91-450a-95a2-3d63aa09425f")
+	)
+	(junction
 		(at 170.18 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1800,6 +1929,12 @@
 		(uuid "be57ef25-a9b9-410d-9d27-3cb470845c98")
 	)
 	(junction
+		(at 147.32 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c79eeada-f7c1-4974-8535-85276149244c")
+	)
+	(junction
 		(at 80.01 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1830,7 +1965,7 @@
 		(uuid "ff98596c-e4df-414e-b075-2a733d08b538")
 	)
 	(bus_entry
-		(at 151.13 127)
+		(at 135.89 127)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -1839,7 +1974,7 @@
 		(uuid "4a41ecbb-d01a-46fe-867a-064e54dcb815")
 	)
 	(bus_entry
-		(at 151.13 129.54)
+		(at 135.89 129.54)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -2179,6 +2314,16 @@
 	)
 	(wire
 		(pts
+			(xy 149.86 129.54) (xy 166.37 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37d4ecd6-baa9-4200-88f7-59b411490a22")
+	)
+	(wire
+		(pts
 			(xy 80.01 76.2) (xy 82.55 76.2)
 		)
 		(stroke
@@ -2279,7 +2424,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 127) (xy 166.37 127)
+			(xy 135.89 127) (xy 147.32 127)
 		)
 		(stroke
 			(width 0)
@@ -2509,7 +2654,7 @@
 	)
 	(bus
 		(pts
-			(xy 143.51 132.08) (xy 148.59 132.08)
+			(xy 128.27 132.08) (xy 133.35 132.08)
 		)
 		(stroke
 			(width 0)
@@ -2609,7 +2754,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 129.54) (xy 166.37 129.54)
+			(xy 135.89 129.54) (xy 149.86 129.54)
 		)
 		(stroke
 			(width 0)
@@ -2779,13 +2924,23 @@
 	)
 	(bus
 		(pts
-			(xy 148.59 129.54) (xy 148.59 132.08)
+			(xy 133.35 129.54) (xy 133.35 132.08)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "a3568a93-c3a6-46da-92a0-f40cbdde4fa7")
+	)
+	(wire
+		(pts
+			(xy 149.86 129.54) (xy 149.86 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a373b30c-d127-429c-a0c6-c28f7b2e23c9")
 	)
 	(wire
 		(pts
@@ -2839,6 +2994,16 @@
 	)
 	(wire
 		(pts
+			(xy 147.32 127) (xy 147.32 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2831c7c-d326-4cd1-be7c-7f470e75eb96")
+	)
+	(wire
+		(pts
 			(xy 80.01 160.02) (xy 82.55 160.02)
 		)
 		(stroke
@@ -2886,6 +3051,16 @@
 			(type default)
 		)
 		(uuid "bc73b244-5cce-41c0-88ac-43c2bf01d8fa")
+	)
+	(wire
+		(pts
+			(xy 147.32 127) (xy 166.37 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bca4d854-fbb6-4bf3-83f5-547c3bc8a92f")
 	)
 	(wire
 		(pts
@@ -3128,22 +3303,22 @@
 		(uuid "ff51659a-6fae-4cf8-961f-519abb282c3d")
 	)
 	(label "UART0.TX"
-		(at 161.29 129.54 180)
+		(at 137.16 129.54 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "277472f6-e3b1-4571-ae1c-077d6e6ed026")
 	)
 	(label "UART0.RX"
-		(at 161.29 127 180)
+		(at 137.16 127 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "35bcd2f0-4e6f-4da8-8dec-52b55a8b437b")
 	)
@@ -3281,7 +3456,7 @@
 	)
 	(hierarchical_label "UART0{TX,RX}"
 		(shape bidirectional)
-		(at 143.51 132.08 180)
+		(at 128.27 132.08 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5633,6 +5808,117 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 147.32 133.35 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9eacce74-794f-4c20-87ee-b4c104cfcef3")
+		(property "Reference" "TP42"
+			(at 144.78 137.9221 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "UART RX"
+			(at 144.78 135.3821 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
+			(at 142.24 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/K75p62.pdf"
+			(at 142.24 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point (white)"
+			(at 147.32 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 147.32 133.35 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "5002"
+			(at 147.32 133.35 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "36-5002-ND"
+			(at 147.32 133.35 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6ab5ea82-34c3-4dd9-9491-f70284895832")
+		)
+		(instances
+			(project "power-board-proto"
+				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/ce944762-71ee-4143-aa48-d4707299275d"
+					(reference "TP42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 167.64 82.55 0)
 		(mirror y)
@@ -6074,6 +6360,118 @@
 			(project "power-board-proto"
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/ce944762-71ee-4143-aa48-d4707299275d"
 					(reference "#PWR0119")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 149.86 133.35 0)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e6e8ab98-8051-4fac-a24a-53bf201ca77f")
+		(property "Reference" "TP43"
+			(at 152.4 137.9221 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "UART TX"
+			(at 152.4 135.3821 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
+			(at 154.94 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/K75p62.pdf"
+			(at 154.94 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point (white)"
+			(at 149.86 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 149.86 133.35 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "5002"
+			(at 149.86 133.35 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "36-5002-ND"
+			(at 149.86 133.35 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1f99a679-9833-4e4e-82f2-ab976f354ac7")
+		)
+		(instances
+			(project "power-board-proto"
+				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/ce944762-71ee-4143-aa48-d4707299275d"
+					(reference "TP43")
 					(unit 1)
 				)
 			)

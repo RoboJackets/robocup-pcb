@@ -2332,7 +2332,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 115.062 41.91 90)
 			(hide yes)
 			(show_name no)
@@ -2412,7 +2412,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_XH_S6B-XH-A_1x06_P2.50mm_Horizontal"
 			(at 33.02 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -2435,6 +2435,39 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x06, script generated"
+			(at 33.02 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" ""
+			(at 33.02 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" ""
+			(at 33.02 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" ""
 			(at 33.02 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -2506,7 +2539,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 115.062 52.07 90)
 			(hide yes)
 			(show_name no)
@@ -2933,7 +2966,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RJ-Passives:Fuseholder_Keystone_3557-2"
 			(at 62.23 38.608 90)
 			(hide yes)
 			(show_name no)
@@ -2944,7 +2977,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.littelfuse.com/assetdocs/mini-153-pc-datasheet?assetguid=e17755be-ccca-4a76-9579-7e7a830e5578"
 			(at 62.23 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -2955,7 +2988,40 @@
 				)
 			)
 		)
-		(property "Description" "Fuse"
+		(property "Description" "Fuse Block 30 A 500V 1 Circuit Blade Through Hole"
+			(at 62.23 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "3557-2"
+			(at 62.23 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 62.23 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "36-3557-2-ND"
 			(at 62.23 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -3095,7 +3161,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RJ-Connectors:SW_SPST_ESwitch_100SP1T2B4M6QE"
 			(at 134.62 49.53 0)
 			(hide yes)
 			(show_name no)
