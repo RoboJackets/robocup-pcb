@@ -2357,15 +2357,25 @@
 		)
 		(uuid "f2575f68-e097-4d42-a706-4e346531d3c1")
 	)
-	(label "USP.DP"
-		(at 110.49 66.04 0)
+	(label "USB.DP"
+		(at 118.11 66.04 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "4e0b3b69-a73e-4bab-bd34-b6ba133bc651")
+		(uuid "588ac34d-2da6-48fc-9805-e3f77b95cfba")
+	)
+	(label "USB.DM"
+		(at 118.11 63.5 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5af1e661-e30a-4ba9-885e-acf1954974d5")
 	)
 	(label "CC2"
 		(at 128.27 34.29 180)
@@ -2386,16 +2396,6 @@
 			(justify right bottom)
 		)
 		(uuid "9253b289-409b-4e79-89db-1b72672425b2")
-	)
-	(label "USP.DM"
-		(at 110.49 63.5 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "9785bb92-9150-4e1a-9cfa-553f59e06197")
 	)
 	(label "CC2"
 		(at 74.93 55.88 0)

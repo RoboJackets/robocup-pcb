@@ -1526,7 +1526,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.4724 69.85) (xy 233.68 69.85)
+			(xy 232.41 69.85) (xy 233.68 69.85)
 		)
 		(stroke
 			(width 0)
@@ -1906,7 +1906,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 69.85) (xy 224.8524 69.85)
+			(xy 223.52 69.85) (xy 224.79 69.85)
 		)
 		(stroke
 			(width 0)
@@ -2860,7 +2860,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 228.6624 69.85 90)
+		(at 228.6 69.85 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2870,7 +2870,7 @@
 		(dnp no)
 		(uuid "21044ef2-a729-4ae7-a422-b99d4b2b0d4b")
 		(property "Reference" "R28"
-			(at 228.6 64.77 90)
+			(at 228.5376 64.77 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2880,7 +2880,7 @@
 			)
 		)
 		(property "Value" "2m ± 1%"
-			(at 228.6 67.31 90)
+			(at 228.5376 67.31 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2890,7 +2890,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
-			(at 228.6624 71.628 90)
+			(at 228.6 71.628 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2901,7 +2901,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.seielect.com/catalog/SEI-CSNL.pdf"
-			(at 228.6624 69.85 0)
+			(at 228.6 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2912,7 +2912,7 @@
 			)
 		)
 		(property "Description" "2 mOhms ±1% 3W Chip Resistor 2512 (6332 Metric) Current Sense, Moisture Resistant Metal Element"
-			(at 228.6624 69.85 0)
+			(at 228.6 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2923,7 +2923,7 @@
 			)
 		)
 		(property "Manufacturer P/N" "CSNL2512FT2L00"
-			(at 228.6624 69.85 0)
+			(at 228.6 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2934,7 +2934,7 @@
 			)
 		)
 		(property "Vendor" "DigiKey"
-			(at 228.6624 69.85 0)
+			(at 228.6 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2945,7 +2945,7 @@
 			)
 		)
 		(property "Vendor P/N" "CSNL2512FT2L00CT-ND"
-			(at 228.6624 69.85 0)
+			(at 228.6 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
