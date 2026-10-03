@@ -2563,6 +2563,29 @@
 		)
 		(uuid "916224f8-d3c7-402b-aa53-67e1cb4101a0")
 	)
+	(text "USB-C J1\nNative USB Serial/JTAG on GPIO13/14 for flashing and logs; no USB-UART bridge.\nCC 5.1k Rd = sink. Shell floating, same as ControlBoard2027.\nD2 surge clamp and F1 PTC on VBUS; VBUS feeds only the U4 LDO.\nDESIGN_NOTES.md §4."
+		(at 71.12 195.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8efa979c-2771-4cfa-9485-febe7f9d9b18")
+	)
+	(text "USB-C J1: TVS, FUSE, CC, ESD"
+		(at 69.85 96.52 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 132 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "cca5b3c7-9543-4cbc-8af5-cea250b5ed0f")
+	)
 	(label "USB_DN_CON"
 		(at 104.14 137.16 0)
 		(effects
@@ -2623,8 +2646,8 @@
 		)
 		(uuid "e6b1c3bc-b8b3-4b33-a947-9b6572cd6b6b")
 	)
-	(global_label "USB_DN"
-		(shape input)
+	(hierarchical_label "USB_DN"
+		(shape bidirectional)
 		(at 180.34 160.02 0)
 		(effects
 			(font
@@ -2632,10 +2655,10 @@
 			)
 			(justify left)
 		)
-		(uuid "f428fe5b-169d-4871-a55b-ebf91051014f")
+		(uuid "4c046611-cc4f-45c4-9c34-d4821c7e52c8")
 	)
-	(global_label "USB_DP"
-		(shape input)
+	(hierarchical_label "USB_DP"
+		(shape bidirectional)
 		(at 180.34 162.56 0)
 		(effects
 			(font
@@ -2643,22 +2666,12 @@
 			)
 			(justify left)
 		)
-		(uuid "ba2f540c-d5f2-4e19-9f55-a0540c32efeb")
+		(uuid "349374a8-b82a-40db-9e52-b715f819c1e2")
 	)
-  (text "USB-C J1\nNative USB Serial/JTAG on GPIO13/14 for flashing and logs; no USB-UART bridge.\nCC 5.1k Rd = sink. Shell floating, same as ControlBoard2027.\nD2 surge clamp and F1 PTC on VBUS; VBUS feeds only the U4 LDO.\nDESIGN_NOTES.md §4."
-    (at 71.12 195.58 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "8efa979c-2771-4cfa-9485-febe7f9d9b18")
-  )
-  (text "USB-C J1: TVS, FUSE, CC, ESD"
-    (at 69.85 96.52 0)
-    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
-    (uuid "cca5b3c7-9543-4cbc-8af5-cea250b5ed0f")
-  )
-  (text "ROUTING - USB\nUSB_DP/USB_DN 90R differential, in parallel at equal length. Join A6/B6 and A7/B7 at J1.\nU2 right at J1, D2 right at J1 VBUS, short GND vias."
+  (text "ROUTING - USB\nJ1 -> U2 (flow-through) -> R5/R6 -> module in one direction, no vias; Full-Speed, so 90R coupling is not required.\nJoin A6/B6 and A7/B7 at J1. U2 right at J1, D2 right at J1 VBUS, short GND vias."
     (at 71.12 208.28 0)
     (effects (font (size 1.27 1.27) (bold yes) (color 255 0 0 1)) (justify left bottom))
-    (uuid "31ae9f7f-d8f5-4a89-bfa4-ba7768919682")
+    (uuid "c2c3dfc5-582e-41a0-a768-1c955f339a16")
   )
 	(symbol
 		(lib_id "Connector:USB_C_Receptacle_USB2.0_16P")
@@ -2693,7 +2706,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C5143397.html"
 			(at 88.9 139.7 0)
 			(hide yes)
 			(effects
@@ -2711,6 +2724,15 @@
 				)
 			)
 		)
+		(property "MPN" "GCT USB4110-GF-A"
+			(at 88.9 139.7 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "RadioBoard2027"
 				(path "/2a1fca76-8d18-4454-959e-9d1803ee158d/93b0df52-048d-4e85-82fa-2a8a90c41d7f"
@@ -2720,7 +2742,7 @@
 			)
 		)
 	
-		(property "MPN" "GCT USB4110-GF-A"
+		(property "LCSC" "C5143397"
 			(at 88.9 139.7 0)
 			(hide yes)
 			(effects
@@ -2762,7 +2784,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25905.html"
 			(at 132.08 144.78 0)
 			(hide yes)
 			(effects
@@ -2788,7 +2810,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C25905"
+			(at 132.08 144.78 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "UniOhm 0402WGF5101TCE"
+			(at 132.08 144.78 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 132.08 144.78 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 121.92 144.78 0)
@@ -2822,7 +2871,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25905.html"
 			(at 121.92 144.78 0)
 			(hide yes)
 			(effects
@@ -2848,7 +2897,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C25905"
+			(at 121.92 144.78 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "UniOhm 0402WGF5101TCE"
+			(at 121.92 144.78 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 121.92 144.78 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Power_Protection:USBLC6-2SC6")
 		(at 172.72 160.02 0)
@@ -2902,6 +2978,15 @@
 				)
 			)
 		)
+		(property "MPN" "ST USBLC6-2SC6"
+			(at 172.72 160.02 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "RadioBoard2027"
 				(path "/2a1fca76-8d18-4454-959e-9d1803ee158d/93b0df52-048d-4e85-82fa-2a8a90c41d7f"
@@ -2911,7 +2996,7 @@
 			)
 		)
 	
-		(property "MPN" "ST USBLC6-2SC6"
+		(property "LCSC" "C7519"
 			(at 172.72 160.02 0)
 			(hide yes)
 			(effects
@@ -2973,6 +3058,15 @@
 				)
 			)
 		)
+		(property "MPN" "TI TVS0500DRVR"
+			(at 121.92 116.84 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "RadioBoard2027"
 				(path "/2a1fca76-8d18-4454-959e-9d1803ee158d/93b0df52-048d-4e85-82fa-2a8a90c41d7f"
@@ -2982,7 +3076,7 @@
 			)
 		)
 	
-		(property "MPN" "TI TVS0500DRVR"
+		(property "LCSC" "C609571"
 			(at 121.92 116.84 0)
 			(hide yes)
 			(effects
@@ -3024,7 +3118,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.bourns.com/docs/product-datasheets/mf-msmf.pdf"
 			(at 142.24 124.46 0)
 			(hide yes)
 			(effects
@@ -3042,6 +3136,15 @@
 				)
 			)
 		)
+		(property "MPN" "Bourns MF-MSMF075/33X-2"
+			(at 142.24 124.46 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "RadioBoard2027"
 				(path "/2a1fca76-8d18-4454-959e-9d1803ee158d/93b0df52-048d-4e85-82fa-2a8a90c41d7f"
@@ -3051,7 +3154,7 @@
 			)
 		)
 	
-		(property "MPN" "Bourns MF-MSMF075/33X-2"
+		(property "LCSC" "C3760814"
 			(at 142.24 124.46 0)
 			(hide yes)
 			(effects

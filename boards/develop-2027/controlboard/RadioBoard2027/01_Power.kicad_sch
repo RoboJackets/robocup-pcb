@@ -1666,6 +1666,54 @@
 		)
 		(uuid "795dc609-fce9-4e69-93ce-2b016d8be211")
 	)
+	(text "POWER\nControlboard +3V3 (VIN1, via J2) is used whenever present. USB (VIN2) powers the board for standalone flashing.\nThe TPS2116 blocks reverse current, so USB never back-feeds the controlboard and no output diodes are needed.\nST high = controlboard power selected; firmware reads it on GPIO9 (PWR_SRC_HOST).\nPR1 divider and hysteresis match ControlBoard2027 U2.\nDESIGN_NOTES.md §2."
+		(at 152.4 220.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5eb9387f-9536-4f6b-bb69-ffdec9f3423e")
+	)
+	(text "ROUTING - POWER\nC7 at U3 VIN1, C6 at VIN2, C8/C9 at VOUT. U4 tab to a copper pour.\n+3V3_HOST from J2 to U3 VIN1 and +3V3 to the module with wide traces (650mA peaks)."
+		(at 152.4 236.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(bold yes)
+				(color 255 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "1f760402-13bc-4aac-b723-10ead8c7a9e2")
+	)
+	(text "POWER MUX U3: CONTROLBOARD 3V3, ELSE USB"
+		(at 172.72 121.92 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 132 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "969845bf-893b-4085-a940-27db58e3020b")
+	)
+	(text "USB 3V3 LDO U4"
+		(at 149.86 170.18 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 132 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "d1a6b058-0d47-4378-8142-28870e58faee")
+	)
 	(label "U3_PR1"
 		(at 220.98 142.24 180)
 		(effects
@@ -1696,17 +1744,6 @@
 		)
 		(uuid "1a4e719e-9b56-4ae5-9404-c2bd07b7292a")
 	)
-	(global_label "PWR_SRC_HOST"
-		(shape output)
-		(at 274.32 157.48 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e1f3acd5-36e9-4abe-9ccd-8018ae695d80")
-	)
 	(global_label "+3V3_HOST"
 		(shape input)
 		(at 190.5 134.62 180)
@@ -1718,26 +1755,17 @@
 		)
 		(uuid "90cff894-0733-45a9-94f9-b13bfaf4a169")
 	)
-  (text "POWER\nControlboard +3V3 (VIN1, via J2) is used whenever present. USB (VIN2) powers the board for standalone flashing.\nThe TPS2116 blocks reverse current, so USB never back-feeds the controlboard and no output diodes are needed.\nST high = controlboard power selected; firmware reads it on GPIO9 (PWR_SRC_HOST).\nPR1 divider and hysteresis match ControlBoard2027 U2.\nDESIGN_NOTES.md §2."
-    (at 152.4 220.98 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "5eb9387f-9536-4f6b-bb69-ffdec9f3423e")
-  )
-  (text "ROUTING - POWER\nC7 at U3 VIN1, C6 at VIN2, C8/C9 at VOUT. U4 tab to a copper pour.\n+3V3_HOST from J2 to U3 VIN1 and +3V3 to the module with wide traces (650mA peaks)."
-    (at 152.4 236.22 0)
-    (effects (font (size 1.27 1.27) (bold yes) (color 255 0 0 1)) (justify left bottom))
-    (uuid "1f760402-13bc-4aac-b723-10ead8c7a9e2")
-  )
-  (text "POWER MUX U3: CONTROLBOARD 3V3, ELSE USB"
-    (at 172.72 121.92 0)
-    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
-    (uuid "969845bf-893b-4085-a940-27db58e3020b")
-  )
-  (text "USB 3V3 LDO U4"
-    (at 149.86 170.18 0)
-    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
-    (uuid "d1a6b058-0d47-4378-8142-28870e58faee")
-  )
+	(hierarchical_label "PWR_SRC_HOST"
+		(shape output)
+		(at 274.32 157.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "495bd5d5-d16c-456b-9215-9088758f4575")
+	)
 	(symbol
 		(lib_id "Power_Management:TPS2116DRL")
 		(at 254 139.7 0)
@@ -1791,6 +1819,15 @@
 				)
 			)
 		)
+		(property "MPN" "TI TPS2116DRLR"
+			(at 254 139.7 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "RadioBoard2027"
 				(path "/2a1fca76-8d18-4454-959e-9d1803ee158d/2ff95fff-49b1-4d01-9cac-1cb6dbac2b66"
@@ -1800,7 +1837,7 @@
 			)
 		)
 	
-		(property "MPN" "TI TPS2116DRLR"
+		(property "LCSC" "C3235557"
 			(at 254 139.7 0)
 			(hide yes)
 			(effects
@@ -1861,6 +1898,15 @@
 				)
 			)
 		)
+		(property "MPN" "Diodes AP7361C-33E-13"
+			(at 175.26 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "RadioBoard2027"
 				(path "/2a1fca76-8d18-4454-959e-9d1803ee158d/2ff95fff-49b1-4d01-9cac-1cb6dbac2b66"
@@ -1870,7 +1916,7 @@
 			)
 		)
 	
-		(property "MPN" "Diodes AP7361C-33E-13"
+		(property "LCSC" "C500795"
 			(at 175.26 177.8 0)
 			(hide yes)
 			(effects
@@ -1914,7 +1960,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C1779.html"
 			(at 162.56 181.61 0)
 			(hide yes)
 			(effects
@@ -1923,7 +1969,7 @@
 				)
 			)
 		)
-		(property "Description" "LDO input and VBUS capacitance, X7R >= 10V. USB requires 1-10uF on VBUS."
+		(property "Description" "LDO input and VBUS capacitance, X5R 25V. USB requires 1-10uF on VBUS."
 			(at 162.56 181.61 0)
 			(hide yes)
 			(effects
@@ -1940,7 +1986,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C1779"
+			(at 162.56 181.61 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL21A475KAQNNNE"
+			(at 162.56 181.61 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "25V X5R"
+			(at 162.56 181.61 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C")
 		(at 195.58 181.61 0)
@@ -1976,7 +2049,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C19702.html"
 			(at 195.58 181.61 0)
 			(hide yes)
 			(effects
@@ -1985,7 +2058,7 @@
 				)
 			)
 		)
-		(property "Description" "LDO output / mux VIN2 capacitor, X7R."
+		(property "Description" "LDO output / mux VIN2 capacitor, X5R 10V."
 			(at 195.58 181.61 0)
 			(hide yes)
 			(effects
@@ -2002,7 +2075,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C19702"
+			(at 195.58 181.61 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL10A106KP8NNNC"
+			(at 195.58 181.61 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "10V X5R"
+			(at 195.58 181.61 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C")
 		(at 203.2 138.43 0)
@@ -2038,7 +2138,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C19702.html"
 			(at 203.2 138.43 0)
 			(hide yes)
 			(effects
@@ -2047,7 +2147,7 @@
 				)
 			)
 		)
-		(property "Description" "Mux VIN1 capacitor at the cable input, X7R."
+		(property "Description" "Mux VIN1 capacitor at the cable input, X5R 10V."
 			(at 203.2 138.43 0)
 			(hide yes)
 			(effects
@@ -2064,7 +2164,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C19702"
+			(at 203.2 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL10A106KP8NNNC"
+			(at 203.2 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "10V X5R"
+			(at 203.2 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 226.06 138.43 0)
@@ -2098,7 +2225,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25741.html"
 			(at 226.06 138.43 0)
 			(hide yes)
 			(effects
@@ -2107,7 +2234,7 @@
 				)
 			)
 		)
-		(property "Description" "PR1 divider top. Same 100k/68k as ControlBoard2027 U2: switches to USB below ~2.24V, back above ~2.57V with R14."
+		(property "Description" "PR1 divider top. Same 100k/68k as ControlBoard2027 U2: switches to USB below ~2.34V, back above ~2.57V with R14."
 			(at 226.06 138.43 0)
 			(hide yes)
 			(effects
@@ -2124,7 +2251,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C25741"
+			(at 226.06 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "UniOhm 0402WGF1003TCE"
+			(at 226.06 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 226.06 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 226.06 146.05 0)
@@ -2158,7 +2312,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C36871.html"
 			(at 226.06 146.05 0)
 			(hide yes)
 			(effects
@@ -2184,7 +2338,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C36871"
+			(at 226.06 146.05 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "UniOhm 0402WGF6802TCE"
+			(at 226.06 146.05 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 226.06 146.05 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C")
 		(at 274.32 138.43 0)
@@ -2220,7 +2401,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C45783.html"
 			(at 274.32 138.43 0)
 			(hide yes)
 			(effects
@@ -2246,7 +2427,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C45783"
+			(at 274.32 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL21A226MAQNNNE"
+			(at 274.32 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "25V X5R"
+			(at 274.32 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C")
 		(at 284.48 138.43 0)
@@ -2282,7 +2490,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C1525.html"
 			(at 284.48 138.43 0)
 			(hide yes)
 			(effects
@@ -2308,7 +2516,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C1525"
+			(at 284.48 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL05B104KO5NNNC"
+			(at 284.48 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "16V X7R"
+			(at 284.48 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 269.24 140.97 0)
@@ -2342,7 +2577,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25744.html"
 			(at 269.24 140.97 0)
 			(hide yes)
 			(effects
@@ -2368,7 +2603,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C25744"
+			(at 269.24 140.97 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "UniOhm 0402WGF1002TCE"
+			(at 269.24 140.97 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 269.24 140.97 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 273.05 152.4 90)
@@ -2402,7 +2664,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C26083.html"
 			(at 273.05 152.4 0)
 			(hide yes)
 			(effects
@@ -2428,7 +2690,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C26083"
+			(at 273.05 152.4 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "UniOhm 0402WGF1004TCE"
+			(at 273.05 152.4 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 273.05 152.4 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 309.88 138.43 0)
@@ -2462,7 +2751,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25867.html"
 			(at 309.88 138.43 0)
 			(hide yes)
 			(effects
@@ -2488,7 +2777,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C25867"
+			(at 309.88 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "UniOhm 0402WGF1501TCE"
+			(at 309.88 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 309.88 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:LED")
 		(at 309.88 146.05 90)
@@ -2522,7 +2838,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C5554143.html"
 			(at 309.88 146.05 0)
 			(hide yes)
 			(effects
@@ -2540,6 +2856,15 @@
 				)
 			)
 		)
+		(property "MPN" "Kingbright APT1608EC"
+			(at 309.88 146.05 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "RadioBoard2027"
 				(path "/2a1fca76-8d18-4454-959e-9d1803ee158d/2ff95fff-49b1-4d01-9cac-1cb6dbac2b66"
@@ -2549,7 +2874,7 @@
 			)
 		)
 	
-		(property "MPN" "Kingbright APT1608EC"
+		(property "LCSC" "C5554143"
 			(at 309.88 146.05 0)
 			(hide yes)
 			(effects

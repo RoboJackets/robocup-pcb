@@ -2120,7 +2120,69 @@
 		)
 		(uuid "b2cc4f0a-e58d-420e-9b7f-0b3afebb3246")
 	)
-	(global_label "ESP_EN"
+	(text "EN RESET"
+		(at 113.03 87.63 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 132 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "ae26e807-d35d-4219-8678-93f7701963e6")
+	)
+	(text "USB R, UART0"
+		(at 238.76 110.49 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 132 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "1661b5a7-7116-494d-86ea-4b6453ddec6f")
+	)
+	(text "BOOT GPIO28"
+		(at 285.75 121.92 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 132 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "2750809c-0e2d-4248-bf02-fd8baef2bfd0")
+	)
+	(text "STATUS LED"
+		(at 238.76 146.05 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 132 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "6290bcca-d88b-4772-b693-eca104a20b0c")
+	)
+	(text "ESP32-C5-WROOM-1U-N8R8 (ESP-Hosted SPI full-duplex slave)\nCLK GPIO6, MOSI GPIO7, MISO GPIO2, CS GPIO10, HANDSHAKE GPIO3, DATA_READY GPIO4, reset = EN.\nESP-Hosted's C5 Kconfig defaults are CLK GPIO3 and HANDSHAKE GPIO1: set these two in menuconfig.\nGPIO2/3/7 are strapping pins, but boot mode is set only by GPIO26-28.\nEN: 10k/1uF delay, host reset via R2. BOOT on GPIO28. Status LED on GPIO24. Pad 19 is PSRAM CS: NC.\nAntenna: Taoglas FXP831 on the U.FL connector; its 5GHz gain exceeds the certified limit (C1).\nDESIGN_NOTES.md §3."
+		(at 119.38 203.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f15d6460-b28b-4533-8439-2f750fb575c3")
+	)
+	(hierarchical_label "ESP_EN"
 		(shape input)
 		(at 127 106.68 180)
 		(effects
@@ -2129,10 +2191,10 @@
 			)
 			(justify right)
 		)
-		(uuid "80a62c9a-8519-469b-9b27-307fcd143949")
+		(uuid "d9da1472-f1bd-4c89-8955-fa6dcb151b3d")
 	)
-	(global_label "ESP_SPI_MISO"
-		(shape input)
+	(hierarchical_label "ESP_SPI_MISO"
+		(shape output)
 		(at 156.21 132.08 180)
 		(effects
 			(font
@@ -2140,10 +2202,10 @@
 			)
 			(justify right)
 		)
-		(uuid "3e7a570e-3885-4c06-998b-7550d992983f")
+		(uuid "6979082a-83f2-4f25-90a1-45c858ff7a84")
 	)
-	(global_label "ESP_HANDSHAKE"
-		(shape input)
+	(hierarchical_label "ESP_HANDSHAKE"
+		(shape output)
 		(at 157.48 134.62 180)
 		(effects
 			(font
@@ -2151,10 +2213,10 @@
 			)
 			(justify right)
 		)
-		(uuid "1ef336f3-be73-45ea-80ce-894ead25083e")
+		(uuid "ecdfd492-e5e4-48fd-82b5-87e853535795")
 	)
-	(global_label "ESP_DATA_READY"
-		(shape input)
+	(hierarchical_label "ESP_DATA_READY"
+		(shape output)
 		(at 157.48 139.7 180)
 		(effects
 			(font
@@ -2162,9 +2224,9 @@
 			)
 			(justify right)
 		)
-		(uuid "892c63b0-b778-4684-b002-29f94c048af3")
+		(uuid "754bc8ff-c7c3-428a-841f-824b14107cd1")
 	)
-	(global_label "ESP_SPI_SCK"
+	(hierarchical_label "ESP_SPI_SCK"
 		(shape input)
 		(at 157.48 147.32 180)
 		(effects
@@ -2173,9 +2235,9 @@
 			)
 			(justify right)
 		)
-		(uuid "87ac8f1f-7d6f-4b10-9225-1487f9569e04")
+		(uuid "85a0411b-81be-48e8-a882-c4cfd14c41f6")
 	)
-	(global_label "ESP_SPI_MOSI"
+	(hierarchical_label "ESP_SPI_MOSI"
 		(shape input)
 		(at 157.48 149.86 180)
 		(effects
@@ -2184,9 +2246,9 @@
 			)
 			(justify right)
 		)
-		(uuid "75a62f18-d73a-4d21-8d56-19c8826bb9ff")
+		(uuid "aa6b0b7e-4528-4470-8386-33c4f0914ff6")
 	)
-	(global_label "ESP_SPI_CS"
+	(hierarchical_label "ESP_SPI_CS"
 		(shape input)
 		(at 157.48 160.02 180)
 		(effects
@@ -2195,9 +2257,9 @@
 			)
 			(justify right)
 		)
-		(uuid "cc6421fb-9c82-43d6-b402-b3c6ce162a4b")
+		(uuid "cffc375b-13ce-440b-8967-d7dfe837a836")
 	)
-	(global_label "PWR_SRC_HOST"
+	(hierarchical_label "PWR_SRC_HOST"
 		(shape input)
 		(at 157.48 157.48 180)
 		(effects
@@ -2206,10 +2268,10 @@
 			)
 			(justify right)
 		)
-		(uuid "e01696af-d8f1-422d-8197-e9bb49f39cbc")
+		(uuid "789cf057-ab96-4729-b34f-d5586bff1bb6")
 	)
-	(global_label "USB_DN"
-		(shape input)
+	(hierarchical_label "USB_DN"
+		(shape bidirectional)
 		(at 247.65 132.08 0)
 		(effects
 			(font
@@ -2217,10 +2279,10 @@
 			)
 			(justify left)
 		)
-		(uuid "2784da04-d5b6-4e24-b453-f9c5c640333d")
+		(uuid "a2c10361-e7db-4904-952d-946c452140df")
 	)
-	(global_label "USB_DP"
-		(shape input)
+	(hierarchical_label "USB_DP"
+		(shape bidirectional)
 		(at 270.51 134.62 0)
 		(effects
 			(font
@@ -2228,37 +2290,12 @@
 			)
 			(justify left)
 		)
-		(uuid "7459bcf7-d083-4f18-9126-3e484ad110be")
+		(uuid "2ec7f938-4539-417c-a637-9d6c645afb5b")
 	)
-  (text "ROUTING - MODULE\nC1/C2 right at pad 2. R1/C3 short to EN. R4 at GPIO2; R5/R6 at GPIO13/14, then 90R pair to J1.\nModule EPAD soldered to GND with vias for heat."
+  (text "ROUTING - MODULE\nC1/C2 right at pad 2. R1/C3 short to EN. R4 at GPIO2; R5/R6 at GPIO13/14, then the USB pair straight to U2/J1.\nModule EPAD soldered to GND with vias for heat."
     (at 119.38 218.44 0)
     (effects (font (size 1.27 1.27) (bold yes) (color 255 0 0 1)) (justify left bottom))
-    (uuid "16e3cb06-ae8d-408a-a0a0-4bea123f795a")
-  )
-  (text "EN RESET"
-    (at 113.03 87.63 0)
-    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
-    (uuid "ae26e807-d35d-4219-8678-93f7701963e6")
-  )
-  (text "USB R, UART0"
-    (at 238.76 110.49 0)
-    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
-    (uuid "1661b5a7-7116-494d-86ea-4b6453ddec6f")
-  )
-  (text "BOOT GPIO28"
-    (at 285.75 121.92 0)
-    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
-    (uuid "2750809c-0e2d-4248-bf02-fd8baef2bfd0")
-  )
-  (text "STATUS LED"
-    (at 238.76 146.05 0)
-    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
-    (uuid "6290bcca-d88b-4772-b693-eca104a20b0c")
-  )
-  (text "ESP32-C5-WROOM-1U-N8R8 (ESP-Hosted SPI full-duplex slave)\nCLK GPIO6, MOSI GPIO7, MISO GPIO2, CS GPIO10, HANDSHAKE GPIO3, DATA_READY GPIO4, reset = EN.\nESP-Hosted's C5 Kconfig defaults are CLK GPIO3 and HANDSHAKE GPIO1: set these two in menuconfig.\nGPIO2/3/7 are strapping pins, but boot mode is set only by GPIO26-28.\nEN: 10k/1uF delay, host reset via R2. BOOT on GPIO28. Status LED on GPIO24. Pad 19 is PSRAM CS: NC.\nAntenna: Taoglas FXP831 on the U.FL connector; its 5GHz gain exceeds the certified limit (C1).\nDESIGN_NOTES.md §3."
-    (at 119.38 203.2 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "f15d6460-b28b-4533-8439-2f750fb575c3")
+    (uuid "98513326-e490-4aeb-b494-89a76d4aeddf")
   )
 	(symbol
 		(lib_id "RadioBoard2027:ESP32-C5-WROOM-1U")
@@ -2313,6 +2350,15 @@
 				)
 			)
 		)
+		(property "MPN" "Espressif ESP32-C5-WROOM-1U-N8R8"
+			(at 203.2 144.78 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "RadioBoard2027"
 				(path "/2a1fca76-8d18-4454-959e-9d1803ee158d/1e40acf6-717b-4faa-8a28-5b02c685b3b7"
@@ -2322,7 +2368,7 @@
 			)
 		)
 	
-		(property "MPN" "Espressif ESP32-C5-WROOM-1U-N8R8"
+		(property "LCSC" "C51950748"
 			(at 203.2 144.78 0)
 			(hide yes)
 			(effects
@@ -2364,7 +2410,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25744.html"
 			(at 167.64 99.06 0)
 			(hide yes)
 			(effects
@@ -2390,7 +2436,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C25744"
+			(at 167.64 99.06 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "UniOhm 0402WGF1002TCE"
+			(at 167.64 99.06 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 167.64 99.06 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C")
 		(at 157.48 110.49 0)
@@ -2426,7 +2499,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C52923.html"
 			(at 157.48 110.49 0)
 			(hide yes)
 			(effects
@@ -2435,7 +2508,7 @@
 				)
 			)
 		)
-		(property "Description" "EN delay capacitor, see R1. X7R."
+		(property "Description" "EN delay capacitor, see R1. X5R 25V."
 			(at 157.48 110.49 0)
 			(hide yes)
 			(effects
@@ -2452,7 +2525,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C52923"
+			(at 157.48 110.49 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL05A105KA5NQNC"
+			(at 157.48 110.49 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "25V X5R"
+			(at 157.48 110.49 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 147.32 111.76 90)
@@ -2487,7 +2587,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C318884.html"
 			(at 147.32 111.76 0)
 			(hide yes)
 			(effects
@@ -2513,7 +2613,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C318884"
+			(at 147.32 111.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "XKB TS-1187A-B-A-B"
+			(at 147.32 111.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 133.35 106.68 90)
@@ -2547,7 +2665,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25117.html"
 			(at 133.35 106.68 0)
 			(hide yes)
 			(effects
@@ -2573,7 +2691,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C25117"
+			(at 133.35 106.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "UniOhm 0402WGF4700TCE"
+			(at 133.35 106.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 133.35 106.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 162.56 132.08 90)
@@ -2607,7 +2752,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25105.html"
 			(at 162.56 132.08 0)
 			(hide yes)
 			(effects
@@ -2633,7 +2778,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C25105"
+			(at 162.56 132.08 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "UniOhm 0402WGF330JTCE"
+			(at 162.56 132.08 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "5%"
+			(at 162.56 132.08 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C")
 		(at 213.36 113.03 0)
@@ -2669,7 +2841,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C45783.html"
 			(at 213.36 113.03 0)
 			(hide yes)
 			(effects
@@ -2678,7 +2850,7 @@
 				)
 			)
 		)
-		(property "Description" "Module 3V3 bulk, X5R/X7R >= 6.3V. HW design guide 1.3.2 asks >= 10uF; TX peaks reach 403mA at 5GHz."
+		(property "Description" "Module 3V3 bulk, X5R 25V. HW design guide 1.3.2 asks >= 10uF; TX peaks reach 403mA at 5GHz."
 			(at 213.36 113.03 0)
 			(hide yes)
 			(effects
@@ -2695,7 +2867,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C45783"
+			(at 213.36 113.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL21A226MAQNNNE"
+			(at 213.36 113.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "25V X5R"
+			(at 213.36 113.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C")
 		(at 223.52 113.03 0)
@@ -2731,7 +2930,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C1525.html"
 			(at 223.52 113.03 0)
 			(hide yes)
 			(effects
@@ -2757,7 +2956,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C1525"
+			(at 223.52 113.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL05B104KO5NNNC"
+			(at 223.52 113.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "16V X7R"
+			(at 223.52 113.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 241.3 132.08 90)
@@ -2791,7 +3017,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25092.html"
 			(at 241.3 132.08 0)
 			(hide yes)
 			(effects
@@ -2817,7 +3043,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C25092"
+			(at 241.3 132.08 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "UniOhm 0402WGF220JTCE"
+			(at 241.3 132.08 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "5%"
+			(at 241.3 132.08 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 264.16 134.62 90)
@@ -2851,7 +3104,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25092.html"
 			(at 264.16 134.62 0)
 			(hide yes)
 			(effects
@@ -2877,7 +3130,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C25092"
+			(at 264.16 134.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "UniOhm 0402WGF220JTCE"
+			(at 264.16 134.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "5%"
+			(at 264.16 134.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 289.56 132.08 0)
@@ -2911,7 +3191,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25744.html"
 			(at 289.56 132.08 0)
 			(hide yes)
 			(effects
@@ -2937,7 +3217,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C25744"
+			(at 289.56 132.08 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "UniOhm 0402WGF1002TCE"
+			(at 289.56 132.08 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 289.56 132.08 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 289.56 144.78 90)
@@ -2972,7 +3279,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C318884.html"
 			(at 289.56 144.78 0)
 			(hide yes)
 			(effects
@@ -2998,7 +3305,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C318884"
+			(at 289.56 144.78 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "XKB TS-1187A-B-A-B"
+			(at 289.56 144.78 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C")
 		(at 299.72 143.51 0)
@@ -3034,7 +3359,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C1548.html"
 			(at 299.72 143.51 0)
 			(hide yes)
 			(effects
@@ -3060,7 +3385,43 @@
 				)
 			)
 		)
-	)
+	
+		(property "DNP" "Do not fit"
+			(at 299.72 143.51 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1548"
+			(at 299.72 143.51 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "FH 0402CG150J500NT"
+			(at 299.72 143.51 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "50V C0G"
+			(at 299.72 143.51 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 241.3 127 90)
@@ -3094,7 +3455,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C4125.html"
 			(at 241.3 127 0)
 			(hide yes)
 			(effects
@@ -3120,7 +3481,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C4125"
+			(at 241.3 127 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "UniOhm 0402WGF4990TCE"
+			(at 241.3 127 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 241.3 127 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 266.7 127 0)
@@ -3274,7 +3662,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25867.html"
 			(at 247.65 149.86 0)
 			(hide yes)
 			(effects
@@ -3300,7 +3688,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C25867"
+			(at 247.65 149.86 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "UniOhm 0402WGF1501TCE"
+			(at 247.65 149.86 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 247.65 149.86 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:LED")
 		(at 259.08 149.86 180)
@@ -3334,7 +3749,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C84267.html"
 			(at 259.08 149.86 0)
 			(hide yes)
 			(effects
@@ -3360,7 +3775,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C84267"
+			(at 259.08 149.86 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "NationStar NCD0603G1"
+			(at 259.08 149.86 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:+3V3")
 		(at 167.64 95.25 0)

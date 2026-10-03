@@ -61,8 +61,9 @@ power it alone for flashing and debugging.
   present. The part blocks reverse current into an unused input (SLVSFG1A §7.3.4), so USB power
   never back-feeds the controlboard, and no diodes are needed.
 - **PR1 divider R11 100k / R12 68k, ST pull-up R13 10k, hysteresis R14 1M.** These copy
-  ControlBoard2027 U2, so both muxes switch at the same points: to USB below about 2.24V,
-  back above about 2.57V.
+  ControlBoard2027 U2, so both muxes switch at the same points: to USB below about 2.34V,
+  back above about 2.57V (VREF 1.00V typ; ST is pulled up to +3V3, which equals VIN1 while VIN1 is
+  selected, so R14 raises PR1 on the falling edge).
 - **ST → GPIO9 (PWR_SRC_HOST).** High means the controlboard is powering the board. Firmware uses
   it to know whether a host is present (§6).
 - **U4 AP7361C-33E-13**: 1A, 360mV dropout at 1A (DS37274). At a 403mA TX peak it drops
@@ -160,7 +161,7 @@ the Taoglas FXP831.07.0100C named in the radio design doc. N8R8 has 8MB flash an
 ## 5. Controlboard link
 
 ### J2 connector
-JST GH 1.25mm, 15-pin vertical SMD header BM15B-GHS-TBT(LF)(SN). ControlBoard2027 J14 is the same
+JST GH 1.25mm, 15-pin vertical SMD header BM15B-GHS-TBT(LF)(SN). ControlBoard2027 J9 is the same
 part with the same pinout, so the cable is a straight 1:1 harness: housing GHR-15V-S, terminal
 SSHL-002T-P0.2, 26 AWG.
 
@@ -190,17 +191,25 @@ SSHL-002T-P0.2, 26 AWG.
 
 ### ESD
 - **U5 TPD4E05U06** on SCK, MOSI, MISO, CS and **U6** on HANDSHAKE, DATA_READY, EN, both right at
-  J2. U6 channel D2- is unused.
+  J2. Each line runs flow-through: it enters pin 1/2/4/5 and leaves from the paired pass-through
+  pin (10/9/7/6). The pass-through pins are NC pads that only carry the trace across the part. The
+  schematic uses the project symbol `TPD4E05U06DQA_FlowThru`, which draws each protected pin on the
+  left and its pass-through pin opposite it on the right, so the sheet reads like the layout.
+  U6 channel D2+ (pins 4/7) is unused and tied to GND.
 - The module is rated HBM ±2kV / CDM ±500V (MOD §12), and the cable end gets handled.
 
 ### Pulls
-The controlboard holds CS up (R73 10k) and HANDSHAKE/DATA_READY down (R75/R76 100k). This board
+The controlboard holds CS up (R29 10k) and HANDSHAKE/DATA_READY down (R31/R32 100k). This board
 adds no pulls on those lines.
 
 - Once running, the ESP-Hosted firmware enables its own internal pulls: pull-up on MOSI/SCLK/CS,
   pull-down on MISO/HS/DR (EH `spi_slave_api.c`).
 - During reset and ROM boot those pins float, apart from GPIO4, which has a weak internal pull-up
-  (CHIP Table 2-1). R76 overrides it to about 2.28V, below the 2.475V input-high threshold.
+  (CHIP Table 2-1). Against the controlboard's R32 100k pull-down it sits at about 2.28V. That is
+  just below the STM32's 2.31V input-high threshold (DS13313 Table 51), in the undefined band, so the
+  host may read DATA_READY either way while the ESP is in reset or ROM boot. The host ignores
+  HANDSHAKE/DATA_READY for 500ms after it releases EN (§6), so this is harmless; a 10k pull-down
+  on the controlboard would make the level defined if that ever changes.
 
 ---
 
@@ -272,25 +281,78 @@ DC-bias figures are typical X5R estimates, not part-specific curves.
 
 | Layer | Use |
 |---|---|
-| F.Cu | Parts, short signals, USB pair, power traces, GND pour |
+| F.Cu | Parts, J2/ESD fan-out, USB pair, power traces, GND pour |
 | In1.Cu | Solid GND |
-| In2.Cu | +3V3 pour, SPI trunk (SCK, MOSI, MISO, CS) and DATA_READY |
-| B.Cu | HANDSHAKE, ESP_EN, EN, PWR_SRC_HOST, CC1/CC2, short power jumps, GND pour |
+| In2.Cu | +3V3 plane, plus a GND region (priority 1) under the B.Cu SPI corridor. No signals. |
+| B.Cu | SPI trunk (SCK, MOSI, MISO, CS) over the In2 GND region; HANDSHAKE, DATA_READY, EN, PWR_SRC_HOST, CC2 and short power jumps; GND pour |
 
-- **Rules.** Default netclass: 0.2mm track, 0.15mm clearance, 0.6/0.3mm vias.
-  `RadioBoard2027.kicad_dru` raises power nets (+3V3, +3V3_HOST, VBUS, VIN2, pre-fuse VBUS) to
-  0.2mm clearance and a 0.25mm minimum width. Netclass clearance overrides a lower custom rule, so
-  the 0.15mm default must stay in Board Setup.
-- **USB.** 0.25mm lines with a 0.15mm gap on F.Cu over In1. D+ and D- from J1 are joined at the
-  connector: the DP pads on the left, under the shell, and the DN pads on the right.
-- **SPI.** J2 → U5/U6 on F.Cu, then a via beside each ESD pin into the In2 trunk (MISO, SCK, MOSI,
-  CS) to the module-side vias. In2 is 0.21mm from the B.Cu GND pour and 1.07mm from In1 GND. The
-  ESD pads are 12-14mm from J2 along the line. HANDSHAKE and ESP_EN run on B.Cu along the left
-  edge.
-- **Stitching vias.** PWR_SRC_HOST, CC1 and CC2 on B.Cu cut the pour under the In2 trunk, and
-  HANDSHAKE crosses under MISO near the module. Eight GND vias sit 1-2mm from these crossings so
-  the return current can move to In1.
-- **Power.** VBUS: J1 → D2 → F1 → C5, then to U4 on B.Cu. U4 VOUT → C6 → U3 VIN2 on F.Cu.
+- **Rules.** Default netclass: 0.2mm track, 0.15mm clearance, 0.6/0.3mm vias. Netclass clearance
+  overrides a lower custom rule, so the 0.15mm default must stay in Board Setup.
+  `RadioBoard2027.kicad_dru` adds:
+  - power nets (+3V3, +3V3_HOST, VBUS, VIN2, pre-fuse VBUS): 0.2mm clearance, 0.25mm minimum width;
+  - USB (both sides of U2 and R5/R6): 0.25mm width (0.2mm minimum), 0.15mm diff-pair gap where
+    coupled, and 0.5mm (2W) from pours on the outer layers;
+  - SPI (`*/ESP_SPI_*` and `Net-(U1-GPIO2)`, MISO after R4): 0.36mm width (0.2mm minimum, for the U5
+    pads), and 0.72mm (2W) from pours on the outer layers, so the pours do not turn the lines into an
+    uncalculated coplanar guide.
+
+  The pour-clearance rules carry `(layer outer)`. Without it the rule also applied between SPI vias
+  and the inner GND planes, and cut 1mm holes into the very reference planes the lines need (found
+  by the second audit).
+
+  KiCad expressions have no `matches` operator; `A.NetName == '*/ESP_SPI_*'` matches by wildcard.
+  Net names carry their sheet path (for example `/Controlboard Link/ESP_SPI_SCK`, `/ESP32-C5/USB_DP`)
+  because signals cross sheets through hierarchical sheet pins. A deliberately violated test rule
+  (5mm minimum width on the SPI and USB nets) fired 106 times, which proves the file compiles.
+- **USB.** J1 → U2 → R5/R6 → module pins 13/14, running north from the J1 contacts in one
+  direction with no detour. 0.25mm lines on F.Cu over In1 GND, no vias in the pair.
+  - The duplicate contacts are joined at J1: D+ (A6/B6) with a 2.5mm jog under the shell, D-
+    (A7/B7) with a jog of about 1mm beside the contacts.
+  - U2 (USBLC6, rotated 90°) sits directly north of the contacts, so the pair runs straight
+    through its pass-through pins. Its pinout puts the GND pin between the two I/O pins, so the
+    lines are 1.9mm apart through U2 instead of edge-coupled. That is fine at Full-Speed (below).
+  - U2 rail pin: one via to the In2 +3V3 plane. U2 GND pin: its own via.
+  - R5/R6 stand vertically beside module pins 13/14. D- reaches R5 from the south-east on one 45°
+    run; D+ comes in from the east along the bottom of the module. Each leaves with one 45° bend
+    into its module pin.
+  - CC1 and the A4/B9 VBUS contacts sit in the pair's path, so each drops through a via right at
+    the contact.
+    - CC1 runs on B.Cu to R9, which now sits east of the pair.
+    - VBUS A4/B9 joins the A9/B4 pad on B.Cu at J1, on the connector side of D2.
+- **SPI.** J2 → U5 on F.Cu with no via before the ESD part: each line enters U5 pin 1/2/4/5 and
+  leaves from the pass-through pin, then drops through one via to B.Cu, 1.5-4.5mm past U5.
+  - **Trunk.** Runs on B.Cu down the left board edge to vias beside the module pins, then returns
+    to F.Cu for the last 1.5-1.8mm. The four lines are 1.1mm apart (3W centre to centre).
+  - **Reference.** On In2, a priority-1 GND region (`GND_In2_SPI`) covers the whole B.Cu corridor,
+    so the trunk has a GND reference 0.21mm away instead of the +3V3 plane. In1 stays solid GND
+    under the F.Cu parts.
+  - **Width.** 0.36mm outside the ESD part, 0.2mm through the 0.5mm-pitch USON pads.
+  - **Edge distances (measured on the fill).** MISO's centre is 1.1mm from the GND fill edge and
+    its trace edge is 1.45mm from the board edge.
+  - **CS jog.** CS jogs east above J1's locating pegs, so MOSI has room for its serpentine in the
+    trunk.
+- **Slow lines.** HANDSHAKE, DATA_READY and EN go J2 → U6 (flow-through) on F.Cu, then one via each
+  to B.Cu along the right edge, just outside the module, and back to F.Cu at the module end.
+  - They sit over the In2 +3V3 plane, which is acceptable for interrupt and reset lines.
+    HANDSHAKE crosses the edge of the In2 GND region near the module.
+  - PWR_SRC_HOST runs on B.Cu under the module.
+  - CC1 and CC2 each hop to B.Cu once.
+- **Stitching and ESD ground.** Every SPI layer change has a GND via nearby:
+  - three at the U5 end, 1.1-1.2mm from the signal vias;
+  - two at the module end, 1.7-2.5mm away. There is no room for closer ones between the B.Cu lines
+    and R5/R6. Both reference planes there are GND (In2 region to In1), so the return only crosses
+    between two GND planes.
+
+  U5's GND pins run straight down to J2's GND pin (3.3mm) and a via 2.3mm away; the ESD current
+  returns to the cable ground by the shortest path. U6 has two GND vias within 1mm. D4's GND pins
+  have a trace to their own via.
+
+  GND stitching: six extra vias (129.8/103.0, 133.8/115.3, 133.8/120.25, 133.8/123.3, 103.0/146.2,
+  107.4/145.9) fill the right side and lower left. The rest of the module area cannot take vias (the
+  module body and its EPAD grid), so parts of the F.Cu pour remain more than 5mm from a via.
+- **Power.** VBUS: J1 → D2 → F1 → C5 → U4 on F.Cu. The A4/B9 contact pair joins the A9/B4 pad
+  through one B.Cu jumper at the connector, because the USB pair runs between them; the plug also
+  bonds all VBUS contacts. U4 VOUT → C6 → U3 VIN2 on F.Cu.
   +3V3_HOST: J2 → D4 → C7/R11 → U3 VIN1. U3 OUT feeds the In2 +3V3 pour through vias at U3, C8 and
   C9. The module takes +3V3 from C2/C1 at pin 2, with a via into In2. U4 tab has three GND vias
   to In1 for about 0.85W at 500mA from 5V.
@@ -298,15 +360,55 @@ DC-bias figures are typical X5R estimates, not part-specific curves.
   of the module, next to pads 27/28, MOD Fig 3-2 and 10-2) sits about 2.4mm from the top board
   edge; the cable leaves over the edge. The connector is on the module itself, so the HDG advice to
   clear all layers under an IPEX connector (which applies to a chip-down design) does not apply.
-- **Corners.** Track bends are 45° chamfers. The remaining 90° corners are inside pads or vias, or
-  are jogs shorter than 0.5mm into a via. At these edge rates a 90° corner causes no measurable
-  reflection; the chamfers are for manufacturing and consistency.
+- **Corners.** Every segment is at a multiple of 45° (checked by script, tolerance 0.2°). Remaining
+  T-joins are where duplicate pads are joined (J1 D-, U2/U6 GND pairs) or where a power trace
+  branches to a part.
 - **Silkscreen.** Every reference sits outside all courtyards, pads and vias, inside the board
-  edge, with at least 0.4mm between labels. C1 and C2 use 0.8mm text to fit beside H1; the rest are
-  1.0mm. Board Setup silk clearance is 0.1mm.
-- **J1 shield.** The four shell pads are tied together on F.Cu but not to GND (§4).
-- **DRC.** 0 errors, 0 unconnected. `min_resolved_spokes` is 1: U5 pin 8, U6 pin 8, C2 pin 2 and C8
-  pin 2 get one thermal spoke from the pour and a direct trace to a GND via.
+  edge. C1, C2, R5, R6, R7, R9, R10, R13 and U5 use 0.8mm text to fit; the rest are 1.0mm. Board
+  Setup silk clearance is 0.1mm. Parts a user touches carry their function instead of their
+  reference on the silkscreen (the reference stays on the fab layer): RESET (SW1), BOOT (SW2), STAT
+  (D1), PWR (D3), TX (TP1), RX (TP2). The back carries "RadioBoard2027 rev A".
+- **J1 shield.** The four shell pads are not routed; the metal shell joins them. The shield is not
+  tied to GND (§4).
+- **Mounting holes.** H1-H4 are board-only footprints (not in the schematic, BOM or placement
+  file).
+- **Footprints.** Every footprint matches its library copy. The update also marked the parts SMD
+  for the placement file and gave the D2/D4 thermal pads the library's solid, heatsink setting.
+- **DRC.** 0 errors, 0 warnings, 0 unconnected, schematic parity clean. Zones were refilled on the
+  saved board, and the custom rules were proven to compile.
+
+### Known deviations (audit 2026-10-03)
+
+An independent audit checked the board against the repo layout rules. These items are accepted, each
+for the reason given:
+
+- **USB pair not coupled.** The pair is 1.9mm apart from J1 through U2, because the USBLC6 puts its
+  GND pin (with its via) between the I/O pins, and 1.9-2.7mm apart from U2 to R5/R6. Skew is
+  1.4-4.7mm. Full-Speed edges are 4-20ns, so a
+  few mm of uncoupled pair is electrically short.
+- **D+ jog at J1.** The jog under the shell is 0.2mm wide, against 0.25mm elsewhere, to keep
+  clearance to the A7 pad.
+- **VBUS via before D2.** The A4/B9 VBUS contacts reach D2 through a B.Cu jumper that lands on the
+  A9/B4 pad at the connector. The USB pair runs between the two contact groups, so no F.Cu path
+  exists.
+- **SPI neck at U5.** The SPI lines run 1.5-4mm at 0.2mm through U5. Flow-through on a 0.5mm-pitch
+  USON needs the narrow width until the lines fan apart. SCK and MOSI are 0.154mm apart for
+  0.85mm there.
+- **Serpentine position.** The serpentines sit mid-trunk, not at the source end. The lanes are
+  1.1mm apart and only an outer lane has room for a bump.
+- **Module-end return vias.** These are 1.7-2.5mm from the signal vias. Both planes are GND.
+- **Protector distance.** The protectors are 6.5-7.3mm (U5) and 7.7-12.2mm (U6) from J2 along the
+  line, with no via or branch in between.
+- **U5 ground.** U5's GND via is 2.3mm away. Its GND trace runs straight to J2's GND pin, which is
+  the discharge return.
+- **Slow lines.** HANDSHAKE, DATA_READY, EN, PWR_SRC_HOST and CC1/CC2 run over the +3V3 plane or
+  cross the edge of the In2 GND region. They are interrupts, reset, a power-source flag and the CC
+  pull-downs.
+- **MISO not matched.** See SPI length below.
+- **Placement-level items (second audit, not changed).** USB (J1, left edge) and RESET/BOOT (right
+  edge) are on different edges; the SPI trunk runs under J1 and the VBUS entry on B.Cu (over the
+  In2 GND region); there is no GND test point next to TX/RX. Fixing these means re-placing J1,
+  SW1/SW2 and the USB block, which changes the board's user interface; left for a decision.
 
 ### Impedance and length (as routed)
 
@@ -316,23 +418,39 @@ exact stripline formula (47.1 vs 47.9Ω) and a w = h microstrip (70 vs 71Ω).
 
 | Trace | Width / gap | Impedance |
 |---|---|---|
-| USB pair, F.Cu | 0.25 / 0.15mm | 96Ω bare, 86-91Ω under mask |
-| SPI, F.Cu | 0.2mm | 68Ω |
-| SPI, In2 | 0.2mm | 57Ω |
+| USB pair, F.Cu | 0.25mm; mostly uncoupled (0.25mm edge gap for about 2mm, 1.9-2.7mm apart elsewhere) | about 60Ω per line, 120-130Ω differential where uncoupled |
+| SPI, F.Cu over In1 / B.Cu over In2 GND | 0.36mm | about 50Ω (closed-form microstrip estimate, h = 0.21mm) |
+| SPI through the USON pads | 0.2mm | 68Ω, 3-5mm per line |
 
 - **USB requirement.** The C5 USB is Full-Speed only, 12 Mbit/s (MOD §5.2.1.5). USB2 requires
   90Ω ±15% (§7.1.1.1, §7.1.6.1) with 4-20ns edges (§7.1.2.1). HDG §1.4.8 asks for 90Ω ±10%, in
-  parallel at equal length, with no number for skew. The pair meets both.
-- **USB length.** J1 → U2: D+ 13.6mm / D- 9.6mm with the plug one way, 11.1 / 10.5mm the other
-  way. U2 → R5/R6: 31.0 / 30.8mm. R → module: 1.7 / 1.7mm. Worst-case skew is 4.1mm, about 25ps.
-  AN0046 §3.3 allows up to 400ps (60mm) of skew for Full-Speed. The 50 mil figure in many layout
-  guides is for High-Speed parts.
-- **SPI length.** J2 → module: SCK 47.6mm, MOSI 47.5mm, CS 47.7mm, MISO 57.7mm (to R4),
-  DATA_READY 49.1mm, HANDSHAKE 75.5mm. EH asks for SPI lines length-matched to CLK, with no
-  number. SCK/MOSI/CS agree within 0.2mm. MISO is 10mm (about 60ps) longer, which is small
-  against a 25ns period at 40MHz. HANDSHAKE and DATA_READY are slow interrupts.
-- **SPI impedance.** HDG and EH give no impedance for SPI. 57-68Ω over about 5cm is fine at the
-  planned 10-40MHz. R4 33Ω source-terminates MISO at the module. Bring the link up at 10MHz
+  parallel at equal length, with no number for skew. The pair does not meet 90Ω: the U2 pinout
+  (GND pin between the I/O pins) and the R5/R6 placement keep the lines 1.9-2.7mm apart for most of
+  their 15-19mm. At Full-Speed the 4-20ns edges are 0.6-3m long on the board, so a 2cm section of
+  wrong impedance causes no visible reflection; this is a known deviation (below).
+- **USB length.** Lengths depend on which contact row the plug uses.
+
+  | Section | D+ | D- |
+  |---|---|---|
+  | J1 → U2 | 8.4 or 10.9mm | 6.0 or 6.8mm |
+  | U2 → R5/R6 | 6.4mm | 4.6mm |
+  | R → module | 1.9mm | 3.9mm |
+  | Total | 16.7-19.2mm | 14.5-15.3mm |
+
+  The pair is 6-8mm shorter than before. Skew is 1.4-4.7mm, at most about 29ps. AN0046 §3.3
+  allows up to 400ps (60mm) for Full-Speed; the 50 mil figure in many layout guides is for
+  High-Speed parts.
+- **SPI length.** J2 → module pin: SCK 57.51mm, MOSI 57.50mm, CS 57.50mm.
+  - **Serpentines.** CS and MOSI carry 45° serpentines on B.Cu with amplitude ≤1.2mm (3.3W) and
+    legs ≥1.44mm (4W) apart. CS has 4 bumps (3 in the trunk, 1 by the J2-side corner), MOSI has
+    2. They sit in the middle of the trunk, not at the source end: that is the only place with
+    room beside an outer lane.
+  - **MISO.** 63.3mm to R4, not matched to SCK. The module drives it back towards the host, and
+    the host samples it a half clock after launching SCK, so the extra 5.8mm (about 35ps) is small
+    against the 12.5ns half period at 40MHz.
+  - **Slow lines.** DATA_READY 43.5mm, HANDSHAKE 71.4mm, EN 79.9mm.
+- **SPI impedance.** HDG and EH give no impedance for SPI. About 50Ω, with 3-5mm at 68Ω through
+  the ESD pads, is fine at the planned 10-40MHz. R4 33Ω source-terminates MISO at the module. Bring the link up at 10MHz
   first (§6).
 
 ---
@@ -377,5 +495,5 @@ custom harness; keep it short (EH ≤10cm for jumpers).
 - **m5** Per HDG 1.3.13, USB D+ can toggle at power-up; no external pull-up is fitted. Revisit only
   if enumeration is unreliable.
 - **m6** No test points on +3V3_HOST or +3V3.
-- **m7** 41 footprints are flagged lib_footprint_mismatch (DRC warning). Check with Update
-  Footprints from Library before ordering.
+- **m7** Closed 2026-10-03: all footprints updated from their libraries; DRC shows no
+  lib_footprint_mismatch.

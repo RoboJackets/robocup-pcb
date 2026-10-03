@@ -2,9 +2,30 @@
 
 (rule "Power nets"
 	(condition "A.NetName == '+3V3' || A.NetName == '+3V3_HOST' || A.NetName == 'VBUS' || A.NetName == 'Net-(D2-IN-Pad4)' || A.NetName == 'Net-(U3-VIN2)'")
-	(constraint clearance (min 0.2))
-	(constraint track_width (min 0.25)))
+	(constraint clearance (min 0.2mm))
+	(constraint track_width (min 0.25mm)))
 
+# USB pair: 0.25mm lines, 0.15mm gap where coupled (Full-Speed; the pair splits at U2 and R5/R6).
 (rule "USB pair"
-	(condition "A.NetName == 'USB_DP' || A.NetName == 'USB_DN'")
-	(constraint diff_pair_gap (min 0.14) (opt 0.15) (max 0.3)))
+	(condition "A.NetName == '/ESP32-C5/USB_DP' || A.NetName == '/ESP32-C5/USB_DN'")
+	(constraint diff_pair_gap (min 0.14mm) (opt 0.15mm)))
+
+(rule "USB width"
+	(condition "A.Type == 'Track' && (A.NetName == '/ESP32-C5/USB_DP' || A.NetName == '/ESP32-C5/USB_DN' || A.NetName == '/USB/USB_DP_CON' || A.NetName == '/USB/USB_DN_CON' || A.NetName == 'Net-(U1-GPIO13*USB_D-)' || A.NetName == 'Net-(U1-GPIO14*USB_D+)')")
+	(constraint track_width (min 0.2mm) (opt 0.25mm)))
+
+# Outer layers only (the inner planes are the references). Keep same-layer pours at least 2W from the controlled lines so they stay microstrip.
+(rule "USB pour clearance"
+	(layer outer)
+	(condition "(A.NetName == '/ESP32-C5/USB_DP' || A.NetName == '/ESP32-C5/USB_DN' || A.NetName == '/USB/USB_DP_CON' || A.NetName == '/USB/USB_DN_CON' || A.NetName == 'Net-(U1-GPIO13*USB_D-)' || A.NetName == 'Net-(U1-GPIO14*USB_D+)') && B.Type == 'Zone'")
+	(constraint clearance (min 0.5mm)))
+
+# SPI: 0.36mm (about 50 ohm over GND at 0.21mm), necked to 0.2mm only through the U5 pads.
+(rule "SPI width"
+	(condition "A.Type == 'Track' && A.NetName == '*/ESP_SPI_*'")
+	(constraint track_width (min 0.2mm) (opt 0.36mm)))
+
+(rule "SPI pour clearance"
+	(layer outer)
+	(condition "(A.NetName == '*/ESP_SPI_*' || A.NetName == 'Net-(U1-GPIO2)') && B.Type == 'Zone'")
+	(constraint clearance (min 0.72mm)))
