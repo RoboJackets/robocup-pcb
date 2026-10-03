@@ -999,7 +999,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "00bda6af-0753-48b0-b1b8-cd88c434ae38")
-		(property "Reference" "U6"
+		(property "Reference" "U8"
 			(at 142.24 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1106,7 +1106,7 @@
 		(instances
 			(project "power-board-proto"
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09/62640792-e0de-4994-801a-0d183306c046"
-					(reference "U6")
+					(reference "U8")
 					(unit 1)
 				)
 			)
@@ -1124,7 +1124,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "014fa20b-2381-4cb6-a196-86af7da1c5e6")
-		(property "Reference" "#PWR058"
+		(property "Reference" "#PWR0118"
 			(at 167.64 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -1184,7 +1184,7 @@
 		(instances
 			(project "power-board-proto"
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09/62640792-e0de-4994-801a-0d183306c046"
-					(reference "#PWR058")
+					(reference "#PWR0118")
 					(unit 1)
 				)
 			)
@@ -1202,7 +1202,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "16046af3-c247-40f1-95b1-55eb891431c5")
-		(property "Reference" "U7"
+		(property "Reference" "U9"
 			(at 142.24 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1309,7 +1309,7 @@
 		(instances
 			(project "power-board-proto"
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09/62640792-e0de-4994-801a-0d183306c046"
-					(reference "U7")
+					(reference "U9")
 					(unit 1)
 				)
 			)
@@ -1327,7 +1327,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2c1be457-cdc2-4eab-86e9-e17ab6f6e7de")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR0116"
 			(at 142.24 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -1387,7 +1387,7 @@
 		(instances
 			(project "power-board-proto"
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09/62640792-e0de-4994-801a-0d183306c046"
-					(reference "#PWR056")
+					(reference "#PWR0116")
 					(unit 1)
 				)
 			)
@@ -1405,7 +1405,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "311f2ea5-a165-4de5-893b-b709e65857dd")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR0117"
 			(at 142.24 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -1465,7 +1465,7 @@
 		(instances
 			(project "power-board-proto"
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09/62640792-e0de-4994-801a-0d183306c046"
-					(reference "#PWR057")
+					(reference "#PWR0117")
 					(unit 1)
 				)
 			)
@@ -1598,7 +1598,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "56228456-c9ee-46bd-84f2-0196948687ae")
-		(property "Reference" "#PWR0126"
+		(property "Reference" "#PWR0119"
 			(at 180.34 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -1658,7 +1658,7 @@
 		(instances
 			(project "power-board-proto"
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09/62640792-e0de-4994-801a-0d183306c046"
-					(reference "#PWR0126")
+					(reference "#PWR0119")
 					(unit 1)
 				)
 			)
@@ -1676,7 +1676,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "adb5d5f4-1974-437e-8cf7-5c6f3b66eedf")
-		(property "Reference" "R41"
+		(property "Reference" "R60"
 			(at 127 86.3599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1740,7 +1740,7 @@
 		(instances
 			(project "power-board-proto"
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09/62640792-e0de-4994-801a-0d183306c046"
-					(reference "R41")
+					(reference "R60")
 					(unit 1)
 				)
 			)
@@ -1758,7 +1758,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d5eaacc6-586a-4c37-a216-0fe78b1ade36")
-		(property "Reference" "C40"
+		(property "Reference" "C60"
 			(at 171.45 83.8199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1855,7 +1855,7 @@
 		(instances
 			(project "power-board-proto"
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09/62640792-e0de-4994-801a-0d183306c046"
-					(reference "C40")
+					(reference "C60")
 					(unit 1)
 				)
 			)

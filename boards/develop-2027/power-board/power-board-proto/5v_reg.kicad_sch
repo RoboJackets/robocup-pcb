@@ -989,6 +989,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "TODO: Add smaller decoupling cap here"
+		(exclude_from_sim no)
+		(at 167.64 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "df0b7c02-a1e3-4937-8be9-6eee5fe5f76f")
+	)
 	(junction
 		(at 95.25 80.01)
 		(diameter 0)
@@ -1355,7 +1365,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "099c6d6d-883c-4698-a7b8-cae8a78929ee")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR082"
 			(at 95.25 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -1415,7 +1425,7 @@
 		(instances
 			(project "power-board-proto"
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09/192a3599-953e-43f1-b95c-1bf118d6a189"
-					(reference "#PWR029")
+					(reference "#PWR082")
 					(unit 1)
 				)
 			)
@@ -1433,7 +1443,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3f0fa157-6377-458d-8d34-25973b0fe7a9")
-		(property "Reference" "U4"
+		(property "Reference" "U5"
 			(at 119.38 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1542,7 +1552,7 @@
 		(instances
 			(project "power-board-proto"
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09/192a3599-953e-43f1-b95c-1bf118d6a189"
-					(reference "U4")
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -1560,7 +1570,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5a520aae-f84d-49cf-8e59-038415a925e1")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR083"
 			(at 119.38 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -1620,7 +1630,7 @@
 		(instances
 			(project "power-board-proto"
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09/192a3599-953e-43f1-b95c-1bf118d6a189"
-					(reference "#PWR030")
+					(reference "#PWR083")
 					(unit 1)
 				)
 			)
@@ -1638,7 +1648,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6151000b-641e-4006-8b87-22f9425db5cf")
-		(property "Reference" "C9"
+		(property "Reference" "C35"
 			(at 177.165 86.7409 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1735,7 +1745,7 @@
 		(instances
 			(project "power-board-proto"
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09/192a3599-953e-43f1-b95c-1bf118d6a189"
-					(reference "C9")
+					(reference "C35")
 					(unit 1)
 				)
 			)
@@ -1753,7 +1763,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "83a68f05-2712-40fa-af5f-d0f6940c5d51")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR086"
 			(at 185.42 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -1813,7 +1823,7 @@
 		(instances
 			(project "power-board-proto"
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09/192a3599-953e-43f1-b95c-1bf118d6a189"
-					(reference "#PWR033")
+					(reference "#PWR086")
 					(unit 1)
 				)
 			)
@@ -1831,7 +1841,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8ff1fea5-d1df-47d1-8b8a-6b278b073afe")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR084"
 			(at 160.02 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -1891,7 +1901,7 @@
 		(instances
 			(project "power-board-proto"
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09/192a3599-953e-43f1-b95c-1bf118d6a189"
-					(reference "#PWR031")
+					(reference "#PWR084")
 					(unit 1)
 				)
 			)
@@ -1909,7 +1919,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9facde2b-f56d-415b-9db9-4c8804c13437")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR085"
 			(at 173.99 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -1969,7 +1979,7 @@
 		(instances
 			(project "power-board-proto"
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09/192a3599-953e-43f1-b95c-1bf118d6a189"
-					(reference "#PWR032")
+					(reference "#PWR085")
 					(unit 1)
 				)
 			)
@@ -1987,7 +1997,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a57412e4-0346-4b55-b8bc-378516cc6d60")
-		(property "Reference" "R36"
+		(property "Reference" "R51"
 			(at 162.56 97.7899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2051,7 +2061,7 @@
 		(instances
 			(project "power-board-proto"
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09/192a3599-953e-43f1-b95c-1bf118d6a189"
-					(reference "R36")
+					(reference "R51")
 					(unit 1)
 				)
 			)
@@ -2069,7 +2079,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a61f4723-e662-4883-b168-8e18a8ec8411")
-		(property "Reference" "C14"
+		(property "Reference" "C33"
 			(at 99.06 85.0899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2166,7 +2176,7 @@
 		(instances
 			(project "power-board-proto"
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09/192a3599-953e-43f1-b95c-1bf118d6a189"
-					(reference "C14")
+					(reference "C33")
 					(unit 1)
 				)
 			)
@@ -2183,7 +2193,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c2f0f4b2-06fb-487e-8c9f-c9a8a83bf23b")
-		(property "Reference" "L4"
+		(property "Reference" "L3"
 			(at 153.67 74.93 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2277,7 +2287,7 @@
 		(instances
 			(project "power-board-proto"
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09/192a3599-953e-43f1-b95c-1bf118d6a189"
-					(reference "L4")
+					(reference "L3")
 					(unit 1)
 				)
 			)
@@ -2295,7 +2305,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cc53dbbb-4902-4f66-bcd1-ca2b2750f780")
-		(property "Reference" "C15"
+		(property "Reference" "C34"
 			(at 140.97 74.9299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2392,7 +2402,7 @@
 		(instances
 			(project "power-board-proto"
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09/192a3599-953e-43f1-b95c-1bf118d6a189"
-					(reference "C15")
+					(reference "C34")
 					(unit 1)
 				)
 			)
@@ -2410,7 +2420,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d8349e1c-f923-42ed-8a9f-9d591bd8de33")
-		(property "Reference" "R35"
+		(property "Reference" "R50"
 			(at 162.56 87.6299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2474,7 +2484,7 @@
 		(instances
 			(project "power-board-proto"
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09/192a3599-953e-43f1-b95c-1bf118d6a189"
-					(reference "R35")
+					(reference "R50")
 					(unit 1)
 				)
 			)
@@ -2492,7 +2502,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dcb03c56-cc38-413b-bafd-d4c579b7964f")
-		(property "Reference" "C12"
+		(property "Reference" "C36"
 			(at 188.595 86.7409 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2589,7 +2599,7 @@
 		(instances
 			(project "power-board-proto"
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09/192a3599-953e-43f1-b95c-1bf118d6a189"
-					(reference "C12")
+					(reference "C36")
 					(unit 1)
 				)
 			)
