@@ -22,6 +22,11 @@ and widened motor SPI to 0.36mm, moved the microSD socket inside the board edge,
 power jumpers with a label table each, set J2 flush with the board edge and cleaned up the
 silkscreen.
 
+2026-10-03 (final review): radio SCK no longer runs between the pads of R66. It now crosses
+MOSI with a 2.8mm B.Cu hop next to R65, and a serpentine on its J9 run restores the length
+match. Every connector, button and the DIP switch now carries pin and signal labels on the
+silkscreen ("Silkscreen labels" in §2).
+
 **Contents**
 
 1. [Sources](#1-sources)
@@ -107,13 +112,47 @@ signal and no USB inrush limit. The consequences are listed in M1, M3 and m18.
 - 50Ω single-ended = 0.36mm on the outer layers. USB 90Ω differential = 0.30mm traces with
   0.20mm gap.
 - Every high-speed net (USB, radio SPI, SD, motor SPI, crystal) runs on F.Cu over the unbroken
-  In1 GND plane. B.Cu carries only low-speed nets (UART, DIP, buttons, reset, BOOT0, OLED,
+  In1 GND plane, except three short crossing hops on B.Cu (SD DAT2/DAT3 and radio SCK, each
+  under 5mm with GND return vias). Otherwise B.Cu carries only low-speed nets (UART, DIP, buttons, reset, BOOT0, OLED,
   SWD, power-source flags) and power.
 - +3V3 is the In2 plane; every SMD +3V3 pad reaches it through its own via. +5V, VBUS and the
   powerboard rails are routed as traces (0.5-0.8mm). F.Cu and B.Cu carry GND pours, stitched
   to In1 on an 8mm grid.
 - Board 100 x 100mm, M3 mounting holes H1-H4 at all four corners, 4mm in from each edge.
 - 45° routing only (no 90° bends).
+- No trace runs between the pads of a part it does not connect to. When two lines of a bus
+  have to cross, one takes a short layer swap: a via down, a hop under 5mm and a via back up,
+  each with a GND return via within about 1mm. If the hop's reference plane is +3V3 (B.Cu
+  over In2), a GND region on In2 under the hop gives it a GND reference. The length is then
+  re-matched.
+- Custom rules: pours on the outer layers keep 0.6mm from USB, 0.5mm from SDMMC and 0.72mm from
+  the radio SPI. All three are scoped `(layer outer)` so they do not enlarge via antipads in the
+  In1/In2 planes.
+
+### Silkscreen labels
+Every user-facing connector carries its function and per-pin signal names on F.Silkscreen,
+0.8mm text (the board minimum), outside the connector body so the labels stay readable with
+the cable fitted:
+- J4-J7 "MOTOR 0-3", J8 "DRIBBLER": name on the west side, one vertical label under each pin
+  (GND, SCK, GND, MOSI, MISO, CS). The TVS references U5/U12/U13/U14 moved to the west of
+  their arrays to make room.
+- J10 "KICKER" (GND, SCL, SDA) and J11 "EXP 1" (5V, GND, SCL, SDA): vertical labels above each
+  pin, with the name and reference below the connector. J12 "EXP 2": the pin labels would
+  interleave with the J8 labels above it, so it has a one-line legend in pin order under the
+  body ("5V GND SCL SDA", pin 1 on the left). Known deviation: the J8 labels end 0.26mm
+  above the J12 courtyard, so MOSI/MISO/CS sit over J12's pins 1-2. Read J12 from its legend
+  under the body.
+- J9 radio: one label per row on the west side of the housing (3V3, G, SCK, G, MOSI, G, MISO,
+  G, CS, G, HS, DR, RST, G from pin 1 to pin 15). G = GND, HS = ESP_HANDSHAKE,
+  DR = ESP_DATA_READY. Pin 1 (3V3, same as pin 2) has no label, because C29 sits beside it.
+  R64's reference moved above it so it does not read as part of "RST".
+- J15 powerboard: labels above the pin pairs, "5V" (pins 1-2), "3V3" (3-4), "GND" (5-6),
+  "TX" (7) and "RX" (8). TX/RX are named from this board's side: TX is the MCU output.
+- J13 OLED header: SDA, SCL, GND, NC, GND, NC, 3V3, GND beside the pins, inside the module
+  outline. They are covered once the module is fitted.
+- J2 "USB-C", J1 "microSD", J3 SWD (CLK/DIO/GND/RST, already present).
+- Buttons: RST, BOOT0, BTN0-BTN2 under SW1, SW2, SW4-SW6. DIP SW3: bit numbers 0-5 under
+  each switch, plus "ID BIT".
 
 ### Floorplan
 Parts are grouped by schematic sheet around the MCU (U2, board centre), following its pin
@@ -136,7 +175,7 @@ groups:
 | Bus | Routing |
 |---|---|
 | USB D+/D- | About 23mm, F.Cu only, 90Ω pair, no vias, through U3 |
-| Radio SPI (J9) | F.Cu only, no vias, 0.36mm (about 50Ω) except 0.25mm at the MCU escape. Pin-to-pin copper length: SCK 58.2mm, MOSI 57.8mm, MISO 58.2mm, CS 58.2mm (matched within 0.5mm; the series resistor bodies are not counted). Rows are 2.4mm apart, verticals 1.1mm apart |
+| Radio SPI (J9) | F.Cu, 0.36mm (about 50Ω) except 0.25mm at the MCU escape. MOSI, MISO and CS have no vias. SCK leaves R65 and crosses the MOSI vertical in a 2.8mm hop on B.Cu: two vias at (86.7, 67.3) and (89.5, 67.3), each with a GND return via 1.0mm away. B.Cu references In2, which is the +3V3 plane, so a priority-6 GND region on In2 (GND_IN2_SCK_HOP, 85.6-90.6 x 66.2-69.0mm) sits under the hop. It is tied to In1 by the two return vias, so the hop also has a GND reference. No trace passes between the pads of R65/R66. All four lines pass under the J9 housing for the last ~3.5mm to its pads. Three 45° bumps (1.08mm amplitude, 3W) on the SCK run to J9 restore the length. They sit on the first straight run with room for them; the 1.1mm-pitch vertical next to the hop has none. Pin-to-pin length, counting 1.6mm per via and the series-resistor pad span (R65 1.02mm, R66 1.83mm): SCK 58.8mm, MOSI 59.6mm, MISO 58.2mm, CS 58.2mm. Every line is within 0.9mm of SCK. Rows are 2.4mm apart, verticals 1.1mm apart (3W). Pours keep 0.72mm (2W) from the lines on F.Cu/B.Cu (rule "Radio SPI pour clearance") |
 | SD (J1) | F.Cu at 0.36mm (about 50Ω) on the main runs, 0.25mm only at the MCU pins, under U1 and into the socket pads. Flow-through U1, no stubs. Copper length MCU pin to socket pad: CLK 46.1mm (including 1.0mm through R6), CMD 45.5mm, DAT0 46.2mm, DAT1 46.0mm, DAT2 46.1mm, DAT3 46.1mm (0.7mm spread). CLK and CMD carry short serpentines to match the data lines. DAT2 and DAT3 each cross CMD and CLK once on B.Cu next to the MCU (5.0mm and 3.7mm, two vias each, with a GND return via within 0.9mm of three of the four). Gaps are 0.5mm or more except at the MCU pins (0.5mm pitch), under the MCU body for DAT0/DAT1, through U1 and in the socket fan-out |
 | Motor SPI (J4-J8) | F.Cu only over In1 GND, daisy-chained through each connector's TVS array (flow-through). 0.36mm on the runs between connectors and back to the MCU (178mm of the bus), 0.25mm through the TVS arrays and pin escapes, where SCK and MOSI sit 0.25mm apart for about 3mm per connector |
 | Crystal | X1, C18, C19 and R12 on the top side next to PH0/PH1, GND vias at each capacitor |
@@ -644,8 +683,9 @@ and footprints exist in KiCad 10. 2.54mm headers came loose in competition (radi
 - MCU pins: SCK PB3, MISO PB4, MOSI PD6, CS PB5 (pin 135), HANDSHAKE PB6 (pin 136),
   DATA_READY PB7 (pin 137), RST PE1 (pin 142). These moved from the earlier PG15/PB5/PB6/PB7
   assignment; PG15 (pin 132) is now unconnected. R65 (SCK) and R66 (MOSI) 30Ω sit in series
-  at the MCU end. SCK crosses MOSI on F.Cu by passing between the pads of R66 (0805), so
-  neither needs a via. The four SPI lines are length-matched within 0.5mm on this board (§2);
+  at the MCU end. SCK crosses MOSI with a 2.8mm B.Cu hop beside R65, with a GND return via
+  at each signal via and a GND region on In2 under the hop. No line passes between the pads
+  of a resistor. Every SPI line is within 0.9mm of SCK on this board (§2);
   the cable and the radio board add their own mismatch.
 - R29 10k ESP_SPI_CS pull-up to +3V3 keeps the radio deselected while PB5 floats at reset.
 - R31/R32 100k pull-downs on HANDSHAKE/DATA_READY stop false interrupts with the radio absent or

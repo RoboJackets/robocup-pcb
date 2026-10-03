@@ -10,12 +10,21 @@
 	(constraint diff_pair_gap (min 0.18mm) (opt 0.2mm)))
 
 (rule "USB pour clearance"
+	(layer outer)
 	(condition "(A.NetName == '/MCU/USB_DP' || A.NetName == '/MCU/USB_DM' || A.NetName == '/USB and Debug/USB_DP_CON' || A.NetName == '/USB and Debug/USB_DM_CON') && B.Type == 'Zone'")
 	(constraint clearance (min 0.6mm)))
 
 (rule "SDMMC pour clearance"
+	(layer outer)
 	(condition "(A.NetName == '/MCU/SDMMC_CK' || A.NetName == '/SD Card Storage/SD_CLK_CARD' || A.NetName == '/SD Card Storage/SDMMC_CMD' || A.NetName == '/SD Card Storage/SDMMC_D0' || A.NetName == '/SD Card Storage/SDMMC_D1' || A.NetName == '/SD Card Storage/SDMMC_D2' || A.NetName == '/SD Card Storage/SDMMC_D3') && B.Type == 'Zone'")
 	(constraint clearance (min 0.5mm)))
+
+# Radio SPI (J9): 0.36 mm (50 ohm). Same-layer pours stay 2W away so the lines remain microstrip.
+# Outer layers only, so the via antipads in the inner reference planes keep their normal size.
+(rule "Radio SPI pour clearance"
+	(layer outer)
+	(condition "(A.NetName == '/MCU/ESP_SPI_*' || A.NetName == 'Net-(U2-PB3_SWO)' || A.NetName == 'Net-(U2-PD6)') && B.Type == 'Zone'")
+	(constraint clearance (min 0.72mm)))
 
 # J13 (Adafruit 326 OLED) is held by its 1x8 header pins only. Its footprint
 # courtyard covers only the header strip; the full module outline is on F.SilkS/F.Fab. Keep parts
