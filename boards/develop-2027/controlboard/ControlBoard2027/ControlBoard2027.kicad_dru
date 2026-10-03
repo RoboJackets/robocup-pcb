@@ -6,16 +6,16 @@
 
 (rule "USB diff pair geometry"
 	(condition "A.NetName == '/MCU/USB_DP' || A.NetName == '/MCU/USB_DM' || A.NetName == '/USB and Debug/USB_DP_CON' || A.NetName == '/USB and Debug/USB_DM_CON'")
-	(constraint track_width (min 0.2) (opt 0.3))
-	(constraint diff_pair_gap (min 0.18) (opt 0.2)))
+	(constraint track_width (min 0.2mm) (opt 0.3mm))
+	(constraint diff_pair_gap (min 0.18mm) (opt 0.2mm)))
 
 (rule "USB pour clearance"
 	(condition "(A.NetName == '/MCU/USB_DP' || A.NetName == '/MCU/USB_DM' || A.NetName == '/USB and Debug/USB_DP_CON' || A.NetName == '/USB and Debug/USB_DM_CON') && B.Type == 'Zone'")
-	(constraint clearance (min 0.6)))
+	(constraint clearance (min 0.6mm)))
 
 (rule "SDMMC pour clearance"
 	(condition "(A.NetName == '/MCU/SDMMC_CK' || A.NetName == '/SD Card Storage/SD_CLK_CARD' || A.NetName == '/SD Card Storage/SDMMC_CMD' || A.NetName == '/SD Card Storage/SDMMC_D0' || A.NetName == '/SD Card Storage/SDMMC_D1' || A.NetName == '/SD Card Storage/SDMMC_D2' || A.NetName == '/SD Card Storage/SDMMC_D3') && B.Type == 'Zone'")
-	(constraint clearance (min 0.5)))
+	(constraint clearance (min 0.5mm)))
 
 # J13 (Adafruit 326 OLED) is held by its 1x8 header pins only. Its footprint
 # courtyard covers only the header strip; the full module outline is on F.SilkS/F.Fab. Keep parts

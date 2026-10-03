@@ -87,7 +87,7 @@ The powerboard supplies 5V and 3V3 on J15. USB supplies 5V as a bench fallback.
 | +3V3_PB | Powerboard, after F6 | J17 → U9 VIN1; J18 direct option |
 | VBUS | USB, after F1 | J14 → U8 VIN2, U7, R20/R21 sense divider; J16 direct option |
 | +3V3_LDO | U7 from VBUS | J17 → U9 VIN2; J18 direct option |
-| +5V | J16: U8 output (powerboard, else USB), or +5V_PB, or VBUS | DotStars, U10, F2/F3/F4 (independent J10/J11/J12 feeds) |
+| +5V | J16: U8 output (powerboard, else USB), or +5V_PB, or VBUS | DotStars, U10, F3/F4 (independent J11/J12 feeds) |
 | +3V3 | J18: U9 output (powerboard, else USB), or +3V3_PB, or +3V3_LDO | MCU, SD, IMU, OLED, pull-ups, radio (J9) |
 
 The motor connectors J4-J8 carry SPI only; the motor modules take no +5V or +3V3 from this
@@ -122,7 +122,7 @@ groups:
 | Area | Parts |
 |---|---|
 | West edge | Motor connectors J4-J8 in a column, each with its TVS array directly beside it |
-| South-west edge | I2C ports J12, J11, J10 with U6; fuses F2-F4 on the back |
+| South-west edge | I2C ports J12, J11, J10 with U6; fuses F3/F4 on the back |
 | South edge, centre | USB-C J2 with D1, U3, F1 |
 | South-east | Power: J15, Q1, D3/D4, F5/F6, muxes U8/U9, jumpers J14/J16/J17/J18, LDO U7 |
 | East edge | Radio J9 (top), microSD J1 with U1 (below it), SWD J3 |
@@ -163,6 +163,10 @@ R34 (TX) and R33 (RX), both 1k, sit in series with the UART lines at the MCU, wi
   and damping cases.
 - Timing: 1k with about 100pF of cable and pin gives tau = 100ns, about 1% of a 115200 bit (8.7us).
 
+- J15 to F6/D4/TP14 (+3V3_RAW) and J15 to Q1 (+5V_RAW) are F.Cu copper pours (priority above
+  the GND pour, solid pad connection) on top of the original traces, so the input current is
+  not limited by a single track.
+
 ### Q1 reverse polarity (5V only)
 AO3401A P-FET: -30V, -4A, Vgs abs max ±12V. Drain to the input, source to the load, gate to
 GND through R35 100k. D2 (10V zener) keeps Vgs inside ±12V. RDS(on) ≤60mΩ at -4.5V, so 135mW
@@ -192,7 +196,7 @@ covers the rail budget below.
 |---|---|---|
 | DotStars (capped by firmware, §10) | 250mA | - |
 | Motor modules J4-J8 | 0 (no supply pins, §11) | 0 (no supply pins, §11) |
-| J10-J12 via F2/F3/F4 | 0.55A combined allocation at 50°C; not 0.55A per port simultaneously | - |
+| J11/J12 via F3/F4 | 0.55A combined allocation at 50°C; not 0.55A per port simultaneously | - |
 | Radio (TX peak 408mA) | - | 408mA peak |
 | MCU, SD, IMU, OLED | - | about 0.35A (§4) |
 | Fuse hold at 50°C | 0.95A | 0.95A |
@@ -329,6 +333,11 @@ needed (m9).
   DS13313 Table 14 note 3 treats the VCAP pins as one node, and the Nucleo ties them. KiCad
   ERC flags the tie because the symbol types both pins as power output (m21).
 - Each decoupling capacitor has a text label naming its pin; place it beside that pin.
+- Layout: the 100nF caps sit on B.Cu directly behind their VDD/VSS pin pair, each with its own
+  +3V3 via (to the In2 plane) and GND via (to In1). The middle of the QFP is left clear. The
+  +3V3 plane makes the 1uF and bulk parts pin-independent, so they sit on B.Cu just outside
+  the pad ring with their own via pair: C11 under pin 95, C5 on the east side, C7 at the
+  south-west corner, C24/C26 at the north-west corner next to VDDA/VREF+ (pins 32/33).
 
 ### Reset and boot
 R11 10k BOOT0 pull-down holds 0.15V at worst-case leakage against a 0.73V input-low limit.
@@ -573,13 +582,16 @@ Each is placed flow-through per TI SLVSBO7 layout guidance: the signals pass acr
 the NC pads are tied in the schematic to the opposite I/O pad so the array routes straight
 through, and the GND pads are bridged with vias on both sides.
 
-### I2C connectors J10-J12 and independent F2/F3/F4
-- J10 kicker I2C, J11/J12 expansion I2C (JST PH B4B-PH-K-S, 4-pin, 2.00mm): 1 separately
-  fused 5V, 2 GND, 3 SCL, 4 SDA. U6 TPD4E05U06 protects kicker and expansion SCL/SDA (same flow-through NC ties)
-  and must sit at the connectors, so J10-J12 stay together (m8).
-- F2 feeds J10.1 on +5V_KICKER; F3 feeds J11.1 on +5V_EXT1; F4 feeds J12.1
-  on +5V_EXT2. Each input goes to +5V, with no shared downstream fused rail.
-- All three are Bourns MF-MSMF075/16X-2 (same as F1): hold 0.75A at 23°C, 0.55A at
+### I2C connectors J10-J12 and independent F3/F4
+- J10 kicker I2C (JST PH B3B-PH-K-S, 3-pin, 2.00mm): 1 GND, 2 SCL, 3 SDA. It carries no
+  power: the kicker board is supplied by the powerboard, so the board only shares ground
+  and the bus with it.
+- J11/J12 expansion I2C (JST PH B4B-PH-K-S, 4-pin, 2.00mm): 1 separately fused 5V, 2 GND,
+  3 SCL, 4 SDA. U6 TPD4E05U06 protects kicker and expansion SCL/SDA (same flow-through NC
+  ties) and must sit at the connectors, so J10-J12 stay together (m8).
+- F3 feeds J11.1 on +5V_EXT1; F4 feeds J12.1 on +5V_EXT2. Each input goes to +5V, with no
+  shared downstream fused rail.
+- Both are Bourns MF-MSMF075/16X-2 (same as F1): hold 0.75A at 23°C, 0.55A at
   50°C, trip 1.50A at 23°C, max 0.2s at the specified 8A test current. See MF-MSMF
   electrical/thermal tables. Independent protection does not increase the total source
   budget: retain 0.55A COMBINED external-load allocation pending M3 measurements.
@@ -793,7 +805,7 @@ and mux drop (m3). 3.4V ±3% is still the preferred setpoint; with no clamp,
 the powerboard must never exceed 3.6V (STM32 VDD max).
 
 **M3 Rail budget.** F5 and F6 hold 0.95A at 50°C and trip at 2.5A (§3). On 5V, the DotStars
-(capped at 250mA) plus J10-J12 combined (up to 0.55A) must stay under 0.95A. The motor-module
+(capped at 250mA) plus J11/J12 combined (up to 0.55A) must stay under 0.95A. The motor-module
 logic is no longer on this budget: J4-J8 have no supply pins (§11), so that part of M3 is
 resolved. If the budget does not fit, lower the LED cap or combined external-load allowance
 before choosing a larger fuse, because a larger fuse would no longer trip below the TPS2116
@@ -807,7 +819,7 @@ has no reset chip, and the SSD1306 needs RES# held low ≥3µs after power-up. S
 through a diode (about 0.5-0.6V against 0.66V max low), so probe both addresses. Order STEMMA QT
 and take J13 from its board file.
 
-**M6 Connector parts.** J10-J12 use JST PH B4B-PH-K-S (friction lock, 455-1706-ND). J15 JST-XH is friction lock and rated 3A only with AWG22. J3 needs a keyed header.
+**M6 Connector parts.** J10 is JST PH B3B-PH-K-S (455-1705-ND); J11/J12 are B4B-PH-K-S (455-1706-ND); all friction lock. J15 JST-XH is friction lock and rated 3A only with AWG22. J3 needs a keyed header.
 J9 is now a latching JST GH (§11); a
 premade 15-pin GH cable could not be confirmed at a distributor, so plan on crimping or a
 custom harness.
@@ -822,7 +834,7 @@ and resends the LED frame after any PWR_SRC change.
 while deselected. Add a 100k pull-down if they do not.
 
 **M10 No mating kicker design.** The only kicker in the repo (v3.4) uses SPI with RESET over 8
-pins, not I2C. Freeze J10 before layout. The radio side is now RadioBoard2027 (this board's J9
+pins, not I2C. J10 is now signals only (GND, SCL, SDA); confirm that order against the kicker design. The radio side is now RadioBoard2027 (this board's J9
 matches its J2 pinout); keep both projects in step if either connector changes.
 
 **M11 SPI2 pin.** V0.3 puts SPI2_SCK on PA9; the board uses PB13. Re-pin in the .ioc.
@@ -889,5 +901,5 @@ outline on the silkscreen crosses the pads of R34 (the fab clips silkscreen on p
   budget before claiming compliant USB bus-powered operation (§7).
 - **m23** Resolved: the J2 (USB) and J1 (microSD) shells are now tied to GND in the schematic.
   U3, U1 and D1 still clamp the pins.
-- **m24** No fault reporting: a tripped F2-F6 is only visible as a missing rail
+- **m24** No fault reporting: a tripped F1/F3-F6 is only visible as a missing rail
   (PWR_SRC low or a dead connector supply).

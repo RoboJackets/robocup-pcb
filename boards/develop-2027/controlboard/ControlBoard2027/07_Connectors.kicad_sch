@@ -4861,6 +4861,193 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector_Generic:Conn_01x03"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x03"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x03_1_1"
+				(rectangle
+					(start -1.27 3.81)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(no_connect
 		(at 266.7 185.42)
@@ -5078,17 +5265,6 @@
 			(type default)
 		)
 		(uuid "42c9c543-efb6-42c7-ba57-3b4c2657e484")
-	)
-	(wire
-		(pts
-			(xy 266.7 93.98)
-			(xy 259.08 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4723405a-5770-4654-bc71-981baeb3d27f")
 	)
 	(wire
 		(pts
@@ -5323,17 +5499,6 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 81.28)
-			(xy 175.26 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7490e0d8-1bfe-448e-ab13-7d4b2671eeab")
-	)
-	(wire
-		(pts
 			(xy 134.62 198.12)
 			(xy 127 198.12)
 		)
@@ -5518,17 +5683,6 @@
 			(type default)
 		)
 		(uuid "baf414ba-1e27-4817-8bdc-c7a3e7de1a2b")
-	)
-	(wire
-		(pts
-			(xy 182.88 81.28)
-			(xy 193.04 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c17d4be4-e520-4882-9948-bf35119d4c47")
 	)
 	(wire
 		(pts
@@ -6085,6 +6239,55 @@
 		)
 		(uuid "f0fe1078-4c83-476b-aacf-9cd4db36bc31")
 	)
+	(text "MOTOR MODULES J4-J8"
+		(at 101.6 63.5 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 132 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "8adaeaaa-6b3c-4b21-9e2a-13e700eef483")
+	)
+	(text "RADIO LINK J9 (JST GH 15P)"
+		(at 151.13 191.77 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 132 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "e3f143d8-a602-479d-870f-e22b7f155195")
+	)
+	(text "J9 CONTROLBOARD INTERFACE ONLY (remote board not audited):\n1/2 +3V3; 3/5/7/9/11/15/MP GND; 4 SCK; 6 MOSI; 8 MISO;\n10 CS; 12 HANDSHAKE; 13 DATA_READY; 14 RESET.\nConfirm cable/mating pinout and remote I/O limits before connection.\nConfigure reset open-drain only if the remote EN pull-up is present.\nR31/R32 = 100k: bias when disconnected, not guaranteed reset-state logic.\nESP32-C5 MTCK/GPIO4 has a reset pull-up; receiver level must be checked.\nProtocol speed/mode and interrupt masking are firmware requirements."
+		(at 151.13 302.26 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left bottom)
+		)
+		(uuid "25ab765b-3473-4322-8ec9-d308ad5cf215")
+	)
+	(text "ESD AT CONNECTORS U4-U6, U12-U14"
+		(at 378.46 16.51 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 132 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "28dc3e9d-b2ad-4f37-beff-f221e558cb7d")
+	)
 	(label "+5V_EXT1"
 		(at 259.08 121.92 180)
 		(effects
@@ -6105,16 +6308,6 @@
 		)
 		(uuid "151a1882-0c10-4c3b-809c-9dbda6b564b9")
 	)
-	(label "+5V_KICKER"
-		(at 193.04 81.28 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5514013f-6007-4c7e-9a7a-7b91bac2d256")
-	)
 	(label "+5V_EXT2"
 		(at 259.08 144.78 180)
 		(effects
@@ -6134,16 +6327,6 @@
 			(justify left bottom)
 		)
 		(uuid "c1642979-7e6d-4fad-9b50-440faaae5998")
-	)
-	(label "+5V_KICKER"
-		(at 259.08 93.98 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "da95a8b3-d62f-47f6-99b6-8043d6a88f77")
 	)
 	(global_label "+3V3"
 		(shape passive)
@@ -7322,35 +7505,15 @@
 		)
 		(uuid "e2791d82-66a5-4e9e-bc68-91c35d84dce8")
 	)
-  (text "SPI ROUTING: routed ~50R over In1 GND; receiver data still pending.\nR15/R16 are provisional damping; verify all multidrop endpoints.\nPlace ESD devices at connectors with short ground returns.\nF2 -> J10, F3 -> J11, F4 -> J12: independent PTC output rails.\nMF-MSMF075: each holds 0.55 A at 50C; NOT a combined available budget.\nShared U8/source limits still apply; fault selectivity is not guaranteed.\nShared I2C signals remain vulnerable to any device holding a bus line low."
-    (at 260.35 300.99 0)
-    (effects (font (size 1.1 1.1)) (justify left bottom))
-    (uuid "d655d583-80cf-460d-82d3-dc2f51f74e23")
-  )
-  (text "MOTOR MODULES J4-J8"
-    (at 101.6 63.5 0)
-    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
-    (uuid "8adaeaaa-6b3c-4b21-9e2a-13e700eef483")
-  )
-  (text "RADIO LINK J9 (JST GH 15P)"
-    (at 151.13 191.77 0)
-    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
-    (uuid "e3f143d8-a602-479d-870f-e22b7f155195")
-  )
-  (text "J9 CONTROLBOARD INTERFACE ONLY (remote board not audited):\n1/2 +3V3; 3/5/7/9/11/15/MP GND; 4 SCK; 6 MOSI; 8 MISO;\n10 CS; 12 HANDSHAKE; 13 DATA_READY; 14 RESET.\nConfirm cable/mating pinout and remote I/O limits before connection.\nConfigure reset open-drain only if the remote EN pull-up is present.\nR31/R32 = 100k: bias when disconnected, not guaranteed reset-state logic.\nESP32-C5 MTCK/GPIO4 has a reset pull-up; receiver level must be checked.\nProtocol speed/mode and interrupt masking are firmware requirements."
-    (at 151.13 302.26 0)
-    (effects (font (size 1.1 1.1)) (justify left bottom))
-    (uuid "25ab765b-3473-4322-8ec9-d308ad5cf215")
-  )
-  (text "I2C CONNECTORS J10-J12, INDEPENDENT F2/F3/F4"
+  (text "I2C CONNECTORS: J10 KICKER (SIGNALS ONLY), J11/J12 FED BY F3/F4"
     (at 158.75 72.39 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid "13f03eb6-6b63-4d6e-929c-9b2b4bee0765")
+    (uuid "c00c53a1-9335-4599-8c0e-8e48f8ec1908")
   )
-  (text "ESD AT CONNECTORS U4-U6, U12-U14"
-    (at 378.46 16.51 0)
-    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
-    (uuid "28dc3e9d-b2ad-4f37-beff-f221e558cb7d")
+  (text "SPI ROUTING: routed ~50R over In1 GND; receiver data still pending.\nR15/R16 are provisional damping; verify all multidrop endpoints.\nPlace ESD devices at connectors with short ground returns.\nF3 -> J11, F4 -> J12: independent PTC output rails. J10 carries no power:\nthe kicker board is supplied by the powerboard.\nMF-MSMF075: each holds 0.55 A at 50C; NOT a combined available budget.\nShared U8/source limits still apply; fault selectivity is not guaranteed.\nShared I2C signals remain vulnerable to any device holding a bus line low."
+    (at 260.35 300.99 0)
+    (effects (font (size 1.1 1.1)) (justify left bottom))
+    (uuid "78e8e646-e04e-4587-b3a4-d1abd13f37d4")
   )
 	(symbol
 		(lib_id "power:+5V")
@@ -7491,6 +7654,15 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 345.44 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "2"
@@ -7507,16 +7679,7 @@
 				)
 			)
 		)
-	
-		(property "Vendor PN" ""
-			(at 345.44 53.34 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x08")
 		(at 271.78 180.34 0)
@@ -7590,6 +7753,15 @@
 				)
 			)
 		)
+		(property "Vendor PN" "1528-1220-ND"
+			(at 271.78 180.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "3"
@@ -7624,16 +7796,7 @@
 				)
 			)
 		)
-	
-		(property "Vendor PN" "1528-1220-ND"
-			(at 271.78 180.34 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 259.08 124.46 0)
@@ -7712,8 +7875,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x04")
-		(at 271.78 96.52 0)
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 271.78 99.06 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7721,7 +7884,7 @@
 		(dnp no)
 		(uuid "11c70d8c-70b9-4167-99c4-220734183d2d")
 		(property "Reference" "J10"
-			(at 271.78 91.44 0)
+			(at 271.78 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7740,8 +7903,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical"
-			(at 271.78 96.52 0)
+		(property "Footprint" "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical"
+			(at 271.78 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7752,7 +7915,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
-			(at 271.78 96.52 0)
+			(at 271.78 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7762,11 +7925,29 @@
 				)
 			)
 		)
-		(property "Description" "Kicker I2C, JST PH 4P vertical: 1 +5V_KICKER 2 GND 3 SCL 4 SDA."
-			(at 271.78 96.52 0)
+		(property "Description" "Kicker I2C, signals only: 1 GND, 2 SCL, 3 SDA. The kicker board is powered from the powerboard, not from this board."
+			(at 271.78 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "JST B3B-PH-K-S(LF)(SN)"
+			(at 271.78 99.06 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" "455-1705-ND"
+			(at 271.78 99.06 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7795,25 +7976,7 @@
 				)
 			)
 		)
-	
-		(property "MPN" "JST B4B-PH-K-S(LF)(SN)"
-			(at 271.78 96.52 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor PN" "455-1706-ND"
-			(at 271.78 96.52 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:+3V3")
 		(at 349.25 45.72 270)
@@ -7953,6 +8116,15 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 345.44 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "1"
@@ -7969,16 +8141,7 @@
 				)
 			)
 		)
-	
-		(property "Vendor PN" ""
-			(at 345.44 60.96 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x06")
 		(at 139.7 167.64 0)
@@ -8052,6 +8215,15 @@
 				)
 			)
 		)
+		(property "Vendor PN" "455-1708-ND"
+			(at 139.7 167.64 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "1"
@@ -8086,16 +8258,7 @@
 				)
 			)
 		)
-	
-		(property "Vendor PN" "455-1708-ND"
-			(at 139.7 167.64 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 408.94 129.54 0)
@@ -8246,6 +8409,15 @@
 				)
 			)
 		)
+		(property "Vendor PN" "455-1708-ND"
+			(at 139.7 83.82 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "5"
@@ -8280,16 +8452,7 @@
 				)
 			)
 		)
-	
-		(property "Vendor PN" "455-1708-ND"
-			(at 139.7 83.82 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 408.94 91.44 0)
@@ -8429,6 +8592,24 @@
 				)
 			)
 		)
+		(property "MPN" "JST B4B-PH-K-S(LF)(SN)"
+			(at 271.78 147.32 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" "455-1706-ND"
+			(at 271.78 147.32 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "2"
@@ -8451,25 +8632,7 @@
 				)
 			)
 		)
-	
-		(property "MPN" "JST B4B-PH-K-S(LF)(SN)"
-			(at 271.78 147.32 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor PN" "455-1706-ND"
-			(at 271.78 147.32 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 345.44 68.58 90)
@@ -8532,6 +8695,15 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 345.44 68.58 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "1"
@@ -8548,16 +8720,7 @@
 				)
 			)
 		)
-	
-		(property "Vendor PN" ""
-			(at 345.44 68.58 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x06")
 		(at 139.7 139.7 0)
@@ -8631,6 +8794,15 @@
 				)
 			)
 		)
+		(property "Vendor PN" "455-1708-ND"
+			(at 139.7 139.7 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "1"
@@ -8665,16 +8837,7 @@
 				)
 			)
 		)
-	
-		(property "Vendor PN" "455-1708-ND"
-			(at 139.7 139.7 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 355.6 147.32 0)
@@ -8737,6 +8900,15 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 355.6 147.32 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "1"
@@ -8750,16 +8922,7 @@
 				)
 			)
 		)
-	
-		(property "Vendor PN" ""
-			(at 355.6 147.32 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 165.1 240.03 0)
@@ -8824,23 +8987,6 @@
 				)
 			)
 		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "1"
-			(uuid "6927ce88-deb0-4414-8ceb-38bfced8faf3")
-		)
-		(pin "2"
-			(uuid "d687487e-dfb4-49c6-9c8a-4dc1fec8461e")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/c387934c-6c45-449c-9c7b-623c2e31b062"
-					(reference "C29")
-					(unit 1)
-				)
-			)
-		)
-	
 		(property "Vendor PN" ""
 			(at 165.1 240.03 0)
 			(hide yes)
@@ -8858,7 +9004,24 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+		(body_style 1)
+		(in_pos_files yes)
+		(pin "1"
+			(uuid "6927ce88-deb0-4414-8ceb-38bfced8faf3")
+		)
+		(pin "2"
+			(uuid "d687487e-dfb4-49c6-9c8a-4dc1fec8461e")
+		)
+		(instances
+			(project "ControlBoard2027"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/c387934c-6c45-449c-9c7b-623c2e31b062"
+					(reference "C29")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 154.94 240.03 0)
@@ -8923,6 +9086,15 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 154.94 240.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "2"
@@ -8939,16 +9111,7 @@
 				)
 			)
 		)
-	
-		(property "Vendor PN" ""
-			(at 154.94 240.03 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Power_Protection:TPD4E05U06DQA")
 		(at 408.94 114.3 0)
@@ -9023,6 +9186,15 @@
 				)
 			)
 		)
+		(property "Vendor PN" "296-35765-1-ND"
+			(at 408.94 114.3 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "9"
@@ -9063,16 +9235,7 @@
 				)
 			)
 		)
-	
-		(property "Vendor PN" "296-35765-1-ND"
-			(at 408.94 114.3 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:+3V3")
 		(at 259.08 187.96 0)
@@ -9289,6 +9452,15 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 345.44 30.48 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "1"
@@ -9305,16 +9477,7 @@
 				)
 			)
 		)
-	
-		(property "Vendor PN" ""
-			(at 345.44 30.48 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 349.25 91.44 90)
@@ -9465,6 +9628,15 @@
 				)
 			)
 		)
+		(property "Vendor PN" "455-1708-ND"
+			(at 139.7 195.58 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "2"
@@ -9499,16 +9671,7 @@
 				)
 			)
 		)
-	
-		(property "Vendor PN" "455-1708-ND"
-			(at 139.7 195.58 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:+3V3")
 		(at 349.25 38.1 270)
@@ -9648,6 +9811,15 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 381 147.32 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "1"
@@ -9661,16 +9833,7 @@
 				)
 			)
 		)
-	
-		(property "Vendor PN" ""
-			(at 381 147.32 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 345.44 91.44 90)
@@ -9733,6 +9896,15 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 345.44 91.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "2"
@@ -9749,16 +9921,7 @@
 				)
 			)
 		)
-	
-		(property "Vendor PN" ""
-			(at 345.44 91.44 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 408.94 53.34 0)
@@ -9898,6 +10061,15 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 368.3 147.32 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "1"
@@ -9911,16 +10083,7 @@
 				)
 			)
 		)
-	
-		(property "Vendor PN" ""
-			(at 368.3 147.32 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 345.44 83.82 90)
@@ -9983,6 +10146,15 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 345.44 83.82 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "2"
@@ -9999,16 +10171,7 @@
 				)
 			)
 		)
-	
-		(property "Vendor PN" ""
-			(at 345.44 83.82 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:+3V3")
 		(at 349.25 60.96 270)
@@ -10225,6 +10388,15 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 345.44 38.1 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "2"
@@ -10241,16 +10413,7 @@
 				)
 			)
 		)
-	
-		(property "Vendor PN" ""
-			(at 345.44 38.1 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:Polyfuse")
 		(at 179.07 109.22 270)
@@ -10324,6 +10487,15 @@
 				)
 			)
 		)
+		(property "Vendor PN" "118-MF-MSMF075/16X-2CT-ND"
+			(at 179.07 109.22 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "2"
@@ -10340,16 +10512,7 @@
 				)
 			)
 		)
-	
-		(property "Vendor PN" "118-MF-MSMF075/16X-2CT-ND"
-			(at 179.07 109.22 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 345.44 45.72 90)
@@ -10412,6 +10575,15 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 345.44 45.72 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "2"
@@ -10424,92 +10596,6 @@
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/c387934c-6c45-449c-9c7b-623c2e31b062"
 					(reference "R26")
-					(unit 1)
-				)
-			)
-		)
-	
-		(property "Vendor PN" ""
-			(at 345.44 45.72 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
-	(symbol
-		(lib_id "power:+5V")
-		(at 170.18 81.28 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8480d7f7-dab1-4a28-9232-1ce47f30c200")
-		(property "Reference" "#PWR053"
-			(at 170.18 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 170.18 77.724 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 170.18 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 170.18 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 170.18 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "1"
-			(uuid "fb5a9b98-bd9a-4b6e-bfc2-d4fcc3c9fb2e")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/c387934c-6c45-449c-9c7b-623c2e31b062"
-					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -10577,6 +10663,24 @@
 				)
 			)
 		)
+		(property "MPN" "JST B4B-PH-K-S(LF)(SN)"
+			(at 271.78 124.46 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" "455-1706-ND"
+			(at 271.78 124.46 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "4"
@@ -10599,25 +10703,7 @@
 				)
 			)
 		)
-	
-		(property "MPN" "JST B4B-PH-K-S(LF)(SN)"
-			(at 271.78 124.46 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor PN" "455-1706-ND"
-			(at 271.78 124.46 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Connector_Generic_MountingPin:Conn_01x15_MountingPin")
 		(at 190.5 218.44 180)
@@ -10692,6 +10778,15 @@
 				)
 			)
 		)
+		(property "Vendor PN" "455-BM15B-GHS-TBTCT-ND"
+			(at 190.5 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "6"
@@ -10750,16 +10845,7 @@
 				)
 			)
 		)
-	
-		(property "Vendor PN" "455-BM15B-GHS-TBTCT-ND"
-			(at 190.5 218.44 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 342.9 147.32 0)
@@ -10822,6 +10908,15 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 342.9 147.32 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "1"
@@ -10835,16 +10930,7 @@
 				)
 			)
 		)
-	
-		(property "Vendor PN" ""
-			(at 342.9 147.32 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:+3V3")
 		(at 349.25 53.34 270)
@@ -10984,6 +11070,15 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 345.44 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "2"
@@ -11000,16 +11095,7 @@
 				)
 			)
 		)
-	
-		(property "Vendor PN" ""
-			(at 345.44 76.2 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 154.94 243.84 0)
@@ -11238,6 +11324,15 @@
 				)
 			)
 		)
+		(property "Vendor PN" "296-35765-1-ND"
+			(at 408.94 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "5"
@@ -11278,16 +11373,7 @@
 				)
 			)
 		)
-	
-		(property "Vendor PN" "296-35765-1-ND"
-			(at 408.94 76.2 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:Polyfuse")
 		(at 179.07 121.92 270)
@@ -11361,6 +11447,15 @@
 				)
 			)
 		)
+		(property "Vendor PN" "118-MF-MSMF075/16X-2CT-ND"
+			(at 179.07 121.92 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "1"
@@ -11377,16 +11472,7 @@
 				)
 			)
 		)
-	
-		(property "Vendor PN" "118-MF-MSMF075/16X-2CT-ND"
-			(at 179.07 121.92 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:+3V3")
 		(at 349.25 30.48 270)
@@ -11603,6 +11689,15 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 406.4 147.32 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "1"
@@ -11616,16 +11711,7 @@
 				)
 			)
 		)
-	
-		(property "Vendor PN" ""
-			(at 406.4 147.32 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 349.25 76.2 90)
@@ -11842,6 +11928,15 @@
 				)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 393.7 147.32 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "1"
@@ -11855,16 +11950,7 @@
 				)
 			)
 		)
-	
-		(property "Vendor PN" ""
-			(at 393.7 147.32 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x06")
 		(at 139.7 111.76 0)
@@ -11938,6 +12024,15 @@
 				)
 			)
 		)
+		(property "Vendor PN" "455-1708-ND"
+			(at 139.7 111.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "1"
@@ -11972,16 +12067,7 @@
 				)
 			)
 		)
-	
-		(property "Vendor PN" "455-1708-ND"
-			(at 139.7 111.76 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 259.08 96.52 0)
@@ -12137,105 +12223,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Polyfuse")
-		(at 179.07 81.28 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f7c5849d-1bf5-471c-af05-8dde5eaea557")
-		(property "Reference" "F2"
-			(at 179.07 78.74 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MF-MSMF075/16X"
-			(at 179.07 83.82 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "ControlBoard2027:Fuse_Bourns_MF-MSMF_1812"
-			(at 179.07 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.bourns.com/docs/product-datasheets/mf-msmf.pdf"
-			(at 179.07 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "MF-MSMF075/16X independent PTC for J10. Hold 0.75A at 23C / 0.55A at 50C. Not an active current limit; no guaranteed selective trip relative to upstream protection. Total available load depends on shared source and board consumption."
-			(at 179.07 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "Bourns MF-MSMF075/16X-2"
-			(at 179.07 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(body_style 1)
-		(in_pos_files yes)
-		(pin "1"
-			(uuid "14ed9c9e-495c-4c93-bd5b-bc43061006d0")
-		)
-		(pin "2"
-			(uuid "aef40702-6ec4-41f8-a3e9-077a0d50e6cf")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/c387934c-6c45-449c-9c7b-623c2e31b062"
-					(reference "F2")
-					(unit 1)
-				)
-			)
-		)
-	
-		(property "Vendor PN" "118-MF-MSMF075/16X-2CT-ND"
-			(at 179.07 81.28 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
-	(symbol
 		(lib_id "power:GND")
 		(at 406.4 152.4 0)
 		(unit 1)
@@ -12386,6 +12373,15 @@
 				)
 			)
 		)
+		(property "Vendor PN" "296-35765-1-ND"
+			(at 408.94 38.1 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "2"
@@ -12426,16 +12422,7 @@
 				)
 			)
 		)
-	
-		(property "Vendor PN" "296-35765-1-ND"
-			(at 408.94 38.1 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Power_Protection:TPD4E05U06DQA")
 		(at 408.94 190.5 0)
@@ -12510,6 +12497,15 @@
 				)
 			)
 		)
+		(property "Vendor PN" "296-35765-1-ND"
+			(at 408.94 190.5 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "5"
@@ -12550,16 +12546,7 @@
 				)
 			)
 		)
-	
-		(property "Vendor PN" "296-35765-1-ND"
-			(at 408.94 190.5 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 408.94 205.74 0)
@@ -12711,6 +12698,15 @@
 				)
 			)
 		)
+		(property "Vendor PN" "296-35765-1-ND"
+			(at 408.94 228.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "5"
@@ -12751,16 +12747,7 @@
 				)
 			)
 		)
-	
-		(property "Vendor PN" "296-35765-1-ND"
-			(at 408.94 228.6 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 408.94 243.84 0)
@@ -12912,6 +12899,15 @@
 				)
 			)
 		)
+		(property "Vendor PN" "296-35765-1-ND"
+			(at 408.94 266.7 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(body_style 1)
 		(in_pos_files yes)
 		(pin "5"
@@ -12952,16 +12948,7 @@
 				)
 			)
 		)
-	
-		(property "Vendor PN" "296-35765-1-ND"
-			(at 408.94 266.7 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 408.94 281.94 0)
