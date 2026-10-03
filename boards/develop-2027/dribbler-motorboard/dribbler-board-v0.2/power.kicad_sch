@@ -2516,6 +2516,18 @@
 		(uuid "92c48fdb-52a5-4015-9adf-14d8462976d1")
 	)
 	(rectangle
+		(start 82.296 100.33)
+		(end 114.046 107.95)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "9498ab1f-6d8c-489f-9b1a-6333576a6e79")
+	)
+	(rectangle
 		(start 80.01 66.04)
 		(end 207.01 110.49)
 		(stroke
@@ -2572,6 +2584,17 @@
 			(justify right)
 		)
 		(uuid "4889f571-95fb-4f5d-aac7-5a53d3c16fde")
+	)
+	(text "L = 2.2 uH +- 20%\nI_{PK}_{worst} = 0.56 / 0.8 = 0.70 A\nI_{SAT}_{min} = 1.2 * 0.70 = 0.84 A"
+		(exclude_from_sim no)
+		(at 82.55 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "79d95b0b-f509-44e3-8be4-63af93a426c4")
 	)
 	(text "Connect directly to\nVOUT if possible\n\nRegulator always on"
 		(exclude_from_sim no)
@@ -6445,7 +6468,7 @@
 				)
 			)
 		)
-		(property "Value" "L"
+		(property "Value" "22 uH"
 			(at 151.13 74.93 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6455,7 +6478,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
 			(at 151.13 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -6466,7 +6489,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/610/BRC2012T2R2MD_SS.pdf"
 			(at 151.13 77.47 0)
 			(hide yes)
 			(show_name no)
