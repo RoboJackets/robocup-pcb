@@ -3005,7 +3005,7 @@
 		)
 		(uuid "76c1d4b9-a79e-478d-a7b5-de8954d89ca0")
 	)
-	(text_box "VBUS to +5V Buck\n"
+	(text_box "VBUS to +5V LDO\n"
 		(exclude_from_sim no)
 		(at 105.41 95.25 0)
 		(size 21.59 6.35)
@@ -3186,6 +3186,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ab651d18-6f8f-4a37-9365-1d765025451b")
+	)
+	(junction
+		(at 91.44 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b95dcf0c-39cf-4049-8690-60d0bc40e87e")
 	)
 	(junction
 		(at 105.41 161.29)
@@ -3519,7 +3525,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 80.01) (xy 91.44 78.74)
+			(xy 91.44 80.01) (xy 91.44 77.47)
 		)
 		(stroke
 			(width 0)
@@ -3607,6 +3613,16 @@
 		)
 		(uuid "5c71354d-b990-4494-8ada-f76171c09500")
 	)
+	(wire
+		(pts
+			(xy 81.28 77.47) (xy 81.28 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e24992c-97f2-4438-9899-2d6ba3fc0b77")
+	)
 	(polyline
 		(pts
 			(xy 115.57 39.37) (xy 115.57 38.1)
@@ -3626,6 +3642,16 @@
 			(type default)
 		)
 		(uuid "61267fdc-4163-4917-87a1-a57bd437fc0d")
+	)
+	(wire
+		(pts
+			(xy 91.44 77.47) (xy 91.44 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61d6a602-a977-42c7-831b-b75f30f2972d")
 	)
 	(wire
 		(pts
@@ -4257,6 +4283,16 @@
 		)
 		(uuid "f76f00d9-30dd-4728-853f-7c92a3a7a66e")
 	)
+	(wire
+		(pts
+			(xy 81.28 77.47) (xy 83.82 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f97f5608-eb67-4250-9087-0e0ca7cfb2ad")
+	)
 	(label "3.3V_REG"
 		(at 30.48 88.9 180)
 		(effects
@@ -4865,8 +4901,120 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 87.63 77.47 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "22739d11-5ad9-472b-88bc-530b247c0e0d")
+		(property "Reference" "C21"
+			(at 87.63 72.136 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1u 63V"
+			(at 87.63 74.168 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 91.44 76.5048 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188D72A105KE01-01A.pdf"
+			(at 87.63 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 87.63 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "GRM188D72A105KE01J"
+			(at 87.63 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 87.63 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "490-GRM188D72A105KE01JCT-ND"
+			(at 87.63 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "cbf41377-e26b-4e76-96f8-cf32ba5e0856")
+		)
+		(pin "1"
+			(uuid "74bb50eb-101c-4499-b0df-6b2fd0c8d80a")
+		)
+		(instances
+			(project "integration-test"
+				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/65153d9e-5a1b-421c-8fe4-5f071af15722"
+					(reference "C21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VBUS")
-		(at 91.44 78.74 0)
+		(at 91.44 72.39 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4876,7 +5024,7 @@
 		(dnp no)
 		(uuid "231abb70-c31e-42c4-a79b-d5bc9c2fa464")
 		(property "Reference" "#PWR070"
-			(at 91.44 82.55 0)
+			(at 91.44 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4887,7 +5035,7 @@
 			)
 		)
 		(property "Value" "VBUS"
-			(at 91.44 75.184 0)
+			(at 91.44 68.834 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4897,7 +5045,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 91.44 78.74 0)
+			(at 91.44 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4908,7 +5056,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 91.44 78.74 0)
+			(at 91.44 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4919,7 +5067,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 91.44 78.74 0)
+			(at 91.44 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6248,6 +6396,84 @@
 			(project "integration-test"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/65153d9e-5a1b-421c-8fe4-5f071af15722"
 					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 81.28 80.01 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5e72548a-74e9-4df0-a697-122e749a1d46")
+		(property "Reference" "#PWR074"
+			(at 81.28 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 81.28 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 81.28 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ff1890b7-cebe-4fa7-bde3-4380fe8b3954")
+		)
+		(instances
+			(project "integration-test"
+				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/65153d9e-5a1b-421c-8fe4-5f071af15722"
+					(reference "#PWR074")
 					(unit 1)
 				)
 			)
@@ -8787,6 +9013,7 @@
 		)
 		(property "Value" "LDI559-05EN"
 			(at 102.87 73.66 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
