@@ -4968,7 +4968,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 169.8752 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -4979,7 +4979,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/61/CL05A226MQ5N6J8_Spec.pdf"
 			(at 168.91 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -4991,6 +4991,28 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 168.91 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 168.91 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "1276-7090-1-ND"
 			(at 168.91 86.36 0)
 			(hide yes)
 			(show_name no)
