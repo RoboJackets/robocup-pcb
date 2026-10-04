@@ -1629,18 +1629,6 @@
 		(uuid "f5f53518-e375-4936-b1b2-980a62704085")
 	)
 	(junction
-		(at 168.91 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0b9fe5eb-96cf-49cc-9fd8-1b8f5299e8fc")
-	)
-	(junction
-		(at 168.91 99.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1005b262-72b5-4ab1-9dcc-8a13a9c151cf")
-	)
-	(junction
 		(at 168.91 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1731,12 +1719,6 @@
 		(uuid "716735b7-b739-4dd5-924a-cb5b964d3035")
 	)
 	(junction
-		(at 168.91 73.66)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "864a2b2c-27b7-48ea-8e8c-36ada9b246d5")
-	)
-	(junction
 		(at 223.52 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1795,12 +1777,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e0e090ce-af9a-4da8-93ea-b3ba8c384939")
-	)
-	(junction
-		(at 168.91 124.46)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e2430bd1-f3d2-4752-b5dc-212c56174668")
 	)
 	(junction
 		(at 168.91 66.04)
@@ -1901,16 +1877,6 @@
 			(type default)
 		)
 		(uuid "09320fd1-5cc1-4dc3-b30d-dd641b1d577f")
-	)
-	(wire
-		(pts
-			(xy 168.91 99.06) (xy 177.8 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0ab1c094-6efc-499d-b73e-2e90a8d41e77")
 	)
 	(wire
 		(pts
@@ -2194,16 +2160,6 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 48.26) (xy 168.91 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "45ffc68f-6850-43cb-ab8f-3ec6e567f302")
-	)
-	(wire
-		(pts
 			(xy 173.99 148.59) (xy 173.99 151.13)
 		)
 		(stroke
@@ -2334,7 +2290,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 124.46) (xy 168.91 124.46)
+			(xy 166.37 124.46) (xy 177.8 124.46)
 		)
 		(stroke
 			(width 0)
@@ -2464,7 +2420,17 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 73.66) (xy 168.91 73.66)
+			(xy 241.3 152.4) (xy 241.3 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e62ec32-99ec-4733-95b9-c22ded8eb648")
+	)
+	(wire
+		(pts
+			(xy 166.37 73.66) (xy 177.8 73.66)
 		)
 		(stroke
 			(width 0)
@@ -2501,6 +2467,26 @@
 			(type default)
 		)
 		(uuid "93d61fe1-0f6c-483b-a3a9-2dbf753d1604")
+	)
+	(wire
+		(pts
+			(xy 228.6 152.4) (xy 228.6 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9839281e-6105-4751-9861-6782797c5afe")
+	)
+	(wire
+		(pts
+			(xy 254 152.4) (xy 254 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9848af34-5f99-43e1-9a65-f6d46e1ba9e8")
 	)
 	(wire
 		(pts
@@ -2604,16 +2590,6 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 73.66) (xy 177.8 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad9a4abe-b390-433c-ab42-c795083db168")
-	)
-	(wire
-		(pts
 			(xy 215.9 44.45) (xy 223.52 44.45)
 		)
 		(stroke
@@ -2634,17 +2610,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 124.46) (xy 177.8 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b4177496-c826-461c-a58f-bfbb8f1abbc2")
-	)
-	(wire
-		(pts
-			(xy 168.91 48.26) (xy 177.8 48.26)
+			(xy 166.37 48.26) (xy 177.8 48.26)
 		)
 		(stroke
 			(width 0)
@@ -2824,7 +2790,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 99.06) (xy 168.91 99.06)
+			(xy 166.37 99.06) (xy 177.8 99.06)
 		)
 		(stroke
 			(width 0)
@@ -2841,6 +2807,16 @@
 			(type default)
 		)
 		(uuid "f3ac1ef2-2996-46c2-9ab7-4f1a0a32638d")
+	)
+	(wire
+		(pts
+			(xy 215.9 152.4) (xy 215.9 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3bf35cc-965a-4853-9144-9a99ba3123b5")
 	)
 	(wire
 		(pts
@@ -3249,6 +3225,155 @@
 		)
 	)
 	(symbol
+		(lib_id "Amplifier_Current:INA4180A3")
+		(at 246.38 55.88 0)
+		(mirror x)
+		(unit 3)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "11a8ed86-d1e8-4821-849f-c16d47daef0c")
+		(property "Reference" "U3"
+			(at 246.38 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "INA4180A3IPWR"
+			(at 246.38 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+			(at 245.11 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ina4180.pdf"
+			(at 247.65 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Quad current sense amplifier, Rail-to-Rail, 26V, Gain 100 V/V, TSSOP-14"
+			(at 246.38 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "INA4180A3IPWR"
+			(at 246.38 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 246.38 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "296-49096-1-ND"
+			(at 246.38 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "7"
+			(uuid "edccd981-18aa-460c-9749-41c34a6e8944")
+		)
+		(pin "11"
+			(uuid "67c0abc5-2c52-4865-b8cd-95a00f5c44c7")
+		)
+		(pin "12"
+			(uuid "78f913e4-18f3-44fa-a395-711caf1a8131")
+		)
+		(pin "14"
+			(uuid "97e6469c-415f-49ca-bc94-7c636a924261")
+		)
+		(pin "10"
+			(uuid "60af0084-c20c-47f0-8cb3-70b30de7802f")
+		)
+		(pin "4"
+			(uuid "a1e31c68-732a-4786-9efb-ffebb9c86937")
+		)
+		(pin "5"
+			(uuid "f4d5b031-ec1e-4e16-ba44-c8dad07ad14e")
+		)
+		(pin "8"
+			(uuid "1494a131-fa16-4354-9216-032372ca1628")
+		)
+		(pin "13"
+			(uuid "d0c99cf5-98bb-43a3-8513-6c38c952594f")
+		)
+		(pin "9"
+			(uuid "8da0fde6-16a6-4be1-85c8-c061f3163f4d")
+		)
+		(pin "6"
+			(uuid "cd4bbd5f-776d-4317-bdd9-695e1197d308")
+		)
+		(pin "3"
+			(uuid "afc0aa3a-66b6-4381-937e-d04063cd25ab")
+		)
+		(pin "2"
+			(uuid "da738816-7ebc-4914-89da-f8f412a6087c")
+		)
+		(pin "1"
+			(uuid "758e3f9d-4940-447a-b0fa-323e6183664e")
+		)
+		(instances
+			(project "power-board-proto"
+				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09"
+					(reference "U3")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 106.68 168.91 0)
 		(unit 1)
@@ -3321,6 +3446,84 @@
 			(project "power-board-proto"
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09"
 					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 215.9 154.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "14ee3ff3-0da1-4830-b0f0-c94288d10cac")
+		(property "Reference" "#PWR043"
+			(at 215.9 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 215.9 160.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 215.9 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 215.9 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8bf00c7c-6aa2-445a-a277-9489edc45e96")
+		)
+		(instances
+			(project "power-board-proto"
+				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09"
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -3853,6 +4056,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 241.3 154.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2e7eebcc-9751-457e-b7c3-406685692271")
+		(property "Reference" "#PWR047"
+			(at 241.3 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 241.3 160.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 241.3 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 241.3 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 241.3 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fdd48e7c-8d07-4f54-bf62-1ba4e6d865ee")
+		)
+		(instances
+			(project "power-board-proto"
+				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09"
+					(reference "#PWR047")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 162.56 135.89 0)
 		(unit 1)
@@ -4234,118 +4515,6 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 168.91 124.46 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "44f55757-11bf-4ae7-bb67-f32371eb3109")
-		(property "Reference" "TP9"
-			(at 166.37 119.8879 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "3.3V_EN"
-			(at 166.37 122.4279 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
-			(at 163.83 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.keyelco.com/userAssets/file/K75p62.pdf"
-			(at 163.83 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point (white)"
-			(at 168.91 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor" "DigiKey"
-			(at 168.91 124.46 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer P/N" "5002"
-			(at 168.91 124.46 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor P/N" "36-5002-ND"
-			(at 168.91 124.46 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9a7f33f5-b0ed-4d18-a033-aac111ac1eae")
-		)
-		(instances
-			(project "power-board-proto"
-				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09"
-					(reference "TP9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
 		(at 168.91 90.17 0)
 		(mirror y)
 		(unit 1)
@@ -4563,6 +4732,84 @@
 			(project "power-board-proto"
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09"
 					(reference "C22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 228.6 154.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "51c8d1f6-5c3d-4cb3-90ec-ec7a370dfbce")
+		(property "Reference" "#PWR044"
+			(at 228.6 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 228.6 160.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 228.6 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 228.6 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0260c740-f79d-4355-8919-5489801e6c96")
+		)
+		(instances
+			(project "power-board-proto"
+				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09"
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -5027,6 +5274,196 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 254 152.4 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5c540161-d4b0-4d0b-993c-4c3e3a6cf44b")
+		(property "Reference" "TP26"
+			(at 251.46 147.8279 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 251.46 150.3679 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
+			(at 248.92 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/K75p62.pdf"
+			(at 248.92 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point (black)"
+			(at 254 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 254 152.4 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "5001"
+			(at 254 152.4 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "36-5001-ND"
+			(at 254 152.4 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3184abbf-98a5-40f5-bbf5-bd15818f0246")
+		)
+		(instances
+			(project "power-board-proto"
+				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09"
+					(reference "TP26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 254 154.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "60c420ac-049d-43e0-b610-44e968e485ea")
+		(property "Reference" "#PWR048"
+			(at 254 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 254 160.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 254 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 254 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 254 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b89722e8-6c88-441f-ac2d-1da7ac9ac648")
+		)
+		(instances
+			(project "power-board-proto"
+				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09"
+					(reference "#PWR048")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint_Square")
 		(at 261.62 55.88 90)
 		(unit 1)
@@ -5370,6 +5807,118 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 215.9 152.4 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7c2565f7-58da-485b-a0d1-bde5d3cb93ee")
+		(property "Reference" "TP23"
+			(at 213.36 147.8279 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 213.36 150.3679 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
+			(at 210.82 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/K75p62.pdf"
+			(at 210.82 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point (black)"
+			(at 215.9 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 215.9 152.4 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "5001"
+			(at 215.9 152.4 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "36-5001-ND"
+			(at 215.9 152.4 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2791b8d8-13e9-4658-a56e-b11a17c577ab")
+		)
+		(instances
+			(project "power-board-proto"
+				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09"
+					(reference "TP23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 48.26 130.81 0)
 		(unit 1)
@@ -5486,7 +6035,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 168.91 48.26 0)
+		(at 228.6 152.4 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -5495,9 +6044,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "90668d06-2b38-44b7-9877-cb253a7e2e66")
-		(property "Reference" "TP3"
-			(at 166.37 43.6879 0)
+		(uuid "9e6fa301-64ca-4298-bc60-d152d7be59a4")
+		(property "Reference" "TP24"
+			(at 226.06 147.8279 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5507,8 +6056,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "VBATT_EN"
-			(at 166.37 46.2279 0)
+		(property "Value" "GND"
+			(at 226.06 150.3679 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5519,7 +6068,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
-			(at 163.83 48.26 0)
+			(at 223.52 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5530,7 +6079,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.keyelco.com/userAssets/file/K75p62.pdf"
-			(at 163.83 48.26 0)
+			(at 223.52 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5540,120 +6089,8 @@
 				)
 			)
 		)
-		(property "Description" "test point (white)"
-			(at 168.91 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor" "DigiKey"
-			(at 168.91 48.26 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer P/N" "5002"
-			(at 168.91 48.26 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor P/N" "36-5002-ND"
-			(at 168.91 48.26 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c8e28482-b5f9-4b08-a37a-8f38b403cdf3")
-		)
-		(instances
-			(project "power-board-proto"
-				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09"
-					(reference "TP3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 168.91 99.06 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "95324afc-8967-430f-9441-cd247ca86543")
-		(property "Reference" "TP7"
-			(at 166.37 94.4879 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "5.0V_EN"
-			(at 166.37 97.0279 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
-			(at 163.83 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.keyelco.com/userAssets/file/K75p62.pdf"
-			(at 163.83 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point (white)"
-			(at 168.91 99.06 0)
+		(property "Description" "test point (black)"
+			(at 228.6 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5664,7 +6101,7 @@
 			)
 		)
 		(property "Vendor" "DigiKey"
-			(at 168.91 99.06 90)
+			(at 228.6 152.4 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5674,8 +6111,8 @@
 				)
 			)
 		)
-		(property "Manufacturer P/N" "5002"
-			(at 168.91 99.06 90)
+		(property "Manufacturer P/N" "5001"
+			(at 228.6 152.4 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5685,8 +6122,8 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "36-5002-ND"
-			(at 168.91 99.06 90)
+		(property "Vendor P/N" "36-5001-ND"
+			(at 228.6 152.4 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5697,12 +6134,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "d8bc702d-5de7-40a9-8d9e-79e7af5d13b5")
+			(uuid "fcef72de-e98f-4566-847d-2412a569179c")
 		)
 		(instances
 			(project "power-board-proto"
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09"
-					(reference "TP7")
+					(reference "TP24")
 					(unit 1)
 				)
 			)
@@ -5853,6 +6290,155 @@
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09"
 					(reference "U3")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Current:INA4180A3")
+		(at 246.38 106.68 0)
+		(mirror x)
+		(unit 4)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "aa339688-4ca3-46e2-bd1f-1e23b547498b")
+		(property "Reference" "U3"
+			(at 246.38 116.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "INA4180A3IPWR"
+			(at 246.38 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+			(at 245.11 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ina4180.pdf"
+			(at 247.65 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Quad current sense amplifier, Rail-to-Rail, 26V, Gain 100 V/V, TSSOP-14"
+			(at 246.38 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "INA4180A3IPWR"
+			(at 246.38 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 246.38 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "296-49096-1-ND"
+			(at 246.38 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "7"
+			(uuid "edccd981-18aa-460c-9749-41c34a6e8943")
+		)
+		(pin "11"
+			(uuid "67c0abc5-2c52-4865-b8cd-95a00f5c44c6")
+		)
+		(pin "12"
+			(uuid "9661f768-2f57-41cc-b46e-bc3911c31193")
+		)
+		(pin "14"
+			(uuid "e716b8bf-8b00-4276-b01e-7c99171b6c58")
+		)
+		(pin "10"
+			(uuid "fdc6727a-e716-46b8-a047-764e3f4e4c89")
+		)
+		(pin "4"
+			(uuid "a1e31c68-732a-4786-9efb-ffebb9c86936")
+		)
+		(pin "5"
+			(uuid "f4d5b031-ec1e-4e16-ba44-c8dad07ad14d")
+		)
+		(pin "8"
+			(uuid "f4fe84a6-afea-46f4-a015-5fb7e384dcd2")
+		)
+		(pin "13"
+			(uuid "d09a2fe3-bc3e-434e-ac87-b041f7d19e5a")
+		)
+		(pin "9"
+			(uuid "c75523df-841d-4e9e-ad49-6e5a046d98a7")
+		)
+		(pin "6"
+			(uuid "cd4bbd5f-776d-4317-bdd9-695e1197d307")
+		)
+		(pin "3"
+			(uuid "afc0aa3a-66b6-4381-937e-d04063cd25aa")
+		)
+		(pin "2"
+			(uuid "da738816-7ebc-4914-89da-f8f412a6087b")
+		)
+		(pin "1"
+			(uuid "758e3f9d-4940-447a-b0fa-323e6183664d")
+		)
+		(instances
+			(project "power-board-proto"
+				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09"
+					(reference "U3")
+					(unit 4)
 				)
 			)
 		)
@@ -6051,39 +6637,41 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Current:INA4180A3")
-		(at 246.38 55.88 0)
-		(mirror x)
-		(unit 4)
+		(lib_id "Connector:TestPoint")
+		(at 241.3 152.4 0)
+		(mirror y)
+		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "b4d7906d-6a73-4e7e-91e6-5022c768a99a")
-		(property "Reference" "U3"
-			(at 246.38 66.04 0)
+		(uuid "c511c9c3-a0e5-497a-8d65-b1d8c0884f3b")
+		(property "Reference" "TP25"
+			(at 238.76 147.8279 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "INA4180A3IPWR"
-			(at 246.38 63.5 0)
+		(property "Value" "GND"
+			(at 238.76 150.3679 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
-			(at 245.11 58.42 0)
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
+			(at 236.22 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6093,8 +6681,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ina4180.pdf"
-			(at 247.65 60.96 0)
+		(property "Datasheet" "https://www.keyelco.com/userAssets/file/K75p62.pdf"
+			(at 236.22 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6104,19 +6692,8 @@
 				)
 			)
 		)
-		(property "Description" "Quad current sense amplifier, Rail-to-Rail, 26V, Gain 100 V/V, TSSOP-14"
-			(at 246.38 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer P/N" "INA4180A3IPWR"
-			(at 246.38 55.88 0)
+		(property "Description" "test point (black)"
+			(at 241.3 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6127,7 +6704,7 @@
 			)
 		)
 		(property "Vendor" "DigiKey"
-			(at 246.38 55.88 0)
+			(at 241.3 152.4 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6137,8 +6714,8 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "296-49096-1-ND"
-			(at 246.38 55.88 0)
+		(property "Manufacturer P/N" "5001"
+			(at 241.3 152.4 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6148,53 +6725,25 @@
 				)
 			)
 		)
-		(pin "7"
-			(uuid "edccd981-18aa-460c-9749-41c34a6e8943")
-		)
-		(pin "11"
-			(uuid "67c0abc5-2c52-4865-b8cd-95a00f5c44c6")
-		)
-		(pin "12"
-			(uuid "49180d53-26ad-44d9-a479-ebe0aaf6be0c")
-		)
-		(pin "14"
-			(uuid "1239bff9-b53e-405b-a5ce-7988d5e7b0d6")
-		)
-		(pin "10"
-			(uuid "fdc6727a-e716-46b8-a047-764e3f4e4c89")
-		)
-		(pin "4"
-			(uuid "a1e31c68-732a-4786-9efb-ffebb9c86936")
-		)
-		(pin "5"
-			(uuid "f4d5b031-ec1e-4e16-ba44-c8dad07ad14d")
-		)
-		(pin "8"
-			(uuid "f4fe84a6-afea-46f4-a015-5fb7e384dcd2")
-		)
-		(pin "13"
-			(uuid "ab695fb4-f8c7-4dd9-97da-b15c9c9e1b84")
-		)
-		(pin "9"
-			(uuid "c75523df-841d-4e9e-ad49-6e5a046d98a7")
-		)
-		(pin "6"
-			(uuid "cd4bbd5f-776d-4317-bdd9-695e1197d307")
-		)
-		(pin "3"
-			(uuid "afc0aa3a-66b6-4381-937e-d04063cd25aa")
-		)
-		(pin "2"
-			(uuid "da738816-7ebc-4914-89da-f8f412a6087b")
+		(property "Vendor P/N" "36-5001-ND"
+			(at 241.3 152.4 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(pin "1"
-			(uuid "758e3f9d-4940-447a-b0fa-323e6183664d")
+			(uuid "cbe25039-f9e9-42eb-b2a3-db8ad552ec46")
 		)
 		(instances
 			(project "power-board-proto"
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09"
-					(reference "U3")
-					(unit 4)
+					(reference "TP25")
+					(unit 1)
 				)
 			)
 		)
@@ -6221,7 +6770,7 @@
 				)
 			)
 		)
-		(property "Value" "TLV75733PDBV"
+		(property "Value" "TLV75533PDBVR"
 			(at 68.58 120.65 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6254,7 +6803,7 @@
 				)
 			)
 		)
-		(property "Description" "1A Low IQ Small Size Low Dropout Voltage Regulator, Fixed Output 3.3V, SOT-23-5"
+		(property "Description" "Linear Voltage Regulator IC Positive Fixed 1 Output 500mA SOT-23-5"
 			(at 68.58 127 0)
 			(hide yes)
 			(show_name no)
@@ -6265,7 +6814,7 @@
 				)
 			)
 		)
-		(property "Manufacturer P/N" "TLV75733PDBV"
+		(property "Manufacturer P/N" "TLV75533PDBVR"
 			(at 68.58 127 0)
 			(hide yes)
 			(show_name no)
@@ -6276,7 +6825,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "296-50414-1-ND"
+		(property "Vendor P/N" "296-50411-1-ND"
 			(at 68.58 127 0)
 			(hide yes)
 			(show_name no)
@@ -6549,155 +7098,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Current:INA4180A3")
-		(at 246.38 106.68 0)
-		(mirror x)
-		(unit 3)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d65eea5b-b444-4a77-9cf4-e1ff699bf4f0")
-		(property "Reference" "U3"
-			(at 246.38 116.84 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "INA4180A3IPWR"
-			(at 246.38 114.3 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
-			(at 245.11 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ina4180.pdf"
-			(at 247.65 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Quad current sense amplifier, Rail-to-Rail, 26V, Gain 100 V/V, TSSOP-14"
-			(at 246.38 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer P/N" "INA4180A3IPWR"
-			(at 246.38 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor" "DigiKey"
-			(at 246.38 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor P/N" "296-49096-1-ND"
-			(at 246.38 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "7"
-			(uuid "edccd981-18aa-460c-9749-41c34a6e8944")
-		)
-		(pin "11"
-			(uuid "67c0abc5-2c52-4865-b8cd-95a00f5c44c7")
-		)
-		(pin "12"
-			(uuid "78f913e4-18f3-44fa-a395-711caf1a8131")
-		)
-		(pin "14"
-			(uuid "97e6469c-415f-49ca-bc94-7c636a924261")
-		)
-		(pin "10"
-			(uuid "4f59e9d4-7908-4293-bda9-3796d78fff31")
-		)
-		(pin "4"
-			(uuid "a1e31c68-732a-4786-9efb-ffebb9c86937")
-		)
-		(pin "5"
-			(uuid "f4d5b031-ec1e-4e16-ba44-c8dad07ad14e")
-		)
-		(pin "8"
-			(uuid "98099c8d-7e76-427d-b3c5-cdb1defc9388")
-		)
-		(pin "13"
-			(uuid "d0c99cf5-98bb-43a3-8513-6c38c952594f")
-		)
-		(pin "9"
-			(uuid "d98347cd-75ee-4025-9696-d66ced163f4d")
-		)
-		(pin "6"
-			(uuid "cd4bbd5f-776d-4317-bdd9-695e1197d308")
-		)
-		(pin "3"
-			(uuid "afc0aa3a-66b6-4381-937e-d04063cd25ab")
-		)
-		(pin "2"
-			(uuid "da738816-7ebc-4914-89da-f8f412a6087c")
-		)
-		(pin "1"
-			(uuid "758e3f9d-4940-447a-b0fa-323e6183664e")
-		)
-		(instances
-			(project "power-board-proto"
-				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09"
-					(reference "U3")
-					(unit 3)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 182.88 157.48 0)
 		(unit 1)
@@ -6882,118 +7282,6 @@
 			(project "power-board-proto"
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09"
 					(reference "R15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 168.91 73.66 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e50a330d-95ae-4f33-84ac-9fd2b97ce841")
-		(property "Reference" "TP5"
-			(at 166.37 69.0879 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "12.0V_EN"
-			(at 166.37 71.6279 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
-			(at 163.83 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.keyelco.com/userAssets/file/K75p62.pdf"
-			(at 163.83 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point (white)"
-			(at 168.91 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor" "DigiKey"
-			(at 168.91 73.66 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer P/N" "5002"
-			(at 168.91 73.66 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor P/N" "36-5002-ND"
-			(at 168.91 73.66 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f6b768dd-dfde-438c-b7d4-ca45b200df26")
-		)
-		(instances
-			(project "power-board-proto"
-				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09"
-					(reference "TP5")
 					(unit 1)
 				)
 			)
