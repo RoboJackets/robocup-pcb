@@ -1621,33 +1621,6 @@
 		)
 		(uuid "1fa314f5-cf88-4833-a715-5eebbe770a3d")
 	)
-	(text "IMU U11 LSM6DSK320X: I2C (0x6A), INT1/INT2 INTERRUPTS"
-		(exclude_from_sim no)
-		(at 134.62 83.82 0)
-		(effects
-			(font
-				(size 2 2)
-				(thickness 0.4)
-				(bold yes)
-				(color 0 0 132 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "9ea7051f-b2bc-4f61-92c5-44b43e641138")
-	)
-	(text "ROUTING - IMU\nC48 (VDDIO pin 5), C49 (VDD pin 8): 100nF,\nas close to the pins as possible.\nCS to VDDIO = I2C. TA0, SDx, SCx to GND:\naddress 0x6A, mode 1 (DS15060 Fig. 27).\nOCS_aux/SDO_aux open. No traces or vias\nunder the package."
-		(exclude_from_sim no)
-		(at 189.23 154.94 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(bold yes)
-				(color 255 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "e60e1611-e36f-4da6-8ce3-d02a465c08cf")
-	)
 	(junction
 		(at 170.18 109.22)
 		(diameter 0)
@@ -1846,6 +1819,16 @@
 		)
 		(uuid "f5fdc9bc-2e60-4d48-b431-42ca6909f844")
 	)
+  (text "IMU U11 LSM6DSV320X: I2C (0x6A), INT1/INT2 INTERRUPTS"
+    (at 134.62 83.82 0)
+    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
+    (uuid "09929034-6f46-4f9d-906e-846a4137dee8")
+  )
+  (text "ROUTING - IMU\nC48 (VDDIO pin 5), C49 (VDD pin 8): 100nF,\nas close to the pins as possible.\nCS to VDDIO = I2C. TA0, SDx, SCx to GND:\naddress 0x6A, mode 1 (DS14623 Fig. 27).\nOCS_aux/SDO_aux open. No traces or vias\nunder the package."
+    (at 189.23 154.94 0)
+    (effects (font (size 1.27 1.27) (bold yes) (color 255 0 0 1)) (justify left bottom))
+    (uuid "04132a4f-1a76-44c1-b20c-46fc39b78d4f")
+  )
 	(symbol
 		(lib_id "power:+3V3")
 		(at 152.4 139.7 0)
@@ -2429,7 +2412,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 162.56 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -2440,7 +2423,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "100nF 16V X7R at U11 (LSM6DSV320X) VDD pin 8."
 			(at 162.56 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -2451,7 +2434,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "1276-1001-1-ND"
+			(at 162.56 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "16V X7R"
+			(at 162.56 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL05B104KO5NNNC"
 			(at 162.56 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -2476,16 +2481,7 @@
 				)
 			)
 		)
-	
-		(property "Rating" "16V X7R"
-			(at 162.56 143.51 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 152.4 143.51 0)
@@ -2530,7 +2526,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 152.4 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -2541,7 +2537,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "100nF 16V X7R at U11 (LSM6DSV320X) VDDIO pin 5."
 			(at 152.4 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -2552,7 +2548,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "1276-1001-1-ND"
+			(at 152.4 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "16V X7R"
+			(at 152.4 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL05B104KO5NNNC"
 			(at 152.4 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -2577,16 +2595,7 @@
 				)
 			)
 		)
-	
-		(property "Rating" "16V X7R"
-			(at 152.4 143.51 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:+3V3")
 		(at 162.56 139.7 0)
@@ -2685,7 +2694,7 @@
 				)
 			)
 		)
-		(property "Value" "LSM6DSK320X"
+		(property "Value" "LSM6DSV320X"
 			(at 198.12 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2706,7 +2715,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/lsm6dsk320x.pdf"
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/lsm6dsv320x.pdf"
 			(at 190.5 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -2728,7 +2737,7 @@
 				)
 			)
 		)
-		(property "MPN" "ST LSM6DSK320XTR"
+		(property "MPN" "ST LSM6DSV320XTR"
 			(at 190.5 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -2739,7 +2748,7 @@
 				)
 			)
 		)
-		(property "Vendor PN" "497-LSM6DSK320XTRCT-ND"
+		(property "Vendor PN" "511-LSM6DSV320XTR (Mouser)"
 			(at 190.5 114.3 0)
 			(hide yes)
 			(show_name no)

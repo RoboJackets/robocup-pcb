@@ -27,6 +27,26 @@ MOSI with a 2.8mm B.Cu hop next to R65, and a serpentine on its J9 run restores 
 match. Every connector, button and the DIP switch now carries pin and signal labels on the
 silkscreen ("Silkscreen labels" in §2).
 
+2026-10-04 (BOM and sourcing): every part now has an MPN, a Digi-Key part number (Mouser for
+U2 and U11), a Rating and a working datasheet link, and every line was in stock on the day
+(§14 has the stock, prices and every substitution). Changes:
+- R66 is now 0402 like R65; its MOSI routing was redone and the radio SPI lengths re-matched.
+- J1 is now a Hirose DM3AT-SF-PEJM5 (Digi-Key does not sell the XKB socket). Same contact
+  pitch and pin order; the SD lines are 1.05mm shorter and still matched within 0.7mm (§8).
+- U11 is now the LSM6DSV320X (the LSM6DSK320X was out of stock everywhere): same pins,
+  package, supply and ranges (§9). Firmware must use the DSV320X driver.
+- Out-of-stock passives were replaced (§14). C28 and C33 became 22uF 16V 0805, C35 became
+  2.2uF so the VBUS capacitance stays under the USB 10uF limit, and C38 is a 6.3V 0603 part
+  because no 10V 0603 22uF was in stock and an 0805 does not fit between U7 and R43.
+- The remaining 0805 parts are deliberate: the 22uF 16V caps (no in-stock 0603 version) and
+  R16, which stays 0805 because MOTOR_SPI_MISO runs between its pads (m25).
+- Shunts SH1-SH6 and the J13 socket SK1 are BOM-only symbols. TP1-TP21 are excluded from the
+  BOM.
+- Every passive now has a Description saying what it does and where it sits. Where a value
+  with its rating did not fit on the sheet (C1, C22, C23, C28, C31, C33, C34, C37, C38) the
+  value shows the capacitance only; the voltage and dielectric are in the Rating field, which
+  the BOM exports.
+
 **Contents**
 
 1. [Sources](#1-sources)
@@ -42,6 +62,7 @@ silkscreen ("Silkscreen labels" in §2).
 11. [Connectors](#11-connectors)
 12. [Firmware configuration](#12-firmware-configuration)
 13. [Open issues](#13-open-issues)
+14. [BOM and sourcing](#14-bom-and-sourcing)
 
 ---
 
@@ -59,7 +80,8 @@ silkscreen ("Silkscreen labels" in §2).
 | AO3401A | AOS AO3401A P-FET |
 | MF-MSMF | Bourns MF-MSMF PTC, Rev BD 06/26 |
 | SCLS264R | TI SN74AHCT125 |
-| DS15060 | ST LSM6DSK320X datasheet, Rev 1 (July 2026); DB5732 data brief Rev 1 |
+| DS15060 | ST LSM6DSK320X datasheet, Rev 1 (July 2026); DB5732 data brief Rev 1 (the original U11) |
+| DS14623 | ST LSM6DSV320X datasheet, Rev 3 (fitted U11; pin table and ranges identical to DS15060) |
 | BB2020 | American Bright BB-2020BGR-TRB |
 | ABM8 | Abracon ABM8 crystal |
 | SLVA689 | TI I2C pull-up resistor calculation |
@@ -68,7 +90,7 @@ silkscreen ("Silkscreen labels" in §2).
 | USBLC6 | ST USBLC6-2 |
 | USB 2.0 | USB 2.0 spec plus the VBUS Max Limit and Device Capacitance ECNs |
 | Type-C | USB Type-C specification |
-| XKTF-015 | microSD socket drawing |
+| XKTF-015 | microSD socket drawing (the original J1, replaced by Hirose DM3AT-SF-PEJM5) |
 | OLED326 | Adafruit 326 guide and Eagle board files (STEMMA QT and v2.1) |
 | SSD1306 | Solomon Systech SSD1306 |
 | ESP32-C5 | Espressif ESP32-C5 and ESP32-C5-WROOM datasheets |
@@ -175,8 +197,8 @@ groups:
 | Bus | Routing |
 |---|---|
 | USB D+/D- | About 23mm, F.Cu only, 90Ω pair, no vias, through U3 |
-| Radio SPI (J9) | F.Cu, 0.36mm (about 50Ω) except 0.25mm at the MCU escape. MOSI, MISO and CS have no vias. SCK leaves R65 and crosses the MOSI vertical in a 2.8mm hop on B.Cu: two vias at (86.7, 67.3) and (89.5, 67.3), each with a GND return via 1.0mm away. B.Cu references In2, which is the +3V3 plane, so a priority-6 GND region on In2 (GND_IN2_SCK_HOP, 85.6-90.6 x 66.2-69.0mm) sits under the hop. It is tied to In1 by the two return vias, so the hop also has a GND reference. No trace passes between the pads of R65/R66. All four lines pass under the J9 housing for the last ~3.5mm to its pads. Three 45° bumps (1.08mm amplitude, 3W) on the SCK run to J9 restore the length. They sit on the first straight run with room for them; the 1.1mm-pitch vertical next to the hop has none. Pin-to-pin length, counting 1.6mm per via and the series-resistor pad span (R65 1.02mm, R66 1.83mm): SCK 58.8mm, MOSI 59.6mm, MISO 58.2mm, CS 58.2mm. Every line is within 0.9mm of SCK. Rows are 2.4mm apart, verticals 1.1mm apart (3W). Pours keep 0.72mm (2W) from the lines on F.Cu/B.Cu (rule "Radio SPI pour clearance") |
-| SD (J1) | F.Cu at 0.36mm (about 50Ω) on the main runs, 0.25mm only at the MCU pins, under U1 and into the socket pads. Flow-through U1, no stubs. Copper length MCU pin to socket pad: CLK 46.1mm (including 1.0mm through R6), CMD 45.5mm, DAT0 46.2mm, DAT1 46.0mm, DAT2 46.1mm, DAT3 46.1mm (0.7mm spread). CLK and CMD carry short serpentines to match the data lines. DAT2 and DAT3 each cross CMD and CLK once on B.Cu next to the MCU (5.0mm and 3.7mm, two vias each, with a GND return via within 0.9mm of three of the four). Gaps are 0.5mm or more except at the MCU pins (0.5mm pitch), under the MCU body for DAT0/DAT1, through U1 and in the socket fan-out |
+| Radio SPI (J9) | F.Cu, 0.36mm (about 50Ω) except 0.25mm at the MCU escape. MOSI, MISO and CS have no vias. SCK leaves R65 and crosses the MOSI vertical in a 2.8mm hop on B.Cu: two vias at (86.7, 67.3) and (89.5, 67.3), each with a GND return via 1.0mm away. B.Cu references In2, which is the +3V3 plane, so a priority-6 GND region on In2 (GND_IN2_SCK_HOP, 85.6-90.6 x 66.2-69.0mm) sits under the hop. It is tied to In1 by the two return vias, so the hop also has a GND reference. No trace passes between the pads of R65/R66. All four lines pass under the J9 housing for the last ~3.5mm to its pads. Three 45° bumps (1.08mm amplitude, 3W) on the SCK run to J9 restore the length. They sit on the first straight run with room for them; the 1.1mm-pitch vertical next to the hop has none. R66 (0402, like R65) lies on the PD6 escape 4.5mm from the U2 pin, and MOSI leaves it on a 45° run straight into its vertical. Its position along the escape sets the MOSI length. Pin-to-pin length, counting 1.6mm per via and the series-resistor pad span (1.02mm for each 0402): SCK 58.8mm, MOSI 58.5mm, MISO 58.2mm, CS 58.2mm. All four are within 0.63mm. Rows are 2.4mm apart, verticals 1.1mm apart (3W). Pours keep 0.72mm (2W) from the lines on F.Cu/B.Cu (rule "Radio SPI pour clearance") |
+| SD (J1) | F.Cu at 0.36mm (about 50Ω) on the main runs, 0.25mm only at the MCU pins, under U1 and into the socket pads. Flow-through U1, no stubs. Copper length MCU pin to socket pad: CLK 45.05mm (including 1.0mm through R6), CMD 44.45mm, DAT0 45.15mm, DAT1 44.94mm, DAT2 45.05mm, DAT3 45.05mm (0.7mm spread; every line 1.05mm shorter than with the XKB socket). CLK and CMD carry short serpentines to match the data lines. DAT2 and DAT3 each cross CMD and CLK once on B.Cu next to the MCU (5.0mm and 3.7mm, two vias each, with a GND return via within 0.9mm of three of the four). Gaps are 0.5mm or more except at the MCU pins (0.5mm pitch), under the MCU body for DAT0/DAT1, through U1 and in the socket fan-out |
 | Motor SPI (J4-J8) | F.Cu only over In1 GND, daisy-chained through each connector's TVS array (flow-through). 0.36mm on the runs between connectors and back to the MCU (178mm of the bus), 0.25mm through the TVS arrays and pin escapes, where SCK and MOSI sit 0.25mm apart for about 3mm per connector |
 | Crystal | X1, C18, C19 and R12 on the top side next to PH0/PH1, GND vias at each capacitor |
 | I2C | Pull-ups at the MCU; kicker and expansion buses run as a spaced bundle to U6 and J10-J12 with TP7/TP8 inline |
@@ -271,7 +293,7 @@ Priority mode (MODE tied to VIN1). VIN1 is the powerboard rail, VIN2 the USB sid
 - While VIN1 is selected it stays tied to VOUT until PR1 drops below VREF (SLVSFG1A §7.6.1).
   With USB attached and the powerboard removed, the rail therefore sags to the switchover
   voltage first. See M7 for why this is accepted.
-- C33/C34 10uF at VIN1 (5V/3V3), C35 10uF (5V) and C36 2.2uF (3V3) at VIN2, C37/C38 22uF and
+- C33 22uF (5V) and C34 10uF (3V3) at VIN1, C35 2.2uF (5V, on VBUS: see §14) and C36 2.2uF (3V3) at VIN2, C37/C38 22uF and
   C39/C40 100nF at the outputs.
 - No diodes on the mux outputs. The TPS2116 blocks reverse current: an input is disconnected
   once VOUT exceeds it by 42mV (SLVSFG1A §7.3.4), so the powerboard rail cannot back-feed USB
@@ -371,7 +393,9 @@ needed (m9).
 - VCAP pins 71 and 106 are joined with C22 and C23 2.2µF (X7R ±10%, ≥6.3V, ESR under 100mΩ).
   DS13313 Table 14 note 3 treats the VCAP pins as one node, and the Nucleo ties them. KiCad
   ERC flags the tie because the symbol types both pins as power output (m21).
-- Each decoupling capacitor has a text label naming its pin; place it beside that pin.
+- Each decoupling capacitor has a text label naming its pin. On the board the 100nF parts were
+  placed with a different reference-to-pin pairing (m26); every supply pin still has its own
+  100nF, and each capacitor's Description gives both its schematic group and its board pin.
 - Layout: the 100nF caps sit on B.Cu directly behind their VDD/VSS pin pair, each with its own
   +3V3 via (to the In2 plane) and GND via (to In1). The middle of the QFP is left clear. The
   +3V3 plane makes the 1uF and bulk parts pin-independent, so they sit on B.Cu just outside
@@ -478,10 +502,12 @@ must not add their own pull-ups.
 
 ## 8. SD card
 
-- J1 XKTF-015-N microSD socket on the custom `ControlBoard2027:XKB_XKTF-015-N` footprint.
-  SH is tied to GND. The card-detect terminal (pin 9) is left unconnected: the drawing does
-  not give the detect return path, and that path likely runs through the shell. Firmware
-  finds a card by initialising it.
+- J1 Hirose DM3AT-SF-PEJM5 push-push microSD socket (KiCad library footprint
+  `Connector_Card:microSD_HC_Hirose_DM3AT-SF-PEJM5`). It replaced the XKB XKTF-015-N, which
+  Digi-Key does not sell. The two have the same 1.1mm contact pitch and pin order, so the socket
+  sits 1.05mm further from the board edge than the XKB did and the eight fan-out stubs simply
+  got shorter. SH is tied to GND. The card-detect switch (pads 9/10) is unused; firmware finds a
+  card by initialising it.
 - R1-R5 47k pull-ups on DAT0-3 and CMD, inside the SD range of 10-100k. Idle high is at
   least 2.79V against the card's 2.06V and the MCU's 2.31V input thresholds. CLK has none.
 - R6 30Ω in series with SDMMC_CK at the MCU (PC12), an initial clock-damping value.
@@ -511,15 +537,21 @@ must not add their own pull-ups.
   with no stubs, matched within 0.7mm (table in §2). DAT2 and DAT3 must cross CMD and CLK
   between the MCU pin order and the socket pin order; each does so with one short B.Cu hop
   beside the MCU (5.0mm and 3.7mm, two vias each). The pull-ups R1-R5 sit in line on their
-  traces. J1 sits 2.5mm in from its first position so the socket body ends 0.55mm inside the
-  board edge.
+  traces. The DM3AT body is longer than the XKB's, so J1 sits with its courtyard on the board
+  edge; the card slot opens at the edge. The +3V3 (pad 4) and GND (pad 6) vias moved under the
+  socket body, 1.45mm east of the pad row, next to C2 on the back.
 
 ---
 
 ## 9. IMU, DIP switch and buttons
 
-### U11 LSM6DSK320X
-ST LSM6DSK320XTR in LGA-14L 2.5 x 3.0mm, which replaces the BMI088. It combines a low-g accelerometer
+### U11 LSM6DSV320X
+ST LSM6DSV320XTR in LGA-14L 2.5 x 3.0mm, which replaces the BMI088. The design started with the
+LSM6DSK320X; it was out of stock at Digi-Key and Mouser on 2026-10-04, so U11 is its sibling the
+LSM6DSV320X (Mouser 511-LSM6DSV320XTR). DS14623 and DS15060 have the same pin figure and Table 2
+word for word, the same supply ranges and the same full scales. The DSK adds ST's enhanced
+vibration immunity, which the DSV does not claim. Firmware: check the WHO_AM_I value and any
+register differences between the two datasheets. It combines a low-g accelerometer
 (±16g), a high-g accelerometer (±32 to ±320g) and a ±4000dps gyroscope. The high-g channel captures
 collisions and kicks that saturate a ±16g part.
 
@@ -685,7 +717,7 @@ and footprints exist in KiCad 10. 2.54mm headers came loose in competition (radi
   assignment; PG15 (pin 132) is now unconnected. R65 (SCK) and R66 (MOSI) 30Ω sit in series
   at the MCU end. SCK crosses MOSI with a 2.8mm B.Cu hop beside R65, with a GND return via
   at each signal via and a GND region on In2 under the hop. No line passes between the pads
-  of a resistor. Every SPI line is within 0.9mm of SCK on this board (§2);
+  of a resistor. All four SPI lines are within 0.63mm on this board (§2);
   the cable and the radio board add their own mismatch.
 - R29 10k ESP_SPI_CS pull-up to +3V3 keeps the radio deselected while PB5 floats at reset.
 - R31/R32 100k pull-downs on HANDSHAKE/DATA_READY stop false interrupts with the radio absent or
@@ -764,8 +796,8 @@ clocking (AN2606 Table 111), so DFU does not depend on these settings.
 | PE1 (pin 142) | ESP_RST | Open drain, init released | ESP EN pull-up is on the radio board; never drive high (was PB7) |
 | PB6 (pin 136) | ESP_HANDSHAKE | EXTI rising | R31 pull-down (was PB5) |
 | PB7 (pin 137) | ESP_DATA_READY | EXTI rising | R32 pull-down (was PB6) |
-| PF3 | ACCEL_EXTI | EXTI rising | LSM6DSK320X INT1 (push-pull, active high by default) |
-| PF2 | GYRO_EXTI | EXTI rising | LSM6DSK320X INT2 (push-pull, active high by default) |
+| PF3 | ACCEL_EXTI | EXTI rising | LSM6DSV320X INT1 (push-pull, active high by default) |
+| PF2 | GYRO_EXTI | EXTI rising | LSM6DSV320X INT2 (push-pull, active high by default) |
 | PE4, PC13, PC14 | USER_EXTI0-2 | EXTI falling | Buttons pull low; ~1ms RC debounce. V0.3 uses rising |
 | PF7-PF10, PC0, PC1 | DIP0-5 | Input | R53-R58 pull-ups; closed = 0 |
 | PA4, PG7, PG15 | (unused) | Analog | Were PWR_FAULT, SD_DETECT and ESP_SPI_CS; all removed |
@@ -820,13 +852,13 @@ a bottom view, mirror the pads left-right.
 lands at 100MHz, below the 192MHz minimum. Apply the clock tree in §12.
 
 **C3 Footprints, MPNs and ratings.** Partly resolved: every part now has a footprint, the bulk
-capacitors carry voltage and dielectric in their values (C42 22uF 16V, C28 22uF 10V, C30 2.2uF 16V,
+capacitors carry voltage and dielectric in their values (C42 22uF 16V, C28 22uF 16V, C30 2.2uF 16V,
 all X5R; C36 2.2uF 10V X7R). A "Rating" field carries the rest: every 100nF is 16V X7R,
 C18/C19 are 50V C0G, and the resistors that set thresholds or time constants (R20/R21,
 R36-R41, R59-R64) are 1%. U10 carries
 the SN74AHCT125DR MPN (the SOIC-14 that matches its footprint; the PW TSSOP part does not fit and
 the D tube option is obsolete). J3 is Samtec TSW-105-07-G-S; J4-J8 and J10-J12 have Digi-Key PNs.
-Still open: no MPN on D7-D11 or J13, and the generic passives have no MPN or vendor PN.
+Resolved 2026-10-04: every fitted part has an MPN, a Digi-Key PN and a datasheet link (§14).
 
 ### Major
 
@@ -923,7 +955,7 @@ outline on the silkscreen crosses the pads of R34 (the fab clips silkscreen on p
   SCK (R30 pull-down), so no SPI frame arrives and DFU still answers on USB.
 - **m14** J3 has no protection against a 5V mis-plug; the SWD series resistors have been removed.
 - **m15** Resolved: all switches are through-hole (APEM MJTP1243 buttons SW1/SW2/SW4-SW6, CTS 209-6MS DIP SW3) with MPNs set.
-- **m16** The LSM6DSK320X has no reset pin. Firmware uses the SW_RESET/BOOT bits after a brown-out and runs I2C bus recovery.
+- **m16** The LSM6DSV320X has no reset pin. Firmware uses the SW_RESET/BOOT bits after a brown-out and runs I2C bus recovery.
 - **m17** AN2867, RM0468 and AN4879 were not available from st.com. VBUS is read as a GPIO, so the
   OTG threshold is not needed.
 - **m18** No USB inrush limit. Over 100µF charges straight from VBUS at attach, against the 10µF
@@ -943,3 +975,65 @@ outline on the silkscreen crosses the pads of R34 (the fab clips silkscreen on p
   U3, U1 and D1 still clamp the pins.
 - **m24** No fault reporting: a tripped F1/F3-F6 is only visible as a missing rail
   (PWR_SRC low or a dead connector supply).
+- **m25** MOTOR_SPI_MISO runs between the pads of R16 (0805, MOTOR_SPI_MOSI termination),
+  against the layout rule of no traces between a part's pads. It predates the 2026-10-04 BOM
+  work and passes DRC. An 0402 R16 was tried and left the trace in the same place, so R16 stays
+  0805. Fix by re-routing MISO round R16 if the motor SPI area is reworked.
+- **m26** The MCU 100nF decoupling capacitors pair with different pins in the schematic labels
+  than on the board (for example C3 is labelled VDD p144 but sits behind pin 6). All of them
+  are on +3V3 and every supply pin, VDDA and VREF+ included, has its own 100nF beside it, so the
+  circuit is the same. The pairing is listed in each capacitor's Description.
+
+---
+
+## 14. BOM and sourcing
+
+Fields: `MPN` (maker and part number), `Vendor PN` (Digi-Key cut-tape PN; Mouser for U2 and U11),
+`Rating` (voltage and dielectric for capacitors, tolerance for resistors), `Datasheet` and
+`Description` (what the part does and where it sits).
+Export the BOM with these columns. Selection rule: in stock first, then lowest price. Stock was read
+live from Digi-Key's (and Mouser's) product pages on 2026-10-04. "Sufficient" means at least 1,000
+in stock and 50 boards' worth for passives, at least 200 and 50 boards for everything else. Every line
+passed except U11 (22 at Mouser, the only same-spec IMU in stock anywhere). Re-check in the
+distributor's BOM tool before ordering: stock changes daily.
+
+BOM-only items (symbols with "exclude from board"): SH1-SH6, the six jumper shunts (Samtec
+SNT-100-BK-G, SAM8858-ND), and SK1, the J13 1x8 female socket (Sullins PPTC081LFBN-RC, S7006-ND).
+TP1-TP21 are bare pads and are marked "exclude from BOM".
+
+Parts changed on 2026-10-04 because the first choice was out of stock (price at qty 1):
+
+| Refs | Was | Now | Digi-Key / Mouser | Stock | Price |
+|---|---|---|---|---|---|
+| J1 | XKB XKTF-015-N (LCSC only) | Hirose DM3AT-SF-PEJM5 | HR1964CT-ND | 82,027 | $3.55 (was about $0.20 at LCSC) |
+| U11 | ST LSM6DSK320XTR (0 at both) | ST LSM6DSV320XTR | Mouser 511-LSM6DSV320XTR | 22 (25,000 on order) | $10.06 (was $9.17) |
+| U2 | Digi-Key 497-STM32H723ZGT6-ND (0) | same part from Mouser | Mouser 511-STM32H723ZGT6 | 657 | $14.65 (same) |
+| C1 C5 C32 C34 | Yageo CC0603KRX5R6BB106 (0) | Taiyo Yuden LMK107BBJ106MALT, 10uF 10V X5R ±20% | 587-3258-1-ND | 142,035 | $0.15 (was $0.36) |
+| C7 C11 C31 | Samsung CL10A475KO8NNNC (0) | TDK C1608X5R1C475K080AC, 4.7uF 16V X5R | 445-7478-1-ND | 226,880 | $0.25 (was $0.14) |
+| C28 | Samsung CL10A226MP8NUNE 0603 (0) | Samsung CL21A226MOQNNNE, 22uF 16V 0805 (footprint now 0805) | 1276-2909-1-ND | 119,157 | $0.32 (was $0.19) |
+| C38 | Samsung CL10A226MP8NUNE (0) | Taiyo Yuden JMK107BBJ226MA-T, 22uF 6.3V X5R 0603 (no 10V 0603 22uF in stock; 0805 does not fit between U7 and R43) | 587-5444-1-ND | 1,384 | $0.25 (was $0.19) |
+| C33 | Yageo CC0805KKX5R7BB106 10uF (0) | Samsung CL21A226MOQNNNE 22uF 16V 0805 (same line as C28/C37/C42) | 1276-2909-1-ND | 119,157 | $0.32 (was $0.56) |
+| C35 | Yageo 10uF 16V 0805 (0) | Samsung CL21B225KOFNNNE, 2.2uF 16V X7R 0805 (VBUS limit, see below) | 1276-1162-1-ND | 71,758 | $0.15 (was $0.56) |
+| R6 R15 R65 R66 | Yageo 30.1R (0) | Stackpole RMCF0402FT30R0, 30.0R 1% | RMCF0402FT30R0CT-ND | 59,815 | $0.10 (same) |
+| R12 | Yageo RC0402JR-070RL (0) | Stackpole RMCF0402ZT0R00 | RMCF0402ZT0R00CT-ND | 7,380,694 | $0.10 (same) |
+
+Unchanged lines and their live stock: 100nF CL05B104KO5NNNC 5,247 (31 per board); 12pF 9,138;
+2.2uF X7R 4,095; 1uF 287,590; 2.2uF 16V 163,848; TVS0500 37,002; BZX384-C10 2,615; APT1608EC
+210,662; BB-2020BGR 1,099; MF-MSMF075 1,904; MF-MSMF125 1,495; USB4110 142,346; JST and Samtec
+headers 1,520 to 52,422; MJTP1243 1,089; 209-6MS 1,052; Adafruit 326 1,130; AP7361C 2,375;
+TPS2116 87,169; SN74AHCT125 7,084; TPD4E05U06 340,367; TPD6E05U06 38,412; USBLC6 147,782;
+ABM8 6,272; all Yageo/Panasonic/Vishay resistors over 5,000.
+
+BOM audit (2026-10-04, independent review), dispositions:
+- Fixed: Yageo RC datasheet links (pointed at Samsung's RC series) now link the Digi-Key product
+  page; R21 links the e3 CRCW datasheet; C30 and U3 descriptions corrected.
+- Fixed: shunts and the J13 socket are BOM lines; test points are out of the BOM.
+- Fixed: VBUS capacitance. C35 is now 2.2uF, so C30 + C31 + C35 = 9.1uF nominal, inside the USB
+  10uF limit even before DC bias (TI asks for 1uF at the TPS2116 input). With J16 in the
+  USB-direct recovery position, the +5V rail caps (C37, C42 and the decoupling) still sit on VBUS:
+  that position is for fault recovery only, not normal USB use.
+- Rejected: "F5 is undersized." The +5V budget is the DotStar cap (250mA) plus the 0.55A combined
+  J11/J12 allocation, 0.8A against F5's 0.95A hold at 50C (§3, M3). A larger F5 would no longer
+  trip below the TPS2116's 2.5A rating.
+- The Adafruit 326 selects SPI or I2C with two solder jumpers on its back. Check they are set
+  for I2C before fitting J13.

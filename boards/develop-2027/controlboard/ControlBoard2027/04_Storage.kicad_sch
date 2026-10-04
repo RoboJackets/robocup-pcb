@@ -2637,16 +2637,44 @@
 		)
 		(uuid "f421389e-e4fd-4b97-aa22-56bcd9cc5e5f")
 	)
-	(text "SD CARD: select an actual card MPN before final timing approval.\nKingston SDCIT example: identification clock <=400 kHz, NOT 8 MHz.\nHigher transfer rates require successful initialization and timing validation.\nShell is floating; DET unused; power cannot be cycled independently.\nCard recovery and shell/ESD treatment remain verification items."
+	(text "SD ESD U1 AT J1, CLK TEST POINT"
 		(exclude_from_sim no)
-		(at 192.278 151.892 0)
+		(at 158.75 184.15 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 132 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "0fe1f8af-97d2-44e8-8daa-dcd39ecf62e7")
+	)
+	(text "MICROSD J1 ON SDMMC1 4-BIT (NO CARD DETECT)"
+		(exclude_from_sim no)
+		(at 59.69 83.82 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 132 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "94ddc2ca-f7f9-4e84-918a-80ae31149b7b")
+	)
+	(text "R6 = 30R provisional CLK source damping near PC12.\nCMD and DAT0-3 currently have no series damping; check both directions.\n47k pull-ups are bias, not impedance termination.\nNo data sheet establishes a constant 25R MCU output impedance."
+		(exclude_from_sim no)
+		(at 59.69 175.26 0)
 		(effects
 			(font
 				(size 1.1 1.1)
 			)
 			(justify left bottom)
 		)
-		(uuid "c516eeb5-d9c3-4c3a-af37-3d9b9b962886")
+		(uuid "d8d986e7-f7d3-4da5-8863-8932fce095f4")
 	)
 	(junction
 		(at 83.82 113.03)
@@ -2973,6 +3001,16 @@
 		(uuid "ff60dc87-e35f-4952-8e13-2b6b06c17d2c")
 	)
 	(label "SDMMC_D3"
+		(at 195.58 228.6 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0e4947e5-c065-4405-b0bf-11833495c0da")
+	)
+	(label "SDMMC_D3"
 		(at 195.58 203.2 90)
 		(effects
 			(font
@@ -2991,6 +3029,16 @@
 			(justify left bottom)
 		)
 		(uuid "4badbe5b-ec56-4b9e-ad83-e832457a35c3")
+	)
+	(label "SDMMC_D0"
+		(at 210.82 228.6 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "57ed1569-545f-4fce-a60b-5391c19a9ff9")
 	)
 	(label "SDMMC_CMD"
 		(at 200.66 203.2 90)
@@ -3032,6 +3080,26 @@
 		)
 		(uuid "8e22cfba-e718-43b3-a9be-dac6b0c507a5")
 	)
+	(label "SDMMC_CMD"
+		(at 200.66 228.6 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "99e8c286-391a-4c26-9436-93d303e1b088")
+	)
+	(label "SDMMC_D2"
+		(at 190.5 228.6 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9f269112-706f-4507-a67e-850354ac6209")
+	)
 	(label "SDMMC_D2"
 		(at 190.5 203.2 90)
 		(effects
@@ -3042,6 +3110,16 @@
 		)
 		(uuid "b3e80a59-04f3-42f4-b9bb-9bb982cde715")
 	)
+	(label "SD_CLK_CARD"
+		(at 205.74 228.6 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e84a3cbe-035f-4026-8af2-5ba426ccb7c6")
+	)
 	(label "SDMMC_D1"
 		(at 215.9 203.2 90)
 		(effects
@@ -3051,6 +3129,16 @@
 			(justify left bottom)
 		)
 		(uuid "f977ee3d-e60d-48f3-8cbe-885db0ee379d")
+	)
+	(label "SDMMC_D1"
+		(at 215.9 228.6 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fbd0dfc3-1865-43a5-9d9c-6221487e93b2")
 	)
 	(hierarchical_label "SDMMC_D3"
 		(shape bidirectional)
@@ -3118,25 +3206,15 @@
 		)
 		(uuid "e05bf707-f789-4369-aee4-3be5e93ae4d7")
 	)
-  (text "R6 = 30R provisional CLK source damping near PC12.\nCMD and DAT0-3 currently have no series damping; check both directions.\n47k pull-ups are bias, not impedance termination.\nNo data sheet establishes a constant 25R MCU output impedance."
-    (at 59.69 175.26 0)
-    (effects (font (size 1.1 1.1)) (justify left bottom))
-    (uuid "d8d986e7-f7d3-4da5-8863-8932fce095f4")
-  )
-  (text "SD ESD U1 AT J1, CLK TEST POINT"
-    (at 158.75 184.15 0)
-    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
-    (uuid "0fe1f8af-97d2-44e8-8daa-dcd39ecf62e7")
-  )
-  (text "MICROSD J1 ON SDMMC1 4-BIT (NO CARD DETECT)"
-    (at 59.69 83.82 0)
-    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
-    (uuid "94ddc2ca-f7f9-4e84-918a-80ae31149b7b")
-  )
-  (text "SDMMC LAYOUT: review CLK, CMD and DAT0-3 as one timing interface.\nRouted ~50R over In1 GND; CLK/CMD/DAT0-3 matched 45.5-46.2 mm incl. R6.\nKeep return paths continuous, short stubs and local J1 bypass capacitors.\nUse DS13313 SDMMC timing plus the selected card's data sheet."
+  (text "SDMMC LAYOUT: review CLK, CMD and DAT0-3 as one timing interface.\nRouted ~50R over In1 GND; CLK/CMD/DAT0-3 matched 44.4-45.2 mm incl. R6.\nKeep return paths continuous, short stubs and local J1 bypass capacitors.\nUse DS13313 SDMMC timing plus the selected card's data sheet."
     (at 189.23 171.45 0)
     (effects (font (size 1.1 1.1)) (justify left bottom))
-    (uuid "9ccabccd-a724-437a-be78-4070028fae0f")
+    (uuid "989e5bc9-2128-4c0a-879e-95106fed5a07")
+  )
+  (text "SD CARD: select an actual card MPN before final timing approval.\nKingston SDCIT example: identification clock <=400 kHz, NOT 8 MHz.\nHigher transfer rates require successful initialization and timing validation.\nJ1 Hirose DM3AT-SF-PEJM5. Shell to GND; DET unused; power cannot be cycled independently.\nCard recovery and shell/ESD treatment remain verification items."
+    (at 192.278 151.892 0)
+    (effects (font (size 1.1 1.1)) (justify left bottom))
+    (uuid "a5bce295-976a-4ba8-b26b-8312225c8510")
   )
 	(symbol
 		(lib_id "power:GND")
@@ -3391,7 +3469,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF 10V X5R"
+		(property "Value" "10uF"
 			(at 158.115 167.64 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3413,7 +3491,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/taiyo-yuden/LMK107BBJ106MALT/3662195"
 			(at 157.48 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -3424,7 +3502,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "10uF 10V X5R bulk on the microSD card supply (+3V3) at J1 pin 4."
 			(at 157.48 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -3435,7 +3513,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "587-3258-1-ND"
+			(at 157.48 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Taiyo Yuden LMK107BBJ106MALT"
+			(at 157.48 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "10V X5R 20%"
 			(at 157.48 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -3580,7 +3680,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0747KL/729563"
 			(at 83.82 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -3591,7 +3691,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "47k 1% pull-up to +3V3 on SDMMC_DAT2, within the SD-spec 10-100k range (DESIGN_NOTES §8)."
 			(at 83.82 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -3602,8 +3702,30 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "311-47.0KLRCT-ND"
 			(at 83.82 96.52 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Yageo RC0402FR-0747KL"
+			(at 83.82 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 83.82 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3634,7 +3756,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -3911,7 +4033,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0747KL/729563"
 			(at 83.82 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -3922,7 +4044,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "47k 1% pull-up to +3V3 on SDMMC_DAT1, within the SD-spec 10-100k range (DESIGN_NOTES §8)."
 			(at 83.82 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -3933,8 +4055,30 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "311-47.0KLRCT-ND"
 			(at 83.82 160.02 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Yageo RC0402FR-0747KL"
+			(at 83.82 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 83.82 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3991,7 +4135,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "ControlBoard2027:XKB_XKTF-015-N"
+		(property "Footprint" "Connector_Card:microSD_HC_Hirose_DM3AT-SF-PEJM5"
 			(at 157.48 127 0)
 			(hide yes)
 			(show_name no)
@@ -4002,7 +4146,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2110151630_XKB-Connectivity-XKTF-015-N_C381082.pdf"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/hirose-electric-co-ltd/DM3AT-SF-PEJM5/2533565"
 			(at 157.48 127 0)
 			(hide yes)
 			(show_name no)
@@ -4013,7 +4157,7 @@
 				)
 			)
 		)
-		(property "Description" "microSD push-push (XKTF-015). Shield left floating and card detect not used (firmware detects the card by initialising it). Needs a custom footprint."
+		(property "Description" "microSD push-push socket, Hirose DM3AT-SF-PEJM5. Shield to GND. Card detect (pads 9/10) not used: firmware detects the card by initialising it."
 			(at 157.48 127 0)
 			(hide yes)
 			(show_name no)
@@ -4024,7 +4168,7 @@
 				)
 			)
 		)
-		(property "MPN" "XKB XKTF-015-N"
+		(property "MPN" "Hirose DM3AT-SF-PEJM5"
 			(at 157.48 127 0)
 			(hide yes)
 			(show_name no)
@@ -4035,7 +4179,7 @@
 				)
 			)
 		)
-		(property "Footprint_Source" "datasheets/XKTF-015-X.pdf (recommended PCB layout); LCSC C381082 EasyEDA model 338023942c854de68c5324f8a6f8127e cross-check"
+		(property "Footprint_Source" "KiCad standard library Connector_Card:microSD_HC_Hirose_DM3AT-SF-PEJM5"
 			(at 157.48 127 0)
 			(hide yes)
 			(show_name no)
@@ -4046,7 +4190,7 @@
 				)
 			)
 		)
-		(property "Vendor PN" "C381082 (LCSC)"
+		(property "Vendor PN" "HR1964CT-ND"
 			(at 157.48 127 0)
 			(hide yes)
 			(show_name no)
@@ -4140,7 +4284,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 167.64 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -4151,7 +4295,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "100nF 16V X7R on the microSD card supply at J1 pin 4, on the back under the socket."
 			(at 167.64 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -4162,7 +4306,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "1276-1001-1-ND"
+			(at 167.64 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "16V X7R"
+			(at 167.64 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL05B104KO5NNNC"
 			(at 167.64 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -4187,16 +4353,7 @@
 				)
 			)
 		)
-	
-		(property "Rating" "16V X7R"
-			(at 167.64 165.1 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:+3V3")
 		(at 83.82 105.41 0)
@@ -4470,7 +4627,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0747KL/729563"
 			(at 83.82 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -4481,7 +4638,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "47k 1% pull-up to +3V3 on SDMMC_DAT0, within the SD-spec 10-100k range (DESIGN_NOTES §8)."
 			(at 83.82 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -4492,8 +4649,30 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "311-47.0KLRCT-ND"
 			(at 83.82 147.32 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Yageo RC0402FR-0747KL"
+			(at 83.82 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 83.82 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4637,7 +4816,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0747KL/729563"
 			(at 83.82 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -4648,7 +4827,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "47k 1% pull-up to +3V3 on SDMMC_DAT3, within the SD-spec 10-100k range (DESIGN_NOTES §8)."
 			(at 83.82 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -4659,8 +4838,30 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "311-47.0KLRCT-ND"
 			(at 83.82 109.22 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Yageo RC0402FR-0747KL"
+			(at 83.82 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 83.82 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4727,7 +4928,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0747KL/729563"
 			(at 83.82 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -4738,7 +4939,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "47k 1% pull-up to +3V3 on SDMMC_CMD, within the SD-spec 10-100k range (DESIGN_NOTES §8)."
 			(at 83.82 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -4749,8 +4950,30 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "311-47.0KLRCT-ND"
 			(at 83.82 121.92 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Yageo RC0402FR-0747KL"
+			(at 83.82 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 83.82 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4847,6 +5070,83 @@
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/3bd2a0be-2830-4496-a16c-53a27fc2ce56"
 					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 177.8 139.7 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d7a957b4-131f-408e-98e4-45b5ef41c079")
+		(property "Reference" "#PWR0165"
+			(at 177.8 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 177.8 143.51 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 177.8 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 177.8 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f78d425f-2f58-4441-b62d-ab2c2a7280b8")
+		)
+		(instances
+			(project "ControlBoard2027"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/3bd2a0be-2830-4496-a16c-53a27fc2ce56"
+					(reference "#PWR0165")
 					(unit 1)
 				)
 			)
@@ -5031,7 +5331,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.st.com/resource/en/application_note/an5419-getting-started-with-stm32h723733-stm32h725735-and-stm32h730-mcu-hardware-development-stmicroelectronics.pdf"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0402FT30R0/6266687"
 			(at 97.79 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -5053,8 +5353,30 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "RMCF0402FT30R0CT-ND"
 			(at 97.79 138.43 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Stackpole RMCF0402FT30R0"
+			(at 97.79 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 97.79 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5156,141 +5478,4 @@
 			)
 		)
 	)
-
-	(label "SDMMC_D2"
-		(at 190.5 228.6 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "9f269112-706f-4507-a67e-850354ac6209")
-	)
-	(label "SDMMC_D3"
-		(at 195.58 228.6 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "0e4947e5-c065-4405-b0bf-11833495c0da")
-	)
-	(label "SDMMC_CMD"
-		(at 200.66 228.6 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "99e8c286-391a-4c26-9436-93d303e1b088")
-	)
-	(label "SD_CLK_CARD"
-		(at 205.74 228.6 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e84a3cbe-035f-4026-8af2-5ba426ccb7c6")
-	)
-	(label "SDMMC_D0"
-		(at 210.82 228.6 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "57ed1569-545f-4fce-a60b-5391c19a9ff9")
-	)
-	(label "SDMMC_D1"
-		(at 215.9 228.6 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "fbd0dfc3-1865-43a5-9d9c-6221487e93b2")
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 177.8 139.7 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d7a957b4-131f-408e-98e4-45b5ef41c079")
-		(property "Reference" "#PWR0165"
-			(at 177.8 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 177.8 143.51 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 177.8 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 177.8 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 177.8 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f78d425f-2f58-4441-b62d-ab2c2a7280b8")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/3bd2a0be-2830-4496-a16c-53a27fc2ce56"
-					(reference "#PWR0165")
-					(unit 1)
-				)
-			)
-		)
-	))
+)

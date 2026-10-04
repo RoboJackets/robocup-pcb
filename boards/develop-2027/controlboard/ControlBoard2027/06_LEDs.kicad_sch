@@ -1440,6 +1440,72 @@
 		)
 		(uuid "6dd9aa3e-712a-43e5-8058-0993a8b05c95")
 	)
+	(text "LED LEVEL SHIFT: U10 = SN74AHCT125, specified for VCC 4.5-5.5 V.\n3.3 V logic satisfies TTL input levels at a valid U10 supply.\nR47/R48 = 100k bias inputs low; unused gates disabled.\nD7-D11 = American Bright BB-2020BGR-TRB; use its data sheet/pad drawing.\nA muxed USB source does NOT guarantee >=4.5 V after all cable/fuse drops.\nFirmware current caps are requirements, not evidence of implemented limits.\nVerify LED startup/current, power budget and custom footprints.\nTP18/19 check chain input; TP20/21 check chain output."
+		(exclude_from_sim no)
+		(at 297.18 252.73 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left bottom)
+		)
+		(uuid "29c1d41c-dbaf-48a1-94b6-7d1859f225bd")
+	)
+	(text "LEVEL SHIFT U10 (3.3V SPI TO 5V)"
+		(exclude_from_sim no)
+		(at 50.8 95.25 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 132 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "91ed53bf-233f-4dc5-b2e5-9d313ae26222")
+	)
+	(text "U10 SPARE GATES"
+		(exclude_from_sim no)
+		(at 40.64 229.87 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 132 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "959c1ae4-d6e0-4110-be18-2714a14bbc1c")
+	)
+	(text "DOTSTAR CHAIN D7-D11 AND DECOUPLING"
+		(exclude_from_sim no)
+		(at 116.84 139.7 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 132 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "a74d4f62-8248-4291-aa18-a2fb085a2e6c")
+	)
+	(text "ROUTING - DOTSTARS\nU10 -> D7 CLK/DATA short and routed together, over GND.\nLED-to-LED CO->CI and DO->DI as matched pairs.\nC43-C47 at each LED VDD pin. C42 where +5V enters the chain.\nLEDs in the 5-dot shell pattern."
+		(exclude_from_sim no)
+		(at 199.39 149.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(bold yes)
+				(color 255 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "d52f576b-7090-4129-bb69-8aec897a2f17")
+	)
 	(junction
 		(at 152.4 195.58)
 		(diameter 0)
@@ -1974,31 +2040,6 @@
 		)
 		(uuid "e942c53e-f5fb-4318-9c42-cc9460a5573a")
 	)
-  (text "DOTSTAR CHAIN D7-D11 AND DECOUPLING"
-    (at 116.84 139.7 0)
-    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
-    (uuid "a74d4f62-8248-4291-aa18-a2fb085a2e6c")
-  )
-  (text "U10 SPARE GATES"
-    (at 40.64 229.87 0)
-    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
-    (uuid "959c1ae4-d6e0-4110-be18-2714a14bbc1c")
-  )
-  (text "ROUTING - DOTSTARS\nU10 -> D7 CLK/DATA short and routed together, over GND.\nLED-to-LED CO->CI and DO->DI as matched pairs.\nC43-C47 at each LED VDD pin. C42 where +5V enters the chain.\nLEDs in the 5-dot shell pattern."
-    (at 199.39 149.86 0)
-    (effects (font (size 1.27 1.27) (bold yes) (color 255 0 0 1)) (justify left bottom))
-    (uuid "d52f576b-7090-4129-bb69-8aec897a2f17")
-  )
-  (text "LEVEL SHIFT U10 (3.3V SPI TO 5V)"
-    (at 50.8 95.25 0)
-    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
-    (uuid "91ed53bf-233f-4dc5-b2e5-9d313ae26222")
-  )
-  (text "LED LEVEL SHIFT: U10 = SN74AHCT125, specified for VCC 4.5-5.5 V.\n3.3 V logic satisfies TTL input levels at a valid U10 supply.\nR47/R48 = 100k bias inputs low; unused gates disabled.\nD7-D11 = American Bright BB-2020BGR-TRB; use its data sheet/pad drawing.\nA muxed USB source does NOT guarantee >=4.5 V after all cable/fuse drops.\nFirmware current caps are requirements, not evidence of implemented limits.\nVerify LED startup/current, power budget and custom footprints.\nTP18/19 check chain input; TP20/21 check chain output."
-    (at 297.18 252.73 0)
-    (effects (font (size 1.1 1.1)) (justify left bottom))
-    (uuid "29c1d41c-dbaf-48a1-94b6-7d1859f225bd")
-  )
 	(symbol
 		(lib_id "Device:R")
 		(at 74.93 161.29 0)
@@ -2041,7 +2082,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-07100KL/729473"
 			(at 74.93 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -2063,8 +2104,30 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "311-100KLRCT-ND"
 			(at 74.93 161.29 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Yageo RC0402FR-07100KL"
+			(at 74.93 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 74.93 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2287,7 +2350,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 213.36 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -2298,7 +2361,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "100nF 16V X7R decoupling for DotStar LED D9 on +5V, beside its VDD pin."
 			(at 213.36 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -2309,7 +2372,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "1276-1001-1-ND"
+			(at 213.36 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "16V X7R"
+			(at 213.36 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL05B104KO5NNNC"
 			(at 213.36 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -2334,16 +2419,7 @@
 				)
 			)
 		)
-	
-		(property "Rating" "16V X7R"
-			(at 213.36 213.36 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 152.4 217.17 0)
@@ -2427,7 +2503,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -2629,7 +2705,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 274.32 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -2640,7 +2716,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "100nF 16V X7R decoupling for DotStar LED D11 on +5V, beside its VDD pin."
 			(at 274.32 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -2651,7 +2727,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "1276-1001-1-ND"
+			(at 274.32 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "16V X7R"
+			(at 274.32 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL05B104KO5NNNC"
 			(at 274.32 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -2676,16 +2774,7 @@
 				)
 			)
 		)
-	
-		(property "Rating" "16V X7R"
-			(at 274.32 213.36 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "LED:APA102-2020")
 		(at 243.84 180.34 0)
@@ -2741,7 +2830,7 @@
 				)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "DotStar RGB LED 4 of 5, BB-2020BGR-TRB (APA102-2020 compatible) on +5V, fed from D9 (DESIGN_NOTES §10)."
 			(at 243.84 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -2753,6 +2842,17 @@
 			)
 		)
 		(property "Vendor PN" "2007-BB-2020BGR-TRBCT-ND"
+			(at 243.84 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "American Bright BB-2020BGR-TRB"
 			(at 243.84 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -3551,7 +3651,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-07100KL/729473"
 			(at 74.93 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -3573,8 +3673,30 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "311-100KLRCT-ND"
 			(at 74.93 184.15 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Yageo RC0402FR-07100KL"
+			(at 74.93 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 74.93 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3643,7 +3765,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 182.88 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -3654,7 +3776,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "100nF 16V X7R decoupling for DotStar LED D8 on +5V, beside its VDD pin."
 			(at 182.88 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -3665,7 +3787,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "1276-1001-1-ND"
+			(at 182.88 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "16V X7R"
+			(at 182.88 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL05B104KO5NNNC"
 			(at 182.88 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -3690,16 +3834,7 @@
 				)
 			)
 		)
-	
-		(property "Rating" "16V X7R"
-			(at 182.88 213.36 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:+5V")
 		(at 121.92 209.55 0)
@@ -4014,7 +4149,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -4150,7 +4285,7 @@
 				)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "DotStar RGB LED 5 of 5, BB-2020BGR-TRB (APA102-2020 compatible) on +5V, fed from D10; end of the chain (DESIGN_NOTES §10)."
 			(at 274.32 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -4162,6 +4297,17 @@
 			)
 		)
 		(property "Vendor PN" "2007-BB-2020BGR-TRBCT-ND"
+			(at 274.32 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "American Bright BB-2020BGR-TRB"
 			(at 274.32 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -4243,7 +4389,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 104.14 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -4254,7 +4400,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "100nF 16V X7R decoupling for U10 (74AHCT125 level shifter) VCC on +5V."
 			(at 104.14 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -4265,7 +4411,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "1276-1001-1-ND"
+			(at 104.14 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "16V X7R"
+			(at 104.14 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL05B104KO5NNNC"
 			(at 104.14 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -4290,16 +4458,7 @@
 				)
 			)
 		)
-	
-		(property "Rating" "16V X7R"
-			(at 104.14 120.65 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:+5V")
 		(at 99.06 243.84 0)
@@ -4712,7 +4871,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 243.84 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -4723,7 +4882,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "100nF 16V X7R decoupling for DotStar LED D10 on +5V, beside its VDD pin."
 			(at 243.84 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -4734,7 +4893,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "1276-1001-1-ND"
+			(at 243.84 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "16V X7R"
+			(at 243.84 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL05B104KO5NNNC"
 			(at 243.84 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -4759,16 +4940,7 @@
 				)
 			)
 		)
-	
-		(property "Rating" "16V X7R"
-			(at 243.84 213.36 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "LED:APA102-2020")
 		(at 152.4 180.34 0)
@@ -4824,7 +4996,7 @@
 				)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "DotStar RGB LED 1 of 5, BB-2020BGR-TRB (APA102-2020 compatible) on +5V. Chain clock/data from U10; custom footprint from the maker land pattern (DESIGN_NOTES §10)."
 			(at 152.4 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -4836,6 +5008,17 @@
 			)
 		)
 		(property "Vendor PN" "2007-BB-2020BGR-TRBCT-ND"
+			(at 152.4 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "American Bright BB-2020BGR-TRB"
 			(at 152.4 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -4956,7 +5139,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -5235,7 +5418,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/41/CL21A226MOQNNNE_Spec.pdf"
 			(at 121.92 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -5257,7 +5440,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "1276-2909-1-ND"
+			(at 121.92 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL21A226MOQNNNE"
+			(at 121.92 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "16V X5R 20%"
 			(at 121.92 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -5366,7 +5571,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -5645,7 +5850,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 152.4 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -5656,7 +5861,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "100nF 16V X7R decoupling for DotStar LED D7 on +5V, beside its VDD pin."
 			(at 152.4 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -5667,7 +5872,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "1276-1001-1-ND"
+			(at 152.4 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "16V X7R"
+			(at 152.4 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL05B104KO5NNNC"
 			(at 152.4 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -5692,16 +5919,7 @@
 				)
 			)
 		)
-	
-		(property "Rating" "16V X7R"
-			(at 152.4 213.36 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "LED:APA102-2020")
 		(at 213.36 180.34 0)
@@ -5757,7 +5975,7 @@
 				)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "DotStar RGB LED 3 of 5, BB-2020BGR-TRB (APA102-2020 compatible) on +5V, fed from D8 (DESIGN_NOTES §10)."
 			(at 213.36 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -5769,6 +5987,17 @@
 			)
 		)
 		(property "Vendor PN" "2007-BB-2020BGR-TRBCT-ND"
+			(at 213.36 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "American Bright BB-2020BGR-TRB"
 			(at 213.36 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -6229,7 +6458,7 @@
 				)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "DotStar RGB LED 2 of 5, BB-2020BGR-TRB (APA102-2020 compatible) on +5V, fed from D7 (DESIGN_NOTES §10)."
 			(at 182.88 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -6241,6 +6470,17 @@
 			)
 		)
 		(property "Vendor PN" "2007-BB-2020BGR-TRBCT-ND"
+			(at 182.88 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "American Bright BB-2020BGR-TRB"
 			(at 182.88 180.34 0)
 			(hide yes)
 			(show_name no)

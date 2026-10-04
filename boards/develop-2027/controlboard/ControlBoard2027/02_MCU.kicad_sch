@@ -5276,6 +5276,17 @@
 		)
 		(uuid "bc26fc0b-f9cb-4ef3-845d-4b131d32e73e")
 	)
+	(text "VDD33USB p95 (C11+C13)\nUSB FS PHY - keep both close"
+		(exclude_from_sim no)
+		(at 149.86 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "05c4deae-b2aa-4e0a-a7b9-ed830b8a876e")
+	)
 	(text "VDD p30"
 		(exclude_from_sim no)
 		(at 81.28 66.04 0)
@@ -5312,6 +5323,17 @@
 		)
 		(uuid "1c451927-6530-4c3e-b37b-48299de7e08a")
 	)
+	(text "VDDA p33 (C24+C25)"
+		(exclude_from_sim no)
+		(at 338.46 117 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "1d1d816f-d370-4dc5-86b4-412fbfb162ec")
+	)
 	(text "VDD p131"
 		(exclude_from_sim no)
 		(at 241.3 66.04 0)
@@ -5336,6 +5358,28 @@
 			(justify left bottom)
 		)
 		(uuid "1e902b63-60b0-4540-a05c-b89b005fbc6d")
+	)
+	(text "CLOCK: X1 = 25 MHz; set firmware clock tree to the fitted part.\nR12 = 0R is an oscillator drive-tuning link, not line termination.\nC18/C19 need measured stray capacitance to establish the 10 pF load.\nStartup margin and crystal drive remain unverified (ABM8, DS13313 HSE data).\nNo blanket claim that 25 MHz always starts or HSI48 is unusable.\n\nSUPPLIES: PDR_ON and VBAT are on +3V3; no backup battery.\nVCAP 71/106 share their bypass node; retained pending ERC symbol review.\nDo not separate a required supply node merely to silence ERC.\nSource: DS13313 power-supply scheme / VCAP data."
+		(exclude_from_sim no)
+		(at 47.24 226.82 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left bottom)
+		)
+		(uuid "1fbb18bf-83c1-49a6-8212-3a5ce5376c4a")
+	)
+	(text "R15/R16 = 30R: provisional source damping, not certified matching.\nNo fixed driver resistance or 55R target follows from DS13313 Tables 52/54.\nValidate SCK/MOSI/MISO/CS at every cable receiver, both directions."
+		(exclude_from_sim no)
+		(at 400.05 142.24 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left bottom)
+		)
+		(uuid "55923652-cd5f-43ec-a273-d652162ad820")
 	)
 	(text "VDD p84"
 		(exclude_from_sim no)
@@ -5380,6 +5424,17 @@
 			(justify top)
 		)
 		(uuid "742ec6bf-ffaa-49d7-b661-4d595b6073db")
+	)
+	(text "VREF+ p32 (C26+C27)"
+		(exclude_from_sim no)
+		(at 378.46 117 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "80de017e-e060-4d61-9de5-4324bfa12e82")
 	)
 	(text "VDD DECOUPLING (EACH CAP AT ITS PIN)"
 		(exclude_from_sim no)
@@ -5431,6 +5486,19 @@
 		)
 		(uuid "a527e175-5f11-4bbd-9a69-78690c25533e")
 	)
+	(text "ROUTING - HSE CRYSTAL\nX1, C18, C19 within 5mm of PH0/PH1.\nShort equal OSC traces, GND guard ring.\nNothing routed under or beside the loop."
+		(exclude_from_sim no)
+		(at 184.15 181.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(bold yes)
+				(color 255 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "ac2aeb1b-f2a6-45df-b5c5-e3b7e200c26f")
+	)
 	(text "VDD p108"
 		(exclude_from_sim no)
 		(at 200.66 66.04 0)
@@ -5441,6 +5509,43 @@
 			(justify top)
 		)
 		(uuid "b2bdd5eb-df01-41e6-a235-b2631c622d28")
+	)
+	(text "ROUTING - DECOUPLING: each cap beside the STM32 pin named under it, via straight to GND.\nC22/C23 (VCAP) tight to p71/p106. The netlist does not keep this pairing."
+		(exclude_from_sim no)
+		(at 59.69 44.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(bold yes)
+				(color 255 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "b3923c74-7dd7-45ac-a29f-4dbb19f17d6e")
+	)
+	(text "VDD bulk (C5+C7)\nnot pin-specific"
+		(exclude_from_sim no)
+		(at 90.17 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "be408f99-5ac1-408f-9c97-7803eaaf720b")
+	)
+	(text "ROUTING - MOTOR SPI (6 Mbit/s, 5 drops)\nR15/R16 within 5mm of PA5/PA7, not at the connectors."
+		(exclude_from_sim no)
+		(at 400.05 151.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(bold yes)
+				(color 255 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "d060b003-9687-4fe1-a232-e83e79e0854d")
 	)
 	(text "I2C VALIDATION REQUIRED: measure SDA and SCL at worst load.\nDo not change to 1.5k from rise time alone: recheck every device's VOL/current.\nOLED module pull-ups and expansion-device specifications are not established."
 		(exclude_from_sim no)
@@ -5773,6 +5878,10 @@
 	(no_connect
 		(at 261.62 270.51)
 		(uuid "4092e38a-df6c-4ff1-8678-24220319f748")
+	)
+	(no_connect
+		(at 261.62 191.77)
+		(uuid "48e1583d-67bd-4d64-bdfb-b2377005e079")
 	)
 	(no_connect
 		(at 261.62 275.59)
@@ -6404,6 +6513,16 @@
 	)
 	(wire
 		(pts
+			(xy 337.82 270.51) (xy 356.87 270.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a23abfe-4c67-438a-8e04-a34af8e08e07")
+	)
+	(wire
+		(pts
 			(xy 337.82 163.83) (xy 344.17 163.83)
 		)
 		(stroke
@@ -6451,6 +6570,16 @@
 			(type default)
 		)
 		(uuid "823f973a-3caa-42e6-a397-08d9f172607c")
+	)
+	(wire
+		(pts
+			(xy 337.82 176.53) (xy 356.87 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8272b132-03a9-48be-884b-b80cb7dd228c")
 	)
 	(wire
 		(pts
@@ -7394,56 +7523,123 @@
 		)
 		(uuid "fe6d64fe-bd92-4e75-9e51-66f5fbbcfde4")
 	)
-  (text "ROUTING - DECOUPLING: each cap beside the STM32 pin named under it, via straight to GND.\nC22/C23 (VCAP) tight to p71/p106. The netlist does not keep this pairing."
-    (at 59.69 44.45 0)
-    (effects (font (size 1.27 1.27) (bold yes) (color 255 0 0 1)) (justify left bottom))
-    (uuid "b3923c74-7dd7-45ac-a29f-4dbb19f17d6e")
-  )
-  (text "R15/R16 = 30R: provisional source damping, not certified matching.\nNo fixed driver resistance or 55R target follows from DS13313 Tables 52/54.\nValidate SCK/MOSI/MISO/CS at every cable receiver, both directions."
-    (at 400.05 142.24 0)
-    (effects (font (size 1.1 1.1)) (justify left bottom))
-    (uuid "55923652-cd5f-43ec-a273-d652162ad820")
-  )
-  (text "VDD33USB p95 (C11+C13)\nUSB FS PHY - keep both close"
-    (at 149.86 99.06 0)
-    (effects (font (size 1.27 1.27)) (justify top))
-    (uuid "05c4deae-b2aa-4e0a-a7b9-ed830b8a876e")
-  )
-  (text "VDD bulk (C5+C7)\nnot pin-specific"
-    (at 90.17 99.06 0)
-    (effects (font (size 1.27 1.27)) (justify top))
-    (uuid "be408f99-5ac1-408f-9c97-7803eaaf720b")
-  )
-  (text "I2C: R7/R9, R8/R10, R14/R17, R18/R19 are each 2.2k.\nAt 3.3 V: (3.3-0.4)/2.2k = 1.32 mA sink requirement.\nFor a 300 ns rise-time limit: C <= 300ns/(0.8473R) = 161 pF nominal.\nAt +5% R: 153 pF. Include ESD, pins, cables and parallel pull-ups.\nLSM6DSK320X / SSD1306 / DS13313 timing and I/O data; external loads not qualified."
+  (text "I2C: R7/R9, R8/R10, R14/R17, R18/R19 are each 2.2k.\nAt 3.3 V: (3.3-0.4)/2.2k = 1.32 mA sink requirement.\nFor a 300 ns rise-time limit: C <= 300ns/(0.8473R) = 161 pF nominal.\nAt +5% R: 153 pF. Include ESD, pins, cables and parallel pull-ups.\nLSM6DSV320X / SSD1306 / DS13313 timing and I/O data; external loads not qualified."
     (at 400.05 232.41 0)
     (effects (font (size 1.1 1.1)) (justify left bottom))
-    (uuid "d549b8ca-a660-45b0-8bc0-1ab0d48a0ce1")
+    (uuid "acc1f144-d488-48fa-85a5-9841cacb4a04")
   )
-  (text "CLOCK: X1 = 25 MHz; set firmware clock tree to the fitted part.\nR12 = 0R is an oscillator drive-tuning link, not line termination.\nC18/C19 need measured stray capacitance to establish the 10 pF load.\nStartup margin and crystal drive remain unverified (ABM8, DS13313 HSE data).\nNo blanket claim that 25 MHz always starts or HSI48 is unusable.\n\nSUPPLIES: PDR_ON and VBAT are on +3V3; no backup battery.\nVCAP 71/106 share their bypass node; retained pending ERC symbol review.\nDo not separate a required supply node merely to silence ERC.\nSource: DS13313 power-supply scheme / VCAP data."
-    (at 47.24 226.82 0)
-    (effects (font (size 1.1 1.1)) (justify left bottom))
-    (uuid "1fbb18bf-83c1-49a6-8212-3a5ce5376c4a")
-  )
-  (text "VREF+ p32 (C26+C27)"
-    (at 378.46 117 0)
-    (effects (font (size 1.27 1.27)) (justify top))
-    (uuid "80de017e-e060-4d61-9de5-4324bfa12e82")
-  )
-  (text "ROUTING - MOTOR SPI (6 Mbit/s, 5 drops)\nR15/R16 within 5mm of PA5/PA7, not at the connectors."
-    (at 400.05 151.13 0)
-    (effects (font (size 1.27 1.27) (bold yes) (color 255 0 0 1)) (justify left bottom))
-    (uuid "d060b003-9687-4fe1-a232-e83e79e0854d")
-  )
-  (text "VDDA p33 (C24+C25)"
-    (at 338.46 117 0)
-    (effects (font (size 1.27 1.27)) (justify top))
-    (uuid "1d1d816f-d370-4dc5-86b4-412fbfb162ec")
-  )
-  (text "ROUTING - HSE CRYSTAL\nX1, C18, C19 within 5mm of PH0/PH1.\nShort equal OSC traces, GND guard ring.\nNothing routed under or beside the loop."
-    (at 184.15 181.61 0)
-    (effects (font (size 1.27 1.27) (bold yes) (color 255 0 0 1)) (justify left bottom))
-    (uuid "ac2aeb1b-f2a6-45df-b5c5-e3b7e200c26f")
-  )
+	(symbol
+		(lib_id "Device:R")
+		(at 360.68 270.51 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "014e9d11-465d-4749-bc81-033fd9fcf213")
+		(property "Reference" "R66"
+			(at 360.68 268.478 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "30R"
+			(at 360.68 270.51 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 360.68 270.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0402FT30R0/6266687"
+			(at 360.68 270.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Source series termination for ESP_SPI_MOSI (with the STM32 driver about 50 ohm into the 50 ohm trace). Place within 5mm of U2."
+			(at 360.68 270.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" "RMCF0402FT30R0CT-ND"
+			(at 360.68 270.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Stackpole RMCF0402FT30R0"
+			(at 360.68 270.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 360.68 270.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3d7a3d8d-dcc1-4a23-902b-578da8aa4918")
+		)
+		(pin "2"
+			(uuid "387b7603-12dd-4376-8568-d86e4101a056")
+		)
+		(instances
+			(project "ControlBoard2027"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
+					(reference "R66")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 81.28 57.15 0)
@@ -7488,7 +7684,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 81.28 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -7499,7 +7695,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "100nF 16V X7R decoupling for U2 (STM32H723) on +3V3. Schematic group: VDD p30. Board: on B.Cu behind pin 30 with its own via pair (DESIGN_NOTES §5)."
 			(at 81.28 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -7510,7 +7706,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "1276-1001-1-ND"
+			(at 81.28 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "16V X7R"
+			(at 81.28 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL05B104KO5NNNC"
 			(at 81.28 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -7535,16 +7753,7 @@
 				)
 			)
 		)
-	
-		(property "Rating" "16V X7R"
-			(at 81.28 57.15 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 220.98 57.15 0)
@@ -7589,7 +7798,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 220.98 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -7600,7 +7809,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "100nF 16V X7R decoupling for U2 (STM32H723) on +3V3. Schematic group: VDD p121. Board: on B.Cu behind pin 108 with its own via pair (DESIGN_NOTES §5)."
 			(at 220.98 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -7611,7 +7820,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "1276-1001-1-ND"
+			(at 220.98 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "16V X7R"
+			(at 220.98 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL05B104KO5NNNC"
 			(at 220.98 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -7636,16 +7867,7 @@
 				)
 			)
 		)
-	
-		(property "Rating" "16V X7R"
-			(at 220.98 57.15 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 259.08 289.56 0)
@@ -7668,7 +7890,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2uF 10V X7R"
+		(property "Value" "2.2uF"
 			(at 259.715 292.1 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7690,7 +7912,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1000/CL10B225KP8NNNC_Spec.pdf"
 			(at 259.08 289.56 0)
 			(hide yes)
 			(show_name no)
@@ -7712,7 +7934,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "1276-1134-1-ND"
+			(at 259.08 289.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL10B225KP8NNNC"
+			(at 259.08 289.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "10V X7R"
 			(at 259.08 289.56 0)
 			(hide yes)
 			(show_name no)
@@ -7744,7 +7988,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -7869,7 +8113,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 119.38 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -7880,7 +8124,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "100nF 16V X7R decoupling for U2 (STM32H723) on +3V3. Schematic group: VBAT p6. Board: on F.Cu next to pin 33 (VDDA) with its own via pair (DESIGN_NOTES §5)."
 			(at 119.38 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -7891,7 +8135,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "1276-1001-1-ND"
+			(at 119.38 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "16V X7R"
+			(at 119.38 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL05B104KO5NNNC"
 			(at 119.38 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -7916,16 +8182,7 @@
 				)
 			)
 		)
-	
-		(property "Rating" "16V X7R"
-			(at 119.38 90.17 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 161.29 57.15 0)
@@ -7970,7 +8227,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 161.29 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -7981,7 +8238,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "100nF 16V X7R decoupling for U2 (STM32H723) on +3V3. Schematic group: VDD p72. Board: on B.Cu behind pin 72 with its own via pair (DESIGN_NOTES §5)."
 			(at 161.29 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -7992,7 +8249,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "1276-1001-1-ND"
+			(at 161.29 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "16V X7R"
+			(at 161.29 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL05B104KO5NNNC"
 			(at 161.29 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -8017,16 +8296,7 @@
 				)
 			)
 		)
-	
-		(property "Rating" "16V X7R"
-			(at 161.29 57.15 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:+3V3")
 		(at 241.3 224.79 0)
@@ -8126,7 +8396,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2uF 10V X7R"
+		(property "Value" "2.2uF"
 			(at 249.555 292.1 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8148,7 +8418,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1000/CL10B225KP8NNNC_Spec.pdf"
 			(at 248.92 289.56 0)
 			(hide yes)
 			(show_name no)
@@ -8170,7 +8440,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "1276-1134-1-ND"
+			(at 248.92 289.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL10B225KP8NNNC"
+			(at 248.92 289.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "10V X7R"
 			(at 248.92 289.56 0)
 			(hide yes)
 			(show_name no)
@@ -8240,7 +8532,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/taiyo-yuden/LMK107BBJ106MALT/3662195"
 			(at 80.01 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -8251,7 +8543,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "10uF 10V X5R bulk on +3V3 for U2, outside the pad ring on the east side with its own via pair (DESIGN_NOTES §5)."
 			(at 80.01 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -8262,7 +8554,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "587-3258-1-ND"
+			(at 80.01 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Taiyo Yuden LMK107BBJ106MALT"
+			(at 80.01 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "10V X5R 20%"
 			(at 80.01 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -8409,7 +8723,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 59.69 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -8420,7 +8734,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "100nF 16V X7R decoupling for U2 (STM32H723) on +3V3. Schematic group: VDD p144. Board: on B.Cu behind pin 6 (VBAT) with its own via pair (DESIGN_NOTES §5)."
 			(at 59.69 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -8431,7 +8745,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "1276-1001-1-ND"
+			(at 59.69 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "16V X7R"
+			(at 59.69 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL05B104KO5NNNC"
 			(at 59.69 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -8456,16 +8792,7 @@
 				)
 			)
 		)
-	
-		(property "Rating" "16V X7R"
-			(at 59.69 90.17 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 302.26 303.53 0)
@@ -8664,7 +8991,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 60.96 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -8675,7 +9002,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "100nF 16V X7R decoupling for U2 (STM32H723) on +3V3. Schematic group: VDD p17. Board: on B.Cu behind pin 17 with its own via pair (DESIGN_NOTES §5)."
 			(at 60.96 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -8686,7 +9013,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "1276-1001-1-ND"
+			(at 60.96 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "16V X7R"
+			(at 60.96 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL05B104KO5NNNC"
 			(at 60.96 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -8711,16 +9060,7 @@
 				)
 			)
 		)
-	
-		(property "Rating" "16V X7R"
-			(at 60.96 57.15 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:+3V3")
 		(at 241.3 189.23 0)
@@ -8994,7 +9334,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/an/slva689/slva689.pdf"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-072K2L/726553"
 			(at 368.3 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -9016,8 +9356,30 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "311-2.20KLRCT-ND"
 			(at 368.3 187.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Yageo RC0402FR-072K2L"
+			(at 368.3 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 368.3 187.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9315,7 +9677,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0402ZT0R00/1756905"
 			(at 254 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -9337,8 +9699,30 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "RMCF0402ZT0R00CT-ND"
 			(at 254 148.59 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Stackpole RMCF0402ZT0R00"
+			(at 254 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "0R jumper"
+			(at 254 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9358,6 +9742,118 @@
 			(project "ControlBoard2027"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
 					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 360.68 176.53 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4df0f0a4-0e83-462f-af27-6ff64bdc473e")
+		(property "Reference" "R65"
+			(at 360.68 174.498 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "30R"
+			(at 360.68 176.53 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 360.68 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0402FT30R0/6266687"
+			(at 360.68 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Source series termination for ESP_SPI_SCK (with the STM32 driver about 50 ohm into the 50 ohm trace). Place within 5mm of U2."
+			(at 360.68 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" "RMCF0402FT30R0CT-ND"
+			(at 360.68 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Stackpole RMCF0402FT30R0"
+			(at 360.68 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 360.68 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "af9c1fed-d99d-499b-ac1b-12d36c8e4f72")
+		)
+		(pin "2"
+			(uuid "fc542475-6257-481f-a601-7a2d6549311f")
+		)
+		(instances
+			(project "ControlBoard2027"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
+					(reference "R65")
 					(unit 1)
 				)
 			)
@@ -9407,7 +9903,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 160.02 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -9418,7 +9914,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "100nF 16V X7R decoupling for U2 (STM32H723) on +3V3. Schematic group: VDD33USB p95. Board: on B.Cu behind pin 62 with its own via pair (DESIGN_NOTES §5)."
 			(at 160.02 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -9429,7 +9925,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "1276-1001-1-ND"
+			(at 160.02 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "16V X7R"
+			(at 160.02 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL05B104KO5NNNC"
 			(at 160.02 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -9454,16 +9972,7 @@
 				)
 			)
 		)
-	
-		(property "Rating" "16V X7R"
-			(at 160.02 90.17 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 52.07 93.98 0)
@@ -9662,7 +10171,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 101.6 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -9673,7 +10182,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "100nF 16V X7R decoupling for U2 (STM32H723) on +3V3. Schematic group: VDD p39. Board: on F.Cu next to pin 32 (VREF+) with its own via pair (DESIGN_NOTES §5)."
 			(at 101.6 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -9684,7 +10193,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "1276-1001-1-ND"
+			(at 101.6 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "16V X7R"
+			(at 101.6 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL05B104KO5NNNC"
 			(at 101.6 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -9709,16 +10240,7 @@
 				)
 			)
 		)
-	
-		(property "Rating" "16V X7R"
-			(at 101.6 57.15 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 259.08 293.37 0)
@@ -9838,7 +10360,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/an/slva689/slva689.pdf"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-072K2L/726553"
 			(at 241.3 228.6 0)
 			(hide yes)
 			(show_name no)
@@ -9860,8 +10382,30 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "311-2.20KLRCT-ND"
 			(at 241.3 228.6 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Yageo RC0402FR-072K2L"
+			(at 241.3 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 241.3 228.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10005,7 +10549,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32h723zg.pdf"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/yageo/RC0805FR-0730RL/727842"
 			(at 360.68 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -10027,8 +10571,30 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "311-30.0CRCT-ND"
 			(at 360.68 143.51 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Yageo RC0805FR-0730RL"
+			(at 360.68 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 360.68 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10249,7 +10815,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 403.86 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -10271,8 +10837,30 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "541-68.0KLCT-ND"
 			(at 403.86 105.41 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 403.86 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Vishay CRCW040268K0FKED"
+			(at 403.86 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10296,16 +10884,7 @@
 				)
 			)
 		)
-	
-		(property "Rating" "1%"
-			(at 403.86 105.41 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:Crystal_GND24")
 		(at 233.68 158.75 0)
@@ -10534,7 +11113,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0747KL/729563"
 			(at 403.86 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -10556,8 +11135,30 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "311-47.0KLRCT-ND"
 			(at 403.86 97.79 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 403.86 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Yageo RC0402FR-0747KL"
+			(at 403.86 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10581,16 +11182,7 @@
 				)
 			)
 		)
-	
-		(property "Rating" "1%"
-			(at 403.86 97.79 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 228.6 195.58 0)
@@ -10633,7 +11225,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/an/slva689/slva689.pdf"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-072K2L/726553"
 			(at 228.6 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -10655,8 +11247,30 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "311-2.20KLRCT-ND"
 			(at 228.6 195.58 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Yageo RC0402FR-072K2L"
+			(at 228.6 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 228.6 195.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10725,7 +11339,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 241.3 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -10736,7 +11350,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "100nF 16V X7R decoupling for U2 (STM32H723) on +3V3. Schematic group: VDD p131. Board: on B.Cu behind pin 121 with its own via pair (DESIGN_NOTES §5)."
 			(at 241.3 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -10747,7 +11361,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "1276-1001-1-ND"
+			(at 241.3 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "16V X7R"
+			(at 241.3 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL05B104KO5NNNC"
 			(at 241.3 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -10772,16 +11408,7 @@
 				)
 			)
 		)
-	
-		(property "Rating" "16V X7R"
-			(at 241.3 57.15 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 140.97 57.15 0)
@@ -10826,7 +11453,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 140.97 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -10837,7 +11464,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "100nF 16V X7R decoupling for U2 (STM32H723) on +3V3. Schematic group: VDD p62. Board: on B.Cu behind pin 52 with its own via pair (DESIGN_NOTES §5)."
 			(at 140.97 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -10848,7 +11475,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "1276-1001-1-ND"
+			(at 140.97 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "16V X7R"
+			(at 140.97 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL05B104KO5NNNC"
 			(at 140.97 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -10873,16 +11522,7 @@
 				)
 			)
 		)
-	
-		(property "Rating" "16V X7R"
-			(at 140.97 57.15 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 360.68 138.43 90)
@@ -10925,7 +11565,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32h723zg.pdf"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0402FT30R0/6266687"
 			(at 360.68 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -10947,8 +11587,30 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "RMCF0402FT30R0CT-ND"
 			(at 360.68 138.43 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Stackpole RMCF0402FT30R0"
+			(at 360.68 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 360.68 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11017,7 +11679,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 200.66 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -11028,7 +11690,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "100nF 16V X7R decoupling for U2 (STM32H723) on +3V3. Schematic group: VDD p108. Board: on B.Cu behind pin 95 (VDD33USB) with its own via pair (DESIGN_NOTES §5)."
 			(at 200.66 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -11039,7 +11701,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "1276-1001-1-ND"
+			(at 200.66 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "16V X7R"
+			(at 200.66 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL05B104KO5NNNC"
 			(at 200.66 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -11064,16 +11748,7 @@
 				)
 			)
 		)
-	
-		(property "Rating" "16V X7R"
-			(at 200.66 57.15 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 254 138.43 0)
@@ -11195,7 +11870,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10A105KP8NNN"
 			(at 368.3 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -11206,7 +11881,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "1uF 10V X5R for U2 VREF+ (pin 32), schematic group with C27. Board: B.Cu, north-west corner beside pins 32/33."
 			(at 368.3 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -11217,7 +11892,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "1276-1182-1-ND"
+			(at 368.3 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL10A105KP8NNNC"
+			(at 368.3 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "10V X5R"
 			(at 368.3 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -11287,7 +11984,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2615/CL05C120JB5NNNC_Spec.pdf"
 			(at 229.87 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -11309,7 +12006,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "1276-1178-1-ND"
+			(at 229.87 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "50V C0G"
+			(at 229.87 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL05C120JB5NNNC"
 			(at 229.87 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -11334,16 +12053,7 @@
 				)
 			)
 		)
-	
-		(property "Rating" "50V C0G"
-			(at 229.87 167.64 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 120.65 57.15 0)
@@ -11388,7 +12098,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 120.65 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -11399,7 +12109,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "100nF 16V X7R decoupling for U2 (STM32H723) on +3V3. Schematic group: VDD p52. Board: on B.Cu behind pin 39 with its own via pair (DESIGN_NOTES §5)."
 			(at 120.65 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -11410,7 +12120,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "1276-1001-1-ND"
+			(at 120.65 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "16V X7R"
+			(at 120.65 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL05B104KO5NNNC"
 			(at 120.65 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -11435,16 +12167,7 @@
 				)
 			)
 		)
-	
-		(property "Rating" "16V X7R"
-			(at 120.65 57.15 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 378.46 190.5 0)
@@ -11487,7 +12210,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/an/slva689/slva689.pdf"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-072K2L/726553"
 			(at 378.46 190.5 0)
 			(hide yes)
 			(show_name no)
@@ -11509,8 +12232,30 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "311-2.20KLRCT-ND"
 			(at 378.46 190.5 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Yageo RC0402FR-072K2L"
+			(at 378.46 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 378.46 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11579,7 +12324,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 347.98 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -11590,7 +12335,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "100nF 16V X7R decoupling for U2 (STM32H723) on +3V3. Schematic group: VDDA p33. Board: on B.Cu behind pin 131 with its own via pair (DESIGN_NOTES §5)."
 			(at 347.98 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -11601,7 +12346,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "1276-1001-1-ND"
+			(at 347.98 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "16V X7R"
+			(at 347.98 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL05B104KO5NNNC"
 			(at 347.98 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -11626,16 +12393,7 @@
 				)
 			)
 		)
-	
-		(property "Rating" "16V X7R"
-			(at 347.98 107.95 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 238.76 133.35 0)
@@ -11755,7 +12513,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/an/slva689/slva689.pdf"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-072K2L/726553"
 			(at 228.6 231.14 0)
 			(hide yes)
 			(show_name no)
@@ -11777,8 +12535,30 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "311-2.20KLRCT-ND"
 			(at 228.6 231.14 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Yageo RC0402FR-072K2L"
+			(at 228.6 231.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 228.6 231.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11847,7 +12627,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 388.62 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -11858,7 +12638,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "100nF 16V X7R decoupling for U2 (STM32H723) on +3V3. Schematic group: VREF+ p32. Board: on B.Cu behind pin 144 with its own via pair (DESIGN_NOTES §5)."
 			(at 388.62 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -11869,7 +12649,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "1276-1001-1-ND"
+			(at 388.62 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "16V X7R"
+			(at 388.62 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL05B104KO5NNNC"
 			(at 388.62 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -11894,16 +12696,7 @@
 				)
 			)
 		)
-	
-		(property "Rating" "16V X7R"
-			(at 388.62 107.95 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:+3V3")
 		(at 284.48 115.57 0)
@@ -12025,7 +12818,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 181.61 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -12036,7 +12829,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "100nF 16V X7R decoupling for U2 (STM32H723) on +3V3. Schematic group: VDD p84. Board: on B.Cu behind pin 84 with its own via pair (DESIGN_NOTES §5)."
 			(at 181.61 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -12047,7 +12840,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "1276-1001-1-ND"
+			(at 181.61 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "16V X7R"
+			(at 181.61 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL05B104KO5NNNC"
 			(at 181.61 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -12072,16 +12887,7 @@
 				)
 			)
 		)
-	
-		(property "Rating" "16V X7R"
-			(at 181.61 57.15 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 241.3 193.04 0)
@@ -12124,7 +12930,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/an/slva689/slva689.pdf"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-072K2L/726553"
 			(at 241.3 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -12146,8 +12952,30 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "311-2.20KLRCT-ND"
 			(at 241.3 193.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Yageo RC0402FR-072K2L"
+			(at 241.3 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 241.3 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12293,7 +13121,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 238.76 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -12315,7 +13143,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "1276-1001-1-ND"
+			(at 238.76 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "16V X7R"
+			(at 238.76 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL05B104KO5NNNC"
 			(at 238.76 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -12340,16 +13190,7 @@
 				)
 			)
 		)
-	
-		(property "Rating" "16V X7R"
-			(at 238.76 129.54 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 328.93 107.95 0)
@@ -12394,7 +13235,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10A105KP8NNN"
 			(at 328.93 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -12405,7 +13246,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "1uF 10V X5R for U2 VDDA (pin 33), schematic group with C25. Board: B.Cu, north-west corner beside pins 32/33. VDDA tied to +3V3 without a ferrite, as on the Nucleo."
 			(at 328.93 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -12416,7 +13257,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "1276-1182-1-ND"
+			(at 328.93 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL10A105KP8NNNC"
+			(at 328.93 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "10V X5R"
 			(at 328.93 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -12484,7 +13347,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/an/slva689/slva689.pdf"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-072K2L/726553"
 			(at 388.62 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -12506,8 +13369,30 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "311-2.20KLRCT-ND"
 			(at 388.62 193.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Yageo RC0402FR-072K2L"
+			(at 388.62 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 388.62 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12653,7 +13538,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2615/CL05C120JB5NNNC_Spec.pdf"
 			(at 237.49 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -12675,7 +13560,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "1276-1178-1-ND"
+			(at 237.49 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "50V C0G"
+			(at 237.49 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL05C120JB5NNNC"
 			(at 237.49 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -12700,16 +13607,7 @@
 				)
 			)
 		)
-	
-		(property "Rating" "50V C0G"
-			(at 237.49 167.64 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 347.98 163.83 90)
@@ -12752,7 +13650,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0710KL/729470"
 			(at 347.98 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -12774,8 +13672,30 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "311-10.0KLRCT-ND"
 			(at 347.98 163.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Yageo RC0402FR-0710KL"
+			(at 347.98 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 347.98 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12919,7 +13839,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0710KL/729470"
 			(at 254 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -12941,8 +13861,30 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "311-10.0KLRCT-ND"
 			(at 254 134.62 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Yageo RC0402FR-0710KL"
+			(at 254 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 254 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13595,7 +14537,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7uF 10V X5R"
+		(property "Value" "4.7uF 16V X5R"
 			(at 100.965 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13617,7 +14559,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/tdk-corporation/C1608X5R1C475K080AC/2732913"
 			(at 100.33 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -13628,7 +14570,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "4.7uF 16V X5R bulk on +3V3 for U2, south-west corner outside the pad ring (DESIGN_NOTES §5)."
 			(at 100.33 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -13639,7 +14581,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "445-7478-1-ND"
+			(at 100.33 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TDK C1608X5R1C475K080AC"
+			(at 100.33 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "16V X5R"
 			(at 100.33 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -13764,7 +14728,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7uF 10V X5R"
+		(property "Value" "4.7uF 16V X5R"
 			(at 140.335 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13786,7 +14750,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/tdk-corporation/C1608X5R1C475K080AC/2732913"
 			(at 139.7 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -13797,7 +14761,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "4.7uF 16V X5R at U2 VDD33USB (pin 95) for the USB PHY supply (DESIGN_NOTES §5)."
 			(at 139.7 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -13808,7 +14772,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "445-7478-1-ND"
+			(at 139.7 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TDK C1608X5R1C475K080AC"
+			(at 139.7 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "16V X5R"
 			(at 139.7 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -13953,7 +14939,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/an/slva689/slva689.pdf"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-072K2L/726553"
 			(at 358.14 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -13975,8 +14961,30 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "311-2.20KLRCT-ND"
 			(at 358.14 185.42 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Yageo RC0402FR-072K2L"
+			(at 358.14 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 358.14 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14001,204 +15009,4 @@
 			)
 		)
 	)
-
-	(symbol
-		(lib_id "Device:R")
-		(at 360.68 176.53 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4df0f0a4-0e83-462f-af27-6ff64bdc473e")
-		(property "Reference" "R65"
-			(at 360.68 174.498 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "30R"
-			(at 360.68 176.53 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 360.68 176.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32h723zg.pdf"
-			(at 360.68 176.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Source series termination for ESP_SPI_SCK (with the STM32 driver about 50 ohm into the 50 ohm trace). Place within 5mm of U2."
-			(at 360.68 176.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "af9c1fed-d99d-499b-ac1b-12d36c8e4f72")
-		)
-		(pin "2"
-			(uuid "fc542475-6257-481f-a601-7a2d6549311f")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "R65")
-					(unit 1)
-				)
-			)
-		)
-	
-		(property "Vendor PN" ""
-			(at 360.68 176.53 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
-	(wire
-		(pts
-			(xy 337.82 176.53) (xy 356.87 176.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8272b132-03a9-48be-884b-b80cb7dd228c")
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 360.68 270.51 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "014e9d11-465d-4749-bc81-033fd9fcf213")
-		(property "Reference" "R66"
-			(at 360.68 268.478 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "30R"
-			(at 360.68 270.51 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 360.68 270.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32h723zg.pdf"
-			(at 360.68 270.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Source series termination for ESP_SPI_MOSI (with the STM32 driver about 50 ohm into the 50 ohm trace). Place within 5mm of U2."
-			(at 360.68 270.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3d7a3d8d-dcc1-4a23-902b-578da8aa4918")
-		)
-		(pin "2"
-			(uuid "387b7603-12dd-4376-8568-d86e4101a056")
-		)
-		(instances
-			(project "ControlBoard2027"
-				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/7191f414-84c7-4145-8678-0e5ce3ad9d1c"
-					(reference "R66")
-					(unit 1)
-				)
-			)
-		)
-	
-		(property "Vendor PN" ""
-			(at 360.68 270.51 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
-	(wire
-		(pts
-			(xy 337.82 270.51) (xy 356.87 270.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7a23abfe-4c67-438a-8e04-a34af8e08e07")
-	)
-	(no_connect
-		(at 261.62 191.77)
-		(uuid "48e1583d-67bd-4d64-bdfb-b2377005e079")
-	))
+)

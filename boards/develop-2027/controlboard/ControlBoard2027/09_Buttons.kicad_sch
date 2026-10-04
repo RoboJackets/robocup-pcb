@@ -1641,6 +1641,17 @@
 		)
 		(uuid "28ae16b7-07f0-4ddc-aa02-b99d34440784")
 	)
+	(text "BUTTONS: R59-R61 pull up with 10k; R62-R64 series 10k; C50-C52 = 100nF.\nCalculated nominal time constants: press 1 ms, release 2 ms.\nAt +/-1% R and +/-10% C: 0.891-1.111 ms and 1.782-2.222 ms.\nBOM: R59-R64 are 1%; C50-C52 need a +/-10% X7R part.\nRC filtering does not guarantee removal of all bounce; qualify switch and firmware.\nSeries R is between switch node and MCU/cap node, not between cap and MCU.\nInput leakage check uses STM32H723 DS13313 Table 51."
+		(exclude_from_sim no)
+		(at 60.96 175.26 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left bottom)
+		)
+		(uuid "39a07d70-159a-4f5e-a38d-202346ed989d")
+	)
 	(text "USER BUTTONS SW4-SW6 WITH RC DEBOUNCE"
 		(exclude_from_sim no)
 		(at 57.15 80.01 0)
@@ -1844,11 +1855,6 @@
 		)
 		(uuid "f9784638-8328-4b69-9393-95531d4af803")
 	)
-  (text "BUTTONS: R59-R61 pull up with 10k; R62-R64 series 10k; C50-C52 = 100nF.\nCalculated nominal time constants: press 1 ms, release 2 ms.\nAt +/-1% R and +/-10% C: 0.891-1.111 ms and 1.782-2.222 ms.\nBOM: R59-R64 are 1%; C50-C52 need a +/-10% X7R part.\nRC filtering does not guarantee removal of all bounce; qualify switch and firmware.\nSeries R is between switch node and MCU/cap node, not between cap and MCU.\nInput leakage check uses STM32H723 DS13313 Table 51."
-    (at 60.96 175.26 0)
-    (effects (font (size 1.1 1.1)) (justify left bottom))
-    (uuid "39a07d70-159a-4f5e-a38d-202346ed989d")
-  )
 	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 71.12 96.52 180)
@@ -1903,7 +1909,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "User button BTN0, APEM MJTP1243 6x3.5mm THT tactile. Active low to USER_EXTI0 (PE4) through the R59/R62/C50 debounce."
 			(at 71.12 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -2005,7 +2011,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "User button BTN2, APEM MJTP1243 6x3.5mm THT tactile. Active low to USER_EXTI2 (PC14) through the R61/R64/C52 debounce."
 			(at 71.12 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -2174,7 +2180,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 114.3 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -2196,7 +2202,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "1276-1001-1-ND"
+			(at 114.3 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "16V X7R"
+			(at 114.3 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL05B104KO5NNNC"
 			(at 114.3 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -2221,16 +2249,7 @@
 				)
 			)
 		)
-	
-		(property "Rating" "16V X7R"
-			(at 114.3 123.19 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 81.28 115.57 0)
@@ -2273,7 +2292,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 81.28 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -2284,7 +2303,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "10k 1% pull-up to +3V3 for user button BTN1 (SW5). With R63 and C51: press tau 1ms, release tau 2ms (DESIGN_NOTES §9)."
 			(at 81.28 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -2295,8 +2314,30 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "P10.0KHCT-ND"
 			(at 81.28 115.57 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 81.28 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Panasonic ERJ-3EKF1002V"
+			(at 81.28 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2320,16 +2361,7 @@
 				)
 			)
 		)
-	
-		(property "Rating" "1%"
-			(at 81.28 115.57 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 114.3 127 0)
@@ -2526,7 +2558,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 81.28 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -2537,7 +2569,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "10k 1% pull-up to +3V3 for user button BTN2 (SW6). With R64 and C52: press tau 1ms, release tau 2ms (DESIGN_NOTES §9)."
 			(at 81.28 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -2548,8 +2580,30 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "P10.0KHCT-ND"
 			(at 81.28 138.43 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 81.28 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Panasonic ERJ-3EKF1002V"
+			(at 81.28 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2573,16 +2627,7 @@
 				)
 			)
 		)
-	
-		(property "Rating" "1%"
-			(at 81.28 138.43 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 105.41 119.38 90)
@@ -2625,7 +2670,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 105.41 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -2647,8 +2692,30 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "P10.0KHCT-ND"
 			(at 105.41 119.38 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 105.41 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Panasonic ERJ-3EKF1002V"
+			(at 105.41 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2672,16 +2739,7 @@
 				)
 			)
 		)
-	
-		(property "Rating" "1%"
-			(at 105.41 119.38 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 114.3 146.05 0)
@@ -2726,7 +2784,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 114.3 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -2748,7 +2806,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "1276-1001-1-ND"
+			(at 114.3 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "16V X7R"
+			(at 114.3 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL05B104KO5NNNC"
 			(at 114.3 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -2773,16 +2853,7 @@
 				)
 			)
 		)
-	
-		(property "Rating" "16V X7R"
-			(at 114.3 146.05 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:+3V3")
 		(at 81.28 88.9 0)
@@ -2914,7 +2985,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "User button BTN1, APEM MJTP1243 6x3.5mm THT tactile. Active low to USER_EXTI1 (PC13) through the R60/R63/C51 debounce."
 			(at 71.12 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -3004,7 +3075,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 105.41 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -3026,8 +3097,30 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "P10.0KHCT-ND"
 			(at 105.41 96.52 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 105.41 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Panasonic ERJ-3EKF1002V"
+			(at 105.41 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3051,16 +3144,7 @@
 				)
 			)
 		)
-	
-		(property "Rating" "1%"
-			(at 105.41 96.52 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 114.3 100.33 0)
@@ -3105,7 +3189,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 114.3 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -3127,7 +3211,29 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "1276-1001-1-ND"
+			(at 114.3 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "16V X7R"
+			(at 114.3 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL05B104KO5NNNC"
 			(at 114.3 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -3152,16 +3258,7 @@
 				)
 			)
 		)
-	
-		(property "Rating" "16V X7R"
-			(at 114.3 100.33 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 81.28 92.71 0)
@@ -3204,7 +3301,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 81.28 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -3215,7 +3312,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "10k 1% pull-up to +3V3 for user button BTN0 (SW4). With R62 and C50: press tau 1ms, release tau 2ms (DESIGN_NOTES §9)."
 			(at 81.28 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -3226,8 +3323,30 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "P10.0KHCT-ND"
 			(at 81.28 92.71 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 81.28 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Panasonic ERJ-3EKF1002V"
+			(at 81.28 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3251,16 +3370,7 @@
 				)
 			)
 		)
-	
-		(property "Rating" "1%"
-			(at 81.28 92.71 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:+3V3")
 		(at 81.28 134.62 0)
@@ -3457,7 +3567,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 105.41 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -3479,8 +3589,30 @@
 				)
 			)
 		)
-		(property "Vendor PN" ""
+		(property "Vendor PN" "P10.0KHCT-ND"
 			(at 105.41 142.24 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 105.41 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Panasonic ERJ-3EKF1002V"
+			(at 105.41 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3504,16 +3636,7 @@
 				)
 			)
 		)
-	
-		(property "Rating" "1%"
-			(at 105.41 142.24 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 63.5 96.52 0)
