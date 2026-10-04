@@ -4,6 +4,12 @@ Why each part and value on the radio board was chosen, the firmware settings the
 depends on, and the open issues. Schematic notes point here by section number. The controlboard
 side of the link is in `../ControlBoard2027/DESIGN_NOTES.md` §11.
 
+2026-10-04 (BOM and sourcing): every part now has an MPN, a Digi-Key part number (Mouser for U1),
+a Rating where it matters and a working datasheet link, and every line was in stock on the day
+(§6 "BOM" has the table and the substitutions). SW1/SW2 changed to the Alps SKQGABE010, which moved
+both switches 0.5mm west and GPIO28 1mm west (§7). C4 now carries the real DNP attribute. The
+antenna is a BOM line (ANT1).
+
 **Contents**
 
 1. [Sources](#1-sources)
@@ -30,6 +36,7 @@ side of the link is in `../ControlBoard2027/DESIGN_NOTES.md` §11.
 | MF-MSMF | Bourns MF-MSMF PTC, Rev BD 06/26 |
 | eGH | JST GH connector catalogue |
 | TAO | Taoglas FXP831.07.0100C spec SPE-11-8-026-K |
+| SKQG | Alps Alpine SKQG series (SKQGABE010) |
 | Radio doc | 2027 Radio Module Design Doc (in `../`) |
 | USB2 | USB 2.0 specification (usb.org `usb_20.pdf`), §7.1.1.1, §7.1.2.1, §7.1.6.1 |
 | AN0046 | Silicon Labs AN0046 USB hardware design guidelines, §3.1, §3.3 |
@@ -41,7 +48,7 @@ EN and BOOT circuits.
 The ESP32-C5-WROOM-1U is the only part not in the KiCad 10 standard library. Its symbol, footprint
 and STEP model come from espressif/kicad-libraries 3.2.1 and live in `lib/` (the model in
 `lib/RadioBoard2027.3dshapes`). All 32 pin numbers match MOD Table 3-2. Every other footprint is a
-stock KiCad 10 footprint.
+stock KiCad 10 footprint. `lib/` also holds `BOM_Item`, a pinless symbol for BOM-only lines (ANT1).
 
 ---
 
@@ -61,7 +68,7 @@ power it alone for flashing and debugging.
   present. The part blocks reverse current into an unused input (SLVSFG1A §7.3.4), so USB power
   never back-feeds the controlboard, and no diodes are needed.
 - **PR1 divider R11 100k / R12 68k, ST pull-up R13 10k, hysteresis R14 1M.** These copy
-  ControlBoard2027 U2, so both muxes switch at the same points: to USB below about 2.34V,
+  the ControlBoard2027 3V3 mux (U9 with R38/R39, R43 and R41), so both muxes switch at the same points: to USB below about 2.34V,
   back above about 2.57V (VREF 1.00V typ; ST is pulled up to +3V3, which equals VIN1 while VIN1 is
   selected, so R14 raises PR1 on the falling edge).
 - **ST → GPIO9 (PWR_SRC_HOST).** High means the controlboard is powering the board. Firmware uses
@@ -127,8 +134,9 @@ the Taoglas FXP831.07.0100C named in the radio design doc. N8R8 has 8MB flash an
   GPIO27 = 1 is download mode, including USB (MOD Table 4-3). GPIO27 has an internal pull-up and
   is left unconnected.
 - **SW2 BOOT** pulls GPIO28 low. Hold it while pressing RESET to force download mode.
-- **C4 15pF** is a footprint only (DNP). HDG 1.3.9 asks for one but warns that fitting it can
-  force download mode; the XIAO fits 15pF.
+- **C4 15pF** is a footprint only (DNP attribute set, so it is left out of the BOM and the
+  placement file). HDG 1.3.9 asks for one but warns that fitting it can force download mode; the
+  XIAO fits 15pF.
 
 ### Debug and status
 - **UART0** (GPIO11 TX, GPIO12 RX) goes to TP1/TP2, with R7 499Ω on TX (HDG 1.3.7). HDG 1.5 says
@@ -149,9 +157,8 @@ the Taoglas FXP831.07.0100C named in the radio design doc. N8R8 has 8MB flash an
 - **U2 USBLC6-2SC6** on D+/D- at J1. Its rail pin goes to +3V3, as on the controlboard, so an
   unplugged cable does not hold VBUS up through the D+ pull-up.
 - **D2 TVS0500** on VBUS at J1, then **F1 MF-MSMF075/33X-2**: hold 0.75A (0.56A at 50°C), trip
-  1.50A, 33V (MF-MSMF Rev BD). The module's 403mA peak sits under the hold current. The /16X
-  part is not stocked at LCSC; /33X is the current Bourns part with the same ratings and 1812
-  land pattern.
+  1.50A, 33V (MF-MSMF Rev BD). The module's 403mA peak sits under the hold current. /33X is the
+  current Bourns part with the /16X ratings and the same 1812 land pattern.
 - **C5 4.7µF** on VBUS/LDO input. The USB Device Capacitance ECN requires 1-10µF on VBUS.
 - Auto-download over USB stops working if the application disables the USB PHY or reuses
   GPIO13/14 (HDG 1.5). The BOOT button is the fallback.
@@ -229,49 +236,74 @@ adds no pulls on those lines.
 - **Status LED (GPIO24)**: active high. What it shows is up to the firmware (link up, activity).
 - **Flashing**: USB Serial/JTAG. If the app has disabled USB, hold BOOT and press RESET.
 
-### BOM (JLCPCB/LCSC, stock checked 2026-09-14)
+### BOM (Digi-Key, stock checked 2026-10-04)
 
-Passives are 0402 except where 0402 lacks the rating: 22µF needs 0805 (25V keeps about 14µF at
-3.3V), 10µF uses 0603 10V (about 6µF at 3.3V), 4.7µF on VBUS uses 0805 25V (about 3.7µF at 5V).
-DC-bias figures are typical X5R estimates, not part-specific curves.
+Order files: `RadioBoard2027_BOM_digikey.csv`, `RadioBoard2027_BOM_mouser.csv` (U1) and
+`RadioBoard2027_BOM_full.csv` (both), grouped by MPN. Fields: `MPN`, `Vendor PN` (Digi-Key cut
+tape), `Rating`, `Datasheet`; `LCSC` is kept only where the part is unchanged from the JLC BOM.
+Stock was read live from the Digi-Key and Mouser product pages. "Sufficient" means at least 1,000
+in stock and 50 boards' worth for passives, at least 200 and 50 boards for everything else; every
+line passes. Re-check in the distributor's BOM tool before ordering.
 
-| Ref | Value | Package | MPN | LCSC | Class |
+Passives are 0402 except where 0402 lacks the rating: 22µF uses 0805, 10µF uses 0603 10V (about
+6µF at 3.3V), 4.7µF on VBUS uses 0805 25V (about 3.7µF at 5V). DC-bias figures are typical X5R
+estimates, not part-specific curves.
+
+| Ref | Value | Package | MPN | Digi-Key | Stock |
 |---|---|---|---|---|---|
-| C1, C8 | 22µF 25V X5R | 0805 | Samsung CL21A226MAQNNNE | C45783 | Basic |
-| C2, C9 | 100nF 16V X7R | 0402 | Samsung CL05B104KO5NNNC | C1525 | Basic |
-| C3 | 1µF 25V X5R | 0402 | Samsung CL05A105KA5NQNC | C52923 | Basic |
-| C4 (DNP) | 15pF C0G | 0402 | FH 0402CG150J500NT | C1548 | Basic |
-| C5 | 4.7µF 25V X5R | 0805 | Samsung CL21A475KAQNNNE | C1779 | Basic |
-| C6, C7 | 10µF 10V X5R | 0603 | Samsung CL10A106KP8NNNC | C19702 | Basic |
-| R1, R3, R13 | 10k 1% | 0402 | UniOhm 0402WGF1002TCE | C25744 | Basic |
-| R2 | 470 1% | 0402 | UniOhm 0402WGF4700TCE | C25117 | Basic |
-| R4 | 33 | 0402 | UniOhm 0402WGF330JTCE | C25105 | Basic |
-| R5, R6 | 22 | 0402 | UniOhm 0402WGF220JTCE | C25092 | Basic |
-| R7 | 499 1% | 0402 | UniOhm 0402WGF4990TCE | C4125 | Ext |
-| R8, R15 | 1.5k 1% | 0402 | UniOhm 0402WGF1501TCE | C25867 | Basic |
-| R9, R10 | 5.1k 1% | 0402 | UniOhm 0402WGF5101TCE | C25905 | Basic |
-| R11 | 100k 1% | 0402 | UniOhm 0402WGF1003TCE | C25741 | Basic |
-| R12 | 68k 1% | 0402 | UniOhm 0402WGF6802TCE | C36871 | Ext (preferred) |
-| R14 | 1M 1% | 0402 | UniOhm 0402WGF1004TCE | C26083 | Basic |
-| D1 | Green | 0603 | NationStar NCD0603G1 | C84267 | Ext |
-| D3 | Red | 0603 | Kingbright APT1608EC | C5554143 | Ext |
-| SW1, SW2 | Tactile 5.1×5.1 | SMD | XKB TS-1187A-B-A-B | C318884 | Basic |
-| U1 | ESP32-C5-WROOM-1U-N8R8 | module | Espressif | C51950748 | Ext, **0 stock** |
-| U3 | TPS2116DRLR | SOT-583 | TI | C3235557 | Ext |
-| U4 | AP7361C-33E-13 | SOT-223 | Diodes | C500795 | Ext |
-| J1 | USB4110-GF-A | SMD | GCT | C5143397 | Ext |
-| U2 | USBLC6-2SC6 | SOT-23-6 | ST | C7519 | Ext |
-| D2, D4 | TVS0500DRVR | WSON-6 | TI | C609571 | Ext |
-| F1 | MF-MSMF075/33X-2 | 1812 | Bourns | C3760814 | Ext |
-| J2 | BM15B-GHS-TBT(LF)(SN) | SMD | JST | C5305069 | Ext |
-| U5, U6 | TPD4E05U06DQAR | USON-10 | TI | C138714 | Ext |
-| TP1, TP2 | pad | - | - | - | - |
+| C1, C8 | 22µF 16V X5R | 0805 | Samsung CL21A226MOQNNNE | 1276-2909-1-ND | 119,157 |
+| C2, C9 | 100nF 16V X7R | 0402 | Samsung CL05B104KO5NNNC | 1276-1001-1-ND | 5,247 |
+| C3 | 1µF 25V X5R | 0402 | Samsung CL05A105KA5NQNC | 1276-1445-1-ND | 2,262,582 |
+| C4 (DNP) | 15pF 50V C0G | 0402 | Murata GRM1555C1H150JA01D | 490-5888-1-ND | 237,905 |
+| C5 | 4.7µF 25V X5R | 0805 | TDK C2012X5R1E475K125AB | 445-4116-1-ND | 1,641,511 |
+| C6, C7 | 10µF 10V X5R | 0603 | Taiyo Yuden LMK107BBJ106MALT | 587-3258-1-ND | 142,035 |
+| R1, R3, R13 | 10k 1% | 0402 | Yageo RC0402FR-0710KL | 311-10.0KLRCT-ND | 4,970,953 |
+| R2 | 470 1% | 0402 | Yageo RC0402FR-07470RL | 311-470LRCT-ND | 572,399 |
+| R4 | 33 1% | 0402 | Yageo RC0402FR-0733RL | 311-33.0LRCT-ND | 411,334 |
+| R5, R6 | 22 1% | 0402 | Yageo RC0402FR-0722RL | 311-22.0LRCT-ND | 4,569,590 |
+| R7 | 499 1% | 0402 | Yageo RC0402FR-07499RL | 311-499LRCT-ND | 8,153 |
+| R8, R15 | 1.5k 1% | 0402 | Panasonic ERJ-2RKF1501X | P1.50KLCT-ND | 1,151,694 |
+| R9, R10 | 5.1k 1% | 0402 | Yageo RC0402FR-075K1L | 311-5.10KLRCT-ND | 927,907 |
+| R11 | 100k 1% | 0402 | Yageo RC0402FR-07100KL | 311-100KLRCT-ND | 5,935,716 |
+| R12 | 68k 1% | 0402 | Yageo RC0402FR-0768KL | 311-68.0KLRCT-ND | 486,607 |
+| R14 | 1M 1% | 0402 | Yageo RC0402FR-071ML | 311-1.00MLRCT-ND | 1,093,833 |
+| D1 | Green | 0603 | Kingbright APT1608SGC | 754-1121-1-ND | 1,767,781 |
+| D3 | Red | 0603 | Kingbright APT1608EC | 754-1117-1-ND | 210,662 |
+| D2, D4 | TVS0500DRVR | WSON-6 | TI | 296-48382-1-ND | 37,002 |
+| F1 | MF-MSMF075/33X-2 | 1812 | Bourns | 118-MF-MSMF075/33X-2CT-ND | 2,301 |
+| J1 | USB4110-GF-A | SMD | GCT | 2073-USB4110-GF-A-1-ND | 142,346 |
+| J2 | BM15B-GHS-TBT(LF)(SN) | SMD | JST | 455-BM15B-GHS-TBTCT-ND | 5,837 |
+| SW1, SW2 | Tactile 5.2×5.2 | SMD | Alps Alpine SKQGABE010 | 4809-SKQGABE010CT-ND | 43,903 |
+| U1 | ESP32-C5-WROOM-1U-N8R8 | module | Espressif | Mouser 356-ESP32C5WRM1UN8R8 | 1,458 (14,950 on order) |
+| U2 | USBLC6-2SC6 | SOT-23-6 | ST | 497-5235-1-ND | 147,782 |
+| U3 | TPS2116DRLR | SOT-583 | TI | 296-TPS2116DRLRCT-ND | 87,169 |
+| U4 | AP7361C-33E-13 | SOT-223 | Diodes | AP7361C-33E-13DICT-ND | 2,375 |
+| U5, U6 | TPD4E05U06DQAR | USON-10 | TI | 296-35765-1-ND | 340,367 |
+| ANT1 (BOM only) | FXP831.07.0100C | cable antenna | Taoglas | 931-1121-ND | 8,746 |
+| TP1, TP2 | pad | - | - | excluded from the BOM | - |
 
-- **TS-1187A.** The switch has two pairs of legs shorted inside the part (A-B and C-D). The
-  KiCad footprint numbers them 1,1 and 2,2 at x = ±3.0, y = ±1.875, which matches the XKB drawing,
-  so it works directly with SW_Push.
-- **D1.** The green LED is far brighter per mA than the red Kingbright. Raise R8 if 0.8mA looks
-  too bright.
+Changes from the 2026-09-14 JLC BOM (price at qty 1 where it changed the choice):
+- **C1, C8** Samsung CL21A226MAQNNNE (22µF 25V) is obsolete at Digi-Key and every other 22µF 25V
+  0805 (Murata GRM21BR61E226ME44L, Taiyo Yuden TMK212BBJ226MG-T, TDK C2012X5R1E226M125AC, Samsung
+  CL21A226MAYNNNE) had 0 stock. Now the 16V part also used on ControlBoard2027. Both sit on 3.3V,
+  so 16V is still about 5× the rail; a 16V part keeps somewhat less capacitance under bias than
+  the 25V one, but well over the 10µF HDG 1.3.2 asks for at the module.
+- **C5** Samsung CL21A475KAQNNNE: 0 stock. TDK C2012X5R1E475K125AB, same 4.7µF 25V X5R 0805, $0.28.
+- **C6, C7** Samsung CL10A106KP8NNNC: 0 stock. Taiyo Yuden LMK107BBJ106MALT (same as ControlBoard2027).
+- **C4** FH (LCSC only) → Murata GRM1555C1H150JA01D, same 15pF C0G 0402. DNP anyway.
+- **Resistors** UniOhm is not sold by Digi-Key; Yageo RC0402FR 1% parts replace them (R4/R5/R6 go
+  from 5% to 1%). The Yageo 1.5k was out of stock, so R8/R15 are Panasonic ERJ-2RKF1501X ($0.10).
+- **D1** NationStar (LCSC only) → Kingbright APT1608SGC green, same 0603. VF 2.2V typ, so R8 gives
+  0.73mA.
+- **SW1, SW2** XKB TS-1187A (LCSC only) → Alps SKQGABE010, $0.31. The C&K PTS526 was cheaper
+  ($0.16) but its land-pattern drawing could not be retrieved to check against the board, so the
+  SKQG with its KiCad footprint (`Button_Switch_SMD:SW_SPST_SKQG_WithStem`) was used. Same
+  numbering (1,1 / 2,2), pads 1.8 × 1.1mm at ±3.1, ±1.85mm against the TS-1187A's 1.0 × 0.75mm
+  at ±3.0, ±1.875mm.
+- **U1** has 0 stock at Digi-Key in any C5-WROOM-1U variant; Mouser has the same N8R8 part (M3).
+- **ANT1** The Taoglas antenna was named in the notes but not in the BOM; it is now a BOM-only
+  line.
+
 
 ---
 
@@ -370,6 +402,11 @@ DC-bias figures are typical X5R estimates, not part-specific curves.
   (D1), PWR (D3), TX (TP1), RX (TP2). The back carries "RadioBoard2027 rev A".
 - **J1 shield.** The four shell pads are not routed; the metal shell joins them. The shield is not
   tied to GND (§4).
+- **SW1/SW2 (2026-10-04).** The SKQG pads are wider than the TS-1187A's, so both switches moved
+  0.5mm west (x = 131.5mm) to keep their pads 0.5mm from the right board edge, and the GPIO28 trace
+  that runs past them moved from x = 128.2 to 127.2mm: it leaves the R3/C4 branch at 128.2mm,
+  steps west with a 45° jog just below the U1 courtyard, passes 0.2mm from the switch pads and
+  0.2mm from the GND stitching vias, and returns to SW2's pads with a 45° jog.
 - **Mounting holes.** H1-H4 are board-only footprints (not in the schematic, BOM or placement
   file).
 - **Footprints.** Every footprint matches its library copy. The update also marked the parts SMD
@@ -476,8 +513,8 @@ controlboard's STM32 pins. The chip datasheet gives no I/O injection limit. Firm
 pins Hi-Z while PWR_SRC_HOST is low (§6). Check the STM32H723 pin tolerance (DS13313 pin table)
 for PB4, PB5, PB6 and PB7, and add series resistors if needed.
 
-**M3 Module sourcing.** No ESP32-C5-WROOM-1U variant is in stock at LCSC (checked 2026-09-14).
-Consign modules to JLC, use JLC global sourcing, or hand-solder U1.
+**M3 Module sourcing.** Digi-Key has no ESP32-C5-WROOM-1U in stock; Mouser has the N8R8
+(356-ESP32C5WRM1UN8R8, 1,458 in stock on 2026-10-04, $6.52). Order U1 from Mouser.
 
 **M4 Cable.** No premade 15-pin GH-to-GH cable was found at a distributor. Crimp or order a
 custom harness; keep it short (EH ≤10cm for jumpers).

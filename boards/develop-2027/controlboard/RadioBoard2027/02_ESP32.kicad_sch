@@ -1810,6 +1810,71 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "RadioBoard2027:BOM_Item"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "BOM"
+				(at 0 2.5400 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "BOM_Item"
+				(at 0 -2.5400 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "BOM_Item_0_1")
+			(embedded_fonts no)
+		)
 	)
 	(junction
 		(at 147.32 106.68)
@@ -2182,6 +2247,18 @@
 		)
 		(uuid "f15d6460-b28b-4533-8439-2f750fb575c3")
 	)
+	(text "ROUTING - MODULE\nC1/C2 right at pad 2. R1/C3 short to EN. R4 at GPIO2; R5/R6 at GPIO13/14, then the USB pair straight to U2/J1.\nModule EPAD soldered to GND with vias for heat."
+		(at 119.38 218.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(bold yes)
+				(color 255 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "98513326-e490-4aeb-b494-89a76d4aeddf")
+	)
 	(hierarchical_label "ESP_EN"
 		(shape input)
 		(at 127 106.68 180)
@@ -2292,11 +2369,6 @@
 		)
 		(uuid "2ec7f938-4539-417c-a637-9d6c645afb5b")
 	)
-  (text "ROUTING - MODULE\nC1/C2 right at pad 2. R1/C3 short to EN. R4 at GPIO2; R5/R6 at GPIO13/14, then the USB pair straight to U2/J1.\nModule EPAD soldered to GND with vias for heat."
-    (at 119.38 218.44 0)
-    (effects (font (size 1.27 1.27) (bold yes) (color 255 0 0 1)) (justify left bottom))
-    (uuid "98513326-e490-4aeb-b494-89a76d4aeddf")
-  )
 	(symbol
 		(lib_id "RadioBoard2027:ESP32-C5-WROOM-1U")
 		(at 203.2 144.78 0)
@@ -2359,15 +2431,6 @@
 				)
 			)
 		)
-		(instances
-			(project "RadioBoard2027"
-				(path "/2a1fca76-8d18-4454-959e-9d1803ee158d/1e40acf6-717b-4faa-8a28-5b02c685b3b7"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	
 		(property "LCSC" "C51950748"
 			(at 203.2 144.78 0)
 			(hide yes)
@@ -2376,7 +2439,25 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+		(property "Vendor PN" "356-ESP32C5WRM1UN8R8 (Mouser)"
+			(at 203.2 144.78 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "RadioBoard2027"
+				(path "/2a1fca76-8d18-4454-959e-9d1803ee158d/1e40acf6-717b-4faa-8a28-5b02c685b3b7"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 167.64 99.06 0)
@@ -2410,7 +2491,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C25744.html"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0710KL/726523"
 			(at 167.64 99.06 0)
 			(hide yes)
 			(effects
@@ -2428,16 +2509,7 @@
 				)
 			)
 		)
-		(instances
-			(project "RadioBoard2027"
-				(path "/2a1fca76-8d18-4454-959e-9d1803ee158d/1e40acf6-717b-4faa-8a28-5b02c685b3b7"
-					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	
-		(property "LCSC" "C25744"
+		(property "LCSC" ""
 			(at 167.64 99.06 0)
 			(hide yes)
 			(effects
@@ -2446,7 +2518,7 @@
 				)
 			)
 		)
-		(property "MPN" "UniOhm 0402WGF1002TCE"
+		(property "MPN" "Yageo RC0402FR-0710KL"
 			(at 167.64 99.06 0)
 			(hide yes)
 			(effects
@@ -2463,7 +2535,25 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+		(property "Vendor PN" "311-10.0KLRCT-ND"
+			(at 167.64 99.06 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "RadioBoard2027"
+				(path "/2a1fca76-8d18-4454-959e-9d1803ee158d/1e40acf6-717b-4faa-8a28-5b02c685b3b7"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 157.48 110.49 0)
@@ -2499,7 +2589,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C52923.html"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL05A105KA5NQNC/3887103"
 			(at 157.48 110.49 0)
 			(hide yes)
 			(effects
@@ -2517,15 +2607,6 @@
 				)
 			)
 		)
-		(instances
-			(project "RadioBoard2027"
-				(path "/2a1fca76-8d18-4454-959e-9d1803ee158d/1e40acf6-717b-4faa-8a28-5b02c685b3b7"
-					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	
 		(property "LCSC" "C52923"
 			(at 157.48 110.49 0)
 			(hide yes)
@@ -2552,7 +2633,25 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+		(property "Vendor PN" "1276-1445-1-ND"
+			(at 157.48 110.49 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "RadioBoard2027"
+				(path "/2a1fca76-8d18-4454-959e-9d1803ee158d/1e40acf6-717b-4faa-8a28-5b02c685b3b7"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 147.32 111.76 90)
@@ -2570,7 +2669,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TS-1187A"
+		(property "Value" "SKQGABE010"
 			(at 148.844 111.76 0)
 			(effects
 				(font
@@ -2578,7 +2677,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A"
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_SKQG_WithStem"
 			(at 147.32 111.76 0)
 			(hide yes)
 			(effects
@@ -2587,7 +2686,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C318884.html"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/alps-alpine/SKQGABE010/19529161"
 			(at 147.32 111.76 0)
 			(hide yes)
 			(effects
@@ -2605,6 +2704,33 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 147.32 111.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Alps Alpine SKQGABE010"
+			(at 147.32 111.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" "4809-SKQGABE010CT-ND"
+			(at 147.32 111.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "RadioBoard2027"
 				(path "/2a1fca76-8d18-4454-959e-9d1803ee158d/1e40acf6-717b-4faa-8a28-5b02c685b3b7"
@@ -2613,25 +2739,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C318884"
-			(at 147.32 111.76 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "XKB TS-1187A-B-A-B"
-			(at 147.32 111.76 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 133.35 106.68 90)
@@ -2665,7 +2773,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C25117.html"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-07470RL/726619"
 			(at 133.35 106.68 0)
 			(hide yes)
 			(effects
@@ -2683,16 +2791,7 @@
 				)
 			)
 		)
-		(instances
-			(project "RadioBoard2027"
-				(path "/2a1fca76-8d18-4454-959e-9d1803ee158d/1e40acf6-717b-4faa-8a28-5b02c685b3b7"
-					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	
-		(property "LCSC" "C25117"
+		(property "LCSC" ""
 			(at 133.35 106.68 0)
 			(hide yes)
 			(effects
@@ -2701,7 +2800,7 @@
 				)
 			)
 		)
-		(property "MPN" "UniOhm 0402WGF4700TCE"
+		(property "MPN" "Yageo RC0402FR-07470RL"
 			(at 133.35 106.68 0)
 			(hide yes)
 			(effects
@@ -2718,7 +2817,25 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+		(property "Vendor PN" "311-470LRCT-ND"
+			(at 133.35 106.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "RadioBoard2027"
+				(path "/2a1fca76-8d18-4454-959e-9d1803ee158d/1e40acf6-717b-4faa-8a28-5b02c685b3b7"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 162.56 132.08 90)
@@ -2752,7 +2869,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C25105.html"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0733RL/726593"
 			(at 162.56 132.08 0)
 			(hide yes)
 			(effects
@@ -2770,6 +2887,42 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 162.56 132.08 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Yageo RC0402FR-0733RL"
+			(at 162.56 132.08 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 162.56 132.08 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" "311-33.0LRCT-ND"
+			(at 162.56 132.08 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "RadioBoard2027"
 				(path "/2a1fca76-8d18-4454-959e-9d1803ee158d/1e40acf6-717b-4faa-8a28-5b02c685b3b7"
@@ -2778,34 +2931,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C25105"
-			(at 162.56 132.08 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "UniOhm 0402WGF330JTCE"
-			(at 162.56 132.08 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Rating" "5%"
-			(at 162.56 132.08 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 213.36 113.03 0)
@@ -2823,7 +2949,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22uF 25V"
+		(property "Value" "22uF"
 			(at 213.995 115.57 0)
 			(effects
 				(font
@@ -2841,7 +2967,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C45783.html"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/41/CL21A226MOQNNNE_Spec.pdf"
 			(at 213.36 113.03 0)
 			(hide yes)
 			(effects
@@ -2850,7 +2976,43 @@
 				)
 			)
 		)
-		(property "Description" "Module 3V3 bulk, X5R 25V. HW design guide 1.3.2 asks >= 10uF; TX peaks reach 403mA at 5GHz."
+		(property "Description" "Module 3V3 bulk, 22uF 16V X5R 0805 (no 25V 0805 22uF was in stock at Digi-Key on 2026-10-04; 16V is about 5x the 3.3V rail). HW design guide 1.3.2 asks >= 10uF; TX peaks reach 403mA at 5GHz."
+			(at 213.36 113.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 213.36 113.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Samsung CL21A226MOQNNNE"
+			(at 213.36 113.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "16V X5R 20%"
+			(at 213.36 113.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" "1276-2909-1-ND"
 			(at 213.36 113.03 0)
 			(hide yes)
 			(effects
@@ -2867,34 +3029,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C45783"
-			(at 213.36 113.03 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "Samsung CL21A226MAQNNNE"
-			(at 213.36 113.03 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Rating" "25V X5R"
-			(at 213.36 113.03 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 223.52 113.03 0)
@@ -2930,7 +3065,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C1525.html"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 223.52 113.03 0)
 			(hide yes)
 			(effects
@@ -2948,15 +3083,6 @@
 				)
 			)
 		)
-		(instances
-			(project "RadioBoard2027"
-				(path "/2a1fca76-8d18-4454-959e-9d1803ee158d/1e40acf6-717b-4faa-8a28-5b02c685b3b7"
-					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	
 		(property "LCSC" "C1525"
 			(at 223.52 113.03 0)
 			(hide yes)
@@ -2983,7 +3109,25 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+		(property "Vendor PN" "1276-1001-1-ND"
+			(at 223.52 113.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "RadioBoard2027"
+				(path "/2a1fca76-8d18-4454-959e-9d1803ee158d/1e40acf6-717b-4faa-8a28-5b02c685b3b7"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 241.3 132.08 90)
@@ -3017,7 +3161,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C25092.html"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0722RL/726562"
 			(at 241.3 132.08 0)
 			(hide yes)
 			(effects
@@ -3035,6 +3179,42 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 241.3 132.08 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Yageo RC0402FR-0722RL"
+			(at 241.3 132.08 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 241.3 132.08 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" "311-22.0LRCT-ND"
+			(at 241.3 132.08 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "RadioBoard2027"
 				(path "/2a1fca76-8d18-4454-959e-9d1803ee158d/1e40acf6-717b-4faa-8a28-5b02c685b3b7"
@@ -3043,34 +3223,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C25092"
-			(at 241.3 132.08 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "UniOhm 0402WGF220JTCE"
-			(at 241.3 132.08 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Rating" "5%"
-			(at 241.3 132.08 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 264.16 134.62 90)
@@ -3104,7 +3257,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C25092.html"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0722RL/726562"
 			(at 264.16 134.62 0)
 			(hide yes)
 			(effects
@@ -3122,6 +3275,42 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 264.16 134.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Yageo RC0402FR-0722RL"
+			(at 264.16 134.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 264.16 134.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" "311-22.0LRCT-ND"
+			(at 264.16 134.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "RadioBoard2027"
 				(path "/2a1fca76-8d18-4454-959e-9d1803ee158d/1e40acf6-717b-4faa-8a28-5b02c685b3b7"
@@ -3130,34 +3319,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C25092"
-			(at 264.16 134.62 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "UniOhm 0402WGF220JTCE"
-			(at 264.16 134.62 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Rating" "5%"
-			(at 264.16 134.62 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 289.56 132.08 0)
@@ -3191,7 +3353,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C25744.html"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0710KL/726523"
 			(at 289.56 132.08 0)
 			(hide yes)
 			(effects
@@ -3209,16 +3371,7 @@
 				)
 			)
 		)
-		(instances
-			(project "RadioBoard2027"
-				(path "/2a1fca76-8d18-4454-959e-9d1803ee158d/1e40acf6-717b-4faa-8a28-5b02c685b3b7"
-					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	
-		(property "LCSC" "C25744"
+		(property "LCSC" ""
 			(at 289.56 132.08 0)
 			(hide yes)
 			(effects
@@ -3227,7 +3380,7 @@
 				)
 			)
 		)
-		(property "MPN" "UniOhm 0402WGF1002TCE"
+		(property "MPN" "Yageo RC0402FR-0710KL"
 			(at 289.56 132.08 0)
 			(hide yes)
 			(effects
@@ -3244,7 +3397,25 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+		(property "Vendor PN" "311-10.0KLRCT-ND"
+			(at 289.56 132.08 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "RadioBoard2027"
+				(path "/2a1fca76-8d18-4454-959e-9d1803ee158d/1e40acf6-717b-4faa-8a28-5b02c685b3b7"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 289.56 144.78 90)
@@ -3262,7 +3433,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TS-1187A"
+		(property "Value" "SKQGABE010"
 			(at 291.084 144.78 0)
 			(effects
 				(font
@@ -3270,7 +3441,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A"
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_SKQG_WithStem"
 			(at 289.56 144.78 0)
 			(hide yes)
 			(effects
@@ -3279,7 +3450,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C318884.html"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/alps-alpine/SKQGABE010/19529161"
 			(at 289.56 144.78 0)
 			(hide yes)
 			(effects
@@ -3297,6 +3468,33 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 289.56 144.78 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Alps Alpine SKQGABE010"
+			(at 289.56 144.78 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" "4809-SKQGABE010CT-ND"
+			(at 289.56 144.78 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "RadioBoard2027"
 				(path "/2a1fca76-8d18-4454-959e-9d1803ee158d/1e40acf6-717b-4faa-8a28-5b02c685b3b7"
@@ -3305,32 +3503,14 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C318884"
-			(at 289.56 144.78 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "XKB TS-1187A-B-A-B"
-			(at 289.56 144.78 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 299.72 143.51 0)
 		(unit 1)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "329f2208-c5ee-4701-aa50-b5e258de47aa")
 		(property "Reference" "C4"
 			(at 300.355 140.97 0)
@@ -3359,7 +3539,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C1548.html"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/murata-electronics/GRM1555C1H150JA01D/2791374"
 			(at 299.72 143.51 0)
 			(hide yes)
 			(effects
@@ -3377,15 +3557,6 @@
 				)
 			)
 		)
-		(instances
-			(project "RadioBoard2027"
-				(path "/2a1fca76-8d18-4454-959e-9d1803ee158d/1e40acf6-717b-4faa-8a28-5b02c685b3b7"
-					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	
 		(property "DNP" "Do not fit"
 			(at 299.72 143.51 0)
 			(hide yes)
@@ -3395,7 +3566,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C1548"
+		(property "LCSC" ""
 			(at 299.72 143.51 0)
 			(hide yes)
 			(effects
@@ -3404,7 +3575,7 @@
 				)
 			)
 		)
-		(property "MPN" "FH 0402CG150J500NT"
+		(property "MPN" "Murata GRM1555C1H150JA01D"
 			(at 299.72 143.51 0)
 			(hide yes)
 			(effects
@@ -3421,7 +3592,25 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+		(property "Vendor PN" "490-5888-1-ND"
+			(at 299.72 143.51 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "RadioBoard2027"
+				(path "/2a1fca76-8d18-4454-959e-9d1803ee158d/1e40acf6-717b-4faa-8a28-5b02c685b3b7"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 241.3 127 90)
@@ -3455,7 +3644,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C4125.html"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-07499RL/726623"
 			(at 241.3 127 0)
 			(hide yes)
 			(effects
@@ -3473,16 +3662,7 @@
 				)
 			)
 		)
-		(instances
-			(project "RadioBoard2027"
-				(path "/2a1fca76-8d18-4454-959e-9d1803ee158d/1e40acf6-717b-4faa-8a28-5b02c685b3b7"
-					(reference "R7")
-					(unit 1)
-				)
-			)
-		)
-	
-		(property "LCSC" "C4125"
+		(property "LCSC" ""
 			(at 241.3 127 0)
 			(hide yes)
 			(effects
@@ -3491,7 +3671,7 @@
 				)
 			)
 		)
-		(property "MPN" "UniOhm 0402WGF4990TCE"
+		(property "MPN" "Yageo RC0402FR-07499RL"
 			(at 241.3 127 0)
 			(hide yes)
 			(effects
@@ -3508,12 +3688,30 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+		(property "Vendor PN" "311-499LRCT-ND"
+			(at 241.3 127 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "RadioBoard2027"
+				(path "/2a1fca76-8d18-4454-959e-9d1803ee158d/1e40acf6-717b-4faa-8a28-5b02c685b3b7"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 266.7 127 0)
 		(unit 1)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "3eb7bdbf-91b9-4b43-b9ad-b672cd82b121")
@@ -3573,7 +3771,7 @@
 		(lib_id "Connector:TestPoint")
 		(at 256.54 124.46 0)
 		(unit 1)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "521745cf-a133-4d5d-93d2-ec643720ebe2")
@@ -3662,7 +3860,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C25867.html"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/panasonic-industry/ERJ-2RKF1501X/192060"
 			(at 247.65 149.86 0)
 			(hide yes)
 			(effects
@@ -3671,7 +3869,7 @@
 				)
 			)
 		)
-		(property "Description" "Status LED resistor: (3.3 - 2.1) / 1.5k = 0.8mA."
+		(property "Description" "Status LED resistor: (3.3 - 2.2) / 1.5k = 0.73mA (APT1608SGC VF 2.2V typical)."
 			(at 247.65 149.86 0)
 			(hide yes)
 			(effects
@@ -3680,16 +3878,7 @@
 				)
 			)
 		)
-		(instances
-			(project "RadioBoard2027"
-				(path "/2a1fca76-8d18-4454-959e-9d1803ee158d/1e40acf6-717b-4faa-8a28-5b02c685b3b7"
-					(reference "R8")
-					(unit 1)
-				)
-			)
-		)
-	
-		(property "LCSC" "C25867"
+		(property "LCSC" ""
 			(at 247.65 149.86 0)
 			(hide yes)
 			(effects
@@ -3698,7 +3887,7 @@
 				)
 			)
 		)
-		(property "MPN" "UniOhm 0402WGF1501TCE"
+		(property "MPN" "Panasonic ERJ-2RKF1501X"
 			(at 247.65 149.86 0)
 			(hide yes)
 			(effects
@@ -3715,7 +3904,25 @@
 					(size 1.27 1.27)
 				)
 			)
-		))
+		)
+		(property "Vendor PN" "P1.50KLCT-ND"
+			(at 247.65 149.86 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "RadioBoard2027"
+				(path "/2a1fca76-8d18-4454-959e-9d1803ee158d/1e40acf6-717b-4faa-8a28-5b02c685b3b7"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Device:LED")
 		(at 259.08 149.86 180)
@@ -3749,7 +3956,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C84267.html"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/kingbright/APT1608SGC/1747519"
 			(at 259.08 149.86 0)
 			(hide yes)
 			(effects
@@ -3767,6 +3974,33 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 259.08 149.86 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Kingbright APT1608SGC"
+			(at 259.08 149.86 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" "754-1121-1-ND"
+			(at 259.08 149.86 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "RadioBoard2027"
 				(path "/2a1fca76-8d18-4454-959e-9d1803ee158d/1e40acf6-717b-4faa-8a28-5b02c685b3b7"
@@ -3775,25 +4009,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C84267"
-			(at 259.08 149.86 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "NationStar NCD0603G1"
-			(at 259.08 149.86 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:+3V3")
 		(at 167.64 95.25 0)
@@ -4465,6 +4681,84 @@
 			)
 		)
 	)
+	(symbol
+		(lib_id "RadioBoard2027:BOM_Item")
+		(at 241.3 172.72 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board no)
+		(dnp no)
+		(uuid "0393478a-5522-4fd9-98a9-9d1474d64738")
+		(property "Reference" "ANT1"
+			(at 241.3 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Antenna FXP831"
+			(at 241.3 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 241.3 172.72 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://cdn.taoglas.com/datasheets/FXP831.07.0100C.pdf"
+			(at 241.3 172.72 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Dual-band 2.4/5GHz flexible PCB antenna with 100mm cable and MHF I (U.FL) plug, for the U1 antenna connector. BOM-only, not on the board. Mount it on the robot chassis (DESIGN_NOTES C1, m1)."
+			(at 241.3 172.72 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "RadioBoard2027"
+				(path "/2a1fca76-8d18-4454-959e-9d1803ee158d/1e40acf6-717b-4faa-8a28-5b02c685b3b7"
+					(reference "ANT1")
+					(unit 1)
+				)
+			)
+		)
+	
+		(property "MPN" "Taoglas FXP831.07.0100C"
+			(at 241.3 172.72 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" "931-1121-ND"
+			(at 241.3 172.72 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(rectangle
 		(start 112 84)
 		(end 172 122.8)

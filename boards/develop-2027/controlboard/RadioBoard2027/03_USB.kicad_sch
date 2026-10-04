@@ -2706,7 +2706,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C5143397.html"
+		(property "Datasheet" "https://gct.co/files/drawings/usb4110.pdf"
 			(at 88.9 139.7 0)
 			(hide yes)
 			(effects
@@ -2750,6 +2750,15 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(property "Vendor PN" "2073-USB4110-GF-A-1-ND"
+			(at 88.9 139.7 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		))
 	(symbol
 		(lib_id "Device:R")
@@ -2784,7 +2793,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C25905.html"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-075K1L/726624"
 			(at 132.08 144.78 0)
 			(hide yes)
 			(effects
@@ -2811,7 +2820,7 @@
 			)
 		)
 	
-		(property "LCSC" "C25905"
+		(property "LCSC" ""
 			(at 132.08 144.78 0)
 			(hide yes)
 			(effects
@@ -2820,7 +2829,7 @@
 				)
 			)
 		)
-		(property "MPN" "UniOhm 0402WGF5101TCE"
+		(property "MPN" "Yageo RC0402FR-075K1L"
 			(at 132.08 144.78 0)
 			(hide yes)
 			(effects
@@ -2830,6 +2839,15 @@
 			)
 		)
 		(property "Rating" "1%"
+			(at 132.08 144.78 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" "311-5.10KLRCT-ND"
 			(at 132.08 144.78 0)
 			(hide yes)
 			(effects
@@ -2871,7 +2889,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C25905.html"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-075K1L/726624"
 			(at 121.92 144.78 0)
 			(hide yes)
 			(effects
@@ -2898,7 +2916,7 @@
 			)
 		)
 	
-		(property "LCSC" "C25905"
+		(property "LCSC" ""
 			(at 121.92 144.78 0)
 			(hide yes)
 			(effects
@@ -2907,7 +2925,7 @@
 				)
 			)
 		)
-		(property "MPN" "UniOhm 0402WGF5101TCE"
+		(property "MPN" "Yageo RC0402FR-075K1L"
 			(at 121.92 144.78 0)
 			(hide yes)
 			(effects
@@ -2917,6 +2935,15 @@
 			)
 		)
 		(property "Rating" "1%"
+			(at 121.92 144.78 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" "311-5.10KLRCT-ND"
 			(at 121.92 144.78 0)
 			(hide yes)
 			(effects
@@ -3004,6 +3031,15 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(property "Vendor PN" "497-5235-1-ND"
+			(at 172.72 160.02 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		))
 	(symbol
 		(lib_id "Power_Protection:TVS0500DRV")
@@ -3084,6 +3120,15 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(property "Vendor PN" "296-48382-1-ND"
+			(at 121.92 116.84 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		))
 	(symbol
 		(lib_id "Device:Polyfuse")
@@ -3127,7 +3172,7 @@
 				)
 			)
 		)
-		(property "Description" "USB VBUS PTC. Hold 0.75A (0.56A at 50C), trip 1.50A, 33V (Bourns MF-MSMF Rev BD). /33X used because /16X is not stocked at LCSC. Module peak 403mA fits under the hold current."
+		(property "Description" "USB VBUS PTC. Hold 0.75A (0.56A at 50C), trip 1.50A, 33V (Bourns MF-MSMF Rev BD). Module peak 403mA fits under the hold current."
 			(at 142.24 124.46 0)
 			(hide yes)
 			(effects
@@ -3155,6 +3200,15 @@
 		)
 	
 		(property "LCSC" "C3760814"
+			(at 142.24 124.46 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" "118-MF-MSMF075/33X-2CT-ND"
 			(at 142.24 124.46 0)
 			(hide yes)
 			(effects

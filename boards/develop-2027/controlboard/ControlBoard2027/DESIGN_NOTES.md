@@ -991,7 +991,7 @@ outline on the silkscreen crosses the pads of R34 (the fab clips silkscreen on p
 Fields: `MPN` (maker and part number), `Vendor PN` (Digi-Key cut-tape PN; Mouser for U2 and U11),
 `Rating` (voltage and dielectric for capacitors, tolerance for resistors), `Datasheet` and
 `Description` (what the part does and where it sits).
-Export the BOM with these columns. Selection rule: in stock first, then lowest price. Stock was read
+Export the BOM with these columns. The order files are `ControlBoard2027_BOM_digikey.csv`, `ControlBoard2027_BOM_mouser.csv` (U2, U11) and `ControlBoard2027_BOM_full.csv` (both), grouped by MPN. Selection rule: in stock first, then lowest price. Stock was read
 live from Digi-Key's (and Mouser's) product pages on 2026-10-04. "Sufficient" means at least 1,000
 in stock and 50 boards' worth for passives, at least 200 and 50 boards for everything else. Every line
 passed except U11 (22 at Mouser, the only same-spec IMU in stock anywhere). Re-check in the

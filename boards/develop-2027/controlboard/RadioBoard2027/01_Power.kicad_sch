@@ -1845,6 +1845,15 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(property "Vendor PN" "296-TPS2116DRLRCT-ND"
+			(at 254 139.7 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		))
 	(symbol
 		(lib_id "Regulator_Linear:AP7361C-33E")
@@ -1924,6 +1933,15 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(property "Vendor PN" "AP7361C-33E-13DICT-ND"
+			(at 175.26 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		))
 	(symbol
 		(lib_id "Device:C")
@@ -1942,7 +1960,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7uF 25V"
+		(property "Value" "4.7uF"
 			(at 163.195 184.15 0)
 			(effects
 				(font
@@ -1960,7 +1978,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C1779.html"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/tdk/C2012X5R1E475K125AB/1986842"
 			(at 162.56 181.61 0)
 			(hide yes)
 			(effects
@@ -1987,7 +2005,7 @@
 			)
 		)
 	
-		(property "LCSC" "C1779"
+		(property "LCSC" ""
 			(at 162.56 181.61 0)
 			(hide yes)
 			(effects
@@ -1996,7 +2014,7 @@
 				)
 			)
 		)
-		(property "MPN" "Samsung CL21A475KAQNNNE"
+		(property "MPN" "TDK C2012X5R1E475K125AB"
 			(at 162.56 181.61 0)
 			(hide yes)
 			(effects
@@ -2006,6 +2024,15 @@
 			)
 		)
 		(property "Rating" "25V X5R"
+			(at 162.56 181.61 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" "445-4116-1-ND"
 			(at 162.56 181.61 0)
 			(hide yes)
 			(effects
@@ -2049,7 +2076,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C19702.html"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/taiyo-yuden/LMK107BBJ106MALT/3662195"
 			(at 195.58 181.61 0)
 			(hide yes)
 			(effects
@@ -2076,7 +2103,7 @@
 			)
 		)
 	
-		(property "LCSC" "C19702"
+		(property "LCSC" ""
 			(at 195.58 181.61 0)
 			(hide yes)
 			(effects
@@ -2085,7 +2112,7 @@
 				)
 			)
 		)
-		(property "MPN" "Samsung CL10A106KP8NNNC"
+		(property "MPN" "Taiyo Yuden LMK107BBJ106MALT"
 			(at 195.58 181.61 0)
 			(hide yes)
 			(effects
@@ -2094,7 +2121,16 @@
 				)
 			)
 		)
-		(property "Rating" "10V X5R"
+		(property "Rating" "10V X5R 20%"
+			(at 195.58 181.61 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" "587-3258-1-ND"
 			(at 195.58 181.61 0)
 			(hide yes)
 			(effects
@@ -2138,7 +2174,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C19702.html"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/taiyo-yuden/LMK107BBJ106MALT/3662195"
 			(at 203.2 138.43 0)
 			(hide yes)
 			(effects
@@ -2165,7 +2201,7 @@
 			)
 		)
 	
-		(property "LCSC" "C19702"
+		(property "LCSC" ""
 			(at 203.2 138.43 0)
 			(hide yes)
 			(effects
@@ -2174,7 +2210,7 @@
 				)
 			)
 		)
-		(property "MPN" "Samsung CL10A106KP8NNNC"
+		(property "MPN" "Taiyo Yuden LMK107BBJ106MALT"
 			(at 203.2 138.43 0)
 			(hide yes)
 			(effects
@@ -2183,7 +2219,16 @@
 				)
 			)
 		)
-		(property "Rating" "10V X5R"
+		(property "Rating" "10V X5R 20%"
+			(at 203.2 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" "587-3258-1-ND"
 			(at 203.2 138.43 0)
 			(hide yes)
 			(effects
@@ -2225,7 +2270,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C25741.html"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-07100KL/729473"
 			(at 226.06 138.43 0)
 			(hide yes)
 			(effects
@@ -2234,7 +2279,7 @@
 				)
 			)
 		)
-		(property "Description" "PR1 divider top. Same 100k/68k as ControlBoard2027 U2: switches to USB below ~2.34V, back above ~2.57V with R14."
+		(property "Description" "PR1 divider top. Same 100k/68k as the ControlBoard2027 3V3 mux (U9, R38/R39): switches to USB below ~2.34V, back above ~2.57V with R14."
 			(at 226.06 138.43 0)
 			(hide yes)
 			(effects
@@ -2252,7 +2297,7 @@
 			)
 		)
 	
-		(property "LCSC" "C25741"
+		(property "LCSC" ""
 			(at 226.06 138.43 0)
 			(hide yes)
 			(effects
@@ -2261,7 +2306,7 @@
 				)
 			)
 		)
-		(property "MPN" "UniOhm 0402WGF1003TCE"
+		(property "MPN" "Yageo RC0402FR-07100KL"
 			(at 226.06 138.43 0)
 			(hide yes)
 			(effects
@@ -2271,6 +2316,15 @@
 			)
 		)
 		(property "Rating" "1%"
+			(at 226.06 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" "311-100KLRCT-ND"
 			(at 226.06 138.43 0)
 			(hide yes)
 			(effects
@@ -2312,7 +2366,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C36871.html"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0768KL/726651"
 			(at 226.06 146.05 0)
 			(hide yes)
 			(effects
@@ -2339,7 +2393,7 @@
 			)
 		)
 	
-		(property "LCSC" "C36871"
+		(property "LCSC" ""
 			(at 226.06 146.05 0)
 			(hide yes)
 			(effects
@@ -2348,7 +2402,7 @@
 				)
 			)
 		)
-		(property "MPN" "UniOhm 0402WGF6802TCE"
+		(property "MPN" "Yageo RC0402FR-0768KL"
 			(at 226.06 146.05 0)
 			(hide yes)
 			(effects
@@ -2358,6 +2412,15 @@
 			)
 		)
 		(property "Rating" "1%"
+			(at 226.06 146.05 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" "311-68.0KLRCT-ND"
 			(at 226.06 146.05 0)
 			(hide yes)
 			(effects
@@ -2383,7 +2446,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22uF 25V"
+		(property "Value" "22uF"
 			(at 274.955 140.97 0)
 			(effects
 				(font
@@ -2401,7 +2464,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C45783.html"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/41/CL21A226MOQNNNE_Spec.pdf"
 			(at 274.32 138.43 0)
 			(hide yes)
 			(effects
@@ -2410,7 +2473,7 @@
 				)
 			)
 		)
-		(property "Description" "Mux output bulk, X5R/X7R >= 6.3V."
+		(property "Description" "Mux output bulk, 22uF 16V X5R 0805 on the 3.3V rail (no 25V 0805 22uF was in stock at Digi-Key on 2026-10-04)."
 			(at 274.32 138.43 0)
 			(hide yes)
 			(effects
@@ -2428,7 +2491,7 @@
 			)
 		)
 	
-		(property "LCSC" "C45783"
+		(property "LCSC" ""
 			(at 274.32 138.43 0)
 			(hide yes)
 			(effects
@@ -2437,7 +2500,7 @@
 				)
 			)
 		)
-		(property "MPN" "Samsung CL21A226MAQNNNE"
+		(property "MPN" "Samsung CL21A226MOQNNNE"
 			(at 274.32 138.43 0)
 			(hide yes)
 			(effects
@@ -2446,7 +2509,16 @@
 				)
 			)
 		)
-		(property "Rating" "25V X5R"
+		(property "Rating" "16V X5R 20%"
+			(at 274.32 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" "1276-2909-1-ND"
 			(at 274.32 138.43 0)
 			(hide yes)
 			(effects
@@ -2490,7 +2562,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C1525.html"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL05B104KO5NNNC.pdf"
 			(at 284.48 138.43 0)
 			(hide yes)
 			(effects
@@ -2543,6 +2615,15 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(property "Vendor PN" "1276-1001-1-ND"
+			(at 284.48 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		))
 	(symbol
 		(lib_id "Device:R")
@@ -2577,7 +2658,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C25744.html"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-0710KL/726523"
 			(at 269.24 140.97 0)
 			(hide yes)
 			(effects
@@ -2604,7 +2685,7 @@
 			)
 		)
 	
-		(property "LCSC" "C25744"
+		(property "LCSC" ""
 			(at 269.24 140.97 0)
 			(hide yes)
 			(effects
@@ -2613,7 +2694,7 @@
 				)
 			)
 		)
-		(property "MPN" "UniOhm 0402WGF1002TCE"
+		(property "MPN" "Yageo RC0402FR-0710KL"
 			(at 269.24 140.97 0)
 			(hide yes)
 			(effects
@@ -2623,6 +2704,15 @@
 			)
 		)
 		(property "Rating" "1%"
+			(at 269.24 140.97 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" "311-10.0KLRCT-ND"
 			(at 269.24 140.97 0)
 			(hide yes)
 			(effects
@@ -2664,7 +2754,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C26083.html"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/yageo/RC0402FR-071ML/726515"
 			(at 273.05 152.4 0)
 			(hide yes)
 			(effects
@@ -2673,7 +2763,7 @@
 				)
 			)
 		)
-		(property "Description" "ST to PR1 hysteresis, same as ControlBoard2027 R60."
+		(property "Description" "ST to PR1 hysteresis, same as ControlBoard2027 R41."
 			(at 273.05 152.4 0)
 			(hide yes)
 			(effects
@@ -2691,7 +2781,7 @@
 			)
 		)
 	
-		(property "LCSC" "C26083"
+		(property "LCSC" ""
 			(at 273.05 152.4 0)
 			(hide yes)
 			(effects
@@ -2700,7 +2790,7 @@
 				)
 			)
 		)
-		(property "MPN" "UniOhm 0402WGF1004TCE"
+		(property "MPN" "Yageo RC0402FR-071ML"
 			(at 273.05 152.4 0)
 			(hide yes)
 			(effects
@@ -2710,6 +2800,15 @@
 			)
 		)
 		(property "Rating" "1%"
+			(at 273.05 152.4 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" "311-1.00MLRCT-ND"
 			(at 273.05 152.4 0)
 			(hide yes)
 			(effects
@@ -2751,7 +2850,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C25867.html"
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/panasonic-industry/ERJ-2RKF1501X/192060"
 			(at 309.88 138.43 0)
 			(hide yes)
 			(effects
@@ -2778,7 +2877,7 @@
 			)
 		)
 	
-		(property "LCSC" "C25867"
+		(property "LCSC" ""
 			(at 309.88 138.43 0)
 			(hide yes)
 			(effects
@@ -2787,7 +2886,7 @@
 				)
 			)
 		)
-		(property "MPN" "UniOhm 0402WGF1501TCE"
+		(property "MPN" "Panasonic ERJ-2RKF1501X"
 			(at 309.88 138.43 0)
 			(hide yes)
 			(effects
@@ -2797,6 +2896,15 @@
 			)
 		)
 		(property "Rating" "1%"
+			(at 309.88 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" "P1.50KLCT-ND"
 			(at 309.88 138.43 0)
 			(hide yes)
 			(effects
@@ -2838,7 +2946,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C5554143.html"
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608EC.pdf"
 			(at 309.88 146.05 0)
 			(hide yes)
 			(effects
@@ -2875,6 +2983,15 @@
 		)
 	
 		(property "LCSC" "C5554143"
+			(at 309.88 146.05 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" "754-1117-1-ND"
 			(at 309.88 146.05 0)
 			(hide yes)
 			(effects
