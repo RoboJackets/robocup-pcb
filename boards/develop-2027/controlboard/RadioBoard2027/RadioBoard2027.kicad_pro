@@ -50,11 +50,44 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "border_display_style": 2,
+          "border_hatch_pitch": 0.5,
+          "corner_radius": 0.0,
+          "corner_smoothing": 0,
+          "fill_mode": 0,
+          "hatch_gap": 1.5,
+          "hatch_orientation": 0.0,
+          "hatch_smoothing_level": 0,
+          "hatch_smoothing_value": 0.1,
+          "hatch_thickness": 1.0,
+          "min_clearance": 0.5,
+          "min_island_area": 10.0,
+          "min_thickness": 0.25,
+          "pad_connection": 1,
+          "remove_islands": 0,
+          "thermal_relief_gap": 0.5,
+          "thermal_relief_spoke_width": 0.5
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "hole_clearance|106935000|127950000|7a5f31b4-d738-4225-9dad-7c9468ae130d|24bec9ec-f58c-426a-9028-b1277d39dd61",
+          ""
+        ],
+        [
+          "hole_clearance|106935000|127950000|ba658625-98f1-45b4-b2db-cc90e25dd0a3|24bec9ec-f58c-426a-9028-b1277d39dd61",
+          ""
+        ],
+        [
+          "hole_clearance|106935000|134050000|8230d6aa-caeb-48d7-a917-4b2f364cdc14|3b74add0-6de7-48b7-ae2d-a3b2856a8695",
+          ""
+        ],
+        [
+          "hole_clearance|106935000|134050000|86578037-7916-4362-be12-b7242aeac64d|3b74add0-6de7-48b7-ae2d-a3b2856a8695",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -510,6 +543,7 @@
       "netlist": "",
       "plot": "",
       "specctra_dsn": "",
+      "step": "",
       "vrml": ""
     },
     "page_layout_descr_file": ""

@@ -70,7 +70,24 @@
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "hole_clearance|74950000|113070000|18ad08a0-ee42-4acd-a7e7-c875f7fa96ff|e8fc9ebc-5d8e-4f49-a807-5990a0fca5fc",
+          ""
+        ],
+        [
+          "hole_clearance|74950000|113070000|858adea3-a2b7-4e0c-8497-c41594721407|e8fc9ebc-5d8e-4f49-a807-5990a0fca5fc",
+          ""
+        ],
+        [
+          "hole_clearance|81050000|113070000|12dbc6e9-cc51-4223-a0f2-5019adcc47e6|87fd9dbd-1f9e-4f6c-a66f-6190c9aa0bb8",
+          ""
+        ],
+        [
+          "hole_clearance|81050000|113070000|b9752400-65ae-4809-b2f6-3fd598de60ce|87fd9dbd-1f9e-4f6c-a66f-6190c9aa0bb8",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
