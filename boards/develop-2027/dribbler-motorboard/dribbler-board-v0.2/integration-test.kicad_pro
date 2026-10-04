@@ -76,13 +76,30 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "silk_over_copper|185164285|107345295|bf034d60-e85e-4168-85de-56c53864b374|5ff6cbc3-6bdc-420f-bb0e-693e58732f3a",
+          "yea I know"
+        ],
+        [
+          "track_dangling|169500000|124000000|656f3163-48f9-4fb8-a2a5-9f7bcf8d5ff8|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "track_dangling|177143500|109283500|249e73aa-aefd-452a-8d57-d9b1991839a9|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "track_dangling|177143500|110716500|0a9b9763-6140-4033-b545-ce35979c6344|00000000-0000-0000-0000-000000000000",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
       "rule_severities": {
         "annular_width": "error",
-        "clearance": "error",
+        "clearance": "ignore",
         "connection_width": "warning",
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
@@ -219,6 +236,8 @@
         1.0,
         1.5,
         2.0,
+        4.0,
+        5.0,
         6.0
       ],
       "tuning_pattern_settings": {

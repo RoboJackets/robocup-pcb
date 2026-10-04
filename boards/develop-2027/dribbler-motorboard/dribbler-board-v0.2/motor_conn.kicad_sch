@@ -1840,7 +1840,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "10f52223-7d5f-471a-84b2-195d35d85915")
 		(property "Reference" "#PWR055"
 			(at 57.15 29.21 0)
@@ -1853,14 +1852,15 @@
 				)
 			)
 		)
-		(property "Value" "+3.3V"
-			(at 57.15 20.32 0)
+		(property "Value" "+5V"
+			(at 54.864 21.336 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -2030,7 +2030,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "212102cc-6d33-48c2-9605-358ac887f5fb")
 		(property "Reference" "#PWR056"
 			(at 66.04 29.21 0)
@@ -2043,14 +2042,15 @@
 				)
 			)
 		)
-		(property "Value" "+3.3V"
-			(at 66.04 20.32 0)
+		(property "Value" "+5V"
+			(at 63.754 21.336 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -2877,7 +2877,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "cb7406bc-e815-42a0-b2ca-22a95b981670")
 		(property "Reference" "#PWR054"
 			(at 48.26 29.21 0)
@@ -2890,14 +2889,15 @@
 				)
 			)
 		)
-		(property "Value" "+3.3V"
-			(at 48.26 20.32 0)
+		(property "Value" "+5V"
+			(at 45.974 21.336 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -3211,7 +3211,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_PH_S8B-PH-K_1x08_P2.00mm_Horizontal"
 			(at 22.86 33.02 0)
 			(hide yes)
 			(show_name no)

@@ -6067,7 +6067,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
 			(at 130.81 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -7895,11 +7895,11 @@
 		(at 87.63 161.29 90)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "9e52beb8-9425-43e5-ad24-10ac3407d505")
 		(property "Reference" "L2"
