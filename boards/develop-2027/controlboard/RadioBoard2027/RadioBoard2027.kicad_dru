@@ -29,3 +29,11 @@
 	(layer outer)
 	(condition "(A.NetName == '*/ESP_SPI_*' || A.NetName == 'Net-(U1-GPIO2)') && B.Type == 'Zone'")
 	(constraint clearance (min 0.72mm)))
+
+# Link vias in the J2 row gap and after U5 sit 1.0mm apart; at the default 0.2mm plane clearance and
+# 0.25mm hole clearance their plane openings merged into a slot on In1/In2. Inner layers only.
+(rule "Link via plane clearance"
+	(layer inner)
+	(condition "A.Type == 'Via' && A.NetName == '/Controlboard Link/*' && B.Type == 'Zone'")
+	(constraint clearance (min 0.1mm))
+	(constraint hole_clearance (min 0.2mm)))

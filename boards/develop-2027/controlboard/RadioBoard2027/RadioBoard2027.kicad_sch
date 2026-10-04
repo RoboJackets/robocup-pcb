@@ -103,7 +103,7 @@
 		)
 		(uuid "3f9e0021-d969-4dfd-a920-754dc41cf7ff")
 	)
-	(text "RADIOBOARD2027 - ESP32-C5 Wi-Fi co-processor for ControlBoard2027 (ESP-Hosted over SPI)\nPower: controlboard +3V3 over the J2 cable, or USB-C alone for flashing (TPS2116 mux).\nSignals cross sheets through sheet pins (hierarchical labels); rails (+3V3_HOST, GND) use global labels and power symbols.\nDesign justification: DESIGN_NOTES.md."
+	(text "RADIOBOARD2027 - ESP32-C5 Wi-Fi co-processor for ControlBoard2027 (ESP-Hosted over SPI)\nPower: controlboard +3V3 through the J2 mezzanine, or USB-C alone for flashing (TPS2116 mux).\nSignals cross sheets through sheet pins (hierarchical labels); rails (+3V3_HOST, GND) use global labels and power symbols.\nDesign justification: DESIGN_NOTES.md."
 		(at 30.48 160.02 0)
 		(effects
 			(font

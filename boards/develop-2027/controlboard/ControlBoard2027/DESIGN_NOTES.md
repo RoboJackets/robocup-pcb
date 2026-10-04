@@ -24,7 +24,7 @@ silkscreen.
 
 2026-10-03 (final review): radio SCK no longer runs between the pads of R66. It now crosses
 MOSI with a 2.8mm B.Cu hop next to R65, and a serpentine on its J9 run restores the length
-match. Every connector, button and the DIP switch now carries pin and signal labels on the
+match (superseded by the 2026-10-04 radio-link entry below). Every connector, button and the DIP switch now carries pin and signal labels on the
 silkscreen ("Silkscreen labels" in §2).
 
 2026-10-04 (BOM and sourcing): every part now has an MPN, a Digi-Key part number (Mouser for
@@ -46,6 +46,12 @@ U2 and U11), a Rating and a working datasheet link, and every line was in stock 
   with its rating did not fit on the sheet (C1, C22, C23, C28, C31, C33, C34, C37, C38) the
   value shows the capacitance only; the voltage and dielectric are in the Rating field, which
   the BOM exports.
+
+2026-10-04 (radio link): J9 is now a Samtec LSHM-110-02.5 mezzanine instead of the JST GH cable
+header. RadioBoard2027 J2 is the same hermaphroditic part, so the radio plugs straight onto J9
+(5mm stack) and hangs off this board's east edge, held only by the connector. J9 sits at
+(95.5, 27)mm with its signal row facing west. The radio SPI was re-routed: CS crosses the other
+three lines in one short B.Cu hop, and the length matching now uses 45° trapezoid bumps (§2, §11).
 
 **Contents**
 
@@ -134,10 +140,11 @@ signal and no USB inrush limit. The consequences are listed in M1, M3 and m18.
 - 50Ω single-ended = 0.36mm on the outer layers. USB 90Ω differential = 0.30mm traces with
   0.20mm gap.
 - Every high-speed net (USB, radio SPI, SD, motor SPI, crystal) runs on F.Cu over the unbroken
-  In1 GND plane, except three short crossing hops on B.Cu (SD DAT2/DAT3 and radio SCK, each
+  In1 GND plane, except three short crossing hops on B.Cu (SD DAT2/DAT3 and radio CS, each
   under 5mm with GND return vias). Otherwise B.Cu carries only low-speed nets (UART, DIP, buttons, reset, BOOT0, OLED,
   SWD, power-source flags) and power.
-- +3V3 is the In2 plane; every SMD +3V3 pad reaches it through its own via. +5V, VBUS and the
+- +3V3 is the In2 plane; every SMD +3V3 pad reaches it through its own via, except J9 pins 1/3/5,
+  which share one 0.25mm run with a via at pin 3 and C29's via (§11). +5V, VBUS and the
   powerboard rails are routed as traces (0.5-0.8mm). F.Cu and B.Cu carry GND pours, stitched
   to In1 on an 8mm grid.
 - Board 100 x 100mm, M3 mounting holes H1-H4 at all four corners, 4mm in from each edge.
@@ -164,10 +171,9 @@ the cable fitted:
   body ("5V GND SCL SDA", pin 1 on the left). Known deviation: the J8 labels end 0.26mm
   above the J12 courtyard, so MOSI/MISO/CS sit over J12's pins 1-2. Read J12 from its legend
   under the body.
-- J9 radio: one label per row on the west side of the housing (3V3, G, SCK, G, MOSI, G, MISO,
-  G, CS, G, HS, DR, RST, G from pin 1 to pin 15). G = GND, HS = ESP_HANDSHAKE,
-  DR = ESP_DATA_READY. Pin 1 (3V3, same as pin 2) has no label, because C29 sits beside it.
-  R64's reference moved above it so it does not read as part of "RST".
+- J9 radio: "RADIO" below the housing. J9 is a 0.5mm-pitch mezzanine covered by the plugged-in
+  radio board, so it has no per-pin labels (known deviation); the footprint's pin-1 mark sets the
+  orientation and §11 has the pinout.
 - J15 powerboard: labels above the pin pairs, "5V" (pins 1-2), "3V3" (3-4), "GND" (5-6),
   "TX" (7) and "RX" (8). TX/RX are named from this board's side: TX is the MCU output.
 - J13 OLED header: SDA, SCL, GND, NC, GND, NC, 3V3, GND beside the pins, inside the module
@@ -186,7 +192,7 @@ groups:
 | South-west edge | I2C ports J12, J11, J10 with U6; fuses F3/F4 on the back |
 | South edge, centre | USB-C J2 with D1, U3, F1 |
 | South-east | Power: J15, Q1, D3/D4, F5/F6, muxes U8/U9, jumpers J14/J16/J17/J18, LDO U7 |
-| East edge | Radio J9 (top), microSD J1 with U1 (below it), SWD J3 |
+| East edge | Radio mezzanine J9 (top; the radio board overhangs the edge), microSD J1 with U1 (below it), SWD J3 |
 | North edge | DIP switch SW3, reset SW1, BOOT0 SW2, user buttons SW4-SW6 |
 | North-west | OLED header J13 |
 | South of the MCU | DotStar chain D7-D11 with U10 |
@@ -197,7 +203,7 @@ groups:
 | Bus | Routing |
 |---|---|
 | USB D+/D- | About 23mm, F.Cu only, 90Ω pair, no vias, through U3 |
-| Radio SPI (J9) | F.Cu, 0.36mm (about 50Ω) except 0.25mm at the MCU escape. MOSI, MISO and CS have no vias. SCK leaves R65 and crosses the MOSI vertical in a 2.8mm hop on B.Cu: two vias at (86.7, 67.3) and (89.5, 67.3), each with a GND return via 1.0mm away. B.Cu references In2, which is the +3V3 plane, so a priority-6 GND region on In2 (GND_IN2_SCK_HOP, 85.6-90.6 x 66.2-69.0mm) sits under the hop. It is tied to In1 by the two return vias, so the hop also has a GND reference. No trace passes between the pads of R65/R66. All four lines pass under the J9 housing for the last ~3.5mm to its pads. Three 45° bumps (1.08mm amplitude, 3W) on the SCK run to J9 restore the length. They sit on the first straight run with room for them; the 1.1mm-pitch vertical next to the hop has none. R66 (0402, like R65) lies on the PD6 escape 4.5mm from the U2 pin, and MOSI leaves it on a 45° run straight into its vertical. Its position along the escape sets the MOSI length. Pin-to-pin length, counting 1.6mm per via and the series-resistor pad span (1.02mm for each 0402): SCK 58.8mm, MOSI 58.5mm, MISO 58.2mm, CS 58.2mm. All four are within 0.63mm. Rows are 2.4mm apart, verticals 1.1mm apart (3W). Pours keep 0.72mm (2W) from the lines on F.Cu/B.Cu (rule "Radio SPI pour clearance") |
+| Radio SPI (J9) | F.Cu, 0.36mm (about 50Ω) except at the ends: 0.25mm at the MCU escape (SCK 2.9mm, MOSI 4.0mm, CS 5.8mm, MISO 6.9mm, where MISO and CS also run side by side 0.25mm apart for about 5.5mm; known deviation) and 0.2mm for the last 1.05mm into the 0.5mm-pitch J9 pads. The slow lines narrow to 0.2mm only for their last 0.4mm (RST), 1.0mm (DATA_READY) and 2.6mm (HANDSHAKE, whose jog lands one pad row from MISO), measured to the pad edge. In the last 1-2mm before J9 the lines converge to the 0.5mm pad pitch, so they sit 0.22mm edge to edge and MISO/SCK/MOSI 1.0mm centre to centre (under 3W); known deviation at the connector. The F.Cu GND pour between the MISO and SCK lanes is stitched by vias at (69.05, 28.05), (78.6, 28.45), (84.05, 28.05) and (88.6, 28.45). SCK, MOSI and MISO have no vias. CS crosses the other three in a 4.4mm hop on B.Cu between vias at (66.25, 38.0) and (70.65, 38.0), each with a GND return via 0.95mm away at (66.25, 37.05) and (70.65, 38.95). B.Cu references In2, the +3V3 plane, so a GND region on In2 (GND_IN2_CS_HOP, 65.4-71.5 x 36.4-39.6mm, priority 6, above the plane's 5) fills under the whole hop and is tied to In1 by the return vias. No trace passes between the pads of R65/R66 (0402, 30Ω, at the MCU). The pull resistors R29/R31/R32 stand across their lanes with pad 1 on the line (no stub; the line runs through the pad) and pad 2 to its own via. Length matching: 45° trapezoid bumps (1.44mm flat top, legs 4W apart) on one straight run per line starting at x 71.7mm: SCK 2 bumps 0.44mm high, CS 3 bumps 1.08mm (3W), MISO and MOSI none. Pin-to-pad length, counting 1.6mm per via and the 1.02mm resistor span, with no stubs: SCK 52.00mm, MOSI 52.25mm, MISO 51.82mm, CS 51.74mm (0.51mm spread). With the radio board the full SCK/MOSI/CS paths match within 0.17mm (RadioBoard2027 DESIGN_NOTES §7). Pours keep 0.72mm (2W) from the lines on the outer layers (rule "Radio SPI pour clearance") |
 | SD (J1) | F.Cu at 0.36mm (about 50Ω) on the main runs, 0.25mm only at the MCU pins, under U1 and into the socket pads. Flow-through U1, no stubs. Copper length MCU pin to socket pad: CLK 45.05mm (including 1.0mm through R6), CMD 44.45mm, DAT0 45.15mm, DAT1 44.94mm, DAT2 45.05mm, DAT3 45.05mm (0.7mm spread; every line 1.05mm shorter than with the XKB socket). CLK and CMD carry short serpentines to match the data lines. DAT2 and DAT3 each cross CMD and CLK once on B.Cu next to the MCU (5.0mm and 3.7mm, two vias each, with a GND return via within 0.9mm of three of the four). Gaps are 0.5mm or more except at the MCU pins (0.5mm pitch), under the MCU body for DAT0/DAT1, through U1 and in the socket fan-out |
 | Motor SPI (J4-J8) | F.Cu only over In1 GND, daisy-chained through each connector's TVS array (flow-through). 0.36mm on the runs between connectors and back to the MCU (178mm of the bus), 0.25mm through the TVS arrays and pin escapes, where SCK and MOSI sit 0.25mm apart for about 3mm per connector |
 | Crystal | X1, C18, C19 and R12 on the top side next to PH0/PH1, GND vias at each capacitor |
@@ -687,45 +693,67 @@ Because the header runs along the module's side, the 128x64 image is rotated 90�
 rotation (U8G2_R1 or U8G2_R3) to match the mounting.
 
 ### J9 radio link
-Cable to RadioBoard2027 J2 (ESP32-C5-WROOM-1U, ESP-Hosted over SPI; see that project's
-DESIGN_NOTES.md). Both boards use the same JST GH 1.25mm 15-pin vertical header,
-BM15B-GHS-TBT(LF)(SN), with a straight 1:1 cable (housing GHR-15V-S, terminal SSHL-002T-P0.2,
-26 AWG).
+Board-to-board link to RadioBoard2027 J2 (ESP32-C5-WROOM-1U, ESP-Hosted over SPI; see that
+project's DESIGN_NOTES.md). Both boards use the same Samtec LSHM-110-02.5-L-DV-A-S-K-TR (Razor
+Beam, 0.5mm pitch, 2 x 10, shielded, hermaphroditic). They mate face to face with a 5mm stack;
+the radio board sits right side up above this board (module facing up, its J2 on its underside)
+and hangs off the east edge, held only by the connector. There is no cable. The radio covers
+x 91.7mm to 45.6mm past the east edge and y 8.2-44.2mm of this board.
 
-JST GH was chosen because its datasheet is the only one of the candidates that states a positive
-latch ("large outer latch for positive lock", JST eGH), it is rated 1.0A per contact at 26 AWG,
-and footprints exist in KiCad 10. 2.54mm headers came loose in competition (radio design doc).
+- **Why LSHM.** One part number on both boards, shield and alignment pegs, 2A per pin (one pin
+  powered per row), 100 mating cycles, -55 to +125°C (Samtec LSHM product specification §3).
+  Digi-Key SAM14955CT-ND, 10,225 in stock on 2026-10-04, $3.54.
+- **Mating.** Face to face, pin p here meets radio pin p-1 (even p) or p+1 (odd p): the rows swap
+  (Samtec LSHM mated drawing, Fig. 1). This board's even (west) row carries the signals and faces
+  the MCU. A script over both board files places the radio on this board as a rigid move (both
+  boards right side up, no mirror) and confirms all 20 pads land on their partner pads with
+  matching nets, with the two connectors' pegs on opposite sides of the centreline as drawn.
+- **Under the radio.** Besides J9 itself, only C28, C29, C52 (0402/0805 capacitors) and the edge
+  of the microSD socket J1 (1.3mm tall) sit under the radio, against a 5mm gap. The radio overhangs the top 2.7mm of the card
+  where it sticks out of the edge; the card is still pushed and pulled from the uncovered 8mm.
 
 | Pin | Net | Pin | Net |
 |---|---|---|---|
-| 1 | +3V3 | 9 | GND |
-| 2 | +3V3 | 10 | ESP_SPI_CS |
-| 3 | GND | 11 | GND |
-| 4 | ESP_SPI_SCK | 12 | ESP_HANDSHAKE |
-| 5 | GND | 13 | ESP_DATA_READY |
-| 6 | ESP_SPI_MOSI | 14 | ESP_RST (radio EN) |
-| 7 | GND | 15 | GND |
-| 8 | ESP_SPI_MISO | MP | GND |
+| 1 | +3V3 | 2 | ESP_RST (radio EN) |
+| 3 | +3V3 | 4 | ESP_DATA_READY |
+| 5 | +3V3 | 6 | ESP_HANDSHAKE |
+| 7 | GND | 8 | ESP_SPI_MISO |
+| 9 | GND | 10 | GND |
+| 11 | GND | 12 | ESP_SPI_SCK |
+| 13 | GND | 14 | GND |
+| 15 | GND | 16 | ESP_SPI_MOSI |
+| 17 | GND | 18 | GND |
+| 19 | GND | 20 | ESP_SPI_CS |
+| SH | GND | | |
 
-- SCK, MOSI, MISO and CS each have GND on both sides. The slow lines (HANDSHAKE, DATA_READY,
-  RESET) are grouped; a fully interleaved layout would need 17 pins, which GH does not offer.
-- Power: two pins at 1.0A each carry the radio's 403mA TX peak with margin.
+- SCK and MOSI have GND on each side in their row and GND across the gap. CS (pin 20, the end of
+  the row) has GND on one side, the shield 2.7mm away on the other. MISO has GND on one side and
+  the slow lines (HANDSHAKE, DATA_READY, RST) on the other.
+- Power: three +3V3 pins carry the radio's 403mA TX peak. LSHM is rated 2A per pin with one pin
+  powered per row; about 0.13A per pin here leaves wide margin.
+- J9 power and ground: the odd-row +3V3 pins 1/3/5 and GND pins 7-19 are each joined by one straight
+  0.25mm run through their pad ends, with vias east of the row. The even-row GND pins 10/14/18 each
+  have their own via in the gap between the rows.
 - The radio runs from the muxed +3V3, so it is powered whenever the MCU is. The radio board has its
   own TPS2116, which blocks its USB supply from back-feeding this board.
+- There is no ESD part on this side: the connector is not exposed once the radio is plugged in,
+  and the radio board protects every link line (its U5/U6/D4).
 - MCU pins: SCK PB3, MISO PB4, MOSI PD6, CS PB5 (pin 135), HANDSHAKE PB6 (pin 136),
-  DATA_READY PB7 (pin 137), RST PE1 (pin 142). These moved from the earlier PG15/PB5/PB6/PB7
-  assignment; PG15 (pin 132) is now unconnected. R65 (SCK) and R66 (MOSI) 30Ω sit in series
-  at the MCU end. SCK crosses MOSI with a 2.8mm B.Cu hop beside R65, with a GND return via
-  at each signal via and a GND region on In2 under the hop. No line passes between the pads
-  of a resistor. All four SPI lines are within 0.63mm on this board (§2);
-  the cable and the radio board add their own mismatch.
+  DATA_READY PB7 (pin 137), RST PE1 (pin 142). PG15 (pin 132) is unconnected. R65 (SCK) and R66
+  (MOSI) 30Ω sit in series at the MCU end. The MCU pin order puts CS on the wrong side of the
+  group for J9, so CS crosses the other three in one 4.4mm B.Cu hop with a GND return via at each
+  signal via and a GND region on In2 under it. No line passes between the pads of a resistor.
+  All four SPI lines are within 0.51mm on this board, and SCK/MOSI/CS within 0.17mm end to end (§2).
 - R29 10k ESP_SPI_CS pull-up to +3V3 keeps the radio deselected while PB5 floats at reset.
-- R31/R32 100k pull-downs on HANDSHAKE/DATA_READY stop false interrupts with the radio absent or
-  in reset. On the C5 these are GPIO3 (MTDI) and GPIO4 (MTCK). GPIO3 is a strapping pin, but it only
+- R31 100k and R32 10k pull HANDSHAKE/DATA_READY down, to stop false interrupts with the radio absent or
+  in reset. R32 is 10k because the C5's GPIO4 has a weak (about 45k) pull-up during reset: 100k
+  against it gave 2.28V, which the STM32 reads high (guaranteed V_IH is 0.47VDD + 0.25 = 1.80V,
+  DS13313 Table 51). 10k gives about 0.6V, below the 1.22V V_IL limit. On the C5 these are GPIO3 (MTDI) and GPIO4 (MTCK). GPIO3 is a strapping pin, but it only
   sets the SDIO clock edge; boot mode is set by GPIO26-28 (ESP32-C5 datasheet v1.5 §3).
 - ESP_RST (PE1) drives the radio EN open-drain. The radio board holds EN up with 10k/1µF and
   has 470Ω in series.
-- C28 22uF + C29 100nF local decoupling on +3V3 at J9.
+- C28 22uF + C29 100nF on +3V3 at the north end of J9, 5-6mm from pins 1/3/5, each with its own
+  plane vias. The radio board decouples its own supply; these hold the connector end of the rail.
 
 ---
 
@@ -763,7 +791,8 @@ clocking (AN2606 Table 111), so DFU does not depend on these settings.
 - **SPI2 DotStars** (PB13 SCK, PB15 MOSI), TX only, mode 0: V0.3 puts SCK on PA9, which is
   VBUS_SENSE on this board; re-pin to PB13 (M11). 48MHz / 16 = 3Mbit/s. /8 = 6Mbit/s is the
   nearest setting to the design doc's 7.815Mbit/s. Send an all-off frame at start-up.
-- **SPI3 radio** (PB3 SCK, PB4 MISO, PD6 MOSI, PB5 CS on GPIO): 3Mbit/s, mode 3 as in V0.3. Hardware
+- **SPI3 radio** (PB3 SCK, PB4 MISO, PD6 MOSI, PB5 CS on GPIO): 3Mbit/s for bring-up, mode 3 as in
+  V0.3; the link is laid out for 10-40MHz (RadioBoard2027 DESIGN_NOTES §7). Hardware
   CRC off and 8-bit frames: ESP-Hosted uses fixed 1600-byte frames with its own checksum, and
   STM32 CRC would add a phase the slave never sends (M4). Enable the internal pull-up on PB4.
 - **SDMMC1** (PC8-PC12, PD2), 4-bit: CLKDIV 3 (8MHz) for bring-up, then CLKDIV 1 (24MHz) after
@@ -795,7 +824,7 @@ clocking (AN2606 Table 111), so DFU does not depend on these settings.
 | PB5 (pin 135) | ESP_SPI_CS | Output PP, init high | R29 pull-up to +3V3 (was PG15) |
 | PE1 (pin 142) | ESP_RST | Open drain, init released | ESP EN pull-up is on the radio board; never drive high (was PB7) |
 | PB6 (pin 136) | ESP_HANDSHAKE | EXTI rising | R31 pull-down (was PB5) |
-| PB7 (pin 137) | ESP_DATA_READY | EXTI rising | R32 pull-down (was PB6) |
+| PB7 (pin 137) | ESP_DATA_READY | EXTI rising | R32 10k pull-down (was PB6) |
 | PF3 | ACCEL_EXTI | EXTI rising | LSM6DSV320X INT1 (push-pull, active high by default) |
 | PF2 | GYRO_EXTI | EXTI rising | LSM6DSV320X INT2 (push-pull, active high by default) |
 | PE4, PC13, PC14 | USER_EXTI0-2 | EXTI falling | Buttons pull low; ~1ms RC debounce. V0.3 uses rising |
@@ -872,7 +901,7 @@ J15 and the loads limits voltage except the TVS diodes, which only start at 7.5V
 The powerboard has to regulate and J15 has to be keyed and pinned so these cannot happen.
 
 **M2 3V3 margin.** At 1A, F6 (140mΩ max) + U9 (59mΩ) + J15 (20mΩ) drop 0.22V, so a 3.30V
-powerboard gives about 3.08V on +3V3, before the J17/J18 shunt contacts. The radio module (3.0V minimum) sits behind a further cable
+powerboard gives about 3.08V on +3V3, before the J17/J18 shunt contacts. The radio module (3.0V minimum) sits behind a further connector
 and mux drop (m3). 3.4V ±3% is still the preferred setpoint; with no clamp,
 the powerboard must never exceed 3.6V (STM32 VDD max).
 
@@ -892,9 +921,9 @@ through a diode (about 0.5-0.6V against 0.66V max low), so probe both addresses.
 and take J13 from its board file.
 
 **M6 Connector parts.** J10 is JST PH B3B-PH-K-S (455-1705-ND); J11/J12 are B4B-PH-K-S (455-1706-ND); all friction lock. J15 JST-XH is friction lock and rated 3A only with AWG22. J3 needs a keyed header.
-J9 is now a latching JST GH (§11); a
-premade 15-pin GH cable could not be confirmed at a distributor, so plan on crimping or a
-custom harness.
+J9 is a Samtec LSHM mezzanine (§11) with no latch: the radio hangs off the east edge on the
+connector alone, and its edge overhangs part of the microSD card slot. Check retention on the first assembly; if it works loose, strap or bracket the
+radio to the chassis.
 
 **M7 Mux switchover sag (bench only).** With USB attached, removing the powerboard lets +3V3 sag to
 2.13-2.55V and +5V to about 3.2-3.9V (36k PR1 resistor, VREF 0.92-1.08V) before the mux switches, because VIN1 stays tied to VOUT until
@@ -933,14 +962,14 @@ outline on the silkscreen crosses the pads of R34 (the fab clips silkscreen on p
 
 - **m1** RadioBoard2027 firmware must set the ESP-Hosted pins explicitly: its C5 defaults are CLK
   GPIO3 and HANDSHAKE GPIO1, but the board uses CLK GPIO6 and HANDSHAKE GPIO3. GPIO4 (DATA_READY)
-  has a weak internal pull-up at reset; R32 100k against about 45k gives 2.28V, below the 2.475V
-  input-high threshold, so no false interrupt until the firmware takes the pin. ESP_RST has no
+  has a weak internal pull-up at reset; R32 is 10k so it holds the line at about 0.6V against
+  that pull-up (§11), so no false interrupt until the firmware takes the pin. ESP_RST has no
   pull on this board (the radio board has it).
 - **m2** DotStar and U10 VDD is 4.5-5.5V. On the powerboard, Q1 (60mΩ) + F5 (140mΩ max) + U8
   (59mΩ) drop about 0.25V at 1A, so a 5.0V powerboard gives about 4.75V. On USB, +5V can fall below
   4.5V. LEDs are rated to 70°C ambient; cap brightness in firmware.
-- **m3** The radio sees +3V3 minus the J9 cable and its own mux: roughly 0.05V more at a 403mA
-  TX peak (two GH contacts in parallel, a short 26 AWG pair, TPS2116 on-resistance). Added to
+- **m3** The radio sees +3V3 minus the J9/J2 contacts and its own mux: at most about 0.05V more
+  at a 403mA TX peak (three LSHM contacts in parallel, TPS2116 on-resistance). Added to
   M2's worst case this leaves about 3.03V at the module from a 3.30V powerboard, just above the
   module's 3.0V minimum. Measure on the first boards.
 - **m4** Motor SPI termination and speed (motorboard scope): R15/R16, 6 vs 15.625Mbit/s.
@@ -1016,6 +1045,11 @@ Parts changed on 2026-10-04 because the first choice was out of stock (price at 
 | C35 | Yageo 10uF 16V 0805 (0) | Samsung CL21B225KOFNNNE, 2.2uF 16V X7R 0805 (VBUS limit, see below) | 1276-1162-1-ND | 71,758 | $0.15 (was $0.56) |
 | R6 R15 R65 R66 | Yageo 30.1R (0) | Stackpole RMCF0402FT30R0, 30.0R 1% | RMCF0402FT30R0CT-ND | 59,815 | $0.10 (same) |
 | R12 | Yageo RC0402JR-070RL (0) | Stackpole RMCF0402ZT0R00 | RMCF0402ZT0R00CT-ND | 7,380,694 | $0.10 (same) |
+
+J9 changed by design, not for stock: JST BM15B-GHS-TBT cable header → Samtec
+LSHM-110-02.5-L-DV-A-S-K-TR mezzanine (SAM14955CT-ND, 10,225 in stock on 2026-10-04, $3.54), the same
+part as RadioBoard2027 J2 (§11).
+
 
 Unchanged lines and their live stock: 100nF CL05B104KO5NNNC 5,247 (31 per board); 12pF 9,138;
 2.2uF X7R 4,095; 1uF 287,590; 2.2uF 16V 163,848; TVS0500 37,002; BZX384-C10 2,615; APT1608EC
