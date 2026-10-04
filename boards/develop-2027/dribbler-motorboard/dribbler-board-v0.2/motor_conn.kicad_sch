@@ -1450,10 +1450,28 @@
 		(uuid "0fbb18c6-6ec5-427a-9142-501947008336")
 	)
 	(junction
+		(at 38.1 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "01925d15-bf24-4a3b-b230-024130ec9528")
+	)
+	(junction
 		(at 57.15 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3bb4110b-a706-4a63-9d40-f56499c3b482")
+	)
+	(junction
+		(at 40.64 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "544cc5af-f721-46fb-984c-60b053a4bf1e")
+	)
+	(junction
+		(at 35.56 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "846be409-1573-4d97-bc5a-aaa3aeb751c0")
 	)
 	(junction
 		(at 48.26 38.1)
@@ -1466,24 +1484,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b27aedd0-d006-44be-8856-9a30a506190f")
-	)
-	(junction
-		(at 40.64 43.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cd22da60-5ace-4e88-bfaf-e12a6ef1a1ca")
-	)
-	(junction
-		(at 38.1 40.64)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cd23fcae-d593-4d0b-9d91-49a870eac066")
-	)
-	(junction
-		(at 35.56 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e0aa9c49-3a92-4ee1-ab89-8fbac0eac52c")
 	)
 	(no_connect
 		(at 43.18 46.99)
@@ -1568,6 +1568,16 @@
 	)
 	(wire
 		(pts
+			(xy 27.94 40.64) (xy 38.1 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cc427c9-ca3d-4200-b51a-e22054a63282")
+	)
+	(wire
+		(pts
 			(xy 40.64 43.18) (xy 66.04 43.18)
 		)
 		(stroke
@@ -1575,16 +1585,6 @@
 			(type default)
 		)
 		(uuid "3014f45b-5dc6-4853-8519-97b664dcebef")
-	)
-	(wire
-		(pts
-			(xy 27.94 38.1) (xy 35.56 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "38a8c157-c083-43f2-8364-060a0f6d4f3b")
 	)
 	(wire
 		(pts
@@ -1615,6 +1615,16 @@
 			(type default)
 		)
 		(uuid "58084ee0-0bb3-4d44-9c55-e744dca0c30d")
+	)
+	(wire
+		(pts
+			(xy 27.94 38.1) (xy 35.56 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69c5c9ba-7baa-405e-80ea-df56b7fbcb09")
 	)
 	(wire
 		(pts
@@ -1678,6 +1688,16 @@
 	)
 	(wire
 		(pts
+			(xy 27.94 43.18) (xy 40.64 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93466dda-6d7a-4b2a-8e55-d3e228d4672c")
+	)
+	(wire
+		(pts
 			(xy 66.04 25.4) (xy 66.04 27.94)
 		)
 		(stroke
@@ -1695,26 +1715,6 @@
 			(type default)
 		)
 		(uuid "d5046a8f-1b4d-4d8b-a4b2-55e1c82378d4")
-	)
-	(wire
-		(pts
-			(xy 27.94 40.64) (xy 38.1 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d5d4efb0-e729-4e39-81eb-1b5a1398156b")
-	)
-	(wire
-		(pts
-			(xy 27.94 43.18) (xy 40.64 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eb6de9a9-8779-429a-bef7-12c2f9b42ed6")
 	)
 	(wire
 		(pts
@@ -2598,7 +2598,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 27.94 45.72 270)
+		(at 27.94 33.02 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2608,7 +2608,7 @@
 		(dnp no)
 		(uuid "7bf452af-71a0-4567-a619-606cd4b6d58a")
 		(property "Reference" "#PWR057"
-			(at 24.13 45.72 0)
+			(at 24.13 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2618,8 +2618,8 @@
 				)
 			)
 		)
-		(property "Value" "+3.3V"
-			(at 15.24 45.72 90)
+		(property "Value" "+5V"
+			(at 17.018 33.02 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2630,7 +2630,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 27.94 45.72 0)
+			(at 27.94 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2641,7 +2641,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 27.94 45.72 0)
+			(at 27.94 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2652,7 +2652,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 27.94 45.72 0)
+			(at 27.94 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3181,7 +3181,7 @@
 	)
 	(symbol
 		(lib_id "customs:SPLIT_5-3_Conn_01x08")
-		(at 22.86 40.64 180)
+		(at 22.86 35.56 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3192,7 +3192,7 @@
 		(fields_autoplaced yes)
 		(uuid "de3e84fb-280b-47cf-8eda-993c40e8caf1")
 		(property "Reference" "J4"
-			(at 22.86 31.75 0)
+			(at 22.86 26.67 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3202,7 +3202,7 @@
 			)
 		)
 		(property "Value" "MOTOR PHASE"
-			(at 22.86 34.29 0)
+			(at 22.86 29.21 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3211,8 +3211,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_PH_S8B-PH-K_1x08_P2.00mm_Horizontal"
-			(at 22.86 38.1 0)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
+			(at 22.86 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3223,7 +3223,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 22.86 40.64 0)
+			(at 22.86 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3234,7 +3234,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 23.114 42.164 0)
+			(at 23.114 37.084 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3279,7 +3279,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 27.94 48.26 90)
+		(at 27.94 35.56 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3289,7 +3289,7 @@
 		(dnp no)
 		(uuid "ec69647d-bc2b-4952-9ef7-2ff7cb15a025")
 		(property "Reference" "#PWR058"
-			(at 34.29 48.26 0)
+			(at 34.29 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3300,7 +3300,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 17.272 48.26 90)
+			(at 17.272 35.56 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3311,7 +3311,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 27.94 48.26 0)
+			(at 27.94 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3322,7 +3322,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 27.94 48.26 0)
+			(at 27.94 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3333,7 +3333,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 27.94 48.26 0)
+			(at 27.94 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
