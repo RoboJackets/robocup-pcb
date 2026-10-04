@@ -196,9 +196,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/1e40acf6-717b-4faa-8a28-5b02c685b3b7/7fe5e7f2-024c-4823-a803-a0beb87f7905")
 		(sheetname "/ESP32-C5/")
 		(sheetfile "02_ESP32.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -260,6 +267,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U1-U0TXD{slash}GPIO11)")
+			(pintype "passive")
 			(uuid "17e9a468-f5f5-4ea3-825a-d8aaf49bac42")
 		)
 		(pad "2" smd roundrect
@@ -268,6 +276,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(R7-Pad2)")
+			(pintype "passive")
 			(uuid "0f2508fc-8c9e-4727-ad8a-b9b3ef78506c")
 		)
 		(embedded_fonts no)
@@ -396,9 +405,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/2ff95fff-49b1-4d01-9cac-1cb6dbac2b66/7ba57250-bec0-4f91-89dd-042efc94c6db")
 		(sheetname "/Power/")
 		(sheetfile "01_Power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -460,6 +476,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U3-VIN2)")
+			(pintype "passive")
 			(uuid "a64c0596-9d7b-4eef-b3e2-cc963101c29c")
 		)
 		(pad "2" smd roundrect
@@ -468,6 +485,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "e79bf9b3-4160-4937-aa61-7ff15b22363d")
 		)
 		(embedded_fonts no)
@@ -573,9 +591,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "SOT?5?3*")
 		(path "/2ff95fff-49b1-4d01-9cac-1cb6dbac2b66/17ffbd9b-a827-4aca-bfcb-b70834dc11c8")
 		(sheetname "/Power/")
 		(sheetfile "01_Power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "3" "4" "5" "6" "1" "7" "2" "8")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -718,6 +743,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1666666667)
 			(net "GND")
+			(pinfunction "GND_1")
+			(pintype "power_in")
 			(thermal_bridge_angle 45)
 			(uuid "43a73330-1266-441a-b80a-52b8aac1688a")
 		)
@@ -727,6 +754,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1666666667)
 			(net "+3V3")
+			(pinfunction "VOUT_2")
+			(pintype "power_out")
 			(thermal_bridge_angle 45)
 			(uuid "7f75588e-2266-489a-a90b-1b9ad2e2fc98")
 		)
@@ -736,6 +765,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1666666667)
 			(net "+3V3_HOST")
+			(pinfunction "VIN1_3")
+			(pintype "power_in")
 			(thermal_bridge_angle 45)
 			(uuid "30cfa7e0-dadf-4d56-aa9c-58f61038ad30")
 		)
@@ -745,6 +776,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1666666667)
 			(net "/Power/U3_PR1")
+			(pinfunction "PR1_4")
+			(pintype "input")
 			(thermal_bridge_angle 45)
 			(uuid "42d41ad8-3f35-4510-9034-7f1787f42546")
 		)
@@ -754,6 +787,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1666666667)
 			(net "+3V3_HOST")
+			(pinfunction "MODE_5")
+			(pintype "input")
 			(thermal_bridge_angle 45)
 			(uuid "bca27bd6-d145-4491-bb86-44d222061af4")
 		)
@@ -763,6 +798,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1666666667)
 			(net "Net-(U3-VIN2)")
+			(pinfunction "VIN2_6")
+			(pintype "power_in")
 			(thermal_bridge_angle 45)
 			(uuid "edd9197e-153c-4602-a5c1-f732a7696b50")
 		)
@@ -772,6 +809,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1666666667)
 			(net "+3V3")
+			(pinfunction "VOUT_7")
+			(pintype "power_out")
 			(thermal_bridge_angle 45)
 			(uuid "9a4b1640-5923-4c5e-9991-14d665e69c9f")
 		)
@@ -781,6 +820,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1666666667)
 			(net "/ESP32-C5/PWR_SRC_HOST")
+			(pinfunction "ST_8")
+			(pintype "open_collector")
 			(thermal_bridge_angle 45)
 			(uuid "dd2e76a3-d4fd-4426-b403-1590aa95af97")
 		)
@@ -890,6 +931,12 @@
 		(path "/1e40acf6-717b-4faa-8a28-5b02c685b3b7/228c0a6d-e2ad-45d1-b4c9-7ca08bb9817d")
 		(sheetname "/ESP32-C5/")
 		(sheetfile "02_ESP32.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1243,6 +1290,8 @@
 			(size 1.8 1.1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
+			(pinfunction "1_1")
+			(pintype "passive")
 			(uuid "eed33f8c-f9cf-40c2-a31b-137b892a5fcd")
 		)
 		(pad "1" smd rect
@@ -1250,6 +1299,8 @@
 			(size 1.8 1.1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
+			(pinfunction "1_1")
+			(pintype "passive")
 			(uuid "1af904c4-6b86-445a-bfca-70088d765eb3")
 		)
 		(pad "2" smd rect
@@ -1257,6 +1308,8 @@
 			(size 1.8 1.1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(U1-GPIO28)")
+			(pinfunction "2_2")
+			(pintype "passive")
 			(uuid "e9fdf6ba-10a1-46b6-9032-db11c1ab1719")
 		)
 		(pad "2" smd rect
@@ -1264,6 +1317,8 @@
 			(size 1.8 1.1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(U1-GPIO28)")
+			(pinfunction "2_2")
+			(pintype "passive")
 			(uuid "1d5f1b5d-fa7c-46db-bc8c-145f0ee24153")
 		)
 		(zone
@@ -1452,9 +1507,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/2ff95fff-49b1-4d01-9cac-1cb6dbac2b66/0b3247c0-7457-40d6-95fe-f937e71cc745")
 		(sheetname "/Power/")
 		(sheetfile "01_Power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1516,6 +1578,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3V3_HOST")
+			(pintype "passive")
 			(uuid "54183d46-7bb6-4683-a6ab-ca0e2b5162b1")
 		)
 		(pad "2" smd roundrect
@@ -1524,6 +1587,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "43a8e75e-55b7-4439-a086-f8f2cc0a291f")
 		)
 		(embedded_fonts no)
@@ -1632,6 +1696,12 @@
 		(path "/2b09e6e8-3abe-4dbc-82f5-49519564e645/ddefb2cc-d569-4eaa-8d90-09e47826d0d5")
 		(sheetname "/Controlboard Link/")
 		(sheetfile "04_Link.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "5" "4" "3" "8" "10" "9" "6" "7")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1773,6 +1843,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/Controlboard Link/ESP_EN")
+			(pinfunction "D1+_1")
+			(pintype "passive")
 			(uuid "d6aa554f-9b05-4db9-99ca-651abe432b16")
 		)
 		(pad "2" smd roundrect
@@ -1781,6 +1853,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/Controlboard Link/ESP_DATA_READY")
+			(pinfunction "D1-_2")
+			(pintype "passive")
 			(uuid "ef8071c3-9b92-46a1-8ff5-b5771c248a81")
 		)
 		(pad "3" smd roundrect
@@ -1789,6 +1863,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "~_3")
+			(pintype "passive")
 			(uuid "c839d3fa-760c-49e9-bb50-606e71b37ca8")
 		)
 		(pad "4" smd roundrect
@@ -1797,6 +1873,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/Controlboard Link/ESP_HANDSHAKE")
+			(pinfunction "D2+_4")
+			(pintype "passive")
 			(uuid "59e76034-040a-4332-81f7-e7d465e1b596")
 		)
 		(pad "5" smd roundrect
@@ -1805,6 +1883,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U6-D2--Pad5)")
+			(pinfunction "D2-_5")
+			(pintype "passive+no_connect")
 			(uuid "2c50d1a8-a6a5-4253-a176-ad88fd583a71")
 		)
 		(pad "6" smd roundrect
@@ -1813,6 +1893,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U6-D2-_FT-Pad6)")
+			(pinfunction "D2-_FT_6")
+			(pintype "passive+no_connect")
 			(uuid "586620ca-c300-4e4a-913e-d9f4bfa8d92d")
 		)
 		(pad "7" smd roundrect
@@ -1821,6 +1903,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/Controlboard Link/ESP_HANDSHAKE")
+			(pinfunction "D2+_FT_7")
+			(pintype "passive")
 			(uuid "96969d4a-2bc5-41a0-99e2-677840122019")
 		)
 		(pad "8" smd roundrect
@@ -1829,6 +1913,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "~_8")
+			(pintype "passive")
 			(uuid "606a19fa-1b02-47a6-ae46-689f1c6bf4f6")
 		)
 		(pad "9" smd roundrect
@@ -1837,6 +1923,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/Controlboard Link/ESP_DATA_READY")
+			(pinfunction "D1-_FT_9")
+			(pintype "passive")
 			(uuid "6f098f68-a468-4538-b983-29191c407d2c")
 		)
 		(pad "10" smd roundrect
@@ -1845,6 +1933,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/Controlboard Link/ESP_EN")
+			(pinfunction "D1+_FT_10")
+			(pintype "passive")
 			(uuid "c13737ba-3c2e-4a13-99d9-5d5cca62a671")
 		)
 		(embedded_fonts no)
@@ -1973,9 +2063,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/1e40acf6-717b-4faa-8a28-5b02c685b3b7/d96b19d1-06f4-46dd-807b-0ee1cf71d281")
 		(sheetname "/ESP32-C5/")
 		(sheetfile "02_ESP32.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2037,6 +2134,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U1-EN{slash}CHIP_PU)")
+			(pintype "passive")
 			(uuid "bc34e6e4-ca91-4a45-833b-351c7da210f0")
 		)
 		(pad "2" smd roundrect
@@ -2045,6 +2143,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "70d1c3d6-ac32-4369-8c81-ccbf9a7e132a")
 		)
 		(embedded_fonts no)
@@ -2282,9 +2381,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/2ff95fff-49b1-4d01-9cac-1cb6dbac2b66/9d99b15f-3416-4fe0-8fb6-e7a93695f3e6")
 		(sheetname "/Power/")
 		(sheetfile "01_Power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2346,6 +2452,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/Power/U3_PR1")
+			(pintype "passive")
 			(uuid "c61dcc24-4dd3-4892-bb75-89b82708f7d1")
 		)
 		(pad "2" smd roundrect
@@ -2354,6 +2461,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "1fed6a97-a4bf-4fce-8829-9efaa8a1a88d")
 		)
 		(embedded_fonts no)
@@ -2482,9 +2590,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/2ff95fff-49b1-4d01-9cac-1cb6dbac2b66/d7b5f04a-e2b7-4d99-98e4-2bff1067977a")
 		(sheetname "/Power/")
 		(sheetfile "01_Power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2546,6 +2661,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/ESP32-C5/PWR_SRC_HOST")
+			(pintype "passive")
 			(uuid "5064d2bf-15ca-4beb-bb38-e4a7fb81a8b5")
 		)
 		(pad "2" smd roundrect
@@ -2554,6 +2670,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/Power/U3_PR1")
+			(pintype "passive")
 			(uuid "98494c27-75ac-475a-9d7a-8d45a084339c")
 		)
 		(embedded_fonts no)
@@ -2682,9 +2799,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/2ff95fff-49b1-4d01-9cac-1cb6dbac2b66/22cfbf2d-581c-4c37-bce7-738dc718f063")
 		(sheetname "/Power/")
 		(sheetfile "01_Power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2746,6 +2870,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3V3")
+			(pintype "passive")
 			(uuid "3fd36ac5-841c-4a58-bb54-ee8d3d509139")
 		)
 		(pad "2" smd roundrect
@@ -2754,6 +2879,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "6548f2eb-5813-421e-a31c-21633c683343")
 		)
 		(embedded_fonts no)
@@ -2882,9 +3008,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/2ff95fff-49b1-4d01-9cac-1cb6dbac2b66/6ed98ee0-b03c-42aa-be04-4f199d7e26ed")
 		(sheetname "/Power/")
 		(sheetfile "01_Power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2946,6 +3079,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3V3")
+			(pintype "passive")
 			(uuid "a93e670c-0a61-4a9f-9137-e5fc3fc77fad")
 		)
 		(pad "2" smd roundrect
@@ -2954,6 +3088,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(D3-A)")
+			(pintype "passive")
 			(uuid "fc124722-bcef-4ea5-9fc3-f7cd9ecb2378")
 		)
 		(embedded_fonts no)
@@ -3082,9 +3217,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/1e40acf6-717b-4faa-8a28-5b02c685b3b7/1448afb3-d13d-4c26-9d8d-36ccc8b5d29c")
 		(sheetname "/ESP32-C5/")
 		(sheetfile "02_ESP32.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3146,6 +3288,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3V3")
+			(pintype "passive")
 			(uuid "a1fa2ed3-19aa-47f7-ab2a-553289d0b8c4")
 		)
 		(pad "2" smd roundrect
@@ -3154,6 +3297,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "936c43c4-b7d7-4e09-bbe7-48aba2f08a3a")
 		)
 		(embedded_fonts no)
@@ -3271,9 +3415,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/1e40acf6-717b-4faa-8a28-5b02c685b3b7/fe8b11a5-088b-47c4-ac4d-1b90d2512278")
 		(sheetname "/ESP32-C5/")
 		(sheetfile "02_ESP32.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3384,6 +3535,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "K_1")
+			(pintype "passive")
 			(uuid "99ce2c18-03d9-4f14-88b5-defb66933ea7")
 		)
 		(pad "2" smd roundrect
@@ -3392,6 +3545,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(D1-A)")
+			(pinfunction "A_2")
+			(pintype "passive")
 			(uuid "2b917da9-b51b-436e-ad84-df587af252b8")
 		)
 		(embedded_fonts no)
@@ -3509,9 +3664,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "SOT?23*")
 		(path "/93b0df52-048d-4e85-82fa-2a8a90c41d7f/8552ddcb-952c-4084-acb4-47d5d1df0b66")
 		(sheetname "/USB/")
 		(sheetfile "03_USB.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "5" "2" "6" "4")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3735,6 +3897,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/USB/USB_DN_CON")
+			(pinfunction "I/O1_1")
+			(pintype "passive")
 			(uuid "80da03a0-b3f3-42f8-9e94-b7caf4bef2e3")
 		)
 		(pad "2" smd roundrect
@@ -3743,6 +3907,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "GND_2")
+			(pintype "passive")
 			(uuid "ba749621-b0d4-4b8a-8bfb-abee8537eb97")
 		)
 		(pad "3" smd roundrect
@@ -3751,6 +3917,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/USB/USB_DP_CON")
+			(pinfunction "I/O2_3")
+			(pintype "passive")
 			(uuid "f4f595b3-36d3-41aa-93d8-3d31612fc04e")
 		)
 		(pad "4" smd roundrect
@@ -3759,6 +3927,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/ESP32-C5/USB_DP")
+			(pinfunction "I/O2_4")
+			(pintype "passive")
 			(uuid "5375a32f-075a-4365-9e7d-7a39070cd5fb")
 		)
 		(pad "5" smd roundrect
@@ -3767,6 +3937,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3V3")
+			(pinfunction "VBUS_5")
+			(pintype "passive")
 			(uuid "3f6ceec6-10f1-4e63-97d7-046a36e801b1")
 		)
 		(pad "6" smd roundrect
@@ -3775,6 +3947,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/ESP32-C5/USB_DN")
+			(pinfunction "I/O1_6")
+			(pintype "passive")
 			(uuid "627892a0-ddef-4410-9e0d-54217a877cb6")
 		)
 		(embedded_fonts no)
@@ -3892,9 +4066,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "WSON*1EP*2x2mm*P0.65mm*EP1x1.6mm*")
 		(path "/93b0df52-048d-4e85-82fa-2a8a90c41d7f/bae83ea7-3819-46c9-97c6-a2e943e407bf")
 		(sheetname "/USB/")
 		(sheetfile "03_USB.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "4" "5" "6" "1" "2" "3" "7")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4092,6 +4273,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "GND_1")
+			(pintype "power_in")
 			(uuid "96c5c86c-303d-4ac3-b980-b7cd752e80e4")
 		)
 		(pad "2" smd roundrect
@@ -4100,6 +4283,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "GND_2")
+			(pintype "passive")
 			(uuid "dc9d8dd9-c9d2-4c1f-a362-072412562b08")
 		)
 		(pad "3" smd roundrect
@@ -4108,6 +4293,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "GND_3")
+			(pintype "passive")
 			(uuid "9a2a2352-f25f-4c33-a6f8-edf26d47c1ee")
 		)
 		(pad "4" smd roundrect
@@ -4116,6 +4303,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(D2-IN-Pad4)")
+			(pinfunction "IN_4")
+			(pintype "passive")
 			(uuid "f77d6541-2147-4ee4-85ac-4be7ae1bd8ae")
 		)
 		(pad "5" smd roundrect
@@ -4124,6 +4313,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(D2-IN-Pad4)")
+			(pinfunction "IN_5")
+			(pintype "passive")
 			(uuid "cb10ec62-779c-4675-ba96-86fe6470d9e5")
 		)
 		(pad "6" smd roundrect
@@ -4132,6 +4323,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(D2-IN-Pad4)")
+			(pinfunction "IN_6")
+			(pintype "passive")
 			(uuid "790973fe-aea6-4208-bff5-fb1e7a47452e")
 		)
 		(pad "7" smd rect
@@ -4140,6 +4333,8 @@
 			(property pad_prop_heatsink)
 			(layers "F.Cu" "F.Mask")
 			(net "GND")
+			(pinfunction "GND_7")
+			(pintype "passive")
 			(zone_connect 2)
 			(uuid "2e59a718-2fec-4b97-a25d-a3edf6f10656")
 		)
@@ -4269,9 +4464,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/1e40acf6-717b-4faa-8a28-5b02c685b3b7/d5f66949-b329-4c3e-a987-2357bf13ab09")
 		(sheetname "/ESP32-C5/")
 		(sheetfile "02_ESP32.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4333,6 +4535,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U1-GPIO13{slash}USB_D-)")
+			(pintype "passive")
 			(uuid "a121219a-ddeb-4278-9fb6-23be28540e89")
 		)
 		(pad "2" smd roundrect
@@ -4341,6 +4544,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/ESP32-C5/USB_DN")
+			(pintype "passive")
 			(uuid "b30789ca-d77c-4929-b47d-e6b2db85675d")
 		)
 		(embedded_fonts no)
@@ -4458,9 +4662,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "*polyfuse* *PTC*")
 		(path "/93b0df52-048d-4e85-82fa-2a8a90c41d7f/6c1be85b-151c-4fb1-bd29-61a7adbb274b")
 		(sheetname "/USB/")
 		(sheetfile "03_USB.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4522,6 +4733,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.222222)
 			(net "VBUS")
+			(pintype "passive")
 			(uuid "8e067a8b-ff46-49ed-b769-3f4375717b0d")
 		)
 		(pad "2" smd roundrect
@@ -4530,6 +4742,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.222222)
 			(net "Net-(D2-IN-Pad4)")
+			(pintype "passive")
 			(uuid "9437daae-2343-4c5d-b32a-f42996138563")
 		)
 		(embedded_fonts no)
@@ -4635,9 +4848,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "SOT?223*")
 		(path "/2ff95fff-49b1-4d01-9cac-1cb6dbac2b66/2c9f4e1e-740d-439f-af73-824bcdd8f702")
 		(sheetname "/Power/")
 		(sheetfile "01_Power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4799,6 +5019,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "VBUS")
+			(pinfunction "VI_1")
+			(pintype "power_in")
 			(uuid "a9e3f695-2bb2-42f2-8ec7-2242bfebd3c1")
 		)
 		(pad "2" smd roundrect
@@ -4807,6 +5029,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "GND_2")
+			(pintype "power_in")
 			(uuid "fe0e60fc-9fea-41c7-b358-accce5c37c25")
 		)
 		(pad "2" smd roundrect
@@ -4815,6 +5039,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "GND_2")
+			(pintype "power_in")
 			(uuid "afea80f4-b295-49d2-8712-f57b6fb7afc8")
 		)
 		(pad "3" smd roundrect
@@ -4823,6 +5049,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U3-VIN2)")
+			(pinfunction "VO_3")
+			(pintype "power_out")
 			(uuid "ca7a1ff6-6692-487e-9f2c-3c34147402ca")
 		)
 		(embedded_fonts no)
@@ -4951,9 +5179,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/93b0df52-048d-4e85-82fa-2a8a90c41d7f/83b083ff-817f-4f38-86d2-67a09c1a7519")
 		(sheetname "/USB/")
 		(sheetfile "03_USB.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5015,6 +5250,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(J1-CC2)")
+			(pintype "passive")
 			(uuid "bcd75449-fd56-4b49-84ad-c3f0754d875f")
 		)
 		(pad "2" smd roundrect
@@ -5023,6 +5259,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "097591fd-55e5-4eb6-989d-dffb1b2625f7")
 		)
 		(embedded_fonts no)
@@ -5151,9 +5388,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/1e40acf6-717b-4faa-8a28-5b02c685b3b7/8a6ccd8f-72b9-4195-bbbd-757fbc7edb2c")
 		(sheetname "/ESP32-C5/")
 		(sheetfile "02_ESP32.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5215,6 +5459,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3V3")
+			(pintype "passive")
 			(uuid "fc1423fd-f9cb-43c7-b62b-ab144d2f0eac")
 		)
 		(pad "2" smd roundrect
@@ -5223,6 +5468,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U1-EN{slash}CHIP_PU)")
+			(pintype "passive")
 			(uuid "53acf9fd-6377-4ff3-8410-f509b13202c9")
 		)
 		(embedded_fonts no)
@@ -5351,9 +5597,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/1e40acf6-717b-4faa-8a28-5b02c685b3b7/e70f0b29-9674-4bae-97a1-f0c2b3533adb")
 		(sheetname "/ESP32-C5/")
 		(sheetfile "02_ESP32.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5415,6 +5668,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3V3")
+			(pintype "passive")
 			(uuid "e9e9afba-e1b8-4a2e-b815-231ffef4ab1e")
 		)
 		(pad "2" smd roundrect
@@ -5423,6 +5677,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U1-GPIO28)")
+			(pintype "passive")
 			(uuid "cb2e823d-c806-4138-af79-78fed7195f64")
 		)
 		(embedded_fonts no)
@@ -5601,10 +5856,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/1e40acf6-717b-4faa-8a28-5b02c685b3b7/3eb7bdbf-91b9-4b43-b9ad-b672cd82b121")
 		(sheetname "/ESP32-C5/")
 		(sheetfile "02_ESP32.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -5644,6 +5906,8 @@
 			(size 1 1)
 			(layers "F.Cu" "F.Mask")
 			(net "Net-(R7-Pad2)")
+			(pinfunction "1_1")
+			(pintype "passive")
 			(uuid "437813e0-4226-4d50-b3f1-0b1e491b6355")
 		)
 		(embedded_fonts no)
@@ -5761,9 +6025,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/2ff95fff-49b1-4d01-9cac-1cb6dbac2b66/f3b93b05-60c9-4758-bb7d-d4c94d569234")
 		(sheetname "/Power/")
 		(sheetfile "01_Power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5825,6 +6096,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3V3_HOST")
+			(pintype "passive")
 			(uuid "39992514-0790-452e-9759-45ef9dea6405")
 		)
 		(pad "2" smd roundrect
@@ -5833,6 +6105,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/Power/U3_PR1")
+			(pintype "passive")
 			(uuid "744745b1-f19b-4791-84e7-914d224ac9c7")
 		)
 		(embedded_fonts no)
@@ -5902,10 +6175,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/1e40acf6-717b-4faa-8a28-5b02c685b3b7/521745cf-a133-4d5d-93d2-ec643720ebe2")
 		(sheetname "/ESP32-C5/")
 		(sheetfile "02_ESP32.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -5945,6 +6225,8 @@
 			(size 1 1)
 			(layers "F.Cu" "F.Mask")
 			(net "Net-(U1-U0RXD{slash}GPIO12)")
+			(pinfunction "1_1")
+			(pintype "passive")
 			(uuid "e8b279e5-cff7-44a8-a1c3-c57c0d13f3f6")
 		)
 		(embedded_fonts no)
@@ -6042,6 +6324,12 @@
 		(path "/2b09e6e8-3abe-4dbc-82f5-49519564e645/cbb4c395-1147-48f6-8be6-1ad11e291ac3")
 		(sheetname "/Controlboard Link/")
 		(sheetfile "04_Link.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "5" "4" "3" "8" "10" "9" "6" "7")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6183,6 +6471,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/Controlboard Link/ESP_SPI_MISO")
+			(pinfunction "D1+_1")
+			(pintype "passive")
 			(uuid "dcde01a9-2af0-4c3c-9793-b1cdcd2068c7")
 		)
 		(pad "2" smd roundrect
@@ -6191,6 +6481,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/Controlboard Link/ESP_SPI_SCK")
+			(pinfunction "D1-_2")
+			(pintype "passive")
 			(uuid "3e581a57-c72a-4952-80c8-b3536b9c8638")
 		)
 		(pad "3" smd roundrect
@@ -6199,6 +6491,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "~_3")
+			(pintype "passive")
 			(uuid "282425cd-b504-425f-be64-e25a960b0065")
 		)
 		(pad "4" smd roundrect
@@ -6207,6 +6501,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/Controlboard Link/ESP_SPI_MOSI")
+			(pinfunction "D2+_4")
+			(pintype "passive")
 			(uuid "bb839c8d-2c68-4572-8798-68c991128fa3")
 		)
 		(pad "5" smd roundrect
@@ -6215,6 +6511,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/Controlboard Link/ESP_SPI_CS")
+			(pinfunction "D2-_5")
+			(pintype "passive")
 			(uuid "e3364a2a-1faf-44db-a852-6a1f2af3731d")
 		)
 		(pad "6" smd roundrect
@@ -6223,6 +6521,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/Controlboard Link/ESP_SPI_CS")
+			(pinfunction "D2-_FT_6")
+			(pintype "passive")
 			(uuid "2cbd80b1-8ce8-4486-a8b5-c9624ec02b81")
 		)
 		(pad "7" smd roundrect
@@ -6231,6 +6531,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/Controlboard Link/ESP_SPI_MOSI")
+			(pinfunction "D2+_FT_7")
+			(pintype "passive")
 			(uuid "76af911c-4fc7-4773-bb66-8c1a77aac67f")
 		)
 		(pad "8" smd roundrect
@@ -6239,6 +6541,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "~_8")
+			(pintype "passive")
 			(uuid "0299f6bf-cb2e-40de-950e-454b69d7e26f")
 		)
 		(pad "9" smd roundrect
@@ -6247,6 +6551,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/Controlboard Link/ESP_SPI_SCK")
+			(pinfunction "D1-_FT_9")
+			(pintype "passive")
 			(uuid "0945f217-9240-407a-a78e-23083cf5d027")
 		)
 		(pad "10" smd roundrect
@@ -6255,6 +6561,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/Controlboard Link/ESP_SPI_MISO")
+			(pinfunction "D1+_FT_10")
+			(pintype "passive")
 			(uuid "0d2b6529-ef4b-4f32-9e6d-c76beeb6ce10")
 		)
 		(embedded_fonts no)
@@ -6383,9 +6691,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/2ff95fff-49b1-4d01-9cac-1cb6dbac2b66/3031f91c-3b9a-4007-b91e-874f2b49552c")
 		(sheetname "/Power/")
 		(sheetfile "01_Power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6447,6 +6762,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3V3")
+			(pintype "passive")
 			(uuid "92625107-92c5-4095-9278-4ff9738b5272")
 		)
 		(pad "2" smd roundrect
@@ -6455,6 +6771,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "a80c1de4-7185-4c6f-adc3-9c897504579b")
 		)
 		(embedded_fonts no)
@@ -6583,9 +6900,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/1e40acf6-717b-4faa-8a28-5b02c685b3b7/bf7a4a89-c8d7-4200-9af5-c778408ffe56")
 		(sheetname "/ESP32-C5/")
 		(sheetfile "02_ESP32.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6647,6 +6971,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/Controlboard Link/ESP_SPI_MISO")
+			(pintype "passive")
 			(uuid "9618d94b-46de-4138-9fb7-2bd55d7991cc")
 		)
 		(pad "2" smd roundrect
@@ -6655,6 +6980,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U1-GPIO2)")
+			(pintype "passive")
 			(uuid "d68d9b11-6d20-4d1d-9582-3b44a7f6a0a9")
 		)
 		(embedded_fonts no)
@@ -6882,9 +7208,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/2ff95fff-49b1-4d01-9cac-1cb6dbac2b66/22de6b3d-df76-46c5-917b-9a8f4851f02e")
 		(sheetname "/Power/")
 		(sheetfile "01_Power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6995,6 +7328,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "K_1")
+			(pintype "passive")
 			(uuid "573e3f12-456b-4601-af98-08a157f861bc")
 		)
 		(pad "2" smd roundrect
@@ -7003,6 +7338,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(D3-A)")
+			(pinfunction "A_2")
+			(pintype "passive")
 			(uuid "8b35126d-bf29-41f4-afb7-1a9ddc82b83e")
 		)
 		(embedded_fonts no)
@@ -7240,9 +7577,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/1e40acf6-717b-4faa-8a28-5b02c685b3b7/0fc5955a-3ae4-41b8-a572-820c4e8530f3")
 		(sheetname "/ESP32-C5/")
 		(sheetfile "02_ESP32.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7304,6 +7648,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/Controlboard Link/ESP_EN")
+			(pintype "passive")
 			(uuid "69bd4742-1695-47ee-a4d0-25306301d2d6")
 		)
 		(pad "2" smd roundrect
@@ -7312,6 +7657,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U1-EN{slash}CHIP_PU)")
+			(pintype "passive")
 			(uuid "559294b1-185d-481e-a068-025e306d7485")
 		)
 		(embedded_fonts no)
@@ -7452,9 +7798,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/1e40acf6-717b-4faa-8a28-5b02c685b3b7/329f2208-c5ee-4701-aa50-b5e258de47aa")
 		(sheetname "/ESP32-C5/")
 		(sheetfile "02_ESP32.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7516,6 +7869,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U1-GPIO28)")
+			(pintype "passive")
 			(uuid "018b84d5-739a-49bd-87ec-4b86b007f7ba")
 		)
 		(pad "2" smd roundrect
@@ -7524,6 +7878,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "1908bcf0-7ab8-48b5-899a-06ed49e3aab2")
 		)
 		(embedded_fonts no)
@@ -7652,9 +8007,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/1e40acf6-717b-4faa-8a28-5b02c685b3b7/43a858d4-66db-418d-b5e7-3c1ffbeb8620")
 		(sheetname "/ESP32-C5/")
 		(sheetfile "02_ESP32.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7716,6 +8078,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3V3")
+			(pintype "passive")
 			(uuid "bba86c71-2811-41d0-8a66-f77184b51fa8")
 		)
 		(pad "2" smd roundrect
@@ -7724,6 +8087,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "6fb1018f-dbc2-43d5-82e7-be024bd0aea2")
 		)
 		(embedded_fonts no)
@@ -7852,9 +8216,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/93b0df52-048d-4e85-82fa-2a8a90c41d7f/9374c764-85b4-46fc-b0a9-901ab373dbfc")
 		(sheetname "/USB/")
 		(sheetfile "03_USB.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7916,6 +8287,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(J1-CC1)")
+			(pintype "passive")
 			(uuid "2b81bcbf-3806-4f59-9cb1-6d4dcb33e64a")
 		)
 		(pad "2" smd roundrect
@@ -7924,6 +8296,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "a1278f38-a439-4b50-ae78-02b05e9d1149")
 		)
 		(embedded_fonts no)
@@ -8052,9 +8425,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/1e40acf6-717b-4faa-8a28-5b02c685b3b7/b384b0f9-2db5-43fd-8e73-3effc875dc6e")
 		(sheetname "/ESP32-C5/")
 		(sheetfile "02_ESP32.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8116,6 +8496,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U1-GPIO14{slash}USB_D+)")
+			(pintype "passive")
 			(uuid "2e6d4a6e-e78f-4ad8-90f3-0a0f8bfa2d26")
 		)
 		(pad "2" smd roundrect
@@ -8124,6 +8505,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/ESP32-C5/USB_DP")
+			(pintype "passive")
 			(uuid "b3059b5f-0fb6-471e-9b6c-5b487087948c")
 		)
 		(embedded_fonts no)
@@ -8232,6 +8614,12 @@
 		(path "/1e40acf6-717b-4faa-8a28-5b02c685b3b7/5ffeae48-64af-4abd-95f2-e9b1c137376c")
 		(sheetname "/ESP32-C5/")
 		(sheetfile "02_ESP32.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8585,6 +8973,8 @@
 			(size 1.8 1.1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
+			(pinfunction "1_1")
+			(pintype "passive")
 			(uuid "28e4b799-bb0e-479a-b0c2-a8dba77039a1")
 		)
 		(pad "1" smd rect
@@ -8592,6 +8982,8 @@
 			(size 1.8 1.1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
+			(pinfunction "1_1")
+			(pintype "passive")
 			(uuid "f7efcb2e-058d-4eb8-9692-030f72e89645")
 		)
 		(pad "2" smd rect
@@ -8599,6 +8991,8 @@
 			(size 1.8 1.1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(U1-EN{slash}CHIP_PU)")
+			(pinfunction "2_2")
+			(pintype "passive")
 			(uuid "b222159b-dcd3-4df5-b492-7d40427583e9")
 		)
 		(pad "2" smd rect
@@ -8606,6 +9000,8 @@
 			(size 1.8 1.1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(U1-EN{slash}CHIP_PU)")
+			(pinfunction "2_2")
+			(pintype "passive")
 			(uuid "b7da0647-1549-4d37-b530-c971edd41c03")
 		)
 		(zone
@@ -8771,9 +9167,19 @@
 				)
 			)
 		)
+		(property ki_fp_filters "ESP32-C5-WROOM-1U*")
 		(path "/1e40acf6-717b-4faa-8a28-5b02c685b3b7/ecd3a822-8622-4384-8c03-8f58040f929e")
 		(sheetname "/ESP32-C5/")
 		(sheetfile "02_ESP32.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "3" "31" "4" "5" "16" "17" "6" "7" "8" "9" "10" "11" "12" "2" "30"
+					"32" "1" "28" "29" "24" "25" "13" "14" "15" "18" "19" "21" "23" "26"
+					"27" "20" "22"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8932,6 +9338,8 @@
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
+			(pinfunction "GND_1")
+			(pintype "power_in")
 			(uuid "a9d94fc4-d17c-4d04-89e4-995e67da2625")
 		)
 		(pad "2" smd rect
@@ -8939,6 +9347,8 @@
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "+3V3")
+			(pinfunction "3V3_2")
+			(pintype "power_in")
 			(uuid "e054337f-8c39-4606-88e6-84ebaf72bcd7")
 		)
 		(pad "3" smd rect
@@ -8946,6 +9356,8 @@
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(U1-EN{slash}CHIP_PU)")
+			(pinfunction "EN/CHIP_PU_3")
+			(pintype "input")
 			(uuid "46583e39-757d-429d-9711-e22929dd26ef")
 		)
 		(pad "4" smd rect
@@ -8953,6 +9365,8 @@
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(U1-GPIO2)")
+			(pinfunction "GPIO2_4")
+			(pintype "bidirectional")
 			(uuid "20ddf563-ea37-4f32-bf0f-c91c21b34d30")
 		)
 		(pad "5" smd rect
@@ -8960,6 +9374,8 @@
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/Controlboard Link/ESP_HANDSHAKE")
+			(pinfunction "GPIO3_5")
+			(pintype "bidirectional")
 			(uuid "4f291f98-96fd-4234-96d1-20dd4f7d10c8")
 		)
 		(pad "6" smd rect
@@ -8967,6 +9383,8 @@
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(U1-GPIO0-Pad6)")
+			(pinfunction "GPIO0_6")
+			(pintype "bidirectional+no_connect")
 			(uuid "0fb444a8-40c1-4098-9d3e-f9ea74105cc3")
 		)
 		(pad "7" smd rect
@@ -8974,6 +9392,8 @@
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(U1-GPIO1-Pad7)")
+			(pinfunction "GPIO1_7")
+			(pintype "bidirectional+no_connect")
 			(uuid "7f1e4cfb-035e-4633-ad74-833c059cbb65")
 		)
 		(pad "8" smd rect
@@ -8981,6 +9401,8 @@
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/Controlboard Link/ESP_SPI_SCK")
+			(pinfunction "GPIO6_8")
+			(pintype "bidirectional")
 			(uuid "3ab66a70-ad8c-4764-bc99-161173b1edc7")
 		)
 		(pad "9" smd rect
@@ -8988,6 +9410,8 @@
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/Controlboard Link/ESP_SPI_MOSI")
+			(pinfunction "GPIO7_9")
+			(pintype "bidirectional")
 			(uuid "5b481cb3-d7bf-4f7c-8c6a-f560d09de709")
 		)
 		(pad "10" smd rect
@@ -8995,6 +9419,8 @@
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(U1-GPIO8-Pad10)")
+			(pinfunction "GPIO8_10")
+			(pintype "bidirectional+no_connect")
 			(uuid "e0e63799-c6b3-4af0-bfd2-8e765246d0aa")
 		)
 		(pad "11" smd rect
@@ -9002,6 +9428,8 @@
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/ESP32-C5/PWR_SRC_HOST")
+			(pinfunction "GPIO9_11")
+			(pintype "bidirectional")
 			(uuid "1653b819-de7e-477f-b180-3d8f05c3c468")
 		)
 		(pad "12" smd rect
@@ -9009,6 +9437,8 @@
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/Controlboard Link/ESP_SPI_CS")
+			(pinfunction "GPIO10_12")
+			(pintype "bidirectional")
 			(uuid "c9f5a045-a73d-46eb-a0ff-ce4480f1e1e4")
 		)
 		(pad "13" smd rect
@@ -9016,6 +9446,8 @@
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(U1-GPIO13{slash}USB_D-)")
+			(pinfunction "GPIO13/USB_D-_13")
+			(pintype "bidirectional")
 			(uuid "1c213c7f-e6a9-4aa4-9eab-e7c92078cdd9")
 		)
 		(pad "14" smd rect
@@ -9023,6 +9455,8 @@
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(U1-GPIO14{slash}USB_D+)")
+			(pinfunction "GPIO14/USB_D+_14")
+			(pintype "bidirectional")
 			(uuid "0b42708c-66cc-4f4a-a327-71780e8be779")
 		)
 		(pad "15" smd rect
@@ -9030,6 +9464,8 @@
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(U1-GPIO28)")
+			(pinfunction "GPIO28_15")
+			(pintype "bidirectional")
 			(uuid "3877d465-7e92-4f47-b291-7ae8b5fcdc4c")
 		)
 		(pad "16" smd rect
@@ -9037,6 +9473,8 @@
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(U1-GPIO5-Pad16)")
+			(pinfunction "GPIO5_16")
+			(pintype "bidirectional+no_connect")
 			(uuid "df952b9d-7e36-4759-9736-268a891cf4ee")
 		)
 		(pad "17" smd rect
@@ -9044,6 +9482,8 @@
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/Controlboard Link/ESP_DATA_READY")
+			(pinfunction "GPIO4_17")
+			(pintype "bidirectional")
 			(uuid "16722318-50cf-40b7-b023-6f5f54512679")
 		)
 		(pad "18" smd rect
@@ -9051,6 +9491,8 @@
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(U1-GPIO27-Pad18)")
+			(pinfunction "GPIO27_18")
+			(pintype "bidirectional+no_connect")
 			(uuid "5d42c59a-f7e7-4fca-9df1-ee88bc7202b5")
 		)
 		(pad "19" smd rect
@@ -9058,6 +9500,8 @@
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(U1-GPIO15-Pad19)")
+			(pinfunction "GPIO15_19")
+			(pintype "bidirectional+no_connect")
 			(uuid "47ae8ec5-6f30-4909-819a-f9fa22c1602a")
 		)
 		(pad "20" smd rect
@@ -9065,6 +9509,8 @@
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(U1-NC-Pad20)")
+			(pinfunction "NC_20")
+			(pintype "no_connect")
 			(uuid "e55230f9-64ce-4741-a4b0-6e6cea335683")
 		)
 		(pad "21" smd rect
@@ -9072,6 +9518,8 @@
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(U1-GPIO23-Pad21)")
+			(pinfunction "GPIO23_21")
+			(pintype "bidirectional+no_connect")
 			(uuid "4694390e-3440-4ed5-bd16-28f9d0b3bf0a")
 		)
 		(pad "22" smd rect
@@ -9079,6 +9527,8 @@
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(U1-NC-Pad22)")
+			(pinfunction "NC_22")
+			(pintype "no_connect")
 			(uuid "762a4ea5-109f-487f-8644-e0cddd7f1d45")
 		)
 		(pad "23" smd rect
@@ -9086,6 +9536,8 @@
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(U1-GPIO24)")
+			(pinfunction "GPIO24_23")
+			(pintype "bidirectional")
 			(uuid "0166686f-9e7a-4a16-bee5-43ec7086e5a0")
 		)
 		(pad "24" smd rect
@@ -9093,6 +9545,8 @@
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(U1-U0RXD{slash}GPIO12)")
+			(pinfunction "U0RXD/GPIO12_24")
+			(pintype "bidirectional")
 			(uuid "2fb1c579-f5a6-4f95-b712-14bfe93ae631")
 		)
 		(pad "25" smd rect
@@ -9100,6 +9554,8 @@
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(U1-U0TXD{slash}GPIO11)")
+			(pinfunction "U0TXD/GPIO11_25")
+			(pintype "bidirectional")
 			(uuid "d0253f65-aba8-4cb7-99ab-33ed338a8430")
 		)
 		(pad "26" smd rect
@@ -9107,6 +9563,8 @@
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(U1-GPIO25-Pad26)")
+			(pinfunction "GPIO25_26")
+			(pintype "bidirectional+no_connect")
 			(uuid "41b98960-2da7-4c85-9659-79f890431eb9")
 		)
 		(pad "27" smd rect
@@ -9114,6 +9572,8 @@
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(U1-GPIO26-Pad27)")
+			(pinfunction "GPIO26_27")
+			(pintype "bidirectional+no_connect")
 			(uuid "009ac27f-5c85-4a33-8534-70227fde22ac")
 		)
 		(pad "28" smd rect
@@ -9121,6 +9581,8 @@
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
+			(pinfunction "GND_28")
+			(pintype "passive")
 			(uuid "d470697c-707a-4e9a-b0da-048fabbc53a9")
 		)
 		(pad "29" smd rect
@@ -9128,6 +9590,8 @@
 			(size 1.3 1.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
+			(pinfunction "GND_29")
+			(pintype "passive")
 			(uuid "265fc913-fe66-44eb-92a7-1551c0b274d6")
 		)
 		(pad "29" smd rect
@@ -9135,6 +9599,8 @@
 			(size 1.3 1.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
+			(pinfunction "GND_29")
+			(pintype "passive")
 			(uuid "dd0df98a-ac7c-485a-89e8-c5423e5dc942")
 		)
 		(pad "29" smd rect
@@ -9142,6 +9608,8 @@
 			(size 1.3 1.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
+			(pinfunction "GND_29")
+			(pintype "passive")
 			(uuid "87a9f98e-78be-4519-9ce1-725e896bef6b")
 		)
 		(pad "29" smd rect
@@ -9149,6 +9617,8 @@
 			(size 1.3 1.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
+			(pinfunction "GND_29")
+			(pintype "passive")
 			(uuid "360bcd2d-dc44-4ac9-bfb4-8b366c0d0146")
 		)
 		(pad "29" smd rect
@@ -9156,6 +9626,8 @@
 			(size 1.3 1.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
+			(pinfunction "GND_29")
+			(pintype "passive")
 			(uuid "bbf762ae-0bd8-4687-9b54-1fa64ce1ad20")
 		)
 		(pad "29" smd rect
@@ -9163,6 +9635,8 @@
 			(size 1.3 1.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
+			(pinfunction "GND_29")
+			(pintype "passive")
 			(uuid "aa0c9a39-a0e7-4e21-af9d-561a4287923a")
 		)
 		(pad "29" smd rect
@@ -9170,6 +9644,8 @@
 			(size 1.3 1.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
+			(pinfunction "GND_29")
+			(pintype "passive")
 			(uuid "56e4438e-474e-4410-b7eb-dd6ffbaefa53")
 		)
 		(pad "29" smd rect
@@ -9177,6 +9653,8 @@
 			(size 1.3 1.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
+			(pinfunction "GND_29")
+			(pintype "passive")
 			(uuid "e6f79593-408f-4733-8b68-e31b71f64306")
 		)
 		(pad "29" smd rect
@@ -9184,6 +9662,8 @@
 			(size 1.3 1.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
+			(pinfunction "GND_29")
+			(pintype "passive")
 			(uuid "a5e454ed-ade9-4dbf-933a-d3d6d23e109e")
 		)
 		(pad "30" smd rect
@@ -9191,6 +9671,8 @@
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
+			(pinfunction "GND_30")
+			(pintype "passive")
 			(uuid "e7fd4e72-ad77-4721-a545-2c0af49a0a6f")
 		)
 		(pad "31" smd rect
@@ -9198,6 +9680,8 @@
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(U1-ANT2-Pad31)")
+			(pinfunction "ANT2_31")
+			(pintype "bidirectional+no_connect")
 			(uuid "60f92749-62d4-4d96-8637-1102070fde4e")
 		)
 		(pad "32" smd rect
@@ -9205,6 +9689,8 @@
 			(size 1.5 0.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
+			(pinfunction "GND_32")
+			(pintype "passive")
 			(uuid "1a8cf448-1fa7-453f-86e1-396de193a0ba")
 		)
 		(embedded_fonts no)
@@ -9310,9 +9796,18 @@
 				)
 			)
 		)
+		(property ki_fp_filters "USB*C*Receptacle*")
 		(path "/93b0df52-048d-4e85-82fa-2a8a90c41d7f/ec66aa5a-2c42-428a-afad-79b0b711819e")
 		(sheetname "/USB/")
 		(sheetfile "03_USB.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "SH" "A1" "A12" "B1" "B12" "A4" "A9" "B4" "B9" "A5" "B5" "A7" "B7"
+					"A6" "B6" "A8" "B8"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9641,6 +10136,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "GND_A1")
+			(pintype "passive")
 			(thermal_bridge_angle 45)
 			(uuid "ba658625-98f1-45b4-b2db-cc90e25dd0a3")
 		)
@@ -9650,6 +10147,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(D2-IN-Pad4)")
+			(pinfunction "VBUS_A4")
+			(pintype "passive")
 			(thermal_bridge_angle 45)
 			(uuid "149e6edd-6275-4809-81fd-b0d58ec36c7d")
 		)
@@ -9659,6 +10158,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(J1-CC1)")
+			(pinfunction "CC1_A5")
+			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "94d368d1-da42-4fd9-9166-09cd8cbb9c3d")
 		)
@@ -9668,6 +10169,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/USB/USB_DP_CON")
+			(pinfunction "D+_A6")
+			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "ba2f54fd-2866-4285-9196-787d406e1447")
 		)
@@ -9677,6 +10180,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/USB/USB_DN_CON")
+			(pinfunction "D-_A7")
+			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "7ea6a166-085b-48b7-a99e-7a2e9e764f3a")
 		)
@@ -9686,6 +10191,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "unconnected-(J1-SBU1-PadA8)")
+			(pinfunction "SBU1_A8")
+			(pintype "bidirectional+no_connect")
 			(thermal_bridge_angle 45)
 			(uuid "55b7e61e-ffcd-4dc5-9789-7783bee27e12")
 		)
@@ -9695,6 +10202,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(D2-IN-Pad4)")
+			(pinfunction "VBUS_A9")
+			(pintype "passive")
 			(thermal_bridge_angle 45)
 			(uuid "c43dda33-6393-4bb8-b459-fbc5e52b390f")
 		)
@@ -9704,6 +10213,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "GND_A12")
+			(pintype "passive")
 			(thermal_bridge_angle 45)
 			(uuid "86578037-7916-4362-be12-b7242aeac64d")
 		)
@@ -9713,6 +10224,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "GND_B1")
+			(pintype "passive")
 			(thermal_bridge_angle 45)
 			(uuid "8230d6aa-caeb-48d7-a917-4b2f364cdc14")
 		)
@@ -9722,6 +10235,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(D2-IN-Pad4)")
+			(pinfunction "VBUS_B4")
+			(pintype "passive")
 			(thermal_bridge_angle 45)
 			(uuid "e449628e-7384-49eb-b228-60b5cdfa2f0d")
 		)
@@ -9731,6 +10246,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(J1-CC2)")
+			(pinfunction "CC2_B5")
+			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "269c440a-84b3-4307-8203-e82947cc3d86")
 		)
@@ -9740,6 +10257,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/USB/USB_DP_CON")
+			(pinfunction "D+_B6")
+			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "4e9366b6-f524-445c-aba4-1b7e1ce2afc5")
 		)
@@ -9749,6 +10268,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/USB/USB_DN_CON")
+			(pinfunction "D-_B7")
+			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "3f71c2f2-1bfa-4ad2-acff-fb4cb28145ae")
 		)
@@ -9758,6 +10279,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "unconnected-(J1-SBU2-PadB8)")
+			(pinfunction "SBU2_B8")
+			(pintype "bidirectional+no_connect")
 			(thermal_bridge_angle 45)
 			(uuid "b29503f8-e0db-4a9c-855b-506cfefa815e")
 		)
@@ -9767,6 +10290,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(D2-IN-Pad4)")
+			(pinfunction "VBUS_B9")
+			(pintype "passive")
 			(thermal_bridge_angle 45)
 			(uuid "a018e8d4-c4a7-40df-a37e-7151216e8f28")
 		)
@@ -9776,6 +10301,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "GND_B12")
+			(pintype "passive")
 			(thermal_bridge_angle 45)
 			(uuid "7a5f31b4-d738-4225-9dad-7c9468ae130d")
 		)
@@ -9785,6 +10312,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.125)
 			(net "unconnected-(J1-SHIELD-PadSH)_1")
+			(pinfunction "SHIELD_SH")
+			(pintype "passive+no_connect")
 			(thermal_bridge_angle 45)
 			(uuid "3d946712-e7ec-45be-a0b1-3c6a733291db")
 		)
@@ -9794,6 +10323,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.125)
 			(net "unconnected-(J1-SHIELD-PadSH)")
+			(pinfunction "SHIELD_SH")
+			(pintype "passive+no_connect")
 			(thermal_bridge_angle 45)
 			(uuid "0f497403-6ce8-4271-b56e-80093da2c31a")
 		)
@@ -9803,6 +10334,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.125)
 			(net "unconnected-(J1-SHIELD-PadSH)_2")
+			(pinfunction "SHIELD_SH")
+			(pintype "passive+no_connect")
 			(thermal_bridge_angle 45)
 			(uuid "43303236-fd1a-4361-9bf7-2e47f56e1f6d")
 		)
@@ -9812,6 +10345,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.125)
 			(net "unconnected-(J1-SHIELD-PadSH)_3")
+			(pinfunction "SHIELD_SH")
+			(pintype "passive+no_connect")
 			(thermal_bridge_angle 45)
 			(uuid "b35381c5-f4b2-4af6-8191-1fcff5dda65b")
 		)
@@ -9941,9 +10476,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/1e40acf6-717b-4faa-8a28-5b02c685b3b7/438e2040-b42b-4135-934d-3e3f61bb7160")
 		(sheetname "/ESP32-C5/")
 		(sheetfile "02_ESP32.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10005,6 +10547,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U1-GPIO24)")
+			(pintype "passive")
 			(uuid "837acb09-eae6-4070-9318-dd8394d19dac")
 		)
 		(pad "2" smd roundrect
@@ -10013,6 +10556,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(D1-A)")
+			(pintype "passive")
 			(uuid "67f7eb35-9edb-400b-8ed3-e03bd1cf9e2d")
 		)
 		(embedded_fonts no)
@@ -10141,9 +10685,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/2ff95fff-49b1-4d01-9cac-1cb6dbac2b66/0ea3b1ac-ef16-421e-94fa-5454343e147b")
 		(sheetname "/Power/")
 		(sheetfile "01_Power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10205,6 +10756,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3V3")
+			(pintype "passive")
 			(uuid "7cb5fc1a-125b-4c44-8b74-92120391c355")
 		)
 		(pad "2" smd roundrect
@@ -10213,6 +10765,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/ESP32-C5/PWR_SRC_HOST")
+			(pintype "passive")
 			(uuid "919e8ed5-1ff9-40c8-8558-1cdb3909e6ea")
 		)
 		(embedded_fonts no)
@@ -10341,9 +10894,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/2ff95fff-49b1-4d01-9cac-1cb6dbac2b66/9a26735f-749b-4589-8e14-8b33249175c1")
 		(sheetname "/Power/")
 		(sheetfile "01_Power.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10405,6 +10965,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "VBUS")
+			(pintype "passive")
 			(uuid "eb73dcec-52fe-4e8c-941f-2f0ecb137c64")
 		)
 		(pad "2" smd roundrect
@@ -10413,6 +10974,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "fc859d8f-db13-4c19-b0d5-7511efe12aef")
 		)
 		(embedded_fonts no)
@@ -10531,9 +11093,18 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Connector*:*_2x??-1SH*")
 		(path "/2b09e6e8-3abe-4dbc-82f5-49519564e645/8a00299a-4955-430b-9dd2-c53faeb53c46")
-		(sheetname "Controlboard Link")
+		(sheetname "/Controlboard Link/")
 		(sheetfile "04_Link.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "5" "7" "9" "11" "13" "15" "17" "19" "SH" "2" "4" "6" "8"
+					"10" "12" "14" "16" "18" "20"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10848,6 +11419,8 @@
 			(size 0.3 1.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/Controlboard Link/ESP_EN")
+			(pinfunction "Pin_1_1")
+			(pintype "passive")
 			(uuid "0f356545-bd3a-4a91-bbac-ad4ad4bd31f4")
 		)
 		(pad "2" smd rect
@@ -10855,6 +11428,8 @@
 			(size 0.3 1.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+3V3_HOST")
+			(pinfunction "Pin_2_2")
+			(pintype "passive")
 			(uuid "b92c2c9d-75bb-4899-ba05-63a8f197eaf9")
 		)
 		(pad "3" smd rect
@@ -10862,6 +11437,8 @@
 			(size 0.3 1.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/Controlboard Link/ESP_DATA_READY")
+			(pinfunction "Pin_3_3")
+			(pintype "passive")
 			(uuid "3b1b0977-f1bc-4f2e-b711-3dc04c5b1796")
 		)
 		(pad "4" smd rect
@@ -10869,6 +11446,8 @@
 			(size 0.3 1.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+3V3_HOST")
+			(pinfunction "Pin_4_4")
+			(pintype "passive")
 			(uuid "04bbd1a5-668d-4d2c-995b-f3486bc499c5")
 		)
 		(pad "5" smd rect
@@ -10876,6 +11455,8 @@
 			(size 0.3 1.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/Controlboard Link/ESP_HANDSHAKE")
+			(pinfunction "Pin_5_5")
+			(pintype "passive")
 			(uuid "abb95a84-e42f-495d-9126-1691409ca659")
 		)
 		(pad "6" smd rect
@@ -10883,6 +11464,8 @@
 			(size 0.3 1.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+3V3_HOST")
+			(pinfunction "Pin_6_6")
+			(pintype "passive")
 			(uuid "db91b94b-d870-478c-b094-6ff478c018bd")
 		)
 		(pad "7" smd rect
@@ -10890,6 +11473,8 @@
 			(size 0.3 1.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/Controlboard Link/ESP_SPI_MISO")
+			(pinfunction "Pin_7_7")
+			(pintype "passive")
 			(uuid "952e0ff7-49e1-40b5-a3c2-0ac967b75abf")
 		)
 		(pad "8" smd rect
@@ -10897,6 +11482,8 @@
 			(size 0.3 1.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
+			(pinfunction "Pin_8_8")
+			(pintype "passive")
 			(uuid "9660a7d5-6bbe-40bf-b2bd-341a0cc631f0")
 		)
 		(pad "9" smd rect
@@ -10904,6 +11491,8 @@
 			(size 0.3 1.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
+			(pinfunction "Pin_9_9")
+			(pintype "passive")
 			(uuid "94bb1090-bba7-4172-afef-58286e4824a5")
 		)
 		(pad "10" smd rect
@@ -10911,6 +11500,8 @@
 			(size 0.3 1.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
+			(pinfunction "Pin_10_10")
+			(pintype "passive")
 			(uuid "f794a8df-f7e0-4df7-a1fc-220a042e0a03")
 		)
 		(pad "11" smd rect
@@ -10918,6 +11509,8 @@
 			(size 0.3 1.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/Controlboard Link/ESP_SPI_SCK")
+			(pinfunction "Pin_11_11")
+			(pintype "passive")
 			(uuid "3e8e7497-cf4e-4c75-98bf-24c0d1aca624")
 		)
 		(pad "12" smd rect
@@ -10925,6 +11518,8 @@
 			(size 0.3 1.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
+			(pinfunction "Pin_12_12")
+			(pintype "passive")
 			(uuid "8eb5b3f9-3760-4af3-8ef4-74fc0554c0d1")
 		)
 		(pad "13" smd rect
@@ -10932,6 +11527,8 @@
 			(size 0.3 1.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
+			(pinfunction "Pin_13_13")
+			(pintype "passive")
 			(uuid "e6ffffd0-817c-41d9-b313-b319a6c3a0e5")
 		)
 		(pad "14" smd rect
@@ -10939,6 +11536,8 @@
 			(size 0.3 1.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
+			(pinfunction "Pin_14_14")
+			(pintype "passive")
 			(uuid "900132ce-be97-4100-b13b-16a804e4535d")
 		)
 		(pad "15" smd rect
@@ -10946,6 +11545,8 @@
 			(size 0.3 1.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/Controlboard Link/ESP_SPI_MOSI")
+			(pinfunction "Pin_15_15")
+			(pintype "passive")
 			(uuid "29cb75f0-1b9b-47f5-acd7-94b7e7948730")
 		)
 		(pad "16" smd rect
@@ -10953,6 +11554,8 @@
 			(size 0.3 1.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
+			(pinfunction "Pin_16_16")
+			(pintype "passive")
 			(uuid "1c266b4d-2e8d-4f45-a758-0a6a80da6428")
 		)
 		(pad "17" smd rect
@@ -10960,6 +11563,8 @@
 			(size 0.3 1.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
+			(pinfunction "Pin_17_17")
+			(pintype "passive")
 			(uuid "c28738ad-c47a-47f7-9658-304cc57bc741")
 		)
 		(pad "18" smd rect
@@ -10967,6 +11572,8 @@
 			(size 0.3 1.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
+			(pinfunction "Pin_18_18")
+			(pintype "passive")
 			(uuid "ae7affda-e9bc-47df-8baa-f5e54907eab2")
 		)
 		(pad "19" smd rect
@@ -10974,6 +11581,8 @@
 			(size 0.3 1.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/Controlboard Link/ESP_SPI_CS")
+			(pinfunction "Pin_19_19")
+			(pintype "passive")
 			(uuid "a77730d7-9534-4332-bff8-1957d13fef24")
 		)
 		(pad "20" smd rect
@@ -10981,6 +11590,8 @@
 			(size 0.3 1.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
+			(pinfunction "Pin_20_20")
+			(pintype "passive")
 			(uuid "760450ad-3450-4485-95b4-fc1662c890df")
 		)
 		(pad "SH" thru_hole circle
@@ -10990,6 +11601,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
+			(pinfunction "Shield_SH")
+			(pintype "passive")
 			(uuid "71081ca0-c1aa-4ec2-bf55-c1274f027145")
 		)
 		(pad "SH" thru_hole circle
@@ -10999,6 +11612,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
+			(pinfunction "Shield_SH")
+			(pintype "passive")
 			(uuid "1c589676-9714-4754-be29-2230ea56a9a1")
 		)
 		(embedded_fonts no)
@@ -11124,9 +11739,16 @@
 				(justify mirror)
 			)
 		)
+		(property ki_fp_filters "WSON*1EP*2x2mm*P0.65mm*EP1x1.6mm*")
 		(path "/2b09e6e8-3abe-4dbc-82f5-49519564e645/cc745c6e-190a-4989-939f-87adcb1c2bbf")
 		(sheetname "/Controlboard Link/")
 		(sheetfile "04_Link.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "4" "5" "6" "1" "2" "3" "7")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11325,6 +11947,8 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "GND_1")
+			(pintype "power_in")
 			(uuid "6d0bd9b7-52d7-4d41-ac03-d7b01f846e10")
 		)
 		(pad "2" smd roundrect
@@ -11333,6 +11957,8 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "GND_2")
+			(pintype "passive")
 			(uuid "f7059484-1123-4b9b-80cb-4acd84a3d17d")
 		)
 		(pad "3" smd roundrect
@@ -11341,6 +11967,8 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "GND_3")
+			(pintype "passive")
 			(uuid "34110d75-24d5-44c1-bad6-73a3a0a5a6af")
 		)
 		(pad "4" smd roundrect
@@ -11349,6 +11977,8 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3V3_HOST")
+			(pinfunction "IN_4")
+			(pintype "passive")
 			(uuid "14faa3e4-b978-410b-8e75-e28b7aa25ed0")
 		)
 		(pad "5" smd roundrect
@@ -11357,6 +11987,8 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3V3_HOST")
+			(pinfunction "IN_5")
+			(pintype "passive")
 			(uuid "63d4308f-b847-4946-9dd4-63a5372a094a")
 		)
 		(pad "6" smd roundrect
@@ -11365,6 +11997,8 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3V3_HOST")
+			(pinfunction "IN_6")
+			(pintype "passive")
 			(uuid "32333b46-1d3c-4cd3-99bc-51c9d42c8e37")
 		)
 		(pad "7" smd rect
@@ -11373,6 +12007,8 @@
 			(property pad_prop_heatsink)
 			(layers "B.Cu" "B.Mask")
 			(net "GND")
+			(pinfunction "GND_7")
+			(pintype "passive")
 			(zone_connect 2)
 			(uuid "0a523cb9-ff07-4666-bc3b-336bf67aecd4")
 		)
