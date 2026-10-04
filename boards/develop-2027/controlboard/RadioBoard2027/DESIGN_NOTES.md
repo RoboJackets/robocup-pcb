@@ -341,8 +341,9 @@ or hand-solder them after top-side assembly with paste and hot air.
 | B.Cu | J2 and D4 (the only bottom parts); SPI trunk (SCK, MOSI, MISO, CS) over the In2 GND region; HANDSHAKE, DATA_READY, EN, PWR_SRC_HOST, CC2 and short power jumps; GND pour |
 
 - **Rules.** Default netclass: 0.2mm track, 0.15mm clearance, 0.6/0.3mm vias (0.5/0.3mm is the
-  board minimum, used at J2). Netclass clearance
-  overrides a lower custom rule, so the 0.15mm default must stay in Board Setup.
+  board minimum, used at J2). Custom rules win over the netclass where they match (the link-via
+  rule below fills at 0.1mm, under the 0.15mm netclass value); keep the 0.15mm default in Board
+  Setup for everything the custom rules do not cover.
   `RadioBoard2027.kicad_dru` adds:
   - power nets (+3V3, +3V3_HOST, VBUS, VIN2, pre-fuse VBUS): 0.2mm clearance, 0.25mm minimum width;
   - USB (both sides of U2 and R5/R6): 0.25mm width (0.2mm minimum), 0.15mm diff-pair gap where
@@ -351,9 +352,11 @@ or hand-solder them after top-side assembly with paste and hot air.
     pads), and 0.72mm (2W) from pours on the outer layers, so the pours do not turn the lines into an
     uncalculated coplanar guide.
 
-  - link vias (`/Controlboard Link/*`) to inner-layer zones: 0.1mm clearance and 0.2mm hole
+  - link vias (`/Controlboard Link/*`) to inner-layer zones: 0.1mm clearance and 0.22mm hole
     clearance, inner layers only. The row-gap vias and the vias after U5 sit 1.0mm apart; at the
     default 0.2mm/0.25mm their plane openings merged into a slot on In1/In2 (found by the audit).
+    The plane web left between them is about 0.26mm. JLC's minimums are 0.09mm copper spacing and
+    0.2mm inner via-hole-to-copper, so 0.22mm keeps a small margin.
 
   The pour-clearance rules carry `(layer outer)`. Without it the rule also applied between SPI vias
   and the inner GND planes, and cut 1mm holes into the very reference planes the lines need (found
