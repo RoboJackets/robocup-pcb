@@ -7629,6 +7629,82 @@
 		)
 	)
 	(sheet
+		(at 177.8 114.3)
+		(size 38.1 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "33c0b4f3-9277-440c-89f3-e0e27afb9223")
+		(property "Sheetname" "Output Load Switch (3.3V)"
+			(at 177.8 113.5884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "output_load_sw_lv.kicad_sch"
+			(at 177.8 127.5846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Enable" input
+			(at 177.8 124.46 180)
+			(uuid "3c9155e7-93a1-4d70-9531-835588f07eb2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Input" input
+			(at 177.8 116.84 180)
+			(uuid "f5933077-d20f-4111-a9bc-af4695fc701e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Output" output
+			(at 215.9 120.65 0)
+			(uuid "c2085f3f-52f0-4082-8644-c952d398c34d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "power-board-proto"
+				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09"
+					(page "19")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 177.8 38.1)
 		(size 38.1 12.7)
 		(exclude_from_sim no)
@@ -7700,82 +7776,6 @@
 			(project "power-board-proto"
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09"
 					(page "7")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 177.8 88.9)
-		(size 38.1 12.7)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "5a9e3fdf-3ac1-46ff-9e52-8db1e3389f5c")
-		(property "Sheetname" "Output Load Switch (5V)"
-			(at 177.8 88.1884 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "output_load_sw.kicad_sch"
-			(at 177.8 102.1846 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "Enable" input
-			(at 177.8 99.06 180)
-			(uuid "f80b31a2-897d-4094-971c-ad34c9d31c9d")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "Input" input
-			(at 177.8 91.44 180)
-			(uuid "b92f7e33-b9fa-45c9-9613-368ed849a4ba")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "Output" output
-			(at 215.9 95.25 0)
-			(uuid "9dc17fa8-3428-46f1-aeec-12a65a853b34")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "power-board-proto"
-				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09"
-					(page "9")
 				)
 			)
 		)
@@ -7923,7 +7923,7 @@
 		)
 	)
 	(sheet
-		(at 177.8 114.3)
+		(at 177.8 88.9)
 		(size 38.1 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7937,9 +7937,9 @@
 		(fill
 			(color 0 0 0 0)
 		)
-		(uuid "a49b5787-1ba6-4e34-a7ea-2e00e3ad30ca")
-		(property "Sheetname" "Output Load Switch (3.3V)"
-			(at 177.8 113.5884 0)
+		(uuid "d1954e6f-abf9-443a-b71d-fcc97e1dd9da")
+		(property "Sheetname" "Output Load Switch (5.0V)"
+			(at 177.8 88.1884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7949,8 +7949,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "output_load_sw.kicad_sch"
-			(at 177.8 127.5846 0)
+		(property "Sheetfile" "output_load_sw_lv.kicad_sch"
+			(at 177.8 102.1846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7961,8 +7961,8 @@
 			)
 		)
 		(pin "Enable" input
-			(at 177.8 124.46 180)
-			(uuid "b5513521-f5c9-4f2b-bbac-f9e969761d73")
+			(at 177.8 99.06 180)
+			(uuid "0590eb67-acd6-4835-8d01-81ffe94b1a38")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7971,8 +7971,8 @@
 			)
 		)
 		(pin "Input" input
-			(at 177.8 116.84 180)
-			(uuid "c322f578-80a3-4f25-bb83-6f344c026090")
+			(at 177.8 91.44 180)
+			(uuid "de166043-f4c8-4ac1-b80d-852777ab9eb4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7981,8 +7981,8 @@
 			)
 		)
 		(pin "Output" output
-			(at 215.9 120.65 0)
-			(uuid "77497cc7-3ec0-4d4f-b9c6-545cb96e1f39")
+			(at 215.9 95.25 0)
+			(uuid "5e2abcf8-2f68-4a87-8bf9-08a92ab8303c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7993,7 +7993,7 @@
 		(instances
 			(project "power-board-proto"
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09"
-					(page "10")
+					(page "9")
 				)
 			)
 		)

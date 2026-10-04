@@ -1646,12 +1646,6 @@
 		(uuid "6b3a2665-3e9d-43bc-a994-f739ad0d466c")
 	)
 	(junction
-		(at 125.73 55.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "436e08dc-02b3-4deb-b5bd-899bf674bf8b")
-	)
-	(junction
 		(at 95.25 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1680,6 +1674,10 @@
 	(no_connect
 		(at 57.15 68.58)
 		(uuid "3ca73e25-fe15-448d-baf3-c1ded9109e3f")
+	)
+	(no_connect
+		(at 125.73 69.85)
+		(uuid "6b9a906d-05a5-4287-bfe7-2b4fe8cf377a")
 	)
 	(bus_entry
 		(at 153.67 66.04)
@@ -1748,16 +1746,6 @@
 			(type default)
 		)
 		(uuid "23614cd2-3ffd-4359-a519-5960874f34cb")
-	)
-	(wire
-		(pts
-			(xy 125.73 55.88) (xy 125.73 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "42b7b3fa-8f7e-4327-bf4d-f0a739bd018e")
 	)
 	(wire
 		(pts
@@ -1931,23 +1919,13 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 55.88) (xy 125.73 55.88)
+			(xy 92.71 55.88) (xy 95.25 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "afe05871-5141-41a9-a598-21fba9a9adce")
-	)
-	(wire
-		(pts
-			(xy 125.73 55.88) (xy 128.27 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b26f2964-6fd6-4c1b-9d8e-60aef6edaad3")
 	)
 	(wire
 		(pts
@@ -2142,7 +2120,7 @@
 	)
 	(hierarchical_label "VBUS"
 		(shape output)
-		(at 128.27 55.88 0)
+		(at 95.25 55.88 0)
 		(effects
 			(font
 				(size 1.27 1.27)

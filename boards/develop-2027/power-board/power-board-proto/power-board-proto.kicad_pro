@@ -679,7 +679,7 @@
       "include_excluded_from_bom": true,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Datasheet"
+      "sort_field": "Reference"
     },
     "bus_aliases": {},
     "connection_grid_size": 50.0,
@@ -722,7 +722,7 @@
         "uuid": "fe9d33c9-5178-4c57-bc83-f7cec26732cb"
       }
     ],
-    "used_designators": "J1-19,TP1-23,TP31-43,Q1-11,F1-2,U1-11,D1-16,C1-61,C66,#PWR1-131,Y1,H1-4,L1-5,#FLG1-7,SW1-3,JP1-2,R1-70",
+    "used_designators": "SW1-3,#FLG1-7,R1-78,JP1-2,TP1-23,TP31-43,J1-19,Q1-18,F1-2,U1-11,D1-19,C1-61,C66,#PWR1-136,Y1,H1-4,L1-5",
     "variants": []
   },
   "sheets": [
@@ -759,12 +759,8 @@
       "Output Load Switch (12V)"
     ],
     [
-      "5a9e3fdf-3ac1-46ff-9e52-8db1e3389f5c",
-      "Output Load Switch (5V)"
-    ],
-    [
-      "a49b5787-1ba6-4e34-a7ea-2e00e3ad30ca",
-      "Output Load Switch (3.3V)"
+      "d1954e6f-abf9-443a-b71d-fcc97e1dd9da",
+      "Output Load Switch (5.0V)"
     ],
     [
       "7d92faab-81f6-4f82-9ccf-c799a6ab8cd7",
@@ -797,6 +793,10 @@
     [
       "e0b7d74a-b984-4a32-a079-141284b0e261",
       "Mechanical"
+    ],
+    [
+      "33c0b4f3-9277-440c-89f3-e0e27afb9223",
+      "Output Load Switch (3.3V)"
     ]
   ],
   "text_variables": {},

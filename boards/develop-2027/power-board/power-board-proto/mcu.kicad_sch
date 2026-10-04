@@ -3716,7 +3716,7 @@
 		(uuid "05928a24-f1d9-4a55-901b-73ffe15ee359")
 	)
 	(junction
-		(at 72.39 143.51)
+		(at 57.15 143.51)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1a2eb173-93ab-4b26-bf71-93db21c7aabe")
@@ -3770,7 +3770,7 @@
 		(uuid "654bbee5-370c-4b92-ba65-e655ab064d5d")
 	)
 	(junction
-		(at 53.34 143.51)
+		(at 38.1 143.51)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "65cf4662-c7a2-4672-8a7f-69e12d939e1c")
@@ -3794,7 +3794,7 @@
 		(uuid "921965ff-dce2-4484-af3f-48168d6f4232")
 	)
 	(junction
-		(at 72.39 133.35)
+		(at 57.15 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9688aa82-a957-44cc-b267-41c14ebe0b1b")
@@ -3812,7 +3812,7 @@
 		(uuid "a5c98845-67bf-46e1-94c6-af6f3ee6ee43")
 	)
 	(junction
-		(at 53.34 138.43)
+		(at 38.1 138.43)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bbe769f1-a0e3-40eb-9252-cebb2d4c6238")
@@ -4258,7 +4258,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 143.51) (xy 55.88 143.51)
+			(xy 38.1 143.51) (xy 40.64 143.51)
 		)
 		(stroke
 			(width 0)
@@ -4458,7 +4458,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 138.43) (xy 67.31 138.43)
+			(xy 38.1 138.43) (xy 52.07 138.43)
 		)
 		(stroke
 			(width 0)
@@ -4518,7 +4518,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 138.43) (xy 53.34 133.35)
+			(xy 38.1 138.43) (xy 38.1 133.35)
 		)
 		(stroke
 			(width 0)
@@ -4638,7 +4638,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 133.35) (xy 55.88 133.35)
+			(xy 38.1 133.35) (xy 40.64 133.35)
 		)
 		(stroke
 			(width 0)
@@ -4738,7 +4738,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 149.86) (xy 53.34 143.51)
+			(xy 38.1 149.86) (xy 38.1 143.51)
 		)
 		(stroke
 			(width 0)
@@ -4818,7 +4818,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 143.51) (xy 72.39 142.24)
+			(xy 57.15 143.51) (xy 57.15 142.24)
 		)
 		(stroke
 			(width 0)
@@ -4868,7 +4868,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 133.35) (xy 72.39 133.35)
+			(xy 48.26 133.35) (xy 57.15 133.35)
 		)
 		(stroke
 			(width 0)
@@ -5028,6 +5028,16 @@
 	)
 	(wire
 		(pts
+			(xy 67.31 143.51) (xy 57.15 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a708d308-c803-4cc3-8d4e-b69901d562a3")
+	)
+	(wire
+		(pts
 			(xy 123.19 57.15) (xy 123.19 55.88)
 		)
 		(stroke
@@ -5038,7 +5048,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 143.51) (xy 72.39 143.51)
+			(xy 48.26 143.51) (xy 57.15 143.51)
 		)
 		(stroke
 			(width 0)
@@ -5068,7 +5078,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 133.35) (xy 72.39 133.35)
+			(xy 92.71 133.35) (xy 57.15 133.35)
 		)
 		(stroke
 			(width 0)
@@ -5098,7 +5108,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 133.35) (xy 72.39 134.62)
+			(xy 57.15 133.35) (xy 57.15 134.62)
 		)
 		(stroke
 			(width 0)
@@ -5228,7 +5238,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 143.51) (xy 53.34 138.43)
+			(xy 38.1 143.51) (xy 38.1 138.43)
 		)
 		(stroke
 			(width 0)
@@ -5258,7 +5268,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 143.51) (xy 72.39 143.51)
+			(xy 92.71 143.51) (xy 74.93 143.51)
 		)
 		(stroke
 			(width 0)
@@ -6424,7 +6434,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 59.69 143.51 90)
+		(at 44.45 143.51 90)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -6435,7 +6445,7 @@
 		(dnp no)
 		(uuid "0ed39bb6-c816-4a63-8f42-519a8ab5ce34")
 		(property "Reference" "C2"
-			(at 59.69 151.13 90)
+			(at 44.45 151.13 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6445,7 +6455,7 @@
 			)
 		)
 		(property "Value" "15p"
-			(at 59.69 148.59 90)
+			(at 44.45 148.59 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6455,7 +6465,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 63.5 144.4752 0)
+			(at 48.26 144.4752 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6465,8 +6475,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8942/490_Chip_Multilayer_CAT2021_MLCC.pdf"
-			(at 59.69 143.51 0)
+		(property "Datasheet" "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GJM1555C1H150GB01-01A-EN_PDF_CERAMICCAPACITORSMD"
+			(at 44.45 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6476,8 +6486,8 @@
 				)
 			)
 		)
-		(property "Description" "4.7 µF ±20% 6.3V Ceramic Capacitor X5R 0402 (1005 Metric)"
-			(at 59.69 143.51 0)
+		(property "Description" "15 pF ±2% 50V Ceramic Capacitor C0G, NP0 0402 (1005 Metric)"
+			(at 44.45 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6487,8 +6497,8 @@
 				)
 			)
 		)
-		(property "Manufacturer P/N" "GRM155R60J475ME47D"
-			(at 59.69 143.51 0)
+		(property "Manufacturer P/N" "GJM1555C1H150GB01D"
+			(at 44.45 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6499,7 +6509,7 @@
 			)
 		)
 		(property "Vendor" "DigiKey"
-			(at 59.69 143.51 0)
+			(at 44.45 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6509,8 +6519,8 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "490-10672-1-ND"
-			(at 59.69 143.51 0)
+		(property "Vendor P/N" "490-8080-1-ND"
+			(at 44.45 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7925,7 +7935,7 @@
 	)
 	(symbol
 		(lib_id "Device:Crystal_GND24")
-		(at 72.39 138.43 270)
+		(at 57.15 138.43 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7936,7 +7946,7 @@
 		(fields_autoplaced yes)
 		(uuid "41be68f2-20f7-40d9-bdf2-47d059751f4a")
 		(property "Reference" "Y1"
-			(at 77.47 137.1599 90)
+			(at 62.23 137.1599 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7947,7 +7957,7 @@
 			)
 		)
 		(property "Value" "ABM8-272-T3"
-			(at 77.47 139.6999 90)
+			(at 62.23 139.6999 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7958,7 +7968,7 @@
 			)
 		)
 		(property "Footprint" "Crystal:Crystal_SMD_Abracon_ABM8G-4Pin_3.2x2.5mm"
-			(at 72.39 138.43 0)
+			(at 57.15 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7969,7 +7979,7 @@
 			)
 		)
 		(property "Datasheet" "https://abracon.com/datasheets/ABM8-272-T3.pdf"
-			(at 72.39 138.43 0)
+			(at 57.15 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7980,7 +7990,7 @@
 			)
 		)
 		(property "Description" "12 MHz ±30ppm Crystal 10pF 50 Ohms 4-SMD, No Lead"
-			(at 72.39 138.43 0)
+			(at 57.15 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7991,7 +8001,7 @@
 			)
 		)
 		(property private "KLC_S3.3" "The rectangle is not a symbol body but a graphical element"
-			(at 59.69 138.43 0)
+			(at 44.45 138.43 0)
 			(hide yes)
 			(show_name yes)
 			(do_not_autoplace no)
@@ -8002,7 +8012,7 @@
 			)
 		)
 		(property private "KLC_S4.1" "Some pins are on 50mil grid to make the symbol small"
-			(at 57.15 138.43 0)
+			(at 41.91 138.43 0)
 			(hide yes)
 			(show_name yes)
 			(do_not_autoplace no)
@@ -8013,7 +8023,7 @@
 			)
 		)
 		(property "Manufacturer P/N" "ABM8-272-T3"
-			(at 72.39 138.43 0)
+			(at 57.15 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8024,7 +8034,7 @@
 			)
 		)
 		(property "Vendor" "DigiKey"
-			(at 72.39 138.43 0)
+			(at 57.15 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8035,7 +8045,7 @@
 			)
 		)
 		(property "Vendor P/N" "535-ABM8-272-T3CT-ND"
-			(at 72.39 138.43 0)
+			(at 57.15 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8462,7 +8472,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "490-10672-1-ND"
+		(property "Vendor P/N" "490-5915-1-ND"
 			(at 156.21 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -9499,7 +9509,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 53.34 149.86 0)
+		(at 38.1 149.86 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9510,7 +9520,7 @@
 		(fields_autoplaced yes)
 		(uuid "90e29d80-3934-4e5a-b0fa-e05ee20e6dc4")
 		(property "Reference" "#PWR05"
-			(at 53.34 156.21 0)
+			(at 38.1 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9521,7 +9531,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 53.34 154.94 0)
+			(at 38.1 154.94 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9531,7 +9541,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 53.34 149.86 0)
+			(at 38.1 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9542,7 +9552,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 53.34 149.86 0)
+			(at 38.1 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9553,7 +9563,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 53.34 149.86 0)
+			(at 38.1 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9648,6 +9658,119 @@
 			(project "power-board-proto"
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/ad222c8c-c90a-4d34-b9d8-7ea9f4c65ce6"
 					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 71.12 143.51 90)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9867b3e3-8b32-4162-8b7b-e4f736260331")
+		(property "Reference" "R39"
+			(at 71.12 149.86 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 71.12 147.32 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 71.12 141.732 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 71.12 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" ""
+			(at 71.12 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" ""
+			(at 71.12 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" ""
+			(at 71.12 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0bcd278d-c604-4eed-ac45-e0d6940abb5d")
+		)
+		(pin "2"
+			(uuid "0f7aac6f-7dfa-4c6b-8842-e6bfb03aff94")
+		)
+		(instances
+			(project "power-board-proto"
+				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/ad222c8c-c90a-4d34-b9d8-7ea9f4c65ce6"
+					(reference "R39")
 					(unit 1)
 				)
 			)
@@ -11133,7 +11256,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "490-10672-1-ND"
+		(property "Vendor P/N" "490-5915-1-ND"
 			(at 116.84 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -11161,7 +11284,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 59.69 133.35 90)
+		(at 44.45 133.35 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11172,7 +11295,7 @@
 		(fields_autoplaced yes)
 		(uuid "cacdb2a6-29b5-40d6-baea-0a1eda376a2d")
 		(property "Reference" "C1"
-			(at 59.69 125.73 90)
+			(at 44.45 125.73 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11182,7 +11305,7 @@
 			)
 		)
 		(property "Value" "15p"
-			(at 59.69 128.27 90)
+			(at 44.45 128.27 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11192,7 +11315,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 63.5 132.3848 0)
+			(at 48.26 132.3848 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11202,8 +11325,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8942/490_Chip_Multilayer_CAT2021_MLCC.pdf"
-			(at 59.69 133.35 0)
+		(property "Datasheet" "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GJM1555C1H150GB01-01A-EN_PDF_CERAMICCAPACITORSMD"
+			(at 44.45 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11213,8 +11336,8 @@
 				)
 			)
 		)
-		(property "Description" "4.7 µF ±20% 6.3V Ceramic Capacitor X5R 0402 (1005 Metric)"
-			(at 59.69 133.35 0)
+		(property "Description" "15 pF ±2% 50V Ceramic Capacitor C0G, NP0 0402 (1005 Metric)"
+			(at 44.45 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11224,8 +11347,8 @@
 				)
 			)
 		)
-		(property "Manufacturer P/N" "GRM155R60J475ME47D"
-			(at 59.69 133.35 0)
+		(property "Manufacturer P/N" "GJM1555C1H150GB01D"
+			(at 44.45 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11236,7 +11359,7 @@
 			)
 		)
 		(property "Vendor" "DigiKey"
-			(at 59.69 133.35 0)
+			(at 44.45 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11246,8 +11369,8 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "490-10672-1-ND"
-			(at 59.69 133.35 0)
+		(property "Vendor P/N" "490-8080-1-ND"
+			(at 44.45 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12071,7 +12194,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "490-10672-1-ND"
+		(property "Vendor P/N" "490-5915-1-ND"
 			(at 81.28 76.2 0)
 			(hide yes)
 			(show_name no)
