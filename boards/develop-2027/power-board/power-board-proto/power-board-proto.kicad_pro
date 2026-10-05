@@ -63,10 +63,10 @@
           "min_clearance": 0.5,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
-          "pad_connection": 1,
+          "pad_connection": 2,
           "remove_islands": 0,
           "thermal_relief_gap": 0.5,
-          "thermal_relief_spoke_width": 1.0
+          "thermal_relief_spoke_width": 0.5
         }
       },
       "diff_pair_dimensions": [
@@ -168,7 +168,7 @@
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
-        "min_hole_to_hole": 0.25,
+        "min_hole_to_hole": 0.2,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
@@ -740,7 +740,7 @@
         "uuid": "fe9d33c9-5178-4c57-bc83-f7cec26732cb"
       }
     ],
-    "used_designators": "U1-11,D1-19,C1-61,C66,Y1,#PWR1-136,L1-5,H1-4,SW1-3,#FLG1-7,R1-78,JP1-2,TP1-26,TP31-43,J1-19,Q1-18,F1-2",
+    "used_designators": "J1-19,TP1-26,TP31-43,F1-2,Q1-19,U1-11,D1-19,C1-61,C66,Y1,#PWR1-136,L1-5,H1-4,SW1-3,#FLG1-7,R1-78,JP1-2",
     "variants": []
   },
   "sheets": [
