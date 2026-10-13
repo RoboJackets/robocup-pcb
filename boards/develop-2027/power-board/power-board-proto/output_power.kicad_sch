@@ -1617,6 +1617,17 @@
 		)
 		(uuid "ded3a831-b096-4478-aa3b-f174687a4d62")
 	)
+	(text "PG not used\ntie to GND"
+		(exclude_from_sim no)
+		(at 93.98 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e885be54-1453-455b-842a-2cdaced1cbcb")
+	)
 	(text "OR-ing Power Mux"
 		(exclude_from_sim no)
 		(at 25.4 158.115 0)
@@ -1999,6 +2010,16 @@
 			(type default)
 		)
 		(uuid "257530e0-2d25-44ce-a820-9d357fef89ff")
+	)
+	(wire
+		(pts
+			(xy 91.44 99.06) (xy 91.44 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27a6c38e-0ccf-4dbc-b31f-a917026bfe91")
 	)
 	(wire
 		(pts
@@ -2469,6 +2490,16 @@
 			(type default)
 		)
 		(uuid "a8d4b0e1-0747-4160-827e-06fcb4ef1abe")
+	)
+	(wire
+		(pts
+			(xy 88.9 99.06) (xy 91.44 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab642737-5564-4460-8be8-35e1b32c814f")
 	)
 	(wire
 		(pts
@@ -6746,6 +6777,84 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 91.44 101.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d3b2c971-1c30-49a7-a018-f0dc0efa3809")
+		(property "Reference" "#PWR072"
+			(at 91.44 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 91.44 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 91.44 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 91.44 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "751c2353-e1f2-4d97-9363-cd3f9be6f077")
+		)
+		(instances
+			(project "power-board-proto"
+				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/29a13456-e3c0-48b5-8068-31382c3e8f09"
+					(reference "#PWR072")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 182.88 157.48 0)
 		(unit 1)
 		(body_style 1)
@@ -7679,6 +7788,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "POWER_OK" output
+			(at 88.9 99.06 0)
+			(uuid "fbe0996d-2ded-46e7-9bc7-e971f88f9bb1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances

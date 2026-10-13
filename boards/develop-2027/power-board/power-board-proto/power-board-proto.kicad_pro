@@ -527,7 +527,10 @@
       "RJ-Connectors"
     ],
     "pinned_symbol_libs": [
-      "RJ-Passives"
+      "RJ-Passives",
+      "RJ-Sensors",
+      "RJ-Connectors",
+      "RJ-Power"
     ]
   },
   "meta": {
@@ -740,7 +743,7 @@
         "uuid": "fe9d33c9-5178-4c57-bc83-f7cec26732cb"
       }
     ],
-    "used_designators": "J1-19,TP1-26,TP31-43,Q1-19,F1-2,U1-11,D1-19,C1-66,#PWR1-139,Y1,H1-4,L1-6,#FLG1-7,SW1-3,JP1-2,R1-78",
+    "used_designators": "U1-11,D1-19,C1-70,Y1,#PWR1-143,L1-6,H1-4,SW1-3,#FLG1-7,R1-78,JP1-2,TP1-26,TP31-43,J1-19,Q1-19,F1-2",
     "variants": []
   },
   "sheets": [
