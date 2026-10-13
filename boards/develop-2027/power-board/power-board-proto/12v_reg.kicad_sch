@@ -963,6 +963,16 @@
 		)
 		(uuid "e99ae179-eb6a-433f-8554-1b2660e36c21")
 	)
+	(text "36 V max input"
+		(exclude_from_sim no)
+		(at 36.83 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "0c837c0b-f981-4cd5-869d-1fe5c8e7a221")
+	)
 	(text "R_{FBT}"
 		(exclude_from_sim no)
 		(at 193.04 99.06 0)
@@ -1016,6 +1026,17 @@
 			)
 		)
 		(uuid "aab850dd-166e-417c-a797-31040a7583bc")
+	)
+	(text "LMR51440x are drop-in replacements\nthat lower I_{MAX} from 5A to 4A"
+		(exclude_from_sim no)
+		(at 149.86 72.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f7d8df0f-1748-47da-996d-06e9c8b16cfc")
 	)
 	(text_box "Section 8.3.4 in LP514x0 datasheet\nTable 8-1\nPull-down of 31.6R sets\nF_{SW} = 495 kHz"
 		(exclude_from_sim no)
