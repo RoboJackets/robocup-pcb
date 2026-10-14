@@ -1,4 +1,5 @@
 # RadioBoard2027 Design Notes - Super Clauded. !!!NOT AUTHORITATIVE!!!
+> **Superseded as the reference by `../docs/RadioBoard2027_SPEC.md` (2026-10-13).** The schematic is the ground truth and the spec describes the board as ordered. This file keeps the design reasoning and history; statements found stale in the 2026-10-13 audit are listed in `../docs/AUDIT_2026-10-13.md` §4.
 
 Why each part and value on the radio board was chosen, the firmware settings the hardware
 depends on, and the open issues. Schematic notes point here by section number. The controlboard

@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1070 600" width="1070" height="600" font-family="Helvetica, Arial, sans-serif" font-size="13">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#333"/>
+    </marker>
+    <marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#888"/>
+    </marker>
+    <style>
+      .src{fill:#fff4e0;stroke:#a0640a;stroke-width:1.2}
+      .box{fill:#f4f6f8;stroke:#333;stroke-width:1.2}
+      .mux{fill:#dde8f5;stroke:#1f4e79;stroke-width:2}
+      .jmp{fill:#fbfbe8;stroke:#7a7a20;stroke-width:1.2}
+      .rail{fill:#e3f2e1;stroke:#2e7d32;stroke-width:1.6}
+      .ln{stroke:#333;stroke-width:1.6;fill:none;marker-end:url(#a)}
+      .by{stroke:#888;stroke-width:1.4;fill:none;stroke-dasharray:6 4;marker-end:url(#g)}
+      .t{fill:#111}
+      .s{fill:#444;font-size:11px}
+      .h{font-weight:bold;font-size:15px;fill:#1f4e79}
+    </style>
+  </defs>
+  <rect width="1070" height="600" fill="#ffffff"/>
+  <text x="535" y="28" text-anchor="middle" class="h">ControlBoard2027 power paths</text>
+
+  <!-- sources -->
+  <rect x="20" y="65" width="140" height="50" rx="4" class="src"/>
+  <text x="30" y="86" class="t">J15 pins 1-2</text><text x="30" y="103" class="s">powerboard 5 V</text>
+  <rect x="20" y="195" width="140" height="50" rx="4" class="src"/>
+  <text x="30" y="216" class="t">J2 USB-C VBUS</text><text x="30" y="233" class="s">bench fallback</text>
+  <rect x="20" y="425" width="140" height="50" rx="4" class="src"/>
+  <text x="30" y="446" class="t">J15 pins 3-4</text><text x="30" y="463" class="s">powerboard 3.3 V</text>
+
+  <!-- protection -->
+  <rect x="190" y="65" width="150" height="50" rx="4" class="box"/>
+  <text x="200" y="86" class="t">Q1 → D3 → F5</text><text x="200" y="103" class="s">rev. block, TVS, PTC</text>
+  <rect x="190" y="195" width="150" height="50" rx="4" class="box"/>
+  <text x="200" y="216" class="t">D1 → F1</text><text x="200" y="233" class="s">TVS, PTC</text>
+  <rect x="190" y="425" width="150" height="50" rx="4" class="box"/>
+  <text x="200" y="446" class="t">D4 → F6</text><text x="200" y="463" class="s">TVS, PTC, no rev. block</text>
+  <path d="M160,90 L190,90" class="ln"/>
+  <path d="M160,220 L190,220" class="ln"/>
+  <path d="M160,450 L190,450" class="ln"/>
+
+  <!-- LDO -->
+  <rect x="400" y="295" width="140" height="50" rx="4" class="box"/>
+  <text x="410" y="316" class="t">U7 AP7361C</text><text x="410" y="333" class="s">VBUS → +3V3_LDO</text>
+  <path d="M340,220 L360,220 L360,320 L400,320" class="ln"/>
+  <circle cx="360" cy="220" r="3" fill="#333"/>
+
+  <!-- muxes -->
+  <rect x="600" y="150" width="150" height="100" rx="5" class="mux"/>
+  <text x="610" y="171" class="t">U8 TPS2116 (5 V)</text>
+  <text x="610" y="190" class="s">VIN1 ← J14 1-2 (priority)</text>
+  <text x="610" y="232" class="s">VIN2 ← J14 3-4</text>
+  <rect x="600" y="370" width="150" height="100" rx="5" class="mux"/>
+  <text x="610" y="391" class="t">U9 TPS2116 (3.3 V)</text>
+  <text x="610" y="410" class="s">VIN2 ← J17 3-4</text>
+  <text x="610" y="455" class="s">VIN1 ← J17 1-2 (priority)</text>
+  <path d="M340,90 L560,90 L560,180 L600,180" class="ln"/>
+  <path d="M360,220 L600,220" class="ln"/>
+  <path d="M540,320 L570,320 L570,400 L600,400" class="ln"/>
+  <path d="M340,450 L600,450" class="ln"/>
+
+  <!-- rail jumpers -->
+  <rect x="790" y="150" width="120" height="100" rx="4" class="jmp"/>
+  <text x="800" y="171" class="t">J16 5V RAIL</text>
+  <text x="800" y="192" class="s">1-2 MUX (normal)</text>
+  <text x="800" y="210" class="s">3-4 PB direct</text>
+  <text x="800" y="228" class="s">5-6 USB (recovery)</text>
+  <rect x="790" y="370" width="120" height="100" rx="4" class="jmp"/>
+  <text x="800" y="391" class="t">J18 3V3 RAIL</text>
+  <text x="800" y="412" class="s">1-2 MUX (normal)</text>
+  <text x="800" y="430" class="s">3-4 PB direct</text>
+  <text x="800" y="448" class="s">5-6 LDO direct</text>
+  <path d="M750,200 L790,200" class="ln"/>
+  <path d="M750,420 L790,420" class="ln"/>
+
+  <!-- bypass paths -->
+  <path d="M560,90 L850,90 L850,150" class="by"/>
+  <circle cx="560" cy="90" r="3" fill="#333"/>
+  <path d="M380,220 L380,275 L860,275 L860,250" class="by"/>
+  <circle cx="380" cy="220" r="3" fill="#333"/>
+  <path d="M570,320 L850,320 L850,370" class="by"/>
+  <circle cx="570" cy="320" r="3" fill="#333"/>
+  <path d="M380,450 L380,500 L850,500 L850,470" class="by"/>
+  <circle cx="380" cy="450" r="3" fill="#333"/>
+
+  <!-- rails -->
+  <rect x="940" y="170" width="110" height="60" rx="4" class="rail"/>
+  <text x="950" y="196" class="t">+5V</text><text x="950" y="214" class="s">U8 or bypass</text>
+  <rect x="940" y="390" width="110" height="60" rx="4" class="rail"/>
+  <text x="950" y="416" class="t">+3V3</text><text x="950" y="434" class="s">U9 or bypass</text>
+  <path d="M910,200 L940,200" class="ln"/>
+  <path d="M910,420 L940,420" class="ln"/>
+  <text x="940" y="250" class="s">DotStars, U10,</text>
+  <text x="940" y="264" class="s">J11/J12 (F3/F4), D5</text>
+  <text x="940" y="470" class="s">MCU, SD, IMU, OLED,</text>
+  <text x="940" y="484" class="s">radio (J9), D6</text>
+
+  <!-- status -->
+  <rect x="20" y="520" width="560" height="66" rx="4" class="box"/>
+  <text x="30" y="539" class="t">Status inputs to the MCU</text>
+  <text x="30" y="557" class="s">U8 ST → R44 → PA2 PWR_SRC_5V, U9 ST → PA3 PWR_SRC_3V3 (high = powerboard source)</text>
+  <text x="30" y="574" class="s">VBUS → R20/R21 → PA9 VBUS_SENSE</text>
+
+  <line x1="620" y1="545" x2="650" y2="545" stroke="#333" stroke-width="1.6"/><text x="656" y="549" class="s">normal path</text>
+  <line x1="620" y1="567" x2="650" y2="567" stroke="#888" stroke-width="1.4" stroke-dasharray="6 4"/><text x="656" y="571" class="s">jumper bypass; fit exactly one shunt on each RAIL jumper</text>
+</svg>
