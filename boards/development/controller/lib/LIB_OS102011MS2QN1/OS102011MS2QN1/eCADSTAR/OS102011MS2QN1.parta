@@ -1,0 +1,69 @@
+(Japanese_coding: sjis)
+(function "ECS_290279"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-11-02-11:51:59)
+    (utime 2026-04-10-21:41:17)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+        (port "3" (symbPinId 3) (portType INOUT))
+    )
+    (property "symbolName" "OS102011MS2QN1")
+)
+
+
+(pinAssign "ECS_290279"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-11-02-11:51:59)
+    (utime 2026-04-10-21:41:17)
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+        (port "3" (symbPinId 3) (portName "3") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_290279")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+                (port "3" (match "3"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "OS102011MS2QN1")
+)
+
+
+(part "OS102011MS2QN1"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-11-02-11:51:59)
+    (utime 2026-04-10-21:41:17)
+    (packageRef "OS102011MS2QN1")
+    (pinAssignRef "ECS_290279")
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+        (port "3" (symbPinId 3) (portName "3") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "YES")
+    (property "refDesPrefix" "S")
+    (property "description" "Switch Slide Miniature SPDT 0.1A 12VDC Through Hole Slide Switch SPDT On-On 0.1 A@ 12 V dc Slide")
+    (property "Mouser_Part_Number" "611-OS102011MS2QN1")
+    (property "Mouser_Price/Stock" "https://www.mouser.co.uk/ProductDetail/CK/OS102011MS2QN1?qs=WtljUlYws5RvQ1hEv876nQ%3D%3D")
+    (property "Manufacturer_Name" "LITTELFUSE")
+    (property "Manufacturer_Part_Number" "OS102011MS2QN1")
+    (property "Datasheet_Link" "https://www.ckswitches.com/media/1428/os.pdf")
+)
+
+

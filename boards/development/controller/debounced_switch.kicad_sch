@@ -1,0 +1,1554 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "fe295e0e-bd11-4077-ae2e-c8ee3eb5b4ae")
+	(paper "A4")
+	(title_block
+		(title "Pushbutton")
+		(date "2026-05-16")
+		(rev "2.0")
+		(company "Robojackets - Robocup")
+		(comment 1 "Designer of Anything Complicated: Aiden Lee")
+		(comment 2 "Designer: Jaxon Parriott")
+	)
+	(lib_symbols
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Switch:SW_Push"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Push button switch, generic, two pins"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SW_Push_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:+3.3V"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+3.3V"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+3.3V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3.3V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GND"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(rectangle
+		(start 91.44 57.15)
+		(end 162.56 102.87)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "f10d022b-fd3a-46c6-aa1b-17618949aa78")
+	)
+	(text "Debounced Pushbutton, RC Filter"
+		(exclude_from_sim no)
+		(at 91.44 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1ae17432-7d06-4d5e-9d4a-b7b6daa11c96")
+	)
+	(junction
+		(at 143.51 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "af8808df-c54a-4a00-b4ac-8f42b9cc5032")
+	)
+	(junction
+		(at 119.38 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f70a8b40-6cad-4c82-8b17-c751daa32252")
+	)
+	(wire
+		(pts
+			(xy 119.38 80.01) (xy 132.08 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "164698f0-85bd-448a-9210-3331404bfc0a")
+	)
+	(wire
+		(pts
+			(xy 143.51 87.63) (xy 143.51 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ba436c4-fb3e-47a5-9a8f-12efaf3ee17e")
+	)
+	(wire
+		(pts
+			(xy 139.7 80.01) (xy 143.51 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "485d8cd3-7ce2-416e-8c6d-e568b6dee032")
+	)
+	(wire
+		(pts
+			(xy 119.38 69.85) (xy 119.38 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b31da24-420f-45a0-aa94-627fc07fb269")
+	)
+	(wire
+		(pts
+			(xy 111.76 80.01) (xy 119.38 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5eb0df03-805f-4a17-9456-e81d9ab533ca")
+	)
+	(wire
+		(pts
+			(xy 101.6 80.01) (xy 99.06 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a9d71c9-783f-43a1-86d7-0a381756372a")
+	)
+	(wire
+		(pts
+			(xy 99.06 80.01) (xy 99.06 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfc9a2ef-a6e3-42d0-b86b-5e3b2159b716")
+	)
+	(wire
+		(pts
+			(xy 143.51 80.01) (xy 154.94 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e92edb99-5d5b-4880-9652-d5edbd54ab4d")
+	)
+	(hierarchical_label "OUT"
+		(shape output)
+		(at 154.94 80.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ccd4a461-dcff-4344-83dd-587429e59fc9")
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 143.51 83.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1185a146-6c0f-4392-96d8-4dec743d6fe7")
+		(property "Reference" "C1"
+			(at 147.32 82.5499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 147.32 85.0899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 144.4752 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 143.51 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "20523223-c01b-49c0-8ed3-0e3c5d5c03a1")
+		)
+		(pin "1"
+			(uuid "725b5b83-1eaa-49d4-a781-cc9b9dfa3eed")
+		)
+		(instances
+			(project "robocup-controller-pcb"
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/1972dbc4-439c-49bb-9502-5368050a1d79"
+					(reference "C2")
+					(unit 1)
+				)
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/51e515bb-81b2-4f9a-97d7-6e25cc602cd6"
+					(reference "C4")
+					(unit 1)
+				)
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/7aa43fc1-a78f-4ae6-b572-45faad61d6db"
+					(reference "C1")
+					(unit 1)
+				)
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/a94ecdf2-de59-4608-8ff1-a0602a658ef2"
+					(reference "C3")
+					(unit 1)
+				)
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/dc2ff3f3-ba8b-4f11-b3a4-86c0a8ff284d"
+					(reference "C5")
+					(unit 1)
+				)
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/f7047143-6168-46f3-826d-5fe5ddc8eaa1"
+					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 99.06 82.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2f4a5905-7a0a-48dd-bf83-7b4fb2cc31b4")
+		(property "Reference" "#PWR013"
+			(at 99.06 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 99.06 87.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 99.06 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f2b95d10-7792-4838-9a62-384349194d6c")
+		)
+		(instances
+			(project "robocup-controller-pcb"
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/1972dbc4-439c-49bb-9502-5368050a1d79"
+					(reference "#PWR014")
+					(unit 1)
+				)
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/51e515bb-81b2-4f9a-97d7-6e25cc602cd6"
+					(reference "#PWR016")
+					(unit 1)
+				)
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/7aa43fc1-a78f-4ae6-b572-45faad61d6db"
+					(reference "#PWR013")
+					(unit 1)
+				)
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/a94ecdf2-de59-4608-8ff1-a0602a658ef2"
+					(reference "#PWR015")
+					(unit 1)
+				)
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/dc2ff3f3-ba8b-4f11-b3a4-86c0a8ff284d"
+					(reference "#PWR017")
+					(unit 1)
+				)
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/f7047143-6168-46f3-826d-5fe5ddc8eaa1"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 119.38 76.2 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "97f73256-8e4a-4f53-89d4-d0473175f829")
+		(property "Reference" "R7"
+			(at 121.92 74.9299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 121.92 77.4699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 117.602 76.2 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 119.38 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "84e9cdd9-13f4-4e5e-bf7e-594495dd019c")
+		)
+		(pin "1"
+			(uuid "89e066cc-c797-4426-a292-b9b15f7e8cc7")
+		)
+		(instances
+			(project "robocup-controller-pcb"
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/1972dbc4-439c-49bb-9502-5368050a1d79"
+					(reference "R8")
+					(unit 1)
+				)
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/51e515bb-81b2-4f9a-97d7-6e25cc602cd6"
+					(reference "R10")
+					(unit 1)
+				)
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/7aa43fc1-a78f-4ae6-b572-45faad61d6db"
+					(reference "R7")
+					(unit 1)
+				)
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/a94ecdf2-de59-4608-8ff1-a0602a658ef2"
+					(reference "R9")
+					(unit 1)
+				)
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/dc2ff3f3-ba8b-4f11-b3a4-86c0a8ff284d"
+					(reference "R11")
+					(unit 1)
+				)
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/f7047143-6168-46f3-826d-5fe5ddc8eaa1"
+					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 135.89 80.01 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ad19244c-f59a-49f0-a391-ff3c35875308")
+		(property "Reference" "R1"
+			(at 135.89 73.66 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 135.89 76.2 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 135.89 81.788 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 135.89 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 135.89 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4680bb7d-c1e3-422b-a600-8c3e0930c591")
+		)
+		(pin "2"
+			(uuid "fec6d0d2-9517-40c2-80e2-c0159e36dee0")
+		)
+		(instances
+			(project "robocup-controller-pcb"
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/1972dbc4-439c-49bb-9502-5368050a1d79"
+					(reference "R2")
+					(unit 1)
+				)
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/51e515bb-81b2-4f9a-97d7-6e25cc602cd6"
+					(reference "R4")
+					(unit 1)
+				)
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/7aa43fc1-a78f-4ae6-b572-45faad61d6db"
+					(reference "R1")
+					(unit 1)
+				)
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/a94ecdf2-de59-4608-8ff1-a0602a658ef2"
+					(reference "R3")
+					(unit 1)
+				)
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/dc2ff3f3-ba8b-4f11-b3a4-86c0a8ff284d"
+					(reference "R5")
+					(unit 1)
+				)
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/f7047143-6168-46f3-826d-5fe5ddc8eaa1"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 106.68 80.01 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b11d4399-50d6-49d0-a8c3-e74bbade8681")
+		(property "Reference" "SW1"
+			(at 106.68 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 106.68 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH-12mm"
+			(at 106.68 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 106.68 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "04171511-6ac3-4c98-8436-36f5dc7d8dd5")
+		)
+		(pin "1"
+			(uuid "9c25b80d-cb48-4778-a4c9-b5569b74c66f")
+		)
+		(instances
+			(project "robocup-controller-pcb"
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/1972dbc4-439c-49bb-9502-5368050a1d79"
+					(reference "SW2")
+					(unit 1)
+				)
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/51e515bb-81b2-4f9a-97d7-6e25cc602cd6"
+					(reference "SW4")
+					(unit 1)
+				)
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/7aa43fc1-a78f-4ae6-b572-45faad61d6db"
+					(reference "SW1")
+					(unit 1)
+				)
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/a94ecdf2-de59-4608-8ff1-a0602a658ef2"
+					(reference "SW3")
+					(unit 1)
+				)
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/dc2ff3f3-ba8b-4f11-b3a4-86c0a8ff284d"
+					(reference "SW5")
+					(unit 1)
+				)
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/f7047143-6168-46f3-826d-5fe5ddc8eaa1"
+					(reference "SW6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 143.51 90.17 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b9525cad-15ae-4a9c-ab2e-e0d70361241b")
+		(property "Reference" "#PWR019"
+			(at 143.51 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 143.51 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 143.51 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 143.51 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b05bd129-ed7e-40b6-9d4b-802ae6a20e82")
+		)
+		(instances
+			(project "robocup-controller-pcb"
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/1972dbc4-439c-49bb-9502-5368050a1d79"
+					(reference "#PWR020")
+					(unit 1)
+				)
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/51e515bb-81b2-4f9a-97d7-6e25cc602cd6"
+					(reference "#PWR022")
+					(unit 1)
+				)
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/7aa43fc1-a78f-4ae6-b572-45faad61d6db"
+					(reference "#PWR019")
+					(unit 1)
+				)
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/a94ecdf2-de59-4608-8ff1-a0602a658ef2"
+					(reference "#PWR021")
+					(unit 1)
+				)
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/dc2ff3f3-ba8b-4f11-b3a4-86c0a8ff284d"
+					(reference "#PWR023")
+					(unit 1)
+				)
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/f7047143-6168-46f3-826d-5fe5ddc8eaa1"
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 119.38 69.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ffdab6b6-6bef-4878-bcc9-f3bf975bc8e4")
+		(property "Reference" "#PWR025"
+			(at 119.38 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 119.38 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 119.38 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 119.38 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5e824362-fcde-45b9-98f1-a8dc8cdfd8e0")
+		)
+		(instances
+			(project "robocup-controller-pcb"
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/1972dbc4-439c-49bb-9502-5368050a1d79"
+					(reference "#PWR026")
+					(unit 1)
+				)
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/51e515bb-81b2-4f9a-97d7-6e25cc602cd6"
+					(reference "#PWR028")
+					(unit 1)
+				)
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/7aa43fc1-a78f-4ae6-b572-45faad61d6db"
+					(reference "#PWR025")
+					(unit 1)
+				)
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/a94ecdf2-de59-4608-8ff1-a0602a658ef2"
+					(reference "#PWR027")
+					(unit 1)
+				)
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/dc2ff3f3-ba8b-4f11-b3a4-86c0a8ff284d"
+					(reference "#PWR029")
+					(unit 1)
+				)
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913/f7047143-6168-46f3-826d-5fe5ddc8eaa1"
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
