@@ -12,7 +12,7 @@
 		(comment 1 "Aiden Lee [piman PCB]")
 	)
 	(lib_symbols
-		(symbol "Connector_Generic:Conn_01x06"
+		(symbol "Connector_Generic_MountingPin:Conn_01x06_MountingPin"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -32,14 +32,15 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x06"
-				(at 0 -10.16 0)
+			(property "Value" "Conn_01x06_MountingPin"
+				(at 1.27 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -64,7 +65,7 @@
 					)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connectable mounting pin connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -86,7 +87,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(property "ki_fp_filters" "Connector*:*_1x??-1MP*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -97,7 +98,7 @@
 					)
 				)
 			)
-			(symbol "Conn_01x06_1_1"
+			(symbol "Conn_01x06_MountingPin_1_1"
 				(rectangle
 					(start -1.27 6.35)
 					(end 1.27 -8.89)
@@ -173,6 +174,26 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 -9.652) (xy 1.016 -9.652)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "Mounting"
+					(at 0 -9.271 0)
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
 					)
 				)
 				(pin passive line
@@ -276,6 +297,24 @@
 						)
 					)
 					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -12.7 90)
+					(length 3.048)
+					(name "MountPin"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MP"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1921,6 +1960,10 @@
 		(uuid "840fe42f-41cd-457d-8bd1-e557cb429008")
 	)
 	(no_connect
+		(at 35.56 111.76)
+		(uuid "9d510807-12a8-4284-a989-b573d0e6dac0")
+	)
+	(no_connect
 		(at 95.25 38.1)
 		(uuid "a90247a8-ef18-48f6-a693-3986a6c0f945")
 	)
@@ -2427,7 +2470,7 @@
 		(uuid "656efc52-ec16-448c-ae3f-e99c243fde88")
 	)
 	(label "PROGSPI.MOSI"
-		(at 119.38 119.38 0)
+		(at 119.38 127 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2437,7 +2480,7 @@
 		(uuid "662ae128-c860-48b6-9302-fd0958b315c9")
 	)
 	(label "PROGSPI.CLK"
-		(at 119.38 124.46 0)
+		(at 119.38 121.92 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2447,7 +2490,7 @@
 		(uuid "69676894-299e-45ea-8b68-e8b1a0b7580d")
 	)
 	(label "PROGSPI.CSN"
-		(at 119.38 127 0)
+		(at 119.38 119.38 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2487,7 +2530,7 @@
 		(uuid "9de0e865-bac3-4529-bb96-305dc1128190")
 	)
 	(label "PROGSPI.MISO"
-		(at 119.38 121.92 0)
+		(at 119.38 124.46 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2716,6 +2759,133 @@
 			(project "drive-motorboard"
 				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/3b5076b5-0fcf-464e-93a6-a1b7a025dcea"
 					(reference "#PWR041")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic_MountingPin:Conn_01x06_MountingPin")
+		(at 35.56 124.46 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(uuid "1f91747b-6898-4ec6-8566-e8073075c320")
+		(property "Reference" "J3"
+			(at 35.56 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PROG SPI"
+			(at 35.56 134.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_GH_SM06B-GHS-TB_1x06-1MP_P1.25mm_Horizontal"
+			(at 35.56 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf"
+			(at 35.56 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CONN HEADER SMD R/A 6POS 1mm"
+			(at 35.56 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "SM06B-SRSS-TB"
+			(at 35.56 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "LCSC"
+			(at 35.56 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "C56123098"
+			(at 35.56 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "638a96f1-c5ed-4b3f-81fc-4695c3e2ed12")
+		)
+		(pin "MP"
+			(uuid "bdf8120b-1249-4de4-8431-7f755744fa0e")
+		)
+		(pin "6"
+			(uuid "d5e2ed82-6036-4394-8665-3d1700f04eb0")
+		)
+		(pin "2"
+			(uuid "434285a8-5099-4358-b307-13d48356e1f1")
+		)
+		(pin "3"
+			(uuid "22291a21-6186-48c4-a6b6-0e70e7175240")
+		)
+		(pin "4"
+			(uuid "c314cef6-819d-4f7f-aa93-f09075f72c25")
+		)
+		(pin "1"
+			(uuid "02905dfa-d3e9-4579-a1b2-7f241e55ff5d")
+		)
+		(instances
+			(project "drive-motorboard"
+				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/3b5076b5-0fcf-464e-93a6-a1b7a025dcea"
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -3065,131 +3235,6 @@
 							(value "100n")
 						)
 					)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x06")
-		(at 35.56 124.46 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "598ae0a0-f0fe-44b8-8544-39c4094702ae")
-		(property "Reference" "J3"
-			(at 35.56 110.49 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PROG SPI"
-			(at 35.56 113.03 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_GH_SM06B-GHS-TB_1x06-1MP_P1.25mm_Horizontal"
-			(at 35.56 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf"
-			(at 35.56 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "CONN HEADER SMD R/A 6POS 1mm"
-			(at 35.56 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer P/N" "SM06B-SRSS-TB"
-			(at 35.56 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor" "LCSC"
-			(at 35.56 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor P/N" "C56123098"
-			(at 35.56 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "45047d82-1cc1-488b-8cc0-4f02a8875153")
-		)
-		(pin "2"
-			(uuid "e2101872-c1e6-4054-b676-e5365e0b7d0a")
-		)
-		(pin "3"
-			(uuid "668782ff-f244-46ea-937f-3f20c3942ca3")
-		)
-		(pin "1"
-			(uuid "6d79f28f-4aae-4484-a06b-3addb07c6219")
-		)
-		(pin "6"
-			(uuid "2795512d-6712-43ec-b519-8906327e79ef")
-		)
-		(pin "5"
-			(uuid "579b7578-ae10-4c3e-979c-a75c0157385d")
-		)
-		(instances
-			(project "drive-motorboard"
-				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/3b5076b5-0fcf-464e-93a6-a1b7a025dcea"
-					(reference "J3")
-					(unit 1)
 				)
 			)
 		)

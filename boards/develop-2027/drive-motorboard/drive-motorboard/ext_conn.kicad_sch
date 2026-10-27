@@ -367,7 +367,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_01x06"
+		(symbol "Connector_Generic_MountingPin:Conn_01x06_MountingPin"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -387,14 +387,15 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x06"
-				(at 0 -10.16 0)
+			(property "Value" "Conn_01x06_MountingPin"
+				(at 1.27 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -419,7 +420,7 @@
 					)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connectable mounting pin connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -441,7 +442,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(property "ki_fp_filters" "Connector*:*_1x??-1MP*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -452,7 +453,7 @@
 					)
 				)
 			)
-			(symbol "Conn_01x06_1_1"
+			(symbol "Conn_01x06_MountingPin_1_1"
 				(rectangle
 					(start -1.27 6.35)
 					(end 1.27 -8.89)
@@ -528,6 +529,26 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 -9.652) (xy 1.016 -9.652)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "Mounting"
+					(at 0 -9.271 0)
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
 					)
 				)
 				(pin passive line
@@ -631,6 +652,24 @@
 						)
 					)
 					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -12.7 90)
+					(length 3.048)
+					(name "MountPin"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MP"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1662,6 +1701,10 @@
 		(uuid "799738b9-19b2-4c71-bda2-a7276182fa4d")
 	)
 	(no_connect
+		(at 95.25 41.91)
+		(uuid "15761dcd-ec54-47af-845c-b0e8a9361618")
+	)
+	(no_connect
 		(at 143.51 120.65)
 		(uuid "1f1d8c31-acb5-41dc-8ff1-4730bd841308")
 	)
@@ -2210,6 +2253,133 @@
 		(uuid "f8b3f7c8-0429-49f7-a27d-9d50ef3c9624")
 	)
 	(symbol
+		(lib_id "Connector_Generic_MountingPin:Conn_01x06_MountingPin")
+		(at 95.25 54.61 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1cf569b3-93f3-4ba1-89de-261200903fde")
+		(property "Reference" "J4"
+			(at 95.25 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "COMM SPI"
+			(at 95.25 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_GH_SM06B-GHS-TB_1x06-1MP_P1.25mm_Horizontal"
+			(at 95.25 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf"
+			(at 95.25 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CONN HEADER SMD R/A 6POS 1mm"
+			(at 95.25 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "SM06B-SRSS-TB"
+			(at 95.25 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "LCSC"
+			(at 95.25 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "C56123098"
+			(at 95.25 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "dbf9cad3-1aaf-452f-8b49-581d6be4cde0")
+		)
+		(pin "MP"
+			(uuid "95e479ed-e376-43bc-888a-03d5a76b8912")
+		)
+		(pin "6"
+			(uuid "e6053d85-749b-4d0f-9041-89e068a6199e")
+		)
+		(pin "2"
+			(uuid "14b74ab4-72f1-49cb-9d0c-f38cbdfcbe08")
+		)
+		(pin "3"
+			(uuid "de0fe6d5-9f30-42b2-8236-7794d53e0b4e")
+		)
+		(pin "4"
+			(uuid "f01a17b5-f883-4851-8f89-9936ab9f5e3d")
+		)
+		(pin "1"
+			(uuid "64a28ec4-515c-4ded-bed3-ca2f51362437")
+		)
+		(instances
+			(project "drive-motorboard"
+				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/3eb420b4-b75b-4293-a96c-529568d18f03"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 127 34.29 0)
 		(unit 1)
@@ -2361,146 +2531,6 @@
 				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/3eb420b4-b75b-4293-a96c-529568d18f03"
 					(reference "#PWR051")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x06")
-		(at 95.25 54.61 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "634b96db-089d-4699-b823-a33f228f80bc")
-		(property "Reference" "J4"
-			(at 95.25 40.64 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "COMM SPI"
-			(at 95.25 43.18 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_GH_SM05B-GHS-TB_1x05-1MP_P1.25mm_Horizontal"
-			(at 95.25 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf"
-			(at 95.25 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 95.25 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer P/N" "SM05B-SRSS-TB"
-			(at 95.25 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor" "Digikey"
-			(at 95.25 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor P/N" "455-SM05B-SRSS-TBCT-ND"
-			(at 95.25 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "6"
-			(uuid "4a9555ce-71f0-42dd-b203-6ebd40a86483")
-		)
-		(pin "4"
-			(uuid "9abd5e62-23b7-492e-8a1b-d4c9a3ba10cb")
-		)
-		(pin "1"
-			(uuid "b997cefd-c8db-425d-8d73-84f7c33ec78c")
-		)
-		(pin "3"
-			(uuid "da0c2be7-ddc0-4588-aff5-6b699c81de50")
-		)
-		(pin "2"
-			(uuid "b379feb7-ba76-47e0-a048-ac8997d5d38c")
-		)
-		(pin "5"
-			(uuid "cc0a2216-7b60-4757-9c09-17bde2342112")
-		)
-		(instances
-			(project "drive-motorboard"
-				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/3eb420b4-b75b-4293-a96c-529568d18f03"
-					(reference "J4")
-					(unit 1)
-					(variant
-						(name "LCSC")
-						(field
-							(name "Manufacturer P/N")
-							(value "SM05B-GHS-TB")
-						)
-						(field
-							(name "Vendor")
-							(value "LCSC")
-						)
-						(field
-							(name "Vendor P/N")
-							(value "C189896")
-						)
-					)
 				)
 			)
 		)
