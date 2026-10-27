@@ -564,7 +564,7 @@
 	)
 	(rectangle
 		(start 172.085 66.675)
-		(end 197.485 98.425)
+		(end 201.93 98.425)
 		(stroke
 			(width 0)
 			(type dash)
@@ -575,7 +575,7 @@
 		(uuid "4dbb8645-a358-4fd7-b200-ee90d6508759")
 	)
 	(rectangle
-		(start 77.47 44.45)
+		(start 76.2 44.45)
 		(end 215.9 139.7)
 		(stroke
 			(width 0)
@@ -654,7 +654,7 @@
 	)
 	(text "Current Sensing Op-Amp with Low Pass Filtered Output"
 		(exclude_from_sim no)
-		(at 77.47 43.815 0)
+		(at 76.2 43.815 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -698,8 +698,8 @@
 	)
 	(text_box "Differental amplifier with low pass filtered output. Design derived from EVLSPIN32G0A2 Evaluation Board.\nIntended for Field-Oriented Control of the Nanotec DF45 65W (10 A peak) or DF45 50W (7 A peak).\nAll Resistors except for R_{LP}: ±0.1% 25ppm/°C or better.\n\nIdeal Characteristics:\nVoltage Gain (G_{V/V}): 7.301 V/V\nCurrent Gain (G_{V/A}): 109.5 mV/A (15 mΩ shunt)\nCurrent Sense Range (I_{RANGE}): ±15.07 A\nOutput Offset (I_{SHUNT} = 0 A): 1.65 V\nLow Pass Filter Cutoff (-3 dB gain): 4.82 kHz\n\nSee ST Manual on EVLSPIN32G0A2, Section 4.4 for derivation"
 		(exclude_from_sim no)
-		(at 80.01 110.49 0)
-		(size 133.35 26.4392)
+		(at 78.74 110.49 0)
+		(size 134.62 26.4392)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -1078,7 +1078,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4934acfb-c1c2-48e8-bb57-2877e5280e44")
-		(property "Reference" "R22"
+		(property "Reference" "R23"
 			(at 156.21 50.8 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1173,7 +1173,7 @@
 		(instances
 			(project "drive-motorboard"
 				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/73cb52ef-7536-45c8-9d54-fc54b3c8b275/6a90f09e-36c5-4d99-99bd-40e5fc71ba45"
-					(reference "R22")
+					(reference "R23")
 					(unit 1)
 					(variant
 						(name "LCSC")
@@ -1206,7 +1206,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "496948bd-df0f-40bd-9a61-6fc928af12f0")
-		(property "Reference" "R19"
+		(property "Reference" "R20"
 			(at 114.3 74.9299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1303,7 +1303,7 @@
 		(instances
 			(project "drive-motorboard"
 				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/73cb52ef-7536-45c8-9d54-fc54b3c8b275/6a90f09e-36c5-4d99-99bd-40e5fc71ba45"
-					(reference "R19")
+					(reference "R20")
 					(unit 1)
 					(variant
 						(name "LCSC")
@@ -1336,7 +1336,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7b3ef6a9-28d2-45d0-961b-cbdb2d390d6c")
-		(property "Reference" "C19"
+		(property "Reference" "C18"
 			(at 191.77 83.8201 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1433,7 +1433,7 @@
 		(instances
 			(project "drive-motorboard"
 				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/73cb52ef-7536-45c8-9d54-fc54b3c8b275/6a90f09e-36c5-4d99-99bd-40e5fc71ba45"
-					(reference "C19")
+					(reference "C18")
 					(unit 1)
 					(variant
 						(name "LCSC")
@@ -1458,7 +1458,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "827ff3b1-b7a1-4e74-b2d1-15779d3af88a")
-		(property "Reference" "R18"
+		(property "Reference" "R19"
 			(at 92.71 76.2 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1553,7 +1553,7 @@
 		(instances
 			(project "drive-motorboard"
 				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/73cb52ef-7536-45c8-9d54-fc54b3c8b275/6a90f09e-36c5-4d99-99bd-40e5fc71ba45"
-					(reference "R18")
+					(reference "R19")
 					(unit 1)
 					(variant
 						(name "LCSC")
@@ -1586,7 +1586,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ad3816b2-1b69-46f2-aee7-cd1e7b03dae1")
-		(property "Reference" "R23"
+		(property "Reference" "R24"
 			(at 181.61 69.85 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1681,7 +1681,7 @@
 		(instances
 			(project "drive-motorboard"
 				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/73cb52ef-7536-45c8-9d54-fc54b3c8b275/6a90f09e-36c5-4d99-99bd-40e5fc71ba45"
-					(reference "R23")
+					(reference "R24")
 					(unit 1)
 					(variant
 						(name "LCSC")
@@ -1800,7 +1800,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e12d3383-9b75-469c-8902-2f8e7a77e1f6")
-		(property "Reference" "R20"
+		(property "Reference" "R21"
 			(at 114.3 87.6299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1897,7 +1897,7 @@
 		(instances
 			(project "drive-motorboard"
 				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/73cb52ef-7536-45c8-9d54-fc54b3c8b275/6a90f09e-36c5-4d99-99bd-40e5fc71ba45"
-					(reference "R20")
+					(reference "R21")
 					(unit 1)
 					(variant
 						(name "LCSC")
@@ -2008,7 +2008,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eb71a824-3da1-418e-93ad-bfe71dd730ff")
-		(property "Reference" "R21"
+		(property "Reference" "R22"
 			(at 130.81 63.5 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2103,7 +2103,7 @@
 		(instances
 			(project "drive-motorboard"
 				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/73cb52ef-7536-45c8-9d54-fc54b3c8b275/6a90f09e-36c5-4d99-99bd-40e5fc71ba45"
-					(reference "R21")
+					(reference "R22")
 					(unit 1)
 					(variant
 						(name "LCSC")

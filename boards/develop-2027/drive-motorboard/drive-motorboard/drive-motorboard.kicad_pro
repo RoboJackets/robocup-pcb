@@ -653,7 +653,7 @@
       "group_symbols": true,
       "include_excluded_from_bom": true,
       "name": "",
-      "sort_asc": true,
+      "sort_asc": false,
       "sort_field": "Vendor"
     },
     "bus_aliases": {},
@@ -697,7 +697,7 @@
         "uuid": "9e9815bc-cf1c-424b-a03b-224c05c2b627"
       }
     ],
-    "used_designators": "Q1-6,U1-2,U4,SW1,TP1-3,TP6-14,R1-24,R48-50,D1-7,C1-19,#PWR1-31,#PWR75-76,#FLG1,#FLG3",
+    "used_designators": "L1,J1-6,H1-8,F1,Q1-6,U1-6,SW1,TP1-3,TP6-14,TP20-25,TP27-34,R1-36,R39-40,R42-53,D1-15,C1-22,#PWR1-79,#FLG1-7",
     "variants": [
       {
         "description": "Assembled by JLCPCB",
@@ -729,6 +729,26 @@
     [
       "6a90f09e-36c5-4d99-99bd-40e5fc71ba45",
       "Current Sensing"
+    ],
+    [
+      "370bf50f-3bfc-4ffc-b8c3-0c77ac5cbd3b",
+      "Motor Connections"
+    ],
+    [
+      "3b5076b5-0fcf-464e-93a6-a1b7a025dcea",
+      "Magnetic Encoder"
+    ],
+    [
+      "015c4d19-c853-45a4-8e72-c91dfe669f51",
+      "Temperature Sensor"
+    ],
+    [
+      "3eb420b4-b75b-4293-a96c-529568d18f03",
+      "External Connections"
+    ],
+    [
+      "9fb6f48b-7b2b-49be-9199-83460c086bb1",
+      "Power"
     ]
   ],
   "text_variables": {},
