@@ -281,7 +281,16 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "pin_to_pin|1371600|1219200|2dd0a1b2-c020-4f86-af2b-dfdcaf2926ac|03e66653-fafe-4287-9647-c280c8e67446|/9e9815bc-cf1c-424b-a03b-224c05c2b627/3eb420b4-b75b-4293-a96c-529568d18f03|/9e9815bc-cf1c-424b-a03b-224c05c2b627/3eb420b4-b75b-4293-a96c-529568d18f03|/9e9815bc-cf1c-424b-a03b-224c05c2b627/3eb420b4-b75b-4293-a96c-529568d18f03",
+        "This is expected, as we don't expect both to be used at the same time."
+      ],
+      [
+        "pin_to_pin|1371600|1397000|a2e11a22-1ef2-4dfb-9643-2de74f3a1355|ea633c97-b819-4300-a99a-4a65828038cf|/9e9815bc-cf1c-424b-a03b-224c05c2b627/3eb420b4-b75b-4293-a96c-529568d18f03|/9e9815bc-cf1c-424b-a03b-224c05c2b627/3eb420b4-b75b-4293-a96c-529568d18f03|/9e9815bc-cf1c-424b-a03b-224c05c2b627/3eb420b4-b75b-4293-a96c-529568d18f03",
+        "This is expected, as we don't expect both to be used at the same time."
+      ]
+    ],
     "meta": {
       "version": 0
     },
