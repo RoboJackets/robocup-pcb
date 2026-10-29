@@ -2470,7 +2470,7 @@
 		(uuid "656efc52-ec16-448c-ae3f-e99c243fde88")
 	)
 	(label "PROGSPI.MOSI"
-		(at 119.38 119.38 0)
+		(at 119.38 127 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2480,7 +2480,7 @@
 		(uuid "662ae128-c860-48b6-9302-fd0958b315c9")
 	)
 	(label "PROGSPI.CLK"
-		(at 119.38 124.46 0)
+		(at 119.38 121.92 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2490,7 +2490,7 @@
 		(uuid "69676894-299e-45ea-8b68-e8b1a0b7580d")
 	)
 	(label "PROGSPI.CSN"
-		(at 119.38 127 0)
+		(at 119.38 119.38 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2530,7 +2530,7 @@
 		(uuid "9de0e865-bac3-4529-bb96-305dc1128190")
 	)
 	(label "PROGSPI.MISO"
-		(at 119.38 121.92 0)
+		(at 119.38 124.46 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2795,7 +2795,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_GH_BM06B-GHS-TBT_1x06-1MP_P1.25mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_GH_SM06B-GHS-TB_1x06-1MP_P1.25mm_Horizontal"
 			(at 35.56 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -2817,7 +2817,7 @@
 				)
 			)
 		)
-		(property "Description" "CONN HEADER SMD R/A 6POS 1mm"
+		(property "Description" "SMD,P=1.25mm,Surface Mount,Right Angle"
 			(at 35.56 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -2828,7 +2828,7 @@
 				)
 			)
 		)
-		(property "Manufacturer P/N" "BM06B-GHS-TBT"
+		(property "Manufacturer P/N" "SM06B-GHS-TB"
 			(at 35.56 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -2850,7 +2850,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "C189892"
+		(property "Vendor P/N" "C133065"
 			(at 35.56 124.46 0)
 			(hide yes)
 			(show_name no)
