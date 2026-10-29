@@ -1647,7 +1647,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 69.85) (xy 101.6 69.85)
+			(xy 106.68 69.85) (xy 101.6 69.85)
 		)
 		(stroke
 			(width 0)
@@ -1717,7 +1717,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 82.55) (xy 104.14 80.01)
+			(xy 104.14 82.55) (xy 104.14 67.31)
 		)
 		(stroke
 			(width 0)
@@ -1787,7 +1787,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 67.31) (xy 104.14 69.85)
+			(xy 106.68 60.96) (xy 106.68 69.85)
 		)
 		(stroke
 			(width 0)
@@ -1867,7 +1867,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 80.01) (xy 101.6 80.01)
+			(xy 104.14 67.31) (xy 101.6 67.31)
 		)
 		(stroke
 			(width 0)
@@ -1896,16 +1896,6 @@
 		(uuid "fb9d5cb7-329c-4823-ac77-2ffc755e478d")
 	)
 	(label "HALL.B"
-		(at 147.32 74.93 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2a07e37d-56e1-4289-b75e-f2f6395cf684")
-	)
-	(label "HALL.A"
 		(at 147.32 77.47 0)
 		(effects
 			(font
@@ -1913,7 +1903,17 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "60b62695-0481-4770-918f-8dfe0d7d1069")
+		(uuid "11ed9046-21ff-46ce-b773-6356b7ab056f")
+	)
+	(label "HALL.A"
+		(at 147.32 74.93 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7bdd4f5f-ee43-41b4-9ddd-55fa8a99bdfc")
 	)
 	(label "HALL.C"
 		(at 147.32 72.39 0)
@@ -1938,17 +1938,6 @@
 	)
 	(hierarchical_label "MOTORU"
 		(shape input)
-		(at 209.55 62.23 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7f454029-6b1c-4978-a479-34f64894fd26")
-	)
-	(hierarchical_label "MOTORV"
-		(shape input)
 		(at 209.55 64.77 0)
 		(effects
 			(font
@@ -1956,9 +1945,20 @@
 			)
 			(justify left)
 		)
-		(uuid "93fb4885-23e9-413c-89e8-cf7cbb63320d")
+		(uuid "1efc88bd-ee21-4a38-ad8d-c89fd2dfad90")
 	)
 	(hierarchical_label "MOTORW"
+		(shape input)
+		(at 209.55 62.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2778e1c8-0128-4aa7-9914-ae807e016cba")
+	)
+	(hierarchical_label "MOTORV"
 		(shape input)
 		(at 209.55 67.31 0)
 		(effects
@@ -1967,7 +1967,7 @@
 			)
 			(justify left)
 		)
-		(uuid "c2faa4a9-a2b3-4b58-9d79-e6056e59c606")
+		(uuid "37a25521-518c-495f-a5cb-5db1d13bcfc7")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -3253,128 +3253,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x05")
-		(at 96.52 74.93 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9fb17248-fab0-47a3-a262-e233f3042487")
-		(property "Reference" "J1"
-			(at 96.52 63.5 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MOTOR HALL"
-			(at 96.52 66.04 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_ACH_BM05B-ACHSS-A-GAN-ETF_1x05-1MP_P1.20mm_Vertical"
-			(at 96.52 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2226/ACH_1.2Pitch_DisconnectableCrimp.pdf"
-			(at 96.52 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 96.52 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer P/N" "BM05B-ACHSS-A-GAN-ETF"
-			(at 96.52 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor" "LCSC"
-			(at 96.52 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor P/N" "C5304901"
-			(at 96.52 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "e319ea6a-7a38-48a6-8803-c9ae4b76ac54")
-		)
-		(pin "5"
-			(uuid "cebf7e83-1a14-4075-a13e-4fe36725577a")
-		)
-		(pin "2"
-			(uuid "e5a9fb9f-a0a9-4f05-9f20-09b1e19d8326")
-		)
-		(pin "3"
-			(uuid "80d44509-f218-441e-881e-e82d94c1934e")
-		)
-		(pin "1"
-			(uuid "16ae1347-8e5e-4bc5-a1b9-1fc13204947c")
-		)
-		(instances
-			(project "drive-motorboard"
-				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/370bf50f-3bfc-4ffc-b8c3-0c77ac5cbd3b"
-					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 195.58 102.87 0)
 		(unit 1)
@@ -3684,7 +3562,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 104.14 67.31 0)
+		(at 106.68 60.96 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3695,7 +3573,7 @@
 		(fields_autoplaced yes)
 		(uuid "b5eb32f2-fb7b-4553-aee3-6b172437bd59")
 		(property "Reference" "#PWR032"
-			(at 104.14 71.12 0)
+			(at 106.68 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3706,7 +3584,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 104.14 62.23 0)
+			(at 106.68 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3716,7 +3594,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 104.14 67.31 0)
+			(at 106.68 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3727,7 +3605,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 104.14 67.31 0)
+			(at 106.68 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3738,7 +3616,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 104.14 67.31 0)
+			(at 106.68 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3755,6 +3633,128 @@
 			(project "drive-motorboard"
 				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/370bf50f-3bfc-4ffc-b8c3-0c77ac5cbd3b"
 					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x05")
+		(at 96.52 72.39 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ccd30efc-2ba9-4d00-bca7-b1968d06b415")
+		(property "Reference" "J1"
+			(at 96.52 60.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MOTOR HALL"
+			(at 96.52 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_ACH_BM05B-ACHSS-A-GAN-ETF_1x05-1MP_P1.20mm_Vertical"
+			(at 96.52 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2226/ACH_1.2Pitch_DisconnectableCrimp.pdf"
+			(at 96.52 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 96.52 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "BM05B-ACHSS-A-GAN-ETF"
+			(at 96.52 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "LCSC"
+			(at 96.52 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "C5304901"
+			(at 96.52 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "4669e505-95b4-420d-9f5d-a8d824c4d6ca")
+		)
+		(pin "5"
+			(uuid "cfd40265-7890-4ed0-b1ce-a7d09f76b8a0")
+		)
+		(pin "2"
+			(uuid "d371ff8d-1879-486e-9f19-22d53d80f3c8")
+		)
+		(pin "3"
+			(uuid "1b872a3a-4c13-4fbc-a296-7093bda710eb")
+		)
+		(pin "1"
+			(uuid "878d8e22-46b6-4b9f-9d4e-b66cf99a9229")
+		)
+		(instances
+			(project "drive-motorboard"
+				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/370bf50f-3bfc-4ffc-b8c3-0c77ac5cbd3b"
+					(reference "J1")
 					(unit 1)
 				)
 			)
