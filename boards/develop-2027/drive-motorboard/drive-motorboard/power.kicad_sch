@@ -3243,7 +3243,7 @@
 		(fields_autoplaced yes)
 		(uuid "4f3d2cc1-9841-4fa4-9e0d-3dac3a074ee4")
 		(property "Reference" "F1"
-			(at 88.9 56.515 90)
+			(at 88.9 55.88 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3252,8 +3252,8 @@
 				)
 			)
 		)
-		(property "Value" "10A 60V"
-			(at 88.9 59.055 90)
+		(property "Value" "10A 63V"
+			(at 88.9 58.42 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3262,7 +3262,7 @@
 				)
 			)
 		)
-		(property "Footprint" "RJ-Passives:Fuse_2410_6125Metric"
+		(property "Footprint" "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
 			(at 88.9 64.008 90)
 			(hide yes)
 			(show_name no)
@@ -3273,7 +3273,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://belfuse.com/media/datasheets/products/circuit-protection/ds-cp-0679h-series.pdf"
+		(property "Datasheet" "https://www.schurter.com/en/datasheet/typ_UST_1206.pdf"
 			(at 88.9 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -3284,7 +3284,7 @@
 				)
 			)
 		)
-		(property "Description" "Fuse"
+		(property "Description" "10 A 32 V 63 V Fuse Board Mount (Cartridge Style Excluded) Surface Mount 1206 (3216 Metric)"
 			(at 88.9 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -3295,7 +3295,7 @@
 				)
 			)
 		)
-		(property "Manufacturer P/N" "0679H9100-05"
+		(property "Manufacturer P/N" "3413.0328.22"
 			(at 88.9 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -3306,7 +3306,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 88.9 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -3317,7 +3317,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "5923-0679H9100-05CT-ND"
+		(property "Vendor P/N" "C3165064"
 			(at 88.9 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -3498,7 +3498,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "296-41856-1-ND"
+		(property "Vendor P/N" "C91241"
 			(at 111.76 127 0)
 			(hide yes)
 			(show_name no)
@@ -3509,7 +3509,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 111.76 127 0)
 			(hide yes)
 			(show_name no)
@@ -3558,17 +3558,6 @@
 				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/9fb6f48b-7b2b-49be-9199-83460c086bb1"
 					(reference "U4")
 					(unit 1)
-					(variant
-						(name "LCSC")
-						(field
-							(name "Vendor")
-							(value "LCSC")
-						)
-						(field
-							(name "Vendor P/N")
-							(value "C91241")
-						)
-					)
 				)
 			)
 		)
@@ -3683,7 +3672,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_VH_B2PS-VH_1x02_P3.96mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_VH_B2P-VH-B_1x02_P3.96mm_Vertical"
 			(at 71.12 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -3705,7 +3694,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Connector Header Through Hole 2 position 0.156\" (3.96mm)"
 			(at 71.12 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -3716,7 +3705,7 @@
 				)
 			)
 		)
-		(property "Manufacturer P/N" "B2PS-VH"
+		(property "Manufacturer P/N" "B2P-VH"
 			(at 71.12 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -3727,7 +3716,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 71.12 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -3738,7 +3727,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "455-B2PS-VH-ND"
+		(property "Vendor P/N" "C160315"
 			(at 71.12 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -4283,7 +4272,7 @@
 				)
 			)
 		)
-		(property "Description" "C91606"
+		(property "Description" "CAP CER 10uF 25V X5R 0603"
 			(at 160.02 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -4338,13 +4327,6 @@
 				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/9fb6f48b-7b2b-49be-9199-83460c086bb1"
 					(reference "C22")
 					(unit 1)
-					(variant
-						(name "LCSC")
-						(field
-							(name "Description")
-							(value "CAP CER 10uF 25V X5R 0603")
-						)
-					)
 				)
 			)
 		)
@@ -4405,7 +4387,7 @@
 				)
 			)
 		)
-		(property "Description" "C91606"
+		(property "Description" "CAP CER 10uF 25V X5R 0603"
 			(at 142.24 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -4460,13 +4442,6 @@
 				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/9fb6f48b-7b2b-49be-9199-83460c086bb1"
 					(reference "C21")
 					(unit 1)
-					(variant
-						(name "LCSC")
-						(field
-							(name "Description")
-							(value "CAP CER 10uF 25V X5R 0603")
-						)
-					)
 				)
 			)
 		)
@@ -4758,7 +4733,7 @@
 				)
 			)
 		)
-		(property "Description" "Inductor"
+		(property "Description" "10 µH Semi-Shielded Wirewound Inductor 540 mA 133mOhm 1210 (3225 Metric)"
 			(at 130.81 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -4779,7 +4754,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "587-2421-1-ND"
+		(property "Vendor P/N" "C223424"
 			(at 130.81 119.38 90)
 			(hide yes)
 			(show_name no)
@@ -4790,7 +4765,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 130.81 119.38 90)
 			(hide yes)
 			(show_name no)
@@ -4812,17 +4787,6 @@
 				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/9fb6f48b-7b2b-49be-9199-83460c086bb1"
 					(reference "L1")
 					(unit 1)
-					(variant
-						(name "LCSC")
-						(field
-							(name "Description")
-							(value "10 µH Semi-Shielded Wirewound Inductor 540 mA 133mOhm 1210 (3225 Metric)")
-						)
-						(field
-							(name "Vendor P/N")
-							(value "C223424")
-						)
-					)
 				)
 			)
 		)

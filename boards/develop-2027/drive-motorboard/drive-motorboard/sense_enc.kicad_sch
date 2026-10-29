@@ -3140,7 +3140,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n 10V"
+		(property "Value" "100n"
 			(at 43.18 39.3701 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3228,13 +3228,6 @@
 				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/3b5076b5-0fcf-464e-93a6-a1b7a025dcea"
 					(reference "C19")
 					(unit 1)
-					(variant
-						(name "LCSC")
-						(field
-							(name "Value")
-							(value "100n")
-						)
-					)
 				)
 			)
 		)

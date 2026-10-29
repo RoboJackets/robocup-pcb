@@ -558,7 +558,7 @@
       "method": 0,
       "sort_order": 0
     },
-    "bom_export_filename": "exports/kmm-pmask-mask.csv",
+    "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -595,7 +595,7 @@
           "group_by": true,
           "label": "DNP",
           "name": "${DNP}",
-          "show": false
+          "show": true
         },
         {
           "group_by": true,
@@ -631,10 +631,10 @@
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": false
+          "show": true
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Vendor",
           "name": "Vendor",
           "show": true
@@ -643,12 +643,6 @@
           "group_by": false,
           "label": "Description",
           "name": "Description",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Sim.Pins",
-          "name": "Sim.Pins",
           "show": false
         },
         {
@@ -661,7 +655,7 @@
           "group_by": false,
           "label": "Manufacturer P/N",
           "name": "Manufacturer P/N",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -718,13 +712,8 @@
         "uuid": "9e9815bc-cf1c-424b-a03b-224c05c2b627"
       }
     ],
-    "used_designators": "L1,J1-7,H1-8,F1,Q1-6,U1-6,SW1,TP1-3,TP6-14,TP20-25,TP27-34,R1-36,R39-40,R42-53,D1-15,C1-23,#PWR1-79,#FLG1-7",
-    "variants": [
-      {
-        "description": "Assembled by JLCPCB",
-        "name": "LCSC"
-      }
-    ]
+    "used_designators": "L1,J1-7,H1-8,F1,Q1-6,U1-6,SW1,TP1-3,TP6-14,TP20-25,TP27-34,R1-37,R39-40,R42-53,D1-15,C1-23,#PWR1-79,#FLG1-7",
+    "variants": []
   },
   "sheets": [
     [

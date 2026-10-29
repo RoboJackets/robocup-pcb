@@ -4920,9 +4920,9 @@
 		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "060e6ef7-44e4-490a-b8f0-5ffcff36299d")
@@ -4990,7 +4990,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 198.12 15.24 0)
 			(hide yes)
 			(show_name no)
@@ -5001,7 +5001,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "497-STSPIN32G0B2-ND"
+		(property "Vendor P/N" "C23064814"
 			(at 198.12 17.78 0)
 			(hide yes)
 			(show_name no)
@@ -5164,19 +5164,6 @@
 				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/73cb52ef-7536-45c8-9d54-fc54b3c8b275"
 					(reference "U1")
 					(unit 2)
-					(variant
-						(name "LCSC")
-						(in_bom no)
-						(in_pos_files no)
-						(field
-							(name "Vendor")
-							(value "LCSC")
-						)
-						(field
-							(name "Vendor P/N")
-							(value "C23064814")
-						)
-					)
 				)
 			)
 		)
@@ -5351,7 +5338,7 @@
 				)
 			)
 		)
-		(property "Description" "Polarized capacitor"
+		(property "Description" "CAP ALUM 100uF ±20% 35V SMD"
 			(at 26.67 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -5406,13 +5393,6 @@
 				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/73cb52ef-7536-45c8-9d54-fc54b3c8b275"
 					(reference "C1")
 					(unit 1)
-					(variant
-						(name "LCSC")
-						(field
-							(name "Description")
-							(value "CAP ALUM 100uF ±20% 35V SMD")
-						)
-					)
 				)
 			)
 		)
@@ -5862,7 +5842,7 @@
 				)
 			)
 		)
-		(property "Description" "Shunt resistor with Kelvin connections"
+		(property "Description" "RES 15mΩ ±1% 3W 2512"
 			(at 101.6 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -5884,7 +5864,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 101.6 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -5895,7 +5875,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "CRA2512-FZ-R015ELFCT-ND"
+		(property "Vendor P/N" "C2073490"
 			(at 101.6 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -5923,21 +5903,6 @@
 				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/73cb52ef-7536-45c8-9d54-fc54b3c8b275"
 					(reference "R1")
 					(unit 1)
-					(variant
-						(name "LCSC")
-						(field
-							(name "Description")
-							(value "RES 15mΩ ±1% 3W 2512")
-						)
-						(field
-							(name "Vendor")
-							(value "LCSC")
-						)
-						(field
-							(name "Vendor P/N")
-							(value "C2073490")
-						)
-					)
 				)
 			)
 		)
@@ -6333,9 +6298,9 @@
 		(unit 3)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "52c5fd5e-5e9c-48e7-a32c-a307642c82ba")
@@ -6403,7 +6368,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 24.13 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -6414,7 +6379,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "497-STSPIN32G0B2-ND"
+		(property "Vendor P/N" "C23064814"
 			(at 24.13 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -6577,19 +6542,6 @@
 				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/73cb52ef-7536-45c8-9d54-fc54b3c8b275"
 					(reference "U1")
 					(unit 3)
-					(variant
-						(name "LCSC")
-						(in_bom no)
-						(in_pos_files no)
-						(field
-							(name "Vendor")
-							(value "LCSC")
-						)
-						(field
-							(name "Vendor P/N")
-							(value "C23064814")
-						)
-					)
 				)
 			)
 		)
@@ -6600,9 +6552,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5353760d-99da-4de4-b2a4-719351463636")
@@ -6670,7 +6622,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 74.93 25.4 0)
 			(hide yes)
 			(show_name no)
@@ -6681,7 +6633,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "497-STSPIN32G0B2-ND"
+		(property "Vendor P/N" "C23064814"
 			(at 74.93 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -6844,19 +6796,6 @@
 				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/73cb52ef-7536-45c8-9d54-fc54b3c8b275"
 					(reference "U1")
 					(unit 1)
-					(variant
-						(name "LCSC")
-						(in_bom no)
-						(in_pos_files no)
-						(field
-							(name "Vendor")
-							(value "LCSC")
-						)
-						(field
-							(name "Vendor P/N")
-							(value "C23064814")
-						)
-					)
 				)
 			)
 		)
@@ -6867,9 +6806,9 @@
 		(unit 5)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "56acaa7c-4dd2-46ee-92fc-58030008c484")
@@ -6939,7 +6878,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 240.03 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -6950,7 +6889,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "497-STSPIN32G0B2-ND"
+		(property "Vendor P/N" "C23064814"
 			(at 240.03 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -7113,19 +7052,6 @@
 				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/73cb52ef-7536-45c8-9d54-fc54b3c8b275"
 					(reference "U1")
 					(unit 5)
-					(variant
-						(name "LCSC")
-						(in_bom no)
-						(in_pos_files no)
-						(field
-							(name "Vendor")
-							(value "LCSC")
-						)
-						(field
-							(name "Vendor P/N")
-							(value "C23064814")
-						)
-					)
 				)
 			)
 		)
@@ -7481,7 +7407,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71H272KA01-01.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C14442.pdf"
 			(at 210.82 127 0)
 			(hide yes)
 			(show_name no)
@@ -7492,7 +7418,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "CAP CER 1nF 50V X7R 0402"
 			(at 210.82 127 0)
 			(hide yes)
 			(show_name no)
@@ -7503,7 +7429,7 @@
 				)
 			)
 		)
-		(property "Manufacturer P/N" "GRM155R71H102KA01D"
+		(property "Manufacturer P/N" "CL05B102KB5NNNC"
 			(at 210.82 127 0)
 			(hide yes)
 			(show_name no)
@@ -7514,7 +7440,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 210.82 127 0)
 			(hide yes)
 			(show_name no)
@@ -7525,7 +7451,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "490-1303-1-ND"
+		(property "Vendor P/N" "C14442"
 			(at 210.82 127 0)
 			(hide yes)
 			(show_name no)
@@ -7547,29 +7473,6 @@
 				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/73cb52ef-7536-45c8-9d54-fc54b3c8b275"
 					(reference "C11")
 					(unit 1)
-					(variant
-						(name "LCSC")
-						(field
-							(name "Datasheet")
-							(value "https://www.lcsc.com/datasheet/C14442.pdf")
-						)
-						(field
-							(name "Description")
-							(value "CAP CER 1nF 50V X7R 0402")
-						)
-						(field
-							(name "Manufacturer P/N")
-							(value "CL05B102KB5NNNC")
-						)
-						(field
-							(name "Vendor")
-							(value "LCSC")
-						)
-						(field
-							(name "Vendor P/N")
-							(value "C14442")
-						)
-					)
 				)
 			)
 		)
@@ -7580,9 +7483,9 @@
 		(unit 4)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7c6c5afe-a148-40b9-8063-30c1e8fa3e4c")
@@ -7650,7 +7553,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 151.13 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -7661,7 +7564,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "497-STSPIN32G0B2-ND"
+		(property "Vendor P/N" "C23064814"
 			(at 151.13 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -7824,19 +7727,6 @@
 				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/73cb52ef-7536-45c8-9d54-fc54b3c8b275"
 					(reference "U1")
 					(unit 4)
-					(variant
-						(name "LCSC")
-						(in_bom no)
-						(in_pos_files no)
-						(field
-							(name "Vendor")
-							(value "LCSC")
-						)
-						(field
-							(name "Vendor P/N")
-							(value "C23064814")
-						)
-					)
 				)
 			)
 		)
@@ -9168,7 +9058,7 @@
 				)
 			)
 		)
-		(property "Description" "C91606"
+		(property "Description" "CAP CER 10uF 25V X5R 0603"
 			(at 90.17 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -9223,13 +9113,6 @@
 				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/73cb52ef-7536-45c8-9d54-fc54b3c8b275"
 					(reference "C9")
 					(unit 1)
-					(variant
-						(name "LCSC")
-						(field
-							(name "Description")
-							(value "CAP CER 10uF 25V X5R 0603")
-						)
-					)
 				)
 			)
 		)
@@ -9279,7 +9162,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RT_1-TO-0-01_ROHS_L"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C5455470.pdf"
 			(at 210.82 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -9290,7 +9173,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "RES 33kΩ ±0.1% 62.5mW 0402"
 			(at 210.82 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -9301,7 +9184,7 @@
 				)
 			)
 		)
-		(property "Manufacturer P/N" "RT0402BRD0733KL"
+		(property "Manufacturer P/N" "AT0402BRD0733KL"
 			(at 210.82 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -9312,7 +9195,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 210.82 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -9323,7 +9206,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "YAG1412CT-ND"
+		(property "Vendor P/N" "C5455470"
 			(at 210.82 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -9345,29 +9228,6 @@
 				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/73cb52ef-7536-45c8-9d54-fc54b3c8b275"
 					(reference "R5")
 					(unit 1)
-					(variant
-						(name "LCSC")
-						(field
-							(name "Datasheet")
-							(value "https://www.lcsc.com/datasheet/C5455470.pdf")
-						)
-						(field
-							(name "Description")
-							(value "RES 33kΩ ±0.1% 62.5mW 0402")
-						)
-						(field
-							(name "Manufacturer P/N")
-							(value "AT0402BRD0733KL")
-						)
-						(field
-							(name "Vendor")
-							(value "LCSC")
-						)
-						(field
-							(name "Vendor P/N")
-							(value "C5455470")
-						)
-					)
 				)
 			)
 		)
@@ -9616,18 +9476,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode"
-			(at 267.97 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
+		(property "Description" "LED RED WATER CLEAR 0603 SMD"
 			(at 267.97 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -9682,13 +9531,6 @@
 				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/73cb52ef-7536-45c8-9d54-fc54b3c8b275"
 					(reference "D1")
 					(unit 1)
-					(variant
-						(name "LCSC")
-						(field
-							(name "Description")
-							(value "LED RED WATER CLEAR 0603 SMD")
-						)
-					)
 				)
 			)
 		)
@@ -9749,7 +9591,7 @@
 				)
 			)
 		)
-		(property "Description" "Polarized capacitor"
+		(property "Description" "CAP ALUM 100uF ±20% 35V SMD"
 			(at 43.18 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -9804,13 +9646,6 @@
 				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/73cb52ef-7536-45c8-9d54-fc54b3c8b275"
 					(reference "C6")
 					(unit 1)
-					(variant
-						(name "LCSC")
-						(field
-							(name "Description")
-							(value "CAP ALUM 100uF ±20% 35V SMD")
-						)
-					)
 				)
 			)
 		)
@@ -9869,7 +9704,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "RES 1.13kΩ ±0.1% 63mW 0402"
 			(at 198.12 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -9891,7 +9726,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 198.12 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -9902,7 +9737,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "YAG1370CT-ND"
+		(property "Vendor P/N" "C852599"
 			(at 198.12 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -9924,21 +9759,6 @@
 				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/73cb52ef-7536-45c8-9d54-fc54b3c8b275"
 					(reference "R4")
 					(unit 1)
-					(variant
-						(name "LCSC")
-						(field
-							(name "Description")
-							(value "RES 1.13kΩ ±0.1% 63mW 0402")
-						)
-						(field
-							(name "Vendor")
-							(value "LCSC")
-						)
-						(field
-							(name "Vendor P/N")
-							(value "C852599")
-						)
-					)
 				)
 			)
 		)
