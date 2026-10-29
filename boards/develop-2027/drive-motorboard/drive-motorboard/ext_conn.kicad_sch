@@ -1704,6 +1704,12 @@
 		(uuid "270c3568-0bd0-4e4c-978d-acda50f1f14a")
 	)
 	(junction
+		(at 127 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "30d942b3-0b92-40ba-8bef-026688e278f2")
+	)
+	(junction
 		(at 119.38 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1720,12 +1726,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "44bf998f-17a1-43bb-b887-b92a63f7979e")
-	)
-	(junction
-		(at 127 46.99)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "61ba1a3e-b83c-43d8-879d-6f26e74349cb")
 	)
 	(junction
 		(at 116.84 54.61)
@@ -1904,6 +1904,16 @@
 			(type default)
 		)
 		(uuid "0ab483c1-e31f-4ec7-8ce7-8937490d7b60")
+	)
+	(wire
+		(pts
+			(xy 127 44.45) (xy 127 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1141298c-627e-4cc5-831e-018ad1f9f35d")
 	)
 	(wire
 		(pts
@@ -2127,6 +2137,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 59.69) (xy 149.86 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91a5af85-c76f-45ec-bf4e-cc2331f5bcb8")
+	)
+	(wire
+		(pts
 			(xy 100.33 52.07) (xy 149.86 52.07)
 		)
 		(stroke
@@ -2157,7 +2177,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 59.69) (xy 149.86 59.69)
+			(xy 100.33 59.69) (xy 127 59.69)
 		)
 		(stroke
 			(width 0)
@@ -2305,16 +2325,6 @@
 		)
 		(uuid "d4ec32bc-31fd-4b15-963c-3997d3773669")
 	)
-	(wire
-		(pts
-			(xy 127 44.45) (xy 127 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db4645c3-f3d7-42e4-8ee4-6f67a9e145ed")
-	)
 	(bus
 		(pts
 			(xy 153.67 144.78) (xy 151.13 144.78)
@@ -2376,7 +2386,7 @@
 		(uuid "07f7fd86-da2c-49fa-b2ce-1f79995d41c1")
 	)
 	(label "SPI.MOSI"
-		(at 148.59 59.69 180)
+		(at 148.59 46.99 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2396,7 +2406,7 @@
 		(uuid "550472ab-8ce1-4543-a962-64388d5b7c88")
 	)
 	(label "SPI.CSN"
-		(at 148.59 46.99 180)
+		(at 148.59 59.69 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2436,7 +2446,7 @@
 		(uuid "b180629a-c032-4dba-a554-e94676952959")
 	)
 	(label "SPI.MISO"
-		(at 148.59 54.61 180)
+		(at 148.59 52.07 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2446,7 +2456,7 @@
 		(uuid "b212865e-1124-4445-a0a9-3441ecef467d")
 	)
 	(label "SPI.SCK"
-		(at 148.59 52.07 180)
+		(at 148.59 54.61 180)
 		(effects
 			(font
 				(size 1.27 1.27)
