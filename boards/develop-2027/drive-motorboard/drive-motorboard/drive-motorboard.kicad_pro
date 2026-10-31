@@ -567,7 +567,7 @@
       "method": 0,
       "sort_order": 0
     },
-    "bom_export_filename": "${PROJECTNAME}.csv",
+    "bom_export_filename": "exports/kmm-pmask-mask.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -678,7 +678,7 @@
       "include_excluded_from_bom": true,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Vendor"
+      "sort_field": "Value"
     },
     "bus_aliases": {},
     "connection_grid_size": 50.0,
