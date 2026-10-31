@@ -2861,12 +2861,6 @@
 		(uuid "0bd7724c-7063-4c98-8afa-be70a0bf5043")
 	)
 	(junction
-		(at 43.18 27.94)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1a49763f-6f02-4484-8b4e-bf42789b90a5")
-	)
-	(junction
 		(at 101.6 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3279,16 +3273,6 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 27.94) (xy 43.18 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2a08abb8-dbda-477f-988d-a92ce8701b92")
-	)
-	(wire
-		(pts
 			(xy 101.6 115.57) (xy 82.55 115.57)
 		)
 		(stroke
@@ -3336,16 +3320,6 @@
 			(type default)
 		)
 		(uuid "3778fc6b-cd77-4cf9-aad0-5a0e7d57aabd")
-	)
-	(wire
-		(pts
-			(xy 43.18 27.94) (xy 57.15 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "395040d0-e2e8-40dc-9b21-2cbfe6d60312")
 	)
 	(wire
 		(pts
@@ -3739,7 +3713,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 27.94) (xy 43.18 27.94)
+			(xy 26.67 27.94) (xy 57.15 27.94)
 		)
 		(stroke
 			(width 0)
@@ -3956,16 +3930,6 @@
 			(type default)
 		)
 		(uuid "b3837783-53a3-4f87-a3e2-6cdce17cb9ec")
-	)
-	(wire
-		(pts
-			(xy 43.18 38.1) (xy 43.18 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b4552590-1e60-4985-9d0c-22589765c8f0")
 	)
 	(wire
 		(pts
@@ -5548,84 +5512,6 @@
 			(project "drive-motorboard"
 				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/73cb52ef-7536-45c8-9d54-fc54b3c8b275"
 					(reference "#PWR019")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 43.18 40.64 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1001af2a-35e9-4a28-8f83-3699918df37c")
-		(property "Reference" "#PWR05"
-			(at 43.18 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 43.18 45.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 43.18 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 43.18 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 43.18 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d8bfb2a6-cde2-437a-a30c-65f681935d5a")
-		)
-		(instances
-			(project "drive-motorboard"
-				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/73cb52ef-7536-45c8-9d54-fc54b3c8b275"
-					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -9530,121 +9416,6 @@
 			(project "drive-motorboard"
 				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/73cb52ef-7536-45c8-9d54-fc54b3c8b275"
 					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 43.18 34.29 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e737bf60-0497-455a-bba7-2e6870c3dd92")
-		(property "Reference" "C6"
-			(at 39.37 32.1309 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100u 35V"
-			(at 39.37 34.6709 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_Elec_6.3x5.8"
-			(at 42.2148 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1240.pdf"
-			(at 43.18 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "CAP ALUM 100uF ±20% 35V SMD"
-			(at 43.18 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer P/N" "EEE-FT1V101AP"
-			(at 43.18 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor" "LCSC"
-			(at 43.18 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor P/N" "C128464"
-			(at 43.18 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "74708751-bb7e-4188-b597-4b9b81efb37d")
-		)
-		(pin "2"
-			(uuid "ec8f6173-50e8-4f81-a97d-f56c8a349833")
-		)
-		(instances
-			(project "drive-motorboard"
-				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/73cb52ef-7536-45c8-9d54-fc54b3c8b275"
-					(reference "C6")
 					(unit 1)
 				)
 			)
