@@ -3345,8 +3345,8 @@
 		)
 	)
 	(sheet
-		(at 153.67 34.29)
-		(size 38.1 12.7)
+		(at 153.67 29.21)
+		(size 38.1 21.59)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -3359,9 +3359,9 @@
 		(fill
 			(color 0 0 0 0)
 		)
-		(uuid "9be5d336-229a-4e98-9894-1694dc41418d")
-		(property "Sheetname" "Output Load Switch (VBATT Master)"
-			(at 153.67 33.5784 0)
+		(uuid "35158032-7c8a-4964-b8a9-d95b180aae7b")
+		(property "Sheetname" "VBATT Master Switch"
+			(at 153.67 28.4984 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3371,8 +3371,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "output_load_sw.kicad_sch"
-			(at 153.67 47.5746 0)
+		(property "Sheetfile" "master_switch.kicad_sch"
+			(at 153.67 51.3846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3384,7 +3384,7 @@
 		)
 		(pin "Enable" input
 			(at 153.67 44.45 180)
-			(uuid "4f70ce43-247f-4a5d-a7c5-aab094bb3c58")
+			(uuid "de70eaa6-a185-4d73-aa14-73f8c25f5c8c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3394,7 +3394,7 @@
 		)
 		(pin "Input" input
 			(at 153.67 36.83 180)
-			(uuid "04bd321d-bb20-4787-bdda-c76b12d5541c")
+			(uuid "5064ea3c-b3d2-4eb8-a4f6-bd8fbaa33634")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3404,7 +3404,7 @@
 		)
 		(pin "Output" output
 			(at 191.77 40.64 0)
-			(uuid "b1113ceb-1d49-403a-9a38-48bbb5e1c608")
+			(uuid "6f09cf51-390c-4770-9f66-93328dba2f42")
 			(effects
 				(font
 					(size 1.27 1.27)

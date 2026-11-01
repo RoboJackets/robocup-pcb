@@ -1392,6 +1392,10 @@
 		(color 0 0 0 0)
 		(uuid "fbe9b821-8cc4-4049-a66b-151f5c461921")
 	)
+	(no_connect
+		(at 218.44 48.26)
+		(uuid "31357936-1ce4-4364-b97e-83f20fda3ec6")
+	)
 	(wire
 		(pts
 			(xy 232.41 69.85) (xy 233.68 69.85)
@@ -1911,6 +1915,16 @@
 			(type default)
 		)
 		(uuid "9848af34-5f99-43e1-9a65-f6d46e1ba9e8")
+	)
+	(wire
+		(pts
+			(xy 215.9 48.26) (xy 218.44 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98671e68-7c9c-4a81-bd07-29ea3b9f296e")
 	)
 	(wire
 		(pts
@@ -5739,7 +5753,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "output_load_sw.kicad_sch"
+		(property "Sheetfile" "output_load_sw_hotswap.kicad_sch"
 			(at 177.8 51.3846 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5768,6 +5782,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "PG" output
+			(at 215.9 48.26 0)
+			(uuid "e99ef00d-5ec0-409d-9a01-1b1ef0c057b3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(pin "Output" output
