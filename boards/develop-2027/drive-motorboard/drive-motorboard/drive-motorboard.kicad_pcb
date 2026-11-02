@@ -17347,6 +17347,17 @@
 				(justify mirror)
 			)
 		)
+		(property "LCSC" "C23064814"
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "1bd9b67b-43c0-4693-b72a-c16ebf3b79c2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/73cb52ef-7536-45c8-9d54-fc54b3c8b275/56acaa7c-4dd2-46ee-92fc-58030008c484")
 		(sheetname "/Motor Controller/")
 		(sheetfile "motor_controller.kicad_sch")
@@ -17374,7 +17385,7 @@
 				(pins "25")
 			)
 		)
-		(attr smd exclude_from_pos_files exclude_from_bom)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -3.61 -3.61)
