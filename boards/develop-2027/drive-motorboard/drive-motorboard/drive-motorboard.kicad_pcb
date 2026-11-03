@@ -1357,6 +1357,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C5118705"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "6ebe73f9-c592-4af5-b5b6-91567e2f0329")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/370bf50f-3bfc-4ffc-b8c3-0c77ac5cbd3b/45a615bb-8543-4a22-b61b-4df03a6de177")
 		(sheetname "/Motor Connections/")
@@ -17355,6 +17366,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
