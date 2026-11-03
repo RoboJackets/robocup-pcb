@@ -743,7 +743,7 @@
         "uuid": "fe9d33c9-5178-4c57-bc83-f7cec26732cb"
       }
     ],
-    "used_designators": "C1-70,#PWR1-143,Y1,H1-4,L1-6,#FLG1-7,SW1-3,JP1-2,R1-79,TP1-26,TP31-43,J1-19,F1-2,Q1-19,D1-19,U1-11",
+    "used_designators": "C1-70,L1-6,#PWR1-143,Y1,JP1-2,SW1-3,H1-4,R1-79,#FLG1-7,TP1-26,TP31-43,J1-19,F1-2,Q1-19,D1-19,U1-11",
     "variants": []
   },
   "sheets": [
@@ -776,10 +776,6 @@
       "Output Load Switch (VBATT)"
     ],
     [
-      "35158032-7c8a-4964-b8a9-d95b180aae7b",
-      "VBATT Master Switch"
-    ],
-    [
       "7d92faab-81f6-4f82-9ccf-c799a6ab8cd7",
       "VBATT to 3.3V Regulator"
     ],
@@ -802,6 +798,10 @@
     [
       "0b010258-f86d-4f77-894a-d8a93894f339",
       "Temperature Sensing"
+    ],
+    [
+      "35158032-7c8a-4964-b8a9-d95b180aae7b",
+      "VBATT Master Switch"
     ],
     [
       "e0b7d74a-b984-4a32-a079-141284b0e261",
