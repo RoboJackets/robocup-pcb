@@ -245,6 +245,30 @@
 				)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "83d7d0dd-3a60-40d6-a67b-334a5b2de906")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "70e313c5-1941-4c94-aff1-974b38c69d67")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/7191f414-84c7-4145-8678-0e5ce3ad9d1c/0f444cce-88bc-446e-843e-5efd49ba1e48")
 		(sheetname "/MCU/")
@@ -439,6 +463,30 @@
 				)
 			)
 		)
+		(property "LCSC" "C2479340"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ba6f38f1-0593-4f90-8cd1-bd5d6188c154")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "SEI(Stackpole Electronics Inc.) RMCF0402FT30R0"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7f1e5192-b13a-4f17-ab75-5926c51e6e82")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/7191f414-84c7-4145-8678-0e5ce3ad9d1c/014e9d11-465d-4749-bc81-033fd9fcf213")
 		(sheetname "/MCU/")
@@ -599,6 +647,30 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "8882cf47-9e2e-4f90-842f-89017a7aa69c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0e0980ee-613b-412f-8cd8-ae82c5e6130f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "25967cb7-5734-4548-b3fa-69d250fe1ab6")
 			(effects
 				(font
 					(size 1 1)
@@ -787,7 +859,7 @@
 				)
 			)
 		)
-		(property "Value" "MF-MSMF125/16X"
+		(property "Value" "PTC 1.25A 1812"
 			(at 0 2.65 90)
 			(layer "F.Fab")
 			(uuid "e21ce2d5-cc9d-4437-a902-20a20ed07415")
@@ -809,7 +881,7 @@
 				)
 			)
 		)
-		(property "Description" "MF-MSMF125/16X: hold 1.25A at 23C / 0.95A at 50C, trip 2.50A; max trip time 0.4s at 8A. This does NOT coordinate with TPS2116 2.5A max or 4A/1ms pulse rating by itself. Verify fault current, source limiting and thermal behavior."
+		(property "Description" "PTC 1812: Littelfuse 1812L125/16DR (JLC build) or Bourns MF-MSMF125/16X-2. Hold 1.25A at 20-23C / 0.95A at 50C, trip 2.50A; max trip time 0.4s at 8A. This does NOT coordinate with TPS2116 2.5A max or 4A/1ms pulse rating by itself. Verify fault current, source limiting and thermal behavior."
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -853,6 +925,41 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C207067"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6989323a-6737-4f5b-b8e1-075acbe55eda")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Littelfuse 1812L125/16DR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "66a0bf74-f3fd-47aa-a23c-e17a9b5e2cc1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/f489f06aaead3504c46a5f46e8004a19.pdf?productCode=C207067"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4dfdade4-2cbf-41a2-aef3-38cd53ecb789")
+			(effects
+				(font
+					(size 1 1)
 				)
 			)
 		)
@@ -1022,6 +1129,30 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "4b5fbaf8-9ed3-4cd2-b6fc-28192d51dabb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d539dcac-8b89-4b46-b509-0816283da519")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9e668d7d-e5b4-4e9a-a188-aac261106c33")
 			(effects
 				(font
 					(size 1 1)
@@ -1464,6 +1595,30 @@
 				)
 			)
 		)
+		(property "LCSC" "C7519"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3c3eefb1-f539-41cb-99c5-5322599e071b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "ST USBLC6-2SC6"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "40c38756-033e-489f-90fb-2e0bea8c8b34")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "SOT?23*")
 		(path "/b44198b9-a21d-475d-9b21-d8da342bbbd1/6dc93f74-4d1f-40af-bb56-6d8b07307576")
 		(sheetname "/USB and Debug/")
@@ -1841,6 +1996,30 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b37e2e6f-6851-4436-8e44-9339b5e0d25a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ba12cb7d-041d-4dde-baae-9db95e768821")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "LED*APA102*")
 		(path "/ee62a278-a94c-4411-ba4b-a0279340f73e/b5a9526a-6fa6-476b-bb08-c400ca365d12")
 		(sheetname "/DotStar LEDs/")
@@ -2106,6 +2285,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C25879"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ec336427-c44f-4b49-be76-9cea7da4311e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF2201TCE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8fac8a11-dd09-4498-a7c7-2317f12ed229")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25879"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "03c0711d-8a92-43cf-beae-933c49af0a8b")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/7191f414-84c7-4145-8678-0e5ce3ad9d1c/f4b91dfe-16be-4d6a-b6e5-76884ca88d0b")
 		(sheetname "/MCU/")
@@ -2300,6 +2514,41 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C25879"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "14c5116a-d123-4539-9bee-0dba11c3f102")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF2201TCE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f1a577a3-66e2-4675-899b-e5b0962f92e4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25879"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "faf14360-92e6-4fc3-abc7-4329d7fa010a")
+			(effects
+				(font
+					(size 1 1)
 				)
 			)
 		)
@@ -2500,6 +2749,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C25792"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9da0ffa4-99c7-4c7e-be6a-5e6c7f8d29f2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF4702TCE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8592ad68-4536-45da-9b8b-7e41036e36f8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25792"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "92de8e8f-4421-432a-b743-c721e204a888")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/3bd2a0be-2830-4496-a16c-53a27fc2ce56/a4a8fc6a-7f00-4811-9d56-d514af538537")
 		(sheetname "/SD Card Storage/")
@@ -2670,6 +2954,30 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C96228"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b2257f13-8981-4d98-b5bb-4ed70c0ead1d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Nexperia BZX384-C10,115"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3df9ae07-7bb2-4f5e-bc98-3173c489d3b6")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -2970,6 +3278,30 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "fd899444-b89f-4cc1-964a-b87a9c8a7132")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b05b3147-56bc-45b3-9c2d-b22c412b4599")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b3ca9add-9a90-44fd-800d-51c20d5df33e")
 			(effects
 				(font
 					(size 1 1)
@@ -3411,6 +3743,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C32713271"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "82261082-bc97-49a2-a925-a25169825ddc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "hanxia HX PZ2.54-1x5P ZZ"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ed39f2f4-cc1a-491c-ade3-e09b41b6b8ac")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/24562751b1ea31c3766f53a75be9845f.pdf?productCode=C32713271"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "34170d42-d8e8-4ea9-8731-cffbde8fcc40")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/b44198b9-a21d-475d-9b21-d8da342bbbd1/d1b34faa-328e-4ebd-a33e-a79a336cd06c")
 		(sheetname "/USB and Debug/")
@@ -3724,6 +4091,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C22843"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d2208d40-1e54-42f9-ba68-05e64353072c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0603WAF1501T5E"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b2156a19-ac7a-471c-9e87-43f8e85ac9af")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C22843"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ee4030b7-4447-402c-9b20-6a7261938f59")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/dd236844-b7a2-45c2-9b05-76546186af68/846ec850-ae0f-450c-81db-60ab4128310c")
 		(sheetname "/Power/")
@@ -3918,6 +4320,41 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C25744"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5b468f43-6bfd-4845-af75-286c7ae23bce")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF1002TCE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "11caaccb-8fac-45ea-b609-5d974f509509")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25744"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5239347c-9deb-49fb-aa9b-2611f88d7865")
+			(effects
+				(font
+					(size 1 1)
 				)
 			)
 		)
@@ -4118,6 +4555,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C25741"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b267d8c5-10e3-43d7-a4bf-aebe2c258d94")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF1003TCE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b33298f8-bc81-4161-8615-f88751c64092")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25741"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2149b627-0763-43a7-aa29-6d9fab4d9a64")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/ee62a278-a94c-4411-ba4b-a0279340f73e/5f06c122-14f7-4ef2-b165-77ad97248f5e")
 		(sheetname "/DotStar LEDs/")
@@ -4255,7 +4727,7 @@
 				)
 			)
 		)
-		(property "Description" "Abracon ABM8-25.000MHZ-10-B1U-T: 25MHz fund., +/-10ppm tol, +/-10ppm stab (-20..70C), CL 10pF, ESR 50R max, C0 3pF max, drive 100uW max. gm_crit = 0.83mA/V vs STM32 Gmcritmax 1.5mA/V (DS13313 Table 33). Same part as rev-2026 control board. Pins 1/3 crystal, 2/4 case GND."
+		(property "Description" "25MHz fund., CL 10pF, ESR 50R max, C0 3pF max, drive 100uW max. JLC build: Abracon ABM8-25.000MHZ-10-D1G-T (+/-10ppm tol, +/-15ppm stab -40..85C); alternate ABM8-25.000MHZ-10-B1U-T (+/-10ppm stab -20..70C). gm_crit = 0.83mA/V vs STM32 Gmcritmax 1.5mA/V (DS13313 Table 33). Pins 1/3 crystal, 2/4 case GND."
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -4300,6 +4772,41 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C5366868"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d0b117e1-4bbd-4692-9397-5ac294d10811")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "ABRACON ABM8-25.000MHZ-10-D1G-T"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b2c30892-dd16-46c7-9e21-21e1e0740eec")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/8cb2798758222fcea97b1aa73982e8a1.pdf?productCode=C5366868"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5101314e-99b1-4539-9791-0c2e20e95b75")
+			(effects
+				(font
+					(size 1 1)
 				)
 			)
 		)
@@ -4504,6 +5011,30 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C131342"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "352c60d6-167e-40bd-aa14-57b9a31e0a2a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "JST B6B-PH-K-S(LF)(SN)"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ec8c02f2-a6a4-4068-b5e5-e51701d53791")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -5135,6 +5666,30 @@
 				)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1219acea-4c05-4350-92f0-e48e6c4abc62")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8aff3915-c809-4705-b146-cef6b583fef1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/ee62a278-a94c-4411-ba4b-a0279340f73e/0fe0f3fa-dd59-4e9b-971f-41b585ca166a")
 		(sheetname "/DotStar LEDs/")
@@ -5448,6 +6003,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C25803"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "61aee46a-c089-41c4-a40b-55b2bb6653f3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0603WAF1003T5E"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3ea7bf96-c390-4e51-b8a9-549f79aa05eb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25803"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e3fb0156-a98f-4633-86ed-a89816a8406e")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/e320275b-99c9-4503-aa31-e49dd4eed027/ad6238e8-a432-4109-8a02-c334c3148c32")
 		(sheetname "/Robot ID DIP/")
@@ -5645,6 +6235,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C25803"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "08003ab4-3908-4865-952a-691d074a7087")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0603WAF1003T5E"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ca84e704-afac-4f6b-adb8-5e013abaed64")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25803"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "476f3db5-e945-485b-8e67-440f0ea45000")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/e320275b-99c9-4503-aa31-e49dd4eed027/eeec928d-3629-49fb-89d0-0c3fe0bbe939")
 		(sheetname "/Robot ID DIP/")
@@ -5839,6 +6464,41 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C22935"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "88f34c9a-419e-4cfa-8c7b-a43e9457ead5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0603WAF1004T5E"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a1664efc-ee7f-4996-a72d-a6bcace776a5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C22935"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7f20b0c1-2938-4406-9025-66e3f617aa92")
+			(effects
+				(font
+					(size 1 1)
 				)
 			)
 		)
@@ -6220,6 +6880,30 @@
 				)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b51b8324-ff9a-40d6-bfea-74e73dce2820")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f7880bd8-64b7-4b8f-a229-5f2845247b72")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/f9cd1353-5e51-470a-8e69-6a3a62e8f681/931d59b5-0dcd-4a83-8f68-73faa9236116")
 		(sheetname "/IMU/")
@@ -6414,6 +7098,41 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5f28bc82-e4bc-41cf-9e9b-6660440a47e0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0603WAF1002T5E"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "279d24f4-acc4-4fe6-97e9-3803a9a0e002")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25804"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4c4ccfbd-c80c-4bcb-8955-0f940ccef5a9")
+			(effects
+				(font
+					(size 1 1)
 				)
 			)
 		)
@@ -7142,6 +7861,30 @@
 				)
 			)
 		)
+		(property "LCSC" "C131342"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "add20a40-193f-40dc-85f3-e96d0f57ed69")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "JST B6B-PH-K-S(LF)(SN)"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "747d58ba-29c8-4a94-ab68-0f70366258ad")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/c387934c-6c45-449c-9c7b-623c2e31b062/46027592-7a09-49e1-b45e-e2989bac86b8")
 		(sheetname "/Motor, Kicker, Expansion, OLED, Radio/")
@@ -7769,6 +8512,30 @@
 				)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "952c1e58-21e9-443a-a55e-2d4d92a118ff")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eed58e51-341b-4ee1-b4bc-574470e9584a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/f9cd1353-5e51-470a-8e69-6a3a62e8f681/77819faa-1fca-4b34-bcd9-ab0b60c51d7a")
 		(sheetname "/IMU/")
@@ -7907,7 +8674,7 @@
 				)
 			)
 		)
-		(property "Description" "RESET button, APEM MJTP1243 6x3.5mm THT tactile. Pulls U2 NRST low; C20 100nF filter, internal 40k pull-up (DS13313 Table 57)."
+		(property "Description" "RESET button, 6x3.5mm THT tactile: C&K PTS636SM43LFS (JLC build) or APEM MJTP1243, same footprint. Pulls U2 NRST low; C20 100nF filter, internal 40k pull-up (DS13313 Table 57)."
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -7939,6 +8706,41 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C2689636"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "138074aa-35c0-49a9-8d68-f0d4497ba3d3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "C&K PTS636SM43LFS"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4b6052d2-7d7a-4cf0-ab1c-7f1a719d47d0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/229e2204c94be8eac226511395a363de.pdf?productCode=C2689636"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e8363217-f8bd-4b7b-b89d-4b86e582d3a7")
+			(effects
+				(font
+					(size 1 1)
 				)
 			)
 		)
@@ -8346,6 +9148,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C32713275"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b133023f-8b31-4d75-9589-5f6dc4b1bf77")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "hanxia HX PZ2.54-2x2P ZZ"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cefeeb13-e501-4f8b-97e9-3d11b60561fb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/c40db1659c061f2fc4b255f648e81506.pdf?productCode=C32713275"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f6f50ee7-f105-463a-9072-9bee2f8ecba2")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_2x??_*")
 		(path "/dd236844-b7a2-45c2-9b05-76546186af68/33a8372f-1a2a-491a-8673-74bb28d65249")
 		(sheetname "/Power/")
@@ -8641,6 +9478,30 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C138714"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0f314d0b-8666-4fae-8dc1-32458d0e3093")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "TI TPD4E05U06DQAR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c1373aa0-5c67-45da-be4a-9119ae099d8d")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -8985,6 +9846,30 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C131342"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d7ab7c88-f94a-4699-9781-1f9922f5d1d8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "JST B6B-PH-K-S(LF)(SN)"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7739228e-221a-49f1-9bdc-a6a24b4dec8f")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -9605,6 +10490,30 @@
 				)
 			)
 		)
+		(property "LCSC" "C5554143"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5e9f55ea-1c22-40e4-be6c-1a6d4e27b039")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Kingbright APT1608EC"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0b38b192-4e38-455b-8144-66f55f02536c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/dd236844-b7a2-45c2-9b05-76546186af68/3d7bce99-7832-4765-b2dd-a1d92f486eea")
 		(sheetname "/Power/")
@@ -9853,6 +10762,30 @@
 				)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c13a5a87-f129-4f59-a8cc-05dbc2dfdd32")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6068ab87-ef0e-44fc-81da-76d592d7194b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/dd236844-b7a2-45c2-9b05-76546186af68/c397bfde-2fa3-4b6c-be17-a13f5ba6d987")
 		(sheetname "/Power/")
@@ -10063,6 +10996,30 @@
 				)
 			)
 		)
+		(property "LCSC" "C100082"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0a8b6ccc-74ad-4c21-b990-c8a781a37c6f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL10B225KP8NNNC"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e2380260-212a-443f-a40f-731fda2c64bf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/dd236844-b7a2-45c2-9b05-76546186af68/ad51284c-ed99-4590-b7c1-a48c86e4b7de")
 		(sheetname "/Power/")
@@ -10241,6 +11198,30 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C131342"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a1783ca3-2634-4188-b0bd-001b9affebc1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "JST B6B-PH-K-S(LF)(SN)"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "387ed11a-3ce7-48fe-814d-fec6bbf847e2")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -10861,6 +11842,30 @@
 				)
 			)
 		)
+		(property "LCSC" "C609571"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6016b31c-1cf9-4ec3-a354-91ee0d0fa6da")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "TI TVS0500DRVR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "422dbd04-7fa3-43fa-b116-bc9fcc4ecce6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "WSON*1EP*2x2mm*P0.65mm*EP1x1.6mm*")
 		(path "/dd236844-b7a2-45c2-9b05-76546186af68/493936a4-dc49-497e-a30b-7915cad700d7")
 		(sheetname "/Power/")
@@ -11247,6 +12252,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C25744"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "32b2544e-7fb0-43b5-9d0d-a6fe17098f8a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF1002TCE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "42acee08-be96-4f25-b1f7-9e9354093492")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25744"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bb196adc-7c61-423a-ae4f-b520e33b49c9")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/c387934c-6c45-449c-9c7b-623c2e31b062/1bd93bf3-58be-4dd1-b6f0-91e4cd401c3f")
 		(sheetname "/Motor, Kicker, Expansion, OLED, Radio/")
@@ -11444,6 +12484,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C25879"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "916c4770-328a-43ae-bd42-9bff7d9ed853")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF2201TCE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "20a27ce3-5f4d-43df-acc4-644dd3eb2baf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25879"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e2dedb6d-48e7-46f5-b790-4b548072ede2")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/7191f414-84c7-4145-8678-0e5ce3ad9d1c/a65e654c-7cdc-49f4-93be-90981065348c")
 		(sheetname "/MCU/")
@@ -11634,6 +12709,30 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3ef89b95-b148-41c5-b090-58ed0ceec26c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7f8dcf86-63eb-4856-bb42-708b014c88ea")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "012c8b99-89ee-48ad-8dc9-7f27dc3e804a")
 			(effects
 				(font
 					(size 1 1)
@@ -11835,6 +12934,41 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ae982795-53cc-41cb-b425-54d6871e7604")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0603WAF1003T5E"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "07f32cf6-f94a-4416-b6d7-0d3dff295da2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25803"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9f764fdc-7f05-4d36-ae0a-26cb82d0c278")
+			(effects
+				(font
+					(size 1 1)
 				)
 			)
 		)
@@ -12045,6 +13179,30 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C6339671"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b914fb86-bde1-413f-976e-155f5f4b1d37")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samtec TSW-103-07-G-D"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e657d4c0-749e-4d71-af26-22235fcf7888")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -12687,6 +13845,30 @@
 				)
 			)
 		)
+		(property "LCSC" "C2479340"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "18f6835e-7ac3-410c-abf1-01c371cfc37c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "SEI(Stackpole Electronics Inc.) RMCF0402FT30R0"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3ea479d6-0077-4988-9b58-856d6e8a0c30")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/7191f414-84c7-4145-8678-0e5ce3ad9d1c/4df0f0a4-0e83-462f-af27-6ff64bdc473e")
 		(sheetname "/MCU/")
@@ -12871,6 +14053,30 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a1989a48-4cca-4a94-8d92-299e16a42c68")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8e6c24ed-3133-4cda-89ef-46ceb49f3f33")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f6ec75e8-c256-433e-98b3-db866854cf96")
 			(effects
 				(font
 					(size 1 1)
@@ -13253,6 +14459,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C45783"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f9fbe045-09df-4a78-ad1a-24a16d174bb7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL21A226MAQNNNE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1e9e2f1c-ce3b-4a60-ac96-15465b67548c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C45783"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d1639c11-e079-4294-9a32-21c0937771cb")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/dd236844-b7a2-45c2-9b05-76546186af68/5fe53266-34bd-4527-81d1-02f614529eee")
 		(sheetname "/Power/")
@@ -13429,6 +14670,30 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C962978"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "849a4e4d-e074-4de3-9ade-8fab613a3554")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "TI TPD6E05U06RVZR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "875e22f0-968a-4999-8c8f-26e6aac18fd3")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -14055,6 +15320,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C19666"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "72ed5088-a45f-47dd-9818-c35088cb412d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL10A475KO8NNNC"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "224ed565-2590-43bd-8615-59e44965e7e6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C19666"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2e5caabd-d1fb-4a95-958a-b67c07c38ec0")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/dd236844-b7a2-45c2-9b05-76546186af68/142d87df-c193-4381-8d41-1dec41bd5cc0")
 		(sheetname "/Power/")
@@ -14233,6 +15533,30 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2470cb76-f3cb-4a0a-aa97-4dba28e0afed")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "37e02f4f-fff0-4f0f-b265-5e8096983e1d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "38bfff49-c954-4370-9277-2ee886bcdd9f")
 			(effects
 				(font
 					(size 1 1)
@@ -14487,6 +15811,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C22935"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "954e56af-f225-4783-8a4a-a0ef6186e31f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0603WAF1004T5E"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "79456f0b-55a1-4761-b8c5-8ae18f4b4223")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C22935"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3da9f6dc-efaa-4b6f-8d01-b6d8631bf4eb")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/dd236844-b7a2-45c2-9b05-76546186af68/f886bc96-1eea-4cca-9fa6-ef760106c07e")
 		(sheetname "/Power/")
@@ -14677,6 +16036,30 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0cf8f30e-0661-4abf-a955-0e4b0e09e7de")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e1c3518f-fe3f-4c0d-ad60-069922887386")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8f9a7823-170b-4a99-8947-baa579513735")
 			(effects
 				(font
 					(size 1 1)
@@ -14881,6 +16264,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C25792"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1c44ed1e-8ea5-4351-b530-d3b36334287f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF4702TCE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f0bd4a9b-7570-4e54-88be-6952a64a2227")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25792"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e8a6e5b4-6725-46f0-9a70-d5cc7fa06c21")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/3bd2a0be-2830-4496-a16c-53a27fc2ce56/47d2f412-93e6-4762-8e2a-f36498158b4e")
 		(sheetname "/SD Card Storage/")
@@ -15051,6 +16469,30 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C138714"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "89f6aa4c-aedc-4be3-80d8-17cd054fc8bf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "TI TPD4E05U06DQAR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1849a172-bf44-4af1-8cb5-116183b56e0b")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -15428,6 +16870,30 @@
 				)
 			)
 		)
+		(property "LCSC" "C6339671"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "58ecc61a-9a35-4a1a-88eb-6e5e56af795d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samtec TSW-103-07-G-D"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b0e80071-7bc5-40a8-b1ab-0a205ae94346")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_2x??_*")
 		(path "/dd236844-b7a2-45c2-9b05-76546186af68/cc0e987a-23b4-40e6-bc0c-8b781d3beabf")
 		(sheetname "/Power/")
@@ -15772,6 +17238,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C11702"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5a85ccaa-7895-4f08-9916-b934295ae62e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF1001TCE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "09986965-ceea-4175-a30f-96777685a559")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f8b03538-a2c1-4b94-8636-45ba7f39eb9f")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/dd236844-b7a2-45c2-9b05-76546186af68/29a161ef-171b-46ee-9080-1b7ea132954d")
 		(sheetname "/Power/")
@@ -15969,6 +17470,30 @@
 				)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "818f8078-6dd0-4760-bab2-db7706efe50a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "692d9b57-d614-4da8-ae6e-65ed9c16085e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/dd236844-b7a2-45c2-9b05-76546186af68/da343d16-55e4-4e65-8c58-77a0d53247f7")
 		(sheetname "/Power/")
@@ -16151,6 +17676,30 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8a0ca967-c25b-4fee-bde0-29cf46a2cee2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "44f6321e-923b-41bf-9c83-483a410981a9")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -16541,6 +18090,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C25879"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "59045c23-44f9-4317-8a17-1baa0e97e7d8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF2201TCE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f3087d0b-adec-47b6-a995-0adbf9806ac2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25879"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b41c5188-7f58-4cd4-b2f5-afaf10626dcd")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/7191f414-84c7-4145-8678-0e5ce3ad9d1c/87dc559e-80a8-46ed-824b-41ec9409ef9e")
 		(sheetname "/MCU/")
@@ -16723,6 +18307,30 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C131339"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ee760761-903f-4eea-b699-5aa20b2c800c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "JST B3B-PH-K-S(LF)(SN)"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "188dcae3-a9f8-4159-9a96-7a9f8827dc0e")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -17187,6 +18795,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C25905"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f3b77428-6e93-4265-ba90-695fb97bed41")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF5101TCE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "36117567-53e8-4fc3-9c21-ec3a2bca948f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25905"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9327c77d-709b-4f04-ab17-8943e1cd8fc0")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/b44198b9-a21d-475d-9b21-d8da342bbbd1/3dd8e0ac-bec4-4909-b1da-69c73509115c")
 		(sheetname "/USB and Debug/")
@@ -17369,6 +19012,30 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C609571"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b4a770e3-dec8-4d49-8401-78149ac433bf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "TI TVS0500DRVR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d4133bae-bb92-4a1f-a806-cb2048a546c3")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -18121,6 +19788,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C25744"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "746b1e99-22c8-4fd1-b186-4d99d01b288c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF1002TCE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ea162717-7b03-478e-a106-b227e1ff45ff")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25744"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0dfa518e-b29f-494c-9a59-0e867faf5765")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/c387934c-6c45-449c-9c7b-623c2e31b062/5e8f07b0-a614-43f0-863b-559ebda9f8f9")
 		(sheetname "/Motor, Kicker, Expansion, OLED, Radio/")
@@ -18259,7 +19961,7 @@
 				)
 			)
 		)
-		(property "Description" "Robot-ID DIP switch, CTS 209-6MS 6-position THT slide. Pins 1-6 DIP0-DIP5 (PF7-PF10, PC0, PC1), pins 7-12 GND; closed reads 0."
+		(property "Description" "Robot-ID DIP switch, 6-position THT slide, 7.62mm rows: Hroparts DS-06BP (JLC build) or CTS 209-6MS. Pins 1-6 DIP0-DIP5 (PF7-PF10, PC0, PC1), pins 7-12 GND; closed reads 0."
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -18303,6 +20005,41 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C129072"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "16fc5576-34cb-40b6-bef5-0f35050c51d0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Korean Hroparts Elec DS-06BP"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "98a1b91c-03fe-4373-91a9-54384120a331")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/58c923485d5c652775c00f938a3bb4f1.pdf?productCode=C129072"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "177a57cf-bbbf-40ba-8a67-85e6cdfc4858")
+			(effects
+				(font
+					(size 1 1)
 				)
 			)
 		)
@@ -19195,6 +20932,30 @@
 				)
 			)
 		)
+		(property "LCSC" "C155176"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0e874725-0e23-4d3e-9f0d-c837cb4e97eb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "TI SN74AHCT125DR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5dc1318b-4363-4bcd-baa0-73476456cd52")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "DIP*W7.62mm* SO14* SSOP?14* TSSOP?14* SOIC*3.9x8.7mm*P1.27mm*")
 		(path "/ee62a278-a94c-4411-ba4b-a0279340f73e/9f906914-aea1-485c-a736-acacf61c78de")
 		(sheetname "/DotStar LEDs/")
@@ -19680,6 +21441,30 @@
 				)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a6467721-8cf5-4def-9a11-d208903ab454")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2238fd36-35cb-4de1-8b99-5a9ca74626f8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/ee62a278-a94c-4411-ba4b-a0279340f73e/98c8c71b-da55-4f2f-abe9-f63c87778ace")
 		(sheetname "/DotStar LEDs/")
@@ -19874,6 +21659,41 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C25744"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a601ca32-733b-4e2b-812e-ddb9fd9fd79a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF1002TCE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "53f420c5-6f94-484b-a5f6-7b4bfb5bf075")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25744"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d8b29d24-41bf-4b41-a766-4278f8a123af")
+			(effects
+				(font
+					(size 1 1)
 				)
 			)
 		)
@@ -20074,6 +21894,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C19702"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f1ebbeda-63f1-4446-94ad-93d115923bf9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL10A106KP8NNNC"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4ce35e1a-674d-4cf3-b7a0-c0ba5b2e1ef7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C19702"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8bb5b90b-d581-4a5e-b7db-d7c1390cb6d9")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/dd236844-b7a2-45c2-9b05-76546186af68/234d37c7-9016-4870-b4f2-fa8ac8accb82")
 		(sheetname "/Power/")
@@ -20252,6 +22107,30 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C131334"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0cdd95db-2c21-4531-9fbe-9b6fda5b50e3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "JST B4B-PH-K-S(LF)(SN)"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0b3aaf5a-9fee-4022-a131-a07d4f560bda")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -20781,6 +22660,30 @@
 				)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fb3b0f8e-0827-4de8-ba9c-83ab9099c0b8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9ac9412b-0318-4995-b5ef-700fcef74597")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/ee62a278-a94c-4411-ba4b-a0279340f73e/28fab398-c802-4f33-81c0-84f1d6e6db61")
 		(sheetname "/DotStar LEDs/")
@@ -20964,6 +22867,30 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C114218"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5311dc34-1912-424c-95e6-539e273b4283")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "HRS DM3AT-SF-PEJM5"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1e844120-9edb-4f94-a376-7eae18fe8550")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -21788,6 +23715,30 @@
 				)
 			)
 		)
+		(property "LCSC" "C2479340"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3ee4af45-6d71-48a4-a940-904a5a7db6fa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "SEI(Stackpole Electronics Inc.) RMCF0402FT30R0"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8490f110-1eb3-4216-808b-e098de1fe8a4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/3bd2a0be-2830-4496-a16c-53a27fc2ce56/ef4cd55e-1d70-4843-9a3b-462167899cc5")
 		(sheetname "/SD Card Storage/")
@@ -21976,6 +23927,41 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C25879"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ffb3d04b-ccb2-453a-bfbe-5acff819b465")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF2201TCE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1358b372-0b95-4035-a244-97f117175b00")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25879"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "27b3fcc0-bb3a-4b05-aeb5-aada753c8e52")
+			(effects
+				(font
+					(size 1 1)
 				)
 			)
 		)
@@ -22176,6 +24162,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C25803"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b08582cc-4e43-4dd8-9849-dbc33f309b9b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0603WAF1003T5E"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "68fcfe6b-3df2-49cf-8cc0-ca35ffe65fdb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25803"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4cb6c686-8a2b-4839-ba7a-2c86953cd1ae")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/dd236844-b7a2-45c2-9b05-76546186af68/e2f5349a-9d35-4f42-bcc4-13ead02a820f")
 		(sheetname "/Power/")
@@ -22373,6 +24394,30 @@
 				)
 			)
 		)
+		(property "LCSC" "C114619"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a83a2d86-88bd-4e2c-ab2e-7253e9e02996")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "YAGEO RC0603FR-0736KL"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7a85e83b-c2da-4151-8e46-2eba4d67cbcd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/dd236844-b7a2-45c2-9b05-76546186af68/493fa703-dded-4182-b737-26e497a23469")
 		(sheetname "/Power/")
@@ -22543,6 +24588,30 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C138714"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a8051f12-f7d3-41f9-91ee-163c8d21388b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "TI TPD4E05U06DQAR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "15933dc1-b359-409d-81dd-519e12c65f7f")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -23087,6 +25156,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C25792"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ac4ee938-5815-434f-8feb-74f5f01436b4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF4702TCE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3a6bc1ed-6e18-4ba4-bd8a-bc9883849dfc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25792"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3a9532df-7224-489b-a42c-34bced96e967")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/3bd2a0be-2830-4496-a16c-53a27fc2ce56/bae6a0da-897b-44d3-8692-a0684674ed63")
 		(sheetname "/SD Card Storage/")
@@ -23269,6 +25373,30 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C15127"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f36b1df4-b7ad-4f38-96a0-13dc08d6446d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "AOS AO3401A"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2b94bb57-0029-45a4-86ef-67ab42dc8aa4")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -23694,6 +25822,30 @@
 				)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c439eacb-e725-4074-9e1f-508f72e4714c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3fb111ae-65b4-4f33-854f-d148aaafdcf7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/2900e49b-fa86-4c4e-a223-20bd82db189f/32ecc1b6-16a7-4a59-a9cf-6c222096b21a")
 		(sheetname "/User Buttons/")
@@ -23881,6 +26033,30 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "74daabf6-848c-4474-be22-29f6e6075275")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C137545"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0e8e224c-e48c-4b48-a41a-e8fa7e8de996")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "YAGEO RC0805FR-0730RL"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d3fecdc6-1d3a-4562-9e6f-b2ee9c44df20")
 			(effects
 				(font
 					(size 1 1)
@@ -24082,6 +26258,41 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C25744"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f921ea7b-febd-4225-b715-6550a891f8c8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF1002TCE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b1b1b050-3cac-44ec-be16-c67611dd2441")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25744"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0eb58a0e-cd84-4b71-8510-2acc1b2bfd0e")
+			(effects
+				(font
+					(size 1 1)
 				)
 			)
 		)
@@ -24463,6 +26674,30 @@
 				)
 			)
 		)
+		(property "LCSC" "C482226"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bdd77dc6-a6e3-4341-85f0-5268979e8a2a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "VISHAY CRCW040268K0FKED"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b0daddab-d576-4c89-8ebe-754a901fc81b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/7191f414-84c7-4145-8678-0e5ce3ad9d1c/7312c07e-2dc2-42b0-a3b5-8ecb39a58a7a")
 		(sheetname "/MCU/")
@@ -24633,6 +26868,30 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2c7e6f26-26bc-4f00-b716-af7130559bca")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "82e9da57-7815-4a3d-8858-f4f030fd7e8a")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -24956,6 +27215,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C25741"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4a5ec0d5-21d3-4f87-ba76-40c25e48083e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF1003TCE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c248dbb1-ad41-45c8-952c-faec8e6d6f6f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25741"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "47491dd3-e622-4872-8d59-130cfcf72f46")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/ee62a278-a94c-4411-ba4b-a0279340f73e/036720c2-5304-4b48-a1d1-20f7cd8408bb")
 		(sheetname "/DotStar LEDs/")
@@ -25143,6 +27437,30 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d4a2eed9-32f7-4266-9eae-c40ca30ce663")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C28234"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fced7a18-f10a-42ea-8536-c1a02c3847c7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL21B225KOFNNNE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8449942d-e27d-46ca-8b33-663a4dd02479")
 			(effects
 				(font
 					(size 1 1)
@@ -25457,6 +27775,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C25744"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "465c13cb-532e-4f4c-a143-b73b52b37c85")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF1002TCE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bed23509-aa36-4f5d-b95d-b0f68290a6a1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25744"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fba6deff-d6c9-4a4e-84e0-8ae5270409a3")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/c387934c-6c45-449c-9c7b-623c2e31b062/0bda2566-cc2e-4f80-bfda-4a1253cb9d83")
 		(sheetname "/Motor, Kicker, Expansion, OLED, Radio/")
@@ -25654,6 +28007,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C25879"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3521c9f9-57f4-48eb-8554-d28916b1eee4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF2201TCE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "aa0e9455-c78e-4d2d-b47c-6d136b153d0e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25879"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cb7714c6-d136-4dba-a27b-9c94fe67a42f")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/7191f414-84c7-4145-8678-0e5ce3ad9d1c/3e4548cb-e0d3-4c76-a2bc-aa5a2eefd21a")
 		(sheetname "/MCU/")
@@ -25824,6 +28212,30 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C5143397"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "19ca3d36-6eba-4447-99b3-5e2c09695333")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Global Connector Technology USB4110-GF-A"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5aa95b84-658e-4aae-9674-b2e39414e8f4")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -26481,6 +28893,30 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eb246539-58e6-4a5b-a5b2-d537c16f82b8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d64ecce5-4214-4118-9ae1-34a62aa170f7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/c387934c-6c45-449c-9c7b-623c2e31b062/ce51d714-6a7e-418b-a1ef-0ceacc627aab")
 		(sheetname "Connectors")
 		(sheetfile "07_Connectors.kicad_sch")
@@ -27064,6 +29500,30 @@
 				)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "25158811-6076-42c5-8397-22c7165fef05")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2ba568ed-3de7-45e0-963d-e9a7088b5a68")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/7191f414-84c7-4145-8678-0e5ce3ad9d1c/6117815f-4df9-4e97-a547-ef38f161d19d")
 		(sheetname "/MCU/")
@@ -27377,6 +29837,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C25804"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e790138b-645c-43c8-8d16-463d51da4dd3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0603WAF1002T5E"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "92e73c9b-3d15-4331-8727-f0358216af1d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25804"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "68577ba0-4042-4d9b-a886-9244fbf179f1")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/2900e49b-fa86-4c4e-a223-20bd82db189f/446d8fce-8495-4d38-a8e0-4b3903ca2937")
 		(sheetname "/User Buttons/")
@@ -27587,6 +30082,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C25804"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6b0b9b34-e404-4634-b872-923304d03103")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0603WAF1002T5E"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f2e139df-1474-4f62-93e9-467ad7d7962d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25804"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1ca6d204-ac86-43b3-93b5-ce180bb8a912")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/dd236844-b7a2-45c2-9b05-76546186af68/fb32c1f7-5785-4475-81e6-d7e882579514")
 		(sheetname "/Power/")
@@ -27757,6 +30287,30 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C138714"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "314ef93d-fecc-4bd3-a437-20f80482aa9c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "TI TPD4E05U06DQAR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e07c0147-d8e1-4fb8-b5a2-0b2bb779179f")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -28105,6 +30659,30 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C157972"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dffad886-4a98-4ad2-99fd-7f97d02173ce")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "JST B8B-XH-A(LF)(SN)"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bde499cd-1c4c-4129-997b-92a880995ace")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -28501,6 +31079,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C11702"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d9995101-dcf2-4619-a5fa-a89aa234df5f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF1001TCE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1e82585c-fcab-4ed9-a37d-296d54c50914")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "755a51ff-a607-4cb3-a65e-f26fa875ef70")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/dd236844-b7a2-45c2-9b05-76546186af68/de175933-ff6e-4a0a-beb5-609169c83188")
 		(sheetname "/Power/")
@@ -28639,7 +31252,7 @@
 				)
 			)
 		)
-		(property "Description" "User button BTN2, APEM MJTP1243 6x3.5mm THT tactile. Active low to USER_EXTI2 (PC14) through the R61/R64/C52 debounce."
+		(property "Description" "User button BTN2, 6x3.5mm THT tactile: C&K PTS636SM43LFS (JLC build) or APEM MJTP1243. Active low to USER_EXTI2 (PC14) through the R61/R64/C52 debounce."
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -28671,6 +31284,41 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C2689636"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f935a8df-cfe0-47fb-8b45-b4db70929e2e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "C&K PTS636SM43LFS"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "836965a6-67b0-4b1a-a832-1915e64ab745")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/229e2204c94be8eac226511395a363de.pdf?productCode=C2689636"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2e882063-7d8f-4dfd-8f6b-9c3daeba906d")
+			(effects
+				(font
+					(size 1 1)
 				)
 			)
 		)
@@ -29064,6 +31712,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C25744"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e216adc2-6cca-4b56-9ecc-d45e6bdc5c1c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF1002TCE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "897e264e-6107-44b2-bcb6-220fdf1841da")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25744"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e8d4de2c-b036-4f3d-9c5e-fcc027d11622")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/c387934c-6c45-449c-9c7b-623c2e31b062/7a224378-72ad-4e58-886e-84bbd423ccae")
 		(sheetname "/Motor, Kicker, Expansion, OLED, Radio/")
@@ -29177,7 +31860,7 @@
 				)
 			)
 		)
-		(property "Value" "MF-MSMF075/16X"
+		(property "Value" "PTC 0.75A 1812"
 			(at 0 2.65 0)
 			(layer "F.Fab")
 			(uuid "d3551b00-703f-4d52-bf22-b591f62f8892")
@@ -29199,7 +31882,7 @@
 				)
 			)
 		)
-		(property "Description" "MF-MSMF075/16X: hold 0.75A at 23C, 0.55A at 50C; trip 1.5A. Board worst-case load not established. Does not negotiate or actively limit USB current; retain restricted use pending load, fault and thermal validation."
+		(property "Description" "PTC 1812, hold 0.75A at 20-23C / 0.55A at 50C, trip 1.5A. JLC build: Littelfuse 1812L075/24DR; alternate Bourns MF-MSMF075/16X-2 (same ratings, same footprint). Board worst-case load not established. Does not negotiate or actively limit USB current; retain restricted use pending load, fault and thermal validation."
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -29243,6 +31926,41 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C207065"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8dccdf0b-267c-4460-b726-fb9a7b839bf2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Littelfuse 1812L075/24DR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "05a7164d-b080-421a-9903-503a71472b48")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/f489f06aaead3504c46a5f46e8004a19.pdf?productCode=C207065"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cf1b3d9d-afbc-4a5d-ab30-2ecda0f3d295")
+			(effects
+				(font
+					(size 1 1)
 				)
 			)
 		)
@@ -29443,6 +32161,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C25905"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "08f55c40-8113-466d-b8a3-d98be0ea1cca")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF5101TCE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a1c43f31-f402-4f03-803f-fc1621c5cfee")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25905"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d6a72eab-03d2-4588-850f-07620bf6257e")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/b44198b9-a21d-475d-9b21-d8da342bbbd1/7c4bec89-aa48-4f76-99b6-5895fec40664")
 		(sheetname "/USB and Debug/")
@@ -29621,6 +32374,30 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C131334"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "74daab9a-7b46-4e0a-83c3-c6a9d41bfd54")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "JST B4B-PH-K-S(LF)(SN)"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "531eae9a-26b6-43ee-baa7-e191ad293e9c")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -30127,6 +32904,30 @@
 				)
 			)
 		)
+		(property "LCSC" "C138714"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "14857b27-e820-4865-bdf3-41590c9a945d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "TI TPD4E05U06DQAR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4dadeb51-3c1f-4cdd-aa2d-1566eb9625a7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "USON*2.5x1.0mm*P0.5mm*")
 		(path "/c387934c-6c45-449c-9c7b-623c2e31b062/c413bc80-16eb-45e8-b545-958cb843d692")
 		(sheetname "/Motor, Kicker, Expansion, OLED, Radio/")
@@ -30486,6 +33287,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C25804"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "70724acf-7872-4368-be34-7512f539c4b0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0603WAF1002T5E"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6e7d6368-c6b1-42dc-9a35-9e1a4b2d047f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25804"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e27d3e1d-da89-4a6a-9b5d-4064a1f013bd")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/2900e49b-fa86-4c4e-a223-20bd82db189f/bb098619-62e9-4860-8a55-dc1ae2a773c7")
 		(sheetname "/User Buttons/")
@@ -30683,6 +33519,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C19702"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d707c117-dca0-4244-aa8d-ea77eeecf896")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL10A106KP8NNNC"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2aa68c54-5e79-4576-bfad-fa495e467ff2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C19702"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d8f6fbab-bb27-41ef-96b3-a95d5ab8d3c6")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/dd236844-b7a2-45c2-9b05-76546186af68/5e4d3258-777d-4388-882c-fb7de6fad609")
 		(sheetname "/Power/")
@@ -30861,6 +33732,30 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C131342"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ac1d046e-02d1-41ce-b835-11b0f052b174")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "JST B6B-PH-K-S(LF)(SN)"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6308d9be-e55b-4037-bbce-65dc2fbfe6dc")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -31649,6 +34544,30 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2cdb19fa-72ce-4221-a1ba-af82ce0038a9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5b02fd63-a00f-40cb-9355-99fa0d42cf35")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "LED*APA102*")
 		(path "/ee62a278-a94c-4411-ba4b-a0279340f73e/e6e2c4c9-7a0d-43c8-9790-1300d8f76c24")
 		(sheetname "/DotStar LEDs/")
@@ -31914,6 +34833,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C25792"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dc568a88-f7fc-4964-81ec-327ab44c7837")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF4702TCE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "561a5fd0-47a4-4ac0-b0d0-44aa30646b25")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25792"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "30cce03a-e93a-4558-adf1-ba7d6a4204c0")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/3bd2a0be-2830-4496-a16c-53a27fc2ce56/b3584e62-1db2-47b8-b59e-b476c79dbf59")
 		(sheetname "/SD Card Storage/")
@@ -32108,6 +35062,41 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a42be554-f958-4ab0-8f9a-2ad7a602ecec")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0603WAF1003T5E"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "19c757fb-aa18-488a-9a93-4fe019cac73e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25803"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a4b21626-c420-429e-9aad-7b5ffdfaa10c")
+			(effects
+				(font
+					(size 1 1)
 				)
 			)
 		)
@@ -32308,6 +35297,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C17168"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fdd254ca-1a53-4d73-bbc9-e895f231488a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF0000TCE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "73693648-e3e0-4ec7-82de-c0ee7cf34587")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C17168"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "74dda670-43f4-450f-97e3-1a04d7429667")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/7191f414-84c7-4145-8678-0e5ce3ad9d1c/4de37010-061a-4e84-88c0-82c99cce6848")
 		(sheetname "/MCU/")
@@ -32502,6 +35526,41 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C25792"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c1692db7-cb0b-4444-9e74-09daadd7a250")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF4702TCE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "864359b7-6b90-4f78-8314-3682b0bdc3b6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25792"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f60c7b52-404c-478e-ac1a-3932cc6192c5")
+			(effects
+				(font
+					(size 1 1)
 				)
 			)
 		)
@@ -32702,6 +35761,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C25804"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "117dc586-35fa-4e29-89a7-bed57c18f104")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0603WAF1002T5E"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e6f6e95e-277f-4f1e-9dc1-228b34c988fe")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25804"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "23fd7b71-ab19-4524-ba30-332d2bab42ea")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/2900e49b-fa86-4c4e-a223-20bd82db189f/ad285a44-a5ed-4f5d-bb5a-1e72cda2781c")
 		(sheetname "/User Buttons/")
@@ -32899,6 +35993,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C1547"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d73d1387-7983-4d80-896d-4cb6610ac7b3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "FH 0402CG120J500NT"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ebdaf0be-f85f-4941-a83f-a7537788b238")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C1547"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d6f00485-8d82-4075-b521-a72311fdb8bf")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/7191f414-84c7-4145-8678-0e5ce3ad9d1c/c9e7f33e-8b0a-4526-b51d-a8e6326d828e")
 		(sheetname "/MCU/")
@@ -33081,6 +36210,30 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C5554143"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "48da58e7-5134-4fc5-b361-416cae7cf446")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Kingbright APT1608EC"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4a02f335-99d8-43cd-9a49-975755e7671a")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -33514,6 +36667,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C23231"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7d7f8d3d-3a0d-49cc-b6c7-fb591ca610f1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0603WAF6802T5E"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bddd2f3a-ed46-4afb-9022-2fb48a940f9b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C23231"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8305dbcb-b6ee-46f2-99d6-7e8841fb7670")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/dd236844-b7a2-45c2-9b05-76546186af68/ac2cb613-e466-4275-abdb-b55ba3cc1586")
 		(sheetname "/Power/")
@@ -33652,7 +36840,7 @@
 				)
 			)
 		)
-		(property "Description" "BOOT0 (DFU) button, APEM MJTP1243 6x3.5mm THT tactile. Pulls BOOT0 to +3V3 against R11 10k; hold it while pressing RESET to enter the USB DFU bootloader."
+		(property "Description" "BOOT0 (DFU) button, 6x3.5mm THT tactile: C&K PTS636SM43LFS (JLC build) or APEM MJTP1243. Pulls BOOT0 to +3V3 against R11 10k; hold it while pressing RESET to enter the USB DFU bootloader."
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -33684,6 +36872,41 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C2689636"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "49d1e3bc-98a6-491c-9422-8e35373ce5bf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "C&K PTS636SM43LFS"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6c380341-0b7a-41b4-89af-bbe575bef7b9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/229e2204c94be8eac226511395a363de.pdf?productCode=C2689636"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6001277f-8699-4f33-a2e2-864e79c7a1a1")
+			(effects
+				(font
+					(size 1 1)
 				)
 			)
 		)
@@ -34077,6 +37300,30 @@
 				)
 			)
 		)
+		(property "LCSC" "C23630"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c96f727f-a590-4eea-92c7-755ed8490a53")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL10A225KO8NNNC"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6156eb2b-5860-40d7-aeb9-bf5ad4298b7c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/dd236844-b7a2-45c2-9b05-76546186af68/3e45e3a6-e51d-4d2b-abe4-73044ab4a7e9")
 		(sheetname "/Power/")
@@ -34267,6 +37514,30 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "85ac69b4-6fe4-4403-9e1e-614d432228aa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C2479340"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "916d46bc-9c75-4318-901f-350788813cd1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "SEI(Stackpole Electronics Inc.) RMCF0402FT30R0"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "50a3cd39-ad55-44c8-b2fc-0bce65eef08c")
 			(effects
 				(font
 					(size 1 1)
@@ -34465,6 +37736,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C25741"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "219d2652-d876-411f-82db-75e497e55a23")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF1003TCE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bf7b861c-189b-4f3f-b636-54cd19b42226")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25741"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bb058078-811a-4474-a762-7c8652550601")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/c387934c-6c45-449c-9c7b-623c2e31b062/762c011a-0452-4ed5-8924-b66ed271983a")
 		(sheetname "/Motor, Kicker, Expansion, OLED, Radio/")
@@ -34659,6 +37965,41 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C25879"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1a2c64fd-5103-409a-8a85-de764a4f02a7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF2201TCE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f6910d36-384b-48b7-b21d-deafb97eadb2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25879"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "68e6ec54-c258-41d0-b3c3-0f6a5193f985")
+			(effects
+				(font
+					(size 1 1)
 				)
 			)
 		)
@@ -35037,6 +38378,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C45783"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "958916fe-ac49-4bc6-8497-24b14ffa4544")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL21A226MAQNNNE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "86241b57-f132-4590-ab31-e3c7897ead93")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C45783"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d6f39db9-cc8b-4ef2-969a-28b9b37a4665")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(path "/c387934c-6c45-449c-9c7b-623c2e31b062/53080391-15df-4275-a9e1-95ebf44e88be")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
@@ -35223,6 +38599,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C25804"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "12c240e7-8826-4946-adde-87cacecfdff9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0603WAF1002T5E"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8fff545f-a715-456f-961f-aff761323be5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25804"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "48d8a392-680b-4850-9896-dd7ecac3b245")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/2900e49b-fa86-4c4e-a223-20bd82db189f/3ffa274d-86e3-4396-aa9d-4993c07c32e3")
 		(sheetname "/User Buttons/")
@@ -35361,7 +38772,7 @@
 				)
 			)
 		)
-		(property "Description" "User button BTN1, APEM MJTP1243 6x3.5mm THT tactile. Active low to USER_EXTI1 (PC13) through the R60/R63/C51 debounce."
+		(property "Description" "User button BTN1, 6x3.5mm THT tactile: C&K PTS636SM43LFS (JLC build) or APEM MJTP1243. Active low to USER_EXTI1 (PC13) through the R60/R63/C51 debounce."
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -35393,6 +38804,41 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C2689636"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "05f77e43-6b1d-4282-a5e1-02aec61ac724")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "C&K PTS636SM43LFS"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f2b4f2df-a282-4cc5-a1c5-89eb824def6a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/229e2204c94be8eac226511395a363de.pdf?productCode=C2689636"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d0ecfc66-74f1-4bc9-ad05-9ed1c3ef2a1a")
+			(effects
+				(font
+					(size 1 1)
 				)
 			)
 		)
@@ -35783,6 +39229,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C45783"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "aea2ab08-b421-40c8-bbb3-9a3a15e670dc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL21A226MAQNNNE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f6766e34-10ec-4c6a-b5c4-67edc6852497")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C45783"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "53c4d99e-3d6e-4bc1-a77a-7877997d8186")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/ee62a278-a94c-4411-ba4b-a0279340f73e/c1306eb7-0ea0-4f8b-93fc-88de96508987")
 		(sheetname "/DotStar LEDs/")
@@ -35977,6 +39458,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C45783"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "14562925-bbee-489f-b720-463b893d6ce0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL21A226MAQNNNE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cb8f9445-37d6-49c2-8549-4aed3d2e9184")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C45783"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a2fd188f-633a-4750-8dca-37a3c8e899cc")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/dd236844-b7a2-45c2-9b05-76546186af68/dec2938c-6637-4505-aff1-60333f01cee1")
 		(sheetname "/Power/")
@@ -36159,6 +39675,30 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C609571"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "43d448eb-7923-4838-80ea-2401d7560d0d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "TI TVS0500DRVR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1481beda-ff41-4e9b-ac63-8d4bb48c78d5")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -36549,6 +40089,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C25803"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "01bb3746-e3e8-4de0-b302-37b886e64ce1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0603WAF1003T5E"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f4c3f0b8-1b6a-4599-a916-6e7598f43c5e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25803"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "449bf4a8-0014-4df9-a51c-ede7c4bb1b8f")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/e320275b-99c9-4503-aa31-e49dd4eed027/4a0cbe66-298a-41a6-9c9b-798f3a212e2b")
 		(sheetname "/Robot ID DIP/")
@@ -36927,6 +40502,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C25804"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "acb79e7c-cae0-4d70-a1ab-11c40cf9e66b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0603WAF1002T5E"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eb3aaf4a-938e-4444-8e81-19b86ba909b5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25804"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9b0efad0-904f-4b48-aa42-fd34610df335")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/2900e49b-fa86-4c4e-a223-20bd82db189f/a24f06a2-86eb-407c-8c58-fefd139f9276")
 		(sheetname "/User Buttons/")
@@ -37121,6 +40731,41 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "066aa80b-981e-4aa5-9b7e-184ec5e1f1db")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0603WAF1003T5E"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5ff90035-5776-4c75-abc4-1e0cfd96e792")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25803"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "55c98ed4-ff31-49b9-bec4-4283bb0abec3")
+			(effects
+				(font
+					(size 1 1)
 				)
 			)
 		)
@@ -37321,6 +40966,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C25804"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0a1a9316-3669-4256-92a1-452a5d6f4437")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0603WAF1002T5E"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5589805f-c385-44fa-b946-ffa19c2ad077")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25804"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7fabafb4-b3c7-4e89-a394-2a9329c023e8")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/dd236844-b7a2-45c2-9b05-76546186af68/1ed592e4-81d8-4267-a33e-bc4993259057")
 		(sheetname "/Power/")
@@ -37434,7 +41114,7 @@
 				)
 			)
 		)
-		(property "Value" "MF-MSMF125/16X"
+		(property "Value" "PTC 1.25A 1812"
 			(at 0 2.65 90)
 			(layer "F.Fab")
 			(uuid "2ee76062-1f0b-4a4b-9e52-2cd2a242da59")
@@ -37456,7 +41136,7 @@
 				)
 			)
 		)
-		(property "Description" "MF-MSMF125/16X: hold 1.25A at 23C / 0.95A at 50C, trip 2.50A; max trip time 0.4s at 8A. This does NOT coordinate with TPS2116 2.5A max or 4A/1ms pulse rating by itself. Verify fault current, source limiting and thermal behavior."
+		(property "Description" "PTC 1812: Littelfuse 1812L125/16DR (JLC build) or Bourns MF-MSMF125/16X-2. Hold 1.25A at 20-23C / 0.95A at 50C, trip 2.50A; max trip time 0.4s at 8A. This does NOT coordinate with TPS2116 2.5A max or 4A/1ms pulse rating by itself. Verify fault current, source limiting and thermal behavior."
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -37500,6 +41180,41 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C207067"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9ff8a11a-5325-49c9-aeb6-7f7f3b7d9fa1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Littelfuse 1812L125/16DR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "592ab610-3aff-440d-a252-bf2cd2c7ee90")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/f489f06aaead3504c46a5f46e8004a19.pdf?productCode=C207067"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6680a26f-b41c-4999-a6ae-a7bc8ed5d35e")
+			(effects
+				(font
+					(size 1 1)
 				)
 			)
 		)
@@ -37668,6 +41383,30 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C3235557"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "95ad9219-d3d5-4f90-83a3-d82657833d9e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "TI TPS2116DRLR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a168f820-8f29-4d10-9d00-550f1fc0c23c")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -38158,6 +41897,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C22978"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4275c99c-33a1-44b2-901b-814a817d4bb0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0603WAF3301T5E"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d37bd9cd-140a-4328-b56a-deefb739d8be")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C22978"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4e38d54c-ca05-464e-9ab4-a7230e8366f1")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/dd236844-b7a2-45c2-9b05-76546186af68/8d043f69-0918-45f8-beaf-c46ee32c97c2")
 		(sheetname "/Power/")
@@ -38348,6 +42122,30 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6b8e1745-f161-440e-9691-f63eaf48e4d1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b5483007-7c9c-4f0e-9a24-f0616e19e390")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "abe76f3b-b144-4d7e-8555-b8dd043efd1c")
 			(effects
 				(font
 					(size 1 1)
@@ -38563,6 +42361,41 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C32713275"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "30519ced-fbb6-4c10-9a18-f0d73ae54e1c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "hanxia HX PZ2.54-2x2P ZZ"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0f37bb5c-c427-4f35-98a6-9c6a905d4b2e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/c40db1659c061f2fc4b255f648e81506.pdf?productCode=C32713275"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5e217510-94f0-42e9-b2ca-eb5aed2f8f17")
+			(effects
+				(font
+					(size 1 1)
 				)
 			)
 		)
@@ -39250,6 +43083,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C25803"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a718fb0f-9600-4e92-9b8b-f2ac560e76a5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0603WAF1003T5E"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ba6fbe7a-f972-4869-8175-5689516eb5cc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25803"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "641e473e-9d42-48b4-9eb0-60fdf9d4dc91")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/dd236844-b7a2-45c2-9b05-76546186af68/061c7fe5-af98-43e9-aec6-2306540dde3e")
 		(sheetname "/Power/")
@@ -39447,6 +43315,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C25803"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "84696a2b-8fbe-4205-899e-762f1ba739b8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0603WAF1003T5E"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "81abe252-21d7-45b0-8e52-eae91d0902cb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25803"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "51bacd33-4e23-491d-93c1-79bde1c4254e")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/e320275b-99c9-4503-aa31-e49dd4eed027/97e371dc-3b52-4e38-a130-9acb48397cc5")
 		(sheetname "/Robot ID DIP/")
@@ -39617,6 +43520,30 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C138714"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2f3e07e8-9347-4767-879e-50d2f0dceabb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "TI TPD4E05U06DQAR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4dd430d1-442e-4a6e-b122-8f1fbebbc116")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -39965,6 +43892,30 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C730146"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ef2470ca-7a08-481a-bbd3-9d9833dc39a6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "ST STM32H723ZGT6"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "334d0d89-6587-41f5-9a92-814d10acc6e3")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -41861,6 +45812,30 @@
 				)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "54a832a9-d164-4d8c-aafd-89c769e91945")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "40ee0f7f-bbfd-4965-a7f3-000632e0a01c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/ee62a278-a94c-4411-ba4b-a0279340f73e/d7fdddcc-eab8-4492-9c13-c425bcba2c6d")
 		(sheetname "/DotStar LEDs/")
@@ -42055,6 +46030,41 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C25741"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "38e34790-0ae7-4535-873b-ef9e50ba50db")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF1003TCE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "06f5cc0f-cca6-47d4-b382-48bdc90f3fe9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25741"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "171536ef-035d-43c8-9f78-9b9e5fa30179")
+			(effects
+				(font
+					(size 1 1)
 				)
 			)
 		)
@@ -42255,6 +46265,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C59461"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2dcacf85-e9ab-48f5-a358-49b5f436a7c2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL10A226MQ8NRNC"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5932012a-3081-40d2-bbd2-62b030e16209")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C59461"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "87e7250d-2d41-4e6e-a306-ca55ad3a1341")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/dd236844-b7a2-45c2-9b05-76546186af68/2814a19f-247e-4ec6-bd62-467ef2c892ae")
 		(sheetname "/Power/")
@@ -42414,6 +46459,30 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C3235557"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1b3c8398-ad38-4ac1-8ee2-c1ee5aa9764a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "TI TPS2116DRLR"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "65f75bab-32fe-4c73-975b-759c58f385ed")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -42723,6 +46792,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C1547"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "83bebfc6-e8a6-42d7-8dbc-09ca4e311f97")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "FH 0402CG120J500NT"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "671da43c-f879-40f1-b53d-caed9cc9da2c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C1547"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "524ad26d-7e88-4661-91c8-76fe8e392034")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/7191f414-84c7-4145-8678-0e5ce3ad9d1c/99bd2710-5174-4eff-ad09-0aa5fd39fead")
 		(sheetname "/MCU/")
@@ -42917,6 +47021,41 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C25879"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9fea3020-971f-4730-acd2-c29145a298e8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF2201TCE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "65ef87e4-eb9c-4190-be5f-df64749d2de7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25879"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3fdb7e79-8d58-45df-9498-8bf5a4d09916")
+			(effects
+				(font
+					(size 1 1)
 				)
 			)
 		)
@@ -43298,6 +47437,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C25792"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "90c1effa-7b62-4e85-83bf-65a6ec4bf8bc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF4702TCE"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c8430273-f0b7-45e4-bbfb-6b2a25556880")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25792"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4fe95503-5066-4b0f-a05f-cad9d7fa1dfa")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/7191f414-84c7-4145-8678-0e5ce3ad9d1c/874641da-9ff4-49bd-a841-2d0a28ff9bc2")
 		(sheetname "/MCU/")
@@ -43495,6 +47669,30 @@
 				)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f942360b-59e5-4caa-9c50-62064c3c7a0e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bc3523fc-5b08-454a-b547-a129bbedcf2f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/2900e49b-fa86-4c4e-a223-20bd82db189f/8371e54b-e5ca-4970-96e9-02804fa9b029")
 		(sheetname "/User Buttons/")
@@ -43633,7 +47831,7 @@
 				)
 			)
 		)
-		(property "Description" "User button BTN0, APEM MJTP1243 6x3.5mm THT tactile. Active low to USER_EXTI0 (PE4) through the R59/R62/C50 debounce."
+		(property "Description" "User button BTN0, 6x3.5mm THT tactile: C&K PTS636SM43LFS (JLC build) or APEM MJTP1243. Active low to USER_EXTI0 (PE4) through the R59/R62/C50 debounce."
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -43665,6 +47863,41 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C2689636"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9d9a09c4-a806-4a2c-af8d-cd097d2eef81")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "C&K PTS636SM43LFS"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "91229f9d-0b9c-4607-a39f-2e4454b9761c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/229e2204c94be8eac226511395a363de.pdf?productCode=C2689636"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2d5bf6fe-4916-421a-9cec-2ff73277de12")
+			(effects
+				(font
+					(size 1 1)
 				)
 			)
 		)
@@ -44058,6 +48291,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C25804"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "579a1cf5-1c48-42af-b3ba-1a02545b9e65")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0603WAF1002T5E"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fd8cc9c0-e4c0-483d-aa56-afc629a60c34")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25804"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "21340d39-59f6-4c47-b93b-a5bb319401f3")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/dd236844-b7a2-45c2-9b05-76546186af68/b87da1e1-a90f-4ce4-8f04-7e3979c587d7")
 		(sheetname "/Power/")
@@ -44253,6 +48521,30 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "0ca02321-2313-4b21-b3bf-35309e332a30")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C100082"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "0e75f376-2a2a-4641-a549-0dcf6f8046ec")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL10B225KP8NNNC"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "3a5b678e-9faf-4f3f-bc27-2f7fd1c353c1")
 			(effects
 				(font
 					(size 1 1)
@@ -44463,6 +48755,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C15849"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "77c65002-bd34-479b-8ea2-d3eeafa1d971")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL10A105KB8NNNC"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "db320a68-cab0-4783-8db0-dbdc24de5d71")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C15849"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "9036a93c-c5a8-431a-9813-341fc4fd9d34")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/7191f414-84c7-4145-8678-0e5ce3ad9d1c/ba15b362-df94-41fb-a2e7-f3745ac6f2be")
 		(sheetname "/MCU/")
@@ -44660,6 +48987,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C15849"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "8e7c9f92-f09a-4eeb-807d-dc548e93ebf4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL10A105KB8NNNC"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ac0ff705-cd56-4f08-877a-f3b5d39b77bb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C15849"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "84481e80-3f7d-489e-ae91-9111a80a9d10")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/7191f414-84c7-4145-8678-0e5ce3ad9d1c/962fcecb-2ab0-471f-881d-31bda390da38")
 		(sheetname "/MCU/")
@@ -44854,6 +49216,41 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C25744"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "e3d50297-696a-4236-a893-84ad5622a2d8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF1002TCE"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "0adb02f1-69b2-485c-833b-c6351743e4c0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25744"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "339e2b9e-94bf-46e1-bf09-cd5321a56433")
+			(effects
+				(font
+					(size 1 1)
 				)
 			)
 		)
@@ -45060,6 +49457,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C25744"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "cc93108a-211b-4407-b4e3-42ad86a30f71")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF1002TCE"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "e29e3b5b-64e1-4588-bf65-d1842cd55d25")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25744"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "4657f6cd-8ee1-46d9-8805-f48a37d97d20")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/7191f414-84c7-4145-8678-0e5ce3ad9d1c/cba4e688-7eb2-4d9e-bd91-af0831fa3bbe")
 		(sheetname "/MCU/")
@@ -45256,6 +49688,30 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "4c92f2f6-514c-4da8-9f70-2e9711900041")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "7e75ef43-a1ea-4966-9035-41e00bfa9f1d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "02b5df50-a8f7-4552-8da6-e859f06c7f7e")
 			(effects
 				(font
 					(size 1 1)
@@ -45466,6 +49922,30 @@
 				)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "68d9b78f-27af-4890-bcbc-d9014d82fdcf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "2dcaf966-06b9-4b4d-b150-f68485462866")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/3bd2a0be-2830-4496-a16c-53a27fc2ce56/791fd8fa-9161-48fa-94a5-023c39bcae5d")
 		(sheetname "/SD Card Storage/")
@@ -45662,6 +50142,30 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "6e55655e-416a-4a3a-aff2-1264f0035069")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "eba0c050-0b29-4263-bf64-02f55ff64e28")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c946b10d-e534-4965-b3da-a0f675ccc1c0")
 			(effects
 				(font
 					(size 1 1)
@@ -45872,6 +50376,30 @@
 				)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "68c19b15-70f8-46b1-b63d-2ab8f6ce0b60")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c1d1d8ca-b6dd-4b98-95ee-58ef022aec78")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/7191f414-84c7-4145-8678-0e5ce3ad9d1c/3480d93e-9cb9-4f19-a914-43d79f8728ee")
 		(sheetname "/MCU/")
@@ -46068,6 +50596,30 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "bdd089a6-8d9d-420d-a599-5364c9580598")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "bd6ee7ba-91c2-4720-902a-1580de2c18b6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ec4a8e25-facc-4c4c-a644-688b899fd013")
 			(effects
 				(font
 					(size 1 1)
@@ -46278,6 +50830,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C19702"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "4f62643e-1963-40be-b56b-5e8fbed1c64e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL10A106KP8NNNC"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ab64428e-f919-4291-8d24-50dd4081c8db")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C19702"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "71c68920-5dab-4e08-a611-56870620b46a")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/7191f414-84c7-4145-8678-0e5ce3ad9d1c/1ce546d3-9ef7-438c-85fe-eac35991b966")
 		(sheetname "/MCU/")
@@ -46475,6 +51062,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C19666"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "9361cc2b-9235-49b2-854f-6d9d534fdda2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL10A475KO8NNNC"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "0e56c86e-652c-4085-8063-7964a63407d7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C19666"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "5214b6be-db66-4e53-903c-4a56a4a59050")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/7191f414-84c7-4145-8678-0e5ce3ad9d1c/def77d48-d7b9-44ec-9dfd-d68620137f8e")
 		(sheetname "/MCU/")
@@ -46665,6 +51287,30 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "8854dabb-4791-4c64-b454-6e3730884a3a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C100082"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "cdaf624e-9211-405e-a29e-c14cca33fc2d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL10B225KP8NNNC"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "2ca96ded-f688-4597-a85f-ffa150898c54")
 			(effects
 				(font
 					(size 1 1)
@@ -46875,6 +51521,30 @@
 				)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "529f1d9a-d8b1-49a1-a54a-ddf9f6417309")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "18b02943-ba87-40be-a6c7-be72183df64b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/7191f414-84c7-4145-8678-0e5ce3ad9d1c/a2a367f9-13ca-4a47-a599-64004207475f")
 		(sheetname "/MCU/")
@@ -47071,6 +51741,30 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "dc88188e-10a4-4b81-b31b-52c8e06a0919")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "8f71c8a9-8843-4efe-8bf0-1351c569d995")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "64b7121a-d763-4b84-a4da-24c0a3a657a6")
 			(effects
 				(font
 					(size 1 1)
@@ -47281,6 +51975,30 @@
 				)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "aa563563-047a-4151-8aa7-19bea893be4e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "97fb33c8-65fa-4f98-b55a-20952b51d563")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/7191f414-84c7-4145-8678-0e5ce3ad9d1c/a8a00f40-cf8d-4a0e-a7ef-3da100cf2ac4")
 		(sheetname "/MCU/")
@@ -47484,6 +52202,30 @@
 				)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "1b779f38-9952-44c1-a6e1-c3859d998103")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "bbd65652-f5e4-4619-9fd3-a4dc5db3c901")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/7191f414-84c7-4145-8678-0e5ce3ad9d1c/89888963-2fda-4855-aef3-af8129310652")
 		(sheetname "/MCU/")
@@ -47599,7 +52341,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "MF-MSMF075/16X"
+		(property "Value" "PTC 0.75A 1812"
 			(at 0 -2.65 0)
 			(layer "B.Fab")
 			(uuid "bfe87dd7-b52a-4884-a019-66bf13e8b8be")
@@ -47623,7 +52365,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "MF-MSMF075/16X independent PTC for J11. Hold 0.75A at 23C / 0.55A at 50C. Not an active current limit; no guaranteed selective trip relative to upstream protection. Total available load depends on shared source and board consumption."
+		(property "Description" "Independent PTC for J11: Littelfuse 1812L075/24DR (JLC build) or Bourns MF-MSMF075/16X-2. Hold 0.75A at 20-23C / 0.55A at 50C, trip 1.5A. Not an active current limit; no guaranteed selective trip relative to upstream protection. Total available load depends on shared source and board consumption."
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -47670,6 +52412,41 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C207065"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "19b45ea2-cc1c-4789-8bae-47f8bd704abf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Littelfuse 1812L075/24DR"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "a3cf7ecc-369e-4f00-8a3f-f70d3133c593")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/f489f06aaead3504c46a5f46e8004a19.pdf?productCode=C207065"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "7ddbb5da-b392-4199-a824-e4429920ea52")
+			(effects
+				(font
+					(size 1 1)
 				)
 			)
 		)
@@ -47876,6 +52653,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C19702"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "f0f488eb-550a-4935-9977-9b3d4a6d1336")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL10A106KP8NNNC"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "e9d60e02-2c17-481d-a55c-e8f35c3bd72d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C19702"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c7eacbe6-aca0-4d51-85bc-4d096348a509")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/3bd2a0be-2830-4496-a16c-53a27fc2ce56/3fce6671-a30d-4203-9dc6-4e529558eeac")
 		(sheetname "/SD Card Storage/")
@@ -48072,6 +52884,30 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "6e03cb8a-397b-40f0-8287-3459304d9d13")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "9fbbef6b-d7b7-49e4-be24-016f6c08710f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "9f3be091-bd57-41e8-b922-6f95ee54a0d3")
 			(effects
 				(font
 					(size 1 1)
@@ -48282,6 +53118,41 @@
 				)
 			)
 		)
+		(property "LCSC" "C19666"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c9956404-3e35-424d-8b63-3f87fbca9bef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL10A475KO8NNNC"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "5fb5859f-dfaf-45fa-a89e-272ee40eac40")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C19666"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "77b3d215-3567-4b9f-a446-fe390e9d830b")
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/7191f414-84c7-4145-8678-0e5ce3ad9d1c/e74101a0-9a20-4da5-aacf-6f7dff8aa481")
 		(sheetname "/MCU/")
@@ -48472,6 +53343,30 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "87e4d8ef-c1d4-482c-9691-f50ee10fd30d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c2d0040b-70a6-4c9b-ae1e-524c4fdb596a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ce1a1c51-f451-4b60-9b2d-be1e68866f47")
 			(effects
 				(font
 					(size 1 1)
@@ -48682,6 +53577,30 @@
 				)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "e28627b8-1cbc-491f-91fa-71a08218f1a2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "fe1c15ac-ed44-4484-9bb8-31103dc3e87b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/7191f414-84c7-4145-8678-0e5ce3ad9d1c/8d526390-c327-4940-95e3-eda3707260ea")
 		(sheetname "/MCU/")
@@ -48878,6 +53797,30 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "e7b664c2-b9d0-4d09-87ab-9b66fe6f9502")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "7e1c0cb1-aef8-4cb6-bb55-3d34f40bd5c4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "5f7a71f3-18ff-432c-b88f-0dd6ebde94e5")
 			(effects
 				(font
 					(size 1 1)
@@ -49088,6 +54031,30 @@
 				)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "b29cdbc4-44a5-4ed6-b4e5-ca29a897a7cd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c83ee9b7-7978-419d-a19c-adf6ad4a2aa9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/7191f414-84c7-4145-8678-0e5ce3ad9d1c/9e8b346b-617d-447a-86c3-3af750a911d4")
 		(sheetname "/MCU/")
@@ -49203,7 +54170,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "MF-MSMF075/16X"
+		(property "Value" "PTC 0.75A 1812"
 			(at 0 -2.65 0)
 			(layer "B.Fab")
 			(uuid "fd151d64-cf18-4781-9c0b-bc500784c312")
@@ -49227,7 +54194,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "MF-MSMF075/16X independent PTC for J12. Hold 0.75A at 23C / 0.55A at 50C. Not an active current limit; no guaranteed selective trip relative to upstream protection. Total available load depends on shared source and board consumption."
+		(property "Description" "Independent PTC for J12: Littelfuse 1812L075/24DR (JLC build) or Bourns MF-MSMF075/16X-2. Hold 0.75A at 20-23C / 0.55A at 50C, trip 1.5A. Not an active current limit; no guaranteed selective trip relative to upstream protection. Total available load depends on shared source and board consumption."
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -49274,6 +54241,41 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C207065"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "027a0fc9-7a3a-4ee5-ae37-e84892c6ce9c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Littelfuse 1812L075/24DR"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "08417fc0-c173-4743-9710-641933e99ad7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/f489f06aaead3504c46a5f46e8004a19.pdf?productCode=C207065"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "9f8b774c-f954-4d57-898a-951e582017b8")
+			(effects
+				(font
+					(size 1 1)
 				)
 			)
 		)
@@ -49473,6 +54475,30 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "d253fdb9-64e4-4957-8895-b31b3098be48")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "84225910-a291-4bed-9151-fd53ca9f3fcd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "1f77b56b-9e4f-4ca1-85aa-3b290ff63ee5")
 			(effects
 				(font
 					(size 1 1)

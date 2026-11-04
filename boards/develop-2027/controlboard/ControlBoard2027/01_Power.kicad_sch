@@ -6525,7 +6525,7 @@
 		)
 		(uuid "69bf5e71-4427-44d4-8f42-68acc85ae0b4")
 	)
-	(text "PROTECTION LIMITS: TVS0500 clamps up to 9.2 V at 43 A.\nThis is NOT proof of protection for 6 V-absolute-max TPS2116 or 3V3 loads.\nPTCs are thermal devices, not fast current limits; verify fault coordination.\nSources: TVS0500, TPS2116 absolute ratings, Bourns MF-MSMF."
+	(text "PROTECTION LIMITS: TVS0500 clamps up to 9.2 V at 43 A.\nThis is NOT proof of protection for 6 V-absolute-max TPS2116 or 3V3 loads.\nPTCs are thermal devices, not fast current limits; verify fault coordination.\nSources: TVS0500, TPS2116 absolute ratings, MF-MSMF / 1812L."
 		(at 223.52 248.92 0)
 		(effects
 			(font
@@ -7284,7 +7284,7 @@
 		)
 		(uuid "c730dfa5-6691-4d94-921f-81ceb138b856")
 	)
-  (text "USB INPUT: C30+C31 = 6.9uF on VBUS; C35 adds 2.2uF via J14 (9.1uF < 10uF USB limit).\nBypass has no mux soft-start or reverse blocking; validate inrush and load.\nPTC rating is not USB-current permission. USB 3V3 still uses U7 LDO.\nSources: TPS2116 7.3.2; MF-MSMF; AP7361C."
+  (text "USB INPUT: C30+C31 = 6.9uF on VBUS; C35 adds 2.2uF via J14 (9.1uF < 10uF USB limit).\nBypass has no mux soft-start or reverse blocking; validate inrush and load.\nPTC rating is not USB-current permission. USB 3V3 still uses U7 LDO.\nSources: TPS2116 7.3.2; MF-MSMF / 1812L; AP7361C."
     (at 110.49 232.41 0)
     (effects (font (size 1.27 1.27)) (justify left top))
     (uuid "b2601592-d467-4150-abdf-2326f6030cb7")
@@ -7400,7 +7400,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C22935"
+			(at 300.99 185.42 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0603WAF1004T5E"
+			(at 300.99 185.42 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C22935"
+			(at 300.99 185.42 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 266.7 97.79 0)
@@ -7512,7 +7539,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C25803"
+			(at 266.7 97.79 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0603WAF1003T5E"
+			(at 266.7 97.79 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25803"
+			(at 266.7 97.79 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 177.8 36.83 0)
@@ -7609,7 +7663,7 @@
 				)
 			)
 		)
-		(property "Value" "MF-MSMF125/16X"
+		(property "Value" "PTC 1.25A 1812"
 			(at 201.93 106.68 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7641,7 +7695,7 @@
 				)
 			)
 		)
-		(property "Description" "MF-MSMF125/16X: hold 1.25A at 23C / 0.95A at 50C, trip 2.50A; max trip time 0.4s at 8A. This does NOT coordinate with TPS2116 2.5A max or 4A/1ms pulse rating by itself. Verify fault current, source limiting and thermal behavior."
+		(property "Description" "PTC 1812: Littelfuse 1812L125/16DR (JLC build) or Bourns MF-MSMF125/16X-2. Hold 1.25A at 20-23C / 0.95A at 50C, trip 2.50A; max trip time 0.4s at 8A. This does NOT coordinate with TPS2116 2.5A max or 4A/1ms pulse rating by itself. Verify fault current, source limiting and thermal behavior."
 			(at 201.93 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -7690,7 +7744,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C207067"
+			(at 201.93 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "Littelfuse 1812L125/16DR"
+			(at 201.93 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/f489f06aaead3504c46a5f46e8004a19.pdf?productCode=C207067"
+			(at 201.93 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Power_Management:TPS2116DRL")
 		(at 297.18 104.14 0)
@@ -7811,7 +7892,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C3235557"
+			(at 297.18 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "TI TPS2116DRLR"
+			(at 297.18 104.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C")
 		(at 139.7 214.63 0)
@@ -7925,7 +8024,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C19666"
+			(at 139.7 214.63 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL10A475KO8NNNC"
+			(at 139.7 214.63 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C19666"
+			(at 139.7 214.63 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:LED")
 		(at 355.6 171.45 90)
@@ -8026,7 +8152,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C5554143"
+			(at 355.6 171.45 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "Kingbright APT1608EC"
+			(at 355.6 171.45 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 340.36 160.02 0)
@@ -8225,7 +8369,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C25804"
+			(at 312.42 118.11 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0603WAF1002T5E"
+			(at 312.42 118.11 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25804"
+			(at 312.42 118.11 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 154.94 165.1 0)
@@ -8580,7 +8751,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C19702"
+			(at 254 154.94 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL10A106KP8NNNC"
+			(at 254 154.94 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C19702"
+			(at 254 154.94 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 355.6 175.26 0)
@@ -8925,7 +9123,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C59461"
+			(at 317.5 163.83 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL10A226MQ8NRNC"
+			(at 317.5 163.83 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C59461"
+			(at 317.5 163.83 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 116.84 121.92 0)
@@ -9114,7 +9339,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C11702"
+			(at 55.88 80.01 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF1001TCE"
+			(at 55.88 80.01 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"
+			(at 55.88 80.01 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 137.16 180.34 0)
@@ -9320,7 +9572,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C32713275"
+			(at 243.84 30.48 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "hanxia HX PZ2.54-2x2P ZZ"
+			(at 243.84 30.48 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/c40db1659c061f2fc4b255f648e81506.pdf?productCode=C32713275"
+			(at 243.84 30.48 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 177.8 25.4 0)
@@ -9518,7 +9797,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C3235557"
+			(at 297.18 165.1 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "TI TPS2116DRLR"
+			(at 297.18 165.1 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:LED")
 		(at 355.6 110.49 90)
@@ -9619,7 +9916,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C5554143"
+			(at 355.6 110.49 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "Kingbright APT1608EC"
+			(at 355.6 110.49 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C")
 		(at 55.88 214.63 0)
@@ -9733,7 +10048,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C23630"
+			(at 55.88 214.63 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL10A225KO8NNNC"
+			(at 55.88 214.63 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 219.71 165.1 0)
@@ -10082,7 +10415,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C609571"
+			(at 137.16 111.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "TI TVS0500DRVR"
+			(at 137.16 111.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 266.7 105.41 0)
@@ -10194,7 +10545,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C114619"
+			(at 266.7 105.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "YAGEO RC0603FR-0736KL"
+			(at 266.7 105.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:Polyfuse")
 		(at 201.93 165.1 270)
@@ -10214,7 +10583,7 @@
 				)
 			)
 		)
-		(property "Value" "MF-MSMF125/16X"
+		(property "Value" "PTC 1.25A 1812"
 			(at 201.93 167.64 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10246,7 +10615,7 @@
 				)
 			)
 		)
-		(property "Description" "MF-MSMF125/16X: hold 1.25A at 23C / 0.95A at 50C, trip 2.50A; max trip time 0.4s at 8A. This does NOT coordinate with TPS2116 2.5A max or 4A/1ms pulse rating by itself. Verify fault current, source limiting and thermal behavior."
+		(property "Description" "PTC 1812: Littelfuse 1812L125/16DR (JLC build) or Bourns MF-MSMF125/16X-2. Hold 1.25A at 20-23C / 0.95A at 50C, trip 2.50A; max trip time 0.4s at 8A. This does NOT coordinate with TPS2116 2.5A max or 4A/1ms pulse rating by itself. Verify fault current, source limiting and thermal behavior."
 			(at 201.93 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -10295,7 +10664,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C207067"
+			(at 201.93 165.1 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "Littelfuse 1812L125/16DR"
+			(at 201.93 165.1 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/f489f06aaead3504c46a5f46e8004a19.pdf?productCode=C207067"
+			(at 201.93 165.1 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 219.71 104.14 0)
@@ -10491,7 +10887,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C157972"
+			(at 45.72 99.06 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "JST B8B-XH-A(LF)(SN)"
+			(at 45.72 99.06 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C")
 		(at 170.18 214.63 0)
@@ -10605,7 +11019,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C19702"
+			(at 170.18 214.63 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL10A106KP8NNNC"
+			(at 170.18 214.63 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C19702"
+			(at 170.18 214.63 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C")
 		(at 254 93.98 0)
@@ -10719,7 +11160,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C45783"
+			(at 254 93.98 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL21A226MAQNNNE"
+			(at 254 93.98 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C45783"
+			(at 254 93.98 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 317.5 106.68 0)
@@ -10991,7 +11459,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C609571"
+			(at 137.16 172.72 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "TI TVS0500DRVR"
+			(at 137.16 172.72 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 137.16 119.38 0)
@@ -11421,7 +11907,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C22843"
+			(at 355.6 163.83 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0603WAF1501T5E"
+			(at 355.6 163.83 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C22843"
+			(at 355.6 163.83 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 297.18 175.26 0)
@@ -11599,7 +12112,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C96228"
+			(at 121.92 107.95 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "Nexperia BZX384-C10,115"
+			(at 121.92 107.95 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 254 97.79 0)
@@ -11811,7 +12342,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C6339671"
+			(at 325.12 35.56 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samtec TSW-103-07-G-D"
+			(at 325.12 35.56 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 355.6 114.3 0)
@@ -12000,7 +12549,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C22978"
+			(at 355.6 102.87 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0603WAF3301T5E"
+			(at 355.6 102.87 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C22978"
+			(at 355.6 102.87 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 266.7 170.18 0)
@@ -12189,7 +12765,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C25803"
+			(at 266.7 158.75 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0603WAF1003T5E"
+			(at 266.7 158.75 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25803"
+			(at 266.7 158.75 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:VBUS")
 		(at 50.8 210.82 0)
@@ -12696,7 +13299,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C23231"
+			(at 266.7 166.37 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0603WAF6802T5E"
+			(at 266.7 166.37 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C23231"
+			(at 266.7 166.37 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 88.9 93.98 0)
@@ -12898,7 +13528,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C100082"
+			(at 274.32 173.99 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL10B225KP8NNNC"
+			(at 274.32 173.99 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 139.7 218.44 0)
@@ -13261,7 +13909,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C25804"
+			(at 312.42 179.07 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0603WAF1002T5E"
+			(at 312.42 179.07 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25804"
+			(at 312.42 179.07 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:+3V3")
 		(at 312.42 175.26 0)
@@ -13452,7 +14127,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C1525"
+			(at 327.66 163.83 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 327.66 163.83 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Connector_Generic:Conn_02x03_Odd_Even")
 		(at 124.46 35.56 0)
@@ -13587,7 +14280,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C6339671"
+			(at 124.46 35.56 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samtec TSW-103-07-G-D"
+			(at 124.46 35.56 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 177.8 40.64 0)
@@ -13778,7 +14489,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C28234"
+			(at 274.32 113.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL21B225KOFNNNE"
+			(at 274.32 113.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Transistor_FET:AO3401A")
 		(at 116.84 106.68 90)
@@ -13884,7 +14613,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C15127"
+			(at 116.84 106.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "AOS AO3401A"
+			(at 116.84 106.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C")
 		(at 327.66 102.87 0)
@@ -13998,7 +14745,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C1525"
+			(at 327.66 102.87 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 327.66 102.87 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 177.8 29.21 0)
@@ -14187,7 +14952,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C11702"
+			(at 66.04 80.01 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF1001TCE"
+			(at 66.04 80.01 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"
+			(at 66.04 80.01 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C")
 		(at 317.5 102.87 0)
@@ -14301,7 +15093,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C45783"
+			(at 317.5 102.87 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL21A226MAQNNNE"
+			(at 317.5 102.87 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C45783"
+			(at 317.5 102.87 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 116.84 118.11 0)
@@ -14413,7 +15232,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C25803"
+			(at 116.84 118.11 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0603WAF1003T5E"
+			(at 116.84 118.11 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25803"
+			(at 116.84 118.11 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:+5V")
 		(at 347.98 99.06 0)
@@ -14783,7 +15629,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C32713275"
+			(at 43.18 30.48 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "hanxia HX PZ2.54-2x2P ZZ"
+			(at 43.18 30.48 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/c40db1659c061f2fc4b255f648e81506.pdf?productCode=C32713275"
+			(at 43.18 30.48 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 177.8 33.02 0)
@@ -14972,7 +15845,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C22935"
+			(at 300.99 124.46 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0603WAF1004T5E"
+			(at 300.99 124.46 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C22935"
+			(at 300.99 124.46 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 72.39 72.39 0)
@@ -15182,7 +16082,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C25804"
+			(at 316.23 124.46 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0603WAF1002T5E"
+			(at 316.23 124.46 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25804"
+			(at 316.23 124.46 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 170.18 218.44 0)
@@ -15441,7 +16368,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" ""
+			(at 149.86 210.82 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" ""
+			(at 149.86 210.82 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "ControlBoard2027:BOM_Item")
 		(at 101.6 50.8 0)
@@ -15512,6 +16457,24 @@
 			)
 		)
 		(property "Vendor PN" "SAM8858-ND"
+			(at 101.6 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C3715645"
+			(at 101.6 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samtec SNT-100-BK-G"
 			(at 101.6 50.8 0)
 			(hide yes)
 			(effects
@@ -15597,6 +16560,24 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(property "LCSC" "C3715645"
+			(at 111.76 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samtec SNT-100-BK-G"
+			(at 111.76 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		))
 	(symbol
 		(lib_id "ControlBoard2027:BOM_Item")
@@ -15668,6 +16649,24 @@
 			)
 		)
 		(property "Vendor PN" "SAM8858-ND"
+			(at 121.92 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C3715645"
+			(at 121.92 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samtec SNT-100-BK-G"
 			(at 121.92 50.8 0)
 			(hide yes)
 			(effects
@@ -15753,6 +16752,24 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(property "LCSC" "C3715645"
+			(at 132.08 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samtec SNT-100-BK-G"
+			(at 132.08 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		))
 	(symbol
 		(lib_id "ControlBoard2027:BOM_Item")
@@ -15831,6 +16848,24 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(property "LCSC" "C3715645"
+			(at 142.24 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samtec SNT-100-BK-G"
+			(at 142.24 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		))
 	(symbol
 		(lib_id "ControlBoard2027:BOM_Item")
@@ -15902,6 +16937,24 @@
 			)
 		)
 		(property "Vendor PN" "SAM8858-ND"
+			(at 152.4 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C3715645"
+			(at 152.4 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samtec SNT-100-BK-G"
 			(at 152.4 50.8 0)
 			(hide yes)
 			(effects

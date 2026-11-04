@@ -60,7 +60,7 @@ pin, and no spare GPIO brought out to a header.
 
 | Source | Value | Notes |
 |---|---|---|
-| HSE | **25.000 MHz crystal** (X1, Abracon ABM8, ±10 ppm, CL 10 pF) on PH0/PH1 | Crystal mode, not bypass. `HSE_VALUE = 25000000` |
+| HSE | **25.000 MHz crystal** (X1, Abracon ABM8, ±10 ppm tolerance, ±15 ppm over -40 to 85 °C (D1G), CL 10 pF) on PH0/PH1 | Crystal mode, not bypass. `HSE_VALUE = 25000000` |
 | LSE | None | Keep LSE and the RTC clock source off; PC14/PC15 are GPIO |
 | HSI48 | Internal | Usable for USB with CRS, but needs USB SOF to trim; HSE-derived 48 MHz is preferred |
 
@@ -432,7 +432,7 @@ pin map.
 | U10 | TI SN74AHCT125DR | 3.3 → 5 V buffer for the LEDs | [SN74AHCT125](https://www.ti.com/lit/ds/symlink/sn74ahct125.pdf) |
 | U8, U9 | TI TPS2116DRLR | Power muxes (status on PA2/PA3) | [TPS2116](https://www.ti.com/lit/ds/symlink/tps2116.pdf) |
 | U7 | Diodes AP7361C-33E | USB 3.3 V LDO | [AP7361C](https://www.diodes.com/assets/Datasheets/AP7361C.pdf) |
-| X1 | Abracon ABM8-25.000MHZ-10-B1U-T | 25 MHz crystal | [ABM8](https://abracon.com/Resonators/abm8.pdf) |
+| X1 | Abracon ABM8-25.000MHZ-10-D1G-T (JLCPCB build; ABM8-25.000MHZ-10-B1U-T alternate) | 25 MHz crystal, 10 pF load | [ABM8](https://abracon.com/Resonators/abm8.pdf) |
 | J1 | Hirose DM3AT-SF-PEJM5 | microSD socket | - |
 
 ### 9.3 Power jumpers (normal fit: six shunts)

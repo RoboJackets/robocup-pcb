@@ -1,5 +1,19 @@
 # ControlBoard2027 source archive
 
+2026-11-03 JLCPCB sourcing addendum (substitutes fitted in the JLCPCB build, DESIGN_NOTES §14.1):
+
+| Local file | Source | SHA-256 | Use |
+|---|---|---|---|
+| [Littelfuse_1812L.pdf](Littelfuse_1812L.pdf) | [LCSC copy](https://datasheet.lcsc.com/datasheet/pdf/f489f06aaead3504c46a5f46e8004a19.pdf?productCode=C207065) of the Littelfuse 1812L datasheet (revised 07/21/17) | `6208de21968a51c9...bcec59d92` | F1/F3/F4 1812L075/24DR and F5/F6 1812L125/16DR: ratings p.1, derating p.2, dimensions and pad layout p.5 |
+| [CK_PTS636.pdf](CK_PTS636.pdf) | [LCSC copy](https://datasheet.lcsc.com/datasheet/pdf/229e2204c94be8eac226511395a363de.pdf?productCode=C2689636) of the C&K PTS636 datasheet (7 Oct 20) | `2015aeeef741ee7e...851ef5dceb` | SW1/SW2/SW4-SW6 PTS636SM43LFS: THT drawing and PCB land p.2 |
+| [Hroparts_DS-06BP.pdf](Hroparts_DS-06BP.pdf) | [LCSC copy](https://datasheet.lcsc.com/datasheet/pdf/58c923485d5c652775c00f938a3bb4f1.pdf?productCode=C129072) of the Hroparts DS-xxBP drawing | `468a42735fa67054...67599a993a7d1` | SW3 DS-06BP: body, pitch and row spacing |
+
+`lsm6dsv32x.pdf` (ST LSM6DSV32X, downloaded by the user from st.com, SHA-256 `aaa818cafdb8a0ad...c74784c2bb330`) was checked as a JLCPCB-stocked IMU: same LGA-14L pins, but no ±320g high-g channel, so U11 stays the LSM6DSV320X (DESIGN_NOTES §14.1).
+The X1 option D1G is in the existing `ABM8.pdf` (option codes on p.1; the archived copy is
+identical to the publisher file on 2026-11-03). The other JLCPCB substitutes (Samsung CL MLCCs, Fenghua 0402CG for C18/C19, UNI-ROYAL 1% chip
+resistors, hanxia headers J3/J14/J17, BOOMELE socket SK1) are linked from each symbol's
+`LCSC Datasheet` field (LCSC copies).
+
 2026-10-04 sourcing addendum:
 
 | Local file | Source | Use |
@@ -33,8 +47,8 @@ switches have been resolved and their manufacturer PDFs saved locally:
 |---|---|---|---|
 | `JST_GH_eGH.pdf` | <https://www.jst-mfg.com/product/pdf/eng/eGH.pdf> | `b1dcb317b6b9a4fb...c161240b722` | Superseded (J9 is now the Samtec LSHM mezzanine; J10-J12 are JST PH) |
 | `Samtec_LSHM_spec.pdf` | <https://suddendocs.samtec.com/productspecs/lshm.pdf> | `935cb14c85a2635b...d167188eef2d` | J9 (and RadioBoard2027 J2), LSHM-110-02.5-L-DV-A-S-K-TR: ratings (§3) |
-| `TL3305.pdf` | <https://www.e-switch.com/wp-content/uploads/2023/01/TL3305.pdf> | `d3eebf2769e7acb5...d297712ded8` | Superseded (SW1, SW2, SW4-SW6 are now THT APEM MJTP1243) |
-| `Omron_A6H.pdf` | <https://omronfs.omron.com/en_US/ecb/products/pdf/en-a6h.pdf> | `549aac2e0c9c8065...6e99a0761b` | Superseded (SW3 is now THT CTS 209-6MS) |
+| `TL3305.pdf` | <https://www.e-switch.com/wp-content/uploads/2023/01/TL3305.pdf> | `d3eebf2769e7acb5...d297712ded8` | Superseded (SW1, SW2, SW4-SW6 are now THT 6 x 3.5mm: APEM MJTP1243, or C&K PTS636SM43LFS in the JLCPCB build) |
+| `Omron_A6H.pdf` | <https://omronfs.omron.com/en_US/ecb/products/pdf/en-a6h.pdf> | `549aac2e0c9c8065...6e99a0761b` | Superseded (SW3 is now a THT slide DIP: CTS 209-6MS, or Hroparts DS-06BP in the JLCPCB build) |
 | `APEM_MJTP.pdf` | <https://www.farnell.com/datasheets/1598766.pdf> | `18798777e6260eeb...65a4d5fb3c1` | SW1, SW2, SW4-SW6, APEM MJTP1243 (distributor-hosted APEM datasheet; the apem.com link is dead) |
 | `CTS_209-210.pdf` | <https://www.ctscorp.com/wp-content/uploads/209-210.pdf> | `652105dcaa2d6ef8...eaf3502ad` | SW3, 209-6MS (6 positions, medium actuator, bottom seal) |
 
@@ -64,7 +78,7 @@ original reference tags; the revision printed inside each downloaded PDF is auth
 | [SSD1306.pdf](SSD1306.pdf) | [Publisher PDF](https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf) | Background component reference in DESIGN_NOTES |
 | [ESP32-C5.pdf](ESP32-C5.pdf) | [Publisher PDF](https://documentation.espressif.com/esp32-c5_datasheet_en.pdf) | Background component reference in DESIGN_NOTES |
 | [ESP32-C5-WROOM-1U.pdf](ESP32-C5-WROOM-1U.pdf) | [Publisher PDF](https://documentation.espressif.com/esp32-c5-wroom-1_wroom-1u_datasheet_en.pdf) | Radio TX current budget |
-| [MF-MSMF.pdf](MF-MSMF.pdf) | [Publisher PDF](https://www.bourns.com/docs/product-datasheets/mf-msmf.pdf) | F1-F6 ratings and thermal derating |
+| [MF-MSMF.pdf](MF-MSMF.pdf) | [Publisher PDF](https://www.bourns.com/docs/product-datasheets/mf-msmf.pdf) | F1-F6 ratings and thermal derating for the Bourns alternate; the JLCPCB build fits Littelfuse 1812L (`Littelfuse_1812L.pdf`) |
 | [SLVA689_I2C_pullups.pdf](SLVA689_I2C_pullups.pdf) | [Publisher PDF](https://www.ti.com/lit/an/slva689/slva689.pdf) | Equations 1/6, common 2.2k pull-ups and rise-time budget |
 
 The BB2020 document is American Bright's actual BB-2020BGR-TRB datasheet, not a generic

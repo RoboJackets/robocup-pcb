@@ -11,6 +11,12 @@ a Rating where it matters and a working datasheet link, and every line was in st
 both switches 0.5mm west and GPIO28 1mm west (§7). C4 now carries the real DNP attribute. The
 antenna is a BOM line (ANT1).
 
+2026-11-03 (JLCPCB assembly BOM): the board is now assembled by JLCPCB. Every part stocked
+there carries an `LCSC` part number and `LCSC MPN`; the Digi-Key/Mouser part stays in `MPN` /
+`Vendor PN` as the alternate. Substitutes (C1, C5-C8 makers, UNI-ROYAL resistors) drop into the
+existing footprints, so the PCB did not change. U1, U4, J2 and ANT1 still come from Mouser or
+Digi-Key (§6 "BOM").
+
 2026-10-04 (controlboard link): J2 is now a Samtec LSHM-110-02.5 mezzanine on the underside
 instead of the JST GH cable header. ControlBoard2027 J9 is the same part, so the radio plugs
 straight onto the controlboard (5mm stack) and hangs off its east edge, held only by J2. U5/U6
@@ -257,14 +263,59 @@ adds no pulls on those lines.
 - **Status LED (GPIO24)**: active high. What it shows is up to the firmware (link up, activity).
 - **Flashing**: USB Serial/JTAG. If the app has disabled USB, hold BOOT and press RESET.
 
-### BOM (Digi-Key, stock checked 2026-10-04)
+### BOM: JLCPCB assembly (stock checked 2026-11-03)
 
-Order files: `RadioBoard2027_BOM_digikey.csv`, `RadioBoard2027_BOM_mouser.csv` (U1) and
-`RadioBoard2027_BOM_full.csv` (both), grouped by MPN. Fields: `MPN`, `Vendor PN` (Digi-Key cut
-tape), `Rating`, `Datasheet`; `LCSC` is kept only where the part is unchanged from the JLC BOM.
+The board is assembled by JLCPCB, so parts come from the JLCPCB parts library (LCSC stock)
+first. Stock and library type were read live from the JLCPCB parts API on 2026-11-03.
+"Sufficient" means at least 50 board sets' worth, and at least 1,000 for passives. Substitutes
+keep the value, package and tolerance, have an equal or higher voltage rating and the same
+dielectric, and fit the existing footprint; the PCB did not change. Re-check stock in the
+JLCPCB BOM tool before ordering.
+
+Fields: `LCSC` (LCSC/JLCPCB part number, read by the JLCPCB KiCad tools), `LCSC MPN` (maker and
+part number of that part), `LCSC Datasheet` (datasheet of the placed part, only where it differs
+from `MPN`), `MPN` and `Vendor PN` (the Digi-Key part, Mouser for U1, kept as the alternate),
+`Rating` (the minimum the circuit needs; the placed part meets or exceeds it, for example C1/C8
+are 25V parts on a 16V rating), `Datasheet`. `LCSC` is empty for parts not bought from LCSC.
+
+Order files, regenerated from the schematic:
+- `RadioBoard2027_BOM_jlcpcb.csv`: JLCPCB assembly upload (Comment, Designator, Footprint,
+  LCSC Part #). 24 lines, 35 placements: 13 Basic and 11 Extended parts.
+- `RadioBoard2027_BOM_full.csv`: every line with its source, LCSC part, JLC library, JLC stock on
+  2026-11-03 and the alternate MPN and Vendor PN.
+- `RadioBoard2027_BOM_digikey.csv` and `RadioBoard2027_BOM_mouser.csv`: only the parts not
+  bought from LCSC.
+
+Not from JLCPCB (order through JLCPCB global sourcing, consign them, or fit by hand):
+
+| Ref | Part | Buy at | Why |
+|---|---|---|---|
+| U1 | Espressif ESP32-C5-WROOM-1U-N8R8 | Mouser 356-ESP32C5WRM1UN8R8 | No C5-WROOM-1U variant in stock at JLCPCB |
+| U4 | Diodes AP7361C-33E-13 | Digi-Key AP7361C-33E-13DICT-ND | 4 at JLCPCB; no pin-compatible (IN-GND-OUT SOT-223) ceramic-stable 1A LDO in stock (ControlBoard2027 §14.1, U7) |
+| J2 | Samtec LSHM-110-02.5-L-DV-A-S-K-TR | Digi-Key SAM14955CT-ND | 47 at JLCPCB; one each on this board and the controlboard, so 50 board sets need 100 |
+| ANT1 | Taoglas FXP831.07.0100C | Digi-Key 931-1121-ND | Cable antenna, not stocked; not assembled |
+
+Substitutions for JLCPCB (the Digi-Key part stays as the alternate):
+
+| Refs | Alternate (Digi-Key) | JLCPCB part (LCSC) | Why it is a drop-in |
+|---|---|---|---|
+| C1, C8 | Samsung CL21A226MOQNNNE (16V) | Samsung CL21A226MAQNNNE (C45783, Basic) | 22µF X5R 0805, 25V: the part from the 2026-09-14 JLC BOM, in stock at JLCPCB |
+| C5 | TDK C2012X5R1E475K125AB | Samsung CL21A475KAQNNNE (C1779, Basic) | 4.7µF 25V X5R 0805 |
+| C6, C7 | Taiyo Yuden LMK107BBJ106MALT | Samsung CL10A106KP8NNNC (C19702, Basic) | 10µF 10V X5R 0603, ±10% |
+| R1-R6, R8-R11, R13-R15 | Yageo / Panasonic 1% | UNI-ROYAL 0402WGF 1% (Basic) | Same value and 0402; R4, R5, R6 stay 1% (C25105 and C25092 are ±1%) |
+
+C2, C3, C9, D1, D2, D3, D4, F1, J1, R7, R12, SW1, SW2, U2, U3, U5 and U6 are the exact Digi-Key
+parts, in stock at JLCPCB. C5 was substituted because the TDK part has no JLCPCB stock; C1, C6-C8
+and the resistors use Basic parts although the exact parts are in stock as Extended
+(ControlBoard2027 §14.1 explains the rule; swapping back needs only the `LCSC` field, for
+example Panasonic ERJ-2RKF1501X C413084 for R8/R15). Substituted
+parts carry an `LCSC Datasheet` field for the placed part. C4 is DNP and is not in any order file.
+
+### BOM history: Digi-Key selection (stock checked 2026-10-04, now the alternates)
+
 Stock was read live from the Digi-Key and Mouser product pages. "Sufficient" means at least 1,000
 in stock and 50 boards' worth for passives, at least 200 and 50 boards for everything else; every
-line passes. Re-check in the distributor's BOM tool before ordering.
+line passed.
 
 Passives are 0402 except where 0402 lacks the rating: 22µF uses 0805, 10µF uses 0603 10V (about
 6µF at 3.3V), 4.7µF on VBUS uses 0805 25V (about 3.7µF at 5V). DC-bias figures are typical X5R

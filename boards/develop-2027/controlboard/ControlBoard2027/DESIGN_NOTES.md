@@ -48,6 +48,13 @@ U2 and U11), a Rating and a working datasheet link, and every line was in stock 
   value shows the capacitance only; the voltage and dielectric are in the Rating field, which
   the BOM exports.
 
+2026-11-03 (JLCPCB assembly BOM): the board is now assembled by JLCPCB. Every part has an
+`LCSC` part number and an `LCSC MPN` unless it is not stocked there; the Digi-Key/Mouser part
+stays in `MPN` / `Vendor PN` as the alternate. Substitutes (fuses, crystal option, switches,
+generic headers, MLCC and resistor makers) drop into the existing footprints, so the PCB did not
+change. D7-D11, J9, J13, U7 and U11 still come from Digi-Key or Mouser. Fuse values are now
+generic ("PTC 0.75A 1812"). §14.1 has the order files, stock and every substitution.
+
 2026-10-04 (radio link): J9 is now a Samtec LSHM-110-02.5 mezzanine instead of the JST GH cable
 header. RadioBoard2027 J2 is the same hermaphroditic part, so the radio plugs straight onto J9
 (5mm stack) and hangs off this board's east edge, held only by the connector. J9 sits at
@@ -252,7 +259,9 @@ conduct forward and short the supply before Q1 could block it.
 ### F5 (5V) and F6 (3V3) fuses
 Bourns MF-MSMF125/16X-2, 1812. Hold 1.25A and trip 2.50A at 23°C; hold 1.00A at 40°C and
 0.95A at 50°C; 0.04-0.14Ω; max 0.4s to trip at 8A; 16V (MF-MSMF Rev BD tables). The same
-part on both rails keeps the BOM short.
+part on both rails keeps the BOM short. The JLCPCB build fits Littelfuse 1812L125/16DR (§14.1):
+hold 1.25A / trip 2.50A at 20°C, 1.00A at 40°C, 0.95A at 50°C, 0.05-0.14Ω, max 0.4s at 8A, 16V
+(1812L datasheet, 07/21/17), so the sizing below applies to both.
 
 Sizing rule: the trip current must sit at or below what the protected parts and the source
 can carry, or the fuse never opens. The trip current equals the TPS2116's 2.5A rating and is
@@ -336,7 +345,7 @@ Priority mode (MODE tied to VIN1). VIN1 is the powerboard rail, VIN2 the USB sid
 VBUS from J2 goes through F1 to U8 VIN2 (via J14), U7 and the J16 direct option. There is no
 eFuse or load switch.
 
-- F1 Bourns MF-MSMF075/16X-2 (sheet 03), see §7.
+- F1 Bourns MF-MSMF075/16X-2 or, in the JLCPCB build, Littelfuse 1812L075/24DR (sheet 03), see §7.
 - D1 TVS0500DRV sits on VBUS at J2, before F1.
 - C30 2.2uF X5R 16V at the input. The USB Device Capacitance ECN requires 1-10µF on VBUS;
   2.2µF stays above 1µF after DC bias.
@@ -377,7 +386,9 @@ and SPI.
 - HSI48 alone is ±1.04% untrimmed (DS13313 Table 35), four times too loose. CRS trimming needs
   USB SOF packets from a host and does nothing for SPI or SDMMC.
 - ABM8-25.000MHZ-10-B1U-T: ±10ppm tolerance, ±10ppm stability, ±2ppm first-year aging, about
-  22ppm worst case. The rev-2026 control board already uses this part.
+  22ppm worst case. The rev-2026 control board already uses this part. The JLCPCB build fits
+  ABM8-25.000MHZ-10-D1G-T (§14.1): same CL, ESR, C0 and drive level, ±15ppm stability over
+  -40 to 85°C, about 27ppm worst case, still far inside the 2,500ppm USB budget.
 - 25MHz rather than 48MHz: the oscillator only guarantees start-up below Gmcritmax 1.5mA/V
   (DS13313 Table 33). gm_crit = 4 × ESR × (2πF)² × (C0 + CL)². At 25MHz (ESR 50Ω, C0 3pF,
   CL 10pF) that is 0.83mA/V typ, 1.08mA/V worst case. At 48MHz it is 2.15mA/V, over the limit.
@@ -483,6 +494,8 @@ must not add their own pull-ups.
 - F1 Bourns MF-MSMF075/16X-2 (1812): hold 0.75A / trip 1.50A at 23°C, 0.60A hold at 40°C and
   0.55A at 50°C, 0.11-0.45Ω, max 0.2s to trip at 8A, 16V. The plain MF-MSMF075 used before is
   marked not recommended for new designs in the Rev BD datasheet; the /16X version is current.
+  The JLCPCB build fits Littelfuse 1812L075/24DR (§14.1): hold 0.75A / trip 1.50A at 20°C,
+  0.60A at 40°C, 0.55A at 50°C, 0.11-0.29Ω, max 0.2s at 8A, 24V. The limits below are the same.
   This is NOT sufficient to approve unrestricted USB operation: estimated base 0.35A +
   LED cap 0.10A + radio TX 0.403A is about 0.85A before motor/extension loads. Peak duration
   and duty cycle affect PTC heating; a burst above hold does not prove immediate tripping.
@@ -594,7 +607,8 @@ leakage is ±250nA max (DS13313 Table 51) against a 2.31V input-high threshold:
 
 100k gives a solid high at low current and still enough wetting current for gold contacts.
 Read at boot; add 100nF per pin if read continuously. The part is a CTS 209-6MS through-hole
-slide DIP (2.54mm pitch, 7.62mm rows). Pins 1-6 carry DIP0-DIP5 and pins 7-12 go to GND.
+slide DIP (2.54mm pitch, 7.62mm rows); the JLCPCB build fits the Hroparts DS-06BP with the same
+pitch and rows (§14.1). Pins 1-6 carry DIP0-DIP5 and pins 7-12 go to GND.
 
 ### SW4-SW6 user buttons
 Active low. R59-R61 10k pull-ups, R62-R64 10k series, C50-C52 100nF at the MCU pin, no
@@ -609,7 +623,8 @@ The pin settles in about 5τ. The RC removes sub-millisecond bounce; firmware ig
 re-triggers for about 10ms. Peak switch current is 0.76mA and the pin stays inside the rails.
 The same numbers are on the buttons sheet. SW1, SW2 and SW4-SW6 are APEM MJTP1243 through-hole
 tactiles (6 x 3.5mm, two pins at 6.5mm), so the pin mapping is direct and the GND/3V3 pins tie
-straight into the planes.
+straight into the planes. The JLCPCB build fits the C&K PTS636SM43LFS (6 x 3.5mm, 4.3mm high,
+two pins at 6.4 ±0.2mm), which drops into the same footprint (§14.1).
 
 ---
 
@@ -671,7 +686,8 @@ through, and the GND pads are bridged with vias on both sides.
   shared downstream fused rail.
 - Both are Bourns MF-MSMF075/16X-2 (same as F1): hold 0.75A at 23°C, 0.55A at
   50°C, trip 1.50A at 23°C, max 0.2s at the specified 8A test current. See MF-MSMF
-  electrical/thermal tables. Independent protection does not increase the total source
+  electrical/thermal tables. The JLCPCB build fits Littelfuse 1812L075/24DR with the same
+  hold, hot-hold, trip and trip-time figures (§14.1). Independent protection does not increase the total source
   budget: retain 0.55A COMBINED external-load allocation pending M3 measurements.
 - A single tripped branch no longer directly removes power from the other two ports.
   However PTC selectivity is not guaranteed by nominal trip currents or maximum trip
@@ -984,7 +1000,7 @@ outline on the silkscreen crosses the pads of R34 (the fab clips silkscreen on p
 - **m12** PA4 (bootloader SPI1 NSS) is unconnected and floats in DFU. Nothing drives the motor
   SCK (R30 pull-down), so no SPI frame arrives and DFU still answers on USB.
 - **m14** J3 has no protection against a 5V mis-plug; the SWD series resistors have been removed.
-- **m15** Resolved: all switches are through-hole (APEM MJTP1243 buttons SW1/SW2/SW4-SW6, CTS 209-6MS DIP SW3) with MPNs set.
+- **m15** Resolved: all switches are through-hole (APEM MJTP1243 buttons SW1/SW2/SW4-SW6, CTS 209-6MS DIP SW3) with MPNs set. JLCPCB build: C&K PTS636SM43LFS and Hroparts DS-06BP in the same footprints (§14.1).
 - **m16** The LSM6DSV320X has no reset pin. Firmware uses the SW_RESET/BOOT bits after a brown-out and runs I2C bus recovery.
 - **m17** AN2867, RM0468 and AN4879 were not available from st.com. VBUS is read as a GPIO, so the
   OTG threshold is not needed.
@@ -1018,18 +1034,96 @@ outline on the silkscreen crosses the pads of R34 (the fab clips silkscreen on p
 
 ## 14. BOM and sourcing
 
-Fields: `MPN` (maker and part number), `Vendor PN` (Digi-Key cut-tape PN; Mouser for U2 and U11),
-`Rating` (voltage and dielectric for capacitors, tolerance for resistors), `Datasheet` and
-`Description` (what the part does and where it sits).
-Export the BOM with these columns. The order files are `ControlBoard2027_BOM_digikey.csv`, `ControlBoard2027_BOM_mouser.csv` (U2, U11) and `ControlBoard2027_BOM_full.csv` (both), grouped by MPN. Selection rule: in stock first, then lowest price. Stock was read
-live from Digi-Key's (and Mouser's) product pages on 2026-10-04. "Sufficient" means at least 1,000
-in stock and 50 boards' worth for passives, at least 200 and 50 boards for everything else. Every line
-passed except U11 (22 at Mouser, the only same-spec IMU in stock anywhere). Re-check in the
-distributor's BOM tool before ordering: stock changes daily.
+### 14.1 JLCPCB assembly (2026-11-03)
 
-BOM-only items (symbols with "exclude from board"): SH1-SH6, the six jumper shunts (Samtec
-SNT-100-BK-G, SAM8858-ND), and SK1, the J13 1x8 female socket (Sullins PPTC081LFBN-RC, S7006-ND).
+The board is built and assembled by JLCPCB, so every part was sourced from the JLCPCB parts
+library (LCSC stock) first. Stock and library type were read live from the JLCPCB parts API on
+2026-11-03. "Sufficient" means at least 50 board sets' worth, and at least 1,000 for passives.
+A part was substituted in two cases: (1) the exact part was short or absent at JLCPCB (the
+fuses, switches, crystal option, headers, SK1 and C7/C11/C31); (2) for
+passives, the exact part is stocked only as a JLCPCB Extended part and an equal-or-better Basic
+part exists. Each Extended line adds a JLCPCB setup fee and Basic parts sit on the machines, so
+the generic MLCCs and chip resistors use Basic parts. In case (2) the exact part is still in stock
+as Extended and can be swapped back by changing only the `LCSC` field: LMK107BBJ106MALT C195004,
+CL05C120JB5NNNC C26406, CL10A105KP8NNNC C26413, CL21A226MOQNNNE C98190, JMK107BBJ226MA-T C87153,
+RMCF0402ZT0R00 C5374047, Panasonic ERJ-3EKF1002V C191124, and every Yageo RC0402FR/RC0603FR value. Every substitute keeps the
+value, package and tolerance (or tighter), has an equal or higher voltage rating and the same
+dielectric, and fits the existing footprint: the PCB did not change. `Rating` is the minimum the
+circuit needs; the placed part meets or exceeds it (for example C24/C26 are 50V parts on a 10V
+rating, C1/C5/C32/C34 are ±10% parts on a ±20% rating). Parts with no adequate JLCPCB stock and no
+drop-in substitute stay on Digi-Key or Mouser. Re-check stock in the JLCPCB BOM tool before
+ordering; it changes daily.
+
+Assembly: 27 of the JLCPCB-placed parts are on B.Cu (C1-C7, C10-C17, C20-C27, F3, F4, R11, R13),
+so the order needs double-sided assembly. 20 placements are through-hole (J3, J4-J8, J10-J12,
+J14-J18, SW1-SW6), which JLCPCB fits by THT/wave at extra cost; they can also be left off the
+order and hand-soldered.
+
+Fields: `LCSC` (the LCSC/JLCPCB part number; the JLCPCB KiCad tools read it), `LCSC MPN` (maker and
+part number of that LCSC part), `LCSC Datasheet` (datasheet of the placed part, only where it differs from `MPN`), `MPN` and `Vendor PN` (the Digi-Key part, Mouser for U2 and U11,
+kept as the alternate), `Rating` (the minimum voltage and dielectric for capacitors, tolerance for
+resistors; the placed part meets or exceeds it), `Datasheet` and `Description` (what the part does, where it sits, and both part
+numbers where they differ). `LCSC` is empty for parts not bought from LCSC.
+
+Order files, regenerated from the schematic:
+- `ControlBoard2027_BOM_jlcpcb.csv`: JLCPCB assembly upload (Comment, Designator, Footprint,
+  LCSC Part #). 51 lines, 161 placements: 22 Basic and 29 Extended parts (JLCPCB charges a setup
+  fee per Extended part). The placement file comes from the KiCad plugin in `jlcpcb/`.
+- `ControlBoard2027_BOM_full.csv`: every line with its source, LCSC part, JLC library, JLC stock on
+  2026-11-03 and the alternate MPN and Vendor PN.
+- `ControlBoard2027_BOM_digikey.csv` and `ControlBoard2027_BOM_mouser.csv`: only the parts not
+  bought from LCSC.
+
+Not from JLCPCB. Order them through JLCPCB's global sourcing or consign them; D7-D11 (2020
+package), U11 (LGA-14) and J9 (0.5mm pitch) are not practical to hand-solder.
+
+| Refs | Part | Buy at | Why |
+|---|---|---|---|
+| D7-D11 | American Bright BB-2020BGR-TRB | Digi-Key 2007-BB-2020BGR-TRBCT-ND | No APA102-2020-compatible LED in stock at JLCPCB for the custom footprint (§10) |
+| J9 | Samtec LSHM-110-02.5-L-DV-A-S-K-TR | Digi-Key SAM14955CT-ND | 47 at JLCPCB; one each on this board and the radio, so 50 board sets need 100. The footprint-compatible non-K version (C6217878) adds only 30 |
+| J13 | Adafruit 326 OLED module | Digi-Key 1528-1220-ND | Module, not stocked at JLCPCB; fits onto SK1 by hand |
+| U7 | Diodes AP7361C-33E-13 | Digi-Key AP7361C-33E-13DICT-ND | 4 at JLCPCB (C500795). AP7361C-33ER is SOT-223 with a different pinout (1 GND, 2 OUT, 3 IN against IN-GND-OUT here). In-stock SOT-223 parts with the right pin order do not fit the circuit: LM3940IMP-3.3 (C140319) needs 33uF and a minimum output ESR, LM2937IMP-3.3 (C140265) is 400mA, below the +3V3_LDO load this board can draw on USB (about 0.75A peak, §4), MIC39100/SPX3940 need larger or ESR-bounded output caps |
+| U11 | ST LSM6DSV320XTR | Mouser 511-LSM6DSV320XTR | 0 at JLCPCB. The pin-compatible LSM6DSV32X (C22461202, 309) and LSM6DSV16X lack the ±320g high-g channel required in §9 |
+
+Loose parts from LCSC, fitted by hand (BOM-only symbols with no footprint): SH1-SH6, the six
+jumper shunts, Samtec SNT-100-BK-G (C3715645, same part as before); SK1, the J13 1x8 female
+socket, BOOMELE 2.54-1*8P, 8.5mm body (C27438; the Sullins PPTC081LFBN-RC is not stocked).
 TP1-TP21 are bare pads and are marked "exclude from BOM".
+
+Substitutions for JLCPCB (the old part stays in `MPN` / `Vendor PN` as the alternate):
+
+| Refs | Alternate (Digi-Key) | JLCPCB part (LCSC) | Why it is a drop-in |
+|---|---|---|---|
+| C1 C5 C32 C34 | Taiyo Yuden LMK107BBJ106MALT | Samsung CL10A106KP8NNNC (C19702, Basic) | 10uF 10V X5R 0603, ±10% instead of ±20% |
+| C7 C11 C31 | TDK C1608X5R1C475K080AC | Samsung CL10A475KO8NNNC (C19666, Basic) | 4.7uF 16V X5R 0603 |
+| C18 C19 | Samsung CL05C120JB5NNNC | FH 0402CG120J500NT (C1547, Basic) | 12pF 50V C0G ±5% 0402 |
+| C24 C26 | Samsung CL10A105KP8NNNC | Samsung CL10A105KB8NNNC (C15849, Basic) | 1uF X5R 0603, 50V instead of 10V |
+| C28 C33 C37 C42 | Samsung CL21A226MOQNNNE | Samsung CL21A226MAQNNNE (C45783, Basic) | 22uF X5R 0805, 25V instead of 16V |
+| C38 | Taiyo Yuden JMK107BBJ226MA-T | Samsung CL10A226MQ8NRNC (C59461, Basic) | 22uF 6.3V X5R 0603 |
+| R1-R5, R7-R11, R13, R14, R17-R20, R22-R36, R38-R48, R53-R64 | Yageo / Panasonic 1% | UNI-ROYAL 0402WGF / 0603WAF 1% (Basic) | Same value, size and 1% tolerance |
+| R12 | Stackpole RMCF0402ZT0R00 | UNI-ROYAL 0402WGF0000TCE (C17168, Basic) | 0R 0402 |
+| F1 F3 F4 | Bourns MF-MSMF075/16X-2 | Littelfuse 1812L075/24DR (C207065) | 1812; hold 0.75A / trip 1.50A at 20°C, 0.55A hold at 50°C, max 0.2s at 8A, 24V, 100A (1812L datasheet, 07/21/17) |
+| F5 F6 | Bourns MF-MSMF125/16X-2 | Littelfuse 1812L125/16DR (C207067) | 1812; hold 1.25A / trip 2.50A, 0.95A hold at 50°C, max 0.4s at 8A, 16V, 100A |
+| J3 | Samtec TSW-105-07-G-S | hanxia HX PZ2.54-1x5P ZZ (C32713271) | Gold 1x5 2.54mm vertical THT header; Samtec had 13 at JLCPCB |
+| J14 J17 | Samtec TSW-102-07-G-D | hanxia HX PZ2.54-2x2P ZZ (C32713275) | Gold 2x2 2.54mm vertical THT header; Samtec had 25 at JLCPCB |
+| SW1 SW2 SW4-SW6 | APEM MJTP1243 | C&K PTS636SM43LFS (C2689636) | 6 x 3.5mm THT tactile, 4.3mm high, 1.8N. Pins 6.4 ±0.2mm apart and maker hole Ø1.2mm; the footprint has 6.5mm and 1.3mm drills, inside that tolerance |
+| SW3 | CTS 209-6MS | Hroparts DS-06BP (C129072) | 6-position THT slide DIP, 2.54mm pitch, 7.62mm rows; the 9.6 x 16.8mm body fits inside the SW3 courtyard. 24V 25mA rating against 33uA through the 100k pull-ups. The maker's PCB layout asks for Ø0.97 ±0.05mm holes; the footprint drills 0.8mm for a 0.60mm-wide lead (about 0.65mm across the diagonal for a typical 0.25mm-thick lead), a tight but workable fit. Body 5.5mm plus a 1.1mm actuator |
+| X1 | Abracon ABM8-25.000MHZ-10-B1U-T | Abracon ABM8-25.000MHZ-10-D1G-T (C5366868) | Same CL 10pF, ESR 50Ω max, C0 3pF max, drive 100uW max, ±10ppm tolerance, so gm_crit is unchanged (§5). Stability ±15ppm over -40 to 85°C instead of ±10ppm over -20 to 70°C (ABM8 option codes D, 1, G) |
+| SK1 | Sullins PPTC081LFBN-RC | BOOMELE 2.54-1*8P (C27438) | 1x8 2.54mm female socket, 8.5mm body |
+
+Every other line is the exact part from §14.2 at JLCPCB. Substituted parts carry an `LCSC
+Datasheet` field linking the placed part's datasheet (LCSC copy); `Datasheet` stays with the
+alternate MPN. The lowest stock against need on
+2026-11-03: U2 STM32H723ZGT6 195 (1 per board), J16/J18 TSW-103-07-G-D 399 (2 per board),
+SH1-SH6 928 (6 per board), U10 SN74AHCT125DR 1,204, X1 1,405, F5/F6 1,503. Fuse and switch
+values on the schematic are generic ("PTC 0.75A 1812") so the value matches either maker.
+
+### 14.2 Digi-Key / Mouser selection (2026-10-04, now the alternates)
+
+Selection rule: in stock first, then lowest price. Stock was read live from Digi-Key's (and
+Mouser's) product pages on 2026-10-04. "Sufficient" means at least 1,000 in stock and 50 boards'
+worth for passives, at least 200 and 50 boards for everything else. Every line passed except U11
+(22 at Mouser, the only same-spec IMU in stock anywhere).
 
 Parts changed on 2026-10-04 because the first choice was out of stock (price at qty 1):
 

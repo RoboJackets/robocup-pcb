@@ -4277,7 +4277,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC MPN" "TI TPD4E05U06DQAR"
+			(at 236.22 124.46 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "RadioBoard2027:TPD4E05U06DQA_FlowThru")
 		(at 236.22 172.72 0)
@@ -4365,7 +4374,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC MPN" "TI TPD4E05U06DQAR"
+			(at 236.22 172.72 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Power_Protection:TVS0500DRV")
 		(at 190.5 165.1 0)
@@ -4454,7 +4472,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC MPN" "TI TVS0500DRVR"
+			(at 190.5 165.1 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 190.5 172.72 0)
@@ -4842,6 +4869,15 @@
 			)
 		)
 		(property "Vendor PN" "SAM14955CT-ND"
+			(at 170.18 147.32 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" ""
 			(at 170.18 147.32 0)
 			(hide yes)
 			(effects

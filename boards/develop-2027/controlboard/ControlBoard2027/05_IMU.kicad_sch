@@ -1610,7 +1610,7 @@
 		)
 		(uuid "5ee5e7cf-2130-40ca-99d6-0dae354840ff")
 	)
-	(text "INTERRUPTS: INT1 -> ACCEL_EXTI (PF3), INT2 -> GYRO_EXTI (PF2). Both are push-pull and\nare driven low from power-up (DS15060 Table 25), so no pull-downs are fitted.\nRoute data-ready or events to them with INT1_CTRL/INT2_CTRL."
+	(text "INTERRUPTS: INT1 -> ACCEL_EXTI (PF3), INT2 -> GYRO_EXTI (PF2). Both are push-pull and\nare driven low from power-up (DS14623 Table 25), so no pull-downs are fitted.\nRoute data-ready or events to them with INT1_CTRL/INT2_CTRL."
 		(exclude_from_sim no)
 		(at 100.33 180.34 0)
 		(effects
@@ -2481,7 +2481,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C1525"
+			(at 162.56 143.51 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 162.56 143.51 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C")
 		(at 152.4 143.51 0)
@@ -2595,7 +2613,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C1525"
+			(at 152.4 143.51 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 152.4 143.51 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:+3V3")
 		(at 162.56 139.7 0)
@@ -2809,5 +2845,23 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" ""
+			(at 190.5 114.3 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" ""
+			(at 190.5 114.3 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 )

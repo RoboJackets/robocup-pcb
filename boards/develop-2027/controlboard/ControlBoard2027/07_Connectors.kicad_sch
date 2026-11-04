@@ -6936,7 +6936,7 @@
 		)
 		(uuid "3f851ffc-c84a-4c79-93e4-732a0eff5552")
 	)
-	(text "SPI ROUTING: routed ~50R over In1 GND; receiver data still pending.\nR15/R16 are provisional damping; verify all multidrop endpoints.\nPlace ESD devices at connectors with short ground returns.\nF3 -> J11, F4 -> J12: independent PTC output rails. J10 carries no power:\nthe kicker board is supplied by the powerboard.\nMF-MSMF075: each holds 0.55 A at 50C; NOT a combined available budget.\nShared U8/source limits still apply; fault selectivity is not guaranteed.\nShared I2C signals remain vulnerable to any device holding a bus line low."
+	(text "SPI ROUTING: routed ~50R over In1 GND; receiver data still pending.\nR15/R16 are provisional damping; verify all multidrop endpoints.\nPlace ESD devices at connectors with short ground returns.\nF3 -> J11, F4 -> J12: independent PTC output rails. J10 carries no power:\nthe kicker board is supplied by the powerboard.\n0.75 A PTCs: each holds 0.55 A at 50C; NOT a combined available budget.\nShared U8/source limits still apply; fault selectivity is not guaranteed.\nShared I2C signals remain vulnerable to any device holding a bus line low."
 		(at 260.35 300.99 0)
 		(effects
 			(font
@@ -8422,7 +8422,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C25744"
+			(at 345.44 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF1002TCE"
+			(at 345.44 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25744"
+			(at 345.44 53.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x08")
 		(at 271.78 180.34 0)
@@ -8552,7 +8579,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" ""
+			(at 271.78 180.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" ""
+			(at 271.78 180.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 259.08 124.46 0)
@@ -8733,7 +8778,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C131339"
+			(at 271.78 99.06 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "JST B3B-PH-K-S(LF)(SN)"
+			(at 271.78 99.06 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:+3V3")
 		(at 349.25 45.72 270)
@@ -8922,7 +8985,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C25744"
+			(at 345.44 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF1002TCE"
+			(at 345.44 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25744"
+			(at 345.44 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x06")
 		(at 139.7 167.64 0)
@@ -9035,7 +9125,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C131342"
+			(at 139.7 167.64 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "JST B6B-PH-K-S(LF)(SN)"
+			(at 139.7 167.64 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 408.94 129.54 0)
@@ -9225,7 +9333,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C131342"
+			(at 139.7 83.82 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "JST B6B-PH-K-S(LF)(SN)"
+			(at 139.7 83.82 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 408.94 91.44 0)
@@ -9409,7 +9535,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C131334"
+			(at 271.78 147.32 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "JST B4B-PH-K-S(LF)(SN)"
+			(at 271.78 147.32 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 345.44 68.58 90)
@@ -9521,7 +9665,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C25744"
+			(at 345.44 68.58 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF1002TCE"
+			(at 345.44 68.58 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25744"
+			(at 345.44 68.58 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x06")
 		(at 139.7 139.7 0)
@@ -9634,7 +9805,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C131342"
+			(at 139.7 139.7 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "JST B6B-PH-K-S(LF)(SN)"
+			(at 139.7 139.7 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 355.6 147.32 0)
@@ -9835,7 +10024,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C1525"
+			(at 165.1 240.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 165.1 240.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:C")
 		(at 154.94 240.03 0)
@@ -9949,7 +10156,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C45783"
+			(at 154.94 240.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL21A226MAQNNNE"
+			(at 154.94 240.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C45783"
+			(at 154.94 240.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Power_Protection:TPD4E05U06DQA")
 		(at 408.94 114.3 0)
@@ -10075,7 +10309,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C138714"
+			(at 408.94 114.3 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "TI TPD4E05U06DQAR"
+			(at 408.94 114.3 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 408.94 281.94 0)
@@ -10418,7 +10670,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C25744"
+			(at 345.44 30.48 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF1002TCE"
+			(at 345.44 30.48 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25744"
+			(at 345.44 30.48 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Mechanical:MountingHole")
 		(at 55 390 0)
@@ -10766,7 +11045,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C131342"
+			(at 139.7 195.58 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "JST B6B-PH-K-S(LF)(SN)"
+			(at 139.7 195.58 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Power_Protection:TPD4E05U06DQA")
 		(at 408.94 266.7 0)
@@ -10892,7 +11189,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C138714"
+			(at 408.94 266.7 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "TI TPD4E05U06DQAR"
+			(at 408.94 266.7 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:+3V3")
 		(at 349.25 38.1 270)
@@ -11245,7 +11560,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C25744"
+			(at 345.44 91.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF1002TCE"
+			(at 345.44 91.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25744"
+			(at 345.44 91.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 408.94 53.34 0)
@@ -11448,7 +11790,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C138714"
+			(at 408.94 228.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "TI TPD4E05U06DQAR"
+			(at 408.94 228.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 368.3 147.32 0)
@@ -11647,7 +12007,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C25741"
+			(at 345.44 83.82 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF1003TCE"
+			(at 345.44 83.82 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25741"
+			(at 345.44 83.82 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:+3V3")
 		(at 349.25 60.96 270)
@@ -11913,7 +12300,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C25744"
+			(at 345.44 38.1 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF1002TCE"
+			(at 345.44 38.1 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25744"
+			(at 345.44 38.1 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:Polyfuse")
 		(at 179.07 109.22 270)
@@ -11933,7 +12347,7 @@
 				)
 			)
 		)
-		(property "Value" "MF-MSMF075/16X"
+		(property "Value" "PTC 0.75A 1812"
 			(at 179.07 111.76 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11965,7 +12379,7 @@
 				)
 			)
 		)
-		(property "Description" "MF-MSMF075/16X independent PTC for J11. Hold 0.75A at 23C / 0.55A at 50C. Not an active current limit; no guaranteed selective trip relative to upstream protection. Total available load depends on shared source and board consumption."
+		(property "Description" "Independent PTC for J11: Littelfuse 1812L075/24DR (JLC build) or Bourns MF-MSMF075/16X-2. Hold 0.75A at 20-23C / 0.55A at 50C, trip 1.5A. Not an active current limit; no guaranteed selective trip relative to upstream protection. Total available load depends on shared source and board consumption."
 			(at 179.07 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -12014,7 +12428,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C207065"
+			(at 179.07 109.22 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "Littelfuse 1812L075/24DR"
+			(at 179.07 109.22 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/f489f06aaead3504c46a5f46e8004a19.pdf?productCode=C207065"
+			(at 179.07 109.22 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 345.44 45.72 90)
@@ -12126,7 +12567,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C25744"
+			(at 345.44 45.72 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF1002TCE"
+			(at 345.44 45.72 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25744"
+			(at 345.44 45.72 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
 		(at 271.78 124.46 0)
@@ -12233,7 +12701,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C131334"
+			(at 271.78 124.46 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "JST B4B-PH-K-S(LF)(SN)"
+			(at 271.78 124.46 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 342.9 147.32 0)
@@ -12588,7 +13074,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C25741"
+			(at 345.44 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF1003TCE"
+			(at 345.44 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25741"
+			(at 345.44 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 154.94 243.84 0)
@@ -12868,7 +13381,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C138714"
+			(at 408.94 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "TI TPD4E05U06DQAR"
+			(at 408.94 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:Polyfuse")
 		(at 179.07 121.92 270)
@@ -12888,7 +13419,7 @@
 				)
 			)
 		)
-		(property "Value" "MF-MSMF075/16X"
+		(property "Value" "PTC 0.75A 1812"
 			(at 179.07 124.46 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12920,7 +13451,7 @@
 				)
 			)
 		)
-		(property "Description" "MF-MSMF075/16X independent PTC for J12. Hold 0.75A at 23C / 0.55A at 50C. Not an active current limit; no guaranteed selective trip relative to upstream protection. Total available load depends on shared source and board consumption."
+		(property "Description" "Independent PTC for J12: Littelfuse 1812L075/24DR (JLC build) or Bourns MF-MSMF075/16X-2. Hold 0.75A at 20-23C / 0.55A at 50C, trip 1.5A. Not an active current limit; no guaranteed selective trip relative to upstream protection. Total available load depends on shared source and board consumption."
 			(at 179.07 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -12969,7 +13500,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C207065"
+			(at 179.07 121.92 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "Littelfuse 1812L075/24DR"
+			(at 179.07 121.92 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/f489f06aaead3504c46a5f46e8004a19.pdf?productCode=C207065"
+			(at 179.07 121.92 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Power_Protection:TPD4E05U06DQA")
 		(at 408.94 190.5 0)
@@ -13095,7 +13653,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C138714"
+			(at 408.94 190.5 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "TI TPD4E05U06DQAR"
+			(at 408.94 190.5 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:+3V3")
 		(at 349.25 30.48 270)
@@ -13690,7 +14266,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C131342"
+			(at 139.7 111.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "JST B6B-PH-K-S(LF)(SN)"
+			(at 139.7 111.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 259.08 96.52 0)
@@ -14124,7 +14718,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C138714"
+			(at 408.94 38.1 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "TI TPD4E05U06DQAR"
+			(at 408.94 38.1 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "ControlBoard2027:BOM_Item")
 		(at 279.4 172.72 0)
@@ -14202,7 +14814,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" "C27438"
+			(at 279.4 172.72 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "BOOMELE(Boom Precision Elec) 2.54-1*8P"
+			(at 279.4 172.72 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/dd9ea55d1b8cfc5050f226d062b24d7e.pdf?productCode=C27438"
+			(at 279.4 172.72 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Connector_Generic_Shielded:Conn_02x10_Odd_Even_Shielded")
 		(at 213.36 215.9 0)
@@ -14282,7 +14921,25 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC" ""
+			(at 213.36 215.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" ""
+			(at 213.36 215.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 205.74 215.9 270)

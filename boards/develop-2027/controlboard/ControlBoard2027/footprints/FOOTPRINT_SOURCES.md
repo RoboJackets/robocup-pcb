@@ -16,7 +16,7 @@ into the project. DRC reports no library-footprint mismatches on the current boa
 | `ControlBoard2027:AmericanBright_BB-2020BGR-TRB` | D7–D11 | `../datasheets/BB2020BGR-TRB.pdf`, page 2 "LED Pad Diagram" | Six pads, top view CO/VCC/CI over DO/GND/DI. CO/CI/DO/DI 0.60 × 0.80 mm, VCC 0.40 × 0.80 mm, GND 0.40 × 1.00 mm, 0.40 mm gaps, 2.4 × 2.4 mm field. Replaces `LED_SMD:LED-APA102-2020`, whose three-row pad layout does not match this part: it would put CO on +5V and CI on GND. |
 | `ControlBoard2027:ST_LGA-14L_2.5x3mm_P0.5mm` | U11 (LSM6DSV320XTR) | `../datasheets/LSM6DSV320X.pdf` (DS14623) and `../datasheets/LSM6DSK320X.pdf` (DS15060 Rev 1, Fig. 31 package, Fig. 5 pinout) | LGA-14L 2.5 × 3.0 × 0.83 mm, 14 pads at 0.5 mm pitch, package pads 0.25 × 0.475 mm. The DSV320X and the original DSK320X have the same package, pin figure and pin table. Pad centres and numbering match KiCad `LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y` (top view: 1–4 left, 5–7 bottom, 8–11 right, 12–14 top). Pad width narrowed from 0.35 to 0.30 mm so adjacent pads keep the board's 0.20 mm clearance. |
 | `ControlBoard2027:Adafruit_326_0p96in_STEMMA_QT_Header` | J13 | `vendor_sources/Adafruit-128x64-Monochrome-OLED-PCB/`, commit `51ef8e242dcf460d5effc298d8565110624e6b23` | Exact JP2 `1X08_ROUND_70` pads from `Adafruit 0.96in 128x64 OLED STEMMA QT.brd`; JP2 is R180 in the source, so pad 1 is the right-most header pad in the footprint's source orientation. The module outline is on F.SilkS/F.Fab. The courtyard covers only the header strip, because the module stands on its header pins above low parts. The mating 1x8 socket is BOM line SK1. |
-| `ControlBoard2027:Fuse_Bourns_MF-MSMF_1812` | F1, F3, F4 (MF-MSMF075/16X-2), F5, F6 (MF-MSMF125/16X-2) | `../datasheets/MF-MSMF.pdf` (Rev BD), p.7 recommended land | Two 1.68 × 2.95 mm pads, 3.1 mm gap (pad centres ±2.39 mm), the maker's recommended land for the 1812 style 2 body, with a slightly longer toe for hot-air or hand rework. |
+| `ControlBoard2027:Fuse_Bourns_MF-MSMF_1812` | F1, F3, F4 (MF-MSMF075/16X-2, or Littelfuse 1812L075/24DR in the JLCPCB build), F5, F6 (MF-MSMF125/16X-2, or 1812L125/16DR) | `../datasheets/MF-MSMF.pdf` (Rev BD), p.7 recommended land; `../datasheets/Littelfuse_1812L.pdf` p.5 | Two 1.68 × 2.95 mm pads, 3.1 mm gap (pad centres ±2.39 mm), the maker's recommended land for the 1812 style 2 body, with a slightly longer toe for hot-air or hand rework. Littelfuse 1812L: body 4.37-4.73 × 3.07-3.41 mm, bottom terminals 0.3-1.2 mm long; with the pad inner edges at ±1.55 mm the whole terminal lands on the pad up to 0.64 mm terminal length, and at least 0.64 mm of a longer one. |
 | `ControlBoard2027:XKB_XKTF-015-N` | not used | `../datasheets/XKTF-015-X.pdf` | The original J1 socket. Kept in the library for reference only; J1 is now the Hirose DM3AT-SF-PEJM5 (below), because Digi-Key does not sell the XKB part. |
 
 The OLED module is 29.21 × 31.75 mm. On this board it is held by its header pins only.
@@ -30,16 +30,16 @@ Each entry was checked against the MPN's package (size code, pin count, pitch).
 |---|---|---|
 | J1 | Hirose DM3AT-SF-PEJM5 | `Connector_Card:microSD_HC_Hirose_DM3AT-SF-PEJM5` (KiCad's footprint for this exact part, from the Hirose DM3 drawing; same 1.1 mm contact pitch and pin order as the XKB socket) |
 | J2 | GCT USB4110-GF-A | `Connector_USB:USB_C_Receptacle_GCT_USB4110` |
-| J3 | Samtec TSW-105-07-G-S | `Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical` |
+| J3 | Samtec TSW-105-07-G-S (JLCPCB build: hanxia HX PZ2.54-1x5P ZZ, same 2.54 mm vertical THT header) | `Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical` |
 | J4–J8 | JST B6B-PH-K-S(LF)(SN) | `Connector_JST:JST_PH_B6B-PH-K_1x06_P2.00mm_Vertical` |
 | J9 | Samtec LSHM-110-02.5-L-DV-A-S-K-TR | `Connector_Samtec:Samtec_LSHM-110-xx.x-x-DV-S_2x10-1SH_P0.50mm_Vertical` (KiCad stock. Checked against Samtec's recommended layout, rev G: 0.5mm pitch, 0.30 x 1.50mm pads, 3.7mm row pitch, 1.45mm NPTH pegs 1.0mm from the pin-1 row, 1.00mm PTH shield holes 2.00mm from the pegs. The drawing gives the horizontal peg/shield spacing only as lettered dimensions, so those come from the library. The drawing is not archived: Samtec marks it proprietary). Same footprint on RadioBoard2027 J2, on B.Cu |
 | J10 | JST B3B-PH-K-S(LF)(SN) | `Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical` |
 | J11, J12 | JST B4B-PH-K-S(LF)(SN) | `Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical` |
-| J14, J17 | Samtec TSW-102-07-G-D | `Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical` |
+| J14, J17 | Samtec TSW-102-07-G-D (JLCPCB build: hanxia HX PZ2.54-2x2P ZZ) | `Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical` |
 | J15 | JST B8B-XH-A(LF)(SN) | `Connector_JST:JST_XH_B8B-XH-A_1x08_P2.50mm_Vertical` |
 | J16, J18 | Samtec TSW-103-07-G-D | `Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical` |
-| SW1, SW2, SW4–SW6 | APEM MJTP1243 | `Button_Switch_THT:SW_PUSH_1P1T_6x3.5mm_H4.3_APEM_MJTP1243` (KiCad's exact MJTP1243 pattern) |
-| SW3 | CTS 209-6MS | `Button_Switch_THT:SW_DIP_SPSTx06_Slide_6.7x16.8mm_W7.62mm_P2.54mm_LowProfile` (cites the CTS 209/210 drawing) |
+| SW1, SW2, SW4–SW6 | APEM MJTP1243 (JLCPCB build: C&K PTS636SM43LFS) | `Button_Switch_THT:SW_PUSH_1P1T_6x3.5mm_H4.3_APEM_MJTP1243` (KiCad's exact MJTP1243 pattern: two pins 6.5 mm apart, 1.3 mm drills). PTS636 THT: 6.0 × 3.5 mm body, pins 6.4 ±0.2 mm apart, maker hole Ø1.2 mm (`../datasheets/CK_PTS636.pdf` p.2), so it fits the same holes |
+| SW3 | CTS 209-6MS (JLCPCB build: Hroparts DS-06BP) | `Button_Switch_THT:SW_DIP_SPSTx06_Slide_6.7x16.8mm_W7.62mm_P2.54mm_LowProfile` (cites the CTS 209/210 drawing). DS-06BP: 12 pins, 2.54 mm pitch, 7.62 mm rows, 9.6 × 16.8 mm body inside the SW3 courtyard (`../datasheets/Hroparts_DS-06BP.pdf`). The maker layout asks for Ø0.97 ±0.05 mm holes; the footprint drills 0.8 mm for the 0.60 mm-wide lead, a tight but workable fit |
 | D1, D3, D4 | TI TVS0500DRVR | `Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm` |
 | D2 | Nexperia BZX384-C10,115 | `Diode_SMD:D_SOD-323` |
 | D5, D6 | Kingbright APT1608EC | `LED_SMD:LED_0603_1608Metric` |
@@ -50,7 +50,7 @@ Each entry was checked against the MPN's package (size code, pin count, pitch).
 | U4–U6, U12–U14 | TI TPD4E05U06DQAR | `Package_SON:USON-10_2.5x1.0mm_P0.5mm` |
 | U7 | Diodes AP7361C-33E-13 | `Package_TO_SOT_SMD:SOT-223-3_TabPin2` |
 | U10 | TI SN74AHCT125DR | `Package_SO:SO-14_3.9x8.65mm_P1.27mm` |
-| X1 | Abracon ABM8-25.000MHZ-10-B1U-T | `Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm` |
+| X1 | Abracon ABM8-25.000MHZ-10-B1U-T (JLCPCB build: ABM8-25.000MHZ-10-D1G-T, same package) | `Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm` |
 | H1–H4 | (M3 mounting holes, not in the BOM) | `MountingHole:MountingHole_3.2mm_M3` |
 | TP1–TP21 | (bare pads, excluded from the BOM) | `TestPoint:TestPoint_Pad_1.5x1.5mm` |
 
