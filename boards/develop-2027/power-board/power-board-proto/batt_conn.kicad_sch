@@ -3422,82 +3422,6 @@
 		)
 	)
 	(sheet
-		(at 153.67 29.21)
-		(size 38.1 21.59)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "35158032-7c8a-4964-b8a9-d95b180aae7b")
-		(property "Sheetname" "VBATT Master Switch"
-			(at 153.67 28.4984 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "master_switch.kicad_sch"
-			(at 153.67 51.3846 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "Enable" input
-			(at 153.67 44.45 180)
-			(uuid "de70eaa6-a185-4d73-aa14-73f8c25f5c8c")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "Input" input
-			(at 153.67 36.83 180)
-			(uuid "5064ea3c-b3d2-4eb8-a4f6-bd8fbaa33634")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "Output" output
-			(at 191.77 40.64 0)
-			(uuid "6f09cf51-390c-4770-9f66-93328dba2f42")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "power-board-proto"
-				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/4d1d1f5d-fb00-4e31-8e19-895f37bb6ca7"
-					(page "17")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 69.85 81.28)
 		(size 31.75 15.24)
 		(exclude_from_sim no)
@@ -3639,6 +3563,82 @@
 			(project "power-board-proto"
 				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/4d1d1f5d-fb00-4e31-8e19-895f37bb6ca7"
 					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 153.67 29.21)
+		(size 38.1 21.59)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "f28cd1a8-9919-4bd0-bd3d-52c34f968f15")
+		(property "Sheetname" "VBATT Master Switch"
+			(at 153.67 28.4984 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "master_switch_hotswap.kicad_sch"
+			(at 153.67 51.3846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Input" input
+			(at 153.67 36.83 180)
+			(uuid "feafaf08-4fb3-4fd3-8ced-5e0b5215e94a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Enable" input
+			(at 153.67 44.45 180)
+			(uuid "3a8c2cd5-70b8-487d-9cd5-1a966178e2b8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Output" output
+			(at 191.77 40.64 0)
+			(uuid "a9b3406a-1afe-4a49-9454-907144a152bd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "power-board-proto"
+				(path "/fe9d33c9-5178-4c57-bc83-f7cec26732cb/4d1d1f5d-fb00-4e31-8e19-895f37bb6ca7"
+					(page "17")
 				)
 			)
 		)
