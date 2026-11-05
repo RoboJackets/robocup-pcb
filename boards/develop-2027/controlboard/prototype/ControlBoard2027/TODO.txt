@@ -1,0 +1,107 @@
+2027 CONTROL BOARD - OPEN WORK
+Reference: ../docs/ControlBoard2027_SPEC.md and ../docs/AUDIT_2026-10-13.md (2026-10-13). Where this list disagrees with them, they win.
+Design justification, firmware settings and open issues (C/M/m IDs): DESIGN_NOTES.md.
+
+
+1. BEFORE ORDERING
+------------------
+1.1 Powerboard agreement on J15: +5V (pin 2) sits next to +3V3 (pin 3); a GND pin between
+    them, pin 7/8 UART order, 3V3 setpoint 3.4V +/-3% and never above 3.6V. There is no
+    overvoltage protection on the board, so a 5V-on-3V3 crimp fault kills the MCU (M1, M2).
+1.2 Parts (JLCPCB assembly, stock checked 2026-11-03; DESIGN_NOTES.md §14.1 has every
+    substitution). Upload ControlBoard2027_BOM_jlcpcb.csv (161 placements, LCSC part numbers)
+    with the CPL from the jlcpcb/ plugin. ControlBoard2027_BOM_full.csv lists every line with
+    its source and the Digi-Key/Mouser alternate. Not stocked at JLCPCB, so order through
+    JLCPCB global sourcing or consign: D7-D11, J9, J13, U7 (ControlBoard2027_BOM_digikey.csv)
+    and U11 (ControlBoard2027_BOM_mouser.csv). SH1-SH6 (shunts) and SK1 (J13 socket) are loose
+    LCSC parts fitted by hand. TP1-TP21 are excluded. Before ordering:
+    - Re-check stock in the JLCPCB BOM tool (it changes daily). Tightest on 2026-11-03: U2
+      STM32H723ZGT6 195, J16/J18 TSW-103 399, shunts 928.
+    - Check the substitutes JLCPCB shows in the placement preview: F1/F3/F4 Littelfuse
+      1812L075/24DR, F5/F6 1812L125/16DR, SW1/SW2/SW4-SW6 C&K PTS636SM43LFS, SW3 Hroparts
+      DS-06BP, X1 ABM8-25.000MHZ-10-D1G-T, J3/J14/J17 generic gold headers.
+    - U11 changed from LSM6DSK320X to LSM6DSV320X (same pins and ranges): update the IMU driver
+      (WHO_AM_I, register map) and confirm vibration behaviour on the robot.
+    - Check the Adafruit 326 interface jumpers are set to I2C; keep J16 on MUX when powered
+      from USB (VBUS capacitance).
+    Order U10 as SN74AHCT125DR (SOIC-14), not the obsolete D tube option.
+1.3 J1 is now a Hirose DM3AT-SF-PEJM5 push-push socket (KiCad library footprint).
+1.4 J3 (SWD) is an unkeyed 1x5 2.54mm header: match the pin-1 marker.
+    J9 is a Samtec LSHM-110-02.5 mezzanine (same part as RadioBoard2027 J2); the radio plugs
+    straight on and hangs off the east edge. Check retention on the first assembly (M6).
+1.5 Rail budget: +5V total must stay under F5's 0.95A hold at 50C. Confirm the powerboard can
+    source >2.5A per rail into a fault so F5/F6 actually trip (M3).
+1.6 OLED: order the STEMMA QT variant (M5).
+1.7 Kicker interface: J10 is signals only (1 GND, 2 SCL, 3 SDA); the kicker is powered from the
+    powerboard. Confirm this pin order against the kicker design (M10). The radio link J9 is
+    matched to RadioBoard2027 J2; change both projects together if either moves.
+1.8 ERC reports one error: the U2 VCAP pin 71/106 power-output tie (m21). It is intended;
+    exclude it in KiCad ERC.
+
+
+2. CUBEMX / FIRMWARE
+--------------------
+Apply DESIGN_NOTES.md section 12 to the CubeMX project. The .ioc is not in this repo. Includes:
+HSE 25MHz PLL (C2), VOS0 or HPRE /2 (M16), SPI Keep IO State (M17), SPI3 CRC off 8-bit
+(M4), SPI2_SCK PA9 -> PB13 (M11), USB VBUS read on PA9 as a GPIO, PWR_SRC polled (m11),
+BOR level, LED all-off frame at start-up, LED current cap ~250mA (~100mA while PWR_SRC_5V
+is low), ESP_RST pulse + ESP-Hosted restart after PWR_SRC changes, I2C bus recovery and
+IMU re-init (m16),
+SD CMD0 recovery (M18), SD detect stubbed to "present" (no card-detect pin).
+First board: HSE drive level at R12 (m9), OLED 0x3C/0x3D (M5), I2C rise time at
+TP7/TP8 (m6), USB unplug detection, rail sag at powerboard plug/unplug with USB (M7),
+USB attach inrush on the team's laptops (m18), radio supply at the module during TX (m3),
+USB port behaviour with the radio transmitting on USB power (m22).
+
+
+3. RADIO BOARD
+--------------
+3.1 RadioBoard2027 schematic exists (../RadioBoard2027). Open items are in its TODO.txt.
+
+
+4. LAYOUT STATUS
+----------------
+Routed on 4 layers (JLC04161H-7628: L1 signal, In1 GND, In2 +3V3, B.Cu low-speed + GND).
+DRC: 0 errors, 0 unconnected, schematic parity clean; two silk-over-copper warnings remain.
+- USB D+/D-: 90R differential (0.30/0.20mm) over In1 GND.
+- SDMMC CLK/CMD/DAT0-3: 50R, all 44.45-45.15mm including R6; GND return vias at the D2/D3
+  layer changes.
+- ESP SPI (J9): SCK 52.00, MOSI 52.25, MISO 51.82, CS 51.74mm (vias 1.6mm each, resistor spans
+  counted, no stubs), R65/R66 (both 0402) at the MCU, 45° trapezoid length bumps. CS crosses the
+  others in a 4.4mm B.Cu hop over an In2 GND patch (priority above the +3V3 plane); nothing routes
+  between R65/R66 pads; R29/R31/R32 sit on their lines. With the radio board, SCK/MOSI/CS match
+  within 0.17mm end to end.
+- Known deviations: J9 (0.5mm-pitch mezzanine under the radio) has no per-pin silkscreen labels;
+  the radio lines converge to the 0.5mm pad pitch in the last 1-2mm before J9 (under 3W there),
+  and HANDSHAKE runs its last 2.6mm at 0.2mm (DESIGN_NOTES.md §2).
+- Known deviations: MISO/CS widen 0.25 -> 0.36mm about 5mm from the MCU, not at a pad (since
+  the first layout); J8 pin labels sit just above J12 (DESIGN_NOTES.md §2).
+- Silkscreen: pin/signal labels on every connector, button and the DIP (DESIGN_NOTES.md §2).
+- HSE: X1, C18, C19, R12 beside PH0/PH1.
+- Red ROUTING notes on each sheet stay the authoritative rules for any rework.
+
+
+5. MINOR / COSMETIC
+-------------------
+- One benign wire crossing on 03_USB_Debug (no junction).
+- SWCLK sheet pin is "input" on both sides (m20).
+- checktext reports pin-name/pin-number false positives on 07 (U4-U6, U12-U14 GND vs pin 3);
+  verified by render.
+- Root: MCU block "File:" field sits inside the block.
+- No LSE. PC15 is free; move USER_EXTI2 to PE1 if an LSE is needed.
+- No test points on +5V_PB, +3V3_PB (m19).
+
+
+6. MAINTENANCE
+--------------
+Close KiCad before scripted schematic edits.
+Commit or stash before any history rewrite (git filter-repo resets the working tree).
+After each edit: geometry check, text overlap check, netlist diff by net membership, ERC.
+Schematic conventions:
+  - Grid 1.27mm.
+  - Power symbols (#PWR) need project-unique refs.
+  - Deleting a power symbol can remove a junction a mid-wire pin still needs; re-check
+    the netlist after any delete.
+  - Global labels named +5V/GND/+3V3 join the power nets (used on J4-J8).
+  - +3V3_PB is only used on sheet 01 (U9 VIN1). The radio link (07) and LEDs (06) use the mux
+    outputs +3V3 / +5V.
