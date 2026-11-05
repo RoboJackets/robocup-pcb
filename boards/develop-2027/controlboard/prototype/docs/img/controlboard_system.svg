@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 600" width="980" height="600" font-family="Helvetica, Arial, sans-serif" font-size="13">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#333"/>
+    </marker>
+    <style>
+      .box{fill:#f4f6f8;stroke:#333;stroke-width:1.2}
+      .mcu{fill:#dde8f5;stroke:#1f4e79;stroke-width:2}
+      .ext{fill:#fff4e0;stroke:#a0640a;stroke-width:1.2}
+      .ln{stroke:#333;stroke-width:1.4;fill:none;marker-end:url(#a)}
+      .bi{stroke:#333;stroke-width:1.4;fill:none;marker-end:url(#a);marker-start:url(#a)}
+      .t{fill:#111}
+      .s{fill:#444;font-size:11px}
+      .h{font-weight:bold;font-size:15px;fill:#1f4e79}
+    </style>
+  </defs>
+  <rect width="980" height="600" fill="#ffffff"/>
+  <text x="490" y="26" text-anchor="middle" class="h">ControlBoard2027: MCU peripherals and devices</text>
+
+  <!-- MCU -->
+  <rect x="360" y="170" width="260" height="250" rx="6" class="mcu"/>
+  <text x="490" y="290" text-anchor="middle" class="h">U2 STM32H723ZGT6</text>
+  <text x="490" y="310" text-anchor="middle" class="s">LQFP-144, HSE 25 MHz crystal X1</text>
+  <text x="490" y="326" text-anchor="middle" class="s">no LSE</text>
+
+  <!-- Left side -->
+  <rect x="20" y="70" width="230" height="64" rx="4" class="ext"/>
+  <text x="30" y="92" class="t">J4-J8 motor modules (x5)</text>
+  <text x="30" y="110" class="s">JST PH 6, TVS U4/U5/U12/U13/U14</text>
+  <text x="30" y="126" class="s">CS: PC5 PB0 PB1 PB2 PF11</text>
+  <path d="M250,102 L360,200" class="bi"/>
+  <text x="262" y="140" class="s">SPI1 PA5/PA6/PA7</text>
+
+  <rect x="20" y="170" width="230" height="46" rx="4" class="ext"/>
+  <text x="30" y="191" class="t">J10 kicker</text>
+  <text x="30" y="207" class="s">JST PH 3, signals only</text>
+  <path d="M250,193 L360,240" class="bi"/>
+  <text x="262" y="182" class="s">I2C2 PB10/PB11</text>
+
+  <rect x="20" y="246" width="230" height="46" rx="4" class="ext"/>
+  <text x="30" y="267" class="t">J11, J12 expansion</text>
+  <text x="30" y="283" class="s">JST PH 4, fused +5V each</text>
+  <path d="M250,269 L360,280" class="bi"/>
+  <text x="262" y="262" class="s">I2C4 PF14/PF15</text>
+
+  <rect x="20" y="322" width="230" height="46" rx="4" class="ext"/>
+  <text x="30" y="343" class="t">J15 powerboard</text>
+  <text x="30" y="359" class="s">+5V, +3V3, UART (1k series)</text>
+  <path d="M250,345 L360,330" class="bi"/>
+  <text x="262" y="370" class="s">UART4 PA0 TX / PA1 RX</text>
+
+  <rect x="20" y="398" width="230" height="64" rx="4" class="box"/>
+  <text x="30" y="419" class="t">Power status</text>
+  <text x="30" y="435" class="s">U8 ST → PA2 PWR_SRC_5V</text>
+  <text x="30" y="451" class="s">U9 ST → PA3 PWR_SRC_3V3</text>
+  <path d="M250,430 L360,380" class="ln"/>
+
+  <rect x="20" y="490" width="230" height="46" rx="4" class="box"/>
+  <text x="30" y="511" class="t">VBUS divider R20/R21</text>
+  <text x="30" y="527" class="s">→ PA9 VBUS_SENSE (0.59 x VBUS)</text>
+  <path d="M250,513 L380,420" class="ln"/>
+
+  <!-- Right side -->
+  <rect x="730" y="70" width="230" height="64" rx="4" class="ext"/>
+  <text x="740" y="92" class="t">J9 → RadioBoard2027</text>
+  <text x="740" y="110" class="s">ESP32-C5, ESP-Hosted SPI slave</text>
+  <text x="740" y="126" class="s">CS PB5, HS PB6, DR PB7, RST PE1</text>
+  <path d="M620,200 L730,102" class="bi"/>
+  <text x="626" y="140" class="s">SPI3 PB3/PB4/PD6</text>
+
+  <rect x="730" y="170" width="230" height="46" rx="4" class="ext"/>
+  <text x="740" y="191" class="t">J1 microSD</text>
+  <text x="740" y="207" class="s">TVS U1, no card detect</text>
+  <path d="M620,240 L730,193" class="bi"/>
+  <text x="640" y="206" class="s">SDMMC1 4-bit</text>
+
+  <rect x="730" y="246" width="230" height="46" rx="4" class="ext"/>
+  <text x="740" y="267" class="t">J2 USB-C (device, FS)</text>
+  <text x="740" y="283" class="s">ESD U3 USBLC6</text>
+  <path d="M620,280 L730,269" class="bi"/>
+  <text x="626" y="300" class="s">OTG_HS PA11/PA12</text>
+
+  <rect x="730" y="322" width="230" height="46" rx="4" class="ext"/>
+  <text x="740" y="343" class="t">J3 SWD header</text>
+  <text x="740" y="359" class="s">VTref, SWCLK, SWDIO, GND, NRST</text>
+  <path d="M620,330 L730,345" class="bi"/>
+  <text x="632" y="356" class="s">PA13/PA14</text>
+
+  <rect x="730" y="398" width="230" height="46" rx="4" class="box"/>
+  <text x="740" y="419" class="t">SW1 RESET, SW2 BOOT0</text>
+  <text x="740" y="435" class="s">NRST, BOOT0 (R11 pull-down)</text>
+  <path d="M730,421 L620,385" class="ln"/>
+
+  <!-- Top -->
+  <rect x="300" y="50" width="170" height="64" rx="4" class="ext"/>
+  <text x="310" y="72" class="t">J13 OLED (SSD1306)</text>
+  <text x="310" y="90" class="s">Adafruit 326, 0x3C / 0x3D</text>
+  <text x="310" y="106" class="s">I2C1 PB8/PB9</text>
+  <path d="M385,114 L420,170" class="bi"/>
+
+  <rect x="510" y="50" width="170" height="64" rx="4" class="box"/>
+  <text x="520" y="72" class="t">U11 LSM6DSV320X</text>
+  <text x="520" y="90" class="s">I2C5 PF0/PF1, 0x6A</text>
+  <text x="520" y="106" class="s">INT1→PF3, INT2→PF2</text>
+  <path d="M595,114 L560,170" class="bi"/>
+
+  <!-- Bottom -->
+  <rect x="300" y="480" width="190" height="80" rx="4" class="box"/>
+  <text x="310" y="501" class="t">DotStars D7→D11</text>
+  <text x="310" y="518" class="s">via U10 74AHCT125 (3.3→5 V)</text>
+  <text x="310" y="534" class="s">SPI2 TX only</text>
+  <text x="310" y="550" class="s">SCK PB13, MOSI PB15</text>
+  <path d="M440,420 L410,480" class="ln"/>
+
+  <rect x="510" y="480" width="200" height="80" rx="4" class="box"/>
+  <text x="520" y="501" class="t">User input</text>
+  <text x="520" y="518" class="s">SW3 DIP: PF7-PF10, PC0, PC1</text>
+  <text x="520" y="534" class="s">SW4-SW6: PE4, PC13, PC14</text>
+  <text x="520" y="550" class="s">all active low</text>
+  <path d="M600,480 L560,420" class="ln"/>
+
+  <rect x="20" y="560" width="14" height="10" class="ext"/><text x="40" y="570" class="s">off-board / connector</text>
+  <rect x="180" y="560" width="14" height="10" class="box"/><text x="200" y="570" class="s">on-board circuit</text>
+</svg>
