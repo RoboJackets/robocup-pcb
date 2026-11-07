@@ -1,0 +1,78 @@
+(version 1)
+
+# ControlBoard2027_C, JLC06161H-3313E (L1 / L6 over 0.0994 mm 3313 prepreg to L2 / L5 GND; L4 0.1 mm over L5 GND).
+# 50 ohm: 0.15 mm on L1 / L6, 0.12 mm on L4. USB 90 ohm diff: 0.14 / 0.15 mm on L1 (DESIGN_NOTES §12.2-12.3).
+
+# Radio link (U2 -> J9): runs on L4 at 0.12 mm (Fast bus width L4 rule); this rule covers its short outer-layer
+# escapes at the LQFP and J9 (50 ohm 0.15 mm, 0.5 mm pitch neck at the pads).
+(rule "Radio link 50 ohm width"
+	(layer outer)
+	(condition "A.Type == 'Track' && (A.NetName == '/MCU/ESP_SPI_*' || A.NetName == '/MCU/ESP_MOSI_MCU' || A.NetName == 'Net-(U2-PB3_SWO)' || A.NetName == '/MCU/ESP_HANDSHAKE' || A.NetName == '/MCU/ESP_DATA_READY')")
+	(constraint track_width (min 0.14mm) (opt 0.15mm) (max 0.16mm)))
+
+# Same-layer pours stay 2W away so the lines stay microstrip; outer layers only (keeps inner antipads normal).
+(rule "Radio link pour clearance"
+	(layer outer)
+	(condition "(A.NetName == '/MCU/ESP_SPI_*' || A.NetName == '/MCU/ESP_MOSI_MCU' || A.NetName == 'Net-(U2-PB3_SWO)' || A.NetName == '/MCU/ESP_HANDSHAKE' || A.NetName == '/MCU/ESP_DATA_READY') && B.Type == 'Zone'")
+	(constraint clearance (min 0.3mm)))
+
+# USB FS pair: 0.14 mm lines, 0.15 mm gap on L1 (90 ohm diff); the pair's own gap is below the 0.2 mm class clearance.
+(rule "USB width"
+	(layer outer)
+	(condition "A.Type == 'Track' && A.NetClass == 'USB_90R'")
+	(constraint track_width (min 0.13mm) (opt 0.14mm) (max 0.15mm)))
+(rule "USB intra-pair gap"
+	(condition "A.NetClass == 'USB_90R' && B.NetClass == 'USB_90R'")
+	(constraint clearance (min 0.14mm)))
+(rule "USB pour clearance"
+	(layer outer)
+	(condition "A.NetClass == 'USB_90R' && B.Type == 'Zone'")
+	(constraint clearance (min 0.3mm)))
+
+# SD, LED, motor and dribbler buses (50 ohm): 0.15 mm on L1 / L6, 0.12 mm on L4 (0.1 mm over L5 GND).
+(rule "Fast bus width outer"
+	(layer outer)
+	(condition "A.Type == 'Track' && (A.NetClass == 'SIG50' || A.NetName == '/MCU/MOTOR_R_SPI_*' || A.NetName == '/MCU/DRIB_SPI_*' || A.NetName == '/MCU/MOTOR?_SPI_CS' || A.NetName == '/MCU/DRIBBLER_SPI_CS' || A.NetName == 'Net-(U2-PB13)' || A.NetName == 'Net-(U2-PB15)' || A.NetName == 'Net-(U2-PE2)' || A.NetName == 'Net-(U2-PE6)')")
+	(constraint track_width (min 0.14mm) (opt 0.15mm) (max 0.16mm)))
+(rule "Fast bus width L4"
+	(layer "In3.Cu")
+	(condition "A.Type == 'Track' && (A.NetClass == 'SIG50' || A.NetName == '/MCU/MOTOR_R_SPI_*' || A.NetName == '/MCU/DRIB_SPI_*' || A.NetName == '/MCU/MOTOR?_SPI_CS' || A.NetName == '/MCU/DRIBBLER_SPI_CS')")
+	(constraint track_width (min 0.11mm) (opt 0.12mm) (max 0.13mm)))
+(rule "Fast bus pour clearance"
+	(layer outer)
+	(condition "(A.NetClass == 'SIG50' || A.NetName == '/MCU/MOTOR_R_SPI_*' || A.NetName == '/MCU/DRIB_SPI_*' || A.NetName == '/MCU/MOTOR?_SPI_CS' || A.NetName == '/MCU/DRIBBLER_SPI_CS') && B.Type == 'Zone'")
+	(constraint clearance (min 0.3mm)))
+
+# HSE crystal loop keep-out (rule area XTAL): no other net's tracks or vias on L1 / L4 / L6 under or beside
+# the crystal, its load caps and R12. GND (the crystal's own pads, guard and plane vias) and the three oscillator nets only.
+(rule "XTAL keep-out tracks"
+	(condition "A.intersectsArea('XTAL') && A.Type == 'Track' && A.NetName != 'GND' && A.NetName != 'Net-(U2-PH0)' && A.NetName != 'Net-(U2-PH1)' && A.NetName != 'Net-(C19-Pad1)'")
+	(constraint disallow track))
+(rule "XTAL keep-out vias"
+	(condition "A.intersectsArea('XTAL') && A.Type == 'Via' && A.NetName != 'GND'")
+	(constraint disallow via))
+
+# J13 is the raised OLED module (SSD1306 128x64 module on a 1x4 socket and M2 standoffs). Its courtyard is the module outline; the
+# low service-edge parts under it (J1, J2 and its holes, U3, U7, U12, D1, F1, C30-C32) are intended and listed by
+# reference, so any other part placed under the module by mistake is still an error. Reported as
+# warnings (not hidden), every other courtyard overlap stays an error.
+(rule "J13 OLED module over low parts"
+	(condition "(A.Reference == 'J13' && (B.Reference == 'J1' || B.Reference == 'J2' || B.Reference == 'U3' || B.Reference == 'U7' || B.Reference == 'U12' || B.Reference == 'D1' || B.Reference == 'F1' || B.Reference == 'C30' || B.Reference == 'C31' || B.Reference == 'C32')) || (B.Reference == 'J13' && (A.Reference == 'J1' || A.Reference == 'J2' || A.Reference == 'U3' || A.Reference == 'U7' || A.Reference == 'U12' || A.Reference == 'D1' || A.Reference == 'F1' || A.Reference == 'C30' || A.Reference == 'C31' || A.Reference == 'C32'))")
+	(constraint courtyard_clearance (min 0mm))
+	(severity warning))
+
+# Outer GND pours: SMD GND pads connect solid (each also has its own via to L2 / L5); thermal spokes on 0.3-0.5 mm
+# ESD / LED pads were starved by the adjacent signal pads.
+(rule "Outer GND pour: SMD GND pads solid"
+	(layer outer)
+	(condition "A.Type == 'Pad' && A.Pad_Type == 'SMD' && A.NetName == 'GND'")
+	(constraint zone_connection solid))
+
+# J9 (radio mezzanine) sits at the shared radio interface position (39.70, 6.03), fixed by both 30x40 radio variants.
+# Its KiCad courtyard (which includes the 1.5 mm shield pads) reaches 0.02 mm into the U2 LQFP courtyard margin at
+# the U2 north-west corner; the parts' bodies and copper are clear (Samtec envelope ends at y 11.11 + J9 origin
+# offset, U2 body starts at y 12.5). Reported as a warning, not hidden.
+(rule "J9 radio mezzanine vs U2 courtyard margin"
+	(condition "(A.Reference == 'J9' && B.Reference == 'U2') || (A.Reference == 'U2' && B.Reference == 'J9')")
+	(constraint courtyard_clearance (min 0mm))
+	(severity warning))

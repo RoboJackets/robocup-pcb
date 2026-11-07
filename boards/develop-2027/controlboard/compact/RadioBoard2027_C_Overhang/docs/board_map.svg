@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 760" font-family="Helvetica, Arial, sans-serif" font-size="13">
+  <title>RadioBoard2027_C_Overhang: what a firmware engineer touches, and the link pin map</title>
+  <rect width="1060" height="760" fill="#ffffff"/>
+  <text x="20" y="28" font-size="17" font-weight="bold">RadioBoard2027_C_Overhang (30 x 40 mm), top view</text>
+  <text x="20" y="48" fill="#555">1 mm = 10 px. North (up) is the robot front; the controlboard J9 is under J2 (radio underside).</text>
+  <!-- board outline 30 x 40 mm at (40,130), scale 10 px / mm -->
+  <g transform="translate(40,130)">
+    <!-- WROOM-1 antenna overhang (fallback build only) -->
+    <rect x="101" y="-54" width="199" height="65" fill="#c9e3f5" stroke="#4a7fa8" stroke-dasharray="5,3"/>
+    <text x="200" y="-30" text-anchor="middle" font-size="11">WROOM-1 antenna (fallback build):</text>
+    <text x="200" y="-16" text-anchor="middle" font-size="11">sticks out 5.45 mm past the north edge</text>
+    <rect x="0" y="0" width="300" height="400" fill="#2f5d3a" stroke="#000" stroke-width="2"/>
+    <rect x="101" y="0" width="199" height="11" fill="#c9e3f5" stroke="#4a7fa8" stroke-dasharray="5,3"/>
+    <!-- module (1U body y 0.9 - 22.1) -->
+    <rect x="109" y="9" width="180" height="212" fill="#d9d9d9" stroke="#333"/>
+    <text x="198" y="120" text-anchor="middle" font-weight="bold">U1</text>
+    <text x="198" y="138" text-anchor="middle" font-size="11">ESP32-C5-WROOM-1U</text>
+    <circle cx="261" cy="33" r="9" fill="#f2c94c" stroke="#333"/>
+    <text x="261" y="56" text-anchor="middle" font-size="10">U.FL</text>
+    <!-- module west pads used by the link (x 10.6-12.1) -->
+    <g fill="#f2c94c" stroke="#333" stroke-width="0.5">
+      <rect x="106" y="47" width="15" height="9"/><rect x="106" y="60" width="15" height="9"/>
+      <rect x="106" y="85" width="15" height="9"/><rect x="106" y="98" width="15" height="9"/>
+      <rect x="106" y="110" width="15" height="9"/><rect x="106" y="123" width="15" height="9"/>
+      <rect x="106" y="161" width="15" height="9"/>
+    </g>
+    <!-- J2 bottom -->
+    <rect x="11" y="3" width="52" height="115" fill="none" stroke="#f2994a" stroke-width="2" stroke-dasharray="6,3"/>
+    <text x="37" y="62" text-anchor="middle" fill="#fff" font-size="11">J2</text>
+    <text x="37" y="76" text-anchor="middle" fill="#fff" font-size="9">(bottom)</text>
+    <!-- U5 / U6 link ESD, bottom -->
+    <rect x="72" y="30" width="13" height="25" fill="none" stroke="#f2994a" stroke-width="1.5" stroke-dasharray="3,2"/>
+    <rect x="72" y="61" width="13" height="25" fill="none" stroke="#f2994a" stroke-width="1.5" stroke-dasharray="3,2"/>
+    <!-- J1 USB-C, west edge -->
+    <rect x="-5" y="237" width="90" height="90" fill="#bbb" stroke="#333"/>
+    <text x="40" y="286" text-anchor="middle" font-size="11">J1 USB-C</text>
+    <!-- LEDs -->
+    <rect x="190" y="245" width="20" height="10" fill="#6fcf97"/>
+    <rect x="230" y="245" width="20" height="10" fill="#eb5757"/>
+    <!-- SW1 RESET, SW2 BOOT -->
+    <rect x="138" y="290" width="62" height="60" fill="#bbb" stroke="#333"/><circle cx="169" cy="320" r="14" fill="#888"/>
+    <rect x="225" y="290" width="62" height="60" fill="#bbb" stroke="#333"/><circle cx="256" cy="320" r="14" fill="#888"/>
+    <!-- holes -->
+    <circle cx="140" cy="375" r="11" fill="#fff" stroke="#000"/>
+    <circle cx="274" cy="375" r="11" fill="#fff" stroke="#000"/>
+    <!-- test points (bottom) -->
+    <circle cx="269" cy="136" r="5" fill="none" stroke="#f2994a" stroke-width="2"/>
+    <circle cx="269" cy="156" r="5" fill="none" stroke="#f2994a" stroke-width="2"/>
+    <circle cx="269" cy="176" r="5" fill="none" stroke="#f2994a" stroke-width="2"/>
+  </g>
+  <!-- callouts -->
+  <g font-size="12">
+    <polyline points="80,133 80,72 370,72" fill="none" stroke="#333"/><text x="376" y="76"><tspan font-weight="bold">J2</tspan> (underside): link to the controlboard J9 (SPI, HANDSHAKE, DATA_READY, EN, +3V3). Pin map below.</text>
+    <line x1="301" y1="163" x2="370" y2="104" stroke="#333"/><text x="376" y="108"><tspan font-weight="bold">U.FL</tspan>: 1U build, external antenna (ANT1); the cable leaves north over the edge</text>
+    <line x1="314" y1="286" x2="370" y2="136" stroke="#333"/><text x="376" y="140"><tspan font-weight="bold">Underside test pads</tspan> (under U1): TX (GPIO11), RX (GPIO12), GND; UART0, 115200 8N1</text>
+    <text x="376" y="156" fill="#555">Reachable only with the radio unmounted from the controlboard.</text>
+    <line x1="240" y1="380" x2="370" y2="188" stroke="#333"/><text x="376" y="192"><tspan font-weight="bold">STAT</tspan> (green D1): firmware status LED on GPIO8 (module pad 10), active high</text>
+    <line x1="280" y1="380" x2="370" y2="212" stroke="#333"/><text x="376" y="216"><tspan font-weight="bold">PWR</tspan> (red D3): +3V3 present</text>
+    <line x1="125" y1="420" x2="370" y2="240" stroke="#333"/><text x="376" y="244"><tspan font-weight="bold">USB</tspan> (J1, west edge): native USB Serial/JTAG, Full-Speed; flashing and logs</text>
+    <text x="376" y="260" fill="#555">Also powers the board when no controlboard is present (USB LDO, priority mux, GPIO9 = 0).</text>
+    <line x1="209" y1="450" x2="370" y2="284" stroke="#333"/><text x="376" y="288"><tspan font-weight="bold">RESET</tspan> (SW1): pulls EN low; the controlboard resets the module through J2-19 (EN)</text>
+    <line x1="296" y1="450" x2="370" y2="308" stroke="#333"/><text x="376" y="312"><tspan font-weight="bold">BOOT</tspan> (SW2): hold while pressing RESET for the ROM download mode (GPIO28)</text>
+  </g>
+  <!-- legend -->
+  <g transform="translate(376,340)" font-size="12">
+    <rect x="0" y="-10" width="14" height="10" fill="none" stroke="#f2994a" stroke-width="2" stroke-dasharray="4,2"/><text x="20" y="0">part on the underside (J2, U5 / U6 link ESD, test pads)</text>
+    <rect x="0" y="10" width="14" height="10" fill="#f2c94c" stroke="#333"/><text x="20" y="20">module pads used by the link (pads 3, 4, 6, 7, 8, 9, 12)</text>
+    <circle cx="7" cy="35" r="6" fill="#fff" stroke="#000"/><text x="20" y="40">M2 standoff holes H1 / H2</text>
+  </g>
+  <!-- link pin map -->
+  <g transform="translate(20,560)" font-size="12">
+    <text x="0" y="0" font-size="14" font-weight="bold">Link pin map (signal row of J2, north to south = module pad order since 2026-11-07)</text>
+    <g transform="translate(0,14)">
+      <rect x="0" y="0" width="1020" height="20" fill="#eee"/>
+      <text x="6" y="14" font-weight="bold">Signal</text><text x="150" y="14" font-weight="bold">Radio J2 pin</text>
+      <text x="270" y="14" font-weight="bold">ESP32-C5 GPIO (module pad)</text><text x="470" y="14" font-weight="bold">Controlboard J9 pin</text>
+      <text x="620" y="14" font-weight="bold">STM32 pin</text><text x="720" y="14" font-weight="bold">Note</text>
+      <g transform="translate(0,20)">
+        <text x="6" y="15">EN (reset)</text><text x="150" y="15">19</text><text x="270" y="15">EN (pad 3)</text><text x="470" y="15">20</text><text x="620" y="15">PE1</text><text x="720" y="15">active low, R2 470 ohm, RC 10k / 1 uF</text>
+        <text x="6" y="33">MISO</text><text x="150" y="33">15</text><text x="270" y="33">GPIO2 (pad 4)</text><text x="470" y="33">16</text><text x="620" y="33">PB4</text><text x="720" y="33">R4 33 ohm at the module (driver)</text>
+        <text x="6" y="51">DATA_READY</text><text x="150" y="51">11</text><text x="270" y="51">GPIO0 (pad 6)</text><text x="470" y="51">12</text><text x="620" y="51">PB6</text><text x="720" y="51">PB6 / PB7 swapped on the CB with this order</text>
+        <text x="6" y="69">HANDSHAKE</text><text x="150" y="69">9</text><text x="270" y="69">GPIO1 (pad 7)</text><text x="470" y="69">10</text><text x="620" y="69">PB7</text><text x="720" y="69">ESP-Hosted status line</text>
+        <text x="6" y="87">SCK</text><text x="150" y="87">7</text><text x="270" y="87">GPIO6 (pad 8)</text><text x="470" y="87">8</text><text x="620" y="87">PB3</text><text x="720" y="87">SPI mode 3, up to 40 MHz</text>
+        <text x="6" y="105">MOSI</text><text x="150" y="105">3</text><text x="270" y="105">GPIO7 (pad 9)</text><text x="470" y="105">4</text><text x="620" y="105">PB5</text><text x="720" y="105"></text>
+        <text x="6" y="123">CS</text><text x="150" y="123">1</text><text x="270" y="123">GPIO10 (pad 12)</text><text x="470" y="123">2</text><text x="620" y="123">PG15</text><text x="720" y="123">CB pull-up</text>
+        <text x="6" y="145" fill="#555">Other J2 pins: 16 / 18 / 20 +3V3_HOST (CB +3V3 on J9 15 / 17 / 19), all others GND. Radio pin p meets J9 pin p+1 (odd) / p-1 (even).</text>
+        <text x="6" y="163" fill="#555">SCK, MOSI, MISO and CS are length-matched to 14.08 mm on this board (J2 pad to module pad); the controlboard matches its own half.</text>
+      </g>
+    </g>
+  </g>
+</svg>

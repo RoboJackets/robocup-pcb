@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1270 790" font-family="Helvetica, Arial, sans-serif" font-size="12">
+<title>Compact set board-to-board interface: ControlBoard2027_C with the 30 x 40 radio, J9 / J2 pin map and stack</title>
+<rect width="1270" height="790" fill="#ffffff"/>
+<text x="20" y="28" font-size="17" font-weight="bold">Compact set interface: ControlBoard2027_C (120 x 60 mm) with a 30 x 40 mm radio on J9, top view</text>
+<text x="20" y="48" fill="#555">mm from the controlboard outline top-left corner, x right, y down; robot front at the top; 1 mm = 6 px.</text>
+<text x="20" y="66" fill="#555">Grey boxes are connector courtyards; the red dot is pin 1. Cables are straight through (pin n to pin n).</text>
+<rect x="30.0" y="120.0" width="720.0" height="360.0" fill="#2f5d3a" stroke="#000" stroke-width="2"/>
+<text x="210.0" y="111.0" text-anchor="middle" font-size="11" fill="#333">FRONT (y = 0)</text>
+<text x="390.0" y="498.0" text-anchor="middle" font-size="11" fill="#333">BACK (y = 60)</text>
+<circle cx="51.0" cy="141.0" r="9.600000000000001" fill="#fff" stroke="#333"/>
+<circle cx="729.0" cy="141.0" r="9.600000000000001" fill="#fff" stroke="#333"/>
+<circle cx="51.0" cy="459.0" r="9.600000000000001" fill="#fff" stroke="#333"/>
+<circle cx="729.0" cy="459.0" r="9.600000000000001" fill="#fff" stroke="#333"/>
+<rect x="282.0" y="195.0" width="120.0" height="120.0" fill="#555" stroke="#222"/>
+<text x="342.0" y="261.0" text-anchor="middle" fill="#fff" font-size="11">U2 STM32H723</text>
+<rect x="306.6" y="81.6" width="120.0" height="45.0" fill="#c9e3f5" fill-opacity="0.7" stroke="#4a7fa8" stroke-dasharray="5,3"/>
+<text x="432.0" y="100.8" font-size="10" fill="#2b5d84">Overhang variant, WROOM-1 build: body to y -5.45, keep-out y -6.4 to 1.1</text>
+<text x="432.0" y="112.8" font-size="10" fill="#2b5d84">(past the controlboard front edge)</text>
+<rect x="246.0" y="120.0" width="180.0" height="240.0" fill="#f2c94c" fill-opacity="0.18" stroke="#f2c94c" stroke-width="2" stroke-dasharray="7,4"/>
+<rect x="306.6" y="120.0" width="120.0" height="45.0" fill="none" stroke="#c9e3f5" stroke-width="1.2" stroke-dasharray="2,2"/>
+<text x="366.6" y="146.4" text-anchor="middle" font-size="9" fill="#c9e3f5">Inboard, WROOM-1: antenna over the CB</text>
+<text x="336.0" y="373.20000000000005" text-anchor="middle" font-size="10" fill="#f2c94c">radio outline x 36-66, y 0-40</text>
+<rect x="253.20000000000002" y="125.76" width="30.0" height="60.900000000000006" fill="#f2994a" stroke="#333"/>
+<text x="249.60000000000002" y="205.2" font-size="10" fill="#fff">J9 (39.70, 6.03)</text>
+<circle cx="330.0" cy="345.0" r="6.6000000000000005" fill="#fff" stroke="#f2c94c" stroke-width="2"/>
+<text x="330.0" y="326.4" text-anchor="middle" font-size="9" fill="#fff">HR1 (50.0, 37.5)</text>
+<circle cx="410.4" cy="345.0" r="6.6000000000000005" fill="#fff" stroke="#f2c94c" stroke-width="2"/>
+<text x="410.4" y="326.4" text-anchor="middle" font-size="9" fill="#fff">HR2 (63.4, 37.5)</text>
+<rect x="77.88" y="120.3" width="72.24" height="39.0" fill="#bbb" fill-opacity="0.85" stroke="#333"/>
+<circle cx="132.75" cy="150.9" r="3" fill="#d62728"/>
+<text x="114.0" y="180.0" text-anchor="middle" font-size="10" fill="#fff">J4 MOTOR 0 (FL)</text>
+<rect x="545.8199999999999" y="120.3" width="72.36000000000001" height="39.0" fill="#bbb" fill-opacity="0.85" stroke="#333"/>
+<circle cx="600.75" cy="150.9" r="3" fill="#d62728"/>
+<text x="582.0" y="180.0" text-anchor="middle" font-size="10" fill="#fff">J7 MOTOR 3 (FR)</text>
+<rect x="77.88" y="440.76" width="72.24" height="38.94000000000001" fill="#bbb" fill-opacity="0.85" stroke="#333"/>
+<circle cx="95.25" cy="449.1" r="3" fill="#d62728"/>
+<text x="114.0" y="430.79999999999995" text-anchor="middle" font-size="10" fill="#fff">J5 MOTOR 1 (BL)</text>
+<rect x="617.8199999999999" y="440.76" width="72.36000000000001" height="38.94000000000001" fill="#bbb" fill-opacity="0.85" stroke="#333"/>
+<circle cx="635.25" cy="449.1" r="3" fill="#d62728"/>
+<text x="654.0" y="430.79999999999995" text-anchor="middle" font-size="10" fill="#fff">J6 MOTOR 2 (BR)</text>
+<rect x="30.3" y="194.88" width="39.0" height="72.24" fill="#bbb" fill-opacity="0.85" stroke="#333"/>
+<circle cx="60.900000000000006" cy="212.25" r="3" fill="#d62728"/>
+<text x="74.4" y="234.0" text-anchor="start" font-size="10" fill="#fff">J8 DRIBBLER</text>
+<rect x="174.12" y="439.26" width="87.30000000000001" height="38.94000000000001" fill="#bbb" fill-opacity="0.85" stroke="#333"/>
+<circle cx="191.55" cy="447.6" r="3" fill="#d62728"/>
+<text x="217.8" y="465.6" text-anchor="middle" font-size="9" fill="#111">J11 EXP 1</text>
+<rect x="277.92" y="439.26" width="87.29999999999998" height="38.94000000000001" fill="#bbb" fill-opacity="0.85" stroke="#333"/>
+<circle cx="295.35" cy="447.6" r="3" fill="#d62728"/>
+<text x="321.6" y="465.6" text-anchor="middle" font-size="9" fill="#111">J12 EXP 2</text>
+<rect x="374.1" y="439.26" width="57.300000000000026" height="38.94000000000001" fill="#bbb" fill-opacity="0.85" stroke="#333"/>
+<circle cx="391.5" cy="447.6" r="3" fill="#d62728"/>
+<text x="402.6" y="465.6" text-anchor="middle" font-size="9" fill="#111">J10 KICKER</text>
+<rect x="431.46" y="429.9" width="101.94000000000005" height="50.10000000000001" fill="#bbb" fill-opacity="0.85" stroke="#333"/>
+<circle cx="446.40000000000003" cy="441.29999999999995" r="3" fill="#d62728"/>
+<text x="482.40000000000003" y="465.6" text-anchor="middle" font-size="9" fill="#111">J15 POWER</text>
+<rect x="501.0" y="377.76" width="60.0" height="52.02000000000001" fill="#bbb" fill-opacity="0.85" stroke="#333"/>
+<circle cx="508.14" cy="415.5" r="3" fill="#d62728"/>
+<text x="531.0" y="396.0" text-anchor="middle" font-size="9" fill="#111">J3 SWD</text>
+<rect x="643.4399999999999" y="162.42000000000002" width="106.56000000000003" height="94.80000000000001" fill="#bbb" fill-opacity="0.85" stroke="#333"/>
+<circle cx="650.25" cy="193.35" r="3" fill="#d62728"/>
+<text x="696.5999999999999" y="216.0" text-anchor="middle" font-size="9" fill="#111">J1 microSD</text>
+<rect x="696.0" y="301.56" width="54.0" height="80.88" fill="#bbb" fill-opacity="0.85" stroke="#333"/>
+<text x="723.0" y="344.4" text-anchor="middle" font-size="9" fill="#111">J2 USB-C</text>
+<rect x="577.86" y="255.3" width="170.28" height="173.39999999999998" fill="none" stroke="#9fe0c0" stroke-dasharray="6,4"/>
+<text x="663.0" y="411.6" text-anchor="middle" font-size="10" fill="#9fe0c0">J13 OLED module (raised)</text>
+<rect x="414.41999999999996" y="376.56" width="56.099999999999994" height="24.48" fill="#888" stroke="#333"/>
+<text x="442.20000000000005" y="392.4" text-anchor="middle" font-size="9" fill="#fff">RESET SW1</text>
+<rect x="414.41999999999996" y="403.56" width="56.099999999999994" height="24.48" fill="#888" stroke="#333"/>
+<text x="442.20000000000005" y="419.4" text-anchor="middle" font-size="9" fill="#fff">BOOT SW2</text>
+<text x="800" y="100" font-size="14" font-weight="bold">J9 (controlboard top) seen from above</text>
+<text x="800" y="118" font-size="11" fill="#555">Rows at x 37.85 (odd) and 41.55 (even), 0.5 mm pitch.</text>
+<text x="800" y="134" font-size="11" fill="#555">(J2.n) = radio J2 pin that meets it: even p - 1, odd p + 1.</text>
+<rect x="901" y="165" width="18" height="18" fill="#d62728" stroke="#333"/>
+<text x="910" y="178" text-anchor="middle" font-size="9" fill="#fff">19</text>
+<text x="898" y="178" text-anchor="end" font-size="11">+3V3 <tspan fill="#888">(J2.20)</tspan></text>
+<rect x="931" y="165" width="18" height="18" fill="#1f5fa8" stroke="#333"/>
+<text x="940" y="178" text-anchor="middle" font-size="9" fill="#fff">20</text>
+<text x="952" y="178" text-anchor="start" font-size="11">ESP_RST <tspan fill="#888">(J2.19)</tspan></text>
+<rect x="901" y="193" width="18" height="18" fill="#d62728" stroke="#333"/>
+<text x="910" y="206" text-anchor="middle" font-size="9" fill="#fff">17</text>
+<text x="898" y="206" text-anchor="end" font-size="11">+3V3 <tspan fill="#888">(J2.18)</tspan></text>
+<rect x="931" y="193" width="18" height="18" fill="#777" stroke="#333"/>
+<text x="940" y="206" text-anchor="middle" font-size="9" fill="#fff">18</text>
+<text x="952" y="206" text-anchor="start" font-size="11">GND <tspan fill="#888">(J2.17)</tspan></text>
+<rect x="901" y="221" width="18" height="18" fill="#d62728" stroke="#333"/>
+<text x="910" y="234" text-anchor="middle" font-size="9" fill="#fff">15</text>
+<text x="898" y="234" text-anchor="end" font-size="11">+3V3 <tspan fill="#888">(J2.16)</tspan></text>
+<rect x="931" y="221" width="18" height="18" fill="#1f5fa8" stroke="#333"/>
+<text x="940" y="234" text-anchor="middle" font-size="9" fill="#fff">16</text>
+<text x="952" y="234" text-anchor="start" font-size="11">ESP_SPI_MISO <tspan fill="#888">(J2.15)</tspan></text>
+<rect x="901" y="249" width="18" height="18" fill="#777" stroke="#333"/>
+<text x="910" y="262" text-anchor="middle" font-size="9" fill="#fff">13</text>
+<text x="898" y="262" text-anchor="end" font-size="11">GND <tspan fill="#888">(J2.14)</tspan></text>
+<rect x="931" y="249" width="18" height="18" fill="#777" stroke="#333"/>
+<text x="940" y="262" text-anchor="middle" font-size="9" fill="#fff">14</text>
+<text x="952" y="262" text-anchor="start" font-size="11">GND <tspan fill="#888">(J2.13)</tspan></text>
+<rect x="901" y="277" width="18" height="18" fill="#777" stroke="#333"/>
+<text x="910" y="290" text-anchor="middle" font-size="9" fill="#fff">11</text>
+<text x="898" y="290" text-anchor="end" font-size="11">GND <tspan fill="#888">(J2.12)</tspan></text>
+<rect x="931" y="277" width="18" height="18" fill="#1f5fa8" stroke="#333"/>
+<text x="940" y="290" text-anchor="middle" font-size="9" fill="#fff">12</text>
+<text x="952" y="290" text-anchor="start" font-size="11">ESP_DATA_READY <tspan fill="#888">(J2.11)</tspan></text>
+<rect x="901" y="305" width="18" height="18" fill="#777" stroke="#333"/>
+<text x="910" y="318" text-anchor="middle" font-size="9" fill="#fff">9</text>
+<text x="898" y="318" text-anchor="end" font-size="11">GND <tspan fill="#888">(J2.10)</tspan></text>
+<rect x="931" y="305" width="18" height="18" fill="#1f5fa8" stroke="#333"/>
+<text x="940" y="318" text-anchor="middle" font-size="9" fill="#fff">10</text>
+<text x="952" y="318" text-anchor="start" font-size="11">ESP_HANDSHAKE <tspan fill="#888">(J2.9)</tspan></text>
+<rect x="901" y="333" width="18" height="18" fill="#777" stroke="#333"/>
+<text x="910" y="346" text-anchor="middle" font-size="9" fill="#fff">7</text>
+<text x="898" y="346" text-anchor="end" font-size="11">GND <tspan fill="#888">(J2.8)</tspan></text>
+<rect x="931" y="333" width="18" height="18" fill="#1f5fa8" stroke="#333"/>
+<text x="940" y="346" text-anchor="middle" font-size="9" fill="#fff">8</text>
+<text x="952" y="346" text-anchor="start" font-size="11">ESP_SPI_SCK <tspan fill="#888">(J2.7)</tspan></text>
+<rect x="901" y="361" width="18" height="18" fill="#777" stroke="#333"/>
+<text x="910" y="374" text-anchor="middle" font-size="9" fill="#fff">5</text>
+<text x="898" y="374" text-anchor="end" font-size="11">GND <tspan fill="#888">(J2.6)</tspan></text>
+<rect x="931" y="361" width="18" height="18" fill="#777" stroke="#333"/>
+<text x="940" y="374" text-anchor="middle" font-size="9" fill="#fff">6</text>
+<text x="952" y="374" text-anchor="start" font-size="11">GND <tspan fill="#888">(J2.5)</tspan></text>
+<rect x="901" y="389" width="18" height="18" fill="#777" stroke="#333"/>
+<text x="910" y="402" text-anchor="middle" font-size="9" fill="#fff">3</text>
+<text x="898" y="402" text-anchor="end" font-size="11">GND <tspan fill="#888">(J2.4)</tspan></text>
+<rect x="931" y="389" width="18" height="18" fill="#1f5fa8" stroke="#333"/>
+<text x="940" y="402" text-anchor="middle" font-size="9" fill="#fff">4</text>
+<text x="952" y="402" text-anchor="start" font-size="11">ESP_SPI_MOSI <tspan fill="#888">(J2.3)</tspan></text>
+<rect x="901" y="417" width="18" height="18" fill="#777" stroke="#333"/>
+<text x="910" y="430" text-anchor="middle" font-size="9" fill="#fff">1</text>
+<text x="898" y="430" text-anchor="end" font-size="11">GND <tspan fill="#888">(J2.2)</tspan></text>
+<rect x="931" y="417" width="18" height="18" fill="#1f5fa8" stroke="#333"/>
+<text x="940" y="430" text-anchor="middle" font-size="9" fill="#fff">2</text>
+<text x="952" y="430" text-anchor="start" font-size="11">ESP_SPI_CS <tspan fill="#888">(J2.1)</tspan></text>
+<text x="925" y="154" text-anchor="middle" font-size="10" fill="#555">north, y 3.78</text>
+<text x="925" y="454" text-anchor="middle" font-size="10" fill="#555">south, y 8.28</text>
+<text x="780" y="478" font-size="11">Shield pins (40.85, 1.06) and (40.85, 11.01): GND, paste-in-hole.</text>
+<text x="780" y="494" font-size="11">STM32H723: CS PG15, MOSI PB5, SCK PB3, HS PB7, DR PB6, MISO PB4, RST PE1.</text>
+<text x="780" y="510" font-size="11">ESP32-C5: CS GPIO10, MOSI GPIO7, SCK GPIO6, HS GPIO1, DR GPIO0, MISO GPIO2, EN.</text>
+<text x="40" y="572" font-size="14" font-weight="bold">Stack, side view (vertical scale 1 mm = 12 px; horizontal not to scale)</text>
+<rect x="40" y="669.2" width="560" height="19.200000000000003" fill="#2f5d3a"/>
+<text x="610" y="684.8" font-size="11">controlboard, 1.6 mm, 6 layers</text>
+<rect x="160" y="590" width="300" height="19.200000000000003" fill="#2f5d3a"/>
+<text x="470" y="604.4" font-size="11">radio, 1.6 mm, 4 layers (module on top)</text>
+<rect x="170" y="609.2" width="40" height="60" fill="#f2994a" stroke="#333"/>
+<text x="190" y="630.8" text-anchor="middle" font-size="10">J2</text>
+<text x="190" y="659.6" text-anchor="middle" font-size="10">J9</text>
+<rect x="340" y="609.2" width="14" height="60" fill="#c0c0c0" stroke="#333"/>
+<rect x="435" y="609.2" width="14" height="60" fill="#c0c0c0" stroke="#333"/>
+<text x="480" y="642.8" font-size="10">M2 x 5 mm standoffs at HR1 / HR2</text>
+<rect x="230" y="650.0" width="95" height="19.200000000000003" fill="#555"/>
+<text x="277" y="664.4" text-anchor="middle" font-size="9" fill="#fff">U2 1.6 mm</text>
+<rect x="280" y="609.2" width="50" height="21.6" fill="#888"/>
+<text x="305" y="624.8" text-anchor="middle" font-size="9" fill="#fff">U4 1.8 mm</text>
+<line x1="140" y1="609.2" x2="140" y2="669.2" stroke="#000"/>
+<text x="134" y="642.8" text-anchor="end" font-size="11">5.0 mm</text>
+<text x="40" y="714.8" font-size="11">5.0 mm = mated LSHM-110-02.5 pair = standoff length. Controlboard parts under the radio are 1.75 mm or lower;</text>
+<text x="40" y="730.4" font-size="11">the tallest radio underside part is U4 (SOT-223, 1.8 mm). Where U4 sits over U2 the gap is 5.0 - 1.6 - 1.8 = 1.6 mm.</text>
+</svg>

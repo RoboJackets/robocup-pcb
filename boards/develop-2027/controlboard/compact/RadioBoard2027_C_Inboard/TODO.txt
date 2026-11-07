@@ -1,0 +1,68 @@
+RADIOBOARD2027_C_INBOARD (30 x 40 mm, 4 layers) - OPEN ITEMS
+Updated 2026-11-07. Only open items are listed. Reasons and numbers: DESIGN_NOTES.md (section and deviation
+numbers below refer to it). Shared interface: ../docs/INTERFACE.md. Firmware: ../docs/FIRMWARE.md.
+Board state: DRC 0 errors / 0 warnings / 0 unconnected / 0 parity, ERC 0, link matched at 19.934 mm.
+
+
+1. BEFORE ORDERING
+------------------
+1.1 Antenna decision. 1U build: FXP831 gain at 5 GHz is above the module's certified 3.65 dBi (cap 5 GHz TX
+    power, use 2.4 GHz only, or pick a lower-gain antenna); confirm the MHF I plug. WROOM-1 fallback: the
+    controlboard has copper on all layers under this variant's antenna strip (CB x 46.1-66.1, y 0-7.5); either
+    clear it on the controlboard or drop the fallback for this variant (section 10).
+1.2 Confirm the 50 ohm (0.15 mm) and 90 ohm differential (0.19 / 0.31 mm) widths in the JLC impedance calculator
+    for JLC04161H-3313; order with impedance control.
+1.3 Fab notes: all vias tented; the 8 U1 EPAD gap vias plugged / filled and capped (deviation 19); U2's GND via
+    (8.72, 33.5) plugged (deviation 14). J2 shield pins paste-in-hole (2.00 mm apertures, 0.13 mm stencil per
+    Samtec). WROOM-1 build only: separate stencil with no paste on U1 pads 30, 31, 32 (deviation 9).
+1.4 Parts: U1, U4, J2 and ANT1 are not stocked at JLCPCB (Mouser / Digi-Key; consign or global sourcing). Re-check
+    stock the day of ordering (D1 C5875754 was low). Double-sided SMT (bottom: J2, U5, U6, C1, C2, C3, R1, F1, C5,
+    U4, C6, R9, R10, R3, C4 DNP, R7).
+1.5 Consider DNP footprints on USB D+ / D-.
+1.6 Compare the TPD4E05U06 footprint (U2, U5, U6; stock KiCad USON-10) with TI's DQA0010A land pattern.
+1.7 Final independent audit of the whole board after any further change; then DRC with parity, ERC, length
+    scripts and the keep-out proofs again.
+
+
+2. BENCH BRING-UP
+-----------------
+2.1 Radio on USB, controlboard attached but unpowered: +3V3_HOST must stay below 2.93 V (expected <= 1.70 V); EN
+    must rise to about 3.2 V and the module must boot. If EN stays low: Schottky (BAT54 / RB521 class) in series
+    with R2, cathode toward J2 (apply to both variants). If +3V3_HOST rises too far: 10k bleeder on +3V3_HOST.
+2.2 Switchover: USB-to-host and host-to-USB transients on +3V3 with the module transmitting.
+2.3 Module supply at C1 during 5 GHz TX from a 3.30 V controlboard rail (>= 3.0 V required).
+2.4 USB: enumeration and flashing in both plug orientations; attach inrush on the team's laptops.
+2.5 Link: bring up at a low clock, then raise (../docs/FIRMWARE.md); check SCK and MISO at J2 / J9 on a scope.
+2.6 WROOM-1 build (if kept): RSSI against a devkit.
+
+
+3. FIRMWARE
+-----------
+See ../docs/FIRMWARE.md. Board-specific essentials: ESP-Hosted SPI full duplex with CLK=GPIO6, MOSI=GPIO7,
+MISO=GPIO2, CS=GPIO10, HANDSHAKE=GPIO1, DATA_READY=GPIO0, reset=EN (set every pin; do not use the Kconfig
+defaults). RTC slow clock internal (GPIO0 / GPIO1 are the 32 kHz crystal pins). Keep MISO / HANDSHAKE /
+DATA_READY tri-stated while PWR_SRC_HOST (GPIO9) is low. Brownout detector on. Status LED GPIO8, BOOT GPIO28.
+Limit 5 GHz TX power if item 1.1 is decided that way.
+
+
+4. LATER (schematic and rule hygiene, no electrical effect)
+-----------------------------------------------------------
+4.1 Name the auto-named nets the rules and net classes depend on: Net-(U1-GPIO2), Net-(U1-GPIO13/USB_D-),
+    Net-(U1-GPIO14/USB_D+), Net-(D2-IN-Pad4), Net-(U1-EN/CHIP_PU). Name the USB pair after R5 / R6 with a P / N
+    suffix (for example USB_MOD_P / USB_MOD_N) and add a diff_pair_gap rule for the coupled run (deviation 21).
+4.2 Add an erc section to the .kicad_pro, enable all checks and fix the 3 warnings that appear (footprint filters
+    on F1 / U1, the 4-way junction at SW2 / R3) (deviation 22).
+4.3 Schematic readability (deviation 22): page size vs content; U1, C1, C2, ANT1, R4 into their boxes on 02_ESP32;
+    GPIO28 wire -> label; value-text overlaps (U1, C1 / C2, C5, C7, "8" over D2); D2 / D5 GND symbols upright; U1
+    hidden NC pins; +3V3_HOST PWR_FLAG at J2; the 01_Power power-width note (0.3-0.4 mm).
+4.4 CC1 / CC2 have no ESD protection (deviation 20).
+4.5 3D models of U1 body, J1 and F1 do not resolve (cosmetic).
+
+
+5. MAINTENANCE
+--------------
+Keep J2 identical to the controlboard J9 and to the Overhang J2; change all three projects together. Keep the
+Inboard and Overhang schematics identical. The .kicad_dru rules use hierarchical net names
+('/Controlboard Link/ESP_SPI_*', '/USB/USB_DP' ...), auto-generated names (item 4.1) and the rule-area names
+(ANTENNA_KEEPOUT, ANTENNA_KEEPOUT_INNER, KEEPOUT_MODULE_TOP, STANDOFF_KEEPOUT): update them if sheets, labels or
+areas are renamed. Re-measure the link and USB lengths after any edit near them.

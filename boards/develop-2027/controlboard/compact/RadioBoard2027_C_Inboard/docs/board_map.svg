@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 560" font-family="Helvetica, Arial, sans-serif" font-size="13">
+  <title>RadioBoard2027_C_Inboard: what a firmware engineer touches</title>
+  <rect width="1020" height="560" fill="#ffffff"/>
+  <text x="20" y="28" font-size="17" font-weight="bold">RadioBoard2027_C_Inboard (30 x 40 mm), top view</text>
+  <text x="20" y="48" fill="#555">1 mm = 10 px. North is up; the controlboard J9 is under J2 (radio underside).</text>
+  <!-- board outline 30 x 40 mm at (40,70) scale 10 -->
+  <g transform="translate(40,70)">
+    <rect x="0" y="0" width="300" height="400" fill="#2f5d3a" stroke="#000" stroke-width="2"/>
+    <!-- antenna area -->
+    <rect x="101" y="0" width="199" height="75" fill="#c9e3f5" stroke="#4a7fa8" stroke-dasharray="5,3"/>
+    <text x="200" y="35" text-anchor="middle" font-size="12">WROOM-1 antenna area</text>
+    <text x="200" y="52" text-anchor="middle" font-size="11">no copper (except the 1U pads 30-32)</text>
+    <!-- module -->
+    <rect x="110" y="75" width="181" height="210" fill="#d9d9d9" stroke="#333"/>
+    <text x="200" y="170" text-anchor="middle" font-weight="bold">U1</text>
+    <text x="200" y="188" text-anchor="middle" font-size="11">ESP32-C5-WROOM-1U</text>
+    <circle cx="261" cy="97" r="9" fill="#f2c94c" stroke="#333"/>
+    <text x="261" y="120" text-anchor="middle" font-size="10">U.FL</text>
+    <!-- J2 bottom -->
+    <rect x="11" y="0" width="52" height="123" fill="none" stroke="#f2994a" stroke-width="2" stroke-dasharray="6,3"/>
+    <text x="37" y="66" text-anchor="middle" fill="#fff" font-size="11">J2</text>
+    <text x="37" y="80" text-anchor="middle" fill="#fff" font-size="9">(bottom)</text>
+    <!-- SW1 RESET -->
+    <rect x="5" y="145" width="60" height="75" fill="#bbb" stroke="#333"/>
+    <circle cx="35" cy="182" r="14" fill="#888"/>
+    <!-- LEDs -->
+    <rect x="25" y="234" width="20" height="10" fill="#6fcf97"/>
+    <rect x="25" y="252" width="20" height="10" fill="#eb5757"/>
+    <!-- J1 USB-C -->
+    <rect x="-5" y="268" width="90" height="135" fill="#bbb" stroke="#333"/>
+    <text x="40" y="340" text-anchor="middle" font-size="11">J1 USB-C</text>
+    <!-- SW2 BOOT -->
+    <rect x="143" y="293" width="80" height="58" fill="#bbb" stroke="#333"/>
+    <circle cx="183" cy="322" r="14" fill="#888"/>
+    <!-- holes -->
+    <circle cx="140" cy="375" r="11" fill="#fff" stroke="#000"/>
+    <circle cx="274" cy="375" r="11" fill="#fff" stroke="#000"/>
+    <!-- test points (bottom) -->
+    <circle cx="258" cy="120" r="5" fill="none" stroke="#f2994a" stroke-width="2"/>
+    <circle cx="258" cy="148" r="5" fill="none" stroke="#f2994a" stroke-width="2"/>
+    <circle cx="258" cy="176" r="5" fill="none" stroke="#f2994a" stroke-width="2"/>
+  </g>
+  <!-- callouts -->
+  <g font-size="12">
+    <line x1="105" y1="252" x2="370" y2="252" stroke="#333"/><text x="376" y="256"><tspan font-weight="bold">RESET (SW1)</tspan>: pulls EN low; the controlboard can also reset via J2-19 (EN)</text>
+    <line x1="85" y1="309" x2="370" y2="290" stroke="#333"/><text x="376" y="294"><tspan font-weight="bold">STAT</tspan> (green D1): firmware status LED, GPIO on module pad 10, active high</text>
+    <line x1="85" y1="327" x2="370" y2="316" stroke="#333"/><text x="376" y="320"><tspan font-weight="bold">PWR</tspan> (red D3): +3V3 present</text>
+    <line x1="125" y1="400" x2="370" y2="350" stroke="#333"/><text x="376" y="354"><tspan font-weight="bold">USB</tspan> (J1): native USB Serial/JTAG, Full-Speed; flashing and logs</text>
+    <text x="376" y="370" fill="#555">Also powers the board when no controlboard is present (USB LDO, priority mux).</text>
+    <line x1="263" y1="392" x2="370" y2="400" stroke="#333"/><text x="376" y="404"><tspan font-weight="bold">BOOT</tspan> (SW2): hold while pressing RESET for the ROM download mode (GPIO28)</text>
+    <line x1="303" y1="167" x2="370" y2="150" stroke="#333"/><text x="376" y="154"><tspan font-weight="bold">U.FL</tspan>: 1U build, external antenna (ANT1); cable leaves north</text>
+    <line x1="303" y1="200" x2="370" y2="194" stroke="#333"/><text x="376" y="190"><tspan font-weight="bold">Underside test pads</tspan> (under U1): TX, RX, GND (UART0, 115200 8N1)</text>
+    <text x="376" y="206" fill="#555">Reachable only with the radio unmounted from the controlboard.</text>
+    <polyline points="80,72 80,60 370,60" fill="none" stroke="#333"/><text x="376" y="64"><tspan font-weight="bold">J2</tspan> (underside): link to the controlboard J9 (SPI, HANDSHAKE, DATA_READY, EN, +3V3)</text>
+    <text x="376" y="96" fill="#555">Signal row, north to south: 19 EN, 15 MISO, 11 DATA_READY, 9 HANDSHAKE, 7 SCK, 3 MOSI, 1 CS</text>
+    <text x="376" y="112" fill="#555">(the module-pad order since 2026-11-07; the other pins are GND and +3V3_HOST).</text>
+    <text x="376" y="80" fill="#555">SCK / MOSI / MISO / CS matched within 0.001 mm (19.93 mm to the track end in the pad).</text>
+  </g>
+  <!-- legend -->
+  <g transform="translate(376,450)" font-size="12">
+    <rect x="0" y="-10" width="14" height="10" fill="none" stroke="#f2994a" stroke-width="2" stroke-dasharray="4,2"/><text x="20" y="0">part on the underside</text>
+    <rect x="0" y="10" width="14" height="10" fill="#c9e3f5" stroke="#4a7fa8"/><text x="20" y="20">antenna keep-out (WROOM-1 fallback)</text>
+    <circle cx="7" cy="35" r="6" fill="#fff" stroke="#000"/><text x="20" y="40">M2 standoff holes H1 / H2</text>
+  </g>
+</svg>

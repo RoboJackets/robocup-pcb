@@ -1,0 +1,82 @@
+CONTROLBOARD2027_C - OPEN WORK
+Design reasons, IDs (C/M/m, deviation numbers): DESIGN_NOTES.md. Interfaces: ../docs/INTERFACE.md.
+Firmware: ../docs/FIRMWARE.md. Status (2026-11-07): routed; DRC 0 errors / 0 unconnected / 0 parity, 13 intended
+warnings; ERC 1 intended VCAP error (m21).
+
+
+1. BEFORE ORDERING
+------------------
+1.1 Re-audit the last changed areas with an independent reviewer (CLAUDE.md section 12): the back-edge connector
+    change (J10 / U17, J15, R33 / R34, the J3 move, power-entry copper) and the audit-2 / audit-3 fixes (added GND
+    vias, moved TP2 / TP6 / R27 / R69, sheet 02 boxes). Then refill zones, save, and re-run DRC with parity and ERC.
+1.2 C1: confirm the BB-2020BGR-TRB pad drawing is a top view (vendor or sample); mirror the footprint if not.
+1.3 Confirm the 50 ohm (0.15 mm L1 / L6, 0.12 mm L4) and 90 ohm (0.14 / 0.15 mm) widths in JLC's impedance
+    calculator for JLC06161H-3313E; order with impedance control.
+1.5 Powerboard agreement on J15 (JST PH 7P): 1 RX (into this board), 2 TX (out of this board), 3 GND, 4 +3V3,
+    5 GND, 6 +5V, 7 GND. 3V3 setpoint 3.4 V +/-3 %, never above 3.6 V. One 2 A contact per rail; keep the steady load
+    per rail well under 2 A. The powerboard must source > 2.5 A per rail into a fault so F5 / F6 trip (M1, M2, M3,
+    deviation 17).
+1.6 Kicker agreement on J10 (JST GH 4P: 1 SDA, 2 GND, 3 SCL, 4 GND, signals only) (M10).
+1.7 Motor-module agreement on J4-J8 (JST GH 6P: 1 MOSI, 2 GND, 3 MISO, 4 SCK, 5 GND, 6 CS); the module board's J2
+    is still PH 8P (M19). Modules must release MISO while CS is high (M9).
+1.8 OLED module (M5): choose the 0.96in SSD1306 I2C module; check its pin order (1 GND, 2 VCC, 3 SCL, 4 SDA), address,
+    power-on reset, pull-ups and mounting-hole positions against the J13 footprint.
+1.9 Parts: generate the BOM and placement files from the current schematic (not done yet). Re-check stock in the
+    JLCPCB BOM tool; check the substitutes in the placement preview (F1 / F3 / F4 1812L075/24DR, F5 / F6
+    1812L125/16DR, SW1 / SW2 / SW4-SW6 PTS636SM43LFS, SW3 DS-06BP, X1 ABM8-25.000MHZ-10-D1G-T). Source D7-D11, J9, U7
+    and U11 outside JLCPCB stock (global sourcing or consign). Order U10 as SN74AHCT125DR (SOIC-14). Order with tented
+    vias (deviation 23) and double-sided assembly.
+1.10 Any change to J9, HR1 or HR2 must be made in this board and both radio projects together (INTERFACE.md).
+
+
+2. BENCH BRING-UP (first boards)
+--------------------------------
+2.1 Rails: +3V3 and +5V on the powerboard at full load (M2, m2); radio supply at the module during Wi-Fi TX (m3);
+    rail sag when the powerboard is unplugged with USB attached (M7).
+2.2 USB: VBUS drop through the L4 link to U8 VIN2 with LEDs and radio running (deviation 1; if it matters, move U7 /
+    C32 so VBUS can stay on L1); attach inrush on the team's laptops (m18); port behaviour with the radio
+    transmitting on USB power (m22); unplug detection on PA9.
+2.3 HSE: frequency and drive level at R12 (m9); adjust C18 / C19 or fit R12 if needed.
+2.4 Scope: SPI1 / SPI2 SCK at J4 and J7 at the chosen GPIO speed (deviation 11); motor SPI ringing and MOSI setup /
+    hold (m4); SD CK at TP1 before raising CLKDIV to 24 MHz; radio MISO valid delay at J9 before trying 40 MHz.
+2.5 I2C rise time at TP7 (kicker) and TP8 (expansion) with real cables (m6); fit 1.5k only if > 300 ns.
+2.6 Mechanics: radio retention on J9 and the M2 x 5 mm standoffs at HR1 / HR2, standoff and screw-head clearance,
+    OLED module clearance over J1 / J2 / U3 / U7 (M6).
+2.7 Assembly: the two via rings at C22 pad 2 and R28 pad 1 (tombstoning, deviation 23).
+2.8 Silkscreen: check that the GH connector pin tables and the narrow J15 labels read well.
+
+
+3. FIRMWARE (see ../docs/FIRMWARE.md)
+-------------------------------------
+3.1 Apply the clock tree (HSE 25 MHz, C2), VOS0 or HPRE /2 (M16), BOR level (M7), PWR_LDO_SUPPLY.
+3.2 Re-pin the .ioc from the netlist pin map (M11): SPI6 LEDs, SPI2 right wheels, SPI4 dribbler, SDMMC2, SPI3 radio.
+3.3 PB6 = ESP_DATA_READY, PB7 = ESP_HANDSHAKE (swapped 2026-11-07): swap the pin defines and EXTI6 / EXTI7.
+3.4 SPI1 / SPI2 SCK, MOSI and the motor CS pins at OSPEEDR LOW or MEDIUM, never HIGH / VERY_HIGH (deviation 11).
+3.5 SPI3 radio: CRC off, 8-bit (M4); bring up at 3 MHz, run at 24 MHz; CS PG15 at OSPEEDR LOW / MEDIUM.
+3.6 Master Keep IO State on all SPI masters (M17).
+3.7 IMU U11 (bottom side, rotation 270, pin 1 north-west seen from above): derive the axis remap from the datasheet
+    axis drawing, mirrored for the bottom side; use the LSM6DSV320X driver (WHO_AM_I, register map); SW_RESET after
+    brown-out (m16).
+3.8 Power-source changes (poll PA2 / PA3, m11): re-initialise SD, IMU and OLED, pulse ESP_RST and restart
+    ESP-Hosted, resend the LED frame. LED current cap about 250 mA, about 100 mA while PWR_SRC_5V is low.
+3.9 SD: no card-detect pin (report "present", treat init failure as "no card"), CMD0 recovery (M18).
+3.10 I2C bus recovery before each init; OLED probe 0x3C / 0x3D; let CubeMX recompute I2C timing.
+
+
+4. LATER
+--------
+4.1 m19: test points on +5V_PB and +3V3_PB.
+4.2 m20: SWCLK sheet pin is "input" on both sheets (cosmetic).
+4.3 m26: make the schematic decoupling labels match the board pin pairing.
+4.4 Deviation 25: if a WROOM-1 (PCB antenna) build of the Inboard radio is used and its range is poor, clear the pours
+    under its antenna area (x 46.1-66.1, y 0-7.5).
+4.6 Deviations 26 / 27 (final audit): move the SWCLK via (70.35, 17.35) and the OLED_I2C_SCL via (77.95, 22.85)
+    0.2 mm away from the USB pair, add a USB-to-other spacing rule (about 3x the gap), and remove the unused inner
+    pads of the four L6 hop vias so their L5 antipads stop merging.
+
+
+NOTES (schematic edits)
+-----------------------
+- Close KiCad before scripted schematic edits; after each edit run ERC and a netlist diff by net membership.
+- Grid 1.27 mm. Power symbols (#PWR) need project-unique refs. Deleting a power symbol can remove a junction a
+  mid-wire pin still needs; re-check the netlist after any delete.

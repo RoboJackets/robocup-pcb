@@ -1090,6 +1090,21 @@ jumper shunts, Samtec SNT-100-BK-G (C3715645, same part as before); SK1, the J13
 socket, BOOMELE 2.54-1*8P, 8.5mm body (C27438; the Sullins PPTC081LFBN-RC is not stocked).
 TP1-TP21 are bare pads and are marked "exclude from BOM".
 
+**Update 2026-11-05 (JLCPCB stock re-check).** `ControlBoard2027_BOM_full.csv` now lists an LCSC part for every
+line that exists at JLCPCB, with the stock on that day and how many board sets it covers. The `Source` column says
+what to do; `Other source` gives the distributor part. The parts with low stock (but some) are added to
+`jlcpcb/ControlBoard2027_BOM_JLC_2026-11-05.csv` (54 lines, 164 placements):
+
+| Refs | LCSC | Stock | Board sets | Fallback |
+|---|---|---|---|---|
+| J9 | C3643542 (LSHM-110-02.5-L-DV-A-S-K-TR) | 37 | 18 (shared with radio J2) | Digi-Key SAM14955CT-ND |
+| U11 | C26633007 (LSM6DSV320XTR) | 18 | 18 | Mouser 511-LSM6DSV320XTR |
+| U7 | C500795 (AP7361C-33E-13) | 3 | 1 (shared with radio U4) | Digi-Key AP7361C-33E-13DICT-ND |
+
+Out of stock or not at LCSC, so bought elsewhere: D7-D11 (C22063177, 0 in stock; Digi-Key 2007-BB-2020BGR-TRBCT-ND,
+JLCPCB global sourcing or consign) and J13 (Adafruit 326, not at LCSC; Digi-Key 1528-1220-ND, fitted by hand). The
+schematic `LCSC` fields of J9, U11 and U7 are still empty; the BOM files carry the numbers.
+
 Substitutions for JLCPCB (the old part stays in `MPN` / `Vendor PN` as the alternate):
 
 | Refs | Alternate (Digi-Key) | JLCPCB part (LCSC) | Why it is a drop-in |

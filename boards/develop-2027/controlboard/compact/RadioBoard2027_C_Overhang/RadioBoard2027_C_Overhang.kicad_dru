@@ -1,0 +1,90 @@
+(version 1)
+
+# Stackup JLC04161H-3313 (L1-L2 and L3-L4 prepreg 0.0994 mm, Er 4.1, outer Cu 0.035 mm, LPI mask 0.010 mm Er 3.8).
+# Impedances (direct 2D field solver, DESIGN_NOTES section 8.3): 0.15 mm = 54.2 ohm
+# uncoated, 52.4-52.8 ohm with mask; USB 0.19 mm / 0.31 mm gap = 91.6 ohm differential uncoated, 88.7-89.5 ohm with mask.
+(rule "Power nets"
+	(condition "A.NetName == '+3V3' || A.NetName == '+3V3_HOST' || A.NetName == 'VBUS' || A.NetName == 'Net-(D2-IN-Pad4)' || A.NetName == '/Power/VIN2_USB'")
+	(constraint clearance (min 0.2mm))
+	(constraint track_width (min 0.2mm)))
+
+(rule "Link 50 ohm width"
+	(layer outer)
+	(condition "A.Type == 'Track' && (A.NetName == '/Controlboard Link/ESP_SPI_*' || A.NetName == '/Controlboard Link/ESP_HANDSHAKE' || A.NetName == '/Controlboard Link/ESP_DATA_READY' || A.NetName == 'Net-(U1-GPIO2)')")
+	(constraint track_width (min 0.14mm) (opt 0.15mm) (max 0.16mm)))
+
+(rule "Link pour clearance"
+	(layer outer)
+	(condition "(A.NetName == '/Controlboard Link/ESP_SPI_*' || A.NetName == '/Controlboard Link/ESP_HANDSHAKE' || A.NetName == '/Controlboard Link/ESP_DATA_READY' || A.NetName == 'Net-(U1-GPIO2)') && B.Type == 'Zone'")
+	(constraint clearance (min 0.3mm)))
+
+# USB pair: width / gap and impedance in DESIGN_NOTES section 8.3 (field solver).
+(rule "USB width"
+	(layer outer)
+	(condition "A.Type == 'Track' && (A.NetName == '/USB/USB_DP' || A.NetName == '/USB/USB_DN' || A.NetName == 'Net-(U1-GPIO13*USB_D-)' || A.NetName == 'Net-(U1-GPIO14*USB_D+)')")
+	(constraint track_width (min 0.18mm) (opt 0.19mm) (max 0.20mm)))
+
+(rule "USB pour clearance"
+	(layer outer)
+	(condition "(A.NetName == '/USB/USB_DP' || A.NetName == '/USB/USB_DN' || A.NetName == 'Net-(U1-GPIO13*USB_D-)' || A.NetName == 'Net-(U1-GPIO14*USB_D+)') && B.Type == 'Zone'")
+	(constraint clearance (min 0.4mm)))
+
+# 2W spacing from the 50 ohm link and USB lines to any other signal or power copper (GND vias between lanes excepted).
+(rule "Fast spacing"
+	(condition "A.NetClass == 'Fast' && A.Type == 'Track' && (B.Type == 'Track' || B.Type == 'Via') && B.NetClass != 'Fast' && B.NetName != 'GND'")
+	(constraint clearance (min 0.3mm)))
+
+# 3W centre-to-centre (2W edge gap) between different Fast nets: tracks and vias on the outer layers (audit M1: the
+# old rule excluded Fast-to-Fast pairs, so link lanes at 0.204 mm passed DRC). Pads are not tested, so the lines may
+# converge into 0.5 mm pitch pads (J2, U5 / U6, U2, J1) - the pad-entry exception. The two lines of the USB pair are
+# not tested against each other (they are coupled on purpose, and the D+ A6 duplicate hop on L4 crosses under the
+# D- legs), only against everything else.
+(rule "Fast to Fast spacing"
+	(layer outer)
+	(condition "A.NetClass == 'Fast' && B.NetClass == 'Fast' && A.NetName != B.NetName && (A.Type == 'Track' || A.Type == 'Via') && (B.Type == 'Track' || B.Type == 'Via') && !((A.NetName == '/USB/USB_D*' || A.NetName == 'Net-(U1-GPIO1*') && (B.NetName == '/USB/USB_D*' || B.NetName == 'Net-(U1-GPIO1*'))")
+	(constraint clearance (min 0.3mm)))
+
+# Fast track to the pad of another Fast net (Inboard round-2 audit m1): 0.24 mm. Every pad entry on the 0.5 mm-pitch
+# parts (J2, U5, U6, U2, J1, U1) keeps 0.25 mm or more here, so no footprint is exempt on this board. USB lines not
+# against each other (deviation 2).
+(rule "Fast track to Fast pad"
+	(layer outer)
+	(condition "A.NetClass == 'Fast' && A.Type == 'Track' && B.Type == 'Pad' && B.NetClass == 'Fast' && A.NetName != B.NetName && !((A.NetName == '/USB/USB_D*' || A.NetName == 'Net-(U1-GPIO1*') && (B.NetName == '/USB/USB_D*' || B.NetName == 'Net-(U1-GPIO1*'))")
+	(constraint clearance (min 0.24mm)))
+
+# J2 odd-row GND pins (5 / 13 / 17) are tied by track to their own vias just east of the connector (5 and 17 also to
+# U6 / U5 pin 3), U5 / U6 pin 8 across to pin 3; the 0.5 mm pitch leaves no room for pour spokes.
+(rule "Link GND pins without spokes"
+	(condition "A.Type == 'Pad' && A.NetName == 'GND' && (A.memberOfFootprint('J2') || A.memberOfFootprint('U5') || A.memberOfFootprint('U6'))")
+	(constraint min_resolved_spokes 0))
+
+# U4 (AP7361C, up to ~0.7 W from USB) needs its tab solidly in the bottom GND pour.
+(rule "LDO tab solid"
+	(condition "A.Type == 'Pad' && A.memberOfFootprint('U4') && A.NetName == 'GND'")
+	(constraint zone_connection solid))
+
+# J1 GND contacts A1/B12 and A12/B1 are tied by track to the shell pads; the USB lanes leave no room for spokes.
+(rule "USB-C GND contacts by track"
+	(condition "A.Type == 'Pad' && A.NetName == 'GND' && A.memberOfFootprint('J1')")
+	(constraint min_resolved_spokes 0))
+
+# Rule areas are not enforced by DRC in this KiCad 10 setup (proven 2026-11-07: test tracks and a via inside the
+# antenna keep-out, KEEPOUT_MODULE_TOP and STANDOFF_KEEPOUT were not flagged). These rules enforce them by name.
+(rule "Antenna keep-out (WROOM-1 antenna area)"
+	(condition "(A.Type == 'Track' || A.Type == 'Via' || A.Type == 'Pad') && (A.intersectsArea('ANTENNA_KEEPOUT') || A.intersectsArea('ANTENNA_KEEPOUT_INNER'))")
+	(constraint disallow track via pad))
+
+(rule "No top tracks under the module body"
+	(layer F.Cu)
+	(condition "A.Type == 'Track' && A.intersectsArea('KEEPOUT_MODULE_TOP')")
+	(constraint disallow track))
+
+(rule "Standoff keep-out"
+	(condition "(A.Type == 'Track' || A.Type == 'Via') && A.intersectsArea('STANDOFF_KEEPOUT')")
+	(constraint disallow track via))
+
+# D4 (3.3 V TVS on +3V3_HOST, top) anode: joined solid to the L1 GND pour as well as by its track to J2's shield PTH, so
+# the clamp return is the wide pour, not a thermal spoke (round-3 audit m6: no via fits outside the J2 housing).
+(rule "D4 anode solid"
+	(condition "A.Type == 'Pad' && A.memberOfFootprint('D4') && A.NetName == 'GND'")
+	(constraint zone_connection solid))

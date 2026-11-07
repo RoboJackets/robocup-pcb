@@ -295,6 +295,14 @@ Not from JLCPCB (order through JLCPCB global sourcing, consign them, or fit by h
 | J2 | Samtec LSHM-110-02.5-L-DV-A-S-K-TR | Digi-Key SAM14955CT-ND | 47 at JLCPCB; one each on this board and the controlboard, so 50 board sets need 100 |
 | ANT1 | Taoglas FXP831.07.0100C | Digi-Key 931-1121-ND | Cable antenna, not stocked; not assembled |
 
+**Update 2026-11-05 (JLCPCB stock re-check).** `RadioBoard2027_BOM_full.csv` now lists an LCSC part for every line
+that exists at JLCPCB, with the stock on that day and board sets covered; `Source` says what to do and `Other source`
+gives the distributor part. Low-stock parts added to `jlcpcb/RadioBoard2027_BOM_JLC_2026-11-05.csv` (26 lines, 37
+placements): J2 C3643542 (37 in stock, shared with controlboard J9, 18 sets) and U4 C500795 (3 in stock, shared with
+controlboard U7, 1 set). Out of stock: U1 C51950748 (0; Mouser 356-ESP32C5WRM1UN8R8, JLCPCB global sourcing or
+consign) and ANT1 C6258568 (0; Digi-Key 931-1121-ND, not assembled). The schematic `LCSC` fields of J2 and U4 are still
+empty; the BOM files carry the numbers.
+
 Substitutions for JLCPCB (the Digi-Key part stays as the alternate):
 
 | Refs | Alternate (Digi-Key) | JLCPCB part (LCSC) | Why it is a drop-in |
