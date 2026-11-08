@@ -1,0 +1,939 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "950edf25-7c73-426b-95c7-f5bf9643ec87")
+	(paper "A4")
+	(title_block
+		(title "Power Monitoring & Distribution Board")
+		(date "2026-11-08")
+		(rev "1.0")
+		(company "RoboJackets RoboCup")
+		(comment 1 "Aiden Lee [piman PCB], Ibrahim Irfan")
+	)
+	(lib_symbols)
+	(junction
+		(at 69.85 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d5ffad8f-4275-455f-9830-b1388efa95b4")
+	)
+	(bus
+		(pts
+			(xy 76.2 78.74) (xy 88.9 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f3237a9-f37f-4260-b187-43aaf9d0facf")
+	)
+	(bus
+		(pts
+			(xy 63.5 86.36) (xy 88.9 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15f44a4d-fbe7-4f55-b475-fc07e4c07df3")
+	)
+	(wire
+		(pts
+			(xy 69.85 53.34) (xy 69.85 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19a92346-b4b4-4e50-8c6f-76ed1f32c8a3")
+	)
+	(wire
+		(pts
+			(xy 69.85 53.34) (xy 88.9 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "328f4435-2c09-4c9d-b05e-e363ecdb9a33")
+	)
+	(wire
+		(pts
+			(xy 127 96.52) (xy 215.9 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ec0b426-2ac4-42d8-9212-be3608dc05bc")
+	)
+	(wire
+		(pts
+			(xy 190.5 40.64) (xy 215.9 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b516cdf-01f4-4663-9e18-1cd8318bb166")
+	)
+	(wire
+		(pts
+			(xy 127 86.36) (xy 152.4 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5101b3e3-1766-4433-b872-62bc28a6dbb6")
+	)
+	(wire
+		(pts
+			(xy 69.85 40.64) (xy 63.5 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52ac929d-3942-4667-86ab-cd209d3b6d0d")
+	)
+	(wire
+		(pts
+			(xy 190.5 43.18) (xy 215.9 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "541cd6ff-7fcf-40a7-a7f5-f2be0d81c3be")
+	)
+	(wire
+		(pts
+			(xy 127 78.74) (xy 152.4 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d704583-a166-4725-8543-8608c76788ad")
+	)
+	(bus
+		(pts
+			(xy 63.5 107.95) (xy 88.9 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ddfe809-2d19-4ee9-a641-5debd6c60764")
+	)
+	(wire
+		(pts
+			(xy 69.85 60.96) (xy 69.85 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e143de4-ed0f-46e3-b7dd-e297696e1d68")
+	)
+	(wire
+		(pts
+			(xy 127 81.28) (xy 152.4 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ef8958a-e2f7-4550-973e-6c44a0264163")
+	)
+	(bus
+		(pts
+			(xy 76.2 48.26) (xy 76.2 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9098ccfc-fba9-4a00-8374-dca71861e51c")
+	)
+	(wire
+		(pts
+			(xy 127 99.06) (xy 215.9 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9501701d-ef41-4e8c-a0e7-7989fa395282")
+	)
+	(wire
+		(pts
+			(xy 190.5 48.26) (xy 215.9 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e124046-7c4f-470a-9bb4-477bf041f19e")
+	)
+	(bus
+		(pts
+			(xy 127 111.76) (xy 215.9 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdc09748-cfde-4ac7-ba85-591688fd6357")
+	)
+	(bus
+		(pts
+			(xy 63.5 83.82) (xy 88.9 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2d61859-45a0-4780-b0e7-ee7315adfc0a")
+	)
+	(wire
+		(pts
+			(xy 190.5 45.72) (xy 215.9 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c600fa0c-bc1d-4601-83f9-f157216a17e6")
+	)
+	(wire
+		(pts
+			(xy 69.85 60.96) (xy 88.9 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cdd6fdb5-e1d5-4416-a08e-4c35316d399e")
+	)
+	(wire
+		(pts
+			(xy 127 83.82) (xy 152.4 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8027c67-709d-4171-bea1-93d2ad34be9c")
+	)
+	(bus
+		(pts
+			(xy 63.5 48.26) (xy 76.2 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f45129ac-5a57-4ee2-8a54-b2ab6a758474")
+	)
+	(wire
+		(pts
+			(xy 69.85 40.64) (xy 152.4 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8e6e0b0-ae7b-4eb8-a614-fb399378bb7a")
+	)
+	(wire
+		(pts
+			(xy 69.85 66.04) (xy 63.5 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9ac9221-31a4-44a1-95de-06814e2a6663")
+	)
+	(sheet
+		(at 152.4 38.1)
+		(size 38.1 50.8)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "45a80922-adbb-4c59-8dc9-53bac2202f70")
+		(property "Sheetname" "Output Power Stage"
+			(at 152.4 37.3884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "output_power.kicad_sch"
+			(at 152.4 89.4846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "3.3V_EN" input
+			(at 152.4 78.74 180)
+			(uuid "bed9c121-81b5-426d-b4ce-b222cc65f9ea")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "5.0V_EN" input
+			(at 152.4 81.28 180)
+			(uuid "d18c7d5f-bfff-4564-9c55-db2f38947dbc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "12.0V_EN" input
+			(at 152.4 83.82 180)
+			(uuid "32ccfe1b-3485-4cf8-ad40-0763112e8b0c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VBATT" input
+			(at 152.4 40.64 180)
+			(uuid "105595db-6d77-4ed0-b67f-08f5eaabf8d6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VBATT_EN" input
+			(at 152.4 86.36 180)
+			(uuid "a9d238a5-7d45-4126-9b0b-bae2486d0d1c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "3.3V_REG" output
+			(at 190.5 40.64 0)
+			(uuid "bae09926-7d00-4bf1-be4e-1024fe9d9c64")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "5.0V_REG" output
+			(at 190.5 43.18 0)
+			(uuid "cd0de73c-ca7c-4861-8156-420e66022ba7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "12.0V_REG" output
+			(at 190.5 45.72 0)
+			(uuid "a6f1cd9b-6c8f-4964-9a7c-504d7b5115c3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VBATT_SW" output
+			(at 190.5 48.26 0)
+			(uuid "69eb5464-9c4e-44c0-8f92-8b017c4d2b4e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "power-board"
+				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 88.9 76.2)
+		(size 38.1 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "46a84cab-2488-41a2-8ddb-4e0edd24db1e")
+		(property "Sheetname" "MCU"
+			(at 88.9 75.4884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mcu.kicad_sch"
+			(at 88.9 114.8846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Batt_Balance.Cell[0..4]" input
+			(at 88.9 78.74 180)
+			(uuid "687baf52-38c5-42a8-b97a-9d2a90b85537")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "{SWD}" bidirectional
+			(at 88.9 83.82 180)
+			(uuid "6ed842c7-e6a9-4a78-938a-b1da85ac135e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "{USB}" bidirectional
+			(at 88.9 86.36 180)
+			(uuid "00c90472-fe51-4c03-9a1e-51e1fbb0b9f7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "3.3V_EN" output
+			(at 127 78.74 0)
+			(uuid "d2206023-e067-4935-ab2c-5b0e2f9cc524")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "5.0V_EN" output
+			(at 127 81.28 0)
+			(uuid "ffe7f9a3-29de-4f42-8925-decae66a25fd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "12.0V_EN" output
+			(at 127 83.82 0)
+			(uuid "4b15a878-77c4-4836-a03a-5f5169578443")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "{I2C0}" bidirectional
+			(at 88.9 107.95 180)
+			(uuid "c8694c0e-4ea2-45fc-a8cf-d558f5af994f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "{UART0}" bidirectional
+			(at 127 111.76 0)
+			(uuid "8a5031df-63e6-41d2-a7a3-1cd491486eff")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VBATT_EN" output
+			(at 127 86.36 0)
+			(uuid "957bbfbe-fbb1-4273-893f-c15c07f8a054")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "FAN_PWM" output
+			(at 127 96.52 0)
+			(uuid "042d93ec-a9d2-416d-bcb6-aa096795658f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SERVO_PWM" output
+			(at 127 99.06 0)
+			(uuid "70820f9b-da6d-4af8-833b-76e3a5678aa8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "power-board"
+				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 25.4 38.1)
+		(size 38.1 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "7078dd89-3d93-4110-8a56-6e091afd4004")
+		(property "Sheetname" "Battery Connectors"
+			(at 25.4 37.3884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "batt_conn.kicad_sch"
+			(at 25.4 51.3846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Batt_Balance.Cell[0..4]" output
+			(at 63.5 48.26 0)
+			(uuid "94f0f0b4-384c-4a3d-bf36-c278cc6df5a3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VBATT" output
+			(at 63.5 40.64 0)
+			(uuid "59baf7f1-c09b-462d-a3ca-56ded04ebd4a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "power-board"
+				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 88.9 50.8)
+		(size 38.1 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "c2597608-b40f-4bfc-b4a6-c1e761104d01")
+		(property "Sheetname" "MCU Power"
+			(at 88.9 50.0884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mcu_power.kicad_sch"
+			(at 88.9 64.0846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "VBATT" input
+			(at 88.9 53.34 180)
+			(uuid "1b2f58dc-892a-43f2-bcf4-036f93d70f25")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VBUS" input
+			(at 88.9 60.96 180)
+			(uuid "07e8c9b2-0ffa-4388-97a5-2ebf3e50a59d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "power-board"
+				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 25.4 101.6)
+		(size 38.1 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "ce203962-e6d3-4ac4-9196-cdd3f8a5376c")
+		(property "Sheetname" "Temperature Sensing"
+			(at 25.4 100.8884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "temp_sense.kicad_sch"
+			(at 25.4 114.8846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "{I2C}" bidirectional
+			(at 63.5 107.95 0)
+			(uuid "a63258b9-1918-4c51-85d1-f109d4603cc1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "power-board"
+				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 25.4 63.5)
+		(size 38.1 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "d0001911-d7bd-4781-8692-61a8e560cc19")
+		(property "Sheetname" "MCU Connectors"
+			(at 25.4 62.7884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mcu_conn.kicad_sch"
+			(at 25.4 89.4846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "{SWD}" bidirectional
+			(at 63.5 83.82 0)
+			(uuid "453517b9-4bd2-456c-ad14-3ce9fe958d5a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "{USB}" bidirectional
+			(at 63.5 86.36 0)
+			(uuid "f00e8be7-2e13-40f7-bf42-16b35b01d1f2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VBUS" output
+			(at 63.5 66.04 0)
+			(uuid "c40fd5c7-e341-40ea-9a4e-aac6118b9896")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "power-board"
+				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 215.9 38.1)
+		(size 38.1 101.6)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "de57e062-71e3-4788-a8ac-703fd2ada1c6")
+		(property "Sheetname" "Output Connectors"
+			(at 215.9 37.3884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "out_conn.kicad_sch"
+			(at 215.9 140.2846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "3.3V_REG" input
+			(at 215.9 40.64 180)
+			(uuid "870b82ec-a831-4942-a4db-e42b82e0bfb1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "5.0V_REG" input
+			(at 215.9 43.18 180)
+			(uuid "e4bc1a08-322b-4098-98eb-20fb9d9ecdc8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "12.0V_REG" input
+			(at 215.9 45.72 180)
+			(uuid "837c2221-f1ea-41d7-ad33-04c227b68ce4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "FAN_PWM" input
+			(at 215.9 96.52 180)
+			(uuid "73e2952c-9ee1-42d3-884d-1a70edb9db00")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SERVO_PWM" input
+			(at 215.9 99.06 180)
+			(uuid "ce5a240e-f534-4700-9924-9e5a780c80c4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "{UART0}" bidirectional
+			(at 215.9 111.76 180)
+			(uuid "a41fdc8a-e444-4e17-91af-49d9a8a5544e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VBATT_SW" input
+			(at 215.9 48.26 180)
+			(uuid "73d21dd2-3f1c-41c2-91ad-387bbd692922")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "power-board"
+				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87"
+					(page "15")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
