@@ -9,7 +9,7 @@
 		(rev "v1.0-proto")
 		(company "RoboJackets RoboCup")
 		(comment 1 "Based on a Design by Akshat Sehgal, Sean Seguin, & Ibrahim Irfan")
-		(comment 2 "Aiden Lee")
+		(comment 2 "Aiden Lee [piman PCB]")
 	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x02_Pin"
@@ -1563,7 +1563,7 @@
 		)
 		(uuid "b0de48a9-bba7-4230-bc8a-972e9dbcc5c7")
 	)
-	(text "TODO: Set to our standard\nblade fuse holder"
+	(text "Use 30A slow-blow fuse"
 		(exclude_from_sim no)
 		(at 62.23 39.37 0)
 		(effects
@@ -2376,7 +2376,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 116.84 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -2387,7 +2387,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "311-100KLRCT-ND"
+		(property "Vendor P/N" "C60491"
 			(at 116.84 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -2398,7 +2398,29 @@
 				)
 			)
 		)
-		(property "LCSC" "C60491"
+		(property "KLC_S3.3" ""
+			(at 116.84 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 116.84 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 116.84 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -2500,7 +2522,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 33.02 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -2511,7 +2533,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "455-S6B-XH-A-1-ND"
+		(property "Vendor P/N" "C265069"
 			(at 33.02 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -2522,7 +2544,29 @@
 				)
 			)
 		)
-		(property "LCSC" "C265069"
+		(property "KLC_S3.3" ""
+			(at 33.02 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 33.02 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 33.02 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -2638,7 +2682,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 116.84 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -2649,7 +2693,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "311-100KLRCT-ND"
+		(property "Vendor P/N" "C60491"
 			(at 116.84 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -2660,7 +2704,29 @@
 				)
 			)
 		)
-		(property "LCSC" "C60491"
+		(property "KLC_S3.3" ""
+			(at 116.84 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 116.84 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 116.84 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -2862,7 +2928,29 @@
 				)
 			)
 		)
-		(property "LCSC" "C98732"
+		(property "KLC_S3.3" ""
+			(at 34.29 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 34.29 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 34.29 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -3120,7 +3208,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 62.23 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -3131,7 +3219,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "36-3557-2-ND"
+		(property "Vendor P/N" "C352820"
 			(at 62.23 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -3142,8 +3230,30 @@
 				)
 			)
 		)
-		(property "LCSC" "C352820"
-			(at 62.23 36.83 0)
+		(property "KLC_S3.3" ""
+			(at 62.23 36.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 62.23 36.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 62.23 36.83 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3246,7 +3356,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 93.98 43.18 90)
 			(hide yes)
 			(show_name no)
@@ -3257,7 +3367,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "SMAJ22CALFCT-ND"
+		(property "Vendor P/N" "C148221"
 			(at 93.98 43.18 90)
 			(hide yes)
 			(show_name no)
@@ -3268,8 +3378,30 @@
 				)
 			)
 		)
-		(property "LCSC" "C148221"
-			(at 93.98 43.18 0)
+		(property "KLC_S3.3" ""
+			(at 93.98 43.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 93.98 43.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 93.98 43.18 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3370,7 +3502,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 134.62 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -3381,7 +3513,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "EG2362-ND"
+		(property "Vendor P/N" "C4943343"
 			(at 134.62 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -3392,7 +3524,29 @@
 				)
 			)
 		)
-		(property "LCSC" "C4943343"
+		(property "KLC_S3.3" ""
+			(at 134.62 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 134.62 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 134.62 49.53 0)
 			(hide yes)
 			(show_name no)

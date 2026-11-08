@@ -9,7 +9,7 @@
 		(rev "v1.0-proto")
 		(company "RoboJackets RoboCup")
 		(comment 1 "Based on a Design by Akshat Sehgal, Sean Seguin, & Ibrahim Irfan")
-		(comment 2 "Aiden Lee")
+		(comment 2 "Aiden Lee [piman PCB]")
 	)
 	(lib_symbols)
 	(wire
@@ -234,7 +234,7 @@
 	)
 	(bus
 		(pts
-			(xy 77.47 120.65) (xy 101.6 120.65)
+			(xy 76.2 120.65) (xy 101.6 120.65)
 		)
 		(stroke
 			(width 0)
@@ -253,7 +253,7 @@
 		(uuid "f6507ea9-367f-41f2-9e1e-18f90c7d9a1c")
 	)
 	(sheet
-		(at 39.37 114.3)
+		(at 38.1 114.3)
 		(size 38.1 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -269,7 +269,7 @@
 		)
 		(uuid "0b010258-f86d-4f77-894a-d8a93894f339")
 		(property "Sheetname" "Temperature Sensing"
-			(at 39.37 113.5884 0)
+			(at 38.1 113.5884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -280,7 +280,7 @@
 			)
 		)
 		(property "Sheetfile" "temp_sens.kicad_sch"
-			(at 39.37 127.5846 0)
+			(at 38.1 127.5846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -291,7 +291,7 @@
 			)
 		)
 		(pin "I2C{SDA SCL}" bidirectional
-			(at 77.47 120.65 0)
+			(at 76.2 120.65 0)
 			(uuid "0fd1dd2c-8e63-44c9-b275-adea78c47a81")
 			(effects
 				(font

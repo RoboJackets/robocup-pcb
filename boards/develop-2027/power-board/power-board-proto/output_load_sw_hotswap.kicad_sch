@@ -5,12 +5,12 @@
 	(uuid "ecd064bf-77af-4a2a-8031-d02dd411c6c0")
 	(paper "A4")
 	(title_block
-		(title "40 V, 30 A Output Load Switch")
-		(date "2026-10-02")
+		(title "25 V, 30 A Output Load Switch")
+		(date "2026-10-06")
 		(rev "v1.0-proto")
 		(company "RoboJackets RoboCup")
 		(comment 1 "Based on a Design by Akshat Sehgal, Sean Seguin, & Ibrahim Irfan")
-		(comment 2 "Aiden Lee")
+		(comment 2 "Aiden Lee [piman PCB]")
 	)
 	(lib_symbols
 		(symbol "Device:C"
@@ -2586,7 +2586,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 182.88 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -2597,7 +2597,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "311-1.00KHRCT-ND"
+		(property "Vendor P/N" "C22548"
 			(at 182.88 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -2608,7 +2608,29 @@
 				)
 			)
 		)
-		(property "LCSC" "C22548"
+		(property "KLC_S3.3" ""
+			(at 182.88 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 182.88 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 182.88 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -2866,7 +2888,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 128.27 72.39 90)
 			(hide yes)
 			(show_name no)
@@ -2877,7 +2899,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "BSC014N06NSATMA1CT-ND"
+		(property "Vendor P/N" "C113391"
 			(at 128.27 72.39 90)
 			(hide yes)
 			(show_name no)
@@ -2888,8 +2910,30 @@
 				)
 			)
 		)
-		(property "LCSC" "C113391"
-			(at 128.27 72.39 0)
+		(property "KLC_S3.3" ""
+			(at 128.27 72.39 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 128.27 72.39 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 128.27 72.39 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3079,7 +3123,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 128.27 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -3090,7 +3134,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "311-10.0HRCT-ND"
+		(property "Vendor P/N" "C109318"
 			(at 128.27 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -3101,7 +3145,29 @@
 				)
 			)
 		)
-		(property "LCSC" "C109318"
+		(property "KLC_S3.3" ""
+			(at 128.27 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 128.27 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 128.27 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -3281,7 +3347,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 132.08 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -3292,7 +3358,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "BZT52C18-FDICT-ND"
+		(property "Vendor P/N" "C192739"
 			(at 132.08 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -3303,7 +3369,29 @@
 				)
 			)
 		)
-		(property "LCSC" "C192739"
+		(property "KLC_S3.3" ""
+			(at 132.08 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 132.08 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 132.08 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -3406,7 +3494,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 71.12 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -3417,7 +3505,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "490-10672-1-ND"
+		(property "Vendor P/N" "C85858"
 			(at 71.12 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -3428,7 +3516,29 @@
 				)
 			)
 		)
-		(property "LCSC" "C85858"
+		(property "KLC_S3.3" ""
+			(at 71.12 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 71.12 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 71.12 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -3610,7 +3720,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 77.47 87.63 90)
 			(hide yes)
 			(show_name no)
@@ -3621,7 +3731,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "SMAJ22CALFCT-ND"
+		(property "Vendor P/N" "C148221"
 			(at 77.47 87.63 90)
 			(hide yes)
 			(show_name no)
@@ -3632,8 +3742,30 @@
 				)
 			)
 		)
-		(property "LCSC" "C148221"
-			(at 77.47 87.63 0)
+		(property "KLC_S3.3" ""
+			(at 77.47 87.63 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 77.47 87.63 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 77.47 87.63 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3734,7 +3866,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 106.68 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -3745,7 +3877,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "CSNL2512FT2L00CT-ND"
+		(property "Vendor P/N" "C2994640"
 			(at 106.68 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -3756,8 +3888,30 @@
 				)
 			)
 		)
-		(property "LCSC" "C2994640"
-			(at 106.68 69.85 0)
+		(property "KLC_S3.3" ""
+			(at 106.68 69.85 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 106.68 69.85 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 106.68 69.85 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3859,7 +4013,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 166.37 76.2 90)
 			(hide yes)
 			(show_name no)
@@ -3870,7 +4024,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "B340A-FDICT-ND"
+		(property "Vendor P/N" "C85098"
 			(at 166.37 76.2 90)
 			(hide yes)
 			(show_name no)
@@ -3881,8 +4035,30 @@
 				)
 			)
 		)
-		(property "LCSC" "C85098"
-			(at 166.37 76.2 0)
+		(property "KLC_S3.3" ""
+			(at 166.37 76.2 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 166.37 76.2 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 166.37 76.2 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4063,7 +4239,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 105.41 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -4074,7 +4250,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "311-4.64KHRCT-ND"
+		(property "Vendor P/N" "C137711"
 			(at 105.41 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -4085,7 +4261,29 @@
 				)
 			)
 		)
-		(property "LCSC" "C137711"
+		(property "KLC_S3.3" ""
+			(at 105.41 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 105.41 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 105.41 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -4189,7 +4387,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 182.88 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -4200,7 +4398,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "490-10672-1-ND"
+		(property "Vendor P/N" "C85858"
 			(at 182.88 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -4211,7 +4409,29 @@
 				)
 			)
 		)
-		(property "LCSC" "C85858"
+		(property "KLC_S3.3" ""
+			(at 182.88 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 182.88 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 182.88 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -4393,7 +4613,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 187.96 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -4404,7 +4624,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "399-A768EB476M1VLAE042CT-ND"
+		(property "Vendor P/N" "C46550468"
 			(at 187.96 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -4415,7 +4635,29 @@
 				)
 			)
 		)
-		(property "LCSC" "C46550468"
+		(property "KLC_S3.3" ""
+			(at 187.96 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 187.96 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 187.96 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -4519,7 +4761,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 91.44 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -4530,7 +4772,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "311-100KHRCT-ND"
+		(property "Vendor P/N" "C14675"
 			(at 91.44 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -4541,7 +4783,29 @@
 				)
 			)
 		)
-		(property "LCSC" "C14675"
+		(property "KLC_S3.3" ""
+			(at 91.44 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 91.44 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 91.44 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -4799,7 +5063,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 128.27 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -4810,7 +5074,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "296-16906-ND"
+		(property "Vendor P/N" "C273636"
 			(at 128.27 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -4821,7 +5085,29 @@
 				)
 			)
 		)
-		(property "LCSC" "C273636"
+		(property "KLC_S3.3" ""
+			(at 128.27 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 128.27 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 128.27 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -5027,7 +5313,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 133.35 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -5038,7 +5324,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "490-8000-1-ND"
+		(property "Vendor P/N" "C126533"
 			(at 133.35 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -5049,7 +5335,29 @@
 				)
 			)
 		)
-		(property "LCSC" "C126533"
+		(property "KLC_S3.3" ""
+			(at 133.35 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 133.35 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 133.35 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -5153,7 +5461,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 105.41 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -5164,7 +5472,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "311-41.2KHRCT-ND"
+		(property "Vendor P/N" "C185330"
 			(at 105.41 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -5175,7 +5483,29 @@
 				)
 			)
 		)
-		(property "LCSC" "C185330"
+		(property "KLC_S3.3" ""
+			(at 105.41 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 105.41 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 105.41 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -5279,7 +5609,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 156.21 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -5290,7 +5620,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "311-4.7KLRCT-ND"
+		(property "Vendor P/N" "C105871"
 			(at 156.21 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -5301,7 +5631,29 @@
 				)
 			)
 		)
-		(property "LCSC" "C105871"
+		(property "KLC_S3.3" ""
+			(at 156.21 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 156.21 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 156.21 97.79 0)
 			(hide yes)
 			(show_name no)

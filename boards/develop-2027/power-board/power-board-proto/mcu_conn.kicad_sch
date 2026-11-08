@@ -9,7 +9,7 @@
 		(rev "v1.0-proto")
 		(company "RoboJackets RoboCup")
 		(comment 1 "Based on a Design by Akshat Sehgal, Sean Seguin, & Ibrahim Irfan")
-		(comment 2 "Aiden Lee")
+		(comment 2 "Aiden Lee [piman PCB]")
 	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x04_Pin"
@@ -2307,7 +2307,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 74.93 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -2318,7 +2318,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "664-12402012E212ACT-ND"
+		(property "Vendor P/N" "C5150972"
 			(at 74.93 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -2329,7 +2329,29 @@
 				)
 			)
 		)
-		(property "LCSC" "C5150972"
+		(property "KLC_S3.3" ""
+			(at 74.93 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 74.93 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 74.93 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -2785,7 +2807,7 @@
 				)
 			)
 		)
-		(property "Vendor" ""
+		(property "Vendor" "LCSC"
 			(at 43.18 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -2796,7 +2818,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" ""
+		(property "Vendor P/N" "C2691448"
 			(at 43.18 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -2807,7 +2829,29 @@
 				)
 			)
 		)
-		(property "LCSC" "C2691448"
+		(property "KLC_S3.3" ""
+			(at 43.18 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 43.18 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 43.18 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -2914,7 +2958,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 152.4 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -2925,7 +2969,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "311-5.10KLRCT-ND"
+		(property "Vendor P/N" "C105872"
 			(at 152.4 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -2936,7 +2980,29 @@
 				)
 			)
 		)
-		(property "LCSC" "C105872"
+		(property "KLC_S3.3" ""
+			(at 152.4 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 152.4 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 152.4 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -3119,7 +3185,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 133.35 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -3130,7 +3196,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "296-43875-1-ND"
+		(property "Vendor P/N" "C106794"
 			(at 133.35 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -3141,8 +3207,30 @@
 				)
 			)
 		)
-		(property "LCSC" "C106794"
-			(at 133.35 77.47 0)
+		(property "KLC_S3.3" ""
+			(at 133.35 77.47 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 133.35 77.47 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 133.35 77.47 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3266,7 +3354,7 @@
 				)
 			)
 		)
-		(property "Vendor" "DigiKey"
+		(property "Vendor" "LCSC"
 			(at 165.1 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -3277,7 +3365,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "311-5.10KLRCT-ND"
+		(property "Vendor P/N" "C105872"
 			(at 165.1 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -3288,7 +3376,29 @@
 				)
 			)
 		)
-		(property "LCSC" "C105872"
+		(property "KLC_S3.3" ""
+			(at 165.1 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 165.1 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 165.1 40.64 0)
 			(hide yes)
 			(show_name no)
