@@ -20,8 +20,9 @@ J2 mates the current controlboard J9 (20 / 20).
     - plug / fill and cap the 8 U1 EPAD gap vias (0.075 mm mask web to the paste openings);
     - J2 shield pins paste-in-hole, 2.00 mm B.Paste apertures, 0.13 mm stencil;
     - WROOM-1 build only: a stencil with no paste on U1 pads 30, 31, 32.
-1.6 Parts: generate the BOM / CPL for this variant. Source U1, U4, J2 and ANT1 outside JLCPCB stock. Re-check
-    stock of D1 (C5875754), D4 (C3702214), U7 (C1852117). Double-sided assembly.
+1.6 Parts: the BOM is in bom/ (2026-11-07); generate the CPL for this variant. Source U1 and ANT1 outside JLCPCB
+    stock. Re-check stock of D1 (C5875754), D4 (C3702214), U7 (C1852117), J2 (C3643542, 37 = 18 board sets with
+    the CB J9) and U4 (MCP1826S-3302E/DB, C638624). Double-sided assembly.
 
 
 2. BENCH BRING-UP
@@ -31,7 +32,8 @@ J2 mates the current controlboard J9 (20 / 20).
     (BAT54 / RB521 class) in series with R2, cathode toward J2. Add a 10k bleeder on +3V3_HOST only if the rail
     exceeds the expectation.
 2.2 Switchover: check the USB-to-host and host-to-USB transients at C1 (U7: rising 2.93-3.07 V, falling
-    2.86-2.94 V).
+    2.86-2.94 V), and VIN2_USB at C6: U4 (MCP1826S) sees C8 / C1 behind U3, more than the 22 uF the datasheet
+    recommends on its output.
 2.3 Module supply at C1 during 5 GHz TX from a 3.30 V controlboard rail.
 2.4 USB attach inrush on the team's laptops (exceeds the 10 uF limit; bench use only).
 2.5 WROOM-1 build: RSSI and throughput against a devkit (antenna overhangs the front edge).

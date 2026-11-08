@@ -3850,163 +3850,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Linear:AP7361C-33E"
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at -3.81 3.175 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "AP7361C-33E"
-				(at 0 3.175 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-				(at 0 5.715 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP7361C.pdf"
-				(at 0 -1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "linear regulator ldo fixed positive"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "SOT?223*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "AP7361C-33E_0_1"
-				(rectangle
-					(start -5.08 -5.08)
-					(end 5.08 1.905)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "AP7361C-33E_1_1"
-				(pin power_in line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "VI"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "VO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Regulator_Linear:TLV1117-33"
 			(pin_names
 				(offset 0.254)
@@ -5531,6 +5374,164 @@
 			)
 			(embedded_fonts no)
 		)
+	
+		(symbol
+		  "Regulator_Linear:MCP1826S"
+		  (pin_names
+		    (offset 0.254)
+		  )
+		  (exclude_from_sim no)
+		  (in_bom yes)
+		  (on_board yes)
+		  (in_pos_files yes)
+		  (duplicate_pin_numbers_are_jumpers no)
+		  (property "Reference" "U"
+		    (at -3.81 3.175 0)
+		    (show_name no)
+		    (do_not_autoplace no)
+		    (effects
+		      (font
+		        (size 1.27 1.27)
+		      )
+		    )
+		  )
+		  (property "Value" "MCP1826S"
+		    (at 0 3.175 0)
+		    (show_name no)
+		    (do_not_autoplace no)
+		    (effects
+		      (font
+		        (size 1.27 1.27)
+		      )
+		      (justify left)
+		    )
+		  )
+		  (property "Footprint" ""
+		    (at -2.54 3.81 0)
+		    (show_name no)
+		    (do_not_autoplace no)
+		    (hide yes)
+		    (effects
+		      (font
+		        (size 1.27 1.27)
+		      )
+		    )
+		  )
+		  (property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/22057B.pdf"
+		    (at 0 6.35 0)
+		    (show_name no)
+		    (do_not_autoplace no)
+		    (hide yes)
+		    (effects
+		      (font
+		        (size 1.27 1.27)
+		      )
+		    )
+		  )
+		  (property "Description" "1000mA, Low-Voltage, Low Quiescent Current LDO Regulator, SOT-223, TO-220, TO-263"
+		    (at 0 0 0)
+		    (show_name no)
+		    (do_not_autoplace no)
+		    (hide yes)
+		    (effects
+		      (font
+		        (size 1.27 1.27)
+		      )
+		    )
+		  )
+		  (property "ki_keywords" "regulator linear ldo"
+		    (at 0 0 0)
+		    (show_name no)
+		    (do_not_autoplace no)
+		    (hide yes)
+		    (effects
+		      (font
+		        (size 1.27 1.27)
+		      )
+		    )
+		  )
+		  (property "ki_fp_filters" "SOT?223*TabPin2* TO?220* TO?263*"
+		    (at 0 0 0)
+		    (show_name no)
+		    (do_not_autoplace no)
+		    (hide yes)
+		    (effects
+		      (font
+		        (size 1.27 1.27)
+		      )
+		    )
+		  )
+		  (symbol "MCP1826S_0_1"
+		    (rectangle
+		      (start -5.08 1.905)
+		      (end 5.08 -5.08)
+		      (stroke
+		        (width 0.254)
+		        (type default)
+		      )
+		      (fill
+		        (type background)
+		      )
+		    )
+		  )
+		  (symbol "MCP1826S_1_1"
+		    (pin power_in line
+		      (at -7.62 0 0)
+		      (length 2.54)
+		      (name "VI"
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		      (number "1"
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		    )
+		    (pin power_in line
+		      (at 0 -7.62 90)
+		      (length 2.54)
+		      (name "GND"
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		      (number "2"
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		    )
+		    (pin power_out line
+		      (at 7.62 0 180)
+		      (length 2.54)
+		      (name "VO"
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		      (number "3"
+		        (effects
+		          (font
+		            (size 1.27 1.27)
+		          )
+		        )
+		      )
+		    )
+		  )
+		  (embedded_fonts no)
+		)
 	)
 	(junction
 		(at 327.66 160.02)
@@ -6372,7 +6373,7 @@
 		)
 		(uuid "2448d628-34b9-43e4-9947-afc6296548c9")
 	)
-	(text "POWER LAYOUT: PCB routed; thermal verification pending.\nMinimize TVS return inductance; input/output caps close to U8/U9.\nSize copper from actual load, temperature and stackup, not a fixed 1 mm rule.\nTPS2116 section 10; AP7361C thermal data; TVS0500 layout guidance."
+	(text "POWER LAYOUT: PCB routed; thermal verification pending.\nMinimize TVS return inductance; input/output caps close to U8/U9.\nSize copper from actual load, temperature and stackup, not a fixed 1 mm rule.\nTPS2116 section 10; MCP1826S thermal data; TVS0500 layout guidance."
 		(at 240.03 68.58 0)
 		(effects
 			(font
@@ -6382,7 +6383,7 @@
 		)
 		(uuid "03db828a-d0b1-4f45-823d-33744c77329e")
 	)
-	(text "USB INPUT: C30 + C31 + C35 = 9.1uF on VBUS (USB limit 10uF).\nPTC rating is not USB-current permission. USB 3V3 comes from U7 LDO via U9.\nSources: TPS2116 7.3.2; MF-MSMF / 1812L; AP7361C."
+	(text "USB INPUT: C30 + C31 + C35 = 9.1uF on VBUS (USB limit 10uF).\nPTC rating is not USB-current permission. USB 3V3 comes from U7 LDO via U9.\nSources: TPS2116 7.3.2; MF-MSMF / 1812L; MCP1826S."
 		(at 110.49 232.41 0)
 		(effects
 			(font
@@ -7209,7 +7210,7 @@
 				)
 			)
 		)
-		(property "Description" "4.7uF 16V X5R at the U7 (AP7361C) input on VBUS. Counts toward the USB 10uF VBUS limit (C30+C31+C35 = 9.1uF)."
+		(property "Description" "4.7uF 16V X5R at the U7 (MCP1826S) input on VBUS. Counts toward the USB 10uF VBUS limit (C30+C31+C35 = 9.1uF)."
 			(at 139.7 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -9894,7 +9895,7 @@
 				)
 			)
 		)
-		(property "Description" "10uF 10V X5R at the U7 (AP7361C) output, +3V3_LDO; the LDO needs at least 2.2uF."
+		(property "Description" "10uF 10V X5R at the U7 (MCP1826S) output, +3V3_LDO; the LDO needs at least 1uF ceramic and recommends at most 22uF on its output (C32 + C36 = 12.2uF, DS22057B 4.3)."
 			(at 170.18 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -14430,7 +14431,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Linear:AP7361C-33E")
+		(lib_id "Regulator_Linear:MCP1826S")
 		(at 149.86 210.82 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14449,7 +14450,7 @@
 				)
 			)
 		)
-		(property "Value" "AP7361C-33E"
+		(property "Value" "MCP1826S-3302E"
 			(at 149.86 207.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14470,7 +14471,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP7361C.pdf"
+		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/22057B.pdf"
 			(at 149.86 210.82 0)
 			(hide yes)
 			(show_name no)
@@ -14481,7 +14482,7 @@
 				)
 			)
 		)
-		(property "Description" "1A LDO, dropout 360mV @1A typ, stable with >=2.2uF MLCC (Diodes DS37274). Replaces TLV1117 (1.3-1.4V dropout)."
+		(property "Description" "3.3V 1A LDO, VBUS to +3V3_LDO (USB power). VIN 2.3-6.0V, dropout 400mV max at 1A, stable with >= 1uF ceramic output cap (22uF max recommended), SOT-223 theta-JA 62C/W (Microchip DS22057B). Pins 1 VIN, 2 GND (tab), 3 VOUT, no SHDN. Alternate: Diodes AP7361C-33E-13 (MPN_ALT, same pinout)."
 			(at 149.86 210.82 0)
 			(hide yes)
 			(show_name no)
@@ -14492,7 +14493,7 @@
 				)
 			)
 		)
-		(property "MPN" "Diodes AP7361C-33E-13"
+		(property "MPN" "Microchip MCP1826S-3302E/DB"
 			(at 149.86 210.82 0)
 			(hide yes)
 			(show_name no)
@@ -14503,7 +14504,7 @@
 				)
 			)
 		)
-		(property "Vendor PN" "AP7361C-33E-13DICT-ND"
+		(property "Vendor PN" "MCP1826S-3302E/DB-ND"
 			(at 149.86 210.82 0)
 			(hide yes)
 			(show_name no)
@@ -14514,7 +14515,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C638624"
 			(at 149.86 210.82 0)
 			(hide yes)
 			(effects
@@ -14523,7 +14524,7 @@
 				)
 			)
 		)
-		(property "LCSC MPN" ""
+		(property "LCSC MPN" "Microchip MCP1826S-3302E/DB"
 			(at 149.86 210.82 0)
 			(hide yes)
 			(effects
@@ -14551,7 +14552,52 @@
 				)
 			)
 		)
-	)
+	
+		(property "Datasheet ALT" "https://www.diodes.com/assets/Datasheets/AP7361C.pdf"
+			(at 149.86 210.82 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN_ALT" "Diodes AP7361C-33E-13 (fallback, same SOT-223 pinout; no stock 2026-11-07)"
+			(at 149.86 210.82 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN_ALT LCSC" "C500795"
+			(at 149.86 210.82 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1A, VIN 6.0V max, 3.3V +-2.5%"
+			(at 149.86 210.82 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN ALT" "AP7361C-33E-13DICT-ND"
+			(at 149.86 210.82 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 30.48 104.14 0)

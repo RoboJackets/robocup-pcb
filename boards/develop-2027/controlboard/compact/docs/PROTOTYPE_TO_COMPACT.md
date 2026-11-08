@@ -237,8 +237,11 @@ four contacts pass U2 before they join. The J1 shield is tied to GND (was not co
 ## 3. What did not change
 
 - MCU (STM32H723ZGT6), crystal (25 MHz ABM8), IMU part (LSM6DSV320X), microSD socket (Hirose DM3AT-SF-PEJM5), USB-C
-  connector (GCT USB4110-GF-A), power muxes (TPS2116), LDOs (AP7361C-33E), fuses, the radio module (ESP32-C5-WROOM-1U
+  connector (GCT USB4110-GF-A), power muxes (TPS2116), fuses, the radio module (ESP32-C5-WROOM-1U
   N8R8) and the mezzanine part (Samtec LSHM-110-02.5-L-DV-A-S-K-TR).
+- The LDOs (CB U7, radio U4) were Diodes AP7361C-33E-13 in the prototype; the compact boards fit the Microchip
+  MCP1826S-3302E/DB (LCSC C638624) because the AP7361C was out of stock everywhere on 2026-11-07. Same SOT-223
+  pinout and footprint; the AP7361C stays as `MPN_ALT`.
 - ESP-Hosted SPI pins on the ESP32-C5 (GPIO6 / 7 / 2 / 10), the radio reset and boot circuits, the radio power mux.
 - CB I2C bus assignment (I2C1 OLED, I2C2 kicker, I2C4 expansion, I2C5 IMU), UART4 to the powerboard, DIP, buttons
   and their pins.

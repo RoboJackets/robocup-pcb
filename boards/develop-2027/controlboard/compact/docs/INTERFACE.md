@@ -45,7 +45,7 @@ envelope (Samtec note 1) is x 37.2-42.2, y 0.96-11.11. On the radio the signal r
 - CB parts under the radio outline are 1.75 mm or lower: U2 (LQFP-144, 1.6 mm), the west end of U10 (SO-14,
   1.75 mm), X1 (0.8 mm) and 0402 / 0603 passives. Keep it so: nothing taller than 1.75 mm may be placed in
   CB x 36-66, y 0-40.
-- The tallest part on the radio underside is U4 (AP7361C, SOT-223, 1.8 mm). It sits partly (Inboard) or fully
+- The tallest part on the radio underside is U4 (MCP1826S LDO, SOT-223, 1.8 mm max). It sits partly (Inboard) or fully
   (Overhang) over U2, which leaves 5.0 - 1.6 - 1.8 = 1.6 mm. Nothing taller than 1.8 mm may be placed on the radio
   underside.
 - The radio USB-C (J1) is on the radio's top side at its west edge (radio (3.70, 33.50) Inboard, (3.70, 28.20)

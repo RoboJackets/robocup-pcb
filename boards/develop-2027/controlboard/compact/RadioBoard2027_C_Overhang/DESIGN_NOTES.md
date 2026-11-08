@@ -77,7 +77,8 @@ inside the board. Choosing between them: [../README.md](../README.md).
 | TPD4E05U06 | TI TPD4E05U06 (DQA, USON-10) |
 | TVS0500 | TI TVS0500 (D2, D5) |
 | CDSOD323 | Bourns CDSOD323-TxxSC TVS series (D4), www.bourns.com/docs/product-datasheets/cdsod323-txxsc.pdf |
-| DS37274 | Diodes AP7361C LDO |
+| DS22057B | Microchip MCP1826/MCP1826S 1 A LDO, Rev B (ww1.microchip.com/downloads/en/DeviceDoc/22057B.pdf) |
+| DS37274 | Diodes AP7361C LDO (the `MPN_ALT` alternate for the LDO) |
 | DS13313 | ST STM32H723 datasheet rev 4 (controlboard pins on the link) |
 | MF-MSMF | Bourns MF-MSMF PTC, Rev BD 06/26 |
 | LSHM | Samtec LSHM product specification (suddendocs.samtec.com/productspecs/lshm.pdf) |
@@ -108,7 +109,7 @@ debugging.
 | +3V3_HOST | controlboard +3V3, J2 pins 16 / 18 / 20, D4 TVS at J2 | U3 VIN1 and MODE, U7 VDD (C10) |
 | Net-(D2-IN-Pad4) (raw VBUS) | J1 VBUS contacts, D2 and D5 | F1 |
 | VBUS | after F1 | C5, U4 |
-| /Power/VIN2_USB | U4 AP7361C 3.3 V output | U3 VIN2 |
+| /Power/VIN2_USB | U4 MCP1826S 3.3 V output | U3 VIN2 |
 | +3V3 | U3 output | module, LEDs, R1 / R3 / R13 pull-ups |
 
 - **U3 TPS2116, priority mode** (MODE tied to VIN1): the controlboard supply wins whenever U7 reports it good. The
@@ -134,9 +135,13 @@ debugging.
   only DC path into the dead controlboard rail is the ESP32-C5 CS pull-up (30k worst case) through the
   controlboard's R29 10k. With only the controlboard's power LED (D6 / R46) as load, the dead rail reaches at most
   **1.70 V**, 1.23 V below U7's lowest VIT+, so U7 cannot hand the module to it. MISO / HANDSHAKE / DATA_READY are
-  kept tri-stated by firmware while GPIO9 is low. Bench check open (TODO).
-- **U4 AP7361C-33E**: 1 A, 360 mV dropout at 1 A (DS37274). At the module's 403 mA TX peak it dissipates
-  (5.0 - 3.3) x 0.403 = 0.69 W; the average is far lower. Its tab is solid in the bottom GND pour (rule "LDO tab
+  kept tri-stated by firmware while GPIO9 is low. Firmware disables the ESP CS pull-up (docs/FIRMWARE.md §2.2), which removes this path; then only the TPS2116 reverse leakage (<= 0.15 uA) and STM32 pin leakage remain. Bench check open (TODO).
+- **U4 MCP1826S-3302E/DB** (LCSC C638624, DS22057B; replaces the out-of-stock AP7361C-33E-13, kept as `MPN_ALT`,
+  same SOT-223 pinout 1 VIN, 2 GND tab, 3 VOUT): 3.3 V +-2.5 %, 1 A, VIN 2.3-6.0 V, dropout 400 mV max at 1 A, so
+  about 160 mV at the 403 mA TX peak (3.3 V holds down to a VBUS of about 3.5 V). Stable with >= 1 uF ceramic on
+  the output, at most 22 uF recommended: C6 10 uF sits on the VOUT pin; C8 / C1 sit behind U3. At the 403 mA peak
+  it dissipates (5.0 - 3.3) x 0.403 = 0.69 W (0.79 W at 5.25 V); with the SOT-223 theta-JA of 62 °C/W that is a
+  43-49 °C rise even if the peak were continuous; the average is far lower. Its tab is solid in the bottom GND pour (rule "LDO tab
   solid"), with two GND vias just north of the tab (outside its pad, mask and paste) and one between pins and tab.
 - **Module supply**: 3.0-3.6 V, >= 0.6 A source (MOD Table 6-2); peaks 313 mA at 2.4 GHz and 403 mA at 5 GHz (MOD
   Tables 6-4, 6-5).
@@ -443,7 +448,7 @@ planes stay normal size.
 | Fast to Fast spacing | 0.3 mm between different Fast nets (tracks, vias), outer; pads not tested; the two USB lines not against each other | 3W centre to centre between fast lines; pads excluded for the 0.5 mm pitch pad entries |
 | Fast track to Fast pad | 0.24 mm, outer; USB lines not against each other | Covers what the previous rule leaves out; every pad entry here keeps >= 0.25 mm, no footprint exempt |
 | Link GND pins without spokes | min_resolved_spokes 0 on J2 / U5 / U6 GND pads | Joined by track; no room for spokes at 0.5 mm pitch |
-| LDO tab solid | solid zone connection on U4 GND | U4 dissipates up to about 0.7 W |
+| LDO tab solid | solid zone connection on U4 GND | U4 dissipates up to about 0.8 W (5.25 V VBUS) |
 | D4 anode solid | solid zone connection on D4 GND | D4 has no GND via of its own (deviation 12) |
 | USB-C GND contacts by track | min_resolved_spokes 0 on J1 GND pads | Tied by track to the shell pads; no room for spokes |
 | Antenna keep-out | disallow track / via / pad in `ANTENNA_KEEPOUT` or `ANTENNA_KEEPOUT_INNER` | Rule areas are not tested by DRC in this KiCad 10 setup (proven); this enforces them |
@@ -632,8 +637,12 @@ Each item was checked on the saved board file on 2026-11-07 and accepted for the
 
 ## 11. BOM notes
 
-- Not stocked at JLCPCB: U1 (both module variants; the WROOM-1-N8R8 fallback C51950749 had 0 on 2026-11-06), U4
-  AP7361C-33E-13, J2 Samtec LSHM-110-02.5-L-DV-A-S-K-TR, ANT1. Source from Mouser / Digi-Key or consign.
+- BOM files: [bom/](bom/) (2026-11-07, see bom/README.md).
+- Not stocked at JLCPCB: U1 (both module variants; the WROOM-1-N8R8 fallback C51950749 had 0 on 2026-11-06) and
+  ANT1. Source from Mouser / Digi-Key (the `Sourcing` fields) and consign.
+- J2 Samtec LSHM-110-02.5-L-DV-A-S-K-TR is JLCPCB-assembled: C3643542, 37 at JLCPCB on 2026-11-07, 2 per board set
+  with the controlboard J9 = 18 board sets. U4 is the MCP1826S-3302E/DB (C638624, 1,766 at JLCPCB); the
+  AP7361C-33E-13 (0 everywhere) stays as `MPN_ALT`.
 - Check stock before ordering: D1 Kingbright APT1608SGC (C5875754, 1,019 on 2026-11-07), D4 Bourns CDSOD323-T03S
   (C3702214, Extended), U7 TI TPS3840PL29DBVR (C1852117).
 - Resistors are UNI-ROYAL 0402WGF 1 % (the MPN matches the LCSC part; the Yageo / Panasonic part is MPN_ALT). R7 is

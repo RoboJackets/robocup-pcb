@@ -58,7 +58,7 @@
 	(condition "A.Type == 'Pad' && A.NetName == 'GND' && (A.memberOfFootprint('J2') || A.memberOfFootprint('U5') || A.memberOfFootprint('U6'))")
 	(constraint min_resolved_spokes 0))
 
-# U4 (AP7361C, up to ~0.7 W from USB) needs its tab solidly in the bottom GND pour.
+# U4 (MCP1826S LDO, up to ~0.8 W from USB) needs its tab solidly in the bottom GND pour.
 (rule "LDO tab solid"
 	(condition "A.Type == 'Pad' && A.memberOfFootprint('U4') && A.NetName == 'GND'")
 	(constraint zone_connection solid))

@@ -169,6 +169,11 @@ The Inboard and Overhang schematics are identical, so everything below applies t
   from DATA_READY / HANDSHAKE.
 - While PWR_SRC_HOST (GPIO9) is low the radio runs from USB and the controlboard may be unpowered: keep MISO,
   HANDSHAKE and DATA_READY as inputs without pulls, and enable the link outputs only when GPIO9 is high.
+- **No internal pull-up on CS (GPIO10), ever.** The controlboard's R29 10k already holds CS high whenever the
+  controlboard is powered. An ESP pull-up on CS is the only DC path from the radio's USB-derived 3.3 V into an
+  unpowered controlboard (through R29 into its +3V3 rail, up to about 41 uA / 1.7 V). With it disabled, the only
+  remaining leakage is the TPS2116 reverse leakage (<= 0.15 uA) and the STM32 FT pin leakage (<= 1.5 uA per pin).
+  If the ESP-Hosted slave config enables a CS pull-up, turn it off.
 
 ### 2.3 Strapping, boot and USB
 
@@ -182,7 +187,7 @@ The Inboard and Overhang schematics are identical, so everything below applies t
 ### 2.4 Power, switchover and brownout
 
 - The radio runs from the controlboard +3V3 (+3V3_HOST, through J2) when present, else from USB-C through its
-  AP7361C LDO. U3 (TPS2116, priority mode) selects; U7 (TPS3840PL29 supervisor) drives its PR1 input.
+  MCP1826S LDO (U4). U3 (TPS2116, priority mode) selects; U7 (TPS3840PL29 supervisor) drives its PR1 input.
 - Thresholds (TPS3840PL29, -40 to 125 °C): the host is selected above 2.932-3.069 V rising (3.00 V typical) and
   dropped below 2.857-2.944 V falling (2.90 V typical), within 15-30 us. Below the falling threshold U3 switches to
   USB, or turns off if USB is absent.

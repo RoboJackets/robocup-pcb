@@ -36,6 +36,17 @@ Diagrams:
   [RadioBoard2027_C_Overhang/docs/board_map.svg](RadioBoard2027_C_Overhang/docs/board_map.svg): radio buttons, LEDs,
   USB, test pads and the J2 pin map.
 
+## BOM
+
+The bills of materials are in each board's `bom/` folder: [ControlBoard2027_C/bom/](ControlBoard2027_C/bom/),
+[RadioBoard2027_C_Inboard/bom/](RadioBoard2027_C_Inboard/bom/) and
+[RadioBoard2027_C_Overhang/bom/](RadioBoard2027_C_Overhang/bom/). Each folder has a full BOM with sourcing and stock,
+the JLCPCB upload file, a list of the parts to order separately (Digi-Key / Mouser), and a README with the stock date,
+board-set limits, substitutions and open issues. The JLCPCB upload file is generated from the schematic fields.
+The LDOs (CB U7, radio U4) are Microchip MCP1826S-3302E/DB (the AP7361C-33E-13 was out of stock everywhere on
+2026-11-07). The LSHM mezzanine (CB J9, radio J2) is JLCPCB-assembled as C3643542: 37 at JLCPCB on 2026-11-07, two
+per board set, so 18 board sets.
+
 ## Folder map
 
 | Path | Content |
@@ -94,16 +105,16 @@ Details and the full lists are in each board's TODO.txt.
 
 - **All boards:** confirm the impedance widths in JLC's calculator and order with impedance control; independent
   re-audit of the last changed areas (CB back-edge connectors and audit fixes; Overhang USB-skew changes; Inboard
-  after any further change), then refill zones, DRC with parity, ERC and the length scripts again; generate BOM and
-  placement files (none exist yet for the compact set); re-check stock; parts not stocked at JLCPCB must be sourced
-  (CB: D7-D11, J9, U7, U11; radios: U1, U4, J2, ANT1).
+  after any further change), then refill zones, DRC with parity, ERC and the length scripts again; generate the
+  placement files (the BOMs exist, see above); re-check stock (LSHM C3643542 is the limiting JLCPCB part); parts not
+  stocked at JLCPCB must be sourced and consigned (CB: D7-D11, U11; radios: U1, ANT1).
 - **Controlboard:** agree J15 (powerboard), J10 (kicker) and J4-J8 (motor modules: their connector is still PH 8P)
   pinouts with the mating boards; choose the OLED module; confirm the DotStar footprint (top-view drawing).
 - **Radios:** decide the antenna (FXP831 5 GHz gain above the module's certified gain; Inboard WROOM-1 fallback sits
   over CB copper); fab notes for tented and plugged vias and the J2 paste-in-hole stencil; check the TPD4E05U06 land
   pattern against TI's drawing.
 
-Fabrication outputs (gerbers, BOM, CPL) are not generated for the compact set.
+Fabrication outputs (gerbers, CPL) are not generated for the compact set; the BOMs are in each board's `bom/`.
 
 ## Interface rule
 

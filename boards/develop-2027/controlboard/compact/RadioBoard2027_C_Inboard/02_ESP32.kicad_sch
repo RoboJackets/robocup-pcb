@@ -1,6 +1,6 @@
 (kicad_sch
 	(version 20250610)
-	(generator "konnect")
+	(generator "eeschema")
 	(generator_version "10.0")
 	(uuid "aa19fcd7-6d93-4a56-9b5a-982616c1f1e1")
 	(paper "A3")
@@ -2520,7 +2520,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Sourcing" "Order separately and consign (0 at JLCPCB / LCSC on 2026-11-07): Mouser 356-ESP32C5WRM1UN8R8 (0 in stock, order with lead time), or Digi-Key product 27566801. Fallback build: MPN_ALT"
+			(at 203.2 144.78 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 167.64 99.06 0)
@@ -5191,7 +5200,7 @@
 				)
 			)
 		)
-		(property "Vendor PN" "931-1121-ND"
+		(property "Vendor PN" "960-FXP831070100C (Mouser)"
 			(at 241.3 172.72 0)
 			(hide yes)
 			(effects
@@ -5226,7 +5235,16 @@
 				)
 			)
 		)
-	)
+	
+		(property "Sourcing" "Order separately, loose accessory (LCSC C6258568 0 on 2026-11-07): Mouser 960-FXP831070100C, or Digi-Key 931-1121-ND. Only with the WROOM-1U"
+			(at 241.3 172.72 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 274.32 121.92 0)

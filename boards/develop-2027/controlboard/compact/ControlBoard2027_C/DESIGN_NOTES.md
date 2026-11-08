@@ -66,7 +66,8 @@ confirmation with JLC, re-audit of the last changed areas, mating-board agreemen
 | AN5419 | STM32H723/733 hardware development, Rev 3; SDMMC routing §9.4.1 |
 | AN2606 | STM32 system bootloader, Rev 61, STM32H72x section (Tables 111 / 112) |
 | SLVSFG1A | TI TPS2116 power mux |
-| DS37274 | Diodes AP7361C LDO |
+| DS22057B | Microchip MCP1826/MCP1826S 1 A LDO, Rev B (ww1.microchip.com/downloads/en/DeviceDoc/22057B.pdf) |
+| DS37274 | Diodes AP7361C LDO (the `MPN_ALT` alternate for the LDO) |
 | TVS0500 | TI TVS0500 flat-clamp TVS |
 | AO3401A | AOS AO3401A P-FET |
 | MF-MSMF | Bourns MF-MSMF PTC, Rev BD 06/26 |
@@ -219,9 +220,23 @@ VBUS from J2 goes through D1 (TVS0500DRV, at J2, before F1) and F1 to U8 VIN2, U
 - VBUS capacitance: C30 2.2 uF + C31 4.7 uF (U7 input) + C35 2.2 uF = 9.1 uF nominal, inside the USB 10 uF limit.
   Everything behind the muxes still charges from VBUS at attach (m18).
 - With the cable out, R20 / R21 (115k total) pull VBUS to 0 V, so U8 VIN2 does not float.
-- U7 AP7361C-33E-13: 1 A, 360 mV dropout at 1 A, stable with >= 2.2 uF MLCC (DS37274). SOT-223 pinout 1 IN, 2 GND,
-  3 OUT (the -33ER variant has a different pinout and does not fit). C31 4.7 uF in, C32 10 uF out. On USB alone it
-  carries about 0.35 A (0.6 W) plus up to 0.4 A of radio TX peaks (about 1.3 W peak).
+- U7 Microchip MCP1826S-3302E/DB (LCSC C638624, DS22057B): 3.3 V +-2.5 %, 1 A, VIN 2.3-6.0 V (6.5 V absolute
+  maximum; USB VBUS is at most 5.25 V), dropout 400 mV max at 1 A, quiescent current 120 uA typ / 220 uA max. The
+  3-pin SOT-223 part has no SHDN, PWRGD or sense pin. Pinout 1 VIN, 2 GND (tab), 3 VOUT, the same as the
+  AP7361C-33E-13 it replaces (out of stock everywhere on 2026-11-07; kept as `MPN_ALT`; the AP7361C-33ER has a
+  reversed pinout and does not fit). Microchip's land pattern (1.90 x 0.95 mm leads at 6.10 mm, 1.90 x 3.25 mm tab,
+  2.30 mm pitch) lies inside the `SOT-223-3_TabPin2` pads (2.0 x 1.5 mm at 6.30 mm, 2.0 x 3.8 mm tab).
+- U7 capacitors: C31 4.7 uF in; C32 10 uF + C36 2.2 uF out (12.2 uF nominal on the LDO pin). The datasheet asks for
+  >= 1 uF ceramic on the output and recommends at most 22 uF (DS22057B §4.3), and an input capacitor at least as
+  large as the output capacitor for load steps (§4.4). C31 is smaller than that because VBUS must stay under the
+  USB 10 uF limit. The +3V3 bulk (about 77 uF) sits behind the U9 switch, not on the LDO pin; check the switchover
+  transient on the bench (TODO 2.2).
+- U7 load and heat: on USB alone it carries about 0.35 A plus up to 0.4 A of radio TX peaks. Dissipation is
+  (5.0 - 3.3) x 0.35 = 0.60 W (0.68 W at 5.25 V); a 0.75 A peak gives 1.28 W (1.46 W at 5.25 V). With the SOT-223
+  theta-JA of 62 °C/W (JEDEC 4-layer board, DS22057B) the junction rises 37-42 °C at 0.35 A. A sustained 0.75 A
+  would add 79-91 °C (thermal shutdown at 150 °C, 125 °C operating limit), but TX peaks are short bursts and USB
+  power is bench-only (m22). Dropout at 0.75 A is at most about 0.3 V (400 mV at 1 A), so 3.3 V holds down to a
+  VBUS of about 3.6 V.
 
 ### 4.8 Rail LEDs and test points
 
@@ -887,12 +902,15 @@ board's J2 is still the older 8-pin JST PH. Change it to this pinout, or build a
 ## 15. BOM and sourcing
 
 The board is built and assembled by JLCPCB. Every part has an `LCSC` part number and `LCSC MPN` where JLCPCB stocks it;
-the Digi-Key / Mouser part stays in `MPN` / `Vendor PN` as the alternate. The BOM and placement files for this board
-have not been generated yet (TODO).
+the Digi-Key / Mouser part stays in `MPN` / `Vendor PN` as the alternate. The BOM files are in [bom/](bom/), generated
+on 2026-11-07 from the schematic fields; stock, board-set limits and open issues are in [bom/README.md](bom/README.md).
+The placement file has not been generated yet (TODO).
 
 Fields: `LCSC`, `LCSC MPN`, `LCSC Datasheet` (only where the placed part differs from `MPN`), `MPN`, `Vendor PN`,
 `Rating` (minimum voltage / dielectric for capacitors, tolerance for resistors; the placed part meets or exceeds it),
-`Datasheet`, `Description`. H1-H4 and TP1-TP21 are excluded from the BOM.
+`Datasheet`, `Description`. U7 also has `MPN_ALT`, `MPN_ALT LCSC`, `Vendor PN ALT` and `Datasheet ALT` (the AP7361C
+alternate). Parts bought outside JLCPCB (D7-D11, U11) have a `Sourcing` field that says where to buy them. H1-H4 and
+TP1-TP21 are excluded from the BOM.
 
 **Assembly.** 86 parts are on the bottom (most decoupling, the muxes U8 / U9, F5 / F6, Q1, D2-D4, U11 and pull
 resistors), so the order needs double-sided assembly. Through-hole: SW1-SW6, J13 socket, J15. J9 (0.5 mm pitch), U11
@@ -902,10 +920,15 @@ resistors), so the order needs double-sided assembly. Through-hole: SW1-SW6, J13
 
 | Refs | Part | Alternate source | Why |
 |---|---|---|---|
-| D7-D11 | American Bright BB-2020BGR-TRB | Digi-Key 2007-BB-2020BGR-TRBCT-ND | No APA102-2020-compatible LED for this footprint at JLCPCB |
-| J9 | Samtec LSHM-110-02.5-L-DV-A-S-K-TR | Digi-Key SAM14955CT-ND | Too few at JLCPCB (one each on this board and the radio) |
-| U7 | Diodes AP7361C-33E-13 | Digi-Key AP7361C-33E-13DICT-ND | 4 at JLCPCB. The -33ER SOT-223 has a different pinout; in-stock alternatives need other output caps or are 400 mA |
-| U11 | ST LSM6DSV320XTR | Mouser 511-LSM6DSV320XTR | 0 at JLCPCB; the LSM6DSV32X / 16X lack the +-320 g channel |
+| D7-D11 | American Bright BB-2020BGR-TRB | Mouser 442-BB2020BGRTB (or Digi-Key 2007-BB-2020BGR-TRBCT-ND) | 0 at JLCPCB and LCSC; no APA102-2020-compatible LED for this footprint at JLCPCB |
+| U11 | ST LSM6DSV320XTR | Mouser 511-LSM6DSV320XTR (or Digi-Key 497-LSM6DSV320XTRCT-ND) | 0 at LCSC, oversold at JLCPCB; the LSM6DSV32X / 16X lack the +-320 g channel |
+
+**Low stock or substituted at JLCPCB** (JLCPCB-assembled; stock on 2026-11-07):
+
+| Refs | Part (`LCSC`) | JLCPCB stock | Note |
+|---|---|---|---|
+| J9 | Samtec LSHM-110-02.5-L-DV-A-S-K-TR (C3643542) | 37 | 2 per board set with the radio J2: 18 board sets (12 if Inboard and Overhang radios are both built per set). Fallback: Samtec direct, Newark 95AC4710, TTI |
+| U7 | Microchip MCP1826S-3302E/DB (C638624) | 1,766 | Replaces the Diodes AP7361C-33E-13 (C500795), 0 at JLCPCB, LCSC, Mouser, Newark and TME; same SOT-223 pinout and footprint (§4.7). The AP7361C stays as `MPN_ALT` |
 
 **Substitutions placed by JLCPCB** (drop into the existing footprints; same value, package and tolerance or tighter,
 equal or higher voltage, same dielectric):

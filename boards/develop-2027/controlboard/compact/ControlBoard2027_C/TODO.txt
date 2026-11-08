@@ -21,10 +21,11 @@ warnings; ERC 1 intended VCAP error (m21).
     is still PH 8P (M19). Modules must release MISO while CS is high (M9).
 1.8 OLED module (M5): choose the 0.96in SSD1306 I2C module; check its pin order (1 GND, 2 VCC, 3 SCL, 4 SDA), address,
     power-on reset, pull-ups and mounting-hole positions against the J13 footprint.
-1.9 Parts: generate the BOM and placement files from the current schematic (not done yet). Re-check stock in the
+1.9 Parts: the BOM is in bom/ (2026-11-07); generate the placement file. Re-check stock in the
     JLCPCB BOM tool; check the substitutes in the placement preview (F1 / F3 / F4 1812L075/24DR, F5 / F6
-    1812L125/16DR, SW1 / SW2 / SW4-SW6 PTS636SM43LFS, SW3 DS-06BP, X1 ABM8-25.000MHZ-10-D1G-T). Source D7-D11, J9, U7
-    and U11 outside JLCPCB stock (global sourcing or consign). Order U10 as SN74AHCT125DR (SOIC-14). Order with tented
+    1812L125/16DR, SW1 / SW2 / SW4-SW6 PTS636SM43LFS, SW3 DS-06BP, X1 ABM8-25.000MHZ-10-D1G-T). Source D7-D11 and U11
+    outside JLCPCB stock (global sourcing or consign). Re-check J9 (C3643542, 37 on 2026-11-07 = 18 board sets
+    with the radio J2) and U7 (MCP1826S-3302E/DB, C638624) the day of ordering. Order U10 as SN74AHCT125DR (SOIC-14). Order with tented
     vias (deviation 23) and double-sided assembly.
 1.10 Any change to J9, HR1 or HR2 must be made in this board and both radio projects together (INTERFACE.md).
 
@@ -35,7 +36,9 @@ warnings; ERC 1 intended VCAP error (m21).
     rail sag when the powerboard is unplugged with USB attached (M7).
 2.2 USB: VBUS drop through the L4 link to U8 VIN2 with LEDs and radio running (deviation 1; if it matters, move U7 /
     C32 so VBUS can stay on L1); attach inrush on the team's laptops (m18); port behaviour with the radio
-    transmitting on USB power (m22); unplug detection on PA9.
+    transmitting on USB power (m22); unplug detection on PA9. U7 (MCP1826S): +3V3_LDO at TP15 during the
+    USB-to-powerboard switchover and radio TX (the +3V3 bulk behind U9 exceeds the 22 uF the datasheet recommends
+    on the LDO output); U7 case temperature at the bench load.
 2.3 HSE: frequency and drive level at R12 (m9); adjust C18 / C19 or fit R12 if needed.
 2.4 Scope: SPI1 / SPI2 SCK at J4 and J7 at the chosen GPIO speed (deviation 11); motor SPI ringing and MOSI setup /
     hold (m4); SD CK at TP1 before raising CLKDIV to 24 MHz; radio MISO valid delay at J9 before trying 40 MHz.

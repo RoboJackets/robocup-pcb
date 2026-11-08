@@ -16762,7 +16762,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C3643542"
 			(at 213.36 215.9 0)
 			(hide yes)
 			(effects
@@ -16771,7 +16771,7 @@
 				)
 			)
 		)
-		(property "LCSC MPN" ""
+		(property "LCSC MPN" "Samtec LSHM-110-02.5-L-DV-A-S-K-TR"
 			(at 213.36 215.9 0)
 			(hide yes)
 			(effects
@@ -17060,7 +17060,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25741"
+			(at 345.44 19.05 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF1003TCE"
+			(at 345.44 19.05 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" "311-100KLRCT-ND"
+			(at 345.44 19.05 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "Device:R")
 		(at 345.44 24.13 90)
@@ -17147,7 +17174,34 @@
 				)
 			)
 		)
-	)
+	
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25741"
+			(at 345.44 24.13 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF1003TCE"
+			(at 345.44 24.13 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" "311-100KLRCT-ND"
+			(at 345.44 24.13 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		))
 	(symbol
 		(lib_id "power:GND")
 		(at 349.25 19.05 90)

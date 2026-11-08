@@ -2901,6 +2901,17 @@
 				)
 			)
 		)
+		(property "Sourcing" "Order separately and consign (0 at JLCPCB / LCSC on 2026-11-07): Mouser 356-ESP32C5WRM1UN8R8 (0 in stock, order with lead time), or Digi-Key product 27566801. Fallback build: MPN_ALT"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e455d31f-2cdb-4867-9c99-b2dff07f396c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(path "/1e40acf6-717b-4faa-8a28-5b02c685b3b7/ecd3a822-8622-4384-8c03-8f58040f929e")
 		(sheetname "ESP32-C5")
 		(sheetfile "02_ESP32.kicad_sch")
@@ -6303,6 +6314,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -7454,7 +7466,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "AP7361C-33E"
+		(property "Value" "MCP1826S-3302E"
 			(at 0 -4.5 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -7467,7 +7479,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP7361C.pdf"
+		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/22057B.pdf"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -7481,7 +7493,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "USB 5V to 3V3 for standalone programming. 1A, 360mV dropout at 1A (DS37274)."
+		(property "Description" "USB 5V to 3V3 for standalone programming. 3.3V 1A LDO, VIN 2.3-6.0V, dropout 400mV max at 1A, stable with >= 1uF ceramic output cap (22uF max recommended), SOT-223 theta-JA 62C/W (Microchip DS22057B). Pins 1 VIN, 2 GND (tab), 3 VOUT, no SHDN. Alternate: Diodes AP7361C-33E-13 (MPN_ALT, same pinout)."
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -7495,7 +7507,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "Diodes AP7361C-33E-13"
+		(property "MPN" "Microchip MCP1826S-3302E/DB"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -7508,7 +7520,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C638624"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -7521,7 +7533,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Vendor PN" "AP7361C-33E-13DICT-ND"
+		(property "Vendor PN" "MCP1826S-3302E/DB-ND"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -7534,7 +7546,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC MPN" ""
+		(property "LCSC MPN" "Microchip MCP1826S-3302E/DB"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -7545,6 +7557,61 @@
 					(thickness 0.15)
 				)
 				(justify mirror)
+			)
+		)
+		(property "Datasheet ALT" "https://www.diodes.com/assets/Datasheets/AP7361C.pdf"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "98d20f64-d914-4392-be5e-df14750aa3a0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN_ALT" "Diodes AP7361C-33E-13 (fallback, same SOT-223 pinout; no stock 2026-11-07)"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "1a8e5bac-e525-4e50-b6c8-2d43339b3c6b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN_ALT LCSC" "C500795"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c045bd88-6b2a-46d8-8e22-e21037c6d295")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1A, VIN 6.0V max, 3.3V +-2.5%"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "cdf0aaa9-d330-4d80-aa0b-9c87cb591333")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN ALT" "AP7361C-33E-13DICT-ND"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "a84ab582-923f-4c94-aeae-cc53a3e7414e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(path "/2ff95fff-49b1-4d01-9cac-1cb6dbac2b66/2c9f4e1e-740d-439f-af73-824bcdd8f702")
@@ -8139,7 +8206,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "U4 (AP7361C) output capacitor, at the OUT / GND pins (datasheet: >= 2.2uF, as close as possible); also feeds mux VIN2. X5R 10V. MPN matches LCSC C19702; Digi-Key alternate: Taiyo Yuden LMK107BBJ106MALT (587-3258-1-ND)."
+		(property "Description" "U4 (MCP1826S) output capacitor, at the VOUT / GND pins (datasheet: >= 1uF ceramic, at most 22uF recommended, as close as possible); also feeds mux VIN2. X5R 10V. MPN matches LCSC C19702; Digi-Key alternate: Taiyo Yuden LMK107BBJ106MALT (587-3258-1-ND)."
 			(at 0 0 270)
 			(layer "B.Fab")
 			(hide yes)
@@ -12094,7 +12161,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C3643542"
 			(at 0 0 270)
 			(layer "B.Fab")
 			(hide yes)
@@ -12133,7 +12200,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC MPN" ""
+		(property "LCSC MPN" "Samtec LSHM-110-02.5-L-DV-A-S-K-TR"
 			(at 0 0 270)
 			(layer "B.Fab")
 			(hide yes)
