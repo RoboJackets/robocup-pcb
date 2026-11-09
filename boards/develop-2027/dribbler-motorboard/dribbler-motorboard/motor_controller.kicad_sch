@@ -2951,9 +2951,9 @@
 		)
 		(uuid "dff92d9f-6c87-47b6-a4ee-cef1fe099d3c")
 	)
-	(text "Used to tell the MCU if this\nis a drive or dribbler board.\n\nPC14/PC15 = +3.3V/+3.3V\nindicates a Dribbler Motor Board"
+	(text "Used to tell the MCU if this\nis a drive or dribbler board.\n\nPC14/PC15 = +3.3V/+3.3V\nindicates a Dribbler Motor Board\n\nALWAYS CONFIGURE PC14/PC15 AS OUTPUT/OUTPUT"
 		(exclude_from_sim no)
-		(at 162.306 80.772 0)
+		(at 162.814 82.296 0)
 		(effects
 			(font
 				(size 1.27 1.27)
