@@ -16,6 +16,24 @@ grouped by `LCSC` part and footprint, Comment = the schematic `Value`. The full 
 footprint, `LCSC`, `LCSC MPN`, `MPN`, `Vendor PN`, `Rating`) from the same fields; the stock columns are the
 2026-11-07 check below.
 
+
+## Update 2026-11-09 (current)
+
+This section supersedes the older stock and Digi-Key statements below.
+
+- **JLC stock** in `*_BOM_full.csv` was refreshed from the JLCPCB parts API on 2026-11-09 (column `JLC stock 2026-11-09`).
+  `Board sets in stock` there counts this board alone; the Samtec LSHM (C3643542, 37 at JLC) is shared by the CB J9 and
+  the radio J2, so a CB + radio set is limited to **18**.
+- **Digi-Key** part numbers, stock and prices were checked on digikey.com on 2026-11-09 and are in
+  `*_BOM_order_separately.csv` (no longer unverified). Mouser figures are still from FindChips, 2026-11-07.
+- **Valid Digi-Key regulator PN**: MCP1826S-3302E/DB-ND exists (tube, 1,995 in stock); MCP1826ST-3302E/DBCT-ND (cut tape)
+  has 39,364. The AP7361C-33E-13 is 0 at Digi-Key too.
+- **Radio module U1** ESP32-C5-WROOM-1U-N8R8: Digi-Key 1965-ESP32-C5-WROOM-1U-N8R8CT-ND, 0 in stock, **104 due
+  2026-11-16**, then 20-week lead time (4.96 USD at 10). Backorder from that batch. JLC, LCSC and Mouser are 0.
+  Fallback WROOM-1-N8R8: Digi-Key 0, Mouser 356-ESP32C5WROM1N8R8 (948 on 2026-11-07).
+- **ANT1** FXP831.07.0100C: Digi-Key 931-1121-ND (6,468, 7.46 USD at qty 1) or Mouser 960-FXP831070100C.
+  Tightest JLC parts today: J2 LSHM 37, D1 APT1608SGC 625.
+
 ## How stock was checked (2026-11-07)
 
 - JLC library type (Basic / Extended) and **JLC stock** come from the JLCPCB parts API (`selectSmtComponentList`).
@@ -26,7 +44,7 @@ footprint, `LCSC`, `LCSC MPN`, `MPN`, `Vendor PN`, `Rating`) from the same field
 - Every LCSC part was checked against the schematic `LCSC MPN` (model match) and against the footprint package.
   There were no MPN mismatches and no package mismatches.
 - Digi-Key and Mouser block scripted requests. Mouser stock and price come from FindChips (findchips.com). Digi-Key PNs
-  are the schematic `Vendor PN` or come from Digi-Key search listings. **Digi-Key stock and prices are unverified.**
+  are the schematic `Vendor PN` or come from Digi-Key search listings. Digi-Key stock and prices: see the 2026-11-09 update above.
 
 ## Summary
 

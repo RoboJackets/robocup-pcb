@@ -15,6 +15,22 @@ grouped by `LCSC` part and footprint, Comment = the schematic `Value`. The full 
 footprint, `LCSC`, `LCSC MPN`, `MPN`, `Vendor PN`, `Rating`) from the same fields; the stock columns are the
 2026-11-07 check below.
 
+
+## Update 2026-11-09 (current)
+
+This section supersedes the older stock and Digi-Key statements below.
+
+- **JLC stock** in `*_BOM_full.csv` was refreshed from the JLCPCB parts API on 2026-11-09 (column `JLC stock 2026-11-09`).
+  `Board sets in stock` there counts this board alone; the Samtec LSHM (C3643542, 37 at JLC) is shared by the CB J9 and
+  the radio J2, so a CB + radio set is limited to **18**.
+- **Digi-Key** part numbers, stock and prices were checked on digikey.com on 2026-11-09 and are in
+  `*_BOM_order_separately.csv` (no longer unverified). Mouser figures are still from FindChips, 2026-11-07.
+- **Valid Digi-Key regulator PN**: MCP1826S-3302E/DB-ND exists (tube, 1,995 in stock); MCP1826ST-3302E/DBCT-ND (cut tape)
+  has 39,364. The AP7361C-33E-13 is 0 at Digi-Key too.
+- **Buy and consign** (CB): D7-D11 BB-2020BGR-TRB from Digi-Key 2007-BB-2020BGR-TRBCT-ND (121,957, 1.44 USD at qty 1).
+  U11 LSM6DSV320XTR from **Mouser** 511-LSM6DSV320XTR (Digi-Key 497-LSM6DSV320XTRCT-ND is 0, 24-week lead time).
+  Tightest JLC parts today: J9 LSHM 37, U2 STM32H723ZGT6 66, U1 TPD6E05U06 336.
+
 ## How stock was checked (2026-11-07)
 
 - JLC library type (Basic / Extended) and **JLC stock** (the stock JLC assembles from) come from the JLCPCB parts API
@@ -27,7 +43,7 @@ footprint, `LCSC`, `LCSC MPN`, `MPN`, `Vendor PN`, `Rating`) from the same field
   There were no MPN mismatches and no package mismatches. Where the placed LCSC part differs from the `MPN` field (an
   equivalent part, documented in DESIGN_NOTES §15), the `MPN` is kept as the Digi-Key / Mouser alternate.
 - Digi-Key and Mouser block scripted requests. Mouser stock and price come from FindChips (findchips.com). Digi-Key PNs
-  are the schematic `Vendor PN` or come from Digi-Key search listings. **Digi-Key stock and prices are unverified.**
+  are the schematic `Vendor PN` or come from Digi-Key search listings. Digi-Key stock and prices: see the 2026-11-09 update above.
 
 ## Summary
 
