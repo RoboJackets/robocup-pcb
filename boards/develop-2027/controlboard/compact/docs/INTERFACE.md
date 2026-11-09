@@ -169,16 +169,16 @@ CB's; where a line has a direction, the mating board uses the opposite one. All 
 
 | Pin | Net | Direction (CB view) | Notes |
 |---|---|---|---|
-| 1 | PWR_UART_RX | in | to PA1 (UART4_RX) through R33 1k |
-| 2 | PWR_UART_TX | out | from PA0 (UART4_TX) through R34 1k |
+| 1 | PWR_UART_TX | out | from PA0 (UART4_TX) through R33 1k |
+| 2 | PWR_UART_RX | in | to PA1 (UART4_RX) through R34 1k |
 | 3 | GND | | |
 | 4 | +3V3_RAW | in (supply) | to D4 TVS, F6, U9 VIN1 |
 | 5 | GND | | separates the two rails, so a one-pin crimp shift does not short them |
 | 6 | +5V_RAW | in (supply) | to Q1 (reverse polarity), D3, F5, U8 VIN1 |
 | 7 | GND | | |
 
-**RX / TX convention.** RX and TX are named from the CB side: pin 1 is the CB's receive input, pin 2 its transmit
-output. The powerboard drives its UART TX on pin 1 and receives on pin 2. UART4, 115200 8N1, 3.3 V logic.
+**RX / TX convention.** RX and TX are named from the CB side: pin 1 is the CB's transmit output, pin 2 its receive
+input. The powerboard receives on pin 1 and drives its UART TX on pin 2. UART4, 115200 8N1, 3.3 V logic.
 
 The powerboard must supply 3.4 V +/-3 % (never above 3.6 V) on pin 4 and 5 V on pin 6. Each PH contact is rated
 2 A and each rail has one contact, while F5 / F6 trip at 2.5 A: keep the steady load per rail well under 2 A (CB
@@ -237,7 +237,8 @@ together. Expansion boards must not add their own I2C pull-ups.
 | 11 | GND (GNDDetect) | 12 | NRST |
 | 13 | NC | 14 | NC |
 
-Use a keyed STDC14 cable (STLINK-V3) and match the pin-1 marker.
+Use a keyed STDC14 cable (STLINK-V3) and match the pin-1 marker. The schematic uses KiCad's official
+`Connector:Conn_ST_STDC14` symbol, so the pin names match ST's STDC14 pinout.
 
 ### J13 OLED module
 

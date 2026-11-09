@@ -39,7 +39,7 @@ The ROM bootloader uses its own clocking, so DFU does not depend on these settin
 | I2C2, kicker | PB10 SCL (69), PB11 SDA (70) | AF4 | R18 / R19 2.2k, U17, J10 | 400 kHz |
 | I2C4, expansion | PF14 SCL (54), PF15 SDA (55) | AF4 | R10 / R8 2.2k, U6 / U16, J11 / J12 | 400 kHz |
 | I2C5, IMU | PF1 SCL (11), PF0 SDA (10) | AF6 | R7 / R9 2.2k, U11 | 400 kHz; LSM6DSV320X at 0x6A |
-| UART4, powerboard | PA0 TX (34), PA1 RX (35) | AF8 | R34 / R33 1k, J15 pin 2 (TX) / pin 1 (RX) | 115200 8N1 |
+| UART4, powerboard | PA0 TX (34), PA1 RX (35) | AF8 | R33 / R34 1k, J15 pin 1 (TX) / pin 2 (RX) | 115200 8N1 |
 | SWD | PA13 SWDIO (105), PA14 SWCLK (109), NRST (25) | AF0 | J3 STDC14 | start at 1 MHz; no SWO (PB3 is the radio SCK) |
 
 All I2C: let CubeMX recompute the Timing value for the new clock tree (never copy V0.3's value), internal pull-ups

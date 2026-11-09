@@ -2665,6 +2665,28 @@
 		)
 		(uuid "94ddc2ca-f7f9-4e84-918a-80ae31149b7b")
 	)
+	(text "SDMMC LAYOUT: review CLK, CMD and DAT0-3 as one timing interface.\nRouted ~50R over In1 GND; CLK/CMD/DAT0-3 matched 44.4-45.2 mm incl. R6.\nKeep return paths continuous, short stubs and local J1 bypass capacitors.\nUse DS13313 SDMMC timing plus the selected card's data sheet."
+		(exclude_from_sim no)
+		(at 189.23 171.45 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left bottom)
+		)
+		(uuid "989e5bc9-2128-4c0a-879e-95106fed5a07")
+	)
+	(text "SD CARD: select an actual card MPN before final timing approval.\nKingston SDCIT example: identification clock <=400 kHz, NOT 8 MHz.\nHigher transfer rates require successful initialization and timing validation.\nJ1 Hirose DM3AT-SF-PEJM5. Shell to GND; DET unused; power cannot be cycled independently.\nCard recovery and shell/ESD treatment remain verification items."
+		(exclude_from_sim no)
+		(at 192.278 151.892 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left bottom)
+		)
+		(uuid "a5bce295-976a-4ba8-b26b-8312225c8510")
+	)
 	(text "R6 = 30R provisional CLK source damping near PC12.\nCMD and DAT0-3 currently have no series damping; check both directions.\n47k pull-ups are bias, not impedance termination.\nNo data sheet establishes a constant 25R MCU output impedance."
 		(exclude_from_sim no)
 		(at 59.69 175.26 0)
@@ -3206,16 +3228,6 @@
 		)
 		(uuid "e05bf707-f789-4369-aee4-3be5e93ae4d7")
 	)
-  (text "SDMMC LAYOUT: review CLK, CMD and DAT0-3 as one timing interface.\nRouted ~50R over In1 GND; CLK/CMD/DAT0-3 matched 44.4-45.2 mm incl. R6.\nKeep return paths continuous, short stubs and local J1 bypass capacitors.\nUse DS13313 SDMMC timing plus the selected card's data sheet."
-    (at 189.23 171.45 0)
-    (effects (font (size 1.1 1.1)) (justify left bottom))
-    (uuid "989e5bc9-2128-4c0a-879e-95106fed5a07")
-  )
-  (text "SD CARD: select an actual card MPN before final timing approval.\nKingston SDCIT example: identification clock <=400 kHz, NOT 8 MHz.\nHigher transfer rates require successful initialization and timing validation.\nJ1 Hirose DM3AT-SF-PEJM5. Shell to GND; DET unused; power cannot be cycled independently.\nCard recovery and shell/ESD treatment remain verification items."
-    (at 192.278 151.892 0)
-    (effects (font (size 1.1 1.1)) (justify left bottom))
-    (uuid "a5bce295-976a-4ba8-b26b-8312225c8510")
-  )
 	(symbol
 		(lib_id "power:GND")
 		(at 167.64 168.91 0)
@@ -3546,6 +3558,39 @@
 				)
 			)
 		)
+		(property "LCSC" "C19702"
+			(at 157.48 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL10A106KP8NNNC"
+			(at 157.48 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C19702"
+			(at 157.48 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "03ec5d30-8e84-41b2-ab35-8a713a84cfe7")
 		)
@@ -3560,34 +3605,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C19702"
-			(at 157.48 165.1 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC MPN" "Samsung Electro-Mechanics CL10A106KP8NNNC"
-			(at 157.48 165.1 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C19702"
-			(at 157.48 165.1 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:+3V3")
 		(at 83.82 156.21 0)
@@ -3762,6 +3780,39 @@
 				)
 			)
 		)
+		(property "LCSC" "C25792"
+			(at 83.82 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF4702TCE"
+			(at 83.82 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25792"
+			(at 83.82 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "92f84552-f0a8-48f0-a6f0-6a676ffb110d")
 		)
@@ -3776,34 +3827,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C25792"
-			(at 83.82 96.52 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC MPN" "UNI-ROYAL 0402WGF4702TCE"
-			(at 83.82 96.52 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25792"
-			(at 83.82 96.52 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 170.18 203.2 0)
@@ -4142,6 +4166,39 @@
 				)
 			)
 		)
+		(property "LCSC" "C25792"
+			(at 83.82 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF4702TCE"
+			(at 83.82 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25792"
+			(at 83.82 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f1b78f81-a74d-4310-a5de-a8cebb394b48")
 		)
@@ -4156,34 +4213,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C25792"
-			(at 83.82 160.02 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC MPN" "UNI-ROYAL 0402WGF4702TCE"
-			(at 83.82 160.02 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25792"
-			(at 83.82 160.02 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Connector:Micro_SD_Card_Det1")
 		(at 157.48 127 0)
@@ -4282,6 +4312,28 @@
 				)
 			)
 		)
+		(property "LCSC" "C114218"
+			(at 157.48 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "HRS DM3AT-SF-PEJM5"
+			(at 157.48 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "26967aaf-535e-4adb-9ba0-9b6b1f39f865")
 		)
@@ -4320,25 +4372,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C114218"
-			(at 157.48 127 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC MPN" "HRS DM3AT-SF-PEJM5"
-			(at 157.48 127 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 167.64 165.1 0)
@@ -4438,6 +4472,28 @@
 				)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 167.64 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 167.64 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "47ca4bab-7505-48f9-a8b4-9dc47ef6aa85")
 		)
@@ -4452,25 +4508,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C1525"
-			(at 167.64 165.1 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
-			(at 167.64 165.1 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:+3V3")
 		(at 83.82 105.41 0)
@@ -4799,6 +4837,39 @@
 				)
 			)
 		)
+		(property "LCSC" "C25792"
+			(at 83.82 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF4702TCE"
+			(at 83.82 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25792"
+			(at 83.82 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "2e1a0dbe-259c-4a36-921f-84a838d0d110")
 		)
@@ -4813,34 +4884,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C25792"
-			(at 83.82 147.32 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC MPN" "UNI-ROYAL 0402WGF4702TCE"
-			(at 83.82 147.32 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25792"
-			(at 83.82 147.32 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:+3V3")
 		(at 157.48 161.29 0)
@@ -5015,6 +5059,39 @@
 				)
 			)
 		)
+		(property "LCSC" "C25792"
+			(at 83.82 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF4702TCE"
+			(at 83.82 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25792"
+			(at 83.82 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f4e213fc-2a28-4c91-92f3-982ed1bd911b")
 		)
@@ -5029,34 +5106,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C25792"
-			(at 83.82 109.22 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC MPN" "UNI-ROYAL 0402WGF4702TCE"
-			(at 83.82 109.22 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25792"
-			(at 83.82 109.22 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 83.82 121.92 0)
@@ -5154,6 +5204,39 @@
 				)
 			)
 		)
+		(property "LCSC" "C25792"
+			(at 83.82 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF4702TCE"
+			(at 83.82 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25792"
+			(at 83.82 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "1b607aee-f1f8-4f88-bf25-b85d3237254a")
 		)
@@ -5168,34 +5251,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C25792"
-			(at 83.82 121.92 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC MPN" "UNI-ROYAL 0402WGF4702TCE"
-			(at 83.82 121.92 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25792"
-			(at 83.82 121.92 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 226.06 223.52 0)
@@ -5436,6 +5492,28 @@
 				)
 			)
 		)
+		(property "LCSC" "C962978"
+			(at 203.2 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "TI TPD6E05U06RVZR"
+			(at 203.2 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "10"
 			(uuid "9ac0a2ee-da62-4942-a414-0c035963b8c4")
 		)
@@ -5486,25 +5564,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C962978"
-			(at 203.2 218.44 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC MPN" "TI TPD6E05U06RVZR"
-			(at 203.2 218.44 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 97.79 138.43 90)
@@ -5602,6 +5662,28 @@
 				)
 			)
 		)
+		(property "LCSC" "C2479340"
+			(at 97.79 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "SEI(Stackpole Electronics Inc.) RMCF0402FT30R0"
+			(at 97.79 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "55e5f099-8662-4424-a233-7fd2d5f19bca")
 		)
@@ -5616,25 +5698,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C2479340"
-			(at 97.79 138.43 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC MPN" "SEI(Stackpole Electronics Inc.) RMCF0402FT30R0"
-			(at 97.79 138.43 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:+3V3")
 		(at 83.82 143.51 0)

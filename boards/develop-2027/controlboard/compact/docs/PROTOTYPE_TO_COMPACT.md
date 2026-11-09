@@ -93,10 +93,10 @@ buses, because one trunk to connectors on three edges would be over 150 mm with 
 Compact 1 GND, 2 +3V3, 3 SCL, 4 SDA.
 
 **J15 powerboard**: prototype XH 8P: 1-2 +5V_RAW, 3-4 +3V3_RAW, 5-6 GND, 7 TX (via R34), 8 RX (via R33). Compact
-PH 7P: 1 RX (via R33), 2 TX (via R34), 3 GND, 4 +3V3_RAW, 5 GND, 6 +5V_RAW, 7 GND. One contact per rail (2 A each).
+PH 7P: 1 TX (PA0 via R33), 2 RX (PA1 via R34), 3 GND, 4 +3V3_RAW, 5 GND, 6 +5V_RAW, 7 GND. One contact per rail (2 A each).
 
 **J3 SWD**: prototype 1 +3V3, 2 SWCLK, 3 SWDIO, 4 GND, 5 NRST. Compact STDC14: 3 +3V3, 4 SWDIO, 5 GND, 6 SWCLK, 7 GND,
-11 GND, 12 NRST, others not connected.
+11 GND, 12 NRST, others not connected (KiCad `Connector:Conn_ST_STDC14` symbol).
 
 **J9 radio link** (CB pin: prototype -> compact):
 

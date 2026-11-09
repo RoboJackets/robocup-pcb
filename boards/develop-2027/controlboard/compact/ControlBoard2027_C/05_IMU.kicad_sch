@@ -1610,6 +1610,33 @@
 		)
 		(uuid "5ee5e7cf-2130-40ca-99d6-0dae354840ff")
 	)
+	(text "ROUTING - IMU\nC48 (VDDIO pin 5), C49 (VDD pin 8): 100nF,\nas close to the pins as possible.\nCS to VDDIO = I2C. TA0, SDx, SCx to GND:\naddress 0x6A, mode 1 (DS14623 Fig. 27).\nOCS_aux/SDO_aux open. No traces or vias\nunder the package."
+		(exclude_from_sim no)
+		(at 189.23 154.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(bold yes)
+				(color 255 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "04132a4f-1a76-44c1-b20c-46fc39b78d4f")
+	)
+	(text "IMU U11 LSM6DSV320X: I2C (0x6A), INT1/INT2 INTERRUPTS"
+		(exclude_from_sim no)
+		(at 134.62 83.82 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 132 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "09929034-6f46-4f9d-906e-846a4137dee8")
+	)
 	(text "INTERRUPTS: INT1 -> ACCEL_EXTI (PF3), INT2 -> GYRO_EXTI (PF2). Both are push-pull and\nare driven low from power-up (DS14623 Table 25), so no pull-downs are fitted.\nRoute data-ready or events to them with INT1_CTRL/INT2_CTRL."
 		(exclude_from_sim no)
 		(at 100.33 180.34 0)
@@ -1819,16 +1846,6 @@
 		)
 		(uuid "f5fdc9bc-2e60-4d48-b431-42ca6909f844")
 	)
-  (text "IMU U11 LSM6DSV320X: I2C (0x6A), INT1/INT2 INTERRUPTS"
-    (at 134.62 83.82 0)
-    (effects (font (size 2 2) (thickness 0.4) (bold yes) (color 0 0 132 1)) (justify left bottom))
-    (uuid "09929034-6f46-4f9d-906e-846a4137dee8")
-  )
-  (text "ROUTING - IMU\nC48 (VDDIO pin 5), C49 (VDD pin 8): 100nF,\nas close to the pins as possible.\nCS to VDDIO = I2C. TA0, SDx, SCx to GND:\naddress 0x6A, mode 1 (DS14623 Fig. 27).\nOCS_aux/SDO_aux open. No traces or vias\nunder the package."
-    (at 189.23 154.94 0)
-    (effects (font (size 1.27 1.27) (bold yes) (color 255 0 0 1)) (justify left bottom))
-    (uuid "04132a4f-1a76-44c1-b20c-46fc39b78d4f")
-  )
 	(symbol
 		(lib_id "power:+3V3")
 		(at 152.4 139.7 0)
@@ -2467,6 +2484,28 @@
 				)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 162.56 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 162.56 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "502507b9-c7a2-49af-b76c-1e142a902215")
 		)
@@ -2481,25 +2520,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C1525"
-			(at 162.56 143.51 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
-			(at 162.56 143.51 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 152.4 143.51 0)
@@ -2599,6 +2620,28 @@
 				)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 152.4 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
+			(at 152.4 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8df5a6d1-c7a3-49bd-9c32-1cd84deeb6e7")
 		)
@@ -2613,25 +2656,7 @@
 				)
 			)
 		)
-	
-		(property "LCSC" "C1525"
-			(at 152.4 143.51 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC MPN" "Samsung Electro-Mechanics CL05B104KO5NNNC"
-			(at 152.4 143.51 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:+3V3")
 		(at 162.56 139.7 0)
@@ -2795,6 +2820,39 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 190.5 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" ""
+			(at 190.5 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sourcing" "Order separately and consign (LCSC 0, JLCPCB C26633007 oversold on 2026-11-07): Mouser 511-LSM6DSV320XTR, or Digi-Key 497-LSM6DSV320XTRCT-ND"
+			(at 190.5 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5d26adc2-3f4d-473f-8e39-cfe0906c2938")
 		)
@@ -2845,32 +2903,5 @@
 				)
 			)
 		)
-	
-		(property "LCSC" ""
-			(at 190.5 114.3 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC MPN" ""
-			(at 190.5 114.3 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sourcing" "Order separately and consign (LCSC 0, JLCPCB C26633007 oversold on 2026-11-07): Mouser 511-LSM6DSV320XTR, or Digi-Key 497-LSM6DSV320XTRCT-ND"
-			(at 190.5 114.3 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 )

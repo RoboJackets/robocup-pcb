@@ -135,12 +135,12 @@ clamp, no fast current limit, no fault signal and no USB inrush limit (M1, M3, m
 
 ### 4.2 J15 powerboard input
 
-JST PH S7B-PH-K-S (right angle, 7-pin, 2.00 mm): 1 PWR_UART_RX (into this board), 2 PWR_UART_TX (out of this
+JST PH S7B-PH-K-S (right angle, 7-pin, 2.00 mm): 1 PWR_UART_TX (out of this board), 2 PWR_UART_RX (into this
 board), 3 GND, 4 +3V3_RAW, 5 GND, 6 +5V_RAW, 7 GND. RX / TX are named from this board's side; the full mating
 rule is in [INTERFACE.md](../docs/INTERFACE.md). GND pin 5 sits between the two rails, so a one-pin crimp shift
 cannot short +5V to +3V3. Each PH contact is rated 2 A, one contact per rail (deviation 17).
 
-R33 (RX) and R34 (TX), 1k, sit in series between J15 pins 1 / 2 and PA1 / PA0 (UART4, 115200, 3.3 V logic), on the
+R33 (TX) and R34 (RX), 1k, sit in series between J15 pins 1 / 2 and PA0 / PA1 (UART4, 115200, 3.3 V logic), on the
 bottom in line with the pins. TP10 / TP11 sit on their MCU-side pads. Reasons (DS13313 Rev 4):
 - Unpowered powerboard: if its RX pin clamps to its own VDD, PA0 high feeds at most (3.3 - 0.6) V / 1k = 2.7 mA into
   that rail instead of back-powering it.
@@ -243,7 +243,7 @@ VBUS from J2 goes through D1 (TVS0500DRV, at J2, before F1) and F1 to U8 VIN2, U
 D5 / D6 Kingbright APT1608EC red: R45 3.3k gives 0.9 mA on 5 V, R46 1.5k 0.87 mA on 3V3. Test points are 1.5 x 1.5 mm
 pads (TP6 is a 1.0 mm round pad), labelled on the silkscreen with their signal names. Power test row at y 38.8:
 TP12 GND, TP14 +3V3_RAW, TP13 +5V_PROT, TP17 +3V3, TP15 +3V3_LDO, TP16 +5V; TP3 VBUS at (87.0, 38.8). They measure
-the fuse plus mux drop on each rail and the USB side. TP10 / TP11 give logic-analyser access to the powerboard UART.
+the fuse plus mux drop on each rail and the USB side. TP10 (PB_TX) / TP11 (PB_RX) give logic-analyser access to the powerboard UART.
 
 ---
 
@@ -331,7 +331,8 @@ still above Rp(min). Measure SCL rise time at TP7 (kicker) and TP8 (expansion) w
 - Full Speed only (OTG_HS in FS mode). The ROM DFU uses HSI48 with CRS, so it needs neither the crystal nor VBUS sense.
 - USB bus-powered operation is restricted to bench use (m22): estimated concurrent load about 0.85 A against F1's
   0.55 A hot hold. Use the powerboard for full operation.
-- J3 SWD: ST STDC14 (Samtec FTSH-107-01-L-DV-K, 2 x 7, 1.27 mm, keyed SMD) for the STLINK-V3 14-pin cable. Wired
+- J3 SWD: ST STDC14 (Samtec FTSH-107-01-L-DV-K, 2 x 7, 1.27 mm, keyed SMD) for the STLINK-V3 14-pin cable, drawn
+  with KiCad's official `Connector:Conn_ST_STDC14` symbol. Wired
   pins: 3 +3V3 (VCC sense), 4 SWDIO, 5 GND, 6 SWCLK, 7 GND, 11 GND (GNDDetect), 12 NRST; pins 1, 2, 8, 9, 10, 13, 14
   are not connected (8 would be SWO, but PB3 is the radio SCK). No series resistors on SWD (AN5419 does not require
   them); use a short cable and start at 1 MHz. No protection against a 5 V probe (m14).
@@ -690,7 +691,7 @@ Routing hygiene (scan scripts, audit 3):
 
 Text 1.0 mm (JLC's minimum), titles 1.2 mm, 0.15 mm stroke; the board text rule is 1.0 mm / 0.15 mm. No text over a
 pad.
-- J15 has a name at each pin (RX, TX, GND, 3V3, GND, 5V, GND) in one row, readable with the cable plugged in, in
+- J15 has a name at each pin (TX, RX, GND, 3V3, GND, 5V, GND) in one row, readable with the cable plugged in, in
   narrow glyphs (1.0 mm high, 0.6 mm wide) because a normal "GND" is wider than the 2.0 mm pitch. Its POWER title is on
   the bottom silkscreen ("POWER (J15)").
 - J3 has a table east of the header: STDC14, pin 1 dot, 4 DIO, 6 CLK, 12 RST.
@@ -967,7 +968,8 @@ sections above.
 | Audit 1 | 2026-11-06 / 07 | 3 major, 9 minor | Firmware pin map rewritten from the netlist; radio fan-out re-routed with R65 / R66 at the pins; 23 duplicate segments and 11 off-centre via joins removed; concentric L6 motor bends; U8 output pour; SPI1 / SPI2 unequal arms documented with the OSPEEDR requirement (deviation 11); J3 / RESET / BOOT location documented (deviation 16) |
 | 30 x 40 radio interface | 2026-11-07 | Rework | J9 to (39.70, 6.03) rotation 90 with the reversed signal row; paste-in-hole J9 footprint; HR1 / HR2 to (50.0, 37.5) / (63.4, 37.5); PB6 / PB7 swapped (PB6 DATA_READY, PB7 HANDSHAKE); radio SPI on L4 only, no crossing, matched 0.001 mm; button group, C28 / C29 and HR1-area parts re-placed; SPI1 re-matched |
 | Audit 2 | 2026-11-07 | 3 major, 13 minor | 14 GND return vias added at fast-net layer changes; USB per-orientation skew corrected, then re-routed to 0.000 mm in both orientations; vias moved off R27 / R69 / R72 / TP17 pads; TP2 / TP6 moved out of the radio outline; serpentine legs to 4W except the radio MOSI accordion; sheet 02 group boxes; maker datasheet links; J13 rule scoped to listed parts; mating-board pinouts stated |
-| Back-edge connectors | 2026-11-07 | Change | J10 to JST GH 4P (1 SDA, 2 GND, 3 SCL, 4 GND), J15 to JST PH 7P right angle (1 RX, 2 TX, 3 GND, 4 +3V3, 5 GND, 6 +5V, 7 GND); U17 channels SDA 1 / SCL 3; J3 moved 1.0 mm north; lengths unchanged |
+| Back-edge connectors | 2026-11-07 | Change | J10 to JST GH 4P (1 SDA, 2 GND, 3 SCL, 4 GND), J15 to JST PH 7P right angle (then 1 RX, 2 TX; swapped 2026-11-09, see below); U17 channels SDA 1 / SCL 3; J3 moved 1.0 mm north; lengths unchanged |
+| J15 UART swap, J3 symbol | 2026-11-09 | Change | J15 pin 1 now TX (PA0 via R33), pin 2 RX (PA1 via R34); TX / RX re-routed at R33 / R34 (new TX via, RX In3 to the existing via); TP10 now PB_TX, TP11 PB_RX; J15 and TP silkscreen swapped; J3 drawn with KiCad's Conn_ST_STDC14 symbol (same nets per pin, same footprint) |
 | Audit 3 (convergence) | 2026-11-07 | 0 critical, 0 major, 10 minor | Two SD return vias; vias off D3 / R69 / R72 pads; three 0.05 mm jogs removed, six kept with reasons; TP6 in line on MISO at J4; silkscreen to 1.0 mm with the text rule raised; sheet 02 re-boxed; U11 symbol renamed LSM6DSV320X; U10 -> D7 leg added to the length table |
 | Documentation pass | 2026-11-07 | - | Notes rewritten to describe the current design only; lengths and DRC / ERC re-run on the saved files |
 
