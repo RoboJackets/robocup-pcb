@@ -633,7 +633,7 @@
           "group_by": false,
           "label": "Qty",
           "name": "${QUANTITY}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
@@ -663,7 +663,7 @@
           "group_by": false,
           "label": "Footprint",
           "name": "Footprint",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -681,7 +681,7 @@
           "group_by": false,
           "label": "Manufacturer P/N",
           "name": "Manufacturer P/N",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -778,6 +778,24 @@
           "label": "MF",
           "name": "MF",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC P/N",
+          "name": "LCSC P/N",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "LCSC Manufacturing P/N",
+          "name": "LCSC Manufacturing P/N",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturing P/N",
+          "name": "Manufacturing P/N",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -836,7 +854,7 @@
         "uuid": "2f9570f4-e846-4a86-b134-ae7438cb1d91"
       }
     ],
-    "used_designators": "",
+    "used_designators": "U5-6,C21-23,#PWR70-74",
     "variants": []
   },
   "sheets": [
