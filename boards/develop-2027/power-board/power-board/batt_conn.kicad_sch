@@ -2097,6 +2097,130 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x06_Pin")
+		(at 50.8 127 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "701eb0c6-e330-4d82-ba74-022d3f7a3ea8")
+		(property "Reference" "J2"
+			(at 51.435 116.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B6B-XH-A"
+			(at 51.435 119.38 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_XH_B6B-XH-A_1x06_P2.50mm_Vertical"
+			(at 50.8 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/eXH.pdf"
+			(at 50.8 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Connector Header Through Hole 6 position 0.098\" (2.50mm)"
+			(at 50.8 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "B6B-XH-A"
+			(at 50.8 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "LCSC"
+			(at 50.8 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "C144397"
+			(at 50.8 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "514c5360-7de0-4681-a1ec-ff97ab3ac7af")
+		)
+		(pin "2"
+			(uuid "4b610f30-bdb8-4bbe-9733-55232a90017b")
+		)
+		(pin "5"
+			(uuid "0f71bf7c-906f-48c2-a63d-a54c9ee89065")
+		)
+		(pin "6"
+			(uuid "3c657047-cd26-417d-8dc8-87ee34908c6a")
+		)
+		(pin "1"
+			(uuid "e0cd944b-5fb1-4c01-9795-d3594268b0b8")
+		)
+		(pin "4"
+			(uuid "f9bf0811-70a2-408d-8829-2b8d5cc410a1")
+		)
+		(instances
+			(project "power-board"
+				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/7078dd89-3d93-4110-8a56-6e091afd4004"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
 		(at 50.8 53.34 0)
 		(mirror x)
@@ -2579,131 +2703,6 @@
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/7078dd89-3d93-4110-8a56-6e091afd4004"
 					(reference "F1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x06_Pin")
-		(at 50.8 129.54 0)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ecabed92-e6a1-4723-8ac6-81e9de7d97c1")
-		(property "Reference" "J2"
-			(at 51.435 139.7 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "B6B-XH-A"
-			(at 51.435 137.16 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_XH_B6B-XH-A_1x06_P2.50mm_Vertical"
-			(at 50.8 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/eXH.pdf"
-			(at 50.8 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Connector Header Through Hole 6 position 0.098\" (2.50mm)"
-			(at 50.8 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer P/N" "B6B-XH-A"
-			(at 50.8 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor" "LCSC"
-			(at 50.8 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor P/N" "C144397"
-			(at 50.8 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "540b6cd7-7889-474a-ad29-60199f6a3450")
-		)
-		(pin "2"
-			(uuid "f5fa837e-a3a3-4823-b75e-e610eeb7f640")
-		)
-		(pin "5"
-			(uuid "53eac70e-bd49-484c-944d-c56a03a61be7")
-		)
-		(pin "6"
-			(uuid "e4a738c4-e042-413d-af8d-59ac0ee25038")
-		)
-		(pin "1"
-			(uuid "1d57342a-dc3b-4c0b-97fc-eeb13465fa67")
-		)
-		(pin "4"
-			(uuid "9be74a01-5e64-4c6a-9ffc-c295bd4c03a1")
-		)
-		(instances
-			(project "power-board"
-				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/7078dd89-3d93-4110-8a56-6e091afd4004"
-					(reference "J2")
 					(unit 1)
 				)
 			)
