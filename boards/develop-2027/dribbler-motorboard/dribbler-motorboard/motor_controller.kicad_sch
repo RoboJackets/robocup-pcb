@@ -2953,7 +2953,7 @@
 	)
 	(text "Used to tell the MCU if this\nis a drive or dribbler board.\n\nPC14/PC15 = +3.3V/+3.3V\nindicates a Dribbler Motor Board"
 		(exclude_from_sim no)
-		(at 177.8 84.582 0)
+		(at 162.306 80.772 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3009,6 +3009,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0ab88b04-5391-4311-8094-8bc74415ef9e")
+	)
+	(junction
+		(at 177.8 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "27027bdb-f918-406a-8a2e-068d0998caef")
 	)
 	(junction
 		(at 44.45 127)
@@ -3117,12 +3123,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bb64f5b7-246b-42b4-aaf1-c39e6f059333")
-	)
-	(junction
-		(at 189.23 74.93)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c18041c4-4c6d-4454-89f7-612d317a4da7")
 	)
 	(junction
 		(at 105.41 161.29)
@@ -3341,7 +3341,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 74.93) (xy 181.61 74.93)
+			(xy 177.8 74.93) (xy 181.61 74.93)
 		)
 		(stroke
 			(width 0)
@@ -3781,16 +3781,6 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 74.93) (xy 189.23 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "509e21d3-af3b-4047-88a7-c0e99274e57b")
-	)
-	(wire
-		(pts
 			(xy 50.8 132.08) (xy 44.45 132.08)
 		)
 		(stroke
@@ -4088,6 +4078,16 @@
 			(type default)
 		)
 		(uuid "86b3c531-a0d4-4f3a-a95a-e326b7956cb1")
+	)
+	(wire
+		(pts
+			(xy 177.8 77.47) (xy 177.8 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c4b7b5f-2880-469b-8dba-e88a9d8e19d4")
 	)
 	(wire
 		(pts
@@ -4501,7 +4501,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 74.93) (xy 189.23 74.93)
+			(xy 189.23 74.93) (xy 190.5 74.93)
 		)
 		(stroke
 			(width 0)
@@ -4718,6 +4718,16 @@
 			(type default)
 		)
 		(uuid "fd7c8964-df34-4827-86a2-91e25f845200")
+	)
+	(wire
+		(pts
+			(xy 181.61 77.47) (xy 177.8 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd8fbc65-89f0-4f64-aa2e-3cb5a82c2755")
 	)
 	(label "SWD{CLK IO}"
 		(at 12.4765 2.0957 180)
@@ -6669,6 +6679,140 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 185.42 74.93 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5f0f8e8d-448c-40f9-9c34-1a7ddbf538e1")
+		(property "Reference" "R35"
+			(at 185.42 70.104 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 185.42 72.644 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 185.42 76.708 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 185.42 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" ""
+			(at 185.42 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 185.42 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "311-10KJRCT-ND"
+			(at 185.42 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Manufacturing P/N" ""
+			(at 185.42 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC P/N" "C60489"
+			(at 185.42 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f2fd3ca8-2ac6-4b64-8158-241797ec1883")
+		)
+		(pin "2"
+			(uuid "44f69116-8313-4c87-8a83-3896a7b5dd4b")
+		)
+		(instances
+			(project "dribbler-motorboard"
+				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
+					(reference "R35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 95.25 72.39 0)
 		(unit 1)
@@ -7662,6 +7806,140 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 185.42 77.47 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7c485857-7ffb-4c2a-bc3e-60c85772ff66")
+		(property "Reference" "R36"
+			(at 185.42 79.756 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 185.42 82.296 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 185.42 79.248 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 185.42 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" ""
+			(at 185.42 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "DigiKey"
+			(at 185.42 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "311-10KJRCT-ND"
+			(at 185.42 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Manufacturing P/N" ""
+			(at 185.42 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC P/N" "C60489"
+			(at 185.42 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "897df31a-c11d-4f59-8941-9aa4f4561ac2")
+		)
+		(pin "2"
+			(uuid "15720976-724c-49a6-84ff-1d2fe0d8838f")
+		)
+		(instances
+			(project "dribbler-motorboard"
+				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
+					(reference "R36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 222.25 127 0)
 		(unit 1)
@@ -8008,85 +8286,6 @@
 			(project "dribbler-motorboard"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
 					(reference "C6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 185.42 74.93 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "92d21812-e860-4baf-890b-9337fd035031")
-		(property "Reference" "R35"
-			(at 185.42 70.866 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 185.42 72.644 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 185.42 76.708 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 185.42 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 185.42 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "4875518a-4828-4891-a946-4f6fdc98ceab")
-		)
-		(pin "1"
-			(uuid "702c1dab-bf8b-47e5-80bd-a2c511d76346")
-		)
-		(instances
-			(project "dribbler-motorboard"
-				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91/2176b25b-920c-4211-945a-20df519a7ce9"
-					(reference "R35")
 					(unit 1)
 				)
 			)
@@ -10577,7 +10776,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 179.07 74.93 0)
+		(at 177.8 74.93 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10588,7 +10787,7 @@
 		(fields_autoplaced yes)
 		(uuid "ecec233c-0e7b-4bed-9b9c-2d14347189e7")
 		(property "Reference" "#PWR075"
-			(at 179.07 78.74 0)
+			(at 177.8 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10599,7 +10798,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 179.07 71.12 0)
+			(at 177.8 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10609,7 +10808,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 179.07 74.93 0)
+			(at 177.8 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10620,7 +10819,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 179.07 74.93 0)
+			(at 177.8 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10631,7 +10830,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 179.07 74.93 0)
+			(at 177.8 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
