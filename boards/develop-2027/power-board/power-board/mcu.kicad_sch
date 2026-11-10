@@ -3459,10 +3459,6 @@
 		(uuid "0709edd9-b2fc-4bf6-a18f-d67a99528c55")
 	)
 	(no_connect
-		(at 154.94 101.6)
-		(uuid "0c04c27f-4492-4311-a9f2-6ecb8a89e4c8")
-	)
-	(no_connect
 		(at 104.14 162.56)
 		(uuid "116cf9b9-3e4c-498e-8b03-603e0a3235a9")
 	)
@@ -3509,10 +3505,6 @@
 	(no_connect
 		(at 154.94 154.94)
 		(uuid "9f761529-c249-49fd-b4f9-008f368cc55a")
-	)
-	(no_connect
-		(at 154.94 99.06)
-		(uuid "a6ed22ec-579f-46ff-9d7b-5af8d76b9019")
 	)
 	(no_connect
 		(at 154.94 144.78)
@@ -3852,6 +3844,16 @@
 			(type default)
 		)
 		(uuid "1ea2d365-fb6b-446e-978e-026d0723cf94")
+	)
+	(wire
+		(pts
+			(xy 238.76 130.81) (xy 241.3 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ea4d239-fef0-4e54-8746-de50eea7672e")
 	)
 	(wire
 		(pts
@@ -4305,6 +4307,16 @@
 	)
 	(wire
 		(pts
+			(xy 238.76 128.27) (xy 241.3 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64072153-25bd-4b24-ac27-4ac6916a9bda")
+	)
+	(wire
+		(pts
 			(xy 30.48 52.07) (xy 30.48 54.61)
 		)
 		(stroke
@@ -4362,16 +4374,6 @@
 			(type default)
 		)
 		(uuid "6bf7a17b-9184-4c3f-affd-47544be997b2")
-	)
-	(wire
-		(pts
-			(xy 238.76 121.92) (xy 241.3 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6dd0ba9f-ca6f-4607-a76f-98a3ef16be1c")
 	)
 	(wire
 		(pts
@@ -4683,6 +4685,16 @@
 		)
 		(uuid "a0e77edb-25b2-4111-831c-0e2d3d7d6e0b")
 	)
+	(wire
+		(pts
+			(xy 154.94 101.6) (xy 157.48 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1744b2d-db2d-4551-8e6b-5a18c860b8c3")
+	)
 	(bus
 		(pts
 			(xy 67.31 106.68) (xy 69.85 106.68)
@@ -4852,6 +4864,16 @@
 			(type default)
 		)
 		(uuid "be4c0cc2-2fea-4e0a-a798-92bf77b961a6")
+	)
+	(wire
+		(pts
+			(xy 154.94 99.06) (xy 157.48 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "beefd282-08b0-4429-abf1-b4e490ce6c49")
 	)
 	(wire
 		(pts
@@ -5235,7 +5257,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 124.46) (xy 241.3 124.46)
+			(xy 238.76 121.92) (xy 241.3 121.92)
 		)
 		(stroke
 			(width 0)
@@ -5273,6 +5295,16 @@
 		)
 		(uuid "0af83ac0-0d85-47b4-af8f-0963bcf36f9a")
 	)
+	(label "IND_SYSTEM"
+		(at 238.76 130.81 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0b70f6dd-bfe4-4e91-baa7-c9d88bec7b89")
+	)
 	(label "IND_5V_EN"
 		(at 238.76 109.22 180)
 		(effects
@@ -5303,15 +5335,15 @@
 		)
 		(uuid "1567b52d-7be2-4307-adcd-990a4a517389")
 	)
-	(label "IND_COOL_CH3"
-		(at 238.76 121.92 180)
+	(label "IND_ESTOP"
+		(at 238.76 128.27 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "2188a676-c034-4462-b33d-21fb155d7e1d")
+		(uuid "30bf5047-171e-4060-83d9-496b212d186f")
 	)
 	(label "IND_5V_EN"
 		(at 157.48 83.82 0)
@@ -5453,6 +5485,16 @@
 		)
 		(uuid "6b461bac-b3ce-4d86-82d6-5320dfbbd485")
 	)
+	(label "IND_SYSTEM"
+		(at 157.48 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6d72b6a5-9c6a-43f0-9659-cfeae60751eb")
+	)
 	(label "IND_COOL_CH2"
 		(at 157.48 91.44 0)
 		(effects
@@ -5502,6 +5544,16 @@
 			(justify right bottom)
 		)
 		(uuid "76431498-ef4f-4548-8c36-66883b95147e")
+	)
+	(label "IND_ESTOP"
+		(at 157.48 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9366f534-c687-48f3-a06e-814aeb44a4a1")
 	)
 	(label "SCL"
 		(at 156.21 121.92 0)
@@ -5664,7 +5716,7 @@
 		(uuid "fa3416f9-b486-44ad-8c4e-75670f687b34")
 	)
 	(label "IND_OVERTEMP"
-		(at 238.76 124.46 180)
+		(at 238.76 121.92 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11904,7 +11956,7 @@
 	)
 	(sheet
 		(at 241.3 101.6)
-		(size 25.4 25.4)
+		(size 25.4 38.1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -11930,7 +11982,7 @@
 			)
 		)
 		(property "Sheetfile" "ind_leds.kicad_sch"
-			(at 241.3 127.5846 0)
+			(at 241.3 140.2846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11990,18 +12042,8 @@
 				(justify left)
 			)
 		)
-		(pin "COOLING_CH3_ON" input
-			(at 241.3 121.92 180)
-			(uuid "9c2a64a3-89c9-4f1a-9c23-a7bbc97de7b6")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "OVERTEMP" input
-			(at 241.3 124.46 180)
+			(at 241.3 121.92 180)
 			(uuid "c0aa04ab-8f68-4f90-923c-0bd6427b4fda")
 			(effects
 				(font
@@ -12013,6 +12055,26 @@
 		(pin "VBATT_ON" input
 			(at 241.3 104.14 180)
 			(uuid "1852a9ab-a028-4f5b-bf62-326fc37e4f62")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ESTOP_ON" input
+			(at 241.3 128.27 180)
+			(uuid "57ad2b76-d763-4e9a-bc9b-8184d6be31c6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SYSTEM_ON" input
+			(at 241.3 130.81 180)
+			(uuid "25190d79-3018-48fb-8a34-9f94c58a63a9")
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -677,6 +677,52 @@
 		)
 	)
 	(sheet
+		(at 25.4 139.7)
+		(size 38.1 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "bc21409b-3d82-4166-8a63-ee049df73898")
+		(property "Sheetname" "Mechanical"
+			(at 25.4 138.9884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mech.kicad_sch"
+			(at 25.4 152.9846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "power-board"
+				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87"
+					(page "18")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 88.9 50.8)
 		(size 38.1 12.7)
 		(exclude_from_sim no)

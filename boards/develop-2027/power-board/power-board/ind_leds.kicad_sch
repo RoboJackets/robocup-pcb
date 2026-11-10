@@ -482,8 +482,20 @@
 		(uuid "3857fbe1-f118-4075-a3a9-8904bc28f008")
 	)
 	(rectangle
+		(start 177.8 38.1)
+		(end 241.3 88.9)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "8f77910c-3e06-4bf3-9cd0-3a9ab410ccad")
+	)
+	(rectangle
 		(start 101.6 38.1)
-		(end 165.1 139.7)
+		(end 165.1 114.3)
 		(stroke
 			(width 0)
 			(type default)
@@ -492,6 +504,17 @@
 			(type none)
 		)
 		(uuid "c50d8edd-04cc-40cc-8515-f197f11dbb46")
+	)
+	(text "Entire System Indicators"
+		(exclude_from_sim no)
+		(at 177.8 37.465 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "24554f99-a047-4bc1-9586-6a5caf78a23a")
 	)
 	(text "Cooling System"
 		(exclude_from_sim no)
@@ -517,7 +540,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 127) (xy 123.19 127)
+			(xy 120.65 101.6) (xy 123.19 101.6)
 		)
 		(stroke
 			(width 0)
@@ -537,7 +560,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 104.14) (xy 152.4 101.6)
+			(xy 232.41 53.34) (xy 232.41 50.8)
 		)
 		(stroke
 			(width 0)
@@ -567,7 +590,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 129.54) (xy 152.4 127)
+			(xy 152.4 104.14) (xy 152.4 101.6)
 		)
 		(stroke
 			(width 0)
@@ -577,7 +600,17 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 127) (xy 143.51 127)
+			(xy 200.66 76.2) (xy 203.2 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fbff2f1-c267-438a-bd52-2bd6a3e80f6e")
+	)
+	(wire
+		(pts
+			(xy 152.4 101.6) (xy 143.51 101.6)
 		)
 		(stroke
 			(width 0)
@@ -604,6 +637,16 @@
 			(type default)
 		)
 		(uuid "515d5046-145b-4072-876e-2fd36e986934")
+	)
+	(wire
+		(pts
+			(xy 232.41 76.2) (xy 223.52 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53b97bbf-dcb4-4e2d-9755-b2b9af7d9cd6")
 	)
 	(wire
 		(pts
@@ -677,6 +720,16 @@
 	)
 	(wire
 		(pts
+			(xy 210.82 76.2) (xy 215.9 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70e14405-7870-48a0-ae25-b46b0de7660b")
+	)
+	(wire
+		(pts
 			(xy 76.2 129.54) (xy 76.2 127)
 		)
 		(stroke
@@ -727,6 +780,16 @@
 	)
 	(wire
 		(pts
+			(xy 232.41 78.74) (xy 232.41 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c5192dd-b84d-46f5-a2fe-9975f521fd2f")
+	)
+	(wire
+		(pts
 			(xy 44.45 127) (xy 46.99 127)
 		)
 		(stroke
@@ -747,7 +810,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 101.6) (xy 143.51 101.6)
+			(xy 232.41 50.8) (xy 223.52 50.8)
 		)
 		(stroke
 			(width 0)
@@ -777,7 +840,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 101.6) (xy 123.19 101.6)
+			(xy 200.66 50.8) (xy 203.2 50.8)
 		)
 		(stroke
 			(width 0)
@@ -797,7 +860,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 127) (xy 135.89 127)
+			(xy 130.81 101.6) (xy 135.89 101.6)
 		)
 		(stroke
 			(width 0)
@@ -827,7 +890,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 101.6) (xy 135.89 101.6)
+			(xy 210.82 50.8) (xy 215.9 50.8)
 		)
 		(stroke
 			(width 0)
@@ -846,9 +909,20 @@
 		)
 		(uuid "08c2987c-a2ed-4f37-8e8d-90a612faae35")
 	)
-	(hierarchical_label "COOLING_CH3_ON"
+	(hierarchical_label "SYSTEM_ON"
 		(shape input)
-		(at 120.65 101.6 180)
+		(at 200.66 76.2 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1d2e5406-461a-4066-8f69-9f8b83b00a97")
+	)
+	(hierarchical_label "ESTOP_ON"
+		(shape input)
+		(at 200.66 50.8 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -903,7 +977,7 @@
 	)
 	(hierarchical_label "OVERTEMP"
 		(shape input)
-		(at 120.65 127 180)
+		(at 120.65 101.6 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1193,7 +1267,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 152.4 104.14 0)
+		(at 232.41 53.34 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1204,7 +1278,7 @@
 		(fields_autoplaced yes)
 		(uuid "32c040b3-7477-48a5-a603-cde86060e0e0")
 		(property "Reference" "#PWR0103"
-			(at 152.4 110.49 0)
+			(at 232.41 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1215,7 +1289,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 152.4 109.22 0)
+			(at 232.41 58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1225,7 +1299,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 152.4 104.14 0)
+			(at 232.41 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1236,7 +1310,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 152.4 104.14 0)
+			(at 232.41 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1247,7 +1321,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 152.4 104.14 0)
+			(at 232.41 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1495,7 +1569,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 127 127 180)
+		(at 127 101.6 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1505,7 +1579,7 @@
 		(dnp no)
 		(uuid "650a0f5b-831b-43b8-a2b4-1fc452488b8a")
 		(property "Reference" "D11"
-			(at 127 120.65 0)
+			(at 127 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1515,7 +1589,7 @@
 			)
 		)
 		(property "Value" "KT-0603R"
-			(at 127 123.19 0)
+			(at 127 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1525,7 +1599,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 127 127 0)
+			(at 127 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1536,7 +1610,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8763907065041293312-C2286.pdf?response-content-disposition=attachment%3B%20filename%3DC2286.pdf%3B%20filename%2A%3DUTF-8%27%27C2286.pdf&x-oss-date=20261108T231128Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5nXLfHt3q509ZrYcUn90E5kQr5WqJCegTz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qbJOqQwy557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWkpkUegrTJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkI7YKT4aKWD5sagAEyX1r0OePO7XCni2eEqDpEe4mo7nFWRzAIbgTMKNQq2CZBoiUXP9RsTLvqxtgA2nzyKiM15v4osqPiAJysYmqeUortrHjb%2BAeO61Cof72Hbt3ztIDE9AkAclGeya8T573nXn%2BUzP3o8ea7nMxLEs5OToNyGfcnUV8vVZ%2FhmzBfECAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NZbfKY3qUBX3soL4N1N1zGU5c%2F20261108%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=c5b751903f92082112577161b34ea9e1e8cdefb11bcf3f4cda17130a922c945d"
-			(at 127 127 0)
+			(at 127 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1547,7 +1621,7 @@
 			)
 		)
 		(property "Description" "-40℃~+85℃ 1.6mm x 0.8mm square LED 1.8V~2.4V 120° 20mA 300mcd 40mW 615nm~630nm 645nm Discrete Diode Red Water Clear 0603 LED Indication - Discrete ROHS"
-			(at 127 127 0)
+			(at 127 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1558,7 +1632,7 @@
 			)
 		)
 		(property "Manufacturer P/N" "KT-0603R"
-			(at 127 127 0)
+			(at 127 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1569,7 +1643,7 @@
 			)
 		)
 		(property "Vendor" "LCSC"
-			(at 127 127 0)
+			(at 127 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1580,7 +1654,7 @@
 			)
 		)
 		(property "Vendor P/N" "C2286"
-			(at 127 127 0)
+			(at 127 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1685,7 +1759,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 139.7 101.6 90)
+		(at 219.71 50.8 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1695,7 +1769,7 @@
 		(dnp no)
 		(uuid "6b321660-2e6a-411e-8112-3dd57f8e0a90")
 		(property "Reference" "R48"
-			(at 139.7 96.52 90)
+			(at 219.71 45.72 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1705,7 +1779,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 139.7 99.06 90)
+			(at 219.71 48.26 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1715,7 +1789,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 139.7 103.378 90)
+			(at 219.71 52.578 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1726,7 +1800,7 @@
 			)
 		)
 		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
-			(at 139.7 101.6 0)
+			(at 219.71 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1737,7 +1811,7 @@
 			)
 		)
 		(property "Description" "1 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film"
-			(at 139.7 101.6 0)
+			(at 219.71 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1748,7 +1822,7 @@
 			)
 		)
 		(property "Manufacturer P/N" "RC0402FR-071KL"
-			(at 139.7 101.6 0)
+			(at 219.71 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1759,7 +1833,7 @@
 			)
 		)
 		(property "Vendor" "LCSC"
-			(at 139.7 101.6 0)
+			(at 219.71 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1770,7 +1844,7 @@
 			)
 		)
 		(property "Vendor P/N" "C106235"
-			(at 139.7 101.6 0)
+			(at 219.71 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2322,8 +2396,86 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 232.41 78.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9557da76-7d23-46ae-ad15-d490e47915e6")
+		(property "Reference" "#PWR0124"
+			(at 232.41 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 232.41 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 232.41 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 232.41 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 232.41 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8a582982-ee62-47e5-a226-355c52bcaa04")
+		)
+		(instances
+			(project "power-board"
+				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/46a84cab-2488-41a2-8ddb-4e0edd24db1e/b88d3eeb-8d52-4143-b4a0-3420c7e29951"
+					(reference "#PWR0124")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
-		(at 127 101.6 180)
+		(at 207.01 50.8 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2333,7 +2485,7 @@
 		(dnp no)
 		(uuid "958124b7-e897-4906-b617-f0d0d7315ed0")
 		(property "Reference" "D10"
-			(at 127 95.25 0)
+			(at 207.01 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2343,7 +2495,7 @@
 			)
 		)
 		(property "Value" "KT-0603R"
-			(at 127 97.79 0)
+			(at 207.01 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2353,7 +2505,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 127 101.6 0)
+			(at 207.01 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2364,7 +2516,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8763907065041293312-C2286.pdf?response-content-disposition=attachment%3B%20filename%3DC2286.pdf%3B%20filename%2A%3DUTF-8%27%27C2286.pdf&x-oss-date=20261108T231128Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5nXLfHt3q509ZrYcUn90E5kQr5WqJCegTz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qbJOqQwy557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWkpkUegrTJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkI7YKT4aKWD5sagAEyX1r0OePO7XCni2eEqDpEe4mo7nFWRzAIbgTMKNQq2CZBoiUXP9RsTLvqxtgA2nzyKiM15v4osqPiAJysYmqeUortrHjb%2BAeO61Cof72Hbt3ztIDE9AkAclGeya8T573nXn%2BUzP3o8ea7nMxLEs5OToNyGfcnUV8vVZ%2FhmzBfECAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NZbfKY3qUBX3soL4N1N1zGU5c%2F20261108%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=c5b751903f92082112577161b34ea9e1e8cdefb11bcf3f4cda17130a922c945d"
-			(at 127 101.6 0)
+			(at 207.01 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2375,7 +2527,7 @@
 			)
 		)
 		(property "Description" "-40℃~+85℃ 1.6mm x 0.8mm square LED 1.8V~2.4V 120° 20mA 300mcd 40mW 615nm~630nm 645nm Discrete Diode Red Water Clear 0603 LED Indication - Discrete ROHS"
-			(at 127 101.6 0)
+			(at 207.01 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2386,7 +2538,7 @@
 			)
 		)
 		(property "Manufacturer P/N" "KT-0603R"
-			(at 127 101.6 0)
+			(at 207.01 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2397,7 +2549,7 @@
 			)
 		)
 		(property "Vendor" "LCSC"
-			(at 127 101.6 0)
+			(at 207.01 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2408,7 +2560,7 @@
 			)
 		)
 		(property "Vendor P/N" "C2286"
-			(at 127 101.6 0)
+			(at 207.01 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2506,6 +2658,118 @@
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/46a84cab-2488-41a2-8ddb-4e0edd24db1e/b88d3eeb-8d52-4143-b4a0-3420c7e29951"
 					(reference "#PWR099")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 219.71 76.2 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a76406d5-0cfa-4031-9ccc-2a3c2d2a9f83")
+		(property "Reference" "R55"
+			(at 219.71 71.12 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 219.71 73.66 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 219.71 77.978 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+			(at 219.71 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film"
+			(at 219.71 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "RC0402FR-071KL"
+			(at 219.71 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "LCSC"
+			(at 219.71 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "C106235"
+			(at 219.71 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "83b8548c-0bba-4684-9794-de4ec8f23deb")
+		)
+		(pin "2"
+			(uuid "23b1f3e3-7410-428e-ad6f-2cf7ceb63a40")
+		)
+		(instances
+			(project "power-board"
+				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/46a84cab-2488-41a2-8ddb-4e0edd24db1e/b88d3eeb-8d52-4143-b4a0-3420c7e29951"
+					(reference "R55")
 					(unit 1)
 				)
 			)
@@ -2927,7 +3191,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 152.4 129.54 0)
+		(at 152.4 104.14 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2938,7 +3202,7 @@
 		(fields_autoplaced yes)
 		(uuid "d4efd829-883f-47ef-bd81-1f3f0333bf90")
 		(property "Reference" "#PWR0104"
-			(at 152.4 135.89 0)
+			(at 152.4 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2949,7 +3213,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 152.4 134.62 0)
+			(at 152.4 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2959,7 +3223,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 152.4 129.54 0)
+			(at 152.4 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2970,7 +3234,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 152.4 129.54 0)
+			(at 152.4 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2981,7 +3245,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 152.4 129.54 0)
+			(at 152.4 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3005,7 +3269,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 139.7 127 90)
+		(at 139.7 101.6 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3015,7 +3279,7 @@
 		(dnp no)
 		(uuid "d73ffc33-434b-4f75-bffe-e132fe12fc89")
 		(property "Reference" "R49"
-			(at 139.7 121.92 90)
+			(at 139.7 96.52 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3025,7 +3289,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 139.7 124.46 90)
+			(at 139.7 99.06 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3035,7 +3299,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 139.7 128.778 90)
+			(at 139.7 103.378 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3046,7 +3310,7 @@
 			)
 		)
 		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
-			(at 139.7 127 0)
+			(at 139.7 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3057,7 +3321,7 @@
 			)
 		)
 		(property "Description" "1 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film"
-			(at 139.7 127 0)
+			(at 139.7 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3068,7 +3332,7 @@
 			)
 		)
 		(property "Manufacturer P/N" "RC0402FR-071KL"
-			(at 139.7 127 0)
+			(at 139.7 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3079,7 +3343,7 @@
 			)
 		)
 		(property "Vendor" "LCSC"
-			(at 139.7 127 0)
+			(at 139.7 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3090,7 +3354,7 @@
 			)
 		)
 		(property "Vendor P/N" "C106235"
-			(at 139.7 127 0)
+			(at 139.7 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3222,6 +3486,118 @@
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/46a84cab-2488-41a2-8ddb-4e0edd24db1e/b88d3eeb-8d52-4143-b4a0-3420c7e29951"
 					(reference "R46")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 207.01 76.2 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ed818079-05b6-4b05-8ac3-d06513f8df65")
+		(property "Reference" "D13"
+			(at 207.01 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "KT-0603R"
+			(at 207.01 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 207.01 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8763907065041293312-C2286.pdf?response-content-disposition=attachment%3B%20filename%3DC2286.pdf%3B%20filename%2A%3DUTF-8%27%27C2286.pdf&x-oss-date=20261108T231128Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5nXLfHt3q509ZrYcUn90E5kQr5WqJCegTz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qbJOqQwy557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWkpkUegrTJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkI7YKT4aKWD5sagAEyX1r0OePO7XCni2eEqDpEe4mo7nFWRzAIbgTMKNQq2CZBoiUXP9RsTLvqxtgA2nzyKiM15v4osqPiAJysYmqeUortrHjb%2BAeO61Cof72Hbt3ztIDE9AkAclGeya8T573nXn%2BUzP3o8ea7nMxLEs5OToNyGfcnUV8vVZ%2FhmzBfECAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NZbfKY3qUBX3soL4N1N1zGU5c%2F20261108%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=c5b751903f92082112577161b34ea9e1e8cdefb11bcf3f4cda17130a922c945d"
+			(at 207.01 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "-40℃~+85℃ 1.6mm x 0.8mm square LED 1.8V~2.4V 120° 20mA 300mcd 40mW 615nm~630nm 645nm Discrete Diode Red Water Clear 0603 LED Indication - Discrete ROHS"
+			(at 207.01 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "KT-0603R"
+			(at 207.01 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "LCSC"
+			(at 207.01 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "C2286"
+			(at 207.01 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "33d05fdf-1229-4fd3-986b-df2993d591e5")
+		)
+		(pin "2"
+			(uuid "48913ae6-e639-4e0a-8c72-0707e37182b8")
+		)
+		(instances
+			(project "power-board"
+				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/46a84cab-2488-41a2-8ddb-4e0edd24db1e/b88d3eeb-8d52-4143-b4a0-3420c7e29951"
+					(reference "D13")
 					(unit 1)
 				)
 			)
