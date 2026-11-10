@@ -244,8 +244,8 @@
 		)
 	)
 	(rectangle
-		(start 101.6 38.1)
-		(end 266.7 152.4)
+		(start 114.3 38.1)
+		(end 279.4 152.4)
 		(stroke
 			(width 0)
 			(type default)
@@ -257,7 +257,7 @@
 	)
 	(text "PG not used\ntie to GND"
 		(exclude_from_sim no)
-		(at 170.18 63.5 0)
+		(at 182.88 63.5 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -268,7 +268,7 @@
 	)
 	(text "Voltage Regulators, Load Switches"
 		(exclude_from_sim no)
-		(at 101.6 37.465 0)
+		(at 114.3 37.465 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -279,7 +279,7 @@
 	)
 	(text "PG not used\ntie to GND"
 		(exclude_from_sim no)
-		(at 233.68 139.7 0)
+		(at 246.38 139.7 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -289,32 +289,32 @@
 		(uuid "fc50efe7-58ad-443c-921a-2402875d2c0c")
 	)
 	(junction
-		(at 184.15 104.14)
+		(at 196.85 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "185929cb-4f24-45b9-a47d-e2506d51fcbd")
 	)
 	(junction
-		(at 184.15 53.34)
+		(at 196.85 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6e9ed727-d0d6-48b9-a1aa-0662594b99a8")
 	)
 	(junction
-		(at 177.8 53.34)
+		(at 190.5 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d663408f-6e73-4e9a-b8d2-ea3d07181115")
 	)
 	(junction
-		(at 184.15 78.74)
+		(at 196.85 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d83cc0e8-0aee-41ee-82a9-9ebbf1f2a848")
 	)
 	(wire
 		(pts
-			(xy 121.92 53.34) (xy 127 53.34)
+			(xy 134.62 53.34) (xy 139.7 53.34)
 		)
 		(stroke
 			(width 0)
@@ -324,7 +324,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 60.96) (xy 167.64 63.5)
+			(xy 180.34 60.96) (xy 180.34 63.5)
 		)
 		(stroke
 			(width 0)
@@ -334,7 +334,17 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 107.95) (xy 233.68 107.95)
+			(xy 35.56 116.84) (xy 38.1 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c9be254-1d6a-4f06-a3a1-ebccbbc0cb77")
+	)
+	(wire
+		(pts
+			(xy 241.3 107.95) (xy 246.38 107.95)
 		)
 		(stroke
 			(width 0)
@@ -344,7 +354,17 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 78.74) (xy 190.5 78.74)
+			(xy 88.9 134.62) (xy 91.44 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b1f8c1c-0119-464a-b8fe-a79433e990f9")
+	)
+	(wire
+		(pts
+			(xy 196.85 78.74) (xy 203.2 78.74)
 		)
 		(stroke
 			(width 0)
@@ -354,7 +374,17 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 53.34) (xy 233.68 53.34)
+			(xy 88.9 116.84) (xy 101.6 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "606f783b-9b4b-4a10-ab3b-6e4a8383b50f")
+	)
+	(wire
+		(pts
+			(xy 190.5 53.34) (xy 246.38 53.34)
 		)
 		(stroke
 			(width 0)
@@ -364,7 +394,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 86.36) (xy 190.5 86.36)
+			(xy 190.5 86.36) (xy 203.2 86.36)
 		)
 		(stroke
 			(width 0)
@@ -374,7 +404,17 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 82.55) (xy 233.68 82.55)
+			(xy 101.6 60.96) (xy 139.7 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68695c85-ad43-4c73-b18f-224bc73c7f92")
+	)
+	(wire
+		(pts
+			(xy 241.3 82.55) (xy 246.38 82.55)
 		)
 		(stroke
 			(width 0)
@@ -384,7 +424,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 60.96) (xy 167.64 60.96)
+			(xy 177.8 60.96) (xy 180.34 60.96)
 		)
 		(stroke
 			(width 0)
@@ -394,7 +434,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 78.74) (xy 184.15 104.14)
+			(xy 196.85 78.74) (xy 196.85 104.14)
 		)
 		(stroke
 			(width 0)
@@ -404,7 +444,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 129.54) (xy 190.5 129.54)
+			(xy 196.85 129.54) (xy 203.2 129.54)
 		)
 		(stroke
 			(width 0)
@@ -414,7 +454,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 137.16) (xy 231.14 139.7)
+			(xy 243.84 137.16) (xy 243.84 139.7)
 		)
 		(stroke
 			(width 0)
@@ -424,7 +464,17 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 104.14) (xy 190.5 104.14)
+			(xy 88.9 137.16) (xy 91.44 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e96b513-c103-4ced-9440-7eb7b7c888e2")
+	)
+	(wire
+		(pts
+			(xy 196.85 104.14) (xy 203.2 104.14)
 		)
 		(stroke
 			(width 0)
@@ -434,7 +484,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 53.34) (xy 184.15 78.74)
+			(xy 196.85 53.34) (xy 196.85 78.74)
 		)
 		(stroke
 			(width 0)
@@ -444,7 +494,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 104.14) (xy 184.15 129.54)
+			(xy 196.85 104.14) (xy 196.85 129.54)
 		)
 		(stroke
 			(width 0)
@@ -454,7 +504,17 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 111.76) (xy 190.5 111.76)
+			(xy 101.6 116.84) (xy 101.6 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b841ff79-f59f-4f15-9793-ad38f9245b61")
+	)
+	(wire
+		(pts
+			(xy 190.5 111.76) (xy 203.2 111.76)
 		)
 		(stroke
 			(width 0)
@@ -464,7 +524,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 137.16) (xy 190.5 137.16)
+			(xy 190.5 137.16) (xy 203.2 137.16)
 		)
 		(stroke
 			(width 0)
@@ -474,7 +534,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 53.34) (xy 177.8 53.34)
+			(xy 177.8 53.34) (xy 190.5 53.34)
 		)
 		(stroke
 			(width 0)
@@ -484,7 +544,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 133.35) (xy 233.68 133.35)
+			(xy 241.3 133.35) (xy 246.38 133.35)
 		)
 		(stroke
 			(width 0)
@@ -494,7 +554,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 137.16) (xy 231.14 137.16)
+			(xy 241.3 137.16) (xy 243.84 137.16)
 		)
 		(stroke
 			(width 0)
@@ -504,7 +564,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 50.8) (xy 177.8 53.34)
+			(xy 190.5 50.8) (xy 190.5 53.34)
 		)
 		(stroke
 			(width 0)
@@ -512,19 +572,30 @@
 		)
 		(uuid "e51d1041-2268-4b4a-bbf6-39ffb7916f33")
 	)
-	(wire
-		(pts
-			(xy 121.92 60.96) (xy 127 60.96)
+	(label "LOADSW_EN"
+		(at 134.62 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
 		)
-		(stroke
-			(width 0)
-			(type default)
+		(uuid "4f8de1c7-f3e6-4703-bc20-e47097fc6a64")
+	)
+	(hierarchical_label "POWERSW"
+		(shape output)
+		(at 91.44 134.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
 		)
-		(uuid "e8458182-5fec-4f63-9bcc-dfb8b8bd238f")
+		(uuid "090a3753-1dd8-4787-b8e1-135007479a3f")
 	)
 	(hierarchical_label "12.0V_EN"
 		(shape input)
-		(at 177.8 137.16 180)
+		(at 190.5 137.16 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -535,7 +606,7 @@
 	)
 	(hierarchical_label "12.0V_REG"
 		(shape output)
-		(at 233.68 133.35 0)
+		(at 246.38 133.35 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -546,7 +617,7 @@
 	)
 	(hierarchical_label "VBATT_SW"
 		(shape output)
-		(at 233.68 53.34 0)
+		(at 246.38 53.34 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -557,7 +628,7 @@
 	)
 	(hierarchical_label "VBATT"
 		(shape input)
-		(at 121.92 53.34 180)
+		(at 134.62 53.34 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -568,18 +639,29 @@
 	)
 	(hierarchical_label "VBATT_EN"
 		(shape input)
-		(at 121.92 60.96 180)
+		(at 35.56 116.84 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "76e3212e-cc1c-4e0b-bb74-a59166430e4f")
+		(uuid "5614ea2b-334c-45a7-9a81-9a9213a4d75b")
+	)
+	(hierarchical_label "ESTOP"
+		(shape output)
+		(at 91.44 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "73cf65c1-0a9a-4163-8253-37a6facfd765")
 	)
 	(hierarchical_label "5.0V_EN"
 		(shape input)
-		(at 177.8 111.76 180)
+		(at 190.5 111.76 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -590,7 +672,7 @@
 	)
 	(hierarchical_label "5.0V_REG"
 		(shape output)
-		(at 233.68 107.95 0)
+		(at 246.38 107.95 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -601,7 +683,7 @@
 	)
 	(hierarchical_label "3.3V_REG"
 		(shape output)
-		(at 233.68 82.55 0)
+		(at 246.38 82.55 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -612,7 +694,7 @@
 	)
 	(hierarchical_label "3.3V_EN"
 		(shape input)
-		(at 177.8 86.36 180)
+		(at 190.5 86.36 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -623,7 +705,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 177.8 50.8 0)
+		(at 190.5 50.8 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -634,7 +716,7 @@
 		(fields_autoplaced yes)
 		(uuid "6a61670b-4950-4536-9735-89b9cb6063ee")
 		(property "Reference" "#FLG08"
-			(at 177.8 48.895 0)
+			(at 190.5 48.895 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -645,7 +727,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 177.8 45.72 0)
+			(at 190.5 45.72 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -655,7 +737,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 177.8 50.8 0)
+			(at 190.5 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -666,7 +748,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 177.8 50.8 0)
+			(at 190.5 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -677,7 +759,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 177.8 50.8 0)
+			(at 190.5 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -701,7 +783,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 167.64 63.5 0)
+		(at 180.34 63.5 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -712,7 +794,7 @@
 		(fields_autoplaced yes)
 		(uuid "8a701b68-9694-438a-a5e9-3fc98337c68d")
 		(property "Reference" "#PWR062"
-			(at 167.64 69.85 0)
+			(at 180.34 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -723,7 +805,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 167.64 68.58 0)
+			(at 180.34 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -733,7 +815,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 167.64 63.5 0)
+			(at 180.34 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -744,7 +826,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 63.5 0)
+			(at 180.34 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -755,7 +837,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 167.64 63.5 0)
+			(at 180.34 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -779,7 +861,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 231.14 139.7 0)
+		(at 243.84 139.7 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -790,7 +872,7 @@
 		(fields_autoplaced yes)
 		(uuid "cb890de6-97cf-4b6a-82d6-05874f0f7197")
 		(property "Reference" "#PWR063"
-			(at 231.14 146.05 0)
+			(at 243.84 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -801,7 +883,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 231.14 144.78 0)
+			(at 243.84 144.78 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -811,7 +893,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 231.14 139.7 0)
+			(at 243.84 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -822,7 +904,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 231.14 139.7 0)
+			(at 243.84 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -833,7 +915,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 231.14 139.7 0)
+			(at 243.84 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -856,7 +938,7 @@
 		)
 	)
 	(sheet
-		(at 190.5 76.2)
+		(at 203.2 76.2)
 		(size 38.1 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -872,7 +954,7 @@
 		)
 		(uuid "5540a621-1491-4746-8ad7-b1e9d1201cfb")
 		(property "Sheetname" "VBATT to 3.3V Regulator"
-			(at 190.5 75.4884 0)
+			(at 203.2 75.4884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -883,7 +965,7 @@
 			)
 		)
 		(property "Sheetfile" "3V3_reg.kicad_sch"
-			(at 190.5 89.4846 0)
+			(at 203.2 89.4846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -894,7 +976,7 @@
 			)
 		)
 		(pin "3.3V_REG" output
-			(at 228.6 82.55 0)
+			(at 241.3 82.55 0)
 			(uuid "d3ffb57c-f64b-4aa4-843c-f1e611e7b33a")
 			(effects
 				(font
@@ -904,7 +986,7 @@
 			)
 		)
 		(pin "Enable" input
-			(at 190.5 86.36 180)
+			(at 203.2 86.36 180)
 			(uuid "4d2a1773-ecec-4754-9b4a-edb152344be7")
 			(effects
 				(font
@@ -914,7 +996,7 @@
 			)
 		)
 		(pin "VBATT" input
-			(at 190.5 78.74 180)
+			(at 203.2 78.74 180)
 			(uuid "36a0e8a2-a6dc-4d2b-8e09-d1453efc3712")
 			(effects
 				(font
@@ -932,8 +1014,8 @@
 		)
 	)
 	(sheet
-		(at 25.4 50.8)
-		(size 50.8 38.1)
+		(at 38.1 114.3)
+		(size 50.8 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -948,7 +1030,7 @@
 		)
 		(uuid "5e2907a2-61c4-4543-ad44-ebe1e5cd31dd")
 		(property "Sheetname" "E-Stop & Power Switch"
-			(at 25.4 50.0884 0)
+			(at 38.1 113.5884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -959,7 +1041,7 @@
 			)
 		)
 		(property "Sheetfile" "estop.kicad_sch"
-			(at 25.4 89.4846 0)
+			(at 38.1 140.2846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -967,6 +1049,46 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "ESTOP" output
+			(at 88.9 137.16 0)
+			(uuid "ffbce3f5-09a2-439b-abb5-5d96b2d48fe2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "POWER_SW" output
+			(at 88.9 134.62 0)
+			(uuid "105da3bf-c79a-40b9-b48b-18e217bb0cc4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VBATT_EN" output
+			(at 88.9 116.84 0)
+			(uuid "44c8d6f8-6d86-4e7c-854b-7ddb15649270")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VBATT_EN_MCU" input
+			(at 38.1 116.84 180)
+			(uuid "4ff19ad4-5e3e-471d-aae2-bee6ddfb2eff")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -978,7 +1100,7 @@
 		)
 	)
 	(sheet
-		(at 190.5 127)
+		(at 203.2 127)
 		(size 38.1 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -994,7 +1116,7 @@
 		)
 		(uuid "8f427200-83c2-4490-b17c-4ffb5de8840b")
 		(property "Sheetname" "VBATT to 12.0V Regulator"
-			(at 190.5 126.2884 0)
+			(at 203.2 126.2884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1005,7 +1127,7 @@
 			)
 		)
 		(property "Sheetfile" "12V0_reg.kicad_sch"
-			(at 190.5 140.2846 0)
+			(at 203.2 140.2846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1016,7 +1138,7 @@
 			)
 		)
 		(pin "12.0V_REG" output
-			(at 228.6 133.35 0)
+			(at 241.3 133.35 0)
 			(uuid "96e8f211-78cc-420a-8400-aa21e7a52ba1")
 			(effects
 				(font
@@ -1026,7 +1148,7 @@
 			)
 		)
 		(pin "Enable" input
-			(at 190.5 137.16 180)
+			(at 203.2 137.16 180)
 			(uuid "9c2b323b-a5d2-46e1-8528-10fd32fb0ab6")
 			(effects
 				(font
@@ -1036,7 +1158,7 @@
 			)
 		)
 		(pin "POWER_OK" output
-			(at 228.6 137.16 0)
+			(at 241.3 137.16 0)
 			(uuid "c0511361-7c3b-4268-a176-6cd05409ecee")
 			(effects
 				(font
@@ -1046,7 +1168,7 @@
 			)
 		)
 		(pin "VBATT" input
-			(at 190.5 129.54 180)
+			(at 203.2 129.54 180)
 			(uuid "694af2d5-5ec3-4522-a7ef-f1716d1a9b55")
 			(effects
 				(font
@@ -1064,7 +1186,7 @@
 		)
 	)
 	(sheet
-		(at 190.5 101.6)
+		(at 203.2 101.6)
 		(size 38.1 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1080,7 +1202,7 @@
 		)
 		(uuid "c2410622-fe01-481f-916b-a29f8df9aa77")
 		(property "Sheetname" "VBATT to 5.0V Regulator"
-			(at 190.5 100.8884 0)
+			(at 203.2 100.8884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1091,7 +1213,7 @@
 			)
 		)
 		(property "Sheetfile" "5V0_reg.kicad_sch"
-			(at 190.5 114.8846 0)
+			(at 203.2 114.8846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1102,7 +1224,7 @@
 			)
 		)
 		(pin "5.0V_REG" output
-			(at 228.6 107.95 0)
+			(at 241.3 107.95 0)
 			(uuid "43811e05-6b4e-4fa2-9767-66f515902d10")
 			(effects
 				(font
@@ -1112,7 +1234,7 @@
 			)
 		)
 		(pin "Enable" input
-			(at 190.5 111.76 180)
+			(at 203.2 111.76 180)
 			(uuid "7a84892d-e5b2-4298-91a1-8019c73d590a")
 			(effects
 				(font
@@ -1122,7 +1244,7 @@
 			)
 		)
 		(pin "VBATT" input
-			(at 190.5 104.14 180)
+			(at 203.2 104.14 180)
 			(uuid "034897e3-c832-47b6-abc8-180dfb2b7765")
 			(effects
 				(font
@@ -1140,7 +1262,7 @@
 		)
 	)
 	(sheet
-		(at 127 50.8)
+		(at 139.7 50.8)
 		(size 38.1 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1156,7 +1278,7 @@
 		)
 		(uuid "ef61826b-8a0d-4510-88ef-dafc66da471c")
 		(property "Sheetname" "25V, 30A Load Switch"
-			(at 127 50.0884 0)
+			(at 139.7 50.0884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1167,7 +1289,7 @@
 			)
 		)
 		(property "Sheetfile" "vbatt_load_sw.kicad_sch"
-			(at 127 64.0846 0)
+			(at 139.7 64.0846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1178,7 +1300,7 @@
 			)
 		)
 		(pin "Enable" input
-			(at 127 60.96 180)
+			(at 139.7 60.96 180)
 			(uuid "d1492cfb-5c5f-4f10-8406-db232a103041")
 			(effects
 				(font
@@ -1188,7 +1310,7 @@
 			)
 		)
 		(pin "VBATT" input
-			(at 127 53.34 180)
+			(at 139.7 53.34 180)
 			(uuid "b20ed5c3-8ad6-4abf-82d1-7fcb9701b0de")
 			(effects
 				(font
@@ -1198,7 +1320,7 @@
 			)
 		)
 		(pin "VBATT_OUT" output
-			(at 165.1 53.34 0)
+			(at 177.8 53.34 0)
 			(uuid "5ac62466-2bdc-42be-a440-2fe13e8bcb59")
 			(effects
 				(font
@@ -1208,7 +1330,7 @@
 			)
 		)
 		(pin "POWER_OK" output
-			(at 165.1 60.96 0)
+			(at 177.8 60.96 0)
 			(uuid "b47062fb-b13a-47a2-a58e-c86b21dbf4e8")
 			(effects
 				(font

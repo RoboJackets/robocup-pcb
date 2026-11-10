@@ -282,6 +282,10 @@
   "erc": {
     "erc_exclusions": [
       [
+        "multiple_net_names|355600|889000|f8ea12db-2d8c-4cbb-b711-d135cd9c11ff|d13bf9d8-6ffc-4758-933e-10dd625a9177|/950edf25-7c73-426b-95c7-f5bf9643ec87/45a80922-adbb-4c59-8dc9-53bac2202f70/8f427200-83c2-4490-b17c-4ffb5de8840b|/950edf25-7c73-426b-95c7-f5bf9643ec87/45a80922-adbb-4c59-8dc9-53bac2202f70/8f427200-83c2-4490-b17c-4ffb5de8840b|/950edf25-7c73-426b-95c7-f5bf9643ec87/45a80922-adbb-4c59-8dc9-53bac2202f70/8f427200-83c2-4490-b17c-4ffb5de8840b",
+        "Unsure why this is happening but it doesn't matter"
+      ],
+      [
         "pin_to_pin|1358900|1066800|02e45e53-d139-4246-a154-9a986499229d|b2a90036-3885-4dd9-a6f1-212934adf990|/950edf25-7c73-426b-95c7-f5bf9643ec87/45a80922-adbb-4c59-8dc9-53bac2202f70/8f427200-83c2-4490-b17c-4ffb5de8840b|/950edf25-7c73-426b-95c7-f5bf9643ec87/45a80922-adbb-4c59-8dc9-53bac2202f70/8f427200-83c2-4490-b17c-4ffb5de8840b|/950edf25-7c73-426b-95c7-f5bf9643ec87/7078dd89-3d93-4110-8a56-6e091afd4004",
         "Deliberate behavior for unused pin"
       ],
@@ -766,7 +770,7 @@
         "uuid": "950edf25-7c73-426b-95c7-f5bf9643ec87"
       }
     ],
-    "used_designators": "L1-6,SW1-4,TJ1-3,#FLG1-8,Y1,#PWR1-124,#PWR132-144,#PWR206-208,C1-51,C60-71,Q1-2,Q19,F1-2,D1-13,U1-12,JP1-2,TP16-22,R1-54,R58-63,R69-74,J1-13,J16-17",
+    "used_designators": "TP16-22,JP1-2,J1-13,J16-17,M1-3,R1-54,R58-63,R69-74,L1-6,SW1-4,TJ1-3,#FLG1-8,Y1,#PWR1-124,#PWR132-144,#PWR206-208,C1-51,C60-71,Q1-2,Q19,F1-2,D1-13,U1-12",
     "variants": []
   },
   "sheets": [

@@ -3491,14 +3491,6 @@
 		(uuid "51953b40-d49d-45a2-8de8-9ab452bae3e3")
 	)
 	(no_connect
-		(at 154.94 111.76)
-		(uuid "5eba18c3-9843-4117-b2cb-189bd9aab677")
-	)
-	(no_connect
-		(at 154.94 114.3)
-		(uuid "663dce7d-0ac3-4c93-be6d-e1d22bd6cb71")
-	)
-	(no_connect
 		(at 104.14 160.02)
 		(uuid "7d491336-1812-429d-b547-92c70f60b10c")
 	)
@@ -4471,6 +4463,16 @@
 		)
 		(uuid "78f53dce-3795-4035-a2dc-338328f4536b")
 	)
+	(wire
+		(pts
+			(xy 154.94 111.76) (xy 157.48 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a6948d3-3725-4286-8a70-8f625e44d71e")
+	)
 	(bus
 		(pts
 			(xy 80.01 170.18) (xy 80.01 180.34)
@@ -4880,6 +4882,16 @@
 			(type default)
 		)
 		(uuid "d067a800-43bf-460a-9d0f-7695d50f9108")
+	)
+	(wire
+		(pts
+			(xy 154.94 114.3) (xy 157.48 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0da398c-c00c-4d2e-b82a-0a639e9bb735")
 	)
 	(wire
 		(pts
@@ -5726,6 +5738,17 @@
 		)
 		(uuid "4bbf7d86-8513-4650-bc86-44817cfafa78")
 	)
+	(hierarchical_label "ESTOP"
+		(shape input)
+		(at 157.48 114.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "557180f2-907c-47ca-9b5d-f26b22fc3664")
+	)
 	(hierarchical_label "3.3V_EN"
 		(shape output)
 		(at 157.48 139.7 0)
@@ -5791,6 +5814,17 @@
 			(justify right)
 		)
 		(uuid "e025e31c-013b-4c68-a434-a9bf055413cd")
+	)
+	(hierarchical_label "POWERSW"
+		(shape input)
+		(at 157.48 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fa555e26-8162-417a-9561-88465f4cb964")
 	)
 	(symbol
 		(lib_id "power:GND")
