@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Output Power Stage")
-		(date "2026-11-08")
+		(date "2026-11-10")
 		(rev "1.0")
 		(company "RoboJackets RoboCup")
 		(comment 1 "Aiden Lee [piman PCB], Ibrahim Irfan")
@@ -244,8 +244,8 @@
 		)
 	)
 	(rectangle
-		(start 63.5 38.1)
-		(end 228.6 152.4)
+		(start 101.6 38.1)
+		(end 266.7 152.4)
 		(stroke
 			(width 0)
 			(type default)
@@ -257,7 +257,7 @@
 	)
 	(text "PG not used\ntie to GND"
 		(exclude_from_sim no)
-		(at 132.08 63.5 0)
+		(at 170.18 63.5 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -268,7 +268,7 @@
 	)
 	(text "Voltage Regulators, Load Switches"
 		(exclude_from_sim no)
-		(at 63.5 37.465 0)
+		(at 101.6 37.465 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -279,7 +279,7 @@
 	)
 	(text "PG not used\ntie to GND"
 		(exclude_from_sim no)
-		(at 195.58 139.7 0)
+		(at 233.68 139.7 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -289,32 +289,32 @@
 		(uuid "fc50efe7-58ad-443c-921a-2402875d2c0c")
 	)
 	(junction
-		(at 146.05 104.14)
+		(at 184.15 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "185929cb-4f24-45b9-a47d-e2506d51fcbd")
 	)
 	(junction
-		(at 146.05 53.34)
+		(at 184.15 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6e9ed727-d0d6-48b9-a1aa-0662594b99a8")
 	)
 	(junction
-		(at 139.7 53.34)
+		(at 177.8 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d663408f-6e73-4e9a-b8d2-ea3d07181115")
 	)
 	(junction
-		(at 146.05 78.74)
+		(at 184.15 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d83cc0e8-0aee-41ee-82a9-9ebbf1f2a848")
 	)
 	(wire
 		(pts
-			(xy 83.82 53.34) (xy 88.9 53.34)
+			(xy 121.92 53.34) (xy 127 53.34)
 		)
 		(stroke
 			(width 0)
@@ -324,7 +324,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 60.96) (xy 129.54 63.5)
+			(xy 167.64 60.96) (xy 167.64 63.5)
 		)
 		(stroke
 			(width 0)
@@ -334,7 +334,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 107.95) (xy 195.58 107.95)
+			(xy 228.6 107.95) (xy 233.68 107.95)
 		)
 		(stroke
 			(width 0)
@@ -344,7 +344,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 78.74) (xy 152.4 78.74)
+			(xy 184.15 78.74) (xy 190.5 78.74)
 		)
 		(stroke
 			(width 0)
@@ -354,7 +354,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 53.34) (xy 195.58 53.34)
+			(xy 177.8 53.34) (xy 233.68 53.34)
 		)
 		(stroke
 			(width 0)
@@ -364,7 +364,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 86.36) (xy 152.4 86.36)
+			(xy 177.8 86.36) (xy 190.5 86.36)
 		)
 		(stroke
 			(width 0)
@@ -374,7 +374,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 82.55) (xy 195.58 82.55)
+			(xy 228.6 82.55) (xy 233.68 82.55)
 		)
 		(stroke
 			(width 0)
@@ -384,7 +384,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 60.96) (xy 129.54 60.96)
+			(xy 165.1 60.96) (xy 167.64 60.96)
 		)
 		(stroke
 			(width 0)
@@ -394,7 +394,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 78.74) (xy 146.05 104.14)
+			(xy 184.15 78.74) (xy 184.15 104.14)
 		)
 		(stroke
 			(width 0)
@@ -404,7 +404,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 129.54) (xy 152.4 129.54)
+			(xy 184.15 129.54) (xy 190.5 129.54)
 		)
 		(stroke
 			(width 0)
@@ -414,7 +414,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 137.16) (xy 193.04 139.7)
+			(xy 231.14 137.16) (xy 231.14 139.7)
 		)
 		(stroke
 			(width 0)
@@ -424,7 +424,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 104.14) (xy 152.4 104.14)
+			(xy 184.15 104.14) (xy 190.5 104.14)
 		)
 		(stroke
 			(width 0)
@@ -434,7 +434,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 53.34) (xy 146.05 78.74)
+			(xy 184.15 53.34) (xy 184.15 78.74)
 		)
 		(stroke
 			(width 0)
@@ -444,7 +444,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 104.14) (xy 146.05 129.54)
+			(xy 184.15 104.14) (xy 184.15 129.54)
 		)
 		(stroke
 			(width 0)
@@ -454,7 +454,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 111.76) (xy 152.4 111.76)
+			(xy 177.8 111.76) (xy 190.5 111.76)
 		)
 		(stroke
 			(width 0)
@@ -464,7 +464,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 137.16) (xy 152.4 137.16)
+			(xy 177.8 137.16) (xy 190.5 137.16)
 		)
 		(stroke
 			(width 0)
@@ -474,7 +474,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 53.34) (xy 139.7 53.34)
+			(xy 165.1 53.34) (xy 177.8 53.34)
 		)
 		(stroke
 			(width 0)
@@ -484,7 +484,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 133.35) (xy 195.58 133.35)
+			(xy 228.6 133.35) (xy 233.68 133.35)
 		)
 		(stroke
 			(width 0)
@@ -494,7 +494,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 137.16) (xy 193.04 137.16)
+			(xy 228.6 137.16) (xy 231.14 137.16)
 		)
 		(stroke
 			(width 0)
@@ -504,7 +504,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 50.8) (xy 139.7 53.34)
+			(xy 177.8 50.8) (xy 177.8 53.34)
 		)
 		(stroke
 			(width 0)
@@ -514,7 +514,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 60.96) (xy 88.9 60.96)
+			(xy 121.92 60.96) (xy 127 60.96)
 		)
 		(stroke
 			(width 0)
@@ -524,7 +524,7 @@
 	)
 	(hierarchical_label "12.0V_EN"
 		(shape input)
-		(at 139.7 137.16 180)
+		(at 177.8 137.16 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -535,7 +535,7 @@
 	)
 	(hierarchical_label "12.0V_REG"
 		(shape output)
-		(at 195.58 133.35 0)
+		(at 233.68 133.35 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -546,7 +546,7 @@
 	)
 	(hierarchical_label "VBATT_SW"
 		(shape output)
-		(at 195.58 53.34 0)
+		(at 233.68 53.34 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -557,7 +557,7 @@
 	)
 	(hierarchical_label "VBATT"
 		(shape input)
-		(at 83.82 53.34 180)
+		(at 121.92 53.34 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -568,7 +568,7 @@
 	)
 	(hierarchical_label "VBATT_EN"
 		(shape input)
-		(at 83.82 60.96 180)
+		(at 121.92 60.96 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -579,7 +579,7 @@
 	)
 	(hierarchical_label "5.0V_EN"
 		(shape input)
-		(at 139.7 111.76 180)
+		(at 177.8 111.76 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -590,7 +590,7 @@
 	)
 	(hierarchical_label "5.0V_REG"
 		(shape output)
-		(at 195.58 107.95 0)
+		(at 233.68 107.95 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -601,7 +601,7 @@
 	)
 	(hierarchical_label "3.3V_REG"
 		(shape output)
-		(at 195.58 82.55 0)
+		(at 233.68 82.55 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -612,7 +612,7 @@
 	)
 	(hierarchical_label "3.3V_EN"
 		(shape input)
-		(at 139.7 86.36 180)
+		(at 177.8 86.36 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -623,7 +623,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 139.7 50.8 0)
+		(at 177.8 50.8 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -634,7 +634,7 @@
 		(fields_autoplaced yes)
 		(uuid "6a61670b-4950-4536-9735-89b9cb6063ee")
 		(property "Reference" "#FLG08"
-			(at 139.7 48.895 0)
+			(at 177.8 48.895 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -645,7 +645,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 139.7 45.72 0)
+			(at 177.8 45.72 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -655,7 +655,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 139.7 50.8 0)
+			(at 177.8 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -666,7 +666,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 50.8 0)
+			(at 177.8 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -677,7 +677,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 139.7 50.8 0)
+			(at 177.8 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -701,7 +701,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 129.54 63.5 0)
+		(at 167.64 63.5 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -712,7 +712,7 @@
 		(fields_autoplaced yes)
 		(uuid "8a701b68-9694-438a-a5e9-3fc98337c68d")
 		(property "Reference" "#PWR062"
-			(at 129.54 69.85 0)
+			(at 167.64 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -723,7 +723,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 129.54 68.58 0)
+			(at 167.64 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -733,7 +733,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 129.54 63.5 0)
+			(at 167.64 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -744,7 +744,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 129.54 63.5 0)
+			(at 167.64 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -755,7 +755,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 129.54 63.5 0)
+			(at 167.64 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -779,7 +779,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 193.04 139.7 0)
+		(at 231.14 139.7 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -790,7 +790,7 @@
 		(fields_autoplaced yes)
 		(uuid "cb890de6-97cf-4b6a-82d6-05874f0f7197")
 		(property "Reference" "#PWR063"
-			(at 193.04 146.05 0)
+			(at 231.14 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -801,7 +801,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 193.04 144.78 0)
+			(at 231.14 144.78 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -811,7 +811,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 193.04 139.7 0)
+			(at 231.14 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -822,7 +822,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 193.04 139.7 0)
+			(at 231.14 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -833,7 +833,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 193.04 139.7 0)
+			(at 231.14 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -856,7 +856,7 @@
 		)
 	)
 	(sheet
-		(at 152.4 76.2)
+		(at 190.5 76.2)
 		(size 38.1 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -872,7 +872,7 @@
 		)
 		(uuid "5540a621-1491-4746-8ad7-b1e9d1201cfb")
 		(property "Sheetname" "VBATT to 3.3V Regulator"
-			(at 152.4 75.4884 0)
+			(at 190.5 75.4884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -883,7 +883,7 @@
 			)
 		)
 		(property "Sheetfile" "3V3_reg.kicad_sch"
-			(at 152.4 89.4846 0)
+			(at 190.5 89.4846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -894,7 +894,7 @@
 			)
 		)
 		(pin "3.3V_REG" output
-			(at 190.5 82.55 0)
+			(at 228.6 82.55 0)
 			(uuid "d3ffb57c-f64b-4aa4-843c-f1e611e7b33a")
 			(effects
 				(font
@@ -904,7 +904,7 @@
 			)
 		)
 		(pin "Enable" input
-			(at 152.4 86.36 180)
+			(at 190.5 86.36 180)
 			(uuid "4d2a1773-ecec-4754-9b4a-edb152344be7")
 			(effects
 				(font
@@ -914,7 +914,7 @@
 			)
 		)
 		(pin "VBATT" input
-			(at 152.4 78.74 180)
+			(at 190.5 78.74 180)
 			(uuid "36a0e8a2-a6dc-4d2b-8e09-d1453efc3712")
 			(effects
 				(font
@@ -932,7 +932,53 @@
 		)
 	)
 	(sheet
-		(at 152.4 127)
+		(at 25.4 50.8)
+		(size 50.8 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "5e2907a2-61c4-4543-ad44-ebe1e5cd31dd")
+		(property "Sheetname" "E-Stop & Power Switch"
+			(at 25.4 50.0884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "estop.kicad_sch"
+			(at 25.4 89.4846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "power-board"
+				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/45a80922-adbb-4c59-8dc9-53bac2202f70"
+					(page "17")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 190.5 127)
 		(size 38.1 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -948,7 +994,7 @@
 		)
 		(uuid "8f427200-83c2-4490-b17c-4ffb5de8840b")
 		(property "Sheetname" "VBATT to 12.0V Regulator"
-			(at 152.4 126.2884 0)
+			(at 190.5 126.2884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -959,7 +1005,7 @@
 			)
 		)
 		(property "Sheetfile" "12V0_reg.kicad_sch"
-			(at 152.4 140.2846 0)
+			(at 190.5 140.2846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -970,7 +1016,7 @@
 			)
 		)
 		(pin "12.0V_REG" output
-			(at 190.5 133.35 0)
+			(at 228.6 133.35 0)
 			(uuid "96e8f211-78cc-420a-8400-aa21e7a52ba1")
 			(effects
 				(font
@@ -980,7 +1026,7 @@
 			)
 		)
 		(pin "Enable" input
-			(at 152.4 137.16 180)
+			(at 190.5 137.16 180)
 			(uuid "9c2b323b-a5d2-46e1-8528-10fd32fb0ab6")
 			(effects
 				(font
@@ -990,7 +1036,7 @@
 			)
 		)
 		(pin "POWER_OK" output
-			(at 190.5 137.16 0)
+			(at 228.6 137.16 0)
 			(uuid "c0511361-7c3b-4268-a176-6cd05409ecee")
 			(effects
 				(font
@@ -1000,7 +1046,7 @@
 			)
 		)
 		(pin "VBATT" input
-			(at 152.4 129.54 180)
+			(at 190.5 129.54 180)
 			(uuid "694af2d5-5ec3-4522-a7ef-f1716d1a9b55")
 			(effects
 				(font
@@ -1018,7 +1064,7 @@
 		)
 	)
 	(sheet
-		(at 152.4 101.6)
+		(at 190.5 101.6)
 		(size 38.1 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1034,7 +1080,7 @@
 		)
 		(uuid "c2410622-fe01-481f-916b-a29f8df9aa77")
 		(property "Sheetname" "VBATT to 5.0V Regulator"
-			(at 152.4 100.8884 0)
+			(at 190.5 100.8884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1045,7 +1091,7 @@
 			)
 		)
 		(property "Sheetfile" "5V0_reg.kicad_sch"
-			(at 152.4 114.8846 0)
+			(at 190.5 114.8846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1056,7 +1102,7 @@
 			)
 		)
 		(pin "5.0V_REG" output
-			(at 190.5 107.95 0)
+			(at 228.6 107.95 0)
 			(uuid "43811e05-6b4e-4fa2-9767-66f515902d10")
 			(effects
 				(font
@@ -1066,7 +1112,7 @@
 			)
 		)
 		(pin "Enable" input
-			(at 152.4 111.76 180)
+			(at 190.5 111.76 180)
 			(uuid "7a84892d-e5b2-4298-91a1-8019c73d590a")
 			(effects
 				(font
@@ -1076,7 +1122,7 @@
 			)
 		)
 		(pin "VBATT" input
-			(at 152.4 104.14 180)
+			(at 190.5 104.14 180)
 			(uuid "034897e3-c832-47b6-abc8-180dfb2b7765")
 			(effects
 				(font
@@ -1094,7 +1140,7 @@
 		)
 	)
 	(sheet
-		(at 88.9 50.8)
+		(at 127 50.8)
 		(size 38.1 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1110,7 +1156,7 @@
 		)
 		(uuid "ef61826b-8a0d-4510-88ef-dafc66da471c")
 		(property "Sheetname" "25V, 30A Load Switch"
-			(at 88.9 50.0884 0)
+			(at 127 50.0884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1121,7 +1167,7 @@
 			)
 		)
 		(property "Sheetfile" "vbatt_load_sw.kicad_sch"
-			(at 88.9 64.0846 0)
+			(at 127 64.0846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1132,7 +1178,7 @@
 			)
 		)
 		(pin "Enable" input
-			(at 88.9 60.96 180)
+			(at 127 60.96 180)
 			(uuid "d1492cfb-5c5f-4f10-8406-db232a103041")
 			(effects
 				(font
@@ -1142,7 +1188,7 @@
 			)
 		)
 		(pin "VBATT" input
-			(at 88.9 53.34 180)
+			(at 127 53.34 180)
 			(uuid "b20ed5c3-8ad6-4abf-82d1-7fcb9701b0de")
 			(effects
 				(font
@@ -1152,7 +1198,7 @@
 			)
 		)
 		(pin "VBATT_OUT" output
-			(at 127 53.34 0)
+			(at 165.1 53.34 0)
 			(uuid "5ac62466-2bdc-42be-a440-2fe13e8bcb59")
 			(effects
 				(font
@@ -1162,7 +1208,7 @@
 			)
 		)
 		(pin "POWER_OK" output
-			(at 127 60.96 0)
+			(at 165.1 60.96 0)
 			(uuid "b47062fb-b13a-47a2-a58e-c86b21dbf4e8")
 			(effects
 				(font
