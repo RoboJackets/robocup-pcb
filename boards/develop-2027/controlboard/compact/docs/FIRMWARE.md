@@ -68,6 +68,7 @@ so SCK does not float between transfers.
 | PA9 (101) | VBUS_SENSE | input | R20 / R21 divider (0.591) on cable VBUS; HAL_PCD_DevConnect / DevDisconnect on its edges |
 | PA15 (110) | (R13 only) | analog | R13 holds the bootloader SPI3 NSS high |
 | BOOT0 (138) | BOOT0 | | R11 10k pull-down; SW2 (BOOT) pulls it to 3.3 V |
+| PD5 (119) | SD_DET (microSD card detect) | input, no pull, EXTI5 both edges (shares the EXTI9_5 IRQ with PB6 / PB7: check the pending bits) | R73 47k pull-up; low = card in; debounce about 50 ms before initialising the card |
 | all others | unconnected | analog | "Set all free pins as analog" |
 
 **PB6 / PB7.** On the compact board PB6 is DATA_READY and PB7 is HANDSHAKE, the opposite of the prototype. Swap the
@@ -121,14 +122,22 @@ pin defines and the EXTI lines when porting prototype firmware.
   mux switches. Set a BOR level, and on any PWR_SRC_5V / PWR_SRC_3V3 change: re-initialise SD, IMU and OLED, pulse
   ESP_RST and restart ESP-Hosted, resend the LED frame. On the robot there is no USB, so this is a bench case.
 - Drive the UART4 TX only once PWR_SRC shows the powerboard.
+- LEDs: D7-D11 are SK9822-EC20 (APA102-style frames: start frame of 32 zero bits, then per LED 0b111 + 5-bit
+  current gain + three 8-bit colour bytes, MSB first; SK9822 datasheet §10). **Colour byte order is not settled by
+  the datasheet:** its frame table (p7) shows red, blue, green, while the text says "RBG" (p7) and "GRB" (p8), and
+  the APA102 default is blue, green, red. Make the order a build option and set it on the first board by sending
+  pure red, then green, then blue to one LED. The datasheet's end frame is 32 one bits; send at least 32 bits plus
+  n/2 extra clocks (an SK9822-aware driver such as FastLED `SK9822` does this). The 5-bit field sets the LED
+  current (18 mA per colour at 31/31), not PWM: OPSCO recommends level 9/31 or lower (about 5.2 mA per colour) for
+  heat in the 2020 package; use the 8-bit values for dimming.
 - LEDs: cap the DotStar chain at about 250 mA on the powerboard and about 100 mA while PWR_SRC_5V is low (USB). Send
   an all-off frame at start-up (power-on state is not specified).
 - USB power alone is for restricted bench use (radio TX off, external loads off): F1 holds 0.55 A at 50 °C.
 
 ### 1.8 Other
 
-- SD: no card-detect pin. Report "present", treat an init failure as "no card", recover a hung card with CMD0; card
-  VDD is not switchable.
+- SD: card detect on PD5 (SD_DET, low = card in, see the pin table). Still treat an init failure as "no card" and
+  recover a hung card with CMD0; card VDD is not switchable.
 - OLED: the 128 x 64 image is rotated 90 degrees by the mounting; set the u8g2 rotation (U8G2_R1 or U8G2_R3) to
   match. Check rise times before running 400 kHz.
 - DFU: hold BOOT (SW2) and press RESET (SW1). The ROM DFU uses HSI48 with CRS, so it needs neither the crystal nor

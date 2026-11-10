@@ -22,12 +22,19 @@ This section supersedes the older stock and Digi-Key statements below.
 
 - **JLC stock** in `*_BOM_full.csv` was refreshed from the JLCPCB parts API on 2026-11-09 (column `JLC stock 2026-11-09`).
   `Board sets in stock` there counts this board alone; the Samtec LSHM (C3643542, 37 at JLC) is shared by the CB J9 and
-  the radio J2, so a CB + radio set is limited to **18**.
+  the radio J2, so a CB + radio set is limited to **18** (27 at JLC on the 2026-11-09 evening re-check: **13 sets**).
 - **Digi-Key** part numbers, stock and prices were checked on digikey.com on 2026-11-09 and are in
   `*_BOM_order_separately.csv` (no longer unverified). Mouser figures are still from FindChips, 2026-11-07.
 - **Valid Digi-Key regulator PN**: MCP1826S-3302E/DB-ND exists (tube, 1,995 in stock); MCP1826ST-3302E/DBCT-ND (cut tape)
   has 39,364. The AP7361C-33E-13 is 0 at Digi-Key too.
-- **Buy and consign** (CB): D7-D11 BB-2020BGR-TRB from Digi-Key 2007-BB-2020BGR-TRBCT-ND (121,957, 1.44 USD at qty 1).
+- **D7-D11 now JLC-assembled** (2026-11-09): OPSCO SK9822-EC20, C2909059 (123,299 at JLC, Extended), on footprint
+  `ControlBoard2027:OPSCO_SK9822-EC20` (2026-11-09 evening). It is drawn in the SK9822 datasheet top-view orientation
+  (pin 1 SDO top-left, pin-1 dot there) with the same copper as the old BB-2020 footprint, and each LED was turned 90°
+  on the board so every pad stayed in place. The exported rotation is therefore the part's standard orientation: no
+  rotation offset is needed. As for every part, glance at JLC's placement preview (pin 1 on the dot). The terminals sit
+  about 0.1 mm inboard of the pad inner edges. The BB-2020BGR-TRB
+  stays as the same-footprint alternate (Digi-Key 2007-BB-2020BGR-TRBCT-ND, 121,957).
+- **Buy and consign** (CB):
   U11 LSM6DSV320XTR from **Mouser** 511-LSM6DSV320XTR (Digi-Key 497-LSM6DSV320XTRCT-ND is 0, 24-week lead time).
   Tightest JLC parts today: J9 LSHM 37, U2 STM32H723ZGT6 66, U1 TPD6E05U06 336.
 
@@ -49,12 +56,14 @@ This section supersedes the older stock and Digi-Key statements below.
 
 | | Lines | Parts per board |
 |---|---|---|
-| Full BOM | 52 | 174 |
-| JLCPCB assembly | 50 (22 Basic, 28 Extended) | 168 |
-| Order separately (consign or JLC global sourcing) | 2: D7-D11, U11 | 6 |
+| Full BOM | 52 | 175 |
+| JLCPCB assembly | 51 (22 Basic, 29 Extended) | 174 |
+| Order separately (consign or JLC global sourcing) | 1: U11 | 1 |
 | Loose accessory | 1: OLED module for J13 | 1 |
 
-Not in the BOM: H1-H4 (M3 holes), TP1-TP21 (bare test pads), both excluded in the schematic. HR1 / HR2 (M2 radio
+R73 (47k SD card-detect pull-up, added 2026-11-09) joins the R1-R5 / R20 47k line.
+
+Not in the BOM: H1-H4 (M3 holes), H5 / H6 (M2 speaker-board holes), TP1-TP21 (bare test pads), all excluded in the schematic. HR1 / HR2 (M2 radio
 standoff pads) exist only on the board and are not in the schematic. The radio standoffs and screws (2x M2, 5 mm
 stack) and the 4x M2 nylon OLED standoffs are mechanical hardware and are not listed.
 
@@ -65,16 +74,20 @@ assembly): SW1-SW6, J13 socket, J15. J9 has paste-in-hole shield pins (2.00 mm s
 
 | Part | Source | Stock | Per set | Board sets |
 |---|---|---|---|---|
-| J9 (+ radio J2) Samtec LSHM-110-02.5-L-DV-A-S-K-TR | JLC C3643542 | 37 | 2 | **18 (limiting JLC part)** |
-| U2 STM32H723ZGT6 | JLC C730146 | 175 | 1 | 175 |
-| J3 FTSH-107-01-L-DV-K | JLC C5307809 | 445 | 1 | 445 |
-| D7-D11 BB-2020BGR-TRB | Mouser 442-BB2020BGRTB | 2502 | 5 | 500 |
-| SW1, SW2, SW4-SW6 PTS636SM43LFS | JLC C2689636 | 3238 | 5 | 647 |
-| U11 LSM6DSV320XTR | Mouser 511-LSM6DSV320XTR | 1454 | 1 | 1454 |
+JLC stock re-checked on the evening of 2026-11-09 (U11 Mouser figure from 2026-11-07):
 
-Every other line covers more than 700 sets. **The controlboard can be built in at least 18 sets.** The LSHM is shared
+| J9 (+ radio J2) Samtec LSHM-110-02.5-L-DV-A-S-K-TR | JLC C3643542 | 27 | 2 | **13 (limiting JLC part)** |
+| U2 STM32H723ZGT6 | JLC C730146 | 51 | 1 | 51 |
+| U1 TPD6E05U06RVZR | JLC C962978 | 153 | 1 | 153 |
+| J3 FTSH-107-01-L-DV-K | JLC C5307809 | 358 | 1 | 358 |
+| J1 DM3AT-SF-PEJM5 | JLC C114218 | 416 | 1 | 416 |
+| SW1, SW2, SW4-SW6 PTS636SM43LFS | JLC C2689636 | 3177 | 5 | 635 |
+| U11 LSM6DSV320XTR | Mouser 511-LSM6DSV320XTR | 1454 | 1 | 1454 |
+| D7-D11 SK9822-EC20 | JLC C2909059 | 123199 | 5 | 24639 |
+
+Every other line covers more than 900 sets. **The controlboard can be built in at least 13 sets.** The LSHM is shared
 with the radio, so a full set is also limited by the radio's U1 (see the radio README: ESP32-C5-WROOM-1U-N8R8 is 0 at
-JLC, LCSC and Mouser). If you order the Inboard and Overhang radios in the same set, the LSHM needs 3 per set (12 sets).
+JLC, LCSC and Mouser). If you order the Inboard and Overhang radios in the same set, the LSHM needs 3 per set (9 sets).
 
 ## Decisions (applied 2026-11-07)
 

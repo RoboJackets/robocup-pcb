@@ -254,7 +254,7 @@ for M2 nylon standoffs. Some modules swap VCC and GND: check the module before f
 
 - J2: USB 2.0 Full Speed device (STM32 OTG_HS in FS mode, PA11 / PA12), CC1 / CC2 5.1k Rd (sink), all four data
   contacts through U3 (TPD4E05U06) flow-through, VBUS TVS D1 and PTC F1. Also powers the board on the bench.
-- J1: microSD on SDMMC2, 4-bit, no card-detect pin.
+- J1: microSD on SDMMC2, 4-bit; card detect on PD5 (SD_DET, R73 47k pull-up, low = card in).
 
 ## 6. Changing the interface
 

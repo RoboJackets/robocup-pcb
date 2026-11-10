@@ -76,7 +76,8 @@ confirmation with JLC, re-audit of the last changed areas, mating-board agreemen
 | DS14623 | ST LSM6DSV320X datasheet, Rev 3 (fitted U11) |
 | DS15060 | ST LSM6DSK320X datasheet, Rev 1 (the original U11 choice; same pin table and ranges) |
 | AN6119 | ST LSM6DSV family application note (pin 1 / CS / aux-pin entries) |
-| BB2020 | American Bright BB-2020BGR-TRB |
+| SK9822 | OPSCO SK9822-EC20 datasheet Rev A/0 (fitted D7-D11; datasheet.lcsc.com, LCSC C2909059) |
+| BB2020 | American Bright BB-2020BGR-TRB (same-footprint alternate for D7-D11) |
 | ABM8 | Abracon ABM8 crystal |
 | SLVA689 | TI I2C pull-up resistor calculation |
 | SLVSBO7O | TI TPD4E05U06 / TPD6E05U06, including layout guidance |
@@ -98,6 +99,10 @@ there are kept with the prototype project (`../../prototype/ControlBoard2027/dat
 
 - 120 x 60 mm, 6 layers (JLC06161H-3313E, 1.6 mm), four M3 corner holes H1-H4 at (3.5, 3.5), (116.5, 3.5),
   (3.5, 56.5), (116.5, 56.5).
+- Two M2 holes H5 (21.925, 23.375) / H6 (21.925, 48.375) for the speaker board (outline x 9.4-34.5, y 13.3-58.4 on
+  User.Drawings). Fixed by the speaker design. The motor bus keeps its track edges at least 3.37 mm from the H5
+  centre (deviation 29); the F.Cu DIP4 track passes 2.67 mm from H5 and the GND pours come to 1.35 mm, so check
+  the speaker standoff / washer diameter (M2 washer about 5 mm) against them (m27).
 - STM32H723ZGT6 (LQFP-144) at (52.0, 22.5), rotation 0 (pin 1 north-west).
 - 30 x 40 mm radio board (RadioBoard2027_C_Inboard or _Overhang, one shared interface) stacked 5 mm above the MCU on
   J9 (Samtec LSHM, (39.70, 6.03), rotation 90) and two M2 standoffs HR1 (50.0, 37.5) / HR2 (63.4, 37.5). Radio
@@ -341,8 +346,12 @@ still above Rp(min). Measure SCL rise time at TP7 (kicker) and TP8 (expansion) w
 
 ## 8. SD card
 
-- J1 Hirose DM3AT-SF-PEJM5 push-push microSD (KiCad footprint), shell to GND. The card-detect switch is unused;
-  firmware finds a card by initialising it.
+- J1 Hirose DM3AT-SF-PEJM5 push-push microSD (KiCad footprint), shell to GND. Symbol
+  `Connector:Micro_SD_Card_Det_Hirose_DM3AT`: the card-detect switch is pads 9 (DET_B) and 10 (DET_A), two pins of
+  their own in the symbol and footprint; normally open, closed with a card inserted (Hirose DM3 catalogue).
+- Card detect (added 2026-11-09): DET_A to GND, DET_B on SD_DET to PD5 (pin 119, EXTI5) with R73 47k 1% pull-up to
+  +3V3. Low = card in. 70 uA through R73 while a card is in. No ESD part: the switch contacts sit inside the grounded
+  shell and are touched only by the card body (deviation 30). R73 is on L6 next to the L1-L6 via at J1.
 - SDMMC2, 4-bit: PD6 CK, PD7 CMD, PG9-PG12 D0-D3.
 - R1-R5 47k pull-ups on DAT0-3 and CMD (SD range 10-100k): idle high at least 2.79 V against 2.06 V (card) and 2.31 V
   (MCU) thresholds. CLK has none.
@@ -405,14 +414,21 @@ Firmware ignores re-triggers for about 10 ms. SW1, SW2, SW4-SW6 are APEM MJTP124
 
 ## 10. DotStar LEDs
 
-- Five BB-2020BGR-TRB (APA102-2020 compatible) D7-D11 on +5V (the U8 output, so they work on USB too): VDD 4.5-5.5 V,
-  input high 0.7 x VDD = 3.5 V, under 10 MHz clock, 70 °C max ambient. The power-on state is not specified: firmware
-  sends an all-off frame first.
-- Current: up to 500 mA at full white. Firmware caps it at about 250 mA on the powerboard (inside F5's hold, §4.5)
+- Five OPSCO SK9822-EC20 (APA102-protocol compatible, JLC C2909059; was BB-2020BGR-TRB, kept as the same-footprint
+  alternate) D7-D11 on +5V (the U8 output, so they work on USB too). SK9822 datasheet: VDD 5 V typ, 5.3 V max;
+  VIH 3.4 V min, VIL 1.6 V max (U10 74AHCT125 at 5 V drives them); clock 15 MHz max (SPI6 runs 3.125 MHz);
+  -40 to 85 °C; built-in reset (dark at power-up), firmware still sends an all-off frame first. The colour byte order
+  is ambiguous in the datasheet (FIRMWARE.md §1.8). The BB-2020 alternate has VDD 4.5-5.5 V and a 10 MHz clock limit.
+- Current: 18 mA per colour at full gain, so up to 270 mA for five LEDs at full white; OPSCO recommends gain level
+  9/31 or lower (about 5.2 mA per colour, 78 mA for five at white) for heat. Firmware caps it at about 250 mA on the powerboard (inside F5's hold, §4.5)
   and about 100 mA on USB (PWR_SRC_5V low). On USB, +5V can sit below 4.5 V, so colours are guaranteed only on the
   powerboard.
-- Footprint `ControlBoard2027:AmericanBright_BB-2020BGR-TRB`, built from the BB2020 p2 pad diagram (the stock
-  APA102-2020 footprint would put CO on +5V and CI on GND). Top view assumed: C1.
+- Footprint `ControlBoard2027:OPSCO_SK9822-EC20` (since 2026-11-09): the SK9822-EC20 top-view land drawing (SK9822 §6),
+  left column SDO / GND / SDI, right column CKO / VDD / CKI, pin 1 SDO top-left with the pin-1 dot, so the footprint's
+  0° is the part's standard orientation and the placement file needs no rotation offset. Its copper is the old
+  `AmericanBright_BB-2020BGR-TRB` land (BB2020 p2 pad diagram) turned 90° clockwise; each LED was turned 90° on the
+  board, so pads, nets and routing are unchanged and the BB-2020BGR-TRB still fits. Pad numbers keep the schematic
+  symbol numbering (1 VDD, 2 CKO, 3 SDO, 4 SDI, 5 CKI, 6 GND).
 - U10 SN74AHCT125DR (SOIC-14) shifts 3.3 V to 5 V; AHCT has TTL thresholds (VIH 2.0 V), AHC would need 3.5 V.
   Gate 1 buffers LED_SPI_SCK (2 -> 3 -> D7 CKI), gate 4 LED_SPI_MOSI (12 -> 11 -> D7 SDI); gates 2 / 3 disabled (OE to
   +5V, inputs to GND). 6.5 ns max delay, 2 % of the 320 ns bit at 3.125 Mbit/s. Inputs rated -0.5 to 7 V regardless of VCC.
@@ -488,7 +504,7 @@ the MCU pin groups: LQFP-144 at rotation 0, pins 1-36 face west, 37-72 south, 73
 | Pin group (side) | Goes to | Placement |
 |---|---|---|
 | Radio SPI3 PG15 / PB3 / PB4 / PB5, HS / DR PB7 / PB6, RST PE1 (north, pins 132-142) | J9 | J9 north-west of U2; the four matched lines reach J9 in the same lane order |
-| SDMMC2 PD6, PD7, PG9-PG12 (north, 122-127) | U1, J1 | Right edge |
+| SDMMC2 PD6, PD7, PG9-PG12 (north, 122-127), card detect PD5 (north, 119) | U1, J1, R73 | Right edge |
 | LED SPI6 PG13 / PG14 (north, 128-129) | U10, D7-D11 | Front, east of the radio |
 | USB PA11 / PA12, SWD PA13 / PA14, VBUS sense PA9 (east) | U3 / J2, J3 | Right side |
 | SPI1 PA5-PA7, CS PC5 / PB0 (south, 41-46) | J4 FL, J5 BL | Trunk west, then north / south to the left corners |
@@ -593,7 +609,8 @@ plane.
 Driver pin to receiver / connector pad, from the board copper (Dijkstra over each net's track graph). Series
 resistors add their pad-to-pad span, flow-through ESD spans count as copper, vias add their barrel between the two
 layers used (L1 0, L2 0.12, L3 0.24, L4 1.37, L5 1.48, L6 1.6 mm). Script: `v2_rlen.py` with the current J9 pinout and
-`usbm/ulen.py` (layout work folder), run on the saved repo board on 2026-11-07. Tolerance: every line within 1 mm of
+`usbm/ulen.py` (layout work folder), run on the saved repo board on 2026-11-07; re-run on 2026-11-09 after the J4 arm
+reroute (only the J4 group changed: CS0 lost its MCU-end bumps, so the group now matches at 85.617 mm). Tolerance: every line within 1 mm of
 its clock; radio SPI3 within 0.05 mm; USB skew 0.15 mm.
 
 | Group | Lines | Length (mm) | Worst vs clock |
@@ -601,7 +618,7 @@ its clock; radio SPI3 within 0.05 mm; USB skew 0.15 mm.
 | Radio SPI3 (J9) | SCK 14.861, MOSI 14.860, MISO 14.860, CS 14.860 | 14.860-14.861 | 0.001 |
 | Radio slow lines (not matched) | HS 8.912, DR 10.088, RST 14.720 | - | asynchronous (deviation 12) |
 | SDMMC2 (J1) | CK, CMD, D0, D2 62.231; D3 62.232; D1 62.496 | 62.231-62.496 | D1 +0.264 |
-| SPI1 to J4 (MOTOR 0) | SCK, MOSI, MISO, CS0 | 86.872-86.873 | 0.001 |
+| SPI1 to J4 (MOTOR 0) | SCK, MOSI, MISO, CS0 | 85.617 | 0.000 |
 | SPI1 to J5 (MOTOR 1) | SCK, MOSI, MISO, CS1 | 65.146 | 0.001 |
 | SPI2 to J7 (MOTOR 3) | SCK, MOSI, MISO, CS3 | 56.975 | 0.000 |
 | SPI2 to J6 (MOTOR 2) | SCK 62.871, MOSI 62.649, MISO 62.872, CS2 62.871 | 62.649-62.872 | MOSI -0.222 |
@@ -661,7 +678,7 @@ Project settings: `npth_inside_courtyard` = warning (J2's locating holes lie ins
 `track_not_centered_on_via` = warning (KiCad 10 defaults it to ignore, which would hide off-centre joins). A bottom
 rule area `SW3 GND column` keeps the L6 pour off the DIP GND pins, which reach L2 / L5 through their plated holes.
 
-### 12.9 DRC and ERC result (2026-11-07)
+### 12.9 DRC and ERC result (2026-11-07, re-run 2026-11-09)
 
 DRC on the saved repo board, schematic parity on: 0 errors, 0 unconnected, 0 parity issues, 13 warnings, all
 intended:
@@ -695,11 +712,16 @@ pad.
   narrow glyphs (1.0 mm high, 0.6 mm wide) because a normal "GND" is wider than the 2.0 mm pitch. Its POWER title is on
   the bottom silkscreen ("POWER (J15)").
 - J3 has a table east of the header: STDC14, pin 1 dot, 4 DIO, 6 CLK, 12 RST.
-- The GH connectors have a pin table beside the housing: J4-J8 (J4 in two columns), J11 ("1-2 GND ... 8 SDA"); J12 is
+- The GH connectors have a pin table beside the housing: J4-J8 (J4 in two columns), J11 (on the bottom silkscreen under
+  J11 since 2026-11-09, "J11 EXP 1: 1-2 GND 3-4 5V / 5 GND 6 SCL 7 GND 8 SDA", because H6 and the speaker board now
+  cover its old place); J12 is
   labelled "PINS AS EXP 1". J10's legend ("J10 1 SDA GND SCL GND") is on the bottom silkscreen.
 - Function names on every connector (MOTOR 0-3, DRIBBLER, EXP 1 / 2, KICKER, POWER, SWD, RADIO, USB, microSD, OLED);
   buttons RESET, BOOT, BTN0-2; DIP "ROBOT ID" with bits 1-6; rail LEDs 5V / 3V3; DotStars LED1-LED5 in chain order;
   test points by signal name.
+- Front art (group `silk_art_miku`, 2026-11-09): line art from `SvgMiku3.svg` (Creative Commons, per the user), the
+  four dark outline paths only, as filled F.Silkscreen polygons, 14.0 x 12.8 mm at (75.0-89.0, 18.5-31.3), east of the
+  radio and clear of the radio and speaker-board outlines. No pads under it; DRC unchanged.
 - 71 reference designators with no free spot at 1.0 mm are on F.Fab only. The OLED module outline is on F.Fab.
 
 ---
@@ -736,7 +758,7 @@ Every known deviation from `../../CLAUDE.md`, with its reason. Checked on the sa
 9. **SWDIO changes layer four times.** Slow.
 10. **Connector pin labels are tables beside the housings**, except on J15 (per pin). The 1.25 mm GH pitch and J3's
     neighbours leave no room for per-pin text.
-11. **Unequal two-drop motor arms.** SPI1 (J4 86.9 / J5 65.1 mm) and SPI2 (J6 62.9 / J7 57.0 mm) fan out from one
+11. **Unequal two-drop motor arms.** SPI1 (J4 85.6 / J5 65.1 mm) and SPI2 (J6 62.9 / J7 57.0 mm) fan out from one
     MCU-side via into two arms. At about 6.7 ps/mm the longest arm is about 0.6 ns one way, so a reflection is back at
     the branch within 1.2 ns. With driver edges slower than about 3 ns the reflections merge into the edge and each arm
     acts as a lumped load; with VERY_HIGH edges (under 1 ns) the other arm would ring at J4-J7. **Firmware requirement:**
@@ -795,6 +817,29 @@ Every known deviation from `../../CLAUDE.md`, with its reason. Checked on the sa
 28. **Two 0.148 mm D+ segments** (final audit m6). One at (105.92, 36.11) -> (106.03, 36.00) aligns D+ to the
     0.29 mm pair pitch where D- starts its diagonal; the other is at (63.81, 15.75) near U2. Not pad necks; kept (no
     electrical effect at Full Speed).
+29. **J4 arm rerouted around the speaker holes (2026-11-09, rebuilt after audit).** H5 / H6 are fixed by the
+    speaker board, and the old L6 SPI1 arm to J4 (MOTOR 0) ran its serpentines through H5. The arm keeps its
+    topology and vias (MCU-side branch via, L6, J4-side via). SCK / MISO / MOSI run as a 0.5 mm-pitch bundle that
+    makes one concentric 45-degree jog east north of H5 (3.0 mm deep, flats 1.4 / 0.99 / 0.57 mm, bends 45 degrees
+    only), then each line takes its own 45-degree lane south of H5: SCK and MISO with five accordion bumps each
+    (amplitude 0.36 / 0.33 mm, under 3W; 45-degree chamfers 0.15 mm long, equal to the trace width; legs at least 0.74 mm
+    centre to centre, 0.59 mm edge to edge; each bump top is a 0.12 (MISO) or 0.14 mm (SCK) rung between the two chamfers, kept so the bump
+    stays inside the 3W amplitude), MOSI as a plain offset lane (x 19.12; SCK lane x 21.025, MISO 19.625) that sets its length. CS0's old MCU-end
+    bumps and its 90-degree corner were removed: it now runs straight from its via into R24 pad 1 and turns west
+    inside the pad; MOSI's MCU-end mini
+    serpentine was replaced by a straight run. All four lines are 85.617 mm. The closest track edge is 3.37 mm from the H5
+    centre. Four GND stitching vias inside the lanes were removed, (18.07, 18.07), (17.9, 27.5), (18.3, 32.5),
+    (18.07, 36.93), and one was added at (20.375, 32.275), between the MISO and SCK lanes; the user removed two more about 1.05 mm from the H5 / H6 centres.
+    Exception to §7: the bundle jog is a 3.0 mm deep length-adding feature, far over the ~3W serpentine amplitude.
+    It is kept because all its bends are 45 degrees, its legs diverge (not parallel), the bundle stays concentric
+    at the 0.5 mm pitch, and the lanes south of H5 cannot hold the whole length within 3W. At MOSI's 0.57 mm flat
+    its own outgoing and return legs come within 0.42 mm edge to edge (under 4W) for a few tenths of a millimetre.
+30. **SD_DET has no ESD part and runs 58.7 mm on L6** (53.4 mm from the PD5 via to R73, 5.3 mm on to the J1 via)
+    plus 2.5 mm on L1. The DM3AT switch contacts are inside the grounded shell and only the card body touches them,
+    so no protector. The line is slow (card insertion only): PD5 -> via (55.75, 10.775) -> L6 under U10 and north of
+    U13 -> R73 (96.115, 20.875) -> via (101.925, 20.875) -> L1 to J1 pad 9. The L6 line turns 90 degrees inside R73
+    pad 2 (entry from the north, exit east to the via). To free the PD5 escape, U2 pin 120's outer GND stub and its via
+    at (56.5, 10.65) were removed; pin 120 keeps its inner GND via at (55.48, 13.175) next to C17.
 
 ---
 
@@ -804,10 +849,12 @@ IDs stay fixed; closed items are removed, not renumbered.
 
 ### Critical (release blockers)
 
-**C1 DotStar footprint view.** D7-D11 use `ControlBoard2027:AmericanBright_BB-2020BGR-TRB`, built from the BB2020 p2
+**C1 DotStar footprint view (resolved 2026-11-09 for the fitted SK9822-EC20).** D7-D11 used `ControlBoard2027:AmericanBright_BB-2020BGR-TRB` (now `OPSCO_SK9822-EC20`, same copper), built from the BB2020 p2
 2x3 land pattern (CO / VCC / CI over DO / GND / DI). The drawing does not say whether it is a top or bottom view; the
 footprint assumes top view (it labels the corners as the p2 die-bonding diagram does). Confirm with the vendor or a
-sample before ordering; if it is a bottom view, mirror the pads left-right.
+sample before ordering; if it is a bottom view, mirror the pads left-right. Resolution: D7-D11 are now the SK9822-EC20,
+whose datasheet labels its land drawing as a top view; its pins map onto this footprint by a pure 90° rotation (§10).
+The question remains open only for the BB-2020BGR-TRB alternate.
 
 **C2 CubeMX HSE setting.** The old V0.3 project sets HSE to 48 MHz with PLL1 /3 x12. With the 25 MHz crystal the VCO
 lands at 100 MHz, below the 192 MHz minimum. Apply the clock tree in FIRMWARE.md.
@@ -897,6 +944,10 @@ board's J2 is still the older 8-pin JST PH. Change it to this pinout, or build a
 - **m24** No fault reporting: a tripped F1 / F3-F6 shows only as a missing rail.
 - **m26** The 100 nF MCU decoupling caps pair with different pins in the schematic labels than on the board; each
   capacitor's Description gives both. Electrically the same.
+- **m27** Speaker board (added 2026-11-09, outline x 9.4-34.5, y 13.3-58.4 on User.Drawings, holes H5 / H6) covers
+  parts of the top side: SW3 (ROBOT ID DIP) east half, J8's pin table, the ROBOT ID / MOTOR 1 / EXP 1 labels, TP2
+  (VDDA), and the north edges of J5 and J11 (latch access depends on the stack height). Check DIP access and the
+  standoff / washer diameter at H5 against the F.Cu DIP4 track (2.67 mm from the centre) and the GND pours.
 
 ---
 
@@ -921,7 +972,7 @@ resistors), so the order needs double-sided assembly. Through-hole: SW1-SW6, J13
 
 | Refs | Part | Alternate source | Why |
 |---|---|---|---|
-| D7-D11 | American Bright BB-2020BGR-TRB | Mouser 442-BB2020BGRTB (or Digi-Key 2007-BB-2020BGR-TRBCT-ND) | 0 at JLCPCB and LCSC; no APA102-2020-compatible LED for this footprint at JLCPCB |
+| D7-D11 | OPSCO SK9822-EC20 (JLC C2909059) | alternate: American Bright BB-2020BGR-TRB, Digi-Key 2007-BB-2020BGR-TRBCT-ND / Mouser 442-BB2020BGRTB | the BB-2020 is 0 at JLCPCB and LCSC; the SK9822-EC20 fits the same footprint (rotated) and is JLC-assembled |
 | U11 | ST LSM6DSV320XTR | Mouser 511-LSM6DSV320XTR (or Digi-Key 497-LSM6DSV320XTRCT-ND) | 0 at LCSC, oversold at JLCPCB; the LSM6DSV32X / 16X lack the +-320 g channel |
 
 **Low stock or substituted at JLCPCB** (JLCPCB-assembled; stock on 2026-11-07):

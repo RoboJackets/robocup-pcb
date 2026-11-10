@@ -6738,6 +6738,19 @@
 		(uuid "4293b1e1-24a5-458e-8e70-99aad961b2fb")
 	)
 	(rectangle
+		(start 242.57 219.964)
+		(end 302.57 247.964)
+		(stroke
+			(width 0.254)
+			(type dash)
+			(color 0 0 132 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "563617be-7b0b-4a00-ac0a-95ddffda85f4")
+	)
+	(rectangle
 		(start 318 13)
 		(end 374 97)
 		(stroke
@@ -6851,6 +6864,19 @@
 			(justify left bottom)
 		)
 		(uuid "3926860e-2cb7-4c83-a0cf-4835fc602e0c")
+	)
+	(text "M2 SPEAKER HOLES H5-H6\n"
+		(exclude_from_sim no)
+		(at 243.64 223.484 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "45202ea9-4a57-4598-a908-37d0ffeab4ec")
 	)
 	(text "M3 CORNER HOLES H1-H4"
 		(exclude_from_sim no)
@@ -9164,7 +9190,7 @@
 				(justify left)
 			)
 		)
-		(property "Description" "M3 mounting hole, 4 mm from board corner (reviewer requirement)"
+		(property "Description" "M3 mounting hole, 3.5 mm from both board edges (reviewer requirement)"
 			(at 336.51 241.3 0)
 			(hide yes)
 			(show_name no)
@@ -13101,6 +13127,85 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
+		(at 250.19 233.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5eb60ada-a7ec-4b05-814b-ff0379c2d9ea")
+		(property "Reference" "H5"
+			(at 252.69 230.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 252.69 236.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 252.69 233.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 252.69 233.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "M2 speaker-board mounting hole; position fixed by the speaker board"
+			(at 252.69 233.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "ControlBoard2027_C"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/c387934c-6c45-449c-9c7b-623c2e31b062"
+					(reference "H5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
 		(at 334.01 231.14 0)
 		(unit 1)
 		(body_style 1)
@@ -13157,7 +13262,7 @@
 				(justify left)
 			)
 		)
-		(property "Description" "M3 mounting hole, 4 mm from board corner (reviewer requirement)"
+		(property "Description" "M3 mounting hole, 3.5 mm from both board edges (reviewer requirement)"
 			(at 336.51 231.14 0)
 			(hide yes)
 			(show_name no)
@@ -13313,7 +13418,7 @@
 				(justify left)
 			)
 		)
-		(property "Description" "M3 mounting hole, 4 mm from board corner (reviewer requirement)"
+		(property "Description" "M3 mounting hole, 3.5 mm from both board edges (reviewer requirement)"
 			(at 313.65 231.14 0)
 			(hide yes)
 			(show_name no)
@@ -16242,7 +16347,7 @@
 				(justify left)
 			)
 		)
-		(property "Description" "M3 mounting hole, 4 mm from board corner (reviewer requirement)"
+		(property "Description" "M3 mounting hole, 3.5 mm from both board edges (reviewer requirement)"
 			(at 313.65 241.3 0)
 			(hide yes)
 			(show_name no)
@@ -18406,6 +18511,85 @@
 			(project "ControlBoard2027_C"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/c387934c-6c45-449c-9c7b-623c2e31b062"
 					(reference "#PWR057")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 276.86 233.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e881501a-dad8-4ef2-bf77-19a137057b52")
+		(property "Reference" "H6"
+			(at 279.36 230.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 279.36 236.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 279.36 233.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 279.36 233.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "M2 speaker-board mounting hole; position fixed by the speaker board"
+			(at 279.36 233.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "ControlBoard2027_C"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/c387934c-6c45-449c-9c7b-623c2e31b062"
+					(reference "H6")
 					(unit 1)
 				)
 			)

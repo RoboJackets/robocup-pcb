@@ -63,6 +63,7 @@ so the radio diff applies to both.
 | J15 | JST XH B8B-XH-A, 8 pins vertical | JST PH S7B-PH-K-S, 7 pins right angle (LCSC C157917), value "PB 7P" | powerboard cable family; GND between the two rails |
 | R16 | 30R 0805 (Yageo RC0805FR-0730RL) | 30R 0402 (Stackpole RMCF0402FT30R0) | same as R15; no track needs to pass between its pads any more |
 | TP6 | 1.5 x 1.5 mm pad | 1.0 mm round pad | sits in line on the MOTOR_SPI_MISO run, no stub |
+| D7-D11 | American Bright BB-2020BGR-TRB | OPSCO SK9822-EC20 (LCSC C2909059), footprint OPSCO_SK9822-EC20 (same copper as the BB-2020 land, drawn in the SK9822 orientation) | BB-2020 out of stock at JLC/LCSC; SK9822 is JLC-assembled. APA102 protocol, SK9822-aware driver (FIRMWARE.md) |
 | U3 (USB ESD) | ST USBLC6-2SC6 (SOT-23-6) | TI TPD4E05U06DQAR (USON-10) | one flow-through channel per USB-C data contact (A6, A7, B6, B7), no rail pin, so nothing back-feeds VBUS |
 
 All other parts keep their reference, value, MPN and footprint.
@@ -133,6 +134,7 @@ Now VIN1 = +5V_PB / +3V3_PB, VIN2 = VBUS / +3V3_LDO, VOUT = +5V / +3V3 directly.
 | Radio DATA_READY | PB7 | **PB6** | as above |
 | Radio SCK / MISO / RST | PB3 / PB4 / PE1 | unchanged | |
 | microSD | SDMMC1 (PC8-PC12, PD2) | SDMMC2: PD6 CK, PD7 CMD, PG9-PG12 D0-D3 (D2 / D3 AF10) | pins face the microSD on the east edge |
+| microSD card detect | not connected | PD5 SD_DET (EXTI5), R73 47k pull-up, low = card in | added 2026-11-09 |
 | DotStar LEDs | SPI2 PB13 / PB15 | SPI6 PG13 / PG14 (BDMA, SRAM4) | SPI2 became the right-wheel bus |
 | Motor CS 2 / 3 | PB1 / PB2 | PB12 / PD8 | moved with SPI2 |
 | Dribbler | SPI1, CS PF11 | SPI4 PE2 / PE5 / PE6, CS PE3 | own bus on the west edge |
