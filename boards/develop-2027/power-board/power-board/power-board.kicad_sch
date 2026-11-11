@@ -70,6 +70,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 93.98) (xy 152.4 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45c231da-8391-4b63-acdf-3aab26d98dbd")
+	)
+	(wire
+		(pts
 			(xy 190.5 40.64) (xy 215.9 40.64)
 		)
 		(stroke
@@ -107,6 +117,16 @@
 			(type default)
 		)
 		(uuid "541cd6ff-7fcf-40a7-a7f5-f2be0d81c3be")
+	)
+	(bus
+		(pts
+			(xy 127 91.44) (xy 152.4 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5587556d-4d61-4f7d-8fb4-a315440e9997")
 	)
 	(wire
 		(pts
@@ -426,6 +446,26 @@
 				(justify left)
 			)
 		)
+		(pin "ALERT" output
+			(at 152.4 93.98 180)
+			(uuid "c6f790b2-999f-4e8a-9c5b-a46db2398797")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "{I2C}" bidirectional
+			(at 152.4 91.44 180)
+			(uuid "032433a5-97a5-4671-9417-51750bd4310c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87"
@@ -595,6 +635,26 @@
 		(pin "POWERSW" input
 			(at 127 96.52 0)
 			(uuid "12acc0b5-0ee8-4e72-bcf7-2a21964cbbb8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CURR_ALERT" input
+			(at 127 93.98 0)
+			(uuid "92cd67ee-a15b-43ef-8fcf-5b6cd089cc40")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "{I2C1}" bidirectional
+			(at 127 91.44 0)
+			(uuid "f1bb05fe-8f9c-4c6e-8665-82a6ddbfe3fd")
 			(effects
 				(font
 					(size 1.27 1.27)

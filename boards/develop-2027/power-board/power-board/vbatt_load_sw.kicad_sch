@@ -2019,6 +2019,12 @@
 		(uuid "212c3c1a-380b-41e7-9075-7988cf7fe44d")
 	)
 	(junction
+		(at 118.11 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2422e86f-65af-4ce7-bba2-9ae1f2cb38b0")
+	)
+	(junction
 		(at 71.12 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2035,6 +2041,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "84b8d451-b68f-4b0d-a1d5-4a4a388432ba")
+	)
+	(junction
+		(at 97.79 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a156f364-db49-44dc-821f-69ce49855403")
 	)
 	(junction
 		(at 115.57 50.8)
@@ -2124,7 +2136,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 50.8) (xy 127 50.8)
+			(xy 115.57 50.8) (xy 118.11 50.8)
 		)
 		(stroke
 			(width 0)
@@ -2214,7 +2226,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 50.8) (xy 102.87 50.8)
+			(xy 88.9 50.8) (xy 97.79 50.8)
 		)
 		(stroke
 			(width 0)
@@ -2241,6 +2253,16 @@
 			(type default)
 		)
 		(uuid "360e38aa-ae98-41bc-970d-443aac16a46e")
+	)
+	(wire
+		(pts
+			(xy 118.11 50.8) (xy 127 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "386b6a98-0d63-4458-895a-ce708684b3fd")
 	)
 	(wire
 		(pts
@@ -2282,6 +2304,16 @@
 		)
 		(uuid "4574a365-d9fb-474d-bde7-57454d32fb0b")
 	)
+	(wire
+		(pts
+			(xy 118.11 45.72) (xy 118.11 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48e1a4a7-5c2f-4d38-92f2-9633565f9604")
+	)
 	(polyline
 		(pts
 			(xy 144.78 82.55) (xy 144.78 80.01)
@@ -2301,6 +2333,16 @@
 			(type default)
 		)
 		(uuid "4ac44762-19d0-4cd0-a19d-c18832dd1724")
+	)
+	(wire
+		(pts
+			(xy 97.79 50.8) (xy 102.87 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d66fbf1-98e4-4fba-a67c-d9840433e0b7")
 	)
 	(wire
 		(pts
@@ -2401,6 +2443,16 @@
 			(type default)
 		)
 		(uuid "78fc7e5f-f79e-40d7-b8e6-69e6fca29a00")
+	)
+	(wire
+		(pts
+			(xy 97.79 45.72) (xy 97.79 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7aeea69b-c08b-4b0c-bf2d-b59f2920df3d")
 	)
 	(wire
 		(pts
@@ -2834,6 +2886,28 @@
 			(justify right)
 		)
 		(uuid "4707719e-a926-443c-b678-0317ca1dc4e7")
+	)
+	(hierarchical_label "SHUNT_L"
+		(shape passive)
+		(at 118.11 45.72 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "55132b38-7dea-424c-ae53-fb135d09262d")
+	)
+	(hierarchical_label "SHUNT_H"
+		(shape passive)
+		(at 97.79 45.72 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8886a420-bd10-46c4-a894-f965864e6f3d")
 	)
 	(hierarchical_label "VBATT"
 		(shape input)

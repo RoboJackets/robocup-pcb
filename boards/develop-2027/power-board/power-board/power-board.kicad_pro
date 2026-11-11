@@ -286,6 +286,10 @@
         "Unsure why this is happening but it doesn't matter"
       ],
       [
+        "multiple_net_names|508000|508000|8886a420-bd10-46c4-a894-f965864e6f3d|c25bde34-50b6-454d-8538-3523e82bdc08|/950edf25-7c73-426b-95c7-f5bf9643ec87/45a80922-adbb-4c59-8dc9-53bac2202f70/ef61826b-8a0d-4510-88ef-dafc66da471c|/950edf25-7c73-426b-95c7-f5bf9643ec87/45a80922-adbb-4c59-8dc9-53bac2202f70/ef61826b-8a0d-4510-88ef-dafc66da471c|/950edf25-7c73-426b-95c7-f5bf9643ec87/45a80922-adbb-4c59-8dc9-53bac2202f70/ef61826b-8a0d-4510-88ef-dafc66da471c",
+        "This is expected and has no meaning"
+      ],
+      [
         "pin_to_pin|1358900|1066800|02e45e53-d139-4246-a154-9a986499229d|b2a90036-3885-4dd9-a6f1-212934adf990|/950edf25-7c73-426b-95c7-f5bf9643ec87/45a80922-adbb-4c59-8dc9-53bac2202f70/8f427200-83c2-4490-b17c-4ffb5de8840b|/950edf25-7c73-426b-95c7-f5bf9643ec87/45a80922-adbb-4c59-8dc9-53bac2202f70/8f427200-83c2-4490-b17c-4ffb5de8840b|/950edf25-7c73-426b-95c7-f5bf9643ec87/7078dd89-3d93-4110-8a56-6e091afd4004",
         "Deliberate behavior for unused pin"
       ],
@@ -574,8 +578,8 @@
     "meta": {
       "version": 5
     },
-    "net_colors": null,
-    "netclass_assignments": null,
+    "net_colors": {},
+    "netclass_assignments": {},
     "netclass_patterns": []
   },
   "pcbnew": {
@@ -717,6 +721,10 @@
         "SDA",
         "SCL"
       ],
+      "I2C1": [
+        "SDA",
+        "SCL"
+      ],
       "SWD": [
         "IO",
         "CLK"
@@ -770,7 +778,7 @@
         "uuid": "950edf25-7c73-426b-95c7-f5bf9643ec87"
       }
     ],
-    "used_designators": "H1-3,Q1-2,Q19,C1-51,C60-71,F1-2,U1-12,D1-13,TP16-22,JP1-2,J1-13,J16-17,R1-55,R58-63,R69-74,M1-3,L1-6,SW1-4,TJ1-3,#FLG1-8,#PWR1-127,#PWR132-144,#PWR206-208,Y1",
+    "used_designators": "#FLG1-8,#PWR1-144,#PWR206-208,C1-53,C60-71,D1-13,F1-2,H1-3,J1-13,J16-17,JP1-2,L1-6,M1-3,Q1-2,Q19,R1-63,R69-74,SW1-4,TJ1-3,TP16-22,U1-12,Y1",
     "variants": []
   },
   "sheets": [
@@ -845,6 +853,10 @@
     [
       "bc21409b-3d82-4166-8a63-ee049df73898",
       "Mechanical"
+    ],
+    [
+      "125a63a1-88b3-447a-8fd5-7cf9a21d05a5",
+      "Current Sensing"
     ]
   ],
   "text_variables": {},

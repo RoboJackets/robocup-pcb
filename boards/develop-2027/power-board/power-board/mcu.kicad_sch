@@ -3487,12 +3487,12 @@
 		(uuid "51953b40-d49d-45a2-8de8-9ab452bae3e3")
 	)
 	(no_connect
-		(at 104.14 160.02)
-		(uuid "7d491336-1812-429d-b547-92c70f60b10c")
+		(at 157.48 93.98)
+		(uuid "6a1430f3-5792-4e2c-8bf9-b8658e51e91d")
 	)
 	(no_connect
-		(at 154.94 109.22)
-		(uuid "81648b78-0bf7-4a87-ac74-d5d4f35cd8dd")
+		(at 104.14 160.02)
+		(uuid "7d491336-1812-429d-b547-92c70f60b10c")
 	)
 	(no_connect
 		(at 154.94 175.26)
@@ -3505,14 +3505,6 @@
 	(no_connect
 		(at 154.94 154.94)
 		(uuid "9f761529-c249-49fd-b4f9-008f368cc55a")
-	)
-	(no_connect
-		(at 154.94 144.78)
-		(uuid "a905cd5e-3bfb-481f-8d81-73622315d7a6")
-	)
-	(no_connect
-		(at 154.94 147.32)
-		(uuid "aa92bc6f-0647-459f-96e7-a41b25e32c75")
 	)
 	(no_connect
 		(at 154.94 129.54)
@@ -3602,6 +3594,15 @@
 		(uuid "8b7752f5-81be-4ef6-abf2-e22f32b4a725")
 	)
 	(bus_entry
+		(at 165.1 144.78)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94833581-9a04-4eb2-bc5f-721a92a4ce3a")
+	)
+	(bus_entry
 		(at 72.39 104.14)
 		(size -2.54 2.54)
 		(stroke
@@ -3654,6 +3655,15 @@
 			(type default)
 		)
 		(uuid "ef5c60b2-1699-4ee3-b349-aa8b80484ea6")
+	)
+	(bus_entry
+		(at 165.1 147.32)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb8a9d98-000d-4d36-856b-d2ddd1c79b50")
 	)
 	(bus
 		(pts
@@ -3937,6 +3947,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 109.22) (xy 157.48 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cb9ef32-d277-4166-b3be-a177546bb643")
+	)
+	(wire
+		(pts
 			(xy 154.94 31.75) (xy 154.94 30.48)
 		)
 		(stroke
@@ -4155,6 +4175,16 @@
 		)
 		(uuid "4ec52b03-559d-4d27-97e7-2ea3df1fd9a3")
 	)
+	(bus
+		(pts
+			(xy 167.64 149.86) (xy 167.64 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50918a8e-1651-4b7c-8fdd-859a8bbfb900")
+	)
 	(wire
 		(pts
 			(xy 238.76 106.68) (xy 241.3 106.68)
@@ -4367,6 +4397,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 147.32) (xy 165.1 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bcefd86-cf05-4536-8547-01a9c1fbe35c")
+	)
+	(wire
+		(pts
 			(xy 257.81 45.72) (xy 261.62 45.72)
 		)
 		(stroke
@@ -4414,6 +4454,16 @@
 			(type default)
 		)
 		(uuid "6fb87a2d-497e-4c92-a332-a1b2b9a16f3f")
+	)
+	(bus
+		(pts
+			(xy 170.18 149.86) (xy 167.64 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70194bfe-e459-44df-a2cd-b38ce4800a94")
 	)
 	(wire
 		(pts
@@ -4987,6 +5037,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 144.78) (xy 165.1 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d807ede5-f5cb-4b26-af2c-b3d52265a067")
+	)
+	(wire
+		(pts
 			(xy 49.53 142.24) (xy 49.53 137.16)
 		)
 		(stroke
@@ -5284,16 +5344,6 @@
 			(justify left bottom)
 		)
 		(uuid "08b2bd0a-7393-42f0-9f6b-f61ca1a56d4c")
-	)
-	(label "IND_COOL_CH3"
-		(at 157.48 93.98 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0af83ac0-0d85-47b4-af8f-0963bcf36f9a")
 	)
 	(label "IND_SYSTEM"
 		(at 238.76 130.81 180)
@@ -5625,6 +5675,16 @@
 		)
 		(uuid "bf791a69-d1ec-4ca3-9333-1d75c9f019d2")
 	)
+	(label "SCL"
+		(at 156.21 147.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ce978edb-a227-4df8-9dda-0193f3c90af9")
+	)
 	(label "QSPI_SD1"
 		(at 101.6 119.38 180)
 		(effects
@@ -5684,6 +5744,16 @@
 			(justify right bottom)
 		)
 		(uuid "ecf28950-7a8c-40db-8701-bc8f48e00e45")
+	)
+	(label "SDA"
+		(at 156.21 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f9babb1e-ac5f-4930-bae0-39746e3b5a0a")
 	)
 	(label "QSPI_SD2"
 		(at 101.6 121.92 180)
@@ -5801,6 +5871,17 @@
 		)
 		(uuid "557180f2-907c-47ca-9b5d-f26b22fc3664")
 	)
+	(hierarchical_label "{I2C1}"
+		(shape bidirectional)
+		(at 170.18 149.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5a9f58fb-afec-49f7-9aba-6779510ce370")
+	)
 	(hierarchical_label "3.3V_EN"
 		(shape output)
 		(at 157.48 139.7 0)
@@ -5833,6 +5914,17 @@
 			(justify left)
 		)
 		(uuid "98fa0eec-9224-4f09-a199-d32c865bf797")
+	)
+	(hierarchical_label "CURR_ALERT"
+		(shape input)
+		(at 157.48 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9bc3dd01-ea19-488b-ae89-13cb2bd476eb")
 	)
 	(hierarchical_label "VBATT_EN"
 		(shape output)
