@@ -2619,26 +2619,6 @@
 		)
 		(uuid "d0440951-28ac-43d3-ae61-635a722057f2")
 	)
-	(text_box "JST-VH Connector\nIntegration Test Board Only.\n"
-		(exclude_from_sim no)
-		(at 16.51 59.69 0)
-		(size 31.75 6.35)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "76c1d4b9-a79e-478d-a7b5-de8954d89ca0")
-	)
 	(text_box "VBUS to +5V LDO\n"
 		(exclude_from_sim no)
 		(at 115.57 97.6517 0)
@@ -2679,10 +2659,10 @@
 		)
 		(uuid "b6fba568-0c6e-4e21-955b-875ec68dfc6d")
 	)
-	(text_box "VBUS to 3.3 Buck\nIntegration Test Board Only.\n"
+	(text_box "VBUS to 3.3 Buck"
 		(exclude_from_sim no)
-		(at 171.45 50.8 0)
-		(size 31.75 6.35)
+		(at 181.61 53.2017 0)
+		(size 21.59 3.9483)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
