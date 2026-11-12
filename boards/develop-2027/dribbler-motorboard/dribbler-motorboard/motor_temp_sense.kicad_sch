@@ -1093,9 +1093,9 @@
 		)
 		(uuid "adbd74c4-aaba-40ed-bf26-6c71e13eb56d")
 	)
-	(text "R_{NTC} = 114.14 kOhms @ 22C\nR_{NTC} = 5.69 kOhms @ 105C\nV_{ADC} = 3.3 * (R_NTC / (R_FIXED + R_NTC))\n\nWith R_{FIXED} = 10 kOhms:\nat 22C: V_{ADC} = 3.03V\nat 105C: V_{ADC} = 1.20V"
+	(text "Eaton NRMF105F3950B1F (100k NTC, B3950)\nR_NTC = 114.54 kOhms @ 22C\nR_NTC = 100.00 kOhms @ 25C\nR_NTC = 5.54 kOhms @ 105C\nV_ADC = 3.3 * (R_NTC / (R_FIXED + R_NTC))\n\nWith R_FIXED = 10 kOhms:\nat 22C: V_ADC = 3.035V\nat 25C: V_ADC = 3.000V\nat 105C: V_ADC = 1.176V"
 		(exclude_from_sim no)
-		(at 137.922 77.978 0)
+		(at 137.922 78.994 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2605,7 +2605,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.eaton.com/content/dam/eaton/products/electronic-components/resources/data-sheet/eaton-nrse-epoxy-sealed-radial-lead-ntc-thermistor-data-sheet-elx1227.pdf"
+		(property "Datasheet" "https://www.eaton.com/content/dam/eaton/products/electronic-components/resources/data-sheet/eaton-nrm-epoxy-sealed-radial-lead-ntc-thermistor-data-sheet-elx1109-en.pdf"
 			(at 118.11 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -2638,7 +2638,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" ""
+		(property "Vendor P/N" "283-NRMF105F3950B1F-ND"
 			(at 118.11 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -2649,7 +2649,7 @@
 				)
 			)
 		)
-		(property "LCSC Manufacturing P/N" "MF52B104F3950L100"
+		(property "LCSC Manufacturing P/N" ""
 			(at 118.11 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -2660,7 +2660,7 @@
 				)
 			)
 		)
-		(property "LCSC P/N" "C5439721"
+		(property "LCSC P/N" ""
 			(at 118.11 73.66 0)
 			(hide yes)
 			(show_name no)
