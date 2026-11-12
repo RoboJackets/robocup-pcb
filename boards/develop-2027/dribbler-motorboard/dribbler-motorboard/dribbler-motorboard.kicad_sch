@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Dribbler Motor V1.0")
-		(date "2026-11-08")
+		(date "2026-11-12")
 		(rev "v1.0")
 		(company "Robojackets - RoboCup")
 		(comment 1 "Special and Many Thanks: Aiden Lee [piman PCB]")
@@ -301,6 +301,16 @@
 		)
 		(uuid "0900af53-d2ec-4300-9099-472cd56db93c")
 	)
+	(bus
+		(pts
+			(xy 139.7 83.82) (xy 152.4 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e166fc5-33e8-4e65-aaeb-a686f0466899")
+	)
 	(wire
 		(pts
 			(xy 203.2 78.74) (xy 215.9 78.74)
@@ -340,6 +350,16 @@
 			(type default)
 		)
 		(uuid "94f4ddc1-18aa-45ed-9b37-28941bd2fe0c")
+	)
+	(wire
+		(pts
+			(xy 139.7 86.36) (xy 152.4 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b1d0ef6-d3c3-4b39-ac8d-9c3d9dcf7060")
 	)
 	(wire
 		(pts
@@ -1351,6 +1371,26 @@
 				(justify left)
 			)
 		)
+		(pin "USART{TX RX}" bidirectional
+			(at 152.4 83.82 180)
+			(uuid "da26bc80-512d-49e8-b019-676d5d1f461d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "~{RST}" input
+			(at 152.4 86.36 180)
+			(uuid "ad2b0d6e-d8fb-4530-bd7b-7ca1890bc989")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "dribbler-motorboard"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91"
@@ -1483,9 +1523,19 @@
 				(justify right)
 			)
 		)
-		(pin "USART{TX RX}" input
+		(pin "USART{TX RX}" bidirectional
 			(at 139.7 83.82 0)
 			(uuid "d966fca5-c66a-488c-9a6e-3a5e0876a04e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "~{RST}" output
+			(at 139.7 86.36 0)
+			(uuid "44eee106-b6db-41c1-9981-be7657880e6e")
 			(effects
 				(font
 					(size 1.27 1.27)
