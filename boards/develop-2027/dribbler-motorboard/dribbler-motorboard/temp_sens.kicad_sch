@@ -1158,10 +1158,10 @@
 		)
 		(uuid "3786c063-2bc6-4134-a3db-c6854737afdf")
 	)
-	(text_box "Intended to monitior MOSFET temperatures.\nPlace close to MOSFETs.\n\nBy default, OVERTEMP is on when T_{A}>80°C."
+	(text_box "Intended to monitior MOSFET temperatures.\nPlace close to MOSFETs.\n\nBy default, OVERTEMP is on when T_{A}>80°C.\nI2C frequency must be 100kHz (or 400kHz, from motor temperature sensor)"
 		(exclude_from_sim no)
 		(at 148.59 111.76 0)
-		(size 50.8 12.7)
+		(size 50.8 14.5055)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -1173,8 +1173,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
+				(thickness 0.1588)
 			)
 			(justify left top)
 		)
@@ -1350,6 +1349,16 @@
 	)
 	(wire
 		(pts
+			(xy 139.7 105.41) (xy 167.64 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75882acd-0a3e-49ec-a5e2-9c5f0f2086c5")
+	)
+	(wire
+		(pts
 			(xy 139.7 102.87) (xy 161.29 102.87)
 		)
 		(stroke
@@ -1450,16 +1459,6 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 105.41) (xy 139.7 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c2287b9c-9ca2-46f0-bd46-9aeff8c59a0e")
-	)
-	(wire
-		(pts
 			(xy 116.84 113.03) (xy 119.38 113.03)
 		)
 		(stroke
@@ -1489,7 +1488,7 @@
 		(uuid "f394b979-1103-4a2a-bf33-41c46f6c9718")
 	)
 	(label "I2C.SDA"
-		(at 154.94 102.87 180)
+		(at 152.4 102.87 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1509,7 +1508,7 @@
 		(uuid "65653aa4-a4db-4435-aa6d-ac410a7dd4c1")
 	)
 	(label "I2C.SCL"
-		(at 154.9965 105.41 180)
+		(at 152.4 105.41 180)
 		(effects
 			(font
 				(size 1.27 1.27)

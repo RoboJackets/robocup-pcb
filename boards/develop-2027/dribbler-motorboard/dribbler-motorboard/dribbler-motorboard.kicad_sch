@@ -275,6 +275,12 @@
 		)
 		(uuid "8f5a9e4b-b8c7-472e-9d79-e3da1d12191f")
 	)
+	(junction
+		(at 143.51 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d71b9517-45df-4ce6-a22e-f8ef0f0cd5a2")
+	)
 	(wire
 		(pts
 			(xy 231.14 128.27) (xy 231.14 132.08)
@@ -285,6 +291,16 @@
 		)
 		(uuid "07c21fb2-23e1-4bc9-a982-3e5b91e78a30")
 	)
+	(bus
+		(pts
+			(xy 139.7 116.84) (xy 143.51 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0900af53-d2ec-4300-9099-472cd56db93c")
+	)
 	(wire
 		(pts
 			(xy 203.2 78.74) (xy 215.9 78.74)
@@ -294,26 +310,6 @@
 			(type default)
 		)
 		(uuid "33e1bc4a-cf14-457e-aa09-b0c382708e23")
-	)
-	(wire
-		(pts
-			(xy 148.59 92.71) (xy 152.4 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "52bd7a5f-858e-4e65-b1b7-506c13a9fd6b")
-	)
-	(wire
-		(pts
-			(xy 148.59 116.84) (xy 148.59 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6a5a0b9d-14ae-4332-bcbc-88a3dbd5796a")
 	)
 	(wire
 		(pts
@@ -334,16 +330,6 @@
 			(type default)
 		)
 		(uuid "816cfac8-f2e4-4cca-accc-3bb009f0c8c4")
-	)
-	(wire
-		(pts
-			(xy 139.7 116.84) (xy 148.59 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8dcbb644-c783-49c0-96f3-09410379f482")
 	)
 	(bus
 		(pts
@@ -414,6 +400,16 @@
 			(type default)
 		)
 		(uuid "e0ee99b0-9186-450b-b922-dbe7d328b393")
+	)
+	(bus
+		(pts
+			(xy 143.51 116.84) (xy 143.51 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e17eecef-f0e0-42fe-b139-8939ba392498")
 	)
 	(bus
 		(pts
@@ -1345,19 +1341,9 @@
 				(justify left)
 			)
 		)
-		(pin "SWD{CLK IO}" bidirectional
+		(pin "SWD{IO CLK}" bidirectional
 			(at 152.4 81.28 180)
-			(uuid "73850e3b-356e-4e7e-afda-28881ac3a7ba")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "TEMP_SENSE" input
-			(at 152.4 92.71 180)
-			(uuid "587bce07-db99-42d9-bff8-ceeac1870067")
+			(uuid "6a8584a0-aa78-4ef9-bfd7-53d2231c68d9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1543,9 +1529,9 @@
 				(justify left top)
 			)
 		)
-		(pin "TEMP_SENSE" output
+		(pin "I2C{SDA SCL}" bidirectional
 			(at 139.7 116.84 0)
-			(uuid "d616dbb2-8f6c-48ef-962b-3a04e6a83a48")
+			(uuid "37677378-4419-4077-ab7a-2c55f9817a00")
 			(effects
 				(font
 					(size 1.27 1.27)

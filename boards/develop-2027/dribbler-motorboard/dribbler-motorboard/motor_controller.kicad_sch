@@ -3151,6 +3151,10 @@
 		(uuid "46c9076e-2376-48bb-b36f-37a2e662110c")
 	)
 	(no_connect
+		(at 190.5 46.99)
+		(uuid "67b9da90-c329-4f66-9e75-3d75869e2b31")
+	)
+	(no_connect
 		(at 90.17 53.34)
 		(uuid "9ede313b-7c62-43f8-ac44-73a501e9763a")
 	)
@@ -3561,16 +3565,6 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 44.45) (xy 189.23 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "320a3cd0-9e23-4d9f-86fa-69c27c9a916c")
-	)
-	(wire
-		(pts
 			(xy 66.04 129.54) (xy 76.2 129.54)
 		)
 		(stroke
@@ -3658,16 +3652,6 @@
 			(type default)
 		)
 		(uuid "3eea8a47-9aa6-4fdb-9766-6d19c7aa5a9b")
-	)
-	(wire
-		(pts
-			(xy 189.23 46.99) (xy 190.5 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4020a799-5d9e-4686-b40d-2be60cb5dc73")
 	)
 	(wire
 		(pts
@@ -4098,16 +4082,6 @@
 			(type default)
 		)
 		(uuid "8ebd84d3-4c60-4169-b448-355cf0acf855")
-	)
-	(wire
-		(pts
-			(xy 189.23 44.45) (xy 189.23 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8f5ca4fd-7650-46d4-b6ea-a3c0e40bf4e9")
 	)
 	(bus
 		(pts
@@ -5002,17 +4976,6 @@
 			(justify left)
 		)
 		(uuid "799cc8c5-3893-4b84-9b7c-b2b14b1d7fbb")
-	)
-	(hierarchical_label "TEMP_SENSE"
-		(shape input)
-		(at 170.18 44.45 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "afe87bb7-0817-44ae-b140-f84fbaf17daa")
 	)
 	(hierarchical_label "I2C{SDA SCL}"
 		(shape bidirectional)
