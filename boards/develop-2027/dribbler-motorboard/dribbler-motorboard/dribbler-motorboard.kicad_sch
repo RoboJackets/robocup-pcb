@@ -1483,6 +1483,16 @@
 				(justify right)
 			)
 		)
+		(pin "USART{TX RX}" input
+			(at 139.7 83.82 0)
+			(uuid "d966fca5-c66a-488c-9a6e-3a5e0876a04e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "dribbler-motorboard"
 				(path "/2f9570f4-e846-4a86-b134-ae7438cb1d91"
