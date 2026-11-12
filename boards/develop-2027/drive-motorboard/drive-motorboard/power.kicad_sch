@@ -2215,8 +2215,8 @@
 		(uuid "9992ed10-0aaa-4e4f-bdc4-1403ee3747ac")
 	)
 	(rectangle
-		(start 203.2 107.95)
-		(end 241.3 165.1)
+		(start 203.2 50.8)
+		(end 241.3 63.5)
 		(stroke
 			(width 0)
 			(type default)
@@ -2259,14 +2259,14 @@
 		)
 		(uuid "805f86c8-a259-4ffe-87fc-4fcb1ea053ff")
 	)
-	(text "TODO: Measure current consumption\non the 3.3V rail"
+	(text "Measured <30 mA on the 3.3V rail\nwith no motor movement.\n\nUp to 2.5 A on VBATT (theoretical)"
 		(exclude_from_sim no)
-		(at 223.52 129.54 0)
+		(at 222.25 52.07 0)
 		(effects
 			(font
 				(size 1.27 1.27)
-				(color 0 255 255 1)
 			)
+			(justify top)
 		)
 		(uuid "9a0e8edb-98e3-472a-8b75-e5c7e5490f5e")
 	)
@@ -2305,7 +2305,7 @@
 	)
 	(text "Current Consumption per Rail"
 		(exclude_from_sim no)
-		(at 204.47 107.315 0)
+		(at 204.47 50.165 0)
 		(effects
 			(font
 				(size 1.27 1.27)
