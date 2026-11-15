@@ -20,7 +20,7 @@ Python API).
 
 | Item | Controlboard | Radio (both variants) |
 |---|---|---|
-| Outline | 120 x 60 mm, 6 layers, 1.6 mm | 30 x 40 mm, 4 layers, 1.6 mm |
+| Outline | 120 x 60 mm, 1.6 mm; 6 layers (ControlBoard2027_C), 4 layers (ControlBoard2027_C4L) | 30 x 40 mm, 4 layers, 1.6 mm |
 | Radio position over the CB | radio outline covers CB x 36-66, y 0-40 | radio (0, 0) sits over CB (36, 0); same orientation, no rotation |
 | Mezzanine | J9 at (39.70, 6.03), rotation 90, top side | J2 at (3.70, 6.03), rotation 90, bottom side |
 | Part | Samtec LSHM-110-02.5-L-DV-A-S-K-TR (Razor Beam, 0.5 mm pitch, 2 x 10, shielded, hermaphroditic) | same part |
@@ -93,8 +93,9 @@ Notes:
   assignment (PB6 = DATA_READY, PB7 = HANDSHAKE).
 - The CB has no ESD parts on the link: J9 is not exposed once the radio is plugged in, and the radio protects
   every link line at J2 (U5 / U6, TPD4E05U06, flow-through).
-- The radio adds no pulls on the link lines. Once ESP-Hosted runs, it enables internal pull-ups on MOSI / SCK / CS
-  and pull-downs on MISO / HANDSHAKE / DATA_READY. During reset and ROM boot only the CB pulls hold the lines.
+- The radio adds no pulls on the link lines. Once ESP-Hosted runs, it enables internal pull-ups on MOSI / SCK and
+  pull-downs on MISO / HANDSHAKE / DATA_READY; it must not enable a pull-up on CS (GPIO10), which would back-feed an
+  unpowered controlboard through R29 (FIRMWARE.md 2.2). During reset and ROM boot only the CB pulls hold the lines.
 - No line has opposing pulls. MISO has one pull, the radio-side pull-down; the CB sets no pull on PB4, and the
   ESP32-C5 slave tri-states MISO while CS is high. HANDSHAKE / DATA_READY are active high and idle low: R31 100k /
   R32 10k pull-downs on the CB, plus the radio's internal pull-downs once ESP-Hosted runs (same direction).
@@ -123,7 +124,7 @@ Notes:
 | Status lines | PB6 DATA_READY, PB7 HANDSHAKE (EXTI inputs), PE1 reset (open drain) | GPIO0 DATA_READY, GPIO1 HANDSHAKE, EN |
 | Mode | mode 3, 8-bit, MSB first, hardware CRC off | mode 3 (ESP-Hosted default) |
 | Termination | R65 / R66 30R at PB3 / PB5 (source series) | R4 33R at GPIO2 (MISO source series) |
-| Routing | four lines on L4 (In3) between one via pair each, matched: SCK 14.861, MOSI / MISO / CS 14.860 mm | Inboard: 19.934 mm, Overhang: 14.079 mm, matched to 0.001 mm |
+| Routing | ControlBoard2027_C: four lines on L4 (In3) between one via pair each, matched: SCK 14.861, MOSI / MISO / CS 14.860 mm. ControlBoard2027_C4L: on L4 over an L3 GND island, SCK 15.200, MOSI 15.400, MISO 15.481, CS 14.478 mm (within 1 mm of SCK) | Inboard: 19.934 mm, Overhang: 14.079 mm, matched to 0.001 mm |
 
 **Lengths.** CB lengths run from the MCU pad to the J9 pad (series-resistor span and via barrels included); radio
 lengths from the J2 pad to the module pad (via and R4 span included). The mated LSHM pair adds about 3 mm. The whole
@@ -169,8 +170,8 @@ CB's; where a line has a direction, the mating board uses the opposite one. All 
 
 | Pin | Net | Direction (CB view) | Notes |
 |---|---|---|---|
-| 1 | PWR_UART_TX | out | from PA0 (UART4_TX) through R33 1k |
-| 2 | PWR_UART_RX | in | to PA1 (UART4_RX) through R34 1k |
+| 1 | PWR_UART_TX | out | from PA0 (UART4_TX) through R33 1k; on ControlBoard2027_C4L from PD15 (UART9_TX) |
+| 2 | PWR_UART_RX | in | to PA1 (UART4_RX) through R34 1k; on ControlBoard2027_C4L to PD14 (UART9_RX) |
 | 3 | GND | | |
 | 4 | +3V3_RAW | in (supply) | to D4 TVS, F6, U9 VIN1 |
 | 5 | GND | | separates the two rails, so a one-pin crimp shift does not short them |
@@ -178,7 +179,8 @@ CB's; where a line has a direction, the mating board uses the opposite one. All 
 | 7 | GND | | |
 
 **RX / TX convention.** RX and TX are named from the CB side: pin 1 is the CB's transmit output, pin 2 its receive
-input. The powerboard receives on pin 1 and drives its UART TX on pin 2. UART4, 115200 8N1, 3.3 V logic.
+input. The powerboard receives on pin 1 and drives its UART TX on pin 2. UART4 (UART9 on ControlBoard2027_C4L),
+115200 8N1, 3.3 V logic. The powerboard side is the same for both boards.
 
 The powerboard must supply 3.4 V +/-3 % (never above 3.6 V) on pin 4 and 5 V on pin 6. Each PH contact is rated
 2 A and each rail has one contact, while F5 / F6 trip at 2.5 A: keep the steady load per rail well under 2 A (CB
@@ -211,7 +213,9 @@ above 3.3 V.
 
 No supply pin: the motor modules take their power elsewhere. Each connector has its own TPD4E05U06 ESD array
 (U4 J4, U5 J5, U12 J6, U13 J7, U14 J8). CS pull-ups R24-R28 10k, SCK pull-downs R30 / R69 / R72 100k. The motor
-module must use this pin order and release MISO (high impedance) while its CS is high. The motor wheel numbering
+module must use this pin order and release MISO (high impedance) while its CS is high. **Logic level: 3.3 V only.**
+On J4 / J5 the STM32 drives SCK, MOSI and CS from TT pins (PA5, PA7, PC5, PB0; 4.0 V absolute maximum, no injection
+current allowed on PA5), so a module must never pull these lines above 3.6 V, powered or not. The motor wheel numbering
 (0 FL, 1 BL, 2 BR, 3 FR, counter-clockwise from front left) is an assumption; firmware maps it.
 
 ### J11 / J12 EXP 1 / EXP 2
@@ -223,7 +227,9 @@ module must use this pin order and release MISO (high impedance) while its CS is
 
 Both ports share I2C4 (PF14 SCL, PF15 SDA, pull-ups R10 / R8 2.2k, ESD U6 at J11 and U16 at J12). +5V_EXT1 / 2 come
 from +5V through their own PTC (F3 / F4, hold 0.75 A at 23 °C, 0.55 A at 50 °C). Budget 0.55 A for both ports
-together. Expansion boards must not add their own I2C pull-ups.
+together. Expansion boards must not add their own I2C pull-ups, must not drive SDA or SCL below GND (on
+ControlBoard2027_C4L, SDA is PF15, which allows no negative injection current: DS13313 Table 50), and are plugged only
+with the controlboard unpowered.
 
 ### J3 SWD (STDC14)
 
@@ -247,8 +253,8 @@ Use a keyed STDC14 cable (STLINK-V3) and match the pin-1 marker. The schematic u
 | Net | GND | +3V3 | OLED_I2C_SCL | OLED_I2C_SDA |
 
 A generic 0.96 in 128 x 64 SSD1306 I2C module plugs in raised over the service edge (I2C1 PB8 / PB9, address 0x3C,
-pull-ups R14 / R17 2.2k on the CB; the module's own pull-ups add in parallel). The footprint has four 2.6 mm holes
-for M2 nylon standoffs. Some modules swap VCC and GND: check the module before fitting.
+pull-ups R14 / R17 2.2k on the CB; the module's own pull-ups add in parallel). On ControlBoard2027_C the footprint has four 2.6 mm holes
+for M2 nylon standoffs; on ControlBoard2027_C4L it has none, only four 4.0 mm keep-out areas where holes can be added. Some modules swap VCC and GND: check the module before fitting.
 
 ### J2 USB-C and J1 microSD
 

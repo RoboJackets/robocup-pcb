@@ -26,6 +26,10 @@ The ROM bootloader uses its own clocking, so DFU does not depend on these settin
 
 ### 1.2 Peripherals
 
+> **ControlBoard2027_C4L:** the tables in 1.2 and 1.3 are the ControlBoard2027_C pin map. The C4L moves the powerboard
+> UART to UART9 (PD15 / PD14), the DIP switch, PWR_SRC_3V3 and PWR_SRC_5V; use the C4L pin-change table at the end of
+> 1.3 together with them.
+
 | Peripheral | Pins (LQFP pin) | AF | Connects to | Settings |
 |---|---|---|---|---|
 | SPI1, left wheels | PA5 SCK (41), PA6 MISO (42), PA7 MOSI (43) | AF5 | R15 / R16 30R -> J4 MOTOR 0 (FL), J5 MOTOR 1 (BL) | 48 MHz / 8 = 6 Mbit/s, 8-bit; OSPEEDR LOW or MEDIUM (§1.4) |
@@ -33,7 +37,7 @@ The ROM bootloader uses its own clocking, so DFU does not depend on these settin
 | SPI4, dribbler | PE2 SCK (1), PE5 MISO (4), PE6 MOSI (5) | AF5 | R70 / R71 30R -> J8 | point to point; SPI45SEL cannot use PLL1Q: HSE 25 MHz / 4 = 6.25 Mbit/s, or PLL2Q / PLL3Q |
 | SPI3, radio | PB3 SCK (133), PB4 MISO (134), PB5 MOSI (135) | AF6, AF6, **AF7** | R65 / R66 30R -> J9 | mode 3, 8-bit, hardware CRC off; 3 MHz bring-up, 24 MHz (PLL1Q / 2) normal, 40 MHz only after a scope check (§1.5). **No pull on PB4 (MISO)**: the ESP32-C5 slave tri-states MISO while CS is high and the radio holds it with its pull-down; a host pull-up would fight it to mid-rail |
 | SPI6, DotStars | PG13 SCK (128), PG14 MOSI (129) | AF5 | U10 level shifter, R48 / R47 100k pull-downs | TX only, mode 0, SPI6SEL = HSE 25 MHz / 8 = 3.125 Mbit/s. D3 domain: BDMA, buffers in SRAM4 |
-| SDMMC2, microSD | PD6 CK (122), PD7 CMD (123), PG9-PG12 D0-D3 (124-127) | AF11 (CK, CMD, D0, D1), **AF10** (D2, D3) | R6 30R on CK, U1 ESD, R1-R5 47k pull-ups, J1 | 4-bit; kernel PLL1Q 48 MHz; CLKDIV 3 (8 MHz) bring-up, CLKDIV 1 (24 MHz) after checking CK at TP1 |
+| SDMMC2, microSD | PD6 CK (122), PD7 CMD (123), PG9-PG12 D0-D3 (124-127) | AF11 (CK, CMD, D0, D1), **AF10** (D2, D3) | R6 30R on CK, U1 ESD, R1-R5 47k pull-ups, J1 | 4-bit; kernel PLL1Q 48 MHz; card identification at 400 kHz or less, then CLKDIV 3 (8 MHz) for bring-up, CLKDIV 1 (24 MHz) after checking CK at TP1 |
 | USB FS (OTG_HS in FS mode) | PA11 DM (103), PA12 DP (104) | AF10 | U3 ESD, J2 | device; VBUS sense on PA9 as a GPIO |
 | I2C1, OLED | PB8 SCL (139), PB9 SDA (140) | AF4 | R14 / R17 2.2k, J13 | 400 kHz; SSD1306 at 0x3C (probe 0x3D too) |
 | I2C2, kicker | PB10 SCL (69), PB11 SDA (70) | AF4 | R18 / R19 2.2k, U17, J10 | 400 kHz |
@@ -47,6 +51,10 @@ off, bus recovery (up to 9 SCL pulses, then STOP) before each init. All SPI mast
 so SCK does not float between transfers.
 
 ### 1.3 GPIO
+
+> **ControlBoard2027_C4L:** the tables in 1.2 and 1.3 are the ControlBoard2027_C pin map. The C4L moves the powerboard
+> UART to UART9 (PD15 / PD14), the DIP switch, PWR_SRC_3V3 and PWR_SRC_5V; use the C4L pin-change table at the end of
+> 1.3 together with them.
 
 | Pin (LQFP pin) | Net | Mode | Notes |
 |---|---|---|---|
@@ -74,10 +82,30 @@ so SCK does not float between transfers.
 **PB6 / PB7.** On the compact board PB6 is DATA_READY and PB7 is HANDSHAKE, the opposite of the prototype. Swap the
 pin defines and the EXTI lines when porting prototype firmware.
 
+**ControlBoard2027_C4L (4-layer) pin changes (2026-11-14).** The 4-layer board moves ten nets so the DIP lines can
+leave the MCU without crossing the crystal keep-out (DIP0 north of the crystal, DIP1-DIP3 west below it, DIP4
+through the freed PA2 corner, DIP5 below it). Everything not listed here is the same as on ControlBoard2027_C.
+
+| Net | ControlBoard2027_C | ControlBoard2027_C4L | Notes |
+|---|---|---|---|
+| DIP0 | PF7 (19) | PC15 (9) | input; LSE stays off |
+| DIP1 | PF8 (20) | PC3_C (29) | input; connect PC3_C to PC3 first by closing its analog switch in SYSCFG_PMCR (RM0468; DS13313 §6.3.16, Table 56) |
+| DIP2 | PF9 (21) | PA0 (34) | input |
+| DIP3 | PF10 (22) | PA1 (35) | input |
+| DIP4 | PC0 (26) | PA4 (40) | input; SPI1_NSS in the ROM bootloader: a closed switch selects it, but no SCK arrives (motor SCK has the R30 pull-down), so DFU still answers |
+| DIP5 | PC1 (27) | PA3 (37) | input; USART2_RX in the ROM bootloader (input only, so a closed switch is no contention) |
+| PWR_UART_TX | PA0 (34), UART4 AF8 | PD15 (86), **UART9_TX AF11** | FT_h pin (5 V tolerant, DS13313 Table 50 "all other I/Os": 5 mA negative injection) |
+| PWR_UART_RX | PA1 (35), UART4 AF8 | PD14 (85), **UART9_RX AF11** | as TX |
+| PWR_SRC_5V | PA2 (36) | PD10 (79) | input, polled; R44 10k stays in series; PA2 (36) is unconnected on the C4L, so the pre-V9.3 bootloader USART2_TX drive meets no load |
+| PWR_SRC_3V3 | PA3 (37) | PD9 (78) | input, polled; USART3_RX in the ROM bootloader (input only); shares EXTI9 with VBUS_SENSE (PA9) |
+
+On the C4L the old pins PF7-PF10, PC0, PC1 and PA2 are unconnected (set them as analog).
+
 ### 1.4 GPIO speed (OSPEEDR) requirements
 
 - **Motor buses SPI1 / SPI2: LOW or MEDIUM only, never HIGH / VERY_HIGH.** Each bus is a star: one MCU-side via
-  feeds two connector arms of unequal length (J4 86.9 mm / J5 65.1 mm on SPI1, J6 62.9 mm / J7 57.0 mm on SPI2),
+  feeds two connector arms of unequal length (ControlBoard2027_C: J4 86.9 mm / J5 65.1 mm on SPI1, J6 62.9 mm / J7
+  57.0 mm on SPI2; ControlBoard2027_C4L: J4 78.3 / J5 56.8 mm, J6 65.6 / J7 57.4 mm),
   with no termination at the arm ends. With edges slower than about 3 ns the arms act as lumped loads; with sub-ns
   edges each arm rings. Applies to PA5, PA7, PB13, PB15 and the CS pins PC5, PB0, PB12, PD8.
 - Dribbler SPI4 is point to point; MEDIUM is enough at 6 Mbit/s.
@@ -89,7 +117,8 @@ pin defines and the EXTI lines when porting prototype firmware.
 - ESP-Hosted SPI full-duplex host on SPI3, mode 3, software CS on PG15.
 - HANDSHAKE (PB7) and DATA_READY (PB6) are EXTI inputs without internal pulls (R31 / R32 are on the board), active
   high, idle low; mask them while the radio initialises.
-- MISO (PB4): no internal pull. MISO has exactly one pull, the radio-side pull-down that ESP-Hosted enables on GPIO2;
+- MISO (PB4): no internal pull. PB4 comes out of reset as NJTRST with its internal pull-up on: configure it as SPI3
+  MISO (AF6) with no pull at init, before the radio is released from reset. MISO has exactly one pull, the radio-side pull-down that ESP-Hosted enables on GPIO2;
   the slave tri-states MISO while CS is high.
 - Reset: pull PE1 low for 10 ms, release, then wait 500 ms before trusting HANDSHAKE / DATA_READY.
 - Clock: SPI123SEL = PLL1Q 48 MHz gives 24 MHz at /2. 40 MHz (the ESP32-C5 slave maximum) needs an 80 MHz SPI123
@@ -115,13 +144,19 @@ pin defines and the EXTI lines when porting prototype firmware.
 
 ### 1.7 Power-source handling
 
+- PD9 (PWR_SRC_3V3) and PD10 (PWR_SRC_5V): inputs with no internal pull. PD9 connects straight to U9's ST output,
+  which also drives the R41 hysteresis, so an internal pull would shift U9's thresholds; never set either as an output.
+- Plugging the powerboard in with USB attached also sags the rails briefly (the mux waits until VOUT falls to the
+  rising powerboard rail): treat it like the unplug case below.
+
 - Rails: +5V and +3V3 are TPS2116 mux outputs (U8, U9). The powerboard (J15) has priority; USB is the bench fallback.
 - U8 (5 V) switches to USB at about 3.55 V falling and back at about 3.88 V rising; U9 (3.3 V) at about 2.34 V
   falling and 2.57 V rising (PR1 dividers with 1M hysteresis, VREF typical).
 - With USB attached, unplugging the powerboard lets +3V3 sag to 2.13-2.55 V and +5V to about 3.2-3.9 V before the
   mux switches. Set a BOR level, and on any PWR_SRC_5V / PWR_SRC_3V3 change: re-initialise SD, IMU and OLED, pulse
   ESP_RST and restart ESP-Hosted, resend the LED frame. On the robot there is no USB, so this is a bench case.
-- Drive the UART4 TX only once PWR_SRC shows the powerboard.
+- Drive the powerboard UART TX (UART4 on ControlBoard2027_C, UART9 on ControlBoard2027_C4L) only once PWR_SRC shows
+  the powerboard.
 - LEDs: D7-D11 are SK9822-EC20 (APA102-style frames: start frame of 32 zero bits, then per LED 0b111 + 5-bit
   current gain + three 8-bit colour bytes, MSB first; SK9822 datasheet §10). **Colour byte order is not settled by
   the datasheet:** its frame table (p7) shows red, blue, green, while the text says "RBG" (p7) and "GRB" (p8), and
@@ -136,6 +171,9 @@ pin defines and the EXTI lines when porting prototype firmware.
 
 ### 1.8 Other
 
+- USB supply: VDD33USB (pin 95) is tied to +3V3, so keep the internal USB regulator off and enable the USB voltage
+  detector (`HAL_PWREx_EnableUSBVoltageDetector()`, PWR_CR3.USB33DEN) before starting the OTG core; without it the
+  FS PHY stays unpowered.
 - SD: card detect on PD5 (SD_DET, low = card in, see the pin table). Still treat an init failure as "no card" and
   recover a hung card with CMD0; card VDD is not switchable.
 - OLED: the 128 x 64 image is rotated 90 degrees by the mounting; set the u8g2 rotation (U8G2_R1 or U8G2_R3) to

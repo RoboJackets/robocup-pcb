@@ -1,0 +1,151 @@
+CONTROLBOARD2027_C4L - OPEN WORK
+Design reasons, IDs (C/M/m, deviation numbers): DESIGN_NOTES.md. Interfaces: ../docs/INTERFACE.md.
+Firmware: ../docs/FIRMWARE.md. Status (2026-11-14): 4-layer board (JLC04161H-3313) routed; DRC 0 errors /
+0 unconnected / 0 parity, 13 intended warnings; ERC 1 intended VCAP error (m21). Audit rounds 1-7 done; converged (no critical or major open).
+
+
+1. BEFORE ORDERING
+------------------
+1.1 Independent audits of this board (CLAUDE.md section 12), schematic and PCB, repeated until they converge.
+    Round 1 (2026-11-14): 0 critical; majors fixed or recorded (deviations 24-27). Round 2 (2026-11-14): 0 critical.
+    PCB majors: deviation 25 reason false (C34 moved to U9; C33 recorded with the true reason) and a 90 degree V on
+    radio MOSI (radio tuning rebuilt, deviation 24). Schematic major: SPI1 motor pins are TT (recorded, deviation 29,
+    3.3 V-only modules on J4 / J5). Round 3 (2026-11-14): 0 critical. PCB major: U6 / U16 expansion I2C protection
+    not flow-through (rebuilt, DESIGN_NOTES 12.6). Schematic major: +5V_EXT1 / 2 without a TVS (recorded, deviation
+    31). Rejected: radio MOSI 15.260 mm (the segment sum of its L4 run gives 7.526 mm, total 15.400 mm as in 12.5).
+    Round 4 (2026-11-14): 0 critical. PCB major: U8 VIN1 cap (deviation 25; a 0402 1 uF site exists, not fitted
+    because the parts are already ordered, recorded as optional). Schematic major rejected: R31 100k vs an ESP32-C5
+    GPIO1 pull-up at reset; ESP32-C5 datasheet v1.5 Table 2-1 pin 10 (XTAL_32K_N / GPIO1) has no IE / WPU at or
+    after reset and the radio boards have no pull on HANDSHAKE, so R31 holds the line low. Round-4 minors added below.
+    CONVERGED (2026-11-15): schematic round 6 and PCB round 7 found no critical or major item. PCB round 7 minors
+    fixed: four GND vias round the U7 tab, a second +5V via at C42 (north LED feed), the HR1 SDA via moved out;
+    recorded: the 0.3 mm VBUS neck at D1 (deviation 35), U7 thermal estimate (DESIGN_NOTES 4.7).
+    Round 5 / 6 (2026-11-14): schematic round 6 found no critical or major item. PCB round 6 major: one via per
+    mux output (fixed, two barrels per rail, DESIGN_NOTES 12.7). Expansion I2C re-pin to PD12 / PD13 assessed and not
+    done (deviation 33). J5 / J11 under the speaker board accepted (m27). Round-6 minors: plug-in sag (M7, bench),
+    5V upper limit (1.5), SK9822 series resistors (deviation 34), VBUS A9 / B4 vias to D1 (deviation 35), fuse 1812
+    land vs the Littelfuse 1812L drawing (compare by eye), bootloader inputs PE11-PE14 / PA10 / PA8 / PC9 / PD0 / PD1
+    float (AN2606), no pull on PD9 / PD10 (FIRMWARE), D7-D11 Description wording, sheets 05 / 08 / 09 page size.
+    Open minors to close or record in the loop:
+    - Decoupling GND pads without their own via (nearest GND via): C39 2.98, U10 pin 9 2.63, C35 2.39, C41 2.33,
+      C51 2.31, U7 GND 2.25, C36 2.06 mm.
+    - More fast pairs under 3W: ESP_DATA_READY / HANDSHAKE 0.354 mm c-c over 8.4 mm (F.Cu); SD D0 / D1 0.424 mm over
+      6.7 mm; MOTOR0_CS / MOTOR1_CS 0.354 mm; MOTOR_SPI_MISO / PA5 0.354 mm; DATA_READY / ESP_MOSI_MCU 0.382 mm;
+      OLED_I2C_SCL / SD D3 0.285 mm edge to edge (B.Cu); radio MOSI bump tops 3W from SCK.
+    - Radio CS small jogs (0.21-0.25 mm segments) on its 45 degree run; a 0.29 mm L3 +5V gap under D7-CKI.
+    - Washer margins at the M2 holes (edge from hole centre, M2 washer radius 2.5 mm): HR1 EXPANSION_SDA via moved
+      to 2.77 mm (audit round 7), EXPANSION_SCL via 2.55 mm, MOTOR1_SPI_CS 2.57 mm; HR2 PWR_SRC_3V3 2.62, BOOT0 2.66,
+      PWR_UART_RX 2.66 mm. Use nylon washers at HR1 / HR2, or none.
+    - Impedance: an audit closed-form estimate gives about 53-56 ohm for 0.15 mm and 95-98 ohm for the USB pair;
+      TODO 1.3 (JLC calculator) blocks the order.
+    - Schematic: PE11 (bootloader SPI4 NSS) floats; check AN2606 for its pull and add a pull-up like R13 if none;
+      J1 / J13 datasheet links are distributor pages; FIRMWARE.md 1.2 / 1.3 need C4L tables; two four-way junctions
+      (U2 pin 131, C24 pin 1); silk "3V3 ONLY" at J4 / J5 (deviation 29).
+    - Round 4: deviation 26 numbers (TPD4E05U06 pin 3 GND vias 1.25-1.37 mm, U6 pin 8 1.66 mm); short-segment count
+      392 (deviation 16 says about 350); crystal track ends on the X1.1 / C19.1 pad edges; USB skew bumps mid-run;
+      stale J13 / J2 Description fields; SD init clock (400 kHz before CLKDIV 3) to state in FIRMWARE.md; no ESD or
+      deviation for the J13 OLED socket (now deviation 32); INTERFACE.md section 1 layers and C28 / C33 / C37
+      Description voltages (fixed).
+    - Round 5 (2026-11-14, 0 critical, no new parts needed): PCB major J5 / J11 mostly under the speaker-board
+      outline (m27 corrected; standoff height and latch reach to check, 2.6). Schematic major PF15 (expansion SDA)
+      0 mA negative injection (deviation 33, INTERFACE rule). Minors: TP4 / TP6 (SPI1 SCK / MISO) half under the
+      radio outline (move about 1.2 mm south); USB_DM and MOTOR_R_SPI_MOSI edges pass L2 antipad voids beside the run
+      (centre line over solid GND); PE11 pull (R13's part, one more placement) or a deviation; root / 02 / 03 / 04 / 06
+      readability items (D1 upside down, labels on wires, notes outside boxes); datasheet links for C1 / C5 / C32 /
+      C34 / C38 (Digi-Key pages) and R1-R5 / R20 / R73 (not a Yageo sheet); unnamed connector nets (Net-(D1-IN-Pad4),
+      J15 pins 1 / 2).
+    - Layout: 392 segments under 0.5 mm (deviation 16); PWR_SRC_3V3 route (deviation 17); GND return vias over
+      1 mm (deviation 8); vias whose ring touches a pad (GND at U3, C5, C23, J1 shield, J11 / J12, R31 HANDSHAKE);
+      5 T-junctions off pads and 9 ends on segment middles (NRST, EXPANSION_SCL / SDA, VBUS, +3V3_PB, U8-ST,
+      OLED_I2C_SDA); 19 segments 0.8-2.3 degrees off the 45 degree grid; 13 collinear pairs.
+    - SI: SD CMD bump 0.396 mm c-c to D0 (B.Cu); MOTOR_SPI_MISO 0.40 mm c-c to SCK (F.Cu); fast lines 0.20 mm from
+      power tracks (MOTOR_R_SPI_MOSI / +3V3_PB, MOTOR2_SPI_CS / +3V3_LDO); MOTOR2_SPI_CS edge over L2 antipads of
+      the +3V3_LDO vias; +3V3 vias inside the radio and SD L3 GND islands (near CS, under SD_CLK_CARD); USB
+      unused-orientation stubs 3.4-5.6 mm, DP / DM 0.65 mm apart; fast-net test pad stubs (TP1, TP4-TP6, about 2 mm).
+    - Mechanics / docs: HR1 washer margin 0 to the EXPANSION_SDA via (2.50 mm), H2 3.73 mm to D7-CKI; missing 3D
+      models (J2, J9, D7-D11); local datasheets missing (DS22057B MCP1826S, SK9822, AN5419); silkscreen ROBOT ID
+      touches J8 and DRIBBLER, the J8 table abuts U14.
+    - Schematic readability: root sheet page size, field positions and blank title blocks; sheet 07 ESD / pull
+      resistors not grouped with their connectors; AUTO5 / AUTO3 label overprints U8 / U9 pin 4; notes outside boxes
+      (01 POWER LAYOUT / PROTECTION LIMITS, 03 USB LOAD); +3V3 global labels at R29 / C28 / C29.
+    Then refill zones, save, and re-run DRC with parity, ERC and the length script.
+1.2 D7-D11 are SK9822-EC20 (JLC C2909059) on footprint OPSCO_SK9822-EC20 (standard orientation, no rotation offset):
+    in JLC's placement preview, check pin 1 (SDO) sits on the pin-1 dot. (Only if the BB-2020BGR-TRB alternate is used: confirm its drawing is a
+    top view.)
+1.3 Confirm the 50 ohm (0.15 mm on L1 and L4) and 90 ohm (0.14 / 0.15 mm on L1) widths in JLC's impedance
+    calculator for JLC04161H-3313 (3313 prepreg 0.0994 mm to L2 / L3); order with impedance control.
+1.5 Powerboard agreement on J15 (JST PH 7P): 1 TX (out of this board, PD15 UART9 via R33), 2 RX (into this board,
+    PD14 UART9 via R34), 3 GND, 4 +3V3,
+    5 GND, 6 +5V, 7 GND. 5V setpoint 5.0 V +/-3 %, never above 5.3 V (SK9822 limit, m2). 3V3 setpoint 3.4 V +/-3 %,
+    never above 3.6 V. One 2 A contact per rail; keep the steady load
+    per rail well under 2 A. The powerboard must source > 2.5 A per rail into a fault so F5 / F6 trip (M1, M2, M3,
+    deviation 20).
+1.6 Kicker agreement on J10 (JST GH 4P: 1 SDA, 2 GND, 3 SCL, 4 GND, signals only) (M10).
+1.7 Motor-module agreement on J4-J8 (JST GH 6P: 1 MOSI, 2 GND, 3 MISO, 4 SCK, 5 GND, 6 CS); the module board's J2
+    is still PH 8P (M19). Modules must release MISO while CS is high (M9).
+1.8 OLED module (M5): choose the 0.96in SSD1306 I2C module; check its pin order (1 GND, 2 VCC, 3 SCL, 4 SDA), address,
+    power-on reset and pull-ups; decide whether it needs M2 standoffs (the J13 footprint has none, but keeps four
+    4.0 mm "J13 standoff space" areas where holes can be added).
+1.9 Parts: the BOM is in bom/ (2026-11-07); generate the placement file. Re-check stock in the
+    JLCPCB BOM tool; check the substitutes in the placement preview (F1 / F3 / F4 1812L075/24DR, F5 / F6
+    1812L125/16DR, SW1 / SW2 / SW4-SW6 PTS636SM43LFS, SW3 DS-06BP, X1 ABM8-25.000MHZ-10-D1G-T). Source D7-D11 and U11
+    outside JLCPCB stock (global sourcing or consign). Re-check J9 (C3643542, 37 on 2026-11-07 = 18 board sets
+    with the radio J2) and U7 (MCP1826S-3302E/DB, C638624) the day of ordering. Order U10 as SN74AHCT125DR (SOIC-14). Order with tented
+    vias and double-sided assembly.
+1.10 Any change to J9, HR1 or HR2 must be made in this board and both radio projects together (INTERFACE.md).
+
+
+2. BENCH BRING-UP (first boards)
+--------------------------------
+2.1 Rails: +3V3 and +5V on the powerboard at full load (M2, m2); radio supply at the module during Wi-Fi TX (m3);
+    rail sag when the powerboard is unplugged with USB attached (M7).
+2.2 USB: VBUS drop through the L3 VBUS ring to U8 VIN2 with LEDs and radio running (deviation 1); attach inrush on the team's laptops (m18); port behaviour with the radio
+    transmitting on USB power (m22); unplug detection on PA9. U7 (MCP1826S): +3V3_LDO at TP15 during the
+    USB-to-powerboard switchover and radio TX (the +3V3 bulk behind U9 exceeds the 22 uF the datasheet recommends
+    on the LDO output); U7 case temperature at the bench load.
+2.3 HSE: frequency and drive level at R12 (m9); adjust C18 / C19 or fit R12 if needed.
+2.4 Scope: SPI1 / SPI2 SCK at J4 and J7 at the chosen GPIO speed (deviation 9); motor SPI ringing and MOSI setup /
+    hold (m4); SD CK at TP1 before raising CLKDIV to 24 MHz; radio MISO valid delay at J9 before trying 40 MHz.
+2.5 I2C rise time at TP7 (kicker) and TP8 (expansion) with real cables (m6); fit 1.5k only if > 300 ns.
+2.6 Mechanics: radio retention on J9 and the M2 x 5 mm standoffs at HR1 / HR2, standoff and screw-head clearance,
+    OLED module clearance over J1 / J2 / U3 / U7 (M6).
+2.7 Assembly: any via ring that touches a pad (listed by the audit, 1.1): check for tombstoning.
+2.8 Silkscreen: check that the GH connector pin tables and the narrow J15 labels read well.
+
+
+3. FIRMWARE (see ../docs/FIRMWARE.md)
+-------------------------------------
+3.1 Apply the clock tree (HSE 25 MHz, C2), VOS0 or HPRE /2 (M16), BOR level (M7), PWR_LDO_SUPPLY.
+3.2 Re-pin the .ioc from the netlist pin map (M11): SPI6 LEDs, SPI2 right wheels, SPI4 dribbler, SDMMC2, SPI3 radio.
+3.3 PB6 = ESP_DATA_READY, PB7 = ESP_HANDSHAKE (swapped 2026-11-07): swap the pin defines and EXTI6 / EXTI7.
+3.4 SPI1 / SPI2 SCK, MOSI and the motor CS pins at OSPEEDR LOW or MEDIUM, never HIGH / VERY_HIGH (deviation 9).
+3.5 SPI3 radio: CRC off, 8-bit (M4); bring up at 3 MHz, run at 24 MHz; CS PG15 at OSPEEDR LOW / MEDIUM.
+3.6 Master Keep IO State on all SPI masters (M17).
+3.7 IMU U11 (bottom side, rotation 270, pin 1 north-west seen from above): derive the axis remap from the datasheet
+    axis drawing, mirrored for the bottom side; use the LSM6DSV320X driver (WHO_AM_I, register map); SW_RESET after
+    brown-out (m16).
+3.8 Power-source changes (poll PD10 / PD9, m11): re-initialise SD, IMU and OLED, pulse ESP_RST and restart
+    ESP-Hosted, resend the LED frame. LED current cap about 250 mA, about 100 mA while PWR_SRC_5V is low.
+3.9 SD: card detect on PD5 (SD_DET, EXTI5, low = card in, R73 pull-up; added 2026-11-09); debounce, then init;
+    still treat init failure as "no card"; CMD0 recovery (M18).
+3.10 I2C bus recovery before each init; OLED probe 0x3C / 0x3D; let CubeMX recompute I2C timing.
+
+
+4. LATER
+--------
+4.1 m19: test points on +5V_PB and +3V3_PB.
+4.2 m20: SWCLK sheet pin is "input" on both sheets (cosmetic).
+4.3 m26: make the schematic decoupling labels match the board pin pairing.
+4.4 Deviation 22: if a WROOM-1 (PCB antenna) build of the Inboard radio is used and its range is poor, clear the pours
+    under its antenna area (x 46.1-66.1, y 0-7.5).
+4.6 Deviations 2 / 4: move the SWDIO via (64.72, 19.68) and track and the VBUS vias (72.93, 21.43) / (86.47, 33.62)
+    0.2 mm further from the USB pair where room allows, add a USB-to-other spacing rule (about 3x the gap), and check
+    whether the L3 antipads of the four L4 hop vias (deviation 3) merge under the hops.
+4.7 Generate placement drawings for this board (DESIGN_NOTES 12.1; ../docs/img/ shows ControlBoard2027_C).
+
+
+NOTES (schematic edits)
+-----------------------
+- Close KiCad before scripted schematic edits; after each edit run ERC and a netlist diff by net membership.
+- Grid 1.27 mm. Power symbols (#PWR) need project-unique refs. Deleting a power symbol can remove a junction a
+  mid-wire pin still needs; re-check the netlist after any delete.
