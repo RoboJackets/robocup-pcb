@@ -5218,13 +5218,13 @@
 	(footprint "TestPoint:TestPoint_Pad_1.0x1.0mm"
 		(layer "F.Cu")
 		(uuid "1c2a89a6-ff63-4c92-bcfd-5ed46507d055")
-		(at 148.85 125.8)
+		(at 148.85 125.7)
 		(descr "SMD rectangular pad as test Point, square 1.0mm side length")
 		(tags "test point SMD pad rectangle square")
 		(property "Reference" "U"
 			(at 0 -1.448 0)
 			(layer "F.SilkS")
-			(uuid "afeace62-6665-4496-8465-802c85554d2c")
+			(uuid "0be57888-62eb-4a23-b88e-b221595e9091")
 			(effects
 				(font
 					(size 1 1)
@@ -5235,7 +5235,7 @@
 		(property "Value" "OUT_{x}"
 			(at 0 1.55 0)
 			(layer "F.Fab")
-			(uuid "b3103938-9f8b-4d53-96ef-ad82976f10d1")
+			(uuid "01e75cc7-ede5-4f16-a856-53477325363d")
 			(effects
 				(font
 					(size 1 1)
@@ -5248,7 +5248,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "47809bf7-b9a4-4992-af54-a283267c3978")
+			(uuid "04d74846-ddbf-4c87-86cb-6c2a8b1a1d3c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5261,7 +5261,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "1d04ec2d-3479-4eab-9be0-6836860386c5")
+			(uuid "0121aa77-0f3f-478e-b568-4715dbe4370f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16859,7 +16859,7 @@
 		(descr "SMD rectangular pad as test Point, square 1.0mm side length")
 		(tags "test point SMD pad rectangle square")
 		(property "Reference" "W"
-			(at 0 -1.448 0)
+			(at 0 -1.348 0)
 			(layer "F.SilkS")
 			(uuid "87c7a6a7-dd83-40de-b905-d366dd31f32c")
 			(effects
@@ -32159,13 +32159,13 @@
 	(footprint "TestPoint:TestPoint_Pad_1.0x1.0mm"
 		(layer "F.Cu")
 		(uuid "f86c1e76-ecb5-4c40-9878-087ac7f6a4e6")
-		(at 141.4 125.75)
+		(at 141.4 125.7)
 		(descr "SMD rectangular pad as test Point, square 1.0mm side length")
 		(tags "test point SMD pad rectangle square")
 		(property "Reference" "V"
-			(at 0.08 -1.78 0)
+			(at 0 -1.398 0)
 			(layer "F.SilkS")
-			(uuid "403f4380-3abe-4847-afe1-c473cc220016")
+			(uuid "c8dafeec-386c-45d4-bbd0-56ed45d33d33")
 			(effects
 				(font
 					(size 1 1)
@@ -32176,7 +32176,7 @@
 		(property "Value" "OUT_{x}"
 			(at 0 1.55 0)
 			(layer "F.Fab")
-			(uuid "00af611a-7c61-49e8-b44a-239944bd121f")
+			(uuid "108e0c70-a98b-445f-8a43-1e8355b21409")
 			(effects
 				(font
 					(size 1 1)
@@ -32189,7 +32189,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ee98fb48-38b8-4be3-99c0-e105f92e344a")
+			(uuid "6804df20-671c-4522-ba71-c85a33c315b3")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32202,7 +32202,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "397d8c4f-57f6-449b-8c28-0e9883711065")
+			(uuid "ca7c1c9b-52e5-4c6e-9fe2-beffe55eb138")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32906,6 +32906,72 @@
 		(layer "Edge.Cuts")
 		(uuid "49f17a04-4e1b-4e03-8665-46e6a4781c34")
 	)
+	(gr_text "W"
+		(at 136.15 138.9 0)
+		(layer "F.SilkS")
+		(uuid "079e8415-9ded-4277-a1f0-1f99f2aa053a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "V"
+		(at 138.036034 138.9 0)
+		(layer "F.SilkS")
+		(uuid "5fa1d8e5-d375-4bd0-af02-b5a45569eb79")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "U"
+		(at 139.874449 138.9 0)
+		(layer "F.SilkS")
+		(uuid "1ce756df-694c-43e2-99af-3b6937bf155c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "C"
+		(at 146.449361 138.9 0)
+		(layer "F.SilkS")
+		(uuid "29d67afa-b964-4e36-bec0-c71356afa2ec")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "B"
+		(at 148.335395 138.9 0)
+		(layer "F.SilkS")
+		(uuid "5a8a90cd-8cb4-419b-a611-3bd3c420274c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "A"
+		(at 150.15 138.9 0)
+		(layer "F.SilkS")
+		(uuid "8b743553-1418-41dc-8efb-4e99af0560ac")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
 	(gr_text "C23"
 		(at 152.2 135.5 0)
 		(layer "F.SilkS")
@@ -32921,6 +32987,28 @@
 		(at 161.6 135.6 0)
 		(layer "F.SilkS")
 		(uuid "e655d734-9d84-40bc-a61c-cd12547dc810")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "GND"
+		(at 142.007543 137.9 90)
+		(layer "F.SilkS")
+		(uuid "056a8401-bc88-4d81-9ee8-3ccd2ae69ccb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "+5V"
+		(at 144.340077 138.2 90)
+		(layer "F.SilkS")
+		(uuid "5d64de8a-5f43-4498-bae0-07e4500caea6")
 		(effects
 			(font
 				(size 1 1)
@@ -36335,7 +36423,7 @@
 		(uuid "d255f3db-8c6b-4542-a835-275a643aa10a")
 	)
 	(via
-		(at 148.85 125.8)
+		(at 148.85 125.7)
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -36431,7 +36519,7 @@
 		(uuid "0c01e481-9dec-4177-9ebe-be8458eee2ce")
 	)
 	(via
-		(at 141.4 125.75)
+		(at 141.4 125.7)
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
