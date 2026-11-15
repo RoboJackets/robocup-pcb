@@ -4,7 +4,9 @@
     "active_layer_preset": "",
     "auto_track_width": false,
     "hidden_netclasses": [],
-    "hidden_nets": [],
+    "hidden_nets": [
+      "GND"
+    ],
     "high_contrast_mode": 0,
     "net_color_mode": 1,
     "opacity": {
@@ -53,8 +55,8 @@
       "board_outline_area",
       "ly_points"
     ],
-    "visible_layers": "ffffffff_ffffffff_ffffff75_ffffffee",
-    "zone_display_mode": 1
+    "visible_layers": "ffffffff_ffffffff_ffffff75_ffffffef",
+    "zone_display_mode": 0
   },
   "git": {
     "integration_disabled": false,

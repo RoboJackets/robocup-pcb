@@ -2972,7 +2972,7 @@
 		)
 		(uuid "fd582b84-ec50-42b6-9f22-a4488985650d")
 	)
-	(text_box "Single-Shunt Overcurrent Protection. Design derived from EVLSPIN32G0B2 Evaluation Board.\nR_{LP} chosen for part commonality.\nIdeal Characteristics:\nOver-Current Threshold: 11.05A (min 11.06, max 11.08)\nLow Pass Filter Cutoff (-0.25 dB gain): 146.14 kHz"
+	(text_box "Single-Shunt Overcurrent Protection. Design derived from EVLSPIN32G0B2 Evaluation Board.\nR_{LP} chosen for part commonality.\nIdeal Characteristics:\nOver-Current Threshold: 11.05A (min 11.06, max 11.08)\nLow Pass Filter Cutoff: 496.4 kHz"
 		(exclude_from_sim no)
 		(at 184.15 146.05 0)
 		(size 95.25 12.7)
@@ -6430,7 +6430,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1.13k ±0.1%"
+		(property "Value" "340 ±0.1%"
 			(at 224.79 115.5699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10387,7 +10387,7 @@
 				)
 			)
 		)
-		(property "Value" "33 ±0.1%"
+		(property "Value" "10 ±0.1%"
 			(at 209.55 116.84 90)
 			(show_name no)
 			(do_not_autoplace no)
