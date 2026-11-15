@@ -29827,7 +29827,7 @@
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R34"
-			(at -0.44 1.35 0)
+			(at 2.5 0.09 0)
 			(layer "F.SilkS")
 			(uuid "23df8717-2547-44d9-8b39-6e69d7a4a4d9")
 			(effects
@@ -30246,7 +30246,7 @@
 		(at 143.95 85.2)
 		(descr "wire loop with bead as test point, loop diameter 1.8mm, hole diameter 1.0mm")
 		(tags "test point wire loop bead")
-		(property "Reference" "+12V"
+		(property "Reference" "REG12"
 			(at -0.1 -2.4 0)
 			(layer "F.SilkS")
 			(uuid "4fff61ae-69b1-45fa-a134-7e9ca58ba934")
