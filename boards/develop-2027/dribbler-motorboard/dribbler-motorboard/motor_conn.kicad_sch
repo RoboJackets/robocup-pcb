@@ -937,7 +937,7 @@
 				(pin passive line
 					(at -5.08 -2.54 0)
 					(length 3.81)
-					(name "HALL_A"
+					(name "+5V"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -955,7 +955,7 @@
 				(pin passive line
 					(at -5.08 0 0)
 					(length 3.81)
-					(name "HALL_B"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -973,7 +973,7 @@
 				(pin passive line
 					(at -5.08 2.54 0)
 					(length 3.81)
-					(name "HALL_C"
+					(name "HALL_A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -991,7 +991,7 @@
 				(pin passive line
 					(at -5.08 5.08 0)
 					(length 3.81)
-					(name "+5V"
+					(name "HALL_B"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1009,7 +1009,7 @@
 				(pin passive line
 					(at -5.08 7.62 0)
 					(length 3.81)
-					(name "GND"
+					(name "HALL_C"
 						(effects
 							(font
 								(size 1.27 1.27)
