@@ -1450,16 +1450,16 @@
 		(uuid "0fbb18c6-6ec5-427a-9142-501947008336")
 	)
 	(junction
+		(at 40.64 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "22db5bbe-61b2-4e2f-b969-f81f5e1913a6")
+	)
+	(junction
 		(at 57.15 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3bb4110b-a706-4a63-9d40-f56499c3b482")
-	)
-	(junction
-		(at 38.1 40.64)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "635f8528-3d96-4496-8eff-008690e30330")
 	)
 	(junction
 		(at 48.26 38.1)
@@ -1468,22 +1468,22 @@
 		(uuid "a0486b54-d8ea-4436-b6a0-d25d238093f2")
 	)
 	(junction
-		(at 35.56 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a4b9c037-22a7-43c7-8d18-8db795bca12c")
-	)
-	(junction
-		(at 40.64 43.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "af5843b9-618f-40e4-970f-799a2beeb9a9")
-	)
-	(junction
 		(at 66.04 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b27aedd0-d006-44be-8856-9a30a506190f")
+	)
+	(junction
+		(at 35.56 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bad9fa90-8a8c-4a13-aa30-b3b343ce9a5a")
+	)
+	(junction
+		(at 38.1 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cdb8a084-ab5b-48d3-8ff0-59edd0fd7ccc")
 	)
 	(no_connect
 		(at 43.18 46.99)
@@ -1578,7 +1578,7 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 40.64) (xy 38.1 40.64)
+			(xy 27.94 40.64) (xy 38.1 40.64)
 		)
 		(stroke
 			(width 0)
@@ -1658,7 +1658,7 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 38.1) (xy 35.56 38.1)
+			(xy 27.94 38.1) (xy 35.56 38.1)
 		)
 		(stroke
 			(width 0)
@@ -1688,7 +1688,7 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 43.18) (xy 40.64 43.18)
+			(xy 27.94 43.18) (xy 40.64 43.18)
 		)
 		(stroke
 			(width 0)
@@ -2686,7 +2686,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 130.81 25.4 270)
+		(at 27.94 33.02 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2696,7 +2696,7 @@
 		(dnp no)
 		(uuid "7bf452af-71a0-4567-a619-606cd4b6d58a")
 		(property "Reference" "#PWR057"
-			(at 127 25.4 0)
+			(at 24.13 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2707,7 +2707,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 119.888 25.4 90)
+			(at 17.018 33.02 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2718,7 +2718,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 130.81 25.4 0)
+			(at 27.94 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2729,7 +2729,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.81 25.4 0)
+			(at 27.94 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2740,7 +2740,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 130.81 25.4 0)
+			(at 27.94 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3215,7 +3215,7 @@
 	)
 	(symbol
 		(lib_id "customs:SPLIT_5-3_Conn_01x08")
-		(at 27.94 48.26 180)
+		(at 125.73 40.64 180)
 		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3226,7 +3226,7 @@
 		(fields_autoplaced yes)
 		(uuid "d2c323c1-250f-41d8-ae52-76dbb966a371")
 		(property "Reference" "J4"
-			(at 27.94 31.75 0)
+			(at 125.73 24.13 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3236,7 +3236,7 @@
 			)
 		)
 		(property "Value" "MOTOR PHASE"
-			(at 27.94 34.29 0)
+			(at 125.73 26.67 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3246,7 +3246,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_PH_S8B-PH-K_1x08_P2.00mm_Horizontal"
-			(at 27.94 45.72 0)
+			(at 125.73 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3257,7 +3257,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 27.94 48.26 0)
+			(at 125.73 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3268,7 +3268,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 28.194 49.784 0)
+			(at 125.984 42.164 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3279,7 +3279,7 @@
 			)
 		)
 		(property "LCSC Manufacturing P/N" ""
-			(at 27.94 48.26 0)
+			(at 125.73 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3290,7 +3290,7 @@
 			)
 		)
 		(property "LCSC P/N" "C157915"
-			(at 27.94 48.26 0)
+			(at 125.73 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3335,7 +3335,7 @@
 	)
 	(symbol
 		(lib_id "customs:SPLIT_5-3_Conn_01x08")
-		(at 125.73 27.94 180)
+		(at 22.86 35.56 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3346,7 +3346,7 @@
 		(fields_autoplaced yes)
 		(uuid "de3e84fb-280b-47cf-8eda-993c40e8caf1")
 		(property "Reference" "J4"
-			(at 125.73 19.05 0)
+			(at 22.86 26.67 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3356,7 +3356,7 @@
 			)
 		)
 		(property "Value" "MOTOR PHASE"
-			(at 125.73 21.59 0)
+			(at 22.86 29.21 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3366,7 +3366,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_PH_S8B-PH-K_1x08_P2.00mm_Horizontal"
-			(at 125.73 25.4 0)
+			(at 22.86 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3377,7 +3377,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 125.73 27.94 0)
+			(at 22.86 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3388,7 +3388,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 125.984 29.464 0)
+			(at 23.114 37.084 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3399,7 +3399,7 @@
 			)
 		)
 		(property "LCSC Manufacturing P/N" ""
-			(at 125.73 27.94 0)
+			(at 22.86 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3410,7 +3410,7 @@
 			)
 		)
 		(property "LCSC P/N" "C157915"
-			(at 125.73 27.94 0)
+			(at 22.86 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3455,7 +3455,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 130.81 27.94 90)
+		(at 27.94 35.56 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3465,7 +3465,7 @@
 		(dnp no)
 		(uuid "ec69647d-bc2b-4952-9ef7-2ff7cb15a025")
 		(property "Reference" "#PWR058"
-			(at 137.16 27.94 0)
+			(at 34.29 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3476,7 +3476,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 120.142 27.94 90)
+			(at 17.272 35.56 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3487,7 +3487,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 130.81 27.94 0)
+			(at 27.94 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3498,7 +3498,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.81 27.94 0)
+			(at 27.94 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3509,7 +3509,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 130.81 27.94 0)
+			(at 27.94 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
