@@ -4291,7 +4291,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "HV_MID"
+		(property "Value" "DISCHRG"
 			(at 166.37 40.9574 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4346,8 +4346,41 @@
 				)
 			)
 		)
-		(property "LCSC P/N" ""
+		(property "LCSC P/N" "C965799"
 			(at 162.56 38.1 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "XL-1608SURC-06"
+			(at 162.56 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" ""
+			(at 162.56 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" ""
+			(at 162.56 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
