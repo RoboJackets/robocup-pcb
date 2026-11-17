@@ -1438,7 +1438,17 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 111.76) (xy 87.63 111.76)
+			(xy 71.12 111.76) (xy 87.63 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70b6bdf0-c3b4-439e-827f-07ecdf12b6dc")
+	)
+	(wire
+		(pts
+			(xy 57.15 111.76) (xy 63.5 111.76)
 		)
 		(stroke
 			(width 0)
@@ -1549,7 +1559,7 @@
 	)
 	(hierarchical_label "SERVO_PWM"
 		(shape input)
-		(at 74.93 111.76 180)
+		(at 57.15 111.76 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1592,7 +1602,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "163fae42-b0ff-4d5b-b55b-5927deec9dc2")
-		(property "Reference" "R50"
+		(property "Reference" "R57"
 			(at 62.23 57.15 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1687,7 +1697,7 @@
 		(instances
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/de57e062-71e3-4788-a8ac-703fd2ada1c6/97d06cc3-69ab-475b-a834-a2fce95408d1"
-					(reference "R50")
+					(reference "R57")
 					(unit 1)
 				)
 			)
@@ -1705,7 +1715,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1a7701ee-a03e-4e3e-9523-80ad5894452b")
-		(property "Reference" "R51"
+		(property "Reference" "R59"
 			(at 66.04 68.5799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1802,7 +1812,120 @@
 		(instances
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/de57e062-71e3-4788-a8ac-703fd2ada1c6/97d06cc3-69ab-475b-a834-a2fce95408d1"
-					(reference "R51")
+					(reference "R59")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 67.31 111.76 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "201832cd-0a28-4516-a584-a79f8a374a0d")
+		(property "Reference" "R58"
+			(at 67.31 105.41 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 67.31 107.95 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 67.31 113.538 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+			(at 67.31 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100 Ohms ±1% 0.125W, 1/8W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+			(at 67.31 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "CRCW0603100RFKEA"
+			(at 67.31 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "LCSC"
+			(at 67.31 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "C844917"
+			(at 67.31 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a1970265-2417-47e0-90a4-b08e0cfd7467")
+		)
+		(pin "2"
+			(uuid "ebe9c0a8-47ea-4768-8a9f-4f072526336a")
+		)
+		(instances
+			(project "power-board"
+				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/de57e062-71e3-4788-a8ac-703fd2ada1c6/97d06cc3-69ab-475b-a834-a2fce95408d1"
+					(reference "R58")
 					(unit 1)
 				)
 			)
@@ -1820,7 +1943,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "36964665-0c21-43f0-972c-5f929c2e75f1")
-		(property "Reference" "#PWR0113"
+		(property "Reference" "#PWR0116"
 			(at 78.74 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -1880,7 +2003,7 @@
 		(instances
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/de57e062-71e3-4788-a8ac-703fd2ada1c6/97d06cc3-69ab-475b-a834-a2fce95408d1"
-					(reference "#PWR0113")
+					(reference "#PWR0116")
 					(unit 1)
 				)
 			)
@@ -1897,7 +2020,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "528f9e3d-dc1f-4587-a106-7971fc7ca5b9")
-		(property "Reference" "D12"
+		(property "Reference" "D14"
 			(at 91.44 49.2124 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1994,7 +2117,7 @@
 		(instances
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/de57e062-71e3-4788-a8ac-703fd2ada1c6/97d06cc3-69ab-475b-a834-a2fce95408d1"
-					(reference "D12")
+					(reference "D14")
 					(unit 1)
 				)
 			)
@@ -2012,7 +2135,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5bcd57d9-8744-4ef9-9f33-467d0a0dd1cf")
-		(property "Reference" "#PWR0112"
+		(property "Reference" "#PWR0115"
 			(at 68.58 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -2072,7 +2195,7 @@
 		(instances
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/de57e062-71e3-4788-a8ac-703fd2ada1c6/97d06cc3-69ab-475b-a834-a2fce95408d1"
-					(reference "#PWR0112")
+					(reference "#PWR0115")
 					(unit 1)
 				)
 			)
@@ -2090,7 +2213,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7dfd07ac-ec25-4855-97a0-dd11aa247646")
-		(property "Reference" "M1"
+		(property "Reference" "M2"
 			(at 111.76 50.7999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2187,7 +2310,7 @@
 		(instances
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/de57e062-71e3-4788-a8ac-703fd2ada1c6/97d06cc3-69ab-475b-a834-a2fce95408d1"
-					(reference "M1")
+					(reference "M2")
 					(unit 1)
 				)
 			)
@@ -2205,7 +2328,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "81b4c129-421d-4c91-8506-67e53efbc0ee")
-		(property "Reference" "M2"
+		(property "Reference" "M1"
 			(at 104.14 112.5968 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2305,7 +2428,7 @@
 		(instances
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/de57e062-71e3-4788-a8ac-703fd2ada1c6/97d06cc3-69ab-475b-a834-a2fce95408d1"
-					(reference "M2")
+					(reference "M1")
 					(unit 1)
 				)
 			)
@@ -2444,7 +2567,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bde4ac05-554a-41c2-8887-769c511b90f3")
-		(property "Reference" "#PWR0114"
+		(property "Reference" "#PWR0117"
 			(at 85.09 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -2504,7 +2627,7 @@
 		(instances
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/de57e062-71e3-4788-a8ac-703fd2ada1c6/97d06cc3-69ab-475b-a834-a2fce95408d1"
-					(reference "#PWR0114")
+					(reference "#PWR0117")
 					(unit 1)
 				)
 			)

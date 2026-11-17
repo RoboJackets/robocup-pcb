@@ -28,6 +28,16 @@
 		)
 		(uuid "0f3237a9-f37f-4260-b187-43aaf9d0facf")
 	)
+	(wire
+		(pts
+			(xy 127 93.98) (xy 152.4 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f4331d8-2191-470e-a7b7-6534a2a6ce66")
+	)
 	(bus
 		(pts
 			(xy 63.5 86.36) (xy 88.9 86.36)
@@ -60,7 +70,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 109.22) (xy 215.9 109.22)
+			(xy 127 120.65) (xy 215.9 120.65)
 		)
 		(stroke
 			(width 0)
@@ -70,7 +80,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 93.98) (xy 152.4 93.98)
+			(xy 127 106.68) (xy 152.4 106.68)
 		)
 		(stroke
 			(width 0)
@@ -120,7 +130,7 @@
 	)
 	(bus
 		(pts
-			(xy 127 91.44) (xy 152.4 91.44)
+			(xy 127 104.14) (xy 152.4 104.14)
 		)
 		(stroke
 			(width 0)
@@ -130,7 +140,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 96.52) (xy 152.4 96.52)
+			(xy 127 109.22) (xy 152.4 109.22)
 		)
 		(stroke
 			(width 0)
@@ -150,7 +160,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 99.06) (xy 152.4 99.06)
+			(xy 127 111.76) (xy 152.4 111.76)
 		)
 		(stroke
 			(width 0)
@@ -200,7 +210,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 111.76) (xy 215.9 111.76)
+			(xy 127 123.19) (xy 215.9 123.19)
 		)
 		(stroke
 			(width 0)
@@ -218,9 +228,19 @@
 		)
 		(uuid "9e124046-7c4f-470a-9bb4-477bf041f19e")
 	)
+	(wire
+		(pts
+			(xy 127 91.44) (xy 152.4 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8412516-f695-4d6f-9d18-ef08bbb5840d")
+	)
 	(bus
 		(pts
-			(xy 127 124.46) (xy 215.9 124.46)
+			(xy 127 135.89) (xy 215.9 135.89)
 		)
 		(stroke
 			(width 0)
@@ -300,7 +320,7 @@
 	)
 	(sheet
 		(at 152.4 38.1)
-		(size 38.1 63.5)
+		(size 38.1 76.2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -326,7 +346,7 @@
 			)
 		)
 		(property "Sheetfile" "output_power.kicad_sch"
-			(at 152.4 102.1846 0)
+			(at 152.4 114.8846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -427,7 +447,7 @@
 			)
 		)
 		(pin "ESTOP" output
-			(at 152.4 99.06 180)
+			(at 152.4 111.76 180)
 			(uuid "56271844-4e1c-4bc9-bfda-8221e39d6c2b")
 			(effects
 				(font
@@ -437,7 +457,7 @@
 			)
 		)
 		(pin "POWERSW" output
-			(at 152.4 96.52 180)
+			(at 152.4 109.22 180)
 			(uuid "cd341b0e-0193-4fd2-9854-76a632774b80")
 			(effects
 				(font
@@ -447,7 +467,7 @@
 			)
 		)
 		(pin "ALERT" output
-			(at 152.4 93.98 180)
+			(at 152.4 106.68 180)
 			(uuid "c6f790b2-999f-4e8a-9c5b-a46db2398797")
 			(effects
 				(font
@@ -457,8 +477,28 @@
 			)
 		)
 		(pin "{I2C}" bidirectional
-			(at 152.4 91.44 180)
+			(at 152.4 104.14 180)
 			(uuid "032433a5-97a5-4671-9417-51750bd4310c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "12V_OK" output
+			(at 152.4 91.44 180)
+			(uuid "be702b8b-5666-4efe-83f8-b4a5b263a7fd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SW_OK" output
+			(at 152.4 93.98 180)
+			(uuid "4c22024c-dab7-438e-8e73-cdb103f8f8ff")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -476,7 +516,7 @@
 	)
 	(sheet
 		(at 88.9 76.2)
-		(size 38.1 50.8)
+		(size 38.1 63.5)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -502,7 +542,7 @@
 			)
 		)
 		(property "Sheetfile" "mcu.kicad_sch"
-			(at 88.9 127.5846 0)
+			(at 88.9 140.2846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -583,7 +623,7 @@
 			)
 		)
 		(pin "{UART0}" bidirectional
-			(at 127 124.46 0)
+			(at 127 135.89 0)
 			(uuid "8a5031df-63e6-41d2-a7a3-1cd491486eff")
 			(effects
 				(font
@@ -603,7 +643,7 @@
 			)
 		)
 		(pin "FAN_PWM" output
-			(at 127 109.22 0)
+			(at 127 120.65 0)
 			(uuid "042d93ec-a9d2-416d-bcb6-aa096795658f")
 			(effects
 				(font
@@ -613,7 +653,7 @@
 			)
 		)
 		(pin "SERVO_PWM" output
-			(at 127 111.76 0)
+			(at 127 123.19 0)
 			(uuid "70820f9b-da6d-4af8-833b-76e3a5678aa8")
 			(effects
 				(font
@@ -623,7 +663,7 @@
 			)
 		)
 		(pin "ESTOP" input
-			(at 127 99.06 0)
+			(at 127 111.76 0)
 			(uuid "82b6aa5b-9fb0-406c-80d0-3458c021b3b0")
 			(effects
 				(font
@@ -633,7 +673,7 @@
 			)
 		)
 		(pin "POWERSW" input
-			(at 127 96.52 0)
+			(at 127 109.22 0)
 			(uuid "12acc0b5-0ee8-4e72-bcf7-2a21964cbbb8")
 			(effects
 				(font
@@ -643,7 +683,7 @@
 			)
 		)
 		(pin "CURR_ALERT" input
-			(at 127 93.98 0)
+			(at 127 106.68 0)
 			(uuid "92cd67ee-a15b-43ef-8fcf-5b6cd089cc40")
 			(effects
 				(font
@@ -653,8 +693,28 @@
 			)
 		)
 		(pin "{I2C1}" bidirectional
-			(at 127 91.44 0)
+			(at 127 104.14 0)
 			(uuid "f1bb05fe-8f9c-4c6e-8665-82a6ddbfe3fd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "12V_OK" input
+			(at 127 91.44 0)
+			(uuid "4b478795-a37a-4db6-8a4e-c242eb81a692")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SW_OK" input
+			(at 127 93.98 0)
+			(uuid "a4c454da-c2d2-4485-87a6-059fbefa15f8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -982,7 +1042,7 @@
 	)
 	(sheet
 		(at 215.9 38.1)
-		(size 38.1 88.9)
+		(size 38.1 101.6)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1008,7 +1068,7 @@
 			)
 		)
 		(property "Sheetfile" "out_conn.kicad_sch"
-			(at 215.9 127.5846 0)
+			(at 215.9 140.2846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1049,7 +1109,7 @@
 			)
 		)
 		(pin "FAN_PWM" input
-			(at 215.9 109.22 180)
+			(at 215.9 120.65 180)
 			(uuid "73e2952c-9ee1-42d3-884d-1a70edb9db00")
 			(effects
 				(font
@@ -1059,7 +1119,7 @@
 			)
 		)
 		(pin "SERVO_PWM" input
-			(at 215.9 111.76 180)
+			(at 215.9 123.19 180)
 			(uuid "ce5a240e-f534-4700-9924-9e5a780c80c4")
 			(effects
 				(font
@@ -1069,7 +1129,7 @@
 			)
 		)
 		(pin "{UART0}" bidirectional
-			(at 215.9 124.46 180)
+			(at 215.9 135.89 180)
 			(uuid "a41fdc8a-e444-4e17-91af-49d9a8a5544e")
 			(effects
 				(font

@@ -1423,7 +1423,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2ecc5812-a124-4f36-9a1c-cf7c35ccd48f")
-		(property "Reference" "C52"
+		(property "Reference" "C6"
 			(at 95.25 87.6299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1520,7 +1520,7 @@
 		(instances
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/ce203962-e6d3-4ac4-9196-cdd3f8a5376c"
-					(reference "C52")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -1653,7 +1653,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5444c63c-2851-4361-9355-8602e02089dc")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR020"
 			(at 99.06 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -1713,7 +1713,7 @@
 		(instances
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/ce203962-e6d3-4ac4-9196-cdd3f8a5376c"
-					(reference "#PWR019")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -1731,7 +1731,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6e708d29-4059-40d7-913f-417844181127")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR022"
 			(at 104.14 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -1791,7 +1791,7 @@
 		(instances
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/ce203962-e6d3-4ac4-9196-cdd3f8a5376c"
-					(reference "#PWR020")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -1809,7 +1809,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8369c30f-0491-413d-a0bd-0470427abebd")
-		(property "Reference" "#PWR0133"
+		(property "Reference" "#PWR021"
 			(at 99.06 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -1869,7 +1869,7 @@
 		(instances
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/ce203962-e6d3-4ac4-9196-cdd3f8a5376c"
-					(reference "#PWR0133")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -1887,7 +1887,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a968e72d-15ef-4527-92de-f6a301fd347d")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR023"
 			(at 148.59 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -1947,7 +1947,7 @@
 		(instances
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/ce203962-e6d3-4ac4-9196-cdd3f8a5376c"
-					(reference "#PWR021")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -1965,7 +1965,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a9a3de4d-1bf3-4507-ba38-7282d659d9ff")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR024"
 			(at 154.94 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -2025,7 +2025,7 @@
 		(instances
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/ce203962-e6d3-4ac4-9196-cdd3f8a5376c"
-					(reference "#PWR022")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)

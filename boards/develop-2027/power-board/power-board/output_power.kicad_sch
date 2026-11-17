@@ -12,121 +12,6 @@
 		(comment 1 "Aiden Lee [piman PCB], Ibrahim Irfan")
 	)
 	(lib_symbols
-		(symbol "power:GND"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "GND"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "GND_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GND_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:PWR_FLAG"
 			(power global)
 			(pin_numbers
@@ -243,28 +128,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "PG not used\ntie to GND"
-		(exclude_from_sim no)
-		(at 132.08 88.9 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "9db26010-2a05-4334-b350-98b02d646e27")
-	)
-	(text "PG not used\ntie to GND"
-		(exclude_from_sim no)
-		(at 259.08 139.7 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "fc50efe7-58ad-443c-921a-2402875d2c0c")
-	)
 	(junction
 		(at 209.55 104.14)
 		(diameter 0)
@@ -321,16 +184,6 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 86.36) (xy 129.54 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "259d43d7-96f2-49f5-84fe-a48533ee78c3")
-	)
-	(wire
-		(pts
 			(xy 22.86 53.34) (xy 25.4 53.34)
 		)
 		(stroke
@@ -348,6 +201,16 @@
 			(type default)
 		)
 		(uuid "48e6eab1-49f9-4aef-abec-ed9fad74ec43")
+	)
+	(wire
+		(pts
+			(xy 127 86.36) (xy 129.54 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48f314b2-cbb0-456c-bc85-312b9e537f11")
 	)
 	(wire
 		(pts
@@ -381,6 +244,16 @@
 	)
 	(wire
 		(pts
+			(xy 254 137.16) (xy 256.54 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "648c8492-6945-4c4b-82e5-dbdd5340b99f")
+	)
+	(wire
+		(pts
 			(xy 203.2 86.36) (xy 215.9 86.36)
 		)
 		(stroke
@@ -398,16 +271,6 @@
 			(type default)
 		)
 		(uuid "6e1ad200-2537-477f-95e2-658192716a50")
-	)
-	(wire
-		(pts
-			(xy 127 86.36) (xy 129.54 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "72a0e77a-56fa-4cbe-9c67-7ed9d6440ad8")
 	)
 	(wire
 		(pts
@@ -448,16 +311,6 @@
 			(type default)
 		)
 		(uuid "92ec6b46-aba1-4e60-954e-a9c8203d47e6")
-	)
-	(wire
-		(pts
-			(xy 256.54 137.16) (xy 256.54 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9b66c33c-ea42-4c5e-b6e8-702cf9f6fd48")
 	)
 	(wire
 		(pts
@@ -548,16 +401,6 @@
 			(type default)
 		)
 		(uuid "cde3a2c3-71c6-4b5c-bcf9-72bb6810ab27")
-	)
-	(wire
-		(pts
-			(xy 254 137.16) (xy 256.54 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e46e330c-a572-47f0-b0c4-2435e2088223")
 	)
 	(wire
 		(pts
@@ -711,6 +554,17 @@
 		)
 		(uuid "c438a0ba-a710-4af1-a052-01ece4a49454")
 	)
+	(hierarchical_label "SW_OK"
+		(shape output)
+		(at 129.54 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "def7d904-d412-48a8-b848-5f5a42e67158")
+	)
 	(hierarchical_label "{I2C}"
 		(shape bidirectional)
 		(at 180.34 66.04 0)
@@ -721,6 +575,17 @@
 			(justify left)
 		)
 		(uuid "e5171a2a-b47c-4c88-abed-271e3ce25127")
+	)
+	(hierarchical_label "12V_OK"
+		(shape output)
+		(at 256.54 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fa8049da-0b59-41b5-8ee8-7e785f80051c")
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
@@ -794,162 +659,6 @@
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/45a80922-adbb-4c59-8dc9-53bac2202f70"
 					(reference "#FLG08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 129.54 88.9 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8a701b68-9694-438a-a5e9-3fc98337c68d")
-		(property "Reference" "#PWR062"
-			(at 129.54 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 129.54 93.98 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 129.54 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 129.54 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 129.54 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "de75bca5-1dc7-4172-ba10-9d29b0dd242c")
-		)
-		(instances
-			(project "power-board"
-				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/45a80922-adbb-4c59-8dc9-53bac2202f70"
-					(reference "#PWR062")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 256.54 139.7 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cb890de6-97cf-4b6a-82d6-05874f0f7197")
-		(property "Reference" "#PWR063"
-			(at 256.54 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 256.54 144.78 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 256.54 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 256.54 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 256.54 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "460e1dd9-16a0-476b-9797-609623af01ed")
-		)
-		(instances
-			(project "power-board"
-				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/45a80922-adbb-4c59-8dc9-53bac2202f70"
-					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -1175,7 +884,7 @@
 				(justify right)
 			)
 		)
-		(pin "VBATT_EN" output
+		(pin "LOADSW_EN" output
 			(at 63.5 60.96 0)
 			(uuid "44c8d6f8-6d86-4e7c-854b-7ddb15649270")
 			(effects

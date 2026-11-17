@@ -1670,7 +1670,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1137e7ec-6c0b-481a-b0a0-e9819fd9bd7b")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR031"
 			(at 254 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -1730,7 +1730,7 @@
 		(instances
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/c2597608-b40f-4bfc-b4a6-c1e761104d01"
-					(reference "#PWR029")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -1748,7 +1748,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "145c5e4d-7092-4ae8-a05e-6666c8c54132")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR030"
 			(at 234.95 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -1808,7 +1808,7 @@
 		(instances
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/c2597608-b40f-4bfc-b4a6-c1e761104d01"
-					(reference "#PWR028")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -1826,7 +1826,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "47237063-84ca-466f-847a-d4020886819b")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR025"
 			(at 54.61 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -1886,7 +1886,7 @@
 		(instances
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/c2597608-b40f-4bfc-b4a6-c1e761104d01"
-					(reference "#PWR023")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -2096,7 +2096,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6159633a-b835-4815-9470-0c2b88254e2f")
-		(property "Reference" "C7"
+		(property "Reference" "C8"
 			(at 92.075 109.2199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2193,7 +2193,7 @@
 		(instances
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/c2597608-b40f-4bfc-b4a6-c1e761104d01"
-					(reference "C7")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -2243,7 +2243,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv757p.pdf"
+		(property "Datasheet" "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftlv755p"
 			(at 74.93 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -2334,7 +2334,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "75e61bf2-ab5c-4b57-9d94-57800deab2d8")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR029"
 			(at 208.28 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -2394,7 +2394,7 @@
 		(instances
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/c2597608-b40f-4bfc-b4a6-c1e761104d01"
-					(reference "#PWR027")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -2489,7 +2489,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9de1045d-cf73-44ed-9277-6e1ba24f7e41")
-		(property "Reference" "C6"
+		(property "Reference" "C7"
 			(at 57.785 109.2199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2586,7 +2586,7 @@
 		(instances
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/c2597608-b40f-4bfc-b4a6-c1e761104d01"
-					(reference "C6")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -2729,7 +2729,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ad22f217-cb6e-4e75-a6ed-d8b53cdfc515")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR027"
 			(at 88.9 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -2789,7 +2789,7 @@
 		(instances
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/c2597608-b40f-4bfc-b4a6-c1e761104d01"
-					(reference "#PWR025")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -2932,7 +2932,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dc7c2676-a928-4ba1-bdc6-f79e4566ee78")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR026"
 			(at 74.93 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -2992,7 +2992,7 @@
 		(instances
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/c2597608-b40f-4bfc-b4a6-c1e761104d01"
-					(reference "#PWR024")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -3010,7 +3010,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f09a024c-e3c6-42dd-aeed-852a9eabcff7")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR028"
 			(at 208.28 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -3070,7 +3070,7 @@
 		(instances
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/c2597608-b40f-4bfc-b4a6-c1e761104d01"
-					(reference "#PWR026")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -3088,7 +3088,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f3e1ac9b-49ed-4acd-99f6-bf0142a55ee4")
-		(property "Reference" "C8"
+		(property "Reference" "C9"
 			(at 238.76 81.2799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3185,7 +3185,7 @@
 		(instances
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/c2597608-b40f-4bfc-b4a6-c1e761104d01"
-					(reference "C8")
+					(reference "C9")
 					(unit 1)
 				)
 			)

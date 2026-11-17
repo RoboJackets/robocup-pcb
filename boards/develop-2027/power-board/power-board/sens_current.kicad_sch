@@ -839,17 +839,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "1.5m shunt is shared \nwith the load switch"
-		(exclude_from_sim no)
-		(at 99.06 102.87 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "06b81cc1-21f0-4c5c-be67-fd286bb2f2ab")
-	)
 	(text "I2C Address\n0b1000000"
 		(exclude_from_sim no)
 		(at 156.21 113.03 0)
@@ -860,6 +849,17 @@
 			(justify right)
 		)
 		(uuid "8890db3c-9ba7-4a9e-a505-9b3d06089e66")
+	)
+	(text "1.5m shunt is shared \nwith the load switch"
+		(exclude_from_sim no)
+		(at 86.36 102.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a567e38a-f59d-4375-bcbd-f0ad8247c4a7")
 	)
 	(junction
 		(at 116.84 104.14)
@@ -937,6 +937,16 @@
 	)
 	(wire
 		(pts
+			(xy 97.79 101.6) (xy 101.6 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "130de1d1-7d8f-43a3-b6b0-36dd609da5b8")
+	)
+	(wire
+		(pts
 			(xy 170.18 92.71) (xy 170.18 101.6)
 		)
 		(stroke
@@ -977,13 +987,13 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 101.6) (xy 119.38 101.6)
+			(xy 109.22 101.6) (xy 119.38 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2a4e62cc-edba-43c4-832d-1e9075774606")
+		(uuid "1fa1cf8f-66f4-4c6e-824d-4edf53cb8a07")
 	)
 	(wire
 		(pts
@@ -1004,6 +1014,16 @@
 			(type default)
 		)
 		(uuid "385427f6-9b5f-4166-869c-8f786dc74b60")
+	)
+	(wire
+		(pts
+			(xy 109.22 104.14) (xy 116.84 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "426d2034-f47d-44cd-baa8-b469b5e08bd8")
 	)
 	(wire
 		(pts
@@ -1097,6 +1117,16 @@
 	)
 	(wire
 		(pts
+			(xy 97.79 104.14) (xy 101.6 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "870a92e8-87dc-4461-a63d-ae9934f066f5")
+	)
+	(wire
+		(pts
 			(xy 152.4 106.68) (xy 176.53 106.68)
 		)
 		(stroke
@@ -1154,16 +1184,6 @@
 			(type default)
 		)
 		(uuid "d9c0cd2f-ffe7-432a-85a4-ba0f0848aae4")
-	)
-	(wire
-		(pts
-			(xy 110.49 104.14) (xy 116.84 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dfc70818-6d9b-4f28-b156-2f09adb10ab2")
 	)
 	(wire
 		(pts
@@ -1238,14 +1258,14 @@
 	)
 	(hierarchical_label "SHUNT_L"
 		(shape passive)
-		(at 110.49 104.14 180)
+		(at 97.79 104.14 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "8a514a3e-4858-496b-8d0a-374b2ef78f77")
+		(uuid "3a37f395-f6a8-44c3-9ee7-61616cbdd72f")
 	)
 	(hierarchical_label "ALERT"
 		(shape output)
@@ -1260,14 +1280,14 @@
 	)
 	(hierarchical_label "SHUNT_H"
 		(shape passive)
-		(at 110.49 101.6 180)
+		(at 97.79 101.6 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "db8eb7ae-b793-4a00-9277-cda20b292a76")
+		(uuid "e3609373-3e09-401a-a6a3-84c96d81e078")
 	)
 	(symbol
 		(lib_id "power:+3.3V")
@@ -1281,7 +1301,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "28b50344-2e51-45bb-9fcf-9d4f8a641b7f")
-		(property "Reference" "#PWR0134"
+		(property "Reference" "#PWR0130"
 			(at 123.19 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -1341,7 +1361,7 @@
 		(instances
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/45a80922-adbb-4c59-8dc9-53bac2202f70/125a63a1-88b3-447a-8fd5-7cf9a21d05a5"
-					(reference "#PWR0134")
+					(reference "#PWR0130")
 					(unit 1)
 				)
 			)
@@ -1359,7 +1379,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3d89f3d7-c8a3-47e8-a505-2f99f2772084")
-		(property "Reference" "R58"
+		(property "Reference" "R65"
 			(at 149.86 87.6299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1456,7 +1476,120 @@
 		(instances
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/45a80922-adbb-4c59-8dc9-53bac2202f70/125a63a1-88b3-447a-8fd5-7cf9a21d05a5"
-					(reference "R58")
+					(reference "R65")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 105.41 101.6 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4324e397-ac1e-4735-bb5e-6c4b538cd3d8")
+		(property "Reference" "R63"
+			(at 105.41 95.25 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10"
+			(at 105.41 97.79 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 105.41 103.378 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8755524689966051328-C138066.pdf?response-content-disposition=attachment%3B%20filename%3DC138066.pdf%3B%20filename%2A%3DUTF-8%27%27C138066.pdf&x-oss-date=20261108T230731Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5nXLfHt3q509ZrYcUn90E5kQr5WqJCegTz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qbJOqQwy557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWkpkUegrTJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkI7YKT4aKWD5sagAEyX1r0OePO7XCni2eEqDpEe4mo7nFWRzAIbgTMKNQq2CZBoiUXP9RsTLvqxtgA2nzyKiM15v4osqPiAJysYmqeUortrHjb%2BAeO61Cof72Hbt3ztIDE9AkAclGeya8T573nXn%2BUzP3o8ea7nMxLEs5OToNyGfcnUV8vVZ%2FhmzBfECAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NZbfKY3qUBX3soL4N1N1zGU5c%2F20261108%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=a22d2bcaf6e38026e54e422707d03b7fc6b07fa46f36e3cfbec09b43eff33b5b"
+			(at 105.41 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "-55℃~+155℃ 10Ω 50V 62.5mW Thick Film Resistor ±1% ±200ppm/℃ 0402 Chip Resistor - Surface Mount ROHS"
+			(at 105.41 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "RC0402FR-0710RL"
+			(at 105.41 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "LCSC"
+			(at 105.41 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "C138066"
+			(at 105.41 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "b21280f1-962d-4eab-9fba-58097fdc6787")
+		)
+		(pin "1"
+			(uuid "bfbbeba4-8f07-4a34-be40-a594f118335a")
+		)
+		(instances
+			(project "power-board"
+				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/45a80922-adbb-4c59-8dc9-53bac2202f70/125a63a1-88b3-447a-8fd5-7cf9a21d05a5"
+					(reference "R63")
 					(unit 1)
 				)
 			)
@@ -1613,7 +1746,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "56ce609b-2c85-4401-8bad-872f20659edd")
-		(property "Reference" "R57"
+		(property "Reference" "R67"
 			(at 167.64 87.6299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1710,7 +1843,7 @@
 		(instances
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/45a80922-adbb-4c59-8dc9-53bac2202f70/125a63a1-88b3-447a-8fd5-7cf9a21d05a5"
-					(reference "R57")
+					(reference "R67")
 					(unit 1)
 				)
 			)
@@ -1728,7 +1861,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "699bdf02-e727-4bbf-ab40-79e451dd132f")
-		(property "Reference" "#PWR0132"
+		(property "Reference" "#PWR0133"
 			(at 142.24 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -1788,7 +1921,7 @@
 		(instances
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/45a80922-adbb-4c59-8dc9-53bac2202f70/125a63a1-88b3-447a-8fd5-7cf9a21d05a5"
-					(reference "#PWR0132")
+					(reference "#PWR0133")
 					(unit 1)
 				)
 			)
@@ -1806,7 +1939,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "87033558-a32a-4928-a011-ceec1fa10a5d")
-		(property "Reference" "#PWR0130"
+		(property "Reference" "#PWR0132"
 			(at 129.54 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -1866,7 +1999,7 @@
 		(instances
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/45a80922-adbb-4c59-8dc9-53bac2202f70/125a63a1-88b3-447a-8fd5-7cf9a21d05a5"
-					(reference "#PWR0130")
+					(reference "#PWR0132")
 					(unit 1)
 				)
 			)
@@ -1884,7 +2017,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9218161e-25c0-41b0-809b-e2c8ff9078a8")
-		(property "Reference" "#PWR0128"
+		(property "Reference" "#PWR0135"
 			(at 161.29 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -1944,7 +2077,7 @@
 		(instances
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/45a80922-adbb-4c59-8dc9-53bac2202f70/125a63a1-88b3-447a-8fd5-7cf9a21d05a5"
-					(reference "#PWR0128")
+					(reference "#PWR0135")
 					(unit 1)
 				)
 			)
@@ -1962,7 +2095,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9e159858-f8b8-4fb9-9972-6c7981aa024e")
-		(property "Reference" "#PWR0135"
+		(property "Reference" "#PWR0131"
 			(at 123.19 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -2022,7 +2155,7 @@
 		(instances
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/45a80922-adbb-4c59-8dc9-53bac2202f70/125a63a1-88b3-447a-8fd5-7cf9a21d05a5"
-					(reference "#PWR0135")
+					(reference "#PWR0131")
 					(unit 1)
 				)
 			)
@@ -2040,7 +2173,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a2f53ea8-6d67-4ee1-ae80-e3bfac4d453e")
-		(property "Reference" "#PWR0129"
+		(property "Reference" "#PWR0136"
 			(at 170.18 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -2100,7 +2233,7 @@
 		(instances
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/45a80922-adbb-4c59-8dc9-53bac2202f70/125a63a1-88b3-447a-8fd5-7cf9a21d05a5"
-					(reference "#PWR0129")
+					(reference "#PWR0136")
 					(unit 1)
 				)
 			)
@@ -2118,7 +2251,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a69fbb88-dedb-4726-940c-948e2954a124")
-		(property "Reference" "C53"
+		(property "Reference" "C55"
 			(at 119.38 71.1199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2215,7 +2348,7 @@
 		(instances
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/45a80922-adbb-4c59-8dc9-53bac2202f70/125a63a1-88b3-447a-8fd5-7cf9a21d05a5"
-					(reference "C53")
+					(reference "C55")
 					(unit 1)
 				)
 			)
@@ -2233,7 +2366,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ead361e2-55f5-402d-824d-8fb26382e281")
-		(property "Reference" "R56"
+		(property "Reference" "R66"
 			(at 158.75 87.6299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2330,7 +2463,7 @@
 		(instances
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/45a80922-adbb-4c59-8dc9-53bac2202f70/125a63a1-88b3-447a-8fd5-7cf9a21d05a5"
-					(reference "R56")
+					(reference "R66")
 					(unit 1)
 				)
 			)
@@ -2348,7 +2481,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f2fe38f1-1504-4106-95af-0d646cbf85ac")
-		(property "Reference" "#PWR0131"
+		(property "Reference" "#PWR0134"
 			(at 152.4 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -2408,7 +2541,120 @@
 		(instances
 			(project "power-board"
 				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/45a80922-adbb-4c59-8dc9-53bac2202f70/125a63a1-88b3-447a-8fd5-7cf9a21d05a5"
-					(reference "#PWR0131")
+					(reference "#PWR0134")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 105.41 104.14 90)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f5520947-a405-44f0-87fd-3c250cecff38")
+		(property "Reference" "R64"
+			(at 105.41 110.49 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10"
+			(at 105.41 107.95 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 105.41 102.362 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8755524689966051328-C138066.pdf?response-content-disposition=attachment%3B%20filename%3DC138066.pdf%3B%20filename%2A%3DUTF-8%27%27C138066.pdf&x-oss-date=20261108T230731Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5nXLfHt3q509ZrYcUn90E5kQr5WqJCegTz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qbJOqQwy557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWkpkUegrTJSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkI7YKT4aKWD5sagAEyX1r0OePO7XCni2eEqDpEe4mo7nFWRzAIbgTMKNQq2CZBoiUXP9RsTLvqxtgA2nzyKiM15v4osqPiAJysYmqeUortrHjb%2BAeO61Cof72Hbt3ztIDE9AkAclGeya8T573nXn%2BUzP3o8ea7nMxLEs5OToNyGfcnUV8vVZ%2FhmzBfECAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NZbfKY3qUBX3soL4N1N1zGU5c%2F20261108%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=a22d2bcaf6e38026e54e422707d03b7fc6b07fa46f36e3cfbec09b43eff33b5b"
+			(at 105.41 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "-55℃~+155℃ 10Ω 50V 62.5mW Thick Film Resistor ±1% ±200ppm/℃ 0402 Chip Resistor - Surface Mount ROHS"
+			(at 105.41 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "RC0402FR-0710RL"
+			(at 105.41 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "LCSC"
+			(at 105.41 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "C138066"
+			(at 105.41 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e26846ae-7f94-4e86-98a7-77b8ce178529")
+		)
+		(pin "1"
+			(uuid "7ab49d83-2523-49f7-8ed2-8e4278adf13e")
+		)
+		(instances
+			(project "power-board"
+				(path "/950edf25-7c73-426b-95c7-f5bf9643ec87/45a80922-adbb-4c59-8dc9-53bac2202f70/125a63a1-88b3-447a-8fd5-7cf9a21d05a5"
+					(reference "R64")
 					(unit 1)
 				)
 			)
