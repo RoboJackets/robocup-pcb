@@ -101,6 +101,71 @@ through the freed PA2 corner, DIP5 below it). Everything not listed here is the 
 
 On the C4L the old pins PF7-PF10, PC0, PC1 and PA2 are unconnected (set them as analog).
 
+### 1.3a ControlBoard2027_C4L2 pin map (2026-11-17)
+
+ControlBoard2027_C4L2 is a re-placed and re-routed C4L, and many pins moved with the new connector positions. **For
+the C4L2, use this subsection in place of 1.2 and 1.3.** It was read from the C4L2 schematic netlist on 2026-11-17.
+The AF numbers are the DS13313 alternate-function values; check each one against the datasheet tables in CubeMX
+before the first build.
+
+| Peripheral | Pins (LQFP pin) | AF | Connects to | Notes |
+|---|---|---|---|---|
+| SPI3, front motors and dribbler | PC10 SCK (111), PC11 MISO (112), PC12 MOSI (113) | AF6 | R15 / R16 30R -> U4 / U14 / U13 ESD -> J4 MOTOR 0, J8 DRIBBLER, J7 MOTOR 3 | one bus, three chip selects (below). The dribbler no longer has its own SPI4 |
+| SPI2, rear motors | PB13 SCK (74), PB14 MISO (75), PB15 MOSI (76) | AF5 | R67 / R68 30R -> U5 / U12 ESD -> J5 MOTOR 1, J6 MOTOR 2 | as on the C4L |
+| SPI1, radio | PB3 SCK (133), PB4 MISO (134), PB5 MOSI (135) | AF5 | R65 / R66 30R -> J9 | **moved from SPI3 to SPI1**, because SPI3 now drives the front motors. Same pins; change the AF from 6 / 6 / 7 to 5 and the handle from hspi3 to hspi1. Keep the other radio settings of 1.2 (mode 3, no pull on PB4) |
+| SPI6, DotStars | PA5 SCK (41), PA7 MOSI (43) | AF8 | R70 / R71 30R -> U10 level shifter | **moved from PG13 / PG14**. TX only, mode 0, SPI6SEL as in 1.2 (D3 domain, BDMA, buffers in SRAM4) |
+| SDMMC2, microSD | PD6 CK (122), PD7 CMD (123), PG9-PG12 D0-D3 (124-127) | as 1.2 | R6, U1, R1-R5, J1 | unchanged |
+| USB FS | PA11 DM (103), PA12 DP (104) | additional function (no AF) | U3, J2 | unchanged; VBUS sense on PA9 |
+| I2C1, kicker | PB8 SCL (139), PB9 SDA (140) | AF4 | R14 / R17 2.2k, U17, J10 | **kicker and OLED swapped against the C / C4L** |
+| I2C3, OLED | PA8 SCL (100), PC9 SDA (99) | AF4 | R18 / R19 2.2k, J13 | SSD1306 at 0x3C |
+| I2C2, expansion | PF1 SCL (11), PF0 SDA (10) | AF4 | R7 / R9 2.2k, U6 / U16, J11 / J12 | **was I2C4 on PF14 / PF15** |
+| I2C4, IMU | PD12 SCL (81), PD13 SDA (82) | AF4 | R10 / R8 2.2k, U11 | **was I2C5 on PF1 / PF0**; LSM6DSV320X at 0x6A |
+| USART10, powerboard (enable the RX pull-up: PE2 floats with J15 unplugged) | PE3 TX (2), PE2 RX (1) | **AF11 TX, AF4 RX** (DS13313 Table 8) | R33 / R34 1k, J15 pin 1 (TX) / pin 2 (RX) | 115200 8N1; was UART9 on PD15 / PD14 on the C4L |
+| USART6, debug VCP (enable the RX pull-up: PC7 floats with no probe) | PC6 TX (96), PC7 RX (97) | AF7 | J3 pin 14 (MCU TX) / pin 13 (MCU RX), STDC14 VCP | new on the C4L2 |
+| SWD | PA13 SWDIO (105), PA14 SWCLK (109), NRST (25) | AF0 | J3 | unchanged |
+
+| Pin (LQFP pin) | Net | Mode | Notes |
+|---|---|---|---|
+| PD0 (114) | MOTOR0_SPI_CS (J4) | output PP, init high | R24 10k pull-up |
+| PD1 (115) | DRIBBLER_SPI_CS (J8) | output PP, init high | R28 |
+| PD2 (116) | MOTOR3_SPI_CS (J7) | output PP, init high | R27 |
+| PB12 (73) | MOTOR1_SPI_CS (J5) | output PP, init high | R25; **was MOTOR2 on the C / C4L** |
+| PD8 (77) | MOTOR2_SPI_CS (J6) | output PP, init high | R26; **was MOTOR3 on the C / C4L** |
+| PG15 (132), PE1 (142), PB6 (136), PB7 (137) | ESP_SPI_CS, ESP_RST, ESP_DATA_READY, ESP_HANDSHAKE | as 1.3 | unchanged |
+| PF3 (13), PF2 (12) | ACCEL_EXTI, GYRO_EXTI | EXTI3 / EXTI2, rising | unchanged |
+| PD11 (80), PD14 (85), PD15 (86) | USER_EXTI0, USER_EXTI1, USER_EXTI2 (SW4-SW6) | EXTI11 / 14 / 15, falling | RC debounce as 1.3 |
+| PE7 (58), PE8 (59), PE9 (60), PE10 (63), PE14 (67), PE15 (68) | DIP0, DIP1, DIP2, DIP3, DIP4, DIP5 (SW3) | input, read at boot | R53-R58 100k pull-ups, on = 0. PE7-PE9 are 3.3 V-only pins, fine with the 3.3 V pull-ups. PE13 is left free: it is SPI4_MISO in the ROM bootloader (DS13313 Table 7), and a closed switch there could short a driven output |
+| PE5 (4) | PWR_SRC_5V | input, polled | U8 ST via R44 |
+| PE4 (3) | PWR_SRC_3V3 | input, polled | U9 ST |
+| PA9 (101) | VBUS_SENSE | input | unchanged |
+| PD5 (119) | SD_DET | input, EXTI5 | unchanged |
+| PA15 (110) | (R13 only) | analog | R13 holds the bootloader SPI3 NSS high. On the C4L2, PC10-PC12 carry the front motor bus, so this pull-up is what keeps the ROM bootloader from selecting SPI3 while the motor bus is connected |
+
+**ROM bootloader pins on the C4L2 (AN2606 Rev 62, Table 114, STM32H72xxx/73xxx, bootloader V9.0).** USART1 is on
+PA9 / PA10 (not PB14 / PB15), so the rear MISO pin PB14 is not a bootloader pin. The bootloader peripherals that touch C4L2
+nets:
+- USART1 TX PA9 = VBUS_SENSE (R20 / R21 divider); it is an input until USART1 is detected on bootloader 0x93.
+- USART3 TX PD8 = MOTOR2_SPI_CS; it idles high (deselected).
+- I2C1 PB6 / PB9 = ESP_DATA_READY / kicker SDA, I2C2 PF1 / PF0 = expansion, I2C3 PA8 / PC9 = OLED. All are open-drain
+  slaves at address 0x57.
+- SPI1 PA5 / PA7 = LED SCK / MOSI (inputs, R48 / R47 pull-downs); its MISO PA6 and NSS PA4 are unconnected.
+- SPI3 PC10-PC12 = front motor bus; R13 holds its NSS PA15 high, so MISO PC11 is never driven.
+- SPI4: PE14 = DIP4 (an input), PE13 (its MISO output) is deliberately left free, NSS PE11 has the bootloader pull-up.
+- FDCAN1 PD0 = MOTOR0_SPI_CS (an input) and PD1 = DRIBBLER_SPI_CS (TX, recessive high = deselected).
+No bootloader output can fight a board driver.
+Margin note: in the bootloader PD8 (USART3 TX, input until detected) and PD0 (FDCAN1 RX) have internal pull-downs, which
+pull the 10k-pulled-up chip selects down to about 2.5-2.75 V (estimated, internal pull-down 30-50k). That is still
+above 0.7 x VDD, so the motor boards stay deselected, with about 0.2 V margin.
+
+Polled inputs share EXTI line numbers with interrupt pins (PE5 / PD5, PE14 / PD14, PE15 / PD15, PE7 / PB7); this is harmless as
+long as the polled pins stay plain inputs with no EXTI enabled. Every pin not listed in this subsection is
+unconnected on the C4L2 (set as analog), including PE13, PG13 / PG14, PF14 / PF15, PB10 / PB11, PA0-PA4, PA6, PC5, PB0,
+PD9, PD10, PC13-PC15 and PC3_C.
+
+> **ControlBoard2027_C4L2:** sections 1.4-1.7 still describe the C / C4L pin names (radio on SPI3, IMU on I2C5,
+> motor SCK / MOSI on PA5 / PA7). Read them with the C4L2 map of 1.3a: the same rules apply to the C4L2 buses
+> (front SPI3 PC10 / PC12, rear SPI2, radio SPI1 PB3-PB5).
+
 ### 1.4 GPIO speed (OSPEEDR) requirements
 
 - **Motor buses SPI1 / SPI2: LOW or MEDIUM only, never HIGH / VERY_HIGH.** Each bus is a star: one MCU-side via

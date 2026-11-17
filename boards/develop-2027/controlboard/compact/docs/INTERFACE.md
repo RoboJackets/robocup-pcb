@@ -72,7 +72,7 @@ With the WROOM-1U the u.FL cable leaves north over the module's antenna end.
 | 5 | GND | 6 | GND | | | | |
 | 6 | GND | 5 | GND | | | | |
 | 7 | GND | 8 | GND | | | | |
-| 8 | ESP_SPI_SCK | 7 | ESP_SPI_SCK | GPIO6 (8), FSPICLK | PB3 (133), AF6 | CB -> radio | R65 30R in series at PB3; radio ESD U6 ch 4->7 |
+| 8 | ESP_SPI_SCK | 7 | ESP_SPI_SCK | GPIO6 (8), FSPICLK | PB3 (133), C4L2 SPI1 AF5 (C: SPI3 AF6) | CB -> radio | R65 30R in series at PB3; radio ESD U6 ch 4->7 |
 | 9 | GND | 10 | GND | | | | |
 | 10 | ESP_HANDSHAKE | 9 | ESP_HANDSHAKE | GPIO1 (7) | PB7 (137), EXTI7 | radio -> CB | R31 100k pull-down on the CB; radio ESD U6 ch 5->6 |
 | 11 | GND | 12 | GND | | | | |
@@ -80,7 +80,7 @@ With the WROOM-1U the u.FL cable leaves north over the module's antenna end.
 | 13 | GND | 14 | GND | | | | |
 | 14 | GND | 13 | GND | | | | |
 | 15 | +3V3 | 16 | +3V3_HOST | | | CB -> radio | supply |
-| 16 | ESP_SPI_MISO | 15 | ESP_SPI_MISO | GPIO2 (4), FSPIQ | PB4 (134), AF6 | radio -> CB | R4 33R in series at the module (radio); radio ESD U5 ch 2->9 |
+| 16 | ESP_SPI_MISO | 15 | ESP_SPI_MISO | GPIO2 (4), FSPIQ | PB4 (134), C4L2 SPI1 AF5 (C: SPI3 AF6) | radio -> CB | R4 33R in series at the module (radio); radio ESD U5 ch 2->9 |
 | 17 | +3V3 | 18 | +3V3_HOST | | | CB -> radio | supply |
 | 18 | GND | 17 | GND | | | | |
 | 19 | +3V3 | 20 | +3V3_HOST | | | CB -> radio | supply |
@@ -119,8 +119,8 @@ Notes:
 
 | Item | Controlboard (host) | Radio (ESP32-C5 slave) |
 |---|---|---|
-| Peripheral | SPI3 master, software NSS on PG15 | SPI2 (FSPI) slave on its IO_MUX pins, ESP-Hosted SPI full-duplex |
-| Pins | PB3 SCK (AF6), PB4 MISO (AF6), PB5 MOSI (AF7), PG15 CS | GPIO6 CLK, GPIO2 MISO, GPIO7 MOSI, GPIO10 CS |
+| Peripheral | ControlBoard2027_C4L2: SPI1 master; ControlBoard2027_C: SPI3 master; software NSS on PG15 | SPI2 (FSPI) slave on its IO_MUX pins, ESP-Hosted SPI full-duplex |
+| Pins | PB3 SCK, PB4 MISO, PB5 MOSI (C4L2: AF5 / AF5 / AF5; C: AF6 / AF6 / AF7), PG15 CS | GPIO6 CLK, GPIO2 MISO, GPIO7 MOSI, GPIO10 CS |
 | Status lines | PB6 DATA_READY, PB7 HANDSHAKE (EXTI inputs), PE1 reset (open drain) | GPIO0 DATA_READY, GPIO1 HANDSHAKE, EN |
 | Mode | mode 3, 8-bit, MSB first, hardware CRC off | mode 3 (ESP-Hosted default) |
 | Termination | R65 / R66 30R at PB3 / PB5 (source series) | R4 33R at GPIO2 (MISO source series) |
@@ -134,7 +134,7 @@ asynchronous): CB 8.9 / 10.1 / 14.7 mm, Inboard 18.5 / 18.7 mm, Overhang 12.9 / 
 
 **Clock rate.**
 - The ESP32-C5 SPI slave is specified up to 40 MHz (ESP-IDF SPI slave driver). That is the ceiling.
-- The CB side is limited by the SPI3 kernel clock. With SPI123SEL = PLL1Q = 48 MHz the fastest prescaler (/2) gives
+- The CB side is limited by the SPI kernel clock (SPI1 on the C4L2, SPI3 on the C; both use SPI123SEL). With SPI123SEL = PLL1Q = 48 MHz the fastest prescaler (/2) gives
   24 MHz. 40 MHz needs an 80 MHz SPI123 kernel clock (PLL2P or PLL3P) with /2.
 - The ESP32-C5 slave's SCK-to-MISO valid delay is not published. At 40 MHz in mode 3 the master samples MISO
   12.5 ns after the slave shifts it.
@@ -166,12 +166,20 @@ CB's; where a line has a direction, the mating board uses the opposite one. All 
 | J1 | microSD | Hirose DM3AT-SF-PEJM5 push-push | microSD card |
 | J13 | OLED | BOOMELE 2.54-1*4P 1 x 4 female socket | 0.96 in 128 x 64 SSD1306 I2C module |
 
+**ControlBoard2027_C4L2 (2026-11-17).** Same connectors, pinouts and mating housings, at new positions (mm from the
+board's top-left corner): J15 POWER top-left (18, 3.3), facing the top edge; J4 MOTOR 0, J8 DRIBBLER and J7 MOTOR 3
+on the top edge at x 80.5, 94.0 and 107.5; J10 KICKER in the top-right corner (116.7, 4.85), facing the right edge;
+J5 MOTOR 1 and J6 MOTOR 2 on the bottom edge at x 58.0 and 80.5; J11 EXP 1 and J12 EXP 2 on the left edge at
+y 19.5 and 37.5; J1, J2, J3 and J13 on the right-hand service area as on the C4L. The MCU pins behind each connector
+are in [FIRMWARE.md](FIRMWARE.md) section 1.3a (kicker and OLED I2C swapped, expansion on I2C2, powerboard UART on
+USART10). J3 pins 13 / 14 carry the debug UART (below).
+
 ### J15 POWER (powerboard)
 
 | Pin | Net | Direction (CB view) | Notes |
 |---|---|---|---|
-| 1 | PWR_UART_TX | out | from PA0 (UART4_TX) through R33 1k; on ControlBoard2027_C4L from PD15 (UART9_TX) |
-| 2 | PWR_UART_RX | in | to PA1 (UART4_RX) through R34 1k; on ControlBoard2027_C4L to PD14 (UART9_RX) |
+| 1 | PWR_UART_TX | out | through R33 1k from PE3 (USART10_TX, AF11) on ControlBoard2027_C4L2; PA0 (UART4_TX) on C; PD15 (UART9_TX) on C4L |
+| 2 | PWR_UART_RX | in | through R34 1k to PE2 (USART10_RX, AF4) on ControlBoard2027_C4L2; PA1 (UART4_RX) on C; PD14 (UART9_RX) on C4L. Enable the internal pull-up: the line floats with the cable unplugged |
 | 3 | GND | | |
 | 4 | +3V3_RAW | in (supply) | to D4 TVS, F6, U9 VIN1 |
 | 5 | GND | | separates the two rails, so a one-pin crimp shift does not short them |
@@ -179,7 +187,7 @@ CB's; where a line has a direction, the mating board uses the opposite one. All 
 | 7 | GND | | |
 
 **RX / TX convention.** RX and TX are named from the CB side: pin 1 is the CB's transmit output, pin 2 its receive
-input. The powerboard receives on pin 1 and drives its UART TX on pin 2. UART4 (UART9 on ControlBoard2027_C4L),
+input. The powerboard receives on pin 1 and drives its UART TX on pin 2. USART10 on ControlBoard2027_C4L2 (UART4 on C, UART9 on C4L),
 115200 8N1, 3.3 V logic. The powerboard side is the same for both boards.
 
 The powerboard must supply 3.4 V +/-3 % (never above 3.6 V) on pin 4 and 5 V on pin 6. Each PH contact is rated
@@ -193,7 +201,7 @@ regulate. It must also be able to source more than 2.5 A per rail into a fault, 
 |---|---|---|---|---|---|
 | Net | KICKER_I2C_SDA | GND | KICKER_I2C_SCL | GND | GND |
 
-I2C2 master on PB11 (SDA) / PB10 (SCL), 400 kHz, pull-ups R19 / R18 2.2k on the CB, ESD U17 at the connector. No
+ControlBoard2027_C4L2: I2C1 master on PB9 (SDA) / PB8 (SCL), pull-ups R17 / R14 2.2k (ControlBoard2027_C: I2C2 on PB11 / PB10, R19 / R18). 400 kHz, ESD U17 at the connector. No
 power pin: the kicker is powered by the powerboard. The kicker must be an I2C target with no pull-ups to a rail
 above 3.3 V.
 
@@ -203,19 +211,22 @@ above 3.3 V.
 |---|---|---|---|---|---|---|---|
 | Signal | MOSI (out) | GND | MISO (in) | SCK (out) | GND | CS (out, active low) | GND |
 
-| Connector | Position | Bus | STM32 pins (SCK / MISO / MOSI / CS) |
+| Connector (ControlBoard2027_C4L2) | Position | Bus | STM32 pins (SCK / MISO / MOSI / CS) |
 |---|---|---|---|
-| J4 MOTOR 0 | front left, north edge | SPI1 | PA5 / PA6 / PA7 / PC5 |
-| J5 MOTOR 1 | back left, south edge | SPI1 | PA5 / PA6 / PA7 / PB0 |
-| J6 MOTOR 2 | back right, south edge | SPI2 | PB13 / PB14 / PB15 / PB12 |
-| J7 MOTOR 3 | front right, north edge | SPI2 | PB13 / PB14 / PB15 / PD8 |
-| J8 DRIBBLER | west edge | SPI4 | PE2 / PE5 / PE6 / PE3 |
+| J4 MOTOR 0 | front left, top edge | SPI3 (front) | PC10 / PC11 / PC12 / PD0 |
+| J8 DRIBBLER | front middle, top edge | SPI3 (front) | PC10 / PC11 / PC12 / PD1 |
+| J7 MOTOR 3 | front right, top edge | SPI3 (front) | PC10 / PC11 / PC12 / PD2 |
+| J5 MOTOR 1 | back left, bottom edge | SPI2 (rear) | PB13 / PB14 / PB15 / PB12 |
+| J6 MOTOR 2 | back right, bottom edge | SPI2 (rear) | PB13 / PB14 / PB15 / PD8 |
+
+ControlBoard2027_C (for reference): J4 / J5 on SPI1 (PA5 / PA6 / PA7, CS PC5 / PB0), J6 / J7 on SPI2 (CS PB12 / PD8),
+J8 on SPI4 (PE2 / PE5 / PE6, CS PE3).
 
 No supply pin: the motor modules take their power elsewhere. Each connector has its own TPD4E05U06 ESD array
 (U4 J4, U5 J5, U12 J6, U13 J7, U14 J8). CS pull-ups R24-R28 10k, SCK pull-downs R30 / R69 / R72 100k. The motor
 module must use this pin order and release MISO (high impedance) while its CS is high. **Logic level: 3.3 V only.**
-On J4 / J5 the STM32 drives SCK, MOSI and CS from TT pins (PA5, PA7, PC5, PB0; 4.0 V absolute maximum, no injection
-current allowed on PA5), so a module must never pull these lines above 3.6 V, powered or not. The motor wheel numbering
+On ControlBoard2027_C4L2 every motor pin is a 5 V-tolerant FT pin; keep the modules at 3.3 V logic anyway. (On
+ControlBoard2027_C, J4 / J5 use TT pins PA5 / PA7 / PC5 / PB0, 4.0 V absolute maximum: never above 3.6 V there.) The motor wheel numbering
 (0 FL, 1 BL, 2 BR, 3 FR, counter-clockwise from front left) is an assumption; firmware maps it.
 
 ### J11 / J12 EXP 1 / EXP 2
@@ -225,7 +236,8 @@ current allowed on PA5), so a module must never pull these lines above 3.6 V, po
 | J11 | GND | GND | +5V_EXT1 | +5V_EXT1 | GND | EXPANSION_SCL | GND | EXPANSION_SDA | GND |
 | J12 | GND | GND | +5V_EXT2 | +5V_EXT2 | GND | EXPANSION_SCL | GND | EXPANSION_SDA | GND |
 
-Both ports share I2C4 (PF14 SCL, PF15 SDA, pull-ups R10 / R8 2.2k, ESD U6 at J11 and U16 at J12). +5V_EXT1 / 2 come
+Both ports share one bus: on ControlBoard2027_C4L2 I2C2 (PF1 SCL, PF0 SDA, pull-ups R7 / R9 2.2k); on ControlBoard2027_C
+I2C4 (PF14 SCL, PF15 SDA, R10 / R8). ESD U6 at J11 and U16 at J12, flow-through. +5V_EXT1 / 2 come
 from +5V through their own PTC (F3 / F4, hold 0.75 A at 23 °C, 0.55 A at 50 °C). Budget 0.55 A for both ports
 together. Expansion boards must not add their own I2C pull-ups, must not drive SDA or SCL below GND (on
 ControlBoard2027_C4L, SDA is PF15, which allows no negative injection current: DS13313 Table 50), and are plugged only
@@ -241,7 +253,10 @@ with the controlboard unpowered.
 | 7 | GND | 8 | NC (SWO not available: PB3 is the radio SCK) |
 | 9 | NC | 10 | NC |
 | 11 | GND (GNDDetect) | 12 | NRST |
-| 13 | NC | 14 | NC |
+| 13 | NC (C4L2: DBG_UART_RX, see below) | 14 | NC (C4L2: DBG_UART_TX) |
+
+On ControlBoard2027_C4L2, pins 13 and 14 are the STLINK virtual COM port: pin 13 (T_VCP_RX) = DBG_UART_RX to PC7
+(USART6_RX), pin 14 (T_VCP_TX) = DBG_UART_TX from PC6 (USART6_TX).
 
 Use a keyed STDC14 cable (STLINK-V3) and match the pin-1 marker. The schematic uses KiCad's official
 `Connector:Conn_ST_STDC14` symbol, so the pin names match ST's STDC14 pinout.
@@ -252,8 +267,8 @@ Use a keyed STDC14 cable (STLINK-V3) and match the pin-1 marker. The schematic u
 |---|---|---|---|---|
 | Net | GND | +3V3 | OLED_I2C_SCL | OLED_I2C_SDA |
 
-A generic 0.96 in 128 x 64 SSD1306 I2C module plugs in raised over the service edge (I2C1 PB8 / PB9, address 0x3C,
-pull-ups R14 / R17 2.2k on the CB; the module's own pull-ups add in parallel). On ControlBoard2027_C the footprint has four 2.6 mm holes
+A generic 0.96 in 128 x 64 SSD1306 I2C module plugs in raised over the service edge (ControlBoard2027_C4L2: I2C3 PA8 SCL / PC9 SDA, pull-ups R18 / R19 2.2k; ControlBoard2027_C: I2C1 PB8 / PB9, R14 / R17;
+address 0x3C; the module's own pull-ups add in parallel). On ControlBoard2027_C the footprint has four 2.6 mm holes
 for M2 nylon standoffs; on ControlBoard2027_C4L it has none, only four 4.0 mm keep-out areas where holes can be added. Some modules swap VCC and GND: check the module before fitting.
 
 ### J2 USB-C and J1 microSD
