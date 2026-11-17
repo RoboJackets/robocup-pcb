@@ -6510,7 +6510,7 @@
 				)
 			)
 		)
-		(property "Value" "10m 540mA"
+		(property "Value" "10u 540mA"
 			(at 236.22 28.448 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9847,7 +9847,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "f503ba3a-9afc-493b-9481-1e770a43ed99")
 		(property "Reference" "D1"

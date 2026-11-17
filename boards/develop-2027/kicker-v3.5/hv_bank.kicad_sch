@@ -2918,7 +2918,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
 			(at 160.782 27.94 90)
 			(hide yes)
 			(show_name no)
@@ -2951,7 +2951,7 @@
 				)
 			)
 		)
-		(property "LCSC P/N" "C172293"
+		(property "LCSC P/N" "C2775917"
 			(at 162.56 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -2962,7 +2962,7 @@
 				)
 			)
 		)
-		(property "Manufacturer P/N" "WR25X274JTL"
+		(property "Manufacturer P/N" "HP122WF2703T4E"
 			(at 162.56 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -3168,7 +3168,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "647b89e3-bd87-47f5-943f-6091408ef170")
 		(property "Reference" "R21"
@@ -4173,7 +4173,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "d807e479-b1c4-45c3-aade-2836e69978ef")
 		(property "Reference" "R18"
@@ -4291,7 +4291,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "DISCHRG"
+		(property "Value" "HV_MID"
 			(at 166.37 40.9574 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4346,41 +4346,8 @@
 				)
 			)
 		)
-		(property "LCSC P/N" "C965799"
+		(property "LCSC P/N" "C965804"
 			(at 162.56 38.1 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer P/N" "XL-1608SURC-06"
-			(at 162.56 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor" ""
-			(at 162.56 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor P/N" ""
-			(at 162.56 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
