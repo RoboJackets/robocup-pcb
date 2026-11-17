@@ -6734,7 +6734,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/503/CL05A104KA5NNNC.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C14442.pdf"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -6746,7 +6746,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "CAP CER 100nF 25V X5R 0402"
+		(property "Description" "CAP CER 1nF 50V X7R 0402"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -6758,7 +6758,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Manufacturer P/N" "CL05A104KA5NNNC"
+		(property "Manufacturer P/N" "CL05B102KB5NNNC"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -6786,7 +6786,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Vendor P/N" "C100072"
+		(property "Vendor P/N" "C14442"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -6992,17 +6992,6 @@
 					(thickness 0.15)
 				)
 				(justify mirror)
-			)
-		)
-		(property "LCSC" "C60490"
-			(at 0 0 0)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "7c811f1a-f111-4c34-abf3-b08ecc65b8aa")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(property ki_fp_filters "R_*")
@@ -9443,17 +9432,6 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C60490"
-			(at 0 0 0)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "d8a6e10c-199c-4d69-9ba2-afe6529e398b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property ki_fp_filters "R_*")
 		(path "/3eb420b4-b75b-4293-a96c-529568d18f03/a3ab4cd3-c8bf-4a62-b2a2-1d9a3008f786")
 		(sheetname "/External Connections/")
@@ -11580,17 +11558,6 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C60490"
-			(at 0 0 0)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "4c102040-0e81-4f33-b270-1d7fba501a74")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property ki_fp_filters "R_*")
 		(path "/73cb52ef-7536-45c8-9d54-fc54b3c8b275/80518ce7-e5e3-4473-89f5-eeae9aa97b31")
 		(sheetname "/Motor Controller/")
@@ -12028,17 +11995,6 @@
 					(thickness 0.15)
 				)
 				(justify mirror)
-			)
-		)
-		(property "LCSC" "C60490"
-			(at 0 0 0)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "617b3a0e-e793-406e-995e-7425e1dde1fd")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(property ki_fp_filters "R_*")
@@ -13567,17 +13523,6 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C60490"
-			(at 0 0 0)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "bd55c65d-f79b-4f39-abf8-0a9688a13026")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property ki_fp_filters "R_*")
 		(path "/73cb52ef-7536-45c8-9d54-fc54b3c8b275/48fb2863-8488-4384-8b8a-3300711eb2c4")
 		(sheetname "/Motor Controller/")
@@ -13964,17 +13909,6 @@
 					(thickness 0.15)
 				)
 				(justify mirror)
-			)
-		)
-		(property "LCSC" "C60490"
-			(at 0 0 0)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "7cd0e3c1-91f1-41cf-9935-ad7bfb5b2fe7")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(property ki_fp_filters "R_*")
@@ -15054,7 +14988,7 @@
 		(property "Reference" "F1"
 			(at 0 -1.5 90)
 			(layer "B.SilkS")
-			(uuid "ddb5bb58-ba5a-4763-b32a-27eab9acb19a")
+			(uuid "79296b89-741b-4698-92ad-d226c5ef9c8b")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -15066,7 +15000,7 @@
 		(property "Value" "10A 63V"
 			(at 0 -1.83 90)
 			(layer "B.Fab")
-			(uuid "d489e191-17c4-4f37-a3f8-7e5f94a62205")
+			(uuid "cc11884a-9e6f-4055-901c-79d8be5ea075")
 			(effects
 				(font
 					(size 1 1)
@@ -15079,7 +15013,7 @@
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "cb0c698c-eedd-4823-9111-278a4b3bd1c5")
+			(uuid "88034f20-f430-411b-9219-0af3910b99b4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15091,7 +15025,7 @@
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "8d76dc75-1477-4739-b0e7-43d059f9b045")
+			(uuid "1f1f1d15-582d-43a6-b901-1c93d8b7fbe8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16725,17 +16659,6 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C60490"
-			(at 0 0 0)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "f48ff989-8408-4ecb-bfae-43f7da8997e2")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property ki_fp_filters "R_*")
 		(path "/370bf50f-3bfc-4ffc-b8c3-0c77ac5cbd3b/5ee04b1b-db78-485b-b68a-c0849436fcb7")
 		(sheetname "/Motor Connections/")
@@ -17576,19 +17499,6 @@
 				(justify mirror)
 			)
 		)
-		(property "KiLib_Generator" "package/no_lead"
-			(at 0 0 180)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "aca4c656-63bc-4fb5-bab4-d5ab59e37f4d")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Manufacturer P/N" "STSPIN32G0B2"
 			(at 0 0 180)
 			(unlocked yes)
@@ -17631,9 +17541,33 @@
 				(justify mirror)
 			)
 		)
-		(path "/73cb52ef-7536-45c8-9d54-fc54b3c8b275/5353760d-99da-4de4-b2a4-719351463636")
+		(path "/73cb52ef-7536-45c8-9d54-fc54b3c8b275/7c6c5afe-a148-40b9-8063-30c1e8fa3e4c")
 		(sheetname "/Motor Controller/")
 		(sheetfile "motor_controller.kicad_sch")
+		(units
+			(unit
+				(name "Power")
+				(pins "7" "5" "4" "19" "44" "49" "8" "9" "6")
+			)
+			(unit
+				(name "MCU")
+				(pins "38" "11" "39" "43" "16" "17" "18" "20" "40" "41" "2" "3" "1" "10"
+					"12" "13" "14" "15" "42" "21" "45" "46" "47" "48"
+				)
+			)
+			(unit
+				(name "BLDC Output")
+				(pins "36" "34" "35" "37" "32" "30" "31" "33" "28" "26" "27" "29")
+			)
+			(unit
+				(name "Op-Amp 1")
+				(pins "24" "23" "22")
+			)
+			(unit
+				(name "Over-Current")
+				(pins "25")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18592,17 +18526,6 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C60490"
-			(at 0 0 0)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "6719b07e-d64a-4bb3-ae9c-7d266595fa8b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property ki_fp_filters "R_*")
 		(path "/3b5076b5-0fcf-464e-93a6-a1b7a025dcea/cd8336e2-5d30-4cb8-964d-af4550bb8d23")
 		(sheetname "/Magnetic Encoder/")
@@ -19089,16 +19012,15 @@
 			)
 		)
 	)
-	(footprint "TestPoint:TestPoint_Pad_3.0x3.0mm"
+	(footprint "TestPoint:TestPoint_Pad_2.0x2.0mm"
 		(layer "B.Cu")
 		(uuid "9779e77a-3202-456e-b4b0-c99917589190")
 		(at 55 88 90)
-		(descr "SMD rectangular pad as test Point, square 3.0mm side length")
+		(descr "SMD rectangular pad as test Point, square 2.0mm side length")
 		(tags "test point SMD pad rectangle square")
 		(property "Reference" "TP2"
-			(at 0 2.398 90)
+			(at 0 1.998 270)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "94cc80a4-5521-4d65-bdf2-ba3aa56ab43a")
 			(effects
 				(font
@@ -19109,7 +19031,7 @@
 			)
 		)
 		(property "Value" "3.3V IN"
-			(at 0 -2.55 90)
+			(at 0 -2.05 270)
 			(layer "B.Fab")
 			(uuid "0a84bd19-cf3b-407e-8a3f-44054b15b1b6")
 			(effects
@@ -19153,7 +19075,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "cf19c538-a2ef-44ff-94f4-0224e4fae47a")
+			(uuid "c9783f3f-d1c2-4546-8cea-1529ae8d2e72")
 			(effects
 				(font
 					(size 1 1)
@@ -19167,7 +19089,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "65c81d40-5425-42b5-a80c-d4612c785076")
+			(uuid "0b45a8bd-1188-40ed-babc-316dad6e3a95")
 			(effects
 				(font
 					(size 1 1)
@@ -19181,7 +19103,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "4dd9ed27-0ba8-4a4e-a5ed-b81dc0667922")
+			(uuid "7a2bcd28-8e43-4b1b-8315-ea59b5f02619")
 			(effects
 				(font
 					(size 1 1)
@@ -19203,8 +19125,8 @@
 		(attr exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start 1.7 -1.7)
-			(end -1.7 -1.7)
+			(start 1.2 -1.2)
+			(end -1.2 -1.2)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -19213,8 +19135,8 @@
 			(uuid "8fe203c0-eafe-423e-9059-cf438530d53c")
 		)
 		(fp_line
-			(start -1.7 -1.7)
-			(end -1.7 1.7)
+			(start -1.2 -1.2)
+			(end -1.2 1.2)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -19223,18 +19145,8 @@
 			(uuid "a5a424fa-81a8-437b-8dbf-d970b6fe5b6e")
 		)
 		(fp_line
-			(start 1.7 1.7)
-			(end 1.7 -1.7)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "b0722717-9b95-4c80-b6fe-1af91c2e2067")
-		)
-		(fp_line
-			(start -1.7 1.7)
-			(end 1.7 1.7)
+			(start 1.2 1.2)
+			(end 1.2 -1.2)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -19243,28 +19155,18 @@
 			(uuid "3db32b9d-cde5-4e05-9af8-9a9d2e79e04e")
 		)
 		(fp_line
-			(start 2 -2)
-			(end -2 -2)
+			(start -1.2 1.2)
+			(end 1.2 1.2)
 			(stroke
-				(width 0.05)
+				(width 0.12)
 				(type solid)
 			)
-			(layer "B.CrtYd")
-			(uuid "666e0b5a-fc4c-4b00-a809-996e03a16889")
+			(layer "B.SilkS")
+			(uuid "b0722717-9b95-4c80-b6fe-1af91c2e2067")
 		)
 		(fp_line
-			(start 2 -2)
-			(end 2 2)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "B.CrtYd")
-			(uuid "a065e7f4-22f2-4681-9454-73a86fe30033")
-		)
-		(fp_line
-			(start -2 2)
-			(end -2 -2)
+			(start 1.5 -1.5)
+			(end -1.5 -1.5)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -19273,8 +19175,8 @@
 			(uuid "a780993e-6480-4e53-949e-8ab5657754c8")
 		)
 		(fp_line
-			(start -2 2)
-			(end 2 2)
+			(start 1.5 -1.5)
+			(end 1.5 1.5)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -19282,8 +19184,28 @@
 			(layer "B.CrtYd")
 			(uuid "7326450a-4200-44f2-9f73-30f1bad80c27")
 		)
+		(fp_line
+			(start -1.5 1.5)
+			(end -1.5 -1.5)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "666e0b5a-fc4c-4b00-a809-996e03a16889")
+		)
+		(fp_line
+			(start -1.5 1.5)
+			(end 1.5 1.5)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "a065e7f4-22f2-4681-9454-73a86fe30033")
+		)
 		(fp_text user "${REFERENCE}"
-			(at 0 2.4 270)
+			(at 0 2 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(uuid "709c806e-fed8-4b8e-a716-1a14f63f432d")
@@ -19297,7 +19219,7 @@
 		)
 		(pad "1" smd rect
 			(at 0 0 90)
-			(size 3 3)
+			(size 2 2)
 			(layers "B.Cu" "B.Mask")
 			(net "+3.3V")
 			(pinfunction "1_1")
@@ -20262,17 +20184,6 @@
 					(thickness 0.15)
 				)
 				(justify mirror)
-			)
-		)
-		(property "LCSC" "C60490"
-			(at 0 0 0)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "e3e3b3d1-1c61-41d3-9095-77742ffad74b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(property ki_fp_filters "R_*")
@@ -21427,17 +21338,6 @@
 					(thickness 0.15)
 				)
 				(justify mirror)
-			)
-		)
-		(property "LCSC" "C60490"
-			(at 0 0 0)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "14f68112-2eb8-4035-a000-b60ec3b779ef")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(property ki_fp_filters "R_*")
@@ -23047,16 +22947,15 @@
 			)
 		)
 	)
-	(footprint "TestPoint:TestPoint_Pad_3.0x3.0mm"
+	(footprint "TestPoint:TestPoint_Pad_2.0x2.0mm"
 		(layer "B.Cu")
 		(uuid "c72539e4-f8d0-471e-9ae5-9bc6db371d0d")
 		(at 62 88 90)
-		(descr "SMD rectangular pad as test Point, square 3.0mm side length")
+		(descr "SMD rectangular pad as test Point, square 2.0mm side length")
 		(tags "test point SMD pad rectangle square")
 		(property "Reference" "TP1"
-			(at 0 2.398 90)
+			(at 0 1.998 270)
 			(layer "B.SilkS")
-			(hide yes)
 			(uuid "69096ab6-5544-4e8c-a2e8-4bdb1dc1e1e8")
 			(effects
 				(font
@@ -23067,7 +22966,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 0 -2.55 90)
+			(at 0 -2.05 270)
 			(layer "B.Fab")
 			(uuid "03cfd6c6-3820-4027-9836-97f86a0ed0ce")
 			(effects
@@ -23111,7 +23010,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "d3b6042e-2fab-4a12-88bd-4ff324fa71a4")
+			(uuid "97fbabe7-49e7-4a3f-857a-146a8f393816")
 			(effects
 				(font
 					(size 1 1)
@@ -23125,7 +23024,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "50b59a5b-5396-418d-914f-f26f7d7aabc9")
+			(uuid "6cfe71b5-38b3-42e2-9d77-84f6965f161d")
 			(effects
 				(font
 					(size 1 1)
@@ -23139,7 +23038,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "40663b77-2af7-43cb-8299-14afed8e9619")
+			(uuid "83f2fbc5-60fc-46b7-a043-107a206e6cfc")
 			(effects
 				(font
 					(size 1 1)
@@ -23161,38 +23060,8 @@
 		(attr exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start 1.7 -1.7)
-			(end -1.7 -1.7)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "f54cfa6a-d0e2-414f-bc5f-4f1bd3095b37")
-		)
-		(fp_line
-			(start -1.7 -1.7)
-			(end -1.7 1.7)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "af23b699-bfbf-4952-ac5d-da2d75f232b2")
-		)
-		(fp_line
-			(start 1.7 1.7)
-			(end 1.7 -1.7)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "2bdea850-8be0-45a0-9f89-1efd432bfa50")
-		)
-		(fp_line
-			(start -1.7 1.7)
-			(end 1.7 1.7)
+			(start 1.2 -1.2)
+			(end -1.2 -1.2)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -23201,8 +23070,38 @@
 			(uuid "ebb94866-a4e7-4768-a1f8-6675bf3857dd")
 		)
 		(fp_line
-			(start 2 -2)
-			(end -2 -2)
+			(start -1.2 -1.2)
+			(end -1.2 1.2)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "af23b699-bfbf-4952-ac5d-da2d75f232b2")
+		)
+		(fp_line
+			(start 1.2 1.2)
+			(end 1.2 -1.2)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "f54cfa6a-d0e2-414f-bc5f-4f1bd3095b37")
+		)
+		(fp_line
+			(start -1.2 1.2)
+			(end 1.2 1.2)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "2bdea850-8be0-45a0-9f89-1efd432bfa50")
+		)
+		(fp_line
+			(start 1.5 -1.5)
+			(end -1.5 -1.5)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -23211,18 +23110,18 @@
 			(uuid "1ed67f55-0eb0-41b7-a57d-5956ff642166")
 		)
 		(fp_line
-			(start 2 -2)
-			(end 2 2)
+			(start 1.5 -1.5)
+			(end 1.5 1.5)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "B.CrtYd")
-			(uuid "437899c8-d571-4917-b193-d1d9f03831bb")
+			(uuid "d0113083-8e7e-493e-90a1-667a141d3bfe")
 		)
 		(fp_line
-			(start -2 2)
-			(end -2 -2)
+			(start -1.5 1.5)
+			(end -1.5 -1.5)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -23231,17 +23130,17 @@
 			(uuid "e9c547f9-cf21-4518-8a89-5b03404110f4")
 		)
 		(fp_line
-			(start -2 2)
-			(end 2 2)
+			(start -1.5 1.5)
+			(end 1.5 1.5)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "B.CrtYd")
-			(uuid "d0113083-8e7e-493e-90a1-667a141d3bfe")
+			(uuid "437899c8-d571-4917-b193-d1d9f03831bb")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 2.4 270)
+			(at 0 2 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(uuid "0eee292b-e240-48a2-826b-6937aeeb0426")
@@ -23255,7 +23154,7 @@
 		)
 		(pad "1" smd rect
 			(at 0 0 90)
-			(size 3 3)
+			(size 2 2)
 			(layers "B.Cu" "B.Mask")
 			(net "GND")
 			(pinfunction "1_1")
@@ -27696,17 +27595,6 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" "C60490"
-			(at 0 0 0)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "242a564f-dded-4c16-8cd8-30ecbba30665")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property ki_fp_filters "R_*")
 		(path "/73cb52ef-7536-45c8-9d54-fc54b3c8b275/b1bd22ce-a5c2-4e22-84fe-a3b163e49e7a")
 		(sheetname "/Motor Controller/")
@@ -28017,7 +27905,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "33k ±0.1%"
+		(property "Value" "22.1k ±0.1%"
 			(at 0 -1.17 90)
 			(layer "B.Fab")
 			(uuid "993d5510-d5fa-4c79-a4d3-831cd8d7297e")
@@ -28029,7 +27917,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C5455470.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C2692911.pdf"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -28041,7 +27929,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "RES 33kΩ ±0.1% 62.5mW 0402"
+		(property "Description" "RES 22.1kΩ ±0.1% 60mW 0402"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -28053,7 +27941,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Manufacturer P/N" "AT0402BRD0733KL"
+		(property "Manufacturer P/N" "PTFR0402B22K1P9"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -28081,7 +27969,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Vendor P/N" "C5455470"
+		(property "Vendor P/N" "C2692911"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -28287,17 +28175,6 @@
 					(thickness 0.15)
 				)
 				(justify mirror)
-			)
-		)
-		(property "LCSC" "C60490"
-			(at 0 0 0)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "057374cf-5ed8-4b3b-aac3-1b9d220f9f49")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(property ki_fp_filters "R_*")
@@ -28859,7 +28736,7 @@
 			)
 		)
 	)
-	(gr_text "Drive Board\nRev. 1.0"
+	(gr_text "Drive Board\nRev. 1.1"
 		(at 75 71.5 0)
 		(layer "F.SilkS")
 		(uuid "3690d253-884b-42bb-a590-d1cef0d2b63a")
@@ -33931,6 +33808,22 @@
 		(uuid "f8fdae9f-bcdf-4ea7-beb9-e2cfd2f42382")
 	)
 	(segment
+		(start 64.5625 67.75)
+		(end 63.76 67.75)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "Net-(U1MCU-PC15{slash}OSC32_OUT)")
+		(uuid "94ae1fb7-74ed-4874-a577-bad78fd87b18")
+	)
+	(segment
+		(start 63.76 67.75)
+		(end 61.31 70.2)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "Net-(U1MCU-PC15{slash}OSC32_OUT)")
+		(uuid "ac4c1e5d-f3a4-4834-b7df-134db1d9b93e")
+	)
+	(segment
 		(start 73.75 60.9375)
 		(end 73.75 60.51)
 		(width 0.2)
@@ -35153,22 +35046,6 @@
 		(layer "B.Cu")
 		(net "Net-(J5-GNDDetect)")
 		(uuid "9977c167-3df1-4e15-8d6c-73b4a802cdd8")
-	)
-	(segment
-		(start 64.5625 67.75)
-		(end 63.76 67.75)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(U1MCU-PC15{slash}OSC32_OUT)")
-		(uuid "94ae1fb7-74ed-4874-a577-bad78fd87b18")
-	)
-	(segment
-		(start 63.76 67.75)
-		(end 61.31 70.2)
-		(width 0.2)
-		(layer "B.Cu")
-		(net "Net-(U1MCU-PC15{slash}OSC32_OUT)")
-		(uuid "ac4c1e5d-f3a4-4834-b7df-134db1d9b93e")
 	)
 	(zone
 		(net "/Motor Connections/MOTORU")
