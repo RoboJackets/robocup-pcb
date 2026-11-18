@@ -80,6 +80,13 @@ The BOM in `bom/` was checked on 2026-11-09 / 11-14. Stock changes daily: re-che
 Extended parts (C2909059 LEDs and the PTCs). Generate fabrication outputs (gerbers, BOM, CPL) fresh from the
 repo board at order time; none are generated in this folder.
 
+## 6a. Fab settings
+
+- Stackup **JLC04161H-3313** with impedance control (the 0.15 mm 50-ohm widths are only correct on that stackup).
+- Every via is **0.45 mm pad / 0.3 mm drill** (JLC's standard via; no small-via surcharge). Minimum track / gap is
+  0.09 mm in the rules; the narrowest copper actually used is 0.14 mm (USB pair).
+- R39 is placed rotated 180 degrees compared with the C4L layout: check its rotation in the JLC placement preview.
+
 ## 7. Things the files do not show
 
 - **No KICKER label on the top silkscreen.** There is no room between the J7 housing, J10 and the SD socket. J10 is
@@ -91,8 +98,10 @@ repo board at order time; none are generated in this folder.
   - A nylon screw and washer (or a nylon standoff) is fine.
   - If anything metal touches the bottom of the board there (a standoff, nut or washer), keep its outer diameter at
     7 mm or less.
-- **Speaker board:** the largest area it can use is x 0-35.9, y 0-60 mm. That area covers the corner mounting holes
-  H1 / H3 and the rail test points and LEDs. The current outline (25 x 45 mm on H5 / H6) avoids them.
+- **Speaker board:** the outline is 30 x 45 mm (x 1.925-31.925, y 7.525-52.525 mm board-local) on the M2 holes H5
+  (17.025, 31.525) and H6 (17.025, 49.525). It covers the power block including the rail LEDs D5 / D6 and the
+  top-side test points TP13 / TP14 (TP3 / TP15 are on the bottom). With the speaker board fitted the rail LEDs are
+  hidden and those test points cannot be probed; check the standoff height against the J11 / J12 housings too.
 
 ---
 

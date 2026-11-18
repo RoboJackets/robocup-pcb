@@ -69,7 +69,31 @@ with this subsection or with the files, this subsection and the files win. The f
 - The DotStar cluster D7-D11 is bottom middle, under SW3, in the fixed shell pattern (D11 centre). U10 is on B west of
   the cluster.
 - The IMU U11 is on B under U2.
-- The speaker board area is drawn on User.Drawings: x 9.4-34.5, y 13.3-58.4 (25 x 45 mm), on H5 / H6.
+- The speaker board area is drawn on User.Drawings: 30 x 45 mm from corner x 1.925, y 7.525 (absolute 51.4, 57.0)
+  to x 31.925, y 52.525, on H5 (17.025, 31.525) / H6 (17.025, 49.525) (absolute 66.5, 81 / 66.5, 99), moved
+  2026-11-17 with their 6 x 6 mm keepouts. Nearest non-GND copper: 3.20 mm from the H5 centre (PWR_SRC_5V on L1),
+  7.49 mm from H6, outside an M2 washer (about 5 mm diameter).
+
+**Routing rework (2026-11-17 evening, review doc `strange_routing_behav.docx`).** Fast nets (every SIG50 / USB_90R
+net, the LED chain and the crystal, 51 nets) were frozen: their copper is bit-identical to the commit, so the length
+tables below are unchanged. Done:
+- J2 moved +0.525 mm in x so the footprint's PCB-Edge mark sits on the board edge. The USB pair copper is unchanged
+  (its ends stay inside the shifted pads; skew unchanged); the CC vias and R22 / R23 moved with it, and the two GND
+  stitching vias that ended up inside the shield pads were removed.
+- Power block (x 4.5-31.5, y 5-29) ripped up and routed again by hand: U8 / U9 follow TI SLVSFG1A Figure 10-1 (VOUT
+  pin 2 - pin 7 bar and VIN1 pin 3 - MODE pin 5 Z under the package, 0.3 mm necks on the fine-pitch power pins);
+  pad entries on the pad axis; U9's VOUT and C38 / C40 / R43 fan out to the L3 +3V3 plane; C37 fans out to the L3
+  +5V block; EXPANSION SCL is flow-through J11 - U6 on L1; AUTO5 takes one L1 hop under the VBUS run. R39 is turned
+  180 degrees so AUTO3 runs straight from R38 to R39.
+- The VBUS run south of the block (0.3 mm) is now 0.4 mm, moved to y 29.3 to keep 0.2 mm from R43 / R41.
+- GND via-to-via links (three pairs near J13 / F1) removed; C40 got its own GND fan-out.
+- Slow nets with a measured detour (grid search for the shortest legal path with the frozen copper as obstacles)
+  were redrawn: SD_DET (3 vias fewer, excess 5.6 -> 2.1 mm), SWCLK, VBUS_SENSE, USER_EXTI0-2 (excess 13-14 mm ->
+  2-10 mm). Left as they are, with the reason: KICKER_I2C_SDA / SCL (the escape from U2 pins 139 / 140 is boxed in by
+  the frozen radio link; the shortest legal path takes the same loop round J9), DIP0-5 (U2 pin order is the reverse of
+  SW3 / R53-R58, so the U-turn under SW3 is the crossing-free route), EXPANSION (daisy chain U2 - R7 / R9 - U16 - J12
+  - U6 - J11), NRST (SW1 is off the U2 - J3 line), DBG_UART_RX and ESP_RST (within 1.2 mm of the shortest legal
+  path), ACCEL_EXTI (the shorter path runs under U11).
 
 **Pin changes against C4L** (schematic, checked against DS13313; full table in FIRMWARE.md 1.3a):
 
@@ -259,10 +283,10 @@ there are kept with the prototype project (`../../prototype/ControlBoard2027/dat
 
 - 120 x 60 mm, 4 layers (JLC04161H-3313, 1.6 mm), four M3 holes H1 (3.5, 3.5), H2 (71.0, 3.5), H3 (3.5, 56.5),
   H4 (71.0, 56.5). The nearest signal copper is 3.73 mm from the H2 centre (outside the about 7 mm M3 washer).
-- Two M2 holes H5 (21.925, 23.375) / H6 (21.925, 48.375) for the speaker board (outline x 9.4-34.5, y 13.3-58.4 on
-  User.Drawings). Fixed by the speaker design. The nearest signal copper is 4.06 mm from the H5 centre
-  (MOTOR_SPI_MOSI on L4, DIP0 on L1 at 4.08 mm) and 4.30 mm from H6, outside an M2 washer (about 5 mm); the GND
-  pours come closer, so check the speaker standoff diameter against them (m27).
+- Two M2 holes H5 (17.025, 31.525) / H6 (17.025, 49.525) for the speaker board (outline 30 x 45 mm, x 1.925-31.925,
+  y 7.525-52.525 on User.Drawings; set 2026-11-17 by the speaker design). The nearest non-GND copper is 3.20 mm from
+  the H5 centre (PWR_SRC_5V on L1) and 7.49 mm from H6, outside an M2 washer (about 5 mm); the GND pours come closer,
+  so check the speaker standoff diameter against them (m27).
 - STM32H723ZGT6 (LQFP-144) at (52.0, 22.5), rotation 0 (pin 1 north-west).
 - 30 x 40 mm radio board (RadioBoard2027_C_Inboard or _Overhang, one shared interface) stacked 5 mm above the MCU on
   J9 (Samtec LSHM, (39.70, 6.03), rotation 90) and two M2 standoffs HR1 (50.0, 37.5) / HR2 (63.4, 37.5). Radio
@@ -419,6 +443,39 @@ TP12 GND, TP14 +3V3_RAW, TP13 +5V_PROT, TP17 +3V3, TP15 +3V3_LDO, TP16 +5V; TP3 
 the fuse plus mux drop on each rail and the USB side. TP10 (PB_TX) / TP11 (PB_RX) give logic-analyser access to the powerboard UART.
 
 ---
+
+### 4.8 Current capacity of the powerboard path (2026-11-17)
+
+Design target: the powerboard may deliver **2-3 A** on a rail, so the J15 -> mux -> rail copper is sized for 3 A per
+rail. Fuses can be re-rated later; the copper and the parts listed below set the ceiling. Widths are IPC-2221
+(conservative); L1 / L4 are 1 oz, L3 0.5 oz (JLC04161H-3313). 3 A needs 0.9 mm on L1 / L4 for a 20 C rise (1.4 mm
+for 10 C), 4.7 mm on L3, and three 0.45 / 0.3 mm vias per layer change (about 1.5 A each).
+
+| Section | Copper | Rating |
+|---|---|---|
+| J15 pin 6 -> Q1 (+5V_RAW) | 0.9 mm L4, 4.3 mm long (was 0.6 mm; the Q1 gate via moved to (14.25, 8.05) to make room) | 3.0 A at 20 C |
+| Q1 -> F5 -> U8 (+5V_PROT, +5V_PB) | L4 pours, 4-7 mm wide; last 1.45 mm into U8 pin 3 at 0.3 mm (pad width), pin 5 by a 0.25 mm link under the body | pours > 5 A; pad neck set by the 0.5 mm-pitch package |
+| U8 VOUT -> +5V | L4 pour `U8 VOUT` with three vias (9.7, 22.35), (9.5, 23.0), (9.5, 23.75) to the L1 F3 feed and the L3 +5V region (was one via) | about 4.5 A |
+| +5V on L3 to F4 / LEDs | L3 region at least 6.8 mm wide; three vias at F4 | 3.0 A at 10 C |
+| F3 / F4 -> J11 / J12 | L1 pours 2.5 mm wide | > 5 A |
+| J15 pin 4 -> F6 (+3V3_RAW) | L4 pour | > 5 A |
+| F6 -> U9 (+3V3_PB) | 0.9 mm L4, 9 mm long (was 0.5 mm), moved to x 28.2 to clear C34 | 3.0 A at 20 C |
+| U9 VOUT -> +3V3 plane | two vias, (24.2, 23.25) and (26.9, 20.9) | about 3 A (3V3 loads are about 0.8 A) |
+| GND return | J15 pins 3 / 5 / 7, through-hole into L2 | 6 A |
+
+Parts that cap the rails below 3 A (BOM frozen; change only on purpose):
+- **J15 (JST PH):** 2 A per contact, one contact per rail, so **2 A per rail** (deviation 20). 3 A needs a connector
+  with two contacts per rail or a higher-rated series, which is a footprint change.
+- **U8 / U9 (TPS2116):** 2.5 A maximum per mux (SLVSFG1A).
+- **Q1 (AO3401A):** 60 mohm, 0.24 W at 2 A, 0.54 W at 3 A in SOT-23 (hot at 3 A).
+- **J11 / J12 (JST GH):** two contacts per supply; check the GH contact rating before planning more than about 2 A per
+  port. F3 / F4 (0.75 A hold) set the port limit today.
+- **F5 / F6:** 1.25 A hold, 2.5 A trip. A PTC trips at about twice its hold, so a fuse that holds 2 A trips near 4 A,
+  above the TPS2116 rating: with a 2 A fuse the mux is protected only against hard shorts. Re-rate F5 / F6 together
+  with the steady load the powerboard is expected to deliver.
+
+Trackless vias are saved with KiCad's "free" flag so that a reload or a zone refill cannot re-assign their net from
+the surrounding copper.
 
 ## 5. MCU, clock and supply pins
 
@@ -738,8 +795,9 @@ Effects on the L3 planes:
 - The island under the B-side motor bus cuts the L3 +5V strip at about y 19.5-27.3. The north LED +5V area is fed
   around the cut by a 0.5 mm B.Cu trace from C42 that drops onto the strip through two vias at (85.8, 29.8) and
   (86.6, 29.8).
-- VBUS crosses the U8 block on L3 through the C-shaped zone `VBUS_L3_ring` (priority 11), with vias at (90.75, 34.67)
-  (C35 / U8 pin 6), (89.6, 40.0) (TP3 / R20) and (95.98, 39.48) (C30 / U7 / F1 side) (deviation 1).
+- VBUS runs from F1 to the power block on L3 in the zone `VBUS L3 south strip` (1.0-1.7 mm wide, about 100 mm long),
+  entered through two vias at (99.1, 44.3 / 44.95) beside F1 and left through two vias at (33.5, 27.0 / 27.65); from
+  there a 0.4 mm L4 track goes to C35 / U8 pin 6 (deviation 1).
 
 Widths come from a 2D field solver (quasi-static, 35 um + 15 um plating, 15 um solder mask at Er 3.8). L1 and L4 have
 the same geometry (0.0994 mm 3313 to the reference), so they use the same width. Confirm in JLC's impedance
@@ -764,12 +822,36 @@ The `.kicad_pro` net classes: Default 0.25 mm, PWR 0.8 mm, PWR3V3 (+3V3) 0.5 mm,
 a 0.14 / 0.15 mm pair, all with 0.2 mm clearance. SIG50 covers the radio, SD, motor, dribbler and LED nets through the
 net-class patterns; the custom rules (§12.8) bound the widths and the pour clearances.
 
-Vias (all through, L1-L4; counted 2026-11-14 after audit round 3): 0.45 / 0.25 mm (745), 0.3 / 0.15 mm (145, JLC's
-multilayer minimum, at the LQFP escapes, the J9 column, the bus layer changes and the DIP lanes), 0.4 / 0.2 mm (6,
-where tight: C8's two vias, C16's GND via, the U10 under-body GND via and two GND return vias; deviations 6 and 13) and 0.6 / 0.3 or 0.6 / 0.35 mm (4, power: the +5V_RAW pair at (93.6, 51.0 /
-51.75) and the +5V_PB bridge, deviation 11). Pours keep 0.2 mm from other nets. The outer GND pours are stitched to L2
-and have islands removed; the stitching grid and the "own via per SMD GND / +3V3 / +5V pad" rule are part of the open
-audit (TODO 1.1).
+Vias (all through, L1-L4): **every via is 0.45 / 0.3 mm** (605 on 2026-11-17), the JLC standard via, so the
+board needs no small-via process. The project rules enforce it (min via diameter 0.45 mm, min through-hole 0.3 mm,
+annular ring 0.075 mm). Pours keep 0.2 mm from other nets. The outer GND pours are stitched to L2.
+
+Via rule change (2026-11-17, was 0.3 / 0.15 and 0.45 / 0.25 mm). All 607 vias were resized in place; 55 conflicts
+were fixed locally:
+- Fast nets, positions only nudged where needed: the front-motor via column (MOTOR3 CS, MOTOR0 CS, MISO) moved
+  +0.05 mm in x (top-layer stub +0.05 mm, bottom-layer run -0.05 mm, length unchanged); the SD_CLK_CARD via at
+  (94.05, 19.3) slid 0.05 mm along its own line (length unchanged); the D7-SDI via moved 0.075 mm along its diagonal
+  (+0.062 mm on that LED line). Every other fast-net length is unchanged.
+- J9: the GND fan-out vias between the signal vias no longer fit at 0.5 mm pitch. Pin 18 now joins R32's GND pad (its
+  own via); pin 14 fans out west under the connector body to (39.6, 5.78); pin 6's via is at (43.2, 7.28).
+- The DIP0-5 fan below U2 was redrawn at 0.6 mm pitch (one parallel 45-degree jog per line at y 41, below the HR1
+  keepout), vias on a 0.6 mm diagonal, bottom-layer runs to R53-R58 re-spaced; R69 moved 0.15 mm up.
+- U4 / U14 / U13 GND vias moved from the 1.0 mm kicker-lane gap to y 6.5 (straight stub from the GND pin).
+- OLED vias re-staggered; VBUS_SENSE leaves U2 with a 45-degree step to y 16.75 to make room.
+- U3 (TPD4E05U06) GND: the 0.3 mm via in the package centre could not be enlarged. Pin 3 now exits west between
+  the two USB pairs (0.15 mm track, 0.2 mm to the pair's pads and bridge vias) to a GND via at (107.54, 37.0); pin 8 is
+  tied to pin 3 under the package. About 2 mm of track to the via instead of a via in the package (ESD return
+  inductance slightly higher; accepted).
+- LED-centre GND vias (D7-D11) removed (they sat 0.18 mm from the +5V pads); the LED GND pads use the L1 GND pour,
+  which has its own via at (39.55, 54.27).
+- Single slow-net vias nudged: BOOT0, EXPANSION_SCL, USER_EXTI1, VBUS_SENSE, ESP_RST, SWDIO; GND stitching vias that
+  collided were moved or dropped.
+- GND stitching under the OLED J13 (x 91.8-119.2, y 25-53) was re-laid on the board's diamond lattice (5 mm square
+  with a centre via, offset (1.224, 1.231) mm board-local, nearest neighbour 3.5 mm); 11 points are nudged 0.25-0.5 mm
+  and 7 points with no legal spot are left out. Fan-out vias, the x 118.72 edge row and the USB return vias are kept.
+- Deviation: GND return vias near the dense fast buses are sparser. Radio CS / MISO, two front-motor vias and SD D3
+  now have their nearest GND via 1.6-2.0 mm away; SDMMC_CMD and SD_CLK at U2 and SD_CLK at the socket 2.5-3.4 mm (no
+  legal spot within 2 mm at the new via size). These lines all keep the solid L2 reference.
 
 ### 12.4 Radio SPI3 link (U2 -> J9)
 
@@ -777,7 +859,7 @@ audit (TODO 1.1).
   U2 north-row pins read west to east RST PE1, HS PB7, DR PB6, MOSI PB5, MISO PB4, SCK PB3, CS PG15. The pin orders
   of the matched four differ (U2 west to east MOSI, MISO, SCK, CS; J9 north to south MISO, SCK, MOSI, CS): the L1
   fan-out at the MCU sets the four MCU-side vias in the J9 order, so the L4 runs do not cross.
-- SCK, MOSI, MISO and CS each have one 0.3 / 0.15 mm via at the MCU (MISO (48.07, 7.4), SCK (48.75, 8.45), MOSI
+- SCK, MOSI, MISO and CS each have one via (0.45 / 0.3 mm since 2026-11-17) at the MCU (MISO (48.07, 7.4), SCK (48.75, 8.45), MOSI
   (46.75, 9.14), CS (49.25, 10.8)) and one in the J9 column at x 42.73 (y 4.78, 6.78, 7.78, 8.78); between them the
   line is 0.15 mm on L4 over the L3 GND island `GND_L3_under_B_5` (x 41.65-50.32, y 3.7-12.23). R65 / R66 sit on L1
   at their pins.
@@ -846,8 +928,9 @@ round 5; about 75 ps apart). The USB unused-orientation stubs are 3.4-5.6 mm (au
   (91.5, 50.1) -> L4 +5V_PROT pour -> D3 (88.1, 50.3) / F5 (90.5, 43.8) -> L4 +5V_PB pour -> U8 (91.0, 37.5). D2 sits
   across Q1 gate and source (§12.1).
 - GND pins 3 / 5 / 7 are plated through to L2.
-- VBUS: J2 -> D1 -> F1 on L1 pours (Net-(D1-IN-Pad4), then the VBUS pour at x 99.2-102.8) -> C30 / C31 / U7; from
-  there on L3 through `VBUS_L3_ring` to C35 / U8 VIN2 and to TP3 / R20 (deviation 1). +5V_EXT1 / 2 pours on L1 at
+- VBUS: J2 -> D1 -> F1 on L1 pours (Net-(D1-IN-Pad4), then the VBUS pour at x 99.2-102.8) -> two vias -> L3
+  strip -> two vias at (33.5, 27.0 / 27.65) -> 0.4 mm L4 track -> C35 / U8 VIN2, and on L1 0.5 mm to C30 / C31 / U7
+  (deviation 1). R20 taps the pour beside F1. +5V_EXT1 / 2 pours on L1 at
   J11 / J12.
 - U8 per SLVSFG1A §10: VIN1 straight into the +5V_PB pour; MODE tied to VIN1 and VOUT 2 to 7 under the package; the
   PR1 divider R36 / R37 at pin 4; C35 at VBUS pin 6; VOUT, C37 and C39 in a local L4 +5V pour (`U8 VOUT`, priority
@@ -923,10 +1006,16 @@ pad.
 Every known deviation from `../../CLAUDE.md`, with its reason. Checked on the saved board file, 2026-11-14. The
 independent audit of this board is still open (TODO 1.1) and may add items.
 
-1. **VBUS on L3.** VBUS crosses the U8 block on the +3V3 plane layer through the C-shaped zone `VBUS_L3_ring`
-   (priority 11), vias (90.75, 34.67) at C35 / U8 pin 6, (89.6, 40.0) for TP3 / R20 and (95.98, 39.48) on the C30 /
-   U7 / F1 side. The U8 block and the L4 power pours leave no outer-layer path; the board has no inner signal layer.
-   It is a power net, not a signal, and USB power is a bench fallback (0.5 A). TODO 2.2: check the drop.
+1. **VBUS on L3.** VBUS runs from F1 (right edge) to the power block (left) on the +3V3 plane layer in the strip
+   zone `VBUS L3 south strip`; there is no outer-layer path across the board. Capacity check (2026-11-17), for F1's
+   0.75 A hold (1.5 A trip): L3 is 0.5 oz (17.5 um), 0.98 mohm per square; the strip is about 83 squares (1.0-1.7 mm
+   wide, about 100 mm), so about 82 mohm. IPC-2221 (internal, conservative) gives 0.72 A at 10 C rise and 0.98 A at
+   20 C for 1.0 mm. The 0.4 mm L4 track (1 oz, 21.8 mm) is 27 mohm and carries 1.23 A at 10 C. Each 0.45 / 0.3 mm
+   via barrel (18 um plating) is about 1.5 mohm and carries about 1.5 A; each end of the strip now has two. Copper
+   drop J2 -> U8 about 0.12 ohm, 90 mV at 0.75 A (68 mW spread over the run); F1 adds up to 0.45 ohm. At the
+   1.5 A trip current the strip runs warm (about 30-40 C rise by IPC-2221) only until F1 opens. The USER_EXTI0 via
+   at (90.72, 53.3) passes through the strip and necks it to about 0.85 mm over 0.9 mm (negligible resistance).
+   USB power stays a bench fallback (m22).
 2. **VBUS via next to the USB pair.** The via at (90.75, 34.67) is 0.23 mm edge to edge from USB_DM and from the
    MOTOR_R_SPI_MOSI band line. DRC passes, but this is below the 3x-gap rule (0.45 mm) for the USB pair. There is no
    other spot: the U8 block and the F.Cu J6 SPI band leave this one gap. Full Speed only.
