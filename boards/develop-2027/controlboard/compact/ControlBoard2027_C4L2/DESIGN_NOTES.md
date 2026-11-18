@@ -1108,9 +1108,13 @@ pad.
 - Function names on every connector (MOTOR 0-3, DRIBBLER, EXP 1 / 2, KICKER, POWER, SWD, RADIO, USB, microSD, OLED);
   buttons RESET, BOOT, BTN0-2; DIP "ROBOT ID" with bits 1-6; rail LEDs 5V / 3V3; DotStars LED1-LED5 in chain order;
   test points by signal name; board name block "ControlBoard2027 / 2026-11 / Designed By ...".
-- Silkscreen art: group `silk_art_miku` (§1.0, "Silkscreen art"), from Wikimedia Commons under a Creative Commons
-  licence per the owner. If the licence requires attribution (CC BY / BY-SA), record the file page, author and licence
-  here and credit the author where the licence asks (CLAUDE.md §13).
+- Silkscreen art, top: group `silk_art_miku` (§1.0, "Silkscreen art"), from Wikimedia Commons under a Creative Commons
+  licence per the owner; record its file page, author and licence here if it requires attribution.
+- Silkscreen art, bottom (2026-11-18): group `silk_art_miku_back`, the line-art layer (#0b0b0c) of
+  https://commons.wikimedia.org/wiki/File:Hatsune_Miku.svg by shadok, CC BY 3.0. Changes: colour fills dropped (line
+  art only), mirrored for the bottom, scaled to about 18 x 24 mm, strokes grown 0.03 mm for the 0.15 mm silkscreen
+  minimum. The licence requires credit: the group carries the bottom text "Art: shadok / CC BY 3.0"; keep it with the
+  art when moving it. Placed at (70.8, 22.3) clear of bottom pads and silkscreen; the owner may move it.
 - About 100 reference designators with no free spot at 1.0 mm are hidden or on F.Fab only. The OLED module outline
   is on F.Fab.
 

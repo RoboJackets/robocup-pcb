@@ -6808,6 +6808,19 @@
 		(uuid "7db6b646-ed4e-407d-9173-142976595b45")
 	)
 	(rectangle
+		(start 558 344)
+		(end 586 374)
+		(stroke
+			(width 0.254)
+			(type dash)
+			(color 0 0 132 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "a9fcbf68-1442-45b7-a146-34f8b4745dcc")
+	)
+	(rectangle
 		(start 300 138)
 		(end 412 172)
 		(stroke
@@ -6970,6 +6983,20 @@
 			(justify left bottom)
 		)
 		(uuid "c00c53a1-9335-4599-8c0e-8e48f8ec1908")
+	)
+	(text "R49 (DNP)\nTollolol"
+		(exclude_from_sim no)
+		(at 559.816 351.282 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 132 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "c58e7473-53c3-401f-8fc3-969db894f74f")
 	)
 	(text "RADIO LINK J9 (SAMTEC LSHM MEZZANINE)"
 		(exclude_from_sim no)
@@ -19532,32 +19559,5 @@
 				)
 			)
 		)
-	)
-	(rectangle
-		(start 558 344)
-		(end 586 374)
-		(stroke
-			(width 0.254)
-			(type dash)
-			(color 0 0 132 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "a9fcbf68-1442-45b7-a146-34f8b4745dcc")
-	)
-	(text "R49 (DNP)"
-		(exclude_from_sim no)
-		(at 559.5 349 0)
-		(effects
-			(font
-				(size 2 2)
-				(thickness 0.4)
-				(bold yes)
-				(color 0 0 132 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "c58e7473-53c3-401f-8fc3-969db894f74f")
 	)
 )
