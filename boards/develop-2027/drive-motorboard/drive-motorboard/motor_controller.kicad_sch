@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "STSPIN32G0B2 Motor Controller")
-		(date "2026-11-12")
+		(date "2026-11-17")
 		(rev "v1.1")
 		(company "RoboJackets RoboCup")
 		(comment 1 "Aiden Lee [piman PCB]")
@@ -2828,7 +2828,7 @@
 		)
 		(uuid "d7d8e56f-aeac-40d8-80d8-b0d0dbecef52")
 	)
-	(text_box "Single-Shunt Overcurrent Protection. Design derived from EVLSPIN32G0A2 Evaluation Board.\nR_{LP} chosen for part commonality.\nIdeal Characteristics:\nOver-Current Threshold: 10.05 A\nLow Pass Filter Cutoff (-3 dB gain): 145.67 kHz"
+	(text_box "Single-Shunt Overcurrent Protection. Design derived from EVLSPIN32G0A2 Evaluation Board.\nR_{LP} chosen for part commonality.\nIdeal Characteristics:\nOver-Current Threshold: 6.62 A\nLow Pass Filter Cutoff (-3 dB gain): 148.05 kHz"
 		(exclude_from_sim no)
 		(at 180.975 149.225 0)
 		(size 95.25 12.7)
@@ -2865,12 +2865,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "24d5a97d-8857-402c-a44d-4621e4737252")
-	)
-	(junction
-		(at 173.99 78.74)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5a1bc497-dc8f-445d-ad58-a42e010a1330")
 	)
 	(junction
 		(at 60.96 69.85)
@@ -2919,6 +2913,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a3405014-63c2-4e68-9f39-374bf37a519f")
+	)
+	(junction
+		(at 163.83 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ae3532ad-99a8-4495-a687-74cc06d9f52d")
 	)
 	(junction
 		(at 60.96 67.31)
@@ -3553,7 +3553,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 76.2) (xy 173.99 76.2)
+			(xy 172.72 76.2) (xy 176.53 76.2)
 		)
 		(stroke
 			(width 0)
@@ -3803,16 +3803,6 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 78.74) (xy 176.53 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9969ef2b-012f-4743-98d4-6cc5daf3784e")
-	)
-	(wire
-		(pts
 			(xy 210.82 107.95) (xy 210.82 110.49)
 		)
 		(stroke
@@ -3873,16 +3863,6 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 78.74) (xy 173.99 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aa7b654d-6191-48c4-a9dc-159a9b76e016")
-	)
-	(wire
-		(pts
 			(xy 35.56 165.1) (xy 40.64 165.1)
 		)
 		(stroke
@@ -3890,6 +3870,16 @@
 			(type default)
 		)
 		(uuid "ac9e4cd1-7173-4c93-8a67-dc293ca9a25f")
+	)
+	(wire
+		(pts
+			(xy 163.83 78.74) (xy 165.1 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad8f0a20-85b2-4f5b-9e83-7514eae1eec6")
 	)
 	(wire
 		(pts
@@ -4033,16 +4023,6 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 76.2) (xy 173.99 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c2577ff5-615e-4165-be6f-866c5e59070a")
-	)
-	(wire
-		(pts
 			(xy 210.82 118.11) (xy 210.82 120.65)
 		)
 		(stroke
@@ -4153,7 +4133,17 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 78.74) (xy 165.1 78.74)
+			(xy 163.83 78.74) (xy 163.83 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d35eb8d5-afa7-41f4-9388-f1689cd3c814")
+	)
+	(wire
+		(pts
+			(xy 163.83 76.2) (xy 165.1 76.2)
 		)
 		(stroke
 			(width 0)
@@ -4270,6 +4260,16 @@
 			(type default)
 		)
 		(uuid "eeafef3a-779c-4340-a175-5f8e3013003d")
+	)
+	(wire
+		(pts
+			(xy 172.72 78.74) (xy 176.53 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef9007e8-2701-4b3c-b504-806e311d0fb4")
 	)
 	(wire
 		(pts
@@ -4886,8 +4886,8 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_pos_files no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "060e6ef7-44e4-490a-b8f0-5ffcff36299d")
 		(property "Reference" "U1"
@@ -6179,6 +6179,119 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 168.91 78.74 90)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "48fb2863-8488-4384-8b8a-3300711eb2c4")
+		(property "Reference" "R38"
+			(at 168.91 83.82 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 168.91 81.28 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 168.91 76.962 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C60490.pdf"
+			(at 168.91 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 10kΩ ±1% 62.5mW 0402"
+			(at 168.91 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "RC0402FR-0710KL"
+			(at 168.91 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "LCSC"
+			(at 168.91 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "C60490"
+			(at 168.91 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "518855ef-ddb4-45b3-bdbb-126e79b89699")
+		)
+		(pin "2"
+			(uuid "6710f1eb-5aff-4add-a960-8576ec1be121")
+		)
+		(instances
+			(project "drive-motorboard"
+				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/73cb52ef-7536-45c8-9d54-fc54b3c8b275"
+					(reference "R38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "RJ-MCU:STSPIN32G0B2")
 		(at 24.13 116.84 0)
 		(unit 3)
@@ -6186,8 +6299,8 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_pos_files no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "52c5fd5e-5e9c-48e7-a32c-a307642c82ba")
 		(property "Reference" "U1"
@@ -6254,7 +6367,7 @@
 				)
 			)
 		)
-		(property "Vendor" "LCSC"
+		(property "Vendor" "DigiKey"
 			(at 24.13 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -6265,7 +6378,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "C23064814"
+		(property "Vendor P/N" "497-STSPIN32G0B2-ND"
 			(at 24.13 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -6440,8 +6553,8 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_pos_files no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "5353760d-99da-4de4-b2a4-719351463636")
 		(property "Reference" "U1"
@@ -6508,7 +6621,7 @@
 				)
 			)
 		)
-		(property "Vendor" "LCSC"
+		(property "Vendor" "DigiKey"
 			(at 74.93 25.4 0)
 			(hide yes)
 			(show_name no)
@@ -6519,7 +6632,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "C23064814"
+		(property "Vendor P/N" "497-STSPIN32G0B2-ND"
 			(at 74.93 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -6694,8 +6807,8 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_pos_files no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "56acaa7c-4dd2-46ee-92fc-58030008c484")
 		(property "Reference" "U1"
@@ -6764,7 +6877,7 @@
 				)
 			)
 		)
-		(property "Vendor" "LCSC"
+		(property "Vendor" "DigiKey"
 			(at 240.03 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -6775,7 +6888,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "C23064814"
+		(property "Vendor P/N" "497-STSPIN32G0B2-ND"
 			(at 240.03 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -7371,8 +7484,8 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_pos_files no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "7c6c5afe-a148-40b9-8063-30c1e8fa3e4c")
 		(property "Reference" "U1"
@@ -7439,7 +7552,7 @@
 				)
 			)
 		)
-		(property "Vendor" "LCSC"
+		(property "Vendor" "DigiKey"
 			(at 151.13 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -7450,7 +7563,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "C23064814"
+		(property "Vendor P/N" "497-STSPIN32G0B2-ND"
 			(at 151.13 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -8506,7 +8619,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 168.91 78.74 90)
+		(at 168.91 76.2 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8514,10 +8627,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b4d89994-52b7-47b0-9bdc-06727f36ad06")
 		(property "Reference" "R3"
-			(at 168.91 72.39 90)
+			(at 168.91 71.12 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8527,7 +8639,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 168.91 74.93 90)
+			(at 168.91 73.66 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8537,7 +8649,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 168.91 80.518 90)
+			(at 168.91 77.978 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8548,7 +8660,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C60490.pdf"
-			(at 168.91 78.74 0)
+			(at 168.91 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8559,7 +8671,7 @@
 			)
 		)
 		(property "Description" "RES 10kΩ ±1% 62.5mW 0402"
-			(at 168.91 78.74 0)
+			(at 168.91 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8570,7 +8682,7 @@
 			)
 		)
 		(property "Manufacturer P/N" "RC0402FR-0710KL"
-			(at 168.91 78.74 0)
+			(at 168.91 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8581,7 +8693,7 @@
 			)
 		)
 		(property "Vendor" "LCSC"
-			(at 168.91 78.74 0)
+			(at 168.91 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8592,7 +8704,7 @@
 			)
 		)
 		(property "Vendor P/N" "C60490"
-			(at 168.91 78.74 0)
+			(at 168.91 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9026,7 +9138,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "33k ±0.1%"
+		(property "Value" "22.1k ±0.1%"
 			(at 213.36 115.5699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9048,7 +9160,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C5455470.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C2692911.pdf"
 			(at 210.82 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -9059,7 +9171,7 @@
 				)
 			)
 		)
-		(property "Description" "RES 33kΩ ±0.1% 62.5mW 0402"
+		(property "Description" "RES 22.1kΩ ±0.1% 60mW 0402"
 			(at 210.82 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -9070,7 +9182,7 @@
 				)
 			)
 		)
-		(property "Manufacturer P/N" "AT0402BRD0733KL"
+		(property "Manufacturer P/N" "PTFR0402B22K1P9"
 			(at 210.82 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -9092,7 +9204,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "C5455470"
+		(property "Vendor P/N" "C2692911"
 			(at 210.82 114.3 0)
 			(hide yes)
 			(show_name no)

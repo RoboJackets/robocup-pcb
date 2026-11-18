@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Power Input")
-		(date "2026-11-12")
+		(date "2026-11-17")
 		(rev "v1.1")
 		(company "RoboJackets RoboCup")
 		(comment 1 "Aiden Lee [piman PCB]")
@@ -1216,7 +1216,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Diode:SMAJ22A"
+		(symbol "Diode:SMAJ24A"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1239,7 +1239,7 @@
 					)
 				)
 			)
-			(property "Value" "SMAJ22A"
+			(property "Value" "SMAJ24A"
 				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1271,7 +1271,7 @@
 					)
 				)
 			)
-			(property "Description" "400W unidirectional Transient Voltage Suppressor, 22.0Vr, SMA(DO-214AC)"
+			(property "Description" "400W unidirectional Transient Voltage Suppressor, 24.0Vr, SMA(DO-214AC)"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1304,7 +1304,7 @@
 					)
 				)
 			)
-			(symbol "SMAJ22A_0_1"
+			(symbol "SMAJ24A_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy -1.27 1.27) (xy -1.27 -1.27)
@@ -1330,7 +1330,7 @@
 					)
 				)
 			)
-			(symbol "SMAJ22A_1_1"
+			(symbol "SMAJ24A_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -2259,7 +2259,7 @@
 		)
 		(uuid "805f86c8-a259-4ffe-87fc-4fcb1ea053ff")
 	)
-	(text "Measured <30 mA on the 3.3V rail\nwith no motor movement.\n\nUp to 2.5 A on VBATT (theoretical)"
+	(text "Measured <30 mA on the 3.3V rail\nwith no motor movement.\n\nUp to 2.5 A rms on VBATT\n(7.0 A peak)"
 		(exclude_from_sim no)
 		(at 222.25 52.07 0)
 		(effects
@@ -2270,7 +2270,7 @@
 		)
 		(uuid "9a0e8edb-98e3-472a-8b75-e5c7e5490f5e")
 	)
-	(text "V_{R} 22.0V\nV_{BR} 24.4V"
+	(text "V_{R} 24.0V\nV_{BR} 26.7V"
 		(exclude_from_sim no)
 		(at 107.95 81.28 0)
 		(effects
@@ -3125,7 +3125,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_3.0x3.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_2.0x2.0mm"
 			(at 165.1 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -3698,121 +3698,6 @@
 			(project "drive-motorboard"
 				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/9fb6f48b-7b2b-49be-9199-83460c086bb1"
 					(reference "R35")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:SMAJ22A")
-		(at 110.49 81.28 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2a315568-efce-4713-bfe1-ae5f37866a82")
-		(property "Reference" "D11"
-			(at 113.03 80.0099 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SMAJ22A"
-			(at 113.03 82.5499 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SMA"
-			(at 105.41 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=75e32973-b177-4ee3-a0ff-cedaf1abdb93&filename=smaj-datasheet"
-			(at 110.49 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "400W unidirectional Transient Voltage Suppressor, 22.0Vr, SMA(DO-214AC)"
-			(at 110.49 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer P/N" "C134971"
-			(at 110.49 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor" "LCSC"
-			(at 110.49 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor P/N" "C134971"
-			(at 110.49 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "de01f17c-0f74-4717-930d-bf9be55a98e2")
-		)
-		(pin "1"
-			(uuid "8973a228-b057-4da6-a2e6-c731594dfc8a")
-		)
-		(instances
-			(project "drive-motorboard"
-				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/9fb6f48b-7b2b-49be-9199-83460c086bb1"
-					(reference "D11")
 					(unit 1)
 				)
 			)
@@ -4783,6 +4668,121 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:SMAJ24A")
+		(at 110.49 81.28 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9f422e4c-993a-482f-aba0-fd0f94307868")
+		(property "Reference" "D11"
+			(at 113.03 80.0099 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SMAJ24A"
+			(at 113.03 82.5499 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 105.41 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=75e32973-b177-4ee3-a0ff-cedaf1abdb93&filename=smaj-datasheet"
+			(at 110.49 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "400W unidirectional Transient Voltage Suppressor, 24.0Vr, SMA(DO-214AC)"
+			(at 110.49 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "SMAJ24A"
+			(at 110.49 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "LCSC"
+			(at 110.49 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "C148222"
+			(at 110.49 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "a9476870-ec94-4ff4-afff-25a02bf0b078")
+		)
+		(pin "1"
+			(uuid "8d061110-545f-4f5d-ac1b-a35a152ea120")
+		)
+		(instances
+			(project "drive-motorboard"
+				(path "/9e9815bc-cf1c-424b-a03b-224c05c2b627/9fb6f48b-7b2b-49be-9199-83460c086bb1"
+					(reference "D11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 160.02 138.43 0)
 		(unit 1)
@@ -5124,7 +5124,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_3.0x3.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_2.0x2.0mm"
 			(at 154.94 71.12 0)
 			(hide yes)
 			(show_name no)
