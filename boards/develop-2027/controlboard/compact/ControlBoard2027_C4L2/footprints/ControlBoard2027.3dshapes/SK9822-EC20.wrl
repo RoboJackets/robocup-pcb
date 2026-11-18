@@ -1,0 +1,12 @@
+#VRML V2.0 utf8
+# SK9822-EC20 (OPSCO SK9822-EC20 Rev A/0, section 4): 2.0 x 2.0 x 0.65 mm body.
+# Simple model drawn for this project. Units: 1 = 2.54 mm. Pin 1 (SDO) at the top-left (x -0.8, y +0.9 mm, y up).
+Transform { translation 0 0 0.1280
+  children Shape { appearance Appearance { material Material { diffuseColor 0.93 0.93 0.90 } }
+    geometry Box { size 0.7874 0.7874 0.2559 } } }
+Transform { translation 0 0 0.2570
+  children Shape { appearance Appearance { material Material { diffuseColor 0.98 0.98 0.98 transparency 0.3 } }
+    geometry Box { size 0.6299 0.6299 0.0020 } } }
+Transform { translation -0.2756 0.3150 0.2580
+  children Shape { appearance Appearance { material Material { diffuseColor 0.05 0.05 0.05 } }
+    geometry Box { size 0.1181 0.1181 0.0040 } } }

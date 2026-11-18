@@ -3045,7 +3045,7 @@
 		)
 		(uuid "7918138a-bcf0-45e9-91e2-3345e0f5f16e")
 	)
-  (text "USB-C J1\nNative USB Serial/JTAG (Full-Speed) on GPIO13/14 for flashing and logs; no USB-UART bridge.\nCC 5.1k Rd = sink. Shell tied to GND.\nD2 + D5 TVS on the two VBUS contact groups, then F1 PTC; VBUS feeds only the U4 LDO.\nDESIGN_NOTES.md §4."
+  (text "USB-C J1\nNative USB Serial/JTAG (Full-Speed) on GPIO13/14 for flashing and logs; no USB-UART bridge.\nCC 5.1k Rd = sink. Shell tied to GND.\nD2 + D5 TVS on the two VBUS contact groups, then F1 PTC; VBUS feeds only the U4 LDO.\nDESIGN_NOTES.md §6."
     (at 71.12 195.58 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid "dee94b89-6179-472c-85a0-0e4891ae11d1")

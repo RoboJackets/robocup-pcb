@@ -1,0 +1,12 @@
+#VRML V2.0 utf8
+# Samtec LSHM-110-02.5 (20 pos, 0.5 mm, shielded), simple model drawn for this project from the footprint fab outline:
+# 11.25 x 4.98 mm, 2.5 mm high. Units: 1 = 2.54 mm. Pin 1 side at y +1.85 mm (y up), x -2.25 mm.
+Transform { translation 0 0 0.4921
+  children Shape { appearance Appearance { material Material { diffuseColor 0.15 0.15 0.15 } }
+    geometry Box { size 4.4291 1.9606 0.9843 } } }
+Transform { translation 0 0 0.9870
+  children Shape { appearance Appearance { material Material { diffuseColor 0.75 0.75 0.78 specularColor 0.5 0.5 0.5 } }
+    geometry Box { size 3.9370 1.4567 0.0040 } } }
+Transform { translation -0.8858 0.9055 0.9900
+  children Shape { appearance Appearance { material Material { diffuseColor 1.0 1.0 1.0 } }
+    geometry Box { size 0.1181 0.1181 0.0040 } } }

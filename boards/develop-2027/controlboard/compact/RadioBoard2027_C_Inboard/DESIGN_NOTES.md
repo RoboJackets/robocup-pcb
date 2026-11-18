@@ -54,7 +54,7 @@ Checked 2026-11-07 on the saved repo files:
 | MOD | ESP32-C5-WROOM-1 / WROOM-1U datasheet v1.3 |
 | CHIP | ESP32-C5 series datasheet v1.5 |
 | HDG | Espressif ESP32-C5 hardware design guidelines v1.4 |
-| EH | espressif/esp-hosted-mcu: `docs/getting-started-mcu.md`, `docs/design/`, co-processor and host Kconfig, `spi_slave_api.c`, `spi_drv.c` |
+| EH | espressif/esp-hosted-mcu: `docs/getting-started-mcu.md`, `docs/design/`, co-processor and host Kconfig, `coprocessor/eh_cp_transport/src/eh_cp_transport_spi.c`, `spi_drv.c` |
 | SLVSFG1A | TI TPS2116 power mux |
 | SNVSB03E | TI TPS3840 supervisor |
 | TPD4E05U06 | TI TPD4E05U06 (DQA, USON-10) |
@@ -121,7 +121,7 @@ are open (fastest delay). C10 100 nF sits right north of U7 pin 2, in line on th
 | VIT+ (rising) | 2.932-3.069 V (3.00 V typ) | U3 selects the host only above it |
 | tSTRT | 100-350 us after VDD crosses VIT+ | Output held low from VDD = 0.3 V |
 
-- A host at 3.3 V -5 % (3.135 V) is 66 mV above the highest VIT+, so every board starts on the host; the 75 mV
+- Host start (audit 2026-11-18): the radio starts on the host only when +3V3_HOST is above VIT+ (up to 3.069 V). The C4L2 controlboard gives about 3.2 V at its planned load but can fall to 3.08 V at a 1 A +3V3 load (C4L2 DESIGN_NOTES §4.8): **condition: controlboard +3V3 at J9 >= 3.10 V with the radio idle**. Below VIT+ without USB the radio stays off. A TPS3840PL28 (VIT+ <= about 2.97 V) would restore margin (BOM change, not made). Once running, the 75 mV
   minimum hysteresis exceeds the 40 mV J2-to-U3 drop at the module's 403 mA peak, so it does not chatter.
 - PR1 levels: VOH >= 0.8 x VDD = 2.35 V at VIT+ against VREF max 1.08 V; VOL <= 0.2 V against VREF min 0.92 V. PR1
   sees at most 3.47 V (host +5 %), under the TPS2116's 5.5 V operating limit.
@@ -272,8 +272,9 @@ GND: J2 pin 17 runs into U5 pin 3 with a via (6.75, 4.25); pin 13 has its own vi
 
 ### 7.3 Pulls and termination
 - The controlboard holds CS up (R29 10k) and HANDSHAKE / DATA_READY down (R31 100k, R32 10k). This board adds no pulls
-  on the link lines. Once running, ESP-Hosted enables internal pull-ups on MOSI / SCLK / CS and pull-downs on MISO /
-  HS / DR (EH `spi_slave_api.c`); during reset and ROM boot the controlboard pulls hold the levels.
+  on the link lines. Stock ESP-Hosted (EH
+  `coprocessor/eh_cp_transport/src/eh_cp_transport_spi.c`) enables an internal pull-up on CS; FIRMWARE.md §2.2
+  requires it patched out; during reset and ROM boot the controlboard pulls hold the levels.
 - R4 33R on MISO is source termination at the driver (the module), on the top in line on the pad-4 tail, 0.8 mm from
   the pad. Espressif publishes no output impedance; at the default drive strength 33R plus the driver is close to
   50 ohm. SCK and MOSI are source-terminated at their driver on the controlboard (R65 / R66 30R). CS has no series

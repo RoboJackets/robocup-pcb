@@ -329,15 +329,14 @@ board), 3 GND, 4 +3V3_RAW, 5 GND, 6 +5V_RAW, 7 GND. RX / TX are named from this 
 rule is in [INTERFACE.md](../docs/INTERFACE.md). GND pin 5 sits between the two rails, so a one-pin crimp shift
 cannot short +5V to +3V3. Each PH contact is rated 2 A, one contact per rail (deviation 20).
 
-R33 (TX) and R34 (RX), 1k, sit in series between J15 pins 1 / 2 and PD15 / PD14 (UART9 AF11, 115200, 3.3 V logic; moved
-from PA0 / PA1 UART4 on 2026-11-14, see §9.2), on the
-bottom in line with the pins. TP10 / TP11 sit on their MCU-side pads. Reasons (DS13313 Rev 4):
-- Unpowered powerboard: if its RX pin clamps to its own VDD, PD15 high feeds at most (3.3 - 0.6) V / 1k = 2.7 mA into
+R33 (TX) and R34 (RX), 1k, sit in series between J15 pins 1 / 2 and PE3 / PE2 (USART10: PE3 TX AF11, PE2 RX AF4;
+115200, 3.3 V logic; FIRMWARE.md 1.3a), on the bottom in line with the pins. TP10 / TP11 sit on their MCU-side pads. Reasons (DS13313 Rev 4):
+- Unpowered powerboard: if its RX pin clamps to its own VDD, PE3 high feeds at most (3.3 - 0.6) V / 1k = 2.7 mA into
   that rail instead of back-powering it.
-- Cable faults: TX shorted to GND or +5 V is held to 3.3 mA or 5 mA (PD15 driving low), well below the 20 mA per-pin limit
+- Cable faults: TX shorted to GND or +5 V is held to 3.3 mA or 5 mA (PE3 driving low), well below the 20 mA per-pin limit
   (Table 10, I_IO).
-- Injection: Table 10 allows -5 / +0 mA on FT pins; PD14 / PD15 (FT_h) fall under Table 50 "all other I/Os" (5 mA
-  negative), better than PA0 / PA1 (0 mA). R33 / R34 still damp and limit cable ringing below GND.
+- Injection: Table 10 allows -5 / +0 mA on FT pins; PE2 / PE3 (FT_h, DS13313 pin table) fall under Table 50 "all other
+  I/Os" (5 mA negative). R33 / R34 still damp and limit cable ringing below GND.
 - Unpowered MCU: with VDD off, FT_h pins accept only up to about 4 V (DS13313 Table 9 note on FT_xx inputs with
   VDD = 0), not 5 V. A 3.3 V powerboard TX into an unpowered control board stays below that, and R34 (1k) limits the
   current, so it is not a damage path as long as the powerboard UART stays at 3.3 V logic. PE7 / PE8 were rejected for the UART: they are TT pins (4.0 V absolute maximum, DS13313 Table 9).
@@ -391,11 +390,9 @@ TPS2116 has to be replaced.
 | Hysteresis | R40 1M from ST | R41 1M from ST |
 | Switchover (VREF typ) | about 3.55 V falling / 3.88 V rising | about 2.34 V falling / 2.57 V rising |
 
-- ST is open drain. R42 / R43 10k pull it up to 3V3. PWR_SRC_5V goes through R44 10k to PD10; PWR_SRC_3V3 goes to PD9 (moved from PA2 / PA3
-  on 2026-11-14, §9.2).
-  High means the powerboard is selected.
-- R44 10k stays in series on PWR_SRC_5V. PD10 is not driven by the ROM bootloader; PA2 (the pre-V9.3 bootloader's
-  USART2 TX, AN2606 V9.3 note), which carried PWR_SRC_5V on ControlBoard2027_C, is unconnected here.
+- ST is open drain. R42 / R43 10k pull it up to 3V3. PWR_SRC_5V goes through R44 10k to PE5 (pin 4); PWR_SRC_3V3 goes
+  to PE4 (pin 3). High means the powerboard is selected.
+- R44 10k stays in series on PWR_SRC_5V (current limit if the pin is ever driven while U8 ST pulls low).
 - While VIN1 is selected it stays tied to VOUT until PR1 drops below VREF (SLVSFG1A §7.6.1). With USB attached and the
   powerboard removed, the rail sags to the switchover voltage first (M7).
 - C33 22 uF (5 V) and C34 10 uF (3V3) at VIN1; C35 2.2 uF (5 V, on VBUS) and C36 2.2 uF (3V3) at VIN2; C37 / C38
@@ -460,7 +457,7 @@ for 10 C), 4.7 mm on L3, and three 0.45 / 0.3 mm vias per layer change (about 1.
 | F3 / F4 -> J11 / J12 | L1 pours 2.5 mm wide | > 5 A |
 | J15 pin 4 -> F6 (+3V3_RAW) | L4 pour | > 5 A |
 | F6 -> U9 (+3V3_PB) | 0.9 mm L4, 9 mm long (was 0.5 mm), moved to x 28.2 to clear C34 | 3.0 A at 20 C |
-| U9 VOUT -> +3V3 plane | two vias, (24.2, 23.25) and (26.9, 20.9) | about 3 A (3V3 loads are about 0.8 A) |
+| U9 VOUT -> +3V3 plane | two vias: (24.2, 23.25) in the package centre between the VOUT pins 2 / 7, and (24.2, 24.9) south of the package, joined by a 0.4 mm L1 track; C38 has its own via at (26.9, 20.9) | about 3 A |
 | GND return | J15 pins 3 / 5 / 7, through-hole into L2 | 6 A |
 
 Parts that cap the rails below 3 A (BOM frozen; change only on purpose):
@@ -474,8 +471,29 @@ Parts that cap the rails below 3 A (BOM frozen; change only on purpose):
   above the TPS2116 rating: with a 2 A fuse the mux is protected only against hard shorts. Re-rate F5 / F6 together
   with the steady load the powerboard is expected to deliver.
 
-Trackless vias are saved with KiCad's "free" flag so that a reload or a zone refill cannot re-assign their net from
-the surrounding copper.
+Voltage drop sets a second limit, independent of copper and ratings (worst case, M2 / M3 resistances):
+- +3V3: J15 contact 20 mohm + F6 140 mohm max + U9 59 mohm = 0.22 ohm. At 1 A the rail is 3.08 V from a 3.30 V
+  powerboard (3.4 V -3 %); at 2 A it would be 2.86 V, below the radio's 3.0 V minimum, and U9 does not hand over to
+  USB until about 2.34 V. **Keep the +3V3 load at about 1 A or less** (the planned load is about 0.8 A); the 2-3 A
+  target applies to the +5V rail.
+- +5V: J15 20 mohm + Q1 60 mohm (about 80 mohm hot) + F5 140 mohm max + U8 59 mohm = 0.28-0.30 ohm. At 2 A the rail
+  is about 4.4 V from a 5.0 V powerboard; the DotStars (the SK9822 datasheet gives no VDD minimum; its VIH is 3.4 V) and the expansion boards on J11 / J12
+  see that value.
+- So with the parts fitted today: +5V up to 2 A (J15 contact), +3V3 up to about 1 A (drop).
+- Radio start: the compact radio's TPS3840PL29 hands its mux to the host rail only above 3.07 V (worst case), so
+  +3V3 at J9 must be >= 3.10 V with the radio idle. At the planned 0.35-0.45 A board load it is about 3.2 V from a
+  3.30 V powerboard; a 1 A load (3.08 V) would leave the radio off when no USB is attached (radio DESIGN_NOTES §4). INTERFACE.md (J15) states
+  the same limits for the powerboard.
+
+Trackless vias: KiCad can re-assign the net of a via that has no track from the copper around it. The +5V vias
+at U8 VOUT are therefore joined by a track, and new stitching vias are placed only where the same-net pour surrounds
+them on both outer layers.
+
+### 4.9 R49 (not fitted)
+
+R49 is a non-functional symbol on sheet 07 (a drawing for a friend; its wiring spells "Hi"). Both pads are GND. It
+is marked DNP and excluded from the BOM in the schematic and on the board, so it is not assembled; leave it out of
+the CPL as well when generating order files.
 
 ## 5. MCU, clock and supply pins
 
@@ -516,13 +534,15 @@ hundred ohms if needed (m9).
 - R11 10k BOOT0 pull-down: 0.15 V at worst-case leakage against a 0.73 V input-low limit. SW2 (BOOT) pulls BOOT0 to
   3V3 for the ROM DFU.
 - NRST: internal 30-50k pull-up (DS13313 Table 57) and C20 100 nF; no external pull-up. SW1 (RESET) pulls it low.
-- R13 10k pull-up on PA15: the bootloader runs SPI3 as a slave on PC10-PC12 (unconnected here) with NSS on PA15 and no
-  pull (AN2606 Table 111). Holding NSS high keeps it from selecting SPI3 instead of USB DFU.
+- R13 10k pull-up on PA15: the bootloader runs SPI3 as a slave on PC10-PC12 (the front motor bus here) with NSS on
+  PA15 and no pull (AN2606 Rev 62 Table 114). Holding NSS high keeps SPI3 deselected, so DFU answers on USB; R30 / R72
+  hold the motor SCK low.
 
 ### 5.4 Series resistors and sense divider at the MCU
 
-- 30R source-damping resistors, each within 5 mm of its MCU pin: R15 / R16 (SPI1 SCK / MOSI, PA5 / PA7), R67 / R68
-  (SPI2, PB13 / PB15), R70 / R71 (SPI4, PE2 / PE6), R65 / R66 (radio SPI3 SCK / MOSI, PB3 / PB5), R6 (SDMMC_CK, PD6).
+- 30R source-damping resistors, each within 5 mm of its MCU pin: R15 / R16 (front motor SPI3 SCK / MOSI, PC10 / PC12),
+  R67 / R68 (rear motor SPI2, PB13 / PB15), R70 / R71 (LED SPI6, PA5 / PA7), R65 / R66 (radio SPI1 SCK / MOSI,
+  PB3 / PB5), R6 (SDMMC_CK, PD6).
   MISO lines have none (the far-end driver owns them; the radio MISO is terminated on the radio board, R4 33R).
   DS13313 gives VOL / VOH at a test current, not an output impedance: 0.4 V at 8 mA bounds it at 50 ohm or less, and
   typical HIGH / VERY_HIGH drivers are about 20-30 ohm (an estimate; check against ST's IBIS model). With 30R the
@@ -539,10 +559,10 @@ All buses run at 400 kHz, one pull-up pair per bus on sheet 02.
 
 | Bus | Pins | Pull-ups | Load |
 |---|---|---|---|
-| IMU (I2C5) | PF0 SDA / PF1 SCL | R9 / R7 2.2k | U11, on board |
-| Kicker (I2C2) | PB11 SDA / PB10 SCL | R19 / R18 2.2k | J10, cable; U17 ESD |
-| Expansion (I2C4) | PF15 SDA / PF14 SCL | R8 / R10 2.2k | J11 and J12 share it; U6 / U16 ESD |
-| OLED (I2C1) | PB9 SDA / PB8 SCL | R17 / R14 2.2k | J13 module (its own pull-ups add in parallel) |
+| IMU (I2C4) | PD13 SDA / PD12 SCL | R8 / R10 2.2k | U11, on board |
+| Kicker (I2C1) | PB9 SDA / PB8 SCL | R17 / R14 2.2k | J10, cable; U17 ESD |
+| Expansion (I2C2) | PF0 SDA / PF1 SCL | R9 / R7 2.2k | J11 and J12 share it; U6 / U16 ESD |
+| OLED (I2C3) | PC9 SDA / PA8 SCL | R19 / R18 2.2k | J13 module (its own pull-ups add in parallel) |
 
 Fast mode allows 300 ns rise time. For 3 mA sink at 0.4 V, SLVA689 gives Rp(min) = (3.6 - 0.4) V / 3 mA = 1.067k and
 tr = 0.8473 x Rp x Cb, so 2.2k allows about 161 pF (159 pF with the 1 % resistors at +1 %). A typical module pull-up of 4.7-10k in parallel gives 1.5-1.8k,
@@ -559,14 +579,15 @@ still above Rp(min). Measure SCL rise time at TP7 (kicker) and TP8 (expansion) w
 - U3 TPD4E05U06DQA, four flow-through channels, one per data contact (B6, A7, A6, B7); no rail pin, so nothing
   back-feeds VBUS. The duplicate contacts join on the MCU side of U3 (deviation 3).
 - No series resistors on D+ / D-: the STM32 full-speed driver is already 28-44 ohm. 90 ohm pair on L1, 0.14 / 0.15 mm,
-  matched 0.000 mm in both plug orientations (§12.5).
+  matched to 0.053 mm skew in both plug orientations (§12.5).
 - Full Speed only (OTG_HS in FS mode). The ROM DFU uses HSI48 with CRS, so it needs neither the crystal nor VBUS sense.
 - USB bus-powered operation is restricted to bench use (m22): estimated concurrent load about 0.85 A against F1's
   0.55 A hot hold. Use the powerboard for full operation.
 - J3 SWD: ST STDC14 (Samtec FTSH-107-01-L-DV-K, 2 x 7, 1.27 mm, keyed SMD) for the STLINK-V3 14-pin cable, drawn
   with KiCad's official `Connector:Conn_ST_STDC14` symbol. Wired
-  pins: 3 +3V3 (VCC sense), 4 SWDIO, 5 GND, 6 SWCLK, 7 GND, 11 GND (GNDDetect), 12 NRST; pins 1, 2, 8, 9, 10, 13, 14
-  are not connected (8 would be SWO, but PB3 is the radio SCK). No series resistors on SWD (AN5419 does not require
+  pins: 3 +3V3 (VCC sense), 4 SWDIO, 5 GND, 6 SWCLK, 7 GND, 11 GND (GNDDetect), 12 NRST, 13 T_VCP_RX (probe output)
+  to PC7 USART6_RX, 14 T_VCP_TX (probe input) from PC6 USART6_TX; pins 1, 2, 8, 9, 10 are not connected (8 would be
+  SWO, but PB3 is the radio SCK). No series resistors on SWD (AN5419 does not require
   them); use a short cable and start at 1 MHz. No protection against a 5 V probe (m14).
 
 ---
@@ -587,7 +608,7 @@ still above Rp(min). Measure SCL rise time at TP7 (kicker) and TP8 (expansion) w
   tied to the opposite I/O pads in the schematic so each line passes straight through.
 - C1 10 uF + C2 100 nF at the card supply. Card VDD is not switchable (M18).
 - All six lines are 50 ohm (0.15 mm on L1 and L4; the L4 runs, including the stretch under U10, over an L3 GND
-  island), matched to 62.480 mm with zero spread (§12.5). AN5419 Rev 3
+  island), matched 67.077-67.660 mm, worst 0.470 mm vs CK (§12.5). AN5419 Rev 3
   §9.4.1 asks for 50 ohm +-10 %, under 10 mm skew and under 120 mm before termination. Kernel PLL1Q 48 MHz: CLKDIV 3
   (8 MHz) for bring-up, CLKDIV 1 (24 MHz) after checking CK at TP1; card identification always runs at 400 kHz or
   less first (SD spec), then the clock is raised. Qualify read and write edges on the first board;
@@ -606,7 +627,7 @@ adds enhanced vibration immunity, which the DSV does not claim).
 I2C target mode:
 - CS (12) to VDDIO selects I2C. SDO/TA0 (1) to GND gives address 0x6A.
 - SDx / SCx (2 / 3) to GND (controller interface unused); OCS_aux / SDO_aux (10 / 11) open (internal pull-ups).
-- SCL (13) / SDA (14) on I2C5 with R7 / R9 2.2k. C48 100 nF at VDDIO (5), C49 100 nF at VDD (8).
+- SCL (13) / SDA (14) on I2C4 (PD12 / PD13, AF4) with R10 / R8 2.2k. C48 100 nF at VDDIO (5), C49 100 nF at VDD (8).
 - INT1 (4) -> ACCEL_EXTI (PF3), INT2 (9) -> GYRO_EXTI (PF2). Both are push-pull and driven low from power-up, so no
   pulls. The part has no reset pin (m16).
 - Pinout verified against DS14623 Rev 3 Table 2 (local copy prototype/ControlBoard2027/datasheets/LSM6DSV320X.pdf),
@@ -621,17 +642,16 @@ mirrored for the bottom side (FIRMWARE.md).
 
 ### 9.2 SW3 DIP switch (robot ID)
 
-Six positions on PC15, PC3_C, PA0, PA1, PA4, PA3 (DIP0-DIP5, pins 9 / 29 / 34 / 35 / 40 / 37; moved on 2026-11-14 from
-PF7-PF10, PC0, PC1, which sit behind the crystal keep-out with no escape to SW3; those pins and PA2 are now
-unconnected); a closed switch reads 0. PC3_C needs
-its analog switch closed (SYSCFG_PMCR) before it reads as PC3. R53-R58 100k pull-ups: 33 uA per closed
+Six positions on PE7, PE8, PE9, PE10, PE14, PE15 (DIP0-DIP5, pins 58 / 59 / 60 / 63 / 67 / 68; PE13 left free, it is
+a bootloader SPI4 output); a closed switch reads 0. PE7-PE9 are TT_ha (3.6 V only), fine for on-board 3.3 V
+pull-ups. R53-R58 100k pull-ups: 33 uA per closed
 switch, worst-case high 3.28 V with +-250 nA leakage (DS13313 Table 51) against a 2.31 V threshold. Read at boot.
 CTS 209-6MS (alternate) / Hroparts DS-06BP (JLCPCB build), THT, 2.54 mm pitch, 7.62 mm rows; pins 1-6 DIP0-DIP5, 7-12
 GND.
 
 ### 9.3 SW4-SW6 user buttons
 
-Active low on PE4 / PC13 / PC14 (USER_EXTI0-2). R59-R61 10k pull-ups, R62-R64 10k series, C50-C52 100 nF at the MCU
+Active low on PD11 / PD14 / PD15 (USER_EXTI0-2, EXTI11 / 14 / 15). R59-R61 10k pull-ups, R62-R64 10k series, C50-C52 100 nF at the MCU
 pin.
 
 | | Path | Nominal | 1 % R, 10 % C |
@@ -650,7 +670,7 @@ Firmware ignores re-triggers for about 10 ms. SW1, SW2, SW4-SW6 are APEM MJTP124
   alternate) D7-D11 on +5V (the U8 output, so they work on USB too). SK9822 datasheet: VDD 5 V typ, 5.3 V max;
   VIH 3.4 V min, VIL 1.6 V max (U10 74AHCT125 at 5 V drives them); clock 15 MHz max (SPI6 runs 3.125 MHz);
   -40 to 85 °C; built-in reset (dark at power-up), firmware still sends an all-off frame first. The colour byte order
-  is ambiguous in the datasheet (FIRMWARE.md §1.8). The BB-2020 alternate has VDD 4.5-5.5 V and a 10 MHz clock limit.
+  is ambiguous in the datasheet (FIRMWARE.md §1.7): test pure red, green and blue on the bench. The BB-2020 alternate has VDD 4.5-5.5 V and a 10 MHz clock limit.
 - Current: 18 mA per colour at full gain, so up to 270 mA for five LEDs at full white; OPSCO recommends gain level
   9/31 or lower (about 5.2 mA per colour, 78 mA for five at white) for heat. Firmware caps it at about 250 mA on the powerboard (inside F5's hold, §4.5)
   and about 100 mA on USB (PWR_SRC_5V low). On USB, +5V can sit below 4.5 V, so colours are guaranteed only on the
@@ -659,18 +679,20 @@ Firmware ignores re-triggers for about 10 ms. SW1, SW2, SW4-SW6 are APEM MJTP124
   left column SDO / GND / SDI, right column CKO / VDD / CKI, pin 1 SDO top-left with the pin-1 dot, so the footprint's
   0° is the part's standard orientation and the placement file needs no rotation offset. Its copper is the old
   `AmericanBright_BB-2020BGR-TRB` land (BB2020 p2 pad diagram) turned 90° clockwise; each LED was turned 90° on the
-  board, so pads, nets and routing are unchanged and the BB-2020BGR-TRB still fits. Pad numbers keep the schematic
-  symbol numbering (1 VDD, 2 CKO, 3 SDO, 4 SDI, 5 CKI, 6 GND).
+  board, so pads, nets and routing are unchanged and the BB-2020BGR-TRB still fits. Since 2026-11-17 the symbol and
+  pads use the SK9822 datasheet numbering (1 SDO, 2 GND, 3 SDI, 4 CKI, 5 VDD, 6 CKO). 3D model: project file
+  `footprints/ControlBoard2027.3dshapes/SK9822-EC20.wrl` (2.0 x 2.0 x 0.65 mm body with a pin-1 mark).
 - U10 SN74AHCT125DR (SOIC-14) shifts 3.3 V to 5 V; AHCT has TTL thresholds (VIH 2.0 V), AHC would need 3.5 V.
-  Gate 1 buffers LED_SPI_SCK (2 -> 3 -> D7 CKI), gate 4 LED_SPI_MOSI (12 -> 11 -> D7 SDI); gates 2 / 3 disabled (OE to
-  +5V, inputs to GND). 6.5 ns max delay, 2 % of the 320 ns bit at 3.125 Mbit/s. Inputs rated -0.5 to 7 V regardless of VCC.
+  Gate 1 buffers LED_SPI_SCK (2 -> 3 -> D7 CKI), gate 2 LED_SPI_MOSI (5 -> 6 -> D7 SDI); gates 3 / 4 disabled (OE to
+  +5V, inputs to GND, outputs open). The AHCT125 is rated for VCC 4.5-5.5 V: on USB, or with +5V below 4.5 V at
+  heavy powerboard load, it runs outside its rating, but its output still clears the SK9822's 3.4 V VIH. 6.5 ns max delay, 2 % of the 320 ns bit at 3.125 Mbit/s. Inputs rated -0.5 to 7 V regardless of VCC.
 - R48 (SCK) / R47 (MOSI) 100k pull-downs hold U10's inputs low while the MCU pins are Hi-Z at reset (AHCT has no bus
   hold).
 - C41 and C43-C47 100 nF (U10 and each LED), C42 22 uF where +5V enters.
 - TP18 / TP19 at D7 SDI / CKI and TP20 / TP21 at D11 SDO / CKO separate an upstream fault from a broken chain. Use
   5 V-tolerant probes.
-- Layout: D11 at the centre (79.4, 6.0), D7-D10 around it in the robot-shell pattern (chain D7 to D11), U10 at
-  (70.0, 14.2), rotation 90, just east of the radio. +5V comes from the L3 +5V region (§12.2, §12.7); U10's +5V and
+- Layout: D11 at the centre (42.9, 54.4), D7-D10 around it in the robot-shell pattern (chain D7 to D11), U10 on the
+  bottom at (33.3, 54.6), rotation 180, west of the LEDs. +5V comes from the L3 +5V region (§12.2, §12.7); U10's +5V and
   GND pins are strapped under its body (deviations 12, 13).
 
 ---
@@ -684,9 +706,9 @@ Pinouts, mating rules and the mating-board requirements are in [INTERFACE.md](..
 | J1 | microSD | Hirose DM3AT-SF-PEJM5 | Right edge, under the OLED |
 | J2 | USB-C (DFU, bench power) | GCT USB4110-GF-A | Right edge, under the OLED |
 | J3 | SWD | Samtec FTSH-107-01-L-DV-K (STDC14) | (83.5, 47.3) |
-| J4 / J5 | MOTOR 0 FL / MOTOR 1 BL (SPI1) | JST SM06B-GHS-TB | Front-left and back-left corners |
-| J6 / J7 | MOTOR 2 BR / MOTOR 3 FR (SPI2) | JST SM06B-GHS-TB | Back-right and front-right |
-| J8 | DRIBBLER (SPI4) | JST SM06B-GHS-TB | Left edge |
+| J4 / J7 | MOTOR 0 / MOTOR 3 (front, SPI3) | JST SM06B-GHS-TB | Front edge, (80.5, 3.3) / (107.5, 3.3) |
+| J5 / J6 | MOTOR 1 / MOTOR 2 (rear, SPI2) | JST SM06B-GHS-TB | Back edge, (58.0, 56.7) / (80.5, 56.7) |
+| J8 | DRIBBLER (front, SPI3) | JST SM06B-GHS-TB | Front edge, (94.0, 3.3) |
 | J9 | Radio mezzanine | Samtec LSHM-110-02.5-L-DV-A-S-K-TR | (39.70, 6.03) rotation 90, paste-in-hole shield pins |
 | J10 | KICKER I2C | JST SM04B-GHS-TB | Back edge, signals only |
 | J11 / J12 | EXP 1 / EXP 2 I2C + fused 5 V | JST SM08B-GHS-TB | Back edge |
@@ -695,8 +717,9 @@ Pinouts, mating rules and the mating-board requirements are in [INTERFACE.md](..
 
 - **Motors (J4-J8).** Pinout 1 MOSI, 2 GND, 3 MISO, 4 SCK, 5 GND, 6 CS, tabs GND. SPI only, no supply. Each has its
   own flow-through TPD4E05U06 (U4 J4, U5 J5, U12 J6, U13 J7, U14 J8) with channels in connector-pin order (MOSI 1->10,
-  MISO 2->9, SCK 4->7, CS 5->6). R24-R28 10k CS pull-ups hold the modules deselected through reset; R30 / R69 / R72
-  100k pull SPI1 / SPI2 / SPI4 SCK down. TP4 / TP5 / TP6 on SPI1 SCK / MOSI / MISO. All five modules share MISO per
+  MISO 2->9, SCK 4->7, CS 5->6). R24-R28 10k CS pull-ups hold the modules deselected through reset; R30 and R72 (100k each,
+  50k together, redundant) pull the front SPI3 SCK down and R69 (100k) the rear SPI2 SCK. TP4 / TP5 / TP6 on front
+  SCK / MOSI / MISO. All five modules share MISO per
   bus (M9). The motor-module board does not yet use this connector (M19). The motor numbering (counter-clockwise from
   front-left: 0 FL, 1 BL, 2 BR, 3 FR) is an assumption; firmware only sees CS pins.
 - **Kicker (J10).** 1 SDA, 2 GND, 3 SCL, 4 GND, tabs GND; no power (the kicker is powered by the powerboard). U17 takes
@@ -734,45 +757,43 @@ starts from the MCU pin groups: LQFP-144 at rotation 0, pins 1-36 face west, 37-
 
 | Pin group (side) | Goes to | Placement |
 |---|---|---|
-| Radio SPI3 PG15 / PB3 / PB4 / PB5, HS / DR PB7 / PB6, RST PE1 (north, pins 132-142) | J9 | J9 north-west of U2; the four matched lines reach J9 in the same lane order |
+| Radio SPI1 PG15 / PB3 / PB4 / PB5, HS / DR PB7 / PB6, RST PE1 (north, pins 132-142) | J9 | J9 north-west of U2 (39.7, 6.0); the four matched lines reach J9 in the same lane order |
 | SDMMC2 PD6, PD7, PG9-PG12 (north, 122-127), card detect PD5 (north, 119) | U1, J1, R73 | Right edge |
-| LED SPI6 PG13 / PG14 (north, 128-129) | U10, D7-D11 | Front, east of the radio |
+| LED SPI6 PA5 / PA7 (south, 41 / 43) | R70 / R71, U10, D7-D11 | U10 on the bottom at (33.3, 54.6), LEDs at x 39-47, y 52-58 |
 | USB PA11 / PA12, SWD PA13 / PA14, VBUS sense PA9 (east) | U3 / J2, J3 | Right side |
-| SPI1 PA5-PA7, CS PC5 / PB0 (south, 41-46) | J4 FL, J5 BL | Trunk west, then north / south to the left corners |
-| SPI2 PB13-PB15, CS PB12 / PD8 (east, 73-77) | J6 BR, J7 FR | Trunk east, then north / south to the right corners |
-| SPI4 PE2 / PE5 / PE6, CS PE3 (west, 1-5) | J8 | Straight west |
-| I2C2, I2C4 (south) | J10, J11 / J12 | Back edge |
-| I2C5 IMU, HSE PH0 / PH1 (west) | U11, X1 | U11 inside the pad ring on the bottom, X1 at the west pins |
-| DIP PC15 / PC3_C / PA0 / PA1 / PA3 / PA4 (pins 9, 29, 34-40), buttons, IMU interrupts, UART PD14 / PD15, PWR_SRC PD9 / PD10, NRST, BOOT0 | SW3, SW4-SW6, J15, SW1 / SW2 | Slow routes; the DIP pins were chosen so each line escapes to SW3 outside the crystal keep-out (§9.2) |
+| Front motors SPI3 PC10-PC12, CS PD0 / PD1 / PD2 (north, 111-116) | J4, J8, J7 | One trunk to the front edge, x 80.5 / 94.0 / 107.5 |
+| Rear motors SPI2 PB13-PB15, CS PB12 / PD8 (east, 73-77) | J5, J6 | Trunk to the back edge, x 58.0 / 80.5 |
+| Kicker I2C1 PB8 / PB9 (north, 139-140) | J10 | Top-right corner (116.7, 4.9) |
+| OLED I2C3 PA8 / PC9 (east, 99-100) | J13 | Raised module over the right edge |
+| Expansion I2C2 PF0 / PF1 (west, 10-11) | J11 / J12 | Left edge |
+| IMU I2C4 PD12 / PD13 (east, 81-82), HSE PH0 / PH1 (west, 23-24) | U11, X1 | U11 on the bottom at (48.6, 20.6), X1 at (38.0, 22.9) by the west pins |
+| DIP PE7-PE10 / PE14 / PE15 (south, 58-68), USER_EXTI PD11 / PD14 / PD15, UART PE2 / PE3 and PWR_SRC PE4 / PE5 (west, 1-4), NRST, BOOT0 | SW3, SW4-SW6, J15, SW1 / SW2 | Slow routes |
 
 Edges and zones:
 
 | Area | Contents |
 |---|---|
-| Front edge | J4 MOTOR 0 (14.0, 3.3) and J7 MOTOR 3 (92.0, 3.3), M3 holes H1 (3.5, 3.5) and H2 (71.0, 3.5), user buttons SW4-SW6 (x 30.5), the LED group D7-D11 (x 76-83, y 1-10) |
-| Under the radio (x 36-66, y 0-40) | U2 and its decoupling, X1, J9, R29 / R32 / R65 / R66 and other 0402 / 0603 parts, the west end of U10 |
-| Left third | J8 DRIBBLER, SW3 ROBOT ID DIP, U14 |
-| Right (service) edge | J1 microSD and J2 USB-C, under the raised OLED J13 |
-| Back right | Power: J15 on the edge; U7, U8, U9, F5, F6, Q1, D2-D4 north of it; power test row at y 38.8; SW1 / SW2 at x 65.5 and J3 at (83.5, 47.3) |
-| Back edge, west to east | H3 (3.5, 56.5), J5 MOTOR 1, J11 EXP 1, J12 EXP 2, H4 (71.0, 56.5), J10 KICKER (U17 north of it), J15 POWER, J6 MOTOR 2 |
+| Front edge, west to east | H1 (3.5, 3.5), J15 POWER (24.0, 6.4) with the power block south of it (Q1, F5, F6, U7, U8, U9, D2-D4), J9 RADIO, H2 (71.0, 3.5), J4 MOTOR 0, J8 DRIBBLER, J7 MOTOR 3 (U4 / U14 / U13 south of each), J10 KICKER (U17) |
+| Left edge | J11 EXP 1 and J12 EXP 2 (U6 / U16, F3 / F4 beside them), M2 holes H5 / H6 (17.0, 31.5 / 49.5) for the speaker board |
+| Middle | U2 (52.0, 22.5) with its decoupling, X1, U11 on the bottom, SW3 ROBOT ID DIP (51.1, 41.4), SW1 / SW2 (65.6, 44.6 / 49.0), J3 SWD (85.0, 42.8) |
+| Right (service) edge | J1 microSD and J2 USB-C (U1, U3, D1, F1 beside them), under the raised OLED J13 |
+| Back edge, west to east | H3 (3.5, 56.5), U10 and the LEDs D7-D11, J5 MOTOR 1, H4 (71.0, 56.5), J6 MOTOR 2 (U5 / U12 north of each), user buttons SW4-SW6 (x 92.7 / 102.4 / 111.7) |
 
-Parts moved during routing (2026-11-14):
-- D2 (10 V gate clamp) at (90.56, 47.3), rotation 180, bottom: directly across Q1 gate and source, as the AO3401A
-  topology draws it. R35 (100k gate pull-down) is at (97.5, 52.3), rotation 90, bottom.
-- R32 (ESP_DATA_READY 10k pull-down) on F.Cu at (43.6, 5.11), rotation 90, on the DATA_READY trace; its GND pad goes
-  to a via at (43.6, 3.75).
-- J13: no standoff holes. Each of the four module-corner positions (94.8 / 116.2, 25.5 / 48.5) keeps a 4.0 mm
-  diameter footprint rule area "J13 standoff space" on F.Cu and B.Cu (no tracks, vias, pads or footprints; pours
-  allowed), so an M2 hole can be added back later. The library footprint in `footprints/ControlBoard2027.pretty`
-  matches.
+Placement notes:
+- D2 (10 V gate clamp) at (13.8, 12.7) on the bottom, directly across Q1 gate and source, as the AO3401A topology draws
+  it. R35 (100k gate pull-down) at (6.9, 7.7), bottom.
+- R32 (ESP_DATA_READY 10k pull-down) on F.Cu at (43.6, 5.1), on the DATA_READY trace.
+- J13 has no standoff holes and no standoff keep-out areas on this board.
 
-Why three motor buses: one shared bus to connectors on three edges would need a trunk over 150 mm with long branches.
-Three buses give one point-to-point line (dribbler) and two short two-drop trunks, easy per-connector matching, and
-transfers on all three buses at once.
+Why two motor buses: the front connectors J4 / J8 / J7 share one SPI3 trunk along the front edge and the rear J5 / J6
+share SPI2 along the back edge, so each trunk stays short and each connector group is matched on its own.
 
-Height under the radio: the tallest CB parts there are U2 (1.6 mm), U10 (1.75 mm, mostly east of x 66), X1 (0.8 mm)
-and the passives. With the radios' tallest bottom part (U4 SOT-223, 1.8 mm) that leaves at least 1.6 mm in the 5 mm
-stack.
+Height under the radio (checked 2026-11-18 by mapping both radio variants onto this board): the CB parts under the
+radio outline (x 36-66, y 0-40) are U2 (LQFP-144, 1.6 mm max), X1 (0.8 mm), 0402 / 0603 passives, J9 and the HR1 / HR2
+standoff pads; the tallest radio bottom-side part is U4 (SOT-223, 1.8 mm), partly over U2, so the worst stack is
+1.6 + 1.8 = 3.4 mm in the 5.0 mm LSHM gap (1.6 mm clear). The radio holes land on HR1 / HR2 exactly (both 2.2 mm), and
+the radio outline matches the User.Drawings outline. Inboard U4 sits 0.1 mm outside an M2 hex standoff (4 mm across
+flats) at HR2: use round or M2 hex standoffs no larger than that.
 
 ### 12.2 Stackup
 
@@ -786,7 +807,7 @@ JLC04161H-3313, 1.6 mm, four layers:
 | L4 B.Cu | Signals, power pours, GND pour | |
 
 L1 references L2 GND across 0.0994 mm. L4 sits 0.0994 mm under L3, which is the +3V3 / +5V plane, so every fast net
-that runs on L4 has a GND island on L3 under it (CLAUDE.md §4): zones `GND_L3_under_B_0` to `_5`, priority 10, each
+that runs on L4 has a GND island on L3 under it (CLAUDE.md §4): zones `GND_L3_under_B_0` to `_3`, priority 10, each
 about 1.0 mm wider than the route on each side, tied to L2 through the GND vias at the layer changes. The LED chain
 nets are excluded: they run over the decoupled L3 +5V region they are powered from (C41-C47, C42 22 uF). Signals do
 not run on L2 or L3.
@@ -796,7 +817,7 @@ Effects on the L3 planes:
   around the cut by a 0.5 mm B.Cu trace from C42 that drops onto the strip through two vias at (85.8, 29.8) and
   (86.6, 29.8).
 - VBUS runs from F1 to the power block on L3 in the zone `VBUS L3 south strip` (1.0-1.7 mm wide, about 100 mm long),
-  entered through two vias at (99.1, 44.3 / 44.95) beside F1 and left through two vias at (33.5, 27.0 / 27.65); from
+  entered through two vias at (99.1, 44.3 / 44.95) beside F1 and left through two vias at (33.5, 27.0 / 27.65), joined on L4; from
   there a 0.4 mm L4 track goes to C35 / U8 pin 6 (deviation 1).
 
 Widths come from a 2D field solver (quasi-static, 35 um + 15 um plating, 15 um solder mask at Er 3.8). L1 and L4 have
@@ -813,7 +834,7 @@ calculator and order with impedance control (TODO 1.3).
 | Class | Nets | Target | Width / gap | Layers |
 |---|---|---|---|---|
 | Differential | USB DP / DM | 90 ohm diff, skew <= 0.15 mm | 0.14 / 0.15 mm | L1 (two 1.5 mm L4 hops at the duplicate contacts, over an L3 GND island) |
-| Fast bus | Radio SPI3, SDMMC2, SPI1 / SPI2 / SPI4 motor and dribbler, LED SPI6 | 50 ohm, within 1 mm of the clock | 0.15 mm | L1, L4 (L4 runs over L3 GND islands; LED nets over the L3 +5V region) |
+| Fast bus | Radio SPI1, SDMMC2, SPI3 front motors and dribbler, SPI2 rear motors, LED SPI6 | 50 ohm, within 1 mm of the clock | 0.15 mm | L1, L4 (L4 runs over L3 GND islands; LED nets over the L3 +5V region) |
 | Clock / edge-critical | HSE crystal | short, keep-out | 0.2 mm | L1 |
 | Slow | I2C, UART, GPIO, DIP, buttons, SWD, NRST, BOOT0, radio HS / DR / RST | not controlled | 0.2 mm (HS / DR 0.15 mm by the radio rule) | L1, L4 |
 | Power | VBUS, +5V_RAW, +5V_PROT, +5V_PB, +3V3_RAW, +3V3_PB, +3V3_LDO, +5V_EXT1 / 2 | current | pours and 0.35-0.8 mm tracks on the load paths; 0.2-0.3 mm only on branches without load current (test points, sense and PR1 dividers) | L1, L4, VBUS also on L3 (deviation 1) |
@@ -822,7 +843,7 @@ The `.kicad_pro` net classes: Default 0.25 mm, PWR 0.8 mm, PWR3V3 (+3V3) 0.5 mm,
 a 0.14 / 0.15 mm pair, all with 0.2 mm clearance. SIG50 covers the radio, SD, motor, dribbler and LED nets through the
 net-class patterns; the custom rules (§12.8) bound the widths and the pour clearances.
 
-Vias (all through, L1-L4): **every via is 0.45 / 0.3 mm** (605 on 2026-11-17), the JLC standard via, so the
+Vias (all through, L1-L4): **every via is 0.45 / 0.3 mm** (605 on 2026-11-18), the JLC standard via, so the
 board needs no small-via process. The project rules enforce it (min via diameter 0.45 mm, min through-hole 0.3 mm,
 annular ring 0.075 mm). Pours keep 0.2 mm from other nets. The outer GND pours are stitched to L2.
 
@@ -847,13 +868,15 @@ were fixed locally:
 - Single slow-net vias nudged: BOOT0, EXPANSION_SCL, USER_EXTI1, VBUS_SENSE, ESP_RST, SWDIO; GND stitching vias that
   collided were moved or dropped.
 - GND stitching under the OLED J13 (x 91.8-119.2, y 25-53) was re-laid on the board's diamond lattice (5 mm square
-  with a centre via, offset (1.224, 1.231) mm board-local, nearest neighbour 3.5 mm); 11 points are nudged 0.25-0.5 mm
-  and 7 points with no legal spot are left out. Fan-out vias, the x 118.72 edge row and the USB return vias are kept.
+  with a centre via, offset (1.224, 1.231) mm board-local, nearest neighbour 3.5 mm); 9 points are nudged 0.25-0.5 mm
+  and 9 points are left out: 7 with no legal spot, and 2 beside the J2 shield pads ((113.72, 33.23) and
+  (115.87, 41.58)), where the L1 / L4 GND pour does not reliably reach the via and KiCad can give a trackless via the
+  L3 +3V3 net instead. Fan-out vias, the x 118.72 edge row and the USB return vias are kept.
 - Deviation: GND return vias near the dense fast buses are sparser. Radio CS / MISO, two front-motor vias and SD D3
   now have their nearest GND via 1.6-2.0 mm away; SDMMC_CMD and SD_CLK at U2 and SD_CLK at the socket 2.5-3.4 mm (no
   legal spot within 2 mm at the new via size). These lines all keep the solid L2 reference.
 
-### 12.4 Radio SPI3 link (U2 -> J9)
+### 12.4 Radio SPI1 link (U2 -> J9)
 
 - J9 signal row (x 41.55) reads north to south RST (20), MISO (16), DR (12), HS (10), SCK (8), MOSI (4), CS (2). The
   U2 north-row pins read west to east RST PE1, HS PB7, DR PB6, MOSI PB5, MISO PB4, SCK PB3, CS PG15. The pin orders
@@ -861,7 +884,7 @@ were fixed locally:
   fan-out at the MCU sets the four MCU-side vias in the J9 order, so the L4 runs do not cross.
 - SCK, MOSI, MISO and CS each have one via (0.45 / 0.3 mm since 2026-11-17) at the MCU (MISO (48.07, 7.4), SCK (48.75, 8.45), MOSI
   (46.75, 9.14), CS (49.25, 10.8)) and one in the J9 column at x 42.73 (y 4.78, 6.78, 7.78, 8.78); between them the
-  line is 0.15 mm on L4 over the L3 GND island `GND_L3_under_B_5` (x 41.65-50.32, y 3.7-12.23). R65 / R66 sit on L1
+  line is 0.15 mm on L4 over the L3 GND island `GND_L3_under_B_3` (x 41.66-50.32, y 3.7-14.62). R65 / R66 sit on L1
   at their pins.
 - Lengths 14.478-15.481 mm (§12.5), matched to SCK 15.200 mm: MOSI +0.200, MISO +0.281, CS -0.722 mm, all within
   1 mm of the clock (about 5 ps). Tuning: two 6W U bumps on MOSI, one 3.6W U bump on SCK, 3W-3.7W U bumps on CS
@@ -878,34 +901,33 @@ were fixed locally:
 
 ### 12.5 Length tables
 
-MCU pad to receiver / connector pad, from the board copper, measured by script on the saved repo board on
-2026-11-14. Series resistors add their pad-to-pad span, flow-through ESD spans count as copper, and every via (all
-are L1-L4 through vias) counts 1.6 mm. Tolerance: every line within 1 mm of its clock; USB skew 0.15 mm.
-Convention: lengths run to the pad centres. Measured to where the copper meets each pad (audit round 2), a few lines
-shift by up to about 0.8 mm (for example SPI4 SCK / MOSI vs MISO / CS 0.825 mm, from the in-pad segments at J8; radio
-CS about -0.98 mm); every group stays inside the 1 mm tolerance either way.
+MCU pad to receiver / connector pad, from the board copper, re-measured by script on the C4L2 board on 2026-11-17
+(after the via-size change; identical to the C4L2 layout before it except USB, which is 0.525 mm longer on both lines
+since J2 moved to the edge). Series resistors add their pad-to-pad span, flow-through ESD spans count as copper, and
+every via (all are L1-L4 through vias) counts 1.6 mm. Tolerance: every line within 1 mm of its clock; USB skew
+0.15 mm. Lengths run to the pad centres.
 
 | Group | Lines | Length (mm) | Worst vs clock |
 |---|---|---|---|
-| Radio SPI3 (J9) | SCK 15.200, MOSI 15.400, MISO 15.481, CS 14.478 | 14.478-15.481 | CS -0.722, MISO +0.281 |
+| Radio SPI (J9) | SCK 15.200, MOSI 15.400, MISO 15.481, CS 14.478 | 14.478-15.481 | CS -0.722 |
 | Radio slow lines (not matched) | HS 8.912, DR 10.088 | - | asynchronous (deviation 10) |
-| SDMMC2 (J1) | CK, CMD, D0-D3 | 62.480 | 0.000 |
-| SPI1 to J4 (MOTOR 0) | SCK 78.328, MOSI 77.405, MISO 78.328, CS0 78.328 | 77.405-78.328 | MOSI -0.924 |
-| SPI1 to J5 (MOTOR 1) | SCK 56.550, MOSI / MISO / CS1 56.797 | 56.550-56.797 | +0.247 |
-| SPI2 to J7 (MOTOR 3) | SCK, MOSI, MISO, CS3 | 57.407 | 0.000 |
-| SPI2 to J6 (MOTOR 2) | SCK, MOSI, MISO, CS2 | 65.595 | 0.000 |
-| SPI4 to J8 (DRIBBLER) | SCK, MOSI, MISO, CS | 40.993 | 0.000 |
-| LED SPI6 (U2 -> U10) | SCK 28.662, MOSI 27.749 | 27.749-28.662 | MOSI -0.913 |
-| USB (U2 -> J2 active contacts) | A: DP 65.390, DM 65.390; B: DP 60.690, DM 60.690 | 60.690-65.390 | skew 0.000 in both orientations |
+| SDMMC2 (J1) | CK 67.190, CMD 67.077, D0 67.493, D1 67.315, D2 67.660, D3 67.660 | 67.077-67.660 | D2 / D3 +0.470 |
+| J4 (MOTOR 0) | SCK 37.965, MOSI 38.577, MISO 37.878, CS0 38.513 | 37.878-38.577 | MOSI +0.612 |
+| J7 (MOTOR 3) | SCK 64.965, MOSI 65.577, MISO 64.878, CS3 65.793 | 64.878-65.793 | CS3 +0.828 |
+| J8 (DRIBBLER) | SCK 51.465, MOSI 52.077, MISO 51.378, CS 51.554 | 51.378-52.077 | MOSI +0.612 |
+| J5 (MOTOR 1) | SCK 78.222, MOSI 78.326, MISO 78.339, CS1 78.215 | 78.215-78.339 | MISO +0.117 |
+| J6 (MOTOR 2) | SCK 55.722, MOSI 55.826, MISO 55.839, CS2 55.526 | 55.526-55.839 | CS2 -0.196 |
+| LED SPI6 (U2 -> U10) | SCK 35.917, MOSI 36.022 | 35.917-36.022 | MOSI +0.105 |
+| USB (U2 -> J2 active contacts) | A: DP 63.742, DM 63.795; B: DP 59.042, DM 59.095 | 59.042-63.795 | skew 0.053 in both orientations |
 
 The LED buffered leg (U10 -> D7, not matched by intent: 3.125 Mbit/s) measures CKI 34.63 mm, SDI 23.46 mm (audit
 round 5; about 75 ps apart). The USB unused-orientation stubs are 3.4-5.6 mm (audit round 2).
 
 ### 12.6 Termination and protection
 
-- Series source resistors within 5 mm of the MCU pin on every fast line: R65 / R66 (radio), R6 (SD CK), R15 / R16
-  (SPI1), R67 / R68 (SPI2), R70 / R71 (SPI4). Damping values, not exact matches (§5.4). LED SPI6 has none: R47 / R48
-  on it are 100k pull-downs at U10's inputs.
+- Series source resistors within about 5 mm of the MCU pin on every fast line (R16 is 5.6 mm of copper from PC12): R65 / R66 (radio), R6 (SD CK), R15 / R16
+  (front SPI3), R67 / R68 (rear SPI2), R70 / R71 (LED SPI6). Damping values, not exact matches (§5.4). R47 / R48 are
+  100k pull-downs at U10's inputs.
 - Flow-through ESD at each connector, with no via between the connector pin and the protector and GND pads straight
   to vias: U1 (SD, J1), U3 (USB, J2), U4 / U5 / U12 / U13 / U14 (motors, dribbler), U6 / U16 (expansion J11 / J12;
   rebuilt 2026-11-14 after audit round 3: the MCU trunks enter U16's and U6's north pads, J11 / J12 leave from the south
@@ -913,8 +935,8 @@ round 5; about 75 ps apart). The USB unused-orientation stubs are 3.4-5.6 mm (au
   protector by script: no connector pin reaches U2 around its protector), U17
   (kicker J10). The radio link has no ESD on this board (protected on the radio). Re-check every protector in the
   audit (CLAUDE.md §8).
-- The two-drop motor buses (SPI1, SPI2) branch once near the MCU, with nothing past the branch. The arms differ in
-  length (deviation 9).
+- The motor buses (front SPI3 to J4 / J8 / J7, rear SPI2 to J5 / J6) are matched per connector group; the drops
+  differ in length (deviation 9).
 
 ### 12.7 Crystal and power entry
 
@@ -980,6 +1002,97 @@ turn-angle, duplicate-segment, T-junction, meander and via-on-pad scans; its fix
 11 overlapping collinear segments removed, the radio accordions rebuilt (deviation 24), ESD GND vias added
 (deviation 26), VBUS / D1 IN / +3V3_LDO / TPS2116 input and output runs widened. Remaining items are listed in §14.
 
+### 12.9a Final audit (2026-11-18)
+
+Independent schematic and layout audits on the saved board (DRC with parity clean; custom rules proven to compile with
+a test rule; lengths re-measured and matching §12.5). No critical findings.
+
+Fixed in this round:
+- Sheet 02: R70 / R71 were drawn beside PG13 / PG14 (unconnected); now in line between PA5 / PA7 and the LED labels.
+  Netlist unchanged.
+- Notes §4-§13 pin text corrected to this board (UART PE2 / PE3, PWR_SRC PE4 / PE5, SPI3 front / SPI2 rear / SPI6
+  LED / SPI1 radio, I2C1-4 pins, connector positions, placement table); deviations 29 and 33 retired; m12 rewritten.
+- §4.8: the U9 output via count corrected; +3V3 limited to about 1 A and +5V to 2 A (INTERFACE.md J15 updated).
+- Stale descriptions (R67, R68, R69, R72, J6) and the sheet 04 SD length note.
+- Layout: the D1 input T-junction moved onto the bridge via; the 0.5 um gap on Net-(D6-A) merged into one segment.
+
+Open, recorded (none needs a BOM change):
+- SD pull-ups R1-R5 and TP1 hang off mid-track vias on 3.5-4.3 mm bottom stubs over the L3 +3V3 plane (about 35 ps
+  each); moving them would move fast copper.
+- R16 is 5.6 mm from PC12 (rule about 5 mm). U6 is 7.8-9.8 mm of copper from J11 (flow-through, slow I2C).
+- GND return vias more than 1 mm from fast layer changes beyond those listed in the via-rule paragraph: SDMMC_D0 / D1
+  at U2 (2.1 / 1.8 mm), D7-CKI / D7-SDI (2.3 / 2.0 mm), LED SCK / MOSI (1.3 / 1.4 mm), rear SPI2 vias (1.1-1.35 mm),
+  front MISO vias (1.1-1.3 mm).
+- SD D0 / D2 near (52.3-53.3, 10.6) and D3 near (96.4, 17.8) cross the edge of a neighbour's L2 antipad for under
+  0.2 mm.
+- Spacing below 3W: SDMMC_D3 to KICKER_I2C_SCL 0.285 mm over 1.4 mm near (64.9, 7.4); D7-CKI to D10-SDO 0.20 mm over
+  4.2 mm near (38.3, 50.1); HS / DR 0.20 mm (slow).
+- Geometry on slow or frozen nets: D7-CKI turns 90 degrees 0.03 mm outside D7 pad 4; PWR_SRC_3V3 branches at its via
+  (23.3, 27.6) (no room to move the via: PWR_SRC_5V and a +3V3 via beside it); BOOT0 is 0.15 mm for 1.9 mm between
+  U2 pin 137 and the HANDSHAKE via; D10-SDO steps 0.15 -> 0.2 mm off a pad; 13 collinear segment pairs; 3 segments
+  0.5-1.4 degrees off 45; a VBUS track end 20 um off the C31 pad centre (inside the pad).
+- 3D model missing for J2 (USB4110): the KiCad 10 library has none, and J2 uses the stock KiCad footprint, so adding a model needs a project copy of that footprint (relinked in the schematic). D7-D11 and J9 use simple project models in `footprints/ControlBoard2027.3dshapes/` (body outline and pin-1 mark only).
+- U6 (J11 ESD) is 7.8-9.8 mm of copper from J11: still flow-through with no via before it; moving it next to J11 has no room (R40 / R42, C37 / C39, F3).
+- Sheet 07 groups the ESD arrays by bus, not each with its connector (a full redraw of the sheet).
+- Schematic readability: several notes outside their group boxes (sheets 01, 03, 05, 06, 08), R49 outside a box,
+  connector ESD arrays boxed apart from their connectors on sheet 07, some field overlaps (J9 GND symbols, J11 / J12
+  values, TP21 / D11, VBUS_SENSE / OLED_I2C_SCL labels on sheet 02), oversized pages and empty title blocks.
+- Rating fields that describe the JLC part rather than the MPN (C24 / C26, C28 / C33 / C37 / C42), generic test-point
+  descriptions, a few Digi-Key product-page datasheet links, and datasheets not yet in `datasheets/` (MCP1826S,
+  USB4110, DM3AT, JST PH / GH, AN5419).
+- SK9822 VDD maximum is 5.3 V: the powerboard 5 V must stay at or below 5.3 V (TODO 1.5).
+
+Further work on 2026-11-18 (after the audit above): second U9 output via; 3D model for the SK9822-EC20; 11 split
+collinear track pairs merged (copper unchanged); "COMPACT RADIO" on the top silkscreen beside J9; title blocks on
+every sheet; R70 / R71 and the AUTO3 / AUTO5 labels redrawn; notes moved into their boxes on sheets 03, 05, 06, 08; boxes round the sheet 01 protection note and R49; 5 off-angle slow-net segments straightened; stale descriptions (R67-R69, R72, J6, TP18 / TP19).
+Return vias within 1 mm of the remaining 30 fast via positions were searched for: no legal spot exists (dense via
+fields under the buses); every one keeps solid L2 GND under the line.
+Why the missing 1 mm return vias do not matter (calculated 2026-11-18 from the board, script retmath.py in the session
+notes): an L1 <-> L4 change moves the return current across the 1.27 mm L2-L3 core through the nearest GND via. The loop
+inductance of a signal via plus return via is (mu0 h / pi) ln(d / r): 0.96 nH at d = 1 mm, 1.58 nH at the worst via
+(SD_CLK at U2, d = 3.35 mm), so at most +0.61 nH. With 0.5 ns edges (faster than MEDIUM / HIGH OSPEEDR) that is a
+1.2 % reflection, +6 ps delay and 81 mV of L dI/dt per line; with 1 ns edges half that. Even if all six SD lines
+switched through that one via (they do not: at U2 CLK returns through (56.27, 6.67), the data lines through
+(51.25, 9.30) / (50.97, 10.10)) the bound is 0.49 V, below the 1.2 V a falling SD clock would need to cross back
+over the card VIH (0.625 VDD) from VIL (0.25 VDD); data is sampled about 20 ns after the edge, when the bounce is
+gone. The motor (6 Mbit/s), LED (3.125 Mbit/s, AHCT edges about 3 ns) and radio (24 MHz) links have more margin.
+Keep OSPEEDR at MEDIUM for SDMMC2 (FIRMWARE.md §1.4) unless TP1 shows the eye needs more.
+
+### 12.9b Datasheet audit of the schematic (2026-11-18)
+
+Four independent reviews (power, MCU, on-board peripherals, connectors / mating boards) checked every part pin by
+pin against its datasheet and the prototype ControlBoard2027 (built and working). Result: **no critical or major
+defect that stops the board working under normal conditions** (powerboard 5 V and 3.4 V +-3 %, or USB 5 V bench
+power; 0-50 C).
+
+| Block | Verdict | Key evidence |
+|---|---|---|
+| U8 / U9 TPS2116, priority mode | Works | SLVSFG1A Table 5-1 pinout; PR1 rising 3.57-4.19 V (U8), 2.37-2.78 V (U9) with VREF 0.92-1.08 V |
+| Q1 AO3401A reverse polarity, D2 | Works | Vgs -4.85 V, Rds(on) <= 75 mohm hot; 0.24-0.30 W at 2 A |
+| D1 / D3 / D4 TVS0500 | Works | DRV pinout; VBR >= 7.5 V (VRWM 5.0 V vs 5.15-5.25 V rails: leakage only) |
+| F1 / F3-F6 PTCs | Works with conditions | hold at 50 C: 0.95 A (F5 / F6), 0.55 A (F1, F3, F4) |
+| U7 MCP1826S | Works with conditions | DS22057B pinout; dropout 0.4 V at 1 A; about 90 uF on its output on USB (above the 22 uF recommendation, bench check) |
+| USB-C sink, U3, VBUS sense | Works | Rd 5.1k on CC1 / CC2; 9.1 uF VBUS; PA9 3.10 V at 5.25 V VBUS |
+| U2 STM32H723: 144 pins, supplies, VCAP, BOOT0, NRST | Works | DS13313 Fig. 6, Tables 7 / 14; all alternate functions in FIRMWARE.md 1.3a verified against Table 8 |
+| HSE X1 25 MHz | Works with conditions | CL 9.5-10.5 pF vs 10 pF; gm margin 1.8x; drive level up to about 103 uW at 1.4 Vpp vs 100 uW: measure |
+| ROM bootloader / USB DFU | Works | AN2606 Table 114: no connected pin can stop DFU (R13 on PA15, R30 / R72 on SCK) |
+| microSD J1, U1, card detect | Works | 47k pull-ups; 24 MHz / 400 kHz from 48 MHz; DET to PD5 with R73 |
+| IMU U11 | Works | DS14623 Table 2, mode 1, address 0x6A, I2C4 |
+| U10 74AHCT125 + SK9822 D7-D11 | Works with conditions | VOH >= 3.94 V vs VIH 3.4 V; 3.125 MHz vs 15 MHz; AHCT rated 4.5-5.5 V; SK9822 VDD <= 5.3 V |
+| DIP SW3, buttons SW4-SW6, STDC14 J3 | Works | 100k pull-ups; 1 ms / 2 ms debounce; J3 13 / 14 to USART6 RX / TX |
+| J9 radio (compact Inboard / Overhang) | Works with conditions | all 20 pads mate (p <-> p+-1); ESP-Hosted must set CLK GPIO6, DATA_READY GPIO0 |
+| J10, J11 / J12, J13 | Works with conditions | pinouts, ESD flow-through, I2C addresses; mating boards not in the repo |
+| J4-J8 motors, J15 powerboard | Cannot be proven | no matching motor board or powerboard design in the repo (README items 3 and 8) |
+
+Conditions (firmware settings are in FIRMWARE.md §1.3b):
+- Switching between the powerboard and USB while USB is attached dips +3V3 to about 2.15-2.9 V for a moment
+  (TPS2116 break-before-make): brown-out reset on, radio / SD re-init, or do not switch while USB is attached.
+- The old prototype radio mates with J9 mechanically but puts GND on the +3V3 pins: compact radios only (silkscreen
+  "COMPACT RADIO" beside J9).
+- Measure on the first board: HSE drive level, +5V at U10 under LED load, hot-plug overshoot at U8 VIN1, U7 stability
+  with the bulk on its output, SD CK at TP1, I2C rise times with real cables.
+- Motor MISO has no pull: internal pull-down in firmware.
+
 ### 12.10 Silkscreen
 
 Text 1.0 mm (JLC's minimum), titles 1.2 mm, 0.15 mm stroke; the board text rule is 1.0 mm / 0.15 mm. No text over a
@@ -994,8 +1107,10 @@ pad.
   GND") is on the bottom silkscreen.
 - Function names on every connector (MOTOR 0-3, DRIBBLER, EXP 1 / 2, KICKER, POWER, SWD, RADIO, USB, microSD, OLED);
   buttons RESET, BOOT, BTN0-2; DIP "ROBOT ID" with bits 1-6; rail LEDs 5V / 3V3; DotStars LED1-LED5 in chain order;
-  test points by signal name; board name "ControlBoard2027_C4L".
-- No silkscreen art on this board.
+  test points by signal name; board name block "ControlBoard2027 / 2026-11 / Designed By ...".
+- Silkscreen art: group `silk_art_miku` (§1.0, "Silkscreen art"), from Wikimedia Commons under a Creative Commons
+  licence per the owner. If the licence requires attribution (CC BY / BY-SA), record the file page, author and licence
+  here and credit the author where the licence asks (CLAUDE.md §13).
 - About 100 reference designators with no free spot at 1.0 mm are hidden or on F.Fab only. The OLED module outline
   is on F.Fab.
 
@@ -1022,7 +1137,7 @@ independent audit of this board is still open (TODO 1.1) and may add items.
 3. **USB duplicate contacts.** J2 orders its contacts B6 (DP), A7 (DM), A6 (DP), B7 (DM); U3 passes each through its own
    channel. DP / DM / DP / DM in one row cannot be joined without one crossing, so each inner-contact branch takes a
    1.5 mm L4 hop (DP vias (108.18, 36.0) / (108.18, 37.5), DM vias (108.83, 36.5) / (108.83, 38.0)) over the L3 GND
-   island `GND_L3_under_B_2`. Skew is 0.000 mm in both plug orientations (§12.5). The joins are T's at the vias
+   island `GND_L3_under_B_1`. Skew is 0.053 mm in both plug orientations (§12.5). The joins are T's at the vias
    (inherent to duplicate contacts). Three of the four hop vias have their nearest GND via or GND pad 1.07-1.28 mm
    away (deviation 8). Every contact passes U3 before any via.
 4. **Other copper near the USB pair.** Below 3x the pair gap (0.45 mm) edge to edge, besides deviation 2: the SWDIO
@@ -1045,11 +1160,11 @@ independent audit of this board is still open (TODO 1.1) and may add items.
    1.79 mm, D0 (53.25, 10.55) 2.22 mm, CMD (53.75, 10.55) 2.68 mm; the SD pull-up vias D2 (94.2, 14.1) 2.23 mm and
    CLK (97.6, 15.6) 2.18 mm; the SPI2 MISO via (67.8, 30.25) 1.78 mm. The LED D7-CKI / D7-SDI vias reference the L3 +5V region, not GND. SD runs at up to 24 MHz and the
    motor buses at 6 Mbit/s with slow edges (deviation 9).
-9. **Unequal two-drop motor arms.** SPI1 (J4 78.3 / J5 56.8 mm) and SPI2 (J6 65.6 / J7 57.4 mm) branch once near the
-   MCU into two arms. At about 6.7 ps/mm the longest arm is about 0.53 ns one way, so a reflection is back at the
+9. **Unequal motor drops.** Front SPI3 reaches J4 / J8 / J7 at 38.0 / 51.5 / 65.0 mm and rear SPI2 reaches J5 / J6
+   at 78.2 / 55.7 mm (SCK, §12.5). At about 6.7 ps/mm the longest drop is about 0.52 ns one way, so a reflection is back at the
    branch within 1.1 ns. With driver edges slower than about 3 ns the reflections merge into the edge and each arm
    acts as a lumped load; with VERY_HIGH edges (under 1 ns) the other arm would ring at J4-J7. **Firmware
-   requirement:** PA5, PA7, PB13, PB15 and the motor CS pins PC5, PB0, PB12, PD8 at OSPEEDR LOW or MEDIUM, never HIGH
+   requirement:** PC10, PC12, PB13, PB15 and the motor CS pins PD0, PD1, PD2, PB12, PD8 at OSPEEDR LOW or MEDIUM, never HIGH
    or VERY_HIGH. Check SCK at J4 and J7 on a scope.
 10. **Radio slow lines not matched.** HS 8.9 mm and DR 10.1 mm are not matched (slow, asynchronous). The matched four
     are within 1 mm of SCK (MOSI +0.200, MISO +0.281, CS -0.722 mm, §12.5), not tighter: see deviation 24.
@@ -1119,19 +1234,14 @@ independent audit of this board is still open (TODO 1.1) and may add items.
     pin 3 / pin 8 strap and the solid pour: nearest GND via 1.25-1.37 mm for pin 3 of U4, U5, U12, U13, U14 and U16,
     1.66 mm for U6 pin 8, 1.51 mm for U17 pin 8 (audit round 4).
 27. **J15 UART without an ESD part.** PWR_UART_TX / RX run to the powerboard on a short harness inside the robot, not
-    to an external connector. R33 / R34 (1k) limit any injected current into PD15 / PD14 to a few mA (§4.2), within
+    to an external connector. R33 / R34 (1k) limit any injected current into PE3 / PE2 to a few mA (§4.2), within
     the pin injection limits. No space is left at J15 for an array.
 28. **Track ends inside a via ring, off its centre.** About 30 track ends (0.14-0.21 mm off centre) end inside a
     same-net via's copper where the via is the corner, the same as a pad corner (CLAUDE.md §9). These are intended
     geometry, not 1 nm rounding misses; near-coincident track ends (1-5000 nm) are 0 after the 2026-11-14 clean-up.
-29. **SPI1 output pins are TT, not 5 V tolerant.** PA5 (SCK), PA7 (MOSI), PC5 (MOTOR0 CS) and PB0 (MOTOR1 CS) are
-    TT_ha (DS13313 Table 7): 4.0 V absolute maximum, and PA4 / PA5 allow 0 mA injected current (Table 10, absolute
-    maximum ratings, so a damage limit). They leave the
-    board on the J4 / J5 cables. SCK and MOSI have no FT_h alternative (PB3 / PB5 carry the radio, the SDMMC2 pins
-    the SD card, SPI5 on PF7-PF9 sits behind the crystal keep-out), so moving only the CS lines would not lift the
-    limit. Kept as inherited from ControlBoard2027_C: the motor modules on J4 / J5 must use 3.3 V logic and never pull
-    a line above 3.6 V (INTERFACE.md J4-J8). The TPD4E05U06 arrays (U4 / U5) take ESD; R15 / R16 30R are in SCK /
-    MOSI. SPI2 (J6 / J7) and SPI4 (J8) pins are FT_h.
+29. **Retired (2026-11-18).** The C4L motor pins PA5 / PA7 / PC5 / PB0 were TT. On this board every motor pin is
+    FT_h or FT_fh (PC10 / PC11 FT_fh; PC12, PD0-PD2, PB12-PB15, PD8 FT_h; DS13313 pin table). PA5 / PA7 now carry the
+    LED SPI6 to U10 on the board only (PA5 allows 0 mA injected current, Table 10, but it never leaves the board).
 30. **USB CC1 / CC2 without an ESD part.** CC1 / CC2 see only the 5.1k Rd resistors to GND; U3 protects the data
     pair only. Low risk (resistive, no MCU pin on the net). Recorded, not changed.
 31. **+5V_EXT1 / +5V_EXT2 (J11 / J12 pins 3-4) without a TVS.** The expansion supply pins run J11 / J12 -> F3 / F4
@@ -1140,18 +1250,12 @@ independent audit of this board is still open (TODO 1.1) and may add items.
     by about 55 mV. A mis-wired supply above 6 V is not stopped by a TVS0500 either (it would burn; F3 / F4 limit the
     current). The expansion boards plug in inside the robot. Recorded (audit round 3), not changed; add a TVS on
     the connector side of F3 / F4 if expansion cables are ever hot-plugged outside the robot.
-32. **J13 OLED socket without an ESD part.** PB8 / PB9 (OLED_I2C) and +3V3 go to the J13 socket with no protector.
+32. **J13 OLED socket without an ESD part.** PA8 / PC9 (OLED_I2C3) and +3V3 go to the J13 socket with no protector.
     The OLED module plugs in once at assembly, sits inside the robot and carries no cable; R14 / R17 (2.2k pull-ups)
     and the FT_fh pins (DS13313 Table 7) take ordinary handling. Recorded (audit round 4), not changed (no new parts for this build).
-33. **Expansion SDA on PF15 (0 mA negative injection).** EXPANSION_SDA (PF15, pin 55, I2C4 AF4) leaves the board on
-    J11 / J12. DS13313 Table 50 lists PF15 with 0 mA negative injection (functional susceptibility: leakage into
-    neighbouring pins, not damage). U6 / U16 clamp ESD, but they do not stop a small below-GND undershoot from reaching
-    the pin's own diode. Kept (no re-pin for this build): expansion boards must not drive SDA below GND, and are
-    plugged only with the board unpowered (INTERFACE.md J11 / J12). Re-pinning was assessed (audit round 5) and not
-    done: the only free FT I2C4 pair is PD12 / PD13 (pins 81 / 82, AF4) on U2's east side, while PF14 / PF15 sit on the
-    south side directly above U6 / U16; the moved pair would have to cross the SPI2 motor band, USB, SD and the power
-    corner, a major re-route of matched buses for a functional-susceptibility limit. Keep in mind for a later
-    revision.
+33. **Retired (2026-11-18).** The C4L expansion SDA was on PF15 (0 mA negative injection, DS13313 Table 50). On this
+    board EXPANSION_SDA is PF0 (pin 10, FT_fh) and SCL PF1 (pin 11, FT_fh), both under Table 50 "all other I/Os"
+    (5 mA negative).
 34. **No series resistors in the DotStar chain.** The SK9822 datasheet application circuit puts about 500 ohm in series
     with each signal input and output (protection when a chain is plugged live). D7-D11 are an on-board chain with short
     traces, driven by U10, never hot-plugged; not fitted (no new parts for this build).
@@ -1224,7 +1328,7 @@ deselected. Add a 100k pull-down if they do not.
 signals only (GH 4P: 1 SDA, 2 GND, 3 SCL, 4 GND); the kicker design must adopt it.
 
 **M11 LED SPI pins in the old .ioc.** V0.3 puts the LED SPI2_SCK on PA9 (VBUS_SENSE here). Here the LEDs are on SPI6
-(PG13 / PG14) and SPI2 (PB13-PB15) is the right-wheel motor bus. Re-pin in the .ioc.
+(PA5 / PA7) and SPI2 (PB13-PB15) is the rear motor bus. Re-pin in the .ioc.
 
 **M16 Voltage scaling.** 240 MHz SYSCLK exceeds the 200 MHz AHB limit at VOS1. Use HPRE /2 at VOS1, or VOS0 with its
 105 °C junction limit.
@@ -1253,14 +1357,18 @@ board's J2 is still the older 8-pin JST PH. Change it to this pinout, or build a
 - **m6** Cabled I2C: 2.2k allows about 159-161 pF. Measure at TP7 / TP8.
 - **m9** Crystal drive level may reach 103 uW at 1.4 Vpp (max 100 uW). Measure and fit R12 if needed. ABM8 B1U is rated
   -20 to 70 °C (D1G -40 to 85 °C).
-- **m11** PWR_SRC_5V (PD10) and PWR_SRC_3V3 (PD9, shares EXTI9 with VBUS_SENSE on PA9): poll them.
-- **m12** PA4 (bootloader SPI1 NSS) is DIP4: a closed switch pulls NSS low in DFU. Nothing drives the motor SCK (R30
-  pull-down), so no SPI frame arrives and DFU still answers on USB. PA3 (DIP5) and PD9 (PWR_SRC_3V3) are bootloader
-  USART2 / USART3 RX inputs; either can sit low (DIP5 closed, or USB-only power). Other connected pins the ROM
-  bootloader drives or samples (DS13313 Table 7 "(boot)" marks): USART3_TX on PB10 (kicker SCL) and PD8 (MOTOR3 CS),
-  push-pull high in DFU, harmless; USART1_TX on PA9 (VBUS_SENSE), about 12 uA into R20 / R21; I2C1 on PB6
-  (ESP_DATA_READY, driven by the radio) and PB9 (OLED SDA). Bench check (TODO 2.x): DFU enumerates with DIP5 closed
-  on USB power only.
+- **m11** PWR_SRC_5V (PE5, EXTI5) and PWR_SRC_3V3 (PE4, EXTI4): check EXTI line sharing in CubeMX, or poll them.
+- **m12** Connected pins that the ROM bootloader drives or samples (DS13313 pin table "(boot)" marks), on this board:
+  - SPI3 (PC10 SCK, PC11 MISO, PC12 MOSI) is the front motor bus; the bootloader's SPI3 slave stays deselected
+    because R13 holds its NSS (PA15) high (§5.3).
+  - SPI1 SCK / MOSI (PA5 / PA7) are the LED lines to U10's inputs; nothing on the board drives them.
+  - SPI4 MOSI (PE14) is DIP4: a closed switch holds it low, and with SPI4 NSS (PE11) unconnected no frame arrives.
+  - I2C2 (PF0 / PF1, expansion), I2C3 (PA8 / PC9, OLED) and I2C1 (PB6 ESP_DATA_READY, PB9 kicker SDA) are
+    bootloader I2C slaves; a device on J11 / J12 or J10 that acts as an I2C master could talk to the bootloader.
+  - USART3_TX on PD8 (MOTOR2 CS) and USART1_TX on PA9 (VBUS_SENSE, about 12 uA into R20 / R21) idle high in DFU;
+    FDCAN1 on PD0 / PD1 (MOTOR0 / DRIBBLER CS) idles recessive (high). All harmless.
+  Bench check (TODO 2.x): DFU enumerates on USB power only, with DIP4 closed and the motor, kicker and expansion
+  cables plugged in.
 - **m14** J3 has no protection against a 5 V probe.
 - **m16** The LSM6DSV320X has no reset pin. Firmware uses the SW_RESET / BOOT bits after a brown-out and runs I2C bus
   recovery.

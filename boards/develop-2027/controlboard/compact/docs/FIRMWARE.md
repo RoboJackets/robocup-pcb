@@ -20,7 +20,7 @@ outline top-left corner, x right, y down (robot front at the top of the CB).
 | Supply | PWR_LDO_SUPPLY | the H723 has no SMPS |
 | BOR | set a level in the option bytes | rail sags reset the MCU instead of browning out peripherals |
 | CRS | off | USB runs from PLL1Q |
-| LSE / RTC | off | no 32.768 kHz crystal; PC14 is USER_EXTI2, keep RTC tamper / wake-up off on PC13 |
+| LSE / RTC | off | no 32.768 kHz crystal; on the C4L2 PC13-PC15 are unconnected (USER_EXTI2 is PD15); keep RTC tamper / wake-up off on PC13 |
 
 The ROM bootloader uses its own clocking, so DFU does not depend on these settings.
 
@@ -157,7 +157,7 @@ Margin note: in the bootloader PD8 (USART3 TX, input until detected) and PD0 (FD
 pull the 10k-pulled-up chip selects down to about 2.5-2.75 V (estimated, internal pull-down 30-50k). That is still
 above 0.7 x VDD, so the motor boards stay deselected, with about 0.2 V margin.
 
-Polled inputs share EXTI line numbers with interrupt pins (PE5 / PD5, PE14 / PD14, PE15 / PD15, PE7 / PB7); this is harmless as
+Polled inputs share EXTI line numbers with interrupt pins (PE5 / PD5, PE14 / PD14, PE15 / PD15, PE7 / PB7, PE9 / PA9); this is harmless as
 long as the polled pins stay plain inputs with no EXTI enabled. Every pin not listed in this subsection is
 unconnected on the C4L2 (set as analog), including PE13, PG13 / PG14, PF14 / PF15, PB10 / PB11, PA0-PA4, PA6, PC5, PB0,
 PD9, PD10, PC13-PC15 and PC3_C.
@@ -165,6 +165,23 @@ PD9, PD10, PC13-PC15 and PC3_C.
 > **ControlBoard2027_C4L2:** sections 1.4-1.7 still describe the C / C4L pin names (radio on SPI3, IMU on I2C5,
 > motor SCK / MOSI on PA5 / PA7). Read them with the C4L2 map of 1.3a: the same rules apply to the C4L2 buses
 > (front SPI3 PC10 / PC12, rear SPI2, radio SPI1 PB3-PB5).
+
+### 1.3b ControlBoard2027_C4L2 settings the hardware depends on (datasheet audit 2026-11-18)
+
+- Clocks: HSE 25 MHz crystal mode (not bypass). PLL1 M 5 / N 96 / P 2 / Q 10: VCO 480 MHz, SYSCLK 240 MHz, PLL1Q
+  48 MHz for USB, SDMMC2 and SPI1-SPI3. At VOS1 set AHB /2 and APB <= 100 MHz. SPI6 (LEDs) from HSE / 8 = 3.125 MHz.
+  LDO supply mode.
+- Brown-out reset on (option bytes, BOR level about 2.7 V). Switching the source while USB is attached dips +3V3 to
+  2.15-2.9 V for a moment (TPS2116 break-before-make); the BOR and the radio / SD re-init must handle it, or do not
+  switch the powerboard while USB is attached.
+- USB: enable USB33DEN; turn the OTG core's own VBUS sensing off and read VBUS_SENSE (PA9) as a GPIO; enable the D+
+  pull-up only while VBUS_SENSE is high.
+- No internal pull on PB4 (radio MISO, set before releasing the radio from reset), PE4 / PE5 and every I2C pin.
+  Internal pull-ups on PC7 and PE2 (the UART RX lines float with nothing plugged in). PE1 (ESP_RST) open-drain only.
+- Motor MISO (PC11, PB14) has no external pull: enable a weak internal pull-down so it does not float between
+  transfers. The motor SCK lines idle low (R30 / R72, R69): use SPI mode 0 or 1. The radio link is mode 3.
+- LED current cap on USB (PWR_SRC_5V low); expansion ports at most 0.55 A combined.
+- Expansion I2C2 at 100 kHz unless 400 kHz rise times are checked on a scope with the real cables.
 
 ### 1.4 GPIO speed (OSPEEDR) requirements
 
@@ -179,11 +196,12 @@ PD9, PD10, PC13-PC15 and PC3_C.
 
 ### 1.5 Radio link (host side)
 
-- ESP-Hosted SPI full-duplex host on SPI3, mode 3, software CS on PG15.
+- ESP-Hosted SPI full-duplex host, mode 3, software CS on PG15: **SPI1 on PB3 / PB4 / PB5 (AF5) on ControlBoard2027_C4L2**
+  (SPI3, AF6 on C / C4L).
 - HANDSHAKE (PB7) and DATA_READY (PB6) are EXTI inputs without internal pulls (R31 / R32 are on the board), active
   high, idle low; mask them while the radio initialises.
-- MISO (PB4): no internal pull. PB4 comes out of reset as NJTRST with its internal pull-up on: configure it as SPI3
-  MISO (AF6) with no pull at init, before the radio is released from reset. MISO has exactly one pull, the radio-side pull-down that ESP-Hosted enables on GPIO2;
+- MISO (PB4): no internal pull. PB4 comes out of reset as NJTRST with its internal pull-up on: configure it as SPI MISO
+  (C4L2: SPI1 AF5; C / C4L: SPI3 AF6) with no pull at init, before the radio is released from reset. MISO has exactly one pull, the radio-side pull-down that ESP-Hosted enables on GPIO2;
   the slave tri-states MISO while CS is high.
 - Reset: pull PE1 low for 10 ms, release, then wait 500 ms before trusting HANDSHAKE / DATA_READY.
 - Clock: SPI123SEL = PLL1Q 48 MHz gives 24 MHz at /2. 40 MHz (the ESP32-C5 slave maximum) needs an 80 MHz SPI123
@@ -192,7 +210,7 @@ PD9, PD10, PC13-PC15 and PC3_C.
 
 ### 1.6 IMU (U11, LSM6DSV320X)
 
-- I2C5 at address 0x6A (SDO/TA0 to GND; CS tied high selects I2C). Use the LSM6DSV320X driver and check WHO_AM_I
+- I2C4 (PD12 SCL / PD13 SDA, AF4) on ControlBoard2027_C4L2 (I2C5 on C / C4L), address 0x6A (SDO/TA0 to GND; CS tied high selects I2C). Use the LSM6DSV320X driver and check WHO_AM_I
   (the design started with the LSM6DSK320X; the fitted part is the DSV).
 - INT1 -> PF3 (ACCEL_EXTI), INT2 -> PF2 (GYRO_EXTI), both push-pull. Route any event to either pin with
   INT1_CTRL / INT2_CTRL. The part has no reset pin: after a PWR_SRC change or an I2C error, re-read the configuration
@@ -209,8 +227,9 @@ PD9, PD10, PC13-PC15 and PC3_C.
 
 ### 1.7 Power-source handling
 
-- PD9 (PWR_SRC_3V3) and PD10 (PWR_SRC_5V): inputs with no internal pull. PD9 connects straight to U9's ST output,
-  which also drives the R41 hysteresis, so an internal pull would shift U9's thresholds; never set either as an output.
+- ControlBoard2027_C4L2: PE4 (PWR_SRC_3V3) and PE5 (PWR_SRC_5V); C4L: PD9 / PD10. Inputs with no internal pull. PE4
+  connects straight to U9's ST output, which also drives the R41 hysteresis, so an internal pull would shift U9's
+  thresholds; never set either as an output.
 - Plugging the powerboard in with USB attached also sags the rails briefly (the mux waits until VOUT falls to the
   rising powerboard rail): treat it like the unplug case below.
 
@@ -285,7 +304,11 @@ The Inboard and Overhang schematics are identical, so everything below applies t
   controlboard is powered. An ESP pull-up on CS is the only DC path from the radio's USB-derived 3.3 V into an
   unpowered controlboard (through R29 into its +3V3 rail, up to about 41 uA / 1.7 V). With it disabled, the only
   remaining leakage is the TPS2116 reverse leakage (<= 0.15 uA) and the STM32 FT pin leakage (<= 1.5 uA per pin).
-  If the ESP-Hosted slave config enables a CS pull-up, turn it off.
+  Stock ESP-Hosted turns it on in source (`coprocessor/eh_cp_transport/src/eh_cp_transport_spi.c`:
+  `gpio_set_pull_mode(GPIO_CS, GPIO_PULLUP_ONLY)` and `pull_up_en = 1` in the handshake-disable config): patch both out.
+- ESP-Hosted sets MISO to `GPIO_DRIVE_CAP_3`; R4 33R assumes the default drive. Set drive cap 1-2 for GPIO2, or check
+  MISO on a scope before going above 24 MHz.
+- Never burn EFUSE_JTAG_SEL_ENABLE (GPIO7 / MOSI would then select the JTAG source).
 
 ### 2.3 Strapping, boot and USB
 

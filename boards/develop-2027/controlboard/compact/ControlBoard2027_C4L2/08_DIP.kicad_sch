@@ -4,6 +4,11 @@
 	(generator_version "10.0")
 	(uuid "2048518a-c160-4626-8c41-7e2cc9759622")
 	(paper "A3")
+	(title_block
+		(title "ControlBoard2027_C4L2: Robot ID DIP")
+		(date "2026-11-18")
+		(rev "C4L2")
+	)
 	(lib_symbols
 		(symbol "Device:C"
 			(pin_numbers
@@ -1630,7 +1635,7 @@
 	)
 	(rectangle
 		(start 188 124)
-		(end 296 215)
+		(end 296 228)
 		(stroke
 			(width 0.254)
 			(type dash)
@@ -1643,7 +1648,7 @@
 	)
 	(text "DIP R53-R58 = 100k: STM32 250 nA input leakage gives 25 mV drop nominal.\nLogic bias is adequate for an unloaded MCU input (DS13313 Table 51).\nDIP switch: verify minimum contact load; 33 uA is not proof.\nDebounce/sample stability needs firmware; no universal 100nF requirement."
 		(exclude_from_sim no)
-		(at 33.02 271.78 0)
+		(at 190.5 224.79 0)
 		(effects
 			(font
 				(size 1.1 1.1)

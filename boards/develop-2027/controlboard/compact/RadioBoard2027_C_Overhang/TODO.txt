@@ -7,6 +7,12 @@ J2 mates the current controlboard J9 (20 / 20).
 
 1. BEFORE ORDERING
 ------------------
+1.0 Datasheet audit 2026-11-18 (schematic only): no critical or major defect; Inboard and Overhang are
+    electrically identical; all 20 J2 contacts land on the C4L2 J9 (0.000 mm). Open decision: U7 TPS3840PL29 hands
+    the mux to the host only above VIT+ <= 3.07 V, so the controlboard +3V3 at J9 must be >= 3.10 V with the radio
+    idle (C4L2 gives about 3.2 V at its planned load, 3.08 V at 1 A). Either keep that condition (no change) or fit
+    TPS3840PL28 (VIT+ <= about 2.97 V; BOM change). Firmware: patch out the ESP-Hosted CS pull-ups, set every link
+    pin explicitly, MISO drive cap 1-2 or scope check (../docs/FIRMWARE.md §2.2).
 1.1 Independent re-audit of the USB-skew changes (R5 / R6 moved, D+ A6 hop and its return via, D- trunk
     serpentine, VBUS L4 run into U4 pin 1, GND_L3_USB_HOP), then full DRC / ERC / parity (CLAUDE.md section 12).
 1.2 Confirm the widths in the JLC impedance calculator for JLC04161H-3313: 0.15 mm link (target 50 ohm) and

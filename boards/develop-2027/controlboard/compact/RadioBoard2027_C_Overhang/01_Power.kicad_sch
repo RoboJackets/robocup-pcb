@@ -1860,7 +1860,7 @@
 		)
 		(uuid "d1a6b058-0d47-4378-8142-28870e58faee")
 	)
-	(text "POWER\nControlboard +3V3 (VIN1, via J2) is used whenever present. USB (VIN2) powers the board for standalone flashing.\nThe TPS2116 blocks reverse current, so USB never back-feeds the controlboard and no output diodes are needed.\nST high = controlboard power selected; firmware reads it on GPIO9 (PWR_SRC_HOST).\nPR1: U7 TPS3840PL29 on +3V3_HOST, push-pull RESET to PR1, R12 100k pull-down, C10 100nF at its VDD.\nTo host above VIT+ 2.93-3.07V rising (3.00V typ), to USB below VIT- 2.857-2.944V falling (2.90V typ). Rising max < 3.135V (host -5%).\nDESIGN_NOTES.md §2."
+	(text "POWER\nControlboard +3V3 (VIN1, via J2) is used whenever present. USB (VIN2) powers the board for standalone flashing.\nThe TPS2116 blocks reverse current, so USB never back-feeds the controlboard and no output diodes are needed.\nST high = controlboard power selected; firmware reads it on GPIO9 (PWR_SRC_HOST).\nPR1: U7 TPS3840PL29 on +3V3_HOST, push-pull RESET to PR1, R12 100k pull-down, C10 100nF at its VDD.\nTo host above VIT+ 2.93-3.07V rising (3.00V typ), to USB below VIT- 2.857-2.944V falling (2.90V typ). Needs host >= 3.07V at J2 to start without USB (CB +3V3 >= 3.10V idle).\nDESIGN_NOTES.md §4."
 		(at 210.82 179.07 0)
 		(effects
 			(font

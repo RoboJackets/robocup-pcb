@@ -195,6 +195,13 @@ The powerboard must supply 3.4 V +/-3 % (never above 3.6 V) on pin 4 and 5 V on 
 DESIGN_NOTES, rail budget). The CB has no overvoltage protection beyond the TVS diodes, so the powerboard must
 regulate. It must also be able to source more than 2.5 A per rail into a fault, or the fuses never trip.
 
+**Steady current per rail on ControlBoard2027_C4L2 (2026-11-18).** The board copper is sized for 3 A per rail, but
+the fitted parts set lower limits: **+5V at most 2 A** (one 2 A PH contact; TPS2116 2.5 A; F5 must be re-rated above
+its 1.25 A hold first), **+3V3 about 1 A** (0.22 ohm worst-case drop through J15, F6 and U9 keeps the rail above
+3.0 V only up to about 1 A from a 3.30 V supply). More than that needs a two-contact-per-rail connector, new fuses
+and, above 2.5 A, a different mux (ControlBoard2027_C4L2 DESIGN_NOTES §4.8). The compact radio needs the CB +3V3 at
+J9 >= 3.10 V while it starts (its supervisor's rising threshold is up to 3.07 V).
+
 ### J10 KICKER
 
 | Pin | 1 | 2 | 3 | 4 | MP |

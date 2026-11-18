@@ -6,6 +6,12 @@ Board state: DRC 0 errors / 0 warnings / 0 unconnected / 0 parity, ERC 0, link m
 
 1. BEFORE ORDERING
 ------------------
+1.0 Datasheet audit 2026-11-18 (schematic only): no critical or major defect; Inboard and Overhang are
+    electrically identical; all 20 J2 contacts land on the C4L2 J9 (0.000 mm). Open decision: U7 TPS3840PL29 hands
+    the mux to the host only above VIT+ <= 3.07 V, so the controlboard +3V3 at J9 must be >= 3.10 V with the radio
+    idle (C4L2 gives about 3.2 V at its planned load, 3.08 V at 1 A). Either keep that condition (no change) or fit
+    TPS3840PL28 (VIT+ <= about 2.97 V; BOM change). Firmware: patch out the ESP-Hosted CS pull-ups, set every link
+    pin explicitly, MISO drive cap 1-2 or scope check (../docs/FIRMWARE.md §2.2).
 1.1 Antenna decision. 1U build: FXP831 gain at 5 GHz is above the module's certified 3.65 dBi (cap 5 GHz TX
     power, use 2.4 GHz only, or pick a lower-gain antenna); confirm the MHF I plug. WROOM-1 fallback: the
     controlboard has copper on all layers under this variant's antenna strip (CB x 46.1-66.1, y 0-7.5); either

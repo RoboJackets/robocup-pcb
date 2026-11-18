@@ -87,6 +87,13 @@ repo board at order time; none are generated in this folder.
   0.09 mm in the rules; the narrowest copper actually used is 0.14 mm (USB pair).
 - R39 is placed rotated 180 degrees compared with the C4L layout: check its rotation in the JLC placement preview.
 
+## 6b. Radio and powerboard generations
+
+- **Compact radio only on J9.** The prototype RadioBoard2027 has the same LSHM connector, so it plugs in, but its GND
+  pins land on this board's +3V3 pins (a dead short). The top silkscreen says "COMPACT RADIO" beside J9.
+- **J15 is a JST PH 7-pin** (1 TX, 2 RX, 3 GND, 4 +3V3, 5 GND, 6 +5V, 7 GND). A powerboard built for the prototype's
+  JST XH 8-pin does not plug in. Steady load: +5V up to 2 A, +3V3 about 1 A (DESIGN_NOTES §4.8).
+
 ## 7. Things the files do not show
 
 - **No KICKER label on the top silkscreen.** There is no room between the J7 housing, J10 and the SD socket. J10 is
@@ -113,6 +120,6 @@ When every item above is ticked, write the date and your name here and commit it
 - [ ] 4. Expansion fuse rating decided
 - [ ] 5. Firmware pin map taken from FIRMWARE.md 1.3a
 - [ ] 6. Stock re-checked on the order day
-- [ ] 7. Notes in section 7 read
+- [ ] 7. Notes in sections 6b and 7 read
 
 Checked by: ______________________  Date: ____________

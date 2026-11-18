@@ -4,6 +4,11 @@
 	(generator_version "10.0")
 	(uuid "dca2c185-dce2-4db3-8012-cb057e956527")
 	(paper "A3")
+	(title_block
+		(title "ControlBoard2027_C4L2: DotStar LEDs")
+		(date "2026-11-18")
+		(rev "C4L2")
+	)
 	(lib_symbols
 		(symbol "74xx:74AHCT125"
 			(pin_names
@@ -1429,7 +1434,7 @@
 	)
 	(rectangle
 		(start 50 92)
-		(end 113 197)
+		(end 113 219)
 		(stroke
 			(width 0.254)
 			(type dash)
@@ -1440,9 +1445,9 @@
 		)
 		(uuid "6dd9aa3e-712a-43e5-8058-0993a8b05c95")
 	)
-	(text "LED LEVEL SHIFT: U10 = SN74AHCT125, specified for VCC 4.5-5.5 V.\n3.3 V logic satisfies TTL input levels at a valid U10 supply.\nR47/R48 = 100k bias inputs low; unused gates disabled.\nD7-D11 = SK9822-EC20 (alternate BB-2020BGR-TRB); use the fitted part data sheet/pad drawing.\nA muxed USB source does NOT guarantee >=4.5 V after all cable/fuse drops.\nFirmware current caps are requirements, not evidence of implemented limits.\nVerify LED startup/current, power budget and custom footprints.\nTP18/19 check chain input; TP20/21 check chain output."
+	(text "LED LEVEL SHIFT: U10 SN74AHCT125, rated VCC 4.5-5.5 V.\nTTL inputs: 3.3 V MCU levels are valid.\nR47/R48 100k hold the inputs low at reset;\nunused gates 3/4 disabled.\nD7-D11 SK9822-EC20 (alt. BB-2020BGR-TRB).\nOn USB, +5V can sit below 4.5 V.\nFirmware LED current caps are requirements.\nTP18/19 chain input, TP20/21 chain output."
 		(exclude_from_sim no)
-		(at 297.18 252.73 0)
+		(at 51.5 216 0)
 		(effects
 			(font
 				(size 1.1 1.1)
@@ -4427,7 +4432,7 @@
 				)
 			)
 		)
-		(property "Description" "Beginning of LED chain: D7 CKI pin 5 after U10 level shifting. Compare against TP21 (D11 CKO)."
+		(property "Description" "Beginning of LED chain: D7 CKI pin 4 after U10 level shifting. Compare against TP21 (D11 CKO)."
 			(at 137.16 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -6014,7 +6019,7 @@
 				)
 			)
 		)
-		(property "Description" "Beginning of LED chain: D7 SDI pin 4 after U10 level shifting. Compare against TP20 (D11 SDO)."
+		(property "Description" "Beginning of LED chain: D7 SDI pin 3 after U10 level shifting. Compare against TP20 (D11 SDO)."
 			(at 137.16 177.8 0)
 			(hide yes)
 			(show_name no)

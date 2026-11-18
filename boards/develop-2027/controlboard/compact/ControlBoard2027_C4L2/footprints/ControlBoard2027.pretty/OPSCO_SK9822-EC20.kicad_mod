@@ -21,5 +21,5 @@
   (fp_text reference "REF**" (at 0 -2.3 0) (layer "F.SilkS") (effects (font (size 0.8 0.8) (thickness 0.12))))
   (fp_text value "SK9822-EC20" (at 0 2.3 0) (layer "F.Fab") (effects (font (size 0.8 0.8) (thickness 0.12))))
   (fp_text user "${REFERENCE}" (at 0 0 0) (layer "F.Fab") (effects (font (size 0.4 0.4) (thickness 0.06))))
-  (model "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED-APA102-2020.step" (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 -90)))
+  (model "${KIPRJMOD}/footprints/ControlBoard2027.3dshapes/SK9822-EC20.wrl" (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
 )

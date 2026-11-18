@@ -4,6 +4,11 @@
 	(generator_version "10.0")
 	(uuid "d731e871-d582-453e-b859-27f506946b48")
 	(paper "A3")
+	(title_block
+		(title "ControlBoard2027_C4L2: USB and Debug")
+		(date "2026-11-18")
+		(rev "C4L2")
+	)
 	(lib_symbols
 		(symbol "Connector:Conn_ST_STDC14"
 			(exclude_from_sim no)
@@ -4202,7 +4207,7 @@
 	)
 	(rectangle
 		(start 60 67)
-		(end 186 153)
+		(end 186 173)
 		(stroke
 			(width 0.254)
 			(type dash)

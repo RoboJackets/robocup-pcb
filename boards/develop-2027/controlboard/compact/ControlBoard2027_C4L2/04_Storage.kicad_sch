@@ -4,6 +4,11 @@
 	(generator_version "10.0")
 	(uuid "17870fc4-4b74-493c-83fc-deaf49e75c00")
 	(paper "A3")
+	(title_block
+		(title "ControlBoard2027_C4L2: SD Card Storage")
+		(date "2026-11-18")
+		(rev "C4L2")
+	)
 	(lib_symbols
 		(symbol "Connector:Micro_SD_Card_Det_Hirose_DM3AT"
 			(exclude_from_sim no)
@@ -2683,7 +2688,7 @@
 		)
 		(uuid "94ddc2ca-f7f9-4e84-918a-80ae31149b7b")
 	)
-	(text "SDMMC LAYOUT: review CLK, CMD and DAT0-3 as one timing interface.\nRouted 50R on L1 over L2 GND and on L4 over an L3 GND island;\nCLK/CMD/DAT0-3 matched 62.48 mm incl. R6.\nKeep return paths continuous, short stubs and local J1 bypass capacitors.\nUse DS13313 SDMMC timing plus the selected card's data sheet."
+	(text "SDMMC LAYOUT: review CLK, CMD and DAT0-3 as one timing interface.\nRouted 50R on L1 over L2 GND and on L4 over an L3 GND island;\nCLK/CMD/DAT0-3 67.08-67.66 mm incl. R6 (worst 0.47 mm vs CLK).\nKeep return paths continuous, short stubs and local J1 bypass capacitors.\nUse DS13313 SDMMC timing plus the selected card's data sheet."
 		(exclude_from_sim no)
 		(at 189.23 171.45 0)
 		(effects

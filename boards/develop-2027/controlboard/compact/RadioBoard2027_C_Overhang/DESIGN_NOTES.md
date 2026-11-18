@@ -71,7 +71,7 @@ inside the board. Choosing between them: [../README.md](../README.md).
 | MOD | ESP32-C5-WROOM-1 / WROOM-1U datasheet v1.3 |
 | CHIP | ESP32-C5 series datasheet v1.5 |
 | HDG | Espressif ESP32-C5 hardware design guidelines v1.4 |
-| EH | espressif/esp-hosted-mcu: `docs/getting-started-mcu.md`, `docs/design/`, co-processor and host Kconfig, `spi_slave_api.c`, `spi_drv.c` |
+| EH | espressif/esp-hosted-mcu: `docs/getting-started-mcu.md`, `docs/design/`, co-processor and host Kconfig, `coprocessor/eh_cp_transport/src/eh_cp_transport_spi.c`, `spi_drv.c` |
 | SLVSFG1A | TI TPS2116 power mux |
 | SNVSB03E | TI TPS3840 supervisor |
 | TPD4E05U06 | TI TPD4E05U06 (DQA, USON-10) |
@@ -123,7 +123,7 @@ debugging.
     so rising VIT+ = **2.932-3.069 V** (3.00 V typical).
   - Rising: U3 selects the host only above 2.93-3.07 V. Falling: below 2.86-2.94 V PR1 goes low within 15-30 us
     and U3 switches to USB (or off, without USB).
-  - Host-only start: the highest VIT+ (3.069 V) is 66 mV below the lowest host rail (3.3 V -5 % = 3.135 V). The
+  - Host-only start (audit 2026-11-18): the radio starts on the host only when +3V3_HOST is above VIT+ (up to 3.069 V). The C4L2 controlboard gives about 3.2 V at its planned load but can fall to 3.08 V at a 1 A +3V3 load (C4L2 DESIGN_NOTES §4.8): **condition: controlboard +3V3 at J9 >= 3.10 V with the radio idle**. Below VIT+ without USB the radio stays off. A TPS3840PL28 (VIT+ <= about 2.97 V) would restore margin (BOM change, not made). The
     75 mV minimum hysteresis exceeds the 40 mV J2-to-U3 drop at the module's 403 mA peak, so the mux cannot chatter.
   - PR1 levels: VOH >= 0.8 x VDD = 2.35 V is above the TPS2116 VREF max 1.08 V; VOL <= 0.2 V is below VREF min
     0.92 V. PR1 sees at most VDD (3.47 V at a +5 % host), under the 5.5 V operating limit (SLVSFG1A §6.3).
@@ -279,8 +279,8 @@ connector is exposed whenever the boards are unplugged.
 ### Pulls
 
 This board adds no pulls on the link. The controlboard holds CS up (R29 10k) and HANDSHAKE / DATA_READY down (R31
-100k, R32 10k), which keeps the levels defined during reset and ROM boot. Once running, ESP-Hosted enables internal
-pulls (up on MOSI / SCLK / CS, down on MISO / HS / DR; EH `spi_slave_api.c`). The host ignores HANDSHAKE /
+100k, R32 10k), which keeps the levels defined during reset and ROM boot. Stock ESP-Hosted enables an internal pull-up on CS
+(EH `coprocessor/eh_cp_transport/src/eh_cp_transport_spi.c`); FIRMWARE.md §2.2 requires it patched out. The host ignores HANDSHAKE /
 DATA_READY for 500 ms after releasing EN.
 
 ---

@@ -4,6 +4,11 @@
 	(generator_version "10.0")
 	(uuid "e912114b-b3fd-4409-807e-773769a49878")
 	(paper "A2")
+	(title_block
+		(title "ControlBoard2027_C4L2: Motor, Kicker, Expansion, OLED, Radio")
+		(date "2026-11-18")
+		(rev "C4L2")
+	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
 			(pin_numbers
@@ -10454,7 +10459,7 @@
 				)
 			)
 		)
-		(property "Description" "100k MOTOR_R_SPI_SCK bias with the cables disconnected (as R30 on the left-wheel bus)."
+		(property "Description" "100k MOTOR_R_SPI_SCK bias with the cables disconnected (rear bus; R30 / R72 do the same on the front bus)."
 			(at 345.44 19.05 0)
 			(hide yes)
 			(show_name no)
@@ -11045,7 +11050,7 @@
 				)
 			)
 		)
-		(property "Description" "100k MOTOR_SPI_SCK bias with the cables disconnected; in parallel with R30 (50k total), left from the former dribbler bus."
+		(property "Description" "100k MOTOR_SPI_SCK bias with the cables disconnected; in parallel with R30 (50k total, redundant but harmless)."
 			(at 345.44 24.13 0)
 			(hide yes)
 			(show_name no)
@@ -11925,7 +11930,7 @@
 				)
 			)
 		)
-		(property "Description" "Motor 2 (back right), right-wheel bus MOTOR_R_SPI (SPI2). JST GH 6P SPI only (no power): 1 MOSI 2 GND 3 MISO 4 SCK 5 GND 6 CS. MP tabs to GND. ESD U12 flow-through in pin order."
+		(property "Description" "Motor 2 (back right), rear bus MOTOR_R_SPI (SPI2), CS PD8. JST GH 6P SPI only (no power): 1 MOSI 2 GND 3 MISO 4 SCK 5 GND 6 CS. MP tabs to GND. ESD U12 flow-through in pin order."
 			(at 134.62 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -18066,10 +18071,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "ce7a710d-08ec-438b-a639-db19bde8dd11")
 		(property "Reference" "R49"
@@ -19527,5 +19532,32 @@
 				)
 			)
 		)
+	)
+	(rectangle
+		(start 558 344)
+		(end 586 374)
+		(stroke
+			(width 0.254)
+			(type dash)
+			(color 0 0 132 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "a9fcbf68-1442-45b7-a146-34f8b4745dcc")
+	)
+	(text "R49 (DNP)"
+		(exclude_from_sim no)
+		(at 559.5 349 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+				(color 0 0 132 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "c58e7473-53c3-401f-8fc3-969db894f74f")
 	)
 )

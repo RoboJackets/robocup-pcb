@@ -4,6 +4,11 @@
 	(generator_version "10.0")
 	(uuid "ba0d3f0b-7301-44ac-ab99-2927706c63d7")
 	(paper "A3")
+	(title_block
+		(title "ControlBoard2027_C4L2: Power")
+		(date "2026-11-18")
+		(rev "C4L2")
+	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
 			(pin_numbers
@@ -6449,12 +6454,12 @@
 		(uuid "58d51c81-b6ac-4d52-979b-160552e1d073")
 	)
 	(label "AUTO3"
-		(at 281.94 162.56 0)
+		(at 281.94 162.56 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "64dc0903-32ad-4e8e-a76a-79dcc5b361ac")
 	)
@@ -6519,12 +6524,12 @@
 		(uuid "c2deb54f-1d66-4a32-8e07-0288d4e885ed")
 	)
 	(label "AUTO5"
-		(at 281.94 101.6 0)
+		(at 281.94 101.6 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "cab6a03e-e166-48bc-87b4-d4531e0f7812")
 	)
@@ -15303,5 +15308,18 @@
 				)
 			)
 		)
+	)
+	(rectangle
+		(start 221 238)
+		(end 305 251)
+		(stroke
+			(width 0.254)
+			(type dash)
+			(color 0 0 132 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "0debc6c6-4892-4426-a726-f1b621cda540")
 	)
 )

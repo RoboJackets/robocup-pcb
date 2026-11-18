@@ -4,6 +4,11 @@
 	(generator_version "10.0")
 	(uuid "b79ea805-6108-4b28-bbe5-d1b255be0f3b")
 	(paper "A3")
+	(title_block
+		(title "ControlBoard2027_C4L2: IMU")
+		(date "2026-11-18")
+		(rev "C4L2")
+	)
 	(lib_symbols
 		(symbol "ControlBoard2027:LSM6DSV320X"
 			(exclude_from_sim no)
@@ -1599,7 +1604,7 @@
 	)
 	(rectangle
 		(start 133 80)
-		(end 250 160)
+		(end 250 174)
 		(stroke
 			(width 0.254)
 			(type dash)
@@ -1639,7 +1644,7 @@
 	)
 	(text "INTERRUPTS: INT1 -> ACCEL_EXTI (PF3), INT2 -> GYRO_EXTI (PF2). Both are push-pull and\nare driven low from power-up (DS14623 Table 25), so no pull-downs are fitted.\nRoute data-ready or events to them with INT1_CTRL/INT2_CTRL."
 		(exclude_from_sim no)
-		(at 100.33 180.34 0)
+		(at 135.89 170.18 0)
 		(effects
 			(font
 				(size 1.27 1.27)
