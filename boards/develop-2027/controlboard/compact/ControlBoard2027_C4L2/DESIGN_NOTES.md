@@ -55,7 +55,7 @@ with this subsection or with the files, this subsection and the files win. The f
 | Check (2026-11-17, on the saved repo board) | Result |
 |---|---|
 | ERC | 1 error, the known U2 VCAP pin 71 / 106 power-output tie (§5) |
-| DRC (kicad-cli, parity on, zones filled with the repo rules and saved) | 0 errors, 0 unconnected, 0 parity; warnings: 6 courtyard (J13 OLED module over J1 / J2 / U3 / D1 / F1, and J9 over the U2 courtyard, both intended), 2 NPTH in courtyard (J2 under J13), 9 silk overlap (labels touching footprint outlines), 0 silk over copper |
+| DRC (kicad-cli, parity on, zones filled with the repo rules and saved) | 0 errors, 0 unconnected, 0 parity; warnings: 6 courtyard (J13 OLED module over J1 / J2 / U3 / D1 / F1, and J9 over the U2 courtyard, both intended), 2 NPTH in courtyard (J2 under J13), 7 silk overlap (pin-1 "1" marks touching the J5 / J6 / J15 outlines, the GND and LCKI test-point labels touching their pad outlines), 0 silk over copper |
 | Custom rules | Fast-bus rules use net class SIG50; U10 is in the J13 module rule; compile proved with a violated test rule (199 hits), removed; unchanged since |
 | Independent audits | Round 1 (Fable) on the 2026-11-17 morning install; its four major items are fixed in this layout (GND stitching, SDMMC_D1 loop, silkscreen, speaker outline). Re-audit pending |
 
@@ -1096,17 +1096,8 @@ Conditions (firmware settings are in FIRMWARE.md §1.3b):
 
 Text 1.0 mm (JLC's minimum), titles 1.2 mm, 0.15 mm stroke; the board text rule is 1.0 mm / 0.15 mm. No text over a
 pad.
-- J15 has a name at each pin (TX, RX, GND, 3V3, GND, 5V, GND) in one row, readable with the cable plugged in, in
-  narrow glyphs (1.0 mm high, 0.6 mm wide) because a normal "GND" is wider than the 2.0 mm pitch. Its POWER title is on
-  the bottom silkscreen ("POWER (J15)").
-- J3 has a table east of the header: STDC14, pin 1 dot, 4 DIO, 6 CLK, 12 RST.
-- The GH connectors have a pin table beside the housing: J4, J5, J7, J8 on the top (J4 in two columns), J6 on the
-  bottom silkscreen; J11 on the bottom silkscreen ("J11 EXP 1: 1-2 GND 3-4 5V / 5 GND 6 SCL 7 GND 8 SDA", because H6
-  and the speaker board cover the top side there); J12 is labelled "PINS AS EXP 1". J10's legend ("J10 1 SDA GND SCL
-  GND") is on the bottom silkscreen.
-- Function names on every connector (MOTOR 0-3, DRIBBLER, EXP 1 / 2, KICKER, POWER, SWD, RADIO, USB, microSD, OLED);
-  buttons RESET, BOOT, BTN0-2; DIP "ROBOT ID" with bits 1-6; rail LEDs 5V / 3V3; DotStars LED1-LED5 in chain order;
-  test points by signal name; board name block "ControlBoard2027 / 2026-11 / Designed By ...".
+- Pin tables and connector names: see the 2026-11-19 pass below (it replaces the earlier per-connector tables).
+- Buttons RESET, BOOT, BTN0-2; DIP "ROBOT ID"; rail LEDs 5V / 3V3; test points by signal name.
 - Silkscreen art, top: group `silk_art_miku` (§1.0, "Silkscreen art"), from Wikimedia Commons under a Creative Commons
   licence per the owner; record its file page, author and licence here if it requires attribution.
 - Silkscreen art, bottom (2026-11-18): group `silk_art_miku_back`, the line-art layer (#0b0b0c) of
@@ -1116,6 +1107,28 @@ pad.
   art when moving it. Placed at (70.8, 22.3) clear of bottom pads and silkscreen; the owner may move it.
 - About 100 reference designators with no free spot at 1.0 mm are hidden or on F.Fab only. The OLED module outline
   is on F.Fab.
+
+Silkscreen pass (2026-11-19), modelled on the drive-motorboard; silkscreen only, no footprint, pad or copper moved.
+The board is installed with the bottom against the robot, so everything a person reads goes on the visible top: not
+under the radio, speaker or OLED outlines.
+- Every reference that fits sits beside its part, 1.0 mm / 0.15 mm, upright, rows of passives in physical order. A
+  reference that cannot sit beside its part goes in a box with a leader line to the part, drawn at 0, 45 or 90 degrees
+  only: R12 (top, horizontal to its left end), R33 R34 (bottom, 45 degrees to a bracket under both resistors; the D4
+  reference moved down 0.75 mm to clear the bracket). R20 and R21 sit beside their resistors on the bottom.
+- Connector names are knockout (inverted) labels: POWER, EXP 1, EXP 2, MOTOR 0-3, DRIBBLER, COMPACT RADIO, SWD/DBG,
+  microSD, USB, OLED.
+- Pinout keys on the top, in the strip between the radio outline and the art next to MOTOR 0, read bottom to top:
+  "MOTOR 0-3, DRIBBLER / 1 MOSI 2 GND 3 MISO / 4 SCK 5 GND 6 CS" (J4-J8 share one pinout) and "KICKER J10 / 1 SDA
+  2 GND / 3 SCL 4 GND". The GH pitch (1.25 mm) is too fine for a name at each pin at 1.0 mm.
+- EXP and POWER pinout key on the top, bottom-left corner below the speaker outline (the top-side space beside J11,
+  J12 and J15 is all under the speaker board): "EXP 1/2  1 GND 2 GND 3 5V 4 5V / 5 GND 6 SCL 7 GND 8 SDA / POWER
+  1 TX 2 RX 3 GND 4 3V3 / 5 GND 6 5V 7 GND". The bottom copies of all pinout keys are removed.
+- J10 has no name label on the top: J7, J1 and the board edge leave no 1.0 mm spot; the top key names it "KICKER J10".
+- The name / revision / credits block ("ControlBoard2027  Rev. C4L2", Designed By, Roasted By) moved to the bottom,
+  boxed, above "More Names Because Why Not", to free the top corner for the pinout key.
+- Hidden: mounting holes H1-H6, test points (labelled by signal name instead), R29 and R36 (no spot within 3.7 mm).
+  U9 stays on B.Fab and C45 has no label (no spot); the J1, J7, J10, J11, J12 and J15 references are under their
+  housings. SW5 / SW6 references are on the bottom under the through-hole buttons.
 
 ---
 
