@@ -179,7 +179,7 @@ PD9, PD10, PC13-PC15 and PC3_C.
 - No internal pull on PB4 (radio MISO, set before releasing the radio from reset), PE4 / PE5 and every I2C pin.
   Internal pull-ups on PC7 and PE2 (the UART RX lines float with nothing plugged in). PE1 (ESP_RST) open-drain only.
 - Motor MISO (PC11, PB14) has no external pull: enable a weak internal pull-down so it does not float between
-  transfers. The motor SCK lines idle low (R30 / R72, R69): use SPI mode 0 or 1. The radio link is mode 3.
+  transfers. The motor SCK lines idle low (R30, R69): use SPI mode 0 or 1. The radio link is mode 3.
 - LED current cap on USB (PWR_SRC_5V low); expansion ports at most 0.55 A combined.
 - Expansion I2C2 at 100 kHz unless 400 kHz rise times are checked on a scope with the real cables.
 

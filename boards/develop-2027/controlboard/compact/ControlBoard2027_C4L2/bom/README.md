@@ -63,8 +63,8 @@ This section supersedes the older stock and Digi-Key statements below.
 
 R73 (47k SD card-detect pull-up, added 2026-11-09) joins the R1-R5 / R20 47k line.
 
-R72 (a second 100k on MOTOR_SPI_SCK, left from the old dribbler bus, in parallel with R30) is DNP and out of the BOM
-since 2026-11-19; the 100k line drops to 5 (R30, R31, R47, R48, R69). R49 (non-functional drawing) is DNP as well.
+R72 (a second 100k on MOTOR_SPI_SCK, left from the old dribbler bus, in parallel with R30) and R49 (a non-functional
+drawing) were removed from the design on 2026-11-19; the 100k line drops to 5 (R30, R31, R47, R48, R69).
 
 Not in the BOM: H1-H4 (M3 holes), H5 / H6 (M2 speaker-board holes), TP1-TP21 (bare test pads), all excluded in the schematic. HR1 / HR2 (M2 radio
 standoff pads) exist only on the board and are not in the schematic. The radio standoffs and screws (2x M2, 5 mm

@@ -8809,7 +8809,7 @@
 	)
 	(hierarchical_label "MOTOR_R_SPI_SCK"
 		(shape input)
-		(at 341.63 30.48 180)
+		(at 341.63 24.13 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9037,6 +9037,17 @@
 			(justify right)
 		)
 		(uuid "e0af7206-859c-49d8-8755-fa51ffc27ddf")
+	)
+	(hierarchical_label "MOTOR0_SPI_CS"
+		(shape input)
+		(at 341.63 30.48 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e50ea970-27e9-4984-b79d-4248050ca9f8")
 	)
 	(hierarchical_label "MOTOR_R_SPI_SCK"
 		(shape input)
@@ -10376,7 +10387,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 345.44 30.48 90)
+		(at 345.44 24.13 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10386,7 +10397,7 @@
 		(dnp no)
 		(uuid "2188df1b-55a1-488d-86da-f7d0bce6efe4")
 		(property "Reference" "R69"
-			(at 345.44 28.448 90)
+			(at 345.44 22.098 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10396,7 +10407,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 345.44 30.48 90)
+			(at 345.44 24.13 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10406,7 +10417,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 345.44 30.48 0)
+			(at 345.44 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10417,7 +10428,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.farnell.com/datasheets/443714.pdf"
-			(at 345.44 30.48 0)
+			(at 345.44 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10428,7 +10439,7 @@
 			)
 		)
 		(property "Description" "100k MOTOR_R_SPI_SCK bias with the cables disconnected (rear bus; R30 / R72 do the same on the front bus)."
-			(at 345.44 30.48 0)
+			(at 345.44 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10439,7 +10450,7 @@
 			)
 		)
 		(property "LCSC" "C25741"
-			(at 345.44 30.48 0)
+			(at 345.44 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10450,7 +10461,7 @@
 			)
 		)
 		(property "MPN" "Yageo RC0402FR-07100KL"
-			(at 345.44 30.48 0)
+			(at 345.44 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10461,7 +10472,7 @@
 			)
 		)
 		(property "Rating" "1%"
-			(at 345.44 30.48 0)
+			(at 345.44 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10472,7 +10483,7 @@
 			)
 		)
 		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25741"
-			(at 345.44 30.48 0)
+			(at 345.44 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10483,7 +10494,7 @@
 			)
 		)
 		(property "LCSC MPN" "UNI-ROYAL 0402WGF1003TCE"
-			(at 345.44 30.48 0)
+			(at 345.44 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10494,7 +10505,7 @@
 			)
 		)
 		(property "Vendor PN" "311-100KLRCT-ND"
-			(at 345.44 30.48 0)
+			(at 345.44 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12736,6 +12747,151 @@
 			(project "ControlBoard2027_C4L2"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/c387934c-6c45-449c-9c7b-623c2e31b062"
 					(reference "#PWR052")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 345.44 30.48 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5e8f07b0-a614-43f0-863b-559ebda9f8f9")
+		(property "Reference" "R24"
+			(at 345.44 28.448 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 345.44 30.48 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 345.44 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://cdn.sparkfun.com/assets/f/9/4/2/a/25168-resistor.pdf"
+			(at 345.44 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10k CS pull-up. MCU leakage alone drops ~2.5mV at 250nA; remote receiver leakage, reset pulls and powered-off behavior remain unverified. Intended inactive-high bias is not a guarantee for every remote state."
+			(at 345.44 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" "311-10.0KLRCT-ND"
+			(at 345.44 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "Yageo RC0402FR-0710KL"
+			(at 345.44 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 345.44 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25744"
+			(at 345.44 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF1002TCE"
+			(at 345.44 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25744"
+			(at 345.44 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a05f338c-3316-4cbe-8273-117e001a3625")
+		)
+		(pin "2"
+			(uuid "60260e8d-4f3b-443a-9e38-0a3947405ac3")
+		)
+		(instances
+			(project "ControlBoard2027_C4L2"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/c387934c-6c45-449c-9c7b-623c2e31b062"
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -15146,7 +15302,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 349.25 30.48 90)
+		(at 349.25 24.13 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15156,7 +15312,7 @@
 		(dnp no)
 		(uuid "8181c431-ace6-4728-af7d-c3e033328d58")
 		(property "Reference" "#PWR0175"
-			(at 355.6 30.48 0)
+			(at 355.6 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15167,7 +15323,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 353.06 30.48 0)
+			(at 353.06 24.13 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15177,7 +15333,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 349.25 30.48 0)
+			(at 349.25 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15188,7 +15344,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 349.25 30.48 0)
+			(at 349.25 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15199,7 +15355,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 349.25 30.48 0)
+			(at 349.25 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17325,6 +17481,83 @@
 			(project "ControlBoard2027_C4L2"
 				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/c387934c-6c45-449c-9c7b-623c2e31b062"
 					(reference "#PWR0218")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 349.25 30.48 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ca80d05d-c5a9-4b60-a99a-d0a5835d2c53")
+		(property "Reference" "#PWR062"
+			(at 345.44 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 352.806 30.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 349.25 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 349.25 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 349.25 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1648514e-aeab-4715-9c1d-0a5e3d5f8554")
+		)
+		(instances
+			(project "ControlBoard2027_C4L2"
+				(path "/2be89789-dd04-494d-960d-2531c7ce8a2f/c387934c-6c45-449c-9c7b-623c2e31b062"
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)

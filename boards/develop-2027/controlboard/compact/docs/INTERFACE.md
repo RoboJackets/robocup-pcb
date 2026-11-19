@@ -230,7 +230,7 @@ ControlBoard2027_C (for reference): J4 / J5 on SPI1 (PA5 / PA6 / PA7, CS PC5 / P
 J8 on SPI4 (PE2 / PE5 / PE6, CS PE3).
 
 No supply pin: the motor modules take their power elsewhere. Each connector has its own TPD4E05U06 ESD array
-(U4 J4, U5 J5, U12 J6, U13 J7, U14 J8). CS pull-ups R24-R28 10k, SCK pull-downs R30 / R69 / R72 100k. The motor
+(U4 J4, U5 J5, U12 J6, U13 J7, U14 J8). CS pull-ups R24-R28 10k, SCK pull-downs R30 / R69 100k. The motor
 module must use this pin order and release MISO (high impedance) while its CS is high. **Logic level: 3.3 V only.**
 On ControlBoard2027_C4L2 every motor pin is a 5 V-tolerant FT pin; keep the modules at 3.3 V logic anyway. (On
 ControlBoard2027_C, J4 / J5 use TT pins PA5 / PA7 / PC5 / PB0, 4.0 V absolute maximum: never above 3.6 V there.) The motor wheel numbering

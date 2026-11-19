@@ -489,11 +489,10 @@ Trackless vias: KiCad can re-assign the net of a via that has no track from the 
 at U8 VOUT are therefore joined by a track, and new stitching vias are placed only where the same-net pour surrounds
 them on both outer layers.
 
-### 4.9 R49 (not fitted)
+### 4.9 Removed parts (2026-11-19)
 
-R49 is a non-functional symbol on sheet 07 (a drawing for a friend; its wiring spells "Hi"). Both pads are GND. It
-is marked DNP and excluded from the BOM in the schematic and on the board, so it is not assembled; leave it out of
-the CPL as well when generating order files.
+R49 (a non-functional "Hi" drawing on sheet 07, with its "Hi" text on the bottom silkscreen) and R72 (a second 100k on
+MOTOR_SPI_SCK left from the old dribbler bus, in parallel with R30) were removed from the schematic and the board.
 
 ## 5. MCU, clock and supply pins
 
@@ -535,7 +534,7 @@ hundred ohms if needed (m9).
   3V3 for the ROM DFU.
 - NRST: internal 30-50k pull-up (DS13313 Table 57) and C20 100 nF; no external pull-up. SW1 (RESET) pulls it low.
 - R13 10k pull-up on PA15: the bootloader runs SPI3 as a slave on PC10-PC12 (the front motor bus here) with NSS on
-  PA15 and no pull (AN2606 Rev 62 Table 114). Holding NSS high keeps SPI3 deselected, so DFU answers on USB; R30 / R72
+  PA15 and no pull (AN2606 Rev 62 Table 114). Holding NSS high keeps SPI3 deselected, so DFU answers on USB; R30
   hold the motor SCK low.
 
 ### 5.4 Series resistors and sense divider at the MCU
@@ -718,7 +717,7 @@ Pinouts, mating rules and the mating-board requirements are in [INTERFACE.md](..
 - **Motors (J4-J8).** Pinout 1 MOSI, 2 GND, 3 MISO, 4 SCK, 5 GND, 6 CS, tabs GND. SPI only, no supply. Each has its
   own flow-through TPD4E05U06 (U4 J4, U5 J5, U12 J6, U13 J7, U14 J8) with channels in connector-pin order (MOSI 1->10,
   MISO 2->9, SCK 4->7, CS 5->6). R24-R28 10k CS pull-ups hold the modules deselected through reset; R30 (100k) pulls the front SPI3 SCK down (R72, a
-  second 100k left from the old dribbler bus, is DNP since 2026-11-19) and R69 (100k) the rear SPI2 SCK. TP4 / TP5 / TP6 on front
+  redundant second 100k, was removed on 2026-11-19) and R69 (100k) the rear SPI2 SCK. TP4 / TP5 / TP6 on front
   SCK / MOSI / MISO. All five modules share MISO per
   bus (M9). The motor-module board does not yet use this connector (M19). The motor numbering (counter-clockwise from
   front-left: 0 FL, 1 BL, 2 BR, 3 FR) is an assumption; firmware only sees CS pins.
@@ -1034,7 +1033,7 @@ Open, recorded (none needs a BOM change):
 - 3D model missing for J2 (USB4110): the KiCad 10 library has none, and J2 uses the stock KiCad footprint, so adding a model needs a project copy of that footprint (relinked in the schematic). D7-D11 and J9 use simple project models in `footprints/ControlBoard2027.3dshapes/` (body outline and pin-1 mark only).
 - U6 (J11 ESD) is 7.8-9.8 mm of copper from J11: still flow-through with no via before it; moving it next to J11 has no room (R40 / R42, C37 / C39, F3).
 - Sheet 07 groups the ESD arrays by bus, not each with its connector (a full redraw of the sheet).
-- Schematic readability: several notes outside their group boxes (sheets 01, 03, 05, 06, 08), R49 outside a box,
+- Schematic readability: several notes outside their group boxes (sheets 01, 03, 05, 06, 08),
   connector ESD arrays boxed apart from their connectors on sheet 07, some field overlaps (J9 GND symbols, J11 / J12
   values, TP21 / D11, VBUS_SENSE / OLED_I2C_SCL labels on sheet 02), oversized pages and empty title blocks.
 - Rating fields that describe the JLC part rather than the MPN (C24 / C26, C28 / C33 / C37 / C42), generic test-point
@@ -1075,7 +1074,7 @@ power; 0-50 C).
 | USB-C sink, U3, VBUS sense | Works | Rd 5.1k on CC1 / CC2; 9.1 uF VBUS; PA9 3.10 V at 5.25 V VBUS |
 | U2 STM32H723: 144 pins, supplies, VCAP, BOOT0, NRST | Works | DS13313 Fig. 6, Tables 7 / 14; all alternate functions in FIRMWARE.md 1.3a verified against Table 8 |
 | HSE X1 25 MHz | Works with conditions | CL 9.5-10.5 pF vs 10 pF; gm margin 1.8x; drive level up to about 103 uW at 1.4 Vpp vs 100 uW: measure |
-| ROM bootloader / USB DFU | Works | AN2606 Table 114: no connected pin can stop DFU (R13 on PA15, R30 / R72 on SCK) |
+| ROM bootloader / USB DFU | Works | AN2606 Table 114: no connected pin can stop DFU (R13 on PA15, R30 on SCK) |
 | microSD J1, U1, card detect | Works | 47k pull-ups; 24 MHz / 400 kHz from 48 MHz; DET to PD5 with R73 |
 | IMU U11 | Works | DS14623 Table 2, mode 1, address 0x6A, I2C4 |
 | U10 74AHCT125 + SK9822 D7-D11 | Works with conditions | VOH >= 3.94 V vs VIH 3.4 V; 3.125 MHz vs 15 MHz; AHCT rated 4.5-5.5 V; SK9822 VDD <= 5.3 V |

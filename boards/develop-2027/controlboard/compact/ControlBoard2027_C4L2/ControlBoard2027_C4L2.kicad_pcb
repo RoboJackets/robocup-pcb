@@ -25795,6 +25795,214 @@
 			)
 		)
 	)
+	(footprint "Resistor_SMD:R_0402_1005Metric"
+		(layer "F.Cu")
+		(uuid "e068dc4e-adfb-4427-acf8-cfa52f8604ea")
+		(at 127.525 57.025 -90)
+		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
+		(tags "resistor")
+		(property "Reference" "R24"
+			(at 0.25 1.5 90)
+			(layer "F.SilkS")
+			(uuid "01c6325f-2c2e-4263-8b1a-4f0e64bca37a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 0 1.17 90)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "ae6e0c70-1022-4543-8785-2e4e8046f80d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://cdn.sparkfun.com/assets/f/9/4/2/a/25168-resistor.pdf"
+			(at 0 0 -90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c1161f51-6827-4c4d-9019-91717e28b2b8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10k CS pull-up. MCU leakage alone drops ~2.5mV at 250nA; remote receiver leakage, reset pulls and powered-off behavior remain unverified. Intended inactive-high bias is not a guarantee for every remote state."
+			(at 0 0 -90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "72277d52-0b1c-4c60-a038-7c9373f90553")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor PN" "311-10.0KLRCT-ND"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4b905083-2459-4e23-be5c-fb246178f273")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "Yageo RC0402FR-0710KL"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4a2f6492-df15-4e06-94fd-88067292509d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Rating" "1%"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6726404c-a68a-4038-93c9-4363b6fef899")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C25744"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f4689871-244c-4338-93a7-541dab1c433b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC MPN" "UNI-ROYAL 0402WGF1002TCE"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "af1efb4a-2b8f-4828-bb0e-6ddaf9a3f20c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25744"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "63b74d94-14c3-44ef-941e-13822e3ec3a7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
+		(path "/c387934c-6c45-449c-9c7b-623c2e31b062/5e8f07b0-a614-43f0-863b-559ebda9f8f9")
+		(sheetname "/Motor, Kicker, Expansion, OLED, Radio/")
+		(sheetfile "07_Connectors.kicad_sch")
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -0.153641 0.38)
+			(end 0.15364 0.38)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "57633656-59f0-4028-b2c3-21c9df363e11")
+		)
+		(fp_line
+			(start -0.15364 -0.38)
+			(end 0.153641 -0.38)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "76ea38a1-32cc-4bdf-b905-a8ab8ef160b1")
+		)
+		(fp_rect
+			(start -0.929999 -0.47)
+			(end 0.929999 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "ea232cd2-683b-4505-b721-002bc590d4f3")
+		)
+		(fp_rect
+			(start -0.525 -0.27)
+			(end 0.525 0.27)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "02e75935-d11f-4ac6-97e5-5ae09f6ec1fe")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 270)
+			(layer "F.Fab")
+			(uuid "e91091ce-616a-4601-b828-2ae3327d8943")
+			(effects
+				(font
+					(size 0.26 0.26)
+					(thickness 0.04)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.51 0 -90)
+			(size 0.54 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "/MCU/MOTOR0_SPI_CS")
+			(pintype "passive")
+			(uuid "e6e2e826-53c3-47cf-bfbd-dd390da8e72e")
+		)
+		(pad "2" smd roundrect
+			(at 0.51 0 -90)
+			(size 0.54 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "+3V3")
+			(pintype "passive")
+			(uuid "1640af12-7a28-45cf-a2fc-023180e0d8ee")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "ControlBoard2027:OLED_0.96in_SSD1306_I2C_Module_Socket_1x04_P2.54mm"
 		(layer "F.Cu")
 		(uuid "e3606593-2e63-44e9-b13d-91c1856b213e")
@@ -39014,7 +39222,7 @@
 			)
 		)
 		(property ki_fp_filters "DIP*W7.62mm* SO14* SSOP?14* TSSOP?14* SOIC*3.9x8.7mm*P1.27mm*")
-		(path "/ee62a278-a94c-4411-ba4b-a0279340f73e/42744fb3-c5de-4e21-bc15-af36cfdbaa9a")
+		(path "/ee62a278-a94c-4411-ba4b-a0279340f73e/9f906914-aea1-485c-a736-acacf61c78de")
 		(sheetname "/DotStar LEDs/")
 		(sheetfile "06_LEDs.kicad_sch")
 		(units
