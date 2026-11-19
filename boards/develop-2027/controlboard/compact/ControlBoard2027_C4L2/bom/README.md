@@ -56,12 +56,15 @@ This section supersedes the older stock and Digi-Key statements below.
 
 | | Lines | Parts per board |
 |---|---|---|
-| Full BOM | 52 | 175 |
-| JLCPCB assembly | 51 (22 Basic, 29 Extended) | 174 |
+| Full BOM | 52 | 174 |
+| JLCPCB assembly | 51 (22 Basic, 29 Extended) | 173 |
 | Order separately (consign or JLC global sourcing) | 1: U11 | 1 |
 | Loose accessory | 1: OLED module for J13 | 1 |
 
 R73 (47k SD card-detect pull-up, added 2026-11-09) joins the R1-R5 / R20 47k line.
+
+R72 (a second 100k on MOTOR_SPI_SCK, left from the old dribbler bus, in parallel with R30) is DNP and out of the BOM
+since 2026-11-19; the 100k line drops to 5 (R30, R31, R47, R48, R69). R49 (non-functional drawing) is DNP as well.
 
 Not in the BOM: H1-H4 (M3 holes), H5 / H6 (M2 speaker-board holes), TP1-TP21 (bare test pads), all excluded in the schematic. HR1 / HR2 (M2 radio
 standoff pads) exist only on the board and are not in the schematic. The radio standoffs and screws (2x M2, 5 mm

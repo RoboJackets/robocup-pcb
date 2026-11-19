@@ -717,8 +717,8 @@ Pinouts, mating rules and the mating-board requirements are in [INTERFACE.md](..
 
 - **Motors (J4-J8).** Pinout 1 MOSI, 2 GND, 3 MISO, 4 SCK, 5 GND, 6 CS, tabs GND. SPI only, no supply. Each has its
   own flow-through TPD4E05U06 (U4 J4, U5 J5, U12 J6, U13 J7, U14 J8) with channels in connector-pin order (MOSI 1->10,
-  MISO 2->9, SCK 4->7, CS 5->6). R24-R28 10k CS pull-ups hold the modules deselected through reset; R30 and R72 (100k each,
-  50k together, redundant) pull the front SPI3 SCK down and R69 (100k) the rear SPI2 SCK. TP4 / TP5 / TP6 on front
+  MISO 2->9, SCK 4->7, CS 5->6). R24-R28 10k CS pull-ups hold the modules deselected through reset; R30 (100k) pulls the front SPI3 SCK down (R72, a
+  second 100k left from the old dribbler bus, is DNP since 2026-11-19) and R69 (100k) the rear SPI2 SCK. TP4 / TP5 / TP6 on front
   SCK / MOSI / MISO. All five modules share MISO per
   bus (M9). The motor-module board does not yet use this connector (M19). The motor numbering (counter-clockwise from
   front-left: 0 FL, 1 BL, 2 BR, 3 FR) is an assumption; firmware only sees CS pins.
