@@ -76,7 +76,24 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "hole_clearance|30985713|103705699|a7032b51-9fbd-417a-8ecc-2c7c75cf6e1a|5d4fe5f7-69a4-49f0-9de6-9caf4d85d847",
+          "Exceptions for USB-C Connector"
+        ],
+        [
+          "hole_clearance|31027295|103510070|4bffc2d2-31ab-4c91-a84d-d6b5e8ba1290|5d4fe5f7-69a4-49f0-9de6-9caf4d85d847",
+          "Exceptions for USB-C Connector"
+        ],
+        [
+          "hole_clearance|32150018|98228072|2b69dc94-0e1c-452b-b052-fedd51fa63af|919ca3b4-f388-4ce9-b034-9fec6e7c2d83",
+          "Exceptions for USB-C Connector"
+        ],
+        [
+          "hole_clearance|32191601|98032443|f3f7da08-8152-477b-a91b-a95436e64f60|919ca3b4-f388-4ce9-b034-9fec6e7c2d83",
+          "Exceptions for USB-C Connector"
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -214,7 +231,8 @@
       ],
       "track_widths": [
         0.0,
-        0.15,
+        0.16,
+        0.2,
         0.25,
         0.5,
         1.0,
@@ -554,7 +572,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -567,9 +585,24 @@
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
         "tuning_profile": "",
-        "via_diameter": 0.6,
+        "via_diameter": 0.45,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "clearance": 0.15,
+        "diff_pair_gap": 0.2,
+        "diff_pair_width": 0.25,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "USB",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.21,
+        "tuning_profile": "",
+        "via_diameter": 0.45,
+        "via_drill": 0.3
       }
     ],
     "meta": {
@@ -577,7 +610,12 @@
     },
     "net_colors": {},
     "netclass_assignments": {},
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "USB",
+        "pattern": "/MCU Connectors/D*"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -715,12 +753,12 @@
         "SCL"
       ],
       "I2C0": [
-        "SDA",
-        "SCL"
+        "SDA0",
+        "SCL0"
       ],
       "I2C1": [
-        "SDA",
-        "SCL"
+        "SDA1",
+        "SCL1"
       ],
       "SWD": [
         "IO",
@@ -775,7 +813,7 @@
         "uuid": "950edf25-7c73-426b-95c7-f5bf9643ec87"
       }
     ],
-    "used_designators": "#FLG1-8,#PWR1-144,#PWR206-208,C1-55,C60-71,D1-19,F1-2,H1-3,J1-13,J16-17,JP1-2,L1-6,M1-3,Q1-2,Q19,R1-74,SW1-4,TJ1-3,TP16-22,U1-12,Y1",
+    "used_designators": "#FLG1-8,#PWR1-144,#PWR206-208,C1-55,C60-71,D1-21,F1-2,H1-3,J1-13,J16-17,JP1-2,L1-6,M1-3,Q1-2,Q19,R1-74,SW1-4,TJ1-3,TP16-22,U1-12,Y1",
     "variants": []
   },
   "sheets": [
