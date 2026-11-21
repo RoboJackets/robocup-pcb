@@ -1,5 +1,5 @@
 RADIOBOARD2027_C_OVERHANG (30 x 40 mm, 4 layers) - OPEN ITEMS
-Updated 2026-11-07. Only open items are listed. Design, lengths, rules and deviations: DESIGN_NOTES.md.
+Updated 2026-11-20. Only open items are listed. Design, lengths, rules and deviations: DESIGN_NOTES.md.
 Interface: ../docs/INTERFACE.md. Firmware: ../docs/FIRMWARE.md. Bench map: docs/board_map.svg.
 Current state: DRC 0 / 0 / 0 / 0 with parity, ERC 0, link matched 14.079 mm, USB matched in both orientations,
 J2 mates the current controlboard J9 (20 / 20).
@@ -10,9 +10,18 @@ J2 mates the current controlboard J9 (20 / 20).
 1.0 Datasheet audit 2026-11-18 (schematic only): no critical or major defect; Inboard and Overhang are
     electrically identical; all 20 J2 contacts land on the C4L2 J9 (0.000 mm). Open decision: U7 TPS3840PL29 hands
     the mux to the host only above VIT+ <= 3.07 V, so the controlboard +3V3 at J9 must be >= 3.10 V with the radio
-    idle (C4L2 gives about 3.2 V at its planned load, 3.08 V at 1 A). Either keep that condition (no change) or fit
-    TPS3840PL28 (VIT+ <= about 2.97 V; BOM change). Firmware: patch out the ESP-Hosted CS pull-ups, set every link
+    idle (C4L2 gives about 3.2 V at its planned load, 3.08 V at 1 A). Decision 2026-11-20: keep the PL29 (no change).
+    Start-up margin at the planned load is about 0.13 V. The tighter case is while running: the radio drops to USB
+    (or off) below VIT- (2.857-2.944 V); with the radio's 0.4 A TX peak on top of a 0.8 A board load the rail is about
+    3.00 V worst case, which is also the module's own 3.0 V minimum. A PL28 would only move the hand-over below that
+    minimum. Keep the CB +3V3 load at or below about 0.8 A including the radio, or set the powerboard 3V3 at 3.4 V
+    (INTERFACE.md J15). Bench: measure +3V3 at J9 and the radio 3V3 during Wi-Fi TX at full board load.
+    Firmware: patch out the ESP-Hosted CS pull-ups, set every link
     pin explicitly, MISO drive cap 1-2 or scope check (../docs/FIRMWARE.md §2.2).
+1.0a Radio USB-C (J1) faces the speaker-board outline on the CB about 4 mm away. A plug sits about 5-11 mm above the
+    CB and the speaker board on 5 mm standoffs about 5-6.6 mm, so the radio USB probably cannot be plugged in with the
+    speaker board fitted. Accepted for this order: flash the radio with the speaker board off, or via OTA. Check on
+    the first stack (audit 2026-11-20).
 1.1 Independent re-audit of the USB-skew changes (R5 / R6 moved, D+ A6 hop and its return via, D- trunk
     serpentine, VBUS L4 run into U4 pin 1, GND_L3_USB_HOP), then full DRC / ERC / parity (CLAUDE.md section 12).
 1.2 Confirm the widths in the JLC impedance calculator for JLC04161H-3313: 0.15 mm link (target 50 ohm) and

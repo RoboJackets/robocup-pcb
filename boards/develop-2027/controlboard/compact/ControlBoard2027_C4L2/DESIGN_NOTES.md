@@ -47,17 +47,38 @@ y down, seen from the top. The robot front is at the top (y = 0). In the KiCad f
 > **Before ordering, read [README_BEFORE_ORDERING.md](README_BEFORE_ORDERING.md)** (LED pin 1 check at JLC, motor
 > connector mismatch, expansion fuse rating, firmware pin changes).
 
-This folder is ControlBoard2027_C4L2: a full re-placement and re-route of C4L to the new floorplan
-(`../potential_new_layout.png`). Sections 2-15 below are still the C4L text and are being rewritten; where they disagree
-with this subsection or with the files, this subsection and the files win. The firmware pin map is
-`../docs/FIRMWARE.md` section 1.3a; connector positions are in `../docs/INTERFACE.md` section 5.
+This folder is ControlBoard2027_C4L2: a full re-placement and re-route of C4L (now in `../archive/`) to a new
+floorplan. Sections 2-15 below have been brought up to the C4L2 pins and positions (positions
+spot-checked against the board on 2026-11-21); where any text still disagrees with the files, the files win. The firmware pin map is
+`../docs/FIRMWARE.md` sections 1.2 and 1.3; connector positions are in `../docs/INTERFACE.md` section 5.
 
 | Check (2026-11-17, on the saved repo board) | Result |
 |---|---|
 | ERC | 1 error, the known U2 VCAP pin 71 / 106 power-output tie (§5) |
 | DRC (kicad-cli, parity on, zones filled with the repo rules and saved) | 0 errors, 0 unconnected, 0 parity; warnings: 6 courtyard (J13 OLED module over J1 / J2 / U3 / D1 / F1, and J9 over the U2 courtyard, both intended), 2 NPTH in courtyard (J2 under J13), 7 silk overlap (pin-1 "1" marks touching the J5 / J6 / J15 outlines, the GND and LCKI test-point labels touching their pad outlines), 0 silk over copper |
 | Custom rules | Fast-bus rules use net class SIG50; U10 is in the J13 module rule; compile proved with a violated test rule (199 hits), removed; unchanged since |
-| Independent audits | Round 1 (Fable) on the 2026-11-17 morning install; its four major items are fixed in this layout (GND stitching, SDMMC_D1 loop, silkscreen, speaker outline). Re-audit pending |
+| Independent audits | Round 1 (Fable) on the 2026-11-17 morning install; its four major items are fixed in this layout (GND stitching, SDMMC_D1 loop, silkscreen, speaker outline). Pre-fabrication audit 2026-11-20: see below |
+
+**Pre-fabrication audit (2026-11-20).** Independent schematic, BOM and PCB audit of this board and both compact radio
+boards, made without the notes and then reconciled with them. Result: no open critical item on this board.
+- DRC re-run on the saved board after the fix below: 0 errors, 0 unconnected, 0 parity, 15 warnings (the 6 courtyard,
+  2 NPTH and 7 silk items listed above). Copper compared with the pre-fix board: only the two vias removed.
+- Fixed: two dangling +3V3 vias beside C11, at (110.64, 68.20) and (110.64, 71.83) absolute, were removed.
+- Resolved by cable: J4-J7 have the reverse pin order of the released drive-motorboard J4 (1 CSN, 2 GND, 3 SCK, 4 MISO,
+  5 GND, 6 MOSI). The drive cables are reversed (pin n to 7-n) and the dribbler cable (J8) is straight
+  (INTERFACE.md J4-J8). Supersedes the "motor module to be confirmed" notes and M19.
+- Datasheet added: DS22057B (MCP1826S) is now in `../datasheets/` (22057B.pdf). U7 pinout re-checked against its SOT-223-3 table
+  (1 VIN, 2 / tab GND, 3 VOUT); see §4.7 for the output capacitance.
+- Open, unchanged: kicker J10 and expansion J11 / J12 pin orders have no mating design yet (TODO 1.6). The WROOM-1
+  fallback antenna lies over this board's copper on the Inboard radio (radio TODO).
+- Open minors (accepted for this order):
+  - The +3V3 path from U9 is one via barrel plus 0.30 mm necks into U9 / U8; adequate for about 1 A.
+  - The U2 supply escapes on pins 6, 17, 30, 52, 62 and 72 meet only the pad tips; connected per DRC.
+  - SD D0-D3 and CMD cross 2-3 mm of +3V3 reference on L4.
+  - Bottom SMD parts sit about 0.5 mm from through-hole joints (R53-R58 at SW3, parts near J15 and SW4-SW6), so the
+    through-hole parts need selective or hand soldering: tell the assembler.
+  - The IMU on the bottom under U2 sees MCU heat; let it reach a stable temperature before calibrating.
+  - The J13 OLED socket has no pin legend on the top silkscreen.
 
 **Placement.**
 - J15 power entry is top-left with the power block.
@@ -95,7 +116,7 @@ tables below are unchanged. Done:
   - U6 - J11), NRST (SW1 is off the U2 - J3 line), DBG_UART_RX and ESP_RST (within 1.2 mm of the shortest legal
   path), ACCEL_EXTI (the shorter path runs under U11).
 
-**Pin changes against C4L** (schematic, checked against DS13313; full table in FIRMWARE.md 1.3a):
+**Pin changes against C4L** (schematic, checked against DS13313; full table in FIRMWARE.md §1.2 / §1.3):
 
 | Function | C4L2 pins (LQFP pin) | Was on C4L |
 |---|---|---|
@@ -169,7 +190,7 @@ SK9822-EC20 pin numbering (2026-11-17).
 - The BB-2020BGR alternate must be re-checked against its own pin table before it is used.
 
 Silkscreen art (2026-11-17).
-- Group `silk_art_miku`: the line art from `../ControlBoard2027_C/SvgMiku3.svg` (Creative Commons, per the owner), the
+- Group `silk_art_miku`: the line art from `../archive/ControlBoard2027_C/SvgMiku3.svg` (Creative Commons, per the owner), the
   same five F.Silkscreen polygons as on ControlBoard2027_C.
 - Size and place: 14.5 x 13.3 mm at x 74.0-88.5, y 14.2-27.5, between U2 and the front motor connectors.
 - Clearances: no pad, part, courtyard, label or via under it, and clear of the radio, speaker and OLED-module
@@ -178,10 +199,10 @@ Silkscreen art (2026-11-17).
 Schematic and pinout audit (2026-11-17, independent): no critical finding. Every MCU pin and AF against DS13313, the J9
 mating against both radio boards, the J3 VCP direction, the power path, ICs against their application circuits and
 the pad nets all verified. Fixed: INTERFACE.md bus tables (now C4L2), 21 stale symbol descriptions (also mirrored to
-the board fields) and three sheet notes, plus the FIRMWARE.md USB AF, RX pull-up and EXTI notes. Section 10 below still
-says the LED data uses U10 gate 4; on the C4L2 it uses gate 2 (pins 5 / 6). Open: the motor module in
-drive-motorboard/motor-module (JST PH 8-pin with +5V / +3V3) does not mate with J4-J8 (JST GH 6-pin, signal only);
-the intended motor board and its logic supply must be confirmed.
+the board fields) and three sheet notes, plus the FIRMWARE.md USB AF, RX pull-up and EXTI notes. Section 10 now gives the C4L2 U10
+gates (gate 1 SCK, gate 2 MOSI on pins 5 / 6). The motor board question raised here was
+closed on 2026-11-20: the drive-motorboard has a GH 6P with the reverse pin order and uses a reversed cable (see the
+pre-fabrication audit above).
 
 Audit round 4 (2026-11-17).
 - No critical findings. Majors fixed: the LED SCK layer change (above), and the top silkscreen ("MOTOR 3" now reads
@@ -223,7 +244,7 @@ Motor buses are matched per connector group only (user rule).
 **Open.**
 - Re-audit (Fable loop) on this install.
 - Rewrite of sections 2-15 for C4L2.
-- Check the AF numbers in FIRMWARE.md 1.3a in CubeMX.
+- Check the AF numbers in FIRMWARE.md §1.2 / §1.3 in CubeMX.
 
 ### 1.1 ControlBoard2027_C4L status (before the C4L2 re-layout)
 
@@ -274,8 +295,9 @@ route, which is long and convoluted (it detours to y ~51.5, deviation 17). Befor
 | ESP-Hosted | Espressif esp-hosted-mcu, SPI full-duplex design |
 | V0.3 | ControlBoard_TestingV0.3 CubeMX report and clock tree (the old firmware project) |
 
-Footprint evidence for the project-library parts: `footprints/FOOTPRINT_SOURCES.md`. The datasheet PDFs referenced
-there are kept with the prototype project (`../../prototype/ControlBoard2027/datasheets/`).
+Footprint evidence for the project-library parts: `footprints/FOOTPRINT_SOURCES.md`. The datasheet PDFs are in
+`../datasheets/` (shared by the compact boards; copied from `../../prototype/ControlBoard2027/datasheets/` on
+2026-11-21, sources in `../../prototype/ControlBoard2027/datasheets/SOURCES.md`).
 
 ---
 
@@ -330,7 +352,7 @@ rule is in [INTERFACE.md](../docs/INTERFACE.md). GND pin 5 sits between the two 
 cannot short +5V to +3V3. Each PH contact is rated 2 A, one contact per rail (deviation 20).
 
 R33 (TX) and R34 (RX), 1k, sit in series between J15 pins 1 / 2 and PE3 / PE2 (USART10: PE3 TX AF11, PE2 RX AF4;
-115200, 3.3 V logic; FIRMWARE.md 1.3a), on the bottom in line with the pins. TP10 / TP11 sit on their MCU-side pads. Reasons (DS13313 Rev 4):
+115200, 3.3 V logic; FIRMWARE.md §1.2 / §1.3), on the bottom in line with the pins. TP10 / TP11 sit on their MCU-side pads. Reasons (DS13313 Rev 4):
 - Unpowered powerboard: if its RX pin clamps to its own VDD, PE3 high feeds at most (3.3 - 0.6) V / 1k = 2.7 mA into
   that rail instead of back-powering it.
 - Cable faults: TX shorted to GND or +5 V is held to 3.3 mA or 5 mA (PE3 driving low), well below the 20 mA per-pin limit
@@ -422,6 +444,12 @@ VBUS from J2 goes through D1 (TVS0500DRV, at J2, before F1) and F1 to U8 VIN2, U
   USB 10 uF limit. The +3V3 bulk (about 77 uF nominal; less at 3.3 V bias, for example C38 22 uF 6.3 V 0603 keeps
   roughly half) sits behind the U9 switch, not on the LDO pin; check the switchover
   transient on the bench (TODO 2.2).
+- Re-checked against the local DS22057B (2026-11-20). §3.4 / §4.3 give only a 1 uF minimum and state stability
+  with ceramic, tantalum and electrolytic output capacitors. The 22 uF figure is a recommendation ("larger capacitors
+  improve dynamic performance and PSRR; a maximum of 22 uF is recommended"), not a stability limit. On USB, U9 closes
+  onto the bulk through its own slew-controlled switch, so the LDO pin itself carries 12.2 uF. The remaining risk is
+  slow settling or ringing on a load step with all the bulk switched in. Bench check: on USB only, scope +3V3 at TP17
+  while the LEDs switch from off to full and the radio transmits.
 - U7 load and heat: on USB alone it carries about 0.35 A plus up to 0.4 A of radio TX peaks. Dissipation is
   (5.0 - 3.3) x 0.35 = 0.60 W (0.68 W at 5.25 V); a 0.75 A peak gives 1.28 W (1.46 W at 5.25 V). With the SOT-223
   theta-JA of 62 °C/W (JEDEC 4-layer board, DS22057B) the junction rises 37-42 °C at 0.35 A. That figure assumes a
@@ -437,7 +465,7 @@ VBUS from J2 goes through D1 (TVS0500DRV, at J2, before F1) and F1 to U8 VIN2, U
 D5 / D6 Kingbright APT1608EC red: R45 3.3k gives 0.9 mA on 5 V, R46 1.5k 0.87 mA on 3V3. Test points are 1.0 x 1.0 mm
 pads on the C4L2, 1.5 x 1.5 mm on the C4L (TP6 is a 1.0 mm round pad), labelled on the silkscreen with their signal names. Power test row at y 38.8:
 TP12 GND, TP14 +3V3_RAW, TP13 +5V_PROT, TP17 +3V3, TP15 +3V3_LDO, TP16 +5V; TP3 VBUS at (87.0, 38.8). They measure
-the fuse plus mux drop on each rail and the USB side. TP10 (PB_TX) / TP11 (PB_RX) give logic-analyser access to the powerboard UART.
+the fuse plus mux drop on each rail and the USB side. TP10 (PWR_UART_TX) / TP11 (PWR_UART_RX; silkscreen PTX / PRX) give logic-analyser access to the powerboard UART.
 
 ---
 
@@ -629,7 +657,7 @@ I2C target mode:
 - SCL (13) / SDA (14) on I2C4 (PD12 / PD13, AF4) with R10 / R8 2.2k. C48 100 nF at VDDIO (5), C49 100 nF at VDD (8).
 - INT1 (4) -> ACCEL_EXTI (PF3), INT2 (9) -> GYRO_EXTI (PF2). Both are push-pull and driven low from power-up, so no
   pulls. The part has no reset pin (m16).
-- Pinout verified against DS14623 Rev 3 Table 2 (local copy prototype/ControlBoard2027/datasheets/LSM6DSV320X.pdf),
+- Pinout verified against DS14623 Rev 3 Table 2 (local copy ../datasheets/LSM6DSV320X.pdf),
   I2C mode 1, all 14 pins: 1 SDO/TA0 = GND (address 1101010b = 0x6A), 2 SDx / 3 SCx = GND ("connect to VDDIO or
   GND"), 4 INT1, 5 VDDIO = +3V3, 6/7 GND, 8 VDD = +3V3 (1.71-3.6 V), 9 INT2, 10 OCS_aux / 11 SDO_aux open ("connect
   to VDDIO or leave unconnected"; internal pull-ups on by default), 12 CS = +3V3 (I2C enabled), 13 SCL, 14 SDA.
@@ -669,7 +697,7 @@ Firmware ignores re-triggers for about 10 ms. SW1, SW2, SW4-SW6 are APEM MJTP124
   alternate) D7-D11 on +5V (the U8 output, so they work on USB too). SK9822 datasheet: VDD 5 V typ, 5.3 V max;
   VIH 3.4 V min, VIL 1.6 V max (U10 74AHCT125 at 5 V drives them); clock 15 MHz max (SPI6 runs 3.125 MHz);
   -40 to 85 °C; built-in reset (dark at power-up), firmware still sends an all-off frame first. The colour byte order
-  is ambiguous in the datasheet (FIRMWARE.md §1.7): test pure red, green and blue on the bench. The BB-2020 alternate has VDD 4.5-5.5 V and a 10 MHz clock limit.
+  is ambiguous in the datasheet (FIRMWARE.md §1.9): test pure red, green and blue on the bench. The BB-2020 alternate has VDD 4.5-5.5 V and a 10 MHz clock limit.
 - Current: 18 mA per colour at full gain, so up to 270 mA for five LEDs at full white; OPSCO recommends gain level
   9/31 or lower (about 5.2 mA per colour, 78 mA for five at white) for heat. Firmware caps it at about 250 mA on the powerboard (inside F5's hold, §4.5)
   and about 100 mA on USB (PWR_SRC_5V low). On USB, +5V can sit below 4.5 V, so colours are guaranteed only on the
@@ -719,7 +747,8 @@ Pinouts, mating rules and the mating-board requirements are in [INTERFACE.md](..
   MISO 2->9, SCK 4->7, CS 5->6). R24-R28 10k CS pull-ups hold the modules deselected through reset; R30 (100k) pulls the front SPI3 SCK down (R72, a
   redundant second 100k, was removed on 2026-11-19) and R69 (100k) the rear SPI2 SCK. TP4 / TP5 / TP6 on front
   SCK / MOSI / MISO. All five modules share MISO per
-  bus (M9). The motor-module board does not yet use this connector (M19). The motor numbering (counter-clockwise from
+  bus (M9). The drive-motorboard J4 has the reverse pin order and connects through a reversed cable; the dribbler
+  uses a straight cable (M19, INTERFACE.md J4-J8). The motor numbering (counter-clockwise from
   front-left: 0 FL, 1 BL, 2 BR, 3 FR) is an assumption; firmware only sees CS pins.
 - **Kicker (J10).** 1 SDA, 2 GND, 3 SCL, 4 GND, tabs GND; no power (the kicker is powered by the powerboard). U17 takes
   SDA on channel 1 (1 -> 10) and SCL on channel 3 (4 -> 7) so both lines enter it straight from J10.
@@ -750,8 +779,8 @@ Pinouts, mating rules and the mating-board requirements are in [INTERFACE.md](..
 
 ### 12.1 Placement
 
-The placement drawings in `../docs/img/` (`cb_compact_layout_top.svg`, `cb_compact_layout_bottom.svg`) show the
-sister board ControlBoard2027_C and have not been generated for this board yet (TODO 4.7). The placement
+No placement drawings exist for this board yet (TODO 4.7); the earlier ones showed ControlBoard2027_C and were
+removed. The placement
 starts from the MCU pin groups: LQFP-144 at rotation 0, pins 1-36 face west, 37-72 south, 73-108 east, 109-144 north.
 
 | Pin group (side) | Goes to | Placement |
@@ -1037,8 +1066,8 @@ Open, recorded (none needs a BOM change):
   connector ESD arrays boxed apart from their connectors on sheet 07, some field overlaps (J9 GND symbols, J11 / J12
   values, TP21 / D11, VBUS_SENSE / OLED_I2C_SCL labels on sheet 02), oversized pages and empty title blocks.
 - Rating fields that describe the JLC part rather than the MPN (C24 / C26, C28 / C33 / C37 / C42), generic test-point
-  descriptions, a few Digi-Key product-page datasheet links, and datasheets not yet in `datasheets/` (MCP1826S,
-  USB4110, DM3AT, JST PH / GH, AN5419).
+  descriptions, a few Digi-Key product-page datasheet links, and datasheets not yet in `../datasheets/` (USB4110,
+  DM3AT, JST PH, AN5419; MCP1826S DS22057B added 2026-11-20).
 - SK9822 VDD maximum is 5.3 V: the powerboard 5 V must stay at or below 5.3 V (TODO 1.5).
 
 Further work on 2026-11-18 (after the audit above): second U9 output via; 3D model for the SK9822-EC20; 11 split
@@ -1055,7 +1084,7 @@ switched through that one via (they do not: at U2 CLK returns through (56.27, 6.
 (51.25, 9.30) / (50.97, 10.10)) the bound is 0.49 V, below the 1.2 V a falling SD clock would need to cross back
 over the card VIH (0.625 VDD) from VIL (0.25 VDD); data is sampled about 20 ns after the edge, when the bounce is
 gone. The motor (6 Mbit/s), LED (3.125 Mbit/s, AHCT edges about 3 ns) and radio (24 MHz) links have more margin.
-Keep OSPEEDR at MEDIUM for SDMMC2 (FIRMWARE.md §1.4) unless TP1 shows the eye needs more.
+Keep OSPEEDR at MEDIUM for SDMMC2 (FIRMWARE.md §1.6) unless TP1 shows the eye needs more.
 
 ### 12.9b Datasheet audit of the schematic (2026-11-18)
 
@@ -1070,9 +1099,9 @@ power; 0-50 C).
 | Q1 AO3401A reverse polarity, D2 | Works | Vgs -4.85 V, Rds(on) <= 75 mohm hot; 0.24-0.30 W at 2 A |
 | D1 / D3 / D4 TVS0500 | Works | DRV pinout; VBR >= 7.5 V (VRWM 5.0 V vs 5.15-5.25 V rails: leakage only) |
 | F1 / F3-F6 PTCs | Works with conditions | hold at 50 C: 0.95 A (F5 / F6), 0.55 A (F1, F3, F4) |
-| U7 MCP1826S | Works with conditions | DS22057B pinout; dropout 0.4 V at 1 A; about 90 uF on its output on USB (above the 22 uF recommendation, bench check) |
+| U7 MCP1826S | Works with conditions | DS22057B pinout; dropout 0.4 V at 1 A; about 90 uF on its output on USB (above the 22 uF recommendation, which DS22057B §4.3 gives for dynamic performance, not stability; bench check, §4.7) |
 | USB-C sink, U3, VBUS sense | Works | Rd 5.1k on CC1 / CC2; 9.1 uF VBUS; PA9 3.10 V at 5.25 V VBUS |
-| U2 STM32H723: 144 pins, supplies, VCAP, BOOT0, NRST | Works | DS13313 Fig. 6, Tables 7 / 14; all alternate functions in FIRMWARE.md 1.3a verified against Table 8 |
+| U2 STM32H723: 144 pins, supplies, VCAP, BOOT0, NRST | Works | DS13313 Fig. 6, Tables 7 / 14; all alternate functions in FIRMWARE.md §1.2 / §1.3 verified against Table 8 |
 | HSE X1 25 MHz | Works with conditions | CL 9.5-10.5 pF vs 10 pF; gm margin 1.8x; drive level up to about 103 uW at 1.4 Vpp vs 100 uW: measure |
 | ROM bootloader / USB DFU | Works | AN2606 Table 114: no connected pin can stop DFU (R13 on PA15, R30 on SCK) |
 | microSD J1, U1, card detect | Works | 47k pull-ups; 24 MHz / 400 kHz from 48 MHz; DET to PD5 with R73 |
@@ -1083,7 +1112,7 @@ power; 0-50 C).
 | J10, J11 / J12, J13 | Works with conditions | pinouts, ESD flow-through, I2C addresses; mating boards not in the repo |
 | J4-J8 motors, J15 powerboard | Cannot be proven | no matching motor board or powerboard design in the repo (README items 3 and 8) |
 
-Conditions (firmware settings are in FIRMWARE.md §1.3b):
+Conditions (firmware settings are in FIRMWARE.md §1.5):
 - Switching between the powerboard and USB while USB is attached dips +3V3 to about 2.15-2.9 V for a moment
   (TPS2116 break-before-make): brown-out reset on, radio / SD re-init, or do not switch while USB is attached.
 - The old prototype radio mates with J9 mechanically but puts GND on the +3V3 pins: compact radios only (silkscreen
@@ -1355,8 +1384,9 @@ Master Keep IO State on every SPI master.
 **M18 SD card power.** Card VDD is hard-wired to +3V3. A hung card is recovered with CMD0; a card that ignores CMD0
 needs a board power cycle. Accepted (logging only).
 
-**M19 Motor-module connector.** J4-J8 are JST GH 6P (1 MOSI, 2 GND, 3 MISO, 4 SCK, 5 GND, 6 CS). The motor-module
-board's J2 is still the older 8-pin JST PH. Change it to this pinout, or build an adapter cable, before connecting.
+**M19 Motor-module connector (closed 2026-11-20).** J4-J8 are JST GH 6P (1 MOSI, 2 GND, 3 MISO, 4 SCK, 5 GND, 6 CS).
+The released drive-motorboard J4 is GH 6P in the reverse order (1 CSN ... 6 MOSI): drive cables are reversed
+(pin n to 7-n). The dribbler J5 matches: straight cable. INTERFACE.md J4-J8.
 
 ### Minor
 
@@ -1496,4 +1526,4 @@ Rejected findings, kept for the record:
 - "F5 is undersized" (BOM audit, 2026-10-04): the +5V budget is 0.8 A against F5's 0.95 A hold at 50 °C; a larger F5
   would no longer trip below the TPS2116's 2.5 A rating.
 - Audit 2 M3 (mating boards do not match): not a defect of this board; the pinouts were set by the user and are now
-  stated in INTERFACE.md. The motor-module mismatch stays open as M19.
+  stated in INTERFACE.md. The motor-board mismatch (M19) was closed on 2026-11-20 by the cable choice.

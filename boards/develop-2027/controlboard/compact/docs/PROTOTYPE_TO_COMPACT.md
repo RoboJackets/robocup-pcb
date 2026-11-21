@@ -2,7 +2,8 @@
 
 This file lists every difference between the prototype set in `../../prototype/` (ControlBoard2027 and
 RadioBoard2027) and the compact set (ControlBoard2027_C, RadioBoard2027_C_Inboard, RadioBoard2027_C_Overhang), with
-the reason for each change.
+the reason for each change. The controlboard being built is ControlBoard2027_C4L2, a 4-layer re-layout of the C:
+section 1.8 lists what changed from the C to the C4L2.
 
 **How the part lists were made.** The schematic netlists of all five boards were exported with
 `kicad-cli sch export netlist` on 2026-11-07. A script compared them reference by reference: parts present on one
@@ -25,7 +26,7 @@ so the radio diff applies to both.
 | Mounting | four M3 holes at (4, 4) ... (96, 96) | four M3 holes at (3.5, 3.5), (116.5, 3.5), (3.5, 56.5), (116.5, 56.5) | new outline |
 | Radio | radio hung off the east edge on J9 at (95.45, 26.95), held only by the connector | radio sits over the MCU on J9 at (39.70, 6.03) plus two M2 standoffs HR1 (50.0, 37.5), HR2 (63.4, 37.5) | mechanical support; the radio no longer sticks out of the board |
 | OLED | Adafruit 326 module on its header at the north-west | generic SSD1306 module raised over the east service edge on a 1 x 4 socket | space; generic module |
-| IMU U11 | top side at (53.75, 31.5), rotation 180 | bottom side inside the MCU pad ring at (48.6, 20.6), rotation 270 | only place its four nets reach the MCU without crossing the crystal keep-out. Firmware axis remap changes (see [FIRMWARE.md](FIRMWARE.md) §1.6) |
+| IMU U11 | top side at (53.75, 31.5), rotation 180 | bottom side inside the MCU pad ring at (48.6, 20.6), rotation 270 | only place its four nets reach the MCU without crossing the crystal keep-out. Firmware axis remap changes (see [FIRMWARE.md](FIRMWARE.md) §1.8) |
 
 ### 1.2 Parts removed
 
@@ -77,7 +78,8 @@ All other parts keep their reference, value, MPN and footprint.
 | Compact | MOSI | GND | MISO | SCK | GND | CS | GND |
 
 The ESD arrays U4, U5, U12, U13, U14 were rewired so each line passes its channel in connector pin order (MOSI
-1->10, MISO 2->9, SCK 4->7, CS 5->6; before: SCK, MOSI, MISO, CS). The motor-module connector must change to match.
+1->10, MISO 2->9, SCK 4->7, CS 5->6; before: SCK, MOSI, MISO, CS). The drive-motorboard J4 (GH 6P) has the reverse of this order and connects through a reversed cable; the dribbler
+board matches it and uses a straight cable (INTERFACE.md J4-J8).
 
 **Motor buses.** Prototype: one SPI1 bus to all five connectors (CS PC5, PB0, PB1, PB2, PF11). Compact: three
 buses, because one trunk to connectors on three edges would be over 150 mm with long stubs:
@@ -149,6 +151,52 @@ Firmware ported from the prototype must change these pins and swap the PB6 / PB7
 - USB ESD: TPD4E05U06 per contact instead of USBLC6.
 - Input protection otherwise unchanged: Q1 AO3401A reverse-polarity FET on 5 V, D3 / D4 TVS0500 on the 5 V / 3.3 V
   inputs, F5 / F6 PTC fuses, F1 on VBUS, F3 / F4 on the expansion 5 V.
+
+### 1.8 ControlBoard2027_C -> ControlBoard2027_C4L2 (the board being built)
+
+ControlBoard2027_C4L2 is the board for this order. It took the C (via the intermediate C4L) to a 4-layer stackup and
+re-placed every connector group, so most MCU pins moved. Section 1.1-1.7 above is the prototype -> C step; this
+section is the further C -> C4L2 step, read from the two schematic netlists on 2026-11-21. The complete C4L2 pin map
+is [FIRMWARE.md](FIRMWARE.md) sections 1.2 and 1.3, connector positions and the cable list are [INTERFACE.md](INTERFACE.md)
+section 5.
+
+**Board.** 4 layers, JLC04161H-3313 (L1 signal, L2 GND, L3 +3V3 / +5V planes with GND islands under the fast L4
+runs, L4 signal) instead of 6. Same 120 x 60 mm outline, connector families, holes and radio position.
+
+**Parts.** The same parts as the C, except:
+
+| Ref | C | C4L2 | Why |
+|---|---|---|---|
+| R72 | 100k SCK pull-down on the dribbler SPI4 | removed (2026-11-19) | the dribbler joined the front SPI3 bus, whose SCK already has R30 |
+| R70 / R71 | 30R on the dribbler SPI4 SCK / MOSI | 30R on the LED SPI6 SCK / MOSI (PA5 / PA7 to U10) | reused when the dribbler lost its own bus |
+| TP1-TP21 | 1.5 x 1.5 mm pads | 1.0 x 1.0 mm pads | space |
+| TP10 / TP11 | values PB_TX / PB_RX | PWR_UART_TX / PWR_UART_RX | named for the net they sit on |
+| D7-D11 | APA102-2020 pad numbering | SK9822 datasheet numbering (1 SDO, 2 GND, 3 SDI, 4 CKI, 5 VDD, 6 CKO) | symbol and footprint now follow the fitted part; same copper |
+
+**Buses and pins (C -> C4L2).**
+
+| Function | ControlBoard2027_C | ControlBoard2027_C4L2 |
+|---|---|---|
+| Front motors J4 MOTOR 0, J7 MOTOR 3, dribbler J8 | J4 on SPI1 (PA5 / PA6 / PA7), J7 on SPI2, J8 on its own SPI4 (PE2 / PE5 / PE6) | one front bus, SPI3 PC10 SCK / PC11 MISO / PC12 MOSI through R15 / R16; CS PD0 (J4), PD1 (J8), PD2 (J7) |
+| Rear motors J5 MOTOR 1, J6 MOTOR 2 | J5 on SPI1, J6 on SPI2 | one rear bus, SPI2 PB13 / PB14 / PB15 through R67 / R68; CS PB12 (J5), PD8 (J6) |
+| Radio | SPI3 on PB3 / PB4 / PB5 (AF6 / AF6 / AF7) | same pins on SPI1 (AF5); PG15 CS, PE1 reset, PB6 DATA_READY, PB7 HANDSHAKE unchanged |
+| DotStars | SPI6 PG13 / PG14, U10 gate 4 | SPI6 PA5 / PA7 (AF8) through R70 / R71, U10 gate 1 (SCK) and gate 2 (MOSI) |
+| Kicker | I2C2 PB10 / PB11, R18 / R19 | I2C1 PB8 SCL / PB9 SDA, R14 / R17 |
+| OLED | I2C1 PB8 / PB9, R14 / R17 | I2C3 PA8 SCL / PC9 SDA, R18 / R19 |
+| Expansion J11 / J12 | I2C4 PF14 / PF15, R10 / R8 | I2C2 PF1 SCL / PF0 SDA, R7 / R9 |
+| IMU | I2C5 PF1 / PF0, R7 / R9 | I2C4 PD12 SCL / PD13 SDA, R10 / R8 |
+| Powerboard UART (J15) | UART4 PA0 TX / PA1 RX | USART10 PE3 TX / PE2 RX (AF11 / AF4) |
+| PWR_SRC_3V3 / PWR_SRC_5V | PA3 / PA2 | PE4 / PE5 |
+| DIP0-DIP5 | PF7-PF10, PC0, PC1 | PE7-PE10, PE14, PE15 |
+| USER_EXTI0-2 | PE4, PC13, PC14 | PD11, PD14, PD15 |
+| Debug VCP (J3 pins 13 / 14) | not connected | USART6 PC7 RX / PC6 TX |
+
+Connector pinouts are unchanged from the C (section 1.5). Firmware written for the C does not run on the C4L2 without
+the pin changes above.
+
+**Motor cables.** J4-J8 keep the section 1.5 order (1 MOSI, 2 GND, 3 MISO, 4 SCK, 5 GND, 6 CS). The released
+drive-motorboard J4 has the reverse order, so the four drive motors use a reversed GH cable (pin n to 7-n) and the
+dribbler a straight one (INTERFACE.md J4-J8).
 
 ## 2. Radio: RadioBoard2027 -> RadioBoard2027_C_Inboard / _Overhang
 
@@ -244,8 +292,9 @@ four contacts pass U2 before they join. The J1 shield is tied to GND (was not co
 - The LDOs (CB U7, radio U4) were Diodes AP7361C-33E-13 in the prototype; the compact boards fit the Microchip
   MCP1826S-3302E/DB (LCSC C638624) because the AP7361C was out of stock everywhere on 2026-11-07. Same SOT-223
   pinout and footprint; the AP7361C stays as `MPN_ALT`.
-- ESP-Hosted SPI pins on the ESP32-C5 (GPIO6 / 7 / 2 / 10), the radio reset and boot circuits, the radio power mux.
-- CB I2C bus assignment (I2C1 OLED, I2C2 kicker, I2C4 expansion, I2C5 IMU), UART4 to the powerboard, DIP, buttons
-  and their pins.
+- ESP-Hosted SPI pins on the ESP32-C5 (GPIO6 / 7 / 2 / 10), the radio reset and boot circuits, the radio power mux
+  part (its PR1 control changed, section 2.6).
+- On ControlBoard2027_C only: the CB I2C bus assignment (I2C1 OLED, I2C2 kicker, I2C4 expansion, I2C5 IMU), UART4 to
+  the powerboard, DIP, buttons and their pins. All of these moved on the C4L2 (section 1.8).
 
 Related documents: [../README.md](../README.md), [INTERFACE.md](INTERFACE.md), [FIRMWARE.md](FIRMWARE.md).

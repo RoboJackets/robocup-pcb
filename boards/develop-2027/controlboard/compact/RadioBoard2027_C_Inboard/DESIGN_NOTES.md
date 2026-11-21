@@ -49,6 +49,9 @@ Checked 2026-11-07 on the saved repo files:
 
 ## 2. Sources
 
+Local copies of the datasheets are in `../datasheets/` (sources in `../../prototype/ControlBoard2027/datasheets/SOURCES.md`); parts
+without a local copy are linked by URL below.
+
 | Tag | Document |
 |---|---|
 | MOD | ESP32-C5-WROOM-1 / WROOM-1U datasheet v1.3 |
@@ -121,7 +124,7 @@ are open (fastest delay). C10 100 nF sits right north of U7 pin 2, in line on th
 | VIT+ (rising) | 2.932-3.069 V (3.00 V typ) | U3 selects the host only above it |
 | tSTRT | 100-350 us after VDD crosses VIT+ | Output held low from VDD = 0.3 V |
 
-- Host start (audit 2026-11-18): the radio starts on the host only when +3V3_HOST is above VIT+ (up to 3.069 V). The C4L2 controlboard gives about 3.2 V at its planned load but can fall to 3.08 V at a 1 A +3V3 load (C4L2 DESIGN_NOTES §4.8): **condition: controlboard +3V3 at J9 >= 3.10 V with the radio idle**. Below VIT+ without USB the radio stays off. A TPS3840PL28 (VIT+ <= about 2.97 V) would restore margin (BOM change, not made). Once running, the 75 mV
+- Host start (audit 2026-11-18): the radio starts on the host only when +3V3_HOST is above VIT+ (up to 3.069 V). The C4L2 controlboard gives about 3.2 V at its planned load but can fall to 3.08 V at a 1 A +3V3 load (C4L2 DESIGN_NOTES §4.8): **condition: controlboard +3V3 at J9 >= 3.10 V with the radio idle**. Below VIT+ without USB the radio stays off. A TPS3840PL28 (VIT+ <= about 2.97 V) was considered and rejected (2026-11-20): it only moves the hand-over below the module's own 3.0 V minimum. Start-up margin at the planned load is about 0.13 V; the tighter case is running at full load (radio 0.4 A TX peak plus 0.8 A board load gives about 3.00 V worst case), so keep the controlboard +3V3 load at about 0.8 A or less including the radio (TODO 1.0). Once running, the 75 mV
   minimum hysteresis exceeds the 40 mV J2-to-U3 drop at the module's 403 mA peak, so it does not chatter.
 - PR1 levels: VOH >= 0.8 x VDD = 2.35 V at VIT+ against VREF max 1.08 V; VOL <= 0.2 V against VREF min 0.92 V. PR1
   sees at most 3.47 V (host +5 %), under the TPS2116's 5.5 V operating limit.

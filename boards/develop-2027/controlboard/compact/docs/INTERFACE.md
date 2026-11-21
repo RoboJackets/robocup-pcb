@@ -2,25 +2,25 @@
 
 This is the authoritative interface specification of the compact set:
 
-- the board-to-board link between ControlBoard2027_C (CB) J9 and the radio J2, shared by both radio variants
+- the board-to-board link between the controlboard (CB: ControlBoard2027_C4L2 is the board being built; C and C4L are
+  kept for reference) J9 and the radio J2, shared by both radio variants
   (RadioBoard2027_C_Inboard and RadioBoard2027_C_Overhang);
 - the CB's external connectors and what each mating board must use.
 
 The board and schematic files are the source of truth. Every pin and position here was read from them on
 2026-11-07 (netlists exported with `kicad-cli sch export netlist`, positions from the board files with KiCad's
-Python API).
+Python API). The C4L2 pins, the J9 / J2 table and the motor cables were re-checked against the C4L2 and radio
+netlists on 2026-11-21.
 
 **Coordinates.** All positions are in mm from the top-left corner of the board's own outline, x to the right
 (east), y down (south). On the CB the robot front is at the top (y = 0). The CB board file has its outline corner at
 (49.475, 49.475) and the radio board files at (97.0, 100.0); subtract those to compare with values read in KiCad.
 
-![Interface diagram](img/interface_stack.svg)
-
 ## 1. Mechanical interface
 
 | Item | Controlboard | Radio (both variants) |
 |---|---|---|
-| Outline | 120 x 60 mm, 1.6 mm; 6 layers (ControlBoard2027_C), 4 layers (ControlBoard2027_C4L) | 30 x 40 mm, 4 layers, 1.6 mm |
+| Outline | 120 x 60 mm, 1.6 mm; 4 layers (ControlBoard2027_C4L2 and C4L), 6 layers (ControlBoard2027_C) | 30 x 40 mm, 4 layers, 1.6 mm |
 | Radio position over the CB | radio outline covers CB x 36-66, y 0-40 | radio (0, 0) sits over CB (36, 0); same orientation, no rotation |
 | Mezzanine | J9 at (39.70, 6.03), rotation 90, top side | J2 at (3.70, 6.03), rotation 90, bottom side |
 | Part | Samtec LSHM-110-02.5-L-DV-A-S-K-TR (Razor Beam, 0.5 mm pitch, 2 x 10, shielded, hermaphroditic) | same part |
@@ -42,14 +42,16 @@ connector land on its own board, by design.
 envelope (Samtec note 1) is x 37.2-42.2, y 0.96-11.11. On the radio the signal row is at x 5.55.
 
 **Height keep-outs.**
-- CB parts under the radio outline are 1.75 mm or lower: U2 (LQFP-144, 1.6 mm), the west end of U10 (SO-14,
-  1.75 mm), X1 (0.8 mm) and 0402 / 0603 passives. Keep it so: nothing taller than 1.75 mm may be placed in
-  CB x 36-66, y 0-40.
+- CB parts under the radio outline on the C4L2 (top side) are U2 (LQFP-144, 1.6 mm), X1 (3225 crystal, 0.8 mm),
+  J9, the HR1 / HR2 standoff pads and 0402 / 0603 passives (on ControlBoard2027_C also the west end of U10, SO-14,
+  1.75 mm). Keep it so: nothing taller than 1.75 mm may be placed in CB x 36-66, y 0-40.
 - The tallest part on the radio underside is U4 (MCP1826S LDO, SOT-223, 1.8 mm max). It sits partly (Inboard) or fully
   (Overhang) over U2, which leaves 5.0 - 1.6 - 1.8 = 1.6 mm. Nothing taller than 1.8 mm may be placed on the radio
   underside.
 - The radio USB-C (J1) is on the radio's top side at its west edge (radio (3.70, 33.50) Inboard, (3.70, 28.20)
-  Overhang). The plug enters from the west, above the CB at CB x 36. The CB has only a test pad (TP2) in that area.
+  Overhang). The plug enters from the west, above the CB at CB x 36. On the C4L2 the speaker-board outline (CB
+  x 1.9-31.9, y 7.5-52.5) ends about 4 mm west of the radio edge, so with the speaker board fitted a USB-C plug
+  probably does not fit: flash the radio with the speaker board off, or over the air (radio TODO 1.0a).
 
 **Antenna keep-outs.** Both variants are built primarily with the ESP32-C5-WROOM-1U (u.FL connector, external
 antenna). The WROOM-1 (PCB antenna) is the fallback and fits the same footprint.
@@ -68,7 +70,7 @@ With the WROOM-1U the u.FL cable leaves north over the module's antenna end.
 | 1 | GND | 2 | GND | | | | |
 | 2 | ESP_SPI_CS | 1 | ESP_SPI_CS | GPIO10 (12), FSPICS0 | PG15 (132), GPIO | CB -> radio | R29 10k pull-up to +3V3 on the CB; radio ESD U6 ch 1->10 |
 | 3 | GND | 4 | GND | | | | |
-| 4 | ESP_SPI_MOSI | 3 | ESP_SPI_MOSI | GPIO7 (9), FSPID | PB5 (135), AF7 | CB -> radio | R66 30R in series at PB5; radio ESD U6 ch 2->9 |
+| 4 | ESP_SPI_MOSI | 3 | ESP_SPI_MOSI | GPIO7 (9), FSPID | PB5 (135), C4L2 SPI1 AF5 (C: SPI3 AF7) | CB -> radio | R66 30R in series at PB5; radio ESD U6 ch 2->9 |
 | 5 | GND | 6 | GND | | | | |
 | 6 | GND | 5 | GND | | | | |
 | 7 | GND | 8 | GND | | | | |
@@ -124,13 +126,13 @@ Notes:
 | Status lines | PB6 DATA_READY, PB7 HANDSHAKE (EXTI inputs), PE1 reset (open drain) | GPIO0 DATA_READY, GPIO1 HANDSHAKE, EN |
 | Mode | mode 3, 8-bit, MSB first, hardware CRC off | mode 3 (ESP-Hosted default) |
 | Termination | R65 / R66 30R at PB3 / PB5 (source series) | R4 33R at GPIO2 (MISO source series) |
-| Routing | ControlBoard2027_C: four lines on L4 (In3) between one via pair each, matched: SCK 14.861, MOSI / MISO / CS 14.860 mm. ControlBoard2027_C4L: on L4 over an L3 GND island, SCK 15.200, MOSI 15.400, MISO 15.481, CS 14.478 mm (within 1 mm of SCK) | Inboard: 19.934 mm, Overhang: 14.079 mm, matched to 0.001 mm |
+| Routing | ControlBoard2027_C: four lines on L4 (In3) between one via pair each, matched: SCK 14.861, MOSI / MISO / CS 14.860 mm. ControlBoard2027_C4L: on L4 over an L3 GND island, SCK 15.200, MOSI 15.400, MISO 15.481, CS 14.478 mm (within 1 mm of SCK). ControlBoard2027_C4L2 (re-measured 2026-11-21 pad to pad, via barrels as 1.6 mm, R span included, pull-resistor stubs excluded): SCK 15.200, MOSI 15.400, MISO 15.481, CS 14.478 mm | Inboard: 19.934 mm, Overhang: 14.079 mm, matched to 0.001 mm |
 
 **Lengths.** CB lengths run from the MCU pad to the J9 pad (series-resistor span and via barrels included); radio
 lengths from the J2 pad to the module pad (via and R4 span included). The mated LSHM pair adds about 3 mm. The whole
 link is about 38 mm (Inboard) or 32 mm (Overhang), at about 6.7 ps/mm at most 0.26 ns one way. Each board is
 matched on its own; neither board compensates for the other. HANDSHAKE, DATA_READY and RST are not matched (slow,
-asynchronous): CB 8.9 / 10.1 / 14.7 mm, Inboard 18.5 / 18.7 mm, Overhang 12.9 / 12.6 mm.
+asynchronous): CB 8.9 / 10.1 / 14.8 mm (C4L2), Inboard 18.5 / 18.7 mm, Overhang 12.9 / 12.6 mm.
 
 **Clock rate.**
 - The ESP32-C5 SPI slave is specified up to 40 MHz (ESP-IDF SPI slave driver). That is the ceiling.
@@ -152,14 +154,15 @@ the CB unpowered still comes out of reset (EN about 3.2 V); bench-check listed i
 
 ## 5. Controlboard external connectors
 
-All cables are straight through: pin n on this board goes to pin n on the mating connector. Signal names are the
-CB's; where a line has a direction, the mating board uses the opposite one. All logic is 3.3 V.
+Cables are straight through (pin n on this board to pin n on the mating connector) **except the four drive-motor
+cables, which are reversed** (pin n to pin 7-n, see J4-J8 below). Signal names are the CB's; where a line has a
+direction, the mating board uses the opposite one. All logic is 3.3 V.
 
 | Ref | Function | CB part | Mating housing (JST) |
 |---|---|---|---|
 | J15 | POWER (powerboard) | JST PH S7B-PH-K-S, 7 pins, 2.0 mm, right angle | PHR-7 with SPH-002T-P0.5S contacts |
 | J10 | KICKER (I2C) | JST GH SM04B-GHS-TB, 4 pins, 1.25 mm, right angle | GHR-04V-S with SSHL-002T-P0.2 contacts |
-| J4-J8 | MOTOR 0-3, DRIBBLER (SPI) | JST GH SM06B-GHS-TB, 6 pins, right angle | GHR-06V-S |
+| J4-J8 | MOTOR 0-3, DRIBBLER (SPI) | JST GH SM06B-GHS-TB, 6 pins, right angle | GHR-06V-S (J4-J7 reversed cable, J8 straight) |
 | J11, J12 | EXP 1, EXP 2 (I2C + 5 V) | JST GH SM08B-GHS-TB, 8 pins, right angle | GHR-08V-S |
 | J3 | SWD | Samtec FTSH-107-01-L-DV-K, 2 x 7, 1.27 mm, keyed (ST STDC14) | STLINK-V3 14-pin cable |
 | J2 | USB | GCT USB4110-GF-A, USB 2.0 Type-C receptacle (device, Full Speed) | any USB-C cable |
@@ -171,7 +174,7 @@ board's top-left corner): J15 POWER top-left (18, 3.3), facing the top edge; J4 
 on the top edge at x 80.5, 94.0 and 107.5; J10 KICKER in the top-right corner (116.7, 4.85), facing the right edge;
 J5 MOTOR 1 and J6 MOTOR 2 on the bottom edge at x 58.0 and 80.5; J11 EXP 1 and J12 EXP 2 on the left edge at
 y 19.5 and 37.5; J1, J2, J3 and J13 on the right-hand service area as on the C4L. The MCU pins behind each connector
-are in [FIRMWARE.md](FIRMWARE.md) section 1.3a (kicker and OLED I2C swapped, expansion on I2C2, powerboard UART on
+are in [FIRMWARE.md](FIRMWARE.md) sections 1.2 and 1.3 (kicker and OLED I2C swapped, expansion on I2C2, powerboard UART on
 USART10). J3 pins 13 / 14 carry the debug UART (below).
 
 ### J15 POWER (powerboard)
@@ -229,9 +232,21 @@ above 3.3 V.
 ControlBoard2027_C (for reference): J4 / J5 on SPI1 (PA5 / PA6 / PA7, CS PC5 / PB0), J6 / J7 on SPI2 (CS PB12 / PD8),
 J8 on SPI4 (PE2 / PE5 / PE6, CS PE3).
 
+**Mating boards and cables (2026-11-20).** Two cable types, both GHR-06V-S at each end, made by the team:
+
+| Cable | Used on | Wiring | Mating connector |
+|---|---|---|---|
+| DRIVE SPI (reversed) | J4, J5, J6, J7 (all four wheels) | CB pin n to motor pin 7-n | drive-motorboard J4 "COMM SPI": 1 CSN, 2 GND, 3 SCK, 4 MISO, 5 GND, 6 MOSI |
+| DRIBBLER SPI (straight) | J8 | CB pin n to pin n | dribbler-motorboard J5: 1 MOSI, 2 GND, 3 MISO, 4 SCK, 5 GND, 6 CSN |
+
+DRIVE SPI wiring, CB pin to drive-motorboard pin: 1 MOSI to 6 MOSI, 2 GND to 5 GND, 3 MISO to 4 MISO, 4 SCK to 3 SCK,
+5 GND to 2 GND, 6 CS to 1 CSN. All four drive boards are the same design, so one cable type serves every wheel; which
+way a board faces does not change its pin numbers. Label the two cable types. A swapped cable stops the link but
+damages nothing: GND is on pins 2 and 5 at both ends and no power is carried.
+
 No supply pin: the motor modules take their power elsewhere. Each connector has its own TPD4E05U06 ESD array
 (U4 J4, U5 J5, U12 J6, U13 J7, U14 J8). CS pull-ups R24-R28 10k, SCK pull-downs R30 / R69 100k. The motor
-module must use this pin order and release MISO (high impedance) while its CS is high. **Logic level: 3.3 V only.**
+module must release MISO (high impedance) while its CS is high. **Logic level: 3.3 V only.**
 On ControlBoard2027_C4L2 every motor pin is a 5 V-tolerant FT pin; keep the modules at 3.3 V logic anyway. (On
 ControlBoard2027_C, J4 / J5 use TT pins PA5 / PA7 / PC5 / PB0, 4.0 V absolute maximum: never above 3.6 V there.) The motor wheel numbering
 (0 FL, 1 BL, 2 BR, 3 FR, counter-clockwise from front left) is an assumption; firmware maps it.
@@ -295,6 +310,7 @@ must be made in ControlBoard2027_C, RadioBoard2027_C_Inboard and RadioBoard2027_
 
 Related documents: [../README.md](../README.md), [FIRMWARE.md](FIRMWARE.md),
 [PROTOTYPE_TO_COMPACT.md](PROTOTYPE_TO_COMPACT.md),
-[ControlBoard2027_C DESIGN_NOTES](../ControlBoard2027_C/DESIGN_NOTES.md),
+[ControlBoard2027_C4L2 DESIGN_NOTES](../ControlBoard2027_C4L2/DESIGN_NOTES.md) (the board being built),
+[ControlBoard2027_C DESIGN_NOTES](../archive/ControlBoard2027_C/DESIGN_NOTES.md) (archived),
 [Inboard DESIGN_NOTES](../RadioBoard2027_C_Inboard/DESIGN_NOTES.md),
 [Overhang DESIGN_NOTES](../RadioBoard2027_C_Overhang/DESIGN_NOTES.md).

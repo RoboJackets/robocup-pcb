@@ -19,7 +19,7 @@ The five DotStar LEDs are **OPSCO SK9822-EC20, LCSC C2909059**. A rotated LED sh
 the whole chain.
 
 - Reference: the datasheet LCSC links for C2909059, archived as
-  `../../prototype/ControlBoard2027/datasheets/OPSCO_SK9822-EC20_RevA0.pdf`. Section 5 has the pin table, section 6
+  `../datasheets/OPSCO_SK9822-EC20_RevA0.pdf`. Section 5 has the pin table, section 6
   the top-view land.
 - Pin numbering on the board follows that datasheet: **1 SDO, 2 GND, 3 SDI, 4 CKI, 5 VDD, 6 CKO**.
   - Pad 1 (SDO) is the top-left pad of the footprint at 0 degrees, where the **silkscreen dot** and the chamfered
@@ -44,14 +44,18 @@ Check the pin-1 or polarity marker of every polarised part against the silkscree
 - Q1;
 - J1, J2, J3, J9.
 
-## 3. Motor modules: confirm which board plugs into J4-J8
+## 3. Motor boards on J4-J8: two cable types
 
 J4-J8 are **JST GH 6-pin, 1.25 mm, signal only**: 1 MOSI, 2 GND, 3 MISO, 4 SCK, 5 GND, 6 CS, 3.3 V logic. There is no
 power on these connectors.
 
-The only motor module in the repo, `drive-motorboard/motor-module`, has a **JST PH 8-pin (2.0 mm)** connector with
-+5V and +3.3V on it and a different pin order. **It does not plug in.** Before ordering, decide which motor board is
-meant for this controlboard, how it gets its logic supply, and whether a harness or adapter is needed.
+- **Drive motors (J4-J7):** the drive-motorboard (`drive-motorboard/drive-motorboard`, J4 "COMM SPI", GH 6P) has the
+  reverse pin order: 1 CSN, 2 GND, 3 SCK, 4 MISO, 5 GND, 6 MOSI. Use a **reversed** cable, CB pin n to motor pin 7-n.
+  A straight cable gives no communication.
+- **Dribbler (J8):** the dribbler board's J5 has the CB order. Use a **straight** cable.
+
+Label the two cable types. A swapped cable damages nothing (GND on pins 2 / 5 at both ends), but the motor does not
+talk. Wiring table: ../docs/INTERFACE.md, J4-J8.
 
 ## 4. Expansion port current (J11 / J12)
 
@@ -64,7 +68,7 @@ F3 and F4 are **0.75 A hold** PTCs (Littelfuse 1812L075/24DR, LCSC C207065): 0.5
 
 ## 5. Firmware: this board's pins differ from ControlBoard2027_C
 
-Use `../docs/FIRMWARE.md` **section 1.3a** as the pin map. Do not port the C or C4L CubeMX project unchanged. In
+Use `../docs/FIRMWARE.md` **sections 1.2 and 1.3** as the pin map. Do not port the C or C4L CubeMX project unchanged. In
 particular:
 - **Radio SPI is SPI1** (PB3 / PB4 / PB5, AF5), not SPI3: SPI3 drives the front motors on PC10-PC12.
 - Rear motors are SPI2. The LEDs are SPI6 on PA5 / PA7.
@@ -116,9 +120,9 @@ When every item above is ticked, write the date and your name here and commit it
 
 - [ ] 1. LED pin 1 checked in the JLC preview (D7-D11)
 - [ ] 2. Other polarised parts checked in the JLC preview
-- [ ] 3. Motor module and connector agreed
+- [ ] 3. Motor cables made: DRIVE SPI reversed (J4-J7), DRIBBLER SPI straight (J8)
 - [ ] 4. Expansion fuse rating decided
-- [ ] 5. Firmware pin map taken from FIRMWARE.md 1.3a
+- [ ] 5. Firmware pin map taken from FIRMWARE.md §1.2 / §1.3
 - [ ] 6. Stock re-checked on the order day
 - [ ] 7. Notes in sections 6b and 7 read
 

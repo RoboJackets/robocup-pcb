@@ -1,7 +1,8 @@
 CONTROLBOARD2027_C4L2 - OPEN WORK (C4L list below section 0)
 Design reasons, IDs (C/M/m, deviation numbers): DESIGN_NOTES.md. Interfaces: ../docs/INTERFACE.md.
-Firmware: ../docs/FIRMWARE.md. Status (2026-11-14): 4-layer board (JLC04161H-3313) routed; DRC 0 errors /
-0 unconnected / 0 parity, 13 intended warnings; ERC 1 intended VCAP error (m21). Audit rounds 1-7 done; converged (no critical or major open).
+Firmware: ../docs/FIRMWARE.md. Status (2026-11-20, C4L2): 4-layer board (JLC04161H-3313) routed; DRC 0 errors /
+0 unconnected / 0 parity, 15 intended warnings (DESIGN_NOTES 1.0); ERC 1 intended VCAP error (m21). Pre-fabrication
+audit 2026-11-20: no critical item open on this board (DESIGN_NOTES 1.0).
 
 
 0. CONTROLBOARD2027_C4L2 (2026-11-17)
@@ -9,10 +10,13 @@ Firmware: ../docs/FIRMWARE.md. Status (2026-11-14): 4-layer board (JLC04161H-331
 MUST READ before any order: README_BEFORE_ORDERING.md (checklist with sign-off).
 This folder is the C4L2 re-layout; status in DESIGN_NOTES 1.0. The rest of this file is the C4L list and still applies
 where it names parts or rules, not positions.
-0.1 Independent audit loop on the C4L2 install (schematic and PCB, CLAUDE.md section 12), with images.
-0.2 Check the AF numbers of FIRMWARE.md 1.3a in CubeMX; the radio moves to SPI1 (PB3-PB5 AF5) because SPI3 now
+0.1 Independent audit loop on the C4L2 install (schematic and PCB, CLAUDE.md section 12), with images. Done
+    2026-11-20 (pre-fabrication audit, DESIGN_NOTES 1.0): dangling +3V3 vias at C11 removed; motor pin order closed by
+    cable choice (1.7). Open: 1.6 (kicker / expansion pinout).
+0.2 Check the AF numbers of FIRMWARE.md §1.2 in CubeMX; the radio moves to SPI1 (PB3-PB5 AF5) because SPI3 now
     drives the front motors (PC10-PC12).
-0.3 Rewrite DESIGN_NOTES sections 2-15 for the C4L2 positions and pins.
+0.3 Rewrite DESIGN_NOTES sections 2-15 for the C4L2 positions and pins. Done (positions spot-checked against the
+    board 2026-11-21).
 
 1. BEFORE ORDERING
 ------------------
@@ -49,7 +53,7 @@ where it names parts or rules, not positions.
     - Impedance: an audit closed-form estimate gives about 53-56 ohm for 0.15 mm and 95-98 ohm for the USB pair;
       TODO 1.3 (JLC calculator) blocks the order.
     - Schematic: PE11 (bootloader SPI4 NSS) floats; check AN2606 for its pull and add a pull-up like R13 if none;
-      J1 / J13 datasheet links are distributor pages; FIRMWARE.md 1.2 / 1.3 need C4L tables; two four-way junctions
+      J1 / J13 datasheet links are distributor pages; FIRMWARE.md is now C4L2-only (2026-11-21, closed); two four-way junctions
       (U2 pin 131, C24 pin 1); silk "3V3 ONLY" at J4 / J5 (deviation 29).
     - Round 4: deviation 26 numbers (TPD4E05U06 pin 3 GND vias 1.25-1.37 mm, U6 pin 8 1.66 mm); short-segment count
       392 (deviation 16 says about 350); crystal track ends on the X1.1 / C19.1 pad edges; USB skew bumps mid-run;
@@ -91,8 +95,12 @@ where it names parts or rules, not positions.
     per rail well under 2 A. The powerboard must source > 2.5 A per rail into a fault so F5 / F6 trip (M1, M2, M3,
     deviation 20).
 1.6 Kicker agreement on J10 (JST GH 4P: 1 SDA, 2 GND, 3 SCL, 4 GND, signals only) (M10).
-1.7 Motor-module agreement on J4-J8 (JST GH 6P: 1 MOSI, 2 GND, 3 MISO, 4 SCK, 5 GND, 6 CS); the module board's J2
-    is still PH 8P (M19). Modules must release MISO while CS is high (M9).
+1.7 Motor boards on J4-J8 (JST GH 6P: 1 MOSI, 2 GND, 3 MISO, 4 SCK, 5 GND, 6 CS). CLOSED 2026-11-20: the
+    drive-motorboard J4 has the reverse order, so J4-J7 use a reversed cable (pin n to 7-n); the dribbler J8 uses a
+    straight cable (INTERFACE.md J4-J8). Still to do: make and label the cables. Modules must release MISO while CS is
+    high (M9).
+1.6a Expansion J11 / J12 (GH 8P: 1 GND, 2 GND, 3 +5V, 4 +5V, 5 GND, 6 SCL, 7 GND, 8 SDA): no mating board exists yet;
+    confirm the pin order and cable type with its designer (+5V on the pins, so a mismatch can damage it).
 1.8 OLED module (M5): choose the 0.96in SSD1306 I2C module; check its pin order (1 GND, 2 VCC, 3 SCL, 4 SDA), address,
     power-on reset and pull-ups; decide whether it needs M2 standoffs (the J13 footprint has none, but keeps four
     4.0 mm "J13 standoff space" areas where holes can be added).
@@ -151,7 +159,8 @@ where it names parts or rules, not positions.
 4.6 Deviations 2 / 4: move the SWDIO via (64.72, 19.68) and track and the VBUS vias (72.93, 21.43) / (86.47, 33.62)
     0.2 mm further from the USB pair where room allows, add a USB-to-other spacing rule (about 3x the gap), and check
     whether the L3 antipads of the four L4 hop vias (deviation 3) merge under the hops.
-4.7 Generate placement drawings for this board (DESIGN_NOTES 12.1; ../docs/img/ shows ControlBoard2027_C).
+4.7 Generate placement drawings for this board (DESIGN_NOTES 12.1; none exist since the ControlBoard2027_C ones were
+    removed).
 
 
 NOTES (schematic edits)

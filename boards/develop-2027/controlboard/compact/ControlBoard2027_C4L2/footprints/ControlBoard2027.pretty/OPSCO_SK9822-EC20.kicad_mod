@@ -2,7 +2,7 @@
   (version 20240108)
   (generator "pcbnew")
   (layer "F.Cu")
-  (descr "OPSCO SK9822-EC20 2.0x2.0 mm addressable RGB LED, drawn in the datasheet top-view orientation (SK9822-EC20 Rev A/0 section 6): left column SDO / GND / SDI, right column CKO / VDD / CKI, pin 1 SDO top-left, so the footprint 0 degrees matches the standard part orientation for pick and place. Pad numbers follow the schematic symbol (LED:APA102-2020 numbering: 1 VDD, 2 CKO, 3 SDO, 4 SDI, 5 CKI, 6 GND), not the SK9822 pin numbers. Same copper as ControlBoard2027:AmericanBright_BB-2020BGR-TRB rotated 90 degrees clockwise (BB-2020 land: CO/CI/DO/DI 0.60 x 0.80 mm, VCC 0.40 x 0.80 mm, GND 0.40 x 1.00 mm), so the BB-2020BGR-TRB stays a drop-in alternate.")
+  (descr "OPSCO SK9822-EC20 2.0x2.0 mm addressable RGB LED, drawn in the datasheet top-view orientation (SK9822-EC20 Rev A/0 section 6): left column SDO / GND / SDI, right column CKO / VDD / CKI, pin 1 SDO top-left, so the footprint 0 degrees matches the standard part orientation for pick and place. Pad numbers follow the SK9822 datasheet pin numbers (1 SDO, 2 GND, 3 SDI, 4 CKI, 5 VDD, 6 CKO), as does the schematic symbol. Same copper as ControlBoard2027:AmericanBright_BB-2020BGR-TRB rotated 90 degrees clockwise (BB-2020 land: CO/CI/DO/DI 0.60 x 0.80 mm, VCC 0.40 x 0.80 mm, GND 0.40 x 1.00 mm), so the BB-2020BGR-TRB stays a drop-in alternate.")
   (tags "LED RGB 2020 addressable SK9822 APA102 OPSCO")
   (attr smd)
   (pad "1" smd rect (at -0.8 -0.9) (size 0.8 0.6) (layers "F.Cu" "F.Paste" "F.Mask"))
