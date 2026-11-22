@@ -1238,7 +1238,7 @@
 				)
 			)
 		)
-		(property "Value" "330k ± 1%"
+		(property "Value" "180k ± 0.1%"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(uuid "d394a131-4378-4496-9039-3c2ef73b7386")
@@ -1249,7 +1249,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C136958.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -1260,7 +1260,7 @@
 				)
 			)
 		)
-		(property "Description" "330 kOhms ±5% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Moisture Resistant Thick Film"
+		(property "Description" "RES 180kΩ ±0.1% 100mW 0603"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -1271,7 +1271,7 @@
 				)
 			)
 		)
-		(property "Manufacturer P/N" "MCR03SEQPF3303"
+		(property "Manufacturer P/N" "RT0603BRE07180KL"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1297,7 +1297,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "C114618"
+		(property "Vendor P/N" "C136958"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2604,7 +2604,7 @@
 				)
 			)
 		)
-		(property "Vendor" "LCSC"
+		(property "Vendor" "DigiKey"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2617,7 +2617,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "C3317476"
+		(property "Vendor P/N" "EG6026-ND"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2644,7 +2644,7 @@
 				(pins "5" "4" "6")
 			)
 		)
-		(attr through_hole)
+		(attr through_hole exclude_from_pos_files dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 4.25 4.25)
@@ -12533,7 +12533,7 @@
 				)
 			)
 		)
-		(property "Value" "330k ± 1%"
+		(property "Value" "330k ± 0.1%"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(uuid "5acffdeb-d530-46c3-b0fa-636beddb8af0")
@@ -12544,7 +12544,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C855807.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -12555,7 +12555,7 @@
 				)
 			)
 		)
-		(property "Description" "330 kOhms ±5% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Moisture Resistant Thick Film"
+		(property "Description" "RES 330kΩ ±0.1% 100mW 0603"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -12566,7 +12566,7 @@
 				)
 			)
 		)
-		(property "Manufacturer P/N" "MCR03SEQPF3303"
+		(property "Manufacturer P/N" "AT0603BRD07330KL"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12592,7 +12592,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "C114618"
+		(property "Vendor P/N" "C855807"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15083,7 +15083,7 @@
 				(pins "1" "2" "3")
 			)
 		)
-		(attr through_hole)
+		(attr through_hole exclude_from_pos_files dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 1.38 1.27)
@@ -15647,7 +15647,7 @@
 				)
 			)
 		)
-		(property "Value" "330k ± 1%"
+		(property "Value" "330k ± 0.1%"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(uuid "06e9242e-4a23-4ccb-bdc0-618fe23877ca")
@@ -15658,7 +15658,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C855807.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -15669,7 +15669,7 @@
 				)
 			)
 		)
-		(property "Description" "330 kOhms ±5% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Moisture Resistant Thick Film"
+		(property "Description" "RES 330kΩ ±0.1% 100mW 0603"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -15680,7 +15680,7 @@
 				)
 			)
 		)
-		(property "Manufacturer P/N" "MCR03SEQPF3303"
+		(property "Manufacturer P/N" "AT0603BRD07330KL"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15706,7 +15706,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "C114618"
+		(property "Vendor P/N" "C855807"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16151,7 +16151,7 @@
 				(pins "1" "2")
 			)
 		)
-		(attr through_hole)
+		(attr through_hole exclude_from_pos_files dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 12.36 8.61)
@@ -17968,7 +17968,7 @@
 				)
 			)
 		)
-		(property "Value" "330k ± 1%"
+		(property "Value" "220k ± 0.1%"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(uuid "1e8e32dc-5f7f-4fa3-a978-15af1b3beb61")
@@ -17979,7 +17979,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C351667.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -17990,7 +17990,7 @@
 				)
 			)
 		)
-		(property "Description" "330 kOhms ±5% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Moisture Resistant Thick Film"
+		(property "Description" "RES 220kΩ ±0.1% 100mW 0603"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -18001,7 +18001,7 @@
 				)
 			)
 		)
-		(property "Manufacturer P/N" "MCR03SEQPF3303"
+		(property "Manufacturer P/N" "PTFR0603B220KP9"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18027,7 +18027,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "C114618"
+		(property "Vendor P/N" "C351667"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27558,7 +27558,7 @@
 				)
 			)
 		)
-		(property "Value" "330k ± 1%"
+		(property "Value" "330k ± 0.1%"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(uuid "ad5dcad4-3f5e-4c63-aa47-3225d3bbdb82")
@@ -27569,7 +27569,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C855807.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -27580,7 +27580,7 @@
 				)
 			)
 		)
-		(property "Description" "330 kOhms ±5% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Moisture Resistant Thick Film"
+		(property "Description" "RES 330kΩ ±0.1% 100mW 0603"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -27591,7 +27591,7 @@
 				)
 			)
 		)
-		(property "Manufacturer P/N" "MCR03SEQPF3303"
+		(property "Manufacturer P/N" "AT0603BRD07330KL"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27617,7 +27617,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "C114618"
+		(property "Vendor P/N" "C855807"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -28753,7 +28753,7 @@
 				(pins "1" "2")
 			)
 		)
-		(attr through_hole exclude_from_pos_files)
+		(attr through_hole exclude_from_pos_files dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 9.905 -3.365)
@@ -30292,7 +30292,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "2N7002K"
+		(property "Value" "AO3400A"
 			(at 0 -2.4 90)
 			(layer "B.Fab")
 			(uuid "0699321d-cde0-48d0-bdc8-54bc3f86e3df")
@@ -30304,7 +30304,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds30896.pdf"
+		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -30316,7 +30316,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "0.38A Id, 60V Vds, N-Channel MOSFET, SOT-23"
+		(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -30328,7 +30328,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Manufacturer P/N" "2N7002K-TP"
+		(property "Manufacturer P/N" "AO3400A"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -30356,7 +30356,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Vendor P/N" "C77975"
+		(property "Vendor P/N" "C20917"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -30371,7 +30371,7 @@
 			)
 		)
 		(property ki_fp_filters "SOT?23*")
-		(path "/de57e062-71e3-4788-a8ac-703fd2ada1c6/97d06cc3-69ab-475b-a834-a2fce95408d1/99a37033-b6e0-4ad2-90e0-1531368482b3")
+		(path "/de57e062-71e3-4788-a8ac-703fd2ada1c6/97d06cc3-69ab-475b-a834-a2fce95408d1/a369cec2-b09c-4e30-b804-1b493bbd7e73")
 		(sheetname "/Output Connectors/Cooling System/")
 		(sheetfile "cooling.kicad_sch")
 		(units
@@ -31286,7 +31286,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "1.8M ± 1%"
+		(property "Value" "1.2M ± 0.1%"
 			(at 0 -1.43 90)
 			(layer "B.Fab")
 			(uuid "7fbf7d33-2ddf-4701-9ade-e51731eddc3f")
@@ -31298,7 +31298,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C3933664.pdf"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -31310,7 +31310,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "1.8 MOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Moisture Resistant Thick Film"
+		(property "Description" "RES 1.2MΩ ±0.1% 125mW 0603"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -31322,7 +31322,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Manufacturer P/N" "RC0603FR-071M8L"
+		(property "Manufacturer P/N" "MCT0603MD1204BP500"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -31350,7 +31350,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Vendor P/N" "C13318"
+		(property "Vendor P/N" "C3933664"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -40054,6 +40054,12 @@
 		(path "/d0001911-d7bd-4781-8692-61a8e560cc19/e5c879c7-07fa-4f0f-a650-9d5093ae47ee")
 		(sheetname "/MCU Connectors/")
 		(sheetfile "mcu_conn.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -41274,7 +41280,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "180k ± 1%"
+		(property "Value" "180k ± 0.1%"
 			(at 0 -1.43 90)
 			(layer "B.Fab")
 			(uuid "af55563a-88e7-430c-96d7-becc79994f70")
@@ -41286,7 +41292,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C136958.pdf"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -41298,7 +41304,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "180 kOhms ±5% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Moisture Resistant Thick Film"
+		(property "Description" "RES 180kΩ ±0.1% 100mW 0603"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -41310,7 +41316,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Manufacturer P/N" "CR0603-FX-1803ELF"
+		(property "Manufacturer P/N" "RT0603BRE07180KL"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -41338,7 +41344,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Vendor P/N" "C123419"
+		(property "Vendor P/N" "C136958"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -41850,7 +41856,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "2.2M ± 1%"
+		(property "Value" "1.2M ± 0.1%"
 			(at 0 -1.43 90)
 			(layer "B.Fab")
 			(uuid "ddc57191-b430-4003-9c1f-61eec9772bf1")
@@ -41862,7 +41868,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "https://www.koaspeer.com/pdfs/RK73B.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C3933664.pdf"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -41874,7 +41880,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "2.2 MOhms ±5% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+		(property "Description" "RES 1.2MΩ ±0.1% 125mW 0603"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -41886,7 +41892,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Manufacturer P/N" "RC0603FR-072M2L"
+		(property "Manufacturer P/N" "MCT0603MD1204BP500"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -41914,7 +41920,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Vendor P/N" "C22938"
+		(property "Vendor P/N" "C3933664"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -45236,7 +45242,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "1.2M ± 1%"
+		(property "Value" "1.2M ± 0.1%"
 			(at 0 -1.43 90)
 			(layer "B.Fab")
 			(uuid "7d668652-02ae-4320-b0cc-ee874a3fc72a")
@@ -45248,7 +45254,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C3933664.pdf"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -45260,7 +45266,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "1.2 MOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Moisture Resistant Thick Film"
+		(property "Description" "RES 1.2MΩ ±0.1% 125mW 0603"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -45272,7 +45278,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Manufacturer P/N" "RC0603FR-131M2L"
+		(property "Manufacturer P/N" "MCT0603MD1204BP500"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -45300,7 +45306,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Vendor P/N" "C137774"
+		(property "Vendor P/N" "C3933664"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -45814,7 +45820,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "680k ± 1%"
+		(property "Value" "680k ± 0.1%"
 			(at 0 -1.43 90)
 			(layer "B.Fab")
 			(uuid "4cf89ab1-5282-46e5-80c1-5f3c91480201")
@@ -45826,7 +45832,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C326722.pdf"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -45838,7 +45844,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "680 kOhms ±5% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Moisture Resistant Thick Film"
+		(property "Description" "RES 680kΩ ±0.1% 100mW 0603"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -45850,7 +45856,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Manufacturer P/N" "MCR03SEQPF6803"
+		(property "Manufacturer P/N" "RT0603BRD07680KL"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -45878,7 +45884,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Vendor P/N" "C137690"
+		(property "Vendor P/N" "C326722"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")

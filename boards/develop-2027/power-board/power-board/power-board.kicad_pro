@@ -701,19 +701,19 @@
           "group_by": true,
           "label": "Footprint",
           "name": "Footprint",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "Description",
           "name": "Description",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -745,7 +745,7 @@
       "include_excluded_from_bom": true,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Vendor"
+      "sort_field": "Value"
     },
     "bus_aliases": {
       "I2C": [
@@ -813,7 +813,7 @@
         "uuid": "950edf25-7c73-426b-95c7-f5bf9643ec87"
       }
     ],
-    "used_designators": "#FLG1-8,#PWR1-144,#PWR206-208,C1-55,C60-71,D1-21,F1-2,H1-3,J1-13,J16-17,JP1-2,L1-6,M1-3,Q1-2,Q19,R1-74,SW1-4,TJ1-3,TP16-22,U1-12,Y1",
+    "used_designators": "#FLG1-8,#PWR1-144,#PWR206-208,C1-55,C60-71,D1-21,F1-2,H1-3,J1-13,J16-17,JP1-2,L1-6,M1-3,Q1-3,Q19,R1-74,SW1-4,TJ1-3,TP16-22,U1-12,Y1",
     "variants": []
   },
   "sheets": [

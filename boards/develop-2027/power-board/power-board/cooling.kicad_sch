@@ -850,7 +850,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_FET:2N7002K"
+		(symbol "Transistor_FET:AO3400A"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -871,7 +871,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "2N7002K"
+			(property "Value" "AO3400A"
 				(at 5.08 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -895,7 +895,7 @@
 					(justify left)
 				)
 			)
-			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds30896.pdf"
+			(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
 				(at 5.08 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -907,7 +907,7 @@
 					(justify left)
 				)
 			)
-			(property "Description" "0.38A Id, 60V Vds, N-Channel MOSFET, SOT-23"
+			(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -940,7 +940,7 @@
 					)
 				)
 			)
-			(symbol "2N7002K_0_1"
+			(symbol "AO3400A_0_1"
 				(polyline
 					(pts
 						(xy 0.254 1.905) (xy 0.254 -1.905)
@@ -1107,7 +1107,7 @@
 					)
 				)
 			)
-			(symbol "2N7002K_1_1"
+			(symbol "AO3400A_1_1"
 				(pin input line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -2324,8 +2324,8 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_pos_files no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "81b4c129-421d-4c91-8506-67e53efbc0ee")
 		(property "Reference" "M1"
@@ -2435,7 +2435,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:2N7002K")
+		(lib_id "Transistor_FET:AO3400A")
 		(at 76.2 63.5 0)
 		(unit 1)
 		(body_style 1)
@@ -2445,7 +2445,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "99a37033-b6e0-4ad2-90e0-1531368482b3")
+		(uuid "a369cec2-b09c-4e30-b804-1b493bbd7e73")
 		(property "Reference" "Q2"
 			(at 82.55 62.2299 0)
 			(show_name no)
@@ -2457,7 +2457,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2N7002K"
+		(property "Value" "AO3400A"
 			(at 82.55 64.7699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2481,7 +2481,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds30896.pdf"
+		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
 			(at 81.28 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -2493,7 +2493,7 @@
 				(justify left)
 			)
 		)
-		(property "Description" "0.38A Id, 60V Vds, N-Channel MOSFET, SOT-23"
+		(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
 			(at 76.2 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -2504,7 +2504,7 @@
 				)
 			)
 		)
-		(property "Manufacturer P/N" "2N7002K-TP"
+		(property "Manufacturer P/N" "AO3400A"
 			(at 76.2 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -2526,7 +2526,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "C77975"
+		(property "Vendor P/N" "C20917"
 			(at 76.2 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -2537,14 +2537,14 @@
 				)
 			)
 		)
-		(pin "2"
-			(uuid "80d32e2e-e287-4b33-8b95-6dbaef2ae448")
-		)
 		(pin "1"
-			(uuid "68a6b6b0-64cf-44dd-80a0-eb34d6732fb6")
+			(uuid "0824b82a-c916-4ed4-8afb-d3e610b4ec11")
+		)
+		(pin "2"
+			(uuid "e350371f-7664-495e-af1e-a09eddbad82c")
 		)
 		(pin "3"
-			(uuid "49996149-067c-4a0f-8334-ae606cd99f15")
+			(uuid "160385c7-9316-4340-8a08-18dc078f2ef2")
 		)
 		(instances
 			(project "power-board"
