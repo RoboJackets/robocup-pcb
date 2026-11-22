@@ -278,7 +278,8 @@ route, which is long and convoluted (it detours to y ~51.5, deviation 17). Befor
 | MF-MSMF | Bourns MF-MSMF PTC, Rev BD 06/26 |
 | 1812L | Littelfuse 1812L PTC (07/21/17), the JLCPCB-build fuses |
 | SCLS264R | TI SN74AHCT125 |
-| DS14623 | ST LSM6DSV320X datasheet, Rev 3 (fitted U11) |
+| DS13511 | ST LSM6DSV32X datasheet, Rev 2 (fitted U11 since 2026-11-22; local `../datasheets/lsm6dsv32x.pdf`, identical to the LCSC C22461202 copy) |
+| DS14623 | ST LSM6DSV320X datasheet, Rev 3 (U11 until 2026-11-22; same pin table) |
 | DS15060 | ST LSM6DSK320X datasheet, Rev 1 (the original U11 choice; same pin table and ranges) |
 | AN6119 | ST LSM6DSV family application note (pin 1 / CS / aux-pin entries) |
 | SK9822 | OPSCO SK9822-EC20 datasheet Rev A/0 (fitted D7-D11; datasheet.lcsc.com, LCSC C2909059) |
@@ -316,7 +317,7 @@ Footprint evidence for the project-library parts: `footprints/FOOTPRINT_SOURCES.
 - Power from the powerboard on J15 (JST PH 7P: +5V and +3V3 rails, UART); USB-C J2 as a bench fallback with
   automatic priority switching (TPS2116 muxes).
 - Four wheel motors and a dribbler on three SPI buses (JST GH 6P), kicker I2C (GH 4P), two expansion I2C ports with
-  fused 5 V (GH 8P), microSD (SDMMC2, 4-bit), raised 0.96in OLED (I2C), LSM6DSV320X IMU, five DotStar LEDs, 6-bit
+  fused 5 V (GH 8P), microSD (SDMMC2, 4-bit), raised 0.96in OLED (I2C), LSM6DSV32X IMU, five DotStar LEDs, 6-bit
   robot-ID DIP, three user buttons, RESET and BOOT0 buttons, STDC14 SWD.
 
 ---
@@ -645,20 +646,31 @@ still above Rp(min). Measure SCL rise time at TP7 (kicker) and TP8 (expansion) w
 
 ## 9. IMU, DIP switch and buttons
 
-### 9.1 U11 LSM6DSV320X
+### 9.1 U11 LSM6DSV32X
 
-ST LSM6DSV320XTR, LGA-14L 2.5 x 3.0 mm: low-g accelerometer (+-16 g), high-g accelerometer (+-32 to +-320 g) and a
-+-4000 dps gyroscope. It replaced the out-of-stock LSM6DSK320X (same pins, package, supply and full scales; the DSK
-adds enhanced vibration immunity, which the DSV does not claim).
+ST LSM6DSV32XTR (LCSC C22461202, JLC-assembled), LGA-14L 2.5 x 3.0 mm: accelerometer +-4 / 8 / 16 / 32 g and a
++-4000 dps gyroscope.
+
+**Part change (2026-11-22).** U11 was the LSM6DSV320X (low-g +-16 g plus a high-g +-32 to +-320 g channel), which had
+itself replaced the out-of-stock LSM6DSK320X. The 320X was 0 at LCSC and oversold at JLCPCB, while 10 LSM6DSV32X were
+already in the JLC parts inventory, so the board now fits the 32X. Checked pin by pin, DS13511 Rev 2 against DS14623
+Rev 3:
+- same as before: package and land, all 14 pin functions in mode 1 (Table 2), supply 1.71-3.6 V, I2C address
+  110101xb (0x6A with SA0 low), and power-up pin states (DS13511 Table 23: INT1 / INT2 driven low, SA0 / SDx / SCx
+  inputs without pull-up, OCS_Aux / SDO_Aux with pull-up, CS with pull-up);
+- lost: the high-g channel. Impacts above 32 g saturate the accelerometer;
+- firmware: WHO_AM_I reads 0x70 (320X: 0x73), and the 32X register map and driver apply (FIRMWARE.md §1.8).
+
+The netlist did not change. The 320X still fits the same land if the high-g channel is needed later.
 
 I2C target mode:
-- CS (12) to VDDIO selects I2C. SDO/TA0 (1) to GND gives address 0x6A.
+- CS (12) to VDDIO selects I2C. SDO/SA0 (1) to GND gives address 0x6A.
 - SDx / SCx (2 / 3) to GND (controller interface unused); OCS_aux / SDO_aux (10 / 11) open (internal pull-ups).
 - SCL (13) / SDA (14) on I2C4 (PD12 / PD13, AF4) with R10 / R8 2.2k. C48 100 nF at VDDIO (5), C49 100 nF at VDD (8).
 - INT1 (4) -> ACCEL_EXTI (PF3), INT2 (9) -> GYRO_EXTI (PF2). Both are push-pull and driven low from power-up, so no
   pulls. The part has no reset pin (m16).
-- Pinout verified against DS14623 Rev 3 Table 2 (local copy ../datasheets/LSM6DSV320X.pdf),
-  I2C mode 1, all 14 pins: 1 SDO/TA0 = GND (address 1101010b = 0x6A), 2 SDx / 3 SCx = GND ("connect to VDDIO or
+- Pinout verified against DS13511 Rev 2 Table 2 (local copy ../datasheets/lsm6dsv32x.pdf; earlier against DS14623 for
+  the 320X), I2C mode 1, all 14 pins: 1 SDO/SA0 = GND (address 1101010b = 0x6A), 2 SDx / 3 SCx = GND ("connect to VDDIO or
   GND"), 4 INT1, 5 VDDIO = +3V3, 6/7 GND, 8 VDD = +3V3 (1.71-3.6 V), 9 INT2, 10 OCS_aux / 11 SDO_aux open ("connect
   to VDDIO or leave unconnected"; internal pull-ups on by default), 12 CS = +3V3 (I2C enabled), 13 SCL, 14 SDA.
   Footprint pad numbering (1-4 left, 5-7 bottom, 8-11 right, 12-14 top, top view) matches the datasheet pin figure.
@@ -1105,7 +1117,7 @@ power; 0-50 C).
 | HSE X1 25 MHz | Works with conditions | CL 9.5-10.5 pF vs 10 pF; gm margin 1.8x; drive level up to about 103 uW at 1.4 Vpp vs 100 uW: measure |
 | ROM bootloader / USB DFU | Works | AN2606 Table 114: no connected pin can stop DFU (R13 on PA15, R30 on SCK) |
 | microSD J1, U1, card detect | Works | 47k pull-ups; 24 MHz / 400 kHz from 48 MHz; DET to PD5 with R73 |
-| IMU U11 | Works | DS14623 Table 2, mode 1, address 0x6A, I2C4 |
+| IMU U11 | Works | LSM6DSV32X since 2026-11-22: DS13511 Table 2, mode 1, address 0x6A, I2C4 |
 | U10 74AHCT125 + SK9822 D7-D11 | Works with conditions | VOH >= 3.94 V vs VIH 3.4 V; 3.125 MHz vs 15 MHz; AHCT rated 4.5-5.5 V; SK9822 VDD <= 5.3 V |
 | DIP SW3, buttons SW4-SW6, STDC14 J3 | Works | 100k pull-ups; 1 ms / 2 ms debounce; J3 13 / 14 to USART6 RX / TX |
 | J9 radio (compact Inboard / Overhang) | Works with conditions | all 20 pads mate (p <-> p+-1); ESP-Hosted must set CLK GPIO6, DATA_READY GPIO0 |
@@ -1424,7 +1436,7 @@ The released drive-motorboard J4 is GH 6P in the reverse order (1 CSN ... 6 MOSI
   Bench check (TODO 2.x): DFU enumerates on USB power only, with DIP4 closed and the motor, kicker and expansion
   cables plugged in.
 - **m14** J3 has no protection against a 5 V probe.
-- **m16** The LSM6DSV320X has no reset pin. Firmware uses the SW_RESET / BOOT bits after a brown-out and runs I2C bus
+- **m16** The LSM6DSV32X has no reset pin. Firmware uses the SW_RESET / BOOT bits after a brown-out and runs I2C bus
   recovery.
 - **m17** RM0468, AN2867 and AN4879 could not be downloaded from st.com during the review. VBUS is read as a GPIO, so
   the OTG threshold is not needed.
@@ -1465,7 +1477,7 @@ The placement file has not been generated yet (TODO).
 Fields: `LCSC`, `LCSC MPN`, `LCSC Datasheet` (only where the placed part differs from `MPN`), `MPN`, `Vendor PN`,
 `Rating` (minimum voltage / dielectric for capacitors, tolerance for resistors; the placed part meets or exceeds it),
 `Datasheet`, `Description`. U7 also has `MPN_ALT`, `MPN_ALT LCSC`, `Vendor PN ALT` and `Datasheet ALT` (the AP7361C
-alternate). Parts bought outside JLCPCB (D7-D11, U11) have a `Sourcing` field that says where to buy them. H1-H4 and
+alternate). D7-D11 and U11 have a `Sourcing` field that names the part chosen, its alternate and why (both are JLC-assembled). H1-H4 and
 TP1-TP21 are excluded from the BOM.
 
 **Assembly.** 86 parts are on the bottom (most decoupling, the muxes U8 / U9, F5 / F6, Q1, D2-D4, U11 and pull
@@ -1477,7 +1489,7 @@ resistors), so the order needs double-sided assembly. Through-hole: SW1-SW6, J13
 | Refs | Part | Alternate source | Why |
 |---|---|---|---|
 | D7-D11 | OPSCO SK9822-EC20 (JLC C2909059) | alternate: American Bright BB-2020BGR-TRB, Digi-Key 2007-BB-2020BGR-TRBCT-ND / Mouser 442-BB2020BGRTB | the BB-2020 is 0 at JLCPCB and LCSC; the SK9822-EC20 fits the same footprint (rotated) and is JLC-assembled |
-| U11 | ST LSM6DSV320XTR | Mouser 511-LSM6DSV320XTR (or Digi-Key 497-LSM6DSV320XTRCT-ND) | 0 at LCSC, oversold at JLCPCB; the LSM6DSV32X / 16X lack the +-320 g channel |
+| U11 | ST LSM6DSV32XTR (JLC C22461202, from the JLC parts inventory) since 2026-11-22 | alternate: ST LSM6DSV320XTR, Mouser 511-LSM6DSV320XTR (same land, adds the +-320 g channel) | the 320X is 0 at LCSC and oversold at JLCPCB (§9.1) |
 
 **Low stock or substituted at JLCPCB** (JLCPCB-assembled; stock on 2026-11-07):
 

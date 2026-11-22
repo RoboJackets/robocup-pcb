@@ -286,7 +286,8 @@ four contacts pass U2 before they join. The J1 shield is tied to GND (was not co
 
 ## 3. What did not change
 
-- MCU (STM32H723ZGT6), crystal (25 MHz ABM8), IMU part (LSM6DSV320X), microSD socket (Hirose DM3AT-SF-PEJM5), USB-C
+- MCU (STM32H723ZGT6), crystal (25 MHz ABM8), IMU footprint and pinout (the C4L2 fits the pin-compatible LSM6DSV32X since 2026-11-22, see
+  its DESIGN_NOTES §9.1), microSD socket (Hirose DM3AT-SF-PEJM5), USB-C
   connector (GCT USB4110-GF-A), power muxes (TPS2116), fuses, the radio module (ESP32-C5-WROOM-1U
   N8R8) and the mezzanine part (Samtec LSHM-110-02.5-L-DV-A-S-K-TR).
 - The LDOs (CB U7, radio U4) were Diodes AP7361C-33E-13 in the prototype; the compact boards fit the Microchip

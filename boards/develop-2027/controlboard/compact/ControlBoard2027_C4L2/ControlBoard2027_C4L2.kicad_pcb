@@ -33154,7 +33154,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "100nF 16V X7R at U11 (LSM6DSV320X) VDDIO pin 5."
+		(property "Description" "100nF 16V X7R at U11 (LSM6DSV32X) VDDIO pin 5."
 			(at 0 0 180)
 			(layer "B.Fab")
 			(hide yes)
@@ -33816,7 +33816,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "100nF 16V X7R at U11 (LSM6DSV320X) VDD pin 8."
+		(property "Description" "100nF 16V X7R at U11 (LSM6DSV32X) VDD pin 8."
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -37869,7 +37869,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "LSM6DSV320X"
+		(property "Value" "LSM6DSV32X"
 			(at 0 -2.55 90)
 			(unlocked yes)
 			(layer "B.SilkS")
@@ -37883,7 +37883,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/lsm6dsv320x.pdf"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/c704d4d51b9a36458872fe39fbc72ca6.pdf?productCode=C22461202"
 			(at 0 0 270)
 			(layer "B.Fab")
 			(hide yes)
@@ -37895,7 +37895,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Description" "6-axis IMU, +/-16 g and +/-320 g accelerometers, +/-4000 dps gyro, I2C address 0x6A (TA0 low)"
+		(property "Description" "6-axis IMU, +/-32 g accelerometer, +/-4000 dps gyro, I2C address 0x6A (SA0 low), WHO_AM_I 0x70"
 			(at 0 0 270)
 			(layer "B.Fab")
 			(hide yes)
@@ -37907,7 +37907,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "ST LSM6DSV320XTR"
+		(property "MPN" "ST LSM6DSV32XTR"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -37921,7 +37921,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Vendor PN" "511-LSM6DSV320XTR (Mouser)"
+		(property "Vendor PN" "LCSC C22461202"
 			(at 0 0 270)
 			(layer "B.Fab")
 			(hide yes)
@@ -37934,7 +37934,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C22461202"
 			(at 0 0 270)
 			(layer "B.Fab")
 			(hide yes)
@@ -37947,7 +37947,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC MPN" ""
+		(property "LCSC MPN" "STMicroelectronics LSM6DSV32XTR"
 			(at 0 0 270)
 			(layer "B.Fab")
 			(hide yes)
@@ -37960,7 +37960,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Sourcing" "Order separately and consign (LCSC 0, JLCPCB C26633007 oversold on 2026-11-07): Mouser 511-LSM6DSV320XTR, or Digi-Key 497-LSM6DSV320XTRCT-ND"
+		(property "Sourcing" "JLC assembly C22461202 (10 in own JLC parts inventory, 2026-11). Replaces the LSM6DSV320X (0 stock): same LGA-14L pinout, supply and I2C address, but no +/-320 g high-g channel; WHO_AM_I 0x70 instead of 0x73"
 			(at 0 0 180)
 			(layer "B.Fab")
 			(hide yes)

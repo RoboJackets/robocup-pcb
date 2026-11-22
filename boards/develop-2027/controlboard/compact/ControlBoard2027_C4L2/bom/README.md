@@ -34,8 +34,9 @@ This section supersedes the older stock and Digi-Key statements below.
   rotation offset is needed. As for every part, glance at JLC's placement preview (pin 1 on the dot). The terminals sit
   about 0.1 mm inboard of the pad inner edges. The BB-2020BGR-TRB
   stays as the same-footprint alternate (Digi-Key 2007-BB-2020BGR-TRBCT-ND, 121,957).
-- **Buy and consign** (CB):
-  U11 LSM6DSV320XTR from **Mouser** 511-LSM6DSV320XTR (Digi-Key 497-LSM6DSV320XTRCT-ND is 0, 24-week lead time).
+- **U11 now JLC-assembled** (2026-11-22): ST LSM6DSV32XTR, C22461202 (Extended), from the 10 pre-ordered into the JLC
+  parts inventory (JLC 2991, LCSC 16 on 2026-11-22). Pin-compatible with the LSM6DSV320X it replaces, without the
+  +-320 g channel (DESIGN_NOTES §9.1). No controlboard part is bought separately any more.
   Tightest JLC parts today: J9 LSHM 37, U2 STM32H723ZGT6 66, U1 TPD6E05U06 336.
 
 ## How stock was checked (2026-11-07)
@@ -57,8 +58,8 @@ This section supersedes the older stock and Digi-Key statements below.
 | | Lines | Parts per board |
 |---|---|---|
 | Full BOM | 52 | 174 |
-| JLCPCB assembly | 51 (22 Basic, 29 Extended) | 173 |
-| Order separately (consign or JLC global sourcing) | 1: U11 | 1 |
+| JLCPCB assembly | 52 (22 Basic, 30 Extended) | 174 |
+| Order separately | 0 | 0 |
 | Loose accessory | 1: OLED module for J13 | 1 |
 
 R73 (47k SD card-detect pull-up, added 2026-11-09) joins the R1-R5 / R20 47k line.
@@ -77,7 +78,7 @@ assembly): SW1-SW6, J13 socket, J15. J9 has paste-in-hole shield pins (2.00 mm s
 
 | Part | Source | Stock | Per set | Board sets |
 |---|---|---|---|---|
-JLC stock re-checked on the evening of 2026-11-09 (U11 Mouser figure from 2026-11-07):
+JLC stock re-checked on the evening of 2026-11-09 (U11 line from 2026-11-22):
 
 | J9 (+ radio J2) Samtec LSHM-110-02.5-L-DV-A-S-K-TR | JLC C3643542 | 27 | 2 | **13 (limiting JLC part)** |
 | U2 STM32H723ZGT6 | JLC C730146 | 51 | 1 | 51 |
@@ -85,7 +86,7 @@ JLC stock re-checked on the evening of 2026-11-09 (U11 Mouser figure from 2026-1
 | J3 FTSH-107-01-L-DV-K | JLC C5307809 | 358 | 1 | 358 |
 | J1 DM3AT-SF-PEJM5 | JLC C114218 | 416 | 1 | 416 |
 | SW1, SW2, SW4-SW6 PTS636SM43LFS | JLC C2689636 | 3177 | 5 | 635 |
-| U11 LSM6DSV320XTR | Mouser 511-LSM6DSV320XTR | 1454 | 1 | 1454 |
+| U11 LSM6DSV32XTR | own JLC inventory, C22461202 (JLC 2991) | 10 pre-ordered | 1 | 10 from inventory |
 | D7-D11 SK9822-EC20 | JLC C2909059 | 123199 | 5 | 24639 |
 
 Every other line covers more than 900 sets. **The controlboard can be built in at least 13 sets.** The LSHM is shared
@@ -124,6 +125,8 @@ Applied to the schematic and the board on 2026-11-07 (fields only; footprints, p
    the other 100k 0402 parts of the group.
 4. **D7-D11 and U11 (order separately, not changed):** `Vendor PN` is the Mouser PN (442-BB2020BGRTB, 511-LSM6DSV320XTR)
    and a new `Sourcing` field names the Mouser and Digi-Key PNs and the reason.
+5. **U11 (2026-11-22):** changed to ST LSM6DSV32XTR, C22461202, JLC-assembled from the parts inventory; `Vendor PN`
+   LCSC C22461202. The LSM6DSV320XTR is kept as the same-land alternate.
 
 ## Open issues
 
@@ -133,14 +136,12 @@ Applied to the schematic and the board on 2026-11-07 (fields only; footprints, p
   GND-VDD, SDI-CKI), but its pad numbering is different and its drawing is a bottom view, so the chirality is
   unconfirmed (TODO 1.2 also asks whether the BB2020 drawing is a top view). It also differs from the APA102 protocol
   in its global-brightness handling. Use it only after checking both drawings and the firmware driver.
-- **U11 LSM6DSV320XTR**: JLC C26633007 shows 8, but its presale count is -12 (oversold), and LCSC has 0. Treat it as
-  out of stock. Buy from Mouser 511-LSM6DSV320XTR (1454, 7.88 USD at 10) or Digi-Key 497-LSM6DSV320XTRCT-ND
-  (unverified; DK listings say supply is constrained), and consign it. It is LGA-14, so it is not practical to
-  hand-solder.
+- **U11** is the LSM6DSV32XTR (C22461202) since 2026-11-22. The LSM6DSV320XTR (JLC C26633007 oversold, LCSC 0) fits
+  the same land if the +-320 g channel is needed later (Mouser 511-LSM6DSV320XTR, consign).
 - **OLED module** (J13 accessory): a generic 0.96 in SSD1306 I2C module with pin order GND VCC SCL SDA. Modules with
   VCC first exist and must not be used. Holes 2.8 mm on +-10.25 or +-11.15 x +-11.5 mm. These modules are not stocked
   at Digi-Key / Mouser as a generic part; buy them loose (Amazon / AliExpress). JLC fits the BOOMELE socket (C2718488).
 - **Low JLC stock to re-check before ordering**: J9 C3643542 (37), U7 C638624 (1766), U2 C730146 (175; LCSC 88), J3 C5307809 (445),
   U1 C962978 (714), D2 C96228 (804), J1 C114218 (902). JLC also adds attrition parts on small passives; none of the
   low-stock lines are passives.
-- Consigned parts (D7-D11, U11) need a JLC consignment (or global-sourcing) order before the PCBA order.
+- No controlboard part is consigned: D7-D11 and U11 are JLC-assembled.

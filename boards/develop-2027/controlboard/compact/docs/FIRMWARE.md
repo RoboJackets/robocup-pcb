@@ -43,7 +43,7 @@ The ROM bootloader uses its own clocking, so DFU does not depend on these settin
 | I2C1, kicker | PB8 SCL (139), PB9 SDA (140) | AF4 | R14 / R17 2.2k, U17 ESD, J10 | 400 kHz |
 | I2C2, expansion | PF1 SCL (11), PF0 SDA (10) | AF4 | R7 / R9 2.2k, U6 / U16 ESD, J11 / J12 | 100 kHz until 400 kHz rise times are checked with the real cables |
 | I2C3, OLED | PA8 SCL (100), PC9 SDA (99) | AF4 | R18 / R19 2.2k, J13 | 400 kHz; SSD1306 at 0x3C (probe 0x3D too) |
-| I2C4, IMU | PD12 SCL (81), PD13 SDA (82) | AF4 | R10 / R8 2.2k, U11 | 400 kHz; LSM6DSV320X at 0x6A |
+| I2C4, IMU | PD12 SCL (81), PD13 SDA (82) | AF4 | R10 / R8 2.2k, U11 | 400 kHz; LSM6DSV32X at 0x6A |
 | USART10, powerboard | PE3 TX (2), PE2 RX (1) | **AF11 TX, AF4 RX** (DS13313 Table 8) | R33 / R34 1k, J15 pin 1 (TX) / pin 2 (RX) | 115200 8N1; internal pull-up on PE2 (floats with J15 unplugged) |
 | USART6, debug VCP | PC6 TX (96), PC7 RX (97) | AF7 | J3 pin 14 (MCU TX) / pin 13 (MCU RX), STLINK-V3 virtual COM port | internal pull-up on PC7 (floats with no probe) |
 | SWD | PA13 SWDIO (105), PA14 SWCLK (109), NRST (25) | AF0 | J3 STDC14 | start at 1 MHz; no SWO (PB3 is the radio SCK) |
@@ -152,10 +152,13 @@ still above 0.7 x VDD, so the motor boards stay deselected, with about 0.2 V mar
   kernel clock (PLL2P or PLL3P) and a scope measurement of the MISO valid delay at J9 first.
 - Keep the ESP-Hosted frame checksum on.
 
-### 1.8 IMU (U11, LSM6DSV320X)
+### 1.8 IMU (U11, LSM6DSV32X)
 
-- I2C4 (PD12 SCL / PD13 SDA, AF4), address 0x6A (SDO/TA0 to GND; CS tied high selects I2C). Use the LSM6DSV320X
-  driver and check WHO_AM_I.
+- I2C4 (PD12 SCL / PD13 SDA, AF4), address 0x6A (SDO/SA0 to GND; CS tied high selects I2C). Use ST's LSM6DSV32X
+  driver and check **WHO_AM_I = 0x70**.
+- The board was first drawn for the LSM6DSV320X (WHO_AM_I 0x73). The fitted LSM6DSV32X has the same pins and address
+  but **no high-g channel**: one accelerometer, full scale +-4 / 8 / 16 / 32 g. Select +-32 g where impacts matter;
+  anything above 32 g saturates. Gyroscope up to +-4000 dps as before. Do not port 320X high-g code.
 - INT1 goes to PF3 (ACCEL_EXTI) and INT2 to PF2 (GYRO_EXTI), both push-pull. Route any event to either pin with
   INT1_CTRL / INT2_CTRL.
 - The part has no reset pin. After a PWR_SRC change or an I2C error, re-read the configuration registers and

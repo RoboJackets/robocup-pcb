@@ -106,8 +106,8 @@ where it names parts or rules, not positions.
     4.0 mm "J13 standoff space" areas where holes can be added).
 1.9 Parts: the BOM is in bom/ (2026-11-07); generate the placement file. Re-check stock in the
     JLCPCB BOM tool; check the substitutes in the placement preview (F1 / F3 / F4 1812L075/24DR, F5 / F6
-    1812L125/16DR, SW1 / SW2 / SW4-SW6 PTS636SM43LFS, SW3 DS-06BP, X1 ABM8-25.000MHZ-10-D1G-T). Source D7-D11 and U11
-    outside JLCPCB stock (global sourcing or consign). Re-check J9 (C3643542, 37 on 2026-11-07 = 18 board sets
+    1812L125/16DR, SW1 / SW2 / SW4-SW6 PTS636SM43LFS, SW3 DS-06BP, X1 ABM8-25.000MHZ-10-D1G-T). D7-D11 (C2909059) and U11
+    (LSM6DSV32X, C22461202, from the JLC parts inventory) are JLC-assembled. Re-check J9 (C3643542, 37 on 2026-11-07 = 18 board sets
     with the radio J2) and U7 (MCP1826S-3302E/DB, C638624) the day of ordering. Order U10 as SN74AHCT125DR (SOIC-14). Order with tented
     vias and double-sided assembly.
 1.10 Any change to J9, HR1 or HR2 must be made in this board and both radio projects together (INTERFACE.md).
@@ -140,7 +140,7 @@ where it names parts or rules, not positions.
 3.5 SPI3 radio: CRC off, 8-bit (M4); bring up at 3 MHz, run at 24 MHz; CS PG15 at OSPEEDR LOW / MEDIUM.
 3.6 Master Keep IO State on all SPI masters (M17).
 3.7 IMU U11 (bottom side, rotation 270, pin 1 north-west seen from above): derive the axis remap from the datasheet
-    axis drawing, mirrored for the bottom side; use the LSM6DSV320X driver (WHO_AM_I, register map); SW_RESET after
+    axis drawing, mirrored for the bottom side; use the LSM6DSV32X driver (WHO_AM_I 0x70, register map; no high-g channel, +-32 g max); SW_RESET after
     brown-out (m16).
 3.8 Power-source changes (poll PD10 / PD9, m11): re-initialise SD, IMU and OLED, pulse ESP_RST and restart
     ESP-Hosted, resend the LED frame. LED current cap about 250 mA, about 100 mA while PWR_SRC_5V is low.

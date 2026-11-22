@@ -5531,7 +5531,7 @@
 		)
 		(uuid "ac2aeb1b-f2a6-45df-b5c5-e3b7e200c26f")
 	)
-	(text "I2C: R7/R9, R8/R10, R14/R17, R18/R19 are each 2.2k.\nAt 3.3 V: (3.3-0.4)/2.2k = 1.32 mA sink requirement.\nFor a 300 ns rise-time limit: C <= 300ns/(0.8473R) = 161 pF nominal.\nAt +1% R: 159 pF. Include ESD, pins, cables and parallel pull-ups.\nLSM6DSV320X / SSD1306 / DS13313 timing and I/O data; external loads not qualified."
+	(text "I2C: R7/R9, R8/R10, R14/R17, R18/R19 are each 2.2k.\nAt 3.3 V: (3.3-0.4)/2.2k = 1.32 mA sink requirement.\nFor a 300 ns rise-time limit: C <= 300ns/(0.8473R) = 161 pF nominal.\nAt +1% R: 159 pF. Include ESD, pins, cables and parallel pull-ups.\nLSM6DSV32X / SSD1306 / DS13313 timing and I/O data; external loads not qualified."
 		(exclude_from_sim no)
 		(at 400.05 232.41 0)
 		(effects

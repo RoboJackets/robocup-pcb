@@ -118,7 +118,7 @@ Details and the full lists are in each board's TODO.txt.
   re-audit of the last changed areas (CB back-edge connectors and audit fixes; Overhang USB-skew changes; Inboard
   after any further change), then refill zones, DRC with parity, ERC and the length scripts again; generate the
   placement files (the BOMs exist, see above); re-check stock (LSHM C3643542 is the limiting JLCPCB part); parts not
-  stocked at JLCPCB must be sourced and consigned (CB: D7-D11, U11; radios: U1, ANT1).
+  stocked at JLCPCB must be sourced separately (radios: U1, hand-soldered, and ANT1; every CB part is JLC-assembled).
 - **Controlboard:** agree J15 (powerboard), J10 (kicker) and J11 / J12 (expansion) pinouts with the mating boards; J4-J8 are
   settled (drive motors on a reversed GH cable, dribbler straight, INTERFACE.md); choose the OLED module; confirm the DotStar footprint (top-view drawing).
 - **Radios:** decide the antenna (FXP831 5 GHz gain above the module's certified gain; Inboard WROOM-1 fallback sits
