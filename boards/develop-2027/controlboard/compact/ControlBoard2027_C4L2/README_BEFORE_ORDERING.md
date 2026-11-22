@@ -47,6 +47,24 @@ Check the pin-1 or polarity marker of every polarised part against the silkscree
 
 ## 2a. Placement file (CPL) rotation rules: needed on the machine that generates the files
 
+**Whoever generates the gerbers, BOM and CPL: do these steps first, on your own computer.**
+1. In KiCad's PCB editor, open the kicad-jlcpcb-tools plugin and its rotation corrections window. Click **Import** and
+   choose [bom/jlc_cpl_rotation_corrections.csv](bom/jlc_cpl_rotation_corrections.csv) (12 rules; it updates rules that
+   already exist).
+2. Generate the files as usual, for the controlboard and for the radio being ordered.
+3. Open the generated CPL (`jlcpcb/production_files/CPL-*.csv`) and check the `Rotation` column against the table
+   below. **Every listed part must match.** If one does not, do not order: your plugin's table has another rule that
+   wins. Fix that rule, or correct the value in the CPL by hand, then check again.
+
+| Board | Expected CPL rotation (ref: layer: degrees) |
+|---|---|
+| ControlBoard2027_C4L2 | D1 T 270, D3 B 270, D4 B 270, J3 T 0, J4 T 180, J5 T 0, J6 T 0, J7 T 180, J8 T 180, J9 T 270, J10 T 90, J11 T 270, J12 T 270, J15 T 180, Q1 B 180, SW3 T 180, U1 T 270, U8 B 180, U9 B 270 |
+| RadioBoard2027_C_Inboard | D2 T 90, D5 T 90, J2 B 270, U3 T 270 |
+| RadioBoard2027_C_Overhang | D2 T 90, D5 T 90, J2 B 270, U3 B 270 |
+
+These values were computed on 2026-11-22 from the current board files with the plugin's own rotation logic; they
+change if any of these parts is moved or rotated. Every other part uses the plugin's default rules.
+
 The BOM and CPL are generated with the kicad-jlcpcb-tools plugin (Bouni). JLC measures each CPL rotation against its
 own (EasyEDA) footprint for the LCSC part. Where that footprint is drawn in a different orientation from ours, the
 plugin adds a correction from its rotation table. The plugin's default table was wrong for the parts below: the CPL
@@ -175,7 +193,7 @@ When every item above is ticked, write the date and your name here and commit it
 
 - [ ] 1. LED pin 1 checked in the JLC preview (D7-D11)
 - [ ] 2. Other polarised parts checked in the JLC preview
-- [ ] 2a. CPL generated on a machine with the section 2a rotation rules (both boards)
+- [ ] 2a. Rotation rules imported from bom/jlc_cpl_rotation_corrections.csv; CPL rotations match the section 2a table (both boards)
 - [ ] 3. Motor cables made: DRIVE SPI reversed (J4-J7), DRIBBLER SPI straight (J8)
 - [ ] 4. Expansion fuse rating decided
 - [ ] 5. Firmware pin map taken from FIRMWARE.md §1.2 / §1.3

@@ -8,7 +8,7 @@
 | [CK_PTS636.pdf](CK_PTS636.pdf) | [LCSC copy](https://datasheet.lcsc.com/datasheet/pdf/229e2204c94be8eac226511395a363de.pdf?productCode=C2689636) of the C&K PTS636 datasheet (7 Oct 20) | `2015aeeef741ee7e...851ef5dceb` | SW1/SW2/SW4-SW6 PTS636SM43LFS: THT drawing and PCB land p.2 |
 | [Hroparts_DS-06BP.pdf](Hroparts_DS-06BP.pdf) | [LCSC copy](https://datasheet.lcsc.com/datasheet/pdf/58c923485d5c652775c00f938a3bb4f1.pdf?productCode=C129072) of the Hroparts DS-xxBP drawing | `468a42735fa67054...67599a993a7d1` | SW3 DS-06BP: body, pitch and row spacing |
 
-`lsm6dsv32x.pdf` (ST LSM6DSV32X, downloaded by the user from st.com, SHA-256 `aaa818cafdb8a0ad...c74784c2bb330`) was checked as a JLCPCB-stocked IMU: same LGA-14L pins, but no ±320g high-g channel, so U11 stays the LSM6DSV320X (DESIGN_NOTES §14.1).
+`lsm6dsv32x.pdf` (ST LSM6DSV32X, downloaded by the user from st.com, SHA-256 `aaa818cafdb8a0ad...c74784c2bb330`) was checked as a JLCPCB-stocked IMU: same LGA-14L pins, but no ±320g high-g channel, so the prototype U11 stays the LSM6DSV320X (DESIGN_NOTES §14.1). ControlBoard2027_C4L2 fits the LSM6DSV32X since 2026-11-22 (in stock; its DESIGN_NOTES §9.1); this file is identical to the LCSC copy for C22461202.
 The X1 option D1G is in the existing `ABM8.pdf` (option codes on p.1; the archived copy is
 identical to the publisher file on 2026-11-03). The other JLCPCB substitutes (Samsung CL MLCCs, Fenghua 0402CG for C18/C19, UNI-ROYAL 1% chip
 resistors, hanxia headers J3/J14/J17, BOOMELE socket SK1) are linked from each symbol's
@@ -18,7 +18,7 @@ resistors, hanxia headers J3/J14/J17, BOOMELE socket SK1) are linked from each s
 
 | Local file | Source | Use |
 |---|---|---|
-| [LSM6DSV320X.pdf](LSM6DSV320X.pdf) | [Publisher PDF](https://www.st.com/resource/en/datasheet/lsm6dsv320x.pdf) (DS14623) | U11 as fitted. Pin table, package and ranges compared with DS15060 (LSM6DSK320X) |
+| [LSM6DSV320X.pdf](LSM6DSV320X.pdf) | [Publisher PDF](https://www.st.com/resource/en/datasheet/lsm6dsv320x.pdf) (DS14623) | U11 on the prototype (C4L2: LSM6DSV32X since 2026-11-22). Pin table, package and ranges compared with DS15060 (LSM6DSK320X) |
 
 Parts added on 2026-10-04 link their Digi-Key product page, which carries the maker datasheet:
 J1 Hirose DM3AT-SF-PEJM5, C35 Samsung CL21B225KOFNNNE, C1/C5/C32/C34 Taiyo Yuden
@@ -110,3 +110,9 @@ related schematic decisions, but are NOT saved locally:
 
 This archive is incomplete; missing downloads must not be represented as reviewed local files.
 The inherited design notes contain other component/connector claims outside this feedback audit.
+
+2026-11-20 addendum (ControlBoard2027_C4L2 U7 and compact radio U4):
+
+| Local file | Source | SHA-256 | Use |
+|---|---|---|---|
+| [22057B.pdf](22057B.pdf) | [Microchip DS22057B](https://ww1.microchip.com/downloads/en/DeviceDoc/22057B.pdf), MCP1826/MCP1826S 1000 mA LDO, Rev B | `86245f7017985fac...0fc8393f110435e5725` | MCP1826S-3302E/DB: SOT-223-3 pinout p.2, absolute maximum VIN 6.5 V p.3, output and input capacitor §4.3 / §4.4 |
