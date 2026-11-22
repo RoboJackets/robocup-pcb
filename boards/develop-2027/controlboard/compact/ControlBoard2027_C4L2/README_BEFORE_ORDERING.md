@@ -42,7 +42,56 @@ Check the pin-1 or polarity marker of every polarised part against the silkscree
 - U7, U8, U9, U10, U11;
 - D1-D6;
 - Q1;
-- J1, J2, J3, J9.
+- J1, J2, J3, J9;
+- J4-J8, J10-J12 (GH: contacts toward the board edge), J15 (pin 1), SW3 ("ON" side as on the silkscreen).
+
+## 2a. Placement file (CPL) rotation rules: needed on the machine that generates the files
+
+The BOM and CPL are generated with the kicad-jlcpcb-tools plugin (Bouni). JLC measures each CPL rotation against its
+own (EasyEDA) footprint for the LCSC part. Where that footprint is drawn in a different orientation from ours, the
+plugin adds a correction from its rotation table. The plugin's default table was wrong for the parts below: the CPL
+would have placed them a quarter or half turn off.
+
+The rules below were added to the plugin's rotation table on 2026-11-21. The table is part of the KiCad install, not
+the repo: `Documents/KiCad/10.0/3rdparty/plugins/com_github_bouni_kicad-jlcpcb-tools/jlcpcb/corrections.db`, editable
+in the plugin's rotation manager.
+- **On any other computer**, or after a plugin reinstall or update, add these rules again before generating the CPL.
+  Each regex matches one exact footprint name (or one value), so it overrides the generic defaults for that part only.
+
+| Regex (footprint name, or value) | Rotation | Parts (CB = this board, R = both compact radios) | LCSC | Default it overrides |
+|---|---|---|---|---|
+| `^TI_TPS2116_DRL0008A$` | 270 | CB U8, U9 | C3235557 | none (0) |
+| `^SOT-583-8$` | 270 | R U3 (TPS2116) | C3235557 | none (0) |
+| `^WSON-6-1EP_2x2mm_P0\.65mm_EP1x1\.6mm$` | 270 | CB D1, D3, D4; R D2, D5 | C609571 | none (0) |
+| `^Texas_R-PUSON-N14$` | 270 | CB U1 | C962978 | none (0) |
+| `^PinHeader_2x07_P1\.27mm_Vertical_SMD$` | 270 | CB J3 | C5307809 | none (0) |
+| `^SW_DIP_SPSTx06_Slide_6\.7x16\.8mm_W7\.62mm_P2\.54mm_LowProfile$` | 270 | CB SW3 | C129072 | none (0) |
+| `^Samtec_LSHM-110-xx\.x-x-DV-S_2x10-1SH_P0\.50mm_Vertical_PIH$` | 180 | CB J9; R J2 | C3643542 | none (0) |
+| `^AO3401A$` (value) | 180 | CB Q1 | C15127 | `^SOT-23` -90 |
+| `^JST_GH_SM04B-GHS-TB_1x04-1MP_P1\.25mm_Horizontal$` | 0 | CB J10 | C189895 | `^JST_GH_SM` 180 |
+| `^JST_GH_SM06B-GHS-TB_1x06-1MP_P1\.25mm_Horizontal$` | 0 | CB J4-J8 | C133065 | `^JST_GH_SM` 180 |
+| `^JST_GH_SM08B-GHS-TB_1x08-1MP_P1\.25mm_Horizontal$` | 0 | CB J11, J12 | C265111 | `^JST_GH_SM` 180 |
+| `^JST_PH_S7B-PH-K_1x07_P2\.00mm_Horizontal$` | 0 | CB J15 | C157917 | `^JST_PH_S` 180 |
+
+**How the rotations were found.**
+- For every LCSC part on both boards, JLC's EasyEDA footprint was downloaded. Each pad was matched to the same-numbered
+  pad of our footprint at 0 degrees, and the quarter turn that lines them up was taken. Parts whose JLC pad numbering
+  differs (GH 6-pin, DIP) were also fitted on pad positions alone.
+- Fit error: within 0.10 mm for the connectors, TVS and ESD parts; within 0.3 mm for the TPS2116 and AO3401A (the
+  difference in pad size between the two land patterns).
+- The same calculation reproduces the plugin defaults that are known to work (LQFP-144 270, USON-10 270, SO-14 -90,
+  SOT-23-5 -90).
+- Every other assembled part agreed with the plugin's default.
+
+**Not covered; check these in the JLC preview.**
+- **No EasyEDA footprint:** the red LEDs APT1608EC (CB D5, D6; radio D3, cathode mark), the crystal (CB X1, pin 1)
+  and the radio's D4 (bidirectional, orientation does not matter).
+- **SW3:** the pad fit cannot tell which side "ON" faces.
+- **Bottom-side parts:** these rely on the plugin's own bottom-side mirroring, which was not checked independently.
+- **J10-J12:** these sit about 0.25 mm from JLC's part centre, within normal placement tolerance.
+
+**Re-check this table after any part or footprint change.** A different LCSC part on the same footprint can need a
+different rotation.
 
 ## 3. Motor boards on J4-J8: two cable types
 
@@ -90,6 +139,12 @@ repo board at order time; none are generated in this folder.
 - Every via is **0.45 mm pad / 0.3 mm drill** (JLC's standard via; no small-via surcharge). Minimum track / gap is
   0.09 mm in the rules; the narrowest copper actually used is 0.14 mm (USB pair).
 - R39 is placed rotated 180 degrees compared with the C4L layout: check its rotation in the JLC placement preview.
+- **Mark on PCB (serial number):** choose **2D barcode & Number**, **8x8 mm**, QR code, **Specify Position**. The
+  position is the solid 8 x 8 mm square on the **bottom** silkscreen beside the RoboJackets logo; JLC prints the code
+  in the square and the number below it. JLC's help page does not say whether the bottom side is accepted, so confirm
+  it in the order notes or with support, and check JLC's production-file preview (layers `qrt` / `qrb`). Without the
+  option selected, JLC prints nothing there and the square stays a plain white block. Do not add "JLCJLCJLCJLC"
+  text: the order-number option no longer exists (JLC, "How to mark on PCB", May 2026).
 
 ## 6b. Radio and powerboard generations
 
@@ -120,6 +175,7 @@ When every item above is ticked, write the date and your name here and commit it
 
 - [ ] 1. LED pin 1 checked in the JLC preview (D7-D11)
 - [ ] 2. Other polarised parts checked in the JLC preview
+- [ ] 2a. CPL generated on a machine with the section 2a rotation rules (both boards)
 - [ ] 3. Motor cables made: DRIVE SPI reversed (J4-J7), DRIBBLER SPI straight (J8)
 - [ ] 4. Expansion fuse rating decided
 - [ ] 5. Firmware pin map taken from FIRMWARE.md §1.2 / §1.3

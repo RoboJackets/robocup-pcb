@@ -1136,6 +1136,14 @@ pad.
   art when moving it. Placed at (70.8, 22.3) clear of bottom pads and silkscreen; the owner may move it.
 - About 100 reference designators with no free spot at 1.0 mm are hidden or on F.Fab only. The OLED module outline
   is on F.Fab.
+- RoboJackets logo (2026-11-21): G1, `RJ-Graphics:GRAPHIC_ROBOJACKET_LOGO` from robocup-pcb-lib (footprints/
+  FOOTPRINT_SOURCES.md), on the bottom silkscreen at about (76.5, 24.3) mm, 11.8 x 18.3 mm. The GND stitching grid
+  leaves no via-free spot that size; this one has the fewest vias under it, and the silkscreen is only cut at
+  their drill holes.
+- JLC serial-number square (2026-11-21): a solid 8 x 8 mm square on the bottom silkscreen, (83.5, 10.75) to
+  (91.5, 18.75) mm, clear of vias, pads and other silkscreen, with free board below it for the number JLC adds.
+  It marks the position for JLC's "2D barcode & Number" option (README_BEFORE_ORDERING §6a). It sits over SD-bus
+  tracks under the mask; JLC prefers a flat area over solid copper, but no such area is left on the bottom.
 
 Silkscreen pass (2026-11-19), modelled on the drive-motorboard; silkscreen only, no footprint, pad or copper moved.
 The board is installed with the bottom against the robot, so everything a person reads goes on the visible top: not
