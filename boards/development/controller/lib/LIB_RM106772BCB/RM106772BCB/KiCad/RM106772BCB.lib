@@ -1,0 +1,29 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model RM106772BCB
+#/1062846/2024811/2.50/8/2/Switch
+DEF RM106772BCB S 0 30 Y Y 1 F N
+F0 "S" 750 300 50 H V L CNN
+F1 "RM106772BCB" 750 200 50 H V L CNN
+F2 "RM106772BCB" 750 100 50 H I L CNN
+F3 "https://www.digikey.ph/en/products/detail/c-k/RM106772BCB/6052015" 750 0 50 H I L CNN
+F4 "Rotary Switches .2A 48VDC 6pos Stop 7.7mm Act 270gf" 750 -100 50 H I L CNN "Description"
+F5 "15.1" 750 -200 50 H I L CNN "Height"
+F6 "611-RM106772BCB" 750 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/CK/RM106772BCB?qs=367PjNmvCmlxoAu0%2F1HoEg%3D%3D" 750 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "LITTELFUSE" 750 -500 50 H I L CNN "Manufacturer_Name"
+F9 "RM106772BCB" 750 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X 1 1 0 0 200 R 50 50 0 0 P
+X 2 2 0 -100 200 R 50 50 0 0 P
+X 3 3 0 -200 200 R 50 50 0 0 P
+X 4 4 0 -300 200 R 50 50 0 0 P
+X 5 5 900 0 200 L 50 50 0 0 P
+X 6 6 900 -100 200 L 50 50 0 0 P
+X 7 7 900 -200 200 L 50 50 0 0 P
+X C1 C1 900 -300 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 700 100 700 -400 200 -400 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

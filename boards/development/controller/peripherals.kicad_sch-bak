@@ -1,0 +1,687 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "236169eb-c46f-4671-abd3-15772c4a719a")
+	(paper "A4")
+	(lib_symbols)
+	(rectangle
+		(start 187.96 34.29)
+		(end 238.76 148.59)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 25513453-8c69-44a4-aa61-f123ad9e26a6)
+	)
+	(rectangle
+		(start 78.74 58.42)
+		(end 128.27 95.25)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 314d5e7e-032e-4e22-86f9-afa65948c234)
+	)
+	(text "Debounced Pushbuttons"
+		(exclude_from_sim no)
+		(at 199.136 32.766 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "30686a10-f6b0-488c-93a2-bd90e696edac")
+	)
+	(text "Left and Right Joysticks with Debounced Pushbuttons"
+		(exclude_from_sim no)
+		(at 104.648 56.896 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b66c8258-00ef-4f5f-a0dc-b0a98efde559")
+	)
+	(wire
+		(pts
+			(xy 111.76 76.2) (xy 114.3 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "078606e5-8986-4325-aece-31c7044536f6")
+	)
+	(wire
+		(pts
+			(xy 223.52 45.72) (xy 226.06 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15fd491b-a33b-4e47-9710-b292733f7fed")
+	)
+	(wire
+		(pts
+			(xy 223.52 63.5) (xy 226.06 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e63adc4-9613-4a2d-9061-21c202871c32")
+	)
+	(wire
+		(pts
+			(xy 111.76 81.28) (xy 114.3 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2034618e-4002-4806-8ffa-3c23b2021f31")
+	)
+	(wire
+		(pts
+			(xy 223.52 116.84) (xy 226.06 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6693a43d-fa66-4d44-ae79-795016052c46")
+	)
+	(wire
+		(pts
+			(xy 223.52 134.62) (xy 226.06 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71bff44c-ab1d-4945-b279-12e442da5646")
+	)
+	(wire
+		(pts
+			(xy 111.76 71.12) (xy 114.3 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ab336a7-55b5-427a-bbf5-12e0271350df")
+	)
+	(wire
+		(pts
+			(xy 223.52 99.06) (xy 226.06 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a1b97e9-6313-4f1a-8903-926a18752c50")
+	)
+	(wire
+		(pts
+			(xy 111.76 67.31) (xy 114.3 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a67625e6-19eb-4e9f-a909-b35ce70344b3")
+	)
+	(wire
+		(pts
+			(xy 111.76 85.09) (xy 114.3 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4893690-cd9c-417d-af51-007f518d80c2")
+	)
+	(wire
+		(pts
+			(xy 223.52 81.28) (xy 226.06 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0742aa8-cc5e-4d0c-80c7-38f034aa91ba")
+	)
+	(hierarchical_label "SEL_1"
+		(shape input)
+		(at 114.3 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2dd0d11b-390f-42e6-87d5-2cfe6e0b41ae")
+	)
+	(hierarchical_label "BTN_RJOY"
+		(shape input)
+		(at 114.3 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6356565d-8fae-4a3e-ae0b-a2b112cdd6ae")
+	)
+	(hierarchical_label "BTN_LEFT"
+		(shape input)
+		(at 226.06 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6e35d663-d15f-43ea-97fb-5ce43ed8d9f3")
+	)
+	(hierarchical_label "BTN_A"
+		(shape input)
+		(at 226.06 116.84 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "79c4e40f-7e0e-4417-a011-21b2847ceb1f")
+	)
+	(hierarchical_label "BTN_UP"
+		(shape input)
+		(at 226.06 45.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7aae23ea-545d-4398-9171-90a66241c397")
+	)
+	(hierarchical_label "COM_JOY"
+		(shape input)
+		(at 114.3 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8491719b-dec0-484c-9f07-8baf61231dcc")
+	)
+	(hierarchical_label "BTN_LJOY"
+		(shape input)
+		(at 114.3 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8c9632aa-8b5e-4661-a247-1cabf5e376b1")
+	)
+	(hierarchical_label "BTN_RIGHT"
+		(shape input)
+		(at 226.06 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9531f9ad-2996-4952-a9bc-bd48c41be747")
+	)
+	(hierarchical_label "BTN_B"
+		(shape input)
+		(at 226.06 134.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ab7f450e-4bee-45da-9cc6-d62636c2b7e2")
+	)
+	(hierarchical_label "SEL_0"
+		(shape input)
+		(at 114.3 67.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ecec96e4-8182-46a9-870d-192c70a3a0a5")
+	)
+	(hierarchical_label "BTN_DOWN"
+		(shape input)
+		(at 226.06 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f1838138-cc9c-4a98-bbe0-bc3611874f5f")
+	)
+	(sheet
+		(at 191.77 128.27)
+		(size 31.75 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "1972dbc4-439c-49bb-9502-5368050a1d79")
+		(property "Sheetname" "B Button"
+			(at 191.77 127.5584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "debounced_switch.kicad_sch"
+			(at 191.77 141.5546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "OUT" input
+			(at 223.52 134.62 0)
+			(uuid "513b44a3-c156-4d1c-8f19-21aed97a000e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "robocup-controller-pcb"
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 191.77 57.15)
+		(size 31.75 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "51e515bb-81b2-4f9a-97d7-6e25cc602cd6")
+		(property "Sheetname" "DOWN Button"
+			(at 191.77 56.4384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "debounced_switch.kicad_sch"
+			(at 191.77 70.4346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "OUT" input
+			(at 223.52 63.5 0)
+			(uuid "c8021a21-7f1a-40b5-8e48-f03906c4927e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "robocup-controller-pcb"
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 191.77 110.49)
+		(size 31.75 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7aa43fc1-a78f-4ae6-b572-45faad61d6db")
+		(property "Sheetname" "A Button"
+			(at 191.77 109.7784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "debounced_switch.kicad_sch"
+			(at 191.77 123.7746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "OUT" input
+			(at 223.52 116.84 0)
+			(uuid "4d957b55-fdcf-48af-9d0f-0feaed59ea91")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "robocup-controller-pcb"
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 191.77 39.37)
+		(size 31.75 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a94ecdf2-de59-4608-8ff1-a0602a658ef2")
+		(property "Sheetname" "UP Button"
+			(at 191.77 38.6584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "debounced_switch.kicad_sch"
+			(at 191.77 52.6546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "OUT" input
+			(at 223.52 45.72 0)
+			(uuid "3d66bf18-60b5-4cb1-9a8f-88009bd52602")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "robocup-controller-pcb"
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 83.82 63.5)
+		(size 27.94 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d5248026-1143-44c3-a194-85757bee6f21")
+		(property "Sheetname" "Combined Joysticks"
+			(at 83.82 62.7884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "joysticks.kicad_sch"
+			(at 83.82 89.4846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "A_OUT" input
+			(at 111.76 76.2 0)
+			(uuid "1c607a7d-e66b-4fdf-a260-1bbea44d884b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SEL_0" input
+			(at 111.76 67.31 0)
+			(uuid "27000f7e-aea2-4de1-9a29-f980049c6143")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SEL_1" input
+			(at 111.76 71.12 0)
+			(uuid "ec800a34-05b4-4566-bb5e-c722477df483")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "L_JOY_BTN" input
+			(at 111.76 81.28 0)
+			(uuid "45462f34-bd28-4e1c-bc2d-707b0fd6fb9e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "R_JOY_BTN" input
+			(at 111.76 85.09 0)
+			(uuid "866ff6af-1396-48ef-9f5e-5b2a516d99d5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "robocup-controller-pcb"
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913"
+					(page "12")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 191.77 74.93)
+		(size 31.75 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "dc2ff3f3-ba8b-4f11-b3a4-86c0a8ff284d")
+		(property "Sheetname" "LEFT Button"
+			(at 191.77 74.2184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "debounced_switch.kicad_sch"
+			(at 191.77 88.2146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "OUT" input
+			(at 223.52 81.28 0)
+			(uuid "58099820-b764-46a6-9c73-011704cae246")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "robocup-controller-pcb"
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 191.77 92.71)
+		(size 31.75 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f7047143-6168-46f3-826d-5fe5ddc8eaa1")
+		(property "Sheetname" "RIGHT Button"
+			(at 191.77 91.9984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "debounced_switch.kicad_sch"
+			(at 191.77 105.9946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "OUT" input
+			(at 223.52 99.06 0)
+			(uuid "26775177-79bd-4e15-b11b-2bccbcf48e9f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "robocup-controller-pcb"
+				(path "/3884451c-27ea-46b5-b7b9-6fb77791549d/07a2a152-d3dd-44b5-8226-55e5afcb2913"
+					(page "11")
+				)
+			)
+		)
+	)
+)

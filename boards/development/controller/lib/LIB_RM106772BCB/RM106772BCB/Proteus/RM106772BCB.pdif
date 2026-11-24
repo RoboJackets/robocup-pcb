@@ -1,0 +1,140 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "RM106772BCB"
+   (description "Rotary Switches .2A 48VDC 6pos Stop 7.7mm Act 270gf")
+   (family "SWI")
+   (package "RM106772BCB")
+   (attribute "Datasheet Link" "https://www.digikey.ph/en/products/detail/c-k/RM106772BCB/6052015")
+   (attribute "Geometry.Height" "15.1mm")
+   (attribute "Mouser Part Number" "611-RM106772BCB")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/CK/RM106772BCB?qs=367PjNmvCmlxoAu0%2F1HoEg%3D%3D")
+   (attribute "Manufacturer_Name" "LITTELFUSE")
+   (attribute "Manufacturer_Part_Number" "RM106772BCB")
+   (gate
+    (symbol "RM106772BCB")
+    (pin "1" 1 PS)
+    (pin "2" 2 PS)
+    (pin "3" 3 PS)
+    (pin "4" 4 PS)
+    (pin "5" 5 PS)
+    (pin "6" 6 PS)
+    (pin "7" 7 PS)
+    (pin "C1" C1 PS)
+   )
+  )
+  (symbol "RM106772BCB"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 700 100) (pt 700 -400) (pt 200 -400) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -200) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -300) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 900 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 900 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 900 -200) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 900 -300) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "RM106772BCB"
+   (units MM)
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -6.796 3.204)
+      (pt 3.204 3.204)
+      (pt 3.204 -6.796)
+      (pt -6.796 -6.796)
+      (pt -6.796 3.204))))
+   (layer TASM
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -5.796 -1.796)
+      (arc (pt -5.796 -1.796) (pt -5.796 -5.796) (pt 2.204 2.204) (start 180.0) (sweep -180.0))
+      (pt 2.204 -1.796)
+      (arc (pt 2.204 -1.796) (pt -5.796 -5.796) (pt 2.204 2.204) (start 180.0) (sweep .0))
+      (pt -5.796 -1.796))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -5.796 -1.796)
+      (arc (pt -5.796 -1.796) (pt -5.796 -5.796) (pt 2.204 2.204) (start 180.0) (sweep -180.0))
+      (pt 2.204 -1.796)
+      (arc (pt 2.204 -1.796) (pt -5.796 -5.796) (pt 2.204 2.204) (start 180.0) (sweep .0))
+      (pt -5.796 -1.796))))
+   (leg 1 (pt 0.000 0.000) (padstack 1))
+   (leg 2 (pt 0.744 -1.796) (padstack 0))
+   (leg 3 (pt 0.000 -3.592) (padstack 0))
+   (leg 4 (pt -1.796 -4.336) (padstack 0))
+   (leg 5 (pt -3.592 -3.592) (padstack 0))
+   (leg 6 (pt -4.336 -1.796) (padstack 0))
+   (leg 7 (pt -3.592 0.000) (padstack 0))
+   (leg C1 (pt -1.796 0.744) (padstack 0))
+   (padstack 0
+    (hole 0.75)
+    (plated true)
+    (pad (layer TCOP) (round 1.200))
+    (pad (layer INNER) (round 1.200))
+    (pad (layer BCOP) (round 1.200))
+   )
+   (padstack 1
+    (hole 0.9)
+    (plated true)
+    (pad (layer TCOP) (square 1.400))
+    (pad (layer INNER) (round 1.400))
+    (pad (layer BCOP) (square 1.400))
+   )
+   (model "RM106772BCB.stp"
+    (euler -90 180 -90)
+    (offset -1.8200000524520874 -1.7999999523162842 7.46999979019165)
+   )
+  )
+ )
+)
