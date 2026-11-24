@@ -60,7 +60,7 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.25,
+          "min_clearance": 0.5,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
           "pad_connection": 3,
@@ -637,7 +637,7 @@
           "group_by": false,
           "label": "Exclude from BOM",
           "name": "${EXCLUDE_FROM_BOM}",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -735,7 +735,7 @@
       "include_excluded_from_bom": true,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_field": "LCSC P/N"
     },
     "bus_aliases": {},
     "connection_grid_size": 50.0,
@@ -794,7 +794,7 @@
         "uuid": "fb305a0d-eecf-446c-8807-75cb24f9e3a5"
       }
     ],
-    "used_designators": "C19,D15,J7-8,R21,R36,U10",
+    "used_designators": "C19,D15,J7-8,R21,R36,SW1-5,U10",
     "variants": []
   },
   "sheets": [

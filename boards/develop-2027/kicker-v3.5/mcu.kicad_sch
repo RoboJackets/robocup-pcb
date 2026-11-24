@@ -12,218 +12,6 @@
 		(comment 1 "Aiden Lee (alee659@gatech.edu)")
 	)
 	(lib_symbols
-		(symbol "*piman_lib:EVQ-P7A01P"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "S"
-				(at -2.54 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Value" "EVQ-P7A01P"
-				(at -2.54 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Footprint" "*piman_footprints:SW_EVQ-P7A01P"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "Datasheet" "https://api.pim.na.industrial.panasonic.com/file_stream/main/fileversion/245500"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Tactile Switch SPST-NO Side Actuated Surface Mount, Right Angle"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Vendor P/N" "P16763CT-ND"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer P/N" "EVQ-P7A01P"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "EVQ-P7A01P_0_0"
-				(polyline
-					(pts
-						(xy -2.54 0) (xy -5.08 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 0) (xy 2.794 2.1336)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 0)
-					(radius 0.3302)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 0) (xy 2.921 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1_1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -7.62 0 0)
-					(length 2.54)
-					(hide yes)
-					(name ""
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1_2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2_1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 0 180)
-					(length 2.54)
-					(hide yes)
-					(name ""
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2_2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector:Conn_01x04_Socket"
 			(pin_names
 				(offset 1.016)
@@ -2754,6 +2542,156 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Switch:SW_SPST"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SW_SPST"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Single Pole Single Throw (SPST) switch"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "switch lever"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SW_SPST_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.254) (xy 1.524 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_SPST_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+3.3V"
 			(power global)
 			(pin_numbers
@@ -3699,16 +3637,6 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 33.02) (xy 226.06 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0cdea359-4ce6-43f8-afab-d6688adcf195")
-	)
-	(wire
-		(pts
 			(xy 102.87 50.8) (xy 124.46 50.8)
 		)
 		(stroke
@@ -3806,6 +3734,16 @@
 			(type default)
 		)
 		(uuid "18300f19-0ed3-4e47-a42f-ff7a0881599b")
+	)
+	(wire
+		(pts
+			(xy 223.52 45.72) (xy 251.46 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a2ee5ad-8db9-4ed8-a8e0-f06119d15306")
 	)
 	(wire
 		(pts
@@ -3979,7 +3917,7 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 33.02) (xy 209.55 33.02)
+			(xy 209.55 33.02) (xy 213.36 33.02)
 		)
 		(stroke
 			(width 0)
@@ -4226,6 +4164,16 @@
 			(type default)
 		)
 		(uuid "6403ca80-499a-4411-bec6-75ff5332640c")
+	)
+	(wire
+		(pts
+			(xy 223.52 33.02) (xy 251.46 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "649ea12c-3d47-4b1d-8520-0972b5474293")
 	)
 	(wire
 		(pts
@@ -4667,16 +4615,6 @@
 		)
 		(uuid "bf9b772d-f031-455a-9717-9b4b42e98329")
 	)
-	(wire
-		(pts
-			(xy 251.46 45.72) (xy 226.06 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c11038d3-965b-4ae9-8917-6cdf9a1b4359")
-	)
 	(bus
 		(pts
 			(xy 127 60.96) (xy 127 63.5)
@@ -4689,7 +4627,7 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 45.72) (xy 209.55 45.72)
+			(xy 209.55 45.72) (xy 213.36 45.72)
 		)
 		(stroke
 			(width 0)
@@ -6078,10 +6016,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "0ffd6bd7-1726-42ec-82a0-181f8067a631")
 		(property "Reference" "TP9"
@@ -6168,10 +6106,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "1b6a7184-b000-4f8f-ac62-5536d635fdc8")
 		(property "Reference" "TP1"
@@ -6935,9 +6873,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "37890a20-7447-4625-b406-117786c45ed2")
@@ -6997,6 +6935,39 @@
 			)
 		)
 		(property "LCSC P/N" ""
+			(at 33.02 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" ""
+			(at 33.02 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" ""
+			(at 33.02 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" ""
 			(at 33.02 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -7599,10 +7570,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "3ed057b3-ec08-42f5-8ebe-4572cc7ae0c7")
 		(property "Reference" "TP2"
@@ -8450,10 +8421,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "6d797582-719f-421d-b2fa-becc6041b669")
 		(property "Reference" "TP8"
@@ -8540,10 +8511,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "6fc3904a-683e-4b2f-b524-26339ccd9b43")
 		(property "Reference" "TP6"
@@ -9460,7 +9431,7 @@
 		)
 	)
 	(symbol
-		(lib_id "*piman_lib:EVQ-P7A01P")
+		(lib_id "Switch:SW_SPST")
 		(at 218.44 33.02 0)
 		(unit 1)
 		(body_style 1)
@@ -9470,9 +9441,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "833adb17-8451-4e3e-ac01-21b10ae7dcbe")
-		(property "Reference" "S1"
-			(at 218.44 25.4 0)
+		(uuid "7daa7455-c082-409e-8449-68841c4a0d0a")
+		(property "Reference" "SW1"
+			(at 218.44 26.67 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9481,8 +9452,8 @@
 				)
 			)
 		)
-		(property "Value" "EVQ-P7A01P"
-			(at 218.44 27.94 0)
+		(property "Value" "KMR231GLFS"
+			(at 218.44 29.21 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9491,19 +9462,7 @@
 				)
 			)
 		)
-		(property "Footprint" "*piman_footprints:SW_EVQ-P7A01P"
-			(at 218.44 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Datasheet" "https://api.pim.na.industrial.panasonic.com/file_stream/main/fileversion/245500"
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2"
 			(at 218.44 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -9514,7 +9473,7 @@
 				)
 			)
 		)
-		(property "Description" "Tactile Switch SPST-NO Side Actuated Surface Mount, Right Angle"
+		(property "Datasheet" ""
 			(at 218.44 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -9525,7 +9484,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "P16763CT-ND"
+		(property "Description" "Single Pole Single Throw (SPST) switch"
 			(at 218.44 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -9536,7 +9495,7 @@
 				)
 			)
 		)
-		(property "Manufacturer P/N" "EVQ-P7A01P"
+		(property "Manufacturer P/N" "KMR231GLFS"
 			(at 218.44 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -9547,7 +9506,7 @@
 				)
 			)
 		)
-		(property "Vendor URL" "https://www.digikey.com/en/products/detail/panasonic-industry/EVQ-P7A01P/4429447?s=N4IgTCBcDaIAoEYBsB2JBmAwgFQLQDkAREAXQF8g"
+		(property "Vendor" "LCSC"
 			(at 218.44 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -9558,7 +9517,7 @@
 				)
 			)
 		)
-		(property "LCSC P/N" "C79167"
+		(property "Vendor P/N" "KMR231GLFS"
 			(at 218.44 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -9569,22 +9528,16 @@
 				)
 			)
 		)
-		(pin "1_1"
-			(uuid "a52a5edf-9629-463b-b00a-66e8fc14a0f0")
+		(pin "1"
+			(uuid "a5bcc198-64ba-4938-9cf8-6bfc7e0d52e0")
 		)
-		(pin "2_1"
-			(uuid "ed71de8e-4123-4a8a-8602-12d1aefc28a0")
-		)
-		(pin "1_2"
-			(uuid "cfbdcc0e-8f3e-497a-bbf8-d26d4f404040")
-		)
-		(pin "2_2"
-			(uuid "06703e6c-07d2-4b5f-b196-a651012c5986")
+		(pin "2"
+			(uuid "61c2ebaa-72c4-42b9-953a-badfcfa5ff23")
 		)
 		(instances
 			(project "kicker-v3.4"
 				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/22347599-bf0c-4fd4-a7a3-7c86a35ae01b"
-					(reference "S1")
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -9773,137 +9726,6 @@
 		)
 	)
 	(symbol
-		(lib_id "*piman_lib:EVQ-P7A01P")
-		(at 218.44 45.72 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8a6bf9a1-32c3-4d05-9b6b-b15e87b38901")
-		(property "Reference" "S2"
-			(at 218.44 38.1 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "EVQ-P7A01P"
-			(at 218.44 40.64 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "*piman_footprints:SW_EVQ-P7A01P"
-			(at 218.44 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Datasheet" "https://api.pim.na.industrial.panasonic.com/file_stream/main/fileversion/245500"
-			(at 218.44 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Tactile Switch SPST-NO Side Actuated Surface Mount, Right Angle"
-			(at 218.44 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor P/N" "P16763CT-ND"
-			(at 218.44 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer P/N" "EVQ-P7A01P"
-			(at 218.44 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vendor URL" "https://www.digikey.com/en/products/detail/panasonic-industry/EVQ-P7A01P/4429447?s=N4IgTCBcDaIAoEYBsB2JBmAwgFQLQDkAREAXQF8g"
-			(at 218.44 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC P/N" "C79167"
-			(at 218.44 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1_1"
-			(uuid "39d77dca-b43f-4da2-ab67-a8ef0edc3e7b")
-		)
-		(pin "2_1"
-			(uuid "0497de48-0466-48b9-9767-279b94973c7b")
-		)
-		(pin "1_2"
-			(uuid "c4c93f5f-6202-41b4-9875-ff1824e29689")
-		)
-		(pin "2_2"
-			(uuid "53e100f8-6d50-46d7-ad1e-4d7001463b6b")
-		)
-		(instances
-			(project "kicker-v3.4"
-				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/22347599-bf0c-4fd4-a7a3-7c86a35ae01b"
-					(reference "S2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 128.27 27.94 0)
 		(unit 1)
@@ -10013,10 +9835,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "998f5183-1f3a-4188-88bf-1b1419a1b8ff")
 		(property "Reference" "TP5"
@@ -10945,6 +10767,119 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 218.44 45.72 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c32d2092-e6e3-4dd1-bd89-6a5cb006d65a")
+		(property "Reference" "SW2"
+			(at 218.44 39.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "KMR231GLFS"
+			(at 218.44 41.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2"
+			(at 218.44 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 218.44 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer P/N" "KMR231GLFS"
+			(at 218.44 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" "LCSC"
+			(at 218.44 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor P/N" "KMR231GLFS"
+			(at 218.44 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b4ff2234-1ecb-4676-a29d-f58df48eb3bc")
+		)
+		(pin "2"
+			(uuid "525b5293-c7a7-4a37-a042-1a6be30cf3c0")
+		)
+		(instances
+			(project "kicker-v3.4"
+				(path "/fb305a0d-eecf-446c-8807-75cb24f9e3a5/22347599-bf0c-4fd4-a7a3-7c86a35ae01b"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 100.33 156.21 0)
 		(mirror y)
@@ -11105,10 +11040,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "cd661a89-88b7-4bb6-88a8-0f875fc0e96a")
 		(property "Reference" "TP32"
@@ -11762,10 +11697,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "e8dc7c93-d4f2-4ccc-8755-fd3d8145d7ce")
 		(property "Reference" "TP33"
@@ -12276,10 +12211,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "f07aab7e-7fd5-4a60-9be9-fcd7d72f6087")
 		(property "Reference" "TP3"
