@@ -1,0 +1,968 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "cb63459b-b5eb-4b1b-8316-cdcb6a76275f")
+	(paper "A3")
+	(lib_symbols
+		(symbol "power:GND"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 213.36 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8840a1d7-33f5-444b-b8dd-6767a6881687")
+	)
+	(wire
+		(pts
+			(xy 137.16 100.33) (xy 144.78 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "079a5c5c-3dbd-4657-84f3-7f6289116335")
+	)
+	(wire
+		(pts
+			(xy 71.12 45.72) (xy 215.9 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ae93658-aaee-4dbf-822e-a6886278cbe8")
+	)
+	(wire
+		(pts
+			(xy 215.9 88.9) (xy 182.88 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b05f10e-5b3b-40f4-a170-b3af0bdbd83e")
+	)
+	(wire
+		(pts
+			(xy 71.12 132.08) (xy 215.9 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25f3a52d-d0cb-4dc7-a9db-17e24820f44f")
+	)
+	(wire
+		(pts
+			(xy 215.9 93.98) (xy 182.88 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34146687-94be-4fef-ae18-075ed5386330")
+	)
+	(wire
+		(pts
+			(xy 71.12 88.9) (xy 82.55 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a4c18e7-e386-457f-8645-ce56aa6fc4c3")
+	)
+	(wire
+		(pts
+			(xy 182.88 101.6) (xy 215.9 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63b06080-aa4d-4bc8-8c07-30bd434d869c")
+	)
+	(wire
+		(pts
+			(xy 137.16 95.25) (xy 144.78 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6658b479-a957-4aeb-b3a0-ce18f2283d8d")
+	)
+	(wire
+		(pts
+			(xy 137.16 97.79) (xy 144.78 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d20474b-8221-4cce-9142-ba8d7da7d346")
+	)
+	(wire
+		(pts
+			(xy 71.12 99.06) (xy 82.55 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e1fe815-129d-4064-a40a-e103bfe48fa1")
+	)
+	(wire
+		(pts
+			(xy 71.12 96.52) (xy 82.55 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84969131-38d0-4010-b2a9-730f86c13386")
+	)
+	(wire
+		(pts
+			(xy 71.12 93.98) (xy 82.55 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9212613c-833c-46b3-ae4e-b23e36210e98")
+	)
+	(wire
+		(pts
+			(xy 215.9 96.52) (xy 182.88 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a26c2a80-6ae6-4883-86c7-680fabc68c95")
+	)
+	(wire
+		(pts
+			(xy 215.9 91.44) (xy 182.88 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2fbd069-1ba9-4f3f-a7cb-419895be0da9")
+	)
+	(wire
+		(pts
+			(xy 137.16 92.71) (xy 144.78 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d94204d4-dcdc-4e31-a765-a215ab5849aa")
+	)
+	(wire
+		(pts
+			(xy 137.16 69.85) (xy 215.9 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e043a361-42b6-431e-bf1b-de5b1ff29ff1")
+	)
+	(wire
+		(pts
+			(xy 215.9 99.06) (xy 182.88 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1c7accc-2835-42fe-9a40-b8bca8341906")
+	)
+	(wire
+		(pts
+			(xy 137.16 90.17) (xy 144.78 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f739aef6-f6ac-4003-8d7d-79147f4f7bf7")
+	)
+	(wire
+		(pts
+			(xy 137.16 67.31) (xy 215.9 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f95b7ea3-e5db-4d53-a06e-fdb75040091f")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 213.36 101.6 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a3116a44-d0fa-4d6e-b6c4-7086b919cbac")
+		(property "Reference" "#PWR037"
+			(at 213.36 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 213.36 105.41 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 213.36 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 213.36 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 213.36 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "480418ec-41c9-4cfb-870b-ec95e0765f18")
+		)
+		(instances
+			(project "power-board"
+				(path "/cb63459b-b5eb-4b1b-8316-cdcb6a76275f"
+					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 215.9 41.91)
+		(size 57.15 102.87)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "255590aa-e6da-45e7-b5b3-d716553f470b")
+		(property "Sheetname" "Connectors"
+			(at 215.9 41.1984 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "connectors.kicad_sch"
+			(at 215.9 145.3646 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "BAT_BALANCE_1" output
+			(at 215.9 101.6 180)
+			(uuid "e8b236c5-6e0d-445e-9441-abd7c7cec028")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BAT_BALANCE_2" output
+			(at 215.9 99.06 180)
+			(uuid "ad194514-8245-4a85-bdbb-20b94c9c6d09")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BAT_BALANCE_3" output
+			(at 215.9 96.52 180)
+			(uuid "17daa75f-0cf7-41d2-af81-c78dc071c092")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BAT_BALANCE_4" output
+			(at 215.9 93.98 180)
+			(uuid "6be1a663-ca72-42e2-910b-5346a55f76a0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BAT_BALANCE_5" output
+			(at 215.9 91.44 180)
+			(uuid "44785279-1cd0-4133-9ad0-8422b3d818b0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BAT_BALANCE_6" output
+			(at 215.9 88.9 180)
+			(uuid "dd3c227d-fc9b-4040-bf67-97681f500ed9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RAIL_BAT" input
+			(at 215.9 45.72 180)
+			(uuid "9cce70f1-fec4-4809-874a-77a8a26eb89b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "UART_RX" output
+			(at 215.9 69.85 180)
+			(uuid "b3ba11a1-8fbb-4dd2-aaf2-af434781d669")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "UART_TX" input
+			(at 215.9 67.31 180)
+			(uuid "f9d13798-bbb6-490a-8f45-071731c9b689")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "3V3_DEBUG" output
+			(at 215.9 132.08 180)
+			(uuid "6fb93b8b-4ab2-43ba-b8e2-7f5dc88ce1c1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "power-board"
+				(path "/cb63459b-b5eb-4b1b-8316-cdcb6a76275f"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 82.55 55.88)
+		(size 54.61 62.23)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "71f9ccf2-01cf-47d9-b25c-170e05250cb5")
+		(property "Sheetname" "MCU"
+			(at 82.55 55.1684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mcu.kicad_sch"
+			(at 82.55 118.6946 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "BAT_CELL_SCALED_1" input
+			(at 137.16 100.33 0)
+			(uuid "aa63a627-1aff-41fd-bb52-eb0277ed3653")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "BAT_CELL_SCALED_2" input
+			(at 137.16 97.79 0)
+			(uuid "5cf1b8b1-4073-42af-98c7-25f43b638027")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "BAT_CELL_SCALED_3" input
+			(at 137.16 95.25 0)
+			(uuid "301b2104-289b-4c2d-a3d8-e13f2fb49b86")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "BAT_CELL_SCALED_4" input
+			(at 137.16 92.71 0)
+			(uuid "415d53a1-9321-42bd-be0f-de3f6eaedca6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "BAT_CELL_SCALED_5" input
+			(at 137.16 90.17 0)
+			(uuid "dc7e00b9-20ba-4e33-afcb-e30f763dbfbe")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RAIL_EN_12V" output
+			(at 82.55 88.9 180)
+			(uuid "0317f550-def9-4b71-a978-88e29d14f3b5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I_SENSE_3V3" input
+			(at 82.55 93.98 180)
+			(uuid "6c7473fe-2ceb-4f18-ac26-cbda3785741b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I_SENSE_5V" input
+			(at 82.55 96.52 180)
+			(uuid "85c25bc1-780d-4b8c-98df-987846e2cbba")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I_SENSE_12V" input
+			(at 82.55 99.06 180)
+			(uuid "6d0f25d3-c6a6-450b-8832-8d8d7b0299cb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "UART1_RX" input
+			(at 137.16 69.85 0)
+			(uuid "db503054-ce33-44dd-86c1-a13f768da5bf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "UART1_TX" output
+			(at 137.16 67.31 0)
+			(uuid "8e7bf161-2d3a-417d-ba1d-dd356209e3ae")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "power-board"
+				(path "/cb63459b-b5eb-4b1b-8316-cdcb6a76275f"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 29.21 43.18)
+		(size 41.91 102.87)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "78bc56ac-35bc-4a48-b190-7d489bf5b351")
+		(property "Sheetname" "Power Management"
+			(at 29.21 42.4684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power_management.kicad_sch"
+			(at 29.21 146.6346 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "I_SENSE_3V3" output
+			(at 71.12 93.98 0)
+			(uuid "b475f2a4-4845-4bdd-890f-26bc241d5d2c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RAIL_EN_12V" input
+			(at 71.12 88.9 0)
+			(uuid "444acfb4-8ae7-43ec-9112-c242a6c32898")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "I_SENSE_5V" output
+			(at 71.12 96.52 0)
+			(uuid "ba2fdc1a-12ef-45e6-9c32-dc872e061ecc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "I_SENSE_12V" output
+			(at 71.12 99.06 0)
+			(uuid "e24e7090-5964-45a3-8eff-414f3c4d9f81")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RAIL_BAT" output
+			(at 71.12 45.72 0)
+			(uuid "08ad18e7-f7ec-4644-b518-c5de2672113f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "3.3V_DEBUG" input
+			(at 71.12 132.08 0)
+			(uuid "5ba6aeb8-33e5-4be8-a80e-8f5231ec9db6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "power-board"
+				(path "/cb63459b-b5eb-4b1b-8316-cdcb6a76275f"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 144.78 86.36)
+		(size 38.1 31.75)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "fdbe268e-2a8d-4749-bb7a-3089b2b80b38")
+		(property "Sheetname" "Battery Status Reader"
+			(at 144.78 85.6484 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "battery_status_reader.kicad_sch"
+			(at 144.78 118.6946 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "BAT_BALANCE_1" input
+			(at 182.88 101.6 0)
+			(uuid "ca524ed6-5d71-4c4b-b81b-c74a9044e80a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "BAT_BALANCE_2" input
+			(at 182.88 99.06 0)
+			(uuid "9e0bb5fb-5be5-4fc1-a1d6-68b246d7777d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "BAT_BALANCE_3" input
+			(at 182.88 96.52 0)
+			(uuid "91f17084-2996-4725-94c5-b258aff428f6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "BAT_BALANCE_4" input
+			(at 182.88 93.98 0)
+			(uuid "cc2fdc17-9de0-4a54-b887-9b8367d77146")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "BAT_BALANCE_5" input
+			(at 182.88 91.44 0)
+			(uuid "d638e0b5-5c85-4fb5-aeed-5c19bcdf1715")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "BAT_BALANCE_6" input
+			(at 182.88 88.9 0)
+			(uuid "5bba796a-2916-4fd8-b4c6-3f387d7e62d1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "BAT_CELL_SCALED_1" output
+			(at 144.78 100.33 180)
+			(uuid "5c77cdeb-7778-43a2-8ab4-5ffa44e81115")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BAT_CELL_SCALED_2" output
+			(at 144.78 97.79 180)
+			(uuid "30dba3fa-bb9b-4a83-9e2a-cf74e5780a85")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BAT_CELL_SCALED_3" output
+			(at 144.78 95.25 180)
+			(uuid "cedca403-3777-4203-bf2f-b75a75eab815")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BAT_CELL_SCALED_4" output
+			(at 144.78 92.71 180)
+			(uuid "b6bb3f21-108b-4021-b861-2647b5fa6197")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BAT_CELL_SCALED_5" output
+			(at 144.78 90.17 180)
+			(uuid "3987686e-667b-49e2-a19e-60f05d454c88")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "power-board"
+				(path "/cb63459b-b5eb-4b1b-8316-cdcb6a76275f"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
