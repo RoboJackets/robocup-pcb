@@ -14681,6 +14681,32 @@
 				)
 			)
 		)
+		(property "Vendor" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a84712a2-2374-4d0f-9c21-ee94d475ff57")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Vendor P/N" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "286f69ee-1189-437b-a1d0-a45113cd5823")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/e4304b20-4d06-4872-95c9-1dabf011b89c/ec37cfca-6a18-4c3c-9caa-2eaf5c40dc9e")
 		(sheetname "/HV Discharge/")
@@ -14691,7 +14717,7 @@
 				(pins "1" "2")
 			)
 		)
-		(attr smd exclude_from_bom)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.237258 -0.5225)
@@ -28849,6 +28875,32 @@
 				)
 			)
 		)
+		(property "Vendor" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6dc2fa71-6f03-4243-ac64-8696197653e5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Vendor P/N" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3138ed61-f36c-41e5-8c66-778d5eeef6ce")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/e4304b20-4d06-4872-95c9-1dabf011b89c/d252e380-06e3-4ea5-b05d-29c517053a4c")
 		(sheetname "/HV Discharge/")
@@ -28859,7 +28911,7 @@
 				(pins "1" "2")
 			)
 		)
-		(attr smd exclude_from_bom)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.237258 -0.5225)
