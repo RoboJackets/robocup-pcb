@@ -63,7 +63,7 @@
           "min_clearance": 0.0,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
-          "pad_connection": 1,
+          "pad_connection": 2,
           "remove_islands": 0,
           "thermal_relief_gap": 0.5,
           "thermal_relief_spoke_width": 0.5
@@ -160,7 +160,7 @@
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
         "min_track_width": 0.16,
-        "min_via_annular_width": 0.15,
+        "min_via_annular_width": 0.1,
         "min_via_diameter": 0.3,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
@@ -218,7 +218,8 @@
         0.1905,
         0.254,
         0.381,
-        0.508
+        0.508,
+        1.27
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -792,7 +793,7 @@
         "uuid": "fb305a0d-eecf-446c-8807-75cb24f9e3a5"
       }
     ],
-    "used_designators": "C19,J7-8,R21,R36,U10",
+    "used_designators": "C19,D15,J7-8,R21,R36,U10",
     "variants": []
   },
   "sheets": [
