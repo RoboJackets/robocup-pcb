@@ -4390,7 +4390,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
 			(at 170.18 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -4423,7 +4423,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "S2B-PH-K-S-GW"
+		(property "Vendor URL" "https://www.digikey.com/en/products/detail/jst-sales-america-inc/B2B-PH-K-S/926611"
 			(at 170.18 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -4434,7 +4434,7 @@
 				)
 			)
 		)
-		(property "Vendor URL" "https://www.digikey.com/en/products/detail/jst-sales-america-inc/S2B-PH-K-S/926626"
+		(property "Vendor P/N" "B2B-PH-K-S"
 			(at 170.18 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -4445,7 +4445,7 @@
 				)
 			)
 		)
-		(property "LCSC P/N" "C157932"
+		(property "LCSC P/N" "C131337"
 			(at 170.18 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -4456,7 +4456,18 @@
 				)
 			)
 		)
-		(property "Manufacturer P/N" "S2B-PH-K-S-GW"
+		(property "Manufacturer P/N" "JST S2B-PH-K-S-GW"
+			(at 170.18 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" ""
 			(at 170.18 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -4682,7 +4693,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
 			(at 229.87 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -4715,7 +4726,7 @@
 				)
 			)
 		)
-		(property "Vendor URL" "https://www.digikey.com/en/products/detail/jst-sales-america-inc/S2B-PH-K-S/926626"
+		(property "Vendor P/N" "B2B-PH-K-S"
 			(at 229.87 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -4726,7 +4737,7 @@
 				)
 			)
 		)
-		(property "Vendor P/N" "JST S2B-PH-K-S-GW"
+		(property "Vendor URL" "https://www.digikey.com/en/products/detail/jst-sales-america-inc/B2B-PH-K-S/926611"
 			(at 229.87 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -4737,7 +4748,7 @@
 				)
 			)
 		)
-		(property "LCSC P/N" "C157932"
+		(property "LCSC P/N" "C131337"
 			(at 229.87 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -4749,6 +4760,17 @@
 			)
 		)
 		(property "Manufacturer P/N" "JST S2B-PH-K-S-GW"
+			(at 229.87 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vendor" ""
 			(at 229.87 52.07 0)
 			(hide yes)
 			(show_name no)
